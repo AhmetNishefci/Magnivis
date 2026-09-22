@@ -1,0 +1,22 @@
+node_modules/
+.pnpm-store/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Remotion and generated production output
+output/*
+!output/.gitkeep
+qa/*
+!qa/.gitkeep
+.remotion/
+
+# Tooling
+coverage/
+dist/
+*.tsbuildinfo
+.eslintcache
+.codex-log/
+
