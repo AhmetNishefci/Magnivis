@@ -5,7 +5,7 @@ import {earthToStars} from '../src/content/videos/earth-to-stars';
 const videos = {
   [earthToStars.id]: {
     composition: earthToStars.compositionId,
-    output: `output/${earthToStars.id}.mp4`,
+    output: `output/${earthToStars.id}-narrated.mp4`,
   },
 } as const;
 
@@ -39,4 +39,3 @@ const result = spawnSync(
 
 if (result.error) throw result.error;
 process.exit(result.status ?? 1);
-

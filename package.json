@@ -15,7 +15,9 @@
     "render": "tsx scripts/render.ts",
     "render:smoke": "remotion render src/index.ts Magnivis-Earth-To-Stars output/earth-to-stars-smoke.mp4 --frames=0-89 --codec=h264 --audio-codec=aac --crf=28 --pixel-format=yuv420p --overwrite",
     "qa": "tsx scripts/qa.ts",
-    "assets": "node scripts/generate-audio.mjs",
+    "assets": "pnpm soundscape && pnpm narration",
+    "soundscape": "node scripts/generate-audio.mjs",
+    "narration": "node scripts/generate-narration.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src scripts tests remotion.config.ts",
     "test": "vitest run",
@@ -40,6 +42,7 @@
     "@types/react": "19.1.16",
     "@types/react-dom": "19.1.9",
     "eslint": "10.0.1",
+    "kokoro-js": "1.2.1",
     "tsx": "4.20.6",
     "typescript": "6.0.3",
     "typescript-eslint": "8.70.1",
@@ -48,7 +51,10 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "ffmpeg-static"
+      "ffmpeg-static",
+      "onnxruntime-node",
+      "protobufjs",
+      "sharp"
     ]
   }
 }

@@ -1,5 +1,5 @@
 import {Audio} from '@remotion/media';
-import {AbsoluteFill, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {BackgroundStars} from '../components/BackgroundStars';
 import {CelestialBody} from '../components/CelestialBody';
 import {Finish} from '../components/Finish';
@@ -204,7 +204,12 @@ const Coda = () => {
 export const EarthToStars = () => (
   <AbsoluteFill style={{backgroundColor: palette.void}}>
     <BackgroundStars />
-    <Audio src={staticFile(earthToStars.audio.file)} volume={0.92} />
+    <Audio src={staticFile(earthToStars.audio.file)} volume={0.34} />
+    {earthToStars.audio.narrationCues.map((cue) => (
+      <Sequence key={cue.id} from={Math.round(cue.start * fps)} layout="none">
+        <Audio src={staticFile(cue.file)} volume={1} />
+      </Sequence>
+    ))}
     <Hook />
     <Earth />
     <Jupiter />

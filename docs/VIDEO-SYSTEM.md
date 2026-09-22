@@ -28,8 +28,8 @@ This is deliberately a typed code specification rather than YAML/JSON. V1 needs 
 - ID: `earth-to-stars`
 - Remotion composition: `Magnivis-Earth-To-Stars`
 - Format: 1080×1920, 30 fps, 42 seconds
-- Audio: original deterministic stereo WAV with ambient, transition, and impact layers; no narration
-- Output: `output/earth-to-stars.mp4`
+- Audio: original deterministic stereo ambient/transition/impact bed plus six modular English narration cues
+- Output: `output/earth-to-stars-narrated.mp4`
 
 ## Commands
 
@@ -51,4 +51,3 @@ The render router rejects unknown video IDs. QA validates resolution, display as
 - No random value may vary between renders. Seed procedural fields and derive animation solely from frame/config.
 - Do not access networks during preview or render.
 - Treat `output/` and `qa/` as generated review artifacts, not source assets.
-

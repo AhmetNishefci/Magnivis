@@ -57,10 +57,15 @@ export const videoSpecSchema = z.object({
     file: z.string().min(1),
     layers: z.array(z.enum(['music', 'ambient', 'transition', 'impact', 'narration', 'silence'])),
     narration: z.boolean(),
+    narrationCues: z.array(z.object({
+      id: z.string().min(1),
+      file: z.string().min(1),
+      start: z.number().nonnegative(),
+      transcript: z.string().min(1),
+    })),
   }),
 });
 
 export type SourceRecord = z.infer<typeof sourceSchema>;
 export type FactRecord = z.infer<typeof factSchema>;
 export type VideoSpec = z.infer<typeof videoSpecSchema>;
-

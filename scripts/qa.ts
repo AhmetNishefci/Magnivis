@@ -13,8 +13,8 @@ if (id !== earthToStars.id) {
   process.exit(1);
 }
 
-const input = `output/${id}.mp4`;
-const qaDirectory = `qa/${id}`;
+const input = `output/${id}-narrated.mp4`;
+const qaDirectory = `qa/${id}-narrated`;
 if (!existsSync(input)) {
   console.error(`Missing ${input}. Run: pnpm render ${id}`);
   process.exit(1);

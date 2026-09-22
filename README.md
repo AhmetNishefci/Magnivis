@@ -27,7 +27,7 @@ pnpm render earth-to-stars
 pnpm qa earth-to-stars
 ```
 
-The final video is written to `output/earth-to-stars.mp4`. QA metadata, representative frames, and a contact sheet are written under `qa/earth-to-stars/`.
+The final narrated video is written to `output/earth-to-stars-narrated.mp4`. QA metadata, representative frames, and a contact sheet are written under `qa/earth-to-stars-narrated/`.
 
 Run all non-rendering checks with:
 
@@ -36,4 +36,3 @@ pnpm check
 ```
 
 See `docs/VIDEO-SYSTEM.md` for architecture, authoring workflow, and render details. Read `AGENTS.md` before agent-assisted changes.
-

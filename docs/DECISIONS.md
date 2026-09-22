@@ -30,6 +30,16 @@
 
 **Consequences:** The first mix is atmospheric rather than melodic and must receive human listening review. Narration remains independently addable.
 
+## 2026-09-22 — Local Apache-licensed narration
+
+**Decision:** Generate modular narration cues locally with Kokoro-82M v1.0 and its `af_heart` voice, both published under Apache 2.0.
+
+**Reason:** Human review found the ambient-only cut too understated. Local synthesis avoids paid services and credentials while preserving commercial-use provenance and deterministic regeneration.
+
+**Alternatives:** Apple system voices (rejected because Apple's license prohibits public/commercial redistribution); paid TTS APIs (require cost and credentials); ambient-only audio (failed the listening review).
+
+**Consequences:** The narration is synthetic and should be disclosed in the YouTube upload metadata. Voice cues remain separate from the soundscape and can be replaced without changing visual choreography.
+
 ## 2026-09-22 — No repository-local Codex skill in V1
 
 **Decision:** Keep workflows in `AGENTS.md`, docs, and scripts until they have repeated and stabilized.
@@ -39,4 +49,3 @@
 **Alternatives:** Immediately add research/render/QA skills.
 
 **Consequences:** Less speculative agent machinery; reconsider after several videos expose genuine repetition.
-

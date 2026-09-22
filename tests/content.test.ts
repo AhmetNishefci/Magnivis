@@ -20,6 +20,13 @@ describe('earth-to-stars specification', () => {
     const factIds = new Set(astronomyFacts.map((fact) => fact.id));
     expect(earthToStars.factIds.every((id) => factIds.has(id))).toBe(true);
   });
+
+  it('keeps narration cues ordered and inside the composition', () => {
+    expect(earthToStars.audio.narration).toBe(true);
+    const starts = earthToStars.audio.narrationCues.map((cue) => cue.start);
+    expect(starts).toEqual([...starts].sort((a, b) => a - b));
+    expect(starts.every((start) => start < earthToStars.format.durationSeconds)).toBe(true);
+  });
 });
 
 describe('research records', () => {
@@ -42,4 +49,3 @@ describe('research records', () => {
     expect(stars.every((fact) => fact.basis === 'estimated' && fact.display.includes('≈'))).toBe(true);
   });
 });
-

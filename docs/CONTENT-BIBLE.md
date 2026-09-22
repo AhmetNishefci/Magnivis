@@ -26,5 +26,4 @@ Design for 9:16 and mobile viewing. Important text stays inside the project safe
 
 ## Audio
 
-Music, ambience, transitions, impacts, narration, and silence are separate conceptual layers. Sound should clarify scale and pacing. Narration may be added later without rebuilding visual scenes.
-
+Music, ambience, transitions, impacts, narration, and silence are separate conceptual layers. Sound should clarify scale and pacing. Narration must remain replaceable without rebuilding visual scenes, and every synthetic voice requires human review for pronunciation, tone, and mix.

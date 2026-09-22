@@ -40,11 +40,48 @@ export const earthToStars = videoSpecSchema.parse({
   ],
   audio: {
     file: 'audio/earth-to-stars.wav',
-    layers: ['ambient', 'transition', 'impact'],
-    narration: false,
+    layers: ['ambient', 'transition', 'impact', 'narration'],
+    narration: true,
+    narrationCues: [
+      {
+        id: 'hook',
+        file: 'audio/narration/hook.wav',
+        start: 0.25,
+        transcript: 'Earth is huge. Twelve thousand, seven hundred and forty-two kilometers across.',
+      },
+      {
+        id: 'jupiter',
+        file: 'audio/narration/jupiter.wav',
+        start: 8.1,
+        transcript: 'But Jupiter is nearly eleven Earths wide.',
+      },
+      {
+        id: 'sun',
+        file: 'audio/narration/sun.wav',
+        start: 15.2,
+        transcript: 'Our Sun is almost ten Jupiters across.',
+      },
+      {
+        id: 'rigel',
+        file: 'audio/narration/rigel.wav',
+        start: 23,
+        transcript: "Rigel is about fifty times the Sun's radius.",
+      },
+      {
+        id: 'betelgeuse',
+        file: 'audio/narration/betelgeuse.wav',
+        start: 30,
+        transcript: "And Betelgeuse? An estimated seven hundred and twenty-four times the Sun's radius.",
+      },
+      {
+        id: 'coda',
+        file: 'audio/narration/coda.wav',
+        start: 39,
+        transcript: "And that's just one star.",
+      },
+    ],
   },
 });
 
 export const earthToStarsFrames =
   earthToStars.format.fps * earthToStars.format.durationSeconds;
-
