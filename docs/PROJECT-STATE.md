@@ -14,11 +14,13 @@ Last updated: 2026-09-22
 
 - Verify the public Short from a logged-out/mobile viewer perspective.
 - Establish 24-hour, 48-hour, and 7-day performance snapshots.
+- Complete publishing-ramp Week 1 with two more premium Shorts, for three total; there is no Week 1 long-form requirement.
 
 ## NEXT
 
 - Review retention and discovery data without reacting to the first few hours of noise.
-- Select and produce Video 002 as a distinct story using the proven primitives.
+- Ramp Week 2 to four premium Shorts and the first long-form video.
+- Measure whether reusable components are reducing production time without lowering quality.
 
 ## LATER
 
