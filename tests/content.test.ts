@@ -27,6 +27,14 @@ describe('earth-to-stars specification', () => {
     expect(starts).toEqual([...starts].sort((a, b) => a - b));
     expect(starts.every((start) => start < earthToStars.format.durationSeconds)).toBe(true);
   });
+
+  it('declares a caption track matching the video language', () => {
+    expect(earthToStars.captions).toContainEqual({
+      language: earthToStars.language,
+      label: 'English',
+      file: 'captions/earth-to-stars.en.srt',
+    });
+  });
 });
 
 describe('research records', () => {

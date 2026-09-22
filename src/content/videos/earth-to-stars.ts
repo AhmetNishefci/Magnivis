@@ -14,8 +14,15 @@ export const earthToStars = videoSpecSchema.parse({
   ],
   hook: 'EARTH IS HUGE. UNTIL YOU SEE THIS.',
   pillar: 'universe',
-  status: 'rendered',
+  status: 'uploaded-private',
   language: 'en',
+  captions: [
+    {
+      language: 'en',
+      label: 'English',
+      file: 'captions/earth-to-stars.en.srt',
+    },
+  ],
   format: {
     width: 1080,
     height: 1920,

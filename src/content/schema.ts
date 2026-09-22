@@ -45,6 +45,11 @@ export const videoSpecSchema = z.object({
     'published',
   ]),
   language: z.string().min(2),
+  captions: z.array(z.object({
+    language: z.string().min(2),
+    label: z.string().min(1),
+    file: z.string().min(1),
+  })),
   format: z.object({
     width: z.number().int().positive(),
     height: z.number().int().positive(),

@@ -8,16 +8,17 @@ Last updated: 2026-09-22
 - V1 repository architecture and durable project documentation established.
 - Remotion composition, procedural visual system, structured astronomy facts, modular soundscape and narration, render scripts, and automated QA implemented.
 - Video 001, `earth-to-stars`, rendered locally with a licensed synthetic voice and checked at 1080×1920 / 30 fps.
+- The narrated master passed human review and was uploaded privately to YouTube.
 
 ## NOW
 
-- Human review of the narrated full-resolution MP4 on a physical phone with YouTube Shorts UI in mind.
-- Creative review of voice pronunciation, pacing, text legibility, sound mix, and scientific phrasing.
+- Upload and review the committed English caption track.
+- Confirm the YouTube-processed HD version has no notices or copyright restrictions.
 
 ## NEXT
 
-- Iterate on review notes, then manually upload the approved narrated file as a second private review version.
-- Review YouTube processing, copyright checks, metadata, and thumbnail before manual publication.
+- Finalize the thumbnail frame and publication timing.
+- Manually publish the approved Short after the final YouTube checks.
 - Gather performance data and produce several distinct Shorts using the same primitives.
 
 ## LATER
