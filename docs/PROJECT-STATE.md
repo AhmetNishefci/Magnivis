@@ -8,12 +8,12 @@ Last updated: 2026-09-22
 - V1 repository architecture and durable project documentation established.
 - Remotion composition, procedural visual system, structured astronomy facts, modular soundscape and narration, render scripts, and automated QA implemented.
 - Video 001, `earth-to-stars`, rendered locally with a licensed synthetic voice and checked at 1080×1920 / 30 fps.
-- The narrated master passed human review, received timed English captions, and was published manually on YouTube.
+- The narrated master passed human review, received timed English captions, and was published manually at `https://www.youtube.com/shorts/bvgmCR2Dtcs`.
 
 ## NOW
 
 - Verify the public Short from a logged-out/mobile viewer perspective.
-- Record its public URL and establish 24-hour, 48-hour, and 7-day performance snapshots.
+- Establish 24-hour, 48-hour, and 7-day performance snapshots.
 
 ## NEXT
 

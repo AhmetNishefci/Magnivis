@@ -35,6 +35,16 @@ describe('earth-to-stars specification', () => {
       file: 'captions/earth-to-stars.en.srt',
     });
   });
+
+  it('records the canonical publication when published', () => {
+    expect(earthToStars.status).toBe('published');
+    expect(earthToStars.publication).toEqual({
+      platform: 'youtube',
+      videoId: 'bvgmCR2Dtcs',
+      publicUrl: 'https://www.youtube.com/shorts/bvgmCR2Dtcs',
+      publishedDate: '2026-09-22',
+    });
+  });
 });
 
 describe('research records', () => {

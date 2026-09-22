@@ -44,6 +44,12 @@ export const videoSpecSchema = z.object({
     'uploaded-private',
     'published',
   ]),
+  publication: z.object({
+    platform: z.literal('youtube'),
+    videoId: z.string().min(1),
+    publicUrl: z.url(),
+    publishedDate: z.iso.date(),
+  }).optional(),
   language: z.string().min(2),
   captions: z.array(z.object({
     language: z.string().min(2),

@@ -15,6 +15,12 @@ export const earthToStars = videoSpecSchema.parse({
   hook: 'EARTH IS HUGE. UNTIL YOU SEE THIS.',
   pillar: 'universe',
   status: 'published',
+  publication: {
+    platform: 'youtube',
+    videoId: 'bvgmCR2Dtcs',
+    publicUrl: 'https://www.youtube.com/shorts/bvgmCR2Dtcs',
+    publishedDate: '2026-09-22',
+  },
   language: 'en',
   captions: [
     {
