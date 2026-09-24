@@ -40,3 +40,9 @@ The retention summary card showed 33.5% stayed-to-watch while the engagement car
 - Reach the final quantitative payoff before the last six seconds.
 
 Revisit Video 001 at the seven-day mark and compare future videos against channel baselines rather than generic thresholds.
+
+## Video 002 — `ocean-depth`
+
+Public URL: `https://www.youtube.com/shorts/rfVe_wqDKAQ`
+
+Published manually on 2026-09-24 after private 1080p, caption-placement, copyright, and mobile review. Record the first performance snapshot after approximately 24 hours; do not infer performance from the opening minutes.

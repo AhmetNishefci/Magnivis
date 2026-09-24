@@ -10,12 +10,12 @@ Last updated: 2026-09-24
 - Video 001, `earth-to-stars`, rendered locally with a licensed synthetic voice and checked at 1080×1920 / 30 fps.
 - The narrated master passed human review, received timed English captions, and was published manually at `https://www.youtube.com/shorts/bvgmCR2Dtcs`.
 - Video 001's initial performance snapshot was recorded in `docs/PERFORMANCE.md` and informed Video 002's shorter, faster structure.
-- Video 002, `ocean-depth`, has verified NOAA/Nepal data, original procedural visuals/audio, narration, captions, a full production render, passing automated QA, and human visual approval.
+- Video 002, `ocean-depth`, passed research, render, automated QA, private HD/caption review, and was published manually at `https://www.youtube.com/shorts/rfVe_wqDKAQ`.
 
 ## NOW
 
-- Replace both videos' unpositioned YouTube SRT tracks with their positioned WebVTT tracks, then confirm placement on desktop and mobile. Video 001 uses a center-lower band to clear its top headlines and bottom metrics; Video 002 uses the lower safe area.
-- Keep Video 002 private until its processed YouTube playback has been reviewed on a physical phone.
+- Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
+- Monitor Video 002's public playback and record its first meaningful analytics snapshot after approximately 24 hours.
 - Produce Video 003 to complete publishing-ramp Week 1 with three total premium Shorts; there is no Week 1 long-form requirement.
 
 ## NEXT

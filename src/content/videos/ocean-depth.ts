@@ -14,7 +14,13 @@ export const oceanDepth = videoSpecSchema.parse({
   ],
   hook: 'EVEREST WOULD DISAPPEAR.',
   pillar: 'earth',
-  status: 'reviewed',
+  status: 'published',
+  publication: {
+    platform: 'youtube',
+    videoId: 'rfVe_wqDKAQ',
+    publicUrl: 'https://www.youtube.com/shorts/rfVe_wqDKAQ',
+    publishedDate: '2026-09-24',
+  },
   language: 'en',
   captions: [
     {
