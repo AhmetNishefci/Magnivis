@@ -19,13 +19,11 @@ const Hook = () => (
       <RevealText
         at={-8}
         eyebrow="THE DEEPEST OCEAN"
-        style={{fontSize: 94, fontWeight: 700, lineHeight: 0.88, letterSpacing: '-0.065em'}}
+        style={{fontSize: 82, fontWeight: 700, lineHeight: 0.88, letterSpacing: '-0.065em'}}
       >
         EVEREST
         <br />
-        WOULD
-        <br />
-        DISAPPEAR.
+        WOULD DISAPPEAR.
       </RevealText>
     </ShortSafeArea>
   </SceneWindow>
@@ -42,20 +40,6 @@ const Descent = () => {
   return (
     <SceneWindow start={seconds(2.55)} end={seconds(16.25)} fadeIn={8} fadeOut={12}>
       <OceanAtmosphere depth={depth} />
-      <div
-        style={{
-          position: 'absolute',
-          left: 82,
-          top: 252,
-          fontFamily: typography.body,
-          fontWeight: 700,
-          fontSize: 18,
-          letterSpacing: '0.23em',
-          color: '#a6c9da',
-        }}
-      >
-        DESCENDING
-      </div>
       <DepthGauge
         depth={depth}
         label={depth < 200 ? 'SUNLIGHT ZONE' : depth < 1000 ? 'TWILIGHT ZONE' : depth < 3600 ? 'NO SUNLIGHT' : 'AVERAGE OCEAN FLOOR'}
@@ -142,7 +126,7 @@ const Comparison = () => {
               fontWeight: 700,
               letterSpacing: '0.12em',
               color: '#b4ccd7',
-              marginTop: 32,
+              marginTop: 12,
             }}
           >
             ≈10,935 M BELOW THE SURFACE
