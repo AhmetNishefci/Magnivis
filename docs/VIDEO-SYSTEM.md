@@ -39,7 +39,7 @@ This is deliberately a typed code specification rather than YAML/JSON. V1 needs 
 - Format: 1080×1920, 30 fps, 32 seconds
 - Visuals: original procedural water column, depth counter, particulate field, and scale-accurate Everest/Challenger Deep comparison
 - Audio: original deterministic stereo deep-ocean soundscape plus seven modular English narration cues
-- Captions: `captions/ocean-depth.en.srt`
+- Captions: `captions/ocean-depth.en.vtt` (positioned for the lower Shorts safe area); `captions/ocean-depth.en.srt` is the unpositioned fallback
 - Output: `output/ocean-depth-narrated.mp4`
 
 ## Commands

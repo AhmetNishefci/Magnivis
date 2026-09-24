@@ -20,7 +20,7 @@ export const oceanDepth = videoSpecSchema.parse({
     {
       language: 'en',
       label: 'English',
-      file: 'captions/ocean-depth.en.srt',
+      file: 'captions/ocean-depth.en.vtt',
     },
   ],
   format: {

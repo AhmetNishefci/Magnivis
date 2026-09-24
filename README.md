@@ -38,7 +38,7 @@ pnpm render ocean-depth
 pnpm qa ocean-depth
 ```
 
-The narrated master is written to `output/ocean-depth-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/ocean-depth-narrated/`. The timed English caption track is `captions/ocean-depth.en.srt`.
+The narrated master is written to `output/ocean-depth-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/ocean-depth-narrated/`. Upload the positioned Shorts caption track at `captions/ocean-depth.en.vtt`; the SRT remains as an unpositioned fallback.
 
 Run all non-rendering checks with:
 

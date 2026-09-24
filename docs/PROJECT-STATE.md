@@ -14,7 +14,7 @@ Last updated: 2026-09-24
 
 ## NOW
 
-- Manually upload Video 002 as private and complete YouTube processing, copyright, captions, and metadata review.
+- Replace Video 002's unpositioned SRT on YouTube with `captions/ocean-depth.en.vtt`, then confirm the captions stay in the lower safe area on desktop and mobile.
 - Keep Video 002 private until its processed YouTube playback has been reviewed on a physical phone.
 - Produce Video 003 to complete publishing-ramp Week 1 with three total premium Shorts; there is no Week 1 long-form requirement.
 
