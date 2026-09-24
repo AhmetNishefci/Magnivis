@@ -29,7 +29,7 @@ This is deliberately a typed code specification rather than YAML/JSON. V1 needs 
 - Remotion composition: `Magnivis-Earth-To-Stars`
 - Format: 1080×1920, 30 fps, 42 seconds
 - Audio: original deterministic stereo ambient/transition/impact bed plus six modular English narration cues
-- Captions: `captions/earth-to-stars.en.srt`
+- Captions: `captions/earth-to-stars.en.vtt` (positioned between upper headlines and lower metrics); `captions/earth-to-stars.en.srt` is the unpositioned fallback
 - Output: `output/earth-to-stars-narrated.mp4`
 
 ## Video 002

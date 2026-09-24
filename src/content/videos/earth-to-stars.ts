@@ -26,7 +26,7 @@ export const earthToStars = videoSpecSchema.parse({
     {
       language: 'en',
       label: 'English',
-      file: 'captions/earth-to-stars.en.srt',
+      file: 'captions/earth-to-stars.en.vtt',
     },
   ],
   format: {

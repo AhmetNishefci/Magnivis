@@ -29,7 +29,7 @@ pnpm qa earth-to-stars
 
 The final narrated video is written to `output/earth-to-stars-narrated.mp4`. QA metadata, representative frames, and a contact sheet are written under `qa/earth-to-stars-narrated/`.
 
-The reviewed English caption track for manual YouTube upload is `captions/earth-to-stars.en.srt`.
+The reviewed English caption track is `captions/earth-to-stars.en.vtt`, positioned between the upper headlines and lower metrics for Shorts playback. The SRT remains as an unpositioned fallback.
 
 ## Render and inspect Video 002
 

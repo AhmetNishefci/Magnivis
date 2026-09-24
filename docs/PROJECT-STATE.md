@@ -14,7 +14,7 @@ Last updated: 2026-09-24
 
 ## NOW
 
-- Replace Video 002's unpositioned SRT on YouTube with `captions/ocean-depth.en.vtt`, then confirm the captions stay in the lower safe area on desktop and mobile.
+- Replace both videos' unpositioned YouTube SRT tracks with their positioned WebVTT tracks, then confirm placement on desktop and mobile. Video 001 uses a center-lower band to clear its top headlines and bottom metrics; Video 002 uses the lower safe area.
 - Keep Video 002 private until its processed YouTube playback has been reviewed on a physical phone.
 - Produce Video 003 to complete publishing-ramp Week 1 with three total premium Shorts; there is no Week 1 long-form requirement.
 

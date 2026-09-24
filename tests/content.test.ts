@@ -34,7 +34,7 @@ describe('earth-to-stars specification', () => {
     expect(earthToStars.captions).toContainEqual({
       language: earthToStars.language,
       label: 'English',
-      file: 'captions/earth-to-stars.en.srt',
+      file: 'captions/earth-to-stars.en.vtt',
     });
   });
 
