@@ -14,7 +14,7 @@ export const oceanDepth = videoSpecSchema.parse({
   ],
   hook: 'EVEREST WOULD DISAPPEAR.',
   pillar: 'earth',
-  status: 'rendered',
+  status: 'reviewed',
   language: 'en',
   captions: [
     {
