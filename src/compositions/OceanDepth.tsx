@@ -6,7 +6,7 @@ import {SceneWindow} from '../components/SceneWindow';
 import {ShortSafeArea} from '../components/ShortSafeArea';
 import {RevealText} from '../components/Typography';
 import {oceanDepth} from '../content/videos/ocean-depth';
-import {palette, typography} from '../design/tokens';
+import {typography} from '../design/tokens';
 import {easeInOutCubic, easeOutQuint, mix, progress} from '../utils/math';
 
 const fps = oceanDepth.format.fps;
@@ -149,21 +149,6 @@ const Comparison = () => {
           </RevealText>
         </ShortSafeArea>
       </SceneWindow>
-      <div
-        style={{
-          position: 'absolute',
-          left: 84,
-          bottom: 260,
-          color: palette.muted,
-          fontFamily: typography.body,
-          fontSize: 16,
-          fontWeight: 700,
-          letterSpacing: '0.2em',
-          opacity: progress(frame, seconds(29.4), seconds(30.2)),
-        }}
-      >
-        MAGNIVIS · SEE THE UNIMAGINABLE
-      </div>
       <AbsoluteFill style={{backgroundColor: '#010309', opacity: finalFade}} />
     </SceneWindow>
   );
