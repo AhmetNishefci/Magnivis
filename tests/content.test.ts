@@ -1,7 +1,9 @@
 import {describe, expect, it} from 'vitest';
+import {billionDollars, billionDollarsFrames} from '../src/content/videos/billion-dollars';
 import {earthToStars, earthToStarsFrames} from '../src/content/videos/earth-to-stars';
 import {oceanDepth, oceanDepthFrames} from '../src/content/videos/ocean-depth';
 import {astronomyFacts, astronomySources, scaleRatios} from '../src/data/astronomy';
+import {moneyFacts, moneyScale, moneySources} from '../src/data/money';
 import {oceanFacts, oceanScale, oceanSources} from '../src/data/ocean';
 
 describe('earth-to-stars specification', () => {
@@ -87,6 +89,45 @@ describe('ocean-depth specification', () => {
   });
 });
 
+describe('billion-dollars specification', () => {
+  it('has the intended short frame count', () => {
+    expect(billionDollarsFrames).toBe(1050);
+    expect(billionDollars.format.durationSeconds).toBe(35);
+  });
+
+  it('keeps scenes and narration inside the composition', () => {
+    for (const scene of billionDollars.scenes) {
+      expect(scene.start).toBeGreaterThanOrEqual(0);
+      expect(scene.end).toBeLessThanOrEqual(billionDollars.format.durationSeconds);
+      expect(scene.end).toBeGreaterThan(scene.start);
+    }
+    const starts = billionDollars.audio.narrationCues.map((cue) => cue.start);
+    expect(starts).toEqual([...starts].sort((a, b) => a - b));
+    expect(starts.every((start) => start < billionDollars.format.durationSeconds)).toBe(true);
+  });
+
+  it('references only committed money facts', () => {
+    const factIds = new Set(moneyFacts.map((fact) => fact.id));
+    expect(billionDollars.factIds.every((id) => factIds.has(id))).toBe(true);
+  });
+
+  it('derives the physical billion-dollar comparisons', () => {
+    expect(moneyScale.billionNoteCount).toBe(10000000);
+    expect(moneyScale.billionWeightKg).toBe(10000);
+    expect(moneyScale.blockColumns * moneyScale.blockRows).toBe(1000);
+    expect(moneyScale.billionStackHeightM).toBeCloseTo(1109.89, 1);
+    expect(moneyScale.billionStackHeightM).toBeGreaterThan(moneyScale.burjHeightM);
+  });
+
+  it('declares positioned English captions', () => {
+    expect(billionDollars.captions).toContainEqual({
+      language: 'en',
+      label: 'English',
+      file: 'captions/billion-dollars.en.vtt',
+    });
+  });
+});
+
 describe('research records', () => {
   it('links every fact to a known authoritative source', () => {
     const sourceIds = new Set(astronomySources.map((source) => source.id));
@@ -110,6 +151,13 @@ describe('research records', () => {
   it('links every ocean fact to a known authoritative source', () => {
     const sourceIds = new Set(oceanSources.map((source) => source.id));
     for (const fact of oceanFacts) {
+      expect(fact.sourceIds.every((id) => sourceIds.has(id))).toBe(true);
+    }
+  });
+
+  it('links every money fact to a known authoritative source', () => {
+    const sourceIds = new Set(moneySources.map((source) => source.id));
+    for (const fact of moneyFacts) {
       expect(fact.sourceIds.every((id) => sourceIds.has(id))).toBe(true);
     }
   });

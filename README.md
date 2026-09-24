@@ -40,6 +40,15 @@ pnpm qa ocean-depth
 
 The narrated master is written to `output/ocean-depth-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/ocean-depth-narrated/`. Upload the positioned Shorts caption track at `captions/ocean-depth.en.vtt`; the SRT remains as an unpositioned fallback.
 
+## Render and inspect Video 003
+
+```bash
+pnpm render billion-dollars
+pnpm qa billion-dollars
+```
+
+The narrated master is written to `output/billion-dollars-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/billion-dollars-narrated/`. Upload the positioned Shorts caption track at `captions/billion-dollars.en.vtt`; the SRT remains as an unpositioned fallback.
+
 Run all non-rendering checks with:
 
 ```bash

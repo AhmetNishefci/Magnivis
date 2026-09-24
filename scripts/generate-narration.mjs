@@ -31,6 +31,19 @@ const configurations = {
       {id: 'coda', text: 'Challenger Deep. Nearly eleven kilometers below the surface.'},
     ],
   },
+  'billion-dollars': {
+    outputDirectory: 'public/audio/narration/billion-dollars',
+    speed: 1.04,
+    cues: [
+      {id: 'hook', text: 'This block is one billion dollars.'},
+      {id: 'notes', text: 'In one-hundred-dollar bills, that means ten million notes.'},
+      {id: 'million', text: 'Ten thousand notes make one million dollars.'},
+      {id: 'multiply', text: 'A billion needs one thousand stacks like this.'},
+      {id: 'weight', text: 'Together, they weigh about ten metric tons.'},
+      {id: 'tower', text: 'Stack every note, and the column climbs roughly one point one kilometers, higher than the Burj Khalifa.'},
+      {id: 'coda', text: 'Ten million pieces of paper. One billion dollars.'},
+    ],
+  },
 };
 
 const requestedId = process.argv[2] ?? 'earth-to-stars';

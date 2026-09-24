@@ -11,17 +11,18 @@ Last updated: 2026-09-24
 - The narrated master passed human review, received timed English captions, and was published manually at `https://www.youtube.com/shorts/bvgmCR2Dtcs`.
 - Video 001's initial performance snapshot was recorded in `docs/PERFORMANCE.md` and informed Video 002's shorter, faster structure.
 - Video 002, `ocean-depth`, passed research, render, automated QA, private HD/caption review, and was published manually at `https://www.youtube.com/shorts/rfVe_wqDKAQ`.
+- Video 003, `billion-dollars`, has verified source data, original procedural visuals/audio, synthetic narration, positioned captions, and a production master that passed automated media QA and representative-frame review.
 
 ## NOW
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Monitor Video 002's public playback and record its first meaningful analytics snapshot after approximately 24 hours.
-- Produce Video 003 to complete publishing-ramp Week 1 with three total premium Shorts; there is no Week 1 long-form requirement.
+- Complete human full-playback and mobile-size review of Video 003 before any private upload; then perform the existing private-upload, HD-processing, caption-placement, and manual-publication gates.
 
 ## NEXT
 
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
-- Ramp Week 2 to four premium Shorts and the first long-form video.
+- After Video 003 is manually approved and published, ramp Week 2 to four premium Shorts and the first long-form video.
 - Measure whether reusable components are reducing production time without lowering quality.
 
 ## LATER

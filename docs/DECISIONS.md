@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-24 — Higher-bitrate YouTube upload masters
+
+**Decision:** Render production masters with an 8 Mbps H.264 video target and a 192 kbps AAC audio target, while preserving 1080×1920, 30 fps, and `yuv420p` compatibility.
+
+**Reason:** Private YouTube review of earlier videos exposed text softness after platform transcoding. A higher-quality upload master gives the encoder more source detail for typography, fine lines, and dark gradients without imposing an unreasonable file-size or render-time cost.
+
+**Alternatives:** Keep the previous CRF 17 profile (smaller but produced lower-bitrate masters); render lossless intermediates (unnecessarily large for the current local/manual workflow); move immediately to 4K (not justified before testing whether bitrate alone resolves the issue).
+
+**Consequences:** Masters are larger, and YouTube will still re-encode them. Human review after HD processing remains mandatory; upload bitrate cannot compensate for poor typography, unsafe placement, or an intrinsically low-resolution asset.
+
 ## 2026-09-22 — Progressive publishing ramp to a mixed-format weekly cadence
 
 **Decision:** Ramp from 3 premium Shorts in Week 1, to 4 Shorts plus 1 long-form video in Week 2, then 5 Shorts plus 1 long-form video per week in Weeks 3–4 and steady state. This corresponds to a target of approximately 20–22 Shorts and 4 long-form videos per month.
