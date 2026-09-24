@@ -31,4 +31,4 @@ Magnivis is a premium, faceless visual-science media brand: **See the unimaginab
 - Product direction: `docs/STRATEGY.md`, `docs/ROADMAP.md`
 - Significant decisions: `docs/DECISIONS.md`
 - Asset provenance: `docs/ASSET-LICENSES.md`
-
+- Published-video performance snapshots: `docs/PERFORMANCE.md`

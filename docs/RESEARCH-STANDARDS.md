@@ -29,3 +29,4 @@ Committed facts are render inputs. Production rendering must not depend on live 
 
 Video 001 intentionally avoids “largest star” language. Betelgeuse is variable and its radius depends on observational/model assumptions, so the video labels the selected NASA value as an estimate.
 
+Video 002 treats Challenger Deep as an approximate depth because survey results vary slightly. Its Everest comparison is derived from NOAA's approximate 10,935 m Challenger Deep value and the Government of Nepal's 8,848.86 m Everest elevation. The procedural mountain is an illustrative silhouette; only its vertical height-to-depth ratio is quantitative.

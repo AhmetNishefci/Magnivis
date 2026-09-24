@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 ## DONE
 
@@ -9,16 +9,18 @@ Last updated: 2026-09-22
 - Remotion composition, procedural visual system, structured astronomy facts, modular soundscape and narration, render scripts, and automated QA implemented.
 - Video 001, `earth-to-stars`, rendered locally with a licensed synthetic voice and checked at 1080×1920 / 30 fps.
 - The narrated master passed human review, received timed English captions, and was published manually at `https://www.youtube.com/shorts/bvgmCR2Dtcs`.
+- Video 001's initial performance snapshot was recorded in `docs/PERFORMANCE.md` and informed Video 002's shorter, faster structure.
+- Video 002, `ocean-depth`, has verified NOAA/Nepal data, original procedural visuals/audio, narration, captions, a full production render, and passing automated QA.
 
 ## NOW
 
-- Verify the public Short from a logged-out/mobile viewer perspective.
-- Establish 24-hour, 48-hour, and 7-day performance snapshots.
-- Complete publishing-ramp Week 1 with two more premium Shorts, for three total; there is no Week 1 long-form requirement.
+- Human review of `output/ocean-depth-narrated.mp4` on headphones and a physical phone.
+- After approval, manually upload Video 002 as private and complete YouTube processing/copyright/metadata review.
+- Produce Video 003 to complete publishing-ramp Week 1 with three total premium Shorts; there is no Week 1 long-form requirement.
 
 ## NEXT
 
-- Review retention and discovery data without reacting to the first few hours of noise.
+- Record Video 001's seven-day performance snapshot without overreacting to a single upload.
 - Ramp Week 2 to four premium Shorts and the first long-form video.
 - Measure whether reusable components are reducing production time without lowering quality.
 

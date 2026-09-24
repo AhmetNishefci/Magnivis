@@ -12,7 +12,6 @@ try {
 }
 
 mkdirSync('output', {recursive: true});
-
 const result = spawnSync(
   process.platform === 'win32' ? 'pnpm.cmd' : 'pnpm',
   [
@@ -21,10 +20,11 @@ const result = spawnSync(
     'render',
     'src/index.ts',
     target.spec.compositionId,
-    target.output,
+    `output/${requestedId}-smoke.mp4`,
+    '--frames=0-89',
     '--codec=h264',
     '--audio-codec=aac',
-    '--crf=17',
+    '--crf=28',
     '--pixel-format=yuv420p',
     '--overwrite',
   ],

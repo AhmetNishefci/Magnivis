@@ -1,20 +1,23 @@
 import {createRequire} from 'node:module';
 import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
-import {earthToStars} from '../src/content/videos/earth-to-stars';
+import {resolveVideoTarget} from './video-targets';
 
 const require = createRequire(import.meta.url);
 const ffmpegPath = require('ffmpeg-static') as string;
 const ffprobePath = (require('ffprobe-static') as {path: string}).path;
 
-const id = process.argv[2] ?? earthToStars.id;
-if (id !== earthToStars.id) {
-  console.error(`Unknown video id: ${id}. Available: ${earthToStars.id}`);
+const id = process.argv[2] ?? 'earth-to-stars';
+let target;
+try {
+  target = resolveVideoTarget(id);
+} catch (error) {
+  console.error(error instanceof Error ? error.message : error);
   process.exit(1);
 }
 
-const input = `output/${id}-narrated.mp4`;
-const qaDirectory = `qa/${id}-narrated`;
+const input = target.output;
+const qaDirectory = target.qaDirectory;
 if (!existsSync(input)) {
   console.error(`Missing ${input}. Run: pnpm render ${id}`);
   process.exit(1);
@@ -42,7 +45,7 @@ const metadata = JSON.parse(probe.stdout) as {
 const video = metadata.streams.find((stream) => stream.codec_type === 'video');
 const audio = metadata.streams.find((stream) => stream.codec_type === 'audio');
 const duration = Number(metadata.format.duration);
-const expected = earthToStars.format;
+const expected = target.spec.format;
 const failures: string[] = [];
 
 const volumeProbe = spawnSync(
@@ -88,7 +91,7 @@ const report = {
 };
 writeFileSync(`${qaDirectory}/report.json`, `${JSON.stringify(report, null, 2)}\n`);
 
-const timestamps = [0.7, 9.8, 17.8, 25.7, 34.8, 40.7];
+const timestamps = target.qaTimestamps;
 for (const [index, timestamp] of timestamps.entries()) {
   const filename = `${qaDirectory}/frame-${String(index + 1).padStart(2, '0')}-${timestamp.toFixed(1)}s.png`;
   const frame = spawnSync(
@@ -99,6 +102,7 @@ for (const [index, timestamp] of timestamps.entries()) {
   if (frame.status !== 0) throw new Error(frame.stderr || `Failed to extract ${filename}`);
 }
 
+const contactInterval = expected.durationSeconds / timestamps.length;
 const contactSheet = spawnSync(
   ffmpegPath,
   [
@@ -106,7 +110,7 @@ const contactSheet = spawnSync(
     '-i',
     input,
     '-vf',
-    "fps=1/7,scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:color=0x02030a,tile=3x2:padding=10:margin=10:color=0x02030a",
+    `fps=1/${contactInterval.toFixed(3)},scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:color=0x02030a,tile=${timestamps.length > 6 ? '4x2' : '3x2'}:padding=10:margin=10:color=0x02030a`,
     '-frames:v',
     '1',
     '-q:v',

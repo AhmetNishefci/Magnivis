@@ -32,14 +32,27 @@ This is deliberately a typed code specification rather than YAML/JSON. V1 needs 
 - Captions: `captions/earth-to-stars.en.srt`
 - Output: `output/earth-to-stars-narrated.mp4`
 
+## Video 002
+
+- ID: `ocean-depth`
+- Remotion composition: `Magnivis-Ocean-Depth`
+- Format: 1080×1920, 30 fps, 32 seconds
+- Visuals: original procedural water column, depth counter, particulate field, and scale-accurate Everest/Challenger Deep comparison
+- Audio: original deterministic stereo deep-ocean soundscape plus seven modular English narration cues
+- Captions: `captions/ocean-depth.en.srt`
+- Output: `output/ocean-depth-narrated.mp4`
+
 ## Commands
 
 ```bash
 pnpm dev                         # Remotion Studio
 pnpm render earth-to-stars       # full production render
-pnpm render:smoke                # first 90 frames only
+pnpm render ocean-depth          # Video 002 production render
+pnpm render:smoke ocean-depth    # first 90 frames only
 pnpm qa earth-to-stars           # ffprobe checks + frames + contact sheet
+pnpm qa ocean-depth              # Video 002 media QA and contact sheet
 pnpm assets                      # regenerate original procedural audio
+pnpm assets:ocean                # regenerate Video 002 soundscape and narration
 pnpm check                       # typecheck, lint, tests, diff check
 ```
 

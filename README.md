@@ -31,6 +31,15 @@ The final narrated video is written to `output/earth-to-stars-narrated.mp4`. QA 
 
 The reviewed English caption track for manual YouTube upload is `captions/earth-to-stars.en.srt`.
 
+## Render and inspect Video 002
+
+```bash
+pnpm render ocean-depth
+pnpm qa ocean-depth
+```
+
+The narrated master is written to `output/ocean-depth-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/ocean-depth-narrated/`. The timed English caption track is `captions/ocean-depth.en.srt`.
+
 Run all non-rendering checks with:
 
 ```bash
