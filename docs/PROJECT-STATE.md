@@ -14,6 +14,8 @@ Last updated: 2026-09-25
 - Video 002's first 1 day 6 hour performance snapshot was recorded in `docs/PERFORMANCE.md`; its reach was limited, its opening selection was weak, and it nevertheless gained one subscriber.
 - Video 003, `billion-dollars`, passed research, render, automated QA, private HD/caption/mobile review, and was published manually at `https://www.youtube.com/shorts/-t6xICbP68s`.
 - Publishing-ramp Week 1 is complete with three premium Shorts.
+- Video 004, `speed-of-light`, has verified NIST/NASA data, original procedural visuals/audio, synthetic narration, positioned captions, and a production master that passed automated media QA and representative/transition-frame review.
+- The first long-form candidate, `The True Scale of the Universe`, has a bounded research/story brief in `docs/LONGFORM-001-BRIEF.md`; implementation has not begun.
 
 ## NOW
 
@@ -21,11 +23,13 @@ Last updated: 2026-09-25
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
 - Monitor Video 003 and record its first meaningful performance snapshot after approximately 24 hours.
 - Begin Week 2 planning: four premium Shorts and one first long-form video, with quality remaining the hard gate.
+- Complete human full-playback and mobile-size review of Video 004 before any private upload.
+- Research and storyboard the first long-form video against `docs/LONGFORM-001-BRIEF.md` before building a landscape composition.
 
 ## NEXT
 
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
-- Produce Video 004 while beginning research and story development for the first long-form video.
+- After Video 004 review, prepare its private-upload metadata and caption package while continuing long-form research.
 - Measure whether reusable components are reducing production time without lowering quality.
 
 ## LATER

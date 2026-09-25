@@ -49,6 +49,15 @@ pnpm qa billion-dollars
 
 The narrated master is written to `output/billion-dollars-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/billion-dollars-narrated/`. Upload the positioned Shorts caption track at `captions/billion-dollars.en.vtt`; the SRT remains as an unpositioned fallback.
 
+## Render and inspect Video 004
+
+```bash
+pnpm render speed-of-light
+pnpm qa speed-of-light
+```
+
+The narrated master is written to `output/speed-of-light-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/speed-of-light-narrated/`. Upload the positioned Shorts caption track at `captions/speed-of-light.en.vtt`; the SRT remains as an unpositioned fallback.
+
 Run all non-rendering checks with:
 
 ```bash

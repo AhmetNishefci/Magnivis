@@ -44,6 +44,18 @@ const configurations = {
       {id: 'coda', text: 'Ten million pieces of paper. One billion dollars.'},
     ],
   },
+  'speed-of-light': {
+    outputDirectory: 'public/audio/narration/speed-of-light',
+    speed: 1.06,
+    cues: [
+      {id: 'hook', text: 'In one second, light could circle Earth seven and a half times.'},
+      {id: 'speed', text: 'In a vacuum, it travels nearly three hundred thousand kilometers every second.'},
+      {id: 'moon', text: 'Earth to the Moon takes only about one point two eight seconds.'},
+      {id: 'sun', text: 'Sunlight needs about eight minutes and twenty seconds to reach us.'},
+      {id: 'year', text: 'In one year, light covers nine point four six trillion kilometers.'},
+      {id: 'proxima', text: 'Yet even at that speed, Proxima Centauri is still four point two five years away.'},
+    ],
+  },
 };
 
 const requestedId = process.argv[2] ?? 'earth-to-stars';

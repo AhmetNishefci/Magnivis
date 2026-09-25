@@ -1,6 +1,7 @@
 import {billionDollars} from '../src/content/videos/billion-dollars';
 import {earthToStars} from '../src/content/videos/earth-to-stars';
 import {oceanDepth} from '../src/content/videos/ocean-depth';
+import {speedOfLight} from '../src/content/videos/speed-of-light';
 
 export const videoTargets = {
   [earthToStars.id]: {
@@ -20,6 +21,12 @@ export const videoTargets = {
     output: `output/${billionDollars.id}-narrated.mp4`,
     qaDirectory: `qa/${billionDollars.id}-narrated`,
     qaTimestamps: [0.4, 4.8, 9.8, 14.8, 20.4, 27.7, 32.6, 34.2],
+  },
+  [speedOfLight.id]: {
+    spec: speedOfLight,
+    output: `output/${speedOfLight.id}-narrated.mp4`,
+    qaDirectory: `qa/${speedOfLight.id}-narrated`,
+    qaTimestamps: [0.25, 2.8, 5.9, 10.8, 15.8, 21.8, 27.8, 32.1],
   },
 } as const;
 

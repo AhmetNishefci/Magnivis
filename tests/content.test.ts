@@ -2,9 +2,11 @@ import {describe, expect, it} from 'vitest';
 import {billionDollars, billionDollarsFrames} from '../src/content/videos/billion-dollars';
 import {earthToStars, earthToStarsFrames} from '../src/content/videos/earth-to-stars';
 import {oceanDepth, oceanDepthFrames} from '../src/content/videos/ocean-depth';
+import {speedOfLight, speedOfLightFrames} from '../src/content/videos/speed-of-light';
 import {astronomyFacts, astronomySources, scaleRatios} from '../src/data/astronomy';
 import {moneyFacts, moneyScale, moneySources} from '../src/data/money';
 import {oceanFacts, oceanScale, oceanSources} from '../src/data/ocean';
+import {lightFacts, lightScale, lightSources} from '../src/data/light';
 
 describe('earth-to-stars specification', () => {
   it('has an exact frame count', () => {
@@ -128,6 +130,46 @@ describe('billion-dollars specification', () => {
   });
 });
 
+describe('speed-of-light specification', () => {
+  it('has the intended fast frame count', () => {
+    expect(speedOfLightFrames).toBe(990);
+    expect(speedOfLight.format.durationSeconds).toBe(33);
+  });
+
+  it('keeps scenes and narration inside the composition', () => {
+    for (const scene of speedOfLight.scenes) {
+      expect(scene.start).toBeGreaterThanOrEqual(0);
+      expect(scene.end).toBeLessThanOrEqual(speedOfLight.format.durationSeconds);
+      expect(scene.end).toBeGreaterThan(scene.start);
+    }
+    const starts = speedOfLight.audio.narrationCues.map((cue) => cue.start);
+    expect(starts).toEqual([...starts].sort((a, b) => a - b));
+    expect(starts.every((start) => start < speedOfLight.format.durationSeconds)).toBe(true);
+  });
+
+  it('references only committed light facts', () => {
+    const factIds = new Set(lightFacts.map((fact) => fact.id));
+    expect(speedOfLight.factIds.every((id) => factIds.has(id))).toBe(true);
+  });
+
+  it('derives the familiar light-time comparisons', () => {
+    expect(lightScale.speedMps).toBe(299792458);
+    expect(lightScale.earthLapsPerSecond).toBeCloseTo(7.489, 3);
+    expect(lightScale.moonLightTimeSeconds).toBeCloseTo(1.2822, 4);
+    expect(lightScale.sunLightTimeMinutes).toBeCloseTo(8.3333, 4);
+    expect(lightScale.lightYearKm).toBe(9.46e12);
+    expect(lightScale.proximaLightYears).toBe(4.25);
+  });
+
+  it('declares positioned English captions', () => {
+    expect(speedOfLight.captions).toContainEqual({
+      language: 'en',
+      label: 'English',
+      file: 'captions/speed-of-light.en.vtt',
+    });
+  });
+});
+
 describe('research records', () => {
   it('links every fact to a known authoritative source', () => {
     const sourceIds = new Set(astronomySources.map((source) => source.id));
@@ -158,6 +200,13 @@ describe('research records', () => {
   it('links every money fact to a known authoritative source', () => {
     const sourceIds = new Set(moneySources.map((source) => source.id));
     for (const fact of moneyFacts) {
+      expect(fact.sourceIds.every((id) => sourceIds.has(id))).toBe(true);
+    }
+  });
+
+  it('links every light fact to a known authoritative source', () => {
+    const sourceIds = new Set(lightSources.map((source) => source.id));
+    for (const fact of lightFacts) {
       expect(fact.sourceIds.every((id) => sourceIds.has(id))).toBe(true);
     }
   });

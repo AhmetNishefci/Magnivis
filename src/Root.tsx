@@ -2,9 +2,11 @@ import {Composition} from 'remotion';
 import {BillionDollars} from './compositions/BillionDollars';
 import {EarthToStars} from './compositions/EarthToStars';
 import {OceanDepth} from './compositions/OceanDepth';
+import {SpeedOfLight} from './compositions/SpeedOfLight';
 import {billionDollars, billionDollarsFrames} from './content/videos/billion-dollars';
 import {earthToStars, earthToStarsFrames} from './content/videos/earth-to-stars';
 import {oceanDepth, oceanDepthFrames} from './content/videos/ocean-depth';
+import {speedOfLight, speedOfLightFrames} from './content/videos/speed-of-light';
 
 export const RemotionRoot = () => (
   <>
@@ -31,6 +33,14 @@ export const RemotionRoot = () => (
       fps={billionDollars.format.fps}
       width={billionDollars.format.width}
       height={billionDollars.format.height}
+    />
+    <Composition
+      id={speedOfLight.compositionId}
+      component={SpeedOfLight}
+      durationInFrames={speedOfLightFrames}
+      fps={speedOfLight.format.fps}
+      width={speedOfLight.format.width}
+      height={speedOfLight.format.height}
     />
   </>
 );

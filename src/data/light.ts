@@ -1,0 +1,128 @@
+import {factSchema, sourceSchema} from '../content/schema';
+
+export const lightSources = sourceSchema.array().parse([
+  {
+    id: 'nist-speed-of-light',
+    organization: 'National Institute of Standards and Technology',
+    title: 'Definitions of SI Base Units',
+    url: 'https://www.nist.gov/si-redefinition/definitions-si-base-units',
+    retrieved: '2026-09-25',
+  },
+  {
+    id: 'nasa-earth-moon-numbers',
+    organization: 'NASA Science',
+    title: 'Compare Earth and the Moon',
+    url: 'https://science.nasa.gov/moon/by-the-numbers/',
+    retrieved: '2026-09-25',
+  },
+  {
+    id: 'nasa-sun-light-time',
+    organization: 'NASA Science',
+    title: 'All About the Sun',
+    url: 'https://spaceplace.nasa.gov/all-about-the-sun/en/',
+    retrieved: '2026-09-25',
+  },
+  {
+    id: 'nasa-light-year',
+    organization: 'NASA Science',
+    title: 'What Is a Light-Year?',
+    url: 'https://science.nasa.gov/exoplanets/what-is-a-light-year/',
+    retrieved: '2026-09-25',
+  },
+]);
+
+export const lightFacts = factSchema.array().parse([
+  {
+    id: 'light-speed-vacuum-mps',
+    claim: 'Speed of light in vacuum',
+    value: 299792458,
+    unit: 'm/s',
+    basis: 'defined',
+    sourceIds: ['nist-speed-of-light'],
+    display: '299,792,458 m/s',
+    notes: 'The numerical value is exact because the SI metre is defined using the speed of light in vacuum.',
+  },
+  {
+    id: 'earth-equatorial-circumference-km',
+    claim: 'Earth equatorial circumference',
+    value: 40030.2,
+    unit: 'km',
+    basis: 'measured',
+    sourceIds: ['nasa-earth-moon-numbers'],
+    display: '40,030.2 km',
+    notes: 'NASA value used for the illustrative equatorial lap comparison.',
+  },
+  {
+    id: 'light-earth-laps-per-second',
+    claim: 'Equatorial Earth circumferences traversed by light in one second',
+    value: (299792458 / 1000) / 40030.2,
+    unit: 'count',
+    basis: 'derived',
+    sourceIds: ['nist-speed-of-light', 'nasa-earth-moon-numbers'],
+    display: '≈7.5 times',
+    notes: 'Derived by dividing light speed in kilometres per second by Earth’s equatorial circumference; ignores atmospheric propagation effects.',
+  },
+  {
+    id: 'earth-moon-average-distance-km',
+    claim: 'Average orbital distance from Earth to the Moon',
+    value: 384400,
+    unit: 'km',
+    basis: 'measured',
+    sourceIds: ['nasa-earth-moon-numbers'],
+    display: '384,400 km',
+    notes: 'Average orbital distance; the instantaneous Earth–Moon distance varies.',
+  },
+  {
+    id: 'earth-moon-light-time-s',
+    claim: 'Approximate one-way light time across the average Earth–Moon distance',
+    value: 384400 / (299792458 / 1000),
+    unit: 's',
+    basis: 'derived',
+    sourceIds: ['nist-speed-of-light', 'nasa-earth-moon-numbers'],
+    display: '≈1.28 seconds',
+    notes: 'Derived from the average orbital distance divided by the defined vacuum speed of light.',
+  },
+  {
+    id: 'sun-earth-light-time-minutes',
+    claim: 'Approximate light travel time from the Sun to Earth',
+    value: 8 + 20 / 60,
+    unit: 'minutes',
+    basis: 'estimated',
+    sourceIds: ['nasa-sun-light-time'],
+    display: '≈8 min 20 sec',
+    notes: 'Rounded NASA educational value; Earth–Sun distance varies through the orbit.',
+  },
+  {
+    id: 'light-year-distance-km',
+    claim: 'Approximate distance light travels through vacuum in one Earth year',
+    value: 9.46e12,
+    unit: 'km',
+    basis: 'estimated',
+    sourceIds: ['nasa-light-year'],
+    display: '≈9.46 trillion km',
+    notes: 'Rounded NASA value for one light-year.',
+  },
+  {
+    id: 'proxima-centauri-distance-light-years',
+    claim: 'Approximate distance to Proxima Centauri',
+    value: 4.25,
+    unit: 'light-years',
+    basis: 'estimated',
+    sourceIds: ['nasa-light-year'],
+    display: '≈4.25 light-years',
+    notes: 'NASA educational value for the nearest neighboring star beyond the Sun.',
+  },
+]);
+
+export const lightFactById = Object.fromEntries(lightFacts.map((fact) => [fact.id, fact]));
+
+export const lightScale = {
+  speedMps: lightFactById['light-speed-vacuum-mps']!.value,
+  earthCircumferenceKm: lightFactById['earth-equatorial-circumference-km']!.value,
+  earthLapsPerSecond: lightFactById['light-earth-laps-per-second']!.value,
+  moonDistanceKm: lightFactById['earth-moon-average-distance-km']!.value,
+  moonLightTimeSeconds: lightFactById['earth-moon-light-time-s']!.value,
+  sunLightTimeMinutes: lightFactById['sun-earth-light-time-minutes']!.value,
+  lightYearKm: lightFactById['light-year-distance-km']!.value,
+  proximaLightYears: lightFactById['proxima-centauri-distance-light-years']!.value,
+} as const;

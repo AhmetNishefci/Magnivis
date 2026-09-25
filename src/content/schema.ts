@@ -12,7 +12,7 @@ export const factSchema = z.object({
   id: z.string().min(1),
   claim: z.string().min(1),
   value: z.number().positive(),
-  unit: z.enum(['km', 'm', 'mm', 'g', 'kg', 'usd', 'count', 'solar-radii']),
+  unit: z.enum(['km', 'm', 'mm', 'm/s', 's', 'minutes', 'light-years', 'g', 'kg', 'usd', 'count', 'solar-radii']),
   basis: z.enum(['measured', 'defined', 'estimated', 'derived']),
   sourceIds: z.array(z.string().min(1)).min(1),
   display: z.string().min(1),
