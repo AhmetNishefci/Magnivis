@@ -45,4 +45,37 @@ Revisit Video 001 at the seven-day mark and compare future videos against channe
 
 Public URL: `https://www.youtube.com/shorts/rfVe_wqDKAQ`
 
-Published manually on 2026-09-24 after private 1080p, caption-placement, copyright, and mobile review. Record the first performance snapshot after approximately 24 hours; do not infer performance from the opening minutes.
+### Initial snapshot — 2026-09-25
+
+YouTube Studio displayed the reporting point as the first 1 day 6 hours. Overview showed 75 views while realtime showed 77, consistent with asynchronous report refreshes.
+
+| Metric | Value |
+|---|---:|
+| Raw views | 75 |
+| Engaged views | 29 |
+| Unique viewers | 17 |
+| Watch time | 0.2 hours |
+| Average view duration | 0:20 of 0:33 |
+| Stayed to watch | 38.3% |
+| Swiped away | 61.7% |
+| Shorts-feed traffic | 48.1% |
+| Channel-page traffic | 23.4% |
+| YouTube-search traffic | 14.3% |
+| Subscribers gained | +1 |
+
+Audience retention was still processing and may take up to two days, so the exact drop-off pattern was unavailable.
+
+### Working interpretation
+
+- Distribution was limited: only about half of the small view count came from the Shorts feed.
+- The 61.7% swipe-away rate points to opening appeal as the primary current weakness.
+- Viewers who engaged watched roughly 61% of the runtime, a reasonable but not decisive completion signal.
+- One subscriber from this small sample is a positive satisfaction signal, but the sample is too small for a stable conversion rate.
+- Relevant search traffic for “mount everest” gives the video some potential for slower evergreen discovery.
+- Leave the upload public and unchanged; use its retention curve, once processed, to inform future hooks rather than re-uploading it.
+
+## Video 003 — `billion-dollars`
+
+Public URL: `https://www.youtube.com/shorts/-t6xICbP68s`
+
+Published manually on 2026-09-25 after private HD, caption-placement, copyright, and mobile review. Record the first meaningful snapshot after approximately 24 hours and compare its opening appeal, engaged-view duration, and subscriber conversion with Videos 001 and 002.

@@ -14,7 +14,13 @@ export const billionDollars = videoSpecSchema.parse({
   ],
   hook: 'THIS BLOCK IS $1 BILLION.',
   pillar: 'numbers',
-  status: 'rendered',
+  status: 'published',
+  publication: {
+    platform: 'youtube',
+    videoId: '-t6xICbP68s',
+    publicUrl: 'https://www.youtube.com/shorts/-t6xICbP68s',
+    publishedDate: '2026-09-25',
+  },
   language: 'en',
   captions: [
     {
