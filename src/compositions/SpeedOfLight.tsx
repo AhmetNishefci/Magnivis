@@ -30,10 +30,10 @@ const Hook = () => {
           EARTH
         </RevealText>
       </ShortSafeArea>
-      <div style={{position: 'absolute', left: 84, top: 1350, color: palette.gold, fontFamily: typography.display, fontSize: 116, fontWeight: 700, letterSpacing: '-0.06em'}}>
+      <div style={{position: 'absolute', left: 84, top: 1130, color: palette.gold, fontFamily: typography.display, fontSize: 116, fontWeight: 700, lineHeight: 0.82, letterSpacing: '-0.06em'}}>
         {laps.toFixed(1)}×
       </div>
-      <div style={{position: 'absolute', left: 89, top: 1460, color: palette.muted, fontFamily: typography.body, fontSize: 19, fontWeight: 800, letterSpacing: '0.2em'}}>AROUND THE PLANET</div>
+      <div style={{position: 'absolute', left: 89, top: 1242, color: palette.muted, fontFamily: typography.body, fontSize: 21, fontWeight: 800, letterSpacing: '0.16em'}}>AROUND THE PLANET</div>
     </SceneWindow>
   );
 };

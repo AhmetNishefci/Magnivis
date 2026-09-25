@@ -52,9 +52,6 @@ export const PhotonOrbit = ({amount}: {amount: number}) => {
     <AbsoluteFill>
       <CelestialBody kind="earth" diameter={500} centerX={centerX} centerY={centerY} rotationSpeed={0.022} />
       <svg width="1080" height="1920" viewBox="0 0 1080 1920" style={{position: 'absolute', inset: 0}} aria-hidden="true">
-        <defs>
-          <filter id="photon-glow"><feGaussianBlur stdDeviation="8" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
-        </defs>
         {Array.from({length: 8}, (_, index) => {
           const lap = clamp01(totalLaps - index);
           const rx = radiusX + index * 7;
@@ -77,7 +74,9 @@ export const PhotonOrbit = ({amount}: {amount: number}) => {
             />
           );
         })}
-        <circle cx={photonX} cy={photonY} r={12} fill="#fffbe0" filter="url(#photon-glow)" />
+        <circle cx={photonX} cy={photonY} r={34} fill="#ffe28b" opacity={0.1} />
+        <circle cx={photonX} cy={photonY} r={21} fill="#ffe8a8" opacity={0.2} />
+        <circle cx={photonX} cy={photonY} r={10} fill="#fffde8" />
       </svg>
     </AbsoluteFill>
   );
@@ -98,10 +97,18 @@ export const DistanceBeam = ({amount, start, end, color = '#ffe28b'}: DistanceBe
   const length = Math.sqrt(dx * dx + dy * dy);
   return (
     <svg width="1080" height="1920" viewBox="0 0 1080 1920" style={{position: 'absolute', inset: 0}} aria-hidden="true">
-      <defs>
-        <filter id="beam-glow"><feGaussianBlur stdDeviation="11" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
-      </defs>
       <line x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke="rgba(171,203,240,0.22)" strokeWidth={2} strokeDasharray="8 14" />
+      <line
+        x1={start.x}
+        y1={start.y}
+        x2={end.x}
+        y2={end.y}
+        stroke={color}
+        strokeWidth={22}
+        opacity={0.08}
+        strokeDasharray={length}
+        strokeDashoffset={length * (1 - amount)}
+      />
       <line
         x1={start.x}
         y1={start.y}
@@ -112,9 +119,10 @@ export const DistanceBeam = ({amount, start, end, color = '#ffe28b'}: DistanceBe
         opacity={0.72}
         strokeDasharray={length}
         strokeDashoffset={length * (1 - amount)}
-        filter="url(#beam-glow)"
       />
-      <circle cx={x} cy={y} r={13} fill="#fffde8" filter="url(#beam-glow)" />
+      <circle cx={x} cy={y} r={35} fill={color} opacity={0.09} />
+      <circle cx={x} cy={y} r={22} fill={color} opacity={0.2} />
+      <circle cx={x} cy={y} r={11} fill="#fffde8" />
     </svg>
   );
 };
