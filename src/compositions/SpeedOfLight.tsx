@@ -33,7 +33,7 @@ const Hook = () => {
       <div style={{position: 'absolute', left: 84, top: 1130, color: palette.gold, fontFamily: typography.display, fontSize: 116, fontWeight: 700, lineHeight: 0.82, letterSpacing: '-0.06em'}}>
         {laps.toFixed(1)}×
       </div>
-      <div style={{position: 'absolute', left: 89, top: 1242, color: palette.muted, fontFamily: typography.body, fontSize: 21, fontWeight: 800, letterSpacing: '0.16em'}}>AROUND THE PLANET</div>
+      <div style={{position: 'absolute', left: 89, top: 1242, color: palette.muted, fontFamily: typography.body, fontSize: 21, fontWeight: 800, letterSpacing: '0.16em'}}>AROUND EARTH</div>
     </SceneWindow>
   );
 };
@@ -41,19 +41,19 @@ const Hook = () => {
 const ExactSpeed = () => {
   const frame = useCurrentFrame();
   const amount = progress(frame, seconds(3.75), seconds(7.8));
-  const displayed = Math.round(mix(0, lightScale.speedMps, easeOutQuint(amount)));
+  const displayed = mix(0, lightScale.speedMps / 1000, easeOutQuint(amount));
   return (
     <SceneWindow start={seconds(3.65)} end={seconds(10.2)} fadeIn={10} fadeOut={12}>
       <LightAtmosphere intensity={0.6} />
       <LightTunnel amount={amount} />
       <ShortSafeArea>
         <RevealText at={seconds(3.85)} eyebrow="IN A VACUUM" style={{fontSize: 73, fontWeight: 700, lineHeight: 0.92}}>
-          {displayed.toLocaleString('en-US')}
+          {displayed.toLocaleString('en-US', {minimumFractionDigits: 3, maximumFractionDigits: 3})}
           <br />
-          M / SECOND
+          KM / SECOND
         </RevealText>
       </ShortSafeArea>
-      <div style={{position: 'absolute', left: 84, top: 1460, fontFamily: typography.body, fontSize: 18, fontWeight: 800, color: '#abc8e8', letterSpacing: '0.18em'}}>EXACT · SI DEFINITION</div>
+      <div style={{position: 'absolute', left: 84, top: 1460, fontFamily: typography.body, fontSize: 18, fontWeight: 800, color: '#abc8e8', letterSpacing: '0.18em'}}>EXACT CONVERSION · SI DEFINITION</div>
     </SceneWindow>
   );
 };
