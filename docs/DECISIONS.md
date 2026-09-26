@@ -1,14 +1,14 @@
 # Significant decisions
 
-## 2026-09-26 — Deterministic open captions for narrated Shorts
+## 2026-09-26 — Toggleable YouTube captions, without burned-in narration text
 
-**Decision:** Render bottom-centered open captions into narrated Shorts through a reusable component and structured cue data. Retain WebVTT only as an optional accessibility/translation track whose placement is best-effort.
+**Decision:** Keep narration captions as optional YouTube caption tracks and do not burn them into production masters. Request lower-center placement in WebVTT while treating client-side positioning as best-effort.
 
-**Reason:** Private mobile review showed that YouTube's mobile Shorts player can move correctly positioned WebVTT captions to the top of the frame even while desktop respects the same file. This collides with Magnivis headlines and makes platform-controlled placement unsuitable for the primary mobile experience.
+**Reason:** A private Video 004 review showed that burned-in captions plus enabled YouTube captions produce distracting duplicate text. The audience must be able to turn narration captions on or off.
 
-**Alternatives:** Rely on WebVTT positioning (inconsistent across clients); move captions in YouTube's mobile editor (manual and not reproducible); omit captions (weakens comprehension and silent viewing).
+**Alternatives:** Burn in captions for deterministic placement (rejected because they cannot be disabled and duplicate YouTube captions); omit caption tracks (rejected because it harms accessibility and silent viewing); rely on automatic captions alone (less editorial control over wording and timing).
 
-**Consequences:** Caption placement becomes deterministic and part of render QA. English text is always visible in the master, while viewers who also enable a soft caption track may see duplicate text. Existing public videos will not be re-uploaded merely to retrofit this decision; it applies from Video 004 onward.
+**Consequences:** Caption copy and timing remain controlled, but YouTube controls presentation. Its desktop player may honor lower-center WebVTT placement while its mobile Shorts player can move captions elsewhere. Video layouts must tolerate either placement, and private platform review with captions on and off remains mandatory.
 
 ## 2026-09-24 — Higher-bitrate YouTube upload masters
 

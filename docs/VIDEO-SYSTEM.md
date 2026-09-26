@@ -94,8 +94,8 @@ The render router rejects unknown video IDs. Production renders use an 8 Mbps H.
 
 ## Caption placement
 
-- YouTube's mobile Shorts player can override WebVTT placement even when desktop respects it. Therefore narrated Magnivis Shorts render deterministic open captions into the production master using `ShortOpenCaptions`.
-- Open captions are horizontally centered in the lower safe area, above YouTube's bottom metadata and progress overlays. Do not place captions at the extreme bottom edge.
-- Structured burn-in cues live with the video specification rather than inside composition choreography. Each cue is limited to two editorially broken lines.
-- Positioned WebVTT files remain optional accessibility/translation tracks using `line:78% position:50% align:center`; `.srt` files are unpositioned fallbacks only. Soft-caption placement is best-effort and may vary by YouTube client.
-- Review every private Short on a physical phone before publication. Existing public videos are not re-uploaded solely to retrofit open captions.
+- Narrated Magnivis Shorts use optional YouTube caption tracks; do not burn narration captions into the production master. This preserves the viewer's ability to turn captions on or off and avoids duplicate text when YouTube captions are enabled.
+- Positioned WebVTT files request horizontal centering in the lower safe area using `line:78% position:50% align:center`; `.srt` files are unpositioned fallbacks only.
+- Caption positioning is best-effort. YouTube's desktop player may honor WebVTT placement while the mobile Shorts player may override it, including moving captions toward the top. The app—not the uploaded MP4—controls optional-caption rendering.
+- Keep key visuals and headlines clear of both likely caption regions, and review every private Short with captions on and off in desktop and mobile clients before publication.
+- Existing public videos are not re-uploaded solely to adjust optional-caption placement.

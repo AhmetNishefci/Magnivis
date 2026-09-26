@@ -26,12 +26,6 @@ export const sceneSchema = z.object({
   purpose: z.string().min(1),
 }).refine((scene) => scene.end > scene.start, 'Scene end must follow its start');
 
-export const captionCueSchema = z.object({
-  start: z.number().nonnegative(),
-  end: z.number().positive(),
-  lines: z.array(z.string().min(1)).min(1).max(2),
-}).refine((cue) => cue.end > cue.start, 'Caption end must follow its start');
-
 export const videoSpecSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   compositionId: z.string().min(1),
@@ -61,7 +55,6 @@ export const videoSpecSchema = z.object({
     language: z.string().min(2),
     label: z.string().min(1),
     file: z.string().min(1),
-    burnInCues: z.array(captionCueSchema).optional(),
   })),
   format: z.object({
     width: z.number().int().positive(),
