@@ -184,6 +184,16 @@ describe('speed-of-light specification', () => {
       file: 'captions/speed-of-light.en.vtt',
     });
   });
+
+  it('records the canonical publication', () => {
+    expect(speedOfLight.status).toBe('published');
+    expect(speedOfLight.publication).toEqual({
+      platform: 'youtube',
+      videoId: 'ATPAdRdrRRw',
+      publicUrl: 'https://www.youtube.com/shorts/ATPAdRdrRRw',
+      publishedDate: '2026-09-26',
+    });
+  });
 });
 
 describe('research records', () => {

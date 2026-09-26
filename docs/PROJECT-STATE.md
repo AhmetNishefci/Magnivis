@@ -16,7 +16,7 @@ Last updated: 2026-09-26
 - Video 003's first 21-hour performance snapshot was recorded in `docs/PERFORMANCE.md`; it received a meaningful feed test but had weak opening selection and only 13 seconds average view duration on a 36-second runtime.
 - Publishing-ramp Week 1 is complete with three premium Shorts.
 - Video 004, `speed-of-light`, has verified NIST/NASA data, original procedural visuals/audio, synthetic narration, a positioned WebVTT track, and a clean production master without burned-in captions. The replacement master passed automated media QA and representative/transition-frame review.
-- Video 004 was uploaded privately for YouTube processing and final platform review. A burned-in-caption revision was rejected during private review because enabling YouTube captions produced duplicate text.
+- Video 004 passed private HD, copyright, caption, desktop, and mobile review and was published manually at `https://www.youtube.com/shorts/ATPAdRdrRRw`. A burned-in-caption revision was rejected during private review because enabling YouTube captions produced duplicate text.
 - The caption policy now keeps narration captions as optional YouTube tracks. WebVTT requests bottom-center placement, but YouTube clients—especially the mobile Shorts player—retain final control and may override it.
 - The first long-form candidate, `The True Scale of the Universe`, has a bounded research/story brief in `docs/LONGFORM-001-BRIEF.md`; implementation has not begun.
 
@@ -26,13 +26,13 @@ Last updated: 2026-09-26
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
 - Revisit Video 003 when its detailed retention curve and unique-viewer reports finish processing; identify the first material drop before drawing scene-level conclusions.
 - Begin Week 2 planning: four premium Shorts and one first long-form video, with quality remaining the hard gate.
-- Upload the clean Video 004 master, attach `captions/speed-of-light.en.vtt`, and complete YouTube HD, copyright, and mobile playback review before manual publication.
+- Begin Video 005 research and production; diversify the next Short toward humanity/engineering while preserving the faster visual pacing learned from the first four releases.
 - Research and storyboard the first long-form video against `docs/LONGFORM-001-BRIEF.md` before building a landscape composition.
 
 ## NEXT
 
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
-- Publish Video 004 manually after its platform review and an approximately 24-hour gap from Video 003.
+- Record Video 004's first 24-hour performance snapshot after its reports have processed.
 - Measure whether reusable components are reducing production time without lowering quality.
 
 ## LATER
