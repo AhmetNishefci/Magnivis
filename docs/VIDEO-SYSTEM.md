@@ -91,3 +91,10 @@ The render router rejects unknown video IDs. Production renders use an 8 Mbps H.
 - No random value may vary between renders. Seed procedural fields and derive animation solely from frame/config.
 - Do not access networks during preview or render.
 - Treat `output/` and `qa/` as generated review artifacts, not source assets.
+
+## Caption placement
+
+- Magnivis Shorts use positioned WebVTT captions with `line:78% position:50% align:center` on every cue.
+- This produces horizontally centered, lower-screen captions while retaining clearance above YouTube's bottom metadata and progress overlays. Do not place captions at the extreme bottom edge.
+- Upload the `.vtt` file with timing; `.srt` files are unpositioned fallbacks only.
+- YouTube rendering can vary by client. Review the private Short with captions enabled on a physical phone before publication and adjust a specific composition only when its visuals require an exception.

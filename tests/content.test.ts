@@ -1,3 +1,4 @@
+import {readFileSync} from 'node:fs';
 import {describe, expect, it} from 'vitest';
 import {billionDollars, billionDollarsFrames} from '../src/content/videos/billion-dollars';
 import {earthToStars, earthToStarsFrames} from '../src/content/videos/earth-to-stars';
@@ -7,6 +8,21 @@ import {astronomyFacts, astronomySources, scaleRatios} from '../src/data/astrono
 import {moneyFacts, moneyScale, moneySources} from '../src/data/money';
 import {oceanFacts, oceanScale, oceanSources} from '../src/data/ocean';
 import {lightFacts, lightScale, lightSources} from '../src/data/light';
+
+const shortCaptionFiles = [
+  'captions/earth-to-stars.en.vtt',
+  'captions/ocean-depth.en.vtt',
+  'captions/billion-dollars.en.vtt',
+  'captions/speed-of-light.en.vtt',
+];
+
+describe('Short caption layout', () => {
+  it.each(shortCaptionFiles)('keeps every cue bottom-centered in %s', (file) => {
+    const cueLines = readFileSync(file, 'utf8').split('\n').filter((line) => line.includes('-->'));
+    expect(cueLines.length).toBeGreaterThan(0);
+    expect(cueLines.every((line) => line.includes('line:78% position:50% align:center'))).toBe(true);
+  });
+});
 
 describe('earth-to-stars specification', () => {
   it('has an exact frame count', () => {
