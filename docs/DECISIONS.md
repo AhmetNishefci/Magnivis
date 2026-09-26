@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-26 — Compare engineering structures by one-dimensional extent
+
+**Decision:** Video 005 compares each structure by one explicitly named linear dimension: height, dam-axis length, ring circumference, or tunnel length. It does not rank unlike structures by an undefined notion of “size.”
+
+**Reason:** “Largest thing humans built” becomes misleading when height, area, volume, mass, and network length are mixed. A single-dimensional escalation remains visually understandable and supports an honest derived closing comparison.
+
+**Alternatives:** Rank structures by mass or volume (reliable like-for-like public data is inconsistent); mix multiple size metrics without qualification (rejected as misleading); focus on one structure only (scientifically clean but loses the repeated scale-reset story).
+
+**Consequences:** On-screen labels name the relevant dimension, visuals are illustrative rather than common-scale engineering drawings, and the title avoids claiming a universal largest structure. Future comparisons must preserve the same metric discipline.
+
 ## 2026-09-26 — Toggleable YouTube captions, without burned-in narration text
 
 **Decision:** Keep narration captions as optional YouTube caption tracks and do not burn them into production masters. Request lower-center placement in WebVTT while treating client-side positioning as best-effort.

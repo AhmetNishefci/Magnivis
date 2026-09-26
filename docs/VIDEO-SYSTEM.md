@@ -62,6 +62,16 @@ This is deliberately a typed code specification rather than YAML/JSON. V1 needs 
 - Captions: `captions/speed-of-light.en.vtt` (positioned above the lower Shorts metadata region); `captions/speed-of-light.en.srt` is the unpositioned fallback
 - Output: `output/speed-of-light-narrated.mp4`
 
+## Video 005
+
+- ID: `human-engineering`
+- Remotion composition: `Magnivis-Human-Engineering`
+- Format: 1080×1920, 30 fps, 31 seconds
+- Visuals: original procedural Burj Khalifa silhouette, Three Gorges dam abstraction, animated LHC ring, Gotthard tunnel run, and 69-Burj closing comparison
+- Audio: original deterministic industrial soundscape plus six modular English narration cues
+- Captions: `captions/human-engineering.en.vtt` (optional positioned YouTube track); `captions/human-engineering.en.srt` is the unpositioned fallback
+- Output: `output/human-engineering-narrated.mp4`
+
 ## Commands
 
 ```bash
@@ -70,15 +80,18 @@ pnpm render earth-to-stars       # full production render
 pnpm render ocean-depth          # Video 002 production render
 pnpm render billion-dollars      # Video 003 production render
 pnpm render speed-of-light       # Video 004 production render
+pnpm render human-engineering    # Video 005 production render
 pnpm render:smoke ocean-depth    # first 90 frames only
 pnpm qa earth-to-stars           # ffprobe checks + frames + contact sheet
 pnpm qa ocean-depth              # Video 002 media QA and contact sheet
 pnpm qa billion-dollars          # Video 003 media QA and contact sheet
 pnpm qa speed-of-light           # Video 004 media QA and contact sheet
+pnpm qa human-engineering        # Video 005 media QA and contact sheet
 pnpm assets                      # regenerate original procedural audio
 pnpm assets:ocean                # regenerate Video 002 soundscape and narration
 pnpm assets:money                # regenerate Video 003 soundscape and narration
 pnpm assets:light                # regenerate Video 004 soundscape and narration
+pnpm assets:engineering          # regenerate Video 005 soundscape and narration
 pnpm check                       # typecheck, lint, tests, diff check
 ```
 

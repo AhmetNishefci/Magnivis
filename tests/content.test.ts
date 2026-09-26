@@ -2,18 +2,21 @@ import {readFileSync} from 'node:fs';
 import {describe, expect, it} from 'vitest';
 import {billionDollars, billionDollarsFrames} from '../src/content/videos/billion-dollars';
 import {earthToStars, earthToStarsFrames} from '../src/content/videos/earth-to-stars';
+import {humanEngineering, humanEngineeringFrames} from '../src/content/videos/human-engineering';
 import {oceanDepth, oceanDepthFrames} from '../src/content/videos/ocean-depth';
 import {speedOfLight, speedOfLightFrames} from '../src/content/videos/speed-of-light';
 import {astronomyFacts, astronomySources, scaleRatios} from '../src/data/astronomy';
 import {moneyFacts, moneyScale, moneySources} from '../src/data/money';
 import {oceanFacts, oceanScale, oceanSources} from '../src/data/ocean';
 import {lightFacts, lightScale, lightSources} from '../src/data/light';
+import {engineeringFacts, engineeringScale, engineeringSources} from '../src/data/engineering';
 
 const shortCaptionFiles = [
   'captions/earth-to-stars.en.vtt',
   'captions/ocean-depth.en.vtt',
   'captions/billion-dollars.en.vtt',
   'captions/speed-of-light.en.vtt',
+  'captions/human-engineering.en.vtt',
 ];
 
 describe('Short caption layout', () => {
@@ -196,6 +199,46 @@ describe('speed-of-light specification', () => {
   });
 });
 
+describe('human-engineering specification', () => {
+  it('has the intended fast frame count', () => {
+    expect(humanEngineeringFrames).toBe(930);
+    expect(humanEngineering.format.durationSeconds).toBe(31);
+  });
+
+  it('keeps scenes and narration inside the composition', () => {
+    for (const scene of humanEngineering.scenes) {
+      expect(scene.start).toBeGreaterThanOrEqual(0);
+      expect(scene.end).toBeLessThanOrEqual(humanEngineering.format.durationSeconds);
+      expect(scene.end).toBeGreaterThan(scene.start);
+    }
+    const starts = humanEngineering.audio.narrationCues.map((cue) => cue.start);
+    expect(starts).toEqual([...starts].sort((a, b) => a - b));
+    expect(starts.every((start) => start < humanEngineering.format.durationSeconds)).toBe(true);
+  });
+
+  it('references only committed engineering facts', () => {
+    const factIds = new Set(engineeringFacts.map((fact) => fact.id));
+    expect(humanEngineering.factIds.every((id) => factIds.has(id))).toBe(true);
+  });
+
+  it('derives like-for-like linear comparisons', () => {
+    expect(engineeringScale.burjHeightM).toBe(828);
+    expect(engineeringScale.damLengthM).toBe(2309.5);
+    expect(engineeringScale.lhcCircumferenceKm).toBe(26.7);
+    expect(engineeringScale.gotthardLengthKm).toBe(57.1);
+    expect(engineeringScale.gotthardBurjCount).toBeCloseTo(68.961, 3);
+    expect(engineeringScale.damInBurjs).toBeCloseTo(2.789, 3);
+  });
+
+  it('declares positioned English captions', () => {
+    expect(humanEngineering.captions).toContainEqual({
+      language: 'en',
+      label: 'English',
+      file: 'captions/human-engineering.en.vtt',
+    });
+  });
+});
+
 describe('research records', () => {
   it('links every fact to a known authoritative source', () => {
     const sourceIds = new Set(astronomySources.map((source) => source.id));
@@ -233,6 +276,13 @@ describe('research records', () => {
   it('links every light fact to a known authoritative source', () => {
     const sourceIds = new Set(lightSources.map((source) => source.id));
     for (const fact of lightFacts) {
+      expect(fact.sourceIds.every((id) => sourceIds.has(id))).toBe(true);
+    }
+  });
+
+  it('links every engineering fact to a known authoritative source', () => {
+    const sourceIds = new Set(engineeringSources.map((source) => source.id));
+    for (const fact of engineeringFacts) {
       expect(fact.sourceIds.every((id) => sourceIds.has(id))).toBe(true);
     }
   });

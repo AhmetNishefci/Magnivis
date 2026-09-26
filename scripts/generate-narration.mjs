@@ -56,6 +56,18 @@ const configurations = {
       {id: 'proxima', text: 'Yet even at that speed, Proxima Centauri is still four point two five years away.'},
     ],
   },
+  'human-engineering': {
+    outputDirectory: 'public/audio/narration/human-engineering',
+    speed: 1.07,
+    cues: [
+      {id: 'hook', text: 'The tallest building on Earth is only the beginning.'},
+      {id: 'burj', text: 'Burj Khalifa rises eight hundred twenty-eight meters.'},
+      {id: 'dam', text: 'The Three Gorges Dam stretches about two point three kilometers, nearly three Burj Khalifas.'},
+      {id: 'lhc', text: "CERN's Large Hadron Collider forms a twenty-six point seven kilometer ring underground."},
+      {id: 'gotthard', text: "But Switzerland's Gotthard Base Tunnel runs fifty-seven point one kilometers through the Alps."},
+      {id: 'coda', text: 'End to end, almost sixty-nine Burj Khalifas would fit inside it.'},
+    ],
+  },
 };
 
 const requestedId = process.argv[2] ?? 'earth-to-stars';

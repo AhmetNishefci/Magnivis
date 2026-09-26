@@ -20,7 +20,7 @@ The detailed cadence, editorial roles, candidate topics, and quality guardrails 
 
 ## Near-term engineering work
 
-- Produce Videos 002 and 003 as creatively distinct Shorts while measuring actual production time.
+- Complete Video 005 private platform review and use the first five releases to refine hook, pacing, and caption-safe composition.
 - Add landscape/long-form composition patterns only when implementing the first long-form story.
 - Refine primitives based on real authoring friction and audience results.
 - Establish a repeatable metadata, private-review, caption, and release checklist.

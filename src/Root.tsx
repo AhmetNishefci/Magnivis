@@ -1,10 +1,12 @@
 import {Composition} from 'remotion';
 import {BillionDollars} from './compositions/BillionDollars';
 import {EarthToStars} from './compositions/EarthToStars';
+import {HumanEngineering} from './compositions/HumanEngineering';
 import {OceanDepth} from './compositions/OceanDepth';
 import {SpeedOfLight} from './compositions/SpeedOfLight';
 import {billionDollars, billionDollarsFrames} from './content/videos/billion-dollars';
 import {earthToStars, earthToStarsFrames} from './content/videos/earth-to-stars';
+import {humanEngineering, humanEngineeringFrames} from './content/videos/human-engineering';
 import {oceanDepth, oceanDepthFrames} from './content/videos/ocean-depth';
 import {speedOfLight, speedOfLightFrames} from './content/videos/speed-of-light';
 
@@ -41,6 +43,14 @@ export const RemotionRoot = () => (
       fps={speedOfLight.format.fps}
       width={speedOfLight.format.width}
       height={speedOfLight.format.height}
+    />
+    <Composition
+      id={humanEngineering.compositionId}
+      component={HumanEngineering}
+      durationInFrames={humanEngineeringFrames}
+      fps={humanEngineering.format.fps}
+      width={humanEngineering.format.width}
+      height={humanEngineering.format.height}
     />
   </>
 );
