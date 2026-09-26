@@ -1,4 +1,10 @@
 import {videoSpecSchema} from '../schema';
+import {
+  speedOfLightClaimIds,
+  speedOfLightHookIds,
+  speedOfLightKnowledgePackage,
+} from '../../knowledge/packages/speed-of-light';
+import {knowledgePackageRegistry} from '../../knowledge/registry';
 
 export const speedOfLight = videoSpecSchema.parse({
   id: 'speed-of-light',
@@ -32,16 +38,11 @@ export const speedOfLight = videoSpecSchema.parse({
     {id: 'light-year', start: 20, end: 26.6, purpose: 'Define a light-year as distance rather than time.'},
     {id: 'proxima', start: 25.4, end: 33, purpose: 'End by making even light feel slow against interstellar distance.'},
   ],
-  factIds: [
-    'light-speed-vacuum-mps',
-    'earth-equatorial-circumference-km',
-    'light-earth-laps-per-second',
-    'earth-moon-average-distance-km',
-    'earth-moon-light-time-s',
-    'sun-earth-light-time-minutes',
-    'light-year-distance-km',
-    'proxima-centauri-distance-light-years',
-  ],
+  knowledge: {
+    packageId: speedOfLightKnowledgePackage.id,
+    claimIds: Object.values(speedOfLightClaimIds),
+    hookId: speedOfLightHookIds.impossibleLaps,
+  },
   audio: {
     file: 'audio/speed-of-light.wav',
     layers: ['ambient', 'transition', 'impact', 'narration'],
@@ -56,5 +57,10 @@ export const speedOfLight = videoSpecSchema.parse({
     ],
   },
 });
+
+if (!speedOfLight.knowledge) {
+  throw new Error('Speed of Light must reference its production knowledge package');
+}
+knowledgePackageRegistry.assertReference(speedOfLight.knowledge);
 
 export const speedOfLightFrames = speedOfLight.format.fps * speedOfLight.format.durationSeconds;

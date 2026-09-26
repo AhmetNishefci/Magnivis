@@ -4,7 +4,9 @@ This document owns the boundary between implemented systems and the planned know
 
 ## Implemented today
 
-Magnivis is a local, deterministic TypeScript/React/Remotion production repository. It contains typed video specifications, source-backed quantitative facts, reusable visual primitives, modular audio and narration, render routing, timed captions, ffprobe media validation, representative QA frames, and manual performance snapshots.
+Magnivis is a local, deterministic TypeScript/React/Remotion production repository. It contains typed video specifications, source-backed facts, reusable visual primitives, modular audio and narration, render routing, timed captions, ffprobe media validation, representative QA frames, and manual performance snapshots.
+
+Knowledge Package V1 is implemented as version-controlled TypeScript/Zod. It supports quantitative and qualitative claims, evidence traceability, verification states, package approval, hooks, narrative/visual opportunities, a deterministic registry, and one production package for `speed-of-light`. Video 004 references that package while an explicit compatibility projection preserves its existing composition inputs.
 
 There is no database, queue, worker fleet, web application, CMS, provider orchestration layer, publishing API, analytics ingestion service, or deployment configuration. Upload and publication are manual human operations.
 
@@ -58,6 +60,6 @@ When job execution is justified, use stable run IDs, input hashes, explicit stat
 
 Introduce a provider interface only at an actual integration boundary. Current local Kokoro narration may become the first small TTS adapter, but research, LLM, image, video, transcription, and publishing abstractions should wait until a second provider or operational need exists. Persist provider/model/version, usage, estimated cost, and license/provenance with generated outputs.
 
-## First migration slice
+## Completed first migration slice
 
-Implement a Knowledge Package V1 schema and registry, then migrate one existing well-sourced topic into it without changing its render. Add claim verification states, hook archetypes, story/visual opportunities, and links from the current video specification. This proves the new editorial root while preserving all five productions and avoiding premature services.
+Knowledge Package V1 and the first `speed-of-light` package are implemented. The next approved work should prove repeatability with another package before introducing broader content-asset or workflow abstractions.

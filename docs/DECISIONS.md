@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-27 — Preserve production through a knowledge compatibility projection
+
+**Decision:** Knowledge Package V1 uses global `source.*` IDs, package-namespaced claim/hook IDs, and claim-level evidence. Video 004 references its package directly, while `src/data/light.ts` projects quantitative package claims into the legacy fact shape consumed by its unchanged Remotion composition. `VideoSpec` permits either legacy facts or one package reference, never both.
+
+**Reason:** This establishes the knowledge package as the factual source of truth without coupling reusable research to production choreography or risking changes to a published video. Global source IDs allow exact source records to be reused safely; package-scoped claim IDs remain unambiguous through the package reference.
+
+**Alternatives:** Redesign every video and composition immediately (too broad and risky); duplicate facts in both systems (creates drift); make the package own scripts, timing, captions, or publication data (violates the editorial/production boundary).
+
+**Consequences:** Existing videos can migrate incrementally. Compatibility projections are temporary and narrow; they must derive values rather than copy them. The registry rejects duplicate packages, conflicting global source records, and dangling downstream claim/hook references. No database or workflow engine is introduced.
+
 ## 2026-09-27 — Make the knowledge package the durable editorial root
 
 **Decision:** Evolve Magnivis from a YouTube-focused video repository into one multi-pillar knowledge-media engine. A verified knowledge package will own topic understanding, sources, claims, caveats, hooks, story opportunities, and related questions. Videos, articles, and platform variants will reference it as downstream assets. The first implementation remains file-backed TypeScript/Zod and preserves the current Remotion system.

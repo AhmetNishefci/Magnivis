@@ -10,6 +10,8 @@ import {moneyFacts, moneyScale, moneySources} from '../src/data/money';
 import {oceanFacts, oceanScale, oceanSources} from '../src/data/ocean';
 import {lightFacts, lightScale, lightSources} from '../src/data/light';
 import {engineeringFacts, engineeringScale, engineeringSources} from '../src/data/engineering';
+import {speedOfLightClaimIds, speedOfLightKnowledgePackage} from '../src/knowledge/packages/speed-of-light';
+import {knowledgePackageRegistry} from '../src/knowledge/registry';
 
 const shortCaptionFiles = [
   'captions/earth-to-stars.en.vtt',
@@ -166,9 +168,11 @@ describe('speed-of-light specification', () => {
     expect(starts.every((start) => start < speedOfLight.format.durationSeconds)).toBe(true);
   });
 
-  it('references only committed light facts', () => {
-    const factIds = new Set(lightFacts.map((fact) => fact.id));
-    expect(speedOfLight.factIds.every((id) => factIds.has(id))).toBe(true);
+  it('references only claims in its approved knowledge package', () => {
+    expect(speedOfLight.factIds).toEqual([]);
+    expect(speedOfLight.knowledge?.packageId).toBe(speedOfLightKnowledgePackage.id);
+    expect(speedOfLight.knowledge?.claimIds).toEqual(Object.values(speedOfLightClaimIds));
+    expect(() => knowledgePackageRegistry.assertReference(speedOfLight.knowledge!)).not.toThrow();
   });
 
   it('derives the familiar light-time comparisons', () => {

@@ -67,6 +67,10 @@ pnpm qa human-engineering
 
 The narrated master is written to `output/human-engineering-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/human-engineering-narrated/`. Upload the optional positioned caption track at `captions/human-engineering.en.vtt`; the SRT remains as an unpositioned fallback.
 
+## Knowledge packages
+
+Video 004 is the first production migrated from video-first facts to a reusable Knowledge Package V1. See `docs/KNOWLEDGE-PACKAGES.md` for the schema, verification semantics, package-to-video boundary, and authoring procedure.
+
 Run all non-rendering checks with:
 
 ```bash

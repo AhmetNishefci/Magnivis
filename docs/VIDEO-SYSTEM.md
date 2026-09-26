@@ -17,13 +17,16 @@ verified data + video specification
 ```
 
 - `src/data/`: verified scientific records and source metadata.
-- `src/content/videos/`: editorial metadata, timing, copy, and references to facts.
+- `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Video 004.
+- `src/content/videos/`: production metadata, timing, copy, and references to legacy facts or a knowledge package.
 - `src/components/`: reusable visual primitives with no video-specific claims.
 - `src/compositions/`: video-specific choreography that consumes structured content.
 - `src/design/`: typography, color, safe-area, and motion tokens.
 - `scripts/`: deterministic asset generation, render routing, and media QA.
 
 This is deliberately a typed code specification rather than YAML/JSON. V1 needs derived values, validation, and refactorability more than non-developer editing. The content boundary remains explicit and could later gain another authoring format.
+
+Video specifications are the current concrete content assets. A migrated video references a knowledge package and selected claim/hook IDs; an unmigrated video continues to use legacy `factIds`. The schema rejects using both. Video 004's legacy numeric render inputs are projected from its package so the composition remains unchanged.
 
 ## Video 001
 

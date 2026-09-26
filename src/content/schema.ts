@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {stableKnowledgeIdSchema} from '../knowledge/schema';
 
 export const sourceSchema = z.object({
   id: z.string().min(1),
@@ -25,6 +26,12 @@ export const sceneSchema = z.object({
   end: z.number().positive(),
   purpose: z.string().min(1),
 }).refine((scene) => scene.end > scene.start, 'Scene end must follow its start');
+
+export const knowledgeReferenceSchema = z.object({
+  packageId: stableKnowledgeIdSchema,
+  claimIds: z.array(stableKnowledgeIdSchema).min(1),
+  hookId: stableKnowledgeIdSchema,
+}).strict();
 
 export const videoSpecSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
@@ -63,7 +70,8 @@ export const videoSpecSchema = z.object({
     durationSeconds: z.number().positive(),
   }),
   scenes: z.array(sceneSchema).min(1),
-  factIds: z.array(z.string().min(1)).min(1),
+  factIds: z.array(z.string().min(1)).default([]),
+  knowledge: knowledgeReferenceSchema.optional(),
   audio: z.object({
     file: z.string().min(1),
     layers: z.array(z.enum(['music', 'ambient', 'transition', 'impact', 'narration', 'silence'])),
@@ -75,6 +83,16 @@ export const videoSpecSchema = z.object({
       transcript: z.string().min(1),
     })),
   }),
+}).superRefine((video, context) => {
+  const usesLegacyFacts = video.factIds.length > 0;
+  const usesKnowledgePackage = Boolean(video.knowledge);
+  if (usesLegacyFacts === usesKnowledgePackage) {
+    context.addIssue({
+      code: 'custom',
+      path: ['knowledge'],
+      message: 'A video must use either legacy factIds or one knowledge-package reference',
+    });
+  }
 });
 
 export type SourceRecord = z.infer<typeof sourceSchema>;

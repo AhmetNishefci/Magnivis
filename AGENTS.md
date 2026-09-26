@@ -28,6 +28,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 
 - Current status: `docs/PROJECT-STATE.md`
 - System boundaries and target architecture: `docs/ARCHITECTURE.md`
+- Knowledge package model and verification semantics: `docs/KNOWLEDGE-PACKAGES.md`
 - Brand and creative direction: `docs/BRAND.md`, `docs/CONTENT-BIBLE.md`
 - Architecture and commands: `docs/VIDEO-SYSTEM.md`
 - Scientific sourcing: `docs/RESEARCH-STANDARDS.md`

@@ -2,18 +2,19 @@
 
 This roadmap describes sequence, not promises or permission to sacrifice quality. `docs/PROJECT-STATE.md` records current execution state; `docs/ARCHITECTURE.md` records system boundaries.
 
-## Phase 0 — audit and foundation (current)
+## Phase 0 — audit and foundation (complete)
 
 - Preserve the working Remotion production and QA system.
 - Reconcile the original YouTube-only data model with the multi-platform knowledge-package strategy.
 - Keep tests/builds healthy and configuration free of secrets.
 - Establish clear durable strategy, architecture, editorial, research, and project-state documentation.
 
-## Phase 1 — content intelligence (next)
+## Phase 1 — content intelligence (current)
 
-- Add a typed Knowledge Package V1 model and registry.
-- Add the eight content pillars, timeliness, hook archetypes, topic-score rationale, and claim verification states.
-- Migrate one existing researched topic without changing its render.
+- Knowledge Package V1, the eight pillars, timeliness, hook archetypes, claim verification states, and a deterministic registry are implemented.
+- Video 004 is migrated without changing its rendered output.
+- Next, migrate one additional researched topic to prove repeatability before adding broader abstractions.
+- Topic-score rationale and human research/story review workflows remain unimplemented.
 - Add human review checks for sources, claims, hooks, script, and visual plan.
 - Keep discovery/research manual or AI-assisted; do not require paid providers.
 

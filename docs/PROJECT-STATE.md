@@ -22,13 +22,15 @@ Last updated: 2026-09-27
 - The first long-form candidate, `The True Scale of the Universe`, has a bounded research/story brief in `docs/LONGFORM-001-BRIEF.md`; implementation has not begun.
 - The Phase 0 repository audit confirmed a clean `main` branch synchronized with `origin/main`, a passing typecheck/lint/39-test suite, five compilable Remotion compositions, and a passing Video 005 ffprobe/frame QA run.
 - The durable strategy now defines Magnivis as one multi-pillar, multi-platform knowledge-media brand whose fundamental editorial unit is a reusable knowledge package. `docs/ARCHITECTURE.md` distinguishes this planned engine from the implemented production subsystem.
+- Knowledge Package V1 is implemented with quantitative/qualitative claims, evidence references, five verification states, reviewed approval metadata, claim-linked hooks/opportunities, and a deterministic duplicate-safe registry.
+- `speed-of-light` is the first production knowledge package. Video 004 references its package/claim/hook IDs, and `src/data/light.ts` projects unchanged numeric inputs for the existing composition without duplicating factual values.
 
 ## NOW
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
 - Revisit Video 003 when its detailed retention curve and unique-viewer reports finish processing; identify the first material drop before drawing scene-level conclusions.
-- Complete Phase 0 by reviewing and approving the audit/migration proposal before changing production architecture.
+- Review the completed Knowledge Package V1 milestone before authorizing another migration or abstraction.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
 - Preserve the current publishing workflow while the new cross-platform content model is introduced incrementally.
 
@@ -37,7 +39,7 @@ Last updated: 2026-09-27
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
 - Record Video 004's first 24-hour performance snapshot after its reports have processed.
 - Publish Video 005 manually only after the private platform review passes and the spacing decision is confirmed.
-- Implement Knowledge Package V1 after approval, migrate one existing topic, and link its current video spec without changing the render.
+- After approval, migrate one additional existing topic to prove repeatability before introducing a generic content-asset layer.
 - Add long-form and platform adaptation only after the content-intelligence boundary is proven.
 
 ## LATER

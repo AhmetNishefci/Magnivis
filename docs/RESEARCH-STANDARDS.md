@@ -18,9 +18,9 @@ The implemented V1 fact schema records quantitative claims with:
 
 Committed facts are render inputs. Production rendering must not depend on live web access.
 
-## Knowledge Package V1 target
+## Knowledge Package V1
 
-The Phase 1 claim model will cover quantitative and qualitative claims. In addition to the current provenance, each material claim will record its claim type, evidence notes, caveats, and verification status: `unverified`, `supported`, `conflicting`, `uncertain`, or `verified`. Existing production facts have received editorial review, but the current schema does not yet encode that workflow state; do not imply otherwise until the migration is implemented.
+The implemented claim model covers quantitative and qualitative claims. In addition to source provenance, each material claim records its claim type, evidence notes, caveats, and verification status: `unverified`, `supported`, `conflicting`, `uncertain`, or `verified`. `docs/KNOWLEDGE-PACKAGES.md` is authoritative for the semantic distinction between these states. Existing videos remain on the legacy fact model until migrated; do not imply their schema encodes a workflow state that it does not.
 
 ## Review checklist
 
