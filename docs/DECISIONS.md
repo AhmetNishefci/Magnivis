@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-26 — Deterministic open captions for narrated Shorts
+
+**Decision:** Render bottom-centered open captions into narrated Shorts through a reusable component and structured cue data. Retain WebVTT only as an optional accessibility/translation track whose placement is best-effort.
+
+**Reason:** Private mobile review showed that YouTube's mobile Shorts player can move correctly positioned WebVTT captions to the top of the frame even while desktop respects the same file. This collides with Magnivis headlines and makes platform-controlled placement unsuitable for the primary mobile experience.
+
+**Alternatives:** Rely on WebVTT positioning (inconsistent across clients); move captions in YouTube's mobile editor (manual and not reproducible); omit captions (weakens comprehension and silent viewing).
+
+**Consequences:** Caption placement becomes deterministic and part of render QA. English text is always visible in the master, while viewers who also enable a soft caption track may see duplicate text. Existing public videos will not be re-uploaded merely to retrofit this decision; it applies from Video 004 onward.
+
 ## 2026-09-24 — Higher-bitrate YouTube upload masters
 
 **Decision:** Render production masters with an 8 Mbps H.264 video target and a 192 kbps AAC audio target, while preserving 1080×1920, 30 fps, and `yuv420p` compatibility.

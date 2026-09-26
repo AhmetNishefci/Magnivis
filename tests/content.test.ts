@@ -178,11 +178,11 @@ describe('speed-of-light specification', () => {
   });
 
   it('declares positioned English captions', () => {
-    expect(speedOfLight.captions).toContainEqual({
-      language: 'en',
-      label: 'English',
-      file: 'captions/speed-of-light.en.vtt',
-    });
+    const captions = speedOfLight.captions[0];
+    expect(captions?.language).toBe('en');
+    expect(captions?.file).toBe('captions/speed-of-light.en.vtt');
+    expect(captions?.burnInCues).toHaveLength(speedOfLight.audio.narrationCues.length);
+    expect(captions?.burnInCues?.every((cue) => cue.end <= speedOfLight.format.durationSeconds)).toBe(true);
   });
 });
 

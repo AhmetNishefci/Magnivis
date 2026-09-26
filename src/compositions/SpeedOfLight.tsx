@@ -6,6 +6,7 @@ import {Finish} from '../components/Finish';
 import {DistanceBeam, LightAtmosphere, LightTunnel, Moon, PhotonOrbit, ProximaDistance} from '../components/LightWorld';
 import {SceneWindow} from '../components/SceneWindow';
 import {ShortSafeArea} from '../components/ShortSafeArea';
+import {ShortOpenCaptions} from '../components/ShortOpenCaptions';
 import {RevealText} from '../components/Typography';
 import {speedOfLight} from '../content/videos/speed-of-light';
 import {lightScale} from '../data/light';
@@ -53,7 +54,7 @@ const ExactSpeed = () => {
           KM / SECOND
         </RevealText>
       </ShortSafeArea>
-      <div style={{position: 'absolute', left: 84, top: 1460, fontFamily: typography.body, fontSize: 18, fontWeight: 800, color: '#abc8e8', letterSpacing: '0.18em'}}>EXACT CONVERSION · SI DEFINITION</div>
+      <div style={{position: 'absolute', left: 84, top: 1360, fontFamily: typography.body, fontSize: 18, fontWeight: 800, color: '#abc8e8', letterSpacing: '0.18em'}}>EXACT CONVERSION · SI DEFINITION</div>
     </SceneWindow>
   );
 };
@@ -73,7 +74,7 @@ const MoonScene = () => {
           <br />SECONDS
         </RevealText>
       </ShortSafeArea>
-      <div style={{position: 'absolute', left: 84, top: 1450, color: palette.muted, fontFamily: typography.body, fontSize: 19, fontWeight: 800, letterSpacing: '0.18em'}}>AVERAGE DISTANCE · 384,400 KM</div>
+      <div style={{position: 'absolute', left: 84, top: 1360, color: palette.muted, fontFamily: typography.body, fontSize: 19, fontWeight: 800, letterSpacing: '0.18em'}}>AVERAGE DISTANCE · 384,400 KM</div>
     </SceneWindow>
   );
 };
@@ -93,7 +94,7 @@ const SunScene = () => {
           <br />20 SECONDS
         </RevealText>
       </ShortSafeArea>
-      <div style={{position: 'absolute', left: 84, top: 1450, color: palette.muted, fontFamily: typography.body, fontSize: 18, fontWeight: 800, letterSpacing: '0.17em'}}>ILLUSTRATIVE DISTANCE · NOT TO SCALE</div>
+      <div style={{position: 'absolute', left: 84, top: 1360, color: palette.muted, fontFamily: typography.body, fontSize: 18, fontWeight: 800, letterSpacing: '0.17em'}}>ILLUSTRATIVE DISTANCE · NOT TO SCALE</div>
     </SceneWindow>
   );
 };
@@ -111,7 +112,7 @@ const LightYearScene = () => {
           <br />TRILLION KM
         </RevealText>
       </ShortSafeArea>
-      <div style={{position: 'absolute', left: 84, top: 1450, color: palette.gold, fontFamily: typography.body, fontSize: 21, fontWeight: 800, letterSpacing: '0.2em'}}>THIS DISTANCE IS ONE LIGHT-YEAR</div>
+      <div style={{position: 'absolute', left: 84, top: 1360, color: palette.gold, fontFamily: typography.body, fontSize: 21, fontWeight: 800, letterSpacing: '0.2em'}}>THIS DISTANCE IS ONE LIGHT-YEAR</div>
     </SceneWindow>
   );
 };
@@ -130,7 +131,7 @@ const ProximaScene = () => {
           <br />AT LIGHT SPEED
         </RevealText>
       </ShortSafeArea>
-      <div style={{position: 'absolute', left: 84, top: 1450, color: '#c9d4e7', fontFamily: typography.body, fontSize: 18, fontWeight: 800, letterSpacing: '0.19em'}}>PROXIMA CENTAURI · ≈4.25 LIGHT-YEARS</div>
+      <div style={{position: 'absolute', left: 84, top: 1360, color: '#c9d4e7', fontFamily: typography.body, fontSize: 18, fontWeight: 800, letterSpacing: '0.19em'}}>PROXIMA CENTAURI · ≈4.25 LIGHT-YEARS</div>
       <AbsoluteFill style={{backgroundColor: palette.void, opacity: fade}} />
     </SceneWindow>
   );
@@ -151,5 +152,6 @@ export const SpeedOfLight = () => (
     <LightYearScene />
     <ProximaScene />
     <Finish />
+    <ShortOpenCaptions cues={speedOfLight.captions[0]?.burnInCues ?? []} />
   </AbsoluteFill>
 );

@@ -16,7 +16,19 @@ export const speedOfLight = videoSpecSchema.parse({
   pillar: 'universe',
   status: 'rendered',
   language: 'en',
-  captions: [{language: 'en', label: 'English', file: 'captions/speed-of-light.en.vtt'}],
+  captions: [{
+    language: 'en',
+    label: 'English',
+    file: 'captions/speed-of-light.en.vtt',
+    burnInCues: [
+      {start: 0.03, end: 3.8, lines: ['In one second, light could circle Earth', 'seven and a half times.']},
+      {start: 4.15, end: 9.2, lines: ['In a vacuum, it travels nearly', '300,000 kilometers every second.']},
+      {start: 9.75, end: 13.6, lines: ['Earth to the Moon takes only', 'about 1.28 seconds.']},
+      {start: 14.75, end: 19.5, lines: ['Sunlight needs about 8 minutes', 'and 20 seconds to reach us.']},
+      {start: 20.5, end: 24.8, lines: ['In one year, light covers', '9.46 trillion kilometers.']},
+      {start: 26, end: 32.3, lines: ['Yet even at that speed, Proxima', 'Centauri is still 4.25 years away.']},
+    ],
+  }],
   format: {width: 1080, height: 1920, fps: 30, durationSeconds: 33},
   scenes: [
     {id: 'hook', start: 0, end: 4.4, purpose: 'Prove the speed immediately with laps around a familiar Earth.'},
