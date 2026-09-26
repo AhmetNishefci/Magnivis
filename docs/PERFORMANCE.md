@@ -78,4 +78,35 @@ Audience retention was still processing and may take up to two days, so the exac
 
 Public URL: `https://www.youtube.com/shorts/-t6xICbP68s`
 
-Published manually on 2026-09-25 after private HD, caption-placement, copyright, and mobile review. Record the first meaningful snapshot after approximately 24 hours and compare its opening appeal, engaged-view duration, and subscriber conversion with Videos 001 and 002.
+Published manually on 2026-09-25 after private HD, caption-placement, copyright, and mobile review.
+
+### Initial snapshot — 2026-09-26
+
+YouTube Studio displayed the reporting point as the first 21 hours. Audience-retention and unique-viewer reports were not yet available.
+
+| Metric | Value |
+|---|---:|
+| Raw views | 744 |
+| Engaged views | 280 |
+| Watch time | 1.2 hours |
+| Average view duration | 0:13 of 0:36 |
+| Stayed to watch | 36.1% |
+| Swiped away | 63.9% |
+| Shorts-feed traffic | 90.2% |
+| YouTube-search traffic | 6.3% |
+| Channel-page traffic | 2.0% |
+| Subscribers gained | 0 |
+
+### Working interpretation
+
+- YouTube gave the Short a meaningful feed test, so lack of initial distribution was not the primary limitation.
+- The topic and packaging were sufficient to earn that test, and relevant searches for “1 billion” and “1 billion dollars” show that YouTube understood the subject.
+- Opening selection remained weak: nearly two-thirds of feed viewers swiped away, broadly matching the channel's first two Shorts.
+- Engaged viewers averaged only about 36% of the runtime, the weakest early duration ratio of the first three Shorts. The story likely loses momentum after the initial premise, but the retention curve must finish processing before attributing this to a specific scene.
+- No subscriber conversion was reported at this snapshot.
+- Leave the upload public and unchanged. Use its eventual retention curve to identify the first material drop rather than guessing from the aggregate duration alone.
+
+### Editorial response
+
+- Video 004 is already shorter at 33 seconds, begins with immediate visible motion, and changes scale references more frequently; publish it without retrofitting conclusions from this still-immature report.
+- For future Shorts, make the promised payoff explicit in the opening second and remove any middle beat that does not create new information or escalation.
