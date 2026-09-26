@@ -1,6 +1,6 @@
 # Magnivis agent guide
 
-Magnivis is a premium, faceless visual-science media brand: **See the unimaginable.** The repository is the durable source of truth; do not rely on context from earlier chats.
+Magnivis is a premium, faceless, English-language knowledge-media brand: **See the unimaginable.** Every published asset should leave the viewer knowing something fascinating they did not know before. The repository is the durable source of truth; do not rely on context from earlier chats.
 
 ## Before changing anything
 
@@ -11,12 +11,14 @@ Magnivis is a premium, faceless visual-science media brand: **See the unimaginab
 ## Permanent rules
 
 - Preserve the cinematic, minimal, scientifically credible brand in `docs/BRAND.md` and `docs/CONTENT-BIBLE.md`.
+- Treat a verified knowledge package—not a finished video—as the durable editorial unit. Platform assets should reference that package and adapt it without silently changing its claims.
 - Keep video content/data separate from reusable rendering primitives. Avoid one-off monoliths and premature generic frameworks.
-- Verify scientific claims against authoritative sources. Record claim, value, units, uncertainty, URL, and retrieval date. Never fabricate citations or imply uncertain estimates are exact.
+- Verify material claims against appropriate authoritative sources. Preserve claim-level evidence, status, caveats, URLs, and retrieval dates. Never fabricate citations or imply uncertain evidence is settled.
 - Use only original, public-domain, CC0, or appropriately licensed assets. Update `docs/ASSET-LICENSES.md` for every production asset.
 - Keep audio/narration modular. A silent concept must not hardwire the architecture to silence.
 - Do not add databases, queues, cloud infrastructure, dashboards, publishing automation, or paid APIs without a current need and human approval.
-- Never upload or publish to YouTube without explicit human approval. V1 output stays local for human review.
+- Never upload or publish to any platform without explicit human approval. Publishing credentials and public-release operations are sensitive.
+- Keep raw platform analytics and platform-specific definitions; never present incomparable metrics as normalized equivalents.
 - Never commit secrets, credentials, personal data, or generated `.env` files. Use environment variables and maintain `.env.example`.
 - Avoid destructive commands and history rewrites. Never force-push. Preserve unrelated work.
 - Favor strict, maintainable TypeScript and deterministic rendering. Update decision/docs when architecture or product direction changes.
@@ -25,6 +27,7 @@ Magnivis is a premium, faceless visual-science media brand: **See the unimaginab
 ## Navigation
 
 - Current status: `docs/PROJECT-STATE.md`
+- System boundaries and target architecture: `docs/ARCHITECTURE.md`
 - Brand and creative direction: `docs/BRAND.md`, `docs/CONTENT-BIBLE.md`
 - Architecture and commands: `docs/VIDEO-SYSTEM.md`
 - Scientific sourcing: `docs/RESEARCH-STANDARDS.md`

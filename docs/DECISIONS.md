@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-27 — Make the knowledge package the durable editorial root
+
+**Decision:** Evolve Magnivis from a YouTube-focused video repository into one multi-pillar knowledge-media engine. A verified knowledge package will own topic understanding, sources, claims, caveats, hooks, story opportunities, and related questions. Videos, articles, and platform variants will reference it as downstream assets. The first implementation remains file-backed TypeScript/Zod and preserves the current Remotion system.
+
+**Reason:** Research and factual review should be reusable across multiple valuable assets, while scripts, visuals, packaging, and platform behavior remain purpose-specific. Making a finished video the root duplicates research, weakens claim traceability, and makes cross-platform learning harder.
+
+**Alternatives:** Continue with one isolated specification per YouTube video (working but poorly suited to multi-output reuse); immediately build a database, queue, CMS, and provider orchestration platform (premature before the domain stabilizes); create separate accounts or brands per pillar (unsupported by current evidence).
+
+**Consequences:** Phase 1 begins with a Knowledge Package V1 schema and one migrated existing topic, not a rewrite. Publishing stays manual and human-approved. Database/queue/provider infrastructure remains deferred until concurrency, volume, or integration requirements justify it. The previous YouTube-only cadence is historical validation rather than the new cross-platform operating target.
+
 ## 2026-09-26 — Compare engineering structures by one-dimensional extent
 
 **Decision:** Video 005 compares each structure by one explicitly named linear dimension: height, dam-axis length, ring circumference, or tunnel length. It does not rank unlike structures by an undefined notion of “size.”
@@ -31,6 +41,8 @@
 **Consequences:** Masters are larger, and YouTube will still re-encode them. Human review after HD processing remains mandatory; upload bitrate cannot compensate for poor typography, unsafe placement, or an intrinsically low-resolution asset.
 
 ## 2026-09-22 — Progressive publishing ramp to a mixed-format weekly cadence
+
+**Status:** Superseded as the long-term operating target by the 2026-09-27 knowledge-package and multi-platform strategy. It remains an accurate record of the initial YouTube renderer validation ramp.
 
 **Decision:** Ramp from 3 premium Shorts in Week 1, to 4 Shorts plus 1 long-form video in Week 2, then 5 Shorts plus 1 long-form video per week in Weeks 3–4 and steady state. This corresponds to a target of approximately 20–22 Shorts and 4 long-form videos per month.
 
@@ -78,7 +90,7 @@
 
 **Alternatives:** Apple system voices (rejected because Apple's license prohibits public/commercial redistribution); paid TTS APIs (require cost and credentials); ambient-only audio (failed the listening review).
 
-**Consequences:** The narration is synthetic and should be disclosed in the YouTube upload metadata. Voice cues remain separate from the soundscape and can be replaced without changing visual choreography.
+**Consequences:** The narration is synthetic and its model/voice provenance must remain documented. Platform disclosure must be evaluated against the current platform policy and the actual use; non-impersonating synthetic narration is not automatically equivalent to a realistic altered-person claim. Voice cues remain separate from the soundscape and can be replaced without changing visual choreography.
 
 ## 2026-09-22 — No repository-local Codex skill in V1
 

@@ -2,7 +2,7 @@
 
 **See the unimaginable.**
 
-Magnivis turns difficult-to-comprehend scale, science, technology, and numbers into cinematic visual experiences. This repository contains the TypeScript/React/Remotion production system and the source of truth for each video.
+Magnivis is a faceless English-language knowledge-media brand that turns fascinating ideas into cinematic, trustworthy stories. This repository currently contains the working TypeScript/React/Remotion production system; it is evolving incrementally toward reusable, verified knowledge packages and multi-platform assets. See `docs/ARCHITECTURE.md` for implemented versus planned boundaries.
 
 ## Requirements
 
@@ -57,6 +57,15 @@ pnpm qa speed-of-light
 ```
 
 The narrated master is written to `output/speed-of-light-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/speed-of-light-narrated/`. Upload the positioned Shorts caption track at `captions/speed-of-light.en.vtt`; the SRT remains as an unpositioned fallback.
+
+## Render and inspect Video 005
+
+```bash
+pnpm render human-engineering
+pnpm qa human-engineering
+```
+
+The narrated master is written to `output/human-engineering-narrated.mp4`. Its QA report, representative frames, and contact sheet are written under `qa/human-engineering-narrated/`. Upload the optional positioned caption track at `captions/human-engineering.en.vtt`; the SRT remains as an unpositioned fallback.
 
 Run all non-rendering checks with:
 

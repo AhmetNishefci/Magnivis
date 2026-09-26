@@ -2,11 +2,11 @@
 
 ## Source hierarchy
 
-Prefer NASA, JPL, ESA, ESO, NOAA, USGS, peer-reviewed literature, and recognized scientific institutions. Use secondary sources only when primary or institutional sources cannot answer the claim, and document why.
+Use the strongest source appropriate to the subject: peer-reviewed literature, primary records, government agencies, universities, scientific organizations, museums, recognized historical institutions, authoritative technical documentation, and other established reference institutions. Use secondary sources when primary or institutional sources cannot answer the claim, and document why.
 
-## Required record
+## Current production record
 
-Every quantitative production claim must include:
+The implemented V1 fact schema records quantitative claims with:
 
 - stable internal ID and human-readable claim;
 - numeric value and unit;
@@ -18,6 +18,10 @@ Every quantitative production claim must include:
 
 Committed facts are render inputs. Production rendering must not depend on live web access.
 
+## Knowledge Package V1 target
+
+The Phase 1 claim model will cover quantitative and qualitative claims. In addition to the current provenance, each material claim will record its claim type, evidence notes, caveats, and verification status: `unverified`, `supported`, `conflicting`, `uncertain`, or `verified`. Existing production facts have received editorial review, but the current schema does not yet encode that workflow state; do not imply otherwise until the migration is implemented.
+
 ## Review checklist
 
 1. Confirm the cited page says what the record claims.
@@ -26,6 +30,8 @@ Committed facts are render inputs. Production rendering must not depend on live 
 4. Use `≈`, “about,” a range, or an explicit estimate when warranted.
 5. Revisit volatile superlatives and uncertain stellar measurements before publication.
 6. Never fill a missing value or citation with model-generated text.
+7. Distinguish source quality from claim status: a reputable source can still be irrelevant, outdated, or contradicted.
+8. Health, psychology, history, economics, and current-event claims require domain-appropriate review; do not apply astronomy-style numeric sourcing mechanically.
 
 Video 001 intentionally avoids “largest star” language. Betelgeuse is variable and its radius depends on observational/model assumptions, so the video labels the selected NASA value as an estimate.
 

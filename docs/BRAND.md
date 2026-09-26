@@ -5,9 +5,10 @@
 - Name: Magnivis
 - Handle: `@Magnivis`
 - Tagline: **See the unimaginable.**
-- Promise: if a fact is difficult to comprehend, make it visible.
+- Promise: every piece of content should leave the viewer knowing something fascinating they did not know before.
+- Editorial reaction: **“Wait… really?”** followed by **“Now I understand why.”**
 
-Magnivis is global, English-first, faceless, intelligent, and accessible without becoming childish. The target feeling is not merely understanding a number, but feeling its scale.
+Magnivis is global, English-first, faceless, intelligent, and accessible without becoming childish. It began with visual scale and science, but its identity now spans trustworthy knowledge storytelling across humans, the universe, science, Earth, history, technology, money/society, and everyday mysteries. The unifier is curiosity resolved through clear explanation—not a single subject category.
 
 ## Visual language
 
@@ -29,4 +30,3 @@ Camera and object scale are storytelling tools. Acceleration should build antici
 ## Branding
 
 The channel already applies a watermark. In-video branding is optional and subtle. Never trade the final moment of awe for a long logo animation or generic subscribe prompt.
-

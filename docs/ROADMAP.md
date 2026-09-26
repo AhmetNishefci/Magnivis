@@ -1,39 +1,64 @@
 # Roadmap
 
-## V1 — first Short and production foundation
+This roadmap describes sequence, not promises or permission to sacrifice quality. `docs/PROJECT-STATE.md` records current execution state; `docs/ARCHITECTURE.md` records system boundaries.
 
-- Strict TypeScript/React/Remotion project
-- Reusable design, celestial, text, background, and timing primitives
-- Structured video specification and independently inspectable scientific records
-- Deterministic procedural visuals and original procedural sound design
-- Preview, render, validation, snapshots, and contact sheet
-- Video 001: Earth → Jupiter → Sun → Rigel → Betelgeuse
+## Phase 0 — audit and foundation (current)
 
-## Publishing ramp-up
+- Preserve the working Remotion production and QA system.
+- Reconcile the original YouTube-only data model with the multi-platform knowledge-package strategy.
+- Keep tests/builds healthy and configuration free of secrets.
+- Establish clear durable strategy, architecture, editorial, research, and project-state documentation.
 
-- Week 1: publish 3 premium Shorts and validate the complete production workflow; long-form is not required yet.
-- Week 2: publish 4 premium Shorts and 1 long-form video; demonstrate measurable reuse without quality loss.
-- Weeks 3–4: target 5 premium Shorts and 1 premium long-form video per week.
-- After Week 4: target 5 Shorts and 1 long-form video per week, approximately 24–26 total videos per month.
+## Phase 1 — content intelligence (next)
 
-The detailed cadence, editorial roles, candidate topics, and quality guardrails are authoritative in `docs/STRATEGY.md`. The targets are conditional on quality and are not permission to publish filler.
+- Add a typed Knowledge Package V1 model and registry.
+- Add the eight content pillars, timeliness, hook archetypes, topic-score rationale, and claim verification states.
+- Migrate one existing researched topic without changing its render.
+- Add human review checks for sources, claims, hooks, script, and visual plan.
+- Keep discovery/research manual or AI-assisted; do not require paid providers.
 
-## Near-term engineering work
+## Phase 2 — production
 
-- Complete Video 005 private platform review and use the first five releases to refine hook, pacing, and caption-safe composition.
-- Add landscape/long-form composition patterns only when implementing the first long-form story.
-- Refine primitives based on real authoring friction and audience results.
-- Establish a repeatable metadata, private-review, caption, and release checklist.
-- Use performance data once the sample is meaningful; preserve editorial judgment when data is sparse.
+- Link scripts, narration, visual plans, assets, captions, renders, QA, provenance, and approximate production cost to a knowledge package.
+- Generalize brand and format configuration only where existing authoring friction proves a need.
+- Build long-form 16:9 patterns when the first approved long-form story enters production.
 
-## Later, when evidence justifies it
+## Phase 3 — multi-platform distribution
 
-- Alternate narration voices, multilingual audio, and dubbing experiments
-- Dedicated thumbnail compositions and metadata assistance
-- Research/storyboard automation with explicit human fact approval
-- Private YouTube upload automation with a separate publish approval
-- Analytics ingestion and rendering infrastructure
+- Define platform variants for YouTube Shorts, TikTok, Facebook Reels, and Instagram Reels.
+- Begin with export manifests and manual posting checklists.
+- Add official API adapters only after platform/account approval and operational need.
+- Separate upload from public release; use idempotency and human approval for every external mutation.
+
+## Phase 4 — analytics
+
+- Store raw platform snapshots, metric definitions, observation windows, and provenance.
+- Add explicit normalized/derived metrics only when formulas are defensible.
+- Report topic, hook, pillar, format, platform, geography, and cost performance without hiding sample size or latency.
+
+## Phase 5 — feedback loop
+
+- Use historical first-party data to inform topic prioritization, format decisions, publishing time, and controlled experiments.
+- Keep recommendations interpretable; do not introduce predictive ML before clean data and sufficient samples exist.
+
+## Phase 6 — owned distribution
+
+- Expose approved knowledge packages to a website/article pipeline.
+- Add source-rich topic pages, search, SEO, related stories, and newsletter capture when justified.
+
+## Phase 7 — monetization and scale
+
+- Add revenue observations, sponsorship/affiliate workflows, and unit economics.
+- Consider additional brands only after evidence shows one brand is operationally mature and audience segmentation requires it.
+
+## Explicitly deferred
+
+- Autonomous public publishing
+- Databases, queues, cloud rendering, microservices, and dashboards before operational need
+- A speculative provider framework or ML recommendation engine
+- A multi-account content farm
+- Monetization-account, residency, tax, or payment automation
 
 ## Skills recommendation
 
-Codex supports repository-local skills under `.agents/skills`. V1 deliberately does not add one: the research, storyboard, render, and QA workflows have each been exercised only once, so encoding them as agent skills would freeze premature assumptions. `AGENTS.md`, focused docs, and deterministic scripts are sufficient. Reconsider a minimal skill only after a workflow is repeated, stable, and benefits from an explicit trigger.
+Codex supports repository-local skills under `.agents/skills`, but none is justified yet. The broadened workflow has not stabilized. Keep rules in `AGENTS.md`, focused documentation, typed schemas, and deterministic scripts; reconsider a minimal skill only after a repeated workflow is stable.

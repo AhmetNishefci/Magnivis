@@ -1,5 +1,7 @@
 # Video system
 
+This is the implemented production subsystem. The higher-level knowledge-package, distribution, analytics, and operations boundaries are defined in `docs/ARCHITECTURE.md`; they are not yet implemented unless `docs/PROJECT-STATE.md` says otherwise.
+
 ## Architecture
 
 ```text
