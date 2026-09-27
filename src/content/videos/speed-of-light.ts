@@ -6,6 +6,7 @@ import {
 import {contentAssetRegistry} from '../../content-assets/registry';
 import {platformVariantRegistry} from '../../platform-variants/registry';
 import {
+  speedOfLightTiktokVariant,
   speedOfLightYoutubeShortsVariant,
 } from '../../platform-variants/variants/speed-of-light';
 
@@ -77,3 +78,17 @@ if (speedOfLightProductionVariant.contentAssetId !== speedOfLightPublishedShortA
 contentAssetRegistry.get(speedOfLightProductionVariant.contentAssetId);
 
 export const speedOfLightFrames = speedOfLight.format.fps * speedOfLight.format.durationSeconds;
+
+export const speedOfLightTiktok = videoSpecSchema.parse({
+  ...speedOfLight,
+  id: 'speed-of-light-tiktok',
+  compositionId: 'Magnivis-Speed-Of-Light-TikTok',
+  workingTitle: 'How Fast Is the Speed of Light? — TikTok V2',
+  status: 'production',
+  publication: undefined,
+  captions: [],
+  platformVariantId: speedOfLightTiktokVariant.id,
+});
+
+export const speedOfLightTiktokFrames =
+  speedOfLightTiktok.format.fps * speedOfLightTiktok.format.durationSeconds;

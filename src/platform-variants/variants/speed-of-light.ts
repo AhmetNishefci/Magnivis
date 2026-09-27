@@ -57,6 +57,7 @@ export const speedOfLightYoutubeShortsVariant = platformVariantSchema.parse({
   },
   productionIntent: {
     renderStrategy: 'reuse-existing-master',
+    videoSpecId: 'speed-of-light',
     platformPreviewRequired: false,
     notes: 'The existing master and optional English WebVTT track already passed YouTube desktop and mobile review.',
   },
@@ -70,7 +71,7 @@ export const speedOfLightYoutubeShortsVariant = platformVariantSchema.parse({
 
 export const speedOfLightTiktokVariant = platformVariantSchema.parse({
   id: speedOfLightPlatformVariantIds.tiktokFeed,
-  revision: 1,
+  revision: 2,
   contentAssetId: assetId,
   platform: 'tiktok',
   surface: 'tiktok-feed',
@@ -99,11 +100,17 @@ export const speedOfLightTiktokVariant = platformVariantSchema.parse({
     humanReviewRequired: true,
   },
   productionIntent: {
-    renderStrategy: 'reuse-existing-master',
-    platformPreviewRequired: true,
-    notes: 'Reuse the clean master, then review TikTok-generated captions, cover crop, and interface occlusion before any manual post.',
+    renderStrategy: 'new-render',
+    videoSpecId: 'speed-of-light-tiktok',
+    platformPreviewRequired: false,
+    notes: 'TikTok V1 failed private iPhone preview because its top navigation crowded the information block. The V2 TikTok-safe render passed private real-device visual/editorial QA on an iPhone 17 Pro Max, including navigation clearance, caption/UI-area safety, cover crop, interface occlusion, audio, animation, and the completed 7.5× counter.',
   },
-  status: 'editorial-review',
+  status: 'production-ready',
+  approval: {
+    approvedBy: 'Magnivis human real-device review',
+    approvedAt: '2026-09-27',
+    notes: 'TikTok Revision 2 passed private Only Me visual/editorial QA on an iPhone 17 Pro Max with the AI-generated-content label enabled. Approval makes this exact delivery eligible for a separately authorized manual upload; it is not approval to publish publicly.',
+  },
 });
 
 export const speedOfLightInstagramVariant = platformVariantSchema.parse({
@@ -142,6 +149,7 @@ export const speedOfLightInstagramVariant = platformVariantSchema.parse({
   },
   productionIntent: {
     renderStrategy: 'reuse-existing-master',
+    videoSpecId: 'speed-of-light',
     platformPreviewRequired: true,
     notes: 'Reuse the clean master; manually review Reels UI occlusion, generated captions, and the profile-grid cover crop.',
   },
@@ -183,6 +191,7 @@ export const speedOfLightFacebookVariant = platformVariantSchema.parse({
   },
   productionIntent: {
     renderStrategy: 'reuse-existing-master',
+    videoSpecId: 'speed-of-light',
     platformPreviewRequired: true,
     notes: 'Reuse the clean master and perform a manual Facebook Reels preview for captions and UI placement.',
   },

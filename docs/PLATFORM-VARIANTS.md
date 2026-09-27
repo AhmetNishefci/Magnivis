@@ -23,7 +23,7 @@ KnowledgePackage → ContentAsset → PlatformVariant → VideoSpec / Remotion
 - a versioned safe-area profile reference;
 - cover or thumbnail intent;
 - caption behavior and human-review requirement;
-- whether production reuses the master or needs a new render, plus platform-preview intent;
+- whether production reuses the master or needs a new render, the exact VideoSpec ID, and platform-preview intent;
 - readiness status and approval metadata.
 
 The registry validates ContentAsset references, permits packaging claims only from the asset's selected claims, rejects duplicate IDs or duplicate asset/surface combinations, validates platform/profile/safe-area compatibility, and returns deterministic sorted results.
@@ -48,20 +48,22 @@ V1 references current official documentation for [YouTube Shorts](https://suppor
 
 ## Safe-area architecture
 
-`src/design/safe-areas.ts` owns versioned 1080×1920 profiles for the shared vertical master and each V1 surface. `ShortSafeArea` resolves one profile instead of embedding insets in every composition. The master profile is a conservative union whose usable content area fits inside every V1 platform area and preserves the pre-migration Video 004 values exactly.
+`src/design/safe-areas.ts` owns versioned 1080×1920 profiles for the shared vertical master and each V1 surface. `ShortSafeArea` resolves one profile instead of embedding insets in every composition. The master profile preserves the reviewed YouTube Video 004 geometry. TikTok's first private iPhone preview proved the original shared geometry was not a safe union: native top navigation crowded the information block. TikTok therefore has a V2 profile with a 240 px top inset and a dedicated production render, while the shared YouTube master stays byte-identical.
+
+The failed TikTok V1 profile remains registered only as superseded historical platform knowledge and must not be selected for delivery. V2 changes only the top inset from the master's 150 px to 240 px. The 190 px right inset remains unchanged: the Magnivis mark observed in TikTok's right interaction rail is TikTok's native account/profile control, not an in-video watermark that Remotion can reposition. V2 passed private real-device visual/editorial QA on an iPhone 17 Pro Max on 2026-09-27.
 
 Safe areas are internal design profiles based on conservative UI review, not official guarantees. Platform controls, captions, devices, and experiments can move. Each variant therefore records whether an actual platform preview remains required. New compositions should use the master profile when one shared render will serve several destinations and use a platform profile only when making a platform-specific render.
 
 ## Speed of Light variants
 
-The four V1 variants all reference `speed-of-light.asset.earth-to-proxima` and reuse the existing 33-second clean master where appropriate:
+The four V1 variants all reference `speed-of-light.asset.earth-to-proxima`. Each explicitly names its production VideoSpec so delivery resolution remains deterministic:
 
 - **YouTube Shorts:** searchable title and source-aware description; optional reviewed external WebVTT; production-ready because this is a retrospective record of the published, human-reviewed version.
-- **TikTok:** compact first-frame-complementing caption, question CTA, platform-generated captions, and mandatory pre-post UI/caption/cover preview.
+- **TikTok revision 2:** compact first-frame-complementing caption, question CTA, platform-generated captions, and the approved V2 safe-area render. Private Only Me QA confirmed navigation clearance, interaction-rail safety, lower-UI safety, cover crop, audio, animation, and the counter's completed 7.5× value. Revision 1 failed its first real-device review, was never public, and is superseded.
 - **Instagram Reels:** save-oriented copy tied to the light-year misconception, profile-grid cover intent, generated captions, and mandatory preview.
 - **Facebook Reels:** self-contained explanatory copy and conversational CTA for discovery beyond followers, generated captions, and mandatory preview.
 
-The records reuse facts and the master where that is honest; they do not invent four different videos or fake metadata differences.
+YouTube, Instagram, and Facebook still reuse the original master. TikTok alone uses a dedicated render because a real-platform failure justified the production difference. No editorial facts, narration, timing, sound, or visual storytelling changed. TikTok's `production-ready` state means the exact revision 2 package may be used for a separately approved manual upload; it does not authorize publication.
 
 ## Adding a variant
 
@@ -78,7 +80,7 @@ The records reuse facts and the master where that is honest; they do not invent 
 - uploads, OAuth, scheduling, publication, or account automation;
 - PublicationRecord and remote platform identifiers;
 - platform API clients or capability discovery;
-- alternate platform renders for the V1 Speed of Light variants;
+- automated platform-specific transformation or render orchestration (the operator still renders a declared alternate VideoSpec explicitly);
 - databases, queues, workers, services, dashboards, analytics, or monetization/location tooling.
 
 All distribution remains a separate manual, human-approved operation.

@@ -4,7 +4,8 @@ import {stableKnowledgeIdSchema} from '../knowledge/schema';
 export const safeAreaProfileIds = {
   verticalShortMaster: 'safe-area.vertical-short-master.v1',
   youtubeShorts: 'safe-area.youtube-shorts.v1',
-  tiktokFeed: 'safe-area.tiktok-feed.v1',
+  tiktokFeedV1: 'safe-area.tiktok-feed.v1',
+  tiktokFeed: 'safe-area.tiktok-feed.v2',
   instagramReels: 'safe-area.instagram-reels.v1',
   facebookReels: 'safe-area.facebook-reels.v1',
 } as const;
@@ -52,7 +53,7 @@ const profiles = [
     canvas: {width: 1080, height: 1920},
     insets: {top: 150, right: 190, bottom: 310, left: 84},
     reviewedAt: '2026-09-27',
-    notes: 'Conservative union used by the shared 9:16 master. Its usable content area fits inside every V1 platform profile and preserves the existing Magnivis layout.',
+    notes: 'Shared 9:16 master profile that preserves the reviewed YouTube layout. A TikTok iPhone preview proved that surface needs a stricter top inset and its own render.',
   },
   {
     id: safeAreaProfileIds.youtubeShorts,
@@ -64,13 +65,22 @@ const profiles = [
     notes: 'Internal conservative YouTube Shorts UI profile. Client-controlled captions can still move outside the requested caption position.',
   },
   {
-    id: safeAreaProfileIds.tiktokFeed,
+    id: safeAreaProfileIds.tiktokFeedV1,
     revision: 1,
     kind: 'platform',
     canvas: {width: 1080, height: 1920},
     insets: {top: 140, right: 190, bottom: 300, left: 72},
     reviewedAt: '2026-09-27',
-    notes: 'Internal conservative TikTok feed UI profile; re-audit against the actual app before distribution.',
+    notes: 'Superseded historical profile. It failed the first real-device TikTok iPhone preview because the top-left information block conflicted with native navigation UI. Do not use it for future delivery.',
+  },
+  {
+    id: safeAreaProfileIds.tiktokFeed,
+    revision: 2,
+    kind: 'platform',
+    canvas: {width: 1080, height: 1920},
+    insets: {top: 240, right: 190, bottom: 310, left: 84},
+    reviewedAt: '2026-09-27',
+    notes: 'Approved TikTok V2 profile. It changes only the top inset, moving the complete information region 90 px below the reviewed YouTube master position after an iPhone feed preview exposed a collision with top navigation. Left, right, and bottom geometry remain identical to the master. The resulting render passed private real-device QA on an iPhone 17 Pro Max on 2026-09-27.',
   },
   {
     id: safeAreaProfileIds.instagramReels,

@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-27 — Give a failed TikTok safe-area review its own production render
+
+**Decision:** Retain the byte-identical reviewed YouTube master and introduce TikTok variant revision 2 with a dedicated VideoSpec/composition using `safe-area.tiktok-feed.v2`. The complete top information region moves from 150 px to 240 px; all editorial, timing, audio, visualization, and lower-label geometry stays unchanged.
+
+**Reason:** A private TikTok iPhone preview showed native top navigation crowding the Sun/Earth information block. Changing the shared master would regress the published YouTube production, while moving one scene with a hardcoded offset would leave the same systemic risk in every other top headline.
+
+**Alternatives:** Change the shared master (rejected: unnecessary YouTube/Meta regression); add a Sun-scene magic number (rejected: does not express the platform constraint); move the apparent right-side Magnivis logo (rejected: it is TikTok's native profile control, not video content).
+
+**Consequences:** `PlatformVariant.productionIntent.videoSpecId` now selects production deterministically. The delivery pipeline can package a completed dedicated render but still never renders or publishes automatically. TikTok revision 2 passed private real-device pass 2 on an iPhone 17 Pro Max and is now `production-ready`; its ready delivery still requires explicit human publication approval.
+
 ## 2026-09-27 — Use hashed local delivery packages as the manual publishing handoff
 
 **Decision:** Materialize each PlatformVariant as an ignored, portable folder containing a master copy, applicable captions, exact upload copy, metadata, a review checklist, and a source-linked manifest with SHA-256 hashes. Package state is derived from—but never changes—the PlatformVariant status.
@@ -8,7 +18,7 @@
 
 **Alternatives:** Upload directly through APIs (premature and sensitive); keep a written manual checklist only (weak integrity and traceability); symlink one shared video into each package (less portable); rerender per platform (wasteful while all variants reuse the same master).
 
-**Consequences:** YouTube produces a ready package with WebVTT; TikTok, Instagram, and Facebook produce clearly marked draft-review packages without fabricated caption files. The four portable folders duplicate the master on disk by design. Publication state and remote IDs remain outside this model.
+**Consequences:** At initial implementation, YouTube produced a ready package with WebVTT while TikTok, Instagram, and Facebook produced clearly marked draft-review packages without fabricated caption files. TikTok revision 2 later passed its real-device gate and now produces a ready package from its dedicated render. Portable folders duplicate their selected production artifact on disk by design. Publication state and remote IDs remain outside this model.
 
 ## 2026-09-27 — Discover first and classify second
 
@@ -28,7 +38,7 @@
 
 **Alternatives:** Put all platforms in ContentAsset (couples story to distribution); copy ContentAssets per platform (fake editorial duplication); put publishing state in PlatformVariant (mixes desired adaptation with external side effects); build API clients now (not needed to prove the model).
 
-**Consequences:** The production Speed of Light asset has four registered variants; only its retrospective YouTube variant is production-ready. Video 004 references that variant and preserves the existing master. TikTok, Instagram, and Facebook variants require manual platform previews and cause no external action. Safe-area profiles are versioned internal design aids, not platform guarantees.
+**Consequences:** The production Speed of Light asset has four registered variants. Initially only its retrospective YouTube variant was production-ready; TikTok revision 2 later passed private real-device QA and became production-ready using a dedicated render. Instagram and Facebook still require manual platform previews. No variant causes an external action. Safe-area profiles are versioned internal design aids, not platform guarantees.
 
 ## 2026-09-27 — Model numeric shape separately from epistemic status
 

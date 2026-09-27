@@ -29,9 +29,10 @@ Last updated: 2026-09-27
 - Ocean Depth generalization is complete. The production `ocean-depth` KnowledgePackage models qualitative claims, a conventional approximate range, scalar measurement uncertainty, and survey-dependent context; its production ContentAsset supplies Video 002's unchanged narration, and the compatibility projection supplies unchanged numeric composition inputs.
 - The KnowledgePackage taxonomy now uses seven broad analytics pillars plus open normalized domains/topics. Existing Speed of Light and Ocean Depth packages are migrated, and validation proves philosophy, medicine/anatomy, biology, and movie-plus-physics classification requires no domain enum or source-code authorization.
 - PlatformVariant V1 is implemented for YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels using dated platform profiles, versioned safe-area profiles, claim-safe packaging, approval/readiness invariants, and deterministic registration.
-- One production Speed of Light ContentAsset now backs four meaningful platform adaptations. Video 004 references the production-ready YouTube variant; the other three remain in editorial review and do not publish anything.
+- One production Speed of Light ContentAsset now backs four meaningful platform adaptations. The YouTube and TikTok revision 2 variants are production-ready; Instagram and Facebook remain in editorial review. None publishes anything automatically.
 - Platform Delivery Package V1 generates and validates portable manual-upload folders for all four Speed of Light variants. Every folder contains the verified master, exact metadata/copy, a review checklist, source revisions, ffprobe media facts, and SHA-256 hashes; YouTube also contains the reviewed WebVTT.
-- The YouTube delivery is `ready-for-manual-upload`. TikTok, Instagram, and Facebook deliveries remain `draft-review`, are not eligible for public publication, and may only be used for private/draft platform preview until human approval changes their source variants.
+- The YouTube and canonical TikTok revision 2 deliveries are `ready-for-manual-upload`; Instagram and Facebook remain `draft-review`. Ready means the artifacts passed their defined gates, not that public publication has been authorized.
+- TikTok private iPhone preview pass 1 failed because native top navigation crowded the top-left information block. Revision 2 moves all top information blocks down 90 px with `safe-area.tiktok-feed.v2`. It passed private Only Me visual/editorial QA on an iPhone 17 Pro Max on 2026-09-27, including UI clearance, cover crop, audio, animation, and confirmation that the completed counter reaches 7.5×. The revision 1 delivery is superseded.
 - Videos 001, 003, and 005 intentionally remain on the legacy fact path. PublicationRecord and publishing integrations remain planned and unimplemented.
 
 ## NOW
@@ -39,7 +40,7 @@ Last updated: 2026-09-27
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
 - Revisit Video 003 when its detailed retention curve and unique-viewer reports finish processing; identify the first material drop before drawing scene-level conclusions.
-- Perform real TikTok, Instagram, and Facebook draft/private previews using the generated Speed of Light delivery packages; record issues without changing variant status prematurely.
+- Keep the approved TikTok revision 2 package unchanged until explicit publication approval. Perform first Instagram and Facebook draft/private previews separately.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
 - Preserve the current manual, human-approved publishing workflow. Delivery generation and validation perform no external action.
 

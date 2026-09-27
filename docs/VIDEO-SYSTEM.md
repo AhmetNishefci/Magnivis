@@ -72,6 +72,7 @@ Video specifications are production representations, not reusable research or ed
 - Captions: `captions/speed-of-light.en.vtt` (positioned above the lower Shorts metadata region); `captions/speed-of-light.en.srt` is the unpositioned fallback
 - Output: `output/speed-of-light-narrated.mp4`
 - Platform adaptation: `speed-of-light.asset.earth-to-proxima.variant.youtube-shorts`; the composition uses the conservative shared master safe-area profile whose insets exactly preserve the published layout.
+- TikTok revision 2: `Magnivis-Speed-Of-Light-TikTok` / `output/speed-of-light-tiktok-narrated.mp4`; it preserves the same editorial, scene, timing, and audio inputs while applying the real-device-approved `safe-area.tiktok-feed.v2` to every top information block. The completed Earth-laps counter remains the correct 7.5×.
 
 ## Video 005
 
@@ -91,12 +92,14 @@ pnpm render earth-to-stars       # full production render
 pnpm render ocean-depth          # Video 002 production render
 pnpm render billion-dollars      # Video 003 production render
 pnpm render speed-of-light       # Video 004 production render
+pnpm render speed-of-light-tiktok # TikTok revision 2 dedicated safe-area render
 pnpm render human-engineering    # Video 005 production render
 pnpm render:smoke ocean-depth    # first 90 frames only
 pnpm qa earth-to-stars           # ffprobe checks + frames + contact sheet
 pnpm qa ocean-depth              # Video 002 media QA and contact sheet
 pnpm qa billion-dollars          # Video 003 media QA and contact sheet
 pnpm qa speed-of-light           # Video 004 media QA and contact sheet
+pnpm qa speed-of-light-tiktok    # TikTok revision 2 media QA and contact sheet
 pnpm qa human-engineering        # Video 005 media QA and contact sheet
 pnpm delivery speed-of-light     # generate all four Speed of Light operator packages
 pnpm delivery:validate speed-of-light # validate delivery references, files, hashes and media

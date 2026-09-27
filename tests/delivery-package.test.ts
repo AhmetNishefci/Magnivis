@@ -86,7 +86,7 @@ describe('Platform Delivery Package V1', () => {
     expect(validateDeliveryPackage(result.directory, dependencies)).toEqual(result.manifest);
   });
 
-  it('generates a truthful draft package for an editorial-review variant', () => {
+  it('generates the approved TikTok package without granting publication authority', () => {
     const {root, dependencies} = fixture();
     const result = generateDeliveryPackage({
       variantId: speedOfLightTiktokVariant.id,
@@ -95,12 +95,14 @@ describe('Platform Delivery Package V1', () => {
       dependencies,
     });
 
-    expect(result.manifest.state).toBe('draft-review');
-    expect(result.manifest.publishEligible).toBe(false);
+    expect(result.manifest.state).toBe('ready-for-manual-upload');
+    expect(result.manifest.publishEligible).toBe(true);
+    expect(result.manifest.review.platformPreviewRequired).toBe(false);
+    expect(result.manifest.review.approval?.notes).toMatch(/iPhone 17 Pro Max/);
     expect(result.manifest.captions.behavior).toBe('platform-generated');
     expect(result.manifest.artifacts.some(({role}) => role === 'captions')).toBe(false);
     expect(readFileSync(resolve(result.directory, 'review.md'), 'utf8')).toContain(
-      'Do not publish it publicly',
+      'explicit human publication approval',
     );
   });
 
@@ -210,7 +212,7 @@ describe('Platform Delivery Package V1', () => {
       dependencies,
     });
     const reviewMismatch = structuredClone(second.manifest);
-    reviewMismatch.review.platformPreviewRequired = false;
+    reviewMismatch.review.platformPreviewRequired = true;
     writeFileSync(
       resolve(second.directory, 'manifest.json'),
       `${JSON.stringify(reviewMismatch, null, 2)}\n`,
@@ -294,13 +296,27 @@ describe('Platform Delivery Package V1', () => {
     expect(ignored.status).toBe(0);
   });
 
-  it('keeps all review-only platform variants non-publishable', () => {
+  it('keeps only previewed variants ready and unreviewed variants in draft review', () => {
+    expect(getDeliveryState(speedOfLightTiktokVariant.status)).toBe(
+      'ready-for-manual-upload',
+    );
+    for (const variant of [speedOfLightInstagramVariant, speedOfLightFacebookVariant]) {
+      expect(getDeliveryState(variant.status)).toBe('draft-review');
+    }
+  });
+
+  it('resolves the TikTok variant to its dedicated render and other surfaces to the master', () => {
+    expect(
+      deliveryDependencies.productionResolver(speedOfLightTiktokVariant).spec.id,
+    ).toBe('speed-of-light-tiktok');
     for (const variant of [
-      speedOfLightTiktokVariant,
+      speedOfLightYoutubeShortsVariant,
       speedOfLightInstagramVariant,
       speedOfLightFacebookVariant,
     ]) {
-      expect(getDeliveryState(variant.status)).toBe('draft-review');
+      expect(deliveryDependencies.productionResolver(variant).spec.id).toBe(
+        'speed-of-light',
+      );
     }
   });
 });

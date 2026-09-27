@@ -17,7 +17,11 @@ const fps = speedOfLight.format.fps;
 const seconds = (value: number) => value * fps;
 const masterSafeArea = safeAreaProfileIds.verticalShortMaster;
 
-const Hook = () => {
+type SpeedOfLightLayoutProps = {
+  safeAreaProfileId?: string;
+};
+
+const Hook = ({safeAreaProfileId}: Required<SpeedOfLightLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = easeOutQuint(progress(frame, 0, seconds(1)));
   const laps = amount * lightScale.earthLapsPerSecond;
@@ -25,7 +29,7 @@ const Hook = () => {
     <SceneWindow start={0} end={seconds(4.45)} fadeIn={2} fadeOut={10}>
       <LightAtmosphere />
       <PhotonOrbit amount={amount} />
-      <ShortSafeArea profileId={masterSafeArea}>
+      <ShortSafeArea profileId={safeAreaProfileId}>
         <RevealText at={-16} eyebrow="IN ONE SECOND" style={{fontSize: 88, fontWeight: 700, lineHeight: 0.9, letterSpacing: '-0.06em'}}>
           LIGHT CIRCLES
           <br />
@@ -40,7 +44,7 @@ const Hook = () => {
   );
 };
 
-const ExactSpeed = () => {
+const ExactSpeed = ({safeAreaProfileId}: Required<SpeedOfLightLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = progress(frame, seconds(3.75), seconds(7.8));
   const displayed = mix(0, lightScale.speedMps / 1000, easeOutQuint(amount));
@@ -48,7 +52,7 @@ const ExactSpeed = () => {
     <SceneWindow start={seconds(3.65)} end={seconds(10.2)} fadeIn={10} fadeOut={12}>
       <LightAtmosphere intensity={0.6} />
       <LightTunnel amount={amount} />
-      <ShortSafeArea profileId={masterSafeArea}>
+      <ShortSafeArea profileId={safeAreaProfileId}>
         <RevealText at={seconds(3.85)} eyebrow="IN A VACUUM" style={{fontSize: 73, fontWeight: 700, lineHeight: 0.92}}>
           {displayed.toLocaleString('en-US', {minimumFractionDigits: 3, maximumFractionDigits: 3})}
           <br />
@@ -60,7 +64,7 @@ const ExactSpeed = () => {
   );
 };
 
-const MoonScene = () => {
+const MoonScene = ({safeAreaProfileId}: Required<SpeedOfLightLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = easeInOutCubic(progress(frame, seconds(9.3), seconds(12.7)));
   return (
@@ -69,7 +73,7 @@ const MoonScene = () => {
       <CelestialBody kind="earth" diameter={260} centerX={250} centerY={1120} rotationSpeed={0.018} />
       <Moon centerX={840} centerY={920} diameter={105} />
       <DistanceBeam amount={amount} start={{x: 365, y: 1080}} end={{x: 785, y: 940}} />
-      <ShortSafeArea profileId={masterSafeArea}>
+      <ShortSafeArea profileId={safeAreaProfileId}>
         <RevealText at={seconds(9.25)} eyebrow="EARTH → MOON" style={{fontSize: 105, fontWeight: 700, lineHeight: 0.86}}>
           ≈1.28
           <br />SECONDS
@@ -80,7 +84,7 @@ const MoonScene = () => {
   );
 };
 
-const SunScene = () => {
+const SunScene = ({safeAreaProfileId}: Required<SpeedOfLightLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = easeInOutCubic(progress(frame, seconds(14.2), seconds(19.1)));
   return (
@@ -89,7 +93,7 @@ const SunScene = () => {
       <CelestialBody kind="sun" diameter={470} centerX={205} centerY={1110} />
       <CelestialBody kind="earth" diameter={92} centerX={868} centerY={1020} rotationSpeed={0.018} />
       <DistanceBeam amount={amount} start={{x: 414, y: 1070}} end={{x: 820, y: 1025}} />
-      <ShortSafeArea profileId={masterSafeArea}>
+      <ShortSafeArea profileId={safeAreaProfileId}>
         <RevealText at={seconds(14.15)} eyebrow="SUN → EARTH" style={{fontSize: 92, fontWeight: 700, lineHeight: 0.88}}>
           8 MINUTES
           <br />20 SECONDS
@@ -100,14 +104,14 @@ const SunScene = () => {
   );
 };
 
-const LightYearScene = () => {
+const LightYearScene = ({safeAreaProfileId}: Required<SpeedOfLightLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = progress(frame, seconds(20), seconds(25.7));
   return (
     <SceneWindow start={seconds(19.85)} end={seconds(26.7)} fadeIn={10} fadeOut={12}>
       <LightAtmosphere intensity={0.55} />
       <LightTunnel amount={amount} />
-      <ShortSafeArea profileId={masterSafeArea}>
+      <ShortSafeArea profileId={safeAreaProfileId}>
         <RevealText at={seconds(20.05)} eyebrow="ONE YEAR OF LIGHT" style={{fontSize: 99, fontWeight: 700, lineHeight: 0.86}}>
           9.46
           <br />TRILLION KM
@@ -118,7 +122,7 @@ const LightYearScene = () => {
   );
 };
 
-const ProximaScene = () => {
+const ProximaScene = ({safeAreaProfileId}: Required<SpeedOfLightLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = easeInOutCubic(progress(frame, seconds(25.6), seconds(32)));
   const fade = progress(frame, seconds(32.55), seconds(33));
@@ -126,7 +130,7 @@ const ProximaScene = () => {
     <SceneWindow start={seconds(25.4)} end={seconds(33)} fadeIn={11} fadeOut={1}>
       <LightAtmosphere intensity={0.42} />
       <ProximaDistance amount={amount} />
-      <ShortSafeArea profileId={masterSafeArea}>
+      <ShortSafeArea profileId={safeAreaProfileId}>
         <RevealText at={seconds(25.6)} eyebrow="THE NEAREST STAR" style={{fontSize: 91, fontWeight: 700, lineHeight: 0.88}}>
           4.25 YEARS
           <br />AT LIGHT SPEED
@@ -138,20 +142,25 @@ const ProximaScene = () => {
   );
 };
 
-export const SpeedOfLight = () => (
-  <AbsoluteFill style={{backgroundColor: palette.void}}>
-    <Audio src={staticFile(speedOfLight.audio.file)} volume={0.3} />
-    {speedOfLight.audio.narrationCues.map((cue) => (
-      <Sequence key={cue.id} from={Math.round(cue.start * fps)} layout="none">
-        <Audio src={staticFile(cue.file)} volume={1} />
-      </Sequence>
-    ))}
-    <Hook />
-    <ExactSpeed />
-    <MoonScene />
-    <SunScene />
-    <LightYearScene />
-    <ProximaScene />
-    <Finish />
-  </AbsoluteFill>
-);
+export const SpeedOfLight = ({
+  safeAreaProfileId = masterSafeArea,
+}: SpeedOfLightLayoutProps) => {
+  const layout = {safeAreaProfileId};
+  return (
+    <AbsoluteFill style={{backgroundColor: palette.void}}>
+      <Audio src={staticFile(speedOfLight.audio.file)} volume={0.3} />
+      {speedOfLight.audio.narrationCues.map((cue) => (
+        <Sequence key={cue.id} from={Math.round(cue.start * fps)} layout="none">
+          <Audio src={staticFile(cue.file)} volume={1} />
+        </Sequence>
+      ))}
+      <Hook {...layout} />
+      <ExactSpeed {...layout} />
+      <MoonScene {...layout} />
+      <SunScene {...layout} />
+      <LightYearScene {...layout} />
+      <ProximaScene {...layout} />
+      <Finish />
+    </AbsoluteFill>
+  );
+};

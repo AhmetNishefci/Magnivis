@@ -1,7 +1,12 @@
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {describe, expect, it} from 'vitest';
-import {speedOfLight, speedOfLightFrames} from '../src/content/videos/speed-of-light';
+import {
+  speedOfLight,
+  speedOfLightFrames,
+  speedOfLightTiktok,
+  speedOfLightTiktokFrames,
+} from '../src/content/videos/speed-of-light';
 import {lightScale} from '../src/data/light';
 import {
   speedOfLightContentAssetIds,
@@ -101,5 +106,20 @@ describe('published Speed of Light production regression', () => {
     expect(sha256('public/audio/speed-of-light.wav')).toBe(
       '5ccdef44bd52a19f56ceb55d2ed5779a20cd1c3e7afee98b72e635a21f0c9602',
     );
+  });
+
+  it('adds a TikTok-only production representation without changing the published spec', () => {
+    expect(speedOfLightTiktok).toMatchObject({
+      id: 'speed-of-light-tiktok',
+      compositionId: 'Magnivis-Speed-Of-Light-TikTok',
+      status: 'production',
+      platformVariantId: speedOfLightPlatformVariantIds.tiktokFeed,
+      format: speedOfLight.format,
+      scenes: speedOfLight.scenes,
+      audio: speedOfLight.audio,
+    });
+    expect(speedOfLightTiktok.publication).toBeUndefined();
+    expect(speedOfLightTiktok.captions).toEqual([]);
+    expect(speedOfLightTiktokFrames).toBe(speedOfLightFrames);
   });
 });

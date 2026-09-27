@@ -2,7 +2,10 @@ import {billionDollars} from '../src/content/videos/billion-dollars';
 import {earthToStars} from '../src/content/videos/earth-to-stars';
 import {humanEngineering} from '../src/content/videos/human-engineering';
 import {oceanDepth} from '../src/content/videos/ocean-depth';
-import {speedOfLight} from '../src/content/videos/speed-of-light';
+import {
+  speedOfLight,
+  speedOfLightTiktok,
+} from '../src/content/videos/speed-of-light';
 
 export const videoTargets = {
   [earthToStars.id]: {
@@ -27,6 +30,12 @@ export const videoTargets = {
     spec: speedOfLight,
     output: `output/${speedOfLight.id}-narrated.mp4`,
     qaDirectory: `qa/${speedOfLight.id}-narrated`,
+    qaTimestamps: [0.25, 2.8, 5.9, 10.8, 15.8, 21.8, 27.8, 32.1],
+  },
+  [speedOfLightTiktok.id]: {
+    spec: speedOfLightTiktok,
+    output: `output/${speedOfLightTiktok.id}-narrated.mp4`,
+    qaDirectory: `qa/${speedOfLightTiktok.id}-narrated`,
     qaTimestamps: [0.25, 2.8, 5.9, 10.8, 15.8, 21.8, 27.8, 32.1],
   },
   [humanEngineering.id]: {

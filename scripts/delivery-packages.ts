@@ -37,7 +37,7 @@ import {
   inspectMedia,
   type MediaInspection,
 } from './media-inspection';
-import {videoTargets} from './video-targets';
+import {resolveVideoTarget} from './video-targets';
 
 export type DeliveryProduction = {
   spec: VideoSpec;
@@ -53,18 +53,22 @@ export type DeliveryDependencies = {
 };
 
 const defaultProductionResolver = (variant: PlatformVariant): DeliveryProduction => {
-  const matches = Object.values(videoTargets).filter(({spec}) => {
-    if (spec.contentAssetId === variant.contentAssetId) return true;
-    if (!spec.platformVariantId) return false;
-    return platformVariantRegistry.get(spec.platformVariantId).contentAssetId
-      === variant.contentAssetId;
-  });
-  if (matches.length !== 1) {
+  const target = resolveVideoTarget(variant.productionIntent.videoSpecId);
+  const productionAssetId = target.spec.contentAssetId
+    ?? (target.spec.platformVariantId
+      ? platformVariantRegistry.get(target.spec.platformVariantId).contentAssetId
+      : undefined);
+  if (productionAssetId !== variant.contentAssetId) {
     throw new Error(
-      `Expected one production VideoSpec for ${variant.contentAssetId}; found ${matches.length}`,
+      `VideoSpec ${target.spec.id} does not represent ${variant.contentAssetId}`,
     );
   }
-  const target = matches[0]!;
+  if (
+    variant.productionIntent.renderStrategy === 'new-render'
+    && target.spec.platformVariantId !== variant.id
+  ) {
+    throw new Error(`New-render variant ${variant.id} requires its own VideoSpec`);
+  }
   return {spec: target.spec, sourceVideoPath: target.output};
 };
 
@@ -279,9 +283,6 @@ export const generateDeliveryPackage = ({
   const variant = dependencies.variantRegistry.get(variantId);
   if (variant.status === 'archived') {
     throw new Error(`Archived PlatformVariant cannot produce a delivery package: ${variant.id}`);
-  }
-  if (variant.productionIntent.renderStrategy !== 'reuse-existing-master') {
-    throw new Error(`Delivery V1 cannot create the required new render for ${variant.id}`);
   }
   const asset = dependencies.assetRegistry.get(variant.contentAssetId);
   const knowledgePackage = dependencies.packageRegistry.get(asset.knowledgePackageId);

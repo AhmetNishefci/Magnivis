@@ -73,6 +73,7 @@ export const platformVariantSchema = z.object({
   }).strict(),
   productionIntent: z.object({
     renderStrategy: z.enum(['reuse-existing-master', 'new-render']),
+    videoSpecId: z.string().regex(/^[a-z0-9-]+$/),
     platformPreviewRequired: z.boolean(),
     notes: z.string().min(1),
   }).strict(),

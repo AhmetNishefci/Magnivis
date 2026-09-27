@@ -8,7 +8,13 @@ import {billionDollars, billionDollarsFrames} from './content/videos/billion-dol
 import {earthToStars, earthToStarsFrames} from './content/videos/earth-to-stars';
 import {humanEngineering, humanEngineeringFrames} from './content/videos/human-engineering';
 import {oceanDepth, oceanDepthFrames} from './content/videos/ocean-depth';
-import {speedOfLight, speedOfLightFrames} from './content/videos/speed-of-light';
+import {
+  speedOfLight,
+  speedOfLightFrames,
+  speedOfLightTiktok,
+  speedOfLightTiktokFrames,
+} from './content/videos/speed-of-light';
+import {safeAreaProfileIds} from './design/safe-areas';
 
 export const RemotionRoot = () => (
   <>
@@ -43,6 +49,15 @@ export const RemotionRoot = () => (
       fps={speedOfLight.format.fps}
       width={speedOfLight.format.width}
       height={speedOfLight.format.height}
+    />
+    <Composition
+      id={speedOfLightTiktok.compositionId}
+      component={SpeedOfLight}
+      durationInFrames={speedOfLightTiktokFrames}
+      fps={speedOfLightTiktok.format.fps}
+      width={speedOfLightTiktok.format.width}
+      height={speedOfLightTiktok.format.height}
+      defaultProps={{safeAreaProfileId: safeAreaProfileIds.tiktokFeed}}
     />
     <Composition
       id={humanEngineering.compositionId}

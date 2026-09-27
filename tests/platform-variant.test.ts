@@ -1,7 +1,10 @@
 import {describe, expect, it} from 'vitest';
 import {speedOfLightPublishedShortAsset} from '../src/content-assets/assets/speed-of-light';
 import {videoSpecSchema} from '../src/content/schema';
-import {speedOfLight} from '../src/content/videos/speed-of-light';
+import {
+  speedOfLight,
+  speedOfLightTiktok,
+} from '../src/content/videos/speed-of-light';
 import {
   safeAreaContains,
   safeAreaProfileIds,
@@ -122,21 +125,36 @@ describe('PlatformVariant V1 schema and registry', () => {
     expect(speedOfLightYoutubeShortsVariant.captions.behavior).toBe('external-track');
     expect(speedOfLightYoutubeShortsVariant.status).toBe('production-ready');
 
-    for (const variant of [
-      speedOfLightTiktokVariant,
-      speedOfLightInstagramVariant,
-      speedOfLightFacebookVariant,
-    ]) {
+    for (const variant of [speedOfLightInstagramVariant, speedOfLightFacebookVariant]) {
       expect(variant.packaging.caption).toBeDefined();
       expect(variant.captions.behavior).toBe('platform-generated');
       expect(variant.productionIntent.platformPreviewRequired).toBe(true);
       expect(variant.status).toBe('editorial-review');
     }
+    expect(speedOfLightTiktokVariant.packaging.caption).toBeDefined();
+    expect(speedOfLightTiktokVariant.captions.behavior).toBe('platform-generated');
     expect(speedOfLightTiktokVariant.packaging.caption).not.toBe(
       speedOfLightInstagramVariant.packaging.caption,
     );
     expect(speedOfLightInstagramVariant.packaging.cta).not.toBe(
       speedOfLightFacebookVariant.packaging.cta,
+    );
+    expect(speedOfLightTiktokVariant).toMatchObject({
+      revision: 2,
+      status: 'production-ready',
+      safeAreaProfileId: safeAreaProfileIds.tiktokFeed,
+      productionIntent: {
+        renderStrategy: 'new-render',
+        videoSpecId: speedOfLightTiktok.id,
+        platformPreviewRequired: false,
+      },
+      approval: {
+        approvedBy: 'Magnivis human real-device review',
+        approvedAt: '2026-09-27',
+      },
+    });
+    expect(speedOfLightYoutubeShortsVariant.productionIntent.videoSpecId).toBe(
+      speedOfLight.id,
     );
   });
 });
@@ -151,15 +169,27 @@ describe('versioned platform and safe-area profiles', () => {
     )).toBe(true);
   });
 
-  it('keeps the conservative master content area inside every platform area', () => {
+  it('keeps the reviewed master inside unchanged surfaces and isolates TikTok V2', () => {
     const master = safeAreaProfileRegistry.get(safeAreaProfileIds.verticalShortMaster);
     for (const id of [
       safeAreaProfileIds.youtubeShorts,
-      safeAreaProfileIds.tiktokFeed,
       safeAreaProfileIds.instagramReels,
       safeAreaProfileIds.facebookReels,
     ]) {
       expect(safeAreaContains(safeAreaProfileRegistry.get(id), master)).toBe(true);
     }
+
+    const tiktokV1 = safeAreaProfileRegistry.get(safeAreaProfileIds.tiktokFeedV1);
+    const tiktokV2 = safeAreaProfileRegistry.get(safeAreaProfileIds.tiktokFeed);
+    expect(tiktokV1.insets).toEqual({top: 140, right: 190, bottom: 300, left: 72});
+    expect(tiktokV1.notes).toMatch(/superseded/i);
+    expect(tiktokV2).toMatchObject({
+      revision: 2,
+      insets: {top: 240, right: 190, bottom: 310, left: 84},
+    });
+    expect(tiktokV2.notes).toMatch(/passed private real-device QA/i);
+    expect(safeAreaContains(tiktokV2, master)).toBe(false);
+    expect(tiktokV2.insets.top - master.insets.top).toBe(90);
+    expect({...tiktokV2.insets, top: master.insets.top}).toEqual(master.insets);
   });
 });
