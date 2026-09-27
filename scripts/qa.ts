@@ -1,11 +1,11 @@
-import {createRequire} from 'node:module';
 import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
 import {resolveVideoTarget} from './video-targets';
+import {inspectMedia} from './media-inspection';
 
+import {createRequire} from 'node:module';
 const require = createRequire(import.meta.url);
 const ffmpegPath = require('ffmpeg-static') as string;
-const ffprobePath = (require('ffprobe-static') as {path: string}).path;
 
 const id = process.argv[2] ?? 'earth-to-stars';
 let target;
@@ -24,27 +24,7 @@ if (!existsSync(input)) {
 }
 mkdirSync(qaDirectory, {recursive: true});
 
-const probe = spawnSync(
-  ffprobePath,
-  ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', input],
-  {encoding: 'utf8'},
-);
-if (probe.status !== 0) throw new Error(probe.stderr || 'ffprobe failed');
-
-const metadata = JSON.parse(probe.stdout) as {
-  streams: Array<{
-    codec_type?: string;
-    codec_name?: string;
-    width?: number;
-    height?: number;
-    r_frame_rate?: string;
-    sample_rate?: string;
-  }>;
-  format: {duration?: string; size?: string; bit_rate?: string};
-};
-const video = metadata.streams.find((stream) => stream.codec_type === 'video');
-const audio = metadata.streams.find((stream) => stream.codec_type === 'audio');
-const duration = Number(metadata.format.duration);
+const media = inspectMedia(input);
 const expected = target.spec.format;
 const failures: string[] = [];
 
@@ -57,15 +37,13 @@ if (volumeProbe.status !== 0) throw new Error(volumeProbe.stderr || 'Audio level
 const meanVolume = Number(/mean_volume:\s*(-?[\d.]+) dB/.exec(volumeProbe.stderr)?.[1]);
 const maxVolume = Number(/max_volume:\s*(-?[\d.]+) dB/.exec(volumeProbe.stderr)?.[1]);
 
-if (!video) failures.push('video stream missing');
-if (!audio) failures.push('audio stream missing');
-if (video?.width !== expected.width || video?.height !== expected.height) {
-  failures.push(`resolution ${video?.width ?? '?'}x${video?.height ?? '?'} != ${expected.width}x${expected.height}`);
+if (media.width !== expected.width || media.height !== expected.height) {
+  failures.push(`resolution ${media.width}x${media.height} != ${expected.width}x${expected.height}`);
 }
-if (video?.r_frame_rate !== `${expected.fps}/1`) failures.push(`frame rate ${video?.r_frame_rate ?? '?'} != ${expected.fps}/1`);
-if (video?.codec_name !== 'h264') failures.push(`video codec ${video?.codec_name ?? '?'} != h264`);
-if (audio?.codec_name !== 'aac') failures.push(`audio codec ${audio?.codec_name ?? '?'} != aac`);
-if (Math.abs(duration - expected.durationSeconds) > 0.12) failures.push(`duration ${duration}s outside tolerance`);
+if (media.fps !== expected.fps) failures.push(`frame rate ${media.fpsExpression} != ${expected.fps}/1`);
+if (media.videoCodec !== 'h264') failures.push(`video codec ${media.videoCodec} != h264`);
+if (media.audioCodec !== 'aac') failures.push(`audio codec ${media.audioCodec} != aac`);
+if (Math.abs(media.durationSeconds - expected.durationSeconds) > 0.12) failures.push(`duration ${media.durationSeconds}s outside tolerance`);
 if (!Number.isFinite(meanVolume) || meanVolume < -70) failures.push(`audio appears silent (mean ${meanVolume} dB)`);
 if (!Number.isFinite(maxVolume) || maxVolume > 0) failures.push(`invalid/clipping audio peak (${maxVolume} dB)`);
 
@@ -74,17 +52,17 @@ const report = {
   input,
   expected,
   observed: {
-    width: video?.width,
-    height: video?.height,
-    fps: video?.r_frame_rate,
-    videoCodec: video?.codec_name,
-    audioCodec: audio?.codec_name,
-    audioSampleRate: audio?.sample_rate,
+    width: media.width,
+    height: media.height,
+    fps: media.fpsExpression,
+    videoCodec: media.videoCodec,
+    audioCodec: media.audioCodec,
+    audioSampleRate: media.audioSampleRate,
     meanVolumeDb: meanVolume,
     maxVolumeDb: maxVolume,
-    duration,
-    sizeBytes: Number(metadata.format.size),
-    bitRate: Number(metadata.format.bit_rate),
+    duration: media.durationSeconds,
+    sizeBytes: media.sizeBytes,
+    bitRate: media.bitRate,
   },
   passed: failures.length === 0,
   failures,

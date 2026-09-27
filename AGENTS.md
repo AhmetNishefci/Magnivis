@@ -19,6 +19,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - Keep audio/narration modular. A silent concept must not hardwire the architecture to silence.
 - Do not add databases, queues, cloud infrastructure, dashboards, publishing automation, or paid APIs without a current need and human approval.
 - Never upload or publish to any platform without explicit human approval. Publishing credentials and public-release operations are sensitive.
+- Treat generated delivery packages as hashed operator handoffs. Do not mark a review package publishable unless its registered PlatformVariant is `production-ready`; package generation never grants publication approval.
 - Keep raw platform analytics and platform-specific definitions; never present incomparable metrics as normalized equivalents.
 - Never commit secrets, credentials, personal data, or generated `.env` files. Use environment variables and maintain `.env.example`.
 - Avoid destructive commands and history rewrites. Never force-push. Preserve unrelated work.
@@ -32,6 +33,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - Knowledge package model and verification semantics: `docs/KNOWLEDGE-PACKAGES.md`
 - Content asset model and editorial/production boundary: `docs/CONTENT-ASSETS.md`
 - Platform adaptation, constraint profiles, and safe areas: `docs/PLATFORM-VARIANTS.md`
+- Manual delivery packages and validation: `docs/DELIVERY-PACKAGES.md`
 - Brand and creative direction: `docs/BRAND.md`, `docs/CONTENT-BIBLE.md`
 - Architecture and commands: `docs/VIDEO-SYSTEM.md`
 - Scientific sourcing: `docs/RESEARCH-STANDARDS.md`

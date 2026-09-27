@@ -29,7 +29,8 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 ## Phase 3 — multi-platform distribution
 
 - PlatformVariant V1 is implemented for YouTube Shorts, TikTok, Facebook Reels, and Instagram Reels using dated constraints, platform packaging, safe-area profiles, approval/readiness, and manual preview intent.
-- Begin with export manifests and manual posting checklists.
+- Platform Delivery Package V1 now produces validated, hashed export folders and manual review/upload checklists without external platform actions.
+- Operationally test the review-only TikTok, Instagram, and Facebook packages through real private/draft previews before expanding architecture.
 - Add official API adapters only after platform/account approval and operational need.
 - Separate upload from public release; use idempotency and human approval for every external mutation.
 

@@ -12,6 +12,8 @@ Content Asset V1 is also implemented as version-controlled TypeScript/Zod. Two e
 
 The knowledge taxonomy is open-ended: packages have one broad analytics pillar plus normalized domain/topic slugs. Pillars organize the portfolio rather than authorize subjects. PlatformVariant V1 is implemented for the production Speed of Light ContentAsset across YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels. Dated constraint profiles and safe-area profiles isolate mutable platform knowledge. Video 004 references its YouTube variant; Video 002 continues to reference its ContentAsset directly. Both retain exact production choreography.
 
+Platform Delivery Package V1 resolves a variant to its existing production master and generates an ignored, portable operator folder containing exact upload copy, structured metadata, review instructions, source revisions, observed media metadata, and SHA-256 artifact hashes. It validates registry references and media with ffprobe. YouTube currently generates a ready package; the three unapproved platform variants generate truthfully labeled review-only packages.
+
 There is no database, queue, worker fleet, web application, CMS, provider orchestration layer, publishing API, analytics ingestion service, or deployment configuration. Upload and publication are manual human operations.
 
 ## Target boundary
@@ -33,6 +35,8 @@ platform variants (packaging + delivery intent)
     ↓
 production representation
     ↓
+delivery package (artifacts + hashes + operator review)
+    ↓
 human approval
     ↓
 manual or approved publishing adapter
@@ -50,6 +54,7 @@ A knowledge package can support multiple assets, but each asset must have a dist
 - **Content assets:** platform-neutral editorial purpose, story angle, selected hook/claims, traceable script, narrative structure, visual intent, and narration direction.
 - **Production:** exact format, timing, narration/audio files, licensed assets, Remotion compositions, captions, renders, and QA. This is the mature existing subsystem.
 - **Platform adaptation:** implemented per-platform packaging, dated constraint profile, safe-area profile, approval/readiness, and production intent.
+- **Delivery:** implemented local, hashed artifact/copy/manifest/checklist packaging and validation; no external mutation.
 - **Distribution/publication:** future remote identifiers, idempotency keys, and publication attempts. Public release remains a separate human action.
 - **Analytics:** immutable raw observations with platform definitions, plus explicitly derived internal metrics.
 - **Operations:** stage runs, input/output hashes, attempts, provider usage, cost, logs, and resumability.
@@ -70,4 +75,4 @@ Introduce a provider interface only at an actual integration boundary. Current l
 
 ## Completed migration slices
 
-Knowledge Package V1, Content Asset V1, open-ended knowledge taxonomy, and PlatformVariant V1 are implemented. Speed of Light proves one package can back multiple editorial assets and one asset can back multiple platform adaptations; Ocean Depth proves the knowledge/asset model handles qualitative claims, conventional scientific ranges, context-dependent boundaries, approximate measurements, and explicit uncertainty without changing the published production. Videos 001, 003, and 005 intentionally remain on legacy facts. Publication records, publishing adapters, and workflow automation remain intentionally unimplemented.
+Knowledge Package V1, Content Asset V1, open-ended knowledge taxonomy, PlatformVariant V1, and Platform Delivery Package V1 are implemented. Speed of Light proves one package can back multiple editorial assets, one asset can back multiple platform adaptations, and each adaptation can become a validated human handoff without external publishing. Ocean Depth proves the knowledge/asset model handles qualitative claims, conventional scientific ranges, context-dependent boundaries, approximate measurements, and explicit uncertainty without changing the published production. Videos 001, 003, and 005 intentionally remain on legacy facts. Publication records, publishing adapters, and workflow automation remain intentionally unimplemented.

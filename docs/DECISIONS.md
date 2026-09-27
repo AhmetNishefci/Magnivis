@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-27 — Use hashed local delivery packages as the manual publishing handoff
+
+**Decision:** Materialize each PlatformVariant as an ignored, portable folder containing a master copy, applicable captions, exact upload copy, metadata, a review checklist, and a source-linked manifest with SHA-256 hashes. Package state is derived from—but never changes—the PlatformVariant status.
+
+**Reason:** PlatformVariant definitions were architecturally sound but still forced an operator to inspect TypeScript and manually assemble files. A validated delivery folder creates immediate operational value and a stable future publisher input without introducing credentials or remote side effects.
+
+**Alternatives:** Upload directly through APIs (premature and sensitive); keep a written manual checklist only (weak integrity and traceability); symlink one shared video into each package (less portable); rerender per platform (wasteful while all variants reuse the same master).
+
+**Consequences:** YouTube produces a ready package with WebVTT; TikTok, Instagram, and Facebook produce clearly marked draft-review packages without fabricated caption files. The four portable folders duplicate the master on disk by design. Publication state and remote IDs remain outside this model.
+
 ## 2026-09-27 — Discover first and classify second
 
 **Decision:** Magnivis is an open-ended curiosity and understanding brand. Knowledge packages use seven stable high-level analytics pillars plus open normalized domain/topic slugs. Pillars organize reporting and editorial balance; they do not whitelist subjects. Cross-domain work can record multiple domains and use `interdisciplinary` when no single grouping honestly leads.

@@ -98,6 +98,8 @@ pnpm qa ocean-depth              # Video 002 media QA and contact sheet
 pnpm qa billion-dollars          # Video 003 media QA and contact sheet
 pnpm qa speed-of-light           # Video 004 media QA and contact sheet
 pnpm qa human-engineering        # Video 005 media QA and contact sheet
+pnpm delivery speed-of-light     # generate all four Speed of Light operator packages
+pnpm delivery:validate speed-of-light # validate delivery references, files, hashes and media
 pnpm assets                      # regenerate original procedural audio
 pnpm assets:ocean                # regenerate Video 002 soundscape and narration
 pnpm assets:money                # regenerate Video 003 soundscape and narration

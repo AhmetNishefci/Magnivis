@@ -30,6 +30,8 @@ Last updated: 2026-09-27
 - The KnowledgePackage taxonomy now uses seven broad analytics pillars plus open normalized domains/topics. Existing Speed of Light and Ocean Depth packages are migrated, and validation proves philosophy, medicine/anatomy, biology, and movie-plus-physics classification requires no domain enum or source-code authorization.
 - PlatformVariant V1 is implemented for YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels using dated platform profiles, versioned safe-area profiles, claim-safe packaging, approval/readiness invariants, and deterministic registration.
 - One production Speed of Light ContentAsset now backs four meaningful platform adaptations. Video 004 references the production-ready YouTube variant; the other three remain in editorial review and do not publish anything.
+- Platform Delivery Package V1 generates and validates portable manual-upload folders for all four Speed of Light variants. Every folder contains the verified master, exact metadata/copy, a review checklist, source revisions, ffprobe media facts, and SHA-256 hashes; YouTube also contains the reviewed WebVTT.
+- The YouTube delivery is `ready-for-manual-upload`. TikTok, Instagram, and Facebook deliveries remain `draft-review`, are not eligible for public publication, and may only be used for private/draft platform preview until human approval changes their source variants.
 - Videos 001, 003, and 005 intentionally remain on the legacy fact path. PublicationRecord and publishing integrations remain planned and unimplemented.
 
 ## NOW
@@ -37,21 +39,21 @@ Last updated: 2026-09-27
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
 - Revisit Video 003 when its detailed retention curve and unique-viewer reports finish processing; identify the first material drop before drawing scene-level conclusions.
-- Review the completed open-taxonomy and PlatformVariant milestone before authorizing publication infrastructure or another migration.
+- Perform real TikTok, Instagram, and Facebook draft/private previews using the generated Speed of Light delivery packages; record issues without changing variant status prematurely.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
-- Preserve the current manual, human-approved publishing workflow. PlatformVariant describes an adaptation but performs no external action.
+- Preserve the current manual, human-approved publishing workflow. Delivery generation and validation perform no external action.
 
 ## NEXT
 
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
 - Record Video 004's first 24-hour performance snapshot after its reports have processed.
 - Publish Video 005 manually only after the private platform review passes and the spacing decision is confirmed.
-- Choose the next bounded milestone explicitly; do not migrate another legacy video or implement publication/publishing APIs without approval.
+- After real-platform previews, update only the packaging/safe-area/caption details proven necessary and approve variants individually. Do not implement publishing APIs without approval.
 - Add long-form production only after the content-intelligence and asset boundaries are proven.
 
 ## LATER
 
-- Topic discovery assistance, publication manifests/records, 6–12 minute landscape production, alternate narration voices, localization, analytics ingestion, owned-site publishing, approved private-upload adapters, queues/databases, and cloud rendering only when justified by the phased roadmap.
+- Topic discovery assistance, PublicationRecords, 6–12 minute landscape production, alternate narration voices, localization, analytics ingestion, owned-site publishing, approved private-upload adapters, queues/databases, and cloud rendering only when justified by the phased roadmap.
 
 ## NOT PLANNED
 

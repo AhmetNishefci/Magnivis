@@ -2,6 +2,8 @@
 
 PlatformVariant V1 is the implemented adaptation layer between a platform-neutral ContentAsset and a concrete production representation. It answers **how this story should be packaged and reviewed for one distribution surface**. It does not upload, schedule, publish, store credentials, or record remote publication state.
 
+The implemented delivery-package operator workflow materializes these definitions without changing their approval state. See `docs/DELIVERY-PACKAGES.md`.
+
 ```text
 KnowledgePackage → ContentAsset → PlatformVariant → VideoSpec / Remotion
                                                         ↓

@@ -81,6 +81,15 @@ The Speed of Light package supports two platform-neutral ContentAssets, while Oc
 
 The published Speed of Light ContentAsset has four V1 adaptations for YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels. They share verified claims and the existing master while recording meaningful packaging, caption, cover, safe-area, and review differences. No upload or publishing integration is implemented. See `docs/PLATFORM-VARIANTS.md`.
 
+## Generate manual delivery packages
+
+```bash
+pnpm delivery speed-of-light
+pnpm delivery:validate speed-of-light
+```
+
+This creates four ignored, human-reviewable folders under `deliveries/speed-of-light/`, each containing the video, exact upload copy, metadata, hashed manifest, and review checklist. YouTube also receives its reviewed WebVTT file. TikTok, Instagram, and Facebook remain explicitly review-only until real-platform preview and approval. See `docs/DELIVERY-PACKAGES.md`.
+
 Run all non-rendering checks with:
 
 ```bash
