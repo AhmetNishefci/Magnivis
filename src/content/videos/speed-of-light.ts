@@ -1,10 +1,17 @@
 import {videoSpecSchema} from '../schema';
 import {
-  speedOfLightClaimIds,
-  speedOfLightHookIds,
-  speedOfLightKnowledgePackage,
-} from '../../knowledge/packages/speed-of-light';
-import {knowledgePackageRegistry} from '../../knowledge/registry';
+  speedOfLightPublishedScriptSegmentIds,
+  speedOfLightPublishedShortAsset,
+} from '../../content-assets/assets/speed-of-light';
+import {contentAssetRegistry} from '../../content-assets/registry';
+
+const scriptText = (segmentId: string) => {
+  const segment = speedOfLightPublishedShortAsset.script.segments.find(
+    ({id}) => id === segmentId,
+  );
+  if (!segment) throw new Error(`Missing Speed of Light script segment: ${segmentId}`);
+  return segment.text;
+};
 
 export const speedOfLight = videoSpecSchema.parse({
   id: 'speed-of-light',
@@ -38,29 +45,25 @@ export const speedOfLight = videoSpecSchema.parse({
     {id: 'light-year', start: 20, end: 26.6, purpose: 'Define a light-year as distance rather than time.'},
     {id: 'proxima', start: 25.4, end: 33, purpose: 'End by making even light feel slow against interstellar distance.'},
   ],
-  knowledge: {
-    packageId: speedOfLightKnowledgePackage.id,
-    claimIds: Object.values(speedOfLightClaimIds),
-    hookId: speedOfLightHookIds.impossibleLaps,
-  },
+  contentAssetId: speedOfLightPublishedShortAsset.id,
   audio: {
     file: 'audio/speed-of-light.wav',
     layers: ['ambient', 'transition', 'impact', 'narration'],
     narration: true,
     narrationCues: [
-      {id: 'hook', file: 'audio/narration/speed-of-light/hook.wav', start: 0.03, transcript: 'In one second, light could circle Earth seven and a half times.'},
-      {id: 'speed', file: 'audio/narration/speed-of-light/speed.wav', start: 4.15, transcript: 'In a vacuum, it travels nearly 300,000 kilometers every second.'},
-      {id: 'moon', file: 'audio/narration/speed-of-light/moon.wav', start: 9.75, transcript: 'Earth to the Moon takes only about 1.28 seconds.'},
-      {id: 'sun', file: 'audio/narration/speed-of-light/sun.wav', start: 14.75, transcript: 'Sunlight needs about eight minutes and twenty seconds to reach us.'},
-      {id: 'year', file: 'audio/narration/speed-of-light/year.wav', start: 20.5, transcript: 'In one year, light covers 9.46 trillion kilometers.'},
-      {id: 'proxima', file: 'audio/narration/speed-of-light/proxima.wav', start: 26, transcript: 'Yet even at that speed, Proxima Centauri is still 4.25 years away.'},
+      {id: 'hook', file: 'audio/narration/speed-of-light/hook.wav', start: 0.03, transcript: scriptText(speedOfLightPublishedScriptSegmentIds.hook)},
+      {id: 'speed', file: 'audio/narration/speed-of-light/speed.wav', start: 4.15, transcript: scriptText(speedOfLightPublishedScriptSegmentIds.speed)},
+      {id: 'moon', file: 'audio/narration/speed-of-light/moon.wav', start: 9.75, transcript: scriptText(speedOfLightPublishedScriptSegmentIds.moon)},
+      {id: 'sun', file: 'audio/narration/speed-of-light/sun.wav', start: 14.75, transcript: scriptText(speedOfLightPublishedScriptSegmentIds.sun)},
+      {id: 'year', file: 'audio/narration/speed-of-light/year.wav', start: 20.5, transcript: scriptText(speedOfLightPublishedScriptSegmentIds.year)},
+      {id: 'proxima', file: 'audio/narration/speed-of-light/proxima.wav', start: 26, transcript: scriptText(speedOfLightPublishedScriptSegmentIds.proxima)},
     ],
   },
 });
 
-if (!speedOfLight.knowledge) {
-  throw new Error('Speed of Light must reference its production knowledge package');
+if (!speedOfLight.contentAssetId) {
+  throw new Error('Speed of Light must reference its production content asset');
 }
-knowledgePackageRegistry.assertReference(speedOfLight.knowledge);
+contentAssetRegistry.get(speedOfLight.contentAssetId);
 
 export const speedOfLightFrames = speedOfLight.format.fps * speedOfLight.format.durationSeconds;

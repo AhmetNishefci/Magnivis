@@ -4,6 +4,7 @@ import {
   speedOfLightKnowledgePackage,
 } from '../knowledge/packages/speed-of-light';
 import type {QuantitativeClaim} from '../knowledge/schema';
+import {speedOfLightPublishedShortAsset} from '../content-assets/assets/speed-of-light';
 
 export const lightSources = sourceSchema.array().parse(
   speedOfLightKnowledgePackage.sources.map((source) => ({
@@ -15,8 +16,10 @@ export const lightSources = sourceSchema.array().parse(
   })),
 );
 
+const selectedClaimIds = new Set(speedOfLightPublishedShortAsset.selectedClaimIds);
 const quantitativeClaims = speedOfLightKnowledgePackage.claims.filter(
-  (claim): claim is QuantitativeClaim => claim.type === 'quantitative',
+  (claim): claim is QuantitativeClaim =>
+    claim.type === 'quantitative' && selectedClaimIds.has(claim.id),
 );
 
 export const lightFacts = factSchema.array().parse(

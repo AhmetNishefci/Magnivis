@@ -5,7 +5,9 @@ This is the implemented production subsystem. The higher-level knowledge-package
 ## Architecture
 
 ```text
-verified data + video specification
+KnowledgePackage → ContentAsset
+               ↓
+        video specification
                ↓
       composition choreography
                ↓
@@ -18,7 +20,8 @@ verified data + video specification
 
 - `src/data/`: verified scientific records and source metadata.
 - `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Video 004.
-- `src/content/videos/`: production metadata, timing, copy, and references to legacy facts or a knowledge package.
+- `src/content-assets/`: platform-neutral editorial assets, script traceability, narrative intent, and visual plans.
+- `src/content/videos/`: production metadata, timing, files, and references to legacy facts or a content asset.
 - `src/components/`: reusable visual primitives with no video-specific claims.
 - `src/compositions/`: video-specific choreography that consumes structured content.
 - `src/design/`: typography, color, safe-area, and motion tokens.
@@ -26,7 +29,7 @@ verified data + video specification
 
 This is deliberately a typed code specification rather than YAML/JSON. V1 needs derived values, validation, and refactorability more than non-developer editing. The content boundary remains explicit and could later gain another authoring format.
 
-Video specifications are the current concrete content assets. A migrated video references a knowledge package and selected claim/hook IDs; an unmigrated video continues to use legacy `factIds`. The schema rejects using both. Video 004's legacy numeric render inputs are projected from its package so the composition remains unchanged.
+Video specifications are production representations, not reusable research or editorial assets. A migrated video references a ContentAsset ID; an unmigrated video continues to use legacy `factIds`. The schema rejects using both. Video 004 derives narration text from its published ContentAsset, while exact cue timing, audio files, scenes, format, captions, and choreography remain in VideoSpec/Remotion. Its legacy numeric render inputs are projected from asset-selected package claims so the composition remains unchanged.
 
 ## Video 001
 

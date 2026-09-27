@@ -13,7 +13,8 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 
 - Knowledge Package V1, the eight pillars, timeliness, hook archetypes, claim verification states, and a deterministic registry are implemented.
 - Video 004 is migrated without changing its rendered output.
-- Next, migrate one additional researched topic to prove repeatability before adding broader abstractions.
+- Content Asset V1 is implemented; one Speed of Light package now backs two distinct editorial assets, and Video 004 references its production-ready asset.
+- Next work requires explicit approval: either migrate one additional researched package or introduce a minimal PlatformVariant boundary.
 - Topic-score rationale and human research/story review workflows remain unimplemented.
 - Add human review checks for sources, claims, hooks, script, and visual plan.
 - Keep discovery/research manual or AI-assisted; do not require paid providers.

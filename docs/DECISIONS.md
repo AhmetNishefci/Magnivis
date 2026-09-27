@@ -1,6 +1,18 @@
 # Significant decisions
 
+## 2026-09-27 — Separate editorial assets from production specifications
+
+**Decision:** ContentAsset V1 is a platform-neutral editorial object between KnowledgePackage and VideoSpec. It owns purpose, angle, selected package hook/claims, claim-linked script segments, narrative beats, visual intent, narration direction, and readiness. VideoSpec owns exact format, frames, timing, files, captions, audio cues, and Remotion choreography. Future PlatformVariant and PublicationRecord remain separate and unimplemented.
+
+**Reason:** One researched topic must support multiple legitimate stories without copying research or turning production choreography into the editorial model. Script segment claim references provide useful fact-checking traceability without annotating connective language.
+
+**Alternatives:** Keep VideoSpec as both editorial and production data (prevents clean reuse); put frames and coordinates in ContentAsset (couples editorial intent to Remotion); introduce platform variants now (outside the current proof and premature).
+
+**Consequences:** Video 004 references a production-ready ContentAsset and derives narration text from it. A second draft asset proves one-to-many reuse without a render. Existing legacy VideoSpecs remain unchanged. Some production/platform/publication-shaped fields remain in the legacy VideoSpec until a later bounded migration.
+
 ## 2026-09-27 — Preserve production through a knowledge compatibility projection
+
+**Status:** The direct VideoSpec-to-KnowledgePackage reference described here was superseded by the Content Asset V1 decision above. The compatibility projection and all render-safety reasoning remain active.
 
 **Decision:** Knowledge Package V1 uses global `source.*` IDs, package-namespaced claim/hook IDs, and claim-level evidence. Video 004 references its package directly, while `src/data/light.ts` projects quantitative package claims into the legacy fact shape consumed by its unchanged Remotion composition. `VideoSpec` permits either legacy facts or one package reference, never both.
 

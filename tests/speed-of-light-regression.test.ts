@@ -4,9 +4,9 @@ import {describe, expect, it} from 'vitest';
 import {speedOfLight, speedOfLightFrames} from '../src/content/videos/speed-of-light';
 import {lightScale} from '../src/data/light';
 import {
-  speedOfLightClaimIds,
-  speedOfLightHookIds,
-} from '../src/knowledge/packages/speed-of-light';
+  speedOfLightContentAssetIds,
+  speedOfLightPublishedShortAsset,
+} from '../src/content-assets/assets/speed-of-light';
 
 const sha256 = (file: string) => createHash('sha256')
   .update(readFileSync(file))
@@ -78,13 +78,10 @@ describe('published Speed of Light production regression', () => {
     });
   });
 
-  it('links the video to the package without retaining duplicate legacy fact IDs', () => {
+  it('links the video to its content asset without retaining legacy fact IDs', () => {
     expect(speedOfLight.factIds).toEqual([]);
-    expect(speedOfLight.knowledge).toEqual({
-      packageId: 'speed-of-light',
-      claimIds: Object.values(speedOfLightClaimIds),
-      hookId: speedOfLightHookIds.impossibleLaps,
-    });
+    expect(speedOfLight.contentAssetId).toBe(speedOfLightContentAssetIds.publishedShort);
+    expect(speedOfLightPublishedShortAsset.knowledgePackageId).toBe('speed-of-light');
   });
 
   it('preserves the reviewed caption and soundscape source artifacts', () => {

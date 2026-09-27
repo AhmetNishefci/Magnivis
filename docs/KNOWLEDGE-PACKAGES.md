@@ -44,16 +44,18 @@ An approved package may include `uncertain` or `conflicting` claims only when th
 - Every claim evidence reference must resolve to a source in its package.
 - Every caveat, hook, narrative opportunity, and visual opportunity claim reference must resolve within the package.
 
-## Relationship to video production
+## Relationship to content assets and video production
 
-`VideoSpec` is the current concrete content-asset model. A video uses exactly one of:
+KnowledgePackage is the reusable research source. ContentAsset selects one editorial angle, package hook, and subset of claims, then adds a traceable script, narrative structure, visual intent, and narration direction. See `docs/CONTENT-ASSETS.md`.
+
+`VideoSpec` is the concrete production representation. A video uses exactly one of:
 
 - legacy `factIds`, for productions not yet migrated; or
-- `knowledge`, containing a package ID, selected claim IDs, and selected hook ID.
+- `contentAssetId`, for a migrated production.
 
-Video 004, `speed-of-light`, is the first migrated asset. Its package is the source of truth for sources and claims. `src/data/light.ts` is a temporary compatibility projection that converts package quantitative claims into the legacy fact shape consumed by the unchanged composition. It contains no duplicated factual values.
+Video 004, `speed-of-light`, references `speed-of-light.asset.earth-to-proxima`. Its package remains the source of truth for sources and claims. `src/data/light.ts` is a temporary compatibility projection that converts the asset-selected package claims into the legacy fact shape consumed by the unchanged composition. It contains no duplicated factual values.
 
-The script, scene timing, narration, captions, sound, publication record, composition choreography, and platform behavior remain production concerns in `VideoSpec` and the Remotion composition.
+The editorial script belongs to ContentAsset. Exact scene timing, narration files and cue starts, captions, sound, and composition choreography remain production concerns in `VideoSpec` and Remotion. Platform adaptation and publication are future separate boundaries; legacy VideoSpec fields remain until a bounded migration is approved.
 
 ## Adding the next package
 
@@ -62,14 +64,14 @@ The script, scene timing, narration, captions, sound, publication record, compos
 3. Add claim evidence and caveats, then assign verification states according to this document.
 4. Add genuinely different hook archetypes and claim-linked narrative/visual opportunities.
 5. Register the package in `src/knowledge/registry.ts`.
-6. Link the downstream video through `VideoSpec.knowledge`; remove duplicated legacy fact IDs for that video.
-7. If the existing composition still requires the legacy fact shape, derive it in a narrow compatibility projection.
-8. Add schema, registry, reference, and production-regression tests.
-9. Update `docs/PROJECT-STATE.md` and relevant research notes.
+6. Create and register a ContentAsset that selects the package hook and claims.
+7. Link the downstream video through `VideoSpec.contentAssetId`; remove duplicated legacy fact IDs for that video.
+8. If the existing composition still requires the legacy fact shape, derive it in a narrow compatibility projection.
+9. Add schema, registry, reference, and production-regression tests.
+10. Update `docs/PROJECT-STATE.md` and relevant research notes.
 
 ## Intentionally unimplemented
 
-- A generic `ContentAsset` schema beyond the current `VideoSpec`
 - Editorial transition commands or workflow automation
 - Topic scoring and discovery automation
 - Platform variants and publishing records

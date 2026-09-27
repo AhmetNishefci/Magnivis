@@ -27,12 +27,6 @@ export const sceneSchema = z.object({
   purpose: z.string().min(1),
 }).refine((scene) => scene.end > scene.start, 'Scene end must follow its start');
 
-export const knowledgeReferenceSchema = z.object({
-  packageId: stableKnowledgeIdSchema,
-  claimIds: z.array(stableKnowledgeIdSchema).min(1),
-  hookId: stableKnowledgeIdSchema,
-}).strict();
-
 export const videoSpecSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   compositionId: z.string().min(1),
@@ -71,7 +65,7 @@ export const videoSpecSchema = z.object({
   }),
   scenes: z.array(sceneSchema).min(1),
   factIds: z.array(z.string().min(1)).default([]),
-  knowledge: knowledgeReferenceSchema.optional(),
+  contentAssetId: stableKnowledgeIdSchema.optional(),
   audio: z.object({
     file: z.string().min(1),
     layers: z.array(z.enum(['music', 'ambient', 'transition', 'impact', 'narration', 'silence'])),
@@ -85,12 +79,12 @@ export const videoSpecSchema = z.object({
   }),
 }).superRefine((video, context) => {
   const usesLegacyFacts = video.factIds.length > 0;
-  const usesKnowledgePackage = Boolean(video.knowledge);
-  if (usesLegacyFacts === usesKnowledgePackage) {
+  const usesContentAsset = Boolean(video.contentAssetId);
+  if (usesLegacyFacts === usesContentAsset) {
     context.addIssue({
       code: 'custom',
-      path: ['knowledge'],
-      message: 'A video must use either legacy factIds or one knowledge-package reference',
+      path: ['contentAssetId'],
+      message: 'A video must use either legacy factIds or one content-asset reference',
     });
   }
 });

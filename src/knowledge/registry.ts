@@ -75,6 +75,8 @@ export const createKnowledgePackageRegistry = (
   });
 };
 
+export type KnowledgePackageRegistry = ReturnType<typeof createKnowledgePackageRegistry>;
+
 export const knowledgePackageRegistry = createKnowledgePackageRegistry([
   speedOfLightKnowledgePackage,
 ]);
