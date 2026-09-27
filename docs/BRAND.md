@@ -3,12 +3,14 @@
 ## Identity
 
 - Name: Magnivis
-- Handle: `@Magnivis`
+- General brand shorthand used historically: `@Magnivis`
 - Tagline: **See the unimaginable.**
 - Promise: every piece of content should leave the viewer knowing something fascinating they did not know before.
 - Editorial reaction: **“Wait… really?”** followed by **“Now I understand why.”**
 
 Magnivis is global, English-first, faceless, intelligent, and accessible without becoming childish. It began with visual scale and science, but it is an open-ended knowledge and understanding brand rather than a fixed set of niches. The unifier is curiosity resolved through clear explanation—not a single subject category. Topic discovery comes first; classification exists only to organize and learn from the portfolio.
+
+Handles are platform-specific operational identities, not one global brand field. The confirmed Instagram identity is `@magnivis.media` with the bio “Understand something fascinating every day. 🌍🧠✨”. Other handles must not be inferred from the historical shorthand; `src/operations/platform-accounts.ts` is the canonical nonsecret account record.
 
 ## Visual language
 

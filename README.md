@@ -6,6 +6,8 @@ Magnivis is a faceless English-language knowledge-media brand that turns fascina
 
 Magnivis is open-ended: it discovers compelling knowledge opportunities first and classifies them second. High-level pillars are portfolio groupings, not a whitelist of permissible subjects. See `docs/STRATEGY.md`.
 
+Content Intelligence V1 provides a provider-neutral, schema-validated path from a manual TopicCandidate through evaluation and an unverified research workspace to claim-safe hook and ContentAsset drafts. It has no live AI provider and requires no credentials; deterministic fixture providers exercise the workflow in tests. See `docs/CONTENT-INTELLIGENCE.md`.
+
 ## Requirements
 
 - Node.js 20 LTS (`.nvmrc`)
@@ -89,6 +91,10 @@ pnpm delivery:validate speed-of-light
 ```
 
 This creates four ignored, human-reviewable delivery folders, each containing the selected production video, exact upload copy, metadata, hashed manifest, and review checklist. YouTube also receives its reviewed WebVTT file. YouTube and TikTok are ready for separately authorized manual upload; Instagram and Facebook remain explicitly review-only until real-platform preview and approval. Delivery readiness never authorizes public publication. See `docs/DELIVERY-PACKAGES.md`.
+
+## Operational records
+
+Nonsecret platform identity, generalized publication provenance, disclosure/settings snapshots, and raw MetricSnapshot schemas live under `src/operations/`. The confirmed Instagram identity is `@magnivis.media`; no credentials are stored. One modern record represents the existing Speed of Light YouTube publication, while historical publications remain on the legacy VideoSpec path. See `docs/OPERATIONS.md`.
 
 Run all non-rendering checks with:
 

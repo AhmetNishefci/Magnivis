@@ -94,5 +94,5 @@ For the current Speed of Light set, YouTube is ready because that exact master a
 - automatically rendering platform-specific transformations (a declared, already-rendered alternate VideoSpec can be packaged);
 - automated cover or thumbnail generation;
 - OAuth, accounts, uploads, scheduling, or publication;
-- PublicationRecord, remote IDs, or publication attempts;
+- automatic PublicationRecord creation, remote-ID capture, or publication attempts;
 - databases, queues, workers, dashboards, or analytics.

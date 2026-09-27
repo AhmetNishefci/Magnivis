@@ -13,6 +13,8 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - Preserve the cinematic, minimal, scientifically credible brand in `docs/BRAND.md` and `docs/CONTENT-BIBLE.md`.
 - Magnivis is an open-ended curiosity and understanding brand. **Discover first, classify second.** High-level pillars organize the portfolio; they are never a whitelist. Domains and topics are open normalized terms, and legitimate new subjects do not require source-code authorization.
 - Treat a verified knowledge package—not a finished video—as the durable editorial unit. Platform assets should reference that package and adapt it without silently changing its claims.
+- AI-assisted research output is a proposal, never evidence of its own correctness. Model-proposed sources begin unreviewed, model-proposed claims begin unverified, and model-generated editorial assets remain drafts until a human approves them.
+- Keep AI providers behind the repository interface in `src/ai/`; validate structured output and preserve workflow/model/usage provenance. Do not scatter vendor SDK calls through domain code or make normal validation depend on credentials.
 - Keep video content/data separate from reusable rendering primitives. Avoid one-off monoliths and premature generic frameworks.
 - Verify material claims against appropriate authoritative sources. Preserve claim-level evidence, status, caveats, URLs, and retrieval dates. Never fabricate citations or imply uncertain evidence is settled.
 - Use only original, public-domain, CC0, or appropriately licensed assets. Update `docs/ASSET-LICENSES.md` for every production asset.
@@ -30,6 +32,8 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 
 - Current status: `docs/PROJECT-STATE.md`
 - System boundaries and target architecture: `docs/ARCHITECTURE.md`
+- AI-assisted topic, research, hook, and asset drafting: `docs/CONTENT-INTELLIGENCE.md`
+- Nonsecret accounts, publications, settings, and raw metrics: `docs/OPERATIONS.md`
 - Knowledge package model and verification semantics: `docs/KNOWLEDGE-PACKAGES.md`
 - Content asset model and editorial/production boundary: `docs/CONTENT-ASSETS.md`
 - Platform adaptation, constraint profiles, and safe areas: `docs/PLATFORM-VARIANTS.md`

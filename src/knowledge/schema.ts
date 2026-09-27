@@ -19,22 +19,24 @@ export const verificationStatusSchema = z.enum([
   'verified',
 ]);
 
+export const sourceTypeSchema = z.enum([
+  'government',
+  'scientific-organization',
+  'peer-reviewed',
+  'primary-source',
+  'university',
+  'museum',
+  'technical-documentation',
+  'reference',
+]);
+
 export const sourceRecordSchema = z.object({
   id: stableKnowledgeIdSchema.refine((id) => id.startsWith('source.'), {
     message: 'Source IDs must use the global source.* namespace',
   }),
   organization: z.string().min(1),
   title: z.string().min(1),
-  sourceType: z.enum([
-    'government',
-    'scientific-organization',
-    'peer-reviewed',
-    'primary-source',
-    'university',
-    'museum',
-    'technical-documentation',
-    'reference',
-  ]),
+  sourceType: sourceTypeSchema,
   url: z.url(),
   retrieved: z.iso.date(),
   published: z.iso.date().optional(),

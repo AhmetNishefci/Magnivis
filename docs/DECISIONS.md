@@ -1,5 +1,25 @@
 # Significant decisions
 
+## 2026-09-27 — Keep AI assistance structurally below human verification and approval
+
+**Decision:** Introduce one provider-neutral structured-generation boundary with versioned prompt workflows. Model-proposed sources begin unreviewed, model-proposed claims begin unverified, hook proposals may use only verified claims, and generated ContentAssets remain unapproved drafts. KnowledgePackage promotion and editorial approval stay human actions.
+
+**Reason:** Content Intelligence needs real automation leverage without allowing plausible model prose to become evidence or silently enter production. Existing claim and asset schemas already provide the right trust boundaries.
+
+**Alternatives:** Integrate one vendor directly throughout domain code (coupled and difficult to test); let a model emit approved packages/assets (unsafe); document future AI use without an executable boundary (no operational learning).
+
+**Consequences:** Tests use deterministic fixture providers and require no network or credentials. A live provider can be added later at one interface, with validated output and provider/model/workflow/usage/cost provenance. Source retrieval, claim verification, and approvals remain manual.
+
+## 2026-09-27 — Record operational truth without adding publishing automation
+
+**Decision:** Store nonsecret PlatformAccounts, generalized manual PublicationRecords, settings/disclosures, and raw MetricSnapshot schemas in typed Git-visible files. Record the confirmed Instagram identity and the existing Speed of Light YouTube publication; leave unknown settings explicit and do not invent historical metric timestamps.
+
+**Reason:** Platform identity and exact artifact/publication linkage are durable facts needed by future sessions and analytics, but they do not require OAuth, a database, or an uploader.
+
+**Alternatives:** Keep operational truth in chats (lost between sessions); build publishing APIs now (premature and sensitive); migrate every historical record with incomplete provenance (false precision).
+
+**Consequences:** Current operations remain manual. Videos 001–003 retain legacy publication fields, production MetricSnapshots remain empty, and future records can be added incrementally with exact evidence.
+
 ## 2026-09-27 — Give a failed TikTok safe-area review its own production render
 
 **Decision:** Retain the byte-identical reviewed YouTube master and introduce TikTok variant revision 2 with a dedicated VideoSpec/composition using `safe-area.tiktok-feed.v2`. The complete top information region moves from 150 px to 240 px; all editorial, timing, audio, visualization, and lower-label geometry stays unchanged.
@@ -32,7 +52,7 @@
 
 ## 2026-09-27 — Separate platform adaptation from assets and publication
 
-**Decision:** PlatformVariant V1 sits between ContentAsset and a production representation. It owns destination packaging, a dated platform-constraint reference, safe-area reference, caption/cover behavior, production intent, readiness, and approval. ContentAsset stays platform-neutral; future PublicationRecord owns actual external state.
+**Decision:** PlatformVariant V1 sits between ContentAsset and a production representation. It owns destination packaging, a dated platform-constraint reference, safe-area reference, caption/cover behavior, production intent, readiness, and approval. ContentAsset stays platform-neutral; PublicationRecord owns actual external state. At this decision point publication records were still planned; a file-backed manual foundation was added later on 2026-09-27.
 
 **Reason:** One editorial story needs distinct packaging and review for different distribution surfaces without duplicating research, scripts, or renders. Platform rules change, so constraints must be dated and source-linked rather than embedded as timeless editorial facts.
 
@@ -52,7 +72,7 @@
 
 ## 2026-09-27 — Separate editorial assets from production specifications
 
-**Decision:** ContentAsset V1 is a platform-neutral editorial object between KnowledgePackage and downstream adaptation/production. It owns purpose, angle, selected package hook/claims, claim-linked script segments, narrative beats, visual intent, narration direction, and readiness. VideoSpec owns exact format, frames, timing, files, captions, audio cues, and Remotion choreography. PlatformVariant and PublicationRecord remain separate boundaries; PlatformVariant was subsequently implemented while PublicationRecord remains planned.
+**Decision:** ContentAsset V1 is a platform-neutral editorial object between KnowledgePackage and downstream adaptation/production. It owns purpose, angle, selected package hook/claims, claim-linked script segments, narrative beats, visual intent, narration direction, and readiness. VideoSpec owns exact format, frames, timing, files, captions, audio cues, and Remotion choreography. PlatformVariant and PublicationRecord remain separate boundaries. PlatformVariant was implemented next; a file-backed manual PublicationRecord foundation was subsequently implemented on 2026-09-27 without adding publishing automation.
 
 **Reason:** One researched topic must support multiple legitimate stories without copying research or turning production choreography into the editorial model. Script segment claim references provide useful fact-checking traceability without annotating connective language.
 

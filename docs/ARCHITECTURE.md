@@ -14,7 +14,11 @@ The knowledge taxonomy is open-ended: packages have one broad analytics pillar p
 
 Platform Delivery Package V1 resolves a variant's explicit VideoSpec production reference and generates an ignored, portable operator folder containing exact upload copy, structured metadata, review instructions, source revisions, observed media metadata, and SHA-256 artifact hashes. It validates registry references and media with ffprobe. Reused masters and already-rendered dedicated variants use the same integrity path; delivery does not trigger rendering. YouTube and the real-device-approved TikTok revision 2 generate ready-for-manual-upload packages; Instagram and Facebook generate truthfully labeled review-only packages. Ready delivery is not publication authorization.
 
-There is no database, queue, worker fleet, web application, CMS, provider orchestration layer, publishing API, analytics ingestion service, or deployment configuration. Upload and publication are manual human operations.
+Content Intelligence V1 adds a manual TopicCandidate registry, categorical evaluation, an explicitly unverified research workspace, verified-claim-only hook proposals, and safe ContentAsset drafting. AI calls use one provider-neutral structured-generation interface and versioned prompt definitions. No live provider is installed; fixture providers make the complete boundary testable without credentials or network calls.
+
+The first operational-truth slice records nonsecret platform accounts, one generalized Speed of Light YouTube PublicationRecord, platform settings/disclosures, and a raw MetricSnapshot schema. It remains local and file-backed. No production metric snapshots have been fabricated or migrated.
+
+There is no database, queue, worker fleet, web application, CMS, live AI provider, publishing API, analytics ingestion service, or deployment configuration. Upload, publication, source verification, and final editorial approval are manual human operations.
 
 ## Target boundary
 
@@ -48,15 +52,15 @@ A knowledge package can support multiple assets, but each asset must have a dist
 
 ## Planned domain boundaries
 
-- **Editorial intelligence:** broad topic opportunities, evaluation rationale, timeliness, open taxonomy, hook variants, and story angles. Discovery precedes classification.
-- **Research:** sources, claims, evidence notes, uncertainty, and review status.
+- **Editorial intelligence:** manual candidates, evaluation rationale, prompt workflows, hook proposals, and draft assets are implemented; external discovery inputs and live providers remain planned.
+- **Research:** an unverified AI-assisted workspace is implemented; source retrieval, comparison, claim review, and package promotion remain human work.
 - **Knowledge packages:** approved topic understanding, verified claims, narrative/visual opportunities, and related questions.
 - **Content assets:** platform-neutral editorial purpose, story angle, selected hook/claims, traceable script, narrative structure, visual intent, and narration direction.
 - **Production:** exact format, timing, narration/audio files, licensed assets, Remotion compositions, captions, renders, and QA. This is the mature existing subsystem.
 - **Platform adaptation:** implemented per-platform packaging, dated constraint profile, safe-area profile, approval/readiness, and production intent.
 - **Delivery:** implemented local, hashed artifact/copy/manifest/checklist packaging and validation; no external mutation.
-- **Distribution/publication:** future remote identifiers, idempotency keys, and publication attempts. Public release remains a separate human action.
-- **Analytics:** immutable raw observations with platform definitions, plus explicitly derived internal metrics.
+- **Distribution/publication:** a file-backed record exists for manually completed publication; upload attempts, idempotency keys, and API mutations remain future work. Public release remains a separate human action.
+- **Analytics:** the raw MetricSnapshot schema/registry is implemented; production snapshots, imports, and derived analysis remain future work.
 - **Operations:** stage runs, input/output hashes, attempts, provider usage, cost, logs, and resumability.
 
 ## Storage progression
@@ -71,7 +75,7 @@ When job execution is justified, use stable run IDs, input hashes, explicit stat
 
 ## Provider policy
 
-Introduce a provider interface only at an actual integration boundary. Current local Kokoro narration may become the first small TTS adapter, but research, LLM, image, video, transcription, and publishing abstractions should wait until a second provider or operational need exists. Persist provider/model/version, usage, estimated cost, and license/provenance with generated outputs.
+One LLM-shaped interface now exists because Content Intelligence V1 is an actual integration boundary. It validates structured output and records provider/model/workflow/usage/cost provenance without selecting a vendor. Current local Kokoro narration remains separate. Image, video, transcription, and publishing abstractions should still wait for operational need.
 
 ## Completed migration slices
 

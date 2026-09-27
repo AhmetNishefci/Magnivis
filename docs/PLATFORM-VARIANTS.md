@@ -7,7 +7,9 @@ The implemented delivery-package operator workflow materializes these definition
 ```text
 KnowledgePackage → ContentAsset → PlatformVariant → VideoSpec / Remotion
                                                         ↓
-                                         future PublicationRecord
+                                manual delivery / human publication
+                                                        ↓
+                                             PublicationRecord
 ```
 
 ## Implemented schema
@@ -34,7 +36,7 @@ The registry validates ContentAsset references, permits packaging claims only fr
 - **ContentAsset** owns the particular story angle, selected hook/claims, traceable script, narrative beats, visual intent, and narration direction.
 - **PlatformVariant** owns destination-specific packaging, constraints, safe-area selection, caption behavior, cover intent, and adaptation/readiness notes.
 - **VideoSpec / Remotion** owns exact frames, coordinates, cue timing, audio files, animation, and render choreography.
-- A future **PublicationRecord** will own upload/publication state, remote identifiers, attempts, and idempotency. No such record or publishing integration exists today.
+- **PublicationRecord** owns the durable result of a manually completed external publication: account, exact source revisions and hash, settings/disclosures, remote identity, and approval. Upload attempts and idempotency belong to a future publishing integration; none exists today.
 
 A variant may emphasize or omit parts of its asset in packaging, but it may reference only claims already selected by the ContentAsset. It cannot introduce new research or silently change a verified claim.
 
@@ -78,7 +80,7 @@ YouTube, Instagram, and Facebook still reuse the original master. TikTok alone u
 ## Intentionally unimplemented
 
 - uploads, OAuth, scheduling, publication, or account automation;
-- PublicationRecord and remote platform identifiers;
+- automated PublicationRecord creation, publication attempts, and idempotency;
 - platform API clients or capability discovery;
 - automated platform-specific transformation or render orchestration (the operator still renders a declared alternate VideoSpec explicitly);
 - databases, queues, workers, services, dashboards, analytics, or monetization/location tooling.

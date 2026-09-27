@@ -33,9 +33,12 @@ Last updated: 2026-09-27
 - Platform Delivery Package V1 generates and validates portable manual-upload folders for all four Speed of Light variants. Every folder contains the verified master, exact metadata/copy, a review checklist, source revisions, ffprobe media facts, and SHA-256 hashes; YouTube also contains the reviewed WebVTT.
 - The YouTube and canonical TikTok revision 2 deliveries are `ready-for-manual-upload`; Instagram and Facebook remain `draft-review`. Ready means the artifacts passed their defined gates, not that public publication has been authorized.
 - TikTok private iPhone preview pass 1 failed because native top navigation crowded the top-left information block. Revision 2 moves all top information blocks down 90 px with `safe-area.tiktok-feed.v2`. It passed private Only Me visual/editorial QA on an iPhone 17 Pro Max on 2026-09-27, including UI clearance, cover crop, audio, animation, and confirmation that the completed counter reaches 7.5×. The revision 1 delivery is superseded.
-- Videos 001, 003, and 005 intentionally remain on the legacy fact path. PublicationRecord and publishing integrations remain planned and unimplemented.
+- Videos 001, 003, and 005 intentionally remain on the legacy fact path. Publishing integrations remain planned and unimplemented.
+- Content Intelligence V1 is implemented with a manual TopicCandidate registry, rationale-based evaluation, an unverified research workspace, versioned prompt workflows, provider-neutral structured generation, verified-claim-only hook proposals, and safe draft ContentAsset generation. No live AI provider is configured, and models cannot verify or approve their own output.
+- Nonsecret operations V1 records the confirmed Instagram identity `@magnivis.media` and its bio without storing credentials. It also adds generalized PlatformAccount, PublicationRecord, platform-settings/disclosure, and raw MetricSnapshot schemas.
+- Video 004 has the first generalized PublicationRecord, linked to the exact YouTube variant/asset/package revisions and uploaded video hash. Settings without durable evidence remain `unknown`. No production MetricSnapshot has been fabricated.
 
-## NOW
+## NOW — operational/editorial work
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
@@ -43,18 +46,21 @@ Last updated: 2026-09-27
 - Keep the approved TikTok revision 2 package unchanged until explicit publication approval. Perform first Instagram and Facebook draft/private previews separately.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
 - Preserve the current manual, human-approved publishing workflow. Delivery generation and validation perform no external action.
+- Choose and configure the first live structured-generation provider only after reviewing its data handling, model, cost, and credentials. Use a new manually approved TopicCandidate for the first provider-assisted research experiment.
 
-## NEXT
+## NEXT — engineering
 
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
 - Record Video 004's first 24-hour performance snapshot after its reports have processed.
 - Publish Video 005 manually only after the private platform review passes and the spacing decision is confirmed.
 - After real-platform previews, update only the packaging/safe-area/caption details proven necessary and approve variants individually. Do not implement publishing APIs without approval.
 - Add long-form production only after the content-intelligence and asset boundaries are proven.
+- Add a local operator command that persists Content Intelligence workflow envelopes only after the first provider and review procedure are selected.
+- Add manual MetricSnapshots for modern PublicationRecords with exact native definitions and capture windows; do not backfill ambiguous historical timestamps.
 
 ## LATER
 
-- Topic discovery assistance, PublicationRecords, 6–12 minute landscape production, alternate narration voices, localization, analytics ingestion, owned-site publishing, approved private-upload adapters, queues/databases, and cloud rendering only when justified by the phased roadmap.
+- Automated discovery providers, additional PublicationRecord migrations, 6–12 minute landscape production, alternate narration voices, localization, analytics ingestion, owned-site publishing, approved private-upload adapters, queues/databases, and cloud rendering only when justified by the phased roadmap.
 
 ## NOT PLANNED
 

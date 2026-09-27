@@ -17,11 +17,11 @@ PlatformVariant
 VideoSpec + Remotion
   exact format, frames, timing, coordinates, audio files and choreography
         ↓
-future PublicationRecord
-  upload/publication state and remote identifiers
+PublicationRecord (after a human publishes)
+  exact artifact, account, settings, remote identity and publication state
 ```
 
-PlatformVariant V1 is implemented for the production Speed of Light asset. PublicationRecord remains a boundary only and is not implemented. See `docs/PLATFORM-VARIANTS.md`.
+PlatformVariant V1 is implemented for the production Speed of Light asset. The file-backed PublicationRecord boundary is also implemented for manually completed publication, but no uploader or publishing API exists. See `docs/PLATFORM-VARIANTS.md` and `docs/OPERATIONS.md`.
 
 ## Implemented schema
 
@@ -92,9 +92,9 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 ## Intentionally unimplemented
 
 - Article and newsletter asset types
-- PublicationRecord and publishing APIs
+- automatic PublicationRecord creation and publishing APIs
 - Editorial transition commands or workflow automation
 - Asset sourcing/generation automation
-- Databases, queues, workers, services, CMS, dashboards, analytics, or provider abstractions
+- Databases, queues, workers, services, CMS, dashboards, or analytics ingestion
 
 These are planned boundaries, not implemented features.
