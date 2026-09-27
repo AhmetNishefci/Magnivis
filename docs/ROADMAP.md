@@ -14,7 +14,8 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 - Knowledge Package V1, the eight pillars, timeliness, hook archetypes, claim verification states, and a deterministic registry are implemented.
 - Video 004 is migrated without changing its rendered output.
 - Content Asset V1 is implemented; one Speed of Light package now backs two distinct editorial assets, and Video 004 references its production-ready asset.
-- Next work requires explicit approval: either migrate one additional researched package or introduce a minimal PlatformVariant boundary.
+- Ocean Depth generalization is complete; Video 002 validates ranges, approximate boundaries, mixed claim types, explicit uncertainty, and script traceability without changing production output.
+- Videos 001, 003, and 005 remain intentionally unmigrated. Next work requires explicit approval; PlatformVariant is still only planned.
 - Topic-score rationale and human research/story review workflows remain unimplemented.
 - Add human review checks for sources, claims, hooks, script, and visual plan.
 - Keep discovery/research manual or AI-assisted; do not require paid providers.

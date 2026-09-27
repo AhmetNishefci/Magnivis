@@ -5,6 +5,10 @@ import {
   speedOfLightKnowledgePackage,
 } from '../src/knowledge/packages/speed-of-light';
 import {
+  oceanDepthClaimIds,
+  oceanDepthKnowledgePackage,
+} from '../src/knowledge/packages/ocean-depth';
+import {
   createKnowledgePackageRegistry,
   knowledgePackageRegistry,
 } from '../src/knowledge/registry';
@@ -99,6 +103,50 @@ describe('Knowledge Package V1 schema', () => {
     expect(claimSchema.safeParse(quantitative).success).toBe(false);
   });
 
+  it('accepts bounded ranges without pretending they are scalar values', () => {
+    const claim = oceanDepthKnowledgePackage.claims.find(
+      ({id}) => id === oceanDepthClaimIds.lightZoneRange,
+    );
+    expect(claimSchema.safeParse(claim).success).toBe(true);
+    if (claim?.type !== 'quantitative' || claim.quantity.kind !== 'range') {
+      throw new Error('Expected the light-zone range claim');
+    }
+    expect(claim.quantity).toEqual({
+      kind: 'range',
+      minimum: 200,
+      maximum: 1000,
+      unit: 'm',
+      precision: 'approximate',
+    });
+  });
+
+  it('rejects reversed or empty quantitative ranges', () => {
+    const claim = structuredClone(oceanDepthKnowledgePackage.claims.find(
+      ({id}) => id === oceanDepthClaimIds.lightZoneRange,
+    )!);
+    if (claim.type !== 'quantitative' || claim.quantity.kind !== 'range') {
+      throw new Error('Expected the light-zone range claim');
+    }
+    claim.quantity.maximum = claim.quantity.minimum;
+    expect(claimSchema.safeParse(claim).success).toBe(false);
+  });
+
+  it('accepts positive scalar measurement uncertainty and rejects invalid uncertainty', () => {
+    const claim = structuredClone(oceanDepthKnowledgePackage.claims.find(
+      ({id}) => id === oceanDepthClaimIds.challengerDepth,
+    )!);
+    expect(claimSchema.safeParse(claim).success).toBe(true);
+    if (claim.type !== 'quantitative' || claim.quantity.kind !== 'scalar') {
+      throw new Error('Expected the Challenger Deep scalar claim');
+    }
+    expect(claim.quantity.uncertainty).toEqual({
+      plusMinus: 6,
+      confidence: '95% confidence interval',
+    });
+    claim.quantity.uncertainty = {plusMinus: 0};
+    expect(claimSchema.safeParse(claim).success).toBe(false);
+  });
+
   it('accepts qualitative claims without numeric assumptions', () => {
     const qualitative = speedOfLightKnowledgePackage.claims.find(
       ({type}) => type === 'qualitative',
@@ -144,6 +192,7 @@ describe('knowledge package registry', () => {
       speedOfLightKnowledgePackage,
     );
     expect(knowledgePackageRegistry.list().map(({id}) => id)).toEqual([
+      'ocean-depth',
       'speed-of-light',
     ]);
   });

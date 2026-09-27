@@ -6,6 +6,7 @@ import {SceneWindow} from '../components/SceneWindow';
 import {ShortSafeArea} from '../components/ShortSafeArea';
 import {RevealText} from '../components/Typography';
 import {oceanDepth} from '../content/videos/ocean-depth';
+import {oceanScale} from '../data/ocean';
 import {typography} from '../design/tokens';
 import {easeInOutCubic, easeOutQuint, mix, progress} from '../utils/math';
 
@@ -32,17 +33,17 @@ const Hook = () => (
 const Descent = () => {
   const frame = useCurrentFrame();
   const depth = frame < seconds(6.7)
-    ? mix(0, 200, easeInOutCubic(progress(frame, seconds(2.7), seconds(6.7))))
+    ? mix(0, oceanScale.significantLightBoundary, easeInOutCubic(progress(frame, seconds(2.7), seconds(6.7))))
     : frame < seconds(10.7)
-      ? mix(200, 1000, easeInOutCubic(progress(frame, seconds(6.7), seconds(10.7))))
-      : mix(1000, 3682, easeInOutCubic(progress(frame, seconds(10.7), seconds(15.8))));
+      ? mix(oceanScale.significantLightBoundary, oceanScale.noSurfaceLightBoundary, easeInOutCubic(progress(frame, seconds(6.7), seconds(10.7))))
+      : mix(oceanScale.noSurfaceLightBoundary, oceanScale.averageDepth, easeInOutCubic(progress(frame, seconds(10.7), seconds(15.8))));
 
   return (
     <SceneWindow start={seconds(2.55)} end={seconds(16.25)} fadeIn={8} fadeOut={12}>
       <OceanAtmosphere depth={depth} />
       <DepthGauge
         depth={depth}
-        label={depth < 200 ? 'SUNLIGHT ZONE' : depth < 1000 ? 'TWILIGHT ZONE' : depth < 3600 ? 'NO SUNLIGHT' : 'AVERAGE OCEAN FLOOR'}
+        label={depth < oceanScale.significantLightBoundary ? 'SUNLIGHT ZONE' : depth < oceanScale.noSurfaceLightBoundary ? 'TWILIGHT ZONE' : depth < 3600 ? 'NO SUNLIGHT' : 'AVERAGE OCEAN FLOOR'}
       />
       <SceneWindow start={seconds(2.65)} end={seconds(7.15)} fadeIn={8} fadeOut={8}>
         <ShortSafeArea>

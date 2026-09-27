@@ -22,11 +22,18 @@ const quantitativeClaims = speedOfLightKnowledgePackage.claims.filter(
     claim.type === 'quantitative' && selectedClaimIds.has(claim.id),
 );
 
+const scalarValue = (claim: QuantitativeClaim) => {
+  if (claim.quantity.kind !== 'scalar') {
+    throw new Error(`Speed of Light production requires a scalar claim: ${claim.id}`);
+  }
+  return claim.quantity.value;
+};
+
 export const lightFacts = factSchema.array().parse(
   quantitativeClaims.map((claim) => ({
     id: claim.id,
     claim: claim.statement,
-    value: claim.quantity.value,
+    value: scalarValue(claim),
     unit: claim.quantity.unit,
     basis: claim.basis,
     sourceIds: claim.evidence.map(({sourceId}) => sourceId),

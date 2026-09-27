@@ -6,9 +6,9 @@ This document owns the boundary between implemented systems and the planned know
 
 Magnivis is a local, deterministic TypeScript/React/Remotion production repository. It contains typed video specifications, source-backed facts, reusable visual primitives, modular audio and narration, render routing, timed captions, ffprobe media validation, representative QA frames, and manual performance snapshots.
 
-Knowledge Package V1 is implemented as version-controlled TypeScript/Zod. It supports quantitative and qualitative claims, evidence traceability, verification states, package approval, hooks, narrative/visual opportunities, a deterministic registry, and one production package for `speed-of-light`. Video 004 reaches that package through its ContentAsset, while an explicit compatibility projection preserves its existing composition inputs.
+Knowledge Package V1 is implemented as version-controlled TypeScript/Zod. It supports quantitative and qualitative claims, scalar and range quantities, explicit precision/uncertainty, evidence traceability, verification states, package approval, hooks, narrative/visual opportunities, and a deterministic registry. Production packages exist for `speed-of-light` and `ocean-depth`; Videos 004 and 002 reach them through ContentAssets while narrow compatibility projections preserve existing composition inputs.
 
-Content Asset V1 is also implemented as version-controlled TypeScript/Zod. Two editorial assets reference the `speed-of-light` package: the published Video 004 story and a distinct unproduced cosmic-distance story. Assets own selected angles, hooks, claims, traceable scripts, narrative beats, visual intent, and narration direction. Video 004's VideoSpec references the published asset while retaining exact production choreography.
+Content Asset V1 is also implemented as version-controlled TypeScript/Zod. Two editorial assets reference the `speed-of-light` package, and one production asset references `ocean-depth`. Assets own selected angles, hooks, claims, traceable scripts, narrative beats, visual intent, and narration direction. Videos 002 and 004 reference their published assets while retaining exact production choreography.
 
 There is no database, queue, worker fleet, web application, CMS, provider orchestration layer, publishing API, analytics ingestion service, or deployment configuration. Upload and publication are manual human operations.
 
@@ -65,4 +65,4 @@ Introduce a provider interface only at an actual integration boundary. Current l
 
 ## Completed migration slices
 
-Knowledge Package V1, Content Asset V1, and the first `speed-of-light` package are implemented. One package backs two distinct assets, while the published asset continues through the existing production system without changing its rendered output. Platform variants, publication records, and workflow automation remain intentionally unimplemented.
+Knowledge Package V1 and Content Asset V1 are implemented. Speed of Light proves one package can back multiple editorial assets; Ocean Depth proves the same model handles qualitative claims, conventional scientific ranges, context-dependent boundaries, approximate measurements, and explicit uncertainty without changing the published production. Videos 001, 003, and 005 intentionally remain on legacy facts. Platform variants, publication records, and workflow automation remain intentionally unimplemented.

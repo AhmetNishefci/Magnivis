@@ -13,6 +13,7 @@ import {engineeringFacts, engineeringScale, engineeringSources} from '../src/dat
 import {
   speedOfLightPublishedShortAsset,
 } from '../src/content-assets/assets/speed-of-light';
+import {oceanDepthPublishedShortAsset} from '../src/content-assets/assets/ocean-depth';
 import {contentAssetRegistry} from '../src/content-assets/registry';
 
 const shortCaptionFiles = [
@@ -93,14 +94,20 @@ describe('ocean-depth specification', () => {
     expect(starts.every((start) => start < oceanDepth.format.durationSeconds)).toBe(true);
   });
 
-  it('references only committed ocean facts', () => {
-    const factIds = new Set(oceanFacts.map((fact) => fact.id));
-    expect(oceanDepth.factIds.every((id) => factIds.has(id))).toBe(true);
+  it('references its production-ready editorial content asset', () => {
+    expect(oceanDepth.factIds).toEqual([]);
+    expect(oceanDepth.contentAssetId).toBe(oceanDepthPublishedShortAsset.id);
+    expect(contentAssetRegistry.get(oceanDepth.contentAssetId!)).toEqual(
+      oceanDepthPublishedShortAsset,
+    );
   });
 
   it('derives the Everest comparison from authoritative base values', () => {
     expect(oceanScale.challengerDepth).toBe(10935);
     expect(oceanScale.everestHeight).toBe(8848.86);
+    expect(oceanScale.significantLightBoundary).toBe(200);
+    expect(oceanScale.noSurfaceLightBoundary).toBe(1000);
+    expect(oceanScale.averageDepth).toBe(3682);
     expect(oceanScale.summitClearance).toBeCloseTo(2086.14, 2);
     expect(oceanScale.everestFractionOfChallenger).toBeCloseTo(0.8092, 4);
   });

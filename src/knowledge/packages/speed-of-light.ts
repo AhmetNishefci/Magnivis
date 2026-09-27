@@ -79,7 +79,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.vacuumSpeed,
       type: 'quantitative',
       statement: 'The speed of light in vacuum is exactly 299,792,458 metres per second.',
-      quantity: {value: 299_792_458, unit: 'm/s', precision: 'exact'},
+      quantity: {kind: 'scalar', value: 299_792_458, unit: 'm/s', precision: 'exact'},
       basis: 'defined',
       display: '299,792,458 m/s',
       evidence: [{
@@ -94,7 +94,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.earthCircumference,
       type: 'quantitative',
       statement: 'Earth’s equatorial circumference is 40,030.2 kilometres.',
-      quantity: {value: 40_030.2, unit: 'km', precision: 'rounded'},
+      quantity: {kind: 'scalar', value: 40_030.2, unit: 'km', precision: 'rounded'},
       basis: 'measured',
       display: '40,030.2 km',
       evidence: [{
@@ -109,7 +109,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.earthLapsPerSecond,
       type: 'quantitative',
       statement: 'In one second, light in vacuum travels approximately 7.5 Earth equatorial circumferences.',
-      quantity: {value: (299_792_458 / 1000) / 40_030.2, unit: 'count', precision: 'approximate'},
+      quantity: {kind: 'scalar', value: (299_792_458 / 1000) / 40_030.2, unit: 'count', precision: 'approximate'},
       basis: 'derived',
       display: '≈7.5 times',
       evidence: [
@@ -130,7 +130,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.moonDistance,
       type: 'quantitative',
       statement: 'The Moon’s average orbital distance from Earth is 384,400 kilometres.',
-      quantity: {value: 384_400, unit: 'km', precision: 'rounded'},
+      quantity: {kind: 'scalar', value: 384_400, unit: 'km', precision: 'rounded'},
       basis: 'measured',
       display: '384,400 km',
       evidence: [{
@@ -145,7 +145,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.moonLightTime,
       type: 'quantitative',
       statement: 'Light crosses the average Earth–Moon distance in approximately 1.28 seconds.',
-      quantity: {value: 384_400 / (299_792_458 / 1000), unit: 's', precision: 'approximate'},
+      quantity: {kind: 'scalar', value: 384_400 / (299_792_458 / 1000), unit: 's', precision: 'approximate'},
       basis: 'derived',
       display: '≈1.28 seconds',
       evidence: [
@@ -166,7 +166,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.sunLightTime,
       type: 'quantitative',
       statement: 'Sunlight takes approximately 8 minutes 20 seconds to reach Earth.',
-      quantity: {value: 8 + 20 / 60, unit: 'minutes', precision: 'approximate'},
+      quantity: {kind: 'scalar', value: 8 + 20 / 60, unit: 'minutes', precision: 'approximate'},
       basis: 'estimated',
       display: '≈8 min 20 sec',
       evidence: [{
@@ -181,7 +181,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.lightYearDistance,
       type: 'quantitative',
       statement: 'One light-year is approximately 9.46 trillion kilometres.',
-      quantity: {value: 9.46e12, unit: 'km', precision: 'approximate'},
+      quantity: {kind: 'scalar', value: 9.46e12, unit: 'km', precision: 'approximate'},
       basis: 'estimated',
       display: '≈9.46 trillion km',
       evidence: [{
@@ -196,7 +196,7 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
       id: speedOfLightClaimIds.proximaDistance,
       type: 'quantitative',
       statement: 'Proxima Centauri is approximately 4.25 light-years away.',
-      quantity: {value: 4.25, unit: 'light-years', precision: 'approximate'},
+      quantity: {kind: 'scalar', value: 4.25, unit: 'light-years', precision: 'approximate'},
       basis: 'estimated',
       display: '≈4.25 light-years',
       evidence: [{

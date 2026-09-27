@@ -10,6 +10,10 @@ import {
 } from '../src/content-assets/registry';
 import {contentAssetSchema} from '../src/content-assets/schema';
 import {speedOfLightClaimIds, speedOfLightHookIds} from '../src/knowledge/packages/speed-of-light';
+import {
+  oceanDepthContentAssetIds,
+  oceanDepthPublishedShortAsset,
+} from '../src/content-assets/assets/ocean-depth';
 
 const clonePublishedAsset = () => structuredClone(speedOfLightPublishedShortAsset);
 
@@ -137,9 +141,12 @@ describe('content asset registry', () => {
     expect(contentAssetRegistry.get(speedOfLightContentAssetIds.publishedShort))
       .toEqual(speedOfLightPublishedShortAsset);
     expect(contentAssetRegistry.list().map(({id}) => id)).toEqual([
+      oceanDepthContentAssetIds.publishedShort,
       speedOfLightContentAssetIds.cosmicDistanceShort,
       speedOfLightContentAssetIds.publishedShort,
     ]);
+    expect(contentAssetRegistry.get(oceanDepthContentAssetIds.publishedShort))
+      .toEqual(oceanDepthPublishedShortAsset);
   });
 
   it('selects every claim required by the chosen package hook', () => {

@@ -1,4 +1,17 @@
 import {videoSpecSchema} from '../schema';
+import {
+  oceanDepthPublishedScriptSegmentIds,
+  oceanDepthPublishedShortAsset,
+} from '../../content-assets/assets/ocean-depth';
+import {contentAssetRegistry} from '../../content-assets/registry';
+
+const scriptText = (segmentId: string) => {
+  const segment = oceanDepthPublishedShortAsset.script.segments.find(
+    ({id}) => id === segmentId,
+  );
+  if (!segment) throw new Error(`Missing Ocean Depth script segment: ${segmentId}`);
+  return segment.text;
+};
 
 export const oceanDepth = videoSpecSchema.parse({
   id: 'ocean-depth',
@@ -44,14 +57,7 @@ export const oceanDepth = videoSpecSchema.parse({
     {id: 'challenger-deep', start: 23.7, end: 29.5, purpose: 'Name the deepest point and reveal the remaining water above Everest.'},
     {id: 'coda', start: 29, end: 32, purpose: 'End immediately on the 2.1-kilometer clearance reframe.'},
   ],
-  factIds: [
-    'ocean-significant-light-depth-m',
-    'ocean-no-sunlight-depth-m',
-    'ocean-average-depth-m',
-    'everest-elevation-m',
-    'challenger-deep-depth-m',
-    'everest-summit-clearance-m',
-  ],
+  contentAssetId: oceanDepthPublishedShortAsset.id,
   audio: {
     file: 'audio/ocean-depth.wav',
     layers: ['ambient', 'transition', 'impact', 'narration'],
@@ -61,47 +67,52 @@ export const oceanDepth = videoSpecSchema.parse({
         id: 'hook',
         file: 'audio/narration/ocean-depth/hook.wav',
         start: 0.05,
-        transcript: 'The deepest ocean could swallow Mount Everest.',
+        transcript: scriptText(oceanDepthPublishedScriptSegmentIds.hook),
       },
       {
         id: 'light',
         file: 'audio/narration/ocean-depth/light.wav',
         start: 3.15,
-        transcript: 'After two hundred meters, sunlight is already fading.',
+        transcript: scriptText(oceanDepthPublishedScriptSegmentIds.light),
       },
       {
         id: 'dark',
         file: 'audio/narration/ocean-depth/dark.wav',
         start: 7.35,
-        transcript: 'At one thousand meters, it disappears.',
+        transcript: scriptText(oceanDepthPublishedScriptSegmentIds.dark),
       },
       {
         id: 'average',
         file: 'audio/narration/ocean-depth/average.wav',
         start: 11.1,
-        transcript: 'The average ocean is nearly three point seven kilometers deep.',
+        transcript: scriptText(oceanDepthPublishedScriptSegmentIds.average),
       },
       {
         id: 'everest',
         file: 'audio/narration/ocean-depth/everest.wav',
         start: 16.25,
-        transcript: 'Now place Mount Everest on the bottom.',
+        transcript: scriptText(oceanDepthPublishedScriptSegmentIds.everest),
       },
       {
         id: 'clearance',
         file: 'audio/narration/ocean-depth/clearance.wav',
         start: 20.15,
-        transcript: 'Its summit would still be more than two kilometers underwater.',
+        transcript: scriptText(oceanDepthPublishedScriptSegmentIds.clearance),
       },
       {
         id: 'coda',
         file: 'audio/narration/ocean-depth/coda.wav',
         start: 26.2,
-        transcript: 'Challenger Deep. Nearly eleven kilometers below the surface.',
+        transcript: scriptText(oceanDepthPublishedScriptSegmentIds.coda),
       },
     ],
   },
 });
+
+if (!oceanDepth.contentAssetId) {
+  throw new Error('Ocean Depth must reference its production content asset');
+}
+contentAssetRegistry.get(oceanDepth.contentAssetId);
 
 export const oceanDepthFrames =
   oceanDepth.format.fps * oceanDepth.format.durationSeconds;

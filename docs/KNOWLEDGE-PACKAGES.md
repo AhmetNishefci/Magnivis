@@ -19,7 +19,9 @@ Knowledge Package V1 is the implemented editorial layer above production. It own
 
 ## Claim types
 
-A quantitative claim has a structured numeric value, free-form unit, precision (`exact`, `rounded`, or `approximate`), evidential basis, and display value. Numeric values are not restricted to positive values because future topics may legitimately require zero or negative quantities.
+A quantitative claim has a structured quantity, free-form unit, precision (`exact`, `rounded`, or `approximate`), evidential basis, and display value. A quantity is either a scalar or a bounded range. Scalars may record a positive symmetric `plusMinus` uncertainty and an optional confidence description. Ranges require a maximum greater than the minimum. Numeric values are not restricted to positive values because legitimate subjects may require zero or negative quantities.
+
+Precision and verification answer different questions. `approximate` describes how the number should be interpreted; `verified` describes whether the scoped claim, including that approximation or range, passed editorial verification. A well-supported conventional range can therefore be verified without becoming falsely exact.
 
 A qualitative claim has no numeric payload. Both types require a human-readable statement, one or more evidence references with notes, a verification status, caveats, and review metadata when verified.
 
@@ -53,7 +55,7 @@ KnowledgePackage is the reusable research source. ContentAsset selects one edito
 - legacy `factIds`, for productions not yet migrated; or
 - `contentAssetId`, for a migrated production.
 
-Video 004, `speed-of-light`, references `speed-of-light.asset.earth-to-proxima`. Its package remains the source of truth for sources and claims. `src/data/light.ts` is a temporary compatibility projection that converts the asset-selected package claims into the legacy fact shape consumed by the unchanged composition. It contains no duplicated factual values.
+Videos 002 and 004 reference production ContentAssets. Their packages remain the source of truth for sources and claims. `src/data/ocean.ts` and `src/data/light.ts` are narrow compatibility projections that convert package claims into the existing numeric inputs consumed by unchanged compositions. They contain no duplicated factual values.
 
 The editorial script belongs to ContentAsset. Exact scene timing, narration files and cue starts, captions, sound, and composition choreography remain production concerns in `VideoSpec` and Remotion. Platform adaptation and publication are future separate boundaries; legacy VideoSpec fields remain until a bounded migration is approved.
 

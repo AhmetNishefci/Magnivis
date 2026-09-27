@@ -20,7 +20,7 @@ Committed facts are render inputs. Production rendering must not depend on live 
 
 ## Knowledge Package V1
 
-The implemented claim model covers quantitative and qualitative claims. In addition to source provenance, each material claim records its claim type, evidence notes, caveats, and verification status: `unverified`, `supported`, `conflicting`, `uncertain`, or `verified`. `docs/KNOWLEDGE-PACKAGES.md` is authoritative for the semantic distinction between these states. Existing videos remain on the legacy fact model until migrated; do not imply their schema encodes a workflow state that it does not.
+The implemented claim model covers quantitative and qualitative claims. Quantitative claims support scalar values, bounded ranges, precision, and optional scalar measurement uncertainty. In addition to source provenance, each material claim records its claim type, evidence notes, caveats, and verification status: `unverified`, `supported`, `conflicting`, `uncertain`, or `verified`. `docs/KNOWLEDGE-PACKAGES.md` is authoritative for the semantic distinction between these states. Approximate precision or an explicit scientific range does not automatically imply an `uncertain` verification state. Videos 001, 003, and 005 remain on the legacy fact model; do not imply their schema encodes a workflow state that it does not.
 
 ## Review checklist
 
@@ -35,7 +35,9 @@ The implemented claim model covers quantitative and qualitative claims. In addit
 
 Video 001 intentionally avoids “largest star” language. Betelgeuse is variable and its radius depends on observational/model assumptions, so the video labels the selected NASA value as an estimate.
 
-Video 002 treats Challenger Deep as an approximate depth because survey results vary slightly. Its Everest comparison is derived from NOAA's approximate 10,935 m Challenger Deep value and the Government of Nepal's 8,848.86 m Everest elevation. The procedural mountain is an illustrative silhouette; only its vertical height-to-depth ratio is quantitative.
+Video 002 now has a production KnowledgePackage and ContentAsset. NOAA's generalized light classification places the twilight zone at approximately 200–1,000 m, but attenuation is continuous and varies with water conditions; the range is verified as a conventional classification, not as two universal hard cutoffs. The published line “At one thousand meters, it disappears” is therefore a simplification, and its “TOTAL DARKNESS” headline means no surface sunlight rather than absence of bioluminescence. Preserve the published render for regression; use “below about 1,000 m, surface sunlight no longer penetrates” and “NO SURFACE SUNLIGHT” or “APHOTIC ZONE” in a future editorial revision.
+
+The package uses the peer-reviewed 2021 pressure-derived Challenger Deep estimate of 10,935 m ±6 m at 95% confidence, while retaining the caveat that authoritative surveys can differ by location, instrumentation, corrections, and method. Its Everest comparison derives approximately 2,086.14 m of vertical clearance from that estimate and the Government of Nepal's 8,848.86 m elevation. The procedural mountain is an illustrative silhouette; only its shared vertical scale is quantitative.
 
 Video 003 derives ten million $100 notes from the denomination's face value and approximately ten metric tons from the U.S. Currency Education Program's approximate one-gram note weight. Its approximately 1.1 km single-stack height is a deliberately rounded slight upper estimate derived from the institution's statement that a mile-high stack contains more than 14.5 million notes. The 25×40 block arrangement is an editorial packing choice, not a claim about a standardized cash pallet. The Burj Khalifa comparison uses the owner's published 828 m architectural height.
 

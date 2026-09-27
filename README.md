@@ -69,11 +69,11 @@ The narrated master is written to `output/human-engineering-narrated.mp4`. Its Q
 
 ## Knowledge packages
 
-Video 004 is the first production migrated from video-first facts to a reusable Knowledge Package V1. See `docs/KNOWLEDGE-PACKAGES.md` for the schema, verification semantics, package-to-asset boundary, and authoring procedure.
+Videos 004 and 002 are migrated from video-first facts to reusable Knowledge Packages. Speed of Light proves multi-asset reuse; Ocean Depth validates approximate ranges, context-dependent boundaries, mixed claim types, and measurement uncertainty. See `docs/KNOWLEDGE-PACKAGES.md` for the schema, verification semantics, package-to-asset boundary, and authoring procedure.
 
 ## Content assets
 
-The Speed of Light package now supports two platform-neutral ContentAssets: the published Video 004 story and a distinct unproduced cosmic-distance story. See `docs/CONTENT-ASSETS.md` for script traceability, hook ownership, visual planning, and the ContentAsset-to-VideoSpec boundary.
+The Speed of Light package supports two platform-neutral ContentAssets, while Ocean Depth has one production asset for published Video 002. See `docs/CONTENT-ASSETS.md` for script traceability, hook ownership, visual planning, and the ContentAsset-to-VideoSpec boundary.
 
 Run all non-rendering checks with:
 

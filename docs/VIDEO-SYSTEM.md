@@ -19,7 +19,7 @@ KnowledgePackage → ContentAsset
 ```
 
 - `src/data/`: verified scientific records and source metadata.
-- `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Video 004.
+- `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Videos 002 and 004.
 - `src/content-assets/`: platform-neutral editorial assets, script traceability, narrative intent, and visual plans.
 - `src/content/videos/`: production metadata, timing, files, and references to legacy facts or a content asset.
 - `src/components/`: reusable visual primitives with no video-specific claims.
@@ -29,7 +29,7 @@ KnowledgePackage → ContentAsset
 
 This is deliberately a typed code specification rather than YAML/JSON. V1 needs derived values, validation, and refactorability more than non-developer editing. The content boundary remains explicit and could later gain another authoring format.
 
-Video specifications are production representations, not reusable research or editorial assets. A migrated video references a ContentAsset ID; an unmigrated video continues to use legacy `factIds`. The schema rejects using both. Video 004 derives narration text from its published ContentAsset, while exact cue timing, audio files, scenes, format, captions, and choreography remain in VideoSpec/Remotion. Its legacy numeric render inputs are projected from asset-selected package claims so the composition remains unchanged.
+Video specifications are production representations, not reusable research or editorial assets. A migrated video references a ContentAsset ID; an unmigrated video continues to use legacy `factIds`. The schema rejects using both. Videos 002 and 004 derive narration text from their published ContentAssets, while exact cue timing, audio files, scenes, format, captions, and choreography remain in VideoSpec/Remotion. Their numeric render inputs are projected from package claims so the compositions remain unchanged.
 
 ## Video 001
 
@@ -49,6 +49,7 @@ Video specifications are production representations, not reusable research or ed
 - Audio: original deterministic stereo deep-ocean soundscape plus seven modular English narration cues
 - Captions: `captions/ocean-depth.en.vtt` (positioned for the lower Shorts safe area); `captions/ocean-depth.en.srt` is the unpositioned fallback
 - Output: `output/ocean-depth-narrated.mp4`
+- Editorial source: `ocean-depth.asset.everest-descent`, backed by the `ocean-depth` KnowledgePackage
 
 ## Video 003
 

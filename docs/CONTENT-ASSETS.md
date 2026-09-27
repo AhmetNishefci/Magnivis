@@ -74,7 +74,9 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 
 `speed-of-light.asset.cosmic-distance` is a second, unproduced draft from the same package. It asks why light still takes years to reach the nearest neighboring star, explains a light-year as distance, and resolves the story with the scale of space. It deliberately omits the published asset's Earth-lap and Moon progression.
 
-`src/content-assets/registry.ts` validates both assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
+`ocean-depth.asset.everest-descent` represents published Video 002. It traces six factual narration segments to Ocean Depth claims while treating the Everest placement instruction as editorial. Its visual plan records that the 200- and 1,000-metre light-zone boundaries are conventional and that “total darkness” means no surface sunlight, not absence of bioluminescence.
+
+`src/content-assets/registry.ts` validates all three assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
 
 ## Adding another asset
 

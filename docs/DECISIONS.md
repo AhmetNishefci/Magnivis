@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-27 — Model numeric shape separately from epistemic status
+
+**Decision:** Quantitative claims use either a scalar quantity or a bounded range. Scalars may carry positive symmetric measurement uncertainty and an optional confidence description. Precision (`exact`, `rounded`, or `approximate`) remains separate from verification status.
+
+**Reason:** Ocean Depth contains conventional 200–1,000 m light-zone boundaries and a 10,935 m ±6 m survey estimate. Forcing either into one exact scalar would erase scientific meaning, while marking every approximate measurement `uncertain` would confuse numeric precision with whether the scoped claim passed verification.
+
+**Alternatives:** Keep scalar-only values and move ranges into prose (not machine-readable and encourages false precision); add more verification states (does not solve quantity shape); build a general measurement ontology (unnecessary for the current domains).
+
+**Consequences:** Speed of Light remains backward-compatible through explicit scalar discriminants. Ocean Depth represents the light interval as a range and Challenger Deep as an approximate scalar with uncertainty. A verified claim can contain an approximate value or range when that qualified statement itself is evidence-backed and reviewed.
+
 ## 2026-09-27 — Separate editorial assets from production specifications
 
 **Decision:** ContentAsset V1 is a platform-neutral editorial object between KnowledgePackage and VideoSpec. It owns purpose, angle, selected package hook/claims, claim-linked script segments, narrative beats, visual intent, narration direction, and readiness. VideoSpec owns exact format, frames, timing, files, captions, audio cues, and Remotion choreography. Future PlatformVariant and PublicationRecord remain separate and unimplemented.

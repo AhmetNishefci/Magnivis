@@ -26,13 +26,15 @@ Last updated: 2026-09-27
 - `speed-of-light` is the first production knowledge package. Video 004 reaches its package/claim/hook selection through a ContentAsset, and `src/data/light.ts` projects unchanged numeric inputs for the existing composition without duplicating factual values.
 - Content Asset V1 is implemented with platform-neutral purpose/angle, package hook and claim selection, factual script traceability, narrative beats, visual intent, narration direction, approval state, and a deterministic registry.
 - The `speed-of-light` package backs two assets: the production-ready published Video 004 story and a distinct unproduced cosmic-distance draft. Video 004 references the production asset and derives its narration text from it without changing render inputs.
+- Ocean Depth generalization is complete. The production `ocean-depth` KnowledgePackage models qualitative claims, a conventional approximate range, scalar measurement uncertainty, and survey-dependent context; its production ContentAsset supplies Video 002's unchanged narration, and the compatibility projection supplies unchanged numeric composition inputs.
+- Videos 001, 003, and 005 intentionally remain on the legacy fact path. PlatformVariant remains planned and unimplemented.
 
 ## NOW
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
 - Revisit Video 003 when its detailed retention curve and unique-viewer reports finish processing; identify the first material drop before drawing scene-level conclusions.
-- Review the completed Content Asset V1 milestone before authorizing another migration or abstraction.
+- Review the completed Ocean Depth cross-domain generalization before authorizing another migration or abstraction.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
 - Preserve the current publishing workflow while the new cross-platform content model is introduced incrementally.
 
@@ -41,7 +43,7 @@ Last updated: 2026-09-27
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
 - Record Video 004's first 24-hour performance snapshot after its reports have processed.
 - Publish Video 005 manually only after the private platform review passes and the spacing decision is confirmed.
-- Decide whether the next bounded milestone should prove a second KnowledgePackage migration or introduce PlatformVariant V1.
+- Choose the next bounded milestone explicitly; do not migrate another legacy video or begin PlatformVariant without approval.
 - Add long-form production only after the content-intelligence and asset boundaries are proven.
 
 ## LATER

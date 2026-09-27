@@ -1,4 +1,5 @@
 import {speedOfLightKnowledgePackage} from './packages/speed-of-light';
+import {oceanDepthKnowledgePackage} from './packages/ocean-depth';
 import {
   knowledgePackageSchema,
   type KnowledgePackage,
@@ -78,5 +79,6 @@ export const createKnowledgePackageRegistry = (
 export type KnowledgePackageRegistry = ReturnType<typeof createKnowledgePackageRegistry>;
 
 export const knowledgePackageRegistry = createKnowledgePackageRegistry([
+  oceanDepthKnowledgePackage,
   speedOfLightKnowledgePackage,
 ]);

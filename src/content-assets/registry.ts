@@ -2,6 +2,7 @@ import {
   speedOfLightCosmicDistanceAsset,
   speedOfLightPublishedShortAsset,
 } from './assets/speed-of-light';
+import {oceanDepthPublishedShortAsset} from './assets/ocean-depth';
 import {contentAssetSchema, type ContentAsset} from './schema';
 import {
   knowledgePackageRegistry,
@@ -67,6 +68,7 @@ export const createContentAssetRegistry = (
 };
 
 export const contentAssetRegistry = createContentAssetRegistry([
+  oceanDepthPublishedShortAsset,
   speedOfLightPublishedShortAsset,
   speedOfLightCosmicDistanceAsset,
 ]);

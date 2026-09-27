@@ -72,13 +72,38 @@ const claimBase = z.object({
   review: reviewMetadataSchema.optional(),
 });
 
+const quantityPrecisionSchema = z.enum(['exact', 'rounded', 'approximate']);
+
+export const scalarQuantitySchema = z.object({
+  kind: z.literal('scalar'),
+  value: z.number(),
+  unit: z.string().min(1),
+  precision: quantityPrecisionSchema,
+  uncertainty: z.object({
+    plusMinus: z.number().positive(),
+    confidence: z.string().min(1).optional(),
+  }).strict().optional(),
+}).strict();
+
+export const rangeQuantitySchema = z.object({
+  kind: z.literal('range'),
+  minimum: z.number(),
+  maximum: z.number(),
+  unit: z.string().min(1),
+  precision: quantityPrecisionSchema,
+}).strict().refine(
+  ({minimum, maximum}) => maximum > minimum,
+  'Range maximum must be greater than range minimum',
+);
+
+export const quantitySchema = z.discriminatedUnion('kind', [
+  scalarQuantitySchema,
+  rangeQuantitySchema,
+]);
+
 export const quantitativeClaimSchema = claimBase.extend({
   type: z.literal('quantitative'),
-  quantity: z.object({
-    value: z.number(),
-    unit: z.string().min(1),
-    precision: z.enum(['exact', 'rounded', 'approximate']),
-  }).strict(),
+  quantity: quantitySchema,
   basis: z.enum(['measured', 'defined', 'estimated', 'derived']),
   display: z.string().min(1),
 }).strict();
@@ -256,5 +281,7 @@ export const knowledgePackageSchema = z.object({
 export type KnowledgeSource = z.infer<typeof sourceRecordSchema>;
 export type KnowledgeClaim = z.infer<typeof claimSchema>;
 export type QuantitativeClaim = z.infer<typeof quantitativeClaimSchema>;
+export type ScalarQuantity = z.infer<typeof scalarQuantitySchema>;
+export type RangeQuantity = z.infer<typeof rangeQuantitySchema>;
 export type QualitativeClaim = z.infer<typeof qualitativeClaimSchema>;
 export type KnowledgePackage = z.infer<typeof knowledgePackageSchema>;
