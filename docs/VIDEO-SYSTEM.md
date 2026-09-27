@@ -5,9 +5,9 @@ This is the implemented production subsystem. The higher-level knowledge-package
 ## Architecture
 
 ```text
-KnowledgePackage → ContentAsset
-               ↓
-        video specification
+KnowledgePackage → ContentAsset → optional PlatformVariant
+                                      ↓
+                              video specification
                ↓
       composition choreography
                ↓
@@ -21,7 +21,8 @@ KnowledgePackage → ContentAsset
 - `src/data/`: verified scientific records and source metadata.
 - `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Videos 002 and 004.
 - `src/content-assets/`: platform-neutral editorial assets, script traceability, narrative intent, and visual plans.
-- `src/content/videos/`: production metadata, timing, files, and references to legacy facts or a content asset.
+- `src/platform-variants/`: destination packaging, dated constraint profiles, safe-area selection, and production/readiness intent.
+- `src/content/videos/`: production metadata, timing, files, and exactly one reference to legacy facts, a content asset, or a platform variant.
 - `src/components/`: reusable visual primitives with no video-specific claims.
 - `src/compositions/`: video-specific choreography that consumes structured content.
 - `src/design/`: typography, color, safe-area, and motion tokens.
@@ -29,7 +30,7 @@ KnowledgePackage → ContentAsset
 
 This is deliberately a typed code specification rather than YAML/JSON. V1 needs derived values, validation, and refactorability more than non-developer editing. The content boundary remains explicit and could later gain another authoring format.
 
-Video specifications are production representations, not reusable research or editorial assets. A migrated video references a ContentAsset ID; an unmigrated video continues to use legacy `factIds`. The schema rejects using both. Videos 002 and 004 derive narration text from their published ContentAssets, while exact cue timing, audio files, scenes, format, captions, and choreography remain in VideoSpec/Remotion. Their numeric render inputs are projected from package claims so the compositions remain unchanged.
+Video specifications are production representations, not reusable research or editorial assets. A migrated video references either a ContentAsset ID or the PlatformVariant it implements; an unmigrated video continues to use legacy `factIds`. The schema requires exactly one path. Video 002 references its ContentAsset directly. Video 004 references the YouTube Shorts PlatformVariant, which resolves to its ContentAsset. Both derive narration text from their ContentAssets, while exact cue timing, audio files, scenes, format, and choreography remain in VideoSpec/Remotion. Their numeric render inputs are projected from package claims so the compositions remain unchanged.
 
 ## Video 001
 
@@ -70,6 +71,7 @@ Video specifications are production representations, not reusable research or ed
 - Audio: original deterministic stereo pulse/sweep soundscape plus six modular English narration cues
 - Captions: `captions/speed-of-light.en.vtt` (positioned above the lower Shorts metadata region); `captions/speed-of-light.en.srt` is the unpositioned fallback
 - Output: `output/speed-of-light-narrated.mp4`
+- Platform adaptation: `speed-of-light.asset.earth-to-proxima.variant.youtube-shorts`; the composition uses the conservative shared master safe-area profile whose insets exactly preserve the published layout.
 
 ## Video 005
 

@@ -8,7 +8,9 @@ Magnivis is a local, deterministic TypeScript/React/Remotion production reposito
 
 Knowledge Package V1 is implemented as version-controlled TypeScript/Zod. It supports quantitative and qualitative claims, scalar and range quantities, explicit precision/uncertainty, evidence traceability, verification states, package approval, hooks, narrative/visual opportunities, and a deterministic registry. Production packages exist for `speed-of-light` and `ocean-depth`; Videos 004 and 002 reach them through ContentAssets while narrow compatibility projections preserve existing composition inputs.
 
-Content Asset V1 is also implemented as version-controlled TypeScript/Zod. Two editorial assets reference the `speed-of-light` package, and one production asset references `ocean-depth`. Assets own selected angles, hooks, claims, traceable scripts, narrative beats, visual intent, and narration direction. Videos 002 and 004 reference their published assets while retaining exact production choreography.
+Content Asset V1 is also implemented as version-controlled TypeScript/Zod. Two editorial assets reference the `speed-of-light` package, and one production asset references `ocean-depth`. Assets own selected angles, hooks, claims, traceable scripts, narrative beats, visual intent, and narration direction.
+
+The knowledge taxonomy is open-ended: packages have one broad analytics pillar plus normalized domain/topic slugs. Pillars organize the portfolio rather than authorize subjects. PlatformVariant V1 is implemented for the production Speed of Light ContentAsset across YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels. Dated constraint profiles and safe-area profiles isolate mutable platform knowledge. Video 004 references its YouTube variant; Video 002 continues to reference its ContentAsset directly. Both retain exact production choreography.
 
 There is no database, queue, worker fleet, web application, CMS, provider orchestration layer, publishing API, analytics ingestion service, or deployment configuration. Upload and publication are manual human operations.
 
@@ -25,9 +27,11 @@ sources + claim-level verification
     ↓
 knowledge package
     ↓
-story assets (short, long-form, article)
+content assets (short or long-form story)
     ↓
-platform variants
+platform variants (packaging + delivery intent)
+    ↓
+production representation
     ↓
 human approval
     ↓
@@ -36,16 +40,17 @@ manual or approved publishing adapter
 raw analytics snapshots + interpreted learning
 ```
 
-A knowledge package can support multiple assets, but each asset must have a distinct editorial purpose. The implemented ContentAsset layer proves this one-to-many relationship. Future platform variants may change packaging, safe areas, duration, CTA, cover, caption track, and metadata; they may not silently alter verified claims.
+A knowledge package can support multiple assets, but each asset must have a distinct editorial purpose. The implemented ContentAsset layer proves this one-to-many relationship. Implemented platform variants may change packaging, safe areas, duration intent, CTA, cover, caption behavior, and metadata; they may not silently alter verified claims.
 
 ## Planned domain boundaries
 
-- **Editorial intelligence:** topic candidates, scoring rationale, timeliness, pillars, hook variants, and story angles.
+- **Editorial intelligence:** broad topic opportunities, evaluation rationale, timeliness, open taxonomy, hook variants, and story angles. Discovery precedes classification.
 - **Research:** sources, claims, evidence notes, uncertainty, and review status.
 - **Knowledge packages:** approved topic understanding, verified claims, narrative/visual opportunities, and related questions.
 - **Content assets:** platform-neutral editorial purpose, story angle, selected hook/claims, traceable script, narrative structure, visual intent, and narration direction.
 - **Production:** exact format, timing, narration/audio files, licensed assets, Remotion compositions, captions, renders, and QA. This is the mature existing subsystem.
-- **Distribution:** per-platform variants, approval state, remote identifiers, idempotency keys, and publication attempts. Public release remains a separate human action.
+- **Platform adaptation:** implemented per-platform packaging, dated constraint profile, safe-area profile, approval/readiness, and production intent.
+- **Distribution/publication:** future remote identifiers, idempotency keys, and publication attempts. Public release remains a separate human action.
 - **Analytics:** immutable raw observations with platform definitions, plus explicitly derived internal metrics.
 - **Operations:** stage runs, input/output hashes, attempts, provider usage, cost, logs, and resumability.
 
@@ -65,4 +70,4 @@ Introduce a provider interface only at an actual integration boundary. Current l
 
 ## Completed migration slices
 
-Knowledge Package V1 and Content Asset V1 are implemented. Speed of Light proves one package can back multiple editorial assets; Ocean Depth proves the same model handles qualitative claims, conventional scientific ranges, context-dependent boundaries, approximate measurements, and explicit uncertainty without changing the published production. Videos 001, 003, and 005 intentionally remain on legacy facts. Platform variants, publication records, and workflow automation remain intentionally unimplemented.
+Knowledge Package V1, Content Asset V1, open-ended knowledge taxonomy, and PlatformVariant V1 are implemented. Speed of Light proves one package can back multiple editorial assets and one asset can back multiple platform adaptations; Ocean Depth proves the knowledge/asset model handles qualitative claims, conventional scientific ranges, context-dependent boundaries, approximate measurements, and explicit uncertainty without changing the published production. Videos 001, 003, and 005 intentionally remain on legacy facts. Publication records, publishing adapters, and workflow automation remain intentionally unimplemented.

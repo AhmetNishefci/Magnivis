@@ -16,6 +16,7 @@ import {
   claimSchema,
   knowledgePackageSchema,
 } from '../src/knowledge/schema';
+import {knowledgeTaxonomySchema} from '../src/knowledge/taxonomy';
 
 const clonePackage = () => structuredClone(speedOfLightKnowledgePackage);
 
@@ -55,7 +56,63 @@ describe('Knowledge Package V1 schema', () => {
   it('rejects an invalid pillar', () => {
     expect(knowledgePackageSchema.safeParse({
       ...speedOfLightKnowledgePackage,
-      pillar: 'sports',
+      taxonomy: {
+        ...speedOfLightKnowledgePackage.taxonomy,
+        pillar: 'sports',
+      },
+    }).success).toBe(false);
+  });
+
+  it.each([
+    {
+      name: 'philosophy',
+      taxonomy: {
+        pillar: 'society-culture',
+        domains: ['philosophy', 'ethics'],
+        topics: ['utilitarianism', 'moral-reasoning', 'trolley-problem'],
+      },
+    },
+    {
+      name: 'medicine and anatomy',
+      taxonomy: {
+        pillar: 'human-life',
+        domains: ['medicine', 'anatomy', 'neuroscience'],
+        topics: ['anesthesia', 'consciousness', 'nervous-system'],
+      },
+    },
+    {
+      name: 'biology',
+      taxonomy: {
+        pillar: 'earth-nature',
+        domains: ['biology', 'genetics', 'evolution'],
+        topics: ['natural-selection', 'genetic-variation'],
+      },
+    },
+    {
+      name: 'movie and physics analysis',
+      taxonomy: {
+        pillar: 'interdisciplinary',
+        domains: ['film-studies', 'physics', 'astronomy'],
+        topics: ['interstellar', 'time-dilation', 'relativity'],
+      },
+    },
+  ])('accepts open-ended $name classification without a domain enum', ({taxonomy}) => {
+    expect(knowledgePackageSchema.safeParse({
+      ...speedOfLightKnowledgePackage,
+      taxonomy,
+    }).success).toBe(true);
+  });
+
+  it('requires normalized, unique open taxonomy terms', () => {
+    expect(knowledgeTaxonomySchema.safeParse({
+      pillar: 'human-life',
+      domains: ['Human Biology'],
+      topics: ['heart'],
+    }).success).toBe(false);
+    expect(knowledgeTaxonomySchema.safeParse({
+      pillar: 'human-life',
+      domains: ['biology', 'biology'],
+      topics: ['heart'],
     }).success).toBe(false);
   });
 

@@ -34,7 +34,11 @@ export const oceanDepthKnowledgePackage = knowledgePackageSchema.parse({
   revision: 1,
   topic: 'Ocean light zones, average depth, and the scale of Challenger Deep',
   centralQuestion: 'How does the ocean change with depth, and how deep is its deepest observed point compared with Mount Everest?',
-  pillar: 'nature-earth',
+  taxonomy: {
+    pillar: 'earth-nature',
+    domains: ['oceanography', 'marine-science'],
+    topics: ['ocean-light-zones', 'ocean-depth', 'challenger-deep', 'mount-everest'],
+  },
   timeliness: 'evergreen',
   thesis: 'The ocean passes through conventional light zones long before the average seafloor, while Challenger Deep extends far enough below mean sea level to cover Mount Everest by roughly two kilometres.',
   viewerPayoff: 'The viewer gains an intuitive descent from diminishing sunlight to the average seafloor and finally a survey-aware Everest comparison at Challenger Deep.',

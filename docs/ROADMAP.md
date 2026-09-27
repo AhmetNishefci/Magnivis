@@ -11,11 +11,11 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 
 ## Phase 1 — content intelligence (current)
 
-- Knowledge Package V1, the eight pillars, timeliness, hook archetypes, claim verification states, and a deterministic registry are implemented.
+- Knowledge Package V1, open-ended taxonomy, timeliness, hook archetypes, claim verification states, and a deterministic registry are implemented. Seven broad pillars support analytics; open domain/topic slugs support legitimate new and cross-domain subjects without code authorization.
 - Video 004 is migrated without changing its rendered output.
-- Content Asset V1 is implemented; one Speed of Light package now backs two distinct editorial assets, and Video 004 references its production-ready asset.
+- Content Asset V1 is implemented; one Speed of Light package now backs two distinct editorial assets, and Video 004 reaches its production-ready asset through a YouTube Shorts PlatformVariant.
 - Ocean Depth generalization is complete; Video 002 validates ranges, approximate boundaries, mixed claim types, explicit uncertainty, and script traceability without changing production output.
-- Videos 001, 003, and 005 remain intentionally unmigrated. Next work requires explicit approval; PlatformVariant is still only planned.
+- Videos 001, 003, and 005 remain intentionally unmigrated. Next work requires explicit approval.
 - Topic-score rationale and human research/story review workflows remain unimplemented.
 - Add human review checks for sources, claims, hooks, script, and visual plan.
 - Keep discovery/research manual or AI-assisted; do not require paid providers.
@@ -28,7 +28,7 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 
 ## Phase 3 — multi-platform distribution
 
-- Define platform variants for YouTube Shorts, TikTok, Facebook Reels, and Instagram Reels.
+- PlatformVariant V1 is implemented for YouTube Shorts, TikTok, Facebook Reels, and Instagram Reels using dated constraints, platform packaging, safe-area profiles, approval/readiness, and manual preview intent.
 - Begin with export manifests and manual posting checklists.
 - Add official API adapters only after platform/account approval and operational need.
 - Separate upload from public release; use idempotency and human approval for every external mutation.

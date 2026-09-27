@@ -26,7 +26,11 @@ describe('Ocean Depth production KnowledgePackage', () => {
   it('validates authoritative mixed quantitative and qualitative research', () => {
     const parsed = knowledgePackageSchema.parse(oceanDepthKnowledgePackage);
     expect(parsed.id).toBe('ocean-depth');
-    expect(parsed.pillar).toBe('nature-earth');
+    expect(parsed.taxonomy).toEqual({
+      pillar: 'earth-nature',
+      domains: ['oceanography', 'marine-science'],
+      topics: ['ocean-light-zones', 'ocean-depth', 'challenger-deep', 'mount-everest'],
+    });
     expect(parsed.timeliness).toBe('evergreen');
     expect(parsed.editorialStatus).toBe('approved');
     expect(parsed.sources).toHaveLength(4);

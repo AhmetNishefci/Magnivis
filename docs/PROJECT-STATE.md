@@ -21,34 +21,37 @@ Last updated: 2026-09-27
 - Video 005, `human-engineering`, has first-party Emaar/CTG/CERN/Swiss government research, original procedural engineering visuals and sound, six modular narration cues, positioned optional captions, and a 31-second production master that passed automated media QA, representative-frame review, and local human review.
 - The first long-form candidate, `The True Scale of the Universe`, has a bounded research/story brief in `docs/LONGFORM-001-BRIEF.md`; implementation has not begun.
 - The Phase 0 repository audit confirmed a clean `main` branch synchronized with `origin/main`, a passing typecheck/lint/39-test suite, five compilable Remotion compositions, and a passing Video 005 ffprobe/frame QA run.
-- The durable strategy now defines Magnivis as one multi-pillar, multi-platform knowledge-media brand whose fundamental editorial unit is a reusable knowledge package. `docs/ARCHITECTURE.md` distinguishes this planned engine from the implemented production subsystem.
+- The durable strategy now defines Magnivis as an open-ended curiosity/understanding brand whose fundamental editorial unit is a reusable knowledge package. Discovery precedes classification; broad pillars support analytics and never whitelist subjects.
 - Knowledge Package V1 is implemented with quantitative/qualitative claims, evidence references, five verification states, reviewed approval metadata, claim-linked hooks/opportunities, and a deterministic duplicate-safe registry.
 - `speed-of-light` is the first production knowledge package. Video 004 reaches its package/claim/hook selection through a ContentAsset, and `src/data/light.ts` projects unchanged numeric inputs for the existing composition without duplicating factual values.
 - Content Asset V1 is implemented with platform-neutral purpose/angle, package hook and claim selection, factual script traceability, narrative beats, visual intent, narration direction, approval state, and a deterministic registry.
-- The `speed-of-light` package backs two assets: the production-ready published Video 004 story and a distinct unproduced cosmic-distance draft. Video 004 references the production asset and derives its narration text from it without changing render inputs.
+- The `speed-of-light` package backs two assets: the production-ready published Video 004 story and a distinct unproduced cosmic-distance draft. Video 004 reaches the production asset through its YouTube Shorts variant and derives narration text from the asset without changing render inputs.
 - Ocean Depth generalization is complete. The production `ocean-depth` KnowledgePackage models qualitative claims, a conventional approximate range, scalar measurement uncertainty, and survey-dependent context; its production ContentAsset supplies Video 002's unchanged narration, and the compatibility projection supplies unchanged numeric composition inputs.
-- Videos 001, 003, and 005 intentionally remain on the legacy fact path. PlatformVariant remains planned and unimplemented.
+- The KnowledgePackage taxonomy now uses seven broad analytics pillars plus open normalized domains/topics. Existing Speed of Light and Ocean Depth packages are migrated, and validation proves philosophy, medicine/anatomy, biology, and movie-plus-physics classification requires no domain enum or source-code authorization.
+- PlatformVariant V1 is implemented for YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels using dated platform profiles, versioned safe-area profiles, claim-safe packaging, approval/readiness invariants, and deterministic registration.
+- One production Speed of Light ContentAsset now backs four meaningful platform adaptations. Video 004 references the production-ready YouTube variant; the other three remain in editorial review and do not publish anything.
+- Videos 001, 003, and 005 intentionally remain on the legacy fact path. PublicationRecord and publishing integrations remain planned and unimplemented.
 
 ## NOW
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
 - Revisit Video 003 when its detailed retention curve and unique-viewer reports finish processing; identify the first material drop before drawing scene-level conclusions.
-- Review the completed Ocean Depth cross-domain generalization before authorizing another migration or abstraction.
+- Review the completed open-taxonomy and PlatformVariant milestone before authorizing publication infrastructure or another migration.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
-- Preserve the current publishing workflow while the new cross-platform content model is introduced incrementally.
+- Preserve the current manual, human-approved publishing workflow. PlatformVariant describes an adaptation but performs no external action.
 
 ## NEXT
 
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
 - Record Video 004's first 24-hour performance snapshot after its reports have processed.
 - Publish Video 005 manually only after the private platform review passes and the spacing decision is confirmed.
-- Choose the next bounded milestone explicitly; do not migrate another legacy video or begin PlatformVariant without approval.
+- Choose the next bounded milestone explicitly; do not migrate another legacy video or implement publication/publishing APIs without approval.
 - Add long-form production only after the content-intelligence and asset boundaries are proven.
 
 ## LATER
 
-- Topic discovery assistance, platform export manifests, 6–12 minute landscape production, alternate narration voices, localization, analytics ingestion, owned-site publishing, approved private-upload adapters, queues/databases, and cloud rendering only when justified by the phased roadmap.
+- Topic discovery assistance, publication manifests/records, 6–12 minute landscape production, alternate narration voices, localization, analytics ingestion, owned-site publishing, approved private-upload adapters, queues/databases, and cloud rendering only when justified by the phased roadmap.
 
 ## NOT PLANNED
 

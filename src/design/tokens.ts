@@ -14,15 +14,7 @@ export const typography = {
   body: '"Manrope", system-ui, sans-serif',
 } as const;
 
-export const shortSafeArea = {
-  top: 150,
-  right: 190,
-  bottom: 310,
-  left: 84,
-} as const;
-
 export const motion = {
   textRevealFrames: 14,
   sceneFadeFrames: 14,
 } as const;
-

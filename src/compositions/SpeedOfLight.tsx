@@ -9,11 +9,13 @@ import {ShortSafeArea} from '../components/ShortSafeArea';
 import {RevealText} from '../components/Typography';
 import {speedOfLight} from '../content/videos/speed-of-light';
 import {lightScale} from '../data/light';
+import {safeAreaProfileIds} from '../design/safe-areas';
 import {palette, typography} from '../design/tokens';
 import {easeInOutCubic, easeOutQuint, mix, progress} from '../utils/math';
 
 const fps = speedOfLight.format.fps;
 const seconds = (value: number) => value * fps;
+const masterSafeArea = safeAreaProfileIds.verticalShortMaster;
 
 const Hook = () => {
   const frame = useCurrentFrame();
@@ -23,7 +25,7 @@ const Hook = () => {
     <SceneWindow start={0} end={seconds(4.45)} fadeIn={2} fadeOut={10}>
       <LightAtmosphere />
       <PhotonOrbit amount={amount} />
-      <ShortSafeArea>
+      <ShortSafeArea profileId={masterSafeArea}>
         <RevealText at={-16} eyebrow="IN ONE SECOND" style={{fontSize: 88, fontWeight: 700, lineHeight: 0.9, letterSpacing: '-0.06em'}}>
           LIGHT CIRCLES
           <br />
@@ -46,7 +48,7 @@ const ExactSpeed = () => {
     <SceneWindow start={seconds(3.65)} end={seconds(10.2)} fadeIn={10} fadeOut={12}>
       <LightAtmosphere intensity={0.6} />
       <LightTunnel amount={amount} />
-      <ShortSafeArea>
+      <ShortSafeArea profileId={masterSafeArea}>
         <RevealText at={seconds(3.85)} eyebrow="IN A VACUUM" style={{fontSize: 73, fontWeight: 700, lineHeight: 0.92}}>
           {displayed.toLocaleString('en-US', {minimumFractionDigits: 3, maximumFractionDigits: 3})}
           <br />
@@ -67,7 +69,7 @@ const MoonScene = () => {
       <CelestialBody kind="earth" diameter={260} centerX={250} centerY={1120} rotationSpeed={0.018} />
       <Moon centerX={840} centerY={920} diameter={105} />
       <DistanceBeam amount={amount} start={{x: 365, y: 1080}} end={{x: 785, y: 940}} />
-      <ShortSafeArea>
+      <ShortSafeArea profileId={masterSafeArea}>
         <RevealText at={seconds(9.25)} eyebrow="EARTH → MOON" style={{fontSize: 105, fontWeight: 700, lineHeight: 0.86}}>
           ≈1.28
           <br />SECONDS
@@ -87,7 +89,7 @@ const SunScene = () => {
       <CelestialBody kind="sun" diameter={470} centerX={205} centerY={1110} />
       <CelestialBody kind="earth" diameter={92} centerX={868} centerY={1020} rotationSpeed={0.018} />
       <DistanceBeam amount={amount} start={{x: 414, y: 1070}} end={{x: 820, y: 1025}} />
-      <ShortSafeArea>
+      <ShortSafeArea profileId={masterSafeArea}>
         <RevealText at={seconds(14.15)} eyebrow="SUN → EARTH" style={{fontSize: 92, fontWeight: 700, lineHeight: 0.88}}>
           8 MINUTES
           <br />20 SECONDS
@@ -105,7 +107,7 @@ const LightYearScene = () => {
     <SceneWindow start={seconds(19.85)} end={seconds(26.7)} fadeIn={10} fadeOut={12}>
       <LightAtmosphere intensity={0.55} />
       <LightTunnel amount={amount} />
-      <ShortSafeArea>
+      <ShortSafeArea profileId={masterSafeArea}>
         <RevealText at={seconds(20.05)} eyebrow="ONE YEAR OF LIGHT" style={{fontSize: 99, fontWeight: 700, lineHeight: 0.86}}>
           9.46
           <br />TRILLION KM
@@ -124,7 +126,7 @@ const ProximaScene = () => {
     <SceneWindow start={seconds(25.4)} end={seconds(33)} fadeIn={11} fadeOut={1}>
       <LightAtmosphere intensity={0.42} />
       <ProximaDistance amount={amount} />
-      <ShortSafeArea>
+      <ShortSafeArea profileId={masterSafeArea}>
         <RevealText at={seconds(25.6)} eyebrow="THE NEAREST STAR" style={{fontSize: 91, fontWeight: 700, lineHeight: 0.88}}>
           4.25 YEARS
           <br />AT LIGHT SPEED

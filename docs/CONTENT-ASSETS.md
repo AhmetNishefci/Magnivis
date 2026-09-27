@@ -11,17 +11,17 @@ KnowledgePackage
 ContentAsset
   selected angle, hook, claims, script, narrative and visual intent
         ↓
+PlatformVariant
+  platform-specific adaptation, metadata, safe areas and CTA
+        ↓
 VideoSpec + Remotion
   exact format, frames, timing, coordinates, audio files and choreography
-        ↓
-future PlatformVariant
-  platform-specific adaptation, metadata, safe areas and CTA
         ↓
 future PublicationRecord
   upload/publication state and remote identifiers
 ```
 
-PlatformVariant and PublicationRecord are boundaries only; neither is implemented.
+PlatformVariant V1 is implemented for the production Speed of Light asset. PublicationRecord remains a boundary only and is not implemented. See `docs/PLATFORM-VARIANTS.md`.
 
 ## Implemented schema
 
@@ -70,7 +70,7 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 
 ## Production assets
 
-`speed-of-light.asset.earth-to-proxima` represents published Video 004. Its exact narration text is consumed by `VideoSpec`, while files, cue starts, scenes, format, captions, and Remotion choreography remain production concerns.
+`speed-of-light.asset.earth-to-proxima` represents published Video 004. Its exact narration text is consumed by `VideoSpec`, while files, cue starts, scenes, format, and Remotion choreography remain production concerns. Four PlatformVariants adapt its packaging and delivery intent; the YouTube variant is the production reference used by Video 004.
 
 `speed-of-light.asset.cosmic-distance` is a second, unproduced draft from the same package. It asks why light still takes years to reach the nearest neighboring star, explains a light-year as distance, and resolves the story with the scale of space. It deliberately omits the published asset's Earth-lap and Moon progression.
 
@@ -87,12 +87,11 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 5. Describe narrative beats without frame timing.
 6. Describe visual objectives without production choreography or platform packaging.
 7. Register the asset and add schema/reference tests.
-8. When production begins, reference the asset from the corresponding VideoSpec and retain regression coverage.
+8. Create a PlatformVariant when a destination-specific adaptation is required. Reference that variant from the VideoSpec implementing it; otherwise a direct ContentAsset reference remains valid. Retain regression coverage.
 
 ## Intentionally unimplemented
 
 - Article and newsletter asset types
-- PlatformVariant and platform-specific metadata/adaptation
 - PublicationRecord and publishing APIs
 - Editorial transition commands or workflow automation
 - Asset sourcing/generation automation

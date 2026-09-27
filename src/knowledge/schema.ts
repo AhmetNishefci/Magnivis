@@ -1,19 +1,9 @@
 import {z} from 'zod';
+import {knowledgeTaxonomySchema} from './taxonomy';
 
 export const stableKnowledgeIdSchema = z
   .string()
   .regex(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/);
-
-export const contentPillarSchema = z.enum([
-  'human-psychology',
-  'universe',
-  'science',
-  'nature-earth',
-  'history',
-  'technology',
-  'money-society',
-  'everyday-mysteries',
-]);
 
 export const timelinessSchema = z.enum([
   'evergreen',
@@ -177,7 +167,7 @@ export const knowledgePackageSchema = z.object({
   revision: z.number().int().positive(),
   topic: z.string().min(1),
   centralQuestion: z.string().min(1),
-  pillar: contentPillarSchema,
+  taxonomy: knowledgeTaxonomySchema,
   timeliness: timelinessSchema,
   thesis: z.string().min(1),
   viewerPayoff: z.string().min(1),

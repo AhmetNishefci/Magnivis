@@ -66,6 +66,7 @@ export const videoSpecSchema = z.object({
   scenes: z.array(sceneSchema).min(1),
   factIds: z.array(z.string().min(1)).default([]),
   contentAssetId: stableKnowledgeIdSchema.optional(),
+  platformVariantId: stableKnowledgeIdSchema.optional(),
   audio: z.object({
     file: z.string().min(1),
     layers: z.array(z.enum(['music', 'ambient', 'transition', 'impact', 'narration', 'silence'])),
@@ -80,11 +81,17 @@ export const videoSpecSchema = z.object({
 }).superRefine((video, context) => {
   const usesLegacyFacts = video.factIds.length > 0;
   const usesContentAsset = Boolean(video.contentAssetId);
-  if (usesLegacyFacts === usesContentAsset) {
+  const usesPlatformVariant = Boolean(video.platformVariantId);
+  const referenceCount = [
+    usesLegacyFacts,
+    usesContentAsset,
+    usesPlatformVariant,
+  ].filter(Boolean).length;
+  if (referenceCount !== 1) {
     context.addIssue({
       code: 'custom',
-      path: ['contentAssetId'],
-      message: 'A video must use either legacy factIds or one content-asset reference',
+      path: ['platformVariantId'],
+      message: 'A video must use exactly one of legacy factIds, contentAssetId, or platformVariantId',
     });
   }
 });

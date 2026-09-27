@@ -8,7 +8,7 @@
 - Promise: every piece of content should leave the viewer knowing something fascinating they did not know before.
 - Editorial reaction: **“Wait… really?”** followed by **“Now I understand why.”**
 
-Magnivis is global, English-first, faceless, intelligent, and accessible without becoming childish. It began with visual scale and science, but its identity now spans trustworthy knowledge storytelling across humans, the universe, science, Earth, history, technology, money/society, and everyday mysteries. The unifier is curiosity resolved through clear explanation—not a single subject category.
+Magnivis is global, English-first, faceless, intelligent, and accessible without becoming childish. It began with visual scale and science, but it is an open-ended knowledge and understanding brand rather than a fixed set of niches. The unifier is curiosity resolved through clear explanation—not a single subject category. Topic discovery comes first; classification exists only to organize and learn from the portfolio.
 
 ## Visual language
 

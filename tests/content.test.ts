@@ -15,6 +15,10 @@ import {
 } from '../src/content-assets/assets/speed-of-light';
 import {oceanDepthPublishedShortAsset} from '../src/content-assets/assets/ocean-depth';
 import {contentAssetRegistry} from '../src/content-assets/registry';
+import {platformVariantRegistry} from '../src/platform-variants/registry';
+import {
+  speedOfLightYoutubeShortsVariant,
+} from '../src/platform-variants/variants/speed-of-light';
 
 const shortCaptionFiles = [
   'captions/earth-to-stars.en.vtt',
@@ -177,10 +181,13 @@ describe('speed-of-light specification', () => {
     expect(starts.every((start) => start < speedOfLight.format.durationSeconds)).toBe(true);
   });
 
-  it('references its production-ready editorial content asset', () => {
+  it('references its production-ready YouTube variant and editorial content asset', () => {
     expect(speedOfLight.factIds).toEqual([]);
-    expect(speedOfLight.contentAssetId).toBe(speedOfLightPublishedShortAsset.id);
-    expect(contentAssetRegistry.get(speedOfLight.contentAssetId!)).toEqual(
+    expect(speedOfLight.contentAssetId).toBeUndefined();
+    expect(speedOfLight.platformVariantId).toBe(speedOfLightYoutubeShortsVariant.id);
+    const variant = platformVariantRegistry.get(speedOfLight.platformVariantId!);
+    expect(variant.contentAssetId).toBe(speedOfLightPublishedShortAsset.id);
+    expect(contentAssetRegistry.get(variant.contentAssetId)).toEqual(
       speedOfLightPublishedShortAsset,
     );
   });

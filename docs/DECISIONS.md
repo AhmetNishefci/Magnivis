@@ -1,5 +1,25 @@
 # Significant decisions
 
+## 2026-09-27 — Discover first and classify second
+
+**Decision:** Magnivis is an open-ended curiosity and understanding brand. Knowledge packages use seven stable high-level analytics pillars plus open normalized domain/topic slugs. Pillars organize reporting and editorial balance; they do not whitelist subjects. Cross-domain work can record multiple domains and use `interdisciplinary` when no single grouping honestly leads.
+
+**Reason:** The original eight launch categories were useful prompts but became an accidental source-code permission gate. Future discovery must be able to find a strong philosophy, medical, cultural, historical, scientific, or unanticipated story before deciding where it belongs.
+
+**Alternatives:** Keep the eight-value enum (blocks legitimate subjects); enumerate every possible domain (unbounded and brittle); use only free-form tags (loses a stable aggregate for portfolio analytics); build an ontology service (far beyond current need).
+
+**Consequences:** Existing packages migrate to the new taxonomy. Domains and topics require normalized unique slugs but no enum changes. Editorial fit, evidence, rights, and viewer value authorize a story—not its classification. `docs/STRATEGY.md` is the canonical policy.
+
+## 2026-09-27 — Separate platform adaptation from assets and publication
+
+**Decision:** PlatformVariant V1 sits between ContentAsset and a production representation. It owns destination packaging, a dated platform-constraint reference, safe-area reference, caption/cover behavior, production intent, readiness, and approval. ContentAsset stays platform-neutral; future PublicationRecord owns actual external state.
+
+**Reason:** One editorial story needs distinct packaging and review for different distribution surfaces without duplicating research, scripts, or renders. Platform rules change, so constraints must be dated and source-linked rather than embedded as timeless editorial facts.
+
+**Alternatives:** Put all platforms in ContentAsset (couples story to distribution); copy ContentAssets per platform (fake editorial duplication); put publishing state in PlatformVariant (mixes desired adaptation with external side effects); build API clients now (not needed to prove the model).
+
+**Consequences:** The production Speed of Light asset has four registered variants; only its retrospective YouTube variant is production-ready. Video 004 references that variant and preserves the existing master. TikTok, Instagram, and Facebook variants require manual platform previews and cause no external action. Safe-area profiles are versioned internal design aids, not platform guarantees.
+
 ## 2026-09-27 — Model numeric shape separately from epistemic status
 
 **Decision:** Quantitative claims use either a scalar quantity or a bounded range. Scalars may carry positive symmetric measurement uncertainty and an optional confidence description. Precision (`exact`, `rounded`, or `approximate`) remains separate from verification status.
@@ -12,11 +32,11 @@
 
 ## 2026-09-27 — Separate editorial assets from production specifications
 
-**Decision:** ContentAsset V1 is a platform-neutral editorial object between KnowledgePackage and VideoSpec. It owns purpose, angle, selected package hook/claims, claim-linked script segments, narrative beats, visual intent, narration direction, and readiness. VideoSpec owns exact format, frames, timing, files, captions, audio cues, and Remotion choreography. Future PlatformVariant and PublicationRecord remain separate and unimplemented.
+**Decision:** ContentAsset V1 is a platform-neutral editorial object between KnowledgePackage and downstream adaptation/production. It owns purpose, angle, selected package hook/claims, claim-linked script segments, narrative beats, visual intent, narration direction, and readiness. VideoSpec owns exact format, frames, timing, files, captions, audio cues, and Remotion choreography. PlatformVariant and PublicationRecord remain separate boundaries; PlatformVariant was subsequently implemented while PublicationRecord remains planned.
 
 **Reason:** One researched topic must support multiple legitimate stories without copying research or turning production choreography into the editorial model. Script segment claim references provide useful fact-checking traceability without annotating connective language.
 
-**Alternatives:** Keep VideoSpec as both editorial and production data (prevents clean reuse); put frames and coordinates in ContentAsset (couples editorial intent to Remotion); introduce platform variants now (outside the current proof and premature).
+**Alternatives:** Keep VideoSpec as both editorial and production data (prevents clean reuse); put frames and coordinates in ContentAsset (couples editorial intent to Remotion); introduce platform variants in the same milestone (outside that proof and premature at that point).
 
 **Consequences:** Video 004 references a production-ready ContentAsset and derives narration text from it. A second draft asset proves one-to-many reuse without a render. Existing legacy VideoSpecs remain unchanged. Some production/platform/publication-shaped fields remain in the legacy VideoSpec until a later bounded migration.
 
@@ -24,7 +44,7 @@
 
 **Status:** The direct VideoSpec-to-KnowledgePackage reference described here was superseded by the Content Asset V1 decision above. The compatibility projection and all render-safety reasoning remain active.
 
-**Decision:** Knowledge Package V1 uses global `source.*` IDs, package-namespaced claim/hook IDs, and claim-level evidence. Video 004 references its package directly, while `src/data/light.ts` projects quantitative package claims into the legacy fact shape consumed by its unchanged Remotion composition. `VideoSpec` permits either legacy facts or one package reference, never both.
+**Decision:** Knowledge Package V1 uses global `source.*` IDs, package-namespaced claim/hook IDs, and claim-level evidence. Video 004 reaches its package through a downstream ContentAsset (and now a YouTube PlatformVariant), while `src/data/light.ts` projects quantitative package claims into the legacy fact shape consumed by its unchanged Remotion composition. `VideoSpec` permits exactly one legacy-fact, ContentAsset, or PlatformVariant reference path.
 
 **Reason:** This establishes the knowledge package as the factual source of truth without coupling reusable research to production choreography or risking changes to a published video. Global source IDs allow exact source records to be reused safely; package-scoped claim IDs remain unambiguous through the package reference.
 

@@ -72,3 +72,5 @@ export const contentAssetRegistry = createContentAssetRegistry([
   speedOfLightPublishedShortAsset,
   speedOfLightCosmicDistanceAsset,
 ]);
+
+export type ContentAssetRegistry = ReturnType<typeof createContentAssetRegistry>;

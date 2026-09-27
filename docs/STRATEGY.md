@@ -8,18 +8,35 @@ Every piece of content should leave the viewer knowing something fascinating the
 
 The intended reaction is: **“Wait… really?”** followed by **“Now I understand why.”** Curiosity earns the click, knowledge provides value, storytelling creates retention, and accuracy creates trust.
 
-## Content pillars
+## Editorial identity and discovery principle
 
-1. Human and psychology
-2. Universe
-3. Science
-4. Nature and Earth
-5. History
-6. Technology
-7. Money and society
-8. Everyday mysteries
+Magnivis is a **curiosity-driven knowledge and understanding brand**. It is not fundamentally a science, history, astronomy, psychology, facts, or eight-category channel. It can explain fascinating things about people, society, history, nature, reality, ideas, events, stories, technology, culture, the world, and the universe when the subject supports trustworthy educational storytelling.
 
-These are one brand's internal editorial pillars, not separate accounts. New pillars require evidence and a coherent fit with the viewer promise.
+The permanent operating principle is:
+
+> **Discover first. Classify second.**
+
+Future discovery should search broadly for excellent opportunities, evaluate whether they satisfy the viewer promise and evidence standards, and only then classify them for organization and learning. Classification helps editorial balance and performance analysis; it does not grant permission to create content.
+
+### Taxonomy semantics
+
+Knowledge packages use three classification layers:
+
+- one stable high-level **pillar** for coarse portfolio analytics;
+- one or more open-ended **domains** for relevant fields of knowledge;
+- one or more open-ended **topics** for the actual subject matter.
+
+The current pillars are `human-life`, `society-culture`, `science-reality`, `earth-nature`, `history-stories`, `technology-built-world`, and `interdisciplinary`. They are intentionally broad analytics groupings, not niches or a subject whitelist. Domains and topics are normalized lowercase slugs rather than enums. A new legitimate domain such as `philosophy`, `medicine`, `linguistics`, `film-studies`, or a field not yet anticipated requires no schema or source-code change. Cross-domain packages record every materially relevant domain and may use `interdisciplinary` when no single grouping honestly leads.
+
+### Broad-scope editorial standards
+
+- Movies, documentaries, books, art, music, and other cultural works are valid when the result is transformative explanation, criticism, historical context, scientific analysis, psychology, philosophy, or thematic commentary. Do not design around copying protected footage; provenance and licensing still apply.
+- Psychology and human-behavior stories must distinguish credible evidence from pop psychology. Preserve study scope, limitations, and uncertainty where material; avoid simplistic lie-detection, body-language, manipulation, or universal relationship rules.
+- Medicine, anatomy, psychiatry, and human biology are educational subjects, not personalized medical advice. Use appropriate sources and communicate evidential limits.
+- History, war, espionage, and political history must distinguish established facts, primary-source assertions, disputed interpretation, and later scholarship. Magnivis explains rather than campaigns for partisan positions.
+- Mysteries are welcome when the evidence can be handled responsibly. Unresolved does not mean permission to manufacture certainty.
+
+Future topic discovery should consider curiosity, surprise, educational payoff, story and visual potential, source quality, novelty, evergreen value, audience fit, emotional interest, follow-up potential, saturation, and Magnivis's own historical performance. These are decision inputs, not fake-precision scores. Audience evidence should help Magnivis discover its strongest concentrations over time instead of locking the brand into predetermined niches.
 
 ## Fundamental content model
 

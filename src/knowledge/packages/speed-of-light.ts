@@ -36,7 +36,11 @@ export const speedOfLightKnowledgePackage = knowledgePackageSchema.parse({
   revision: 1,
   topic: 'The speed of light across planetary and interstellar distances',
   centralQuestion: 'How fast is light, and why do cosmic distances still make it feel slow?',
-  pillar: 'universe',
+  taxonomy: {
+    pillar: 'science-reality',
+    domains: ['physics', 'astronomy'],
+    topics: ['speed-of-light', 'light-travel-time', 'cosmic-distance'],
+  },
   timeliness: 'evergreen',
   thesis: 'Light crosses familiar planetary distances almost instantly, but the scale of space turns even nature’s speed limit into years of travel.',
   viewerPayoff: 'The viewer gains an intuitive ladder from Earth laps to the Moon, Sun, a light-year, and Proxima Centauri—and understands that a light-year measures distance.',

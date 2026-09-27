@@ -7,6 +7,10 @@ import {
   speedOfLightContentAssetIds,
   speedOfLightPublishedShortAsset,
 } from '../src/content-assets/assets/speed-of-light';
+import {platformVariantRegistry} from '../src/platform-variants/registry';
+import {
+  speedOfLightPlatformVariantIds,
+} from '../src/platform-variants/variants/speed-of-light';
 
 const sha256 = (file: string) => createHash('sha256')
   .update(readFileSync(file))
@@ -78,9 +82,15 @@ describe('published Speed of Light production regression', () => {
     });
   });
 
-  it('links the video to its content asset without retaining legacy fact IDs', () => {
+  it('links the video through its YouTube variant without retaining legacy fact IDs', () => {
     expect(speedOfLight.factIds).toEqual([]);
-    expect(speedOfLight.contentAssetId).toBe(speedOfLightContentAssetIds.publishedShort);
+    expect(speedOfLight.contentAssetId).toBeUndefined();
+    expect(speedOfLight.platformVariantId).toBe(
+      speedOfLightPlatformVariantIds.youtubeShorts,
+    );
+    expect(
+      platformVariantRegistry.get(speedOfLight.platformVariantId!).contentAssetId,
+    ).toBe(speedOfLightContentAssetIds.publishedShort);
     expect(speedOfLightPublishedShortAsset.knowledgePackageId).toBe('speed-of-light');
   });
 

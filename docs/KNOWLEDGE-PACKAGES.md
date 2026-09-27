@@ -8,7 +8,7 @@ Knowledge Package V1 is the implemented editorial layer above production. It own
 
 - stable package ID and positive integer revision;
 - topic, central question, thesis, and viewer payoff;
-- one of the eight approved content pillars;
+- an open-ended taxonomy containing one broad analytics pillar plus normalized domains and topics;
 - `evergreen`, `trend-assisted`, or `timely` classification;
 - traceable sources and quantitative/qualitative claims;
 - package caveats, hook variants, narrative opportunities, and visual opportunities;
@@ -46,6 +46,12 @@ An approved package may include `uncertain` or `conflicting` claims only when th
 - Every claim evidence reference must resolve to a source in its package.
 - Every caveat, hook, narrative opportunity, and visual opportunity claim reference must resolve within the package.
 
+## Taxonomy semantics
+
+`taxonomy.pillar` is one of seven intentionally broad, stable groupings: `human-life`, `society-culture`, `science-reality`, `earth-nature`, `history-stories`, `technology-built-world`, or `interdisciplinary`. A pillar supports coarse portfolio reporting; it is not editorial permission and does not define Magnivis's subject limits.
+
+`taxonomy.domains` and `taxonomy.topics` are unique normalized lowercase slugs. They are deliberately open-ended, so a package about philosophy, medicine, biology, film analysis, or an unforeseen legitimate field does not require an enum change. Multiple domains represent cross-disciplinary work naturally. Use specific, meaningful terms rather than synonyms added merely to inflate metadata. The canonical discover-first/classify-second policy is in `docs/STRATEGY.md`.
+
 ## Relationship to content assets and video production
 
 KnowledgePackage is the reusable research source. ContentAsset selects one editorial angle, package hook, and subset of claims, then adds a traceable script, narrative structure, visual intent, and narration direction. See `docs/CONTENT-ASSETS.md`.
@@ -53,11 +59,12 @@ KnowledgePackage is the reusable research source. ContentAsset selects one edito
 `VideoSpec` is the concrete production representation. A video uses exactly one of:
 
 - legacy `factIds`, for productions not yet migrated; or
-- `contentAssetId`, for a migrated production.
+- `contentAssetId`, for a migrated production without a platform adaptation; or
+- `platformVariantId`, when a concrete production implements a platform adaptation.
 
-Videos 002 and 004 reference production ContentAssets. Their packages remain the source of truth for sources and claims. `src/data/ocean.ts` and `src/data/light.ts` are narrow compatibility projections that convert package claims into the existing numeric inputs consumed by unchanged compositions. They contain no duplicated factual values.
+Video 002 references its production ContentAsset. Video 004 references its YouTube Shorts PlatformVariant, which references its production ContentAsset. Their packages remain the source of truth for sources and claims. `src/data/ocean.ts` and `src/data/light.ts` are narrow compatibility projections that convert package claims into the existing numeric inputs consumed by unchanged compositions. They contain no duplicated factual values.
 
-The editorial script belongs to ContentAsset. Exact scene timing, narration files and cue starts, captions, sound, and composition choreography remain production concerns in `VideoSpec` and Remotion. Platform adaptation and publication are future separate boundaries; legacy VideoSpec fields remain until a bounded migration is approved.
+The editorial script belongs to ContentAsset. Exact scene timing, narration files and cue starts, sound, and composition choreography remain production concerns in `VideoSpec` and Remotion. Platform packaging, caption behavior, duration constraints, cover intent, and safe-area selection belong to PlatformVariant. Actual publication remains a future separate boundary; legacy VideoSpec fields remain until a bounded migration is approved.
 
 ## Adding the next package
 
@@ -67,7 +74,7 @@ The editorial script belongs to ContentAsset. Exact scene timing, narration file
 4. Add genuinely different hook archetypes and claim-linked narrative/visual opportunities.
 5. Register the package in `src/knowledge/registry.ts`.
 6. Create and register a ContentAsset that selects the package hook and claims.
-7. Link the downstream video through `VideoSpec.contentAssetId`; remove duplicated legacy fact IDs for that video.
+7. Create/register a PlatformVariant when platform adaptation is in scope; otherwise link through `VideoSpec.contentAssetId`. A production implementing a variant links through `VideoSpec.platformVariantId`. Remove duplicated legacy fact IDs for that video.
 8. If the existing composition still requires the legacy fact shape, derive it in a narrow compatibility projection.
 9. Add schema, registry, reference, and production-regression tests.
 10. Update `docs/PROJECT-STATE.md` and relevant research notes.
@@ -76,7 +83,7 @@ The editorial script belongs to ContentAsset. Exact scene timing, narration file
 
 - Editorial transition commands or workflow automation
 - Topic scoring and discovery automation
-- Platform variants and publishing records
+- Publication records and publishing adapters
 - Analytics and cost records
 - Databases, queues, workers, APIs, dashboards, CMS, or provider abstractions
 

@@ -11,6 +11,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 ## Permanent rules
 
 - Preserve the cinematic, minimal, scientifically credible brand in `docs/BRAND.md` and `docs/CONTENT-BIBLE.md`.
+- Magnivis is an open-ended curiosity and understanding brand. **Discover first, classify second.** High-level pillars organize the portfolio; they are never a whitelist. Domains and topics are open normalized terms, and legitimate new subjects do not require source-code authorization.
 - Treat a verified knowledge package—not a finished video—as the durable editorial unit. Platform assets should reference that package and adapt it without silently changing its claims.
 - Keep video content/data separate from reusable rendering primitives. Avoid one-off monoliths and premature generic frameworks.
 - Verify material claims against appropriate authoritative sources. Preserve claim-level evidence, status, caveats, URLs, and retrieval dates. Never fabricate citations or imply uncertain evidence is settled.
@@ -30,6 +31,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - System boundaries and target architecture: `docs/ARCHITECTURE.md`
 - Knowledge package model and verification semantics: `docs/KNOWLEDGE-PACKAGES.md`
 - Content asset model and editorial/production boundary: `docs/CONTENT-ASSETS.md`
+- Platform adaptation, constraint profiles, and safe areas: `docs/PLATFORM-VARIANTS.md`
 - Brand and creative direction: `docs/BRAND.md`, `docs/CONTENT-BIBLE.md`
 - Architecture and commands: `docs/VIDEO-SYSTEM.md`
 - Scientific sourcing: `docs/RESEARCH-STANDARDS.md`

@@ -4,6 +4,8 @@
 
 Magnivis is a faceless English-language knowledge-media brand that turns fascinating ideas into cinematic, trustworthy stories. This repository currently contains the working TypeScript/React/Remotion production system; it is evolving incrementally toward reusable, verified knowledge packages and multi-platform assets. See `docs/ARCHITECTURE.md` for implemented versus planned boundaries.
 
+Magnivis is open-ended: it discovers compelling knowledge opportunities first and classifies them second. High-level pillars are portfolio groupings, not a whitelist of permissible subjects. See `docs/STRATEGY.md`.
+
 ## Requirements
 
 - Node.js 20 LTS (`.nvmrc`)
@@ -74,6 +76,10 @@ Videos 004 and 002 are migrated from video-first facts to reusable Knowledge Pac
 ## Content assets
 
 The Speed of Light package supports two platform-neutral ContentAssets, while Ocean Depth has one production asset for published Video 002. See `docs/CONTENT-ASSETS.md` for script traceability, hook ownership, visual planning, and the ContentAsset-to-VideoSpec boundary.
+
+## Platform variants
+
+The published Speed of Light ContentAsset has four V1 adaptations for YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels. They share verified claims and the existing master while recording meaningful packaging, caption, cover, safe-area, and review differences. No upload or publishing integration is implemented. See `docs/PLATFORM-VARIANTS.md`.
 
 Run all non-rendering checks with:
 

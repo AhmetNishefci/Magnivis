@@ -4,6 +4,10 @@ import {
   speedOfLightPublishedShortAsset,
 } from '../../content-assets/assets/speed-of-light';
 import {contentAssetRegistry} from '../../content-assets/registry';
+import {platformVariantRegistry} from '../../platform-variants/registry';
+import {
+  speedOfLightYoutubeShortsVariant,
+} from '../../platform-variants/variants/speed-of-light';
 
 const scriptText = (segmentId: string) => {
   const segment = speedOfLightPublishedShortAsset.script.segments.find(
@@ -45,7 +49,7 @@ export const speedOfLight = videoSpecSchema.parse({
     {id: 'light-year', start: 20, end: 26.6, purpose: 'Define a light-year as distance rather than time.'},
     {id: 'proxima', start: 25.4, end: 33, purpose: 'End by making even light feel slow against interstellar distance.'},
   ],
-  contentAssetId: speedOfLightPublishedShortAsset.id,
+  platformVariantId: speedOfLightYoutubeShortsVariant.id,
   audio: {
     file: 'audio/speed-of-light.wav',
     layers: ['ambient', 'transition', 'impact', 'narration'],
@@ -61,9 +65,15 @@ export const speedOfLight = videoSpecSchema.parse({
   },
 });
 
-if (!speedOfLight.contentAssetId) {
-  throw new Error('Speed of Light must reference its production content asset');
+if (!speedOfLight.platformVariantId) {
+  throw new Error('Speed of Light must reference its production platform variant');
 }
-contentAssetRegistry.get(speedOfLight.contentAssetId);
+const speedOfLightProductionVariant = platformVariantRegistry.get(
+  speedOfLight.platformVariantId,
+);
+if (speedOfLightProductionVariant.contentAssetId !== speedOfLightPublishedShortAsset.id) {
+  throw new Error('Speed of Light platform variant must reference its published content asset');
+}
+contentAssetRegistry.get(speedOfLightProductionVariant.contentAssetId);
 
 export const speedOfLightFrames = speedOfLight.format.fps * speedOfLight.format.durationSeconds;
