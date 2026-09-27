@@ -1,6 +1,6 @@
 # Content Intelligence V1
 
-Content Intelligence V1 is the implemented, provider-neutral upstream workflow between a discovered idea and Magnivis's existing KnowledgePackage/ContentAsset system. It assists editorial work without granting a model authority to verify facts or approve content.
+Content Intelligence V1 is the implemented upstream workflow between a discovered idea and Magnivis's existing KnowledgePackage/ContentAsset system. It assists editorial work without granting a model authority to verify facts, approve content, or publish anything.
 
 ## Implemented boundary
 
@@ -8,97 +8,140 @@ Content Intelligence V1 is the implemented, provider-neutral upstream workflow b
 manual TopicCandidate
   → AI-assisted TopicEvaluation draft
   → AI-assisted ResearchWorkspace draft
-  → human source retrieval + claim review
-  → approved KnowledgePackage
+  → source retrieval + human claim review
+  → reviewed/approved KnowledgePackage
   → AI-assisted HookProposal batch
-  → human hook promotion/selection
   → AI-assisted ContentAsset draft
-  → human editorial approval
+  → human hook, script, visual, and editorial approval
   → existing PlatformVariant / production / delivery path
 ```
 
-The workflow deliberately does not convert an AI research draft directly into an approved KnowledgePackage. Source retrieval, claim comparison, caveat review, and verification remain explicit human gates.
+The workflow deliberately cannot convert generated research directly into an approved package. A model-proposed source is a lead, a model-proposed claim is unverified, generated hooks are proposals, and generated ContentAssets remain drafts.
 
-## TopicCandidate
+## First real operator trial
 
-`src/content-intelligence/schema.ts` records a stable candidate ID, proposed package ID, title/question, discovery provenance, open taxonomy, timeliness, editorial hypotheses, status, and review metadata. Ratings are not stored on the candidate.
+The first new topic is `topic.wood-frog-freeze`: **How wood frogs survive being frozen**. It was selected because the stopped-heart/recovery contradiction is immediately understandable, the physical and chemical mechanism has strong visual potential, and peer-reviewed plus government sources can support a focused evergreen short.
 
-The evaluation workflow uses categorical `weak`, `mixed`, `strong`, or `unknown` assessments with rationale and uncertainty across curiosity, surprise, usefulness, visual/story potential, verifiability, originality, brand fit, short-form suitability, and long-form depth. It does not calculate a fake virality score.
+The registered `wood-frog-freeze-tolerance` KnowledgePackage and its draft ContentAsset are real review material, not toy fixtures. They preserve:
 
-`topic.speed-of-light` is the first registered candidate. It is explicitly retrospective: its original discovery date was not reconstructed.
+- four retrieved source records: Journal of Experimental Biology, PLOS ONE, PubMed, and the U.S. National Park Service;
+- seven claim records with evidence locations and population/experimental caveats;
+- no `verified` claims and no human approval metadata;
+- four genuinely distinct hook archetypes;
+- a 32–40 second claim-linked script draft;
+- platform-neutral narrative beats and timed visual intent.
 
-## ResearchWorkspace
+The deterministic operator artifact is committed at `content-intelligence/runs/wood-frog-freeze-fixture-v1/`. `review.md` is the human entry point. The run proves serialization, validation, provenance, hashing, gates, and downstream shape without pretending that a paid model ran. Every workflow envelope truthfully records `provider: fixture` and awaits human review.
 
-The research workspace separates source leads from claim candidates:
+## Operator commands
 
-- a provider-proposed source is a lead with `reviewStatus: unreviewed`;
-- a provider-proposed claim must have `verificationStatus: unverified` and no review metadata;
-- every claim evidence reference must resolve to a source lead;
-- claim IDs use the proposed KnowledgePackage namespace;
-- open questions and conflicts remain visible.
+Generate and validate the offline deterministic trial:
 
-The schema rejects model output that self-promotes a source or claim. A human must retrieve sources, confirm that they say what the claim asserts, compare credible evidence, record caveats, and deliberately create or update the KnowledgePackage.
+```bash
+pnpm content:intelligence -- trial wood-frog-freeze --provider fixture \
+  --output content-intelligence/runs/wood-frog-freeze-fixture-v1
+pnpm content:intelligence -- validate wood-frog-freeze \
+  --output content-intelligence/runs/wood-frog-freeze-fixture-v1
+```
 
-Source leads intentionally do not carry a `retrieved` date. That field belongs to an actually inspected KnowledgePackage source and must not be fabricated by a model merely proposing a URL.
+Live execution is deliberately staged so it cannot cross the source-verification pause automatically:
 
-## Hooks and ContentAssets
+```bash
+export OPENAI_API_KEY='set-outside-the-repository'
 
-Hook generation accepts only an approved KnowledgePackage and rejects proposals referencing anything except verified claims. Proposals are not silently inserted into the package. A human may review and promote a genuinely useful proposal into the package's durable hook collection.
+pnpm content:intelligence -- evaluate wood-frog-freeze --provider openai \
+  --output content-intelligence/runs/wood-frog-freeze-live-v1
+pnpm content:intelligence -- research wood-frog-freeze --provider openai \
+  --output content-intelligence/runs/wood-frog-freeze-live-v1
+```
 
-ContentAsset drafting requires:
+After those two runs, a human must retrieve the proposed sources, compare evidence, update the review package, and deliberately choose claim states. Only then should `hooks` and `asset` be run. The all-stage `trial` command is fixture-only specifically to prevent a live model from stepping across this gate.
 
-- an approved KnowledgePackage;
-- verified selected claims;
-- an existing package hook whose required claims are selected;
-- locked package, hook, claim, and asset identities.
+After that review is recorded in the registered package, the remaining live draft stages are:
 
-The returned asset must be an unapproved `draft`. Existing ContentAsset validation still enforces script-to-claim traceability, narrative coverage, visual references, and package relationships. A model cannot approve its own output.
+```bash
+pnpm content:intelligence -- hooks wood-frog-freeze --provider openai \
+  --output content-intelligence/runs/wood-frog-freeze-live-v1
+pnpm content:intelligence -- asset wood-frog-freeze --provider openai \
+  --output content-intelligence/runs/wood-frog-freeze-live-v1
+```
 
-## Provider architecture
+The V1 operator command intentionally supports only this trial topic. To add another trial, define and register its TopicCandidate, review package, draft request/fixture, and CLI topic dispatch explicitly; do not duplicate this topic's claims or bypass the review gate merely to make the CLI generic.
 
-`src/ai/provider.ts` defines the only current AI integration boundary. `generateStructured` sends a versioned workflow prompt to an `AIProvider`, validates the unknown output with Zod, and returns it with provenance:
+`OPENAI_MODEL` can override the configured model for a controlled experiment. Do not use it as permanent hidden configuration; update the versioned defaults when a model choice becomes canonical.
 
-- provider and model;
-- generation timestamp;
-- workflow and output-schema version;
-- input references;
-- optional token usage;
-- optional estimated/actual cost.
+## Provider and model architecture
 
-No vendor SDK or live provider is installed. Tests use an in-memory deterministic fixture provider, so `pnpm check` is offline and credential-free. A future adapter receives both the stable output-schema ID and the Zod schema, may translate that schema into the provider's structured-output mechanism, and must still return unknown data for local validation. It must document environment variables in `.env.example` and never change the human approval rules.
+`src/ai/provider.ts` is the vendor-neutral domain boundary. The production adapter in `src/ai/providers/openai.ts` uses the official OpenAI JavaScript SDK's Responses structured-output path, disables provider-side response storage for these calls, and returns unknown structured output for local Zod validation.
 
-## Prompt architecture
+Workflow-specific model configuration lives in `src/ai/model-config.ts`, not in domain code. It records the model, reasoning effort, output-token ceiling, and a dated pricing snapshot. Provenance records provider, returned model, provider response ID, generation time, workflow/schema versions, input references, token usage when returned, and estimated cost when pricing is configured.
 
-Versioned prompt workflows live in `src/content-intelligence/prompts.ts`:
+No API key is required for installation, tests, fixture trials, or validation. `OPENAI_API_KEY` is read only at the live adapter boundary. Tests inject deterministic fixture providers or a mock Responses client and never call the network.
+
+## Versioned prompts
+
+Prompt workflows live in `src/content-intelligence/prompts.ts` and each owns a stable workflow ID, version, output-schema ID, Zod output schema, system constraints, and deterministic input serializer:
 
 - `workflow.topic-evaluation` v1;
 - `workflow.research-workspace` v1;
-- `workflow.hook-generation` v1;
-- `workflow.content-asset-drafting` v1.
+- `workflow.hook-generation` v1 for approved packages;
+- `workflow.hook-generation-review` v1 for supported review material;
+- `workflow.content-asset-drafting` v1 for approved packages;
+- `workflow.content-asset-review-drafting` v1 for supported review material.
 
-Each definition has a stable ID, version, output-schema ID, explicit system constraints, and one input serializer. Prompts are discoverable through a registry and tested. Research assistance, claim extraction, and conflict capture share the research-workspace boundary in V1; they should split only when real provider behavior proves that separate steps improve reliability.
+The review workflows exist to prepare human-reviewable work before final claim verification. They do not weaken the production path: strict hook/asset drafting still requires an approved package and verified selected claims.
 
-## Intentionally manual or deferred
+## Workflow-run artifacts
+
+`src/content-intelligence/run-schema.ts` and `run-store.ts` persist a complete, nonsecret operator envelope:
+
+- candidate, package, and asset identities;
+- workflow, schema, provider, model, and revision metadata;
+- exact structured input/output plus deterministic SHA-256 hashes;
+- input references and derived artifact references;
+- validation result and timestamp;
+- optional token/cost metadata;
+- explicit human review status.
+
+The files contain no credentials, hidden reasoning, or chain of thought. Validation rejects metadata drift, provenance drift, input/output tampering, invalid structured output, and approvals without reviewer identity/time.
+
+## Research and source retrieval
+
+`src/research/source-retriever.ts` defines a minimal retrieval boundary for a known HTTP(S) source. The current implementation accepts HTML or plain text, records URL/status/content type/retrieval time, hashes the complete response, and stores bounded normalized text. It is not a crawler, search engine, PDF extractor, or citation verifier.
+
+Retrieval does not establish evidentiary support by itself. A human still confirms that the source is authoritative, the locator says what the claim asserts, context is preserved, conflicts are represented, and caveats are adequate. Generated prose never counts as evidence.
+
+## TopicCandidate and ResearchWorkspace
+
+`src/content-intelligence/schema.ts` records stable topic identity, discovery provenance, open taxonomy, timeliness, rationale, status, and review metadata. Evaluation uses categorical `weak`, `mixed`, `strong`, or `unknown` assessments with rationale and uncertainty rather than a fake virality score.
+
+ResearchWorkspace keeps source leads separate from claims. Sources begin `unreviewed`; claims begin `unverified` with no review metadata; claim evidence must resolve to a source lead; open questions and conflicts remain visible. A reviewed KnowledgePackage is authored only after source inspection.
+
+## Hook, script, narrative, and visual rules
+
+Hooks reference package claims and remain proposals until selected. Review proposals may cite only `supported` or `verified` claims; production proposals may cite only verified claims in an approved package.
+
+Every material factual script segment references selected claim IDs. Editorial connective language need not carry fake citations. Visual plans describe the story beat, objective, visual type, possible reusable primitive, required assets/data, approximate timing, and claim/script references. They do not contain Remotion frames, coordinates, platform UI, or production choreography.
+
+## Current human gates
+
+Before this wood-frog draft can move to production, an owner/editor must:
+
+1. inspect all four linked sources independently;
+2. verify or revise each claim and its evidence locator;
+3. confirm the stopped-heart/breathing wording against an appropriate primary source;
+4. approve a hook, script, narrative, and visual plan;
+5. review asset rights/provenance;
+6. later approve final render, audio, captions, disclosures, platform preview, and public release.
+
+## Intentionally unimplemented
 
 - trend/search/social discovery adapters;
-- a live LLM provider and provider selection;
-- automated URL retrieval or source-content storage;
-- human claim-verification UI or transition CLI;
-- automatic KnowledgePackage promotion;
-- automatic hook promotion;
-- exact VideoSpec/Remotion generation;
-- provider retries, caching, and persisted workflow-run files.
+- automatic source discovery, crawling, PDF parsing, or package promotion;
+- automatic human verification or approval;
+- retries/caching for paid live calls;
+- exact VideoSpec or Remotion generation from a visual plan;
+- production rendering for the wood-frog draft;
+- publishing or analytics APIs.
 
-The next provider experiment should run against a new, manually approved TopicCandidate and save every generated artifact for review before any package or asset is promoted.
-
-## Production automation direction
-
-ContentAsset visual plans already describe **what** should communicate each beat without frames or pixels. The next production slice should introduce a small scene-blueprint layer only after reviewing several new assets. It should map common visual intentions—typography, comparisons, diagrams, timelines, maps, charts, and callouts—to reusable Remotion primitives while retaining bespoke compositions for stories that need them.
-
-Do not build a universal template engine before that evidence exists.
-
-## Caption and audio direction
-
-Approved narration text and cue timing should eventually generate caption drafts directly; transcription is unnecessary when the approved text already exists. Human timing/readability review remains required. PlatformVariant continues to decide external-track, platform-generated, burned-in, or no-caption behavior.
-
-Future audio work should measure and document an integrated loudness/true-peak target before changing existing masters. Do not normalize published regressions opportunistically.
+The main bottleneck exposed by the trial is now editorial verification and promotion, not another schema layer. The next slice should make that review/promotion procedure explicit and use it to approve or revise this real package before any production automation work.

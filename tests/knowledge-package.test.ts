@@ -251,6 +251,7 @@ describe('knowledge package registry', () => {
     expect(knowledgePackageRegistry.list().map(({id}) => id)).toEqual([
       'ocean-depth',
       'speed-of-light',
+      'wood-frog-freeze-tolerance',
     ]);
   });
 

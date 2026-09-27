@@ -144,6 +144,7 @@ describe('content asset registry', () => {
       oceanDepthContentAssetIds.publishedShort,
       speedOfLightContentAssetIds.cosmicDistanceShort,
       speedOfLightContentAssetIds.publishedShort,
+      'wood-frog-freeze-tolerance.asset.how-freezing-works',
     ]);
     expect(contentAssetRegistry.get(oceanDepthContentAssetIds.publishedShort))
       .toEqual(oceanDepthPublishedShortAsset);

@@ -5,10 +5,11 @@ import {
   type StructuredGenerationProviderResult,
 } from './schema';
 
-export type PromptWorkflow<Input> = {
+export type PromptWorkflow<Input, Output = unknown> = {
   id: string;
   version: number;
   outputSchemaId: string;
+  outputSchema: ZodType<Output>;
   systemInstructions: readonly string[];
   buildUserPrompt: (input: Input) => string;
 };
@@ -40,7 +41,7 @@ export const generateStructured = async <Input, Output>({
   schema,
 }: {
   provider: AIProvider;
-  workflow: PromptWorkflow<Input>;
+  workflow: PromptWorkflow<Input, Output>;
   input: Input;
   inputReferences: readonly string[];
   schema: ZodType<Output>;
@@ -57,6 +58,7 @@ export const generateStructured = async <Input, Output>({
   const provenance = aiGenerationProvenanceSchema.parse({
     provider: provider.id,
     model: result.model,
+    ...(result.providerResponseId ? {providerResponseId: result.providerResponseId} : {}),
     generatedAt: result.generatedAt,
     workflowId: workflow.id,
     workflowVersion: workflow.version,

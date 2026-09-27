@@ -33,6 +33,10 @@ The implemented claim model covers quantitative and qualitative claims. Quantita
 7. Distinguish source quality from claim status: a reputable source can still be irrelevant, outdated, or contradicted.
 8. Health, psychology, history, economics, and current-event claims require domain-appropriate review; do not apply astronomy-style numeric sourcing mechanically.
 
+## Wood-frog operator trial
+
+The `wood-frog-freeze-tolerance` package is the first new Content Intelligence trial and remains in `review`. Its Journal of Experimental Biology, PLOS ONE, PubMed, and National Park Service records were retrieved on 2026-09-27, but no claim has been human-marked `verified`. Alaska-specific −16°C and two-month/−4°C results are study- and population-specific; they are not universal species limits. “Frozen solid” must not imply uniform intracellular freezing. Before production, confirm the stopped-heart/breathing wording against an appropriate primary physiology source and retain the distinction between supported evidence and owner verification.
+
 Video 001 intentionally avoids “largest star” language. Betelgeuse is variable and its radius depends on observational/model assumptions, so the video labels the selected NASA value as an estimate.
 
 Video 002 now has a production KnowledgePackage and ContentAsset. NOAA's generalized light classification places the twilight zone at approximately 200–1,000 m, but attenuation is continuous and varies with water conditions; the range is verified as a conventional classification, not as two universal hard cutoffs. The published line “At one thousand meters, it disappears” is therefore a simplification, and its “TOTAL DARKNESS” headline means no surface sunlight rather than absence of bioluminescence. Preserve the published render for regression; use “below about 1,000 m, surface sunlight no longer penetrates” and “NO SURFACE SUNLIGHT” or “APHOTIC ZONE” in a future editorial revision.

@@ -1,0 +1,367 @@
+{
+  "derivedArtifacts": [
+    {
+      "id": "research.wood-frog-freeze-tolerance",
+      "kind": "research-workspace",
+      "revision": 1
+    }
+  ],
+  "id": "run.wood-frog-freeze.fixture.research-workspace.v1",
+  "knowledgePackageId": "wood-frog-freeze-tolerance",
+  "provenance": {
+    "cost": {
+      "amount": 0,
+      "currency": "USD",
+      "estimated": false
+    },
+    "generatedAt": "2026-09-27T20:00:00.000Z",
+    "inputReferences": [
+      "topic.wood-frog-freeze"
+    ],
+    "model": "deterministic-content-intelligence-v1",
+    "outputSchemaId": "schema.research-workspace.v1",
+    "provider": "fixture",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalTokens": 0
+    },
+    "workflowId": "workflow.research-workspace",
+    "workflowVersion": 1
+  },
+  "request": {
+    "input": {
+      "candidate": {
+        "audienceRelevance": "The premise is understandable without specialist knowledge and resolves a familiar assumption that freezing is always fatal to an animal.",
+        "centralQuestion": "How can a wood frog survive winter freezing that stops its breathing and heartbeat?",
+        "discovery": {
+          "kind": "manual",
+          "notes": "Selected for the first real Content Intelligence operator trial because it combines a startling biological event, a clear mechanism, strong visual potential, and authoritative source coverage.",
+          "recordedAt": "2026-09-27"
+        },
+        "id": "topic.wood-frog-freeze",
+        "narrativePotential": "The story can open with apparent death, reveal that not all freezing is equal, explain chemical and spatial protection, and pay off with thawing recovery.",
+        "noveltyHypothesis": "Showing the difference between ice around cells and protected cell interiors can move the story beyond the familiar headline that a frog freezes.",
+        "proposedKnowledgePackageId": "wood-frog-freeze-tolerance",
+        "revision": 1,
+        "status": "researching",
+        "taxonomy": {
+          "domains": [
+            "zoology",
+            "physiology",
+            "cryobiology"
+          ],
+          "pillar": "earth-nature",
+          "topics": [
+            "wood-frog",
+            "freeze-tolerance",
+            "cryoprotectants"
+          ]
+        },
+        "timeliness": "evergreen",
+        "title": "How wood frogs survive being frozen",
+        "visualPotential": "A winter forest, progressive body freeze, stopped pulse, cell-level ice diagram, glucose and urea protection, and thaw sequence provide distinct visual beats.",
+        "whyInteresting": "The apparent contradiction—a vertebrate freezes, loses heartbeat and breathing, then recovers—creates an immediate curiosity gap with a real biochemical explanation."
+      },
+      "evaluation": {
+        "candidateRevision": 1,
+        "dimensions": {
+          "brandFit": {
+            "rating": "strong",
+            "rationale": "It delivers an immediate “wait—really?” premise followed by a mechanism viewers can understand.",
+            "uncertainty": []
+          },
+          "curiosityGap": {
+            "rating": "strong",
+            "rationale": "A stopped heart followed by recovery appears impossible without an explanation.",
+            "uncertainty": []
+          },
+          "factualVerifiability": {
+            "rating": "strong",
+            "rationale": "Peer-reviewed physiology studies and a government science summary cover the core claims.",
+            "uncertainty": [
+              "The stopped-heart wording should receive owner review against a primary physiology source before approval."
+            ]
+          },
+          "longFormExpansion": {
+            "rating": "mixed",
+            "rationale": "Population variation and organ preservation could support depth, but the core mechanism is strongest as a short.",
+            "uncertainty": [
+              "A long-form expansion would require broader comparative research."
+            ]
+          },
+          "narrativePotential": {
+            "rating": "strong",
+            "rationale": "The story naturally moves from apparent death to physical protection, chemical protection, and recovery.",
+            "uncertainty": []
+          },
+          "originality": {
+            "rating": "mixed",
+            "rationale": "The frozen-frog headline is known, but explaining ice placement plus two cryoprotectants adds depth.",
+            "uncertainty": [
+              "Current platform saturation was not measured in this trial."
+            ]
+          },
+          "shortFormSuitability": {
+            "rating": "strong",
+            "rationale": "One question and two complementary mechanisms fit a focused 32–40 second explanation.",
+            "uncertainty": []
+          },
+          "surprise": {
+            "rating": "strong",
+            "rationale": "The animal survives by controlling a freeze rather than avoiding it.",
+            "uncertainty": []
+          },
+          "usefulness": {
+            "rating": "strong",
+            "rationale": "The mechanism teaches cryoprotection, water movement, and why ice location matters.",
+            "uncertainty": []
+          },
+          "visualExplainability": {
+            "rating": "strong",
+            "rationale": "Freeze progression, pulse, cell diagrams, glucose movement, and thawing can each carry a beat.",
+            "uncertainty": [
+              "Actual wood-frog footage requires rights review or an original depiction."
+            ]
+          }
+        },
+        "recommendation": "research",
+        "researchQuestions": [
+          "Which body compartments hold ice during a survivable freeze?",
+          "What distinct roles do glucose and urea play?",
+          "What primary evidence supports heartbeat and breathing cessation?",
+          "How strongly do temperature and duration limits vary by population?"
+        ],
+        "risks": [
+          "Do not describe the frog as dead or resurrected.",
+          "Do not generalize Alaska-specific temperature limits to all wood frogs.",
+          "Do not imply that every cell freezes internally when using the phrase “frozen solid.”"
+        ],
+        "summary": "A strong evergreen Magnivis topic with an immediate contradiction, a clear mechanism, authoritative evidence, and multiple visual layers.",
+        "topicCandidateId": "topic.wood-frog-freeze"
+      }
+    },
+    "inputReferences": [
+      "topic.wood-frog-freeze"
+    ],
+    "inputSha256": "d27b1873627f83a7ae39940f7875f4e4555981ebcf6590368cfdebbbdea9808f",
+    "outputSchemaId": "schema.research-workspace.v1",
+    "workflowId": "workflow.research-workspace",
+    "workflowVersion": 1
+  },
+  "response": {
+    "output": {
+      "claimCandidates": [
+        {
+          "caveats": [
+            "The amount, duration, and minimum survivable temperature vary by population and experimental conditions."
+          ],
+          "evidence": [
+            {
+              "locator": "Introduction, paragraphs describing overwintering and survival of up to two-thirds body-water freezing",
+              "notes": "The paper describes freeze tolerance throughout the species range while emphasizing geographic variation in its limits.",
+              "sourceId": "source.jeb.wood-frog-hibernation-2013"
+            },
+            {
+              "locator": "Wood frog winter adaptation, paragraphs 2–4",
+              "notes": "The NPS overview describes overwintering frogs freezing and later thawing in spring.",
+              "sourceId": "source.nps.denali-wood-frog-2022"
+            }
+          ],
+          "id": "wood-frog-freeze-tolerance.claim.freeze-survival",
+          "statement": "Wood frogs can survive substantial freezing of their body tissues and water during overwintering.",
+          "type": "qualitative",
+          "verificationStatus": "unverified"
+        },
+        {
+          "caveats": [
+            "Before publication, a human reviewer should confirm the exact physiological wording against a primary source."
+          ],
+          "evidence": [
+            {
+              "locator": "Wood frog winter adaptation, paragraphs 3–4",
+              "notes": "The NPS states that hibernating frozen frogs do not breathe and their hearts do not beat, then describes spring thaw and resumed activity.",
+              "sourceId": "source.nps.denali-wood-frog-2022"
+            }
+          ],
+          "id": "wood-frog-freeze-tolerance.claim.heartbeat-breathing-stop",
+          "statement": "During frozen dormancy, a wood frog can stop breathing and its heart can stop beating, with activity resuming after thawing.",
+          "type": "qualitative",
+          "verificationStatus": "unverified"
+        },
+        {
+          "caveats": [
+            "Glucose is one component of a broader freeze-tolerance system, not a complete explanation by itself."
+          ],
+          "evidence": [
+            {
+              "locator": "Abstract",
+              "notes": "The experiment found less cellular and neuromuscular injury in glucose-loaded frogs and strongly implicated glucose as a cryoprotectant.",
+              "sourceId": "source.pubmed.wood-frog-glucose-1991"
+            },
+            {
+              "locator": "Introduction, cryoprotectant mechanism paragraphs",
+              "notes": "The study describes rapid glucose mobilization from hepatic glycogen in response to freezing.",
+              "sourceId": "source.jeb.wood-frog-hibernation-2013"
+            }
+          ],
+          "id": "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+          "statement": "Freezing triggers rapid mobilization of glucose from liver glycogen, and that glucose acts as a cryoprotectant that reduces tissue injury.",
+          "type": "qualitative",
+          "verificationStatus": "unverified"
+        },
+        {
+          "caveats": [
+            "Relative contributions differ across tissues, populations, acclimatization, and freezing history."
+          ],
+          "evidence": [
+            {
+              "locator": "Introduction, osmolyte and cryoprotection paragraphs",
+              "notes": "The paper identifies urea and glucose as key osmolytes and describes effects on ice formation, membranes, and macromolecules.",
+              "sourceId": "source.jeb.wood-frog-hibernation-2013"
+            },
+            {
+              "locator": "Introduction, paragraphs 2–4",
+              "notes": "The PLOS study describes urea accumulation before freezing and rapid glucose mobilization after freezing begins.",
+              "sourceId": "source.plos.wood-frog-cryoprotectants-2015"
+            }
+          ],
+          "id": "wood-frog-freeze-tolerance.claim.urea-and-glucose",
+          "statement": "Urea and glucose both contribute to wood-frog cryoprotection by limiting ice formation and helping preserve cellular structures.",
+          "type": "qualitative",
+          "verificationStatus": "unverified"
+        },
+        {
+          "caveats": [
+            "The popular phrase “frozen solid” must not imply that every cell interior freezes uniformly."
+          ],
+          "evidence": [
+            {
+              "locator": "Introduction, water redistribution and ice sequestration paragraph",
+              "notes": "The paper describes sequestration in coelomic and lymphatic compartments as protection against intra-organ ice damage.",
+              "sourceId": "source.jeb.wood-frog-hibernation-2013"
+            }
+          ],
+          "id": "wood-frog-freeze-tolerance.claim.ice-redistribution",
+          "statement": "Water redistribution and sequestration of ice in body compartments help limit damaging ice formation within organs and cells.",
+          "type": "qualitative",
+          "verificationStatus": "unverified"
+        },
+        {
+          "basis": "measured",
+          "caveats": [
+            "This is population- and experiment-specific and must not be presented as a universal species threshold."
+          ],
+          "display": "as low as −16°C",
+          "evidence": [
+            {
+              "locator": "Summary and Results",
+              "notes": "The result applies to the studied Interior Alaskan population under experimental conditions.",
+              "sourceId": "source.jeb.wood-frog-hibernation-2013"
+            }
+          ],
+          "id": "wood-frog-freeze-tolerance.claim.alaska-temperature",
+          "quantity": {
+            "kind": "scalar",
+            "precision": "exact",
+            "unit": "°C",
+            "value": -16
+          },
+          "statement": "In one laboratory study, Interior Alaskan wood frogs survived experimental freezing to temperatures as low as −16°C.",
+          "type": "quantitative",
+          "verificationStatus": "unverified"
+        },
+        {
+          "basis": "measured",
+          "caveats": [
+            "The quantity does not establish the normal duration for every wild wood frog."
+          ],
+          "display": "2 months at −4°C",
+          "evidence": [
+            {
+              "locator": "Summary",
+              "notes": "The duration and temperature describe one controlled study of an Interior Alaskan population.",
+              "sourceId": "source.jeb.wood-frog-hibernation-2013"
+            }
+          ],
+          "id": "wood-frog-freeze-tolerance.claim.alaska-duration",
+          "quantity": {
+            "kind": "scalar",
+            "precision": "exact",
+            "unit": "months",
+            "value": 2
+          },
+          "statement": "In the same laboratory study, Interior Alaskan wood frogs endured a two-month freezing bout at −4°C.",
+          "type": "quantitative",
+          "verificationStatus": "unverified"
+        }
+      ],
+      "conflictNotes": [
+        "Authoritative sources report different cold limits because wood-frog populations and experimental conditions differ; no universal threshold should be stated."
+      ],
+      "id": "research.wood-frog-freeze-tolerance",
+      "openQuestions": [
+        "Confirm the stopped-heart and breathing claim against a primary physiology source before publication.",
+        "Decide whether “frozen solid” is acceptable shorthand in the final hook after editorial review.",
+        "Determine rights-cleared visual sourcing for the animal and freeze/thaw behavior."
+      ],
+      "proposedKnowledgePackageId": "wood-frog-freeze-tolerance",
+      "revision": 1,
+      "sourceLeads": [
+        {
+          "id": "source.jeb.wood-frog-hibernation-2013",
+          "notes": "Primary study of Interior Alaskan and Ohio populations; population-specific results must not be generalized to all wood frogs.",
+          "organization": "The Company of Biologists — Journal of Experimental Biology",
+          "reviewStatus": "unreviewed",
+          "sourceType": "peer-reviewed",
+          "title": "Hibernation physiology, freezing adaptation and extreme freeze tolerance in a northern population of the wood frog",
+          "url": "https://journals.biologists.com/jeb/article/216/18/3461/11609/Hibernation-physiology-freezing-adaptation-and"
+        },
+        {
+          "id": "source.plos.wood-frog-cryoprotectants-2015",
+          "notes": "Open-access primary study focused on the cryoprotectant system of a subarctic population.",
+          "organization": "PLOS ONE",
+          "published": "2015-02-17",
+          "reviewStatus": "unreviewed",
+          "sourceType": "peer-reviewed",
+          "title": "Cryoprotectants and Extreme Freeze Tolerance in a Subarctic Population of the Wood Frog",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117234"
+        },
+        {
+          "id": "source.pubmed.wood-frog-glucose-1991",
+          "notes": "Abstract of a controlled experiment connecting glucose availability with reduced freezing injury.",
+          "organization": "National Library of Medicine — PubMed",
+          "reviewStatus": "unreviewed",
+          "sourceType": "peer-reviewed",
+          "title": "Glucose loading prevents freezing injury in rapidly cooled wood frogs",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1750578/"
+        },
+        {
+          "id": "source.nps.denali-wood-frog-2022",
+          "notes": "Authoritative public-facing summary used for the heartbeat, breathing, thaw-order, and overwintering explanation; exact wording still awaits owner review.",
+          "organization": "U.S. National Park Service — Denali National Park and Preserve",
+          "published": "2022-05-05",
+          "reviewStatus": "unreviewed",
+          "sourceType": "government",
+          "title": "Amphibians",
+          "url": "https://www.nps.gov/dena/learn/nature/amphibians.htm"
+        }
+      ],
+      "status": "draft",
+      "topicCandidateId": "topic.wood-frog-freeze"
+    },
+    "outputSha256": "941be7cc6c3e15c49ba1e2b1c4517e3d82b9a53a0f6e0ecdd93094e20ca903fc",
+    "validation": {
+      "schemaId": "schema.research-workspace.v1",
+      "status": "passed",
+      "validatedAt": "2026-09-27T20:00:00.000Z"
+    }
+  },
+  "review": {
+    "status": "awaiting-human"
+  },
+  "revision": 1,
+  "schemaVersion": 1,
+  "stage": "research-workspace",
+  "topicCandidateId": "topic.wood-frog-freeze"
+}

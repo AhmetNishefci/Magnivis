@@ -16,9 +16,10 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 - Content Asset V1 is implemented; one Speed of Light package now backs two distinct editorial assets, and Video 004 reaches its production-ready asset through a YouTube Shorts PlatformVariant.
 - Ocean Depth generalization is complete; Video 002 validates ranges, approximate boundaries, mixed claim types, explicit uncertainty, and script traceability without changing production output.
 - Videos 001, 003, and 005 remain intentionally unmigrated. Next work requires explicit approval.
-- Content Intelligence V1 now implements manual TopicCandidates, categorical evaluation, an unverified research workspace, provider-neutral structured generation, versioned prompts, claim-safe hook proposals, and draft ContentAsset generation.
-- A live provider, automatic discovery inputs, source retrieval, package promotion, and persisted workflow-run artifacts remain unimplemented.
-- Human review remains mandatory for sources, claims, hooks, script, and visual plan. No paid provider is required.
+- Content Intelligence V1 implements manual TopicCandidates, categorical evaluation, an unverified research workspace, provider-neutral structured generation, versioned prompts, claim-safe hook proposals, draft ContentAssets, and hashed file-backed workflow runs.
+- The first new-topic operator trial covers wood-frog freeze tolerance with four real source records, a supported review package, distinct hooks, a claim-linked short script, and platform-neutral narrative/visual intent. It has not been human-verified or approved for production.
+- A production-capable OpenAI adapter and minimal known-URL source retriever are implemented. Normal tests/trials remain credential-free; no paid live run has occurred.
+- Automatic discovery inputs, source discovery, claim-review tooling, and package promotion remain unimplemented. Human review remains mandatory for sources, claims, hooks, script, and visual plan.
 
 ## Phase 2 — production
 

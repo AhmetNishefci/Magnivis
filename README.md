@@ -6,7 +6,7 @@ Magnivis is a faceless English-language knowledge-media brand that turns fascina
 
 Magnivis is open-ended: it discovers compelling knowledge opportunities first and classifies them second. High-level pillars are portfolio groupings, not a whitelist of permissible subjects. See `docs/STRATEGY.md`.
 
-Content Intelligence V1 provides a provider-neutral, schema-validated path from a manual TopicCandidate through evaluation and an unverified research workspace to claim-safe hook and ContentAsset drafts. It has no live AI provider and requires no credentials; deterministic fixture providers exercise the workflow in tests. See `docs/CONTENT-INTELLIGENCE.md`.
+Content Intelligence V1 provides a provider-neutral, schema-validated path from a manual TopicCandidate through evaluation and an unverified research workspace to claim-safe hook and ContentAsset drafts. An optional OpenAI Responses adapter is implemented, while deterministic fixtures keep normal tests and review trials offline. The first new-topic trial covers wood-frog freeze tolerance and remains explicitly awaiting human verification. See `docs/CONTENT-INTELLIGENCE.md`.
 
 ## Requirements
 
@@ -23,6 +23,17 @@ corepack enable
 pnpm install
 pnpm dev
 ```
+
+## Run the Content Intelligence operator trial
+
+```bash
+pnpm content:intelligence -- trial wood-frog-freeze --provider fixture \
+  --output content-intelligence/runs/wood-frog-freeze-fixture-v1
+pnpm content:intelligence -- validate wood-frog-freeze \
+  --output content-intelligence/runs/wood-frog-freeze-fixture-v1
+```
+
+The readable review is `content-intelligence/runs/wood-frog-freeze-fixture-v1/review.md`. Live stages require `OPENAI_API_KEY`, but they remain separated by a mandatory source/claim review pause. No command verifies, approves, renders, or publishes the draft automatically.
 
 ## Render and inspect Video 001
 

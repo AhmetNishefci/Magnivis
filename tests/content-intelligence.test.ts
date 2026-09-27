@@ -6,6 +6,7 @@ import {
   speedOfLightCosmicDistanceAsset,
 } from '../src/content-assets/assets/speed-of-light';
 import {speedOfLightTopicCandidate} from '../src/content-intelligence/candidates/speed-of-light';
+import {woodFrogFreezeTopicCandidate} from '../src/content-intelligence/candidates/wood-frog-freeze';
 import {
   contentIntelligencePromptRegistry,
   contentAssetDraftWorkflow,
@@ -103,7 +104,10 @@ class FixtureProvider implements AIProvider {
 
 describe('Content Intelligence V1 topic candidates and prompts', () => {
   it('registers the retrospective Speed of Light candidate deterministically', () => {
-    expect(topicCandidateRegistry.list()).toEqual([speedOfLightTopicCandidate]);
+    expect(topicCandidateRegistry.list()).toEqual([
+      speedOfLightTopicCandidate,
+      woodFrogFreezeTopicCandidate,
+    ]);
     expect(topicCandidateRegistry.get(speedOfLightTopicCandidate.id))
       .toEqual(speedOfLightTopicCandidate);
   });
@@ -147,7 +151,9 @@ describe('Content Intelligence V1 topic candidates and prompts', () => {
       'workflow.topic-evaluation',
       'workflow.research-workspace',
       'workflow.hook-generation',
+      'workflow.hook-generation-review',
       'workflow.content-asset-drafting',
+      'workflow.content-asset-review-drafting',
     ]);
     expect(new Set(workflows.map(({id}) => id)).size).toBe(workflows.length);
     expect(workflows.every(({version, outputSchemaId}) =>

@@ -55,6 +55,25 @@ export const visualPlanItemSchema = z.object({
   narrativeBeatId: stableKnowledgeIdSchema,
   objective: z.string().min(1),
   visualType: visualTypeSchema,
+  timingIntentSeconds: z.object({
+    start: z.number().nonnegative(),
+    end: z.number().positive(),
+  }).strict().refine(
+    ({start, end}) => end > start,
+    'Visual timing end must follow its start',
+  ).optional(),
+  suggestedPrimitive: z.enum([
+    'typography',
+    'comparison',
+    'diagram',
+    'timeline',
+    'map',
+    'chart',
+    'footage-panel',
+    'callout',
+    'bespoke',
+  ]).optional(),
+  assetRequirements: z.array(z.string().min(1)).optional(),
   scriptSegmentIds: z.array(stableKnowledgeIdSchema).default([]),
   claimIds: z.array(stableKnowledgeIdSchema).default([]),
   notes: z.string().min(1).optional(),
@@ -221,6 +240,16 @@ export const contentAssetSchema = z.object({
         code: 'custom',
         path: ['visualPlan', visualIndex, 'narrativeBeatId'],
         message: `Unknown narrative beat: ${visual.narrativeBeatId}`,
+      });
+    }
+    if (
+      visual.timingIntentSeconds
+      && visual.timingIntentSeconds.end > asset.durationIntentSeconds.maximum
+    ) {
+      context.addIssue({
+        code: 'custom',
+        path: ['visualPlan', visualIndex, 'timingIntentSeconds', 'end'],
+        message: 'Visual timing exceeds the asset duration intent',
       });
     }
     visual.scriptSegmentIds.forEach((segmentId, segmentIndex) => {

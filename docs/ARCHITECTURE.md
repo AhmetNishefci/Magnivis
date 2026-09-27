@@ -14,11 +14,11 @@ The knowledge taxonomy is open-ended: packages have one broad analytics pillar p
 
 Platform Delivery Package V1 resolves a variant's explicit VideoSpec production reference and generates an ignored, portable operator folder containing exact upload copy, structured metadata, review instructions, source revisions, observed media metadata, and SHA-256 artifact hashes. It validates registry references and media with ffprobe. Reused masters and already-rendered dedicated variants use the same integrity path; delivery does not trigger rendering. YouTube and the real-device-approved TikTok revision 2 generate ready-for-manual-upload packages; Instagram and Facebook generate truthfully labeled review-only packages. Ready delivery is not publication authorization.
 
-Content Intelligence V1 adds a manual TopicCandidate registry, categorical evaluation, an explicitly unverified research workspace, verified-claim-only hook proposals, and safe ContentAsset drafting. AI calls use one provider-neutral structured-generation interface and versioned prompt definitions. No live provider is installed; fixture providers make the complete boundary testable without credentials or network calls.
+Content Intelligence V1 adds a manual TopicCandidate registry, categorical evaluation, an explicitly unverified research workspace, claim-safe hook proposals, and safe ContentAsset drafting. AI calls use one provider-neutral structured-generation interface and versioned prompt definitions. A production-capable OpenAI Responses adapter is optional at the boundary; fixture providers keep the complete system testable without credentials or network calls. Workflow envelopes persist exact inputs/outputs, hashes, provenance, validation, derived artifacts, and human-review state.
 
 The first operational-truth slice records nonsecret platform accounts, one generalized Speed of Light YouTube PublicationRecord, platform settings/disclosures, and a raw MetricSnapshot schema. It remains local and file-backed. No production metric snapshots have been fabricated or migrated.
 
-There is no database, queue, worker fleet, web application, CMS, live AI provider, publishing API, analytics ingestion service, or deployment configuration. Upload, publication, source verification, and final editorial approval are manual human operations.
+There is no database, queue, worker fleet, web application, CMS, publishing API, analytics ingestion service, or deployment configuration. Live OpenAI execution requires an owner-supplied environment key and remains staged; upload, publication, source verification, claim verification, and final editorial approval are manual human operations.
 
 ## Target boundary
 
@@ -52,8 +52,8 @@ A knowledge package can support multiple assets, but each asset must have a dist
 
 ## Planned domain boundaries
 
-- **Editorial intelligence:** manual candidates, evaluation rationale, prompt workflows, hook proposals, and draft assets are implemented; external discovery inputs and live providers remain planned.
-- **Research:** an unverified AI-assisted workspace is implemented; source retrieval, comparison, claim review, and package promotion remain human work.
+- **Editorial intelligence:** manual candidates, evaluation rationale, prompt workflows, persisted runs, hook proposals, and draft assets are implemented; external discovery inputs remain planned.
+- **Research:** an unverified AI-assisted workspace and a minimal known-URL text retriever are implemented; source discovery, comparison, claim review, and package promotion remain human work.
 - **Knowledge packages:** approved topic understanding, verified claims, narrative/visual opportunities, and related questions.
 - **Content assets:** platform-neutral editorial purpose, story angle, selected hook/claims, traceable script, narrative structure, visual intent, and narration direction.
 - **Production:** exact format, timing, narration/audio files, licensed assets, Remotion compositions, captions, renders, and QA. This is the mature existing subsystem.
@@ -61,7 +61,7 @@ A knowledge package can support multiple assets, but each asset must have a dist
 - **Delivery:** implemented local, hashed artifact/copy/manifest/checklist packaging and validation; no external mutation.
 - **Distribution/publication:** a file-backed record exists for manually completed publication; upload attempts, idempotency keys, and API mutations remain future work. Public release remains a separate human action.
 - **Analytics:** the raw MetricSnapshot schema/registry is implemented; production snapshots, imports, and derived analysis remain future work.
-- **Operations:** stage runs, input/output hashes, attempts, provider usage, cost, logs, and resumability.
+- **Operations:** file-backed Content Intelligence stage runs now preserve input/output hashes and provider usage/cost; retries, attempt history, logs, and generic resumability remain future work.
 
 ## Storage progression
 
@@ -75,8 +75,8 @@ When job execution is justified, use stable run IDs, input hashes, explicit stat
 
 ## Provider policy
 
-One LLM-shaped interface now exists because Content Intelligence V1 is an actual integration boundary. It validates structured output and records provider/model/workflow/usage/cost provenance without selecting a vendor. Current local Kokoro narration remains separate. Image, video, transcription, and publishing abstractions should still wait for operational need.
+One LLM-shaped interface exists because Content Intelligence V1 is an actual integration boundary. The OpenAI adapter uses that interface, while domain workflows remain vendor-neutral. Structured output is locally validated and records provider/model/response/workflow/usage/cost provenance. Current local Kokoro narration remains separate. Image, video, transcription, and publishing abstractions should still wait for operational need.
 
 ## Completed migration slices
 
-Knowledge Package V1, Content Asset V1, open-ended knowledge taxonomy, PlatformVariant V1, and Platform Delivery Package V1 are implemented. Speed of Light proves one package can back multiple editorial assets, one asset can back multiple platform adaptations, and each adaptation can become a validated human handoff without external publishing. Ocean Depth proves the knowledge/asset model handles qualitative claims, conventional scientific ranges, context-dependent boundaries, approximate measurements, and explicit uncertainty without changing the published production. Videos 001, 003, and 005 intentionally remain on legacy facts. Publication records, publishing adapters, and workflow automation remain intentionally unimplemented.
+Knowledge Package V1, Content Asset V1, open-ended knowledge taxonomy, PlatformVariant V1, Platform Delivery Package V1, and file-backed Content Intelligence workflow runs are implemented. Speed of Light proves one package can back multiple editorial assets and platform adaptations; Ocean Depth proves cross-domain claim modeling; the wood-frog trial proves a genuinely new topic can reach a supported review package, hook set, script, narrative, and visual plan without crossing human verification. Videos 001, 003, and 005 intentionally remain on legacy facts. Publishing adapters and automated approval remain intentionally unimplemented.

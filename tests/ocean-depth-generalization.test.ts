@@ -76,6 +76,7 @@ describe('Ocean Depth production KnowledgePackage', () => {
     expect(knowledgePackageRegistry.list().map(({id}) => id)).toEqual([
       'ocean-depth',
       'speed-of-light',
+      'wood-frog-freeze-tolerance',
     ]);
     const sourceIds = knowledgePackageRegistry.listSources().map(({id}) => id);
     expect(new Set(sourceIds).size).toBe(sourceIds.length);

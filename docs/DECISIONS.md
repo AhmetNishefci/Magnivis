@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-27 — Persist AI runs without allowing them to cross human verification
+
+**Decision:** Add one optional OpenAI Responses adapter behind the existing `AIProvider`, explicit versioned workflow/model configuration, and hash-validated file-backed run envelopes. Live evaluation and research are separate operator stages; the all-stage command remains fixture-only. A review-only hook/asset path may use supported claims for preparation, while the production path still requires an approved package and verified claims.
+
+**Reason:** The wood-frog trial needs reproducible real operator artifacts and a production-capable AI boundary, but one live command must not turn model output into evidence or approval. Review work is useful before final verification so long as its status remains truthful.
+
+**Alternatives:** Put vendor calls in each workflow (coupled); run all live stages autonomously (unsafe); require verified claims before any editorial draft exists (prevents useful review); store only final outputs (loses provenance and tamper detection).
+
+**Consequences:** Tests and the canonical trial remain deterministic and credential-free. Run files retain inputs, outputs, provenance, token/cost metadata, hashes, validation, and review state without storing secrets or hidden reasoning. The current wood-frog package is supported/review-only and cannot enter strict production drafting until a human verifies and approves it.
+
 ## 2026-09-27 — Keep AI assistance structurally below human verification and approval
 
 **Decision:** Introduce one provider-neutral structured-generation boundary with versioned prompt workflows. Model-proposed sources begin unreviewed, model-proposed claims begin unverified, hook proposals may use only verified claims, and generated ContentAssets remain unapproved drafts. KnowledgePackage promotion and editorial approval stay human actions.

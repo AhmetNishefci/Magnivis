@@ -13,7 +13,9 @@ import {
 } from './schema';
 import {
   contentAssetDraftWorkflow,
+  contentAssetReviewDraftWorkflow,
   hookProposalWorkflow,
+  hookReviewProposalWorkflow,
   researchWorkspaceWorkflow,
   topicEvaluationWorkflow,
   type ContentAssetDraftRequest,
@@ -32,6 +34,23 @@ const assertApprovedVerifiedInputs = (
     if (!claim) throw new Error(`Unknown claim ${claimId} in ${knowledgePackage.id}`);
     if (claim.verificationStatus !== 'verified') {
       throw new Error(`Claim ${claimId} must be verified before AI-assisted editorial drafting`);
+    }
+  }
+};
+
+const assertReviewableSupportedInputs = (
+  knowledgePackage: KnowledgePackage,
+  claimIds: readonly string[],
+) => {
+  if (!['review', 'approved'].includes(knowledgePackage.editorialStatus)) {
+    throw new Error(`Knowledge package ${knowledgePackage.id} must be in review or approved before review drafting`);
+  }
+  const claims = new Map(knowledgePackage.claims.map((claim) => [claim.id, claim]));
+  for (const claimId of claimIds) {
+    const claim = claims.get(claimId);
+    if (!claim) throw new Error(`Unknown claim ${claimId} in ${knowledgePackage.id}`);
+    if (!['supported', 'verified'].includes(claim.verificationStatus)) {
+      throw new Error(`Claim ${claimId} must be supported or verified before review drafting`);
     }
   }
 };
@@ -116,6 +135,57 @@ export const proposeHooks = (
   });
 };
 
+export const proposeHooksForReview = (
+  provider: AIProvider,
+  knowledgePackage: KnowledgePackage,
+) => {
+  const supportedClaimIds = knowledgePackage.claims
+    .filter(({verificationStatus}) => ['supported', 'verified'].includes(verificationStatus))
+    .map(({id}) => id);
+  assertReviewableSupportedInputs(knowledgePackage, supportedClaimIds);
+  return generateStructured({
+    provider,
+    workflow: hookReviewProposalWorkflow,
+    input: knowledgePackage,
+    inputReferences: [knowledgePackage.id, ...supportedClaimIds],
+    schema: hookProposalBatchSchema,
+  }).then((generated) => {
+    if (
+      generated.artifact.knowledgePackageId !== knowledgePackage.id
+      || generated.artifact.packageRevision !== knowledgePackage.revision
+    ) {
+      throw new Error('Review hook proposals do not match their KnowledgePackage input');
+    }
+    const supported = new Set(supportedClaimIds);
+    for (const proposal of generated.artifact.proposals) {
+      for (const claimId of proposal.claimIds) {
+        if (!supported.has(claimId)) {
+          throw new Error(`Review hook proposal ${proposal.id} references an unsupported claim: ${claimId}`);
+        }
+      }
+    }
+    return generated;
+  });
+};
+
+const assertLockedAssetReferences = (
+  asset: ContentAsset,
+  request: ContentAssetDraftRequest,
+) => {
+  if (
+    asset.id !== request.assetId
+    || asset.knowledgePackageId !== request.knowledgePackage.id
+    || asset.assetType !== request.assetType
+    || asset.editorialPurpose !== request.editorialPurpose
+    || asset.storyAngle !== request.storyAngle
+    || asset.hookId !== request.hookId
+    || JSON.stringify(asset.selectedClaimIds) !== JSON.stringify(request.selectedClaimIds)
+    || JSON.stringify(asset.durationIntentSeconds) !== JSON.stringify(request.durationIntentSeconds)
+  ) {
+    throw new Error('ContentAsset draft changed locked workflow references');
+  }
+};
+
 export const draftContentAsset = async (
   provider: AIProvider,
   request: ContentAssetDraftRequest,
@@ -138,19 +208,35 @@ export const draftContentAsset = async (
     schema: contentAssetDraftOutputSchema,
   });
   const asset = generated.artifact;
-  if (
-    asset.id !== request.assetId
-    || asset.knowledgePackageId !== knowledgePackage.id
-    || asset.assetType !== request.assetType
-    || asset.editorialPurpose !== request.editorialPurpose
-    || asset.storyAngle !== request.storyAngle
-    || asset.hookId !== hookId
-    || JSON.stringify(asset.selectedClaimIds) !== JSON.stringify(selectedClaimIds)
-    || JSON.stringify(asset.durationIntentSeconds) !== JSON.stringify(request.durationIntentSeconds)
-  ) {
-    throw new Error('ContentAsset draft changed locked workflow references');
-  }
+  assertLockedAssetReferences(asset, request);
 
+  const packageRegistry = createKnowledgePackageRegistry([knowledgePackage]);
+  createContentAssetRegistry([asset], packageRegistry);
+  return generated as {artifact: ContentAsset; provenance: typeof generated.provenance};
+};
+
+export const draftContentAssetForReview = async (
+  provider: AIProvider,
+  request: ContentAssetDraftRequest,
+) => {
+  const {knowledgePackage, selectedClaimIds, hookId} = request;
+  assertReviewableSupportedInputs(knowledgePackage, selectedClaimIds);
+  const hook = knowledgePackage.hooks.find(({id}) => id === hookId);
+  if (!hook) throw new Error(`Unknown hook ${hookId} in ${knowledgePackage.id}`);
+  for (const claimId of hook.claimIds) {
+    if (!selectedClaimIds.includes(claimId)) {
+      throw new Error(`Review draft request does not select hook claim ${claimId}`);
+    }
+  }
+  const generated = await generateStructured({
+    provider,
+    workflow: contentAssetReviewDraftWorkflow,
+    input: request,
+    inputReferences: [knowledgePackage.id, hookId, ...selectedClaimIds],
+    schema: contentAssetDraftOutputSchema,
+  });
+  const asset = generated.artifact;
+  assertLockedAssetReferences(asset, request);
   const packageRegistry = createKnowledgePackageRegistry([knowledgePackage]);
   createContentAssetRegistry([asset], packageRegistry);
   return generated as {artifact: ContentAsset; provenance: typeof generated.provenance};
