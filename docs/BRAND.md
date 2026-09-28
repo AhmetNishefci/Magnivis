@@ -5,7 +5,7 @@
 - Name: Magnivis
 - General brand shorthand used historically: `@Magnivis`
 - Tagline: **See the unimaginable.**
-- Promise: every piece of content should leave the viewer knowing something fascinating they did not know before.
+- Promise: every piece of content should leave the viewer understanding something fascinating or useful that they did not understand before.
 - Editorial reaction: **“Wait… really?”** followed by **“Now I understand why.”**
 
 Magnivis is global, English-first, faceless, intelligent, and accessible without becoming childish. It began with visual scale and science, but it is an open-ended knowledge and understanding brand rather than a fixed set of niches. The unifier is curiosity resolved through clear explanation—not a single subject category. Topic discovery comes first; classification exists only to organize and learn from the portfolio.

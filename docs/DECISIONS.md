@@ -1,5 +1,21 @@
 # Significant decisions
 
+## 2026-09-28 — Preserve exact caption whitespace across styled boundaries
+
+**Decision:** Segment designed-caption lines into exact source-derived plain and emphasized spans, render every span with preserved CSS whitespace, and make emphasis sizing participate in inline layout instead of applying a non-layout CSS transform. Test reconstruction plus rendered markup. Do not alter approved narration or insert synthetic spaces.
+
+**Reason:** Raw text nodes adjacent to transformed `inline-block` emphasis spans made boundaries brittle, and the transform enlarged glyphs without reserving layout width, painting into the source space and producing visual joins such as “itsheart.” Whitespace and punctuation belong to the approved source text and must survive styling unchanged.
+
+**Consequences:** The reusable renderer now protects every future CaptionPlan. Wood Frog is re-rendered for owner review; script, narration, timing, emphasis choices, typography, colors, placement, animations, science, and unrelated media remain unchanged.
+
+## 2026-09-28 — Treat fascinating and useful understanding as one open topic universe
+
+**Decision:** Explicitly include human behavior, philosophy, critical thinking, practical life skills, communication, relationships, business, economics, and financial literacy alongside science, history, nature, and technology. Preserve the current open domain/topic taxonomy and discover-first/classify-second principle.
+
+**Reason:** Magnivis is unified by credible explanation and viewer understanding, not a narrow academic category. Practical domains can create strong educational value without turning the brand into generic self-help, motivation, advice, or book-summary content.
+
+**Consequences:** `docs/STRATEGY.md` is canonical for the expanded opportunity space, evidence distinctions, prohibited drift, flexible formats, and discovery signals. No taxonomy enum, quota, automated discovery system, or schema migration is added.
+
 ## 2026-09-28 — Make designed burned-in captions part of every new short-form master
 
 **Decision:** Add a typed CaptionPlan and constrained `MagnivisCaptionRenderer`. Every new Magnivis short-form production burns designed captions into the creative master while retaining an optional WebVTT or platform-native accessibility path. Phrase grouping, emphasis, placement, and treatment may later be AI-assisted, but only within versioned design-system and safe-area constraints.

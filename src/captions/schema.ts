@@ -35,13 +35,12 @@ export const captionCueSchema = z.object({
   if (cue.endFrame <= cue.startFrame) {
     context.addIssue({code: 'custom', path: ['endFrame'], message: 'Caption cue must have positive duration'});
   }
-  const phrase = cue.lines.join(' ');
   for (const [index, emphasis] of cue.emphasis.entries()) {
-    if (!phrase.includes(emphasis.text)) {
+    if (!cue.lines.some((line) => line.includes(emphasis.text))) {
       context.addIssue({
         code: 'custom',
         path: ['emphasis', index, 'text'],
-        message: 'Caption emphasis text must occur exactly inside the caption phrase',
+        message: 'Caption emphasis text must occur exactly inside one caption line',
       });
     }
   }

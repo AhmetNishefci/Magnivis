@@ -36,7 +36,7 @@ pnpm production:validate wood-frog
 
 The uncertain circulation-cessation claim is explicitly excluded from the plan and all downstream production inputs.
 
-The master is rendered at `output/wood-frog-narrated.mp4`. `qa/wood-frog-narrated/` contains exact-frame samples and a contact sheet. `deliveries/wood-frog/youtube-shorts/` is a draft review package only; its PlatformVariant remains `editorial-review` and is not publishable.
+The master is rendered at `output/wood-frog-narrated.mp4`. `qa/wood-frog-narrated/` contains a midpoint frame for every CaptionPlan cue plus the combined contact sheet. `deliveries/wood-frog/youtube-shorts/` is a draft review package only; its PlatformVariant remains `editorial-review` and is not publishable.
 
 ## Reusable visual grammar
 

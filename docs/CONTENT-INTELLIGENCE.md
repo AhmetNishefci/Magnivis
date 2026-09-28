@@ -18,6 +18,8 @@ manual TopicCandidate
 
 The workflow deliberately cannot convert generated research directly into an approved package. A model-proposed source is a lead, a model-proposed claim is unverified, generated hooks are proposals, and generated ContentAssets remain drafts.
 
+Topic discovery is intentionally broader than science. Manual candidates may come from human behavior, philosophy, critical thinking, practical life skills, communication, relationships, business, economics, financial literacy, culture, history, technology, or any future legitimate domain. The existing open domain/topic slugs already support this; do not add a closed subject enum. Candidate evaluation should apply the topic identity, anti-self-help boundaries, evidence distinctions, diversity signals, and flexible formats defined in `docs/STRATEGY.md`.
+
 ## First real operator trial
 
 The first new topic is `topic.wood-frog-freeze`: **How wood frogs survive being frozen**. It was selected because the stopped-heart/recovery contradiction is immediately understandable, the physical and chemical mechanism has strong visual potential, and peer-reviewed plus government sources can support a focused evergreen short.

@@ -4,7 +4,7 @@ Magnivis is a durable, faceless, English-language knowledge-media brand—not an
 
 ## Brand promise
 
-Every piece of content should leave the viewer knowing something fascinating they did not know before.
+Every piece of content should leave the viewer understanding something fascinating or useful that they did not understand before.
 
 The intended reaction is: **“Wait… really?”** followed by **“Now I understand why.”** Curiosity earns the click, knowledge provides value, storytelling creates retention, and accuracy creates trust.
 
@@ -28,6 +28,44 @@ Knowledge packages use three classification layers:
 
 The current pillars are `human-life`, `society-culture`, `science-reality`, `earth-nature`, `history-stories`, `technology-built-world`, and `interdisciplinary`. They are intentionally broad analytics groupings, not niches or a subject whitelist. Domains and topics are normalized lowercase slugs rather than enums. A new legitimate domain such as `philosophy`, `medicine`, `linguistics`, `film-studies`, or a field not yet anticipated requires no schema or source-code change. Cross-domain packages record every materially relevant domain and may use `interdisciplinary` when no single grouping honestly leads.
 
+### Open-ended topic universe
+
+Magnivis may explore any legitimate knowledge domain that supports a credible, clear and compelling explanation. Current opportunity areas include, but are not limited to:
+
+- **Science & nature:** physics, chemistry, biology, anatomy, medicine and health education, neuroscience, astronomy, space, nature, animals, Earth science, and environment.
+- **Humanity & world:** history, civilizations, historical figures, wars and major events, geography, cultures, archaeology, anthropology, and remarkable true stories.
+- **Technology & systems:** technology, artificial intelligence, computing, engineering, mathematics, economics, inventions, infrastructure, and how complex systems work.
+- **Human mind & behavior:** psychology, human behavior, cognitive biases, critical thinking, decision-making, memory, learning, perception, social psychology, and behavioral science.
+- **Philosophy & ideas:** philosophy, ethics, logic, thought experiments, mental models, major arguments, paradoxes, and questions about human nature.
+- **Life skills & human development:** productivity, habits, discipline, learning techniques, communication, relationships and social dynamics, attention, evidence-aware motivation, personal development, and problem solving.
+- **Business & money:** business concepts, entrepreneurship, strategy, economics, financial literacy, personal-finance concepts, compound interest, incentives, market behavior, and business or financial-history case studies.
+
+This list is an editorial map, never a taxonomy enum or whitelist. Existing science and scale storytelling remains central and valid; the expanded scope moves Magnivis from “science facts” toward high-quality explanations of fascinating and useful things.
+
+### What makes a topic Magnivis
+
+A strong candidate normally does at least one of the following:
+
+- teaches something genuinely useful or changes the viewer's mental model;
+- explains a surprising or counterintuitive result;
+- answers an interesting “why?” or shows how something works;
+- visualizes something difficult to imagine;
+- tells a remarkable true story or explains an important historical event;
+- explains a defensible psychological phenomenon, cognitive bias, mental model, mechanism, paradox, or cause-and-effect relationship;
+- creates a strong curiosity gap without misleading the viewer.
+
+Formats should follow the subject rather than a fixed template. A story may be a surprising explanation, scale comparison, mechanism, historical narrative, thought experiment, myth-versus-reality analysis, psychological phenomenon, paradox, business case, economic mechanism, practical mental model, timeline, or true story.
+
+### Practical knowledge without self-help drift
+
+Productivity, discipline, communication, relationships, personal development, business, and money are valid only when Magnivis explains a meaningful idea with credible evidence, honest scope, and a specific viewer payoff. The brand is not a motivation, hustle, investment-tip, relationship-advice, or book-summary account.
+
+Avoid generic motivational quotes, shallow self-help, fake productivity hacks, get-rich-quick content, investment-tip spam, pseudoscience, fake neuroscience, “dark psychology,” manipulative relationship advice, sensational health claims, fabricated history, unsupported certainty, and engagement-only listicles.
+
+Books may inspire topics, as may academic papers, primary records, credible journalism, textbooks, documentaries, datasets, experiments, institutions, and expert material. Extract and explain the interesting idea; do not make generic “books you must read” packaging the brand identity.
+
+Evidence type must remain explicit. Do not present a philosophical argument as scientific fact, popular psychology as settled evidence, a personal-development framework as a universal law, historical interpretation as uncontested fact, or general financial education as personalized advice.
+
 ### Broad-scope editorial standards
 
 - Movies, documentaries, books, art, music, and other cultural works are valid when the result is transformative explanation, criticism, historical context, scientific analysis, psychology, philosophy, or thematic commentary. Do not design around copying protected footage; provenance and licensing still apply.
@@ -36,7 +74,7 @@ The current pillars are `human-life`, `society-culture`, `science-reality`, `ear
 - History, war, espionage, and political history must distinguish established facts, primary-source assertions, disputed interpretation, and later scholarship. Magnivis explains rather than campaigns for partisan positions.
 - Mysteries are welcome when the evidence can be handled responsibly. Unresolved does not mean permission to manufacture certainty.
 
-Future topic discovery should consider curiosity, surprise, educational payoff, story and visual potential, source quality, novelty, evergreen value, audience fit, emotional interest, follow-up potential, saturation, and Magnivis's own historical performance. These are decision inputs, not fake-precision scores. Audience evidence should help Magnivis discover its strongest concentrations over time instead of locking the brand into predetermined niches.
+Future topic discovery should consider curiosity, surprise, usefulness, educational payoff, hook strength, story and visual potential, source quality, novelty, evergreen value, emotional/share/save potential, production feasibility, similarity to recently published work, recent domain repetition, audience fit, follow-up potential, saturation, and Magnivis's own historical performance. These are decision inputs, not fake-precision scores. Do not impose rigid domain quotas or repeatedly produce near-identical topics because one subject performed well. Audience evidence should help Magnivis discover its strongest concentrations over time without narrowing the brand prematurely.
 
 ## Fundamental content model
 

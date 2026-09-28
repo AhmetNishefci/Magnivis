@@ -32,6 +32,8 @@ No speech-to-text system is used when approved narration text and timing already
 
 `src/captions/plan.ts` derives frame-exact cue timing from the approved narration and validates complete, ordered, non-overlapping coverage. It rejects invented wording, timing outside source cues, unknown placements or treatments, invalid emphasis spans, and unsafe layout profiles.
 
+Styled segmentation is text-preserving: emphasized and normal fragments are sliced directly from the source line, must reconstruct it byte-for-byte, and are each rendered with explicit whitespace preservation. Emphasis sizing participates in inline layout rather than using transforms that can paint over adjacent source spaces. Never repair a visual spacing defect by changing approved narration or inserting spaces that are not present in the source.
+
 ## Design system
 
 `caption-design.magnivis-short-form.v1` uses existing Magnivis typography and palette. It favors phrase-level chunks, a maximum of two lines, strong contrast, a restrained backdrop, and selective semantic emphasis. It does not use per-word bouncing, arbitrary colors, random sizes, emoji, or unrestricted motion.

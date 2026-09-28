@@ -96,7 +96,7 @@ Video specifications are production representations, not reusable research or ed
 - Audio: deterministic original soundscape plus six hash-recorded local Kokoro narration cues from the approved script
 - Captions: 17 designed burned-in cues from `caption-plan.wood-frog.v1`; `captions/wood-frog.en.vtt` is the aligned optional accessibility track
 - Output: `output/wood-frog-narrated.mp4`
-- QA: `qa/wood-frog-narrated/`; exact-frame extraction and an 11-sample contact sheet cover every major scientific beat
+- QA: `qa/wood-frog-narrated/`; exact-frame extraction and a 17-sample contact sheet inspect every designed-caption cue across all scientific beats
 - Status: rendered candidate; full human visual/audio review and later private platform preview are still required
 
 ## Commands

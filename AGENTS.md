@@ -1,6 +1,6 @@
 # Magnivis agent guide
 
-Magnivis is a premium, faceless, English-language knowledge-media brand: **See the unimaginable.** Every published asset should leave the viewer knowing something fascinating they did not know before. The repository is the durable source of truth; do not rely on context from earlier chats.
+Magnivis is a premium, faceless, English-language knowledge-media brand: **See the unimaginable.** Every published asset should help the viewer understand something fascinating or useful that they did not understand before. The repository is the durable source of truth; do not rely on context from earlier chats.
 
 ## Before changing anything
 
@@ -11,7 +11,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 ## Permanent rules
 
 - Preserve the cinematic, minimal, scientifically credible brand in `docs/BRAND.md` and `docs/CONTENT-BIBLE.md`.
-- Magnivis is an open-ended curiosity and understanding brand. **Discover first, classify second.** High-level pillars organize the portfolio; they are never a whitelist. Domains and topics are open normalized terms, and legitimate new subjects do not require source-code authorization.
+- Magnivis is an open-ended curiosity and understanding brand: help viewers understand something fascinating or useful every day. **Discover first, classify second.** High-level pillars organize the portfolio; they are never a whitelist. Science, history, human behavior, philosophy, practical life skills, business, money, culture, and future legitimate domains all fit when treated as credible explanation—not generic motivation, shallow self-help, or advice spam. `docs/STRATEGY.md` owns the topic-universe rules.
 - Treat a verified knowledge package—not a finished video—as the durable editorial unit. Platform assets should reference that package and adapt it without silently changing its claims.
 - AI-assisted research output is a proposal, never evidence of its own correctness. Model-proposed sources begin unreviewed, model-proposed claims begin unverified, and model-generated editorial assets remain drafts until a human approves them.
 - Keep AI providers behind the repository interface in `src/ai/`; validate structured output and preserve workflow/model/usage provenance. Do not scatter vendor SDK calls through domain code or make normal validation depend on credentials.

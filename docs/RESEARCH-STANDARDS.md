@@ -32,6 +32,8 @@ The implemented claim model covers quantitative and qualitative claims. Quantita
 6. Never fill a missing value or citation with model-generated text.
 7. Distinguish source quality from claim status: a reputable source can still be irrelevant, outdated, or contradicted.
 8. Health, psychology, history, economics, and current-event claims require domain-appropriate review; do not apply astronomy-style numeric sourcing mechanically.
+9. Label whether a statement is empirical evidence, preliminary evidence, expert interpretation, historical interpretation, philosophical argument, theoretical framework, or personal-development framework when that distinction affects the viewer's understanding.
+10. General financial education must not become personalized advice. Relationship and behavior content must avoid universal prescriptions, manipulative “dark psychology,” and unsupported diagnostic claims.
 
 ## Wood-frog operator trial and evidence review
 

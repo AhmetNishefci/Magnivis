@@ -23,6 +23,12 @@ Every asset should leave the viewer with a clearer mental model and at least one
 - Avoid fake precision. Round to the level the source and story support.
 - Keep claim-level citations, review status, and research notes in committed structured data even when sources do not appear on-screen.
 - Never treat plausible model output as verified evidence. Communicate conflicting or uncertain evidence rather than forcing certainty.
+- Match the claim type to the evidence type. A philosophical argument, historical interpretation, theoretical model, personal-development framework, and empirical scientific result are not interchangeable.
+- Treat medicine, psychology, neuroscience, relationships, economics, and personal finance as higher-care domains. Educational explanation must not become personalized medical, financial, investment, or relationship advice.
+
+## Topic identity
+
+Magnivis explains fascinating or useful things across an open-ended knowledge universe. Science, history, technology, human behavior, philosophy, practical life skills, business, money, culture, and cross-domain stories are all valid when they produce credible understanding. Do not drift into generic motivation, shallow self-help, hustle culture, “dark psychology,” investment tips, or engagement-only book lists. `docs/STRATEGY.md` is canonical for topic scope and discovery guidance.
 
 ## Knowledge-package rule
 

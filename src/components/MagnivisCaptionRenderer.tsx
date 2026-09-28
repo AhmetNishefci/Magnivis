@@ -1,7 +1,10 @@
-import type {ReactNode} from 'react';
 import {AbsoluteFill, useCurrentFrame} from 'remotion';
 import {captionRegionStyle, magnivisCaptionDesignSystem} from '../captions/design-system';
 import type {CaptionCue, CaptionPlan} from '../captions/schema';
+import {
+  captionSegmentWhitespaceStyle,
+  segmentStyledCaptionLine,
+} from '../captions/styled-text';
 import {palette, typography} from '../design/tokens';
 import {easeOutQuint, progress} from '../utils/math';
 
@@ -10,39 +13,38 @@ const toneColors = {
   gold: palette.gold,
 } as const;
 
-const renderLine = (line: string, cue: CaptionCue, focus: number): ReactNode[] => {
-  const matches = cue.emphasis
-    .map((emphasis) => ({...emphasis, index: line.indexOf(emphasis.text)}))
-    .filter(({index}) => index >= 0)
-    .sort((left, right) => left.index - right.index);
-  const nodes: ReactNode[] = [];
-  let cursor = 0;
-  for (const [index, match] of matches.entries()) {
-    if (match.index < cursor) throw new Error(`Overlapping caption emphasis in ${cue.id}`);
-    if (match.index > cursor) nodes.push(line.slice(cursor, match.index));
-    const strong = match.level === 'strong';
-    nodes.push(
-      <span
-        key={`${cue.id}-${index}-${match.text}`}
-        style={{
-          color: toneColors[match.tone],
-          display: 'inline-block',
-          fontWeight: strong
-            ? magnivisCaptionDesignSystem.typography.strongWeight
-            : 750,
-          transform: `scale(${1 + focus * (strong ? 0.025 : 0.012)})`,
-          transformOrigin: 'center 70%',
-          textShadow: `0 0 ${10 + focus * 10}px ${toneColors[match.tone]}44`,
-        }}
-      >
-        {match.text}
-      </span>,
-    );
-    cursor = match.index + match.text.length;
-  }
-  if (cursor < line.length) nodes.push(line.slice(cursor));
-  return nodes;
-};
+export const MagnivisCaptionLine = ({
+  line,
+  cue,
+  focus,
+}: {
+  line: string;
+  cue: CaptionCue;
+  focus: number;
+}) => (
+  <>
+    {segmentStyledCaptionLine(line, cue.emphasis).map((segment, index) => {
+      const emphasis = segment.emphasis;
+      const strong = emphasis?.level === 'strong';
+      return (
+        <span
+          key={`${cue.id}-${index}`}
+          style={emphasis ? {
+            ...captionSegmentWhitespaceStyle,
+            color: toneColors[emphasis.tone],
+            fontWeight: strong
+              ? magnivisCaptionDesignSystem.typography.strongWeight
+              : 750,
+            fontSize: `${1 + focus * (strong ? 0.025 : 0.012)}em`,
+            textShadow: `0 0 ${10 + focus * 10}px ${toneColors[emphasis.tone]}44`,
+          } : captionSegmentWhitespaceStyle}
+        >
+          {segment.text}
+        </span>
+      );
+    })}
+  </>
+);
 
 export const MagnivisCaptionRenderer = ({
   plan,
@@ -125,7 +127,7 @@ export const MagnivisCaptionRenderer = ({
                 textShadow: '0 3px 12px rgba(0,0,0,0.95)',
               }}
             >
-              {renderLine(line, cue, focus)}
+              <MagnivisCaptionLine line={line} cue={cue} focus={focus} />
             </div>
           ))}
         </div>
