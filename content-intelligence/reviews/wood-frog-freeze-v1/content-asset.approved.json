@@ -1,0 +1,258 @@
+{
+  "approval": {
+    "approvedAt": "2026-09-28",
+    "approvedBy": "Ahmet Nishefci",
+    "notes": "Approved through claim-review.wood-frog-freeze.v1; Owner reviewed the Wood Frog claim-review handoff and approved the eligible evidence-backed claims, recommended hook, final script, narrative structure, VisualPlan, and procedural asset strategy. The circulation-cessation claim remains uncertain and excluded. Source-access limitations and evidence provenance must remain preserved."
+  },
+  "assetType": "short-form-video",
+  "durationIntentSeconds": {
+    "maximum": 38,
+    "minimum": 30
+  },
+  "editorialPurpose": "Explain how extracellular ice, water redistribution and complementary cryoprotectants let a wood frog survive a reversible freeze.",
+  "editorialStatus": "approved",
+  "hookId": "wood-frog-freeze-tolerance.hook.stopped-heart",
+  "id": "wood-frog-freeze-tolerance.asset.how-freezing-works",
+  "knowledgePackageId": "wood-frog-freeze-tolerance",
+  "narrationPlan": {
+    "mode": "narrated",
+    "pronunciationNotes": [
+      "cryoprotectant: CRY-oh-pro-TEK-tant"
+    ],
+    "voiceDirection": "Controlled wonder: open with quiet disbelief, become precise during the mechanism, and land the final distinction without triumphal exaggeration."
+  },
+  "narrativeStructure": [
+    {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.hook",
+      "label": "Reversible cardiac arrest",
+      "purpose": "Create immediate disbelief without implying death or resurrection.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.hook"
+      ]
+    },
+    {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.setup",
+      "label": "Extracellular freeze",
+      "purpose": "Establish substantial body-water freezing without depicting uniform intracellular ice.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.freeze"
+      ]
+    },
+    {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.physical-mechanism",
+      "label": "Water leaves the cells",
+      "purpose": "Show how extracellular ice, dehydration and extra-organ sequestration reduce dangerous ice inside tissues and cells.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.location"
+      ]
+    },
+    {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.chemical-mechanism",
+      "label": "Two defenses, different timing",
+      "purpose": "Distinguish freeze-triggered glucose mobilization from urea accumulated before freezing.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.chemistry",
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.protection"
+      ]
+    },
+    {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.payoff",
+      "label": "Ordered recovery",
+      "purpose": "Show heart function returning before breathing and hindleg reflexes, then land the controlled-freeze distinction.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.payoff"
+      ]
+    }
+  ],
+  "revision": 2,
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.freeze-survival",
+          "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+          "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+        ],
+        "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.script.hook",
+        "text": "A wood frog can survive a freeze that stops its heartbeat—then thaw and recover.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.freeze-survival",
+          "wood-frog-freeze-tolerance.claim.ice-redistribution"
+        ],
+        "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.script.freeze",
+        "text": "Much of its body water can turn to ice, mainly outside its cells.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.ice-redistribution"
+        ],
+        "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.script.location",
+        "text": "As extracellular ice grows, water leaves the cells. That dehydration helps keep dangerous ice crystals from forming inside them.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+          "wood-frog-freeze-tolerance.claim.urea-and-glucose"
+        ],
+        "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.script.chemistry",
+        "text": "Its liver rapidly releases glucose, while urea has already built up before freezing.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+          "wood-frog-freeze-tolerance.claim.urea-and-glucose"
+        ],
+        "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.script.protection",
+        "text": "These cryoprotectants limit ice formation and help protect cells through freezing and thawing.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.freeze-survival",
+          "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+        ],
+        "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.script.payoff",
+        "text": "As the frog thaws, its heart starts beating first; breathing and leg reflexes follow. It survived by controlling the freeze—not by staying unfrozen.",
+        "type": "factual"
+      }
+    ]
+  },
+  "selectedClaimIds": [
+    "wood-frog-freeze-tolerance.claim.freeze-survival",
+    "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+    "wood-frog-freeze-tolerance.claim.thaw-recovery-order",
+    "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+    "wood-frog-freeze-tolerance.claim.urea-and-glucose",
+    "wood-frog-freeze-tolerance.claim.ice-redistribution"
+  ],
+  "storyAngle": "Begin with reversible cardiac arrest, correct the “frozen solid” misconception, then reveal the physical and chemical defenses that permit staged recovery.",
+  "visualPlan": [
+    {
+      "assetRequirements": [
+        "Original procedural or vector wood frog model",
+        "Original cardiac-trace and frost animation",
+        "On-screen “cardiac activity” label"
+      ],
+      "claimIds": [
+        "wood-frog-freeze-tolerance.claim.freeze-survival",
+        "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+        "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+      ],
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.frozen-flatline",
+      "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.hook",
+      "notes": "A flat trace represents measured cardiac arrest, not death. Do not use a hospital death monitor, alarm, resurrection flash or medical-emergency language.",
+      "objective": "Show a stylized wood frog freezing while a clearly labeled cardiac trace slows and ceases, then briefly preview recovery after thaw.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.hook"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "timingIntentSeconds": {
+        "end": 4,
+        "start": 0
+      },
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original forest-floor background",
+        "Simplified anatomical silhouette",
+        "Labeled extracellular-ice layer",
+        "No intracellular ice depiction"
+      ],
+      "claimIds": [
+        "wood-frog-freeze-tolerance.claim.freeze-survival",
+        "wood-frog-freeze-tolerance.claim.ice-redistribution"
+      ],
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.body-freeze",
+      "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.setup",
+      "notes": "Do not fill the frog or its cells with a uniform solid-ice texture. This is an explanatory diagram, not a literal scan.",
+      "objective": "Move from leaf litter into a simplified body view where extracellular and extra-organ ice grows while cells remain visibly unfrozen inside.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.freeze"
+      ],
+      "suggestedPrimitive": "diagram",
+      "timingIntentSeconds": {
+        "end": 10,
+        "start": 4
+      },
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original cell and tissue cross-section",
+        "Animated water-flow and ice-crystal layers"
+      ],
+      "claimIds": [
+        "wood-frog-freeze-tolerance.claim.ice-redistribution"
+      ],
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.ice-location",
+      "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.physical-mechanism",
+      "notes": "Label extracellular space, cell membrane and water movement. Intracellular ice may appear only as a crossed-out danger example, never as the normal survivable state.",
+      "objective": "Show extracellular ice drawing water out of a cell, controlled cell shrinkage, and water accumulating in extra-organ spaces without showing survivable intracellular crystals.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.location"
+      ],
+      "suggestedPrimitive": "comparison",
+      "timingIntentSeconds": {
+        "end": 19,
+        "start": 10
+      },
+      "visualType": "diagram"
+    },
+    {
+      "assetRequirements": [
+        "Original pre-freeze urea panel",
+        "Original liver-to-tissue glucose pathway",
+        "Labeled unfrozen-fluid and cell-protection diagram"
+      ],
+      "claimIds": [
+        "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+        "wood-frog-freeze-tolerance.claim.urea-and-glucose"
+      ],
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.cryoprotectants",
+      "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.chemical-mechanism",
+      "objective": "Use a two-step timeline: urea is already elevated before freezing; after ice nucleation, liver glycogen becomes glucose that travels to tissues before advanced freezing impedes transport.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.chemistry",
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.protection"
+      ],
+      "suggestedPrimitive": "diagram",
+      "timingIntentSeconds": {
+        "end": 29,
+        "start": 19
+      },
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original thaw transition",
+        "Ordered heart → breathing → hindleg-reflex indicators",
+        "Original procedural or vector recovered frog visual"
+      ],
+      "claimIds": [
+        "wood-frog-freeze-tolerance.claim.freeze-survival",
+        "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+      ],
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.thaw-payoff",
+      "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.payoff",
+      "notes": "The order is supported, but exact recovery timing varies and must not be implied by an unlabeled stopwatch.",
+      "objective": "Thaw the extracellular ice, restore the cardiac trace first, then show breathing and a hindleg reflex returning without assigning unsupported exact times.",
+      "scriptSegmentIds": [
+        "wood-frog-freeze-tolerance.asset.how-freezing-works.script.payoff"
+      ],
+      "suggestedPrimitive": "timeline",
+      "timingIntentSeconds": {
+        "end": 37,
+        "start": 29
+      },
+      "visualType": "animation"
+    }
+  ]
+}

@@ -35,7 +35,7 @@ The implemented claim model covers quantitative and qualitative claims. Quantita
 
 ## Wood-frog operator trial and evidence review
 
-The `wood-frog-freeze-tolerance` package is the first new Content Intelligence trial and remains in `review`. Human Claim Review V1 independently inspected ten source records on 2026-09-27, including primary ECG, pulmonary-ventilation, thaw-recovery, glucose, urea, water-redistribution and Alaskan tolerance work. The exact evidence map and owner handoff are in `content-intelligence/reviews/wood-frog-freeze-v1/`. No claim is human-marked `verified`; the package is **READY FOR OWNER EDITORIAL APPROVAL**.
+The `wood-frog-freeze-tolerance` package is the first new Content Intelligence trial. Human Claim Review V1 independently inspected ten source records on 2026-09-27, including primary ECG, pulmonary-ventilation, thaw-recovery, glucose, urea, water-redistribution and Alaskan tolerance work. Ahmet Nishefci approved the eligible evidence-backed claims and revision 2 editorial asset through the explicit owner gate on 2026-09-28. The exact evidence map, decision and approved snapshots are in `content-intelligence/reviews/wood-frog-freeze-v1/`. Ten eligible claims are `verified`; circulation cessation remains `uncertain` and excluded. Source-access classifications and limitations did not change during promotion.
 
 The review established these boundaries:
 

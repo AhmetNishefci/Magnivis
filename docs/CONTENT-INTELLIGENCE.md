@@ -24,18 +24,18 @@ The first new topic is `topic.wood-frog-freeze`: **How wood frogs survive being 
 
 The registered `wood-frog-freeze-tolerance` KnowledgePackage and its draft ContentAsset are real review material, not toy fixtures. The original operator run remains a historical record under `content-intelligence/runs/wood-frog-freeze-fixture-v1/`; its claims and script were superseded by the claim-review revision rather than edited in place.
 
-Human Claim Review V1 is now implemented for this topic. The current package and asset are revision 2 and preserve:
+Human Claim Review V1 is now implemented for this topic. The reviewed package and asset are revision 2 and preserve:
 
 - ten inspected source records, including primary ECG, pulmonary-ventilation, thaw-recovery, glucose, urea, water-redistribution and Alaskan freeze-tolerance research;
 - eleven claim records with exact evidence locations and population/experimental caveats;
-- no `verified` claims and no human approval metadata;
+- exact pre-approval claim states plus a separately recorded, hash-bound owner decision;
 - four genuinely distinct hook archetypes;
 - a 30–38 second claim-linked script draft;
 - platform-neutral narrative beats and timed visual intent.
 
 The review corrected material oversimplifications. Heartbeat, pulmonary ventilation and circulation are separate claims. Cardiac arrest and ventilation cessation have primary experimental support; direct blood-flow-to-zero measurement was not located, so circulation cessation remains `uncertain` and is excluded from the asset. “Frozen solid” is replaced by extracellular-ice/cellular-dehydration language. The Alaskan endurance result is now stated as 2 of 4 frogs meeting the survival criterion after eight weeks at −4°C, following earlier severe freezes; all four frogs in the twelve-week group died. The −16°C record is scoped to four winter-acclimatized Interior Alaskan frogs in one staged, slow-cooling laboratory trial.
 
-The canonical owner handoff is `content-intelligence/reviews/wood-frog-freeze-v1/owner-review.md`. Its machine-readable companion is `claim-review.json`. This state is **READY FOR OWNER EDITORIAL APPROVAL**, not production-ready.
+The evidence handoff is `content-intelligence/reviews/wood-frog-freeze-v1/owner-review.md`, with `claim-review.json` as its machine-readable companion. Ahmet Nishefci completed the explicit owner gate on 2026-09-28. `owner-decision.json`, `knowledge-package.approved.json`, and `content-asset.approved.json` are now the canonical approval record: ten eligible claims are verified, circulation cessation remains uncertain and excluded, and the approved hook/script/narrative/VisualPlan may enter production planning. This approval does not authorize rendering, platform upload or publication.
 
 The deterministic operator artifact is committed at `content-intelligence/runs/wood-frog-freeze-fixture-v1/`. Its `review.md` is the historical trial handoff, not the current owner decision document. The run proves serialization, validation, provenance, hashing, gates, and downstream shape without pretending that a paid model ran. Every workflow envelope truthfully records `provider: fixture` and awaits human review.
 
@@ -155,14 +155,12 @@ Changing reviewed claim wording changes its hash and invalidates a stale owner d
 
 ## Current human gates
 
-Before this wood-frog draft can move to production, an owner/editor must:
+The Wood Frog claim/editorial gate has been completed. Production must now:
 
-1. read the revision 2 owner-review report and inspect its linked evidence as needed;
-2. explicitly approve or reject every reviewed claim with reviewer identity and time;
-3. approve one defensible hook plus the revision 2 script, narrative and visual plan;
-4. accept the exclusion of circulation cessation or provide directly reviewed stronger evidence;
-5. review and later record asset rights/provenance;
-6. later approve final render, audio, captions, disclosures, platform preview, and public release.
+1. consume the approved revision 2 snapshots without restoring the uncertain circulation claim;
+2. preserve the approved scientific visual guardrails and record asset rights/provenance;
+3. retain human approval for the final render, audio, captions and platform preview;
+4. retain a separate explicit gate for disclosures and public release.
 
 ## Intentionally unimplemented
 
@@ -174,4 +172,4 @@ Before this wood-frog draft can move to production, an owner/editor must:
 - production rendering for the wood-frog draft;
 - publishing or analytics APIs.
 
-The remaining bottleneck is owner editorial approval. Only after that gate is recorded should the approved visual plan enter a bounded Wood Frog production-planning milestone; generic VisualPlan-to-Remotion automation remains premature.
+The next bottleneck is translating the approved VisualPlan into a bounded, rights-traceable production plan and VideoSpec without weakening the scientific guardrails. Generic VisualPlan-to-Remotion automation remains premature.

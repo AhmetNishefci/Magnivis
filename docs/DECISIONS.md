@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-09-28 — Approve the Wood Frog editorial package without authorizing production release
+
+**Decision:** Ahmet Nishefci approved every claim eligible in `claim-review.wood-frog-freeze.v1`, the recommended stopped-heart hook, revision 2 script, narrative, VisualPlan and procedural-asset strategy through the explicit owner command. Circulation cessation was rejected for promotion and remains `uncertain` and excluded.
+
+**Reason:** The owner accepted the evidence-to-wording matches and documented limitations after the independent claim-review handoff. Separating editorial approval from render and publication approval preserves later visual, rights, platform and release gates.
+
+**Consequences:** `owner-decision.json` binds the approval to exact statement hashes and records reviewer/time. The approved package and asset snapshots are ready for bounded production planning. No render, upload or public-release authority was granted, and all source-access/provenance limitations remain intact.
+
 ## 2026-09-27 — Bind human claim approval to exact reviewed wording
 
 **Decision:** Represent claim review as an AI-assisted evidence-audit bundle, then require a separate explicit owner decision before promotion. Owner decisions bind to package/asset revisions and SHA-256 hashes of every reviewed claim statement. Promotion requires reviewer identity/time, a decision on every claim, an approved hook, an asset decision, and an explicit confirmation phrase. Supported claims remain unverified until this boundary is crossed.
