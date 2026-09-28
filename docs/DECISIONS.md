@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-28 — Make designed burned-in captions part of every new short-form master
+
+**Decision:** Add a typed CaptionPlan and constrained `MagnivisCaptionRenderer`. Every new Magnivis short-form production burns designed captions into the creative master while retaining an optional WebVTT or platform-native accessibility path. Phrase grouping, emphasis, placement, and treatment may later be AI-assisted, but only within versioned design-system and safe-area constraints.
+
+**Reason:** The owner review of the otherwise successful Wood Frog candidate established captions as necessary creative communication for silent viewing, comprehension, retention, and consistent cross-platform presentation. Known approved narration and cue timing provide a more trustworthy source than speech recognition.
+
+**Alternatives:** Depend only on platform-native captions (inconsistent and platform-controlled); add captions only to Wood Frog (creates a one-off production rule); give AI unrestricted styling freedom (unsafe and visually inconsistent); transcribe known narration (adds error and cost without information).
+
+**Consequences:** Wood Frog ProductionPlan and PlatformVariant advance to revision 2, the same CaptionPlan drives its burned-in render and WebVTT, and the new render remains under human visual/platform review. Existing approved media and hashes are unchanged. The 2026-09-26 YouTube-only rule below remains historical for Speed of Light but is superseded for new short-form production.
+
 ## 2026-09-28 — Bind Wood Frog production to approved editorial hashes without creating a template factory
 
 **Decision:** Add a typed ProductionPlan between the approved Wood Frog VisualPlan and VideoSpec. Bind it to exact KnowledgePackage, ContentAsset, owner-decision, and script hashes; reject stale revisions, unverified/excluded claims, and narration drift. Build the first composition from original procedural/vector visuals and extract only three small reusable diagram primitives. Derive captions from approved narration cues rather than transcribing known text.
@@ -149,6 +159,8 @@
 **Consequences:** On-screen labels name the relevant dimension, visuals are illustrative rather than common-scale engineering drawings, and the title avoids claiming a universal largest structure. Future comparisons must preserve the same metric discipline.
 
 ## 2026-09-26 — Toggleable YouTube captions, without burned-in narration text
+
+**Status:** Historical for the published Speed of Light workflow. Superseded for new short-form production by the 2026-09-28 designed-caption decision; existing approved media is not retroactively changed.
 
 **Decision:** Keep narration captions as optional YouTube caption tracks and do not burn them into production masters. Request lower-center placement in WebVTT while treating client-side positioning as best-effort.
 

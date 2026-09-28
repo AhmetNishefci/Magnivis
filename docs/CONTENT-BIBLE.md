@@ -32,6 +32,8 @@ Research belongs to a reusable knowledge package. Shorts, long-form videos, arti
 
 Design for 9:16 and mobile viewing. Important text stays inside the project safe-area tokens: clear of the right interaction rail, lower metadata/caption area, and extreme top edge. Check representative frames and a real device before upload.
 
+All new short-form masters include designed burned-in Magnivis captions. Use one or two semantic lines, selective emphasis, strong compression-safe contrast, and scene-aware placement from approved safe regions. Platform-native or external caption tracks may also support accessibility, but they never replace the designed layer. See `docs/CAPTIONS.md`.
+
 ## Audio
 
 Music, ambience, transitions, impacts, narration, and silence are separate conceptual layers. Sound should clarify scale and pacing. Narration must remain replaceable without rebuilding visual scenes, and every synthetic voice requires human review for pronunciation, tone, and mix.

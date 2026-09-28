@@ -91,10 +91,10 @@ Video specifications are production representations, not reusable research or ed
 - Remotion composition: `Magnivis-Wood-Frog`
 - Format: 1080×1920, 30 fps, 40 seconds
 - Editorial source: approved `wood-frog-freeze-tolerance` package revision 2 and `wood-frog-freeze-tolerance.asset.how-freezing-works` revision 2
-- Production source: `production-plan.wood-frog-freeze.v1`, with exact package/asset/owner/script hashes and explicit circulation-cessation exclusion
+- Production source: `production-plan.wood-frog-freeze.v1` revision 2, with exact package/asset/owner/script/CaptionPlan hashes and explicit circulation-cessation exclusion
 - Visuals: original procedural frog, forest, cardiac trace, extracellular-tissue/cell diagrams, cryoprotectant phase sequence, and ordered recovery indicators
 - Audio: deterministic original soundscape plus six hash-recorded local Kokoro narration cues from the approved script
-- Captions: `captions/wood-frog.en.vtt`, deterministically grouped from the approved cue text and timing
+- Captions: 17 designed burned-in cues from `caption-plan.wood-frog.v1`; `captions/wood-frog.en.vtt` is the aligned optional accessibility track
 - Output: `output/wood-frog-narrated.mp4`
 - QA: `qa/wood-frog-narrated/`; exact-frame extraction and an 11-sample contact sheet cover every major scientific beat
 - Status: rendered candidate; full human visual/audio review and later private platform preview are still required
@@ -127,6 +127,7 @@ pnpm assets:light                # regenerate Video 004 soundscape and narration
 pnpm assets:engineering          # regenerate Video 005 soundscape and narration
 pnpm assets:wood-frog            # regenerate Wood Frog soundscape and narration
 pnpm captions:wood-frog          # derive WebVTT from approved narration cues
+pnpm captions:validate wood-frog # validate CaptionPlan, narration, safe areas and WebVTT
 pnpm production:validate wood-frog # validate approved source chain and artifact hashes
 pnpm check                       # typecheck, lint, tests, diff check
 ```
@@ -143,8 +144,7 @@ The render router rejects unknown video IDs. Production renders use an 8 Mbps H.
 
 ## Caption placement
 
-- Narrated Magnivis Shorts use optional YouTube caption tracks; do not burn narration captions into the production master. This preserves the viewer's ability to turn captions on or off and avoids duplicate text when YouTube captions are enabled.
-- Positioned WebVTT files request horizontal centering in the lower safe area using `line:78% position:50% align:center`; `.srt` files are unpositioned fallbacks only.
-- Caption positioning is best-effort. YouTube's desktop player may honor WebVTT placement while the mobile Shorts player may override it, including moving captions toward the top. The app—not the uploaded MP4—controls optional-caption rendering.
-- Keep key visuals and headlines clear of both likely caption regions, and review every private Short with captions on and off in desktop and mobile clients before publication.
-- Existing public videos are not re-uploaded solely to adjust optional-caption placement.
+- Every new Magnivis short-form master contains designed burned-in captions rendered through the constrained CaptionPlan system. The design uses phrase-level chunks, selective emphasis, one of the registered placement regions, and the active safe-area profile.
+- WebVTT or platform-native captions may also support accessibility. They remain platform-controlled, can visually duplicate burned-in captions, and must be checked during private platform review. They never replace the designed layer.
+- Known approved narration text and timing drive CaptionPlan and WebVTT. Do not add speech recognition when those inputs exist.
+- Existing approved or published videos are not re-rendered solely to adopt the new rule. See `docs/CAPTIONS.md` for the canonical design and AI boundary.

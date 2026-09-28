@@ -1,3 +1,5 @@
+import type {CaptionPlan} from './schema';
+
 export type NarrationCaptionInput = {
   id: string;
   start: number;
@@ -92,3 +94,12 @@ export const captionsToWebVtt = (captions: readonly DerivedCaption[]) => [
     '',
   ]),
 ].join('\n');
+
+export const captionPlanToDerivedCaptions = (plan: CaptionPlan): DerivedCaption[] => (
+  plan.cues.map((cue) => ({
+    id: cue.id,
+    start: cue.startFrame / plan.fps,
+    end: cue.endFrame / plan.fps,
+    text: cue.lines.join(' '),
+  }))
+);

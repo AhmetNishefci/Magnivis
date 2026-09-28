@@ -6,7 +6,7 @@ import {platformVariantSchema} from '../schema';
 
 export const woodFrogYoutubeReviewVariant = platformVariantSchema.parse({
   id: `${woodFrogApprovedContentAsset.id}.variant.youtube-shorts`,
-  revision: 1,
+  revision: 2,
   contentAssetId: woodFrogApprovedContentAsset.id,
   platform: 'youtube',
   surface: 'youtube-shorts',
@@ -27,6 +27,7 @@ export const woodFrogYoutubeReviewVariant = platformVariantSchema.parse({
   },
   editorialAdaptationNotes: [
     'Use this variant only to package the master for human visual and private platform review.',
+    'Revision 2 packages the designed burned-in Magnivis captions while retaining the reviewed WebVTT as an optional accessibility track.',
     'Do not publish until the exact render, optional caption track, cover and platform UI have passed separate human review.',
   ],
   duration: {targetSeconds: 40, minimumSeconds: 30, maximumSeconds: 60},
@@ -38,6 +39,7 @@ export const woodFrogYoutubeReviewVariant = platformVariantSchema.parse({
   },
   captions: {
     behavior: 'external-track',
+    designedBurnedIn: true,
     language: 'en',
     sourceFile: 'captions/wood-frog.en.vtt',
     humanReviewRequired: true,

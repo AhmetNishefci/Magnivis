@@ -1,7 +1,8 @@
 import {createHash} from 'node:crypto';
 import {readFileSync} from 'node:fs';
 import {describe, expect, it} from 'vitest';
-import {captionsToWebVtt, deriveCaptionsFromNarration, splitCaptionPhrases} from '../src/captions/derive';
+import {captionPlanToDerivedCaptions, captionsToWebVtt, splitCaptionPhrases} from '../src/captions/derive';
+import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
 import {woodFrogApprovedContentAsset} from '../src/content-assets/assets/wood-frog-approved';
 import {woodFrog} from '../src/content/videos/wood-frog';
 import {safeAreaContains, safeAreaProfileIds, safeAreaProfileRegistry} from '../src/design/safe-areas';
@@ -80,6 +81,9 @@ describe('Wood Frog production source chain', () => {
       approvedContentAssetSha256: woodFrogApprovalHashes.contentAsset,
       ownerDecisionSha256: woodFrogApprovalHashes.ownerDecision,
       approvedScriptSha256: woodFrogApprovalHashes.script,
+      captionPlanId: woodFrogCaptionPlan.id,
+      captionPlanRevision: woodFrogCaptionPlan.revision,
+      captionPlanSha256: woodFrogApprovalHashes.captionPlan,
       outputReviewState: 'visual-review-required',
     });
     expect(woodFrog.audio.narrationCues.map(({transcript}) => transcript)).toEqual(
@@ -107,10 +111,7 @@ describe('Wood Frog production source chain', () => {
 
 describe('narration-derived captions', () => {
   it('preserves every approved word while producing readable timed phrases', () => {
-    const captions = deriveCaptionsFromNarration(
-      woodFrog.audio.narrationCues,
-      woodFrog.format.durationSeconds,
-    );
+    const captions = captionPlanToDerivedCaptions(woodFrogCaptionPlan);
     const reconstructed = captions.map(({text}) => text).join(' ');
     const approved = woodFrogApprovedContentAsset.script.segments.map(({text}) => text).join(' ');
     expect(reconstructed).toBe(approved);
@@ -130,6 +131,7 @@ describe('narration-derived captions', () => {
 describe('Wood Frog platform review boundary', () => {
   it('keeps the candidate non-publishable pending human visual/platform review', () => {
     expect(woodFrogYoutubeReviewVariant.status).toBe('editorial-review');
+    expect(woodFrogYoutubeReviewVariant.captions.designedBurnedIn).toBe(true);
     expect(woodFrogYoutubeReviewVariant.productionIntent.platformPreviewRequired).toBe(true);
     expect(woodFrog.production?.outputReviewState).toBe('visual-review-required');
   });

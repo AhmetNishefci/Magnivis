@@ -2,11 +2,13 @@ import {Audio} from '@remotion/media';
 import {AbsoluteFill, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {ColdForest, CardiacTrace, CellDehydrationDiagram, CryoprotectantDiagram, ExtracellularTissue, ProceduralWoodFrog, RecoveryIndicators} from '../components/WoodFrogWorld';
 import {Finish} from '../components/Finish';
+import {MagnivisCaptionRenderer} from '../components/MagnivisCaptionRenderer';
 import {SceneWindow} from '../components/SceneWindow';
 import {ScientificLabel} from '../components/ScientificDiagram';
 import {ShortSafeArea} from '../components/ShortSafeArea';
 import {RevealText} from '../components/Typography';
 import {woodFrog} from '../content/videos/wood-frog';
+import {woodFrogCaptionPlan} from '../captions/plans/wood-frog';
 import {palette, typography} from '../design/tokens';
 import {easeInOutCubic, easeOutQuint, progress} from '../utils/math';
 
@@ -129,5 +131,6 @@ export const WoodFrog = () => (
     <TwoDefenses />
     <Recovery />
     <Finish />
+    <MagnivisCaptionRenderer plan={woodFrogCaptionPlan} />
   </AbsoluteFill>
 );

@@ -1,4 +1,5 @@
 import {woodFrogApprovedContentAsset} from '../../content-assets/assets/wood-frog-approved';
+import {woodFrogCaptionPlan} from '../../captions/plans/wood-frog';
 import {safeAreaProfileIds} from '../../design/safe-areas';
 import {woodFrogApprovedKnowledgePackage} from '../../knowledge/packages/wood-frog-approved';
 import {woodFrogFreezeClaimIds} from '../../knowledge/packages/wood-frog-freeze-tolerance';
@@ -12,7 +13,7 @@ const scriptIds = asset.script.segments.map(({id}) => id);
 export const woodFrogProductionPlan = productionPlanSchema.parse({
   schemaVersion: 1,
   id: 'production-plan.wood-frog-freeze.v1',
-  revision: 1,
+  revision: 2,
   status: 'rendered-candidate-visual-review-required',
   knowledgePackage: {
     id: woodFrogApprovedKnowledgePackage.id,
@@ -129,9 +130,13 @@ export const woodFrogProductionPlan = productionPlanSchema.parse({
   ],
   captions: {
     file: 'captions/wood-frog.en.vtt',
+    captionPlanId: woodFrogCaptionPlan.id,
+    captionPlanRevision: woodFrogCaptionPlan.revision,
+    captionPlanSha256: '97aa4a0e94d60b011a602c3d3fb4faf6931cba0dc8422e807879bbc96e980836',
     generatorId: 'caption-generator.narration-cues.v1',
     generatorVersion: 1,
     source: 'approved-narration-cues',
+    designedBurnedIn: true,
     placement: 'optional-platform-track-lower-center',
   },
   reviewRequirements: [

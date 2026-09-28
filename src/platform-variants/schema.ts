@@ -67,6 +67,7 @@ export const platformVariantSchema = z.object({
   }).strict(),
   captions: z.object({
     behavior: z.enum(['external-track', 'platform-generated', 'burned-in', 'none']),
+    designedBurnedIn: z.boolean().default(false),
     language: z.string().min(2),
     sourceFile: z.string().min(1).optional(),
     humanReviewRequired: z.boolean(),

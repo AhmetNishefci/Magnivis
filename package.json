@@ -26,6 +26,7 @@
     "assets:engineering": "pnpm soundscape:engineering && pnpm narration human-engineering",
     "assets:wood-frog": "pnpm soundscape:wood-frog && pnpm narration wood-frog",
     "captions:wood-frog": "tsx scripts/generate-captions.ts wood-frog",
+    "captions:validate": "tsx scripts/validate-captions.ts",
     "soundscape": "node scripts/generate-audio.mjs",
     "soundscape:ocean": "node scripts/generate-ocean-audio.mjs",
     "soundscape:money": "node scripts/generate-money-audio.mjs",

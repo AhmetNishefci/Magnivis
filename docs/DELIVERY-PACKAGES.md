@@ -64,7 +64,7 @@ deliveries/<video-id>/<surface>/
 
 - `video.mp4`: copied from the validated production artifact selected by the PlatformVariant. Reused and dedicated renders follow the same hash and ffprobe checks.
 - `captions.en.vtt`: included only for an `external-track` variant. Platform-generated-caption variants do not receive a fabricated caption file.
-- `metadata.json`: concise structured upload fields, cover intent, caption behavior, and platform notes.
+- `metadata.json`: concise structured upload fields, cover intent, designed-burned-in status, accessibility/native caption behavior, and platform notes.
 - `upload-copy.txt`: human-readable exact fields plus a combined copy/paste body.
 - `review.md`: practical video, copy, provenance, and actual-platform checklist.
 - `manifest.json`: immutable description of the generated handoff and the hashes of every other artifact.
@@ -73,7 +73,7 @@ Automated cover creation is intentionally absent. The package carries the regist
 
 ## Manifest and integrity
 
-`src/delivery/schema.ts` validates schema version, delivery ID/time/state, source revisions, VideoSpec/composition, destination profiles, observed media, upload metadata and claim IDs, caption handling, approval/review status, and artifact records.
+`src/delivery/schema.ts` validates schema version, delivery ID/time/state, source revisions, VideoSpec/composition, destination profiles, observed media, upload metadata and claim IDs, designed-burned-in plus accessibility/native caption handling, approval/review status, and artifact records.
 
 Every video, caption, metadata, upload-copy, and review artifact receives a SHA-256 hash and byte count. The manifest is written last and is not recursively self-hashed. Validation reparses the manifest, resolves every registry reference, rejects missing/extra/tampered files, reruns ffprobe, checks media against VideoSpec/PlatformVariant/platform profile, and rejects unresolved placeholder markers.
 
@@ -90,7 +90,7 @@ Draft/review packages may be used for an explicitly private or draft platform up
 
 For the current Speed of Light set, YouTube is ready because that exact master and caption track previously passed human review. TikTok revision 2 is also ready after its dedicated safe-area render passed private visual/editorial QA on an iPhone 17 Pro Max. Its canonical package is `deliveries/speed-of-light-tiktok/tiktok-feed/`; the superseded revision 1 package formerly generated at `deliveries/speed-of-light/tiktok-feed/` has been removed and must not be recreated or used. Instagram and Facebook still require first real-platform previews. A ready package remains inert until a human separately approves and performs publication.
 
-Wood Frog generates `deliveries/wood-frog/youtube-shorts/` as `draft-review`. Its exact candidate video and derived WebVTT are hash-checked, but the registered variant remains `editorial-review`, `publishEligible` is false, no cover is approved, and full human visual plus private YouTube preview gates remain outstanding.
+Wood Frog revision 2 generates `deliveries/wood-frog/youtube-shorts/` as `draft-review`. Its exact designed-caption candidate and CaptionPlan-derived WebVTT are hash-checked, but the registered variant remains `editorial-review`, `publishEligible` is false, no cover is approved, and full human visual plus private YouTube preview gates remain outstanding.
 
 ## Intentionally unimplemented
 

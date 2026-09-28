@@ -1,6 +1,8 @@
 import {createHash} from 'node:crypto';
 import {existsSync, readFileSync} from 'node:fs';
-import {captionsToWebVtt, deriveCaptionsFromNarration} from '../src/captions/derive';
+import {captionPlanToDerivedCaptions, captionsToWebVtt} from '../src/captions/derive';
+import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
+import {validateCaptionPlanAgainstNarration} from '../src/captions/plan';
 import {woodFrog} from '../src/content/videos/wood-frog';
 import {validateWoodFrogVideoSpec} from '../src/production/integrity';
 
@@ -14,6 +16,11 @@ if (requestedId !== woodFrog.id) {
 }
 
 validateWoodFrogVideoSpec(woodFrog);
+validateCaptionPlanAgainstNarration(
+  woodFrogCaptionPlan,
+  woodFrog.audio.narrationCues,
+  woodFrog.production?.safeAreaProfileId ?? woodFrogCaptionPlan.safeAreaProfileId,
+);
 
 const provenance = woodFrog.audio.provenance;
 if (!provenance) throw new Error('Wood Frog audio provenance is missing');
@@ -41,10 +48,9 @@ const captionPath = woodFrog.captions[0]?.file;
 if (!captionPath || !existsSync(captionPath)) {
   throw new Error(`Missing caption artifact: ${captionPath ?? '(unspecified)'}`);
 }
-const expectedCaptions = `${captionsToWebVtt(deriveCaptionsFromNarration(
-  woodFrog.audio.narrationCues,
-  woodFrog.format.durationSeconds,
-)).trimEnd()}\n`;
+const expectedCaptions = `${captionsToWebVtt(
+  captionPlanToDerivedCaptions(woodFrogCaptionPlan),
+).trimEnd()}\n`;
 if (readFileSync(captionPath, 'utf8') !== expectedCaptions) {
   throw new Error('Wood Frog caption artifact is stale or does not preserve narration timing/text');
 }
@@ -56,6 +62,8 @@ console.log(JSON.stringify({
   status: woodFrog.production?.outputReviewState,
   soundscapeSha256: provenance.soundscape.sha256,
   narrationCueCount: woodFrog.audio.narrationCues.length,
+  captionPlan: woodFrogCaptionPlan.id,
+  burnedInCaptionCueCount: woodFrogCaptionPlan.cues.length,
   captions: captionPath,
   passed: true,
 }, null, 2));

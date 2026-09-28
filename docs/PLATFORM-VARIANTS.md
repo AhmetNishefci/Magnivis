@@ -24,7 +24,7 @@ KnowledgePackage → ContentAsset → PlatformVariant → VideoSpec / Remotion
 - target/minimum/maximum duration and aspect ratio;
 - a versioned safe-area profile reference;
 - cover or thumbnail intent;
-- caption behavior and human-review requirement;
+- designed-burned-in status, accessibility/native caption behavior, and human-review requirement;
 - whether production reuses the master or needs a new render, the exact VideoSpec ID, and platform-preview intent;
 - readiness status and approval metadata.
 
@@ -34,7 +34,7 @@ The registry validates ContentAsset references, permits packaging claims only fr
 
 - **KnowledgePackage** owns reusable sources, claims, evidence, uncertainty, and editorial opportunities.
 - **ContentAsset** owns the particular story angle, selected hook/claims, traceable script, narrative beats, visual intent, and narration direction.
-- **PlatformVariant** owns destination-specific packaging, constraints, safe-area selection, caption behavior, cover intent, and adaptation/readiness notes.
+- **PlatformVariant** owns destination-specific packaging, constraints, safe-area selection, accessibility/native caption behavior, cover intent, and adaptation/readiness notes. Its `designedBurnedIn` flag records whether the selected production contains the required creative caption layer; it is distinct from external/platform caption behavior.
 - **VideoSpec / Remotion** owns exact frames, coordinates, cue timing, audio files, animation, and render choreography.
 - **PublicationRecord** owns the durable result of a manually completed external publication: account, exact source revisions and hash, settings/disclosures, remote identity, and approval. Upload attempts and idempotency belong to a future publishing integration; none exists today.
 
@@ -55,6 +55,12 @@ V1 references current official documentation for [YouTube Shorts](https://suppor
 The failed TikTok V1 profile remains registered only as superseded historical platform knowledge and must not be selected for delivery. V2 changes only the top inset from the master's 150 px to 240 px. The 190 px right inset remains unchanged: the Magnivis mark observed in TikTok's right interaction rail is TikTok's native account/profile control, not an in-video watermark that Remotion can reposition. V2 passed private real-device visual/editorial QA on an iPhone 17 Pro Max on 2026-09-27.
 
 Safe areas are internal design profiles based on conservative UI review, not official guarantees. Platform controls, captions, devices, and experiments can move. Each variant therefore records whether an actual platform preview remains required. New compositions should use the master profile when one shared render will serve several destinations and use a platform profile only when making a platform-specific render.
+
+Caption placement regions are additionally validated inside these profiles. A PlatformVariant's `captions.behavior` describes optional accessibility/platform handling; `captions.designedBurnedIn` describes the creative master. New short-form variants require the latter, while historical variants remain truthful to their existing approved masters. See `docs/CAPTIONS.md`.
+
+## Wood Frog variant
+
+The Wood Frog YouTube Shorts review variant is revision 2 and selects the captioned master. It declares `designedBurnedIn: true`, retains the aligned WebVTT as an optional external accessibility track, and remains `editorial-review` pending owner visual and private platform QA.
 
 ## Speed of Light variants
 

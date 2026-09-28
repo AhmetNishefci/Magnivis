@@ -118,7 +118,7 @@ export const createUploadCopy = (variant: PlatformVariant) => {
     section('CTA', variant.packaging.cta),
     section('COPY/PASTE BODY', body),
     `COVER GUIDANCE\n${variant.cover.intent}`,
-    `CAPTION HANDLING\n${variant.captions.behavior}`,
+    `CAPTION HANDLING\nDesigned burned-in: ${variant.captions.designedBurnedIn ? 'yes' : 'no'}\nAccessibility/native track: ${variant.captions.behavior}`,
     `PLATFORM NOTES\n${[
       ...variant.editorialAdaptationNotes,
       variant.productionIntent.notes,
@@ -138,6 +138,9 @@ export const createReviewChecklist = (variant: PlatformVariant) => {
     : variant.captions.behavior === 'platform-generated'
       ? '- [ ] Enable platform-generated captions and inspect every generated line before posting.'
       : '- [ ] Confirm the configured caption behavior is correct in the final preview.';
+  const burnedInCheck = variant.captions.designedBurnedIn
+    ? '- [ ] Designed burned-in captions are readable, synchronized, scene-safe, and free of platform-UI collisions.'
+    : '- [ ] Confirm whether this legacy artifact predates the designed burned-in caption policy.';
   const previewCheck = variant.productionIntent.platformPreviewRequired
     ? '- [ ] Preview on the actual target platform/device; this variant has not passed that gate.'
     : '- [ ] Confirm the existing platform preview remains applicable to this exact artifact hash.';
@@ -154,6 +157,7 @@ Variant status: \`${variant.status}\`
 - [ ] Duration, orientation, audio, typography, and motion are correct.
 - [ ] No rendering artifacts or unexpected crop are visible.
 - [ ] Important content remains clear of the platform interface.
+${burnedInCheck}
 ${captionCheck}
 
 ## Copy and cover
@@ -228,6 +232,7 @@ const metadataFileForVariant = (variant: PlatformVariant) => ({
   ...(variant.packaging.cta ? {cta: variant.packaging.cta} : {}),
   cover: variant.cover,
   captionBehavior: variant.captions.behavior,
+  designedBurnedInCaptions: variant.captions.designedBurnedIn,
   platformNotes: [
     ...variant.editorialAdaptationNotes,
     variant.productionIntent.notes,
@@ -398,6 +403,7 @@ export const generateDeliveryPackage = ({
     },
     captions: {
       behavior: variant.captions.behavior,
+      designedBurnedIn: variant.captions.designedBurnedIn,
       language: variant.captions.language,
       ...(captionArtifactPath ? {artifactPath: captionArtifactPath} : {}),
       humanReviewRequired: variant.captions.humanReviewRequired,
@@ -511,6 +517,7 @@ export const validateDeliveryPackage = (
   }, 'Delivery metadata');
   assertExact(manifest.captions, {
     behavior: variant.captions.behavior,
+    designedBurnedIn: variant.captions.designedBurnedIn,
     language: variant.captions.language,
     ...(variant.captions.behavior === 'external-track'
       ? {artifactPath: `captions.${variant.captions.language}.vtt`}

@@ -82,6 +82,7 @@ export const deliveryManifestSchema = z.object({
   }).strict(),
   captions: z.object({
     behavior: z.enum(['external-track', 'platform-generated', 'burned-in', 'none']),
+    designedBurnedIn: z.boolean(),
     language: z.string().min(2),
     artifactPath: z.string().min(1).optional(),
     humanReviewRequired: z.boolean(),

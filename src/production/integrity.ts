@@ -2,6 +2,8 @@ import {createHash} from 'node:crypto';
 import approvedAssetSnapshot from '../../content-intelligence/reviews/wood-frog-freeze-v1/content-asset.approved.json';
 import approvedPackageSnapshot from '../../content-intelligence/reviews/wood-frog-freeze-v1/knowledge-package.approved.json';
 import ownerDecisionSnapshot from '../../content-intelligence/reviews/wood-frog-freeze-v1/owner-decision.json';
+import {woodFrogCaptionPlan} from '../captions/plans/wood-frog';
+import {validateCaptionPlanAgainstNarration} from '../captions/plan';
 import type {VideoSpec} from '../content/schema';
 import {woodFrogApprovedContentAsset} from '../content-assets/assets/wood-frog-approved';
 import {stableJson} from '../content-intelligence/run-schema';
@@ -19,6 +21,7 @@ export const woodFrogApprovalHashes = Object.freeze({
   contentAsset: sha256Json(approvedAssetSnapshot),
   ownerDecision: sha256Json(ownerDecisionSnapshot),
   script: sha256Json(woodFrogApprovedContentAsset.script),
+  captionPlan: sha256Json(woodFrogCaptionPlan),
 });
 
 export const validateWoodFrogProductionPlan = () => {
@@ -32,6 +35,7 @@ export const validateWoodFrogProductionPlan = () => {
     || plan.contentAsset.sha256 !== woodFrogApprovalHashes.contentAsset
     || plan.ownerDecision.sha256 !== woodFrogApprovalHashes.ownerDecision
     || plan.approvedScriptSha256 !== woodFrogApprovalHashes.script
+    || plan.captions.captionPlanSha256 !== woodFrogApprovalHashes.captionPlan
   ) {
     throw new Error('Wood Frog ProductionPlan approval hash mismatch');
   }
@@ -70,6 +74,9 @@ export const validateWoodFrogVideoSpec = (video: VideoSpec) => {
     || production.approvedContentAssetSha256 !== woodFrogApprovalHashes.contentAsset
     || production.ownerDecisionSha256 !== woodFrogApprovalHashes.ownerDecision
     || production.approvedScriptSha256 !== woodFrogApprovalHashes.script
+    || production.captionPlanId !== woodFrogCaptionPlan.id
+    || production.captionPlanRevision !== woodFrogCaptionPlan.revision
+    || production.captionPlanSha256 !== woodFrogApprovalHashes.captionPlan
     || production.safeAreaProfileId !== plan.safeAreaProfileId
   ) {
     throw new Error('Wood Frog VideoSpec source chain is stale or inconsistent');
@@ -93,5 +100,10 @@ export const validateWoodFrogVideoSpec = (video: VideoSpec) => {
   if (video.audio.provenance?.narration.approvedScriptSha256 !== woodFrogApprovalHashes.script) {
     throw new Error('Wood Frog narration provenance does not match the approved script hash');
   }
+  validateCaptionPlanAgainstNarration(
+    woodFrogCaptionPlan,
+    video.audio.narrationCues,
+    production.safeAreaProfileId,
+  );
   return video;
 };

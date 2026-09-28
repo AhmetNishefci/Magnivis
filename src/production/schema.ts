@@ -70,9 +70,13 @@ export const productionPlanSchema = z.object({
   assets: z.array(productionAssetSchema).min(1),
   captions: z.object({
     file: z.string().min(1),
+    captionPlanId: stableKnowledgeIdSchema,
+    captionPlanRevision: z.number().int().positive(),
+    captionPlanSha256: z.string().regex(/^[a-f0-9]{64}$/),
     generatorId: stableKnowledgeIdSchema,
     generatorVersion: z.number().int().positive(),
     source: z.literal('approved-narration-cues'),
+    designedBurnedIn: z.literal(true),
     placement: z.literal('optional-platform-track-lower-center'),
   }).strict(),
   reviewRequirements: z.array(z.string().min(1)).min(1),
