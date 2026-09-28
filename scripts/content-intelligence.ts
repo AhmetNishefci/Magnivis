@@ -1,10 +1,11 @@
-import {existsSync, readFileSync} from 'node:fs';
+import {existsSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import type {AIProvider} from '../src/ai/provider';
 import {createOpenAIProviderFromEnvironment} from '../src/ai/providers/openai';
 import {createContentAssetRegistry} from '../src/content-assets/registry';
 import {contentAssetSchema} from '../src/content-assets/schema';
+import {woodFrogFreezeDraftAsset} from '../src/content-assets/assets/wood-frog-freeze';
 import {woodFrogFreezeTopicCandidate} from '../src/content-intelligence/candidates/wood-frog-freeze';
 import {
   contentAssetReviewDraftWorkflow,
@@ -13,7 +14,13 @@ import {
   topicEvaluationWorkflow,
 } from '../src/content-intelligence/prompts';
 import {readWorkflowRun, createWorkflowRun, writeWorkflowRun} from '../src/content-intelligence/run-store';
+import {promoteReviewedEditorialPackage} from '../src/content-intelligence/claim-review';
 import {topicEvaluationDraftSchema} from '../src/content-intelligence/schema';
+import {
+  validateWoodFrogClaimReviewArtifacts,
+  writeWoodFrogClaimReviewArtifacts,
+} from '../src/content-intelligence/reviews/wood-frog-freeze';
+import {stableJson} from '../src/content-intelligence/run-schema';
 import {
   createWoodFrogFixtureProvider,
   validateWoodFrogTrialArtifacts,
@@ -31,10 +38,11 @@ import {knowledgePackageSchema} from '../src/knowledge/schema';
 import {createKnowledgePackageRegistry} from '../src/knowledge/registry';
 import {woodFrogFreezeKnowledgePackage} from '../src/knowledge/packages/wood-frog-freeze-tolerance';
 
-type Stage = 'trial' | 'evaluate' | 'research' | 'hooks' | 'asset' | 'validate';
+type Stage = 'trial' | 'evaluate' | 'research' | 'hooks' | 'asset' | 'validate' | 'review' | 'approve';
 type ProviderName = 'fixture' | 'openai';
 
 const defaultOutput = 'content-intelligence/runs/wood-frog-freeze-fixture-v1';
+const defaultReviewOutput = 'content-intelligence/reviews/wood-frog-freeze-v1';
 
 const optionValue = (args: readonly string[], name: string) => {
   const index = args.indexOf(name);
@@ -49,6 +57,8 @@ const usage = () => [
   '  pnpm content:intelligence -- hooks wood-frog-freeze --provider openai --output <directory>',
   '  pnpm content:intelligence -- asset wood-frog-freeze --provider openai --output <directory>',
   '  pnpm content:intelligence -- validate wood-frog-freeze [--output <directory>]',
+  '  pnpm content:intelligence -- review wood-frog-freeze [--output <directory>]',
+  '  pnpm content:intelligence -- approve wood-frog-freeze --decision <owner-decision.json> --confirm-owner-approval [--output <directory>]',
 ].join('\n');
 
 const providerFor = (
@@ -71,11 +81,42 @@ export const executeContentIntelligenceCommand = async (
   const args = rawArgs[0] === '--' ? rawArgs.slice(1) : rawArgs;
   const stage = args[0] as Stage | undefined;
   const topic = args[1];
-  if (!stage || !['trial', 'evaluate', 'research', 'hooks', 'asset', 'validate'].includes(stage)) {
+  if (!stage || !['trial', 'evaluate', 'research', 'hooks', 'asset', 'validate', 'review', 'approve'].includes(stage)) {
     throw new Error(usage());
   }
   if (topic !== 'wood-frog-freeze') throw new Error(`Unknown trial topic: ${topic ?? '(missing)'}`);
-  const outputDirectory = resolve(optionValue(args, '--output') ?? defaultOutput);
+  const outputDirectory = resolve(optionValue(args, '--output')
+    ?? (stage === 'review' || stage === 'approve' ? defaultReviewOutput : defaultOutput));
+  if (stage === 'review') {
+    writeWoodFrogClaimReviewArtifacts(outputDirectory);
+    validateWoodFrogClaimReviewArtifacts(outputDirectory);
+    log(`wrote owner claim review: ${outputDirectory}`);
+    return;
+  }
+  if (stage === 'approve') {
+    if (!args.includes('--confirm-owner-approval')) {
+      throw new Error('Owner approval requires the explicit --confirm-owner-approval flag');
+    }
+    const decisionPath = optionValue(args, '--decision');
+    if (!decisionPath) throw new Error('Owner approval requires --decision <owner-decision.json>');
+    const review = validateWoodFrogClaimReviewArtifacts(outputDirectory);
+    const promotion = promoteReviewedEditorialPackage({
+      review,
+      decision: parseJsonFile(resolve(decisionPath)),
+      knowledgePackage: woodFrogFreezeKnowledgePackage,
+      contentAsset: woodFrogFreezeDraftAsset,
+    });
+    mkdirSync(outputDirectory, {recursive: true});
+    writeFileSync(resolve(outputDirectory, 'owner-decision.json'), `${stableJson(promotion.decision, 2)}\n`, 'utf8');
+    if (promotion.decision.assetDecision === 'approve') {
+      writeFileSync(resolve(outputDirectory, 'knowledge-package.approved.json'), `${stableJson(promotion.knowledgePackage, 2)}\n`, 'utf8');
+      writeFileSync(resolve(outputDirectory, 'content-asset.approved.json'), `${stableJson(promotion.contentAsset, 2)}\n`, 'utf8');
+      log(`recorded explicit owner approval: ${outputDirectory}`);
+    } else {
+      log(`recorded owner rejection without promotion: ${outputDirectory}`);
+    }
+    return;
+  }
   if (stage === 'validate') {
     const runs = woodFrogTrialRunFilenames.map((filename) =>
       readWorkflowRun(resolve(outputDirectory, filename)));

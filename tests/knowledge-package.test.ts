@@ -15,6 +15,7 @@ import {
 import {
   claimSchema,
   knowledgePackageSchema,
+  sourceRecordSchema,
 } from '../src/knowledge/schema';
 import {knowledgeTaxonomySchema} from '../src/knowledge/taxonomy';
 
@@ -240,6 +241,30 @@ describe('Knowledge Package V1 schema', () => {
     const withoutApproval = {...candidate};
     delete withoutApproval.approval;
     expect(knowledgePackageSchema.safeParse(withoutApproval).success).toBe(false);
+  });
+
+  it('records source identity metadata without inventing an exact publication day', () => {
+    const source = sourceRecordSchema.parse({
+      id: 'source.example.month-only',
+      organization: 'Example Journal',
+      title: 'Example study',
+      sourceType: 'peer-reviewed',
+      url: 'https://example.org/study',
+      retrieved: '2026-09-27',
+      publicationLabel: 'July 1991',
+      authors: ['A. Researcher'],
+      identifiers: [{scheme: 'DOI', value: '10.1000/example'}],
+    });
+    expect(source.publicationLabel).toBe('July 1991');
+    expect(source.published).toBeUndefined();
+
+    expect(sourceRecordSchema.safeParse({
+      ...source,
+      identifiers: [
+        {scheme: 'DOI', value: '10.1000/example'},
+        {scheme: 'DOI', value: '10.1000/example'},
+      ],
+    }).success).toBe(false);
   });
 });
 

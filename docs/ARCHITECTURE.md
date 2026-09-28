@@ -53,7 +53,7 @@ A knowledge package can support multiple assets, but each asset must have a dist
 ## Planned domain boundaries
 
 - **Editorial intelligence:** manual candidates, evaluation rationale, prompt workflows, persisted runs, hook proposals, and draft assets are implemented; external discovery inputs remain planned.
-- **Research:** an unverified AI-assisted workspace and a minimal known-URL text retriever are implemented; source discovery, comparison, claim review, and package promotion remain human work.
+- **Research:** an unverified AI-assisted workspace, a minimal known-URL text retriever, and file-backed claim-review/promotion boundary are implemented. Evidence inspection remains human/agent-assisted work; only an explicit owner decision can promote reviewed claims. Automated source discovery remains planned.
 - **Knowledge packages:** approved topic understanding, verified claims, narrative/visual opportunities, and related questions.
 - **Content assets:** platform-neutral editorial purpose, story angle, selected hook/claims, traceable script, narrative structure, visual intent, and narration direction.
 - **Production:** exact format, timing, narration/audio files, licensed assets, Remotion compositions, captions, renders, and QA. This is the mature existing subsystem.
@@ -79,4 +79,4 @@ One LLM-shaped interface exists because Content Intelligence V1 is an actual int
 
 ## Completed migration slices
 
-Knowledge Package V1, Content Asset V1, open-ended knowledge taxonomy, PlatformVariant V1, Platform Delivery Package V1, and file-backed Content Intelligence workflow runs are implemented. Speed of Light proves one package can back multiple editorial assets and platform adaptations; Ocean Depth proves cross-domain claim modeling; the wood-frog trial proves a genuinely new topic can reach a supported review package, hook set, script, narrative, and visual plan without crossing human verification. Videos 001, 003, and 005 intentionally remain on legacy facts. Publishing adapters and automated approval remain intentionally unimplemented.
+Knowledge Package V1, Content Asset V1, open-ended knowledge taxonomy, PlatformVariant V1, Platform Delivery Package V1, file-backed Content Intelligence workflow runs, and explicit claim-review/promotion tooling are implemented. Speed of Light proves one package can back multiple editorial assets and platform adaptations; Ocean Depth proves cross-domain claim modeling; the Wood Frog trial proves a new topic can reach a supported, evidence-audited package and defensible draft without crossing human verification. It remains ready for owner editorial approval rather than production-ready. Videos 001, 003, and 005 intentionally remain on legacy facts. Publishing adapters and automated approval remain intentionally unimplemented.

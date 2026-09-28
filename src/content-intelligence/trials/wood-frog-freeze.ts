@@ -26,12 +26,12 @@ export const woodFrogTopicEvaluation: TopicEvaluationDraft = {
   candidateRevision: woodFrogFreezeTopicCandidate.revision,
   summary: 'A strong evergreen Magnivis topic with an immediate contradiction, a clear mechanism, authoritative evidence, and multiple visual layers.',
   dimensions: {
-    curiosityGap: {rating: 'strong', rationale: 'A stopped heart followed by recovery appears impossible without an explanation.', uncertainty: []},
+    curiosityGap: {rating: 'strong', rationale: 'Reversible cardiac arrest during extensive extracellular freezing appears impossible without an explanation.', uncertainty: []},
     surprise: {rating: 'strong', rationale: 'The animal survives by controlling a freeze rather than avoiding it.', uncertainty: []},
     usefulness: {rating: 'strong', rationale: 'The mechanism teaches cryoprotection, water movement, and why ice location matters.', uncertainty: []},
     visualExplainability: {rating: 'strong', rationale: 'Freeze progression, pulse, cell diagrams, glucose movement, and thawing can each carry a beat.', uncertainty: ['Actual wood-frog footage requires rights review or an original depiction.']},
-    narrativePotential: {rating: 'strong', rationale: 'The story naturally moves from apparent death to physical protection, chemical protection, and recovery.', uncertainty: []},
-    factualVerifiability: {rating: 'strong', rationale: 'Peer-reviewed physiology studies and a government science summary cover the core claims.', uncertainty: ['The stopped-heart wording should receive owner review against a primary physiology source before approval.']},
+    narrativePotential: {rating: 'strong', rationale: 'The story naturally moves from reversible cardiac arrest to physical protection, chemical protection, and ordered recovery.', uncertainty: []},
+    factualVerifiability: {rating: 'strong', rationale: 'Primary ECG, ventilation, thaw-recovery and cryobiology studies cover the core claims.', uncertainty: ['Every supported claim still requires explicit owner verification before promotion.']},
     originality: {rating: 'mixed', rationale: 'The frozen-frog headline is known, but explaining ice placement plus two cryoprotectants adds depth.', uncertainty: ['Current platform saturation was not measured in this trial.']},
     brandFit: {rating: 'strong', rationale: 'It delivers an immediate “wait—really?” premise followed by a mechanism viewers can understand.', uncertainty: []},
     shortFormSuitability: {rating: 'strong', rationale: 'One question and two complementary mechanisms fit a focused 32–40 second explanation.', uncertainty: []},
@@ -39,7 +39,7 @@ export const woodFrogTopicEvaluation: TopicEvaluationDraft = {
   },
   recommendation: 'research',
   risks: [
-    'Do not describe the frog as dead or resurrected.',
+    'Do not describe reversible physiological arrest as death or resurrection.',
     'Do not generalize Alaska-specific temperature limits to all wood frogs.',
     'Do not imply that every cell freezes internally when using the phrase “frozen solid.”',
   ],
@@ -74,12 +74,13 @@ export const woodFrogResearchWorkspace = {
   })),
   claimCandidates: unverifiedClaims,
   openQuestions: [
-    'Confirm the stopped-heart and breathing claim against a primary physiology source before publication.',
-    'Decide whether “frozen solid” is acceptable shorthand in the final hook after editorial review.',
+    'Obtain explicit owner decisions for every claim and the recommended hook/script/VisualPlan.',
+    'Keep circulation cessation excluded unless directly reviewed primary blood-flow evidence is added.',
     'Determine rights-cleared visual sourcing for the animal and freeze/thaw behavior.',
   ],
   conflictNotes: [
     'Authoritative sources report different cold limits because wood-frog populations and experimental conditions differ; no universal threshold should be stated.',
+    'The 2013 study summary says frogs endured two months at −4°C, while the detailed results show only two of four met the survival criterion after eight weeks; use the detailed outcome.',
   ],
   status: 'draft' as const,
 };

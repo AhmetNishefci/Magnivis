@@ -17,6 +17,8 @@ Knowledge Package V1 is the implemented editorial layer above production. It own
 
 `src/knowledge/registry.ts` validates packages again at registration, rejects duplicate package IDs, provides deterministic sorted lookup, indexes reusable sources, and rejects conflicting records that reuse one global source ID.
 
+Source records may preserve an exact publication date or a truthful month/year label, authors and stable identifiers such as DOI or PMID in addition to organization, title, type, URL and retrieval date. Do not invent a day when a source exposes only month/year. These identity fields improve auditability; they do not prove that the source supports a particular claim. Claim-level evidence still needs an exact locator and assessment.
+
 ## Claim types
 
 A quantitative claim has a structured quantity, free-form unit, precision (`exact`, `rounded`, or `approximate`), evidential basis, and display value. A quantity is either a scalar or a bounded range. Scalars may record a positive symmetric `plusMinus` uncertainty and an optional confidence description. Ranges require a maximum greater than the minimum. Numeric values are not restricted to positive values because legitimate subjects may require zero or negative quantities.
@@ -36,6 +38,8 @@ A qualitative claim has no numeric payload. Both types require a human-readable 
 `verified` does not mean metaphysical certainty. It means the claim passed the defined editorial verification process. A material `supported` claim must not be relabeled `verified` merely because its wording sounds plausible.
 
 An approved package may include `uncertain` or `conflicting` claims only when the uncertainty or disagreement is part of the approved story and is communicated honestly. Package approval does not overwrite claim status.
+
+For the Wood Frog trial, `src/content-intelligence/claim-review.ts` implements the first explicit review/promotion boundary. An AI-assisted `ClaimReviewBundle` may recommend verification, revision or rejection, but it cannot supply human authority. The owner decision binds to exact claim-statement hashes and requires reviewer identity/time plus explicit decisions. Promotion rejects stale wording, uncertain claims approved without a revised evidence review, rejected claims in an approved asset, and hooks that depend on rejected claims. See `docs/CONTENT-INTELLIGENCE.md`.
 
 ## IDs and traceability
 
@@ -81,10 +85,9 @@ The editorial script belongs to ContentAsset. Exact scene timing, narration file
 
 ## Intentionally unimplemented
 
-- Editorial transition commands or workflow automation
+- Automatic owner approval or unsupervised package promotion
 - Topic scoring and discovery automation
-- Publication records and publishing adapters
-- Analytics and cost records
-- Databases, queues, workers, APIs, dashboards, CMS, or provider abstractions
+- Publishing adapters and automatic analytics ingestion
+- Databases, queues, workers, APIs, dashboards, or CMS
 
 These remain planned boundaries, not implemented features.

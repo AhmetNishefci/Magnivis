@@ -33,9 +33,21 @@ The implemented claim model covers quantitative and qualitative claims. Quantita
 7. Distinguish source quality from claim status: a reputable source can still be irrelevant, outdated, or contradicted.
 8. Health, psychology, history, economics, and current-event claims require domain-appropriate review; do not apply astronomy-style numeric sourcing mechanically.
 
-## Wood-frog operator trial
+## Wood-frog operator trial and evidence review
 
-The `wood-frog-freeze-tolerance` package is the first new Content Intelligence trial and remains in `review`. Its Journal of Experimental Biology, PLOS ONE, PubMed, and National Park Service records were retrieved on 2026-09-27, but no claim has been human-marked `verified`. Alaska-specific −16°C and two-month/−4°C results are study- and population-specific; they are not universal species limits. “Frozen solid” must not imply uniform intracellular freezing. Before production, confirm the stopped-heart/breathing wording against an appropriate primary physiology source and retain the distinction between supported evidence and owner verification.
+The `wood-frog-freeze-tolerance` package is the first new Content Intelligence trial and remains in `review`. Human Claim Review V1 independently inspected ten source records on 2026-09-27, including primary ECG, pulmonary-ventilation, thaw-recovery, glucose, urea, water-redistribution and Alaskan tolerance work. The exact evidence map and owner handoff are in `content-intelligence/reviews/wood-frog-freeze-v1/`. No claim is human-marked `verified`; the package is **READY FOR OWNER EDITORIAL APPROVAL**.
+
+The review established these boundaries:
+
+- a 1989 ECG study directly measured cardiac activity ceasing near completion of nonlethal ice formation; post-thaw timing in that paper came from one frog;
+- a 2013 respirometry study separately observed visible pulmonary ventilation cease during freezing; ventilation, gas exchange and cellular metabolism are not interchangeable;
+- a 1991 thaw study found cardiac function returned before spontaneous breathing and hindleg reflexes, but not every later response returned within its 3–4 hour observation window;
+- reviewed literature states circulation ceases, but this audit did not locate a primary experiment directly measuring blood flow to zero, so that claim remains `uncertain` and is excluded from the draft asset;
+- “frozen solid” is unacceptable when it implies uniform intracellular ice. The safe general-language model is that much body water freezes mainly as extracellular/extra-organ ice while water leaves and dehydrates cells;
+- the −16°C result involved four winter-acclimatized Interior Alaskan frogs, slow cooling, a six-hour hold at the minimum, prior −8°C exposure and a righting-response survival criterion;
+- the “two months at −4°C” summary was incomplete: two of four frogs met the survival criterion after eight weeks, all after earlier severe-freeze trials, while none of four survived twelve weeks.
+
+Abstract-only access is labeled for older glucose, urea and thaw-recovery papers. Do not turn an abstract-only inspection into a full-text claim. Scientific figures remain evidence, not automatically licensed production assets.
 
 Video 001 intentionally avoids “largest star” language. Betelgeuse is variable and its radius depends on observational/model assumptions, so the video labels the selected NASA value as an estimate.
 

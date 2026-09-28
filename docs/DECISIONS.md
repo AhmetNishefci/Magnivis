@@ -1,5 +1,15 @@
 # Significant decisions
 
+## 2026-09-27 — Bind human claim approval to exact reviewed wording
+
+**Decision:** Represent claim review as an AI-assisted evidence-audit bundle, then require a separate explicit owner decision before promotion. Owner decisions bind to package/asset revisions and SHA-256 hashes of every reviewed claim statement. Promotion requires reviewer identity/time, a decision on every claim, an approved hook, an asset decision, and an explicit confirmation phrase. Supported claims remain unverified until this boundary is crossed.
+
+**Reason:** A resolving URL, a reputable source, and evidence matching exact wording are different facts. Review also exposed how easily a true summary can become misleading: “two months at −4°C” hid two survivors among four tested frogs and prior severe-freeze exposure, while a combined heartbeat/breathing/circulation claim hid three distinct evidentiary questions.
+
+**Alternatives:** Let the agent mark inspected claims verified (fabricates human authority); store free-form review notes only (not enforceable or stale-safe); auto-approve all supported claims (confuses machine-supported with owner-verified); build a database/workflow service (unnecessary for the current local single-user operation).
+
+**Consequences:** Wood Frog package/asset revision 2 is ready for owner editorial approval but is not production-ready. Directly supported cardiac, ventilation, thaw, cryoprotectant, extracellular-ice and scoped Alaska claims can be promoted only after explicit owner review. Circulation cessation stays uncertain and outside the asset because direct blood-flow measurement was not located. A wording change invalidates an older decision instead of silently inheriting approval.
+
 ## 2026-09-27 — Persist AI runs without allowing them to cross human verification
 
 **Decision:** Add one optional OpenAI Responses adapter behind the existing `AIProvider`, explicit versioned workflow/model configuration, and hash-validated file-backed run envelopes. Live evaluation and research are separate operator stages; the all-stage command remains fixture-only. A review-only hook/asset path may use supported claims for preparation, while the production path still requires an approved package and verified claims.

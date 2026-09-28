@@ -1,0 +1,462 @@
+{
+  "assetId": "wood-frog-freeze-tolerance.asset.how-freezing-works",
+  "assetRevision": 2,
+  "claimReviews": [
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.freeze-survival",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "The article describes survival with up to two-thirds of body water frozen and treats 67% body ice as an approximate lethal threshold, while emphasizing population variation.",
+          "locator": "Introduction, paragraph 2; Discussion, Freeze tolerance, paragraphs 3–5",
+          "sourceId": "source.jeb.wood-frog-hibernation-2013"
+        },
+        {
+          "assessment": "The review synthesizes experimental literature describing 65–70% of total body water as extracellular ice in freeze-tolerant frogs.",
+          "locator": "Section II.B, freeze-tolerant frogs; discussion of extracellular ice and 65–70% total-body-water conversion",
+          "sourceId": "source.physiological-reviews.freeze-tolerance-2017"
+        }
+      ],
+      "limitations": [
+        "The two-thirds figure is approximate and represents an upper range, not every freeze."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "Wood frogs can survive substantial freezing of their body tissues and water during overwintering.",
+      "rationale": "The revised wording states the approximate amount and, crucially, that survivable ice is extracellular rather than uniform inside cells.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "Wood frogs can survive nonlethal freezing in which up to about two-thirds of total body water becomes extracellular ice.",
+      "statementSha256": "5a0047cdc27415ebf22da9d1d7cefb7ee2451fbd2c1e20e1e3f08ad779d5d5d2",
+      "useInRecommendedAsset": true
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "ECG monitoring showed a rapid initial increase, subsequent slowing, and cardiac arrest in monitored frogs as ice formation approached completion.",
+          "locator": "Abstract; Methods and Results, pp. R1046–R1048, ECG time course and cardiac-arrest observations",
+          "sourceId": "source.ajp.wood-frog-heart-rate-1989"
+        }
+      ],
+      "limitations": [
+        "Do not describe cardiac arrest as death."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "During frozen dormancy, a wood frog can stop breathing and its heart can stop beating, with activity resuming after thawing.",
+      "rationale": "A primary ECG study directly supports cessation of cardiac activity near completion of ice formation; the original combined statement improperly bundled heart, breathing and recovery.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "During controlled nonlethal freezing, cardiac activity in wood frogs can cease near the completion of ice formation.",
+      "statementSha256": "da4650449d9e81145486164686167750e44ea6892f46e6490e43c298b791412a",
+      "useInRecommendedAsset": true
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.ventilation-cessation",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "In 12 frogs, visible ventilation ceased 76.9±8.8 minutes after the freezing exotherm began; CO2 emission continued longer and is a separate measure.",
+          "locator": "Results, “Metabolic rate during freezing”, Fig. 1 and Table 1",
+          "sourceId": "source.jeb.wood-frog-metabolic-rate-2013"
+        }
+      ],
+      "limitations": [
+        "Pulmonary ventilation is not identical to every form of gas exchange or metabolism."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "During frozen dormancy, a wood frog can stop breathing and its heart can stop beating, with activity resuming after thawing.",
+      "rationale": "Primary respirometry observations separately support cessation of visible pulmonary ventilation during freezing.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "Visible pulmonary ventilation ceases during freezing in wood frogs.",
+      "statementSha256": "dfe10ddb227569c5ac18ddc54c5f3db10b0c1f3d20c4bb0b4cfb48eaaee5f982",
+      "useInRecommendedAsset": false
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.thaw-recovery-order",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "Cardiac function was the first measured function to return; spontaneous breathing and hindleg reflexes resumed later, but not in every frog during the 3–4 hour observation period.",
+          "locator": "Abstract",
+          "sourceId": "source.ajp.wood-frog-recovery-1991"
+        },
+        {
+          "assessment": "One monitored frog resumed heartbeat within one hour after thawing began and approached its prior rate within hours.",
+          "locator": "Abstract and Results, single-frog thaw recording",
+          "sourceId": "source.ajp.wood-frog-heart-rate-1989"
+        }
+      ],
+      "limitations": [
+        "Not all later responses returned within the 3–4 hour observation window; no universal exact time should be stated."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "During frozen dormancy, a wood frog can stop breathing and its heart can stop beating, with activity resuming after thawing.",
+      "rationale": "The thaw study supports an ordered recovery: cardiac function first, followed by spontaneous breathing and hindleg reflexes.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "After nonlethal freezing, cardiac function returns before spontaneous breathing and hindleg reflexes during thawing.",
+      "statementSha256": "65ce01bf8ab045705dc311512ac485860372a4fb51c8e6fd4b82b714a6d637ab",
+      "useInRecommendedAsset": true
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.circulation-cessation",
+      "decision": "reject",
+      "evidence": [
+        {
+          "assessment": "The authors state that glucose must be distributed before freezing progresses to the point that circulation ceases.",
+          "locator": "Discussion, Glycemic Response, paragraph 1",
+          "sourceId": "source.plos.wood-frog-cryoprotectants-2015"
+        },
+        {
+          "assessment": "The review treats heartbeat and circulation cessation as consequences of extensive extracellular freezing.",
+          "locator": "Section II.B, physiological consequences of whole-body freezing",
+          "sourceId": "source.physiological-reviews.freeze-tolerance-2017"
+        }
+      ],
+      "limitations": [
+        "Physiological inference and review-level statements are not the same as direct measurement."
+      ],
+      "ownerDecisionRequired": true,
+      "rationale": "Reviewed papers state that circulation ceases, but this audit did not locate a primary experiment directly measuring blood flow to zero. The main asset does not need this claim.",
+      "recommendedVerificationStatus": "uncertain",
+      "statement": "Blood circulation ceases as whole-body freezing advances.",
+      "statementSha256": "c8cbe5e58a3a9bd2af3103f908c3db31b61fe9e6c1dcbb3070b201f03dd6d7c7",
+      "useInRecommendedAsset": false
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "The study measures hepatic glycogen loss and large tissue-glucose increases after experimental freezing.",
+          "locator": "Introduction, paragraphs 2–4; Results, Figs 2–3; Discussion, Glycemic Response",
+          "sourceId": "source.plos.wood-frog-cryoprotectants-2015"
+        },
+        {
+          "assessment": "Dose-dependent glucose loading reduced body ice and erythrocyte injury and improved survival at lower temperatures.",
+          "locator": "Abstract",
+          "sourceId": "source.jeb.wood-frog-glucose-1993"
+        },
+        {
+          "assessment": "Glucose-loaded frogs showed less erythrocyte and neuromuscular injury after rapid cooling and freezing.",
+          "locator": "Abstract",
+          "sourceId": "source.pubmed.wood-frog-glucose-1991"
+        }
+      ],
+      "limitations": [
+        "Glucose must not be presented as the only protective mechanism."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "Freezing triggers rapid mobilization of glucose from liver glycogen, and that glucose acts as a cryoprotectant that reduces tissue injury.",
+      "rationale": "Primary studies separately support endogenous liver glycogenolysis and glucose’s reduction of body ice and cellular injury.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "After freezing begins, liver glycogen is rapidly converted to glucose and distributed as a cryoprotectant that reduces body ice and cellular injury.",
+      "statementSha256": "39c5ac8b58f86156521fdcad6fe6ac7a4e6a6a9d8243f8d4ce1e9ec20438eb64",
+      "useInRecommendedAsset": true
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.urea-and-glucose",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "The study distinguishes pre-freeze urea accrual from freeze-triggered glucose mobilization and reports tissue-specific differences.",
+          "locator": "Abstract; Introduction, paragraphs 2–4; Discussion, Ureic Response",
+          "sourceId": "source.plos.wood-frog-cryoprotectants-2015"
+        },
+        {
+          "assessment": "Physiological urea concentrations reduced freeze/thaw damage in erythrocytes and improved post-thaw viability of intact tissues in vitro.",
+          "locator": "Abstract",
+          "sourceId": "source.jeb.wood-frog-urea-2005"
+        }
+      ],
+      "limitations": [
+        "Urea’s contribution varies across tissues and is not a second synchronized liver surge."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "Urea and glucose both contribute to wood-frog cryoprotection by limiting ice formation and helping preserve cellular structures.",
+      "rationale": "The revision preserves their different timing and distribution: urea rises during winter conditioning, while glucose is mobilized rapidly after freezing begins.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "Urea accumulates during winter conditioning before freezing, while glucose is mobilized after freezing begins; both contribute to cryoprotection through partly different mechanisms.",
+      "statementSha256": "75bdfadee71be0f7b2956831b676e7d7bb54e94ca5a6eb09334604a15e3fcd6c",
+      "useInRecommendedAsset": true
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.ice-redistribution",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "The paper describes reversible organ dehydration and extra-organ ice sequestration as protection against intra-organ damage.",
+          "locator": "Introduction, paragraph 7; Discussion, Dynamics of water and ice, paragraphs 1–3",
+          "sourceId": "source.jeb.wood-frog-hibernation-2013"
+        },
+        {
+          "assessment": "Frozen organs lost substantial water; translocated water freezes in lymph sacs, subdermal spaces and the coelom.",
+          "locator": "Results, Responses to Freezing and Fig. 1; Discussion, Organ Dehydration",
+          "sourceId": "source.plos.wood-frog-cryoprotectants-2015"
+        }
+      ],
+      "limitations": [
+        "The diagram must not show ordinary survivable intracellular ice."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "Water redistribution and sequestration of ice in body compartments help limit damaging ice formation within organs and cells.",
+      "rationale": "The revised wording names extracellular ice, cellular/organ dehydration and the coelomic, subdermal and lymphatic spaces described by the studies.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "As extracellular ice forms, water leaves cells and organs; much of it freezes in coelomic, subdermal and lymphatic spaces, limiting ice within tissues and dangerous intracellular ice.",
+      "statementSha256": "0a0b5dd33eb4ca0f78bce52ff42b8c02747d25c248b338e37e50ae1dccabb622",
+      "useInRecommendedAsset": true
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.alaska-temperature",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "The four frogs had already survived an earlier −8°C trial, were cooled at 0.05°C/h, held at −16°C for 6 h, spent 326 h frozen by the study definition, and showed normal posture/righting by 2 days post-thaw.",
+          "locator": "Materials and Methods, Freeze tolerance trials, paragraphs 1–3; Results, Freeze tolerance trials, paragraphs 1–2",
+          "sourceId": "source.jeb.wood-frog-hibernation-2013"
+        }
+      ],
+      "limitations": [
+        "N=4, prior −8°C exposure, one population and one staged laboratory protocol."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "In one laboratory study, Interior Alaskan wood frogs survived experimental freezing to temperatures as low as −16°C.",
+      "rationale": "The revision records the actual sample, slow-cooling protocol, six-hour target hold and righting-response criterion.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "In one laboratory trial, four winter-acclimatized Interior Alaskan wood frogs were slowly cooled to a minimum of −16°C, held there for six hours, and all met the study’s righting-response survival criterion after thawing.",
+      "statementSha256": "da0df860ee238b62c2671d98d6d7646275ecf7a87bf4bf4e5e49702efe3311dd",
+      "useInRecommendedAsset": false
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.alaska-eight-weeks",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "Three of four initially appeared viable, but only two met the formal survival criterion. All had undergone earlier −8°C and −12°C/−16°C trials.",
+          "locator": "Materials and Methods, Freeze tolerance trials, paragraph 3; Results, Freeze tolerance trials, final paragraph",
+          "sourceId": "source.jeb.wood-frog-hibernation-2013"
+        }
+      ],
+      "limitations": [
+        "All four had experienced prior severe freeze trials, which the authors identify as a possible stressor."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "In the same laboratory study, Interior Alaskan wood frogs endured a two-month freezing bout at −4°C.",
+      "rationale": "The original wording hid the denominator and outcome. Only two of four met the survival criterion after eight weeks.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "In the same staged laboratory program, two of four Interior Alaskan frogs held at −4°C for eight weeks met the study’s seven-day righting-response survival criterion.",
+      "statementSha256": "df91958639646ba114639e429d6491835e561787870daf930199883203abf11c",
+      "useInRecommendedAsset": false
+    },
+    {
+      "claimId": "wood-frog-freeze-tolerance.claim.alaska-twelve-weeks",
+      "decision": "revise",
+      "evidence": [
+        {
+          "assessment": "All four were inanimate following thaw and scored as mortalities; the authors note that earlier severe-freeze trials may have stressed the subjects.",
+          "locator": "Materials and Methods, Freeze tolerance trials, paragraph 3; Results, Freeze tolerance trials, final paragraph",
+          "sourceId": "source.jeb.wood-frog-hibernation-2013"
+        }
+      ],
+      "limitations": [
+        "Do not generalize this staged laboratory result to wild Alaskan overwintering."
+      ],
+      "ownerDecisionRequired": true,
+      "priorStatement": "In the same laboratory study, Interior Alaskan wood frogs endured a two-month freezing bout at −4°C.",
+      "rationale": "The twelve-week outcome is necessary context for the endurance boundary: none of four survived by the study criterion.",
+      "recommendedVerificationStatus": "verified",
+      "statement": "None of four Interior Alaskan frogs held at −4°C for twelve weeks in that staged laboratory program survived by the study’s criterion.",
+      "statementSha256": "2244650286178ff1c69e9de04ef5bf40f8be9de18edf085853d8d6645dcdfbfd",
+      "useInRecommendedAsset": false
+    }
+  ],
+  "id": "claim-review.wood-frog-freeze.v1",
+  "packageId": "wood-frog-freeze-tolerance",
+  "packageRevision": 2,
+  "preparedAt": "2026-09-27T21:00:00.000Z",
+  "preparedBy": {
+    "kind": "ai-assisted-research",
+    "name": "Codex evidence audit"
+  },
+  "recommendedHookId": "wood-frog-freeze-tolerance.hook.stopped-heart",
+  "schemaVersion": 1,
+  "sourceInspections": [
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Summary",
+        "Materials and Methods — Freeze tolerance trials",
+        "Results — Freeze tolerance trials with winter frogs",
+        "Discussion — Freeze tolerance",
+        "Discussion — Dynamics of water and ice"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "The endurance frogs had already undergone severe freeze trials.",
+        "The summary phrase “endured a 2-month bout” omits that only two of four met the formal survival criterion."
+      ],
+      "sourceId": "source.jeb.wood-frog-hibernation-2013",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.freeze-survival",
+        "wood-frog-freeze-tolerance.claim.ice-redistribution",
+        "wood-frog-freeze-tolerance.claim.alaska-temperature",
+        "wood-frog-freeze-tolerance.claim.alaska-eight-weeks",
+        "wood-frog-freeze-tolerance.claim.alaska-twelve-weeks"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Abstract",
+        "Introduction",
+        "Results — Responses to Freezing, Figs 1–4",
+        "Discussion — Organ Dehydration",
+        "Discussion — Glycemic Response",
+        "Discussion — Ureic Response",
+        "2015 correction to Table 5 footnotes"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "The paper states circulation cessation as established physiology but does not directly measure blood flow in this experiment.",
+        "The corrected Table 5 footnotes concern computed concentrations; the correction does not reverse the qualitative claims used here."
+      ],
+      "sourceId": "source.plos.wood-frog-cryoprotectants-2015",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+        "wood-frog-freeze-tolerance.claim.urea-and-glucose",
+        "wood-frog-freeze-tolerance.claim.ice-redistribution",
+        "wood-frog-freeze-tolerance.claim.circulation-cessation"
+      ]
+    },
+    {
+      "accessStatus": "abstract-only",
+      "evidenceLocations": [
+        "PubMed abstract"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Only the abstract was inspected.",
+        "Exogenous glucose loading is evidence for protective effect, not by itself for endogenous liver mobilization."
+      ],
+      "sourceId": "source.pubmed.wood-frog-glucose-1991",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant"
+      ]
+    },
+    {
+      "accessStatus": "abstract-only",
+      "evidenceLocations": [
+        "Publisher abstract"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Full text was paywalled in the inspected publisher view.",
+        "The experiment used exogenous loading and southern Ohio frogs."
+      ],
+      "sourceId": "source.jeb.wood-frog-glucose-1993",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant"
+      ]
+    },
+    {
+      "accessStatus": "abstract-only",
+      "evidenceLocations": [
+        "PubMed abstract"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Protective efficacy was tested principally in frozen/thawed erythrocytes and intact tissues in vitro.",
+        "Urea concentration and contribution vary with hydration, tissue and season."
+      ],
+      "sourceId": "source.jeb.wood-frog-urea-2005",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.urea-and-glucose"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Abstract",
+        "Methods, p. R1046",
+        "Results, pp. R1047–R1048, Figs 1–2"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "The post-thaw heartbeat resumption time was recorded in one frog.",
+        "The laboratory freezes were mild, controlled and nonlethal; cardiac arrest must not be equated with death."
+      ],
+      "sourceId": "source.ajp.wood-frog-heart-rate-1989",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+        "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+      ]
+    },
+    {
+      "accessStatus": "abstract-only",
+      "evidenceLocations": [
+        "PubMed abstract"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "The abstract does not report the total sample size.",
+        "Not every frog resumed spontaneous breathing or hindleg reflexes within the 3–4 hour observation window."
+      ],
+      "sourceId": "source.ajp.wood-frog-recovery-1991",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+      ]
+    },
+    {
+      "accessStatus": "partially-inspected",
+      "evidenceLocations": [
+        "PubMed identity and abstract",
+        "Publisher PDF — Results, Fig. 1 and Table 1"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Visible pulmonary ventilation is distinct from cutaneous gas exchange and whole-organism CO2 output.",
+        "The result describes experimental freeze–thaw events, not a universal time to breathing cessation."
+      ],
+      "sourceId": "source.jeb.wood-frog-metabolic-rate-2013",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.ventilation-cessation"
+      ]
+    },
+    {
+      "accessStatus": "partially-inspected",
+      "evidenceLocations": [
+        "Review section on freeze-tolerant frogs and extracellular ice",
+        "Review section on physiological arrest during freezing"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "This is a peer-reviewed synthesis, not direct primary measurement for every statement.",
+        "Its broad range applies across the reviewed freeze-tolerant frog literature."
+      ],
+      "sourceId": "source.physiological-reviews.freeze-tolerance-2017",
+      "supportsClaimIds": [
+        "wood-frog-freeze-tolerance.claim.freeze-survival",
+        "wood-frog-freeze-tolerance.claim.circulation-cessation"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Wood frog winter-adaptation paragraphs",
+        "Page metadata, last updated May 5, 2022"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "The public summary uses “freeze solid” and a simplified glucose/freezing-point explanation.",
+        "It reports −12°C, whereas the primary 2013 laboratory study documents a more specific −16°C trial.",
+        "It is retained for public-context provenance but not used as primary support for the reviewed script."
+      ],
+      "sourceId": "source.nps.denali-wood-frog-2022",
+      "supportsClaimIds": []
+    }
+  ],
+  "status": "ready-for-owner-decision",
+  "unresolvedResearch": [
+    "Direct primary blood-flow measurement was not located; circulation cessation remains excluded from the asset.",
+    "Full text was not accessible for every older paper; abstract-only sources are labeled as such.",
+    "Final frog imagery/model provenance must be recorded during production; source figures are evidence, not production assets."
+  ]
+}

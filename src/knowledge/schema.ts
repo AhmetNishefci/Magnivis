@@ -40,8 +40,24 @@ export const sourceRecordSchema = z.object({
   url: z.url(),
   retrieved: z.iso.date(),
   published: z.iso.date().optional(),
+  publicationLabel: z.string().min(1).optional(),
+  authors: z.array(z.string().min(1)).min(1).optional(),
+  identifiers: z.array(z.object({
+    scheme: z.string().regex(/^[A-Z0-9-]+$/),
+    value: z.string().min(1),
+  }).strict()).optional(),
   notes: z.string().min(1).optional(),
-}).strict();
+}).strict().superRefine((source, context) => {
+  const identifiers = source.identifiers ?? [];
+  const keys = identifiers.map(({scheme, value}) => `${scheme}:${value}`);
+  if (new Set(keys).size !== keys.length) {
+    context.addIssue({
+      code: 'custom',
+      path: ['identifiers'],
+      message: 'Source identifiers must be unique',
+    });
+  }
+});
 
 const reviewMetadataSchema = z.object({
   reviewedBy: z.string().min(1),

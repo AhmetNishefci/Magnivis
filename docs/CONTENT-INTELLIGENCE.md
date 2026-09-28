@@ -22,16 +22,22 @@ The workflow deliberately cannot convert generated research directly into an app
 
 The first new topic is `topic.wood-frog-freeze`: **How wood frogs survive being frozen**. It was selected because the stopped-heart/recovery contradiction is immediately understandable, the physical and chemical mechanism has strong visual potential, and peer-reviewed plus government sources can support a focused evergreen short.
 
-The registered `wood-frog-freeze-tolerance` KnowledgePackage and its draft ContentAsset are real review material, not toy fixtures. They preserve:
+The registered `wood-frog-freeze-tolerance` KnowledgePackage and its draft ContentAsset are real review material, not toy fixtures. The original operator run remains a historical record under `content-intelligence/runs/wood-frog-freeze-fixture-v1/`; its claims and script were superseded by the claim-review revision rather than edited in place.
 
-- four retrieved source records: Journal of Experimental Biology, PLOS ONE, PubMed, and the U.S. National Park Service;
-- seven claim records with evidence locations and population/experimental caveats;
+Human Claim Review V1 is now implemented for this topic. The current package and asset are revision 2 and preserve:
+
+- ten inspected source records, including primary ECG, pulmonary-ventilation, thaw-recovery, glucose, urea, water-redistribution and Alaskan freeze-tolerance research;
+- eleven claim records with exact evidence locations and population/experimental caveats;
 - no `verified` claims and no human approval metadata;
 - four genuinely distinct hook archetypes;
-- a 32–40 second claim-linked script draft;
+- a 30–38 second claim-linked script draft;
 - platform-neutral narrative beats and timed visual intent.
 
-The deterministic operator artifact is committed at `content-intelligence/runs/wood-frog-freeze-fixture-v1/`. `review.md` is the human entry point. The run proves serialization, validation, provenance, hashing, gates, and downstream shape without pretending that a paid model ran. Every workflow envelope truthfully records `provider: fixture` and awaits human review.
+The review corrected material oversimplifications. Heartbeat, pulmonary ventilation and circulation are separate claims. Cardiac arrest and ventilation cessation have primary experimental support; direct blood-flow-to-zero measurement was not located, so circulation cessation remains `uncertain` and is excluded from the asset. “Frozen solid” is replaced by extracellular-ice/cellular-dehydration language. The Alaskan endurance result is now stated as 2 of 4 frogs meeting the survival criterion after eight weeks at −4°C, following earlier severe freezes; all four frogs in the twelve-week group died. The −16°C record is scoped to four winter-acclimatized Interior Alaskan frogs in one staged, slow-cooling laboratory trial.
+
+The canonical owner handoff is `content-intelligence/reviews/wood-frog-freeze-v1/owner-review.md`. Its machine-readable companion is `claim-review.json`. This state is **READY FOR OWNER EDITORIAL APPROVAL**, not production-ready.
+
+The deterministic operator artifact is committed at `content-intelligence/runs/wood-frog-freeze-fixture-v1/`. Its `review.md` is the historical trial handoff, not the current owner decision document. The run proves serialization, validation, provenance, hashing, gates, and downstream shape without pretending that a paid model ran. Every workflow envelope truthfully records `provider: fixture` and awaits human review.
 
 ## Operator commands
 
@@ -43,6 +49,24 @@ pnpm content:intelligence -- trial wood-frog-freeze --provider fixture \
 pnpm content:intelligence -- validate wood-frog-freeze \
   --output content-intelligence/runs/wood-frog-freeze-fixture-v1
 ```
+
+Generate and validate the evidence-review handoff:
+
+```bash
+pnpm content:intelligence -- review wood-frog-freeze \
+  --output content-intelligence/reviews/wood-frog-freeze-v1
+```
+
+This command never approves anything. It writes an intentionally invalid `owner-decision.template.json`; the owner must read the report, supply their identity/time and meaningful notes, confirm or change every suggested decision, and remove `templateInstructions`. The completed file must match `ownerEditorialDecisionSchema`. Promotion then requires both that file and a deliberate confirmation flag:
+
+```bash
+pnpm content:intelligence -- approve wood-frog-freeze \
+  --decision /absolute/path/to/owner-decision.json \
+  --confirm-owner-approval \
+  --output content-intelligence/reviews/wood-frog-freeze-v1
+```
+
+The command records reviewer identity, time, per-claim decisions, exact statement hashes, selected hook and asset decision. It rejects stale wording, uncertain/rejected claims promoted as verified, rejected claims in the approved script, unapproved hook claims, missing reviewer metadata and missing explicit confirmation. On approval it writes reviewed snapshots; a later deliberate source update can register those snapshots. An LLM must never create or invoke the owner decision as if it were the human reviewer.
 
 Live execution is deliberately staged so it cannot cross the source-verification pause automatically:
 
@@ -123,25 +147,31 @@ Hooks reference package claims and remain proposals until selected. Review propo
 
 Every material factual script segment references selected claim IDs. Editorial connective language need not carry fake citations. Visual plans describe the story beat, objective, visual type, possible reusable primitive, required assets/data, approximate timing, and claim/script references. They do not contain Remotion frames, coordinates, platform UI, or production choreography.
 
+## Claim review and promotion boundary
+
+`src/content-intelligence/claim-review.ts` separates an AI-assisted evidence audit from owner authority. A `ClaimReviewBundle` records one inspection per source, one review per claim, evidence locators, limitations, prior wording for revisions, recommended status and statement hashes. `SUPPORTED` continues to mean evidence aligns with the scoped wording but owner verification has not happened. `VERIFIED` is created only by the explicit owner decision path and carries reviewer metadata.
+
+Changing reviewed claim wording changes its hash and invalidates a stale owner decision. An `uncertain` or audit-rejected claim cannot be approved through the command; the research/review artifact must first be revised with stronger evidence. This is an auditability control, not a substitute for editorial judgment.
+
 ## Current human gates
 
 Before this wood-frog draft can move to production, an owner/editor must:
 
-1. inspect all four linked sources independently;
-2. verify or revise each claim and its evidence locator;
-3. confirm the stopped-heart/breathing wording against an appropriate primary source;
-4. approve a hook, script, narrative, and visual plan;
-5. review asset rights/provenance;
+1. read the revision 2 owner-review report and inspect its linked evidence as needed;
+2. explicitly approve or reject every reviewed claim with reviewer identity and time;
+3. approve one defensible hook plus the revision 2 script, narrative and visual plan;
+4. accept the exclusion of circulation cessation or provide directly reviewed stronger evidence;
+5. review and later record asset rights/provenance;
 6. later approve final render, audio, captions, disclosures, platform preview, and public release.
 
 ## Intentionally unimplemented
 
 - trend/search/social discovery adapters;
-- automatic source discovery, crawling, PDF parsing, or package promotion;
+- automatic source discovery, crawling, or general PDF parsing;
 - automatic human verification or approval;
 - retries/caching for paid live calls;
 - exact VideoSpec or Remotion generation from a visual plan;
 - production rendering for the wood-frog draft;
 - publishing or analytics APIs.
 
-The main bottleneck exposed by the trial is now editorial verification and promotion, not another schema layer. The next slice should make that review/promotion procedure explicit and use it to approve or revise this real package before any production automation work.
+The remaining bottleneck is owner editorial approval. Only after that gate is recorded should the approved visual plan enter a bounded Wood Frog production-planning milestone; generic VisualPlan-to-Remotion automation remains premature.

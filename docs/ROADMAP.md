@@ -17,9 +17,10 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 - Ocean Depth generalization is complete; Video 002 validates ranges, approximate boundaries, mixed claim types, explicit uncertainty, and script traceability without changing production output.
 - Videos 001, 003, and 005 remain intentionally unmigrated. Next work requires explicit approval.
 - Content Intelligence V1 implements manual TopicCandidates, categorical evaluation, an unverified research workspace, provider-neutral structured generation, versioned prompts, claim-safe hook proposals, draft ContentAssets, and hashed file-backed workflow runs.
-- The first new-topic operator trial covers wood-frog freeze tolerance with four real source records, a supported review package, distinct hooks, a claim-linked short script, and platform-neutral narrative/visual intent. It has not been human-verified or approved for production.
+- The first new-topic operator trial covers wood-frog freeze tolerance. Its initial four-source/seven-claim run is preserved as history; Human Claim Review V1 expanded and corrected it into package/asset revision 2 with ten inspected sources, separately scoped physiological claims, a defensible script and a scientifically constrained VisualPlan.
 - A production-capable OpenAI adapter and minimal known-URL source retriever are implemented. Normal tests/trials remain credential-free; no paid live run has occurred.
-- Automatic discovery inputs, source discovery, claim-review tooling, and package promotion remain unimplemented. Human review remains mandatory for sources, claims, hooks, script, and visual plan.
+- File-backed claim review and explicit owner-controlled promotion tooling are implemented. Wording hashes, evidence locators, reviewer identity/time and per-claim decisions prevent stale, uncertain or rejected material from silently becoming verified. No owner approval has yet been recorded; the Wood Frog package is ready for owner editorial approval, not production-ready.
+- Automatic discovery inputs and source discovery remain unimplemented. Human review remains mandatory for sources, claims, hooks, script and visual plan.
 
 ## Phase 2 — production
 
