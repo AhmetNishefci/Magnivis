@@ -39,6 +39,7 @@ Validate the same selections without regenerating them:
 ```bash
 pnpm delivery:validate speed-of-light
 pnpm delivery:validate --variant speed-of-light.asset.earth-to-proxima.variant.youtube-shorts
+pnpm delivery:validate wood-frog
 ```
 
 The production artifact declared by `productionIntent.videoSpecId` must already exist. A missing artifact produces a render command rather than silently starting an expensive render. A `new-render` variant is supported when its dedicated VideoSpec and completed render exist; delivery generation itself does not render.
@@ -88,6 +89,8 @@ Generation is deterministic for the same registered sources, master bytes, and e
 Draft/review packages may be used for an explicitly private or draft platform upload needed to inspect captions, crop, UI obstruction, and cover behavior. They must not be publicly published. Generating or validating a package never changes variant status.
 
 For the current Speed of Light set, YouTube is ready because that exact master and caption track previously passed human review. TikTok revision 2 is also ready after its dedicated safe-area render passed private visual/editorial QA on an iPhone 17 Pro Max. Its canonical package is `deliveries/speed-of-light-tiktok/tiktok-feed/`; the superseded revision 1 package formerly generated at `deliveries/speed-of-light/tiktok-feed/` has been removed and must not be recreated or used. Instagram and Facebook still require first real-platform previews. A ready package remains inert until a human separately approves and performs publication.
+
+Wood Frog generates `deliveries/wood-frog/youtube-shorts/` as `draft-review`. Its exact candidate video and derived WebVTT are hash-checked, but the registered variant remains `editorial-review`, `publishEligible` is false, no cover is approved, and full human visual plus private YouTube preview gates remain outstanding.
 
 ## Intentionally unimplemented
 

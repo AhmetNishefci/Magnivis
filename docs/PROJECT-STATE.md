@@ -39,6 +39,7 @@ Last updated: 2026-09-28
 - Wood Frog Human Claim Review V1 supersedes that initial editorial draft while preserving its workflow run as history. Package revision 2 now has ten inspected sources and eleven separately scoped claims; cardiac arrest, pulmonary-ventilation cessation and thaw recovery are no longer bundled. The script and VisualPlan avoid uniform “frozen solid” imagery, distinguish urea timing from glucose mobilization, and accurately scope the −16°C and partial eight-week Alaskan laboratory results.
 - The claim-review/promotion boundary is implemented with evidence-locator validation, reviewed-statement hashes, explicit per-claim owner decisions, reviewer identity/time, and rejection of uncertain or stale claims.
 - On 2026-09-28, Ahmet Nishefci explicitly approved Wood Frog package/asset revision 2 through the owner-controlled promotion command. Ten eligible claims are `verified`; circulation cessation remains `uncertain` and excluded. The approved hook, script, narrative, VisualPlan, source limitations and procedural-asset strategy are recorded under `content-intelligence/reviews/wood-frog-freeze-v1/`. This grants production-planning authority only—not rendering, platform upload or publication authority.
+- Wood Frog Production V1 now binds those exact approved snapshots, owner decision and script hashes through `production-plan.wood-frog-freeze.v1`. The additive 40-second `Magnivis-Wood-Frog` composition uses original procedural/vector biology, deterministic original audio, hash-recorded local Kokoro narration, and captions derived from approved narration cues. It rendered and passed automated media/production QA at 1080x1920, 30 fps with H.264/AAC output. Its candidate render, contact sheet and draft YouTube delivery remain human-review artifacts; neither the master nor any platform variant is approved for publication.
 - Nonsecret operations V1 records the confirmed Instagram identity `@magnivis.media` and its bio without storing credentials. It also adds generalized PlatformAccount, PublicationRecord, platform-settings/disclosure, and raw MetricSnapshot schemas.
 - Video 004 has the first generalized PublicationRecord, linked to the exact YouTube variant/asset/package revisions and uploaded video hash. Settings without durable evidence remain `unknown`. No production MetricSnapshot has been fabricated.
 
@@ -50,7 +51,7 @@ Last updated: 2026-09-28
 - Keep the approved TikTok revision 2 package unchanged until explicit publication approval. Perform first Instagram and Facebook draft/private previews separately.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
 - Preserve the current manual, human-approved publishing workflow. Delivery generation and validation perform no external action.
-- Use the approved Wood Frog snapshots and owner decision under `content-intelligence/reviews/wood-frog-freeze-v1/` as the production-planning source of truth. The pre-approval `owner-review.md` and older fixture `review.md` remain audit history and must not be mistaken for current approval state.
+- Review `output/wood-frog-narrated.mp4` and `qa/wood-frog-narrated/contact-sheet.jpg` for scientific meaning, visual hierarchy, timing, captions, and audio. The exact source chain remains the approved snapshots and owner decision under `content-intelligence/reviews/wood-frog-freeze-v1/`; pre-approval reports remain audit history.
 - Configure `OPENAI_API_KEY` only when authorizing the first paid live topic-evaluation/research experiment. Live stages must stop for source and claim review before hook or asset drafting.
 
 ## NEXT — engineering
@@ -60,7 +61,7 @@ Last updated: 2026-09-28
 - Publish Video 005 manually only after the private platform review passes and the spacing decision is confirmed.
 - After real-platform previews, update only the packaging/safe-area/caption details proven necessary and approve variants individually. Do not implement publishing APIs without approval.
 - Add long-form production only after the content-intelligence and asset boundaries are proven.
-- Begin a bounded Wood Frog production-planning pass using the approved revision 2 snapshot and VisualPlan. Preserve later visual/render QA and publication gates; do not begin generic VisualPlan-to-Remotion automation from one topic.
+- After explicit owner visual approval, make only evidenced corrections or approve the Wood Frog master, then create and privately preview platform-specific adaptations one at a time. Do not generalize VisualPlan-to-Remotion automation from this single production.
 - Add manual MetricSnapshots for modern PublicationRecords with exact native definitions and capture windows; do not backfill ambiguous historical timestamps.
 
 ## LATER

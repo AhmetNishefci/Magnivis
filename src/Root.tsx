@@ -4,6 +4,7 @@ import {EarthToStars} from './compositions/EarthToStars';
 import {HumanEngineering} from './compositions/HumanEngineering';
 import {OceanDepth} from './compositions/OceanDepth';
 import {SpeedOfLight} from './compositions/SpeedOfLight';
+import {WoodFrog} from './compositions/WoodFrog';
 import {billionDollars, billionDollarsFrames} from './content/videos/billion-dollars';
 import {earthToStars, earthToStarsFrames} from './content/videos/earth-to-stars';
 import {humanEngineering, humanEngineeringFrames} from './content/videos/human-engineering';
@@ -14,6 +15,7 @@ import {
   speedOfLightTiktok,
   speedOfLightTiktokFrames,
 } from './content/videos/speed-of-light';
+import {woodFrog, woodFrogFrames} from './content/videos/wood-frog';
 import {safeAreaProfileIds} from './design/safe-areas';
 
 export const RemotionRoot = () => (
@@ -66,6 +68,14 @@ export const RemotionRoot = () => (
       fps={humanEngineering.format.fps}
       width={humanEngineering.format.width}
       height={humanEngineering.format.height}
+    />
+    <Composition
+      id={woodFrog.compositionId}
+      component={WoodFrog}
+      durationInFrames={woodFrogFrames}
+      fps={woodFrog.format.fps}
+      width={woodFrog.format.width}
+      height={woodFrog.format.height}
     />
   </>
 );

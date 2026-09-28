@@ -72,15 +72,33 @@ writeFileSync(`${qaDirectory}/report.json`, `${JSON.stringify(report, null, 2)}\
 const timestamps = target.qaTimestamps;
 for (const [index, timestamp] of timestamps.entries()) {
   const filename = `${qaDirectory}/frame-${String(index + 1).padStart(2, '0')}-${timestamp.toFixed(1)}s.png`;
+  const frameIndex = Math.min(
+    Math.round(expected.durationSeconds * expected.fps) - 1,
+    Math.round(timestamp * expected.fps),
+  );
   const frame = spawnSync(
     ffmpegPath,
-    ['-y', '-ss', timestamp.toString(), '-i', input, '-frames:v', '1', '-compression_level', '3', filename],
+    [
+      '-y',
+      '-i', input,
+      '-vf', `select=eq(n\\,${frameIndex})`,
+      '-vsync', '0',
+      '-frames:v', '1',
+      '-compression_level', '3',
+      filename,
+    ],
     {encoding: 'utf8'},
   );
   if (frame.status !== 0) throw new Error(frame.stderr || `Failed to extract ${filename}`);
 }
 
-const contactInterval = expected.durationSeconds / timestamps.length;
+const contactColumns = timestamps.length > 6 ? 4 : 3;
+const contactRows = Math.ceil(timestamps.length / contactColumns);
+const selectedFrames = timestamps.map((timestamp) => Math.min(
+  Math.round(expected.durationSeconds * expected.fps) - 1,
+  Math.round(timestamp * expected.fps),
+));
+const selection = selectedFrames.map((frame) => `eq(n\\,${frame})`).join('+');
 const contactSheet = spawnSync(
   ffmpegPath,
   [
@@ -88,7 +106,7 @@ const contactSheet = spawnSync(
     '-i',
     input,
     '-vf',
-    `fps=1/${contactInterval.toFixed(3)},scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:color=0x02030a,tile=${timestamps.length > 6 ? '4x2' : '3x2'}:padding=10:margin=10:color=0x02030a`,
+    `select=${selection},setpts=N/FRAME_RATE/TB,scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:color=0x02030a,tile=${contactColumns}x${contactRows}:nb_frames=${timestamps.length}:padding=10:margin=10:color=0x02030a`,
     '-frames:v',
     '1',
     '-q:v',

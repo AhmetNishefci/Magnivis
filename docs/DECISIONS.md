@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-09-28 — Bind Wood Frog production to approved editorial hashes without creating a template factory
+
+**Decision:** Add a typed ProductionPlan between the approved Wood Frog VisualPlan and VideoSpec. Bind it to exact KnowledgePackage, ContentAsset, owner-decision, and script hashes; reject stale revisions, unverified/excluded claims, and narration drift. Build the first composition from original procedural/vector visuals and extract only three small reusable diagram primitives. Derive captions from approved narration cues rather than transcribing known text.
+
+**Reason:** The repository needed a reproducible bridge from editorial intent to frames without placing pixel choreography in ContentAsset or weakening approval provenance. One biology production is insufficient evidence for a generic scene factory, and known approved narration is a more trustworthy caption source than speech recognition.
+
+**Consequences:** Wood Frog is a 40-second rendered candidate with automated media QA and a draft review delivery. It remains below human visual, platform-preview, and publication approval. Existing approved compositions and media are unchanged.
+
 ## 2026-09-28 — Approve the Wood Frog editorial package without authorizing production release
 
 **Decision:** Ahmet Nishefci approved every claim eligible in `claim-review.wood-frog-freeze.v1`, the recommended stopped-heart hook, revision 2 script, narrative, VisualPlan and procedural-asset strategy through the explicit owner command. Circulation cessation was rejected for promotion and remains `uncertain` and excluded.

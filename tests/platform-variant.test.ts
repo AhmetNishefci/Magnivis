@@ -26,6 +26,7 @@ import {
   speedOfLightTiktokVariant,
   speedOfLightYoutubeShortsVariant,
 } from '../src/platform-variants/variants/speed-of-light';
+import {woodFrogYoutubeReviewVariant} from '../src/platform-variants/variants/wood-frog';
 
 const cloneYoutubeVariant = () => structuredClone(speedOfLightYoutubeShortsVariant);
 
@@ -102,7 +103,7 @@ describe('PlatformVariant V1 schema and registry', () => {
       speedOfLightYoutubeShortsVariant,
     );
     expect(platformVariantRegistry.list().map(({id}) => id)).toEqual(
-      [...speedOfLightPlatformVariants].map(({id}) => id).sort(),
+      [...speedOfLightPlatformVariants, woodFrogYoutubeReviewVariant].map(({id}) => id).sort(),
     );
     expect(platformVariantRegistry.listByContentAsset(
       speedOfLightPublishedShortAsset.id,

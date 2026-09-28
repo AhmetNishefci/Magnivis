@@ -11,6 +11,9 @@ KnowledgePackage
 ContentAsset
   selected angle, hook, claims, script, narrative and visual intent
         ↓
+ProductionPlan (when implemented)
+  source-locked frame allocation and implementation intent
+        ↓
 PlatformVariant
   platform-specific adaptation, metadata, safe areas and CTA
         ↓
@@ -76,7 +79,9 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 
 `ocean-depth.asset.everest-descent` represents published Video 002. It traces six factual narration segments to Ocean Depth claims while treating the Everest placement instruction as editorial. Its visual plan records that the 200- and 1,000-metre light-zone boundaries are conventional and that “total darkness” means no surface sunlight, not absence of bioluminescence.
 
-`src/content-assets/registry.ts` validates all three assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
+`wood-frog-freeze-tolerance.asset.how-freezing-works` revision 2 is the first owner-approved asset to feed a typed ProductionPlan. Its script, narrative structure and VisualPlan remain editorial source-of-truth; `production-plan.wood-frog-freeze.v1` adds frame allocation and implementation intent without moving choreography into the asset. The uncertain circulation-cessation claim remains excluded.
+
+`src/content-assets/registry.ts` validates all four assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
 
 ## Adding another asset
 

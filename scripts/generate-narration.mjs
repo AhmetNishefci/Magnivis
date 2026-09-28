@@ -68,6 +68,18 @@ const configurations = {
       {id: 'coda', text: 'End to end, almost sixty-nine Burj Khalifas would fit inside it.'},
     ],
   },
+  'wood-frog': {
+    outputDirectory: 'public/audio/narration/wood-frog',
+    speed: 1.06,
+    cues: [
+      {id: 'hook', text: 'A wood frog can survive a freeze that stops its heartbeat—then thaw and recover.'},
+      {id: 'freeze', text: 'Much of its body water can turn to ice, mainly outside its cells.'},
+      {id: 'location', text: 'As extracellular ice grows, water leaves the cells. That dehydration helps keep dangerous ice crystals from forming inside them.'},
+      {id: 'chemistry', text: 'Its liver rapidly releases glucose, while urea has already built up before freezing.'},
+      {id: 'protection', text: 'These cryoprotectants limit ice formation and help protect cells through freezing and thawing.'},
+      {id: 'payoff', text: 'As the frog thaws, its heart starts beating first; breathing and leg reflexes follow. It survived by controlling the freeze—not by staying unfrozen.'},
+    ],
+  },
 };
 
 const requestedId = process.argv[2] ?? 'earth-to-stars';

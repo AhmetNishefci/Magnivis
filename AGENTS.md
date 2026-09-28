@@ -16,7 +16,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - AI-assisted research output is a proposal, never evidence of its own correctness. Model-proposed sources begin unreviewed, model-proposed claims begin unverified, and model-generated editorial assets remain drafts until a human approves them.
 - Keep AI providers behind the repository interface in `src/ai/`; validate structured output and preserve workflow/model/usage provenance. Do not scatter vendor SDK calls through domain code or make normal validation depend on credentials.
 - Treat `content-intelligence/runs/*/review.md` as an operator handoff, not approval. Workflow envelopes are hashed audit records; regenerate them through `pnpm content:intelligence`, never edit hashes by hand. Follow the live-stage pause documented in `docs/CONTENT-INTELLIGENCE.md`.
-- For Wood Frog, the evidence handoff and explicit owner-approved snapshots live in `content-intelligence/reviews/wood-frog-freeze-v1/`; the older fixture report is historical. Preserve the uncertain circulation claim exclusion and treat editorial approval as authority for production planning only—not rendering, upload, or publication.
+- For Wood Frog, the evidence handoff and explicit owner-approved snapshots live in `content-intelligence/reviews/wood-frog-freeze-v1/`; the older fixture report is historical. Its hash-locked production chain is documented in `docs/PRODUCTION-PLANS.md`. Preserve the uncertain circulation-cessation exclusion. The current render is a review candidate, not platform-approved or authorized for publication.
 - Keep video content/data separate from reusable rendering primitives. Avoid one-off monoliths and premature generic frameworks.
 - Verify material claims against appropriate authoritative sources. Preserve claim-level evidence, status, caveats, URLs, and retrieval dates. Never fabricate citations or imply uncertain evidence is settled.
 - Use only original, public-domain, CC0, or appropriately licensed assets. Update `docs/ASSET-LICENSES.md` for every production asset.
@@ -38,6 +38,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - Nonsecret accounts, publications, settings, and raw metrics: `docs/OPERATIONS.md`
 - Knowledge package model and verification semantics: `docs/KNOWLEDGE-PACKAGES.md`
 - Content asset model and editorial/production boundary: `docs/CONTENT-ASSETS.md`
+- Approved VisualPlan to production implementation: `docs/PRODUCTION-PLANS.md`
 - Platform adaptation, constraint profiles, and safe areas: `docs/PLATFORM-VARIANTS.md`
 - Manual delivery packages and validation: `docs/DELIVERY-PACKAGES.md`
 - Brand and creative direction: `docs/BRAND.md`, `docs/CONTENT-BIBLE.md`

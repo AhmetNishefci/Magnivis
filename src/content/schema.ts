@@ -67,6 +67,18 @@ export const videoSpecSchema = z.object({
   factIds: z.array(z.string().min(1)).default([]),
   contentAssetId: stableKnowledgeIdSchema.optional(),
   platformVariantId: stableKnowledgeIdSchema.optional(),
+  production: z.object({
+    productionPlanId: stableKnowledgeIdSchema,
+    productionPlanRevision: z.number().int().positive(),
+    knowledgePackageRevision: z.number().int().positive(),
+    contentAssetRevision: z.number().int().positive(),
+    approvedPackageSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    approvedContentAssetSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    ownerDecisionSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    approvedScriptSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    safeAreaProfileId: stableKnowledgeIdSchema,
+    outputReviewState: z.literal('visual-review-required'),
+  }).strict().optional(),
   audio: z.object({
     file: z.string().min(1),
     layers: z.array(z.enum(['music', 'ambient', 'transition', 'impact', 'narration', 'silence'])),
@@ -75,8 +87,28 @@ export const videoSpecSchema = z.object({
       id: z.string().min(1),
       file: z.string().min(1),
       start: z.number().nonnegative(),
+      duration: z.number().positive().optional(),
       transcript: z.string().min(1),
     })),
+    provenance: z.object({
+      soundscape: z.object({
+        generatorId: stableKnowledgeIdSchema,
+        generatorVersion: z.number().int().positive(),
+        sha256: z.string().regex(/^[a-f0-9]{64}$/),
+      }).strict(),
+      narration: z.object({
+        provider: z.literal('kokoro-local'),
+        modelId: z.string().min(1),
+        voiceId: z.string().min(1),
+        speed: z.number().positive(),
+        generatedAt: z.iso.datetime(),
+        approvedScriptSha256: z.string().regex(/^[a-f0-9]{64}$/),
+        cueArtifacts: z.array(z.object({
+          id: z.string().min(1),
+          sha256: z.string().regex(/^[a-f0-9]{64}$/),
+        }).strict()).min(1),
+      }).strict(),
+    }).strict().optional(),
   }),
 }).superRefine((video, context) => {
   const usesLegacyFacts = video.factIds.length > 0;

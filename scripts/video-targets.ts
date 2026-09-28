@@ -6,6 +6,7 @@ import {
   speedOfLight,
   speedOfLightTiktok,
 } from '../src/content/videos/speed-of-light';
+import {woodFrog} from '../src/content/videos/wood-frog';
 
 export const videoTargets = {
   [earthToStars.id]: {
@@ -43,6 +44,12 @@ export const videoTargets = {
     output: `output/${humanEngineering.id}-narrated.mp4`,
     qaDirectory: `qa/${humanEngineering.id}-narrated`,
     qaTimestamps: [0.3, 2.8, 4.8, 8.8, 13.8, 19.8, 25.8, 30.2],
+  },
+  [woodFrog.id]: {
+    spec: woodFrog,
+    output: `output/${woodFrog.id}-narrated.mp4`,
+    qaDirectory: `qa/${woodFrog.id}-narrated`,
+    qaTimestamps: [0.25, 2.8, 5.6, 9.7, 13.2, 18.1, 23.6, 28.8, 32.4, 36.8, 39.1],
   },
 } as const;
 

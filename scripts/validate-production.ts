@@ -1,0 +1,61 @@
+import {createHash} from 'node:crypto';
+import {existsSync, readFileSync} from 'node:fs';
+import {captionsToWebVtt, deriveCaptionsFromNarration} from '../src/captions/derive';
+import {woodFrog} from '../src/content/videos/wood-frog';
+import {validateWoodFrogVideoSpec} from '../src/production/integrity';
+
+const sha256 = (path: string) => createHash('sha256')
+  .update(readFileSync(path))
+  .digest('hex');
+
+const requestedId = process.argv[2];
+if (requestedId !== woodFrog.id) {
+  throw new Error(`Unknown production target: ${requestedId ?? '(missing)'}. Available: ${woodFrog.id}`);
+}
+
+validateWoodFrogVideoSpec(woodFrog);
+
+const provenance = woodFrog.audio.provenance;
+if (!provenance) throw new Error('Wood Frog audio provenance is missing');
+const soundscapePath = `public/${woodFrog.audio.file}`;
+if (!existsSync(soundscapePath)) throw new Error(`Missing soundscape: ${soundscapePath}`);
+if (sha256(soundscapePath) !== provenance.soundscape.sha256) {
+  throw new Error('Wood Frog soundscape hash does not match its VideoSpec provenance');
+}
+
+for (const cue of woodFrog.audio.narrationCues) {
+  const artifact = provenance.narration.cueArtifacts.find(({id}) => id === cue.id);
+  if (!artifact) throw new Error(`Missing narration provenance for cue: ${cue.id}`);
+  const path = `public/${cue.file}`;
+  if (!existsSync(path)) throw new Error(`Missing narration cue: ${path}`);
+  if (sha256(path) !== artifact.sha256) {
+    throw new Error(`Narration cue hash mismatch: ${cue.id}`);
+  }
+}
+
+if (provenance.narration.cueArtifacts.length !== woodFrog.audio.narrationCues.length) {
+  throw new Error('Narration provenance contains stale or duplicate cue artifacts');
+}
+
+const captionPath = woodFrog.captions[0]?.file;
+if (!captionPath || !existsSync(captionPath)) {
+  throw new Error(`Missing caption artifact: ${captionPath ?? '(unspecified)'}`);
+}
+const expectedCaptions = `${captionsToWebVtt(deriveCaptionsFromNarration(
+  woodFrog.audio.narrationCues,
+  woodFrog.format.durationSeconds,
+)).trimEnd()}\n`;
+if (readFileSync(captionPath, 'utf8') !== expectedCaptions) {
+  throw new Error('Wood Frog caption artifact is stale or does not preserve narration timing/text');
+}
+
+console.log(JSON.stringify({
+  videoSpec: woodFrog.id,
+  compositionId: woodFrog.compositionId,
+  productionPlan: woodFrog.production?.productionPlanId,
+  status: woodFrog.production?.outputReviewState,
+  soundscapeSha256: provenance.soundscape.sha256,
+  narrationCueCount: woodFrog.audio.narrationCues.length,
+  captions: captionPath,
+  passed: true,
+}, null, 2));

@@ -5,9 +5,9 @@ This is the implemented production subsystem. The higher-level knowledge-package
 ## Architecture
 
 ```text
-KnowledgePackage → ContentAsset → optional PlatformVariant
-                                      ↓
-                              video specification
+KnowledgePackage → ContentAsset → optional ProductionPlan → optional PlatformVariant
+                                                           ↓
+                                                   video specification
                ↓
       composition choreography
                ↓
@@ -21,6 +21,7 @@ KnowledgePackage → ContentAsset → optional PlatformVariant
 - `src/data/`: verified scientific records and source metadata.
 - `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Videos 002 and 004.
 - `src/content-assets/`: platform-neutral editorial assets, script traceability, narrative intent, and visual plans.
+- `src/production/`: the approved VisualPlan-to-implementation bridge, exact editorial source hashes, frame allocation, and production integrity checks.
 - `src/platform-variants/`: destination packaging, dated constraint profiles, safe-area selection, and production/readiness intent.
 - `src/content/videos/`: production metadata, timing, files, and exactly one reference to legacy facts, a content asset, or a platform variant.
 - `src/components/`: reusable visual primitives with no video-specific claims.
@@ -30,7 +31,7 @@ KnowledgePackage → ContentAsset → optional PlatformVariant
 
 This is deliberately a typed code specification rather than YAML/JSON. V1 needs derived values, validation, and refactorability more than non-developer editing. The content boundary remains explicit and could later gain another authoring format.
 
-Video specifications are production representations, not reusable research or editorial assets. A migrated video references either a ContentAsset ID or the PlatformVariant it implements; an unmigrated video continues to use legacy `factIds`. The schema requires exactly one path. Video 002 references its ContentAsset directly. Video 004 references the YouTube Shorts PlatformVariant, which resolves to its ContentAsset. Both derive narration text from their ContentAssets, while exact cue timing, audio files, scenes, format, and choreography remain in VideoSpec/Remotion. Their numeric render inputs are projected from package claims so the compositions remain unchanged.
+Video specifications are production representations, not reusable research or editorial assets. A migrated video references either a ContentAsset ID or the PlatformVariant it implements; an unmigrated video continues to use legacy `factIds`. The schema requires exactly one path. Video 002 references its ContentAsset directly. Video 004 references the YouTube Shorts PlatformVariant, which resolves to its ContentAsset. Wood Frog additionally binds its VideoSpec to an approved ProductionPlan and exact source hashes. Narration text comes from ContentAssets, while cue timing, audio files, scenes, format, and choreography remain in VideoSpec/Remotion.
 
 ## Video 001
 
@@ -84,6 +85,20 @@ Video specifications are production representations, not reusable research or ed
 - Captions: `captions/human-engineering.en.vtt` (optional positioned YouTube track); `captions/human-engineering.en.srt` is the unpositioned fallback
 - Output: `output/human-engineering-narrated.mp4`
 
+## Wood Frog production candidate
+
+- ID: `wood-frog`
+- Remotion composition: `Magnivis-Wood-Frog`
+- Format: 1080×1920, 30 fps, 40 seconds
+- Editorial source: approved `wood-frog-freeze-tolerance` package revision 2 and `wood-frog-freeze-tolerance.asset.how-freezing-works` revision 2
+- Production source: `production-plan.wood-frog-freeze.v1`, with exact package/asset/owner/script hashes and explicit circulation-cessation exclusion
+- Visuals: original procedural frog, forest, cardiac trace, extracellular-tissue/cell diagrams, cryoprotectant phase sequence, and ordered recovery indicators
+- Audio: deterministic original soundscape plus six hash-recorded local Kokoro narration cues from the approved script
+- Captions: `captions/wood-frog.en.vtt`, deterministically grouped from the approved cue text and timing
+- Output: `output/wood-frog-narrated.mp4`
+- QA: `qa/wood-frog-narrated/`; exact-frame extraction and an 11-sample contact sheet cover every major scientific beat
+- Status: rendered candidate; full human visual/audio review and later private platform preview are still required
+
 ## Commands
 
 ```bash
@@ -94,6 +109,7 @@ pnpm render billion-dollars      # Video 003 production render
 pnpm render speed-of-light       # Video 004 production render
 pnpm render speed-of-light-tiktok # TikTok revision 2 dedicated safe-area render
 pnpm render human-engineering    # Video 005 production render
+pnpm render wood-frog            # Wood Frog review-candidate render
 pnpm render:smoke ocean-depth    # first 90 frames only
 pnpm qa earth-to-stars           # ffprobe checks + frames + contact sheet
 pnpm qa ocean-depth              # Video 002 media QA and contact sheet
@@ -101,6 +117,7 @@ pnpm qa billion-dollars          # Video 003 media QA and contact sheet
 pnpm qa speed-of-light           # Video 004 media QA and contact sheet
 pnpm qa speed-of-light-tiktok    # TikTok revision 2 media QA and contact sheet
 pnpm qa human-engineering        # Video 005 media QA and contact sheet
+pnpm qa wood-frog                # Wood Frog exact-frame QA and contact sheet
 pnpm delivery speed-of-light     # generate all four Speed of Light operator packages
 pnpm delivery:validate speed-of-light # validate delivery references, files, hashes and media
 pnpm assets                      # regenerate original procedural audio
@@ -108,10 +125,13 @@ pnpm assets:ocean                # regenerate Video 002 soundscape and narration
 pnpm assets:money                # regenerate Video 003 soundscape and narration
 pnpm assets:light                # regenerate Video 004 soundscape and narration
 pnpm assets:engineering          # regenerate Video 005 soundscape and narration
+pnpm assets:wood-frog            # regenerate Wood Frog soundscape and narration
+pnpm captions:wood-frog          # derive WebVTT from approved narration cues
+pnpm production:validate wood-frog # validate approved source chain and artifact hashes
 pnpm check                       # typecheck, lint, tests, diff check
 ```
 
-The render router rejects unknown video IDs. Production renders use an 8 Mbps H.264 target and 192 kbps AAC target to preserve typography and gradients through YouTube transcoding. QA validates resolution, display aspect ratio, frame rate, duration tolerance, H.264 video, AAC audio, audio levels, and the presence of both streams.
+The render router rejects unknown video IDs. Production renders use an 8 Mbps H.264 target and 192 kbps AAC target to preserve typography and gradients through platform transcoding. QA validates resolution, display aspect ratio, frame rate, duration tolerance, H.264 video, AAC audio, audio levels, and both streams. Frame QA uses exact decoded-frame selection rather than approximate keyframe seeking; the contact-sheet layout expands to include every configured sample.
 
 ## Authoring rules
 

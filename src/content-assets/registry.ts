@@ -3,7 +3,7 @@ import {
   speedOfLightPublishedShortAsset,
 } from './assets/speed-of-light';
 import {oceanDepthPublishedShortAsset} from './assets/ocean-depth';
-import {woodFrogFreezeDraftAsset} from './assets/wood-frog-freeze';
+import {woodFrogApprovedContentAsset} from './assets/wood-frog-approved';
 import {contentAssetSchema, type ContentAsset} from './schema';
 import {
   knowledgePackageRegistry,
@@ -72,7 +72,7 @@ export const contentAssetRegistry = createContentAssetRegistry([
   oceanDepthPublishedShortAsset,
   speedOfLightPublishedShortAsset,
   speedOfLightCosmicDistanceAsset,
-  woodFrogFreezeDraftAsset,
+  woodFrogApprovedContentAsset,
 ]);
 
 export type ContentAssetRegistry = ReturnType<typeof createContentAssetRegistry>;

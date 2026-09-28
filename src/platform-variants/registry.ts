@@ -15,6 +15,7 @@ import {
   type PlatformVariant,
 } from './schema';
 import {speedOfLightPlatformVariants} from './variants/speed-of-light';
+import {woodFrogYoutubeReviewVariant} from './variants/wood-frog';
 
 const safeAreaBySurface: Record<PlatformSurface, string> = {
   'youtube-shorts': safeAreaProfileIds.youtubeShorts,
@@ -115,5 +116,5 @@ export const createPlatformVariantRegistry = (
 export type PlatformVariantRegistry = ReturnType<typeof createPlatformVariantRegistry>;
 
 export const platformVariantRegistry = createPlatformVariantRegistry(
-  speedOfLightPlatformVariants,
+  [...speedOfLightPlatformVariants, woodFrogYoutubeReviewVariant],
 );
