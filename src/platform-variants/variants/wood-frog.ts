@@ -6,7 +6,7 @@ import {platformVariantSchema} from '../schema';
 
 export const woodFrogYoutubeReviewVariant = platformVariantSchema.parse({
   id: `${woodFrogApprovedContentAsset.id}.variant.youtube-shorts`,
-  revision: 2,
+  revision: 3,
   contentAssetId: woodFrogApprovedContentAsset.id,
   platform: 'youtube',
   surface: 'youtube-shorts',
@@ -26,8 +26,8 @@ export const woodFrogYoutubeReviewVariant = platformVariantSchema.parse({
     ],
   },
   editorialAdaptationNotes: [
-    'Use this variant only to package the master for human visual and private platform review.',
-    'Revision 2 packages the designed burned-in Magnivis captions while retaining the reviewed WebVTT as an optional accessibility track.',
+    'The exact master passed owner visual review; use this variant only for private platform and cover review.',
+    'Revision 3 packages the speech-first designed burned-in captions while retaining the aligned WebVTT as an optional accessibility track.',
     'Do not publish until the exact render, optional caption track, cover and platform UI have passed separate human review.',
   ],
   duration: {targetSeconds: 40, minimumSeconds: 30, maximumSeconds: 60},
@@ -35,7 +35,7 @@ export const woodFrogYoutubeReviewVariant = platformVariantSchema.parse({
   safeAreaProfileId: safeAreaProfileIds.youtubeShorts,
   cover: {
     strategy: 'frame-selection',
-    intent: 'Evaluate the opening frog-and-cardiac-trace hero frame after the master visual review; no cover is approved yet.',
+    intent: 'Evaluate the opening frog-and-cardiac-trace hero frame during private platform review; no platform cover is approved yet.',
   },
   captions: {
     behavior: 'external-track',
@@ -48,7 +48,7 @@ export const woodFrogYoutubeReviewVariant = platformVariantSchema.parse({
     renderStrategy: 'reuse-existing-master',
     videoSpecId: 'wood-frog',
     platformPreviewRequired: true,
-    notes: 'The editorial package is approved, but this first production render requires full-resolution visual QA and a private YouTube Shorts preview before production readiness.',
+    notes: 'The exact master is owner visually approved; a private YouTube Shorts preview remains required before this platform variant can become production-ready.',
   },
   status: 'editorial-review',
 });

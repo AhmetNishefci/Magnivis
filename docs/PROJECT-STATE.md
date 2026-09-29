@@ -1,6 +1,6 @@
 # Project state
 
-Last updated: 2026-09-28
+Last updated: 2026-09-29
 
 ## DONE
 
@@ -39,8 +39,8 @@ Last updated: 2026-09-28
 - Wood Frog Human Claim Review V1 supersedes that initial editorial draft while preserving its workflow run as history. Package revision 2 now has ten inspected sources and eleven separately scoped claims; cardiac arrest, pulmonary-ventilation cessation and thaw recovery are no longer bundled. The script and VisualPlan avoid uniform “frozen solid” imagery, distinguish urea timing from glucose mobilization, and accurately scope the −16°C and partial eight-week Alaskan laboratory results.
 - The claim-review/promotion boundary is implemented with evidence-locator validation, reviewed-statement hashes, explicit per-claim owner decisions, reviewer identity/time, and rejection of uncertain or stale claims.
 - On 2026-09-28, Ahmet Nishefci explicitly approved Wood Frog package/asset revision 2 through the owner-controlled promotion command. Ten eligible claims are `verified`; circulation cessation remains `uncertain` and excluded. The approved hook, script, narrative, VisualPlan, source limitations and procedural-asset strategy are recorded under `content-intelligence/reviews/wood-frog-freeze-v1/`. This grants production-planning authority only—not rendering, platform upload or publication authority.
-- Wood Frog Production V1 binds those exact approved snapshots, owner decision and script hashes through `production-plan.wood-frog-freeze.v1`. The owner liked the first captionless render but required designed burned-in captions before final visual approval. ProductionPlan revision 2 now adds `caption-plan.wood-frog.v1`: 17 phrase-level cues derived from exact approved narration timing, constrained semantic emphasis, scene-aware safe placement, a reusable renderer, and aligned optional WebVTT. The revised 40-second candidate passed caption, source-chain, media, production and draft-delivery QA at 1080x1920, 30 fps with H.264/AAC output. It still requires owner visual review; neither the master nor any platform variant is approved for publication.
-- Final Wood Frog review exposed visually collapsed spaces beside emphasized spans. The shared renderer now segments exact source text into whitespace-preserving spans and uses layout-aware emphasis sizing instead of transforms that can paint over adjacent spaces. All 17 caption cues received midpoint-frame QA; punctuation, script, narration, timing, science, typography, colors, placement, and animation vocabulary remain unchanged. The corrected render remains a candidate awaiting owner visual approval.
+- Wood Frog Production V1 binds those exact approved snapshots, owner decision and script hashes through `production-plan.wood-frog-freeze.v1`. ProductionPlan revision 3 now binds `caption-plan.wood-frog.v1` revision 2: 18 phrase-level cues derived from exact approved narration timing, constrained semantic emphasis, scene-aware safe placement, a reusable renderer, and aligned optional WebVTT. The 40-second master passed caption, source-chain, media, production and draft-delivery QA at 1080x1920, 30 fps with H.264/AAC output.
+- Final Wood Frog review exposed visually collapsed spaces beside emphasized spans. The shared renderer now segments exact source text into whitespace-preserving spans and uses layout-aware emphasis sizing instead of transforms that can paint over adjacent spaces. The follow-up speech-first refinement represents both rhetorical em dashes as explicit, provenance-preserving phrase transitions; canonical narration reconstructs exactly and meaningful hyphens cannot use that treatment. All 18 caption cues received midpoint-frame QA. Ahmet Nishefci visually approved the exact master hash `4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2` on 2026-09-29. Platform preview, cover and publication approval remain outstanding.
 - All new Magnivis short-form productions use designed burned-in captions as part of the creative master. Native/external tracks may also support accessibility but are not substitutes. Existing approved media is not regenerated automatically. The canonical implementation and AI constraint boundary are in `docs/CAPTIONS.md`.
 - Magnivis's canonical topic universe now explicitly includes credible explanations across science and nature, humanity and history, technology and systems, human behavior, philosophy and ideas, practical life skills, business, economics, and financial literacy. The existing taxonomy remains open-ended; this is not a new whitelist or quota system. Generic motivation, shallow self-help, advice spam, fake psychology/neuroscience, and book-list content remain outside the brand.
 - Nonsecret operations V1 records the confirmed Instagram identity `@magnivis.media` and its bio without storing credentials. It also adds generalized PlatformAccount, PublicationRecord, platform-settings/disclosure, and raw MetricSnapshot schemas.
@@ -54,7 +54,7 @@ Last updated: 2026-09-28
 - Keep the approved TikTok revision 2 package unchanged until explicit publication approval. Perform first Instagram and Facebook draft/private previews separately.
 - Upload Video 005 privately with `captions/human-engineering.en.vtt` for YouTube HD, copyright, caption-on/off, desktop, and mobile review.
 - Preserve the current manual, human-approved publishing workflow. Delivery generation and validation perform no external action.
-- Review the revised captioned `output/wood-frog-narrated.mp4` and `qa/wood-frog-narrated/contact-sheet.jpg` for caption readability, semantic emphasis, timing, scene collisions, scientific meaning, visual hierarchy, and audio. The exact source chain remains the approved snapshots and owner decision under `content-intelligence/reviews/wood-frog-freeze-v1/`; pre-approval reports remain audit history.
+- Preserve the owner-approved Wood Frog master hash. Prepare a platform-specific adaptation only after explicit authorization, then perform its private UI/safe-area, cover, caption and disclosure review before any publication decision.
 - Configure `OPENAI_API_KEY` only when authorizing the first paid live topic-evaluation/research experiment. Live stages must stop for source and claim review before hook or asset drafting.
 
 ## NEXT — engineering
@@ -64,7 +64,7 @@ Last updated: 2026-09-28
 - Publish Video 005 manually only after the private platform review passes and the spacing decision is confirmed.
 - After real-platform previews, update only the packaging/safe-area/caption details proven necessary and approve variants individually. Do not implement publishing APIs without approval.
 - Add long-form production only after the content-intelligence and asset boundaries are proven.
-- After explicit owner visual approval, make only evidenced corrections or approve the Wood Frog master, then create and privately preview platform-specific adaptations one at a time. Do not generalize VisualPlan-to-Remotion automation from this single production.
+- After explicit authorization, create and privately preview Wood Frog platform-specific adaptations one at a time. Do not generalize VisualPlan-to-Remotion automation from this single production.
 - Add manual MetricSnapshots for modern PublicationRecords with exact native definitions and capture windows; do not backfill ambiguous historical timestamps.
 
 ## LATER

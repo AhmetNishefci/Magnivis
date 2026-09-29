@@ -18,14 +18,19 @@ const directions = [
         presentationIntent: 'Establish the animal and survivable event without competing with the headline.',
       },
       {
-        lines: ['that stops its heartbeat—then'],
+        lines: ['that stops its heartbeat'],
         emphasis: [{text: 'stops its heartbeat', level: 'strong', tone: 'gold'}],
         placement: middleLower,
         animation: 'focus-highlight',
         presentationIntent: 'Land the counterintuitive cardiac fact as the strongest hook phrase.',
       },
       {
-        lines: ['thaw and recover.'],
+        lines: ['then thaw and recover.'],
+        sourceBoundaryBefore: {
+          sourceText: '—',
+          treatment: 'phrase-transition',
+          rationale: 'Express the approved rhetorical em dash as the turn from cardiac arrest to recovery.',
+        },
         emphasis: [{text: 'thaw and recover', level: 'strong', tone: 'ice'}],
         placement: middleLower,
         animation: 'soft-scale',
@@ -149,15 +154,28 @@ const directions = [
         presentationIntent: 'Track the remaining recovery order without adding timestamps.',
       },
       {
-        lines: ['It survived by controlling', 'the freeze—not by staying unfrozen.'],
+        lines: ['It survived by controlling', 'the freeze'],
         emphasis: [
           {text: 'controlling', level: 'strong', tone: 'gold'},
           {text: 'the freeze', level: 'strong', tone: 'gold'},
+        ],
+        placement: middleLower,
+        animation: 'soft-scale',
+        presentationIntent: 'State the explanatory resolution before the rhetorical contrast.',
+      },
+      {
+        lines: ['not by staying unfrozen.'],
+        sourceBoundaryBefore: {
+          sourceText: '—',
+          treatment: 'phrase-transition',
+          rationale: 'Express the approved rhetorical em dash as a spoken contrast between caption phrases.',
+        },
+        emphasis: [
           {text: 'not', level: 'strong', tone: 'ice'},
         ],
         placement: middleLower,
         animation: 'soft-scale',
-        presentationIntent: 'Deliver the explanatory payoff in the composition’s warm resolution.',
+        presentationIntent: 'Land the approved contrast as a clean spoken phrase without displaying prose punctuation.',
       },
     ],
   },
@@ -165,7 +183,7 @@ const directions = [
 
 export const woodFrogCaptionPlan = createCaptionPlan({
   id: 'caption-plan.wood-frog.v1',
-  revision: 1,
+  revision: 2,
   contentAsset: {
     id: woodFrogApprovedContentAsset.id,
     revision: woodFrogApprovedContentAsset.revision,
@@ -175,6 +193,6 @@ export const woodFrogCaptionPlan = createCaptionPlan({
   fps: 30,
   narrationCues: woodFrogNarrationCues,
   directions,
-  generatedAt: '2026-09-28T20:57:45.000Z',
-  notes: 'Owner-requested deterministic CaptionPlan using the Magnivis short-form design system; no AI or speech recognition was used. The closing sentence remains one semantic caption unit.',
+  generatedAt: '2026-09-28T21:44:52.000Z',
+  notes: 'Owner-requested deterministic CaptionPlan using the Magnivis short-form design system; no AI or speech recognition was used. Both rhetorical em dashes are explicitly represented as source-preserving phrase transitions.',
 });

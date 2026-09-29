@@ -45,6 +45,20 @@ const productionAssetSchema = z.object({
   }).strict(),
 }).strict();
 
+export const productionVisualApprovalSchema = z.object({
+  decision: z.literal('approved'),
+  reviewedBy: z.string().min(1),
+  reviewedAt: z.iso.datetime(),
+  artifact: z.object({
+    path: z.string().min(1),
+    sha256: z.string().regex(/^[a-f0-9]{64}$/),
+  }).strict(),
+  captionPlan: artifactReferenceSchema,
+  notes: z.string().min(1),
+  platformVariantApprovalGranted: z.literal(false),
+  publicationApprovalGranted: z.literal(false),
+}).strict();
+
 export const productionPlanSchema = z.object({
   schemaVersion: z.literal(1),
   id: stableKnowledgeIdSchema.refine((id) => id.startsWith('production-plan.')),
@@ -53,6 +67,7 @@ export const productionPlanSchema = z.object({
     'planned',
     'implementation-ready',
     'rendered-candidate-visual-review-required',
+    'owner-visual-approved',
   ]),
   knowledgePackage: artifactReferenceSchema,
   contentAsset: artifactReferenceSchema,
@@ -79,6 +94,7 @@ export const productionPlanSchema = z.object({
     designedBurnedIn: z.literal(true),
     placement: z.literal('optional-platform-track-lower-center'),
   }).strict(),
+  visualApproval: productionVisualApprovalSchema.optional(),
   reviewRequirements: z.array(z.string().min(1)).min(1),
 }).strict().superRefine((plan, context) => {
   const durationFrames = Math.round(plan.format.durationSeconds * plan.format.fps);
@@ -91,6 +107,31 @@ export const productionPlanSchema = z.object({
       context.addIssue({code: 'custom', path: ['beats', index, 'frames'], message: 'Production beat exceeds video duration'});
     }
   });
+  if (plan.status === 'owner-visual-approved' && !plan.visualApproval) {
+    context.addIssue({
+      code: 'custom',
+      path: ['visualApproval'],
+      message: 'Owner-visual-approved production plans require exact artifact approval metadata',
+    });
+  }
+  if (plan.status !== 'owner-visual-approved' && plan.visualApproval) {
+    context.addIssue({
+      code: 'custom',
+      path: ['visualApproval'],
+      message: 'Visual approval metadata requires owner-visual-approved status',
+    });
+  }
+  if (plan.visualApproval && (
+    plan.visualApproval.captionPlan.id !== plan.captions.captionPlanId
+    || plan.visualApproval.captionPlan.revision !== plan.captions.captionPlanRevision
+    || plan.visualApproval.captionPlan.sha256 !== plan.captions.captionPlanSha256
+  )) {
+    context.addIssue({
+      code: 'custom',
+      path: ['visualApproval', 'captionPlan'],
+      message: 'Visual approval must reference the exact CaptionPlan used by the production plan',
+    });
+  }
 });
 
 export type ProductionPlan = z.infer<typeof productionPlanSchema>;

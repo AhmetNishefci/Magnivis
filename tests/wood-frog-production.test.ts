@@ -3,6 +3,7 @@ import {readFileSync} from 'node:fs';
 import {describe, expect, it} from 'vitest';
 import {captionPlanToDerivedCaptions, captionsToWebVtt, splitCaptionPhrases} from '../src/captions/derive';
 import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
+import {reconstructCanonicalNarration} from '../src/captions/plan';
 import {woodFrogApprovedContentAsset} from '../src/content-assets/assets/wood-frog-approved';
 import {woodFrog} from '../src/content/videos/wood-frog';
 import {safeAreaContains, safeAreaProfileIds, safeAreaProfileRegistry} from '../src/design/safe-areas';
@@ -27,7 +28,18 @@ describe('Wood Frog production source chain', () => {
     expect(plan.beats.map(({sourceVisualPlanId}) => sourceVisualPlanId)).toEqual(
       woodFrogApprovedContentAsset.visualPlan.map(({id}) => id),
     );
-    expect(plan.status).toBe('rendered-candidate-visual-review-required');
+    expect(plan.status).toBe('owner-visual-approved');
+    expect(plan.visualApproval).toMatchObject({
+      decision: 'approved',
+      reviewedBy: 'Ahmet Nishefci',
+      reviewedAt: '2026-09-29T10:44:24Z',
+      artifact: {
+        path: 'output/wood-frog-narrated.mp4',
+        sha256: '4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2',
+      },
+      platformVariantApprovalGranted: false,
+      publicationApprovalGranted: false,
+    });
     expect(plan.safeAreaProfileId).toBe(safeAreaProfileIds.verticalShortMaster);
   });
 
@@ -84,7 +96,7 @@ describe('Wood Frog production source chain', () => {
       captionPlanId: woodFrogCaptionPlan.id,
       captionPlanRevision: woodFrogCaptionPlan.revision,
       captionPlanSha256: woodFrogApprovalHashes.captionPlan,
-      outputReviewState: 'visual-review-required',
+      outputReviewState: 'owner-visual-approved',
     });
     expect(woodFrog.audio.narrationCues.map(({transcript}) => transcript)).toEqual(
       woodFrogApprovedContentAsset.script.segments.map(({text}) => text),
@@ -110,11 +122,15 @@ describe('Wood Frog production source chain', () => {
 });
 
 describe('narration-derived captions', () => {
-  it('preserves every approved word while producing readable timed phrases', () => {
+  it('preserves approved narration while producing speech-first timed phrases', () => {
     const captions = captionPlanToDerivedCaptions(woodFrogCaptionPlan);
-    const reconstructed = captions.map(({text}) => text).join(' ');
-    const approved = woodFrogApprovedContentAsset.script.segments.map(({text}) => text).join(' ');
-    expect(reconstructed).toBe(approved);
+    for (const narration of woodFrog.audio.narrationCues) {
+      const planned = woodFrogCaptionPlan.cues.filter(
+        ({sourceNarrationCueId}) => sourceNarrationCueId === narration.id,
+      );
+      expect(reconstructCanonicalNarration(planned))
+        .toBe(narration.transcript);
+    }
     expect(captions.every(({start, end, text}) => end > start && text.length <= 72)).toBe(true);
     expect(captions.at(-1)?.end).toBeLessThanOrEqual(woodFrog.format.durationSeconds);
 
@@ -129,11 +145,29 @@ describe('narration-derived captions', () => {
 });
 
 describe('Wood Frog platform review boundary', () => {
-  it('keeps the candidate non-publishable pending human visual/platform review', () => {
+  it('keeps the owner-approved master non-publishable pending platform review', () => {
     expect(woodFrogYoutubeReviewVariant.status).toBe('editorial-review');
     expect(woodFrogYoutubeReviewVariant.captions.designedBurnedIn).toBe(true);
     expect(woodFrogYoutubeReviewVariant.productionIntent.platformPreviewRequired).toBe(true);
-    expect(woodFrog.production?.outputReviewState).toBe('visual-review-required');
+    expect(woodFrog.production?.outputReviewState).toBe('owner-visual-approved');
+  });
+
+  it('rejects visual approval without exact approval metadata', () => {
+    const missingApproval = structuredClone(woodFrogProductionPlan);
+    delete missingApproval.visualApproval;
+    expect(() => validateProductionPlanReferences(
+      missingApproval,
+      woodFrogApprovedKnowledgePackage,
+      woodFrogApprovedContentAsset,
+    )).toThrow(/approval metadata/i);
+
+    const staleCaptionApproval = structuredClone(woodFrogProductionPlan);
+    staleCaptionApproval.visualApproval!.captionPlan.revision -= 1;
+    expect(() => validateProductionPlanReferences(
+      staleCaptionApproval,
+      woodFrogApprovedKnowledgePackage,
+      woodFrogApprovedContentAsset,
+    )).toThrow(/exact CaptionPlan/i);
   });
 
   it('uses a reusable master safe area without claiming TikTok V2 compatibility', () => {

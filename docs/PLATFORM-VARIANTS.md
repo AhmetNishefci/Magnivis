@@ -60,7 +60,7 @@ Caption placement regions are additionally validated inside these profiles. A Pl
 
 ## Wood Frog variant
 
-The Wood Frog YouTube Shorts review variant is revision 2 and selects the captioned master. It declares `designedBurnedIn: true`, retains the aligned WebVTT as an optional external accessibility track, and remains `editorial-review` pending owner visual and private platform QA.
+The Wood Frog YouTube Shorts review variant is revision 3 and selects the owner-visually-approved captioned master. It declares `designedBurnedIn: true`, retains the aligned WebVTT as an optional external accessibility track, and remains `editorial-review` pending private platform UI/safe-area, cover, caption, and disclosure QA. Master approval does not grant platform or publication approval.
 
 ## Speed of Light variants
 

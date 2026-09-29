@@ -80,7 +80,7 @@ export const videoSpecSchema = z.object({
     captionPlanRevision: z.number().int().positive().optional(),
     captionPlanSha256: z.string().regex(/^[a-f0-9]{64}$/).optional(),
     safeAreaProfileId: stableKnowledgeIdSchema,
-    outputReviewState: z.literal('visual-review-required'),
+    outputReviewState: z.enum(['visual-review-required', 'owner-visual-approved']),
   }).strict().optional(),
   audio: z.object({
     file: z.string().min(1),
@@ -127,6 +127,13 @@ export const videoSpecSchema = z.object({
       code: 'custom',
       path: ['platformVariantId'],
       message: 'A video must use exactly one of legacy factIds, contentAssetId, or platformVariantId',
+    });
+  }
+  if (video.production?.outputReviewState === 'owner-visual-approved' && video.status !== 'reviewed') {
+    context.addIssue({
+      code: 'custom',
+      path: ['status'],
+      message: 'Owner-visual-approved production output requires reviewed VideoSpec status',
     });
   }
 });

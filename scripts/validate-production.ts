@@ -4,7 +4,10 @@ import {captionPlanToDerivedCaptions, captionsToWebVtt} from '../src/captions/de
 import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
 import {validateCaptionPlanAgainstNarration} from '../src/captions/plan';
 import {woodFrog} from '../src/content/videos/wood-frog';
-import {validateWoodFrogVideoSpec} from '../src/production/integrity';
+import {
+  validateWoodFrogProductionPlan,
+  validateWoodFrogVideoSpec,
+} from '../src/production/integrity';
 
 const sha256 = (path: string) => createHash('sha256')
   .update(readFileSync(path))
@@ -15,6 +18,7 @@ if (requestedId !== woodFrog.id) {
   throw new Error(`Unknown production target: ${requestedId ?? '(missing)'}. Available: ${woodFrog.id}`);
 }
 
+const productionPlan = validateWoodFrogProductionPlan();
 validateWoodFrogVideoSpec(woodFrog);
 validateCaptionPlanAgainstNarration(
   woodFrogCaptionPlan,
@@ -55,11 +59,22 @@ if (readFileSync(captionPath, 'utf8') !== expectedCaptions) {
   throw new Error('Wood Frog caption artifact is stale or does not preserve narration timing/text');
 }
 
+if (productionPlan.status === 'owner-visual-approved') {
+  const approval = productionPlan.visualApproval;
+  if (!approval || !existsSync(approval.artifact.path)) {
+    throw new Error('Owner-approved Wood Frog render artifact is missing');
+  }
+  if (sha256(approval.artifact.path) !== approval.artifact.sha256) {
+    throw new Error('Wood Frog render does not match its exact owner visual approval');
+  }
+}
+
 console.log(JSON.stringify({
   videoSpec: woodFrog.id,
   compositionId: woodFrog.compositionId,
   productionPlan: woodFrog.production?.productionPlanId,
   status: woodFrog.production?.outputReviewState,
+  visualApproval: productionPlan.visualApproval,
   soundscapeSha256: provenance.soundscape.sha256,
   narrationCueCount: woodFrog.audio.narrationCues.length,
   captionPlan: woodFrogCaptionPlan.id,

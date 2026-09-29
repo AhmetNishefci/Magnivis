@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-09-29 — Make designed captions speech-first with explicit punctuation provenance
+
+**Decision:** Favor natural spoken phrase boundaries over literal prose typography in burned-in captions. A rhetorical em/en dash may be expressed as a phrase transition only when the CaptionPlan records the exact source punctuation, controlled treatment, and rationale. Canonical reconstruction must still equal approved narration exactly. ASCII hyphens cannot use this treatment, protecting compounds such as `eight-week`, `freeze-tolerant`, and `real-time`.
+
+**Reason:** Short-form captions are perceived as timed speech, not paragraphs. Explicitly modeling the presentation decision improves rhythm without opening an arbitrary normalization path that could change words, claims, or meaningful punctuation.
+
+**Consequences:** Wood Frog CaptionPlan revision 2 expresses both the hook and closing rhetorical turns as phrase transitions while preserving their canonical em dashes. ProductionPlan revision 3 binds the new plan. Ahmet Nishefci approved the exact resulting master hash after automated and representative-frame QA; this grants neither platform-variant nor publication approval.
+
 ## 2026-09-28 — Preserve exact caption whitespace across styled boundaries
 
 **Decision:** Segment designed-caption lines into exact source-derived plain and emphasized spans, render every span with preserved CSS whitespace, and make emphasis sizing participate in inline layout instead of applying a non-layout CSS transform. Test reconstruction plus rendered markup. Do not alter approved narration or insert synthetic spaces.

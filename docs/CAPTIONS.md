@@ -19,6 +19,8 @@ approved script
 
 No speech-to-text system is used when approved narration text and timing already exist. A CaptionPlan must reconstruct the exact narration, remain within its timing, and pass source-chain validation.
 
+Caption presentation is **speech-first, not prose-first**. Phrase grouping and transitions should make narration feel natural at short-form reading speed. Canonical narration remains unchanged. Periods, commas, questions, apostrophes, numbers, percentages, and meaningful hyphens remain when they aid comprehension; the renderer does not globally strip punctuation.
+
 ## CaptionPlan
 
 `src/captions/schema.ts` owns the typed editorial/rendering boundary. A plan records:
@@ -31,6 +33,8 @@ No speech-to-text system is used when approved narration text and timing already
 - editorial intent and provenance, including whether direction was manual or AI-assisted.
 
 `src/captions/plan.ts` derives frame-exact cue timing from the approved narration and validates complete, ordered, non-overlapping coverage. It rejects invented wording, timing outside source cues, unknown placements or treatments, invalid emphasis spans, and unsafe layout profiles.
+
+When an approved rhetorical em or en dash is better communicated by a phrase transition, the following cue may record `sourceBoundaryBefore` with the exact source punctuation, the controlled `phrase-transition` treatment, and an editorial rationale. Canonical reconstruction reinserts that exact source fragment before comparing with narration. Only em/en dash boundaries are accepted: an ASCII hyphen cannot be presentation-only, so compounds such as `eight-week`, `freeze-tolerant`, and `real-time` must remain intact. This is an explicit provenance record, not general text normalization or permission to remove words.
 
 Styled segmentation is text-preserving: emphasized and normal fragments are sliced directly from the source line, must reconstruct it byte-for-byte, and are each rendered with explicit whitespace preservation. Emphasis sizing participates in inline layout rather than using transforms that can paint over adjacent source spaces. Never repair a visual spacing defect by changing approved narration or inserting spaces that are not present in the source.
 
@@ -53,7 +57,7 @@ Both placement rectangles are validated against the active registered safe-area 
 
 ## AI art-direction boundary
 
-A future AI workflow may propose phrase grouping, line breaks, emphasis, placement, and one allowed animation treatment. It may not invent narration, fonts, colors, sizes, placement regions, animations, or safety rules. AI provenance must be recorded and every proposal must pass the same schema, narration-integrity, timing, and safe-area validation before rendering. AI output never grants editorial, visual, platform, or publication approval.
+A future AI workflow may propose phrase grouping, line breaks, emphasis, placement, one allowed animation treatment, and an explicit rhetorical-dash phrase transition. It may not invent or remove words, alter claims, remove meaningful hyphens, invent punctuation that changes meaning, or bypass fonts, colors, sizes, placement regions, animations, or safety rules. AI provenance must be recorded and every proposal must pass the same canonical-reconstruction, timing, schema, and safe-area validation before rendering. AI output never grants editorial, visual, platform, or publication approval.
 
 ## Accessibility relationship
 
@@ -63,14 +67,15 @@ The same CaptionPlan can produce WebVTT through `captionPlanToDerivedCaptions`. 
 
 Wood Frog is the first implementation:
 
-- CaptionPlan: `caption-plan.wood-frog.v1`, revision 1
-- ProductionPlan: `production-plan.wood-frog-freeze.v1`, revision 2
-- PlatformVariant: revision 2, still `editorial-review`
-- 17 phrase-level cues and 18 selective emphasis spans
-- CaptionPlan SHA-256: `97aa4a0e94d60b011a602c3d3fb4faf6931cba0dc8422e807879bbc96e980836`
-- WebVTT SHA-256: `8cefeb2b1ffbb3a58a2b067c5e0575641488dd829b1765cf5970eb1263431756`
+- CaptionPlan: `caption-plan.wood-frog.v1`, revision 2
+- ProductionPlan: `production-plan.wood-frog-freeze.v1`, revision 3
+- PlatformVariant: revision 3, still `editorial-review`
+- 18 phrase-level cues and 18 selective emphasis spans
+- CaptionPlan SHA-256: `7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51`
+- WebVTT SHA-256: `6307d067a90bc6819fd903c18eb9c84317a2c09e9d93252bd63b210ac74feab1`
+- Owner-approved master SHA-256: `4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2`
 
-The approved script, scientific claims, narration, timing, diagrams, and audio were not changed. The new render remains a candidate requiring owner visual review.
+The hook and closing narration retain their canonical rhetorical em dashes. The designed layer presents each as consecutive spoken phrases and records each dash in `sourceBoundaryBefore`, allowing exact canonical reconstruction without displaying prose punctuation. The approved script, scientific claims, narration/audio, diagrams, emphasis, typography, and placement are unchanged. Ahmet Nishefci approved the exact master visually on 2026-09-29; platform preview, cover, and publication gates remain closed.
 
 ## Operator commands
 

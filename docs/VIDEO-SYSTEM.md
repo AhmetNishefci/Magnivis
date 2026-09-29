@@ -85,19 +85,19 @@ Video specifications are production representations, not reusable research or ed
 - Captions: `captions/human-engineering.en.vtt` (optional positioned YouTube track); `captions/human-engineering.en.srt` is the unpositioned fallback
 - Output: `output/human-engineering-narrated.mp4`
 
-## Wood Frog production candidate
+## Wood Frog production master
 
 - ID: `wood-frog`
 - Remotion composition: `Magnivis-Wood-Frog`
 - Format: 1080×1920, 30 fps, 40 seconds
 - Editorial source: approved `wood-frog-freeze-tolerance` package revision 2 and `wood-frog-freeze-tolerance.asset.how-freezing-works` revision 2
-- Production source: `production-plan.wood-frog-freeze.v1` revision 2, with exact package/asset/owner/script/CaptionPlan hashes and explicit circulation-cessation exclusion
+- Production source: `production-plan.wood-frog-freeze.v1` revision 3, with exact package/asset/owner/script/CaptionPlan hashes, exact master visual approval, and explicit circulation-cessation exclusion
 - Visuals: original procedural frog, forest, cardiac trace, extracellular-tissue/cell diagrams, cryoprotectant phase sequence, and ordered recovery indicators
 - Audio: deterministic original soundscape plus six hash-recorded local Kokoro narration cues from the approved script
-- Captions: 17 designed burned-in cues from `caption-plan.wood-frog.v1`; `captions/wood-frog.en.vtt` is the aligned optional accessibility track
+- Captions: 18 speech-first designed burned-in cues from `caption-plan.wood-frog.v1` revision 2; `captions/wood-frog.en.vtt` is the aligned optional accessibility track
 - Output: `output/wood-frog-narrated.mp4`
-- QA: `qa/wood-frog-narrated/`; exact-frame extraction and a 17-sample contact sheet inspect every designed-caption cue across all scientific beats
-- Status: rendered candidate; full human visual/audio review and later private platform preview are still required
+- QA: `qa/wood-frog-narrated/`; exact-frame extraction and an 18-sample contact sheet inspect every designed-caption cue across all scientific beats
+- Status: exact master owner visually approved; private platform preview, cover selection, disclosure review, and explicit publication approval are still required
 
 ## Commands
 
@@ -109,7 +109,7 @@ pnpm render billion-dollars      # Video 003 production render
 pnpm render speed-of-light       # Video 004 production render
 pnpm render speed-of-light-tiktok # TikTok revision 2 dedicated safe-area render
 pnpm render human-engineering    # Video 005 production render
-pnpm render wood-frog            # Wood Frog review-candidate render
+pnpm render wood-frog            # Re-rendering invalidates the recorded Wood Frog master approval
 pnpm render:smoke ocean-depth    # first 90 frames only
 pnpm qa earth-to-stars           # ffprobe checks + frames + contact sheet
 pnpm qa ocean-depth              # Video 002 media QA and contact sheet

@@ -3,12 +3,34 @@ import {assertCaptionRegionIsSafe, magnivisCaptionDesignSystem} from './design-s
 import {
   captionPlanSchema,
   type CaptionAnimation,
+  type CaptionCue,
   type CaptionPlan,
   type CaptionPlacement,
 } from './schema';
 
+type CaptionTextChunk = Pick<CaptionCue, 'lines' | 'sourceBoundaryBefore'>;
+
+export const captionChunkText = (chunk: Pick<CaptionCue, 'lines'>) => chunk.lines.join(' ');
+
+export const reconstructCanonicalNarration = (
+  chunks: readonly CaptionTextChunk[],
+) => chunks.map((chunk, index) => {
+  if (index === 0) {
+    if (chunk.sourceBoundaryBefore) {
+      throw new Error('The first caption chunk cannot have a source boundary before it');
+    }
+    return captionChunkText(chunk);
+  }
+  return `${chunk.sourceBoundaryBefore?.sourceText ?? ' '}${captionChunkText(chunk)}`;
+}).join('');
+
 export type CaptionChunkDirection = {
   lines: [string] | [string, string];
+  sourceBoundaryBefore?: {
+    sourceText: string;
+    treatment: 'phrase-transition';
+    rationale: string;
+  };
   emphasis?: Array<{
     text: string;
     level: 'concept' | 'strong';
@@ -71,9 +93,7 @@ export const createCaptionPlan = ({
     if (!Number.isFinite(endSeconds) || endSeconds <= narration.start) {
       throw new Error(`Invalid narration timing for caption plan: ${narration.id}`);
     }
-    const reconstructed = direction.chunks
-      .map(({lines}) => lines.join(' '))
-      .join(' ');
+    const reconstructed = reconstructCanonicalNarration(direction.chunks);
     if (reconstructed !== narration.transcript) {
       throw new Error(`Caption direction changed approved narration: ${narration.id}`);
     }
@@ -99,6 +119,9 @@ export const createCaptionPlan = ({
         startFrame: chunkStart,
         endFrame: chunkEnd,
         lines: [...chunk.lines],
+        ...(chunk.sourceBoundaryBefore
+          ? {sourceBoundaryBefore: chunk.sourceBoundaryBefore}
+          : {}),
         emphasis: chunk.emphasis ?? [],
         placement: chunk.placement,
         animation: chunk.animation,
@@ -163,7 +186,7 @@ export const validateCaptionPlanAgainstNarration = (
     ) {
       throw new Error(`CaptionPlan timing does not fully cover narration cue: ${narration.id}`);
     }
-    const reconstructed = planned.map(({lines}) => lines.join(' ')).join(' ');
+    const reconstructed = reconstructCanonicalNarration(planned);
     if (reconstructed !== narration.transcript) {
       throw new Error(`CaptionPlan does not preserve approved narration: ${narration.id}`);
     }

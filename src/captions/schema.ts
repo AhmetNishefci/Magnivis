@@ -21,12 +21,22 @@ const captionEmphasisSchema = z.object({
   tone: captionEmphasisToneSchema,
 }).strict();
 
+export const captionSourceBoundarySchema = z.object({
+  sourceText: z.string().refine(
+    (value) => /^[ \t]*[—–][ \t]*$/u.test(value),
+    'Caption source boundaries may only represent one rhetorical em or en dash',
+  ),
+  treatment: z.literal('phrase-transition'),
+  rationale: z.string().min(1),
+}).strict();
+
 export const captionCueSchema = z.object({
   id: stableKnowledgeIdSchema,
   sourceNarrationCueId: stableKnowledgeIdSchema,
   startFrame: z.number().int().nonnegative(),
   endFrame: z.number().int().positive(),
   lines: z.array(z.string().min(1).max(38)).min(1).max(2),
+  sourceBoundaryBefore: captionSourceBoundarySchema.optional(),
   emphasis: z.array(captionEmphasisSchema).max(3).default([]),
   placement: captionPlacementSchema,
   animation: captionAnimationSchema,
@@ -87,6 +97,19 @@ export const captionPlanSchema = z.object({
       });
     }
   }
+  const seenNarrationCueIds = new Set<string>();
+  plan.cues.forEach((cue, index) => {
+    if (!seenNarrationCueIds.has(cue.sourceNarrationCueId)) {
+      seenNarrationCueIds.add(cue.sourceNarrationCueId);
+      if (cue.sourceBoundaryBefore) {
+        context.addIssue({
+          code: 'custom',
+          path: ['cues', index, 'sourceBoundaryBefore'],
+          message: 'The first caption chunk in a narration cue cannot have a source boundary before it',
+        });
+      }
+    }
+  });
 });
 
 export type CaptionCue = z.infer<typeof captionCueSchema>;

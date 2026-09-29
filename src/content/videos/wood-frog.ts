@@ -22,7 +22,7 @@ export const woodFrog = videoSpecSchema.parse({
   ],
   hook: 'A WOOD FROG CAN SURVIVE A FREEZE THAT STOPS ITS HEARTBEAT.',
   pillar: 'earth',
-  status: 'rendered',
+  status: 'reviewed',
   language: 'en',
   captions: [{language: 'en', label: 'English', file: woodFrogProductionPlan.captions.file}],
   format: woodFrogProductionPlan.format,
@@ -46,7 +46,7 @@ export const woodFrog = videoSpecSchema.parse({
     captionPlanRevision: woodFrogCaptionPlan.revision,
     captionPlanSha256: woodFrogProductionPlan.captions.captionPlanSha256,
     safeAreaProfileId: woodFrogProductionPlan.safeAreaProfileId,
-    outputReviewState: 'visual-review-required',
+    outputReviewState: 'owner-visual-approved',
   },
   audio: {
     file: 'audio/wood-frog.wav',

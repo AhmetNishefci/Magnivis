@@ -13,8 +13,8 @@ const scriptIds = asset.script.segments.map(({id}) => id);
 export const woodFrogProductionPlan = productionPlanSchema.parse({
   schemaVersion: 1,
   id: 'production-plan.wood-frog-freeze.v1',
-  revision: 2,
-  status: 'rendered-candidate-visual-review-required',
+  revision: 3,
+  status: 'owner-visual-approved',
   knowledgePackage: {
     id: woodFrogApprovedKnowledgePackage.id,
     revision: woodFrogApprovedKnowledgePackage.revision,
@@ -132,18 +132,35 @@ export const woodFrogProductionPlan = productionPlanSchema.parse({
     file: 'captions/wood-frog.en.vtt',
     captionPlanId: woodFrogCaptionPlan.id,
     captionPlanRevision: woodFrogCaptionPlan.revision,
-    captionPlanSha256: '97aa4a0e94d60b011a602c3d3fb4faf6931cba0dc8422e807879bbc96e980836',
+    captionPlanSha256: '7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51',
     generatorId: 'caption-generator.narration-cues.v1',
     generatorVersion: 1,
     source: 'approved-narration-cues',
     designedBurnedIn: true,
     placement: 'optional-platform-track-lower-center',
   },
+  visualApproval: {
+    decision: 'approved',
+    reviewedBy: 'Ahmet Nishefci',
+    reviewedAt: '2026-09-29T10:44:24Z',
+    artifact: {
+      path: 'output/wood-frog-narrated.mp4',
+      sha256: '4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2',
+    },
+    captionPlan: {
+      id: woodFrogCaptionPlan.id,
+      revision: woodFrogCaptionPlan.revision,
+      sha256: '7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51',
+    },
+    notes: 'Owner visually approved the exact master after the reusable caption-spacing fix and the speech-first rhetorical-dash refinement passed automated and representative-frame QA. This approval covers the master visual/audio artifact only.',
+    platformVariantApprovalGranted: false,
+    publicationApprovalGranted: false,
+  },
   reviewRequirements: [
-    'Inspect scientific meaning and visual hierarchy at full resolution.',
+    'Preserve the exact owner-approved master hash; any re-render requires a new visual approval.',
     'Confirm no interface or optional-caption collision on each future platform variant.',
-    'Confirm narration, soundscape and captions against the approved script.',
-    'Record human visual approval before any PlatformVariant becomes production-ready.',
+    'Confirm the exact narration, soundscape and captions during each private platform preview.',
+    'Approve each PlatformVariant separately before it becomes production-ready.',
   ],
 });
 

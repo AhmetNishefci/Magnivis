@@ -26,7 +26,7 @@ pnpm production:validate wood-frog
 
 ## Wood Frog V1
 
-`production-plan.wood-frog-freeze.v1` revision 2 is the first implemented ProductionPlan. It binds approved package and asset revision 2, plus `caption-plan.wood-frog.v1`, to the 40-second, 1080x1920, 30 fps `Magnivis-Wood-Frog` composition. Its five beats preserve the approved scientific sequence:
+`production-plan.wood-frog-freeze.v1` revision 3 is the first implemented ProductionPlan. It binds approved package and asset revision 2, plus `caption-plan.wood-frog.v1` revision 2, to the 40-second, 1080x1920, 30 fps `Magnivis-Wood-Frog` composition. Its five beats preserve the approved scientific sequence:
 
 1. labeled cardiac activity ceases during a survivable freeze;
 2. ice is shown mainly outside cells, not uniformly throughout them;
@@ -44,8 +44,8 @@ Wood Frog extracted only three small domain-neutral diagram primitives: `Diagram
 
 ## Narration and captions
 
-Narration uses the approved script exactly and records local Kokoro provider/model/voice, cue hashes, and approved-script hash. CaptionPlan deterministically derives 17 phrase-level cues from that text and timing; no speech-to-text provider is needed. The constrained renderer burns those cues into the master, while the same plan produces `captions/wood-frog.en.vtt` as an optional accessibility artifact. See `docs/CAPTIONS.md`.
+Narration uses the approved script exactly and records local Kokoro provider/model/voice, cue hashes, and approved-script hash. CaptionPlan deterministically derives 18 phrase-level cues from that text and timing; no speech-to-text provider is needed. Its explicit rhetorical-dash transition reconstructs the canonical narration exactly while presenting the final contrast as two spoken phrases. The constrained renderer burns those cues into the master, while the same plan produces `captions/wood-frog.en.vtt` as an optional accessibility artifact. See `docs/CAPTIONS.md`.
 
 ## Current status
 
-Wood Frog is a **captioned rendered candidate requiring human visual review**. Automated caption, media, production, and draft-delivery validation do not make it production-ready, platform-approved, or authorized for publication.
+Wood Frog's exact master at `output/wood-frog-narrated.mp4`, SHA-256 `4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2`, is **owner visually approved**. The typed approval records Ahmet Nishefci, the 2026-09-29 review timestamp, exact CaptionPlan identity/hash, exact artifact hash, and explicit denial of platform/publication authority. The YouTube review variant remains `editorial-review`; private platform preview, cover selection, and explicit publication approval are still required.
