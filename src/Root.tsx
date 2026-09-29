@@ -15,7 +15,12 @@ import {
   speedOfLightTiktok,
   speedOfLightTiktokFrames,
 } from './content/videos/speed-of-light';
-import {woodFrog, woodFrogFrames} from './content/videos/wood-frog';
+import {
+  woodFrog,
+  woodFrogFrames,
+  woodFrogTiktok,
+  woodFrogTiktokFrames,
+} from './content/videos/wood-frog';
 import {safeAreaProfileIds} from './design/safe-areas';
 
 export const RemotionRoot = () => (
@@ -76,6 +81,15 @@ export const RemotionRoot = () => (
       fps={woodFrog.format.fps}
       width={woodFrog.format.width}
       height={woodFrog.format.height}
+    />
+    <Composition
+      id={woodFrogTiktok.compositionId}
+      component={WoodFrog}
+      durationInFrames={woodFrogTiktokFrames}
+      fps={woodFrogTiktok.format.fps}
+      width={woodFrogTiktok.format.width}
+      height={woodFrogTiktok.format.height}
+      defaultProps={{safeAreaProfileId: safeAreaProfileIds.tiktokFeed}}
     />
   </>
 );

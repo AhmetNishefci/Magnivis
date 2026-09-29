@@ -9,15 +9,17 @@ import {ShortSafeArea} from '../components/ShortSafeArea';
 import {RevealText} from '../components/Typography';
 import {woodFrog} from '../content/videos/wood-frog';
 import {woodFrogCaptionPlan} from '../captions/plans/wood-frog';
+import {safeAreaProfileIds, safeAreaProfileRegistry} from '../design/safe-areas';
 import {palette, typography} from '../design/tokens';
 import {easeInOutCubic, easeOutQuint, progress} from '../utils/math';
 
 const fps = woodFrog.format.fps;
 const seconds = (value: number) => value * fps;
-const safeAreaProfileId = woodFrog.production?.safeAreaProfileId;
-if (!safeAreaProfileId) throw new Error('Wood Frog composition requires its production safe area');
+type WoodFrogLayoutProps = {
+  safeAreaProfileId?: string;
+};
 
-const Hook = () => {
+const Hook = ({safeAreaProfileId}: Required<WoodFrogLayoutProps>) => {
   const frame = useCurrentFrame();
   const freeze = easeInOutCubic(progress(frame, seconds(0.35), seconds(4.75)));
   const stopped = easeOutQuint(progress(frame, seconds(2.2), seconds(4.7)));
@@ -39,7 +41,7 @@ const Hook = () => {
   );
 };
 
-const OutsideCells = () => {
+const OutsideCells = ({safeAreaProfileId}: Required<WoodFrogLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = easeOutQuint(progress(frame, seconds(5.25), seconds(9.25)));
   return (
@@ -56,7 +58,7 @@ const OutsideCells = () => {
   );
 };
 
-const WaterLeavesCells = () => {
+const WaterLeavesCells = ({safeAreaProfileId}: Required<WoodFrogLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = easeInOutCubic(progress(frame, seconds(9.75), seconds(16.8)));
   return (
@@ -73,7 +75,7 @@ const WaterLeavesCells = () => {
   );
 };
 
-const TwoDefenses = () => {
+const TwoDefenses = ({safeAreaProfileId}: Required<WoodFrogLayoutProps>) => {
   const frame = useCurrentFrame();
   const amount = easeInOutCubic(progress(frame, seconds(18), seconds(28.55)));
   return (
@@ -90,8 +92,9 @@ const TwoDefenses = () => {
   );
 };
 
-const Recovery = () => {
+const Recovery = ({safeAreaProfileId}: Required<WoodFrogLayoutProps>) => {
   const frame = useCurrentFrame();
+  const {insets} = safeAreaProfileRegistry.get(safeAreaProfileId);
   const amount = easeInOutCubic(progress(frame, seconds(28.75), seconds(37.1)));
   const final = easeOutQuint(progress(frame, seconds(35.4), seconds(38.2)));
   return (
@@ -105,7 +108,7 @@ const Recovery = () => {
       </ShortSafeArea>
       <ProceduralWoodFrog idPrefix="recovery" freezeAmount={1} thawAmount={amount} legReflex={Math.max(0, (amount - 0.75) / 0.25)} style={{left: 170, top: 500, width: 710, height: 510, transform: `translateY(${(1 - amount) * 8}px)`}} />
       <RecoveryIndicators amount={amount} />
-      <div style={{position: 'absolute', left: 82, right: 190, top: 150, opacity: final, transform: `translateY(${(1 - final) * 28}px)`}}>
+      <div style={{position: 'absolute', left: insets.left, right: insets.right, top: insets.top, opacity: final, transform: `translateY(${(1 - final) * 28}px)`}}>
         <div style={{fontFamily: typography.body, fontSize: 20, fontWeight: 700, letterSpacing: '0.21em', color: '#8fc9ff', marginBottom: 18}}>THE PAYOFF</div>
         <div style={{fontFamily: typography.display, fontSize: 79, fontWeight: 700, lineHeight: 0.89, letterSpacing: '-0.055em', color: palette.ink}}>
           IT CONTROLLED
@@ -117,20 +120,25 @@ const Recovery = () => {
   );
 };
 
-export const WoodFrog = () => (
-  <AbsoluteFill style={{backgroundColor: '#02070d'}}>
-    <Audio src={staticFile(woodFrog.audio.file)} volume={0.32} />
-    {woodFrog.audio.narrationCues.map((cue) => (
-      <Sequence key={cue.id} from={Math.round(cue.start * fps)} layout="none">
-        <Audio src={staticFile(cue.file)} volume={1} />
-      </Sequence>
-    ))}
-    <Hook />
-    <OutsideCells />
-    <WaterLeavesCells />
-    <TwoDefenses />
-    <Recovery />
-    <Finish />
-    <MagnivisCaptionRenderer plan={woodFrogCaptionPlan} />
-  </AbsoluteFill>
-);
+export const WoodFrog = ({
+  safeAreaProfileId = safeAreaProfileIds.verticalShortMaster,
+}: WoodFrogLayoutProps) => {
+  const layout = {safeAreaProfileId};
+  return (
+    <AbsoluteFill style={{backgroundColor: '#02070d'}}>
+      <Audio src={staticFile(woodFrog.audio.file)} volume={0.32} />
+      {woodFrog.audio.narrationCues.map((cue) => (
+        <Sequence key={cue.id} from={Math.round(cue.start * fps)} layout="none">
+          <Audio src={staticFile(cue.file)} volume={1} />
+        </Sequence>
+      ))}
+      <Hook {...layout} />
+      <OutsideCells {...layout} />
+      <WaterLeavesCells {...layout} />
+      <TwoDefenses {...layout} />
+      <Recovery {...layout} />
+      <Finish />
+      <MagnivisCaptionRenderer plan={woodFrogCaptionPlan} safeAreaProfileId={safeAreaProfileId} />
+    </AbsoluteFill>
+  );
+};

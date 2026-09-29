@@ -98,6 +98,7 @@ Video specifications are production representations, not reusable research or ed
 - Output: `output/wood-frog-narrated.mp4`
 - QA: `qa/wood-frog-narrated/`; exact-frame extraction and an 18-sample contact sheet inspect every designed-caption cue across all scientific beats
 - Status: exact master owner visually approved; private platform preview, cover selection, disclosure review, and explicit publication approval are still required
+- TikTok derivative: `Magnivis-Wood-Frog-TikTok` / `output/wood-frog-tiktok-narrated.mp4`; applies only `safe-area.tiktok-feed.v2`, has its own QA directory, and remains private-preview-only
 
 ## Commands
 
@@ -110,10 +111,12 @@ pnpm render speed-of-light       # Video 004 production render
 pnpm render speed-of-light-tiktok # TikTok revision 2 dedicated safe-area render
 pnpm render human-engineering    # Video 005 production render
 pnpm render wood-frog            # Re-rendering invalidates the recorded Wood Frog master approval
+pnpm render wood-frog-tiktok     # Dedicated TikTok V2 safe-area candidate
 pnpm render:smoke ocean-depth    # first 90 frames only
 pnpm qa earth-to-stars           # ffprobe checks + frames + contact sheet
 pnpm qa ocean-depth              # Video 002 media QA and contact sheet
 pnpm qa billion-dollars          # Video 003 media QA and contact sheet
+pnpm qa wood-frog-tiktok         # TikTok-safe Wood Frog media/caption contact sheet
 pnpm qa speed-of-light           # Video 004 media QA and contact sheet
 pnpm qa speed-of-light-tiktok    # TikTok revision 2 media QA and contact sheet
 pnpm qa human-engineering        # Video 005 media QA and contact sheet

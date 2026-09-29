@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {
   mkdtempSync,
@@ -11,16 +12,20 @@ import {tmpdir} from 'node:os';
 import {join, resolve} from 'node:path';
 import {afterEach, describe, expect, it} from 'vitest';
 import {speedOfLightPublishedShortAsset} from '../src/content-assets/assets/speed-of-light';
+import {woodFrogApprovedContentAsset} from '../src/content-assets/assets/wood-frog-approved';
 import {speedOfLight} from '../src/content/videos/speed-of-light';
+import {woodFrog, woodFrogTiktok} from '../src/content/videos/wood-frog';
 import {safeAreaProfileIds} from '../src/design/safe-areas';
 import {deliveryManifestSchema} from '../src/delivery/schema';
 import {platformProfileIds} from '../src/platform-variants/platform-profiles';
+import {createPlatformVariantRegistry} from '../src/platform-variants/registry';
 import {
   speedOfLightFacebookVariant,
   speedOfLightInstagramVariant,
   speedOfLightTiktokVariant,
   speedOfLightYoutubeShortsVariant,
 } from '../src/platform-variants/variants/speed-of-light';
+import {woodFrogPlatformVariants} from '../src/platform-variants/variants/wood-frog';
 import {
   createReviewChecklist,
   createUploadCopy,
@@ -61,6 +66,33 @@ const fixture = () => {
     mediaInspector: () => media,
   };
   return {root, dependencies};
+};
+
+const fixtureWoodFrog = () => {
+  const root = mkdtempSync(join(tmpdir(), 'magnivis-wood-frog-delivery-'));
+  temporaryDirectories.push(root);
+  const master = join(root, 'wood-frog-master.mp4');
+  const derivative = join(root, 'wood-frog-tiktok.mp4');
+  writeFileSync(master, 'locked-master-video');
+  writeFileSync(derivative, 'tiktok-safe-area-video');
+  const masterHash = createHash('sha256').update(readFileSync(master)).digest('hex');
+  const variants = woodFrogPlatformVariants.map((variant) => ({
+    ...structuredClone(variant),
+    sourceMaster: {
+      ...structuredClone(variant.sourceMaster!),
+      artifact: {path: master, sha256: masterHash},
+    },
+  }));
+  const variantRegistry = createPlatformVariantRegistry(variants);
+  const dependencies: DeliveryDependencies = {
+    ...deliveryDependencies,
+    variantRegistry,
+    productionResolver: (variant) => variant.platform === 'tiktok'
+      ? {spec: woodFrogTiktok, sourceVideoPath: derivative}
+      : {spec: woodFrog, sourceVideoPath: master},
+    mediaInspector: () => ({...media, durationSeconds: 40.043}),
+  };
+  return {root, dependencies, masterHash};
 };
 
 afterEach(() => {
@@ -318,5 +350,63 @@ describe('Platform Delivery Package V1', () => {
         'speed-of-light',
       );
     }
+  });
+
+  it('builds four private-preview Wood Frog packages on one locked source chain', () => {
+    const {root, dependencies, masterHash} = fixtureWoodFrog();
+    const results = generateDeliveryPackagesForAsset(
+      woodFrogApprovedContentAsset.id,
+      {outputRoot: join(root, 'deliveries'), generatedAt, dependencies},
+    );
+    expect(results).toHaveLength(4);
+    expect(results.map(({manifest}) => manifest.destination.platform).sort()).toEqual([
+      'facebook', 'instagram', 'tiktok', 'youtube',
+    ]);
+    for (const {directory, manifest} of results) {
+      expect(manifest.schemaVersion).toBe(2);
+      expect(manifest.state).toBe('draft-review');
+      expect(manifest.publishEligible).toBe(false);
+      expect(manifest.review).toMatchObject({
+        previewStatus: 'ready-for-private-preview',
+        platformPreviewRequired: true,
+        publicationAuthorized: false,
+      });
+      expect(manifest.source.productionChain?.lockedMaster.sha256).toBe(masterHash);
+      expect(manifest.source.productionChain?.captionPlan.id).toBe('caption-plan.wood-frog.v1');
+      expect(manifest.operatorGuidance?.visibility).toBe('private-preview');
+      expect(readFileSync(resolve(directory, 'upload-copy.txt'), 'utf8')).toContain(
+        'OPERATOR SETTINGS',
+      );
+      expect(validateDeliveryPackage(directory, dependencies)).toEqual(manifest);
+    }
+    const youtube = results.find(({manifest}) => manifest.destination.platform === 'youtube')!;
+    const tiktok = results.find(({manifest}) => manifest.destination.platform === 'tiktok')!;
+    expect(youtube.manifest.captions.artifactPath).toBe('captions.en.vtt');
+    expect(tiktok.manifest.captions.behavior).toBe('burned-in');
+    expect(tiktok.manifest.artifacts.find(({role}) => role === 'video')?.sha256)
+      .not.toBe(masterHash);
+  });
+
+  it('rejects Wood Frog delivery source-chain drift', () => {
+    const {root, dependencies} = fixtureWoodFrog();
+    const [variant] = dependencies.variantRegistry.listByContentAsset(
+      woodFrogApprovedContentAsset.id,
+    );
+    if (!variant) throw new Error('Expected Wood Frog variant fixture');
+    const result = generateDeliveryPackage({
+      variantId: variant.id,
+      outputRoot: join(root, 'deliveries'),
+      generatedAt,
+      dependencies,
+    });
+    const changed = structuredClone(result.manifest);
+    changed.source.productionChain!.captionPlan.revision += 1;
+    writeFileSync(
+      resolve(result.directory, 'manifest.json'),
+      `${JSON.stringify(changed, null, 2)}\n`,
+    );
+    expect(() => validateDeliveryPackage(result.directory, dependencies)).toThrow(
+      'Production source chain does not match registered source data',
+    );
   });
 });

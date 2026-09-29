@@ -31,6 +31,55 @@ export const platformVariantStatusSchema = z.enum([
   'archived',
 ]);
 
+export const platformPreviewStatusSchema = z.enum([
+  'not-ready',
+  'ready-for-private-preview',
+  'private-preview-passed',
+]);
+
+const sourceMasterSchema = z.object({
+  videoSpecId: z.string().regex(/^[a-z0-9-]+$/),
+  artifact: z.object({
+    path: z.string().min(1),
+    sha256: z.string().regex(/^[a-f0-9]{64}$/),
+  }).strict(),
+  productionPlan: z.object({
+    id: stableKnowledgeIdSchema,
+    revision: z.number().int().positive(),
+  }).strict(),
+  captionPlan: z.object({
+    id: stableKnowledgeIdSchema,
+    revision: z.number().int().positive(),
+    sha256: z.string().regex(/^[a-f0-9]{64}$/),
+  }).strict(),
+  relationship: z.enum(['exact-master', 'platform-safe-area-derivative']),
+}).strict();
+
+const operatorGuidanceSchema = z.object({
+  visibility: z.literal('private-preview'),
+  originalAudio: z.literal('preserve'),
+  aiGeneratedContentDisclosure: z.object({
+    recommendation: z.enum(['enable', 'disable', 'operator-confirmation-required']),
+    currentPolicyConfirmationRequired: z.boolean(),
+    rationale: z.string().min(1),
+  }).strict(),
+  commercialContentDisclosure: z.object({
+    recommendation: z.enum(['enable', 'disable', 'operator-confirmation-required']),
+    rationale: z.string().min(1),
+  }).strict(),
+  nativeCaptions: z.object({
+    recommendation: z.enum([
+      'enable-if-no-visible-duplication',
+      'disable-to-avoid-visible-duplication',
+      'evaluate-during-private-preview',
+    ]),
+    rationale: z.string().min(1),
+  }).strict(),
+  location: z.enum(['none', 'operator-choice']),
+  link: z.enum(['none', 'operator-choice']),
+  notes: z.array(z.string().min(1)).default([]),
+}).strict();
+
 const approvalSchema = z.object({
   approvedBy: z.string().min(1),
   approvedAt: z.iso.date(),
@@ -78,6 +127,9 @@ export const platformVariantSchema = z.object({
     platformPreviewRequired: z.boolean(),
     notes: z.string().min(1),
   }).strict(),
+  previewStatus: platformPreviewStatusSchema.optional(),
+  sourceMaster: sourceMasterSchema.optional(),
+  operatorGuidance: operatorGuidanceSchema.optional(),
   status: platformVariantStatusSchema,
   approval: approvalSchema.optional(),
 }).strict().superRefine((variant, context) => {
@@ -149,6 +201,41 @@ export const platformVariantSchema = z.object({
       path: ['approval'],
       message: `${variant.status} variants require approval metadata`,
     });
+  }
+
+  if (
+    variant.previewStatus === 'private-preview-passed'
+    && variant.productionIntent.platformPreviewRequired
+  ) {
+    context.addIssue({
+      code: 'custom',
+      path: ['productionIntent', 'platformPreviewRequired'],
+      message: 'A passed private preview cannot still be marked as required',
+    });
+  }
+
+  if (
+    variant.previewStatus === 'ready-for-private-preview'
+    && !variant.productionIntent.platformPreviewRequired
+  ) {
+    context.addIssue({
+      code: 'custom',
+      path: ['previewStatus'],
+      message: 'Ready-for-private-preview variants must retain the platform preview gate',
+    });
+  }
+
+  if (variant.sourceMaster) {
+    const expectedRelationship = variant.productionIntent.renderStrategy === 'new-render'
+      ? 'platform-safe-area-derivative'
+      : 'exact-master';
+    if (variant.sourceMaster.relationship !== expectedRelationship) {
+      context.addIssue({
+        code: 'custom',
+        path: ['sourceMaster', 'relationship'],
+        message: `${variant.productionIntent.renderStrategy} requires ${expectedRelationship}`,
+      });
+    }
   }
 });
 

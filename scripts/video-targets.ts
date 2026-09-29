@@ -6,7 +6,7 @@ import {
   speedOfLight,
   speedOfLightTiktok,
 } from '../src/content/videos/speed-of-light';
-import {woodFrog} from '../src/content/videos/wood-frog';
+import {woodFrog, woodFrogTiktok} from '../src/content/videos/wood-frog';
 import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
 
 const woodFrogCaptionQaTimestamps = woodFrogCaptionPlan.cues.map(({startFrame, endFrame}) => (
@@ -54,6 +54,12 @@ export const videoTargets = {
     spec: woodFrog,
     output: `output/${woodFrog.id}-narrated.mp4`,
     qaDirectory: `qa/${woodFrog.id}-narrated`,
+    qaTimestamps: woodFrogCaptionQaTimestamps,
+  },
+  [woodFrogTiktok.id]: {
+    spec: woodFrogTiktok,
+    output: `output/${woodFrogTiktok.id}-narrated.mp4`,
+    qaDirectory: `qa/${woodFrogTiktok.id}-narrated`,
     qaTimestamps: woodFrogCaptionQaTimestamps,
   },
 } as const;

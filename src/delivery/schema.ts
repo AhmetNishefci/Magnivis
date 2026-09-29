@@ -2,6 +2,7 @@ import {z} from 'zod';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 import {
   platformSchema,
+  platformPreviewStatusSchema,
   platformSurfaceSchema,
   platformVariantStatusSchema,
 } from '../platform-variants/schema';
@@ -32,7 +33,7 @@ const approvalSchema = z.object({
 }).strict();
 
 export const deliveryManifestSchema = z.object({
-  schemaVersion: z.literal(1),
+  schemaVersion: z.union([z.literal(1), z.literal(2)]),
   deliveryId: z.string().regex(/^delivery\.[a-z0-9]+(?:[.-][a-z0-9]+)*\.r[1-9][0-9]*$/),
   generatedAt: z.iso.datetime(),
   state: deliveryPackageStateSchema,
@@ -47,6 +48,18 @@ export const deliveryManifestSchema = z.object({
       id: z.string().min(1),
       compositionId: z.string().min(1),
     }).strict(),
+    productionChain: z.object({
+      productionPlan: revisionReferenceSchema,
+      captionPlan: revisionReferenceSchema.extend({
+        sha256: z.string().regex(/^[a-f0-9]{64}$/),
+      }).strict(),
+      lockedMaster: z.object({
+        videoSpecId: z.string().regex(/^[a-z0-9-]+$/),
+        path: z.string().min(1),
+        sha256: z.string().regex(/^[a-f0-9]{64}$/),
+        relationship: z.enum(['exact-master', 'platform-safe-area-derivative']),
+      }).strict(),
+    }).strict().optional(),
   }).strict(),
   destination: z.object({
     platform: platformSchema,
@@ -82,13 +95,39 @@ export const deliveryManifestSchema = z.object({
   }).strict(),
   captions: z.object({
     behavior: z.enum(['external-track', 'platform-generated', 'burned-in', 'none']),
-    designedBurnedIn: z.boolean(),
+    designedBurnedIn: z.boolean().default(false),
     language: z.string().min(2),
     artifactPath: z.string().min(1).optional(),
     humanReviewRequired: z.boolean(),
   }).strict(),
+  operatorGuidance: z.object({
+    visibility: z.literal('private-preview'),
+    originalAudio: z.literal('preserve'),
+    aiGeneratedContentDisclosure: z.object({
+      recommendation: z.enum(['enable', 'disable', 'operator-confirmation-required']),
+      currentPolicyConfirmationRequired: z.boolean(),
+      rationale: z.string().min(1),
+    }).strict(),
+    commercialContentDisclosure: z.object({
+      recommendation: z.enum(['enable', 'disable', 'operator-confirmation-required']),
+      rationale: z.string().min(1),
+    }).strict(),
+    nativeCaptions: z.object({
+      recommendation: z.enum([
+        'enable-if-no-visible-duplication',
+        'disable-to-avoid-visible-duplication',
+        'evaluate-during-private-preview',
+      ]),
+      rationale: z.string().min(1),
+    }).strict(),
+    location: z.enum(['none', 'operator-choice']),
+    link: z.enum(['none', 'operator-choice']),
+    notes: z.array(z.string().min(1)),
+  }).strict().optional(),
   review: z.object({
     platformPreviewRequired: z.boolean(),
+    previewStatus: platformPreviewStatusSchema.default('not-ready'),
+    publicationAuthorized: z.literal(false).default(false),
     statement: z.string().min(1),
     approval: approvalSchema.optional(),
   }).strict(),

@@ -48,4 +48,6 @@ Narration uses the approved script exactly and records local Kokoro provider/mod
 
 ## Current status
 
-Wood Frog's exact master at `output/wood-frog-narrated.mp4`, SHA-256 `4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2`, is **owner visually approved**. The typed approval records Ahmet Nishefci, the 2026-09-29 review timestamp, exact CaptionPlan identity/hash, exact artifact hash, and explicit denial of platform/publication authority. The YouTube review variant remains `editorial-review`; private platform preview, cover selection, and explicit publication approval are still required.
+Wood Frog's exact master at `output/wood-frog-narrated.mp4`, SHA-256 `4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2`, is **owner visually approved and locked**. The typed approval records Ahmet Nishefci, the 2026-09-29 review timestamp, exact CaptionPlan identity/hash, exact artifact hash, and explicit denial of platform/publication authority.
+
+YouTube, Instagram, and Facebook review variants reuse that exact artifact. TikTok's stricter V2 top-safe profile requires `Magnivis-Wood-Frog-TikTok`, rendered separately to `output/wood-frog-tiktok-narrated.mp4`; this derivative changes only safe-area geometry and remains `visual-review-required`. All four variants are ready only for private platform preview. Cover selection, platform approval, and explicit publication approval remain outstanding.

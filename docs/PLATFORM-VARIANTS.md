@@ -60,7 +60,14 @@ Caption placement regions are additionally validated inside these profiles. A Pl
 
 ## Wood Frog variant
 
-The Wood Frog YouTube Shorts review variant is revision 3 and selects the owner-visually-approved captioned master. It declares `designedBurnedIn: true`, retains the aligned WebVTT as an optional external accessibility track, and remains `editorial-review` pending private platform UI/safe-area, cover, caption, and disclosure QA. Master approval does not grant platform or publication approval.
+Wood Frog has four `editorial-review` variants with `previewStatus: ready-for-private-preview`. Every variant declares `designedBurnedIn: true`, retains a typed chain to ProductionPlan revision 3, CaptionPlan revision 2, and the locked owner-approved master hash, and keeps publication unauthorized.
+
+- **YouTube Shorts revision 4:** reuses the exact master and includes the aligned WebVTT for optional accessibility review.
+- **TikTok revision 1:** uses a dedicated derivative render with `safe-area.tiktok-feed.v2`; only the top information region moves down 90 px. The derivative still requires an Only Me/private real-device preview.
+- **Instagram Reels revision 1:** reuses the exact master and records the confirmed `@magnivis.media` review context without embedding credentials.
+- **Facebook Reels revision 1:** reuses the exact master and explicitly leaves the destination account identity for operator confirmation.
+
+`previewStatus` records readiness for or completion of a private platform preview; it does not promote the variant's editorial/production status. `sourceMaster` binds an exact or safe-area-derivative relationship to the locked creative source. `operatorGuidance` records private visibility, original-audio preservation, disclosure recommendations with mutable-policy caveats, native-caption review, and location/link guidance. These fields are operator instructions, not API actions or publication approval.
 
 ## Speed of Light variants
 

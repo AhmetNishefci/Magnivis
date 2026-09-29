@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-09-29 — Lock approved masters and isolate platform-safe derivatives
+
+**Decision:** Bind every modern PlatformVariant to the exact owner-approved master, ProductionPlan, and CaptionPlan. Reuse those bytes when the destination safe area contains the master; create a separately hashed, private-review-only derivative when a proven platform safe area requires geometry changes. Track private-preview readiness separately from publication readiness.
+
+**Reason:** Owner approval applies to exact creative bytes, while platform interfaces can demand bounded layout adjustments. A derivative must remain auditable without silently replacing or weakening the approved master, and automated QA must never imply permission to publish.
+
+**Consequences:** Wood Frog YouTube, Instagram, and Facebook packages use the locked master. TikTok applies only the verified V2 90 px top-safe adjustment in a dedicated render. Manifest V2 records the complete source chain, operator guidance, `publicationAuthorized: false`, and artifact hashes. Every platform still requires private real-device QA and separate approval.
+
 ## 2026-09-29 — Make designed captions speech-first with explicit punctuation provenance
 
 **Decision:** Favor natural spoken phrase boundaries over literal prose typography in burned-in captions. A rhetorical em/en dash may be expressed as a phrase transition only when the CaptionPlan records the exact source punctuation, controlled treatment, and rationale. Canonical reconstruction must still equal approved narration exactly. ASCII hyphens cannot use this treatment, protecting compounds such as `eight-week`, `freeze-tolerant`, and `real-time`.

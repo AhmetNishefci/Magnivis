@@ -4,24 +4,27 @@ import {assertCaptionRegionIsSafe, magnivisCaptionDesignSystem} from '../src/cap
 import {captionPlanToDerivedCaptions, captionsToWebVtt} from '../src/captions/derive';
 import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
 import {validateCaptionPlanAgainstNarration} from '../src/captions/plan';
-import {woodFrog} from '../src/content/videos/wood-frog';
+import {woodFrog, woodFrogTiktok} from '../src/content/videos/wood-frog';
 import {safeAreaProfileIds} from '../src/design/safe-areas';
 import {woodFrogYoutubeReviewVariant} from '../src/platform-variants/variants/wood-frog';
 import {woodFrogApprovalHashes} from '../src/production/integrity';
 
 const requestedId = process.argv[2];
-if (requestedId !== woodFrog.id) {
-  throw new Error(`Unknown caption QA target: ${requestedId ?? '(missing)'}. Available: ${woodFrog.id}`);
-}
+const video = requestedId === woodFrog.id
+  ? woodFrog
+  : requestedId === woodFrogTiktok.id
+    ? woodFrogTiktok
+    : undefined;
+if (!video) throw new Error(`Unknown caption QA target: ${requestedId ?? '(missing)'}. Available: ${woodFrog.id}, ${woodFrogTiktok.id}`);
 
 validateCaptionPlanAgainstNarration(
   woodFrogCaptionPlan,
-  woodFrog.audio.narrationCues,
-  woodFrog.production?.safeAreaProfileId ?? woodFrogCaptionPlan.safeAreaProfileId,
+  video.audio.narrationCues,
+  video.production?.safeAreaProfileId ?? woodFrogCaptionPlan.safeAreaProfileId,
 );
 if (
   woodFrogCaptionPlan.approvedScriptSha256 !== woodFrogApprovalHashes.script
-  || woodFrog.production?.captionPlanSha256 !== woodFrogApprovalHashes.captionPlan
+  || video.production?.captionPlanSha256 !== woodFrogApprovalHashes.captionPlan
 ) {
   throw new Error('CaptionPlan is not bound to the approved script/source-chain hash');
 }
@@ -51,6 +54,7 @@ if (actual !== expected) throw new Error('Caption WebVTT does not match CaptionP
 
 console.log(JSON.stringify({
   captionPlan: woodFrogCaptionPlan.id,
+  videoSpec: video.id,
   revision: woodFrogCaptionPlan.revision,
   sha256: woodFrogApprovalHashes.captionPlan,
   designSystem: magnivisCaptionDesignSystem.id,

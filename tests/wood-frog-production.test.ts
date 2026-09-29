@@ -5,11 +5,11 @@ import {captionPlanToDerivedCaptions, captionsToWebVtt, splitCaptionPhrases} fro
 import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
 import {reconstructCanonicalNarration} from '../src/captions/plan';
 import {woodFrogApprovedContentAsset} from '../src/content-assets/assets/wood-frog-approved';
-import {woodFrog} from '../src/content/videos/wood-frog';
+import {woodFrog, woodFrogTiktok} from '../src/content/videos/wood-frog';
 import {safeAreaContains, safeAreaProfileIds, safeAreaProfileRegistry} from '../src/design/safe-areas';
 import {woodFrogApprovedKnowledgePackage} from '../src/knowledge/packages/wood-frog-approved';
 import {woodFrogFreezeClaimIds} from '../src/knowledge/packages/wood-frog-freeze-tolerance';
-import {woodFrogYoutubeReviewVariant} from '../src/platform-variants/variants/wood-frog';
+import {woodFrogPlatformVariants, woodFrogYoutubeReviewVariant} from '../src/platform-variants/variants/wood-frog';
 import {
   validateWoodFrogProductionPlan,
   validateWoodFrogVideoSpec,
@@ -108,6 +108,20 @@ describe('Wood Frog production source chain', () => {
     expect(() => validateWoodFrogVideoSpec(staleVideo)).toThrow(/stale or inconsistent/i);
   });
 
+  it('keeps the TikTok derivative on the exact approved editorial and caption chain', () => {
+    expect(validateWoodFrogVideoSpec(woodFrogTiktok)).toEqual(woodFrogTiktok);
+    expect(woodFrogTiktok.production).toMatchObject({
+      productionPlanRevision: woodFrogProductionPlan.revision,
+      contentAssetRevision: woodFrogApprovedContentAsset.revision,
+      captionPlanRevision: woodFrogCaptionPlan.revision,
+      captionPlanSha256: woodFrogApprovalHashes.captionPlan,
+      safeAreaProfileId: safeAreaProfileIds.tiktokFeed,
+      outputReviewState: 'visual-review-required',
+    });
+    expect(woodFrogTiktok.audio).toEqual(woodFrog.audio);
+    expect(woodFrogTiktok.scenes).toEqual(woodFrog.scenes);
+  });
+
   it('matches every generated audio artifact to recorded SHA-256 provenance', () => {
     const provenance = woodFrog.audio.provenance;
     if (!provenance) throw new Error('Expected Wood Frog audio provenance');
@@ -150,6 +164,9 @@ describe('Wood Frog platform review boundary', () => {
     expect(woodFrogYoutubeReviewVariant.captions.designedBurnedIn).toBe(true);
     expect(woodFrogYoutubeReviewVariant.productionIntent.platformPreviewRequired).toBe(true);
     expect(woodFrog.production?.outputReviewState).toBe('owner-visual-approved');
+    expect(woodFrogPlatformVariants.every(({previewStatus}) => (
+      previewStatus === 'ready-for-private-preview'
+    ))).toBe(true);
   });
 
   it('rejects visual approval without exact approval metadata', () => {

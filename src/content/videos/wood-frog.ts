@@ -6,6 +6,8 @@ import {
   woodFrogNarrationProvenance,
 } from '../../production/narration/wood-frog';
 import {woodFrogProductionPlan, woodFrogProductionFrames} from '../../production/plans/wood-frog';
+import {woodFrogPlatformVariantIds} from '../../platform-variants/variants/wood-frog';
+import {safeAreaProfileIds} from '../../design/safe-areas';
 import {videoSpecSchema} from '../schema';
 
 export const woodFrog = videoSpecSchema.parse({
@@ -67,3 +69,20 @@ export const woodFrog = videoSpecSchema.parse({
 contentAssetRegistry.get(woodFrogApprovedContentAsset.id);
 
 export const woodFrogFrames = woodFrogProductionFrames;
+
+export const woodFrogTiktok = videoSpecSchema.parse({
+  ...woodFrog,
+  id: 'wood-frog-tiktok',
+  compositionId: 'Magnivis-Wood-Frog-TikTok',
+  workingTitle: 'How a Wood Frog Survives Freezing — TikTok safe-area candidate',
+  status: 'production',
+  contentAssetId: undefined,
+  platformVariantId: woodFrogPlatformVariantIds.tiktokFeed,
+  production: {
+    ...woodFrog.production!,
+    safeAreaProfileId: safeAreaProfileIds.tiktokFeed,
+    outputReviewState: 'visual-review-required',
+  },
+});
+
+export const woodFrogTiktokFrames = woodFrogProductionFrames;

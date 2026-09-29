@@ -7,8 +7,10 @@ import {validateCaptionPlanAgainstNarration} from '../captions/plan';
 import type {VideoSpec} from '../content/schema';
 import {woodFrogApprovedContentAsset} from '../content-assets/assets/wood-frog-approved';
 import {stableJson} from '../content-intelligence/run-schema';
+import {safeAreaProfileIds} from '../design/safe-areas';
 import {woodFrogApprovedKnowledgePackage} from '../knowledge/packages/wood-frog-approved';
 import {woodFrogFreezeClaimIds} from '../knowledge/packages/wood-frog-freeze-tolerance';
+import {woodFrogPlatformVariantIds} from '../platform-variants/variants/wood-frog';
 import {woodFrogProductionPlan} from './plans/wood-frog';
 import {validateProductionPlanReferences} from './schema';
 
@@ -60,8 +62,16 @@ export const validateWoodFrogProductionPlan = () => {
 };
 export const validateWoodFrogVideoSpec = (video: VideoSpec) => {
   const plan = validateWoodFrogProductionPlan();
-  if (video.contentAssetId !== woodFrogApprovedContentAsset.id || video.platformVariantId) {
-    throw new Error('Wood Frog VideoSpec must directly reference its approved ContentAsset');
+  const isApprovedMaster = (
+    video.contentAssetId === woodFrogApprovedContentAsset.id
+    && !video.platformVariantId
+  );
+  const isTiktokDerivative = (
+    !video.contentAssetId
+    && video.platformVariantId === woodFrogPlatformVariantIds.tiktokFeed
+  );
+  if (!isApprovedMaster && !isTiktokDerivative) {
+    throw new Error('Wood Frog VideoSpec must reference its approved ContentAsset or registered TikTok derivative');
   }
   const production = video.production;
   if (!production) throw new Error('Wood Frog VideoSpec requires a production reference');
@@ -77,7 +87,9 @@ export const validateWoodFrogVideoSpec = (video: VideoSpec) => {
     || production.captionPlanId !== woodFrogCaptionPlan.id
     || production.captionPlanRevision !== woodFrogCaptionPlan.revision
     || production.captionPlanSha256 !== woodFrogApprovalHashes.captionPlan
-    || production.safeAreaProfileId !== plan.safeAreaProfileId
+    || production.safeAreaProfileId !== (
+      isTiktokDerivative ? safeAreaProfileIds.tiktokFeed : plan.safeAreaProfileId
+    )
   ) {
     throw new Error('Wood Frog VideoSpec source chain is stale or inconsistent');
   }

@@ -1,5 +1,6 @@
 import {describe, expect, it} from 'vitest';
 import {speedOfLightPublishedShortAsset} from '../src/content-assets/assets/speed-of-light';
+import {woodFrogApprovedContentAsset} from '../src/content-assets/assets/wood-frog-approved';
 import {videoSpecSchema} from '../src/content/schema';
 import {
   speedOfLight,
@@ -26,7 +27,13 @@ import {
   speedOfLightTiktokVariant,
   speedOfLightYoutubeShortsVariant,
 } from '../src/platform-variants/variants/speed-of-light';
-import {woodFrogYoutubeReviewVariant} from '../src/platform-variants/variants/wood-frog';
+import {
+  woodFrogFacebookReviewVariant,
+  woodFrogInstagramReviewVariant,
+  woodFrogPlatformVariants,
+  woodFrogTiktokReviewVariant,
+  woodFrogYoutubeReviewVariant,
+} from '../src/platform-variants/variants/wood-frog';
 
 const cloneYoutubeVariant = () => structuredClone(speedOfLightYoutubeShortsVariant);
 
@@ -103,11 +110,44 @@ describe('PlatformVariant V1 schema and registry', () => {
       speedOfLightYoutubeShortsVariant,
     );
     expect(platformVariantRegistry.list().map(({id}) => id)).toEqual(
-      [...speedOfLightPlatformVariants, woodFrogYoutubeReviewVariant].map(({id}) => id).sort(),
+      [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants].map(({id}) => id).sort(),
     );
     expect(platformVariantRegistry.listByContentAsset(
       speedOfLightPublishedShortAsset.id,
     )).toHaveLength(4);
+  });
+
+  it('registers four Wood Frog variants without granting publication approval', () => {
+    expect(woodFrogPlatformVariants).toHaveLength(4);
+    expect(platformVariantRegistry.listByContentAsset(woodFrogApprovedContentAsset.id)).toHaveLength(4);
+    expect(new Set(woodFrogPlatformVariants.map(({platform}) => platform))).toEqual(
+      new Set(['youtube', 'tiktok', 'instagram', 'facebook']),
+    );
+    for (const variant of woodFrogPlatformVariants) {
+      expect(variant.previewStatus).toBe('ready-for-private-preview');
+      expect(variant.status).toBe('editorial-review');
+      expect(variant.productionIntent.platformPreviewRequired).toBe(true);
+      expect(variant.captions.designedBurnedIn).toBe(true);
+      expect(variant.sourceMaster?.artifact.sha256).toBe(
+        '4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2',
+      );
+    }
+  });
+
+  it('isolates TikTok safe-area rendering while other Wood Frog surfaces reuse the lock', () => {
+    expect(woodFrogTiktokReviewVariant).toMatchObject({
+      safeAreaProfileId: safeAreaProfileIds.tiktokFeed,
+      productionIntent: {renderStrategy: 'new-render', videoSpecId: 'wood-frog-tiktok'},
+      sourceMaster: {relationship: 'platform-safe-area-derivative'},
+    });
+    for (const variant of [
+      woodFrogYoutubeReviewVariant,
+      woodFrogInstagramReviewVariant,
+      woodFrogFacebookReviewVariant,
+    ]) {
+      expect(variant.productionIntent.renderStrategy).toBe('reuse-existing-master');
+      expect(variant.sourceMaster?.relationship).toBe('exact-master');
+    }
   });
 
   it('keeps production references mutually exclusive', () => {

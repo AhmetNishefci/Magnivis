@@ -3,7 +3,7 @@ import {existsSync, readFileSync} from 'node:fs';
 import {captionPlanToDerivedCaptions, captionsToWebVtt} from '../src/captions/derive';
 import {woodFrogCaptionPlan} from '../src/captions/plans/wood-frog';
 import {validateCaptionPlanAgainstNarration} from '../src/captions/plan';
-import {woodFrog} from '../src/content/videos/wood-frog';
+import {woodFrog, woodFrogTiktok} from '../src/content/videos/wood-frog';
 import {
   validateWoodFrogProductionPlan,
   validateWoodFrogVideoSpec,
@@ -14,27 +14,30 @@ const sha256 = (path: string) => createHash('sha256')
   .digest('hex');
 
 const requestedId = process.argv[2];
-if (requestedId !== woodFrog.id) {
-  throw new Error(`Unknown production target: ${requestedId ?? '(missing)'}. Available: ${woodFrog.id}`);
-}
+const video = requestedId === woodFrog.id
+  ? woodFrog
+  : requestedId === woodFrogTiktok.id
+    ? woodFrogTiktok
+    : undefined;
+if (!video) throw new Error(`Unknown production target: ${requestedId ?? '(missing)'}. Available: ${woodFrog.id}, ${woodFrogTiktok.id}`);
 
 const productionPlan = validateWoodFrogProductionPlan();
-validateWoodFrogVideoSpec(woodFrog);
+validateWoodFrogVideoSpec(video);
 validateCaptionPlanAgainstNarration(
   woodFrogCaptionPlan,
-  woodFrog.audio.narrationCues,
-  woodFrog.production?.safeAreaProfileId ?? woodFrogCaptionPlan.safeAreaProfileId,
+  video.audio.narrationCues,
+  video.production?.safeAreaProfileId ?? woodFrogCaptionPlan.safeAreaProfileId,
 );
 
-const provenance = woodFrog.audio.provenance;
+const provenance = video.audio.provenance;
 if (!provenance) throw new Error('Wood Frog audio provenance is missing');
-const soundscapePath = `public/${woodFrog.audio.file}`;
+const soundscapePath = `public/${video.audio.file}`;
 if (!existsSync(soundscapePath)) throw new Error(`Missing soundscape: ${soundscapePath}`);
 if (sha256(soundscapePath) !== provenance.soundscape.sha256) {
   throw new Error('Wood Frog soundscape hash does not match its VideoSpec provenance');
 }
 
-for (const cue of woodFrog.audio.narrationCues) {
+for (const cue of video.audio.narrationCues) {
   const artifact = provenance.narration.cueArtifacts.find(({id}) => id === cue.id);
   if (!artifact) throw new Error(`Missing narration provenance for cue: ${cue.id}`);
   const path = `public/${cue.file}`;
@@ -44,11 +47,11 @@ for (const cue of woodFrog.audio.narrationCues) {
   }
 }
 
-if (provenance.narration.cueArtifacts.length !== woodFrog.audio.narrationCues.length) {
+if (provenance.narration.cueArtifacts.length !== video.audio.narrationCues.length) {
   throw new Error('Narration provenance contains stale or duplicate cue artifacts');
 }
 
-const captionPath = woodFrog.captions[0]?.file;
+const captionPath = video.captions[0]?.file;
 if (!captionPath || !existsSync(captionPath)) {
   throw new Error(`Missing caption artifact: ${captionPath ?? '(unspecified)'}`);
 }
@@ -70,13 +73,13 @@ if (productionPlan.status === 'owner-visual-approved') {
 }
 
 console.log(JSON.stringify({
-  videoSpec: woodFrog.id,
-  compositionId: woodFrog.compositionId,
-  productionPlan: woodFrog.production?.productionPlanId,
-  status: woodFrog.production?.outputReviewState,
+  videoSpec: video.id,
+  compositionId: video.compositionId,
+  productionPlan: video.production?.productionPlanId,
+  status: video.production?.outputReviewState,
   visualApproval: productionPlan.visualApproval,
   soundscapeSha256: provenance.soundscape.sha256,
-  narrationCueCount: woodFrog.audio.narrationCues.length,
+  narrationCueCount: video.audio.narrationCues.length,
   captionPlan: woodFrogCaptionPlan.id,
   burnedInCaptionCueCount: woodFrogCaptionPlan.cues.length,
   captions: captionPath,

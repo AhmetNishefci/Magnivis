@@ -73,7 +73,7 @@ Automated cover creation is intentionally absent. The package carries the regist
 
 ## Manifest and integrity
 
-`src/delivery/schema.ts` validates schema version, delivery ID/time/state, source revisions, VideoSpec/composition, destination profiles, observed media, upload metadata and claim IDs, designed-burned-in plus accessibility/native caption handling, approval/review status, and artifact records.
+`src/delivery/schema.ts` validates schema version, delivery ID/time/state, source revisions, VideoSpec/composition, optional locked ProductionPlan/CaptionPlan/master provenance, destination profiles, observed media, upload metadata and claim IDs, designed-burned-in plus accessibility/native caption handling, operator settings, private-preview/publication gates, and artifact records. Manifest V2 adds those production-chain and operator-review fields while the validator can still read existing V1 manifests.
 
 Every video, caption, metadata, upload-copy, and review artifact receives a SHA-256 hash and byte count. The manifest is written last and is not recursively self-hashed. Validation reparses the manifest, resolves every registry reference, rejects missing/extra/tampered files, reruns ffprobe, checks media against VideoSpec/PlatformVariant/platform profile, and rejects unresolved placeholder markers.
 
@@ -90,7 +90,14 @@ Draft/review packages may be used for an explicitly private or draft platform up
 
 For the current Speed of Light set, YouTube is ready because that exact master and caption track previously passed human review. TikTok revision 2 is also ready after its dedicated safe-area render passed private visual/editorial QA on an iPhone 17 Pro Max. Its canonical package is `deliveries/speed-of-light-tiktok/tiktok-feed/`; the superseded revision 1 package formerly generated at `deliveries/speed-of-light/tiktok-feed/` has been removed and must not be recreated or used. Instagram and Facebook still require first real-platform previews. A ready package remains inert until a human separately approves and performs publication.
 
-Wood Frog variant revision 3 generates `deliveries/wood-frog/youtube-shorts/` as `draft-review`. Its exact owner-visually-approved master and CaptionPlan-derived WebVTT are hash-checked, but the registered variant remains `editorial-review`, `publishEligible` is false, no platform cover is approved, and private YouTube preview remains outstanding.
+Wood Frog generates four `draft-review` packages with `previewStatus: ready-for-private-preview`, `publishEligible: false`, and `publicationAuthorized: false`:
+
+- `deliveries/wood-frog/youtube-shorts/`
+- `deliveries/wood-frog-tiktok/tiktok-feed/`
+- `deliveries/wood-frog/instagram-reels/`
+- `deliveries/wood-frog/facebook-reels/`
+
+YouTube, Instagram, and Facebook package the exact locked master. TikTok packages its dedicated V2-safe derivative and records the locked master as its immutable source. YouTube includes the WebVTT; the other packages retain burned-in captions and ask the operator to evaluate native-caption duplication privately rather than fabricating an unsupported sidecar workflow.
 
 ## Intentionally unimplemented
 

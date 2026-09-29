@@ -19,6 +19,8 @@ No API client, OAuth flow, scheduler, upload command, or analytics importer exis
 - **TikTok:** the Speed of Light revision 2 artifact passed private real-device QA. No public publication is recorded and no handle is guessed.
 - **Facebook:** a review-only PlatformVariant exists; account identity and real-platform preview remain unconfirmed.
 
+Wood Frog now has review-only deliveries for all four surfaces. Every package requires private/draft visibility, preserves original audio and designed burned-in captions, records current-policy confirmation for AI disclosure, and keeps publication unauthorized. TikTok recommends enabling its AI-generated-content label based on the actual synthetic-narration/procedural-visual provenance and prior Magnivis review practice; YouTube and Meta surfaces require operator confirmation of their current UI/policy rather than a hardcoded claim.
+
 ## Publication truth
 
 `publication.youtube.speed-of-light` records the existing public Video 004 with its PlatformVariant, ContentAsset, KnowledgePackage, VideoSpec, uploaded video SHA-256, remote ID/URL, publication date, and human approval. Its delivery reference is explicitly a `retrospective-match`: the validated package contains the same artifact but was created after the original manual publication, so it is not falsely described as the upload source.

@@ -16,6 +16,7 @@ import {
 } from '../src/content-assets/registry';
 import type {VideoSpec} from '../src/content/schema';
 import {
+  safeAreaContains,
   safeAreaProfileRegistry,
 } from '../src/design/safe-areas';
 import {
@@ -102,6 +103,32 @@ const section = (heading: string, value: string | undefined) => value
   ? `${heading}\n${value}`
   : undefined;
 
+const createOperatorSettings = (variant: PlatformVariant) => {
+  const guidance = variant.operatorGuidance;
+  if (!guidance) return undefined;
+  return `OPERATOR SETTINGS
+Visibility: ${guidance.visibility}
+Original audio: ${guidance.originalAudio}
+AI-generated-content disclosure: ${guidance.aiGeneratedContentDisclosure.recommendation}
+AI disclosure policy check: ${guidance.aiGeneratedContentDisclosure.currentPolicyConfirmationRequired ? 'required at upload' : 'not required'}
+Commercial/branded-content disclosure: ${guidance.commercialContentDisclosure.recommendation}
+Native captions: ${guidance.nativeCaptions.recommendation}
+Location: ${guidance.location}
+Link: ${guidance.link}
+
+AI DISCLOSURE RATIONALE
+${guidance.aiGeneratedContentDisclosure.rationale}
+
+NATIVE CAPTION RATIONALE
+${guidance.nativeCaptions.rationale}
+
+COMMERCIAL DISCLOSURE RATIONALE
+${guidance.commercialContentDisclosure.rationale}
+
+SETTINGS NOTES
+${guidance.notes.map((note) => `- ${note}`).join('\n')}`;
+};
+
 export const createUploadCopy = (variant: PlatformVariant) => {
   const hashtags = formatHashtags(variant.packaging.hashtags).join(' ');
   const body = [
@@ -119,6 +146,7 @@ export const createUploadCopy = (variant: PlatformVariant) => {
     section('COPY/PASTE BODY', body),
     `COVER GUIDANCE\n${variant.cover.intent}`,
     `CAPTION HANDLING\nDesigned burned-in: ${variant.captions.designedBurnedIn ? 'yes' : 'no'}\nAccessibility/native track: ${variant.captions.behavior}`,
+    createOperatorSettings(variant),
     `PLATFORM NOTES\n${[
       ...variant.editorialAdaptationNotes,
       variant.productionIntent.notes,
@@ -132,7 +160,9 @@ export const createReviewChecklist = (variant: PlatformVariant) => {
     ? '**READY FOR MANUAL UPLOAD after every applicable check below passes.**'
     : state === 'approved-review'
       ? '**NOT READY FOR UPLOAD: editorial approval exists, but production readiness is not recorded.**'
-      : `**DRAFT REVIEW PACKAGE: ${variant.id} remains ${variant.status}. Do not publish it publicly. Use only a private/draft platform upload when required for preview.**`;
+      : variant.previewStatus === 'ready-for-private-preview'
+        ? '**READY FOR PRIVATE PLATFORM PREVIEW. PUBLICATION IS NOT AUTHORIZED.**'
+        : `**DRAFT REVIEW PACKAGE: ${variant.id} remains ${variant.status}. Do not publish it publicly. Use only a private/draft platform upload when required for preview.**`;
   const captionCheck = variant.captions.behavior === 'external-track'
     ? `- [ ] Upload \`captions.${variant.captions.language}.vtt\`; preview every cue with captions on and off.`
     : variant.captions.behavior === 'platform-generated'
@@ -150,6 +180,8 @@ export const createReviewChecklist = (variant: PlatformVariant) => {
 ${readinessNotice}
 
 Variant status: \`${variant.status}\`
+
+Preview status: \`${variant.previewStatus}\`
 
 ## Video
 
@@ -175,6 +207,8 @@ ${captionCheck}
 ## Platform
 
 ${previewCheck}
+- [ ] Keep visibility private/draft; do not schedule or publish.
+- [ ] Follow every operator setting in \`upload-copy.txt\`, including disclosure and native-caption guidance.
 - [ ] Confirm audio is enabled and sounds correct in the platform preview.
 - [ ] Confirm the final account, audience, and visibility setting before any upload or publication.
 - [ ] Obtain explicit human publication approval; package generation is not publication approval.
@@ -233,6 +267,8 @@ const metadataFileForVariant = (variant: PlatformVariant) => ({
   cover: variant.cover,
   captionBehavior: variant.captions.behavior,
   designedBurnedInCaptions: variant.captions.designedBurnedIn,
+  ...(variant.previewStatus ? {previewStatus: variant.previewStatus} : {}),
+  ...(variant.operatorGuidance ? {operatorGuidance: variant.operatorGuidance} : {}),
   platformNotes: [
     ...variant.editorialAdaptationNotes,
     variant.productionIntent.notes,
@@ -272,6 +308,68 @@ const assertMediaMatches = (
   }
 };
 
+const productionChainForVariant = (
+  variant: PlatformVariant,
+  production: DeliveryProduction,
+) => {
+  const sourceMaster = variant.sourceMaster;
+  if (!sourceMaster) return undefined;
+  if (!existsSync(sourceMaster.artifact.path)) {
+    throw new Error(`Missing locked source master: ${sourceMaster.artifact.path}`);
+  }
+  if (sha256(sourceMaster.artifact.path) !== sourceMaster.artifact.sha256) {
+    throw new Error(`Locked source master hash mismatch: ${sourceMaster.artifact.path}`);
+  }
+  const productionReference = production.spec.production;
+  if (!productionReference) {
+    throw new Error(`PlatformVariant ${variant.id} requires production provenance`);
+  }
+  if (
+    productionReference.productionPlanId !== sourceMaster.productionPlan.id
+    || productionReference.productionPlanRevision !== sourceMaster.productionPlan.revision
+    || productionReference.captionPlanId !== sourceMaster.captionPlan.id
+    || productionReference.captionPlanRevision !== sourceMaster.captionPlan.revision
+    || productionReference.captionPlanSha256 !== sourceMaster.captionPlan.sha256
+  ) {
+    throw new Error(`PlatformVariant ${variant.id} detached from its locked production chain`);
+  }
+  if (sourceMaster.relationship === 'exact-master') {
+    const productionSafeArea = safeAreaProfileRegistry.get(productionReference.safeAreaProfileId);
+    const destinationSafeArea = safeAreaProfileRegistry.get(variant.safeAreaProfileId);
+    if (!safeAreaContains(destinationSafeArea, productionSafeArea)) {
+      throw new Error(`Locked master is outside the destination safe area for ${variant.id}`);
+    }
+    if (
+      production.spec.id !== sourceMaster.videoSpecId
+      || resolve(production.sourceVideoPath) !== resolve(sourceMaster.artifact.path)
+      || sha256(production.sourceVideoPath) !== sourceMaster.artifact.sha256
+    ) {
+      throw new Error(`Exact-master variant ${variant.id} does not resolve to its locked artifact`);
+    }
+  } else {
+    if (productionReference.safeAreaProfileId !== variant.safeAreaProfileId) {
+      throw new Error(`Derivative VideoSpec safe area does not match PlatformVariant ${variant.id}`);
+    }
+    if (
+      production.spec.id === sourceMaster.videoSpecId
+      || production.spec.platformVariantId !== variant.id
+    ) {
+      throw new Error(`Safe-area derivative ${variant.id} requires its dedicated VideoSpec`);
+    }
+  }
+
+  return {
+    productionPlan: sourceMaster.productionPlan,
+    captionPlan: sourceMaster.captionPlan,
+    lockedMaster: {
+      videoSpecId: sourceMaster.videoSpecId,
+      path: sourceMaster.artifact.path,
+      sha256: sourceMaster.artifact.sha256,
+      relationship: sourceMaster.relationship,
+    },
+  };
+};
+
 export type GenerateDeliveryOptions = {
   variantId: string;
   outputRoot?: string;
@@ -302,6 +400,7 @@ export const generateDeliveryPackage = ({
 
   const sourceMedia = dependencies.mediaInspector(production.sourceVideoPath);
   assertMediaMatches(sourceMedia, production, variant);
+  const productionChain = productionChainForVariant(variant, production);
   const directory = assertSafeDeliveryDirectory(
     outputRoot,
     production.spec.id,
@@ -347,7 +446,7 @@ export const generateDeliveryPackage = ({
   ];
   const state = deliveryStateForVariant(variant.status);
   const manifest = deliveryManifestSchema.parse({
-    schemaVersion: 1,
+    schemaVersion: 2,
     deliveryId: `delivery.${variant.id}.r${variant.revision}`,
     generatedAt,
     state,
@@ -367,6 +466,7 @@ export const generateDeliveryPackage = ({
         id: production.spec.id,
         compositionId: production.spec.compositionId,
       },
+      ...(productionChain ? {productionChain} : {}),
     },
     destination: {
       platform: variant.platform,
@@ -408,8 +508,11 @@ export const generateDeliveryPackage = ({
       ...(captionArtifactPath ? {artifactPath: captionArtifactPath} : {}),
       humanReviewRequired: variant.captions.humanReviewRequired,
     },
+    ...(variant.operatorGuidance ? {operatorGuidance: variant.operatorGuidance} : {}),
     review: {
       platformPreviewRequired: variant.productionIntent.platformPreviewRequired,
+      previewStatus: variant.previewStatus ?? 'not-ready',
+      publicationAuthorized: false,
       statement: expectedReadinessStatement(variant),
       ...(variant.approval ? {approval: variant.approval} : {}),
     },
@@ -451,6 +554,7 @@ export const validateDeliveryPackage = (
     manifest.destination.safeAreaProfile.id,
   );
   const production = dependencies.productionResolver(variant);
+  const productionChain = productionChainForVariant(variant, production);
 
   if (manifest.deliveryId !== `delivery.${variant.id}.r${variant.revision}`) {
     throw new Error('Delivery ID does not match the registered PlatformVariant revision');
@@ -485,6 +589,11 @@ export const validateDeliveryPackage = (
     id: production.spec.id,
     compositionId: production.spec.compositionId,
   }, 'VideoSpec reference');
+  assertExact(
+    manifest.source.productionChain,
+    productionChain,
+    'Production source chain',
+  );
   assertExact(manifest.destination.platformProfile, {
     id: platformProfile.id,
     revision: platformProfile.revision,
@@ -524,6 +633,11 @@ export const validateDeliveryPackage = (
       : {}),
     humanReviewRequired: variant.captions.humanReviewRequired,
   }, 'Delivery caption settings');
+  assertExact(
+    manifest.operatorGuidance,
+    variant.operatorGuidance,
+    'Delivery operator guidance',
+  );
 
   const state = deliveryStateForVariant(variant.status);
   if (manifest.state !== state || manifest.publishEligible !== (state === 'ready-for-manual-upload')) {
@@ -537,6 +651,12 @@ export const validateDeliveryPackage = (
     !== variant.productionIntent.platformPreviewRequired
   ) {
     throw new Error('Delivery platform-preview gate does not match the PlatformVariant');
+  }
+  if (
+    manifest.review.previewStatus !== (variant.previewStatus ?? 'not-ready')
+    || manifest.review.publicationAuthorized !== false
+  ) {
+    throw new Error('Delivery private-preview/publication gate does not match the PlatformVariant');
   }
   assertExact(manifest.review.approval, variant.approval, 'Delivery approval');
 
@@ -579,16 +699,23 @@ export const validateDeliveryPackage = (
       throw new Error('Delivered captions do not match the registered caption source');
     }
   }
-  assertExact(
-    JSON.parse(readFileSync(resolve(directory, 'metadata.json'), 'utf8')),
-    metadataFileForVariant(variant),
-    'Metadata artifact',
-  );
-  if (readFileSync(resolve(directory, 'upload-copy.txt'), 'utf8') !== createUploadCopy(variant)) {
-    throw new Error('Upload-copy artifact does not match the PlatformVariant');
-  }
-  if (readFileSync(resolve(directory, 'review.md'), 'utf8') !== createReviewChecklist(variant)) {
-    throw new Error('Review artifact does not match the PlatformVariant');
+  // V1 packages remain immutable, hash-verified historical artifacts. Their
+  // human-facing files predate the V2 private-preview and burned-in-caption
+  // fields, so only V2 packages can be reproduced byte-for-byte from the
+  // current templates. Both versions still receive the artifact hash, source,
+  // registry, profile, readiness, and media-integrity checks above and below.
+  if (manifest.schemaVersion === 2) {
+    assertExact(
+      JSON.parse(readFileSync(resolve(directory, 'metadata.json'), 'utf8')),
+      metadataFileForVariant(variant),
+      'Metadata artifact',
+    );
+    if (readFileSync(resolve(directory, 'upload-copy.txt'), 'utf8') !== createUploadCopy(variant)) {
+      throw new Error('Upload-copy artifact does not match the PlatformVariant');
+    }
+    if (readFileSync(resolve(directory, 'review.md'), 'utf8') !== createReviewChecklist(variant)) {
+      throw new Error('Review artifact does not match the PlatformVariant');
+    }
   }
 
   const deliveredMedia = dependencies.mediaInspector(resolve(directory, 'video.mp4'));
