@@ -1,0 +1,18 @@
+$ git status --short --branch
+## recovery/wood-frog-canonical...origin/main [ahead 2]
+ M .gitignore
+?? recovery-audit/phase-1/
+?? scripts/recovery-deliveries.ts
+?? scripts/recovery-delivery-support.ts
+?? tests/recovery-delivery.test.ts
+
+$ git log --oneline origin/main..HEAD
+b6ca084 docs: tidy forensic audit report whitespace
+e1cdeef docs: audit pre-reset magnivis recovery state
+
+$ git rev-parse HEAD origin/main origin/recovery/magnivis-post-reset
+b6ca084170a54fc2638bae7abcd2e1236943cb1d
+ae797996382c337759612265fd8229e8d5f06eef
+9f289d4a05714b3daf0bcc47f9b8e481600eaae5
+
+$ git diff --check

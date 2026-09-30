@@ -16,7 +16,8 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - AI-assisted research output is a proposal, never evidence of its own correctness. Model-proposed sources begin unreviewed, model-proposed claims begin unverified, and model-generated editorial assets remain drafts until a human approves them.
 - Keep AI providers behind the repository interface in `src/ai/`; validate structured output and preserve workflow/model/usage provenance. Do not scatter vendor SDK calls through domain code or make normal validation depend on credentials.
 - Treat `content-intelligence/runs/*/review.md` as an operator handoff, not approval. Workflow envelopes are hashed audit records; regenerate them through `pnpm content:intelligence`, never edit hashes by hand. Follow the live-stage pause documented in `docs/CONTENT-INTELLIGENCE.md`.
-- For Wood Frog, the evidence handoff and explicit owner-approved snapshots live in `content-intelligence/reviews/wood-frog-freeze-v1/`; the older fixture report is historical. Its hash-locked production chain is documented in `docs/PRODUCTION-PLANS.md`. Preserve the uncertain circulation-cessation exclusion. The exact master is owner visually approved and immutable. Four generated variants are ready only for private platform preview; no platform variant or publication is approved.
+- Recovery checkpoint is through Wood Frog at ae79799. Preserve original editorial/claim/visual approvals and circulation-cessation exclusion. Missing historical master and accepted operational replacement are separate identities; use PROJECT-STATE.md and artifacts/recovery-decision.json. No Bridge work/new production or external upload/publication is currently authorized; PROJECT-STATE.md owns the current recovery scope. Restore exact manifest bytes; never silently regenerate or transfer approval.
+- Distinguish content master, platform variant and presentation surface. Desktop/local QA cannot prove mobile safety. Follow PLATFORM-QA.md for covers, captions, versioned profiles and real-device evidence; never invent Meta crop geometry or missing publication metadata.
 - All new Magnivis short-form productions use designed burned-in captions as part of the creative master. Their presentation is speech-first: favor natural spoken phrase boundaries over literal prose typography while preserving approved wording, meaning, provenance, and meaningful punctuation. Platform-native or external caption tracks remain optional accessibility artifacts and never substitute for the designed layer. Follow `docs/CAPTIONS.md`; do not retroactively regenerate approved legacy media without authorization.
 - Keep video content/data separate from reusable rendering primitives. Avoid one-off monoliths and premature generic frameworks.
 - Verify material claims against appropriate authoritative sources. Preserve claim-level evidence, status, caveats, URLs, and retrieval dates. Never fabricate citations or imply uncertain evidence is settled.
@@ -50,3 +51,10 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - Significant decisions: `docs/DECISIONS.md`
 - Asset provenance: `docs/ASSET-LICENSES.md`
 - Published-video performance snapshots: `docs/PERFORMANCE.md`
+
+- Artifact identity, backup and clean-machine restore: `docs/ARTIFACT-STORAGE.md`
+- Multi-surface/device QA and cover capability: `docs/PLATFORM-QA.md`
+- Document authority and current recovery evidence: `recovery-audit/phase-2/agent-context-verification.md`
+
+- Operational recovery status/closure and historical gaps: `docs/RECOVERY.md`
+- Accepted historical closure candidate/procedure: `docs/RECOVERY-CLOSE-CANDIDATE.md`

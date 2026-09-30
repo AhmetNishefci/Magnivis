@@ -106,3 +106,7 @@ YouTube, Instagram, and Facebook package the exact locked master. TikTok package
 - OAuth, accounts, uploads, scheduling, or publication;
 - automatic PublicationRecord creation, remote-ID capture, or publication attempts;
 - databases, queues, workers, dashboards, or analytics.
+
+## Restored recovery handoffs
+
+Eight Phase 1 draft package file sets are restored byte-for-byte relative to their recovery identities under `deliveries/recovered/`, with Git provenance in artifacts/deliveries.json and per-file manifests. These are DERIVED_RECOVERY_ARTIFACT, not exact historical packages. `pnpm recovery:validate` checks restored package media/copy/checklists/metadata/captions/source gates through the existing validator using persisted recovery variants, without requiring staging. All remain draft-review/publication false. New master replacement acceptance is recorded separately; it does not rewrite the package's historical approval relationships or grant platform readiness.

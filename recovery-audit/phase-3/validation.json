@@ -1,0 +1,108 @@
+{
+  "recordedAt": "2026-09-30T20:54:37.783121+00:00",
+  "node": "v22.23.3",
+  "pnpm": "10.17.1",
+  "testCount": 253,
+  "testFiles": 17,
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-00.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-01.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-02.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-03.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:brain"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-04.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "production:validate",
+        "wood-frog",
+        "--recovered"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-05.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "captions:validate",
+        "wood-frog"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-06.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "platform:qa",
+        "recovery-audit/phase-3/platform-regression-input.json"
+      ],
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-07.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/phase-3/validation-08.txt"
+    }
+  ],
+  "secretScanPassed": true,
+  "platformRegression": "synthetic regions; INCOMPLETE is expected because exact caption/native exclusion geometry is unknown, not a device pass",
+  "passed": true
+}

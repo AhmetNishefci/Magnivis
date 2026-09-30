@@ -69,7 +69,7 @@ A knowledge package can support multiple assets, but each asset must have a dist
 
 ## Storage progression
 
-Start with version-controlled TypeScript data validated by Zod. It is reviewable, works offline, and matches the existing repository. Generated media remains outside Git. Add a relational database only when concurrent workers, high-volume analytics, remote publishing state, or query needs make files materially unsafe or cumbersome.
+Start with version-controlled TypeScript data validated by Zod. It is reviewable, works offline, and matches the existing repository. Important approved/recovery media is manifest-bound and tracked in Git at current scale; scratch/generated workspaces remain ignored under ARTIFACT-STORAGE.md. Add a relational database only when concurrent workers, high-volume analytics, remote publishing state, or query needs make files materially unsafe or cumbersome.
 
 ## Automation progression
 
@@ -84,3 +84,7 @@ One LLM-shaped interface exists because Content Intelligence V1 is an actual int
 ## Completed migration slices
 
 Knowledge Package V1, Content Asset V1, open-ended taxonomy, PlatformVariant V1, Platform Delivery Package V1, file-backed Content Intelligence runs, claim review/promotion, ProductionPlan V1, and CaptionPlan V1 are implemented. Speed of Light proves one package can back multiple editorial assets and platform adaptations; Ocean Depth proves cross-domain claim modeling; Wood Frog proves a new topic can cross evidence review and explicit owner approval into a hash-locked, captioned production master. Its exact master has automated technical/caption QA and owner visual approval, while private platform and publication gates remain separate. Videos 001, 003, and 005 intentionally remain on legacy facts. Publishing adapters and automated approval remain intentionally unimplemented.
+
+## Recovery durability and presentation boundaries
+
+Artifact Storage V1 is now implemented in src/artifacts with local retrieval, immutable identity/provenance and status/verify/restore operators. Phase 3 uses normal Git/GitHub for important exact artifacts at current scale; no cloud adapter/infrastructure is deployed. PLATFORM-QA.md owns master/variant/presentation distinctions and typed surface/cover/device capabilities. Original scientific production inputs and the file-backed human approval/publication boundaries remain unchanged.

@@ -38,3 +38,9 @@ Future manual entry/import should record exact capture time, source, platform de
 ## Security boundary
 
 Never add passwords, cookies, access/refresh tokens, API keys, payment data, or personal identity material to these records. The strict account schema rejects undeclared fields, but code review and secret hygiene remain mandatory.
+
+## Recovery and community guidance
+
+Wood Frog latest historical upload occurrence is confirmed by Ahmet, with platform/URL/ID/time/visibility/hash/settings/analytics unknown. artifacts/owner-evidence.json supplements the earlier pending checkpoint; it does not fabricate a PublicationRecord. Future reconciliation must request actual account/post/settings/approval evidence. No recovery command uploads or publishes.
+
+Organic community participation may include natural replies, relevant discussion, follows/likes and useful comments. Replies should be human, concise, curious and accurate, with speculation separated from evidence. Avoid generic AI essays, spam, mass-following and deceptive engagement. Social activity does not replace content quality; this guideline authorizes no automated external action. Future analytics collection may use authorized APIs/integrations with legitimate permissions and raw native definitions; no scraping/credential hacks or analytics fabrication.

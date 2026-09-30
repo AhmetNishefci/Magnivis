@@ -1,0 +1,58 @@
+[
+  {
+    "command": [
+      "/Users/ahmetnishefci/.nvm/versions/node/v22.23.3/bin/node",
+      "--import",
+      "tsx",
+      "scripts/validate-captions.ts",
+      "wood-frog"
+    ],
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "stdout": "{\n  \"captionPlan\": \"caption-plan.wood-frog.v1\",\n  \"videoSpec\": \"wood-frog\",\n  \"revision\": 2,\n  \"sha256\": \"7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51\",\n  \"designSystem\": \"caption-design.magnivis-short-form.v1\",\n  \"cueCount\": 18,\n  \"emphasisCount\": 18,\n  \"placements\": [\n    \"middle-lower\",\n    \"lower-safe\"\n  ],\n  \"animations\": [\n    \"fade-slide\",\n    \"focus-highlight\",\n    \"soft-scale\"\n  ],\n  \"validatedPlatformProfiles\": [\n    \"safe-area.youtube-shorts.v1\",\n    \"safe-area.tiktok-feed.v2\",\n    \"safe-area.instagram-reels.v1\",\n    \"safe-area.facebook-reels.v1\"\n  ],\n  \"webVtt\": {\n    \"path\": \"captions/wood-frog.en.vtt\",\n    \"sha256\": \"6307d067a90bc6819fd903c18eb9c84317a2c09e9d93252bd63b210ac74feab1\"\n  },\n  \"passed\": true\n}\n",
+    "stderr": "",
+    "interpretation": "passed"
+  },
+  {
+    "command": [
+      "/Users/ahmetnishefci/.nvm/versions/node/v22.23.3/bin/node",
+      "--import",
+      "tsx",
+      "scripts/validate-captions.ts",
+      "wood-frog-tiktok"
+    ],
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "stdout": "{\n  \"captionPlan\": \"caption-plan.wood-frog.v1\",\n  \"videoSpec\": \"wood-frog-tiktok\",\n  \"revision\": 2,\n  \"sha256\": \"7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51\",\n  \"designSystem\": \"caption-design.magnivis-short-form.v1\",\n  \"cueCount\": 18,\n  \"emphasisCount\": 18,\n  \"placements\": [\n    \"middle-lower\",\n    \"lower-safe\"\n  ],\n  \"animations\": [\n    \"fade-slide\",\n    \"focus-highlight\",\n    \"soft-scale\"\n  ],\n  \"validatedPlatformProfiles\": [\n    \"safe-area.youtube-shorts.v1\",\n    \"safe-area.tiktok-feed.v2\",\n    \"safe-area.instagram-reels.v1\",\n    \"safe-area.facebook-reels.v1\"\n  ],\n  \"webVtt\": {\n    \"path\": \"captions/wood-frog.en.vtt\",\n    \"sha256\": \"6307d067a90bc6819fd903c18eb9c84317a2c09e9d93252bd63b210ac74feab1\"\n  },\n  \"passed\": true\n}\n",
+    "stderr": "",
+    "interpretation": "passed"
+  },
+  {
+    "command": [
+      "/Users/ahmetnishefci/.nvm/versions/node/v22.23.3/bin/node",
+      "--import",
+      "tsx",
+      "scripts/validate-production.ts",
+      "wood-frog"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "stdout": "",
+    "stderr": "/Users/ahmetnishefci/Developer/Magnivis/scripts/validate-production.ts:68\n    throw new Error('Owner-approved Wood Frog render artifact is missing');\n          ^\n\nError: Owner-approved Wood Frog render artifact is missing\n    at <anonymous> (/Users/ahmetnishefci/Developer/Magnivis/scripts/validate-production.ts:68:11)\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.23.3\n",
+    "interpretation": "Historical approved-byte gate correctly unsatisfied; no bypass."
+  },
+  {
+    "command": [
+      "/Users/ahmetnishefci/.nvm/versions/node/v22.23.3/bin/node",
+      "--import",
+      "tsx",
+      "recovery-work/programs/production-wood-frog.ts",
+      "wood-frog"
+    ],
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "stdout": "",
+    "stderr": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/programs/production-wood-frog.ts:71\n    throw new Error('Wood Frog render does not match its exact owner visual approval');\n          ^\n\nError: Wood Frog render does not match its exact owner visual approval\n    at <anonymous> (/Users/ahmetnishefci/Developer/Magnivis/recovery-work/programs/production-wood-frog.ts:71:11)\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.23.3\n",
+    "interpretation": "Historical approved-byte gate correctly unsatisfied; no bypass."
+  }
+]

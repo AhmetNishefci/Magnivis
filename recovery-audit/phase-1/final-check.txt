@@ -1,0 +1,28 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+
+ Test Files  14 passed (14)
+      Tests  212 passed (212)
+   Start at  21:35:04
+   Duration  392ms (transform 51%, import 42%, tests 6%, worker 1%)

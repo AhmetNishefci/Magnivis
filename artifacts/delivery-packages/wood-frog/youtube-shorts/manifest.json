@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.youtube-shorts.recovery-phase-1.r1",
+  "generatedAt": "2026-09-30T19:15:34.576Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.variant.youtube-shorts.recovery-phase-1",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works",
+      "revision": 2
+    },
+    "knowledgePackage": {
+      "id": "wood-frog-freeze-tolerance",
+      "revision": 2
+    },
+    "videoSpec": {
+      "id": "wood-frog",
+      "compositionId": "Magnivis-Wood-Frog"
+    }
+  },
+  "destination": {
+    "platform": "youtube",
+    "surface": "youtube-shorts",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.youtube-shorts.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.youtube-shorts.v1",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 40.043,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "title": "How a Wood Frog Survives Freezing",
+    "description": "A wood frog can survive a freeze that stops its heartbeat—then thaw and recover. Ice forms mainly outside its cells, while water movement, glucose, and urea help protect those cells through freezing and thawing.\n\nMagnivis — understand something fascinating every day.",
+    "hashtags": [
+      "#woodfrog",
+      "#biology",
+      "#nature",
+      "#science"
+    ],
+    "cta": "What remarkable survival adaptation should Magnivis explain next?",
+    "claimIds": [
+      "wood-frog-freeze-tolerance.claim.freeze-survival",
+      "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+      "wood-frog-freeze-tolerance.claim.ice-redistribution",
+      "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+      "wood-frog-freeze-tolerance.claim.urea-and-glucose",
+      "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Select the opening frog-and-cardiac-trace frame around 3.1 seconds, with ITS HEARTBEAT CAN STOP readable and the frog immediately recognizable."
+    }
+  },
+  "captions": {
+    "behavior": "external-track",
+    "designedBurnedIn": true,
+    "language": "en",
+    "artifactPath": "captions.en.vtt",
+    "humanReviewRequired": true
+  },
+  "operatorGuidance": {
+    "visibility": "private-preview",
+    "originalAudio": "preserve",
+    "aiGeneratedContentDisclosure": {
+      "recommendation": "operator-confirmation-required",
+      "currentPolicyConfirmationRequired": true,
+      "rationale": "The production uses local synthetic narration and original procedural/vector visuals. Confirm the current YouTube altered/synthetic-content wording in the upload UI; this repository does not claim mutable policy is timeless."
+    },
+    "commercialContentDisclosure": {
+      "recommendation": "disable",
+      "rationale": "This Magnivis production contains no paid promotion, product placement, or branded-content relationship."
+    },
+    "nativeCaptions": {
+      "recommendation": "evaluate-during-private-preview",
+      "rationale": "The reviewed WebVTT can provide toggleable accessibility, but captions-on playback must be checked for duplication with the permanent designed captions."
+    },
+    "location": "none",
+    "link": "none",
+    "notes": [
+      "Do not schedule or publish during this review pass.",
+      "Keep the original rendered audio; do not add platform music.",
+      "The designed burned-in captions must remain visible."
+    ]
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "not-ready",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 18493823,
+      "sha256": "400edeccbfceb7a0269ec0926a88737b2421adb811d6be9b8aa64c77b5e242e1"
+    },
+    {
+      "role": "captions",
+      "path": "captions.en.vtt",
+      "mediaType": "text/vtt",
+      "bytes": 2446,
+      "sha256": "6307d067a90bc6819fd903c18eb9c84317a2c09e9d93252bd63b210ac74feab1"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 2611,
+      "sha256": "90562879f6eee6258b01e470869ce80ba33d3b4a97fe824ebcb4719e43a1c75d"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 2631,
+      "sha256": "166d9bd47e8c3a8dc396c30424557033ce9225343f653844625ca5a6ef4f49c9"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 2002,
+      "sha256": "d84129a88d076c6099021375539d44a3e9be7907706bda2387a546b321170826"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import {stableKnowledgeIdSchema} from '../knowledge/schema';
 export const safeAreaProfileIds = {
   verticalShortMaster: 'safe-area.vertical-short-master.v1',
   youtubeShorts: 'safe-area.youtube-shorts.v1',
+  youtubeShortsV2: 'safe-area.youtube-shorts.v2',
   tiktokFeedV1: 'safe-area.tiktok-feed.v1',
   tiktokFeed: 'safe-area.tiktok-feed.v2',
   instagramReels: 'safe-area.instagram-reels.v1',
@@ -45,7 +46,22 @@ export const safeAreaProfileSchema = z.object({
 
 export type SafeAreaProfile = z.infer<typeof safeAreaProfileSchema>;
 
+// Future policy defaults do not rewrite immutable historical video bindings.
+export const newProductionSafeAreaProfileIds = {
+  youtubeShorts: safeAreaProfileIds.youtubeShortsV2,
+  tiktokFeed: safeAreaProfileIds.tiktokFeed,
+} as const;
+
 const profiles = [
+  {
+    id: safeAreaProfileIds.youtubeShortsV2,
+    revision: 2,
+    kind: 'platform',
+    canvas: {width: 1080, height: 1920},
+    insets: {top: 240, right: 190, bottom: 310, left: 84},
+    reviewedAt: '2026-09-30',
+    notes: 'Recovery policy recorded on this date, not an original device-review date. Owner reports V2 top around 240 after mobile upper-left navigation collision; other insets provisionally inherit V1. Original V2 geometry/exclusion screenshot is missing. Renewed device QA required before trust. See PLATFORM-QA.md; historical bindings remain V1.',
+  },
   {
     id: safeAreaProfileIds.verticalShortMaster,
     revision: 1,

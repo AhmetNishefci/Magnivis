@@ -19,7 +19,7 @@ KnowledgePackage → ContentAsset → optional ProductionPlan → optional Platf
 ```
 
 - `src/data/`: verified scientific records and source metadata.
-- `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Videos 002 and 004.
+- `src/knowledge/`: reusable verified knowledge packages and their registry; currently implemented for Videos 002, 004 and approved Wood Frog.
 - `src/content-assets/`: platform-neutral editorial assets, script traceability, narrative intent, and visual plans.
 - `src/production/`: the approved VisualPlan-to-implementation bridge, exact editorial source hashes, frame allocation, and production integrity checks.
 - `src/platform-variants/`: destination packaging, dated constraint profiles, safe-area selection, and production/readiness intent.
@@ -151,3 +151,7 @@ The render router rejects unknown video IDs. Production renders use an 8 Mbps H.
 - WebVTT or platform-native captions may also support accessibility. They remain platform-controlled, can visually duplicate burned-in captions, and must be checked during private platform review. They never replace the designed layer.
 - Known approved narration text and timing drive CaptionPlan and WebVTT. Do not add speech recognition when those inputs exist.
 - Existing approved or published videos are not re-rendered solely to adopt the new rule. See `docs/CAPTIONS.md` for the canonical design and AI boundary.
+
+## Recovery QA routing
+
+`pnpm qa <video-id> --recovered` selects the Git-manifest identity, verifies its hash, and generates new RECOVERY-GENERATED QA under recovery-work/phase-2-qa/<video-id>. Existing recovery QA directories are preserved rather than overwritten. This inspects accepted/candidate recovery bytes without rendering a video or treating QA as approval. Historical default render/QA routing remains unchanged.

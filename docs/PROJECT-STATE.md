@@ -1,5 +1,27 @@
 # Project state
 
+Current recovery: CLOSED operationally upon owner-authorized main reconciliation; historical gaps remain accepted and documented in RECOVERY.md. Checkpoint: ae797996382c337759612265fd8229e8d5f06eef, through Wood Frog. Source and historical approvals survive; reset/lost binary state is not erased. Preserved evidence branch: recovery/magnivis-post-reset. Millennium Bridge work is excluded; no new production is active or authorized.
+
+Wood Frog latest pre-reset upload occurrence is owner-confirmed. Platform, URL/ID, timestamp, visibility, uploaded hash, settings and analytics remain unknown. Existing registry has one generalized Speed of Light publication; earlier YouTube URLs remain legacy records. No new PublicationRecord is invented.
+
+Historical Wood Frog approved SHA-256: `4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2` — missing bytes, immutable historical approval.
+
+Recovered operational replacement SHA-256: `400edeccbfceb7a0269ec0926a88737b2421adb811d6be9b8aa64c77b5e242e1` — separately accepted by Ahmet in Phase 2, RECOVERY_EQUIVALENT_REGENERATION. Exact historical audiovisual equivalence cannot be proven. New decision: artifacts/recovery-decision.json. Operational path: output/recovered/wood-frog-narrated.mp4. Historical approval is not transferred.
+
+Speed of Light SHA-256 `f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24` reproduced exactly (RECOVERY_EXACT_REPRODUCTION). Eight encodes and eight draft delivery file sets are recoverable from Git, alongside final QA reports/contact sheets and exact audio. Registry: 201 identities — 110 durable-required files, 82 regenerable frames, eight temporary markers and one missing historical expectation. Original review gates remain: replacement master acceptance does not approve variants, covers, private uploads or publication.
+
+Artifact Storage V1 now uses Git-backed durable bytes at current scale, retaining provider-neutral tooling. Important masters/derivatives, exact recovery delivery file sets, final QA reports/contact sheets and existing audio are manifest-bound in Git; scratch workspace/caches/representative frames remain ignored. Phase 3 clean-clone proof and brain audit are in recovery-audit/phase-3; policy/procedure: ARTIFACT-STORAGE.md. No external cloud storage is introduced.
+
+Multi-surface QA capabilities remain in PLATFORM-QA.md. YouTube V2 owner-policy recovery is active/default for future work but renewed measured review is pending; original profile bindings remain. Meta playback/grid and viewer/Page-feed reconciliation remains unmeasured/pending. No historical publication metadata is fabricated.
+
+Ahmet explicitly approves final recovery reconciliation and accepts historical gaps. Candidate validation and a fresh GitHub clone passed. Final work is the controlled main reconciliation and remote-main proof receipt only. No next topic/video, Bridge, long-form implementation or platform action is authorized. After closure the project is READY FOR NEW CONTENT DISCOVERY, awaiting separate authorization for NEW CONTENT CYCLE #1 AFTER RECOVERY. STRATEGY.md records one excellent unique Short/day as the resumption direction; target two/day and provisional Kosovo test windows never override quality/gates. RECOVERY.md records closure/proof/history.
+
+The checkpoint log below preserves what was known then. Its NOW/NEXT tasks are historical context, not current authorization. Recovery owner evidence supplements it; it does not fill lost platform metadata.
+
+---
+
+# Historical checkpoint state — 2026-09-29
+
 Last updated: 2026-09-29
 
 ## DONE
@@ -47,7 +69,7 @@ Last updated: 2026-09-29
 - Nonsecret operations V1 records the confirmed Instagram identity `@magnivis.media` and its bio without storing credentials. It also adds generalized PlatformAccount, PublicationRecord, platform-settings/disclosure, and raw MetricSnapshot schemas.
 - Video 004 has the first generalized PublicationRecord, linked to the exact YouTube variant/asset/package revisions and uploaded video hash. Settings without durable evidence remain `unknown`. No production MetricSnapshot has been fabricated.
 
-## NOW — operational/editorial work
+## Historical NOW — suspended during recovery
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
@@ -58,7 +80,7 @@ Last updated: 2026-09-29
 - Perform Wood Frog private platform previews from the generated packages: YouTube first, TikTok second, Instagram third, and Facebook fourth. Record cover, UI/safe-area, burned-in/native-caption, audio, disclosure, and account/visibility results separately. Do not publish.
 - Configure `OPENAI_API_KEY` only when authorizing the first paid live topic-evaluation/research experiment. Live stages must stop for source and claim review before hook or asset drafting.
 
-## NEXT — engineering
+## Historical NEXT — requires renewed authorization
 
 - Record Video 001's seven-day performance snapshot without overreacting to a single upload.
 - Record Video 004's first 24-hour performance snapshot after its reports have processed.

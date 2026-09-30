@@ -1,3 +1,5 @@
+import {parseManifests, type ArtifactManifest} from '../src/artifacts/schema';
+import {validateRecoveryDecision} from '../src/artifacts/recovery';
 import {createHash} from 'node:crypto';
 import {existsSync, readFileSync} from 'node:fs';
 import {captionPlanToDerivedCaptions, captionsToWebVtt} from '../src/captions/derive';
@@ -62,7 +64,20 @@ if (readFileSync(captionPath, 'utf8') !== expectedCaptions) {
   throw new Error('Wood Frog caption artifact is stale or does not preserve narration timing/text');
 }
 
-if (productionPlan.status === 'owner-visual-approved') {
+const recovered = process.argv.includes('--recovered');
+let operationalArtifact: ArtifactManifest | undefined;
+if (recovered) {
+  const manifests=parseManifests(JSON.parse(readFileSync('artifacts/manifests.json','utf8')));
+  const {replacement,historical}=validateRecoveryDecision(JSON.parse(readFileSync('artifacts/recovery-decision.json','utf8')),manifests);
+  if (historical.identity.sha256 !== productionPlan.visualApproval?.artifact.sha256) throw new Error('Recovery decision conflicts with historical ProductionPlan approval');
+  operationalArtifact = replacement;
+  if (!existsSync(replacement.localPath) || sha256(replacement.localPath)!==replacement.identity.sha256) throw new Error('Accepted operational replacement missing or corrupt');
+  if (video.id===woodFrogTiktok.id) {
+    const derivative=manifests.find(m=>m.artifactId==='wood-frog-tiktok.recovered-master')!;
+    operationalArtifact = derivative;
+    if (!existsSync(derivative.localPath)||sha256(derivative.localPath)!==derivative.identity.sha256) throw new Error('Recovered TikTok derivative missing or corrupt');
+  }
+} else if (productionPlan.status === 'owner-visual-approved') {
   const approval = productionPlan.visualApproval;
   if (!approval || !existsSync(approval.artifact.path)) {
     throw new Error('Owner-approved Wood Frog render artifact is missing');
@@ -76,12 +91,15 @@ console.log(JSON.stringify({
   videoSpec: video.id,
   compositionId: video.compositionId,
   productionPlan: video.production?.productionPlanId,
-  status: video.production?.outputReviewState,
-  visualApproval: productionPlan.visualApproval,
+  status: recovered ? video.id === woodFrog.id ? 'recovered-operational-replacement' : 'recovery-derivative-review' : video.production?.outputReviewState,
+  historicalVisualApproval: productionPlan.visualApproval,
+  operationalArtifact: operationalArtifact ? {artifactId:operationalArtifact.artifactId,path:operationalArtifact.localPath,sha256:operationalArtifact.identity.sha256,provenance:operationalArtifact.provenance,approvalScope:operationalArtifact.approvalScope} : null,
   soundscapeSha256: provenance.soundscape.sha256,
   narrationCueCount: video.audio.narrationCues.length,
   captionPlan: woodFrogCaptionPlan.id,
   burnedInCaptionCueCount: woodFrogCaptionPlan.cues.length,
   captions: captionPath,
+  recoveryMode: recovered,
+  historicalApprovalTransferred: false,
   passed: true,
 }, null, 2));

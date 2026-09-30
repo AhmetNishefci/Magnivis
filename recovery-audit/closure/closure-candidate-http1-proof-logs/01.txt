@@ -1,0 +1,32 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-candidate-http1-proof
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-candidate-http1-proof
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-candidate-http1-proof
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-candidate-http1-proof
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-candidate-http1-proof
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-candidate-http1-proof
+
+
+ Test Files  17 passed (17)
+      Tests  253 passed (253)
+   Start at  23:29:30
+   Duration  661ms (transform 50%, import 39%, tests 10%, worker 1%)
+
+  Transform  transforming modules took 2.31s · 50% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns

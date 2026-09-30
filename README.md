@@ -6,15 +6,31 @@ Magnivis is a faceless English-language knowledge-media brand that turns fascina
 
 Magnivis is open-ended: it discovers compelling knowledge opportunities first and classifies them second. High-level pillars are portfolio groupings, not a whitelist of permissible subjects. See `docs/STRATEGY.md`.
 
-Content Intelligence V1 provides a provider-neutral, schema-validated path from a manual TopicCandidate through evaluation and an unverified research workspace to claim-safe hook and ContentAsset drafts. An optional OpenAI Responses adapter is implemented, while deterministic fixtures keep normal tests and review trials offline. The first new-topic trial covers wood-frog freeze tolerance and remains explicitly awaiting human verification. See `docs/CONTENT-INTELLIGENCE.md`.
+Content Intelligence V1 provides a provider-neutral, schema-validated path from a manual TopicCandidate through evaluation and an unverified research workspace to claim-safe hook and ContentAsset drafts. An optional OpenAI Responses adapter is implemented, while deterministic fixtures keep normal tests and review trials offline. The initial Wood Frog fixture is historical; approved package/asset revision 2, owner-reviewed production/captions and separately accepted recovery master are preserved. See `docs/CONTENT-INTELLIGENCE.md`.
 
 ## Requirements
 
-- Node.js 20 LTS (`.nvmrc`)
-- pnpm 10
+- Node.js >=20.19 and <23; tested recovery runtime 22.23.3 (`.nvmrc` selects supported Node 20)
+- pnpm 10.17.1 (pinned in package.json)
 - macOS or Linux for local rendering
 
 No API keys, paid services, or system FFmpeg installation are required for V1. Pinned FFmpeg/ffprobe binaries are installed with the project.
+
+## Recover durable operational files first
+
+```bash
+pnpm install --frozen-lockfile
+pnpm check
+pnpm recovery:brain
+pnpm artifacts:durable
+pnpm artifacts:restore
+pnpm artifacts:verify
+pnpm recovery:validate
+pnpm production:validate wood-frog --recovered
+pnpm captions:validate wood-frog
+```
+
+Git contains 110 manifest-bound durable files. Restore copies exact bytes to ignored operational paths; it does not render or grant approval. The missing original Wood Frog master remains a historical expectation, separate from the accepted replacement. Read `docs/RECOVERY.md`, then `docs/PROJECT-STATE.md` and `AGENTS.md`. Later render examples are authoring references, not permission to overwrite approved/recovered artifacts or start a video.
 
 ## Start
 

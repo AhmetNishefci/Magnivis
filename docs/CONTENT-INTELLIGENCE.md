@@ -171,7 +171,6 @@ The Wood Frog claim/editorial gate has been completed. Production must now:
 - automatic human verification or approval;
 - retries/caching for paid live calls;
 - exact VideoSpec or Remotion generation from a visual plan;
-- production rendering for the wood-frog draft;
 - publishing or analytics APIs.
 
-The next bottleneck is translating the approved VisualPlan into a bounded, rights-traceable production plan and VideoSpec without weakening the scientific guardrails. Generic VisualPlan-to-Remotion automation remains premature.
+Wood Frog has since completed bounded ProductionPlan/VideoSpec/caption/render implementation through the checkpoint. Current recovery identity and remaining platform gates are in PROJECT-STATE.md. Generic VisualPlan-to-Remotion automation remains premature.

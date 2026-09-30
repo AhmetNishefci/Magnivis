@@ -1,0 +1,16 @@
+Pre-commit forensic safety check
+
+$ git status --short --branch
+## recovery/magnivis-post-reset...origin/recovery/magnivis-post-reset
+?? recovery-audit/
+
+$ git diff --stat
+
+$ git diff --cached --stat
+
+$ git rev-parse HEAD origin/main origin/recovery/magnivis-post-reset
+b74cfc671d9666d593867cf50efd161290a19f62
+ae797996382c337759612265fd8229e8d5f06eef
+b74cfc671d9666d593867cf50efd161290a19f62
+
+$ git diff --check

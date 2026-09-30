@@ -1,0 +1,9 @@
+# Thematic universe verification
+
+Canonical owner: STRATEGY.md; CONTENT-BIBLE.md owns editorial treatment. Existing seven analytics pillars survive: human-life, society-culture, science-reality, earth-nature, history-stories, technology-built-world, interdisciplinary. Open normalized domain/topic slugs remain unchanged. No whitelist or schema authorization is added.
+
+Discover first. Classify second. Magnivis is not science-only. Phase 2 instruction clarifies illustrative domains: science; biology/life; human body/medicine; mind/psychology; nature; Earth/geography; technology; engineering/systems; history; wars/conflict; philosophy/ideas; dilemmas/paradoxes; books/important ideas; films/documentaries/culture; real stories; money/economics/business; society/human systems; everyday mysteries; scale/comparison; mysteries with evidence; interdisciplinary stories; future domains. Exact fields/subtopics are enumerated in STRATEGY.md's recovery scope verification. This clarification is owner instruction, not an invented list of historical videos.
+
+Existing tests prove medicine/anatomy, biology, philosophy and movie-plus-physics domains can classify without a closed enum. The brand seeks understanding, strong curiosity/hook, credible explanation/payoff, visual clarity, relevance/novelty, short/long potential and platform fit. Performance helps learning without collapsing diversity to biology/science/any single winner. No immediate quota or rigid domain distribution is imposed.
+
+Guardrails survive: no generic motivation/shallow self-help/advice spam, unsupported health claims, fake psychology, rage bait/conspiracy certainty, trivia/listicle spam or copied competitor content. War is factual history, medicine is education, ideas/opinion are distinguished from empirical evidence, mysteries preserve uncertainty, books/films explain ideas with rights-safe assets. Future unforeseen legitimate subjects remain allowed.

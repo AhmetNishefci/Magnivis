@@ -1,0 +1,175 @@
+{
+  "recordedAt": "2026-09-30T21:29:22.709444+00:00",
+  "transport": "GitHub remote git clone",
+  "branch": "recovery/wood-frog-canonical",
+  "testedCommit": "a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec",
+  "noPreexistingIgnoredProjectState": true,
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/00.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/01.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:brain"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/02.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:status"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/03.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/04.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/05.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:restore"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/06.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/07.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/08.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "production:validate",
+        "wood-frog",
+        "--recovered"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/09.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "production:validate",
+        "wood-frog-tiktok",
+        "--recovered"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/10.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "captions:validate",
+        "wood-frog"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/11.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "captions:validate",
+        "wood-frog-tiktok"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/12.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "platform:qa",
+        "recovery-audit/phase-3/platform-regression-input.json"
+      ],
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/13.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/14.txt"
+    }
+  ],
+  "trackedTreeClean": true,
+  "runtime": {
+    "node": "v22.23.3",
+    "pnpm": "10.17.1"
+  },
+  "passed": true,
+  "deviceQa": "No real-device pass inferred; known geometry gaps cause expected INCOMPLETE platform regression"
+}
