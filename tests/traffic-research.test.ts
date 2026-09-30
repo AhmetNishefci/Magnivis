@@ -2,11 +2,14 @@ import {readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {describe, expect, it} from 'vitest';
 import {trafficReviewDirectory, validateTrafficResearch} from '../scripts/validate-traffic-research';
-import {phantomTrafficKnowledgePackage as knowledgePackage} from '../src/knowledge/packages/phantom-traffic';
-import {phantomTrafficContentAsset as contentAsset} from '../src/content-assets/assets/phantom-traffic';
+import packageSnapshot from '../content-intelligence/reviews/phantom-traffic-v1/knowledge-package.review.json';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import assetSnapshot from '../content-intelligence/reviews/phantom-traffic-v1/content-asset.review.json';
+import {contentAssetSchema} from '../src/content-assets/schema';
 import {validateClaimReviewBundle, type ClaimReviewBundle} from '../src/content-intelligence/claim-review';
-import {contentAssetRegistry} from '../src/content-assets/registry';
-import {knowledgePackageRegistry} from '../src/knowledge/registry';
+
+const knowledgePackage = knowledgePackageSchema.parse(packageSnapshot);
+const contentAsset = contentAssetSchema.parse(assetSnapshot);
 
 const readReview = () => JSON.parse(readFileSync(resolve(trafficReviewDirectory, 'claim-review.json'), 'utf8')) as ClaimReviewBundle;
 
@@ -14,8 +17,6 @@ describe('Traffic-waves research/editorial boundary', () => {
   it('validates the complete evidence-ledger and deterministic owner handoff without granting approval', () => {
     expect(validateTrafficResearch()).toMatchObject({result: 'passed', claims: 30, selectedClaims: 6,
       excludedClaims: 11, packageState: 'review', assetState: 'editorial-review', reviewState: 'ready-for-owner-decision'});
-    expect(knowledgePackageRegistry.get('phantom-traffic')).toEqual(knowledgePackage);
-    expect(contentAssetRegistry.get(contentAsset.id)).toEqual(contentAsset);
     expect(knowledgePackage.claims.some((c) => c.verificationStatus === 'verified' || c.review)).toBe(false);
   });
 

@@ -61,9 +61,21 @@ export const sourceRecordSchema = z.object({
 
 const reviewMetadataSchema = z.object({
   reviewedBy: z.string().min(1),
-  reviewedAt: z.iso.date(),
+  reviewedAt: z.iso.date().optional(),
+  decisionEnteredAt: z.iso.datetime().optional(),
+  reviewTimeBasis: z.literal('decision-entry').optional(),
   notes: z.string().min(1).optional(),
-}).strict();
+}).strict().superRefine((review, context) => {
+  if (!review.reviewedAt && !review.decisionEnteredAt) {
+    context.addIssue({code: 'custom', message: 'Human review needs a supplied review date or explicit decision-entry time'});
+  }
+  if (review.decisionEnteredAt && (review.reviewTimeBasis !== 'decision-entry' || review.reviewedAt)) {
+    context.addIssue({code: 'custom', message: 'Decision-entry time must be labeled and cannot impersonate a supplied review date'});
+  }
+  if (review.reviewTimeBasis && !review.decisionEnteredAt) {
+    context.addIssue({code: 'custom', message: 'Decision-entry basis requires its entry timestamp'});
+  }
+});
 
 const evidenceReferenceSchema = z.object({
   sourceId: stableKnowledgeIdSchema,

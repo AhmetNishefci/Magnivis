@@ -1,0 +1,36 @@
+{
+  "allOtherNarrationUnchanged": true,
+  "alternatives": [
+    {
+      "assessment": "Most explicit condition, but uses an unexplained technical abstraction and delays the payoff.",
+      "text": "In dense traffic, small speed changes can grow as drivers adjust to the cars ahead—if the flow is unstable."
+    },
+    {
+      "assessment": "Recommended: natural phrasing, explicit non-universality; technical condition remains in the approved claim/evidence/caveats.",
+      "text": "In dense traffic, small speed changes can sometimes grow as drivers adjust to the cars ahead."
+    },
+    {
+      "assessment": "Excluded: would imply inevitable amplification.",
+      "text": "In dense traffic, small speed changes grow as drivers adjust to the cars ahead."
+    }
+  ],
+  "analysis": "Can sometimes grow expresses conditional possibility in ordinary language, not inevitability or a numerical probability. The verified claim still specifies unstable flow; its caveats state density alone is insufficient. The narration does not define which traffic states amplify disturbances, and the conceptual visual must not suggest all dense flow does. Sometimes is not a measured frequency or chance estimate.",
+  "approvedClaimStatementSha256": "623f6a7df271cbaa51565bdf9a0ae53ea4724d90a86d9d61b0dcf883b6636cc5",
+  "claimId": "phantom-traffic.claim.conditional-growth",
+  "claimStatementUnchanged": true,
+  "decision": "viewer-facing-paraphrase-only",
+  "evidence": [
+    {
+      "inspection": "Existing research inspection reconfirmed by opening full-text sections during this wording pass; no new experiment or frequency estimate.",
+      "locator": "Author manuscript pp. 3, 7–10; stable versus amplifying responses, including pp. 8–9 example and discussion",
+      "sourceId": "source.traffic.treiber-2007",
+      "url": "https://www.mtreiber.de/publications/timedelay_TRR07_final.pdf"
+    }
+  ],
+  "preparedAt": "2026-09-30T22:31:14.582Z",
+  "previousSentence": "In dense traffic, small speed changes can grow as drivers adjust to the cars ahead—if the flow is unstable.",
+  "proposedSentence": "In dense traffic, small speed changes can sometimes grow as drivers adjust to the cars ahead.",
+  "reviewState": "awaiting-final-exact-narration-approval",
+  "schemaVersion": 1,
+  "selectedHookUnchanged": true
+}

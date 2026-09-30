@@ -91,3 +91,7 @@ The editorial script belongs to ContentAsset. Exact scene timing, narration file
 - Databases, queues, workers, APIs, dashboards, or CMS
 
 These remain planned boundaries, not implemented features.
+
+## Component claim approval without a supplied review date
+
+For traffic waves, an explicit owner decision approved six exact narration claims while leaving final wording and the complete editorial package pending. The native scoped-decision boundary promotes only those claims and records an explicit decision-entry timestamp. Claim review metadata may use `decisionEnteredAt` with `reviewTimeBasis: decision-entry` when no owner review date was supplied; it must not also pretend that entry time is a supplied `reviewedAt`. Existing human supplied-date records remain unchanged. The package remains `review` and has no full approval metadata. Deferred reserve claims remain `supported`; excluded formulations remain unverified and rejected. Exact-state bindings and tests prevent approval being transferred to changed evidence or wording.

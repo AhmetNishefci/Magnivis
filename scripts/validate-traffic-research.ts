@@ -2,8 +2,10 @@ import {createHash} from 'node:crypto';
 import {readFileSync, readdirSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {z} from 'zod';
-import {phantomTrafficKnowledgePackage as knowledgePackage} from '../src/knowledge/packages/phantom-traffic';
-import {phantomTrafficContentAsset as contentAsset} from '../src/content-assets/assets/phantom-traffic';
+import packageSnapshot from '../content-intelligence/reviews/phantom-traffic-v1/knowledge-package.review.json';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import assetSnapshot from '../content-intelligence/reviews/phantom-traffic-v1/content-asset.review.json';
+import {contentAssetSchema} from '../src/content-assets/schema';
 import {createContentAssetRegistry} from '../src/content-assets/registry';
 import {createKnowledgePackageRegistry} from '../src/knowledge/registry';
 import {createTopicCandidateRegistry} from '../src/content-intelligence/registry';
@@ -15,6 +17,9 @@ import {
   researchWorkspaceDraftSchema,
   topicCandidateSchema,
 } from '../src/content-intelligence/schema';
+
+const knowledgePackage = knowledgePackageSchema.parse(packageSnapshot);
+const contentAsset = contentAssetSchema.parse(assetSnapshot);
 
 export const trafficReviewDirectory = resolve('content-intelligence/reviews/phantom-traffic-v1');
 const readJson = (name: string): unknown => JSON.parse(readFileSync(resolve(trafficReviewDirectory, name), 'utf8'));

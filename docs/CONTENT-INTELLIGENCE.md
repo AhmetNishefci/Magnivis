@@ -194,3 +194,11 @@ The Wood Frog claim/editorial gate has been completed. Production must now:
 - publishing or analytics APIs.
 
 Wood Frog has since completed bounded ProductionPlan/VideoSpec/caption/render implementation through the checkpoint. Current recovery identity and remaining platform gates are in PROJECT-STATE.md. Generic VisualPlan-to-Remotion automation remains premature.
+
+## Partial owner approval and editorial finalization
+
+Traffic waves revision 2 records an explicit owner component decision in [phantom-traffic-finalization-v2](../content-intelligence/reviews/phantom-traffic-finalization-v2/owner-review.md). The original full-approval command remains unchanged: it requires all claim decisions, exact confirmation and a supplied review time. `src/content-intelligence/scoped-owner-decision.ts` adds a narrower native record for approving selected claims/concepts while deferring the final exact narration. It binds package/asset/review revisions and hashes, original research artifacts and every claim statement. Eligible selected claims may become verified; reserves are explicitly deferred and exclusions retained. It cannot grant full asset, production or publication approval.
+
+Where the owner did not supply a review timestamp, the record stores `enteredAt`, `timeBasis: decision-entry`, and null `ownerSuppliedReviewTimestamp`. Claim metadata uses `decisionEnteredAt` and `reviewTimeBasis: decision-entry` without inventing `reviewedAt`. Legacy supplied-date metadata remains valid. The human identity and explicit instruction remain required; AI research alone never grants verification.
+
+Read-only checks: `node --import tsx scripts/validate-traffic-research.ts` preserves validation of the original immutable research-v1 handoff; `node --import tsx scripts/validate-traffic-finalization.ts` validates the component decision, exact verified-claim set, revision 2 narration and final owner gate. The final narration/asset still requires another explicit owner approval before any ProductionPlan.
