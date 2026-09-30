@@ -1,10 +1,14 @@
 # Project state
 
-## New content cycle #1 — discovery only, 2026-09-30
+## New content cycle #1 — traffic-waves research/editorial review, 2026-10-01
 
-Ahmet separately authorized the first fresh discovery cycle after closed recovery. The owner-selection handoff is [content-intelligence/discovery/cycle-1-2026-09-30/owner-review.md](../content-intelligence/discovery/cycle-1-2026-09-30/owner-review.md): 40 distinct manual AI-assisted TopicCandidates, 11 categorical evaluation drafts, lightweight source reconnaissance and per-candidate duplicate checks. All candidates remain evaluating; owner selection is pending and no topic is approved. No full research, script, narration, CaptionPlan, production asset, render, variant, delivery or platform action has begun. Next gate: Ahmet selects a story and authorizes bounded KnowledgePackage research. Recovery remains CLOSED; Bridge and Universe long-form remain excluded from this cycle.
+Ahmet approved discovery and selected **“The traffic jam with nothing at the front”** (`topic.phantom-traffic`) for bounded deep research and an editorial proposal. The completed discovery handoff remains immutable at [cycle-1-2026-09-30](../content-intelligence/discovery/cycle-1-2026-09-30/owner-review.md); its historical pending-selection state is superseded by the separately recorded [selection](../content-intelligence/reviews/phantom-traffic-v1/selection.json).
 
-The recovery-close record below describes the starting authorization state; its request for separate discovery authorization is now satisfied by this cycle. Its production/publication restrictions and historical evidence remain intact.
+The current [owner review](../content-intelligence/reviews/phantom-traffic-v1/owner-review.md) contains four inspected evidence sources, 30 claims (six selected for the narration; eleven excluded formulations), five hook approaches and one proposed short. `phantom-traffic` revision 1 is **review**; `phantom-traffic.asset.backward-wave` revision 1 is **editorial-review**; the cycle-scoped candidate revision 2 is **researching**. Evidence-aligned claims remain `supported`, not human-verified. The claim audit recommends eligible promotion but supplies no owner authority.
+
+Next gate: Ahmet approves or requests changes to promoted claims, qualifications, exclusions, hook, exact narration, narrative beats and conceptual VisualPlan. No ProductionPlan, final CaptionPlan, narration audio, production assets, rendering, variants, delivery or platform actions are authorized or created. Recovery remains CLOSED; Millennium Bridge and Universe long-form remain excluded. Quality-first production starts only after the editorial gate and separate production authorization.
+
+The recovery-close record below describes the historical starting authorization state. Its discovery restriction has been superseded by these explicit owner instructions; remaining historical identities and publication gates are intact.
 
 Current recovery: CLOSED operationally after owner-authorized main reconciliation; historical gaps remain accepted and documented in RECOVERY.md. Checkpoint: ae797996382c337759612265fd8229e8d5f06eef, through Wood Frog. Source and historical approvals survive; reset/lost binary state is not erased. Preserved evidence branch: recovery/magnivis-post-reset. Millennium Bridge work is excluded; no new production is active or authorized.
 

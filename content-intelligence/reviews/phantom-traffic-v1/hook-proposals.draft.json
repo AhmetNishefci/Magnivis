@@ -1,0 +1,58 @@
+{
+  "knowledgePackageId": "phantom-traffic",
+  "packageRevision": 1,
+  "proposals": [
+    {
+      "archetype": "mystery",
+      "claimIds": [
+        "phantom-traffic.claim.no-obstruction"
+      ],
+      "id": "phantom-traffic.hook-proposal.empty-road",
+      "rationale": "Good, but requires separating cleared incidents.",
+      "text": "No obstruction ahead. So how can traffic still stop?",
+      "viewerPromise": "Reveal a possible internal mechanism, without diagnosing every empty-road experience."
+    },
+    {
+      "archetype": "contradiction",
+      "claimIds": [
+        "phantom-traffic.claim.backward-pattern"
+      ],
+      "id": "phantom-traffic.hook-proposal.backward-wave",
+      "rationale": "Directly matches observed cluster turnover and experiment.",
+      "text": "The cars move forward. But a traffic jam can move backward.",
+      "viewerPromise": "Separate moving cars from the moving slow pattern."
+    },
+    {
+      "archetype": "consequence",
+      "claimIds": [
+        "phantom-traffic.claim.conditional-growth"
+      ],
+      "id": "phantom-traffic.hook-proposal.chain",
+      "rationale": "Good, but can invite reaction-time-only simplification.",
+      "text": "A small slowdown can grow into stop-and-go traffic.",
+      "viewerPromise": "Explain conditional amplification, not a guaranteed single brake-tap cause."
+    },
+    {
+      "archetype": "impossible-sounding-fact",
+      "claimIds": [
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.no-obstruction"
+      ],
+      "id": "phantom-traffic.hook-proposal.experiment",
+      "rationale": "Very good evidentiary anchor.",
+      "text": "Twenty-two cars. One circular track. A traffic jam with no obstruction.",
+      "viewerPromise": "Show the controlled evidence and its limits."
+    },
+    {
+      "archetype": "scenario",
+      "claimIds": [
+        "phantom-traffic.claim.no-obstruction",
+        "phantom-traffic.claim.cleared-obstruction"
+      ],
+      "id": "phantom-traffic.hook-proposal.everyday",
+      "rationale": "Mixed: cleared blockage is another plausible answer.",
+      "text": "You reach the end of a traffic jam—and find nothing. What could explain it?",
+      "viewerPromise": "Explore one possible explanation; a cleared incident is another."
+    }
+  ]
+}

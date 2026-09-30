@@ -1,0 +1,103 @@
+{
+  "inspections": [
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Article pp. 1–7; figures 2–4 visually inspected on pp. 4–6; figure 5 is a reproduction of earlier highway trajectories, not independently inspected data."
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Web PDF access failed; direct institutional download succeeded (HTTP 200, 1,961,378 bytes), all seven article pages extracted with PDFKit. Figures 2–4 also viewed from the original PDF.",
+        "Supplementary movies and raw trajectory data not inspected.",
+        "Short fixed-vehicle ring; no ramps/lane changes. Target speed and spacing deliberately favored instability; no identified deliberate initiating brake tap.",
+        "Does not isolate reaction delay or establish a universal density threshold, wave speed, or prevalence on highways."
+      ],
+      "sourceId": "source.traffic.sugiyama-2008",
+      "supportsClaimIds": [
+        "phantom-traffic.claim.no-obstruction",
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.circumference",
+        "phantom-traffic.claim.instructions",
+        "phantom-traffic.claim.emergence",
+        "phantom-traffic.claim.backward-pattern",
+        "phantom-traffic.claim.turnover",
+        "phantom-traffic.claim.wave-speed",
+        "phantom-traffic.claim.measurement"
+      ]
+    },
+    {
+      "accessStatus": "partially-inspected",
+      "evidenceLocations": [
+        "Article sections 1–4 (pp. 2–12), table 1, captions and accompanying text of figures 4–8; Appendix A (pp. 12–13)."
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Full PDF accessible; targeted main-text/measurement sections inspected, not every appendix derivation or raw data.",
+        "Driver training/caution varied by session; several first-day sessions excluded from principal analyses by authors.",
+        "Intermediate-density free and jammed sessions; very-high-density homogeneous slow session. No universal monotonic density rule.",
+        "Cover says CC BY-NC-SA 4.0 while article says CC BY 3.0; rights wording differs. No figure, photograph or footage reuse proposed."
+      ],
+      "sourceId": "source.traffic.tadaki-2013",
+      "supportsClaimIds": [
+        "phantom-traffic.claim.density-not-guarantee",
+        "phantom-traffic.claim.followup-experiment"
+      ]
+    },
+    {
+      "accessStatus": "partially-inspected",
+      "evidenceLocations": [
+        "Author manuscript abstract, introduction, model, simulation and discussion (pp. 2–10); string-stability definition, section 3, discussion."
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Author manuscript, not the publisher typeset version. Publisher identity/DOI corroborated.",
+        "Theoretical and numerical models, not a controlled measurement of a unique cause in the 2008 experiment.",
+        "Thresholds depend on chosen model, parameters and perturbation size; no driving prescription or universal acceleration/reaction-time numbers."
+      ],
+      "sourceId": "source.traffic.treiber-2007",
+      "supportsClaimIds": [
+        "phantom-traffic.claim.conditional-growth",
+        "phantom-traffic.claim.stable-versus-unstable",
+        "phantom-traffic.claim.reaction-not-only",
+        "phantom-traffic.claim.headway",
+        "phantom-traffic.claim.nonlinear"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Complete Appendix A HTML: Shock Waves and the Accordion Effect; forming/recovery boundaries; cleared incident example."
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Bottleneck primer, not an experimental test of spontaneous jams.",
+        "Its blanket concluding bottleneck sentence cannot be generalized to negate the no-bottleneck ring experiment. Use only scoped boundary definitions and cleared-incident caution."
+      ],
+      "sourceId": "source.traffic.fhwa-2017",
+      "supportsClaimIds": [
+        "phantom-traffic.claim.bottleneck-distinction",
+        "phantom-traffic.claim.cleared-obstruction",
+        "phantom-traffic.claim.shockwave"
+      ]
+    }
+  ],
+  "retrievalConvention": "2026-09-30 UTC = 2026-10-01 Europe/Belgrade; source access does not constitute human verification.",
+  "schemaVersion": 1,
+  "sourceTension": "FHWA Appendix A concludes that a bottleneck caused the cases it discusses. Interpreted as a universal exclusion of internally generated jams, that wording conflicts with the primary ring evidence. The claim set retains the scoped examples/definitions and does not promote the blanket assertion.",
+  "unusedLeads": [
+    {
+      "access": "inaccessible",
+      "authors": [
+        "Gabor Orosz",
+        "R. Eddie Wilson",
+        "Gabor Stepan"
+      ],
+      "doi": "10.1098/rsta.2010.0205",
+      "evidentiaryRole": "none; not used to support claims",
+      "inspected": "Author homepage bibliographic identity only; PDF web timeout and direct HTTP 403.",
+      "title": "Traffic jams: dynamics and control",
+      "url": "https://websites.umich.edu/~orosz/articles/PTRSA2published.pdf",
+      "year": 2010
+    }
+  ]
+}

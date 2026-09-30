@@ -81,7 +81,7 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 
 `wood-frog-freeze-tolerance.asset.how-freezing-works` revision 2 is the first owner-approved asset to feed a typed ProductionPlan. Its script, narrative structure and VisualPlan remain editorial source-of-truth; `production-plan.wood-frog-freeze.v1` adds frame allocation and implementation intent without moving choreography into the asset. The uncertain circulation-cessation claim remains excluded.
 
-`src/content-assets/registry.ts` validates all four assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
+`src/content-assets/registry.ts` validates the registered assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
 
 ## Adding another asset
 
@@ -103,3 +103,7 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 - Databases, queues, workers, services, CMS, dashboards, or analytics ingestion
 
 These are planned boundaries, not implemented features.
+
+## Traffic-waves editorial proposal
+
+`phantom-traffic.asset.backward-wave` revision 1 is registered as **editorial-review**, backed by `phantom-traffic` revision 1 in **review**. Its six selected claims remain evidence-supported pending human verification. The reviewed script, beats and conceptual VisualPlan are in [phantom-traffic-v1](../content-intelligence/reviews/phantom-traffic-v1/owner-review.md). Registration does not approve editorial material or create a ProductionPlan, captions, platform variants or render inputs.

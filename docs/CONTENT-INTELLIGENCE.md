@@ -149,6 +149,14 @@ The files contain no credentials, hidden reasoning, or chain of thought. Validat
 
 Retrieval does not establish evidentiary support by itself. A human still confirms that the source is authoritative, the locator says what the claim asserts, context is preserved, conflicts are represented, and caveats are adequate. Generated prose never counts as evidence.
 
+## Cycle #1 selected research/editorial handoff
+
+Ahmet selected `topic.phantom-traffic` after discovery and explicitly authorized bounded research plus an editorial proposal. [The review bundle](../content-intelligence/reviews/phantom-traffic-v1/owner-review.md) uses existing ResearchWorkspaceDraft, KnowledgePackage, ContentAsset, HookProposalBatch and ClaimReviewBundle schemas. Initial source leads remain unreviewed and initial claims unverified in the preserved workspace; source inspection is recorded separately before the supported review snapshot. The original discovery handoff is not rewritten as an approval.
+
+This is manual session-assisted source inspection and proposal authoring, **not a paid provider run or workflow envelope**. No live CLI stages or fabricated provider/usage records exist. The live-stage human evidence pause above remains unchanged. The explicit owner request permits these review drafts; it does not substitute for human verification or the editorial gate. Claims stay `supported`, package `review`, asset `editorial-review`; candidate revision 2 remains `researching` in its cycle-scoped registry. Review package/asset are registered for normal schema/reference lookup, with no production consumer.
+
+Read-only validation: `node --import tsx scripts/validate-traffic-research.ts`. It validates native records, historical discovery identity/hash, initial-state boundaries, reviewed claim hashes/evidence, full ledger coverage, exclusion eligibility, hooks and deterministic artifact bytes. It does not fetch sources, call providers, promote approval or produce media. Only an explicit subsequent owner decision can promote eligible claims/editorial material; production planning remains outside this milestone.
+
 ## TopicCandidate and ResearchWorkspace
 
 `src/content-intelligence/schema.ts` records stable topic identity, discovery provenance, open taxonomy, timeliness, rationale, status, and review metadata. Evaluation uses categorical `weak`, `mixed`, `strong`, or `unknown` assessments with rationale and uncertainty rather than a fake virality score.
