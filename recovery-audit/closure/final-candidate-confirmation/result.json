@@ -1,0 +1,59 @@
+{
+  "testedCommit": "12b52d24423e549e85d882cd209df0cc44634078",
+  "transport": "Existing independent GitHub clone updated from origin, no local source/data supplied",
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:brain"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "passed": true,
+  "recordedAt": "2026-09-30T21:31:00.186817+00:00"
+}

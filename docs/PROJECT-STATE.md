@@ -1,6 +1,6 @@
 # Project state
 
-Current recovery: CLOSED operationally upon owner-authorized main reconciliation; historical gaps remain accepted and documented in RECOVERY.md. Checkpoint: ae797996382c337759612265fd8229e8d5f06eef, through Wood Frog. Source and historical approvals survive; reset/lost binary state is not erased. Preserved evidence branch: recovery/magnivis-post-reset. Millennium Bridge work is excluded; no new production is active or authorized.
+Current recovery: CLOSED operationally after owner-authorized main reconciliation; historical gaps remain accepted and documented in RECOVERY.md. Checkpoint: ae797996382c337759612265fd8229e8d5f06eef, through Wood Frog. Source and historical approvals survive; reset/lost binary state is not erased. Preserved evidence branch: recovery/magnivis-post-reset. Millennium Bridge work is excluded; no new production is active or authorized.
 
 Wood Frog latest pre-reset upload occurrence is owner-confirmed. Platform, URL/ID, timestamp, visibility, uploaded hash, settings and analytics remain unknown. Existing registry has one generalized Speed of Light publication; earlier YouTube URLs remain legacy records. No new PublicationRecord is invented.
 
@@ -14,7 +14,7 @@ Artifact Storage V1 now uses Git-backed durable bytes at current scale, retainin
 
 Multi-surface QA capabilities remain in PLATFORM-QA.md. YouTube V2 owner-policy recovery is active/default for future work but renewed measured review is pending; original profile bindings remain. Meta playback/grid and viewer/Page-feed reconciliation remains unmeasured/pending. No historical publication metadata is fabricated.
 
-Ahmet explicitly approves final recovery reconciliation and accepts historical gaps. Candidate validation and a fresh GitHub clone passed. Final work is the controlled main reconciliation and remote-main proof receipt only. No next topic/video, Bridge, long-form implementation or platform action is authorized. After closure the project is READY FOR NEW CONTENT DISCOVERY, awaiting separate authorization for NEW CONTENT CYCLE #1 AFTER RECOVERY. STRATEGY.md records one excellent unique Short/day as the resumption direction; target two/day and provisional Kosovo test windows never override quality/gates. RECOVERY.md records closure/proof/history.
+Ahmet explicitly approves final recovery reconciliation and accepts historical gaps. GitHub PR #1 merged the accepted recovery at 923641b6e00ef3196cf80ea6202aab8958e07330. Candidate and separate fresh GitHub main clone proofs passed: 253 tests/17 files, all 110 durable artifacts and eight draft deliveries. Main is the canonical operating branch; both recovery branches remain evidence. No next topic/video, Bridge, long-form implementation or platform action is authorized. The project is READY FOR NEW CONTENT DISCOVERY, awaiting separate authorization for NEW CONTENT CYCLE #1 AFTER RECOVERY. STRATEGY.md records one excellent unique Short/day as the resumption direction; target two/day and provisional Kosovo test windows never override quality/gates. RECOVERY.md records closure/proof/history.
 
 The checkpoint log below preserves what was known then. Its NOW/NEXT tasks are historical context, not current authorization. Recovery owner evidence supplements it; it does not fill lost platform metadata.
 

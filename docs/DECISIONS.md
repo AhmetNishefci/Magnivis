@@ -291,3 +291,5 @@ Ahmet Nishefci explicitly accepts Phase 3, historical gaps, separate Wood Frog r
 ## Operational closure validation and reconciliation
 
 The independently fetched GitHub candidate a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec passes locked install, 253 tests across 17 files, all 110 durable identities, exact restore, eight draft packages and production/caption/brain validation. Known geometry gaps remain explicitly INCOMPLETE. Use a merge commit through PR #1 to preserve recovery provenance; verify remote main in a separate clean clone and retain the receipts under recovery-audit/closure. Operational closure accepts gaps and makes no new content/platform authorization.
+
+GitHub PR #1 merged at 923641b6e00ef3196cf80ea6202aab8958e07330 with both original main and accepted recovery head as parents. A separate fresh GitHub main clone passed all 15 proof checks. Recovery is CLOSED operationally, historical gaps remain accepted, and the next content cycle still requires separate authorization. Final receipts: recovery-audit/closure/reconciliation.json and closure-remote-main-proof.json.

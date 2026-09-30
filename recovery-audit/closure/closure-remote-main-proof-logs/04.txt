@@ -1,0 +1,786 @@
+
+> magnivis@0.1.0 artifacts:durable /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+> tsx scripts/verify-durable-artifacts.ts
+
+{
+  "passed": true,
+  "durableArtifactCount": 110,
+  "historicalMissingExpectations": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "receipts": [
+    {
+      "artifactId": "audio.billion-dollars",
+      "path": "public/audio/billion-dollars.wav",
+      "sha256": "67e8e3be8cf0dd0d38064f6c9028aa4a85b5a674a2c4b2d01c0a8905d708d4c8",
+      "bytes": 6720044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.earth-to-stars",
+      "path": "public/audio/earth-to-stars.wav",
+      "sha256": "e7f9873bfd66facbcd48a9e8737d446bcf4863c8801a2fc546b6cf85cb0f4408",
+      "bytes": 8064044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.human-engineering",
+      "path": "public/audio/human-engineering.wav",
+      "sha256": "317412a2f81aff4e1efddbb39634b4064442f7e200cf93a958ac599630214022",
+      "bytes": 5952044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.betelgeuse",
+      "path": "public/audio/narration/betelgeuse.wav",
+      "sha256": "1c89386e6c23c6e3e5f5ae6b708fc89a4a84397d9888427d0c42814c1f3040e1",
+      "bytes": 580844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.billion-dollars.coda",
+      "path": "public/audio/narration/billion-dollars/coda.wav",
+      "sha256": "43ad34969f96b760ecc6b3ec6610cb255b6d43f05e9d303d05c2a8c72c8cae40",
+      "bytes": 345644,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.billion-dollars.hook",
+      "path": "public/audio/narration/billion-dollars/hook.wav",
+      "sha256": "5e28e9f271d8f4458dc36d6e870ba3e3323df68bfacd2483f7037512c3e3aa4a",
+      "bytes": 240044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.billion-dollars.million",
+      "path": "public/audio/narration/billion-dollars/million.wav",
+      "sha256": "cadd8c487e64ceceb3612cf479d7fa1df03cebba586cbafbe2dd6b8c072a48de",
+      "bytes": 300044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.billion-dollars.multiply",
+      "path": "public/audio/narration/billion-dollars/multiply.wav",
+      "sha256": "6e800f3b3baa555f2c91956d4a6e7f5dc5d9143cb47ea3033ab0233989559982",
+      "bytes": 290444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.billion-dollars.notes",
+      "path": "public/audio/narration/billion-dollars/notes.wav",
+      "sha256": "0896b2b5f039441162900de67d456feb2f1aefa2c770bbe2f717735c1e3233db",
+      "bytes": 362444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.billion-dollars.tower",
+      "path": "public/audio/narration/billion-dollars/tower.wav",
+      "sha256": "753b6215eb4e35ad3f89456f5ec9e261d91561c290fc0d61838fa4b8e427c477",
+      "bytes": 662444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.billion-dollars.weight",
+      "path": "public/audio/narration/billion-dollars/weight.wav",
+      "sha256": "60e1008643342928d23f9f88fdb9e2601edce697e2b79a69a2cccf1b31276900",
+      "bytes": 278444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.coda",
+      "path": "public/audio/narration/coda.wav",
+      "sha256": "f7ae47240abec7e266aae31120c539b52f6b29cf1ec7434023f536389fed1ae6",
+      "bytes": 204044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.hook",
+      "path": "public/audio/narration/hook.wav",
+      "sha256": "04c9a1a624e79f7449d3b854a8d376a9f93b0cbc355427c3ff1d8bd3c9fd44e5",
+      "bytes": 578444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.human-engineering.burj",
+      "path": "public/audio/narration/human-engineering/burj.wav",
+      "sha256": "65ab5d481b0a17e6face89de0acf4b967ce3f51cbd32d2568106b378a0c31fa7",
+      "bytes": 328844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.human-engineering.coda",
+      "path": "public/audio/narration/human-engineering/coda.wav",
+      "sha256": "8318b1c98aeacca795186dcb38eec717fc934c2138050b7f0104afb966d13f2e",
+      "bytes": 424844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.human-engineering.dam",
+      "path": "public/audio/narration/human-engineering/dam.wav",
+      "sha256": "72318b6f4ef47cdf79fc12e540b1afff0d89cbdda57ab076e3aa7ac018489983",
+      "bytes": 583244,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.human-engineering.gotthard",
+      "path": "public/audio/narration/human-engineering/gotthard.wav",
+      "sha256": "6d86b1b46fc1d58da4ae467c7a03e128c0664e6ce46b67ae1b09b3782e47ff53",
+      "bytes": 554444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.human-engineering.hook",
+      "path": "public/audio/narration/human-engineering/hook.wav",
+      "sha256": "c0209f317c9dab2ae616f2b612566b2acd8ddc966da5350278838888c01c449b",
+      "bytes": 314444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.human-engineering.lhc",
+      "path": "public/audio/narration/human-engineering/lhc.wav",
+      "sha256": "44755d7287a400977374f9460054813e4588b9eae946295e8b10a198955cd5e1",
+      "bytes": 566444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.jupiter",
+      "path": "public/audio/narration/jupiter.wav",
+      "sha256": "5b1ebf363d1f459686646f7522d13385ca5e930d98dae4b31f2488292b436ef1",
+      "bytes": 304844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.ocean-depth.average",
+      "path": "public/audio/narration/ocean-depth/average.wav",
+      "sha256": "1f0d63d918ffce3220e38fb55c896214a94e941318e052a906fa3f65f52927f4",
+      "bytes": 412844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.ocean-depth.clearance",
+      "path": "public/audio/narration/ocean-depth/clearance.wav",
+      "sha256": "1eaca07d58835451990c770017606e44fdeaa8fe0628b08ac9fd736d4a4aeb45",
+      "bytes": 362444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.ocean-depth.coda",
+      "path": "public/audio/narration/ocean-depth/coda.wav",
+      "sha256": "749bd1a77f98177285b94167f2fd6398ceb94e7cd9fbbad4e71853c587b1f542",
+      "bytes": 405644,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.ocean-depth.dark",
+      "path": "public/audio/narration/ocean-depth/dark.wav",
+      "sha256": "e22f58a092c27118b3b949b690fbc32c4e48d77bff76a4710800b4c591fbcc87",
+      "bytes": 278444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.ocean-depth.everest",
+      "path": "public/audio/narration/ocean-depth/everest.wav",
+      "sha256": "99db101188f06023f8c85d9a40bcf96b691ec70e876d06f6be17792a9d40a9c7",
+      "bytes": 280844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.ocean-depth.hook",
+      "path": "public/audio/narration/ocean-depth/hook.wav",
+      "sha256": "55e922e95269b4ecb5c1ea69ec0121c75a9b9cb51ce0b87fbda885b6f626d61a",
+      "bytes": 300044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.ocean-depth.light",
+      "path": "public/audio/narration/ocean-depth/light.wav",
+      "sha256": "089a36fe16f422086df24fb0510d28d62925d0a16fac7c4591a9505081cf5863",
+      "bytes": 352844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.rigel",
+      "path": "public/audio/narration/rigel.wav",
+      "sha256": "7fe0a41b014a006fb0f6d211dc3dcfa92ad9ca92c2efecbe179503d133c14d35",
+      "bytes": 415244,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.speed-of-light.hook",
+      "path": "public/audio/narration/speed-of-light/hook.wav",
+      "sha256": "811a7fbd198a8957b5974c9fcdde4261614b0d3f618c5ef015d86bd3780fc881",
+      "bytes": 388844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.speed-of-light.moon",
+      "path": "public/audio/narration/speed-of-light/moon.wav",
+      "sha256": "546fffead090725f63655eae3f3269b29d4dedb4516ae3206f90ada069f49d1f",
+      "bytes": 388844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.speed-of-light.proxima",
+      "path": "public/audio/narration/speed-of-light/proxima.wav",
+      "sha256": "d0ec27fac933090acfadc04522935ca61d250c9b363a5e7afd3bf82081f193dc",
+      "bytes": 523244,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.speed-of-light.speed",
+      "path": "public/audio/narration/speed-of-light/speed.wav",
+      "sha256": "d1fab0e403a8832bf0959aaafe0476fb13d60516d130c98b6d4f2e7f8a7c38ef",
+      "bytes": 494444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.speed-of-light.sun",
+      "path": "public/audio/narration/speed-of-light/sun.wav",
+      "sha256": "c431809f0cf60af47627ecefe2e65e72b4cc70f5f1afe85134e6bcb590c43a60",
+      "bytes": 388844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.speed-of-light.year",
+      "path": "public/audio/narration/speed-of-light/year.wav",
+      "sha256": "769e904c5dad744f182b77bc074165c6a9b06e99ba9f425b05a78be7dada268f",
+      "bytes": 427244,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.sun",
+      "path": "public/audio/narration/sun.wav",
+      "sha256": "b63f8922f5f87b7ea6ebad2c8f573f87b8ef5ea3d5b120748dccb3a7dca4da66",
+      "bytes": 297644,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.wood-frog.chemistry",
+      "path": "public/audio/narration/wood-frog/chemistry.wav",
+      "sha256": "a01da3297645d2f537593997c5d83f51a100c20210ff98720d86caab51d5ccc3",
+      "bytes": 513644,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.wood-frog.freeze",
+      "path": "public/audio/narration/wood-frog/freeze.wav",
+      "sha256": "709839201ea34ef58c033160c97270e1c037bfb37f8e212bacc33f6c7e040db1",
+      "bytes": 410444,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.wood-frog.hook",
+      "path": "public/audio/narration/wood-frog/hook.wav",
+      "sha256": "95dfed9847e04539a3fff9e996d8e188aee137e24ea75c3ba668ecd8ebe91028",
+      "bytes": 508844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.wood-frog.location",
+      "path": "public/audio/narration/wood-frog/location.wav",
+      "sha256": "08963b8235bff0fc15ab45ed6e572507fed8a008d217fd5302a375e8803e62c3",
+      "bytes": 820844,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.wood-frog.payoff",
+      "path": "public/audio/narration/wood-frog/payoff.wav",
+      "sha256": "19072c2a76284d7622435495c197aab6d625591bd3d3ba68fcd90a35cf4cecd9",
+      "bytes": 972044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.narration.wood-frog.protection",
+      "path": "public/audio/narration/wood-frog/protection.wav",
+      "sha256": "b1db781f477e4d1c11079f6d6ff4a4b5e82902ae9837a3f6bcf0349f92ed50a2",
+      "bytes": 552044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.ocean-depth",
+      "path": "public/audio/ocean-depth.wav",
+      "sha256": "3f08f9a2e5289332de985876284f54d2c81353d457a7cfd174c8711e9704cfcc",
+      "bytes": 6144044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.speed-of-light",
+      "path": "public/audio/speed-of-light.wav",
+      "sha256": "5ccdef44bd52a19f56ceb55d2ed5779a20cd1c3e7afee98b72e635a21f0c9602",
+      "bytes": 6336044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "audio.wood-frog",
+      "path": "public/audio/wood-frog.wav",
+      "sha256": "62ee7908811e144bb34b15649620665fbc47243d180560db702ec51f1e7e003b",
+      "bytes": 7488044,
+      "provenance": "HISTORICAL_EXACT"
+    },
+    {
+      "artifactId": "billion-dollars.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/billion-dollars/contact-sheet.jpg",
+      "sha256": "fbdc5a963612545058b9d401383eccefc578f2b009f268e6eebe8abc58d535a6",
+      "bytes": 76532,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "billion-dollars.qa.report.json",
+      "path": "artifacts/qa-evidence/billion-dollars/report.json",
+      "sha256": "3a9295de6dafcdf1cba97664f5ab9c476ff0b03926f4a06dbc46b6da5d1adb24",
+      "bytes": 577,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "billion-dollars.recovered-master",
+      "path": "artifacts/masters/billion-dollars/billion-dollars-narrated.mp4",
+      "sha256": "85fefb4eb5338e646b601734be4cdcfa68ebe8c0249c7b81c837734a7b0423de",
+      "bytes": 19269267,
+      "provenance": "RECOVERY_EQUIVALENT_REGENERATION"
+    },
+    {
+      "artifactId": "earth-to-stars.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/earth-to-stars/contact-sheet.jpg",
+      "sha256": "f2336bc900204647dca052f5e867c3a8f883a8a9bc206377d19d7d9ec3833e4b",
+      "bytes": 62127,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "earth-to-stars.qa.report.json",
+      "path": "artifacts/qa-evidence/earth-to-stars/report.json",
+      "sha256": "bd2f8a3e5886a7936405ef86068f52a3006e37170f06ec99aeaceef8950953e9",
+      "bytes": 575,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "earth-to-stars.recovered-master",
+      "path": "artifacts/masters/earth-to-stars/earth-to-stars-narrated.mp4",
+      "sha256": "f3ae92bee16a7bb44de25081297235ff01afba3e79494a9559e0dea4c50dc37a",
+      "bytes": 42978901,
+      "provenance": "RECOVERY_EQUIVALENT_REGENERATION"
+    },
+    {
+      "artifactId": "human-engineering.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/human-engineering/contact-sheet.jpg",
+      "sha256": "df2b3fa66422876c8c15467b7822fb48ab6d3deb07caf13ae4195fc83c8e8f1c",
+      "bytes": 89711,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "human-engineering.qa.report.json",
+      "path": "artifacts/qa-evidence/human-engineering/report.json",
+      "sha256": "ef7c2eb29af1901105216bb401ab4380f4683ec82c66d7b06471fe889ab5693b",
+      "bytes": 580,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "human-engineering.recovered-master",
+      "path": "artifacts/masters/human-engineering/human-engineering-narrated.mp4",
+      "sha256": "fe8e761aaaf456051685042e7e9a56eddcdf2a5cd2a29268c2d214b1e0958a8d",
+      "bytes": 42621945,
+      "provenance": "RECOVERY_EQUIVALENT_REGENERATION"
+    },
+    {
+      "artifactId": "ocean-depth.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/ocean-depth/contact-sheet.jpg",
+      "sha256": "d40b5837631f313b559ee3c635b0ed000882f079f0eb6e97dc2ac48a940e4551",
+      "bytes": 89077,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "ocean-depth.qa.report.json",
+      "path": "artifacts/qa-evidence/ocean-depth/report.json",
+      "sha256": "d9e47aa736491556ad2cf9f2484121422e9d2de701b60222dc479ceb237badcf",
+      "bytes": 569,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "ocean-depth.recovered-master",
+      "path": "artifacts/masters/ocean-depth/ocean-depth-narrated.mp4",
+      "sha256": "e07330d4ffea657bd9c76449d1dec3b821b55dca20dfa195c917c3f746b435f5",
+      "bytes": 17449004,
+      "provenance": "RECOVERY_EQUIVALENT_REGENERATION"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.delivery.tiktok-feed.manifest.json",
+      "path": "artifacts/delivery-packages/speed-of-light-tiktok/tiktok-feed/manifest.json",
+      "sha256": "ea5fc006859ad0ca0c8154e0054b289808540e9c694f72405f76bcc8138f2320",
+      "bytes": 3051,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.delivery.tiktok-feed.metadata.json",
+      "path": "artifacts/delivery-packages/speed-of-light-tiktok/tiktok-feed/metadata.json",
+      "sha256": "20de8605675f81357a55d9e83b8967d9907b4faf1ae3be5288d919e7c1a873b7",
+      "bytes": 924,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.delivery.tiktok-feed.review.md",
+      "path": "artifacts/delivery-packages/speed-of-light-tiktok/tiktok-feed/review.md",
+      "sha256": "9c1524282dc8f8c89678efde1953c4f9365b27fcceeb81c8b9e2a0483073a58f",
+      "bytes": 1913,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.delivery.tiktok-feed.upload-copy.txt",
+      "path": "artifacts/delivery-packages/speed-of-light-tiktok/tiktok-feed/upload-copy.txt",
+      "sha256": "37fb709cb6841d79f2c7ca0e24efea20d2c335c93b23b7fbb780f5312bdb933f",
+      "bytes": 906,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.delivery.tiktok-feed.video.mp4",
+      "path": "artifacts/delivery-packages/speed-of-light-tiktok/tiktok-feed/video.mp4",
+      "sha256": "757e0b5019b1f809cc960e927d60bc1eb3fbf5460f7d4071b66c2ae47089c22c",
+      "bytes": 16815846,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/speed-of-light-tiktok/contact-sheet.jpg",
+      "sha256": "b7fe50bfe39082c829afff30aabe12abf7038e8c6f5382d246a74a2d10a18c28",
+      "bytes": 77915,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.report.json",
+      "path": "artifacts/qa-evidence/speed-of-light-tiktok/report.json",
+      "sha256": "2fcd1a4f5038ff3b65a91e8e78589007fcbc30e6267c7621a296a8cc28403341",
+      "bytes": 587,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.recovered-master",
+      "path": "artifacts/platform-variants/speed-of-light-tiktok/speed-of-light-tiktok-narrated.mp4",
+      "sha256": "757e0b5019b1f809cc960e927d60bc1eb3fbf5460f7d4071b66c2ae47089c22c",
+      "bytes": 16815846,
+      "provenance": "RECOVERY_EQUIVALENT_REGENERATION"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.facebook-reels.manifest.json",
+      "path": "artifacts/delivery-packages/speed-of-light/facebook-reels/manifest.json",
+      "sha256": "eb7b2a0d940d14d1861f2469ef48ec897f4a690bacf9c635d57bfb1c64f8682b",
+      "bytes": 3134,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.facebook-reels.metadata.json",
+      "path": "artifacts/delivery-packages/speed-of-light/facebook-reels/metadata.json",
+      "sha256": "4bb2fcecab386c5c4e8c63e9b3c7a79881bffd08ebfd9f6bb94916dfb328d9a2",
+      "bytes": 981,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.facebook-reels.review.md",
+      "path": "artifacts/delivery-packages/speed-of-light/facebook-reels/review.md",
+      "sha256": "da16a8f4dbdb1f4c0f1e625a0601a265f9f6b2e4d7537b172791f8125933919a",
+      "bytes": 1923,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.facebook-reels.upload-copy.txt",
+      "path": "artifacts/delivery-packages/speed-of-light/facebook-reels/upload-copy.txt",
+      "sha256": "424043377fd34865d85986b57b4555850487feb0e3f06714bbeed9f00ecf3e01",
+      "bytes": 1016,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.facebook-reels.video.mp4",
+      "path": "artifacts/delivery-packages/speed-of-light/facebook-reels/video.mp4",
+      "sha256": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24",
+      "bytes": 16741384,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.instagram-reels.manifest.json",
+      "path": "artifacts/delivery-packages/speed-of-light/instagram-reels/manifest.json",
+      "sha256": "5f7ede7e061e900b5cb9dcd7d8c455b8b152aa7b6ea3bf8e36ab819e4ab43b08",
+      "bytes": 3276,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.instagram-reels.metadata.json",
+      "path": "artifacts/delivery-packages/speed-of-light/instagram-reels/metadata.json",
+      "sha256": "72b14b614e30234fc9423d2b6e95967bfce7ff5e8c426bd1935fa2bae25886de",
+      "bytes": 1058,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.instagram-reels.review.md",
+      "path": "artifacts/delivery-packages/speed-of-light/instagram-reels/review.md",
+      "sha256": "cf4727f48d9566d9f90e0327e6c8e09fd97bd808676b5764558f7155b508996b",
+      "bytes": 1938,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.instagram-reels.upload-copy.txt",
+      "path": "artifacts/delivery-packages/speed-of-light/instagram-reels/upload-copy.txt",
+      "sha256": "f1225113aa1c9380a777194ed60bb00e5de4f1cfbbe6069320f2bd03d9271d1f",
+      "bytes": 1137,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.instagram-reels.video.mp4",
+      "path": "artifacts/delivery-packages/speed-of-light/instagram-reels/video.mp4",
+      "sha256": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24",
+      "bytes": 16741384,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.youtube-shorts.captions.en.vtt",
+      "path": "artifacts/delivery-packages/speed-of-light/youtube-shorts/captions.en.vtt",
+      "sha256": "48e22610b1aa0b14b30557c9741649f8ad9306b4245da6a9c3fab371736bd3f6",
+      "bytes": 754,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.youtube-shorts.manifest.json",
+      "path": "artifacts/delivery-packages/speed-of-light/youtube-shorts/manifest.json",
+      "sha256": "381afccdb73ef05286c22de1e007477d81d8060339327dcec735bee361a52f90",
+      "bytes": 3609,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.youtube-shorts.metadata.json",
+      "path": "artifacts/delivery-packages/speed-of-light/youtube-shorts/metadata.json",
+      "sha256": "aeca13503e6a342cd98f6c43523904086f3b0496374b104cb7e8f32a8189e3e9",
+      "bytes": 1133,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.youtube-shorts.review.md",
+      "path": "artifacts/delivery-packages/speed-of-light/youtube-shorts/review.md",
+      "sha256": "119c3bbb7784a1d5105de8726c80f2e04c757a8ec47b52eb67df4b175aade43c",
+      "bytes": 1901,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.youtube-shorts.upload-copy.txt",
+      "path": "artifacts/delivery-packages/speed-of-light/youtube-shorts/upload-copy.txt",
+      "sha256": "8523759c3ebbf65b751a39e1caa291aaf5d9c0e00e70651aa82ed87d5c4db762",
+      "bytes": 1281,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.delivery.youtube-shorts.video.mp4",
+      "path": "artifacts/delivery-packages/speed-of-light/youtube-shorts/video.mp4",
+      "sha256": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24",
+      "bytes": 16741384,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/speed-of-light/contact-sheet.jpg",
+      "sha256": "4d870b897fb5c4453ae0b0657b27c89585a8f242374bfc6a35d49122437430db",
+      "bytes": 77933,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.qa.report.json",
+      "path": "artifacts/qa-evidence/speed-of-light/report.json",
+      "sha256": "dc28d4104d05c0893cecca8b602084c1a3ff5ce83c6371afa83aeb4d2509b730",
+      "bytes": 573,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "speed-of-light.recovered-master",
+      "path": "artifacts/masters/speed-of-light/speed-of-light-narrated.mp4",
+      "sha256": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24",
+      "bytes": 16741384,
+      "provenance": "RECOVERY_EXACT_REPRODUCTION"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.delivery.tiktok-feed.manifest.json",
+      "path": "artifacts/delivery-packages/wood-frog-tiktok/tiktok-feed/manifest.json",
+      "sha256": "e402a4c1e8834014a1f32a185fef5c21b099403f27b5b9eedf0bc2120630fe58",
+      "bytes": 4585,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.delivery.tiktok-feed.metadata.json",
+      "path": "artifacts/delivery-packages/wood-frog-tiktok/tiktok-feed/metadata.json",
+      "sha256": "72a805f5ab363ee0e12bac73727452161aa67e7ba80970ba2c96368767fa41b2",
+      "bytes": 2456,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.delivery.tiktok-feed.review.md",
+      "path": "artifacts/delivery-packages/wood-frog-tiktok/tiktok-feed/review.md",
+      "sha256": "1e1242ea22ba5096029ca1a05e249b0fb1133026e80c7553e10d7c931cdd2607",
+      "bytes": 2024,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.delivery.tiktok-feed.upload-copy.txt",
+      "path": "artifacts/delivery-packages/wood-frog-tiktok/tiktok-feed/upload-copy.txt",
+      "sha256": "21fa398e5976474d1ac0f5d030e9b1422d1b453780e4b50ac54a26d65877f59f",
+      "bytes": 2343,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.delivery.tiktok-feed.video.mp4",
+      "path": "artifacts/delivery-packages/wood-frog-tiktok/tiktok-feed/video.mp4",
+      "sha256": "99e38b8d129a2eae1842fbba234f8d7a5c355c45fcd5cb99e0fe73d2ac4ee5f3",
+      "bytes": 18519210,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/wood-frog-tiktok/contact-sheet.jpg",
+      "sha256": "4b4e04fd6edcdfde5a2771001414487069e9dd07c20a0b3c0338aac5d55efb0b",
+      "bytes": 239561,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.report.json",
+      "path": "artifacts/qa-evidence/wood-frog-tiktok/report.json",
+      "sha256": "3c5de9803364ee03b5941663133fcfb767958b820a1b89eaa29f3e1a19851f66",
+      "bytes": 576,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog-tiktok.recovered-master",
+      "path": "artifacts/platform-variants/wood-frog-tiktok/wood-frog-tiktok-narrated.mp4",
+      "sha256": "99e38b8d129a2eae1842fbba234f8d7a5c355c45fcd5cb99e0fe73d2ac4ee5f3",
+      "bytes": 18519210,
+      "provenance": "RECOVERY_EQUIVALENT_REGENERATION"
+    },
+    {
+      "artifactId": "wood-frog.delivery.facebook-reels.manifest.json",
+      "path": "artifacts/delivery-packages/wood-frog/facebook-reels/manifest.json",
+      "sha256": "d489e0cf14172f357210f129ee3a60c18820bd2656cba8312d16fc0d1d2b1084",
+      "bytes": 4725,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.facebook-reels.metadata.json",
+      "path": "artifacts/delivery-packages/wood-frog/facebook-reels/metadata.json",
+      "sha256": "272722730e829b80b6ba3a8c902c9cf107654ec0e58a16fc6a0e72c7770b8936",
+      "bytes": 2378,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.facebook-reels.review.md",
+      "path": "artifacts/delivery-packages/wood-frog/facebook-reels/review.md",
+      "sha256": "275c980e94bd115d5bca33e79cf8c141d1700ec643c7b76849b9fb27ee1fb3e3",
+      "bytes": 1982,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.facebook-reels.upload-copy.txt",
+      "path": "artifacts/delivery-packages/wood-frog/facebook-reels/upload-copy.txt",
+      "sha256": "268f362738ec247a2fc3a537875dcf80a4d2c140950e939d8ff665fa102c1f90",
+      "bytes": 2297,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.facebook-reels.video.mp4",
+      "path": "artifacts/delivery-packages/wood-frog/facebook-reels/video.mp4",
+      "sha256": "400edeccbfceb7a0269ec0926a88737b2421adb811d6be9b8aa64c77b5e242e1",
+      "bytes": 18493823,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.instagram-reels.manifest.json",
+      "path": "artifacts/delivery-packages/wood-frog/instagram-reels/manifest.json",
+      "sha256": "30c695fd10a1ed613ee206fdfd2c7693e05eca5e53379d76abc21b92302029d4",
+      "bytes": 4840,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.instagram-reels.metadata.json",
+      "path": "artifacts/delivery-packages/wood-frog/instagram-reels/metadata.json",
+      "sha256": "fa1e8ae4d9950e371cb43f07c5c04d7da43a27f0d0a3568938d4d3a5fe0adeef",
+      "bytes": 2454,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.instagram-reels.review.md",
+      "path": "artifacts/delivery-packages/wood-frog/instagram-reels/review.md",
+      "sha256": "b3f68217be628785e39d6bc1e53b13c372bd1f64f2c456d223ba1f6ccc5a9b93",
+      "bytes": 2007,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.instagram-reels.upload-copy.txt",
+      "path": "artifacts/delivery-packages/wood-frog/instagram-reels/upload-copy.txt",
+      "sha256": "a7d38909f80b3f600f83edea27baa29b1afa140571b90926450733da46de46bd",
+      "bytes": 2437,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.instagram-reels.video.mp4",
+      "path": "artifacts/delivery-packages/wood-frog/instagram-reels/video.mp4",
+      "sha256": "400edeccbfceb7a0269ec0926a88737b2421adb811d6be9b8aa64c77b5e242e1",
+      "bytes": 18493823,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.youtube-shorts.captions.en.vtt",
+      "path": "artifacts/delivery-packages/wood-frog/youtube-shorts/captions.en.vtt",
+      "sha256": "6307d067a90bc6819fd903c18eb9c84317a2c09e9d93252bd63b210ac74feab1",
+      "bytes": 2446,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.youtube-shorts.manifest.json",
+      "path": "artifacts/delivery-packages/wood-frog/youtube-shorts/manifest.json",
+      "sha256": "169c473958513d89d9b5b641a9c75793d8de392449ff9da905498818559ff856",
+      "bytes": 5206,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.youtube-shorts.metadata.json",
+      "path": "artifacts/delivery-packages/wood-frog/youtube-shorts/metadata.json",
+      "sha256": "90562879f6eee6258b01e470869ce80ba33d3b4a97fe824ebcb4719e43a1c75d",
+      "bytes": 2611,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.youtube-shorts.review.md",
+      "path": "artifacts/delivery-packages/wood-frog/youtube-shorts/review.md",
+      "sha256": "d84129a88d076c6099021375539d44a3e9be7907706bda2387a546b321170826",
+      "bytes": 2002,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.youtube-shorts.upload-copy.txt",
+      "path": "artifacts/delivery-packages/wood-frog/youtube-shorts/upload-copy.txt",
+      "sha256": "166d9bd47e8c3a8dc396c30424557033ce9225343f653844625ca5a6ef4f49c9",
+      "bytes": 2631,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.delivery.youtube-shorts.video.mp4",
+      "path": "artifacts/delivery-packages/wood-frog/youtube-shorts/video.mp4",
+      "sha256": "400edeccbfceb7a0269ec0926a88737b2421adb811d6be9b8aa64c77b5e242e1",
+      "bytes": 18493823,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.qa.contact-sheet.jpg",
+      "path": "artifacts/qa-evidence/wood-frog/contact-sheet.jpg",
+      "sha256": "ee26704b29eade70e5bcf03bc5ea745b8d12f43c2d2204d2abf7169b946e4411",
+      "bytes": 237934,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.qa.report.json",
+      "path": "artifacts/qa-evidence/wood-frog/report.json",
+      "sha256": "733094e95607507261418dfab90e62b2f850da1a37316e2fd625c003049412ea",
+      "bytes": 562,
+      "provenance": "DERIVED_RECOVERY_ARTIFACT"
+    },
+    {
+      "artifactId": "wood-frog.recovered-master",
+      "path": "artifacts/masters/wood-frog/wood-frog-narrated.mp4",
+      "sha256": "400edeccbfceb7a0269ec0926a88737b2421adb811d6be9b8aa64c77b5e242e1",
+      "bytes": 18493823,
+      "provenance": "RECOVERY_EQUIVALENT_REGENERATION"
+    }
+  ]
+}

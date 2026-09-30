@@ -1,6 +1,6 @@
 # Operational recovery closure and reconciliation
 
-Owner: Ahmet Nishefci. The owner accepts Phase 3, the separately accepted Wood Frog replacement and all documented historical gaps. Operational closure becomes effective upon the authorized reconciliation into main; it never implies recovered lost history. PR: https://github.com/AhmetNishefci/Magnivis/pull/1. Preserve both recovery branches and all Phase 0/1/2/3 reports. No Bridge source/experimental commits are incorporated.
+Owner: Ahmet Nishefci. The owner accepts Phase 3, the separately accepted Wood Frog replacement and all documented historical gaps. Operational closure is complete after the authorized reconciliation and fresh remote-main proof; it never implies recovered lost history. PR: https://github.com/AhmetNishefci/Magnivis/pull/1. Preserve both recovery branches and all Phase 0/1/2/3 reports. No Bridge source/experimental commits are incorporated.
 
 ## Review and independent proof
 
@@ -8,7 +8,7 @@ The starting canonical branch is recovery/wood-frog-canonical at 9a14749e4d072b8
 
 candidate-validation.json and logs record all local gates. closure-candidate-http1-proof.json and its 15 logs prove a fresh GitHub clone of a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec, not a local copy. It passed locked install, check (253 tests/17 files, typecheck/lint), 23-document/21-capability brain routing, status, all 110 Git-backed hashes, exact restore, verification, eight draft delivery validators, Wood Frog/TikTok source-production and caption validation and diff check. No pre-existing ignored project state was supplied. Node 22.23.3 and pnpm 10.17.1. The initial HTTP/2 transport failure preceded validation and was preserved; an independent HTTP/1.1 retry passed. Known unmeasured platform geometry returns expected INCOMPLETE, not a false mobile pass. Credential/ignored-file audit passed with zero findings.
 
-The final remote-main proof and exact reconciliation commit/parents/refs are recorded in subsequent closure receipts. Closure documentation adds no creative/source changes after the independently tested candidate. Do not infer a historical master, device approval or publication from this proof.
+GitHub PR #1 merged at 923641b6e00ef3196cf80ea6202aab8958e07330. closure-remote-main-proof.json and its 15 logs prove a separate fresh GitHub main clone passed the same gates, all 110 durable hashes, exact restore and eight draft deliveries. reconciliation.json records exact commits/parents/refs, hashes/counts and preserved branches. Closure documentation adds no creative/source changes after the independently tested candidate. Do not infer a historical master, device approval or publication from this proof.
 
 ## Durable state and history
 
@@ -22,4 +22,4 @@ The canonical brain preserves premium knowledge-media identity, open topic disco
 
 Accepted missing history remains: original Wood Frog bytes, unprovable original QA/package bytes, lost Meta screenshots/geometry, incomplete YouTube V2 measurements, missing publication metadata/analytics and device evidence. Renew actual presentation QA for YouTube Shorts mobile, TikTok, Instagram playback/grid and Facebook viewer/Page-feed in the next authorized production; record exact hashes, reviewer/time/device/OS/app where known and screenshots durably. Do not invent measurements or shrink every master into a universal crop.
 
-Recovery is CLOSED operationally upon main reconciliation; source/accepted artifacts are ready for NEW CONTENT DISCOVERY after separate owner authorization. No new topic research, video, Bridge, rendering, upload, publication or scheduling occurred in this closure milestone. Exact next human gate: authorize NEW CONTENT CYCLE #1 AFTER RECOVERY, starting from the full thematic universe and preserving all research/editorial/visual/device/publication gates. Do not start it here.
+Recovery is CLOSED operationally; source/accepted artifacts are ready for NEW CONTENT DISCOVERY after separate owner authorization. No new topic research, video, Bridge, rendering, upload, publication or scheduling occurred in this closure milestone. Exact next human gate: authorize NEW CONTENT CYCLE #1 AFTER RECOVERY, starting from the full thematic universe and preserving all research/editorial/visual/device/publication gates. Do not start it here.

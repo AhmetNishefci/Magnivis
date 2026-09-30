@@ -1,0 +1,32 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+
+
+ Test Files  17 passed (17)
+      Tests  253 passed (253)
+   Start at  23:36:35
+   Duration  637ms (transform 51%, import 38%, tests 10%, worker 1%)
+
+  Transform  transforming modules took 2.28s · 51% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns

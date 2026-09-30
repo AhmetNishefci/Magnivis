@@ -1,0 +1,30 @@
+
+> magnivis@0.1.0 platform:qa /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-remote-main-proof
+> tsx scripts/platform-qa.ts recovery-audit/phase-3/platform-regression-input.json
+
+{
+  "checks": [
+    {
+      "profileId": "safe-area.youtube-shorts.v2",
+      "state": "INCOMPLETE",
+      "violations": [],
+      "unresolved": [
+        "native exclusion zones",
+        "caption region"
+      ],
+      "trustedForProduction": false
+    },
+    {
+      "profileId": "safe-area.tiktok-feed.v2",
+      "state": "INCOMPLETE",
+      "violations": [],
+      "unresolved": [
+        "native exclusion zones",
+        "caption region"
+      ],
+      "trustedForProduction": true
+    }
+  ],
+  "realDeviceApprovalGranted": false
+}
+ ELIFECYCLE  Command failed with exit code 1.
