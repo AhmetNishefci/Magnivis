@@ -87,4 +87,4 @@ Knowledge Package V1, Content Asset V1, open-ended taxonomy, PlatformVariant V1,
 
 ## Recovery durability and presentation boundaries
 
-Artifact Storage V1 is now implemented in src/artifacts with local retrieval, immutable identity/provenance and status/verify/restore operators. Independent remote archival remains pending; no cloud adapter/infrastructure is deployed. PLATFORM-QA.md owns master/variant/presentation distinctions and typed surface/cover/device capabilities. Original scientific production inputs and the file-backed human approval/publication boundaries remain unchanged.
+Artifact Storage V1 is now implemented in src/artifacts with local retrieval, immutable identity/provenance and status/verify/restore operators. Phase 3 uses normal Git/GitHub for important exact artifacts at current scale; no cloud adapter/infrastructure is deployed. PLATFORM-QA.md owns master/variant/presentation distinctions and typed surface/cover/device capabilities. Original scientific production inputs and the file-backed human approval/publication boundaries remain unchanged.

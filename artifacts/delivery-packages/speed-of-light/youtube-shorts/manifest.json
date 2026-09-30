@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.speed-of-light.asset.earth-to-proxima.variant.youtube-shorts.recovery-phase-1.r1",
+  "generatedAt": "2026-09-30T19:23:10.217Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "speed-of-light.asset.earth-to-proxima.variant.youtube-shorts.recovery-phase-1",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "speed-of-light.asset.earth-to-proxima",
+      "revision": 1
+    },
+    "knowledgePackage": {
+      "id": "speed-of-light",
+      "revision": 1
+    },
+    "videoSpec": {
+      "id": "speed-of-light",
+      "compositionId": "Magnivis-Speed-Of-Light"
+    }
+  },
+  "destination": {
+    "platform": "youtube",
+    "surface": "youtube-shorts",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.youtube-shorts.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.youtube-shorts.v1",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 33.046,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "title": "Light Is Fast — Space Is Bigger",
+    "description": "Light travels fast enough to circle Earth about 7.5 times in one second. Yet sunlight still needs about 8 minutes 20 seconds to reach us, and even light takes about 4.25 years to reach Proxima Centauri.\n\nSources: NIST and NASA.\n\nMagnivis — See the unimaginable.",
+    "hashtags": [
+      "#space",
+      "#astronomy",
+      "#science"
+    ],
+    "cta": "What should Magnivis make visible next?",
+    "claimIds": [
+      "speed-of-light.claim.earth-laps-per-second",
+      "speed-of-light.claim.sun-earth-light-time",
+      "speed-of-light.claim.proxima-distance"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Select the opening Earth-laps frame with LIGHT CIRCLES EARTH fully legible."
+    }
+  },
+  "captions": {
+    "behavior": "external-track",
+    "designedBurnedIn": false,
+    "language": "en",
+    "artifactPath": "captions.en.vtt",
+    "humanReviewRequired": true
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "not-ready",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 16741384,
+      "sha256": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24"
+    },
+    {
+      "role": "captions",
+      "path": "captions.en.vtt",
+      "mediaType": "text/vtt",
+      "bytes": 754,
+      "sha256": "48e22610b1aa0b14b30557c9741649f8ad9306b4245da6a9c3fab371736bd3f6"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 1133,
+      "sha256": "aeca13503e6a342cd98f6c43523904086f3b0496374b104cb7e8f32a8189e3e9"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 1281,
+      "sha256": "8523759c3ebbf65b751a39e1caa291aaf5d9c0e00e70651aa82ed87d5c4db762"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1901,
+      "sha256": "119c3bbb7784a1d5105de8726c80f2e04c757a8ec47b52eb67df4b175aade43c"
+    }
+  ]
+}

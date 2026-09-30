@@ -26,6 +26,6 @@ for(const r of records){
  }};
  validateDeliveryPackage(r.directory,deps);
 }
-for(const m of manifests.filter(m=>m.artifactId!=='wood-frog.historical-master')) if((await verifyArtifact(await safePath(process.cwd(),m.localPath),m.identity)).state!=='VERIFIED')throw new Error(`Recovery bytes failed: ${m.artifactId}`);
+for(const m of manifests.filter(m=>m.retention==='DURABLE_REQUIRED')) if((await verifyArtifact(await safePath(process.cwd(),m.localPath),m.identity)).state!=='VERIFIED')throw new Error(`Recovery bytes failed: ${m.artifactId}`);
 z.array(presentationProfileSchema).parse(JSON.parse(readFileSync('artifacts/presentation-profiles.json','utf8')));
-console.log(JSON.stringify({passed:true,restoredArtifacts:manifests.length-1,deliveryPackages:records.length,historicalWoodFrog:'HASH_ONLY',publicationAuthorized:false}));
+console.log(JSON.stringify({passed:true,restoredArtifacts:manifests.filter(m=>m.retention==='DURABLE_REQUIRED').length,deliveryPackages:records.length,historicalWoodFrog:'HASH_ONLY',publicationAuthorized:false}));

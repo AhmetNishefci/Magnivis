@@ -31,8 +31,7 @@ export const verifyArtifact = async (path: string, identity: ArtifactManifest['i
  } catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return {state:'MISSING',sha256:null,bytes:null}; throw error; }
 };
 export class LocalArtifactStore implements ArtifactStore {
- readonly provider = 'local';
- constructor(readonly root: string) {}
+ constructor(readonly root: string, readonly provider = 'local') {}
  async available(key: string) {
   const path = await safePath(this.root,key);
   try { await access(path); return true; } catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return false; throw error; }
@@ -58,4 +57,11 @@ export const restoreArtifact = async (manifest: ArtifactManifest, root: string, 
   await link(temporary,destination);
   return {artifactId:manifest.artifactId,state:'RESTORED_EXACT_BYTES'};
  } finally { await unlink(temporary).catch(error => {if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;}); }
+};
+
+export const artifactDisposition = (manifest: ArtifactManifest, verification: ArtifactVerification, archived = false) => {
+ if (verification.state !== 'MISSING') return verification.state;
+ if (manifest.retention === 'HISTORICAL_EXPECTATION_ONLY') return 'HISTORICAL_MISSING_EXPECTATION';
+ if (['REGENERABLE','TEMPORARY','DURABLE_WHEN_APPROVED'].includes(manifest.retention)) return 'OPTIONAL_MISSING';
+ return archived ? 'RESTORE_AVAILABLE' : 'REQUIRED_MISSING';
 };

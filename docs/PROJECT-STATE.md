@@ -1,6 +1,6 @@
 # Project state
 
-Current recovery: Phase 2 on `recovery/wood-frog-canonical`. Checkpoint: ae797996382c337759612265fd8229e8d5f06eef, through Wood Frog. Source and historical approvals survive; reset/lost binary state is not erased. Preserved evidence branch: recovery/magnivis-post-reset. Millennium Bridge work is excluded; no new production is active or authorized.
+Current recovery: Phase 3 closure candidate (not CLOSED) on `recovery/wood-frog-canonical`. Checkpoint: ae797996382c337759612265fd8229e8d5f06eef, through Wood Frog. Source and historical approvals survive; reset/lost binary state is not erased. Preserved evidence branch: recovery/magnivis-post-reset. Millennium Bridge work is excluded; no new production is active or authorized.
 
 Wood Frog latest pre-reset upload occurrence is owner-confirmed. Platform, URL/ID, timestamp, visibility, uploaded hash, settings and analytics remain unknown. Existing registry has one generalized Speed of Light publication; earlier YouTube URLs remain legacy records. No new PublicationRecord is invented.
 
@@ -10,9 +10,11 @@ Recovered operational replacement SHA-256: `400edeccbfceb7a0269ec0926a88737b2421
 
 Speed of Light SHA-256 `f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24` reproduced exactly (RECOVERY_EXACT_REPRODUCTION). Eight encodes, eight QA directories and eight draft delivery packages are restored locally, 156 file manifests plus one missing historical expectation. Original review gates remain: replacement master acceptance does not approve variants, covers, private uploads or publication.
 
-Artifact Storage V1 local provider/status/verify/restore and identity/provenance records are implemented. Local `.artifact-store` is not independent durability; external archive selection/configuration/transfer remains pending. Clean-clone procedure: ARTIFACT-STORAGE.md. Multi-surface QA capabilities: PLATFORM-QA.md. YouTube V2 owner-policy recovery is active/default for future work but renewed measured review is pending; original profile bindings remain. Meta playback/grid and viewer/Page-feed reconciliation remains unmeasured/pending.
+Artifact Storage V1 now uses Git-backed durable bytes at current scale, retaining provider-neutral tooling. Important masters/derivatives, exact recovery delivery file sets, final QA reports/contact sheets and existing audio are manifest-bound in Git; scratch workspace/caches/representative frames remain ignored. Phase 3 clean-clone proof and brain audit are in recovery-audit/phase-3; policy/procedure: ARTIFACT-STORAGE.md. No external cloud storage is introduced.
 
-Current authorized work ends with Phase 2 validation, audit commit/push and owner review. Phase 3 gate: approve independent archive/restore drill and separately authorize fresh device evidence/publication-metadata reconciliation. No next video/long-form implementation/publication is authorized. Broader long-term strategy and roadmap remain intact, with quality-gated target scale rather than immediate quotas.
+Multi-surface QA capabilities remain in PLATFORM-QA.md. YouTube V2 owner-policy recovery is active/default for future work but renewed measured review is pending; original profile bindings remain. Meta playback/grid and viewer/Page-feed reconciliation remains unmeasured/pending. No historical publication metadata is fabricated.
+
+Current authorized work ends with Phase 3 validation, audit commit/push and owner review. Recovery is a closure candidate; no merge to main, new topic/video, long-form implementation or platform action is authorized. RECOVERY-CLOSE-CANDIDATE.md gives later reconciliation steps. The open thematic universe, quality-gated target capacity and long-term roadmap remain intact.
 
 The checkpoint log below preserves what was known then. Its NOW/NEXT tasks are historical context, not current authorization. Recovery owner evidence supplements it; it does not fill lost platform metadata.
 

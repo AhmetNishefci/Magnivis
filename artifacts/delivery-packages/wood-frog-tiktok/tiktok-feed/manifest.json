@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.tiktok-feed.recovery-phase-1.r1",
+  "generatedAt": "2026-09-30T19:15:34.576Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works.variant.tiktok-feed.recovery-phase-1",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works",
+      "revision": 2
+    },
+    "knowledgePackage": {
+      "id": "wood-frog-freeze-tolerance",
+      "revision": 2
+    },
+    "videoSpec": {
+      "id": "wood-frog-tiktok",
+      "compositionId": "Magnivis-Wood-Frog-TikTok"
+    }
+  },
+  "destination": {
+    "platform": "tiktok",
+    "surface": "tiktok-feed",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.tiktok-feed.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.tiktok-feed.v2",
+      "revision": 2,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 40.043,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "caption": "A wood frog can survive a freeze that stops its heartbeat—then thaw and recover. It survives by controlling the freeze, not by staying unfrozen.",
+    "hashtags": [
+      "#biology",
+      "#nature",
+      "#science",
+      "#woodfrog"
+    ],
+    "cta": "What survival adaptation should we explain next?",
+    "claimIds": [
+      "wood-frog-freeze-tolerance.claim.freeze-survival",
+      "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+      "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Evaluate the TikTok-safe opening frog-and-cardiac-trace frame around 3.1 seconds; keep the frog and ITS HEARTBEAT CAN STOP clear of top navigation and the profile crop."
+    }
+  },
+  "captions": {
+    "behavior": "burned-in",
+    "designedBurnedIn": true,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "operatorGuidance": {
+    "visibility": "private-preview",
+    "originalAudio": "preserve",
+    "aiGeneratedContentDisclosure": {
+      "recommendation": "enable",
+      "currentPolicyConfirmationRequired": true,
+      "rationale": "Enable the TikTok AI-generated-content label for this synthetic-narration, procedural-visual production, consistent with the prior Magnivis TikTok private-review workflow; still confirm the current label wording in the UI."
+    },
+    "commercialContentDisclosure": {
+      "recommendation": "disable",
+      "rationale": "This Magnivis production contains no paid promotion, product placement, or branded-content relationship."
+    },
+    "nativeCaptions": {
+      "recommendation": "evaluate-during-private-preview",
+      "rationale": "Do not enable a second visible auto-caption layer by default. Test privately only if TikTok offers an accessibility mode that does not duplicate the burned-in captions."
+    },
+    "location": "none",
+    "link": "none",
+    "notes": [
+      "Do not schedule or publish during this review pass.",
+      "Keep the original rendered audio; do not add platform music.",
+      "The designed burned-in captions must remain visible."
+    ]
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "not-ready",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 18519210,
+      "sha256": "99e38b8d129a2eae1842fbba234f8d7a5c355c45fcd5cb99e0fe73d2ac4ee5f3"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 2456,
+      "sha256": "72a805f5ab363ee0e12bac73727452161aa67e7ba80970ba2c96368767fa41b2"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 2343,
+      "sha256": "21fa398e5976474d1ac0f5d030e9b1422d1b453780e4b50ac54a26d65877f59f"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 2024,
+      "sha256": "1e1242ea22ba5096029ca1a05e249b0fb1133026e80c7553e10d7c931cdd2607"
+    }
+  ]
+}

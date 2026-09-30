@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.speed-of-light.asset.earth-to-proxima.variant.instagram-reels.recovery-phase-1.r1",
+  "generatedAt": "2026-09-30T19:23:10.217Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "speed-of-light.asset.earth-to-proxima.variant.instagram-reels.recovery-phase-1",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "speed-of-light.asset.earth-to-proxima",
+      "revision": 1
+    },
+    "knowledgePackage": {
+      "id": "speed-of-light",
+      "revision": 1
+    },
+    "videoSpec": {
+      "id": "speed-of-light",
+      "compositionId": "Magnivis-Speed-Of-Light"
+    }
+  },
+  "destination": {
+    "platform": "instagram",
+    "surface": "instagram-reels",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.instagram-reels.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.instagram-reels.v1",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 33.046,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "caption": "In one second, light could circle Earth about 7.5 times. But reaching the nearest star still takes about 4.25 years. Space is bigger than speed feels.",
+    "hashtags": [
+      "#space",
+      "#science",
+      "#astronomy",
+      "#physics"
+    ],
+    "cta": "Save this for the next time someone calls a light-year a unit of time.",
+    "claimIds": [
+      "speed-of-light.claim.earth-laps-per-second",
+      "speed-of-light.claim.proxima-distance",
+      "speed-of-light.claim.light-year-is-distance"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Select a high-contrast Earth-laps frame whose headline remains legible in profile-grid cropping."
+    }
+  },
+  "captions": {
+    "behavior": "platform-generated",
+    "designedBurnedIn": false,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "not-ready",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 16741384,
+      "sha256": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 1058,
+      "sha256": "72b14b614e30234fc9423d2b6e95967bfce7ff5e8c426bd1935fa2bae25886de"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 1137,
+      "sha256": "f1225113aa1c9380a777194ed60bb00e5de4f1cfbbe6069320f2bd03d9271d1f"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1938,
+      "sha256": "cf4727f48d9566d9f90e0327e6c8e09fd97bd808676b5764558f7155b508996b"
+    }
+  ]
+}

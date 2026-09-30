@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.speed-of-light.asset.earth-to-proxima.variant.facebook-reels.recovery-phase-1.r1",
+  "generatedAt": "2026-09-30T19:23:10.217Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "speed-of-light.asset.earth-to-proxima.variant.facebook-reels.recovery-phase-1",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "speed-of-light.asset.earth-to-proxima",
+      "revision": 1
+    },
+    "knowledgePackage": {
+      "id": "speed-of-light",
+      "revision": 1
+    },
+    "videoSpec": {
+      "id": "speed-of-light",
+      "compositionId": "Magnivis-Speed-Of-Light"
+    }
+  },
+  "destination": {
+    "platform": "facebook",
+    "surface": "facebook-reels",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.facebook-reels.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.facebook-reels.v1",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 33.046,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "caption": "Light moves almost 300,000 kilometers every second—yet the nearest neighboring star is still about 4.25 light-years away.",
+    "hashtags": [
+      "#science",
+      "#space",
+      "#astronomy"
+    ],
+    "cta": "Which impossible distance should Magnivis explain next?",
+    "claimIds": [
+      "speed-of-light.claim.vacuum-speed",
+      "speed-of-light.claim.proxima-distance"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Use the opening Earth-laps frame with the core comparison readable before playback."
+    }
+  },
+  "captions": {
+    "behavior": "platform-generated",
+    "designedBurnedIn": false,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "not-ready",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 16741384,
+      "sha256": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 981,
+      "sha256": "4bb2fcecab386c5c4e8c63e9b3c7a79881bffd08ebfd9f6bb94916dfb328d9a2"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 1016,
+      "sha256": "424043377fd34865d85986b57b4555850487feb0e3f06714bbeed9f00ecf3e01"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1923,
+      "sha256": "da16a8f4dbdb1f4c0f1e625a0601a265f9f6b2e4d7537b172791f8125933919a"
+    }
+  ]
+}

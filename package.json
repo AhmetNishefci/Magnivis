@@ -43,7 +43,9 @@
     "artifacts:verify": "tsx scripts/artifacts.ts verify",
     "artifacts:restore": "tsx scripts/artifacts.ts restore",
     "recovery:validate": "tsx scripts/recovery-validate.ts",
-    "platform:qa": "tsx scripts/platform-qa.ts"
+    "platform:qa": "tsx scripts/platform-qa.ts",
+    "artifacts:durable": "tsx scripts/verify-durable-artifacts.ts",
+    "recovery:brain": "tsx scripts/recovery-brain.ts"
   },
   "dependencies": {
     "@fontsource/manrope": "5.3.0",

@@ -92,3 +92,7 @@ pnpm delivery:validate wood-frog
 ## Multi-surface review
 
 PLATFORM-QA.md owns distinct caption-region/native-overlay/device checks. Checkpoint phrase, emphasis, whitespace and narration reconstruction remain unchanged. A general visual-safe rectangle or desktop pass does not establish mobile caption safety. Unknown caption-specific geometry is reported as incomplete, not silently inherited.
+
+## Per-video caption judgment
+
+Designed captions are editorial/visual storytelling, not automatic subtitle dumps. Choose phrase grouping, emphasis, hierarchy, line breaks, timing, placement and restrained treatment for each video's spoken rhythm, hook, pacing, composition, readability, curiosity, retention, comprehension and semantic/emotional payoff. Prefer meaningful speech units over arbitrary word counts. Preserve approved narration meaning, wording/provenance and timing; never introduce claim-changing caption clickbait. Wood Frog is a quality reference, not a rigid universal pattern. CaptionPlan remains first-class and designed captions remain critical content requiring independent presentation QA. Future treatment changes still require the relevant approval gates; recovery changes no existing captions.

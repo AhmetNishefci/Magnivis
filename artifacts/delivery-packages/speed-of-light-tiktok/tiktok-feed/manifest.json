@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.speed-of-light.asset.earth-to-proxima.variant.tiktok-feed.recovery-phase-1.r1",
+  "generatedAt": "2026-09-30T19:23:10.217Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "speed-of-light.asset.earth-to-proxima.variant.tiktok-feed.recovery-phase-1",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "speed-of-light.asset.earth-to-proxima",
+      "revision": 1
+    },
+    "knowledgePackage": {
+      "id": "speed-of-light",
+      "revision": 1
+    },
+    "videoSpec": {
+      "id": "speed-of-light-tiktok",
+      "compositionId": "Magnivis-Speed-Of-Light-TikTok"
+    }
+  },
+  "destination": {
+    "platform": "tiktok",
+    "surface": "tiktok-feed",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.tiktok-feed.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.tiktok-feed.v2",
+      "revision": 2,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 33.046,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "caption": "Light can circle Earth 7.5 times in one second. Space still makes it look slow.",
+    "hashtags": [
+      "#space",
+      "#physics",
+      "#astronomy",
+      "#learn-on-tiktok"
+    ],
+    "cta": "What scale should we visualize next?",
+    "claimIds": [
+      "speed-of-light.claim.earth-laps-per-second"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Use the Earth-laps frame with the 7.5× metric visible and no extra cover copy."
+    }
+  },
+  "captions": {
+    "behavior": "platform-generated",
+    "designedBurnedIn": false,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "not-ready",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 16815846,
+      "sha256": "757e0b5019b1f809cc960e927d60bc1eb3fbf5460f7d4071b66c2ae47089c22c"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 924,
+      "sha256": "20de8605675f81357a55d9e83b8967d9907b4faf1ae3be5288d919e7c1a873b7"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 906,
+      "sha256": "37fb709cb6841d79f2c7ca0e24efea20d2c335c93b23b7fbb780f5312bdb933f"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1913,
+      "sha256": "9c1524282dc8f8c89678efde1953c4f9365b27fcceeb81c8b9e2a0483073a58f"
+    }
+  ]
+}
