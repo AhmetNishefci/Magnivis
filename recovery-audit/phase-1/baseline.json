@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "b6ca084170a54fc2638bae7abcd2e1236943cb1d",
+  "checkpoint": "ae797996382c337759612265fd8229e8d5f06eef",
+  "node": "22.23.3",
+  "pnpm": "10.17.1",
+  "tests": 208,
+  "testFiles": 13,
+  "baselineCheck": "passed",
+  "statusAfterAuditCopy": " M .gitignore\n?? recovery-audit/phase-1/\n?? scripts/recovery-deliveries.ts\n?? scripts/recovery-delivery-support.ts\n?? tests/recovery-delivery.test.ts\n",
+  "staging": "recovery-work/ (ignored; canonical media paths untouched)",
+  "qaProjection": {
+    "sourceSha256": "8f1bcdc8d743ed269f04e4018536f86fce1434e8e359d696cbbe47e3b51f71a9",
+    "stagedSha256": "45a1445cdb53b99068b6925c1552a91d49d9bda457be66163b8c6115b25e970a",
+    "changes": "input/output paths and import relocation only; all QA assertions/frame/contact sheet recipes preserved"
+  },
+  "statusCaptureContext": "Captured after helper creation; initial baseline check was HEAD b6ca084 (checkpoint + forensic audit) with untracked Phase1 report setup only."
+}

@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "counts": {
+    "scope": "24 primary units: 8 routed renders, 8 QA directories, 8 canonical destination replacement packages. Diagnostic repeat/still frames, copied surviving captions and initial partial delivery attempt excluded.",
+    "exactMatchArtifactCount": 1,
+    "equivalentRegenerationCount": 23,
+    "failedRegenerationCount": 0,
+    "stillLostOriginalUnitCount": 23,
+    "stillLostScope": "Exact historical original identity/bytes, not absence of replacement outputs; overlaps successful equivalent count. Other owner evidence/Meta unknowns outside 24-unit scope."
+  },
+  "items": [
+    {
+      "id": "media.wood-frog",
+      "kind": "render",
+      "historicalIdentity": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2",
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Wood-Frog",
+        "recovery-work/wood-frog/wood-frog-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "400edeccbfceb7a0269ec0926a88737b2421adb811d6be9b8aa64c77b5e242e1",
+      "exactMatch": false,
+      "classification": "EQUIVALENT_REGENERATION_CANDIDATE",
+      "mediaEquivalence": "Unchanged checkpoint source/inputs and technical QA; historical decoded comparison unavailable.",
+      "missingDependencies": [],
+      "path": "recovery-work/wood-frog/wood-frog-narrated.mp4",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "qa.wood-frog",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-wood-frog.ts",
+        "wood-frog"
+      ],
+      "regeneratedIdentity": "3b896e711c4aedd8974a42c5d4040fa2d828a0cae906526c339bcb8faccfed01",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/wood-frog/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "media.wood-frog-tiktok",
+      "kind": "render",
+      "historicalIdentity": null,
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Wood-Frog-TikTok",
+        "recovery-work/wood-frog-tiktok/wood-frog-tiktok-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "99e38b8d129a2eae1842fbba234f8d7a5c355c45fcd5cb99e0fe73d2ac4ee5f3",
+      "exactMatch": null,
+      "classification": "EQUIVALENT_REGENERATION_CANDIDATE",
+      "mediaEquivalence": "Unchanged checkpoint source/inputs and technical QA; historical decoded comparison unavailable.",
+      "missingDependencies": [],
+      "path": "recovery-work/wood-frog-tiktok/wood-frog-tiktok-narrated.mp4",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "qa.wood-frog-tiktok",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-wood-frog-tiktok.ts",
+        "wood-frog-tiktok"
+      ],
+      "regeneratedIdentity": "ec9fb6e2390ba1edd67743a59954640464c7e9149ed0fce5fe2d502518a9e48f",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/wood-frog-tiktok/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "media.speed-of-light",
+      "kind": "render",
+      "historicalIdentity": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24",
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Speed-Of-Light",
+        "recovery-work/speed-of-light/speed-of-light-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "f157f7ef91740ecd7c679156c6a227318b462fe33d13018ff39ab708ef480f24",
+      "exactMatch": true,
+      "classification": "EXACT_REPRODUCTION",
+      "mediaEquivalence": "Exact full file identity",
+      "missingDependencies": [],
+      "path": "recovery-work/speed-of-light/speed-of-light-narrated.mp4",
+      "historicalOriginalRecovered": true
+    },
+    {
+      "id": "qa.speed-of-light",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-speed-of-light.ts",
+        "speed-of-light"
+      ],
+      "regeneratedIdentity": "5988ce85cd4f56ceec13d4157c28a7fd6e105aad6df1893e285842c4b760ac9c",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/speed-of-light/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "media.speed-of-light-tiktok",
+      "kind": "render",
+      "historicalIdentity": null,
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Speed-Of-Light-TikTok",
+        "recovery-work/speed-of-light-tiktok/speed-of-light-tiktok-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "757e0b5019b1f809cc960e927d60bc1eb3fbf5460f7d4071b66c2ae47089c22c",
+      "exactMatch": null,
+      "classification": "EQUIVALENT_REGENERATION_CANDIDATE",
+      "mediaEquivalence": "Unchanged checkpoint source/inputs and technical QA; historical decoded comparison unavailable.",
+      "missingDependencies": [],
+      "path": "recovery-work/speed-of-light-tiktok/speed-of-light-tiktok-narrated.mp4",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "qa.speed-of-light-tiktok",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-speed-of-light-tiktok.ts",
+        "speed-of-light-tiktok"
+      ],
+      "regeneratedIdentity": "f3b85487569e9b0419c83cd47b28c01389d7a492f1ae16c02eb207d690ea9c7d",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/speed-of-light-tiktok/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "media.earth-to-stars",
+      "kind": "render",
+      "historicalIdentity": null,
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Earth-To-Stars",
+        "recovery-work/earth-to-stars/earth-to-stars-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "f3ae92bee16a7bb44de25081297235ff01afba3e79494a9559e0dea4c50dc37a",
+      "exactMatch": null,
+      "classification": "EQUIVALENT_REGENERATION_CANDIDATE",
+      "mediaEquivalence": "Unchanged checkpoint source/inputs and technical QA; historical decoded comparison unavailable.",
+      "missingDependencies": [],
+      "path": "recovery-work/earth-to-stars/earth-to-stars-narrated.mp4",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "qa.earth-to-stars",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-earth-to-stars.ts",
+        "earth-to-stars"
+      ],
+      "regeneratedIdentity": "99457f71f981dc1d07b7145659f5ec749173db3bf047ebc63dc72163708eedd6",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/earth-to-stars/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "media.ocean-depth",
+      "kind": "render",
+      "historicalIdentity": null,
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Ocean-Depth",
+        "recovery-work/ocean-depth/ocean-depth-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "e07330d4ffea657bd9c76449d1dec3b821b55dca20dfa195c917c3f746b435f5",
+      "exactMatch": null,
+      "classification": "EQUIVALENT_REGENERATION_CANDIDATE",
+      "mediaEquivalence": "Unchanged checkpoint source/inputs and technical QA; historical decoded comparison unavailable.",
+      "missingDependencies": [],
+      "path": "recovery-work/ocean-depth/ocean-depth-narrated.mp4",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "qa.ocean-depth",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-ocean-depth.ts",
+        "ocean-depth"
+      ],
+      "regeneratedIdentity": "984d954c3545b95c06fd0d79092b09e40f26d435804473cebd4338ca58f40b74",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/ocean-depth/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "media.billion-dollars",
+      "kind": "render",
+      "historicalIdentity": null,
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Billion-Dollars",
+        "recovery-work/billion-dollars/billion-dollars-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "85fefb4eb5338e646b601734be4cdcfa68ebe8c0249c7b81c837734a7b0423de",
+      "exactMatch": null,
+      "classification": "EQUIVALENT_REGENERATION_CANDIDATE",
+      "mediaEquivalence": "Unchanged checkpoint source/inputs and technical QA; historical decoded comparison unavailable.",
+      "missingDependencies": [],
+      "path": "recovery-work/billion-dollars/billion-dollars-narrated.mp4",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "qa.billion-dollars",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-billion-dollars.ts",
+        "billion-dollars"
+      ],
+      "regeneratedIdentity": "ddc1b247bc86028cce293774788ce3479c4cf1a478a4f3e0a732a2d8f9dba953",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/billion-dollars/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "media.human-engineering",
+      "kind": "render",
+      "historicalIdentity": null,
+      "recipe": [
+        "pnpm",
+        "exec",
+        "remotion",
+        "render",
+        "src/index.ts",
+        "Magnivis-Human-Engineering",
+        "recovery-work/human-engineering/human-engineering-narrated.mp4",
+        "--codec=h264",
+        "--audio-codec=aac",
+        "--video-bitrate=8M",
+        "--audio-bitrate=192K",
+        "--pixel-format=yuv420p",
+        "--overwrite"
+      ],
+      "regeneratedIdentity": "fe8e761aaaf456051685042e7e9a56eddcdf2a5cd2a29268c2d214b1e0958a8d",
+      "exactMatch": null,
+      "classification": "EQUIVALENT_REGENERATION_CANDIDATE",
+      "mediaEquivalence": "Unchanged checkpoint source/inputs and technical QA; historical decoded comparison unavailable.",
+      "missingDependencies": [],
+      "path": "recovery-work/human-engineering/human-engineering-narrated.mp4",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "qa.human-engineering",
+      "kind": "qa-directory",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "recovery-work/programs/qa-human-engineering.ts",
+        "human-engineering"
+      ],
+      "regeneratedIdentity": "a165d3ac333bfece2c1dbff48c82a7c46acc33af431837cd222a495b6f3175e1",
+      "identityAlgorithm": "SHA256 of sorted relative-path/file-SHA256 pairs JSON; labeled report and RECOVERY.md included",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Technical QA passed; original report/frames/checklist times/hash ledger unavailable",
+      "missingDependencies": [],
+      "path": "recovery-work/human-engineering/qa",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.facebook-reels",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "wood-frog",
+        "deliveries-complete"
+      ],
+      "regeneratedIdentity": "d489e0cf14172f357210f129ee3a60c18820bd2656cba8312d16fc0d1d2b1084",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/wood-frog/deliveries-complete/packages/wood-frog/facebook-reels",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.instagram-reels",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "wood-frog",
+        "deliveries-complete"
+      ],
+      "regeneratedIdentity": "30c695fd10a1ed613ee206fdfd2c7693e05eca5e53379d76abc21b92302029d4",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/wood-frog/deliveries-complete/packages/wood-frog/instagram-reels",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.tiktok-feed",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "wood-frog",
+        "deliveries-complete"
+      ],
+      "regeneratedIdentity": "e402a4c1e8834014a1f32a185fef5c21b099403f27b5b9eedf0bc2120630fe58",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/wood-frog/deliveries-complete/packages/wood-frog-tiktok/tiktok-feed",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.youtube-shorts",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "wood-frog",
+        "deliveries-complete"
+      ],
+      "regeneratedIdentity": "169c473958513d89d9b5b641a9c75793d8de392449ff9da905498818559ff856",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/wood-frog/deliveries-complete/packages/wood-frog/youtube-shorts",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.speed-of-light.asset.earth-to-proxima.variant.facebook-reels",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "speed-of-light"
+      ],
+      "regeneratedIdentity": "eb7b2a0d940d14d1861f2469ef48ec897f4a690bacf9c635d57bfb1c64f8682b",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/speed-of-light/deliveries/packages/speed-of-light/facebook-reels",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.speed-of-light.asset.earth-to-proxima.variant.instagram-reels",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "speed-of-light"
+      ],
+      "regeneratedIdentity": "5f7ede7e061e900b5cb9dcd7d8c455b8b152aa7b6ea3bf8e36ab819e4ab43b08",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/speed-of-light/deliveries/packages/speed-of-light/instagram-reels",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.speed-of-light.asset.earth-to-proxima.variant.tiktok-feed",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "speed-of-light"
+      ],
+      "regeneratedIdentity": "ea5fc006859ad0ca0c8154e0054b289808540e9c694f72405f76bcc8138f2320",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/speed-of-light/deliveries/packages/speed-of-light-tiktok/tiktok-feed",
+      "historicalOriginalRecovered": false
+    },
+    {
+      "id": "delivery.speed-of-light.asset.earth-to-proxima.variant.youtube-shorts",
+      "kind": "delivery-package",
+      "historicalIdentity": null,
+      "recipe": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/recovery-deliveries.ts",
+        "speed-of-light"
+      ],
+      "regeneratedIdentity": "381afccdb73ef05286c22de1e007477d81d8060339327dcec735bee361a52f90",
+      "exactMatch": null,
+      "classification": "RECOVERY_GENERATED_EQUIVALENT",
+      "mediaEquivalence": "Exact copy of staged media and unchanged packaging/caption choices; new identity/timestamp/checklist, unapproved",
+      "missingDependencies": [],
+      "path": "/Users/ahmetnishefci/Developer/Magnivis/recovery-work/speed-of-light/deliveries/packages/speed-of-light/youtube-shorts",
+      "historicalOriginalRecovered": false
+    }
+  ],
+  "phase0RegenerableCoverage": [
+    {
+      "phase0Id": "R051",
+      "phase0Item": "Wood Frog TikTok derivative",
+      "phase1ArtifactIds": [
+        "media.wood-frog-tiktok"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R052",
+      "phase0Item": "Wood Frog QA images/media report",
+      "phase1ArtifactIds": [
+        "qa.wood-frog",
+        "qa.wood-frog-tiktok"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R073",
+      "phase0Item": "earth-to-stars original master",
+      "phase1ArtifactIds": [
+        "media.earth-to-stars"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R074",
+      "phase0Item": "earth-to-stars historical QA",
+      "phase1ArtifactIds": [
+        "qa.earth-to-stars"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R077",
+      "phase0Item": "ocean-depth original master",
+      "phase1ArtifactIds": [
+        "media.ocean-depth"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R078",
+      "phase0Item": "ocean-depth historical QA",
+      "phase1ArtifactIds": [
+        "qa.ocean-depth"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R081",
+      "phase0Item": "billion-dollars original master",
+      "phase1ArtifactIds": [
+        "media.billion-dollars"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R082",
+      "phase0Item": "billion-dollars historical QA",
+      "phase1ArtifactIds": [
+        "qa.billion-dollars"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R086",
+      "phase0Item": "speed-of-light historical QA",
+      "phase1ArtifactIds": [
+        "qa.speed-of-light"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R089",
+      "phase0Item": "human-engineering original master",
+      "phase1ArtifactIds": [
+        "media.human-engineering"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R090",
+      "phase0Item": "human-engineering historical QA",
+      "phase1ArtifactIds": [
+        "qa.human-engineering"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R092",
+      "phase0Item": "Speed of Light TikTok V2 rendered master",
+      "phase1ArtifactIds": [
+        "media.speed-of-light-tiktok"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R093",
+      "phase0Item": "speed-of-light youtube-shorts delivery content",
+      "phase1ArtifactIds": [
+        "delivery.speed-of-light.asset.earth-to-proxima.variant.youtube-shorts"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R095",
+      "phase0Item": "speed-of-light tiktok-feed delivery content",
+      "phase1ArtifactIds": [
+        "delivery.speed-of-light.asset.earth-to-proxima.variant.tiktok-feed"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R097",
+      "phase0Item": "speed-of-light instagram-reels delivery content",
+      "phase1ArtifactIds": [
+        "delivery.speed-of-light.asset.earth-to-proxima.variant.instagram-reels"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R099",
+      "phase0Item": "speed-of-light facebook-reels delivery content",
+      "phase1ArtifactIds": [
+        "delivery.speed-of-light.asset.earth-to-proxima.variant.facebook-reels"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R101",
+      "phase0Item": "wood-frog youtube-shorts delivery content",
+      "phase1ArtifactIds": [
+        "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.youtube-shorts"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R103",
+      "phase0Item": "wood-frog tiktok-feed delivery content",
+      "phase1ArtifactIds": [
+        "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.tiktok-feed"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R105",
+      "phase0Item": "wood-frog instagram-reels delivery content",
+      "phase1ArtifactIds": [
+        "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.instagram-reels"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    },
+    {
+      "phase0Id": "R107",
+      "phase0Item": "wood-frog facebook-reels delivery content",
+      "phase1ArtifactIds": [
+        "delivery.wood-frog-freeze-tolerance.asset.how-freezing-works.variant.facebook-reels"
+      ],
+      "result": "All linked regeneration candidates succeeded; historical exactness only when a trusted hash exists and matches."
+    }
+  ]
+}

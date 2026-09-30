@@ -1,0 +1,654 @@
+{
+  "label": "RECOVERY-GENERATED",
+  "approvedEditorialChain": "passed",
+  "videoSpecs": "passed",
+  "captionReconstruction": "passed",
+  "approvalHashes": {
+    "knowledgePackage": "098f6efe9930ee2b6424d7431efd03944c8378288588756c761229792f7bd403",
+    "contentAsset": "44a7674b0b5016cedddeb535e6ef5ca3ed190467002b5b0fec75b35c9e904ae7",
+    "ownerDecision": "edb5f6a0d4d49c10fd9cd86d2d57c544970553cb0fa6fcf924b372fab6833424",
+    "script": "a2ea7e39fe6409c13b1a2102b403187f222995d52100f25b6ec9a1876cb859bb",
+    "captionPlan": "7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51"
+  },
+  "plan": {
+    "schemaVersion": 1,
+    "id": "production-plan.wood-frog-freeze.v1",
+    "revision": 3,
+    "status": "owner-visual-approved",
+    "knowledgePackage": {
+      "id": "wood-frog-freeze-tolerance",
+      "revision": 2,
+      "sha256": "098f6efe9930ee2b6424d7431efd03944c8378288588756c761229792f7bd403"
+    },
+    "contentAsset": {
+      "id": "wood-frog-freeze-tolerance.asset.how-freezing-works",
+      "revision": 2,
+      "sha256": "44a7674b0b5016cedddeb535e6ef5ca3ed190467002b5b0fec75b35c9e904ae7"
+    },
+    "ownerDecision": {
+      "id": "owner-decision.wood-frog-freeze.v1",
+      "revision": 1,
+      "sha256": "edb5f6a0d4d49c10fd9cd86d2d57c544970553cb0fa6fcf924b372fab6833424"
+    },
+    "approvedScriptSha256": "a2ea7e39fe6409c13b1a2102b403187f222995d52100f25b6ec9a1876cb859bb",
+    "excludedClaimIds": [
+      "wood-frog-freeze-tolerance.claim.circulation-cessation"
+    ],
+    "format": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 40
+    },
+    "safeAreaProfileId": "safe-area.vertical-short-master.v1",
+    "beats": [
+      {
+        "id": "production-plan.wood-frog-freeze.v1.beat.cardiac-hook",
+        "sourceVisualPlanId": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.frozen-flatline",
+        "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.hook",
+        "scriptSegmentIds": [
+          "wood-frog-freeze-tolerance.asset.how-freezing-works.script.hook"
+        ],
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.freeze-survival",
+          "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+          "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+        ],
+        "frames": {
+          "start": 0,
+          "end": 156
+        },
+        "sceneType": "hook",
+        "objective": "Introduce a recognizable wood frog and show labeled cardiac activity slowing to a reversible stop during freezing.",
+        "onScreenText": [
+          {
+            "text": "HEART ACTIVITY",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.cardiac-arrest"
+            ]
+          },
+          {
+            "text": "STOPS",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.cardiac-arrest"
+            ]
+          }
+        ],
+        "animationIntent": "Frost advances across the original frog silhouette while a non-medical cardiac trace slows and settles into a quiet line.",
+        "transitionIntent": "Camera follows a luminous contour into a simplified tissue cross-section.",
+        "audioIntent": "Restrained organic pulses decelerate without alarms or death cues."
+      },
+      {
+        "id": "production-plan.wood-frog-freeze.v1.beat.extracellular-ice",
+        "sourceVisualPlanId": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.body-freeze",
+        "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.setup",
+        "scriptSegmentIds": [
+          "wood-frog-freeze-tolerance.asset.how-freezing-works.script.freeze"
+        ],
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.freeze-survival",
+          "wood-frog-freeze-tolerance.claim.ice-redistribution"
+        ],
+        "frames": {
+          "start": 156,
+          "end": 282
+        },
+        "sceneType": "anatomical-overview",
+        "objective": "Reveal that survivable ice accumulates around tissues and outside cells rather than uniformly filling them.",
+        "onScreenText": [
+          {
+            "text": "ICE FORMS",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.ice-redistribution"
+            ]
+          },
+          {
+            "text": "OUTSIDE CELLS",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.ice-redistribution"
+            ]
+          }
+        ],
+        "animationIntent": "A diagrammatic cutaway reveals warm cell islands surrounded by branching extracellular ice channels.",
+        "transitionIntent": "Magnify one protected cell while preserving its spatial relationship to the surrounding ice.",
+        "audioIntent": "Crystalline textures widen as the diagram opens."
+      },
+      {
+        "id": "production-plan.wood-frog-freeze.v1.beat.cell-dehydration",
+        "sourceVisualPlanId": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.ice-location",
+        "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.physical-mechanism",
+        "scriptSegmentIds": [
+          "wood-frog-freeze-tolerance.asset.how-freezing-works.script.location"
+        ],
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.ice-redistribution"
+        ],
+        "frames": {
+          "start": 282,
+          "end": 534
+        },
+        "sceneType": "cell-diagram",
+        "objective": "Show water moving out of a cell as extracellular ice grows, with intracellular ice presented only as the avoided danger.",
+        "onScreenText": [
+          {
+            "text": "WATER MOVES OUT",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.ice-redistribution"
+            ]
+          },
+          {
+            "text": "INTRACELLULAR ICE · AVOIDED",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.ice-redistribution"
+            ]
+          }
+        ],
+        "animationIntent": "Water particles cross the membrane outward, the cell contracts modestly, and a separate crossed-out inset labels internal ice as danger—not a normal stage.",
+        "transitionIntent": "Water particles reorganize into a left-to-right biological phase timeline.",
+        "audioIntent": "Fine droplets and a muted protective tone replace the colder freeze texture."
+      },
+      {
+        "id": "production-plan.wood-frog-freeze.v1.beat.cryoprotectants",
+        "sourceVisualPlanId": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.cryoprotectants",
+        "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.chemical-mechanism",
+        "scriptSegmentIds": [
+          "wood-frog-freeze-tolerance.asset.how-freezing-works.script.chemistry",
+          "wood-frog-freeze-tolerance.asset.how-freezing-works.script.protection"
+        ],
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+          "wood-frog-freeze-tolerance.claim.urea-and-glucose"
+        ],
+        "frames": {
+          "start": 534,
+          "end": 858
+        },
+        "sceneType": "phase-diagram",
+        "objective": "Separate pre-freeze urea accumulation from freeze-triggered liver glucose mobilization, then show their combined protective contribution.",
+        "onScreenText": [
+          {
+            "text": "BEFORE FREEZING · UREA BUILDS",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.urea-and-glucose"
+            ]
+          },
+          {
+            "text": "FREEZING BEGINS · LIVER RELEASES GLUCOSE",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant"
+            ]
+          },
+          {
+            "text": "CRYOPROTECTION",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+              "wood-frog-freeze-tolerance.claim.urea-and-glucose"
+            ]
+          }
+        ],
+        "animationIntent": "A phase rail activates urea first, then ice nucleation triggers a liver-to-tissue glucose path; both finish around a protected cell without molecular overclaiming.",
+        "transitionIntent": "The phase rail reverses direction as cold blue shifts toward thawed green-gold.",
+        "audioIntent": "Two distinct restrained tonal motifs merge under the protection state."
+      },
+      {
+        "id": "production-plan.wood-frog-freeze.v1.beat.ordered-recovery",
+        "sourceVisualPlanId": "wood-frog-freeze-tolerance.asset.how-freezing-works.visual.thaw-payoff",
+        "narrativeBeatId": "wood-frog-freeze-tolerance.asset.how-freezing-works.beat.payoff",
+        "scriptSegmentIds": [
+          "wood-frog-freeze-tolerance.asset.how-freezing-works.script.payoff"
+        ],
+        "claimIds": [
+          "wood-frog-freeze-tolerance.claim.freeze-survival",
+          "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+        ],
+        "frames": {
+          "start": 858,
+          "end": 1200
+        },
+        "sceneType": "recovery-sequence",
+        "objective": "Resolve the thaw in the supported order: heart activity, breathing, then hindleg reflex, ending on survival through managed freezing.",
+        "onScreenText": [
+          {
+            "text": "HEART → BREATHING → LEG REFLEX",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+            ]
+          },
+          {
+            "text": "IT CONTROLLED THE FREEZE",
+            "claimIds": [
+              "wood-frog-freeze-tolerance.claim.freeze-survival",
+              "wood-frog-freeze-tolerance.claim.thaw-recovery-order"
+            ]
+          }
+        ],
+        "animationIntent": "Thaw the frog, illuminate three ordered recovery indicators without timestamps, and finish on a subtle hindleg movement.",
+        "transitionIntent": "Resolve to a clean hero frame with the controlled-freeze payoff and Magnivis mark.",
+        "audioIntent": "Heart tone returns first, followed by breath-like air and a quiet warm resolution."
+      }
+    ],
+    "assets": [
+      {
+        "id": "asset.wood-frog.procedural-visuals.v1",
+        "kind": "procedural-code",
+        "provenance": {
+          "origin": "original-procedural",
+          "rights": "magnivis-original",
+          "notes": "All frog, tissue, cell, molecule, ice and trace visuals are original code-native SVG/CSS geometry."
+        }
+      },
+      {
+        "id": "asset.wood-frog.soundscape.v1",
+        "kind": "generated-audio",
+        "path": "audio/wood-frog.wav",
+        "provenance": {
+          "origin": "original-procedural",
+          "rights": "magnivis-original",
+          "notes": "Deterministically synthesized locally from code; no samples or external music."
+        }
+      },
+      {
+        "id": "asset.wood-frog.narration.v1",
+        "kind": "generated-narration",
+        "path": "audio/narration/wood-frog",
+        "provenance": {
+          "origin": "local-synthetic-voice",
+          "rights": "kokoro-apache-2.0-model-output",
+          "notes": "Generated locally with the repository Kokoro model/voice from the approved script only."
+        }
+      },
+      {
+        "id": "asset.wood-frog.captions.v1",
+        "kind": "caption-track",
+        "path": "captions/wood-frog.en.vtt",
+        "provenance": {
+          "origin": "derived-from-approved-script",
+          "rights": "magnivis-original",
+          "notes": "Deterministically derived from approved narration cue text and timing; no transcription service."
+        }
+      }
+    ],
+    "captions": {
+      "file": "captions/wood-frog.en.vtt",
+      "captionPlanId": "caption-plan.wood-frog.v1",
+      "captionPlanRevision": 2,
+      "captionPlanSha256": "7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51",
+      "generatorId": "caption-generator.narration-cues.v1",
+      "generatorVersion": 1,
+      "source": "approved-narration-cues",
+      "designedBurnedIn": true,
+      "placement": "optional-platform-track-lower-center"
+    },
+    "visualApproval": {
+      "decision": "approved",
+      "reviewedBy": "Ahmet Nishefci",
+      "reviewedAt": "2026-09-29T10:44:24Z",
+      "artifact": {
+        "path": "output/wood-frog-narrated.mp4",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      },
+      "captionPlan": {
+        "id": "caption-plan.wood-frog.v1",
+        "revision": 2,
+        "sha256": "7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51"
+      },
+      "notes": "Owner visually approved the exact master after the reusable caption-spacing fix and the speech-first rhetorical-dash refinement passed automated and representative-frame QA. This approval covers the master visual/audio artifact only.",
+      "platformVariantApprovalGranted": false,
+      "publicationApprovalGranted": false
+    },
+    "reviewRequirements": [
+      "Preserve the exact owner-approved master hash; any re-render requires a new visual approval.",
+      "Confirm no interface or optional-caption collision on each future platform variant.",
+      "Confirm the exact narration, soundscape and captions during each private platform preview.",
+      "Approve each PlatformVariant separately before it becomes production-ready."
+    ]
+  },
+  "video": {
+    "id": "wood-frog",
+    "compositionId": "Magnivis-Wood-Frog",
+    "workingTitle": "How a Wood Frog Survives Freezing",
+    "titleCandidates": [
+      "This Frog Can Survive a Stopped Heart",
+      "How a Wood Frog Survives Freezing",
+      "The Frog That Controls Where Ice Forms"
+    ],
+    "descriptionCandidates": [
+      "A wood frog can survive nonlethal freezing that stops its heartbeat. The key is where ice forms, how water moves, and when glucose and urea protect its cells."
+    ],
+    "hook": "A WOOD FROG CAN SURVIVE A FREEZE THAT STOPS ITS HEARTBEAT.",
+    "pillar": "earth",
+    "status": "reviewed",
+    "language": "en",
+    "captions": [
+      {
+        "language": "en",
+        "label": "English",
+        "file": "captions/wood-frog.en.vtt"
+      }
+    ],
+    "format": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 40
+    },
+    "scenes": [
+      {
+        "id": "cardiac-hook",
+        "start": 0,
+        "end": 5.2,
+        "purpose": "Introduce a recognizable wood frog and show labeled cardiac activity slowing to a reversible stop during freezing."
+      },
+      {
+        "id": "extracellular-ice",
+        "start": 5.2,
+        "end": 9.4,
+        "purpose": "Reveal that survivable ice accumulates around tissues and outside cells rather than uniformly filling them."
+      },
+      {
+        "id": "cell-dehydration",
+        "start": 9.4,
+        "end": 17.8,
+        "purpose": "Show water moving out of a cell as extracellular ice grows, with intracellular ice presented only as the avoided danger."
+      },
+      {
+        "id": "cryoprotectants",
+        "start": 17.8,
+        "end": 28.6,
+        "purpose": "Separate pre-freeze urea accumulation from freeze-triggered liver glucose mobilization, then show their combined protective contribution."
+      },
+      {
+        "id": "ordered-recovery",
+        "start": 28.6,
+        "end": 40,
+        "purpose": "Resolve the thaw in the supported order: heart activity, breathing, then hindleg reflex, ending on survival through managed freezing."
+      }
+    ],
+    "factIds": [],
+    "contentAssetId": "wood-frog-freeze-tolerance.asset.how-freezing-works",
+    "production": {
+      "productionPlanId": "production-plan.wood-frog-freeze.v1",
+      "productionPlanRevision": 3,
+      "knowledgePackageRevision": 2,
+      "contentAssetRevision": 2,
+      "approvedPackageSha256": "098f6efe9930ee2b6424d7431efd03944c8378288588756c761229792f7bd403",
+      "approvedContentAssetSha256": "44a7674b0b5016cedddeb535e6ef5ca3ed190467002b5b0fec75b35c9e904ae7",
+      "ownerDecisionSha256": "edb5f6a0d4d49c10fd9cd86d2d57c544970553cb0fa6fcf924b372fab6833424",
+      "approvedScriptSha256": "a2ea7e39fe6409c13b1a2102b403187f222995d52100f25b6ec9a1876cb859bb",
+      "captionPlanId": "caption-plan.wood-frog.v1",
+      "captionPlanRevision": 2,
+      "captionPlanSha256": "7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51",
+      "safeAreaProfileId": "safe-area.vertical-short-master.v1",
+      "outputReviewState": "owner-visual-approved"
+    },
+    "audio": {
+      "file": "audio/wood-frog.wav",
+      "layers": [
+        "ambient",
+        "transition",
+        "impact",
+        "narration"
+      ],
+      "narration": true,
+      "narrationCues": [
+        {
+          "id": "hook",
+          "file": "audio/narration/wood-frog/hook.wav",
+          "start": 0.05,
+          "duration": 5.3,
+          "transcript": "A wood frog can survive a freeze that stops its heartbeat—then thaw and recover."
+        },
+        {
+          "id": "freeze",
+          "file": "audio/narration/wood-frog/freeze.wav",
+          "start": 5.18,
+          "duration": 4.275,
+          "transcript": "Much of its body water can turn to ice, mainly outside its cells."
+        },
+        {
+          "id": "location",
+          "file": "audio/narration/wood-frog/location.wav",
+          "start": 9.3,
+          "duration": 8.55,
+          "transcript": "As extracellular ice grows, water leaves the cells. That dehydration helps keep dangerous ice crystals from forming inside them."
+        },
+        {
+          "id": "chemistry",
+          "file": "audio/narration/wood-frog/chemistry.wav",
+          "start": 17.7,
+          "duration": 5.35,
+          "transcript": "Its liver rapidly releases glucose, while urea has already built up before freezing."
+        },
+        {
+          "id": "protection",
+          "file": "audio/narration/wood-frog/protection.wav",
+          "start": 22.9,
+          "duration": 5.75,
+          "transcript": "These cryoprotectants limit ice formation and help protect cells through freezing and thawing."
+        },
+        {
+          "id": "payoff",
+          "file": "audio/narration/wood-frog/payoff.wav",
+          "start": 28.5,
+          "duration": 10.125,
+          "transcript": "As the frog thaws, its heart starts beating first; breathing and leg reflexes follow. It survived by controlling the freeze—not by staying unfrozen."
+        }
+      ],
+      "provenance": {
+        "soundscape": {
+          "generatorId": "audio-generator.wood-frog.v1",
+          "generatorVersion": 1,
+          "sha256": "62ee7908811e144bb34b15649620665fbc47243d180560db702ec51f1e7e003b"
+        },
+        "narration": {
+          "provider": "kokoro-local",
+          "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "voiceId": "af_heart",
+          "speed": 1.06,
+          "generatedAt": "2026-09-28T09:34:41Z",
+          "approvedScriptSha256": "a2ea7e39fe6409c13b1a2102b403187f222995d52100f25b6ec9a1876cb859bb",
+          "cueArtifacts": [
+            {
+              "id": "hook",
+              "sha256": "95dfed9847e04539a3fff9e996d8e188aee137e24ea75c3ba668ecd8ebe91028"
+            },
+            {
+              "id": "freeze",
+              "sha256": "709839201ea34ef58c033160c97270e1c037bfb37f8e212bacc33f6c7e040db1"
+            },
+            {
+              "id": "location",
+              "sha256": "08963b8235bff0fc15ab45ed6e572507fed8a008d217fd5302a375e8803e62c3"
+            },
+            {
+              "id": "chemistry",
+              "sha256": "a01da3297645d2f537593997c5d83f51a100c20210ff98720d86caab51d5ccc3"
+            },
+            {
+              "id": "protection",
+              "sha256": "b1db781f477e4d1c11079f6d6ff4a4b5e82902ae9837a3f6bcf0349f92ed50a2"
+            },
+            {
+              "id": "payoff",
+              "sha256": "19072c2a76284d7622435495c197aab6d625591bd3d3ba68fcd90a35cf4cecd9"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "derivative": {
+    "id": "wood-frog-tiktok",
+    "compositionId": "Magnivis-Wood-Frog-TikTok",
+    "workingTitle": "How a Wood Frog Survives Freezing — TikTok safe-area candidate",
+    "titleCandidates": [
+      "This Frog Can Survive a Stopped Heart",
+      "How a Wood Frog Survives Freezing",
+      "The Frog That Controls Where Ice Forms"
+    ],
+    "descriptionCandidates": [
+      "A wood frog can survive nonlethal freezing that stops its heartbeat. The key is where ice forms, how water moves, and when glucose and urea protect its cells."
+    ],
+    "hook": "A WOOD FROG CAN SURVIVE A FREEZE THAT STOPS ITS HEARTBEAT.",
+    "pillar": "earth",
+    "status": "production",
+    "language": "en",
+    "captions": [
+      {
+        "language": "en",
+        "label": "English",
+        "file": "captions/wood-frog.en.vtt"
+      }
+    ],
+    "format": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 40
+    },
+    "scenes": [
+      {
+        "id": "cardiac-hook",
+        "start": 0,
+        "end": 5.2,
+        "purpose": "Introduce a recognizable wood frog and show labeled cardiac activity slowing to a reversible stop during freezing."
+      },
+      {
+        "id": "extracellular-ice",
+        "start": 5.2,
+        "end": 9.4,
+        "purpose": "Reveal that survivable ice accumulates around tissues and outside cells rather than uniformly filling them."
+      },
+      {
+        "id": "cell-dehydration",
+        "start": 9.4,
+        "end": 17.8,
+        "purpose": "Show water moving out of a cell as extracellular ice grows, with intracellular ice presented only as the avoided danger."
+      },
+      {
+        "id": "cryoprotectants",
+        "start": 17.8,
+        "end": 28.6,
+        "purpose": "Separate pre-freeze urea accumulation from freeze-triggered liver glucose mobilization, then show their combined protective contribution."
+      },
+      {
+        "id": "ordered-recovery",
+        "start": 28.6,
+        "end": 40,
+        "purpose": "Resolve the thaw in the supported order: heart activity, breathing, then hindleg reflex, ending on survival through managed freezing."
+      }
+    ],
+    "factIds": [],
+    "platformVariantId": "wood-frog-freeze-tolerance.asset.how-freezing-works.variant.tiktok-feed",
+    "production": {
+      "productionPlanId": "production-plan.wood-frog-freeze.v1",
+      "productionPlanRevision": 3,
+      "knowledgePackageRevision": 2,
+      "contentAssetRevision": 2,
+      "approvedPackageSha256": "098f6efe9930ee2b6424d7431efd03944c8378288588756c761229792f7bd403",
+      "approvedContentAssetSha256": "44a7674b0b5016cedddeb535e6ef5ca3ed190467002b5b0fec75b35c9e904ae7",
+      "ownerDecisionSha256": "edb5f6a0d4d49c10fd9cd86d2d57c544970553cb0fa6fcf924b372fab6833424",
+      "approvedScriptSha256": "a2ea7e39fe6409c13b1a2102b403187f222995d52100f25b6ec9a1876cb859bb",
+      "captionPlanId": "caption-plan.wood-frog.v1",
+      "captionPlanRevision": 2,
+      "captionPlanSha256": "7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51",
+      "safeAreaProfileId": "safe-area.tiktok-feed.v2",
+      "outputReviewState": "visual-review-required"
+    },
+    "audio": {
+      "file": "audio/wood-frog.wav",
+      "layers": [
+        "ambient",
+        "transition",
+        "impact",
+        "narration"
+      ],
+      "narration": true,
+      "narrationCues": [
+        {
+          "id": "hook",
+          "file": "audio/narration/wood-frog/hook.wav",
+          "start": 0.05,
+          "duration": 5.3,
+          "transcript": "A wood frog can survive a freeze that stops its heartbeat—then thaw and recover."
+        },
+        {
+          "id": "freeze",
+          "file": "audio/narration/wood-frog/freeze.wav",
+          "start": 5.18,
+          "duration": 4.275,
+          "transcript": "Much of its body water can turn to ice, mainly outside its cells."
+        },
+        {
+          "id": "location",
+          "file": "audio/narration/wood-frog/location.wav",
+          "start": 9.3,
+          "duration": 8.55,
+          "transcript": "As extracellular ice grows, water leaves the cells. That dehydration helps keep dangerous ice crystals from forming inside them."
+        },
+        {
+          "id": "chemistry",
+          "file": "audio/narration/wood-frog/chemistry.wav",
+          "start": 17.7,
+          "duration": 5.35,
+          "transcript": "Its liver rapidly releases glucose, while urea has already built up before freezing."
+        },
+        {
+          "id": "protection",
+          "file": "audio/narration/wood-frog/protection.wav",
+          "start": 22.9,
+          "duration": 5.75,
+          "transcript": "These cryoprotectants limit ice formation and help protect cells through freezing and thawing."
+        },
+        {
+          "id": "payoff",
+          "file": "audio/narration/wood-frog/payoff.wav",
+          "start": 28.5,
+          "duration": 10.125,
+          "transcript": "As the frog thaws, its heart starts beating first; breathing and leg reflexes follow. It survived by controlling the freeze—not by staying unfrozen."
+        }
+      ],
+      "provenance": {
+        "soundscape": {
+          "generatorId": "audio-generator.wood-frog.v1",
+          "generatorVersion": 1,
+          "sha256": "62ee7908811e144bb34b15649620665fbc47243d180560db702ec51f1e7e003b"
+        },
+        "narration": {
+          "provider": "kokoro-local",
+          "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "voiceId": "af_heart",
+          "speed": 1.06,
+          "generatedAt": "2026-09-28T09:34:41Z",
+          "approvedScriptSha256": "a2ea7e39fe6409c13b1a2102b403187f222995d52100f25b6ec9a1876cb859bb",
+          "cueArtifacts": [
+            {
+              "id": "hook",
+              "sha256": "95dfed9847e04539a3fff9e996d8e188aee137e24ea75c3ba668ecd8ebe91028"
+            },
+            {
+              "id": "freeze",
+              "sha256": "709839201ea34ef58c033160c97270e1c037bfb37f8e212bacc33f6c7e040db1"
+            },
+            {
+              "id": "location",
+              "sha256": "08963b8235bff0fc15ab45ed6e572507fed8a008d217fd5302a375e8803e62c3"
+            },
+            {
+              "id": "chemistry",
+              "sha256": "a01da3297645d2f537593997c5d83f51a100c20210ff98720d86caab51d5ccc3"
+            },
+            {
+              "id": "protection",
+              "sha256": "b1db781f477e4d1c11079f6d6ff4a4b5e82902ae9837a3f6bcf0349f92ed50a2"
+            },
+            {
+              "id": "payoff",
+              "sha256": "19072c2a76284d7622435495c197aab6d625591bd3d3ba68fcd90a35cf4cecd9"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
