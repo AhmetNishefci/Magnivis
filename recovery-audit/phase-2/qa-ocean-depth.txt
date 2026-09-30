@@ -1,0 +1,30 @@
+
+> magnivis@0.1.0 qa /Users/ahmetnishefci/Developer/Magnivis
+> tsx scripts/qa.ts ocean-depth --recovered
+
+{
+  "label": "RECOVERY-GENERATED",
+  "checkedAt": "2026-09-30T20:32:36.076Z",
+  "input": "output/ocean-depth-narrated.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 32
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -24.4,
+    "maxVolumeDb": -1.8,
+    "duration": 32.043,
+    "sizeBytes": 17449004,
+    "bitRate": 4356397
+  },
+  "passed": true,
+  "failures": []
+}

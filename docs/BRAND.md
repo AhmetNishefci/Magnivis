@@ -32,3 +32,7 @@ Camera and object scale are storytelling tools. Acceleration should build antici
 ## Branding
 
 The channel already applies a watermark. In-video branding is optional and subtle. Never trade the final moment of awe for a long logo animation or generic subscribe prompt.
+
+## Recovery creative reference
+
+The canonical recovery reference is produced Magnivis through Wood Frog at ae79799, as the owner confirms. Preserve premium faceless English knowledge storytelling, procedural/vector explanatory visuals, counters/diagrams/comparisons, Manrope/Space Grotesk, clean motion, synthetic narration and designed captions. Cinematic means considered motion/light/depth; photorealistic AI imagery is not the default brand identity. Millennium Bridge experiments remain outside this baseline. Image generation is a tool when justified, not a redesign mandate.

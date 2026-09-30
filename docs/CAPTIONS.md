@@ -88,3 +88,7 @@ pnpm qa wood-frog
 pnpm delivery wood-frog
 pnpm delivery:validate wood-frog
 ```
+
+## Multi-surface review
+
+PLATFORM-QA.md owns distinct caption-region/native-overlay/device checks. Checkpoint phrase, emphasis, whitespace and narration reconstruction remain unchanged. A general visual-safe rectangle or desktop pass does not establish mobile caption safety. Unknown caption-specific geometry is reported as incomplete, not silently inherited.

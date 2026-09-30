@@ -68,7 +68,7 @@ KnowledgePackage is the reusable research source. ContentAsset selects one edito
 
 Video 002 references its production ContentAsset. Video 004 references its YouTube Shorts PlatformVariant, which references its production ContentAsset. Their packages remain the source of truth for sources and claims. `src/data/ocean.ts` and `src/data/light.ts` are narrow compatibility projections that convert package claims into the existing numeric inputs consumed by unchanged compositions. They contain no duplicated factual values.
 
-The editorial script belongs to ContentAsset. Exact scene timing, narration files and cue starts, sound, and composition choreography remain production concerns in `VideoSpec` and Remotion. Platform packaging, caption behavior, duration constraints, cover intent, and safe-area selection belong to PlatformVariant. Actual publication remains a future separate boundary; legacy VideoSpec fields remain until a bounded migration is approved.
+The editorial script belongs to ContentAsset. Exact scene timing, narration files and cue starts, sound, and composition choreography remain production concerns in `VideoSpec` and Remotion. Platform packaging, caption behavior, duration constraints, cover intent, and safe-area selection belong to PlatformVariant. Actual publication is a separate implemented file-backed boundary (OPERATIONS.md); legacy VideoSpec fields remain until a bounded migration is approved.
 
 ## Adding the next package
 

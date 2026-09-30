@@ -1,0 +1,25 @@
+import {readFileSync,existsSync} from 'node:fs';
+import {describe,expect,it} from 'vitest';
+import profilesData from '../artifacts/presentation-profiles.json';
+import {presentationProfileSchema, presentationQaSchema, realDevicePassed, validatePresentationRegions, assessActiveProfiles, coverAssetSchema, presentationOutputSchema} from '../src/platform-variants/presentation';
+import {safeAreaProfileRegistry} from '../src/design/safe-areas';
+const profiles=profilesData.map(p=>presentationProfileSchema.parse(p));
+const youtube=profiles.find(p=>p.id==='safe-area.youtube-shorts.v2')!;
+const record={id:'test',platformVariantId:'variant',masterArtifactId:'master',profileId:youtube.id,surface:youtube.surface,context:'mobile-app' as const,state:'REAL_DEVICE_PASSED' as const,mediaSha256:'a'.repeat(64),coverSha256:null,device:'test-device',os:null,appVersion:null,testedAt:'2026-09-30T00:00:00Z',reviewer:'test',evidence:['fixture-screenshot'],notes:'fixture only'};
+describe('multi-surface knowledge and device authority',()=>{
+ it('keeps historical render geometry unchanged',()=>expect(safeAreaProfileRegistry.get('safe-area.youtube-shorts.v1').insets.top).toBe(150));
+ it('records owner V2 policy without pretending device evidence survives',()=>{expect(youtube.insets?.top).toBe(240);expect(youtube.trustedForProduction).toBe(false);expect(youtube.exclusionZones).toBeNull();});
+ it('retains failed/superseded V1 history',()=>expect(profiles.filter(p=>p.lifecycle==='HISTORICAL_SUPERSEDED')).toHaveLength(2));
+ it('distinguishes unmeasured Meta grid from playback',()=>{const grid=profiles.find(p=>p.surface==='instagram-profile-grid')!;expect(grid.insets).toBeNull();expect(validatePresentationRegions(grid,[]).state).toBe('UNMEASURED');});
+ it('rejects critical opening content above V2 inset',()=>expect(validatePresentationRegions(youtube,[{kind:'hook',bounds:{x:100,y:150,width:400,height:50}}]).violations).toEqual(['hook']));
+ it('allows decorative content to bleed',()=>expect(validatePresentationRegions(youtube,[{kind:'decorative',bounds:{x:0,y:0,width:1080,height:1920}}]).violations).toEqual([]));
+ it('reports missing caption geometry independently',()=>expect(validatePresentationRegions(youtube,[{kind:'caption',bounds:{x:100,y:1200,width:400,height:80}}]).unresolved).toContain('caption region'));
+ it('checks native exclusion zone collisions',()=>{const p={...youtube,exclusionZones:[{x:100,y:250,width:40,height:40}]};expect(validatePresentationRegions(p,[{kind:'label',bounds:{x:100,y:250,width:100,height:50}}]).violations).toContain('label');});
+ it('runs geometry regression across every active profile',()=>expect(assessActiveProfiles(profiles,[]).map(p=>p.profileId)).toEqual(['safe-area.youtube-shorts.v2','safe-area.tiktok-feed.v2']));
+ it('never accepts desktop as real-device mobile proof',()=>{expect(()=>presentationQaSchema.parse({...record,context:'desktop-web'})).toThrow();expect(realDevicePassed([{...record,state:'LOCAL_APPROXIMATION',context:'desktop-web'}],record.surface,record.mediaSha256)).toBe(false);});
+ it('requires exact media and cover hashes on the exact surface',()=>{expect(realDevicePassed([record],record.surface,record.mediaSha256)).toBe(true);expect(realDevicePassed([record],'facebook-page-feed',record.mediaSha256)).toBe(false);expect(realDevicePassed([record],record.surface,'b'.repeat(64))).toBe(false);expect(realDevicePassed([record],record.surface,record.mediaSha256,'b'.repeat(64))).toBe(false);});
+ it('requires real-device evidence and preserves unknown OS/app',()=>{expect(presentationQaSchema.parse(record).os).toBeNull();expect(()=>presentationQaSchema.parse({...record,evidence:[]})).toThrow();});
+ it('rejects cover approval without hashed artifact and decision',()=>expect(()=>coverAssetSchema.parse({id:'grid-cover',platform:'instagram',surface:'instagram-profile-grid',sourceArtifactId:'master',sourceVideoSha256:'a'.repeat(64),frame:1,crop:null,headlineRegion:null,artifactId:null,sha256:null,provenance:'planned',approvalDecisionId:null,status:'approved'})).toThrow());
+ it('requires evidence and identity before choosing a surface derivative',()=>expect(()=>presentationOutputSchema.parse({strategy:'SURFACE_DERIVATIVE',masterArtifactId:'master',platformVariantId:'variant',surface:'facebook-page-feed',coverArtifactId:null,derivativeArtifactId:null,evidence:[]})).toThrow());
+ it('routes new agents to existing canonical docs without broken paths',()=>{const agents=readFileSync('AGENTS.md','utf8');for(const match of agents.matchAll(/`(docs\/[^`]+\.md)`/g))expect(existsSync(match[1]!)).toBe(true);expect(agents).toContain('ARTIFACT-STORAGE.md');expect(agents).toContain('PLATFORM-QA.md');});
+});

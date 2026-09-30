@@ -1,0 +1,9 @@
+# Disaster recovery verification
+
+Root cause: ignored output/qa/deliveries had no independently retained binary archive; recipes/audio/source could reproduce useful outputs but not all exact approval-bound bytes. Lost local-only commits/untracked/docs/screenshots/approval/publication metadata remain identified by Phase 0; the clone did not contain them. Git itself is not blamed for omitted or unpushed state.
+
+Phase 2 improvements: durable expected identities/hashes/provenance, historical/replacement separation and new decision, source/recipe evidence references, provider-neutral restore interface, corruption/path/symlink/conflicting-byte rejection, no silent render fallback, missing/provider-unconfigured reporting, local exact restore drill, backup policy and zero-chat documentation routing. No secrets/cloud infrastructure/vendor coupling introduced.
+
+156 operational files were restored into an empty ignored drill directory and independently hashed; local archive content matched expected identities. This demonstrates retrieval implementation, not independent disaster resilience. A future clean clone can read all 157 expectations, install/check offline, and explicitly report unavailable originals/archives. After independent storage is configured, it can restore the exact archived recovery identities and verify them. Historical original Wood Frog still cannot be restored without its bytes.
+
+ARTIFACT-STORAGE.md contains full runtime/config/clone/install/check/status/restore/verify procedure, mandatory archive policy and distinctions between exact stored restore, explicit future staging regeneration and owner evidence. External archive/replica/access drill is the remaining critical durability gate. Current ignored .artifact-store remains on this laptop; reset would still lose those local copies if no independent transfer occurs. Do not call full binary durability complete.

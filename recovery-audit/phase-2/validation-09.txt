@@ -1,0 +1,16 @@
+
+> magnivis@0.1.0 production:validate /Users/ahmetnishefci/Developer/Magnivis
+> tsx scripts/validate-production.ts wood-frog
+
+ ELIFECYCLE  Command failed with exit code 1.
+/Users/ahmetnishefci/Developer/Magnivis/scripts/validate-production.ts:83
+    throw new Error('Owner-approved Wood Frog render artifact is missing');
+          ^
+
+Error: Owner-approved Wood Frog render artifact is missing
+    at <anonymous> (/Users/ahmetnishefci/Developer/Magnivis/scripts/validate-production.ts:83:11)
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.23.3

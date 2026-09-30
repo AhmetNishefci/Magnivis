@@ -273,3 +273,9 @@
 **Alternatives:** Immediately add research/render/QA skills.
 
 **Consequences:** Less speculative agent machinery; reconsider after several videos expose genuine repetition.
+
+## Recovery Phase 2 — through Wood Frog
+
+Owner accepts the exact Phase 1 Wood Frog candidate 400edecc… as a new operational replacement while missing historical 4c5354d9… retains its immutable approval. Machine decision: artifacts/recovery-decision.json. Speed of Light's f157f7ef… is exact reproduction. Keep original checkpoint source/style and evidence branches; no Bridge creative import.
+
+Implement provider-neutral local Artifact Storage V1, exact retrieval without implicit regeneration, tracked manifest identities and explicitly pending independent backup. Separate presentation-surface QA from encoded media validation. Owner-supplied YouTube V2 top240 is recovered policy with inherited other insets labeled provisional and missing native-zone measurements; Meta profiles/covers/derivatives require renewed evidence. No lost screenshots, approvals or publication metadata are invented.

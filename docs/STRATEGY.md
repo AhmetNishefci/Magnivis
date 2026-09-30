@@ -129,3 +129,9 @@ No fake geography, identity, engagement, traffic, account farming, copyright abu
 ## Success signals
 
 Evaluate retention, completion, rewatches, shares, saves, comments that demonstrate learning, quality follows/subscriptions, repeat viewers, source trust, production cost, and durable topic performance. Raw output count is not a success metric.
+
+## Phase 2 recovery scope verification
+
+The following illustrative domains clarify the existing open universe under the owner's Phase 2 instruction; they are not historical completed productions or a closed whitelist: science (physics/chemistry/astronomy/cosmology/mathematics), biology/life (evolution/genetics/microbiology/ecosystems), human body/medicine (anatomy/physiology/neuroscience), mind/psychology (cognition/perception/memory/behavior), nature, Earth/geography, technology/computing/AI, engineering/systems/infrastructure, history, wars/conflict, philosophy/ideas, dilemmas/paradoxes/probability, books/important ideas, films/documentaries/culture, real stories, money/economics/business, society/human systems, everyday mysteries, scale/comparison, mysteries with evidence, interdisciplinary stories and future domains.
+
+War is factual/historical explanation, not glorification; medicine remains education; cultural works inspire explanations without copying protected media; philosophical opinion stays distinct from fact; mysteries retain uncertainty. Reject celebrity gossip, rage bait, conspiracy certainty, recycled trivia, shallow listicles, generic motivational/advice spam and competitor copying. Keep deliberate thematic diversity: performance informs hook/pacing/visual choices without collapsing exploration to one successful category. Prioritize several of curiosity, surprise, credible evidence, strong hook, payoff, visual clarity, relevance, novelty, format/platform fit and depth potential. Discover first. Classify second.

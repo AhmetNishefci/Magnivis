@@ -1,3 +1,6 @@
+import {createHash} from 'node:crypto';
+import {readFileSync} from 'node:fs';
+import {parseManifests} from '../src/artifacts/schema';
 import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
 import {resolveVideoTarget} from './video-targets';
@@ -16,8 +19,15 @@ try {
   process.exit(1);
 }
 
-const input = target.output;
-const qaDirectory = target.qaDirectory;
+const recovered = process.argv.includes('--recovered');
+const recoveryArtifact = recovered
+  ? parseManifests(JSON.parse(readFileSync('artifacts/manifests.json','utf8'))).find(m=>m.artifactId===`${id}.recovered-master`)
+  : undefined;
+if (recovered && !recoveryArtifact) throw new Error('No recorded recovery artifact');
+const input = recoveryArtifact?.localPath ?? target.output;
+const qaDirectory = recovered ? `recovery-work/phase-2-qa/${id}` : target.qaDirectory;
+if (recovered && existsSync(qaDirectory)) throw new Error('Preserve previous recovery QA evidence');
+if (recoveryArtifact && (!existsSync(input) || createHash('sha256').update(readFileSync(input)).digest('hex') !== recoveryArtifact.identity.sha256)) throw new Error('Recovery QA source missing or corrupt');
 if (!existsSync(input)) {
   console.error(`Missing ${input}. Run: pnpm render ${id}`);
   process.exit(1);
@@ -48,6 +58,7 @@ if (!Number.isFinite(meanVolume) || meanVolume < -70) failures.push(`audio appea
 if (!Number.isFinite(maxVolume) || maxVolume > 0) failures.push(`invalid/clipping audio peak (${maxVolume} dB)`);
 
 const report = {
+  label: recovered ? 'RECOVERY-GENERATED' : undefined,
   checkedAt: new Date().toISOString(),
   input,
   expected,

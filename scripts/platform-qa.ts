@@ -1,0 +1,10 @@
+import {readFileSync} from 'node:fs';
+import {z} from 'zod';
+import {assessActiveProfiles,presentationProfileSchema,rectangleSchema} from '../src/platform-variants/presentation';
+const regionsPath=process.argv[2];
+if(!regionsPath)throw new Error('Provide an explicit critical-region JSON file; no video or device pass is inferred');
+const regions=z.array(z.object({kind:z.enum(['hook','fact','number','label','caption','cta','brand','decorative']),bounds:rectangleSchema}).strict()).parse(JSON.parse(readFileSync(regionsPath,'utf8')));
+const profiles=z.array(presentationProfileSchema).parse(JSON.parse(readFileSync('artifacts/presentation-profiles.json','utf8')));
+const report=assessActiveProfiles(profiles,regions);
+console.log(JSON.stringify({checks:report,realDeviceApprovalGranted:false},null,2));
+if(report.some(r=>r.state!=='LOCAL_APPROXIMATION'))process.exitCode=1;

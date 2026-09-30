@@ -38,7 +38,12 @@
     "lint": "eslint src scripts tests remotion.config.ts",
     "test": "vitest run",
     "validate": "pnpm typecheck && pnpm lint && pnpm test",
-    "check": "pnpm validate && git diff --check"
+    "check": "pnpm validate && git diff --check",
+    "artifacts:status": "tsx scripts/artifacts.ts status",
+    "artifacts:verify": "tsx scripts/artifacts.ts verify",
+    "artifacts:restore": "tsx scripts/artifacts.ts restore",
+    "recovery:validate": "tsx scripts/recovery-validate.ts",
+    "platform:qa": "tsx scripts/platform-qa.ts"
   },
   "dependencies": {
     "@fontsource/manrope": "5.3.0",

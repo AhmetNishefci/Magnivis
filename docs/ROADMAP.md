@@ -69,3 +69,9 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 ## Skills recommendation
 
 Codex supports repository-local skills under `.agents/skills`, but none is justified yet. The broadened workflow has not stabilized. Keep rules in `AGENTS.md`, focused documentation, typed schemas, and deterministic scripts; reconsider a minimal skill only after a repeated workflow is stable.
+
+## Temporary recovery milestone — separate from product phase numbering
+
+Recovery Phases 0/1 complete: forensic baseline and reproducibility. Recovery Phase 2 restores through Wood Frog, accepts a separately identified replacement, implements local artifact storage and multi-surface QA capabilities, and reconciles repository context. Independent archive and renewed Meta/YouTube device evidence remain NEXT human-gated recovery work; no production/publication resumes automatically.
+
+Product production phase is partially implemented: Wood Frog ProductionPlan r3, CaptionPlan r2, captions/audio/master recipe/QA and variants exist. Distribution is partially implemented; platform/device approvals remain per exact variant. Analytics schemas/manual performance learning exist; authorized API ingestion is PLANNED, not implemented. Long-form Universe remains research/story brief only. Reusable primitives, knowledge and thematic diversity support gradual quality-led growth toward approximately two excellent Shorts/day and one strong long-form/week; these are target scale, not quotas. Automatic discovery, publishing/analytics APIs, owned channels and monetization remain planned/deferred. Autonomous publishing, premature predictive ML and infrastructure without need are NOT YET JUSTIFIED.

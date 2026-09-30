@@ -99,3 +99,7 @@ YouTube, Instagram, and Facebook still reuse the original master. TikTok alone u
 - databases, queues, workers, services, dashboards, analytics, or monetization/location tooling.
 
 All distribution remains a separate manual, human-approved operation.
+
+## Presentation surfaces and recovery
+
+PlatformVariant does not prove every mobile/web/feed/grid presentation. PLATFORM-QA.md owns the new typed surface/profile/cover/device evidence layer. Original variants and geometry remain historical checkpoint definitions; persisted recovery variants in artifacts/deliveries.json remain draft. Exact recovered artifacts are identified independently in artifacts/manifests.json. YouTube V2 new-production policy is separate from historical V1-bound media; Meta geometry is pending renewed evidence. No derivative is automatically generated.

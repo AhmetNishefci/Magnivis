@@ -1,0 +1,270 @@
+[
+  {
+    "id": "safe-area.youtube-shorts.v1",
+    "platform": "youtube",
+    "surface": "youtube-shorts-viewer",
+    "revision": 1,
+    "lifecycle": "HISTORICAL_SUPERSEDED",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": {
+      "top": 150,
+      "right": 190,
+      "bottom": 310,
+      "left": 84
+    },
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "src/design/safe-areas.ts; owner Phase 2 20A upper-left navigation failure",
+    "evidenceLevel": "git-survivor",
+    "qaState": "SUPERSEDED",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": "2026-09-27",
+    "deviceObservations": []
+  },
+  {
+    "id": "safe-area.youtube-shorts.v2",
+    "platform": "youtube",
+    "surface": "youtube-shorts-viewer",
+    "revision": 2,
+    "lifecycle": "ACTIVE",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": {
+      "top": 240,
+      "right": 190,
+      "bottom": 310,
+      "left": 84
+    },
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "Owner Phase 2 20A: top approximately 240; other insets provisionally inherited from Git V1, not recovered measurements",
+    "evidenceLevel": "reconstructed-policy",
+    "qaState": "PRIVATE_PREVIEW_PENDING",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": null,
+    "deviceObservations": []
+  },
+  {
+    "id": "safe-area.tiktok-feed.v1",
+    "platform": "tiktok",
+    "surface": "tiktok-feed",
+    "revision": 1,
+    "lifecycle": "HISTORICAL_SUPERSEDED",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": {
+      "top": 140,
+      "right": 190,
+      "bottom": 300,
+      "left": 72
+    },
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "src/design/safe-areas.ts; failed historical private iPhone review",
+    "evidenceLevel": "git-survivor",
+    "qaState": "SUPERSEDED",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": "2026-09-27",
+    "deviceObservations": [
+      {
+        "device": "iPhone (exact model not independently established for failed pass)",
+        "os": null,
+        "appVersion": null,
+        "observedDate": null,
+        "source": "src/design/safe-areas.ts failed first preview",
+        "state": "REAL_DEVICE_FAILED"
+      }
+    ]
+  },
+  {
+    "id": "safe-area.tiktok-feed.v2",
+    "platform": "tiktok",
+    "surface": "tiktok-feed",
+    "revision": 2,
+    "lifecycle": "ACTIVE",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": {
+      "top": 240,
+      "right": 190,
+      "bottom": 310,
+      "left": 84
+    },
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "src/design/safe-areas.ts; Speed of Light iPhone 17 Pro Max 2026-09-27 historical pass, app/OS/hash unknown",
+    "evidenceLevel": "git-survivor",
+    "qaState": "REAL_DEVICE_PASSED",
+    "trustedForProduction": true,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": "2026-09-27",
+    "deviceObservations": [
+      {
+        "device": "iPhone 17 Pro Max",
+        "os": null,
+        "appVersion": null,
+        "observedDate": "2026-09-27",
+        "source": "docs/PROJECT-STATE.md historical checkpoint; exact screenshots and media hash unavailable",
+        "state": "REAL_DEVICE_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "safe-area.instagram-reels.v1",
+    "platform": "instagram",
+    "surface": "instagram-reels-playback",
+    "revision": 1,
+    "lifecycle": "PROVISIONAL",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": {
+      "top": 130,
+      "right": 170,
+      "bottom": 280,
+      "left": 72
+    },
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "src/design/safe-areas.ts; conservative internal playback profile, owner Wood Frog playback acceptable",
+    "evidenceLevel": "git-survivor",
+    "qaState": "PRIVATE_PREVIEW_PENDING",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": "2026-09-27",
+    "deviceObservations": []
+  },
+  {
+    "id": "safe-area.facebook-reels.v1",
+    "platform": "facebook",
+    "surface": "facebook-reels-viewer",
+    "revision": 1,
+    "lifecycle": "PROVISIONAL",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": {
+      "top": 120,
+      "right": 160,
+      "bottom": 270,
+      "left": 72
+    },
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "src/design/safe-areas.ts; conservative internal viewer profile, owner broadly acceptable",
+    "evidenceLevel": "git-survivor",
+    "qaState": "PRIVATE_PREVIEW_PENDING",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": "2026-09-27",
+    "deviceObservations": []
+  },
+  {
+    "id": "instagram-profile-grid.pending",
+    "platform": "instagram",
+    "surface": "instagram-profile-grid",
+    "revision": 1,
+    "lifecycle": "PROVISIONAL",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": null,
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "Owner Phase 2 20A capability requirement; measured geometry unavailable",
+    "evidenceLevel": "owner-historical",
+    "qaState": "NOT_TESTED",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": null,
+    "deviceObservations": []
+  },
+  {
+    "id": "facebook-page-feed.pending",
+    "platform": "facebook",
+    "surface": "facebook-page-feed",
+    "revision": 1,
+    "lifecycle": "PROVISIONAL",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": null,
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "Owner Phase 2 20A capability requirement; measured geometry unavailable",
+    "evidenceLevel": "owner-historical",
+    "qaState": "NOT_TESTED",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": null,
+    "deviceObservations": []
+  },
+  {
+    "id": "youtube-shorts-cover.pending",
+    "platform": "youtube",
+    "surface": "youtube-shorts-cover",
+    "revision": 1,
+    "lifecycle": "PROVISIONAL",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": null,
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "Owner Phase 2 20A capability requirement; measured geometry unavailable",
+    "evidenceLevel": "owner-historical",
+    "qaState": "NOT_TESTED",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": null,
+    "deviceObservations": []
+  },
+  {
+    "id": "tiktok-cover.pending",
+    "platform": "tiktok",
+    "surface": "tiktok-cover",
+    "revision": 1,
+    "lifecycle": "PROVISIONAL",
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "insets": null,
+    "captionRegion": null,
+    "exclusionZones": null,
+    "reviewedAt": null,
+    "source": "Owner Phase 2 20A capability requirement; measured geometry unavailable",
+    "evidenceLevel": "owner-historical",
+    "qaState": "NOT_TESTED",
+    "trustedForProduction": false,
+    "notes": "Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "reviewDate": null,
+    "deviceObservations": []
+  }
+]

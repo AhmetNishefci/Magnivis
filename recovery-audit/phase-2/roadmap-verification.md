@@ -1,0 +1,7 @@
+# Roadmap verification
+
+ROADMAP.md retains product sequencing, separate from recovery phase numbering. Historical foundation complete; Content Intelligence active with packages/assets/open taxonomy/review/provider fixtures and bounded Wood Frog approval implemented. Production partially implemented through Wood Frog r3/r2; legacy videos intentionally unmigrated. Multi-platform variant/delivery/manual operator system implemented with remaining per-platform device gates. Analytics accounts/publication/raw schemas implemented, ingestion planned. Feedback/owned distribution/monetization/scale remain future.
+
+ACTIVE during recovery: canonical restoration/durability/brain reconciliation only. NEXT human-gated: independent archive and renewed surface evidence; do not start production automatically. PLANNED: authorized analytics/platform integrations, stronger discovery, reusable knowledge/primitives and first approved long-form. DEFERRED: queues/databases/cloud rendering/ML before need. EXPERIMENTAL: Bridge retained on separate evidence branch. NOT YET JUSTIFIED: autonomous publishing, fake engagement/geography, content farm, speculative infrastructure.
+
+Two high-quality daily Shorts and weekly long-form remain target scale unlocked progressively. Quality/accuracy/rights/human authority outrank output volume. No status/date is invented for lost historical work. PROJECT-STATE.md preserves checkpoint DONE/NOW/NEXT chronologically, clearly marking old NOW/NEXT as suspended rather than authorizing uploads today.
