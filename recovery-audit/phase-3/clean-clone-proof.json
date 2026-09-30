@@ -1,0 +1,517 @@
+{
+  "recordedAt": "2026-09-30T20:56:00.789274+00:00",
+  "testedCommit": "6648d1b4650e7cad806a3726cdd293196596abe4",
+  "clone": "git clone --no-local --single-branch (independent Git objects, no hardlinks; local transport)",
+  "dependencies": "pnpm install --frozen-lockfile",
+  "initialIgnoredWorkspacesAbsent": true,
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/00.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/01.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:brain"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/02.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/03.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/04.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:restore"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/05.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/06.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/07.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "production:validate",
+        "wood-frog",
+        "--recovered"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/08.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "production:validate",
+        "wood-frog-tiktok",
+        "--recovered"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/09.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "captions:validate",
+        "wood-frog"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/10.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "captions:validate",
+        "wood-frog-tiktok"
+      ],
+      "exitCode": 0,
+      "log": "recovery-audit/phase-3/clean-clone-logs/11.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "wood-frog",
+        "--recovered"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "wood-frog-tiktok",
+        "--recovered"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "speed-of-light",
+        "--recovered"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "speed-of-light-tiktok",
+        "--recovered"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "earth-to-stars",
+        "--recovered"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "ocean-depth",
+        "--recovered"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "billion-dollars",
+        "--recovered"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "human-engineering",
+        "--recovered"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "regenerableFrames": [
+    {
+      "artifactId": "wood-frog.qa.frame-01-1.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-02-3.1s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-03-4.5s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-04-6.6s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-05-8.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-06-10.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-07-11.9s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-08-13.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-09-16.1s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-10-18.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-11-21.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-12-24.0s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-13-26.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-14-29.4s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-15-31.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-16-33.4s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-17-35.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog.qa.frame-18-37.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-01-1.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-02-3.1s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-03-4.5s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-04-6.6s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-05-8.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-06-10.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-07-11.9s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-08-13.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-09-16.1s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-10-18.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-11-21.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-12-24.0s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-13-26.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-14-29.4s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-15-31.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-16-33.4s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-17-35.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "wood-frog-tiktok.qa.frame-18-37.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-01-0.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-02-2.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-03-5.9s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-04-10.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-05-15.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-06-21.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-07-27.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light.qa.frame-08-32.1s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-01-0.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-02-2.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-03-5.9s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-04-10.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-05-15.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-06-21.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-07-27.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "speed-of-light-tiktok.qa.frame-08-32.1s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "earth-to-stars.qa.frame-01-0.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "earth-to-stars.qa.frame-02-9.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "earth-to-stars.qa.frame-03-17.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "earth-to-stars.qa.frame-04-25.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "earth-to-stars.qa.frame-05-34.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "earth-to-stars.qa.frame-06-40.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-01-0.4s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-02-4.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-03-8.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-04-13.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-05-18.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-06-22.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-07-27.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "ocean-depth.qa.frame-08-30.5s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-01-0.4s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-02-4.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-03-9.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-04-14.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-05-20.4s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-06-27.7s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-07-32.6s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "billion-dollars.qa.frame-08-34.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-01-0.3s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-02-2.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-03-4.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-04-8.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-05-13.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-06-19.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-07-25.8s.png",
+      "exactRecoveryFrameHashMatch": true
+    },
+    {
+      "artifactId": "human-engineering.qa.frame-08-30.2s.png",
+      "exactRecoveryFrameHashMatch": true
+    }
+  ],
+  "regenerableFramesPassed": true,
+  "trackedTreeClean": true,
+  "passed": true
+}
