@@ -1,5 +1,7 @@
 # Roadmap
 
+Post-reset priority: Millennium Bridge research/editorial reconstruction is ready for owner review. See `docs/RECOVERY.md`. Production and the later reported Meta/Candidate 3 milestones remain separate, unreconstructed gates.
+
 This roadmap describes sequence, not promises or permission to sacrifice quality. `docs/PROJECT-STATE.md` records current execution state; `docs/ARCHITECTURE.md` records system boundaries.
 
 ## Phase 0 — audit and foundation (complete)

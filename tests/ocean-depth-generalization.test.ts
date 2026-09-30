@@ -74,6 +74,7 @@ describe('Ocean Depth production KnowledgePackage', () => {
 
   it('coexists deterministically with Speed of Light without source collisions', () => {
     expect(knowledgePackageRegistry.list().map(({id}) => id)).toEqual([
+      'millennium-bridge',
       'ocean-depth',
       'speed-of-light',
       'wood-frog-freeze-tolerance',

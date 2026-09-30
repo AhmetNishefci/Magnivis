@@ -141,6 +141,7 @@ describe('content asset registry', () => {
     expect(contentAssetRegistry.get(speedOfLightContentAssetIds.publishedShort))
       .toEqual(speedOfLightPublishedShortAsset);
     expect(contentAssetRegistry.list().map(({id}) => id)).toEqual([
+      'millennium-bridge.asset.balance-feedback',
       oceanDepthContentAssetIds.publishedShort,
       speedOfLightContentAssetIds.cosmicDistanceShort,
       speedOfLightContentAssetIds.publishedShort,

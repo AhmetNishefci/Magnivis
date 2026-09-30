@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-09-30 — Reconstruct evidence before production after reset
+
+**Decision:** Rebuild Millennium Bridge research/editorial revision 1 on the authorized recovery branch using fresh authoritative-source inspection. Preserve the exact owner-supplied historical balance-feedback copy only after revalidation. Keep historical approval distinct from a fresh reconstruction decision and retain canonical supported-to-verified owner promotion semantics.
+
+**Reason:** Later local-only Git objects were lost. Historical reports cannot supply recovered file identity, citations, device evidence or approvals for newly generated media.
+
+**Consequences:** Eighteen supported/qualified claims, eight source inspection records, six editorial beats and an original-vector VisualPlan are ready for owner reconstruction review. Access limitations, exclusions and text identity are durable in the review handoff and `docs/RECOVERY.md`. Injury claims are excluded. No production, Meta QA, variants, deliveries or publishing are authorized by this milestone. Commit/push the recovery branch without merging main.
+
 ## 2026-09-29 — Lock approved masters and isolate platform-safe derivatives
 
 **Decision:** Bind every modern PlatformVariant to the exact owner-approved master, ProductionPlan, and CaptionPlan. Reuse those bytes when the destination safe area contains the master; create a separately hashed, private-review-only derivative when a proven platform safe area requires geometry changes. Track private-preview readiness separately from publication readiness.

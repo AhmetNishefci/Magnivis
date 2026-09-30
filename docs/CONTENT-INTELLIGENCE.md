@@ -157,7 +157,9 @@ Changing reviewed claim wording changes its hash and invalidates a stale owner d
 
 ## Current human gates
 
-The Wood Frog claim/editorial gate has been completed. Production must now:
+Millennium Bridge reconstruction revision 1 is ready for owner reconstruction review, with 18 supported/qualified claims, eight source inspections, and exact revalidated historical copy. Use `pnpm content:intelligence -- review millennium-bridge` and `pnpm content:intelligence -- validate millennium-bridge`. These offline commands cannot promote, generate production, or invoke paid stages. See `docs/RECOVERY.md` and `content-intelligence/reviews/millennium-bridge-reconstruction-v1/review.md`.
+
+The surviving Wood Frog claim/editorial and exact-master gates have been completed; its platform packages still await private real-device review. Future work must:
 
 1. consume the approved revision 2 snapshots without restoring the uncertain circulation claim;
 2. preserve the approved scientific visual guardrails and record asset rights/provenance;
@@ -171,7 +173,7 @@ The Wood Frog claim/editorial gate has been completed. Production must now:
 - automatic human verification or approval;
 - retries/caching for paid live calls;
 - exact VideoSpec or Remotion generation from a visual plan;
-- production rendering for the wood-frog draft;
+- Millennium Bridge production and reported lost Meta Mobile QA reconstruction;
 - publishing or analytics APIs.
 
-The next bottleneck is translating the approved VisualPlan into a bounded, rights-traceable production plan and VideoSpec without weakening the scientific guardrails. Generic VisualPlan-to-Remotion automation remains premature.
+The previous statement that Wood Frog production was unimplemented was stale relative to the surviving ProductionPlan/master chain. The current reconstruction bottleneck is fresh owner review of Millennium Bridge evidence and editorial artifacts. Generic VisualPlan-to-Remotion automation remains premature.

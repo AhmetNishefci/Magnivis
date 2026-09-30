@@ -1,3 +1,4 @@
+import {millenniumBridgeTopicCandidate} from '../src/content-intelligence/candidates/millennium-bridge';
 import {describe, expect, it} from 'vitest';
 import type {AIProvider, StructuredGenerationRequest} from '../src/ai/provider';
 import type {StructuredGenerationProviderResult} from '../src/ai/schema';
@@ -105,6 +106,7 @@ class FixtureProvider implements AIProvider {
 describe('Content Intelligence V1 topic candidates and prompts', () => {
   it('registers the retrospective Speed of Light candidate deterministically', () => {
     expect(topicCandidateRegistry.list()).toEqual([
+      millenniumBridgeTopicCandidate,
       speedOfLightTopicCandidate,
       woodFrogFreezeTopicCandidate,
     ]);

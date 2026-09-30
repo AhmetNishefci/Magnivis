@@ -274,6 +274,7 @@ describe('knowledge package registry', () => {
       speedOfLightKnowledgePackage,
     );
     expect(knowledgePackageRegistry.list().map(({id}) => id)).toEqual([
+      'millennium-bridge',
       'ocean-depth',
       'speed-of-light',
       'wood-frog-freeze-tolerance',

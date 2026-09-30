@@ -6,7 +6,7 @@ Magnivis is a faceless English-language knowledge-media brand that turns fascina
 
 Magnivis is open-ended: it discovers compelling knowledge opportunities first and classifies them second. High-level pillars are portfolio groupings, not a whitelist of permissible subjects. See `docs/STRATEGY.md`.
 
-Content Intelligence V1 provides a provider-neutral, schema-validated path from a manual TopicCandidate through evaluation and an unverified research workspace to claim-safe hook and ContentAsset drafts. An optional OpenAI Responses adapter is implemented, while deterministic fixtures keep normal tests and review trials offline. The first new-topic trial covers wood-frog freeze tolerance and remains explicitly awaiting human verification. See `docs/CONTENT-INTELLIGENCE.md`.
+Content Intelligence V1 provides a provider-neutral, schema-validated path from a manual TopicCandidate through evaluation and an unverified research workspace to claim-safe hook and ContentAsset drafts. An optional OpenAI Responses adapter is implemented, while deterministic fixtures keep normal tests and review trials offline. The historical Wood Frog fixture trial is preserved; its later owner-approved editorial/production chain survives. Millennium Bridge research/editorial reconstruction is now ready for a fresh owner reconstruction review; production remains unauthorized. See `docs/RECOVERY.md`. See `docs/CONTENT-INTELLIGENCE.md`.
 
 ## Requirements
 

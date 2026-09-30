@@ -21,6 +21,7 @@ import {
   writeWoodFrogClaimReviewArtifacts,
 } from '../src/content-intelligence/reviews/wood-frog-freeze';
 import {stableJson} from '../src/content-intelligence/run-schema';
+import {validateMillenniumBridgeReviewArtifacts, writeMillenniumBridgeReviewArtifacts} from '../src/content-intelligence/reviews/millennium-bridge';
 import {
   createWoodFrogFixtureProvider,
   validateWoodFrogTrialArtifacts,
@@ -51,6 +52,8 @@ const optionValue = (args: readonly string[], name: string) => {
 
 const usage = () => [
   'Usage:',
+  '  pnpm content:intelligence -- review millennium-bridge [--output <directory>]',
+  '  pnpm content:intelligence -- validate millennium-bridge [--output <directory>]',
   '  pnpm content:intelligence -- trial wood-frog-freeze --provider fixture [--output <directory>]',
   '  pnpm content:intelligence -- evaluate wood-frog-freeze --provider openai --output <directory>',
   '  pnpm content:intelligence -- research wood-frog-freeze --provider openai --output <directory> [--input <evaluation-run>]',
@@ -83,6 +86,14 @@ export const executeContentIntelligenceCommand = async (
   const topic = args[1];
   if (!stage || !['trial', 'evaluate', 'research', 'hooks', 'asset', 'validate', 'review', 'approve'].includes(stage)) {
     throw new Error(usage());
+  }
+  if (topic === 'millennium-bridge') {
+    if (stage !== 'review' && stage !== 'validate') throw new Error('Millennium Bridge reconstruction supports review/validate only; owner reconstruction review and separate production authorization are pending');
+    const directory = resolve(optionValue(args, '--output') ?? 'content-intelligence/reviews/millennium-bridge-reconstruction-v1');
+    if (stage === 'review') writeMillenniumBridgeReviewArtifacts(directory);
+    validateMillenniumBridgeReviewArtifacts(directory);
+    log(`valid reconstruction owner review: ${directory}`);
+    return;
   }
   if (topic !== 'wood-frog-freeze') throw new Error(`Unknown trial topic: ${topic ?? '(missing)'}`);
   const outputDirectory = resolve(optionValue(args, '--output')

@@ -3,6 +3,7 @@ import {
   speedOfLightPublishedShortAsset,
 } from './assets/speed-of-light';
 import {oceanDepthPublishedShortAsset} from './assets/ocean-depth';
+import {millenniumBridgeContentAsset} from './assets/millennium-bridge';
 import {woodFrogApprovedContentAsset} from './assets/wood-frog-approved';
 import {contentAssetSchema, type ContentAsset} from './schema';
 import {
@@ -69,6 +70,7 @@ export const createContentAssetRegistry = (
 };
 
 export const contentAssetRegistry = createContentAssetRegistry([
+  millenniumBridgeContentAsset,
   oceanDepthPublishedShortAsset,
   speedOfLightPublishedShortAsset,
   speedOfLightCosmicDistanceAsset,

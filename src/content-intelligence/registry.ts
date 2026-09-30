@@ -1,6 +1,7 @@
 import {knowledgePackageRegistry, type KnowledgePackageRegistry} from '../knowledge/registry';
 import {speedOfLightTopicCandidate} from './candidates/speed-of-light';
 import {woodFrogFreezeTopicCandidate} from './candidates/wood-frog-freeze';
+import {millenniumBridgeTopicCandidate} from './candidates/millennium-bridge';
 import {topicCandidateSchema, type TopicCandidate} from './schema';
 
 export const createTopicCandidateRegistry = (
@@ -36,6 +37,7 @@ export const createTopicCandidateRegistry = (
 };
 
 export const topicCandidateRegistry = createTopicCandidateRegistry([
+  millenniumBridgeTopicCandidate,
   speedOfLightTopicCandidate,
   woodFrogFreezeTopicCandidate,
 ]);

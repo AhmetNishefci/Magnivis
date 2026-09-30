@@ -1,6 +1,14 @@
 # Project state
 
-Last updated: 2026-09-29
+Last updated: 2026-09-30
+
+## CURRENT — post-reset recovery
+
+The surviving main baseline is `ae797996382c337759612265fd8229e8d5f06eef`. Later local-only work was lost, not recovered. Reconstruction is isolated on `recovery/magnivis-post-reset`; [recovery provenance](RECOVERY.md) distinguishes surviving truth, historical reports and new artifacts.
+
+Milestone 1 reconstructs Millennium Bridge research/editorial revision 1 from eight freshly inspected source families and 18 supported, scoped claims. Exact historical owner-supplied narration is revalidated, with six editorial beats and an original-vector VisualPlan. `content-intelligence/reviews/millennium-bridge-reconstruction-v1/` is ready for explicit owner reconstruction review. Claims are not promoted to `verified` before that decision; no production is authorized. Injury status remains unknown/excluded.
+
+The entries below preserve surviving repository history and its outstanding gates; they do not incorporate reported lost Meta QA or Candidate 3 approvals as current artifacts.
 
 ## DONE
 
@@ -48,6 +56,8 @@ Last updated: 2026-09-29
 - Video 004 has the first generalized PublicationRecord, linked to the exact YouTube variant/asset/package revisions and uploaded video hash. Settings without durable evidence remain `unknown`. No production MetricSnapshot has been fabricated.
 
 ## NOW — operational/editorial work
+
+- Review the reconstructed Millennium Bridge claim ledger, exact hook/script and editorial VisualPlan; record a fresh reconstruction decision before any separately authorized production milestone.
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
