@@ -1,0 +1,820 @@
+{
+  "approvedEditorial": {
+    "contentAsset": {
+      "id": "millennium-bridge.asset.balance-feedback",
+      "revision": 1,
+      "sha256": "79fa7645845e85eeaa8739ce1d9bf4b108a8f20bc9989a3e0af0bda0a643b942"
+    },
+    "decision": {
+      "id": "owner-decision.millennium-bridge.reconstruction.v1",
+      "sha256": "05acaba26183824d7885ef1e5ea47559c88dbf4805b2ceb873080617690608ac"
+    },
+    "knowledgePackage": {
+      "id": "millennium-bridge",
+      "revision": 1,
+      "sha256": "ca02ecb84d96545cbbedc88501626c551b02df33fefcd30e307f07408e817ee2"
+    }
+  },
+  "contactSheet": {
+    "height": 1460,
+    "path": "contact-sheet.png",
+    "sha256": "8b563c7f2bd773afbcc70b22816b3604472efb91cb98c74aaf50e0bd5bf4b29e",
+    "width": 1080
+  },
+  "explorationARejection": {
+    "fileSha256": "5341865e5a9f6d270ded084ebfd33e92b704b7925d6f4f3cbfff68fa01d4d276",
+    "path": "design-reviews/decisions/millennium-bridge-exploration-a-rejection-v1.json"
+  },
+  "frames": [
+    {
+      "assetId": "asset.millennium-bridge.exploration-b.01",
+      "beatSuffixes": [
+        "balance-paradox",
+        "opening-day"
+      ],
+      "cameraPlan": "Gentle push toward the planted shoe; lateral deck movement must precede corrective body/step action.",
+      "claimIds": [
+        "millennium-bridge.claim.opening-lateral-motion",
+        "millennium-bridge.claim.balance-foot-placement"
+      ],
+      "criticalRegions": [
+        {
+          "height": 82,
+          "id": "disclosure",
+          "meaning": "Subordinate two-line model disclosure, separate from captions.",
+          "width": 680,
+          "x": 108,
+          "y": 1492
+        },
+        {
+          "height": 1020,
+          "id": "human-balance",
+          "meaning": "Weight-bearing body, arm and corrective contact points.",
+          "width": 635,
+          "x": 195,
+          "y": 310
+        }
+      ],
+      "id": "01-opening",
+      "improvement": "Readable corrective lean, bent legs and searching foot, original textured coat, luminous metal deck and London depth replace the flat mannequin scene.",
+      "narrativeBeatIds": [
+        "millennium-bridge.asset.balance-feedback.beat.balance-paradox",
+        "millennium-bridge.asset.balance-feedback.beat.opening-day"
+      ],
+      "overlay": {
+        "path": "01-opening.overlay.svg",
+        "sha256": "0f6c61b44d6ed319a1289553602ef014ed9ae7ac8ffbf6884aa51405aeb992d6"
+      },
+      "png": {
+        "height": 1920,
+        "path": "01-opening.png",
+        "sha256": "e9dc99564d1b97e913a91b1031803c3342b0b349eea7b4a67c8bca2db9f4c247",
+        "width": 1080
+      },
+      "promptPath": "prompt-01.txt",
+      "safeAreaChecks": [
+        {
+          "passed": true,
+          "profileId": "safe-area.youtube-shorts.v1",
+          "profileSha256": "108783e1d879d83bd69ff11cbce8f2079cefee8f064cc5102178df1b3ffa4969",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 1020,
+              "id": "human-balance",
+              "inside": true,
+              "meaning": "Weight-bearing body, arm and corrective contact points.",
+              "width": 635,
+              "x": 195,
+              "y": 310
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "passed": true,
+          "profileId": "safe-area.tiktok-feed.v2",
+          "profileSha256": "5c59a2a2a52be71b3ead659c9e07abc8e383479cf16a0bee23f8dd7e19f99d95",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 1020,
+              "id": "human-balance",
+              "inside": true,
+              "meaning": "Weight-bearing body, arm and corrective contact points.",
+              "width": 635,
+              "x": 195,
+              "y": 310
+            }
+          ],
+          "revision": 2
+        }
+      ],
+      "shotScale": "Human-scale low 35 mm",
+      "source": {
+        "copiedProtectedArtwork": "none intentionally supplied or identified in local inspection; not a guarantee about model training or output uniqueness",
+        "externalReferenceImages": [],
+        "generatedInternally": true,
+        "generation": {
+          "metadataLimitation": "Built-in tool returned an image and save-path hint only; unreported model/run/seed/usage values are unknown, not invented.",
+          "mode": "built-in",
+          "model": null,
+          "observedAfterGenerationAt": "2026-09-30T16:27:33.000Z",
+          "prompt": "Use case: photorealistic-natural. Asset type: original cinematic science-documentary DESIGN CONCEPT, not a real photograph or archival evidence. Create a single portrait 9:16 high-resolution keyframe for Magnivis, a premium English knowledge-media brand. Shot 1: THE BALANCE PARADOX, London Millennium footbridge. Camera at human waist height, dramatic low 35mm perspective down the unmistakably shallow steel pedestrian suspension walkway toward distant London riverbanks and softly recognizable St Paul's dome. Strong river depth, wet brushed-metal deck, real shallow suspension cables and receding handrails, atmospheric overcast morning with a shaft of warm sunlight, silver highlights, rich navy/teal shadows but a luminous readable scene. Foreground: one anonymous adult person seen three-quarter from behind, wearing a textured burnt-sienna light coat, charcoal trousers and everyday off-white shoes; believable human anatomy and cloth folds, no visible facial identity. The person is visibly reacting to small SIDEWAYS deck displacement: body leaning opposite the lateral deck movement, one knee bent, one foot planted carrying weight, the other foot searching sideways for a wider stance, one arm extending naturally to regain balance. NOT dancing, NOT falling, NOT an injury. The bridge remains intact and level vertically. Show restrained photographic lateral exposure witnesses on the near deck edge, while distant riverbanks stay steady; no implausible structural bending or storm damage. The pedestrian/deck contact and weight shift are the immediate visual subject and occupy the central 65 percent, with essential shoes/body between 15 and 80 percent of image height. Make the first image visually arresting through physical contradiction, perspective and light, not typography. Premium editorial realism with textured surfaces, controlled shallow depth of field, clear tonal separation, filmic local contrast; no cartoon, low-poly, mannequin, engineering presentation, arrows, circles around feet, HUD, text, watermark, logo, copyrighted footage or copied scientific figure. No title or labels; disclosure will be composited separately in original code. Deliver only the single image, no collage.",
+          "promptSha256": "da958561e96c9a08cf6f968bb735eabf13d319eef8f4b6e3254d3608d2d29c5d",
+          "providerResponseId": null,
+          "seed": null,
+          "tool": "image_gen.imagegen",
+          "toolArtifactBasename": "exec-14b687af-103b-40cf-82e6-253718fd354f.png",
+          "usage": null
+        },
+        "height": 1672,
+        "id": "asset.millennium-bridge.exploration-b.01",
+        "licenseStatus": "Provider-generated output under applicable OpenAI output terms; not CC0, not a guarantee of uniqueness/copyrightability; owner-authorized design use, final production selection pending.",
+        "origin": "built-in-imagegen",
+        "path": "sources/01-opening-original.png",
+        "procedural": false,
+        "regeneration": "Reuse exact committed source bytes for deterministic composition. A fresh tool request with this prompt is non-deterministic and must create a new asset identity/review.",
+        "scientificUse": "Illustrative synthetic shot concept; not research evidence, measured event geometry, exact installed hardware or archival footage.",
+        "sha256": "442eae584b4271debdfb4e13b3b7b07d37ba3fe29e9038679b0e9a04190c2c52",
+        "termsReferences": [
+          "https://openai.com/policies/terms-of-use/",
+          "https://openai.com/policies/services-agreement/"
+        ],
+        "termsRetrieved": "2026-09-30",
+        "usageStatus": "owner-authorized-design-exploration; final production selection pending",
+        "width": 941
+      },
+      "title": "The ground shifts beneath a person",
+      "transitionPlan": "Match cut from searching shoe to near-deck close-up."
+    },
+    {
+      "assetId": "asset.millennium-bridge.exploration-b.02",
+      "beatSuffixes": [
+        "corrective-steps"
+      ],
+      "cameraPlan": "Deck slides beneath a controlled planted sole; seeking foot lands laterally. Background remains secondary.",
+      "claimIds": [
+        "millennium-bridge.claim.balance-foot-placement"
+      ],
+      "criticalRegions": [
+        {
+          "height": 82,
+          "id": "disclosure",
+          "meaning": "Subordinate two-line model disclosure, separate from captions.",
+          "width": 680,
+          "x": 108,
+          "y": 1492
+        },
+        {
+          "height": 570,
+          "id": "shoe-contact",
+          "meaning": "Primary planted sole and seeking forefoot/deck contact; outer heel is contextual.",
+          "width": 720,
+          "x": 125,
+          "y": 700
+        }
+      ],
+      "id": "02-corrective-step",
+      "improvement": "Tactile soles, compressed stance and leg geometry communicate contact without rings, panels or large force arrows.",
+      "narrativeBeatIds": [
+        "millennium-bridge.asset.balance-feedback.beat.corrective-steps"
+      ],
+      "overlay": {
+        "path": "02-corrective-step.overlay.svg",
+        "sha256": "75ebf50d7acb5aa71ea09a515df8f934ad94e8609951048aa7f57c71e6a82e78"
+      },
+      "png": {
+        "height": 1920,
+        "path": "02-corrective-step.png",
+        "sha256": "efe7a92e38c1c818b68c46df7f76ccc21663cdddb1a4a7955c4caaf700121ca9",
+        "width": 1080
+      },
+      "promptPath": "prompt-02.txt",
+      "safeAreaChecks": [
+        {
+          "passed": true,
+          "profileId": "safe-area.youtube-shorts.v1",
+          "profileSha256": "108783e1d879d83bd69ff11cbce8f2079cefee8f064cc5102178df1b3ffa4969",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 570,
+              "id": "shoe-contact",
+              "inside": true,
+              "meaning": "Primary planted sole and seeking forefoot/deck contact; outer heel is contextual.",
+              "width": 720,
+              "x": 125,
+              "y": 700
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "passed": true,
+          "profileId": "safe-area.tiktok-feed.v2",
+          "profileSha256": "5c59a2a2a52be71b3ead659c9e07abc8e383479cf16a0bee23f8dd7e19f99d95",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 570,
+              "id": "shoe-contact",
+              "inside": true,
+              "meaning": "Primary planted sole and seeking forefoot/deck contact; outer heel is contextual.",
+              "width": 720,
+              "x": 125,
+              "y": 700
+            }
+          ],
+          "revision": 2
+        }
+      ],
+      "shotScale": "Near-ground shoe/detail macro",
+      "source": {
+        "copiedProtectedArtwork": "none intentionally supplied or identified in local inspection; not a guarantee about model training or output uniqueness",
+        "externalReferenceImages": [],
+        "generatedInternally": true,
+        "generation": {
+          "metadataLimitation": "Built-in tool returned an image and save-path hint only; unreported model/run/seed/usage values are unknown, not invented.",
+          "mode": "built-in",
+          "model": null,
+          "observedAfterGenerationAt": "2026-09-30T16:29:39.000Z",
+          "prompt": "Use case: photorealistic-natural. Original synthetic cinematic science-documentary design concept for Magnivis, NOT a real historical photograph or scientific evidence. Single portrait 9:16 high-resolution frame. Premium editorial realism, textured steel and cloth, London Millennium shallow steel pedestrian suspension bridge over the Thames. Luminous morning atmosphere: silver-white metal, rich teal/navy shadows, restrained amber sunlight, strong tonal separation, believable depth and human anatomy; not dark empty imagery. Anonymous natural people without prominent facial identities. No copied photos/footage/scientific figure, logos, text, title, arrows, contact rings, HUD, low-poly/cartoon/mannequin look or collage. No injury, structural damage or collapse; lateral movement only, bridge stays level vertically. Disclosures and scientifically constrained witnesses will be composited separately. Shot 2 CORRECTIVE STEP: near-deck macro camera 15cm above the brushed wet steel floor, a tight side/rear view of the LOWER LEGS ONLY of the burnt-sienna-coated pedestrian in charcoal trousers and off-white ordinary sneakers. One shoe is clearly planted and compressed under body weight; the other is moving sideways into a wider stance with a bent knee, heel just above surface. Both legs and shoes believable, enough floor to see their spatial relationship. Strong tactile shoe sole/cloth/steel detail; slanted receding deck grooves and handrail in soft out-of-focus background, river light bokeh. Very subtle horizontal deck motion exposure blur on steel, but sharp weight-bearing sole; no magic glowing foot marks. Shoes/contact occupy central 60 percent between 35 and 78 percent image height; scene fills the frame. Distinct intimate low angle, not a repeated full-body portrait. Same warm/cool documentary lighting as the opening. Only two legs and two shoes, no extra limbs.",
+          "promptSha256": "bd524209e18af3b605ae9a50b05e30a8fc6f1af206cb7826aebbe78d72ab9027",
+          "providerResponseId": null,
+          "seed": null,
+          "tool": "image_gen.imagegen",
+          "toolArtifactBasename": "exec-1103e86c-0e2b-4e75-9df7-830be3c8e893.png",
+          "usage": null
+        },
+        "height": 1672,
+        "id": "asset.millennium-bridge.exploration-b.02",
+        "licenseStatus": "Provider-generated output under applicable OpenAI output terms; not CC0, not a guarantee of uniqueness/copyrightability; owner-authorized design use, final production selection pending.",
+        "origin": "built-in-imagegen",
+        "path": "sources/02-step-original.png",
+        "procedural": false,
+        "regeneration": "Reuse exact committed source bytes for deterministic composition. A fresh tool request with this prompt is non-deterministic and must create a new asset identity/review.",
+        "scientificUse": "Illustrative synthetic shot concept; not research evidence, measured event geometry, exact installed hardware or archival footage.",
+        "sha256": "f8e933d28f5b679abb8b244c3ab7b59864223a0166312731a3a147d54a0dfb52",
+        "termsReferences": [
+          "https://openai.com/policies/terms-of-use/",
+          "https://openai.com/policies/services-agreement/"
+        ],
+        "termsRetrieved": "2026-09-30",
+        "usageStatus": "owner-authorized-design-exploration; final production selection pending",
+        "width": 941
+      },
+      "title": "Weight transfers through a corrective step",
+      "transitionPlan": "Contact/steel texture match cut expands to crowd."
+    },
+    {
+      "assetId": "asset.millennium-bridge.exploration-b.03",
+      "beatSuffixes": [
+        "crowd-feedback"
+      ],
+      "cameraPlan": "Reveal bridge depth; independent walkers/contact phases accumulate into lateral deck response, never uniform marching.",
+      "claimIds": [
+        "millennium-bridge.claim.effective-negative-damping",
+        "millennium-bridge.claim.response-growth",
+        "millennium-bridge.claim.onset-without-crowd-synchrony"
+      ],
+      "criticalRegions": [
+        {
+          "height": 82,
+          "id": "disclosure",
+          "meaning": "Subordinate two-line model disclosure, separate from captions.",
+          "width": 680,
+          "x": 108,
+          "y": 1492
+        },
+        {
+          "height": 765,
+          "id": "crowd-scale",
+          "meaning": "Core receding crowd and bridge response.",
+          "width": 570,
+          "x": 240,
+          "y": 690
+        }
+      ],
+      "id": "03-crowd-feedback",
+      "improvement": "Many naturally varied people and a long physical bridge over the river establish a scale increase; bounded edge exposures suggest aggregate motion.",
+      "narrativeBeatIds": [
+        "millennium-bridge.asset.balance-feedback.beat.crowd-feedback"
+      ],
+      "overlay": {
+        "path": "03-crowd-feedback.overlay.svg",
+        "sha256": "a44069282d4669fa8afb2fb1a1e4fc5e17d61183addce7bb6114a0b584956bbc"
+      },
+      "png": {
+        "height": 1920,
+        "path": "03-crowd-feedback.png",
+        "sha256": "12b6dbce16cc16e15598c0e06eb78c4dd8a94974c6395e85d5e757d04fa86cfb",
+        "width": 1080
+      },
+      "promptPath": "prompt-03.txt",
+      "safeAreaChecks": [
+        {
+          "passed": true,
+          "profileId": "safe-area.youtube-shorts.v1",
+          "profileSha256": "108783e1d879d83bd69ff11cbce8f2079cefee8f064cc5102178df1b3ffa4969",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 765,
+              "id": "crowd-scale",
+              "inside": true,
+              "meaning": "Core receding crowd and bridge response.",
+              "width": 570,
+              "x": 240,
+              "y": 690
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "passed": true,
+          "profileId": "safe-area.tiktok-feed.v2",
+          "profileSha256": "5c59a2a2a52be71b3ead659c9e07abc8e383479cf16a0bee23f8dd7e19f99d95",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 765,
+              "id": "crowd-scale",
+              "inside": true,
+              "meaning": "Core receding crowd and bridge response.",
+              "width": 570,
+              "x": 240,
+              "y": 690
+            }
+          ],
+          "revision": 2
+        }
+      ],
+      "shotScale": "Wide elevated long-lens scale reveal",
+      "source": {
+        "copiedProtectedArtwork": "none intentionally supplied or identified in local inspection; not a guarantee about model training or output uniqueness",
+        "externalReferenceImages": [],
+        "generatedInternally": true,
+        "generation": {
+          "metadataLimitation": "Built-in tool returned an image and save-path hint only; unreported model/run/seed/usage values are unknown, not invented.",
+          "mode": "built-in",
+          "model": null,
+          "observedAfterGenerationAt": "2026-09-30T16:31:05.000Z",
+          "prompt": "Use case: photorealistic-natural. Original synthetic cinematic science-documentary design concept for Magnivis, NOT a real historical photograph or scientific evidence. Single portrait 9:16 high-resolution frame. Premium editorial realism, textured steel and cloth, London Millennium shallow steel pedestrian suspension bridge over the Thames. Luminous morning atmosphere: silver-white metal, rich teal/navy shadows, restrained amber sunlight, strong tonal separation, believable depth and human anatomy; not dark empty imagery. Anonymous natural people without prominent facial identities. No copied photos/footage/scientific figure, logos, text, title, arrows, contact rings, HUD, low-poly/cartoon/mannequin look or collage. No injury, structural damage or collapse; lateral movement only, bridge stays level vertically. Disclosures and scientifically constrained witnesses will be composited separately. Shot 3 CROWD FEEDBACK SCALE REVEAL: a much wider elevated long-lens view along the bridge across the Thames toward St Paul's, broad spatial establishing shot showing a dense natural opening-day-like crowd (synthetic illustration only). Many dozens of pedestrians of varied age/height/clothing, coats in restrained rust/olive/neutral tones, naturally staggered gait and different lateral balance corrections. Everyone is NOT marching, not stepping together, no identical clone rows. The crowd fills a long receding walkway but is individually readable in the middle-ground; bridge/riverbanks and recognizable London context supply rich depth. Hint aggregate lateral structural motion with photographic sideways exposure witnesses confined to the deck edges, no bend/collapse. Dramatic wide scale compared with the preceding shoe close-up, clear bright deck reflection and warm sun against cool river, organic detail. Main crowd/bridge subject stays centrally robust; no oversized foreground head cutting off the crowd, no giant graphic force arrows.",
+          "promptSha256": "21e1105b4edbc4a48376f82d9f93cce6de7be88b854e811ab79f7b23087ed134",
+          "providerResponseId": null,
+          "seed": null,
+          "tool": "image_gen.imagegen",
+          "toolArtifactBasename": "exec-fb182e04-fc08-4044-84aa-e5b48c6cb4f2.png",
+          "usage": null
+        },
+        "height": 1672,
+        "id": "asset.millennium-bridge.exploration-b.03",
+        "licenseStatus": "Provider-generated output under applicable OpenAI output terms; not CC0, not a guarantee of uniqueness/copyrightability; owner-authorized design use, final production selection pending.",
+        "origin": "built-in-imagegen",
+        "path": "sources/03-crowd-original.png",
+        "procedural": false,
+        "regeneration": "Reuse exact committed source bytes for deterministic composition. A fresh tool request with this prompt is non-deterministic and must create a new asset identity/review.",
+        "scientificUse": "Illustrative synthetic shot concept; not research evidence, measured event geometry, exact installed hardware or archival footage.",
+        "sha256": "feca71d95015a635f233721935b3964d755e0c755075bfbcbd439e45740c4d0f",
+        "termsReferences": [
+          "https://openai.com/policies/terms-of-use/",
+          "https://openai.com/policies/services-agreement/"
+        ],
+        "termsRetrieved": "2026-09-30",
+        "usageStatus": "owner-authorized-design-exploration; final production selection pending",
+        "width": 941
+      },
+      "title": "One correction becomes a crowd response",
+      "transitionPlan": "Rise and rotate into overhead spatial study."
+    },
+    {
+      "assetId": "asset.millennium-bridge.exploration-b.04",
+      "beatSuffixes": [
+        "coherence-qualification"
+      ],
+      "cameraPlan": "Selective sparse temporal witnesses mark two illustrative local phases while surrounding walkers vary; no inferred historical fraction.",
+      "claimIds": [
+        "millennium-bridge.claim.onset-without-crowd-synchrony",
+        "millennium-bridge.claim.later-coherence-effects",
+        "millennium-bridge.claim.opening-day-attribution-limit"
+      ],
+      "criticalRegions": [
+        {
+          "height": 82,
+          "id": "disclosure",
+          "meaning": "Subordinate two-line model disclosure, separate from captions.",
+          "width": 680,
+          "x": 108,
+          "y": 1492
+        },
+        {
+          "height": 665,
+          "id": "phase-study",
+          "meaning": "Illustrative local trajectories among varied central walkers.",
+          "width": 580,
+          "x": 240,
+          "y": 780
+        }
+      ],
+      "id": "04-local-coherence",
+      "improvement": "Diagonal deck, river texture and spatial clusters replace another frontal crowd view. Sparse trails suggest local relationships without a universal synchronization claim.",
+      "narrativeBeatIds": [
+        "millennium-bridge.asset.balance-feedback.beat.coherence-qualification"
+      ],
+      "overlay": {
+        "path": "04-local-coherence.overlay.svg",
+        "sha256": "ab5cada595d143f066f0b931c89f2caf2cffbdd497dc25e43c78105bf6459dd9"
+      },
+      "png": {
+        "height": 1920,
+        "path": "04-local-coherence.png",
+        "sha256": "6a12a4e1fa3cfe62e86f33be7a4f5506606eaea773e5986c44bef825777a1c01",
+        "width": 1080
+      },
+      "promptPath": "prompt-04.txt",
+      "safeAreaChecks": [
+        {
+          "passed": true,
+          "profileId": "safe-area.youtube-shorts.v1",
+          "profileSha256": "108783e1d879d83bd69ff11cbce8f2079cefee8f064cc5102178df1b3ffa4969",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 665,
+              "id": "phase-study",
+              "inside": true,
+              "meaning": "Illustrative local trajectories among varied central walkers.",
+              "width": 580,
+              "x": 240,
+              "y": 780
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "passed": true,
+          "profileId": "safe-area.tiktok-feed.v2",
+          "profileSha256": "5c59a2a2a52be71b3ead659c9e07abc8e383479cf16a0bee23f8dd7e19f99d95",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 665,
+              "id": "phase-study",
+              "inside": true,
+              "meaning": "Illustrative local trajectories among varied central walkers.",
+              "width": 580,
+              "x": 240,
+              "y": 780
+            }
+          ],
+          "revision": 2
+        }
+      ],
+      "shotScale": "Elevated overhead diagonal",
+      "source": {
+        "copiedProtectedArtwork": "none intentionally supplied or identified in local inspection; not a guarantee about model training or output uniqueness",
+        "externalReferenceImages": [],
+        "generatedInternally": true,
+        "generation": {
+          "metadataLimitation": "Built-in tool returned an image and save-path hint only; unreported model/run/seed/usage values are unknown, not invented.",
+          "mode": "built-in",
+          "model": null,
+          "observedAfterGenerationAt": "2026-09-30T16:32:29.000Z",
+          "prompt": "Use case: photorealistic-natural. Original synthetic cinematic science-documentary design concept for Magnivis, NOT a real historical photograph or scientific evidence. Single portrait 9:16 high-resolution frame. Premium editorial realism, textured steel and cloth, London Millennium shallow steel pedestrian suspension bridge over the Thames. Luminous morning atmosphere: silver-white metal, rich teal/navy shadows, restrained amber sunlight, strong tonal separation, believable depth and human anatomy; not dark empty imagery. Anonymous natural people without prominent facial identities. No copied photos/footage/scientific figure, logos, text, title, arrows, contact rings, HUD, low-poly/cartoon/mannequin look or collage. No injury, structural damage or collapse; lateral movement only, bridge stays level vertically. Disclosures and scientifically constrained witnesses will be composited separately. Shot 4 LOCAL COHERENCE AND UNCERTAINTY: a genuinely overhead/top-down cinematic composition, camera looking almost vertically down onto an oblique diagonal section of the steel pedestrian bridge over textured teal river. The visible deck runs from lower left to upper right, centrally; hundreds of tiny but believable naturally varied pedestrians, NOT rows marching. A few spatially local small groups are closer in gait phase while many surrounding people have visibly different leg and arm positions. Real sunlight produces irregular long shadows that reveal varied stance directions. Cropped riverbanks are contextual only. Bridge stays intact with subtle horizontal motion exposure trails along its edges; no diagram panels, no glyph figures, no arrows or implied measurement. Distinct overhead visual rhythm and negative water space, not another longitudinal crowd photograph. Warm highlights on metal and clothes, cool river, premium realistic texture. Treat local matching phases as illustrative possibility not measured opening-day synchrony. No universal lockstep.",
+          "promptSha256": "4d0108d257af7c83ca794c75c41b740d7b90a120b9b5e38b5e5aad86e8be45fb",
+          "providerResponseId": null,
+          "seed": null,
+          "tool": "image_gen.imagegen",
+          "toolArtifactBasename": "exec-77c7954b-65df-4ec8-9f46-8e3beea755f6.png",
+          "usage": null
+        },
+        "height": 1672,
+        "id": "asset.millennium-bridge.exploration-b.04",
+        "licenseStatus": "Provider-generated output under applicable OpenAI output terms; not CC0, not a guarantee of uniqueness/copyrightability; owner-authorized design use, final production selection pending.",
+        "origin": "built-in-imagegen",
+        "path": "sources/04-overhead-original.png",
+        "procedural": false,
+        "regeneration": "Reuse exact committed source bytes for deterministic composition. A fresh tool request with this prompt is non-deterministic and must create a new asset identity/review.",
+        "scientificUse": "Illustrative synthetic shot concept; not research evidence, measured event geometry, exact installed hardware or archival footage.",
+        "sha256": "c887e1c630adb4942b4272724d3789f1cb9798689e83275e3d6f53d0e9d368bb",
+        "termsReferences": [
+          "https://openai.com/policies/terms-of-use/",
+          "https://openai.com/policies/services-agreement/"
+        ],
+        "termsRetrieved": "2026-09-30",
+        "usageStatus": "owner-authorized-design-exploration; final production selection pending",
+        "width": 941
+      },
+      "title": "Local relationships within varied motion",
+      "transitionPlan": "Follow a structural edge into damper detail."
+    },
+    {
+      "assetId": "asset.millennium-bridge.exploration-b.05",
+      "beatSuffixes": [
+        "energy-out"
+      ],
+      "cameraPlan": "Piston/anchors carry relative structural motion; exposure envelope decays from large to small but nonzero response.",
+      "claimIds": [
+        "millennium-bridge.claim.damping-energy-removal",
+        "millennium-bridge.claim.damper-systems"
+      ],
+      "criticalRegions": [
+        {
+          "height": 82,
+          "id": "disclosure",
+          "meaning": "Subordinate two-line model disclosure, separate from captions.",
+          "width": 680,
+          "x": 108,
+          "y": 1492
+        },
+        {
+          "height": 980,
+          "id": "damper-payoff",
+          "meaning": "Cylinder, piston, anchor and long-to-tight illustrative response.",
+          "width": 640,
+          "x": 160,
+          "y": 485
+        }
+      ],
+      "id": "05-damping",
+      "improvement": "A prominent tactile damper is physically pinned to supports; shrinking exposure witnesses make the response change more visible than A’s tiny hardware.",
+      "narrativeBeatIds": [
+        "millennium-bridge.asset.balance-feedback.beat.energy-out"
+      ],
+      "overlay": {
+        "path": "05-damping.overlay.svg",
+        "sha256": "d039c0c619b0d725e2464b5da4f5fe2e8ae4cba59015aa750460dd16dbcd08ec"
+      },
+      "png": {
+        "height": 1920,
+        "path": "05-damping.png",
+        "sha256": "b8df0de594298b3780375d59a7c813b038238b0c5a3d33694014754876806e2b",
+        "width": 1080
+      },
+      "promptPath": "prompt-05.txt",
+      "safeAreaChecks": [
+        {
+          "passed": true,
+          "profileId": "safe-area.youtube-shorts.v1",
+          "profileSha256": "108783e1d879d83bd69ff11cbce8f2079cefee8f064cc5102178df1b3ffa4969",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 980,
+              "id": "damper-payoff",
+              "inside": true,
+              "meaning": "Cylinder, piston, anchor and long-to-tight illustrative response.",
+              "width": 640,
+              "x": 160,
+              "y": 485
+            }
+          ],
+          "revision": 1
+        },
+        {
+          "passed": true,
+          "profileId": "safe-area.tiktok-feed.v2",
+          "profileSha256": "5c59a2a2a52be71b3ead659c9e07abc8e383479cf16a0bee23f8dd7e19f99d95",
+          "regions": [
+            {
+              "height": 82,
+              "id": "disclosure",
+              "inside": true,
+              "meaning": "Subordinate two-line model disclosure, separate from captions.",
+              "width": 680,
+              "x": 108,
+              "y": 1492
+            },
+            {
+              "height": 980,
+              "id": "damper-payoff",
+              "inside": true,
+              "meaning": "Cylinder, piston, anchor and long-to-tight illustrative response.",
+              "width": 640,
+              "x": 160,
+              "y": 485
+            }
+          ],
+          "revision": 2
+        }
+      ],
+      "shotScale": "Integrated hardware macro with bridge continuity",
+      "source": {
+        "copiedProtectedArtwork": "none intentionally supplied or identified in local inspection; not a guarantee about model training or output uniqueness",
+        "externalReferenceImages": [],
+        "generatedInternally": true,
+        "generation": {
+          "metadataLimitation": "Built-in tool returned an image and save-path hint only; unreported model/run/seed/usage values are unknown, not invented.",
+          "mode": "built-in",
+          "model": null,
+          "observedAfterGenerationAt": "2026-09-30T16:33:43.000Z",
+          "prompt": "Use case: photorealistic-natural. Original synthetic cinematic science-documentary design concept for Magnivis, NOT a real historical photograph or scientific evidence. Single portrait 9:16 high-resolution frame. Premium editorial realism, textured steel and cloth, London Millennium shallow steel pedestrian suspension bridge over the Thames. Luminous morning atmosphere: silver-white metal, rich teal/navy shadows, restrained amber sunlight, strong tonal separation, believable depth and human anatomy; not dark empty imagery. Anonymous natural people without prominent facial identities. No copied photos/footage/scientific figure, logos, text, title, arrows, contact rings, HUD, low-poly/cartoon/mannequin look or collage. No injury, structural damage or collapse; lateral movement only, bridge stays level vertically. Disclosures and scientifically constrained witnesses will be composited separately. Shot 5 DAMPING PAYOFF: cinematic close side/underside structural detail, integrated metallic fluid-viscous damper cylinder and piston pinned securely between real steel bridge bracing/anchor components, plausible mechanical assembly, reflective brushed metal and warm rim light. Hero hardware in central lower-middle foreground, with the SAME shallow suspension pedestrian bridge and calm naturally walking silhouettes receding behind in soft depth of field, Thames and London atmosphere visible. The composition should suggest a satisfying physical solution: a long soft lateral exposure witness diminishing into a shorter sharper residual trace along one near structural edge, NOT perfect immobility. Tight hardware interaction with structural attachment, no floating detached device, no machine labels, no abstract plot, no split-screen collage, no glowing magic energy. Photoreal original conceptual installation, not a specification drawing or exact claim about installed hardware layout. Give the rod/cylinder/anchors strong tactile detail and spatial continuity; don't hide the damper as a tiny feature.",
+          "promptSha256": "d4087fb5cab25efc42ac646a8933ab062107a49f66da4da9d0517cc500b33572",
+          "providerResponseId": null,
+          "seed": null,
+          "tool": "image_gen.imagegen",
+          "toolArtifactBasename": "exec-c7bf1d58-28bf-48e4-84cb-d6e4dee2d3da.png",
+          "usage": null
+        },
+        "height": 1672,
+        "id": "asset.millennium-bridge.exploration-b.05",
+        "licenseStatus": "Provider-generated output under applicable OpenAI output terms; not CC0, not a guarantee of uniqueness/copyrightability; owner-authorized design use, final production selection pending.",
+        "origin": "built-in-imagegen",
+        "path": "sources/05-damper-original.png",
+        "procedural": false,
+        "regeneration": "Reuse exact committed source bytes for deterministic composition. A fresh tool request with this prompt is non-deterministic and must create a new asset identity/review.",
+        "scientificUse": "Illustrative synthetic shot concept; not research evidence, measured event geometry, exact installed hardware or archival footage.",
+        "sha256": "eee4eb5edd0dd43d00f2bcfd25633630743ba594da154ca866f3aee847668eff",
+        "termsReferences": [
+          "https://openai.com/policies/terms-of-use/",
+          "https://openai.com/policies/services-agreement/"
+        ],
+        "termsRetrieved": "2026-09-30",
+        "usageStatus": "owner-authorized-design-exploration; final production selection pending",
+        "width": 941
+      },
+      "title": "Motion is absorbed by the structure",
+      "transitionPlan": "Resolve promptly on the controlled structure; no outro."
+    }
+  ],
+  "generation": {
+    "font": {
+      "license": "OFL-1.1",
+      "package": "@fontsource/manrope@5.3.0",
+      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc"
+    },
+    "fontkit": "2.0.4",
+    "normalization": "Approximately 15% Lanczos3 upscale with negligible centre cover crop; source images are not native 1080 or recovered historical assets.",
+    "outputDimensions": {
+      "height": 1920,
+      "width": 1080
+    },
+    "reproducibility": "Source generation cannot be replayed byte-identically. Reuse committed source bytes. Downstream generation has no network, clocks, randomness or system fonts; verify exact bytes on pinned stack, do not assume identity across rasterizer/platform versions.",
+    "rsvg": "2.61.2",
+    "sharp": "0.34.5",
+    "sourceDimensions": {
+      "height": 1672,
+      "width": 941
+    },
+    "vips": "8.17.3"
+  },
+  "id": "design-review.millennium-bridge.exploration-b.v1",
+  "provenance": {
+    "deterministicCompositionFromFrozenBytes": true,
+    "externalReferenceImages": false,
+    "fullProductionAuthorized": false,
+    "generatedOriginalAssets": true,
+    "identicalToLostFrames": false,
+    "modelOutputIsScientificEvidence": false,
+    "nondeterministicSourceGeneration": true,
+    "ownerDesignApproval": false,
+    "platformActivityAuthorized": false,
+    "publicationAuthorized": false,
+    "recoveredOriginalBytes": false
+  },
+  "qa": {
+    "animationReadiness": "not proven; static sources require future controlled layers, pose/gait and structural-motion prototype before full production",
+    "criticalRectangles": "passed against surviving YouTube Shorts V1 and TikTok V2 only; not pixel segmentation or real-device QA",
+    "localVisualInspection": "local-qa.json; recorded independently after viewing outputs",
+    "metaGeometryReconstructed": false,
+    "realDeviceEvidence": false
+  },
+  "revision": 1,
+  "scientificConstraints": [
+    "Synthetic illustrative world, not opening-day photography or measured bridge trajectories.",
+    "Generated bridge and damper geometry are illustrative, not exact retrofit installation documentation.",
+    "Temporal witnesses are uncalibrated and do not establish forces, phase fractions or historical mechanism mixture.",
+    "Crowd-wide synchronization is not a necessary initiating condition; later coordination may affect response.",
+    "Damping reduces response; neither zero future motion nor injury status is asserted."
+  ],
+  "startingCommit": "3c3421243d1bf37fbb5769a7e554b659b973fe09",
+  "status": "ready-for-owner-design-review",
+  "supportingFiles": [
+    {
+      "path": "source-assets.json",
+      "sha256": "d0ede039b9a35d4703b026478f850f5be4613e3290924ab9e529f363ecbde8a6"
+    },
+    {
+      "path": "pipeline-assessment.md",
+      "sha256": "7362fbdeed71ffebd1a2fba0ada40a56eb4192a0e6daa0b0d90a60cbf227ac77"
+    },
+    {
+      "path": "comparison-with-a.md",
+      "sha256": "76e35083c9b052457d1128499c143b69a2f6621f88be84d8c7268042eb99cfcd"
+    },
+    {
+      "path": "prompt-01.txt",
+      "sha256": "41b6497676ee501111499e18d36da2319c20c26ff79e63f8a367ca5a9207b08c"
+    },
+    {
+      "path": "prompt-02.txt",
+      "sha256": "28ade19fcc88156c46cc4be4edb1b34ab7b5a4f504411e0a511645b89dce4160"
+    },
+    {
+      "path": "prompt-03.txt",
+      "sha256": "529231c414974c309223dc09ef5c731e3cf39daa1d87dc08f4348e10bcad3c5d"
+    },
+    {
+      "path": "prompt-04.txt",
+      "sha256": "fba77c7212bdf048114b684a8d5df911765fdbcde0c1adbe9a22d2a8f4f32e9a"
+    },
+    {
+      "path": "prompt-05.txt",
+      "sha256": "4ee8d167ff256845b969056674ad08a5822fe6e000683ad5856800371b3f6a20"
+    },
+    {
+      "path": "sources/01-opening-original.png",
+      "sha256": "442eae584b4271debdfb4e13b3b7b07d37ba3fe29e9038679b0e9a04190c2c52"
+    },
+    {
+      "path": "sources/02-step-original.png",
+      "sha256": "f8e933d28f5b679abb8b244c3ab7b59864223a0166312731a3a147d54a0dfb52"
+    },
+    {
+      "path": "sources/03-crowd-original.png",
+      "sha256": "feca71d95015a635f233721935b3964d755e0c755075bfbcbd439e45740c4d0f"
+    },
+    {
+      "path": "sources/04-overhead-original.png",
+      "sha256": "c887e1c630adb4942b4272724d3789f1cb9798689e83275e3d6f53d0e9d368bb"
+    },
+    {
+      "path": "sources/05-damper-original.png",
+      "sha256": "eee4eb5edd0dd43d00f2bcfd25633630743ba594da154ca866f3aee847668eff"
+    }
+  ],
+  "thesis": "A human physical contradiction, tactile mechanism, crowd-scale reveal, overhead phase study and satisfying hardware payoff: cinematic shot variety with rich original assets and exact restrained compositing."
+}

@@ -1,6 +1,6 @@
 # Roadmap
 
-Post-reset priority: Millennium Bridge research/editorial reconstruction is owner-approved. Five new Candidate 3 design replacements are ready for owner design review. See `docs/RECOVERY.md`. Full production and the reported Meta milestones remain separate, unreconstructed gates.
+Post-reset priority: Millennium Bridge research/editorial reconstruction is owner-approved. Exploration A is owner-rejected for visual execution only; five cinematic Exploration B keyframes are ready for owner review. A future controlled motion prototype must prove the hybrid pipeline before full production. See `docs/RECOVERY.md`. Full production and the reported Meta milestones remain separate, unreconstructed gates.
 
 This roadmap describes sequence, not promises or permission to sacrifice quality. `docs/PROJECT-STATE.md` records current execution state; `docs/ARCHITECTURE.md` records system boundaries.
 
@@ -71,3 +71,7 @@ This roadmap describes sequence, not promises or permission to sacrifice quality
 ## Skills recommendation
 
 Codex supports repository-local skills under `.agents/skills`, but none is justified yet. The broadened workflow has not stabilized. Keep rules in `AGENTS.md`, focused documentation, typed schemas, and deterministic scripts; reconsider a minimal skill only after a repeated workflow is stable.
+
+## Separate future Meta recovery gate
+
+After the final Millennium Bridge master is approved, reconstruct Meta Mobile QA V2 from Ahmet's actual historical screenshots/evidence. Preserve the Instagram Reel master and evaluate a dedicated grid/profile cover. Validate Facebook dedicated Reel and Page/feed separately; derive the smallest presentation treatment only if observed evidence requires it. This remains unreconstructed: no guessed surface coordinates, fabricated screenshots or inherited real-device approvals.

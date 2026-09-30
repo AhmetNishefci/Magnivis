@@ -289,3 +289,13 @@
 **Alternatives:** Immediately add research/render/QA skills.
 
 **Consequences:** Less speculative agent machinery; reconsider after several videos expose genuine repetition.
+
+## 2026-09-30 — Cinematic hybrid exploration with frozen generated sources
+
+**Decision:** Record Ahmet's visual-only rejection of Exploration A against exact artifacts, preserve A, and create Exploration B using original generated cinematic imagery plus deterministic repository-native compositing. The scientific/editorial chain is unchanged.
+
+**Reason:** A's simple procedural human/environment representation limited physicality, light and shot variety. Procedural/vector geometry remains valuable for precise motion, restrained scientific cues and typography; richer human/environment imagery raises the design ceiling.
+
+**Boundary:** The reusable addition is a small raster provenance/identity validator, not a provider SDK scattered through domain code or a new production framework. Built-in authoring-tool calls are captured as manual asset provenance, not fictional content-intelligence workflow envelopes. Exact prompts/source bytes are committed; undisclosed model/seed/usage fields stay null. Nondeterministic source generation is separated from deterministic downstream output. No claims of unique/copyrightable output or exact historical geometry.
+
+**Consequences:** B remains pending owner review. Frozen still assets require later layer separation, controlled poses and structural/damper motion to sustain animation; zoom-only image slideshow is insufficient. Disclosure appears readably and subordinate in review frames; future animation should introduce it at mechanism onset and reintroduce for hardware abstraction, with readable duration tested separately. No final captions/timings or production authorization follow automatically. Future Meta surface recovery requires actual owner evidence and a finished approved master.

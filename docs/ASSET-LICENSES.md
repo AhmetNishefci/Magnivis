@@ -27,3 +27,19 @@
 | Millennium Bridge Candidate 3 reconstructed design-review SVGs, PNGs and contact sheet | Original procedural/vector artwork created for Magnivis | Project-owned original work; Manrope glyphs under SIL OFL 1.1 | Static review replacements only, not recovered historical frames or final production assets. Shared bridge/river/skyline, shaded faceless people, contact/response cues and damper abstractions are original code. No copied footage, photograph, scientific figure or texture. Bundled font outlines avoid system-font dependence. |
 
 Scientific source pages are factual references, not embedded media assets. No third-party photos, video, music, sound effects, or logos are included in V1.
+
+## Exploration B — generated source imagery and deterministic composition
+
+All five original source images below were generated internally using the built-in `image_gen.imagegen` authoring tool on 2026-09-30, with owner-authorized design exploration. Exact prompts, actual observed times, source SHA-256, dimensions and tool output filenames are in `design-reviews/millennium-bridge-exploration-b-v1/source-assets.json`. Sources are 941×1672; the deterministic review frames normalize to 1080×1920. No original lost image identity is claimed.
+
+| Asset ID | Source path in Exploration B | Usage/status |
+| --- | --- | --- |
+| `asset.millennium-bridge.exploration-b.01` | `sources/01-opening-original.png` | Internally generated synthetic illustration; owner-authorized design use, final production selection pending. |
+| `asset.millennium-bridge.exploration-b.02` | `sources/02-step-original.png` | Internally generated synthetic illustration; owner-authorized design use, final production selection pending. |
+| `asset.millennium-bridge.exploration-b.03` | `sources/03-crowd-original.png` | Internally generated synthetic illustration; owner-authorized design use, final production selection pending. |
+| `asset.millennium-bridge.exploration-b.04` | `sources/04-overhead-original.png` | Internally generated synthetic illustration; owner-authorized design use, final production selection pending. |
+| `asset.millennium-bridge.exploration-b.05` | `sources/05-damper-original.png` | Internally generated synthetic illustration; owner-authorized design use, final production selection pending. |
+
+Provider output is governed by applicable [OpenAI Terms of Use](https://openai.com/policies/terms-of-use/) or [Services Agreement](https://openai.com/policies/services-agreement/), inspected 2026-09-30. These describe ownership as between the provider and user/customer to the extent permitted by law, and note output need not be unique. This record does not certify which account agreement applies, guaranteed copyrightability, exclusivity, CC0 status or freedom from all third-party rights. Final production selection remains an owner gate. No copyrighted reference artwork, scientific figures, broadcast footage or scraped imagery was supplied; no protected artwork was intentionally copied or identified during local inspection. That is not a guarantee about training data or uniqueness.
+
+The source images depict fictional illustrative humans/environment/hardware, not actual opening-day photographs, measured gait/response or exact retrofit drawings. Model, seed, provider response ID and usage were not exposed by the tool and remain unknown/null. Re-prompting is not byte reproducible; exact committed source bytes are the regeneration input. Original temporal-witness SVGs/composition code are repository-native work; bundled Manrope outlines remain OFL-1.1. Downstream Sharp normalization/compositing and contact-sheet generation are deterministic on the recorded stack and validated against committed hashes. No additional third-party raster media or new fonts are introduced.

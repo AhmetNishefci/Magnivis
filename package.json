@@ -39,7 +39,8 @@
     "test": "vitest run",
     "validate": "pnpm typecheck && pnpm lint && pnpm test",
     "check": "pnpm validate && git diff --check",
-    "design:bridge": "tsx scripts/bridge-design-review.ts"
+    "design:bridge": "tsx scripts/bridge-design-review.ts",
+    "design:bridge:b": "tsx scripts/bridge-exploration-b.ts"
   },
   "dependencies": {
     "@fontsource/manrope": "5.3.0",

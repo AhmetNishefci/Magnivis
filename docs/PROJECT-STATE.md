@@ -8,7 +8,11 @@ The surviving main baseline is `ae797996382c337759612265fd8229e8d5f06eef`. Later
 
 Milestone 1 reconstructed Millennium Bridge research/editorial revision 1 from eight freshly inspected source families and 18 scoped claims. Ahmet explicitly approved the reconstructed claims, qualifications/exclusions, limitations, exact historical hook/narration, six beats, VisualPlan and copyright/provenance in the Milestone 2 instruction. The actual decision-entry time is `2026-09-30T15:49:09.000Z`; approved package/asset revision 1 snapshots are registered and all 18 claims are verified within their recorded scopes. Injury status remains unknown/excluded.
 
-Milestone 2 reconstructs five deterministic Candidate 3 design frames at `design-reviews/millennium-bridge-candidate-3-reconstruction-v1/`, covering all six beats. They are new replacement bytes, not recovered original PNGs. Source SVGs, PNG hashes, contact sheet, exact editorial/decision bindings, local safe-area checks and an actual local visual inspection are recorded. **Owner design review is pending; full Candidate 3 production, audio, Meta reconstruction, platform activity and publication remain unauthorized.**
+Milestone 2 produced Exploration A at `design-reviews/millennium-bridge-candidate-3-reconstruction-v1/`. Ahmet rejected its visual execution in the Milestone 3 instruction; the actual rejection-entry time is `2026-09-30T16:23:37.000Z`. Its exact manifest, five frame hashes and editorial binding are locked in `design-reviews/decisions/millennium-bridge-exploration-a-rejection-v1.json`. A remains intact; scientific/editorial approval remains unchanged.
+
+Milestone 3 creates **Design Exploration B** at `design-reviews/millennium-bridge-exploration-b-v1/`: original generated cinematic source imagery, deterministic 1080×1920 keyframes/compositing, contact sheet, manifest, exact prompts/source hashes, provider-metadata limitations, pipeline assessment, comparison and local inspection. B demonstrates human-scale, macro, wide, overhead and integrated-hardware shots. **Owner visual review is pending.** Static image quality does not prove animation readiness; a future controlled layer/pose/deck/damper prototype must establish causality and continuity. Full Candidate 3 production, narration/audio/final captions, variants/deliveries, platform activity and publication remain unauthorized.
+
+A separate **future Meta Mobile QA V2** milestone requires Ahmet's actual historical screenshots/evidence and the approved finished master. Instagram: preserve Reel master and evaluate a dedicated grid/profile cover. Facebook: independently test dedicated Reel and Page/feed; make the smallest presentation derivative only if evidence requires it. No guessed geometry or real-device approvals are reconstructed in B.
 
 The entries below preserve surviving repository history and its outstanding gates; they do not incorporate reported lost Meta QA or Candidate 3 approvals as current artifacts.
 
@@ -59,7 +63,7 @@ The entries below preserve surviving repository history and its outstanding gate
 
 ## NOW — operational/editorial work
 
-- Review the exact five reconstructed Candidate 3 design frames/contact sheet and their hashes. Approve or request revisions before a separately authorized production milestone.
+- Review the exact five Exploration B PNG hashes and contact sheet. Approve or reject art direction; a full video is not authorized. Exploration A is preserved and rejected for visual execution only.
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.
