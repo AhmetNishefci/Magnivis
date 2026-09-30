@@ -8,7 +8,7 @@ import {z} from 'zod';
 const guide=readFileSync('AGENTS.md','utf8');
 const links=[...guide.matchAll(/`((?:docs|recovery-audit)\/[^`]+\.md)`/g)].map(match=>match[1]!);
 for(const link of links)if(!existsSync(link))throw new Error(`Broken agent route: ${link}`);
-const documents=['BRAND','STRATEGY','CONTENT-BIBLE','CONTENT-INTELLIGENCE','RESEARCH-STANDARDS','KNOWLEDGE-PACKAGES','CONTENT-ASSETS','PRODUCTION-PLANS','CAPTIONS','VIDEO-SYSTEM','PLATFORM-VARIANTS','PLATFORM-QA','DELIVERY-PACKAGES','OPERATIONS','PERFORMANCE','ROADMAP','PROJECT-STATE','DECISIONS','ASSET-LICENSES','ARTIFACT-STORAGE','LONGFORM-001-BRIEF','RECOVERY-CLOSE-CANDIDATE'];
+const documents=['BRAND','STRATEGY','CONTENT-BIBLE','CONTENT-INTELLIGENCE','RESEARCH-STANDARDS','KNOWLEDGE-PACKAGES','CONTENT-ASSETS','PRODUCTION-PLANS','CAPTIONS','VIDEO-SYSTEM','PLATFORM-VARIANTS','PLATFORM-QA','DELIVERY-PACKAGES','OPERATIONS','PERFORMANCE','ROADMAP','PROJECT-STATE','DECISIONS','ASSET-LICENSES','ARTIFACT-STORAGE','LONGFORM-001-BRIEF','RECOVERY-CLOSE-CANDIDATE','RECOVERY'];
 for(const name of documents)if(!existsSync(`docs/${name}.md`))throw new Error(`Canonical authority missing: ${name}`);
 const ids=['earth-to-stars','ocean-depth','billion-dollars','speed-of-light','human-engineering','wood-frog'];
 for(const id of ids){const target=resolveVideoTarget(id);for(const cue of target.spec.audio.narrationCues)if(!existsSync(`public/${cue.file}`))throw new Error(`Missing exact narration: ${id}/${cue.id}`);}

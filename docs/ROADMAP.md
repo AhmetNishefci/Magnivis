@@ -79,3 +79,7 @@ Product production phase is partially implemented: Wood Frog ProductionPlan r3, 
 ## Recovery Phase 3 handoff
 
 Git-backed artifact retention and final brain/clean-clone verification are the bounded recovery-close candidate. Phase 2's independent external-store proposal is superseded by owner-authorized GitHub storage at current scale. Later main reconciliation requires explicit owner approval; lost device/publication evidence remains pending and is not a blocker to preserving an honest source/operational baseline. Recovery closure and new production are separate decisions. The broader roadmap above remains unchanged.
+
+## Owner-approved operational recovery handoff
+
+The owner accepts historical gaps and authorizes final reconciliation after validation. Product roadmap and long-form brief remain intact. Next separately authorized milestone: NEW CONTENT CYCLE #1 AFTER RECOVERY, beginning with open-universe Content Intelligence proposals, research/claim/editorial gates, story-specific captions, necessary variants/covers and renewed six-surface real-device QA with durable evidence. Start around one excellent unique Short/day; two/day remains future target capacity. Provisional mature two-post windows (15:00/21:00 Kosovo local time) and audience/community flywheel belong to STRATEGY.md, not platform constraints. No new discovery/production/publication happens during closure.

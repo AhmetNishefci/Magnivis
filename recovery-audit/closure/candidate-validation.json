@@ -1,0 +1,155 @@
+{
+  "recordedAt": "2026-09-30T21:13:08.100735+00:00",
+  "runtime": {
+    "node": "v22.23.3",
+    "pnpm": "10.17.1"
+  },
+  "tests": 253,
+  "testFiles": 17,
+  "durableArtifactCount": 110,
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-00.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-01.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:status"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-02.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-03.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-04.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-05.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:brain"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-06.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "production:validate",
+        "wood-frog",
+        "--recovered"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-07.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "production:validate",
+        "wood-frog-tiktok",
+        "--recovered"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-08.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "captions:validate",
+        "wood-frog"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-09.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "captions:validate",
+        "wood-frog-tiktok"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-10.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "platform:qa",
+        "recovery-audit/phase-3/platform-regression-input.json"
+      ],
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-11.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/candidate-validation-12.txt"
+    }
+  ],
+  "credentialIgnoreAuditPassed": true,
+  "phase0123EvidenceUnchanged": true,
+  "platformRegression": "Expected INCOMPLETE for accepted unknown geometry; no fabricated mobile pass",
+  "passed": true
+}

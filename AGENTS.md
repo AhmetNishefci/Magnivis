@@ -56,4 +56,5 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - Multi-surface/device QA and cover capability: `docs/PLATFORM-QA.md`
 - Document authority and current recovery evidence: `recovery-audit/phase-2/agent-context-verification.md`
 
-- Recovery closure candidate and later main reconciliation gate: `docs/RECOVERY-CLOSE-CANDIDATE.md`
+- Operational recovery status/closure and historical gaps: `docs/RECOVERY.md`
+- Accepted historical closure candidate/procedure: `docs/RECOVERY-CLOSE-CANDIDATE.md`

@@ -69,7 +69,7 @@ A knowledge package can support multiple assets, but each asset must have a dist
 
 ## Storage progression
 
-Start with version-controlled TypeScript data validated by Zod. It is reviewable, works offline, and matches the existing repository. Generated media remains outside Git. Add a relational database only when concurrent workers, high-volume analytics, remote publishing state, or query needs make files materially unsafe or cumbersome.
+Start with version-controlled TypeScript data validated by Zod. It is reviewable, works offline, and matches the existing repository. Important approved/recovery media is manifest-bound and tracked in Git at current scale; scratch/generated workspaces remain ignored under ARTIFACT-STORAGE.md. Add a relational database only when concurrent workers, high-volume analytics, remote publishing state, or query needs make files materially unsafe or cumbersome.
 
 ## Automation progression
 

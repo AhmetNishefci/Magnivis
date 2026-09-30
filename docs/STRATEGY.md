@@ -86,11 +86,18 @@ One package may support a YouTube Short, TikTok, Facebook Reel, Instagram Reel, 
 
 - Short-form: discovery, topic/hook testing, audience acquisition, and rapid editorial learning. A short normally resolves one question or mystery.
 - Long-form YouTube: deeper explanation, watch time, evergreen value, stronger viewer relationships, and evidence-rich storytelling.
+- Stories, later: lightweight engagement, polls, teasers, follow-ups and useful content reuse.
+- Community content, later: questions, topic voting and audience participation.
+- Comments: concise human engagement and evidence-aware TopicCandidate discovery; audience questions are opportunities, not verified factual evidence.
 - Website/newsletter, later: source-rich articles, searchable knowledge, direct audience relationships, and reduced dependence on platform algorithms.
 
 Short performance is one input—not an automatic command—to expand a topic. Depth potential, evidence, novelty, visual potential, evergreen value, and audience fit also matter.
 
 ## Publishing target
+
+The owner-directed resumption strategy after operational recovery is approximately **one excellent unique short-form video per day**, distributed appropriately across YouTube Shorts, TikTok, Instagram Reels and Facebook Reels. Move toward two unique Shorts/day only when research, quality, capacity and platform QA are stable; quality outranks forced volume. This is strategy for the next separately authorized content cycle, not authorization to produce or publish now.
+
+For mature two-post experiments, approximately **15:00 and 21:00 Kosovo local time** are provisional starting test windows. They are not permanent platform rules or current scheduled posts. Learn per platform/audience from native metrics, geography and observation windows before changing cadence/timing. No timestamps/timezone offsets are hard-coded into production or publishing logic.
 
 The strategic destination is approximately two excellent short-form pieces per day across TikTok, YouTube Shorts, Facebook Reels, and Instagram Reels, plus approximately one high-quality long-form YouTube video per week.
 
@@ -135,3 +142,7 @@ Evaluate retention, completion, rewatches, shares, saves, comments that demonstr
 The following illustrative domains clarify the existing open universe under the owner's Phase 2 instruction; they are not historical completed productions or a closed whitelist: science (physics/chemistry/astronomy/cosmology/mathematics), biology/life (evolution/genetics/microbiology/ecosystems), human body/medicine (anatomy/physiology/neuroscience), mind/psychology (cognition/perception/memory/behavior), nature, Earth/geography, technology/computing/AI, engineering/systems/infrastructure, history, wars/conflict, philosophy/ideas, dilemmas/paradoxes/probability, books/important ideas, films/documentaries/culture, real stories, money/economics/business, society/human systems, everyday mysteries, scale/comparison, mysteries with evidence, interdisciplinary stories and future domains.
 
 War is factual/historical explanation, not glorification; medicine remains education; cultural works inspire explanations without copying protected media; philosophical opinion stays distinct from fact; mysteries retain uncertainty. Reject celebrity gossip, rage bait, conspiracy certainty, recycled trivia, shallow listicles, generic motivational/advice spam and competitor copying. Keep deliberate thematic diversity: performance informs hook/pacing/visual choices without collapsing exploration to one successful category. Prioritize several of curiosity, surprise, credible evidence, strong hook, payoff, visual clarity, relevance, novelty, format/platform fit and depth potential. Discover first. Classify second.
+
+## Audience/knowledge flywheel
+
+Discover → research → produce a Short → separately authorized publication → measure → learn → audience interaction → discover better topics → identify subjects with sufficient evidence/depth → expand suitable winners into long-form → derive distinct short-form opportunities → repeat. Short popularity is one signal; evidence quality, story depth, usefulness and portfolio diversity still govern expansion. Analytics should consider topic/hook, first-second effectiveness, retention/completion/rewatches, shares/saves/comments/follows, geography/platform/posting time, caption/visual treatment/duration and audience questions without falsely normalizing unlike native definitions. This is future direction, not an implemented automated subsystem.

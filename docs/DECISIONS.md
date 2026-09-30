@@ -283,3 +283,7 @@ Implement provider-neutral local Artifact Storage V1, exact retrieval without im
 ## Recovery Phase 3 — current-scale Git durability
 
 Owner selects normal Git/GitHub for important binaries. Retain eight exact-identified recovery videos, eight draft package file sets and final QA report/contact pairs; preserve already tracked narration/audio. Representative frames/caches/scratch remain regenerable or disposable. Missing historical Wood Frog remains expectation-only. Keep manifest/provider/verification tooling with a repository-filesystem adapter; no S3/R2/LFS/approval rewriting. Reassess file/repository limits before future growth. RECOVERY-CLOSE-CANDIDATE.md is a review recommendation, not closure or merge authorization.
+
+## Final operational recovery closure authorization
+
+Ahmet Nishefci explicitly accepts Phase 3, historical gaps, separate Wood Frog replacement identity and Git-backed durability at current scale. Authorizes controlled history-preserving reconciliation into main only after full candidate/clean-clone gates. This does not authorize new discovery, production, Bridge work, private upload/publication or claim reconstruction. RECOVERY.md owns closure status; STRATEGY.md owns the one-short/day resumption direction, provisional mature Kosovo windows and future audience/long-form flywheel.
