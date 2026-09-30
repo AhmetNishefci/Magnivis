@@ -1,0 +1,26 @@
+# Disaster failure analysis — evidence and limits
+
+The durable source architecture mostly survived. The complete historical operating state did not, because some exact binary/approval dependencies were outside the pushed source tree. This is a source/archive/approval durability gap, not a general Git failure.
+
+| Failure mode | Evidence and precision | Impact / confidence |
+|---|---|---|
+| Local commits never pushed | docs/RECOVERY.md reports seven lost later commit identities on feat/millennium-bridge-research-v1; none exists in fetched refs/object DB or clone reflog | Later Bridge and Meta QA work reportedly lost. High confidence identities absent; original contents/unpushed chronology are owner reports, not verifiable from this clone. No proof Wood Frog's later upload state was in one of those commits. |
+| Ignored generated artifacts | .gitignore explicitly excludes output/*, qa/*, deliveries/* except .gitkeep; all are empty placeholders now | Eight routed media outputs, eight QA trees and eight canonical delivery trees not reconstructed by clone. High confidence. |
+| Untracked pre-reset files | Current tree clean before audit; no original workstation file index survives | Earlier untracked content or unsaved Milestone 5 work cannot be established. Unknown, not proven loss or recoverability. |
+| Intentionally absent output of committed recipes | Render, QA, delivery templates/CLI/registries and original WAV inputs survive | Functional equivalents appear possible later, but historical timestamps, review decisions and exact encoder output may differ. Absence alone is not loss of authored source. High confidence. |
+| Binary approval without durable binary storage | Wood Frog exact approved hash and Speed publication hash survive while original MP4s do not; no repository remote artifact store config identified | Locked delivery gate cannot operate on clone without original bytes. Rerender cannot inherit exact-master approval. High confidence repository gap; external owner backup unknown. |
+| Local-only documentation/state | Main ends at pending Wood Frog previews; owner reports produced/uploaded state and later Meta surface testing. HEAD RECOVERY records those as unrecovered reports | Canonical final checkpoint is incomplete in pushed main. Which exact lost files contained that state is unknown. High confidence discrepancy, medium/unknown former storage details. |
+| Local-only approval evidence | Main preserves exact Wood Frog editorial and master visual approvals, and textual Speed TikTok V2 pass. Later Meta/device/cover approvals and Wood Frog upload outcomes are absent | Do not claim all approvals lost. Specific later gates need owner screenshots/files/URLs/decisions, not retrospective fabrication. High confidence gap; original approvals unknown. |
+| Ignored manifests were sole hash/checklist archive | Delivery docs describe per-file hashes in ignored manifest.json; source retains master hashes but no full original package manifest ledger | Old generatedAt, report facts, exact copy/checklist bytes and any operator ticks not recoverable from template alone. High confidence absence. |
+| Partial operation migration | One generalized publication record, four legacy public URLs, zero production MetricSnapshots | Surviving schema is not complete publication/measurement archive. No evidence V005/Wood Frog public release. High confidence. |
+| Execution-environment drift | package/lock survive but initial validation used Node24 outside supported range; older exact browser/encoder/OS state not fully archived | Clean functional check can pass while encoded bytes differ. Exact reproducibility unproven. |
+| External evidence dependency | Source URLs/locators survive; no universal original PDF/HTML/screenshots or public media archive | Link rot/access restrictions may prevent later reinspection; no live-source availability claim in Phase 0. |
+| Misreading later branch as baseline | Four post-reset commits overlay docs and add cinematic Bridge experiments | Risk of recovering a redesigned brand rather than approved Wood Frog system. New owner instruction explicitly fixes checkpoint/style authority. |
+
+## What did survive durably
+
+Committed facts/research/claim review/owner decisions/approved JSON, modular original audio, caption plans/tracks/renderer, VideoSpecs/procedural compositions, platform definitions/metadata, manual delivery logic, operations schemas, early performance prose, strategy/roadmap history, agent rules/tests/dependency definitions. Seven unreachable blobs are later Bridge material; no pre-reset lost commit was found. Canonical project truth was not edited during this audit.
+
+## Controls proposed for a later approved phase
+
+Maintain separate archives for source and exact approved artifacts. Verify source is pushed at milestones. Store immutable media, QA, delivery manifests/checklists, owner approval records and device evidence under hashes with a durable backup policy. Record nonsecret publication IDs/visibility/settings and native analytics capture windows. Include a per-milestone restore manifest and a fresh-clone/backup restore drill. No new cloud/storage/cost or backup implementation is introduced now. Any reconstructed replacement must state new identity and receive new review; do not fake original approvals or modify recorded hashes.

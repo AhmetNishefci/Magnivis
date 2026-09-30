@@ -1,0 +1,254 @@
+$ git status --porcelain=v2 --untracked-files=all
+
+$ git branch -a -vv
+  main                                        ae79799 [origin/main] feat: prepare wood frog platform deliveries
+* recovery/magnivis-post-reset                b74cfc6 [origin/recovery/magnivis-post-reset] feat: approve bridge art direction and prototype controlled opening motion
+  remotes/origin/HEAD                         -> origin/main
+  remotes/origin/main                         ae79799 feat: prepare wood frog platform deliveries
+  remotes/origin/recovery/magnivis-post-reset b74cfc6 feat: approve bridge art direction and prototype controlled opening motion
+
+$ git tag --list
+
+$ git reflog --all --date=iso
+b74cfc6 refs/remotes/origin/recovery/magnivis-post-reset@{2026-09-30 19:35:59 +0200}: update by push
+b74cfc6 refs/heads/recovery/magnivis-post-reset@{2026-09-30 19:35:47 +0200}: commit: feat: approve bridge art direction and prototype controlled opening motion
+b74cfc6 HEAD@{2026-09-30 19:35:47 +0200}: commit: feat: approve bridge art direction and prototype controlled opening motion
+317ea9d refs/remotes/origin/recovery/magnivis-post-reset@{2026-09-30 18:59:09 +0200}: update by push
+317ea9d refs/heads/recovery/magnivis-post-reset@{2026-09-30 18:58:44 +0200}: commit: feat: explore cinematic millennium bridge design direction
+317ea9d HEAD@{2026-09-30 18:58:44 +0200}: commit: feat: explore cinematic millennium bridge design direction
+3c34212 refs/remotes/origin/recovery/magnivis-post-reset@{2026-09-30 18:16:22 +0200}: update by push
+3c34212 refs/heads/recovery/magnivis-post-reset@{2026-09-30 18:16:15 +0200}: commit: feat: approve bridge editorial and reconstruct candidate 3 design frames
+3c34212 HEAD@{2026-09-30 18:16:15 +0200}: commit: feat: approve bridge editorial and reconstruct candidate 3 design frames
+8be2020 refs/remotes/origin/recovery/magnivis-post-reset@{2026-09-30 17:41:35 +0200}: update by push
+8be2020 refs/heads/recovery/magnivis-post-reset@{2026-09-30 17:41:21 +0200}: commit: feat: reconstruct millennium bridge research and editorial review
+8be2020 HEAD@{2026-09-30 17:41:21 +0200}: commit: feat: reconstruct millennium bridge research and editorial review
+ae79799 refs/heads/recovery/magnivis-post-reset@{2026-09-30 17:12:34 +0200}: branch: Created from HEAD
+ae79799 HEAD@{2026-09-30 17:12:34 +0200}: checkout: moving from main to recovery/magnivis-post-reset
+ae79799 refs/heads/main@{2026-09-30 16:55:48 +0200}: clone: from https://github.com/AhmetNishefci/Magnivis.git
+ae79799 refs/remotes/origin/HEAD@{2026-09-30 16:55:48 +0200}: clone: from https://github.com/AhmetNishefci/Magnivis.git
+ae79799 HEAD@{2026-09-30 16:55:48 +0200}: clone: from https://github.com/AhmetNishefci/Magnivis.git
+
+$ git fsck --full --no-reflogs --unreachable
+unreachable blob 4b815feba924705993f73b764fe7292fa49098f4
+unreachable blob d6918e0eb37be991adad9b2802142a5dfcc1afd2
+unreachable blob 0a422b822381cbb3379f1c883a816285e2e134e4
+unreachable blob 6daaee1477836de2c9229d488d1db0232d968190
+unreachable blob a7fbffefa34bc2791ebd4ff587e376bb1cb24aba
+unreachable blob cf1de7ccb1ecc9222188f457719908fd683b6810
+unreachable blob 55ef5ffab69d840507fe4c55d9254e30b94bd65c
+
+$ git log --all --decorate --graph --format=%H %ad %s --date=iso
+* b74cfc671d9666d593867cf50efd161290a19f62 2026-09-30 19:35:47 +0200 feat: approve bridge art direction and prototype controlled opening motion
+* 317ea9d1b89f0e6cf6fe2c482c53835516c8b191 2026-09-30 18:58:44 +0200 feat: explore cinematic millennium bridge design direction
+* 3c3421243d1bf37fbb5769a7e554b659b973fe09 2026-09-30 18:16:15 +0200 feat: approve bridge editorial and reconstruct candidate 3 design frames
+* 8be2020c4a0f82b5567f6af41a83282e6c0c051b 2026-09-30 17:41:21 +0200 feat: reconstruct millennium bridge research and editorial review
+* ae797996382c337759612265fd8229e8d5f06eef 2026-09-29 14:07:02 +0200 feat: prepare wood frog platform deliveries
+* c8009185bccd2e601a7d58c4ecf9b197d5d36b13 2026-09-29 12:49:28 +0200 feat: make short-form captions speech-first
+* ef4e2a69f7ecd80cee2d7aa78a4d6a15e25dcf75 2026-09-28 23:36:55 +0200 fix: preserve caption spacing and broaden topic strategy
+* 49fa5c60f68ca31379c07d0300e3435443676fa8 2026-09-28 23:11:51 +0200 feat: add designed short-form captions
+* f74a0a72dd4943a7e6f150436c11663c5c0ca075 2026-09-28 22:35:53 +0200 feat: produce wood frog review candidate
+* 65279fa2554bc4ee2c46909c5d720d5ee0f6b55d 2026-09-28 11:25:36 +0200 feat: approve wood frog editorial package
+* f6f81bebb7c474b0db538f9e8d1c49570bce5e4e 2026-09-28 11:17:49 +0200 feat: add wood frog claim review gate
+* d48373a295b6ab619383c07a1ec7386bf19e5127 2026-09-27 22:28:23 +0200 feat: prove content intelligence operator trial
+* 6bf3b6b1ba371b463a97f846e892182bf7b8ec09 2026-09-27 22:00:36 +0200 feat: add content intelligence foundation
+* 58e7741b28bb4001d12738f2c2149e60f9c2bd24 2026-09-27 17:18:35 +0200 fix(tiktok): finalize safe-area revision 2 delivery
+* b76db39f1a8533bf27142e3fd1ce0d327e5b23a7 2026-09-27 12:43:12 +0200 feat: add validated platform delivery packages
+* b0233169e0f4a038bbf46112abe23057671e022f 2026-09-27 12:21:40 +0200 feat: add open taxonomy and platform variants
+* 9df1eea8f6bc09aea99da1b72a8a79a40d58d075 2026-09-27 11:58:47 +0200 feat: generalize knowledge model with ocean depth
+* 01dc2d2ac94e1ebba4f6e28c5937308a4b2bef27 2026-09-27 02:08:19 +0200 feat: add content asset editorial layer
+* 045e2c4dcd010e433cf85fb948c6b8afc9a75996 2026-09-27 01:53:52 +0200 feat: add knowledge package foundation
+* 5bb91962e72d7456f726604be8e8fe44d5c34798 2026-09-27 01:37:09 +0200 docs: define knowledge media architecture
+* 42c26535d7184f1bbc931e990fad53c4bbd0c354 2026-09-26 20:26:04 +0200 feat: produce human engineering Short
+* 4b3b0c8e4a57d64ed8e36edab510029e955776d9 2026-09-26 20:14:05 +0200 docs: record speed of light publication
+* 90f6dd23621f675a53e1242a1ff2ff0912186662 2026-09-26 18:53:36 +0200 fix: keep Short captions optional
+* 85142057f2ba758c4ed840f087096a8aeb9a4827 2026-09-26 18:42:08 +0200 feat: render deterministic captions in Shorts
+* a8ce0aca6112f7f7a6496bf4e2fa7e969972ce03 2026-09-26 18:27:06 +0200 fix: standardize bottom-centered Short captions
+* d6c981541d1de9ccf74f22bbeda36201ed215b8f 2026-09-26 18:23:14 +0200 docs: record billion dollars performance snapshot
+* 3d59130de3ea981073e403956b6dba7595419a47 2026-09-25 21:52:54 +0200 fix: align light speed display with narration
+* 148bc44b264d01ab5183191ab1688688c51cad85 2026-09-25 21:47:52 +0200 fix: polish speed of light photon visuals
+* adc8a676f1c559892c3a94bf8b868eabe5df9f13 2026-09-25 21:42:29 +0200 feat: produce speed of light short
+* 68961a32da21a4a9c826773084f67b698f83c5d8 2026-09-25 21:31:01 +0200 docs: record billion dollars publication
+* 7af727e24f84e9f7de0de3150934b8a76b811705 2026-09-24 16:29:40 +0200 feat: produce billion dollars short
+* efcba3b429ac2ae9231f8c7974b039536a657c9c 2026-09-24 14:54:19 +0200 docs: record ocean depth publication
+* c1c166ff041fdf7e8fb79025c7f0bd0d0aec573f 2026-09-24 14:49:10 +0200 fix: position earth-to-stars captions for Shorts
+* dada2a0ea6e6256ca03f38b08d6c5a32987cc012 2026-09-24 14:44:42 +0200 fix: position ocean captions for Shorts
+* 69e8b811497d1584d4dac8862a2b5c121fe3cc1a 2026-09-24 14:32:47 +0200 docs: mark ocean depth short reviewed
+* 5b2fb2ba5cf89ec48a61f772be1d6ce1478fa655 2026-09-24 14:30:44 +0200 fix: prevent ocean scene text collisions
+* 2d5e4e78c700381f1b5a215f2bb5006f682563f1 2026-09-24 14:26:36 +0200 fix: remove overlapping ocean end-card label
+* 50e90944dc8d7e504b4ebf839907c4913cbc4306 2026-09-24 14:19:48 +0200 feat: produce ocean depth short
+* e3d1529f1880264f565962c6d7597c3e70360198 2026-09-22 23:07:44 +0200 docs: establish publishing ramp strategy
+* 484de8bf56325a9403d02047ed582c762217a0cd 2026-09-22 17:56:27 +0200 docs: record first short publication
+* 0914f2ab5be225ba5a74697480d8808bb381eea6 2026-09-22 17:52:42 +0200 docs: mark first short as published
+* d68e5503b5ce578de417c48728f804aa1886e051 2026-09-22 17:46:18 +0200 docs: finalize private review captions
+* 70559427e4839aead00e748ee0196b4a5cd2bf6b 2026-09-22 17:31:01 +0200 feat: add licensed cinematic narration
+* 5cc658c55213cdce102b73caee204b68f9582fc8 2026-09-22 16:57:38 +0200 feat: produce first cinematic scale short
+* faa8b42a48f298258dfc57bc038743fc63c5468a 2026-09-22 16:57:32 +0200 chore: establish Magnivis production foundation
+
+$ git diff origin/main..HEAD --stat
+ README.md                                          |   2 +-
+ .../artifact-manifest.json                         |  41 ++
+ .../claim-ledger.json                              | 429 +++++++++++
+ .../claim-review.json                              | 604 +++++++++++++++
+ .../content-asset.approved.json                    | 269 +++++++
+ .../content-asset.review.json                      | 264 +++++++
+ .../editorial-approval-binding.json                |  28 +
+ .../knowledge-package.approved.json                | 711 ++++++++++++++++++
+ .../knowledge-package.review.json                  | 616 ++++++++++++++++
+ .../owner-decision.json                            | 125 ++++
+ .../owner-decision.template.json                   | 125 ++++
+ .../reconstruction-provenance.json                 |  17 +
+ .../millennium-bridge-reconstruction-v1/review.md  | 258 +++++++
+ ...llennium-bridge-exploration-a-rejection-v1.json |  57 ++
+ ...illennium-bridge-exploration-b-approval-v1.json |  57 ++
+ .../01-balance-paradox.png                         | Bin 0 -> 409990 bytes
+ .../01-balance-paradox.svg                         |  66 ++
+ .../02-foot-placement.png                          | Bin 0 -> 406455 bytes
+ .../02-foot-placement.svg                          |  49 ++
+ .../03-crowd-feedback.png                          | Bin 0 -> 497808 bytes
+ .../03-crowd-feedback.svg                          | 269 +++++++
+ .../04-coherence-uncertainty.png                   | Bin 0 -> 486593 bytes
+ .../04-coherence-uncertainty.svg                   | 269 +++++++
+ .../05-damping-payoff.png                          | Bin 0 -> 440032 bytes
+ .../05-damping-payoff.svg                          |  67 ++
+ .../contact-sheet.png                              | Bin 0 -> 391113 bytes
+ .../hashes.json                                    |  76 ++
+ .../local-qa.json                                  |  43 ++
+ .../local-qa.sha256                                |   1 +
+ .../manifest.json                                  | 485 ++++++++++++
+ .../review.md                                      |  65 ++
+ .../source-representation.json                     | 175 +++++
+ .../01-opening.overlay.svg                         |   1 +
+ .../01-opening.png                                 | Bin 0 -> 5134753 bytes
+ .../02-corrective-step.overlay.svg                 |   1 +
+ .../02-corrective-step.png                         | Bin 0 -> 4843676 bytes
+ .../03-crowd-feedback.overlay.svg                  |   1 +
+ .../03-crowd-feedback.png                          | Bin 0 -> 5327713 bytes
+ .../04-local-coherence.overlay.svg                 |   1 +
+ .../04-local-coherence.png                         | Bin 0 -> 5757134 bytes
+ .../05-damping.overlay.svg                         |   1 +
+ .../05-damping.png                                 | Bin 0 -> 5374272 bytes
+ .../comparison-with-a.md                           |  18 +
+ .../composition.json                               | 200 +++++
+ .../contact-sheet.png                              | Bin 0 -> 3332134 bytes
+ .../millennium-bridge-exploration-b-v1/hashes.json | 141 ++++
+ .../local-qa.json                                  |  46 ++
+ .../local-qa.sha256                                |   1 +
+ .../manifest.json                                  | 820 +++++++++++++++++++++
+ .../pipeline-assessment.md                         |  39 +
+ .../prompt-01.txt                                  |   1 +
+ .../prompt-02.txt                                  |   1 +
+ .../prompt-03.txt                                  |   1 +
+ .../prompt-04.txt                                  |   1 +
+ .../prompt-05.txt                                  |   1 +
+ .../millennium-bridge-exploration-b-v1/review.md   |  86 +++
+ .../source-assets.json                             | 172 +++++
+ .../sources/01-opening-original.png                | Bin 0 -> 2390522 bytes
+ .../sources/02-step-original.png                   | Bin 0 -> 2179334 bytes
+ .../sources/03-crowd-original.png                  | Bin 0 -> 2691452 bytes
+ .../sources/04-overhead-original.png               | Bin 0 -> 3148079 bytes
+ .../sources/05-damper-original.png                 | Bin 0 -> 2529074 bytes
+ docs/ASSET-LICENSES.md                             |  23 +
+ docs/CONTENT-ASSETS.md                             |   4 +-
+ docs/CONTENT-INTELLIGENCE.md                       |   8 +-
+ docs/DECISIONS.md                                  |  34 +
+ docs/PROJECT-STATE.md                              |  20 +-
+ docs/RECOVERY.md                                   | 110 +++
+ docs/ROADMAP.md                                    |   6 +
+ .../composition.json                               |  73 ++
+ .../contact-sheet.png                              | Bin 0 -> 3865981 bytes
+ .../damping-accuracy.md                            |  11 +
+ .../decoded/frame-000.jpg                          | Bin 0 -> 383949 bytes
+ .../decoded/frame-008.jpg                          | Bin 0 -> 375402 bytes
+ .../decoded/frame-015.jpg                          | Bin 0 -> 367611 bytes
+ .../decoded/frame-017.jpg                          | Bin 0 -> 367079 bytes
+ .../decoded/frame-030.jpg                          | Bin 0 -> 366939 bytes
+ .../decoded/frame-036.jpg                          | Bin 0 -> 374132 bytes
+ .../decoded/frame-045.jpg                          | Bin 0 -> 367021 bytes
+ .../decoded/frame-096.jpg                          | Bin 0 -> 322436 bytes
+ .../decoded/frame-123.jpg                          | Bin 0 -> 208824 bytes
+ .../decoded/frame-140.jpg                          | Bin 0 -> 291076 bytes
+ .../decoded/frame-179.jpg                          | Bin 0 -> 291177 bytes
+ .../disclosure.svg                                 |   1 +
+ .../frames/frame-000.png                           | Bin 0 -> 5022706 bytes
+ .../frames/frame-008.png                           | Bin 0 -> 5004195 bytes
+ .../frames/frame-015.png                           | Bin 0 -> 4987719 bytes
+ .../frames/frame-017.png                           | Bin 0 -> 4987962 bytes
+ .../frames/frame-030.png                           | Bin 0 -> 5030517 bytes
+ .../frames/frame-036.png                           | Bin 0 -> 5032134 bytes
+ .../frames/frame-045.png                           | Bin 0 -> 5033255 bytes
+ .../frames/frame-096.png                           | Bin 0 -> 4945436 bytes
+ .../frames/frame-123.png                           | Bin 0 -> 4324502 bytes
+ .../frames/frame-140.png                           | Bin 0 -> 4707474 bytes
+ .../frames/frame-179.png                           | Bin 0 -> 4701971 bytes
+ .../millennium-bridge-opening-proof-v1/hashes.json | 181 +++++
+ .../local-qa.json                                  |  74 ++
+ .../local-qa.sha256                                |   1 +
+ .../manifest.json                                  | 228 ++++++
+ .../masks/arm.png                                  | Bin 0 -> 39372 bytes
+ .../masks/arm.svg                                  |   1 +
+ .../masks/deck.png                                 | Bin 0 -> 54583 bytes
+ .../masks/deck.svg                                 |   1 +
+ .../masks/freeContact.png                          | Bin 0 -> 18514 bytes
+ .../masks/freeContact.svg                          |   1 +
+ .../masks/freeFoot.png                             | Bin 0 -> 41605 bytes
+ .../masks/freeFoot.svg                             |   1 +
+ .../masks/human.png                                | Bin 0 -> 139989 bytes
+ .../masks/human.svg                                |   1 +
+ .../masks/macroFoot.png                            | Bin 0 -> 91995 bytes
+ .../masks/macroFoot.svg                            |   1 +
+ .../masks/plantedContact.png                       | Bin 0 -> 18818 bytes
+ .../masks/plantedContact.svg                       |   1 +
+ .../masks/torso.png                                | Bin 0 -> 76030 bytes
+ .../masks/torso.svg                                |   1 +
+ .../media-report.json                              |  78 ++
+ .../motion-design.md                               |  13 +
+ .../opening-proof.mp4                              | Bin 0 -> 4079831 bytes
+ .../pipeline-assessment.md                         |   9 +
+ .../regeneration-qa.json                           |  10 +
+ .../regeneration-qa.sha256                         |   1 +
+ .../millennium-bridge-opening-proof-v1/review.md   |  17 +
+ package.json                                       |   8 +-
+ pnpm-lock.yaml                                     | 118 ++-
+ scripts/bridge-design-review.ts                    |  12 +
+ scripts/bridge-exploration-b.ts                    |  11 +
+ scripts/bridge-motion-proof.ts                     |  79 ++
+ scripts/content-intelligence.ts                    |  22 +
+ .../assets/millennium-bridge-approved.ts           |   4 +
+ src/content-assets/assets/millennium-bridge.ts     |  45 ++
+ src/content-assets/registry.ts                     |   2 +
+ .../candidates/millennium-bridge.ts                |  17 +
+ src/content-intelligence/registry.ts               |   2 +
+ .../reviews/millennium-bridge-approval.ts          |  55 ++
+ .../reviews/millennium-bridge.ts                   | 147 ++++
+ .../millennium-bridge-b/inspection.ts              |  41 ++
+ .../millennium-bridge-b/review.ts                  | 137 ++++
+ .../millennium-bridge-b/shots.ts                   |  21 +
+ src/design-exploration/millennium-bridge/frames.ts | 175 +++++
+ .../millennium-bridge/inspection.ts                |  41 ++
+ src/design-exploration/millennium-bridge/review.ts | 138 ++++
+ src/design-exploration/raster-source.ts            |  34 +
+ .../packages/millennium-bridge-approved.ts         |   4 +
+ src/knowledge/packages/millennium-bridge.ts        | 199 +++++
+ src/knowledge/registry.ts                          |   2 +
+ src/motion-proof/continuous-raster.ts              |  41 ++
+ src/motion-proof/millennium-bridge/approval.ts     |  23 +
+ src/motion-proof/millennium-bridge/composition.ts  |  48 ++
+ src/motion-proof/millennium-bridge/inspection.ts   |  19 +
+ src/motion-proof/millennium-bridge/model.ts        |  38 +
+ tests/content-asset.test.ts                        |   1 +
+ tests/content-intelligence.test.ts                 |   2 +
+ tests/knowledge-package.test.ts                    |   1 +
+ tests/millennium-bridge-design-review.test.ts      | 129 ++++
+ tests/millennium-bridge-exploration-b.test.ts      |  93 +++
+ tests/millennium-bridge-motion-proof.test.ts       | 103 +++
+ tests/millennium-bridge-reconstruction.test.ts     | 139 ++++
+ tests/ocean-depth-generalization.test.ts           |   1 +
+ 158 files changed, 9544 insertions(+), 19 deletions(-)
+
+$ git diff
+
+$ git diff --cached
+
+$ git remote -v
+origin	https://github.com/AhmetNishefci/Magnivis.git (fetch)
+origin	https://github.com/AhmetNishefci/Magnivis.git (push)
