@@ -1,0 +1,78 @@
+{
+  "audio": "Intentionally absent; no complete narration/audio reconstructed.",
+  "fullDecodePassed": true,
+  "observed": {
+    "format": {
+      "bit_rate": "5439774",
+      "duration": "6.000000",
+      "format_long_name": "QuickTime / MOV",
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "nb_programs": 0,
+      "nb_streams": 1,
+      "probe_score": 100,
+      "size": "4079831",
+      "start_time": "0.000000",
+      "tags": {
+        "compatible_brands": "isomiso2avc1mp41",
+        "major_brand": "isom",
+        "minor_version": "512"
+      }
+    },
+    "streams": [
+      {
+        "avg_frame_rate": "30/1",
+        "bit_rate": "5435946",
+        "bits_per_raw_sample": "8",
+        "chroma_location": "left",
+        "closed_captions": 0,
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "codec_name": "h264",
+        "codec_tag": "0x31637661",
+        "codec_tag_string": "avc1",
+        "codec_type": "video",
+        "coded_height": 1920,
+        "coded_width": 1088,
+        "disposition": {
+          "attached_pic": 0,
+          "clean_effects": 0,
+          "comment": 0,
+          "default": 1,
+          "dub": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "karaoke": 0,
+          "lyrics": 0,
+          "original": 0,
+          "timed_thumbnails": 0,
+          "visual_impaired": 0
+        },
+        "duration": "6.000000",
+        "duration_ts": 92160,
+        "has_b_frames": 2,
+        "height": 1920,
+        "index": 0,
+        "is_avc": "true",
+        "level": 40,
+        "nal_length_size": "4",
+        "nb_frames": "180",
+        "nb_read_frames": "180",
+        "pix_fmt": "yuv420p",
+        "profile": "High",
+        "r_frame_rate": "30/1",
+        "refs": 4,
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "tags": {
+          "encoder": "Lavc libx264",
+          "handler_name": "VideoHandler",
+          "language": "und",
+          "vendor_id": "[0][0][0][0]"
+        },
+        "time_base": "1/15360",
+        "width": 1080
+      }
+    ]
+  },
+  "passed": true,
+  "scope": "Silent six-second local prototype; not production/release QA."
+}

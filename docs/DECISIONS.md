@@ -299,3 +299,11 @@
 **Boundary:** The reusable addition is a small raster provenance/identity validator, not a provider SDK scattered through domain code or a new production framework. Built-in authoring-tool calls are captured as manual asset provenance, not fictional content-intelligence workflow envelopes. Exact prompts/source bytes are committed; undisclosed model/seed/usage fields stay null. Nondeterministic source generation is separated from deterministic downstream output. No claims of unique/copyrightable output or exact historical geometry.
 
 **Consequences:** B remains pending owner review. Frozen still assets require later layer separation, controlled poses and structural/damper motion to sustain animation; zoom-only image slideshow is insufficient. Disclosure appears readably and subordinate in review frames; future animation should introduce it at mechanism onset and reintroduce for hardware abstraction, with readable duration tested separately. No final captions/timings or production authorization follow automatically. Future Meta surface recovery requires actual owner evidence and a finished approved master.
+
+## 2026-09-30 — Frozen-source controlled motion proof
+
+**Decision:** Record B art-direction approval separately against immutable artifacts. Implement only a six-second opening experiment with continuous authored semantic-mask deformation of frozen source pixels. No per-frame image generation, new provider calls, full ProductionPlan or production registry entry.
+
+**Reason:** Small continuous displacement fields avoid exposed alpha-card holes while testing support/reaction timing, physical contact and a foot-directed transition. A small pure raster warp/compositor is justified; a generic layered scene framework is not yet justified.
+
+**Limits:** Masks are influence fields, not 3D scene recovery or precise clean plates. Source geometry remains illustrative; controlled deformation does not establish biomechanical precision. Larger motion/occlusion requires richer rigs. Local frame/media QA does not approve cinematic timing. B's plausible-looking damper cannot be treated as exact installation geometry; final production requires explanatory redesign or inspected engineering evidence. Ahmet must review this exact proof before a next stage is authorized.

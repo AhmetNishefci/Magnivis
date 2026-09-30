@@ -1,0 +1,13 @@
+# Opening proof — authored motion
+
+Six seconds, 180 frames, 30 fps, 1080×1920, H.264, intentionally silent. No full production, narration, captions or platform derivatives.
+
+Frozen B opening and contact sources supply all image pixels. Nothing is generated independently per animation frame. The continuous inverse-UV compositor uses hand-authored feathered semantic masks and a 24 px interpolation grid; it avoids exposing holes behind alpha cards. Masks are influence fields, not perfect segmentation, clean background plates or metric depth. Source pixels deform only under explicit bounded transforms. The source humans, clothing, lighting and bridge elements remain the same.
+
+Deck movement starts immediately, reaching its first positive peak around frame 17. The person initially follows support. Torso/arm compensation starts at 0.28 seconds. Free-foot lateral search starts at 0.75 seconds, with a small temporary lift and placement at 1.5 seconds. Planted support retains a shared root displacement; leg/torso influences taper continuously. Existing ground reflections and contact pixels remain in the source field; no detached person layer floats over an unrelated background. These are illustrative screen-space motions, not biomechanical measurements or motion capture.
+
+After 2.75 seconds the camera follows the planted shoe into a close view. A short scale/subject-related optical dissolve at 3.95–4.25 seconds bridges into B's frozen contact asset. No generated morphing/intermediate image is involved. The shoes/clothing are similar, not an identical recovered scene; cross-shot continuity remains a visual-review question. Macro motion then separates support displacement from delayed corrective foot response. The proof stops at six seconds.
+
+Readable required disclosure remains fixed and subordinate. No title card, establishing hold, narration rewrite or final caption timing exists. The renderer uses no clock, network, provider call or random state. Boundary pixel clamps prevent transparent edges; small opening overscan supports deck motion. The push intentionally crops the upper body as it approaches contact.
+
+All sample times bind to explicit frame indices: the requested 0.25 s is frame 8 (0.2667 s), the nearest representable frame at 30 fps. Local QA must inspect decoded MP4 frames, not merely source PNGs. Technical success does not grant visual approval. Future larger pose changes, meaningful occlusion or disocclusion require clean plates/layer separation or a controlled 3D/pose rig; this limited field method must not silently become a full character-animation system.

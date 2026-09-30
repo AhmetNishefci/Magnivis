@@ -1,0 +1,74 @@
+{
+  "artifacts": [
+    {
+      "path": "opening-proof.mp4",
+      "sha256": "f4face5a0c64f7cd8d8066fdf27b8ac12020cc89a903f2229ddf80835a2c4018"
+    },
+    {
+      "path": "contact-sheet.png",
+      "sha256": "78fb71148049b26242c02a25d95034a5ace0e7d0d9fe9832524d515f01b51bb0"
+    },
+    {
+      "path": "decoded/frame-000.jpg",
+      "sha256": "4cd6a9ada81528c19a9b43972fc902df6c853663fb9d8d35e326e24834c7b711"
+    },
+    {
+      "path": "decoded/frame-008.jpg",
+      "sha256": "75bcc843e143a6ac699b1cb5de3d71c9d08cd2a70935cae4655f806fa3eb99e0"
+    },
+    {
+      "path": "decoded/frame-015.jpg",
+      "sha256": "4b79de6a1193aa0d005938ef651704a6b8d4a0f5deac6e8e34dd18a2722260cd"
+    },
+    {
+      "path": "decoded/frame-017.jpg",
+      "sha256": "d96cc7ded0b1a326fd0273423bc7ad7d5323eba951cab8174c60692f6ecf2540"
+    },
+    {
+      "path": "decoded/frame-030.jpg",
+      "sha256": "7328faf8e199b56b4384ac6f102a0bc3d101a8c0cdbfcc874fe4bd6fbc88e1da"
+    },
+    {
+      "path": "decoded/frame-036.jpg",
+      "sha256": "946eb3f9086e447c58dd245b0e5c5d636f761be2204dbaf6f174f3d2a9ce6770"
+    },
+    {
+      "path": "decoded/frame-045.jpg",
+      "sha256": "68b61f97019c021b900bfb190b69d2900e1c62cf77bf481c5fbfe74364db03e1"
+    },
+    {
+      "path": "decoded/frame-096.jpg",
+      "sha256": "d35a19f928ebb7ce0880015b151793bbb1a4167f6c03abad2bc61be781108ff0"
+    },
+    {
+      "path": "decoded/frame-123.jpg",
+      "sha256": "2dd217baf53f9dc7bfac4adb40bee7497d54e33e33f6cda335d52425988f247e"
+    },
+    {
+      "path": "decoded/frame-140.jpg",
+      "sha256": "a64cc46c3a3676ea1f447060123cecbee6ce95972dd24c35e5832c1fb0c17115"
+    },
+    {
+      "path": "decoded/frame-179.jpg",
+      "sha256": "a3f03c3830c65e4ca899c4d13720ac76be865132347f776aca580ed03cd650a4"
+    }
+  ],
+  "completeVideoAuthorized": false,
+  "findings": [
+    "Inspected all 11 exact decoded samples: frame 0, frame 8 (nearest to .25 s), .5 s, first displacement peak, 1 s/reaction, free-foot search, placement, foot approach, transition midpoint, macro and final frame; plus decoded contact sheet. Tool supports sequential frame inspection, not continuous video playback.",
+    "First-second deck/support changes are present against relatively steady London background. Human root follows support before delayed torso/arm compensation; motions are deliberately restrained. Owner playback must determine whether instability and causal ordering read immediately enough.",
+    "Clothing, hair, shoes, rails and lighting retain frozen identities. No per-frame provider generation, AI morph model or temporal structural hallucination is introduced. Controlled UV deformation changes pixels/shape locally; this is authored distortion, not a recovered 3D scene.",
+    "No hard alpha-card edges, exposed inpainting gaps or obvious mask halos were identified in sampled frames. Early test detected a local deformation foldover; widened mask falloff fixed sampled orientation tests across the opening. Mild texture stretch around the body/foot remains a method limitation, requiring owner motion review.",
+    "Planted sole/adjacent support track within the tested displacement bound; source contact shadows/reflections remain present. No detached floating person identified in samples. Small free-foot lift is illustrative; the frozen starting stance already contains raised-heel/toe contact. The proof does not recreate a full realistic walk cycle.",
+    "Camera push deliberately crops upper body and later the free foot while bringing the planted shoe forward. No transparent exposed frame edge identified. This is intentional shot reframing; platform/device crop validation remains future work.",
+    "Macro transition uses a short optical dissolve with visible double exposure at midpoint. Foot scale is closer after camera adjustment, but back-to-side shoe angle and scene geometry differ between the two fixed sources. This continuity limit is explicit; owner should judge whether the transition feels coherent at normal speed.",
+    "Macro keeps physical shoe/deck detail, small surface motion and delayed correction; no force rings, giant arrows, final captions or narration/audio are used. Required simplified-model/motion-exaggerated disclosure is readable throughout.",
+    "Local media checks pass at 1080×1920, 30 fps, 180 frames, six seconds, H.264/yuv420p and no audio stream. Entire MP4 decodes without errors. No Meta geometry/device evidence, full production, locked-master or publication approval is implied."
+  ],
+  "inspectedAt": "2026-09-30T17:31:06.000Z",
+  "inspectedBy": "Codex",
+  "kind": "local-ai-assisted-motion-proof-sample-inspection",
+  "method": "Inspected exact decoded MP4 frame samples and contact sheet; full decode checked separately. Tool inspection is sequential frames, not continuous video playback.",
+  "ownerMotionApproval": false,
+  "realDeviceEvidence": false
+}

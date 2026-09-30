@@ -1,6 +1,6 @@
 # Roadmap
 
-Post-reset priority: Millennium Bridge research/editorial reconstruction is owner-approved. Exploration A is owner-rejected for visual execution only; five cinematic Exploration B keyframes are ready for owner review. A future controlled motion prototype must prove the hybrid pipeline before full production. See `docs/RECOVERY.md`. Full production and the reported Meta milestones remain separate, unreconstructed gates.
+Post-reset priority: Millennium Bridge research/editorial reconstruction is owner-approved. Exploration A is owner-rejected for visual execution only; Exploration B art direction is owner-approved; a six-second controlled opening proof is ready for owner motion review. Full production still requires separate authorization. See `docs/RECOVERY.md`. Full production and the reported Meta milestones remain separate, unreconstructed gates.
 
 This roadmap describes sequence, not promises or permission to sacrifice quality. `docs/PROJECT-STATE.md` records current execution state; `docs/ARCHITECTURE.md` records system boundaries.
 

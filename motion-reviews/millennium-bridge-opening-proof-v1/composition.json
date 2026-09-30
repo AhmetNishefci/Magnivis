@@ -1,0 +1,73 @@
+{
+  "decisionId": "owner-design-decision.millennium-bridge.exploration-b.approval.v1",
+  "durationSeconds": 6,
+  "exactMasks": {
+    "arm": "<ellipse cx=\"694\" cy=\"663\" rx=\"155\" ry=\"100\" fill=\"white\"/>",
+    "deck": "<path d=\"M0 510 L260 667 L540 925 L818 667 L1080 602 L1080 1920 L0 1920Z\" fill=\"white\"/>",
+    "freeContact": "<ellipse cx=\"782\" cy=\"1235\" rx=\"69\" ry=\"30\" fill=\"white\"/>",
+    "freeFoot": "<ellipse cx=\"744\" cy=\"1153\" rx=\"125\" ry=\"130\" fill=\"white\"/>",
+    "human": "<path d=\"M425 325 Q478 302 532 340 Q580 372 570 425 L576 475 L642 587 L701 670 L754 700 L825 721 L840 738 L823 750 L785 734 L745 716 L714 718 L671 683 L626 650 L654 832 L644 880 L705 1020 L753 1140 L781 1160 L821 1183 L850 1214 L850 1244 L798 1254 L744 1233 L724 1190 L677 1160 L583 1065 L503 979 L426 950 L403 1087 L410 1138 L394 1187 L342 1198 L310 1184 L302 1160 L320 1110 L316 1005 L303 916 L260 912 L235 876 L243 699 L231 638 L218 599 L226 532 L244 472 L270 438 L414 427 L409 394 Z\" fill=\"white\"/>",
+    "macroFoot": "<path d=\"M78 0 L1030 0 L1040 930 L933 1024 L717 1015 L642 899 L601 1165 L122 1193 L85 1089 L272 841 L249 603Z\" fill=\"white\"/>",
+    "plantedContact": "<ellipse cx=\"361\" cy=\"1178\" rx=\"68\" ry=\"31\" fill=\"white\"/>",
+    "torso": "<ellipse cx=\"430\" cy=\"620\" rx=\"225\" ry=\"325\" fill=\"white\"/>"
+  },
+  "fps": 30,
+  "frames": 180,
+  "height": 1920,
+  "kind": "controlled-continuous-raster-motion-proof",
+  "maskMeaning": "Feathered semantic influence fields, not alpha-separated clean plates or recovered depth.",
+  "newGeneratedSources": false,
+  "noAudio": true,
+  "noFinalCaptions": true,
+  "sourceAssetIds": [
+    "asset.millennium-bridge.exploration-b.01",
+    "asset.millennium-bridge.exploration-b.02"
+  ],
+  "spatialInterpolation": "24 px deformation grid, bilinear inverse UV sampling; bounded authored transforms.",
+  "temporalGeneration": false,
+  "timeline": [
+    {
+      "action": "Support/deck motion begins; person initially follows support.",
+      "seconds": [
+        0,
+        0.28
+      ]
+    },
+    {
+      "action": "Torso and arm compensate after support displacement.",
+      "seconds": [
+        0.28,
+        0.92
+      ]
+    },
+    {
+      "action": "Free-foot search, slight lift and lateral placement.",
+      "seconds": [
+        0.75,
+        1.5
+      ]
+    },
+    {
+      "action": "Camera follows planted foot into close view.",
+      "seconds": [
+        2.75,
+        4.1
+      ]
+    },
+    {
+      "action": "Short scale-matched optical dissolve into frozen macro shot.",
+      "seconds": [
+        3.95,
+        4.25
+      ]
+    },
+    {
+      "action": "Macro deck/foot controlled relative motion.",
+      "seconds": [
+        4.25,
+        6
+      ]
+    }
+  ],
+  "width": 1080
+}

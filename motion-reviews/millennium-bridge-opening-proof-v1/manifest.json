@@ -1,0 +1,228 @@
+{
+  "approval": {
+    "decisionSha256": "0dfed0b87b90d2435ef303b82b97f1a4010270d2166407861fcbb3bf8712164f",
+    "fileSha256": "37e129e63ed81fa4b346b65d6ddb6188ea6e0b30304ab7be4fa657455a939e37",
+    "path": "design-reviews/decisions/millennium-bridge-exploration-b-approval-v1.json"
+  },
+  "authority": {
+    "bArtDirectionApproved": true,
+    "completeVideo": false,
+    "finalCaptionPlan": false,
+    "lockedMaster": false,
+    "metaReconstruction": false,
+    "motionProofApproved": false,
+    "platformActivity": false,
+    "publication": false
+  },
+  "contactSheet": {
+    "height": 1606,
+    "path": "contact-sheet.png",
+    "sha256": "78fb71148049b26242c02a25d95034a5ace0e7d0d9fe9832524d515f01b51bb0",
+    "width": 1080
+  },
+  "format": {
+    "durationSeconds": 6,
+    "fps": 30,
+    "frames": 180,
+    "height": 1920,
+    "width": 1080
+  },
+  "id": "motion-review.millennium-bridge.opening-proof.v1",
+  "mp4": {
+    "path": "opening-proof.mp4",
+    "sha256": "f4face5a0c64f7cd8d8066fdf27b8ac12020cc89a903f2229ddf80835a2c4018"
+  },
+  "provenance": {
+    "independentAIFrames": false,
+    "maskOrigin": "Original hand-authored SVG influence masks rasterized/feathered deterministically; no generative segmentation or inpainting.",
+    "motionOrigin": "Authored timing and continuous inverse-UV fields; illustrative, not mocap or measured bridge biomechanics.",
+    "newGeneratedAssets": false,
+    "renderer": {
+      "ffmpegBinarySha256": "a90e3db6a3fd35f6074b013f948b1aa45b31c6375489d39e572bea3f18336584",
+      "ffprobeBinarySha256": "5b592e56f87ff754d94dadf99f38b4d0fb7d463eb780b50e0ca061d668d0e3f7",
+      "sharp": {
+        "aom": "3.13.1",
+        "archive": "3.8.2",
+        "cairo": "1.18.4",
+        "cgif": "0.5.0",
+        "exif": "0.6.25",
+        "expat": "2.7.3",
+        "ffi": "3.5.2",
+        "fontconfig": "2.17.1",
+        "freetype": "2.14.1",
+        "fribidi": "1.0.16",
+        "glib": "2.86.1",
+        "harfbuzz": "12.1.0",
+        "heif": "1.20.2",
+        "highway": "1.3.0",
+        "imagequant": "2.4.1",
+        "lcms": "2.17",
+        "mozjpeg": "0826579",
+        "pango": "1.57.0",
+        "pixman": "0.46.4",
+        "png": "1.6.50",
+        "proxy-libintl": "0.5",
+        "rsvg": "2.61.2",
+        "sharp": "0.34.5",
+        "spng": "0.7.4",
+        "tiff": "4.7.1",
+        "vips": "8.17.3",
+        "webp": "1.6.0",
+        "xml2": "2.15.1",
+        "zlib-ng": "2.2.5"
+      }
+    },
+    "reproducibility": "No clocks, network or randomness in renderer/encoder; exact MP4 identity verified by a second complete encode on recorded stack. Other stacks must verify, not assume byte identity.",
+    "sourceBytesFrozen": true
+  },
+  "qa": {
+    "limitations": "Continuous image-space deformation is not a recovered 3D scene; occlusion, rotations and pose changes are deliberately small. Macro cross-shot continuity and physical plausibility require owner review.",
+    "localInspection": "local-qa.json recorded independently after inspecting decoded MP4 frames.",
+    "mediaPassed": true
+  },
+  "representativeFrames": [
+    {
+      "frame": 0,
+      "path": "decoded/frame-000.jpg",
+      "reason": "frame-zero",
+      "sha256": "4cd6a9ada81528c19a9b43972fc902df6c853663fb9d8d35e326e24834c7b711",
+      "sourceRenderPath": "frames/frame-000.png",
+      "timeSeconds": 0
+    },
+    {
+      "frame": 8,
+      "path": "decoded/frame-008.jpg",
+      "reason": "quarter-second-nearest-frame",
+      "sha256": "75bcc843e143a6ac699b1cb5de3d71c9d08cd2a70935cae4655f806fa3eb99e0",
+      "sourceRenderPath": "frames/frame-008.png",
+      "timeSeconds": 0.26666666666666666
+    },
+    {
+      "frame": 15,
+      "path": "decoded/frame-015.jpg",
+      "reason": "half-second",
+      "sha256": "4b79de6a1193aa0d005938ef651704a6b8d4a0f5deac6e8e34dd18a2722260cd",
+      "sourceRenderPath": "frames/frame-015.png",
+      "timeSeconds": 0.5
+    },
+    {
+      "frame": 17,
+      "path": "decoded/frame-017.jpg",
+      "reason": "peak-deck-displacement",
+      "sha256": "d96cc7ded0b1a326fd0273423bc7ad7d5323eba951cab8174c60692f6ecf2540",
+      "sourceRenderPath": "frames/frame-017.png",
+      "timeSeconds": 0.5666666666666667
+    },
+    {
+      "frame": 30,
+      "path": "decoded/frame-030.jpg",
+      "reason": "one-second-torso-arm-reaction",
+      "sha256": "7328faf8e199b56b4384ac6f102a0bc3d101a8c0cdbfcc874fe4bd6fbc88e1da",
+      "sourceRenderPath": "frames/frame-030.png",
+      "timeSeconds": 1
+    },
+    {
+      "frame": 36,
+      "path": "decoded/frame-036.jpg",
+      "reason": "corrective-foot-search",
+      "sha256": "946eb3f9086e447c58dd245b0e5c5d636f761be2204dbaf6f174f3d2a9ce6770",
+      "sourceRenderPath": "frames/frame-036.png",
+      "timeSeconds": 1.2
+    },
+    {
+      "frame": 45,
+      "path": "decoded/frame-045.jpg",
+      "reason": "corrective-placement",
+      "sha256": "68b61f97019c021b900bfb190b69d2900e1c62cf77bf481c5fbfe74364db03e1",
+      "sourceRenderPath": "frames/frame-045.png",
+      "timeSeconds": 1.5
+    },
+    {
+      "frame": 96,
+      "path": "decoded/frame-096.jpg",
+      "reason": "camera-foot-approach",
+      "sha256": "d35a19f928ebb7ce0880015b151793bbb1a4167f6c03abad2bc61be781108ff0",
+      "sourceRenderPath": "frames/frame-096.png",
+      "timeSeconds": 3.2
+    },
+    {
+      "frame": 123,
+      "path": "decoded/frame-123.jpg",
+      "reason": "transition-midpoint",
+      "sha256": "2dd217baf53f9dc7bfac4adb40bee7497d54e33e33f6cda335d52425988f247e",
+      "sourceRenderPath": "frames/frame-123.png",
+      "timeSeconds": 4.1
+    },
+    {
+      "frame": 140,
+      "path": "decoded/frame-140.jpg",
+      "reason": "macro-contact",
+      "sha256": "a64cc46c3a3676ea1f447060123cecbee6ce95972dd24c35e5832c1fb0c17115",
+      "sourceRenderPath": "frames/frame-140.png",
+      "timeSeconds": 4.666666666666667
+    },
+    {
+      "frame": 179,
+      "path": "decoded/frame-179.jpg",
+      "reason": "final-prototype-frame",
+      "sha256": "a3f03c3830c65e4ca899c4d13720ac76be865132347f776aca580ed03cd650a4",
+      "sourceRenderPath": "frames/frame-179.png",
+      "timeSeconds": 5.966666666666667
+    }
+  ],
+  "revision": 1,
+  "sourceAssets": [
+    {
+      "id": "asset.millennium-bridge.exploration-b.01",
+      "path": "design-reviews/millennium-bridge-exploration-b-v1/sources/01-opening-original.png",
+      "sha256": "442eae584b4271debdfb4e13b3b7b07d37ba3fe29e9038679b0e9a04190c2c52"
+    },
+    {
+      "id": "asset.millennium-bridge.exploration-b.02",
+      "path": "design-reviews/millennium-bridge-exploration-b-v1/sources/02-step-original.png",
+      "sha256": "f8e933d28f5b679abb8b244c3ab7b59864223a0166312731a3a147d54a0dfb52"
+    }
+  ],
+  "sourceImplementation": [
+    {
+      "path": "src/motion-proof/continuous-raster.ts",
+      "sha256": "21abdfc7ecdf63d03b4b5ba1866573c3307f19a9157c3ce0aa7b0ddf5c8fe910"
+    },
+    {
+      "path": "src/motion-proof/millennium-bridge/model.ts",
+      "sha256": "d574458111c9b515b1d21b5e0ec45d4f3555d4f8e50336701f435a6a8170b0d4"
+    },
+    {
+      "path": "src/motion-proof/millennium-bridge/composition.ts",
+      "sha256": "48e9ed3781054699453f26049b883853eb40a1ec00e7ed49761a1c7cfaf5a32e"
+    },
+    {
+      "path": "src/motion-proof/millennium-bridge/approval.ts",
+      "sha256": "cc38ea71fed240d9fa9c32f82ed0f08f5eb4e469e363065edb6c26c00916dde1"
+    },
+    {
+      "path": "src/motion-proof/millennium-bridge/inspection.ts",
+      "sha256": "e484cab6b15cb752eb5f2dd0dbb74e67b51cfc7a9438229c50296e7bde4d0619"
+    },
+    {
+      "path": "scripts/bridge-motion-proof.ts",
+      "sha256": "28fc453989059dcaa84f034252600c95f9fd538475c29ee5b5f55030a143c463"
+    }
+  ],
+  "startingCommit": "317ea9d1b89f0e6cf6fe2c482c53835516c8b191",
+  "status": "ready-for-owner-motion-review",
+  "supportingNotes": [
+    {
+      "path": "damping-accuracy.md",
+      "sha256": "b077ae99609afbb6a4f59cd5c016587d224aa752b834bc06577f2cca9a0c4b86"
+    },
+    {
+      "path": "motion-design.md",
+      "sha256": "7b26a57107c7c38f0010a390a6a9e7d3c53b619983a36486a2186546de30e2ab"
+    },
+    {
+      "path": "pipeline-assessment.md",
+      "sha256": "4920f666efba4dd86e31ddafc36c4bf12223b3aecfed28038a905e0fc4f7800f"
+    }
+  ]
+}
