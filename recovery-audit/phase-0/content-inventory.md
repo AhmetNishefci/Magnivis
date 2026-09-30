@@ -299,4 +299,3 @@ Magnivis-Wood-Frog-TikTok; {"width": 1080, "height": 1920, "fps": 30, "durationS
 - qa/wood-frog-tiktok-narrated/frame-16-33.4s.png
 - qa/wood-frog-tiktok-narrated/frame-17-35.7s.png
 - qa/wood-frog-tiktok-narrated/frame-18-37.8s.png
-

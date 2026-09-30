@@ -179,4 +179,3 @@ Read-only import of scripts/video-targets.ts; no QA execution/render. The filena
 - qa/wood-frog-tiktok-narrated/frame-16-33.4s.png
 - qa/wood-frog-tiktok-narrated/frame-17-35.7s.png
 - qa/wood-frog-tiktok-narrated/frame-18-37.8s.png
-
