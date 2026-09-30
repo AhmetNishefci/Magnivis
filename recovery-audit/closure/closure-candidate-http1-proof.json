@@ -1,12 +1,9 @@
 {
-  "recordedAt": "2026-09-30T21:30:07.606975+00:00",
-  "runtime": {
-    "node": "v22.23.3",
-    "pnpm": "10.17.1"
-  },
-  "tests": 253,
-  "testFiles": 17,
-  "durableArtifactCount": 110,
+  "recordedAt": "2026-09-30T21:29:22.709444+00:00",
+  "transport": "GitHub remote git clone",
+  "branch": "recovery/wood-frog-canonical",
+  "testedCommit": "a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec",
+  "noPreexistingIgnoredProjectState": true,
   "checks": [
     {
       "command": [
@@ -17,7 +14,7 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-00.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/00.txt"
     },
     {
       "command": [
@@ -27,47 +24,7 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-01.txt"
-    },
-    {
-      "command": [
-        "pnpm",
-        "artifacts:status"
-      ],
-      "exitCode": 0,
-      "expectedExitCode": 0,
-      "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-02.txt"
-    },
-    {
-      "command": [
-        "pnpm",
-        "artifacts:durable"
-      ],
-      "exitCode": 0,
-      "expectedExitCode": 0,
-      "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-03.txt"
-    },
-    {
-      "command": [
-        "pnpm",
-        "artifacts:verify"
-      ],
-      "exitCode": 0,
-      "expectedExitCode": 0,
-      "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-04.txt"
-    },
-    {
-      "command": [
-        "pnpm",
-        "recovery:validate"
-      ],
-      "exitCode": 0,
-      "expectedExitCode": 0,
-      "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-05.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/01.txt"
     },
     {
       "command": [
@@ -77,7 +34,67 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-06.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/02.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:status"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/03.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/04.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/05.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:restore"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/06.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/07.txt"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/08.txt"
     },
     {
       "command": [
@@ -89,7 +106,7 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-07.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/09.txt"
     },
     {
       "command": [
@@ -101,7 +118,7 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-08.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/10.txt"
     },
     {
       "command": [
@@ -112,7 +129,7 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-09.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/11.txt"
     },
     {
       "command": [
@@ -123,7 +140,7 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-10.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/12.txt"
     },
     {
       "command": [
@@ -134,7 +151,7 @@
       "exitCode": 1,
       "expectedExitCode": 1,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-11.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/13.txt"
     },
     {
       "command": [
@@ -145,11 +162,14 @@
       "exitCode": 0,
       "expectedExitCode": 0,
       "passed": true,
-      "log": "recovery-audit/closure/candidate-validation-12.txt"
+      "log": "recovery-audit/closure/closure-candidate-http1-proof-logs/14.txt"
     }
   ],
-  "credentialIgnoreAuditPassed": true,
-  "phase0123EvidenceUnchanged": true,
-  "platformRegression": "Expected INCOMPLETE for accepted unknown geometry; no fabricated mobile pass",
-  "passed": true
+  "trackedTreeClean": true,
+  "runtime": {
+    "node": "v22.23.3",
+    "pnpm": "10.17.1"
+  },
+  "passed": true,
+  "deviceQa": "No real-device pass inferred; known geometry gaps cause expected INCOMPLETE platform regression"
 }

@@ -27,7 +27,7 @@ Missing historical Wood Frog 4c5354d9… remains an expectation; accepted replac
 The repository filesystem is the default read-only `git` artifact provider. Status/verify validate archived bytes separately from operational workspace copies. Restore copies exact Git bytes to ignored operational paths, verifies SHA-256/size and atomically installs only absent destinations. Conflicts/corruption fail; restore never renders. Optional missing regenerable files and the historical missing expectation are reported distinctly and do not fail aggregate verification. Corruption or missing DURABLE_REQUIRED bytes always fail. Optional local adapter remains configured by MAGNIVIS_ARTIFACT_LOCAL_ROOT; no cloud credentials.
 
 ```sh
-git clone --branch recovery/wood-frog-canonical <repository-url>
+git clone --branch main <repository-url>
 cd Magnivis
 # Tested Node 22.23.3 / pnpm 10.17.1
 pnpm install --frozen-lockfile

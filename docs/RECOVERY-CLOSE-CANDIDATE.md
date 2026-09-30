@@ -1,4 +1,6 @@
-# Magnivis recovery-close candidate — not CLOSED
+# Historical Phase 3 recovery-close candidate
+
+Historical recommendation preserved below. Ahmet subsequently accepted this candidate and the gaps, authorizing final reconciliation after validation. Current authority: [RECOVERY.md](RECOVERY.md); final receipts: recovery-audit/closure. The proposal below is not a current pending permission request.
 
 Canonical checkpoint: through Wood Frog, ae797996382c337759612265fd8229e8d5f06eef. Work remains on recovery/wood-frog-canonical; main and recovery/magnivis-post-reset stay preserved. Millennium Bridge is post-checkpoint evidence, not next active content.
 

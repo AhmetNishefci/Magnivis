@@ -1,6 +1,6 @@
 # Laptop-reset recovery
 
-Status: FINAL RECONCILIATION CANDIDATE — operational closure pending all gates and main merge. Owner: Ahmet Nishefci. The owner accepts Phase 3 and documented historical gaps; closure does not mean lost bytes/evidence were recovered.
+Status: CLOSED — operational, effective upon the owner-authorized main reconciliation. Owner: Ahmet Nishefci. The owner accepts Phase 3 and documented historical gaps; closure does not mean lost bytes/evidence were recovered.
 
 Recovery began after a workstation reset exposed ignored/local-only/unpushed artifacts and state that a source clone could not recover. The source-controlled checkpoint is Magnivis through Wood Frog, ae797996382c337759612265fd8229e8d5f06eef. recovery/wood-frog-canonical is the accepted recovery source; recovery/magnivis-post-reset preserves later Bridge experiments and is excluded from reconciliation. No evidence branches/history are deleted or rewritten.
 
@@ -28,6 +28,6 @@ The brain preserves open discovery, evidence/claim/human gates, story-specific v
 
 ## Validation and prevention
 
-Phase 3 clean clone passed locked install, 253 tests/17 files, 110 durable hashes, exact restore, eight draft package validators, source/production/caption checks and 82 reproduced QA frames. Final candidate and remote-main proof are required before closure; their exact commits/runtime/receipts are recorded under recovery-audit/closure. Tested Node22.23.3/pnpm10.17.1/Remotion4.0.527; no secrets, credentials, paid API, platform mutation, LFS or cloud storage is required.
+Phase 3 clean clone passed locked install, 253 tests/17 files, 110 durable hashes, exact restore, eight draft package validators, source/production/caption checks and 82 reproduced QA frames. The fresh GitHub candidate clone passed all 15 checks, including locked install, 253 tests/17 files, 110 durable hashes, exact restore, eight draft package validations and source/caption/brain checks, without pre-existing ignored project state. Its exact tested commit is a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec. The known platform geometry gaps produce an expected INCOMPLETE report, never a fabricated device pass. Final remote-main confirmation and reconciliation receipts are recorded under recovery-audit/closure. Tested Node22.23.3/pnpm10.17.1/Remotion4.0.527; no secrets, credentials, paid API, platform mutation, LFS or cloud storage is required.
 
 Going forward: hash/manifest required binaries and evidence; push source/approvals/bytes together; verify remote HEAD and clean-clone restore; preserve historical/replacement identities; never infer approval from QA; retain native metric definitions; version UI knowledge after real-device changes. A laptop is a workstation, never the only archive of approved content/history.

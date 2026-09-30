@@ -4,7 +4,7 @@ Reviewed against original main ae797996382c337759612265fd8229e8d5f06eef.
 
 - recovered canonical system: 2 paths; see machine inventory.
 - durability additions: 10 paths; see machine inventory.
-- audit/history: 152 paths; see machine inventory.
+- audit/history: 173 paths; see machine inventory.
 - regenerated operational artifacts: 66 paths; see machine inventory.
 - documentation reconciliation: 22 paths; see machine inventory.
 - tests/validation: 17 paths; see machine inventory.

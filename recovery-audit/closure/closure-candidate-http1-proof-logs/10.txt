@@ -1,0 +1,42 @@
+
+> magnivis@0.1.0 production:validate /Users/ahmetnishefci/Developer/Magnivis/recovery-work/closure-candidate-http1-proof
+> tsx scripts/validate-production.ts wood-frog-tiktok --recovered
+
+{
+  "videoSpec": "wood-frog-tiktok",
+  "compositionId": "Magnivis-Wood-Frog-TikTok",
+  "productionPlan": "production-plan.wood-frog-freeze.v1",
+  "status": "recovery-derivative-review",
+  "historicalVisualApproval": {
+    "decision": "approved",
+    "reviewedBy": "Ahmet Nishefci",
+    "reviewedAt": "2026-09-29T10:44:24Z",
+    "artifact": {
+      "path": "output/wood-frog-narrated.mp4",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    },
+    "captionPlan": {
+      "id": "caption-plan.wood-frog.v1",
+      "revision": 2,
+      "sha256": "7e76efd794140e3a0c9d8b54a2d92e045fb565505f9a2d1b8738f6c052ba7b51"
+    },
+    "notes": "Owner visually approved the exact master after the reusable caption-spacing fix and the speech-first rhetorical-dash refinement passed automated and representative-frame QA. This approval covers the master visual/audio artifact only.",
+    "platformVariantApprovalGranted": false,
+    "publicationApprovalGranted": false
+  },
+  "operationalArtifact": {
+    "artifactId": "wood-frog-tiktok.recovered-master",
+    "path": "output/recovered/wood-frog-tiktok-narrated.mp4",
+    "sha256": "99e38b8d129a2eae1842fbba234f8d7a5c355c45fcd5cb99e0fe73d2ac4ee5f3",
+    "provenance": "RECOVERY_EQUIVALENT_REGENERATION",
+    "approvalScope": "none"
+  },
+  "soundscapeSha256": "62ee7908811e144bb34b15649620665fbc47243d180560db702ec51f1e7e003b",
+  "narrationCueCount": 6,
+  "captionPlan": "caption-plan.wood-frog.v1",
+  "burnedInCaptionCueCount": 18,
+  "captions": "captions/wood-frog.en.vtt",
+  "recoveryMode": true,
+  "historicalApprovalTransferred": false,
+  "passed": true
+}

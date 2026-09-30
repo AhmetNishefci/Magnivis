@@ -287,3 +287,7 @@ Owner selects normal Git/GitHub for important binaries. Retain eight exact-ident
 ## Final operational recovery closure authorization
 
 Ahmet Nishefci explicitly accepts Phase 3, historical gaps, separate Wood Frog replacement identity and Git-backed durability at current scale. Authorizes controlled history-preserving reconciliation into main only after full candidate/clean-clone gates. This does not authorize new discovery, production, Bridge work, private upload/publication or claim reconstruction. RECOVERY.md owns closure status; STRATEGY.md owns the one-short/day resumption direction, provisional mature Kosovo windows and future audience/long-form flywheel.
+
+## Operational closure validation and reconciliation
+
+The independently fetched GitHub candidate a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec passes locked install, 253 tests across 17 files, all 110 durable identities, exact restore, eight draft packages and production/caption/brain validation. Known geometry gaps remain explicitly INCOMPLETE. Use a merge commit through PR #1 to preserve recovery provenance; verify remote main in a separate clean clone and retain the receipts under recovery-audit/closure. Operational closure accepts gaps and makes no new content/platform authorization.
