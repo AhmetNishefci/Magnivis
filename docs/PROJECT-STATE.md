@@ -6,7 +6,9 @@ Last updated: 2026-09-30
 
 The surviving main baseline is `ae797996382c337759612265fd8229e8d5f06eef`. Later local-only work was lost, not recovered. Reconstruction is isolated on `recovery/magnivis-post-reset`; [recovery provenance](RECOVERY.md) distinguishes surviving truth, historical reports and new artifacts.
 
-Milestone 1 reconstructs Millennium Bridge research/editorial revision 1 from eight freshly inspected source families and 18 supported, scoped claims. Exact historical owner-supplied narration is revalidated, with six editorial beats and an original-vector VisualPlan. `content-intelligence/reviews/millennium-bridge-reconstruction-v1/` is ready for explicit owner reconstruction review. Claims are not promoted to `verified` before that decision; no production is authorized. Injury status remains unknown/excluded.
+Milestone 1 reconstructed Millennium Bridge research/editorial revision 1 from eight freshly inspected source families and 18 scoped claims. Ahmet explicitly approved the reconstructed claims, qualifications/exclusions, limitations, exact historical hook/narration, six beats, VisualPlan and copyright/provenance in the Milestone 2 instruction. The actual decision-entry time is `2026-09-30T15:49:09.000Z`; approved package/asset revision 1 snapshots are registered and all 18 claims are verified within their recorded scopes. Injury status remains unknown/excluded.
+
+Milestone 2 reconstructs five deterministic Candidate 3 design frames at `design-reviews/millennium-bridge-candidate-3-reconstruction-v1/`, covering all six beats. They are new replacement bytes, not recovered original PNGs. Source SVGs, PNG hashes, contact sheet, exact editorial/decision bindings, local safe-area checks and an actual local visual inspection are recorded. **Owner design review is pending; full Candidate 3 production, audio, Meta reconstruction, platform activity and publication remain unauthorized.**
 
 The entries below preserve surviving repository history and its outstanding gates; they do not incorporate reported lost Meta QA or Candidate 3 approvals as current artifacts.
 
@@ -57,7 +59,7 @@ The entries below preserve surviving repository history and its outstanding gate
 
 ## NOW — operational/editorial work
 
-- Review the reconstructed Millennium Bridge claim ledger, exact hook/script and editorial VisualPlan; record a fresh reconstruction decision before any separately authorized production milestone.
+- Review the exact five reconstructed Candidate 3 design frames/contact sheet and their hashes. Approve or request revisions before a separately authorized production milestone.
 
 - Replace Video 001's unpositioned YouTube SRT with `captions/earth-to-stars.en.vtt`, then confirm placement on desktop and mobile.
 - Revisit Video 002 when its audience-retention curve finishes processing; use the exact early drop-off to inform future hooks.

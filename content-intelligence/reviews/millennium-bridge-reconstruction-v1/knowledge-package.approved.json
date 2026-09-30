@@ -1,0 +1,711 @@
+{
+  "approval": {
+    "approvedAt": "2026-09-30",
+    "approvedBy": "Ahmet Nishefci",
+    "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval."
+  },
+  "caveats": [
+    {
+      "claimIds": [
+        "millennium-bridge.claim.onset-without-crowd-synchrony",
+        "millennium-bridge.claim.later-coherence-effects",
+        "millennium-bridge.claim.opening-day-attribution-limit"
+      ],
+      "id": "millennium-bridge.caveat.event-attribution",
+      "statement": "Mechanism support does not uniquely identify the opening-day mixture."
+    }
+  ],
+  "centralQuestion": "How can trying to keep your balance make a bridge sway more?",
+  "claims": [
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Synopsis, printed p. 17",
+          "notes": "Opening date stated.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "Opening paragraphs",
+          "notes": "Operator gives the same date.",
+          "sourceId": "source.city-bridge-millennium-anniversary-2025"
+        }
+      ],
+      "id": "millennium-bridge.claim.opening-date",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "London’s Millennium Bridge opened to the public on 10 June 2000.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "basis": "estimated",
+      "caveats": [
+        "Do not confuse daily crossings with simultaneous occupancy or unique visitors."
+      ],
+      "display": "approximately 80,000–100,000",
+      "evidence": [
+        {
+          "locator": "Opening day, printed p. 20",
+          "notes": "Daily total estimated; not an exact counter.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.opening-crossings",
+      "quantity": {
+        "kind": "range",
+        "maximum": 100000,
+        "minimum": 80000,
+        "precision": "approximate",
+        "unit": "crossings"
+      },
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "The original investigation estimated 80,000–100,000 opening-day crossings.",
+      "type": "quantitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "basis": "estimated",
+      "caveats": [
+        "Approximate peak, not a prescribed instability threshold."
+      ],
+      "display": "roughly 2,000 at once",
+      "evidence": [
+        {
+          "locator": "Opening day, printed p. 20",
+          "notes": "Peak occupancy inferred from video.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.simultaneous-occupancy",
+      "quantity": {
+        "kind": "scalar",
+        "precision": "approximate",
+        "unit": "pedestrians",
+        "value": 2000
+      },
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Video analysis estimated a maximum of roughly 2,000 pedestrians simultaneously on the deck.",
+      "type": "quantitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Do not depict vertical bouncing as the primary problem."
+      ],
+      "evidence": [
+        {
+          "locator": "Opening day, printed pp. 20–21",
+          "notes": "Sideways vibration reported; excessive vertical vibration absent.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "Publisher abstract",
+          "notes": "Opening-day lateral movement described.",
+          "sourceId": "source.dallard-millennium-asce-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.opening-lateral-motion",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "The unexpected opening-day bridge motion was predominantly lateral, or side-to-side.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "These observations alone do not measure individual foot-placement laws."
+      ],
+      "evidence": [
+        {
+          "locator": "Opening day, printed p. 21",
+          "notes": "Walking difficulty and handrail support observed.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "I. Introduction, p. 021110-1",
+          "notes": "Handrail use recounted.",
+          "sourceId": "source.eckhardt-millennium-pre-2007"
+        }
+      ],
+      "id": "millennium-bridge.claim.visible-balance-response",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Pedestrians had difficulty walking during the motion and some held the balustrades for support.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Opening day, printed p. 21",
+          "notes": "Second-day access reduction recorded.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.access-restriction",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Pedestrian access was reduced on 11 June 2000.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Opening day, printed p. 21",
+          "notes": "Closure decision dated.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "Publisher abstract",
+          "notes": "Closure date independently repeated.",
+          "sourceId": "source.dallard-millennium-asce-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.closure-date",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "The bridge was closed on 12 June 2000 for investigation.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "The 2001 paper cannot itself verify events in 2002."
+      ],
+      "evidence": [
+        {
+          "locator": "Opening paragraphs; numbered facts 17–18",
+          "notes": "February reopening after dampers; fact 18 names February 22 as reopening day.",
+          "sourceId": "source.city-bridge-millennium-anniversary-2025"
+        },
+        {
+          "locator": "Where the idea came from, printed p. 18",
+          "notes": "Completed damping solution described as effective.",
+          "sourceId": "source.arup-damped-outriggers-2008"
+        },
+        {
+          "locator": "Validation by testing / Validation of final scheme, printed pp. 31–33",
+          "notes": "Prototype validation precedes the later reopening; not a final 2002 crowd-test report.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.reopening-date",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "The bridge reopened on 22 February 2002 after damping modifications and testing.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Force correlation with bridge motion is not proof that every footstep synchronized."
+      ],
+      "evidence": [
+        {
+          "locator": "Description of synchronous lateral excitation, printed p. 21",
+          "notes": "Contemporary force-correlation explanation.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "Abstract; II. Modeling; VI. Closing remarks",
+          "notes": "Later phase-oscillator theory is an alternative modelling tradition.",
+          "sourceId": "source.eckhardt-millennium-pre-2007"
+        }
+      ],
+      "id": "millennium-bridge.claim.early-synchronous-excitation-explanation",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Early engineering accounts described synchronous lateral excitation and correlated pedestrian forces.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Model and laboratory support, not a tracked reconstruction of every opening-day walker.",
+        "The 2020 experiment used one participant."
+      ],
+      "evidence": [
+        {
+          "locator": "Institutional abstract",
+          "notes": "Balance model controls lateral step position, not necessarily timing.",
+          "sourceId": "source.macdonald-balancing-pedestrians-2009"
+        },
+        {
+          "locator": "Abstract; 2 Methodology, p. 1837; 4 Conclusions, p. 1841",
+          "notes": "Treadmill observations support a foot-placement control law.",
+          "sourceId": "source.bocian-foot-placement-eurodyn-2020"
+        }
+      ],
+      "id": "millennium-bridge.claim.balance-foot-placement",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "A laterally moving walkway can change the foot placement used by pedestrians to maintain balance.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Can, not always: gait strategy and frequency can also yield positive damping."
+      ],
+      "evidence": [
+        {
+          "locator": "Institutional abstract",
+          "notes": "Balance feedback can contribute negative damping.",
+          "sourceId": "source.macdonald-balancing-pedestrians-2009"
+        },
+        {
+          "locator": "Introduction; Results — Analytical prediction, p. 4, equations (1)–(2)",
+          "notes": "Uncorrelated contributions can have a nonzero mean energy input.",
+          "sourceId": "source.belykh-instability-without-synchronisation-2021"
+        }
+      ],
+      "id": "millennium-bridge.claim.effective-negative-damping",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Aggregate pedestrian lateral forces can feed energy into bridge motion, acting as effective negative damping.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Growth is conditional; do not imply unbounded amplitude or inevitable collapse."
+      ],
+      "evidence": [
+        {
+          "locator": "Theory, printed pp. 24–25",
+          "notes": "Excitation and absorbed power determine modal-energy change.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "Institutional abstract, final sentence",
+          "notes": "Divergent response above a critical pedestrian number.",
+          "sourceId": "source.macdonald-balancing-pedestrians-2009"
+        }
+      ],
+      "id": "millennium-bridge.claim.response-growth",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Bridge sway can grow when pedestrian energy input exceeds the energy removed by structural damping.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "A supported mechanism possibility, not proof of an exclusive cause on 10 June 2000."
+      ],
+      "evidence": [
+        {
+          "locator": "Institutional abstract",
+          "notes": "Unchanged pacing frequency can produce negative damping.",
+          "sourceId": "source.macdonald-balancing-pedestrians-2009"
+        },
+        {
+          "locator": "Abstract; Results — Simulation results, pp. 4–5; Discussion",
+          "notes": "Instability also occurs in a model unable to synchronize.",
+          "sourceId": "source.belykh-instability-without-synchronisation-2021"
+        }
+      ],
+      "id": "millennium-bridge.claim.onset-without-crowd-synchrony",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Lateral instability can begin without crowd-wide footstep synchronization being a necessary initiating condition.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Do not say synchronization never occurs or has no role."
+      ],
+      "evidence": [
+        {
+          "locator": "Introduction; Results — The role of foot placement strategies, pp. 6–8; Discussion",
+          "notes": "Coherence has secondary nonlinear effects of differing sign.",
+          "sourceId": "source.belykh-instability-without-synchronisation-2021"
+        }
+      ],
+      "id": "millennium-bridge.claim.later-coherence-effects",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Later footstep coherence can change the response, amplifying or moderating the motion depending on phase and gait.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Conservative editorial inference about evidence limits, not a measured percentage or proof that reconstruction is impossible in principle."
+      ],
+      "evidence": [
+        {
+          "locator": "Results — Review of observational and experimental evidence; Discussion",
+          "notes": "Limited synchrony observations and unknown crowd control-law distribution constrain attribution.",
+          "sourceId": "source.belykh-instability-without-synchronisation-2021"
+        },
+        {
+          "locator": "II. Modeling, assumptions (i)–(ii)",
+          "notes": "Specific interaction assumptions are not direct event measurements.",
+          "sourceId": "source.eckhardt-millennium-pre-2007"
+        }
+      ],
+      "id": "millennium-bridge.claim.opening-day-attribution-limit",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "The inspected evidence does not uniquely establish the opening-day contribution of footstep coordination and other gait mechanisms.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Suppression does not mean all future movement is physically impossible.",
+        "Added supporting chevrons do not make this a major bridge-stiffening strategy."
+      ],
+      "evidence": [
+        {
+          "locator": "Lateral stiffening options / Damping options, printed p. 29; Quantification and optimisation, printed p. 31",
+          "notes": "Less intrusive damping chosen; components dissipate energy.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "Where the idea came from, printed p. 18",
+          "notes": "Arup reports effective reduction.",
+          "sourceId": "source.arup-damped-outriggers-2008"
+        }
+      ],
+      "id": "millennium-bridge.claim.damping-energy-removal",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Engineers chose a damping-based retrofit over major stiffening; damping removes vibration energy and suppresses excessive sway.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "System roles differ; do not imply every tuned-mass device controlled lateral motion."
+      ],
+      "evidence": [
+        {
+          "locator": "Synopsis, p. 17; Description of scheme, printed pp. 29–31",
+          "notes": "Both system types specified.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        },
+        {
+          "locator": "Publisher abstract",
+          "notes": "Extensive passive damping was being installed.",
+          "sourceId": "source.dallard-millennium-asce-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.damper-systems",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "The retrofit scheme included fluid-viscous and tuned-mass damping systems.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    },
+    {
+      "caveats": [
+        "Prototype validation, not a claim to have inspected the final 2002 commissioning dataset.",
+        "No exact response-reduction multiplier is asserted."
+      ],
+      "evidence": [
+        {
+          "locator": "Synopsis, p. 17; Validation by testing / Validation of final scheme, printed pp. 31–33",
+          "notes": "Measured prototype behaviour compared with prediction.",
+          "sourceId": "source.dallard-millennium-structural-engineer-2001"
+        }
+      ],
+      "id": "millennium-bridge.claim.prototype-test-validation",
+      "review": {
+        "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval.",
+        "reviewedAt": "2026-09-30",
+        "reviewedBy": "Ahmet Nishefci"
+      },
+      "statement": "Prototype tests showed increased damping and reduced response consistent with the retrofit’s analytical predictions.",
+      "type": "qualitative",
+      "verificationStatus": "verified"
+    }
+  ],
+  "editorialStatus": "approved",
+  "followUpOpportunities": [
+    "Explain the distinct roles of viscous and tuned-mass dampers."
+  ],
+  "hooks": [
+    {
+      "archetype": "question",
+      "claimIds": [
+        "millennium-bridge.claim.balance-foot-placement",
+        "millennium-bridge.claim.effective-negative-damping"
+      ],
+      "id": "millennium-bridge.hook.balance-feedback",
+      "text": "How can trying to keep your balance make a bridge sway more?",
+      "viewerPromise": "Reveal balance-driven structural feedback."
+    },
+    {
+      "archetype": "misconception",
+      "claimIds": [
+        "millennium-bridge.claim.onset-without-crowd-synchrony"
+      ],
+      "id": "millennium-bridge.hook.synchrony-misconception",
+      "text": "A crowd does not have to match footsteps to amplify a bridge’s sway.",
+      "viewerPromise": "Separate force feedback from unanimous lockstep."
+    }
+  ],
+  "id": "millennium-bridge",
+  "narrativeOpportunities": [
+    {
+      "claimIds": [
+        "millennium-bridge.claim.balance-foot-placement",
+        "millennium-bridge.claim.effective-negative-damping",
+        "millennium-bridge.claim.damping-energy-removal"
+      ],
+      "description": "Move from corrective steps to collective response and energy removal.",
+      "id": "millennium-bridge.narrative.balance-feedback",
+      "title": "The balance-feedback reveal"
+    }
+  ],
+  "relatedQuestions": [
+    "How do force correlation and footstep synchronization differ?"
+  ],
+  "revision": 1,
+  "sources": [
+    {
+      "authors": [
+        "P. Dallard",
+        "A. J. Fitzpatrick",
+        "A. Flint",
+        "S. Le Bourva",
+        "A. Low",
+        "R. M. Ridsdill Smith",
+        "M. Willford"
+      ],
+      "id": "source.dallard-millennium-structural-engineer-2001",
+      "notes": "Publisher confirms title, authors, date, synopsis and Volume 79(22), pp. 17–33. Selected paper sections inspected in a public teaching mirror: https://researchcourse.pbworks.com/f/structural%2Bengineering.pdf . Its 15-page scan omits printed pages 22–23. Publisher full text requires purchase/membership; mirror rights and completeness are not certified. No access control was bypassed; no source PDF or figure is redistributed.",
+      "organization": "Institution of Structural Engineers",
+      "published": "2001-11-20",
+      "retrieved": "2026-09-30",
+      "sourceType": "primary-source",
+      "title": "The London Millennium Footbridge",
+      "url": "https://www.istructe.org/journal/volumes/volume-79-(published-in-2001)/issue-22/the-london-millennium-footbridge/"
+    },
+    {
+      "authors": [
+        "Pat Dallard",
+        "Tony Fitzpatrick",
+        "Anthony Flint",
+        "Angus Low",
+        "Roger Ridsdill Smith",
+        "Michael Willford",
+        "Mark Roche"
+      ],
+      "id": "source.dallard-millennium-asce-2001",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1061/(ASCE)1084-0702(2001)6:6(412)"
+        }
+      ],
+      "notes": "Publisher abstract and bibliographic record inspected through indexed publisher content at ascelibrary.com; direct requests to .org failed and .com returned 403. Full paper not inspected. Journal of Bridge Engineering 6(6), pp. 412–417; retrofit was still underway when written.",
+      "organization": "American Society of Civil Engineers",
+      "published": "2001-12-01",
+      "retrieved": "2026-09-30",
+      "sourceType": "peer-reviewed",
+      "title": "London Millennium Bridge: Pedestrian-Induced Lateral Vibration",
+      "url": "https://ascelibrary.org/doi/10.1061/(ASCE)1084-0702(2001)6:6(412)"
+    },
+    {
+      "authors": [
+        "Bruno Eckhardt",
+        "Edward Ott",
+        "Steven H. Strogatz",
+        "Daniel M. Abrams",
+        "Allan McRobie"
+      ],
+      "id": "source.eckhardt-millennium-pre-2007",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1103/PhysRevE.75.021110"
+        }
+      ],
+      "notes": "APS identity/abstract corroborated with author-hosted university PDF: https://dmabrams.esam.northwestern.edu/pubs/Eckhardt%20et%20al%20-%20Modeling%20walker%20synchronization%20on%20the%20Millennium%20Bridge%20-%20PRE%202007.pdf . Introduction, modelling assumptions and closing remarks inspected; not a retrospective measurement of every opening-day pedestrian.",
+      "organization": "American Physical Society",
+      "published": "2007-02-12",
+      "retrieved": "2026-09-30",
+      "sourceType": "peer-reviewed",
+      "title": "Modeling walker synchronization on the Millennium Bridge",
+      "url": "https://doi.org/10.1103/PhysRevE.75.021110"
+    },
+    {
+      "authors": [
+        "John H. G. Macdonald"
+      ],
+      "id": "source.macdonald-balancing-pedestrians-2009",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1098/rspa.2008.0367"
+        }
+      ],
+      "notes": "Bristol institutional abstract and metadata inspected; Royal Society DOI request failed. Full paper not inspected. Proceedings of the Royal Society A 465(2104), pp. 1055–1073. Abstract distinguishes negative and positive damping.",
+      "organization": "Royal Society / University of Bristol",
+      "publicationLabel": "April 2009; first online 16 December 2008",
+      "retrieved": "2026-09-30",
+      "sourceType": "peer-reviewed",
+      "title": "Lateral excitation of bridges by balancing pedestrians",
+      "url": "https://research-information.bris.ac.uk/en/publications/lateral-excitation-of-bridges-by-balancing-pedestrians/"
+    },
+    {
+      "authors": [
+        "Mateusz Bocian",
+        "Jeremy F. Burn",
+        "John H. G. Macdonald"
+      ],
+      "id": "source.bocian-foot-placement-eurodyn-2020",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.47964/1120.9148.19337"
+        }
+      ],
+      "notes": "Institutional repository published version, pp. 1835–1843. Abstract, methodology and conclusions inspected. A single participant on a laterally oscillating treadmill; cannot establish the opening-day crowd distribution. PDF screenshot fetch failed; no quantitative graph values are used.",
+      "organization": "EASD Procedia / White Rose Research Online",
+      "publicationLabel": "EURODYN 2020, 23–26 November 2020",
+      "retrieved": "2026-09-30",
+      "sourceType": "primary-source",
+      "title": "Pedestrian lateral foot placement and lateral dynamic instability of bridges",
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/213667/1/Bocian%202020%20-%20Pedestrian%20lateral%20foot%20placement%20and%20lateral%20dynamic%20instability%20of%20bridges.pdf"
+    },
+    {
+      "authors": [
+        "Igor Belykh",
+        "Mateusz Bocian",
+        "Alan R. Champneys",
+        "Kevin Daley",
+        "Russell Jeter",
+        "John H. G. Macdonald",
+        "Allan McRobie"
+      ],
+      "id": "source.belykh-instability-without-synchronisation-2021",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1038/s41467-021-27568-y"
+        }
+      ],
+      "notes": "Publisher-indexed article and author-hosted published PDF inspected: https://math.gsu.edu/ibelykh/2021_Nature_Communications_Emergence_of_London_Millennium_Bridge_Instability.pdf . Abstract, introduction, results and discussion; later direct publisher fetch failed. Article 12:7223. Supplementary material not independently inspected.",
+      "organization": "Nature Communications",
+      "published": "2021-12-10",
+      "retrieved": "2026-09-30",
+      "sourceType": "peer-reviewed",
+      "title": "Emergence of the London Millennium Bridge instability without synchronisation",
+      "url": "https://www.nature.com/articles/s41467-021-27568-y"
+    },
+    {
+      "id": "source.city-bridge-millennium-anniversary-2025",
+      "notes": "Operator anniversary page inspected through indexed official content, including numbered facts 17–18; later direct fetch timed out. Opening/ownership corroborated at https://www.citybridgefoundation.org.uk/what-we-do/bridges . Its simplified mechanism account is not used to override research papers.",
+      "organization": "City Bridge Foundation",
+      "published": "2025-06-05",
+      "retrieved": "2026-09-30",
+      "sourceType": "primary-source",
+      "title": "It’s 25-up for London’s iconic Millennium Bridge",
+      "url": "https://www.citybridgefoundation.org.uk/news-and-blog/its-25-up-for-londons-iconic-millennium-bridge"
+    },
+    {
+      "authors": [
+        "Rob Smith",
+        "Michael Willford"
+      ],
+      "id": "source.arup-damped-outriggers-2008",
+      "notes": "Official journal PDF; bridge retrospective paragraph on printed p. 18 inspected. Adjacent tall-building specifications must not be attributed to the bridge. This is a rediscovered retrospective, not a claim to have identified the exact lost source URL.",
+      "organization": "Arup",
+      "publicationLabel": "The Arup Journal 3/2008, pp. 15–21",
+      "retrieved": "2026-09-30",
+      "sourceType": "primary-source",
+      "title": "Damped outriggers for tall buildings — Where the idea came from",
+      "url": "https://www.arup.com/globalassets/downloads/arup-journal/the-arup-journal-2008-issue-3.pdf"
+    }
+  ],
+  "taxonomy": {
+    "domains": [
+      "structural-engineering",
+      "biomechanics"
+    ],
+    "pillar": "technology-built-world",
+    "topics": [
+      "millennium-bridge",
+      "pedestrian-structure-interaction",
+      "negative-damping"
+    ]
+  },
+  "thesis": "Balance corrections can feed lateral energy into a flexible bridge without unanimous footstep timing; event attribution remains qualified.",
+  "timeliness": "evergreen",
+  "topic": "London Millennium Bridge pedestrian–structure feedback",
+  "viewerPayoff": "Understand the feedback loop and why damping addresses it.",
+  "visualOpportunities": [
+    {
+      "claimIds": [
+        "millennium-bridge.claim.balance-foot-placement",
+        "millennium-bridge.claim.onset-without-crowd-synchrony",
+        "millennium-bridge.claim.later-coherence-effects"
+      ],
+      "description": "Original explanatory geometry with varied phases and explicit model disclosures.",
+      "id": "millennium-bridge.visual.varied-phases",
+      "title": "Varied pedestrians, shared structural response"
+    }
+  ]
+}

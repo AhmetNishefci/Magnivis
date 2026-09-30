@@ -4,6 +4,7 @@ import {resolve} from 'node:path';
 import {afterEach, describe, expect, it} from 'vitest';
 import {executeContentIntelligenceCommand} from '../scripts/content-intelligence';
 import {millenniumBridgeContentAsset as asset} from '../src/content-assets/assets/millennium-bridge';
+import {millenniumBridgeApprovedContentAsset} from '../src/content-assets/assets/millennium-bridge-approved';
 import {contentAssetRegistry} from '../src/content-assets/registry';
 import {ownerEditorialDecisionSchema, promoteReviewedEditorialPackage, validateClaimReviewBundle} from '../src/content-intelligence/claim-review';
 import {
@@ -13,6 +14,7 @@ import {
 } from '../src/content-intelligence/reviews/millennium-bridge';
 import {millenniumBridgeClaimIds as c, millenniumBridgeKnowledgePackage as knowledgePackage, millenniumBridgeSourceIds as s} from '../src/knowledge/packages/millennium-bridge';
 import {knowledgePackageRegistry} from '../src/knowledge/registry';
+import {millenniumBridgeApprovedKnowledgePackage} from '../src/knowledge/packages/millennium-bridge-approved';
 
 const directories: string[] = [];
 const temporaryDirectory = () => {
@@ -23,9 +25,9 @@ const temporaryDirectory = () => {
 afterEach(() => directories.splice(0).forEach((directory) => rmSync(directory, {recursive: true, force: true})));
 
 describe('Millennium Bridge evidence-bound reconstruction', () => {
-  it('registers review-only package/asset with no fabricated owner approval', () => {
-    expect(knowledgePackageRegistry.get('millennium-bridge')).toEqual(knowledgePackage);
-    expect(contentAssetRegistry.get(asset.id)).toEqual(asset);
+  it('preserves Milestone 1 review snapshots separately from current approved registration', () => {
+    expect(knowledgePackageRegistry.get('millennium-bridge')).toEqual(millenniumBridgeApprovedKnowledgePackage);
+    expect(contentAssetRegistry.get(asset.id)).toEqual(millenniumBridgeApprovedContentAsset);
     expect(knowledgePackage.editorialStatus).toBe('review');
     expect(asset.editorialStatus).toBe('editorial-review');
     expect(knowledgePackage.approval).toBeUndefined();
@@ -129,8 +131,9 @@ describe('Millennium Bridge evidence-bound reconstruction', () => {
     const log = () => {};
     await executeContentIntelligenceCommand(['review', 'millennium-bridge', '--output', directory], {}, log);
     await executeContentIntelligenceCommand(['validate', 'millennium-bridge', '--output', directory], {}, log);
-    for (const stage of ['approve', 'trial', 'research', 'asset']) {
-      await expect(executeContentIntelligenceCommand([stage, 'millennium-bridge', '--output', directory], {}, log)).rejects.toThrow(/review\/validate only/);
+    await expect(executeContentIntelligenceCommand(['approve', 'millennium-bridge', '--output', directory], {}, log)).rejects.toThrow(/explicit --confirm-owner-approval/);
+    for (const stage of ['trial', 'research', 'asset']) {
+      await expect(executeContentIntelligenceCommand([stage, 'millennium-bridge', '--output', directory], {}, log)).rejects.toThrow(/explicit owner approval only/);
     }
   });
 });

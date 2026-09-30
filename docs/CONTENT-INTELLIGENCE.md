@@ -157,7 +157,7 @@ Changing reviewed claim wording changes its hash and invalidates a stale owner d
 
 ## Current human gates
 
-Millennium Bridge reconstruction revision 1 is ready for owner reconstruction review, with 18 supported/qualified claims, eight source inspections, and exact revalidated historical copy. Use `pnpm content:intelligence -- review millennium-bridge` and `pnpm content:intelligence -- validate millennium-bridge`. These offline commands cannot promote, generate production, or invoke paid stages. See `docs/RECOVERY.md` and `content-intelligence/reviews/millennium-bridge-reconstruction-v1/review.md`.
+Millennium Bridge reconstruction revision 1 is now explicitly owner-approved, with 18 verified scoped claims, eight source inspections, and exact revalidated historical copy. The original review snapshots remain preserved; current approved snapshots and exact editorial/decision bindings live beside them. Five Candidate 3 design replacements await separate owner design review. Use `pnpm content:intelligence -- review millennium-bridge` and `pnpm content:intelligence -- validate millennium-bridge`. These offline review/validate commands cannot promote, generate production, or invoke paid stages. The explicit `approve millennium-bridge --decision <file> --confirm-owner-approval` path records a real owner decision through the existing promotion mechanism; it never authorizes full video or platform activity. See `docs/RECOVERY.md` and `content-intelligence/reviews/millennium-bridge-reconstruction-v1/review.md`.
 
 The surviving Wood Frog claim/editorial and exact-master gates have been completed; its platform packages still await private real-device review. Future work must:
 
@@ -176,4 +176,4 @@ The surviving Wood Frog claim/editorial and exact-master gates have been complet
 - Millennium Bridge production and reported lost Meta Mobile QA reconstruction;
 - publishing or analytics APIs.
 
-The previous statement that Wood Frog production was unimplemented was stale relative to the surviving ProductionPlan/master chain. The current reconstruction bottleneck is fresh owner review of Millennium Bridge evidence and editorial artifacts. Generic VisualPlan-to-Remotion automation remains premature.
+The previous statement that Wood Frog production was unimplemented was stale relative to the surviving ProductionPlan/master chain. The current reconstruction bottleneck is owner review of the five exact Candidate 3 design replacements. Generic VisualPlan-to-Remotion automation remains premature.

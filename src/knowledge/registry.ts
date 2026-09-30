@@ -1,5 +1,5 @@
 import {speedOfLightKnowledgePackage} from './packages/speed-of-light';
-import {millenniumBridgeKnowledgePackage} from './packages/millennium-bridge';
+import {millenniumBridgeApprovedKnowledgePackage} from './packages/millennium-bridge-approved';
 import {oceanDepthKnowledgePackage} from './packages/ocean-depth';
 import {woodFrogApprovedKnowledgePackage} from './packages/wood-frog-approved';
 import {
@@ -81,7 +81,7 @@ export const createKnowledgePackageRegistry = (
 export type KnowledgePackageRegistry = ReturnType<typeof createKnowledgePackageRegistry>;
 
 export const knowledgePackageRegistry = createKnowledgePackageRegistry([
-  millenniumBridgeKnowledgePackage,
+  millenniumBridgeApprovedKnowledgePackage,
   oceanDepthKnowledgePackage,
   speedOfLightKnowledgePackage,
   woodFrogApprovedKnowledgePackage,

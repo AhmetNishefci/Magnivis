@@ -1,7 +1,8 @@
 import {topicCandidateSchema} from '../schema';
+import ownerDecision from '../../../content-intelligence/reviews/millennium-bridge-reconstruction-v1/owner-decision.json';
 
 export const millenniumBridgeTopicCandidate = topicCandidateSchema.parse({
-  id: 'topic.millennium-bridge', revision: 1, proposedKnowledgePackageId: 'millennium-bridge',
+  id: 'topic.millennium-bridge', revision: 2, proposedKnowledgePackageId: 'millennium-bridge',
   title: 'How balancing pedestrians can amplify bridge sway',
   centralQuestion: 'How can trying to keep your balance make a bridge sway more?',
   discovery: {kind: 'manual', recordedAt: '2026-09-30', notes: 'Post-reset reconstruction authorized by the owner; historical source leads required fresh inspection. See docs/RECOVERY.md.'},
@@ -11,5 +12,6 @@ export const millenniumBridgeTopicCandidate = topicCandidateSchema.parse({
   noveltyHypothesis: 'Distinguish force feedback from the simplified everyone-in-step story.',
   visualPotential: 'Original lateral walkway, varied pedestrians, energy-in and energy-out diagrams.',
   narrativePotential: 'Balance paradox, event, foot placement, collective response, caveat, damping.',
-  status: 'researching',
+  status: 'accepted',
+  review: {reviewedBy: ownerDecision.reviewer, reviewedAt: ownerDecision.reviewedAt.slice(0, 10), notes: `Accepted through explicit reconstructed editorial approval ${ownerDecision.id}; full production remains gated.`},
 });

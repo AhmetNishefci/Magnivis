@@ -62,3 +62,27 @@ Historical owner preference for the balance-feedback direction is preserved sepa
 **Current gate:** Ahmet reviews all 18 claim entries/access limitations, exact hook/narration, six narrative beats, editorial VisualPlan and disclosure/copyright strategy, then explicitly approves or rejects this reconstructed editorial package. An actual decision must bind the current statement hashes and record the real reviewer/time through the existing promotion boundary. The blank template is not approval. No automatic Millennium Bridge approval command is introduced in this milestone.
 
 **Separate later authority required:** ProductionPlan, narration/audio, Remotion, Candidate 3/design frames, Meta Mobile QA, PlatformVariants, DeliveryPackages and publication. None is implemented by Milestone 1. Recovered historical master/device approvals cannot authorize invented replacement bytes or evidence.
+
+## Milestone 2: current approval and five design replacements
+
+Ahmet explicitly approved the exact reconstructed Milestone 1 package in commit `8be2020c4a0f82b5567f6af41a83282e6c0c051b`. `owner-decision.json` records the current decision-entry time `2026-09-30T15:49:09.000Z`; this is not a manufactured 2026-09-29 review time. The existing promotion mechanism produces `knowledge-package.approved.json` and `content-asset.approved.json`, both revision 1. All 18 claims are verified within their qualifications. Draft/review snapshots and their hashes remain unchanged as Milestone 1 history. `editorial-approval-binding.json` separately locks reviewed/approved objects, claim review, source limitations, exclusions, exact hook/narration, narrative beats and VisualPlan. Authority extends to planning/design exploration only.
+
+Candidate 1 and Candidate 2 historically existed and were rejected in owner review; Candidate 2 specifically failed art direction. Their original source/bytes were not recovered, so neither is recreated as media or as a new historical review record. The historical references above remain references only. Reconstruction resumes from the final owner-preferred Candidate 3 thesis: more physical, cinematic and human; less engineering infographic.
+
+Five 1080×1920 static replacement frames are in `design-reviews/millennium-bridge-candidate-3-reconstruction-v1/`. Their original source lives in `src/design-exploration/millennium-bridge/`. Each has a self-contained SVG, rendered PNG, new SHA-256, beat/claim links and declared critical regions. The opening frame covers both hook and opening-day beats; the remaining four cover corrective steps, crowd feedback, coherence/uncertainty and damping. Shared river/skyline/bridge/filled-person geometry carries the visual world. Edge-position witnesses are illustrative motion cues, not measured response plots. Damper abstractions are integrated with edge/bracing geometry, not an exact engineering installation drawing.
+
+`manifest.json`, `source-representation.json`, `hashes.json`, `contact-sheet.png` and `review.md` form the owner handoff. `local-qa.json` records actual Codex image inspection of all five full PNGs and the sheet; its checksum and artifact hashes prevent treating it as inspection of altered frames. This is AI-assisted local QA, not owner approval or real-device evidence. Early uniform arm poses and detached damping geometry were corrected before the recorded inspection.
+
+The renderer uses original deterministic SVG and outlined bundled Manrope glyphs, with pinned Sharp 0.34.5/fontkit 2.0.4. SVGs require no system fonts or external images. PNG identity is verified through the recorded Sharp/libvips/librsvg stack; cross-environment byte identity is never presumed. No AI image provider, paid API, external imagery or production audio is involved.
+
+```sh
+pnpm design:bridge generate
+pnpm design:bridge validate
+pnpm content:intelligence -- approve millennium-bridge --decision <actual-owner-decision.json> --confirm-owner-approval
+```
+
+The approval command uses the same existing decision schema/promotion boundary; flags are operator controls, not substitutes for actual owner authorization. Design generation never supplies owner approval, never updates the recorded visual-inspection time automatically, and never renders video.
+
+Disclosure is consistent outlined Manrope text: `SIMPLIFIED EXPLANATORY MODEL` / `MOTION EXAGGERATED`, within the upper interior, subordinate to the subject and separate from captions. There are no sample captions, final CaptionPlan or final timing. Declared critical rectangles fit surviving **YouTube Shorts V1** and **TikTok V2**. The requested conditional YouTube V2 profile does not exist in surviving code; no profile is invented. Environmental geometry can bleed beyond critical safe regions. No Instagram/Facebook models or platform/device evidence are recreated.
+
+**Next human gate:** Ahmet reviews the exact five replacement PNG hashes for art direction, human physicality, depth, contact/response clarity, varied phases, coherence caveat, damping payoff and readable disclosures. Approval or revision is required before full Candidate 3 rendering; a later production milestone must be explicitly authorized. No ProductionPlan, final narration/soundscape/captions, Candidate 3 video, Meta QA, variants, deliveries, upload or publication is created here.

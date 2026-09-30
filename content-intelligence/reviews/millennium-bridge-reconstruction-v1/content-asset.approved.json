@@ -1,0 +1,269 @@
+{
+  "approval": {
+    "approvedAt": "2026-09-30",
+    "approvedBy": "Ahmet Nishefci",
+    "notes": "Approved through claim-review.millennium-bridge.reconstruction.v1; Explicit current owner approval supplied in Milestone 2 for commit 8be2020c4a0f82b5567f6af41a83282e6c0c051b: all reconstructed claims with qualifications/exclusions and source limitations; exact historical hook/narration; six beats; editorial VisualPlan; copyright/provenance strategy. Authorizes production planning/design exploration and five reconstructed design frames only. Full Candidate 3 video, audio, Meta reconstruction, platform activity and publication are not authorized. Timestamp records current decision entry, not historical approval."
+  },
+  "assetType": "short-form-video",
+  "durationIntentSeconds": {
+    "maximum": 50,
+    "minimum": 30
+  },
+  "editorialPurpose": "Explain a counterintuitive human–structure feedback mechanism.",
+  "editorialStatus": "approved",
+  "hookId": "millennium-bridge.hook.balance-feedback",
+  "id": "millennium-bridge.asset.balance-feedback",
+  "knowledgePackageId": "millennium-bridge",
+  "narrationPlan": {
+    "mode": "narrated",
+    "pronunciationNotes": [
+      "Millennium Bridge; lateral motion; dampers."
+    ],
+    "voiceDirection": "Clear, curious, measured English; preserve all can/may/uncertainty qualifications."
+  },
+  "narrativeStructure": [
+    {
+      "id": "millennium-bridge.asset.balance-feedback.beat.balance-paradox",
+      "label": "Balance paradox / immediate hook",
+      "purpose": "Pose the balance paradox.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.hook"
+      ]
+    },
+    {
+      "id": "millennium-bridge.asset.balance-feedback.beat.opening-day",
+      "label": "Opening-day sideways movement",
+      "purpose": "Locate the historical event.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.opening"
+      ]
+    },
+    {
+      "id": "millennium-bridge.asset.balance-feedback.beat.corrective-steps",
+      "label": "Human corrective foot placement",
+      "purpose": "Explain lateral balance control.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.foot-placement"
+      ]
+    },
+    {
+      "id": "millennium-bridge.asset.balance-feedback.beat.crowd-feedback",
+      "label": "Crowd-scale forces feeding structural response",
+      "purpose": "Reveal energy input and conditional growth.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.energy-in",
+        "millennium-bridge.asset.balance-feedback.script.growth"
+      ]
+    },
+    {
+      "id": "millennium-bridge.asset.balance-feedback.beat.coherence-qualification",
+      "label": "Synchronization/coherence qualification and uncertainty",
+      "purpose": "Separate possible onset from later coordination and event uncertainty.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.without-synchrony",
+        "millennium-bridge.asset.balance-feedback.script.qualification"
+      ]
+    },
+    {
+      "id": "millennium-bridge.asset.balance-feedback.beat.energy-out",
+      "label": "Dampers remove energy and suppress response",
+      "purpose": "Resolve the feedback with damping.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.damping"
+      ]
+    }
+  ],
+  "revision": 1,
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "claimIds": [
+          "millennium-bridge.claim.balance-foot-placement",
+          "millennium-bridge.claim.effective-negative-damping"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.hook",
+        "text": "How can trying to keep your balance make a bridge sway more?",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "millennium-bridge.claim.opening-lateral-motion"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.opening",
+        "text": "On opening day, London’s Millennium Bridge moved sideways.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "millennium-bridge.claim.balance-foot-placement"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.foot-placement",
+        "text": "When a walkway shifts, people adjust where they step to stay upright.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "millennium-bridge.claim.effective-negative-damping"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.energy-in",
+        "text": "In a crowd, those sideways forces can feed energy back into the bridge.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "millennium-bridge.claim.response-growth"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.growth",
+        "text": "Instead of dying away, the sway can grow.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "millennium-bridge.claim.onset-without-crowd-synchrony"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.without-synchrony",
+        "text": "That can begin without everyone matching footsteps.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "millennium-bridge.claim.later-coherence-effects",
+          "millennium-bridge.claim.opening-day-attribution-limit"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.qualification",
+        "text": "Later coordination may change the motion; its exact role that day remains uncertain.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "millennium-bridge.claim.damping-energy-removal"
+        ],
+        "id": "millennium-bridge.asset.balance-feedback.script.damping",
+        "text": "Engineers added dampers to take energy out of the movement, suppressing the sway.",
+        "type": "factual"
+      }
+    ]
+  },
+  "selectedClaimIds": [
+    "millennium-bridge.claim.balance-foot-placement",
+    "millennium-bridge.claim.effective-negative-damping",
+    "millennium-bridge.claim.opening-lateral-motion",
+    "millennium-bridge.claim.response-growth",
+    "millennium-bridge.claim.onset-without-crowd-synchrony",
+    "millennium-bridge.claim.later-coherence-effects",
+    "millennium-bridge.claim.opening-day-attribution-limit",
+    "millennium-bridge.claim.damping-energy-removal"
+  ],
+  "storyAngle": "The balance-feedback reveal, with synchronization and historical-attribution caveats.",
+  "visualPlan": [
+    {
+      "assetRequirements": [
+        "Original procedural/vector bridge, pedestrians, force and energy indications; no copied footage or scientific figures."
+      ],
+      "claimIds": [
+        "millennium-bridge.claim.balance-foot-placement",
+        "millennium-bridge.claim.effective-negative-damping"
+      ],
+      "id": "millennium-bridge.asset.balance-feedback.visual.balance-paradox",
+      "narrativeBeatId": "millennium-bridge.asset.balance-feedback.beat.balance-paradox",
+      "notes": "A question, not a claim that every correction destabilizes every bridge. Mechanism scenes must disclose SIMPLIFIED EXPLANATORY MODEL and MOTION EXAGGERATED. Preserve cinematic minimalism and designed burned-in captions in any separately authorized future production. No design frames or production timing are approved here.",
+      "objective": "Introduce a recognizable lateral walkway and a person correcting balance.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.hook"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original procedural/vector bridge, pedestrians, force and energy indications; no copied footage or scientific figures."
+      ],
+      "claimIds": [
+        "millennium-bridge.claim.opening-lateral-motion"
+      ],
+      "id": "millennium-bridge.asset.balance-feedback.visual.opening-day",
+      "narrativeBeatId": "millennium-bridge.asset.balance-feedback.beat.opening-day",
+      "notes": "No vertical-bounce or weight-capacity explanation; no claim this is documentary footage. Mechanism scenes must disclose SIMPLIFIED EXPLANATORY MODEL and MOTION EXAGGERATED. Preserve cinematic minimalism and designed burned-in captions in any separately authorized future production. No design frames or production timing are approved here.",
+      "objective": "Show London’s bridge moving sideways in an illustrative setting.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.opening"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original procedural/vector bridge, pedestrians, force and energy indications; no copied footage or scientific figures."
+      ],
+      "claimIds": [
+        "millennium-bridge.claim.balance-foot-placement"
+      ],
+      "id": "millennium-bridge.asset.balance-feedback.visual.corrective-steps",
+      "narrativeBeatId": "millennium-bridge.asset.balance-feedback.beat.corrective-steps",
+      "notes": "Do not present a single model as measured trajectories from opening day. Mechanism scenes must disclose SIMPLIFIED EXPLANATORY MODEL and MOTION EXAGGERATED. Preserve cinematic minimalism and designed burned-in captions in any separately authorized future production. No design frames or production timing are approved here.",
+      "objective": "Show sideways stance-foot placement relative to body balance on a moving surface.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.foot-placement"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original procedural/vector bridge, pedestrians, force and energy indications; no copied footage or scientific figures."
+      ],
+      "claimIds": [
+        "millennium-bridge.claim.effective-negative-damping",
+        "millennium-bridge.claim.response-growth"
+      ],
+      "id": "millennium-bridge.asset.balance-feedback.visual.crowd-feedback",
+      "narrativeBeatId": "millennium-bridge.asset.balance-feedback.beat.crowd-feedback",
+      "notes": "Footsteps stay varied. Do not imply forces must cancel or growth is unlimited. Mechanism scenes must disclose SIMPLIFIED EXPLANATORY MODEL and MOTION EXAGGERATED. Preserve cinematic minimalism and designed burned-in captions in any separately authorized future production. No design frames or production timing are approved here.",
+      "objective": "Aggregate varied pedestrian phases into a shared lateral response; show energy entering and sway growing.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.energy-in",
+        "millennium-bridge.asset.balance-feedback.script.growth"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original procedural/vector bridge, pedestrians, force and energy indications; no copied footage or scientific figures."
+      ],
+      "claimIds": [
+        "millennium-bridge.claim.onset-without-crowd-synchrony",
+        "millennium-bridge.claim.later-coherence-effects",
+        "millennium-bridge.claim.opening-day-attribution-limit"
+      ],
+      "id": "millennium-bridge.asset.balance-feedback.visual.coherence-qualification",
+      "narrativeBeatId": "millennium-bridge.asset.balance-feedback.beat.coherence-qualification",
+      "notes": "Never unanimous lockstep; never claim synchronization had no role. Later coherence can moderate or amplify. Mechanism scenes must disclose SIMPLIFIED EXPLANATORY MODEL and MOTION EXAGGERATED. Preserve cinematic minimalism and designed burned-in captions in any separately authorized future production. No design frames or production timing are approved here.",
+      "objective": "Maintain varied phases; permit limited later coherence while visibly qualifying its historical role.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.without-synchrony",
+        "millennium-bridge.asset.balance-feedback.script.qualification"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "assetRequirements": [
+        "Original procedural/vector bridge, pedestrians, force and energy indications; no copied footage or scientific figures."
+      ],
+      "claimIds": [
+        "millennium-bridge.claim.damping-energy-removal"
+      ],
+      "id": "millennium-bridge.asset.balance-feedback.visual.energy-out",
+      "narrativeBeatId": "millennium-bridge.asset.balance-feedback.beat.energy-out",
+      "notes": "Leave residual movement possible; this is not a guarantee against all future motion. Mechanism scenes must disclose SIMPLIFIED EXPLANATORY MODEL and MOTION EXAGGERATED. Preserve cinematic minimalism and designed burned-in captions in any separately authorized future production. No design frames or production timing are approved here.",
+      "objective": "Show an original damper abstraction taking energy out while the lateral response diminishes.",
+      "scriptSegmentIds": [
+        "millennium-bridge.asset.balance-feedback.script.damping"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    }
+  ]
+}

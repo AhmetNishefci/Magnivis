@@ -81,7 +81,9 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 
 `wood-frog-freeze-tolerance.asset.how-freezing-works` revision 2 is the first owner-approved asset to feed a typed ProductionPlan. Its script, narrative structure and VisualPlan remain editorial source-of-truth; `production-plan.wood-frog-freeze.v1` adds frame allocation and implementation intent without moving choreography into the asset. The uncertain circulation-cessation claim remains excluded.
 
-`src/content-assets/registry.ts` validates all four assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
+`src/content-assets/registry.ts` validates registered assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
+
+`millennium-bridge.asset.balance-feedback` revision 1 is the post-reset reconstructed, owner-approved editorial asset. Its exact historical owner-supplied script, six beats and VisualPlan remain unchanged by approval. Static design exploration lives separately in `src/design-exploration/millennium-bridge/`; it does not introduce a ProductionPlan, VideoSpec or platform variant.
 
 ## Adding another asset
 

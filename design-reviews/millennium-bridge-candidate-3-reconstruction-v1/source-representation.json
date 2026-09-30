@@ -1,0 +1,175 @@
+{
+  "dimensions": {
+    "height": 1920,
+    "width": 1080
+  },
+  "frames": [
+    {
+      "beatSuffixes": [
+        "balance-paradox",
+        "opening-day"
+      ],
+      "camera": "opening",
+      "claimIds": [
+        "millennium-bridge.claim.opening-lateral-motion",
+        "millennium-bridge.claim.balance-foot-placement",
+        "millennium-bridge.claim.effective-negative-damping"
+      ],
+      "criticalRegions": [
+        {
+          "height": 90,
+          "id": "disclosure",
+          "meaning": "Two-line model disclosure, separate from captions.",
+          "width": 690,
+          "x": 108,
+          "y": 280
+        },
+        {
+          "height": 835,
+          "id": "human-contact",
+          "meaning": "Foreground body, corrective shoes and deck contact.",
+          "width": 620,
+          "x": 180,
+          "y": 660
+        }
+      ],
+      "explanation": "A substantial foreground walker leans and widens a step on a laterally displaced deck. Receding rails and riverbanks establish a physical place immediately.",
+      "id": "01-balance-paradox",
+      "title": "The bridge moves. The body responds."
+    },
+    {
+      "beatSuffixes": [
+        "corrective-steps"
+      ],
+      "camera": "close",
+      "claimIds": [
+        "millennium-bridge.claim.balance-foot-placement"
+      ],
+      "criticalRegions": [
+        {
+          "height": 90,
+          "id": "disclosure",
+          "meaning": "Two-line model disclosure, separate from captions.",
+          "width": 690,
+          "x": 108,
+          "y": 280
+        },
+        {
+          "height": 1070,
+          "id": "body-foot-contact",
+          "meaning": "Shaded posture, lateral corrective foot and contact pulse.",
+          "width": 615,
+          "x": 200,
+          "y": 445
+        }
+      ],
+      "explanation": "Closer body-to-foot framing makes the corrective lateral placement legible. A small warm contact pulse sits on the deck, with a faint previous-position shoe witness.",
+      "id": "02-foot-placement",
+      "title": "Balance becomes a lateral step."
+    },
+    {
+      "beatSuffixes": [
+        "crowd-feedback"
+      ],
+      "camera": "crowd",
+      "claimIds": [
+        "millennium-bridge.claim.effective-negative-damping",
+        "millennium-bridge.claim.response-growth",
+        "millennium-bridge.claim.onset-without-crowd-synchrony"
+      ],
+      "criticalRegions": [
+        {
+          "height": 90,
+          "id": "disclosure",
+          "meaning": "Two-line model disclosure, separate from captions.",
+          "width": 690,
+          "x": 108,
+          "y": 280
+        },
+        {
+          "height": 720,
+          "id": "crowd-response",
+          "meaning": "Varied crowd, staggered contacts and bounded structural response.",
+          "width": 695,
+          "x": 140,
+          "y": 760
+        }
+      ],
+      "explanation": "Varied body sizes and gait phases recede into the same bridge. Staggered contact pulses and bounded edge-position witnesses indicate collective response without unanimous marching.",
+      "id": "03-crowd-feedback",
+      "title": "Many corrections. One moving structure."
+    },
+    {
+      "beatSuffixes": [
+        "coherence-qualification"
+      ],
+      "camera": "oblique",
+      "claimIds": [
+        "millennium-bridge.claim.onset-without-crowd-synchrony",
+        "millennium-bridge.claim.later-coherence-effects",
+        "millennium-bridge.claim.opening-day-attribution-limit"
+      ],
+      "criticalRegions": [
+        {
+          "height": 90,
+          "id": "disclosure",
+          "meaning": "Two-line model disclosure, separate from captions.",
+          "width": 690,
+          "x": 108,
+          "y": 280
+        },
+        {
+          "height": 650,
+          "id": "local-coherence",
+          "meaning": "Local pair within varied surrounding phases and active lateral response.",
+          "width": 675,
+          "x": 160,
+          "y": 810
+        }
+      ],
+      "explanation": "An oblique bridge remains active. One small local pair has closer phases while the surrounding walkers differ; this is an illustrative possibility, not reconstructed opening-day evidence.",
+      "id": "04-coherence-uncertainty",
+      "title": "Coordination can change the response."
+    },
+    {
+      "beatSuffixes": [
+        "energy-out"
+      ],
+      "camera": "damping",
+      "claimIds": [
+        "millennium-bridge.claim.damping-energy-removal",
+        "millennium-bridge.claim.damper-systems"
+      ],
+      "criticalRegions": [
+        {
+          "height": 90,
+          "id": "disclosure",
+          "meaning": "Two-line model disclosure, separate from captions.",
+          "width": 690,
+          "x": 108,
+          "y": 280
+        },
+        {
+          "height": 720,
+          "id": "damping-response",
+          "meaning": "Integrated bracing/dampers, walkers and residual response witnesses.",
+          "width": 710,
+          "x": 130,
+          "y": 800
+        }
+      ],
+      "explanation": "The same bridge vocabulary shifts to an underside-aware oblique view. Integrated viscous-damper abstractions connect deck and bracing; warm dissipative accents and tight, nonzero position witnesses suggest controlled response.",
+      "id": "05-damping-payoff",
+      "title": "The structure sheds energy."
+    }
+  ],
+  "kind": "original-vector-design-exploration",
+  "noCaptionPlan": true,
+  "noTimingOrProductionPlan": true,
+  "rendererSourcePaths": [
+    "src/design-exploration/millennium-bridge/frames.ts",
+    "src/design-exploration/millennium-bridge/review.ts"
+  ],
+  "revision": 1,
+  "thesis": "More physical, more cinematic, more human; one believable structural world with filled pedestrians, depth, contact-driven causality and restrained mechanism traces."
+}

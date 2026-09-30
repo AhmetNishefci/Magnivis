@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-09-30 — Record current editorial approval and reconstruct static Candidate 3 design direction
+
+**Decision:** Record Ahmet's explicit Milestone 2 approval against the exact Milestone 1 statement hashes and editorial/source/exclusion bindings, with actual current decision-entry time. Promote through the existing owner-controlled boundary to approved package/asset revision 1 and verified scoped claims. Produce five original deterministic SVG/PNG design frames covering six beats, independently gated from full video production.
+
+**Reason:** The final preferred historical direction was physical, cinematic and human. Rejected Candidate 1/2 media and original Candidate 3 design bytes were not recovered; copying their history would fabricate artifacts. Original vector sources with bundled Manrope glyph outlines, pinned Sharp/fontkit and new hashes provide reviewable replacements.
+
+**Consequences:** The current decision is not backdated. Historical review artifacts stay immutable; new approved snapshots are registered. Local critical-region checks use surviving YouTube Shorts V1 and TikTok V2 only; no YouTube V2 or lost Meta surface geometry is invented. Five static renders substitute for video smoke rendering in this explicitly bounded design milestone. Local AI-assisted visual QA is hash-bound and distinct from owner design/device approval. Full rendering/audio/captions, Meta QA, variants, deliveries and publication remain gated.
+
 ## 2026-09-30 — Reconstruct evidence before production after reset
 
 **Decision:** Rebuild Millennium Bridge research/editorial revision 1 on the authorized recovery branch using fresh authoritative-source inspection. Preserve the exact owner-supplied historical balance-feedback copy only after revalidation. Keep historical approval distinct from a fresh reconstruction decision and retain canonical supported-to-verified owner promotion semantics.
