@@ -35,7 +35,7 @@
     "soundscape:wood-frog": "node scripts/generate-wood-frog-audio.mjs",
     "narration": "node scripts/generate-narration.mjs",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src scripts tests remotion.config.ts",
+    "lint": "eslint src scripts tests remotion.config.ts vitest.config.ts",
     "test": "vitest run",
     "validate": "pnpm typecheck && pnpm lint && pnpm test",
     "check": "pnpm validate && git diff --check",

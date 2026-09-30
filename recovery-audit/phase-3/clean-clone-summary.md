@@ -6,4 +6,4 @@ pnpm install --frozen-lockfile succeeded with supported Node22/pnpm10.17.1. Full
 
 All eight committed QA recipes ran on restored durable media (no new video render), and **all 82 regenerable PNGs exactly matched their Phase 2 recovery identities**. New report timestamps are new recovery-generated evidence, not original files. Tracked clone tree stayed clean. Frame/QA/dependency workspaces remain ignored. All machine receipts and 20 command logs accompany this record.
 
-The final follow-up audit commit contains only proof/report documentation; artifact/source code is unchanged from the tested baseline. Recovery closure remains an owner decision. No Meta geometry/device pass or publication metadata was invented.
+The proof/report follow-up changes no production/artifact identities. A subsequent validation-only correction restricts Vitest discovery to tests/ so ignored nested proof clones do not duplicate the suite; it changes no production behavior. Recovery closure remains an owner decision. No Meta geometry/device pass or publication metadata was invented.

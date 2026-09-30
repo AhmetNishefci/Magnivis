@@ -9,3 +9,5 @@ Largest new artifact Earth to Stars: 42,978,901 bytes, below GitHub 50 MiB warni
 Canonical closure review: docs/RECOVERY-CLOSE-CANDIDATE.md. Brain audit: brain-integrity.md. Full/clean-clone validation, source/ignore/secret checks and retained unknowns accompany this audit. Recovery is not CLOSED; future owner-approved reconciliation into main is prepared only.
 
 Clean-clone proof PASSED at committed artifact baseline 6648d1b4650e7cad806a3726cdd293196596abe4: locked install, 253 tests/17 files, 110 durable identities, exact restore, eight packages, production/captions and 82 exact regenerated QA frames. Final follow-up adds proof records only. Main/evidence branch remain unchanged; closure recommendation requires owner review and explicit later merge authorization.
+
+Final verification discovered that default Vitest discovery included the ignored nested proof clone. vitest.config.ts now limits discovery to canonical tests/, preventing duplicate execution. The distinct suite remains 253 tests/17 files; no production behavior changed.
