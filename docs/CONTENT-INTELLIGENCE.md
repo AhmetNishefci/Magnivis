@@ -20,6 +20,18 @@ The workflow deliberately cannot convert generated research directly into an app
 
 Topic discovery is intentionally broader than science. Manual candidates may come from human behavior, philosophy, critical thinking, practical life skills, communication, relationships, business, economics, financial literacy, culture, history, technology, or any future legitimate domain. The existing open domain/topic slugs already support this; do not add a closed subject enum. Candidate evaluation should apply the topic identity, anti-self-help boundaries, evidence distinctions, diversity signals, and flexible formats defined in `docs/STRATEGY.md`.
 
+## Manual discovery cycle after recovery
+
+The first owner-authorized post-recovery discovery handoff is [Cycle #1, 2026-09-30](../content-intelligence/discovery/cycle-1-2026-09-30/owner-review.md). Its `discovery.json` contains 40 existing-schema TopicCandidates, per-candidate proposed triage and duplicate checks, 11 existing-schema TopicEvaluationDrafts and unreviewed feasibility source leads. It records manual session-assisted provenance; it is **not** a provider workflow envelope, fixture run or paid live execution. Classification follows idea discovery. The cycle-scoped registry is checked together with existing canonical candidates without changing historical registrations or approvals.
+
+Validate this discovery handoff with:
+
+```sh
+pnpm exec tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-1-2026-09-30/discovery.json
+```
+
+The read-only validator checks schema, identity collisions, candidate dates/states, complete triage, finalist/evaluation revisions, dated source leads and the pending owner-selection gate. It does not verify factual claims or call a provider. The existing topic-specific CLI remains unchanged; this manual discovery boundary does not require creating a ResearchWorkspace or package for every proposed topic. Evaluations recommending `research` are conditional proposals; no research begins before owner selection and authorization. No selected topic or owner decision exists in this handoff.
+
 ## First real operator trial
 
 The first new topic is `topic.wood-frog-freeze`: **How wood frogs survive being frozen**. It was selected because the stopped-heart/recovery contradiction is immediately understandable, the physical and chemical mechanism has strong visual potential, and peer-reviewed plus government sources can support a focused evergreen short.

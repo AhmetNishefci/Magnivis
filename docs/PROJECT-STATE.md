@@ -1,5 +1,11 @@
 # Project state
 
+## New content cycle #1 — discovery only, 2026-09-30
+
+Ahmet separately authorized the first fresh discovery cycle after closed recovery. The owner-selection handoff is [content-intelligence/discovery/cycle-1-2026-09-30/owner-review.md](../content-intelligence/discovery/cycle-1-2026-09-30/owner-review.md): 40 distinct manual AI-assisted TopicCandidates, 11 categorical evaluation drafts, lightweight source reconnaissance and per-candidate duplicate checks. All candidates remain evaluating; owner selection is pending and no topic is approved. No full research, script, narration, CaptionPlan, production asset, render, variant, delivery or platform action has begun. Next gate: Ahmet selects a story and authorizes bounded KnowledgePackage research. Recovery remains CLOSED; Bridge and Universe long-form remain excluded from this cycle.
+
+The recovery-close record below describes the starting authorization state; its request for separate discovery authorization is now satisfied by this cycle. Its production/publication restrictions and historical evidence remain intact.
+
 Current recovery: CLOSED operationally after owner-authorized main reconciliation; historical gaps remain accepted and documented in RECOVERY.md. Checkpoint: ae797996382c337759612265fd8229e8d5f06eef, through Wood Frog. Source and historical approvals survive; reset/lost binary state is not erased. Preserved evidence branch: recovery/magnivis-post-reset. Millennium Bridge work is excluded; no new production is active or authorized.
 
 Wood Frog latest pre-reset upload occurrence is owner-confirmed. Platform, URL/ID, timestamp, visibility, uploaded hash, settings and analytics remain unknown. Existing registry has one generalized Speed of Light publication; earlier YouTube URLs remain legacy records. No new PublicationRecord is invented.
