@@ -103,3 +103,13 @@ All distribution remains a separate manual, human-approved operation.
 ## Presentation surfaces and recovery
 
 PlatformVariant does not prove every mobile/web/feed/grid presentation. PLATFORM-QA.md owns the new typed surface/profile/cover/device evidence layer. Original variants and geometry remain historical checkpoint definitions; persisted recovery variants in artifacts/deliveries.json remain draft. Exact recovered artifacts are identified independently in artifacts/manifests.json. YouTube V2 new-production policy is separate from historical V1-bound media; Meta geometry is pending renewed evidence. No derivative is automatically generated.
+
+## Phantom Traffic review variants
+
+Four exact-master variants reference owner-visual-approved ProductionPlan revision 2 and unchanged CaptionPlan revision 1/hash. Status is editorial-review, previewStatus ready-for-private-preview, and platformPreviewRequired true. Presentation records distinguish playback from Instagram grid/Facebook Page/feed and YouTube desktop. No production-ready status or upload permission follows from file readiness.
+
+Registry validation now permits explicitly versioned YouTube V1/V2 bindings: existing V1 variants remain unchanged; new Phantom Traffic selects the documented V2 default with its provisional authority. This changes compatibility routing, not geometry or device trust.
+
+## Adaptive creative direction — future content
+
+Adaptive execution never weakens MASTER → PLATFORM VARIANT → PRESENTATION SURFACE. CreativeDirection records presentation considerations, not measured geometry/device success. New typography/visual treatments still require region, readability and real-device review; unknown geometry stays unknown. Phantom Traffic variants, profiles and QA evidence are unchanged by this system milestone.

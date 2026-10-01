@@ -61,9 +61,21 @@ export const sourceRecordSchema = z.object({
 
 const reviewMetadataSchema = z.object({
   reviewedBy: z.string().min(1),
-  reviewedAt: z.iso.date(),
+  reviewedAt: z.iso.date().optional(),
+  decisionEnteredAt: z.iso.datetime().optional(),
+  reviewTimeBasis: z.literal('decision-entry').optional(),
   notes: z.string().min(1).optional(),
-}).strict();
+}).strict().superRefine((review, context) => {
+  if (!review.reviewedAt && !review.decisionEnteredAt) {
+    context.addIssue({code: 'custom', message: 'Human review needs a supplied review date or explicit decision-entry time'});
+  }
+  if (review.decisionEnteredAt && (review.reviewTimeBasis !== 'decision-entry' || review.reviewedAt)) {
+    context.addIssue({code: 'custom', message: 'Decision-entry time must be labeled and cannot impersonate a supplied review date'});
+  }
+  if (review.reviewTimeBasis && !review.decisionEnteredAt) {
+    context.addIssue({code: 'custom', message: 'Decision-entry basis requires its entry timestamp'});
+  }
+});
 
 const evidenceReferenceSchema = z.object({
   sourceId: stableKnowledgeIdSchema,
@@ -132,17 +144,8 @@ export const claimSchema = z
     }
   });
 
-export const hookArchetypeSchema = z.enum([
-  'surprising-statement',
-  'question',
-  'contradiction',
-  'misconception',
-  'impossible-sounding-fact',
-  'scenario',
-  'consequence',
-  'mystery',
-  'comparison',
-]);
+// Open normalized archetypes preserve historical labels without freezing hook mechanisms.
+export const hookArchetypeSchema = z.string().regex(/^[a-z]+(?:-[a-z]+)*$/);
 
 const hookVariantSchema = z.object({
   id: stableKnowledgeIdSchema,
@@ -167,9 +170,15 @@ const caveatSchema = z.object({
 
 const approvalSchema = z.object({
   approvedBy: z.string().min(1),
-  approvedAt: z.iso.date(),
+  approvedAt: z.iso.date().optional(),
+  decisionEnteredAt: z.iso.datetime().optional(),
+  reviewTimeBasis: z.literal('decision-entry').optional(),
   notes: z.string().min(1).optional(),
-}).strict();
+}).strict().superRefine((approval, context) => {
+  if (!approval.approvedAt && !approval.decisionEnteredAt) context.addIssue({code: 'custom', message: 'Approval requires supplied date or labeled decision-entry time'});
+  if (approval.decisionEnteredAt && (approval.approvedAt || approval.reviewTimeBasis !== 'decision-entry')) context.addIssue({code: 'custom', message: 'Decision-entry time cannot impersonate owner-supplied approval time'});
+  if (approval.reviewTimeBasis && !approval.decisionEnteredAt) context.addIssue({code: 'custom', message: 'Decision-entry basis needs timestamp'});
+});
 
 const duplicateValues = (values: readonly string[]) => {
   const seen = new Set<string>();

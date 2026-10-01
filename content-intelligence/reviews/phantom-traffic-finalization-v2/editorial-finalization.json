@@ -1,0 +1,60 @@
+{
+  "assetId": "phantom-traffic.asset.backward-wave",
+  "assetRevision": 2,
+  "assetSha256": "f32567b296fcdb1ab9a893db76290996dccbe10968fd6e22854348f55c07e6ff",
+  "baseCommit": "a8b3b18e9b35261975a8c4c61fc6e84535a302ce",
+  "changes": [
+    "Only narration segment 3 wording changed.",
+    "Six approved claim statements promoted to verified with explicit decision-entry metadata; source/evidence/caveat wording unchanged.",
+    "Conceptual visuals refined for muted comprehension and physical reconstruction; no implementation or assets."
+  ],
+  "excludedClaims": 11,
+  "finalExactNarration": "The cars move forward. But a traffic jam can move backward.\n\nResearchers put twenty-two cars on a circular track. No obstruction. Yet stop-and-go traffic formed.\n\nIn dense traffic, small speed changes can sometimes grow as drivers adjust to the cars ahead.\n\nCars join the slow patch at the back and leave at the front.\n\nThe cars change. The pattern moves backward.\n\nNot every jam starts this way. But this kind needs no blocked road.",
+  "id": "editorial-finalization.phantom-traffic.v2",
+  "ownerDecisionId": "owner-decision.phantom-traffic.editorial-components.v1",
+  "ownerDecisionSha256": "92a76a9ca55983dd8dd619dfe776feba4f2782c8df1e97c792e372e740a6078e",
+  "packageId": "phantom-traffic",
+  "packageRevision": 2,
+  "packageSha256": "45024c0ebe391ff32383879cc950272f07622c3ff3eaa4c5f0facfa37281cebb",
+  "preparedAt": "2026-09-30T22:31:14.582Z",
+  "productionAuthorized": false,
+  "provenance": {
+    "method": "manual-ai-assisted-editorial-finalization",
+    "operator": "Codex",
+    "ownerReviewTimestampSupplied": false,
+    "paidApiUsed": false,
+    "workflowEnvelope": false
+  },
+  "publicationAuthorized": false,
+  "remainingSupportedReserveClaims": 13,
+  "reviewId": "claim-review.phantom-traffic.v2",
+  "reviewSha256": "5595f88520009501c40edcfef8c980f7060c3fd06a383c372b31edbb122f3b29",
+  "runtimeEstimate": {
+    "intendedSeconds": {
+      "maximum": 40,
+      "minimum": 34
+    },
+    "method": "word-rate estimate, not generated or measured audio",
+    "pauseIntent": "Give the zoomed-out backward-pattern reveal a brief perceptual pause; do not rush to a word-count target.",
+    "spokenSeconds": {
+      "maximum": 31.714285714285715,
+      "minimum": 29.6
+    },
+    "wordsPerMinute": {
+      "maximum": 150,
+      "minimum": 140
+    }
+  },
+  "schemaVersion": 1,
+  "scriptSha256": "1c5b5af5abb0e9522cd199a2f79d2f863a9f94c742437041c76cb703978ea87e",
+  "state": "awaiting-final-exact-narration-and-editorial-package-approval",
+  "verifiedClaimIds": [
+    "phantom-traffic.claim.backward-pattern",
+    "phantom-traffic.claim.vehicles",
+    "phantom-traffic.claim.no-obstruction",
+    "phantom-traffic.claim.conditional-growth",
+    "phantom-traffic.claim.turnover",
+    "phantom-traffic.claim.bottleneck-distinction"
+  ],
+  "wordCount": 74
+}

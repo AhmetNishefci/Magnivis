@@ -1,0 +1,50 @@
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import {readFileSync} from 'node:fs';
+import {z} from 'zod';
+import {validatePhantomTrafficLockedMaster} from '../src/production/phantom-traffic-master-integrity';
+import {fileSha256} from '../src/production/phantom-traffic-integrity';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {presentationQaSchema,presentationProfileSchema,coverAssetSchema,presentationOutputSchema,realDevicePassed} from '../src/platform-variants/presentation';
+import {assessPhantomTrafficSurface,phantomTrafficRegions} from '../src/platform-variants/phantom-traffic-regions';
+import {phantomTrafficPlatformVariants} from '../src/platform-variants/variants/phantom-traffic';
+import {createPlatformVariantRegistry} from '../src/platform-variants/registry';
+import profilesData from '../artifacts/presentation-profiles.json';
+const master=validatePhantomTrafficLockedMaster();
+const dir='content-intelligence/reviews/phantom-traffic-platform-v1';
+const originalProfiles=execFileSync('git',['show','92fbe8611ac7ee21a15ec5da19f422ef2fccf741:artifacts/presentation-profiles.json']);
+if(createHash('sha256').update(originalProfiles).digest('hex')!==fileSha256('artifacts/presentation-profiles.json'))throw new Error('Surviving presentation evidence must remain unchanged');
+const profiles=profilesData.map(p=>presentationProfileSchema.parse(p));
+const records=z.array(presentationQaSchema).parse(JSON.parse(readFileSync('artifacts/presentation-qa.json','utf8'))).filter(r=>r.id.startsWith('presentation-qa.phantom-traffic.'));
+if(records.length!==7||new Set(records.map(r=>`${r.surface}:${r.context}`)).size!==7)throw new Error('Distinct presentation contexts must all be recorded');
+const variantSnapshot=JSON.parse(readFileSync(`${dir}/platform-variants.json`,'utf8'));
+if(sha256Json(variantSnapshot)!==sha256Json(phantomTrafficPlatformVariants))throw new Error('Stale platform variant snapshot');
+createPlatformVariantRegistry(phantomTrafficPlatformVariants);
+for(const v of phantomTrafficPlatformVariants)if(v.status!=='editorial-review'||v.previewStatus!=='ready-for-private-preview'||v.approval||!v.productionIntent.platformPreviewRequired||v.sourceMaster?.artifact.sha256!==master.artifact.sha256)throw new Error('Platform approval/readiness fabricated');
+const reportSchema=z.object({model:z.string(),qa:presentationQaSchema,profileSnapshotSha256:z.string(),preview:z.object({path:z.string(),sha256:z.string()}),sourceFrames:z.array(z.object({path:z.string(),sha256:z.string()}).passthrough()),assessment:z.unknown()}).passthrough();
+const reports=z.array(reportSchema).parse(JSON.parse(readFileSync(`${dir}/surface-reports.json`,'utf8')));
+if(reports.length!==7)throw new Error('Missing surface QA reports');
+for(const r of records){
+ const report=reports.find(p=>p.qa.id===r.id),profile=profiles.find(p=>p.id===r.profileId)!;
+ if(!report||sha256Json(report.qa)!==sha256Json(r)||report.profileSnapshotSha256!==sha256Json(profile))throw new Error('Surface/profile evidence binding mismatch');
+ if(r.mediaSha256!==master.artifact.sha256||r.device||r.testedAt||r.reviewer||r.os||r.appVersion||realDevicePassed(records,r.surface,r.mediaSha256,r.coverSha256))throw new Error('Fabricated real-device evidence');
+ for(const f of [report.preview,...report.sourceFrames])if(fileSha256(f.path)!==f.sha256)throw new Error(`Changed QA evidence: ${f.path}`);
+ if(r.context==='mobile-app'){
+  const assessment=assessPhantomTrafficSurface(profile);
+  if(sha256Json(report.assessment)!==sha256Json(assessment))throw new Error('Geometry assessment changed');
+  if(assessment.insetContainment?.some(c=>!c.contained)||assessment.nativeAssessment.violations.length)throw new Error('Known inset collision');
+  if(profile.captionRegion!==null||profile.exclusionZones!==null)throw new Error('Unexpected invented native geometry');
+ }
+}
+const covers=z.array(coverAssetSchema).parse(JSON.parse(readFileSync('artifacts/cover-assets.json','utf8')));
+const cover=covers.find(c=>c.id==='phantom-traffic.instagram-cover.v1');
+if(!cover||cover.crop!==null||cover.status!=='review'||cover.approvalDecisionId||cover.sourceVideoSha256!==master.artifact.sha256||fileSha256('artifacts/covers/phantom-traffic-instagram-cover-v1.png')!==cover.sha256)throw new Error('Cover source/identity/gate mismatch');
+if(records.find(r=>r.surface==='instagram-profile-grid')?.coverSha256!==cover.sha256)throw new Error('Grid evidence not bound to the cover candidate');
+const outputs=z.array(presentationOutputSchema).parse(JSON.parse(readFileSync(`${dir}/presentation-outputs.json`,'utf8')));
+if(outputs.length!==7||outputs.some(o=>o.derivativeArtifactId)||outputs.filter(o=>o.strategy==='MASTER_PLUS_COVER').length!==1)throw new Error('Unjustified adaptations created');
+const regions=JSON.parse(readFileSync(`${dir}/critical-regions.json`,'utf8'));
+if(sha256Json(regions)!==sha256Json(phantomTrafficRegions))throw new Error('Critical/caption/disclosure regions drifted');
+const receipt=JSON.parse(readFileSync(`${dir}/platform-bindings.json`,'utf8')) as {artifacts:{path:string;sha256:string}[];sources:{path:string;sha256:string}[];coverDeterminism:{sha256:string;repeatSha256:string};modelDeterminism:{sha256:string;repeatSha256:string}};
+for(const file of [...receipt.artifacts,...receipt.sources])if(fileSha256(file.path)!==file.sha256)throw new Error(`Bound platform artifact changed: ${file.path}`);
+for(const check of [receipt.coverDeterminism,receipt.modelDeterminism])if(check.sha256!==check.repeatSha256)throw new Error('Local candidate determinism failed');
+console.log(JSON.stringify({passed:true,lockedMaster:master.artifact,platformVariants:phantomTrafficPlatformVariants.map(v=>({id:v.id,status:v.status,previewStatus:v.previewStatus})),surfaces:7,knownInsetCollisions:0,fullGeometryStatus:'INCOMPLETE / UNMEASURED',coverCandidate:cover.sha256,videoDerivatives:0,realDevicePasses:0,platformApprovalGranted:false,publicationApprovalGranted:false},null,2));

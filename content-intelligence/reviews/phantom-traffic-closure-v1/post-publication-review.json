@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "state": "OWNER_REPORTED_POST_PUBLICATION_APPROVED",
+  "previousStage": "content-intelligence/reviews/phantom-traffic-publication-v1/post-publication-review.json",
+  "decision": {
+    "id": "owner-decision.phantom-traffic.closure.v1",
+    "revision": 1,
+    "sha256": "61be6d20975ec5eed6e540a3a5090d1401f6d3790eb786ec4fe8cdb4189384af"
+  },
+  "publicationOccurred": "owner-reported",
+  "platformContextScope": {
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "contexts": [
+      "desktop/web where applicable",
+      "mobile where applicable"
+    ],
+    "individuallyNamedSurfaces": []
+  },
+  "measuredQaGranted": false,
+  "previousSurfaces": [
+    {
+      "surface": "youtube-shorts-viewer",
+      "state": "NOT_TESTED",
+      "url": null,
+      "device": null,
+      "appVersion": null,
+      "observedAt": null,
+      "evidence": [],
+      "ownerPlatformLevelApproval": "reported-desktop-and-mobile-where-applicable",
+      "individualSurfaceEvidence": "not-separately-enumerated",
+      "measuredState": "NOT_TESTED"
+    },
+    {
+      "surface": "youtube-desktop-web",
+      "state": "NOT_TESTED",
+      "url": null,
+      "device": null,
+      "appVersion": null,
+      "observedAt": null,
+      "evidence": [],
+      "ownerPlatformLevelApproval": "reported-desktop-and-mobile-where-applicable",
+      "individualSurfaceEvidence": "not-separately-enumerated",
+      "measuredState": "NOT_TESTED"
+    },
+    {
+      "surface": "tiktok-feed",
+      "state": "NOT_TESTED",
+      "url": null,
+      "device": null,
+      "appVersion": null,
+      "observedAt": null,
+      "evidence": [],
+      "ownerPlatformLevelApproval": "reported-desktop-and-mobile-where-applicable",
+      "individualSurfaceEvidence": "not-separately-enumerated",
+      "measuredState": "NOT_TESTED"
+    },
+    {
+      "surface": "instagram-reels-playback",
+      "state": "NOT_TESTED",
+      "url": null,
+      "device": null,
+      "appVersion": null,
+      "observedAt": null,
+      "evidence": [],
+      "ownerPlatformLevelApproval": "reported-desktop-and-mobile-where-applicable",
+      "individualSurfaceEvidence": "not-separately-enumerated",
+      "measuredState": "NOT_TESTED"
+    },
+    {
+      "surface": "instagram-profile-grid",
+      "state": "NOT_TESTED",
+      "url": null,
+      "device": null,
+      "appVersion": null,
+      "observedAt": null,
+      "evidence": [],
+      "ownerPlatformLevelApproval": "reported-desktop-and-mobile-where-applicable",
+      "individualSurfaceEvidence": "not-separately-enumerated",
+      "measuredState": "NOT_TESTED"
+    },
+    {
+      "surface": "facebook-reels-viewer",
+      "state": "NOT_TESTED",
+      "url": null,
+      "device": null,
+      "appVersion": null,
+      "observedAt": null,
+      "evidence": [],
+      "ownerPlatformLevelApproval": "reported-desktop-and-mobile-where-applicable",
+      "individualSurfaceEvidence": "not-separately-enumerated",
+      "measuredState": "NOT_TESTED"
+    },
+    {
+      "surface": "facebook-page-feed",
+      "state": "NOT_TESTED",
+      "url": null,
+      "device": null,
+      "appVersion": null,
+      "observedAt": null,
+      "evidence": [],
+      "ownerPlatformLevelApproval": "reported-desktop-and-mobile-where-applicable",
+      "individualSurfaceEvidence": "not-separately-enumerated",
+      "measuredState": "NOT_TESTED"
+    }
+  ],
+  "remainingEvidenceGaps": [
+    "TikTok public permalink/video ID missing; Studio URL is not a public video identity.",
+    "Publication and presentation are owner-reported, not independently captured/verified.",
+    "Public page retrieval attempted but all three requests returned cache miss; no page content, posting time or metrics inspected.",
+    "Broad platform/context approval does not supply separate grid/feed/cover measurements or individually named surface tests.",
+    "Actual account handles (except surviving Instagram identity), exact upload settings and platform-transcoded byte hashes remain unknown."
+  ],
+  "operationalCycleState": "COMPLETE",
+  "closureBlocked": false
+}

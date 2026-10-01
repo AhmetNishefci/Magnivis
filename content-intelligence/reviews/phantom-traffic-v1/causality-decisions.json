@@ -1,0 +1,48 @@
+{
+  "decisions": [
+    {
+      "proposedPhrase": "One tiny brake tap can create a traffic jam.",
+      "reason": "Use the exact conditional-growth claim. A possible small perturbation is not an experimentally established particular brake tap or guaranteed trigger.",
+      "recommendation": "revise",
+      "replacementOrExclusionClaimId": "phantom-traffic.claim.conditional-growth"
+    },
+    {
+      "proposedPhrase": "A traffic jam can appear from nothing.",
+      "reason": "No obstruction is not no mechanism or cause.",
+      "recommendation": "reject",
+      "replacementOrExclusionClaimId": "phantom-traffic.claim.from-nothing"
+    },
+    {
+      "proposedPhrase": "Drivers overreact and create traffic.",
+      "reason": "Blame and a sole-cause explanation are unjustified; responses can amplify under some conditions.",
+      "recommendation": "reject",
+      "replacementOrExclusionClaimId": "phantom-traffic.claim.driver-blame"
+    },
+    {
+      "proposedPhrase": "Reaction time causes phantom traffic jams.",
+      "reason": "Delay is one influence; finite acceleration, anticipation and following behavior also affect stability.",
+      "recommendation": "revise",
+      "replacementOrExclusionClaimId": "phantom-traffic.claim.reaction-not-only"
+    },
+    {
+      "proposedPhrase": "The jam travels backward.",
+      "reason": "A slow/stopped congestion pattern can travel upstream relative to the road. Not all queue boundaries behave identically.",
+      "recommendation": "qualify",
+      "replacementOrExclusionClaimId": "phantom-traffic.claim.backward-pattern"
+    },
+    {
+      "proposedPhrase": "Nobody caused the traffic jam.",
+      "reason": "No unique initiator identified does not establish an absence of causes or human contributions.",
+      "recommendation": "reject",
+      "replacementOrExclusionClaimId": "phantom-traffic.claim.nobody-caused"
+    },
+    {
+      "proposedPhrase": "Traffic jams are waves.",
+      "reason": "Some stop-and-go patterns and queue boundaries propagate as waves. A jam is not universally one spontaneously generated backward wave.",
+      "recommendation": "qualify",
+      "replacementOrExclusionClaimId": "phantom-traffic.claim.shockwave"
+    }
+  ],
+  "ownerApproved": false,
+  "schemaVersion": 1
+}

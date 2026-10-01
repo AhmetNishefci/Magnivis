@@ -39,3 +39,21 @@ Before trusting a new profile: authorize private preview separately; record exac
 Required distinct reviews: YouTube mobile Shorts plus desktop; TikTok mobile feed plus cover; Instagram Reel playback plus profile/grid/cover; Facebook dedicated viewer plus Page/feed. Ask whether a single master works, whether cover solves the issue, or whether measured derivative is necessary. Do not shrink every master into one restrictive rectangle or create unnecessary renders. Changed UI requires a new version, preserved failed/superseded evidence and renewed review. Private preview is an external action requiring separate explicit approval; none is authorized/executed in recovery.
 
 Operator geometry regression: `pnpm platform:qa <critical-regions.json>` checks explicit rectangles against all ACTIVE profiles. It exits nonzero for collisions or incomplete/unmeasured geometry; its output never grants real-device approval. The new-production YouTube default token is `newProductionSafeAreaProfileIds.youtubeShorts`; existing immutable tokens retain V1.
+
+## Phantom Traffic platform milestone
+
+The exact owner-approved master is unchanged at `artifacts/masters/phantom-traffic-candidate-v1.mp4`; logical identity `phantom-traffic.locked-master.v1` is separately recorded with owner-visual scope. Four variants remain editorial-review/ready-for-private-preview; seven distinct context/surface records are local models or pending previews. No upload or device approval. See [owner handoff](../content-intelligence/reviews/phantom-traffic-platform-v1/owner-review.md) and [simple real-device checklist](../content-intelligence/reviews/phantom-traffic-platform-v1/real-device-checklist.md).
+
+Authored region kinds now explicitly distinguish `critical-visual` and `disclosure` from captions/decorative content. Surviving profile geometry remains byte-identical. Native profile regression remains INCOMPLETE because caption regions/exclusion zones are unknown; no gate is weakened. `node --import tsx scripts/validate-traffic-platform-qa.ts` verifies source/evidence integrity and pending state, never grants platform readiness. Instagram has one original cover candidate with null crop; Facebook feed has no speculative derivative.
+
+
+## Phantom Traffic owner publication exception
+
+Ahmet explicitly accepts the uncompleted six-surface review and authorizes manual publication of this exact locked release. This is an exception recorded in `content-intelligence/reviews/phantom-traffic-publication-v1/owner-decision.json`, not a profile/device pass and not a new universal gate policy. The original cover is selected for publication without claiming device testing. Existing local QA, unknown geometry and historical reports remain unchanged.
+
+Review moves after live publication for YouTube mobile/desktop, TikTok mobile, Instagram playback/grid and Facebook viewer/Page-feed, plus any materially different observed surface. Record actual URL/media identity, observation, context and strongest available evidence; unknown metadata stays unknown. Qualitative owner reports can support observations, not invented coordinates. Append evidence and distinguish hypotheses from verified profile revisions. Lessons may influence future safe-area, caption, critical-region, cover or derivative engineering. Do not modify published Phantom Traffic without explicit remediation authorization or turn its art direction into a template.
+
+
+## Phantom Traffic postpublication learning
+
+Owner reports correct live desktop/web and mobile presentation where applicable across all four target platforms. Durable record: content-intelligence/reviews/phantom-traffic-closure-v1/owner-live-presentation.json. It is platform/context-level owner evidence, not a measured device capture or individually enumerated grid/feed pass. Historical local/prepublication records stay unchanged; operational review is complete with measured gaps preserved. No profile coordinates or renderer defaults change. Future stories must independently check captions, critical regions and covers; reported success is a hypothesis for applicable engineering, never automatic safe-area truth or art-direction reuse.

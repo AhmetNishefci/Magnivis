@@ -1,3 +1,4 @@
+import {phantomTrafficKnowledgePackage} from './packages/phantom-traffic';
 import {speedOfLightKnowledgePackage} from './packages/speed-of-light';
 import {oceanDepthKnowledgePackage} from './packages/ocean-depth';
 import {woodFrogApprovedKnowledgePackage} from './packages/wood-frog-approved';
@@ -81,6 +82,7 @@ export type KnowledgePackageRegistry = ReturnType<typeof createKnowledgePackageR
 
 export const knowledgePackageRegistry = createKnowledgePackageRegistry([
   oceanDepthKnowledgePackage,
+  phantomTrafficKnowledgePackage,
   speedOfLightKnowledgePackage,
   woodFrogApprovedKnowledgePackage,
 ]);

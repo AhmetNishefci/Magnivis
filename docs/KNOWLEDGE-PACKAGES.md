@@ -91,3 +91,11 @@ The editorial script belongs to ContentAsset. Exact scene timing, narration file
 - Databases, queues, workers, APIs, dashboards, or CMS
 
 These remain planned boundaries, not implemented features.
+
+## Component claim approval without a supplied review date
+
+For traffic waves, an explicit owner decision approved six exact narration claims while leaving final wording and the complete editorial package pending. The native scoped-decision boundary promotes only those claims and records an explicit decision-entry timestamp. Claim review metadata may use `decisionEnteredAt` with `reviewTimeBasis: decision-entry` when no owner review date was supplied; it must not also pretend that entry time is a supplied `reviewedAt`. Existing human supplied-date records remain unchanged. That historical revision 2 package remains `review` and has no full approval metadata. The later explicit full editorial lock at commit `21c3a5539cf02b1c4a88b8ff89aca0139a7ec079` produces approved revision 3 without changing any claim/evidence/caveat. Package and asset approval metadata now also support labeled `decisionEnteredAt`/`reviewTimeBasis: decision-entry`, mutually exclusive with supplied `approvedAt`; legacy supplied dates remain valid. Deferred reserve claims remain `supported`; excluded formulations remain unverified and rejected. Exact-state bindings and tests prevent approval being transferred to changed evidence or wording.
+
+## Adaptive hook mechanisms
+
+Future hook archetypes are open normalized slugs; existing labels and historical packages remain unchanged. Classify the actual story mechanism rather than forcing a question or another historical formula. Hook claim bindings and owner editorial selection remain mandatory; CreativeDirection cannot silently replace the approved hook. See CREATIVE-DIRECTION.md.

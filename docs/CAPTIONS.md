@@ -38,7 +38,7 @@ When an approved rhetorical em or en dash is better communicated by a phrase tra
 
 Styled segmentation is text-preserving: emphasized and normal fragments are sliced directly from the source line, must reconstruct it byte-for-byte, and are each rendered with explicit whitespace preservation. Emphasis sizing participates in inline layout rather than using transforms that can paint over adjacent source spaces. Never repair a visual spacing defect by changing approved narration or inserting spaces that are not present in the source.
 
-## Design system
+## Historical V1 design system
 
 `caption-design.magnivis-short-form.v1` uses existing Magnivis typography and palette. It favors phrase-level chunks, a maximum of two lines, strong contrast, a restrained backdrop, and selective semantic emphasis. It does not use per-word bouncing, arbitrary colors, random sizes, emoji, or unrestricted motion.
 
@@ -55,9 +55,9 @@ The V1 placement vocabulary is:
 
 Both placement rectangles are validated against the active registered safe-area profile. The Wood Frog master is also checked against YouTube Shorts V1, TikTok V2, Instagram Reels V1, and Facebook Reels V1. Actual platform UI still requires private real-device review.
 
-## AI art-direction boundary
+## Historical V1 AI art-direction boundary
 
-A future AI workflow may propose phrase grouping, line breaks, emphasis, placement, one allowed animation treatment, and an explicit rhetorical-dash phrase transition. It may not invent or remove words, alter claims, remove meaningful hyphens, invent punctuation that changes meaning, or bypass fonts, colors, sizes, placement regions, animations, or safety rules. AI provenance must be recorded and every proposal must pass the same canonical-reconstruction, timing, schema, and safe-area validation before rendering. AI output never grants editorial, visual, platform, or publication approval.
+When explicitly selecting the historical V1 treatment, an AI workflow may propose phrase grouping, line breaks, emphasis, placement, one allowed animation treatment, and an explicit rhetorical-dash phrase transition. It may not invent or remove words, alter claims, remove meaningful hyphens, invent punctuation that changes meaning, or bypass fonts, colors, sizes, placement regions, animations, or safety rules. AI provenance must be recorded and every proposal must pass the same canonical-reconstruction, timing, schema, and safe-area validation before rendering. AI output never grants editorial, visual, platform, or publication approval.
 
 ## Accessibility relationship
 
@@ -96,3 +96,7 @@ PLATFORM-QA.md owns distinct caption-region/native-overlay/device checks. Checkp
 ## Per-video caption judgment
 
 Designed captions are editorial/visual storytelling, not automatic subtitle dumps. Choose phrase grouping, emphasis, hierarchy, line breaks, timing, placement and restrained treatment for each video's spoken rhythm, hook, pacing, composition, readability, curiosity, retention, comprehension and semantic/emotional payoff. Prefer meaningful speech units over arbitrary word counts. Preserve approved narration meaning, wording/provenance and timing; never introduce claim-changing caption clickbait. Wood Frog is a quality reference, not a rigid universal pattern. CaptionPlan remains first-class and designed captions remain critical content requiring independent presentation QA. Future treatment changes still require the relevant approval gates; recovery changes no existing captions.
+
+## Adaptive creative direction — future content
+
+CREATIVE-DIRECTION.md supersedes the V1 design vocabulary as a universal future styling restriction. The three animations, two placements, ice/gold emphasis, Manrope/Space Grotesk and backplate remain immutable V1 execution for historical plans. Future V2 authoring in src/captions/adaptive-plan.ts chooses appearance/renderer explicitly and preserves exact narration, timing, source boundaries and authored bounds. No speculative renderer is implemented here; future rendering must validate typography fit, accessibility and platform/native-UI safety. Semantics are reusable; visual style is a per-story decision. Between spoken phrases visual moments may breathe without captions; spoken qualifications remain covered.

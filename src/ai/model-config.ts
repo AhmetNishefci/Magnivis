@@ -16,6 +16,9 @@ export type WorkflowModelConfig = z.infer<typeof workflowModelConfigSchema>;
 const defaultOpenAIModel = 'gpt-5.4-mini';
 
 export const openAIWorkflowModelConfig = Object.freeze({
+  'workflow.creative-direction': workflowModelConfigSchema.parse({
+    model: defaultOpenAIModel, reasoningEffort: 'medium', maxOutputTokens: 6000,
+  }),
   'workflow.topic-evaluation': workflowModelConfigSchema.parse({
     model: defaultOpenAIModel,
     reasoningEffort: 'low',

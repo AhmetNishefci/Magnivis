@@ -1,3 +1,5 @@
+import {phantomTraffic} from '../src/content/videos/phantom-traffic';
+import {phantomTrafficCaptionPlan} from '../src/captions/plans/phantom-traffic';
 import {billionDollars} from '../src/content/videos/billion-dollars';
 import {earthToStars} from '../src/content/videos/earth-to-stars';
 import {humanEngineering} from '../src/content/videos/human-engineering';
@@ -14,6 +16,7 @@ const woodFrogCaptionQaTimestamps = woodFrogCaptionPlan.cues.map(({startFrame, e
 ));
 
 export const videoTargets = {
+  [phantomTraffic.id]: {spec:phantomTraffic,output:'output/phantom-traffic-narrated.mp4',qaDirectory:'qa/phantom-traffic-narrated',qaTimestamps:[...new Set([0,0.5,1,1.5,6,8,10.5,13.5,16.5,19.5,21.5,24.5,26.8,29.5,33.8,...phantomTrafficCaptionPlan.cues.map(c=>Number(((c.startFrame+c.endFrame)/60).toFixed(3)))])].sort((a,b)=>a-b)},
   [earthToStars.id]: {
     spec: earthToStars,
     output: `output/${earthToStars.id}-narrated.mp4`,

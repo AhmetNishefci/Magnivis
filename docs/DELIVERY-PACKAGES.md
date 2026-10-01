@@ -110,3 +110,15 @@ YouTube, Instagram, and Facebook package the exact locked master. TikTok package
 ## Restored recovery handoffs
 
 Eight Phase 1 draft package file sets are restored byte-for-byte relative to their recovery identities under `deliveries/recovered/`, with Git provenance in artifacts/deliveries.json and per-file manifests. These are DERIVED_RECOVERY_ARTIFACT, not exact historical packages. `pnpm recovery:validate` checks restored package media/copy/checklists/metadata/captions/source gates through the existing validator using persisted recovery variants, without requiring staging. All remain draft-review/publication false. New master replacement acceptance is recorded separately; it does not rewrite the package's historical approval relationships or grant platform readiness.
+
+
+## Owner-reported presentation decisions
+
+A qualitative real-device owner acceptance may lack device/app/test time or screenshots. Preserve that statement in an exact-master/variant-bound owner decision with labeled decision-entry time; never populate missing metadata. Specific surfaces and an exact cover require explicit scope confirmation. Unspecified “relevant surfaces” cannot populate individual passes. `OWNER_REPORTED_PASSED` records are separate from measured `REAL_DEVICE_PASSED` evidence; the latter still requires its original metadata. Approval may use decision-entry time plus a hashed owner decision instead of inventing an owner review date.
+
+An exact-master variant may use hash-bound authored content bounds and local report evidence to demonstrate containment in known profile insets when entire authoring envelopes differ. Validate every nondecorative region, source media/variant/profile and evidence hashes. This is local containment only, never a native UI/crop pass or device acceptance. Registered cover assets are copied with exact hashes into a package only when explicitly selected. Draft-review packages remain nonpublishable; final technical readiness never grants publication authorization.
+
+
+## Explicit owner acceptance of presentation uncertainty
+
+An owner can explicitly authorize a specific release without completing prepublication device review. Record a separate exact-hash-bound publication decision and `presentationRiskAcceptance`; do not create device passes or rewrite prior evidence. `owner-risk-accepted` preview status requires matching owner decision approval and removes the prepublication blocker only for that release. Production readiness reflects owner acceptance, not measurement. Final manifests remain generated handoffs: their `review.publicationAuthorized:false` means generation itself never grants authority. A separate final-bindings receipt records the actual explicit owner publication authorization for exact manifest hashes. Preserve earlier package revisions. Actual uploads remain manual and PublicationRecords require real publication evidence.

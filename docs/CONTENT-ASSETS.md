@@ -81,7 +81,7 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 
 `wood-frog-freeze-tolerance.asset.how-freezing-works` revision 2 is the first owner-approved asset to feed a typed ProductionPlan. Its script, narrative structure and VisualPlan remain editorial source-of-truth; `production-plan.wood-frog-freeze.v1` adds frame allocation and implementation intent without moving choreography into the asset. The uncertain circulation-cessation claim remains excluded.
 
-`src/content-assets/registry.ts` validates all four assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
+`src/content-assets/registry.ts` validates the registered assets, rejects duplicate IDs, validates package/claim/hook references, enforces hook-claim selection, and returns deterministic sorted results.
 
 ## Adding another asset
 
@@ -103,3 +103,11 @@ Supported V1 visual types are footage, diagram, animation, map, chart, generated
 - Databases, queues, workers, services, CMS, dashboards, or analytics ingestion
 
 These are planned boundaries, not implemented features.
+
+## Traffic-waves editorial proposal
+
+`phantom-traffic.asset.backward-wave` revision 3 is **approved**, backed by approved `phantom-traffic` revision 3. Ahmet approved the exact revision 2 finalized state at commit `21c3a5539cf02b1c4a88b8ff89aca0139a7ec079`; [the editorial lock](../content-intelligence/reviews/phantom-traffic-approved-v3/owner-decision.json) binds its exact hashes and records decision-entry time rather than an invented owner date. Script, six verified claims, caveats, beats and conceptual VisualPlan remain unchanged. ProductionPlan/CaptionPlan and one master candidate now exist under explicit owner authorization; the exact rendered master is now owner-approved, with real-device platform review pending. Historical research-v1/finalization-v2 handoffs retain their original states. Editorial approval never grants platform or publication approval.
+
+## Adaptive creative direction — future content
+
+Future creative direction is a first-class companion owned by the ContentAsset responsibility, bound to exact package/asset/script hashes. It records experience, story-specific treatment rationale and recent-content convergence review without modifying the approved asset. ProductionPlan references its exact revision/hash. Bespoke and hybrid VisualPlan intents are permitted; no domain-to-medium rules. See CREATIVE-DIRECTION.md. Phantom Traffic is now master-approved under its exact separate decision; earlier candidate-only paragraphs describe historical stages, not the current gate.

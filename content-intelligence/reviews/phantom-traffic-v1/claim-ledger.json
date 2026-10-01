@@ -1,0 +1,617 @@
+{
+  "claims": [
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Not every traffic jam is internally generated."
+      ],
+      "claimId": "phantom-traffic.claim.no-obstruction",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article pp. 4–5; figures 2–4",
+          "notes": "Observed in a controlled homogeneous ring; establishes possibility, not the origin of every jam.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "proposed-only; owner approval required",
+      "onScreenEligibility": "proposed-only; scope/disclosure required",
+      "proposedWording": "Stop-and-go traffic can form without a physical obstruction or external bottleneck.",
+      "rationale": "Observed in a controlled homogeneous ring; establishes possibility, not the origin of every jam.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.vehicles",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article p. 4; figure 2 caption",
+          "notes": "Experimental vehicle count, not a universal jam threshold.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "proposed-only; owner approval required",
+      "onScreenEligibility": "proposed-only; scope/disclosure required",
+      "proposedWording": "The reported 2008 circular-road experiment used 22 vehicles.",
+      "rationale": "Experimental vehicle count, not a universal jam threshold.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.circumference",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article p. 4; figure 2 caption",
+          "notes": "Reported track dimension.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "The 2008 ring had a circumference of 230 metres.",
+      "rationale": "Reported track dimension.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Target speed, not every vehicle’s speed throughout."
+      ],
+      "claimId": "phantom-traffic.claim.instructions",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article p. 4, experimental setup",
+          "notes": "Initial nearly uniform spacing and common speed; no deliberate brake instruction reported.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "Drivers were asked to aim for about 30 km/h while safely following the vehicle ahead.",
+      "rationale": "Initial nearly uniform spacing and common speed; no deliberate brake instruction reported.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "The figure 3 later snapshot is three minutes later, not a universal onset time."
+      ],
+      "claimId": "phantom-traffic.claim.emergence",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article pp. 4–5; figure 3",
+          "notes": "This is what was reported; no individual initiator identified.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "Initially nearly uniform flow developed growing spacing fluctuations, and some vehicles stopped briefly.",
+      "rationale": "This is what was reported; no individual initiator identified.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Density alone is insufficient; response laws, spacing, speeds, perturbation size and conditions matter.",
+        "Vehicle-index propagation is distinct from road-frame wave velocity."
+      ],
+      "claimId": "phantom-traffic.claim.conditional-growth",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Author manuscript pp. 3, 6–10; string stability, simulations and discussion",
+          "notes": "String instability describes growth of disturbances through the vehicle sequence; finite acceleration, reaction delay and anticipation influence stability.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "proposed-only; owner approval required",
+      "onScreenEligibility": "proposed-only; scope/disclosure required",
+      "proposedWording": "In dense traffic, small speed changes can grow through following responses when the flow is unstable.",
+      "rationale": "String instability describes growth of disturbances through the vehicle sequence; finite acceleration, reaction delay and anticipation influence stability.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Can, not always; backward describes the congestion pattern, not reverse-driving cars."
+      ],
+      "claimId": "phantom-traffic.claim.backward-pattern",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article pp. 5–6; figure 4",
+          "notes": "Jam-cluster propagation is upstream; trajectories of individual cars proceed in the driving direction.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "proposed-only; owner approval required",
+      "onScreenEligibility": "proposed-only; scope/disclosure required",
+      "proposedWording": "A slow or stopped traffic pattern can move backward relative to the road while the cars travel forward.",
+      "rationale": "Jam-cluster propagation is upstream; trajectories of individual cars proceed in the driving direction.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Front/rear use the cars’ forward direction. No universal equality of entry/exit rates implied."
+      ],
+      "claimId": "phantom-traffic.claim.turnover",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article p. 5, paragraph beginning We observed the instability",
+          "notes": "Explicit observation explains moving pattern.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "proposed-only; owner approval required",
+      "onScreenEligibility": "proposed-only; scope/disclosure required",
+      "proposedWording": "Cars enter the slow cluster at its rear and accelerate out at its front, changing the cluster’s membership.",
+      "rationale": "Explicit observation explains moving pattern.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Scoped experimental value only; omitted from proposed narration."
+      ],
+      "claimId": "phantom-traffic.claim.wave-speed",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article pp. 5–6; figure 4",
+          "notes": "Reported slope/velocity of cluster, not reverse car speed or universal constant.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "The jam cluster in the 2008 experiment propagated backward at roughly 20 km/h.",
+      "rationale": "Reported slope/velocity of cluster, not reverse car speed or universal constant.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Raw trajectories/movies not inspected."
+      ],
+      "claimId": "phantom-traffic.claim.measurement",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article p. 4 setup; figure 4 caption p. 6",
+          "notes": "Figure 4 covers two minutes of trajectories from the central-camera movie.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "The 2008 experiment used central 360-degree video to recover individual vehicle trajectories.",
+      "rationale": "Figure 4 covers two minutes of trajectories from the central-camera movie.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Linear/string stability and nonlinear finite-disturbance outcomes are distinct."
+      ],
+      "claimId": "phantom-traffic.claim.stable-versus-unstable",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Author manuscript pp. 6–10, string-stability simulations/discussion",
+          "notes": "Stable and unstable regimes explicitly contrasted.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "Depending on conditions, disturbances can decay rather than grow.",
+      "rationale": "Stable and unstable regimes explicitly contrasted.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Authors could not conclusively identify the theoretical high-density stable state."
+      ],
+      "claimId": "phantom-traffic.claim.density-not-guarantee",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article sections 3–4, pp. 6–12, especially p. 12 high-density session discussion",
+          "notes": "Intermediate-density sessions had both outcomes; very-high-density session had nearly homogeneous slow traffic.",
+          "sourceId": "source.traffic.tadaki-2013"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "Not every dense traffic state is unstable.",
+      "rationale": "Intermediate-density sessions had both outcomes; very-high-density session had nearly homogeneous slow traffic.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Model result excludes a necessary single-cause claim; not proof reaction delay is irrelevant."
+      ],
+      "claimId": "phantom-traffic.claim.reaction-not-only",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Author manuscript introduction p. 3 and discussion p. 10",
+          "notes": "Models with zero explicit reaction delay can still be string unstable; finite acceleration and anticipation also matter.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "Reaction delay is one influence on stability, not a complete explanation of phantom jams.",
+      "rationale": "Models with zero explicit reaction delay can still be string unstable; finite acceleration and anticipation also matter.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Paper definitions are model-specific; spatial headway conventions can include vehicle length."
+      ],
+      "claimId": "phantom-traffic.claim.headway",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Author manuscript p. 6, paragraph beginning Remarkably",
+          "notes": "Time gap is desired following separation in time; reaction delay concerns response timing.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "Following distance, time gap and reaction delay are different quantities.",
+      "rationale": "Time gap is desired following separation in time; reaction delay concerns response timing.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "52 students rotated through sessions; not a random sample of all drivers.",
+        "No numerical threshold from this setup is promoted as universal."
+      ],
+      "claimId": "phantom-traffic.claim.followup-experiment",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Article section 2 pp. 3–5, table 1; Appendix A pp. 12–13",
+          "notes": "314 m circumference, 19 sessions with 10–40 cars; nominal target 30 km/h; mound and artificial turf removed.",
+          "sourceId": "source.traffic.tadaki-2013"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "The 2013 follow-up varied vehicle numbers on a larger indoor ring and measured positions with a laser scanner.",
+      "rationale": "314 m circumference, 19 sessions with 10–40 cars; nominal target 30 km/h; mound and artificial turf removed.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Model evidence; no imposed braking perturbation reported in the 2008 ring."
+      ],
+      "claimId": "phantom-traffic.claim.nonlinear",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Author manuscript section 3 p. 7; discussion p. 10",
+          "notes": "Their imposed finite lead-car deceleration required nonlinear consideration.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "Finite disturbances and nonlinear responses complicate predictions based only on small-perturbation stability.",
+      "rationale": "Their imposed finite lead-car deceleration required nonlinear consideration.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "Read with no-obstruction claim; absence of a visible obstruction does not identify a jam’s origin."
+      ],
+      "claimId": "phantom-traffic.claim.bottleneck-distinction",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Appendix A, forming and recovery wave examples",
+          "notes": "Primer supplies bottleneck mechanisms; the package separately establishes the internally generated possibility with the primary ring experiment.",
+          "sourceId": "source.traffic.fhwa-2017"
+        }
+      ],
+      "narrationEligibility": "proposed-only; owner approval required",
+      "onScreenEligibility": "proposed-only; scope/disclosure required",
+      "proposedWording": "Some congestion is generated by bottlenecks or incidents; internally generated waves are a different possibility.",
+      "rationale": "Primer supplies bottleneck mechanisms; the package separately establishes the internally generated possibility with the primary ring experiment.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.cleared-obstruction",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Appendix A, incident-cleared example",
+          "notes": "Direct counterexample to diagnosing spontaneous instability by finding nothing ahead.",
+          "sourceId": "source.traffic.fhwa-2017"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "A driver can reach the end of a queue after its original obstruction has already cleared.",
+      "rationale": "Direct counterexample to diagnosing spontaneous instability by finding nothing ahead.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [
+        "A stop-and-go wave can contain multiple boundaries. Do not equate every jam with one backward shockwave."
+      ],
+      "claimId": "phantom-traffic.claim.shockwave",
+      "confidence": "high for the stated scope",
+      "evidence": [
+        {
+          "locator": "Appendix A, first two paragraphs",
+          "notes": "Abrupt changes in speed/density/flow define a boundary; forming and recovery boundaries can differ in direction.",
+          "sourceId": "source.traffic.fhwa-2017"
+        }
+      ],
+      "narrationEligibility": "reserve; separate owner selection required",
+      "onScreenEligibility": "reserve; separate owner selection required",
+      "proposedWording": "A traffic shockwave is a moving transition between traffic states, rather than a physical object moving along the road.",
+      "rationale": "Abrupt changes in speed/density/flow define a boundary; forming and recovery boundaries can differ in direction.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.tiny-tap",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Author manuscript pp. 6–10",
+          "notes": "EXCLUSION EVIDENCE: Stable regimes attenuate disturbances; the ring study did not prescribe an initiating brake tap.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "One tiny brake tap always creates a traffic jam.",
+      "rationale": "EXCLUSION EVIDENCE: Stable regimes attenuate disturbances; the ring study did not prescribe an initiating brake tap.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.from-nothing",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Article pp. 4–5",
+          "notes": "EXCLUSION EVIDENCE: No obstruction does not mean no cause: growing fluctuations and unstable conditions were present.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "A traffic jam appears from nothing.",
+      "rationale": "EXCLUSION EVIDENCE: No obstruction does not mean no cause: growing fluctuations and unstable conditions were present.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.driver-blame",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Author manuscript pp. 3, 6–10",
+          "notes": "EXCLUSION EVIDENCE: A response can amplify under some conditions; universal blame and all-jam causality are unsupported.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Drivers overreact and create all traffic jams.",
+      "rationale": "EXCLUSION EVIDENCE: A response can amplify under some conditions; universal blame and all-jam causality are unsupported.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.reaction-only",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Author manuscript pp. 3 and 10",
+          "notes": "EXCLUSION EVIDENCE: Instability can occur in models without explicit reaction delay; other responses matter.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Reaction time alone causes phantom traffic jams.",
+      "rationale": "EXCLUSION EVIDENCE: Instability can occur in models without explicit reaction delay; other responses matter.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.nobody-caused",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Article pp. 4–5",
+          "notes": "EXCLUSION EVIDENCE: No unique initiating driver was identified; this does not demonstrate absence of human contributions or causes.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Nobody caused the traffic jam.",
+      "rationale": "EXCLUSION EVIDENCE: No unique initiating driver was identified; this does not demonstrate absence of human contributions or causes.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.all-waves",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Appendix A, forming and recovery wave types",
+          "notes": "EXCLUSION EVIDENCE: Bottleneck queues exist and boundaries have different propagation directions.",
+          "sourceId": "source.traffic.fhwa-2017"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "All traffic jams are spontaneous backward-moving waves.",
+      "rationale": "EXCLUSION EVIDENCE: Bottleneck queues exist and boundaries have different propagation directions.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.universal-speed",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Article pp. 5–6",
+          "notes": "EXCLUSION EVIDENCE: This is an approximate reported experiment value; no universal-speed conclusion is warranted.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Traffic jam waves always travel backward at 20 km/h.",
+      "rationale": "EXCLUSION EVIDENCE: This is an approximate reported experiment value; no universal-speed conclusion is warranted.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.always-dense",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Article section 4 p. 12",
+          "notes": "EXCLUSION EVIDENCE: Very-high-density homogeneous slow flow and differing intermediate-density outcomes prevent this claim.",
+          "sourceId": "source.traffic.tadaki-2013"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "All sufficiently dense traffic must become unstable.",
+      "rationale": "EXCLUSION EVIDENCE: Very-high-density homogeneous slow flow and differing intermediate-density outcomes prevent this claim.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.autonomy",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Author manuscript discussion p. 10",
+          "notes": "EXCLUSION EVIDENCE: Anticipation improves stability in specified models; automation does not automatically remove demand/capacity bottlenecks.",
+          "sourceId": "source.traffic.treiber-2007"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Autonomous vehicles automatically eliminate congestion.",
+      "rationale": "EXCLUSION EVIDENCE: Anticipation improves stability in specified models; automation does not automatically remove demand/capacity bottlenecks.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.empty-proof",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Appendix A, cleared-incident example",
+          "notes": "EXCLUSION EVIDENCE: A cleared obstruction can also produce this experience.",
+          "sourceId": "source.traffic.fhwa-2017"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Finding nothing ahead proves a phantom jam formed spontaneously.",
+      "rationale": "EXCLUSION EVIDENCE: A cleared obstruction can also produce this experience.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "phantom-traffic.claim.backward-cars",
+      "confidence": "not supportable as stated",
+      "evidence": [
+        {
+          "locator": "Article pp. 5–6; figure 4",
+          "notes": "EXCLUSION EVIDENCE: The backward entity is the cluster/pattern; individual trajectories move forward.",
+          "sourceId": "source.traffic.sugiyama-2008"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "The cars in a jam drive backward.",
+      "rationale": "EXCLUSION EVIDENCE: The backward entity is the cluster/pattern; individual trajectories move forward.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    }
+  ],
+  "packageId": "phantom-traffic",
+  "packageRevision": 1,
+  "reviewState": "awaiting-owner-decision",
+  "schemaVersion": 1,
+  "statusMapping": {
+    "EXCLUDED": "unverified plus reject recommendation; attached evidence documents why the proposed wording fails, not support for it",
+    "QUALIFIED": "supported for the exact scoped wording plus explicit caveats; not a new repository status",
+    "SUPPORTED": "supported; human verification pending"
+  }
+}

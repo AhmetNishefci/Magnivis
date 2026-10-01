@@ -1,0 +1,330 @@
+[
+  {
+    "id": "phantom-traffic.asset.backward-wave.variant.youtube-shorts",
+    "revision": 2,
+    "contentAssetId": "phantom-traffic.asset.backward-wave",
+    "platform": "youtube",
+    "surface": "youtube-shorts",
+    "platformProfileId": "platform-profile.youtube-shorts.2026-09-27",
+    "language": "en",
+    "packaging": {
+      "title": "The traffic jam that moves backward",
+      "description": "The cars move forward. The slow patch can move backward.\n\nIn a controlled experiment, 22 cars formed stop-and-go traffic on a circular track with no obstruction. Small speed changes can sometimes grow in dense traffic; not every jam starts this way.\n\nOriginal explanatory animation and experiment reconstruction. Synthetic narration.\nResearch: Sugiyama et al. (2008), https://doi.org/10.1088/1367-2630/10/3/033001",
+      "hashtags": [
+        "traffic",
+        "science"
+      ],
+      "claimIds": [
+        "phantom-traffic.claim.backward-pattern",
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.no-obstruction",
+        "phantom-traffic.claim.conditional-growth",
+        "phantom-traffic.claim.turnover",
+        "phantom-traffic.claim.bottleneck-distinction"
+      ]
+    },
+    "editorialAdaptationNotes": [
+      "Exact locked master reused; narration, designed captions, sound, visual meaning and disclosures unchanged.",
+      "Owner reports real-device approval, but the specific surface/cover scope remains unconfirmed. No platform pass inferred.",
+      "Publication copy is a recommendation prepared after the reviewed presentation; it remains subject to publication authorization. No measured profile geometry is created."
+    ],
+    "duration": {
+      "targetSeconds": 34.166666666666664,
+      "minimumSeconds": 3,
+      "maximumSeconds": 60
+    },
+    "aspectRatio": "9:16",
+    "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Frame selection remains operator/device-review dependent; no extra cover generated."
+    },
+    "captions": {
+      "behavior": "burned-in",
+      "designedBurnedIn": true,
+      "language": "en",
+      "humanReviewRequired": true
+    },
+    "productionIntent": {
+      "renderStrategy": "reuse-existing-master",
+      "videoSpecId": "phantom-traffic",
+      "platformPreviewRequired": true,
+      "notes": "Delivery preparation only. Await exact surface/cover scope confirmation; do not upload or publish."
+    },
+    "previewStatus": "ready-for-private-preview",
+    "sourceMaster": {
+      "videoSpecId": "phantom-traffic",
+      "artifact": {
+        "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+        "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+      },
+      "productionPlan": {
+        "id": "production-plan.phantom-traffic.v1",
+        "revision": 2
+      },
+      "captionPlan": {
+        "id": "caption-plan.phantom-traffic.v1",
+        "revision": 1,
+        "sha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08"
+      },
+      "relationship": "exact-master",
+      "contentBoundsEvidence": {
+        "regions": {
+          "path": "content-intelligence/reviews/phantom-traffic-platform-v1/critical-regions.json",
+          "sha256": "18d4dd82d7342f96dbe8e361fc70126ee41e563d354fbd0af8b34c931632548d"
+        },
+        "report": {
+          "path": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-mobile.json",
+          "sha256": "34d220d4be6ebdd4217a13bfff2f3108b614277c3d48a5332515b10b1f7ee48f"
+        }
+      }
+    },
+    "status": "editorial-review"
+  },
+  {
+    "id": "phantom-traffic.asset.backward-wave.variant.tiktok-feed",
+    "revision": 2,
+    "contentAssetId": "phantom-traffic.asset.backward-wave",
+    "platform": "tiktok",
+    "surface": "tiktok-feed",
+    "platformProfileId": "platform-profile.tiktok-feed.2026-09-27",
+    "language": "en",
+    "packaging": {
+      "caption": "Ever reached the end of a traffic jam and found… nothing? A slow patch can move backward while the cars keep moving forward. Not every jam starts this way.",
+      "hashtags": [
+        "traffic",
+        "phantomtraffic",
+        "howitworks"
+      ],
+      "claimIds": [
+        "phantom-traffic.claim.backward-pattern",
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.no-obstruction",
+        "phantom-traffic.claim.conditional-growth",
+        "phantom-traffic.claim.turnover",
+        "phantom-traffic.claim.bottleneck-distinction"
+      ]
+    },
+    "editorialAdaptationNotes": [
+      "Exact locked master reused; narration, designed captions, sound, visual meaning and disclosures unchanged.",
+      "Owner reports real-device approval, but the specific surface/cover scope remains unconfirmed. No platform pass inferred.",
+      "Publication copy is a recommendation prepared after the reviewed presentation; it remains subject to publication authorization. No measured profile geometry is created."
+    ],
+    "duration": {
+      "targetSeconds": 34.166666666666664,
+      "minimumSeconds": 3,
+      "maximumSeconds": 60
+    },
+    "aspectRatio": "9:16",
+    "safeAreaProfileId": "safe-area.tiktok-feed.v2",
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Frame selection remains operator/device-review dependent; no extra cover generated."
+    },
+    "captions": {
+      "behavior": "burned-in",
+      "designedBurnedIn": true,
+      "language": "en",
+      "humanReviewRequired": true
+    },
+    "productionIntent": {
+      "renderStrategy": "reuse-existing-master",
+      "videoSpecId": "phantom-traffic",
+      "platformPreviewRequired": true,
+      "notes": "Delivery preparation only. Await exact surface/cover scope confirmation; do not upload or publish."
+    },
+    "previewStatus": "ready-for-private-preview",
+    "sourceMaster": {
+      "videoSpecId": "phantom-traffic",
+      "artifact": {
+        "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+        "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+      },
+      "productionPlan": {
+        "id": "production-plan.phantom-traffic.v1",
+        "revision": 2
+      },
+      "captionPlan": {
+        "id": "caption-plan.phantom-traffic.v1",
+        "revision": 1,
+        "sha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08"
+      },
+      "relationship": "exact-master",
+      "contentBoundsEvidence": {
+        "regions": {
+          "path": "content-intelligence/reviews/phantom-traffic-platform-v1/critical-regions.json",
+          "sha256": "18d4dd82d7342f96dbe8e361fc70126ee41e563d354fbd0af8b34c931632548d"
+        },
+        "report": {
+          "path": "artifacts/qa-evidence/phantom-traffic-platform-v1/tiktok-mobile.json",
+          "sha256": "293378bcc6fac488925bb3b62b8e63de578d70ed683a93614d9f8dca43a9b8d6"
+        }
+      }
+    },
+    "status": "editorial-review"
+  },
+  {
+    "id": "phantom-traffic.asset.backward-wave.variant.instagram-reels",
+    "revision": 2,
+    "contentAssetId": "phantom-traffic.asset.backward-wave",
+    "platform": "instagram",
+    "surface": "instagram-reels",
+    "platformProfileId": "platform-profile.instagram-reels.2026-09-27",
+    "language": "en",
+    "packaging": {
+      "caption": "The cars move forward. The traffic pattern can move backward.\n\nTwenty-two cars. A circular track. No obstruction—yet stop-and-go traffic formed. This is one way a jam can begin, not an explanation for every jam.\n\nOriginal explanatory animation; experiment reconstruction; synthetic narration.",
+      "hashtags": [
+        "traffic",
+        "complexsystems",
+        "magnivis"
+      ],
+      "claimIds": [
+        "phantom-traffic.claim.backward-pattern",
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.no-obstruction",
+        "phantom-traffic.claim.conditional-growth",
+        "phantom-traffic.claim.turnover",
+        "phantom-traffic.claim.bottleneck-distinction"
+      ]
+    },
+    "editorialAdaptationNotes": [
+      "Exact locked master reused; narration, designed captions, sound, visual meaning and disclosures unchanged.",
+      "Owner reports real-device approval, but the specific surface/cover scope remains unconfirmed. No platform pass inferred.",
+      "Publication copy is a recommendation prepared after the reviewed presentation; it remains subject to publication authorization. No measured profile geometry is created."
+    ],
+    "duration": {
+      "targetSeconds": 34.166666666666664,
+      "minimumSeconds": 3,
+      "maximumSeconds": 60
+    },
+    "aspectRatio": "9:16",
+    "safeAreaProfileId": "safe-area.instagram-reels.v1",
+    "cover": {
+      "strategy": "custom-image",
+      "intent": "Test original cover candidate phantom-traffic.instagram-cover.v1 independently on profile/grid; no measured crop claimed."
+    },
+    "captions": {
+      "behavior": "burned-in",
+      "designedBurnedIn": true,
+      "language": "en",
+      "humanReviewRequired": true
+    },
+    "productionIntent": {
+      "renderStrategy": "reuse-existing-master",
+      "videoSpecId": "phantom-traffic",
+      "platformPreviewRequired": true,
+      "notes": "Delivery preparation only. Await exact surface/cover scope confirmation; do not upload or publish."
+    },
+    "previewStatus": "ready-for-private-preview",
+    "sourceMaster": {
+      "videoSpecId": "phantom-traffic",
+      "artifact": {
+        "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+        "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+      },
+      "productionPlan": {
+        "id": "production-plan.phantom-traffic.v1",
+        "revision": 2
+      },
+      "captionPlan": {
+        "id": "caption-plan.phantom-traffic.v1",
+        "revision": 1,
+        "sha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08"
+      },
+      "relationship": "exact-master",
+      "contentBoundsEvidence": {
+        "regions": {
+          "path": "content-intelligence/reviews/phantom-traffic-platform-v1/critical-regions.json",
+          "sha256": "18d4dd82d7342f96dbe8e361fc70126ee41e563d354fbd0af8b34c931632548d"
+        },
+        "report": {
+          "path": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-reel.json",
+          "sha256": "eefdba334405c2c0707b3cf5f1759d408b247c10d5bae4e8e34b09d50c8d0e35"
+        }
+      }
+    },
+    "status": "editorial-review"
+  },
+  {
+    "id": "phantom-traffic.asset.backward-wave.variant.facebook-reels",
+    "revision": 2,
+    "contentAssetId": "phantom-traffic.asset.backward-wave",
+    "platform": "facebook",
+    "surface": "facebook-reels",
+    "platformProfileId": "platform-profile.facebook-reels.2026-09-27",
+    "language": "en",
+    "packaging": {
+      "title": "Why traffic can stop without a blocked road",
+      "caption": "No accident or roadworks were needed in this controlled experiment: 22 cars on a circular track developed stop-and-go traffic.\n\nIn dense traffic, small speed changes can sometimes grow. Cars move forward through the slow patch while the congestion pattern moves backward. Accidents and bottlenecks also cause jams.\n\nOriginal explanatory animation, experiment reconstruction and synthetic narration.",
+      "hashtags": [
+        "traffic",
+        "howitworks"
+      ],
+      "claimIds": [
+        "phantom-traffic.claim.backward-pattern",
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.no-obstruction",
+        "phantom-traffic.claim.conditional-growth",
+        "phantom-traffic.claim.turnover",
+        "phantom-traffic.claim.bottleneck-distinction"
+      ]
+    },
+    "editorialAdaptationNotes": [
+      "Exact locked master reused; narration, designed captions, sound, visual meaning and disclosures unchanged.",
+      "Owner reports real-device approval, but the specific surface/cover scope remains unconfirmed. No platform pass inferred.",
+      "Publication copy is a recommendation prepared after the reviewed presentation; it remains subject to publication authorization. No measured profile geometry is created."
+    ],
+    "duration": {
+      "targetSeconds": 34.166666666666664,
+      "minimumSeconds": 3,
+      "maximumSeconds": 60
+    },
+    "aspectRatio": "9:16",
+    "safeAreaProfileId": "safe-area.facebook-reels.v1",
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Frame selection remains operator/device-review dependent; no extra cover generated."
+    },
+    "captions": {
+      "behavior": "burned-in",
+      "designedBurnedIn": true,
+      "language": "en",
+      "humanReviewRequired": true
+    },
+    "productionIntent": {
+      "renderStrategy": "reuse-existing-master",
+      "videoSpecId": "phantom-traffic",
+      "platformPreviewRequired": true,
+      "notes": "Delivery preparation only. Await exact surface/cover scope confirmation; do not upload or publish."
+    },
+    "previewStatus": "ready-for-private-preview",
+    "sourceMaster": {
+      "videoSpecId": "phantom-traffic",
+      "artifact": {
+        "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+        "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+      },
+      "productionPlan": {
+        "id": "production-plan.phantom-traffic.v1",
+        "revision": 2
+      },
+      "captionPlan": {
+        "id": "caption-plan.phantom-traffic.v1",
+        "revision": 1,
+        "sha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08"
+      },
+      "relationship": "exact-master",
+      "contentBoundsEvidence": {
+        "regions": {
+          "path": "content-intelligence/reviews/phantom-traffic-platform-v1/critical-regions.json",
+          "sha256": "18d4dd82d7342f96dbe8e361fc70126ee41e563d354fbd0af8b34c931632548d"
+        },
+        "report": {
+          "path": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-reel.json",
+          "sha256": "1fdc525da035379702a741b0ad8d287fbbfccce64d874c4ecc46ddec48a48623"
+        }
+      }
+    },
+    "status": "editorial-review"
+  }
+]

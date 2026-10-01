@@ -1,3 +1,4 @@
+import {z} from 'zod';
 import {createHash} from 'node:crypto';
 import {
   copyFileSync,
@@ -70,7 +71,7 @@ const defaultProductionResolver = (variant: PlatformVariant): DeliveryProduction
   ) {
     throw new Error(`New-render variant ${variant.id} requires its own VideoSpec`);
   }
-  return {spec: target.spec, sourceVideoPath: target.output};
+  return {spec: target.spec, sourceVideoPath: variant.sourceMaster?.relationship === 'exact-master' ? variant.sourceMaster.artifact.path : target.output};
 };
 
 const defaultDependencies: DeliveryDependencies = {
@@ -155,6 +156,8 @@ export const createUploadCopy = (variant: PlatformVariant) => {
 };
 
 export const createReviewChecklist = (variant: PlatformVariant) => {
+  if (variant.presentationRiskAcceptance) return `# Manual publication handoff\n\nOwner explicitly accepted remaining presentation uncertainty. This is not a real-device pass.\nOwner decision: ${variant.presentationRiskAcceptance.decision.id}, SHA-256 ${variant.presentationRiskAcceptance.decision.sha256}.\nVariant: ${variant.id} revision ${variant.revision}.\n\nPreserve the exact video/audio/captions/disclosures and selected cover. Use the platform-specific copy and publication checklist. Verify account, public visibility, audience and current disclosure/quality settings.\n\nThe generator grants no publication authority; the separate exact-hash-bound owner authorization and final binding receipt do. Assistant upload is prohibited.\n\nPostpublication review is pending live URLs/evidence. Native geometry remains incomplete; do not fabricate passes or modify published media without separate remediation authorization.\n`;
+
   const state = deliveryStateForVariant(variant.status);
   const readinessNotice = state === 'ready-for-manual-upload'
     ? '**READY FOR MANUAL UPLOAD after every applicable check below passes.**'
@@ -308,6 +311,41 @@ const assertMediaMatches = (
   }
 };
 
+// Content-specific inset screening can be stronger than comparing entire authoring
+// envelopes. This proves local bounds only; it never grants real-device approval.
+export const validateContentBoundsEvidence = (variant: PlatformVariant): void => {
+  const source = variant.sourceMaster;
+  const evidence = source?.contentBoundsEvidence;
+  if (!source || !evidence) throw new Error('Missing hash-bound content bounds evidence');
+  for (const reference of [evidence.regions, evidence.report]) {
+    if (!existsSync(reference.path) || sha256(reference.path) !== reference.sha256) {
+      throw new Error('Content bounds evidence hash mismatch');
+    }
+  }
+  const profile = safeAreaProfileRegistry.get(variant.safeAreaProfileId);
+  const report = z.object({
+    assessment: z.object({profileId: z.string(), insets: z.object({top:z.number(),right:z.number(),bottom:z.number(),left:z.number()})}),
+    qa: z.object({mediaSha256:z.string(),platformVariantId:z.string()}),
+  }).parse(JSON.parse(readFileSync(evidence.report.path, 'utf8')));
+  if (report.qa.mediaSha256 !== source.artifact.sha256 || report.qa.platformVariantId !== variant.id
+      || report.assessment.profileId !== profile.id
+      || ['top','right','bottom','left'].some(k => report.assessment.insets[k as keyof typeof profile.insets] !== profile.insets[k as keyof typeof profile.insets])) {
+    throw new Error('Content bounds evidence detached from media, variant or profile');
+  }
+  const regions = z.array(z.object({kind:z.enum(['brand','disclosure','critical-visual','number','caption','decorative']),bounds:z.object({x:z.number().nonnegative(),y:z.number().nonnegative(),width:z.number().positive(),height:z.number().positive()})}).strict()).parse(JSON.parse(readFileSync(evidence.regions.path, 'utf8')));
+  for (const kind of ['disclosure','critical-visual','caption']) {
+    if (!regions.some(r => r.kind === kind)) throw new Error('Missing critical content region');
+  }
+  for (const region of regions.filter(r => r.kind !== 'decorative')) {
+    const b = region.bounds;
+    if (b.x < profile.insets.left || b.y < profile.insets.top
+      || b.x + b.width > profile.canvas.width - profile.insets.right
+      || b.y + b.height > profile.canvas.height - profile.insets.bottom) {
+      throw new Error(`Content region outside destination insets: ${region.kind}`);
+    }
+  }
+};
+
 const productionChainForVariant = (
   variant: PlatformVariant,
   production: DeliveryProduction,
@@ -337,7 +375,7 @@ const productionChainForVariant = (
     const productionSafeArea = safeAreaProfileRegistry.get(productionReference.safeAreaProfileId);
     const destinationSafeArea = safeAreaProfileRegistry.get(variant.safeAreaProfileId);
     if (!safeAreaContains(destinationSafeArea, productionSafeArea)) {
-      throw new Error(`Locked master is outside the destination safe area for ${variant.id}`);
+      validateContentBoundsEvidence(variant);
     }
     if (
       production.spec.id !== sourceMaster.videoSpecId
@@ -416,10 +454,12 @@ export const generateDeliveryPackage = ({
       );
     }
   }
+  if (variant.cover.artifact && (!existsSync(variant.cover.artifact.path) || sha256(variant.cover.artifact.path) !== variant.cover.artifact.sha256)) throw new Error('Registered cover source is missing or changed');
   rmSync(directory, {recursive: true, force: true});
   mkdirSync(directory, {recursive: true});
 
   copyFileSync(production.sourceVideoPath, resolve(directory, 'video.mp4'));
+  if (variant.cover.artifact) copyFileSync(variant.cover.artifact.path, resolve(directory, 'cover.png'));
   let captionArtifactPath: string | undefined;
   if (variant.captions.behavior === 'external-track') {
     captionArtifactPath = `captions.${variant.captions.language}.vtt`;
@@ -437,6 +477,7 @@ export const generateDeliveryPackage = ({
 
   const artifacts: DeliveryManifest['artifacts'] = [
     artifactRecord(directory, 'video', 'video.mp4', 'video/mp4'),
+    ...(variant.cover.artifact ? [artifactRecord(directory, 'cover', 'cover.png', 'image/png')] : []),
     ...(captionArtifactPath
       ? [artifactRecord(directory, 'captions', captionArtifactPath, 'text/vtt')]
       : []),
@@ -680,7 +721,7 @@ export const validateDeliveryPackage = (
     if (sha256(path) !== artifact.sha256) {
       throw new Error(`Artifact SHA-256 mismatch: ${artifact.path}`);
     }
-    if (artifact.role !== 'video') {
+    if (artifact.role !== 'video' && artifact.role !== 'cover') {
       const contents = readFileSync(path, 'utf8');
       if (unresolvedPlaceholder.test(contents)) {
         throw new Error(`Unresolved placeholder in ${artifact.path}`);
@@ -691,6 +732,10 @@ export const validateDeliveryPackage = (
   const videoArtifact = manifest.artifacts.find(({role}) => role === 'video');
   if (!videoArtifact || videoArtifact.sha256 !== sha256(production.sourceVideoPath)) {
     throw new Error('Delivered video does not match the resolved production master');
+  }
+  if (variant.cover.artifact) {
+    const coverArtifact=manifest.artifacts.find(a=>a.role==='cover');
+    if (!coverArtifact || coverArtifact.sha256!==variant.cover.artifact.sha256 || sha256(variant.cover.artifact.path)!==coverArtifact.sha256) throw new Error('Delivered cover differs from registered source');
   }
   if (variant.captions.behavior === 'external-track') {
     const captionArtifact = manifest.artifacts.find(({role}) => role === 'captions');

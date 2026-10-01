@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {phantomTrafficCaptionPlan} from '../src/captions/plans/phantom-traffic';
+import {productionPlanSchema} from '../src/production/schema';
+import {captionPlanToDerivedCaptions,captionsToWebVtt} from '../src/captions/derive';
+import {sha256Json,stableJson} from '../src/content-intelligence/run-schema';
+const path='src/production/plans/phantom-traffic.json';
+const plan=productionPlanSchema.parse(JSON.parse(readFileSync(path,'utf8')));
+if(plan.visualApproval)throw new Error('Never regenerate a locked master binding');
+plan.captions.captionPlanSha256=sha256Json(phantomTrafficCaptionPlan);
+writeFileSync(path,`${stableJson(plan,2)}\n`);
+writeFileSync('src/production/narration/phantom-traffic-caption-plan.json',`${stableJson(phantomTrafficCaptionPlan,2)}\n`);
+writeFileSync(plan.captions.file,`${captionsToWebVtt(captionPlanToDerivedCaptions(phantomTrafficCaptionPlan)).trimEnd()}\n`);
+console.log('Unapproved candidate caption snapshot, binding and optional WebVTT refreshed.');

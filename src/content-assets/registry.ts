@@ -1,3 +1,4 @@
+import {phantomTrafficContentAsset} from './assets/phantom-traffic';
 import {
   speedOfLightCosmicDistanceAsset,
   speedOfLightPublishedShortAsset,
@@ -70,6 +71,7 @@ export const createContentAssetRegistry = (
 
 export const contentAssetRegistry = createContentAssetRegistry([
   oceanDepthPublishedShortAsset,
+  phantomTrafficContentAsset,
   speedOfLightPublishedShortAsset,
   speedOfLightCosmicDistanceAsset,
   woodFrogApprovedContentAsset,

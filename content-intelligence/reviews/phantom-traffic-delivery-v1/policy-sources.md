@@ -1,0 +1,11 @@
+# Publication-setting reconnaissance
+
+Inspected 2026-10-01. These are setting recommendations, not a legal assessment, an applied account configuration, or publication authorization. Exact menus/app versions and owner test settings remain unknown.
+
+- [YouTube disclosure help](https://support.google.com/youtube/answer/14328491?hl=en): inspected page sections on realistic/meaningful AI content, examples, disclosure and label behavior. Disclosure is context-dependent; animation alone is not a blanket requirement. Recommendation to disclose this synthetic narration is a transparency choice, not a claim that every synthetic voice has an identical mandatory rule.
+- [Meta AI labeling](https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/): inspected the audio/video disclosure section, including realistic-sounding digitally created audio. Historical policy article, updated April 2025; verify the live upload prompt before use. No UI measurements or precise menu names inferred.
+- [TikTok AI content help](https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content): source lead/search excerpt available, direct page returned no readable body. Not treated as a full inspection or foundation for a mandatory rule. Recommend transparent labeling, with current in-app confirmation; exact account/UI settings unknown.
+- [TikTok Stitch help](https://support.tiktok.com/en/using-tiktok/creating-videos/stitch-settings): inspected available support text explaining individual-post and privacy controls. It does not prove current menu names on Ahmet's app. Initial reuse-off is an editorial recommendation to preserve context, not a claim about a platform default.
+- Instagram media-quality help URL `https://www.facebook.com/help/instagram/1038071743007909` redirected to login. No claim of inspecting the underlying article. “Enable highest quality if available” is a conditional upload recommendation; no button location or current account availability is asserted.
+
+No third-party crop dimensions, publication times, app versions or disclosure settings are copied into profiles. Existing platform geometry remains unchanged. Source dates describe reconnaissance, not owner review time.

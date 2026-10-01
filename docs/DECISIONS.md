@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-10-01 — Adaptive Creative Direction V1 for future content
+
+**Decision:** Magnivis is a brand, not a video template. Keep quality/identity/evidence constants while choosing execution per asset with rationale. Add a file-backed asset companion and future ProductionPlan hash binding, convergence review, provider-neutral CI proposal workflow and adaptive caption authoring boundary. Preserve exact historical implementations/approvals/media.
+
+**Reason:** Fixed caption styling and historical voice/token defaults, plus recovery-era preservation prose, could silently become future creative mandates. Bespoke Traffic motion demonstrates that not all production was copied. Similarities require judgment rather than a novelty quota.
+
+**Consequences:** Exact historical plans remain exempt; new/changed plans need source-bound ready direction and rights evidence. Immutable V1 caption/voice/render paths stay unchanged; new adapters are chosen when a story warrants them. Platform and publication gates remain separate. No new topic, rerender or external action occurs. CREATIVE-DIRECTION.md is authoritative; system-audits/adaptive-creative-direction-v1 records audit/regression evidence.
+
 ## 2026-09-29 — Lock approved masters and isolate platform-safe derivatives
 
 **Decision:** Bind every modern PlatformVariant to the exact owner-approved master, ProductionPlan, and CaptionPlan. Reuse those bytes when the destination safe area contains the master; create a separately hashed, private-review-only derivative when a proven platform safe area requires geometry changes. Track private-preview readiness separately from publication readiness.
@@ -293,3 +301,20 @@ Ahmet Nishefci explicitly accepts Phase 3, historical gaps, separate Wood Frog r
 The independently fetched GitHub candidate a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec passes locked install, 253 tests across 17 files, all 110 durable identities, exact restore, eight draft packages and production/caption/brain validation. Known geometry gaps remain explicitly INCOMPLETE. Use a merge commit through PR #1 to preserve recovery provenance; verify remote main in a separate clean clone and retain the receipts under recovery-audit/closure. Operational closure accepts gaps and makes no new content/platform authorization.
 
 GitHub PR #1 merged at 923641b6e00ef3196cf80ea6202aab8958e07330 with both original main and accepted recovery head as parents. A separate fresh GitHub main clone passed all 15 proof checks. Recovery is CLOSED operationally, historical gaps remain accepted, and the next content cycle still requires separate authorization. Final receipts: recovery-audit/closure/reconciliation.json and closure-remote-main-proof.json.
+
+## 2026-10-01 — Phantom Traffic exact editorial approval and master candidate
+
+Ahmet approved finalized editorial commit `21c3a5539cf02b1c4a88b8ff89aca0139a7ec079`, exact narration and scientific boundaries, and explicitly authorized one master production candidate. Record full package/asset approval with truthful decision-entry time, preserving all prior claim states and immutable handoffs. Use original controlled procedural motion with physical shaded vehicles/roadway because temporal consistency is essential to the forward-car/backward-pattern explanation; no generated stills or copyrighted footage are needed.
+
+Retain the exact candidate/audio and bounded final QA evidence in normal Git before handoff. Native provenance now distinguishes new originals from historical recovery artifacts. Owner master visual review remains mandatory; no platform/device approval or public action is authorized.
+
+## 2026-10-01 — Phantom Traffic master lock and presentation review
+
+Ahmet explicitly visually approved candidate SHA-256 bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b. Record decision-entry time rather than invent a supplied review instant; retain the same path/blob and immutable original render inputs. ProductionPlan revision 2 records exact master approval; platform/publication approvals remain false.
+
+Use the same master for four playback variants pending device evidence. Produce seven labeled local context/surface references with surviving profile authority intact. Create one original Instagram cover candidate to provide compact topic framing; retain unknown crop. Do not speculate on a Facebook feed derivative before measured evidence. Stop at real-device platform review; no upload, publication, scheduling or delivery creation.
+
+
+## 2026-10-01 — Phantom Traffic cycle closure
+
+Ahmet reports actual manual publication on four platforms, intended first comments posted, and acceptable live desktop/mobile presentation where applicable. Publication date is known; exact publication/review times and measured evidence are unknown. Three supplied public URLs are recorded, TikTok Studio remains management context with missing public permalink. Cycle #1 closes operationally with that honest gap; owner authorizes normal PR reconciliation into main. No prepublication pass is backfilled, no geometry or analytics invented, and no media changed. Adaptive Creative Direction V1 remains upstream authority for future execution. Next owner gate: NEW CONTENT CYCLE #2 DISCOVERY.

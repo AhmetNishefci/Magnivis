@@ -1,5 +1,16 @@
 # Platform operations and measurement
 
+## Phantom Traffic current publication state — 2026-10-01
+
+Four canonical `published-owner-reported` records now exist in `src/operations/phantom-traffic.ts`, registered alongside historical Speed of Light. Owner-supplied public URLs: [YouTube](https://www.youtube.com/shorts/3jmxLXcowC8), [Facebook](https://www.facebook.com/reel/2300822597344788), [Instagram](https://www.instagram.com/p/Dd89-PvFDqn/). TikTok is published by explicit owner report, with public URL/video ID unknown; `https://www.tiktok.com/tiktokstudio/content` is management context only. Date is 2026-10-01; exact posting time is unknown. Logical TikTok/Facebook account records do not invent actual handles or remote account IDs. Actual visibility/reuse/disclosure settings remain unknown.
+
+Final source variants remain revision 3/production-ready under the original accepted-risk authorization, not retroactively private-preview-passed. Publication records bind exact package manifest file hashes and prepared media identity; owner-reported use does not independently verify platform transcoded bytes. Comments are owner-reported posted using the intended copy, with unknown IDs/time/pin state/metrics.
+
+[Closure evidence](../content-intelligence/reviews/phantom-traffic-closure-v1/owner-decision.json) records broad live desktop/mobile acceptance where applicable. Individually named grid/feed tests and measured QA remain unknown. Append later precise observations; preserve the original decisions and evidence. TikTok permalink and optional native settings/analytics are follow-ups, not closure blockers.
+
+Schema semantics: legacy `published` retains its remote/date requirements. Distinct `published-owner-reported` requires explicit dated owner evidence, exact ready-delivery manifest hash and authorization; missing public identity is explicit rather than manufactured. Approval uses labeled decision-entry time when owner review time is not supplied.
+
+
 This document owns the implemented nonsecret operational state that sits after delivery. It does not contain credentials and does not authorize external actions.
 
 ## Implemented V1

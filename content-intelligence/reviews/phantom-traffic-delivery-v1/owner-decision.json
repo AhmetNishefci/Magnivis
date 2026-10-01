@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "owner-decision.phantom-traffic.platform.v1",
+  "revision": 1,
+  "owner": "Ahmet Nishefci",
+  "authority": "explicit-owner-message",
+  "enteredAt": "2026-10-01T10:53:14.470Z",
+  "timeBasis": "decision-entry",
+  "ownerSuppliedReviewTimestamp": null,
+  "ownerStatement": "I reviewed Phantom Traffic on the relevant real-device presentation surfaces and the presentation looks good.",
+  "scopeConfirmation": null,
+  "master": {
+    "artifactId": "phantom-traffic.locked-master.v1",
+    "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+  },
+  "reviewedVariants": [
+    {
+      "id": "phantom-traffic.asset.backward-wave.variant.youtube-shorts",
+      "revision": 1,
+      "sha256": "f766b131f6dfd4608b9aaa967c2229b97a4d55504b1151412a653a5a261647ee"
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.variant.tiktok-feed",
+      "revision": 1,
+      "sha256": "95650e05b0479d3b40ea771171001a8255e64adbeab083a5995ae598efce9e4c"
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.variant.instagram-reels",
+      "revision": 1,
+      "sha256": "ae78d0f09f967e0f89e5ad253494b4705b07070c4f21aa3c2e695ae4a993a5d5"
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.variant.facebook-reels",
+      "revision": 1,
+      "sha256": "11f5d7655af307bc225197fd4588d0611fb802c08673696a2e3df03484f2a99e"
+    }
+  ],
+  "requestedSurfaces": [
+    "youtube-shorts-viewer",
+    "tiktok-feed",
+    "instagram-reels-playback",
+    "instagram-profile-grid",
+    "facebook-reels-viewer",
+    "facebook-page-feed"
+  ],
+  "confirmedSurfaces": [],
+  "cover": {
+    "path": "artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+    "sha256": "3494907b3759b03146d1f050c17be653e807ba0b5b75abaafa0e87e79e0ccef5",
+    "tested": null
+  },
+  "metadata": {
+    "device": null,
+    "os": null,
+    "appVersion": null,
+    "testedAt": null,
+    "screenshots": [],
+    "cropMeasurements": null
+  },
+  "limitations": [
+    "Owner real-device approval is recorded; the initial statement does not enumerate which distinct surfaces were actually tested. Scope confirmation was requested.",
+    "No supplied review timestamp, device/app metadata, screenshots or crop coordinates.",
+    "Exact Instagram cover use is unconfirmed. No local model is promoted to measured real-device evidence."
+  ],
+  "publicationAuthorized": false
+}

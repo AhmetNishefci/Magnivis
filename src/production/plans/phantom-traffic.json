@@ -1,0 +1,247 @@
+{
+  "approvedScriptSha256": "1c5b5af5abb0e9522cd199a2f79d2f863a9f94c742437041c76cb703978ea87e",
+  "assets": [
+    {
+      "id": "asset.phantom-traffic.visuals",
+      "kind": "procedural-code",
+      "path": "src/components/TrafficWorld.tsx",
+      "provenance": {
+        "notes": "Original vehicles, track, environment and explanatory kinematics; no copied paper figures or external footage.",
+        "origin": "original-procedural",
+        "rights": "magnivis-original"
+      }
+    },
+    {
+      "id": "asset.phantom-traffic.narration",
+      "kind": "generated-narration",
+      "path": "public/audio/narration/phantom-traffic",
+      "provenance": {
+        "notes": "Exact owner-approved script, established Kokoro local model/voice, six retained WAVs with duration/hash provenance.",
+        "origin": "local-synthetic-voice",
+        "rights": "kokoro-apache-2.0-model-output"
+      }
+    },
+    {
+      "id": "asset.phantom-traffic.soundscape",
+      "kind": "generated-audio",
+      "path": "public/audio/phantom-traffic.wav",
+      "provenance": {
+        "notes": "Seeded stereo road texture and restrained synthesized accents; no samples.",
+        "origin": "original-procedural",
+        "rights": "magnivis-original"
+      }
+    },
+    {
+      "id": "asset.phantom-traffic.captions",
+      "kind": "caption-track",
+      "path": "captions/phantom-traffic.en.vtt",
+      "provenance": {
+        "notes": "Optional WebVTT derived from the same exact designed burned-in CaptionPlan.",
+        "origin": "derived-from-approved-script",
+        "rights": "magnivis-original"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "animationIntent": "Analytic forward-only trajectories with an upstream-moving slow phase; membership changes. Restrained shaded car identities and original asphalt/terrain provide physical context.",
+      "audioIntent": "Exact Kokoro narration dominates an original low-level deterministic road-texture bed and soft transition cues.",
+      "claimIds": [
+        "phantom-traffic.claim.backward-pattern"
+      ],
+      "frames": {
+        "end": 136,
+        "start": 0
+      },
+      "id": "production-plan.phantom-traffic.v1.beat.opposing-motion",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.1",
+      "objective": "Overhead physical road scene: forward-moving cars; a soft congestion highlight shifts upstream. Distinct arrow labels identify cars and slow pattern; track one car through the scene.",
+      "onScreenText": [],
+      "sceneType": "opposing-motion",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.1"
+      ],
+      "sourceVisualPlanId": "phantom-traffic.asset.backward-wave.visual.1",
+      "transitionIntent": "Clean scene transition; no static title or logo opening."
+    },
+    {
+      "animationIntent": "Original shaded 22-vehicle loop; uniform initial flow transitions to a disclosed illustrative slow cluster.",
+      "audioIntent": "Exact Kokoro narration dominates an original low-level deterministic road-texture bed and soft transition cues.",
+      "claimIds": [
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.no-obstruction"
+      ],
+      "frames": {
+        "end": 361,
+        "start": 136
+      },
+      "id": "production-plan.phantom-traffic.v1.beat.controlled-ring",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.2",
+      "objective": "An original, uncluttered circular-track reconstruction with 22 recognizable vehicles, initially nearly evenly spaced. Reveal a slow cluster. Label EXPERIMENT RECONSTRUCTION; no copied scientific figure or movie; no claim of measured trajectory playback.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "phantom-traffic.claim.vehicles"
+          ],
+          "text": "22 CARS"
+        }
+      ],
+      "sceneType": "controlled-ring",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.2"
+      ],
+      "sourceVisualPlanId": "phantom-traffic.asset.backward-wave.visual.2",
+      "transitionIntent": "Clean scene transition; no static title or logo opening."
+    },
+    {
+      "animationIntent": "Nonmonotonic delayed slowdown profiles show one growing disturbance while preserving forward motion and positive separation.",
+      "audioIntent": "Exact Kokoro narration dominates an original low-level deterministic road-texture bed and soft transition cues.",
+      "claimIds": [
+        "phantom-traffic.claim.conditional-growth"
+      ],
+      "frames": {
+        "end": 569,
+        "start": 361
+      },
+      "id": "production-plan.phantom-traffic.v1.beat.following-response",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.3",
+      "objective": "Closer overhead view shows one illustrative speed/spacing fluctuation whose following responses grow overall. Narration-faithful captions retain can sometimes grow; this is a conditional example, not every dense flow or every follower braking harder.",
+      "onScreenText": [],
+      "sceneType": "following-response",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.3"
+      ],
+      "sourceVisualPlanId": "phantom-traffic.asset.backward-wave.visual.3",
+      "transitionIntent": "Clean scene transition; no static title or logo opening."
+    },
+    {
+      "animationIntent": "Analytic forward-only trajectories with an upstream-moving slow phase; membership changes. Restrained shaded car identities and original asphalt/terrain provide physical context.",
+      "audioIntent": "Exact Kokoro narration dominates an original low-level deterministic road-texture bed and soft transition cues.",
+      "claimIds": [
+        "phantom-traffic.claim.turnover"
+      ],
+      "frames": {
+        "end": 698,
+        "start": 569
+      },
+      "id": "production-plan.phantom-traffic.v1.beat.cluster-membership",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.4",
+      "objective": "Highlight a car entering the rear of the slow patch and a different car accelerating out at the front. Rear/front are anchored to the forward travel direction. Cars may pause, then resume forward; no car reverses.",
+      "onScreenText": [],
+      "sceneType": "cluster-membership",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.4"
+      ],
+      "sourceVisualPlanId": "phantom-traffic.asset.backward-wave.visual.4",
+      "transitionIntent": "Clean scene transition; no static title or logo opening."
+    },
+    {
+      "animationIntent": "Analytic forward-only trajectories with an upstream-moving slow phase; membership changes. Restrained shaded car identities and original asphalt/terrain provide physical context.",
+      "audioIntent": "Exact Kokoro narration dominates an original low-level deterministic road-texture bed and soft transition cues.",
+      "claimIds": [
+        "phantom-traffic.claim.turnover",
+        "phantom-traffic.claim.backward-pattern"
+      ],
+      "frames": {
+        "end": 842,
+        "start": 698
+      },
+      "id": "production-plan.phantom-traffic.v1.beat.backward-pattern-payoff",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.5",
+      "objective": "Zoom out over the same scene. Follow one car forward while the soft slow-pattern region moves upstream. Changing cluster membership supplies the visual proof. A persistent SIMPLIFIED EXPLANATORY MODEL label distinguishes illustration from measured simulation.",
+      "onScreenText": [],
+      "sceneType": "backward-pattern-payoff",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.5"
+      ],
+      "sourceVisualPlanId": "phantom-traffic.asset.backward-wave.visual.5",
+      "transitionIntent": "Cut to a wider road-fixed view and hold the payoff before the ending."
+    },
+    {
+      "animationIntent": "Analytic forward-only trajectories with an upstream-moving slow phase; membership changes. Restrained shaded car identities and original asphalt/terrain provide physical context.",
+      "audioIntent": "Exact Kokoro narration dominates an original low-level deterministic road-texture bed and soft transition cues.",
+      "claimIds": [
+        "phantom-traffic.claim.bottleneck-distinction",
+        "phantom-traffic.claim.no-obstruction"
+      ],
+      "frames": {
+        "end": 1025,
+        "start": 842
+      },
+      "id": "production-plan.phantom-traffic.v1.beat.qualified-resolution",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.6",
+      "objective": "Resolve on the moving pattern in clear roadway; scope text communicates one kind of jam. No claim that an empty road diagnoses the cause of a real queue.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "phantom-traffic.claim.no-obstruction"
+          ],
+          "text": "The road ahead is clear."
+        }
+      ],
+      "sceneType": "qualified-resolution",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.6"
+      ],
+      "sourceVisualPlanId": "phantom-traffic.asset.backward-wave.visual.6",
+      "transitionIntent": "Clean scene transition; no static title or logo opening."
+    }
+  ],
+  "captions": {
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08",
+    "designedBurnedIn": true,
+    "file": "captions/phantom-traffic.en.vtt",
+    "generatorId": "caption-generator.magnivis-designed.v1",
+    "generatorVersion": 1,
+    "placement": "optional-platform-track-lower-center",
+    "source": "approved-narration-cues"
+  },
+  "contentAsset": {
+    "id": "phantom-traffic.asset.backward-wave",
+    "revision": 3,
+    "sha256": "bc48c820585370750ca040e3683781391390b0e058d2f09f6c083803ef348f97"
+  },
+  "excludedClaimIds": [
+    "phantom-traffic.claim.tiny-tap",
+    "phantom-traffic.claim.from-nothing",
+    "phantom-traffic.claim.driver-blame",
+    "phantom-traffic.claim.reaction-only",
+    "phantom-traffic.claim.nobody-caused",
+    "phantom-traffic.claim.all-waves",
+    "phantom-traffic.claim.universal-speed",
+    "phantom-traffic.claim.always-dense",
+    "phantom-traffic.claim.autonomy",
+    "phantom-traffic.claim.empty-proof",
+    "phantom-traffic.claim.backward-cars"
+  ],
+  "format": {
+    "durationSeconds": 34.166666666666664,
+    "fps": 30,
+    "height": 1920,
+    "width": 1080
+  },
+  "id": "production-plan.phantom-traffic.v1",
+  "knowledgePackage": {
+    "id": "phantom-traffic",
+    "revision": 3,
+    "sha256": "2b890a18a4c3a7d5a2647f517c3f37c0d1f42c81c4c8bbedf17fe691b9e154e8"
+  },
+  "ownerDecision": {
+    "id": "owner-decision.phantom-traffic.editorial-lock.v1",
+    "revision": 1,
+    "sha256": "aa0ff09217ce87a7a61cba694418151c4398fc9639f7b1c11a350250aa85cd68"
+  },
+  "reviewRequirements": [
+    "OWNER MASTER VISUAL REVIEW of exact MP4 hash; no automatic visual approval.",
+    "Ring: EXPERIMENT RECONSTRUCTION; mechanism/road: SIMPLIFIED EXPLANATORY MODEL.",
+    "No reverse car motion, collisions, universal density/brake-tap/driver-blame claims.",
+    "Renewed platform/device QA only after master approval; unknown geometry remains unknown.",
+    "No upload, delivery or publication authority."
+  ],
+  "revision": 1,
+  "safeAreaProfileId": "safe-area.vertical-short-master.v1",
+  "schemaVersion": 1,
+  "status": "rendered-candidate-visual-review-required"
+}

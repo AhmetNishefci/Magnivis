@@ -25,6 +25,7 @@ export const workflowRunSchema = z.object({
   id: stableKnowledgeIdSchema.refine((id) => id.startsWith('run.')),
   revision: z.number().int().positive(),
   stage: z.enum([
+    'creative-direction',
     'topic-evaluation',
     'research-workspace',
     'hook-generation-review',
@@ -53,7 +54,7 @@ export const workflowRunSchema = z.object({
   provenance: aiGenerationProvenanceSchema,
   review: reviewSchema,
   derivedArtifacts: z.array(z.object({
-    kind: z.enum(['topic-evaluation', 'research-workspace', 'knowledge-package', 'hook-batch', 'content-asset']),
+    kind: z.enum(['topic-evaluation', 'research-workspace', 'knowledge-package', 'hook-batch', 'content-asset', 'creative-direction']),
     id: stableKnowledgeIdSchema,
     revision: z.number().int().positive(),
   }).strict()),
@@ -81,6 +82,7 @@ export const sha256Json = (value: unknown) => createHash('sha256')
   .digest('hex');
 
 const workflowByStage: Record<WorkflowRun['stage'], string> = {
+  'creative-direction': 'workflow.creative-direction',
   'topic-evaluation': 'workflow.topic-evaluation',
   'research-workspace': 'workflow.research-workspace',
   'hook-generation-review': 'workflow.hook-generation-review',

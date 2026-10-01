@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "owner-decision.phantom-traffic.publication.v1",
+  "revision": 1,
+  "owner": "Ahmet Nishefci",
+  "authority": "explicit-owner-message",
+  "decision": "PUBLICATION AUTHORIZED",
+  "enteredAt": "2026-10-01T11:16:54.833Z",
+  "timeBasis": "decision-entry",
+  "ownerSuppliedReviewTimestamp": null,
+  "reviewedCommit": "3bf67af7fc5b10b4150d459f9431397d2946ad95",
+  "ownerStatement": "I authorize Phantom Traffic for publication using the delivery packages already prepared by Magnivis. I did NOT complete the previously requested six-surface real-device pre-publication review. I am explicitly accepting that remaining presentation uncertainty and choosing to proceed with publication.",
+  "correctsPriorDecision": {
+    "path": "content-intelligence/reviews/phantom-traffic-delivery-v1/owner-decision.json",
+    "sha256": "f17ca8c304320e3762c125bfa01e5396b277efd9c72b7d8ef9b7f3d4859c1c86"
+  },
+  "master": {
+    "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+  },
+  "selectedInstagramCover": {
+    "path": "artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+    "sha256": "3494907b3759b03146d1f050c17be653e807ba0b5b75abaafa0e87e79e0ccef5"
+  },
+  "preparedPackageIndex": {
+    "path": "content-intelligence/reviews/phantom-traffic-delivery-v1/delivery-index.json",
+    "sha256": "60ae3b5970c3e248ce64b3d838ec842b9caf4e46d2064671b2fe797627187b19"
+  },
+  "copy": {
+    "path": "content-intelligence/reviews/phantom-traffic-delivery-v1/platform-copy.json",
+    "sha256": "2bf297b6e928dcdb6de20515acf33a7ab25ed140f305ee2aa056262044a4e88f"
+  },
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "presentationRiskAccepted": true,
+  "realDevicePrepublicationReviewCompleted": false,
+  "realDevicePassesGranted": [],
+  "coverDeviceApprovalGranted": false,
+  "metadata": {
+    "device": null,
+    "os": null,
+    "appVersion": null,
+    "testedAt": null,
+    "screenshots": [],
+    "measurements": null
+  },
+  "execution": "owner-manual-only",
+  "assistantUploadAuthorized": false,
+  "publicationOccurred": false,
+  "postPublicationReview": "pending-live-publication-evidence",
+  "limitations": [
+    "Native exclusion/caption geometry remains incomplete.",
+    "Instagram grid and Facebook Page/feed crop geometry remain unmeasured.",
+    "Cover selected for use, not declared device-tested.",
+    "Earlier owner report preserved; this clarification supersedes its interpretation, not its bytes."
+  ]
+}

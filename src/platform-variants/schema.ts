@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {platformApprovalSchema} from './owner-presentation';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 import {taxonomyTermSchema} from '../knowledge/taxonomy';
 
@@ -35,6 +36,7 @@ export const platformPreviewStatusSchema = z.enum([
   'not-ready',
   'ready-for-private-preview',
   'private-preview-passed',
+  'owner-risk-accepted',
 ]);
 
 const sourceMasterSchema = z.object({
@@ -53,6 +55,10 @@ const sourceMasterSchema = z.object({
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
   }).strict(),
   relationship: z.enum(['exact-master', 'platform-safe-area-derivative']),
+  contentBoundsEvidence: z.object({
+    regions: z.object({path: z.string().min(1), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict(),
+    report: z.object({path: z.string().min(1), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict(),
+  }).strict().optional(),
 }).strict();
 
 const operatorGuidanceSchema = z.object({
@@ -80,11 +86,7 @@ const operatorGuidanceSchema = z.object({
   notes: z.array(z.string().min(1)).default([]),
 }).strict();
 
-const approvalSchema = z.object({
-  approvedBy: z.string().min(1),
-  approvedAt: z.iso.date(),
-  notes: z.string().min(1).optional(),
-}).strict();
+const approvalSchema = platformApprovalSchema;
 
 export const platformVariantSchema = z.object({
   id: stableKnowledgeIdSchema,
@@ -113,6 +115,7 @@ export const platformVariantSchema = z.object({
   cover: z.object({
     strategy: z.enum(['frame-selection', 'custom-image', 'platform-default']),
     intent: z.string().min(1),
+    artifact: z.object({id:z.string().min(1),path:z.string().min(1),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict().optional(),
   }).strict(),
   captions: z.object({
     behavior: z.enum(['external-track', 'platform-generated', 'burned-in', 'none']),
@@ -132,6 +135,7 @@ export const platformVariantSchema = z.object({
   operatorGuidance: operatorGuidanceSchema.optional(),
   status: platformVariantStatusSchema,
   approval: approvalSchema.optional(),
+  presentationRiskAcceptance: z.object({decision: z.object({id:z.string().startsWith('owner-decision.'),revision:z.number().int().positive(),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict(),reason:z.string().min(1),realDevicePassGranted:z.literal(false)}).strict().optional(),
 }).strict().superRefine((variant, context) => {
   const expectedPrefix = `${variant.contentAssetId}.variant.`;
   if (!variant.id.startsWith(expectedPrefix)) {
@@ -223,6 +227,10 @@ export const platformVariantSchema = z.object({
       path: ['previewStatus'],
       message: 'Ready-for-private-preview variants must retain the platform preview gate',
     });
+  }
+
+  if ((variant.previewStatus === 'owner-risk-accepted') !== Boolean(variant.presentationRiskAcceptance) || (variant.presentationRiskAcceptance && (variant.productionIntent.platformPreviewRequired || variant.approval?.ownerDecision?.sha256 !== variant.presentationRiskAcceptance.decision.sha256))) {
+    context.addIssue({code:'custom',message:'Owner risk acceptance requires matching explicit decision approval, no device pass and no remaining prepublication preview gate'});
   }
 
   if (variant.sourceMaster) {

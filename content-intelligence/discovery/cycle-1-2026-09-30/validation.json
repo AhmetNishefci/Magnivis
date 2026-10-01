@@ -1,0 +1,25 @@
+{
+  "validatedAt": "2026-09-30T21:54:16.148404+00:00",
+  "node": "22.23.3",
+  "pnpm": "10.17.1",
+  "discoveryCommand": "node --import tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-1-2026-09-30/discovery.json",
+  "discoveryResult": "passed",
+  "candidates": 40,
+  "finalists": 11,
+  "sourceLeads": 12,
+  "repositoryCommand": "pnpm check",
+  "repositoryResult": "passed",
+  "testFiles": 17,
+  "tests": 253,
+  "negativeChecks": {
+    "owner-approval-injection": "correctly-rejected",
+    "selected-topic-injection": "correctly-rejected",
+    "missing-triage": "correctly-rejected",
+    "stale-evaluation": "correctly-rejected",
+    "duplicate-identity": "correctly-rejected"
+  },
+  "limitations": [
+    "Structure and repository behavior only; no factual verification or owner approval.",
+    "No rendering, mobile QA, platform action or paid provider call."
+  ]
+}

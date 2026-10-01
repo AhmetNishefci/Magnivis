@@ -1,0 +1,90 @@
+{
+  "cues": [
+    {
+      "duration": 4.1,
+      "file": "audio/narration/phantom-traffic/hook.wav",
+      "id": "hook",
+      "start": 0.1,
+      "transcript": "The cars move forward. But a traffic jam can move backward."
+    },
+    {
+      "duration": 7.05,
+      "file": "audio/narration/phantom-traffic/experiment.wav",
+      "id": "experiment",
+      "start": 4.533333333333333,
+      "transcript": "Researchers put twenty-two cars on a circular track. No obstruction. Yet stop-and-go traffic formed."
+    },
+    {
+      "duration": 6.55,
+      "file": "audio/narration/phantom-traffic/mechanism.wav",
+      "id": "mechanism",
+      "start": 12.033333333333333,
+      "transcript": "In dense traffic, small speed changes can sometimes grow as drivers adjust to the cars ahead."
+    },
+    {
+      "duration": 3.85,
+      "file": "audio/narration/phantom-traffic/membership.wav",
+      "id": "membership",
+      "start": 18.966666666666665,
+      "transcript": "Cars join the slow patch at the back and leave at the front."
+    },
+    {
+      "duration": 3.3,
+      "file": "audio/narration/phantom-traffic/payoff.wav",
+      "id": "payoff",
+      "start": 23.266666666666666,
+      "transcript": "The cars change. The pattern moves backward."
+    },
+    {
+      "duration": 4.825,
+      "file": "audio/narration/phantom-traffic/ending.wav",
+      "id": "ending",
+      "start": 28.066666666666666,
+      "transcript": "Not every jam starts this way. But this kind needs no blocked road."
+    }
+  ],
+  "durationFrames": 1025,
+  "format": {
+    "durationSeconds": 34.166666666666664,
+    "fps": 30,
+    "height": 1920,
+    "width": 1080
+  },
+  "measuredNarrationSeconds": 29.675,
+  "measurementMethod": "ffprobe WAV durations; generation-completion/provenance entry time",
+  "provenance": {
+    "approvedScriptSha256": "1c5b5af5abb0e9522cd199a2f79d2f863a9f94c742437041c76cb703978ea87e",
+    "cueArtifacts": [
+      {
+        "id": "hook",
+        "sha256": "1cf2280924134968a95f8c0db3de7b25128ed9b0dd2dd89866d567b7172a2dc7"
+      },
+      {
+        "id": "experiment",
+        "sha256": "ce13b79e87b8f1716f62ce13612c3ca2e2ab9b79f0d5a3142e26f7890d0ce5ab"
+      },
+      {
+        "id": "mechanism",
+        "sha256": "27e3e279c9e14b9a7d3a948a7f67104c54523377b1d8bb8d84b322efbab9b1b5"
+      },
+      {
+        "id": "membership",
+        "sha256": "5816079e05f03761171a5b0285dea6f3ee0cdeca80e733844c21d8ea913abff8"
+      },
+      {
+        "id": "payoff",
+        "sha256": "6fff2ccd6584d6349189dee14f7f75385585e72c2198a8c6298e90be40abb3dc"
+      },
+      {
+        "id": "ending",
+        "sha256": "921676268a3b0f9cef27eeb8a17bc3ddb27d5d8623cc2b07348a3ed672443793"
+      }
+    ],
+    "generatedAt": "2026-10-01T08:37:51.643Z",
+    "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "provider": "kokoro-local",
+    "speed": 1,
+    "voiceId": "af_heart"
+  },
+  "soundscapeGeneratorId": "audio-generator.phantom-traffic.v1"
+}

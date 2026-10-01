@@ -1,3 +1,4 @@
+import {phantomTrafficPlatformVariants} from '../src/platform-variants/variants/phantom-traffic';
 import {describe, expect, it} from 'vitest';
 import {speedOfLightPublishedShortAsset} from '../src/content-assets/assets/speed-of-light';
 import {woodFrogApprovedContentAsset} from '../src/content-assets/assets/wood-frog-approved';
@@ -110,7 +111,7 @@ describe('PlatformVariant V1 schema and registry', () => {
       speedOfLightYoutubeShortsVariant,
     );
     expect(platformVariantRegistry.list().map(({id}) => id)).toEqual(
-      [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants].map(({id}) => id).sort(),
+      [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants, ...phantomTrafficPlatformVariants].map(({id}) => id).sort(),
     );
     expect(platformVariantRegistry.listByContentAsset(
       speedOfLightPublishedShortAsset.id,

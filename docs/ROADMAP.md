@@ -1,5 +1,10 @@
 # Roadmap
 
+## Cycle #1 completion checkpoint — 2026-10-01
+
+Phantom Traffic completes the first fresh post-recovery content cycle: broad discovery, bounded evidence/editorial review, approved exact master, four manual delivery variants, owner-authorized publication under accepted prepublication presentation uncertainty, and owner-reported live desktop/mobile acceptance. All four publications are recorded with exact source/delivery hashes; TikTok public permalink remains a nonblocking evidence follow-up. No analytics or universal platform geometry inferred. Future content remains governed by Adaptive Creative Direction V1 and independent platform QA. Next gate is **NEW CONTENT CYCLE #2 DISCOVERY**, not yet authorized or started.
+
+
 This roadmap describes sequence, not promises or permission to sacrifice quality. `docs/PROJECT-STATE.md` records current execution state; `docs/ARCHITECTURE.md` records system boundaries.
 
 ## Phase 0 — audit and foundation (complete)
@@ -83,3 +88,7 @@ Git-backed artifact retention and final brain/clean-clone verification are the b
 ## Owner-approved operational recovery handoff
 
 Operational recovery closes with the authorized main reconciliation after passing candidate and clean-clone gates. Historical recovery sequencing above is retained for chronology; the Git-backed archive is implemented, accepted lost evidence is not a reconstruction task, and renewed device QA belongs to the next separately authorized production. Product roadmap and long-form brief remain intact. Next separately authorized milestone: NEW CONTENT CYCLE #1 AFTER RECOVERY, beginning with open-universe Content Intelligence proposals, research/claim/editorial gates, story-specific captions, necessary variants/covers and renewed six-surface real-device QA with durable evidence. Start around one excellent unique Short/day; two/day remains future target capacity. Provisional mature two-post windows (15:00/21:00 Kosovo local time) and audience/community flywheel belong to STRATEGY.md, not platform constraints. No new discovery/production/publication happens during closure.
+
+## Adaptive creative direction — future content
+
+Adaptive Creative Direction V1 is implemented for future content: asset-bound decisions, rationale, convergence review, CI proposal workflow and exact future ProductionPlan binding. It preserves historical outputs and gates. Future story-specific renderers/providers and long-form chapter/media execution remain need-driven, not universal templates. No Content Cycle #2 or new production is authorized by this milestone.

@@ -1,3 +1,4 @@
+import {creativeDirectionWorkflow} from './creative-direction';
 import type {PromptWorkflow} from '../ai/provider';
 import type {ContentAsset} from '../content-assets/schema';
 import type {KnowledgePackage} from '../knowledge/schema';
@@ -124,6 +125,7 @@ export const contentAssetReviewDraftWorkflow: PromptWorkflow<ContentAssetDraftRe
 };
 
 const workflows = [
+  creativeDirectionWorkflow,
   topicEvaluationWorkflow,
   researchWorkspaceWorkflow,
   hookProposalWorkflow,

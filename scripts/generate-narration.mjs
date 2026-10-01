@@ -1,5 +1,5 @@
 import console from 'node:console';
-import {mkdirSync} from 'node:fs';
+import {mkdirSync, readFileSync} from 'node:fs';
 import process from 'node:process';
 import {KokoroTTS} from 'kokoro-js';
 
@@ -80,6 +80,13 @@ const configurations = {
       {id: 'payoff', text: 'As the frog thaws, its heart starts beating first; breathing and leg reflexes follow. It survived by controlling the freeze—not by staying unfrozen.'},
     ],
   },
+};
+
+// Consume the locked ContentAsset text directly; no TTS-specific wording rewrite.
+const trafficAsset = JSON.parse(readFileSync('content-intelligence/reviews/phantom-traffic-approved-v3/content-asset.approved.json', 'utf8'));
+configurations['phantom-traffic'] = {
+  outputDirectory: 'public/audio/narration/phantom-traffic', speed: 1.0,
+  cues: trafficAsset.script.segments.map((segment, index) => ({id: ['hook', 'experiment', 'mechanism', 'membership', 'payoff', 'ending'][index], text: segment.text})),
 };
 
 const requestedId = process.argv[2] ?? 'earth-to-stars';

@@ -1,0 +1,111 @@
+{
+  "assessment": {
+    "captionRegion": null,
+    "decorativeCroppingAllowed": true,
+    "evidenceLevel": "owner-historical",
+    "exclusionZones": null,
+    "geometryStatus": "unmeasured",
+    "insetContainment": null,
+    "insets": null,
+    "lifecycle": "PROVISIONAL",
+    "nativeAssessment": {
+      "state": "UNMEASURED",
+      "unresolved": [
+        "surface geometry"
+      ],
+      "violations": []
+    },
+    "platformApprovalGranted": false,
+    "profileId": "facebook-page-feed.pending",
+    "realDeviceReviewRequired": true,
+    "surface": "facebook-page-feed"
+  },
+  "cover": null,
+  "derivativeCreated": false,
+  "label": "LOCAL MODEL / PROVISIONAL / REAL-DEVICE REQUIRED",
+  "model": "facebook-feed",
+  "output": {
+    "coverArtifactId": null,
+    "derivativeArtifactId": null,
+    "evidence": [
+      "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-feed.png"
+    ],
+    "masterArtifactId": "phantom-traffic.locked-master.v1",
+    "platformVariantId": "phantom-traffic.asset.backward-wave.variant.facebook-reels",
+    "strategy": "ONE_MASTER",
+    "surface": "facebook-page-feed"
+  },
+  "platformApprovalGranted": false,
+  "preview": {
+    "path": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-feed.png",
+    "sha256": "b3c2cd108648e2288a827d6e0e2e9c1df1c0ac06c2648734a54cc5fbe22af6f8"
+  },
+  "profileSnapshotSha256": "442210094ddc011a7c011d81d7074abbb6e45f4a25d5a19b6bb68dc81e63f5af",
+  "publicationApprovalGranted": false,
+  "qa": {
+    "appVersion": null,
+    "context": "mobile-app",
+    "coverSha256": null,
+    "device": null,
+    "evidence": [
+      "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-feed.png"
+    ],
+    "id": "presentation-qa.phantom-traffic.facebook-feed.local.v1",
+    "masterArtifactId": "phantom-traffic.locked-master.v1",
+    "mediaSha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+    "notes": "LOCAL MODEL / PROVISIONAL / REAL-DEVICE REQUIRED. CROP UNKNOWN — full 9:16 reference only. No guessed grid/feed crop. Context identifies the intended surface, not an actual device session. No upload, native UI screenshot or platform pass. Caption regions and exact native exclusion zones remain unmeasured.",
+    "os": null,
+    "platformVariantId": "phantom-traffic.asset.backward-wave.variant.facebook-reels",
+    "profileId": "facebook-page-feed.pending",
+    "reviewer": null,
+    "state": "PRIVATE_PREVIEW_PENDING",
+    "surface": "facebook-page-feed",
+    "testedAt": null
+  },
+  "realDeviceEvidence": null,
+  "recordedAt": "2026-10-01T10:20:24.415Z",
+  "schemaVersion": 1,
+  "sourceFrames": [
+    {
+      "label": "Opening · 0.0 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-01-0.0s.png",
+      "sha256": "df92a0701f7320f38b305774e057ef9c67373e75bc070fff44c46bb80f3ece19"
+    },
+    {
+      "label": "Opening · 0.5 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-02-0.5s.png",
+      "sha256": "3e68870ab8dd521811756d1c2d2d028f6abb4b80e3cca85a5653f063f6e1dcaf"
+    },
+    {
+      "label": "Opening · 1.0 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-04-1.0s.png",
+      "sha256": "31e528d7bb45a712f50dbc60063f4b50119af64178889af96be1c8a7bdf44221"
+    },
+    {
+      "label": "22-car experiment · 10.5 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-13-10.5s.png",
+      "sha256": "59045d69365bb78aa045d8522278b02dc3cea97000f6a4477b0c60e1a9753fe9"
+    },
+    {
+      "label": "Conditional-growth caption · 13.5 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-15-13.5s.png",
+      "sha256": "f777a1ea30cf7fdb6f461ba762ffc669fd9d675cf5cdd1ba441dc97d854e7f7b"
+    },
+    {
+      "label": "Membership turnover · 20.1 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-20-20.1s.png",
+      "sha256": "9a2c6269a989a64257d44cd1c6a89deb1141fcefe3ec696d9d60695a7a2a6bcf"
+    },
+    {
+      "label": "Backward-pattern payoff · 25.6 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-25-25.6s.png",
+      "sha256": "2f2d7c2d295acc5b6b6ce179c36c7fe9aa1b58a8fc2613d9dca447c6be7258a6"
+    },
+    {
+      "label": "Qualified ending · 31.6 s",
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-29-31.6s.png",
+      "sha256": "ed80360ea9a701f167ddb12dc31c440c3fb5c73c26f162ab070c806bfa4b7764"
+    }
+  ],
+  "timeBasis": "local-model-generation-entry"
+}

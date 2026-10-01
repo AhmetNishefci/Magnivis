@@ -15,6 +15,8 @@ export const contentAssetStatusSchema = z.enum([
 ]);
 
 export const visualTypeSchema = z.enum([
+  'bespoke',
+  'hybrid',
   'footage',
   'diagram',
   'animation',
@@ -95,9 +97,15 @@ const narrationPlanSchema = z.object({
 
 const approvalSchema = z.object({
   approvedBy: z.string().min(1),
-  approvedAt: z.iso.date(),
+  approvedAt: z.iso.date().optional(),
+  decisionEnteredAt: z.iso.datetime().optional(),
+  reviewTimeBasis: z.literal('decision-entry').optional(),
   notes: z.string().min(1).optional(),
-}).strict();
+}).strict().superRefine((approval, context) => {
+  if (!approval.approvedAt && !approval.decisionEnteredAt) context.addIssue({code: 'custom', message: 'Approval requires supplied date or labeled decision-entry time'});
+  if (approval.decisionEnteredAt && (approval.approvedAt || approval.reviewTimeBasis !== 'decision-entry')) context.addIssue({code: 'custom', message: 'Decision-entry time cannot impersonate owner-supplied approval time'});
+  if (approval.reviewTimeBasis && !approval.decisionEnteredAt) context.addIssue({code: 'custom', message: 'Decision-entry basis needs timestamp'});
+});
 
 const duplicateValues = (values: readonly string[]) => {
   const seen = new Set<string>();

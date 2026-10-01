@@ -20,6 +20,18 @@ The workflow deliberately cannot convert generated research directly into an app
 
 Topic discovery is intentionally broader than science. Manual candidates may come from human behavior, philosophy, critical thinking, practical life skills, communication, relationships, business, economics, financial literacy, culture, history, technology, or any future legitimate domain. The existing open domain/topic slugs already support this; do not add a closed subject enum. Candidate evaluation should apply the topic identity, anti-self-help boundaries, evidence distinctions, diversity signals, and flexible formats defined in `docs/STRATEGY.md`.
 
+## Manual discovery cycle after recovery
+
+The first owner-authorized post-recovery discovery handoff is [Cycle #1, 2026-09-30](../content-intelligence/discovery/cycle-1-2026-09-30/owner-review.md). Its `discovery.json` contains 40 existing-schema TopicCandidates, per-candidate proposed triage and duplicate checks, 11 existing-schema TopicEvaluationDrafts and unreviewed feasibility source leads. It records manual session-assisted provenance; it is **not** a provider workflow envelope, fixture run or paid live execution. Classification follows idea discovery. The cycle-scoped registry is checked together with existing canonical candidates without changing historical registrations or approvals.
+
+Validate this discovery handoff with:
+
+```sh
+pnpm exec tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-1-2026-09-30/discovery.json
+```
+
+The read-only validator checks schema, identity collisions, candidate dates/states, complete triage, finalist/evaluation revisions, dated source leads and the pending owner-selection gate. It does not verify factual claims or call a provider. The existing topic-specific CLI remains unchanged; this manual discovery boundary does not require creating a ResearchWorkspace or package for every proposed topic. Evaluations recommending `research` are conditional proposals; no research begins before owner selection and authorization. No selected topic or owner decision exists in this handoff.
+
 ## First real operator trial
 
 The first new topic is `topic.wood-frog-freeze`: **How wood frogs survive being frozen**. It was selected because the stopped-heart/recovery contradiction is immediately understandable, the physical and chemical mechanism has strong visual potential, and peer-reviewed plus government sources can support a focused evergreen short.
@@ -137,6 +149,14 @@ The files contain no credentials, hidden reasoning, or chain of thought. Validat
 
 Retrieval does not establish evidentiary support by itself. A human still confirms that the source is authoritative, the locator says what the claim asserts, context is preserved, conflicts are represented, and caveats are adequate. Generated prose never counts as evidence.
 
+## Cycle #1 selected research/editorial handoff
+
+Ahmet selected `topic.phantom-traffic` after discovery and explicitly authorized bounded research plus an editorial proposal. [The review bundle](../content-intelligence/reviews/phantom-traffic-v1/owner-review.md) uses existing ResearchWorkspaceDraft, KnowledgePackage, ContentAsset, HookProposalBatch and ClaimReviewBundle schemas. Initial source leads remain unreviewed and initial claims unverified in the preserved workspace; source inspection is recorded separately before the supported review snapshot. The original discovery handoff is not rewritten as an approval.
+
+This is manual session-assisted source inspection and proposal authoring, **not a paid provider run or workflow envelope**. No live CLI stages or fabricated provider/usage records exist. The live-stage human evidence pause above remains unchanged. The explicit owner request permits these review drafts; it does not substitute for human verification or the editorial gate. Claims stay `supported`, package `review`, asset `editorial-review`; candidate revision 2 remains `researching` in its cycle-scoped registry. Review package/asset are registered for normal schema/reference lookup, with no production consumer.
+
+Read-only validation: `node --import tsx scripts/validate-traffic-research.ts`. It validates native records, historical discovery identity/hash, initial-state boundaries, reviewed claim hashes/evidence, full ledger coverage, exclusion eligibility, hooks and deterministic artifact bytes. It does not fetch sources, call providers, promote approval or produce media. Only an explicit subsequent owner decision can promote eligible claims/editorial material; production planning remains outside this milestone.
+
 ## TopicCandidate and ResearchWorkspace
 
 `src/content-intelligence/schema.ts` records stable topic identity, discovery provenance, open taxonomy, timeliness, rationale, status, and review metadata. Evaluation uses categorical `weak`, `mixed`, `strong`, or `unknown` assessments with rationale and uncertainty rather than a fake virality score.
@@ -174,3 +194,21 @@ The Wood Frog claim/editorial gate has been completed. Production must now:
 - publishing or analytics APIs.
 
 Wood Frog has since completed bounded ProductionPlan/VideoSpec/caption/render implementation through the checkpoint. Current recovery identity and remaining platform gates are in PROJECT-STATE.md. Generic VisualPlan-to-Remotion automation remains premature.
+
+## Partial owner approval and editorial finalization
+
+Traffic waves revision 2 records an explicit owner component decision in [phantom-traffic-finalization-v2](../content-intelligence/reviews/phantom-traffic-finalization-v2/owner-review.md). The original full-approval command remains unchanged: it requires all claim decisions, exact confirmation and a supplied review time. `src/content-intelligence/scoped-owner-decision.ts` adds a narrower native record for approving selected claims/concepts while deferring the final exact narration. It binds package/asset/review revisions and hashes, original research artifacts and every claim statement. Eligible selected claims may become verified; reserves are explicitly deferred and exclusions retained. It cannot grant full asset, production or publication approval.
+
+Where the owner did not supply a review timestamp, the record stores `enteredAt`, `timeBasis: decision-entry`, and null `ownerSuppliedReviewTimestamp`. Claim metadata uses `decisionEnteredAt` and `reviewTimeBasis: decision-entry` without inventing `reviewedAt`. Legacy supplied-date metadata remains valid. The human identity and explicit instruction remain required; AI research alone never grants verification.
+
+Read-only checks: `node --import tsx scripts/validate-traffic-research.ts` preserves validation of the original immutable research-v1 handoff; `node --import tsx scripts/validate-traffic-finalization.ts` validates the component decision, exact verified-claim set, revision 2 narration and final owner gate. This historical finalization-v2 handoff required another explicit owner approval before any ProductionPlan; that gate is now completed by the exact editorial lock described below.
+
+## Exact editorial lock and production candidate
+
+`src/content-intelligence/editorial-lock.ts` records full owner approval of an already claim-reviewed package/asset state. It binds the reviewed Git commit, normalized package/asset/review/script hashes, every claim statement/status and exact verified selection. Approval replay changes only revision, editorial status and truthful decision-entry approval metadata. It cannot approve the rendered master, platforms or publication. The original supplied-date full-approval and narrower component-decision workflows remain intact.
+
+Phantom Traffic uses [approved-v3](../content-intelligence/reviews/phantom-traffic-approved-v3/owner-decision.json) and [production-v1](../content-intelligence/reviews/phantom-traffic-production-v1/owner-review.md). Read-only validation: `node --import tsx scripts/validate-phantom-traffic.ts`; it checks the exact owner-reviewed commit, approval replay, package/asset/claim/caption/audio/production bindings and candidate receipts. Next gate is OWNER MASTER VISUAL REVIEW.
+
+## Adaptive creative direction — future content
+
+Future creative assistance is workflow.creative-direction v1, implemented in src/content-intelligence/creative-direction.ts and registered with the existing prompt/run architecture. It consumes approved verified package/asset and exact recent assets, proposes experience/treatments with rationale and convergence review, and cannot rewrite editorial truth or invent approval. No live/provider call or new content cycle is started. CREATIVE-DIRECTION.md owns companion storage, agent autonomy and significant owner-review gates; the existing topic CLI and live source-review pause remain unchanged.

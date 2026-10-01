@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {platformApprovalSchema,presentationDecisionReferenceSchema} from '../platform-variants/owner-presentation';
 import {deliveryPackageStateSchema} from '../delivery/schema';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 import {platformSchema} from '../platform-variants/schema';
@@ -57,10 +58,13 @@ export const publicationRecordSchema = z.object({
       id: stableKnowledgeIdSchema,
       state: deliveryPackageStateSchema,
       relationship: z.enum(['used-for-upload', 'retrospective-match']),
+      manifestSha256:z.string().regex(/^[a-f0-9]{64}$/).optional(),
     }).strict(),
     videoSha256: z.string().regex(/^[a-f0-9]{64}$/),
   }).strict(),
-  state: z.enum(['private-preview', 'published', 'unlisted', 'deleted']),
+  state: z.enum(['private-preview', 'published', 'published-owner-reported', 'unlisted', 'deleted']),
+  ownerReport:z.object({decision:presentationDecisionReferenceSchema,evidenceBasis:z.literal('explicit-owner-message'),enteredAt:z.iso.datetime(),timeBasis:z.literal('decision-entry'),publishedAt:z.null(),managementUrl:z.url().optional(),missingPublicPermalink:z.boolean(),uploadIdentityBasis:z.literal('owner-reported-prepared-file'),limitations:z.array(z.string()).min(1)}).strict().optional(),
+  firstComment:z.object({state:z.literal('owner-reported-posted'),text:z.string().min(1),commentId:z.null(),postedAt:z.null(),pinState:z.literal('unknown'),engagement:z.null(),decision:presentationDecisionReferenceSchema}).strict().optional(),
   remote: z.object({
     postId: z.string().min(1),
     url: z.url(),
@@ -68,12 +72,21 @@ export const publicationRecordSchema = z.object({
   publishedOn: z.iso.date().optional(),
   recordedAt: z.iso.date(),
   settings: platformSettingsSnapshotSchema,
-  approval: z.object({
-    approvedBy: z.string().min(1),
-    approvedAt: z.iso.date(),
-    notes: z.string().min(1).optional(),
-  }).strict(),
+  approval: platformApprovalSchema,
 }).strict().superRefine((publication, context) => {
+  if (publication.state === 'published-owner-reported') {
+    if (!publication.ownerReport || !publication.publishedOn || !publication.source.delivery.manifestSha256 || !publication.approval.ownerDecision) {
+      context.addIssue({code:'custom',message:'Owner-reported publication requires dated explicit evidence, exact delivery hash and approval decision'});
+    }
+    if (publication.ownerReport?.missingPublicPermalink === Boolean(publication.remote)) {
+      context.addIssue({code:'custom',message:'Missing permalink must accurately match remote identity availability'});
+    }
+    if (publication.platform === 'tiktok' && publication.remote && !/^https:\/\/(?:www\.)?tiktok\.com\/@[^/]+\/video\/\d+/.test(publication.remote.url)) {
+      context.addIssue({code:'custom',message:'TikTok remote identity must be an individual public video, never Studio'});
+    }
+  } else if (publication.ownerReport) {
+    context.addIssue({code:'custom',message:'Owner report evidence belongs to the distinct owner-reported publication state'});
+  }
   if (publication.state === 'published' && (!publication.remote || !publication.publishedOn)) {
     context.addIssue({
       code: 'custom',
@@ -82,7 +95,7 @@ export const publicationRecordSchema = z.object({
     });
   }
   if (
-    publication.state === 'published'
+    ['published','published-owner-reported'].includes(publication.state)
     && publication.source.delivery.relationship === 'used-for-upload'
     && publication.source.delivery.state !== 'ready-for-manual-upload'
   ) {

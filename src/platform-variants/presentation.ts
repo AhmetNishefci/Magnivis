@@ -29,7 +29,7 @@ export const coverAssetSchema = z.object({
 export type PresentationProfile = z.infer<typeof presentationProfileSchema>;
 export type PresentationQa = z.infer<typeof presentationQaSchema>;
 export type CoverAsset = z.infer<typeof coverAssetSchema>;
-export type CriticalRegion = {kind:'hook'|'fact'|'number'|'label'|'caption'|'cta'|'brand'|'decorative'; bounds:z.infer<typeof rectangleSchema>};
+export type CriticalRegion = {kind:'hook'|'fact'|'number'|'label'|'caption'|'cta'|'brand'|'decorative'|'critical-visual'|'disclosure'; bounds:z.infer<typeof rectangleSchema>};
 const contains = (outer: z.infer<typeof rectangleSchema>, inner: z.infer<typeof rectangleSchema>) => inner.x>=outer.x && inner.y>=outer.y && inner.x+inner.width<=outer.x+outer.width && inner.y+inner.height<=outer.y+outer.height;
 const intersects = (a:z.infer<typeof rectangleSchema>,b:z.infer<typeof rectangleSchema>) => a.x<b.x+b.width && b.x<a.x+a.width && a.y<b.y+b.height && b.y<a.y+a.height;
 export const validatePresentationRegions = (profile: PresentationProfile, regions: readonly CriticalRegion[]) => {
