@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "path": "artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+  "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+  "bytes": 2923379,
+  "recordedAt": "2026-10-01T23:43:32.096Z",
+  "sourceCommit": "cca828c3320a062764cf3185dd23bd05ce197404",
+  "productionPlan": {
+    "id": "production-plan.chocolate-crystal-choice.material-cutaway",
+    "revision": 1,
+    "sha256": "c35df858db01ac542abf508550a9fa49ebd2d248026f212ad4f5cf51bc65f9c4"
+  },
+  "captionPlan": {
+    "id": "caption-plan.chocolate-crystal-choice.material-cutaway",
+    "revision": 1,
+    "sha256": "86832aa3d5c32a9e5a8dd72700fba9c52d9a8c4c1695d6ef4303345c7bc6aeb5"
+  },
+  "creativeDirection": {
+    "id": "creative-direction.chocolate-crystal-choice.material-cutaway",
+    "revision": 2,
+    "sha256": "14e368ea7fc98de35fca93838b608eded8c525499ec8f48f1bccecd75634d2f4"
+  },
+  "knowledgePackage": {
+    "id": "chocolate-crystal-choice",
+    "revision": 3,
+    "sha256": "fca66f32b54c9232a0169f8cefdb089142edd8a7db5b13c8f514a21d23123974"
+  },
+  "contentAsset": {
+    "id": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+    "revision": 3,
+    "sha256": "dc90cc07e342482ac4df23811700a9e4eb1ad14de72538264f3561c45cd24d56"
+  },
+  "approvedScriptSha256": "9df1b0d0eb1889181372a6aed8bbfd97c8ad5bb6c05a657f0317300db7e02272",
+  "ownerApproved": false,
+  "locked": false,
+  "platformApprovalGranted": false,
+  "publicationApprovalGranted": false,
+  "authoredFrames": 1195,
+  "authoredDurationSeconds": 39.833333333333336,
+  "containerDurationSeconds": 39.9,
+  "sourceFiles": [
+    {
+      "path": "src/chocolate-index.tsx",
+      "sha256": "da091b20734d365736cb4672965b595acd006bfac656ba3f75b360443a90fcda"
+    },
+    {
+      "path": "src/compositions/Chocolate.tsx",
+      "sha256": "cfc59453e8f4591ac7bf6557bc8343a42de90985cbe80531460c217609e6229b"
+    },
+    {
+      "path": "src/components/ChocolateMaterial.tsx",
+      "sha256": "12e2a09219b2a4b4d45d659d096c98d3d0ffb2288b093a4a648c09052ac6a6b8"
+    },
+    {
+      "path": "src/production/narration/chocolate.json",
+      "sha256": "b222785d4323907c3caaa1254ce5c37ea1ef4a5d43f40c730ec4c66312e8ffeb"
+    },
+    {
+      "path": "src/captions/plans/chocolate.json",
+      "sha256": "9bfa39fe15baf0290c148d55d009d8bd76023268db468e990ec6e78050b0a340"
+    },
+    {
+      "path": "src/production/plans/chocolate.json",
+      "sha256": "9226d9de6ef0505d92de0735f933695c61f982e9ebc32844ba45f19faa3324cd"
+    },
+    {
+      "path": "src/content/videos/chocolate-crystal-choice.ts",
+      "sha256": "b622ecd75facbca6c99e5cd9e9cc693e0dfb9385d232f9193a675493a401d10f"
+    },
+    {
+      "path": "public/fonts/chocolate/AtkinsonHyperlegibleNext.ttf",
+      "sha256": "5a455d1cfa099b601ab70751bb9673e8fe1854dc4500c80e1a220d0d75e31745"
+    },
+    {
+      "path": "public/fonts/chocolate/OFL.txt",
+      "sha256": "09636801ed3e868736cc359bb1c819c5ef76529cbb41473cb1f602ef166dad0a"
+    },
+    {
+      "path": "public/fonts/chocolate/METADATA.pb",
+      "sha256": "9d0050e8a74b976099f69ba23a25063b60deeb91eae89388bb20dffb5b4a5669"
+    },
+    {
+      "path": "public/fonts/chocolate/provenance.json",
+      "sha256": "9e3cf6a84f6b1faa426bc3892bc489898c9c1b6f114feda62b71511a7e598ae3"
+    },
+    {
+      "path": "public/audio/chocolate/tactile.wav",
+      "sha256": "cf80a2653eb865fb4caee49abdc040fcbfa9a5019b21c5938968c11da02ef61a"
+    },
+    {
+      "path": "public/captions/chocolate.en.vtt",
+      "sha256": "41fc44659ec2ec3ff0a571856699df36d848e3e08bf4234b2539ed133c89e1bb"
+    },
+    {
+      "path": "scripts/master-chocolate-audio.mjs",
+      "sha256": "aea0bb023f35e5f0803a74c182f08ca6ff07eb1e3b92f3355be4ad3fc680e409"
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-production-v1/audio-mastering.json",
+      "sha256": "ac0cffdfebf7b6aca47b88e7e997ddb5ab5c121b97706e2d50cff26b6e74cb5b"
+    },
+    {
+      "path": "remotion.config.ts",
+      "sha256": "95a4465846c4d8bc670a9350e45943c10b6ad2cb393dd4cb9f5aa0abbc160142"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a370a1f7da72184e7f104de3b9c9171721c9fd7ee11b4b3ed854f8ea1f123b84"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "a637f5e64cd135f4f831ac9922442d1f9a226e55d554cd5d06f7e8cc05470069"
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-production-v1/direction-approved-v2.json",
+      "sha256": "72c6d53410ef69bd4ff76105b14c8bcebf184dedceed0bbe4a8e7e992eb647aa"
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-production-v1/owner-decision.json",
+      "sha256": "f3a5839e95888ca68415a4ac773e6101a2b2c7cb7ac9ba9f9f6b95a40b04068e"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-1.wav",
+      "sha256": "4327607dbbb30aadbe16f88a647ec0b84eeec29ea4756d7c0a94c037552433be"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-2.wav",
+      "sha256": "2e28c18abd23ddddc745e8fa523b7fb11cae95949eedbe66300ed0a6d282e956"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-3.wav",
+      "sha256": "62d9ea3a0275907b3f77eba66dc46526ab80bffa6ecb04d427ce2877d0f61667"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-4.wav",
+      "sha256": "0275d53b88411c67522067fbfd398a9cad11303941ad174b7ae28c87017a3f06"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-5.wav",
+      "sha256": "75201cb30360cc62713b389356d9973ac16fca6ede472f1e0e13e19b1780406b"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-6.wav",
+      "sha256": "c684ba04f9fb69a00b1d6f322e6a6f2ab057d415e4de6df5b1569d0b4eda8c72"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-7.wav",
+      "sha256": "d66cb9420baffc29273aa15395eb5fd5dca03e73b76599d8171f8e3cd097568e"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-8.wav",
+      "sha256": "cda82c668df0687d5285aca1d72c6f23628056c21e65a6b7dc79fffb5d40c663"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-9.wav",
+      "sha256": "7cb1b68cff7e660a35068f39857ac8d7ab25a30bfca5ed05bb885fd3c1575b29"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-10.wav",
+      "sha256": "2ab9fa0d8704e3acb963ee17c54e487f8f4a84cebff9d6abe6c23f5ac00539b0"
+    },
+    {
+      "path": "public/audio/chocolate/narration/cue-11.wav",
+      "sha256": "a9749df876a2890d6c5b2b5654e4e116bad5eaf462662789bfcef333b94f8689"
+    },
+    {
+      "path": "public/fonts/chocolate/OFL.upstream.gz",
+      "sha256": "02ed043c663b33424016707fdcd11c2065e31210dea6b404c9d17d6a9b6bedcd"
+    }
+  ],
+  "qaFiles": [
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/caption-phone-page-1.jpg",
+      "sha256": "4694d9a0e32f86391403bba237f73a56a030d52c608d9b5264a7e3692b901bb3"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/caption-phone-page-2.jpg",
+      "sha256": "52c6dbbc4a1e317e75223a2753b1293ab238b20ffdaef6598dedec5fc9801725"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/caption-phone-page-3.jpg",
+      "sha256": "73a341e77cdeaf74906f1cdab31b7691445d896e1316ae7b18c7a01ee4b81a77"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/contact-sheet.jpg",
+      "sha256": "1262214c5bb111a4e0f6d114e8a8a38094f246d5406ce16c7daed55981b4ae59"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/decode-report.json",
+      "sha256": "cf0c899f127eecbbc0957a7b75b0f26955bf7248935dd1520aadd74ae234e2bf"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-01-0.0s.png",
+      "sha256": "40866a25ac5a1b519ad4411a75f142ad305605f92674d38108d19bf6638a4533"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-02-0.1s.png",
+      "sha256": "9851cede3526e85304bcacd34a9f2353cff688337d369ef11f4c1d5f0a1c0b4e"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-03-0.5s.png",
+      "sha256": "b92afd5e46d7cdb410f7420bcc2f92005f9b1bb073c20265e443b3d434818034"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-04-0.9s.png",
+      "sha256": "25e811781064779ac428e9b7cac7eb6bdd8303c31369631545e60fc52cbc2618"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-05-2.1s.png",
+      "sha256": "b091c8a4d69ad2c55a81ea264404008de0cadddbc1046bd803861d568c7fca97"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-06-2.6s.png",
+      "sha256": "d227609d224c2a6b12de8b3b2e5a05fef7aca4b9f42b9956777c3e3060ebb5f3"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-07-3.0s.png",
+      "sha256": "698929ed9a52a4eb4188c6ed00eb4d068fd7f1ff4cf14301301e6cd50ad2f23a"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-08-4.2s.png",
+      "sha256": "c538d4c6f8a482cfa69554d3615e0f9b15cdf5d44f8296fc8198ea548ef1a9a3"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-09-5.1s.png",
+      "sha256": "8710b34f90e9a4031639e248008cf7c816730070b5d90829313abc8510f3f3dc"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-10-5.2s.png",
+      "sha256": "cbb7dc9bca6adc6233d6643c2a27d49348315cafaf205cbe55567568c70fc56a"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-11-5.6s.png",
+      "sha256": "4370e4450ae84c6c41b72d17b1ad090096d8f5f6ce3d0994a677caafd9f0689f"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-12-6.6s.png",
+      "sha256": "14184e703eff0e40928f84ca9b74aeabd6d2bfbd95f909dce4c8db7d73193d74"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-13-7.4s.png",
+      "sha256": "7c6a67058b3658e4b7ab6050c2f20456279f36cd53e0b5c2f3a7311c76a6ac38"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-14-8.3s.png",
+      "sha256": "90a6cda340f7f712cbe40c57964aaab830b1fef61be77c8a22da5bdc3c35b11f"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-15-9.7s.png",
+      "sha256": "7ba75f2ec35609dd1a81f3988ba7c9b76c03fc930e6e2a1ae463635aef069cad"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-16-9.8s.png",
+      "sha256": "234b70a4595b9d8af4d1f8f0448256130be8d71deda0046a2c7d1239426c665f"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-17-10.3s.png",
+      "sha256": "824a643bf8ab22efe2697fcc632afc13cdfdcab09b5946e0b16c37f5359ff2fa"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-18-11.7s.png",
+      "sha256": "61c018908be9142122da79d8cc1e94312ff0b1eaf814704d8a4e34354b1cfa2b"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-19-11.7s.png",
+      "sha256": "7fffd46bf5b8ddfa2eadaabeeff246b8fd5332af5b210f5be709bbea7804cb46"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-20-12.9s.png",
+      "sha256": "654931b1b1d3fa1f1f479a3c107caff0a8780ddd3fdbc121342e4bb039b0fb82"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-21-13.6s.png",
+      "sha256": "d3b92e388bad1154036f8da017319da93080772146c422d8ed7cece781e75898"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-22-13.7s.png",
+      "sha256": "00344da30a1514166b01b7561d489f37852d1288b5aa3b0de8bb8cd624e2b2fd"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-23-14.3s.png",
+      "sha256": "57b37e0b0f77174d3b5f3e36c85f5ee5f4b87d7db39efee14b9ea1507a143473"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-24-15.6s.png",
+      "sha256": "ac4275e21b59616511fb19a0cae18c37408189e29f8af6e9efe19c1df711f9b1"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-25-16.9s.png",
+      "sha256": "4b766ec28f96a7043836fbed1f4f3dd27a82398b9cf35c5de4c5dce328539bbc"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-26-17.0s.png",
+      "sha256": "a3acf0fcdabe11a81912dcdbee5c730256019960fe3b37d45fb8fd939278b34e"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-27-17.3s.png",
+      "sha256": "df1104442236c1cc656bab6c6af37210da6c2ed7f29a4f0700a3025b4b5e1ed6"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-28-18.6s.png",
+      "sha256": "e7f51c253f89a70d687071e74a27eeadb476ca6b7af56b78dc6d5331aafa9499"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-29-18.9s.png",
+      "sha256": "4ff39b8c62d7bb491f281315f1e19bbce56de0fe00fd016972c20ef5a50f4f48"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-30-19.9s.png",
+      "sha256": "0e3c29ab2ed59c047ff036396a63c2af9f2e6784e9ffd72d3b1c534af261fd79"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-31-21.0s.png",
+      "sha256": "f21bb408ccd966a154255e772612ff9ca0390ddcdc83f08487ce49b12c1912f8"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-32-21.2s.png",
+      "sha256": "9c4bd8dd457839d76ec08d5ad23e36d138e4d1b1c07dcdf20e120a97dede5da2"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-33-21.8s.png",
+      "sha256": "0176b4c4b3c1aaf86b2b3048bfa0f39bc8bebb45f17aa9245710237997d0fa66"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-34-22.8s.png",
+      "sha256": "04117de5bc6f468b9744a0cb665ff5db2103def1b287ae1fa4a381407ff75b1d"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-35-22.9s.png",
+      "sha256": "0d3c4c3ebf802e6d8acbea9a09a63ff47b3a1806482612645496c2311876cd1c"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-36-23.7s.png",
+      "sha256": "55b628be1614f7e96d284ac237affe9e05f1b7a78de288518d6386d342981f91"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-37-24.5s.png",
+      "sha256": "e29dbd601ce9b08c00c57f6f6a22c84fd7da7967ef4540ae1d706188ed28a1bb"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-38-24.6s.png",
+      "sha256": "232ffb83871d83c24d877c61c7db11f940e1a24735e8c418b8208f2995c0ad69"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-39-25.1s.png",
+      "sha256": "080ac9c1b9f0f03403a61cfa03a342e614fd622f6033520868e3ab66c667b567"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-40-26.1s.png",
+      "sha256": "daff46179179f0d640f6da647db9a812d04975b26567c2c7ca692af9a4266049"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-41-27.1s.png",
+      "sha256": "f5fe850087b819f032b703566777502f7a658e3fae6448ed6cc7f4369f45965c"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-42-27.4s.png",
+      "sha256": "bdeef4b2a4ceebff868a630b8b0a545f1eee52099d8153c67b93a99daac8c98b"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-43-28.7s.png",
+      "sha256": "69b30fa4956f94c93f586530b6c116d2224f21deb738b6520d659b057cdef47e"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-44-29.7s.png",
+      "sha256": "26e8f4a119c29f4d7e6199f34139bdcb49c0bd50208a6c235d0479db95c22d48"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-45-29.8s.png",
+      "sha256": "abf2551cfd6bffd4b1d08d7a08ac29ae600b550cc1876c2595de9652628e78c2"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-46-30.6s.png",
+      "sha256": "5369b5f59aa28fb88adc12464ac73687961b3665c25856402fbddaeaf9ec4247"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-47-32.1s.png",
+      "sha256": "a1dd962fc5807353fdd4451aab94a9f8007ab2d989c936c0f7a640007617d7b5"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-48-32.4s.png",
+      "sha256": "64a746e82ae3c4f479d2492c600b8f9eb5cd83f371451adee2706fa0bee67799"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-49-33.1s.png",
+      "sha256": "369e5fbc728ee354d6e1a1ee8d20498e44002807c1b2fe596e2ec56d4d5e5b5a"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-50-34.0s.png",
+      "sha256": "e237be363a86a0f0a57adcee2208b9ffc582053ec978b4fe87fadfa4aa697da4"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-51-34.6s.png",
+      "sha256": "95ff2f939a5c940f32704a829f2497ed80e73975d5ac1d4af018a5729c304f39"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-52-35.0s.png",
+      "sha256": "3ca4f921e5201e4a08350ccc4f3a5a25d304a28d90248125349cac6b4df9a8a0"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-53-35.1s.png",
+      "sha256": "06319f77fa5a7e22f121a35aa359b58da2d32d0d14c8bf47741e6c5d3bf63bd6"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-54-35.9s.png",
+      "sha256": "2bd8159ada28d4a16798c984d2a4197dce4e8ee29e13c653dbd4781e8fa8416d"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-55-37.4s.png",
+      "sha256": "a596d57d7d1215cad468e85bb079053e66a8d40e426cea2c8c913517442d2724"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-56-37.9s.png",
+      "sha256": "30a3ef8a77d0decdea1f857d81b5e1f1bedc4a3087aae097e56bcaa431b619b7"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-57-39.6s.png",
+      "sha256": "3bc7c9db1c0301dde9c94bd76dc791fa03d886c83fa853e6fc0f3a4a69abfc09"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/frame-58-39.8s.png",
+      "sha256": "7b07861bda30affdce9e8e119985d3f08e288d74e6305d3fcd007d28795cd7dc"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/historical-comparison-map.json",
+      "sha256": "a9cdd261f52619c8f7e5be6b56d8da087c4aacb20fee9546988f7226332daaf1"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/historical-comparison.jpg",
+      "sha256": "e15404db64f5f1a42c6a00300de7abae713e61743f317a2f7afa41c3513118c2"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/local-inset-report.json",
+      "sha256": "367711a943c88d60645c901f3efd08a9ebe6ca5af15f39b4fab88ab5657c79f3"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/loudness-report.txt",
+      "sha256": "1f9dc50b29476d93ae84196511af6041cda4c3149ce037598204907d4da6979b"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/media-probe.json",
+      "sha256": "897e6a1a0b960e3c381368cfcc2be9f3964c0c603d0cff3188727ec5a46e7c52"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/motion-page-1.jpg",
+      "sha256": "6c7fe5506109d9c39e3a717f824e2970ea12d4d5a51931f2f89291e6cfaf0f18"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/motion-page-2.jpg",
+      "sha256": "14dc34867c25f3fa5d6bbf2bca95309eeebb4374c1b9621f0b019219ec5fb388"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/motion-page-3.jpg",
+      "sha256": "3b758cefa0a616111c452c27e820696da0a342ecbf03b636da991a8806e6feb2"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/report.json",
+      "sha256": "c134c7fe0621d12f8a74ebf4376a6a7b2c32031a7111881ac356b4ef7e658efd"
+    },
+    {
+      "path": "artifacts/qa/chocolate-crystal-choice/typography-report.json",
+      "sha256": "7527102e739342ada127921d5e29084a94922cfd49819a96da9d6a7f808623b6"
+    }
+  ],
+  "renderCommand": "pnpm exec remotion render src/chocolate-index.tsx Magnivis-Chocolate-Material-Cutaway output/chocolate-crystal-choice-candidate-v1.mp4 --concurrency=4 --log=error && node scripts/master-chocolate-audio.mjs",
+  "regenerationByteIdentityProven": false,
+  "nextGate": "AHMET \u2014 CYCLE #3 OWNER MASTER VISUAL REVIEW",
+  "licenseSidecarCorrection": {
+    "enteredAt": "2026-10-01T23:51:34.610572+00:00",
+    "priorBindings": [
+      {
+        "path": "public/fonts/chocolate/OFL.txt",
+        "sha256": "aca6a428580965d2297d1b718042dd427c2a9443ece3b0d02d758e161e0c4030"
+      },
+      {
+        "path": "public/fonts/chocolate/provenance.json",
+        "sha256": "691ca55e222f863ab03266cb980ce9236d0f8740d4f3be879e06e0b98b07a77e"
+      }
+    ],
+    "reason": "Preserve exact upstream license bytes in gzip; remove trailing whitespace in readable copy to pass strict staged diff check. Font binary, rendered frames, narration, master bytes and all approvals unchanged."
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "cues": [
+    {
+      "id": "chocolate-cue-1",
+      "file": "audio/chocolate/narration/cue-1.wav",
+      "start": 0.1,
+      "duration": 2.35,
+      "transcript": "The recipe can stay the same.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.recipe",
+      "beatIndex": 0,
+      "samples": 56400,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-2",
+      "file": "audio/chocolate/narration/cue-2.wav",
+      "start": 2.6,
+      "duration": 2.25,
+      "transcript": "The chocolate doesn’t have to.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.recipe",
+      "beatIndex": 0,
+      "samples": 54000,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-3",
+      "file": "audio/chocolate/narration/cue-3.wav",
+      "start": 5.133333333333334,
+      "duration": 4.35,
+      "transcript": "Chocolate contains cocoa butter, a fat that forms crystals.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.fat",
+      "beatIndex": 1,
+      "samples": 104400,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-4",
+      "file": "audio/chocolate/narration/cue-4.wav",
+      "start": 9.733333333333333,
+      "duration": 3.525,
+      "transcript": "Melt it enough, and that crystal structure breaks down.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.melt",
+      "beatIndex": 2,
+      "samples": 84600,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-5",
+      "file": "audio/chocolate/narration/cue-5.wav",
+      "start": 13.6,
+      "duration": 2.65,
+      "transcript": "As it cools, crystals form again.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.arrange",
+      "beatIndex": 3,
+      "samples": 63600,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-6",
+      "file": "audio/chocolate/narration/cue-6.wav",
+      "start": 16.466666666666665,
+      "duration": 3.825,
+      "transcript": "But their arrangements, and the network they build, can differ.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.arrange",
+      "beatIndex": 3,
+      "samples": 91800,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-7",
+      "file": "audio/chocolate/narration/cue-7.wav",
+      "start": 21.066666666666666,
+      "duration": 3.2,
+      "transcript": "The result can be softer chocolate with less snap.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.result",
+      "beatIndex": 4,
+      "samples": 76800,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-8",
+      "file": "audio/chocolate/narration/cue-8.wav",
+      "start": 24.533333333333335,
+      "duration": 4.725,
+      "transcript": "Tempering guides that rebuilding with controlled temperatures and mixing.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.control",
+      "beatIndex": 5,
+      "samples": 113400,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-9",
+      "file": "audio/chocolate/narration/cue-9.wav",
+      "start": 29.733333333333334,
+      "duration": 4.8,
+      "transcript": "The goal is a structure that helps chocolate snap cleanly and look glossy.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.payoff",
+      "beatIndex": 6,
+      "samples": 115200,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-10",
+      "file": "audio/chocolate/narration/cue-10.wav",
+      "start": 35,
+      "duration": 1.825,
+      "transcript": "Same recipe.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.close",
+      "beatIndex": 7,
+      "samples": 43800,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-11",
+      "file": "audio/chocolate/narration/cue-11.wav",
+      "start": 37,
+      "duration": 1.725,
+      "transcript": "Different structure.",
+      "sourceScriptSegmentId": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.close",
+      "beatIndex": 7,
+      "samples": 41400,
+      "sampleRate": 24000
+    }
+  ],
+  "durationFrames": 1195,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 39.833333333333336
+  },
+  "measuredNarrationSeconds": 35.225,
+  "measurementMethod": "Generated 24 kHz WAV sample counts; independently checked with ffprobe",
+  "provenance": {
+    "provider": "kokoro-local",
+    "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "voiceId": "af_heart",
+    "speed": 0.98,
+    "generatedAt": "2026-10-01T22:57:56.238Z",
+    "approvedScriptSha256": "9df1b0d0eb1889181372a6aed8bbfd97c8ad5bb6c05a657f0317300db7e02272",
+    "cueArtifacts": [
+      {
+        "id": "chocolate-cue-1",
+        "sha256": "4327607dbbb30aadbe16f88a647ec0b84eeec29ea4756d7c0a94c037552433be"
+      },
+      {
+        "id": "chocolate-cue-2",
+        "sha256": "2e28c18abd23ddddc745e8fa523b7fb11cae95949eedbe66300ed0a6d282e956"
+      },
+      {
+        "id": "chocolate-cue-3",
+        "sha256": "62d9ea3a0275907b3f77eba66dc46526ab80bffa6ecb04d427ce2877d0f61667"
+      },
+      {
+        "id": "chocolate-cue-4",
+        "sha256": "0275d53b88411c67522067fbfd398a9cad11303941ad174b7ae28c87017a3f06"
+      },
+      {
+        "id": "chocolate-cue-5",
+        "sha256": "75201cb30360cc62713b389356d9973ac16fca6ede472f1e0e13e19b1780406b"
+      },
+      {
+        "id": "chocolate-cue-6",
+        "sha256": "c684ba04f9fb69a00b1d6f322e6a6f2ab057d415e4de6df5b1569d0b4eda8c72"
+      },
+      {
+        "id": "chocolate-cue-7",
+        "sha256": "d66cb9420baffc29273aa15395eb5fd5dca03e73b76599d8171f8e3cd097568e"
+      },
+      {
+        "id": "chocolate-cue-8",
+        "sha256": "cda82c668df0687d5285aca1d72c6f23628056c21e65a6b7dc79fffb5d40c663"
+      },
+      {
+        "id": "chocolate-cue-9",
+        "sha256": "7cb1b68cff7e660a35068f39857ac8d7ab25a30bfca5ed05bb885fd3c1575b29"
+      },
+      {
+        "id": "chocolate-cue-10",
+        "sha256": "2ab9fa0d8704e3acb963ee17c54e487f8f4a84cebff9d6abe6c23f5ac00539b0"
+      },
+      {
+        "id": "chocolate-cue-11",
+        "sha256": "a9749df876a2890d6c5b2b5654e4e116bad5eaf462662789bfcef333b94f8689"
+      }
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "checkedAt": "2026-10-01T23:42:11.820Z",
+  "masterPath": "output/chocolate-crystal-choice-candidate-v1.mp4",
+  "masterSha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+  "method": "Independent local Whisper tiny English ASR of every clip and full candidate audio; ffprobe verifies durations. This is full-media machine audio inspection, not a claim of human subjective listening.",
+  "model": "onnx-community/whisper-tiny.en",
+  "results": [
+    {
+      "id": "chocolate-cue-1",
+      "exactText": "The recipe can stay the same.",
+      "recognized": " The recipe can stay the same.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " The recipe can stay the same."
+        }
+      ],
+      "duration": 2.35,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-2",
+      "exactText": "The chocolate doesn’t have to.",
+      "recognized": " The chocolate doesn't have to.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " The chocolate doesn't have to."
+        }
+      ],
+      "duration": 2.25,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-3",
+      "exactText": "Chocolate contains cocoa butter, a fat that forms crystals.",
+      "recognized": " Chocolate contains cocoa butter, a fat that forms crystals.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " Chocolate contains cocoa butter, a fat that forms crystals."
+        }
+      ],
+      "duration": 4.35,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-4",
+      "exactText": "Melt it enough, and that crystal structure breaks down.",
+      "recognized": " Melted enough, and that crystal structure breaks down.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Melted enough, and that crystal structure breaks down."
+        }
+      ],
+      "duration": 3.525,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-5",
+      "exactText": "As it cools, crystals form again.",
+      "recognized": " as it cools crystals form again.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " as it cools crystals form again."
+        }
+      ],
+      "duration": 2.65,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-6",
+      "exactText": "But their arrangements, and the network they build, can differ.",
+      "recognized": " But their arrangements and the network they build can differ.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " But their arrangements and the network they build can differ."
+        }
+      ],
+      "duration": 3.825,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-7",
+      "exactText": "The result can be softer chocolate with less snap.",
+      "recognized": " The result can be softer chocolate with less snap.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " The result can be softer chocolate with less snap."
+        }
+      ],
+      "duration": 3.2,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-8",
+      "exactText": "Tempering guides that rebuilding with controlled temperatures and mixing.",
+      "recognized": " Tempering guides that were building with controlled temperatures and mixing.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.3
+          ],
+          "text": " Tempering guides that were building with controlled temperatures and mixing."
+        }
+      ],
+      "duration": 4.725,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-9",
+      "exactText": "The goal is a structure that helps chocolate snap cleanly and look glossy.",
+      "recognized": " The goal is a structure that helps chocolate snap cleanly and look glossy.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.36
+          ],
+          "text": " The goal is a structure that helps chocolate snap cleanly and look glossy."
+        }
+      ],
+      "duration": 4.8,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-10",
+      "exactText": "Same recipe.",
+      "recognized": " Same recipe.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Same recipe."
+        }
+      ],
+      "duration": 1.825,
+      "sampleRate": 24000
+    },
+    {
+      "id": "chocolate-cue-11",
+      "exactText": "Different structure.",
+      "recognized": " Different structure.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Different structure."
+        }
+      ],
+      "duration": 1.725,
+      "sampleRate": 24000
+    }
+  ],
+  "completeMasterRecognition": {
+    "text": " The recipe can stay the same. The chocolate doesn't have to. Chocolate contains cocoa butter, a fat that forms crystals. Melted enough, and that crystal structure breaks down. As it cools, crystals form again. But there are arrangements, and the network they build can differ. The result can be softer chocolate with less snap. Tempering guides that were building with controlled temperatures and mixing. The goal is a structure that helps chocolate snap cleanly and look glossy. Same recipe. Different structure.",
+    "chunks": [
+      {
+        "timestamp": [
+          0,
+          2.5
+        ],
+        "text": " The recipe can stay the same."
+      },
+      {
+        "timestamp": [
+          2.5,
+          5
+        ],
+        "text": " The chocolate doesn't have to."
+      },
+      {
+        "timestamp": [
+          5,
+          10
+        ],
+        "text": " Chocolate contains cocoa butter, a fat that forms crystals."
+      },
+      {
+        "timestamp": [
+          10,
+          13.5
+        ],
+        "text": " Melted enough, and that crystal structure breaks down."
+      },
+      {
+        "timestamp": [
+          13.5,
+          16.5
+        ],
+        "text": " As it cools, crystals form again."
+      },
+      {
+        "timestamp": [
+          16.5,
+          21.44
+        ],
+        "text": " But there are arrangements, and the network they build can differ."
+      },
+      {
+        "timestamp": [
+          21.44,
+          24.88
+        ],
+        "text": " The result can be softer chocolate with less snap."
+      },
+      {
+        "timestamp": [
+          24.88,
+          30.12
+        ],
+        "text": " Tempering guides that were building with controlled temperatures and mixing."
+      },
+      {
+        "timestamp": [
+          30.12,
+          33.04
+        ],
+        "text": " The goal is a structure that helps chocolate snap cleanly and"
+      },
+      {
+        "timestamp": [
+          33.04,
+          40.2
+        ],
+        "text": " look glossy. Same recipe. Different structure."
+      }
+    ]
+  },
+  "subjectiveListening": "Owner review required for pronunciation, naturalness, tactile mix and emotional timing."
+}

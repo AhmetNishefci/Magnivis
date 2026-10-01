@@ -1,0 +1,14 @@
+{
+  "enteredAt": "2026-10-01T23:41:33.959Z",
+  "scope": "Voice-led final mix mastering; no narration wording, speed or visual frames changed. Sparse original sounds processed with the mix.",
+  "inputSha256": "14b72daa2391f23c3ce293f1defb9285e9ef7a1dd5bc5d5a92ba3429b8a548a5",
+  "outputSha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+  "videoElementaryStreamSha256": "2fcb529b2d1a3893db6e9378174bbeb85e6966a544e8810ab0f3189ee15a9aab",
+  "videoStreamUnchanged": true,
+  "filter": "loudnorm=I=-18:TP=-1.5:LRA=7",
+  "targetIntegratedLufs": -18,
+  "targetTruePeakDbfs": -1.5,
+  "reason": "Unmastered mix measured -22.5 LUFS; raise conversational phone playback level with true-peak limiting. Target is a story-specific engineering choice, not proven platform optimum.",
+  "recipe": "node scripts/master-chocolate-audio.mjs (once after a fresh Remotion render)",
+  "byteIdenticalRegenerationProven": false
+}

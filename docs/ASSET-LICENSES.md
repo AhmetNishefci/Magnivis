@@ -63,3 +63,13 @@ Exact approved words are newly synthesized locally with Kokoro `af_heart`, speed
 | Platform local model sheets | Original approved-master decoded frames with surviving inset outlines | No device screenshots, guessed native UI or speculative Meta crop; full decode and frame/hash evidence retained. |
 
 No new voice, music, stock asset or font was introduced in delivery preparation. V1 and V2 original production/license evidence remains immutable.
+
+## Chocolate crystal choice — owner-review candidate v1
+
+- Original authored chocolate geometry, packing tokens, network domains and transitions: Magnivis-created source in `src/components/ChocolateMaterial.tsx` and `src/compositions/Chocolate.tsx`. No scientific diagram, microscopy, commercial food photograph or footage copied.
+- Atkinson Hyperlegible Next: unmodified variable font from official Google Fonts `ofl/atkinsonhyperlegiblenext`; SIL OFL 1.1, copyright/license and upstream metadata retained in `public/fonts/chocolate/`. Weights 400/500/600; exact binary/license hashes and retrieval time in `provenance.json`. OFL permits embedding/distribution with retained license; no standalone resale or modified reserved-name assertion.
+- Eleven original synthesized af_heart narration clips: local Kokoro 82M ONNX q8 CPU, Apache-2.0 model, no voice cloning or auditions. Current exact weights/voice hashes in the scoped production `model-provenance.json`; WAV hashes/timing in `src/production/narration/chocolate.json`. Previously inspected official model-card licensing retained as research context; model caches disposable, exact WAVs durable.
+- Sparse original deterministic tactile waveform accents: `public/audio/chocolate/tactile.wav`, generator source `scripts/generate-chocolate-production.py`, exact hash/events in scoped `sound-provenance.json`. No sample library or continuous music. Illustrative macroscopic handling/fracture, never microscopic observations.
+- Master, decoded QA, audio, licenses and source input bindings are retained for audit/reproduction. No assertion of byte-identical re-rendering.
+
+Upstream OFL trailing whitespace: exact raw license bytes retained in `public/fonts/chocolate/OFL.upstream.gz`; readable `OFL.txt` removes trailing whitespace only. Provenance records both identities. Font binary and complete legal wording remain unchanged.

@@ -17,6 +17,7 @@ const sha256 = (path: string) => createHash('sha256')
   .digest('hex');
 
 const requestedId = process.argv[2];
+if(requestedId==='chocolate-crystal-choice'){const {validateChocolateProduction}=await import('./validate-chocolate-production');console.log(JSON.stringify(validateChocolateProduction(),null,2));process.exit(0);}
 if (requestedId === 'phantom-traffic') {
   console.log(JSON.stringify(validatePhantomTrafficLockedMaster(), null, 2));
   process.exit(0);

@@ -1,3 +1,13 @@
+# Current Cycle #3 production state — owner-review master candidate
+
+Ahmet approved `creative-direction.chocolate-crystal-choice.material-cutaway` revision 1 and authorized one master candidate. The actual decision-entry record is [owner-decision.json](../content-intelligence/reviews/chocolate-crystal-choice-production-v1/owner-decision.json); no owner-supplied review timestamp is invented. Direction revision 2 preserves every creative decision and adds readiness/binding only. Approved package/asset revision 3, eight verified statements/evidence, exact 80-word script and all qualifications/exclusions remain immutable.
+
+[Production owner handoff](../content-intelligence/reviews/chocolate-crystal-choice-production-v1/owner-review.md) binds one original Material Cutaway candidate, a review-gated native ProductionPlan and adaptive CaptionPlan. Eleven af_heart clips at speed 0.98 total 35.225 seconds; measured voice plus comprehension pauses yields 1195 frames / 39.833 seconds. Separate simplified packing and larger network views retain fat/solid distinctions; analytical views disclose SIMPLIFIED EXPLANATORY MODEL. Original sparse tactile accents, no music bed; licensed Atkinson Hyperlegible Next weights 400/500/600. Decode, browser font/bounds and decoded-frame QA are local evidence, never device/platform approval. Independent full audio ASR is machine inspection, not human subjective listening.
+
+The master remains owner-unapproved and unlocked. No platform/publication work is authorized or performed. Longitude locked bytes and approved packages remain untouched; its four-platform scheduling remains owner-reported evidence, not publication. Discovery bank/open-world eligibility, future candidates, one-excellent-short/day target, provisional 20:00 window, primary narrator, adaptive execution and story-led duration remain unchanged. Long-form remains a future parallel format.
+
+**Exact next gate: AHMET — CYCLE #3 OWNER MASTER VISUAL REVIEW.** Main remains unmerged. Older sections below describe preserved historical gates and do not supersede this current authorization.
+
 # Project state
 
 ## CONTENT CYCLE #3 — EDITORIAL APPROVED, CreativeDirection proposal pending

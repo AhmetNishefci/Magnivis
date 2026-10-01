@@ -1,0 +1,22 @@
+import {describe,it,expect} from 'vitest';
+import {validateChocolateProduction} from '../scripts/validate-chocolate-production';
+import {validateProductionPlanReferences} from '../src/production/schema';
+import {validateAdaptiveCaptionPlan} from '../src/captions/adaptive-plan';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {creativeDirectionSchema} from '../src/content-assets/creative-direction';
+import k from '../content-intelligence/reviews/chocolate-crystal-choice-approved-v3/knowledge-package.approved.json';
+import a from '../content-intelligence/reviews/chocolate-crystal-choice-approved-v3/content-asset.approved.json';
+import d from '../content-intelligence/reviews/chocolate-crystal-choice-production-v1/direction-approved-v2.json';
+import plan from '../src/production/plans/chocolate.json';
+import captions from '../src/captions/plans/chocolate.json';
+import narration from '../src/production/narration/chocolate.json';
+const pkg=knowledgePackageSchema.parse(k),asset=contentAssetSchema.parse(a),direction=creativeDirectionSchema.parse(d);
+describe('Chocolate candidate authority and scientific safeguards',()=>{
+ it('binds owner scope, eight claims and measured story duration while preserving history',()=>{const r=validateChocolateProduction();expect(r.verifiedClaims).toBe(8);expect(r.publicationAuthorized).toBe(false);expect(r.masterOwnerApproved).toBe(false);expect(r.narrationWords).toBe(80);});
+ it('rejects accidental reserve-claim use',()=>{const p=structuredClone(plan);p.beats[0]!.claimIds=['chocolate-crystal-choice.claim.seed'];expect(()=>validateProductionPlanReferences(p,pkg,asset,direction)).toThrow();});
+ it('rejects an unapproved direction masquerading as production authority',()=>{expect(()=>validateProductionPlanReferences(plan,pkg,asset,{...direction,state:'proposal'})).toThrow();});
+ it('rejects silently changed narration in captions',()=>{const c=structuredClone(captions);c.cues[0]!.lines=['A different recipe'];expect(()=>validateAdaptiveCaptionPlan(c,narration.cues,plan.format,direction,asset)).toThrow('fidelity');});
+ it('rejects captions extending beyond measured speech',()=>{const c=structuredClone(captions);c.cues[0]!.endFrame=1000;expect(()=>validateAdaptiveCaptionPlan(c,narration.cues,plan.format,direction,asset)).toThrow('timing');});
+ it('requires exact owner visual evidence before a plan can become approved',()=>{expect(()=>validateProductionPlanReferences({...plan,status:'owner-visual-approved'},pkg,asset,direction)).toThrow();});
+});

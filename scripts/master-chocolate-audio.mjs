@@ -1,0 +1,17 @@
+import console from 'node:console';
+import {createRequire} from 'node:module';
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync,renameSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const require=createRequire(import.meta.url);const ffmpeg=require('ffmpeg-static');
+if(existsSync('artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4'))throw new Error('Retained candidate immutable');
+const input='output/chocolate-crystal-choice-candidate-v1.mp4',output='output/chocolate-crystal-choice-audio-mastered.mp4';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const video=p=>sha(execFileSync(ffmpeg,['-v','error','-i',p,'-map','0:v:0','-c:v','copy','-f','h264','-'],{maxBuffer:64*1024*1024}));
+const before=sha(readFileSync(input));const videoBefore=video(input);
+const args=['-hide_banner','-y','-i',input,'-map','0:v:0','-map','0:a:0','-c:v','copy','-af','loudnorm=I=-18:TP=-1.5:LRA=7:print_format=json','-ar','48000','-c:a','aac','-b:a','192k','-movflags','+faststart',output];
+const result=execFileSync(ffmpeg,args,{encoding:'utf8',stdio:['ignore','pipe','pipe']});void result;
+if(video(output)!==videoBefore)throw new Error('Audio mastering changed video elementary stream');
+renameSync(output,input);
+const measured=execFileSync(ffmpeg,['-hide_banner','-i',input,'-af','ebur128=peak=true','-f','null','-'],{encoding:'utf8',stdio:['ignore','pipe','pipe']});void measured;
+writeFileSync('content-intelligence/reviews/chocolate-crystal-choice-production-v1/audio-mastering.json',JSON.stringify({enteredAt:new Date().toISOString(),scope:'Voice-led final mix mastering; no narration wording, speed or visual frames changed. Sparse original sounds processed with the mix.',inputSha256:before,outputSha256:sha(readFileSync(input)),videoElementaryStreamSha256:videoBefore,videoStreamUnchanged:true,filter:'loudnorm=I=-18:TP=-1.5:LRA=7',targetIntegratedLufs:-18,targetTruePeakDbfs:-1.5,reason:'Unmastered mix measured -22.5 LUFS; raise conversational phone playback level with true-peak limiting. Target is a story-specific engineering choice, not proven platform optimum.',recipe:'node scripts/master-chocolate-audio.mjs (once after a fresh Remotion render)',byteIdenticalRegenerationProven:false},null,2)+'\n');console.log('Audio mastered with unchanged video stream');

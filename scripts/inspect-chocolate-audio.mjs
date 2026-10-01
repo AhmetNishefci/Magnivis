@@ -1,0 +1,11 @@
+import console from 'node:console';
+import {createHash} from 'node:crypto';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {execFileSync} from 'node:child_process';
+import {createLocalSpeechInspector} from '../src/ai/providers/kokoro-local.mjs';
+const require=createRequire(import.meta.url);const ffmpeg=require('ffmpeg-static');const ffprobe=require('ffprobe-static').path;
+const n=JSON.parse(readFileSync('src/production/narration/chocolate.json'));const inspect=await createLocalSpeechInspector();const results=[];
+for(const cue of n.cues){const raw=execFileSync(ffmpeg,['-v','error','-i',`public/${cue.file}`,'-ar','16000','-ac','1','-f','f32le','-'],{maxBuffer:64*1024*1024});const signal=new Float32Array(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength));const r=await inspect(signal,{return_timestamps:true});const probe=JSON.parse(execFileSync(ffprobe,['-v','error','-show_format','-show_streams','-of','json',`public/${cue.file}`]));results.push({id:cue.id,exactText:cue.transcript,recognized:r.text,chunks:r.chunks,duration:Number(probe.format.duration),sampleRate:Number(probe.streams[0].sample_rate)});console.log(cue.id,r.text);}
+const master='output/chocolate-crystal-choice-candidate-v1.mp4';const raw=execFileSync(ffmpeg,['-v','error','-i',master,'-ar','16000','-ac','1','-f','f32le','-'],{maxBuffer:64*1024*1024});const r=await inspect(new Float32Array(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength)),{chunk_length_s:20,stride_length_s:3,return_timestamps:true});
+writeFileSync('content-intelligence/reviews/chocolate-crystal-choice-production-v1/narration-inspection.json',JSON.stringify({checkedAt:new Date().toISOString(),masterPath:master,masterSha256:createHash('sha256').update(readFileSync(master)).digest('hex'),method:'Independent local Whisper tiny English ASR of every clip and full candidate audio; ffprobe verifies durations. This is full-media machine audio inspection, not a claim of human subjective listening.',model:'onnx-community/whisper-tiny.en',results,completeMasterRecognition:r,subjectiveListening:'Owner review required for pronunciation, naturalness, tactile mix and emotional timing.'},null,2)+'\n');console.log('FULL MASTER',r.text);
