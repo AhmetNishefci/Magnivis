@@ -1,0 +1,87 @@
+{
+  "device": "CPU",
+  "dtype": "q8",
+  "files": [
+    {
+      "bytes": 44,
+      "path": ".cache/longitude-ai/onnx-community/Kokoro-82M-v1.0-ONNX/config.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "df34b4f930b23447cd4dc410fabfb42eb3f24e803e6c3f97d618fb359380a36f"
+    },
+    {
+      "bytes": 92361116,
+      "path": ".cache/longitude-ai/onnx-community/Kokoro-82M-v1.0-ONNX/onnx/model_quantized.onnx",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478"
+    },
+    {
+      "bytes": 3497,
+      "path": ".cache/longitude-ai/onnx-community/Kokoro-82M-v1.0-ONNX/tokenizer.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "77a02c8e164413299b4b4c403b14f8e0e1c1b727db4d46a09d6327b861060a34"
+    },
+    {
+      "bytes": 113,
+      "path": ".cache/longitude-ai/onnx-community/Kokoro-82M-v1.0-ONNX/tokenizer_config.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "be1cb066d6ef6b074b3f15e6a6dd21ac88ff3cdaedf325f0aaed686c70f75d20"
+    },
+    {
+      "bytes": 2197,
+      "path": ".cache/longitude-ai/onnx-community/whisper-tiny.en/config.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "251ea843b5901a99efa58c0b99b8052c6019aa3e7d2baf46693a1128ff606233"
+    },
+    {
+      "bytes": 1646,
+      "path": ".cache/longitude-ai/onnx-community/whisper-tiny.en/generation_config.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "7b2e8451ed5f118e75fdd991409d72119d21d2fef1eba9723f68fb9c57fe5dc9"
+    },
+    {
+      "bytes": 30718858,
+      "path": ".cache/longitude-ai/onnx-community/whisper-tiny.en/onnx/decoder_model_merged_quantized.onnx",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "c0592d0749413c960569e1c7fb806b060d5d18f3ebad4a95cbf9a77dc6e9be52"
+    },
+    {
+      "bytes": 10124993,
+      "path": ".cache/longitude-ai/onnx-community/whisper-tiny.en/onnx/encoder_model_quantized.onnx",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "e93ec822f16a8fd264e7de972ad17d615ea7334b75a52d54c50c2e18dd503a25"
+    },
+    {
+      "bytes": 339,
+      "path": ".cache/longitude-ai/onnx-community/whisper-tiny.en/preprocessor_config.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "a6a76d28c93edb273669eb9e0b0636a2bddbb1272c3261e47b7ca6dfdbac1b8d"
+    },
+    {
+      "bytes": 2405679,
+      "path": ".cache/longitude-ai/onnx-community/whisper-tiny.en/tokenizer.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "5eb60cec1e77aeeb6869a2bb5a8e01a84c3fe5d072d75369343021fe6f5310d0"
+    },
+    {
+      "bytes": 282662,
+      "path": ".cache/longitude-ai/onnx-community/whisper-tiny.en/tokenizer_config.json",
+      "retention": "TEMPORARY model cache; exact rendered WAVs are durable",
+      "sha256": "93879c3dccdd4b976f709acd85b44778873f30c275e67026f30ca1e4c975230c"
+    },
+    {
+      "path": "node_modules/kokoro-js/voices/af_heart.bin",
+      "bytes": 522240,
+      "retention": "Package-provided primary voice embedding; lockfile pinned, cache disposable, exact WAVs retained",
+      "sha256": "d583ccff3cdca2f7fae535cb998ac07e9fcb90f09737b9a41fa2734ec44a8f0b"
+    }
+  ],
+  "kokoroPackage": "1.2.1",
+  "license": "Apache-2.0; model/voice license inspected from official model cards; exact WAVs retained rather than promising regeneration identity.",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "recordedAt": "2026-10-01T17:42:19.662233+00:00",
+  "schemaVersion": 1,
+  "selectedVoice": "bf_emma",
+  "transformersPackage": "3.8.1 (installed transitive Kokoro dependency)",
+  "voiceId": "af_heart",
+  "speed": 0.92
+}

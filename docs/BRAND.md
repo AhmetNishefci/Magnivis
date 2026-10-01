@@ -16,7 +16,7 @@ Handles are platform-specific operational identities, not one global brand field
 
 **Magnivis is a brand, not a video template.** Evidence-first accuracy, intellectual honesty, curiosity, clarity, meaningful visuals, premium intentional execution, readability, safe provenance and human gates are constants. `docs/CREATIVE-DIRECTION.md` owns the per-asset direction stage and convergence review.
 
-Palette, medium, light/depth, typography, camera, transitions, captions, voice, sound, pace and duration are chosen for the individual story. Cinematic means intentional storytelling and craft; it does not mandate realism, dark backgrounds, blue-white highlights or procedural graphics. Avoid cheap slideshow/UI aesthetics, fake HUDs, generic AI montages, busy text and sensational misinformation.
+Palette, medium, light/depth, typography, camera, transitions, captions, vocal delivery, sound, pace and duration are chosen for the individual story. Cinematic means intentional storytelling and craft; it does not mandate realism, dark backgrounds, blue-white highlights or procedural graphics. Avoid cheap slideshow/UI aesthetics, fake HUDs, generic AI montages, busy text and sensational misinformation.
 
 Space Grotesk/Manrope and deep neutrals with blue/white/warm highlights are licensed historical treatments, not compulsory future fonts/colors. Other typography requires rights evidence, accessibility/readability and composition QA. Select uppercase and emphasis when they improve the specific experience.
 
@@ -31,3 +31,7 @@ The channel already applies a watermark. In-video branding is optional and subtl
 ## Historical creative reference
 
 The recovered through-Wood-Frog checkpoint and exact approved Phantom Traffic remain immutable. Their procedural/vector visuals, diagrams, counters, typography, synthetic narration and caption execution are historical precedents. Extract the principle that served the story; test its applicability before reusing the execution. The owner-authorized adaptive direction supersedes any interpretation of recovery preservation as a future style mandate. Recovery is CLOSED; no historical restyling or Bridge work is authorized. Image generation, licensed footage, procedural graphics and hybrids are tools when justified, never default identity.
+
+## Current auditory continuity
+
+The primary narrator is Kokoro `af_heart`, used by default. Topic changes alone do not justify auditions or narrator changes; deviations need a material explicit rationale. Future explicit brand decisions can evolve this identity. CREATIVE-DIRECTION.md owns delivery and exceptions. Narrator continuity does not impose visual/caption templates, music, ambience, SFX or a fixed sonic identity. Soundscape and story-led duration remain independently adaptive; business eligibility does not require padding.

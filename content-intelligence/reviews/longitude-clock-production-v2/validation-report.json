@@ -1,0 +1,52 @@
+{
+  "recordedAt": "2026-10-01T18:42:05.401504+00:00",
+  "passed": true,
+  "checks": {
+    "pnpmCheck": {
+      "passed": true,
+      "typecheck": "passed",
+      "lint": "passed",
+      "tests": 360,
+      "testFiles": 33
+    },
+    "researchAndClaimEvidence": "passed",
+    "editorialAndEightVerifiedClaims": "passed",
+    "ownerDecisionAndCreativeDirection": "passed",
+    "productionAndCaptionBindings": "passed",
+    "primaryNarratorAndAdaptiveExecutionPolicy": "passed",
+    "storyLedDurationPolicy": "passed",
+    "ownerBoundCanonicalAuthorityAmendment": "passed",
+    "v1PreservedFiles": 95,
+    "adaptiveHistoricalUnchangedFiles": 292,
+    "exactCycle1ClosureCheckpoint": 1,
+    "cycle1Closure": "passed",
+    "contentIntelligenceFixture": "passed",
+    "openWorldDiscovery": "passed",
+    "brainIntegrity": "passed",
+    "completeMediaDecode": "passed",
+    "actualDecodedQaFrames": 56,
+    "browserTypographyAndPinnedFonts": "passed",
+    "knownInsetBounds": "passed",
+    "nativeGeometryAndRealDevice": "incomplete-unmeasured",
+    "independentClipAndDecodedMixAsr": "passed-with-sea-C-homophone-limitation",
+    "audioSampleDurationsVsFfprobe": "passed",
+    "trackedDurableArtifacts": 381,
+    "v2RetainedArtifacts": 75,
+    "scopedSecretScan": {
+      "passed": true,
+      "textFilesScanned": 62,
+      "findingsPathsOnly": []
+    },
+    "gitDiffCheck": "passed"
+  },
+  "candidateSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+  "masterApproved": false,
+  "platformApproved": false,
+  "publicationAuthorized": false,
+  "limitations": [
+    "Subjective voice/naturalness/mix requires owner listening.",
+    "Caption timing is authored within measured WAV cues, not forced alignment.",
+    "No real-device/native UI geometry approval.",
+    "Exact retained bytes, not future regeneration, are the media authority."
+  ]
+}

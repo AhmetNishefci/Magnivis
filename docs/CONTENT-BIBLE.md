@@ -46,4 +46,4 @@ Music, ambience, transitions, impacts, narration, and silence are separate conce
 
 ## Adaptive creative direction — future content
 
-Story structure, reference objects, scale transitions and minimal text are useful techniques when the story warrants them, not mandatory scene recipes. Future assets use CREATIVE-DIRECTION.md to choose medium, hook, narrator, pacing, captions and sound with rationale. Historical caption line/visual treatments are precedents; designed narration-faithful readability remains required.
+Story structure, reference objects, scale transitions and minimal text are useful techniques when the story warrants them, not mandatory scene recipes. Future assets use CREATIVE-DIRECTION.md to choose medium, hook, narration delivery, pacing, captions and sound with rationale; use the current primary narrator unless a material explicit deviation is justified. Historical caption line/visual treatments are precedents; designed narration-faithful readability remains required.

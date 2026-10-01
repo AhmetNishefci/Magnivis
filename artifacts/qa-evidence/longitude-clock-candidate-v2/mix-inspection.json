@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-01T18:31:41.926Z",
+  "method": "Independent local Whisper recognition of decoded final AAC mix, not human listening. Numerical orthography and homophone differences are preserved as limitations.",
+  "model": "onnx-community/whisper-tiny.en",
+  "decodedPcmSha256": "9033128e1b32947363fdc19559bb53316b97b2c36a08c5b01cd02e3f4e6c8c0c",
+  "recognizedText": " How can a clock tell a ship where it is? By keeping the time at a known reference point, sailors use the sun to find local time, corrected to match the clock's timekeeping. Compare them at the same moment. Earth's turning links that time difference to longitude, 15 degrees per hour, 12 at the reference, 2 in the afternoon locally, 2 hours ahead, 30 degrees east. Harrison's H4 helped demonstrate accurate timekeeping at C. Other astronomical methods remained useful too. The clock carries time. Observation and calculation reveal longitude.",
+  "segments": [
+    {
+      "timestamp": [
+        0,
+        3
+      ],
+      "text": " How can a clock tell a ship where it is?"
+    },
+    {
+      "timestamp": [
+        3,
+        6
+      ],
+      "text": " By keeping the time at a known reference point,"
+    },
+    {
+      "timestamp": [
+        6,
+        9
+      ],
+      "text": " sailors use the sun to find local time,"
+    },
+    {
+      "timestamp": [
+        9,
+        12
+      ],
+      "text": " corrected to match the clock's timekeeping."
+    },
+    {
+      "timestamp": [
+        12,
+        15
+      ],
+      "text": " Compare them at the same moment."
+    },
+    {
+      "timestamp": [
+        15,
+        22.84
+      ],
+      "text": " Earth's turning links that time difference to longitude, 15 degrees per hour, 12 at the"
+    },
+    {
+      "timestamp": [
+        22.84,
+        31.2
+      ],
+      "text": " reference, 2 in the afternoon locally, 2 hours ahead, 30 degrees east."
+    },
+    {
+      "timestamp": [
+        31.2,
+        36.32
+      ],
+      "text": " Harrison's H4 helped demonstrate accurate timekeeping at C."
+    },
+    {
+      "timestamp": [
+        36.32,
+        40.36
+      ],
+      "text": " Other astronomical methods remained useful too."
+    },
+    {
+      "timestamp": [
+        40.36,
+        42.16
+      ],
+      "text": " The clock carries time."
+    },
+    {
+      "timestamp": [
+        42.16,
+        46
+      ],
+      "text": " Observation and calculation reveal longitude."
+    }
+  ],
+  "ownerListeningStillRequired": true,
+  "limitations": [
+    "Chunked ASR may repeat an overlapping numerical phrase; isolated cue recognition and exact sequence metadata are separately retained.",
+    "sea/C is a homophone recognition difference.",
+    "Human listening and perceived voice/mix quality remain owner-review."
+  ]
+}

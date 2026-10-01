@@ -157,8 +157,8 @@ describe('Content Intelligence V1 topic candidates and prompts', () => {
       'workflow.content-asset-review-drafting',
     ]);
     expect(new Set(workflows.map(({id}) => id)).size).toBe(workflows.length);
-    expect(workflows.every(({version, outputSchemaId}) =>
-      version === 1 && outputSchemaId.endsWith('.v1'))).toBe(true);
+    expect(workflows.every(({id, version, outputSchemaId}) =>
+      version === (id === 'workflow.creative-direction' ? 2 : 1) && outputSchemaId.endsWith('.v1'))).toBe(true);
     expect(contentAssetDraftWorkflow.systemInstructions.join(' ')).toMatch(/cannot approve/i);
   });
 });

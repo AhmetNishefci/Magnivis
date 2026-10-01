@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "reviewer": "Codex",
+  "authority": "local-QA-not-owner-approval",
+  "checkedAt": "2026-10-01T18:33:35.485886+00:00",
+  "decodedFrames": 56,
+  "coverage": "Frame zero/opening, every caption midpoint, all ten beats, correction/same-instant/readings/angle/H4/complementary methods/coda, retimed transitions.",
+  "findings": [
+    "Visual treatment materially unchanged; original fonts, captions, object assets and palette retained.",
+    "Reference watch stays unchanged during correction.",
+    "Same-instant mean-solar readings remain continuous through +2 hours / north-pole 30 degrees east.",
+    "No position display, latitude/distance assertion or later boxed chronometer.",
+    "No text collisions or clipping in actual browser geometry."
+  ],
+  "audioInspection": "Generated clip and decoded-mix ASR plus waveform/peak analysis; no fabricated human listening.",
+  "limitations": [
+    "Phrase timing authored against measured WAVs, not forced alignment.",
+    "Phone-scale local frames cannot prove real-device/native UI safety.",
+    "Subjective voice/mix/naturalness remains owner listening review."
+  ],
+  "ownerApproved": false
+}

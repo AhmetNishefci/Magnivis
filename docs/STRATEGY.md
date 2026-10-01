@@ -149,4 +149,8 @@ Discover → research → produce a Short → separately authorized publication 
 
 ## Adaptive creative direction — future content
 
-Magnivis is a brand, not a video template. Use CREATIVE-DIRECTION.md between approved editorial intent and future production. Learn story principles rather than cloning a successful palette, narrator, caption design or structure. No fixed domain styles. Long-form chooses its own execution; the open topic universe and discover-first/classify-second rule remain intact.
+Magnivis is a brand, not a video template. Use CREATIVE-DIRECTION.md between approved editorial intent and future production. Learn story principles rather than cloning a successful palette, caption design or structure. No fixed domain styles. Long-form chooses its own execution; the open topic universe and discover-first/classify-second rule remain intact.
+
+## Story-led runtime and business constraints
+
+Duration serves the explanation, comprehension and retention. Do not pad Shorts beyond a monetization threshold or compress them to a habitual runtime. Platform requirements/monetization eligibility belong to business and distribution decisions, not automatic creative instructions. Short-form and long-form remain distinct formats. Current primary-narrator continuity is a brand policy; it does not constrain adaptive visual, caption or sound treatment.

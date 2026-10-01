@@ -1,3 +1,4 @@
+import {executionPolicySchema,validateExecutionPolicy,predatesBrandPolicy} from '../design/brand-execution-policy';
 import {z} from 'zod';
 import {creativeReferenceSchema} from '../content-assets/creative-direction';
 import {validateCreativeDirection} from '../content-assets/creative-direction-integrity';
@@ -86,6 +87,7 @@ export const productionPlanSchema = z.object({
   ownerDecision: artifactReferenceSchema,
   approvedScriptSha256: z.string().regex(/^[a-f0-9]{64}$/),
   creativeDirection: creativeReferenceSchema.optional(),
+  executionPolicy: executionPolicySchema.optional(),
   excludedClaimIds: z.array(stableKnowledgeIdSchema),
   format: z.object({
     width: z.number().int().positive(),
@@ -220,5 +222,6 @@ export const validateProductionPlanReferences = (
       || plan.creativeDirection.id !== direction.id || plan.creativeDirection.revision !== direction.revision
       || plan.creativeDirection.sha256 !== sha256Json(direction)) throw new Error('ProductionPlan creative direction is stale or not ready');
   }
+  if (!historical && !predatesBrandPolicy(plan)) validateExecutionPolicy(plan.executionPolicy);
   return plan;
 };

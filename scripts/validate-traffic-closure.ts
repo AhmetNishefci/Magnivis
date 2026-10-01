@@ -1,3 +1,4 @@
+import {validateCanonicalNarratorAmendment} from './primary-narrator-authority-integrity';
 import {readFileSync,existsSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {sha256Json} from '../src/content-intelligence/run-schema';
@@ -22,7 +23,10 @@ const t=records.find(r=>r.platform==='tiktok')!;if(t.remote||t.ownerReport?.miss
 const before=parseManifests(JSON.parse(execFileSync('git',['show','577f9fe39045bd54bd37a49c7d5d81b69becf8fd:artifacts/manifests.json'],{encoding:'utf8'}))),after=parseManifests(JSON.parse(readFileSync('artifacts/manifests.json','utf8')));
 for(const m of before)if(sha256Json(after.find(a=>a.artifactId===m.artifactId))!==sha256Json(m))throw new Error('Historical manifest rewritten');
 for(const path of ['docs/CREATIVE-DIRECTION.md','AGENTS.md','artifacts/presentation-profiles.json','artifacts/presentation-qa.json','artifacts/cover-assets.json','artifacts/recovery-decision.json','artifacts/owner-evidence.json']){
- if(!existsSync(path))continue;const old=execFileSync('git',['show',`577f9fe39045bd54bd37a49c7d5d81b69becf8fd:${path}`]);if(!old.equals(readFileSync(path)))throw new Error(`Historical authority/evidence modified: ${path}`);
+ if(!existsSync(path))continue;const old=execFileSync('git',['show',`577f9fe39045bd54bd37a49c7d5d81b69becf8fd:${path}`]);if(!old.equals(readFileSync(path))){
+  if(path==='AGENTS.md'||path==='docs/CREATIVE-DIRECTION.md')validateCanonicalNarratorAmendment(path,old,readFileSync(path));
+  else throw new Error(`Historical authority/evidence modified: ${path}`);
+ }
 }
 const guide=readFileSync('AGENTS.md','utf8');for(const route of guide.matchAll(/`((?:docs|recovery-audit)\/[^`]+\.md)`/g))if(!existsSync(route[1]!))throw new Error('Missing canonical route');
 console.log(JSON.stringify({passed:true,cycle1:'OPERATIONALLY_COMPLETE',publications:records.map(r=>({id:r.id,state:r.state,remote:r.remote??null,publishedOn:r.publishedOn})),ownerPostPublicationQaPlatforms:qa.length,measuredPassesAdded:0,commentsOwnerReported:4,tiktokPermalinkGap:true,historicalArtifactRecordsPreserved:before.length,adaptiveCreativeDirectionIntact:true,lockedMaster:validatePhantomTrafficLockedMaster().artifact,nextGate:d.nextGate},null,2));

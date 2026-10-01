@@ -1,0 +1,10 @@
+import {mkdirSync,existsSync} from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {longitudeV2Target as target} from './production-video-targets';
+import {validateLongitudeV2} from '../src/production/longitude-v2-integrity';
+validateLongitudeV2();
+const smoke=process.argv.includes('--smoke');
+if(!smoke&&existsSync('artifacts/masters/longitude-clock-candidate-v2.mp4'))throw new Error('Retained V2 is immutable.');
+mkdirSync('output',{recursive:true});
+const result=spawnSync('pnpm',['exec','remotion','render',target.entryPoint,target.spec.compositionId,smoke?'output/longitude-clock-v2-smoke.mp4':target.output,'--codec=h264','--audio-codec=aac','--video-bitrate=5M','--audio-bitrate=192K','--pixel-format=yuv420p','--concurrency=2',...(smoke?['--frames=0-89']:[])],{stdio:'inherit'});
+if(result.error)throw result.error;process.exit(result.status??1);

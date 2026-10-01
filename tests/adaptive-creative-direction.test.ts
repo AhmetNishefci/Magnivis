@@ -1,3 +1,4 @@
+import {defaultExecutionPolicy} from '../src/design/brand-execution-policy';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {describe,expect,it} from 'vitest';
@@ -28,7 +29,7 @@ const makeDirection=()=>creativeDirectionSchema.parse({
  convergenceReview:{recentAssets:[{contentAsset:ref(recent),learnedPrinciple:'Motion can explain a relationship.',applicability:'Test whether physical motion clarifies this fixture.',similarities:['Shared QA infrastructure'],differences:['Different content-specific execution'],assessment:'distinct-execution',rationale:'Infrastructure does not mandate style.'}],unresolvedConvenienceReuse:[],conclusion:'Intentional choices; no convenience-driven lock.'},
  ownerReview:{required:false,rationale:'Fixture decisions stay within existing editorial truth.'},risks:['Fixture only.'],provenance:{method:'manual-editorial',enteredAt:'2026-10-01T00:00:00Z',notes:'Synthetic unit-test input, not an owner decision or produced asset.'},platformApprovalGranted:false,publicationApprovalGranted:false,
 });
-const futurePlan=(direction=makeDirection())=>({...woodFrogProductionPlan,id:'production-plan.future-test.v1',status:'planned',visualApproval:undefined,creativeDirection:ref(direction),assets:woodFrogProductionPlan.assets.map(a=>({...a,provenance:{...a.provenance,evidence:'Fixture rights evidence'}}))});
+const futurePlan=(direction=makeDirection())=>({...woodFrogProductionPlan,id:'production-plan.future-test.v1',executionPolicy:defaultExecutionPolicy(),status:'planned',visualApproval:undefined,creativeDirection:ref(direction),assets:woodFrogProductionPlan.assets.map(a=>({...a,provenance:{...a.provenance,evidence:'Fixture rights evidence'}}))});
 
 describe('Adaptive creative direction',()=>{
  it('preserves every historical render, approval, audio, artifact and presentation input byte-for-byte',()=>{

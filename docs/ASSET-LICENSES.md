@@ -49,3 +49,7 @@ Scientific source pages are factual references, not embedded media assets. No th
 | QA frames/contact sheets | Derived from original candidate/source renderer | Exact candidate and QA hashes in production receipt; local evidence, no device/platform approval. |
 
 Font source URLs, copyright notices, licenses and file hashes are retained in the font provenance. Model cards inspected: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX and https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md. Local Whisper inspection is a separate corroboration tool, not narration, claim evidence or human listening; its cached model hashes are recorded and disposable caches are not committed.
+
+### Longitude Clock candidate v2 — narrator revision
+
+Exact approved words are newly synthesized locally with Kokoro `af_heart`, speed 0.92, q8 CPU, using the existing Apache-2.0 model. Individual WAV hashes, sample-count durations and model/voice-embedding provenance are retained under the v2 production review; v1 remains immutable. Soundscape is the same original seeded ocean/tactile/no-music construction retimed to the measured narration. Existing original visual/H4/font provenance is reused by explicit owner-approved visual direction, not by aesthetic default. No museum photograph or new external production media is introduced.

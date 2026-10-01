@@ -1,3 +1,4 @@
+import brandPolicy from '../design/brand-execution-policy.json';
 import {generateStructured, type AIProvider, type PromptWorkflow} from '../ai/provider';
 import type {KnowledgePackage} from '../knowledge/schema';
 import type {ContentAsset} from '../content-assets/schema';
@@ -10,13 +11,13 @@ export type CreativeDirectionRequest = {
   recentAssets: ContentAsset[]; brief: string;
 };
 export const creativeDirectionWorkflow: PromptWorkflow<CreativeDirectionRequest, CreativeDirection> = {
-  id:'workflow.creative-direction',version:1,outputSchemaId:'schema.creative-direction.v1',
+  id:'workflow.creative-direction',version:2,outputSchemaId:'schema.creative-direction.v1',
   outputSchema:creativeDirectionDraftSchema,
   systemInstructions:[
     'Magnivis is a brand, not a video template. Derive experience from this story and evidence.',
     'Keep approved claims, qualifications, hook, exact narration, beats and VisualPlan intact. Request upstream review if a change is needed.',
     'Evaluate medium, art/color/camera/transition language, narration voice/delivery, captions, sound, pacing and platform presentation with story-specific rationale.',
-    'No domain style rules. No mandatory palette, font, voice, soundtrack, duration or hook formula. Silence and restrained/no-motion choices are valid.',
+    `No domain style rules. Default to current primary narrator ${brandPolicy.primaryNarrator.provider}/${brandPolicy.primaryNarrator.voiceId}; material deviations require explicit rationale, never domain change alone. No routine narrator auditions. No mandatory palette, font, soundtrack, duration or hook formula. Silence and restrained/no-motion choices are valid. Soundscape/captions/visuals remain story-specific; runtime is story-led, with no monetization-only padding.`,
     'Compare supplied recent assets: extract principles, distinguish engineering reuse from creative reuse, reconsider convenience-driven convergence.',
     'Do not invent prior success or analytics. Do not grant source, editorial, master, device or publication approval.',
     'Return a proposal without an owner decision. State risks and significant owner-review needs; tiny style choices do not need new approval.',

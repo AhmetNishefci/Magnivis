@@ -71,3 +71,9 @@ Owner visual decision `owner-decision.phantom-traffic.master-visual.v1` binds ca
 ## Adaptive creative direction — future content
 
 Future plans require an exact CreativeDirection reference plus the actual ready companion in validateProductionPlanReferences. Only exact historical plan hashes listed in system-audits/adaptive-creative-direction-v1/historical-plans.json are exempt; IDs alone cannot bypass the gate. Format dimensions/FPS are explicit positive values; scene types remain open. Asset kind/origin/rights are explicit, with inspectable provenance/license evidence required for new plans. These fields do not establish license clearance or platform approval. Reuse engineering, not mandatory art direction; see CREATIVE-DIRECTION.md.
+
+## Primary narrator and independently adaptive execution
+
+Future plans bind `executionPolicy` to `src/design/brand-execution-policy.json`. Default narrator is the current primary voice; alternatives need material explicit rationale, not a domain change. Visual, caption and soundscape authority remain story-specific; no universal music and no monetization-only padding. Exact pre-policy plans retain original semantics through their hashes, never an ID-only exemption. This requirement supplements existing editorial/CreativeDirection gates.
+
+Longitude candidate v2 uses separate narration, CaptionPlan revision 2, ProductionPlan revision 3 render inputs and direction revision 3 (narrator-only owner revision). Use `node --import tsx scripts/render-longitude-v2.ts`, `pnpm qa longitude-clock-v2`, `node --import tsx scripts/qa-longitude-layout.ts --v2` and `node --import tsx scripts/validate-longitude-v2.ts`. Existing v1 inputs/master remain immutable; candidate v2 still requires owner master review.

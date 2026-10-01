@@ -1,5 +1,13 @@
 # Project state
 
+## CONTENT CYCLE #2 — PRIMARY NARRATOR REVISION, candidate v2
+
+Ahmet reviewed exact Longitude candidate v1 `71dba2d65c2e86fe00cc11683c8aeaf668a9acd10e877e744be3380bde53b981`, approved visual/sound direction in principle and requested Kokoro `af_heart`; master remains unapproved. [V2 decision](../content-intelligence/reviews/longitude-clock-production-v2/owner-decision.json) records actual decision-entry time and exact parent/editorial bindings. The current primary narrator is now a brand default; material deviations need rationale, domain changes do not require auditions. Visuals/captions/soundscape remain adaptive; duration is story-led, never monetization-only padding. Earlier conflicting narrator-choice text is superseded prospectively, without changing historical approvals.
+
+Exact 89 words/eight verified claims remain locked. Separate v2 WAVs measure 40.85 seconds; measured timing plus deliberate pauses gives a 47-second authored timeline. CaptionPlan revision 2 retimes the same 24 phrases/design; ProductionPlan and direction revisions preserve the visual mechanism and no-music sound philosophy. Candidate v1 and its exact review evidence remain intact. [V2 owner handoff](../content-intelligence/reviews/longitude-clock-production-v2/owner-review.md) will bind the durable new candidate. No master/platform/publication approval is inferred.
+
+**Exact next gate: AHMET — CYCLE #2 OWNER MASTER VISUAL REVIEW — CANDIDATE V2.**
+
 ## CONTENT CYCLE #2 — DIRECTION APPROVED, master candidate production
 
 Ahmet explicitly approved Crafted Object Theatre direction-v1 at `4c4c967f968972108f53221f6921f721246cf0db` and authorized planning/implementation of one owner-review master candidate. [Creative production decision](../content-intelligence/creative-directions/longitude-clock-time-to-position-approved-v2/owner-decision.json) binds the exact proposal revision/hash and approved editorial dependencies with actual labeled decision-entry time. Approved direction revision 2 is `ready-for-production-planning`; original proposal and research/claim/editorial snapshots remain immutable. Eight verified claims and the exact 89-word narration/VisualPlan/comprehension contract remain authoritative.

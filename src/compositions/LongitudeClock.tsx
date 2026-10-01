@@ -8,9 +8,12 @@ import {inspectLongitudeLayout} from '../production/longitude-layout-qa';
 import metadata from '../production/narration/longitude-clock.json';
 import rawCaptions from '../captions/plans/longitude-clock.json';
 import rawPlan from '../production/plans/longitude-clock.json';
+import metadataV2 from '../production/narration/longitude-clock-v2.json';
+import captionsV2 from '../captions/plans/longitude-clock-v2.json';
+import planV2 from '../production/plans/longitude-clock-v2.json';
 import type {z} from 'zod';
 import type {adaptiveCaptionPlanSchema} from '../captions/adaptive-plan';
-const captions=rawCaptions as z.infer<typeof adaptiveCaptionPlanSchema>;
+
 const headings=['A clock at sea.','Time, carried.','Find local time.','One comparison.','Time becomes angle.','Two readings.','Thirty degrees east.','A watch that mattered.','More than one method.','Time becomes longitude.'];
 const progress=(time:number,start:number,duration=0.7)=>Math.max(0,Math.min(1,(time-start)/duration));
 const Footer=({text}:{text:string})=><ObjectLabel x={360} y={707} size={22} color={c.muted}>{text}</ObjectLabel>;
@@ -30,15 +33,16 @@ const BeatObjects=({index,time}:{index:number;time:number})=>{
   default:return <><LongitudeWatch x={170} y={185} r={73}/><SunObject x={518} y={171} r={37}/><ObjectLabel x={170} y={303} size={27}>REFERENCE TIME</ObjectLabel><ObjectLabel x={518} y={303} size={27}>OBSERVATION</ObjectLabel><path d="M 170 340 L 170 374 L 360 374 M 518 340 L 518 374 L 360 374 M 360 374 L 360 410" fill="none" stroke={c.ink} strokeWidth="3"/><ObjectLabel x={360} y={457} size={33}>COMPARISON + CALCULATION</ObjectLabel><g opacity={progress(time,.8)}><ObjectLabel x={360} y={554} size={59} color={c.accent}>LONGITUDE</ObjectLabel><ObjectLabel x={360} y={609} size={25}>RELATIVE TO THE REFERENCE</ObjectLabel><ObjectLabel x={360} y={654} size={28}>NOT COMPLETE GEOGRAPHIC POSITION</ObjectLabel></g><Footer text="THE CLOCK CARRIES TIME"/></>;
  }
 };
-export const LongitudeClock=({inspectQa=false}:{inspectQa?:boolean})=>{
+export const LongitudeClock=({inspectQa=false,revision=1}:{inspectQa?:boolean;revision?:number})=>{
+ const activePlan=revision===2?planV2:rawPlan;const activeMetadata=revision===2?metadataV2:metadata;const captions=(revision===2?captionsV2:rawCaptions) as z.infer<typeof adaptiveCaptionPlanSchema>;
  const frame=useCurrentFrame();useEffect(()=>{void loadLongitudeFonts();},[]);
- const index=Math.max(0,rawPlan.beats.findIndex(b=>frame>=b.frames.start&&frame<b.frames.end));
+ const index=Math.max(0,activePlan.beats.findIndex(b=>frame>=b.frames.start&&frame<b.frames.end));
  useEffect(()=>{if(!inspectQa)return;const handle=delayRender("Inspect actual Longitude typography");void loadLongitudeFonts().then(()=>requestAnimationFrame(()=>{console.log("LONGITUDE_LAYOUT_QA "+JSON.stringify(inspectLongitudeLayout(frame)));continueRender(handle);}));},[inspectQa,frame]);
- const time=(frame-rawPlan.beats[index]!.frames.start)/30;
+ const time=(frame-activePlan.beats[index]!.frames.start)/30;
  return <AbsoluteFill style={{backgroundColor:c.ivory,fontFamily:'Longitude Source Sans',color:c.ink}}>
   <AbsoluteFill style={{background:'radial-gradient(ellipse at 25% 15%, #FFFCF2 0%, transparent 70%)',opacity:.65}}/>
-  <Audio src={staticFile('audio/longitude-clock/soundscape.wav')} volume={0.8}/>
-  {metadata.cues.map(cue=><Sequence key={cue.id} from={Math.round(cue.start*30)} durationInFrames={Math.ceil(cue.duration*30)} layout="none"><Audio src={staticFile(cue.file)} volume={0.94}/></Sequence>)}
+  <Audio src={staticFile(revision===2?'audio/longitude-clock/v2/soundscape.wav':'audio/longitude-clock/soundscape.wav')} volume={0.8}/>
+  {activeMetadata.cues.map(cue=><Sequence key={cue.id} from={Math.round(cue.start*30)} durationInFrames={Math.ceil(cue.duration*30)} layout="none"><Audio src={staticFile(cue.file)} volume={0.94}/></Sequence>)}
   <div style={{position:'absolute',left:140,top:281,fontSize:25,letterSpacing:1.2,fontWeight:600}}>MAGNIVIS / LONGITUDE</div>
   <div style={{position:'absolute',left:140,top:359,width:730,fontFamily:'Longitude Source Serif',fontSize:66,lineHeight:1.07,fontWeight:400}}>{headings[index]}</div>
   <div style={{position:'absolute',left:135,top:573,width:720,height:750,transformOrigin:'50% 50%',transform:index===0?`translateY(${(1-progress(time,0,1))*8}px)`:undefined}}><TheatreSurface><BeatObjects index={index} time={time}/></TheatreSurface></div>

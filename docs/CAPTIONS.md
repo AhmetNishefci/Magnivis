@@ -100,3 +100,7 @@ Designed captions are editorial/visual storytelling, not automatic subtitle dump
 ## Adaptive creative direction — future content
 
 CREATIVE-DIRECTION.md supersedes the V1 design vocabulary as a universal future styling restriction. The three animations, two placements, ice/gold emphasis, Manrope/Space Grotesk and backplate remain immutable V1 execution for historical plans. Future V2 authoring in src/captions/adaptive-plan.ts chooses appearance/renderer explicitly and preserves exact narration, timing, source boundaries and authored bounds. No speculative renderer is implemented here; future rendering must validate typography fit, accessibility and platform/native-UI safety. Semantics are reusable; visual style is a per-story decision. Between spoken phrases visual moments may breathe without captions; spoken qualifications remain covered.
+
+## Narrator revision synchronization
+
+Primary-narrator continuity does not create a universal caption appearance. A narrator revision preserves approved words and design direction, recalculates cue timing from measured audio, and receives new CaptionPlan/artifact bindings and decoded-media review. Longitude Clock candidate v2 retains its object-theatre caption execution; v1 remains immutable evidence.
