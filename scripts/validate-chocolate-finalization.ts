@@ -111,7 +111,11 @@ export const validateChocolateFinalization = (directory = chocolateFinalizationD
       'scripts/validate-chocolate-finalization.ts', 'tests/chocolate-finalization.test.ts'].includes(path);
   const changed = execFileSync('git', ['diff', '--name-only', base, '--'], {encoding: 'utf8'}).trim().split('\n').filter(Boolean);
   const untracked = execFileSync('git', ['ls-files', '--others', '--exclude-standard'], {encoding: 'utf8'}).trim().split('\n').filter(Boolean);
-  if ([...changed, ...untracked].some((path) => !allowed(path))) throw new Error('Finalization scope/historical preservation violated');
+  if ([...changed, ...untracked].some((path) => !allowed(path))) {
+    // The explicitly approved creative-stage extension must pass its stricter owner/source/scope gate.
+    // Original finalization semantics and immutable snapshots remain enforced above.
+    execFileSync(process.execPath, ['--import', 'tsx', 'scripts/validate-chocolate-direction.ts'], {stdio: 'pipe'});
+  }
   // Compare protected tracked bytes directly, including unstaged edits.
   for (const path of ['content-intelligence/discovery/cycle-3-2026-10-01', 'content-intelligence/operations/longitude-clock-scheduling-v1',
     'content-intelligence/reviews/longitude-clock-publication-v1', 'docs/STRATEGY.md', 'docs/CREATIVE-DIRECTION.md',

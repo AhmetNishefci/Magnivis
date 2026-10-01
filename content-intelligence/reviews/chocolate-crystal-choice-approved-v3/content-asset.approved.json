@@ -1,0 +1,279 @@
+{
+  "approval": {
+    "approvedBy": "Ahmet Nishefci",
+    "decisionEnteredAt": "2026-10-01T22:46:54.561Z",
+    "notes": "Editorial approval at 2312d200a73b841efb60a86c56d664fe8d6602ff via owner-decision.chocolate-crystal-choice.creative-stage.v1. Eight already-verified claim reviews retained unchanged; CreativeDirection proposal only, no production/platform/publication authorization.",
+    "reviewTimeBasis": "decision-entry"
+  },
+  "assetType": "short-form-video",
+  "durationIntentSeconds": {
+    "maximum": 41.3,
+    "minimum": 35
+  },
+  "editorialPurpose": "Explain how processing can change chocolate structure without a new recipe.",
+  "editorialStatus": "approved",
+  "hookId": "chocolate-crystal-choice.hook.recipe",
+  "id": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+  "knowledgePackageId": "chocolate-crystal-choice",
+  "narrativeStructure": [
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.recipe",
+      "label": "recipe",
+      "purpose": "Establish same recipe under ordinary controlled remelting.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.recipe"
+      ]
+    },
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.fat",
+      "label": "fat",
+      "purpose": "Distinguish fat phase from suspended solids.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.fat"
+      ]
+    },
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.melt",
+      "label": "melt",
+      "purpose": "Explain loss of existing fat-crystal structure on sufficient melting.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.melt"
+      ]
+    },
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.arrange",
+      "label": "arrange",
+      "purpose": "Distinguish molecular/crystal arrangement from the larger fat-crystal network.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.arrange"
+      ]
+    },
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.result",
+      "label": "result",
+      "purpose": "Connect rebuilt structure to possible material behavior.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.result"
+      ]
+    },
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.control",
+      "label": "control",
+      "purpose": "Explain tempering as guidance of rebuilding.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.control"
+      ]
+    },
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.payoff",
+      "label": "payoff",
+      "purpose": "Relate structure and smooth surface to snap/gloss.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.payoff"
+      ]
+    },
+    {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.close",
+      "label": "close",
+      "purpose": "Resolve the recipe/structure distinction.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.close"
+      ]
+    }
+  ],
+  "revision": 3,
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.same-recipe"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.recipe",
+        "text": "The recipe can stay the same. The chocolate doesn’t have to.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.cocoa-butter"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.fat",
+        "text": "Chocolate contains cocoa butter, a fat that forms crystals.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.melting-network"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.melt",
+        "text": "Melt it enough, and that crystal structure breaks down.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.multiple-arrangements",
+          "chocolate-crystal-choice.claim.network"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.arrange",
+        "text": "As it cools, crystals form again. But their arrangements, and the network they build, can differ.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.soft-recool",
+          "chocolate-crystal-choice.claim.snap-gloss"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.result",
+        "text": "The result can be softer chocolate with less snap.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.tempering"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.control",
+        "text": "Tempering guides that rebuilding with controlled temperatures and mixing.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.network",
+          "chocolate-crystal-choice.claim.snap-gloss"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.payoff",
+        "text": "The goal is a structure that helps chocolate snap cleanly and look glossy.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "chocolate-crystal-choice.claim.same-recipe",
+          "chocolate-crystal-choice.claim.network"
+        ],
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.script.close",
+        "text": "Same recipe. Different structure.",
+        "type": "factual"
+      }
+    ]
+  },
+  "selectedClaimIds": [
+    "chocolate-crystal-choice.claim.same-recipe",
+    "chocolate-crystal-choice.claim.cocoa-butter",
+    "chocolate-crystal-choice.claim.melting-network",
+    "chocolate-crystal-choice.claim.multiple-arrangements",
+    "chocolate-crystal-choice.claim.network",
+    "chocolate-crystal-choice.claim.soft-recool",
+    "chocolate-crystal-choice.claim.tempering",
+    "chocolate-crystal-choice.claim.snap-gloss"
+  ],
+  "storyAngle": "Same recipe, different structure: melting is not equivalent to controlled tempering.",
+  "visualPlan": [
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.same-recipe"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.recipe",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.recipe",
+      "notes": "Same recipe means unchanged formulation, not a complete assay of chemical identity. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "Use one unchanged composition/batch; no added water, substituted fats or scorching.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.recipe"
+      ],
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.cocoa-butter"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.fat",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.fat",
+      "notes": "Sugar/cocoa particles do not all melt when cocoa butter melts. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "Show cocoa butter as a fat phase containing sugar/cocoa solids, not the entire bar as pure fat crystals.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.fat"
+      ],
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.melting-network"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.melt",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.melt",
+      "notes": "Partial melting may leave seeds; do not imply all crystals disappear on any warming. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "Sufficient melting disrupts the fat-crystal structure; keep nonfat solids separate.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.melt"
+      ],
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.multiple-arrangements",
+        "chocolate-crystal-choice.claim.network"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.arrange",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.arrange",
+      "notes": "Do not imply only the polymorph changes, or that neat identical blocks guarantee perfection. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "Cooling forms crystals again; their arrangements and larger network can differ.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.arrange"
+      ],
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.soft-recool",
+        "chocolate-crystal-choice.claim.snap-gloss"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.result",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.result",
+      "notes": "Do not diagnose a polymorph from appearance/fracture or invent a tested demonstration result. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "Chocolate can become softer with less snap; comparison represents a possibility.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.result"
+      ],
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.tempering"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.control",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.control",
+      "notes": "No temperature recipe, tutorial, universal process curve or seed explanation required. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "Controlled temperature history and mixing guide crystallization/network rebuilding.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.control"
+      ],
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.network",
+        "chocolate-crystal-choice.claim.snap-gloss"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.payoff",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.payoff",
+      "notes": "No guarantee from Form V alone; no bloom or food-safety diagnosis. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "A suitable structure helps chocolate snap cleanly and look glossy.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.payoff"
+      ],
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.same-recipe",
+        "chocolate-crystal-choice.claim.network"
+      ],
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.visual.close",
+      "narrativeBeatId": "chocolate-crystal-choice.asset.same-recipe-different-structure.beat.close",
+      "notes": "No claim all remelted chocolate fails or physical change necessarily changes recipe. Maintain the same ingredient identity across melting/cooling; distinguish molecular arrangement and bulk network as different scales. Any microscopic/molecular view is a simplified explanatory model, not literal microscopy, measured lattice geometry or experimental proof. Bespoke is an unresolved schema placeholder, not a selected medium or execution aesthetic.",
+      "objective": "Same ingredients can yield different material structure and behavior.",
+      "scriptSegmentIds": [
+        "chocolate-crystal-choice.asset.same-recipe-different-structure.script.close"
+      ],
+      "visualType": "bespoke"
+    }
+  ]
+}
