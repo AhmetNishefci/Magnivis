@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "decision": {
+    "id": "owner-decision.phantom-traffic.publication.v1",
+    "revision": 1,
+    "sha256": "0103f0c1fa2a035a316ad4d4f3c7517981ef30659862fd45f0285aa970c2faaa"
+  },
+  "publicationAuthorized": true,
+  "publicationOccurred": false,
+  "assistantUploadAuthorized": false,
+  "master": {
+    "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+  },
+  "coverSelection": {
+    "path": "artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+    "sha256": "3494907b3759b03146d1f050c17be653e807ba0b5b75abaafa0e87e79e0ccef5",
+    "selectedForPublication": true,
+    "deviceTested": false
+  },
+  "packages": [
+    {
+      "directory": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/youtube-shorts",
+      "deliveryId": "delivery.phantom-traffic.asset.backward-wave.variant.youtube-shorts.r3",
+      "platform": "youtube",
+      "state": "ready-for-manual-upload",
+      "variantSha256": "9327a3674ed48ae6d3a990a5e2ea1324ca1ba267bb24089c31c321fbcd8803e7",
+      "manifestSha256": "344b4c9b1f2f2abda961db3291057d22fbcacfa9c315c5d59794a42e46b6966d",
+      "manifestFileSha256": "4c58b741827fcc3685a8d6c8e9a72f4e3c2ea2ea585a107b9e30b9d6ae2e3276",
+      "uploadFile": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/youtube-shorts/video.mp4",
+      "uploadSha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+    },
+    {
+      "directory": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/tiktok-feed",
+      "deliveryId": "delivery.phantom-traffic.asset.backward-wave.variant.tiktok-feed.r3",
+      "platform": "tiktok",
+      "state": "ready-for-manual-upload",
+      "variantSha256": "779ecf941a6e835114d63ef1267862e2bd12208685d816ffd7cdaef1e7e8e11c",
+      "manifestSha256": "6edb5f6b7ce103dd23c689a07ba07e0cdbfa58dbb20f8ba391faaccf862406ac",
+      "manifestFileSha256": "ff9b5c5b058cbc425f595144b7fb9f857d9f0885ce65de9007a118d60ef9498f",
+      "uploadFile": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/tiktok-feed/video.mp4",
+      "uploadSha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+    },
+    {
+      "directory": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/instagram-reels",
+      "deliveryId": "delivery.phantom-traffic.asset.backward-wave.variant.instagram-reels.r3",
+      "platform": "instagram",
+      "state": "ready-for-manual-upload",
+      "variantSha256": "c5ecaff861038a21b65cfd6348fcfcf677beb8ae40abed9166a997ac20f9534f",
+      "manifestSha256": "36ecff19ce0012290b8b17a8e7681e7851b0c0af931c315f89de99f04c439c05",
+      "manifestFileSha256": "680a287b21bd820f337e3640d2cdeac506c5ee0c1de232264033731dec4821e1",
+      "uploadFile": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/instagram-reels/video.mp4",
+      "uploadSha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+    },
+    {
+      "directory": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/facebook-reels",
+      "deliveryId": "delivery.phantom-traffic.asset.backward-wave.variant.facebook-reels.r3",
+      "platform": "facebook",
+      "state": "ready-for-manual-upload",
+      "variantSha256": "2bc9448f535342621b863f790b7916e6cdabf766a2671eae91772051ba8a0f0f",
+      "manifestSha256": "ddc4900af4446d5a307818ba67503142bd1f5829ff916520cad5e54cafa052f0",
+      "manifestFileSha256": "de8b4e7aa1e73499d407c6fd1ea329ba62aa7dd6a5e51fc7665ea6fbece5dbcf",
+      "uploadFile": "artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/facebook-reels/video.mp4",
+      "uploadSha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+    }
+  ],
+  "realDevicePassesGranted": [],
+  "postPublicationReview": "pending-live-publication-evidence"
+}

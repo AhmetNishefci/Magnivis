@@ -156,6 +156,8 @@ export const createUploadCopy = (variant: PlatformVariant) => {
 };
 
 export const createReviewChecklist = (variant: PlatformVariant) => {
+  if (variant.presentationRiskAcceptance) return `# Manual publication handoff\n\nOwner explicitly accepted remaining presentation uncertainty. This is not a real-device pass.\nOwner decision: ${variant.presentationRiskAcceptance.decision.id}, SHA-256 ${variant.presentationRiskAcceptance.decision.sha256}.\nVariant: ${variant.id} revision ${variant.revision}.\n\nPreserve the exact video/audio/captions/disclosures and selected cover. Use the platform-specific copy and publication checklist. Verify account, public visibility, audience and current disclosure/quality settings.\n\nThe generator grants no publication authority; the separate exact-hash-bound owner authorization and final binding receipt do. Assistant upload is prohibited.\n\nPostpublication review is pending live URLs/evidence. Native geometry remains incomplete; do not fabricate passes or modify published media without separate remediation authorization.\n`;
+
   const state = deliveryStateForVariant(variant.status);
   const readinessNotice = state === 'ready-for-manual-upload'
     ? '**READY FOR MANUAL UPLOAD after every applicable check below passes.**'

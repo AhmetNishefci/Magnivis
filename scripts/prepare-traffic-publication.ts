@@ -1,0 +1,17 @@
+import {writeFileSync,existsSync} from 'node:fs';
+import {validatePhantomTrafficLockedMaster} from '../src/production/phantom-traffic-master-integrity';
+import {generateDeliveryPackage,validateDeliveryPackage} from './delivery-packages';
+import {phantomTrafficPublicationVariants as variants} from '../src/platform-variants/variants/phantom-traffic-publication';
+import {validateTrafficPublicationAuthorization} from '../src/platform-variants/phantom-traffic-publication';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {fileSha256} from '../src/production/phantom-traffic-integrity';
+const d=validateTrafficPublicationAuthorization(),master=validatePhantomTrafficLockedMaster();
+const dir='content-intelligence/reviews/phantom-traffic-publication-v1';
+if(existsSync(`${dir}/final-bindings.json`))throw new Error('Use a new immutable publication revision');
+const generatedAt=new Date().toISOString();
+const packages=variants.map(v=>generateDeliveryPackage({variantId:v.id,outputRoot:'artifacts/deliveries/phantom-traffic-publication-v1',generatedAt}));
+for(const p of packages)validateDeliveryPackage(p.directory);
+writeFileSync(`${dir}/platform-variants.json`,JSON.stringify(variants,null,2)+'\n');
+writeFileSync(`${dir}/final-bindings.json`,JSON.stringify({schemaVersion:1,decision:{id:d.id,revision:d.revision,sha256:sha256Json(d)},publicationAuthorized:true,publicationOccurred:false,assistantUploadAuthorized:false,master:d.master,coverSelection:{...d.selectedInstagramCover,selectedForPublication:true,deviceTested:false},packages:packages.map((p,i)=>({directory:p.directory.replace(`${process.cwd()}/`,''),deliveryId:p.manifest.deliveryId,platform:p.manifest.destination.platform,state:p.manifest.state,variantSha256:sha256Json(variants[i]),manifestSha256:sha256Json(p.manifest),manifestFileSha256:fileSha256(`${p.directory}/manifest.json`),uploadFile:`${p.directory.replace(`${process.cwd()}/`,'')}/video.mp4`,uploadSha256:d.master.sha256})),realDevicePassesGranted:[],postPublicationReview:'pending-live-publication-evidence'},null,2)+'\n');
+writeFileSync(`${dir}/post-publication-review.json`,JSON.stringify({schemaVersion:1,state:'pending-live-publication-evidence',publicationOccurred:false,prepublicationReviewCompleted:false,releaseBlocked:false,decisionId:d.id,surfaces:['youtube-shorts-viewer','youtube-desktop-web','tiktok-feed','instagram-reels-playback','instagram-profile-grid','facebook-reels-viewer','facebook-page-feed'].map(surface=>({surface,state:'NOT_TESTED',url:null,device:null,appVersion:null,observedAt:null,evidence:[]})),instructions:['After manual publication, supply actual platform URLs/IDs and the strongest available observation evidence.','Inspect opening, captions, disclosures, central car/pattern motion and ending; inspect grid and Page/feed independently.','Record surface/context, exact media/cover, issue and screenshot/video if supplied. Unknown metadata remains unknown.','Append new evidence; never revise earlier local models or invent measured coordinates from a qualitative report.','Separate hypotheses from verified profiles. Improve future engineering only when justified; no automatic creative template or published-media remediation.']},null,2)+'\n');
+console.log(JSON.stringify({passed:true,packages:packages.length,states:packages.map(p=>p.manifest.state),publicationAuthorized:true,publicationOccurred:false,masterUnchanged:master.artifact.sha256}));

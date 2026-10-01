@@ -1,5 +1,14 @@
 # Project state
 
+## Phantom Traffic — PUBLICATION AUTHORIZED, owner manual upload only
+
+Ahmet explicitly authorizes the exact prepared Phantom Traffic media/copy for manual publication on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels. He clarifies that the requested six-surface prepublication review was **not completed**, and accepts remaining presentation uncertainty. [Publication decision](../content-intelligence/reviews/phantom-traffic-publication-v1/owner-decision.json) supersedes the interpretation of his earlier qualitative report; all historical decision/QA bytes remain intact. No real-device or cover pass is granted, and unknown geometry/metadata remain unknown.
+
+Four revision-3 variants are `production-ready` with explicit `owner-risk-accepted` preview state, distinct from `private-preview-passed`. Final delivery handoffs are `ready-for-manual-upload` under `artifacts/deliveries/phantom-traffic-publication-v1/phantom-traffic/`. [Exact bindings](../content-intelligence/reviews/phantom-traffic-publication-v1/final-bindings.json) register authorization for those manifests. The immutable master and original platform copy are unchanged. The existing Instagram cover is selected for use under accepted uncertainty, not represented as device-tested. No derivative or assistant upload is authorized.
+
+[Publication checklist](../content-intelligence/reviews/phantom-traffic-publication-v1/publication-checklist.md) guides Ahmet's manual upload. Next: actual owner publication and real URLs/IDs, then postpublication presentation evidence. The former prepublication review is not a blocker for this release. No publication is claimed or scheduled. Adaptive Creative Direction V1 remains unchanged for future content; no Cycle #2 or remediation is authorized. Older sections below are milestone history, superseded only where this explicit decision states.
+
+
 ## Phantom Traffic — owner-reported device acceptance and delivery preparation
 
 Ahmet reports approval of the tested real-device presentation. The exact surface list and whether the Instagram cover PNG was used are not supplied; a scope question remains pending. [Owner decision](../content-intelligence/reviews/phantom-traffic-delivery-v1/owner-decision.json) records his statement and labeled decision-entry time, not a fabricated review timestamp. Device, OS/app, screenshots and measured geometry remain unknown. No specific surface pass is inferred.

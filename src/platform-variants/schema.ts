@@ -36,6 +36,7 @@ export const platformPreviewStatusSchema = z.enum([
   'not-ready',
   'ready-for-private-preview',
   'private-preview-passed',
+  'owner-risk-accepted',
 ]);
 
 const sourceMasterSchema = z.object({
@@ -134,6 +135,7 @@ export const platformVariantSchema = z.object({
   operatorGuidance: operatorGuidanceSchema.optional(),
   status: platformVariantStatusSchema,
   approval: approvalSchema.optional(),
+  presentationRiskAcceptance: z.object({decision: z.object({id:z.string().startsWith('owner-decision.'),revision:z.number().int().positive(),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict(),reason:z.string().min(1),realDevicePassGranted:z.literal(false)}).strict().optional(),
 }).strict().superRefine((variant, context) => {
   const expectedPrefix = `${variant.contentAssetId}.variant.`;
   if (!variant.id.startsWith(expectedPrefix)) {
@@ -225,6 +227,10 @@ export const platformVariantSchema = z.object({
       path: ['previewStatus'],
       message: 'Ready-for-private-preview variants must retain the platform preview gate',
     });
+  }
+
+  if ((variant.previewStatus === 'owner-risk-accepted') !== Boolean(variant.presentationRiskAcceptance) || (variant.presentationRiskAcceptance && (variant.productionIntent.platformPreviewRequired || variant.approval?.ownerDecision?.sha256 !== variant.presentationRiskAcceptance.decision.sha256))) {
+    context.addIssue({code:'custom',message:'Owner risk acceptance requires matching explicit decision approval, no device pass and no remaining prepublication preview gate'});
   }
 
   if (variant.sourceMaster) {
