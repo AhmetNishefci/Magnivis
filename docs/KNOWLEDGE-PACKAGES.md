@@ -99,3 +99,9 @@ For traffic waves, an explicit owner decision approved six exact narration claim
 ## Adaptive hook mechanisms
 
 Future hook archetypes are open normalized slugs; existing labels and historical packages remain unchanged. Classify the actual story mechanism rather than forcing a question or another historical formula. Hook claim bindings and owner editorial selection remain mandatory; CreativeDirection cannot silently replace the approved hook. See CREATIVE-DIRECTION.md.
+
+## Longitude Clock — editorial approval with creative-only authority
+
+The explicit owner approval at `d22145a86d791730c0a2e5dd03558a8d968473b4` verifies eight exact queued statements and approves narration/VisualPlan/comprehension contract. `src/content-intelligence/creative-stage-approval.ts` provides a strict separate boundary because the older full editorial-lock helper also grants master production. It binds every statement and reviewed object, preserves the 32 reserve states, records labeled decision-entry time and promotes approved revision-3 snapshots without production permission. No historical schema/gate is weakened. Original ClaimReviewBundle remains historical proposed evidence, resolved by the separate owner decision rather than rewritten.
+
+[Approved snapshots](../content-intelligence/reviews/longitude-clock-approved-v3/owner-review.md) feed the [asset-bound direction proposal](../content-intelligence/creative-directions/longitude-clock-time-to-position/owner-review.md). Validate using `node --import tsx scripts/validate-longitude-direction.ts`. Direction remains `proposal`, owner approval required; production, platform and publication remain unauthorized.

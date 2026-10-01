@@ -111,3 +111,9 @@ These are planned boundaries, not implemented features.
 ## Adaptive creative direction — future content
 
 Future creative direction is a first-class companion owned by the ContentAsset responsibility, bound to exact package/asset/script hashes. It records experience, story-specific treatment rationale and recent-content convergence review without modifying the approved asset. ProductionPlan references its exact revision/hash. Bespoke and hybrid VisualPlan intents are permitted; no domain-to-medium rules. See CREATIVE-DIRECTION.md. Phantom Traffic is now master-approved under its exact separate decision; earlier candidate-only paragraphs describe historical stages, not the current gate.
+
+## Longitude Clock — editorial approval with creative-only authority
+
+The explicit owner approval at `d22145a86d791730c0a2e5dd03558a8d968473b4` verifies eight exact queued statements and approves narration/VisualPlan/comprehension contract. `src/content-intelligence/creative-stage-approval.ts` provides a strict separate boundary because the older full editorial-lock helper also grants master production. It binds every statement and reviewed object, preserves the 32 reserve states, records labeled decision-entry time and promotes approved revision-3 snapshots without production permission. No historical schema/gate is weakened. Original ClaimReviewBundle remains historical proposed evidence, resolved by the separate owner decision rather than rewritten.
+
+[Approved snapshots](../content-intelligence/reviews/longitude-clock-approved-v3/owner-review.md) feed the [asset-bound direction proposal](../content-intelligence/creative-directions/longitude-clock-time-to-position/owner-review.md). Validate using `node --import tsx scripts/validate-longitude-direction.ts`. Direction remains `proposal`, owner approval required; production, platform and publication remain unauthorized.

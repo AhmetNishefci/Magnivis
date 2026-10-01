@@ -1,0 +1,47 @@
+{
+  "failedAccessAttempts": [
+    "https://github.com/googlefonts/SourceSerif",
+    "https://github.com/googlefonts/SourceSans"
+  ],
+  "failureResolution": "Initial guessed repository locations returned errors; the actual Adobe repositories were inspected instead.",
+  "purpose": "Creative feasibility/identity and rights leads only; no new narration claims or production assets.",
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "access": "inspected-text",
+      "accessedAt": "2026-10-01T16:48:55.879Z",
+      "finding": "Object ZAA0037, large longitude watch completed 1759. Dial diameter 102 mm; overall 165 × 124 × 28 mm, 1.45 kg. Silver case, enamel dial, watch morphology. Collections page offers a separate image license.",
+      "id": "h4-object",
+      "limitations": "Collection images were not downloaded or licensed. Text describes identity; later original reconstruction needs detailed visual verification and provenance review. Thumbnail gallery contains other objects too: verify selected image identity, not gallery membership.",
+      "locator": "Object description; Object details; image licensing links",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-79142"
+    },
+    {
+      "access": "inspected-text",
+      "accessedAt": "2026-10-01T16:48:55.879Z",
+      "finding": "bf_emma and bm_george are documented British-English voices. The author warns that very short utterances may underperform and published grades are subjective/training estimates, not an audition.",
+      "id": "kokoro-voices",
+      "limitations": "No audio generated or auditioned. Installed kokoro-js 1.2.1 lists bf_emma; existing story generation script hardcodes af_heart and must be adapted only after later authorization. Model card Apache-2.0 does not replace exact future voice/model/license pinning.",
+      "locator": "British English rows; short-utterance guidance; license label",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md"
+    },
+    {
+      "access": "inspected-text",
+      "accessedAt": "2026-10-01T16:48:55.879Z",
+      "finding": "Adobe Source Serif is intended to complement Source Sans; OFL-1.1 repository license.",
+      "id": "source-serif",
+      "limitations": "Font binaries not downloaded; pin release/files and retain license before production.",
+      "locator": "README; OFL-1.1 license; Source Serif 4 optical sizes",
+      "url": "https://github.com/adobe-fonts/source-serif"
+    },
+    {
+      "access": "inspected-text",
+      "accessedAt": "2026-10-01T16:48:55.879Z",
+      "finding": "Source Sans 3 is intended for user-interface text; OFL-1.1 repository license.",
+      "id": "source-sans",
+      "limitations": "Not installed in Magnivis. Requires later licensed asset integration and actual phone-size readability checks.",
+      "locator": "README; OFL-1.1 license",
+      "url": "https://github.com/adobe-fonts/source-sans"
+    }
+  ]
+}

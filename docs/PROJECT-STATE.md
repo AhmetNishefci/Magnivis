@@ -1,5 +1,15 @@
 # Project state
 
+## CONTENT CYCLE #2 — EDITORIAL APPROVED, CreativeDirection proposal awaits owner
+
+Ahmet explicitly approved exact final editorial commit `d22145a86d791730c0a2e5dd03558a8d968473b4`, its 89-word narration, ten-beat conceptual VisualPlan, comprehension contract, qualifications/exclusions and eight queued statement hashes. [Decision](../content-intelligence/reviews/longitude-clock-approved-v3/owner-decision.json) records actual decision-entry time, not an invented owner review timestamp. New KnowledgePackage and ContentAsset revision 3 are `approved`; eight selected claims are `verified`, and all 32 reserves/exclusions/uncertainties retain their exact research state. Original research/finalization snapshots remain immutable.
+
+[CreativeDirection owner handoff](../content-intelligence/creative-directions/longitude-clock-time-to-position/owner-review.md) compares three materially different approaches and proposes original 2.5D crafted navigational object theatre. Canonical asset-bound direction revision 1 is `proposal`, requires owner approval and grants no production authority. The precise simultaneous mean-solar-time comparison, eastward sign, longitude-only output, H4 watch identity and complementary astronomical methods remain mandatory. Seven recent videos are inspected without inheriting their aesthetic; four native ContentAsset references and three legacy VideoSpec source bindings remain distinct.
+
+No ProductionPlan, final CaptionPlan, narration generation, production assets/images/scenes, render, platform variant, delivery, upload or publication began. Editorial approval authorizes only this direction proposal. Earlier sections are milestone history; only their pending editorial gate is superseded.
+
+**Exact next human gate: AHMET — CYCLE #2 CREATIVE DIRECTION APPROVAL.**
+
 ## CONTENT CYCLE #2 — EDITORIAL FINALIZATION COMPLETE, final owner approval pending
 
 Ahmet accepted the Longitude Clock research direction and evidence basis at research milestone `c957692f87d376d5cfef1377042df2314d4eb638`, while explicitly leaving claim verification, narration and conceptual VisualPlan approval pending. [Final editorial handoff](../content-intelligence/reviews/longitude-clock-finalization-v2/owner-review.md) preserves the original forty exact statements/evidence/states and eleven inspected sources. Revision-2 package changes only its revision field; original discovery and research bytes remain immutable.

@@ -1,0 +1,241 @@
+{
+  "approvedContractPath": "content-intelligence/reviews/longitude-clock-finalization-v2/visual-comprehension-contract.json",
+  "approvedContractSha256": "7b826c257762851cdebdfbf489874ae5f8c1505bb87290f8ab14dd204fe85fc8",
+  "beats": [
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.1",
+        "claimIds": [
+          "longitude-clock.claim.longitude",
+          "longitude-clock.claim.time-comparison"
+        ],
+        "comprehensionObjective": "Recognize a timekeeper can assist an east–west navigation problem.",
+        "continuityRequirements": "Reference and ship identities persist; every later angle is measured from the same reference.",
+        "disclosureRequirements": "Conceptual scene, not historical voyage footage; longitude is angular east–west position.",
+        "mustCommunicate": "A ship and ordinary TIME indication supply the information gap; establish a known reference meridian and an unresolved ship meridian.",
+        "mustNotImply": "No complete position fix, longitude pointer on the clock, latitude value or GPS behavior.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.1"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.1",
+      "claimIds": [
+        "longitude-clock.claim.longitude",
+        "longitude-clock.claim.time-comparison"
+      ],
+      "prohibition": "No geographic coordinate appears on its dial. Ship is an explanatory symbol, not an H4 trial reconstruction.",
+      "proposedRealization": "A watch-shaped reference-time object sits beside a small abstract hull on a shallow-relief ocean field. The hook is spoken immediately; no ticking intro.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.1"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.2",
+        "claimIds": [
+          "longitude-clock.claim.time-comparison"
+        ],
+        "comprehensionObjective": "Understand the timekeeper carries time tied to somewhere known.",
+        "continuityRequirements": "Same reference origin and carried timekeeper persist through comparison and payoff.",
+        "disclosureRequirements": "Reference time is mean solar time; displayed value is corrected for known clock error, with date/day ambiguity resolved.",
+        "mustCommunicate": "Separate the reference location from the ship; carried reference reading stays tied to that location rather than being reset to local time.",
+        "mustNotImply": "Not a clock remotely receiving an eighteenth-century live signal; not universal historical Greenwich.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.2"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.2",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison"
+      ],
+      "prohibition": "Reference is a chosen meridian, not an assertion of universal historical Greenwich usage. No clock reset.",
+      "proposedRealization": "Keep the same carried clock object visible; a tethered reference-meridian marker on the globe identifies the chosen known location. Label REFERENCE TIME.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.2"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.3",
+        "claimIds": [
+          "longitude-clock.claim.time-comparison",
+          "longitude-clock.claim.equation-time"
+        ],
+        "comprehensionObjective": "Understand observation supplies local time and the solar observation must be corrected to a comparable basis.",
+        "continuityRequirements": "Distinguish the carried reference reading from the local observation throughout; local readout is a derived display, not a second independent historical marine clock.",
+        "disclosureRequirements": "Corrected to match means converting apparent solar time to mean solar time with the equation of time, not a time-zone change or resetting the ship clock. No date-specific correction number or new noon geometry is asserted.",
+        "mustCommunicate": "Sun-derived APPARENT SOLAR TIME is converted to LOCAL MEAN SOLAR TIME before the example. Required factual disclosure: BOTH MEAN SOLAR TIME.",
+        "mustNotImply": "Do not compare raw sundial/noon observation with uncorrected mean-clock time. Do not make a sundial or second carried clock magically give local time.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.3"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.3",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.equation-time"
+      ],
+      "prohibition": "Correction modifies the derived local reading, never reference-clock hands. This is a conceptual observation, not a prescribed sextant operation or historical sundial aboard the ship.",
+      "proposedRealization": "A Sun marker and horizon/observation glyph yield an OBSERVED SOLAR TIME card. A separate correction-to-mean-time step produces LOCAL MEAN TIME beside the untouched reference reading. BOTH MEAN SOLAR TIME is legible.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.3"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.4",
+        "claimIds": [
+          "longitude-clock.claim.time-comparison"
+        ],
+        "comprehensionObjective": "Understand this is a simultaneous spatial comparison rather than a ship journey lasting two hours.",
+        "continuityRequirements": "Shared instant is retained in the numerical example; neither reading advances alone.",
+        "disclosureRequirements": "Illustrative comparison, not claimed measured voyage data.",
+        "mustCommunicate": "Lock both corrected readings to ONE INSTANT; required disclosure SAME INSTANT.",
+        "mustNotImply": "No elapsed-voyage inference from the difference; no comparison of different dates without resolving day branch.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.4"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.4",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison"
+      ],
+      "prohibition": "No elapsed-voyage timer or time-zone conversion; two readings are simultaneous, not two successive moments.",
+      "proposedRealization": "Both readings settle in one held comparison frame with SAME INSTANT and stable reference/local labels. Freeze the values before calculating.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.4"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.5",
+        "claimIds": [
+          "longitude-clock.claim.conversion",
+          "longitude-clock.claim.time-comparison"
+        ],
+        "comprehensionObjective": "Understand why different meridians have different local solar times and why the time gap maps to an angle.",
+        "continuityRequirements": "Keep viewing orientation and east direction unambiguous;15° marks longitude angle, not latitude or orbital angle.",
+        "disclosureRequirements": "SCHEMATIC / SOLAR-TIME RELATIONSHIP. Geometry may express reviewed angles; the physical scene is not a precision astronomical simulation.",
+        "mustCommunicate": "Relate Sun/Earth meridians to a labeled15° angle per1h of consistent solar-time difference.",
+        "mustNotImply": "No exact360° stellar-relative rotation in24SIhours; no civil-zone boundaries or universal distance per degree.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.5"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.5",
+      "claimIds": [
+        "longitude-clock.claim.conversion",
+        "longitude-clock.claim.time-comparison"
+      ],
+      "prohibition": "Mean-solar explanatory conversion; no sidereal 23h56m label, clockwork literal linkage or universal distance conversion.",
+      "proposedRealization": "Use a north-pole plan view of the globe with meridian rays: a one-hour interval maps to a labeled 15° wedge. Preserve an east arrow and globe orientation.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.5"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.6",
+        "claimIds": [
+          "longitude-clock.claim.east-example"
+        ],
+        "comprehensionObjective": "Understand12:00 reference and14:00 local are simultaneous comparable readings.",
+        "continuityRequirements": "Maintain same reference origin, same instant and corrected-time basis from earlier beats.",
+        "disclosureRequirements": "These are illustrative mean times; no actual date, historical voyage or measured clock error is introduced.",
+        "mustCommunicate": "Show12:00 reference and14:00 local with BOTH MEAN SOLAR TIME / SAME INSTANT / ILLUSTRATIVE EXAMPLE; identify two in the afternoon as14:00.",
+        "mustNotImply": "Do not call12:00 apparent local noon or mark14:00 as noon; no unrestricted ordinary wall-clock time-zone comparison.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.6"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.6",
+      "claimIds": [
+        "longitude-clock.claim.east-example"
+      ],
+      "prohibition": "14:00 is an explanatory notation on a label, not painted onto a historical watch or meant as zone/civil time.",
+      "proposedRealization": "Two equal-status explanatory readout cards show REFERENCE 12:00 and LOCAL 14:00 at one frozen instant; keep mean-time basis legible.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.6"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.7",
+        "claimIds": [
+          "longitude-clock.claim.east-example",
+          "longitude-clock.claim.longitude"
+        ],
+        "comprehensionObjective": "Understand local time ahead corresponds to east, and2×15° gives30°.",
+        "continuityRequirements": "Same ship/reference meridians; eastward angular displacement is consistent with the earlier view and time relation.",
+        "disclosureRequirements": "Illustrative calculation, not a claim of perfect navigation or exact historical position.",
+        "mustCommunicate": "Convert +2h local-minus-reference into +30° EAST OF THE REFERENCE; required factual label30°E RELATIVE TO REFERENCE.",
+        "mustNotImply": "Never reverse east/west, draw30° latitude, present complete geographic position or equate30° with a universal distance.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.7"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.7",
+      "claimIds": [
+        "longitude-clock.claim.east-example",
+        "longitude-clock.claim.longitude"
+      ],
+      "prohibition": "Advance angular comparison, not the ship sailing along an elapsed-time route. No precise pin or latitude implied.",
+      "proposedRealization": "Local minus reference resolves to +2 HOURS; its interval extends to a 30° arc east of the reference meridian. Hold 30° EAST. Reference ray stays fixed; local ray is 30° counterclockwise in the north-pole view, explicitly labeled EAST.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.7"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.8",
+        "claimIds": [
+          "longitude-clock.claim.h4-demonstration",
+          "longitude-clock.claim.h4-watch"
+        ],
+        "comprehensionObjective": "Recognize Harrison’s important contribution without replacing the mechanism with biography.",
+        "continuityRequirements": "Historical device identity remains distinct from generic illustrative time readouts; do not imply the12:00/14:00 example is H4’s recorded trial.",
+        "disclosureRequirements": "H4 object identity is an editorial factual requirement, not a choice of medium. Any future reconstruction or collection photograph requires accuracy/rights review; no media selected.",
+        "mustCommunicate": "Identify H4 as a large LONGITUDE WATCH; associate it with John Harrison and qualified sea-going timekeeping demonstration.",
+        "mustNotImply": "No sole invention of longitude, first-ever universal timekeeper, instant fleet adoption, full-prize claim, later boxed chronometer substituted forH4, or detailed unsupported mechanism.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.8"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.8",
+      "claimIds": [
+        "longitude-clock.claim.h4-demonstration",
+        "longitude-clock.claim.h4-watch"
+      ],
+      "prohibition": "Not a boxed gimballed later chronometer. No invented inner mechanism, archival footage, winner/prize title or biographical hero montage.",
+      "proposedRealization": "Brief original H4 watch study in the same object theatre, identified H4 · EXPLANATORY RECONSTRUCTION. Use large watch silhouette, silver case and enamel face; reserve exact detailing pending source/rights check.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.8"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.9",
+        "claimIds": [
+          "longitude-clock.claim.complementary"
+        ],
+        "comprehensionObjective": "Understand marine clocks did not erase other longitude approaches.",
+        "continuityRequirements": "This complements the local solar observation already needed; other astronomical methods are distinct from that local-time observation.",
+        "disclosureRequirements": "A generic indication of astronomy is sufficient; detailed lunar geometry, tables or figures would add claims and require upstream review.",
+        "mustCommunicate": "Preserve a complementary astronomical-method indication alongside the timekeeper concept.",
+        "mustNotImply": "Do not show astronomy disappearing, lunar distances mandatory for every clock-based fix, or all ships instantly replacing dead reckoning.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.9"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.9",
+      "claimIds": [
+        "longitude-clock.claim.complementary"
+      ],
+      "prohibition": "Other methods are complementary, not crossed out, obsolete or instantaneously replaced. No added named-method claim beyond approved evidence.",
+      "proposedRealization": "Watch and astronomical observation/table symbols remain present side by side; the conceptual observation can continue with the watch present.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.9"
+    },
+    {
+      "approvedContract": {
+        "beatId": "longitude-clock.asset.time-to-position.beat.10",
+        "claimIds": [
+          "longitude-clock.claim.time-comparison",
+          "longitude-clock.claim.longitude"
+        ],
+        "comprehensionObjective": "Leave the viewer with the correct causal system.",
+        "continuityRequirements": "Return to the existing comparison and angular result; do not introduce another location, instrument or factual relationship.",
+        "disclosureRequirements": "Preserve relative reference, corrected mean-time basis, simultaneous readings and illustrative status in any final factual presentation.",
+        "mustCommunicate": "Resolve REFERENCE TIME + LOCAL OBSERVATION/TIME + COMPARISON/CALCULATION → LONGITUDE, using the same corrected example and reference.",
+        "mustNotImply": "Clock time is not a position display; longitude alone does not establish latitude or complete position; not a navigation tutorial guaranteeing accuracy.",
+        "visualId": "longitude-clock.asset.time-to-position.visual.10"
+      },
+      "beatId": "longitude-clock.asset.time-to-position.beat.10",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.longitude"
+      ],
+      "prohibition": "Output is longitude only, not complete geographic position. No GPS-style location lock or CTA competing with the explanation.",
+      "proposedRealization": "Return to the original watch and ship arrangement, now retaining the reference-time card, observation card, comparison and a meridian at 30° east of the reference. Final three roles stay distinct.",
+      "visualId": "longitude-clock.asset.time-to-position.visual.10"
+    }
+  ],
+  "finalSafeguards": [
+    "REFERENCE TIME",
+    "LOCAL MEAN TIME",
+    "BOTH MEAN SOLAR TIME",
+    "SAME INSTANT",
+    "TIME DIFFERENCE → ANGULAR DIFFERENCE",
+    "12:00 reference / 14:00 local → +2 HOURS → 30° EAST",
+    "LONGITUDE ONLY",
+    "H4 IS A LARGE LONGITUDE WATCH",
+    "ASTRONOMICAL METHODS REMAIN RELEVANT"
+  ],
+  "schemaVersion": 1,
+  "state": "creative-proposal"
+}
