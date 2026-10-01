@@ -1,3 +1,4 @@
+import {phantomTrafficPublicationRecords} from './phantom-traffic';
 import {speedOfLightPublishedShortAsset} from '../content-assets/assets/speed-of-light';
 import {speedOfLight} from '../content/videos/speed-of-light';
 import {speedOfLightKnowledgePackage} from '../knowledge/packages/speed-of-light';
@@ -55,4 +56,4 @@ export const speedOfLightYoutubePublication = publicationRecordSchema.parse({
   },
 });
 
-export const publicationRecords = [speedOfLightYoutubePublication] as const;
+export const publicationRecords = [speedOfLightYoutubePublication,...phantomTrafficPublicationRecords] as const;

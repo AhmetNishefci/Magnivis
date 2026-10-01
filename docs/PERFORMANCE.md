@@ -114,3 +114,8 @@ YouTube Studio displayed the reporting point as the first 21 hours. Audience-ret
 ## Adaptive creative direction — future content
 
 Treat a successful video as precedent, not evidence that its exact style caused success. Form distinct hypotheses for topic, hook, opening comprehension, pacing, retention structure, caption readability, payoff timing, sound, emotion, novelty and platform presentation. Preserve sample size and native definitions; correlation is not causation. No analytics for Wood Frog or Phantom Traffic are invented. Test a principle’s applicability to a new story rather than turning a small sample into a global style rule.
+
+
+## Phantom Traffic — publication evidence only
+
+Owner reports all four target publications on 2026-10-01 and acceptable live desktop/mobile presentation where applicable. This supplies no views, retention, engagement, audience or comparative performance metrics. First comments are reported posted, not quantified. Do not infer virality or causal style effectiveness from publication/presentation approval. Future learning must distinguish topic, hook, pacing, readability, payoff, sound and platform context with appropriate samples.

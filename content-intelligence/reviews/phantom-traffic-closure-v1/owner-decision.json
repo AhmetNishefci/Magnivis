@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "owner-decision.phantom-traffic.closure.v1",
+  "revision": 1,
+  "owner": "Ahmet Nishefci",
+  "authority": "explicit-owner-message",
+  "enteredAt": "2026-10-01T13:10:08.720Z",
+  "timeBasis": "decision-entry",
+  "ownerSuppliedReviewTimestamp": null,
+  "publishedOn": "2026-10-01",
+  "publishedAt": null,
+  "ownerStatement": "Phantom Traffic has now been manually published on all four target platforms. Ahmet also posted the intended Magnivis comment on each platform. Ahmet personally inspected the live published videos after publication and reports correct desktop/web and mobile presentation where applicable across the published target platforms.",
+  "master": {
+    "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+  },
+  "publicationAuthorization": {
+    "path": "content-intelligence/reviews/phantom-traffic-publication-v1/owner-decision.json",
+    "sha256": "e37e45e658376a681d96d2eee9dbe6f368172d38cff0c0f5aec83eb1362b75fe"
+  },
+  "finalDeliveries": {
+    "path": "content-intelligence/reviews/phantom-traffic-publication-v1/final-bindings.json",
+    "sha256": "c551c40aecc72b9c02726bd7511f9d105e84f116251d0066bbf66af6c90d07f9"
+  },
+  "platforms": {
+    "youtube": {
+      "url": "https://www.youtube.com/shorts/3jmxLXcowC8",
+      "postId": "3jmxLXcowC8"
+    },
+    "facebook": {
+      "url": "https://www.facebook.com/reel/2300822597344788",
+      "postId": "2300822597344788"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/p/Dd89-PvFDqn/",
+      "postId": "Dd89-PvFDqn"
+    },
+    "tiktok": {
+      "url": null,
+      "postId": null,
+      "managementUrl": "https://www.tiktok.com/tiktokstudio/content"
+    }
+  },
+  "postPublicationPresentation": "OWNER_REPORTED_POST_PUBLICATION_APPROVED",
+  "presentationScope": {
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "contexts": [
+      "desktop/web where applicable",
+      "mobile where applicable"
+    ],
+    "individuallyNamedSurfaces": []
+  },
+  "unknownMetadata": {
+    "device": null,
+    "os": null,
+    "appVersion": null,
+    "viewport": null,
+    "measurements": null,
+    "reviewedAt": null,
+    "screenshots": []
+  },
+  "comments": {
+    "postedByOwner": true,
+    "commentIds": null,
+    "postedAt": null,
+    "pinState": "unknown",
+    "engagement": null
+  },
+  "limitations": [
+    "TikTok public permalink/video ID missing; Studio URL is not a public video identity.",
+    "Publication and presentation are owner-reported, not independently captured/verified.",
+    "Public page retrieval attempted but all three requests returned cache miss; no page content, posting time or metrics inspected.",
+    "Broad platform/context approval does not supply separate grid/feed/cover measurements or individually named surface tests.",
+    "Actual account handles (except surviving Instagram identity), exact upload settings and platform-transcoded byte hashes remain unknown."
+  ],
+  "operationalCycleState": "COMPLETE",
+  "remainingEvidenceGapsBlockClosure": false,
+  "nextGate": "NEW CONTENT CYCLE #2 DISCOVERY",
+  "cycle2Started": false,
+  "assistantUploaded": false
+}

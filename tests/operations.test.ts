@@ -50,7 +50,9 @@ describe('nonsecret platform account state', () => {
     });
     expect(youtubePrimaryAccount.handle).toBeUndefined();
     expect(platformAccountRegistry.list().map(({id}) => id)).toEqual([
+      'account.facebook.primary',
       instagramPrimaryAccount.id,
+      'account.tiktok.primary',
       youtubePrimaryAccount.id,
     ]);
   });

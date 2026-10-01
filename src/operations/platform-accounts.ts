@@ -1,3 +1,4 @@
+import {phantomTrafficReportedAccounts} from './phantom-traffic';
 import {platformAccountSchema} from './schema';
 
 export const youtubePrimaryAccount = platformAccountSchema.parse({
@@ -29,6 +30,7 @@ export const instagramPrimaryAccount = platformAccountSchema.parse({
 });
 
 export const platformAccounts = [
+  ...phantomTrafficReportedAccounts,
   instagramPrimaryAccount,
   youtubePrimaryAccount,
 ] as const;
