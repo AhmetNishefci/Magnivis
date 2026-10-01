@@ -6,8 +6,8 @@ import originalPackage from '../content-intelligence/reviews/phantom-traffic-v1/
 import originalAsset from '../content-intelligence/reviews/phantom-traffic-v1/content-asset.review.json';
 import originalReview from '../content-intelligence/reviews/phantom-traffic-v1/claim-review.json';
 import originalManifest from '../content-intelligence/reviews/phantom-traffic-v1/artifact-manifest.json';
-import {phantomTrafficKnowledgePackage as knowledgePackage} from '../src/knowledge/packages/phantom-traffic';
-import {phantomTrafficContentAsset as contentAsset} from '../src/content-assets/assets/phantom-traffic';
+import reviewedPackage from '../content-intelligence/reviews/phantom-traffic-finalization-v2/knowledge-package.review.json';
+import reviewedAsset from '../content-intelligence/reviews/phantom-traffic-finalization-v2/content-asset.review.json';
 import {knowledgePackageSchema} from '../src/knowledge/schema';
 import {contentAssetSchema} from '../src/content-assets/schema';
 import {createContentAssetRegistry} from '../src/content-assets/registry';
@@ -16,6 +16,9 @@ import {applyScopedOwnerDecision} from '../src/content-intelligence/scoped-owner
 import {validateClaimReviewBundle} from '../src/content-intelligence/claim-review';
 import {sha256Json, stableJson} from '../src/content-intelligence/run-schema';
 import {validateTrafficResearch} from './validate-traffic-research';
+
+const knowledgePackage = knowledgePackageSchema.parse(reviewedPackage);
+const contentAsset = contentAssetSchema.parse(reviewedAsset);
 
 export const trafficFinalizationDirectory = resolve('content-intelligence/reviews/phantom-traffic-finalization-v2');
 const readJson = (name: string): unknown => JSON.parse(readFileSync(resolve(trafficFinalizationDirectory, name), 'utf8'));

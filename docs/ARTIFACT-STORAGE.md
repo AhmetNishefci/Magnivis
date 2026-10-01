@@ -50,3 +50,11 @@ Routine QA can be rebuilt explicitly with `pnpm qa <video-id> --recovered`, usin
 Review individual files and unique Git blob growth before each binary archive commit. GitHub warns above 50 MiB and blocks above 100 MiB; stop oversized artifacts individually, never auto-install LFS or split files to evade limits. Source: [GitHub large-file guidance](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github). Current largest new file is 42,978,901 bytes. Exact repeated delivery videos share Git blob identity; do not count them as distinct encodes. Record logical and unique byte growth in phase-3 artifact-migration.json. Reassess repository growth before scale makes normal Git impractical.
 
 Push source and important exact binary identities together, verify remote HEAD, and test clean clone/restore. A workstation is disposable; pushed branch contains important current artifacts. Keep temporary output/qa/deliveries/.artifact-store/cache ignored. GitHub durability does not fill lost history or grant publication authority.
+
+## New production review candidates
+
+A single important master-review candidate and its exact narration, soundscape, final report/contact sheet and bounded review captures may be designated `DURABLE_REQUIRED` before owner visual approval. This preserves the bytes the owner must review; it does **not** approve them. Phantom Traffic candidate v1 retains one MP4, seven WAVs and 32 QA files (30 captures, report, contact sheet). Smoke renders, superseded local captures and Chromium/model caches stay ignored. Files remain below the normal Git/GitHub file limit.
+
+New originals use provenance `ORIGINAL_PRODUCTION` with `historicalStatus: new-production`, separate from every recovery category. They have no historical/replacement identity, `approvalScope: none` and `publication: not-authorized`. `sourceCommit` is the owner-approved editorial base; the production implementation is hash-bound in its committed candidate receipt, avoiding a circular claim about the commit that contains its own manifest. Existing historical manifest records/identities remain unchanged.
+
+The two independent payoff still renders demonstrate same-frame determinism only. Full MP4 re-encoding identity is not claimed; exact retained video/audio bytes remain the review authority.

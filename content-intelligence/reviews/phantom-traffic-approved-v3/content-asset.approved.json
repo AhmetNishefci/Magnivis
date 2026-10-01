@@ -1,0 +1,223 @@
+{
+  "approval": {
+    "approvedBy": "Ahmet Nishefci",
+    "decisionEnteredAt": "2026-10-01T08:29:45.021Z",
+    "notes": "Explicit editorial approval bound to commit 21c3a5539cf02b1c4a88b8ff89aca0139a7ec079 through owner-decision.phantom-traffic.editorial-lock.v1. Timestamp records decision entry, not a supplied review time. No master visual, platform or publication approval.",
+    "reviewTimeBasis": "decision-entry"
+  },
+  "assetType": "short-form-video",
+  "durationIntentSeconds": {
+    "maximum": 40,
+    "minimum": 34
+  },
+  "editorialPurpose": "Explain spontaneous stop-and-go traffic through a road-frame pattern paradox, using controlled evidence and an original explanatory scene.",
+  "editorialStatus": "approved",
+  "hookId": "phantom-traffic.hook.backward-wave",
+  "id": "phantom-traffic.asset.backward-wave",
+  "knowledgePackageId": "phantom-traffic",
+  "narrativeStructure": [
+    {
+      "id": "phantom-traffic.asset.backward-wave.beat.1",
+      "label": "Paradox",
+      "purpose": "Separate cars from the congestion pattern.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.1"
+      ]
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.beat.2",
+      "label": "Evidence",
+      "purpose": "Anchor the possibility in the controlled ring experiment.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.2"
+      ]
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.beat.3",
+      "label": "Conditional mechanism",
+      "purpose": "Explain amplification while retaining the instability condition.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.3"
+      ]
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.beat.4",
+      "label": "Membership",
+      "purpose": "Explain why the slow cluster can move without its cars reversing.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.4"
+      ]
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.beat.5",
+      "label": "Payoff",
+      "purpose": "Make upstream pattern motion unmistakable.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.5"
+      ]
+    },
+    {
+      "id": "phantom-traffic.asset.backward-wave.beat.6",
+      "label": "Scope",
+      "purpose": "Resolve the mystery without claiming every jam is spontaneous.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.6"
+      ]
+    }
+  ],
+  "revision": 3,
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "claimIds": [
+          "phantom-traffic.claim.backward-pattern"
+        ],
+        "id": "phantom-traffic.asset.backward-wave.script.1",
+        "text": "The cars move forward. But a traffic jam can move backward.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "phantom-traffic.claim.vehicles",
+          "phantom-traffic.claim.no-obstruction"
+        ],
+        "id": "phantom-traffic.asset.backward-wave.script.2",
+        "text": "Researchers put twenty-two cars on a circular track. No obstruction. Yet stop-and-go traffic formed.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "phantom-traffic.claim.conditional-growth"
+        ],
+        "id": "phantom-traffic.asset.backward-wave.script.3",
+        "text": "In dense traffic, small speed changes can sometimes grow as drivers adjust to the cars ahead.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "phantom-traffic.claim.turnover"
+        ],
+        "id": "phantom-traffic.asset.backward-wave.script.4",
+        "text": "Cars join the slow patch at the back and leave at the front.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "phantom-traffic.claim.turnover",
+          "phantom-traffic.claim.backward-pattern"
+        ],
+        "id": "phantom-traffic.asset.backward-wave.script.5",
+        "text": "The cars change. The pattern moves backward.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "phantom-traffic.claim.bottleneck-distinction",
+          "phantom-traffic.claim.no-obstruction"
+        ],
+        "id": "phantom-traffic.asset.backward-wave.script.6",
+        "text": "Not every jam starts this way. But this kind needs no blocked road.",
+        "type": "factual"
+      }
+    ]
+  },
+  "selectedClaimIds": [
+    "phantom-traffic.claim.backward-pattern",
+    "phantom-traffic.claim.vehicles",
+    "phantom-traffic.claim.no-obstruction",
+    "phantom-traffic.claim.conditional-growth",
+    "phantom-traffic.claim.turnover",
+    "phantom-traffic.claim.bottleneck-distinction"
+  ],
+  "storyAngle": "Cars go forward while a slow traffic pattern can travel backward.",
+  "visualPlan": [
+    {
+      "claimIds": [
+        "phantom-traffic.claim.backward-pattern"
+      ],
+      "id": "phantom-traffic.asset.backward-wave.visual.1",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.1",
+      "notes": "Conceptual only; no coordinates, frame allocations, simulation parameters, generated assets or platform geometry. Keep important movement central for later adaptation. Audio-muted comprehension: keep one persistent forward travel direction; distinguish a tracked car with a discrete marker from the soft congestion region. Both motions are visible together, with plain direction labels. Do not rely on color alone or decorative arrows disconnected from the motion.",
+      "objective": "Overhead physical road scene: forward-moving cars; a soft congestion highlight shifts upstream. Distinct arrow labels identify cars and slow pattern; track one car through the scene.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.1"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "claimIds": [
+        "phantom-traffic.claim.vehicles",
+        "phantom-traffic.claim.no-obstruction"
+      ],
+      "id": "phantom-traffic.asset.backward-wave.visual.2",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.2",
+      "notes": "Conceptual only; no coordinates, frame allocations, simulation parameters, generated assets or platform geometry. Keep important movement central for later adaptation. Physical scene: recognizable vehicles on a continuous flat loop, natural spacing and restrained road texture. The reconstruction has 22 cars. Do not imitate paper figures, add laboratory footage, or imply the illustration replays recorded trajectories. Keep reconstruction disclosure readable.",
+      "objective": "An original, uncluttered circular-track reconstruction with 22 recognizable vehicles, initially nearly evenly spaced. Reveal a slow cluster. Label EXPERIMENT RECONSTRUCTION; no copied scientific figure or movie; no claim of measured trajectory playback.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.2"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "claimIds": [
+        "phantom-traffic.claim.conditional-growth"
+      ],
+      "id": "phantom-traffic.asset.backward-wave.visual.3",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.3",
+      "notes": "Conceptual only; no coordinates, frame allocations, simulation parameters, generated assets or platform geometry. Keep important movement central for later adaptation. The illustrated slowdown may grow in this case; it is not an inevitable result of density. Show amplification as one possible response, without suggesting a measured probability, universal threshold or calibrated simulation. Preserve the package instability qualification.",
+      "objective": "Closer overhead view shows a small speed/spacing fluctuation. Responses in following vehicles amplify in the illustrated unstable case. Keep a visible IF THE FLOW IS UNSTABLE qualifier; do not show every driver braking harder or a blameworthy initiating brake tap.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.3"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "claimIds": [
+        "phantom-traffic.claim.turnover"
+      ],
+      "id": "phantom-traffic.asset.backward-wave.visual.4",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.4",
+      "notes": "Conceptual only; no coordinates, frame allocations, simulation parameters, generated assets or platform geometry. Keep important movement central for later adaptation. Use the same direction convention. A tracked car approaches from behind, joins the rear of the slow patch, then later leaves its front while another replaces it. Membership turnover must be understandable without narration. Do not imply every car remains stopped.",
+      "objective": "Highlight a car entering the rear of the slow patch and a different car accelerating out at the front. Rear/front are anchored to the forward travel direction. Cars may pause, then resume forward; no car reverses.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.4"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "claimIds": [
+        "phantom-traffic.claim.turnover",
+        "phantom-traffic.claim.backward-pattern"
+      ],
+      "id": "phantom-traffic.asset.backward-wave.visual.5",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.5",
+      "notes": "Conceptual only; no coordinates, frame allocations, simulation parameters, generated assets or platform geometry. Keep important movement central for later adaptation. Give this reveal perceptual room: retain the tracked car moving forward through the soft upstream-moving pattern. Reduce overlays and avoid introducing another fact. Necessary car/pattern labels are explanatory aids, not independent final caption copy.",
+      "objective": "Zoom out over the same scene. Follow one car forward while the soft slow-pattern region moves upstream. Changing cluster membership supplies the visual proof. A persistent SIMPLIFIED EXPLANATORY MODEL label distinguishes illustration from measured simulation.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.5"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    },
+    {
+      "claimIds": [
+        "phantom-traffic.claim.bottleneck-distinction",
+        "phantom-traffic.claim.no-obstruction"
+      ],
+      "id": "phantom-traffic.asset.backward-wave.visual.6",
+      "narrativeBeatId": "phantom-traffic.asset.backward-wave.beat.6",
+      "notes": "Conceptual only; no coordinates, frame allocations, simulation parameters, generated assets or platform geometry. Keep important movement central for later adaptation. Keep the limiting statement audible and legible in eventual narration-faithful captions: not every jam starts this way. Do not show an actual queue exit as proof of its cause.",
+      "objective": "Resolve on the moving pattern in clear roadway; scope text communicates one kind of jam. No claim that an empty road diagnoses the cause of a real queue.",
+      "scriptSegmentIds": [
+        "phantom-traffic.asset.backward-wave.script.6"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "animation"
+    }
+  ]
+}

@@ -8,8 +8,6 @@ import {knowledgePackageSchema, claimSchema} from '../src/knowledge/schema';
 import {contentAssetSchema} from '../src/content-assets/schema';
 import {applyScopedOwnerDecision, scopedOwnerDecisionSchema, type ScopedOwnerDecision} from '../src/content-intelligence/scoped-owner-decision';
 import {validateTrafficFinalization, trafficFinalizationDirectory} from '../scripts/validate-traffic-finalization';
-import {knowledgePackageRegistry} from '../src/knowledge/registry';
-import {contentAssetRegistry} from '../src/content-assets/registry';
 
 const knowledgePackage = knowledgePackageSchema.parse(packageSnapshot);
 const contentAsset = contentAssetSchema.parse(assetSnapshot);
@@ -22,10 +20,10 @@ describe('Scoped owner approval and final narration gate', () => {
   it('verifies exactly the selected claims, defers reserves, and leaves current package/asset unapproved', () => {
     expect(validateTrafficFinalization()).toMatchObject({result: 'passed', verifiedClaims: 6,
       supportedReserveClaims: 13, excludedClaims: 11, wordCount: 74, productionAuthorized: false});
-    const pkg = knowledgePackageRegistry.get('phantom-traffic');
+    const pkg = apply(readDecision()).knowledgePackage;
     expect(pkg.revision).toBe(2);
     expect(pkg.approval).toBeUndefined();
-    expect(contentAssetRegistry.get(contentAsset.id).editorialStatus).toBe('editorial-review');
+    expect(contentAsset.editorialStatus).toBe('editorial-review');
     expect(pkg.claims.filter((c) => c.verificationStatus === 'verified').every((c) =>
       c.review?.reviewedBy === 'Ahmet Nishefci' && c.review.reviewTimeBasis === 'decision-entry' && !c.review.reviewedAt)).toBe(true);
   });

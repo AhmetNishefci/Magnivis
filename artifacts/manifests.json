@@ -10113,5 +10113,2022 @@
       ]
     },
     "retention": "DURABLE_REQUIRED"
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.master",
+    "contentId": "phantom-traffic",
+    "artifactType": "video-master",
+    "revision": 1,
+    "identity": {
+      "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+      "bytes": 26945449,
+      "mimeType": "video/mp4"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.audio-hook",
+    "contentId": "phantom-traffic",
+    "artifactType": "narration-audio",
+    "revision": 1,
+    "identity": {
+      "sha256": "1cf2280924134968a95f8c0db3de7b25128ed9b0dd2dd89866d567b7172a2dc7",
+      "bytes": 393644,
+      "mimeType": "audio/wav"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "public/audio/narration/phantom-traffic/hook.wav",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "public/audio/narration/phantom-traffic/hook.wav",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "node scripts/generate-narration.mjs phantom-traffic; retain exact approved candidate WAVs; regeneration does not inherit approval"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.audio-experiment",
+    "contentId": "phantom-traffic",
+    "artifactType": "narration-audio",
+    "revision": 1,
+    "identity": {
+      "sha256": "ce13b79e87b8f1716f62ce13612c3ca2e2ab9b79f0d5a3142e26f7890d0ce5ab",
+      "bytes": 676844,
+      "mimeType": "audio/wav"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "public/audio/narration/phantom-traffic/experiment.wav",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "public/audio/narration/phantom-traffic/experiment.wav",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "node scripts/generate-narration.mjs phantom-traffic; retain exact approved candidate WAVs; regeneration does not inherit approval"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.audio-mechanism",
+    "contentId": "phantom-traffic",
+    "artifactType": "narration-audio",
+    "revision": 1,
+    "identity": {
+      "sha256": "27e3e279c9e14b9a7d3a948a7f67104c54523377b1d8bb8d84b322efbab9b1b5",
+      "bytes": 628844,
+      "mimeType": "audio/wav"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "public/audio/narration/phantom-traffic/mechanism.wav",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "public/audio/narration/phantom-traffic/mechanism.wav",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "node scripts/generate-narration.mjs phantom-traffic; retain exact approved candidate WAVs; regeneration does not inherit approval"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.audio-membership",
+    "contentId": "phantom-traffic",
+    "artifactType": "narration-audio",
+    "revision": 1,
+    "identity": {
+      "sha256": "5816079e05f03761171a5b0285dea6f3ee0cdeca80e733844c21d8ea913abff8",
+      "bytes": 369644,
+      "mimeType": "audio/wav"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "public/audio/narration/phantom-traffic/membership.wav",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "public/audio/narration/phantom-traffic/membership.wav",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "node scripts/generate-narration.mjs phantom-traffic; retain exact approved candidate WAVs; regeneration does not inherit approval"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.audio-payoff",
+    "contentId": "phantom-traffic",
+    "artifactType": "narration-audio",
+    "revision": 1,
+    "identity": {
+      "sha256": "6fff2ccd6584d6349189dee14f7f75385585e72c2198a8c6298e90be40abb3dc",
+      "bytes": 316844,
+      "mimeType": "audio/wav"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "public/audio/narration/phantom-traffic/payoff.wav",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "public/audio/narration/phantom-traffic/payoff.wav",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "node scripts/generate-narration.mjs phantom-traffic; retain exact approved candidate WAVs; regeneration does not inherit approval"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.audio-ending",
+    "contentId": "phantom-traffic",
+    "artifactType": "narration-audio",
+    "revision": 1,
+    "identity": {
+      "sha256": "921676268a3b0f9cef27eeb8a17bc3ddb27d5d8623cc2b07348a3ed672443793",
+      "bytes": 463244,
+      "mimeType": "audio/wav"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "public/audio/narration/phantom-traffic/ending.wav",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "public/audio/narration/phantom-traffic/ending.wav",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "node scripts/generate-narration.mjs phantom-traffic; retain exact approved candidate WAVs; regeneration does not inherit approval"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.audio-phantom-traffic",
+    "contentId": "phantom-traffic",
+    "artifactType": "soundscape-audio",
+    "revision": 1,
+    "identity": {
+      "sha256": "faa139195aee9d0e9d32f6d93322316a352c33f2eb45a046258bec42e176f4d6",
+      "bytes": 6560044,
+      "mimeType": "audio/wav"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "public/audio/phantom-traffic.wav",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "public/audio/phantom-traffic.wav",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node scripts/generate-traffic-audio.mjs"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.report-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "c6e1edff1a7c9cd9345daaa4eb1467780fd4cc7c35fa03a657d58c5f5940bf52",
+      "bytes": 537,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/report.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/report.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.contact-sheet-jpg",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "248f9e6d4d7f6b4f571545cca39012163a922e26fb2096b34e1bd9b582eaa725",
+      "bytes": 365524,
+      "mimeType": "image/jpeg"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/contact-sheet.jpg",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/contact-sheet.jpg",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-01-0-0s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "df92a0701f7320f38b305774e057ef9c67373e75bc070fff44c46bb80f3ece19",
+      "bytes": 362898,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-01-0.0s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-01-0.0s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-02-0-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "3e68870ab8dd521811756d1c2d2d028f6abb4b80e3cca85a5653f063f6e1dcaf",
+      "bytes": 432677,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-02-0.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-02-0.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-03-0-9s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "6617e2144852c8e2522420b9e9e2f2fef136aad128b7545adf2f45b1b029b1c3",
+      "bytes": 434548,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-03-0.9s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-03-0.9s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-04-1-0s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "31e528d7bb45a712f50dbc60063f4b50119af64178889af96be1c8a7bdf44221",
+      "bytes": 437227,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-04-1.0s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-04-1.0s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-05-1-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "5c86156b972053c41436ff80f04388a66a7595a7f4399c69a993bf4cfb7a987d",
+      "bytes": 421432,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-05-1.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-05-1.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-06-3-0s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "3fb596df0ad69b0fa2561c935616f101fda6c86c63b9f4a0ece0dd35abbbbe37",
+      "bytes": 439885,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-06-3.0s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-06-3.0s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-07-5-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "f9aa745a31874c9bf546421635d1e0042103790a785bd85fbd6de5559efe6fde",
+      "bytes": 558160,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-07-5.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-07-5.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-08-6-0s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "e6affcb6c5dae7211f878977829f5910d7b458c3bbc2d3ff762758091ebf600a",
+      "bytes": 560652,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-08-6.0s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-08-6.0s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-09-7-1s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "f684c6aecada8102e6ec930e7e5f30e9084c657fc90baa85255235f3320ca3f9",
+      "bytes": 529910,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-09-7.1s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-09-7.1s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-10-8-0s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "b65c22c3286066ba474d38718f311e300823f9adf93e0aeca4b42f26f9c3bf1b",
+      "bytes": 540735,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-10-8.0s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-10-8.0s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-11-8-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "6d246be8bbaf4045c434b42135294bd930147793bf2b6e545030afa778038e75",
+      "bytes": 542749,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-11-8.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-11-8.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-12-10-3s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "4d6becfa2da5905411f802c9991955ffb685a1368c1a982dc496f0eca11f5aa3",
+      "bytes": 564899,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-12-10.3s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-12-10.3s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-13-10-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "59045d69365bb78aa045d8522278b02dc3cea97000f6a4477b0c60e1a9753fe9",
+      "bytes": 564525,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-13-10.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-13-10.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-14-12-7s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "1667529b64fb7fad91ea7585d935dba3183801e105edeb5947d0cadaee2e4fd5",
+      "bytes": 361626,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-14-12.7s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-14-12.7s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-15-13-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "f777a1ea30cf7fdb6f461ba762ffc669fd9d675cf5cdd1ba441dc97d854e7f7b",
+      "bytes": 408766,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-15-13.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-15-13.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-16-14-7s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "83649432fc2b9541f65025db91826f5e91183c17a79280b0f575c07b1042d96b",
+      "bytes": 415425,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-16-14.7s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-16-14.7s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-17-16-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "8d98fc64f3411f7f3f35e2b6c20f7fbb7b0f309185e3a448079fc0b2a148408a",
+      "bytes": 384328,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-17-16.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-17-16.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-18-17-3s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "8eb412fa038928991282ac566b68054da2179b6db696b54ca96c559ae8cd94f5",
+      "bytes": 386284,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-18-17.3s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-18-17.3s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-19-19-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "294291d3f20a7fce986461e3eb569467b4f4ba5b3c4cbeeeb1a540d10fb3f0cc",
+      "bytes": 411770,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-19-19.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-19-19.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-20-20-1s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "9a2c6269a989a64257d44cd1c6a89deb1141fcefe3ec696d9d60695a7a2a6bcf",
+      "bytes": 409727,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-20-20.1s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-20-20.1s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-21-21-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "732f769f2bca7d0a38992f7c1efb39fe1a00a26a478ffb58d52a5d52e107aa37",
+      "bytes": 393042,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-21-21.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-21-21.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-22-22-1s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "8bc272e8904654efbec83cda45b531621fa32178bd2897c2a8f7ac5abc2a6c20",
+      "bytes": 395622,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-22-22.1s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-22-22.1s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-23-23-9s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "6942f0869374482c023fa0d72e561718d4a353d322fdcc3b06a8c6341cd3e062",
+      "bytes": 359855,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-23-23.9s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-23-23.9s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-24-24-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "4b22175fee6249b336b7ec09df4634883cd947fbd28c5b8739a7dabf912149b5",
+      "bytes": 358085,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-24-24.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-24-24.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-25-25-6s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "2f2d7c2d295acc5b6b6ce179c36c7fe9aa1b58a8fc2613d9dca447c6be7258a6",
+      "bytes": 375244,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-25-25.6s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-25-25.6s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-26-26-8s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "373ec1813b571c582e24b76035c42bc820e7b8977ba30c567d521198dc3b83d2",
+      "bytes": 325289,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-26-26.8s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-26-26.8s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-27-29-1s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "9bbfab575278e4186c267aad629d465c637c19f6cefa098ba0499b4df412ff19",
+      "bytes": 382569,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-27-29.1s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-27-29.1s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-28-29-5s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "f7e69d7ff76d7f239842a7dae307726cb7aa2ad75caba4f113c22a729d5b3e69",
+      "bytes": 382326,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-28-29.5s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-28-29.5s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-29-31-6s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "ed80360ea9a701f167ddb12dc31c440c3fb5c73c26f162ab070c806bfa4b7764",
+      "bytes": 398004,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-29-31.6s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-29-31.6s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.candidate-v1.frame-30-33-8s-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "3b280667d4c4f3bffc8d1b1a9b3b3868d1a61874b472705eaf95edbc5c6117b4",
+      "bytes": 327496,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T09:01:06.441Z",
+    "sourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-30-33.8s.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-30-33.8s.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending."
+      ]
+    }
   }
 ]

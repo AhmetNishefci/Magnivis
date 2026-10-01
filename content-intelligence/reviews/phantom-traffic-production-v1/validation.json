@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "validation.phantom-traffic.candidate-v1",
+  "recordedAt": "2026-10-01T09:13:51.359594Z",
+  "timeBasis": "validation-entry",
+  "candidate": {
+    "bytes": 26945449,
+    "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+    "workingPath": "output/phantom-traffic-narrated.mp4"
+  },
+  "fullCheck": {
+    "command": "pnpm check",
+    "passed": true,
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "files": 20,
+      "passed": 274,
+      "targetedPhantomTrafficTestsAdded": 10
+    },
+    "diffCheck": "passed"
+  },
+  "nativeValidation": {
+    "exactApprovedGitCommit": "passed",
+    "editorialDecisionReplay": "passed",
+    "knowledgePackage": "passed",
+    "contentAsset": "passed",
+    "claimAndEvidenceBindings": "passed",
+    "productionPlan": "passed",
+    "captionPlanReconstructionAndTiming": "passed",
+    "audioHashesAndMeasuredDurations": "passed",
+    "candidateSourceAndQaHashes": "passed",
+    "immutableResearchV1": "passed",
+    "immutableFinalizationV2": "passed"
+  },
+  "media": {
+    "checkedAt": "2026-10-01T08:59:45.524Z",
+    "input": "output/phantom-traffic-narrated.mp4",
+    "expected": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 34.166666666666664
+    },
+    "observed": {
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "audioSampleRate": "48000",
+      "meanVolumeDb": -25.1,
+      "maxVolumeDb": -4.4,
+      "duration": 34.219,
+      "sizeBytes": 26945449,
+      "bitRate": 6299529
+    },
+    "passed": true,
+    "failures": []
+  },
+  "additionalMediaInspection": {
+    "pixelFormat": "yuvj420p",
+    "audioChannels": 2,
+    "videoFrames": 1025
+  },
+  "determinism": {
+    "payoffFrame": {
+      "frame": 768,
+      "renderA": "e52b20475f78c626a9d705e7aa6fab03fcd7ebaf359c4117e4696d09154b8e74",
+      "renderB": "e52b20475f78c626a9d705e7aa6fab03fcd7ebaf359c4117e4696d09154b8e74",
+      "scope": "Two independent renders of the same payoff frame; no claim of full MP4 byte reproducibility"
+    },
+    "soundscapeRegeneration": "same hash verified after regeneration",
+    "fullMp4ReencodingIdentityClaimed": false,
+    "freshTtsByteIdentityClaimed": false
+  },
+  "durability": {
+    "passed": true,
+    "totalVerifiedGitDurableArtifacts": 150,
+    "newOriginalProductionArtifacts": 40,
+    "unchangedHistoricalManifestRecords": 201
+  },
+  "scopedSecretScan": {
+    "passed": true,
+    "textFilesScanned": 52,
+    "changedFiles": 91,
+    "patterns": 5,
+    "unchangedDocumentedPlaceholderExamples": 1,
+    "unchangedHistoricalManifestRecords": 201,
+    "newOriginalProductionRecords": 40,
+    "scope": "all staged milestone files including review/validation records"
+  },
+  "ownerMasterVisualApproval": false,
+  "platformApprovalGranted": false,
+  "publicationApprovalGranted": false
+}

@@ -1,0 +1,25 @@
+import {createHash} from 'node:crypto';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {spawnSync} from 'node:child_process';
+import {phantomTrafficContentAsset as asset} from '../src/content-assets/assets/phantom-traffic';
+import {stableJson,sha256Json} from '../src/content-intelligence/run-schema';
+const require=createRequire(import.meta.url);
+const ffprobe=(require('ffprobe-static') as {path:string}).path;
+const names=['hook','experiment','mechanism','membership','payoff','ending'];
+const gaps=[0.35,0.45,0.4,0.45,1.5,0.65];
+let start=0.1;
+const generatedAt=new Date().toISOString();
+const cues=asset.script.segments.map((s,index)=>{
+ const id=names[index]!;const file=`audio/narration/phantom-traffic/${id}.wav`;
+ const probe=spawnSync(ffprobe,['-v','error','-show_format','-of','json',`public/${file}`],{encoding:'utf8'});
+ if(probe.status!==0)throw new Error(probe.stderr);
+ const duration=Number(JSON.parse(probe.stdout).format.duration);
+ const cue={id,file,start:Math.round(start*30)/30,duration,transcript:s.text};
+ start=cue.start+duration+gaps[index]!;return cue;
+});
+const frames=Math.ceil((start+0.6)*30);
+const metadata={cues,durationFrames:frames,format:{width:1080,height:1920,fps:30,durationSeconds:frames/30},provenance:{provider:'kokoro-local',modelId:'onnx-community/Kokoro-82M-v1.0-ONNX',voiceId:'af_heart',speed:1.0,generatedAt,approvedScriptSha256:sha256Json(asset.script),cueArtifacts:cues.map(c=>({id:c.id,sha256:createHash('sha256').update(readFileSync(`public/${c.file}`)).digest('hex')}))},measuredNarrationSeconds:cues.reduce((sum,c)=>sum+c.duration,0),measurementMethod:'ffprobe WAV durations; generation-completion/provenance entry time',soundscapeGeneratorId:'audio-generator.phantom-traffic.v1'};
+mkdirSync('src/production/narration',{recursive:true});
+writeFileSync('src/production/narration/phantom-traffic.json',stableJson(metadata,2)+'\n');
+console.log(JSON.stringify({frames,durationSeconds:frames/30,cues,measuredNarrationSeconds:metadata.measuredNarrationSeconds},null,2));

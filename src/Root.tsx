@@ -1,3 +1,6 @@
+import {PhantomTraffic} from './compositions/PhantomTraffic';
+import {phantomTraffic} from './content/videos/phantom-traffic';
+import {phantomTrafficProductionFrames} from './production/plans/phantom-traffic';
 import {Composition} from 'remotion';
 import {BillionDollars} from './compositions/BillionDollars';
 import {EarthToStars} from './compositions/EarthToStars';
@@ -25,6 +28,7 @@ import {safeAreaProfileIds} from './design/safe-areas';
 
 export const RemotionRoot = () => (
   <>
+    <Composition id={phantomTraffic.compositionId} component={PhantomTraffic} durationInFrames={phantomTrafficProductionFrames} fps={30} width={1080} height={1920} />
     <Composition
       id={earthToStars.compositionId}
       component={EarthToStars}

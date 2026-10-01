@@ -1,3 +1,4 @@
+import {validatePhantomTrafficProduction} from '../src/production/phantom-traffic-integrity';
 import {parseManifests, type ArtifactManifest} from '../src/artifacts/schema';
 import {validateRecoveryDecision} from '../src/artifacts/recovery';
 import {createHash} from 'node:crypto';
@@ -16,6 +17,10 @@ const sha256 = (path: string) => createHash('sha256')
   .digest('hex');
 
 const requestedId = process.argv[2];
+if (requestedId === 'phantom-traffic') {
+  console.log(JSON.stringify(validatePhantomTrafficProduction(), null, 2));
+  process.exit(0);
+}
 const video = requestedId === woodFrog.id
   ? woodFrog
   : requestedId === woodFrogTiktok.id

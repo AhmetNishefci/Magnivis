@@ -1,0 +1,343 @@
+{
+  "approvedScriptSha256": "1c5b5af5abb0e9522cd199a2f79d2f863a9f94c742437041c76cb703978ea87e",
+  "automatedSourceValidation": {
+    "asset": "phantom-traffic.asset.backward-wave",
+    "assetRevision": 3,
+    "captionCueCount": 15,
+    "captionPlan": "caption-plan.phantom-traffic.v1",
+    "excludedClaims": 11,
+    "measuredNarrationSeconds": 29.675,
+    "narrationBundleSha256": "b0d5cc3e35206dc75d68dcea56e1b85cb3a84fe5a29d273ab26442050e1f8765",
+    "ownerMasterVisualApproval": false,
+    "package": "phantom-traffic",
+    "packageRevision": 3,
+    "passed": true,
+    "platformApprovalGranted": false,
+    "productionPlan": "production-plan.phantom-traffic.v1",
+    "productionPlanRevision": 1,
+    "publicationApprovalGranted": false,
+    "verifiedClaims": 6
+  },
+  "candidate": {
+    "bytes": 26945449,
+    "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+    "workingPath": "output/phantom-traffic-narrated.mp4"
+  },
+  "captionPlan": {
+    "id": "caption-plan.phantom-traffic.v1",
+    "revision": 1,
+    "sha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08"
+  },
+  "contentAsset": {
+    "id": "phantom-traffic.asset.backward-wave",
+    "revision": 3,
+    "sha256": "bc48c820585370750ca040e3683781391390b0e058d2f09f6c083803ef348f97"
+  },
+  "deterministicFrame": {
+    "frame": 768,
+    "renderA": "e52b20475f78c626a9d705e7aa6fab03fcd7ebaf359c4117e4696d09154b8e74",
+    "renderB": "e52b20475f78c626a9d705e7aa6fab03fcd7ebaf359c4117e4696d09154b8e74",
+    "scope": "Two independent renders of the same payoff frame; no claim of full MP4 byte reproducibility"
+  },
+  "id": "production-review.phantom-traffic.candidate-v1",
+  "knowledgePackage": {
+    "id": "phantom-traffic",
+    "revision": 3,
+    "sha256": "2b890a18a4c3a7d5a2647f517c3f37c0d1f42c81c4c8bbedf17fe691b9e154e8"
+  },
+  "narration": {
+    "bundleSha256": "b0d5cc3e35206dc75d68dcea56e1b85cb3a84fe5a29d273ab26442050e1f8765",
+    "cueArtifacts": [
+      {
+        "id": "hook",
+        "sha256": "1cf2280924134968a95f8c0db3de7b25128ed9b0dd2dd89866d567b7172a2dc7"
+      },
+      {
+        "id": "experiment",
+        "sha256": "ce13b79e87b8f1716f62ce13612c3ca2e2ab9b79f0d5a3142e26f7890d0ce5ab"
+      },
+      {
+        "id": "mechanism",
+        "sha256": "27e3e279c9e14b9a7d3a948a7f67104c54523377b1d8bb8d84b322efbab9b1b5"
+      },
+      {
+        "id": "membership",
+        "sha256": "5816079e05f03761171a5b0285dea6f3ee0cdeca80e733844c21d8ea913abff8"
+      },
+      {
+        "id": "payoff",
+        "sha256": "6fff2ccd6584d6349189dee14f7f75385585e72c2198a8c6298e90be40abb3dc"
+      },
+      {
+        "id": "ending",
+        "sha256": "921676268a3b0f9cef27eeb8a17bc3ddb27d5d8623cc2b07348a3ed672443793"
+      }
+    ],
+    "measuredSeconds": 29.675
+  },
+  "ownerEditorialDecision": {
+    "id": "owner-decision.phantom-traffic.editorial-lock.v1",
+    "revision": 1,
+    "sha256": "aa0ff09217ce87a7a61cba694418151c4398fc9639f7b1c11a350250aa85cd68"
+  },
+  "ownerMasterVisualApproval": false,
+  "platformApprovalGranted": false,
+  "productionPlan": {
+    "id": "production-plan.phantom-traffic.v1",
+    "revision": 1,
+    "sha256": "ec8113641047cf94104d4900b6be43a41ab8fd1294889453e693edce322a1fde"
+  },
+  "publicationApprovalGranted": false,
+  "qaEvidence": [
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/report.json",
+      "sha256": "c6e1edff1a7c9cd9345daaa4eb1467780fd4cc7c35fa03a657d58c5f5940bf52"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/contact-sheet.jpg",
+      "sha256": "248f9e6d4d7f6b4f571545cca39012163a922e26fb2096b34e1bd9b582eaa725"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-01-0.0s.png",
+      "sha256": "df92a0701f7320f38b305774e057ef9c67373e75bc070fff44c46bb80f3ece19"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-02-0.5s.png",
+      "sha256": "3e68870ab8dd521811756d1c2d2d028f6abb4b80e3cca85a5653f063f6e1dcaf"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-03-0.9s.png",
+      "sha256": "6617e2144852c8e2522420b9e9e2f2fef136aad128b7545adf2f45b1b029b1c3"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-04-1.0s.png",
+      "sha256": "31e528d7bb45a712f50dbc60063f4b50119af64178889af96be1c8a7bdf44221"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-05-1.5s.png",
+      "sha256": "5c86156b972053c41436ff80f04388a66a7595a7f4399c69a993bf4cfb7a987d"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-06-3.0s.png",
+      "sha256": "3fb596df0ad69b0fa2561c935616f101fda6c86c63b9f4a0ece0dd35abbbbe37"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-07-5.5s.png",
+      "sha256": "f9aa745a31874c9bf546421635d1e0042103790a785bd85fbd6de5559efe6fde"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-08-6.0s.png",
+      "sha256": "e6affcb6c5dae7211f878977829f5910d7b458c3bbc2d3ff762758091ebf600a"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-09-7.1s.png",
+      "sha256": "f684c6aecada8102e6ec930e7e5f30e9084c657fc90baa85255235f3320ca3f9"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-10-8.0s.png",
+      "sha256": "b65c22c3286066ba474d38718f311e300823f9adf93e0aeca4b42f26f9c3bf1b"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-11-8.5s.png",
+      "sha256": "6d246be8bbaf4045c434b42135294bd930147793bf2b6e545030afa778038e75"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-12-10.3s.png",
+      "sha256": "4d6becfa2da5905411f802c9991955ffb685a1368c1a982dc496f0eca11f5aa3"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-13-10.5s.png",
+      "sha256": "59045d69365bb78aa045d8522278b02dc3cea97000f6a4477b0c60e1a9753fe9"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-14-12.7s.png",
+      "sha256": "1667529b64fb7fad91ea7585d935dba3183801e105edeb5947d0cadaee2e4fd5"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-15-13.5s.png",
+      "sha256": "f777a1ea30cf7fdb6f461ba762ffc669fd9d675cf5cdd1ba441dc97d854e7f7b"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-16-14.7s.png",
+      "sha256": "83649432fc2b9541f65025db91826f5e91183c17a79280b0f575c07b1042d96b"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-17-16.5s.png",
+      "sha256": "8d98fc64f3411f7f3f35e2b6c20f7fbb7b0f309185e3a448079fc0b2a148408a"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-18-17.3s.png",
+      "sha256": "8eb412fa038928991282ac566b68054da2179b6db696b54ca96c559ae8cd94f5"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-19-19.5s.png",
+      "sha256": "294291d3f20a7fce986461e3eb569467b4f4ba5b3c4cbeeeb1a540d10fb3f0cc"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-20-20.1s.png",
+      "sha256": "9a2c6269a989a64257d44cd1c6a89deb1141fcefe3ec696d9d60695a7a2a6bcf"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-21-21.5s.png",
+      "sha256": "732f769f2bca7d0a38992f7c1efb39fe1a00a26a478ffb58d52a5d52e107aa37"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-22-22.1s.png",
+      "sha256": "8bc272e8904654efbec83cda45b531621fa32178bd2897c2a8f7ac5abc2a6c20"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-23-23.9s.png",
+      "sha256": "6942f0869374482c023fa0d72e561718d4a353d322fdcc3b06a8c6341cd3e062"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-24-24.5s.png",
+      "sha256": "4b22175fee6249b336b7ec09df4634883cd947fbd28c5b8739a7dabf912149b5"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-25-25.6s.png",
+      "sha256": "2f2d7c2d295acc5b6b6ce179c36c7fe9aa1b58a8fc2613d9dca447c6be7258a6"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-26-26.8s.png",
+      "sha256": "373ec1813b571c582e24b76035c42bc820e7b8977ba30c567d521198dc3b83d2"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-27-29.1s.png",
+      "sha256": "9bbfab575278e4186c267aad629d465c637c19f6cefa098ba0499b4df412ff19"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-28-29.5s.png",
+      "sha256": "f7e69d7ff76d7f239842a7dae307726cb7aa2ad75caba4f113c22a729d5b3e69"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-29-31.6s.png",
+      "sha256": "ed80360ea9a701f167ddb12dc31c440c3fb5c73c26f162ab070c806bfa4b7764"
+    },
+    {
+      "path": "artifacts/qa-evidence/phantom-traffic-candidate-v1/frame-30-33.8s.png",
+      "sha256": "3b280667d4c4f3bffc8d1b1a9b3b3868d1a61874b472705eaf95edbc5c6117b4"
+    }
+  ],
+  "recordedAt": "2026-10-01T09:01:06.441Z",
+  "retention": {
+    "boundedQaEvidence": "DURABLE_REQUIRED",
+    "candidate": "DURABLE_REQUIRED",
+    "narration": "DURABLE_REQUIRED",
+    "smokeAndCaches": "TEMPORARY",
+    "soundscape": "DURABLE_REQUIRED"
+  },
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "path": "src/components/TrafficWorld.tsx",
+      "sha256": "a5f390bae0452fc5009c6e427be1042890ee284c58b4996311bba8bf93180c6b"
+    },
+    {
+      "path": "src/compositions/PhantomTraffic.tsx",
+      "sha256": "d1229ee1364484c7b7c237126cade0056f109fccbf2e8d7035a1841d1343f2ee"
+    },
+    {
+      "path": "src/production/traffic-motion.ts",
+      "sha256": "82f6ef85920b9ef813dd5b74501185e50fde6eb48e13c6e081d29775c477b028"
+    },
+    {
+      "path": "src/captions/plans/phantom-traffic.ts",
+      "sha256": "2296b12209aa82c0107bd3e5f4898bc98a6424c4bc3419f1f0c3db3f295c6cf7"
+    },
+    {
+      "path": "src/production/narration/phantom-traffic-caption-plan.json",
+      "sha256": "380937ef156b42e13644a0ba48b4c7e95f6971927c154baccddf186551c9cfc7"
+    },
+    {
+      "path": "src/production/narration/phantom-traffic.json",
+      "sha256": "2b3c9aa7f64b31fd610957dd04faaab78d49bc3b92d08a8419358892debe0a67"
+    },
+    {
+      "path": "src/production/narration/phantom-traffic-soundscape.json",
+      "sha256": "a277d8cbc5efdc174ba4f53c2505daff16774c9db3829fb66a020f031130b3ca"
+    },
+    {
+      "path": "src/production/plans/phantom-traffic.json",
+      "sha256": "798cd385bb5bc85c7e0026a844b2e66ee196f81f72f2706784dccec4c7029ab5"
+    },
+    {
+      "path": "src/content/videos/phantom-traffic.ts",
+      "sha256": "a5971950f1fca6fecf5d445c9e5aaeb5b769bcbb76878a752c7f9e2c76660c7f"
+    },
+    {
+      "path": "src/components/MagnivisCaptionRenderer.tsx",
+      "sha256": "f5892071e7b681975fe93b12e9890ee77db29c3c20065519157ff1b97c204d66"
+    },
+    {
+      "path": "src/captions/plan.ts",
+      "sha256": "a2cf9927622373f1c531efc039584e69b4403eff0aa068a538b01b6e8407c020"
+    },
+    {
+      "path": "src/captions/design-system.ts",
+      "sha256": "6ce9e4d06969ab55517de340f308d83ad79fdac351a18359f1e3194694a82ced"
+    },
+    {
+      "path": "src/captions/schema.ts",
+      "sha256": "6c5157523e1cd18c72dd4bad5f04061054880021a1fbd8af10e4503158075fe3"
+    },
+    {
+      "path": "src/design/tokens.ts",
+      "sha256": "e08c873f65154206e69b39dfd213581970932d11ba807ae3a1fdc81101c0da6c"
+    },
+    {
+      "path": "src/design/safe-areas.ts",
+      "sha256": "4fc5551563d04b829aa96129170074945e4ef287303cda8592fb2c998373be56"
+    },
+    {
+      "path": "src/Root.tsx",
+      "sha256": "abc0481ce06ed8970e196ca4e21bc262b04a779eae67271330de4e21d29a48b2"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "bef8a893e9ac10ae660cf1b116a033e1a8d841f0cb795e45de57e97e28346a5a"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a370a1f7da72184e7f104de3b9c9171721c9fd7ee11b4b3ed854f8ea1f123b84"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "a637f5e64cd135f4f831ac9922442d1f9a226e55d554cd5d06f7e8cc05470069"
+    },
+    {
+      "path": "remotion.config.ts",
+      "sha256": "95a4465846c4d8bc670a9350e45943c10b6ad2cb393dd4cb9f5aa0abbc160142"
+    },
+    {
+      "path": "scripts/render.ts",
+      "sha256": "a734025a2ccdeccac6d7b7e87cf185b6ba4265f07f3543a77280a68d47e57182"
+    },
+    {
+      "path": "scripts/video-targets.ts",
+      "sha256": "6d323192c5668d375b68b4e799aa3ad531dde2f6c1251a79740f7929e5b8cd81"
+    },
+    {
+      "path": "scripts/generate-traffic-audio.mjs",
+      "sha256": "2756094a6b418534a15e1e4da259754fc13b0bcbbd98266fa4cc61658254d518"
+    },
+    {
+      "path": "captions/phantom-traffic.en.vtt",
+      "sha256": "c9ead23642bb54d248f2133ad0e5685905dd2d1ff17e12ce2212dfb7bd968f72"
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-approved-v3/owner-decision.json",
+      "sha256": "acd297f0483121769320de778d1a7276fdde08bad014a6e82fa7314567d57e20"
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-approved-v3/knowledge-package.approved.json",
+      "sha256": "3a098fb1c8c459f13a4542a737f1fe7e1d3b9548cba251c15c24d28e0358ef8e"
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-approved-v3/content-asset.approved.json",
+      "sha256": "d628199aa4e22faf357e72a88b61032fe85b8f3cc2157bc5125d95ea89a4e0e4"
+    }
+  ],
+  "status": "owner-master-visual-review-required",
+  "timeBasis": "archive-and-QA-entry"
+}

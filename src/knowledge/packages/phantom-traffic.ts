@@ -1,5 +1,5 @@
-import snapshot from '../../../content-intelligence/reviews/phantom-traffic-finalization-v2/knowledge-package.review.json';
+import snapshot from '../../../content-intelligence/reviews/phantom-traffic-approved-v3/knowledge-package.approved.json';
 import {knowledgePackageSchema} from '../schema';
 
-// Six narration claims are owner-verified; final editorial package approval remains pending.
+// Exact owner-approved editorial state; master visual approval remains pending.
 export const phantomTrafficKnowledgePackage = knowledgePackageSchema.parse(snapshot);

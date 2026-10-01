@@ -155,3 +155,7 @@ The render router rejects unknown video IDs. Production renders use an 8 Mbps H.
 ## Recovery QA routing
 
 `pnpm qa <video-id> --recovered` selects the Git-manifest identity, verifies its hash, and generates new RECOVERY-GENERATED QA under recovery-work/phase-2-qa/<video-id>. Existing recovery QA directories are preserved rather than overwritten. This inspects accepted/candidate recovery bytes without rendering a video or treating QA as approval. Historical default render/QA routing remains unchanged.
+
+## Phantom Traffic master candidate
+
+Target `phantom-traffic` / composition `Magnivis-Phantom-Traffic` renders the 1025-frame, 1080×1920, 30 fps vertical master with the standard H.264/AAC/yuv420p pipeline. `pnpm render phantom-traffic`, `pnpm qa phantom-traffic`, `pnpm production:validate phantom-traffic` and `pnpm captions:validate phantom-traffic` use the existing boundaries. Road/track/vehicle visuals are original procedural physical scenes; traffic kinematics are a small deterministic explanatory model, not a calibrated simulator. Approved narration words cannot change. The exact retained candidate awaits owner master visual review.

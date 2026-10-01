@@ -55,3 +55,9 @@ YouTube, Instagram, and Facebook review variants reuse that exact artifact. TikT
 ## Phase 2 recovery boundary
 
 Historical plan r3 and its exact visual approval remain unchanged. `pnpm production:validate wood-frog` continues to enforce the unavailable original hash and correctly fails until those bytes are recovered. `pnpm production:validate wood-frog --recovered` (and wood-frog-tiktok) validates original source/audio/caption bindings plus separately accepted operational artifact identities. It explicitly reports recovery mode and never transfers approval. Current paths/decisions are in PROJECT-STATE.md and artifacts/manifests.json. Re-rendering may change hashes; it must not overwrite accepted operational identities.
+
+## Phantom Traffic candidate v1
+
+ProductionPlan `production-plan.phantom-traffic.v1` revision 1 binds approved package/asset revision 3, exact editorial owner decision, locked script, six beats, approved visual intents, designed CaptionPlan and modular audio. Status is `rendered-candidate-visual-review-required`; no `visualApproval` exists. The [candidate receipt](../content-intelligence/reviews/phantom-traffic-production-v1/candidate-bindings.json) adds exact render implementation/audio/QA hashes and the durable MP4 identity.
+
+`pnpm production:validate phantom-traffic` and `pnpm captions:validate phantom-traffic` perform native source-chain validation; `node --import tsx scripts/validate-phantom-traffic.ts` also checks the reviewed Git commit, measured WAV durations, media report and retained candidate/source/QA bytes. No platform variants or publication authority are created.

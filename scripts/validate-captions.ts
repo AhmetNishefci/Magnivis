@@ -1,3 +1,4 @@
+import {validatePhantomTrafficProduction} from '../src/production/phantom-traffic-integrity';
 import {createHash} from 'node:crypto';
 import {existsSync, readFileSync} from 'node:fs';
 import {assertCaptionRegionIsSafe, magnivisCaptionDesignSystem} from '../src/captions/design-system';
@@ -10,6 +11,10 @@ import {woodFrogYoutubeReviewVariant} from '../src/platform-variants/variants/wo
 import {woodFrogApprovalHashes} from '../src/production/integrity';
 
 const requestedId = process.argv[2];
+if (requestedId === 'phantom-traffic') {
+  console.log(JSON.stringify(validatePhantomTrafficProduction(), null, 2));
+  process.exit(0);
+}
 const video = requestedId === woodFrog.id
   ? woodFrog
   : requestedId === woodFrogTiktok.id

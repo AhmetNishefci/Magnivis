@@ -293,3 +293,9 @@ Ahmet Nishefci explicitly accepts Phase 3, historical gaps, separate Wood Frog r
 The independently fetched GitHub candidate a2f9531aed50ae3f4feb6ad49ca3d420bd5319ec passes locked install, 253 tests across 17 files, all 110 durable identities, exact restore, eight draft packages and production/caption/brain validation. Known geometry gaps remain explicitly INCOMPLETE. Use a merge commit through PR #1 to preserve recovery provenance; verify remote main in a separate clean clone and retain the receipts under recovery-audit/closure. Operational closure accepts gaps and makes no new content/platform authorization.
 
 GitHub PR #1 merged at 923641b6e00ef3196cf80ea6202aab8958e07330 with both original main and accepted recovery head as parents. A separate fresh GitHub main clone passed all 15 proof checks. Recovery is CLOSED operationally, historical gaps remain accepted, and the next content cycle still requires separate authorization. Final receipts: recovery-audit/closure/reconciliation.json and closure-remote-main-proof.json.
+
+## 2026-10-01 — Phantom Traffic exact editorial approval and master candidate
+
+Ahmet approved finalized editorial commit `21c3a5539cf02b1c4a88b8ff89aca0139a7ec079`, exact narration and scientific boundaries, and explicitly authorized one master production candidate. Record full package/asset approval with truthful decision-entry time, preserving all prior claim states and immutable handoffs. Use original controlled procedural motion with physical shaded vehicles/roadway because temporal consistency is essential to the forward-car/backward-pattern explanation; no generated stills or copyrighted footage are needed.
+
+Retain the exact candidate/audio and bounded final QA evidence in normal Git before handoff. Native provenance now distinguishes new originals from historical recovery artifacts. Owner master visual review remains mandatory; no platform/device approval or public action is authorized.
