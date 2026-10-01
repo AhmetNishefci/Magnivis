@@ -1,3 +1,4 @@
+import longitudeApproved from '../../content-intelligence/reviews/longitude-clock-approved-v3/knowledge-package.approved.json';
 import {phantomTrafficKnowledgePackage} from './packages/phantom-traffic';
 import {speedOfLightKnowledgePackage} from './packages/speed-of-light';
 import {oceanDepthKnowledgePackage} from './packages/ocean-depth';
@@ -81,6 +82,7 @@ export const createKnowledgePackageRegistry = (
 export type KnowledgePackageRegistry = ReturnType<typeof createKnowledgePackageRegistry>;
 
 export const knowledgePackageRegistry = createKnowledgePackageRegistry([
+  longitudeApproved,
   oceanDepthKnowledgePackage,
   phantomTrafficKnowledgePackage,
   speedOfLightKnowledgePackage,

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.facebook-reels.r1",
+  "generatedAt": "2026-10-01T19:59:57.296Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "longitude-clock.asset.time-to-position.variant.facebook-reels",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "longitude-clock.asset.time-to-position",
+      "revision": 3
+    },
+    "knowledgePackage": {
+      "id": "longitude-clock",
+      "revision": 3
+    },
+    "videoSpec": {
+      "id": "longitude-clock-locked",
+      "compositionId": "Magnivis-Longitude-Clock-V2"
+    },
+    "productionChain": {
+      "productionPlan": {
+        "id": "production-plan.longitude-clock.v1",
+        "revision": 5
+      },
+      "captionPlan": {
+        "id": "caption-plan.longitude-clock.v2",
+        "revision": 2,
+        "sha256": "d34aea2666742c0e8e61f569d6ee023be369f0d7ab558cd40823ca226f45e3cb"
+      },
+      "lockedMaster": {
+        "videoSpecId": "longitude-clock-locked",
+        "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+        "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+        "relationship": "exact-master"
+      }
+    }
+  },
+  "destination": {
+    "platform": "facebook",
+    "surface": "facebook-reels",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.facebook-reels.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.facebook-reels.v1",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 47.062,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "title": "Why a Clock Can Help Find Longitude",
+    "caption": "A ship’s clock preserves the time at a known reference. Sailors compare it with corrected local time at the same moment. Earth’s turning connects the difference to longitude: two hours ahead means 30° east.\n\nHarrison’s H4 helped demonstrate accurate timekeeping at sea, while astronomical methods remained useful. The clock alone does not reveal a complete geographic position.\n\nOriginal explanatory animation and H4 reconstruction; synthetic narration.",
+    "hashtags": [
+      "#longitude",
+      "#navigation",
+      "#magnivis"
+    ],
+    "claimIds": [
+      "longitude-clock.claim.longitude",
+      "longitude-clock.claim.time-comparison",
+      "longitude-clock.claim.equation-time",
+      "longitude-clock.claim.conversion",
+      "longitude-clock.claim.east-example",
+      "longitude-clock.claim.h4-demonstration",
+      "longitude-clock.claim.h4-watch",
+      "longitude-clock.claim.complementary"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Select comparison/30° east payoff around 29.1s; preview Page/feed independently."
+    }
+  },
+  "captions": {
+    "behavior": "burned-in",
+    "designedBurnedIn": true,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "operatorGuidance": {
+    "visibility": "private-preview",
+    "originalAudio": "preserve",
+    "aiGeneratedContentDisclosure": {
+      "recommendation": "enable",
+      "currentPolicyConfirmationRequired": true,
+      "rationale": "Synthetic narration is realistic-sounding AI audio. Enable applicable AI disclosure; original animation/H4 reconstruction is not realistic historical footage. Confirm current live menu wording."
+    },
+    "commercialContentDisclosure": {
+      "recommendation": "disable",
+      "rationale": "No sponsorship, product placement or paid partnership is present."
+    },
+    "nativeCaptions": {
+      "recommendation": "disable-to-avoid-visible-duplication",
+      "rationale": "Approved burned-in captions already provide complete narration coverage. Any optional accessible track should avoid duplicate visible overlays."
+    },
+    "location": "none",
+    "link": "none",
+    "notes": [
+      "Optional first comment: The clock preserves a reference. Observation and calculation reveal longitude. What other unexpected connection should Magnivis explain next?",
+      "Optional separate Facebook Tags field: longitude, navigation, John Harrison, H4, timekeeping, history of navigation",
+      "Do not upload/publish until separately authorized. Owner may later choose private/preview device review OR explicitly accept uncertainty; neither choice is inferred.",
+      "Preserve original audio; no music, effects, filters, auto-reframing, auto-enhancement or creative changes.",
+      "Highest-quality/HD upload when available; comments on with normal moderation; downloading/remix/duet/stitch/reuse off initially where controls exist.",
+      "Public visibility is a later owner-authorized release setting only. Disable automatic cross-posting; prepare each destination independently.",
+      "No age restriction recommended; content is general educational, not child-targeted. Confirm account/audience/menu controls live."
+    ]
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "ready-for-private-preview",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 4072695,
+      "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 3398,
+      "sha256": "65b3a753494a03e92031eb6a783f3438248dc67f5c1c0d0f757d85f62a781c24"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 3505,
+      "sha256": "050bc3dbdb7bea16fc5129cdc2c5bdda6b10b07d15ab408286dc44b3462b74d5"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1790,
+      "sha256": "5f8200c2eac8af8efb770b8a786a213f7052b905f05631a9847b8b5cc58aa65f"
+    }
+  ]
+}

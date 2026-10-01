@@ -1,3 +1,4 @@
+import longitudeApproved from '../../content-intelligence/reviews/longitude-clock-approved-v3/content-asset.approved.json';
 import {phantomTrafficContentAsset} from './assets/phantom-traffic';
 import {
   speedOfLightCosmicDistanceAsset,
@@ -70,6 +71,7 @@ export const createContentAssetRegistry = (
 };
 
 export const contentAssetRegistry = createContentAssetRegistry([
+  longitudeApproved,
   oceanDepthPublishedShortAsset,
   phantomTrafficContentAsset,
   speedOfLightPublishedShortAsset,

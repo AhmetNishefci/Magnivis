@@ -1,3 +1,4 @@
+import {longitudePlatformVariants} from './variants/longitude-clock';
 import {phantomTrafficPublicationVariants as phantomTrafficPlatformVariants} from './variants/phantom-traffic-publication';
 import {
   contentAssetRegistry,
@@ -120,5 +121,5 @@ export const createPlatformVariantRegistry = (
 export type PlatformVariantRegistry = ReturnType<typeof createPlatformVariantRegistry>;
 
 export const platformVariantRegistry = createPlatformVariantRegistry(
-  [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants, ...phantomTrafficPlatformVariants],
+  [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants, ...phantomTrafficPlatformVariants, ...longitudePlatformVariants],
 );

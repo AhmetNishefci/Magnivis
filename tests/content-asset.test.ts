@@ -141,6 +141,7 @@ describe('content asset registry', () => {
     expect(contentAssetRegistry.get(speedOfLightContentAssetIds.publishedShort))
       .toEqual(speedOfLightPublishedShortAsset);
     expect(contentAssetRegistry.list().map(({id}) => id)).toEqual([
+      'longitude-clock.asset.time-to-position',
       oceanDepthContentAssetIds.publishedShort,
       'phantom-traffic.asset.backward-wave',
       speedOfLightContentAssetIds.cosmicDistanceShort,

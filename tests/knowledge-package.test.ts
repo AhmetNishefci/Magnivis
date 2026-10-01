@@ -274,6 +274,7 @@ describe('knowledge package registry', () => {
       speedOfLightKnowledgePackage,
     );
     expect(knowledgePackageRegistry.list().map(({id}) => id)).toEqual([
+      'longitude-clock',
       'ocean-depth',
       'phantom-traffic',
       'speed-of-light',

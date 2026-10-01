@@ -1,5 +1,15 @@
 # Project state
 
+## CONTENT CYCLE #2 — V2 MASTER LOCKED, platform delivery review pending
+
+Ahmet explicitly approved exact Candidate V2 `dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369` as final locked master. [Master decision](../content-intelligence/reviews/longitude-clock-master-lock-v1/owner-decision.json) records actual entry `2026-10-01T19:39:44.862Z`, not a supplied review timestamp. Logical artifact `longitude-clock.locked-master.v2` promotes the same immutable MP4/path; original candidate manifests and v1/v2 inputs remain unchanged. ProductionPlan revision 5 adds exact owner-visual approval; CaptionPlan revision 2 is approved only in this master binding. Eight claims, exact 89-word narration, af_heart primary voice, approved Crafted Object Theatre, independent adaptive soundscape and story-led 47-second timeline remain unchanged.
+
+Four registered PlatformVariants are `editorial-review`, `ready-for-private-preview`, reusing exact master bytes without derivatives. Four [delivery handoffs](../content-intelligence/reviews/longitude-clock-platform-v1/delivery-index.json) are `draft-review`, not publish-eligible. Known inset models clear critical content; incomplete native UI/caption regions and unmeasured desktop/cover/grid/feed geometry remain separate uncertainties. Nine surface evaluations fabricate no device passes. Original centered Instagram cover is independently review-required; other platforms have decoded representative-frame recommendations.
+
+[Owner platform handoff](../content-intelligence/reviews/longitude-clock-platform-v1/owner-review.md) and [manual checklist](../content-intelligence/reviews/longitude-clock-platform-v1/publication-checklist.md) contain independent copy/settings and current-policy inspection limitations. Publication intake/analytics readiness are templates, not PublicationRecords/MetricSnapshots. Ahmet may next authorize private/device checks or explicitly accept uncertainty with publication authorization; neither is inferred. No external action, release, main merge or Cycle #3 is authorized. Older sections below preserve prior milestone history.
+
+**Exact next gate: AHMET — CYCLE #2 PLATFORM DELIVERY / PUBLICATION REVIEW.**
+
 ## CONTENT CYCLE #2 — PRIMARY NARRATOR REVISION, candidate v2
 
 Ahmet reviewed exact Longitude candidate v1 `71dba2d65c2e86fe00cc11683c8aeaf668a9acd10e877e744be3380bde53b981`, approved visual/sound direction in principle and requested Kokoro `af_heart`; master remains unapproved. [V2 decision](../content-intelligence/reviews/longitude-clock-production-v2/owner-decision.json) records actual decision-entry time and exact parent/editorial bindings. The current primary narrator is now a brand default; material deviations need rationale, domain changes do not require auditions. Visuals/captions/soundscape remain adaptive; duration is story-led, never monetization-only padding. Earlier conflicting narrator-choice text is superseded prospectively, without changing historical approvals.

@@ -1,0 +1,395 @@
+[
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "PROVISIONAL reconstructed/owner model",
+      "insets": {
+        "bottom": 310,
+        "left": 84,
+        "right": 190,
+        "top": 240
+      },
+      "localKnownInsets": "VERIFIED BY LOCAL MODEL",
+      "profileId": "safe-area.youtube-shorts.v2",
+      "realDeviceReviewRequired": true,
+      "state": "INCOMPLETE",
+      "unresolved": [
+        "native exclusion zones",
+        "caption region"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "mobile-app",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/youtube-mobile.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.youtube-mobile.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Exact decoded master and measured source bounds clear known inset model. Native exclusions/caption geometry remain incomplete; no device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.youtube-shorts",
+      "profileId": "safe-area.youtube-shorts.v2",
+      "reviewer": null,
+      "state": "LOCAL_APPROXIMATION",
+      "surface": "youtube-shorts-viewer",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "UNMEASURED",
+      "insets": null,
+      "localKnownInsets": "UNMEASURED",
+      "profileId": "safe-area.youtube-shorts.v2",
+      "realDeviceReviewRequired": true,
+      "state": "UNMEASURED",
+      "unresolved": [
+        "Actual surface/player geometry unmeasured"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "desktop-web",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/youtube-desktop.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.youtube-desktop.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Full-frame reference only; no guessed desktop/grid/feed/cover crop or device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.youtube-shorts",
+      "profileId": "safe-area.youtube-shorts.v2",
+      "reviewer": null,
+      "state": "PRIVATE_PREVIEW_PENDING",
+      "surface": "youtube-shorts-viewer",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "Surviving inset model; still requires this-media real-device review",
+      "insets": {
+        "bottom": 310,
+        "left": 84,
+        "right": 190,
+        "top": 240
+      },
+      "localKnownInsets": "VERIFIED BY LOCAL MODEL",
+      "profileId": "safe-area.tiktok-feed.v2",
+      "realDeviceReviewRequired": true,
+      "state": "INCOMPLETE",
+      "unresolved": [
+        "native exclusion zones",
+        "caption region"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "mobile-app",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/tiktok-mobile.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.tiktok-mobile.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Exact decoded master and measured source bounds clear known inset model. Native exclusions/caption geometry remain incomplete; no device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.tiktok-feed",
+      "profileId": "safe-area.tiktok-feed.v2",
+      "reviewer": null,
+      "state": "LOCAL_APPROXIMATION",
+      "surface": "tiktok-feed",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "UNMEASURED",
+      "insets": null,
+      "localKnownInsets": "UNMEASURED",
+      "profileId": "tiktok-cover.pending",
+      "realDeviceReviewRequired": true,
+      "state": "UNMEASURED",
+      "unresolved": [
+        "Actual surface/player geometry unmeasured"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "mobile-app",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/tiktok-cover.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.tiktok-cover.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Full-frame reference only; no guessed desktop/grid/feed/cover crop or device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.tiktok-feed",
+      "profileId": "tiktok-cover.pending",
+      "reviewer": null,
+      "state": "PRIVATE_PREVIEW_PENDING",
+      "surface": "tiktok-cover",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "UNMEASURED",
+      "insets": null,
+      "localKnownInsets": "UNMEASURED",
+      "profileId": "youtube-shorts-cover.pending",
+      "realDeviceReviewRequired": true,
+      "state": "UNMEASURED",
+      "unresolved": [
+        "Actual surface/player geometry unmeasured"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "desktop-web",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/youtube-cover.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.youtube-cover.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Full-frame reference only; no guessed desktop/grid/feed/cover crop or device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.youtube-shorts",
+      "profileId": "youtube-shorts-cover.pending",
+      "reviewer": null,
+      "state": "PRIVATE_PREVIEW_PENDING",
+      "surface": "youtube-shorts-cover",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "Surviving inset model; still requires this-media real-device review",
+      "insets": {
+        "bottom": 280,
+        "left": 72,
+        "right": 170,
+        "top": 130
+      },
+      "localKnownInsets": "VERIFIED BY LOCAL MODEL",
+      "profileId": "safe-area.instagram-reels.v1",
+      "realDeviceReviewRequired": true,
+      "state": "INCOMPLETE",
+      "unresolved": [
+        "native exclusion zones",
+        "caption region"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "mobile-app",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/instagram-reel.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.instagram-reel.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Exact decoded master and measured source bounds clear known inset model. Native exclusions/caption geometry remain incomplete; no device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.instagram-reels",
+      "profileId": "safe-area.instagram-reels.v1",
+      "reviewer": null,
+      "state": "LOCAL_APPROXIMATION",
+      "surface": "instagram-reels-playback",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "UNMEASURED",
+      "insets": null,
+      "localKnownInsets": "UNMEASURED",
+      "profileId": "instagram-profile-grid.pending",
+      "realDeviceReviewRequired": true,
+      "state": "UNMEASURED",
+      "unresolved": [
+        "Actual surface/player geometry unmeasured"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "mobile-app",
+      "coverSha256": "27bc0b6d9c12d8d88db1f1977a389735efb8c965856cb664382c615130eb73f3",
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/instagram-grid.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.instagram-grid.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Full-frame reference only; no guessed desktop/grid/feed/cover crop or device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.instagram-reels",
+      "profileId": "instagram-profile-grid.pending",
+      "reviewer": null,
+      "state": "PRIVATE_PREVIEW_PENDING",
+      "surface": "instagram-profile-grid",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "Surviving inset model; still requires this-media real-device review",
+      "insets": {
+        "bottom": 270,
+        "left": 72,
+        "right": 160,
+        "top": 120
+      },
+      "localKnownInsets": "VERIFIED BY LOCAL MODEL",
+      "profileId": "safe-area.facebook-reels.v1",
+      "realDeviceReviewRequired": true,
+      "state": "INCOMPLETE",
+      "unresolved": [
+        "native exclusion zones",
+        "caption region"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "mobile-app",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/facebook-reel.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.facebook-reel.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Exact decoded master and measured source bounds clear known inset model. Native exclusions/caption geometry remain incomplete; no device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.facebook-reels",
+      "profileId": "safe-area.facebook-reels.v1",
+      "reviewer": null,
+      "state": "LOCAL_APPROXIMATION",
+      "surface": "facebook-reels-viewer",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  },
+  {
+    "actualBrowserFontBoundsPassed": true,
+    "assessment": {
+      "evidenceQualification": "UNMEASURED",
+      "insets": null,
+      "localKnownInsets": "UNMEASURED",
+      "profileId": "facebook-page-feed.pending",
+      "realDeviceReviewRequired": true,
+      "state": "UNMEASURED",
+      "unresolved": [
+        "Actual surface/player geometry unmeasured"
+      ],
+      "violations": []
+    },
+    "decodedCaptionMidpoints": 24,
+    "derivativeCreated": false,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false,
+    "qa": {
+      "appVersion": null,
+      "context": "mobile-app",
+      "coverSha256": null,
+      "device": null,
+      "evidence": [
+        "artifacts/qa-evidence/longitude-clock-platform-v1/facebook-feed.json",
+        "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg"
+      ],
+      "id": "presentation-qa.longitude-clock.facebook-feed.v1",
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "mediaSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "notes": "Full-frame reference only; no guessed desktop/grid/feed/cover crop or device pass.",
+      "os": null,
+      "platformVariantId": "longitude-clock.asset.time-to-position.variant.facebook-reels",
+      "profileId": "facebook-page-feed.pending",
+      "reviewer": null,
+      "state": "PRIVATE_PREVIEW_PENDING",
+      "surface": "facebook-page-feed",
+      "testedAt": null
+    },
+    "sourceFrames": "artifacts/qa-evidence/longitude-clock-candidate-v2"
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.instagram-reels.r1",
+  "generatedAt": "2026-10-01T19:59:57.296Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "longitude-clock.asset.time-to-position.variant.instagram-reels",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "longitude-clock.asset.time-to-position",
+      "revision": 3
+    },
+    "knowledgePackage": {
+      "id": "longitude-clock",
+      "revision": 3
+    },
+    "videoSpec": {
+      "id": "longitude-clock-locked",
+      "compositionId": "Magnivis-Longitude-Clock-V2"
+    },
+    "productionChain": {
+      "productionPlan": {
+        "id": "production-plan.longitude-clock.v1",
+        "revision": 5
+      },
+      "captionPlan": {
+        "id": "caption-plan.longitude-clock.v2",
+        "revision": 2,
+        "sha256": "d34aea2666742c0e8e61f569d6ee023be369f0d7ab558cd40823ca226f45e3cb"
+      },
+      "lockedMaster": {
+        "videoSpecId": "longitude-clock-locked",
+        "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+        "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+        "relationship": "exact-master"
+      }
+    }
+  },
+  "destination": {
+    "platform": "instagram",
+    "surface": "instagram-reels",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.instagram-reels.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.instagram-reels.v1",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 47.062,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "caption": "Time can reveal a direction in space.\n\nReference 12:00. Local mean time 14:00. At the same instant, that two-hour difference means 30° east of the reference.\n\nThe watch preserves time. Observation, correction and calculation reveal longitude. Save this for the next time a map makes you wonder.\n\nOriginal explanatory animation and H4 reconstruction; synthetic narration.",
+    "hashtags": [
+      "#longitude",
+      "#navigationhistory",
+      "#curiosity",
+      "#magnivis"
+    ],
+    "claimIds": [
+      "longitude-clock.claim.longitude",
+      "longitude-clock.claim.time-comparison",
+      "longitude-clock.claim.equation-time",
+      "longitude-clock.claim.conversion",
+      "longitude-clock.claim.east-example",
+      "longitude-clock.claim.h4-demonstration",
+      "longitude-clock.claim.h4-watch",
+      "longitude-clock.claim.complementary"
+    ],
+    "cover": {
+      "strategy": "custom-image",
+      "intent": "Review this exact original cover separately in Reel/profile/grid; actual crop unknown.",
+      "artifact": {
+        "id": "longitude-clock.instagram-cover.v1",
+        "path": "artifacts/covers/longitude-clock-instagram-cover-v1.png",
+        "sha256": "27bc0b6d9c12d8d88db1f1977a389735efb8c965856cb664382c615130eb73f3"
+      }
+    }
+  },
+  "captions": {
+    "behavior": "burned-in",
+    "designedBurnedIn": true,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "operatorGuidance": {
+    "visibility": "private-preview",
+    "originalAudio": "preserve",
+    "aiGeneratedContentDisclosure": {
+      "recommendation": "enable",
+      "currentPolicyConfirmationRequired": true,
+      "rationale": "Synthetic narration is realistic-sounding AI audio. Enable applicable AI disclosure; original animation/H4 reconstruction is not realistic historical footage. Confirm current live menu wording."
+    },
+    "commercialContentDisclosure": {
+      "recommendation": "disable",
+      "rationale": "No sponsorship, product placement or paid partnership is present."
+    },
+    "nativeCaptions": {
+      "recommendation": "disable-to-avoid-visible-duplication",
+      "rationale": "Approved burned-in captions already provide complete narration coverage. Any optional accessible track should avoid duplicate visible overlays."
+    },
+    "location": "none",
+    "link": "none",
+    "notes": [
+      "Optional first comment: Both readings must use a comparable mean-solar-time basis. That is why the local Sun observation needs a correction.",
+      "Optional keywords (not a separate UI field): none",
+      "Do not upload/publish until separately authorized. Owner may later choose private/preview device review OR explicitly accept uncertainty; neither choice is inferred.",
+      "Preserve original audio; no music, effects, filters, auto-reframing, auto-enhancement or creative changes.",
+      "Highest-quality/HD upload when available; comments on with normal moderation; downloading/remix/duet/stitch/reuse off initially where controls exist.",
+      "Public visibility is a later owner-authorized release setting only. Disable automatic cross-posting; prepare each destination independently.",
+      "No age restriction recommended; content is general educational, not child-targeted. Confirm account/audience/menu controls live."
+    ]
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "ready-for-private-preview",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 4072695,
+      "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+    },
+    {
+      "role": "cover",
+      "path": "cover.png",
+      "mediaType": "image/png",
+      "bytes": 1209593,
+      "sha256": "27bc0b6d9c12d8d88db1f1977a389735efb8c965856cb664382c615130eb73f3"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 3415,
+      "sha256": "d239bd8a861aafeebcc494518bd5c447a44a555798e166adef37d7630bab9070"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 3221,
+      "sha256": "a8fcb3da6720b519ed447ee034cb1e5995494c846f2ab28c48f35a4f3755d7ab"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1796,
+      "sha256": "8e48c4aeb1b2f54231f4cd692aae4a6c79d9bfcbee224e8a511ba8337968f46f"
+    }
+  ]
+}

@@ -53,3 +53,13 @@ Font source URLs, copyright notices, licenses and file hashes are retained in th
 ### Longitude Clock candidate v2 — narrator revision
 
 Exact approved words are newly synthesized locally with Kokoro `af_heart`, speed 0.92, q8 CPU, using the existing Apache-2.0 model. Individual WAV hashes, sample-count durations and model/voice-embedding provenance are retained under the v2 production review; v1 remains immutable. Soundscape is the same original seeded ocean/tactile/no-music construction retimed to the measured narration. Existing original visual/H4/font provenance is reused by explicit owner-approved visual direction, not by aesthetic default. No museum photograph or new external production media is introduced.
+
+### Longitude Clock platform review artwork
+
+| Asset | Origin / rights | Provenance |
+|---|---|---|
+| Instagram cover candidate v1 | Original Magnivis object-theatre composition; project-owned | `src/platform-variants/LongitudeCoverRoot.tsx`; existing original watch/ship shapes and pinned Adobe OFL fonts; complete approved question, no museum pixels or new external imagery. Exact PNG/hash retained; crop and approval pending. |
+| YouTube/TikTok/Facebook representative stills | Decoded exact owner-approved V2 master | Separate frame recommendations at 0.7s / 1.6s / 29.1s, no bespoke artwork or master change. Actual native selection/crop requires review. |
+| Platform local model sheets | Original approved-master decoded frames with surviving inset outlines | No device screenshots, guessed native UI or speculative Meta crop; full decode and frame/hash evidence retained. |
+
+No new voice, music, stock asset or font was introduced in delivery preparation. V1 and V2 original production/license evidence remains immutable.

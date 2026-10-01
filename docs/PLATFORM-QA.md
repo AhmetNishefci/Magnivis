@@ -57,3 +57,11 @@ Review moves after live publication for YouTube mobile/desktop, TikTok mobile, I
 ## Phantom Traffic postpublication learning
 
 Owner reports correct live desktop/web and mobile presentation where applicable across all four target platforms. Durable record: content-intelligence/reviews/phantom-traffic-closure-v1/owner-live-presentation.json. It is platform/context-level owner evidence, not a measured device capture or individually enumerated grid/feed pass. Historical local/prepublication records stay unchanged; operational review is complete with measured gaps preserved. No profile coordinates or renderer defaults change. Future stories must independently check captions, critical regions and covers; reported success is a hypothesis for applicable engineering, never automatic safe-area truth or art-direction reuse.
+
+## Longitude Clock V2 local review
+
+The exact approved master has nine content-scoped surface assessments under `content-intelligence/reviews/longitude-clock-platform-v1/` and decoded local model sheets under `artifacts/qa-evidence/longitude-clock-platform-v1/`. The model sheets draw only surviving insets, never simulated native UI. Known YouTube/TikTok/Instagram/Facebook playback insets clear critical text/objects and measured typography. Complete native exclusion zones/caption-region geometry remain incomplete. YouTube desktop and all cover/grid/feed crop behavior remain unmeasured. No `testedAt`, device, app, reviewer or real-device pass is invented.
+
+Instagram's centered original cover is a separate review artifact with `crop: null`. Other platforms receive distinct decoded representative-frame recommendations, subject to actual frame-selection/thumbnail controls. Current YouTube guidance permits custom Shorts thumbnails in eligible desktop accounts; historical UI lessons are not a universal current restriction. Actual account verification and controls remain unknown.
+
+The next owner may authorize private/device preview or explicitly accept presentation uncertainty before publication authorization. Local QA and master approval alone grant neither. Frozen historical profile/QA files are unchanged; new records live in content-scoped collections.

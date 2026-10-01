@@ -1,3 +1,4 @@
+import {longitudePlatformVariants} from '../src/platform-variants/variants/longitude-clock';
 import {phantomTrafficPlatformVariants} from '../src/platform-variants/variants/phantom-traffic';
 import {describe, expect, it} from 'vitest';
 import {speedOfLightPublishedShortAsset} from '../src/content-assets/assets/speed-of-light';
@@ -111,7 +112,7 @@ describe('PlatformVariant V1 schema and registry', () => {
       speedOfLightYoutubeShortsVariant,
     );
     expect(platformVariantRegistry.list().map(({id}) => id)).toEqual(
-      [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants, ...phantomTrafficPlatformVariants].map(({id}) => id).sort(),
+      [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants, ...phantomTrafficPlatformVariants, ...longitudePlatformVariants].map(({id}) => id).sort(),
     );
     expect(platformVariantRegistry.listByContentAsset(
       speedOfLightPublishedShortAsset.id,

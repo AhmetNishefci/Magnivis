@@ -39,7 +39,7 @@ import {
   inspectMedia,
   type MediaInspection,
 } from './media-inspection';
-import {resolveVideoTarget} from './video-targets';
+import {resolveProductionVideoTarget as resolveVideoTarget} from './production-video-targets';
 
 export type DeliveryProduction = {
   spec: VideoSpec;
