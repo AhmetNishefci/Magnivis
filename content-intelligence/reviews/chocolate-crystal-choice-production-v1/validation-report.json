@@ -41,7 +41,19 @@
       "candidateSha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
       "regenerationByteIdentityProven": false
     },
-    "fontLicenseExactBytes": "Exact upstream gzip decompression hash verified; whitespace-clean readable copy retains full legal wording."
+    "fontLicenseExactBytes": "Exact upstream gzip decompression hash verified; whitespace-clean readable copy retains full legal wording.",
+    "cleanCommittedRestore": {
+      "passed": true,
+      "checkedAt": "2026-10-01T23:54:37.928616+00:00",
+      "sourceCommit": "023abdbe5bffa6e387cd0ce06d344cda6a27f4a6",
+      "method": "Clean temporary directory populated from Git archive of committed source/media paths; every source input and every new native artifact hash/byte count verified.",
+      "sourceInputs": 32,
+      "durableArtifacts": 86,
+      "uniqueFiles": 106,
+      "candidateSha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+      "fullDependencyInstallTested": false,
+      "byteIdenticalRegenerationProven": false
+    }
   },
   "results": {
     "production": {
