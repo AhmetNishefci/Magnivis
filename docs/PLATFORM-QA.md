@@ -65,3 +65,9 @@ The exact approved master has nine content-scoped surface assessments under `con
 Instagram's centered original cover is a separate review artifact with `crop: null`. Other platforms receive distinct decoded representative-frame recommendations, subject to actual frame-selection/thumbnail controls. Current YouTube guidance permits custom Shorts thumbnails in eligible desktop accounts; historical UI lessons are not a universal current restriction. Actual account verification and controls remain unknown.
 
 The next owner may authorize private/device preview or explicitly accept presentation uncertainty before publication authorization. Local QA and master approval alone grant neither. Frozen historical profile/QA files are unchanged; new records live in content-scoped collections.
+
+## Longitude release under accepted uncertainty
+
+Ahmet explicitly accepts remaining Longitude presentation uncertainty and waives further prepublication private/device review for this exact release. Native variant state is `owner-risk-accepted`, never `private-preview-passed`. Original nine local/pending QA records and unknown geometry remain unchanged. Instagram cover selection approval preserves exact bytes and null crop; it is not device approval.
+
+Postpublication review is lightweight and evidence-led: YouTube mobile/desktop, TikTok mobile feed, Instagram playback/grid, Facebook viewer/Page-feed. Check captions/top/bottom/right controls, cover/crop, correction/same-instant labels, readings, +2 hours, 30° east, H4, final payoff and audio. Record actual problems and available metadata/screenshots before proposing engineering changes. Minor issues do not automatically authorize a Longitude rerender; material remediation requires an explicit owner decision. No qualitative success becomes universal measured geometry.

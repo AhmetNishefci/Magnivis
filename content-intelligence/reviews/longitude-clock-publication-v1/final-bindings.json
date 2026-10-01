@@ -1,0 +1,79 @@
+{
+  "acceptedRisks": [
+    "Zero Longitude prepublication real-device passes.",
+    "Known/provisional local inset models passed; this is local evidence only.",
+    "Native UI exclusion zones and caption geometry remain incompletely measured.",
+    "YouTube desktop/web presentation remains unmeasured.",
+    "Instagram profile/grid crop remains unmeasured.",
+    "Facebook Page/feed crop remains unmeasured.",
+    "Other native cover/frame/control and presentation uncertainty remains as documented."
+  ],
+  "assistantUploadAuthorized": false,
+  "coverSelection": {
+    "deviceTested": false,
+    "path": "artifacts/covers/longitude-clock-instagram-cover-v1.png",
+    "selectedForPublication": true,
+    "sha256": "27bc0b6d9c12d8d88db1f1977a389735efb8c965856cb664382c615130eb73f3"
+  },
+  "decision": {
+    "id": "owner-decision.longitude-clock.publication.v1",
+    "revision": 1,
+    "sha256": "323718b403604e36d344eb65dd602fbd3639f9da17aba467aade6b037b41d328"
+  },
+  "master": {
+    "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+    "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+  },
+  "masterArtifactId": "longitude-clock.locked-master.v2",
+  "packages": [
+    {
+      "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.youtube-shorts.r2",
+      "directory": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/youtube-shorts",
+      "manifestFileSha256": "b09ef360f5fc22b7a09ec58d6ddd0f3cd73f440c5531c7eb85274f8b39951538",
+      "manifestSha256": "9b9a36e2a7a0f2e17b0f5b9df1eea66057217adf68b69fe0653aef4c3651f015",
+      "platform": "youtube",
+      "state": "ready-for-manual-upload",
+      "uploadFile": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/youtube-shorts/video.mp4",
+      "uploadSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "variantSha256": "51fcde025c2a28b82662429360a926213e78d63539ba7a5112876d97adc14f59"
+    },
+    {
+      "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.tiktok-feed.r2",
+      "directory": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/tiktok-feed",
+      "manifestFileSha256": "6eb6f1acf609a1af73fc300975077217ebcf3c9331d2a7b1f8781d190c1f0910",
+      "manifestSha256": "fff2227d0b0016def941daece872265bc6d0a105d648e81980166d83d0b11db4",
+      "platform": "tiktok",
+      "state": "ready-for-manual-upload",
+      "uploadFile": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/tiktok-feed/video.mp4",
+      "uploadSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "variantSha256": "415b58226d8b056816105a6d8a7c6c9b05835111ab1dda3b3e1e6ed1abbc58ff"
+    },
+    {
+      "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.instagram-reels.r2",
+      "directory": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/instagram-reels",
+      "manifestFileSha256": "6f8b3c188a65a73023ada335c511c996e2ac4352f495fefc17c40a0f6834cfc1",
+      "manifestSha256": "960fcd076e34748ec073eb8929b8fba9d55ce758853224593c507ee3893f6c0d",
+      "platform": "instagram",
+      "state": "ready-for-manual-upload",
+      "uploadFile": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/instagram-reels/video.mp4",
+      "uploadSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "variantSha256": "8cfb2c31ac57229ce24ff2563f540d9928e23b8e23d054cf109edea090a62d45"
+    },
+    {
+      "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.facebook-reels.r2",
+      "directory": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/facebook-reels",
+      "manifestFileSha256": "149e21c462df1a95f7de47de73603f0bec9b5c70cba589a506b288bec8922218",
+      "manifestSha256": "f821a4ab0b7e52ac369bcd283cce70ea443ae09b59b69036c1b2b04d4866eafe",
+      "platform": "facebook",
+      "state": "ready-for-manual-upload",
+      "uploadFile": "artifacts/deliveries/longitude-clock-publication-v1/longitude-clock-locked/facebook-reels/video.mp4",
+      "uploadSha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+      "variantSha256": "9385cb2068caa837e6ec6a86c79435596acf963c11489d6840e231b2eb0b5418"
+    }
+  ],
+  "postPublicationReview": "pending-live-publication-evidence",
+  "publicationAuthorized": true,
+  "publicationOccurred": false,
+  "realDevicePassesGranted": [],
+  "schemaVersion": 1
+}

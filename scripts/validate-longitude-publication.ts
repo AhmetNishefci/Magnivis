@@ -1,0 +1,44 @@
+import {readFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {validateLongitudePublicationAuthorization} from '../src/platform-variants/longitude-publication';
+import {longitudePublicationVariants as variants} from '../src/platform-variants/variants/longitude-clock-publication';
+import {longitudePlatformVariants as prepared} from '../src/platform-variants/variants/longitude-clock';
+import {longitudeFileHash} from '../src/production/longitude-integrity';
+import {validateDeliveryPackage} from './delivery-packages';
+import {coverAssetSchema} from '../src/platform-variants/presentation';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {publicationRegistry, metricSnapshotRegistry} from '../src/operations/registry';
+import {parseManifests} from '../src/artifacts/schema';
+import {youtubeCategoryPolicy} from '../src/platform-variants/youtube-category-policy';
+
+const root = 'content-intelligence/reviews/longitude-clock-publication-v1';
+const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+const decision = validateLongitudePublicationAuthorization();
+const bindings = read(`${root}/final-bindings.json`);
+if (bindings.decision.sha256 !== sha256Json(decision) || !bindings.publicationAuthorized || bindings.publicationOccurred || bindings.assistantUploadAuthorized || bindings.packages.length !== 4 || bindings.realDevicePassesGranted.length) throw new Error('Invalid owner manual release scope');
+if (sha256Json(read(`${root}/platform-variants.json`)) !== sha256Json(variants) || longitudeFileHash(`${root}/platform-copy.json`) !== decision.copy.sha256) throw new Error('Authorized variants/copy drift');
+for (const item of bindings.packages) {
+  const variant = variants.find(v => v.platform === item.platform)!;
+  const previous = prepared.find(v => v.id === variant.id)!;
+  const manifest = validateDeliveryPackage(item.directory);
+  if (manifest.state !== 'ready-for-manual-upload' || !manifest.publishEligible || manifest.review.previewStatus !== 'owner-risk-accepted' || manifest.review.publicationAuthorized !== false) throw new Error('Invalid readiness/authority separation');
+  if (variant.revision !== 2 || variant.status !== 'production-ready' || variant.productionIntent.platformPreviewRequired || variant.approval?.ownerDecision?.sha256 !== sha256Json(decision) || variant.presentationRiskAcceptance?.decision.sha256 !== sha256Json(decision) || variant.operatorGuidance?.manualPublication?.authorization.sha256 !== sha256Json(decision)) throw new Error('Missing exact owner risk acceptance');
+  if (sha256Json(variant.packaging) !== sha256Json(previous.packaging) || sha256Json(variant.sourceMaster) !== sha256Json(previous.sourceMaster) || variant.productionIntent.renderStrategy !== 'reuse-existing-master') throw new Error('Unauthorized media/editorial modification');
+  if (sha256Json(manifest) !== item.manifestSha256 || longitudeFileHash(`${item.directory}/manifest.json`) !== item.manifestFileSha256 || sha256Json(variant) !== item.variantSha256 || longitudeFileHash(item.uploadFile) !== decision.master.sha256) throw new Error('Final handoff identity drift');
+  if (variant.platform === 'instagram' && longitudeFileHash(`${item.directory}/cover.png`) !== decision.selectedInstagramCover.sha256) throw new Error('Cover identity drift');
+}
+const cover = coverAssetSchema.parse(read(`${root}/cover-selection.json`));
+if (cover.sha256 !== decision.selectedInstagramCover.sha256 || cover.approvalDecisionId !== decision.id || cover.crop !== null || cover.status !== 'approved') throw new Error('Invalid exact cover selection or invented crop');
+const post = read(`${root}/post-publication-review.json`);
+if (post.releaseBlocked || post.publicationOccurred || post.prepublicationRealDevicePasses || post.surfaces.length !== 7 || post.surfaces.some((surface: {state: string; observedAt: unknown; url: unknown; observations: unknown[]; screenshots: unknown[]}) => surface.state !== 'NOT_TESTED' || surface.observedAt || surface.url || surface.observations.length || surface.screenshots.length)) throw new Error('Fabricated live QA');
+const intake = read(`${root}/publication-evidence-intake.json`);
+if (!intake.publicationAuthorized || intake.publicationOccurred || intake.entries.length !== 4) throw new Error('Invalid pending publication intake');
+for (const item of intake.entries) if (item.publicUrl || item.platformContentId || item.shortcode || item.publishedAt || item.publishedOn || item.successfulPublication || item.actualUploadedVariant || item.actualUploadedDelivery || item.commentsPosted || item.mobilePresentation || item.desktopWebPresentation || item.cropUiProblems || item.screenshots.length) throw new Error('Fabricated publication evidence');
+if (publicationRegistry.list().some(record => record.id.includes('longitude-clock')) || metricSnapshotRegistry.list().some(record => JSON.stringify(record).includes('longitude-clock')) || read(`${root}/analytics-readiness.json`).metricSnapshots.length) throw new Error('Premature publication/analytics record');
+const settings = read(`${root}/upload-settings.json`);
+if (settings.settingsApplied || sha256Json(settings.youtube.categoryPolicy) !== sha256Json(youtubeCategoryPolicy) || settings.youtube.preferredCategory !== 'Science & Technology' || settings.youtube.fallbackCategory !== 'Education') throw new Error('Invalid story-specific category or invented live setting');
+const frozen = execFileSync('git', ['ls-tree', '-r', '--name-only', decision.reviewedCommit], {encoding: 'utf8'}).trim().split('\n').filter(path => path.startsWith('artifacts/') || path.startsWith('public/audio/') || path.startsWith('public/fonts/') || path.startsWith('content-intelligence/reviews/') || path.startsWith('content-intelligence/creative-directions/') || path.startsWith('src/production/plans/') || path.startsWith('src/captions/plans/') || ['AGENTS.md', 'docs/CREATIVE-DIRECTION.md', 'src/design/brand-execution-policy.json'].includes(path));
+for (const path of frozen) if (!readFileSync(path).equals(execFileSync('git', ['show', `${decision.reviewedCommit}:${path}`], {maxBuffer: 64*1024*1024}))) throw new Error('Historical/approved artifact drift: '+path);
+const manifests = parseManifests(read('artifacts/longitude-clock-publication-manifests.json'));
+for (const manifest of manifests) if (longitudeFileHash(manifest.localPath) !== manifest.identity.sha256 || readFileSync(manifest.localPath).length !== manifest.identity.bytes || manifest.publication !== 'authorized-not-published') throw new Error('Publication archive drift');
+console.log(JSON.stringify({passed: true, decisionEnteredAt: decision.enteredAt, publicationAuthorized: true, publicationOccurred: false, assistantUploadAuthorized: false, variants: variants.map(v => ({id: v.id, revision: v.revision, state: v.status, preview: v.previewStatus})), packages: 4, realDevicePasses: 0, coverDeviceTested: false, preservedFiles: frozen.length, retainedArtifacts: manifests.length, master: decision.master, nextGate: 'AHMET — CYCLE #2 MANUAL PUBLICATION'}, null, 2));

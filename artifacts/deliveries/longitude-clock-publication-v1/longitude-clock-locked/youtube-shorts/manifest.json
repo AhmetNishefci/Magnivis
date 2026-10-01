@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.youtube-shorts.r2",
+  "generatedAt": "2026-10-01T20:43:38.262Z",
+  "state": "ready-for-manual-upload",
+  "publishEligible": true,
+  "source": {
+    "platformVariant": {
+      "id": "longitude-clock.asset.time-to-position.variant.youtube-shorts",
+      "revision": 2,
+      "status": "production-ready"
+    },
+    "contentAsset": {
+      "id": "longitude-clock.asset.time-to-position",
+      "revision": 3
+    },
+    "knowledgePackage": {
+      "id": "longitude-clock",
+      "revision": 3
+    },
+    "videoSpec": {
+      "id": "longitude-clock-locked",
+      "compositionId": "Magnivis-Longitude-Clock-V2"
+    },
+    "productionChain": {
+      "productionPlan": {
+        "id": "production-plan.longitude-clock.v1",
+        "revision": 5
+      },
+      "captionPlan": {
+        "id": "caption-plan.longitude-clock.v2",
+        "revision": 2,
+        "sha256": "d34aea2666742c0e8e61f569d6ee023be369f0d7ab558cd40823ca226f45e3cb"
+      },
+      "lockedMaster": {
+        "videoSpecId": "longitude-clock-locked",
+        "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+        "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+        "relationship": "exact-master"
+      }
+    }
+  },
+  "destination": {
+    "platform": "youtube",
+    "surface": "youtube-shorts",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.youtube-shorts.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.youtube-shorts.v2",
+      "revision": 2,
+      "reviewedAt": "2026-09-30"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 47.062,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "title": "How Can a Clock Tell a Ship Where It Is?",
+    "description": "A clock carries reference time. A corrected local solar observation and a same-instant comparison reveal longitude—not a complete position.\n\nSee how two hours ahead becomes 30° east, and where Harrison’s H4 fits into the story. Other astronomical methods remained useful too.\n\nOriginal explanatory animation and H4 reconstruction; synthetic narration.\nSources: Royal Museums Greenwich — https://www.rmg.co.uk/stories/time/what-longitude and https://www.rmg.co.uk/collections/objects/rmgc-object-79142",
+    "hashtags": [
+      "#longitude",
+      "#navigation",
+      "#magnivis"
+    ],
+    "claimIds": [
+      "longitude-clock.claim.longitude",
+      "longitude-clock.claim.time-comparison",
+      "longitude-clock.claim.equation-time",
+      "longitude-clock.claim.conversion",
+      "longitude-clock.claim.east-example",
+      "longitude-clock.claim.h4-demonstration",
+      "longitude-clock.claim.h4-watch",
+      "longitude-clock.claim.complementary"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Select opening watch/ship around 0.7s; use available native frame selector or the exact extracted still if a custom-thumbnail control is available."
+    }
+  },
+  "captions": {
+    "behavior": "burned-in",
+    "designedBurnedIn": true,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "operatorGuidance": {
+    "visibility": "private-preview",
+    "manualPublication": {
+      "visibility": "public",
+      "authorization": {
+        "id": "owner-decision.longitude-clock.publication.v1",
+        "revision": 1,
+        "sha256": "323718b403604e36d344eb65dd602fbd3639f9da17aba467aade6b037b41d328"
+      }
+    },
+    "originalAudio": "preserve",
+    "aiGeneratedContentDisclosure": {
+      "recommendation": "enable",
+      "currentPolicyConfirmationRequired": true,
+      "rationale": "Transparency recommendation for realistic-sounding generic synthetic narration; animation is non-photoreal and not historical footage. Current help does not separately enumerate generic TTS; confirm live AI-use wording."
+    },
+    "commercialContentDisclosure": {
+      "recommendation": "disable",
+      "rationale": "No sponsorship, product placement or paid partnership is present."
+    },
+    "nativeCaptions": {
+      "recommendation": "disable-to-avoid-visible-duplication",
+      "rationale": "Approved burned-in captions already provide complete narration coverage. Any optional accessible track should avoid duplicate visible overlays."
+    },
+    "location": "none",
+    "link": "none",
+    "notes": [
+      "Optional first comment: The clock carries reference time; observation and calculation do the locating. What other everyday object hides an unexpected idea?",
+      "Optional YouTube Studio tags: longitude, longitude by time, reference time, John Harrison, H4, history of navigation",
+      "Preserve original audio; no music, effects, filters, auto-reframing, auto-enhancement or creative changes.",
+      "Highest-quality/HD upload when available; comments on with normal moderation; downloading/remix/duet/stitch/reuse off initially where controls exist.",
+      "No age restriction recommended; content is general educational, not child-targeted. Confirm account/audience/menu controls live.",
+      "Owner may manually publish publicly now; no further private/device preview required. This is risk acceptance, not a presentation pass. Automatic cross-posting remains off.",
+      "Follow actual live disclosure wording. Transparently disclose synthetic narration when applicable; original animation/H4 reconstruction is not realistic historical footage.",
+      "YouTube category is story-specific. Prefer Science & Technology for Longitude; Education only when materially more appropriate among live available categories. No universal Magnivis category."
+    ]
+  },
+  "review": {
+    "platformPreviewRequired": false,
+    "previewStatus": "owner-risk-accepted",
+    "publicationAuthorized": false,
+    "statement": "Variant is production-ready; manual upload still requires completion of review.md and explicit human publication approval.",
+    "approval": {
+      "approvedBy": "Ahmet Nishefci",
+      "decisionEnteredAt": "2026-10-01T20:39:20.944Z",
+      "reviewTimeBasis": "decision-entry",
+      "ownerDecision": {
+        "id": "owner-decision.longitude-clock.publication.v1",
+        "revision": 1,
+        "sha256": "323718b403604e36d344eb65dd602fbd3639f9da17aba467aade6b037b41d328"
+      },
+      "notes": "Exact prepared variant authorized for owner manual release with risk acceptance; no verified device or crop approval."
+    }
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 4072695,
+      "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 4110,
+      "sha256": "04c48552738e1332b1c88f4d136953ff616ed8c8dec5c899ccfb1f90899f0ce0"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 4073,
+      "sha256": "cbf9324d1335ada5697f254666b3b9709495e9e5b9926a7403957658b3d5ee51"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 905,
+      "sha256": "6f69c9471ade1793045919f342eaafbfd86721ba970ba59196f347320893962d"
+    }
+  ]
+}

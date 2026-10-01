@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "owner-decision.longitude-clock.publication.v1",
+  "revision": 1,
+  "owner": "Ahmet Nishefci",
+  "authority": "explicit-owner-message",
+  "decision": "PUBLICATION AUTHORIZED",
+  "enteredAt": "2026-10-01T20:39:20.944Z",
+  "timeBasis": "decision-entry",
+  "ownerSuppliedReviewTimestamp": null,
+  "reviewedCommit": "541331bdef7af2c7f188f8ec7fe65e0dc4dd478a",
+  "ownerStatement": "I explicitly accept remaining presentation uncertainty and authorize the exact locked Longitude Clock V2, four prepared variants and prepared Instagram cover for owner manual publication. No additional private/device preview is required. Promote final manual-upload readiness; preserve master, copy and creative material. Assistant must not upload, schedule or publish.",
+  "masterArtifactId": "longitude-clock.locked-master.v2",
+  "master": {
+    "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+    "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+  },
+  "selectedInstagramCover": {
+    "path": "artifacts/covers/longitude-clock-instagram-cover-v1.png",
+    "sha256": "27bc0b6d9c12d8d88db1f1977a389735efb8c965856cb664382c615130eb73f3"
+  },
+  "masterApproval": {
+    "path": "content-intelligence/reviews/longitude-clock-master-lock-v1/owner-decision.json",
+    "sha256": "360a9dd6e5ec9a021e59712905e256e94e029d692e832b30201a3020800819e9"
+  },
+  "preparedPackageIndex": {
+    "path": "content-intelligence/reviews/longitude-clock-platform-v1/delivery-index.json",
+    "sha256": "02121e342b3f7d3273bc243d0c1e85453b5f70ef3de0dd30cce6d363a56f1fe6"
+  },
+  "preparedVariants": {
+    "path": "content-intelligence/reviews/longitude-clock-platform-v1/platform-variants.json",
+    "sha256": "31ebec61689222c21ffc7ddb9b073d2f4a62f00a91db46a98c98db35d7d8fcb4"
+  },
+  "copy": {
+    "path": "content-intelligence/reviews/longitude-clock-platform-v1/platform-copy.json",
+    "sha256": "616b5287cb82b18d12ab3f58d20ce70b8f9f0dd39400689901517ac14f857b16"
+  },
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "presentationRiskAccepted": true,
+  "realDevicePrepublicationReviewCompleted": false,
+  "realDevicePassesGranted": [],
+  "coverDeviceApprovalGranted": false,
+  "metadata": {
+    "device": null,
+    "os": null,
+    "appVersion": null,
+    "testedAt": null,
+    "screenshots": [],
+    "measurements": null
+  },
+  "execution": "owner-manual-only",
+  "assistantUploadAuthorized": false,
+  "publicationOccurred": false,
+  "postPublicationReview": "pending-live-publication-evidence",
+  "acceptedRisks": [
+    "Zero Longitude prepublication real-device passes.",
+    "Known/provisional local inset models passed; this is local evidence only.",
+    "Native UI exclusion zones and caption geometry remain incompletely measured.",
+    "YouTube desktop/web presentation remains unmeasured.",
+    "Instagram profile/grid crop remains unmeasured.",
+    "Facebook Page/feed crop remains unmeasured.",
+    "Other native cover/frame/control and presentation uncertainty remains as documented."
+  ],
+  "limitations": [
+    "Release risk acceptance is not verified presentation or a universal pixel guarantee.",
+    "Instagram cover selected for publication with crop uncertainty accepted; no device approval.",
+    "Postpublication observations are the next actual surface evidence. No automatic rerender; material remediation needs an explicit owner decision.",
+    "Unknown URLs/IDs/timestamps/settings/screenshots/analytics remain unknown."
+  ]
+}

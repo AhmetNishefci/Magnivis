@@ -63,6 +63,10 @@ const sourceMasterSchema = z.object({
 
 const operatorGuidanceSchema = z.object({
   visibility: z.literal('private-preview'),
+  manualPublication: z.object({
+    visibility: z.literal('public'),
+    authorization: z.object({id: z.string().startsWith('owner-decision.'), revision: z.number().int().positive(), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict(),
+  }).strict().optional(),
   originalAudio: z.literal('preserve'),
   aiGeneratedContentDisclosure: z.object({
     recommendation: z.enum(['enable', 'disable', 'operator-confirmation-required']),
@@ -137,6 +141,10 @@ export const platformVariantSchema = z.object({
   approval: approvalSchema.optional(),
   presentationRiskAcceptance: z.object({decision: z.object({id:z.string().startsWith('owner-decision.'),revision:z.number().int().positive(),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict(),reason:z.string().min(1),realDevicePassGranted:z.literal(false)}).strict().optional(),
 }).strict().superRefine((variant, context) => {
+  const manualPublication = variant.operatorGuidance?.manualPublication;
+  if (manualPublication && (variant.status !== 'production-ready' || variant.approval?.ownerDecision?.id !== manualPublication.authorization.id || variant.approval?.ownerDecision?.revision !== manualPublication.authorization.revision || variant.approval?.ownerDecision?.sha256 !== manualPublication.authorization.sha256)) {
+    context.addIssue({code: 'custom', message: 'Public manual-upload guidance requires production readiness and matching explicit authorization'});
+  }
   const expectedPrefix = `${variant.contentAssetId}.variant.`;
   if (!variant.id.startsWith(expectedPrefix)) {
     context.addIssue({

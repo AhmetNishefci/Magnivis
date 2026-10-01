@@ -108,7 +108,7 @@ const createOperatorSettings = (variant: PlatformVariant) => {
   const guidance = variant.operatorGuidance;
   if (!guidance) return undefined;
   return `OPERATOR SETTINGS
-Visibility: ${guidance.visibility}
+Visibility: ${guidance.manualPublication ? `public (owner manual publication; authorization ${guidance.manualPublication.authorization.id})` : guidance.visibility}
 Original audio: ${guidance.originalAudio}
 AI-generated-content disclosure: ${guidance.aiGeneratedContentDisclosure.recommendation}
 AI disclosure policy check: ${guidance.aiGeneratedContentDisclosure.currentPolicyConfirmationRequired ? 'required at upload' : 'not required'}

@@ -1,3 +1,4 @@
+import {longitudePreparedDeliveryDependencies} from '../scripts/longitude-prepared-delivery';
 import {describe, expect, it} from 'vitest';
 import {cpSync, mkdtempSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
@@ -58,10 +59,10 @@ describe('Longitude exact master lock and pending platform handoffs', () => {
     const directory = mkdtempSync(join(tmpdir(), 'magnivis-longitude-delivery-test-'));
     try {
       cpSync(source, directory, {recursive: true});
-      expect(validateDeliveryPackage(directory)).toMatchObject({state: 'draft-review', publishEligible: false});
+      expect(validateDeliveryPackage(directory, longitudePreparedDeliveryDependencies)).toMatchObject({state: 'draft-review', publishEligible: false});
       const video = join(directory, 'video.mp4');
       const bytes = readFileSync(video); bytes[bytes.length-1] = bytes[bytes.length-1]! ^ 1; writeFileSync(video, bytes);
-      expect(() => validateDeliveryPackage(directory)).toThrow();
+      expect(() => validateDeliveryPackage(directory, longitudePreparedDeliveryDependencies)).toThrow();
     } finally { rmSync(directory, {recursive: true}); }
   });
 });

@@ -6,7 +6,7 @@ import {longitudeFileHash} from '../src/production/longitude-integrity';
 import {validateLongitudeLockedMaster} from '../src/production/longitude-master-integrity';
 import {longitudePlatformVariants} from '../src/platform-variants/variants/longitude-clock';
 import {coverAssetSchema, presentationOutputSchema, presentationQaSchema} from '../src/platform-variants/presentation';
-import {platformVariantRegistry} from '../src/platform-variants/registry';
+import {longitudePreparedDeliveryDependencies} from './longitude-prepared-delivery';
 import {publicationRegistry, metricSnapshotRegistry} from '../src/operations/registry';
 import {validateDeliveryPackage} from './delivery-packages';
 import {sha256Json} from '../src/content-intelligence/run-schema';
@@ -17,8 +17,8 @@ const master = validateLongitudeLockedMaster();
 const index = read(`${root}/delivery-index.json`);
 if (index.platformApproved || index.publicationAuthorized || index.packages.length !== 4) throw new Error('Invalid pending delivery scope');
 for (const entry of index.packages) {
-  const manifest = validateDeliveryPackage(entry.directory);
-  const variant = platformVariantRegistry.get(manifest.source.platformVariant.id);
+  const manifest = validateDeliveryPackage(entry.directory, longitudePreparedDeliveryDependencies);
+  const variant = longitudePreparedDeliveryDependencies.variantRegistry.get(manifest.source.platformVariant.id);
   if (manifest.state !== 'draft-review' || manifest.publishEligible || variant.status !== 'editorial-review' || variant.approval || variant.previewStatus !== 'ready-for-private-preview') throw new Error('Inferred platform/publication approval');
   if (longitudeFileHash(`${entry.directory}/video.mp4`) !== master.artifact.sha256 || longitudeFileHash(`${entry.directory}/manifest.json`) !== entry.manifestFileSha256 || sha256Json(manifest) !== entry.manifestSha256 || manifest.deliveryId !== entry.deliveryId) throw new Error('Delivery identity drift');
 }

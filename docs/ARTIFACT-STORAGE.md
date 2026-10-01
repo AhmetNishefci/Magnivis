@@ -72,3 +72,7 @@ Longitude Clock narrator revision v2 uses a separate `artifacts/longitude-clock-
 ## Longitude locked V2 and distribution review retention
 
 `artifacts/longitude-clock-platform-manifests.json` adds a same-byte `longitude-clock.locked-master.v2` identity with explicit owner-visual decision, leaving both original candidate manifest collections unchanged. It also retains the cover, decoded local QA, approval/review plans/bindings, publication checklist/intake and each strict delivery file. Four upload copies share the exact master Git blob; no re-encode or derivative approval transfer. The combined artifact registry consumes this additional collection with existing exact-byte and durable checks. Source revision is the reviewed production commit; recording time is not a fabricated file creation or owner review time. Scratch cover repeat renders remain outside Git.
+
+## Longitude release retention
+
+`artifacts/longitude-clock-publication-manifests.json` is an additional native collection for final authorized handoffs, owner decision, cover selection, checklist and pending postpublication/intake evidence. New records are `authorized-not-published`; old candidate/master/draft collections remain exact. All four new video copies reuse the existing master Git blob. No new media encode, production asset or cover image is introduced. Required release artifacts survive a Git clone; model/browser caches and operational output remain unnecessary.

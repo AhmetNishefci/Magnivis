@@ -1,4 +1,4 @@
-import {longitudePlatformVariants} from './variants/longitude-clock';
+import {longitudePublicationVariants as longitudePlatformVariants} from './variants/longitude-clock-publication';
 import {phantomTrafficPublicationVariants as phantomTrafficPlatformVariants} from './variants/phantom-traffic-publication';
 import {
   contentAssetRegistry,

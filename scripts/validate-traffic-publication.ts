@@ -1,4 +1,5 @@
 import {readFileSync} from 'node:fs';
+import {validateCanonicalNarratorAmendment} from './primary-narrator-authority-integrity';
 import {execFileSync} from 'node:child_process';
 import {validateTrafficPublicationAuthorization} from '../src/platform-variants/phantom-traffic-publication';
 import {phantomTrafficPublicationVariants as variants} from '../src/platform-variants/variants/phantom-traffic-publication';
@@ -23,7 +24,10 @@ const before=parseManifests(JSON.parse(execFileSync('git',['show',`${d.reviewedC
 for(const m of before)if(sha256Json(after.find(a=>a.artifactId===m.artifactId))!==sha256Json(m))throw new Error('Historical artifact overwritten');
 // Preserve the existing adaptive system and historical QA bytes exactly.
 for(const p of ['AGENTS.md','docs/CREATIVE-DIRECTION.md','artifacts/presentation-profiles.json','artifacts/presentation-qa.json','artifacts/cover-assets.json']){
- const original=execFileSync('git',['show',`${d.reviewedCommit}:${p}`]);if(!original.equals(readFileSync(p)))throw new Error(`Authority/evidence changed: ${p}`);
+ const original=execFileSync('git',['show',`${d.reviewedCommit}:${p}`]);if(!original.equals(readFileSync(p))){
+  if(p==='AGENTS.md'||p==='docs/CREATIVE-DIRECTION.md')validateCanonicalNarratorAmendment(p,original,readFileSync(p));
+  else throw new Error(`Authority/evidence changed: ${p}`);
+ }
 }
 const post=JSON.parse(readFileSync(`${dir}/post-publication-review.json`,'utf8'));
 if(post.releaseBlocked||post.publicationOccurred||post.surfaces.some((s:{state:string})=>s.state!=='NOT_TESTED'))throw new Error('Fabricated postpublication evidence');

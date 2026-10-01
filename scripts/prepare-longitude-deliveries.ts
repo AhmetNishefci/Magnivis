@@ -1,3 +1,4 @@
+import {longitudePreparedDeliveryDependencies} from './longitude-prepared-delivery';
 import {existsSync,mkdirSync,writeFileSync,readFileSync} from 'node:fs';
 import {generateDeliveryPackage,validateDeliveryPackage} from './delivery-packages';
 import {longitudePlatformVariants} from '../src/platform-variants/variants/longitude-clock';
@@ -7,8 +8,8 @@ import {stableJson,sha256Json} from '../src/content-intelligence/run-schema';
 const dir='content-intelligence/reviews/longitude-clock-platform-v1';
 if(existsSync(dir+'/delivery-index.json'))throw new Error('Preserve durable delivery revision; do not overwrite.');
 const master=validateLongitudeLockedMaster();const generatedAt=new Date().toISOString();mkdirSync(dir,{recursive:true});
-const packages=longitudePlatformVariants.map(v=>generateDeliveryPackage({variantId:v.id,outputRoot:'artifacts/deliveries/longitude-clock-v1',generatedAt}));
-for(const p of packages)validateDeliveryPackage(p.directory);
+const packages=longitudePlatformVariants.map(v=>generateDeliveryPackage({variantId:v.id,outputRoot:'artifacts/deliveries/longitude-clock-v1',generatedAt,dependencies:longitudePreparedDeliveryDependencies}));
+for(const p of packages)validateDeliveryPackage(p.directory,longitudePreparedDeliveryDependencies);
 writeFileSync(dir+'/platform-variants.json',stableJson(longitudePlatformVariants,2)+'\n');
 writeFileSync(dir+'/delivery-index.json',stableJson({schemaVersion:1,generatedAt,master,packages:packages.map(p=>({directory:p.directory.replace(process.cwd()+'/',''),deliveryId:p.manifest.deliveryId,platform:p.manifest.destination.platform,state:p.manifest.state,manifestSha256:sha256Json(p.manifest),manifestFileSha256:longitudeFileHash(p.directory+'/manifest.json'),uploadVideoSha256:longitudeFileHash(p.directory+'/video.mp4')})),platformApproved:false,publicationAuthorized:false},2)+'\n');
 const copy=JSON.parse(readFileSync(dir+'/platform-copy.json','utf8'));const covers=JSON.parse(readFileSync(dir+'/cover-evaluation.json','utf8'));

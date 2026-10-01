@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "checkedAt": "2026-10-01T21:04:27.985689Z",
+  "releaseValidation": {
+    "passed": true,
+    "decisionEnteredAt": "2026-10-01T20:39:20.944Z",
+    "publicationAuthorized": true,
+    "publicationOccurred": false,
+    "assistantUploadAuthorized": false,
+    "variants": [
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.youtube-shorts",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      },
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.tiktok-feed",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      },
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.instagram-reels",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      },
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.facebook-reels",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      }
+    ],
+    "packages": 4,
+    "realDevicePasses": 0,
+    "coverDeviceTested": false,
+    "preservedFiles": 605,
+    "retainedArtifacts": 32,
+    "master": {
+      "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+      "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+    },
+    "nextGate": "AHMET \u2014 CYCLE #2 MANUAL PUBLICATION"
+  },
+  "gates": [
+    "Exact publication authorization / master identity / eight verified claims and production bindings",
+    "Four production-ready risk-accepted PlatformVariants / ready-for-manual-upload package hashes",
+    "Exact original cover selection and null crop",
+    "Original copy/hashtags/keywords/first comments preserved",
+    "No applied live controls, fabricated publications/devices/metrics",
+    "Story-specific YouTube category, no brand-wide default",
+    "Primary narrator / adaptive creative/sound/caption / story-led duration policies",
+    "Frozen approved historical artifacts: 605 files",
+    "Prior Longitude draft handoffs validated against exact revision-1 dependencies",
+    "Phantom Traffic publication/closure, recovery, brain integrity",
+    "Content Intelligence fixture and open-world discovery / adaptive regression tests",
+    "Typecheck, lint, 373 tests in 35 files, pnpm check, git diff --check",
+    "Scoped changed-text secret scan and required Git artifact verification"
+  ],
+  "tests": {
+    "passed": 373,
+    "files": 35
+  },
+  "secretScan": {
+    "passed": true,
+    "textFiles": 51,
+    "flaggedPaths": [],
+    "scope": "All staged changed UTF-8 files plus environment-file paths; binary media excluded."
+  },
+  "durabilityBeforeSupplementaryReceipt": {
+    "passed": true,
+    "requiredArtifacts": 498
+  },
+  "historicalValidatorReconciliation": "Only the existing strict owner-authorized primary narrator policy amendment is accepted; arbitrary authority changes still fail. No historical record or media was rewritten.",
+  "uploaded": false,
+  "scheduled": false,
+  "published": false,
+  "realDevicePasses": 0,
+  "masterRerendered": false,
+  "mediaReencoded": false,
+  "mainMerged": false,
+  "nextGate": "AHMET \u2014 CYCLE #2 MANUAL PUBLICATION",
+  "receiptScope": "Before commit; required archive verification rerun after adding this receipt and owner handoff."
+}

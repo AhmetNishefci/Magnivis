@@ -100,6 +100,7 @@ export const deliveryManifestSchema = z.object({
   }).strict(),
   operatorGuidance: z.object({
     visibility: z.literal('private-preview'),
+    manualPublication: z.object({visibility: z.literal('public'), authorization: z.object({id: z.string().startsWith('owner-decision.'), revision: z.number().int().positive(), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict()}).strict().optional(),
     originalAudio: z.literal('preserve'),
     aiGeneratedContentDisclosure: z.object({
       recommendation: z.enum(['enable', 'disable', 'operator-confirmation-required']),
@@ -131,6 +132,10 @@ export const deliveryManifestSchema = z.object({
   }).strict(),
   artifacts: z.array(artifactSchema).min(4),
 }).strict().superRefine((manifest, context) => {
+  const manualPublication = manifest.operatorGuidance?.manualPublication;
+  if (manualPublication && (manifest.state !== 'ready-for-manual-upload' || manifest.review.approval?.ownerDecision?.id !== manualPublication.authorization.id || manifest.review.approval?.ownerDecision?.revision !== manualPublication.authorization.revision || manifest.review.approval?.ownerDecision?.sha256 !== manualPublication.authorization.sha256)) {
+    context.addIssue({code: 'custom', message: 'Public manual-upload instructions require a ready handoff and matching explicit authorization'});
+  }
   if (
     !manifest.metadata.title
     && !manifest.metadata.caption
