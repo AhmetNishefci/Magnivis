@@ -87,5 +87,9 @@
       }
     ],
     "scanner": "Python patterns for private keys, provider/GitHub/AWS credentials and credential assignments"
+  },
+  "diffHygiene": {
+    "result": "passed-after-fix",
+    "note": "Staged-file check exposed an extra EOF blank line in the new report; removed before final branch push. Final checks cover new files as well as tracked modifications."
   }
 }
