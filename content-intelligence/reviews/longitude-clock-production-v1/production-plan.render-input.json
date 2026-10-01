@@ -1,0 +1,548 @@
+{
+  "approvedScriptSha256": "1db5aee0fc71aa5f4c5e7677352e81fa4066d173c2c20040ee7a5c0ae809fbdb",
+  "assets": [
+    {
+      "id": "longitude-clock.visual.object-theatre",
+      "kind": "original-vector",
+      "path": "src/components/LongitudeObjects.tsx",
+      "provenance": {
+        "evidence": "content-intelligence/reviews/longitude-clock-production-v1/h4-reference.json",
+        "notes": "Original ship, ocean, Sun/observation cards, globe and simplified H4. No imported photograph.",
+        "origin": "Original SVG/2.5D procedural construction",
+        "rights": "Magnivis original"
+      }
+    },
+    {
+      "id": "longitude-clock.font.1",
+      "kind": "licensed-font",
+      "path": "public/fonts/longitude-clock/SourceSerif4-Regular.otf",
+      "provenance": {
+        "evidence": "public/fonts/longitude-clock/provenance.json",
+        "notes": "Bundled exact font and license; no operating-system fallback.",
+        "origin": "Adobe official repository, pinned release commit",
+        "rights": "SIL Open Font License 1.1"
+      }
+    },
+    {
+      "id": "longitude-clock.font.2",
+      "kind": "licensed-font",
+      "path": "public/fonts/longitude-clock/SourceSans3-Regular.otf",
+      "provenance": {
+        "evidence": "public/fonts/longitude-clock/provenance.json",
+        "notes": "Bundled exact font and license; no operating-system fallback.",
+        "origin": "Adobe official repository, pinned release commit",
+        "rights": "SIL Open Font License 1.1"
+      }
+    },
+    {
+      "id": "longitude-clock.font.3",
+      "kind": "licensed-font",
+      "path": "public/fonts/longitude-clock/SourceSans3-Semibold.otf",
+      "provenance": {
+        "evidence": "public/fonts/longitude-clock/provenance.json",
+        "notes": "Bundled exact font and license; no operating-system fallback.",
+        "origin": "Adobe official repository, pinned release commit",
+        "rights": "SIL Open Font License 1.1"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.1",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-1.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.2",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-2.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.3",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-3.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.4",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-4.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.5",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-5.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.6",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-6.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.7",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-7.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.8",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-8.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.9",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-9.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.audio.10",
+      "kind": "narration",
+      "path": "public/audio/longitude-clock/narration/beat-10.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock.json",
+        "notes": "No cloning or historical voice imitation.",
+        "origin": "Kokoro local CPU, bf_emma, exact locked script",
+        "rights": "Apache-2.0 model; provenance and exact weights/voice hashes retained"
+      }
+    },
+    {
+      "id": "longitude-clock.soundscape",
+      "kind": "original-audio",
+      "path": "public/audio/longitude-clock/soundscape.wav",
+      "provenance": {
+        "evidence": "src/production/narration/longitude-clock-soundscape.json",
+        "notes": "No music; ocean texture and sparse taps. Silent comparison/proof.",
+        "origin": "Seeded original synthesis",
+        "rights": "Magnivis original"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.longitude",
+        "longitude-clock.claim.time-comparison"
+      ],
+      "frames": {
+        "end": 103,
+        "start": 0
+      },
+      "id": "longitude-clock.production.beat.1",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.1",
+      "objective": "A ship and ordinary TIME indication supply the information gap; establish a known reference meridian and an unresolved ship meridian.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.longitude",
+            "longitude-clock.claim.time-comparison"
+          ],
+          "text": "REFERENCE TIME ≠ POSITION"
+        }
+      ],
+      "sceneType": "object-question",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.1"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.1",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison"
+      ],
+      "frames": {
+        "end": 213,
+        "start": 103
+      },
+      "id": "longitude-clock.production.beat.2",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.2",
+      "objective": "Separate the reference location from the ship; carried reference reading stays tied to that location rather than being reset to local time.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.time-comparison"
+          ],
+          "text": "REFERENCE TIME"
+        }
+      ],
+      "sceneType": "reference-time",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.2"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.2",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.equation-time"
+      ],
+      "frames": {
+        "end": 401,
+        "start": 213
+      },
+      "id": "longitude-clock.production.beat.3",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.3",
+      "objective": "Sun-derived APPARENT SOLAR TIME is converted to LOCAL MEAN SOLAR TIME before the example. Required factual disclosure: BOTH MEAN SOLAR TIME.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.time-comparison",
+            "longitude-clock.claim.equation-time"
+          ],
+          "text": "OBSERVATION → CORRECTION → LOCAL MEAN TIME"
+        }
+      ],
+      "sceneType": "solar-correction",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.3"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.3",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison"
+      ],
+      "frames": {
+        "end": 500,
+        "start": 401
+      },
+      "id": "longitude-clock.production.beat.4",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.4",
+      "objective": "Lock both corrected readings to ONE INSTANT; required disclosure SAME INSTANT.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.time-comparison"
+          ],
+          "text": "BOTH MEAN SOLAR TIME · SAME INSTANT"
+        }
+      ],
+      "sceneType": "same-instant",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.4"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.4",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.conversion",
+        "longitude-clock.claim.time-comparison"
+      ],
+      "frames": {
+        "end": 690,
+        "start": 500
+      },
+      "id": "longitude-clock.production.beat.5",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.5",
+      "objective": "Relate Sun/Earth meridians to a labeled15° angle per1h of consistent solar-time difference.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.conversion",
+            "longitude-clock.claim.time-comparison"
+          ],
+          "text": "15° PER HOUR"
+        }
+      ],
+      "sceneType": "rotation-link",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.5"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.5",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.east-example"
+      ],
+      "frames": {
+        "end": 840,
+        "start": 690
+      },
+      "id": "longitude-clock.production.beat.6",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.6",
+      "objective": "Show12:00 reference and14:00 local with BOTH MEAN SOLAR TIME / SAME INSTANT / ILLUSTRATIVE EXAMPLE; identify two in the afternoon as14:00.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.east-example"
+          ],
+          "text": "REFERENCE 12:00 | LOCAL 14:00"
+        }
+      ],
+      "sceneType": "paired-readings",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.6"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.6",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.east-example",
+        "longitude-clock.claim.longitude"
+      ],
+      "frames": {
+        "end": 975,
+        "start": 840
+      },
+      "id": "longitude-clock.production.beat.7",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.7",
+      "objective": "Convert +2h local-minus-reference into +30° EAST OF THE REFERENCE; required factual label30°E RELATIVE TO REFERENCE.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.east-example",
+            "longitude-clock.claim.longitude"
+          ],
+          "text": "+2 HOURS → 30° EAST"
+        }
+      ],
+      "sceneType": "east-proof",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.7"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.7",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.h4-demonstration",
+        "longitude-clock.claim.h4-watch"
+      ],
+      "frames": {
+        "end": 1127,
+        "start": 975
+      },
+      "id": "longitude-clock.production.beat.8",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.8",
+      "objective": "Identify H4 as a large LONGITUDE WATCH; associate it with John Harrison and qualified sea-going timekeeping demonstration.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.h4-demonstration",
+            "longitude-clock.claim.h4-watch"
+          ],
+          "text": "H4 · LARGE LONGITUDE WATCH"
+        }
+      ],
+      "sceneType": "h-four-watch",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.8"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.8",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.complementary"
+      ],
+      "frames": {
+        "end": 1248,
+        "start": 1127
+      },
+      "id": "longitude-clock.production.beat.9",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.9",
+      "objective": "Preserve a complementary astronomical-method indication alongside the timekeeper concept.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.complementary"
+          ],
+          "text": "ASTRONOMICAL METHODS REMAIN USEFUL"
+        }
+      ],
+      "sceneType": "complementary-methods",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.9"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.9",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    },
+    {
+      "animationIntent": "One leading transformation at a time within continuous matte workbench; stable reference/local roles. Plan-view proof uses positive east counterclockwise.",
+      "audioIntent": "Exact measured narration; original low ambience only in context, silence under correction/comparison/proof.",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.longitude"
+      ],
+      "frames": {
+        "end": 1451,
+        "start": 1248
+      },
+      "id": "longitude-clock.production.beat.10",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.10",
+      "objective": "Resolve REFERENCE TIME + LOCAL OBSERVATION/TIME + COMPARISON/CALCULATION → LONGITUDE, using the same corrected example and reference.",
+      "onScreenText": [
+        {
+          "claimIds": [
+            "longitude-clock.claim.time-comparison",
+            "longitude-clock.claim.longitude"
+          ],
+          "text": "TIME + OBSERVATION + CALCULATION → LONGITUDE"
+        }
+      ],
+      "sceneType": "causal-payoff",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.10"
+      ],
+      "sourceVisualPlanId": "longitude-clock.asset.time-to-position.visual.10",
+      "transitionIntent": "Motivated object continuity, restrained opacity transitions; no inherited scene-window or constant camera zoom."
+    }
+  ],
+  "captions": {
+    "captionPlanId": "caption-plan.longitude-clock.v2",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "78866cad5491c2cf78f47e1d35e5f86e9932f5bd5518a76a48ae68cbd934d99b",
+    "designedBurnedIn": true,
+    "file": "captions/longitude-clock.en.vtt",
+    "generatorId": "caption-generator.longitude-clock.v2",
+    "generatorVersion": 1,
+    "placement": "optional-platform-track-lower-center",
+    "source": "approved-narration-cues"
+  },
+  "contentAsset": {
+    "id": "longitude-clock.asset.time-to-position",
+    "revision": 3,
+    "sha256": "27c59fae1d80055075d770b1459b69759adcba6a69ba583f73b515dc45aeeca8"
+  },
+  "creativeDirection": {
+    "id": "creative-direction.longitude-clock.time-to-position.v1",
+    "revision": 2,
+    "sha256": "512e0104c444ad541a334f055b603102b0320d5b98d4ba93b4f304fec38374d8"
+  },
+  "excludedClaimIds": [
+    "longitude-clock.claim.latitude",
+    "longitude-clock.claim.reference-problem",
+    "longitude-clock.claim.noon",
+    "longitude-clock.claim.west-example",
+    "longitude-clock.claim.minute-error",
+    "longitude-clock.claim.second-error",
+    "longitude-clock.claim.clock-rate",
+    "longitude-clock.claim.sea-challenge",
+    "longitude-clock.claim.h1",
+    "longitude-clock.claim.h2",
+    "longitude-clock.claim.h3",
+    "longitude-clock.claim.trials",
+    "longitude-clock.claim.board",
+    "longitude-clock.claim.reward-dispute",
+    "longitude-clock.claim.parliament-payment",
+    "longitude-clock.claim.lunar-mechanism",
+    "longitude-clock.claim.almanac",
+    "longitude-clock.claim.adoption",
+    "longitude-clock.claim.nobody-knew",
+    "longitude-clock.claim.impossible",
+    "longitude-clock.claim.sole-inventor",
+    "longitude-clock.claim.instant-solution",
+    "longitude-clock.claim.direct-position",
+    "longitude-clock.claim.easy-latitude",
+    "longitude-clock.claim.instant-prize",
+    "longitude-clock.claim.all-replaced",
+    "longitude-clock.claim.same-distance",
+    "longitude-clock.claim.raw-sundial",
+    "longitude-clock.claim.exact-spin",
+    "longitude-clock.claim.motion-powered",
+    "longitude-clock.claim.humidity-specific",
+    "longitude-clock.claim.trial-error-exact"
+  ],
+  "format": {
+    "durationSeconds": 48.36666666666667,
+    "fps": 30,
+    "height": 1920,
+    "width": 1080
+  },
+  "id": "production-plan.longitude-clock.v1",
+  "knowledgePackage": {
+    "id": "longitude-clock",
+    "revision": 3,
+    "sha256": "f8c8b69a078391e47858996290ec4d3568cb516e850f61de4dd87c30abce0715"
+  },
+  "ownerDecision": {
+    "id": "owner-decision.longitude-clock.creative-production.v1",
+    "revision": 1,
+    "sha256": "950a19635b763930bbac6c8a8cebba34c284643401b2cc3c69f73ade38c78e41"
+  },
+  "reviewRequirements": [
+    "Ahmet owner master visual and listening review of exact MP4; no approval inferred.",
+    "Same instant and mean-solar-time correction must remain readable.",
+    "North-pole east sign and angular span must be correct; longitude only.",
+    "H4 must remain watch-form, original explanatory reconstruction.",
+    "All captions and phone-size labels must fit; native UI/caption geometry remains incomplete.",
+    "Independent decoded-media/audio checks and exact durable artifact hashes."
+  ],
+  "revision": 1,
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "schemaVersion": 1,
+  "status": "implementation-ready"
+}

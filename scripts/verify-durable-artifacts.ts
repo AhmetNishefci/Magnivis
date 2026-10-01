@@ -1,8 +1,7 @@
-import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
-import {parseManifests} from '../src/artifacts/schema';
+import {loadArtifactRegistry} from '../src/artifacts/registry';
 import {safePath, verifyArtifact} from '../src/artifacts/store';
-const manifests=parseManifests(JSON.parse(readFileSync('artifacts/manifests.json','utf8')));
+const manifests=loadArtifactRegistry();
 const tracked=new Set(execFileSync('git',['ls-files','-z'],{encoding:'utf8'}).split('\0'));
 const receipts=[];
 for(const m of manifests.filter(m=>m.retention==='DURABLE_REQUIRED')){

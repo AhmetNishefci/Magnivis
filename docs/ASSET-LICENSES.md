@@ -34,3 +34,18 @@
 | Phantom Traffic platform local model sheets | Exact approved-master decoded frames plus original profile/region overlays | Project-owned original work | Clearly labeled local/provisional evidence; no synthetic native screenshots or invented crop/UI geometry. |
 
 Scientific source pages are factual references, not embedded media assets. No third-party photos, video, music, sound effects, or logos are included in V1.
+
+## Longitude Clock — original production candidate v1
+
+| Asset | Origin / rights | Exact provenance |
+|---|---|---|
+| Workbench, ship/ocean, Sun/observation/correction cards, north-pole globe and meridian geometry | Original Magnivis SVG/2.5D construction; no stock or generated imagery | `src/components/LongitudeObjects.tsx`, `src/compositions/LongitudeClock.tsx`, `src/production/longitude-geometry.ts`; candidate receipt binds exact implementation hashes |
+| H4 large-watch study | Original simplified reconstruction, not museum photography or historical footage | `content-intelligence/reviews/longitude-clock-production-v1/h4-reference.json`: RMG ZAA0037 catalog and front photograph inspected; silver case, bow, enamel/Roman dial and side tab; protected photo remains temporary reference outside Git and is never embedded or traced. Detailed engraving and internal mechanism omitted. Illustrative hand setting is not a trial observation. |
+| Source Serif 4 Regular | Adobe, SIL Open Font License 1.1 | Official `source-serif` release commit `80d3f8894c09c937bebfa9011247d2e1c79fd6f4`; exact OTF and complete license bundled in `public/fonts/longitude-clock/` |
+| Source Sans 3 Regular / Semibold | Adobe, SIL Open Font License 1.1 | Official `source-sans` release commit `87b37a2daaed80fcb8e8ccb0085c4d72ddade12e`; exact OTFs and complete license bundled; font hashes in `provenance.json` |
+| Ten exact narration WAVs | Local Kokoro-82M v1.0 ONNX, Apache-2.0 model; installed kokoro-js 1.2.1; bf_emma | Exact approved words; speed 0.92. Model/voice/package hashes and generation time in narration/model provenance. No voice cloning, actor impersonation or paid API. Exact WAVs are authoritative, not a promise of byte-identical regeneration. |
+| Three audition WAVs | Same local licensed backend: bf_emma, bf_isabella, bm_george | Same approved excerpts at 0.95; audition sample hashes, technical inspection and selection rationale retained. No human listening/owner voice approval fabricated. |
+| Ocean texture and sparse tactile taps | Original deterministic noise synthesis, Magnivis | `scripts/generate-longitude-sound.mjs`, seed 2048; no music, licensed library samples or purported historical watch recording. Exact WAV/hash retained. |
+| QA frames/contact sheets | Derived from original candidate/source renderer | Exact candidate and QA hashes in production receipt; local evidence, no device/platform approval. |
+
+Font source URLs, copyright notices, licenses and file hashes are retained in the font provenance. Model cards inspected: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX and https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md. Local Whisper inspection is a separate corroboration tool, not narration, claim evidence or human listening; its cached model hashes are recorded and disposable caches are not committed.

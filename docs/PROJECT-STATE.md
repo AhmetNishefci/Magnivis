@@ -1,5 +1,15 @@
 # Project state
 
+## CONTENT CYCLE #2 — DIRECTION APPROVED, master candidate production
+
+Ahmet explicitly approved Crafted Object Theatre direction-v1 at `4c4c967f968972108f53221f6921f721246cf0db` and authorized planning/implementation of one owner-review master candidate. [Creative production decision](../content-intelligence/creative-directions/longitude-clock-time-to-position-approved-v2/owner-decision.json) binds the exact proposal revision/hash and approved editorial dependencies with actual labeled decision-entry time. Approved direction revision 2 is `ready-for-production-planning`; original proposal and research/claim/editorial snapshots remain immutable. Eight verified claims and the exact 89-word narration/VisualPlan/comprehension contract remain authoritative.
+
+Original 2.5D workbench construction uses pinned Source Serif 4 and Source Sans 3, a supported bf_emma voice selected after three generated technical auditions, original quiet ocean/tactile audio and no music. Twenty-four Adaptive V2 caption phrases preserve exact narration. Ten measured narration WAVs total 42.2 seconds; the timeline is 1451 frames / 48.3667 seconds. The numerical proof retains simultaneous 12:00 reference / 14:00 local mean-solar readings, +2 hours and the north-pole counterclockwise 30° east angle. H4 is an original simplified large-watch reconstruction, not museum photography or a later boxed chronometer.
+
+[Production owner handoff](../content-intelligence/reviews/longitude-clock-production-v1/owner-review.md) and candidate receipt identify the exact retained master and bounded QA evidence. Caption/production master review remains required; no visualApproval, PlatformVariant, final cover, delivery, upload or publication exists. Known-inset local composition is separate from incomplete native UI/caption/device geometry. Technical ASR is corroboration, not fabricated human listening; subjective voice/mix and phrase timing are part of owner master review.
+
+**Exact next human gate: AHMET — CYCLE #2 OWNER MASTER VISUAL REVIEW.** Earlier sections remain milestone history, superseded only in the explicitly approved direction/production scope.
+
 ## CONTENT CYCLE #2 — EDITORIAL APPROVED, CreativeDirection proposal awaits owner
 
 Ahmet explicitly approved exact final editorial commit `d22145a86d791730c0a2e5dd03558a8d968473b4`, its 89-word narration, ten-beat conceptual VisualPlan, comprehension contract, qualifications/exclusions and eight queued statement hashes. [Decision](../content-intelligence/reviews/longitude-clock-approved-v3/owner-decision.json) records actual decision-entry time, not an invented owner review timestamp. New KnowledgePackage and ContentAsset revision 3 are `approved`; eight selected claims are `verified`, and all 32 reserves/exclusions/uncertainties retain their exact research state. Original research/finalization snapshots remain immutable.

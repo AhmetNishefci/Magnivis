@@ -1,0 +1,11 @@
+import console from 'node:console';
+import {createHash} from 'node:crypto';
+import {writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {execFileSync} from 'node:child_process';
+import {createLocalSpeechInspector} from '../src/ai/providers/kokoro-local.mjs';
+const require=createRequire(import.meta.url);const ffmpeg=require('ffmpeg-static');const inspect=await createLocalSpeechInspector();
+const raw=execFileSync(ffmpeg,['-v','error','-i','output/longitude-clock-narrated.mp4','-vn','-ar','16000','-ac','1','-f','f32le','-'],{maxBuffer:64*1024*1024});
+const signal=new Float32Array(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength));
+const result=await inspect(signal,{chunk_length_s:20,stride_length_s:3,return_timestamps:true});
+writeFileSync('qa/longitude-clock-narrated/mix-inspection.json',JSON.stringify({checkedAt:new Date().toISOString(),method:'Independent local Whisper recognition of decoded final AAC mix, not human listening. Numerical orthography and homophone differences are preserved as limitations.',model:'onnx-community/whisper-tiny.en',decodedPcmSha256:createHash('sha256').update(raw).digest('hex'),recognizedText:result.text,segments:result.chunks,ownerListeningStillRequired:true,limitations:['Chunked ASR may repeat an overlapping numerical phrase; isolated cue recognition and exact sequence metadata are separately retained.','sea/C is a homophone recognition difference.','Human listening and perceived voice/mix quality remain owner-review.']},null,2)+'\n');console.log(result.text);

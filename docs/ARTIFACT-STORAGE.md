@@ -62,3 +62,7 @@ The two independent payoff still renders demonstrate same-frame determinism only
 ## Locked master and presentation evidence
 
 Master visual approval may add a new logical `owner-visual` identity for the same candidate path/blob; the original candidate manifest remains unchanged. This is explicit same-byte promotion, not historical approval transfer or silent replacement. CoverAsset PNGs use artifactType `cover-image`, independent review state and exact hashes. Phantom Traffic adds one cover candidate and seven bounded local sheet/report pairs as durable-required review evidence; no master copy or video derivative.
+
+## Content-scoped original production collections
+
+Longitude Clock preserves the exact historical `artifacts/manifests.json` file. `artifacts/longitude-clock-manifests.json` uses the same strict native ArtifactManifest schema for new original-production candidate/audio/QA records. `src/artifacts/registry.ts` combines these explicit collections and rejects identity collisions. Artifact status/verify/restore and durable verification consume the combined registry while the historical recovery decision validates its original registry separately. No historical identity or gate is changed. Exact original candidate, auditions, narration, sound, fonts/source and bounded QA evidence are committed; model/browser caches and superseded scratch encodes stay ignored.

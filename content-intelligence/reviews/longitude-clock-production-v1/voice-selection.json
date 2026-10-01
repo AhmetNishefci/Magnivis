@@ -1,0 +1,30 @@
+{
+  "alternatives": [
+    "bf_isabella",
+    "bm_george"
+  ],
+  "decisionEnteredAt": "2026-10-01T17:26:34.872958+00:00",
+  "dimensions": {
+    "curiosity": "Opening question recovered; subjective inflection requires owner listening.",
+    "historicalFit": "Neutral British-English explanatory candidate, no theatrical period impersonation.",
+    "intelligibility": "Independent ASR corroborates sampled wording, not proof of all future cues.",
+    "naturalness": "No ASR word losses in sampled excerpt; perceived naturalness remains owner-review.",
+    "numericalDelivery": "Reference/local readings and eastward result recovered from all three.",
+    "pacing": "Emma 18.10s, Isabella 18.05s, George 19.85s at 0.95; slow selected full script to 0.92.",
+    "payoff": "Final observation/calculation/longitude wording recovered.",
+    "precision": "Correction, 12/2, two hours ahead, thirty degrees east and longitude recovered for all.",
+    "warmth": "Creative target; no fabricated human rating."
+  },
+  "inspectionPath": "content-intelligence/reviews/longitude-clock-production-v1/audition-inspection.json",
+  "limitations": [
+    "No owner-supplied listening evaluation.",
+    "Tiny ASR punctuation is model inference; it is a weak cadence signal, not acoustic ground truth.",
+    "Full-script pronunciation and sound mix still require decoded-media inspection and owner listening."
+  ],
+  "method": "Generated matched excerpts; independent local Whisper segment ASR and measured duration/level checks. No human audition or owner voice approval is asserted.",
+  "rationale": "All three recovered the correction, numerical sign/direction and final causal roles. bf_emma yielded more explicit sentence boundaries in the independent transcription; bm_george takes 1.75 seconds longer on the same excerpt, while Isabella merges its numerical statements into one transcription clause. Choose Emma for compact phrase separation. Warm, inquisitive delivery remains an editorial target, not a measured emotional rating. Slow full generation to 0.92 for the explanation.",
+  "samplesPath": "content-intelligence/reviews/longitude-clock-production-v1/audition-samples.json",
+  "schemaVersion": 1,
+  "selectedSpeed": 0.92,
+  "selectedVoice": "bf_emma"
+}

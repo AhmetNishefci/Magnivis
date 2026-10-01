@@ -1,12 +1,14 @@
 import {validateRecoveryDecision} from '../src/artifacts/recovery';
 import {readFileSync} from 'node:fs';
 import {parseManifests} from '../src/artifacts/schema';
+import {loadArtifactRegistry} from '../src/artifacts/registry';
 import {artifactDisposition, LocalArtifactStore, restoreArtifact, safePath, verifyArtifact, type ArtifactStore} from '../src/artifacts/store';
 const command = process.argv[2];
 if (!['status','verify','restore'].includes(command ?? '')) throw new Error('Use status, verify or restore; no implicit regeneration');
 const filter = process.argv[3];
-const registry = parseManifests(JSON.parse(readFileSync('artifacts/manifests.json','utf8')));
-validateRecoveryDecision(JSON.parse(readFileSync('artifacts/recovery-decision.json','utf8')),registry);
+const legacyRegistry = parseManifests(JSON.parse(readFileSync('artifacts/manifests.json','utf8')));
+validateRecoveryDecision(JSON.parse(readFileSync('artifacts/recovery-decision.json','utf8')),legacyRegistry);
+const registry = loadArtifactRegistry();
 const manifests = registry.filter(m => !filter || m.artifactId === filter);
 if (!manifests.length) throw new Error('Unknown artifact selection');
 const stores = new Map<string, ArtifactStore>([['git',new LocalArtifactStore(process.cwd(),'git')]]);

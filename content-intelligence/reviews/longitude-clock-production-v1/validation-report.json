@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-10-01T18:11:26.940594+00:00",
+  "passed": true,
+  "checks": {
+    "pnpmCheck": {
+      "typecheck": "passed",
+      "lint": "passed",
+      "tests": 350,
+      "testFiles": 30
+    },
+    "research": "passed",
+    "editorialFinalization": "passed",
+    "ownerEditorialAndEightClaims": "passed",
+    "ownerCreativeAndProductionBindings": "passed",
+    "contentIntelligenceFixture": "passed",
+    "openWorldDiscovery": {
+      "passed": true,
+      "candidates": 36
+    },
+    "adaptiveHistoricalPreservation": {
+      "unchangedFiles": 292,
+      "exactClosureCheckpoints": 1
+    },
+    "cycle1Closure": "passed",
+    "brainIntegrity": "passed",
+    "productionAndCaptionNativeSchemas": "passed",
+    "fontAndAudioExactHashes": "passed",
+    "fullMediaDecode": "passed",
+    "decodedQaFrames": 56,
+    "typographyLoadedFontsAndBounds": "passed",
+    "platformKnownInsetBounds": "passed",
+    "platformUnknownGeometry": "incomplete-unmeasured",
+    "sameFrameDeterminism": "passed",
+    "trackedDurableArtifacts": 306,
+    "scopedSecretScan": {
+      "passed": true,
+      "textFiles": 59
+    }
+  },
+  "limitations": [
+    "Owner master approval absent.",
+    "No human listening or real-device QA fabricated.",
+    "Caption phrase timing is authored from measured audio, not forced-aligned.",
+    "Full future MP4/TTS regeneration is not guaranteed byte-identical."
+  ],
+  "masterSha256": "71dba2d65c2e86fe00cc11683c8aeaf668a9acd10e877e744be3380bde53b981"
+}

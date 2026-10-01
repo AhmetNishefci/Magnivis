@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-01T18:03:19.524Z",
+  "method": "Independent local Whisper recognition of decoded final AAC mix, not human listening. Numerical orthography and homophone differences are preserved as limitations.",
+  "model": "onnx-community/whisper-tiny.en",
+  "decodedPcmSha256": "5a374374d8bfa5a4c47fb9b58c82ea45bc0798f5ceed0f71272c02d187470ec7",
+  "recognizedText": " How can a clock tell a ship where it is? By keeping the time at a known reference point, sailors use the sun to find local time, corrected to match the clock's timekeeping. Compare them at the same moment. Earth's turning links that time difference to longitude, 15 degrees per hour. 12 at the reference, 2 in the afternoon locally. 2 hours ahead, 30 degrees east. Harrison's H4 2 hours ahead, 30 degrees east Harrison's H4 helped demonstrate accurate timekeeping at C. Other astronomical methods remained useful too. The clock carries time, observation and calculation reveal longitude.",
+  "segments": [
+    {
+      "timestamp": [
+        0,
+        3.52
+      ],
+      "text": " How can a clock tell a ship where it is?"
+    },
+    {
+      "timestamp": [
+        3.52,
+        7.08
+      ],
+      "text": " By keeping the time at a known reference point,"
+    },
+    {
+      "timestamp": [
+        7.08,
+        9.96
+      ],
+      "text": " sailors use the sun to find local time,"
+    },
+    {
+      "timestamp": [
+        9.96,
+        13.44
+      ],
+      "text": " corrected to match the clock's timekeeping."
+    },
+    {
+      "timestamp": [
+        13.44,
+        16.76
+      ],
+      "text": " Compare them at the same moment."
+    },
+    {
+      "timestamp": [
+        16.76,
+        21
+      ],
+      "text": " Earth's turning links that time difference to longitude, 15"
+    },
+    {
+      "timestamp": [
+        21,
+        30.18
+      ],
+      "text": " degrees per hour. 12 at the reference, 2 in the afternoon locally. 2 hours ahead, 30 degrees"
+    },
+    {
+      "timestamp": [
+        30.18,
+        32.76
+      ],
+      "text": " east. Harrison's H4 2 hours ahead, 30 degrees east"
+    },
+    {
+      "timestamp": [
+        32.76,
+        37.8
+      ],
+      "text": " Harrison's H4 helped demonstrate accurate timekeeping at C."
+    },
+    {
+      "timestamp": [
+        37.8,
+        41.84
+      ],
+      "text": " Other astronomical methods remained useful too."
+    },
+    {
+      "timestamp": [
+        41.84,
+        46.44
+      ],
+      "text": " The clock carries time, observation and calculation reveal longitude."
+    }
+  ],
+  "ownerListeningStillRequired": true,
+  "limitations": [
+    "Chunked ASR may repeat an overlapping numerical phrase; isolated cue recognition and exact sequence metadata are separately retained.",
+    "sea/C is a homophone recognition difference.",
+    "Human listening and perceived voice/mix quality remain owner-review."
+  ]
+}
