@@ -1,0 +1,240 @@
+{
+  "assetId": "longitude-clock.asset.time-to-position",
+  "assetRevision": 2,
+  "ownerVerificationGranted": false,
+  "packageId": "longitude-clock",
+  "packageRevision": 2,
+  "reservePolicy": "All32nonselected statements retain exact research status:18supported/qualified,12excluded unverified,2uncertain. Research acceptance does not promote any claim. The canonical review still accounts for all40statements; this queue highlights exactly8for final narration/VisualPlan verification.",
+  "reviewId": "claim-review.longitude-clock.v2",
+  "schemaVersion": 1,
+  "selectedClaims": [
+    {
+      "caveats": [
+        "Longitude alone does not give a complete geographic position."
+      ],
+      "claimId": "longitude-clock.claim.longitude",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "A reference meridian defines the angular origin; Greenwich was not universally used historically.",
+          "sourceId": "source.longitude.definition"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "Longitude is an angular east–west position relative to a chosen reference meridian.",
+      "statementSha256": "ddd02241f3fb8c3d4bac1c90b3ae80b25b478cf6cdaa475298aef40c02dc1e1f",
+      "usedByScriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.1",
+        "longitude-clock.asset.time-to-position.script.7",
+        "longitude-clock.asset.time-to-position.script.10"
+      ],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.1",
+        "longitude-clock.asset.time-to-position.visual.7",
+        "longitude-clock.asset.time-to-position.visual.10"
+      ]
+    },
+    {
+      "caveats": [
+        "Correct carried-clock error and rate; resolve dates and12-hour/24-hour ambiguities."
+      ],
+      "claimId": "longitude-clock.claim.time-comparison",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Same temporal basis is essential; local mean time is Sun-derived apparent time corrected by the equation of time.",
+          "sourceId": "source.longitude.bowditch-time"
+        },
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "Same temporal basis is essential; local mean time is Sun-derived apparent time corrected by the equation of time.",
+          "sourceId": "source.longitude.equation-time"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "Comparing simultaneous local mean solar time with mean solar time at a known reference meridian yields the longitude difference.",
+      "statementSha256": "ebd2344dbfa8a2618eea1f6263f58cc9251fa289fa4a59d3e8bd14e7d5072fe9",
+      "usedByScriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.1",
+        "longitude-clock.asset.time-to-position.script.2",
+        "longitude-clock.asset.time-to-position.script.3",
+        "longitude-clock.asset.time-to-position.script.4",
+        "longitude-clock.asset.time-to-position.script.5",
+        "longitude-clock.asset.time-to-position.script.10"
+      ],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.1",
+        "longitude-clock.asset.time-to-position.visual.2",
+        "longitude-clock.asset.time-to-position.visual.3",
+        "longitude-clock.asset.time-to-position.visual.4",
+        "longitude-clock.asset.time-to-position.visual.5",
+        "longitude-clock.asset.time-to-position.visual.10"
+      ]
+    },
+    {
+      "caveats": [
+        "The difference changes through the year; civil zone time is a different convention."
+      ],
+      "claimId": "longitude-clock.claim.equation-time",
+      "evidence": [
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "Use E = LAT − LMT, therefore LMT = LAT − E.",
+          "sourceId": "source.longitude.equation-time"
+        },
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Use E = LAT − LMT, therefore LMT = LAT − E.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "Apparent solar time differs from mean solar time; the equation of time converts between them.",
+      "statementSha256": "5049566cab4133f65d891734679fa74e3b6826c1bf61869c47ba5e65b38b6ab5",
+      "usedByScriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.3"
+      ],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.3"
+      ]
+    },
+    {
+      "caveats": [
+        "Do not mix apparent and mean time; actual solar-day length and rotation rate are not uniformly24SIhours."
+      ],
+      "claimId": "longitude-clock.claim.conversion",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "360°/24h is exact angular/time-unit conversion on a consistent solar-time basis, not exact inertial Earth rotation in24SIhours.",
+          "sourceId": "source.longitude.bowditch-time"
+        },
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "360°/24h is exact angular/time-unit conversion on a consistent solar-time basis, not exact inertial Earth rotation in24SIhours.",
+          "sourceId": "source.longitude.equation-time"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "One hour of a simultaneous solar-time difference corresponds to fifteen degrees of longitude difference.",
+      "statementSha256": "d299f422983b64c7fb920e43f178995e2a130a9c8b18e1366a3bbed807442ac3",
+      "usedByScriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.5"
+      ],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.5"
+      ]
+    },
+    {
+      "caveats": [
+        "Both readings simultaneous, same mean-solar basis and day branch; reference need not be Greenwich."
+      ],
+      "claimId": "longitude-clock.claim.east-example",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Derived: signed east-positive Δλ=15°×(14−12)=+30°; this is an illustrative calculation, not a historical voyage.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "If local mean solar time is 14:00 when reference mean solar time is 12:00, the observer is 30° east of the reference meridian.",
+      "statementSha256": "a139c1fba46cc0da53147964243c71d007803f69cccf7ede83723b6adf8ba2e1",
+      "usedByScriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.6",
+        "longitude-clock.asset.time-to-position.script.7"
+      ],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.6",
+        "longitude-clock.asset.time-to-position.visual.7"
+      ]
+    },
+    {
+      "caveats": [
+        "Chronometer can be modern umbrella language; prefer H4 or longitude watch, not an unsupported first-ever terminology assertion."
+      ],
+      "claimId": "longitude-clock.claim.h4-watch",
+      "evidence": [
+        {
+          "locator": "Collection description and Object details, ZAA0037",
+          "notes": "Object identity: ZAA0037; museum calls it a longitude watch and marine timekeeper.",
+          "sourceId": "source.longitude.h4"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "H 4 was a large longitude watch, completed in 1759, rather than the later familiar boxed marine chronometer.",
+      "statementSha256": "cb60965361fec00dc7860dbf886902a569f4e29c3728da6e6127f29a7b85cde4",
+      "usedByScriptSegmentIds": [],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.8"
+      ]
+    },
+    {
+      "caveats": [
+        "Harrison neither invented longitude nor accomplished ocean navigation alone."
+      ],
+      "claimId": "longitude-clock.claim.h4-demonstration",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "Successful sea trials established feasibility, with navigational observations and evaluation, not a self-displaying position device.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Collection description and Object details, ZAA0037",
+          "notes": "Successful sea trials established feasibility, with navigational observations and evaluation, not a self-displaying position device.",
+          "sourceId": "source.longitude.h4"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Successful sea trials established feasibility, with navigational observations and evaluation, not a self-displaying position device.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "John Harrison’s H 4 helped demonstrate that a watch could provide sufficiently accurate time for longitude at sea.",
+      "statementSha256": "2f2c7fd9eb4379a3881b0b002902cfc307cbbb14b3db2c0514a81d83d9cb1a29",
+      "usedByScriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.8"
+      ],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.8"
+      ]
+    },
+    {
+      "caveats": [
+        "Not a claim that clocks require a lunar-distance observation for every fix."
+      ],
+      "claimId": "longitude-clock.claim.complementary",
+      "evidence": [
+        {
+          "locator": "Maskelyne and the Nautical Almanac; Bringing it all together and making it work",
+          "notes": "Lunar distances, tables, observing instruments and dead reckoning persisted; methods could check each other.",
+          "sourceId": "source.longitude.lunar"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Lunar distances, tables, observing instruments and dead reckoning persisted; methods could check each other.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "ownerDecisionRequired": true,
+      "repositoryStatus": "supported",
+      "statement": "Astronomical longitude methods remained useful alongside marine timekeepers.",
+      "statementSha256": "d785bd1a4450a8c5c423cf4a03526b07dd0aa1efb2e672eecfade70fec061762",
+      "usedByScriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.9"
+      ],
+      "usedByVisualIds": [
+        "longitude-clock.asset.time-to-position.visual.9"
+      ]
+    }
+  ]
+}

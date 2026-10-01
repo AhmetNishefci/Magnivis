@@ -1,6 +1,6 @@
 # Roadmap
 
-Current new-content gate: **AHMET — CYCLE #2 EDITORIAL REVIEW**. Ahmet selected the longitude-clock candidate and authorized bounded research/editorial proposal; the review-state bundle is complete. See PROJECT-STATE.md and `content-intelligence/reviews/longitude-clock-v1/owner-review.md`. No claim/editorial approval or production is inferred. Earlier discovery/closure sequencing below remains milestone history.
+Current new-content gate: **AHMET — CYCLE #2 FINAL EDITORIAL APPROVAL**. The accepted Longitude Clock evidence basis now supports an exact 89-word narration proposal and refined conceptual VisualPlan; eight claims await owner verification. See PROJECT-STATE.md and `content-intelligence/reviews/longitude-clock-finalization-v2/owner-review.md`. No narration/visual approval, CreativeDirection or production is inferred. Earlier milestones below remain history.
 
 ## Cycle #1 completion checkpoint — 2026-10-01
 

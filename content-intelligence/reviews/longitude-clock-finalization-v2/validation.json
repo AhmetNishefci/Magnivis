@@ -1,0 +1,82 @@
+{
+  "checks": [
+    {
+      "claimsPreserved": 40,
+      "command": "node --import tsx scripts/validate-longitude-finalization.ts",
+      "name": "Final claim/evidence, accepted research bindings, selected owner queue and exact editorial hashes",
+      "result": "passed",
+      "selectedClaimsAwaitingVerification": 8,
+      "verifiedClaims": 0,
+      "wordCount": 89
+    },
+    {
+      "command": "node --import tsx scripts/validate-longitude-research.ts",
+      "name": "Original research package/ledger/inspection/artifact integrity",
+      "result": "passed"
+    },
+    {
+      "command": "node --import tsx scripts/content-intelligence.ts validate wood-frog-freeze --output content-intelligence/runs/wood-frog-freeze-fixture-v1",
+      "name": "Content Intelligence offline fixture",
+      "result": "passed"
+    },
+    {
+      "command": "node --import tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-2-2026-10-01/discovery.json; regression tests via pnpm check",
+      "historicalDiscoverySelection": "null, immutable discovery snapshot",
+      "name": "Open-world discovery and regression",
+      "result": "passed"
+    },
+    {
+      "command": "node --import tsx scripts/validate-adaptive-creative-system.ts",
+      "exactClosureCheckpoints": 1,
+      "historicalFilesUnchanged": 292,
+      "name": "Adaptive Creative Direction and historical preservation",
+      "newProductionStarted": false,
+      "result": "passed"
+    },
+    {
+      "command": "node --import tsx scripts/validate-traffic-closure.ts",
+      "name": "Cycle1 preservation",
+      "result": "passed"
+    },
+    {
+      "agentRoutes": 31,
+      "command": "node --import tsx scripts/recovery-brain.ts",
+      "documents": 23,
+      "name": "Brain integrity",
+      "result": "passed"
+    },
+    {
+      "command": "pnpm check",
+      "name": "Typecheck, lint, complete test suite and pnpm check",
+      "result": "passed",
+      "runtime": "Node22.23.3; pnpm10.17.1",
+      "testFiles": 28,
+      "tests": 340
+    },
+    {
+      "command": "git diff --exit-code c957692f87d376d5cfef1377042df2314d4eb638 -- src artifacts public recovery-audit system-audits content-intelligence/discovery content-intelligence/reviews/longitude-clock-v1 content-intelligence/reviews/phantom-traffic-v1 docs/CREATIVE-DIRECTION.md",
+      "name": "Exact research/discovery/historical production comparison",
+      "result": "passed"
+    },
+    {
+      "command": "git diff --check",
+      "name": "Whitespace",
+      "result": "passed"
+    },
+    {
+      "files": 17,
+      "findings": 0,
+      "method": "Scoped local pattern scan, not a full dedicated secret scanner",
+      "name": "Scoped secret scan",
+      "result": "passed"
+    }
+  ],
+  "humanClaimVerificationGranted": false,
+  "humanEditorialApprovalGranted": false,
+  "manifestConvention": "This record is hash-bound; final validator rechecks after recording results. Remote HEAD/clean-tree verification is performed after commit/push, not invented in this pre-commit record.",
+  "productionStarted": false,
+  "recordedAt": "2026-10-01T16:36:59.671Z",
+  "schemaVersion": 1,
+  "status": "passed",
+  "stopGate": "AHMET — CYCLE #2 FINAL EDITORIAL APPROVAL"
+}

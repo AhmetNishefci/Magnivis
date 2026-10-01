@@ -1,0 +1,32 @@
+{
+  "earthRotationWording": "Earth’s turning links that time difference to longitude: fifteen degrees per hour. This is time-difference-to-angle wording, not a claim of exactly360°in24SIhours relative to stars.",
+  "options": [
+    {
+      "assessment": "Retained preferred hook. Concrete object, ship and position contradiction; answered immediately by reference time.",
+      "text": "How can a clock tell a ship where it is?"
+    },
+    {
+      "assessment": "More explicit scope, but longitude is less familiar at the first instant. No material improvement over the preferred hook.",
+      "text": "How does a clock help a ship find its longitude?"
+    },
+    {
+      "assessment": "Accurate reference-time mystery, but loses the immediate physical clock/position contradiction.",
+      "text": "Why did ships need to know the time somewhere else?"
+    }
+  ],
+  "ownerApproved": false,
+  "recommendedHookId": "longitude-clock.hook.question",
+  "schemaVersion": 1,
+  "solarCorrectionResolution": {
+    "alternativesRejected": [
+      "Delete correction entirely: materially false if raw apparent solar time meets mean-clock time.",
+      "Name the equation of time in narration: accurate but unnecessary terminology for this payoff.",
+      "Use only a visual footnote for correction: would leave the spoken mechanism more ambiguous."
+    ],
+    "finalSentence": "Sailors use the Sun to find local time, corrected to match the clock’s timekeeping.",
+    "mandatoryVisualDisclosure": "BOTH MEAN SOLAR TIME",
+    "previousSentence": "The Sun’s uneven timekeeping needs a correction.",
+    "referenceReadingQualification": "Corrected for known clock error; simultaneous readings and date/day branch resolved.",
+    "why": "Correction is attached directly to the Sun-derived reading, avoiding a detached technical digression. match the clock’s timekeeping means convert apparent solar time to mean solar time, not synchronize or reset the reference clock."
+  }
+}

@@ -1,5 +1,15 @@
 # Project state
 
+## CONTENT CYCLE #2 — EDITORIAL FINALIZATION COMPLETE, final owner approval pending
+
+Ahmet accepted the Longitude Clock research direction and evidence basis at research milestone `c957692f87d376d5cfef1377042df2314d4eb638`, while explicitly leaving claim verification, narration and conceptual VisualPlan approval pending. [Final editorial handoff](../content-intelligence/reviews/longitude-clock-finalization-v2/owner-review.md) preserves the original forty exact statements/evidence/states and eleven inspected sources. Revision-2 package changes only its revision field; original discovery and research bytes remain immutable.
+
+The exact 89-word narration retains the preferred clock/ship question, explicit simultaneous comparison, corrected solar-time basis, 12:00/14:00 → two hours ahead → 30° east, a brief H4 contribution and complementary-method context. Speech estimate is 35.6–38.1 seconds; with explanatory pauses, approximately 41–47 seconds total, not measured audio. Ten conceptual beats describe comprehension, factual references, prohibitions, continuity and disclosures. Eight selected claims await Ahmet's verification with exact statement hashes; zero claims are verified. Thirty-two reserve/excluded/uncertain claims retain their original research state.
+
+KnowledgePackage revision 2 remains `review`; ContentAsset revision 2 remains `editorial-review`; ClaimReviewBundle is `ready-for-owner-decision`. No CreativeDirection, art/voice choice, audio, CaptionPlan, images/assets, ProductionPlan, rendering, platform variant, delivery, upload or publication is authorized or begun. Earlier sections below are milestone history, superseded only in the current editorial gate.
+
+**Exact next human gate: AHMET — CYCLE #2 FINAL EDITORIAL APPROVAL.**
+
 ## CONTENT CYCLE #2 — BOUNDED RESEARCH COMPLETE, editorial review pending
 
 Ahmet selected `topic.longitude-clock` (“How can a clock tell you where you are?”) for bounded research only, continuing from discovery commit `c122a3a158ffa33dd31463839e7654229acfb441`. [Owner editorial handoff](../content-intelligence/reviews/longitude-clock-v1/owner-review.md) preserves fresh source inspections, forty statement-level decisions, six hook proposals, exact unapproved narration and a conceptual VisualPlan. The separate selection record binds the immutable discovery bundle and revision-2 `researching` candidate; the original null discovery selection remains historical evidence.
