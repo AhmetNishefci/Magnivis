@@ -1,5 +1,11 @@
 # Content Intelligence V1
 
+## Cycle #3 open-world discovery — owner selection pending
+
+[Cycle #3 handoff](../content-intelligence/discovery/cycle-3-2026-10-01/owner-review.md) records 32 fresh external queries, limited access reconnaissance, 34 proposals (33 distinct ideas after a disclosed whale-earwax overlap), ten existing-schema evaluations and five finalists. Manual session-assisted proposals are not a paid provider workflow/envelope, research workspace, evidence verification or owner decision. Open-world eligibility and the live-stage source/claim pause remain intact. Recommendations of research are conditional on owner topic selection and explicit bounded-research authority.
+
+Validate with `node --import tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-3-2026-10-01/discovery.json` and `node --import tsx scripts/validate-cycle-3.ts`. The latter checks scheduling bindings, owner-selection null state, complete handoff coverage, unchanged historical files and current cadence/window constraints. Existing unseen-domain, selection-injection and anti-whitelist regressions remain applicable. Creative conveniences have zero ranking advantage; no fixed duration or production style is chosen. **Next gate: AHMET — CONTENT CYCLE #3 TOPIC SELECTION.**
+
 Content Intelligence V1 is the implemented upstream workflow between a discovered idea and Magnivis's existing KnowledgePackage/ContentAsset system. It assists editorial work without granting a model authority to verify facts, approve content, or publish anything.
 
 ## Implemented boundary

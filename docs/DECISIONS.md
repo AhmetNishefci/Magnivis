@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-10-01 — Longitude scheduling report, adaptable one-per-day target, Cycle #3 discovery
+
+**Owner authority:** Ahmet Nishefci’s explicit current instruction. Record his manual scheduling of the exact authorized Longitude Clock packages on all four intended platforms for 2026-10-02 at 20:00 Kosovo local time (Europe/Pristina supplied label) as OWNER-REPORTED SCHEDULING EVIDENCE only. Preserve locked media/copy/manifest bytes; no completed publication records or invented live evidence.
+
+**Operating decision:** Approximately one excellent unique short-form video/day replaces two/day as active near-term target. Target, not quota; research/evidence/rights/human gates/CreativeDirection quality win. No template reuse, story-length manipulation or filler to meet cadence. Production/backlog and publication cadence are separate. 20:00 remains a provisional test window; adequate performance evidence may adapt both frequency and time. No immutable daily rule or preselected eventual two/day destination; long-form roadmap preserved.
+
+**Discovery scope:** Cycle #3 explicitly authorized, discover first/classify second. Fresh diverse candidates, qualitative tradeoffs and advisory recommendation only. No owner selection, bounded research, downstream production, main merge, external action or Cycle #4. Stop at **AHMET — CONTENT CYCLE #3 TOPIC SELECTION**. [Durable handoff](../content-intelligence/discovery/cycle-3-2026-10-01/owner-review.md) and [scheduling record](../content-intelligence/operations/longitude-clock-scheduling-v1/owner-report.json) carry the evidence and limits.
+
 ## 2026-10-01 — Adaptive Creative Direction V1 for future content
 
 **Decision:** Magnivis is a brand, not a video template. Keep quality/identity/evidence constants while choosing execution per asset with rationale. Add a file-backed asset companion and future ProductionPlan hash binding, convergence review, provider-neutral CI proposal workflow and adaptive caption authoring boundary. Preserve exact historical implementations/approvals/media.

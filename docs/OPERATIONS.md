@@ -1,5 +1,15 @@
 # Platform operations and measurement
 
+## Current scheduling and publishing cadence — 2026-10-01
+
+**OWNER-REPORTED SCHEDULING EVIDENCE:** Ahmet manually scheduled Longitude Clock’s exact authorized packages on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels for **2026-10-02 at 20:00 Kosovo local time (Europe/Pristina as supplied)**. [Append-only scheduling report](../content-intelligence/operations/longitude-clock-scheduling-v1/owner-report.json) binds the unchanged final release record and each delivery manifest file hash. Record-entry time is labeled separately from the unknown scheduling-action time. No inferred UTC conversion or platform-side timestamp is recorded.
+
+Scheduled is not published. No completed Longitude PublicationRecord, content ID, public URL, actual publication time, screenshot, device/presentation result or analytics exists from this update. Ahmet will provide live evidence afterward. Existing postpublication intake and original release artifacts remain unchanged; no assistant platform action occurred.
+
+Current publishing target is approximately **one excellent unique short-form video/day**, not a quota. Research, evidence, human gates and adaptive creative deliberation are never weakened to meet cadence. Production may build a backlog and operates separately. **20:00 Kosovo local time is a provisional test window**, not proven optimal by analytics. Frequency/window may change with adequate native evidence; long-form roadmap remains preserved.
+
+Reconciliation: older “prepared, unpublished”/review-only Longitude sections below are historical pre-authorization milestones. Current release authority is longitude-clock-publication-v1; current external scheduling status is this owner report. The existing source variants and prepared packages retain their exact identities.
+
 ## Phantom Traffic current publication state — 2026-10-01
 
 Four canonical `published-owner-reported` records now exist in `src/operations/phantom-traffic.ts`, registered alongside historical Speed of Light. Owner-supplied public URLs: [YouTube](https://www.youtube.com/shorts/3jmxLXcowC8), [Facebook](https://www.facebook.com/reel/2300822597344788), [Instagram](https://www.instagram.com/p/Dd89-PvFDqn/). TikTok is published by explicit owner report, with public URL/video ID unknown; `https://www.tiktok.com/tiktokstudio/content` is management context only. Date is 2026-10-01; exact posting time is unknown. Logical TikTok/Facebook account records do not invent actual handles or remote account IDs. Actual visibility/reuse/disclosure settings remain unknown.

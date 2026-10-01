@@ -1,0 +1,113 @@
+{
+  "recordedAt": "2026-10-01",
+  "engine": "web search tool",
+  "method": "Broad collections/highlights queries first; later searches widen neglected areas and check emerging ideas. Not a saturation survey or full research. Unrestricted first batch included noisy results; institutional domain filters supplemented it, without making domains eligibility rules.",
+  "queries": [
+    {
+      "batch": 1,
+      "phase": "broad-discovery",
+      "queries": [
+        "site.si.edu stories surprising objects discovery everyday",
+        "site.nature.com research highlights unexpected mechanism behavior",
+        "site.loc.gov collections stories unusual history invention",
+        "site.quantamagazine.org paradox mathematics language music"
+      ]
+    },
+    {
+      "batch": 2,
+      "phase": "broad-discovery",
+      "queries": [
+        "unexpected objects stories (domain filter si.edu, vam.ac.uk, metmuseum.org)",
+        "research surprising discoveries behavior food materials (domain filter science.org, nature.com, pnas.org)",
+        "paradox surprising math (domain filter quantamagazine.org)",
+        "language philosophy economics surprising explanation (domain filter plato.stanford.edu, nobelprize.org, mpi.nl)"
+      ]
+    },
+    {
+      "batch": 3,
+      "phase": "widening-and-candidate-feasibility",
+      "queries": [
+        "site.quantamagazine.org \"paradox\" \"2025\"",
+        "site.plato.stanford.edu \"moral luck\"",
+        "site.nobelprize.org \"auction\" \"spectrum\"",
+        "site.mpi.nl \"language\" \"surprising\""
+      ]
+    },
+    {
+      "batch": 4,
+      "phase": "widening-and-candidate-feasibility",
+      "queries": [
+        "site.vam.ac.uk \"colour\" \"poison\"",
+        "site.metmuseum.org \"anamorphosis\"",
+        "site.si.edu \"earwax\" \"whale\"",
+        "site.kew.org \"seed\" \"explosive\""
+      ]
+    },
+    {
+      "batch": 5,
+      "phase": "widening-and-candidate-feasibility",
+      "queries": [
+        "site.loc.gov \"grocery\" \"shopping cart\"",
+        "site.nist.gov \"chocolate\"",
+        "site.exploratorium.edu \"soap\" \"pepper\"",
+        "site.computerhistory.org \"bug\" \"moth\""
+      ]
+    },
+    {
+      "batch": 6,
+      "phase": "widening-and-candidate-feasibility",
+      "queries": [
+        "site.exploratorium.edu \"chocolate\" \"temper\"",
+        "site.nationalgallery.org.uk \"Ambassadors\" \"skull\"",
+        "site.quantamagazine.org \"dice\" \"intransitive\"",
+        "site.mpi.nl \"sign language\" \"emerge\""
+      ]
+    },
+    {
+      "batch": 7,
+      "phase": "widening-and-candidate-feasibility",
+      "queries": [
+        "site.nasa.gov \"venus\" \"day\" \"year\"",
+        "site.britishmuseum.org \"complaint\" \"Ea-nasir\"",
+        "site.kew.org \"fig\" \"wasp\"",
+        "site.si.edu \"purple\" \"dye\""
+      ]
+    },
+    {
+      "batch": 8,
+      "phase": "widening-and-candidate-feasibility",
+      "queries": [
+        "site.nobelprize.org \"ostrom\" \"commons\"",
+        "site.bfi.org.uk \"film\" \"restoration\" \"colour\"",
+        "site.loc.gov \"fire insurance\" \"maps\"",
+        "site.usgs.gov \"river\" \"capture\""
+      ]
+    }
+  ],
+  "counts": {
+    "searchQueries": 32,
+    "directOpenAttempts": 11,
+    "distinctIdeas": 33,
+    "proposals": 34
+  },
+  "directOpenFailures": [
+    {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/",
+      "result": "internal error"
+    },
+    {
+      "url": "https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf",
+      "result": "403"
+    },
+    {
+      "url": "https://www.loc.gov/collections/emile-berliner/about-this-collection/",
+      "result": "internal error"
+    },
+    {
+      "url": "https://www.kew.org/plants/fig",
+      "result": "403"
+    }
+  ],
+  "eligibility": "A legitimate new domain remains eligible. No topic receives renderer, asset, narrator, duration or historical style convenience advantage.",
+  "omissions": "No paid API, measured search demand, exhaustive domain coverage, platform trends, new analytics, claim verification or full bounded research."
+}

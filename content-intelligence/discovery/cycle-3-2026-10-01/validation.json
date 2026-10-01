@@ -1,0 +1,99 @@
+{
+  "recordedAt": "2026-10-01T21:45:49.623760+00:00",
+  "node": "22.23.3",
+  "pnpm": "10.17.1",
+  "result": "passed",
+  "commands": [
+    {
+      "command": "node --import tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-3-2026-10-01/discovery.json",
+      "result": "passed",
+      "candidates": 34,
+      "distinctIdeas": 33,
+      "shortlist": 10,
+      "sourceLeads": 10
+    },
+    {
+      "command": "node --import tsx scripts/validate-cycle-3.ts",
+      "result": "passed",
+      "historicalFilesPreserved": 1191,
+      "scheduledPlatforms": 4,
+      "completedPublicationRecordsCreated": false,
+      "selectedTopicId": null
+    },
+    {
+      "command": "node --import tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-1-2026-09-30/discovery.json",
+      "result": "passed"
+    },
+    {
+      "command": "node --import tsx scripts/validate-discovery.ts content-intelligence/discovery/cycle-2-2026-10-01/discovery.json",
+      "result": "passed"
+    },
+    {
+      "command": "node --import tsx scripts/content-intelligence.ts validate wood-frog-freeze --output content-intelligence/runs/wood-frog-freeze-fixture-v1",
+      "result": "passed",
+      "readOnly": true
+    },
+    {
+      "command": "node --import tsx scripts/recovery-brain.ts",
+      "result": "passed",
+      "canonicalDocuments": 23
+    },
+    {
+      "command": "node --import tsx scripts/validate-adaptive-creative-system.ts",
+      "result": "passed",
+      "originalHistoricalFiles": 292,
+      "authorizedClosureCheckpoints": 1
+    },
+    {
+      "command": "node --import tsx scripts/validate-traffic-closure.ts",
+      "result": "passed",
+      "historicalArtifactRecords": 314
+    },
+    {
+      "command": "node --import tsx scripts/validate-longitude-publication.ts",
+      "result": "passed",
+      "preservedFiles": 605,
+      "retainedArtifacts": 34,
+      "publicationOccurred": false,
+      "exactReadyPackages": 4
+    },
+    {
+      "command": "pnpm check",
+      "result": "passed",
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 35,
+      "tests": 373,
+      "gitDiffCheck": "passed"
+    }
+  ],
+  "regressionCoverage": [
+    "Unseen olfactory-heritage-studies field passes native candidate/evaluation and durable validation without category authorization.",
+    "Selection, reviewer approval, missing triage, stale evaluation and duplicate identity injections rejected.",
+    "Adaptive convergence rejects unresolved convenience reuse; narrator owner-amendment and story-led duration policies retained.",
+    "Exact historical bytes, master/package/release authority preserved; scoped checker enforces scheduling-only unknown fields and no downstream files.",
+    "Current cadence is adaptable target, production separate, quality first and 20:00 provisional."
+  ],
+  "reconciledCheckerLabels": [
+    "Adaptive checker newProductionStarted=true refers to pre-existing Cycle #2 longitude-clock plan, not new Cycle #3 work; git baseline comparison proves unchanged.",
+    "Historical traffic/longitude checkers report original milestone nextGate values; current PROJECT-STATE and Cycle #3 gate supersede them, without rewriting historical evidence."
+  ],
+  "limitations": [
+    "Validation proves structure/provenance/preservation, not candidate claim correctness, rights clearance, audience demand or platform scheduling verification.",
+    "No rendering applicable or performed: discovery/docs only; Cycle #3 production prohibited.",
+    "Secret scan is scoped pattern matching, not a dedicated scanner."
+  ],
+  "secretScan": {
+    "result": "passed",
+    "scanner": "Python patterns for private keys/provider/GitHub/AWS tokens and credential assignments",
+    "filesScanned": 17,
+    "findings": 0,
+    "reviewedPlaceholders": [
+      {
+        "path": "docs/CONTENT-INTELLIGENCE.md",
+        "reason": "Unchanged documented placeholder; not a credential."
+      }
+    ]
+  },
+  "stagedDiffCheck": "passed"
+}

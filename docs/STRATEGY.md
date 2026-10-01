@@ -95,15 +95,13 @@ Short performance is one input—not an automatic command—to expand a topic. D
 
 ## Publishing target
 
-The owner-directed resumption strategy after operational recovery is approximately **one excellent unique short-form video per day**, distributed appropriately across YouTube Shorts, TikTok, Instagram Reels and Facebook Reels. Move toward two unique Shorts/day only when research, quality, capacity and platform QA are stable; quality outranks forced volume. This is strategy for the next separately authorized content cycle, not authorization to produce or publish now.
+Current owner operating decision (2026-10-01): approximately **one excellent unique short-form video per day**, distributed appropriately across YouTube Shorts, TikTok, Instagram Reels and Facebook Reels. This replaces two/day as the active near-term target. It is a **target cadence, not a production quota**. Quality wins if a story needs additional time: never weaken research/evidence, skip human gates, rush CreativeDirection, reuse a visual template, alter story length or manufacture weak topics to fill a day. Production may work ahead into a backlog; publishing cadence and production cadence are separate.
 
-For mature two-post experiments, approximately **15:00 and 21:00 Kosovo local time** are provisional starting test windows. They are not permanent platform rules or current scheduled posts. Learn per platform/audience from native metrics, geography and observation windows before changing cadence/timing. No timestamps/timezone offsets are hard-coded into production or publishing logic.
+The current test window is **20:00 Kosovo local time**. It is provisional, not an analytics-established optimal posting time. The older 15:00/21:00 two-post experiment windows are superseded as current operating guidance. No schedule/timezone offset is hard-coded into production or publishing logic.
 
-The strategic destination is approximately two excellent short-form pieces per day across TikTok, YouTube Shorts, Facebook Reels, and Instagram Reels, plus approximately one high-quality long-form YouTube video per week.
+Sufficient native performance evidence may support higher, lower or otherwise adapted frequency and timing; one/day is not an immutable brand rule, and two/day is not a predetermined destination. Current early samples establish no preferred domain, visual style, duration or universally winning hook. Knowledge/evidence quality, rights, platform review and human approval remain hard gates.
 
-This is a target to unlock progressively, not an immediate quota. Quality, accuracy, rights, platform review, and human approval remain hard gates. A platform variant may change title/caption, description, hashtags, CTA, duration, cover, formatting, safe areas, or metadata. It may not silently alter the underlying verified claims.
-
-The earlier YouTube-only ramp validated the initial renderer and production workflow. It is historical context, not the long-term cross-platform operating model. Increase cadence only as knowledge packages and reusable production workflows demonstrably reduce effort without producing repetitive or low-quality work.
+Long-form remains a future parallel format. Preserve the existing approximately weekly high-quality long-form aspiration and The True Scale of the Universe brief; no long-form production is authorized here. Platform variants adapt packaging without silently changing verified claims. The earlier YouTube-only ramp remains historical validation context.
 
 ## Topic portfolio
 
