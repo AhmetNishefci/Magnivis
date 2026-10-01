@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "checkedAt": "2026-10-01T20:24:07.614349Z",
+  "testedCommit": "344a3a4cddf750ed2135c6c939f37b67567016db",
+  "method": "Fresh local Git clone with --no-hardlinks, no ignored render outputs or model/media caches copied. Installed lockfile-compatible node_modules reused via symlink for validators; a fresh dependency install was not claimed.",
+  "platformValidation": {
+    "passed": true,
+    "master": {
+      "passed": true,
+      "ownerMasterApproved": true,
+      "artifact": {
+        "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+        "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369",
+        "bytes": 4072695
+      },
+      "masterArtifactId": "longitude-clock.locked-master.v2",
+      "decisionEnteredAt": "2026-10-01T19:39:44.862Z",
+      "productionPlanRevision": 5,
+      "captionPlan": {
+        "id": "caption-plan.longitude-clock.v2",
+        "revision": 2,
+        "sha256": "d34aea2666742c0e8e61f569d6ee023be369f0d7ab558cd40823ca226f45e3cb"
+      },
+      "platformApproved": false,
+      "publicationAuthorized": false
+    },
+    "variants": [
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.youtube-shorts",
+        "status": "editorial-review"
+      },
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.tiktok-feed",
+        "status": "editorial-review"
+      },
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.instagram-reels",
+        "status": "editorial-review"
+      },
+      {
+        "id": "longitude-clock.asset.time-to-position.variant.facebook-reels",
+        "status": "editorial-review"
+      }
+    ],
+    "packages": 4,
+    "surfaces": 9,
+    "realDevicePasses": 0,
+    "covers": 1,
+    "retainedArtifacts": 77,
+    "preservedFiles": 193,
+    "publicationAuthorized": false
+  },
+  "durability": {
+    "passed": true,
+    "durableArtifactCount": 458,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "ignoredNarratedOutputRequired": false,
+  "masterRerendered": false,
+  "uploaded": false,
+  "published": false,
+  "scheduled": false,
+  "platformApprovalGranted": false,
+  "publicationAuthorized": false
+}
