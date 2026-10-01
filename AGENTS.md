@@ -10,7 +10,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 
 ## Permanent rules
 
-- Preserve the cinematic, minimal, scientifically credible brand in `docs/BRAND.md` and `docs/CONTENT-BIBLE.md`.
+- Magnivis is a brand, not a video template. Preserve evidence-first, premium, clear knowledge storytelling; choose execution per story. `docs/CREATIVE-DIRECTION.md` owns brand constants versus adaptive variables, the asset-bound direction stage and convergence review. Historical videos are precedents, never automatic palettes/caption styles/voices. Future ProductionPlans require a hash-bound direction; approved historical media remains unchanged.
 - Magnivis is an open-ended curiosity and understanding brand: help viewers understand something fascinating or useful every day. **Discover first, classify second.** High-level pillars organize the portfolio; they are never a whitelist. Science, history, human behavior, philosophy, practical life skills, business, money, culture, and future legitimate domains all fit when treated as credible explanation—not generic motivation, shallow self-help, or advice spam. `docs/STRATEGY.md` owns the topic-universe rules.
 - Treat a verified knowledge package—not a finished video—as the durable editorial unit. Platform assets should reference that package and adapt it without silently changing its claims.
 - AI-assisted research output is a proposal, never evidence of its own correctness. Model-proposed sources begin unreviewed, model-proposed claims begin unverified, and model-generated editorial assets remain drafts until a human approves them.
@@ -44,6 +44,7 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 - Designed burned-in captions and accessibility tracks: `docs/CAPTIONS.md`
 - Platform adaptation, constraint profiles, and safe areas: `docs/PLATFORM-VARIANTS.md`
 - Manual delivery packages and validation: `docs/DELIVERY-PACKAGES.md`
+- Adaptive creative direction: `docs/CREATIVE-DIRECTION.md`
 - Brand and creative direction: `docs/BRAND.md`, `docs/CONTENT-BIBLE.md`
 - Architecture and commands: `docs/VIDEO-SYSTEM.md`
 - Scientific sourcing: `docs/RESEARCH-STANDARDS.md`

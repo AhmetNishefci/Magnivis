@@ -15,6 +15,8 @@ export const contentAssetStatusSchema = z.enum([
 ]);
 
 export const visualTypeSchema = z.enum([
+  'bespoke',
+  'hybrid',
   'footage',
   'diagram',
   'animation',

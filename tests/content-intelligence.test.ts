@@ -148,6 +148,7 @@ describe('Content Intelligence V1 topic candidates and prompts', () => {
   it('keeps prompts versioned, discoverable and explicit about trust boundaries', () => {
     const workflows = contentIntelligencePromptRegistry.list();
     expect(workflows.map(({id}) => id)).toEqual([
+      'workflow.creative-direction',
       'workflow.topic-evaluation',
       'workflow.research-workspace',
       'workflow.hook-generation',

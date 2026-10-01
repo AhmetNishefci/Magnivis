@@ -1,4 +1,8 @@
 import {z} from 'zod';
+import {creativeReferenceSchema} from '../content-assets/creative-direction';
+import {validateCreativeDirection} from '../content-assets/creative-direction-integrity';
+import {sha256Json} from '../content-intelligence/run-schema';
+import historicalPlans from '../../system-audits/adaptive-creative-direction-v1/historical-plans.json';
 import type {ContentAsset} from '../content-assets/schema';
 import type {KnowledgePackage} from '../knowledge/schema';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
@@ -36,12 +40,13 @@ const productionBeatSchema = z.object({
 
 const productionAssetSchema = z.object({
   id: stableKnowledgeIdSchema,
-  kind: z.enum(['procedural-code', 'generated-audio', 'generated-narration', 'caption-track']),
+  kind: z.string().regex(/^[a-z]+(?:-[a-z]+)*$/),
   path: z.string().min(1).optional(),
   provenance: z.object({
-    origin: z.enum(['original-procedural', 'local-synthetic-voice', 'derived-from-approved-script']),
-    rights: z.enum(['magnivis-original', 'kokoro-apache-2.0-model-output']),
+    origin: z.string().min(1),
+    rights: z.string().min(1),
     notes: z.string().min(1),
+    evidence: z.string().min(1).optional(),
   }).strict(),
 }).strict();
 
@@ -80,11 +85,12 @@ export const productionPlanSchema = z.object({
   contentAsset: artifactReferenceSchema,
   ownerDecision: artifactReferenceSchema,
   approvedScriptSha256: z.string().regex(/^[a-f0-9]{64}$/),
+  creativeDirection: creativeReferenceSchema.optional(),
   excludedClaimIds: z.array(stableKnowledgeIdSchema),
   format: z.object({
-    width: z.literal(1080),
-    height: z.literal(1920),
-    fps: z.literal(30),
+    width: z.number().int().positive(),
+    height: z.number().int().positive(),
+    fps: z.number().int().positive(),
     durationSeconds: z.number().positive(),
   }).strict(),
   safeAreaProfileId: stableKnowledgeIdSchema,
@@ -147,6 +153,7 @@ export const validateProductionPlanReferences = (
   input: unknown,
   knowledgePackage: KnowledgePackage,
   contentAsset: ContentAsset,
+  creativeDirection?: unknown,
 ) => {
   const plan = productionPlanSchema.parse(input);
   if (
@@ -201,6 +208,17 @@ export const validateProductionPlanReferences = (
     || [...visualPlanIds].some((id) => visualPlanUseCounts.get(id) !== 1)
   ) {
     throw new Error('ProductionPlan must implement every approved VisualPlan item exactly once');
+  }
+  const historical = historicalPlans.some(ref => ref.id === plan.id && ref.sha256 === sha256Json(plan));
+  if (!historical) {
+    if (plan.knowledgePackage.sha256 !== sha256Json(knowledgePackage) || plan.contentAsset.sha256 !== sha256Json(contentAsset)
+      || plan.approvedScriptSha256 !== sha256Json(contentAsset.script)) throw new Error('Future ProductionPlan editorial hashes are stale');
+    if (plan.assets.some(asset => !asset.provenance.evidence)) throw new Error('Future assets require inspectable provenance/license evidence');
+    if (!plan.creativeDirection || !creativeDirection) throw new Error('Future production requires an exact asset-bound CreativeDirection');
+    const direction = validateCreativeDirection(creativeDirection, knowledgePackage, contentAsset);
+    if (direction.state !== 'ready-for-production-planning'
+      || plan.creativeDirection.id !== direction.id || plan.creativeDirection.revision !== direction.revision
+      || plan.creativeDirection.sha256 !== sha256Json(direction)) throw new Error('ProductionPlan creative direction is stale or not ready');
   }
   return plan;
 };

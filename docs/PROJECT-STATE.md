@@ -1,5 +1,9 @@
 # Project state
 
+## Adaptive Creative Direction V1 — system milestone, 2026-10-01
+
+Owner authorizes future-facing brain/schema/validation changes only. CREATIVE-DIRECTION.md separates identity/quality constants from per-story execution. A hash-bound ContentAsset companion and convergence review precede future ProductionPlans; AI direction remains a proposal. Historical render paths, audio, captions, approvals, masters, profiles and Phantom Traffic presentation evidence remain unchanged. No new story, production, long-form, upload or publication is authorized. Phantom Traffic’s real-device gate below remains the active content gate.
+
 ## New content cycle #1 — Phantom Traffic locked master and platform review, 2026-10-01
 
 Ahmet explicitly approved the exact finalized editorial state at `21c3a5539cf02b1c4a88b8ff89aca0139a7ec079` and authorized production planning plus one master candidate. The [editorial lock decision](../content-intelligence/reviews/phantom-traffic-approved-v3/owner-decision.json) binds the reviewed package/asset/review/script hashes and all 30 claim states. Its timestamp is decision-entry time; no owner-supplied review timestamp was invented. This latest explicit authorization supersedes the earlier editorial-only limit.

@@ -146,3 +146,7 @@ War is factual/historical explanation, not glorification; medicine remains educa
 ## Audience/knowledge flywheel
 
 Discover → research → produce a Short → separately authorized publication → measure → learn → audience interaction → discover better topics → identify subjects with sufficient evidence/depth → expand suitable winners into long-form → derive distinct short-form opportunities → repeat. Short popularity is one signal; evidence quality, story depth, usefulness and portfolio diversity still govern expansion. Analytics should consider topic/hook, first-second effectiveness, retention/completion/rewatches, shares/saves/comments/follows, geography/platform/posting time, caption/visual treatment/duration and audience questions without falsely normalizing unlike native definitions. This is future direction, not an implemented automated subsystem.
+
+## Adaptive creative direction — future content
+
+Magnivis is a brand, not a video template. Use CREATIVE-DIRECTION.md between approved editorial intent and future production. Learn story principles rather than cloning a successful palette, narrator, caption design or structure. No fixed domain styles. Long-form chooses its own execution; the open topic universe and discover-first/classify-second rule remain intact.

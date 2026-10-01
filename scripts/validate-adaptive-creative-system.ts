@@ -1,0 +1,16 @@
+import {readFileSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import baseline from '../system-audits/adaptive-creative-direction-v1/historical-baseline.json';
+import {knowledgePackageRegistry} from '../src/knowledge/registry';
+import {contentAssetRegistry} from '../src/content-assets/registry';
+import {validateWoodFrogProductionPlan} from '../src/production/integrity';
+import {validatePhantomTrafficLockedMaster} from '../src/production/phantom-traffic-master-integrity';
+import {contentIntelligencePromptRegistry} from '../src/content-intelligence/prompts';
+for(const file of baseline.files) if(createHash('sha256').update(readFileSync(file.path)).digest('hex')!==file.sha256) throw new Error(`Historical byte regression: ${file.path}`);
+const guide=readFileSync('AGENTS.md','utf8');
+for(const route of guide.matchAll(/`((?:docs|recovery-audit)\/[^`]+\.md)`/g)) if(!existsSync(route[1]!)) throw new Error(`Missing canonical route: ${route[1]}`);
+if(!guide.includes('docs/CREATIVE-DIRECTION.md')) throw new Error('Missing adaptive authority route');
+const authority=readFileSync('docs/CREATIVE-DIRECTION.md','utf8');
+for(const principle of ['brand, not a video template','Discover first. Classify second.','convergence','Long-form','real-device','approved','rationale']) if(!authority.toLowerCase().includes(principle.toLowerCase())) throw new Error(`Missing documented authority: ${principle}`);
+validateWoodFrogProductionPlan();const master=validatePhantomTrafficLockedMaster();
+console.log(JSON.stringify({passed:true,historicalFilesUnchanged:baseline.files.length,knowledgePackages:knowledgePackageRegistry.list().length,contentAssets:contentAssetRegistry.list().length,creativeWorkflow:contentIntelligencePromptRegistry.get('workflow.creative-direction').id,woodFrogUnchanged:true,phantomTraffic:master.artifact,platformRecordsUnchanged:true,newContentStarted:false},null,2));

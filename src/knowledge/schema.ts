@@ -144,17 +144,8 @@ export const claimSchema = z
     }
   });
 
-export const hookArchetypeSchema = z.enum([
-  'surprising-statement',
-  'question',
-  'contradiction',
-  'misconception',
-  'impossible-sounding-fact',
-  'scenario',
-  'consequence',
-  'mystery',
-  'comparison',
-]);
+// Open normalized archetypes preserve historical labels without freezing hook mechanisms.
+export const hookArchetypeSchema = z.string().regex(/^[a-z]+(?:-[a-z]+)*$/);
 
 const hookVariantSchema = z.object({
   id: stableKnowledgeIdSchema,

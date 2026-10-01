@@ -12,18 +12,13 @@ Magnivis is global, English-first, faceless, intelligent, and accessible without
 
 Handles are platform-specific operational identities, not one global brand field. The confirmed Instagram identity is `@magnivis.media` with the bio “Understand something fascinating every day. 🌍🧠✨”. Other handles must not be inferred from the historical shorthand; `src/operations/platform-accounts.ts` is the canonical nonsecret account record.
 
-## Visual language
+## Quality and adaptive execution
 
-- Deep neutral blacks, controlled blue-white highlights, and restrained warm color where the subject requires it.
-- High contrast, cinematic light, physical depth, smooth camera motion, and clean typography.
-- Scientific clarity outranks decorative effects. Use glow, particles, grain, and lens behavior sparingly.
-- Avoid cheap slideshow/UI aesthetics, fake HUDs, gaming intros, generic AI montages, busy text, repetitive template transitions, and sensational misinformation.
+**Magnivis is a brand, not a video template.** Evidence-first accuracy, intellectual honesty, curiosity, clarity, meaningful visuals, premium intentional execution, readability, safe provenance and human gates are constants. `docs/CREATIVE-DIRECTION.md` owns the per-asset direction stage and convergence review.
 
-## Typography
+Palette, medium, light/depth, typography, camera, transitions, captions, voice, sound, pace and duration are chosen for the individual story. Cinematic means intentional storytelling and craft; it does not mandate realism, dark backgrounds, blue-white highlights or procedural graphics. Avoid cheap slideshow/UI aesthetics, fake HUDs, generic AI montages, busy text and sensational misinformation.
 
-- Display: Space Grotesk, SIL Open Font License 1.1.
-- Interface/body: Manrope, SIL Open Font License 1.1.
-- Use uppercase selectively for short, high-impact statements. Preserve generous spacing and mobile legibility.
+Space Grotesk/Manrope and deep neutrals with blue/white/warm highlights are licensed historical treatments, not compulsory future fonts/colors. Other typography requires rights evidence, accessibility/readability and composition QA. Select uppercase and emphasis when they improve the specific experience.
 
 ## Motion
 
@@ -33,6 +28,6 @@ Camera and object scale are storytelling tools. Acceleration should build antici
 
 The channel already applies a watermark. In-video branding is optional and subtle. Never trade the final moment of awe for a long logo animation or generic subscribe prompt.
 
-## Recovery creative reference
+## Historical creative reference
 
-The canonical recovery reference is produced Magnivis through Wood Frog at ae79799, as the owner confirms. Preserve premium faceless English knowledge storytelling, procedural/vector explanatory visuals, counters/diagrams/comparisons, Manrope/Space Grotesk, clean motion, synthetic narration and designed captions. Cinematic means considered motion/light/depth; photorealistic AI imagery is not the default brand identity. Millennium Bridge experiments remain outside this baseline. Image generation is a tool when justified, not a redesign mandate.
+The recovered through-Wood-Frog checkpoint and exact approved Phantom Traffic remain immutable. Their procedural/vector visuals, diagrams, counters, typography, synthetic narration and caption execution are historical precedents. Extract the principle that served the story; test its applicability before reusing the execution. The owner-authorized adaptive direction supersedes any interpretation of recovery preservation as a future style mandate. Recovery is CLOSED; no historical restyling or Bridge work is authorized. Image generation, licensed footage, procedural graphics and hybrids are tools when justified, never default identity.

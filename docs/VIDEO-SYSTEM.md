@@ -147,7 +147,7 @@ The render router rejects unknown video IDs. Production renders use an 8 Mbps H.
 
 ## Caption placement
 
-- Every new Magnivis short-form master contains designed burned-in captions rendered through the constrained CaptionPlan system. The design uses phrase-level chunks, selective emphasis, one of the registered placement regions, and the active safe-area profile.
+- Every new Magnivis short-form master contains designed burned-in captions rendered through the constrained CaptionPlan system. The design uses phrase-level chunks, selective emphasis and per-story treatment validated against applicable safe-area and presentation evidence; V1 registered placements describe historical execution.
 - WebVTT or platform-native captions may also support accessibility. They remain platform-controlled, can visually duplicate burned-in captions, and must be checked during private platform review. They never replace the designed layer.
 - Known approved narration text and timing drive CaptionPlan and WebVTT. Do not add speech recognition when those inputs exist.
 - Existing approved or published videos are not re-rendered solely to adopt the new rule. See `docs/CAPTIONS.md` for the canonical design and AI boundary.
@@ -158,4 +158,8 @@ The render router rejects unknown video IDs. Production renders use an 8 Mbps H.
 
 ## Phantom Traffic master candidate
 
-Target `phantom-traffic` / composition `Magnivis-Phantom-Traffic` renders the 1025-frame, 1080×1920, 30 fps vertical master with the standard H.264/AAC/yuv420p pipeline. `pnpm render phantom-traffic`, `pnpm qa phantom-traffic`, `pnpm production:validate phantom-traffic` and `pnpm captions:validate phantom-traffic` use the existing boundaries. Road/track/vehicle visuals are original procedural physical scenes; traffic kinematics are a small deterministic explanatory model, not a calibrated simulator. Approved narration words cannot change. The exact retained candidate awaits owner master visual review.
+Target `phantom-traffic` / composition `Magnivis-Phantom-Traffic` renders the 1025-frame, 1080×1920, 30 fps vertical master with the standard H.264/AAC/yuv420p pipeline. `pnpm render phantom-traffic`, `pnpm qa phantom-traffic`, `pnpm production:validate phantom-traffic` and `pnpm captions:validate phantom-traffic` use the existing boundaries. Road/track/vehicle visuals are original procedural physical scenes; traffic kinematics are a small deterministic explanatory model, not a calibrated simulator. Approved narration words cannot change. The exact retained master is owner-approved and awaits real-device platform review; PROJECT-STATE.md and its exact decision own current authority.
+
+## Adaptive creative direction — future content
+
+Future production adds an asset-bound CreativeDirection between ContentAsset/VisualPlan and ProductionPlan. Follow CREATIVE-DIRECTION.md. Existing rendering primitives, tokens, V1 caption renderer and historical narration generator remain unchanged implementation choices, not universal art direction. Production format/asset provenance and VideoSpec narration provider now permit explicit per-story decisions. New providers/render treatments require a tested adapter and rights evidence; they are not automatically integrated.

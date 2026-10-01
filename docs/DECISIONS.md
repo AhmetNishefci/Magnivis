@@ -1,5 +1,13 @@
 # Significant decisions
 
+## 2026-10-01 — Adaptive Creative Direction V1 for future content
+
+**Decision:** Magnivis is a brand, not a video template. Keep quality/identity/evidence constants while choosing execution per asset with rationale. Add a file-backed asset companion and future ProductionPlan hash binding, convergence review, provider-neutral CI proposal workflow and adaptive caption authoring boundary. Preserve exact historical implementations/approvals/media.
+
+**Reason:** Fixed caption styling and historical voice/token defaults, plus recovery-era preservation prose, could silently become future creative mandates. Bespoke Traffic motion demonstrates that not all production was copied. Similarities require judgment rather than a novelty quota.
+
+**Consequences:** Exact historical plans remain exempt; new/changed plans need source-bound ready direction and rights evidence. Immutable V1 caption/voice/render paths stay unchanged; new adapters are chosen when a story warrants them. Platform and publication gates remain separate. No new topic, rerender or external action occurs. CREATIVE-DIRECTION.md is authoritative; system-audits/adaptive-creative-direction-v1 records audit/regression evidence.
+
 ## 2026-09-29 — Lock approved masters and isolate platform-safe derivatives
 
 **Decision:** Bind every modern PlatformVariant to the exact owner-approved master, ProductionPlan, and CaptionPlan. Reuse those bytes when the destination safe area contains the master; create a separately hashed, private-review-only derivative when a proven platform safe area requires geometry changes. Track private-preview readiness separately from publication readiness.

@@ -8,10 +8,10 @@ Every asset should leave the viewer with a clearer mental model and at least one
 
 - Hook with a visual or statement the viewer understands immediately.
 - Focus a short on one compelling question, event, concept, or mystery; avoid generic fact compilations.
-- Establish one reference object or quantity before escalating.
+- Where a comparison drives the story, establish a reference object or quantity before escalating.
 - Make comparisons spatially honest; label approximations and uncertainty.
 - Use few words, concrete phrasing, and one idea per text beat.
-- Let scale drive transitions. Prefer visual proof over narration-heavy explanation.
+- Let relationships drive transitions; scale is one possible relationship. Prefer visuals that help explain.
 - End quickly on the largest conceptual reframe. No retention-killing outro.
 - Prefer the progression hook → question/mystery → escalation → explanation → surprising payoff. Do not force it when the subject needs a different truthful structure.
 - Generate substantially different hook archetypes and preserve which one an asset uses; do not produce superficial wording variants.
@@ -38,8 +38,12 @@ Research belongs to a reusable knowledge package. Shorts, long-form videos, arti
 
 Design for 9:16 and mobile viewing. Important text stays inside the project safe-area tokens: clear of the right interaction rail, lower metadata/caption area, and extreme top edge. Check representative frames and a real device before upload.
 
-All new short-form masters include designed burned-in Magnivis captions. Use one or two semantic lines, selective emphasis, strong compression-safe contrast, and scene-aware placement from approved safe regions. Platform-native or external caption tracks may also support accessibility, but they never replace the designed layer. See `docs/CAPTIONS.md`.
+All new short-form masters include designed burned-in Magnivis captions. Choose semantic phrase layout, selective emphasis, strong compression-safe contrast and scene-aware placement for the story; one/two lines are historical treatments, not a universal style. Platform-native or external caption tracks may also support accessibility, but they never replace the designed layer. See `docs/CAPTIONS.md`.
 
 ## Audio
 
 Music, ambience, transitions, impacts, narration, and silence are separate conceptual layers. Sound should clarify scale and pacing. Narration must remain replaceable without rebuilding visual scenes, and every synthetic voice requires human review for pronunciation, tone, and mix.
+
+## Adaptive creative direction — future content
+
+Story structure, reference objects, scale transitions and minimal text are useful techniques when the story warrants them, not mandatory scene recipes. Future assets use CREATIVE-DIRECTION.md to choose medium, hook, narrator, pacing, captions and sound with rationale. Historical caption line/visual treatments are precedents; designed narration-faithful readability remains required.

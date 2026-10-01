@@ -34,7 +34,8 @@ export const videoSpecSchema = z.object({
   titleCandidates: z.array(z.string().min(1)).min(1),
   descriptionCandidates: z.array(z.string().min(1)).min(1),
   hook: z.string().min(1),
-  pillar: z.enum(['universe', 'earth', 'engineering', 'numbers', 'technology']),
+  // Legacy labels remain valid; future topics must not need a science-shaped label.
+  pillar: z.string().regex(/^[a-z]+(?:-[a-z]+)*$/),
   status: z.enum([
     'idea',
     'research',
@@ -100,7 +101,7 @@ export const videoSpecSchema = z.object({
         sha256: z.string().regex(/^[a-f0-9]{64}$/),
       }).strict(),
       narration: z.object({
-        provider: z.literal('kokoro-local'),
+        provider: stableKnowledgeIdSchema,
         modelId: z.string().min(1),
         voiceId: z.string().min(1),
         speed: z.number().positive(),
