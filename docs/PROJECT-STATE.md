@@ -1,5 +1,13 @@
 # Project state
 
+## CONTENT CYCLE #2 — DISCOVERY COMPLETE, owner selection pending
+
+Ahmet explicitly authorized open-world discovery only on 2026-10-01 from clean synchronized main `cdebc2d1c92e14137dfef0dd9acb5924c460bed2`. [Cycle #2 handoff](../content-intelligence/discovery/cycle-2-2026-10-01/owner-review.md) preserves 36 proposals (35 distinct ideas after a recorded Kevlar overlap), 10 shortlisted candidates, five proposed finalists, fresh source/query provenance and qualitative tradeoffs. Content Intelligence proposes `topic.longitude-clock`; **selectedTopicId remains null**. The proposal is not owner selection or approval.
+
+No full research, ResearchWorkspace, KnowledgePackage, ContentAsset, final script, VisualPlan, CreativeDirection, ProductionPlan, captions, narration, images, rendering, delivery, platform action or publication began. Bounded source access was candidate feasibility only. Adaptive Creative Direction V1 governs later separately authorized production; historical content/approvals and recovery closure remain unchanged. Earlier Cycle #2-not-started statements below describe prior milestones.
+
+**Exact next human gate: AHMET — CYCLE #2 TOPIC SELECTION.** Ahmet selects a candidate (or requests revised discovery) and explicitly authorizes bounded research before downstream work.
+
 ## CONTENT CYCLE #1 — OPERATIONALLY COMPLETE
 
 Ahmet reports Phantom Traffic manually published on all four platforms on **2026-10-01**; exact posting times are unknown. Canonical PublicationRecords `publication.{youtube,tiktok,instagram,facebook}.phantom-traffic` bind final revision-3 variants, delivery manifest hashes, KnowledgePackage/ContentAsset revision 3, exact approved master and prior authorization. State is `published-owner-reported`; platform-transcoded bytes and native settings were not independently retrieved. [Closure decision and evidence](../content-intelligence/reviews/phantom-traffic-closure-v1/owner-decision.json) and [publication snapshot](../content-intelligence/reviews/phantom-traffic-closure-v1/publication-records.json) are durable.

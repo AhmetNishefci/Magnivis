@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "integrity.discovery.cycle-2.v1",
+  "baseCommit": "cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+  "hashBasis": "SHA-256 of exact file bytes; manual discovery handoff, not a provider workflow envelope or approval",
+  "files": [
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/discovery-inputs.json",
+      "sha256": "5724683e5448c962028e501df7a7eda14cb4a7a63c5fd3c4f9478ef230fc624c",
+      "bytes": 1876
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/discovery.json",
+      "sha256": "d8f9f92374699d22bfbf030fcb49ad49402b7ca48e12c3a23f16b1bfdc7e104b",
+      "bytes": 130386
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/editorial-review.json",
+      "sha256": "a4693c5127d81cced7ab0e7c55c82adb56f4a76daf276cb2579fc0657d29a15b",
+      "bytes": 70458
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/owner-review.md",
+      "sha256": "a1671a280f74de89c70fb8c4a04ed24b7e163c6a06a21317671ec82b7d8992c6",
+      "bytes": 48036
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/pool-input.json",
+      "sha256": "603955207ce077da1ce0fa9af3c730209db68360b7405cba5d6b1031c4e1d8b2",
+      "bytes": 10146
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/search-log.json",
+      "sha256": "68074efbbc7eac90c1badebbdac163190ae2decb0246b7a40b3d8c115d70f936",
+      "bytes": 18398
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/validation.json",
+      "sha256": "13f36563fd27dc23f3398507facc0516378776efd1cd3d38a969027c15184832",
+      "bytes": 3757
+    },
+    {
+      "path": "docs/CONTENT-INTELLIGENCE.md",
+      "sha256": "232acdfc511c76bee2dd147b42901e77d208eac48fda1dba0866c19c10e04437",
+      "bytes": 22304
+    },
+    {
+      "path": "docs/PROJECT-STATE.md",
+      "sha256": "56dd53437028e572b3c154a84b2d5ed2f1a5edeb2ebf39cb194610185af9d610",
+      "bytes": 29519
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "0a7f784d156ea8c55adc0037ad330024324ffeeec85f26fd604a99e0fa8ac00a",
+      "bytes": 10318
+    },
+    {
+      "path": "scripts/adaptive-historical-integrity.ts",
+      "sha256": "abeefaf491857b2631f425200cef891a8c5392d8694f4f60561af8cf2c666936",
+      "bytes": 1073
+    },
+    {
+      "path": "scripts/validate-adaptive-creative-system.ts",
+      "sha256": "65db76b3167fb73fb47cd11fc9d59edcaf82f5b62c02c4475aa1f2cdd4eda04a",
+      "bytes": 2028
+    },
+    {
+      "path": "scripts/validate-discovery.ts",
+      "sha256": "a324ef58ee0436c0a12ebcc2701b37c242cca860b24ad54d9bb9683773660998",
+      "bytes": 3975
+    },
+    {
+      "path": "system-audits/adaptive-creative-direction-v1/cycle-1-closure-checkpoint.json",
+      "sha256": "6858349a369ab2d464959f6fffaf2c7cf4f49bb38a22d2589a2d36ebfbcb1007",
+      "bytes": 937
+    },
+    {
+      "path": "tests/discovery-cycle-2.test.ts",
+      "sha256": "62d3189b1d92d76e41e13842991f72e6174ecf1f244e8d31036ef8c9de93e439",
+      "bytes": 6235
+    }
+  ],
+  "historicalInputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "4bdd7ac728b600d61b16d9e6085f5d3d082b35ae37173f224fdb656eb75abb3b"
+    },
+    {
+      "path": "docs/STRATEGY.md",
+      "sha256": "aa0a9891bb8e673eac83ae6fe753e509b0c15b9fba2397ecca27f9e4ed9d662b"
+    },
+    {
+      "path": "docs/CREATIVE-DIRECTION.md",
+      "sha256": "f1fc993c39fb29ddda70d0b8a9dfe66d006d68ca7ce99e704e52822b49085a3a"
+    },
+    {
+      "path": "docs/RESEARCH-STANDARDS.md",
+      "sha256": "422edc1bc30cf4de0340d11ad7a5201a6328ee3a3a3b99273f7b313ab8e8e429"
+    },
+    {
+      "path": "docs/PERFORMANCE.md",
+      "sha256": "03fedb1283a33a8a3041fdc52f779eb854a2f4c27aa0f6a0fc3745777b626d09"
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-1-2026-09-30/discovery.json",
+      "sha256": "15ef69aa84e95413c0be6ce3cdc02a9b6c563110f8db3c9534dd53938a553da0"
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-closure-v1/owner-decision.json",
+      "sha256": "ef3348fb57191c423ef1fde14004ef68de1a6d79dfe8ea9b9d2967bc755d625d"
+    },
+    {
+      "path": "system-audits/adaptive-creative-direction-v1/historical-baseline.json",
+      "sha256": "392c1b8eaef3735ef6ba718cfb165aeb0eccc1ffa1eeaa6d288f11de3d210ea6"
+    },
+    {
+      "path": "system-audits/adaptive-creative-direction-v1/historical-plans.json",
+      "sha256": "3225c909c3467a2accdfd2a0cfd8881ba2f1afd5c70b960a62effcd7be3f7b06"
+    },
+    {
+      "path": "artifacts/manifests.json",
+      "sha256": "15eae059d3fc059bcb6c8c97c3a11bfefc5334ec138879c66be5e8340d930298"
+    }
+  ]
+}

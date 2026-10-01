@@ -32,7 +32,7 @@ const bundleSchema = z.object({
     title: z.string().min(1),
     organization: z.string().min(1),
     checkedAt: z.iso.date(),
-    access: z.enum(['page-excerpt', 'abstract-only', 'search-excerpt-open-failed']),
+    access: z.enum(['page-excerpt', 'abstract-only', 'search-excerpt', 'search-excerpt-open-failed']),
     reviewStatus: z.literal('unreviewed'),
     notes: z.string().min(1),
   }).strict()),
@@ -61,17 +61,17 @@ const shortlistIds = new Set(bundle.triage.filter(({disposition}) => disposition
   .map(({topicCandidateId}) => topicCandidateId));
 const evaluationIds = new Set(bundle.evaluations.map(({topicCandidateId}) => topicCandidateId));
 if (evaluationIds.size !== bundle.evaluations.length || evaluationIds.size !== shortlistIds.size) {
-  throw new Error('Every finalist needs exactly one evaluation');
+  throw new Error('Every shortlisted candidate needs exactly one evaluation');
 }
 for (const evaluation of bundle.evaluations) {
   if (!shortlistIds.has(evaluation.topicCandidateId)
     || registry.get(evaluation.topicCandidateId).revision !== evaluation.candidateRevision) {
-    throw new Error('Evaluation references an unknown finalist or stale revision');
+    throw new Error('Evaluation references an unknown shortlisted candidate or stale revision');
   }
 }
 for (const source of bundle.sourceReconnaissance) {
   if (!shortlistIds.has(source.topicCandidateId) || source.checkedAt !== bundle.recordedAt) {
-    throw new Error('Reconnaissance must reference a dated finalist');
+    throw new Error('Reconnaissance must reference a dated shortlisted candidate');
   }
 }
 for (const id of shortlistIds) {
@@ -80,7 +80,7 @@ for (const id of shortlistIds) {
   }
 }
 console.log(JSON.stringify({
-  id: bundle.id, candidates: ids.size, finalists: shortlistIds.size,
+  id: bundle.id, candidates: ids.size, shortlist: shortlistIds.size,
   sourceLeads: bundle.sourceReconnaissance.length, ownerReview: bundle.ownerReview,
   selectedTopicId: bundle.selectedTopicId,
 }, null, 2));

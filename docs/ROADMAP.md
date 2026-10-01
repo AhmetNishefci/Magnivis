@@ -1,5 +1,7 @@
 # Roadmap
 
+Current new-content gate: **AHMET — CYCLE #2 TOPIC SELECTION**. Owner-authorized discovery is complete; see PROJECT-STATE.md and the Cycle #2 discovery handoff. Earlier closure/sequencing below remains milestone history. No research or production is authorized by the proposed candidate.
+
 ## Cycle #1 completion checkpoint — 2026-10-01
 
 Phantom Traffic completes the first fresh post-recovery content cycle: broad discovery, bounded evidence/editorial review, approved exact master, four manual delivery variants, owner-authorized publication under accepted prepublication presentation uncertainty, and owner-reported live desktop/mobile acceptance. All four publications are recorded with exact source/delivery hashes; TikTok public permalink remains a nonblocking evidence follow-up. No analytics or universal platform geometry inferred. Future content remains governed by Adaptive Creative Direction V1 and independent platform QA. Next gate is **NEW CONTENT CYCLE #2 DISCOVERY**, not yet authorized or started.
