@@ -1,3 +1,4 @@
+import {phantomTrafficPlatformVariants} from './variants/phantom-traffic';
 import {
   contentAssetRegistry,
   type ContentAssetRegistry,
@@ -61,7 +62,10 @@ export const createPlatformVariantRegistry = (
     }
 
     const expectedSafeArea = safeAreaBySurface[variant.surface];
-    if (variant.safeAreaProfileId !== expectedSafeArea) {
+    const allowedSafeAreas = variant.surface === 'youtube-shorts'
+      ? [expectedSafeArea, safeAreaProfileIds.youtubeShortsV2]
+      : [expectedSafeArea];
+    if (!allowedSafeAreas.includes(variant.safeAreaProfileId)) {
       throw new Error(
         `Invalid safe-area profile ${variant.safeAreaProfileId} for ${variant.surface}`,
       );
@@ -116,5 +120,5 @@ export const createPlatformVariantRegistry = (
 export type PlatformVariantRegistry = ReturnType<typeof createPlatformVariantRegistry>;
 
 export const platformVariantRegistry = createPlatformVariantRegistry(
-  [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants],
+  [...speedOfLightPlatformVariants, ...woodFrogPlatformVariants, ...phantomTrafficPlatformVariants],
 );

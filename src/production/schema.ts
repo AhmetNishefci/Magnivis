@@ -48,7 +48,10 @@ const productionAssetSchema = z.object({
 export const productionVisualApprovalSchema = z.object({
   decision: z.literal('approved'),
   reviewedBy: z.string().min(1),
-  reviewedAt: z.iso.datetime(),
+  reviewedAt: z.iso.datetime().optional(),
+  decisionEnteredAt: z.iso.datetime().optional(),
+  reviewTimeBasis: z.literal('decision-entry').optional(),
+  ownerDecision: artifactReferenceSchema.optional(),
   artifact: z.object({
     path: z.string().min(1),
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
@@ -57,7 +60,11 @@ export const productionVisualApprovalSchema = z.object({
   notes: z.string().min(1),
   platformVariantApprovalGranted: z.literal(false),
   publicationApprovalGranted: z.literal(false),
-}).strict();
+}).strict().superRefine((approval, context) => {
+  if (!approval.reviewedAt && !approval.decisionEnteredAt) context.addIssue({code:'custom',message:'Visual approval needs supplied review time or labeled decision-entry time'});
+  if (approval.decisionEnteredAt && (approval.reviewedAt || approval.reviewTimeBasis !== 'decision-entry' || !approval.ownerDecision)) context.addIssue({code:'custom',message:'Decision-entry visual approval needs its exact decision and cannot impersonate a supplied review timestamp'});
+  if (approval.reviewTimeBasis && !approval.decisionEnteredAt) context.addIssue({code:'custom',message:'Decision-entry basis requires entry time'});
+});
 
 export const productionPlanSchema = z.object({
   schemaVersion: z.literal(1),

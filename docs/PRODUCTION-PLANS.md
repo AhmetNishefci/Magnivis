@@ -61,3 +61,9 @@ Historical plan r3 and its exact visual approval remain unchanged. `pnpm product
 ProductionPlan `production-plan.phantom-traffic.v1` revision 1 binds approved package/asset revision 3, exact editorial owner decision, locked script, six beats, approved visual intents, designed CaptionPlan and modular audio. Status is `rendered-candidate-visual-review-required`; no `visualApproval` exists. The [candidate receipt](../content-intelligence/reviews/phantom-traffic-production-v1/candidate-bindings.json) adds exact render implementation/audio/QA hashes and the durable MP4 identity.
 
 `pnpm production:validate phantom-traffic` and `pnpm captions:validate phantom-traffic` perform native source-chain validation; `node --import tsx scripts/validate-phantom-traffic.ts` also checks the reviewed Git commit, measured WAV durations, media report and retained candidate/source/QA bytes. No platform variants or publication authority are created.
+
+## Phantom Traffic exact master lock
+
+Owner visual decision `owner-decision.phantom-traffic.master-visual.v1` binds candidate MP4, reviewed commit, original plan/captions, narration and implementation/QA receipt. ProductionPlan revision 2 is owner-visual-approved; its original revision 1 render input remains immutable. The visual-approval schema supports labeled decisionEnteredAt/reviewTimeBasis with exact owner-decision reference, mutually exclusive with supplied reviewedAt; legacy supplied timestamps remain valid. No owner review instant is fabricated.
+
+`pnpm production:validate phantom-traffic` validates the locked state; the earlier research/production handoffs retain their historical states. Historical candidate source hashes are checked against their immutable reviewed Git commit, while current locked render dependencies remain exact and VideoSpec may change only authorized lifecycle metadata. No master re-encoding occurs.

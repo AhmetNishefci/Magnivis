@@ -12130,5 +12130,808 @@
         "Owner master visual approval, renewed device QA and publication authorization remain pending."
       ]
     }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.locked-master.v1",
+    "contentId": "phantom-traffic",
+    "artifactType": "video-master",
+    "revision": 1,
+    "identity": {
+      "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+      "bytes": 26945449,
+      "mimeType": "video/mp4"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Original generation instant not separately recorded here; audio completion/QA measurement times are in bound provenance. This record uses archive-entry time.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": "owner-decision.phantom-traffic.master-visual.v1",
+    "approvalScope": "owner-visual",
+    "publication": "not-authorized",
+    "localPath": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.candidate-v1.master"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "unknown",
+      "recipe": [
+        "pnpm render phantom-traffic",
+        "pnpm qa phantom-traffic"
+      ],
+      "evidence": [
+        "sourceCommit identifies the approved editorial base; production implementation file hashes are in the candidate bindings receipt.",
+        "Exact original candidate bytes are retained in Git; full MP4 byte-for-byte re-encoding is not claimed.",
+        "Owner master visual approval, renewed device QA and publication authorization remain pending.",
+        "Logical locked-master identity aliases the same exact candidate path/blob; no copy, rename or re-encoding.",
+        "Exact owner visual decision owner-decision.phantom-traffic.master-visual.v1; platform/publication gates remain pending."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.instagram-cover.v1",
+    "contentId": "phantom-traffic",
+    "artifactType": "cover-image",
+    "revision": 1,
+    "identity": {
+      "sha256": "3494907b3759b03146d1f050c17be653e807ba0b5b75abaafa0e87e79e0ccef5",
+      "bytes": 1356006,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": "phantom-traffic.asset.backward-wave.variant.instagram-reels",
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "pnpm exec remotion still src/platform-variants/PhantomTrafficCoverRoot.tsx PhantomTraffic-Instagram-Cover <new-path> --frame=0"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.facebook-feed-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "6baa960c995790e3bde8c4a734cda855b0aaa1919343d2de25aa6fe01a194697",
+      "bytes": 4472,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-feed.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-feed.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.facebook-feed-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "b3c2cd108648e2288a827d6e0e2e9c1df1c0ac06c2648734a54cc5fbe22af6f8",
+      "bytes": 601818,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-feed.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-feed.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.facebook-reel-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "1fdc525da035379702a741b0ad8d287fbbfccce64d874c4ecc46ddec48a48623",
+      "bytes": 4989,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-reel.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-reel.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.facebook-reel-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "063487ee937ce1d40feebe9b080a027894473c42a9307938b7984a75b34d742d",
+      "bytes": 609132,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-reel.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/facebook-reel.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.instagram-grid-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "51b0b78dc3f67f2add0ca7e3b5dde6076284fc8da69c4e5b80ce2e5db2e148ef",
+      "bytes": 5583,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-grid.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-grid.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.instagram-grid-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "a4086dd79f0b3d538d95d9579c1b1124ca8ff954cce6dd60a4a551cd048f7838",
+      "bytes": 713995,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-grid.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-grid.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.instagram-reel-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "eefdba334405c2c0707b3cf5f1759d408b247c10d5bae4e8e34b09d50c8d0e35",
+      "bytes": 5007,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-reel.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-reel.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.instagram-reel-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "8fb90bd4a94dc04becd596905405b6e88d4745184f46ecb9ae17fd44f6b295a3",
+      "bytes": 610972,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-reel.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/instagram-reel.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.tiktok-mobile-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "293378bcc6fac488925bb3b62b8e63de578d70ed683a93614d9f8dca43a9b8d6",
+      "bytes": 4942,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/tiktok-mobile.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/tiktok-mobile.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.tiktok-mobile-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "83e1c3c14746b7c28df0facb8de8d0fe5a3f3a4e1a6690be375481fbe33b3a2a",
+      "bytes": 605084,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/tiktok-mobile.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/tiktok-mobile.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.youtube-desktop-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "971b09fef98997905dcbc1b451414eca088d15b361c70ea3663fb831d333b759",
+      "bytes": 4142,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-desktop.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-desktop.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.youtube-desktop-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "a308e0089359c56e55b2ee646884ec41830b00269dff76e0883a4afb15ca15bf",
+      "bytes": 604158,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-desktop.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-desktop.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.youtube-mobile-json",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "34d220d4be6ebdd4217a13bfff2f3108b614277c3d48a5332515b10b1f7ee48f",
+      "bytes": 4997,
+      "mimeType": "application/json"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-mobile.json",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-mobile.json",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "artifactId": "phantom-traffic.platform-qa-v1.youtube-mobile-png",
+    "contentId": "phantom-traffic",
+    "artifactType": "qa-evidence",
+    "revision": 1,
+    "identity": {
+      "sha256": "14f91e3f35eee3d0726ea9083843780590c57ea57bbfb5075d53910f8dc73328",
+      "bytes": 609395,
+      "mimeType": "image/png"
+    },
+    "createdAt": null,
+    "creationUnknownReason": "Native QA reports record local generation-entry time; no device test/owner review time is claimed.",
+    "recordedAt": "2026-10-01T10:20:24.589Z",
+    "sourceCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+    "productionPlanId": "production-plan.phantom-traffic.v1",
+    "captionPlanId": "caption-plan.phantom-traffic.v1",
+    "platformVariantId": null,
+    "approvalDecisionId": null,
+    "approvalScope": "none",
+    "publication": "not-authorized",
+    "localPath": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-mobile.png",
+    "locations": [
+      {
+        "provider": "git",
+        "key": "artifacts/qa-evidence/phantom-traffic-platform-v1/youtube-mobile.png",
+        "durability": "git-tracked"
+      }
+    ],
+    "provenance": "ORIGINAL_PRODUCTION",
+    "retention": "DURABLE_REQUIRED",
+    "historicalSha256": null,
+    "historicalStatus": "new-production",
+    "replacesArtifactId": null,
+    "parentArtifactIds": [
+      "phantom-traffic.locked-master.v1"
+    ],
+    "exactBytesMatter": true,
+    "reproducibility": {
+      "status": "derived",
+      "recipe": [
+        "node --import tsx scripts/generate-traffic-platform-qa.ts; use a new evidence revision rather than overwriting records"
+      ],
+      "evidence": [
+        "Original code/model preview; never a real device screenshot or measured crop.",
+        "Source master exact hash bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "Decision/variant/profile/model-source bindings are recorded in platform-bindings.json."
+      ]
+    }
   }
 ]

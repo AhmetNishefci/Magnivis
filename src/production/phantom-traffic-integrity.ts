@@ -14,14 +14,18 @@ import {phantomTrafficKnowledgePackage as pkg} from '../knowledge/packages/phant
 import {phantomTrafficContentAsset as asset} from '../content-assets/assets/phantom-traffic';
 import {applyEditorialLock} from '../content-intelligence/editorial-lock';
 import {sha256Json} from '../content-intelligence/run-schema';
-import {phantomTrafficProductionPlan as plan} from './plans/phantom-traffic';
+import reviewedPlan from './plans/phantom-traffic.json';
+import {productionPlanSchema} from './schema';
+const plan=productionPlanSchema.parse(reviewedPlan);
 import {validateProductionPlanReferences} from './schema';
 import {phantomTrafficCaptionPlan as captions} from '../captions/plans/phantom-traffic';
 import {validateCaptionPlanAgainstNarration} from '../captions/plan';
 import {captionPlanToDerivedCaptions, captionsToWebVtt} from '../captions/derive';
 import {assertCaptionRegionIsSafe} from '../captions/design-system';
 import {safeAreaProfileIds, safeAreaProfileRegistry} from '../design/safe-areas';
-import {phantomTraffic as video} from '../content/videos/phantom-traffic';
+import reviewedVideo from '../../content-intelligence/reviews/phantom-traffic-master-lock-v1/reviewed-video-spec.json';
+import {videoSpecSchema} from '../content/schema';
+const video=videoSpecSchema.parse(reviewedVideo);
 
 export const fileSha256 = (path: string) => createHash('sha256').update(readFileSync(path)).digest('hex');
 export const validatePhantomTrafficProduction = () => {

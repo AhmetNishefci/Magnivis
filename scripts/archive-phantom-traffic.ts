@@ -8,6 +8,7 @@ import {validatePhantomTrafficProduction,fileSha256} from '../src/production/pha
 import {phantomTrafficProductionPlan as plan} from '../src/production/plans/phantom-traffic';
 import metadata from '../src/production/narration/phantom-traffic.json';
 import decision from '../content-intelligence/reviews/phantom-traffic-approved-v3/owner-decision.json';
+if(plan.visualApproval)throw new Error('Locked master/candidate receipt is immutable; create a separately identified adaptation');
 const validation=validatePhantomTrafficProduction();
 const qa='qa/phantom-traffic-narrated',archive='artifacts/qa-evidence/phantom-traffic-candidate-v1';
 const master='artifacts/masters/phantom-traffic-candidate-v1.mp4';

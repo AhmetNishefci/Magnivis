@@ -1,4 +1,4 @@
-import {validatePhantomTrafficProduction} from '../src/production/phantom-traffic-integrity';
+import {validatePhantomTrafficLockedMaster} from '../src/production/phantom-traffic-master-integrity';
 import {parseManifests, type ArtifactManifest} from '../src/artifacts/schema';
 import {validateRecoveryDecision} from '../src/artifacts/recovery';
 import {createHash} from 'node:crypto';
@@ -18,7 +18,7 @@ const sha256 = (path: string) => createHash('sha256')
 
 const requestedId = process.argv[2];
 if (requestedId === 'phantom-traffic') {
-  console.log(JSON.stringify(validatePhantomTrafficProduction(), null, 2));
+  console.log(JSON.stringify(validatePhantomTrafficLockedMaster(), null, 2));
   process.exit(0);
 }
 const video = requestedId === woodFrog.id

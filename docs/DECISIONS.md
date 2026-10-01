@@ -299,3 +299,9 @@ GitHub PR #1 merged at 923641b6e00ef3196cf80ea6202aab8958e07330 with both origin
 Ahmet approved finalized editorial commit `21c3a5539cf02b1c4a88b8ff89aca0139a7ec079`, exact narration and scientific boundaries, and explicitly authorized one master production candidate. Record full package/asset approval with truthful decision-entry time, preserving all prior claim states and immutable handoffs. Use original controlled procedural motion with physical shaded vehicles/roadway because temporal consistency is essential to the forward-car/backward-pattern explanation; no generated stills or copyrighted footage are needed.
 
 Retain the exact candidate/audio and bounded final QA evidence in normal Git before handoff. Native provenance now distinguishes new originals from historical recovery artifacts. Owner master visual review remains mandatory; no platform/device approval or public action is authorized.
+
+## 2026-10-01 — Phantom Traffic master lock and presentation review
+
+Ahmet explicitly visually approved candidate SHA-256 bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b. Record decision-entry time rather than invent a supplied review instant; retain the same path/blob and immutable original render inputs. ProductionPlan revision 2 records exact master approval; platform/publication approvals remain false.
+
+Use the same master for four playback variants pending device evidence. Produce seven labeled local context/surface references with surviving profile authority intact. Create one original Instagram cover candidate to provide compact topic framing; retain unknown crop. Do not speculate on a Facebook feed derivative before measured evidence. Stop at real-device platform review; no upload, publication, scheduling or delivery creation.

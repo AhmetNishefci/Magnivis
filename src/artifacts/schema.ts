@@ -5,9 +5,9 @@ export const provenanceSchema = z.enum(['ORIGINAL_PRODUCTION', 'HISTORICAL_EXACT
 export const artifactIdentitySchema = z.object({sha256: digestSchema, bytes: z.number().int().nonnegative().nullable(), mimeType: z.string().min(1)}).strict();
 export const artifactLocationSchema = z.object({provider: z.string().regex(/^[a-z0-9-]+$/), key: relativePathSchema, durability: z.enum(['local-only', 'independent-archive', 'git-tracked'])}).strict();
 export const artifactManifestSchema = z.object({
- schemaVersion: z.literal(1), artifactId: z.string().regex(/^[a-z0-9_.-]+$/), contentId: z.string().min(1), artifactType: z.enum(['video-master','platform-derivative','qa-evidence','delivery-file','narration-audio','soundscape-audio']), revision: z.number().int().positive(),
+ schemaVersion: z.literal(1), artifactId: z.string().regex(/^[a-z0-9_.-]+$/), contentId: z.string().min(1), artifactType: z.enum(['video-master','platform-derivative','qa-evidence','delivery-file','narration-audio','soundscape-audio','cover-image']), revision: z.number().int().positive(),
  identity: artifactIdentitySchema, createdAt: z.iso.datetime().nullable(), creationUnknownReason: z.string().nullable(), recordedAt: z.iso.datetime(), sourceCommit: z.string().regex(/^[a-f0-9]{40}$/),
- productionPlanId: z.string().nullable(), captionPlanId: z.string().nullable(), platformVariantId: z.string().nullable(), approvalDecisionId: z.string().nullable(), approvalScope: z.enum(['historical-visual','operational-replacement','none']),
+ productionPlanId: z.string().nullable(), captionPlanId: z.string().nullable(), platformVariantId: z.string().nullable(), approvalDecisionId: z.string().nullable(), approvalScope: z.enum(['historical-visual','operational-replacement','owner-visual','none']),
  publication: z.enum(['recorded-published-bytes','unknown','not-authorized']),
  localPath: relativePathSchema, locations: z.array(artifactLocationSchema), provenance: provenanceSchema,
  retention: z.enum(['DURABLE_REQUIRED','DURABLE_WHEN_APPROVED','REGENERABLE','TEMPORARY','HISTORICAL_EXPECTATION_ONLY']),

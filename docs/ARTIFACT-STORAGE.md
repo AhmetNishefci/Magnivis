@@ -58,3 +58,7 @@ A single important master-review candidate and its exact narration, soundscape, 
 New originals use provenance `ORIGINAL_PRODUCTION` with `historicalStatus: new-production`, separate from every recovery category. They have no historical/replacement identity, `approvalScope: none` and `publication: not-authorized`. `sourceCommit` is the owner-approved editorial base; the production implementation is hash-bound in its committed candidate receipt, avoiding a circular claim about the commit that contains its own manifest. Existing historical manifest records/identities remain unchanged.
 
 The two independent payoff still renders demonstrate same-frame determinism only. Full MP4 re-encoding identity is not claimed; exact retained video/audio bytes remain the review authority.
+
+## Locked master and presentation evidence
+
+Master visual approval may add a new logical `owner-visual` identity for the same candidate path/blob; the original candidate manifest remains unchanged. This is explicit same-byte promotion, not historical approval transfer or silent replacement. CoverAsset PNGs use artifactType `cover-image`, independent review state and exact hashes. Phantom Traffic adds one cover candidate and seven bounded local sheet/report pairs as durable-required review evidence; no master copy or video derivative.

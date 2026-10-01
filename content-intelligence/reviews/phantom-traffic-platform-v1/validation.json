@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "checks": {
+    "pnpmCheck": "passed",
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "files": 21,
+      "passed": 283,
+      "added": 9
+    },
+    "masterProductionCaptionBindings": "passed",
+    "historicalCandidateEvidence": "passed",
+    "platformVariantAndEvidenceBindings": "passed",
+    "unchangedMasterSha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+    "coverAndModelDeterminism": "passed",
+    "existingManifestRecordsPreserved": 241,
+    "durableArtifactsVerified": 166,
+    "scopedSecretScan": {
+      "textFiles": 52,
+      "findings": 0
+    },
+    "gitDiffCheck": "passed"
+  },
+  "platformReadiness": {
+    "profileRegression": "INCOMPLETE",
+    "expectedProfileGateExitCode": 1,
+    "knownInsetCollisions": 0,
+    "gridAndFeedGeometry": "UNMEASURED",
+    "realDevicePasses": 0,
+    "platformApprovalGranted": false,
+    "publicationApprovalGranted": false
+  },
+  "visualInspection": {
+    "sheetsInspected": 7,
+    "labelsVisible": true,
+    "coverInspected": true,
+    "unknownCropsNotModeled": true,
+    "actualMasterFramesUsed": true
+  }
+}

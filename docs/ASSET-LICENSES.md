@@ -30,4 +30,7 @@
 | `phantom-traffic.wav` | Original seeded procedural synthesis | Project-owned original work | Quiet stereo road texture and restrained transition accents; no sampled effects or external music. Generator and SHA-256 retained. |
 | Phantom Traffic designed captions and optional WebVTT | Exact approved narration, manual semantic grouping and measured-clip timing | Project-owned original work | Burned-in caption layer plus optional accessibility metadata. No third-party transcription. |
 
+| Phantom Traffic Instagram cover candidate | Original Magnivis procedural SVG/CSS, reusing original vehicle shapes | Project-owned original work | Separate original still and two-line topic headline; no copied footage/figures/imagery. Crop unmeasured; cover approval pending. Master bytes unchanged. |
+| Phantom Traffic platform local model sheets | Exact approved-master decoded frames plus original profile/region overlays | Project-owned original work | Clearly labeled local/provisional evidence; no synthetic native screenshots or invented crop/UI geometry. |
+
 Scientific source pages are factual references, not embedded media assets. No third-party photos, video, music, sound effects, or logos are included in V1.
