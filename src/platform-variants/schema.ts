@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {platformApprovalSchema} from './owner-presentation';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 import {taxonomyTermSchema} from '../knowledge/taxonomy';
 
@@ -53,6 +54,10 @@ const sourceMasterSchema = z.object({
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
   }).strict(),
   relationship: z.enum(['exact-master', 'platform-safe-area-derivative']),
+  contentBoundsEvidence: z.object({
+    regions: z.object({path: z.string().min(1), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict(),
+    report: z.object({path: z.string().min(1), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict(),
+  }).strict().optional(),
 }).strict();
 
 const operatorGuidanceSchema = z.object({
@@ -80,11 +85,7 @@ const operatorGuidanceSchema = z.object({
   notes: z.array(z.string().min(1)).default([]),
 }).strict();
 
-const approvalSchema = z.object({
-  approvedBy: z.string().min(1),
-  approvedAt: z.iso.date(),
-  notes: z.string().min(1).optional(),
-}).strict();
+const approvalSchema = platformApprovalSchema;
 
 export const platformVariantSchema = z.object({
   id: stableKnowledgeIdSchema,
@@ -113,6 +114,7 @@ export const platformVariantSchema = z.object({
   cover: z.object({
     strategy: z.enum(['frame-selection', 'custom-image', 'platform-default']),
     intent: z.string().min(1),
+    artifact: z.object({id:z.string().min(1),path:z.string().min(1),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict().optional(),
   }).strict(),
   captions: z.object({
     behavior: z.enum(['external-track', 'platform-generated', 'burned-in', 'none']),

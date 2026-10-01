@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.phantom-traffic.asset.backward-wave.variant.youtube-shorts.r2",
+  "generatedAt": "2026-10-01T11:03:48.143Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "phantom-traffic.asset.backward-wave.variant.youtube-shorts",
+      "revision": 2,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "phantom-traffic.asset.backward-wave",
+      "revision": 3
+    },
+    "knowledgePackage": {
+      "id": "phantom-traffic",
+      "revision": 3
+    },
+    "videoSpec": {
+      "id": "phantom-traffic",
+      "compositionId": "Magnivis-Phantom-Traffic"
+    },
+    "productionChain": {
+      "productionPlan": {
+        "id": "production-plan.phantom-traffic.v1",
+        "revision": 2
+      },
+      "captionPlan": {
+        "id": "caption-plan.phantom-traffic.v1",
+        "revision": 1,
+        "sha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08"
+      },
+      "lockedMaster": {
+        "videoSpecId": "phantom-traffic",
+        "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+        "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b",
+        "relationship": "exact-master"
+      }
+    }
+  },
+  "destination": {
+    "platform": "youtube",
+    "surface": "youtube-shorts",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.youtube-shorts.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.youtube-shorts.v2",
+      "revision": 2,
+      "reviewedAt": "2026-09-30"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 34.219,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "title": "The traffic jam that moves backward",
+    "description": "The cars move forward. The slow patch can move backward.\n\nIn a controlled experiment, 22 cars formed stop-and-go traffic on a circular track with no obstruction. Small speed changes can sometimes grow in dense traffic; not every jam starts this way.\n\nOriginal explanatory animation and experiment reconstruction. Synthetic narration.\nResearch: Sugiyama et al. (2008), https://doi.org/10.1088/1367-2630/10/3/033001",
+    "hashtags": [
+      "#traffic",
+      "#science"
+    ],
+    "claimIds": [
+      "phantom-traffic.claim.backward-pattern",
+      "phantom-traffic.claim.vehicles",
+      "phantom-traffic.claim.no-obstruction",
+      "phantom-traffic.claim.conditional-growth",
+      "phantom-traffic.claim.turnover",
+      "phantom-traffic.claim.bottleneck-distinction"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Frame selection remains operator/device-review dependent; no extra cover generated."
+    }
+  },
+  "captions": {
+    "behavior": "burned-in",
+    "designedBurnedIn": true,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "ready-for-private-preview",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 26945449,
+      "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 1440,
+      "sha256": "efe9485dd011acaca8791bdacda0eedf26de7d8ffd65b60d24f780d07155d74c"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 1682,
+      "sha256": "272912fd1ee307fb3f55a99372b90553d2f0d75f91a3ad7bebc6a4c29d1e7ea8"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1792,
+      "sha256": "ed8e81c15e42fb725af145ca8852e49309d0d526a60750b2df5dbb5044b2b5e6"
+    }
+  ]
+}

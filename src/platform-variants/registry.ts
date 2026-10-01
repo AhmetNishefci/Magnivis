@@ -1,4 +1,4 @@
-import {phantomTrafficPlatformVariants} from './variants/phantom-traffic';
+import {phantomTrafficDeliveryVariants as phantomTrafficPlatformVariants} from './variants/phantom-traffic-delivery';
 import {
   contentAssetRegistry,
   type ContentAssetRegistry,

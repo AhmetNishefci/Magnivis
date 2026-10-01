@@ -1,5 +1,14 @@
 # Project state
 
+## Phantom Traffic — owner-reported device acceptance and delivery preparation
+
+Ahmet reports approval of the tested real-device presentation. The exact surface list and whether the Instagram cover PNG was used are not supplied; a scope question remains pending. [Owner decision](../content-intelligence/reviews/phantom-traffic-delivery-v1/owner-decision.json) records his statement and labeled decision-entry time, not a fabricated review timestamp. Device, OS/app, screenshots and measured geometry remain unknown. No specific surface pass is inferred.
+
+Four revision-2 PlatformVariants remain `editorial-review`, with four durable `draft-review` delivery handoffs reusing the immutable locked master. No derivative is justified. The existing Instagram cover remains a candidate. [Publication checklist](../content-intelligence/reviews/phantom-traffic-delivery-v1/publication-checklist.md) supplies exact media, independent platform copy/settings and the remaining scope question. These packages are not production-ready/publication-eligible. Historical QA and approval records remain immutable.
+
+Next: confirm the six tested surfaces and exact Instagram cover use, then finalize eligible variant/delivery state. Separate **PHANTOM TRAFFIC PUBLICATION AUTHORIZATION** remains required before any upload, publication or scheduling. Adaptive Creative Direction V1 governs future content unchanged; Phantom Traffic is not a universal template.
+
+
 ## Adaptive Creative Direction V1 — system milestone, 2026-10-01
 
 Owner authorizes future-facing brain/schema/validation changes only. CREATIVE-DIRECTION.md separates identity/quality constants from per-story execution. A hash-bound ContentAsset companion and convergence review precede future ProductionPlans; AI direction remains a proposal. Historical render paths, audio, captions, approvals, masters, profiles and Phantom Traffic presentation evidence remain unchanged. No new story, production, long-form, upload or publication is authorized. Phantom Traffic’s real-device gate below remains the active content gate.

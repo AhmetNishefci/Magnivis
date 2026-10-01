@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {platformApprovalSchema} from '../platform-variants/owner-presentation';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 import {
   platformSchema,
@@ -19,18 +20,14 @@ const revisionReferenceSchema = z.object({
 }).strict();
 
 const artifactSchema = z.object({
-  role: z.enum(['video', 'captions', 'metadata', 'upload-copy', 'review']),
+  role: z.enum(['video', 'captions', 'cover', 'metadata', 'upload-copy', 'review']),
   path: z.string().regex(/^[a-z0-9][a-z0-9._-]*$/),
   mediaType: z.string().min(1),
   bytes: z.number().int().nonnegative(),
   sha256: z.string().regex(/^[a-f0-9]{64}$/),
 }).strict();
 
-const approvalSchema = z.object({
-  approvedBy: z.string().min(1),
-  approvedAt: z.iso.date(),
-  notes: z.string().min(1).optional(),
-}).strict();
+const approvalSchema = platformApprovalSchema;
 
 export const deliveryManifestSchema = z.object({
   schemaVersion: z.union([z.literal(1), z.literal(2)]),
@@ -91,6 +88,7 @@ export const deliveryManifestSchema = z.object({
     cover: z.object({
       strategy: z.enum(['frame-selection', 'custom-image', 'platform-default']),
       intent: z.string().min(1),
+      artifact:z.object({id:z.string().min(1),path:z.string().min(1),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict().optional(),
     }).strict(),
   }).strict(),
   captions: z.object({
@@ -170,6 +168,9 @@ export const deliveryManifestSchema = z.object({
       message: 'Only external caption deliveries may include a caption artifact',
     });
   }
+
+  const covers=manifest.artifacts.filter(a=>a.role==='cover');
+  if ((manifest.metadata.cover.artifact && (manifest.metadata.cover.strategy!=='custom-image'||covers.length!==1||covers[0]?.sha256!==manifest.metadata.cover.artifact.sha256)) || (!manifest.metadata.cover.artifact&&covers.length)) context.addIssue({code:'custom',message:'Delivery cover must match its exact registered artifact'});
 
   const seenRoles = new Set<string>();
   const seenPaths = new Set<string>();
