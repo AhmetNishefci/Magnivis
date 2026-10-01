@@ -1,8 +1,14 @@
 # Project state
 
-## CONTENT CYCLE #3 — DISCOVERY COMPLETE, owner topic selection pending
+## CONTENT CYCLE #3 — BOUNDED RESEARCH COMPLETE, editorial review pending
 
-Ahmet explicitly authorized Cycle #3 open-world short-form discovery. [Owner handoff](../content-intelligence/discovery/cycle-3-2026-10-01/owner-review.md) retains 34 proposals / 33 distinct ideas, ten shortlisted candidates and five materially different finalists. Chocolate crystallization is an advisory proposed advance; selectedTopicId remains null. Discovery precedes classification, and legitimate new domains remain eligible. No bounded research, KnowledgePackage, ContentAsset, verified claims, final editorial or production artifacts began. CreativeDirection follows research/editorial approval; af_heart remains primary, with zero topic-selection convenience advantage. Duration is story-led; long-form roadmap remains preserved and unstarted.
+Ahmet selected **Why melted chocolate can come back wrong** and explicitly authorized bounded research/editorial proposal from committed discovery milestone `d0026125de4d3866738c6da232c8ce480aa15769`. [Editorial handoff](../content-intelligence/reviews/chocolate-crystal-choice-v1/owner-review.md) recommends **same recipe, different structure**: cocoa-butter crystal form and larger fat-crystal network both matter. Eleven package sources have honest targeted/abstract/historical inspection accounting. Forty-two statement-level decisions: five supported, 25 qualified, ten excluded, two uncertain; **zero owner-verified**. Nine claims support an exact **87-word** narration proposal, estimated 37.8–44.3 seconds including pauses, not measured audio.
+
+Native KnowledgePackage revision 1 remains `review`; ContentAsset revision 1 remains `editorial-review`; ClaimReview is `ready-for-owner-decision`. Separate selection binds the unchanged discovery bank and revision-2 researching candidate. All 34 proposals/33 distinct ideas remain preserved, including strong future Holbein, whale ear, moral luck and commons candidates. Food/material science receives no future ranking preference; discover first/classify second and new domains remain open.
+
+Poor temper, fat bloom, sugar bloom, water seizure, heat damage, composition and storage conditions are distinguished. Form V alone cannot guarantee snap/gloss. Quantitative temperatures/counts remain qualified research reserves, not a recipe or narration requirement. The VisualPlan defines comprehension only; no execution aesthetic selected. af_heart remains primary; soundscape/captions adaptive; duration story-led. Long-form roadmap preserved, unstarted.
+
+No owner claim, hook, narration, editorial or production approval is inferred. No CreativeDirection, ProductionPlan, CaptionPlan, generated speech/images, rendering, platform variants/deliveries, upload/scheduling/publication or Cycle #4 began. Older discovery-only statements elsewhere remain historical milestone descriptions superseded only within this research authorization.
 
 Longitude Clock is **OWNER-REPORTED SCHEDULED**, not published: Ahmet manually scheduled the exact publication-authorized packages on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels for **2026-10-02 at 20:00 Kosovo local time (Europe/Pristina, owner-supplied label)**. [Scheduling evidence](../content-intelligence/operations/longitude-clock-scheduling-v1/owner-report.json) binds original final release identities. No live IDs/URLs, actual publication times, screenshots, device evidence, presentation results, metrics or completed PublicationRecords are invented. Ahmet will supply actual live evidence after release. Assistant performed no scheduling/upload/publication; all locked master/package/approval bytes remain intact.
 
@@ -10,7 +16,7 @@ Current near-term target: approximately **one excellent unique short-form video/
 
 Branch is based on Cycle #2 delivery HEAD `93e9fff0e7390e88f111d925a6baa3588d74de00`; Cycle #2 is preserved without main merge. Older pending-gate/no-Cycle-3 statements below are historical milestones superseded only by this explicit discovery authorization and scheduling report. Recovery remains CLOSED, circulation-cessation exclusion and historical identities unchanged. AGENTS.md’s recovery-era Phantom Traffic pending-device wording is historical routing context; the current closure/publication records and this state lead govern actual evidence, without rewriting its hash-bound authority.
 
-**Exact next gate: AHMET — CONTENT CYCLE #3 TOPIC SELECTION.** No topic is owner-selected. Cycle #2 separately awaits actual live evidence, not a fabricated completion.
+**Exact next gate: AHMET — CYCLE #3 EDITORIAL REVIEW.** Topic selection grants no claim/editorial/creative/production approval. Cycle #2 separately awaits actual live evidence, not a fabricated completion.
 
 ## CONTENT CYCLE #2 — PUBLICATION AUTHORIZED, owner manual upload next
 

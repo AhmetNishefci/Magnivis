@@ -1,0 +1,78 @@
+{
+  "decisions": [
+    {
+      "claimId": "chocolate-crystal-choice.claim.grainy-always",
+      "proposedPhrase": "Grainy chocolate always means bad temper.",
+      "reason": "Other causes exist; texture alone does not diagnose polymorphism.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.ingredients-changed",
+      "proposedPhrase": "Melting necessarily changes chocolate’s ingredients.",
+      "reason": "Ordinary physical remelting need not change recipe; overheating/oxidation are separate.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.recipe-change",
+      "proposedPhrase": "Tempering changes the recipe.",
+      "reason": "Tempering governs crystallization; seed chocolate must be composition-compatible when claiming identical recipe.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.all-bad",
+      "proposedPhrase": "All melted chocolate becomes bad.",
+      "reason": "Controlled processing can recover useful properties; bad is vague and not a food-safety conclusion.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.only-v",
+      "proposedPhrase": "There is one correct cocoa-butter crystal, and Form V always guarantees perfect chocolate.",
+      "reason": "Form V is generally targeted, not sufficient; quality depends on network/formulation.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.white-mold",
+      "proposedPhrase": "White marks always mean mold.",
+      "reason": "Bloom can cause white surfaces; this does not certify that any real sample is safe or mold-free.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.bloom-same",
+      "proposedPhrase": "Fat bloom and sugar bloom are the same.",
+      "reason": "Fat and sugar components differ; coexistence does not make them identical.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.slow-cooling",
+      "proposedPhrase": "Tempering is simply cooling chocolate slowly.",
+      "reason": "Temperature management and suitable nucleation/structure matter; no single cooling speed defines tempering.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.literal-memory",
+      "proposedPhrase": "Chocolate literally remembers temperature.",
+      "reason": "Metaphor only; surviving seeds and kinetics explain thermal-history effects.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.same-structure",
+      "proposedPhrase": "The same ingredients guarantee the same material structure.",
+      "reason": "Composition constrains possibilities but processing changes structure.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.scorch-details",
+      "proposedPhrase": "A universal molecular explanation and damage temperature explains every case of overheated chocolate.",
+      "reason": "Excessive heat is a separate possible damage route, not proved to be merely poor temper. Exact degradation threshold/mechanism requires further research; excluded from narration.",
+      "recommendation": "hold"
+    },
+    {
+      "claimId": "chocolate-crystal-choice.claim.demo-result",
+      "proposedPhrase": "A future Magnivis melt-and-reset demonstration will visibly prove its samples have different cocoa-butter polymorphs.",
+      "reason": "No demonstration performed. Snap/gloss alone cannot identify polymorphs; instrumented evidence required. Original schematic can explain, not claim experimental proof.",
+      "recommendation": "hold"
+    }
+  ],
+  "ownerApproved": false,
+  "schemaVersion": 1
+}

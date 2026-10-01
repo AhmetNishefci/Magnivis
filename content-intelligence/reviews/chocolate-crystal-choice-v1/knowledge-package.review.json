@@ -1,0 +1,911 @@
+{
+  "caveats": [
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.same-recipe",
+        "chocolate-crystal-choice.claim.cocoa-butter",
+        "chocolate-crystal-choice.claim.melting-network",
+        "chocolate-crystal-choice.claim.multiple-arrangements",
+        "chocolate-crystal-choice.claim.network",
+        "chocolate-crystal-choice.claim.soft-recool",
+        "chocolate-crystal-choice.claim.tempering",
+        "chocolate-crystal-choice.claim.seed",
+        "chocolate-crystal-choice.claim.snap-gloss"
+      ],
+      "id": "chocolate-crystal-choice.caveat.core",
+      "statement": "Scope: ordinary cocoa-butter chocolate, controlled remelting without water/scorching; Form V alone does not guarantee texture or gloss. No home recipe or safety diagnosis."
+    }
+  ],
+  "centralQuestion": "Why can the same chocolate come back different after melting?",
+  "claims": [
+    {
+      "caveats": [
+        "Controlled ordinary remelting; excludes scorching, water/additions and claimed chemical identity measured molecule by molecule."
+      ],
+      "evidence": [
+        {
+          "locator": "Mechanical properties; Table 2; Methods: Samples",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.same-recipe",
+      "statement": "Chocolate can be melted and resolidified without adding ingredients yet acquire different mechanical properties.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Abstract and introduction",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.cocoa-butter",
+      "statement": "Cocoa butter is a major fat in chocolate, and its crystallization contributes to chocolate’s physical properties.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Partial melting can preserve seeds; molten chocolate still contains solid sugar/cocoa particles."
+      ],
+      "evidence": [
+        {
+          "locator": "Polymorphism; conventional tempering stages",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.melting-network",
+      "statement": "Melting cocoa butter sufficiently disrupts its existing fat-crystal structure; subsequent cooling builds a new structure.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Polymorphism definition and nomenclature",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.multiple-arrangements",
+      "statement": "Cocoa butter can crystallize into different molecular arrangements called polymorphs.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Not crystal form alone; solids, formulation, sample temperature and geometry also matter."
+      ],
+      "evidence": [
+        {
+          "locator": "Mechanical properties; Fig.5 caption; micro-CT",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.network",
+      "statement": "Chocolate texture depends on the fat-crystal network as well as the cocoa-butter crystal form.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Can, not always. Primary protocol: 90% cocoa commercial product set at 5°C for one hour then 20°C for four days; not representative of every household treatment."
+      ],
+      "evidence": [
+        {
+          "locator": "Table 2; Mechanical properties",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.soft-recool",
+      "statement": "Remelting and uncontrolled resolidification can produce softer chocolate rather than restore its original texture.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Processes vary; it is not a recipe change, nor simply slow cooling."
+      ],
+      "evidence": [
+        {
+          "locator": "Tempering steps; seed addition; continuous heat-exchange equipment",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.purdue-2023"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.tempering",
+      "statement": "Tempering controls cocoa-butter crystallization through temperature management and usually agitation, or suitable seeding, before final setting.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Seed survival, quantity, composition and working temperature matter; no universal dosage."
+      ],
+      "evidence": [
+        {
+          "locator": "Seeding during temperature reduction",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.purdue-2023"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.seed",
+      "statement": "Crystals supplied by suitable tempered chocolate or cocoa butter can help initiate and guide crystallization.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Snap and gloss are related properties, not a single diagnostic of crystal form or proof of perfect temper."
+      ],
+      "evidence": [
+        {
+          "locator": "Mechanical properties; Surface reflectance; Discussion",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.snap-gloss",
+      "statement": "Controlled crystallization helps develop chocolate’s characteristic snap and smooth, glossy surface.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Predominantly, not exclusively; Form V identification alone is insufficient for desired quality."
+      ],
+      "evidence": [
+        {
+          "locator": "Polymorphism and Table 1",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.form-v",
+      "statement": "Conventional tempering generally aims for cocoa butter predominantly in Form V, commonly labelled β2 in the cited cocoa-butter convention.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Stable does not mean the best confectionery texture; time, composition and conditions affect transitions."
+      ],
+      "evidence": [
+        {
+          "locator": "Conventional polymorphism; bloom",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.form-vi",
+      "statement": "Form VI is more thermodynamically stable than metastable Form V in the conventional cocoa-butter scheme.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Conventional model, not exactly six immutable states for every sample; no number needed in narration."
+      ],
+      "evidence": [
+        {
+          "locator": "Table 1 and discussion of naming/pseudoforms",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.six-convention",
+      "statement": "Six forms labelled I–VI are commonly described for cocoa butter, but nomenclature and the independence of some forms are debated.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Abstract-only supplemented by 2025 perspective; notation varies, β(V) is not universally standardized."
+      ],
+      "evidence": [
+        {
+          "locator": "Abstract: pure POS templates and cocoa-butter V/VI",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.molecular-review-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.names",
+      "statement": "In the cited common cocoa-butter scheme V corresponds to β2 and VI to β1; pure constituent triacylglycerols use naming systems that cannot be mapped blindly onto these labels.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Minor components; hierarchical crystallization",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.nucleation",
+      "statement": "Nucleation is the initiation of crystal formation, while crystal growth and aggregation help build the larger fat-crystal network.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Geometry, temperature and composition affect fracture. No universal loudness test or sound measurement in cited study."
+      ],
+      "evidence": [
+        {
+          "locator": "Three-point bending; Mechanical properties",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.snap-physical",
+      "statement": "Snap relates to chocolate’s stiffness and fracture during bending; elastic bending modulus measures stiffness rather than the sound alone.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Whiteness index is not identical to gloss; mold finish/condensation and particle distribution also matter; no exhaustive optical model."
+      ],
+      "evidence": [
+        {
+          "locator": "Surface reflectance",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.gloss-physical",
+      "statement": "A smooth chocolate surface favors gloss, while surface roughness and large crystals can scatter light and make it appear dull or whitish.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Cocoa butter is a mixture; ranges overlap and measurements depend on methods."
+      ],
+      "evidence": [
+        {
+          "locator": "Table 1 and DSC/WAXS limitations",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.melting-behavior",
+      "statement": "Cocoa-butter crystal form affects melting behavior, but real chocolate composition and mixed crystal populations complicate a single melting-point label.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Thermal history is structural inheritance and kinetics, not literal memory or agency."
+      ],
+      "evidence": [
+        {
+          "locator": "Conventional tempering; processing conditions",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.thermal-history",
+      "statement": "Heating, cooling, holding and shear influence crystallization kinetics and the structure that forms.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Mold material/finish, geometry and cooling conditions also affect release; no guaranteed contraction percentage."
+      ],
+      "evidence": [
+        {
+          "locator": "§4.1, contraction and mold release",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.lipkin-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.mold-release",
+      "statement": "Properly tempered chocolate contracts as it sets, which can help release it from a mold.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Not exclusively V→VI; not every transition produces bloom; keep out of central concise proposal."
+      ],
+      "evidence": [
+        {
+          "locator": "Bloom types and transitions",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.fat-bloom",
+      "statement": "Fat bloom involves changes in fat distribution and crystallization at the surface; several transitions and migration routes can contribute.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Sugar bloom",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.purdue-2023"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.sugar-bloom",
+      "statement": "Sugar bloom can form when surface moisture dissolves sugar and drying leaves recrystallized sugar at the surface.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Three product examples, not prevalence estimate."
+      ],
+      "evidence": [
+        {
+          "locator": "Control experiments; milk-chocolate Results",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.heuler-2020"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.mixed-bloom",
+      "statement": "Fat and sugar bloom are different phenomena and can coexist on one chocolate surface.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Small moisture additions promote sucrose-particle sticking; sufficient water can dissolve sugar and reduce viscosity. Not a wrong-polymorph diagnosis or universal water threshold."
+      ],
+      "evidence": [
+        {
+          "locator": "§5.6 Residual Water",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.lipkin-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.seizure",
+      "statement": "A small accidental amount of water or steam can make melted chocolate seize into a grainy mass, a distinct problem from poor temper.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Sugar-moisture route separately supported by Purdue; appearance alone cannot identify the cause."
+      ],
+      "evidence": [
+        {
+          "locator": "Type 3 bloom; storage thermal cycling",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.storage",
+      "statement": "Storage temperature cycling can promote partial melting, recrystallization and fat bloom, while humidity or condensation can promote sugar bloom.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Different formulations are not controlled same-recipe tests; no universal hardness hierarchy or single temper curve for each label."
+      ],
+      "evidence": [
+        {
+          "locator": "Materials and Methods; microstructural results",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.glicerina-2016"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.composition",
+      "statement": "Milk fat, other fats, emulsifiers and particle content can change crystallization and rheological behavior; dark, milk and white chocolates need not behave identically.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [],
+      "evidence": [
+        {
+          "locator": "Continuous heat exchangers and seeding",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.purdue-2023"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.commercial",
+      "statement": "Commercial tempering can use controlled stages of heat transfer and agitation, with seed crystals formed or introduced before final cooling.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Illustration, not universal operating instructions. Perspective describes higher initial melt temperatures; composition and process differ."
+      ],
+      "evidence": [
+        {
+          "locator": "Dark chocolate tempering example",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.purdue-2023"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.dark-process",
+      "statement": "Purdue’s illustrative dark-chocolate process without milkfat or other fats uses melting at 40–45°C, cooling to 28–29°C, and reheating to 31–32°C.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "basis": "estimated",
+      "caveats": [
+        "Literature compilation, not new independent measurement; source/context and other forms overlap."
+      ],
+      "display": "30–34.5°C",
+      "evidence": [
+        {
+          "locator": "Table 1",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.v-range",
+      "quantity": {
+        "kind": "range",
+        "maximum": 34.5,
+        "minimum": 30,
+        "precision": "approximate",
+        "unit": "°C"
+      },
+      "statement": "The 2025 perspective compiles reported Form V cocoa-butter melting values of 30–34.5°C.",
+      "type": "quantitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "basis": "estimated",
+      "caveats": [
+        "Not exact universal melting point, not a milk/white tempering prescription."
+      ],
+      "display": "33.5–38.5°C",
+      "evidence": [
+        {
+          "locator": "Table 1",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.vi-range",
+      "quantity": {
+        "kind": "range",
+        "maximum": 38.5,
+        "minimum": 33.5,
+        "precision": "approximate",
+        "unit": "°C"
+      },
+      "statement": "The same compilation reports Form VI melting values of 33.5–38.5°C.",
+      "type": "quantitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Same 90% cocoa product; treated variants include added phospholipids, but unamended recrystallized comparison does not."
+      ],
+      "evidence": [
+        {
+          "locator": "Table 2 and Fig.5 caption",
+          "notes": "Inspected source supports this scoped statement; see access limitations.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.v-insufficient",
+      "statement": "Chen and colleagues detected Form V in remelted/recrystallized and fresh commercial chocolate despite differing bending stiffness.",
+      "type": "qualitative",
+      "verificationStatus": "supported"
+    },
+    {
+      "caveats": [
+        "Other causes exist; texture alone does not diagnose polymorphism."
+      ],
+      "evidence": [
+        {
+          "locator": "Q&A: graininess from small water additions",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.exploratorium-seize"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.grainy-always",
+      "statement": "Grainy chocolate always means bad temper.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Ordinary physical remelting need not change recipe; overheating/oxidation are separate."
+      ],
+      "evidence": [
+        {
+          "locator": "Unamended recrystallized commercial comparison",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.ingredients-changed",
+      "statement": "Melting necessarily changes chocolate’s ingredients.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Tempering governs crystallization; seed chocolate must be composition-compatible when claiming identical recipe."
+      ],
+      "evidence": [
+        {
+          "locator": "Temperature stages and seeding",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.purdue-2023"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.recipe-change",
+      "statement": "Tempering changes the recipe.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Controlled processing can recover useful properties; bad is vague and not a food-safety conclusion."
+      ],
+      "evidence": [
+        {
+          "locator": "Recrystallization treatments and discussion",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.all-bad",
+      "statement": "All melted chocolate becomes bad.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Form V is generally targeted, not sufficient; quality depends on network/formulation."
+      ],
+      "evidence": [
+        {
+          "locator": "Mechanical properties; Fig.5",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.only-v",
+      "statement": "There is one correct cocoa-butter crystal, and Form V always guarantees perfect chocolate.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Bloom can cause white surfaces; this does not certify that any real sample is safe or mold-free."
+      ],
+      "evidence": [
+        {
+          "locator": "Bloom characterization and control experiments",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.heuler-2020"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.white-mold",
+      "statement": "White marks always mean mold.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Fat and sugar components differ; coexistence does not make them identical."
+      ],
+      "evidence": [
+        {
+          "locator": "Control experiments and mixed bloom",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.heuler-2020"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.bloom-same",
+      "statement": "Fat bloom and sugar bloom are the same.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Temperature management and suitable nucleation/structure matter; no single cooling speed defines tempering."
+      ],
+      "evidence": [
+        {
+          "locator": "Programmed temperature stages; agitation; seeding",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.purdue-2023"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.slow-cooling",
+      "statement": "Tempering is simply cooling chocolate slowly.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Metaphor only; surviving seeds and kinetics explain thermal-history effects."
+      ],
+      "evidence": [
+        {
+          "locator": "Processing conditions and crystal network",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.perspective-2025"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.literal-memory",
+      "statement": "Chocolate literally remembers temperature.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Composition constrains possibilities but processing changes structure."
+      ],
+      "evidence": [
+        {
+          "locator": "Unamended remelt comparison; micro-CT",
+          "notes": "Counterevidence/exclusion audit; statement is not supported.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.same-structure",
+      "statement": "The same ingredients guarantee the same material structure.",
+      "type": "qualitative",
+      "verificationStatus": "unverified"
+    },
+    {
+      "caveats": [
+        "Excessive heat is a separate possible damage route, not proved to be merely poor temper. Exact degradation threshold/mechanism requires further research; excluded from narration."
+      ],
+      "evidence": [
+        {
+          "locator": "Storage and composition context only; no direct scorch experiment inspected",
+          "notes": "No adequate direct evidence for this assertion; context only.",
+          "sourceId": "source.chocolate.iowa-storage"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.scorch-details",
+      "statement": "A universal molecular explanation and damage temperature explains every case of overheated chocolate.",
+      "type": "qualitative",
+      "verificationStatus": "uncertain"
+    },
+    {
+      "caveats": [
+        "No demonstration performed. Snap/gloss alone cannot identify polymorphs; instrumented evidence required. Original schematic can explain, not claim experimental proof."
+      ],
+      "evidence": [
+        {
+          "locator": "XRD/DSC used to identify forms; Methods",
+          "notes": "No adequate direct evidence for this assertion; context only.",
+          "sourceId": "source.chocolate.chen-2021"
+        }
+      ],
+      "id": "chocolate-crystal-choice.claim.demo-result",
+      "statement": "A future Magnivis melt-and-reset demonstration will visibly prove its samples have different cocoa-butter polymorphs.",
+      "type": "qualitative",
+      "verificationStatus": "uncertain"
+    }
+  ],
+  "editorialStatus": "review",
+  "followUpOpportunities": [
+    "Discovery bank remains open; chocolate creates no future domain preference."
+  ],
+  "hooks": [
+    {
+      "archetype": "contradiction",
+      "claimIds": [
+        "chocolate-crystal-choice.claim.same-recipe",
+        "chocolate-crystal-choice.claim.network"
+      ],
+      "id": "chocolate-crystal-choice.hook.recipe",
+      "text": "The recipe can stay the same. The chocolate doesn’t have to.",
+      "viewerPromise": "Understand how crystallization and its network change texture without requiring a new recipe."
+    },
+    {
+      "archetype": "familiar-question",
+      "claimIds": [
+        "chocolate-crystal-choice.claim.same-recipe",
+        "chocolate-crystal-choice.claim.soft-recool"
+      ],
+      "id": "chocolate-crystal-choice.hook.return",
+      "text": "Why doesn’t melted chocolate always come back the same?",
+      "viewerPromise": "Understand how crystallization and its network change texture without requiring a new recipe."
+    },
+    {
+      "archetype": "hidden-mechanism",
+      "claimIds": [
+        "chocolate-crystal-choice.claim.network",
+        "chocolate-crystal-choice.claim.snap-gloss"
+      ],
+      "id": "chocolate-crystal-choice.hook.snap",
+      "text": "Chocolate’s snap starts with a structure you can’t see.",
+      "viewerPromise": "Understand how crystallization and its network change texture without requiring a new recipe."
+    },
+    {
+      "archetype": "process-reveal",
+      "claimIds": [
+        "chocolate-crystal-choice.claim.melting-network",
+        "chocolate-crystal-choice.claim.tempering"
+      ],
+      "id": "chocolate-crystal-choice.hook.liquid",
+      "text": "Melting chocolate is easy. Rebuilding its structure is the challenge.",
+      "viewerPromise": "Understand how crystallization and its network change texture without requiring a new recipe."
+    },
+    {
+      "archetype": "misconception-correction",
+      "claimIds": [
+        "chocolate-crystal-choice.claim.network",
+        "chocolate-crystal-choice.claim.snap-gloss"
+      ],
+      "id": "chocolate-crystal-choice.hook.crystals",
+      "text": "Good chocolate needs more than the right kind of crystal.",
+      "viewerPromise": "Understand how crystallization and its network change texture without requiring a new recipe."
+    }
+  ],
+  "id": "chocolate-crystal-choice",
+  "narrativeOpportunities": [
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.same-recipe",
+        "chocolate-crystal-choice.claim.cocoa-butter",
+        "chocolate-crystal-choice.claim.melting-network",
+        "chocolate-crystal-choice.claim.multiple-arrangements",
+        "chocolate-crystal-choice.claim.network",
+        "chocolate-crystal-choice.claim.soft-recool",
+        "chocolate-crystal-choice.claim.tempering",
+        "chocolate-crystal-choice.claim.seed",
+        "chocolate-crystal-choice.claim.snap-gloss"
+      ],
+      "description": "Same composition can have different structure after melting; tempering guides rebuilding.",
+      "id": "chocolate-crystal-choice.narrative.rebuild",
+      "title": "Rebuild the structure"
+    }
+  ],
+  "relatedQuestions": [
+    "How do storage conditions cause bloom?",
+    "How do other materials depend on processing history?"
+  ],
+  "revision": 1,
+  "sources": [
+    {
+      "id": "source.chocolate.chen-2021",
+      "notes": "Primary experiment; DOI 10.1038/s41467-021-25206-1",
+      "organization": "Nature Communications",
+      "retrieved": "2026-10-01",
+      "sourceType": "peer-reviewed",
+      "title": "Tempering of cocoa butter and chocolate using minor lipidic components",
+      "url": "https://www.nature.com/articles/s41467-021-25206-1.pdf"
+    },
+    {
+      "id": "source.chocolate.perspective-2025",
+      "notes": "Review/perspective; DOI 10.1021/acs.cgd.5c00269",
+      "organization": "Crystal Growth & Design / PMC",
+      "retrieved": "2026-10-01",
+      "sourceType": "peer-reviewed",
+      "title": "Chocolate Tempering: A Perspective",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12063059/"
+    },
+    {
+      "id": "source.chocolate.heuler-2020",
+      "notes": "Primary experiment; DOI 10.1038/s41598-020-66820-1",
+      "organization": "Scientific Reports",
+      "retrieved": "2026-10-01",
+      "sourceType": "peer-reviewed",
+      "title": "Point-of-care detection, characterization, and removal of chocolate bloom using a handheld Raman spectrometer",
+      "url": "https://www.nature.com/articles/s41598-020-66820-1"
+    },
+    {
+      "id": "source.chocolate.lonchampt-2006",
+      "notes": "Primary experiment, abstract only; DOI 10.1002/ejlt.200500260",
+      "organization": "European Journal of Lipid Science and Technology / Wiley",
+      "retrieved": "2026-10-01",
+      "sourceType": "peer-reviewed",
+      "title": "Surface bloom on improperly tempered chocolate",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/ejlt.200500260"
+    },
+    {
+      "id": "source.chocolate.glicerina-2016",
+      "notes": "Primary experiment, accepted manuscript; DOI 10.1016/j.jfoodeng.2015.08.011",
+      "organization": "Journal of Food Engineering / University of Bologna repository",
+      "retrieved": "2026-10-01",
+      "sourceType": "peer-reviewed",
+      "title": "Microstructural and rheological characteristics of dark, milk and white chocolate: A comparative study",
+      "url": "https://cris.unibo.it/retrieve/9f7c43d1-89bf-4d67-ada8-9abf1bda1136/j.jfoodeng.2015.08.011.pdf"
+    },
+    {
+      "id": "source.chocolate.purdue-2023",
+      "notes": "Institutional technical explanation; November 2023",
+      "organization": "Purdue University Extension",
+      "retrieved": "2026-10-01",
+      "sourceType": "university",
+      "title": "Cocoa Processing: Tempering (FS-153-W)",
+      "url": "https://extension.purdue.edu/extmedia/FS/FS-153-W.pdf"
+    },
+    {
+      "id": "source.chocolate.exploratorium-seize",
+      "notes": "Institutional educational Q&A, October 2002",
+      "organization": "Exploratorium",
+      "retrieved": "2026-10-01",
+      "sourceType": "museum",
+      "title": "Why does my melted chocolate seize up?",
+      "url": "https://annex.exploratorium.edu/cooking/icooks/10-1-02.html"
+    },
+    {
+      "id": "source.chocolate.iowa-storage",
+      "notes": "Institutional consumer explanation, November 2023",
+      "organization": "Iowa State University Extension and Outreach",
+      "retrieved": "2026-10-01",
+      "sourceType": "university",
+      "title": "Chocolate – Shelf Life, Storage, and Bloom",
+      "url": "https://blogs.extension.iastate.edu/answerline/2023/11/07/chocolate-shelf-life-storage-and-bloom/"
+    },
+    {
+      "id": "source.chocolate.molecular-review-2021",
+      "notes": "Review literature; DOI 10.1146/annurev-food-070620-022551",
+      "organization": "Annual Review of Food Science and Technology / PubMed",
+      "retrieved": "2026-10-01",
+      "sourceType": "peer-reviewed",
+      "title": "Molecular Origins of Polymorphism in Cocoa Butter",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33467907/"
+    },
+    {
+      "id": "source.chocolate.exploratorium-discovery",
+      "notes": "Discovery-only institutional activity; original lead preserved",
+      "organization": "Exploratorium",
+      "retrieved": "2026-10-01",
+      "sourceType": "museum",
+      "title": "Exploring Chocolate activity",
+      "url": "https://annex.exploratorium.edu/exploring/exploring_chocolate/activity.html"
+    },
+    {
+      "id": "source.chocolate.lipkin-2025",
+      "notes": "Review literature; DOI 10.1146/annurev-matsci-080423-012401",
+      "organization": "Annual Review of Materials Research / University of Wisconsin–Madison",
+      "retrieved": "2026-10-01",
+      "sourceType": "peer-reviewed",
+      "title": "Microstructure and Rheology of Chocolate",
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-matsci-080423-012401"
+    }
+  ],
+  "taxonomy": {
+    "domains": [
+      "food-science",
+      "materials-science"
+    ],
+    "pillar": "interdisciplinary",
+    "topics": [
+      "cocoa-butter",
+      "crystallization",
+      "tempering"
+    ]
+  },
+  "thesis": "Recipe composition alone does not determine chocolate texture: crystallization and network structure matter.",
+  "timeliness": "evergreen",
+  "topic": "Chocolate crystallization and tempering",
+  "viewerPayoff": "Understand why merely melting and cooling chocolate need not reproduce its original snap and surface.",
+  "visualOpportunities": [
+    {
+      "claimIds": [
+        "chocolate-crystal-choice.claim.melting-network",
+        "chocolate-crystal-choice.claim.multiple-arrangements",
+        "chocolate-crystal-choice.claim.network"
+      ],
+      "description": "Explain molecular packing and network as different scales; keep solid nonfat particles distinct.",
+      "id": "chocolate-crystal-choice.visual.network",
+      "title": "From fat crystals to network"
+    }
+  ]
+}
