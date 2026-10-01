@@ -1,5 +1,15 @@
 # Project state
 
+## CONTENT CYCLE #2 — BOUNDED RESEARCH COMPLETE, editorial review pending
+
+Ahmet selected `topic.longitude-clock` (“How can a clock tell you where you are?”) for bounded research only, continuing from discovery commit `c122a3a158ffa33dd31463839e7654229acfb441`. [Owner editorial handoff](../content-intelligence/reviews/longitude-clock-v1/owner-review.md) preserves fresh source inspections, forty statement-level decisions, six hook proposals, exact unapproved narration and a conceptual VisualPlan. The separate selection record binds the immutable discovery bundle and revision-2 `researching` candidate; the original null discovery selection remains historical evidence.
+
+KnowledgePackage revision 1 is `review`; ContentAsset revision 1 is `editorial-review`; ClaimReviewBundle is `ready-for-owner-decision`. Twenty-six statements are supported/qualified, twelve excluded and two uncertain; zero are owner-verified. Eleven supported/qualified claims support the narration proposal. Scope is longitude through corrected local/reference solar-time comparison, with Harrison's H4 as a bounded engineering example and complementary astronomical methods retained. Primary trial logs/financial Acts were not inspected; exact trial residuals and payment accounting are outside narration.
+
+No editorial approval, CreativeDirection, ProductionPlan, CaptionPlan, generated audio/images, production assets, rendering, platform variants, deliveries, upload or publication is authorized or performed. Native objects are scoped review snapshots, not new production registry entries. Earlier discovery-only statements below describe that earlier milestone; this explicit owner instruction supersedes its topic-selection pause only.
+
+**Exact next human gate: AHMET — CYCLE #2 EDITORIAL REVIEW.**
+
 ## CONTENT CYCLE #2 — DISCOVERY COMPLETE, owner selection pending
 
 Ahmet explicitly authorized open-world discovery only on 2026-10-01 from clean synchronized main `cdebc2d1c92e14137dfef0dd9acb5924c460bed2`. [Cycle #2 handoff](../content-intelligence/discovery/cycle-2-2026-10-01/owner-review.md) preserves 36 proposals (35 distinct ideas after a recorded Kevlar overlap), 10 shortlisted candidates, five proposed finalists, fresh source/query provenance and qualitative tradeoffs. Content Intelligence proposes `topic.longitude-clock`; **selectedTopicId remains null**. The proposal is not owner selection or approval.

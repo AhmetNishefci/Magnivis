@@ -1,0 +1,346 @@
+{
+  "assetType": "short-form-video",
+  "durationIntentSeconds": {
+    "maximum": 60,
+    "minimum": 50
+  },
+  "editorialPurpose": "Explain longitude by corrected time comparison, using H4 as a bounded historical example.",
+  "editorialStatus": "editorial-review",
+  "hookId": "longitude-clock.hook.question",
+  "id": "longitude-clock.asset.time-to-position",
+  "knowledgePackageId": "longitude-clock",
+  "narrativeStructure": [
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.1",
+      "label": "Question",
+      "purpose": "Introduce the apparent time/position contradiction.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.1"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.2",
+      "label": "Scope",
+      "purpose": "Identify the coordinate and its chosen reference.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.2"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.3",
+      "label": "Comparison",
+      "purpose": "Show observation supplies one reading and the timekeeper the other.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.3"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.4",
+      "label": "Correction",
+      "purpose": "Keep apparent/mean distinction in the spoken explanation.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.4"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.5",
+      "label": "Conversion",
+      "purpose": "Translate consistent time units into angular difference.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.5"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.6",
+      "label": "Example",
+      "purpose": "Resolve direction with a concrete mean-time example.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.6"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.7",
+      "label": "Engineering",
+      "purpose": "Give historical engineering meaning to reference time.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.7"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.8",
+      "label": "H4",
+      "purpose": "Credit the specific breakthrough without universal or sole-inventor claims.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.8"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.9",
+      "label": "Context",
+      "purpose": "Preserve complementary-method context.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.9"
+      ]
+    },
+    {
+      "id": "longitude-clock.asset.time-to-position.beat.10",
+      "label": "Payoff",
+      "purpose": "Close on the two-part system.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.10"
+      ]
+    }
+  ],
+  "revision": 1,
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "claimIds": [
+          "longitude-clock.claim.time-comparison",
+          "longitude-clock.claim.longitude"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.1",
+        "text": "How can a clock tell a ship where it is?",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.longitude"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.2",
+        "text": "It helps reveal longitude: how far east or west you are from a reference meridian.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.time-comparison",
+          "longitude-clock.claim.noon"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.3",
+        "text": "Sailors observed the Sun to establish local time, then compared it with reference time carried aboard.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.equation-time"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.4",
+        "text": "The Sun’s uneven timekeeping needs a correction.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.conversion"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.5",
+        "text": "With both times on the same basis, one hour of difference equals fifteen degrees.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.east-example"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.6",
+        "text": "Local time two hours ahead means thirty degrees east of the reference.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.sea-challenge",
+          "longitude-clock.claim.clock-rate"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.7",
+        "text": "The hard part was preserving accurate time through motion, changing temperatures and long voyages.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.h4-demonstration",
+          "longitude-clock.claim.h4-watch"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.8",
+        "text": "John Harrison’s H4 helped demonstrate that a watch could meet the challenge.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.complementary"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.9",
+        "text": "Astronomical methods remained useful too.",
+        "type": "factual"
+      },
+      {
+        "claimIds": [
+          "longitude-clock.claim.time-comparison",
+          "longitude-clock.claim.clock-rate"
+        ],
+        "id": "longitude-clock.asset.time-to-position.script.10",
+        "text": "The clock preserved reference time. Observations and calculation turned the difference into longitude.",
+        "type": "factual"
+      }
+    ]
+  },
+  "selectedClaimIds": [
+    "longitude-clock.claim.time-comparison",
+    "longitude-clock.claim.longitude",
+    "longitude-clock.claim.noon",
+    "longitude-clock.claim.equation-time",
+    "longitude-clock.claim.conversion",
+    "longitude-clock.claim.east-example",
+    "longitude-clock.claim.sea-challenge",
+    "longitude-clock.claim.clock-rate",
+    "longitude-clock.claim.h4-demonstration",
+    "longitude-clock.claim.h4-watch",
+    "longitude-clock.claim.complementary"
+  ],
+  "storyAngle": "A clock carries reference time; observation and calculation reveal longitude.",
+  "visualPlan": [
+    {
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.longitude"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.1",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.1",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "A ship, a timekeeper and an unresolved east–west position; avoid displaying a complete location fix.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.1"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.longitude"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.2",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.2",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Reveal two named meridians on a globe or map; reference is generic, not automatically Greenwich.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.2"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.noon"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.3",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.3",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Conceptually show a meridian crossing and carried reference reading at the SAME INSTANT. The Sun need not be overhead; no claim of a recorded voyage.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.3"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.equation-time"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.4",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.4",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Convert SUN OBSERVATION / APPARENT TIME to LOCAL MEAN SOLAR TIME using equation-of-time correction; no invented date-specific number.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.4"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.conversion"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.5",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.5",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Show a15° angle and1h difference; not an inertial360°/24SI-hour claim and not a civil time-zone diagram.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.5"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.east-example"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.6",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.6",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Reference12:00, local14:00, label BOTH MEAN SOLAR TIME / SAME INSTANT / ILLUSTRATIVE EXAMPLE; +2h maps to30°E relative to reference. Do not label14:00 as local noon. Meridian spacing may be angularly proportional; whole scene is schematic.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.6"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.sea-challenge",
+        "longitude-clock.claim.clock-rate"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.7",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.7",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "A conceptual ship environment and time drift; any drift number needs its own reviewed derived example. Do not show a motion-powered clock or assert humidity.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.7"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.h4-demonstration",
+        "longitude-clock.claim.h4-watch"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.8",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.8",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Identify H4 accurately as a LARGE LONGITUDE WATCH; original object study or properly licensed collection imagery would require later provenance review. No generic boxed chronometer substituted as H4.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.8"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.complementary"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.9",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.9",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Conceptually retain lunar-distance observations/tables alongside timekeeping, not a before/after erasure of all astronomy.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.9"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    },
+    {
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.clock-rate"
+      ],
+      "id": "longitude-clock.asset.time-to-position.visual.10",
+      "narrativeBeatId": "longitude-clock.asset.time-to-position.beat.10",
+      "notes": "Conceptual editorial intent only. No final visual style, rendering method, coordinates, frame timing, captions, voice or production asset is selected.",
+      "objective": "Resolve reference time + local observation + calculation → LONGITUDE; no latitude or exact geographic pinpoint without additional observations.",
+      "scriptSegmentIds": [
+        "longitude-clock.asset.time-to-position.script.10"
+      ],
+      "suggestedPrimitive": "bespoke",
+      "visualType": "bespoke"
+    }
+  ]
+}

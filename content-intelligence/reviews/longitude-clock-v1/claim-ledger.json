@@ -1,0 +1,965 @@
+{
+  "claims": [
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Longitude alone does not give a complete geographic position."
+      ],
+      "claimId": "longitude-clock.claim.longitude",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "A reference meridian defines the angular origin; Greenwich was not universally used historically.",
+          "sourceId": "source.longitude.definition"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Longitude is an angular east–west position relative to a chosen reference meridian.",
+      "rationale": "A reference meridian defines the angular origin; Greenwich was not universally used historically.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Weather, hemisphere, instruments and calculations matter; do not call latitude simply easy."
+      ],
+      "claimId": "longitude-clock.claim.latitude",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "Latitude has an equatorial/polar geometric reference; this does not make observation effortless or universally available.",
+          "sourceId": "source.longitude.definition"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Navigators could obtain latitude from celestial observations such as the Sun or pole star.",
+      "rationale": "Latitude has an equatorial/polar geometric reference; this does not make observation effortless or universally available.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Not a claim that all previous longitude estimates were impossible."
+      ],
+      "claimId": "longitude-clock.claim.reference-problem",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "The needed comparison is simultaneous local time and time associated with a known longitude.",
+          "sourceId": "source.longitude.definition"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "The needed comparison is simultaneous local time and time associated with a known longitude.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Finding sufficiently accurate reference time at sea was a central difficulty in determining longitude by time.",
+      "rationale": "The needed comparison is simultaneous local time and time associated with a known longitude.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Correct carried-clock error and rate; resolve dates and12-hour/24-hour ambiguities."
+      ],
+      "claimId": "longitude-clock.claim.time-comparison",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Same temporal basis is essential; local mean time is Sun-derived apparent time corrected by the equation of time.",
+          "sourceId": "source.longitude.bowditch-time"
+        },
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "Same temporal basis is essential; local mean time is Sun-derived apparent time corrected by the equation of time.",
+          "sourceId": "source.longitude.equation-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Comparing simultaneous local mean solar time with mean solar time at a known reference meridian yields the longitude difference.",
+      "rationale": "Same temporal basis is essential; local mean time is Sun-derived apparent time corrected by the equation of time.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "The Sun need not be overhead; apparent noon need not read12:00 on a mean-time clock."
+      ],
+      "claimId": "longitude-clock.claim.noon",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "Meridian transit defines apparent noon; highest-altitude language is less robust for a moving observer.",
+          "sourceId": "source.longitude.equation-time"
+        },
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Meridian transit defines apparent noon; highest-altitude language is less robust for a moving observer.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Local apparent noon occurs when the Sun crosses the observer’s celestial meridian.",
+      "rationale": "Meridian transit defines apparent noon; highest-altitude language is less robust for a moving observer.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "The difference changes through the year; civil zone time is a different convention."
+      ],
+      "claimId": "longitude-clock.claim.equation-time",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "Use E = LAT − LMT, therefore LMT = LAT − E.",
+          "sourceId": "source.longitude.equation-time"
+        },
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Use E = LAT − LMT, therefore LMT = LAT − E.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Apparent solar time differs from mean solar time; the equation of time converts between them.",
+      "rationale": "Use E = LAT − LMT, therefore LMT = LAT − E.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Do not mix apparent and mean time; actual solar-day length and rotation rate are not uniformly24SIhours."
+      ],
+      "claimId": "longitude-clock.claim.conversion",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "360°/24h is exact angular/time-unit conversion on a consistent solar-time basis, not exact inertial Earth rotation in24SIhours.",
+          "sourceId": "source.longitude.bowditch-time"
+        },
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "360°/24h is exact angular/time-unit conversion on a consistent solar-time basis, not exact inertial Earth rotation in24SIhours.",
+          "sourceId": "source.longitude.equation-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "One hour of a simultaneous solar-time difference corresponds to fifteen degrees of longitude difference.",
+      "rationale": "360°/24h is exact angular/time-unit conversion on a consistent solar-time basis, not exact inertial Earth rotation in24SIhours.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Both readings simultaneous, same mean-solar basis and day branch; reference need not be Greenwich."
+      ],
+      "claimId": "longitude-clock.claim.east-example",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Derived: signed east-positive Δλ=15°×(14−12)=+30°; this is an illustrative calculation, not a historical voyage.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "If local mean solar time is 14:00 when reference mean solar time is 12:00, the observer is 30° east of the reference meridian.",
+      "rationale": "Derived: signed east-positive Δλ=15°×(14−12)=+30°; this is an illustrative calculation, not a historical voyage.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Same simultaneous mean-solar basis and day branch."
+      ],
+      "claimId": "longitude-clock.claim.west-example",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "Derived:15°×(10−12)=−30°; local time behind means west.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "If local mean solar time is 10:00 when reference mean solar time is 12:00, the observer is 30° west of the reference meridian.",
+      "rationale": "Derived:15°×(10−12)=−30°; local time behind means west.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Not a full navigation error budget; distance depends on latitude."
+      ],
+      "claimId": "longitude-clock.claim.minute-error",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "§1705 explicitly converts1minute time to15arcminutes =0.25°; error magnitude only.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "An uncorrected one-minute reference-time error corresponds to 0.25° of longitude error in the time comparison.",
+      "rationale": "§1705 explicitly converts1minute time to15arcminutes =0.25°; error magnitude only.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Error magnitude, not a claim about H4 trial residual."
+      ],
+      "claimId": "longitude-clock.claim.second-error",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "§1705 unit conversion;60seconds error gives15arcminutes.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "An uncorrected one-second reference-time error corresponds to 15arcseconds of longitude error.",
+      "rationale": "§1705 unit conversion;60seconds error gives15arcminutes.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Modern handbook procedure supports principle; no eighteenth-century radio comparison is implied."
+      ],
+      "claimId": "longitude-clock.claim.clock-rate",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "§1710 distinguishes a fast/slow indication from gaining/losing rate.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Known clock error and daily rate can be applied to obtain reference time; uncorrected rate error accumulates over a voyage.",
+      "rationale": "§1710 distinguishes a fast/slow indication from gaining/losing rate.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Humidity is not independently established as a specific H4 limitation here."
+      ],
+      "claimId": "longitude-clock.claim.sea-challenge",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Collection description and Object details, ZAA0034",
+          "notes": "Motion/temperature are specifically supported; accumulating time error follows Bowditch rate treatment.",
+          "sourceId": "source.longitude.h1"
+        },
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "Motion/temperature are specifically supported; accumulating time error follows Bowditch rate treatment.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Motion/temperature are specifically supported; accumulating time error follows Bowditch rate treatment.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Ship motion, changing temperature and accuracy maintained over long voyages challenged marine timekeeping.",
+      "rationale": "Motion/temperature are specifically supported; accumulating time error follows Bowditch rate treatment.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Not the West Indies test later required for the largest reward."
+      ],
+      "claimId": "longitude-clock.claim.h1",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Collection description and Object details, ZAA0034",
+          "notes": "First device sea test described by institutional museum sources.",
+          "sourceId": "source.longitude.h1"
+        },
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "First device sea test described by institutional museum sources.",
+          "sourceId": "source.longitude.harrison-history"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Harrison’s H 1 was completed in 1735 and trialled on a Lisbon voyage in 1736.",
+      "rationale": "First device sea test described by institutional museum sources.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.h2",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Collection description and Object details, ZAA0035",
+          "notes": "Catalog directly distinguishes construction from sea trial.",
+          "sourceId": "source.longitude.h2"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Harrison’s H 2 was built in 1737–1739 and was not tested at sea after he identified a balance design fault.",
+      "rationale": "Catalog directly distinguishes construction from sea trial.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.h3",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Collection description and Object details, ZAA0036",
+          "notes": "Development was prolonged; clock sequence is not four uniformly successful trials.",
+          "sourceId": "source.longitude.h3"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Harrison worked on H 3 from 1740 for nearly nineteen years but could not achieve the required timekeeping accuracy.",
+      "rationale": "Development was prolonged; clock sequence is not four uniformly successful trials.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Chronometer can be modern umbrella language; prefer H4 or longitude watch, not an unsupported first-ever terminology assertion."
+      ],
+      "claimId": "longitude-clock.claim.h4-watch",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Collection description and Object details, ZAA0037",
+          "notes": "Object identity: ZAA0037; museum calls it a longitude watch and marine timekeeper.",
+          "sourceId": "source.longitude.h4"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "H 4 was a large longitude watch, completed in 1759, rather than the later familiar boxed marine chronometer.",
+      "rationale": "Object identity: ZAA0037; museum calls it a longitude watch and marine timekeeper.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Harrison neither invented longitude nor accomplished ocean navigation alone."
+      ],
+      "claimId": "longitude-clock.claim.h4-demonstration",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "Successful sea trials established feasibility, with navigational observations and evaluation, not a self-displaying position device.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Collection description and Object details, ZAA0037",
+          "notes": "Successful sea trials established feasibility, with navigational observations and evaluation, not a self-displaying position device.",
+          "sourceId": "source.longitude.h4"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Successful sea trials established feasibility, with navigational observations and evaluation, not a self-displaying position device.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "John Harrison’s H 4 helped demonstrate that a watch could provide sufficiently accurate time for longitude at sea.",
+      "rationale": "Successful sea trials established feasibility, with navigational observations and evaluation, not a self-displaying position device.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Do not adopt exact residual seconds/miles without primary records and rate-correction context."
+      ],
+      "claimId": "longitude-clock.claim.trials",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "Museum identifies William for the first voyage; library describes Harrison’s son in charge.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Article dated March24,2017; paragraph on second trial and1773 Parliament payment",
+          "notes": "Museum identifies William for the first voyage; library describes Harrison’s son in charge.",
+          "sourceId": "source.longitude.payment"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "William Harrison accompanied H 4 on the Jamaica trial in 1761; a second West Indies trial went to Barbados in 1764.",
+      "rationale": "Museum identifies William for the first voyage; library describes Harrison’s son in charge.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "No single prize race or malicious astronomer caricature."
+      ],
+      "claimId": "longitude-clock.claim.board",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "Financial/institutional support predates the later dispute.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Financial/institutional support predates the later dispute.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "The 1714 Longitude Act offered rewards; the Board funded trials and development and evaluated both timekeepers and astronomical methods.",
+      "rationale": "Financial/institutional support predates the later dispute.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Precise legal accounting needs original Acts and minutes; do not simplify to won/lost the prize."
+      ],
+      "claimId": "longitude-clock.claim.reward-dispute",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "1765 conditional payment and later disagreement appear in the institutional history.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "1765 conditional payment and later disagreement appear in the institutional history.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Harrison’s reward involved staged payments and disputed disclosure and reproducibility requirements, rather than an immediate full award for H 4.",
+      "rationale": "1765 conditional payment and later disagreement appear in the institutional history.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Primary Act/accounting not inspected; not selected for narration."
+      ],
+      "claimId": "longitude-clock.claim.parliament-payment",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Article dated March24,2017; paragraph on second trial and1773 Parliament payment",
+          "notes": "Use institutional secondary attribution, not falsely primary-verified financial fact.",
+          "sourceId": "source.longitude.payment"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Linda Hall Library’s historian records a further Parliament payment of£8750 to Harrison in 1773.",
+      "rationale": "Use institutional secondary attribution, not falsely primary-verified financial fact.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Not a claim that clocks require a lunar-distance observation for every fix."
+      ],
+      "claimId": "longitude-clock.claim.complementary",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Maskelyne and the Nautical Almanac; Bringing it all together and making it work",
+          "notes": "Lunar distances, tables, observing instruments and dead reckoning persisted; methods could check each other.",
+          "sourceId": "source.longitude.lunar"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Lunar distances, tables, observing instruments and dead reckoning persisted; methods could check each other.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Astronomical longitude methods remained useful alongside marine timekeepers.",
+      "rationale": "Lunar distances, tables, observing instruments and dead reckoning persisted; methods could check each other.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": true
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "Altitudes, corrections, tables and substantial calculations were required."
+      ],
+      "claimId": "longitude-clock.claim.lunar-mechanism",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Corrected angular observations and predicted positions form an astronomical time reference.",
+          "sourceId": "source.longitude.higgitt"
+        },
+        {
+          "locator": "Maskelyne and the Nautical Almanac; Bringing it all together and making it work",
+          "notes": "Corrected angular observations and predicted positions form an astronomical time reference.",
+          "sourceId": "source.longitude.lunar"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Lunar-distance methods compared observed angular separation of the Moon and another celestial body with predicted tables to infer reference time.",
+      "rationale": "Corrected angular observations and predicted positions form an astronomical time reference.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "SUPPORTED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.almanac",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "Maskelyne and the Nautical Almanac; Bringing it all together and making it work",
+          "notes": "Astronomers, calculators and instrument makers contributed; this supplies non-lone-genius context.",
+          "sourceId": "source.longitude.lunar"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "Astronomers, calculators and instrument makers contributed; this supplies non-lone-genius context.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Maskelyne organized the Nautical Almanac for 1767, with assistants converting observations into predictive data.",
+      "rationale": "Astronomers, calculators and instrument makers contributed; this supplies non-lone-genius context.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "QUALIFIED",
+      "caveats": [
+        "No instantaneous replacement of dead reckoning or lunars."
+      ],
+      "claimId": "longitude-clock.claim.adoption",
+      "confidence": "high for the scoped statement",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "Later makers, manufacture, trials and sailor training mattered.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Maskelyne and the Nautical Almanac; Bringing it all together and making it work",
+          "notes": "Later makers, manufacture, trials and sailor training mattered.",
+          "sourceId": "source.longitude.lunar"
+        }
+      ],
+      "narrationEligibility": "proposal-only; owner decision required",
+      "onScreenEligibility": "proposal-only; retain qualifications and label illustrative examples",
+      "proposedWording": "Marine timekeepers were initially costly and took decades to become broadly established.",
+      "rationale": "Later makers, manufacture, trials and sailor training mattered.",
+      "repositoryStatus": "supported",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.nobody-knew",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "EXCLUSION: estimates, latitude and dead reckoning existed; the issue was reliable longitude accuracy.",
+          "sourceId": "source.longitude.definition"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "EXCLUSION: estimates, latitude and dead reckoning existed; the issue was reliable longitude accuracy.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Nobody knew where ships were.",
+      "rationale": "EXCLUSION: estimates, latitude and dead reckoning existed; the issue was reliable longitude accuracy.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.impossible",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "EXCLUSION: astronomical and other methods and estimates predated his work.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Longitude was impossible before Harrison.",
+      "rationale": "EXCLUSION: astronomical and other methods and estimates predated his work.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.sole-inventor",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "EXCLUSION: prior timekeepers, collaborators, astronomers, later makers and navigation observations are omitted.",
+          "sourceId": "source.longitude.higgitt"
+        },
+        {
+          "locator": "Collection description and Object details, ZAA0037",
+          "notes": "EXCLUSION: prior timekeepers, collaborators, astronomers, later makers and navigation observations are omitted.",
+          "sourceId": "source.longitude.h4"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Harrison alone invented the marine chronometer and solved navigation.",
+      "rationale": "EXCLUSION: prior timekeepers, collaborators, astronomers, later makers and navigation observations are omitted.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.instant-solution",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Maskelyne and the Nautical Almanac; Bringing it all together and making it work",
+          "notes": "EXCLUSION: trials were not immediate universal adoption; cost and reliability/training remained.",
+          "sourceId": "source.longitude.lunar"
+        },
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "EXCLUSION: trials were not immediate universal adoption; cost and reliability/training remained.",
+          "sourceId": "source.longitude.harrison-history"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "H 4 immediately solved longitude for every ship.",
+      "rationale": "EXCLUSION: trials were not immediate universal adoption; cost and reliability/training remained.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.direct-position",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "EXCLUSION: reference time must be compared with observations; longitude is only one coordinate.",
+          "sourceId": "source.longitude.definition"
+        },
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "EXCLUSION: reference time must be compared with observations; longitude is only one coordinate.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "The clock directly displayed the ship’s exact geographic position.",
+      "rationale": "EXCLUSION: reference time must be compared with observations; longitude is only one coordinate.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.easy-latitude",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "EXCLUSION: source supports celestial methods, not unrestricted ease; polar star not universally visible.",
+          "sourceId": "source.longitude.definition"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Latitude was easy to obtain anywhere at any time.",
+      "rationale": "EXCLUSION: source supports celestial methods, not unrestricted ease; polar star not universally visible.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.instant-prize",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "EXCLUSION: further trials, conditional payments and disputes followed.",
+          "sourceId": "source.longitude.harrison-history"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "H 4 won the full prize immediately after its first trial.",
+      "rationale": "EXCLUSION: further trials, conditional payments and disputes followed.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.all-replaced",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Maskelyne and the Nautical Almanac; Bringing it all together and making it work",
+          "notes": "EXCLUSION: complementary methods and dead reckoning persisted.",
+          "sourceId": "source.longitude.lunar"
+        },
+        {
+          "locator": "Complementary methods: timekeeping and astronomy; notes19–29",
+          "notes": "EXCLUSION: complementary methods and dead reckoning persisted.",
+          "sourceId": "source.longitude.higgitt"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Chronometers replaced every other longitude method.",
+      "rationale": "EXCLUSION: complementary methods and dead reckoning persisted.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.same-distance",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Latitude; Longitude; What can you use to measure longitude?",
+          "notes": "EXCLUSION:15° is angular separation; longitude meridians converge at the poles, so surface distance depends on latitude.",
+          "sourceId": "source.longitude.definition"
+        },
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "EXCLUSION:15° is angular separation; longitude meridians converge at the poles, so surface distance depends on latitude.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "One hour of longitude difference is the same surface distance everywhere.",
+      "rationale": "EXCLUSION:15° is angular separation; longitude meridians converge at the poles, so surface distance depends on latitude.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.raw-sundial",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "EXCLUSION: apparent and mean solar time must first be put on the same basis.",
+          "sourceId": "source.longitude.equation-time"
+        },
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "EXCLUSION: apparent and mean solar time must first be put on the same basis.",
+          "sourceId": "source.longitude.bowditch-time"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "An uncorrected solar reading of 14:00 versus a mean-time clock reading 12:00 proves exactly 30° east.",
+      "rationale": "EXCLUSION: apparent and mean solar time must first be put on the same basis.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.exact-spin",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320",
+          "notes": "EXCLUSION: sidereal and solar periods differ; the conversion is not that physical claim.",
+          "sourceId": "source.longitude.bowditch-time"
+        },
+        {
+          "locator": "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time",
+          "notes": "EXCLUSION: sidereal and solar periods differ; the conversion is not that physical claim.",
+          "sourceId": "source.longitude.equation-time"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Earth rotates exactly 360° relative to the stars in 24SIhours.",
+      "rationale": "EXCLUSION: sidereal and solar periods differ; the conversion is not that physical claim.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "EXCLUDED",
+      "caveats": [],
+      "claimId": "longitude-clock.claim.motion-powered",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "Collection description and Object details, ZAA0034",
+          "notes": "EXCLUSION: timekeepers were designed to resist motion’s effects; not self-winding by ship movement.",
+          "sourceId": "source.longitude.h1"
+        },
+        {
+          "locator": "Collection description and Object details, ZAA0037",
+          "notes": "EXCLUSION: timekeepers were designed to resist motion’s effects; not self-winding by ship movement.",
+          "sourceId": "source.longitude.h4"
+        }
+      ],
+      "narrationEligibility": "excluded",
+      "onScreenEligibility": "excluded",
+      "proposedWording": "Harrison’s clock was powered by the motion of the ship.",
+      "rationale": "EXCLUSION: timekeepers were designed to resist motion’s effects; not self-winding by ship movement.",
+      "repositoryStatus": "unverified",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "UNKNOWN",
+      "caveats": [
+        "Do not narrate without additional specific evidence."
+      ],
+      "claimId": "longitude-clock.claim.humidity-specific",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "UNKNOWN: inspected descriptions do not establish that specific factor; absence here is not evidence that humidity has no effect.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Collection description and Object details, ZAA0037",
+          "notes": "UNKNOWN: inspected descriptions do not establish that specific factor; absence here is not evidence that humidity has no effect.",
+          "sourceId": "source.longitude.h4"
+        }
+      ],
+      "narrationEligibility": "unknown; excluded pending further evidence",
+      "onScreenEligibility": "unknown; excluded pending further evidence",
+      "proposedWording": "Humidity was a specifically demonstrated limiting factor in H 4’s sea trials.",
+      "rationale": "UNKNOWN: inspected descriptions do not establish that specific factor; absence here is not evidence that humidity has no effect.",
+      "repositoryStatus": "uncertain",
+      "useInRecommendedAsset": false
+    },
+    {
+      "assessment": "UNKNOWN",
+      "caveats": [
+        "Not narratable; no precise numerical trial result selected."
+      ],
+      "claimId": "longitude-clock.claim.trial-error-exact",
+      "confidence": "not eligible as stated",
+      "evidence": [
+        {
+          "locator": "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?",
+          "notes": "UNKNOWN: popular seconds/miles summaries are not adjudicated from primary trial logs in this bounded proposal.",
+          "sourceId": "source.longitude.harrison-history"
+        },
+        {
+          "locator": "Article dated March24,2017; paragraph on second trial and1773 Parliament payment",
+          "notes": "UNKNOWN: popular seconds/miles summaries are not adjudicated from primary trial logs in this bounded proposal.",
+          "sourceId": "source.longitude.payment"
+        }
+      ],
+      "narrationEligibility": "unknown; excluded pending further evidence",
+      "onScreenEligibility": "unknown; excluded pending further evidence",
+      "proposedWording": "A precise H 4 trial residual can be stated without reference to the voyage, clock rate or correction convention.",
+      "rationale": "UNKNOWN: popular seconds/miles summaries are not adjudicated from primary trial logs in this bounded proposal.",
+      "repositoryStatus": "uncertain",
+      "useInRecommendedAsset": false
+    }
+  ],
+  "packageId": "longitude-clock",
+  "packageRevision": 1,
+  "reviewState": "awaiting-owner-decision",
+  "schemaVersion": 1,
+  "statusMapping": {
+    "EXCLUDED": "unverified, rejected for narration and on-screen assertion",
+    "QUALIFIED": "supported with mandatory caveats",
+    "SUPPORTED": "supported; inspected evidence, no owner verification",
+    "UNKNOWN": "uncertain, not eligible without more evidence",
+    "VERIFIED": "verified requires explicit owner decision; zero here"
+  }
+}

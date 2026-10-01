@@ -1,0 +1,96 @@
+{
+  "decisions": [
+    {
+      "claimId": "longitude-clock.claim.nobody-knew",
+      "proposedPhrase": "Nobody knew where ships were.",
+      "reason": "EXCLUSION: estimates, latitude and dead reckoning existed; the issue was reliable longitude accuracy.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.impossible",
+      "proposedPhrase": "Longitude was impossible before Harrison.",
+      "reason": "EXCLUSION: astronomical and other methods and estimates predated his work.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.sole-inventor",
+      "proposedPhrase": "Harrison alone invented the marine chronometer and solved navigation.",
+      "reason": "EXCLUSION: prior timekeepers, collaborators, astronomers, later makers and navigation observations are omitted.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.instant-solution",
+      "proposedPhrase": "H 4 immediately solved longitude for every ship.",
+      "reason": "EXCLUSION: trials were not immediate universal adoption; cost and reliability/training remained.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.direct-position",
+      "proposedPhrase": "The clock directly displayed the ship’s exact geographic position.",
+      "reason": "EXCLUSION: reference time must be compared with observations; longitude is only one coordinate.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.easy-latitude",
+      "proposedPhrase": "Latitude was easy to obtain anywhere at any time.",
+      "reason": "EXCLUSION: source supports celestial methods, not unrestricted ease; polar star not universally visible.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.instant-prize",
+      "proposedPhrase": "H 4 won the full prize immediately after its first trial.",
+      "reason": "EXCLUSION: further trials, conditional payments and disputes followed.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.all-replaced",
+      "proposedPhrase": "Chronometers replaced every other longitude method.",
+      "reason": "EXCLUSION: complementary methods and dead reckoning persisted.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.same-distance",
+      "proposedPhrase": "One hour of longitude difference is the same surface distance everywhere.",
+      "reason": "EXCLUSION:15° is angular separation; longitude meridians converge at the poles, so surface distance depends on latitude.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.raw-sundial",
+      "proposedPhrase": "An uncorrected solar reading of 14:00 versus a mean-time clock reading 12:00 proves exactly 30° east.",
+      "reason": "EXCLUSION: apparent and mean solar time must first be put on the same basis.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.exact-spin",
+      "proposedPhrase": "Earth rotates exactly 360° relative to the stars in 24SIhours.",
+      "reason": "EXCLUSION: sidereal and solar periods differ; the conversion is not that physical claim.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.motion-powered",
+      "proposedPhrase": "Harrison’s clock was powered by the motion of the ship.",
+      "reason": "EXCLUSION: timekeepers were designed to resist motion’s effects; not self-winding by ship movement.",
+      "recommendation": "reject"
+    },
+    {
+      "claimId": "longitude-clock.claim.humidity-specific",
+      "proposedPhrase": "Humidity was a specifically demonstrated limiting factor in H 4’s sea trials.",
+      "reason": "UNKNOWN: inspected descriptions do not establish that specific factor; absence here is not evidence that humidity has no effect.",
+      "recommendation": "hold"
+    },
+    {
+      "claimId": "longitude-clock.claim.trial-error-exact",
+      "proposedPhrase": "A precise H 4 trial residual can be stated without reference to the voyage, clock rate or correction convention.",
+      "reason": "UNKNOWN: popular seconds/miles summaries are not adjudicated from primary trial logs in this bounded proposal.",
+      "recommendation": "hold"
+    },
+    {
+      "claimId": "longitude-clock.claim.h4-demonstration",
+      "proposedPhrase": "Harrison invented the marine chronometer.",
+      "reason": "Modern museum shorthand can credit his breakthrough, but this collapses prior sea timekeepers, H4 watch terminology, later developed chronometer mechanisms and a wider navigation system. Prefer H4 helped demonstrate watch-based longitude timekeeping; no exclusive first-ever invention claim is proposed.",
+      "recommendation": "qualify"
+    }
+  ],
+  "ownerApproved": false,
+  "schemaVersion": 1
+}

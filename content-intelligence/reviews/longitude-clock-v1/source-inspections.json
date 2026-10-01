@@ -1,0 +1,227 @@
+{
+  "inspections": [
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Latitude; Longitude; What can you use to measure longitude?"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Article body inspected. Its 360°/24-hour shorthand is refined with USNO and Bowditch; no unqualified sidereal-rotation assertion adopted."
+      ],
+      "sourceId": "source.longitude.definition",
+      "supportsClaimIds": [
+        "longitude-clock.claim.longitude",
+        "longitude-clock.claim.latitude",
+        "longitude-clock.claim.reference-problem"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Definitions of LAT, LMT and E; E = apparent solar time minus mean solar time"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Technical explanation inspected, including sign convention and nonuniform solar time. No source diagram licensed as production art."
+      ],
+      "sourceId": "source.longitude.equation-time",
+      "supportsClaimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.noon",
+        "longitude-clock.claim.equation-time",
+        "longitude-clock.claim.conversion"
+      ]
+    },
+    {
+      "accessStatus": "partially-inspected",
+      "evidenceLocations": [
+        "§§1702–1703 pp.309–311; §§1705–1706 pp.314–316; §1710 pp.318–319; §1712 p.320"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Targeted chapter text inspected; PDF pages 310,316,318 visually inspected through PDFKit after web screenshot failure. Download 3,833,739 bytes SHA-256 ae18b189eab0f14ce3b8b33d478fc2edf0774a19a93bbdce8103256acc860d60. Official NGA index rendered no document text; official 2019 PDF web access failed. Mirror is disclosed, not certified byte-identical to official 2024 volume. Modern operational examples are not evidence of eighteenth-century radio use."
+      ],
+      "sourceId": "source.longitude.bowditch-time",
+      "supportsClaimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.noon",
+        "longitude-clock.claim.equation-time",
+        "longitude-clock.claim.conversion",
+        "longitude-clock.claim.east-example",
+        "longitude-clock.claim.west-example",
+        "longitude-clock.claim.minute-error",
+        "longitude-clock.claim.second-error",
+        "longitude-clock.claim.clock-rate"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "H1 trials; More experiments – H2 and H3; H4 trials; Harrison rewarded; What happened next?"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Historical narrative inspected. Exact trial error figures and villain framing are not adopted; distinguish sea demonstration from immediate universal adoption."
+      ],
+      "sourceId": "source.longitude.harrison-history",
+      "supportsClaimIds": [
+        "longitude-clock.claim.sea-challenge",
+        "longitude-clock.claim.h1",
+        "longitude-clock.claim.h4-demonstration",
+        "longitude-clock.claim.trials",
+        "longitude-clock.claim.board",
+        "longitude-clock.claim.reward-dispute",
+        "longitude-clock.claim.adoption"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Collection description and Object details, ZAA0034"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Catalog text inspected, including temperature compensation and interconnected balances. Museum photographic licensing explicitly required."
+      ],
+      "sourceId": "source.longitude.h1",
+      "supportsClaimIds": [
+        "longitude-clock.claim.sea-challenge",
+        "longitude-clock.claim.h1"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Collection description and Object details, ZAA0035"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Catalog text inspected. Not sea-tested owing to a balance design fault."
+      ],
+      "sourceId": "source.longitude.h2",
+      "supportsClaimIds": [
+        "longitude-clock.claim.h2"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Collection description and Object details, ZAA0036"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Catalog text inspected. Nineteen-year development and insufficient timekeeping; no claim that every modern bearing derives solely from Harrison."
+      ],
+      "sourceId": "source.longitude.h3",
+      "supportsClaimIds": [
+        "longitude-clock.claim.h3"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Collection description and Object details, ZAA0037"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Catalog text inspected: longitude watch completed1759; John Jefferys watch1753. Narrative page dates commissioning around1751–52, not necessarily manufacture; use early1750s rather than collapse these dates. No collection photograph or plate cleared for production."
+      ],
+      "sourceId": "source.longitude.h4",
+      "supportsClaimIds": [
+        "longitude-clock.claim.h4-watch",
+        "longitude-clock.claim.h4-demonstration"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Maskelyne and the Nautical Almanac; Bringing it all together and making it work"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Article body inspected. Tables, observations, training and dead reckoning accompany timekeepers; slow uptake and complementarity are explicit."
+      ],
+      "sourceId": "source.longitude.lunar",
+      "supportsClaimIds": [
+        "longitude-clock.claim.complementary",
+        "longitude-clock.claim.lunar-mechanism",
+        "longitude-clock.claim.almanac",
+        "longitude-clock.claim.adoption"
+      ]
+    },
+    {
+      "accessStatus": "partially-inspected",
+      "evidenceLocations": [
+        "Complementary methods: timekeeping and astronomy; notes19–29"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Relevant historical analysis and cited references inspected; underlying archive manuscripts were not independently read. Historical interpretation, not primary trial measurements. Do not adopt apparent Ptolemy date typo in earlier section."
+      ],
+      "sourceId": "source.longitude.higgitt",
+      "supportsClaimIds": [
+        "longitude-clock.claim.reference-problem",
+        "longitude-clock.claim.sea-challenge",
+        "longitude-clock.claim.h4-demonstration",
+        "longitude-clock.claim.board",
+        "longitude-clock.claim.reward-dispute",
+        "longitude-clock.claim.complementary",
+        "longitude-clock.claim.lunar-mechanism",
+        "longitude-clock.claim.almanac"
+      ]
+    },
+    {
+      "accessStatus": "inspected",
+      "evidenceLocations": [
+        "Article dated March24,2017; paragraph on second trial and1773 Parliament payment"
+      ],
+      "identityConfirmed": true,
+      "limitations": [
+        "Institutional historian article inspected; supports1773 £8750 as secondary evidence only. Exact trial miles/seconds and simplistic Board-resistance attribution not adopted; primary accounting remains uninspected."
+      ],
+      "sourceId": "source.longitude.payment",
+      "supportsClaimIds": [
+        "longitude-clock.claim.trials",
+        "longitude-clock.claim.parliament-payment"
+      ]
+    }
+  ],
+  "retrievalConvention": "Fresh inspected2026-10-01 local/UTC. Body text and exact heading/section locators preserved as paraphrases; no search snippet or AI summary treated as claim evidence. Targeted partial inspections are labeled. No paid API workflow envelope fabricated.",
+  "schemaVersion": 1,
+  "sourceTension": "Correct museum360°/24h shorthand with USNO/Bowditch; distinguish commissioning from manufacture dates; exclude precision trial residuals and precise payment accounting from narration.",
+  "unusedLeads": [
+    {
+      "access": "web internal error; not inspected",
+      "url": "https://cudl.lib.cam.ac.uk/collections/longitude"
+    },
+    {
+      "access": "web internal error; Board minutes not inspected",
+      "url": "https://cudl.lib.cam.ac.uk/collections/rgo14/1"
+    },
+    {
+      "access": "web internal error; primary pamphlet not inspected",
+      "url": "https://cudl.lib.cam.ac.uk/view/MS-BGN-00000/63"
+    },
+    {
+      "access": "HTTP403; not inspected",
+      "url": "https://www.cam.ac.uk/research/news/the-longitude-problem-300-year-old-archive-opened-to-the-world"
+    },
+    {
+      "access": "JS index returned one line; no document content inspected",
+      "url": "https://msi.nga.mil/Publications/APN"
+    },
+    {
+      "access": "web internal error; not inspected",
+      "url": "https://msi.nga.mil/api/publications/download?key=16693975%2FSFH00000%2FBowditch_Vol_1_LoRes_2019.pdf"
+    },
+    {
+      "access": "Catalog BGN/14 inspected; supports existence of1765 pamphlet, not its full contents or financial claims",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-478825"
+    },
+    {
+      "access": "Resource directory inspected; independently identifies Bowditch/NGA and Nautical Almanac as navigation resources; no substantive mechanism claim derives from index",
+      "url": "https://aa.usno.navy.mil/faq/celnav"
+    }
+  ]
+}

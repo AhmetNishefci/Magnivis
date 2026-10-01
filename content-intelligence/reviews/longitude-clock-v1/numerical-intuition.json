@@ -1,0 +1,50 @@
+{
+  "accumulation": {
+    "days": 60,
+    "longitudeErrorDegrees": 0.25,
+    "qualification": "Illustrative constant uncorrected rate error, not measured H4 performance; known rate correction can remove systematic component.",
+    "timeErrorSeconds": 60,
+    "uncorrectedSecondsPerDay": 1
+  },
+  "claimIds": [
+    "longitude-clock.claim.east-example",
+    "longitude-clock.claim.west-example",
+    "longitude-clock.claim.minute-error",
+    "longitude-clock.claim.second-error",
+    "longitude-clock.claim.clock-rate"
+  ],
+  "convention": "east-positive; simultaneous local/reference mean solar time, dates and clock error resolved",
+  "distanceDecision": "Do not narrate or assert a universal distance conversion. Degree separation corresponds to different parallel distances with latitude; no unsupported exact miles conversion is needed.",
+  "equationOfTime": "E = LAT - LMT; LMT = LAT - E. At apparent local noon LAT=12h, so LMT=12h-E.",
+  "errorExamples": [
+    {
+      "longitudeErrorDegrees": 0.004166666666666667,
+      "timeErrorSeconds": 1
+    },
+    {
+      "longitudeErrorDegrees": 0.25,
+      "timeErrorSeconds": 60
+    },
+    {
+      "longitudeErrorDegrees": 1,
+      "timeErrorSeconds": 240
+    }
+  ],
+  "examples": [
+    {
+      "direction": "east",
+      "localMeanHours": 14,
+      "longitudeDegrees": 30,
+      "referenceMeanHours": 12
+    },
+    {
+      "direction": "west",
+      "localMeanHours": 10,
+      "longitudeDegrees": -30,
+      "referenceMeanHours": 12
+    }
+  ],
+  "formula": "delta_longitude_degrees = 15 * (local_mean_hours - reference_mean_hours)",
+  "ownerApproved": false,
+  "schemaVersion": 1
+}

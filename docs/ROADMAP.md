@@ -1,6 +1,6 @@
 # Roadmap
 
-Current new-content gate: **AHMET — CYCLE #2 TOPIC SELECTION**. Owner-authorized discovery is complete; see PROJECT-STATE.md and the Cycle #2 discovery handoff. Earlier closure/sequencing below remains milestone history. No research or production is authorized by the proposed candidate.
+Current new-content gate: **AHMET — CYCLE #2 EDITORIAL REVIEW**. Ahmet selected the longitude-clock candidate and authorized bounded research/editorial proposal; the review-state bundle is complete. See PROJECT-STATE.md and `content-intelligence/reviews/longitude-clock-v1/owner-review.md`. No claim/editorial approval or production is inferred. Earlier discovery/closure sequencing below remains milestone history.
 
 ## Cycle #1 completion checkpoint — 2026-10-01
 

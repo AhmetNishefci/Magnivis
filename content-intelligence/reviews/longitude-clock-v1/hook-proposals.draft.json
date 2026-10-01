@@ -1,0 +1,69 @@
+{
+  "knowledgePackageId": "longitude-clock",
+  "packageRevision": 1,
+  "proposals": [
+    {
+      "archetype": "paradox-question",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison",
+        "longitude-clock.claim.longitude"
+      ],
+      "id": "longitude-clock.hook-proposal.question",
+      "rationale": "Recommended: immediate object/position contradiction resolves through a single understandable comparison; question must be followed by longitude scope.",
+      "text": "How can a clock tell a ship where it is?",
+      "viewerPromise": "Understand how a time comparison reveals longitude."
+    },
+    {
+      "archetype": "physical-object",
+      "claimIds": [
+        "longitude-clock.claim.h4-demonstration"
+      ],
+      "id": "longitude-clock.hook-proposal.object",
+      "rationale": "Concrete historical entry, but visually depicting H4 demands accurate reconstruction or licensed photography.",
+      "text": "This watch helped ships find their longitude. How?",
+      "viewerPromise": "Connect H4’s purpose with the actual navigation principle."
+    },
+    {
+      "archetype": "navigation-problem",
+      "claimIds": [
+        "longitude-clock.claim.reference-problem",
+        "longitude-clock.claim.time-comparison"
+      ],
+      "id": "longitude-clock.hook-proposal.problem",
+      "rationale": "Accurate but less immediate; abstract somewhere else needs an early reference-meridian reveal.",
+      "text": "At sea, knowing the time somewhere else could help reveal your longitude.",
+      "viewerPromise": "Understand why the reference location matters."
+    },
+    {
+      "archetype": "time-space-contradiction",
+      "claimIds": [
+        "longitude-clock.claim.time-comparison"
+      ],
+      "id": "longitude-clock.hook-proposal.contradiction",
+      "rationale": "Conceptually strong, but lacks the ship and physical object in the first moment.",
+      "text": "How can a difference in time reveal a difference in position?",
+      "viewerPromise": "Convert the time gap into an east–west angle."
+    },
+    {
+      "archetype": "numerical-surprise",
+      "claimIds": [
+        "longitude-clock.claim.minute-error"
+      ],
+      "id": "longitude-clock.hook-proposal.number",
+      "rationale": "Defensible error magnitude with corrected-time context; degree of longitude may be too abstract without a clear visual.",
+      "text": "One minute of clock error can mean a quarter-degree error in longitude.",
+      "viewerPromise": "Understand why keeping reference time accurate mattered."
+    },
+    {
+      "archetype": "historical-challenge",
+      "claimIds": [
+        "longitude-clock.claim.h4-demonstration",
+        "longitude-clock.claim.time-comparison"
+      ],
+      "id": "longitude-clock.hook-proposal.history",
+      "rationale": "History opening introduces Harrison before viewers know the question; avoid implying lunar observation mandatory.",
+      "text": "Harrison’s watch helped answer an ocean navigation problem. But the watch needed the sky.",
+      "viewerPromise": "Understand why timekeepers and celestial observation work together."
+    }
+  ]
+}
