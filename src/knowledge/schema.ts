@@ -1,3 +1,4 @@
+import {internalEditorialAuthoritySchema} from '../workflow/authority-schema';
 import {z} from 'zod';
 import {knowledgeTaxonomySchema} from './taxonomy';
 
@@ -61,6 +62,7 @@ export const sourceRecordSchema = z.object({
 
 const reviewMetadataSchema = z.object({
   reviewedBy: z.string().min(1),
+  authority: internalEditorialAuthoritySchema.optional(),
   reviewedAt: z.iso.date().optional(),
   decisionEnteredAt: z.iso.datetime().optional(),
   reviewTimeBasis: z.literal('decision-entry').optional(),
@@ -170,6 +172,7 @@ const caveatSchema = z.object({
 
 const approvalSchema = z.object({
   approvedBy: z.string().min(1),
+  authority: internalEditorialAuthoritySchema.optional(),
   approvedAt: z.iso.date().optional(),
   decisionEnteredAt: z.iso.datetime().optional(),
   reviewTimeBasis: z.literal('decision-entry').optional(),

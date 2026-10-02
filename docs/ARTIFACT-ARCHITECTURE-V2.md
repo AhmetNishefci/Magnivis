@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Artifact Architecture V2 — canonical media and platform-aware delivery
 
 This document owns prospective canonical binary identity and reference semantics. ARTIFACT-STORAGE.md continues to own Git durability/recovery; PLATFORM-QA.md owns presentation evidence; CREATIVE-DIRECTION.md owns story-specific execution. Priority: presentation quality, factual/editorial integrity, provenance/reproducibility, then storage efficiency.

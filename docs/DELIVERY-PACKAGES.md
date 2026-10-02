@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Platform delivery packages
 
 Platform Delivery Package V1 is the implemented local operator handoff between a PlatformVariant and manual platform work:

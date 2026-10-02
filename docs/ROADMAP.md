@@ -1,3 +1,5 @@
+> Current prospective workflow: [WORKFLOW-V3](WORKFLOW-V3.md). Current state: [project-state](../workflow/project-state.json). The dated milestones below are historical, including superseded pending-gate statements. Cycle #4 is not started.
+
 # Roadmap
 
 Current new-content gate: **AHMET — CONTENT CYCLE #3 TOPIC SELECTION**. Open-world discovery is complete with 34 proposals / 33 distinct ideas, ten shortlisted candidates and five finalists; advisory chocolate crystallization proposal remains unselected. See [Cycle #3 handoff](../content-intelligence/discovery/cycle-3-2026-10-01/owner-review.md) and PROJECT-STATE.md. No bounded research or production began. Longitude Clock is owner-reported scheduled for 2026-10-02 at 20:00 Kosovo local time; live publication evidence remains pending. Current target is approximately one excellent short/day, quality-first and adaptable, with a provisional 20:00 window. Long-form remains a future parallel format; its existing roadmap/brief is preserved. Older milestones below are history.

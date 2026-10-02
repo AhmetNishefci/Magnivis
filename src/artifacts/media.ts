@@ -57,9 +57,10 @@ export const createMediaRegistry = (input: unknown, root = process.cwd()) => {
       canonical.set(m.sha256, m);
     }
   }
+  const byId = new Map(artifacts.map(m => [m.id, m]));
   const get = (ref: MediaReference) => {
     mediaReferenceSchema.parse(ref);
-    const artifact = artifacts.find(m => m.id === ref.id);
+    const artifact = byId.get(ref.id);
     if (!artifact || artifact.sha256 !== ref.sha256) throw new Error('Missing/stale exact media reference');
     return structuredClone(artifact);
   };

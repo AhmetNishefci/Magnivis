@@ -1,3 +1,5 @@
+import {recordReferenceSchema} from '../workflow/evidence';
+import {internalEditorialAuthoritySchema} from '../workflow/authority-schema';
 import {executionPolicySchema,validateExecutionPolicy,predatesBrandPolicy} from '../design/brand-execution-policy';
 import {z} from 'zod';
 import {creativeReferenceSchema} from '../content-assets/creative-direction';
@@ -72,7 +74,7 @@ export const productionVisualApprovalSchema = z.object({
   if (approval.reviewTimeBasis && !approval.decisionEnteredAt) context.addIssue({code:'custom',message:'Decision-entry basis requires entry time'});
 });
 
-export const productionPlanSchema = z.object({
+const productionPlanObject = z.object({
   schemaVersion: z.literal(1),
   id: stableKnowledgeIdSchema.refine((id) => id.startsWith('production-plan.')),
   revision: z.number().int().positive(),
@@ -84,7 +86,9 @@ export const productionPlanSchema = z.object({
   ]),
   knowledgePackage: artifactReferenceSchema,
   contentAsset: artifactReferenceSchema,
-  ownerDecision: artifactReferenceSchema,
+  ownerDecision: artifactReferenceSchema.optional(),
+  internalEditorialAuthority: internalEditorialAuthoritySchema.optional(),
+  presentationProfiles:z.array(recordReferenceSchema).min(1).optional(),
   approvedScriptSha256: z.string().regex(/^[a-f0-9]{64}$/),
   creativeDirection: creativeReferenceSchema.optional(),
   executionPolicy: executionPolicySchema.optional(),
@@ -92,7 +96,7 @@ export const productionPlanSchema = z.object({
   format: z.object({
     width: z.number().int().positive(),
     height: z.number().int().positive(),
-    fps: z.number().int().positive(),
+    fps: z.number().positive(),
     durationSeconds: z.number().positive(),
   }).strict(),
   safeAreaProfileId: stableKnowledgeIdSchema,
@@ -111,7 +115,8 @@ export const productionPlanSchema = z.object({
   }).strict(),
   visualApproval: productionVisualApprovalSchema.optional(),
   reviewRequirements: z.array(z.string().min(1)).min(1),
-}).strict().superRefine((plan, context) => {
+}).strict();
+const validatePlanShape = (plan: z.infer<typeof productionPlanObject>, context: z.RefinementCtx) => {
   const durationFrames = Math.round(plan.format.durationSeconds * plan.format.fps);
   const ids = plan.beats.map(({id}) => id);
   if (new Set(ids).size !== ids.length) {
@@ -147,17 +152,22 @@ export const productionPlanSchema = z.object({
       message: 'Visual approval must reference the exact CaptionPlan used by the production plan',
     });
   }
+};
+
+export const productionPlanSchema = productionPlanObject.extend({ownerDecision: artifactReferenceSchema}).superRefine(validatePlanShape);
+export const productionPlanV3Schema = productionPlanObject.superRefine(validatePlanShape).superRefine((plan,context)=>{
+  if (!!plan.ownerDecision === !!plan.internalEditorialAuthority) context.addIssue({code:'custom',message:'Production requires exactly one owner editorial decision or V3 internal evidence authority'});
 });
 
 export type ProductionPlan = z.infer<typeof productionPlanSchema>;
 
-export const validateProductionPlanReferences = (
+const validateProductionInputs = (
   input: unknown,
   knowledgePackage: KnowledgePackage,
   contentAsset: ContentAsset,
   creativeDirection?: unknown,
 ) => {
-  const plan = productionPlanSchema.parse(input);
+  const plan = productionPlanV3Schema.parse(input);
   if (
     plan.knowledgePackage.id !== knowledgePackage.id
     || plan.knowledgePackage.revision !== knowledgePackage.revision
@@ -169,6 +179,8 @@ export const validateProductionPlanReferences = (
   if (knowledgePackage.editorialStatus !== 'approved' || contentAsset.editorialStatus !== 'approved') {
     throw new Error('ProductionPlan requires approved knowledge and editorial sources');
   }
+
+  if (plan.internalEditorialAuthority && (sha256Json(plan.internalEditorialAuthority) !== sha256Json(knowledgePackage.approval?.authority) || sha256Json(plan.internalEditorialAuthority) !== sha256Json(contentAsset.approval?.authority))) throw new Error('Production internal editorial authority does not bind verified sources');
 
   const claimById = new Map(knowledgePackage.claims.map((claim) => [claim.id, claim]));
   const selectedClaimIds = new Set(contentAsset.selectedClaimIds);
@@ -223,5 +235,12 @@ export const validateProductionPlanReferences = (
       || plan.creativeDirection.sha256 !== sha256Json(direction)) throw new Error('ProductionPlan creative direction is stale or not ready');
   }
   if (!historical && !predatesBrandPolicy(plan)) validateExecutionPolicy(plan.executionPolicy);
+  return plan;
+};
+
+export const validateProductionPlanReferences = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset, direction?: unknown) => productionPlanSchema.parse(validateProductionInputs(input,pkg,asset,direction));
+export const validateInternalProductionPlanReferences = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset, direction: unknown) => {
+  const plan = productionPlanV3Schema.parse(validateProductionInputs(input,pkg,asset,direction));
+  if (!plan.internalEditorialAuthority || plan.ownerDecision || !plan.presentationProfiles) throw new Error("Prospective internal production must identify internal authority explicitly");
   return plan;
 };

@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Multi-surface platform QA
 
 Authority: presentation profiles, device/surface evidence, covers and QA gates. PlatformVariant remains the adaptation layer; content master, variant and presentation surface are separate identities. A valid 1080x1920 encode does not prove mobile presentation safety.

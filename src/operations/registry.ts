@@ -1,3 +1,6 @@
+import {sha256Json} from '../content-intelligence/run-schema';
+import {createRepositoryDeliveryResolver, type PublicationDeliveryResolver} from './delivery-evidence';
+import {validatePublicationMediaAuthorization, validatePublishedMediaBinding} from '../delivery/media-bindings';
 import {loadMediaRegistry, type MediaRegistry} from '../artifacts/media';
 import {contentAssetRegistry, type ContentAssetRegistry} from '../content-assets/registry';
 import {knowledgePackageRegistry, type KnowledgePackageRegistry} from '../knowledge/registry';
@@ -46,7 +49,9 @@ export const createPublicationRegistry = (
   assets: ContentAssetRegistry = contentAssetRegistry,
   packages: KnowledgePackageRegistry = knowledgePackageRegistry,
   media?: MediaRegistry,
+  deliveries?: PublicationDeliveryResolver,
 ) => {
+  const resolveDelivery=deliveries ?? createRepositoryDeliveryResolver();
   const publicationMap = new Map<string, PublicationRecord>();
   const remoteKeys = new Set<string>();
   for (const input of inputs) {
@@ -73,6 +78,17 @@ export const createPublicationRegistry = (
       || publication.source.delivery.id !== expectedDeliveryId
     ) {
       throw new Error(`Publication source chain mismatch: ${publication.id}`);
+    }
+    if (publication.source.delivery.manifestSha256 || variant.mediaArtifact) {
+      const evidence = resolveDelivery(publication.source.delivery.id);
+      if (evidence.fileSha256 !== publication.source.delivery.manifestSha256) throw new Error('Publication delivery manifest digest mismatch');
+      if (evidence.manifest.source.platformVariant.id !== variant.id || evidence.manifest.source.platformVariant.revision !== variant.revision || evidence.manifest.destination.platform !== publication.platform) throw new Error('Publication delivery identity mismatch');
+      if (variant.mediaArtifact) {
+        if (!evidence.authorization) throw new Error('Prospective publication requires exact delivery authorization evidence');
+        const authorization = validatePublicationMediaAuthorization(evidence.authorization, evidence.manifest, variant, media ?? loadMediaRegistry());
+        if (sha256Json(publication.approval.ownerDecision) !== sha256Json(authorization.ownerDecision)) throw new Error('Publication owner authorization decision mismatch');
+        validatePublishedMediaBinding(publication, evidence.manifest, media ?? loadMediaRegistry(), evidence.fileSha256);
+      }
     }
     if (publication.remote) {
       const key = `${publication.platform}:${publication.remote.postId}`;

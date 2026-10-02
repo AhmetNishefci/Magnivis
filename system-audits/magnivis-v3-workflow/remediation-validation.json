@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "runtime": "Node 22.23.3",
+  "branch": "architecture/magnivis-v3-workflow",
+  "baselineHead": "3ba2bb2660e925b35427332894c38199bf0555b0",
+  "main": "cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+  "ownerStatus": "B \u2014 READY WITH SPECIFIC NON-BLOCKING LIMITATIONS",
+  "pnpmCheck": {
+    "passed": true,
+    "testFiles": 44,
+    "tests": 438,
+    "typecheck": true,
+    "lint": true,
+    "diffCheck": true
+  },
+  "checks": [
+    {
+      "command": "node --import tsx scripts/validate-artifact-v2.ts",
+      "passed": true,
+      "rawOutputSha256": "22ee63f0c2760914ca3fe56d97f579ba5a1fef0c70c9834766ca012ffcec9363"
+    },
+    {
+      "command": "node --import tsx scripts/validate-chocolate-publication.ts",
+      "passed": true,
+      "rawOutputSha256": "54ba21697e0c4aae9ea0292e9d1538bcc4e8a17924c81b482bc8ff03af47118f"
+    },
+    {
+      "command": "node --import tsx scripts/validate-longitude-publication.ts",
+      "passed": true,
+      "rawOutputSha256": "f2d1e2ee3fa0c6aff503946e30d509d266eccd7889b91bc1e49fcf8074d000dd"
+    },
+    {
+      "command": "node --import tsx scripts/validate-adaptive-creative-system.ts",
+      "passed": true,
+      "rawOutputSha256": "35ff9ef1a46a21811ee16fe5c1ee0611b6bb8b48e5b3e9ae614527444a41ee20"
+    },
+    {
+      "command": "node --import tsx scripts/verify-durable-artifacts.ts",
+      "passed": true,
+      "rawOutputSha256": "3800c7fc0cf3bbfe9d98f015a4c689486dc6170dbf64e04825691a00fc1c30b3"
+    },
+    {
+      "command": "node --import tsx scripts/validate-longitude-v2.ts",
+      "passed": true,
+      "rawOutputSha256": "1b1d3844f4991cabab1309ce9aa8fc22fa1d48faf558bfdb0ec91ba36ed5eeb4"
+    },
+    {
+      "command": "node --import tsx scripts/validate-chocolate-production.ts",
+      "passed": true,
+      "rawOutputSha256": "4778e278a969c80df487f8e6a9df6fb9782d774db762c9e583f3531c5fe89f8f"
+    }
+  ],
+  "preservation": [
+    {
+      "manifest": "system-audits/artifact-architecture-v2/historical-bindings.json",
+      "verifiedFiles": 948,
+      "mismatches": []
+    },
+    {
+      "manifest": "system-audits/magnivis-v3-workflow/preserved-evidence.json",
+      "verifiedFiles": 33,
+      "mismatches": []
+    }
+  ],
+  "isolatedCheckout": {
+    "history": "complete local clone, current engineering overlay",
+    "dependencies": "existing pinned node_modules reused; dependency reinstall not tested",
+    "typecheck": true,
+    "lint": true,
+    "workflow": true,
+    "durable": true,
+    "tests": {
+      "passed": true,
+      "files": 44,
+      "count": 438,
+      "flags": [
+        "--maxWorkers=1",
+        "--testTimeout=30000"
+      ],
+      "priorFailures": "Three historical default-timeout failures in initial parallel run, one in later serialized run; another serialized default run passed. No assertion changes."
+    },
+    "latestExceptionAssertions": "passed in working and isolated checkout"
+  },
+  "secretScan": {
+    "scope": "changed and untracked engineering text files",
+    "scannedFiles": 57,
+    "findings": [],
+    "reviewedNoncredentials": [
+      {
+        "path": "docs/CONTENT-INTELLIGENCE.md",
+        "rule": "assigned-secret",
+        "line": 100,
+        "classification": "unchanged noncredential documentation placeholder"
+      }
+    ],
+    "limitations": "pattern-based scoped scan; not proof of universal secret absence"
+  },
+  "noRealCycleStarted": true,
+  "noApprovedMediaChanged": true,
+  "historicalPublicationInferred": false,
+  "mainMerged": false,
+  "adversarialResults": {
+    "wrong-destination": "passed",
+    "wrong-surface": "passed",
+    "cross-platform-evidence": "passed",
+    "master-evidence-for-derivative": "passed",
+    "wrong-media": "passed",
+    "live-catalog-fresh-registration": "passed",
+    "stale-snapshot": "passed",
+    "immutable-catalog-rewrite": "passed",
+    "duplicate-payload": "passed",
+    "corrupt-bytes": "passed",
+    "incomplete-platform-coverage": "passed",
+    "unrequested-platform": "passed",
+    "incomplete-publication-closure": "passed",
+    "backlog-production": "passed",
+    "late-publication-isolation": "passed",
+    "cross-cycle-evidence": "passed",
+    "idempotent-observations": "passed",
+    "conflicting-publication": "passed",
+    "unrelated-exception": "passed",
+    "expired-exception": "passed",
+    "superseding-exception": "passed",
+    "factual-nonoverride": "passed",
+    "wrong-manifest": "passed",
+    "rejected-authorization": "passed",
+    "unsupported-transition": "passed",
+    "unknown-remains-unknown": "passed"
+  }
+}

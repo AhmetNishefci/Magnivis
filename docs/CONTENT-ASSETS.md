@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Content assets
 
 Content Asset V1 is the implemented platform-neutral editorial layer between reusable knowledge and production. It answers **what this specific story communicates**. It does not own research, exact Remotion choreography, platform adaptation, publication, or analytics.

@@ -43,10 +43,10 @@ export const resolveDeliveryUpload = (input: unknown, registry: MediaRegistry = 
   return {mediaArtifact: ref, uploadFile: artifact.canonicalPath, absoluteUploadFile: path, bytes: artifact.bytes, legacyPackage: manifest.schemaVersion < 3};
 };
 /** After actual evidence exists, bind a native PublicationRecord to the actual upload. No records are generated here. */
-export const validatePublishedMediaBinding = (record: PublicationRecord, manifest: DeliveryManifest, registry: MediaRegistry = loadMediaRegistry()) => {
+export const validatePublishedMediaBinding = (record: PublicationRecord, manifest: DeliveryManifest, registry: MediaRegistry = loadMediaRegistry(), manifestFileSha256?: string) => {
   const upload = resolveDeliveryUpload(manifest, registry);
   if (!record.source.mediaArtifact || record.source.mediaArtifact.id !== upload.mediaArtifact.id || record.source.videoSha256 !== upload.mediaArtifact.sha256 || record.source.mediaArtifact.sha256 !== upload.mediaArtifact.sha256
-    || record.source.delivery.id !== manifest.deliveryId || record.source.delivery.manifestSha256 !== sha256Json(manifest)
+    || record.source.delivery.id !== manifest.deliveryId || record.source.delivery.manifestSha256 !== (manifestFileSha256 ?? sha256Json(manifest))
     || record.source.platformVariant.id !== manifest.source.platformVariant.id || record.source.platformVariant.revision !== manifest.source.platformVariant.revision) throw new Error('Published identity differs from the actual delivery media');
   return upload;
 };

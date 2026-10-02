@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 3,
+  "phase": "engineering-review",
+  "nextOwnerGate": "AHMET \u2014 MAGNIVIS V3 REMEDIATION REVIEW",
+  "externalActions": "not-authorized",
+  "historicalCycles": [
+    {
+      "id": "wood-frog",
+      "state": "recovery-closed-original-master-missing",
+      "evidence": {
+        "path": "artifacts/recovery-decision.json",
+        "sha256": "5a70e1844240be6b0cc4caec9875bd644c951e1a9fff5e3807f310be1e52819c"
+      },
+      "publication": "historical-upload-owner-reported-exact-identity-unknown",
+      "metrics": "unknown"
+    },
+    {
+      "id": "phantom-traffic",
+      "state": "published-owner-reported-operationally-closed",
+      "evidence": {
+        "path": "content-intelligence/reviews/phantom-traffic-closure-v1/owner-decision.json",
+        "sha256": "ef3348fb57191c423ef1fde14004ef68de1a6d79dfe8ea9b9d2967bc755d625d"
+      },
+      "publicationEvidence": {
+        "path": "content-intelligence/reviews/phantom-traffic-closure-v1/publication-records.json",
+        "sha256": "cd5c38112d0d9319076628bf9e0fbf4c309e2a15e1dbb6b2da5081ef53c06a32"
+      },
+      "metrics": "none-recorded"
+    },
+    {
+      "id": "longitude-clock",
+      "state": "scheduled-owner-reported",
+      "evidence": {
+        "path": "content-intelligence/operations/longitude-clock-scheduling-v1/owner-report.json",
+        "sha256": "40578ddaba91d3c605a1b1e26ec6b43b6ae9c1dd7af61f7d3985119f14783692"
+      },
+      "publication": "unknown",
+      "metrics": "none-recorded"
+    },
+    {
+      "id": "chocolate-crystal-choice",
+      "state": "scheduled-owner-reported",
+      "evidence": {
+        "path": "content-intelligence/operations/chocolate-crystal-choice-scheduling-v1/owner-report.json",
+        "sha256": "806b265a3af4682317d2b426718e3120b3e7efd2e889ae2c2fc33c571ad1e141"
+      },
+      "publication": "unknown",
+      "metrics": "none-recorded"
+    }
+  ],
+  "cycleIndex": "workflow/cycles",
+  "cycleStateAuthority": "independent-replay-validated-journals"
+}

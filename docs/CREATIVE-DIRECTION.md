@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Adaptive creative direction V1
 
 **Magnivis is a brand, not a video template.** Consistency of quality and identity; diversity of creative execution. This authority applies to future content only. Wood Frog, Phantom Traffic and every historical approved asset retain their exact scripts, render inputs, approvals, artifact identities and presentation evidence. Recovery remains CLOSED.

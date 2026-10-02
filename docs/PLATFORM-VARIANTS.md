@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Platform variants
 
 PlatformVariant V1 is the implemented adaptation layer between a platform-neutral ContentAsset and a concrete production representation. It answers **how this story should be packaged and reviewed for one distribution surface**. It does not upload, schedule, publish, store credentials, or record remote publication state.

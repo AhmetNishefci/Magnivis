@@ -11,7 +11,7 @@ export const adaptiveCaptionPlanSchema = z.object({
   schemaVersion: z.literal(2), id: z.string().startsWith('caption-plan.'),
   revision: z.number().int().positive(), status: z.enum(['draft','review-required','approved']),
   creativeDirection: creativeReferenceSchema, approvedScriptSha256: z.string().regex(/^[a-f0-9]{64}$/),
-  fps: z.number().int().positive(), coverage: z.literal('complete-narration'),
+  fps: z.number().positive(), coverage: z.literal('complete-narration'),
   visualTreatment: z.object({
     fontAsset: z.string().min(1), fontFamily: z.string().min(1),
     fontSize: z.number().positive(), fontWeight: z.number().int().min(100).max(1000),

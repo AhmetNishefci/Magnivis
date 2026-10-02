@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Current bounded milestone — Artifact Architecture V2
 
 Canonical media identity and prospective reference-only delivery are implemented on the architecture branch; owner architecture review remains pending. See `docs/ARTIFACT-ARCHITECTURE-V2.md` and `system-audits/artifact-architecture-v2/owner-review.md`. Historical paths, locked masters and release authorization remain unchanged. No Cycle #4 work or assistant platform action is authorized/performed.

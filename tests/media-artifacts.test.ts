@@ -60,6 +60,7 @@ describe('Media content identity, historical safety and durability', () => {
       const legacyRoot = join(root, 'system-audits/artifact-architecture-v2');
       mkdirSync(legacyRoot, {recursive: true}); mkdirSync(join(root, 'artifacts'));
       writeFileSync(join(legacyRoot, 'legacy-binaries.json'), '{"files":[]}');
+      writeFileSync(join(legacyRoot, 'historical-bindings.json'), '{"files":[]}');
       writeFileSync(join(root, 'artifacts/media-catalog.json'), JSON.stringify({schemaVersion: 2, artifacts: [media]}));
       const tracked = ['one.wav', 'recipe.json'];
       expect(validateCanonicalMediaDurability(root, tracked).passed).toBe(true);
@@ -69,6 +70,10 @@ describe('Media content identity, historical safety and durability', () => {
       expect(() => validateCanonicalMediaDurability(root, [...tracked, 'disguised-payload.dat'])).toThrow(/New durable binary/);
       writeFileSync(join(root, 'new-large-payload.bin'), Buffer.alloc(1024 * 1024, 0));
       expect(() => validateCanonicalMediaDurability(root, [...tracked, 'new-large-payload.bin'])).toThrow(/New durable binary/);
+      writeFileSync(join(root, 'small-font.ttf'), Buffer.from([0,1,2,3]));
+      expect(() => validateCanonicalMediaDurability(root, [...tracked, 'small-font.ttf'])).toThrow(/New durable binary/);
+      writeFileSync(join(root, 'small-unknown.dat'), Buffer.from([0,1,2,3]));
+      expect(() => validateCanonicalMediaDurability(root, [...tracked, 'small-unknown.dat'])).toThrow(/New durable binary/);
       expect(() => validateCanonicalMediaDurability(root, ['recipe.json'])).toThrow(/not Git tracked/);
     } finally {rmSync(root, {recursive: true, force: true});}
   });

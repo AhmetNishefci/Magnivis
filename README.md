@@ -1,3 +1,5 @@
+Current system engineering: [Cycle V3 workflow](docs/WORKFLOW-V3.md), [machine project state](workflow/project-state.json). The machine state records the current owner action and active cycle; dated engineering/content handoffs retain their own scope.
+
 # Magnivis
 
 **See the unimaginable.**

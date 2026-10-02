@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # Knowledge packages
 
 Knowledge Package V1 is the implemented editorial layer above production. It owns reusable knowledge and editorial intelligence; it does not own rendering, platform metadata, publication, analytics, or provider orchestration.

@@ -329,7 +329,7 @@ export const validateContentBoundsEvidence = (variant: PlatformVariant): void =>
     assessment: z.object({profileId: z.string(), insets: z.object({top:z.number(),right:z.number(),bottom:z.number(),left:z.number()})}),
     qa: z.object({mediaSha256:z.string(),platformVariantId:z.string()}),
   }).parse(JSON.parse(readFileSync(evidence.report.path, 'utf8')));
-  if (report.qa.mediaSha256 !== source.artifact.sha256 || report.qa.platformVariantId !== variant.id
+  if (report.qa.mediaSha256 !== (variant.mediaArtifact?.sha256 ?? source.artifact.sha256) || report.qa.platformVariantId !== variant.id
       || report.assessment.profileId !== profile.id
       || ['top','right','bottom','left'].some(k => report.assessment.insets[k as keyof typeof profile.insets] !== profile.insets[k as keyof typeof profile.insets])) {
     throw new Error('Content bounds evidence detached from media, variant or profile');
@@ -388,10 +388,10 @@ const productionChainForVariant = (
     }
   } else if (sourceMaster.relationship === 'platform-specific-derivative') {
     if (!variant.mediaArtifact) throw new Error('General platform derivative requires an exact canonical media reference');
-    const authoredSafeArea = safeAreaProfileRegistry.get(productionReference.safeAreaProfileId);
-    const targetSafeArea = safeAreaProfileRegistry.get(variant.safeAreaProfileId);
-    if (!safeAreaContains(targetSafeArea, authoredSafeArea)) validateContentBoundsEvidence(variant);
+    // A source layout is never evidence for transformed bytes, even within the same envelope.
+    validateContentBoundsEvidence(variant);
   } else {
+    if (variant.mediaArtifact) validateContentBoundsEvidence(variant);
     if (productionReference.safeAreaProfileId !== variant.safeAreaProfileId) {
       throw new Error(`Derivative VideoSpec safe area does not match PlatformVariant ${variant.id}`);
     }

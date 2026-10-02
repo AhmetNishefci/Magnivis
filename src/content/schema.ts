@@ -61,7 +61,7 @@ export const videoSpecSchema = z.object({
   format: z.object({
     width: z.number().int().positive(),
     height: z.number().int().positive(),
-    fps: z.number().int().positive(),
+    fps: z.number().positive(),
     durationSeconds: z.number().positive(),
   }),
   scenes: z.array(sceneSchema).min(1),

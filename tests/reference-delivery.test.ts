@@ -122,15 +122,24 @@ describe('Canonical media platform/delivery lifecycle', () => {
       sourceMaster: {...original.sourceMaster!, artifact: {path: join(f.root, 'master.mp4'), sha256: f.master.sha256}, relationship: 'platform-specific-derivative'},
       productionIntent: {...original.productionIntent, renderStrategy: 'new-render', notes: 'Synthetic encoding adaptation fixture; story and layout remain unchanged.'},
       captions: {...original.captions, behavior: 'burned-in', sourceFile: undefined}});
-    const dependencies = {...f.dependencies, variantRegistry: createPlatformVariantRegistry([v], deliveryDependencies.assetRegistry, f.registry),
+    const regionsPath = join(f.root, 'derivative-regions.json');
+    const reportPath = join(f.root, 'derivative-report.json');
+    writeFileSync(regionsPath, JSON.stringify(['disclosure','critical-visual','caption'].map(kind=>({kind,bounds:{x:300,y:400,width:100,height:100}}))));
+    writeFileSync(reportPath, JSON.stringify({qa:{mediaSha256:f.transformed!.sha256,platformVariantId:v.id},assessment:{profileId:v.safeAreaProfileId,insets:{top:150,right:190,bottom:310,left:84}}}));
+    const evaluated = platformVariantSchema.parse({...v,sourceMaster:{...v.sourceMaster!,contentBoundsEvidence:{regions:{path:regionsPath,sha256:mediaHash(regionsPath)},report:{path:reportPath,sha256:mediaHash(reportPath)}}}});
+    const dependencies = {...f.dependencies, variantRegistry: createPlatformVariantRegistry([evaluated], deliveryDependencies.assetRegistry, f.registry),
       productionResolver: () => ({spec: woodFrog, sourceVideoPath: f.registry.resolveFile(v.mediaArtifact!)}),
       mediaInspector: () => ({...f.dependencies.mediaInspector(), durationSeconds: 40.043})};
     const p = generateDeliveryPackage({variantId: v.id, dependencies, outputRoot: join(f.root, 'encoding')});
     expect(p.manifest.source.productionChain?.lockedMaster.relationship).toBe('platform-specific-derivative');
     expect(resolveDeliveryUpload(p.manifest, f.registry).uploadFile).toBe('transformed.mp4');
+    writeFileSync(reportPath, JSON.stringify({qa:{mediaSha256:f.master.sha256,platformVariantId:v.id},assessment:{profileId:v.safeAreaProfileId,insets:{top:150,right:190,bottom:310,left:84}}}));
+    const stale = platformVariantSchema.parse({...evaluated,sourceMaster:{...evaluated.sourceMaster!,contentBoundsEvidence:{...evaluated.sourceMaster!.contentBoundsEvidence!,report:{path:reportPath,sha256:mediaHash(reportPath)}}}});
+    expect(()=>generateDeliveryPackage({variantId:v.id,outputRoot:join(f.root,'stale-master-evidence'),dependencies:{...dependencies,variantRegistry:createPlatformVariantRegistry([stale],deliveryDependencies.assetRegistry,f.registry)}})).toThrow(/detached from media/);
     const unrelated = f.make('unrelated.mp4', 'unrelated synthetic material');
     const registry = registerMediaArtifact(f.registry, unrelated, f.root);
-    const detached = {...v, mediaArtifact: mediaReference(unrelated)};
+    writeFileSync(reportPath, JSON.stringify({qa:{mediaSha256:unrelated.sha256,platformVariantId:v.id},assessment:{profileId:v.safeAreaProfileId,insets:{top:150,right:190,bottom:310,left:84}}}));
+    const detached = {...evaluated, mediaArtifact: mediaReference(unrelated),sourceMaster:{...evaluated.sourceMaster!,contentBoundsEvidence:{...evaluated.sourceMaster!.contentBoundsEvidence!,report:{path:reportPath,sha256:mediaHash(reportPath)}}}};
     expect(() => generateDeliveryPackage({variantId: v.id, outputRoot: join(f.root, 'detached'), dependencies: {...dependencies, mediaRegistry: registry, variantRegistry: createPlatformVariantRegistry([detached], deliveryDependencies.assetRegistry, registry), productionResolver: () => ({spec: woodFrog, sourceVideoPath: registry.resolveFile(mediaReference(unrelated))})}})).toThrow(/approved source master/);
   });
   it('rejects tampered references, canonical paths, extra copied payloads and legacy reference injection', () => {

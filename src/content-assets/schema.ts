@@ -1,3 +1,4 @@
+import {internalEditorialAuthoritySchema} from '../workflow/authority-schema';
 import {z} from 'zod';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 
@@ -97,6 +98,7 @@ const narrationPlanSchema = z.object({
 
 const approvalSchema = z.object({
   approvedBy: z.string().min(1),
+  authority: internalEditorialAuthoritySchema.optional(),
   approvedAt: z.iso.date().optional(),
   decisionEnteredAt: z.iso.datetime().optional(),
   reviewTimeBasis: z.literal('decision-entry').optional(),

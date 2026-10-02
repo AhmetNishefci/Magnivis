@@ -1,3 +1,5 @@
+> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+
 # System architecture
 
 This document owns the boundary between implemented systems and the planned knowledge-media engine. `docs/VIDEO-SYSTEM.md` remains authoritative for the implemented Remotion production subsystem.

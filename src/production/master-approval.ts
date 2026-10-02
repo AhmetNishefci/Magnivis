@@ -22,7 +22,7 @@ export const applyMasterVisualApproval=(input:unknown, reviewed:ProductionPlan, 
  const matches=(ref:z.infer<typeof reference>,actual:z.infer<typeof reference>)=>sha256Json(ref)===sha256Json(actual);
  if(!matches(decision.reviewedProductionPlan,{id:reviewed.id,revision:reviewed.revision,sha256:sha256Json(reviewed)})
    || !matches(decision.knowledgePackage,reviewed.knowledgePackage)||!matches(decision.contentAsset,reviewed.contentAsset)
-   || !matches(decision.editorialApproval,reviewed.ownerDecision)||decision.approvedScriptSha256!==reviewed.approvedScriptSha256
+   || !reviewed.ownerDecision || !matches(decision.editorialApproval,reviewed.ownerDecision)||decision.approvedScriptSha256!==reviewed.approvedScriptSha256
    || !matches(decision.captionPlan,{id:reviewed.captions.captionPlanId,revision:reviewed.captions.captionPlanRevision,sha256:reviewed.captions.captionPlanSha256}))throw new Error('Master decision targets stale reviewed source bindings');
  if(reviewed.status!=='rendered-candidate-visual-review-required'||reviewed.visualApproval)throw new Error('Master approval requires the exact unapproved candidate state');
  return productionPlanSchema.parse({...reviewed,revision:reviewed.revision+1,status:'owner-visual-approved',
