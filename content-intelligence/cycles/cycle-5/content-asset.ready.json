@@ -1,0 +1,292 @@
+{
+  "id": "chladni-sand.asset.still-lines",
+  "revision": 1,
+  "knowledgePackageId": "chladni-sand",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Recognize that sand highlights low-motion nodes rather than the most active regions or waves in air.",
+  "storyAngle": "A beautiful pattern is a map of stillness inside motion.",
+  "hookId": "chladni-sand.hook.pattern",
+  "selectedClaimIds": [
+    "chladni-sand.claim.patterns",
+    "chladni-sand.claim.migration",
+    "chladni-sand.claim.nodes",
+    "chladni-sand.claim.modes",
+    "chladni-sand.claim.setup"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 32,
+    "maximum": 60
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "chladni-sand.asset.still-lines.script.1",
+        "type": "factual",
+        "text": "These patterns are drawn by vibration.",
+        "claimIds": [
+          "chladni-sand.claim.patterns"
+        ]
+      },
+      {
+        "id": "chladni-sand.asset.still-lines.script.2",
+        "type": "factual",
+        "text": "Scatter sand on a metal plate, then make it vibrate at a resonant frequency.",
+        "claimIds": [
+          "chladni-sand.claim.patterns"
+        ]
+      },
+      {
+        "id": "chladni-sand.asset.still-lines.script.3",
+        "type": "factual",
+        "text": "The moving regions bounce the grains away.",
+        "claimIds": [
+          "chladni-sand.claim.migration"
+        ]
+      },
+      {
+        "id": "chladni-sand.asset.still-lines.script.4",
+        "type": "factual",
+        "text": "But some lines stay still. They're called nodes.",
+        "claimIds": [
+          "chladni-sand.claim.nodes"
+        ]
+      },
+      {
+        "id": "chladni-sand.asset.still-lines.script.5",
+        "type": "factual",
+        "text": "Sand gathers there, tracing the plate's pattern of motion.",
+        "claimIds": [
+          "chladni-sand.claim.migration",
+          "chladni-sand.claim.nodes"
+        ]
+      },
+      {
+        "id": "chladni-sand.asset.still-lines.script.6",
+        "type": "factual",
+        "text": "Change to a different vibration mode, and a different pattern can appear.",
+        "claimIds": [
+          "chladni-sand.claim.modes"
+        ]
+      },
+      {
+        "id": "chladni-sand.asset.still-lines.script.7",
+        "type": "factual",
+        "text": "The shape also depends on the plate and how it's held.",
+        "claimIds": [
+          "chladni-sand.claim.setup"
+        ]
+      },
+      {
+        "id": "chladni-sand.asset.still-lines.script.8",
+        "type": "factual",
+        "text": "So the sand isn't showing where the plate moves most. It's revealing where it doesn't move.",
+        "claimIds": [
+          "chladni-sand.claim.nodes",
+          "chladni-sand.claim.migration"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "chladni-sand.asset.still-lines.beat.1",
+      "label": "pattern",
+      "purpose": "Grains visibly collect into an intricate nodal figure on a plate in the opening; no title delay.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.1"
+      ]
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.beat.2",
+      "label": "excitation",
+      "purpose": "Show scattered grains and the same plate driven into vibration; do not imply every tone produces a pattern.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.2"
+      ]
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.beat.3",
+      "label": "moving-regions",
+      "purpose": "Close view isolates grains leaving a moving region, contrasted with a stationary line.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.3"
+      ]
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.beat.4",
+      "label": "still-nodes",
+      "purpose": "Slowed exaggerated side view crosses stationary nodes and oppositely moving regions; explicit label.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.4"
+      ]
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.beat.5",
+      "label": "sand-map",
+      "purpose": "Return to top view; sand and overlaid nodal lines align.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.5"
+      ]
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.beat.6",
+      "label": "mode-change",
+      "purpose": "Reset grains between two illustrative modes; no geometric morph masquerading as physics.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.6"
+      ]
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.beat.7",
+      "label": "setup-limit",
+      "purpose": "Show schematic support/excitation context; no calibrated frequency or material labels.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.7"
+      ]
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.beat.8",
+      "label": "reversal",
+      "purpose": "Return to sand; highlight quiet lines rather than moving lobes, land the reversal.",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.8"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "chladni-sand.asset.still-lines.visual.1",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.1",
+      "objective": "Grains visibly collect into an intricate nodal figure on a plate in the opening; no title delay.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.1"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.patterns"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.visual.2",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.2",
+      "objective": "Show scattered grains and the same plate driven into vibration; do not imply every tone produces a pattern.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.2"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.patterns"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.visual.3",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.3",
+      "objective": "Close view isolates grains leaving a moving region, contrasted with a stationary line.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.3"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.migration"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.visual.4",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.4",
+      "objective": "Slowed exaggerated side view crosses stationary nodes and oppositely moving regions; explicit label.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.4"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.nodes"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.visual.5",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.5",
+      "objective": "Return to top view; sand and overlaid nodal lines align.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.5"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.migration",
+        "chladni-sand.claim.nodes"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.visual.6",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.6",
+      "objective": "Reset grains between two illustrative modes; no geometric morph masquerading as physics.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.6"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.modes"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.visual.7",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.7",
+      "objective": "Show schematic support/excitation context; no calibrated frequency or material labels.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.7"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.setup"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    },
+    {
+      "id": "chladni-sand.asset.still-lines.visual.8",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.8",
+      "objective": "Return to sand; highlight quiet lines rather than moving lobes, land the reversal.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.8"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.migration"
+      ],
+      "notes": "Original qualitative plate-mode illustration. Persistent model disclosure; side-view motion slowed and exaggerated. Grain paths are explanatory, not force-law trajectories. Synthetic tones are illustrative, not calibrated frequencies."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Current primary af_heart; intrigued opening, deliberate contrast at still / moving and final reversal.",
+    "pronunciationNotes": [
+      "nodes: rhymes with roads",
+      "resonant frequency, vibration mode; no narration of Chladni required"
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.5",
+      "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+    },
+    "approvedAt": "2026-10-02",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

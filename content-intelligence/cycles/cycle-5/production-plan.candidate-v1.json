@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.chladni-sand.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "chladni-sand",
+    "revision": 1,
+    "sha256": "8ccf7d9f6408078cb6df2fc86f319ef2fd70d0559c413cff5a4768d12e808420"
+  },
+  "contentAsset": {
+    "id": "chladni-sand.asset.still-lines",
+    "revision": 1,
+    "sha256": "de7578caa7160e24e97f3df673fc99a615f70131a6d13f3bf2de754e0f2e3b32"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.5",
+    "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-5/profiles/youtube.json",
+      "sha256": "fdafe3d9a9c1f273f8e5d6ba556b59515cee1e419f097658feefcf57c71c915d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-5/profiles/tiktok.json",
+      "sha256": "264b0169ba339538578e2f2e1ab04d11806e5ab6bee289e037f0e6bddf77387f"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-5/profiles/instagram.json",
+      "sha256": "169164ab100ecc4914c21dcbcd0a667b1974645bbbfb81ac033f65f24dbff458"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-5/profiles/facebook.json",
+      "sha256": "cc4723eac1949d3f09719371101a61fe84a14cc35a6bda087e4f9c4c32218ef6"
+    }
+  ],
+  "approvedScriptSha256": "94da435030321104e715cf4f259257cb5d6f499c07ee8612df6d97eb6709e53c",
+  "creativeDirection": {
+    "id": "creative-direction.chladni-sand.v1",
+    "revision": 1,
+    "sha256": "2360310b3e81b6f62de40f9d0627aa74894dfe57d88e47332d5ded59baf58d8c"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "chladni-sand.claim.air-picture",
+    "chladni-sand.claim.healing"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 42.43333333333333
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "chladni.production.1",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.1",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.1",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.1"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.patterns"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 112
+      },
+      "sceneType": "pattern-formation",
+      "objective": "Grains visibly collect into an intricate nodal figure on a plate in the opening; no title delay.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    },
+    {
+      "id": "chladni.production.2",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.2",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.2",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.2"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.patterns"
+      ],
+      "frames": {
+        "start": 112,
+        "end": 306
+      },
+      "sceneType": "plate-excitation",
+      "objective": "Show scattered grains and the same plate driven into vibration; do not imply every tone produces a pattern.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    },
+    {
+      "id": "chladni.production.3",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.3",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.3",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.3"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.migration"
+      ],
+      "frames": {
+        "start": 306,
+        "end": 412
+      },
+      "sceneType": "grain-displacement",
+      "objective": "Close view isolates grains leaving a moving region, contrasted with a stationary line.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    },
+    {
+      "id": "chladni.production.4",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.4",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.4",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.4"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.nodes"
+      ],
+      "frames": {
+        "start": 412,
+        "end": 553
+      },
+      "sceneType": "stationary-nodes",
+      "objective": "Slowed exaggerated side view crosses stationary nodes and oppositely moving regions; explicit label.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    },
+    {
+      "id": "chladni.production.5",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.5",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.5",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.5"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.migration",
+        "chladni-sand.claim.nodes"
+      ],
+      "frames": {
+        "start": 553,
+        "end": 707
+      },
+      "sceneType": "sand-map",
+      "objective": "Return to top view; sand and overlaid nodal lines align.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    },
+    {
+      "id": "chladni.production.6",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.6",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.6",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.6"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.modes"
+      ],
+      "frames": {
+        "start": 707,
+        "end": 889
+      },
+      "sceneType": "mode-reset",
+      "objective": "Reset grains between two illustrative modes; no geometric morph masquerading as physics.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    },
+    {
+      "id": "chladni.production.7",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.7",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.7",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.7"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.setup"
+      ],
+      "frames": {
+        "start": 889,
+        "end": 1038
+      },
+      "sceneType": "support-limit",
+      "objective": "Show schematic support/excitation context; no calibrated frequency or material labels.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    },
+    {
+      "id": "chladni.production.8",
+      "sourceVisualPlanId": "chladni-sand.asset.still-lines.visual.8",
+      "narrativeBeatId": "chladni-sand.asset.still-lines.beat.8",
+      "scriptSegmentIds": [
+        "chladni-sand.asset.still-lines.script.8"
+      ],
+      "claimIds": [
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.migration"
+      ],
+      "frames": {
+        "start": 1038,
+        "end": 1273
+      },
+      "sceneType": "stillness-payoff",
+      "objective": "Return to sand; highlight quiet lines rather than moving lobes, land the reversal.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic grain settling on analytic nodal fields; qualitative paths. Nodes in side view fixed while lobes oscillate. Reset between modes.",
+      "transitionIntent": "Connected top view and slowed side view; clear cuts/reset between illustrative modes.",
+      "audioIntent": "Measured af_heart narration with two soft illustrative tones, quiet through node explanation."
+    }
+  ],
+  "assets": [
+    {
+      "id": "chladni.tones",
+      "kind": "audio",
+      "path": "public/audio/chladni/illustrative-tones.wav",
+      "provenance": {
+        "origin": "Original Magnivis sinusoid synthesis",
+        "rights": "Project-owned original audio",
+        "notes": "Not a plate recording or calibrated frequency mapping.",
+        "evidence": "scripts/generate-chladni-tones.mjs"
+      }
+    },
+    {
+      "id": "chladni.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis plate/grain code",
+        "rights": "Project-owned original artwork",
+        "notes": "No third-party figures or stock imagery; all modes/trajectories are illustrative.",
+        "evidence": "content-intelligence/cycles/cycle-5/rights-provenance.json"
+      }
+    },
+    {
+      "id": "chladni.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Mikhail Sharanda / fontsource pinned package",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing installed font selected for readable print execution; unmodified.",
+        "evidence": "content-intelligence/cycles/cycle-5/Manrope-OFL.txt"
+      }
+    },
+    {
+      "id": "chladni.narration",
+      "kind": "audio",
+      "path": "public/audio/chladni/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart from internally reviewed script",
+        "rights": "Project output under established Apache-2.0 model terms",
+        "notes": "No voice cloning or paid calls.",
+        "evidence": "src/production/narration/chladni.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/chladni-sand.en.vtt",
+    "captionPlanId": "caption-plan.chladni-sand.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "a6a974eb559481891bfa5d01d0e98facb25e87a40792472081a41a72d31c3ea9",
+    "generatorId": "generator.chladni-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Technical probe, full decode, typography and exact caption reconstruction.",
+    "Actual master and every caption midpoint decoded and inspected.",
+    "Inspect sand at nodes, moving grains, stationary side-view crossings, reset between modes and disclosure.",
+    "Preflight remains provisional local playback geometry; no device/crop pass.",
+    "AHMET — MASTER REVIEW required before presentation/publication preparation."
+  ]
+}

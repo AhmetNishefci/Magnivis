@@ -1,3 +1,4 @@
+import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
 import {describe,it,expect} from 'vitest';
 import {creativeDirectionSchema, type CreativeDirection} from '../src/content-assets/creative-direction';
@@ -79,11 +80,12 @@ describe('Cross-cycle convergence awareness within Adaptive Creative Direction',
   expect(validateCreativeDirection(old,paperPkg,paperAsset)).toEqual(old);
   expect(()=>validateCreativeDirection({...old,revision:2},paperPkg,paperAsset)).toThrow('rendered cross-cycle');
  });
- it('preserves the exact approved Cycle 4 and two normal V3 gates without starting Cycle 5',()=>{
+ it('preserves the exact approved Cycle 4, two normal V3 gates and pre-Cycle-5 milestone state',()=>{
   const registry=loadMediaRegistry();const cycle=loadCycle(process.cwd(),'cycle.4',registry);
   expect(cycle.stage).toBe('authorized');expect(cycle.revision).toBe(9);expect(action(cycle)).toEqual({kind:'manual-publication',gate:null});
   const spec=readFileSync('src/workflow/cycle.ts','utf8');expect(spec).toContain("['master-review','publication-review'].includes(cycle.stage)");
   expect(mediaHash('artifacts/masters/paper-half-shape-candidate-v1.mp4')).toBe('93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7');
-  expect(readFileSync('workflow/project-state.json','utf8')).not.toContain('cycle.5');
+  // The system milestone did not authorize Cycle 5; a later explicit owner start may.
+  expect(execFileSync('git',['show','87cc71f:workflow/project-state.json'],{encoding:'utf8'})).not.toContain('cycle.5');
  });
 });

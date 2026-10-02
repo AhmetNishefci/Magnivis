@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-02T21:17:39.928Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/chladni-render.mp4",
+    "sha256": "1d05c01bcaef05c0fe7ad9c98d532c5f9c3211c2e5831e6dcd805299477b8f7a",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/chladni-sand-candidate-v1.mp4",
+    "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.36",
+    "input_tp": "-7.21",
+    "input_lra": "3.10",
+    "input_thresh": "-34.02",
+    "output_i": "-18.82",
+    "output_tp": "-2.85",
+    "output_lra": "2.80",
+    "output_thresh": "-29.46",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.18"
+  },
+  "gainDb": 4.359999999999999,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

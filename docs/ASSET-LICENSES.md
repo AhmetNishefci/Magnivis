@@ -1,5 +1,15 @@
 # Asset licenses and provenance
 
+## Cycle #5 — Chladni sand master-review candidate
+
+- Original plate/material drawing, analytic nodal fields, deterministic grain choreography, enlarged grain view and slowed side-view section: Magnivis-authored `src/components/ChladniPlate.tsx`, `src/production/chladni-geometry.ts` and `src/compositions/ChladniSand.tsx`; project-owned original artwork. These are explicitly qualitative illustrations, not calibrated plate dynamics or experimental footage. Smithsonian, Exploratorium and UNSW bodies were inspected as factual references; their photographs, figures, videos and sounds are not production assets.
+- Manrope 400/600: existing pinned `@fontsource/manrope` 5.3.0, Mikhail Sharanda, unmodified SIL OFL 1.1. Exact chosen WOFF2 hashes and complete license retained in `content-intelligence/cycles/cycle-5/rights-provenance.json` and `Manrope-OFL.txt`; installed font binaries remain pinned dependencies.
+- Fifteen exact narration WAVs: established local Kokoro-82M `af_heart`, q8 CPU, speed 0.97, Apache-2.0 model; exact reviewed narration with no cloning, auditions, paid calls or new provider. Measured cue identities/provenance and model digest retained.
+- `public/audio/chladni/illustrative-tones.wav`: original Magnivis sinusoid synthesis by `scripts/generate-chladni-tones.mjs`, project-owned; two quiet illustrative tones, no recorded samples/music and no frequency-to-pattern calibration claim. Final measured audio gain changes no picture payload.
+- Exact narration-derived burned-in captions and aligned optional VTT are original text. One canonical master, a decoded contact sheet and eight bounded review frames are retained; model/browser caches, smoke/intermediate encodes and routine captures remain disposable. All retained media has canonical SHA-256 identity; no platform payload duplication.
+
+This records internal rights/provenance, not owner master or publication approval.
+
 ## Cycle #4 — paper geometry review candidate
 
 - Original paper objects, unit-square diagonal, edge/cut/rotation choreography and abstract print artwork: Magnivis-authored SVG/CSS in `src/components/PaperObjects.tsx` and `src/compositions/PaperHalfShape.tsx`; project-owned original work. No institutional figure, PDF page, stock photograph, generated raster or logo embedded. Research pages are consulted evidence only.

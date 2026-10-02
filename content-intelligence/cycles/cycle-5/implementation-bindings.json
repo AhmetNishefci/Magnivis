@@ -1,0 +1,66 @@
+{
+  "enteredAt": "2026-10-02T21:20:48.339Z",
+  "sourceBaseCommit": "87cc71f14c9b207ac782741227a13effdfbab37c",
+  "files": [
+    {
+      "path": "src/chladni-index.tsx",
+      "sha256": "3ab2715626a1f0eca9833192f92bac9753077f571f874ec8578b2475f0f76013"
+    },
+    {
+      "path": "src/compositions/ChladniSand.tsx",
+      "sha256": "1326e99ab58fe0c3a8f9e67787bb1a27ff9c47f412758136bd25f46633255e4f"
+    },
+    {
+      "path": "src/components/ChladniPlate.tsx",
+      "sha256": "986175b066567a6004333b13a64db826078925472891e3e0e51f4dfdd4ff6c4b"
+    },
+    {
+      "path": "src/production/chladni-geometry.ts",
+      "sha256": "14e2a1ad3df0261134f11c27acc8a4575147c37e8c7b649090afb450dcac11d2"
+    },
+    {
+      "path": "scripts/render-chladni.ts",
+      "sha256": "f01675d720ff8fe70e1026ae5d30781492c8cf0cd952c837aaa251d2ee299ad2"
+    },
+    {
+      "path": "scripts/qa-chladni-layout.ts",
+      "sha256": "e2ead4beb150c71a4931f24b4943cd5e0165c1ca6e39ef9c4a0ec4b7d088cb84"
+    },
+    {
+      "path": "scripts/generate-chladni-narration.mjs",
+      "sha256": "22a512583237e70f9c1be859afd18f22e2108bc1e3a8e0a68defbc6074ec61a9"
+    },
+    {
+      "path": "scripts/generate-chladni-tones.mjs",
+      "sha256": "101632e3485eee0f28e70982f3b8f657ce866d7865b6775acc4b46cffb4faf02"
+    },
+    {
+      "path": "scripts/prepare-chladni-production.ts",
+      "sha256": "c7f390c06076568897fe680c38d4bb48aa025d248128b63a788a4d9d0cfa721f"
+    },
+    {
+      "path": "src/production/plans/chladni.json",
+      "sha256": "9a6221fb99c76e77e5d155e6e40fab109c4cfd6b81a18cca32cd4459e02e0813"
+    },
+    {
+      "path": "src/captions/plans/chladni.json",
+      "sha256": "76075009831d5945625742485d920b684587470a6c4915801c41cb05b74ac235"
+    },
+    {
+      "path": "src/production/narration/chladni.json",
+      "sha256": "e94a78765fad0cf30f334e9b20db38666a313ce107f9c65bea2408e9530a9f4e"
+    },
+    {
+      "path": "tests/chladni-geometry.test.ts",
+      "sha256": "b423f4eb5ea9b0ff7be269412fb070d89917da0ccc48d9fb8c6bd4df8842e3d1"
+    }
+  ],
+  "videoPacketSha256": "SHA256=5def36a8732bff958239db32fa926c0d6507c72b7db929157fd49512852981ac",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-5/audio-mastering.json",
+    "sha256": "898ebbf16d8de4bb2282701db94b7183a26dc45c6ace20ea68c12a568e1c8fe9"
+  },
+  "renderInputs": "Exact scoped plan/captions/narration and licensed Manrope fonts; original analytic field/grain renderer and synthesized tones.",
+  "postRenderQaMarkerChange": "Only data-critical marker moved from the clipped SVG group to its visible plate boundary after full render. This attribute affects QA extraction, not pixel/audio output; decoded master and corrected browser checkpoints both inspected.",
+  "note": "Base commit identifies starting repository policy; exact new source hashes bind the implementation without a circular self-commit claim."
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.5",
+  "topicCandidateId": "chladni-sand",
+  "enteredAt": "2026-10-02T21:10:45.032Z",
+  "reviewer": "Codex session — internal evidence review, not Ahmet",
+  "packageSha256": "a10c6150d51b851fbf356ed16c49a66985c7af3ba68e99fbffeaf11baf545cad",
+  "assetSha256": "e99147dd455a4e7a17ca723fbfd1d4430c8fc0eb4e5b6661733fb684238eb3ae",
+  "scriptSha256": "94da435030321104e715cf4f259257cb5d6f499c07ee8612df6d97eb6709e53c",
+  "inspections": [
+    {
+      "sourceId": "source.chladni.smithsonian",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Historical Context; Supporting Artifacts — Chladni Plate"
+      ],
+      "supportsClaimIds": [
+        "chladni-sand.claim.patterns",
+        "chladni-sand.claim.migration",
+        "chladni-sand.claim.modes"
+      ],
+      "limitations": [
+        "Institutional demonstration explanation, not a new controlled measurement.",
+        "Source photos/video and wording are consulted only, not embedded assets."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-5/sources/smithsonian-inspection.json",
+        "sha256": "75e105089d14f7df16467e3dbc2febb7292dd092cd1264752d3d68c54fffa056"
+      },
+      "sourceQualityRationale": "Institutional physical demonstration corroborates observed nodal accumulation."
+    },
+    {
+      "sourceId": "source.chladni.exploratorium",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Bells exhibit description"
+      ],
+      "supportsClaimIds": [
+        "chladni-sand.claim.patterns",
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.setup"
+      ],
+      "limitations": [
+        "Concise exhibit description; does not establish universal frequency-to-pattern mapping."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-5/sources/exploratorium-inspection.json",
+        "sha256": "dfebae78583b90d34abbb3edfb58375af04b5c803f453043493b8e1ff32377c0"
+      },
+      "sourceQualityRationale": "Institutional physical demonstration corroborates observed nodal accumulation."
+    },
+    {
+      "sourceId": "source.chladni.unsw",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?"
+      ],
+      "supportsClaimIds": [
+        "chladni-sand.claim.patterns",
+        "chladni-sand.claim.migration",
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.modes",
+        "chladni-sand.claim.setup"
+      ],
+      "limitations": [
+        "Experimental laboratory educational account; guitar examples are not square-plate calibration.",
+        "No source photographs, sound recordings or figures reproduced.",
+        "Illustrated grain trajectories and slowed motion are qualitative models, not measured dynamics."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-5/sources/unsw-inspection.json",
+        "sha256": "f6c6b6765f896cc3a4b77990ad625f5ccba8ef4a38a3532a5c68dc8055749f50"
+      },
+      "sourceQualityRationale": "Primary laboratory experimental account explains grain motion and setup effects."
+    }
+  ],
+  "claims": [
+    {
+      "id": "chladni-sand.claim.patterns",
+      "statementSha256": "30b2c98e12ff4a52732711a16a4f42b877bae48b3c21be2407a74dd9c4297194",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; setup and model limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.smithsonian",
+          "locator": "Historical Context; Supporting Artifacts — Chladni Plate",
+          "assessment": "Patterns arise under appropriate excitation, not every arbitrary tone. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.chladni.exploratorium",
+          "locator": "Bells exhibit description",
+          "assessment": "Patterns arise under appropriate excitation, not every arbitrary tone. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "assessment": "Patterns arise under appropriate excitation, not every arbitrary tone. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "chladni-sand.claim.migration",
+      "statementSha256": "591742ac81bfc5d863f6810f99368d87bbd8eac8883542f9fc206ea9209084c6",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; setup and model limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.smithsonian",
+          "locator": "Historical Context; Supporting Artifacts — Chladni Plate",
+          "assessment": "Qualitative account; not every individual grain follows one deterministic path. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "assessment": "Qualitative account; not every individual grain follows one deterministic path. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "chladni-sand.claim.nodes",
+      "statementSha256": "1c4fc1963c1dafae725479f1cdf9730cf9ea01bb32bcc85a88ceda2ccd2e756b",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; setup and model limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.exploratorium",
+          "locator": "Bells exhibit description",
+          "assessment": "Real damping, mode mixtures and residual motion are possible; animation is a simplified mode. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "assessment": "Real damping, mode mixtures and residual motion are possible; animation is a simplified mode. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "chladni-sand.claim.modes",
+      "statementSha256": "e62498875c49f5d326837ad47e58ac9d15ad73fe7b1496d5820f2a47358dbc48",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; setup and model limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.smithsonian",
+          "locator": "Historical Context; Supporting Artifacts — Chladni Plate",
+          "assessment": "No universal higher-pitch-equals-specific-picture rule. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "assessment": "No universal higher-pitch-equals-specific-picture rule. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "chladni-sand.claim.setup",
+      "statementSha256": "d31c359a78e2c1cf514b87cd886b0fb57a09b7c397eeb5d65f33eea05c4c3cc1",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; setup and model limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.exploratorium",
+          "locator": "Bells exhibit description",
+          "assessment": "No fixed hertz labels or calibrated material/geometry mapping in this production. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "assessment": "No fixed hertz labels or calibrated material/geometry mapping in this production. Assessment limited to plate modes and grain accumulation.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "chladni-sand.claim.air-picture",
+      "statementSha256": "c5bbcfe3ab84c23f7e0df8a9a02d48698de96060860c9ab0e8b1e57fe5a8a526",
+      "disposition": "exclude",
+      "rationale": "Unsupported or false extension explicitly excluded; cannot enter script or visual.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "chladni-sand.claim.healing",
+      "statementSha256": "0ba15540a0be2671257f19a3cef627968a1afd0adc39bdd56d00827df8809f07",
+      "disposition": "exclude",
+      "rationale": "Unsupported or false extension explicitly excluded; cannot enter script or visual.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    }
+  ],
+  "misconceptionSafeguards": [
+    "Plate nodes, not a literal air-wave picture.",
+    "Grains accumulate near stationary lines, not at the largest oscillation.",
+    "Different modes can produce different patterns; no one-to-one universal tone mapping.",
+    "Motion slowed/exaggerated and grain paths disclosed; illustrative tones not calibrated.",
+    "No mystical, medical or healing claims."
+  ],
+  "comprehensionReview": "Opening shows the phenomenon; moving grains and stationary node contrast precede jargon. Side view explains the mechanism. Setup dependence is in speech. Final reversal reconnects to original pattern.",
+  "rightsReview": "Original code/synthesis and licensed existing fonts/local Kokoro only. Institutional images, photographs, diagrams, video and audio are consultation evidence only. No new paid service, cost deviation, purchase or infrastructure.",
+  "careAssessment": {
+    "state": "routine",
+    "rationale": "Bounded basic acoustics demonstration; adequate central evidence, no sensitive judgment, personal advice or unresolved rights."
+  },
+  "exceptionalConditions": []
+}

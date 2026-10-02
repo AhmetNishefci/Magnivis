@@ -1,0 +1,63 @@
+{
+  "recordedAt": "2026-10-02T21:30:02.716205+00:00",
+  "cycle": "cycle.5",
+  "stage": "master-review",
+  "journalRevision": 5,
+  "branch": "content/cycle-5-chladni-sand",
+  "sourceBaseCommit": "87cc71f14c9b207ac782741227a13effdfbab37c",
+  "checks": {
+    "pnpm check": {
+      "passed": true,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 48,
+      "tests": 460
+    },
+    "pnpm artifacts:durable": {
+      "passed": true,
+      "canonicalPayloads": 421,
+      "durableArtifactCount": 731,
+      "frozenLegacyBinaryPaths": 442,
+      "historicalMissingExpectations": "preserved, not silently replaced"
+    },
+    "smokeAndFullRender": "passed",
+    "fullMasterDecode": "passed",
+    "sampledBrowserAndDecodedCheckpoints": 43,
+    "focusedGeometryAndGateTests": {
+      "passed": true,
+      "tests": 4
+    },
+    "stagedCanonicalPayloadHashes": "passed",
+    "implementationBindings": "passed",
+    "whitespace": "passed"
+  },
+  "historicalPreservation": {
+    "priorCanonicalEntriesUnchanged": 395,
+    "cycle4Revision": 9,
+    "cycle4Stage": "authorized",
+    "priorJournalAndApprovalFilesUnchanged": true
+  },
+  "addedCanonicalMedia": {
+    "uniquePayloads": 26,
+    "bytes": 53779051,
+    "duplicateMediaCopiesCreated": false
+  },
+  "master": {
+    "path": "artifacts/masters/chladni-sand-candidate-v1.mp4",
+    "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+  },
+  "resolvedEarlierValidationFindings": [
+    "Initial durable-source test ran before new canonical files were staged; staged byte identities now verified.",
+    "An initial existing Chocolate test exceeded its default timeout; subsequent complete runs pass without timeout changes.",
+    "The convergence milestone assertion prohibited Cycle 5 in current metadata. It now checks the exact pre-Cycle-5 checkpoint commit; a new independent test asserts the actual fifth cycle stops at master review and preserves Cycle 4."
+  ],
+  "commitReceipt": "This validation and all scoped source/media/evidence are included in the local candidate commit. Obtain its exact identity with git log -1 on the recorded branch; no self-referential commit hash is embedded.",
+  "limits": [
+    "No remote push or main integration.",
+    "Machine audio checks and sampled visual inspection do not establish subjective continuous-playback approval.",
+    "Real-device/native-platform/crop evidence remains unknown."
+  ],
+  "ownerApprovalInferred": false,
+  "publicationPreparationPerformed": false,
+  "externalPlatformActionPerformed": false
+}

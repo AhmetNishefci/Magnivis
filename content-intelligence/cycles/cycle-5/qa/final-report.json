@@ -1,0 +1,90 @@
+{
+  "mediaSha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+  "scriptSha256": "94da435030321104e715cf4f259257cb5d6f499c07ee8612df6d97eb6709e53c",
+  "checkedAt": "2026-10-02T21:21:42.201Z",
+  "checks": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed"
+  },
+  "actualMedia": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 42.496,
+    "sizeBytes": 41898183,
+    "bitRate": 7887459
+  },
+  "fullDecode": "passed",
+  "videoPayloadUnchangedByMastering": "SHA256=5def36a8732bff958239db32fa926c0d6507c72b7db929157fd49512852981ac",
+  "captionCount": 15,
+  "browserCheckpoints": 43,
+  "decodedContactSheet": {
+    "id": "media.5f3fe28f8b1e805e60e2a8438d69643a18006765677343b764194929e364d1e3",
+    "sha256": "5f3fe28f8b1e805e60e2a8438d69643a18006765677343b764194929e364d1e3"
+  },
+  "retainedReviewFrames": [
+    {
+      "id": "media.3fb307857044f9d1354dce5dc9e165be2578f4681397b29c32d1a9c0bd85feba",
+      "sha256": "3fb307857044f9d1354dce5dc9e165be2578f4681397b29c32d1a9c0bd85feba"
+    },
+    {
+      "id": "media.834d87ea874bd45ec92b26a2fd7baa7284b7a3b7ceee9d91232720db067e8809",
+      "sha256": "834d87ea874bd45ec92b26a2fd7baa7284b7a3b7ceee9d91232720db067e8809"
+    },
+    {
+      "id": "media.dc649b004f1cb538c41dcda6d454e304aaf97af702368d48819a533b0bb4d8e4",
+      "sha256": "dc649b004f1cb538c41dcda6d454e304aaf97af702368d48819a533b0bb4d8e4"
+    },
+    {
+      "id": "media.a635780861d565d70bd234ecde63b1caad571fec766b7646fea176017cb10cc8",
+      "sha256": "a635780861d565d70bd234ecde63b1caad571fec766b7646fea176017cb10cc8"
+    },
+    {
+      "id": "media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832",
+      "sha256": "c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832"
+    },
+    {
+      "id": "media.30e1634976e834c1ba0f232a8d8e79e6f5876ba1ffbe2850fb2e7a6f05224d8c",
+      "sha256": "30e1634976e834c1ba0f232a8d8e79e6f5876ba1ffbe2850fb2e7a6f05224d8c"
+    },
+    {
+      "id": "media.157dfca28010b88d75c72eb73d1c37e543d85183efb32944020ebcaff49aa96e",
+      "sha256": "157dfca28010b88d75c72eb73d1c37e543d85183efb32944020ebcaff49aa96e"
+    },
+    {
+      "id": "media.eb059ebf9bca25bbbe2f1e234ae30f4908f554cf177f5504c5dd830841ab5cf9",
+      "sha256": "eb059ebf9bca25bbbe2f1e234ae30f4908f554cf177f5504c5dd830841ab5cf9"
+    }
+  ],
+  "sourceReports": [
+    {
+      "path": "content-intelligence/cycles/cycle-5/qa/report.json",
+      "sha256": "1e4971d011c52f7be6eba68f399a82994bb8bed68306e443a85cff9ea50ca9f6"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-5/qa/typography-report.json",
+      "sha256": "00ae5dcb97966d2b0a7f5aa02571ca21162b817c49e417c859784bfe6c21bf66"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-5/qa/audio-inspection.json",
+      "sha256": "74c8cf6ced1d8273c56dd488a8f962ba870547e3b2db1a922caea777c20737d0"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-5/qa/visual-inspection.json",
+      "sha256": "b27a41f1b587c419f43926738c39e5894673151ee5760318b578ffa69fc043eb"
+    }
+  ],
+  "audio": {
+    "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -18.9 LUFS\n    Threshold: -29.6 LUFS\n\n  Loudness range:\n    LRA:         2.9 LU\n    Threshold: -40.9 LUFS\n    LRA low:   -22.4 LUFS\n    LRA high:  -19.5 LUFS\n\n  True peak:\n    Peak:       -2.8 dBFS\n",
+    "subjectiveLimit": "ASR, loudness and source-cue checks are machine corroboration; naturalness and tone balance remain owner judgment.",
+    "recognitionNote": "Cue-level recognized wording corroborates exact narration; full-master ASR joins phrase boundaries and renders Change as changed, without replacing canonical wording."
+  },
+  "coverage": "43 sampled layouts and decoded checkpoints including every caption midpoint; complete media decode. No all-frame bounds or native/mobile/crop proof.",
+  "publicationApprovalGranted": false
+}

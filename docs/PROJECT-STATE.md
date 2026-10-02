@@ -1,3 +1,19 @@
+# CONTENT CYCLE #5 — AHMET — MASTER REVIEW
+
+Ahmet explicitly started Cycle #5 under current V3. The independent replay-validated journal at `workflow/cycles/cycle.5/` owns state; `workflow/authorities/cycle-5-start.json` captures actual cycle-start scope. [Master review handoff](../content-intelligence/cycles/cycle-5/owner-review.md) binds the actual unapproved candidate. No intermediate owner gate or exceptional escalation was required.
+
+Magnivis selected **sand revealing the still lines of a vibrating plate** from seven cross-domain opportunities. Smithsonian, Exploratorium and UNSW body inspection support five scoped claims; the literal-air-wave and healing formulations are excluded. Internal editorial verification is explicitly Codex session authority, never Ahmet approval. Creative direction inspected the four latest approved masters, their rendered contact sheets and available direction records; recurring central-stage grammar prompted internal tabletop and full-field alternatives before choosing the close plate/grain view and slowed side section. No forced visual novelty or narrator audition.
+
+Actual candidate: `artifacts/masters/chladni-sand-candidate-v1.mp4`, SHA-256 `76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df`, 41,898,183 bytes. Picture runtime 1,273 frames / 42.4333 seconds; probed MP4 42.496 seconds including AAC/mux tail. 1080×1920 / 30 fps / H.264 / AAC 48 kHz; current primary Kokoro `af_heart`, 15 exact speech-first designed caption phrases. Original plate/grain and slowed side-view models are expressly illustrative; two original synthesized tones are uncalibrated. Final mix −18.9 LUFS / −2.8 dB true peak. Exact media, narration, tone audio, contact sheet and eight selected proof captures have canonical SHA-256 identities.
+
+Full decode/media, typography/caption fidelity and physical-model safeguards pass; 43 browser/decoded checkpoints include all 15 caption midpoints. Four planned playback preflights clear sampled surviving provisional insets. Native UI, caption-safe geometry, crops, unsampled motion and exact-media device behavior remain unknown. ASR corroborates speech but does not replace subjective owner listening. No platform variants, covers, release copy, deliveries, uploads, scheduling or publication preparation have been created.
+
+Reconciliation: earlier no-Cycle-5 and unintegrated-convergence statements below are historical milestones. Git HEAD `87cc71f` already contains the prospective convergence changes, and this actual owner instruction authorizes Cycle #5. V3 governs prospective internal readiness; legacy per-topic/per-claim/direction pauses are historical. Cycle #4's independent authorized manual-release state remains unchanged, with actual publication unknown. Recovery/media/approvals/history remain preserved.
+
+Next action: **APPROVE** this exact master or **REVISE with specific feedback**. Publication preparation waits for master approval; upload/scheduling/publication remain separately authorized owner actions.
+
+---
+
 # Prospective system change — cross-cycle creative convergence awareness
 
 The system branch `system/cross-cycle-creative-convergence` strengthens the existing Adaptive Creative Direction comparison against the four latest available approved masters and their rendered evidence. [CREATIVE-DIRECTION](CREATIVE-DIRECTION.md) owns the qualitative cause/alternative rules; [system review](../system-audits/cross-cycle-creative-convergence/owner-review.md) records findings and validation. Similarity remains permitted for independent story reasons or intentional brand continuity. Convenience-driven convergence requires internal exploration, never another normal owner gate or forced visual diversity. This branch is not automatically integrated into main.

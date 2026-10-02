@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.5",
+  "media": {
+    "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+    "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+  },
+  "durationSeconds": 42.43333333333333,
+  "scriptSha256": "94da435030321104e715cf4f259257cb5d6f499c07ee8612df6d97eb6709e53c",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-5/production-plan.candidate-v1.json",
+    "sha256": "52f62ecc199b44d5b3d79198a5f9b09d286f1c4a47dd379d9c775b86abacb5e7"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/chladni.json",
+    "sha256": "76075009831d5945625742485d920b684587470a6c4915801c41cb05b74ac235"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/chladni.json",
+    "sha256": "e94a78765fad0cf30f334e9b20db38666a313ce107f9c65bea2408e9530a9f4e"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/youtube.json",
+        "sha256": "fdafe3d9a9c1f273f8e5d6ba556b59515cee1e419f097658feefcf57c71c915d"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/youtube.json",
+        "sha256": "7f1e93bf84acad0b40fabad688342bc8f9fd2d1a5c7d81ebeecbb6bc8dfde6e0"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/tiktok.json",
+        "sha256": "264b0169ba339538578e2f2e1ab04d11806e5ab6bee289e037f0e6bddf77387f"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/tiktok.json",
+        "sha256": "388f5cd068a8a1798e6225439405f4761ede6b63680fc301817b4ce211220416"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/instagram.json",
+        "sha256": "169164ab100ecc4914c21dcbcd0a667b1974645bbbfb81ac033f65f24dbff458"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/instagram.json",
+        "sha256": "506dcee6c872f8005572c31198f02a64f7ef692fea84673398a2406961b4525e"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/facebook.json",
+        "sha256": "cc4723eac1949d3f09719371101a61fe84a14cc35a6bda087e4f9c4c32218ef6"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/facebook.json",
+        "sha256": "d8fddb8b8887023b0fb83da3529f71528a38b8c7de166b1193dfbecb0264d198"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "chladni-cue-1",
+      "transcript": "These patterns are drawn by vibration.",
+      "start": 0,
+      "duration": 2.925,
+      "media": {
+        "id": "media.ff9369bf49bbc78f4a39611b5432f242bcf57284aa457cd4633e693a1b1bd306",
+        "sha256": "ff9369bf49bbc78f4a39611b5432f242bcf57284aa457cd4633e693a1b1bd306"
+      }
+    },
+    {
+      "id": "chladni-cue-2",
+      "transcript": "Scatter sand on a metal plate,",
+      "start": 3.7333333333333334,
+      "duration": 2.375,
+      "media": {
+        "id": "media.f1da1cf75a649f62fcb875883cc66402ab0101a01472dff20fe42230f25f0fae",
+        "sha256": "f1da1cf75a649f62fcb875883cc66402ab0101a01472dff20fe42230f25f0fae"
+      }
+    },
+    {
+      "id": "chladni-cue-3",
+      "transcript": "then make it vibrate at a resonant frequency.",
+      "start": 6.266666666666667,
+      "duration": 3.325,
+      "media": {
+        "id": "media.b1b21dad2ebb72b4107727f3f479841fd1fa1d7b4e65de25487495d632970fad",
+        "sha256": "b1b21dad2ebb72b4107727f3f479841fd1fa1d7b4e65de25487495d632970fad"
+      }
+    },
+    {
+      "id": "chladni-cue-4",
+      "transcript": "The moving regions bounce the grains away.",
+      "start": 10.2,
+      "duration": 3.15,
+      "media": {
+        "id": "media.2715eaf9bde2d27dea2be1c3f466741855beb34038102520d33c9432b7b380d6",
+        "sha256": "2715eaf9bde2d27dea2be1c3f466741855beb34038102520d33c9432b7b380d6"
+      }
+    },
+    {
+      "id": "chladni-cue-5",
+      "transcript": "But some lines stay still.",
+      "start": 13.733333333333333,
+      "duration": 2.125,
+      "media": {
+        "id": "media.335f466f7880365f2334ceae2a86c4bd3b3d7a18c25f0cde90fad48bdcf1dff8",
+        "sha256": "335f466f7880365f2334ceae2a86c4bd3b3d7a18c25f0cde90fad48bdcf1dff8"
+      }
+    },
+    {
+      "id": "chladni-cue-6",
+      "transcript": "They're called nodes.",
+      "start": 16.1,
+      "duration": 1.85,
+      "media": {
+        "id": "media.1ef731528e7678fed0a221b2182afedec7f2cb04572f34c2e16878eb89032a6e",
+        "sha256": "1ef731528e7678fed0a221b2182afedec7f2cb04572f34c2e16878eb89032a6e"
+      }
+    },
+    {
+      "id": "chladni-cue-7",
+      "transcript": "Sand gathers there,",
+      "start": 18.433333333333334,
+      "duration": 1.875,
+      "media": {
+        "id": "media.cbbf0dbfc89919adbc866b2fd962ce0c90ad8f4fdc020c807a7ce794cca707de",
+        "sha256": "cbbf0dbfc89919adbc866b2fd962ce0c90ad8f4fdc020c807a7ce794cca707de"
+      }
+    },
+    {
+      "id": "chladni-cue-8",
+      "transcript": "tracing the plate's pattern of motion.",
+      "start": 20.466666666666665,
+      "duration": 2.575,
+      "media": {
+        "id": "media.709c5e67585f8b290f2b86f266837825643f682765db4dd14e850bc8fd25dc41",
+        "sha256": "709c5e67585f8b290f2b86f266837825643f682765db4dd14e850bc8fd25dc41"
+      }
+    },
+    {
+      "id": "chladni-cue-9",
+      "transcript": "Change to a different vibration mode,",
+      "start": 23.566666666666666,
+      "duration": 2.75,
+      "media": {
+        "id": "media.c0d54bf7b9cc63a5680d25ede04c503dd977e349264c3854aba3a8f278973f95",
+        "sha256": "c0d54bf7b9cc63a5680d25ede04c503dd977e349264c3854aba3a8f278973f95"
+      }
+    },
+    {
+      "id": "chladni-cue-10",
+      "transcript": "and a different pattern can appear.",
+      "start": 26.566666666666666,
+      "duration": 2.3,
+      "media": {
+        "id": "media.4404e646b1ca670e0ccc8807da2b3632b2f025302579621f0215d921d5ccb8bd",
+        "sha256": "4404e646b1ca670e0ccc8807da2b3632b2f025302579621f0215d921d5ccb8bd"
+      }
+    },
+    {
+      "id": "chladni-cue-11",
+      "transcript": "The shape also depends on the plate",
+      "start": 29.633333333333333,
+      "duration": 2.575,
+      "media": {
+        "id": "media.0b8ae1d4b177a07a435e57a42f039ccbc856875ae82a88fe110184bccb67a445",
+        "sha256": "0b8ae1d4b177a07a435e57a42f039ccbc856875ae82a88fe110184bccb67a445"
+      }
+    },
+    {
+      "id": "chladni-cue-12",
+      "transcript": "and how it's held.",
+      "start": 32.4,
+      "duration": 1.725,
+      "media": {
+        "id": "media.95d458c0fe69db70874b5f21e294f0fc0c88e71dd5566be8305917a12130493b",
+        "sha256": "95d458c0fe69db70874b5f21e294f0fc0c88e71dd5566be8305917a12130493b"
+      }
+    },
+    {
+      "id": "chladni-cue-13",
+      "transcript": "So the sand isn't showing",
+      "start": 34.6,
+      "duration": 1.925,
+      "media": {
+        "id": "media.9d5a4061b87895adaeef02477a557ef8bf68c0ee10b6cca7e33365dbaee09961",
+        "sha256": "9d5a4061b87895adaeef02477a557ef8bf68c0ee10b6cca7e33365dbaee09961"
+      }
+    },
+    {
+      "id": "chladni-cue-14",
+      "transcript": "where the plate moves most.",
+      "start": 36.63333333333333,
+      "duration": 2.05,
+      "media": {
+        "id": "media.6c4056348346a6fe08edb1a4c8df873055e8d831f64c80e252b6123337c7a591",
+        "sha256": "6c4056348346a6fe08edb1a4c8df873055e8d831f64c80e252b6123337c7a591"
+      }
+    },
+    {
+      "id": "chladni-cue-15",
+      "transcript": "It's revealing where it doesn't move.",
+      "start": 38.93333333333333,
+      "duration": 2.5,
+      "media": {
+        "id": "media.ffb7134e509f7efc61cf5c8cefff17112bb69d34b01c16af85c42a6dfb13e577",
+        "sha256": "ffb7134e509f7efc61cf5c8cefff17112bb69d34b01c16af85c42a6dfb13e577"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-5/qa/final-report.json",
+        "sha256": "dbe648a425c11264233f03e635dbbd40221b6dcbd7c373bbc8857d5dc0a0dff6"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Sand traces low-motion nodal lines of a plate, not a traveling air-pressure wave.",
+    "Grain paths/fields are qualitative illustrations; nodes in slowed/exaggerated side view remain fixed.",
+    "Different modes can yield different patterns; plate/support/excitation matter.",
+    "Synthesized tones are explicitly illustrative, never calibrated to displayed spatial modes.",
+    "No healing/medical/mystical claims or borrowed institutional media."
+  ],
+  "uncertainties": [
+    "Owner should judge voice naturalness, resonant frequency/nodes pronunciation, visual pace, material impression and tone balance in actual playback.",
+    "Playback preflight clears sampled provisional insets; native exclusions, caption-safe geometry/crops and exact-media mobile behavior remain unknown.",
+    "No all-frame bounds proof; unsampled motion remains untested.",
+    "No platform adaptation, cover, delivery, upload, scheduling, publication or performance evidence created."
+  ],
+  "unusualProduction": [
+    "Original grain/plate field choreography, clipped close view and slowed side view; two quiet illustrative tones and no music bed."
+  ]
+}

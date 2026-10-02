@@ -1,0 +1,328 @@
+{
+  "id": "chladni-sand",
+  "revision": 1,
+  "topic": "Sand reveals the still lines of a vibrating plate",
+  "centralQuestion": "Why does sand on a vibrating plate form intricate patterns?",
+  "taxonomy": {
+    "pillar": "science-reality",
+    "domains": [
+      "acoustics",
+      "experimental-physics"
+    ],
+    "topics": [
+      "chladni-patterns",
+      "nodal-lines",
+      "resonance"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "Sand migrates from moving regions toward still nodal lines, making plate vibration modes visible.",
+  "viewerPayoff": "Recognize that sand highlights low-motion nodes rather than the most active regions or waves in air.",
+  "sources": [
+    {
+      "id": "source.chladni.smithsonian",
+      "organization": "Smithsonian National Museum of American History",
+      "title": "Chladni Plates",
+      "sourceType": "museum",
+      "url": "https://amhistory.si.edu/science/chladni.htm",
+      "retrieved": "2026-10-02",
+      "notes": "Institutional demonstration explanation, not a new controlled measurement. Source photos/video and wording are consulted only, not embedded assets."
+    },
+    {
+      "id": "source.chladni.exploratorium",
+      "organization": "Exploratorium",
+      "title": "Bells — Exhibit Cross Reference",
+      "sourceType": "scientific-organization",
+      "url": "https://annex.exploratorium.edu/xref/exhibits/bells.html",
+      "retrieved": "2026-10-02",
+      "notes": "Concise exhibit description; does not establish universal frequency-to-pattern mapping."
+    },
+    {
+      "id": "source.chladni.unsw",
+      "organization": "UNSW School of Physics — Musical Acoustics Group",
+      "title": "Chladni patterns for guitar plates",
+      "sourceType": "university",
+      "url": "https://www.phys.unsw.edu.au/~jw/guitar/guitarchladni_engl.html",
+      "retrieved": "2026-10-02",
+      "notes": "Experimental laboratory educational account; guitar examples are not square-plate calibration. No source photographs, sound recordings or figures reproduced. Illustrated grain trajectories and slowed motion are qualitative models, not measured dynamics."
+    }
+  ],
+  "claims": [
+    {
+      "id": "chladni-sand.claim.patterns",
+      "statement": "Sand on a vibrating metal plate can collect into patterns at resonant frequencies.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.smithsonian",
+          "locator": "Historical Context; Supporting Artifacts — Chladni Plate",
+          "notes": "Patterns arise under appropriate excitation, not every arbitrary tone. Assessment limited to plate modes and grain accumulation."
+        },
+        {
+          "sourceId": "source.chladni.exploratorium",
+          "locator": "Bells exhibit description",
+          "notes": "Patterns arise under appropriate excitation, not every arbitrary tone. Assessment limited to plate modes and grain accumulation."
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "notes": "Patterns arise under appropriate excitation, not every arbitrary tone. Assessment limited to plate modes and grain accumulation."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Patterns arise under appropriate excitation, not every arbitrary tone."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.5",
+          "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "chladni-sand.claim.migration",
+      "statement": "Vibrating regions of the plate bounce grains away, while sand can accumulate near nodal lines.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.smithsonian",
+          "locator": "Historical Context; Supporting Artifacts — Chladni Plate",
+          "notes": "Qualitative account; not every individual grain follows one deterministic path. Assessment limited to plate modes and grain accumulation."
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "notes": "Qualitative account; not every individual grain follows one deterministic path. Assessment limited to plate modes and grain accumulation."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Qualitative account; not every individual grain follows one deterministic path."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.5",
+          "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "chladni-sand.claim.nodes",
+      "statement": "Nodal lines remain stationary in the ideal vibration mode, separating regions of motion.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.exploratorium",
+          "locator": "Bells exhibit description",
+          "notes": "Real damping, mode mixtures and residual motion are possible; animation is a simplified mode. Assessment limited to plate modes and grain accumulation."
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "notes": "Real damping, mode mixtures and residual motion are possible; animation is a simplified mode. Assessment limited to plate modes and grain accumulation."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Real damping, mode mixtures and residual motion are possible; animation is a simplified mode."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.5",
+          "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "chladni-sand.claim.modes",
+      "statement": "Different vibration modes can have different nodal patterns.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.smithsonian",
+          "locator": "Historical Context; Supporting Artifacts — Chladni Plate",
+          "notes": "No universal higher-pitch-equals-specific-picture rule. Assessment limited to plate modes and grain accumulation."
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "notes": "No universal higher-pitch-equals-specific-picture rule. Assessment limited to plate modes and grain accumulation."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No universal higher-pitch-equals-specific-picture rule."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.5",
+          "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "chladni-sand.claim.setup",
+      "statement": "The resulting pattern depends on the plate and how it is supported and excited.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.exploratorium",
+          "locator": "Bells exhibit description",
+          "notes": "No fixed hertz labels or calibrated material/geometry mapping in this production. Assessment limited to plate modes and grain accumulation."
+        },
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "notes": "No fixed hertz labels or calibrated material/geometry mapping in this production. Assessment limited to plate modes and grain accumulation."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No fixed hertz labels or calibrated material/geometry mapping in this production."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.5",
+          "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "chladni-sand.claim.air-picture",
+      "statement": "The sand pattern is a literal picture of the sound wave traveling through air.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "notes": "Excluded: sand marks plate nodal structure, not propagating air pressure. Assessment limited to plate modes and grain accumulation."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Excluded: sand marks plate nodal structure, not propagating air pressure."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "chladni-sand.claim.healing",
+      "statement": "These frequencies have special healing powers.",
+      "evidence": [
+        {
+          "sourceId": "source.chladni.unsw",
+          "locator": "Modes of vibration; Why are there nodes?; How are Chladni patterns formed?",
+          "notes": "Excluded: no inspected evidence for this claim; no cymatics wellness framing. Assessment limited to plate modes and grain accumulation."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Excluded: no inspected evidence for this claim; no cymatics wellness framing."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "id.caveat.model",
+      "statement": "Spatial modes, grain trajectories and tones in this master are illustrative; no calibrated plate simulation or laboratory footage.",
+      "claimIds": [
+        "chladni-sand.claim.patterns",
+        "chladni-sand.claim.migration",
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.modes",
+        "chladni-sand.claim.setup"
+      ]
+    },
+    {
+      "id": "id.caveat.not-air",
+      "statement": "Nodal pattern belongs to the vibrating plate, not the air-pressure wave; no healing or mystical claims.",
+      "claimIds": [
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.air-picture",
+        "chladni-sand.claim.healing"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "chladni-sand.hook.pattern",
+      "archetype": "visible-mystery",
+      "text": "These patterns are drawn by vibration.",
+      "viewerPromise": "Watch vibration draw a pattern, then understand the still lines.",
+      "claimIds": [
+        "chladni-sand.claim.patterns"
+      ]
+    },
+    {
+      "id": "chladni-sand.hook.reversal",
+      "archetype": "misconception-reversal",
+      "text": "The sand marks where the plate does not move.",
+      "viewerPromise": "Reverse the intuition that grains collect at strongest motion.",
+      "claimIds": [
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.migration"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "chladni-sand.narrative.nodes",
+      "title": "Beauty to mechanism",
+      "description": "Start with grains gathering, inspect a side-view node and return to the pattern with new understanding.",
+      "claimIds": [
+        "chladni-sand.claim.patterns",
+        "chladni-sand.claim.migration",
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.modes",
+        "chladni-sand.claim.setup"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "chladni-sand.visual.grains",
+      "title": "Surface and section",
+      "description": "Original plate-mode fields, grain positions and slowed side-view section, clearly disclosed as illustration.",
+      "claimIds": [
+        "chladni-sand.claim.patterns",
+        "chladni-sand.claim.migration",
+        "chladni-sand.claim.nodes",
+        "chladni-sand.claim.modes",
+        "chladni-sand.claim.setup"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "How do instrument makers inspect plate modes?",
+    "How do support points change vibration?"
+  ],
+  "followUpOpportunities": [
+    "Separate evidence-led story about instrument making and resonance."
+  ],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.5",
+      "reviewSha256": "b0e451e73424dce7aa94b150d8ec4713cac4120fcc68a8a1316d3c9783741240"
+    },
+    "approvedAt": "2026-10-02",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}
