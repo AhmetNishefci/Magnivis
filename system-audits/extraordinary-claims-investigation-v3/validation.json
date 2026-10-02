@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "auditedCommit": "1b06e069046a96e78067edc3cf0517f037ef449c",
+  "implementationChanges": false,
+  "authoritativePolicyChanges": false,
+  "permanentTestsAdded": false,
+  "fullValidation": {
+    "command": "pnpm check",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 49,
+    "tests": 468,
+    "diffHygiene": "passed"
+  },
+  "contractProbes": {
+    "passed": true,
+    "count": 15,
+    "receipt": "contract-probes.json",
+    "method": "Temporary memory-only audit script; no actual claim research or registered artifacts."
+  },
+  "workflowValidation": {
+    "command": "node --import tsx scripts/validate-workflow-v3.ts system-audits/topic-curiosity-v3/historical-integrity-baseline.json",
+    "exitCode": 0,
+    "historicalEvidenceReferences": 4,
+    "preservedCheckpointFiles": 1208,
+    "registeredCycles": 2,
+    "ownerActions": [],
+    "productionActive": [],
+    "scheduledOwnerReported": [
+      "cycle.5"
+    ],
+    "actualPublicationEvidence": "Still pending for Cycle #4 and #5; no observations added by this audit."
+  },
+  "durabilityValidation": {
+    "command": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 422,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "historicalIntegrity": {
+    "allPreviouslyTrackedFilesUnchangedFromAuditedCommit": true,
+    "approvedMediaByteIdentical": true,
+    "cycleJournalsIncludingCycle5SchedulingUnchanged": true,
+    "cycle6Started": false,
+    "mediaGenerated": false,
+    "temporaryMediaFixtures": "Existing full-suite tests use temporary test-only media fixtures; no production media created."
+  },
+  "scope": "Only this audit directory is added; no main merge or external publication actions.",
+  "scopedSecretScan": {
+    "scannedFiles": [
+      "system-audits/extraordinary-claims-investigation-v3/audit.md",
+      "system-audits/extraordinary-claims-investigation-v3/contract-probes.json",
+      "system-audits/extraordinary-claims-investigation-v3/validation.json"
+    ],
+    "matches": 0,
+    "method": "Private-key and known GitHub/OpenAI/AWS key patterns; not a universal secret detector."
+  },
+  "reviewedEvidence": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "be24f7e3514b34389faea4de1b7f14ea885266a08eba2236af52fa9476d6afd4"
+    },
+    {
+      "path": "workflow/project-state.json",
+      "sha256": "b19ae7e116717bfbb4b91ecff9b4979f685ae06beb0dedd8b117ca7e1e84e2cd"
+    },
+    {
+      "path": "docs/WORKFLOW-V3.md",
+      "sha256": "f609a2d6fd55f53dbbfacef24040d3e94ebcaf5dca4685c2910535462d1ab043"
+    },
+    {
+      "path": "docs/STRATEGY.md",
+      "sha256": "689aa16d6ee0af90e30102bb0b99b3719fa2e34eaf0119e580476b2224730d0a"
+    },
+    {
+      "path": "docs/RESEARCH-STANDARDS.md",
+      "sha256": "422edc1bc30cf4de0340d11ad7a5201a6328ee3a3a3b99273f7b313ab8e8e429"
+    },
+    {
+      "path": "docs/KNOWLEDGE-PACKAGES.md",
+      "sha256": "a5fe043cf5451a6e2a841107fe2d73ababe1cf549002bde617a1257f1e2b9572"
+    },
+    {
+      "path": "docs/CONTENT-BIBLE.md",
+      "sha256": "f5f96f956a28af0a3778a9f846f364cdb9f0f1860d86de4b47803de89a4d3562"
+    },
+    {
+      "path": "docs/CONTENT-ASSETS.md",
+      "sha256": "c9eea04bd0468d075b178b2fda477950067f2f6a89ba3f5e8f149cc89e2d32c0"
+    },
+    {
+      "path": "docs/CREATIVE-DIRECTION.md",
+      "sha256": "8f0ac58f2184b88ce9d7eb92d04b1c7a122f0b203669e0a07e2a93b5f7259c00"
+    },
+    {
+      "path": "src/content-intelligence/schema.ts",
+      "sha256": "329e897997127d189e43c86fd4d75858b3f197e1ac1ba866eae8a3942b086cf7"
+    },
+    {
+      "path": "src/content-intelligence/prompts.ts",
+      "sha256": "70e43d01b177233c56b5107654a044b0481595d81aafd30ad7187d42c4f8774c"
+    },
+    {
+      "path": "src/content-intelligence/workflow.ts",
+      "sha256": "8a9e50bc5ed869d33453ea031f3caba1ea8cfe902922895a0d57f553cc7668f7"
+    },
+    {
+      "path": "src/content-intelligence/claim-review.ts",
+      "sha256": "32c196f6c9524edfb21a60316062bf003db20e079f1d19b2fe8b10bc20b59ecb"
+    },
+    {
+      "path": "src/knowledge/schema.ts",
+      "sha256": "99e1351e59d34ea29d1028e548483568f627aaca6dab47a94983d9d5d4e4bfe0"
+    },
+    {
+      "path": "src/workflow/topic-selection.ts",
+      "sha256": "1c5f083aef05c5dfcf99b79fb3b7014b41f9fb8fd2d945a9a015d93b013c80fd"
+    },
+    {
+      "path": "src/workflow/editorial.ts",
+      "sha256": "13080f164b9bab94ad62352bf63c2b811f2e02bde967f5974eec2dbe0354d6b4"
+    },
+    {
+      "path": "src/content-assets/registry.ts",
+      "sha256": "566709314754c925978176865fb1128c243add63f85d5cd0afdc6de6e6963022"
+    },
+    {
+      "path": "tests/topic-curiosity.test.ts",
+      "sha256": "e35671ff304413d04c6b4d2c4988b3ea906b75142a524d21d3b6412deb5d7014"
+    },
+    {
+      "path": "tests/cycle-v3.test.ts",
+      "sha256": "cb4349dac99a3e61408082f38a92d20e12db732ba0980f4d51dfc18482d9c10a"
+    },
+    {
+      "path": "tests/content-intelligence.test.ts",
+      "sha256": "245deb6a473586e57b78339841c23f699bc087214f248ce02b7bd2f2cfd24aeb"
+    },
+    {
+      "path": "tests/claim-review.test.ts",
+      "sha256": "72a3bf39dc9a575ddad099e48079ecc29dedce417774c989b3dd2e8807196b26"
+    },
+    {
+      "path": "tests/knowledge-package.test.ts",
+      "sha256": "8373a319e791bac499e2edbbcad9dbd1debb5d34d5f56851e906682e2c3c1222"
+    }
+  ]
+}
