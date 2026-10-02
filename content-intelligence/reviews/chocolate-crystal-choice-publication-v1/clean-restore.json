@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-02T10:25:17.526773Z",
+  "method": "Isolated Git archive extraction of staged tree. Native durable verifier and complete native publication validator ran against restored files. Existing dependency packages linked separately; original Git index supplied only for tracked-location and reviewed-checkpoint comparison.",
+  "stagedGitTree": "ad7f1fa7175bfd53745c1a8b329f57266705d45e",
+  "archiveSha256": "41648d79eed3b4a53d7ebc4e4f6a665e8cb0bbced46df34f159707bd69461bb3",
+  "restoredRequiredArtifacts": 730,
+  "releaseValidation": {
+    "passed": true,
+    "decisionEnteredAt": "2026-10-02T10:11:10.796Z",
+    "publicationAuthorized": true,
+    "publicationOccurred": false,
+    "assistantUploadAuthorized": false,
+    "variants": [
+      {
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.variant.youtube-shorts",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      },
+      {
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.variant.tiktok-feed",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      },
+      {
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.variant.instagram-reels",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      },
+      {
+        "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.variant.facebook-reels",
+        "revision": 2,
+        "state": "production-ready",
+        "preview": "owner-risk-accepted"
+      }
+    ],
+    "packages": 4,
+    "realDevicePasses": 0,
+    "coverDeviceTested": false,
+    "preservedFiles": 902,
+    "retainedArtifacts": 36,
+    "master": {
+      "path": "artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+      "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7"
+    },
+    "nextGate": "AHMET \u2014 CYCLE #3 MANUAL PUBLICATION / SCHEDULING"
+  },
+  "masterAndCoverBytesPreserved": true,
+  "fourRestoredPackagesPublishEligible": true,
+  "historicalMissingExpectationsUnchanged": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "limitations": [
+    "Stored tracked-byte restore proof, not byte-identical regeneration.",
+    "Not device/UI/crop/publication evidence.",
+    "This receipt is appended after the tested snapshot; final native durability verification includes it."
+  ],
+  "assistantUploadAuthorized": false,
+  "publicationOccurred": false
+}

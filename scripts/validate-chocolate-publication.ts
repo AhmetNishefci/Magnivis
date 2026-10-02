@@ -1,0 +1,51 @@
+import {readFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {validateChocolatePublicationAuthorization} from '../src/platform-variants/chocolate-publication';
+import {chocolatePublicationVariants as variants} from '../src/platform-variants/variants/chocolate-crystal-choice-publication';
+import {chocolatePlatformVariants as prepared} from '../src/platform-variants/variants/chocolate-crystal-choice';
+import {chocolateFileHash} from '../src/production/chocolate-master-integrity';
+import {chocolatePublicationDeliveryDependencies as dependencies} from './chocolate-publication-delivery';
+import {validateDeliveryPackage} from './delivery-packages';
+import {coverAssetSchema} from '../src/platform-variants/presentation';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {publicationRegistry, metricSnapshotRegistry} from '../src/operations/registry';
+import {parseManifests} from '../src/artifacts/schema';
+import {youtubeCategoryPolicy} from '../src/platform-variants/youtube-category-policy';
+
+const root = 'content-intelligence/reviews/chocolate-crystal-choice-publication-v1';
+const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+const decision = validateChocolatePublicationAuthorization();
+const bindings = read(`${root}/final-bindings.json`);
+if (bindings.decision.sha256 !== sha256Json(decision) || !bindings.publicationAuthorized || bindings.publicationOccurred || bindings.assistantUploadAuthorized || bindings.packages.length !== 4 || bindings.realDevicePassesGranted.length) throw new Error('Invalid owner manual release scope');
+if (sha256Json(read(`${root}/platform-variants.json`)) !== sha256Json(variants) || chocolateFileHash(`${root}/platform-copy.json`) !== decision.copy.sha256) throw new Error('Authorized variants/copy drift');
+for (const item of bindings.packages) {
+  const variant = variants.find(v => v.platform === item.platform)!;
+  const previous = prepared.find(v => v.id === variant.id)!;
+  const manifest = validateDeliveryPackage(item.directory,dependencies);
+  if (manifest.state !== 'ready-for-manual-upload' || !manifest.publishEligible || manifest.review.previewStatus !== 'owner-risk-accepted' || manifest.review.publicationAuthorized !== false) throw new Error('Invalid readiness/authority separation');
+  if (variant.revision !== 2 || variant.status !== 'production-ready' || variant.productionIntent.platformPreviewRequired || variant.approval?.ownerDecision?.sha256 !== sha256Json(decision) || variant.presentationRiskAcceptance?.decision.sha256 !== sha256Json(decision) || variant.operatorGuidance?.manualPublication?.authorization.sha256 !== sha256Json(decision)) throw new Error('Missing exact owner risk acceptance');
+  if (sha256Json(variant.packaging) !== sha256Json(previous.packaging) || sha256Json(variant.sourceMaster) !== sha256Json(previous.sourceMaster) || variant.productionIntent.renderStrategy !== 'reuse-existing-master') throw new Error('Unauthorized media/editorial modification');
+  if (sha256Json(manifest) !== item.manifestSha256 || chocolateFileHash(`${item.directory}/manifest.json`) !== item.manifestFileSha256 || sha256Json(variant) !== item.variantSha256 || chocolateFileHash(item.uploadFile) !== decision.master.sha256) throw new Error('Final handoff identity drift');
+  if (variant.platform === 'instagram' && chocolateFileHash(`${item.directory}/cover.png`) !== decision.selectedInstagramCover.sha256) throw new Error('Cover identity drift');
+}
+const cover = coverAssetSchema.parse(read(`${root}/cover-selection.json`));
+if (cover.sha256 !== decision.selectedInstagramCover.sha256 || cover.approvalDecisionId !== decision.id || cover.crop !== null || cover.status !== 'approved') throw new Error('Invalid exact cover selection or invented crop');
+const post = read(`${root}/post-publication-review.json`);
+if (post.releaseBlocked || post.publicationOccurred || post.prepublicationRealDevicePasses || post.surfaces.length !== 9 || post.surfaces.some((surface: {state: string; observedAt: unknown; url: unknown; observations: unknown[]; screenshots: unknown[]}) => surface.state !== 'NOT_TESTED' || surface.observedAt || surface.url || surface.observations.length || surface.screenshots.length)) throw new Error('Fabricated live QA');
+const decode=read(`${root}/media-decode.json`);if(!decode.passed||!decode.fullVideoAndAudioDecode||decode.masterModified||decode.realDevicePasses||decode.masterSha256!==decision.master.sha256)throw new Error('Release media decode/provenance drift');
+const intake = read(`${root}/publication-evidence-intake.json`);
+if (!intake.publicationAuthorized || intake.publicationOccurred || intake.entries.length !== 4) throw new Error('Invalid pending publication intake');
+for (const item of intake.entries) if (item.publicUrl || item.platformContentId || item.shortcode || item.publishedAt || item.publishedOn || item.successfulPublication || item.actualUploadedVariant || item.actualUploadedDelivery || item.commentsPosted || item.mobilePresentation || item.desktopWebPresentation || item.cropUiProblems || item.screenshots.length) throw new Error('Fabricated publication evidence');
+for(const item of intake.entries){for(const field of ['actualVisibility','actualSettings','scheduledPublication','schedulingConfirmation','publicationConfirmation','ownerPresentationObservations','firstCommentId','firstCommentUrl','firstCommentPostedAt','reportedBy','publicationTimePrecision','publicationTimezone'])if(item[field]!==null)throw new Error('Invented actual release field: '+field);if(item.evidence.length)throw new Error('Invented release observations');const final=bindings.packages.find((p:{platform:string})=>p.platform===item.platform);if(!final||item.authorizedDelivery.manifestFileSha256!==final.manifestFileSha256||item.authorizedDelivery.path!==final.directory||item.authorizedVariant.sha256!==final.variantSha256||item.masterSha256!==decision.master.sha256)throw new Error('Actual-evidence intake targets a different authorized package');}
+if (publicationRegistry.list().some(record => record.id.includes('chocolate-crystal-choice')) || metricSnapshotRegistry.list().some(record => JSON.stringify(record).includes('chocolate-crystal-choice')) || read(`${root}/analytics-readiness.json`).metricSnapshots.length) throw new Error('Premature publication/analytics record');
+const settings = read(`${root}/upload-settings.json`);
+if (settings.settingsApplied || sha256Json(settings.youtube.categoryPolicy) !== sha256Json(youtubeCategoryPolicy) || settings.youtube.preferredCategory !== 'Science & Technology' || settings.youtube.fallbackCategory !== 'Education') throw new Error('Invalid story-specific category or invented live setting');
+const frozen = execFileSync('git', ['ls-tree', '-r', '--name-only', decision.reviewedCommit], {encoding: 'utf8'}).trim().split('\n').filter(path => path.startsWith('artifacts/') || path.startsWith('public/audio/') || path.startsWith('public/fonts/') || path.startsWith('content-intelligence/reviews/') || path.startsWith('content-intelligence/creative-directions/') || path.startsWith('src/production/plans/') || path.startsWith('src/captions/plans/') || ['AGENTS.md', 'docs/CREATIVE-DIRECTION.md', 'src/design/brand-execution-policy.json'].includes(path));
+const changedFrozen=execFileSync('git',['diff','--name-only',decision.reviewedCommit,'--',...frozen],{encoding:'utf8'}).trim();if(changedFrozen)throw new Error('Historical/approved artifact drift: '+changedFrozen);
+const manifests = parseManifests(read('artifacts/chocolate-crystal-choice-publication-manifests.json'));
+for (const manifest of manifests) if (chocolateFileHash(manifest.localPath) !== manifest.identity.sha256 || readFileSync(manifest.localPath).length !== manifest.identity.bytes || manifest.publication !== 'authorized-not-published') throw new Error('Publication archive drift');
+const changed=execFileSync('git',['diff','--name-only',decision.reviewedCommit,'--'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
+const untracked=execFileSync('git',['ls-files','--others','--exclude-standard'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
+const allowed=(path:string)=>path.startsWith(root+'/')||path.startsWith('artifacts/deliveries/chocolate-crystal-choice-publication-v1/')||['artifacts/chocolate-crystal-choice-publication-manifests.json','src/platform-variants/chocolate-publication.ts','src/platform-variants/variants/chocolate-crystal-choice-publication.ts','src/artifacts/registry.ts','scripts/chocolate-publication-delivery.ts','scripts/record-chocolate-publication-authorization.ts','scripts/prepare-chocolate-publication.ts','scripts/register-chocolate-publication-artifacts.ts','scripts/validate-chocolate-publication.ts','scripts/validate-chocolate-platform.ts','tests/chocolate-publication.test.ts','docs/PROJECT-STATE.md','docs/DECISIONS.md'].includes(path);
+const unrelated=[...changed,...untracked].filter(path=>!allowed(path));if(unrelated.length)throw new Error('Publication scope/history violation: '+unrelated.join(','));
+console.log(JSON.stringify({passed: true, decisionEnteredAt: decision.enteredAt, publicationAuthorized: true, publicationOccurred: false, assistantUploadAuthorized: false, variants: variants.map(v => ({id: v.id, revision: v.revision, state: v.status, preview: v.previewStatus})), packages: 4, realDevicePasses: 0, coverDeviceTested: false, preservedFiles: frozen.length, retainedArtifacts: manifests.length, master: decision.master, nextGate: 'AHMET — CYCLE #3 MANUAL PUBLICATION / SCHEDULING'}, null, 2));

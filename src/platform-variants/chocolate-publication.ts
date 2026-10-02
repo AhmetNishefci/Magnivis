@@ -1,0 +1,10 @@
+import {z} from 'zod';
+import {readFileSync} from 'node:fs';
+import {publicationAuthorizationSchema} from './phantom-traffic-publication';
+import {digestSchema,relativePathSchema} from '../artifacts/schema';
+import {validateChocolateLockedMaster,chocolateFileHash as hash} from '../production/chocolate-master-integrity';
+const reference=z.object({path:relativePathSchema,sha256:digestSchema}).strict();
+const {correctsPriorDecision:unused,...base}=publicationAuthorizationSchema.shape;void unused;
+export const chocolatePublicationAuthorizationSchema=z.object({...base,masterArtifactId:z.literal('chocolate-crystal-choice.locked-master.v1'),selectedInstagramCover:reference.extend({artifactId:z.literal('chocolate-crystal-choice.instagram-cover.v1')}),masterApproval:reference,preparedVariants:reference,acceptedRisks:z.array(z.string().min(1)).min(7)}).strict().superRefine((d,c)=>{if(new Set(d.platforms).size!==4)c.addIssue({code:'custom',message:'Release requires four distinct platforms'});});
+export const chocolatePublicationAuthorization=chocolatePublicationAuthorizationSchema.parse(JSON.parse(readFileSync('content-intelligence/reviews/chocolate-crystal-choice-publication-v1/owner-decision.json','utf8')));
+export const validateChocolatePublicationAuthorization=()=>{const d=chocolatePublicationAuthorization,master=validateChocolateLockedMaster();if(d.master.path!==master.artifact.path||d.master.sha256!==master.artifact.sha256)throw new Error('Release targets different master');for(const r of [d.master,d.selectedInstagramCover,d.masterApproval,d.preparedPackageIndex,d.preparedVariants,d.copy])if(hash(r.path)!==r.sha256)throw new Error('Release binding drift: '+r.path);return d;};

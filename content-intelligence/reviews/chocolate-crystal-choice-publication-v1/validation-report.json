@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-02T10:22:04.952442Z",
+  "publicationAuthorized": true,
+  "publicationOccurred": false,
+  "assistantUploadAuthorized": false,
+  "checks": [
+    {
+      "check": "pnpm check",
+      "result": "passed",
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 41,
+      "tests": 405,
+      "gitDiffCheck": "passed"
+    },
+    {
+      "check": "exact release approval/master/cover/copy/variant/delivery bindings",
+      "result": "passed",
+      "finalVariants": 4,
+      "variantRevision": 2,
+      "variantState": "production-ready",
+      "presentationState": "owner-risk-accepted",
+      "publishEligiblePackages": 4,
+      "allVideoBytesPreserved": true,
+      "coverBytesPreserved": true
+    },
+    {
+      "check": "publication risk and evidence-intake safeguards",
+      "result": "passed",
+      "realDevicePasses": 0,
+      "observedLiveSurfaces": 0,
+      "pendingLiveSurfaces": 9,
+      "completedPublicationRecords": 0,
+      "metricSnapshotsCreated": 0
+    },
+    {
+      "check": "immutable historical/approved release checkpoint",
+      "result": "passed",
+      "checkpoint": "b687adeac8a93543f3d3d4724e80ae450243dcf2",
+      "protectedFiles": 902,
+      "method": "Batched Git byte comparison against reviewed commit plus source/master/QA/claim/artifact hash checks"
+    },
+    {
+      "check": "chocolate prepared platform, research, editorial, direction and production validators",
+      "result": "passed",
+      "verifiedNarrationClaims": 8,
+      "reserveClaimsPreserved": 34,
+      "exactNarrationWords": 80,
+      "note": "Earlier snapshots retain their original gate states; new release decision supplies current manual publication authority."
+    },
+    {
+      "check": "full video/audio decode and native package media inspection",
+      "result": "passed",
+      "masterModified": false,
+      "evidence": "media-decode.json"
+    },
+    {
+      "check": "adaptive creative/narrator/policy/historical preservation",
+      "result": "passed",
+      "historicalBaselineFilesUnchanged": 292,
+      "exactClosureCheckpoints": 1
+    },
+    {
+      "check": "Longitude publication integrity",
+      "result": "passed",
+      "protectedFiles": 605,
+      "publicationOccurred": false
+    },
+    {
+      "check": "brain integrity",
+      "result": "passed",
+      "documents": 23,
+      "agentRoutes": 31
+    },
+    {
+      "check": "Content Intelligence retained fixture and open-world discovery",
+      "result": "passed",
+      "discoveryPoolEntries": 34,
+      "shortlist": 10,
+      "fixture": "content-intelligence/runs/wood-frog-freeze-fixture-v1",
+      "workflowEnvelopesRegenerated": false
+    }
+  ],
+  "developmentCorrections": [
+    "Artifact-map return type required explicit native type annotation; corrected.",
+    "Initial four historical integration tests exceeded the unchanged 5-second limit due to 902 per-file Git processes. Replaced those comparisons with one equivalent protected-path Git comparison, retaining all evidence/claim/media checks. Re-run passed all 405 tests; no timeout changes or gate bypass."
+  ],
+  "durabilityEvidence": "durability-report.json",
+  "secretEvidence": "scoped-secret-scan.json",
+  "noGateWeakening": true,
+  "noExternalPlatformActions": true,
+  "noCycle4": true,
+  "nextGate": "AHMET — CYCLE #3 MANUAL PUBLICATION / SCHEDULING"
+}
