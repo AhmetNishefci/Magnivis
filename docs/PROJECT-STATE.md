@@ -1,3 +1,11 @@
+# Prospective system change — cross-cycle creative convergence awareness
+
+The system branch `system/cross-cycle-creative-convergence` strengthens the existing Adaptive Creative Direction comparison against the four latest available approved masters and their rendered evidence. [CREATIVE-DIRECTION](CREATIVE-DIRECTION.md) owns the qualitative cause/alternative rules; [system review](../system-audits/cross-cycle-creative-convergence/owner-review.md) records findings and validation. Similarity remains permitted for independent story reasons or intentional brand continuity. Convenience-driven convergence requires internal exploration, never another normal owner gate or forced visual diversity. This branch is not automatically integrated into main.
+
+Historical direction/media/approval records and independent journals remain unchanged. Cycle #4 remains authorized as below; actual publication evidence is still absent. Cycle #5 is not started and needs separate explicit start authority.
+
+---
+
 # CONTENT CYCLE #4 — AUTHORIZED OWNER MANUAL RELEASE
 
 Ahmet explicitly approved publication on YouTube, TikTok, Instagram and Facebook and accepted the listed presentation uncertainties. [Exact owner decision](../content-intelligence/cycles/cycle-4/publication/owner-publication-decision-v1.json) binds the unchanged four-platform release, 52 exact-media presentation unknowns and five operational unknowns. The independent replay-validated journal is revision 9 / **authorized**; no normal owner gate remains pending.

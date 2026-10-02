@@ -30,9 +30,9 @@ describe('Chocolate exact editorial approval and direction proposal',()=>{
     mutate(approval,'owner-decision.json',v=>{v.productionAuthorized=true;v.ownerSuppliedReviewTimestamp='2026-10-02T00:00:00Z';});
     expect(()=>validateChocolateDirection(dir,approval)).toThrow();
   }));
-  it('rejects unresolved convenience reuse even in proposal',()=>withCopy((dir,approval)=>{
+  it('does not grandfather an edited historical proposal with unresolved convenience reuse',()=>withCopy((dir,approval)=>{
     mutate(dir,'direction-v1.json',v=>{(v.convergenceReview as {unresolvedConvenienceReuse:string[]}).unresolvedConvenienceReuse=['Use the Longitude stage because it exists'];});
-    expect(()=>validateChocolateDirection(dir,approval)).toThrow(/convergence\/owner gate/);
+    expect(()=>validateChocolateDirection(dir,approval)).toThrow(/cross-cycle portfolio review/);
   }));
   it('rejects missing model disclosure',()=>withCopy((dir,approval)=>{
     mutate(dir,'comprehension-realization.json',v=>{(v.beats as Array<{disclosure:string}>)[3]!.disclosure='Actual microscopy';});

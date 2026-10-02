@@ -64,14 +64,14 @@ const editorialFor = (cycle: Cycle, root: string, evaluationAt?:string) => {
   if(editorial.review.cycleId!==cycle.id)throw new Error('Editorial authority belongs to another cycle');
   return editorial;
 };
-const directionFor = (cycle: Cycle, root: string) => {
+const directionFor = (cycle: Cycle, root: string,registry:MediaRegistry) => {
   const editorial=editorialFor(cycle,root);
-  return validateCreativeDirection(receiptFor(cycle,'creative',root),editorial.knowledgePackage,editorial.contentAsset);
+  return validateCreativeDirection(receiptFor(cycle,'creative',root),editorial.knowledgePackage,editorial.contentAsset,{root,registry});
 };
 const validateCandidateReceipt=(cycle:Cycle,record:z.infer<typeof ref>,registry:MediaRegistry,root:string)=>{
   const candidate=candidateSchema.parse(readBoundRecord(record,root));
-  const editorial=editorialFor(cycle,root);const direction=directionFor(cycle,root);
-  const plan=validateInternalProductionPlanReferences(readBoundRecord(candidate.productionPlan,root),editorial.knowledgePackage,editorial.contentAsset,direction);
+  const editorial=editorialFor(cycle,root);const direction=directionFor(cycle,root,registry);
+  const plan=validateInternalProductionPlanReferences(readBoundRecord(candidate.productionPlan,root),editorial.knowledgePackage,editorial.contentAsset,direction,{root,registry});
   if(plan.status!=='rendered-candidate-visual-review-required'||plan.visualApproval)throw new Error('Master review requires a genuine unapproved rendered-candidate plan');
   if(editorial.review.claims.some(c=>['exclude','unresolved'].includes(c.disposition)&&!plan.excludedClaimIds.includes(c.id)))throw new Error('Production must retain every exclusion/unresolved claim');
   if(candidate.cycleId!==cycle.id || candidate.scriptSha256!==sha256Json(editorial.contentAsset.script) || candidate.durationSeconds!==plan.format.durationSeconds) throw new Error('Candidate narration/production target mismatch');
@@ -141,7 +141,7 @@ export const transitionCycle = (input: Cycle, eventInput: unknown, registry: Med
     if(cycle.exception) throw new Error('An exceptional decision is already pending');
     const scope=z.object({cycleId:text.optional()}).passthrough().parse(readBoundRecord(event.record,root));
     if(scope.cycleId){if(scope.cycleId!==cycle.id)throw new Error('Exception scope belongs to another cycle');}
-    else {const editorial=editorialFor(cycle,root);validateCreativeDirection(scope,editorial.knowledgePackage,editorial.contentAsset);}
+    else {const editorial=editorialFor(cycle,root);validateCreativeDirection(scope,editorial.knowledgePackage,editorial.contentAsset,{root,registry});}
     next.exception={reason:event.reason,target:event.record,resumeStage:cycle.stage};
   } else if(event.type==='owner-decision') {
     if(cycle.exception) {
@@ -192,7 +192,7 @@ export const transitionCycle = (input: Cycle, eventInput: unknown, registry: Med
     } else if(event.stage==='editorial') {
       next.receipts.push({stage:event.stage,record:event.record});editorialFor(next,root,event.at);next.receipts.pop();next.stage='creative';
     } else if(event.stage==='creative') {
-      next.receipts.push({stage:event.stage,record:event.record});const d=directionFor(next,root);next.receipts.pop();
+      next.receipts.push({stage:event.stage,record:event.record});const d=directionFor(next,root,registry);next.receipts.pop();
       if(d.ownerReview.required){
         const fields=(direction:typeof d)=>({knowledgePackage:direction.knowledgePackage,contentAsset:direction.contentAsset,approvedScriptSha256:direction.approvedScriptSha256,creativeThesis:direction.creativeThesis,viewerExperience:direction.viewerExperience,emotionalTarget:direction.emotionalTarget,visualThesis:direction.visualThesis,decisions:direction.decisions,convergenceReview:direction.convergenceReview,risks:direction.risks});
         const authorized=cycle.history.filter(h=>h.event==='owner-decision').some(h=>{
@@ -224,10 +224,10 @@ export const transitionCycle = (input: Cycle, eventInput: unknown, registry: Med
         let requiredMidpoints=expectedMidpoints;
         if(variant.presentationInputs){
           const bundle=z.object({cues:z.array(z.object({id:text,transcript:text,start:z.number(),duration:z.number()})),provenance:z.object({approvedScriptSha256:digest,voiceId:text,provider:text,cueArtifacts:z.array(z.object({id:text,sha256:digest}))})}).passthrough().parse(readBoundRecord(variant.presentationInputs.narrationBundle,root));
-          const masterPlan=validateInternalProductionPlanReferences(readBoundRecord(c.productionPlan,root),editorial.knowledgePackage,editorial.contentAsset,directionFor(cycle,root));
+          const masterPlan=validateInternalProductionPlanReferences(readBoundRecord(c.productionPlan,root),editorial.knowledgePackage,editorial.contentAsset,directionFor(cycle,root,registry),{root,registry});
           if(bundle.provenance.approvedScriptSha256!==c.scriptSha256||bundle.provenance.voiceId!==masterPlan.executionPolicy?.narrator.voiceId||bundle.provenance.provider!==masterPlan.executionPolicy.narrator.provider)throw new Error('Derivative narration cannot silently change approved words/voice');
           for(const clip of bundle.provenance.cueArtifacts){const m=registry.byHash(clip.sha256);if(!m||!m.mediaType.startsWith('audio/'))throw new Error('Derivative narration clip missing');registry.resolveFile({id:m.id,sha256:m.sha256});}
-          const captions=validateAdaptiveCaptionPlan(readBoundRecord(variant.presentationInputs.captionPlan,root),bundle.cues,result.profile.canvas,directionFor(cycle,root),editorial.contentAsset);
+          const captions=validateAdaptiveCaptionPlan(readBoundRecord(variant.presentationInputs.captionPlan,root),bundle.cues,result.profile.canvas,directionFor(cycle,root,registry),editorial.contentAsset);
           if(captions.fps!==result.evidence.fps)throw new Error('Derivative captions and evaluated frames differ');
           requiredMidpoints=captions.cues.map(cue=>Math.floor((cue.startFrame+cue.endFrame)/2));
           const report=result.evidence.reports.map(r=>readBoundRecord(r,root)).find(r=>{const parsed=z.object({mediaSha256:digest,scriptSha256:digest,checks:z.object({technical:z.literal('passed'),typography:z.literal('passed'),captions:z.literal('passed'),audio:z.literal('passed')})}).safeParse(r);return parsed.success&&parsed.data.mediaSha256===variant.media.sha256&&parsed.data.scriptSha256===c.scriptSha256;});

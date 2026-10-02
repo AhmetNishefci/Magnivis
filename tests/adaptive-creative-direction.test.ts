@@ -5,7 +5,7 @@ import {describe,expect,it} from 'vitest';
 import baseline from '../system-audits/adaptive-creative-direction-v1/historical-baseline.json';
 import {woodFrogApprovedKnowledgePackage as pkg} from '../src/knowledge/packages/wood-frog-approved';
 import {woodFrogApprovedContentAsset as asset} from '../src/content-assets/assets/wood-frog-approved';
-import {phantomTrafficContentAsset as recent} from '../src/content-assets/assets/phantom-traffic';
+import {convergenceFixture,recentAssetFixtures,inspectionReference} from './fixtures/visual-convergence';
 import {creativeDirectionSchema,creativeDirectionDraftSchema} from '../src/content-assets/creative-direction';
 import {validateCreativeDirection} from '../src/content-assets/creative-direction-integrity';
 import {sha256Json} from '../src/content-intelligence/run-schema';
@@ -26,8 +26,8 @@ const makeDirection=()=>creativeDirectionSchema.parse({
  knowledgePackage:ref(pkg),contentAsset:ref(asset),approvedScriptSha256:sha256Json(asset.script),
  creativeThesis:'Test fixture only; no historical redesign.',viewerExperience:'Understand a scoped mechanism.',emotionalTarget:'Curiosity resolved.',visualThesis:'Explain relationships through intentional motion.',
  decisions:['visual-medium','art-direction','narration','captions','sound','pacing','hook','platform-presentation'].map(d=>({dimension:d,treatment:`Authored ${d} treatment`,rationale:'Selected for the explanation, rather than inheritance.'})),
- convergenceReview:{recentAssets:[{contentAsset:ref(recent),learnedPrinciple:'Motion can explain a relationship.',applicability:'Test whether physical motion clarifies this fixture.',similarities:['Shared QA infrastructure'],differences:['Different content-specific execution'],assessment:'distinct-execution',rationale:'Infrastructure does not mandate style.'}],unresolvedConvenienceReuse:[],conclusion:'Intentional choices; no convenience-driven lock.'},
- ownerReview:{required:false,rationale:'Fixture decisions stay within existing editorial truth.'},risks:['Fixture only.'],provenance:{method:'manual-editorial',enteredAt:'2026-10-01T00:00:00Z',notes:'Synthetic unit-test input, not an owner decision or produced asset.'},platformApprovalGranted:false,publicationApprovalGranted:false,
+ convergenceReview:convergenceFixture(),
+ ownerReview:{required:false,rationale:'Fixture decisions stay within existing editorial truth.'},risks:['Fixture only.'],provenance:{method:'manual-editorial',enteredAt:'2026-10-03T00:00:00Z',notes:'Synthetic unit-test input, not an owner decision or produced asset.'},platformApprovalGranted:false,publicationApprovalGranted:false,
 });
 const futurePlan=(direction=makeDirection())=>({...woodFrogProductionPlan,id:'production-plan.future-test.v1',executionPolicy:defaultExecutionPolicy(),status:'planned',visualApproval:undefined,creativeDirection:ref(direction),assets:woodFrogProductionPlan.assets.map(a=>({...a,provenance:{...a.provenance,evidence:'Fixture rights evidence'}}))});
 
@@ -77,10 +77,10 @@ describe('Adaptive creative direction',()=>{
  it('uses the provider boundary, records provenance, and compares supplied historical assets',async()=>{
   const d={...makeDirection(),state:'proposal'};let calls=0;
   const provider={id:'fixture',generateStructured:async()=>{calls++;return {output:d,model:'fixture',generatedAt:'2026-10-01T00:00:00Z'};}};
-  const generated=await proposeCreativeDirection(provider,{knowledgePackage:pkg,contentAsset:asset,recentAssets:[recent],brief:'Test only'});
+  const generated=await proposeCreativeDirection(provider,{knowledgePackage:pkg,contentAsset:asset,recentAssets:recentAssetFixtures(),visualInspectionRecord:inspectionReference,brief:'Test only'});
   expect(generated.provenance.workflowId).toBe('workflow.creative-direction');expect(calls).toBe(1);
-  await expect(proposeCreativeDirection(provider,{knowledgePackage:pkg,contentAsset:{...asset,editorialStatus:'draft'},recentAssets:[recent],brief:'Test only'})).rejects.toThrow('approved');expect(calls).toBe(1);
-  await expect(proposeCreativeDirection(provider,{knowledgePackage:pkg,contentAsset:asset,recentAssets:[],brief:'Test only'})).rejects.toThrow('exact supplied');
+  await expect(proposeCreativeDirection(provider,{knowledgePackage:pkg,contentAsset:{...asset,editorialStatus:'draft'},recentAssets:recentAssetFixtures(),visualInspectionRecord:inspectionReference,brief:'Test only'})).rejects.toThrow('approved');expect(calls).toBe(1);
+  await expect(proposeCreativeDirection(provider,{knowledgePackage:pkg,contentAsset:asset,recentAssets:[],visualInspectionRecord:inspectionReference,brief:'Test only'})).rejects.toThrow('exact supplied');
  });
  it('allows non-Kokoro narration provenance without requiring a universal voice',()=>{
   expect(videoSpecSchema.parse({...phantomTraffic,audio:{...phantomTraffic.audio,provenance:{...phantomTraffic.audio.provenance!,narration:{...phantomTraffic.audio.provenance!.narration,provider:'licensed-provider',voiceId:'explicit-story-choice'}}}}).audio.provenance?.narration.voiceId).toBe('explicit-story-choice');
@@ -99,7 +99,7 @@ describe('Adaptive creative direction',()=>{
   expect(videoSpecSchema.parse({...phantomTraffic,pillar:'philosophy-ideas'}).pillar).toBe('philosophy-ideas');
  });
  it('persists and verifies the new CI envelope without granting approval',async()=>{
-  const input={knowledgePackage:pkg,contentAsset:asset,recentAssets:[recent],brief:'Test only'};
+  const input={knowledgePackage:pkg,contentAsset:asset,recentAssets:recentAssetFixtures(),visualInspectionRecord:inspectionReference,brief:'Test only'};
   const generated=await proposeCreativeDirection({id:'fixture',generateStructured:async()=>({output:{...makeDirection(),state:'proposal'},model:'fixture',generatedAt:'2026-10-01T00:00:00Z'})},input);
   const run=createWorkflowRun({id:'run.creative-test',stage:'creative-direction',candidate:woodFrogFreezeTopicCandidate,workflow:creativeDirectionWorkflow,input,inputReferences:generated.provenance.inputReferences,generated,validatedAt:'2026-10-01T00:00:00Z',derivedArtifacts:[{kind:'creative-direction',id:generated.artifact.id,revision:1}]});
   expect(run.review.status).toBe('awaiting-human');expect(validateWorkflowRunEnvelope(run)).toEqual(run);

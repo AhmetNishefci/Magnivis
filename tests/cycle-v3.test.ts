@@ -1,4 +1,6 @@
 import {execFileSync} from 'node:child_process';
+import {convergenceFixture,copyComparisonEvidence} from './fixtures/visual-convergence';
+import type {CreativeDirection} from '../src/content-assets/creative-direction';
 import {createRequire} from 'node:module';
 import {openMediaCatalog,persistMediaArtifact} from '../src/artifacts/catalog';
 import {validateLearningSignal} from '../src/workflow/learning';
@@ -41,7 +43,8 @@ const fixture=(cycleId='cycle.test-only',sharedRoot?:string)=>{
     claims:pkg.claims.map(c=>({id:c.id,statementSha256:sha256Json(c.statement),disposition:asset.selectedClaimIds.includes(c.id)?'verify' as const:'reserve' as const,rationale:'Fixture disposition preserves all reserve statuses.',evidence:c.evidence.map(e=>({sourceId:e.sourceId,locator:e.locator??'fixture locator',assessment:'Synthetic sufficient-for-wording test assessment.',sufficientForWording:true})),qualificationsPreserved:true})),misconceptionSafeguards:['Retain existing chocolate qualifications; fixture only.'],comprehensionReview:'Existing script reused for integration testing.',rightsReview:'Existing retained media is referenced, never regenerated.',careAssessment:{state:'routine',rationale:'Synthetic test of non-sensitive existing record.'},exceptionalConditions:[]};
   const editorial=verifyInternalEditorial(review,pkg,asset,root);
   const reference=(a:{id:string;revision:number})=>({id:a.id,revision:a.revision,sha256:sha256Json(a)});
-  const direction={...read('content-intelligence/reviews/chocolate-crystal-choice-production-v1/direction-approved-v2.json'),knowledgePackage:reference(editorial.knowledgePackage),contentAsset:reference(editorial.contentAsset),ownerReview:{required:false,rationale:'Synthetic routine internal-direction fixture.'}};
+  const direction:CreativeDirection={...read('content-intelligence/reviews/chocolate-crystal-choice-production-v1/direction-approved-v2.json'),knowledgePackage:reference(editorial.knowledgePackage),contentAsset:reference(editorial.contentAsset),convergenceReview:convergenceFixture(now,editorial.contentAsset.id),provenance:{method:'manual-editorial',enteredAt:now,notes:'Synthetic cycle test direction only.'},ownerReview:{required:false,rationale:'Synthetic routine internal-direction fixture.'}};
+  copyComparisonEvidence(root,direction.convergenceReview);
   const caption={...read('src/captions/plans/chocolate.json'),creativeDirection:reference(direction)};
   const originalPlan=read('src/production/plans/chocolate.json');const {ownerDecision:_owner,...rest}=originalPlan;void _owner;
   const plan={...rest,internalEditorialAuthority:editorial.authority,knowledgePackage:reference(editorial.knowledgePackage),contentAsset:reference(editorial.contentAsset),creativeDirection:reference(direction),captions:{...rest.captions,captionPlanSha256:sha256Json(caption)}};
@@ -82,8 +85,10 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
   it('runs fresh media, a fresh derivative, complete release, backlog and isolated late publication in one catalog lifecycle',async()=>{
     const f=fixture('cycle.integration-a');mkdirSync(join(f.root,'artifacts'),{recursive:true});
     const narrationRecords=f.candidate.narration.map((n:{media:ReturnType<typeof mediaReference>})=>registry.get(n.media));
-    for(const m of narrationRecords){mkdirSync(join(f.root,m.canonicalPath,'..'),{recursive:true});cpSync(registry.resolveFile(mediaReference(m)),join(f.root,m.canonicalPath));for(const source of m.provenance.sourceRecords){mkdirSync(join(f.root,source,'..'),{recursive:true});cpSync(source,join(f.root,source));}}
-    writeFileSync(join(f.root,'artifacts/media-catalog.json'),JSON.stringify({schemaVersion:2,artifacts:narrationRecords}));
+    const comparisonRecords=f.direction.convergenceReview.recentAssets.flatMap(r=>[r.visualComparison!.master,...r.visualComparison!.inspectedVisuals]).map(m=>registry.get(m));
+    const existingRecords=[...narrationRecords,...comparisonRecords];
+    for(const m of existingRecords){mkdirSync(join(f.root,m.canonicalPath,'..'),{recursive:true});cpSync(registry.resolveFile(mediaReference(m)),join(f.root,m.canonicalPath));for(const source of m.provenance.sourceRecords){mkdirSync(join(f.root,source,'..'),{recursive:true});cpSync(source,join(f.root,source));}}
+    writeFileSync(join(f.root,'artifacts/media-catalog.json'),JSON.stringify({schemaVersion:2,artifacts:existingRecords}));
     const live=openMediaCatalog(f.root);const stale=loadMediaRegistry(f.root);const initialSnapshot=live.list();const proof=f.put({fixtureOnly:true,purpose:'Generic ffmpeg color/silence engineering fixture, not production content or real QA.'});
     const generate=(name:string,color:string,parents:ReturnType<typeof mediaReference>[]=[] )=>{
       const path=`artifacts/${name}.mp4`;const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;

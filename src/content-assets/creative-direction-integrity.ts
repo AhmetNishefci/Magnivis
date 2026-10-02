@@ -2,8 +2,9 @@ import type {ContentAsset} from './schema';
 import type {KnowledgePackage} from '../knowledge/schema';
 import {creativeDirectionSchema} from './creative-direction';
 import {sha256Json} from '../content-intelligence/run-schema';
+import {validateVisualConvergence,type VisualConvergenceContext} from './visual-convergence';
 
-export const validateCreativeDirection = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset) => {
+export const validateCreativeDirection = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset,context:VisualConvergenceContext={}) => {
   const direction = creativeDirectionSchema.parse(input);
   const matches = (ref: {id:string;revision:number;sha256:string}, actual: {id:string;revision:number}) =>
     ref.id === actual.id && ref.revision === actual.revision && ref.sha256 === sha256Json(actual);
@@ -17,5 +18,6 @@ export const validateCreativeDirection = (input: unknown, pkg: KnowledgePackage,
   if (asset.selectedClaimIds.some(id => pkg.claims.find(c => c.id === id)?.verificationStatus !== 'verified')) {
     throw new Error('Creative direction cannot promote non-verified claims');
   }
+  validateVisualConvergence(direction,context);
   return direction;
 };

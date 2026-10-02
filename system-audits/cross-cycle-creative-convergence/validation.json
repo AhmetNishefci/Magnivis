@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-02T19:57:06.238645+00:00",
+  "baseCommit": "62f69f2",
+  "branch": "system/cross-cycle-creative-convergence",
+  "pnpmCheck": {
+    "passed": true,
+    "testFiles": 46,
+    "tests": 456,
+    "typecheck": "passed",
+    "lint": "passed",
+    "diffCheck": "passed",
+    "timeoutConfigurationChanged": false
+  },
+  "canonicalDurability": {
+    "passed": true,
+    "canonicalPayloads": 395,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442,
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "adaptiveHistoricalValidation": {
+    "passed": true,
+    "historicalFilesUnchanged": 292,
+    "exactClosureCheckpoints": 1,
+    "woodFrogUnchanged": true,
+    "platformRecordsUnchanged": true,
+    "legacyNewProductionFlagExplanation": "Existing validator flag detects historical Longitude plan presence; it does not record new work in this task."
+  },
+  "protectedTrackedPaths": {
+    "paths": [
+      "artifacts",
+      "public",
+      "content-intelligence",
+      "workflow",
+      "src/content/videos",
+      "src/components",
+      "src/compositions",
+      "src/production/plans",
+      "src/production/narration",
+      "src/captions/plans"
+    ],
+    "changedSinceBase": []
+  },
+  "historicalDirections": {
+    "exactRawAndNormalizedHashesChecked": 6,
+    "changed": 0
+  },
+  "cycle4": {
+    "stage": "authorized",
+    "revision": 9,
+    "next": {
+      "kind": "manual-publication",
+      "gate": null
+    },
+    "masterSha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+  },
+  "cycle5Started": false,
+  "mediaGenerated": false,
+  "visualRenderRequired": false,
+  "visualRenderReason": "No renderer, scene, asset, caption or media output changed; existing retained rendered outputs were inspected."
+}

@@ -4,6 +4,7 @@ import {executionPolicySchema,validateExecutionPolicy,predatesBrandPolicy} from 
 import {z} from 'zod';
 import {creativeReferenceSchema} from '../content-assets/creative-direction';
 import {validateCreativeDirection} from '../content-assets/creative-direction-integrity';
+import type {VisualConvergenceContext} from '../content-assets/visual-convergence';
 import {sha256Json} from '../content-intelligence/run-schema';
 import historicalPlans from '../../system-audits/adaptive-creative-direction-v1/historical-plans.json';
 import type {ContentAsset} from '../content-assets/schema';
@@ -166,6 +167,7 @@ const validateProductionInputs = (
   knowledgePackage: KnowledgePackage,
   contentAsset: ContentAsset,
   creativeDirection?: unknown,
+  directionContext:VisualConvergenceContext={},
 ) => {
   const plan = productionPlanV3Schema.parse(input);
   if (
@@ -229,7 +231,7 @@ const validateProductionInputs = (
       || plan.approvedScriptSha256 !== sha256Json(contentAsset.script)) throw new Error('Future ProductionPlan editorial hashes are stale');
     if (plan.assets.some(asset => !asset.provenance.evidence)) throw new Error('Future assets require inspectable provenance/license evidence');
     if (!plan.creativeDirection || !creativeDirection) throw new Error('Future production requires an exact asset-bound CreativeDirection');
-    const direction = validateCreativeDirection(creativeDirection, knowledgePackage, contentAsset);
+    const direction = validateCreativeDirection(creativeDirection, knowledgePackage, contentAsset,directionContext);
     if (direction.state !== 'ready-for-production-planning'
       || plan.creativeDirection.id !== direction.id || plan.creativeDirection.revision !== direction.revision
       || plan.creativeDirection.sha256 !== sha256Json(direction)) throw new Error('ProductionPlan creative direction is stale or not ready');
@@ -238,9 +240,9 @@ const validateProductionInputs = (
   return plan;
 };
 
-export const validateProductionPlanReferences = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset, direction?: unknown) => productionPlanSchema.parse(validateProductionInputs(input,pkg,asset,direction));
-export const validateInternalProductionPlanReferences = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset, direction: unknown) => {
-  const plan = productionPlanV3Schema.parse(validateProductionInputs(input,pkg,asset,direction));
+export const validateProductionPlanReferences = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset, direction?: unknown,context:VisualConvergenceContext={}) => productionPlanSchema.parse(validateProductionInputs(input,pkg,asset,direction,context));
+export const validateInternalProductionPlanReferences = (input: unknown, pkg: KnowledgePackage, asset: ContentAsset, direction: unknown,context:VisualConvergenceContext={}) => {
+  const plan = productionPlanV3Schema.parse(validateProductionInputs(input,pkg,asset,direction,context));
   if (!plan.internalEditorialAuthority || plan.ownerDecision || !plan.presentationProfiles) throw new Error("Prospective internal production must identify internal authority explicitly");
   return plan;
 };
