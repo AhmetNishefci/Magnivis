@@ -20,5 +20,17 @@ describe('Cycle #5 actual V3 gate',()=>{
   expect(cycle.masterDecision?.path).toBe('content-intelligence/cycles/cycle-5/master-owner-decision-v1.json');
   expect(cycle.candidate?.sha256).toBe('4964407447431d51d8f316e3c8129ba56b531ef89a7d4d03af153a59e78022be');
   expect(cycle.release?.path).toBe('content-intelligence/cycles/cycle-5/publication/release-v1.json');
- });
+  expect(cycle.stage).toBe('authorized'); expect(cycle.revision).toBe(13);
+  expect(cycle.observations).toHaveLength(4);
+  expect(cycle.observations.every(o=>o.kind==='scheduled-owner-reported')).toBe(true);
+  const reports=cycle.observations.map(o=>JSON.parse(readFileSync(o.record.path,'utf8')));
+  expect(reports.map(r=>r.platform).sort()).toEqual(['facebook','instagram','tiktok','youtube']);
+  for(const report of reports){
+   expect(report.observedAt).toBeNull(); expect(report.scheduledFor).toBeNull();
+   expect(report.publicUrl).toBeNull(); expect(report.platformId).toBeNull();
+   expect(report.actualPublicationTime).toBeNull(); expect(report.presentationObservations).toBeNull();
+   expect(report.deviceQa).toBeNull(); expect(report.analytics).toBeNull();
+  }
+ // Full hash-bound replay grows with append-only observations; preserve every assertion.
+ },30000);
 });

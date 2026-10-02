@@ -2,6 +2,10 @@
 
 # Content Intelligence V1
 
+## Current topic evaluation prompt
+
+`workflow.topic-evaluation` version 2 strengthens existing qualitative `curiosityGap` and `narrativePotential` rationales with the cold-audience premise question, open story forms, honest reframing, optional sharing and provenance-bound learning. The existing output schema remains version 1; no ranking system or topic taxonomy is added. Stored version-1 runs still resolve the original prompt through version-aware registry lookup; their envelopes and hashes remain unchanged. V2 also reconciles historical human-retrieval wording with actual internal evidence inspection under V3, without an extra owner gate. This advisory evaluation does not replace V3’s autonomous selection receipt or later evidence inspection. [STRATEGY](STRATEGY.md) owns the objective and [WORKFLOW-V3](WORKFLOW-V3.md) owns prospective orchestration.
+
 ## Cycle #3 open-world discovery — owner selection pending
 
 [Cycle #3 handoff](../content-intelligence/discovery/cycle-3-2026-10-01/owner-review.md) records 32 fresh external queries, limited access reconnaissance, 34 proposals (33 distinct ideas after a disclosed whale-earwax overlap), ten existing-schema evaluations and five finalists. Manual session-assisted proposals are not a paid provider workflow/envelope, research workspace, evidence verification or owner decision. Open-world eligibility and the live-stage source/claim pause remain intact. Recommendations of research are conditional on owner topic selection and explicit bounded-research authority.

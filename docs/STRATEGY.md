@@ -1,5 +1,24 @@
 # Strategy
 
+## Curiosity worth trusting
+
+Magnivis aims to build the expectation: “When Magnivis appears, this is probably something worth watching.” Discover across human knowledge, nature, documented events and ideas without a domain whitelist or preferred-domain list. The story opportunity, not its category, determines selection.
+
+Seek an honest premise that makes a cold viewer with no prior domain interest want to know the answer, then reward that curiosity with rigorous explanation or storytelling and genuine understanding. Distinguish intrinsic interest in the premise/question from interest that exists only after explaining why the subject matters. Generally prefer stronger legitimate premise-led opportunities when available. Subtle, abstract, mathematical, historical, philosophical and specialist subjects remain eligible when independently compelling; shock is neither required nor authority.
+
+Evaluate qualitatively: what is the honest premise, why would that cold viewer want the answer, what story route delivers understanding, and is this opportunity sufficiently compelling in its own right? Merely being the best of an acceptable pool is insufficient. Document the pool judgment and comparison, including limitations. “Would someone want to tell or send this afterward?” is an optional signal, not a required outcome. No numerical viral score or claim of predictable virality is authorized.
+
+Documented events, decisions, plans, survival, failures, discoveries and consequences may warrant narrative forms of their own; mechanism explanation is only one option. Reject false hooks, fake mysteries, unsupported superlatives and manufactured causal stories. A misleading popular framing can be replaced by a fascinating truthful underlying question. Discovery feasibility does not verify claims: the later claim-level evidence and care/neutrality/attribution standards remain non-overridable, especially for medicine, health, politics and conflict.
+
+If a pool lacks a compelling legitimate opportunity, broaden or deepen discovery within a finite session effort budget. Preserve each pool and the intended next search; resume against the same total budget rather than resetting it. Reaching the bound leaves recoverable unfinished discovery and does not alone create an owner exception. Increased resource authority must remain within established costs; genuine exceptional conditions still follow V3. No pool size or candidate quota forces production.
+
+Existing discovery records, reserve dispositions and unselected V3 comparisons are the idea reservoir. Retain why a lead mattered, its evidence/research status and uncertainties; reconsider it alongside fresh open-world discovery. Retention never guarantees production, confers selection preference or creates an ordered queue. Owner examples calibrate judgment and must not be copied into a candidate bank simply because mentioned.
+
+Inspect recent topic history for accidental domain convergence caused by familiarity, research access, available renderers or assets. Story quality remains primary: no forced rotation, domain quotas, numerical diversity targets or ban on consecutive subjects in one domain. Preserve the independently governed creative-convergence review.
+
+Performance may inform cautious hypotheses about premise, hook, story and execution properties only when durable native metrics preserve provenance, definitions and observation windows. Never infer metrics from scheduling, informal claims, qualitative owner feedback or incomplete snapshots. Never convert “one subject performed well” into domain preference. Existing limited early evidence does not justify a speculative optimizer. Historical choices remain historical choices, not retroactively labeled failures.
+
+
 Magnivis is a durable, faceless, English-language knowledge-media brand—not an automated content farm. The primary audience is in the United States, United Kingdom, Canada, Australia, and other English-speaking markets. Production location does not determine editorial localization.
 
 ## Brand promise
@@ -111,7 +130,7 @@ Maintain a deliberate mix of:
 - `trend-assisted`: evergreen knowledge connected to current interest;
 - `timely`: time-sensitive material where speed does not compromise verification.
 
-Magnivis is not a general news channel. Topic scores are prioritization aids, never objective truth. Record the rationale behind curiosity, surprise, educational value, source quality, visual/story potential, audience fit, saturation, evergreen value, format potential, and follow-up potential.
+Magnivis is not a general news channel. Qualitative topic assessments are prioritization aids, never objective truth. Record the rationale behind curiosity, surprise, educational value, source quality, visual/story potential, audience fit, saturation, evergreen value, format potential, and follow-up potential.
 
 ## Production and approval gate
 

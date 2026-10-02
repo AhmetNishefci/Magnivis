@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.5",
-  "revision": 9,
+  "revision": 13,
   "authority": {
     "path": "workflow/authorities/cycle-5-start.json",
     "sha256": "db2108eb8669c306a2e57cd0cba8dd00f85c125243d016fcee8c735fb8da28f6"
@@ -62,7 +62,36 @@
     "sha256": "9708f7c8a208b1e13b5d4663b02dc8554525a64b6b9ce094d98ea7c8ecc9dfdd"
   },
   "exception": null,
-  "observations": [],
+  "observations": [
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/youtube.json",
+        "sha256": "09027646374df75281a897fd97e91f6aef7a6ccb24728da4439306455bbf4720"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/tiktok.json",
+        "sha256": "bc2a6d3a5502e39af43791b0d249556cac7eeb1761b4e6210516d629c8153685"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/instagram.json",
+        "sha256": "4318a247bb53fd4352f8acfdc842e7a6f546e779b5ec38de641fdd7853f98ebd"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/facebook.json",
+        "sha256": "1fb7c5fa2fb46897221136d5624ec933b5e66e7953f0d208ce3653a44c565fbe"
+      }
+    }
+  ],
   "history": [
     {
       "revision": 1,
@@ -152,6 +181,46 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-5/publication/owner-publication-decision-v1.json",
         "sha256": "9708f7c8a208b1e13b5d4663b02dc8554525a64b6b9ce094d98ea7c8ecc9dfdd"
+      }
+    },
+    {
+      "revision": 10,
+      "previousSha256": "7ae05e19af1a599aaa491d1f923cd3d89239b6e89c69bbf920e350395531acd7",
+      "event": "observe",
+      "at": "2026-10-02T23:29:58.521Z",
+      "evidence": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/youtube.json",
+        "sha256": "09027646374df75281a897fd97e91f6aef7a6ccb24728da4439306455bbf4720"
+      }
+    },
+    {
+      "revision": 11,
+      "previousSha256": "9b68f77e5dc4e67912f3acef4d4c3cc8c64274eb9ceadd0a12eb2961e8f8f0a6",
+      "event": "observe",
+      "at": "2026-10-02T23:29:58.521Z",
+      "evidence": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/tiktok.json",
+        "sha256": "bc2a6d3a5502e39af43791b0d249556cac7eeb1761b4e6210516d629c8153685"
+      }
+    },
+    {
+      "revision": 12,
+      "previousSha256": "f5d7f4dc15b2a1b6510a5b9c58eab781cb0f28b20d7cb9ff3f2593853afb5235",
+      "event": "observe",
+      "at": "2026-10-02T23:29:58.521Z",
+      "evidence": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/instagram.json",
+        "sha256": "4318a247bb53fd4352f8acfdc842e7a6f546e779b5ec38de641fdd7853f98ebd"
+      }
+    },
+    {
+      "revision": 13,
+      "previousSha256": "df0b7d837b5d14e6628c02da1965b6d90d83f45100c4ce3f2697068ff5af5fae",
+      "event": "observe",
+      "at": "2026-10-02T23:29:58.521Z",
+      "evidence": {
+        "path": "content-intelligence/operations/chladni-sand-scheduling-v1/facebook.json",
+        "sha256": "1fb7c5fa2fb46897221136d5624ec933b5e66e7953f0d208ce3653a44c565fbe"
       }
     }
   ]

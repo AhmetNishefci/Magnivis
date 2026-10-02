@@ -2,6 +2,13 @@
 
 # Platform operations and measurement
 
+## Current update — 2026-10-03
+
+Cycle #5 is **owner-reported manually scheduled** on YouTube, TikTok, Instagram and Facebook. [Owner report](../content-intelligence/operations/chladni-sand-scheduling-v1/owner-report.json) and four existing-contract journal observations bind the exact authorized release/media/manifests. Scheduling-action time and intended release time were not supplied. Successful publication, actual public time, URLs, IDs, presentation results, device QA and analytics remain unknown. Cycle #4 and older uncertainties are unchanged; no assistant platform action occurred. Earlier Cycle #5 “manual release pending” statements are pre-report milestones.
+
+The focused [topic-selection audit](../system-audits/topic-curiosity-v3/audit.md) strengthens prospective qualitative cold-audience selection and recoverable bounded discovery; historical choices and approved media remain unchanged. Cycle #6 has not started. There is no additional normal owner gate. Prospective rule authority remains STRATEGY and WORKFLOW-V3.
+
+
 ## Current scheduling and publishing cadence — 2026-10-01
 
 **OWNER-REPORTED SCHEDULING EVIDENCE:** Ahmet manually scheduled Longitude Clock’s exact authorized packages on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels for **2026-10-02 at 20:00 Kosovo local time (Europe/Pristina as supplied)**. [Append-only scheduling report](../content-intelligence/operations/longitude-clock-scheduling-v1/owner-report.json) binds the unchanged final release record and each delivery manifest file hash. Record-entry time is labeled separately from the unknown scheduling-action time. No inferred UTC conversion or platform-side timestamp is recorded.

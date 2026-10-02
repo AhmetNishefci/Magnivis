@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "phase": "content-cycle",
-  "nextOwnerGate": "AHMET \u2014 CYCLE #5 MANUAL RELEASE",
-  "externalActions": "Cycle #5 and Cycle #4: owner-only manual release authorized; no assistant upload/scheduling/publication performed; actual publication unknown",
+  "nextOwnerGate": "No active normal owner gate; Cycle #6 not started",
+  "externalActions": "Cycle #5 owner-reported manually scheduled on all four platforms; Cycle #4 manual release authorized with scheduling/publication unknown; no assistant external actions; actual Cycle #5 publication unknown",
   "historicalCycles": [
     {
       "id": "wood-frog",
@@ -70,5 +70,11 @@
     ]
   },
   "cycle4": "authorized; owner manual release pending; actual scheduling/publication unknown; authority and state: workflow/cycles/cycle.4",
-  "cycle5": "authorized; Ahmet manual release pending; actual scheduling/publication/observations/analytics unknown; authority and state: workflow/cycles/cycle.5"
+  "cycle5": "authorized; scheduled-owner-reported on YouTube, TikTok, Instagram and Facebook; publication times/URLs/IDs/presentation/device QA/analytics unknown; authority and state: workflow/cycles/cycle.5",
+  "topicSelectionAudit": {
+    "branch": "system/topic-curiosity-audit-v3",
+    "report": "system-audits/topic-curiosity-v3/audit.md",
+    "status": "audit-and-minimal-remediation-complete; owner review handoff; not merged",
+    "cycle6Started": false
+  }
 }

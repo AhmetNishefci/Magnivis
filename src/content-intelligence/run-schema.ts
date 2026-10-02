@@ -94,7 +94,7 @@ export const validateWorkflowRunEnvelope = (input: unknown) => {
   if (run.request.workflowId !== workflowByStage[run.stage]) {
     throw new Error(`Workflow stage mismatch: ${run.id}`);
   }
-  const workflow = contentIntelligencePromptRegistry.get(run.request.workflowId);
+  const workflow = contentIntelligencePromptRegistry.get(run.request.workflowId, run.request.workflowVersion);
   if (
     workflow.version !== run.request.workflowVersion
     || workflow.outputSchemaId !== run.request.outputSchemaId

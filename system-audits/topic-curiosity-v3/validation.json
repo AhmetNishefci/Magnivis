@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 49,
+      "tests": 468,
+      "diffHygiene": "passed"
+    },
+    {
+      "command": "node --import tsx scripts/validate-workflow-v3.ts system-audits/topic-curiosity-v3/historical-integrity-baseline.json",
+      "exitCode": 0,
+      "receipt": "workflow-validation.json"
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "receipt": "durability-validation.json"
+    }
+  ],
+  "coverage": "Full repository suite: V3 gates/state/recovery, selection, Content Intelligence/provenance, research/editorial, creative/convergence, captions/narrator, platform/operations/metrics and artifact identities.",
+  "focusedNewRegressionTests": 7,
+  "historicalIntegrityReceipt": "historical-integrity-result.json",
+  "productionMediaGenerated": false,
+  "temporaryTestFixtures": "Existing tests generate and remove test-only temporary media; no production media was rendered or changed.",
+  "mergedToMain": false,
+  "cycle6Started": false
+}

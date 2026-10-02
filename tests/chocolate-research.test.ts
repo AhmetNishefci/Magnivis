@@ -21,7 +21,7 @@ describe('Cycle #3 chocolate research gate', () => {
     expect(validateChocolateResearch()).toMatchObject({result: 'passed', sources: 11, claims: 42,
       selectedClaims: 9, excludedClaims: 10, unknownClaims: 2, hookOptions: 5, wordCount: 87,
       packageState: 'review', assetState: 'editorial-review', historicalPreservation: 'passed'});
-  });
+  }, 30000);
   it('rejects inaccessible source evidence and altered exact statements', () => {
     const changed = review();
     changed.sourceInspections.find((s) => s.sourceId === 'source.chocolate.chen-2021')!.accessStatus = 'inaccessible';

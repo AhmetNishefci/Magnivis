@@ -2,6 +2,11 @@
 
 # Significant decisions
 
+## 2026-10-03 — Strengthen curiosity judgment within V3
+
+The focused repository audit found strong existing open-world, narrative, evidence and qualitative-selection support, but no required cold-audience premise/absolute-opportunity judgment. Strengthen the existing selection receipt and topic-evaluation prompt, with exact historical-hash and prompt-version compatibility. Make preserved discovery rounds resumable against a finite total budget; routine exhaustion remains unfinished discovery rather than an invented exception. Existing retained alternatives suffice as a reservoir. No numeric virality authority, domain preference, rotation, new owner gate, analytics optimizer or media change is justified. STRATEGY owns the concise objective; WORKFLOW-V3 owns execution. Owner feedback is calibration, not performance evidence. Cycle #5 scheduling is owner-reported, with publication evidence still unknown; Cycle #6 remains unstarted. Evidence: system-audits/topic-curiosity-v3/audit.md.
+
+
 ## 2026-10-01 — Longitude scheduling report, adaptable one-per-day target, Cycle #3 discovery
 
 **Owner authority:** Ahmet Nishefci’s explicit current instruction. Record his manual scheduling of the exact authorized Longitude Clock packages on all four intended platforms for 2026-10-02 at 20:00 Kosovo local time (Europe/Pristina supplied label) as OWNER-REPORTED SCHEDULING EVIDENCE only. Preserve locked media/copy/manifest bytes; no completed publication records or invented live evidence.

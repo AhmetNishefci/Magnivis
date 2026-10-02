@@ -24,7 +24,7 @@ const evidenceRules = [
 
 const jsonInput = (value: unknown) => `INPUT_JSON\n${JSON.stringify(value, null, 2)}`;
 
-export const topicEvaluationWorkflow: PromptWorkflow<TopicCandidate, TopicEvaluationDraft> = {
+export const topicEvaluationWorkflowV1: PromptWorkflow<TopicCandidate, TopicEvaluationDraft> = {
   id: 'workflow.topic-evaluation',
   version: 1,
   outputSchemaId: 'schema.topic-evaluation.v1',
@@ -36,6 +36,21 @@ export const topicEvaluationWorkflow: PromptWorkflow<TopicCandidate, TopicEvalua
     ...evidenceRules,
   ],
   buildUserPrompt: (candidate) => jsonInput(candidate),
+};
+
+export const topicEvaluationWorkflow: typeof topicEvaluationWorkflowV1 = {
+  ...topicEvaluationWorkflowV1,
+  version: 2,
+  systemInstructions: [
+    ...topicEvaluationWorkflowV1.systemInstructions.map(rule => rule.replace('until a human retrieves it', 'until actual evidence is retrieved and inspected under V3')),
+    'Magnivis builds trust that each appearance is worth watching: an honest compelling premise leads to rigorous understanding.',
+    'In curiosityGap rationale ask why a cold viewer with zero domain interest would want the answer. Distinguish premise-led curiosity from interest created only after explaining importance; generally prefer stronger legitimate premise-led opportunities, without banning subtle or abstract subjects.',
+    'In narrativePotential consider the story on its own terms: mechanisms, documented events, decisions, discovery, consequences and other defensible forms remain eligible.',
+    'Reject misleading viral framing, unsupported superlatives and fake mysteries. A truthful underlying story may remain compelling after reframing; source leads still require inspection.',
+    'Shareability is an optional qualitative signal, never a requirement or numerical virality prediction. A merely acceptable fixed pool need not produce a selection.',
+    'Domains and owner calibration examples are not a whitelist, preference or candidate bank. Fresh open-world discovery remains necessary; retained leads are reconsiderable, never mandatory queue items.',
+    'Only provenance-bearing native metrics may inform cautious story, hook or execution hypotheses with definitions and observation windows preserved; scheduling and qualitative feedback are not analytics. Do not infer a preferred domain from performance.',
+  ],
 };
 
 export const researchWorkspaceWorkflow: PromptWorkflow<{
@@ -135,9 +150,10 @@ const workflows = [
 ] as const;
 
 export const contentIntelligencePromptRegistry = Object.freeze({
-  get: (id: string) => {
+  get: (id: string, version?: number) => {
+    if (id === topicEvaluationWorkflowV1.id && version === 1) return topicEvaluationWorkflowV1;
     const workflow = workflows.find((candidate) => candidate.id === id);
-    if (!workflow) throw new Error(`Unknown content-intelligence workflow: ${id}`);
+    if (!workflow || (version !== undefined && workflow.version !== version)) throw new Error(`Unknown content-intelligence workflow: ${id}`);
     return workflow;
   },
   list: () => [...workflows],
