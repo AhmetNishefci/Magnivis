@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "status": "observations-only; no implementation changes authorized",
+  "findings": [
+    {
+      "id": "F01",
+      "system": "validation-operability",
+      "observation": "Fixed V2 scope rejects unrelated authorized audit",
+      "evidenceStrength": "reproduced",
+      "evidence": "scripts/artifact-v2-integrity.ts:41",
+      "consequence": "Five failures caused by audit path; validator left unchanged.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F02",
+      "system": "publication-binding",
+      "observation": "Generic registry accepts incorrect delivery manifest digest",
+      "evidenceStrength": "reproduced",
+      "evidence": "src/operations/registry.ts",
+      "consequence": "Cloned Phantom record accepts zero digest; explicit helper/current content validators differ.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F03",
+      "system": "upload-resolution",
+      "observation": "Resolver is byte lookup, not handoff approval",
+      "evidenceStrength": "reproduced",
+      "evidence": "src/delivery/media-bindings.ts",
+      "consequence": "Cloned legacy video path invented.mp4 still resolves real Chocolate master; no readiness/authorization/cover resolution check.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F04",
+      "system": "derivative-qa",
+      "observation": "General derivative bounds evidence uses source-master hash",
+      "evidenceStrength": "code-inspected",
+      "evidence": "scripts/delivery-packages.ts:331",
+      "consequence": "Changed presentation may need selected-media proof beyond generic lineage; encoding-only test insufficient for captions/crop.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F05",
+      "system": "provenance",
+      "observation": "Source records exist but are not universally content/commit-bound",
+      "evidenceStrength": "code-inspected",
+      "evidence": "src/artifacts/media.ts",
+      "consequence": "Declared MIME/sourceCommit/records/parents cannot prove rights or generation execution; full catalog scan verifies payloads separately.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F06",
+      "system": "integration",
+      "observation": "V3 prospective tests mostly synthetic; no current registered native V3 production variants",
+      "evidenceStrength": "code-inspected",
+      "evidence": "tests/reference-delivery.test.ts",
+      "consequence": "Stub inspection and legacy specs cover plumbing; real modern changed-media integration unexercised.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F07",
+      "system": "platform-qa",
+      "observation": "Recent releases waive current prepublication device checks",
+      "evidenceStrength": "record-verified",
+      "evidence": "content-intelligence/reviews/chocolate-crystal-choice-publication-v1/owner-decision.json",
+      "consequence": "Zero device passes distinct from local checks/readiness. Longitude and Phantom also accept risks.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F08",
+      "system": "documentation",
+      "observation": "README stale current aggregate",
+      "evidenceStrength": "code-and-doc",
+      "evidence": "README.md",
+      "consequence": "One generalized publication/110 required bytes vs five records/731 native required; recovery subset remains correct.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F09",
+      "system": "documentation",
+      "observation": "AGENTS Phantom pending gate stale",
+      "evidenceStrength": "code-and-doc",
+      "evidence": "AGENTS.md",
+      "consequence": "Phantom owner-reported published/closed in main/current ops, with geometry gaps preserved.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F10",
+      "system": "documentation",
+      "observation": "Stacked historical next gates obscure current status",
+      "evidenceStrength": "code-and-doc",
+      "evidence": "docs/PROJECT-STATE.md",
+      "consequence": "Current scheduling/V2 differs from preserved release/manual-scheduling next gate paragraphs.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F11",
+      "system": "documentation",
+      "observation": "Implemented summaries lag current directions/producers",
+      "evidenceStrength": "code-and-doc",
+      "evidence": "docs/ARCHITECTURE.md",
+      "consequence": "Wood-Frog-focused implemented enumeration and future-direction prose coexist with Longitude/Chocolate execution.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F12",
+      "system": "capability",
+      "observation": "Adaptive runtime/encoding policy exceeds conservative generic delivery profile",
+      "evidenceStrength": "code-inspected",
+      "evidence": "src/platform-variants/platform-profiles.ts",
+      "consequence": "3\u201360s fixed dimensions/FPS/codecs and safe-area allowlist remain; this is internal target, not external platform limit.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F13",
+      "system": "caption-render",
+      "observation": "Declarative style does not universally drive renderer",
+      "evidenceStrength": "code-inspected",
+      "evidence": "src/compositions/Chocolate.tsx",
+      "consequence": "Hardcoded appearance and line join differs from plan-driven Longitude; actual approved outputs frozen.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F14",
+      "system": "creative-medium",
+      "observation": "Chocolate 3D description implemented with SVG perspective",
+      "evidenceStrength": "code-inspected",
+      "evidence": "src/components/ChocolateMaterial.tsx",
+      "consequence": "No physical 3D renderer established; illustrative relief may satisfy intent, human aesthetic judgment unknown.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F15",
+      "system": "analytics",
+      "observation": "No production MetricSnapshots; three early prose samples only",
+      "evidenceStrength": "record-verified",
+      "evidence": "src/operations/registry.ts",
+      "consequence": "No automated learning; do not infer performance from publication/presentation acceptance.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F16",
+      "system": "storage",
+      "observation": "426582475 redundant tracked media checkout bytes",
+      "evidenceStrength": "reproduced",
+      "evidence": "artifact-storage-analysis.json",
+      "consequence": "442 paths/366 payloads; historical packages fixed, not Git unique-blob savings.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F17",
+      "system": "autonomy",
+      "observation": "Topic selection is scoped owner stop, not generic research schema requirement",
+      "evidenceStrength": "code-inspected",
+      "evidence": "src/content-intelligence/workflow.ts",
+      "consequence": "No implemented chooser/controller; current owner authorization mandatory operationally.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F18",
+      "system": "hash-semantics",
+      "observation": "Publication helper JSON hash differs from historical manifest file hash",
+      "evidenceStrength": "code-inspected",
+      "evidence": "src/delivery/media-bindings.ts",
+      "consequence": "sha256Json vs manifestFileSha256; both valid if explicit, not interchangeable.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F19",
+      "system": "tooling",
+      "observation": "Media CLI usage advertises absent package script",
+      "evidenceStrength": "code-inspected",
+      "evidence": "scripts/media-artifacts.ts",
+      "consequence": "artifacts:media missing; docs use exec tsx correctly.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F20",
+      "system": "git",
+      "observation": "Unmerged recent cycles and V2, main through Phantom",
+      "evidenceStrength": "git-verified",
+      "evidence": "decision-and-cycle-inventory.json",
+      "consequence": "Starting main cdebc2d; 19 later main-chain commits through V2.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F21",
+      "system": "validation",
+      "observation": "Default runtime outside declared engine; tsx CLI socket blocked",
+      "evidenceStrength": "reproduced",
+      "evidence": "validation.json",
+      "consequence": "Default Node24 vs supported >=20.19<23; direct node --import tsx Node22 durability passes.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F22",
+      "system": "documentation",
+      "observation": "CI top still says Cycle3 selection pending",
+      "evidenceStrength": "code-and-doc",
+      "evidence": "docs/CONTENT-INTELLIGENCE.md:3",
+      "consequence": "Later records show exact selection/approval/production/scheduling. Historical null discovery remains valid snapshot.",
+      "recommendationImplemented": false
+    },
+    {
+      "id": "F23",
+      "system": "render-routing",
+      "observation": "Generic render routes historical targets while QA/delivery route newer targets; generic overwrite not universal master guard",
+      "evidenceStrength": "code-inspected",
+      "evidence": "scripts/render.ts, scripts/production-video-targets.ts, scripts/delivery-packages.ts",
+      "consequence": "New target requires dedicated rendering; missing-media generic suggestion may be wrong; locked-byte protection depends on policy/specific guards",
+      "recommendationImplemented": false
+    }
+  ],
+  "unknowns": "Actual current UI geometry for all device/app surfaces; exact native caption/top/right/bottom exclusion rectangles; Instagram grid/Facebook Page/feed/thumbnail selector crop; disclosure placement and account controls; platform processing/color/audio transcodes; current account settings; external scheduled/live state independently verified; Longitude actual publication/URLs/IDs/settings; Chocolate date/time and actual publication; Wood Frog original approved bytes and historical upload identity; TikTok Phantom public permalink; exact owner review instant where only entry time exists; complete owner prompt/reflog/session count; subjective full voice/mix quality; current mature retention/engagement/performance; provider usage/cost for session work; remote packed object size; 100/1,000-video measured execution capacity; long-form implementation ergonomics; universal uniqueness/comprehension guarantees. Conversation information missing repository evidence remains unknown. Scheduling is not publication even after its expected calendar time.",
+  "scalingTable": [
+    [
+      "Checkout/Git binaries",
+      "Moderate, measured ~0.85GB checkout corpus now",
+      "High growth concern",
+      "High",
+      "Git exact media/QA retention; long-form/larger renders could hit per-file limits earlier"
+    ],
+    [
+      "Canonical catalogue/native registries",
+      "Low current lookup volume; dual model moderate complexity",
+      "Moderate",
+      "High scan/record concern",
+      "Fixed collections, synchronous hashes/full buffers, linear lookup; no scale benchmark"
+    ],
+    [
+      "Manifests/historical preservation",
+      "Moderate cognitive weight",
+      "High",
+      "High",
+      "Exact append-only bindings/doc baselines; historical contracts persist"
+    ],
+    [
+      "Tests",
+      "Low runtime (~3\u20135s Vitest), moderate coupling",
+      "Moderate/high",
+      "High potential accumulation",
+      "43 suites, content-specific transitive validators; actual future runtime unknown"
+    ],
+    [
+      "QA evidence",
+      "Moderate storage/inspection",
+      "High",
+      "High",
+      "Dozens of decoded/browser captures + surfaces/captions per story"
+    ],
+    [
+      "Owner reviews/platform work",
+      "Moderate current deliberate workload",
+      "High throughput concern",
+      "High",
+      "Multiple actual decisions plus up to nine surfaces/four uploads, no automatic device proof"
+    ],
+    [
+      "Discovery/research history",
+      "Low/moderate",
+      "Moderate",
+      "High context/query concern",
+      "Finite pool JSON plus per-story evidence banks; no query service/demand automation"
+    ],
+    [
+      "Documentation/agent context",
+      "Moderate/high already",
+      "High",
+      "High",
+      "Stacked milestones/duplicated policy/hash-frozen docs; read inventory sizes"
+    ],
+    [
+      "Publications/metrics",
+      "Low current five/zero",
+      "Moderate manual entry",
+      "High manual evidence burden",
+      "No importer, raw native definitions and unknown preservation"
+    ],
+    [
+      "Prompt orchestration/latency",
+      "Moderate owner dependence",
+      "High",
+      "High",
+      "Explicit next-stage owner prompts, no controller; exact prompt count unknown"
+    ],
+    [
+      "Render/generation cost",
+      "Unknown total, story-dependent",
+      "Unknown",
+      "Unknown",
+      "Original diagrams vs future media/long-form radically different; no aggregate cost ledger"
+    ],
+    [
+      "Branch/merge",
+      "Moderate unmerged recent chain",
+      "High if current pattern persists",
+      "High if current pattern persists",
+      "Five/six named feature branches per recent cycle; no generic closure/branch policy automation"
+    ],
+    [
+      "Repository object growth",
+      "Moderate current local ~484 MiB object-store reporting",
+      "High prospective concern",
+      "High",
+      "Local all-ref history not remote packed measure; no remote object inventory"
+    ]
+  ],
+  "autonomy": "See owner-review section 6 for implemented/intended/manual/prompt-driven/apparent/impossible boundaries. No autonomous controller or external publisher implemented."
+}

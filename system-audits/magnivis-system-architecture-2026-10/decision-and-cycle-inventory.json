@@ -1,0 +1,2729 @@
+{
+  "decisions": [
+    {
+      "path": "content-intelligence/creative-directions/longitude-clock-time-to-position-approved-v2/owner-decision.json",
+      "sha256": "39d29068ebf8303c8e7d4b1431c7f85c8ff034677437cebf8dea49435ce8acfe",
+      "record": {
+        "approvedScriptSha256": "1db5aee0fc71aa5f4c5e7677352e81fa4066d173c2c20040ee7a5c0ae809fbdb",
+        "approvedSourceCommit": "4c4c967f968972108f53221f6921f721246cf0db",
+        "authority": "explicit-owner-message",
+        "comprehensionContractSha256": "7b826c257762851cdebdfbf489874ae5f8c1505bb87290f8ab14dd204fe85fc8",
+        "contentAsset": {
+          "id": "longitude-clock.asset.time-to-position",
+          "revision": 3,
+          "sha256": "27c59fae1d80055075d770b1459b69759adcba6a69ba583f73b515dc45aeeca8"
+        },
+        "creativeDirection": {
+          "id": "creative-direction.longitude-clock.time-to-position.v1",
+          "revision": 1,
+          "sha256": "aa2514db488c2926391cf940fd537f4b28640cf03a8f46066180f17a4b9c8bbb"
+        },
+        "creativeDirectionApproved": true,
+        "deliveryApprovalGranted": false,
+        "enteredAt": "2026-10-01T17:21:41.968Z",
+        "id": "owner-decision.longitude-clock.creative-production.v1",
+        "knowledgePackage": {
+          "id": "longitude-clock",
+          "revision": 3,
+          "sha256": "f8c8b69a078391e47858996290ec4d3568cb516e850f61de4dd87c30abce0715"
+        },
+        "owner": "Ahmet Nishefci",
+        "ownerInstruction": "I approve longitude-clock-time-to-position / direction-v1 from commit 4c4c967f968972108f53221f6921f721246cf0db: CRAFTED OBJECT THEATRE and its bound rationale, comprehension safeguards, visual thesis, medium strategy, caption philosophy, narration philosophy, sound philosophy, pacing philosophy, asset strategy, convergence analysis, historical safeguards and platform considerations. This approval authorizes PRODUCTION PLANNING AND IMPLEMENTATION toward an owner-review master candidate. It does NOT authorize final master approval, platform approval, delivery approval, upload, scheduling or publication.",
+        "ownerMasterApproval": false,
+        "ownerSuppliedReviewTimestamp": null,
+        "platformApprovalGranted": false,
+        "productionCandidateAuthorized": true,
+        "publicationApprovalGranted": false,
+        "revision": 1,
+        "schemaVersion": 1,
+        "timeBasis": "decision-entry",
+        "uploadAuthorized": false,
+        "visualPlanSha256": "33b047a1bd682bf1f249fef2fc03202f3068d66c107836108c022fd00f834e99",
+        "voiceAuditionAuthorized": true
+      }
+    },
+    {
+      "path": "content-intelligence/operations/chocolate-crystal-choice-scheduling-v1/owner-report.json",
+      "sha256": "806b265a3af4682317d2b426718e3120b3e7efd2e889ae2c2fc33c571ad1e141",
+      "record": {
+        "schemaVersion": 1,
+        "id": "owner-report.chocolate-crystal-choice.scheduling.v1",
+        "evidenceClass": "OWNER-REPORTED SCHEDULING EVIDENCE",
+        "owner": "Ahmet Nishefci",
+        "authority": "explicit-owner-message",
+        "recordedAt": "2026-10-02T10:47:45.590406+00:00",
+        "recordedAtMeaning": "Assistant record-entry time, not scheduling action time.",
+        "ownerSchedulingActionTime": null,
+        "scheduledPublication": null,
+        "scheduledPublicationUnknownReason": "No exact Chocolate scheduling date/time supplied or canonically established; provisional 20:00 window is not an actual schedule.",
+        "releaseBinding": {
+          "path": "content-intelligence/reviews/chocolate-crystal-choice-publication-v1/final-bindings.json",
+          "sha256": "751f7d7a8379e7f754758694ee1ee8cdf183c0d799cda0696f7529172ac6e74f"
+        },
+        "master": {
+          "path": "artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+          "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+          "artifactId": "chocolate-crystal-choice.locked-master.v1"
+        },
+        "platforms": [
+          {
+            "platform": "youtube",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.chocolate-crystal-choice.asset.same-recipe-different-structure.variant.youtube-shorts.r2",
+            "manifestFileSha256": "fba1b6b2ee736261f5df0b05d40b435b7f7375de2b21dca38c25f205d7ae35ce",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          },
+          {
+            "platform": "tiktok",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.chocolate-crystal-choice.asset.same-recipe-different-structure.variant.tiktok-feed.r2",
+            "manifestFileSha256": "54956a91e6f2332b84d65cab987df7b5556b27dc32976ba93fb49d48d26b2926",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          },
+          {
+            "platform": "instagram",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.chocolate-crystal-choice.asset.same-recipe-different-structure.variant.instagram-reels.r2",
+            "manifestFileSha256": "c1a33cfdd99f004fc17300598647a08b73c87fec807e2177dcf5168dcb26dd1a",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          },
+          {
+            "platform": "facebook",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.chocolate-crystal-choice.asset.same-recipe-different-structure.variant.facebook-reels.r2",
+            "manifestFileSha256": "eecd5e2b7f37ff2e87e7eec1129b874a7346091da4f81ca1a0185c1249a5abac",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          }
+        ],
+        "publicationOccurred": false,
+        "completedPublicationRecordsCreated": false,
+        "assistantExternalAction": false
+      }
+    },
+    {
+      "path": "content-intelligence/operations/longitude-clock-scheduling-v1/owner-report.json",
+      "sha256": "40578ddaba91d3c605a1b1e26ec6b43b6ae9c1dd7af61f7d3985119f14783692",
+      "record": {
+        "schemaVersion": 1,
+        "id": "owner-report.longitude-clock.scheduling.v1",
+        "evidenceClass": "OWNER-REPORTED SCHEDULING EVIDENCE",
+        "owner": "Ahmet Nishefci",
+        "authority": "explicit-owner-message",
+        "recordedAt": "2026-10-01T21:39:42.417422+00:00",
+        "recordedAtMeaning": "Assistant record-entry time, not owner scheduling-action timestamp.",
+        "ownerSchedulingActionTime": null,
+        "scheduledPublication": {
+          "date": "2026-10-02",
+          "localTime": "20:00",
+          "locality": "Kosovo",
+          "timezoneAsSupplied": "Europe/Pristina"
+        },
+        "platforms": [
+          {
+            "platform": "youtube",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.youtube-shorts.r2",
+            "manifestFileSha256": "b09ef360f5fc22b7a09ec58d6ddd0f3cd73f440c5531c7eb85274f8b39951538",
+            "scheduledTimeBasis": "Shared owner-supplied schedule; no independent platform timestamp.",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          },
+          {
+            "platform": "tiktok",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.tiktok-feed.r2",
+            "manifestFileSha256": "6eb6f1acf609a1af73fc300975077217ebcf3c9331d2a7b1f8781d190c1f0910",
+            "scheduledTimeBasis": "Shared owner-supplied schedule; no independent platform timestamp.",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          },
+          {
+            "platform": "instagram",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.instagram-reels.r2",
+            "manifestFileSha256": "6f8b3c188a65a73023ada335c511c996e2ac4352f495fefc17c40a0f6834cfc1",
+            "scheduledTimeBasis": "Shared owner-supplied schedule; no independent platform timestamp.",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          },
+          {
+            "platform": "facebook",
+            "ownerReportedState": "manually-scheduled",
+            "deliveryId": "delivery.longitude-clock.asset.time-to-position.variant.facebook-reels.r2",
+            "manifestFileSha256": "149e21c462df1a95f7de47de73603f0bec9b5c70cba589a506b288bec8922218",
+            "scheduledTimeBasis": "Shared owner-supplied schedule; no independent platform timestamp.",
+            "platformContentId": null,
+            "publicUrl": null,
+            "publishedAt": null,
+            "presentationResults": null,
+            "deviceEvidence": null,
+            "screenshots": null,
+            "analytics": null
+          }
+        ],
+        "releaseBinding": {
+          "path": "content-intelligence/reviews/longitude-clock-publication-v1/final-bindings.json",
+          "sha256": "0cfc2f15b9d52b24e72e4df9b5e3e725075e8d7c8e3bfae0545b665dfe26816c"
+        },
+        "master": {
+          "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+          "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+        },
+        "publicationOccurred": false,
+        "completedPublicationRecordsCreated": false,
+        "assistantExternalAction": false,
+        "nextEvidence": "Ahmet supplies actual live publication identity/time/presentation evidence after release; scheduling is not proof of release."
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-approved-v3/owner-decision.json",
+      "sha256": "61319a7fef4b0c1047a930652a2e7a6ebfdb0df9fc3b66089aec97f492e18801",
+      "record": {
+        "approvedHookId": "chocolate-crystal-choice.hook.recipe",
+        "approvedSourceCommit": "2312d200a73b841efb60a86c56d664fe8d6602ff",
+        "authority": "explicit-owner-message",
+        "claimDecisions": [
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.same-recipe",
+            "statementSha256": "c2b354b4cbd60a92332957377a4ea418f0fa8e568d6c181d7301e5be3c6e6b02"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.cocoa-butter",
+            "statementSha256": "9b662217580c242837b8109a08d4440f7ccb3dabf04cc39de3ebc1276bf82644"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.melting-network",
+            "statementSha256": "50eca6e8797a5d6434b040446e28963bf53ee13f23ebada8d9364c03180fb70a"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.multiple-arrangements",
+            "statementSha256": "fe9a39104d707a7367196c32e453c096835c88ca0b710b0742023b5b4aaa7e8c"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.network",
+            "statementSha256": "c7f34318d9ded96ea4e65df943138eecfb7da2b7cbf5ecdb88a4db491cabb994"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.soft-recool",
+            "statementSha256": "d1bb9f5409b9087da1dca4702e1b8ada74af34829154979f6d06b82de01c385d"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.tempering",
+            "statementSha256": "72964522c7e931208186c44d785861e690371efb464c4437cea28111ea3eb516"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.seed",
+            "statementSha256": "9740cb0bd06e509634aab67f72de41c6d75e69dd38c8b7dae26498ede1b4b775"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.snap-gloss",
+            "statementSha256": "75a7b967f83224850cb068b413acf644ed9180193b4140bc7a8738872ad75030"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.form-v",
+            "statementSha256": "354b7c6390c570efb7aa70dee71210149afb0e36fbba2f54616ff4bd3ea1cc31"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.form-vi",
+            "statementSha256": "af76d6094982bef09f86169fc1520ebbed876adc3f7ea9411c1a34942f1eab59"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.six-convention",
+            "statementSha256": "a523c41ddd3cc9c2fb6b4db6972fcbc10656f4e8d4f798fbf6666883a7741f99"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.names",
+            "statementSha256": "96b5c96425cd5b0526cc8d339ab23124b82482c0592356ebd123ddc4a95cec08"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.nucleation",
+            "statementSha256": "bc786322a5bbd12f90b90612d508ab37fb585c3cfbf53151737705bb1dbb6d74"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.snap-physical",
+            "statementSha256": "d49bca2b34dddb593f1b925bf19969698d47b89c89e38a6ebc647a52b0e3e7a2"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.gloss-physical",
+            "statementSha256": "360caa35a701285d01b989374d5529f49f303f4339f95cda39867c352c86a0c2"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.melting-behavior",
+            "statementSha256": "e0b2fe333a4c57593de02e91995d8b326f4842281af0176fd9951f7fc7ece647"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.thermal-history",
+            "statementSha256": "2e6ca6e8672a9c3d0ddbf044f9b749bbd0122152ba85dd30042a6874b539730e"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.mold-release",
+            "statementSha256": "4e3bfb54a0e6bb483e8035d8d236aa9fe5af002bdc04f95edbaaee94241dd464"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.fat-bloom",
+            "statementSha256": "b5c4a0a3388b15681c16f178517910a93bd225951bdf8939814ed6ec228a8f69"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.sugar-bloom",
+            "statementSha256": "177a30945fcbe8fa1c21877224505d0f6570d58f98f6e1d71eb0c89b5a06e301"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.mixed-bloom",
+            "statementSha256": "804facf8f03267c3b9e78ad0626efa64d79727440175389b7ba4ca735d1438d4"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.seizure",
+            "statementSha256": "465683925e0e7b295d7d4cee4967fc97230a113592976aad3b626dee60c524c3"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.storage",
+            "statementSha256": "bcca6f5dbdf0491c9d766e93bc2dc43fb6f394372e3e27120c90baa8eb5cb552"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.composition",
+            "statementSha256": "ec998c2fbfffa2c57047bef470a04cca768c6d2ddc400c24ddcdadc165a4cc94"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.commercial",
+            "statementSha256": "a69f93a11700a31c21595e23e63a70d2a8cfe1b52f0afd0b72df3679f7c8d57f"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.dark-process",
+            "statementSha256": "7ae7381db50817b0d62fd747dffe676478ff39c5a4c2a3a6c68446be4c737c79"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.v-range",
+            "statementSha256": "4e34bdae340259daf8e61beb40e95d9ebbdedef36253a1b8dc8a899c91aaeb31"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.vi-range",
+            "statementSha256": "98abc11ab6745713c7c50311b29fea9fce3393d9ef34437757ec098bfa2f99a7"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.v-insufficient",
+            "statementSha256": "570f7e7855a14bdd145c50b365aa0e9effe8e21479cf0cf404f71c8f3e2aaaac"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.grainy-always",
+            "statementSha256": "e5b9d5cae5b3657ea146d6df9002a131d6c9bff56f799aa132342978ed2cdc9d"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.ingredients-changed",
+            "statementSha256": "5df5629ba0005cd30710c16af72482e40e82c4e32e3844d4289f4581a6fb5131"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.recipe-change",
+            "statementSha256": "a866860bd5811d4939947ced635ba5d26ec9e15012697620d880d63815937062"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.all-bad",
+            "statementSha256": "32074f92a8215ab5b5179c915651a4a603bc23420ecbace3f7936182bbcc79e8"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.only-v",
+            "statementSha256": "0ae0f3581954646342e05610195b61c119e775f3673ae3e6339d41363dd21e22"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.white-mold",
+            "statementSha256": "454b7d17815b81de822b5a61a5e98d642e9289dcc9b25921b1d1b0ff7957d1f1"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.bloom-same",
+            "statementSha256": "618bc10b01f8e86b6747ab62f7c614ce55f58d4c918151933c34a97419a7a959"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.slow-cooling",
+            "statementSha256": "29a4bed2c5103ea016961024bfd2c0505304dfbfc1cc6289e78514f7644aca30"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.literal-memory",
+            "statementSha256": "bb4c07e16dd0f2ef7cca55fac5a1b6f11a554ebf08e86afc8f2d584c37d49a16"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.same-structure",
+            "statementSha256": "103eabef7ec1f452a0b0e94f47bfeb4da413aabba8a669feabe2fe9d873c95fe"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.scorch-details",
+            "statementSha256": "da97f8e81b244ef2612a2def04b728f9324c5f46b3039d65039bc81d497433c6"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.demo-result",
+            "statementSha256": "556dcbd70d162f31eb60ab96c1c516ef57fbbaea2daa62a23ea88f4874361937"
+          }
+        ],
+        "claimReview": {
+          "id": "claim-review.chocolate-crystal-choice.v2",
+          "revision": 2,
+          "sha256": "623f2c62e1ed7ed902b12eafa052cdf9f4fed02f13c9608f215f3f3b4bb00bea"
+        },
+        "comprehensionContractSha256": "5c77532935a93c73642a8650b96a7c2cce1eb50f41b73e649eedfa2cc3f78215",
+        "contentAsset": {
+          "id": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+          "revision": 2,
+          "sha256": "638d4d7672fb090f9b7e455cc750fbc95c0c55142f1ecb3f1596ed2658f168d4"
+        },
+        "creativeDirectionApproved": false,
+        "creativeDirectionAuthorized": true,
+        "editorialApproved": true,
+        "enteredAt": "2026-10-01T22:46:54.561Z",
+        "finalExactNarration": "The recipe can stay the same. The chocolate doesn\u2019t have to.\n\nChocolate contains cocoa butter, a fat that forms crystals.\n\nMelt it enough, and that crystal structure breaks down.\n\nAs it cools, crystals form again. But their arrangements, and the network they build, can differ.\n\nThe result can be softer chocolate with less snap.\n\nTempering guides that rebuilding with controlled temperatures and mixing.\n\nThe goal is a structure that helps chocolate snap cleanly and look glossy.\n\nSame recipe. Different structure.",
+        "id": "owner-decision.chocolate-crystal-choice.creative-stage.v1",
+        "knowledgePackage": {
+          "id": "chocolate-crystal-choice",
+          "revision": 2,
+          "sha256": "476a8c0ed792e5fed038e859f9dd46f5779bfd1c2630c06862bb6526c9dfef5d"
+        },
+        "ownerInstruction": "FINAL EDITORIAL APPROVAL + CREATIVE DIRECTION AUTHORIZATION. Approve exact chocolate finalization-v2 framing, recipe hook, 80-word narration, eight verified claims and evidence, qualifications/exclusions, eight beats, conceptual VisualPlan/comprehension contract, reserves and risks. Create CreativeDirection proposal only; do not begin production. Record actual decision-entry time, no supplied review timestamp.",
+        "ownerSuppliedReviewTimestamp": null,
+        "platformApprovalGranted": false,
+        "productionAuthorized": false,
+        "publicationApprovalGranted": false,
+        "reviewedArtifacts": [
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/artifact-manifest.json",
+            "sha256": "8881f568780297f6d4acfea924f4f80490118f51fe63462eefb17536efc8416d"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/claim-ledger.json",
+            "sha256": "9a4b5912c47c565d8037440eef3b0913552c6db54b0222efc1084e7598478d04"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/claim-review.json",
+            "sha256": "4b7213d56e1da6c351fe9b924a520bdaeb2b4654929e8d744dc20f103994419e"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/content-asset.review.json",
+            "sha256": "9170cc8457f5f2aa4d6d977848fc3148c667d3d681682d5f9dfcff54546b38a9"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/editorial-proposal.json",
+            "sha256": "ffe0c846fa18996610d5a504d2fd2bdef82064d79d5010f4c3980cb885113e49"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/hook-proposals.draft.json",
+            "sha256": "5908b7b97a785ae608d5267f51fb1ff7d77cbd0efeef42c01bf843358f77e3a0"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/hook-review.json",
+            "sha256": "8c181dd6ff2986778b82fdb7d3d511d93069822a7c1581cdf64cb13b7a8bf680"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/knowledge-package.review.json",
+            "sha256": "e3f6c857d68fb9b30e72f28e0bb0fca5a264151ee4593e7d0390296fb50e06ff"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/misconception-audit.json",
+            "sha256": "371ec17b3270d122a795c58c6ba98553a6254f742b4f5cf114ab57a5f1f330ed"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/owner-review.md",
+            "sha256": "033363b20d0cbb1ca90c4d402f52d1588757af7fb8f19d82a001973c363d42d8"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/research-workspace.draft.json",
+            "sha256": "fa463bda439c01834d1285c644bde01bcd25fb944a98ca0cd317d25c878de54b"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/selection.json",
+            "sha256": "a2f9300cea82b65176c28d2a80a5cce15f69f36b9b2d9b8cc53e8d43ed21dd81"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/source-access-accounting.json",
+            "sha256": "22945ca3e94e79ee08d4bfe9ce1ff9b763764c6e689a543849e368b4c83b951b"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/source-inspections.json",
+            "sha256": "9ee95692177ad543a2a89c239201c12f9d4153cae78a4ef5c7009f9c198fbb44"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/topic-candidate.researching.json",
+            "sha256": "26f5c4596484717a1dec2efbf075c00de3ec9da9fe07c92a7601b83a3f036b78"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/validation.json",
+            "sha256": "bc12a8e4b0855ea114775cc0375fed447682df2089b9935678476c0426c52634"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/artifact-manifest.json",
+            "sha256": "744e5c24acd2e4a2ce26dd1ce7b1b44e913ad9085a4bfcb0c6493e1de3dba05d"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/claim-ledger.json",
+            "sha256": "8f44f836e37e57861ce44e09b3e44fa4785ad6f97f886e5bdbc98ed3857de1fe"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/claim-review.json",
+            "sha256": "89112b9a28ccc88a9debb7a84f7cb683aff123c0b8ebd2fdba077663ca8089c3"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/content-asset.review.json",
+            "sha256": "bf38d59c912586bc7bdc5d83fc983580c99240bf1c1c41fa1fa61d5b12a2dc27"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/editorial-finalization.json",
+            "sha256": "cb5ca65ceea1732179f42608fcfb6b0495f7dd4358afe49dd3a499fe6c14cb8d"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/knowledge-package.review.json",
+            "sha256": "8f7e13d16e5159427f2a1050a61e3ae2f28b7b8383775c18d46020ad21354c3d"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/language-audit.json",
+            "sha256": "e5f13039901a576c7841771deca88c1a5b2686cd05b5fedd1f2b2b87b153a57d"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/owner-decision.json",
+            "sha256": "4761da0d32155a044fbae1caf636b1067a2b9ff4a999af1ec6096542552242b7"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/owner-review.md",
+            "sha256": "16df3d3f792ff9e938dcc6fa591e055a760e9453ef18b070ecd55d87e08e93c4"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/reserve-research.json",
+            "sha256": "3701ab86aefd98739bec9eb513a442471ba99254ee0de4ee48d613a52f10d3f7"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/validation.json",
+            "sha256": "248799e3717d6bfe546d3aad1434c40bc428991c50296ebb44aebb968b4e8052"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/verified-claim-bindings.json",
+            "sha256": "0a8c64ff13fca3fa21a4899b3db500b3f04797972acaeec6318c7e4c58ec1805"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/visual-comprehension-contract.json",
+            "sha256": "01189976c11ef31de231c6cc4a022d7f2a4243830c46e5a0552caa99a1aec6c0"
+          }
+        ],
+        "reviewer": "Ahmet Nishefci",
+        "revision": 1,
+        "schemaVersion": 1,
+        "scriptSha256": "9df1b0d0eb1889181372a6aed8bbfd97c8ad5bb6c05a657f0317300db7e02272",
+        "timeBasis": "decision-entry",
+        "visualPlanSha256": "3c471f619f1792c5fc9d5ba45f775158beda033dcf5166525fd6d5b0af4d27fd"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2/owner-decision.json",
+      "sha256": "4761da0d32155a044fbae1caf636b1067a2b9ff4a999af1ec6096542552242b7",
+      "record": {
+        "authority": "explicit-owner-message",
+        "claimDecisions": [
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.same-recipe",
+            "statementSha256": "c2b354b4cbd60a92332957377a4ea418f0fa8e568d6c181d7301e5be3c6e6b02"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.cocoa-butter",
+            "statementSha256": "9b662217580c242837b8109a08d4440f7ccb3dabf04cc39de3ebc1276bf82644"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.melting-network",
+            "statementSha256": "50eca6e8797a5d6434b040446e28963bf53ee13f23ebada8d9364c03180fb70a"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.multiple-arrangements",
+            "statementSha256": "fe9a39104d707a7367196c32e453c096835c88ca0b710b0742023b5b4aaa7e8c"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.network",
+            "statementSha256": "c7f34318d9ded96ea4e65df943138eecfb7da2b7cbf5ecdb88a4db491cabb994"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.soft-recool",
+            "statementSha256": "d1bb9f5409b9087da1dca4702e1b8ada74af34829154979f6d06b82de01c385d"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.tempering",
+            "statementSha256": "72964522c7e931208186c44d785861e690371efb464c4437cea28111ea3eb516"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.seed",
+            "statementSha256": "9740cb0bd06e509634aab67f72de41c6d75e69dd38c8b7dae26498ede1b4b775"
+          },
+          {
+            "action": "verify",
+            "claimId": "chocolate-crystal-choice.claim.snap-gloss",
+            "statementSha256": "75a7b967f83224850cb068b413acf644ed9180193b4140bc7a8738872ad75030"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.form-v",
+            "statementSha256": "354b7c6390c570efb7aa70dee71210149afb0e36fbba2f54616ff4bd3ea1cc31"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.form-vi",
+            "statementSha256": "af76d6094982bef09f86169fc1520ebbed876adc3f7ea9411c1a34942f1eab59"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.six-convention",
+            "statementSha256": "a523c41ddd3cc9c2fb6b4db6972fcbc10656f4e8d4f798fbf6666883a7741f99"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.names",
+            "statementSha256": "96b5c96425cd5b0526cc8d339ab23124b82482c0592356ebd123ddc4a95cec08"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.nucleation",
+            "statementSha256": "bc786322a5bbd12f90b90612d508ab37fb585c3cfbf53151737705bb1dbb6d74"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.snap-physical",
+            "statementSha256": "d49bca2b34dddb593f1b925bf19969698d47b89c89e38a6ebc647a52b0e3e7a2"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.gloss-physical",
+            "statementSha256": "360caa35a701285d01b989374d5529f49f303f4339f95cda39867c352c86a0c2"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.melting-behavior",
+            "statementSha256": "e0b2fe333a4c57593de02e91995d8b326f4842281af0176fd9951f7fc7ece647"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.thermal-history",
+            "statementSha256": "2e6ca6e8672a9c3d0ddbf044f9b749bbd0122152ba85dd30042a6874b539730e"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.mold-release",
+            "statementSha256": "4e3bfb54a0e6bb483e8035d8d236aa9fe5af002bdc04f95edbaaee94241dd464"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.fat-bloom",
+            "statementSha256": "b5c4a0a3388b15681c16f178517910a93bd225951bdf8939814ed6ec228a8f69"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.sugar-bloom",
+            "statementSha256": "177a30945fcbe8fa1c21877224505d0f6570d58f98f6e1d71eb0c89b5a06e301"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.mixed-bloom",
+            "statementSha256": "804facf8f03267c3b9e78ad0626efa64d79727440175389b7ba4ca735d1438d4"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.seizure",
+            "statementSha256": "465683925e0e7b295d7d4cee4967fc97230a113592976aad3b626dee60c524c3"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.storage",
+            "statementSha256": "bcca6f5dbdf0491c9d766e93bc2dc43fb6f394372e3e27120c90baa8eb5cb552"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.composition",
+            "statementSha256": "ec998c2fbfffa2c57047bef470a04cca768c6d2ddc400c24ddcdadc165a4cc94"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.commercial",
+            "statementSha256": "a69f93a11700a31c21595e23e63a70d2a8cfe1b52f0afd0b72df3679f7c8d57f"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.dark-process",
+            "statementSha256": "7ae7381db50817b0d62fd747dffe676478ff39c5a4c2a3a6c68446be4c737c79"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.v-range",
+            "statementSha256": "4e34bdae340259daf8e61beb40e95d9ebbdedef36253a1b8dc8a899c91aaeb31"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.vi-range",
+            "statementSha256": "98abc11ab6745713c7c50311b29fea9fce3393d9ef34437757ec098bfa2f99a7"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.v-insufficient",
+            "statementSha256": "570f7e7855a14bdd145c50b365aa0e9effe8e21479cf0cf404f71c8f3e2aaaac"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.grainy-always",
+            "statementSha256": "e5b9d5cae5b3657ea146d6df9002a131d6c9bff56f799aa132342978ed2cdc9d"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.ingredients-changed",
+            "statementSha256": "5df5629ba0005cd30710c16af72482e40e82c4e32e3844d4289f4581a6fb5131"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.recipe-change",
+            "statementSha256": "a866860bd5811d4939947ced635ba5d26ec9e15012697620d880d63815937062"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.all-bad",
+            "statementSha256": "32074f92a8215ab5b5179c915651a4a603bc23420ecbace3f7936182bbcc79e8"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.only-v",
+            "statementSha256": "0ae0f3581954646342e05610195b61c119e775f3673ae3e6339d41363dd21e22"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.white-mold",
+            "statementSha256": "454b7d17815b81de822b5a61a5e98d642e9289dcc9b25921b1d1b0ff7957d1f1"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.bloom-same",
+            "statementSha256": "618bc10b01f8e86b6747ab62f7c614ce55f58d4c918151933c34a97419a7a959"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.slow-cooling",
+            "statementSha256": "29a4bed2c5103ea016961024bfd2c0505304dfbfc1cc6289e78514f7644aca30"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.literal-memory",
+            "statementSha256": "bb4c07e16dd0f2ef7cca55fac5a1b6f11a554ebf08e86afc8f2d584c37d49a16"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.same-structure",
+            "statementSha256": "103eabef7ec1f452a0b0e94f47bfeb4da413aabba8a669feabe2fe9d873c95fe"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.scorch-details",
+            "statementSha256": "da97f8e81b244ef2612a2def04b728f9324c5f46b3039d65039bc81d497433c6"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "chocolate-crystal-choice.claim.demo-result",
+            "statementSha256": "556dcbd70d162f31eb60ab96c1c516ef57fbbaea2daa62a23ea88f4874361937"
+          }
+        ],
+        "claimsVerified": true,
+        "creativeDirectionAuthorized": false,
+        "decisionEnteredAt": "2026-10-01T22:30:42.015Z",
+        "finalEditorialApproved": false,
+        "id": "owner-decision.chocolate-crystal-choice.finalization.v2",
+        "interpretation": "Statement-level verification is explicitly requested by task section 8. Removing seeding reduces nine prior narration claims to eight needed claims; seeding remains supported reserve. Approval of underlying direction and preferred wording does not grant final asset approval or CreativeDirection/production authority.",
+        "narrationApproved": false,
+        "owner": "Ahmet Nishefci",
+        "ownerInstruction": "Final editorial refinement and owner approval intent: preserve the preferred recipe hook; remove Existing crystals can also help seed it.; create verified narration claims/bindings, promote ONLY explicitly reviewed claims needed by the final asset; preserve research and stop at AHMET \u2014 CYCLE #3 FINAL EDITORIAL APPROVAL.",
+        "ownerSuppliedReviewTimestamp": null,
+        "preferredHookId": "chocolate-crystal-choice.hook.recipe",
+        "productionAuthorized": false,
+        "publicationAuthorized": false,
+        "researchArtifactHashes": [
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/artifact-manifest.json",
+            "sha256": "8881f568780297f6d4acfea924f4f80490118f51fe63462eefb17536efc8416d"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/claim-ledger.json",
+            "sha256": "9a4b5912c47c565d8037440eef3b0913552c6db54b0222efc1084e7598478d04"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/claim-review.json",
+            "sha256": "4b7213d56e1da6c351fe9b924a520bdaeb2b4654929e8d744dc20f103994419e"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/content-asset.review.json",
+            "sha256": "9170cc8457f5f2aa4d6d977848fc3148c667d3d681682d5f9dfcff54546b38a9"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/editorial-proposal.json",
+            "sha256": "ffe0c846fa18996610d5a504d2fd2bdef82064d79d5010f4c3980cb885113e49"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/hook-proposals.draft.json",
+            "sha256": "5908b7b97a785ae608d5267f51fb1ff7d77cbd0efeef42c01bf843358f77e3a0"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/hook-review.json",
+            "sha256": "8c181dd6ff2986778b82fdb7d3d511d93069822a7c1581cdf64cb13b7a8bf680"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/knowledge-package.review.json",
+            "sha256": "e3f6c857d68fb9b30e72f28e0bb0fca5a264151ee4593e7d0390296fb50e06ff"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/misconception-audit.json",
+            "sha256": "371ec17b3270d122a795c58c6ba98553a6254f742b4f5cf114ab57a5f1f330ed"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/owner-review.md",
+            "sha256": "033363b20d0cbb1ca90c4d402f52d1588757af7fb8f19d82a001973c363d42d8"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/research-workspace.draft.json",
+            "sha256": "fa463bda439c01834d1285c644bde01bcd25fb944a98ca0cd317d25c878de54b"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/selection.json",
+            "sha256": "a2f9300cea82b65176c28d2a80a5cce15f69f36b9b2d9b8cc53e8d43ed21dd81"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/source-access-accounting.json",
+            "sha256": "22945ca3e94e79ee08d4bfe9ce1ff9b763764c6e689a543849e368b4c83b951b"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/source-inspections.json",
+            "sha256": "9ee95692177ad543a2a89c239201c12f9d4153cae78a4ef5c7009f9c198fbb44"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/topic-candidate.researching.json",
+            "sha256": "26f5c4596484717a1dec2efbf075c00de3ec9da9fe07c92a7601b83a3f036b78"
+          },
+          {
+            "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/validation.json",
+            "sha256": "bc12a8e4b0855ea114775cc0375fed447682df2089b9935678476c0426c52634"
+          }
+        ],
+        "schemaVersion": 1,
+        "selectedFraming": "SAME RECIPE, DIFFERENT STRUCTURE \u2014 WHY MELTING IS NOT THE SAME AS TEMPERING.",
+        "sourceCommit": "7f1ed11272b64cef6fae28e4254e58f4694d2c67",
+        "timeBasis": "decision-entry",
+        "verifiedClaimIds": [
+          "chocolate-crystal-choice.claim.same-recipe",
+          "chocolate-crystal-choice.claim.cocoa-butter",
+          "chocolate-crystal-choice.claim.melting-network",
+          "chocolate-crystal-choice.claim.multiple-arrangements",
+          "chocolate-crystal-choice.claim.network",
+          "chocolate-crystal-choice.claim.soft-recool",
+          "chocolate-crystal-choice.claim.tempering",
+          "chocolate-crystal-choice.claim.snap-gloss"
+        ],
+        "visualPlanApproved": false
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/owner-decision.json",
+      "sha256": "dc56b57123474584a7a2561becd8d92dec7b039d41f97049e7064f768a35c8cc",
+      "record": {
+        "approvedScriptSha256": "9df1b0d0eb1889181372a6aed8bbfd97c8ad5bb6c05a657f0317300db7e02272",
+        "artifact": {
+          "bytes": 2923379,
+          "path": "artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+          "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7"
+        },
+        "authority": "explicit-owner-message",
+        "candidateArtifactId": "chocolate-crystal-choice.candidate-v1.1",
+        "candidateBindings": {
+          "path": "content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/reviewed-bindings.json",
+          "sha256": "68917c8bdec42390eed16c30e9b2725bd798f28403dd53c8b26af3b2eac40710"
+        },
+        "captionPlan": {
+          "id": "caption-plan.chocolate-crystal-choice.material-cutaway",
+          "revision": 1,
+          "sha256": "86832aa3d5c32a9e5a8dd72700fba9c52d9a8c4c1695d6ef4303345c7bc6aeb5"
+        },
+        "contentAsset": {
+          "id": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+          "revision": 3,
+          "sha256": "dc90cc07e342482ac4df23811700a9e4eb1ad14de72538264f3561c45cd24d56"
+        },
+        "editorialApproval": {
+          "id": "owner-decision.chocolate-crystal-choice.production-v1",
+          "revision": 1,
+          "sha256": "c99e0f0ce1cb61ec8c3856e2455ae908f2c44962181220a8fc20f9212f4823aa"
+        },
+        "enteredAt": "2026-10-02T09:20:39.724Z",
+        "id": "owner-decision.chocolate-crystal-choice.master-v1",
+        "knowledgePackage": {
+          "id": "chocolate-crystal-choice",
+          "revision": 3,
+          "sha256": "fca66f32b54c9232a0169f8cefdb089142edd8a7db5b13c8f514a21d23123974"
+        },
+        "masterArtifactId": "chocolate-crystal-choice.locked-master.v1",
+        "narrationBundleSha256": "8a54752b95ce4225c8a2f9fedf870dc5988b047396fdd374702cd04c9aad7aec",
+        "ownerInstruction": "Owner completed visual/audio review of exact Candidate V1 and approves it as final locked canonical master. Prepare four platform review deliveries only. Preserve exact bytes/editorial/direction/captions/audio; no upload, schedule, publication or Cycle 4.",
+        "ownerSuppliedReviewTimestamp": null,
+        "platformApprovalGranted": false,
+        "platformPresentationQaAuthorized": true,
+        "publicationApprovalGranted": false,
+        "reviewedCommit": "d317a4f5a4f7a8df57bc371855fb3a7e4b886aa5",
+        "reviewedProductionPlan": {
+          "id": "production-plan.chocolate-crystal-choice.material-cutaway",
+          "revision": 1,
+          "sha256": "c35df858db01ac542abf508550a9fa49ebd2d248026f212ad4f5cf51bc65f9c4"
+        },
+        "reviewer": "Ahmet Nishefci",
+        "revision": 1,
+        "schemaVersion": 1,
+        "timeBasis": "decision-entry"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-production-v1/owner-decision.json",
+      "sha256": "f3a5839e95888ca68415a4ac773e6101a2b2c7cb7ac9ba9f9f6b95a40b04068e",
+      "record": {
+        "approvedDirection": {
+          "id": "creative-direction.chocolate-crystal-choice.material-cutaway",
+          "revision": 1,
+          "sha256": "90ca3c9d67ba00e998d17f7163c0f68ae5d3fdf5c8609226e043cf91ace972b4"
+        },
+        "approvedScriptSha256": "9df1b0d0eb1889181372a6aed8bbfd97c8ad5bb6c05a657f0317300db7e02272",
+        "contentAsset": {
+          "id": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+          "revision": 3,
+          "sha256": "dc90cc07e342482ac4df23811700a9e4eb1ad14de72538264f3561c45cd24d56"
+        },
+        "decision": "approved-creative-direction-and-one-master-candidate",
+        "enteredAt": "2026-10-01T23:02:41.169Z",
+        "id": "owner-decision.chocolate-crystal-choice.production-v1",
+        "knowledgePackage": {
+          "id": "chocolate-crystal-choice",
+          "revision": 3,
+          "sha256": "fca66f32b54c9232a0169f8cefdb089142edd8a7db5b13c8f514a21d23123974"
+        },
+        "masterApprovalGranted": false,
+        "nextGate": "AHMET \u2014 CYCLE #3 OWNER MASTER VISUAL REVIEW",
+        "owner": "Ahmet Nishefci",
+        "ownerSuppliedReviewTimestamp": null,
+        "platformApprovalGranted": false,
+        "publicationApprovalGranted": false,
+        "reviewTimeBasis": "decision-entry",
+        "revision": 1,
+        "schemaVersion": 1,
+        "scope": [
+          "CreativeDirection revision 1 approval",
+          "Production planning",
+          "One owner-review master candidate"
+        ],
+        "sourceCommit": "cca828c3320a062764cf3185dd23bd05ce197404"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-publication-v1/owner-decision.json",
+      "sha256": "e5f073433529306723a2068fd37b83294966a4fc48cc8ce5e23b0049bf755367",
+      "record": {
+        "acceptedRisks": [
+          "Zero prepublication Chocolate real-device passes; no device/private preview required by owner.",
+          "Four historical/provisional local inset models clear critical semantic regions; local evidence only.",
+          "Native UI exclusions and caption-specific geometry remain incomplete.",
+          "YouTube desktop/web and new AI-label placement remain unmeasured.",
+          "Instagram profile/grid crop remains unmeasured; exact cover selected under risk acceptance.",
+          "Facebook Page/feed crop remains unmeasured.",
+          "Native cover selection, controls, transcode/color/audio and account-specific settings remain unobserved.",
+          "10px local phone-scale disclosure, peripheral artwork outside some conservative inset outlines and actual device obstruction/readability remain accepted uncertainties."
+        ],
+        "assistantUploadAuthorized": false,
+        "authority": "explicit-owner-message",
+        "copy": {
+          "path": "content-intelligence/reviews/chocolate-crystal-choice-platform-v1/platform-copy.json",
+          "sha256": "6cfa9d86c57be2201b1241e19d85d55f044782ede89f5eeb8337b301e7f458c9"
+        },
+        "coverDeviceApprovalGranted": false,
+        "decision": "PUBLICATION AUTHORIZED",
+        "enteredAt": "2026-10-02T10:11:10.796Z",
+        "execution": "owner-manual-only",
+        "id": "owner-decision.chocolate-crystal-choice.publication.v1",
+        "limitations": [
+          "Risk acceptance is release authority, not verified presentation or a universal pixel guarantee.",
+          "No cover device approval, screenshots, geometry, UI observations or live platform results are granted.",
+          "Actual release date/schedule is owner choice, unrecorded here. Scheduling evidence must remain distinct from completed publication.",
+          "Postpublication observations are the next actual surface evidence; material remediation requires an explicit owner decision, never automatic modification of this master.",
+          "Unknown URLs/IDs/times/settings/comment observations/analytics remain null.",
+          "af_heart, adaptive visual/caption/sound policy, story-led runtime, open-world discovery, quality-first unique-short cadence and provisional20:00 Kosovo window remain unchanged."
+        ],
+        "master": {
+          "path": "artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+          "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7"
+        },
+        "masterApproval": {
+          "path": "content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/owner-decision.json",
+          "sha256": "dc56b57123474584a7a2561becd8d92dec7b039d41f97049e7064f768a35c8cc"
+        },
+        "masterArtifactId": "chocolate-crystal-choice.locked-master.v1",
+        "metadata": {
+          "appVersion": null,
+          "device": null,
+          "measurements": null,
+          "os": null,
+          "screenshots": [],
+          "testedAt": null
+        },
+        "owner": "Ahmet Nishefci",
+        "ownerStatement": "I approve the exact Chocolate Crystal Choice four-platform delivery package and prepared Instagram cover, accept the documented presentation uncertainty and platform-specific risks, and authorize ME to manually upload/schedule/publish. Zero prepublication Chocolate real-device passes; no separate private/device preview required. Codex must not upload, schedule or publish, modify the locked master/cover, or begin Cycle 4.",
+        "ownerSuppliedReviewTimestamp": null,
+        "platforms": [
+          "youtube",
+          "tiktok",
+          "instagram",
+          "facebook"
+        ],
+        "postPublicationReview": "pending-live-publication-evidence",
+        "preparedPackageIndex": {
+          "path": "content-intelligence/reviews/chocolate-crystal-choice-platform-v1/delivery-index.json",
+          "sha256": "c5f813b8f7fae0c93aace02c03b14aaa2b7ae3abef0b1b3b65b17ac54ac9f619"
+        },
+        "preparedVariants": {
+          "path": "content-intelligence/reviews/chocolate-crystal-choice-platform-v1/platform-variants.json",
+          "sha256": "cfd495e8dbfe3e5b95c1fe834666ccaea49e55861ae76682b84b197ef38bd7dd"
+        },
+        "presentationRiskAccepted": true,
+        "publicationOccurred": false,
+        "realDevicePassesGranted": [],
+        "realDevicePrepublicationReviewCompleted": false,
+        "reviewedCommit": "b687adeac8a93543f3d3d4724e80ae450243dcf2",
+        "revision": 1,
+        "schemaVersion": 1,
+        "selectedInstagramCover": {
+          "artifactId": "chocolate-crystal-choice.instagram-cover.v1",
+          "path": "artifacts/covers/chocolate-crystal-choice-instagram-cover-v1.png",
+          "sha256": "9d780b477ed7afcf280c8a7c3949cef874dab1af7659742e37f3acafee3eb797"
+        },
+        "timeBasis": "decision-entry"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/chocolate-crystal-choice-v1/selection.json",
+      "sha256": "a2f9300cea82b65176c28d2a80a5cce15f69f36b9b2d9b8cc53e8d43ed21dd81",
+      "record": {
+        "authority": "Explicit owner topic selection and bounded research authorization: WHY MELTED CHOCOLATE CAN COME BACK WRONG. No downstream approval.",
+        "authorizedScope": "bounded-deep-research-and-editorial-proposal",
+        "candidateId": "topic.chocolate-crystal-choice",
+        "cycleId": "discovery.cycle-3-2026-10-01",
+        "discoveryCandidateRevision": 1,
+        "discoveryPath": "content-intelligence/discovery/cycle-3-2026-10-01/discovery.json",
+        "discoverySha256": "ac134a6b4eefacb7461bad98a1840dbe4e851368e96922dee9644446ded4352c",
+        "editorialApproval": false,
+        "owner": "Ahmet Nishefci",
+        "productionAuthorized": false,
+        "provenance": {
+          "baseCommit": "d0026125de4d3866738c6da232c8ce480aa15769",
+          "method": "manual-ai-assisted-web-source-inspection-and-editorial-drafting",
+          "model": "GPT-6",
+          "modelIdentityBasis": "Developer session identity; provider version/token usage unavailable",
+          "operator": "Codex",
+          "paidApiUsed": false,
+          "workflowEnvelope": false
+        },
+        "publicationAuthorized": false,
+        "recordedAt": "2026-10-01T22:04:33.307Z",
+        "recordedAtMeaning": "Actual decision-entry time; owner supplied no exact selection timestamp.",
+        "researchCandidateRevision": 2,
+        "schemaVersion": 1
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/longitude-clock-approved-v3/owner-decision.json",
+      "sha256": "ba4120abb6761f2071e1dd7222eb4565dad738042b866962a4f4a8c13393f215",
+      "record": {
+        "approvedHookId": "longitude-clock.hook.question",
+        "approvedSourceCommit": "d22145a86d791730c0a2e5dd03558a8d968473b4",
+        "authority": "explicit-owner-message",
+        "claimDecisions": [
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.longitude",
+            "statementSha256": "ddd02241f3fb8c3d4bac1c90b3ae80b25b478cf6cdaa475298aef40c02dc1e1f"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.latitude",
+            "statementSha256": "383ad709c5c84e7404f8b81d24eedb5f4e1a09d5a135aeb61dfe87fef59d910c"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.reference-problem",
+            "statementSha256": "3656c9fcdc32621f9be8637e25c6718bf4a6524e14794cd3110d715d6d750268"
+          },
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.time-comparison",
+            "statementSha256": "ebd2344dbfa8a2618eea1f6263f58cc9251fa289fa4a59d3e8bd14e7d5072fe9"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.noon",
+            "statementSha256": "a41e8dabfe22ea994c76b47edfca910c8e204af3f9057c58e5922dd7bd2a4b68"
+          },
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.equation-time",
+            "statementSha256": "5049566cab4133f65d891734679fa74e3b6826c1bf61869c47ba5e65b38b6ab5"
+          },
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.conversion",
+            "statementSha256": "d299f422983b64c7fb920e43f178995e2a130a9c8b18e1366a3bbed807442ac3"
+          },
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.east-example",
+            "statementSha256": "a139c1fba46cc0da53147964243c71d007803f69cccf7ede83723b6adf8ba2e1"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.west-example",
+            "statementSha256": "786416465ab031fced4df31c39df788de48d1ca1a0f5ebdf094bd2161f80ae74"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.minute-error",
+            "statementSha256": "d679183de1c559d692876ce5162fff9e6b28ea3300bd407be93e129fde56dbcd"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.second-error",
+            "statementSha256": "bad0af0b810591a5a557151fec73760fbbdf55c2c5e715236cbbb5c72ea54f63"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.clock-rate",
+            "statementSha256": "34ccac7ed719f346287af28dbd7d2405fb28c11700319f6cf7f892ebff9db78a"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.sea-challenge",
+            "statementSha256": "7a71d1a0ee739bd09a3ec11d48305086218a4a25daf5058fe7e337a8ad9399fb"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.h1",
+            "statementSha256": "6cc82129db4848de7a7406e0ed01ea900da92629c72f3563940fab09cecfd169"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.h2",
+            "statementSha256": "0f5221204ce9591d6fe22b319e0227f576ae4ac01310cedd511b901d9a3bb726"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.h3",
+            "statementSha256": "9fed33beb32f74400c29a220574047d1ab70d963ae26573e093798bd61f20e4a"
+          },
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.h4-watch",
+            "statementSha256": "cb60965361fec00dc7860dbf886902a569f4e29c3728da6e6127f29a7b85cde4"
+          },
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.h4-demonstration",
+            "statementSha256": "2f2c7fd9eb4379a3881b0b002902cfc307cbbb14b3db2c0514a81d83d9cb1a29"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.trials",
+            "statementSha256": "a32261868fc0e3adba237b84330cdd92f33a3b1b3d76c86ab8fe3cfcc2249775"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.board",
+            "statementSha256": "a2012ed66697adb3635fe8fb1d6796ffccac9e5c31f1bd9a2953159169a61923"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.reward-dispute",
+            "statementSha256": "b2594ebd5653956126e65af7a72e968ab071af0615a23d3e425144cd7dbac6d0"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.parliament-payment",
+            "statementSha256": "fca305291e4cbc5da6a1c6eec9042960206a9385abc4a03d9b3009285989d47f"
+          },
+          {
+            "action": "verify",
+            "claimId": "longitude-clock.claim.complementary",
+            "statementSha256": "d785bd1a4450a8c5c423cf4a03526b07dd0aa1efb2e672eecfade70fec061762"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.lunar-mechanism",
+            "statementSha256": "07d45d3e8f41ff25778869ee6bdc4dbb89cef4f4ca5598dc78466ef963fcfcf4"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.almanac",
+            "statementSha256": "e70093bbc0ac58506ce7209b0209fe1ea775c045ddfaaffc4e6840062c62698d"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.adoption",
+            "statementSha256": "ed5f9b96536a9b59a231377d62f3856debe631f595cabe35c1bac146b5a4b92b"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.nobody-knew",
+            "statementSha256": "ce1e74274e8bb5f031172a4a7276d2275ffa990e00082a47bc159069d1da04d0"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.impossible",
+            "statementSha256": "9abc240038bad747d147a886b577a3e7d207277867e9e498e964bdd73d80b453"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.sole-inventor",
+            "statementSha256": "f378f897b979eb9323658edff8e4591b102669c252dce0e236d12d935039a80f"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.instant-solution",
+            "statementSha256": "1e9ea8e5b248cb1e70c9d5edb671da5302750a0f1bd42c03f0925c6155430db6"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.direct-position",
+            "statementSha256": "91cbf457fc3af1243289313234193e30c615391dd37fa471a9332f45d01ee7ae"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.easy-latitude",
+            "statementSha256": "ce2b87e54d190e218b449ecc11ce9d5a2a3aeff5a2e37a526100d128da47dfe6"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.instant-prize",
+            "statementSha256": "752e30ee7f7491a0b62dba0ce82fa92634029e3a5c672236b83f1766db220c62"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.all-replaced",
+            "statementSha256": "4548bd2bba40bd80d65a63fe42544bdbb46cb6b658402b2c72fc959d9cfaa011"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.same-distance",
+            "statementSha256": "4d2038107149fef4a41e902433d7786970eed4995b620568c944fe3ebec48796"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.raw-sundial",
+            "statementSha256": "6e7d82b1909c05215981b189f1a54434b2c259bbb1ee2fd8f46dabf16955f895"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.exact-spin",
+            "statementSha256": "12317577b8b9680d108f6faa02cb230128be63afd49cf6736d2e5024a524c273"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.motion-powered",
+            "statementSha256": "13b358e65a4e9e6c16ee403dfa33d38351c0d2d0bf7917f83f35429e9b3f6cb7"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.humidity-specific",
+            "statementSha256": "f716ee275d775f70788a6764290bc46ad5e2b4e21a0c6c2c9bb000646647b26b"
+          },
+          {
+            "action": "preserve-research-state",
+            "claimId": "longitude-clock.claim.trial-error-exact",
+            "statementSha256": "43ee0dc2921312c86a020dccc0ef373d3cb90b73b0199f1991b1ea4ce53fd6fe"
+          }
+        ],
+        "claimReview": {
+          "id": "claim-review.longitude-clock.v2",
+          "revision": 2,
+          "sha256": "369c3541728f588d725b802225f3be66a9234d7edbaf4d237231213ec5d4a1cf"
+        },
+        "comprehensionContractSha256": "7b826c257762851cdebdfbf489874ae5f8c1505bb87290f8ab14dd204fe85fc8",
+        "contentAsset": {
+          "id": "longitude-clock.asset.time-to-position",
+          "revision": 2,
+          "sha256": "12b4f80955dceae57f684a1afcd34f5e5a2f4792c674cda027639282868f5423"
+        },
+        "creativeDirectionApproved": false,
+        "creativeDirectionAuthorized": true,
+        "editorialApproved": true,
+        "enteredAt": "2026-10-01T16:48:55.879Z",
+        "finalExactNarration": "How can a clock tell a ship where it is?\n\nBy keeping the time at a known reference point.\n\nSailors use the Sun to find local time, corrected to match the clock\u2019s timekeeping.\n\nCompare them at the same moment.\n\nEarth\u2019s turning links that time difference to longitude: fifteen degrees per hour.\n\nTwelve at the reference. Two in the afternoon locally.\n\nTwo hours ahead. Thirty degrees east.\n\nHarrison\u2019s H4 helped demonstrate accurate timekeeping at sea.\n\nOther astronomical methods remained useful too.\n\nThe clock carries time. Observation and calculation reveal longitude.",
+        "id": "owner-decision.longitude-clock.creative-stage.v1",
+        "knowledgePackage": {
+          "id": "longitude-clock",
+          "revision": 2,
+          "sha256": "502d4e4a30c324da63894ba916beacdc0253832accea1c0b0afa5dfbd2259571"
+        },
+        "ownerInstruction": "I approve the Cycle #2 finalized editorial package at d22145a86d791730c0a2e5dd03558a8d968473b4. Approve the FINAL EXACT narration, finalized conceptual VisualPlan, qualifications, exclusions and comprehension contract presented for owner review. I explicitly verify the eight queued claims: longitude-clock.claim.longitude, longitude-clock.claim.time-comparison, longitude-clock.claim.equation-time, longitude-clock.claim.conversion, longitude-clock.claim.east-example, longitude-clock.claim.h4-watch, longitude-clock.claim.h4-demonstration, longitude-clock.claim.complementary. Bind this decision to the exact current statement hashes and reviewed artifacts. Record the actual decision-entry time. This approval authorizes editorial finalization and the next ADAPTIVE CREATIVE DIRECTION stage. It does NOT yet authorize ProductionPlan, final production assets, narration generation, final CaptionPlan, full video rendering, platform variants, delivery, upload or publication.",
+        "ownerSuppliedReviewTimestamp": null,
+        "platformApprovalGranted": false,
+        "productionAuthorized": false,
+        "publicationApprovalGranted": false,
+        "reviewedArtifacts": [
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/artifact-manifest.json",
+            "sha256": "c9fee7b52656f154429ee8044491d83ffa7f88a1b6a292b09449f34decd5d66a"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/claim-ledger.json",
+            "sha256": "be0ec2d7d8aaac3da84f6cf10f5b4c182707f4a7cd8d3f81f393c6afa742b42e"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/claim-review.json",
+            "sha256": "658e7eb9ec41e5fa3c587922e12d89bfc265a8de42d4b2eedb05de891aa4842a"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/content-asset.review.json",
+            "sha256": "5bee5ec2509660c3d4862cfc4a41b2fe38793f0bc56f02fd5476080ed3055875"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/hook-proposals.draft.json",
+            "sha256": "eb3932c58fa96f1d75e1c8ad9cdc2f4c66f950dcbffea35cc6d66077d0f7a834"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/hook-review.json",
+            "sha256": "7a804a6449b36af74f35ff9225d2fc54cb2ca04864577131ae047886e3536a59"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/knowledge-package.review.json",
+            "sha256": "2bd8a792996128edbcaf7b58bec813db631cc650323c720e3896a700fcf25faf"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/misconception-audit.json",
+            "sha256": "db568b23f12037fe3ec1a4b61537fb604919c7b6da34505d0d16efccfdcc70f7"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/numerical-intuition.json",
+            "sha256": "9e456ba75bc342a380cbba0234fe2b18aedf5f02b9673f8416c0578a841359cc"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/owner-review.md",
+            "sha256": "687620e383cc0e48772874da195d614301844fe224a4276194c8e5fa2ffbfc5f"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/research-workspace.draft.json",
+            "sha256": "5abef67a1742897f4e82a7d909c20dd4ba6dc2a09753243f7ff68b1dbdbc04bc"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/selection.json",
+            "sha256": "ed665535d1fc6e36bc81aa7e8341ccdea248b1087ea8d4c58e37e00b9972b854"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/source-inspections.json",
+            "sha256": "900ba211a4d2a3dca1c95cea412e32db0b109d15b7ad0059965ded1542529cdb"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/topic-candidate.researching.json",
+            "sha256": "b77f6c71ee59ddf255f45da17be26fd5c4607656f4d651c3242bc2a717ba2193"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/validation.json",
+            "sha256": "53e454fb865290ca23e0c68a9db5909b5c5041bccbfdaef1f8aa0219f0da77c3"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/artifact-manifest.json",
+            "sha256": "26b31910ccdfab620df0fea66c184a78917400879cfc863eba6f4fc29103df71"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/claim-ledger.json",
+            "sha256": "4f0638a4fb6c25a10639a5cab14236bade8beff7a51fd37ec082dce663c35afa"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/claim-review.json",
+            "sha256": "17f64fc1a8f8bcd9b84bb40930a650b1ea6d1b853320998dc05303081f9a483e"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/content-asset.review.json",
+            "sha256": "aba3f5c6efd0d621ffe8ee8f57ccb48078c2cee83335adb69bff85d50643161b"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/editorial-finalization.json",
+            "sha256": "0fa211c4ce0d6fe4eb2f928edd5bc89065691eb18e7fc9fcd8b3b0b30c12d52a"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/hook-wording-review.json",
+            "sha256": "9055322603724fda1f95c4272392c1eb732e04043d08f535748099fe978a1a1f"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/knowledge-package.review.json",
+            "sha256": "f9a9f04b2b60ad6099de0ff8742d50c3ac443e33141073cab329fec24c4408cb"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/owner-instruction.json",
+            "sha256": "a3219e442259bcb055002c9113132e0e790fe2ea2867d811045fd6aad06d9834"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/owner-review.md",
+            "sha256": "f6aea8fb3dc80af42d6f74d3b3314a72bee66ec58c659bac8118e914ae1aafde"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/owner-verification-queue.json",
+            "sha256": "c8cefc5278c13cc1ebed4bd45043573006e2a2d31e4f7abfd068e9809e87ac07"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/validation.json",
+            "sha256": "472075d17318e69787b6c05ca8dfa85ac7f715bbadb4b4d08538de3bf1b9307a"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-finalization-v2/visual-comprehension-contract.json",
+            "sha256": "0dec6e808053a991d230bdda1fd010f57a0037e797510fef91e624da39915d7c"
+          }
+        ],
+        "reviewer": "Ahmet Nishefci",
+        "revision": 1,
+        "schemaVersion": 1,
+        "scriptSha256": "1db5aee0fc71aa5f4c5e7677352e81fa4066d173c2c20040ee7a5c0ae809fbdb",
+        "timeBasis": "decision-entry",
+        "visualPlanSha256": "33b047a1bd682bf1f249fef2fc03202f3068d66c107836108c022fd00f834e99"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/longitude-clock-finalization-v2/owner-instruction.json",
+      "sha256": "a3219e442259bcb055002c9113132e0e790fe2ea2867d811045fd6aad06d9834",
+      "record": {
+        "authority": "explicit-owner-message",
+        "baseCommit": "c957692f87d376d5cfef1377042df2314d4eb638",
+        "claimsVerified": false,
+        "creativeDirectionAuthorized": false,
+        "enteredAt": "2026-10-01T16:33:17.662Z",
+        "id": "owner-instruction.longitude-clock.finalization.v2",
+        "narrationApproved": false,
+        "owner": "Ahmet Nishefci",
+        "ownerInstruction": "The Cycle #2 Longitude Clock research direction is accepted. The bounded research package, inspected sources, evidence limitations, claim ledger, historical attribution qualifications, terminology findings, misconception exclusions, longitude-by-time mechanism and complementary-method context are accepted as the evidence basis for editorial finalization. This is NOT yet approval of the proposed narration or conceptual VisualPlan. Preferred hook: How can a clock tell a ship where it is? Proceed to EDITORIAL FINALIZATION ONLY. Do not begin CreativeDirection or production.",
+        "ownerSuppliedReviewTimestamp": null,
+        "preferredHookId": "longitude-clock.hook.question",
+        "productionAuthorized": false,
+        "publicationAuthorized": false,
+        "researchArtifactHashes": [
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/artifact-manifest.json",
+            "sha256": "c9fee7b52656f154429ee8044491d83ffa7f88a1b6a292b09449f34decd5d66a"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/claim-ledger.json",
+            "sha256": "be0ec2d7d8aaac3da84f6cf10f5b4c182707f4a7cd8d3f81f393c6afa742b42e"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/claim-review.json",
+            "sha256": "658e7eb9ec41e5fa3c587922e12d89bfc265a8de42d4b2eedb05de891aa4842a"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/content-asset.review.json",
+            "sha256": "5bee5ec2509660c3d4862cfc4a41b2fe38793f0bc56f02fd5476080ed3055875"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/hook-proposals.draft.json",
+            "sha256": "eb3932c58fa96f1d75e1c8ad9cdc2f4c66f950dcbffea35cc6d66077d0f7a834"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/hook-review.json",
+            "sha256": "7a804a6449b36af74f35ff9225d2fc54cb2ca04864577131ae047886e3536a59"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/knowledge-package.review.json",
+            "sha256": "2bd8a792996128edbcaf7b58bec813db631cc650323c720e3896a700fcf25faf"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/misconception-audit.json",
+            "sha256": "db568b23f12037fe3ec1a4b61537fb604919c7b6da34505d0d16efccfdcc70f7"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/numerical-intuition.json",
+            "sha256": "9e456ba75bc342a380cbba0234fe2b18aedf5f02b9673f8416c0578a841359cc"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/owner-review.md",
+            "sha256": "687620e383cc0e48772874da195d614301844fe224a4276194c8e5fa2ffbfc5f"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/research-workspace.draft.json",
+            "sha256": "5abef67a1742897f4e82a7d909c20dd4ba6dc2a09753243f7ff68b1dbdbc04bc"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/selection.json",
+            "sha256": "ed665535d1fc6e36bc81aa7e8341ccdea248b1087ea8d4c58e37e00b9972b854"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/source-inspections.json",
+            "sha256": "900ba211a4d2a3dca1c95cea412e32db0b109d15b7ad0059965ded1542529cdb"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/topic-candidate.researching.json",
+            "sha256": "b77f6c71ee59ddf255f45da17be26fd5c4607656f4d651c3242bc2a717ba2193"
+          },
+          {
+            "path": "content-intelligence/reviews/longitude-clock-v1/validation.json",
+            "sha256": "53e454fb865290ca23e0c68a9db5909b5c5041bccbfdaef1f8aa0219f0da77c3"
+          }
+        ],
+        "researchBasisAccepted": true,
+        "schemaVersion": 1,
+        "timeBasis": "decision-entry",
+        "visualPlanApproved": false
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/longitude-clock-master-lock-v1/owner-decision.json",
+      "sha256": "360a9dd6e5ec9a021e59712905e256e94e029d692e832b30201a3020800819e9",
+      "record": {
+        "approvedScriptSha256": "1db5aee0fc71aa5f4c5e7677352e81fa4066d173c2c20040ee7a5c0ae809fbdb",
+        "artifact": {
+          "bytes": 4072695,
+          "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+          "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+        },
+        "authority": "explicit-owner-message",
+        "candidateArtifactId": "longitude-clock.candidate-v2.0",
+        "candidateBindings": {
+          "path": "content-intelligence/reviews/longitude-clock-master-lock-v1/reviewed-bindings.json",
+          "sha256": "d1f635de554c3a09b64468a4c218dda4a42321115983a19963adf986a2c6b128"
+        },
+        "captionPlan": {
+          "id": "caption-plan.longitude-clock.v2",
+          "revision": 2,
+          "sha256": "d34aea2666742c0e8e61f569d6ee023be369f0d7ab558cd40823ca226f45e3cb"
+        },
+        "contentAsset": {
+          "id": "longitude-clock.asset.time-to-position",
+          "revision": 3,
+          "sha256": "27c59fae1d80055075d770b1459b69759adcba6a69ba583f73b515dc45aeeca8"
+        },
+        "editorialApproval": {
+          "id": "owner-decision.longitude-clock.narrator-v2",
+          "revision": 1,
+          "sha256": "477d345f2dbc2f4f17f1468536419037bc85fc56677b6a1f201328e5bdee277f"
+        },
+        "enteredAt": "2026-10-01T19:39:44.862Z",
+        "id": "owner-decision.longitude-clock.master-v2",
+        "knowledgePackage": {
+          "id": "longitude-clock",
+          "revision": 3,
+          "sha256": "f8c8b69a078391e47858996290ec4d3568cb516e850f61de4dd87c30abce0715"
+        },
+        "masterArtifactId": "longitude-clock.locked-master.v2",
+        "narrationBundleSha256": "6f967ca86aca65db5cd30801a11d6def017c68a51712961e1b5e16b6d4f97672",
+        "ownerInstruction": "Approve exact Longitude Clock Candidate V2 dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369 as final locked master and authorize platform-delivery preparation only. Candidate V1 remains historical review evidence; no platform/publication approval or upload.",
+        "ownerSuppliedReviewTimestamp": null,
+        "platformApprovalGranted": false,
+        "platformPresentationQaAuthorized": true,
+        "publicationApprovalGranted": false,
+        "reviewedCommit": "e6fd1653d98a9e9049087f56262885e2a05a3018",
+        "reviewedProductionPlan": {
+          "id": "production-plan.longitude-clock.v1",
+          "revision": 4,
+          "sha256": "03d09b61cdd39479ab0bfe67b645eb33eb58065aef610a85a1800d4c0d5e3bc5"
+        },
+        "reviewer": "Ahmet Nishefci",
+        "revision": 1,
+        "schemaVersion": 1,
+        "timeBasis": "decision-entry"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/longitude-clock-production-v2/owner-decision.json",
+      "sha256": "19de070e11e04e6995732154996e9e0505a6a5f002c302e5997d8d675dad7064",
+      "record": {
+        "schemaVersion": 1,
+        "id": "owner-decision.longitude-clock.narrator-v2",
+        "revision": 1,
+        "owner": "Ahmet Nishefci",
+        "authority": "explicit-owner-message",
+        "enteredAt": "2026-10-01T18:21:50.409Z",
+        "timeBasis": "decision-entry",
+        "ownerSuppliedReviewTimestamp": null,
+        "reviewedCandidate": {
+          "path": "artifacts/masters/longitude-clock-candidate-v1.mp4",
+          "sha256": "71dba2d65c2e86fe00cc11683c8aeaf668a9acd10e877e744be3380bde53b981"
+        },
+        "parentCreativeDirection": {
+          "id": "creative-direction.longitude-clock.time-to-position.v1",
+          "revision": 2,
+          "sha256": "512e0104c444ad541a334f055b603102b0320d5b98d4ba93b4f304fec38374d8"
+        },
+        "contentAsset": {
+          "id": "longitude-clock.asset.time-to-position",
+          "revision": 3,
+          "sha256": "27c59fae1d80055075d770b1459b69759adcba6a69ba583f73b515dc45aeeca8"
+        },
+        "approvedScriptSha256": "1db5aee0fc71aa5f4c5e7677352e81fa4066d173c2c20040ee7a5c0ae809fbdb",
+        "directionApprovedInPrinciple": true,
+        "masterApproved": false,
+        "narrator": "af_heart",
+        "productionRevisionAuthorized": true,
+        "materialVisualRedesignAuthorized": false,
+        "platformApproved": false,
+        "uploadAuthorized": false,
+        "publicationAuthorized": false,
+        "policyDecision": "Current primary narrator Kokoro af_heart by default; material deviations documented; soundscape/visuals/captions adaptive; runtime story-led, no threshold-only padding."
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/longitude-clock-publication-v1/owner-decision.json",
+      "sha256": "a293553c033d0726e15d16c9dec854b5bd5b1eed579a83bfa19a405a7246f53d",
+      "record": {
+        "schemaVersion": 1,
+        "id": "owner-decision.longitude-clock.publication.v1",
+        "revision": 1,
+        "owner": "Ahmet Nishefci",
+        "authority": "explicit-owner-message",
+        "decision": "PUBLICATION AUTHORIZED",
+        "enteredAt": "2026-10-01T20:39:20.944Z",
+        "timeBasis": "decision-entry",
+        "ownerSuppliedReviewTimestamp": null,
+        "reviewedCommit": "541331bdef7af2c7f188f8ec7fe65e0dc4dd478a",
+        "ownerStatement": "I explicitly accept remaining presentation uncertainty and authorize the exact locked Longitude Clock V2, four prepared variants and prepared Instagram cover for owner manual publication. No additional private/device preview is required. Promote final manual-upload readiness; preserve master, copy and creative material. Assistant must not upload, schedule or publish.",
+        "masterArtifactId": "longitude-clock.locked-master.v2",
+        "master": {
+          "path": "artifacts/masters/longitude-clock-candidate-v2.mp4",
+          "sha256": "dd4566d0202d654557ace127e74b641446bba2a0ffb996aed27946a6b27c3369"
+        },
+        "selectedInstagramCover": {
+          "path": "artifacts/covers/longitude-clock-instagram-cover-v1.png",
+          "sha256": "27bc0b6d9c12d8d88db1f1977a389735efb8c965856cb664382c615130eb73f3"
+        },
+        "masterApproval": {
+          "path": "content-intelligence/reviews/longitude-clock-master-lock-v1/owner-decision.json",
+          "sha256": "360a9dd6e5ec9a021e59712905e256e94e029d692e832b30201a3020800819e9"
+        },
+        "preparedPackageIndex": {
+          "path": "content-intelligence/reviews/longitude-clock-platform-v1/delivery-index.json",
+          "sha256": "02121e342b3f7d3273bc243d0c1e85453b5f70ef3de0dd30cce6d363a56f1fe6"
+        },
+        "preparedVariants": {
+          "path": "content-intelligence/reviews/longitude-clock-platform-v1/platform-variants.json",
+          "sha256": "31ebec61689222c21ffc7ddb9b073d2f4a62f00a91db46a98c98db35d7d8fcb4"
+        },
+        "copy": {
+          "path": "content-intelligence/reviews/longitude-clock-platform-v1/platform-copy.json",
+          "sha256": "616b5287cb82b18d12ab3f58d20ce70b8f9f0dd39400689901517ac14f857b16"
+        },
+        "platforms": [
+          "youtube",
+          "tiktok",
+          "instagram",
+          "facebook"
+        ],
+        "presentationRiskAccepted": true,
+        "realDevicePrepublicationReviewCompleted": false,
+        "realDevicePassesGranted": [],
+        "coverDeviceApprovalGranted": false,
+        "metadata": {
+          "device": null,
+          "os": null,
+          "appVersion": null,
+          "testedAt": null,
+          "screenshots": [],
+          "measurements": null
+        },
+        "execution": "owner-manual-only",
+        "assistantUploadAuthorized": false,
+        "publicationOccurred": false,
+        "postPublicationReview": "pending-live-publication-evidence",
+        "acceptedRisks": [
+          "Zero Longitude prepublication real-device passes.",
+          "Known/provisional local inset models passed; this is local evidence only.",
+          "Native UI exclusion zones and caption geometry remain incompletely measured.",
+          "YouTube desktop/web presentation remains unmeasured.",
+          "Instagram profile/grid crop remains unmeasured.",
+          "Facebook Page/feed crop remains unmeasured.",
+          "Other native cover/frame/control and presentation uncertainty remains as documented."
+        ],
+        "limitations": [
+          "Release risk acceptance is not verified presentation or a universal pixel guarantee.",
+          "Instagram cover selected for publication with crop uncertainty accepted; no device approval.",
+          "Postpublication observations are the next actual surface evidence. No automatic rerender; material remediation needs an explicit owner decision.",
+          "Unknown URLs/IDs/timestamps/settings/screenshots/analytics remain unknown."
+        ]
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/longitude-clock-v1/selection.json",
+      "sha256": "ed665535d1fc6e36bc81aa7e8341ccdea248b1087ea8d4c58e37e00b9972b854",
+      "record": {
+        "authority": "Explicit owner message: MAGNIVIS \u2014 NEW CONTENT CYCLE #2 TOPIC SELECTION + BOUNDED RESEARCH. Approve How can a clock tell you where you are? for RESEARCH only.",
+        "authorizedScope": "bounded-deep-research-and-editorial-proposal",
+        "candidateId": "topic.longitude-clock",
+        "cycleId": "discovery.cycle-2-2026-10-01",
+        "discoveryCandidateRevision": 1,
+        "discoveryPath": "content-intelligence/discovery/cycle-2-2026-10-01/discovery.json",
+        "discoverySha256": "d8f9f92374699d22bfbf030fcb49ad49402b7ca48e12c3a23f16b1bfdc7e104b",
+        "editorialApproval": false,
+        "owner": "Ahmet Nishefci",
+        "productionAuthorized": false,
+        "provenance": {
+          "baseCommit": "c122a3a158ffa33dd31463839e7654229acfb441",
+          "method": "manual-ai-assisted-source-inspection-and-editorial-drafting",
+          "model": "GPT-6",
+          "modelIdentityBasis": "session developer identity; no provider response/version or token usage available",
+          "operator": "Codex",
+          "paidApiUsed": false,
+          "workflowEnvelope": false
+        },
+        "publicationAuthorized": false,
+        "recordedAt": "2026-10-01T15:40:59.249Z",
+        "recordedLocalDate": "2026-10-01",
+        "researchCandidateRevision": 2,
+        "schemaVersion": 1,
+        "timezone": "Europe/Belgrade"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-approved-v3/owner-decision.json",
+      "sha256": "acd297f0483121769320de778d1a7276fdde08bad014a6e82fa7314567d57e20",
+      "record": {
+        "approvedHookId": "phantom-traffic.hook.backward-wave",
+        "approvedSourceCommit": "21c3a5539cf02b1c4a88b8ff89aca0139a7ec079",
+        "assetDecision": "approve",
+        "assetId": "phantom-traffic.asset.backward-wave",
+        "assetRevision": 2,
+        "assetSha256": "f32567b296fcdb1ab9a893db76290996dccbe10968fd6e22854348f55c07e6ff",
+        "authority": "explicit-owner-message",
+        "claimStatementHashes": [
+          {
+            "claimId": "phantom-traffic.claim.no-obstruction",
+            "statementSha256": "19d1ae2800e3d8e42f60c434430f8eacfd87558445883255f39e04b1082e5cec",
+            "verificationStatus": "verified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.vehicles",
+            "statementSha256": "c6c1965628319115bf27e422222edad8cf45b0a155555d0b8ba3c276906b8be3",
+            "verificationStatus": "verified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.circumference",
+            "statementSha256": "306fbcb107d349c9cd1522b8b6ad45dd155ddb6b3170afbed7c12873de3ec917",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.instructions",
+            "statementSha256": "7d6b0136831906029bbe887c65e6a23ebcfd6d38cc0830cacbc1b1477a9e3c41",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.emergence",
+            "statementSha256": "a28d01f56383a709f0402d20582faa11369c2c192ba17e4571cefdba0c985ea3",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.conditional-growth",
+            "statementSha256": "623f6a7df271cbaa51565bdf9a0ae53ea4724d90a86d9d61b0dcf883b6636cc5",
+            "verificationStatus": "verified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.backward-pattern",
+            "statementSha256": "34a6c9c739b36849845d76cfe05b5efc5cddc23483621232845a5bed96343a83",
+            "verificationStatus": "verified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.turnover",
+            "statementSha256": "18ff432b637c37d7751af0206d50820702d0d7dc8763c63b0ad15ed3ea1c75dd",
+            "verificationStatus": "verified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.wave-speed",
+            "statementSha256": "5c9d59e22757fc6e972fb6d41a68c05f8b8094ced1814cc8ae8db64fd6b0dc7b",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.measurement",
+            "statementSha256": "f08f5daff7c1c40e2f59058966f8bf474704575f2c94be8896439fc9bc73ef39",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.stable-versus-unstable",
+            "statementSha256": "a64f709c855f1bec87d7c4e9decb28bfc316a58e1b8364d4e12e22f3103babfb",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.density-not-guarantee",
+            "statementSha256": "7d7da52ebb9cf7b09eb639c0452c065be62d40d21c56784fd42e3c0ee28d27a2",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.reaction-not-only",
+            "statementSha256": "b356b45fc20c428d18d3e3a026f67cdffe7312d085d16e927b71d0c64a8c32dc",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.headway",
+            "statementSha256": "1c9484c0a900d39ef934f090f107a76c9a8531497f3f85dfbb06fda09f869b2c",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.followup-experiment",
+            "statementSha256": "a120aa7df67ed0ee8060a9a3addc04e4641f98ff245fad37749aec0ddd9d5672",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.nonlinear",
+            "statementSha256": "d448c765ecaf9f0d7cb6e5ee962bbbcdce1f412d57fbec76cb9622c61d08368c",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.bottleneck-distinction",
+            "statementSha256": "a0ca6c48fa1cadc89a282a758d91a5ca88a5b609867ac9d294a54765ada839af",
+            "verificationStatus": "verified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.cleared-obstruction",
+            "statementSha256": "bff259db88beb05e5cd926fda302742dc5dffa10f6173a7af1dab7a8979618f0",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.shockwave",
+            "statementSha256": "6267b3c69def34250850ac45e8fb48579b2aad3d6a68328cf2ace9d9540ed2c0",
+            "verificationStatus": "supported"
+          },
+          {
+            "claimId": "phantom-traffic.claim.tiny-tap",
+            "statementSha256": "28e13cda2d36b146818db8e46823f436135a67e1de2800bf706d1210ea2a9620",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.from-nothing",
+            "statementSha256": "09ac4ee2989673a0a9160960ba1a93cc956e6db731cffe86c06f0b203889e669",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.driver-blame",
+            "statementSha256": "c750579a94f3f8fc4a0bed323c148907211022d3ff7e8a30c6bfc58b19531e90",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.reaction-only",
+            "statementSha256": "809465d3d91437047433035b7c126dd8b2d43fae7a56fd5b0475cd77aa29ff94",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.nobody-caused",
+            "statementSha256": "8a45cd1e27c3b1c217876fb34c81d459474b735be6fce2f94818d08179810456",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.all-waves",
+            "statementSha256": "34ad6500200b50bb19be9f14035c4b52f44dddc3130847ccab5d0cc18823fc5b",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.universal-speed",
+            "statementSha256": "5ca3dcb0b4c41e9486f1817388fd329d0698e31eafb064a53ac4808668f57015",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.always-dense",
+            "statementSha256": "d1de876bdd8a299fc053410fff1bc128ae7662b3dd10f5975e24acca110fcf63",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.autonomy",
+            "statementSha256": "d09687df77bea009e425f56290d0a97bea7dbc9831cfcbc836e20ee0f7cdc79f",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.empty-proof",
+            "statementSha256": "e974ecf9ea83f7eb9e09dd313759aa07f627e3ba5233413dea508e7df877f37b",
+            "verificationStatus": "unverified"
+          },
+          {
+            "claimId": "phantom-traffic.claim.backward-cars",
+            "statementSha256": "1a70a5d1560137da54ede28de7bfe61a774c75a8aef968d3330c126fa2dbe380",
+            "verificationStatus": "unverified"
+          }
+        ],
+        "enteredAt": "2026-10-01T08:29:45.021Z",
+        "id": "owner-decision.phantom-traffic.editorial-lock.v1",
+        "masterCandidateProductionAuthorized": true,
+        "ownerInstruction": "I APPROVE the finalized Phantom Traffic editorial package.\n\nApproved editorial state is the exact state represented by commit:\n\n21c3a5539cf02b1c4a88b8ff89aca0139a7ec079\n\nLock this narration exactly.\n\nProduction planning is now authorized.\n\nImplement and render ONE production candidate.",
+        "ownerMasterVisualApproval": false,
+        "ownerSuppliedReviewTimestamp": null,
+        "packageDecision": "approve",
+        "packageId": "phantom-traffic",
+        "packageRevision": 2,
+        "packageSha256": "45024c0ebe391ff32383879cc950272f07622c3ff3eaa4c5f0facfa37281cebb",
+        "platformApprovalGranted": false,
+        "publicationApprovalGranted": false,
+        "reviewer": "Ahmet Nishefci",
+        "reviewId": "claim-review.phantom-traffic.v2",
+        "reviewSha256": "5595f88520009501c40edcfef8c980f7060c3fd06a383c372b31edbb122f3b29",
+        "revision": 1,
+        "schemaVersion": 1,
+        "scriptSha256": "1c5b5af5abb0e9522cd199a2f79d2f863a9f94c742437041c76cb703978ea87e",
+        "timeBasis": "decision-entry",
+        "verifiedClaimIds": [
+          "phantom-traffic.claim.backward-pattern",
+          "phantom-traffic.claim.vehicles",
+          "phantom-traffic.claim.no-obstruction",
+          "phantom-traffic.claim.conditional-growth",
+          "phantom-traffic.claim.turnover",
+          "phantom-traffic.claim.bottleneck-distinction"
+        ]
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-closure-v1/owner-decision.json",
+      "sha256": "ef3348fb57191c423ef1fde14004ef68de1a6d79dfe8ea9b9d2967bc755d625d",
+      "record": {
+        "schemaVersion": 1,
+        "id": "owner-decision.phantom-traffic.closure.v1",
+        "revision": 1,
+        "owner": "Ahmet Nishefci",
+        "authority": "explicit-owner-message",
+        "enteredAt": "2026-10-01T13:10:08.720Z",
+        "timeBasis": "decision-entry",
+        "ownerSuppliedReviewTimestamp": null,
+        "publishedOn": "2026-10-01",
+        "publishedAt": null,
+        "ownerStatement": "Phantom Traffic has now been manually published on all four target platforms. Ahmet also posted the intended Magnivis comment on each platform. Ahmet personally inspected the live published videos after publication and reports correct desktop/web and mobile presentation where applicable across the published target platforms.",
+        "master": {
+          "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+          "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+        },
+        "publicationAuthorization": {
+          "path": "content-intelligence/reviews/phantom-traffic-publication-v1/owner-decision.json",
+          "sha256": "e37e45e658376a681d96d2eee9dbe6f368172d38cff0c0f5aec83eb1362b75fe"
+        },
+        "finalDeliveries": {
+          "path": "content-intelligence/reviews/phantom-traffic-publication-v1/final-bindings.json",
+          "sha256": "c551c40aecc72b9c02726bd7511f9d105e84f116251d0066bbf66af6c90d07f9"
+        },
+        "platforms": {
+          "youtube": {
+            "url": "https://www.youtube.com/shorts/3jmxLXcowC8",
+            "postId": "3jmxLXcowC8"
+          },
+          "facebook": {
+            "url": "https://www.facebook.com/reel/2300822597344788",
+            "postId": "2300822597344788"
+          },
+          "instagram": {
+            "url": "https://www.instagram.com/p/Dd89-PvFDqn/",
+            "postId": "Dd89-PvFDqn"
+          },
+          "tiktok": {
+            "url": null,
+            "postId": null,
+            "managementUrl": "https://www.tiktok.com/tiktokstudio/content"
+          }
+        },
+        "postPublicationPresentation": "OWNER_REPORTED_POST_PUBLICATION_APPROVED",
+        "presentationScope": {
+          "platforms": [
+            "youtube",
+            "tiktok",
+            "instagram",
+            "facebook"
+          ],
+          "contexts": [
+            "desktop/web where applicable",
+            "mobile where applicable"
+          ],
+          "individuallyNamedSurfaces": []
+        },
+        "unknownMetadata": {
+          "device": null,
+          "os": null,
+          "appVersion": null,
+          "viewport": null,
+          "measurements": null,
+          "reviewedAt": null,
+          "screenshots": []
+        },
+        "comments": {
+          "postedByOwner": true,
+          "commentIds": null,
+          "postedAt": null,
+          "pinState": "unknown",
+          "engagement": null
+        },
+        "limitations": [
+          "TikTok public permalink/video ID missing; Studio URL is not a public video identity.",
+          "Publication and presentation are owner-reported, not independently captured/verified.",
+          "Public page retrieval attempted but all three requests returned cache miss; no page content, posting time or metrics inspected.",
+          "Broad platform/context approval does not supply separate grid/feed/cover measurements or individually named surface tests.",
+          "Actual account handles (except surviving Instagram identity), exact upload settings and platform-transcoded byte hashes remain unknown."
+        ],
+        "operationalCycleState": "COMPLETE",
+        "remainingEvidenceGapsBlockClosure": false,
+        "nextGate": "NEW CONTENT CYCLE #2 DISCOVERY",
+        "cycle2Started": false,
+        "assistantUploaded": false
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-delivery-v1/owner-decision.json",
+      "sha256": "f17ca8c304320e3762c125bfa01e5396b277efd9c72b7d8ef9b7f3d4859c1c86",
+      "record": {
+        "schemaVersion": 1,
+        "id": "owner-decision.phantom-traffic.platform.v1",
+        "revision": 1,
+        "owner": "Ahmet Nishefci",
+        "authority": "explicit-owner-message",
+        "enteredAt": "2026-10-01T10:53:14.470Z",
+        "timeBasis": "decision-entry",
+        "ownerSuppliedReviewTimestamp": null,
+        "ownerStatement": "I reviewed Phantom Traffic on the relevant real-device presentation surfaces and the presentation looks good.",
+        "scopeConfirmation": null,
+        "master": {
+          "artifactId": "phantom-traffic.locked-master.v1",
+          "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+          "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+        },
+        "reviewedVariants": [
+          {
+            "id": "phantom-traffic.asset.backward-wave.variant.youtube-shorts",
+            "revision": 1,
+            "sha256": "f766b131f6dfd4608b9aaa967c2229b97a4d55504b1151412a653a5a261647ee"
+          },
+          {
+            "id": "phantom-traffic.asset.backward-wave.variant.tiktok-feed",
+            "revision": 1,
+            "sha256": "95650e05b0479d3b40ea771171001a8255e64adbeab083a5995ae598efce9e4c"
+          },
+          {
+            "id": "phantom-traffic.asset.backward-wave.variant.instagram-reels",
+            "revision": 1,
+            "sha256": "ae78d0f09f967e0f89e5ad253494b4705b07070c4f21aa3c2e695ae4a993a5d5"
+          },
+          {
+            "id": "phantom-traffic.asset.backward-wave.variant.facebook-reels",
+            "revision": 1,
+            "sha256": "11f5d7655af307bc225197fd4588d0611fb802c08673696a2e3df03484f2a99e"
+          }
+        ],
+        "requestedSurfaces": [
+          "youtube-shorts-viewer",
+          "tiktok-feed",
+          "instagram-reels-playback",
+          "instagram-profile-grid",
+          "facebook-reels-viewer",
+          "facebook-page-feed"
+        ],
+        "confirmedSurfaces": [],
+        "cover": {
+          "path": "artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+          "sha256": "3494907b3759b03146d1f050c17be653e807ba0b5b75abaafa0e87e79e0ccef5",
+          "tested": null
+        },
+        "metadata": {
+          "device": null,
+          "os": null,
+          "appVersion": null,
+          "testedAt": null,
+          "screenshots": [],
+          "cropMeasurements": null
+        },
+        "limitations": [
+          "Owner real-device approval is recorded; the initial statement does not enumerate which distinct surfaces were actually tested. Scope confirmation was requested.",
+          "No supplied review timestamp, device/app metadata, screenshots or crop coordinates.",
+          "Exact Instagram cover use is unconfirmed. No local model is promoted to measured real-device evidence."
+        ],
+        "publicationAuthorized": false
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-finalization-v2/owner-decision.json",
+      "sha256": "b6aef2200e960ff16a188eb05551545674eabe8644d1c158a9f706e17841ae03",
+      "record": {
+        "approvedComponents": [
+          "qualifications",
+          "exclusions",
+          "source-limitations",
+          "narrative-structure",
+          "conceptual-visual-plan",
+          "caption-direction",
+          "reconstruction-disclosures"
+        ],
+        "approvedHookId": "phantom-traffic.hook.backward-wave",
+        "assetDecision": "pending-final-narration",
+        "assetId": "phantom-traffic.asset.backward-wave",
+        "assetRevision": 1,
+        "assetSha256": "567b6ad83b83f620004d624ab8e56f7530c0bc244574d494ab0554aaf23b7af3",
+        "authority": "explicit-owner-message",
+        "authorizedNextStep": "editorial-finalization-only",
+        "claimDecisions": [
+          {
+            "claimId": "phantom-traffic.claim.no-obstruction",
+            "decision": "approve",
+            "notes": "Owner explicitly approved the six promoted narration claims, including their documented qualifications.",
+            "statementSha256": "19d1ae2800e3d8e42f60c434430f8eacfd87558445883255f39e04b1082e5cec"
+          },
+          {
+            "claimId": "phantom-traffic.claim.vehicles",
+            "decision": "approve",
+            "notes": "Owner explicitly approved the six promoted narration claims, including their documented qualifications.",
+            "statementSha256": "c6c1965628319115bf27e422222edad8cf45b0a155555d0b8ba3c276906b8be3"
+          },
+          {
+            "claimId": "phantom-traffic.claim.circumference",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "306fbcb107d349c9cd1522b8b6ad45dd155ddb6b3170afbed7c12873de3ec917"
+          },
+          {
+            "claimId": "phantom-traffic.claim.instructions",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "7d6b0136831906029bbe887c65e6a23ebcfd6d38cc0830cacbc1b1477a9e3c41"
+          },
+          {
+            "claimId": "phantom-traffic.claim.emergence",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "a28d01f56383a709f0402d20582faa11369c2c192ba17e4571cefdba0c985ea3"
+          },
+          {
+            "claimId": "phantom-traffic.claim.conditional-growth",
+            "decision": "approve",
+            "notes": "Owner explicitly approved the six promoted narration claims, including their documented qualifications.",
+            "statementSha256": "623f6a7df271cbaa51565bdf9a0ae53ea4724d90a86d9d61b0dcf883b6636cc5"
+          },
+          {
+            "claimId": "phantom-traffic.claim.backward-pattern",
+            "decision": "approve",
+            "notes": "Owner explicitly approved the six promoted narration claims, including their documented qualifications.",
+            "statementSha256": "34a6c9c739b36849845d76cfe05b5efc5cddc23483621232845a5bed96343a83"
+          },
+          {
+            "claimId": "phantom-traffic.claim.turnover",
+            "decision": "approve",
+            "notes": "Owner explicitly approved the six promoted narration claims, including their documented qualifications.",
+            "statementSha256": "18ff432b637c37d7751af0206d50820702d0d7dc8763c63b0ad15ed3ea1c75dd"
+          },
+          {
+            "claimId": "phantom-traffic.claim.wave-speed",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "5c9d59e22757fc6e972fb6d41a68c05f8b8094ced1814cc8ae8db64fd6b0dc7b"
+          },
+          {
+            "claimId": "phantom-traffic.claim.measurement",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "f08f5daff7c1c40e2f59058966f8bf474704575f2c94be8896439fc9bc73ef39"
+          },
+          {
+            "claimId": "phantom-traffic.claim.stable-versus-unstable",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "a64f709c855f1bec87d7c4e9decb28bfc316a58e1b8364d4e12e22f3103babfb"
+          },
+          {
+            "claimId": "phantom-traffic.claim.density-not-guarantee",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "7d7da52ebb9cf7b09eb639c0452c065be62d40d21c56784fd42e3c0ee28d27a2"
+          },
+          {
+            "claimId": "phantom-traffic.claim.reaction-not-only",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "b356b45fc20c428d18d3e3a026f67cdffe7312d085d16e927b71d0c64a8c32dc"
+          },
+          {
+            "claimId": "phantom-traffic.claim.headway",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "1c9484c0a900d39ef934f090f107a76c9a8531497f3f85dfbb06fda09f869b2c"
+          },
+          {
+            "claimId": "phantom-traffic.claim.followup-experiment",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "a120aa7df67ed0ee8060a9a3addc04e4641f98ff245fad37749aec0ddd9d5672"
+          },
+          {
+            "claimId": "phantom-traffic.claim.nonlinear",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "d448c765ecaf9f0d7cb6e5ee962bbbcdce1f412d57fbec76cb9622c61d08368c"
+          },
+          {
+            "claimId": "phantom-traffic.claim.bottleneck-distinction",
+            "decision": "approve",
+            "notes": "Owner explicitly approved the six promoted narration claims, including their documented qualifications.",
+            "statementSha256": "a0ca6c48fa1cadc89a282a758d91a5ca88a5b609867ac9d294a54765ada839af"
+          },
+          {
+            "claimId": "phantom-traffic.claim.cleared-obstruction",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "bff259db88beb05e5cd926fda302742dc5dffa10f6173a7af1dab7a8979618f0"
+          },
+          {
+            "claimId": "phantom-traffic.claim.shockwave",
+            "decision": "defer",
+            "notes": "Reserve claim was not among the six promoted narration claims; no verification approval inferred.",
+            "statementSha256": "6267b3c69def34250850ac45e8fb48579b2aad3d6a68328cf2ace9d9540ed2c0"
+          },
+          {
+            "claimId": "phantom-traffic.claim.tiny-tap",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "28e13cda2d36b146818db8e46823f436135a67e1de2800bf706d1210ea2a9620"
+          },
+          {
+            "claimId": "phantom-traffic.claim.from-nothing",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "09ac4ee2989673a0a9160960ba1a93cc956e6db731cffe86c06f0b203889e669"
+          },
+          {
+            "claimId": "phantom-traffic.claim.driver-blame",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "c750579a94f3f8fc4a0bed323c148907211022d3ff7e8a30c6bfc58b19531e90"
+          },
+          {
+            "claimId": "phantom-traffic.claim.reaction-only",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "809465d3d91437047433035b7c126dd8b2d43fae7a56fd5b0475cd77aa29ff94"
+          },
+          {
+            "claimId": "phantom-traffic.claim.nobody-caused",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "8a45cd1e27c3b1c217876fb34c81d459474b735be6fce2f94818d08179810456"
+          },
+          {
+            "claimId": "phantom-traffic.claim.all-waves",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "34ad6500200b50bb19be9f14035c4b52f44dddc3130847ccab5d0cc18823fc5b"
+          },
+          {
+            "claimId": "phantom-traffic.claim.universal-speed",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "5ca3dcb0b4c41e9486f1817388fd329d0698e31eafb064a53ac4808668f57015"
+          },
+          {
+            "claimId": "phantom-traffic.claim.always-dense",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "d1de876bdd8a299fc053410fff1bc128ae7662b3dd10f5975e24acca110fcf63"
+          },
+          {
+            "claimId": "phantom-traffic.claim.autonomy",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "d09687df77bea009e425f56290d0a97bea7dbc9831cfcbc836e20ee0f7cdc79f"
+          },
+          {
+            "claimId": "phantom-traffic.claim.empty-proof",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "e974ecf9ea83f7eb9e09dd313759aa07f627e3ba5233413dea508e7df877f37b"
+          },
+          {
+            "claimId": "phantom-traffic.claim.backward-cars",
+            "decision": "reject",
+            "notes": "Owner approved the documented exclusions; this statement remains excluded.",
+            "statementSha256": "1a70a5d1560137da54ede28de7bfe61a774c75a8aef968d3330c126fa2dbe380"
+          }
+        ],
+        "enteredAt": "2026-09-30T22:31:14.582Z",
+        "id": "owner-decision.phantom-traffic.editorial-components.v1",
+        "kind": "claims-and-concept-editorial-finalization",
+        "ownerInstruction": "I approve the research direction and authorize the next bounded editorial finalization step.\n\nAPPROVED:\n\n- the six promoted narration claims;\n- the documented qualifications;\n- the documented exclusions;\n- the source limitations;\n- Hook Option 2 as the selected hook:\n\n  \u201cThe cars move forward. But a traffic jam can move backward.\u201d\n\n- the six-beat narrative structure;\n- the conceptual VisualPlan;\n- the central visual thesis:\n  cars move forward while the congestion pattern can propagate backward;\n- use of the 22-car circular-track experiment as controlled evidence;\n- the distinction between internally generated stop-and-go traffic and\n  congestion caused by external bottlenecks;\n- the requirement that experiment reconstructions / explanatory models be\n  disclosed appropriately;\n- the proposed caption direction.\n\nThen present the FINAL EXACT narration for owner approval.\n\nThis authorization is for EDITORIAL FINALIZATION ONLY.\n\nDo not fabricate a review timestamp that was not supplied; distinguish\ndecision-entry time according to repository conventions.",
+        "ownerSuppliedReviewTimestamp": null,
+        "packageId": "phantom-traffic",
+        "packageRevision": 1,
+        "packageSha256": "361a2d2bdf1634fcc643a137873754cbb0f91611946cbbdfde6128fa9933fa4f",
+        "productionAuthorized": false,
+        "publicationAuthorized": false,
+        "researchArtifactHashes": [
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/causality-decisions.json",
+            "sha256": "78a99b2f1987ce608e302ce59274771e0811fb4cdeb40d57db975fde522a7adc"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/claim-ledger.json",
+            "sha256": "6bb93794f5785690278f857cb9907e98a6c501ec10f6daf3626a7245a12ff19e"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/claim-review.json",
+            "sha256": "214ae8d6f0868a42d2e8281f042086167f3b28914a2d85b3c7201f9424238fdb"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/content-asset.review.json",
+            "sha256": "e694d5e0b6ceabbfe76ef023c17f698717ea12baf93616d0b9135c2a04ebbd91"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/hook-proposals.draft.json",
+            "sha256": "91d5b6980164578406e7057f4b2da9df50684ad973eb97c5604b063ebc656eb5"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/hook-review.json",
+            "sha256": "80235b239958830ee28ef6f82e4ba060fbb25f13514e80b31d73f7cc06eff954"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/knowledge-package.review.json",
+            "sha256": "e8ceff21a8babdab8470dbe6aa45ef4f0a6bef991f0785822175fe69eba05c2d"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/owner-review.md",
+            "sha256": "9c4fc3ab0810ddae8cad84740a68fb4a54307f611dd7970ead39a3589bbda715"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/research-workspace.draft.json",
+            "sha256": "17d5b30dc86bf90658f65326306ef9400e6de71a3ca95718e916b0f3565ea3fe"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/selection.json",
+            "sha256": "b7c566771e0f281dcf72757f1409336a5e018e83a56416f24808a40e9ee6009c"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/source-inspections.json",
+            "sha256": "45d3da37970b1741ca14e4e0022399b7a8b5935e62e6f06573b115ff7b56b5e7"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/topic-candidate.researching.json",
+            "sha256": "be17bd2f4e5468ea46be3eda0796b082825304c02ae126da3731e1780d369161"
+          },
+          {
+            "path": "content-intelligence/reviews/phantom-traffic-v1/artifact-manifest.json",
+            "sha256": "60a5c45e92c4e4b94a4ecfc6431e00cb6938d02d294181758b9a17c074affbfb"
+          }
+        ],
+        "reviewer": "Ahmet Nishefci",
+        "reviewId": "claim-review.phantom-traffic.v1",
+        "reviewSha256": "b6439b58c3dace9963d0b31b9548715b852a523669e0e3ee8cbba1309a6765c8",
+        "schemaVersion": 1,
+        "timeBasis": "decision-entry"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-master-lock-v1/owner-decision.json",
+      "sha256": "5ab0366ba92cc465e3aeafd03aaee97bb6bdcb7768fce983a98118506c9e41e0",
+      "record": {
+        "approvedScriptSha256": "1c5b5af5abb0e9522cd199a2f79d2f863a9f94c742437041c76cb703978ea87e",
+        "artifact": {
+          "bytes": 26945449,
+          "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+          "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+        },
+        "authority": "explicit-owner-message",
+        "candidateArtifactId": "phantom-traffic.candidate-v1.master",
+        "candidateBindings": {
+          "path": "content-intelligence/reviews/phantom-traffic-production-v1/candidate-bindings.json",
+          "sha256": "93099d1d48c5e828dc09f8a9c0b064f33d34488421694b45309c0ed0bd679d0b"
+        },
+        "captionPlan": {
+          "id": "caption-plan.phantom-traffic.v1",
+          "revision": 1,
+          "sha256": "3fd1a2d680c59a1673bbccc2bf5174aa0c34235713009810655b1a513c835f08"
+        },
+        "contentAsset": {
+          "id": "phantom-traffic.asset.backward-wave",
+          "revision": 3,
+          "sha256": "bc48c820585370750ca040e3683781391390b0e058d2f09f6c083803ef348f97"
+        },
+        "editorialApproval": {
+          "id": "owner-decision.phantom-traffic.editorial-lock.v1",
+          "revision": 1,
+          "sha256": "aa0ff09217ce87a7a61cba694418151c4398fc9639f7b1c11a350250aa85cd68"
+        },
+        "enteredAt": "2026-10-01T09:42:30.537Z",
+        "id": "owner-decision.phantom-traffic.master-visual.v1",
+        "knowledgePackage": {
+          "id": "phantom-traffic",
+          "revision": 3,
+          "sha256": "2b890a18a4c3a7d5a2647f517c3f37c0d1f42c81c4c8bbedf17fe691b9e154e8"
+        },
+        "masterArtifactId": "phantom-traffic.locked-master.v1",
+        "narrationBundleSha256": "b0d5cc3e35206dc75d68dcea56e1b85cb3a84fe5a29d273ab26442050e1f8765",
+        "ownerInstruction": "OWNER MASTER VISUAL REVIEW RESULT: APPROVED. I have visually reviewed Phantom Traffic Candidate V1 and approve it as the locked master. This approval applies ONLY to this exact rendered master. Proceed to PLATFORM PRESENTATION QA. Do NOT upload, publish or schedule.",
+        "ownerSuppliedReviewTimestamp": null,
+        "platformApprovalGranted": false,
+        "platformPresentationQaAuthorized": true,
+        "publicationApprovalGranted": false,
+        "reviewedCommit": "92fbe8611ac7ee21a15ec5da19f422ef2fccf741",
+        "reviewedProductionPlan": {
+          "id": "production-plan.phantom-traffic.v1",
+          "revision": 1,
+          "sha256": "ec8113641047cf94104d4900b6be43a41ab8fd1294889453e693edce322a1fde"
+        },
+        "reviewer": "Ahmet Nishefci",
+        "revision": 1,
+        "schemaVersion": 1,
+        "timeBasis": "decision-entry"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-publication-v1/owner-decision.json",
+      "sha256": "e37e45e658376a681d96d2eee9dbe6f368172d38cff0c0f5aec83eb1362b75fe",
+      "record": {
+        "schemaVersion": 1,
+        "id": "owner-decision.phantom-traffic.publication.v1",
+        "revision": 1,
+        "owner": "Ahmet Nishefci",
+        "authority": "explicit-owner-message",
+        "decision": "PUBLICATION AUTHORIZED",
+        "enteredAt": "2026-10-01T11:16:54.833Z",
+        "timeBasis": "decision-entry",
+        "ownerSuppliedReviewTimestamp": null,
+        "reviewedCommit": "3bf67af7fc5b10b4150d459f9431397d2946ad95",
+        "ownerStatement": "I authorize Phantom Traffic for publication using the delivery packages already prepared by Magnivis. I did NOT complete the previously requested six-surface real-device pre-publication review. I am explicitly accepting that remaining presentation uncertainty and choosing to proceed with publication.",
+        "correctsPriorDecision": {
+          "path": "content-intelligence/reviews/phantom-traffic-delivery-v1/owner-decision.json",
+          "sha256": "f17ca8c304320e3762c125bfa01e5396b277efd9c72b7d8ef9b7f3d4859c1c86"
+        },
+        "master": {
+          "path": "artifacts/masters/phantom-traffic-candidate-v1.mp4",
+          "sha256": "bdf22d48b4fe1b873fd659a487954c09c1573dd5466795656128c08d03208d4b"
+        },
+        "selectedInstagramCover": {
+          "path": "artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+          "sha256": "3494907b3759b03146d1f050c17be653e807ba0b5b75abaafa0e87e79e0ccef5"
+        },
+        "preparedPackageIndex": {
+          "path": "content-intelligence/reviews/phantom-traffic-delivery-v1/delivery-index.json",
+          "sha256": "60ae3b5970c3e248ce64b3d838ec842b9caf4e46d2064671b2fe797627187b19"
+        },
+        "copy": {
+          "path": "content-intelligence/reviews/phantom-traffic-delivery-v1/platform-copy.json",
+          "sha256": "2bf297b6e928dcdb6de20515acf33a7ab25ed140f305ee2aa056262044a4e88f"
+        },
+        "platforms": [
+          "youtube",
+          "tiktok",
+          "instagram",
+          "facebook"
+        ],
+        "presentationRiskAccepted": true,
+        "realDevicePrepublicationReviewCompleted": false,
+        "realDevicePassesGranted": [],
+        "coverDeviceApprovalGranted": false,
+        "metadata": {
+          "device": null,
+          "os": null,
+          "appVersion": null,
+          "testedAt": null,
+          "screenshots": [],
+          "measurements": null
+        },
+        "execution": "owner-manual-only",
+        "assistantUploadAuthorized": false,
+        "publicationOccurred": false,
+        "postPublicationReview": "pending-live-publication-evidence",
+        "limitations": [
+          "Native exclusion/caption geometry remains incomplete.",
+          "Instagram grid and Facebook Page/feed crop geometry remain unmeasured.",
+          "Cover selected for use, not declared device-tested.",
+          "Earlier owner report preserved; this clarification supersedes its interpretation, not its bytes."
+        ]
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/phantom-traffic-v1/selection.json",
+      "sha256": "b7c566771e0f281dcf72757f1409336a5e018e83a56416f24808a40e9ee6009c",
+      "record": {
+        "authority": "Explicit owner instruction: MAGNIVIS CONTENT CYCLE #1 MILESTONE 2: TRAFFIC WAVES RESEARCH + EDITORIAL PROPOSAL",
+        "authorizedScope": "bounded-deep-research-and-editorial-proposal",
+        "candidateId": "topic.phantom-traffic",
+        "cycleId": "discovery.cycle-1-2026-09-30",
+        "discoveryCandidateRevision": 1,
+        "discoveryPath": "content-intelligence/discovery/cycle-1-2026-09-30/discovery.json",
+        "discoverySha256": "15ef69aa84e95413c0be6ce3cdc02a9b6c563110f8db3c9534dd53938a553da0",
+        "editorialApproval": false,
+        "owner": "Ahmet Nishefci",
+        "productionAuthorized": false,
+        "provenance": {
+          "baseCommit": "365f3a4fa8bc0fe205d15071c838a3ef2339bde7",
+          "method": "manual-ai-assisted-source-inspection-and-editorial-drafting",
+          "model": "GPT-6",
+          "modelIdentityBasis": "session developer identity; no provider response/model version or token usage available",
+          "operator": "Codex",
+          "paidApiUsed": false,
+          "workflowEnvelope": false
+        },
+        "publicationAuthorized": false,
+        "recordedAt": "2026-09-30T22:10:37.039Z",
+        "recordedLocalDate": "2026-10-01",
+        "researchCandidateRevision": 2,
+        "schemaVersion": 1,
+        "timezone": "Europe/Belgrade"
+      }
+    },
+    {
+      "path": "content-intelligence/reviews/wood-frog-freeze-v1/owner-decision.json",
+      "sha256": "840c496fe81b1dc043d9655ac6e6a17069ba09106bb8253aa72c22003eaf2d51",
+      "record": {
+        "approvedHookId": "wood-frog-freeze-tolerance.hook.stopped-heart",
+        "assetDecision": "approve",
+        "assetId": "wood-frog-freeze-tolerance.asset.how-freezing-works",
+        "assetRevision": 2,
+        "claimDecisions": [
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.freeze-survival",
+            "decision": "approve",
+            "notes": "Owner reviewed the evidence, revised wording, caveats, and source-access limitations and approves verification.",
+            "statementSha256": "5a0047cdc27415ebf22da9d1d7cefb7ee2451fbd2c1e20e1e3f08ad779d5d5d2"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.cardiac-arrest",
+            "decision": "approve",
+            "notes": "Owner reviewed the primary ECG evidence, revised wording, caveats, and source-access limitations and approves verification.",
+            "statementSha256": "da4650449d9e81145486164686167750e44ea6892f46e6490e43c298b791412a"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.ventilation-cessation",
+            "decision": "approve",
+            "notes": "Owner reviewed the pulmonary-ventilation evidence, revised wording, caveats, and source-access limitations and approves verification; this claim remains outside the approved asset.",
+            "statementSha256": "dfe10ddb227569c5ac18ddc54c5f3db10b0c1f3d20c4bb0b4cfb48eaaee5f982"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.thaw-recovery-order",
+            "decision": "approve",
+            "notes": "Owner reviewed the thaw-recovery evidence, revised wording, caveats, and source-access limitations and approves verification.",
+            "statementSha256": "65ce01bf8ab045705dc311512ac485860372a4fb51c8e6fd4b82b714a6d637ab"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.circulation-cessation",
+            "decision": "reject",
+            "notes": "Direct primary blood-flow evidence was not located. Keep this claim uncertain and excluded from the approved hook, script, narrative, and VisualPlan.",
+            "statementSha256": "c8cbe5e58a3a9bd2af3103f908c3db31b61fe9e6c1dcbb3070b201f03dd6d7c7"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.glucose-cryoprotectant",
+            "decision": "approve",
+            "notes": "Owner reviewed the evidence, revised wording, caveats, and source-access limitations and approves verification.",
+            "statementSha256": "39c5ac8b58f86156521fdcad6fe6ac7a4e6a6a9d8243f8d4ce1e9ec20438eb64"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.urea-and-glucose",
+            "decision": "approve",
+            "notes": "Owner reviewed the evidence, revised wording, distinct timing, caveats, and source-access limitations and approves verification.",
+            "statementSha256": "75bdfadee71be0f7b2956831b676e7d7bb54e94ca5a6eb09334604a15e3fcd6c"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.ice-redistribution",
+            "decision": "approve",
+            "notes": "Owner reviewed the evidence, revised wording, scientific visual caveats, and source-access limitations and approves verification.",
+            "statementSha256": "0a0b5dd33eb4ca0f78bce52ff42b8c02747d25c248b338e37e50ae1dccabb622"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.alaska-temperature",
+            "decision": "approve",
+            "notes": "Owner reviewed the population- and experiment-specific wording, evidence, caveats, and source-access limitations and approves verification; this claim remains outside the approved asset.",
+            "statementSha256": "da0df860ee238b62c2671d98d6d7646275ecf7a87bf4bf4e5e49702efe3311dd"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.alaska-eight-weeks",
+            "decision": "approve",
+            "notes": "Owner reviewed the corrected denominator, prior-exposure caveat, evidence, and source-access limitations and approves verification; this claim remains outside the approved asset.",
+            "statementSha256": "df91958639646ba114639e429d6491835e561787870daf930199883203abf11c"
+          },
+          {
+            "claimId": "wood-frog-freeze-tolerance.claim.alaska-twelve-weeks",
+            "decision": "approve",
+            "notes": "Owner reviewed the experiment-specific wording, evidence, caveats, and source-access limitations and approves verification; this claim remains outside the approved asset.",
+            "statementSha256": "2244650286178ff1c69e9de04ef5bf40f8be9de18edf085853d8d6645dcdfbfd"
+          }
+        ],
+        "explicitConfirmation": "I reviewed the evidence and approve these editorial decisions.",
+        "id": "owner-decision.wood-frog-freeze.v1",
+        "notes": "Owner reviewed the Wood Frog claim-review handoff and approved the eligible evidence-backed claims, recommended hook, final script, narrative structure, VisualPlan, and procedural asset strategy. The circulation-cessation claim remains uncertain and excluded. Source-access limitations and evidence provenance must remain preserved.",
+        "packageId": "wood-frog-freeze-tolerance",
+        "packageRevision": 2,
+        "reviewedAt": "2026-09-28T09:21:09Z",
+        "reviewer": "Ahmet Nishefci",
+        "reviewId": "claim-review.wood-frog-freeze.v1",
+        "schemaVersion": 1
+      }
+    }
+  ],
+  "reviewPackages": [
+    "content-intelligence/reviews/chocolate-crystal-choice-approved-v3",
+    "content-intelligence/reviews/chocolate-crystal-choice-finalization-v2",
+    "content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1",
+    "content-intelligence/reviews/chocolate-crystal-choice-platform-v1",
+    "content-intelligence/reviews/chocolate-crystal-choice-production-v1",
+    "content-intelligence/reviews/chocolate-crystal-choice-publication-v1",
+    "content-intelligence/reviews/chocolate-crystal-choice-v1",
+    "content-intelligence/reviews/longitude-clock-approved-v3",
+    "content-intelligence/reviews/longitude-clock-finalization-v2",
+    "content-intelligence/reviews/longitude-clock-platform-v1",
+    "content-intelligence/reviews/longitude-clock-production-v1",
+    "content-intelligence/reviews/longitude-clock-production-v2",
+    "content-intelligence/reviews/longitude-clock-publication-v1",
+    "content-intelligence/reviews/longitude-clock-v1",
+    "content-intelligence/reviews/phantom-traffic-finalization-v2",
+    "content-intelligence/reviews/phantom-traffic-platform-v1",
+    "content-intelligence/reviews/phantom-traffic-production-v1",
+    "content-intelligence/reviews/phantom-traffic-v1",
+    "content-intelligence/reviews/wood-frog-freeze-v1"
+  ],
+  "discovery": [
+    {
+      "path": "content-intelligence/discovery/cycle-1-2026-09-30/discovery.json",
+      "candidates": 40,
+      "shortlist": 11,
+      "evaluations": 11,
+      "sourceLeads": 12,
+      "selectedTopicId": null
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-2-2026-10-01/discovery.json",
+      "candidates": 36,
+      "shortlist": 10,
+      "evaluations": 10,
+      "sourceLeads": 16,
+      "selectedTopicId": null
+    },
+    {
+      "path": "content-intelligence/discovery/cycle-3-2026-10-01/discovery.json",
+      "candidates": 34,
+      "shortlist": 10,
+      "evaluations": 10,
+      "sourceLeads": 10,
+      "selectedTopicId": null
+    }
+  ],
+  "branchRefs": [
+    "refs/heads/architecture/artifact-v2-canonical-media 46322f0f5174d2639a03b5378ff7c7d90d8fa77b",
+    "refs/heads/audit/magnivis-system-architecture-2026-10 46322f0f5174d2639a03b5378ff7c7d90d8fa77b",
+    "refs/heads/content-intelligence/cycle-1-discovery 365f3a4fa8bc0fe205d15071c838a3ef2339bde7",
+    "refs/heads/creative/cycle-3-chocolate-direction cca828c3320a062764cf3185dd23bd05ce197404",
+    "refs/heads/delivery/cycle-2-longitude-clock 93e9fff0e7390e88f111d925a6baa3588d74de00",
+    "refs/heads/delivery/cycle-3-chocolate-platform-review b687adeac8a93543f3d3d4724e80ae450243dcf2",
+    "refs/heads/discovery/cycle-2-open-world c122a3a158ffa33dd31463839e7654229acfb441",
+    "refs/heads/discovery/cycle-3-open-world d0026125de4d3866738c6da232c8ce480aa15769",
+    "refs/heads/main cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+    "refs/heads/production/cycle-2-longitude-clock 919d18ce20e39209d3279893781669b5d5eeccbd",
+    "refs/heads/production/cycle-2-longitude-clock-narrator-v2 e6fd1653d98a9e9049087f56262885e2a05a3018",
+    "refs/heads/production/cycle-3-chocolate-master d317a4f5a4f7a8df57bc371855fb3a7e4b886aa5",
+    "refs/heads/publication/cycle-3-chocolate-manual-release f7525176463b4e80045fb6d5d1e84de8de160569",
+    "refs/heads/recovery/magnivis-post-reset 9f289d4a05714b3daf0bcc47f9b8e481600eaae5",
+    "refs/heads/recovery/wood-frog-canonical 12b52d24423e549e85d882cd209df0cc44634078",
+    "refs/heads/research/cycle-1-traffic-waves 169c08217c6b6962f7a8b8b8b0d4882ad0a3b140",
+    "refs/heads/research/cycle-2-longitude-clock 4c4c967f968972108f53221f6921f721246cf0db",
+    "refs/heads/research/cycle-3-chocolate-crystallization 2312d200a73b841efb60a86c56d664fe8d6602ff",
+    "refs/remotes/origin/HEAD cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+    "refs/remotes/origin/architecture/artifact-v2-canonical-media 46322f0f5174d2639a03b5378ff7c7d90d8fa77b",
+    "refs/remotes/origin/content-intelligence/cycle-1-discovery 365f3a4fa8bc0fe205d15071c838a3ef2339bde7",
+    "refs/remotes/origin/creative/cycle-3-chocolate-direction cca828c3320a062764cf3185dd23bd05ce197404",
+    "refs/remotes/origin/delivery/cycle-2-longitude-clock 93e9fff0e7390e88f111d925a6baa3588d74de00",
+    "refs/remotes/origin/delivery/cycle-3-chocolate-platform-review b687adeac8a93543f3d3d4724e80ae450243dcf2",
+    "refs/remotes/origin/discovery/cycle-2-open-world c122a3a158ffa33dd31463839e7654229acfb441",
+    "refs/remotes/origin/discovery/cycle-3-open-world d0026125de4d3866738c6da232c8ce480aa15769",
+    "refs/remotes/origin/main cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+    "refs/remotes/origin/production/cycle-2-longitude-clock 919d18ce20e39209d3279893781669b5d5eeccbd",
+    "refs/remotes/origin/production/cycle-2-longitude-clock-narrator-v2 e6fd1653d98a9e9049087f56262885e2a05a3018",
+    "refs/remotes/origin/production/cycle-3-chocolate-master d317a4f5a4f7a8df57bc371855fb3a7e4b886aa5",
+    "refs/remotes/origin/publication/cycle-3-chocolate-manual-release f7525176463b4e80045fb6d5d1e84de8de160569",
+    "refs/remotes/origin/recovery/magnivis-post-reset 9f289d4a05714b3daf0bcc47f9b8e481600eaae5",
+    "refs/remotes/origin/recovery/wood-frog-canonical 12b52d24423e549e85d882cd209df0cc44634078",
+    "refs/remotes/origin/research/cycle-1-traffic-waves 169c08217c6b6962f7a8b8b8b0d4882ad0a3b140",
+    "refs/remotes/origin/research/cycle-2-longitude-clock 4c4c967f968972108f53221f6921f721246cf0db",
+    "refs/remotes/origin/research/cycle-3-chocolate-crystallization 2312d200a73b841efb60a86c56d664fe8d6602ff"
+  ],
+  "unmergedHistory": [
+    "7696e7cd8c90584de0be9c287942c4a4faadd74c 2026-10-01T17:11:55+02:00 Complete Cycle #2 open-world discovery for owner topic selection",
+    "c122a3a158ffa33dd31463839e7654229acfb441 2026-10-01T17:12:46+02:00 Finalize discovery report hygiene and integrity bindings",
+    "c957692f87d376d5cfef1377042df2314d4eb638 2026-10-01T18:03:35+02:00 Research Cycle 2 longitude clock for owner editorial review",
+    "d22145a86d791730c0a2e5dd03558a8d968473b4 2026-10-01T18:37:39+02:00 Finalize Cycle 2 longitude editorial proposal for owner approval",
+    "4c4c967f968972108f53221f6921f721246cf0db 2026-10-01T19:00:50+02:00 Record longitude editorial approval and propose adaptive creative direction",
+    "919d18ce20e39209d3279893781669b5d5eeccbd 2026-10-01T20:11:58+02:00 Produce Longitude Clock owner-review master with bound plans and durable QA",
+    "e6fd1653d98a9e9049087f56262885e2a05a3018 2026-10-01T20:42:50+02:00 Restore primary narrator and retain Longitude Clock candidate v2",
+    "344a3a4cddf750ed2135c6c939f37b67567016db 2026-10-01T22:20:57+02:00 Lock Longitude Clock V2 master and prepare platform review deliveries",
+    "541331bdef7af2c7f188f8ec7fe65e0dc4dd478a 2026-10-01T22:31:05+02:00 Retain clean-clone and caption-midpoint delivery QA evidence",
+    "93e9fff0e7390e88f111d925a6baa3588d74de00 2026-10-01T23:05:25+02:00 Authorize Longitude Clock manual publication under accepted presentation risk",
+    "d0026125de4d3866738c6da232c8ce480aa15769 2026-10-01T23:46:40+02:00 Record Longitude scheduling and complete Cycle 3 open-world discovery",
+    "7f1ed11272b64cef6fae28e4254e58f4694d2c67 2026-10-02T00:06:34+02:00 Research Cycle 3 chocolate crystallization for editorial review",
+    "2312d200a73b841efb60a86c56d664fe8d6602ff 2026-10-02T00:36:02+02:00 Finalize Cycle 3 chocolate editorial review and scoped claim verification",
+    "cca828c3320a062764cf3185dd23bd05ce197404 2026-10-02T00:52:46+02:00 Approve Cycle 3 editorial and propose chocolate material-cutaway direction",
+    "023abdbe5bffa6e387cd0ce06d344cda6a27f4a6 2026-10-02T01:53:40+02:00 Produce chocolate material-cutaway owner-review master candidate",
+    "d317a4f5a4f7a8df57bc371855fb3a7e4b886aa5 2026-10-02T01:54:44+02:00 Record clean committed restore proof for chocolate candidate",
+    "b687adeac8a93543f3d3d4724e80ae450243dcf2 2026-10-02T12:04:37+02:00 Lock Chocolate V1 master and prepare four platform review handoffs",
+    "f7525176463b4e80045fb6d5d1e84de8de160569 2026-10-02T12:26:02+02:00 Authorize owner manual Chocolate publication with accepted presentation risk",
+    "46322f0f5174d2639a03b5378ff7c7d90d8fa77b 2026-10-02T13:19:03+02:00 Introduce canonical media references and platform-aware delivery V3"
+  ]
+}

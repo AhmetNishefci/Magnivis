@@ -1,0 +1,187 @@
+{
+  "platforms": [
+    {
+      "platform": "youtube",
+      "surfaces": [
+        "shorts-mobile",
+        "shorts-desktop-web",
+        "shorts-cover"
+      ],
+      "internalExport": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "aspectRatio": "9:16",
+        "container": "mp4",
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "durationSeconds": [
+          3,
+          60
+        ],
+        "knowledge": "Internal conservative profile, not exhaustive current platform limits"
+      },
+      "playbackInsetsTopRightBottomLeft": [
+        240,
+        190,
+        310,
+        84
+      ],
+      "classification": "OWNER-REPORTED / PROVISIONAL MODEL",
+      "notes": "Top approximate owner recovery; remaining inherited. No native exclusions/caption zones. Desktop/cover geometry unknown.",
+      "nativeExclusionZones": "UNKNOWN",
+      "captionRegion": "UNKNOWN",
+      "currentLongitudeChocolateDevicePasses": 0,
+      "gridFeedCoverGeometry": "UNKNOWN",
+      "aiDisclosurePlacement": "UNKNOWN",
+      "settingsTranscodeNativeCaptionBehavior": "Owner/live UI confirmation; not guaranteed by local checks",
+      "sources": [
+        "src/design/safe-areas.ts",
+        "src/platform-variants/platform-profiles.ts",
+        "artifacts/presentation-profiles.json",
+        "docs/PLATFORM-QA.md"
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "surfaces": [
+        "feed-mobile",
+        "cover"
+      ],
+      "internalExport": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "aspectRatio": "9:16",
+        "container": "mp4",
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "durationSeconds": [
+          3,
+          60
+        ],
+        "knowledge": "Internal conservative profile, not exhaustive current platform limits"
+      },
+      "playbackInsetsTopRightBottomLeft": [
+        240,
+        190,
+        310,
+        84
+      ],
+      "classification": "HISTORICAL SPECIFIC DEVICE REVIEW / PROVISIONAL FOR NEW MEDIA",
+      "notes": "Speed of Light iPhone17 ProMax historical pass, no transfer to new media; cover unknown.",
+      "nativeExclusionZones": "UNKNOWN",
+      "captionRegion": "UNKNOWN",
+      "currentLongitudeChocolateDevicePasses": 0,
+      "gridFeedCoverGeometry": "UNKNOWN",
+      "aiDisclosurePlacement": "UNKNOWN",
+      "settingsTranscodeNativeCaptionBehavior": "Owner/live UI confirmation; not guaranteed by local checks",
+      "sources": [
+        "src/design/safe-areas.ts",
+        "src/platform-variants/platform-profiles.ts",
+        "artifacts/presentation-profiles.json",
+        "docs/PLATFORM-QA.md"
+      ]
+    },
+    {
+      "platform": "instagram",
+      "surfaces": [
+        "reel-playback",
+        "profile-grid-cover"
+      ],
+      "internalExport": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "aspectRatio": "9:16",
+        "container": "mp4",
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "durationSeconds": [
+          3,
+          60
+        ],
+        "knowledge": "Internal conservative profile, not exhaustive current platform limits"
+      },
+      "playbackInsetsTopRightBottomLeft": [
+        130,
+        170,
+        280,
+        72
+      ],
+      "classification": "PROVISIONAL MODEL / OWNER-HISTORICAL REPORT",
+      "notes": "Playback acceptance without original capture; grid crop null.",
+      "nativeExclusionZones": "UNKNOWN",
+      "captionRegion": "UNKNOWN",
+      "currentLongitudeChocolateDevicePasses": 0,
+      "gridFeedCoverGeometry": "UNKNOWN",
+      "aiDisclosurePlacement": "UNKNOWN",
+      "settingsTranscodeNativeCaptionBehavior": "Owner/live UI confirmation; not guaranteed by local checks",
+      "sources": [
+        "src/design/safe-areas.ts",
+        "src/platform-variants/platform-profiles.ts",
+        "artifacts/presentation-profiles.json",
+        "docs/PLATFORM-QA.md"
+      ]
+    },
+    {
+      "platform": "facebook",
+      "surfaces": [
+        "reel-viewer",
+        "page-feed"
+      ],
+      "internalExport": {
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "aspectRatio": "9:16",
+        "container": "mp4",
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "durationSeconds": [
+          3,
+          60
+        ],
+        "knowledge": "Internal conservative profile, not exhaustive current platform limits"
+      },
+      "playbackInsetsTopRightBottomLeft": [
+        120,
+        160,
+        270,
+        72
+      ],
+      "classification": "PROVISIONAL MODEL / OWNER-HISTORICAL REPORT",
+      "notes": "Dedicated playback broad acceptance; feed upper crop/obstruction qualitative, unmeasured.",
+      "nativeExclusionZones": "UNKNOWN",
+      "captionRegion": "UNKNOWN",
+      "currentLongitudeChocolateDevicePasses": 0,
+      "gridFeedCoverGeometry": "UNKNOWN",
+      "aiDisclosurePlacement": "UNKNOWN",
+      "settingsTranscodeNativeCaptionBehavior": "Owner/live UI confirmation; not guaranteed by local checks",
+      "sources": [
+        "src/design/safe-areas.ts",
+        "src/platform-variants/platform-profiles.ts",
+        "artifacts/presentation-profiles.json",
+        "docs/PLATFORM-QA.md"
+      ]
+    }
+  ],
+  "verifiedLocalOnly": [
+    "exact media hashes",
+    "full decode",
+    "sampled typography bounds",
+    "caption midpoints",
+    "authored containment against known internal insets"
+  ],
+  "realDeviceRequirements": [
+    "exact media/cover hash",
+    "surface",
+    "mobile device",
+    "reviewer",
+    "test time",
+    "evidence"
+  ],
+  "timelineGuarantee": false,
+  "variantFreedom": "Different and shared transformed bytes permitted, subject to explicit spec/profile/QA/approval requirements. Fixed envelopes/safe-area IDs and one asset/platform/surface key restrict generic registry.",
+  "v2Change": "Canonical identity deduplicates actual equality; no penalty for different presentations; no automatic adaptation or universal UI safety."
+}

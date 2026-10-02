@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Inspection/system mapping only; no remediation or approval inferred",
+  "startingMainCommit": "cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+  "artifactV2Commit": "46322f0f5174d2639a03b5378ff7c7d90d8fa77b",
+  "auditBranch": "audit/magnivis-system-architecture-2026-10",
+  "nextHumanGate": "AHMET \u2014 MAGNIVIS SYSTEM ARCHITECTURE AUDIT REVIEW",
+  "files": [
+    {
+      "name": "artifact-storage-analysis.json",
+      "bytes": 117909,
+      "sha256": "52958e384ee089896b7ff633f51035fc3178f2018e7ef92c1a56859c89a44bcc"
+    },
+    {
+      "name": "decision-and-cycle-inventory.json",
+      "bytes": 144204,
+      "sha256": "fa3759f4b5fb773c38f4ad5c27179cb92a3ef495f19922a308a6a957521ad5a4"
+    },
+    {
+      "name": "documentation-authority-map.json",
+      "bytes": 5172,
+      "sha256": "39777093ac83f55516d9770c48f02b87e3304823bf3f6b5762ee9bef9b08d6ec"
+    },
+    {
+      "name": "documentation-inventory.json",
+      "bytes": 21942,
+      "sha256": "929510451bd44cd4cfaeedf98e649a61bf2910026648ebf92a45d9ab510d1b89"
+    },
+    {
+      "name": "evidence-index.json",
+      "bytes": 163060,
+      "sha256": "fdc40abc7fa6c90d92c59c1d5c4f95ea138d26a94cc30b1b6f45dc3878dfa24f"
+    },
+    {
+      "name": "findings.json",
+      "bytes": 13736,
+      "sha256": "0e178ffcf6f9c0087945470fb61d04a6f1fa4794ee8df2b9c73edeffa70f834b"
+    },
+    {
+      "name": "owner-gates.json",
+      "bytes": 17660,
+      "sha256": "66579bdbc3eac3827c4c6078018ff48ef8f22d3110f3a1422c4843624a807ca9"
+    },
+    {
+      "name": "owner-review.md",
+      "bytes": 93752,
+      "sha256": "5282c89ef90ea9063a48268712a46e35995c8b3ebf7953330496e70e92d9fc4a"
+    },
+    {
+      "name": "platform-capability-map.json",
+      "bytes": 5978,
+      "sha256": "511cf4755ea40fd8b65e293ba908a9e7a0695feec8f024632d42096e0b6868ae"
+    },
+    {
+      "name": "test-inventory.json",
+      "bytes": 37259,
+      "sha256": "840b4d3ed65f2ac0a7cc4fac3c337e62dc77b87e73259180d1333ea5d0e29eff"
+    },
+    {
+      "name": "test-taxonomy.json",
+      "bytes": 3356,
+      "sha256": "5850385a1eca367f7f8fe8ff60fee3870a10c7d84469e02102f30cb25302df46"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 5386,
+      "sha256": "98ecad24fab4574ce5b26465b27d43f351797e4363fb3a335110ef1f4e6106f7"
+    },
+    {
+      "name": "verify-audit.py",
+      "bytes": 2954,
+      "sha256": "52122c277ed5428442eb49ef46ffe78677d3a7439b5e922e383a02c1fc13e8a0"
+    },
+    {
+      "name": "workflow-map.json",
+      "bytes": 14605,
+      "sha256": "c7169998e3accd8071dacc5adc959a063922f2674070c50e41e3dfaf93d04345"
+    }
+  ],
+  "selfHashExcluded": true,
+  "endingCommitResolution": "git log -1 --format=%H -- system-audits/magnivis-system-architecture-2026-10"
+}

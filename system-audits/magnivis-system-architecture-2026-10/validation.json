@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "baselineBeforeAuditFiles": {
+    "command": "pnpm check",
+    "passed": true,
+    "typecheck": true,
+    "lint": true,
+    "tests": 421,
+    "files": 43,
+    "runtime": "Default Node v24.21.0; outside declared >=20.19<23; engine warning recorded",
+    "source": "Observed command output during audit, prior to first audit file creation"
+  },
+  "finalWithAuditFiles": {
+    "command": "PATH=<installed Node22 bin>:$PATH pnpm check",
+    "runtime": "Node v22.23.3 / pnpm 10.17.1",
+    "passed": false,
+    "typecheck": true,
+    "lint": true,
+    "passedTests": 416,
+    "failedTests": 5,
+    "passedFiles": 38,
+    "failedFiles": 5,
+    "totalFiles": 43,
+    "cause": "Unrelated authorized audit directory is outside fixed V2 milestone file allowlist",
+    "failureLines": [
+      "FAIL  tests/chocolate-direction.test.ts > Chocolate exact editorial approval and direction proposal > preserves eight verified statements and requires owner direction approval",
+      "Error: Artifact V2 scope violation: system-audits/magnivis-system-architecture-2026-10/artifact-storage-analysis.json",
+      "FAIL  tests/chocolate-finalization.test.ts > Chocolate editorial finalization scope > verifies only eight needed statements and retains final asset approval gate",
+      "Error: Artifact V2 scope violation: system-audits/magnivis-system-architecture-2026-10/artifact-storage-analysis.json",
+      "FAIL  tests/chocolate-production.test.ts > Chocolate candidate authority and scientific safeguards > binds owner scope, eight claims and measured story duration while preserving history",
+      "Error: Artifact V2 scope violation: system-audits/magnivis-system-architecture-2026-10/artifact-storage-analysis.json",
+      "FAIL  tests/chocolate-research.test.ts > Cycle #3 chocolate research gate > preserves discovery and policies with native review-only identities",
+      "Error: Artifact V2 scope violation: system-audits/magnivis-system-architecture-2026-10/artifact-storage-analysis.json",
+      "FAIL  tests/media-artifacts.test.ts > Media content identity, historical safety and durability > enforces scoped historical preservation and canonical durability in pnpm check",
+      "Error: Artifact V2 scope violation: system-audits/magnivis-system-architecture-2026-10/artifact-storage-analysis.json"
+    ],
+    "validatorModified": false
+  },
+  "durability": {
+    "requestedCommand": "pnpm artifacts:durable",
+    "passed": true,
+    "runtime": "Node v22.23.3",
+    "requiredNativeRecords": 731,
+    "canonical": {
+      "passed": true,
+      "canonicalPayloads": 366,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "initialSandboxLimit": "tsx CLI local IPC listen EPERM; first default package-manager attempt also failed registry identity verification",
+    "successfulExecution": "Read-only command with sandbox escalation; also direct node --import tsx scripts/verify-durable-artifacts.ts passed without IPC",
+    "receiptFileSha256": "059147cecc6c1e4f5bf03b8e8088b550ff0f68f1da15f3a3c52d5b9ce5212573",
+    "largeReceiptsNotCopied": true
+  },
+  "negativeProbes": {
+    "method": "node --import tsx --input-type=module; cloned in-memory records only; no production or catalog writes",
+    "results": {
+      "resolverAcceptsLegacyPathMismatch": {
+        "mediaArtifact": {
+          "id": "media.3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+          "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7"
+        },
+        "uploadFile": "artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+        "bytes": 2923379,
+        "legacyPackage": true
+      },
+      "publicationRegistryAcceptsWrongManifestHash": 5
+    },
+    "interpretation": "Resolver intentionally legacy hash lookup, not complete approval check. Generic registry does not validate delivery digest; stronger helper/content-specific validators separate."
+  },
+  "visualInspection": {
+    "existingOnly": true,
+    "files": [
+      "artifacts/qa/chocolate-crystal-choice/contact-sheet.jpg",
+      "artifacts/qa-evidence/longitude-clock-candidate-v2/contact-sheet.jpg",
+      "artifacts/qa-evidence/wood-frog/contact-sheet.jpg",
+      "artifacts/qa-evidence/phantom-traffic-candidate-v1/contact-sheet.jpg"
+    ],
+    "newRendering": false,
+    "audioListeningClaimed": false
+  },
+  "auditSpecific": "python3 system-audits/magnivis-system-architecture-2026-10/verify-audit.py; result checked before commit and after push",
+  "noProductionChanges": true,
+  "noPlatformAction": true,
+  "noMerge": true,
+  "cycle4Started": false,
+  "git": {
+    "startingMain": "cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+    "startingHeadV2": "46322f0f5174d2639a03b5378ff7c7d90d8fa77b",
+    "fetchedOriginBeforeInspection": true,
+    "startingWorkingTree": "clean",
+    "auditBranch": "audit/magnivis-system-architecture-2026-10",
+    "endingCommitResolution": "git log -1 --format=%H -- system-audits/magnivis-system-architecture-2026-10",
+    "finalRemoteAndTreeReceipt": "Owner final response; inspect git rev-parse HEAD origin/audit/magnivis-system-architecture-2026-10 and git status --short"
+  }
+}

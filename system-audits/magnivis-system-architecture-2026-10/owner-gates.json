@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "authenticationLimit": "Schemas validate asserted decisions and exact bindings; they cannot independently authenticate owner conversation or external truth. Rows represent purposes, not guaranteed separate prompts.",
+  "gates": [
+    {
+      "name": "New content scope",
+      "decisionArtifactsInvariant": "Authorize discovery cycle; current state/scope",
+      "enforcementActualUse": "AGENTS/docs and cycle inputs; no global scheduler; all recent cycles",
+      "approvalRejectionDistinctJudgment": "Start bounded discovery / remain paused. New workload authority",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "No global schema initiation gate",
+      "validatorRequirement": "Cycle inputs/provenance record scope",
+      "operationalConventionOnly": true
+    },
+    {
+      "name": "Topic selection",
+      "decisionArtifactsInvariant": "Choose finalist for research; pool/shortlist/finalists/risks",
+      "enforcementActualUse": "Discovery handoff validator requires pending/null selection; later scoped selection validates owner instruction. Generic API has no owner selection field. Phantom/Longitude/Chocolate used",
+      "approvalRejectionDistinctJudgment": "Bounded research / hold, alternative or new discovery. New editorial portfolio judgment",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Generic candidate/research: no. Scoped selection records: yes.",
+      "validatorRequirement": "Discovery validators require pending/null; research validates separate owner selection.",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Live research source/claim pause",
+      "decisionArtifactsInvariant": "Inspect model-proposed leads/claims; run review",
+      "enforcementActualUse": "CLI all-stage live trial prohibited; docs mandatory pause. Fixture trial differs; recent research manual",
+      "approvalRejectionDistinctJudgment": "Supported review proposal / revise evidence or stop. No factual authority from AI",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "CLI live all-stage trial prohibited; AI workspace unverified",
+      "validatorRequirement": "Operator/CI tests enforce draft states; actual source judgment manual",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Research acceptance / finalization",
+      "decisionArtifactsInvariant": "Accept evidence basis and preferred framing; ledger, source access, hooks, draft",
+      "enforcementActualUse": "Scoped owner instruction/decision + cycle validators, used recent three",
+      "approvalRejectionDistinctJudgment": "Finalize wording; Longitude did not yet verify, Chocolate/Phantom instruction verified scoped subset / research or framing revision. Partial overlap with final editorial but object/scope differs",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Scoped owner decision/instruction native structure",
+      "validatorRequirement": "Content-specific exact evidence/authority validators",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Exact claim verification",
+      "decisionArtifactsInvariant": "Approve exact statements/evidence/caveats and exclusions",
+      "enforcementActualUse": "ClaimReview `ownerDecisionRequired:true`; promotion helpers/CLI flag require decision; recent cycles plus Wood Frog",
+      "approvalRejectionDistinctJudgment": "Only approved scoped claims verified / rejected/uncertain/reserves preserved. Sometimes bundled with another gate",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "ClaimReview ownerDecisionRequired; promotion decision and exact statement hashes",
+      "validatorRequirement": "Promotion/scoped validation; generic verified claim review metadata not owner authentication",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Final editorial approval",
+      "decisionArtifactsInvariant": "Approve final script/hook/beats/VisualPlan/comprehension",
+      "enforcementActualUse": "Approved package/asset required downstream; hash-bound complete/scoped decisions. All four",
+      "approvalRejectionDistinctJudgment": "Approved sources, creative-only or production scope as instructed / upstream revision. New final wording/visual implication judgment",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Approved metadata/package and asset states downstream",
+      "validatorRequirement": "Exact scoped approval replay and production hashes",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Significant CreativeDirection",
+      "decisionArtifactsInvariant": "Approve new experience and production scope; alternatives/convergence/risks",
+      "enforcementActualUse": "Direction requires decision only if `ownerReview.required`; AI remains proposal. Longitude/Chocolate required; Wood Frog/Phantom historical exemptions",
+      "approvalRejectionDistinctJudgment": "Ready companion plus candidate authority / reconsider. Not universally mandatory separate owner font/voice gate",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Conditional ownerReview.required; ready direction needs exact decision if required",
+      "validatorRequirement": "Direction/source/convergence validation; AI remains proposal",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Production authority",
+      "decisionArtifactsInvariant": "Permit planning/media/candidate spending; bound sources/direction",
+      "enforcementActualUse": "Docs/scoped authority; ProductionPlan checks ready/approved data but no universal renderer permission service. Recent candidates expressly authorized",
+      "approvalRejectionDistinctJudgment": "Candidate work / remain at editorial/direction. Can be combined with direction approval",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Approved/ready bound sources/plans; no universal permission check in renderer",
+      "validatorRequirement": "Scoped owner production decision + plan/source validation",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Narrator deviation / revision",
+      "decisionArtifactsInvariant": "Material deviation rationale or owner identity change; actual sample/candidate",
+      "enforcementActualUse": "Execution policy checks rationale; default af_heart; Longitude owner requested v2 replacement of bf_emma. Routine auditions not required",
+      "approvalRejectionDistinctJudgment": "Separately bound audio/timing/candidate / keep unapproved prior evidence. Actual auditory judgment",
+      "documentationRequired": "Material rationale required; owner review conditional on significance/current scope. Actual primary-policy evolution is owner decision.",
+      "schemaCodeRequirement": "ExecutionPolicy voice/default/material-rationale fields",
+      "validatorRequirement": "Brand execution authority/adoption and future plan validation",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Owner master visual/audio",
+      "decisionArtifactsInvariant": "Accept exact rendered MP4, captions/voice/mix",
+      "enforcementActualUse": "ProductionPlan visual state requires approval; master decision binds exact receipt/bytes; four cycles used",
+      "approvalRejectionDistinctJudgment": "Lock identity, platform preparation / new authorized candidate revision. New actual audiovisual object",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Visual-approved state requires exact decision/artifact metadata",
+      "validatorRequirement": "Master approval replay/candidate/source/byte validation",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Private upload permission",
+      "decisionArtifactsInvariant": "Permit external private/draft preview",
+      "enforcementActualUse": "Explicit human policy; no upload implementation; no current device passes in Longitude/Chocolate",
+      "approvalRejectionDistinctJudgment": "Owner uploads privately/checks surfaces / local evidence stays pending. External-action authority distinct from technical QA",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "No uploader",
+      "validatorRequirement": "No automated external permission service",
+      "operationalConventionOnly": true
+    },
+    {
+      "name": "Platform/device presentation",
+      "decisionArtifactsInvariant": "Judge exact media/cover on playback/grid/feed/desktop",
+      "enforcementActualUse": "Presentation real-device pass requires hash/context/device/time/reviewer/evidence; readiness models support risk acceptance. Phantom initial ambiguous report preserved, later waived; Longitude/Chocolate waived",
+      "approvalRejectionDistinctJudgment": "Promote exact pass or record risks / adaptation loop. New external processing/UI evidence",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Real device record fields/state required; owner-risk alternative modeled",
+      "validatorRequirement": "Presentation hash/surface/context schema and owner-presentation checks",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Independent cover selection",
+      "decisionArtifactsInvariant": "Approve exact artwork/frame and crop uncertainty",
+      "enforcementActualUse": "Cover schema requires identity/decision on approved; delivery binds cover hash. Recent release decisions selected covers without device pass",
+      "approvalRejectionDistinctJudgment": "Exact cover eligible / revise or choose another. Can share release message but not master approval",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Approved cover needs identity/hash/decision",
+      "validatorRequirement": "Cover/delivery hash and release binding checks",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Accepted presentation uncertainty",
+      "decisionArtifactsInvariant": "Explicit release-specific waiver; incomplete reports/risks",
+      "enforcementActualUse": "Native `owner-risk-accepted` state and matching decision; all recent three releases used",
+      "approvalRejectionDistinctJudgment": "Ready variant without a device pass / device review or hold. Risk judgment rather than newly measured quality",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "owner-risk-accepted plus matched risk decision, realDevicePassGranted false",
+      "validatorRequirement": "Release-specific native validation",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Publication authorization",
+      "decisionArtifactsInvariant": "Permit exact owner manual release; packages/copy/settings/cover",
+      "enforcementActualUse": "Decision/hash/operator-guidance checks and docs; ready alone insufficient. Recent three",
+      "approvalRejectionDistinctJudgment": "Ahmet manual upload/schedule/publish / hold or revise packaging. External release control",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Matching owner refs on approval/public operator guidance; V2 exact helper",
+      "validatorRequirement": "Release validators; generic PublicationRecord registry weaker than exact manifest helper",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Live settings / account confirmation",
+      "decisionArtifactsInvariant": "Choose correct account/visibility/disclosure/captions/cover/quality/category/comment controls",
+      "enforcementActualUse": "Manual checklist/docs; actual settings often unknown, no API enforcing live UI",
+      "approvalRejectionDistinctJudgment": "Record actual evidence / stop uncertain upload. New account-specific reality",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Unknown permitted in settings records; no live UI enforcement",
+      "validatorRequirement": "Checklist/record structure, not actual controls",
+      "operationalConventionOnly": true
+    },
+    {
+      "name": "Publication / scheduling evidence",
+      "decisionArtifactsInvariant": "Report what happened, actual dates/IDs/URLs/comments",
+      "enforcementActualUse": "Schemas/append-only owner evidence and intake; not an approval inferred by time",
+      "approvalRejectionDistinctJudgment": "Scheduling record or actual PublicationRecord / remain unknown. Evidence handoff, not a creative approval",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Published vs owner-reported requirements; scheduling append-only separate",
+      "validatorRequirement": "Native ops and cycle-scoped report checks; not independent external verification",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Postpublication presentation / closure",
+      "decisionArtifactsInvariant": "Confirm actual presentation and accepted gaps; authorize closure",
+      "enforcementActualUse": "Phantom owner decision + validators, other cycles still pending live evidence",
+      "approvalRejectionDistinctJudgment": "Operational closure without invented measurements / record issue and separately request remediation. New live observations",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Owner closure/report structures content-scoped",
+      "validatorRequirement": "Phantom closure exact records; no generic workflow close engine",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "Merge/reconciliation",
+      "decisionArtifactsInvariant": "Authorize PR/main integration; diff/check/clone evidence",
+      "enforcementActualUse": "Owner docs/convention and exact closure receipts; Git no automatic policy bot observed",
+      "approvalRejectionDistinctJudgment": "Main integration if authorized / feature/evidence branches retained. Integration authority",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "No merge permission state machine",
+      "validatorRequirement": "Historical closure/scope proofs, no observed CI merge gate",
+      "operationalConventionOnly": true
+    },
+    {
+      "name": "Paid API / questionable rights / infrastructure / irreversible external action",
+      "decisionArtifactsInvariant": "Authorize actual cost, rights exception or system expansion",
+      "enforcementActualUse": "AGENTS policy; AI adapter credential gating is not payment permission; no automatic rights clearance",
+      "approvalRejectionDistinctJudgment": "Bounded authorized action / choose available permissible path or stop. Conditional gates, not normal-cycle mandatory paperwork",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Credentials/provider gates not paid permission; no general rights approval service",
+      "validatorRequirement": "Plan rights evidence structure; payment/infra authority policy",
+      "operationalConventionOnly": true
+    },
+    {
+      "name": "Recovery replacement / recovery closure",
+      "decisionArtifactsInvariant": "Accept separate replacement and lost-history gaps",
+      "enforcementActualUse": "Exact owner recovery decision/validators; Wood Frog incident only",
+      "approvalRejectionDistinctJudgment": "Operational replacement/closed recovery / preserve missing expectation. Historical exceptional gates",
+      "documentationRequired": true,
+      "schemaCodeRequirement": "Recovery identities/owner decisions",
+      "validatorRequirement": "Native recovery acceptance/byte distinction validation",
+      "operationalConventionOnly": false
+    },
+    {
+      "name": "System architecture audit review",
+      "decisionArtifactsInvariant": "Assess this inspection before any design decision",
+      "enforcementActualUse": "Current explicit owner instruction",
+      "approvalRejectionDistinctJudgment": "Owner decides next scope / audit remains evidence only. No implicit remediation authority",
+      "documentationRequired": "Current explicit owner instruction, not new canonical policy",
+      "schemaCodeRequirement": "Current explicit user instruction",
+      "validatorRequirement": "Audit artifact checks only",
+      "operationalConventionOnly": true
+    }
+  ],
+  "additionalClarifications": {
+    "schemaCodeRequired": {
+      "topic-selection": "Not required by generic TopicCandidate or draftResearchWorkspace; required by scoped discovery/selection workflow",
+      "claim-verification": "Explicit owner-decision structures/promotion binding in authorized helpers; generic claim schema requires human review metadata",
+      "editorial": "Approval metadata downstream and scoped exact decision replay; no universal human authentication",
+      "creative-direction": "Conditional on ownerReview.required; AI always proposal",
+      "production": "Ready approved bound inputs and explicit current scope; no central render permission service",
+      "master-lock": "Exact approval decision / output-state metadata",
+      "device": "Exact real-device record fields for claiming pass; alternative release-specific owner-risk-accepted",
+      "publication": "Exact owner release bindings/operator guidance; manual action only"
+    },
+    "conventionOnlyOrPolicy": "New-scope initiation, account/live UI choices, stage prompting and branch/merge authority are operational policy unless a scoped validator/record strengthens them",
+    "noUniversalSeparateGate": [
+      "every font/color/caption phrase",
+      "routine sound effect",
+      "every hook alternative",
+      "independent schedule window choice absent owner instruction"
+    ],
+    "historicalConditional": [
+      "Recovery replacement and closure",
+      "Paid API/uncertain rights/major infrastructure/irreversible external action"
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "files": 43,
+  "baselineExecutedTests": 421,
+  "categories": [
+    {
+      "name": "schema-domain",
+      "files": [
+        "tests/knowledge-package.test.ts",
+        "tests/content-asset.test.ts",
+        "tests/content.test.ts",
+        "tests/ocean-depth-generalization.test.ts",
+        "tests/speed-of-light-regression.test.ts"
+      ]
+    },
+    {
+      "name": "intelligence-provider-operator",
+      "files": [
+        "tests/content-intelligence.test.ts",
+        "tests/content-intelligence-operator.test.ts",
+        "tests/discovery-cycle-2.test.ts"
+      ]
+    },
+    {
+      "name": "claims-editorial-evidence",
+      "files": [
+        "tests/claim-review.test.ts",
+        "tests/traffic-research.test.ts",
+        "tests/traffic-finalization.test.ts",
+        "tests/longitude-research.test.ts",
+        "tests/longitude-finalization.test.ts",
+        "tests/chocolate-research.test.ts",
+        "tests/chocolate-finalization.test.ts"
+      ]
+    },
+    {
+      "name": "creative-convergence-narrator",
+      "files": [
+        "tests/adaptive-creative-direction.test.ts",
+        "tests/brand-execution-policy.test.ts",
+        "tests/primary-narrator-authority.test.ts",
+        "tests/longitude-direction.test.ts",
+        "tests/chocolate-direction.test.ts"
+      ]
+    },
+    {
+      "name": "caption-production",
+      "files": [
+        "tests/caption-plan.test.ts",
+        "tests/wood-frog-production.test.ts",
+        "tests/phantom-traffic-production.test.ts",
+        "tests/longitude-production.test.ts",
+        "tests/longitude-v2.test.ts",
+        "tests/chocolate-production.test.ts"
+      ]
+    },
+    {
+      "name": "platform-presentation",
+      "files": [
+        "tests/platform-variant.test.ts",
+        "tests/presentation.test.ts",
+        "tests/phantom-traffic-platform.test.ts",
+        "tests/longitude-platform.test.ts",
+        "tests/chocolate-platform.test.ts"
+      ]
+    },
+    {
+      "name": "delivery-publication-operations",
+      "files": [
+        "tests/delivery-package.test.ts",
+        "tests/operations.test.ts",
+        "tests/phantom-traffic-delivery.test.ts",
+        "tests/phantom-traffic-publication.test.ts",
+        "tests/phantom-traffic-closure.test.ts",
+        "tests/longitude-publication.test.ts",
+        "tests/chocolate-publication.test.ts"
+      ]
+    },
+    {
+      "name": "artifact-durability-recovery",
+      "files": [
+        "tests/artifacts.test.ts",
+        "tests/durable-artifacts.test.ts",
+        "tests/recovery-delivery.test.ts"
+      ]
+    },
+    {
+      "name": "proposed-v2",
+      "files": [
+        "tests/media-artifacts.test.ts",
+        "tests/reference-delivery.test.ts"
+      ]
+    }
+  ],
+  "limitations": [
+    "No coverage percentage measured",
+    "Brain/integrity/historical checks are transitive helpers and commands, not one suite per category",
+    "Fixture mediaInspector stubs prove identity plumbing, not actual transformed video behavior",
+    "No scale benchmark at 100/1000 videos",
+    "Post-audit unrelated scope failure fans out to five suites"
+  ],
+  "incidentExamples": [
+    "TikTok upper-left UI overlap",
+    "Laptop reset lost approved bytes",
+    "Caption whitespace/em-dash reconstruction",
+    "Wood Frog circulation exclusion",
+    "Longitude correction/same-instant/east",
+    "TikTok Studio URL not permalink"
+  ]
+}

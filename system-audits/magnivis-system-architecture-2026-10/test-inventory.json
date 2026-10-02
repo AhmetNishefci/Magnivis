@@ -1,0 +1,701 @@
+[
+  {
+    "path": "tests/adaptive-creative-direction.test.ts",
+    "sha256": "c1b483c4740a3c438cc273877af673484f41f8ee85f1ebb4dbadafc88cef98fd",
+    "lines": 113,
+    "cases": [
+      "preserves every historical render, approval, audio, artifact and presentation input byte-for-byte",
+      "accepts the exact historical production plan without retroactive direction",
+      "requires direction for future plans and for altered historical plans",
+      "validates future source bindings, readiness, rights evidence and selected direction",
+      "rejects stale editorial/script hashes and unapproved source authority",
+      "permits different media, voices, palettes, caption execution and silence with rationale",
+      "requires meaningful convergence review but permits justified reuse",
+      "requires owner review only when declared significant, and never invents approval",
+      "keeps platform/publication scope independent",
+      "uses the provider boundary, records provenance, and compares supplied historical assets",
+      "allows non-Kokoro narration provenance without requiring a universal voice",
+      "validates adaptive captions independently of V1 aesthetics without losing speech fidelity",
+      "keeps topic labels and hook mechanisms open without imposing domain styles",
+      "persists and verifies the new CI envelope without granting approval",
+      "rejects forged future plan source hashes even when direction is valid"
+    ]
+  },
+  {
+    "path": "tests/artifacts.test.ts",
+    "sha256": "3f74a9e7e2c7a488f8eddd6da3488220923c12db93c10ab86d6490930c4aeea9",
+    "lines": 91,
+    "cases": [
+      "validates the committed registry and all provenance categories",
+      "binds separate historical and recovered Wood Frog identities",
+      "rejects a replacement decision claiming different bytes",
+      "rejects inherited historical approval on equivalent bytes",
+      "requires historical equality for exact reproduction",
+      "preserves draft delivery provenance and false publication gates",
+      "rejects duplicate registry identities",
+      "rejects unknown fields rather than preserving credentials",
+      "restores exact bytes and verifies their identity",
+      "is idempotent for already verified bytes",
+      "rejects corrupted archive bytes without installing them",
+      "rejects existing conflicting destination bytes",
+      "reports unavailable provider without regenerating",
+      "reports missing archive without regenerating",
+      "distinguishes missing local bytes from corrupt bytes",
+      "rejects unsafe provider and destination paths",
+      "rejects symlinks rather than following them",
+      "reports provider availability independently of local files"
+    ]
+  },
+  {
+    "path": "tests/brand-execution-policy.test.ts",
+    "sha256": "739ff14ae86eb49f813c66583ac04a9357ed624fe91f3d0135230f2d4f5db77c",
+    "lines": 27,
+    "cases": [
+      "defaults to af_heart with independent story-specific execution and runtime",
+      "requires material rationale for another narrator but permits deliberate evolution or requirements",
+      "rejects fixed sound, universal music, fixed visual/caption treatment and monetization-only padding",
+      "binds every adoption exception to exact pre-decision Git bytes",
+      "preserves only exact pre-policy plans and rejects stale/missing policy"
+    ]
+  },
+  {
+    "path": "tests/caption-plan.test.ts",
+    "sha256": "8eb77336c4c9a56c9d6d47d3b197bc9ad76476242371fa8488b14d250b16f500",
+    "lines": 320,
+    "cases": [
+      "preserves every approved narration cue with complete, non-overlapping timing",
+      "rejects invented caption wording and timing outside narration",
+      "expresses a rhetorical em dash as an explicit phrase transition",
+      "preserves the exact spacing around a rhetorical en dash",
+      "preserves meaningful hyphens as caption text",
+      "rejects a hyphen as a presentation-only source boundary",
+      "rejects semantic word loss even when a punctuation transition is declared",
+      "rejects unsupported animation, placement, and emphasis text",
+      "renders every styled and unstyled segment with source-preserving CSS whitespace",
+      "preserves styled boundaries independently on wrapped caption lines",
+      "preserves every real Wood Frog caption line across all emphasis boundaries",
+      "keeps both approved caption regions safe across all four short-form surfaces",
+      "keeps deterministic render and WebVTT inputs in one plan",
+      "preserves Wood Frog narration provenance through its rhetorical-dash transition"
+    ]
+  },
+  {
+    "path": "tests/chocolate-direction.test.ts",
+    "sha256": "617e14b3426e7aafec0ab4994fb79e33c77f3bb2abc64a2375eb8d6f6604cf1b",
+    "lines": 49,
+    "cases": [
+      "preserves eight verified statements and requires owner direction approval",
+      "rejects a creative draft attached to the wrong approved script",
+      "rejects verification metadata rewritten during final approval",
+      "rejects production authority or synthetic owner review time",
+      "rejects unresolved convenience reuse even in proposal",
+      "rejects missing model disclosure",
+      "rejects alternatives that merely repeat one medium",
+      "rejects missing historical stories in convergence comparison"
+    ]
+  },
+  {
+    "path": "tests/chocolate-finalization.test.ts",
+    "sha256": "a67eb86a4e1d5d5819ae355964a2d4f47a71df3933e3724a579cb909fb95f0f5",
+    "lines": 58,
+    "cases": [
+      "verifies only eight needed statements and retains final asset approval gate",
+      "rejects unnecessary verification of valid seed reserve",
+      "rejects changed evidence even if the statement stays identical",
+      "rejects final approval inferred from approval intent",
+      "rejects a universal failure formulation",
+      "rejects art direction and loss of the microscopic disclosure",
+      "rejects changes to exclusions and statement bindings"
+    ]
+  },
+  {
+    "path": "tests/chocolate-platform.test.ts",
+    "sha256": "c236dc60c6f058b670c7b4243cb50d7a778f68c01d6d5b610a467c0f1b56554f",
+    "lines": 13,
+    "cases": [
+      "rejects authority transfer to different master bytes",
+      "keeps all four exact-master packages outside publication eligibility"
+    ]
+  },
+  {
+    "path": "tests/chocolate-production.test.ts",
+    "sha256": "d5af2f1a2e1d375e33122d984377d7fec12ba8ca95c48016053ab5a5111524de",
+    "lines": 22,
+    "cases": [
+      "binds owner scope, eight claims and measured story duration while preserving history",
+      "rejects accidental reserve-claim use",
+      "rejects an unapproved direction masquerading as production authority",
+      "rejects silently changed narration in captions",
+      "rejects captions extending beyond measured speech",
+      "requires exact owner visual evidence before a plan can become approved"
+    ]
+  },
+  {
+    "path": "tests/chocolate-publication.test.ts",
+    "sha256": "84ff7ceb802bddd1d3e5daa243e5e088c73e91acf33b70c06e4b8112cdd9a9ac",
+    "lines": 10,
+    "cases": [
+      "rejects assistant publication permission and invented prepublication device passes",
+      "makes four final packages eligible while preserving exact approved video bytes"
+    ]
+  },
+  {
+    "path": "tests/chocolate-research.test.ts",
+    "sha256": "54b10ec8a9838c5478cea23820f64d0cd5b5d26425ecd0a1841d60579f496c4a",
+    "lines": 63,
+    "cases": [
+      "preserves discovery and policies with native review-only identities",
+      "rejects inaccessible source evidence and altered exact statements",
+      "rejects owner verification inferred from topic selection",
+      "keeps excluded mechanisms and unobserved demonstration results out of narration",
+      "rejects invented runtime evidence or narrowed source access accounting",
+      "rejects premature art direction and unbound handoff bytes",
+      "detects incomplete access accounting even when native claim records are intact"
+    ]
+  },
+  {
+    "path": "tests/claim-review.test.ts",
+    "sha256": "72a3bf39dc9a575ddad099e48079ecc29dedce417774c989b3dd2e8807196b26",
+    "lines": 191,
+    "cases": [
+      "covers every source and claim with valid evidence locators",
+      "cannot recommend verification without evidence",
+      "rejects dangling evidence locators and duplicate review state",
+      "requires reviewer metadata and explicit owner confirmation",
+      "does not allow an uncertain claim to silently become verified",
+      "does not allow a rejected claim in an approved script",
+      "invalidates owner decisions when reviewed wording changes",
+      "promotes only explicitly approved claims and preserves excluded uncertainty",
+      "serializes the review deterministically",
+      "writes a human-readable review but never marks it approved",
+      "refuses approval without explicit operator confirmation"
+    ]
+  },
+  {
+    "path": "tests/content-asset.test.ts",
+    "sha256": "4f05e5f177f348a96deb47f8f409664c60b3cd450ea22f73fe267a785fe8c014",
+    "lines": 162,
+    "cases": [
+      "validates the published Speed of Light asset",
+      "rejects unsupported asset types",
+      "rejects factual script references outside the selected claim set",
+      "validates a structured visual plan linked to beats, script and claims",
+      "validates the distinct second Speed of Light asset",
+      "requires approval metadata before production readiness",
+      "supports multiple assets backed by one KnowledgePackage",
+      "rejects duplicate asset IDs",
+      "rejects an invalid KnowledgePackage reference",
+      "rejects an invalid selected claim reference",
+      "rejects an invalid hook reference",
+      "provides deterministic lookup and listing",
+      "selects every claim required by the chosen package hook"
+    ]
+  },
+  {
+    "path": "tests/content-intelligence-operator.test.ts",
+    "sha256": "e09da58db86aab97d7a8baa8954f2c7ba8a2e519339a56d8a4237da8e72788c3",
+    "lines": 261,
+    "cases": [
+      "fails clearly without credentials and never invents a key",
+      "uses Responses structured parsing, records provenance and estimates cost",
+      "keeps workflow model choice explicit and supports one environment override",
+      "normalizes a real-shaped HTTP document while hashing the full response",
+      "rejects non-text evidence instead of pretending it was inspected",
+      "round-trips a validated run with deterministic hashes",
+      "rejects tampering, provenance drift and schema-invalid persisted output",
+      "requires real reviewer metadata before a run can be approved",
+      "allows supported evidence only in review drafts, never the strict production path",
+      "rejects unsupported script and visual-plan claim references",
+      "rejects visual timing beyond the platform-neutral duration intent",
+      "writes and validates a deterministic, human-readable fixture trial",
+      "does not run a live all-stage workflow across the human verification pause"
+    ]
+  },
+  {
+    "path": "tests/content-intelligence.test.ts",
+    "sha256": "d9a34a71086593ad72a7aa7fbb6b041db17658028b83e92b63eaeb9bb6a1b018",
+    "lines": 336,
+    "cases": [
+      "registers the retrospective Speed of Light candidate deterministically",
+      "keeps domains open-ended and requires review for accepted candidates",
+      "rejects duplicate candidate and proposed package identities",
+      "enforces deliberate topic workflow transitions",
+      "keeps prompts versioned, discoverable and explicit about trust boundaries",
+      "validates an evaluation and records provider/workflow provenance",
+      "rejects provider output that drifts from the candidate identity",
+      "accepts an AI research draft only while sources and claims remain unreviewed",
+      "rejects AI output that promotes its own claim or cites a dangling source",
+      "does not start research for a held topic evaluation",
+      "generates claim-safe hook proposals without mutating the package",
+      "rejects hook proposals that cite a non-verified or unknown claim",
+      "drafts a valid platform-neutral ContentAsset from approved verified inputs",
+      "rejects content drafts that drift locked references"
+    ]
+  },
+  {
+    "path": "tests/content.test.ts",
+    "sha256": "09f06424ecdb2a8934f5ccdd6d58fb97c1477cca54f235d2ab04c035936d5e32",
+    "lines": 310,
+    "cases": [
+      "keeps every cue bottom-centered in %s",
+      "\\n",
+      "has an exact frame count",
+      "keeps scenes within the composition",
+      "references only committed facts",
+      "keeps narration cues ordered and inside the composition",
+      "declares a caption track matching the video language",
+      "records the canonical publication when published",
+      "has the faster approved frame count",
+      "keeps scenes and narration inside the composition",
+      "references its production-ready editorial content asset",
+      "derives the Everest comparison from authoritative base values",
+      "declares its English timed caption track",
+      "has the intended short frame count",
+      "keeps scenes and narration inside the composition",
+      "references only committed money facts",
+      "derives the physical billion-dollar comparisons",
+      "declares positioned English captions",
+      "has the intended fast frame count",
+      "keeps scenes and narration inside the composition",
+      "references its production-ready YouTube variant and editorial content asset",
+      "derives the familiar light-time comparisons",
+      "declares positioned English captions",
+      "records the canonical publication",
+      "has the intended fast frame count",
+      "keeps scenes and narration inside the composition",
+      "references only committed engineering facts",
+      "derives like-for-like linear comparisons",
+      "declares positioned English captions",
+      "links every fact to a known authoritative source",
+      "derives expected scale ratios from base values",
+      "labels uncertain stellar sizes as estimates",
+      "links every ocean fact to a known authoritative source",
+      "links every money fact to a known authoritative source",
+      "links every light fact to a known authoritative source",
+      "links every engineering fact to a known authoritative source"
+    ]
+  },
+  {
+    "path": "tests/delivery-package.test.ts",
+    "sha256": "e8aae084303302206fd6a17d4207983e2b4fe6955b2ec9055dab5d58177dcad8",
+    "lines": 412,
+    "cases": [
+      "generates and validates a production-ready YouTube package",
+      "generates the approved TikTok package without granting publication authority",
+      "supports draft, approved-review, and ready states without promotion",
+      "rejects an invalid PlatformVariant reference",
+      "rejects a missing artifact",
+      "rejects a same-size artifact hash mismatch",
+      "validates platform-profile and safe-area references against registries",
+      "rejects delivery identity and review-gate drift from the registered variant",
+      "rejects caption behavior drift from the registered variant",
+      "creates platform-relevant upload copy and concise review guidance",
+      "generates four packages from one ContentAsset",
+      "is deterministic for the same sources and generation timestamp",
+      "keeps generated delivery outputs excluded from Git",
+      "keeps only previewed variants ready and unreviewed variants in draft review",
+      "resolves the TikTok variant to its dedicated render and other surfaces to the master",
+      "builds four private-preview Wood Frog packages on one locked source chain",
+      "rejects Wood Frog delivery source-chain drift"
+    ]
+  },
+  {
+    "path": "tests/discovery-cycle-2.test.ts",
+    "sha256": "62d3189b1d92d76e41e13842991f72e6174ecf1f244e8d31036ef8c9de93e439",
+    "lines": 115,
+    "cases": [
+      "recognizes exact Cycle #1 closure without permitting further manifest edits",
+      "evaluates an unseen legitimate field without category authorization",
+      "preserves discovery-only states and separates shortlist from finalists",
+      "rejects %s corruption at the durable discovery boundary",
+      "keeps the immutable Cycle #1 handoff valid"
+    ]
+  },
+  {
+    "path": "tests/durable-artifacts.test.ts",
+    "sha256": "9172535b6ef8b9aef59d50bd874b9b2b7d80cdf38498b8f51daa35ce285ef88a",
+    "lines": 53,
+    "cases": [
+      "binds every required artifact to an existing hash-verified Git archive path",
+      "reports absent original Wood Frog as historical expectation rather than corruption",
+      "cannot assign an archive location to the missing historical expectation",
+      "does not require ignored routine frames for a clean clone",
+      "accepts a verified archive while still reporting restore needed for missing workspace bytes",
+      "never hides corruption behind an optional or historical retention class",
+      "preserves six historical content identities and exact narration source bindings",
+      "retains independent Meta surfaces with no fabricated grid/feed coordinates"
+    ]
+  },
+  {
+    "path": "tests/knowledge-package.test.ts",
+    "sha256": "8373a319e791bac499e2edbbcad9dbd1debb5d34d5f56851e906682e2c3c1222",
+    "lines": 314,
+    "cases": [
+      "validates the production Speed of Light package",
+      "rejects an invalid pillar",
+      "requires normalized, unique open taxonomy terms",
+      "rejects an invalid timeliness classification",
+      "rejects duplicate record IDs inside a package",
+      "rejects dangling source references from claims",
+      "rejects dangling claim references from editorial records",
+      "rejects an invalid verification state",
+      "requires structured values for quantitative claims",
+      "accepts bounded ranges without pretending they are scalar values",
+      "rejects reversed or empty quantitative ranges",
+      "accepts positive scalar measurement uncertainty and rejects invalid uncertainty",
+      "accepts qualitative claims without numeric assumptions",
+      "rejects quantitative values attached to qualitative claims",
+      "distinguishes supported claims from reviewed verified claims",
+      "requires approval metadata for an approved package",
+      "records source identity metadata without inventing an exact publication day",
+      "provides deterministic lookup and sorted listing",
+      "rejects duplicate package IDs",
+      "rejects conflicting records that reuse a global source ID",
+      "rejects dangling claim and hook references from content assets"
+    ]
+  },
+  {
+    "path": "tests/longitude-direction.test.ts",
+    "sha256": "775210fb8e5f372fa6d6fa5953350689802235112f2b774b7b4fcb5bb9a7abc6",
+    "lines": 68,
+    "cases": [
+      "validates exact owner commit, all statement/evidence bindings, seven precedents and historical snapshots",
+      "verifies only eight claims and preserves every reserve byte and every selected evidence/caveat",
+      "rejects changed statement even when its artifact digest is rebound",
+      "rejects changed evidence or narration or approved comprehension contract",
+      "rejects extra verification, duplicated claim bindings, production authority and invented supplied review time",
+      "keeps direction in required owner review and rejects readiness without direction decision"
+    ]
+  },
+  {
+    "path": "tests/longitude-finalization.test.ts",
+    "sha256": "02487926e3cff2ea2e3f8875b53814b1fa7a858ad37bc7b891fc5900e36d1377",
+    "lines": 73,
+    "cases": [
+      "validates the tighter exact proposal and all eight narration/visual claims without approval",
+      "does not turn acceptance of the evidence basis into verification or alter reserve claims",
+      "rejects removal of spoken correction/simultaneity or reversal of the eastward payoff",
+      "rejects an incomplete owner-verification queue or stale statement hash",
+      "rejects production parameters or self-approved narration",
+      "rejects stale script/visual-plan bindings after otherwise valid edits"
+    ]
+  },
+  {
+    "path": "tests/longitude-platform.test.ts",
+    "sha256": "cdd16e0123c64551e8eb2f1cc454be6c345cf6b78b0d062b89d9b0f6f0504ba5",
+    "lines": 68,
+    "cases": [
+      "promotes exact V2 without changing original inputs or inventing a review timestamp",
+      "rejects approval transfer to another encode, audio identity or script",
+      "rejects inferred platform/publication approval and a fabricated owner timestamp",
+      "requires a new decision if any exact candidate binding changes",
+      "keeps four variants pending and uses the same master without runtime padding",
+      "does not turn unknown surfaces or a new cover into device approvals",
+      "validates portable delivery bytes and rejects a damaged upload file"
+    ]
+  },
+  {
+    "path": "tests/longitude-production.test.ts",
+    "sha256": "54d087c105f170d49509c252a4c1fbb7edda95e0ab9d3b1885bacda5e7d044c3",
+    "lines": 35,
+    "cases": [
+      "binds owner-approved direction, exact eight claims, narration, fonts and V2 captions without visual approval",
+      "maps an ahead local reading eastward counterclockwise in a north-pole view, and a behind reading westward",
+      "rejects caption wording/timing drift while preserving narration phrases and qualifiers",
+      "does not accept master/platform/upload/publication approval or an invented supplied review time"
+    ]
+  },
+  {
+    "path": "tests/longitude-publication.test.ts",
+    "sha256": "adbe0de1960c63e0d4fc096b03eb0ececcabe07be8ef000ab540d10638677f11",
+    "lines": 51,
+    "cases": [
+      "binds the exact approved master and prepared inputs without asserting publication",
+      "rejects invented devices, review timestamps, passes or assistant publication authority",
+      "preserves distinct copy and exact media while promoting matching explicit risk acceptance",
+      "does not permit public guidance in draft/private-only handoffs",
+      "forbids a permanent YouTube category and retains story-level preference",
+      "keeps original cover identity and unmeasured crop separate from selection approval"
+    ]
+  },
+  {
+    "path": "tests/longitude-research.test.ts",
+    "sha256": "548975b1e64a59f6cd2abf2e6ea077614a9e0234474b3d46a2254b984e280d88",
+    "lines": 69,
+    "cases": [
+      "preserves the historical discovery while validating review-only evidence, script and handoff",
+      "rejects inaccessible evidence and claim wording changed after inspection",
+      "keeps rejected and unresolved formulations out of the selected asset",
+      "detects a reversed east/west example and a minutes-versus-seconds error",
+      "rejects inferred owner approval even if a claim supplies synthetic review metadata",
+      "detects missing owner artifacts and changed evidence bytes"
+    ]
+  },
+  {
+    "path": "tests/longitude-v2.test.ts",
+    "sha256": "679db09ab2356f27b42e47461518d2a783b93de4c4e752d958a2d59ef44c13ad",
+    "lines": 23,
+    "cases": [
+      "preserves v1 and exact editorial/design while binding af_heart and measured timeline",
+      "rejects an invented master/publication approval or owner-supplied timestamp",
+      "enforces policy on future/native plans, including omission and unjustified narrator deviation"
+    ]
+  },
+  {
+    "path": "tests/media-artifacts.test.ts",
+    "sha256": "130537e82edbd3f7d8636f4d8fd8db4b19b11e9a9ee9502eb6c26c5c80bb8744",
+    "lines": 81,
+    "cases": [
+      "enforces scoped historical preservation and canonical durability in pnpm check",
+      "rejects new same-byte durable copies and immutable identity rebinding",
+      "permits an explicitly hash-bound immutable evidence snapshot and rejects a stale exception",
+      "keeps historical Chocolate, Longitude, Phantom and Wood Frog delivery identities verifiable",
+      "rejects new unregistered/duplicate durable payloads and permits only explicit catalog entries",
+      "accepts only the exact owner-authorized documentation amendment"
+    ]
+  },
+  {
+    "path": "tests/ocean-depth-generalization.test.ts",
+    "sha256": "b4243210a42658c5eba7e6ce11f65f01a18637193dac8331a4f8196cfe00e2a5",
+    "lines": 204,
+    "cases": [
+      "validates authoritative mixed quantitative and qualitative research",
+      "keeps numeric precision separate from verification status",
+      "preserves scientific context and the published-production discrepancy",
+      "coexists deterministically with Speed of Light without source collisions",
+      "validates its hook, claims, script traceability and visual plan",
+      "maps every production narration line to one stable script segment",
+      "is registered against the Ocean Depth package with valid references",
+      "preserves composition, format, scenes, captions, publication and runtime",
+      "preserves every narration cue and audio input",
+      "preserves every numeric composition input while deriving it from claims",
+      "links Video 002 to its content asset without retaining legacy fact IDs",
+      "preserves the reviewed caption and soundscape source artifacts"
+    ]
+  },
+  {
+    "path": "tests/operations.test.ts",
+    "sha256": "c648e29a90a40333d5db1f13cb7434117e25c6daebcf871dcd59a2f92fdc5128",
+    "lines": 172,
+    "cases": [
+      "records the confirmed Instagram identity without guessing other handles",
+      "rejects secret-shaped or otherwise undeclared account fields",
+      "rejects duplicate account IDs and platform handles",
+      "validates the generalized Speed of Light YouTube publication chain",
+      "requires remote identity, date and ready delivery for published state",
+      "rejects mismatched account and source references",
+      "accepts platform-native manual metrics without normalization",
+      "rejects dangling publications, duplicate metric keys and invalid windows",
+      "does not fabricate production metric snapshots"
+    ]
+  },
+  {
+    "path": "tests/phantom-traffic-closure.test.ts",
+    "sha256": "6aefc3055947c911e892e997259301baef75fff5cc8fdae845a96058cf786b67",
+    "lines": 28,
+    "cases": [
+      "registers all four owner-reported publications with source/delivery/authorization bindings",
+      "retains TikTok Studio only as management evidence without a made-up public ID",
+      "requires explicit owner evidence and final delivery identity rather than weakening ordinary published state",
+      "preserves supplied public IDs and dates without asserting native upload settings",
+      "records planned comments as owner-reported posted without IDs, time, pinning or metrics",
+      "records desktop/mobile approval at owner platform scope without inventing individually tested surfaces or measurements"
+    ]
+  },
+  {
+    "path": "tests/phantom-traffic-delivery.test.ts",
+    "sha256": "a09d54565da82cdb8164a201891d78aa46d72d4c9a8e24aec2e4f2352ac7dbff",
+    "lines": 84,
+    "cases": [
+      "preserves exact master bytes and never changes captions/audio to prepare delivery",
+      "records entry time rather than inventing review time, device or screenshot evidence",
+      "cannot turn a generic statement into specific surface or cover passes",
+      "requires Reel and grid plus exact cover independently for Instagram readiness",
+      "requires both Facebook viewer and Page/feed, without assuming a derivative is necessary",
+      "keeps owner report evidence distinct from fully measured REAL_DEVICE_PASSED evidence",
+      "registers distinct platform copy and keeps final readiness conditional on confirmed scope",
+      "requires hash-bound actual content proof when destination insets exceed the authoring envelope",
+      "rejects critical-region collisions even when supplied evidence hashes are correct",
+      "packages a registered cover with exact hashes and validates repeated deterministic handoffs"
+    ]
+  },
+  {
+    "path": "tests/phantom-traffic-platform.test.ts",
+    "sha256": "5174896635cf47f6a52e578d2eec6309e4d9d0dd856a96bd5a1f0e94eff204a2",
+    "lines": 86,
+    "cases": [
+      "locks identical bytes and immutable caption/script/audio bindings with truthful entry time",
+      "rejects changed reviewed production/caption/script/evidence references",
+      "cannot invent an owner date or transfer master approval to platforms/publication",
+      "registers four exact-master variants with preview gates, preserving old YouTube V1 compatibility",
+      "preserves seven independent surface/context records and never treats local evidence as mobile approval",
+      "reports caption/native exclusion uncertainty separately despite geometric containment",
+      "keeps grid/feed crops unmeasured and creates no speculative Facebook derivative",
+      "binds the original cover candidate independently without inventing a grid crop or approval",
+      "rejects disclosure and critical-action overlap while allowing decorative clipping"
+    ]
+  },
+  {
+    "path": "tests/phantom-traffic-production.test.ts",
+    "sha256": "4930f487e3aff3009a0bfef12239150d47faeb744b068249e22e8a1eacdf5004",
+    "lines": 95,
+    "cases": [
+      "replays approval without altering claims, evidence or narration and retains the next gate",
+      "rejects stale research, script, evidence or claim approval bindings",
+      "cannot invent owner timestamps, promote reserves or grant visual/publication approval",
+      "requires labeled entry time while retaining valid legacy approval dates",
+      "reconstructs every exact spoken segment and preserves conditional qualifiers",
+      "keeps cars forward or stopped, preserves ordering, and gives the pattern negative road velocity",
+      "shows 22 initially uniform cars and forward-only motion while the ring cluster develops",
+      "changes slow-region membership while each car continues downstream",
+      "keeps illustrative follower responses collision-free without monotonically stronger braking",
+      "evaluates the same frame without randomness or mutable simulation state"
+    ]
+  },
+  {
+    "path": "tests/phantom-traffic-publication.test.ts",
+    "sha256": "704e6edfc115e65cc83243132f5b17b55f985cd5d5241ea1582c9647afc0274b",
+    "lines": 35,
+    "cases": [
+      "binds the exact master, prior handoffs, copy and cover without asserting publication",
+      "cannot manufacture prepublication surface or cover approval in the release decision",
+      "allows release readiness only with explicit matching owner acceptance and keeps preview distinct from a pass",
+      "preserves exact platform copy, source master and production bindings with no new derivative",
+      "selects the existing Instagram cover without altering historical QA or declaring crop measurements"
+    ]
+  },
+  {
+    "path": "tests/platform-variant.test.ts",
+    "sha256": "56026b6d07132588894d6ee1af5bd2770566511a4462050f082ea7c5ad041abe",
+    "lines": 238,
+    "cases": [
+      "validates the production Speed of Light YouTube variant",
+      "rejects an invalid ContentAsset reference",
+      "rejects duplicate variant IDs",
+      "rejects unsupported platforms",
+      "rejects an invalid safe-area reference",
+      "requires approval metadata for approved and production-ready variants",
+      "rejects packaging claims not selected by the ContentAsset",
+      "supports four adaptations from one ContentAsset",
+      "provides deterministic lookup and sorted listing",
+      "registers four Wood Frog variants without granting publication approval",
+      "isolates TikTok safe-area rendering while other Wood Frog surfaces reuse the lock",
+      "keeps production references mutually exclusive",
+      "preserves meaningful packaging and review differences",
+      "registers one dated constraint profile for each V1 surface",
+      "keeps the reviewed master inside unchanged surfaces and isolates TikTok V2"
+    ]
+  },
+  {
+    "path": "tests/presentation.test.ts",
+    "sha256": "8a1678983a08c45a71856fd9c4fd13eebdfa0b747d8618c720b09344ac72ebd2",
+    "lines": 25,
+    "cases": [
+      "keeps historical render geometry unchanged",
+      "records owner V2 policy without pretending device evidence survives",
+      "retains failed/superseded V1 history",
+      "distinguishes unmeasured Meta grid from playback",
+      "rejects critical opening content above V2 inset",
+      "allows decorative content to bleed",
+      "reports missing caption geometry independently",
+      "checks native exclusion zone collisions",
+      "runs geometry regression across every active profile",
+      "never accepts desktop as real-device mobile proof",
+      "requires exact media and cover hashes on the exact surface",
+      "requires real-device evidence and preserves unknown OS/app",
+      "rejects cover approval without hashed artifact and decision",
+      "requires evidence and identity before choosing a surface derivative",
+      "routes new agents to existing canonical docs without broken paths"
+    ]
+  },
+  {
+    "path": "tests/primary-narrator-authority.test.ts",
+    "sha256": "5e40c266db368b28644989a3a15dd209984a8e7a79406e2fbf985496b3f375bc",
+    "lines": 13,
+    "cases": []
+  },
+  {
+    "path": "tests/recovery-delivery.test.ts",
+    "sha256": "bf7502520a64d159f3babe5451715a38170675e4cf360d2e7d3434e08ac79580",
+    "lines": 70,
+    "cases": [
+      "removes locked-master authority when the staged Wood Frog bytes differ",
+      "relocates exact source bytes while preserving the trusted hash check",
+      "does not transfer historical platform approval or readiness to regenerated media",
+      "resolves the proven TikTok derivative into staging without changing the canonical registry"
+    ]
+  },
+  {
+    "path": "tests/reference-delivery.test.ts",
+    "sha256": "903265f8e81c8dd508c5b2d6513ca32cfcb44bcbe7ac025ef385aff77c681f58",
+    "lines": 145,
+    "cases": [
+      "serves all four platforms from one canonical binary with no package copies",
+      "permits a different TikTok payload for a presentation requirement",
+      "shares identical transformed bytes across Instagram and TikTok",
+      "moves review to readiness without copying media and retains the earlier handoff",
+      "binds publication authorization to exact identities with no binary writes",
+      "records exact published media/hash and rejects a different artifact",
+      "shares a cover across surfaces but permits independent artwork",
+      "allows arbitrary presentation-specific changes without storage-based selection rules",
+      "binds a general platform encoding derivative to the locked source without requiring a different story spec",
+      "rejects tampered references, canonical paths, extra copied payloads and legacy reference injection"
+    ]
+  },
+  {
+    "path": "tests/speed-of-light-regression.test.ts",
+    "sha256": "64042e3685dbc2b8d599e9b2efd8c381dd5446e637e937786d725914643e6d43",
+    "lines": 125,
+    "cases": [
+      "preserves composition, format, scenes, captions, publication and runtime",
+      "preserves every narration cue and audio input",
+      "preserves all numeric inputs consumed by the composition",
+      "links the video through its YouTube variant without retaining legacy fact IDs",
+      "preserves the reviewed caption and soundscape source artifacts",
+      "adds a TikTok-only production representation without changing the published spec"
+    ]
+  },
+  {
+    "path": "tests/traffic-finalization.test.ts",
+    "sha256": "b20db45cdd56f0b09c6ea5ed1653631898d994c13aafe4d06d94dccdd81c8c71",
+    "lines": 71,
+    "cases": [
+      "verifies exactly the selected claims, defers reserves, and leaves current package/asset unapproved",
+      "rejects evidence/package changes even when the claim statement is unchanged",
+      "rejects a changed script and a changed review binding",
+      "rejects excluded-claim verification and incomplete or stale claim decisions",
+      "cannot grant full asset approval or production/publication authorization",
+      "requires truthful time metadata while preserving legacy supplied review dates"
+    ]
+  },
+  {
+    "path": "tests/traffic-research.test.ts",
+    "sha256": "517890f12c2a62e8d76726818d0dc7661c55a6c2ba7bd6a1d6c0b594f7a02c07",
+    "lines": 49,
+    "cases": [
+      "validates the complete evidence-ledger and deterministic owner handoff without granting approval",
+      "rejects a statement changed after evidence review",
+      "rejects an evidence locator changed after review",
+      "rejects a rejected claim entering the recommended asset",
+      "rejects inaccessible evidence and stale package/asset revisions"
+    ]
+  },
+  {
+    "path": "tests/wood-frog-production.test.ts",
+    "sha256": "f435a9fea525786d4cdca92aaeb94adf5b1383d9e091da8006130c8d0e1ae14f",
+    "lines": 204,
+    "cases": [
+      "validates the approved VisualPlan to ProductionPlan bridge",
+      "allows only selected, verified claim references",
+      "rejects stale editorial revisions and excluded claims",
+      "locks the VideoSpec to the approved revisions, hashes, and exact script",
+      "keeps the TikTok derivative on the exact approved editorial and caption chain",
+      "matches every generated audio artifact to recorded SHA-256 provenance",
+      "preserves approved narration while producing speech-first timed phrases",
+      "does not leave a two-word orphan at the end of a cue",
+      "keeps the owner-approved master non-publishable pending platform review",
+      "rejects visual approval without exact approval metadata",
+      "uses a reusable master safe area without claiming TikTok V2 compatibility"
+    ]
+  }
+]

@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "nature": "Reconstructed dependencies and operating authority, not an autonomous state machine",
+  "questions": [
+    {
+      "number": 1,
+      "answer": "Owner-authorized/manual candidate entry; source, audience, analytics, trend and legacy origin kinds exist",
+      "evidence": "`src/content-intelligence/schema.ts`"
+    },
+    {
+      "number": 2,
+      "answer": "Recent candidates are session-assisted broad ideation/external search, not an autonomous discovery provider",
+      "evidence": "`content-intelligence/discovery/*/discovery-inputs.json`, `pool-input.json`"
+    },
+    {
+      "number": 3,
+      "answer": "Open normalized domains/topics; no domain whitelist; finite pools do not prove exhaustive search",
+      "evidence": "`src/knowledge/taxonomy.ts`, STRATEGY"
+    },
+    {
+      "number": 4,
+      "answer": "Classification after idea pool; one portfolio pillar and open domains/topics",
+      "evidence": "discovery provenance, taxonomy"
+    },
+    {
+      "number": 5,
+      "answer": "Ten categorical dimensions with rationale/uncertainty; additional session triage/history/feasibility",
+      "evidence": "`topicEvaluationDraftSchema`"
+    },
+    {
+      "number": 6,
+      "answer": "Explicit triage dispositions; every shortlist candidate has evaluation/reconnaissance",
+      "evidence": "`scripts/validate-discovery.ts`"
+    },
+    {
+      "number": 7,
+      "answer": "Separate editorial finalist proposal; Cycles #2/#3 each have five finalists",
+      "evidence": "`*/editorial-review.json`"
+    },
+    {
+      "number": 8,
+      "answer": "Ahmet selected Phantom, Longitude and Chocolate through separate selection records",
+      "evidence": "research `selection.json`"
+    },
+    {
+      "number": 9,
+      "answer": "Required in current milestone handoffs and scope validators; not in generic candidate/research API",
+      "evidence": "discovery validator vs `workflow.ts`"
+    },
+    {
+      "number": 10,
+      "answer": "Separate bounded research authority, immutable discovery binding and research candidate revision",
+      "evidence": "selections"
+    },
+    {
+      "number": 11,
+      "answer": "Scoped central-question research, misconceptions, derivations, reserve/excluded claims",
+      "evidence": "research bundles"
+    },
+    {
+      "number": 12,
+      "answer": "Agent/session search and inspected source leads; HTTP retriever takes already-known URLs",
+      "evidence": "`src/research/source-retriever.ts`"
+    },
+    {
+      "number": 13,
+      "answer": "Human/agent inspection of body/abstract/targeted PDF; locator/evidence assessments",
+      "evidence": "`source-inspections.json`, ClaimReview"
+    },
+    {
+      "number": 14,
+      "answer": "Inspected/abstract-only/partially-inspected/inaccessible plus limitations; cycle ledgers add unused leads/failures",
+      "evidence": "`sourceInspectionSchema`"
+    },
+    {
+      "number": 15,
+      "answer": "AI candidates start unverified; assessed claims bind sources, locators, caveats and statement hashes",
+      "evidence": "workspace and review schemas"
+    },
+    {
+      "number": 16,
+      "answer": "unverified, supported, conflicting, uncertain, verified",
+      "evidence": "`src/knowledge/schema.ts`"
+    },
+    {
+      "number": 17,
+      "answer": "Adequate scoped evidence assessment plus explicit owner promotion/verification metadata",
+      "evidence": "`claim-review.ts`, scoped decisions"
+    },
+    {
+      "number": 18,
+      "answer": "Promotion to verified requires explicit owner decision in authorized workflows; support/exclusion assessment is assisted",
+      "evidence": "claim-review helpers"
+    },
+    {
+      "number": 19,
+      "answer": "Complete ledgers, reserve states, rejected/uncertain claims and downstream exclusion checks remain durable",
+      "evidence": "production/reference validators"
+    },
+    {
+      "number": 20,
+      "answer": "Different hook mechanisms proposed against supported claims for review or verified approved claims for production drafting",
+      "evidence": "`workflow.ts`"
+    },
+    {
+      "number": 21,
+      "answer": "Owner preference/final editorial approval selects exact hook/framing",
+      "evidence": "finalization/approval decisions"
+    },
+    {
+      "number": 22,
+      "answer": "Session-authored script or provider draft; factual segments bind selected claims, connective editorial segments do not",
+      "evidence": "asset schema/prompts"
+    },
+    {
+      "number": 23,
+      "answer": "Owner authorizes finalization, wording/claims/VisualPlan queue and comprehension contract bound",
+      "evidence": "finalization bundles"
+    },
+    {
+      "number": 24,
+      "answer": "Explicit exact reviewed package/asset/script/VisualPlan approval; separate scoped authority flags",
+      "evidence": "creative-stage/editorial-lock helpers"
+    },
+    {
+      "number": 25,
+      "answer": "Asset companion binds approved hashes, eight decision responsibilities, alternatives and recent-content rationale",
+      "evidence": "creative-direction schemas"
+    },
+    {
+      "number": 26,
+      "answer": "Three medium approaches in Longitude and Chocolate; no universal three-option schema requirement",
+      "evidence": "creative handoffs"
+    },
+    {
+      "number": 27,
+      "answer": "Hash-bound precedents, similarities/differences/applicability; unresolved convenience reuse blocks readiness",
+      "evidence": "direction schema/integrity"
+    },
+    {
+      "number": 28,
+      "answer": "Frame allocations, on-screen facts, scene intent, assets and editorial/direction/script chain",
+      "evidence": "production schema/integrity"
+    },
+    {
+      "number": 29,
+      "answer": "Current primary af_heart; material deviation rationale; historical Longitude bf_emma proposal predates policy adoption",
+      "evidence": "brand execution policy/adoption"
+    },
+    {
+      "number": 30,
+      "answer": "Local Kokoro bounded text clips; exact WAVs retained and measured, cue starts/gaps authored",
+      "evidence": "narration generators/JSON"
+    },
+    {
+      "number": 31,
+      "answer": "Independent per-story direction and deterministic authored sound generators; no mandatory music",
+      "evidence": "creative records/audio scripts"
+    },
+    {
+      "number": 32,
+      "answer": "Speech-first phrase grouping, exact punctuation reconstruction and selective emphasis",
+      "evidence": "CaptionPlan V1/V2"
+    },
+    {
+      "number": 33,
+      "answer": "Measured cue boundaries plus authored phrase estimates/low-energy gaps; explicit bounds/style/renderer; not guaranteed forced alignment",
+      "evidence": "production owner handoffs"
+    },
+    {
+      "number": 34,
+      "answer": "Bespoke original procedural SVG/React/2.5D scenes rendered with Remotion; no speculative image/video generator orchestration",
+      "evidence": "compositions/components"
+    },
+    {
+      "number": 35,
+      "answer": "Asset origin/rights/evidence in plan, pinned fonts/licenses/hashes, ASSET-LICENSES",
+      "evidence": "production assets/provenance"
+    },
+    {
+      "number": 36,
+      "answer": "Authorized render, retained candidate receipt and durable exact MP4/audio/QA; unapproved state",
+      "evidence": "production handoffs"
+    },
+    {
+      "number": 37,
+      "answer": "Type/lint/tests; source/hash/caption validation; ffprobe/full decode, volume/ASR, sample typography/frame checks",
+      "evidence": "check/QA scripts"
+    },
+    {
+      "number": 38,
+      "answer": "Truthfulness of visual implication, beauty, comprehension, voice/mix, synchronization and device presentation",
+      "evidence": "owner-review handoffs"
+    },
+    {
+      "number": 39,
+      "answer": "Explicit message bound to exact candidate, source commit/receipt/plans/audio",
+      "evidence": "master decision/schema"
+    },
+    {
+      "number": 40,
+      "answer": "New logical master identity and locked plan revision, same MP4 path/hash; candidate record preserved",
+      "evidence": "master-lock artifacts"
+    },
+    {
+      "number": 41,
+      "answer": "Dated profile envelope + known insets + critical bounds + surface evidence; live settings/policy operator confirmation",
+      "evidence": "platform profiles/QA"
+    },
+    {
+      "number": 42,
+      "answer": "After master lock in modern practice; legacy assets/variants can precede production",
+      "evidence": "platform collections"
+    },
+    {
+      "number": 43,
+      "answer": "Yes, distinct VideoSpec/safe-area derivative; V2 adds arbitrary platform-specific derivative and media ref",
+      "evidence": "variant schema/delivery"
+    },
+    {
+      "number": 44,
+      "answer": "When selected source/master chain and technical/local bounds pass; device approval or exact risk acceptance separate",
+      "evidence": "`productionChainForVariant`"
+    },
+    {
+      "number": 45,
+      "answer": "Independent original cover render or exact-frame recommendation; native selectors/crops unknown",
+      "evidence": "cover evaluations"
+    },
+    {
+      "number": 46,
+      "answer": "Generator resolves variant/spec, probes exact media, writes copy/metadata/checklist/hash manifest",
+      "evidence": "delivery generator"
+    },
+    {
+      "number": 47,
+      "answer": "Historical portable packages copy video/cover per surface/stage; candidates\u2192locked masters already alias; V3 references canonical bytes",
+      "evidence": "artifact inventory/V2"
+    },
+    {
+      "number": 48,
+      "answer": "Explicit owner release decision bound to exact variants/packages/media/cover; no implicit permission from readiness",
+      "evidence": "release decisions/final-bindings"
+    },
+    {
+      "number": 49,
+      "answer": "Append-only owner scheduling report; not a PublicationRecord scheduler state",
+      "evidence": "operations scheduling JSON"
+    },
+    {
+      "number": 50,
+      "answer": "PublicationRecord after evidence; distinct owner-reported publication when exact remote metadata unavailable",
+      "evidence": "operations schema"
+    },
+    {
+      "number": 51,
+      "answer": "Manual owner URLs/IDs/date/settings/observations; intake files are empty until evidence supplied",
+      "evidence": "publication intake/closure"
+    },
+    {
+      "number": 52,
+      "answer": "`remote.postId/url`; missing TikTok permalink explicitly allowed in owner-reported state",
+      "evidence": "Phantom operations"
+    },
+    {
+      "number": 53,
+      "answer": "Hash/surface/context QA and separate qualitative live owner reports; no invented measurements",
+      "evidence": "presentation/closure records"
+    },
+    {
+      "number": 54,
+      "answer": "Native MetricSnapshot capture/window/definition fields; currently empty production registry",
+      "evidence": "operations schema/registry"
+    },
+    {
+      "number": 55,
+      "answer": "Human hypotheses and discovery/history inputs; no automatic metric-to-topic/style decisions",
+      "evidence": "PERFORMANCE/discovery inputs"
+    },
+    {
+      "number": 56,
+      "answer": "Owner confirms release/presentation scope with gaps and authorizes closure; no generic close command",
+      "evidence": "Phantom closure"
+    },
+    {
+      "number": 57,
+      "answer": "Explicit authority, validation, PR reconciliation/merge and remote proofs; audit does none",
+      "evidence": "closure receipts/Git"
+    },
+    {
+      "number": 58,
+      "answer": "Evidence branches preserved; no automatic deletion or encoded universal branch GC",
+      "evidence": "branch refs/recovery docs"
+    },
+    {
+      "number": 59,
+      "answer": "Scope, topic, exact verification/editorial, significant direction, production authority, master, external preview/release, closure/merge, exceptional risk/paid/rights/infra",
+      "evidence": "gate matrix below"
+    },
+    {
+      "number": 60,
+      "answer": "Invoked generation/validation/lookup/render/package/hash operations within authorized scope",
+      "evidence": "CLI/API implementations"
+    },
+    {
+      "number": 61,
+      "answer": "Broad discovery, source inspection, editorial/art decisions, next-stage orchestration, platform evidence entry and closure are mostly prompted sessions",
+      "evidence": "cycle records/scripts/Git chronology"
+    }
+  ],
+  "normalPath": [
+    "owner-discovery-scope",
+    "open-pool",
+    "classification-triage-evaluation-reconnaissance",
+    "owner-topic-selection",
+    "bounded-research",
+    "source-access-and-claim-assessment",
+    "research-finalization-scope",
+    "exact-editorial-verification",
+    "creative-direction-convergence",
+    "significant-direction-review-or-routine-authority",
+    "production-authority",
+    "plans-audio-captions-visuals",
+    "candidate-and-qa",
+    "owner-master-approval",
+    "logical-master-lock",
+    "platform-cover-local-qa",
+    "device-preview-or-owner-risk-acceptance",
+    "ready-variant-delivery",
+    "owner-publication-authorization",
+    "owner-manual-action",
+    "external-evidence",
+    "presentation-observations",
+    "native-metrics-if-supplied",
+    "owner-closure-merge-scope"
+  ],
+  "loops": [
+    {
+      "from": "topic-selection",
+      "on": "hold/reject",
+      "to": "pool/alternate shortlist"
+    },
+    {
+      "from": "research",
+      "on": "inaccessible/inadequate/conflicting evidence",
+      "to": "scope revision/exclusion/hold"
+    },
+    {
+      "from": "editorial approval",
+      "on": "changed wording/factual implication",
+      "to": "source review and exact reapproval"
+    },
+    {
+      "from": "direction",
+      "on": "unresolved convenience reuse/significant rejection",
+      "to": "creative reconsideration"
+    },
+    {
+      "from": "candidate QA",
+      "on": "technical/layout/audio/factual failure",
+      "to": "authorized production revision preserving prior identity"
+    },
+    {
+      "from": "owner master review",
+      "on": "rejection",
+      "to": "separately bound candidate revision"
+    },
+    {
+      "from": "platform review",
+      "on": "actual obstruction/crop issue",
+      "to": "justified cover/derivative QA and approval"
+    },
+    {
+      "from": "manual platform action",
+      "on": "processing/account/settings/rights uncertainty",
+      "to": "operator stop and actual evidence; no implemented retry controller"
+    },
+    {
+      "from": "evidence intake",
+      "on": "scheduled only",
+      "to": "scheduling report, publication still unknown"
+    },
+    {
+      "from": "postpublication issue",
+      "on": "material remediation needed",
+      "to": "new owner remediation authority"
+    }
+  ]
+}
