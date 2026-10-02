@@ -1,0 +1,228 @@
+{
+  "cycleId": "cycle.5",
+  "recordedAt": "2026-10-02T22:52:37.710Z",
+  "sourceReviewCommit": "5abe951d4a9d51eb6e91a3ed3832bdafb86437d7",
+  "release": {
+    "path": "content-intelligence/cycles/cycle-5/publication/release-v1.json",
+    "sha256": "829f2c797177190b6b06bb824398b8005c7d9cf8bd8cf924d05f5a88e40d5412"
+  },
+  "releaseTargetSha256": "ee04a7cf9fe00d2df7ff047f117c496de06a2c5ce05b0be649e51b36bafc125f",
+  "decision": {
+    "path": "content-intelligence/cycles/cycle-5/publication/owner-publication-decision-v1.json",
+    "sha256": "9708f7c8a208b1e13b5d4663b02dc8554525a64b6b9ce094d98ea7c8ecc9dfdd"
+  },
+  "riskRegister": {
+    "path": "content-intelligence/cycles/cycle-5/publication/risk-register-v1.json",
+    "sha256": "81c2320b0647ec240297f57bf923b5abc5cee25a4db447d3147d5a2a71d93a49"
+  },
+  "scope": "Ahmet manual release on YouTube, TikTok, Instagram and Facebook only. Assistant external platform actions prohibited.",
+  "stage": "authorized",
+  "revision": 9,
+  "nextAction": {
+    "kind": "manual-publication",
+    "gate": null
+  },
+  "bindings": [
+    {
+      "variantId": "chladni-sand.variant.youtube.v1",
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "variantSha256": "bb23809cc242f73d98cbab2228fe20be6ca10377e12d68ee151a32136f0195c8",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-5/publication/youtube/manifest-v1.json",
+        "sha256": "d93758246f697820371e743a2afa101f8c7890a1b11f7acf5690fc98550ef3e2"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-5/publication/youtube/metadata-v1.json",
+        "sha256": "019e383d357663ae4001aa9a1843df4defd63e54f9818033129e2fa2d06270f5"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-5/publication/youtube/upload-copy-v1.txt",
+        "sha256": "cc5ba9696259afabae4dcd3fb65ea8b8d6410a8a933ee3e1055b908a2ec4ba22"
+      },
+      "media": {
+        "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+        "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+            "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c",
+            "sha256": "183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-5/publication/youtube/cover-evidence-v1.json",
+            "sha256": "a9a7b0218f27304914750c9247c02c34edb6ff202cc4c9d64d6c7a8793707284"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-5/publication/youtube/cover-profile-v1.json",
+            "sha256": "9306467a254bd9c2f37ef031b9bfd4e5bdc41e5f81fa552cb353d6e752ee5423"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 publication authorization with accepted scoped uncertainty; no device pass claimed"
+    },
+    {
+      "variantId": "chladni-sand.variant.tiktok.v1",
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "variantSha256": "64e448a99ef899728069feebbea427e6660e1c56c859a65fc6bc68e7ae550077",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-5/publication/tiktok/manifest-v1.json",
+        "sha256": "a387ca91182bce8f9acb0133706932d4ec8fe41aa2089bc28ca6f19ef549be3f"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-5/publication/tiktok/metadata-v1.json",
+        "sha256": "1e6d21f782e0f5438ba2f54751ddc393859170af7645b9026e4e2eeee8cb0ef2"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-5/publication/tiktok/upload-copy-v1.txt",
+        "sha256": "b6ee05e8789edee133e13522a771505789f12bb8af3321e9fb41c16ffccff2c4"
+      },
+      "media": {
+        "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+        "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+            "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832",
+            "sha256": "c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-5/publication/tiktok/cover-evidence-v1.json",
+            "sha256": "a40349403af8b7c0a8cb6a83e11564b80db2dce9239bef04249d05916215ae13"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-5/publication/tiktok/cover-profile-v1.json",
+            "sha256": "209b4fe695a2221cff799a38bddf29196b06ecb934b7a1998e5daf7c89fdd8f6"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 publication authorization with accepted scoped uncertainty; no device pass claimed"
+    },
+    {
+      "variantId": "chladni-sand.variant.instagram.v1",
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "variantSha256": "2c4c16df396e1e379f48ce987071f05e726e9218801bf60e73a2cddb56d574fa",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-5/publication/instagram/manifest-v1.json",
+        "sha256": "0685bb8b15b490bb21d7ea280f6ac830c192b55e63460816341396c0a194bc20"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-5/publication/instagram/metadata-v1.json",
+        "sha256": "8174de627357b2cbb16ab801a804685b550f703c92c563e5f99195bb8a993510"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-5/publication/instagram/upload-copy-v1.txt",
+        "sha256": "9645b4236264d2a1a2ba1e0d5ae57a969005be8f5f62b6fd1e14c86258dfaeba"
+      },
+      "media": {
+        "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+        "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+            "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c",
+            "sha256": "183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-5/publication/instagram/cover-evidence-v1.json",
+            "sha256": "85ff3308d7bdede09b81e5a07acba0154dbab41e915231d7ae3948c705dd77a1"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-5/publication/instagram/cover-profile-v1.json",
+            "sha256": "ca352b78f6aaba2cb8ed868a3cca595e18bf26bd9b0bdba3ca4db0eb391e7dba"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 publication authorization with accepted scoped uncertainty; no device pass claimed"
+    },
+    {
+      "variantId": "chladni-sand.variant.facebook.v1",
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "variantSha256": "be4004ccab9d1370450aa1c27e2bfa6439a480c7d9b9ee142bf3454a22c7a278",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-5/publication/facebook/manifest-v1.json",
+        "sha256": "a8f030588075a709ad29885e1687f6432484abcc13a99cde430a06eadd60e6ed"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-5/publication/facebook/metadata-v1.json",
+        "sha256": "01e57d1fa04731430bde0ad35b1f56433dbd57b6a72a572f093d1448e3332fe2"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-5/publication/facebook/upload-copy-v1.txt",
+        "sha256": "e4a842899eb70a45c53c72a864a6604f152e41208b1e77531a938b862d36608d"
+      },
+      "media": {
+        "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+        "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df",
+            "sha256": "76fb050dd348c307b07489cf62de3cab59adcd6dfc3eb5b983bc30b584a5c3df"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832",
+            "sha256": "c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-5/publication/facebook/cover-evidence-v1.json",
+            "sha256": "97197260cccaed77c0d05d2d53ff1412fd871f7f6076c475034167668ee1a61a"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-5/publication/facebook/cover-profile-v1.json",
+            "sha256": "8860095266bf6c3e235cedf694cbe4aa6f2f4c436f1247d7e3c8fad719ea73ba"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 publication authorization with accepted scoped uncertainty; no device pass claimed"
+    }
+  ],
+  "acceptedPresentationUnknowns": 52,
+  "acceptedOperationalUnknowns": 5,
+  "mediaCopied": 0,
+  "mediaRegenerated": 0,
+  "externalPlatformActionsPerformed": [],
+  "publicationEvidence": null,
+  "actualScheduling": null,
+  "actualPublication": null,
+  "analytics": null
+}

@@ -1,0 +1,52 @@
+{
+  "recordedAt": "2026-10-02T22:54:45.460196+00:00",
+  "cycleId": "cycle.5",
+  "revision": 9,
+  "stage": "authorized",
+  "sourceReviewCommit": "5abe951d4a9d51eb6e91a3ed3832bdafb86437d7",
+  "checks": {
+    "pnpm check": {
+      "passed": true,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 48,
+      "tests": 461
+    },
+    "pnpm artifacts:durable": {
+      "passed": true,
+      "canonicalPayloads": 422,
+      "durableArtifactCount": 731,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "cycleReplay": "passed",
+    "authorizedCliResolution": "passed",
+    "authorizedPlatforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "reviewedFilesUnchanged": 102,
+    "canonicalCatalogUnchanged": true,
+    "mediaGeneratedReencodedOrCopied": 0,
+    "acceptedPresentationUnknowns": 52,
+    "acceptedOperationalUnknowns": 5,
+    "whitespace": "passed"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-5/publication/release-v1.json",
+    "sha256": "829f2c797177190b6b06bb824398b8005c7d9cf8bd8cf924d05f5a88e40d5412"
+  },
+  "ownerDecision": {
+    "path": "content-intelligence/cycles/cycle-5/publication/owner-publication-decision-v1.json",
+    "sha256": "9708f7c8a208b1e13b5d4663b02dc8554525a64b6b9ce094d98ea7c8ecc9dfdd"
+  },
+  "assistantPlatformActions": [],
+  "actualScheduling": null,
+  "actualPublication": null,
+  "URLsAndIDs": null,
+  "presentationObservations": null,
+  "analytics": null,
+  "git": "Authorization/source/handoff committed and pushed together; subsequent remote durability receipt records actual push/clone results without inventing publication evidence."
+}

@@ -411,3 +411,7 @@ One exact unapproved canonical MP4 is retained at SHA-256 `76fb050dd348c307b0748
 ## 2026-10-03 — Cycle #5 exact master approved; publication review prepared
 
 Owner approval locks the Chladni master without rerendering/re-encoding or creative edits. Four independent V3 presentations reuse its exact canonical bytes because sampled provisional insets clear and no known collision justifies a derivative. One original cover serves YouTube/Instagram when live controls permit; existing decoded nodal-pattern frame is the TikTok/Facebook reference. Cover evidence remains independent. Current profile/native/device/crop limits are itemized for the second normal owner gate, never converted into safety passes. Publication approval and external actions remain absent. The prior gate regression now checks its recorded master-review checkpoint rather than incorrectly prohibiting later explicitly authorized continuation.
+
+## 2026-10-03 — Cycle #5 publication authorized; owner manual release pending
+
+Explicit owner approval binds the unchanged four-platform release, selected cover/frame references and all listed presentation/operational uncertainties. V3 journal revision 9 records `authorized`, not published or closed. The final manual-release handoff reuses approved copy and settings by reference, with no media generation or duplication. Actual external evidence and native analytics remain unknown. Commit/push of the content branch is explicitly authorized; no platform upload/schedule/publication or main integration is performed.
