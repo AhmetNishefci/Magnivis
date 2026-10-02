@@ -1,0 +1,202 @@
+{
+  "cycleId": "cycle.4",
+  "recordedAt": "2026-10-02T19:02:31.086Z",
+  "release": {
+    "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+    "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+  },
+  "releaseTargetSha256": "2c70847845e99dcda647dd57df9d0b72fb5fd24e8d9b861f2a4b75d11ec1c1d9",
+  "decision": {
+    "path": "content-intelligence/cycles/cycle-4/publication/owner-publication-decision-v1.json",
+    "sha256": "e3f59b95e6de91ae1c714c771cec3404f241e2356f072bdf3b879043cc3a944b"
+  },
+  "riskRegister": {
+    "path": "content-intelligence/cycles/cycle-4/publication/risk-register-v2.json",
+    "sha256": "8fe0d002549566179f6175d8d27bb686f5e95394eecaadc1981a6220a7d330f2"
+  },
+  "scope": "Ahmet manual release on YouTube, TikTok, Instagram and Facebook only",
+  "stage": "authorized",
+  "revision": 9,
+  "bindings": [
+    {
+      "variantId": "paper-half-shape.variant.youtube.v1",
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "variantSha256": "7ae8aa3ffcaab2a1bfcad2ef94ae8d01dc75ee0f21a85ea9e4c96d492913e123",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/youtube/manifest-v1.json",
+        "sha256": "a596c54dba53fe3826b2906c3597da8094b80220cba92dff633876963948f42e"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-4/publication/youtube/metadata-v1.json",
+        "sha256": "2aef8d451ad203000653f39f1da0785084476de9ab7685fa3f3d9f6f587760fe"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-4/publication/youtube/upload-copy-v1.txt",
+        "sha256": "c590c3d279151bf34d15b8b4e08fabe3badedc12c60174b6eb6ecaa79005b614"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+            "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594",
+            "sha256": "f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-4/publication/youtube/cover-evidence-v1.json",
+            "sha256": "c557fed35b0f29eac799c638ca294415992ab041a97854ca71aa756b7ae658a7"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-4/publication/youtube/cover-profile-v1.json",
+            "sha256": "48ec1852751834d86365ba2425a704d1fcf3784f004e41843e211feead19a2b2"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 owner authorization and accepted scoped uncertainties; no real-device pass"
+    },
+    {
+      "variantId": "paper-half-shape.variant.tiktok.v1",
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "variantSha256": "c4d5aafe9a535cf0f70f2960a7e2ca4d295d6ebdd391e4b580ef233e3f5374c0",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/tiktok/manifest-v1.json",
+        "sha256": "adc6b0f7a599e445a8dafaccbc09c89851c6a66d4fe0d21df3b47bb33185b35d"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-4/publication/tiktok/metadata-v1.json",
+        "sha256": "07b05ff29022f5e2d9fc82b9b2846648dd4347b7779f09f634791613d0cdbe2e"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-4/publication/tiktok/upload-copy-v1.txt",
+        "sha256": "f14c8b1659773f57aa86073cd741ddbb8e5ef5eed6f7340ea13f422a5c2f3ad4"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+            "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f",
+            "sha256": "1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-4/publication/tiktok/cover-evidence-v1.json",
+            "sha256": "3d9aeb148abbe69bd0bce9c26e9d7a8bf09fdfa8f9b71465989ad5b2e9c9d924"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-4/publication/tiktok/cover-profile-v1.json",
+            "sha256": "87ed21a0c49d448a22d8949af5ddacfd393b14b4948c4f3478d5d12a3069eaf9"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 owner authorization and accepted scoped uncertainties; no real-device pass"
+    },
+    {
+      "variantId": "paper-half-shape.variant.instagram.v1",
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "variantSha256": "21122655e2d8376a2993c62db7e5d4cd8dbe1b16d45c0831fa3a57fce72bf884",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/instagram/manifest-v1.json",
+        "sha256": "279a2c8849b80ca3dd93f4184d8440581eec8a8a129f1f9c6f8508a36be9684b"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-4/publication/instagram/metadata-v1.json",
+        "sha256": "f88ac479e64c34384a601f2c9cc783914ab2e8e5f10689e7e82a0363b8c2de2a"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-4/publication/instagram/upload-copy-v1.txt",
+        "sha256": "39e23922f5574c134beb75cbf2a8517dbc786979690894efdf0e87b81a420bfe"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+            "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594",
+            "sha256": "f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-4/publication/instagram/cover-evidence-v1.json",
+            "sha256": "3078481a4486928b96fd6ec32168d20f351495764fe17ececd221f18a0207b83"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-4/publication/instagram/cover-profile-v1.json",
+            "sha256": "d92fa494d920d1fc95da60acb622398b2b9c3bb4f0e89babea27b94caa4b5704"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 owner authorization and accepted scoped uncertainties; no real-device pass"
+    },
+    {
+      "variantId": "paper-half-shape.variant.facebook.v1",
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "variantSha256": "f60a8fe070c127ccb0b6b654ba141e428678d5ae501d21288904060d0e2ab493",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/facebook/manifest-v1.json",
+        "sha256": "a40a020a90c23268f84e76342b2f4863edc35c13b51b2d4347cb1e9fae273859"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-4/publication/facebook/metadata-v1.json",
+        "sha256": "ad25212f20bd6437a08b07cd8f510955e17b6b2bcf579879986d464eab62b980"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-4/publication/facebook/upload-copy-v1.txt",
+        "sha256": "c45b23bb0de39a7d2f80166b4d24846069d55ee6904f2f18aa467e700c4afbea"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+            "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f",
+            "sha256": "1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-4/publication/facebook/cover-evidence-v1.json",
+            "sha256": "b892d0bd8206161c760e9793c33def7b5f43a069b5e01fa5111039b8950afe00"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-4/publication/facebook/cover-profile-v1.json",
+            "sha256": "310d16cdab8dbd7699e9433502fd2297b15e1121fe77b1df75d782ee26fabfc7"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release",
+      "readinessBasis": "Exact V3 owner authorization and accepted scoped uncertainties; no real-device pass"
+    }
+  ],
+  "mediaCopied": 0,
+  "mediaRegenerated": 0,
+  "externalActionsPerformed": [],
+  "publicationEvidence": null
+}

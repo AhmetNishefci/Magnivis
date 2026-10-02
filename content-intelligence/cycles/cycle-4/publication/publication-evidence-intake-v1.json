@@ -1,0 +1,111 @@
+{
+  "cycleId": "cycle.4",
+  "release": {
+    "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+    "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+  },
+  "decision": {
+    "path": "content-intelligence/cycles/cycle-4/publication/owner-publication-decision-v1.json",
+    "sha256": "e3f59b95e6de91ae1c714c771cec3404f241e2356f072bdf3b879043cc3a944b"
+  },
+  "state": "awaiting-real-owner-evidence",
+  "destinations": [
+    {
+      "platform": "youtube",
+      "variantId": "paper-half-shape.variant.youtube.v1",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/youtube/manifest-v1.json",
+        "sha256": "a596c54dba53fe3826b2906c3597da8094b80220cba92dff633876963948f42e"
+      },
+      "schedule": null,
+      "publication": {
+        "url": null,
+        "nativeId": null,
+        "publishedAt": null,
+        "visibility": null,
+        "settings": null,
+        "releasedMediaConfirmation": null
+      },
+      "presentation": {
+        "device": null,
+        "testedAt": null,
+        "observations": null,
+        "evidence": []
+      },
+      "analytics": null
+    },
+    {
+      "platform": "tiktok",
+      "variantId": "paper-half-shape.variant.tiktok.v1",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/tiktok/manifest-v1.json",
+        "sha256": "adc6b0f7a599e445a8dafaccbc09c89851c6a66d4fe0d21df3b47bb33185b35d"
+      },
+      "schedule": null,
+      "publication": {
+        "url": null,
+        "nativeId": null,
+        "publishedAt": null,
+        "visibility": null,
+        "settings": null,
+        "releasedMediaConfirmation": null
+      },
+      "presentation": {
+        "device": null,
+        "testedAt": null,
+        "observations": null,
+        "evidence": []
+      },
+      "analytics": null
+    },
+    {
+      "platform": "instagram",
+      "variantId": "paper-half-shape.variant.instagram.v1",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/instagram/manifest-v1.json",
+        "sha256": "279a2c8849b80ca3dd93f4184d8440581eec8a8a129f1f9c6f8508a36be9684b"
+      },
+      "schedule": null,
+      "publication": {
+        "url": null,
+        "nativeId": null,
+        "publishedAt": null,
+        "visibility": null,
+        "settings": null,
+        "releasedMediaConfirmation": null
+      },
+      "presentation": {
+        "device": null,
+        "testedAt": null,
+        "observations": null,
+        "evidence": []
+      },
+      "analytics": null
+    },
+    {
+      "platform": "facebook",
+      "variantId": "paper-half-shape.variant.facebook.v1",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-4/publication/facebook/manifest-v1.json",
+        "sha256": "a40a020a90c23268f84e76342b2f4863edc35c13b51b2d4347cb1e9fae273859"
+      },
+      "schedule": null,
+      "publication": {
+        "url": null,
+        "nativeId": null,
+        "publishedAt": null,
+        "visibility": null,
+        "settings": null,
+        "releasedMediaConfirmation": null
+      },
+      "presentation": {
+        "device": null,
+        "testedAt": null,
+        "observations": null,
+        "evidence": []
+      },
+      "analytics": null
+    }
+  ],
+  "instruction": "Populate only from actual owner reports or supplied native evidence. Scheduling is not publication. Do not register published observations or close until every authorized variant has genuine publication evidence."
+}

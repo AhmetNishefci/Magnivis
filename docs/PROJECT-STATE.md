@@ -1,3 +1,13 @@
+# CONTENT CYCLE #4 — AUTHORIZED OWNER MANUAL RELEASE
+
+Ahmet explicitly approved publication on YouTube, TikTok, Instagram and Facebook and accepted the listed presentation uncertainties. [Exact owner decision](../content-intelligence/cycles/cycle-4/publication/owner-publication-decision-v1.json) binds the unchanged four-platform release, 52 exact-media presentation unknowns and five operational unknowns. The independent replay-validated journal is revision 9 / **authorized**; no normal owner gate remains pending.
+
+[Manual release handoff](../content-intelligence/cycles/cycle-4/publication/manual-release-v1.md) provides the actual canonical upload file, selected covers, approved copy/settings and executable authorized resolver. All four variants use the same locked MP4, SHA-256 `93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7`. Authorization copied or regenerated no media. Review-era manifests, metadata, risk reports and owner handoffs remain immutable; separate owner authority supplies current manual release permission. Accepted uncertainty is not measured geometry or a device pass.
+
+Ahmet alone performs the manual release. Actual upload, scheduling, publication, device results and analytics remain unknown; no assistant platform action occurred. Closure awaits genuine publication evidence for all four destinations. No new content cycle is started. The prior gate sections below retain their historical scope.
+
+---
+
 # CONTENT CYCLE #4 — AHMET — PUBLICATION REVIEW / AUTHORIZATION
 
 Ahmet approved the exact paper-geometry master with **APPROVE**. [Owner master decision](../content-intelligence/cycles/cycle-4/master-owner-decision-v1.json) and independent replayed journal `workflow/cycles/cycle.4/` lock the same canonical MP4, SHA-256 `93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7`, without copying or changing bytes. Source production plans/captions and the original master handoff remain frozen.
