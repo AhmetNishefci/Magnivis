@@ -1,3 +1,4 @@
+import {resolveDeliveryUpload} from '../src/delivery/media-bindings';
 import {selectDeliveryVariants} from './delivery-cli';
 import {generateDeliveryPackage} from './delivery-packages';
 
@@ -10,6 +11,7 @@ try {
       generatedAt,
     });
     console.log(`${result.manifest.state}: ${result.directory}`);
+    if (result.manifest.schemaVersion === 3) console.log(`Exact canonical upload: ${resolveDeliveryUpload(result.manifest).uploadFile}`);
   }
 } catch (error) {
   console.error(error instanceof Error ? error.message : error);

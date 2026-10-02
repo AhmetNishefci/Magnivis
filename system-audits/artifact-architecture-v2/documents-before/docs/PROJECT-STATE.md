@@ -1,9 +1,3 @@
-# Current bounded milestone — Artifact Architecture V2
-
-Canonical media identity and prospective reference-only delivery are implemented on the architecture branch; owner architecture review remains pending. See `docs/ARTIFACT-ARCHITECTURE-V2.md` and `system-audits/artifact-architecture-v2/owner-review.md`. Historical paths, locked masters and release authorization remain unchanged. No Cycle #4 work or assistant platform action is authorized/performed.
-
-Ahmet reports Chocolate Crystal Choice manually scheduled on all four intended platforms. Exact Chocolate publication date/time is unknown; the provisional 20:00 window is not scheduling evidence. Append-only report: `content-intelligence/operations/chocolate-crystal-choice-scheduling-v1/owner-report.json`. Scheduling is not publication; no live IDs/URLs/device results/settings/analytics are inferred.
-
 # Current Cycle #3 state — owner manual publication/scheduling authorized
 
 Ahmet explicitly approves the exact Chocolate four-platform delivery package and Instagram cover and accepts the documented presentation uncertainty. [Release decision](../content-intelligence/reviews/chocolate-crystal-choice-publication-v1/owner-decision.json) `owner-decision.chocolate-crystal-choice.publication.v1`, actual entry 2026-10-02T10:11:10.796Z, supplied review timestamp null, authorizes **Ahmet only** to manually upload/schedule/publish. No prepublication private/device pass is required; zero Chocolate real-device passes, no screenshots/native geometry/UI/platform results invented.

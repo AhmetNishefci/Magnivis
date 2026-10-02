@@ -1,3 +1,4 @@
+import {loadMediaRegistry, type MediaRegistry} from '../artifacts/media';
 import {contentAssetRegistry, type ContentAssetRegistry} from '../content-assets/registry';
 import {knowledgePackageRegistry, type KnowledgePackageRegistry} from '../knowledge/registry';
 import {platformVariantRegistry, type PlatformVariantRegistry} from '../platform-variants/registry';
@@ -44,6 +45,7 @@ export const createPublicationRegistry = (
   variants: PlatformVariantRegistry = platformVariantRegistry,
   assets: ContentAssetRegistry = contentAssetRegistry,
   packages: KnowledgePackageRegistry = knowledgePackageRegistry,
+  media?: MediaRegistry,
 ) => {
   const publicationMap = new Map<string, PublicationRecord>();
   const remoteKeys = new Set<string>();
@@ -55,6 +57,10 @@ export const createPublicationRegistry = (
     const variant = variants.get(publication.source.platformVariant.id);
     const asset = assets.get(publication.source.contentAsset.id);
     const knowledgePackage = packages.get(publication.source.knowledgePackage.id);
+    if (variant.mediaArtifact || publication.source.mediaArtifact) {
+      if (!variant.mediaArtifact || !publication.source.mediaArtifact || variant.mediaArtifact.id !== publication.source.mediaArtifact.id || variant.mediaArtifact.sha256 !== publication.source.videoSha256) throw new Error('Publication must identify exactly the media used by its PlatformVariant');
+      (media ?? loadMediaRegistry()).resolveFile(publication.source.mediaArtifact);
+    }
     const expectedDeliveryId = `delivery.${variant.id}.r${variant.revision}`;
     if (
       variant.revision !== publication.source.platformVariant.revision

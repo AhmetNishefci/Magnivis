@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {loadMediaRegistry, mediaReference, type MediaRegistry} from '../src/artifacts/media';
 import {createHash} from 'node:crypto';
 import {
   copyFileSync,
@@ -52,6 +53,7 @@ export type DeliveryDependencies = {
   packageRegistry: KnowledgePackageRegistry;
   productionResolver: (variant: PlatformVariant) => DeliveryProduction;
   mediaInspector: (path: string) => MediaInspection;
+  mediaRegistry?: MediaRegistry;
 };
 
 const defaultProductionResolver = (variant: PlatformVariant): DeliveryProduction => {
@@ -67,11 +69,11 @@ const defaultProductionResolver = (variant: PlatformVariant): DeliveryProduction
   }
   if (
     variant.productionIntent.renderStrategy === 'new-render'
-    && target.spec.platformVariantId !== variant.id
+    && target.spec.platformVariantId !== variant.id && !variant.mediaArtifact
   ) {
     throw new Error(`New-render variant ${variant.id} requires its own VideoSpec`);
   }
-  return {spec: target.spec, sourceVideoPath: variant.sourceMaster?.relationship === 'exact-master' ? variant.sourceMaster.artifact.path : target.output};
+  return {spec: target.spec, sourceVideoPath: variant.mediaArtifact ? loadMediaRegistry().resolveFile(variant.mediaArtifact) : variant.sourceMaster?.relationship === 'exact-master' ? variant.sourceMaster.artifact.path : target.output};
 };
 
 const defaultDependencies: DeliveryDependencies = {
@@ -384,13 +386,18 @@ const productionChainForVariant = (
     ) {
       throw new Error(`Exact-master variant ${variant.id} does not resolve to its locked artifact`);
     }
+  } else if (sourceMaster.relationship === 'platform-specific-derivative') {
+    if (!variant.mediaArtifact) throw new Error('General platform derivative requires an exact canonical media reference');
+    const authoredSafeArea = safeAreaProfileRegistry.get(productionReference.safeAreaProfileId);
+    const targetSafeArea = safeAreaProfileRegistry.get(variant.safeAreaProfileId);
+    if (!safeAreaContains(targetSafeArea, authoredSafeArea)) validateContentBoundsEvidence(variant);
   } else {
     if (productionReference.safeAreaProfileId !== variant.safeAreaProfileId) {
       throw new Error(`Derivative VideoSpec safe area does not match PlatformVariant ${variant.id}`);
     }
     if (
       production.spec.id === sourceMaster.videoSpecId
-      || production.spec.platformVariantId !== variant.id
+      || (production.spec.platformVariantId !== variant.id && !variant.mediaArtifact)
     ) {
       throw new Error(`Safe-area derivative ${variant.id} requires its dedicated VideoSpec`);
     }
@@ -406,6 +413,30 @@ const productionChainForVariant = (
       relationship: sourceMaster.relationship,
     },
   };
+};
+
+const validateCanonicalProductionBinding = (variant: PlatformVariant, production: DeliveryProduction, registry: MediaRegistry) => {
+  if (!variant.mediaArtifact) throw new Error('Missing exact production media identity');
+  if (resolve(production.sourceVideoPath) !== registry.resolveFile(variant.mediaArtifact)) throw new Error('Production must resolve exact canonical media');
+  if (variant.sourceMaster && variant.sourceMaster.relationship !== 'exact-master') {
+    const selected = registry.get(variant.mediaArtifact);
+    const descendsFromMaster = (ref: NonNullable<PlatformVariant['mediaArtifact']>): boolean => {
+      const artifact = registry.get(ref);
+      return artifact.sha256 === variant.sourceMaster!.artifact.sha256 || artifact.parents.some(descendsFromMaster);
+    };
+    if (selected.provenance.kind !== 'legacy-preserved' && !descendsFromMaster(variant.mediaArtifact)) throw new Error('Platform media generation must bind its approved source master');
+  }
+};
+const requiredCanonicalCover = (registry: MediaRegistry, sha256: string) => {
+  const artifact = registry.byHash(sha256);
+  if (!artifact) throw new Error('Cover must be registered as canonical media before delivery');
+  return artifact;
+};
+const referencedArtifact = (registry: MediaRegistry, reference: NonNullable<PlatformVariant['mediaArtifact']>, role: 'video' | 'cover'): DeliveryManifest['artifacts'][number] => {
+  const artifact = registry.get(reference);
+  registry.resolveFile(reference);
+  if (role === 'video' && artifact.mediaType !== 'video/mp4' || role === 'cover' && !artifact.mediaType.startsWith('image/')) throw new Error('Wrong media type for delivery role');
+  return {role, path: artifact.canonicalPath, mediaArtifact: reference, mediaType: artifact.mediaType, bytes: artifact.bytes, sha256: artifact.sha256};
 };
 
 export type GenerateDeliveryOptions = {
@@ -439,6 +470,9 @@ export const generateDeliveryPackage = ({
   const sourceMedia = dependencies.mediaInspector(production.sourceVideoPath);
   assertMediaMatches(sourceMedia, production, variant);
   const productionChain = productionChainForVariant(variant, production);
+  const mediaRegistry = variant.mediaArtifact ? dependencies.mediaRegistry ?? loadMediaRegistry() : undefined;
+  if (mediaRegistry && variant.cover.artifact) referencedArtifact(mediaRegistry, mediaReference(requiredCanonicalCover(mediaRegistry, variant.cover.artifact.sha256)), 'cover');
+  if (variant.mediaArtifact) validateCanonicalProductionBinding(variant, production, mediaRegistry!);
   const directory = assertSafeDeliveryDirectory(
     outputRoot,
     production.spec.id,
@@ -455,11 +489,15 @@ export const generateDeliveryPackage = ({
     }
   }
   if (variant.cover.artifact && (!existsSync(variant.cover.artifact.path) || sha256(variant.cover.artifact.path) !== variant.cover.artifact.sha256)) throw new Error('Registered cover source is missing or changed');
+  if (variant.mediaArtifact && existsSync(directory)) throw new Error('Reference delivery already exists; preserve it and choose a new stage directory/revision');
   rmSync(directory, {recursive: true, force: true});
   mkdirSync(directory, {recursive: true});
 
-  copyFileSync(production.sourceVideoPath, resolve(directory, 'video.mp4'));
-  if (variant.cover.artifact) copyFileSync(variant.cover.artifact.path, resolve(directory, 'cover.png'));
+  if (!variant.mediaArtifact) {
+    // Legacy portable staging only; new durable V3 handoffs never copy media.
+    copyFileSync(production.sourceVideoPath, resolve(directory, 'video.mp4'));
+    if (variant.cover.artifact) copyFileSync(variant.cover.artifact.path, resolve(directory, 'cover.png'));
+  }
   let captionArtifactPath: string | undefined;
   if (variant.captions.behavior === 'external-track') {
     captionArtifactPath = `captions.${variant.captions.language}.vtt`;
@@ -476,8 +514,8 @@ export const generateDeliveryPackage = ({
   writeFileSync(resolve(directory, 'review.md'), createReviewChecklist(variant));
 
   const artifacts: DeliveryManifest['artifacts'] = [
-    artifactRecord(directory, 'video', 'video.mp4', 'video/mp4'),
-    ...(variant.cover.artifact ? [artifactRecord(directory, 'cover', 'cover.png', 'image/png')] : []),
+    ...(variant.mediaArtifact ? [referencedArtifact(mediaRegistry!, variant.mediaArtifact, 'video')] : [artifactRecord(directory, 'video', 'video.mp4', 'video/mp4')]),
+    ...(variant.cover.artifact ? [variant.mediaArtifact ? referencedArtifact(mediaRegistry!, mediaReference(requiredCanonicalCover(mediaRegistry!, variant.cover.artifact.sha256)), 'cover') : artifactRecord(directory, 'cover', 'cover.png', 'image/png')] : []),
     ...(captionArtifactPath
       ? [artifactRecord(directory, 'captions', captionArtifactPath, 'text/vtt')]
       : []),
@@ -487,12 +525,13 @@ export const generateDeliveryPackage = ({
   ];
   const state = deliveryStateForVariant(variant.status);
   const manifest = deliveryManifestSchema.parse({
-    schemaVersion: 2,
+    schemaVersion: variant.mediaArtifact ? 3 : 2,
     deliveryId: `delivery.${variant.id}.r${variant.revision}`,
     generatedAt,
     state,
     publishEligible: state === 'ready-for-manual-upload',
     source: {
+      ...(variant.mediaArtifact ? {mediaArtifact: variant.mediaArtifact} : {}),
       platformVariant: {
         id: variant.id,
         revision: variant.revision,
@@ -701,7 +740,16 @@ export const validateDeliveryPackage = (
   }
   assertExact(manifest.review.approval, variant.approval, 'Delivery approval');
 
-  const expectedFiles = new Set(['manifest.json', ...manifest.artifacts.map(({path}) => path)]);
+  assertExact(manifest.source.mediaArtifact, variant.mediaArtifact, 'Canonical media binding');
+  const registry = manifest.schemaVersion === 3 ? dependencies.mediaRegistry ?? loadMediaRegistry() : undefined;
+  if (variant.mediaArtifact) validateCanonicalProductionBinding(variant, production, registry!);
+  const artifactPath = (artifact: DeliveryManifest['artifacts'][number]) => {
+    if (!artifact.mediaArtifact) return resolve(directory, artifact.path);
+    const canonical = registry!.get(artifact.mediaArtifact);
+    if (canonical.canonicalPath !== artifact.path || canonical.bytes !== artifact.bytes || canonical.mediaType !== artifact.mediaType) throw new Error('Canonical media metadata/path mismatch');
+    return registry!.resolveFile(artifact.mediaArtifact);
+  };
+  const expectedFiles = new Set(['manifest.json', ...manifest.artifacts.filter(a => !a.mediaArtifact).map(({path}) => path)]);
   const actualFiles = readdirSync(directory);
   for (const expectedFile of expectedFiles) {
     if (!actualFiles.includes(expectedFile)) {
@@ -714,7 +762,7 @@ export const validateDeliveryPackage = (
     }
   }
   for (const artifact of manifest.artifacts) {
-    const path = resolve(directory, artifact.path);
+    const path = artifactPath(artifact);
     if (statSync(path).size !== artifact.bytes) {
       throw new Error(`Artifact size mismatch: ${artifact.path}`);
     }
@@ -749,7 +797,7 @@ export const validateDeliveryPackage = (
   // fields, so only V2 packages can be reproduced byte-for-byte from the
   // current templates. Both versions still receive the artifact hash, source,
   // registry, profile, readiness, and media-integrity checks above and below.
-  if (manifest.schemaVersion === 2) {
+  if (manifest.schemaVersion >= 2) {
     assertExact(
       JSON.parse(readFileSync(resolve(directory, 'metadata.json'), 'utf8')),
       metadataFileForVariant(variant),
@@ -763,7 +811,7 @@ export const validateDeliveryPackage = (
     }
   }
 
-  const deliveredMedia = dependencies.mediaInspector(resolve(directory, 'video.mp4'));
+  const deliveredMedia = dependencies.mediaInspector(artifactPath(videoArtifact));
   assertMediaMatches(deliveredMedia, production, variant);
   assertExact(manifest.media, {
     width: deliveredMedia.width,

@@ -1,3 +1,4 @@
+import {validateCanonicalMediaDurability} from './artifact-v2-integrity';
 import {execFileSync} from 'node:child_process';
 import {loadArtifactRegistry} from '../src/artifacts/registry';
 import {safePath, verifyArtifact} from '../src/artifacts/store';
@@ -12,4 +13,4 @@ for(const m of manifests.filter(m=>m.retention==='DURABLE_REQUIRED')){
  if((verification.bytes??0)>=100*1024*1024)throw new Error(`GitHub file size exceeds policy: ${location.key}`);
  receipts.push({artifactId:m.artifactId,path:location.key,sha256:verification.sha256,bytes:verification.bytes,provenance:m.provenance});
 }
-console.log(JSON.stringify({passed:true,durableArtifactCount:receipts.length,historicalMissingExpectations:manifests.filter(m=>m.retention==='HISTORICAL_EXPECTATION_ONLY').map(m=>({artifactId:m.artifactId,sha256:m.identity.sha256})),receipts},null,2));
+console.log(JSON.stringify({passed:true,canonicalMedia:validateCanonicalMediaDurability(),durableArtifactCount:receipts.length,historicalMissingExpectations:manifests.filter(m=>m.retention==='HISTORICAL_EXPECTATION_ONLY').map(m=>({artifactId:m.artifactId,sha256:m.identity.sha256})),receipts},null,2));

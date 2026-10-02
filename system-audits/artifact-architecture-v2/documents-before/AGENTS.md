@@ -59,7 +59,3 @@ Magnivis is a premium, faceless, English-language knowledge-media brand: **See t
 
 - Operational recovery status/closure and historical gaps: `docs/RECOVERY.md`
 - Accepted historical closure candidate/procedure: `docs/RECOVERY-CLOSE-CANDIDATE.md`
-
-## Canonical media architecture V2
-
-Follow `docs/ARTIFACT-ARCHITECTURE-V2.md`: create media according to presentation needs and deduplicate only actually identical payloads. New durable media has one immutable SHA-256-bound canonical binary; PlatformVariants, deliveries, authorization and publication records reference its identity. Lifecycle promotion never copies media. Distinct platform presentations remain eligible whenever quality requires them; storage convenience gives no creative advantage. Historical paths/approvals/QA/recovery evidence remain frozen. Independent same-byte evidence snapshots require an explicit hash-bound exception. Run `pnpm check` and `pnpm artifacts:durable`; resolve manual upload files with `pnpm exec tsx scripts/resolve-delivery-media.ts <manifest.json>`. Never delete historical duplicates as cleanup.

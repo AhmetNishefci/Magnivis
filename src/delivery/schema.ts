@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {mediaReferenceSchema} from '../artifacts/media';
 import {platformApprovalSchema} from '../platform-variants/owner-presentation';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 import {
@@ -21,7 +22,8 @@ const revisionReferenceSchema = z.object({
 
 const artifactSchema = z.object({
   role: z.enum(['video', 'captions', 'cover', 'metadata', 'upload-copy', 'review']),
-  path: z.string().regex(/^[a-z0-9][a-z0-9._-]*$/),
+  path: z.string().min(1).refine(p => !p.startsWith('/') && !p.includes('\\') && p.split('/').every(s => s && s !== '.' && s !== '..')),
+  mediaArtifact: mediaReferenceSchema.optional(),
   mediaType: z.string().min(1),
   bytes: z.number().int().nonnegative(),
   sha256: z.string().regex(/^[a-f0-9]{64}$/),
@@ -30,12 +32,13 @@ const artifactSchema = z.object({
 const approvalSchema = platformApprovalSchema;
 
 export const deliveryManifestSchema = z.object({
-  schemaVersion: z.union([z.literal(1), z.literal(2)]),
+  schemaVersion: z.union([z.literal(1), z.literal(2), z.literal(3)]),
   deliveryId: z.string().regex(/^delivery\.[a-z0-9]+(?:[.-][a-z0-9]+)*\.r[1-9][0-9]*$/),
   generatedAt: z.iso.datetime(),
   state: deliveryPackageStateSchema,
   publishEligible: z.boolean(),
   source: z.object({
+    mediaArtifact: mediaReferenceSchema.optional(),
     platformVariant: revisionReferenceSchema.extend({
       status: platformVariantStatusSchema,
     }).strict(),
@@ -54,7 +57,7 @@ export const deliveryManifestSchema = z.object({
         videoSpecId: z.string().regex(/^[a-z0-9-]+$/),
         path: z.string().min(1),
         sha256: z.string().regex(/^[a-f0-9]{64}$/),
-        relationship: z.enum(['exact-master', 'platform-safe-area-derivative']),
+        relationship: z.enum(['exact-master', 'platform-safe-area-derivative', 'platform-specific-derivative']),
       }).strict(),
     }).strict().optional(),
   }).strict(),
@@ -132,6 +135,15 @@ export const deliveryManifestSchema = z.object({
   }).strict(),
   artifacts: z.array(artifactSchema).min(4),
 }).strict().superRefine((manifest, context) => {
+  const referenceBased = manifest.schemaVersion === 3;
+  if (referenceBased !== Boolean(manifest.source.mediaArtifact)) context.addIssue({code: 'custom', message: 'V3 requires exact canonical source media; legacy manifests cannot add media references'});
+  for (const a of manifest.artifacts) {
+    if (a.mediaArtifact && (!referenceBased || !['video', 'cover'].includes(a.role) || a.sha256 !== a.mediaArtifact.sha256)) context.addIssue({code: 'custom', message: 'Invalid external media reference'});
+    if (!a.mediaArtifact && a.path.includes('/')) context.addIssue({code: 'custom', message: 'Package-local artifact must be a basename'});
+    if (referenceBased && ['video', 'cover'].includes(a.role) && !a.mediaArtifact) context.addIssue({code: 'custom', message: 'V3 binary assets must reference canonical media'});
+  }
+  const video = manifest.artifacts.find(a => a.role === 'video');
+  if (referenceBased && (video?.mediaArtifact?.id !== manifest.source.mediaArtifact?.id || video?.sha256 !== manifest.source.mediaArtifact?.sha256)) context.addIssue({code: 'custom', message: 'Video/source media identity mismatch'});
   const manualPublication = manifest.operatorGuidance?.manualPublication;
   if (manualPublication && (manifest.state !== 'ready-for-manual-upload' || manifest.review.approval?.ownerDecision?.id !== manualPublication.authorization.id || manifest.review.approval?.ownerDecision?.revision !== manualPublication.authorization.revision || manifest.review.approval?.ownerDecision?.sha256 !== manualPublication.authorization.sha256)) {
     context.addIssue({code: 'custom', message: 'Public manual-upload instructions require a ready handoff and matching explicit authorization'});

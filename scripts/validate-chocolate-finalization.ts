@@ -1,3 +1,4 @@
+import {architecturePreviousDocumentBytes} from './artifact-v2-integrity';
 import {createHash} from 'node:crypto';
 import {readFileSync, readdirSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
@@ -121,7 +122,7 @@ export const validateChocolateFinalization = (directory = chocolateFinalizationD
     'content-intelligence/reviews/longitude-clock-publication-v1', 'docs/STRATEGY.md', 'docs/CREATIVE-DIRECTION.md',
     'docs/CAPTIONS.md', 'docs/ROADMAP.md', 'docs/PERFORMANCE.md', 'docs/OPERATIONS.md', 'AGENTS.md']) {
     const names = execFileSync('git', ['ls-tree', '-r', '--name-only', base, '--', path], {encoding: 'utf8'}).trim().split('\n').filter(Boolean);
-    for (const name of names) if (!readFileSync(name).equals(execFileSync('git', ['show', `${base}:${name}`]))) throw new Error(`Protected bytes drift: ${name}`);
+    for (const name of names) if (!architecturePreviousDocumentBytes(name,readFileSync(name)).equals(execFileSync('git', ['show', `${base}:${name}`]))) throw new Error(`Protected bytes drift: ${name}`);
   }
   const handoff = readFileSync(resolve(directory, 'owner-review.md'), 'utf8');
   if (!handoff.includes(narration) || !handoff.includes(report.nextGate)) throw new Error('Owner handoff drift');

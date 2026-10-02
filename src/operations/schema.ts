@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {mediaReferenceSchema} from '../artifacts/media';
 import {platformApprovalSchema,presentationDecisionReferenceSchema} from '../platform-variants/owner-presentation';
 import {deliveryPackageStateSchema} from '../delivery/schema';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
@@ -61,6 +62,7 @@ export const publicationRecordSchema = z.object({
       manifestSha256:z.string().regex(/^[a-f0-9]{64}$/).optional(),
     }).strict(),
     videoSha256: z.string().regex(/^[a-f0-9]{64}$/),
+    mediaArtifact: mediaReferenceSchema.optional(),
   }).strict(),
   state: z.enum(['private-preview', 'published', 'published-owner-reported', 'unlisted', 'deleted']),
   ownerReport:z.object({decision:presentationDecisionReferenceSchema,evidenceBasis:z.literal('explicit-owner-message'),enteredAt:z.iso.datetime(),timeBasis:z.literal('decision-entry'),publishedAt:z.null(),managementUrl:z.url().optional(),missingPublicPermalink:z.boolean(),uploadIdentityBasis:z.literal('owner-reported-prepared-file'),limitations:z.array(z.string()).min(1)}).strict().optional(),
@@ -74,6 +76,7 @@ export const publicationRecordSchema = z.object({
   settings: platformSettingsSnapshotSchema,
   approval: platformApprovalSchema,
 }).strict().superRefine((publication, context) => {
+  if (publication.source.mediaArtifact && publication.source.mediaArtifact.sha256 !== publication.source.videoSha256) context.addIssue({code: 'custom', message: 'Publication media must match exact uploaded hash'});
   if (publication.state === 'published-owner-reported') {
     if (!publication.ownerReport || !publication.publishedOn || !publication.source.delivery.manifestSha256 || !publication.approval.ownerDecision) {
       context.addIssue({code:'custom',message:'Owner-reported publication requires dated explicit evidence, exact delivery hash and approval decision'});

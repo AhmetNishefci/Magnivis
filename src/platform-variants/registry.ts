@@ -1,3 +1,4 @@
+import {loadMediaRegistry, type MediaRegistry} from '../artifacts/media';
 import {longitudePublicationVariants as longitudePlatformVariants} from './variants/longitude-clock-publication';
 import {phantomTrafficPublicationVariants as phantomTrafficPlatformVariants} from './variants/phantom-traffic-publication';
 import {
@@ -29,12 +30,18 @@ const safeAreaBySurface: Record<PlatformSurface, string> = {
 export const createPlatformVariantRegistry = (
   inputs: readonly unknown[],
   assetRegistry: ContentAssetRegistry = contentAssetRegistry,
+  media?: MediaRegistry,
 ) => {
   const variantMap = new Map<string, PlatformVariant>();
   const surfaceKeys = new Set<string>();
 
   for (const input of inputs) {
     const variant = platformVariantSchema.parse(input);
+    if (variant.mediaArtifact) {
+      const registry = media ?? loadMediaRegistry();
+      if (registry.get(variant.mediaArtifact).mediaType !== 'video/mp4') throw new Error('PlatformVariant media must be an actual MP4 artifact');
+      registry.resolveFile(variant.mediaArtifact);
+    }
     if (variantMap.has(variant.id)) {
       throw new Error(`Duplicate platform variant ID: ${variant.id}`);
     }

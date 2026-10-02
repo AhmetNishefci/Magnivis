@@ -113,7 +113,3 @@ Registry validation now permits explicitly versioned YouTube V1/V2 bindings: exi
 ## Adaptive creative direction — future content
 
 Adaptive execution never weakens MASTER → PLATFORM VARIANT → PRESENTATION SURFACE. CreativeDirection records presentation considerations, not measured geometry/device success. New typography/visual treatments still require region, readability and real-device review; unknown geometry stays unknown. Phantom Traffic variants, profiles and QA evidence are unchanged by this system milestone.
-
-## Artifact Architecture V2 — prospective canonical media
-
-`docs/ARTIFACT-ARCHITECTURE-V2.md` now owns canonical binary identity and reference-only Delivery Manifest V3. Prior V1/V2 descriptions above remain historical compatibility behavior. New durable handoffs reference one SHA-256-bound MediaArtifact per unique payload; platform-specific binaries remain supported for presentation quality. State transitions and authorization never copy media. Historical media/package/approval/recovery paths remain exact legacy evidence. Upload resolution: `pnpm exec tsx scripts/resolve-delivery-media.ts <manifest.json>`. Explicit evidence exceptions retain independent review provenance; no historical deletion/migration occurs.

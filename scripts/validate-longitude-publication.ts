@@ -1,3 +1,4 @@
+import {architecturePreviousDocumentBytes} from './artifact-v2-integrity';
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {validateLongitudePublicationAuthorization} from '../src/platform-variants/longitude-publication';
@@ -38,7 +39,7 @@ if (publicationRegistry.list().some(record => record.id.includes('longitude-cloc
 const settings = read(`${root}/upload-settings.json`);
 if (settings.settingsApplied || sha256Json(settings.youtube.categoryPolicy) !== sha256Json(youtubeCategoryPolicy) || settings.youtube.preferredCategory !== 'Science & Technology' || settings.youtube.fallbackCategory !== 'Education') throw new Error('Invalid story-specific category or invented live setting');
 const frozen = execFileSync('git', ['ls-tree', '-r', '--name-only', decision.reviewedCommit], {encoding: 'utf8'}).trim().split('\n').filter(path => path.startsWith('artifacts/') || path.startsWith('public/audio/') || path.startsWith('public/fonts/') || path.startsWith('content-intelligence/reviews/') || path.startsWith('content-intelligence/creative-directions/') || path.startsWith('src/production/plans/') || path.startsWith('src/captions/plans/') || ['AGENTS.md', 'docs/CREATIVE-DIRECTION.md', 'src/design/brand-execution-policy.json'].includes(path));
-for (const path of frozen) if (!readFileSync(path).equals(execFileSync('git', ['show', `${decision.reviewedCommit}:${path}`], {maxBuffer: 64*1024*1024}))) throw new Error('Historical/approved artifact drift: '+path);
+for (const path of frozen) if (!architecturePreviousDocumentBytes(path,readFileSync(path)).equals(execFileSync('git', ['show', `${decision.reviewedCommit}:${path}`], {maxBuffer: 64*1024*1024}))) throw new Error('Historical/approved artifact drift: '+path);
 const manifests = parseManifests(read('artifacts/longitude-clock-publication-manifests.json'));
 for (const manifest of manifests) if (longitudeFileHash(manifest.localPath) !== manifest.identity.sha256 || readFileSync(manifest.localPath).length !== manifest.identity.bytes || manifest.publication !== 'authorized-not-published') throw new Error('Publication archive drift');
 console.log(JSON.stringify({passed: true, decisionEnteredAt: decision.enteredAt, publicationAuthorized: true, publicationOccurred: false, assistantUploadAuthorized: false, variants: variants.map(v => ({id: v.id, revision: v.revision, state: v.status, preview: v.previewStatus})), packages: 4, realDevicePasses: 0, coverDeviceTested: false, preservedFiles: frozen.length, retainedArtifacts: manifests.length, master: decision.master, nextGate: 'AHMET — CYCLE #2 MANUAL PUBLICATION'}, null, 2));

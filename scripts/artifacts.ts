@@ -1,3 +1,4 @@
+import {loadMediaRegistry, mediaReference} from '../src/artifacts/media';
 import {validateRecoveryDecision} from '../src/artifacts/recovery';
 import {readFileSync} from 'node:fs';
 import {parseManifests} from '../src/artifacts/schema';
@@ -28,5 +29,12 @@ for (const m of manifests) {
   console.log(JSON.stringify({artifactId:m.artifactId,provenance:m.provenance,historicalStatus:m.historicalStatus,approvalDecisionId:m.approvalDecisionId,publication:m.publication,retention:m.retention,disposition,verification,providers,result}));
   if (command === 'verify' && ['CORRUPT','REQUIRED_MISSING'].includes(disposition)) failures++;
  } catch (error) { failures++; console.error(JSON.stringify({artifactId:m.artifactId,error:String(error)})); }
+}
+if (failures) process.exitCode = 1;
+
+// V2 canonical paths are already Git-backed; verification never duplicates or regenerates them.
+const canonicalMedia = loadMediaRegistry();
+if (!filter) for (const artifact of canonicalMedia.list()) {
+ try { canonicalMedia.resolveFile(mediaReference(artifact)); } catch (error) { failures++; console.error(String(error)); }
 }
 if (failures) process.exitCode = 1;

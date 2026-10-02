@@ -92,7 +92,3 @@ Artifact Storage V1 is now implemented in src/artifacts with local retrieval, im
 ## Future adaptive creative direction
 
 CREATIVE-DIRECTION.md owns the first-class ContentAsset companion between approved editorial intent and ProductionPlan. Exact historical production is preserved. Future direction records hold thesis, treatment rationale and recent-content convergence review; the production chain binds the direction hash. Caption V1 is historical execution, not universal styling. V2 adaptive authoring chooses a renderer and appearance explicitly while preserving fidelity/timing/accessibility/platform gates. No new renderer, TTS provider, content cycle or long-form video is produced by this milestone.
-
-## Artifact Architecture V2 — prospective canonical media
-
-`docs/ARTIFACT-ARCHITECTURE-V2.md` now owns canonical binary identity and reference-only Delivery Manifest V3. Prior V1/V2 descriptions above remain historical compatibility behavior. New durable handoffs reference one SHA-256-bound MediaArtifact per unique payload; platform-specific binaries remain supported for presentation quality. State transitions and authorization never copy media. Historical media/package/approval/recovery paths remain exact legacy evidence. Upload resolution: `pnpm exec tsx scripts/resolve-delivery-media.ts <manifest.json>`. Explicit evidence exceptions retain independent review provenance; no historical deletion/migration occurs.

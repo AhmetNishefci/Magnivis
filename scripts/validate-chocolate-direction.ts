@@ -1,3 +1,4 @@
+import {architecturePreviousDocumentBytes} from './artifact-v2-integrity';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {readFileSync, readdirSync} from 'node:fs';
@@ -109,7 +110,7 @@ export const validateChocolateDirection = (directory = chocolateDirectionDirecto
     'content-intelligence/reviews/longitude-clock-publication-v1','docs/STRATEGY.md','docs/CREATIVE-DIRECTION.md','docs/CAPTIONS.md',
     'docs/ROADMAP.md','docs/PERFORMANCE.md','docs/OPERATIONS.md','AGENTS.md','src/design/brand-execution-policy.json']) {
     const names = execFileSync('git', ['ls-tree','-r','--name-only',base,'--',path], {encoding:'utf8'}).trim().split('\n').filter(Boolean);
-    for (const name of names) if (!readFileSync(name).equals(execFileSync('git',['show',`${base}:${name}`]))) throw new Error('Protected policy/history bytes drift');
+    for (const name of names) if (!architecturePreviousDocumentBytes(name,readFileSync(name)).equals(execFileSync('git',['show',`${base}:${name}`]))) throw new Error('Protected policy/history bytes drift');
   }
   const ownerText = readFileSync(resolve(directory,'owner-review.md'),'utf8');
   if (!ownerText.includes(rights.stopGate) || !ownerText.includes(sha256Json(direction))) throw new Error('Owner handoff identity drift');

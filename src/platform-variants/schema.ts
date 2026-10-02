@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {mediaReferenceSchema} from '../artifacts/media';
 import {platformApprovalSchema} from './owner-presentation';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
 import {taxonomyTermSchema} from '../knowledge/taxonomy';
@@ -54,7 +55,7 @@ const sourceMasterSchema = z.object({
     revision: z.number().int().positive(),
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
   }).strict(),
-  relationship: z.enum(['exact-master', 'platform-safe-area-derivative']),
+  relationship: z.enum(['exact-master', 'platform-safe-area-derivative', 'platform-specific-derivative']),
   contentBoundsEvidence: z.object({
     regions: z.object({path: z.string().min(1), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict(),
     report: z.object({path: z.string().min(1), sha256: z.string().regex(/^[a-f0-9]{64}$/)}).strict(),
@@ -136,6 +137,7 @@ export const platformVariantSchema = z.object({
   }).strict(),
   previewStatus: platformPreviewStatusSchema.optional(),
   sourceMaster: sourceMasterSchema.optional(),
+  mediaArtifact: mediaReferenceSchema.optional(),
   operatorGuidance: operatorGuidanceSchema.optional(),
   status: platformVariantStatusSchema,
   approval: approvalSchema.optional(),
@@ -245,7 +247,7 @@ export const platformVariantSchema = z.object({
     const expectedRelationship = variant.productionIntent.renderStrategy === 'new-render'
       ? 'platform-safe-area-derivative'
       : 'exact-master';
-    if (variant.sourceMaster.relationship !== expectedRelationship) {
+    if (variant.sourceMaster.relationship !== expectedRelationship && !(variant.productionIntent.renderStrategy === 'new-render' && variant.sourceMaster.relationship === 'platform-specific-derivative')) {
       context.addIssue({
         code: 'custom',
         path: ['sourceMaster', 'relationship'],

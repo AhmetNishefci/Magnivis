@@ -1,3 +1,4 @@
+import {architecturePreviousDocumentBytes} from './artifact-v2-integrity';
 import {createHash} from 'node:crypto';
 import {readFileSync, readdirSync} from 'node:fs';
 import {resolve} from 'node:path';
@@ -145,7 +146,7 @@ export const validateChocolateResearch = (directory = chocolateReviewDirectory) 
     'docs/PERFORMANCE.md', 'docs/OPERATIONS.md', 'AGENTS.md'];
   for (const path of protectedPaths) {
     const names = execFileSync('git', ['ls-tree', '-r', '--name-only', base, '--', path], {encoding: 'utf8'}).trim().split('\n').filter(Boolean);
-    for (const name of names) if (!readFileSync(resolve(name)).equals(execFileSync('git', ['show', `${base}:${name}`]))) throw new Error(`Preserved bytes drift: ${name}`);
+    for (const name of names) if (!architecturePreviousDocumentBytes(name,readFileSync(resolve(name))).equals(execFileSync('git', ['show', `${base}:${name}`]))) throw new Error(`Preserved bytes drift: ${name}`);
   }
   const scheduling = JSON.parse(readFileSync(resolve('content-intelligence/operations/longitude-clock-scheduling-v1/owner-report.json'), 'utf8')) as {master: {path: string; sha256: string}};
   if (sha(readFileSync(resolve(scheduling.master.path))) !== scheduling.master.sha256) throw new Error('Longitude locked master drift');

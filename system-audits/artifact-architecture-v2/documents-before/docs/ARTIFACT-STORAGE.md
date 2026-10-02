@@ -76,7 +76,3 @@ Longitude Clock narrator revision v2 uses a separate `artifacts/longitude-clock-
 ## Longitude release retention
 
 `artifacts/longitude-clock-publication-manifests.json` is an additional native collection for final authorized handoffs, owner decision, cover selection, checklist and pending postpublication/intake evidence. New records are `authorized-not-published`; old candidate/master/draft collections remain exact. All four new video copies reuse the existing master Git blob. No new media encode, production asset or cover image is introduced. Required release artifacts survive a Git clone; model/browser caches and operational output remain unnecessary.
-
-## Artifact Architecture V2 — prospective canonical media
-
-`docs/ARTIFACT-ARCHITECTURE-V2.md` now owns canonical binary identity and reference-only Delivery Manifest V3. Prior V1/V2 descriptions above remain historical compatibility behavior. New durable handoffs reference one SHA-256-bound MediaArtifact per unique payload; platform-specific binaries remain supported for presentation quality. State transitions and authorization never copy media. Historical media/package/approval/recovery paths remain exact legacy evidence. Upload resolution: `pnpm exec tsx scripts/resolve-delivery-media.ts <manifest.json>`. Explicit evidence exceptions retain independent review provenance; no historical deletion/migration occurs.

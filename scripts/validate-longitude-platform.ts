@@ -1,3 +1,4 @@
+import {architecturePreviousDocumentBytes} from './artifact-v2-integrity';
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {z} from 'zod';
@@ -51,7 +52,7 @@ for (const record of records) {
 }
 const checkpoint = 'e6fd1653d98a9e9049087f56262885e2a05a3018';
 const protectedPaths = execFileSync('git', ['ls-tree', '-r', '--name-only', checkpoint], {encoding: 'utf8'}).trim().split('\n').filter(path => path.includes('/longitude-clock-production-') || path.startsWith('artifacts/qa-evidence/longitude-clock-candidate-') || path.startsWith('public/audio/longitude-clock') || path.startsWith('public/fonts/longitude-clock') || path.startsWith('src/production/plans/longitude-clock') || path.startsWith('src/captions/plans/longitude-clock') || ['artifacts/manifests.json', 'artifacts/presentation-profiles.json', 'artifacts/presentation-qa.json', 'artifacts/cover-assets.json', 'artifacts/longitude-clock-manifests.json', 'artifacts/longitude-clock-v2-manifests.json', 'artifacts/masters/longitude-clock-candidate-v1.mp4', master.artifact.path, 'AGENTS.md', 'docs/CREATIVE-DIRECTION.md'].includes(path));
-for (const path of protectedPaths) if (!readFileSync(path).equals(execFileSync('git', ['show', `${checkpoint}:${path}`], {maxBuffer: 64*1024*1024}))) throw new Error('Historical/master dependency drift: '+path);
+for (const path of protectedPaths) if (!architecturePreviousDocumentBytes(path,readFileSync(path)).equals(execFileSync('git', ['show', `${checkpoint}:${path}`], {maxBuffer: 64*1024*1024}))) throw new Error('Historical/master dependency drift: '+path);
 z.object({passed: z.literal(true), fullVideoAndAudioDecode: z.literal(true), masterModified: z.literal(false), realDevicePasses: z.literal(0)}).passthrough().parse(read('artifacts/qa-evidence/longitude-clock-platform-v1/media-decode.json'));
 const captionInspection = read('artifacts/qa-evidence/longitude-clock-platform-v1/caption-midpoints.json');
 const approvedCues = read('src/captions/plans/longitude-clock-v2.json').cues;
