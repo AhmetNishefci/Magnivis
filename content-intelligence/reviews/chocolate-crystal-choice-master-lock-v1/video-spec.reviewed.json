@@ -1,0 +1,245 @@
+{
+  "audio": {
+    "file": "audio/chocolate/tactile.wav",
+    "layers": [
+      "transition",
+      "narration",
+      "silence",
+      "impact"
+    ],
+    "narration": true,
+    "narrationCues": [
+      {
+        "duration": 2.35,
+        "file": "audio/chocolate/narration/cue-1.wav",
+        "id": "chocolate-cue-1",
+        "start": 0.1,
+        "transcript": "The recipe can stay the same."
+      },
+      {
+        "duration": 2.25,
+        "file": "audio/chocolate/narration/cue-2.wav",
+        "id": "chocolate-cue-2",
+        "start": 2.6,
+        "transcript": "The chocolate doesn’t have to."
+      },
+      {
+        "duration": 4.35,
+        "file": "audio/chocolate/narration/cue-3.wav",
+        "id": "chocolate-cue-3",
+        "start": 5.133333333333334,
+        "transcript": "Chocolate contains cocoa butter, a fat that forms crystals."
+      },
+      {
+        "duration": 3.525,
+        "file": "audio/chocolate/narration/cue-4.wav",
+        "id": "chocolate-cue-4",
+        "start": 9.733333333333333,
+        "transcript": "Melt it enough, and that crystal structure breaks down."
+      },
+      {
+        "duration": 2.65,
+        "file": "audio/chocolate/narration/cue-5.wav",
+        "id": "chocolate-cue-5",
+        "start": 13.6,
+        "transcript": "As it cools, crystals form again."
+      },
+      {
+        "duration": 3.825,
+        "file": "audio/chocolate/narration/cue-6.wav",
+        "id": "chocolate-cue-6",
+        "start": 16.466666666666665,
+        "transcript": "But their arrangements, and the network they build, can differ."
+      },
+      {
+        "duration": 3.2,
+        "file": "audio/chocolate/narration/cue-7.wav",
+        "id": "chocolate-cue-7",
+        "start": 21.066666666666666,
+        "transcript": "The result can be softer chocolate with less snap."
+      },
+      {
+        "duration": 4.725,
+        "file": "audio/chocolate/narration/cue-8.wav",
+        "id": "chocolate-cue-8",
+        "start": 24.533333333333335,
+        "transcript": "Tempering guides that rebuilding with controlled temperatures and mixing."
+      },
+      {
+        "duration": 4.8,
+        "file": "audio/chocolate/narration/cue-9.wav",
+        "id": "chocolate-cue-9",
+        "start": 29.733333333333334,
+        "transcript": "The goal is a structure that helps chocolate snap cleanly and look glossy."
+      },
+      {
+        "duration": 1.825,
+        "file": "audio/chocolate/narration/cue-10.wav",
+        "id": "chocolate-cue-10",
+        "start": 35,
+        "transcript": "Same recipe."
+      },
+      {
+        "duration": 1.725,
+        "file": "audio/chocolate/narration/cue-11.wav",
+        "id": "chocolate-cue-11",
+        "start": 37,
+        "transcript": "Different structure."
+      }
+    ],
+    "provenance": {
+      "narration": {
+        "approvedScriptSha256": "9df1b0d0eb1889181372a6aed8bbfd97c8ad5bb6c05a657f0317300db7e02272",
+        "cueArtifacts": [
+          {
+            "id": "chocolate-cue-1",
+            "sha256": "4327607dbbb30aadbe16f88a647ec0b84eeec29ea4756d7c0a94c037552433be"
+          },
+          {
+            "id": "chocolate-cue-2",
+            "sha256": "2e28c18abd23ddddc745e8fa523b7fb11cae95949eedbe66300ed0a6d282e956"
+          },
+          {
+            "id": "chocolate-cue-3",
+            "sha256": "62d9ea3a0275907b3f77eba66dc46526ab80bffa6ecb04d427ce2877d0f61667"
+          },
+          {
+            "id": "chocolate-cue-4",
+            "sha256": "0275d53b88411c67522067fbfd398a9cad11303941ad174b7ae28c87017a3f06"
+          },
+          {
+            "id": "chocolate-cue-5",
+            "sha256": "75201cb30360cc62713b389356d9973ac16fca6ede472f1e0e13e19b1780406b"
+          },
+          {
+            "id": "chocolate-cue-6",
+            "sha256": "c684ba04f9fb69a00b1d6f322e6a6f2ab057d415e4de6df5b1569d0b4eda8c72"
+          },
+          {
+            "id": "chocolate-cue-7",
+            "sha256": "d66cb9420baffc29273aa15395eb5fd5dca03e73b76599d8171f8e3cd097568e"
+          },
+          {
+            "id": "chocolate-cue-8",
+            "sha256": "cda82c668df0687d5285aca1d72c6f23628056c21e65a6b7dc79fffb5d40c663"
+          },
+          {
+            "id": "chocolate-cue-9",
+            "sha256": "7cb1b68cff7e660a35068f39857ac8d7ab25a30bfca5ed05bb885fd3c1575b29"
+          },
+          {
+            "id": "chocolate-cue-10",
+            "sha256": "2ab9fa0d8704e3acb963ee17c54e487f8f4a84cebff9d6abe6c23f5ac00539b0"
+          },
+          {
+            "id": "chocolate-cue-11",
+            "sha256": "a9749df876a2890d6c5b2b5654e4e116bad5eaf462662789bfcef333b94f8689"
+          }
+        ],
+        "generatedAt": "2026-10-01T22:57:56.238Z",
+        "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+        "provider": "kokoro-local",
+        "speed": 0.98,
+        "voiceId": "af_heart"
+      },
+      "soundscape": {
+        "generatorId": "chocolate.original-tactile.v1",
+        "generatorVersion": 1,
+        "sha256": "cf80a2653eb865fb4caee49abdc040fcbfa9a5019b21c5938968c11da02ef61a"
+      }
+    }
+  },
+  "captions": [
+    {
+      "file": "captions/chocolate.en.vtt",
+      "label": "English",
+      "language": "en"
+    }
+  ],
+  "compositionId": "Magnivis-Chocolate-Material-Cutaway",
+  "contentAssetId": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+  "descriptionCandidates": [
+    "The same chocolate recipe can rebuild a different fat-crystal structure after melting."
+  ],
+  "factIds": [],
+  "format": {
+    "durationSeconds": 39.833333333333336,
+    "fps": 30,
+    "height": 1920,
+    "width": 1080
+  },
+  "hook": "The recipe can stay the same. The chocolate doesn’t have to.",
+  "id": "chocolate-crystal-choice-locked",
+  "language": "en",
+  "pillar": "materials",
+  "production": {
+    "approvedContentAssetSha256": "dc90cc07e342482ac4df23811700a9e4eb1ad14de72538264f3561c45cd24d56",
+    "approvedPackageSha256": "fca66f32b54c9232a0169f8cefdb089142edd8a7db5b13c8f514a21d23123974",
+    "approvedScriptSha256": "9df1b0d0eb1889181372a6aed8bbfd97c8ad5bb6c05a657f0317300db7e02272",
+    "captionPlanId": "caption-plan.chocolate-crystal-choice.material-cutaway",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "86832aa3d5c32a9e5a8dd72700fba9c52d9a8c4c1695d6ef4303345c7bc6aeb5",
+    "contentAssetRevision": 3,
+    "knowledgePackageRevision": 3,
+    "outputReviewState": "owner-visual-approved",
+    "ownerDecisionSha256": "c99e0f0ce1cb61ec8c3856e2455ae908f2c44962181220a8fc20f9212f4823aa",
+    "productionPlanId": "production-plan.chocolate-crystal-choice.material-cutaway",
+    "productionPlanRevision": 2,
+    "safeAreaProfileId": "safe-area.youtube-shorts.v2"
+  },
+  "scenes": [
+    {
+      "end": 5.133333333333334,
+      "id": "recipe",
+      "purpose": "Use one unchanged composition/batch; no added water, substituted fats or scorching.",
+      "start": 0
+    },
+    {
+      "end": 9.733333333333333,
+      "id": "fat",
+      "purpose": "Show cocoa butter as a fat phase containing sugar/cocoa solids, not the entire bar as pure fat crystals.",
+      "start": 5.133333333333334
+    },
+    {
+      "end": 13.6,
+      "id": "melt",
+      "purpose": "Sufficient melting disrupts the fat-crystal structure; keep nonfat solids separate.",
+      "start": 9.733333333333333
+    },
+    {
+      "end": 21.066666666666666,
+      "id": "arrange",
+      "purpose": "Cooling forms crystals again; their arrangements and larger network can differ.",
+      "start": 13.6
+    },
+    {
+      "end": 24.533333333333335,
+      "id": "result",
+      "purpose": "Chocolate can become softer with less snap; comparison represents a possibility.",
+      "start": 21.066666666666666
+    },
+    {
+      "end": 29.733333333333334,
+      "id": "control",
+      "purpose": "Controlled temperature history and mixing guide crystallization/network rebuilding.",
+      "start": 24.533333333333335
+    },
+    {
+      "end": 35,
+      "id": "payoff",
+      "purpose": "A suitable structure helps chocolate snap cleanly and look glossy.",
+      "start": 29.733333333333334
+    },
+    {
+      "end": 39.833333333333336,
+      "id": "close",
+      "purpose": "Same ingredients can yield different material structure and behavior.",
+      "start": 35
+    }
+  ],
+  "status": "reviewed",
+  "titleCandidates": [
+    "Why melting is not the same as tempering"
+  ],
+  "workingTitle": "Same recipe, different structure"
+}

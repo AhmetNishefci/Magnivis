@@ -1,0 +1,48 @@
+{
+  "actualBrowserFontsAndBoundsPassed": true,
+  "assessment": {
+    "evidenceLevel": "git-survivor",
+    "insets": {
+      "bottom": 280,
+      "left": 72,
+      "right": 170,
+      "top": 130
+    },
+    "lifecycle": "PROVISIONAL",
+    "profileId": "safe-area.instagram-reels.v1",
+    "realDeviceReviewRequired": true,
+    "state": "INCOMPLETE",
+    "unresolved": [
+      "native exclusion zones",
+      "caption region"
+    ],
+    "violations": []
+  },
+  "decodedCaptionMidpoints": 28,
+  "derivativeCreated": false,
+  "masterModified": false,
+  "platformApprovalGranted": false,
+  "profileSha256": "2c8bafc234eb7456aae58fdfb0f203270dd9805003749927b1f19cadae197b93",
+  "publicationApprovalGranted": false,
+  "qa": {
+    "appVersion": null,
+    "context": "mobile-app",
+    "coverSha256": null,
+    "device": null,
+    "evidence": [
+      "artifacts/qa-evidence/chocolate-crystal-choice-platform-v1/instagram-reel.json",
+      "artifacts/qa/chocolate-crystal-choice/contact-sheet.jpg"
+    ],
+    "id": "presentation-qa.chocolate-crystal-choice.instagram-reel.v1",
+    "masterArtifactId": "chocolate-crystal-choice.locked-master.v1",
+    "mediaSha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+    "notes": "Known historical/provisional inset model clears measured content; caption-specific region and native exclusions remain incomplete. No current device pass.",
+    "os": null,
+    "platformVariantId": "chocolate-crystal-choice.asset.same-recipe-different-structure.variant.instagram-reels",
+    "profileId": "safe-area.instagram-reels.v1",
+    "reviewer": null,
+    "state": "LOCAL_APPROXIMATION",
+    "surface": "instagram-reels-playback",
+    "testedAt": null
+  }
+}

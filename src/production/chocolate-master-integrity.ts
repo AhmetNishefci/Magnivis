@@ -1,0 +1,25 @@
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {sha256Json} from '../content-intelligence/run-schema';
+import {masterApprovalDecisionSchema,applyMasterVisualApproval} from './master-approval';
+import {productionPlanSchema,validateProductionPlanReferences} from './schema';
+import {knowledgePackageSchema} from '../knowledge/schema';
+import {contentAssetSchema} from '../content-assets/schema';
+import decision from '../../content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/owner-decision.json';
+import locked from '../../content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/production-plan.locked.json';
+import reviewed from '../../content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/production-plan.reviewed.json';
+import bindings from '../../content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/reviewed-bindings.json';
+import pkg from '../../content-intelligence/reviews/chocolate-crystal-choice-approved-v3/knowledge-package.approved.json';
+import asset from '../../content-intelligence/reviews/chocolate-crystal-choice-approved-v3/content-asset.approved.json';
+import direction from '../../content-intelligence/reviews/chocolate-crystal-choice-production-v1/direction-approved-v2.json';
+export const chocolateFileHash=(p:string)=>createHash('sha256').update(readFileSync(p)).digest('hex');
+export const chocolateMasterDecision=masterApprovalDecisionSchema.parse(decision);
+export const chocolateLockedPlan=productionPlanSchema.parse(locked);
+export const validateChocolateLockedMaster=()=>{
+ const replay=applyMasterVisualApproval(decision,productionPlanSchema.parse(reviewed),bindings,'Owner-approved exact locked master. Platform delivery/publication review remains separate; no upload, schedule, publication or Cycle 4 authorized.');if(sha256Json(replay)!==sha256Json(locked))throw new Error('Master approval replay drift');
+ validateProductionPlanReferences(locked,knowledgePackageSchema.parse(pkg),contentAssetSchema.parse(asset),direction);
+ if(chocolateFileHash(decision.artifact.path)!==decision.artifact.sha256||readFileSync(decision.artifact.path).length!==decision.artifact.bytes)throw new Error('Locked bytes changed');
+ for(const f of [...bindings.sources,...bindings.qaArtifacts,bindings.reviewedCandidateReceipt,bindings.comprehensionContract])if(chocolateFileHash(f.path)!==f.sha256)throw new Error('Approved source/provenance drift: '+f.path);
+ const narration=JSON.parse(readFileSync('src/production/narration/chocolate.json','utf8'));if(sha256Json(narration)!==decision.narrationBundleSha256||narration.provenance.voiceId!=='af_heart')throw new Error('Approved audio drift');
+ return {passed:true,ownerMasterApproved:true,masterArtifactId:decision.masterArtifactId,artifact:decision.artifact,decisionEnteredAt:decision.enteredAt,productionPlanRevision:locked.revision,captionPlan:decision.captionPlan,publicationAuthorized:false};
+};

@@ -73,3 +73,7 @@ No new voice, music, stock asset or font was introduced in delivery preparation.
 - Master, decoded QA, audio, licenses and source input bindings are retained for audit/reproduction. No assertion of byte-identical re-rendering.
 
 Upstream OFL trailing whitespace: exact raw license bytes retained in `public/fonts/chocolate/OFL.upstream.gz`; readable `OFL.txt` removes trailing whitespace only. Provenance records both identities. Font binary and complete legal wording remain unchanged.
+
+## Chocolate Crystal Choice — post-master review artwork and local QA
+
+Separate Instagram cover: original Magnivis-authored still in `src/chocolate-cover-index.tsx`, consciously reusing this same story’s original chocolate geometry and licensed unmodified Atkinson Hyperlegible Next font. Exact PNG/source/font hashes in scoped cover-provenance.json; existing complete SIL OFL 1.1 and metadata retained. No new font, music, stock image, commercial footage or scientific figure. Cover review/crop remains pending; master approval does not transfer. Other platform references and local/phone QA images are decoded from the exact approved original master. Inset overlays are original local guides, not native screenshots or device evidence. Canonical copies preserve exact master bytes; no derivative or re-encoding.

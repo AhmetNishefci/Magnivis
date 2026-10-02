@@ -1,0 +1,48 @@
+{
+  "actualBrowserFontsAndBoundsPassed": true,
+  "assessment": {
+    "evidenceLevel": "reconstructed-policy",
+    "insets": {
+      "bottom": 310,
+      "left": 84,
+      "right": 190,
+      "top": 240
+    },
+    "lifecycle": "ACTIVE",
+    "profileId": "safe-area.youtube-shorts.v2",
+    "realDeviceReviewRequired": true,
+    "state": "INCOMPLETE",
+    "unresolved": [
+      "native exclusion zones",
+      "caption region"
+    ],
+    "violations": []
+  },
+  "decodedCaptionMidpoints": 28,
+  "derivativeCreated": false,
+  "masterModified": false,
+  "platformApprovalGranted": false,
+  "profileSha256": "00fb910fa0487ecd655770d78b7656e0c3381befbc547174d243cbf0eb0114c0",
+  "publicationApprovalGranted": false,
+  "qa": {
+    "appVersion": null,
+    "context": "mobile-app",
+    "coverSha256": null,
+    "device": null,
+    "evidence": [
+      "artifacts/qa-evidence/chocolate-crystal-choice-platform-v1/youtube-mobile.json",
+      "artifacts/qa/chocolate-crystal-choice/contact-sheet.jpg"
+    ],
+    "id": "presentation-qa.chocolate-crystal-choice.youtube-mobile.v1",
+    "masterArtifactId": "chocolate-crystal-choice.locked-master.v1",
+    "mediaSha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+    "notes": "Known historical/provisional inset model clears measured content; caption-specific region and native exclusions remain incomplete. No current device pass.",
+    "os": null,
+    "platformVariantId": "chocolate-crystal-choice.asset.same-recipe-different-structure.variant.youtube-shorts",
+    "profileId": "safe-area.youtube-shorts.v2",
+    "reviewer": null,
+    "state": "LOCAL_APPROXIMATION",
+    "surface": "youtube-shorts-viewer",
+    "testedAt": null
+  }
+}

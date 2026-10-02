@@ -1,0 +1,99 @@
+{
+  "recordedAt": "2026-10-02T10:00:02.992869Z",
+  "passed": true,
+  "scope": "Exact master lock plus draft platform deliveries; no external platform actions",
+  "checks": [
+    {
+      "check": "pnpm check",
+      "result": "passed",
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 40,
+      "tests": 403,
+      "gitDiffCheck": "passed"
+    },
+    {
+      "check": "validate-chocolate-platform",
+      "result": "passed",
+      "variants": 4,
+      "draftDeliveryPackages": 4,
+      "nativeSurfaceReports": 9,
+      "realDevicePasses": 0,
+      "ownerMasterApproved": true,
+      "publicationAuthorized": false
+    },
+    {
+      "check": "chocolate research/finalization/direction/production validators",
+      "result": "passed",
+      "verifiedNarrationClaims": 8,
+      "reserveClaimsPreserved": 34,
+      "note": "Historical validators report their original immutable snapshot states; current exact-master approval is separate."
+    },
+    {
+      "check": "complete video/audio decode and media inspection",
+      "result": "passed",
+      "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+      "captionMidpoints": 28,
+      "localOverlayObservations": 36
+    },
+    {
+      "check": "cover font loading/text bounds",
+      "result": "passed",
+      "nativeCropMeasured": false,
+      "ownerCoverApproved": false
+    },
+    {
+      "check": "adaptive creative/narrator/historical preservation",
+      "result": "passed",
+      "unchangedHistoricalBaselineFiles": 292,
+      "exactClosureCheckpoints": 1,
+      "note": "Primary narrator authority is exercised by existing policy and historical-integrity tests; no voice generation or policy change."
+    },
+    {
+      "check": "Longitude publication integrity",
+      "result": "passed",
+      "protectedFiles": 605,
+      "publicationOccurred": false,
+      "assistantUploadAuthorized": false
+    },
+    {
+      "check": "brain integrity",
+      "result": "passed",
+      "documents": 23,
+      "agentRoutes": 31
+    },
+    {
+      "check": "Content Intelligence retained fixture validate",
+      "result": "passed",
+      "path": "content-intelligence/runs/wood-frog-freeze-fixture-v1",
+      "envelopesRegenerated": false
+    },
+    {
+      "check": "open-world discovery structural validator",
+      "result": "passed",
+      "poolEntries": 34,
+      "distinctIdeas": 33,
+      "shortlist": 10,
+      "finalists": 5,
+      "originalSelectionSnapshot": null
+    },
+    {
+      "check": "original strict discovery/scheduling validation on isolated committed discovery checkout d002612",
+      "result": "passed",
+      "historicalFilesPreserved": 1191,
+      "note": "The discovery-only gate correctly rejects subsequent authorized production files when run on the current branch; it was not weakened. It passes on its own committed milestone. Current preservation is enforced by the post-master checkpoint scope and immutable hashes."
+    }
+  ],
+  "developmentCorrections": [
+    "Typecheck required a non-null access after native evidence schema validation; corrected.",
+    "Lint required removal of unnecessary string quote escapes; corrected without changing cover text/pixels.",
+    "Generic production/caption CLI invocations require an explicit target; re-run with supported targets."
+  ],
+  "durabilityEvidence": "durability-report.json",
+  "secretEvidence": "scoped-secret-scan.json",
+  "historyCheckpoint": "d317a4f5a4f7a8df57bc371855fb3a7e4b886aa5",
+  "gateWeakening": false,
+  "masterModified": false,
+  "noPlatformActions": true,
+  "nextGate": "AHMET — CYCLE #3 PLATFORM DELIVERY / PUBLICATION REVIEW"
+}

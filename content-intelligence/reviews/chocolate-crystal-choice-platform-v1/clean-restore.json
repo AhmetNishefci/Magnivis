@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-02T10:03:26.171988Z",
+  "method": "Git archive of the staged tree extracted into an isolated directory; native verifier read restored files. Dependency packages were linked separately; Git index was provided only for tracked-location accounting. No render, encode or narration generation.",
+  "stagedGitTree": "1112318b0c1f231be99f9a0c7b3a049e74104fd6",
+  "archiveSha256": "bc37cfacb5863fedfc72467b57629631ef670c36fcb13f0384840d3ce8fde7e3",
+  "restoredRequiredArtifacts": 693,
+  "restoredReceiptInventorySha256": "d6251fbc06496ace2df5c77e9ccf987417b5ba42308d132a2575c7611d84ec4b",
+  "masterApprovalReplayPassed": true,
+  "masterSha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+  "masterSourceInputsAndQaPassed": true,
+  "fourUploadCopiesPreserveMasterBytes": true,
+  "historicalMissingExpectationsUnchanged": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "limitation": "Proves stored tracked-object restore identity, not byte-identical regeneration or actual device/platform presentation. This receipt is appended after the checked snapshot; final native verification includes it.",
+  "publicationAuthorized": false
+}

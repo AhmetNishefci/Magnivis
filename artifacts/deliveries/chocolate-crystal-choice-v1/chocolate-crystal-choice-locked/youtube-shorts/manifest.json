@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "deliveryId": "delivery.chocolate-crystal-choice.asset.same-recipe-different-structure.variant.youtube-shorts.r1",
+  "generatedAt": "2026-10-02T09:46:18.399Z",
+  "state": "draft-review",
+  "publishEligible": false,
+  "source": {
+    "platformVariant": {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure.variant.youtube-shorts",
+      "revision": 1,
+      "status": "editorial-review"
+    },
+    "contentAsset": {
+      "id": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+      "revision": 3
+    },
+    "knowledgePackage": {
+      "id": "chocolate-crystal-choice",
+      "revision": 3
+    },
+    "videoSpec": {
+      "id": "chocolate-crystal-choice-locked",
+      "compositionId": "Magnivis-Chocolate-Material-Cutaway"
+    },
+    "productionChain": {
+      "productionPlan": {
+        "id": "production-plan.chocolate-crystal-choice.material-cutaway",
+        "revision": 2
+      },
+      "captionPlan": {
+        "id": "caption-plan.chocolate-crystal-choice.material-cutaway",
+        "revision": 1,
+        "sha256": "86832aa3d5c32a9e5a8dd72700fba9c52d9a8c4c1695d6ef4303345c7bc6aeb5"
+      },
+      "lockedMaster": {
+        "videoSpecId": "chocolate-crystal-choice-locked",
+        "path": "artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+        "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7",
+        "relationship": "exact-master"
+      }
+    }
+  },
+  "destination": {
+    "platform": "youtube",
+    "surface": "youtube-shorts",
+    "language": "en",
+    "aspectRatio": "9:16",
+    "platformProfile": {
+      "id": "platform-profile.youtube-shorts.2026-09-27",
+      "revision": 1,
+      "reviewedAt": "2026-09-27"
+    },
+    "safeAreaProfile": {
+      "id": "safe-area.youtube-shorts.v2",
+      "revision": 2,
+      "reviewedAt": "2026-09-30"
+    }
+  },
+  "media": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 39.9,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "metadata": {
+    "title": "Why Melted Chocolate Can Come Back Different",
+    "description": "The recipe can stay the same while cocoa-butter crystals and the larger fat-crystal network rebuild differently. Tempering guides that rebuilding. Simplified explanatory models; this is not a tempering tutorial.\n\nOriginal Magnivis visuals with synthetic narration. See the unimaginable.",
+    "hashtags": [
+      "#chocolate",
+      "#foodscience",
+      "#tempering"
+    ],
+    "claimIds": [
+      "chocolate-crystal-choice.claim.same-recipe",
+      "chocolate-crystal-choice.claim.cocoa-butter",
+      "chocolate-crystal-choice.claim.melting-network",
+      "chocolate-crystal-choice.claim.multiple-arrangements",
+      "chocolate-crystal-choice.claim.network",
+      "chocolate-crystal-choice.claim.soft-recool",
+      "chocolate-crystal-choice.claim.tempering",
+      "chocolate-crystal-choice.claim.snap-gloss"
+    ],
+    "cover": {
+      "strategy": "frame-selection",
+      "intent": "Use recognizable chocolate opening around 2.1s with native selection; available controls and crop unknown."
+    }
+  },
+  "captions": {
+    "behavior": "burned-in",
+    "designedBurnedIn": true,
+    "language": "en",
+    "humanReviewRequired": true
+  },
+  "operatorGuidance": {
+    "visibility": "private-preview",
+    "originalAudio": "preserve",
+    "aiGeneratedContentDisclosure": {
+      "recommendation": "operator-confirmation-required",
+      "currentPolicyConfirmationRequired": true,
+      "rationale": "Non-photoreal original illustration with generic synthetic narration, not real-person cloning. Confirm current AI-use disclosure options; transparency disclosure is recommended when applicable, without asserting generic TTS always triggers mandatory altered-content rules."
+    },
+    "commercialContentDisclosure": {
+      "recommendation": "disable",
+      "rationale": "No sponsorship, paid partnership or product placement."
+    },
+    "nativeCaptions": {
+      "recommendation": "disable-to-avoid-visible-duplication",
+      "rationale": "Exact designed burned-in captions are already present. Optional accessibility captions may be enabled only without duplicating the visible layer."
+    },
+    "location": "none",
+    "link": "none",
+    "notes": [
+      "Optional first comment: Same recipe does not guarantee the same structure. What everyday material should we look inside next?",
+      "Optional YouTube Studio tags: chocolate tempering, cocoa butter, chocolate crystals, food science, chocolate texture, Magnivis",
+      "Do not upload, schedule or publish until separately authorized. Private preview is also an external action requiring authorization.",
+      "Preserve original audio and master: no music, filters, effects, auto-reframing, trims, speed changes or enhancements.",
+      "Highest-quality/HD upload if available; comments on with normal moderation.",
+      "Downloads/remix/duet/stitch/reuse off initially where offered; no automatic cross-posting.",
+      "General educational audience; not child-directed. No adult-content restriction recommended; confirm live audience controls.",
+      "Category: Science & Technology recommended for this material-science mechanism; Education is an alternative if the live menu/context fits better. No universal category. Language English; paid promotion off.",
+      "Future release may target approximately one excellent unique short per day at provisional20:00 Kosovo time; no date or schedule chosen here."
+    ]
+  },
+  "review": {
+    "platformPreviewRequired": true,
+    "previewStatus": "ready-for-private-preview",
+    "publicationAuthorized": false,
+    "statement": "Variant remains editorial-review; this package is for review and private/draft platform preview only, not public publication."
+  },
+  "artifacts": [
+    {
+      "role": "video",
+      "path": "video.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 2923379,
+      "sha256": "3491a81c031c459493909ef55dcf217699ac30d01a714942da90ce4e963814e7"
+    },
+    {
+      "role": "metadata",
+      "path": "metadata.json",
+      "mediaType": "application/json",
+      "bytes": 3477,
+      "sha256": "14b95c642caa64968cdf816b6e5f3c0ec7517fae19978cb3a719488b185994ef"
+    },
+    {
+      "role": "upload-copy",
+      "path": "upload-copy.txt",
+      "mediaType": "text/plain",
+      "bytes": 3400,
+      "sha256": "3309d39647474fa698ed72547a3a1c4b7d397aa96995f7060ade6ce525c8db73"
+    },
+    {
+      "role": "review",
+      "path": "review.md",
+      "mediaType": "text/markdown",
+      "bytes": 1815,
+      "sha256": "894788590b14cfa13e2538bfbf4485c1f4c28474df32905a5598eb33fec7b977"
+    }
+  ]
+}

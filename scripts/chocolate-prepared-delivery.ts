@@ -1,0 +1,16 @@
+import {createPlatformVariantRegistry} from '../src/platform-variants/registry';
+import {createContentAssetRegistry} from '../src/content-assets/registry';
+import {createKnowledgePackageRegistry} from '../src/knowledge/registry';
+import {chocolatePlatformVariants} from '../src/platform-variants/variants/chocolate-crystal-choice';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {videoSpecSchema} from '../src/content/schema';
+import {inspectMedia} from './media-inspection';
+import {chocolateMasterDecision} from '../src/production/chocolate-master-integrity';
+import pkg from '../content-intelligence/reviews/chocolate-crystal-choice-approved-v3/knowledge-package.approved.json';
+import asset from '../content-intelligence/reviews/chocolate-crystal-choice-approved-v3/content-asset.approved.json';
+import video from '../content-intelligence/reviews/chocolate-crystal-choice-master-lock-v1/video-spec.reviewed.json';
+import type {DeliveryDependencies} from './delivery-packages';
+const packageRegistry=createKnowledgePackageRegistry([knowledgePackageSchema.parse(pkg)]);
+const assetRegistry=createContentAssetRegistry([contentAssetSchema.parse(asset)],packageRegistry);
+export const chocolatePreparedDeliveryDependencies:DeliveryDependencies={packageRegistry,assetRegistry,variantRegistry:createPlatformVariantRegistry(chocolatePlatformVariants,assetRegistry),productionResolver:()=>({spec:videoSpecSchema.parse(video),sourceVideoPath:chocolateMasterDecision.artifact.path}),mediaInspector:inspectMedia};
