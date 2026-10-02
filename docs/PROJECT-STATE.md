@@ -1,3 +1,15 @@
+# Current authoritative baseline — Magnivis V3 integrated on main
+
+Ahmet approved V3 commit `5775c8aa85676d7b0bbc8ea4b771de8594e9fdc1` with status **B — READY WITH SPECIFIC NON-BLOCKING LIMITATIONS** and explicitly authorized integration. Main was fast-forwarded from `cdebc2d1c92e14137dfef0dd9acb5924c460bed2`, preserving the complete architecture/content/evidence history. The prospective workflow authority is [WORKFLOW-V3](WORKFLOW-V3.md); [machine project state](../workflow/project-state.json) is idle, with no V3 cycles registered or owner review pending. Cycle #4 is **not started** and requires a separate explicit start instruction.
+
+Normal future cycles have exactly two owner review gates: **MASTER REVIEW** and **PUBLICATION REVIEW / AUTHORIZATION**. Exceptional escalation remains scoped and exceptional. Execution remains session/agent driven; unknown native platform/device geometry is not guaranteed safe; ambiguous crash leftovers require conservative inspection. Historical media, hashes, approvals, recovery evidence and policies remain unchanged. Longitude and Chocolate remain owner-reported scheduled; actual publication and analytics remain unknown/absent from repository evidence. No upload, scheduling or publication action occurred during integration.
+
+Merged-main validation passed typecheck, lint, all 438 tests across 44 files, workflow/state, canonical media, publication bindings, Chocolate/Longitude integrity, creative/narrator/story-duration policy and 731 durable artifact checks. Historical hash verification found zero mismatches across 948 frozen files plus 33 checkpoint files. Default five-second test timeouts were reproduced; the unchanged suite passed with one worker and a 30-second invocation-only timeout allowance, as documented in the accepted remediation review. No test assertion or repository runner configuration was changed.
+
+The dated milestone sections below are historical evidence; their pending architecture reviews, unmerged-main statements and earlier next gates do not describe current architecture integration status. Their content-release approvals and evidence retain their original scope.
+
+---
+
 > Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
 
 # Current bounded milestone — Artifact Architecture V2

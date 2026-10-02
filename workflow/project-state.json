@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "phase": "engineering-review",
-  "nextOwnerGate": "AHMET \u2014 MAGNIVIS V3 REMEDIATION REVIEW",
+  "phase": "idle",
+  "nextOwnerGate": null,
   "externalActions": "not-authorized",
   "historicalCycles": [
     {
@@ -49,5 +49,25 @@
     }
   ],
   "cycleIndex": "workflow/cycles",
-  "cycleStateAuthority": "independent-replay-validated-journals"
+  "cycleStateAuthority": "independent-replay-validated-journals",
+  "architecture": {
+    "workflowVersion": 3,
+    "status": "owner-approved-integrated",
+    "authoritativeBranch": "main",
+    "approvedCommit": "5775c8aa85676d7b0bbc8ea4b771de8594e9fdc1",
+    "previousMainCommit": "cdebc2d1c92e14137dfef0dd9acb5924c460bed2",
+    "integrationMethod": "history-preserving-fast-forward",
+    "ownerApprovalSource": "Ahmet — MAGNIVIS V3 OWNER APPROVAL AND CONTROLLED INTEGRATION instruction",
+    "acceptedReadiness": "B — READY WITH SPECIFIC NON-BLOCKING LIMITATIONS",
+    "normalOwnerGates": [
+      "AHMET — MASTER REVIEW",
+      "AHMET — PUBLICATION REVIEW / AUTHORIZATION"
+    ],
+    "acceptedLimitations": [
+      "Execution remains session/agent driven, not daemonized.",
+      "Platform/device geometry remains unknown unless supported by actual evidence.",
+      "Ambiguous crash leftovers may require conservative manual inspection."
+    ]
+  },
+  "cycle4": "not-started"
 }

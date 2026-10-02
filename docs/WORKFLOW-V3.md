@@ -1,6 +1,6 @@
 # Magnivis Cycle V3 — current prospective workflow authority
 
-This policy is authorized by Ahmet's accepted October architecture audit and explicit system-remediation instruction. It supersedes prospective per-topic, per-claim, editorial, direction and production continuation gates in earlier documents. It does not change historical approvals, current narrator, cadence, publishing window, brand, evidence, rights, captions or platform uncertainty. No Cycle #4 is started by this engineering work.
+Ahmet approved the remediated V3 architecture at commit `5775c8aa85676d7b0bbc8ea4b771de8594e9fdc1` and authorized its history-preserving integration into main. It is the current prospective workflow baseline; project state remains idle and Cycle #4 is not started. It supersedes prospective per-topic, per-claim, editorial, direction and production continuation gates in earlier documents. It does not change historical approvals, current narrator, cadence, publishing window, brand, evidence, rights, captions or platform uncertainty. No Cycle #4 is started by this engineering work.
 
 ## Normal interaction
 
