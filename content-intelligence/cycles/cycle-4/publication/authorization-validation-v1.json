@@ -1,0 +1,103 @@
+{
+  "recordedAt": "2026-10-02T19:06:32.067Z",
+  "cycleId": "cycle.4",
+  "revision": 9,
+  "stage": "authorized",
+  "sourceReviewCommit": "570de37f6624a7fb270cc884413d99996de9f5b2",
+  "authorizationCommit": "e4fd128dfa90aea08b92ca234824f2262ded9fcc",
+  "release": {
+    "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+    "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+  },
+  "ownerDecision": {
+    "path": "content-intelligence/cycles/cycle-4/publication/owner-publication-decision-v1.json",
+    "sha256": "e3f59b95e6de91ae1c714c771cec3404f241e2356f072bdf3b879043cc3a944b"
+  },
+  "checks": {
+    "pnpmCheck": {
+      "passed": true,
+      "testFiles": 45,
+      "tests": 440,
+      "typecheck": "passed",
+      "lint": "passed",
+      "diffCheck": "passed"
+    },
+    "pnpmArtifactsDurable": {
+      "passed": true,
+      "canonicalPayloads": 395,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "cycleReplay": "passed",
+    "authorizedCliResolution": "passed",
+    "authorizedPlatforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "acceptedPresentationUnknowns": 52,
+    "acceptedOperationalUnknowns": 5,
+    "reviewedFilesUnchanged": 73,
+    "canonicalPayloadCount": 395,
+    "mediaGeneratedOrCopied": 0,
+    "finalStagedWhitespace": "passed after removing extra trailing blank line from new aggregate upload-copy handoff; no approved wording changed"
+  },
+  "overview": {
+    "productionActive": [],
+    "ownerActions": [],
+    "publicationAuthorized": [
+      "cycle.4"
+    ],
+    "scheduledOwnerReported": [],
+    "publicationEvidencePending": [
+      {
+        "cycleId": "cycle.4",
+        "pendingVariants": [
+          {
+            "variantId": "paper-half-shape.variant.youtube.v1",
+            "platform": "youtube",
+            "surface": "youtube-shorts-viewer",
+            "media": {
+              "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+              "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+            }
+          },
+          {
+            "variantId": "paper-half-shape.variant.tiktok.v1",
+            "platform": "tiktok",
+            "surface": "tiktok-feed",
+            "media": {
+              "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+              "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+            }
+          },
+          {
+            "variantId": "paper-half-shape.variant.instagram.v1",
+            "platform": "instagram",
+            "surface": "instagram-reels-playback",
+            "media": {
+              "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+              "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+            }
+          },
+          {
+            "variantId": "paper-half-shape.variant.facebook.v1",
+            "platform": "facebook",
+            "surface": "facebook-reels-viewer",
+            "media": {
+              "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+              "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+            }
+          }
+        ]
+      }
+    ],
+    "closed": []
+  },
+  "externalActionsPerformed": [],
+  "actualScheduling": null,
+  "actualPublication": null,
+  "deviceEvidence": null,
+  "analytics": null
+}
