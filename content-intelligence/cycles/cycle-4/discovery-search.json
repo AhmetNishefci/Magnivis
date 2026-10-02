@@ -1,0 +1,56 @@
+{
+  "cycleId": "cycle.4",
+  "enteredAt": "2026-10-02T16:31:05.387Z",
+  "method": "Session-assisted open-web search and source-body inspection; no provider/API run or scores.",
+  "queries": [
+    "A4 geometry NRICH and DIN",
+    "Louis Braille Library of Congress",
+    "lunar laser ranging NASA",
+    "GS1 check digit",
+    "Tyrian purple Smithsonian",
+    "aspen clone National Park Service"
+  ],
+  "opportunities": [
+    {
+      "id": "paper-half-shape",
+      "url": "https://nrich.maths.org/problems/fit-photocopying",
+      "access": "body-inspected",
+      "finding": "Cambridge NRICH supplies the similarity derivation and copying scale; DIN supplies dimensions; ISO preview confirms the basic principle."
+    },
+    {
+      "id": "braille-cell",
+      "url": "https://loc.gov/exhibits/louis-braille/overview.html",
+      "access": "body-inspected",
+      "finding": "Six-dot cell and development history; a tactile story needs care in implying experience and dating stages."
+    },
+    {
+      "id": "retreating-moon",
+      "url": "https://www.nasa.gov/missions/apollo/apollo-11/the-apollo-experiment-that-keeps-on-giving/",
+      "access": "body-inspected",
+      "finding": "Laser ranging measures present recession; extrapolating current rate indefinitely would mislead."
+    },
+    {
+      "id": "barcode-check",
+      "url": "https://www.gs1.org/services/check-digit-calculator",
+      "access": "search-only-body-open-error",
+      "finding": "Check-digit concept appears feasible; central algorithm still needs body acquisition."
+    },
+    {
+      "id": "purple-snails",
+      "url": "https://library.si.edu/exhibition/color-in-a-new-light/making",
+      "access": "search-only-body-open-error",
+      "finding": "Dye origin feasible; cost/royalty universals require stronger scoped evidence."
+    },
+    {
+      "id": "forest-clone",
+      "url": "https://www.nps.gov/brca/learn/nature/quakingaspen.htm?simple=True",
+      "access": "body-inspected",
+      "finding": "Connected clonal roots; exceptional age and largest-organism claims require additional review."
+    }
+  ],
+  "excludedInfluences": [
+    "No fixed category whitelist.",
+    "No convenience preference for prior renderers.",
+    "No invented recent analytics or causal performance claims."
+  ]
+}

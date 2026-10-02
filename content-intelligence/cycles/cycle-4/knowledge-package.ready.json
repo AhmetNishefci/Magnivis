@@ -1,0 +1,331 @@
+{
+  "id": "paper-half-shape",
+  "revision": 1,
+  "topic": "The hidden geometry of A-series paper",
+  "centralQuestion": "Why can A-series paper keep its proportions when halved?",
+  "taxonomy": {
+    "pillar": "technology-built-world",
+    "domains": [
+      "geometry",
+      "everyday-design"
+    ],
+    "topics": [
+      "a-series-paper",
+      "similarity",
+      "area-scaling"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "A √2 aspect ratio makes the rotated half-sheet similar to its parent; physical sizes approximate the ideal.",
+  "viewerPayoff": "Understand a familiar design and distinguish length scaling from area scaling.",
+  "sources": [
+    {
+      "id": "source.paper.din",
+      "organization": "DIN Deutsches Institut für Normung",
+      "title": "Herzlichen Glückwunsch, A4!",
+      "sourceType": "primary-source",
+      "url": "https://www.din.de/de/din-und-seine-partner/presse/mitteilungen/herzlichen-glueckwunsch-a4--878664",
+      "retrieved": "2026-10-02",
+      "notes": "German source; assessment uses original German text, not an invented official translation. Historical details not used in narration."
+    },
+    {
+      "id": "source.paper.nrich",
+      "organization": "University of Cambridge, NRICH",
+      "title": "Fit for Photocopying",
+      "sourceType": "university",
+      "url": "https://nrich.maths.org/problems/fit-photocopying",
+      "retrieved": "2026-10-02",
+      "notes": "One displayed A2 student-result rounding differs from DIN; no student size table is used. The scaling explanation concerns ideal geometry, not a printer margins guarantee."
+    },
+    {
+      "id": "source.paper.iso",
+      "organization": "ISO, preview hosted by SIST",
+      "title": "ISO 216:2007 preview",
+      "sourceType": "technical-documentation",
+      "url": "https://preview.sist.si/sist-preview/36631/c0883203ea25445c9992bb09343620c5/ISO-216-2007.pdf",
+      "retrieved": "2026-10-02",
+      "notes": "Partial preview, not purchased full standard. No protected source figures/PDF/page images reproduced as production assets or stored here. Text extraction loses the radical glyph; ratio corroborated by DIN/NRICH and independent algebra."
+    }
+  ],
+  "claims": [
+    {
+      "id": "paper-half-shape.claim.similarity",
+      "statement": "The ideal A-series geometry preserves its aspect ratio after bisecting the long dimension and rotating the half sheet.",
+      "evidence": [
+        {
+          "sourceId": "source.paper.iso",
+          "locator": "Printed pages 2–3 clauses 4.1/4.3; printed page 5 Table 1; preview scope and tolerances page 6",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Real integer sizes and manufacturing tolerances only approximate the ideal."
+        },
+        {
+          "sourceId": "source.paper.din",
+          "locator": "Vom Formatchaos zum Standard; Die Maße der A-Formate",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Real integer sizes and manufacturing tolerances only approximate the ideal."
+        },
+        {
+          "sourceId": "source.paper.nrich",
+          "locator": "Problem; Student Solutions ratio derivation; scale-factor solution; Teachers Resources",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Real integer sizes and manufacturing tolerances only approximate the ideal."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Real integer sizes and manufacturing tolerances only approximate the ideal."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review (not Ahmet)",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.4",
+          "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "paper-half-shape.claim.square",
+      "statement": "A square bisected parallel to one side yields a rectangle whose long-to-short ratio is two, rather than one.",
+      "evidence": [
+        {
+          "sourceId": "source.paper.nrich",
+          "locator": "Problem; Student Solutions ratio derivation; scale-factor solution; Teachers Resources",
+          "notes": "Independent geometrical check: unit square halves to 1 by 0.5; ratio is 2."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Geometrical derivation independently checked; not an empirical experiment."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review (not Ahmet)",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.4",
+          "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "paper-half-shape.claim.ratio",
+      "statement": "The ideal A-series long-to-short ratio is the square root of two.",
+      "evidence": [
+        {
+          "sourceId": "source.paper.iso",
+          "locator": "Printed pages 2–3 clauses 4.1/4.3; printed page 5 Table 1; preview scope and tolerances page 6",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Ideal defining ratio; integer dimensions are not exact irrational ratios."
+        },
+        {
+          "sourceId": "source.paper.din",
+          "locator": "Vom Formatchaos zum Standard; Die Maße der A-Formate",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Ideal defining ratio; integer dimensions are not exact irrational ratios."
+        },
+        {
+          "sourceId": "source.paper.nrich",
+          "locator": "Problem; Student Solutions ratio derivation; scale-factor solution; Teachers Resources",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Ideal defining ratio; integer dimensions are not exact irrational ratios."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Ideal defining ratio; integer dimensions are not exact irrational ratios."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review (not Ahmet)",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.4",
+          "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "paper-half-shape.claim.scaling",
+      "statement": "In ideal A-series geometry, an A3 design scales uniformly to A4, preserving proportions.",
+      "evidence": [
+        {
+          "sourceId": "source.paper.nrich",
+          "locator": "Problem; Student Solutions ratio derivation; scale-factor solution; Teachers Resources",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. No promise about printer margins or actual crop behavior."
+        },
+        {
+          "sourceId": "source.paper.iso",
+          "locator": "Printed pages 2–3 clauses 4.1/4.3; printed page 5 Table 1; preview scope and tolerances page 6",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. No promise about printer margins or actual crop behavior."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No promise about printer margins or actual crop behavior."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review (not Ahmet)",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.4",
+          "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "paper-half-shape.claim.length-area",
+      "statement": "The ideal adjacent-size length factor is one over the square root of two, about 70.71 percent, while the area factor is one half.",
+      "evidence": [
+        {
+          "sourceId": "source.paper.nrich",
+          "locator": "Problem; Student Solutions ratio derivation; scale-factor solution; Teachers Resources",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. 71 percent is spoken rounding, not an exact copying instruction."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "71 percent is spoken rounding, not an exact copying instruction."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review (not Ahmet)",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.4",
+          "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "paper-half-shape.claim.rounded",
+      "statement": "Published A-series dimensions are whole millimetres that approximate the ideal geometry; for example A4 is 210 by 297 mm.",
+      "evidence": [
+        {
+          "sourceId": "source.paper.iso",
+          "locator": "Printed pages 2–3 clauses 4.1/4.3; printed page 5 Table 1; preview scope and tolerances page 6",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Actual manufactured sheet tolerances are additional, not quantified here."
+        },
+        {
+          "sourceId": "source.paper.din",
+          "locator": "Vom Formatchaos zum Standard; Die Maße der A-Formate",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Actual manufactured sheet tolerances are additional, not quantified here."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Actual manufactured sheet tolerances are additional, not quantified here."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review (not Ahmet)",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.4",
+          "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+        },
+        "reviewedAt": "2026-10-02"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "paper-half-shape.claim.universal",
+      "statement": "Every paper rectangle preserves its shape when halved.",
+      "evidence": [
+        {
+          "sourceId": "source.paper.iso",
+          "locator": "Printed pages 2–3 clauses 4.1/4.3; printed page 5 Table 1; preview scope and tolerances page 6",
+          "notes": "Inspected source supports the scoped ideal/nominal distinction. Excluded: false for squares, US Letter and general rectangles."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Excluded: false for squares, US Letter and general rectangles."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "paper-half-shape.caveat.ideal",
+      "statement": "Ideal models are exact; physical sheet dimensions are rounded and toleranced.",
+      "claimIds": [
+        "paper-half-shape.claim.similarity",
+        "paper-half-shape.claim.ratio",
+        "paper-half-shape.claim.rounded"
+      ]
+    },
+    {
+      "id": "paper-half-shape.caveat.printer",
+      "statement": "Scaling preserves proportions; it does not guarantee borderless printing or universal paper applicability.",
+      "claimIds": [
+        "paper-half-shape.claim.scaling",
+        "paper-half-shape.claim.universal"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "paper-half-shape.hook.cut",
+      "archetype": "demonstrated-invariant",
+      "text": "Cut A4 paper in half. Turn it. It’s almost the same shape, only smaller.",
+      "viewerPromise": "Watch the shape survive a cut and learn why.",
+      "claimIds": [
+        "paper-half-shape.claim.similarity",
+        "paper-half-shape.claim.rounded"
+      ]
+    },
+    {
+      "id": "paper-half-shape.hook.scale",
+      "archetype": "everyday-hidden-rule",
+      "text": "Half the area does not mean half the length.",
+      "viewerPromise": "Understand the copy-size factor.",
+      "claimIds": [
+        "paper-half-shape.claim.length-area"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "paper-half-shape.narrative.proof",
+      "title": "Counterexample to proof",
+      "description": "A square fails, then the special ratio resolves the contrast.",
+      "claimIds": [
+        "paper-half-shape.claim.square",
+        "paper-half-shape.claim.ratio",
+        "paper-half-shape.claim.similarity"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "paper-half-shape.visual.paper",
+      "title": "Cut, turn, align",
+      "description": "Original proportional sheets, a square counterexample and a uniform print layout scaling.",
+      "claimIds": [
+        "paper-half-shape.claim.similarity",
+        "paper-half-shape.claim.square",
+        "paper-half-shape.claim.scaling",
+        "paper-half-shape.claim.length-area"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "Why is A0 based on one square metre?",
+    "Why does US Letter behave differently?"
+  ],
+  "followUpOpportunities": [
+    "Paper formats as a standards-history story, separately sourced."
+  ],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review (not Ahmet)",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.4",
+      "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+    },
+    "approvedAt": "2026-10-02",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

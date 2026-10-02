@@ -1,0 +1,294 @@
+{
+  "id": "paper-half-shape.asset.hidden-geometry",
+  "revision": 1,
+  "knowledgePackageId": "paper-half-shape",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand a familiar design and distinguish length scaling from area scaling.",
+  "storyAngle": "Make a mundane rectangle perform an understandable mathematical trick.",
+  "hookId": "paper-half-shape.hook.cut",
+  "selectedClaimIds": [
+    "paper-half-shape.claim.similarity",
+    "paper-half-shape.claim.square",
+    "paper-half-shape.claim.ratio",
+    "paper-half-shape.claim.scaling",
+    "paper-half-shape.claim.length-area",
+    "paper-half-shape.claim.rounded"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 35,
+    "maximum": 65
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.1",
+        "type": "factual",
+        "text": "Cut A4 paper in half. Turn it. It’s almost the same shape, only smaller.",
+        "claimIds": [
+          "paper-half-shape.claim.similarity",
+          "paper-half-shape.claim.rounded"
+        ]
+      },
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.2",
+        "type": "factual",
+        "text": "A square cannot do that. Halve it, and you get a skinny rectangle.",
+        "claimIds": [
+          "paper-half-shape.claim.square"
+        ]
+      },
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.3",
+        "type": "factual",
+        "text": "A-series paper is built around a special ratio: one to the square root of two.",
+        "claimIds": [
+          "paper-half-shape.claim.ratio"
+        ]
+      },
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.4",
+        "type": "factual",
+        "text": "Halve the long side, then rotate the piece. That ratio comes back.",
+        "claimIds": [
+          "paper-half-shape.claim.similarity",
+          "paper-half-shape.claim.ratio"
+        ]
+      },
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.5",
+        "type": "factual",
+        "text": "In the ideal system, an A3 design shrinks to A4 without stretching.",
+        "claimIds": [
+          "paper-half-shape.claim.scaling"
+        ]
+      },
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.6",
+        "type": "factual",
+        "text": "Each length shrinks to about seventy-one percent. The area halves.",
+        "claimIds": [
+          "paper-half-shape.claim.length-area"
+        ]
+      },
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.7",
+        "type": "factual",
+        "text": "Real paper sizes are rounded to whole millimetres. The perfect rule lives in the geometry.",
+        "claimIds": [
+          "paper-half-shape.claim.rounded",
+          "paper-half-shape.claim.ratio"
+        ]
+      },
+      {
+        "id": "paper-half-shape.asset.hidden-geometry.script.8",
+        "type": "factual",
+        "text": "Half the paper. Same proportions.",
+        "claimIds": [
+          "paper-half-shape.claim.similarity"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.1",
+      "label": "cut-turn",
+      "purpose": "Open with the actual operation.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.1"
+      ]
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.2",
+      "label": "square-fails",
+      "purpose": "Show that preserving shape is special.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.2"
+      ]
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.3",
+      "label": "special-ratio",
+      "purpose": "Name the mathematical relationship.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.3"
+      ]
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.4",
+      "label": "returning-ratio",
+      "purpose": "Expose the mechanism.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.4"
+      ]
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.5",
+      "label": "layout-fit",
+      "purpose": "Give a practical application.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.5"
+      ]
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.6",
+      "label": "length-not-area",
+      "purpose": "Prevent length/area confusion.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.6"
+      ]
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.7",
+      "label": "physical-limit",
+      "purpose": "Preserve physical rounding.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.7"
+      ]
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.beat.8",
+      "label": "payoff",
+      "purpose": "Land the reframe.",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.8"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.1",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.1",
+      "objective": "Bisect a portrait sheet across its long dimension and rotate a half; overlay outline.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.1"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.similarity",
+        "paper-half-shape.claim.rounded"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.2",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.2",
+      "objective": "Halve a square and rotate; width/height comparison clearly differs.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.2"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.square"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.3",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.3",
+      "objective": "Extend a unit square to its diagonal length, creating the √2 rectangle.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.3"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.ratio"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.4",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.4",
+      "objective": "Track original 1 and √2 edges to the rotated half: √2/2 and 1.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.4"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.similarity",
+        "paper-half-shape.claim.ratio"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.5",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.5",
+      "objective": "Scale an original abstract print composition uniformly from A3 to A4.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.5"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.scaling"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.6",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.6",
+      "objective": "Show 70.7% length beside a half-area two-piece construction.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.6"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.length-area"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.7",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.7",
+      "objective": "Separate ideal ratio from DIN nominal A4/A5 numbers; visibly disclose schematic model.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.7"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.rounded",
+        "paper-half-shape.claim.ratio"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    },
+    {
+      "id": "paper-half-shape.asset.hidden-geometry.visual.8",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.8",
+      "objective": "Return to the original sheet/half outline with a quiet final alignment.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.8"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.similarity"
+      ],
+      "notes": "Original geometry; no source figures copied. Exact ideal ratio model is disclosed. Physical nominal dimensions never imply exact √2 equality."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "af_heart, warm precise curiosity; deliberate cut/turn pauses and clear length versus area contrast.",
+    "pronunciationNotes": [
+      "A4: ay four; A3: ay three; square root of two; millimetres."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review (not Ahmet)",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.4",
+      "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+    },
+    "approvedAt": "2026-10-02",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

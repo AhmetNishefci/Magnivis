@@ -1,0 +1,90 @@
+{
+  "mediaSha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+  "scriptSha256": "e1f55dc096eb49425e6e43fd3663a186c11ae9398e0a6e7023fa907adca3e58f",
+  "checkedAt": "2026-10-02T16:52:08.994Z",
+  "checks": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed"
+  },
+  "actualMedia": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 52.118,
+    "sizeBytes": 9540171,
+    "bitRate": 1464395
+  },
+  "fullDecode": "passed",
+  "videoPayloadUnchangedByMastering": "SHA256=a35fb94a6166d3ee14c940d6302c720b544a847c099d5c1141df537a79397c67",
+  "captionCount": 18,
+  "browserCheckpoints": 44,
+  "decodedContactSheet": {
+    "id": "media.edcc6bf1f276d66d0464cc299b40f27361e5e90d3ab9e82f6ea11e9f6f7b870a",
+    "sha256": "edcc6bf1f276d66d0464cc299b40f27361e5e90d3ab9e82f6ea11e9f6f7b870a"
+  },
+  "retainedReviewFrames": [
+    {
+      "id": "media.a3f5f6b86e52286c790665867c91520aaa3a2b77b3cc25a70ae2e3cb74fffd9a",
+      "sha256": "a3f5f6b86e52286c790665867c91520aaa3a2b77b3cc25a70ae2e3cb74fffd9a"
+    },
+    {
+      "id": "media.cae10ef291b2db507742129b793443b15c5ca9715d4e08dcc3807dfd2a57d5e5",
+      "sha256": "cae10ef291b2db507742129b793443b15c5ca9715d4e08dcc3807dfd2a57d5e5"
+    },
+    {
+      "id": "media.bd3a55ee5e75acb1059597e5072eec19cf7866865216de155c4765f25022ab15",
+      "sha256": "bd3a55ee5e75acb1059597e5072eec19cf7866865216de155c4765f25022ab15"
+    },
+    {
+      "id": "media.2cc14f4a11c7b6f309d08398e4d380d5627daad0c74a64558d46e6594228ea32",
+      "sha256": "2cc14f4a11c7b6f309d08398e4d380d5627daad0c74a64558d46e6594228ea32"
+    },
+    {
+      "id": "media.20ce36102c78e4d3ef346d53377144839197b5b1ea1c8c9cb7c04221670f21ec",
+      "sha256": "20ce36102c78e4d3ef346d53377144839197b5b1ea1c8c9cb7c04221670f21ec"
+    },
+    {
+      "id": "media.de5048de24f6b6e72c8805a75ee762104e7bb7682542ba918c29d4f45466bb82",
+      "sha256": "de5048de24f6b6e72c8805a75ee762104e7bb7682542ba918c29d4f45466bb82"
+    },
+    {
+      "id": "media.716553fb661f2d7e73d3b37d7d7cc4b05eb08810af1af3f6adc0b9b4e0c5f1ff",
+      "sha256": "716553fb661f2d7e73d3b37d7d7cc4b05eb08810af1af3f6adc0b9b4e0c5f1ff"
+    },
+    {
+      "id": "media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f",
+      "sha256": "1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f"
+    }
+  ],
+  "sourceReports": [
+    {
+      "path": "content-intelligence/cycles/cycle-4/qa/report.json",
+      "sha256": "874ea89cf337d25c85ab074857c5028b4b7a974c177af15e821ecbc27234a210"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-4/qa/typography-report.json",
+      "sha256": "75bf5efcf46faad08dbdb61fc0b1da6d490727c454f500d00dfc526afb8bfff5"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-4/qa/audio-inspection.json",
+      "sha256": "e1cadae4f6865ade1fea3425379612850a1218195b8f8ea96aa7a5f4d42b7293"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-4/qa/visual-inspection.json",
+      "sha256": "55ed4a76ac45a1bffac2ee29a65bfb12d463c5ecd92757fb6fd6d00d61311e22"
+    }
+  ],
+  "audio": {
+    "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -19.1 LUFS\n    Threshold: -29.6 LUFS\n\n  Loudness range:\n    LRA:         2.8 LU\n    Threshold: -40.9 LUFS\n    LRA low:   -22.5 LUFS\n    LRA high:  -19.7 LUFS\n\n  True peak:\n    Peak:       -2.0 dBFS\n",
+    "clipping": "No digital clipping; final measured peak has headroom.",
+    "asrCaveat": "Whisper tiny recognizes halve as have; spelling recognition alone does not prove a spoken error. Owner should inspect pronunciation and naturalness."
+  },
+  "coverage": "44 sampled timeline layouts and exact decoded master checkpoints; complete audio/video decode. No all-frame geometry or mobile/native/crop proof.",
+  "publicationApprovalGranted": false
+}

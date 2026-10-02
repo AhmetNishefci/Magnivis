@@ -1,0 +1,369 @@
+{
+  "checkedAt": "2026-10-02T16:50:58.362Z",
+  "masterPath": "artifacts/masters/paper-half-shape-candidate-v1.mp4",
+  "masterSha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+  "method": "Local Whisper tiny.en ASR of each clip and full decoded master, plus independent ffprobe durations; machine corroboration, not human subjective listening.",
+  "model": "onnx-community/whisper-tiny.en",
+  "modelSha256": "e93ec822f16a8fd264e7de972ad17d615ea7334b75a52d54c50c2e18dd503a25",
+  "narratorModelSha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478",
+  "results": [
+    {
+      "id": "paper-cue-1",
+      "exactText": "Cut A4 paper in half.",
+      "recognized": " Cut a 4-paper-and-half.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Cut a 4-paper-and-half."
+        }
+      ],
+      "duration": 2.275,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-2",
+      "exactText": "Turn it.",
+      "recognized": " Turn it.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Turn it."
+        }
+      ],
+      "duration": 1.375,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-3",
+      "exactText": "It’s almost the same shape, only smaller.",
+      "recognized": " It's almost the same shape, only smaller.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " It's almost the same shape, only smaller."
+        }
+      ],
+      "duration": 2.95,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-4",
+      "exactText": "A square cannot do that.",
+      "recognized": " A square cannot do that.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " A square cannot do that."
+        }
+      ],
+      "duration": 1.95,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-5",
+      "exactText": "Halve it, and you get a skinny rectangle.",
+      "recognized": " Have it, and you get a skinny rectangle.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.46
+          ],
+          "text": " Have it, and you get a skinny rectangle."
+        }
+      ],
+      "duration": 2.8,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-6",
+      "exactText": "A-series paper is built around a special ratio:",
+      "recognized": " A series paper is built around a special ratio.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " A series paper is built around a special ratio."
+        }
+      ],
+      "duration": 3.775,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-7",
+      "exactText": "one to the square root of two.",
+      "recognized": " 1 to the square root of 2.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " 1 to the square root of 2."
+        }
+      ],
+      "duration": 2.25,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-8",
+      "exactText": "Halve the long side,",
+      "recognized": " Have the long side.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Have the long side."
+        }
+      ],
+      "duration": 1.925,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-9",
+      "exactText": "then rotate the piece.",
+      "recognized": " Then rotate the piece.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Then rotate the piece."
+        }
+      ],
+      "duration": 2,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-10",
+      "exactText": "That ratio comes back.",
+      "recognized": " That ratio comes back.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " That ratio comes back."
+        }
+      ],
+      "duration": 2.15,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-11",
+      "exactText": "In the ideal system,",
+      "recognized": " in the ideal system.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " in the ideal system."
+        }
+      ],
+      "duration": 2,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-12",
+      "exactText": "an A3 design shrinks to A4 without stretching.",
+      "recognized": " An A3 design shrinks to A4 without stretching.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " An A3 design shrinks to A4 without stretching."
+        }
+      ],
+      "duration": 3.775,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-13",
+      "exactText": "Each length shrinks to about seventy-one percent.",
+      "recognized": " Each length shrinks to about 71%.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Each length shrinks to about 71%."
+        }
+      ],
+      "duration": 3.175,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-14",
+      "exactText": "The area halves.",
+      "recognized": " The area halves.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " The area halves."
+        }
+      ],
+      "duration": 1.825,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-15",
+      "exactText": "Real paper sizes are rounded to whole millimetres.",
+      "recognized": " Real paper sizes are rounded to whole millimeters.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " Real paper sizes are rounded to whole millimeters."
+        }
+      ],
+      "duration": 3.85,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-16",
+      "exactText": "The perfect rule lives in the geometry.",
+      "recognized": " The perfect rule lives in the geometry.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " The perfect rule lives in the geometry."
+        }
+      ],
+      "duration": 3.15,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-17",
+      "exactText": "Half the paper.",
+      "recognized": " half the paper.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " half the paper."
+        }
+      ],
+      "duration": 1.7,
+      "sampleRate": 24000
+    },
+    {
+      "id": "paper-cue-18",
+      "exactText": "Same proportions.",
+      "recognized": " Same proportions.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Same proportions."
+        }
+      ],
+      "duration": 1.85,
+      "sampleRate": 24000
+    }
+  ],
+  "completeMasterRecognition": {
+    "text": " Cut a4 paper in half. Turn it. It's almost the same shape, only smaller. A square cannot do that. Have it, and you get a skinny rectangle. A series paper is built around a special ratio. 1 to the square root of 2, have the long side, then rotate the piece. That ratio comes back, in the ideal system, an A3 design shrinks to a 4 without stretching. Each length shrinks to about 71%. The area halves. Real paper sizes are rounded to whole millimeters. The perfect rule lives in the geometry. Half the paper. Same proportions.",
+    "chunks": [
+      {
+        "timestamp": [
+          0,
+          3
+        ],
+        "text": " Cut a4 paper in half."
+      },
+      {
+        "timestamp": [
+          3,
+          4
+        ],
+        "text": " Turn it."
+      },
+      {
+        "timestamp": [
+          4,
+          8
+        ],
+        "text": " It's almost the same shape, only smaller."
+      },
+      {
+        "timestamp": [
+          8,
+          10
+        ],
+        "text": " A square cannot do that."
+      },
+      {
+        "timestamp": [
+          10,
+          13
+        ],
+        "text": " Have it, and you get a skinny rectangle."
+      },
+      {
+        "timestamp": [
+          13,
+          22.46
+        ],
+        "text": " A series paper is built around a special ratio. 1 to the square root of 2, have the long side,"
+      },
+      {
+        "timestamp": [
+          22.46,
+          30.98
+        ],
+        "text": " then rotate the piece. That ratio comes back, in the ideal system, an A3 design shrinks"
+      },
+      {
+        "timestamp": [
+          30.98,
+          37.36
+        ],
+        "text": " to a 4 without stretching. Each length shrinks to about 71%."
+      },
+      {
+        "timestamp": [
+          37.36,
+          50.4
+        ],
+        "text": " The area halves. Real paper sizes are rounded to whole millimeters. The perfect rule lives in the geometry. Half the paper. Same proportions."
+      }
+    ]
+  },
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -19.1 LUFS\n    Threshold: -29.6 LUFS\n\n  Loudness range:\n    LRA:         2.8 LU\n    Threshold: -40.9 LUFS\n    LRA low:   -22.5 LUFS\n    LRA high:  -19.7 LUFS\n\n  True peak:\n    Peak:       -2.0 dBFS\n",
+  "subjectiveListening": "Owner master review: voice naturalness, A3/A4, halve and square-root pronunciation, operation pauses."
+}

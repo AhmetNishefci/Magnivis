@@ -1,5 +1,15 @@
 # Asset licenses and provenance
 
+## Cycle #4 — paper geometry review candidate
+
+- Original paper objects, unit-square diagonal, edge/cut/rotation choreography and abstract print artwork: Magnivis-authored SVG/CSS in `src/components/PaperObjects.tsx` and `src/compositions/PaperHalfShape.tsx`; project-owned original work. No institutional figure, PDF page, stock photograph, generated raster or logo embedded. Research pages are consulted evidence only.
+- Manrope 400/600: existing pinned `@fontsource/manrope` 5.3.0, Mikhail Sharanda, unmodified SIL OFL 1.1. Exact chosen WOFF2 hashes and complete license in `content-intelligence/cycles/cycle-4/rights-provenance.json` and `Manrope-OFL.txt`. Font binaries remain reproducible pinned dependencies rather than redundant durable copies.
+- Eighteen exact local Kokoro-82M `af_heart` narration WAVs: established Apache-2.0 model output from internally reviewed V3 narration, speed 0.96, q8 CPU; no cloning, auditions or paid provider. Exact clips are canonical media; model digest and independent speech-inspection provenance retained. Model cache remains disposable.
+- Narration-only audio with operation pauses: no music, ambient or sampled effect assets. Internal gain mastering preserves video packet bytes; exact final loudness/provenance/QA bind the review master.
+- Designed burned-in phrase captions and aligned optional VTT: original exact narration-derived text. MP4, decoded contact sheet and eight bounded review captures are canonical originals/evidence; no duplicate platform payloads or device screenshots.
+
+This records rights/provenance and internal production only; owner master/publication approval remains absent.
+
 | Asset | Source/author | License | Use and modifications |
 |---|---|---|---|
 | Manrope font files | `@fontsource/manrope`; original typeface by Mikhail Sharanda | SIL Open Font License 1.1 | Bundled npm font files; used for labels/body text. |

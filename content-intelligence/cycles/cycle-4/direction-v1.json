@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "creative-direction.paper-half-shape.v1",
+  "revision": 1,
+  "state": "ready-for-production-planning",
+  "knowledgePackage": {
+    "id": "paper-half-shape",
+    "revision": 1,
+    "sha256": "64e53664421ec82b952701094a2d50e601039e81936f3acf22b334e7cacfa7e6"
+  },
+  "contentAsset": {
+    "id": "paper-half-shape.asset.hidden-geometry",
+    "revision": 1,
+    "sha256": "b74d4ee8e692198d548f73589e593ac7365f097d3c9320d1673a76e4946d87aa"
+  },
+  "approvedScriptSha256": "e1f55dc096eb49425e6e43fd3663a186c11ae9398e0a6e7023fa907adca3e58f",
+  "creativeThesis": "A tactile-looking paper proof: every transformation reveals a mathematical relationship.",
+  "viewerExperience": "An everyday sheet surprises, a square fails, then the viewer sees why the right rectangle succeeds.",
+  "emotionalTarget": "Quiet delight and understanding, rather than awe at large quantities.",
+  "visualThesis": "Warm pale paper, vermilion cut marks and forest-green edge annotations; generous space and precise choreography. Sheets feel physical through shadows, but models remain disclosed.",
+  "decisions": [
+    {
+      "dimension": "visual-medium",
+      "treatment": "Original SVG/CSS paper choreography, proportional geometry and original abstract printed artwork.",
+      "rationale": "Exact transformations carry the proof; generative imagery would add ambiguous shape changes.",
+      "alternativesConsidered": [
+        "Live tabletop footage: appealing but requires a camera setup and obscures exact edge correspondence.",
+        "Photoreal generated paper montage: weaker temporal geometry fidelity."
+      ]
+    },
+    {
+      "dimension": "art-direction",
+      "treatment": "Cream work surface, near-white sheets, dark green mathematical ink, vermilion cut line. Manrope sentence-case typography with no dashboard framing.",
+      "rationale": "Distinguish paper objects, operations and annotations; warm print character follows the object, not a domain palette."
+    },
+    {
+      "dimension": "narration",
+      "treatment": "Kokoro-local af_heart, speed 0.96; short clip-level pauses around operations.",
+      "rationale": "Current primary narrator; precise but accessible explanation requires room to watch."
+    },
+    {
+      "dimension": "captions",
+      "treatment": "Speech phrases in large dark Manrope, sentence case on a plain cream field beneath the proof; restrained opacity transitions, no word bounce.",
+      "rationale": "Captions support silent understanding without covering transformed sheets. Exact words and qualifiers retained."
+    },
+    {
+      "dimension": "sound",
+      "treatment": "Narration only; deliberate quiet during rotations, no continuous music.",
+      "rationale": "The shapes and edge correspondence require concentration. Silence lets the audience inspect the relationship; no simulated measurement sound."
+    },
+    {
+      "dimension": "pacing",
+      "treatment": "Measured narration determines duration, with operation pauses and a brief final hold.",
+      "rationale": "Story-led; no threshold padding or inherited runtime."
+    },
+    {
+      "dimension": "hook",
+      "treatment": "Cut and turn immediately; narration says almost to distinguish physical paper from the ideal model.",
+      "rationale": "The operation creates the question in frame one rather than a title-card promise."
+    },
+    {
+      "dimension": "platform-presentation",
+      "treatment": "Master critical content inside surviving provisional playback insets; caption/native/crop geometry remains unknown. Target profiles bound before render.",
+      "rationale": "Local master preflight informs later adaptations without claiming mobile safety or preparing publication."
+    }
+  ],
+  "convergenceReview": {
+    "recentAssets": [
+      {
+        "contentAsset": {
+          "id": "chocolate-crystal-choice.asset.same-recipe-different-structure",
+          "revision": 3,
+          "sha256": "dc90cc07e342482ac4df23811700a9e4eb1ad14de72538264f3561c45cd24d56"
+        },
+        "learnedPrinciple": "A visible mechanism should resolve the opening question; captions complement necessary objects.",
+        "applicability": "Applies to proof clarity, not a prescribed color, material, hook or duration.",
+        "similarities": [
+          "Established af_heart narrator policy.",
+          "Original explanatory geometry and designed captions."
+        ],
+        "differences": [
+          "Pale graphic paper field rather than traffic terrain, watch theatre or chocolate cutaway.",
+          "No ambient/tactile bed; identity comes from edge continuity and printed composition.",
+          "Mathematical counterexample rather than experimental/historical progression."
+        ],
+        "assessment": "distinct-execution",
+        "rationale": "New story-specific paper construction selected before implementation; infrastructure reuse does not import historical treatments."
+      },
+      {
+        "contentAsset": {
+          "id": "longitude-clock.asset.time-to-position",
+          "revision": 3,
+          "sha256": "27c59fae1d80055075d770b1459b69759adcba6a69ba583f73b515dc45aeeca8"
+        },
+        "learnedPrinciple": "A visible mechanism should resolve the opening question; captions complement necessary objects.",
+        "applicability": "Applies to proof clarity, not a prescribed color, material, hook or duration.",
+        "similarities": [
+          "Established af_heart narrator policy.",
+          "Original explanatory geometry and designed captions."
+        ],
+        "differences": [
+          "Pale graphic paper field rather than traffic terrain, watch theatre or chocolate cutaway.",
+          "No ambient/tactile bed; identity comes from edge continuity and printed composition.",
+          "Mathematical counterexample rather than experimental/historical progression."
+        ],
+        "assessment": "distinct-execution",
+        "rationale": "New story-specific paper construction selected before implementation; infrastructure reuse does not import historical treatments."
+      },
+      {
+        "contentAsset": {
+          "id": "phantom-traffic.asset.backward-wave",
+          "revision": 3,
+          "sha256": "bc48c820585370750ca040e3683781391390b0e058d2f09f6c083803ef348f97"
+        },
+        "learnedPrinciple": "A visible mechanism should resolve the opening question; captions complement necessary objects.",
+        "applicability": "Applies to proof clarity, not a prescribed color, material, hook or duration.",
+        "similarities": [
+          "Established af_heart narrator policy.",
+          "Original explanatory geometry and designed captions."
+        ],
+        "differences": [
+          "Pale graphic paper field rather than traffic terrain, watch theatre or chocolate cutaway.",
+          "No ambient/tactile bed; identity comes from edge continuity and printed composition.",
+          "Mathematical counterexample rather than experimental/historical progression."
+        ],
+        "assessment": "distinct-execution",
+        "rationale": "New story-specific paper construction selected before implementation; infrastructure reuse does not import historical treatments."
+      }
+    ],
+    "unresolvedConvenienceReuse": [],
+    "conclusion": "No convenience-driven renderer, palette, timing or sound reuse. Existing Manrope license supports readable print typography; consciously chosen for this composition."
+  },
+  "ownerReview": {
+    "required": false,
+    "rationale": "Routine internal V3 direction within established narrator, rights, local tooling and cost; no exceptional departure."
+  },
+  "risks": [
+    "Rotations must visibly preserve geometry; no morphing shortcut.",
+    "Ideal/physical rounding disclosure must be legible.",
+    "Caption and proof annotations must not compete.",
+    "Actual mobile/crop/native presentation remains untested."
+  ],
+  "provenance": {
+    "method": "ai-assisted-editorial",
+    "enteredAt": "2026-10-02T16:31:05.387Z",
+    "notes": "Session-authored and source-validated decisions under owner cycle-start authority. No separate LLM/provider run or owner direction approval fabricated."
+  },
+  "platformApprovalGranted": false,
+  "publicationApprovalGranted": false
+}

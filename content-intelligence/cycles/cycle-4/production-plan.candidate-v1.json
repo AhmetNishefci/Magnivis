@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.paper-half-shape.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "paper-half-shape",
+    "revision": 1,
+    "sha256": "64e53664421ec82b952701094a2d50e601039e81936f3acf22b334e7cacfa7e6"
+  },
+  "contentAsset": {
+    "id": "paper-half-shape.asset.hidden-geometry",
+    "revision": 1,
+    "sha256": "b74d4ee8e692198d548f73589e593ac7365f097d3c9320d1673a76e4946d87aa"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.4",
+    "reviewSha256": "535cfe3cabce925303607ea6f6ab89f26b4f651a5f2e81cb7bfab9e61bfcf8e3"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-4/profiles/youtube.json",
+      "sha256": "3effbca262bcaa84fe54b95ebe2dc4145de5ea585d45fd959e6f13dd8f50b305"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-4/profiles/tiktok.json",
+      "sha256": "f531673a688510cbe9b33a95e982f6ca177e7ae45fe5f35c7732925fa7b2f131"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-4/profiles/instagram.json",
+      "sha256": "5c955b2a4e5608ebe6e7ba86cb3ce06260d356d952175c869ae60b01521edc26"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-4/profiles/facebook.json",
+      "sha256": "af5e066066a0e85e6bcb596bfe1223c843bde1b7abefcc26c8d09894dbf89a8e"
+    }
+  ],
+  "approvedScriptSha256": "e1f55dc096eb49425e6e43fd3663a186c11ae9398e0a6e7023fa907adca3e58f",
+  "creativeDirection": {
+    "id": "creative-direction.paper-half-shape.v1",
+    "revision": 1,
+    "sha256": "594c00781f3a3122b0e7a622766d01b0d6ddfb0d3d13efce3a3a63b2922d9970"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "paper-half-shape.claim.universal"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 52.06666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "paper.production.1",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.1",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.1",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.1"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.similarity",
+        "paper-half-shape.claim.rounded"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 232
+      },
+      "sceneType": "paper-halving",
+      "objective": "Bisect a portrait sheet across its long dimension and rotate a half; overlay outline.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    },
+    {
+      "id": "paper.production.2",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.2",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.2",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.2"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.square"
+      ],
+      "frames": {
+        "start": 232,
+        "end": 394
+      },
+      "sceneType": "square-counterexample",
+      "objective": "Halve a square and rotate; width/height comparison clearly differs.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    },
+    {
+      "id": "paper.production.3",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.3",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.3",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.3"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.ratio"
+      ],
+      "frames": {
+        "start": 394,
+        "end": 596
+      },
+      "sceneType": "diagonal-construction",
+      "objective": "Extend a unit square to its diagonal length, creating the √2 rectangle.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    },
+    {
+      "id": "paper.production.4",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.4",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.4",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.4"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.similarity",
+        "paper-half-shape.claim.ratio"
+      ],
+      "frames": {
+        "start": 596,
+        "end": 810
+      },
+      "sceneType": "edge-correspondence",
+      "objective": "Track original 1 and √2 edges to the rotated half: √2/2 and 1.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    },
+    {
+      "id": "paper.production.5",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.5",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.5",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.5"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.scaling"
+      ],
+      "frames": {
+        "start": 810,
+        "end": 1000
+      },
+      "sceneType": "uniform-layout-scaling",
+      "objective": "Scale an original abstract print composition uniformly from A3 to A4.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    },
+    {
+      "id": "paper.production.6",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.6",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.6",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.6"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.length-area"
+      ],
+      "frames": {
+        "start": 1000,
+        "end": 1176
+      },
+      "sceneType": "length-area-contrast",
+      "objective": "Show 70.7% length beside a half-area two-piece construction.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    },
+    {
+      "id": "paper.production.7",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.7",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.7",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.7"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.rounded",
+        "paper-half-shape.claim.ratio"
+      ],
+      "frames": {
+        "start": 1176,
+        "end": 1411
+      },
+      "sceneType": "nominal-rounding",
+      "objective": "Separate ideal ratio from DIN nominal A4/A5 numbers; visibly disclose schematic model.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    },
+    {
+      "id": "paper.production.8",
+      "sourceVisualPlanId": "paper-half-shape.asset.hidden-geometry.visual.8",
+      "narrativeBeatId": "paper-half-shape.asset.hidden-geometry.beat.8",
+      "scriptSegmentIds": [
+        "paper-half-shape.asset.hidden-geometry.script.8"
+      ],
+      "claimIds": [
+        "paper-half-shape.claim.similarity"
+      ],
+      "frames": {
+        "start": 1411,
+        "end": 1562
+      },
+      "sceneType": "paper-payoff",
+      "objective": "Return to the original sheet/half outline with a quiet final alignment.",
+      "onScreenText": [],
+      "animationIntent": "Geometry-driven transformations with continuous visible edge tracking; no arbitrary shape morph.",
+      "transitionIntent": "Clean cut between logical demonstrations; moving paper elements within each proof.",
+      "audioIntent": "Measured af_heart narration with authored pauses; no other audio."
+    }
+  ],
+  "assets": [
+    {
+      "id": "paper.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned original artwork",
+        "notes": "No third-party figures or stock imagery.",
+        "evidence": "content-intelligence/cycles/cycle-4/rights-provenance.json"
+      }
+    },
+    {
+      "id": "paper.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Mikhail Sharanda / fontsource pinned package",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing installed font selected for readable print execution; unmodified.",
+        "evidence": "content-intelligence/cycles/cycle-4/Manrope-OFL.txt"
+      }
+    },
+    {
+      "id": "paper.narration",
+      "kind": "audio",
+      "path": "public/audio/paper/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart from internally reviewed script",
+        "rights": "Project output under established Apache-2.0 model terms",
+        "notes": "No voice cloning or paid calls.",
+        "evidence": "src/production/narration/paper.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/paper-half-shape.en.vtt",
+    "captionPlanId": "caption-plan.paper-half-shape.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "a7558da077a3c53f907b54a529413c98bcf6db88b2f1311d24414e12df372eaf",
+    "generatorId": "generator.paper-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Technical probe, full decode, typography and exact caption reconstruction.",
+    "Actual master and every caption midpoint decoded and inspected.",
+    "Inspect proof cut, rotation, ratio correspondence, scale factors and rounding caveat.",
+    "Preflight remains provisional local playback geometry; no device/crop pass.",
+    "AHMET — MASTER REVIEW required before presentation/publication preparation."
+  ]
+}

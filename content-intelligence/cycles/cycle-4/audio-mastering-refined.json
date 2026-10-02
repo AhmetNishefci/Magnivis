@@ -1,0 +1,15 @@
+{
+  "enteredAt": "2026-10-02T16:48:22.988Z",
+  "method": "Internal pre-review audio gain mastering; video stream copied without re-encoding.",
+  "renderIntermediate": {
+    "path": "output/paper-render.mp4",
+    "sha256": "3e9f28e03833baf0e14d4cc10289901ea035855f073bc4000438bb03f79e3aa6",
+    "retention": "Temporary pre-review render, not catalogued or owner-reviewed."
+  },
+  "candidate": {
+    "path": "artifacts/masters/paper-half-shape-candidate-v1.mp4",
+    "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+  },
+  "gainDb": 4.5,
+  "rationale": "Initial render measured -23.6 LUFS/-6.4 dBTP. A conservative +4.5 dB gain improves speech audibility while retaining headroom; final loudness independently checked."
+}

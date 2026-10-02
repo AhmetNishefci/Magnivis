@@ -1,0 +1,53 @@
+{
+  "enteredAt": "2026-10-02T16:52:08.994Z",
+  "sourceBaseCommit": "bcb6d4730f12132a669d1862e1f011d874712b38",
+  "files": [
+    {
+      "path": "src/paper-index.tsx",
+      "sha256": "bccbd08a4380e0a9eac2cc50bcd51def980e1f9fe052be89a5dad2236ec64e23"
+    },
+    {
+      "path": "src/compositions/PaperHalfShape.tsx",
+      "sha256": "af933e3751f1f21370900f732d627868bab0304632aeb255cdbe757404767edb"
+    },
+    {
+      "path": "src/components/PaperObjects.tsx",
+      "sha256": "a94a1fd6d5487964b93a5963ba539a9ad8f6b1c71962dd60046d05bee5a74ca0"
+    },
+    {
+      "path": "src/production/paper-geometry.ts",
+      "sha256": "9c987c9160287bcc1e1acb80f86ef89764370b932d152d838eb7f6a263cbbc36"
+    },
+    {
+      "path": "scripts/render-paper.ts",
+      "sha256": "4ac3daffb3e29d2e26fd98a531097bc91bc38c27d6d5d36f40bf39bb6ade965e"
+    },
+    {
+      "path": "scripts/generate-paper-narration.mjs",
+      "sha256": "0890dfd9cc18a18752efe10a5a76dbe5f8e0ea67c139d98cde5a1e53c239e2ea"
+    },
+    {
+      "path": "scripts/prepare-paper-production.ts",
+      "sha256": "4999fd827b1202c1268fff289e0969b30a4f1c072a91582eec200b844b8f4a79"
+    },
+    {
+      "path": "src/production/plans/paper.json",
+      "sha256": "c505c86fbc7ea0bd9d822e1c2432a10c72d1bd9b7209ebeaa205e83062d20e84"
+    },
+    {
+      "path": "src/captions/plans/paper.json",
+      "sha256": "510c56f825f055768f69bc61a4d3dfadda69034b98fd2eaa3d1463b5aa29facd"
+    },
+    {
+      "path": "src/production/narration/paper.json",
+      "sha256": "5dab302a3af2004005068feebc99e9f67856aa78a60d00db0ba0b8e9ea6aaeb5"
+    }
+  ],
+  "videoPacketSha256": "SHA256=a35fb94a6166d3ee14c940d6302c720b544a847c099d5c1141df537a79397c67",
+  "renderInputs": "Current immutable scoped plan/captions/narration and chosen Manrope package, rendered through the paper entry point.",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-4/audio-mastering-refined.json",
+    "sha256": "5b14082893278957a2df0f984d01b2bfa7d1e4194bd0679b3d744b436fafb559"
+  },
+  "note": "Base commit identifies pre-cycle repository authority; exact new implementation is bound by file hashes, not a circular self-commit claim."
+}

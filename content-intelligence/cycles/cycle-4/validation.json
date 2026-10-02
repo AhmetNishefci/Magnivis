@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-10-02T17:00:24.270Z",
+  "commands": [
+    {
+      "command": "pnpm check",
+      "passed": true,
+      "testFiles": 45,
+      "tests": 440
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "passed": true,
+      "canonicalPayloads": 394,
+      "explicitExceptions": 0
+    },
+    {
+      "command": "pnpm qa paper-half-shape",
+      "passed": true
+    },
+    {
+      "command": "node --import tsx scripts/qa-paper-layout.ts",
+      "passed": true,
+      "checkpoints": 44
+    },
+    {
+      "command": "node --import tsx scripts/inspect-paper-audio.mjs",
+      "passed": true,
+      "basis": "Machine corroboration plus final loudness; no human listening claim."
+    },
+    {
+      "command": "node --import tsx scripts/cycle.ts review cycle.4",
+      "passed": true,
+      "gate": "MASTER REVIEW"
+    }
+  ],
+  "history": {
+    "passed": true,
+    "frozenHistoricalFiles": 948,
+    "changedFiles": 201,
+    "untrackedFiles": 0
+  },
+  "newCanonicalPayloads": 28,
+  "newPayloadBytes": 17090757,
+  "largestNewBinary": 9540171,
+  "gitIndexExactBytes": "All 28 newly canonical payloads independently read from staged Git blobs and matched to SHA-256 catalog identities.",
+  "priorFailures": [
+    "Chromium/tsx require local execution outside restricted sandbox; local elevated runs succeeded.",
+    "First font measurements ran before font readiness; synchronization corrected and rerun.",
+    "Percentage caption overflow corrected by semantic line break; words unchanged.",
+    "Initial canonical durability checks preceded staging after a sandbox index-write failure; staged checks now pass."
+  ],
+  "workflow": {
+    "cycleId": "cycle.4",
+    "stage": "master-review",
+    "masterDecision": null,
+    "release": null,
+    "publicationDecision": null
+  },
+  "git": {
+    "branch": "content/cycle-4-paper-master",
+    "sourceBase": "bcb6d47",
+    "remotePush": false
+  },
+  "notes": [
+    "Historical frozen identities preserved.",
+    "Full picture timeline decoded; geometry is sampled, not an all-frame or real-device pass.",
+    "Only one durable master MP4; preliminary encodes/captures ignored."
+  ]
+}
