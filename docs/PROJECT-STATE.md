@@ -1,3 +1,15 @@
+# CONTENT CYCLE #4 — AHMET — PUBLICATION REVIEW / AUTHORIZATION
+
+Ahmet approved the exact paper-geometry master with **APPROVE**. [Owner master decision](../content-intelligence/cycles/cycle-4/master-owner-decision-v1.json) and independent replayed journal `workflow/cycles/cycle.4/` lock the same canonical MP4, SHA-256 `93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7`, without copying or changing bytes. Source production plans/captions and the original master handoff remain frozen.
+
+V3 post-master internal work is complete: four exact-master variants, claim-bound platform copy/settings and reference-only prepared delivery manifests; one new original centered cover for YouTube/Instagram and an existing decoded payoff reference for TikTok/Facebook. Static cover was rendered/measured and inspected. No known sampled playback collision required a derivative. Provisional/stale profiles, native UI, caption/crop geometry, unsampled motion, cover/grid/feed and exact-media device/live-setting behavior remain explicit unknowns. No device pass or publication evidence is inferred from master approval.
+
+[Publication review handoff](../content-intelligence/cycles/cycle-4/publication/owner-review.md) binds the exact release, copy, covers and 52 itemized per-artifact presentation uncertainties plus operational access limits. Journal revision 8 is **publication-review**; the second normal gate is **AHMET — PUBLICATION REVIEW / AUTHORIZATION**. Owner publication decision is absent. No upload, scheduling, external account operation, main integration or remote push occurred.
+
+The master-review and older dated state sections below retain their historical meaning.
+
+---
+
 # CONTENT CYCLE #4 — AHMET — MASTER REVIEW
 
 Ahmet explicitly started Cycle #4 under integrated V3 on 2026-10-02. Independent replay-validated authority/state: `workflow/authorities/cycle-4-start.json` and `workflow/cycles/cycle.4/`. Project metadata is an overview, not a single-active-cycle pointer. [Owner handoff](../content-intelligence/cycles/cycle-4/owner-review.md) binds the actual unapproved candidate and internal discovery, editorial, direction, production and QA records.

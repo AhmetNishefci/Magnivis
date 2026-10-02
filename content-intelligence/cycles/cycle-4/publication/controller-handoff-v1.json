@@ -1,0 +1,139 @@
+{
+  "gate": "PUBLICATION REVIEW / AUTHORIZATION",
+  "cycleId": "cycle.4",
+  "platforms": [
+    {
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/paper-half-shape-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-4/publication/youtube/manifest-v1.json",
+        "sha256": "a596c54dba53fe3826b2906c3597da8094b80220cba92dff633876963948f42e"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-4/preflight/youtube.json",
+        "sha256": "3fdcb426261e745c4b7cf429f2d4a073f3b3f919ff8a8547a8ca581460cd2f6d"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-4/profiles/youtube.json",
+        "sha256": "3effbca262bcaa84fe54b95ebe2dc4145de5ea585d45fd959e6f13dd8f50b305"
+      }
+    },
+    {
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/paper-half-shape-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-4/publication/tiktok/manifest-v1.json",
+        "sha256": "adc6b0f7a599e445a8dafaccbc09c89851c6a66d4fe0d21df3b47bb33185b35d"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-4/preflight/tiktok.json",
+        "sha256": "bd6788bc833ef2e49d2fe2ec1e2183b6c67928d8e93c216aaab7eef7be513672"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-4/profiles/tiktok.json",
+        "sha256": "f531673a688510cbe9b33a95e982f6ca177e7ae45fe5f35c7732925fa7b2f131"
+      }
+    },
+    {
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/paper-half-shape-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-4/publication/instagram/manifest-v1.json",
+        "sha256": "279a2c8849b80ca3dd93f4184d8440581eec8a8a129f1f9c6f8508a36be9684b"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-4/preflight/instagram.json",
+        "sha256": "85a1c968cae64642db2a4799a1cbb777e855dec1fe292c26ca194149e15558cb"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-4/profiles/instagram.json",
+        "sha256": "5c955b2a4e5608ebe6e7ba86cb3ce06260d356d952175c869ae60b01521edc26"
+      }
+    },
+    {
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/paper-half-shape-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-4/publication/facebook/manifest-v1.json",
+        "sha256": "a40a020a90c23268f84e76342b2f4863edc35c13b51b2d4347cb1e9fae273859"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-4/preflight/facebook.json",
+        "sha256": "8c7d3feb78a83a2c39efbf03b4c86b343618c94ffd9469ca35452a5b7a9a8652"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-4/profiles/facebook.json",
+        "sha256": "af5e066066a0e85e6bcb596bfe1223c843bde1b7abefcc26c8d09894dbf89a8e"
+      }
+    }
+  ],
+  "presentationUncertainties": [
+    "paper-half-shape.variant.youtube.v1: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.youtube.v1: composition: provisional",
+    "paper-half-shape.variant.youtube.v1: nativeUI: unknown",
+    "paper-half-shape.variant.youtube.v1: captions: unknown",
+    "paper-half-shape.variant.youtube.v1: crop: unknown",
+    "paper-half-shape.variant.youtube.v1: Unsampled timeline motion not proven",
+    "paper-half-shape.variant.youtube.v1: No exact-media real-device evidence",
+    "paper-half-shape.variant.youtube.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.youtube.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: composition: unknown",
+    "paper-half-shape.variant.youtube.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: nativeUI: unknown",
+    "paper-half-shape.variant.youtube.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: captions: unknown",
+    "paper-half-shape.variant.youtube.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: crop: unknown",
+    "paper-half-shape.variant.youtube.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: No exact-media real-device evidence",
+    "paper-half-shape.variant.tiktok.v1: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.tiktok.v1: composition: provisional",
+    "paper-half-shape.variant.tiktok.v1: nativeUI: unknown",
+    "paper-half-shape.variant.tiktok.v1: captions: unknown",
+    "paper-half-shape.variant.tiktok.v1: crop: unknown",
+    "paper-half-shape.variant.tiktok.v1: Unsampled timeline motion not proven",
+    "paper-half-shape.variant.tiktok.v1: No exact-media real-device evidence",
+    "paper-half-shape.variant.tiktok.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.tiktok.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: composition: unknown",
+    "paper-half-shape.variant.tiktok.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: nativeUI: unknown",
+    "paper-half-shape.variant.tiktok.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: captions: unknown",
+    "paper-half-shape.variant.tiktok.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: crop: unknown",
+    "paper-half-shape.variant.tiktok.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: No exact-media real-device evidence",
+    "paper-half-shape.variant.instagram.v1: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.instagram.v1: composition: provisional",
+    "paper-half-shape.variant.instagram.v1: nativeUI: unknown",
+    "paper-half-shape.variant.instagram.v1: captions: unknown",
+    "paper-half-shape.variant.instagram.v1: crop: unknown",
+    "paper-half-shape.variant.instagram.v1: Unsampled timeline motion not proven",
+    "paper-half-shape.variant.instagram.v1: No exact-media real-device evidence",
+    "paper-half-shape.variant.instagram.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.instagram.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: composition: unknown",
+    "paper-half-shape.variant.instagram.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: nativeUI: unknown",
+    "paper-half-shape.variant.instagram.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: captions: unknown",
+    "paper-half-shape.variant.instagram.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: crop: unknown",
+    "paper-half-shape.variant.instagram.v1/cover.media.f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594: No exact-media real-device evidence",
+    "paper-half-shape.variant.facebook.v1: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.facebook.v1: composition: provisional",
+    "paper-half-shape.variant.facebook.v1: nativeUI: unknown",
+    "paper-half-shape.variant.facebook.v1: captions: unknown",
+    "paper-half-shape.variant.facebook.v1: crop: unknown",
+    "paper-half-shape.variant.facebook.v1: Unsampled timeline motion not proven",
+    "paper-half-shape.variant.facebook.v1: No exact-media real-device evidence",
+    "paper-half-shape.variant.facebook.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: Profile is superseded or due for renewed inspection",
+    "paper-half-shape.variant.facebook.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: composition: unknown",
+    "paper-half-shape.variant.facebook.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: nativeUI: unknown",
+    "paper-half-shape.variant.facebook.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: captions: unknown",
+    "paper-half-shape.variant.facebook.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: crop: unknown",
+    "paper-half-shape.variant.facebook.v1/cover.media.1b29a3ee4dd867a03c998501c2ce1c6e1366970ec29486ac93e020792064a55f: No exact-media real-device evidence"
+  ],
+  "uniqueVideoPayloads": 1,
+  "evidence": {
+    "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+    "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+  },
+  "targetSha256": "2c70847845e99dcda647dd57df9d0b72fb5fd24e8d9b861f2a4b75d11ec1c1d9",
+  "decision": "Review copy, covers, exact files and scoped presentation uncertainties. Approve owner manual release or request revision. No upload/scheduling/publication is performed by this system."
+}

@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-10-02T17:20:42.301Z",
+  "cycleId": "cycle.4",
+  "revision": 8,
+  "stage": "publication-review",
+  "sourceMasterCommit": "191c6b875e311b7c9c3e53096ed96aa0ec57d812",
+  "release": {
+    "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+    "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+  },
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-4/master-owner-decision-v1.json",
+    "sha256": "1b0ff24bd2ab0d7960330648fec0a6fa7df3c42e929dbf745b3a6a87125041bf"
+  },
+  "publicationDecision": null,
+  "checks": {
+    "pnpmCheck": {
+      "passed": true,
+      "testFiles": 45,
+      "tests": 440,
+      "typecheck": "passed",
+      "lint": "passed",
+      "diffCheck": "passed"
+    },
+    "pnpmArtifactsDurable": {
+      "passed": true,
+      "canonicalPayloads": 395,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442,
+      "legacyDurableArtifactCount": 731,
+      "knownHistoricalMissing": "Wood Frog original; unchanged closed recovery expectation"
+    },
+    "cycleJournalReplay": "passed",
+    "exactReleaseInspection": "passed",
+    "currentRiskRegister": "matched; 52 exact presentation uncertainties",
+    "previousMediaIdentitiesPreserved": 394,
+    "masterUnchanged": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+    "newCover": {
+      "path": "artifacts/covers/paper-half-shape-cover-v1.png",
+      "sha256": "f5f6192ce3b7b306136b7c02b6dd2d29b7e5a92165d18c2ff83449e9a0277594",
+      "bytes": 76109,
+      "actualRender": "passed",
+      "fontAndFourRegionBounds": "passed",
+      "actualImageVisualInspection": "passed",
+      "gitIndexBlobIdentity": "matched"
+    },
+    "knownCollisions": 0,
+    "newVideoPayloads": 0,
+    "newCoverPayloads": 1
+  },
+  "initialValidationFailure": {
+    "reason": "New canonical cover had not yet been Git staged; durability assertion correctly rejected untracked payload.",
+    "resolution": "Staged exact cover and reran pnpm check successfully; no test weakening or byte change."
+  },
+  "externalActionsPerformed": [],
+  "realDeviceEvidence": false,
+  "publicationEvidence": null,
+  "remoteBackupClaim": false
+}

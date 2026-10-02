@@ -1,0 +1,37 @@
+{
+  "cycleId": "cycle.4",
+  "inspectedAt": "2026-10-02T17:15:09.458Z",
+  "master": {
+    "id": "media.93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7",
+    "sha256": "93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7"
+  },
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-4/master-owner-decision-v1.json",
+    "sha256": "1b0ff24bd2ab0d7960330648fec0a6fa7df3c42e929dbf745b3a6a87125041bf"
+  },
+  "policyInspection": {
+    "path": "content-intelligence/cycles/cycle-4/publication/policy-inspection-v1.json",
+    "sha256": "4d28259f51bd5a8f40f44a3f3de222739b55883d5f8255fd014c8db472134a00"
+  },
+  "scope": "Local exact-media review only",
+  "strategy": {
+    "youtube": "Exact master plus centered original custom cover when the verified-account desktop control is available.",
+    "tiktok": "Exact master; choose the terminal payoff frame in the native selector if available; existing decoded PNG is the cover reference.",
+    "instagram": "Exact master plus centered dedicated original cover for grid framing; live cover upload and crop remain unverified.",
+    "facebook": "Exact master; terminal payoff frame reference. Dedicated viewer and Page/feed are distinct; no measured Page/feed collision or geometry available."
+  },
+  "derivatives": {
+    "created": 0,
+    "reason": "All existing exact-master playback samples clear provisional insets. No known collision justifies a derivative. Unknown native geometry is disclosed for owner review."
+  },
+  "additionalUncertainties": [
+    "YouTube: desktop/search/channel thumbnail behavior and account custom-cover eligibility untested.",
+    "TikTok: native cover selector, cropped profile/search frame and exact selected-frame identity untested.",
+    "Instagram: dedicated cover upload availability, profile/grid/feed crop and persistence untested.",
+    "Facebook: Page/feed playback crop/obstruction and native cover selection untested.",
+    "All destinations: platform processing, live settings, native-caption duplication and synthetic-audio labeling untested."
+  ],
+  "factualCopyReview": "All copy uses only the six selected claims; preserves ideal-model/rounded physical-size caveat and length-versus-area distinction.",
+  "externalActionsPerformed": [],
+  "publicationAuthorized": false
+}
