@@ -1,0 +1,139 @@
+{
+  "gate": "PUBLICATION REVIEW / AUTHORIZATION",
+  "cycleId": "cycle.5",
+  "platforms": [
+    {
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/chladni-sand-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-5/publication/youtube/manifest-v1.json",
+        "sha256": "d93758246f697820371e743a2afa101f8c7890a1b11f7acf5690fc98550ef3e2"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/youtube.json",
+        "sha256": "7f1e93bf84acad0b40fabad688342bc8f9fd2d1a5c7d81ebeecbb6bc8dfde6e0"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/youtube.json",
+        "sha256": "fdafe3d9a9c1f273f8e5d6ba556b59515cee1e419f097658feefcf57c71c915d"
+      }
+    },
+    {
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/chladni-sand-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-5/publication/tiktok/manifest-v1.json",
+        "sha256": "a387ca91182bce8f9acb0133706932d4ec8fe41aa2089bc28ca6f19ef549be3f"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/tiktok.json",
+        "sha256": "388f5cd068a8a1798e6225439405f4761ede6b63680fc301817b4ce211220416"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/tiktok.json",
+        "sha256": "264b0169ba339538578e2f2e1ab04d11806e5ab6bee289e037f0e6bddf77387f"
+      }
+    },
+    {
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/chladni-sand-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-5/publication/instagram/manifest-v1.json",
+        "sha256": "0685bb8b15b490bb21d7ea280f6ac830c192b55e63460816341396c0a194bc20"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/instagram.json",
+        "sha256": "506dcee6c872f8005572c31198f02a64f7ef692fea84673398a2406961b4525e"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/instagram.json",
+        "sha256": "169164ab100ecc4914c21dcbcd0a667b1974645bbbfb81ac033f65f24dbff458"
+      }
+    },
+    {
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/chladni-sand-candidate-v1.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-5/publication/facebook/manifest-v1.json",
+        "sha256": "a8f030588075a709ad29885e1687f6432484abcc13a99cde430a06eadd60e6ed"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-5/preflight/facebook.json",
+        "sha256": "d8fddb8b8887023b0fb83da3529f71528a38b8c7de166b1193dfbecb0264d198"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-5/profiles/facebook.json",
+        "sha256": "cc4723eac1949d3f09719371101a61fe84a14cc35a6bda087e4f9c4c32218ef6"
+      }
+    }
+  ],
+  "presentationUncertainties": [
+    "chladni-sand.variant.youtube.v1: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.youtube.v1: composition: provisional",
+    "chladni-sand.variant.youtube.v1: nativeUI: unknown",
+    "chladni-sand.variant.youtube.v1: captions: unknown",
+    "chladni-sand.variant.youtube.v1: crop: unknown",
+    "chladni-sand.variant.youtube.v1: Unsampled timeline motion not proven",
+    "chladni-sand.variant.youtube.v1: No exact-media real-device evidence",
+    "chladni-sand.variant.youtube.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.youtube.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: composition: unknown",
+    "chladni-sand.variant.youtube.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: nativeUI: unknown",
+    "chladni-sand.variant.youtube.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: captions: unknown",
+    "chladni-sand.variant.youtube.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: crop: unknown",
+    "chladni-sand.variant.youtube.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: No exact-media real-device evidence",
+    "chladni-sand.variant.tiktok.v1: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.tiktok.v1: composition: provisional",
+    "chladni-sand.variant.tiktok.v1: nativeUI: unknown",
+    "chladni-sand.variant.tiktok.v1: captions: unknown",
+    "chladni-sand.variant.tiktok.v1: crop: unknown",
+    "chladni-sand.variant.tiktok.v1: Unsampled timeline motion not proven",
+    "chladni-sand.variant.tiktok.v1: No exact-media real-device evidence",
+    "chladni-sand.variant.tiktok.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.tiktok.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: composition: unknown",
+    "chladni-sand.variant.tiktok.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: nativeUI: unknown",
+    "chladni-sand.variant.tiktok.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: captions: unknown",
+    "chladni-sand.variant.tiktok.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: crop: unknown",
+    "chladni-sand.variant.tiktok.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: No exact-media real-device evidence",
+    "chladni-sand.variant.instagram.v1: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.instagram.v1: composition: provisional",
+    "chladni-sand.variant.instagram.v1: nativeUI: unknown",
+    "chladni-sand.variant.instagram.v1: captions: unknown",
+    "chladni-sand.variant.instagram.v1: crop: unknown",
+    "chladni-sand.variant.instagram.v1: Unsampled timeline motion not proven",
+    "chladni-sand.variant.instagram.v1: No exact-media real-device evidence",
+    "chladni-sand.variant.instagram.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.instagram.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: composition: unknown",
+    "chladni-sand.variant.instagram.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: nativeUI: unknown",
+    "chladni-sand.variant.instagram.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: captions: unknown",
+    "chladni-sand.variant.instagram.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: crop: unknown",
+    "chladni-sand.variant.instagram.v1/cover.media.183d4c7c9bd15fbd575114800a02e11ec87f5995ae8e036ab2d59205bcc3b17c: No exact-media real-device evidence",
+    "chladni-sand.variant.facebook.v1: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.facebook.v1: composition: provisional",
+    "chladni-sand.variant.facebook.v1: nativeUI: unknown",
+    "chladni-sand.variant.facebook.v1: captions: unknown",
+    "chladni-sand.variant.facebook.v1: crop: unknown",
+    "chladni-sand.variant.facebook.v1: Unsampled timeline motion not proven",
+    "chladni-sand.variant.facebook.v1: No exact-media real-device evidence",
+    "chladni-sand.variant.facebook.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: Profile is superseded or due for renewed inspection",
+    "chladni-sand.variant.facebook.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: composition: unknown",
+    "chladni-sand.variant.facebook.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: nativeUI: unknown",
+    "chladni-sand.variant.facebook.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: captions: unknown",
+    "chladni-sand.variant.facebook.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: crop: unknown",
+    "chladni-sand.variant.facebook.v1/cover.media.c7b7f04c724991e38ed6994c362d6c8fb6d677c9e5a5120fb06211bc67867832: No exact-media real-device evidence"
+  ],
+  "uniqueVideoPayloads": 1,
+  "evidence": {
+    "path": "content-intelligence/cycles/cycle-5/publication/release-v1.json",
+    "sha256": "829f2c797177190b6b06bb824398b8005c7d9cf8bd8cf924d05f5a88e40d5412"
+  },
+  "targetSha256": "ee04a7cf9fe00d2df7ff047f117c496de06a2c5ce05b0be649e51b36bafc125f",
+  "decision": "Review copy, covers, exact files and scoped presentation uncertainties. Approve owner manual release or request revision. No upload/scheduling/publication is performed by this system."
+}

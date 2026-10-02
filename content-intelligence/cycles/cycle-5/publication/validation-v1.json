@@ -1,0 +1,52 @@
+{
+  "recordedAt": "2026-10-02T22:28:57.062745+00:00",
+  "cycleId": "cycle.5",
+  "stage": "publication-review",
+  "revision": 8,
+  "passed": true,
+  "checks": {
+    "pnpm check": {
+      "passed": true,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 48,
+      "tests": 461
+    },
+    "pnpm artifacts:durable": {
+      "passed": true,
+      "canonicalPayloads": 422,
+      "durableArtifactCount": 731,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "exactReleaseAndOwnerMasterBinding": "passed; readiness-validation-v1.json",
+    "coverFontAndLayout": "passed, 4 measured critical elements",
+    "visualInspection": "dedicated PNG and existing settled-pattern frame inspected",
+    "approvedMasterRerenderedOrReencoded": false,
+    "knownCollisions": []
+  },
+  "historicalPreservation": {
+    "all421PriorCanonicalEntriesUnchanged": true,
+    "Cycle4Unchanged": true,
+    "masterProductionBindingsExact": true
+  },
+  "newCanonicalBytes": 527212,
+  "newCanonicalPayloads": 1,
+  "mediaDuplicatesCreated": false,
+  "resolvedEarlierFindings": [
+    "New canonical cover and provenance must be Git tracked; staged before final durable check.",
+    "Convergence fixtures froze a later clock time than the newly approved Cycle 5; synthetic fixtures now bind the actual earlier portfolio checkpoint, while the current gate test proves Cycle 5 joins the latest approved set.",
+    "Existing Chocolate test intermittently exceeded its default timeout; complete final check passes without changing timeout or production validators.",
+    "TikTok editing/posting access-note correction is preserved separately in policy-inspection-addendum-v1.json."
+  ],
+  "presentationUnknowns": 52,
+  "ownerAcceptedPresentationRisk": false,
+  "publicationAuthorized": false,
+  "externalPlatformActions": [],
+  "retention": "All exact approval, presentation, copy and canonical cover files are retained on the local content branch. No remote upload/push is performed under the current no-upload instruction. Separate local Git archive receipt follows; approved media retrieval requires no rendering.",
+  "limitations": [
+    "All native platform/account settings and media processing remain untested.",
+    "Current profiles are due for renewal; provisional/unknown geometry and sampled coverage are itemized.",
+    "No exact-media real-device pass, crop guarantee or subjective platform-preview approval.",
+    "GitHub remote continuity not verified for Cycle 5; no remote push occurred."
+  ]
+}

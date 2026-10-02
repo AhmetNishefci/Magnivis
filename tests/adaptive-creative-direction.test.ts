@@ -27,7 +27,7 @@ const makeDirection=()=>creativeDirectionSchema.parse({
  creativeThesis:'Test fixture only; no historical redesign.',viewerExperience:'Understand a scoped mechanism.',emotionalTarget:'Curiosity resolved.',visualThesis:'Explain relationships through intentional motion.',
  decisions:['visual-medium','art-direction','narration','captions','sound','pacing','hook','platform-presentation'].map(d=>({dimension:d,treatment:`Authored ${d} treatment`,rationale:'Selected for the explanation, rather than inheritance.'})),
  convergenceReview:convergenceFixture(),
- ownerReview:{required:false,rationale:'Fixture decisions stay within existing editorial truth.'},risks:['Fixture only.'],provenance:{method:'manual-editorial',enteredAt:'2026-10-03T00:00:00Z',notes:'Synthetic unit-test input, not an owner decision or produced asset.'},platformApprovalGranted:false,publicationApprovalGranted:false,
+ ownerReview:{required:false,rationale:'Fixture decisions stay within existing editorial truth.'},risks:['Fixture only.'],provenance:{method:'manual-editorial',enteredAt:'2026-10-02T20:00:00Z',notes:'Synthetic unit-test input, not an owner decision or produced asset.'},platformApprovalGranted:false,publicationApprovalGranted:false,
 });
 const futurePlan=(direction=makeDirection())=>({...woodFrogProductionPlan,id:'production-plan.future-test.v1',executionPolicy:defaultExecutionPolicy(),status:'planned',visualApproval:undefined,creativeDirection:ref(direction),assets:woodFrogProductionPlan.assets.map(a=>({...a,provenance:{...a.provenance,evidence:'Fixture rights evidence'}}))});
 
