@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-03T17:38:42.769089+00:00",
+  "passed": true,
+  "verifiedPayloadCommit": "e572eedab68f330439df2fc108396890bc3bf83e",
+  "remote": "https://github.com/AhmetNishefci/Magnivis.git",
+  "destinationVerification": "Live GitHub authenticated identity matches repository owner; viewer permission ADMIN; historical durability receipts identify same repository. No credentials retained.",
+  "push": "Fast-forward from0317ff0; source/artifacts and append-only Cycle7 history synchronized",
+  "restore": {
+    "method": "Fresh GitHub clone --reference local Git cache --dissociate; independent object store, no alternates. Existing payloads reused by hash, not downloaded again.",
+    "dependencyMethod": "Pinned node_modules reused through temporary symlink; removed after verification; no fresh installation claimed.",
+    "supersededAttempt": "Slow direct shallow download canceled; not counted as successful verification.",
+    "workingTreeClean": true,
+    "workflowReplay": {
+      "state": "authorized",
+      "revision": 25,
+      "schedulingObservations": 4,
+      "publicationObservations": 0
+    },
+    "durability": {
+      "passed": true,
+      "canonicalMedia": {
+        "passed": true,
+        "canonicalPayloads": 699,
+        "explicitExceptions": 0,
+        "frozenLegacyBinaryPaths": 442
+      },
+      "durableArtifactCount": 731,
+      "historicalMissingExpectations": [
+        {
+          "artifactId": "wood-frog.historical-master",
+          "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+        }
+      ]
+    },
+    "exactEvidenceHashes": [
+      {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/validation-summary-v1.json",
+        "sha256": "3598ae4c613818990a41be2bcd0f3d294634fc5c6fa43b35948a74a60b371594"
+      },
+      {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/tiktok.json",
+        "sha256": "73f91b0c5c62ff0dbbc6fb1b049acd408bfc7c8b40ed8b72446e52c015701773"
+      },
+      {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/instagram.json",
+        "sha256": "278f9ea4aa7295bdfa893550982b3b6692b97165f56be001a5f10f3c25b5677e"
+      },
+      {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/youtube.json",
+        "sha256": "b8d58991933d9564f96020091610612e4ced723152cfb83cf48cde2f23e83869"
+      },
+      {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/integrity-validation-v1.json",
+        "sha256": "0051704618a3a9edc03e904a620e2718e561397ce08f01d5c7a1609312bcb8eb"
+      },
+      {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/facebook.json",
+        "sha256": "51090ce872d7e26ed0a9c34fda87bf06baa2182117f6fbbed47d54cec35b483b"
+      },
+      {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/owner-report.json",
+        "sha256": "8f1e2dcbb9f48f4a0978bc11a453a471af157ab10a5278bcbd6f689bc5bfbbba"
+      },
+      {
+        "path": "workflow/cycles/cycle.7/state.json",
+        "sha256": "cf9b06be723c3d5a97c5184deb42f13a4f705b44a104bee7692a55beeb0aa659"
+      }
+    ]
+  },
+  "scheduling": "owner-reported only",
+  "actualSchedulingTime": null,
+  "scheduledDateTimeTimezone": null,
+  "actualPublication": null,
+  "analytics": null,
+  "approvedMediaPackageUnchanged": true,
+  "externalMediaPlatformActions": [],
+  "calibrationOrPremiseReviewChanges": false,
+  "cycle8Started": false
+}
