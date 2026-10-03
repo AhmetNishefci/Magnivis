@@ -1,0 +1,328 @@
+{
+  "id": "interaction-free.asset.dark-detector",
+  "revision": 1,
+  "knowledgePackageId": "interaction-free",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand how an obstacle changes an interference outcome without absorbing the detected photon, while recognizing unsuccessful trials.",
+  "storyAngle": "The clue is an outcome made possible by a blocked path.",
+  "hookId": "interaction-free.hook.no-exchange",
+  "selectedClaimIds": [
+    "interaction-free.claim.detect",
+    "interaction-free.claim.paths",
+    "interaction-free.claim.dark",
+    "interaction-free.claim.cancel",
+    "interaction-free.claim.absorber",
+    "interaction-free.claim.click",
+    "interaction-free.claim.fail",
+    "interaction-free.claim.demo"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 45,
+    "maximum": 85
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "interaction-free.asset.dark-detector.script.1",
+        "type": "factual",
+        "text": "How can light reveal an obstacle without being absorbed or reflected by it?",
+        "claimIds": [
+          "interaction-free.claim.detect"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.2",
+        "type": "factual",
+        "text": "Send one photon into an interferometer: two possible paths, joined again.",
+        "claimIds": [
+          "interaction-free.claim.paths"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.3",
+        "type": "factual",
+        "text": "With both paths open and the device correctly aligned, interference keeps one detector dark.",
+        "claimIds": [
+          "interaction-free.claim.dark"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.4",
+        "type": "factual",
+        "text": "The waves associated with the two paths cancel at that output.",
+        "claimIds": [
+          "interaction-free.claim.cancel"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.5",
+        "type": "factual",
+        "text": "Now put a light-absorbing object in one path. If it absorbs the photon, neither output detector clicks.",
+        "claimIds": [
+          "interaction-free.claim.absorber"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.6",
+        "type": "factual",
+        "text": "But sometimes the formerly dark detector clicks instead.",
+        "claimIds": [
+          "interaction-free.claim.click"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.7",
+        "type": "factual",
+        "text": "That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation.",
+        "claimIds": [
+          "interaction-free.claim.detect",
+          "interaction-free.claim.click",
+          "interaction-free.claim.cancel"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.8",
+        "type": "factual",
+        "text": "The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test.",
+        "claimIds": [
+          "interaction-free.claim.detect",
+          "interaction-free.claim.fail"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.script.9",
+        "type": "factual",
+        "text": "Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+        "claimIds": [
+          "interaction-free.claim.demo",
+          "interaction-free.claim.click"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "interaction-free.asset.dark-detector.beat.1",
+      "label": "puzzle",
+      "purpose": "Present the operational puzzle: obstacle absorption excluded in the detected outcome.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.1"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.2",
+      "label": "paths",
+      "purpose": "Establish one photon and two coherent alternatives, not split photon energy.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.2"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.3",
+      "label": "baseline",
+      "purpose": "Set up dark detector baseline in ideal aligned model.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.3"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.4",
+      "label": "cancel",
+      "purpose": "Show opposed amplitude contributions at the output.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.4"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.5",
+      "label": "absorbed-trial",
+      "purpose": "Show absorber and separately labeled absorbed trial.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.5"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.6",
+      "label": "successful-trial",
+      "purpose": "Return to a successful dark-output trial, conditional not universal.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.6"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.7",
+      "label": "reason",
+      "purpose": "Connect detected photon to absence of absorption, and blocked-path loss of cancellation.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.7"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.8",
+      "label": "failed-trials",
+      "purpose": "Show all three ideal-model outcomes; retain risk and inconclusive trial.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.8"
+      ]
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.beat.9",
+      "label": "payoff",
+      "purpose": "Return to the successful outcome and name experimentally demonstrated effect.",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.9"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "interaction-free.asset.dark-detector.visual.1",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.1",
+      "objective": "Present the operational puzzle: obstacle absorption excluded in the detected outcome.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.1"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.2",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.2",
+      "objective": "Establish one photon and two coherent alternatives, not split photon energy.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.2"
+      ],
+      "claimIds": [
+        "interaction-free.claim.paths"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.3",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.3",
+      "objective": "Set up dark detector baseline in ideal aligned model.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.3"
+      ],
+      "claimIds": [
+        "interaction-free.claim.dark"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.4",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.4",
+      "objective": "Show opposed amplitude contributions at the output.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.4"
+      ],
+      "claimIds": [
+        "interaction-free.claim.cancel"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.5",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.5",
+      "objective": "Show absorber and separately labeled absorbed trial.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.5"
+      ],
+      "claimIds": [
+        "interaction-free.claim.absorber"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.6",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.6",
+      "objective": "Return to a successful dark-output trial, conditional not universal.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.6"
+      ],
+      "claimIds": [
+        "interaction-free.claim.click"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.7",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.7",
+      "objective": "Connect detected photon to absence of absorption, and blocked-path loss of cancellation.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.7"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.click",
+        "interaction-free.claim.cancel"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.8",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.8",
+      "objective": "Show all three ideal-model outcomes; retain risk and inconclusive trial.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.8"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.fail"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    },
+    {
+      "id": "interaction-free.asset.dark-detector.visual.9",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.9",
+      "objective": "Return to the successful outcome and name experimentally demonstrated effect.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.9"
+      ],
+      "claimIds": [
+        "interaction-free.claim.demo",
+        "interaction-free.claim.click"
+      ],
+      "notes": "One coherent instrument; curves are path amplitudes, not half-photon energies. Absorbed and successful trials explicitly separated; no pictured photon hits absorber then reaches detector."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Primary Kokoro af_heart, curious calm explanation, whole semantic sentences; no mystery whisper or mystical quantum tone.",
+    "pronunciationNotes": [
+      "Interferometer; interaction-free."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.7",
+      "reviewSha256": "e78ef98908b256128985df19e19046f8b1b4f4ec48921857da364ab12eac3104"
+    },
+    "approvedAt": "2026-10-03",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

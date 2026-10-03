@@ -395,3 +395,7 @@ Last updated: 2026-09-29
 ## Human gates
 
 Human approval remains mandatory before any platform upload/publication, paid API usage, questionable-license asset, major infrastructure expansion, or irreversible external action.
+
+## 2026-10-03 — Cycle #7 premise rejection and replacement discovery
+
+Ahmet rejected the exact Sealed Scroll master premise at Master Review. The rejection concerns intrinsic pull and foreseeable scanning/reconstruction resolution, not execution or a subject/domain ban. The secondary recurring light-canvas/diagram observation is retained without color rotation or a light-treatment ban. Existing immutable rejection/retry transitions returned the same cycle to discovery; no Cycle #8, external platform action or historical artifact change. The new bounded three-round session preserved an insufficient first pool and a deepened second comparison across ten leads. Interaction-free single-photon detection independently passed the internal joint pull/payoff threshold, with viral placental fusion and adult wrasse sex change retained as serious alternatives, and shrimp/river freshly reconsidered without queue preference. Internal verification scopes the ideal apparatus and successful trials; metaphysical zero-interaction wording is excluded. Evidence and next checkpoint: `content-intelligence/cycles/cycle-7/revision-2/`; independent journal owns current state.

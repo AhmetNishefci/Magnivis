@@ -1,0 +1,284 @@
+{
+  "id": "interaction-free",
+  "revision": 1,
+  "topic": "Single-photon interaction-free detection",
+  "centralQuestion": "How can light reveal an obstacle without being absorbed or reflected by it?",
+  "taxonomy": {
+    "pillar": "science-reality",
+    "domains": [
+      "quantum-optics"
+    ],
+    "topics": [
+      "interference",
+      "interaction-free-measurement"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "In an ideal aligned interferometer, an absorbing obstacle changes interference and allows a previously dark detector to click without absorbing that detected photon; other trials can fail.",
+  "viewerPayoff": "Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+  "sources": [
+    {
+      "id": "source.interaction-free.ev1993",
+      "organization": "Elitzur and Vaidman / Tel Aviv University; Foundations of Physics",
+      "title": "Quantum Mechanical Interaction-Free Measurements (1993)",
+      "sourceType": "peer-reviewed",
+      "url": "https://arxiv.org/pdf/hep-th/9305002",
+      "retrieved": "2026-10-03",
+      "notes": "Theory and ideal apparatus; real alignment, leakage and detector noise matter. No preferred path or interpretation asserted. No general zero disturbance claim."
+    },
+    {
+      "id": "source.interaction-free.kwiat1996",
+      "organization": "Kwiat, Weinfurter and Zeilinger / Scientific American; author-hosted Illinois copy",
+      "title": "Quantum Seeing in the Dark (November 1996)",
+      "sourceType": "primary-source",
+      "url": "https://research.physics.illinois.edu/QI/Photonics/papers/My%20Collection.Data/PDF/Quantum%20Seeing%20in%20the%20Dark.pdf",
+      "retrieved": "2026-10-03",
+      "notes": "Participant explanation, not independent replication or raw data review. Production uses an ideal Mach-Zehnder absorbing-obstacle model, not a replica of their Michelson mirror experiment. 1995 PRL researcher PDF was image-only: fetched and attempted text extraction, but body not inspected; not used as verified evidence."
+    }
+  ],
+  "claims": [
+    {
+      "id": "interaction-free.claim.detect",
+      "statement": "In an ideal aligned single-photon interferometer, a successful dark-output click can reveal an opaque obstacle without that photon being absorbed or scattered by it.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "Operational successful-trial statement; no metaphysical zero interaction or guarantee."
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "notes": "Operational successful-trial statement; no metaphysical zero interaction or guarantee."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Operational successful-trial statement; no metaphysical zero interaction or guarantee."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.paths",
+      "statement": "A balanced interferometer offers two possible paths that recombine.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "Path wave amplitudes, not two half photons or classical definite trajectories."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Path wave amplitudes, not two half photons or classical definite trajectories."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.dark",
+      "statement": "With both arms unobstructed and correct alignment, destructive interference makes one output dark in the ideal model.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "Real leakage and detector noise prevent absolute experimental certainty."
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "notes": "Real leakage and detector noise prevent absolute experimental certainty."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Real leakage and detector noise prevent absolute experimental certainty."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.cancel",
+      "statement": "The amplitudes associated with the two arms cancel at that output.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "Schematic waves represent probability amplitudes, not visible light or destroyed photon energy."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Schematic waves represent probability amplitudes, not visible light or destroyed photon energy."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.absorber",
+      "statement": "An object that absorbs the single photon prevents it reaching either output detector.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "One photon, ideal absorber and output detectors; not all detectors in actual heralding apparatus."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "One photon, ideal absorber and output detectors; not all detectors in actual heralding apparatus."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.click",
+      "statement": "Blocking one arm makes a formerly dark output possible in the ideal model.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "Sometimes, not every trial; no unqualified practical detector certainty."
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "notes": "Sometimes, not every trial; no unqualified practical detector certainty."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Sometimes, not every trial; no unqualified practical detector certainty."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.fail",
+      "statement": "Other trials result in photon absorption or inconclusive bright-output detection.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "This simple arrangement risks absorption; no universally harmless sensing claim."
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "notes": "This simple arrangement risks absorption; no universally harmless sensing claim."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "This simple arrangement risks absorption; no universally harmless sensing claim."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.demo",
+      "statement": "Researchers have experimentally demonstrated interaction-free measurement.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "notes": "Participant account describes different physical implementation; original research figures and raw data not inspected."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Participant account describes different physical implementation; original research figures and raw data not inspected."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "interaction-free.claim.metaphysics",
+      "statement": "Interaction-free measurement proves that nothing interacts anywhere in every interpretation.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "notes": "Unverified overreach explicitly excluded; source discusses interpretation dependence."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Unverified overreach explicitly excluded; source discusses interpretation dependence."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "interaction-free.caveat.model",
+      "statement": "Ideal apparatus schematic; curves are path amplitudes, not two photons or measured trajectories. Real noise/leakage and quantum interpretation limit unrestricted claims.",
+      "claimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.paths",
+        "interaction-free.claim.dark",
+        "interaction-free.claim.cancel",
+        "interaction-free.claim.absorber",
+        "interaction-free.claim.click",
+        "interaction-free.claim.fail",
+        "interaction-free.claim.demo"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "interaction-free.hook.no-exchange",
+      "archetype": "apparent-impossibility",
+      "text": "How can light reveal an obstacle without being absorbed or reflected by it?",
+      "viewerPromise": "Explain the successful outcome without reflected object light or absorption of the detected photon.",
+      "claimIds": [
+        "interaction-free.claim.detect"
+      ]
+    },
+    {
+      "id": "interaction-free.hook.dark",
+      "archetype": "forbidden-outcome",
+      "text": "An obstacle makes a previously dark detector click.",
+      "viewerPromise": "Explain why removing a path allows an output.",
+      "claimIds": [
+        "interaction-free.claim.dark",
+        "interaction-free.claim.click"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "interaction-free.narrative.outcome",
+      "title": "The detector that should stay dark",
+      "description": "Puzzle, open baseline, cancellation, absorber, successful click, reasoning and failed outcomes.",
+      "claimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.paths",
+        "interaction-free.claim.dark",
+        "interaction-free.claim.cancel",
+        "interaction-free.claim.absorber",
+        "interaction-free.claim.click",
+        "interaction-free.claim.fail",
+        "interaction-free.claim.demo"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "interaction-free.visual.instrument",
+      "title": "Keep the instrument fixed while the possibility changes",
+      "description": "Original optical apparatus with distinct trial states and amplitude inset; no fake measurement footage.",
+      "claimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.paths",
+        "interaction-free.claim.dark",
+        "interaction-free.claim.cancel",
+        "interaction-free.claim.absorber",
+        "interaction-free.claim.click",
+        "interaction-free.claim.fail",
+        "interaction-free.claim.demo"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "How does an interference dark port differ from a classical shadow?",
+    "Why does interaction-free not mean guaranteed harmless?"
+  ],
+  "followUpOpportunities": [
+    "A separately researched quantum-Zeno efficiency story."
+  ],
+  "editorialStatus": "review"
+}

@@ -1,0 +1,191 @@
+{
+  "cycleId": "cycle.7",
+  "enteredAt": "2026-10-03T15:35:11.046Z",
+  "round": 1,
+  "method": "Session-assisted web discovery; original bodies/PDF author account inspected, no model/provider run.",
+  "queries": [
+    "interaction-free original theory/experiment",
+    "negative absolute temperature NIST",
+    "vampire bat non-kin food sharing Smithsonian",
+    "Apollo12 lightning SCE AUX NASA",
+    "syncytin human placenta original paper",
+    "socially cued wrasse sex change",
+    "rubber hand illusion ownership drift",
+    "Lake Nyos USGS original report"
+  ],
+  "leads": [
+    {
+      "id": "interaction-free",
+      "subject": "Interaction-free measurement",
+      "domains": [
+        "quantum-optics"
+      ],
+      "premise": "How can light reveal an obstacle without being absorbed or reflected by it?",
+      "pull": "Ordinary seeing depends on exchanged light. Excluding both absorption and reflection leaves an apparent physical impossibility, even without spectacle or the word quantum.",
+      "payoff": "Two possible paths cancel a detector outcome; blocking one makes a previously dark outcome possible. A detected single photon cannot also have been absorbed. Failed trials matter.",
+      "comparison": "Strong independent pull and a non-obvious causal payoff. Not a generic remote sensor. Honest scope needs successful trials and an aligned ideal apparatus; wave amplitudes are not two half photons.",
+      "url": "https://arxiv.org/pdf/hep-th/9305002",
+      "access": "Original theory body sections 1–2 inspected; author experimental account acquired for deeper review.",
+      "sufficient": true,
+      "disposition": "eligible"
+    },
+    {
+      "id": "viral-placenta",
+      "subject": "A viral fusion tool recruited by placental cells",
+      "domains": [
+        "evolution",
+        "human-biology"
+      ],
+      "premise": "Why do human placental cells use a protein descended from a virus?",
+      "pull": "A disease-associated invader contributes a tool to reproduction: a causal reversal connected to the viewer’s own origin.",
+      "payoff": "Co-option of envelope-mediated membrane fusion into trophoblast fusion; evolution can reuse a tool independently of its original role.",
+      "comparison": "Serious independent rival. Strong pre-answer tension and evolutionary payoff; avoid whole-placenta-from-one-virus or humans-could-not-exist certainty. Additional full-body evidence needed before development.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10693809/",
+      "access": "Primary abstract inspected; PMC body blocked by recaptcha; no human knockout inference.",
+      "sufficient": true,
+      "disposition": "hold"
+    },
+    {
+      "id": "wrasse-change",
+      "subject": "Socially cued adult bluehead wrasse sex change",
+      "domains": [
+        "marine-biology",
+        "development"
+      ],
+      "premise": "How can removing one male lead an adult female fish to develop functioning testes?",
+      "pull": "An adult body reorganizing its reproductive organs in response to a social change challenges a familiar fixed-development assumption.",
+      "payoff": "Social cue, behavior changes preceding gonadal restructuring; changing gene regulation, not changing DNA sequence.",
+      "comparison": "Strong rival with actual organism stakes; exact stress-trigger mechanism remains suggested, not established. Biological transformation can carry a real payoff without human gender analogies.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31309157/",
+      "access": "Primary abstract and figure captions inspected; full PMC body recaptcha; species and hormone inference caveats retained.",
+      "sufficient": true,
+      "disposition": "hold"
+    },
+    {
+      "id": "rubber-hand",
+      "subject": "Rubber hand ownership illusion",
+      "domains": [
+        "perception",
+        "psychology"
+      ],
+      "premise": "Why can a rubber hand feel like it belongs to your body?",
+      "pull": "Body ownership feels direct; coordinated visual and tactile input can change reported ownership.",
+      "payoff": "Multisensory inference, and separation between reported ownership and hand-location drift.",
+      "comparison": "Potentially strong but familiar illusion framing can invite a quick trick answer. Must establish subject variability and distinguish measures; current body access incomplete.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3125296/",
+      "access": "Search lead only; body access failed. Candidate hypothesis, not verified claim.",
+      "sufficient": false,
+      "disposition": "hold"
+    },
+    {
+      "id": "nyos-gas",
+      "subject": "Lake Nyos gas release",
+      "domains": [
+        "geology",
+        "real-events"
+      ],
+      "premise": "How did a lake kill people nearby without drowning them?",
+      "pull": "Ordinary lake safety assumptions fail with consequential real events.",
+      "payoff": "Dissolved gas retained under pressure then release and low-lying exposure; triggering details need honest uncertainty.",
+      "comparison": "Potentially strong event-led opportunity; severe tragedy requires careful human treatment and original report review. Do not choose simply for alarming stakes.",
+      "url": "https://www.usgs.gov/publications/21-august-1986-lake-nyos-gas-disaster-cameroon-final-report-united-states-scientific",
+      "access": "USGS report identity inspected, no report body yet; numerical deaths and trigger not verified here.",
+      "sufficient": true,
+      "disposition": "hold"
+    },
+    {
+      "id": "apollo-aux",
+      "subject": "Apollo 12 lightning and SCE AUX",
+      "domains": [
+        "space-history",
+        "decision-making"
+      ],
+      "premise": "How did one controller’s obscure switch recommendation help Apollo 12 continue after lightning?",
+      "pull": "A consequential decision under uncertainty invites reconstruction, with memorable concrete action.",
+      "payoff": "Recognizing telemetry conditioning failure versus actual spacecraft state and selecting low-voltage operation.",
+      "comparison": "Worth investigating but current plain premise can resolve as expert knew the right switch; stronger decision reconstruction needed. Not a declaration that history or event stories are weak.",
+      "url": "https://science.nasa.gov/resource/lightning-strikes-twice/",
+      "access": "NASA body inspected; original flight-journal route redirected, no dialogue or sole-cause mission claim.",
+      "sufficient": false,
+      "disposition": "hold"
+    },
+    {
+      "id": "negative-temperature",
+      "subject": "Negative absolute temperatures",
+      "domains": [
+        "thermodynamics"
+      ],
+      "premise": "How can a negative absolute temperature be hotter than a positive one?",
+      "pull": "A sign convention contradicts everyday thermometer expectations.",
+      "payoff": "Bounded energy states, entropy slope, population inversion and heat flow; not colder than absolute zero.",
+      "comparison": "Strong puzzle possibility; burden of redefining temperature risks semantic trivia without actual heat-flow understanding. Original experimental body needed.",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication300v2.pdf",
+      "access": "NIST historical publication search lead; full relevant section not inspected.",
+      "sufficient": false,
+      "disposition": "hold"
+    },
+    {
+      "id": "bat-sharing",
+      "subject": "Vampire bats sharing meals",
+      "domains": [
+        "animal-behavior"
+      ],
+      "premise": "Why would a vampire bat feed an unrelated hungry bat?",
+      "pull": "Costly helping among animals asks what maintains reciprocal social relationships.",
+      "payoff": "Repeated associations and social-network resilience beyond close kin.",
+      "comparison": "Worthwhile behavior story but the expected reciprocal-help answer is fairly foreseeable. Current search not enough to claim motives or human friendship equivalence.",
+      "url": "https://repository.si.edu/items/92b8ecb5-2a0f-4687-8bfd-9bef1398bcde/full",
+      "access": "Original paper identity/search lead; institutional release body returned404.",
+      "sufficient": false,
+      "disposition": "hold"
+    },
+    {
+      "id": "snapping-shrimp",
+      "subject": "Snapping shrimp cavitation",
+      "domains": [
+        "biology",
+        "fluid-dynamics"
+      ],
+      "premise": "Why is a shrimp’s loud snap produced after its claw has already closed?",
+      "pull": "The presumed source of a sound is displaced in time: what actually makes the snap?",
+      "payoff": "A rapid water jet reduces pressure, a bubble forms and collapses; high-speed imaging and sound synchronization discriminate causes.",
+      "comparison": "Fresh reassessment, no runner-up promotion. Independently good causal tension; plain honest scope less arresting than no-exchange detection. No hotter-than-the-Sun hook or invented timing.",
+      "url": "https://www.hawaii.edu/behavior/490E/Versluis%20et%20al.%202000.pdf",
+      "access": "Original body reacquired; OCR corrupts microsecond symbols, avoid timing claims from extracted units.",
+      "sufficient": true,
+      "disposition": "eligible"
+    },
+    {
+      "id": "river-piracy",
+      "subject": "2016 Kaskawulsh drainage capture",
+      "domains": [
+        "geography",
+        "glaciology"
+      ],
+      "premise": "How can a retreating glacier send a river’s water toward a different sea?",
+      "pull": "A large drainage destination changes when a seemingly fixed map boundary moves.",
+      "payoff": "Retreat opens a lower channel that reroutes glacier meltwater, changing which drainage basin receives it.",
+      "comparison": "Fresh reassessment, not replacement by default. Meaningful geographic model but the downhill-route resolution is relatively foreseeable once retreat is named. Potential future story, not a ban.",
+      "url": "https://science.nasa.gov/earth/earth-observatory/river-piracy-in-the-yukon-90116/",
+      "access": "NASA body freshly inspected; majority of meltwater rerouted, not entire river vanished.",
+      "sufficient": false,
+      "disposition": "eligible"
+    }
+  ],
+  "accessFailures": [
+    "PMC bodies recaptcha / rubber-hand PDF route error.",
+    "Smithsonian release404.",
+    "Old NASA Apollo flight journal path redirects to index.",
+    "1995 IFM PDF fetched image-only; native text extraction empty; not body-inspected or claim support."
+  ],
+  "sourceDiscipline": "Candidate ideas, hypotheses and editorial judgment separated from verification. Unselected leads require own evidence review; no raw data or missing body invented.",
+  "ownerFeedback": {
+    "path": "content-intelligence/cycles/cycle-7/revision-2/owner-feedback.json",
+    "sha256": "985b310c105215cfa0fa7853d354d1bfbc50dfb57173c18081cd97fb8a363769"
+  },
+  "previousCandidates": {
+    "path": "content-intelligence/cycles/cycle-7/topic-selection.json",
+    "sha256": "564ab6c7d69e9ec13470eae94ff9d3b07f5791712c84f68e2be9010b8db3dd37"
+  },
+  "scope": "Fresh open inquiry; original runner-ups reassessed alongside unfamiliar subjects. No example/domain preference, avoidance, novelty bonus or queue. No metrics invented."
+}

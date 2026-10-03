@@ -1,0 +1,20 @@
+{
+  "cycleId": "cycle.7",
+  "ownerDecision": {
+    "path": "content-intelligence/cycles/cycle-7/revision-2/sealed-scroll-owner-rejection-v1.json",
+    "sha256": "0382a5cf53df7289a15c23f17c224be070e3ed78e234c2f202c797e7044a7854"
+  },
+  "ownerFeedback": {
+    "path": "content-intelligence/cycles/cycle-7/revision-2/owner-feedback.json",
+    "sha256": "985b310c105215cfa0fa7853d354d1bfbc50dfb57173c18081cd97fb8a363769"
+  },
+  "reason": "Premise rejection. Existing owner-decision returns to production; retry-internal returns same cycle to discovery while retaining immutable historical receipts/events.",
+  "maximumRounds": 3,
+  "priorRecords": [],
+  "budgetBasis": "Owner explicitly authorizes replacement discovery. Three bounded replacement rounds; rejected completed selection is historical, not an unfinished pool eligible as priorRecords. Unfinished replacement pools consume this same total on resume.",
+  "priorRejectedSelection": {
+    "path": "content-intelligence/cycles/cycle-7/topic-selection.json",
+    "sha256": "564ab6c7d69e9ec13470eae94ff9d3b07f5791712c84f68e2be9010b8db3dd37"
+  },
+  "workflowAudit": "Existing V3 path sufficient; no schema/gate/engine change."
+}
