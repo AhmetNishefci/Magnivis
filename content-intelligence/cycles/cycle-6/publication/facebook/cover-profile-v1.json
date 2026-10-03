@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.heat.facebook.cover-v1",
+  "revision": 1,
+  "platform": "facebook",
+  "surface": "facebook-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-03T13:41:20.901Z",
+  "reviewAfter": "2026-10-03T13:41:20.901Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Full-canvas critical layout inspected; no platform-derived safe composition region measured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No native thumbnail overlay measurements.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static image; no platform caption/overlay measurements.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No native cover crop measurements; no invented geometry.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-6/publication/qa/selected-frame-cover-v1.json",
+        "sha256": "32c86dbfa812019c0a6c0425364180764e84d27144bc63265b38c76a536c2d47"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-6/publication/policy-inspection-v1.json",
+        "sha256": "a80ba1366a5dcd71bc689a9b711fdb90f4b7f2d04d4e55781a93194829542c03"
+      }
+    ],
+    "rationale": "Static local 1080×1920 PNG cover reference; actual native upload/selection capability is untested."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "gate": "PUBLICATION REVIEW / AUTHORIZATION",
+  "cycleId": "cycle.6",
+  "platforms": [
+    {
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/heat-barrier-cycle6-candidate-v4.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-6/publication/youtube/manifest-v1.json",
+        "sha256": "2686d916a32e2157f730dde61b1c0511a3cdc96cf06d73515443e40fb574462b"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/youtube.json",
+        "sha256": "10e2692cf3387276c3bf11d82cbfb26eca54f2e04d61a9a314b3a52c48f26ce2"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/youtube.json",
+        "sha256": "f0bcdea7d9e5883ac2b82ffc4c79c3ddf892a8bf6c4349c47a47aa6696c1a58d"
+      }
+    },
+    {
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/heat-barrier-cycle6-candidate-v4.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-6/publication/tiktok/manifest-v1.json",
+        "sha256": "2e54d62f006722664e43c1f608b8133bada254affa0d76ba0adc6451d5c3c2e4"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/tiktok.json",
+        "sha256": "d284f87d3aeee0e76b3426be4449c10d9f960e14a8e3b37f345290235bab3472"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/tiktok.json",
+        "sha256": "35c02fb9da7b384680a11d8b964cfec1ff54f6b4219906986cc25f5e31ec2d77"
+      }
+    },
+    {
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/heat-barrier-cycle6-candidate-v4.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-6/publication/instagram/manifest-v1.json",
+        "sha256": "c70c260ecd11cb77c03e545384c73ed88b60e4e66455f58f6b2527134da36790"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/instagram.json",
+        "sha256": "9d3b27d3f6e9b9c00239571d77854fe216a0888d6ab098eb13e79eb600ed1010"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/instagram.json",
+        "sha256": "13d3a3c7178ef28ef6ef9208f424152db0a85e5c546f49735ba60f60f4faa4ea"
+      }
+    },
+    {
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/heat-barrier-cycle6-candidate-v4.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-6/publication/facebook/manifest-v1.json",
+        "sha256": "b638fa5321c62b5987c1cfcce442a25fadd67bc4f98c1bd0cd6abc9915c4ac55"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/facebook.json",
+        "sha256": "1e222a24fdb11455e5d5930d7294e252b882cdbb04f0639073f4fb6dd5f3292c"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/facebook.json",
+        "sha256": "c1613d7ec12fcde4238be8dafa789c76bfda3ad7a66d1d5ad67bb5d64b8203a1"
+      }
+    }
+  ],
+  "presentationUncertainties": [
+    "heat-barrier.variant.youtube.v1: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.youtube.v1: composition: provisional",
+    "heat-barrier.variant.youtube.v1: nativeUI: unknown",
+    "heat-barrier.variant.youtube.v1: captions: unknown",
+    "heat-barrier.variant.youtube.v1: crop: unknown",
+    "heat-barrier.variant.youtube.v1: Unsampled timeline motion not proven",
+    "heat-barrier.variant.youtube.v1: No exact-media real-device evidence",
+    "heat-barrier.variant.youtube.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.youtube.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: composition: unknown",
+    "heat-barrier.variant.youtube.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: nativeUI: unknown",
+    "heat-barrier.variant.youtube.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: captions: unknown",
+    "heat-barrier.variant.youtube.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: crop: unknown",
+    "heat-barrier.variant.youtube.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: No exact-media real-device evidence",
+    "heat-barrier.variant.tiktok.v1: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.tiktok.v1: composition: provisional",
+    "heat-barrier.variant.tiktok.v1: nativeUI: unknown",
+    "heat-barrier.variant.tiktok.v1: captions: unknown",
+    "heat-barrier.variant.tiktok.v1: crop: unknown",
+    "heat-barrier.variant.tiktok.v1: Unsampled timeline motion not proven",
+    "heat-barrier.variant.tiktok.v1: No exact-media real-device evidence",
+    "heat-barrier.variant.tiktok.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.tiktok.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: composition: unknown",
+    "heat-barrier.variant.tiktok.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: nativeUI: unknown",
+    "heat-barrier.variant.tiktok.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: captions: unknown",
+    "heat-barrier.variant.tiktok.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: crop: unknown",
+    "heat-barrier.variant.tiktok.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: No exact-media real-device evidence",
+    "heat-barrier.variant.instagram.v1: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.instagram.v1: composition: provisional",
+    "heat-barrier.variant.instagram.v1: nativeUI: unknown",
+    "heat-barrier.variant.instagram.v1: captions: unknown",
+    "heat-barrier.variant.instagram.v1: crop: unknown",
+    "heat-barrier.variant.instagram.v1: Unsampled timeline motion not proven",
+    "heat-barrier.variant.instagram.v1: No exact-media real-device evidence",
+    "heat-barrier.variant.instagram.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.instagram.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: composition: unknown",
+    "heat-barrier.variant.instagram.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: nativeUI: unknown",
+    "heat-barrier.variant.instagram.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: captions: unknown",
+    "heat-barrier.variant.instagram.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: crop: unknown",
+    "heat-barrier.variant.instagram.v1/cover.media.5a4de17033673c43002885423e24186d616f143b5885b6ecab6f7482087447bc: No exact-media real-device evidence",
+    "heat-barrier.variant.facebook.v1: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.facebook.v1: composition: provisional",
+    "heat-barrier.variant.facebook.v1: nativeUI: unknown",
+    "heat-barrier.variant.facebook.v1: captions: unknown",
+    "heat-barrier.variant.facebook.v1: crop: unknown",
+    "heat-barrier.variant.facebook.v1: Unsampled timeline motion not proven",
+    "heat-barrier.variant.facebook.v1: No exact-media real-device evidence",
+    "heat-barrier.variant.facebook.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: Profile is superseded or due for renewed inspection",
+    "heat-barrier.variant.facebook.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: composition: unknown",
+    "heat-barrier.variant.facebook.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: nativeUI: unknown",
+    "heat-barrier.variant.facebook.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: captions: unknown",
+    "heat-barrier.variant.facebook.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: crop: unknown",
+    "heat-barrier.variant.facebook.v1/cover.media.0419bb9726241e1a59d56d2753b5a9c6b8f3a04fc1bb166b640d7e7462fb23cb: No exact-media real-device evidence"
+  ],
+  "uniqueVideoPayloads": 1,
+  "evidence": {
+    "path": "content-intelligence/cycles/cycle-6/publication/release-v1.json",
+    "sha256": "84401b8027fef4ec13fe825ab00a367e58367c072551a10222cafd8008c9105c"
+  },
+  "targetSha256": "528ed7e38fa23965307c6d172c5b2b9de28d58f48df1974a0d47c21c0832efa4",
+  "decision": "Review copy, covers, exact files and scoped presentation uncertainties. Approve owner manual release or request revision. No upload/scheduling/publication is performed by this system."
+}

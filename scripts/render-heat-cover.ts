@@ -1,0 +1,22 @@
+import {createRequire} from 'node:module';
+import {pathToFileURL} from 'node:url';
+import {existsSync,mkdirSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+const require=createRequire(import.meta.url);
+const dependency=async(name:string)=>{const m=await import(pathToFileURL(require.resolve(name,{paths:[require.resolve('@remotion/cli')]})).href);return m.default??m;};
+const {bundle}=await dependency('@remotion/bundler');
+const {renderStill,openBrowser}=await dependency('@remotion/renderer');
+const path='artifacts/covers/heat-barrier-cover-v1.png';
+if(existsSync(path))throw new Error('Cover is immutable; use a new revision');
+mkdirSync('artifacts/covers',{recursive:true});
+const serveUrl=await bundle({entryPoint:'src/heat-cover-index.tsx'});
+const browser=await openBrowser('chrome');
+type Rect={x:number;y:number;width:number;height:number;text:string};
+let observation:{fontsLoaded:boolean;bounds:Rect[]}|null=null;
+try{await renderStill({serveUrl,composition:{id:'Magnivis-Heat-Cover',width:1080,height:1920,fps:30,durationInFrames:1,props:{},defaultProps:{}},frame:0,output:path,puppeteerInstance:browser,onBrowserLog:(log:{text:string})=>{if(log.text.startsWith('HEAT_COVER_QA '))observation=JSON.parse(log.text.slice('HEAT_COVER_QA '.length));}});}finally{await browser.close({silent:true});}
+const measured=observation as {fontsLoaded:boolean;bounds:Rect[]}|null;
+if(!measured?.fontsLoaded||!measured.bounds.length)throw new Error('Missing actual cover measurements');
+const failures=measured.bounds.filter(b=>b.x<0||b.y<0||b.x+b.width>1080||b.y+b.height>1920);
+if(failures.length)throw new Error('Cover canvas overflow');
+writeFileSync('content-intelligence/cycles/cycle-6/publication/qa/cover-layout-v1.json',JSON.stringify({inspectedAt:new Date().toISOString(),mediaSha256:mediaHash(path),sourceSha256:mediaHash('src/heat-cover-index.tsx'),dimensions:{width:1080,height:1920},scope:'Actual static browser font/layout inspection; no native crop or device evidence.',passed:true,...measured},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({path,sha256:mediaHash(path),regions:measured.bounds.length}));
