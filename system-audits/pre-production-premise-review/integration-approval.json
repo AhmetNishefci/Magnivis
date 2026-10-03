@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "evidenceBasis": "explicit-owner-message",
+  "reviewer": "Ahmet",
+  "enteredAt": "2026-10-03T18:40:42.020988+00:00",
+  "suppliedReviewTime": null,
+  "instruction": "APPROVE \u2014 MAGNIVIS PRE-PRODUCTION PREMISE REVIEW WORKFLOW. Integrate the exact reviewed implementation into main using the safest history-preserving method permitted by repository state. Do not silently alter the reviewed implementation during integration. Minimal project-state/documentation reconciliation must be performed separately and reported explicitly. Do NOT start Cycle8, discover/propose a topic, generate production media, alter Cycle7 operational evidence or perform external platform actions.",
+  "approvedBranch": "system/pre-production-premise-review",
+  "approvedCommit": "02b9adb1b00de22670d835d5c01d1d02cdc18834",
+  "previousMain": "ca4b1ea4d2d553fa68be1a1af7bd318e5738b3b8",
+  "preflight": {
+    "cleanWorkingTree": true,
+    "actualRemoteMainMatches": true,
+    "mainIsAncestorOfApprovedCommit": true,
+    "incompatibleDivergence": false
+  },
+  "integrationMethod": "history-preserving-fast-forward",
+  "normalOwnerGates": [
+    "AHMET \u2014 PREMISE REVIEW",
+    "AHMET \u2014 MASTER REVIEW",
+    "AHMET \u2014 PUBLICATION REVIEW / AUTHORIZATION"
+  ],
+  "reviewedBehaviorUnchanged": true,
+  "historicalCyclesRetainActualSemantics": true,
+  "editorialCalibrationUnchanged": true,
+  "cycle8StartAuthorized": false,
+  "externalMediaPlatformActionsAuthorized": false,
+  "instructionIsSummary": true
+}

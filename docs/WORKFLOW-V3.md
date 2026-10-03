@@ -4,7 +4,7 @@ Ahmet approved the remediated V3 architecture at commit `5775c8aa85676d7b0bbc8ea
 
 ## Normal interaction
 
-Prospective addition on `system/pre-production-premise-review`, pending owner workflow review/integration: **three normal owner gates**. Main's historical two-gate approval and Cycles #1–#7 remain historical authority; no new cycle is started by this change.
+Ahmet approved the exact `system/pre-production-premise-review` implementation at `02b9adb1b00de22670d835d5c01d1d02cdc18834`; main integrated it by history-preserving fast-forward from `ca4b1ea4d2d553fa68be1a1af7bd318e5738b3b8`. There are **three normal owner gates** prospectively. Main's historical two-gate approval and Cycles #1–#7 retain their historical authority; this integration does not start a new cycle.
 
 Start a cycle with explicit owner workload authority. Autonomous discovery, inspected preliminary viability and meaningful qualitative comparison independently select one publishing opportunity. Stop at **AHMET — PREMISE REVIEW** before full editorial/story development, CreativeDirection execution or production. Approval permits further research and development; it verifies no claims and approves no wording, script, visuals, narration, master or release. Continue internal evidence/editorial → creative direction → production/QA to **AHMET — MASTER REVIEW**. Exact approval locks the candidate without copying or changing bytes. Internal platform presentation/delivery continues to **AHMET — PUBLICATION REVIEW / AUTHORIZATION**. Owner manual scheduling/publication and actual evidence intake remain separate. Starting workload is authority, not another intermediate review.
 

@@ -1,0 +1,135 @@
+{
+  "recordedAt": "2026-10-03T18:44:42.706170+00:00",
+  "previousMain": "ca4b1ea4d2d553fa68be1a1af7bd318e5738b3b8",
+  "approvedBranch": "system/pre-production-premise-review",
+  "approvedCommit": "02b9adb1b00de22670d835d5c01d1d02cdc18834",
+  "integrationMethod": "history-preserving-fast-forward",
+  "reviewedSourceScriptsTestsGuideAndCalibrationUnchanged": true,
+  "runtime": "Node22.23.3/pnpm10.17.1",
+  "fullCheck": {
+    "passed": true,
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": 474,
+    "testFiles": 49,
+    "diffHygiene": "passed"
+  },
+  "premiseRegressionCoverage": [
+    "First gate before production",
+    "Exact premise approval to downstream editorial only",
+    "Rejection/revision to same-cycle fresh comparison",
+    "No automatic runner-up or blacklist",
+    "Later factual veto",
+    "Material premise change renews authority; immaterial refinement retains it",
+    "Pending transaction recovery around gate",
+    "Independent-cycle isolation",
+    "Learning provenance and callback context protection",
+    "Historical replay unchanged"
+  ],
+  "workflowReplay": {
+    "passed": true,
+    "cycles": [
+      {
+        "id": "cycle.4",
+        "stage": "authorized",
+        "revision": 9,
+        "observations": []
+      },
+      {
+        "id": "cycle.5",
+        "stage": "authorized",
+        "revision": 13,
+        "observations": [
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported"
+        ]
+      },
+      {
+        "id": "cycle.6",
+        "stage": "authorized",
+        "revision": 23,
+        "observations": [
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported"
+        ]
+      },
+      {
+        "id": "cycle.7",
+        "stage": "authorized",
+        "revision": 25,
+        "observations": [
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported"
+        ]
+      }
+    ]
+  },
+  "historicalProtection": {
+    "passed": true,
+    "frozenHistoricalFiles": 948,
+    "changedFiles": 1239,
+    "untrackedFiles": 1
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 699,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "recovery": {
+    "passed": true,
+    "restoredArtifacts": 227,
+    "deliveryPackages": 8,
+    "historicalWoodFrog": "HASH_ONLY",
+    "publicationAuthorized": false
+  },
+  "protectedPathsUnchanged": [
+    "workflow/cycles",
+    "workflow/authorities",
+    "content-intelligence",
+    "artifacts",
+    "public",
+    "src/design",
+    "src/ai",
+    "docs/STRATEGY.md"
+  ],
+  "metadataOnlyReconciliation": [
+    "workflow/project-state.json integrated status/authority/current gates, preserving original V3 gate list",
+    "docs/WORKFLOW-V3.md status paragraph only",
+    "docs/PROJECT-STATE.md additive integrated checkpoint",
+    "docs/DECISIONS.md additive integration decision",
+    "Integration approval and validation records; prior review evidence unchanged"
+  ],
+  "cycle7PublicationEvidence": "pending; unchanged",
+  "cycle7Analytics": "unknown; unchanged",
+  "cycle8Started": false,
+  "discoveryPerformed": false,
+  "productionMediaGenerated": false,
+  "externalMediaPlatformActions": [],
+  "remainingLimitations": [
+    "Accountable session still judges scientific evidence, premise materiality and editorial quality; hashes prove identity, not truth/taste.",
+    "Existing platform/device/presentation uncertainty remains.",
+    "Accepted missing original Wood Frog master remains hash-only."
+  ],
+  "scopedSecretScan": {
+    "files": 33,
+    "highConfidenceFindings": [],
+    "limitation": "Heuristic scan is not proof of absence of secrets."
+  }
+}

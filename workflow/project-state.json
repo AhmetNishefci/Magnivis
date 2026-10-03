@@ -60,6 +60,7 @@
     "ownerApprovalSource": "Ahmet \u2014 MAGNIVIS V3 OWNER APPROVAL AND CONTROLLED INTEGRATION instruction",
     "acceptedReadiness": "B \u2014 READY WITH SPECIFIC NON-BLOCKING LIMITATIONS",
     "normalOwnerGates": [
+      "AHMET \u2014 PREMISE REVIEW",
       "AHMET \u2014 MASTER REVIEW",
       "AHMET \u2014 PUBLICATION REVIEW / AUTHORIZATION"
     ],
@@ -67,6 +68,10 @@
       "Execution remains session/agent driven, not daemonized.",
       "Platform/device geometry remains unknown unless supported by actual evidence.",
       "Ambiguous crash leftovers may require conservative manual inspection."
+    ],
+    "originalNormalOwnerGatesAtV3Integration": [
+      "AHMET \u2014 MASTER REVIEW",
+      "AHMET \u2014 PUBLICATION REVIEW / AUTHORIZATION"
     ]
   },
   "cycle4": "authorized; owner manual release pending; actual scheduling/publication unknown; authority and state: workflow/cycles/cycle.4",
@@ -78,7 +83,7 @@
     "cycle6Started": true
   },
   "cycle6": "authorized; scheduled-owner-reported on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels; journal revision23; scheduled date/time/timezone and scheduling-action time unknown; actual publication/URLs/IDs/settings/comments/processing/presentation/device QA/analytics unknown; awaiting owner publication evidence; exact authorized canonical master and publication package unchanged",
-  "nextSystemTask": "Owner review of focused prospective Premise Review / editorial learning implementation; no main integration or Cycle8 start authorized. Cycle7 publication evidence pending; analytics unknown.",
+  "nextSystemTask": "Premise Review workflow approved and integrated. Await separate explicit Cycle8 start authority; no discovery or production started. Cycle7 publication evidence pending; analytics unknown.",
   "editorialCalibration": {
     "report": "system-audits/editorial-intelligence-calibration/audit.md",
     "authority": "docs/STRATEGY.md",
@@ -94,13 +99,19 @@
   "premiseReviewAudit": {
     "branch": "system/pre-production-premise-review",
     "baseMain": "ca4b1ea4d2d553fa68be1a1af7bd318e5738b3b8",
-    "status": "implementation-pending-owner-workflow-review-and-integration",
+    "status": "owner-approved-integrated",
     "report": "system-audits/pre-production-premise-review/audit.md",
     "prospectiveNormalOwnerGates": [
       "AHMET \u2014 PREMISE REVIEW",
       "AHMET \u2014 MASTER REVIEW",
       "AHMET \u2014 PUBLICATION REVIEW / AUTHORIZATION"
     ],
-    "cycle8Started": false
+    "cycle8Started": false,
+    "authoritativeBranch": "main",
+    "approvedCommit": "02b9adb1b00de22670d835d5c01d1d02cdc18834",
+    "previousMainCommit": "ca4b1ea4d2d553fa68be1a1af7bd318e5738b3b8",
+    "integrationMethod": "history-preserving-fast-forward",
+    "ownerApprovalSource": "Ahmet \u2014 APPROVE \u2014 MAGNIVIS PRE-PRODUCTION PREMISE REVIEW WORKFLOW; explicit exact-commit integration instruction",
+    "approvalEvidence": "system-audits/pre-production-premise-review/integration-approval.json"
   }
 }
