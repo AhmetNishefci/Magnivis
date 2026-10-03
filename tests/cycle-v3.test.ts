@@ -456,6 +456,7 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
     for(const entry of adapters)for(const ref of [entry.decision,entry.target,entry.selection]){mkdirSync(join(f.root,ref.path,'..'),{recursive:true});cpSync(ref.path,join(f.root,ref.path));}
     mkdirSync(join(f.root,adapterPath,'..'),{recursive:true});cpSync(adapterPath,join(f.root,adapterPath));
     await expect(chooseTopicAutonomously({maximumRounds:1,root:f.root,preserve:async s=>f.put(s),discoverAndCompare:async(_round,_prior,context)=>{expect(context.map(c=>c.judgment)).toEqual(['reject-premise','approve-premise']);return f.selection;}})).rejects.toThrow(/consideration/);
+    await expect(chooseTopicAutonomously({maximumRounds:1,root:f.root,preserve:async s=>f.put(s),discoverAndCompare:async(_round,_prior,context)=>{context.splice(0);return f.selection;}})).rejects.toThrow(/consideration/);
     const result=await chooseTopicAutonomously({maximumRounds:1,root:f.root,preserve:async s=>f.put(s),discoverAndCompare:async(_round,_prior,context)=>({...f.selection,editorialLearningReview:context.map(c=>({decision:c.decision,application:'Use intrinsic pull and non-obvious payoff; never topic categories.',nonGeneralizations:c.nonGeneralizations}))})});
     expect(result.outcome).toBe('selected');
     expect(()=>validateTopicSelection({...result.selection,editorialLearningReview:[{decision:adapters[0].decision,application:'Ban related topics',nonGeneralizations:[],domainBlacklist:['history']}]},f.root)).toThrow();

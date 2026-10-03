@@ -84,7 +84,7 @@ export const chooseTopicAutonomously = async ({discoverAndCompare, preserve, max
   if (pools.some(p => p.outcome !== 'continue-discovery') || new Set(pools.map(p => p.cycleId)).size > 1) throw new Error('Only unfinished same-cycle discovery can resume');
   for (let round = pools.length + 1; round <= maximumRounds; round++) {
     const context=editorialDecisionContext(root);
-    const selection = validateTopicSelection(await discoverAndCompare(round, structuredClone(pools), context), root);
+    const selection = validateTopicSelection(await discoverAndCompare(round, structuredClone(pools), structuredClone(context)), root);
     if(context.some(c=>!selection.editorialLearningReview?.some(r=>r.decision.path===c.decision.path&&r.decision.sha256===c.decision.sha256)))throw new Error('Discovery must record consideration of supplied editorial judgments without topic preferences');
     if (pools.length && pools[0]!.cycleId !== selection.cycleId) throw new Error('Discovery cannot switch cycles');
     const record = await preserve(selection);
