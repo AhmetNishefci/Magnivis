@@ -1,0 +1,13 @@
+# Validation before owner workflow review
+
+Node22.23.3 / pnpm10.17.1. Full `pnpm check` passed: type checking, lint, **474 tests across 49 files** and diff hygiene. Six focused regressions were added; existing lifecycle integration tests now explicitly supply synthetic premise decisions before production and retain distinct downstream gates. Historical convergence coverage now checks actual historical two-gate journal evidence rather than insisting the future controller has only two gates. No tests were weakened to bypass a failed invariant.
+
+All four existing V3 journals replay unchanged: Cycle4 authorized revision9, Cycle5 authorized13, Cycle6 authorized23, **Cycle7 authorized25**. Cycle7 has four owner-reported scheduling observations and zero publication/metrics observations. No Cycle8 directory/authority or discovery exists. New tests exercise pending premise transaction recovery and independent-cycle target isolation.
+
+Historical preservation: 948 frozen historical files pass the existing architecture-scope check. Diff against ca4b1ea is empty for existing cycle journals/authorities, Content Intelligence research/decisions/calibration, artifacts, public media, AI interfaces, calibrated prompt implementation, brand policy and exact STRATEGY bytes. All previous approval/rejection/master/package/scheduling identities remain unchanged.
+
+`pnpm artifacts:durable` passed: **699 canonical payloads, 731 durable artifacts, 442 frozen legacy binary paths, zero exceptions**. Exact artifact restore/verify and recovery validation passed (227 recovered required operational artifacts, eight legacy delivery packages). The accepted missing original Wood Frog master remains hash-only; no replacement or new publication evidence is manufactured.
+
+Scoped changed-text scan found zero high-confidence private-key/API-key/AWS-key patterns; this heuristic does not prove absence of secrets. No generated caches, secrets or temporary check logs are committed. Check logs are outside the repository. No production visual change requires a new master render; existing generic engineering-media fixtures run only inside temporary test directories.
+
+Clean-checkout verification follows the committed/pushed implementation, with its exact method, dependency provenance and results recorded separately. Main integration is pending owner workflow review; Cycle8 remains unstarted. Earlier failing checks were corrected (preserving historically bound STRATEGY bytes and replacing a stale source-text two-gate assertion with actual historical journal checks), then the complete suite passed. A sandbox restriction on tsx CLI IPC was avoided using the equivalent documented `node --import tsx` invocation; no check was skipped.

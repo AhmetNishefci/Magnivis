@@ -1,4 +1,4 @@
-> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+> Current prospective orchestration and gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
 
 # Significant decisions
 
@@ -448,3 +448,7 @@ Explicit owner approval binds the exact Interaction-Free v3 master; existing V3 
 ## 2026-10-03 — Cycle #7 exact publication authorization
 
 Explicit owner publication approval authorizes the existing four-platform release with all52 presentation and5 operational uncertainties accepted. Existing V3 owner-decision event21 moves to authorized and exact authorized resolution validates media/manifests/decision. No approved package/master modification, rendering, re-encoding or copying; no schema or workflow change. Manual-release handoff and honest empty evidence intake are additive. Only owner platform actions; no Cycle8, automatic closure or Premise Review modification. Earlier review/unknown records remain historical; acceptance never creates measured geometry/device passes.
+
+## 2026-10-03 — Premise Review / contextual decision learning, pending owner workflow review
+
+Cycle #7's factually educational Sealed Scroll master was rejected for premise strength before replacement by Interaction-Free Measurement. The original two-gate workflow had no equivalent pre-production owner premise authority. The focused V3 addition on `system/pre-production-premise-review` stops after autonomous selection and inspected preliminary feasibility, then uses existing exact-target owner decisions before full editorial/direction/production. Rejection/revision returns the same cycle to fresh bounded comparison. Later factual failure remains non-overridable; material premise change renews the gate. Learning preserves reasons and non-generalizations from approval and rejection, without topic/domain similarity rules. Historical decisions, authority hashes, journals/media and Cycle7 scheduling remain unchanged. This branch requires owner review before main integration and does not start Cycle8. Detailed rationale and checks: [audit](../system-audits/pre-production-premise-review/audit.md).

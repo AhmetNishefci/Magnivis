@@ -1,3 +1,6 @@
+import historicalAuthorities from '../../system-audits/pre-production-premise-review/historical-authorities.json';
+import {validatePremiseSelection,premiseAlignmentSchema} from './premise';
+import {validateEditorialLearningReview} from './editorial-learning';
 import {validateCyclePublication} from './operations';
 import {z} from 'zod';
 import {inspectMedia} from '../artifacts/inspection';
@@ -18,12 +21,13 @@ import {cycleReleaseSchema, cycleDeliverySchema, releaseMetadataSchema, inspectC
 import {digest, text, recordReferenceSchema, readBoundRecord, requireOwnerDecision, ownerDecisionSchema} from './evidence';
 
 export const internalStages = ['discovery', 'editorial', 'creative', 'production', 'presentation'] as const;
-const stages = [...internalStages, 'master-review', 'publication-review', 'authorized', 'closed'] as const;
+const stages = [...internalStages, 'premise-review', 'master-review', 'publication-review', 'authorized', 'closed'] as const;
 const ref = recordReferenceSchema;
 const receiptSchema = z.object({stage: z.enum(internalStages), record: ref}).strict();
 export const cycleSchema = z.object({
   schemaVersion: z.literal(3), id: text.regex(/^cycle\.[a-z0-9-]+$/), revision: z.number().int().nonnegative(),
   authority: ref, stage: z.enum(stages), workInProgress: z.object({stage:z.enum(internalStages),record:ref,startedAt:z.iso.datetime()}).strict().nullable(), receipts: z.array(receiptSchema),
+  premise:ref.nullable().optional(),premiseDecision:ref.nullable().optional(),
   candidate: ref.nullable(), masterDecision: ref.nullable(), release: ref.nullable(), publicationDecision: ref.nullable(),
   exception: z.object({reason: text, target: ref, resumeStage: z.enum(stages)}).strict().nullable(),
   observations: z.array(z.object({kind: z.enum(['scheduled-owner-reported', 'published', 'presentation-observed', 'metrics']), record: ref}).strict()),
@@ -38,9 +42,10 @@ const candidateSchema = z.object({
   qa:z.object({technical:z.literal('passed'),typography:z.literal('passed'),captions:z.literal('passed'),audio:z.literal('passed'),reports:z.array(ref).min(1)}).strict(),
   factualSafeguards:z.array(text).min(1),uncertainties:z.array(text),unusualProduction:z.array(text),
 }).strict();
+export const requiresPremiseReview=(authority:z.infer<typeof ref>)=>!historicalAuthorities.some(r=>r.sha256===authority.sha256);
 export const startCycle = (authority: z.infer<typeof ref>, root = process.cwd()): Cycle => {
   const start = cycleStartAuthoritySchema.parse(readBoundRecord(authority,root));
-  return cycleSchema.parse({schemaVersion:3,id:start.cycleId,revision:0,authority,stage:'discovery',workInProgress:null,receipts:[],candidate:null,masterDecision:null,release:null,publicationDecision:null,exception:null,observations:[],history:[]});
+  return cycleSchema.parse({schemaVersion:3,id:start.cycleId,revision:0,authority,...(requiresPremiseReview(authority)?{premise:null,premiseDecision:null}:{}),stage:'discovery',workInProgress:null,receipts:[],candidate:null,masterDecision:null,release:null,publicationDecision:null,exception:null,observations:[],history:[]});
 };
 export const validatePlatformCoverage=(cycle:Cycle,input:unknown,root=process.cwd())=>{
   const expected=cycleStartAuthoritySchema.parse(readBoundRecord(cycle.authority,root)).targetPlatforms;
@@ -52,6 +57,15 @@ const receiptFor = (cycle: Cycle, stage: typeof internalStages[number], root: st
   if (!receipt) throw new Error(`Missing ${stage} receipt`);
   return readBoundRecord(receipt.record,root);
 };
+const requirePremiseAuthority=(cycle:Cycle,root:string)=>{
+ if(!cycle.premise||!cycle.premiseDecision)throw new Error('Required premise approval missing');
+ const discovery=[...cycle.receipts].reverse().find(r=>r.stage==='discovery');
+ if(!discovery||sha256Json(discovery.record)!==sha256Json(cycle.premise))throw new Error('Premise detached from current autonomous selection');
+ const selection=validateTopicSelection(readBoundRecord(cycle.premise,root),root);validatePremiseSelection(selection,root);
+ const decision=requireOwnerDecision(cycle.premiseDecision,cycle.id,'premise-review',selection,root);
+ if(decision.decision!=='approve'||decision.lifecycle==='superseded'||!cycle.history.some(h=>h.event==='owner-decision'&&sha256Json(h.evidence)===sha256Json(cycle.premiseDecision)))throw new Error('Premise requires its journal-authorized approval');
+ return selection;
+};
 const editorialFor = (cycle: Cycle, root: string, evaluationAt?:string) => {
   const bundle = z.object({draftPackage:z.unknown(),draftAsset:z.unknown(),review:z.unknown()}).strict().parse(receiptFor(cycle,'editorial',root));
   const latest=new Map<string,z.infer<typeof ref>>();
@@ -62,6 +76,10 @@ const editorialFor = (cycle: Cycle, root: string, evaluationAt?:string) => {
   const selection=validateTopicSelection(receiptFor(cycle,'discovery',root),root);
   if(editorial.review.topicCandidateId!==selection.selectedId)throw new Error('Research must bind the autonomously selected topic');
   if(editorial.review.cycleId!==cycle.id)throw new Error('Editorial authority belongs to another cycle');
+  if(requiresPremiseReview(cycle.authority)){
+    const premise=requirePremiseAuthority(cycle,root),alignment=premiseAlignmentSchema.parse(editorial.review.premiseAlignment);
+    if(alignment.selectionSha256!==sha256Json(premise)||!alignment.preservesPublishingOpportunity)throw new Error('Material premise change requires renewed autonomous selection and Premise Review');
+  }
   return editorial;
 };
 const directionFor = (cycle: Cycle, root: string,registry:MediaRegistry) => {
@@ -104,8 +122,12 @@ export const validateCycle = (input: unknown, registry: MediaRegistry, root = pr
   if (cycle.history.length !== cycle.revision || cycle.history.some((h,i)=>h.revision!==i+1)) throw new Error('Cycle revision/history mismatch');
   cycle.history.forEach(h=>readBoundRecord(h.evidence,root));
   for(const r of cycle.receipts) readBoundRecord(r.record,root);
-  const required = cycle.stage==='discovery'?[]:cycle.stage==='editorial'?['discovery']:cycle.stage==='creative'?['discovery','editorial']:cycle.stage==='production'?['discovery','editorial','creative']:['discovery','editorial','creative','production'];
+  const required = cycle.stage==='discovery'?[]:['premise-review','editorial'].includes(cycle.stage)?['discovery']:cycle.stage==='creative'?['discovery','editorial']:cycle.stage==='production'?['discovery','editorial','creative']:['discovery','editorial','creative','production'];
   if(required.some(stage=>!cycle.receipts.some(r=>r.stage===stage)))throw new Error('Cycle state skips required internal evidence');
+  if(requiresPremiseReview(cycle.authority)){
+    if(cycle.stage==='premise-review'){if(!cycle.premise||cycle.premiseDecision)throw new Error('Invalid premise review target');const discovery=cycle.receipts.filter(r=>r.stage==='discovery').at(-1);if(!discovery||sha256Json(discovery.record)!==sha256Json(cycle.premise))throw new Error('Premise target detached');validatePremiseSelection(validateTopicSelection(readBoundRecord(cycle.premise,root),root),root);}
+    else if(cycle.stage!=='discovery')requirePremiseAuthority(cycle,root);
+  }
   if(cycle.stage==='master-review'||['presentation','publication-review','authorized','closed'].includes(cycle.stage)) {
     if(!cycle.candidate || cycle.receipts.filter(r=>r.stage==='production').at(-1)?.record.sha256!==cycle.candidate.sha256)throw new Error('Current candidate must bind its production receipt');
     validateCandidateReceipt(cycle,cycle.candidate,registry,root);
@@ -149,6 +171,13 @@ export const transitionCycle = (input: Cycle, eventInput: unknown, registry: Med
       if(decision.decision!=='approve') throw new Error('Exceptional condition remains unresolved');
       if(decision.lifecycle==='superseded'||(decision.validUntil&&event.at>decision.validUntil)||event.at<decision.enteredAt)throw new Error('Exceptional authority is expired, superseded or not yet valid');
       next.exception=null;
+    } else if(cycle.stage==='premise-review'){
+      if(!cycle.premise)throw new Error('No premise target');
+      const target=validateTopicSelection(readBoundRecord(cycle.premise,root),root);
+      const decision=requireOwnerDecision(event.record,cycle.id,'premise-review',target,root);
+      if(decision.lifecycle==='superseded'||(decision.validUntil&&event.at>decision.validUntil)||event.at<decision.enteredAt)throw new Error('Premise decision authority is not valid at this event');
+      if(decision.decision==='approve'){next.premiseDecision=event.record;next.stage='editorial';}
+      else {next.stage='discovery';next.receipts=[];next.premise=null;next.premiseDecision=null;next.workInProgress=null;next.candidate=null;next.masterDecision=null;next.release=null;next.publicationDecision=null;}
     } else if(cycle.stage==='master-review') {
       if(!cycle.candidate) throw new Error('No master candidate');
       const target=readBoundRecord(cycle.candidate,root);
@@ -182,13 +211,18 @@ export const transitionCycle = (input: Cycle, eventInput: unknown, registry: Med
     if(internalStages.indexOf(event.stage)>internalStages.indexOf(cycle.stage as typeof internalStages[number]))throw new Error('Retry cannot skip forward');
     next.workInProgress=null;next.stage=event.stage;next.candidate=null;next.masterDecision=null;next.release=null;next.publicationDecision=null;
     next.receipts=cycle.receipts.filter(r=>internalStages.indexOf(r.stage)<internalStages.indexOf(event.stage));
+    if(requiresPremiseReview(cycle.authority)&&event.stage==='discovery'){next.premise=null;next.premiseDecision=null;}
   } else if(event.type==='complete-internal') {
     if(cycle.exception || cycle.stage!==event.stage) throw new Error('Unsupported transition or owner escalation pending');
     if(event.stage==='discovery') {
       const selected=validateTopicSelection(readBoundRecord(event.record,root),root);
       if(selected.cycleId!==cycle.id)throw new Error('Discovery evidence belongs to another cycle');
       if(selected.outcome!=='selected') throw new Error('Continue discovery or escalate; no eligible selection');
-      next.stage='editorial';
+      if(requiresPremiseReview(cycle.authority)){
+        validatePremiseSelection(selected,root);validateEditorialLearningReview(selected,root);
+        for(const h of cycle.history.filter(h=>h.event==='owner-decision')){const decision=ownerDecisionSchema.parse(readBoundRecord(h.evidence,root));if(decision.gate!=='premise-review'||decision.decision==='approve')continue;const prior=cycle.history.filter(h=>h.event==='discovery').map(h=>validateTopicSelection(readBoundRecord(h.evidence,root),root)).find(s=>sha256Json(s)===decision.targetSha256);if(prior&&prior.searchRecord.sha256===selected.searchRecord.sha256)throw new Error('Rejected/revised premise needs fresh autonomous comparison, not runner-up promotion or old pool reuse');}
+        next.premise=event.record;next.premiseDecision=null;next.stage='premise-review';
+      }else next.stage='editorial';
     } else if(event.stage==='editorial') {
       next.receipts.push({stage:event.stage,record:event.record});editorialFor(next,root,event.at);next.receipts.pop();next.stage='creative';
     } else if(event.stage==='creative') {
@@ -265,7 +299,7 @@ export const transitionCycle = (input: Cycle, eventInput: unknown, registry: Med
   next.history.push({revision:next.revision,previousSha256:sha256Json(cycle),event:event.type==='complete-internal'?event.stage:event.type==='begin-internal'?`begin-${event.stage}`:event.type,at:event.at,evidence:event.record});
   return cycleSchema.parse(next);
 };
-export const nextAction = (cycle: Cycle) => cycle.exception ? {kind:'owner' as const,gate:'exception',reason:cycle.exception.reason} : ['master-review','publication-review'].includes(cycle.stage) ? {kind:'owner' as const,gate:cycle.stage} : cycle.stage==='authorized' ? {kind:'manual-publication' as const,gate:null} : cycle.stage==='closed' ? {kind:'none' as const,gate:null} : {kind:'internal' as const,stage:cycle.stage};
+export const nextAction = (cycle: Cycle) => cycle.exception ? {kind:'owner' as const,gate:'exception',reason:cycle.exception.reason} : ['premise-review','master-review','publication-review'].includes(cycle.stage) ? {kind:'owner' as const,gate:cycle.stage} : cycle.stage==='authorized' ? {kind:'manual-publication' as const,gate:null} : cycle.stage==='closed' ? {kind:'none' as const,gate:null} : {kind:'internal' as const,stage:cycle.stage};
 /** Session/agent adapters perform real work; this controller resumes until a real gate. No daemon. */
 export const runUntilGate = async (cycle: Cycle, registry: MediaRegistry, execute: (stage: typeof internalStages[number], cycle: Cycle) => Promise<CycleEvent>, persist: (previous: Cycle, next: Cycle, event: CycleEvent) => void, root=process.cwd()) => {
   let current=validateCycle(cycle,registry,root);
@@ -284,5 +318,5 @@ export const cycleStatus = (cycle: Cycle, root=process.cwd(), registry:MediaRegi
   const editorial=cycle.receipts.some(r=>r.stage==="editorial") ? editorialFor(cycle,root) : null;
   const candidate=cycle.candidate ? candidateSchema.parse(readBoundRecord(cycle.candidate,root)) : null;
   const release=cycle.release ? cycleReleaseSchema.parse(readBoundRecord(cycle.release,root)) : null;
-  return {id:cycle.id,revision:cycle.revision,stage:cycle.stage,next:nextAction(cycle),topic:selection ? {id:selection.selectedId,rationale:selection.rationale} : null,research:editorial ? {reviewSha256:sha256Json(editorial.review),package:editorial.knowledgePackage.id,verifiedClaimIds:editorial.review.claims.filter(c=>c.disposition==="verify").map(c=>c.id)} : null,narration:editorial ? {scriptSha256:sha256Json(editorial.contentAsset.script),text:editorial.contentAsset.script.segments.map(s=>s.text).join(" ")} : null,direction:cycle.receipts.filter(r=>r.stage==="creative").at(-1)?.record ?? null,productionBegun:cycle.history.some(h=>h.event==="production"||h.event==="begin-production"),workInProgress:cycle.workInProgress,candidate:candidate ? {media:candidate.media,durationSeconds:candidate.durationSeconds,factualSafeguards:candidate.factualSafeguards,unusualProduction:candidate.unusualProduction,platformPreflight:candidate.platformPreflight.map(p=>{const result=assessPresentationV3(readBoundRecord(p.evidence,root),readBoundRecord(p.profile,root),candidate.media,registry,z.object({inspectedAt:z.iso.datetime()}).passthrough().parse(readBoundRecord(p.evidence,root)).inspectedAt,root);return {platform:result.profile.platform,surface:result.profile.surface,collisions:result.collisions,unknowns:result.unknowns,evidence:p.evidence,profile:p.profile};}),uncertainties:candidate.uncertainties} : null,masterApproved:cycle.masterDecision!==null,masterDecision:cycle.masterDecision,platformMedia:release?.deliveries.map(d=>({variantId:d.variant.id,platform:d.variant.platform,surface:d.variant.surface,media:d.variant.media,relationship:d.variant.relationship,presentation:d.variant.presentation,manifest:d.manifest})) ?? [],publicationAuthorized:cycle.publicationDecision!==null,observations:cycle.observations};
+  return {id:cycle.id,revision:cycle.revision,...(requiresPremiseReview(cycle.authority)?{premiseApproved:!!cycle.premiseDecision,premise:cycle.premise??null,premiseDecision:cycle.premiseDecision??null}:{}),stage:cycle.stage,next:nextAction(cycle),topic:selection ? {id:selection.selectedId,rationale:selection.rationale} : null,research:editorial ? {reviewSha256:sha256Json(editorial.review),package:editorial.knowledgePackage.id,verifiedClaimIds:editorial.review.claims.filter(c=>c.disposition==="verify").map(c=>c.id)} : null,narration:editorial ? {scriptSha256:sha256Json(editorial.contentAsset.script),text:editorial.contentAsset.script.segments.map(s=>s.text).join(" ")} : null,direction:cycle.receipts.filter(r=>r.stage==="creative").at(-1)?.record ?? null,productionBegun:cycle.history.some(h=>h.event==="production"||h.event==="begin-production"),workInProgress:cycle.workInProgress,candidate:candidate ? {media:candidate.media,durationSeconds:candidate.durationSeconds,factualSafeguards:candidate.factualSafeguards,unusualProduction:candidate.unusualProduction,platformPreflight:candidate.platformPreflight.map(p=>{const result=assessPresentationV3(readBoundRecord(p.evidence,root),readBoundRecord(p.profile,root),candidate.media,registry,z.object({inspectedAt:z.iso.datetime()}).passthrough().parse(readBoundRecord(p.evidence,root)).inspectedAt,root);return {platform:result.profile.platform,surface:result.profile.surface,collisions:result.collisions,unknowns:result.unknowns,evidence:p.evidence,profile:p.profile};}),uncertainties:candidate.uncertainties} : null,masterApproved:cycle.masterDecision!==null,masterDecision:cycle.masterDecision,platformMedia:release?.deliveries.map(d=>({variantId:d.variant.id,platform:d.variant.platform,surface:d.variant.surface,media:d.variant.media,relationship:d.variant.relationship,presentation:d.variant.presentation,manifest:d.manifest})) ?? [],publicationAuthorized:cycle.publicationDecision!==null,observations:cycle.observations};
 };

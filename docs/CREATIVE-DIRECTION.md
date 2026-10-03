@@ -1,4 +1,4 @@
-> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+> Current prospective orchestration and gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
 
 # Adaptive creative direction V1
 
@@ -71,3 +71,7 @@ Long-form inherits identity and evidence principles, not a Shorts visual grammar
 `node --import tsx scripts/validate-creative-direction.ts direction.json approved-package.json approved-asset.json` checks a future companion without generation or approval. `node --import tsx scripts/validate-adaptive-creative-system.ts` validates brain routing, native registries, exact historical inputs/artifacts and the existing Phantom Traffic presentation chain. Run `pnpm check` and applicable source/artifact/platform gates.
 
 This milestone implements decision authoring, source binding and future production checks, not automatic creative quality evaluation, TTS integration for new providers, new renderer aesthetics or long-form choreography. New treatments need a tested adapter, license evidence, explicit chosen settings and owner master review when a separately authorized story reaches production. No historical media must be regenerated to adopt this philosophy.
+
+## Prospective premise boundary
+
+WORKFLOW-V3 places owner Premise Review before full CreativeDirection execution and production. Preliminary story/visual feasibility reasoning may support autonomous selection; final script-bound direction and convergence remain downstream of premise approval and factual verification. Approval does not dictate a treatment or waive convergence. Historical approved directions and media remain unchanged.

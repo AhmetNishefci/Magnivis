@@ -1,4 +1,6 @@
 import {z} from 'zod';
+import {premiseAssessmentSchema} from './premise';
+import {editorialDecisionContext} from './editorial-learning';
 import {sha256Json} from '../content-intelligence/run-schema';
 import historicalSelections from '../../system-audits/topic-curiosity-v3/historical-selections.json';
 import {text, recordReferenceSchema, readBoundRecord, readBoundFile} from './evidence';
@@ -22,6 +24,8 @@ const candidate = z.object({
   limitations: z.array(text), curiosityReview: curiosityReviewSchema.optional(),
 }).strict();
 export const topicSelectionSchema = z.object({
+  premiseAssessment: premiseAssessmentSchema.optional(),
+  editorialLearningReview: z.array(z.object({decision:recordReferenceSchema,application:text,nonGeneralizations:z.array(text).min(1)}).strict()).optional(),
   schemaVersion: z.literal(3), method: z.literal('qualitative-open-world-comparison'),
   cycleId:text.regex(/^cycle\.[a-z0-9-]+$/),
   searchRecord: recordReferenceSchema,
@@ -34,6 +38,7 @@ export const topicSelectionSchema = z.object({
   candidates: z.array(candidate).min(2), selectedId: text.nullable(),
   outcome: z.enum(['selected', 'continue-discovery', 'escalate']), rationale: text,
 }).strict();
+export type TopicSelection=z.infer<typeof topicSelectionSchema>;
 export const validateTopicSelection = (input: unknown, root = process.cwd()) => {
   const selection = topicSelectionSchema.parse(input);
   readBoundRecord(selection.searchRecord, root);
@@ -66,7 +71,7 @@ export const validateTopicSelection = (input: unknown, root = process.cwd()) => 
 
 /** Autonomous session/provider interface. Preserved rounds consume one recoverable total budget. */
 export const chooseTopicAutonomously = async ({discoverAndCompare, preserve, maximumRounds, priorRecords = [], root = process.cwd()}: {
-  discoverAndCompare: (round: number, priorPools: readonly z.infer<typeof topicSelectionSchema>[]) => Promise<unknown>;
+  discoverAndCompare: (round: number, priorPools: readonly z.infer<typeof topicSelectionSchema>[], editorialContext: ReturnType<typeof editorialDecisionContext>) => Promise<unknown>;
   preserve: (selection: z.infer<typeof topicSelectionSchema>) => Promise<z.infer<typeof recordReferenceSchema>>;
   maximumRounds: number;
   priorRecords?: readonly z.infer<typeof recordReferenceSchema>[];
@@ -78,7 +83,9 @@ export const chooseTopicAutonomously = async ({discoverAndCompare, preserve, max
   if (new Set(records.map(r => r.sha256)).size !== records.length) throw new Error('Duplicate preserved discovery round');
   if (pools.some(p => p.outcome !== 'continue-discovery') || new Set(pools.map(p => p.cycleId)).size > 1) throw new Error('Only unfinished same-cycle discovery can resume');
   for (let round = pools.length + 1; round <= maximumRounds; round++) {
-    const selection = validateTopicSelection(await discoverAndCompare(round, structuredClone(pools)), root);
+    const context=editorialDecisionContext(root);
+    const selection = validateTopicSelection(await discoverAndCompare(round, structuredClone(pools), context), root);
+    if(context.some(c=>!selection.editorialLearningReview?.some(r=>r.decision.path===c.decision.path&&r.decision.sha256===c.decision.sha256)))throw new Error('Discovery must record consideration of supplied editorial judgments without topic preferences');
     if (pools.length && pools[0]!.cycleId !== selection.cycleId) throw new Error('Discovery cannot switch cycles');
     const record = await preserve(selection);
     const stored = validateTopicSelection(readBoundRecord(record, root), root);

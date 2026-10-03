@@ -3,6 +3,7 @@ import {convergenceFixture,copyComparisonEvidence} from './fixtures/visual-conve
 import type {CreativeDirection} from '../src/content-assets/creative-direction';
 import {createRequire} from 'node:module';
 import {openMediaCatalog,persistMediaArtifact} from '../src/artifacts/catalog';
+import {editorialDecisionContext} from '../src/workflow/editorial-learning';
 import {validateLearningSignal} from '../src/workflow/learning';
 import {projectLegacyPresentationProfile} from '../src/workflow/profile-compatibility';
 import {mkdtempSync,writeFileSync,readFileSync,rmSync,mkdirSync,cpSync,realpathSync} from 'node:fs';
@@ -15,6 +16,7 @@ import {knowledgePackageSchema} from '../src/knowledge/schema';
 import {contentAssetSchema} from '../src/content-assets/schema';
 import {verifyInternalEditorial} from '../src/workflow/editorial';
 import {assessPresentationV3} from '../src/workflow/presentation';
+import {ownerHandoff} from '../src/workflow/handoff';
 import {startCycle,transitionCycle,runUntilGate,nextAction,validatePlatformCoverage,type CycleEvent} from '../src/workflow/cycle';
 import {initializeCycle,loadCycle,persistCycleEvent,recoverCycleEvent,loadCurrentCycle,loadProjectCycles,projectCycleOverview} from '../src/workflow/store';
 import {cycleDeliverySchema,inspectCycleRelease,resolveAuthorizedCycleUpload} from '../src/workflow/release';
@@ -38,7 +40,10 @@ const fixture=(cycleId='cycle.test-only',sharedRoot?:string)=>{
   const put=(data:unknown):RecordReference=>{const path=`${cycleId}-fixture-${++sequence}.json`;writeFileSync(join(root,path),JSON.stringify(data,null,2)+'\n');return {path,sha256:mediaHash(join(root,path))};};
   const pkg=knowledgePackageSchema.parse(read('content-intelligence/reviews/chocolate-crystal-choice-approved-v3/knowledge-package.approved.json'));
   const asset=contentAssetSchema.parse(read('content-intelligence/reviews/chocolate-crystal-choice-approved-v3/content-asset.approved.json'));
-  const review={schemaVersion:3 as const,cycleId,topicCandidateId:'existing-chocolate',enteredAt:now,reviewer:'Synthetic test operator; not Ahmet',packageSha256:sha256Json(pkg),assetSha256:sha256Json(asset),scriptSha256:sha256Json(asset.script),
+  const source=put({sourceId:'fixture-source',url:'https://example.org/fixture',retrievedAt:now,accessStatus:'inspected',inspectedText:'Synthetic preliminary evidence, not real source acquisition.',acquisition:'manual-source-inspection'});
+  const comparison={curiosityReview:{honestPremise:'Same ingredients can yield different texture.',coldAudienceReason:'A familiar material visibly transforms.',interestOrigin:'premise-led',storyRoute:'Transformation explanation',truthBoundary:{state:'credible-lead',rationale:'Existing inspected fixture inputs; no renewed claim verification.'},opportunityJudgment:{sufficient:true,rationale:'Synthetic opportunity adequate for this test.'},shareability:null},novelty:'Fixture history comparison.',evidenceFeasibility:'Fixture qualitative comparison.',explanatoryPayoff:'Fixture explanation.',visualPotential:'Different media remain eligible.',audienceCuriosity:'Fixture curiosity.',productionFeasibility:'Existing renderer gives no advantage.',portfolioDiversity:'Open domains.',comparison:'Inspect alternatives qualitatively.',evidence:[source],limitations:[]};
+  const selection={selectionStandard:'cold-audience-curiosity.v1',poolReview:{adequateOpportunityFound:true,rationale:'Synthetic sufficient opportunity.',nextSearchChange:null},schemaVersion:3,cycleId,method:'qualitative-open-world-comparison',searchRecord:source,searchBreadth:'Synthetic pool, not actual new discovery.',classificationAfterDiscovery:true,historyReviewed:[source],analyticsInfluence:'provenance-bearing-signals-not-category-rules',convenienceAdvantageRejected:true,candidates:[{...comparison,id:'existing-chocolate',subject:'Existing test record',domains:['unrestricted-test-domain'],disposition:'eligible'},{...comparison,id:'alternative-fixture',subject:'Synthetic alternative',domains:['future-domain'],disposition:'inadequate-evidence'}],selectedId:'existing-chocolate',outcome:'selected',rationale:'Test-only selected existing record; no real topic chosen.',premiseAssessment:{status:'established',truthfulFraming:'Synthetic feasibility only.',caveats:[],materialRisks:[],inspections:[{sourceId:'fixture-source',url:'https://example.org/fixture',inspectedEvidence:source,locator:'Fixture body',assessment:'Synthetic premise and payoff support.',sourceQualityRationale:'Test fixture only.',covers:['premise','payoff']}]},editorialLearningReview:editorialDecisionContext(root).map(c=>({decision:c.decision,application:'Consider properties, not topic preferences.',nonGeneralizations:['No domain exclusions or cloning.']}))};
+  const review={premiseAlignment:{selectionSha256:sha256Json(selection),preservesPublishingOpportunity:true,rationale:'Fixture unchanged publishing opportunity.'},schemaVersion:3 as const,cycleId,topicCandidateId:'existing-chocolate',enteredAt:now,reviewer:'Synthetic test operator; not Ahmet',packageSha256:sha256Json(pkg),assetSha256:sha256Json(asset),scriptSha256:sha256Json(asset.script),
     inspections:pkg.sources.map(s=>({sourceId:s.id,accessStatus:'inspected' as const,identityConfirmed:true,evidenceLocations:pkg.claims.flatMap(c=>c.evidence.filter(e=>e.sourceId===s.id).map(e=>e.locator??'fixture locator')),supportsClaimIds:pkg.claims.filter(c=>c.evidence.some(e=>e.sourceId===s.id)).map(c=>c.id),limitations:['Synthetic inspection metadata for invariant testing, not renewed factual evidence.'],sourceQualityRationale:'Test fixture only.',inspectedEvidence:put({sourceId:s.id,url:s.url,retrievedAt:now,accessStatus:'inspected',inspectedText:'Synthetic test evidence; NOT an actual source acquisition or factual re-verification.',acquisition:'manual-source-inspection'})})),
     claims:pkg.claims.map(c=>({id:c.id,statementSha256:sha256Json(c.statement),disposition:asset.selectedClaimIds.includes(c.id)?'verify' as const:'reserve' as const,rationale:'Fixture disposition preserves all reserve statuses.',evidence:c.evidence.map(e=>({sourceId:e.sourceId,locator:e.locator??'fixture locator',assessment:'Synthetic sufficient-for-wording test assessment.',sufficientForWording:true})),qualificationsPreserved:true})),misconceptionSafeguards:['Retain existing chocolate qualifications; fixture only.'],comprehensionReview:'Existing script reused for integration testing.',rightsReview:'Existing retained media is referenced, never regenerated.',careAssessment:{state:'routine',rationale:'Synthetic test of non-sensitive existing record.'},exceptionalConditions:[]};
   const editorial=verifyInternalEditorial(review,pkg,asset,root);
@@ -53,13 +58,10 @@ const fixture=(cycleId='cycle.test-only',sharedRoot?:string)=>{
   const checks={technical:'passed',typography:'passed',captions:'passed',audio:'passed'};
   const qa=put({fixtureOnly:true,mediaSha256:media.sha256,scriptSha256:sha256Json(asset.script),checks});
   const candidate={schemaVersion:3,cycleId:review.cycleId,media,durationSeconds:plan.format.durationSeconds,scriptSha256:sha256Json(asset.script),productionPlan:put(plan),captionPlan:put(caption),narrationBundle:put(read('src/production/narration/chocolate.json')),narration,qa:{...checks,reports:[qa]},factualSafeguards:['Existing approved wording preserved.'],uncertainties:['Synthetic test review; no actual human review or device capture.'],unusualProduction:[]};
-  const source=put({fixtureOnly:true});
-  const comparison={curiosityReview:{honestPremise:'Same ingredients can yield different texture.',coldAudienceReason:'A familiar material visibly transforms.',interestOrigin:'premise-led',storyRoute:'Transformation explanation',truthBoundary:{state:'credible-lead',rationale:'Existing inspected fixture inputs; no renewed claim verification.'},opportunityJudgment:{sufficient:true,rationale:'Synthetic opportunity adequate for this test.'},shareability:null},novelty:'Fixture history comparison.',evidenceFeasibility:'Fixture qualitative comparison.',explanatoryPayoff:'Fixture explanation.',visualPotential:'Different media remain eligible.',audienceCuriosity:'Fixture curiosity.',productionFeasibility:'Existing renderer gives no advantage.',portfolioDiversity:'Open domains.',comparison:'Inspect alternatives qualitatively.',evidence:[source],limitations:[]};
-  const selection={selectionStandard:'cold-audience-curiosity.v1',poolReview:{adequateOpportunityFound:true,rationale:'Synthetic sufficient opportunity.',nextSearchChange:null},schemaVersion:3,cycleId,method:'qualitative-open-world-comparison',searchRecord:source,searchBreadth:'Synthetic pool, not actual new discovery.',classificationAfterDiscovery:true,historyReviewed:[source],analyticsInfluence:'provenance-bearing-signals-not-category-rules',convenienceAdvantageRejected:true,candidates:[{...comparison,id:'existing-chocolate',subject:'Existing test record',domains:['unrestricted-test-domain'],disposition:'eligible'},{...comparison,id:'alternative-fixture',subject:'Synthetic alternative',domains:['future-domain'],disposition:'inadequate-evidence'}],selectedId:'existing-chocolate',outcome:'selected',rationale:'Test-only selected existing record; no real topic chosen.'};
   const authority=put({schemaVersion:3,cycleId:review.cycleId,enteredAt:now,evidenceBasis:'explicit-owner-cycle-start',instruction:'SYNTHETIC TEST AUTHORITY ONLY; no real cycle start.',internalPipelineAuthorized:true,externalActionsAuthorized:false});
   const records={discovery:put(selection),editorial:put({draftPackage:pkg,draftAsset:asset,review}),creative:put(direction),production:put(candidate)};
   const event=(stage:keyof typeof records):CycleEvent=>({type:'complete-internal',stage,record:records[stage],at:now});
-  const decision=(gate:'master-review'|'publication-review',target:unknown,choice='approve',acceptedUnknowns:string[]=[])=>put({schemaVersion:3,id:'owner-decision.test-only',revision:1,gate,cycleId:review.cycleId,targetSha256:sha256Json(target),decision:choice,enteredAt:now,suppliedReviewTime:null,reviewer:'Synthetic fixture, not Ahmet',evidenceBasis:'explicit-owner-message',instruction:'TEST ONLY, not a real owner approval.',acceptedUnknowns});
+  const decision=(gate:'premise-review'|'master-review'|'publication-review',target:unknown,choice='approve',acceptedUnknowns:string[]=[])=>put({schemaVersion:3,id:'owner-decision.test-only',revision:1,gate,cycleId:review.cycleId,targetSha256:sha256Json(target),decision:choice,enteredAt:now,suppliedReviewTime:null,reviewer:'Synthetic fixture, not Ahmet',evidenceBasis:'explicit-owner-message',instruction:'TEST ONLY, not a real owner approval.',acceptedUnknowns});
   const releaseFixture=(evaluatedRegistry=registry)=>{
     const media=candidate.media;
     const midpointFrames=caption.cues.map((c:{startFrame:number;endFrame:number})=>Math.floor((c.startFrame+c.endFrame)/2));
@@ -79,6 +81,13 @@ const fixture=(cycleId='cycle.test-only',sharedRoot?:string)=>{
   const preflight=releaseFixture().release.deliveries.map(d=>({profile:d.variant.profile,evidence:d.variant.presentation}));
   plan.presentationProfiles=preflight.map(p=>p.profile);candidate.productionPlan=put(plan);Object.assign(candidate,{platformPreflight:preflight});records.production=put(candidate);
   return {root,put,pkg,asset,review,editorial,direction,plan,caption,candidate,media,authority,records,event,decision,selection,releaseFixture};
+};
+
+const approvePremise=(f:ReturnType<typeof fixture>,cycle:ReturnType<typeof startCycle>,evaluatedRegistry=registry)=>transitionCycle(cycle,{type:'owner-decision',record:f.decision('premise-review',f.selection),at:now},evaluatedRegistry,f.root);
+const runToMaster=async(f:ReturnType<typeof fixture>,cycle=startCycle(f.authority,f.root))=>{
+ const premise=await runUntilGate(cycle,registry,async stage=>f.event(stage as keyof typeof f.records),()=>{},f.root);
+ expect(premise.stage).toBe('premise-review');
+ return runUntilGate(approvePremise(f,premise),registry,async stage=>f.event(stage as keyof typeof f.records),()=>{},f.root);
 };
 
 describe('Cycle V3 generic lifecycle and integration',()=>{
@@ -104,7 +113,9 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
       Object.assign(fixtureData.candidate,{platformPreflight:preflight});fixtureData.records.production=fixtureData.put(fixtureData.candidate);
     };
     let generated:ReturnType<typeof mediaReference>|null=null;
-    const initial=initializeCycle(f.root,f.authority);
+    let initial=initializeCycle(f.root,f.authority);
+    initial=persistCycleEvent(f.root,initial,f.event('discovery'),live);
+    initial=persistCycleEvent(f.root,initial,{type:'owner-decision',record:f.decision('premise-review',f.selection),at:now},live);
     const master=await runUntilGate(initial,live,async stage=>{
       if(stage==='production'){generated=generate('new-master','black');expect(initialSnapshot.some(m=>m.sha256===generated!.sha256)).toBe(false);expect(()=>stale.get(generated!)).toThrow(/Missing/);bindCandidate(f,generated);}
       return f.event(stage as keyof typeof f.records);
@@ -132,7 +143,9 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
     expect(persistCycleEvent(f.root,scheduled,{type:'observe',kind:'scheduled-owner-reported',record:report,at:now},live)).toEqual(scheduled);
     expect(scheduled.observations.filter(o=>o.kind==='published')).toHaveLength(0);
     const b=fixture('cycle.integration-b',f.root);bindCandidate(b,f.candidate.media);const startB=initializeCycle(f.root,b.authority);expect(()=>transitionCycle(startB,f.event('discovery'),live,f.root)).toThrow(/another cycle/);
-    const masterB=await runUntilGate(startB,live,async stage=>b.event(stage as keyof typeof b.records),(previous,_next,event)=>{persistCycleEvent(f.root,previous,event,live);},f.root);
+    const premiseB=persistCycleEvent(f.root,startB,b.event('discovery'),live);
+    const approvedPremiseB=persistCycleEvent(f.root,premiseB,{type:'owner-decision',record:b.decision('premise-review',b.selection),at:now},live);
+    const masterB=await runUntilGate(approvedPremiseB,live,async stage=>b.event(stage as keyof typeof b.records),(previous,_next,event)=>{persistCycleEvent(f.root,previous,event,live);},f.root);
     expect(masterB.stage).toBe('master-review');const bBefore=readFileSync(join(f.root,'workflow/cycles',masterB.id,'state.json'));
     const d=release.deliveries.find(d=>d.variant.platform==='youtube')!;const publication=structuredClone(publicationRegistry.list().find(p=>p.platform==='youtube')!);
     Object.assign(publication,{id:'publication.synthetic-integration-a',state:'published',publishedOn:'2026-10-02',remote:{postId:'synthetic-test-only',url:'https://example.com/synthetic-not-a-publication'}});delete publication.ownerReport;
@@ -180,7 +193,7 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
   });
   it('requires all and only authorized platforms, including closure validation',async()=>{
     const f=fixture();const cycle=startCycle(f.authority,f.root);const r=f.releaseFixture().release;
-    const master=await runUntilGate(cycle,registry,async stage=>f.event(stage as keyof typeof f.records),()=>{},f.root);
+    const master=await runToMaster(f,cycle);
     const locked=transitionCycle(master,{type:'owner-decision',record:f.decision('master-review',f.candidate),at:now},registry,f.root);
     expect(()=>validatePlatformCoverage(cycle,r,f.root)).not.toThrow();
     for(const count of [1,3]){const missing={...r,deliveries:r.deliveries.slice(0,count)};expect(()=>validatePlatformCoverage(cycle,missing,f.root)).toThrow(/authorized target/);expect(()=>transitionCycle(locked,{type:'complete-internal',stage:'presentation',record:f.put(missing),at:now},registry,f.root)).toThrow(/authorized target/);}
@@ -190,7 +203,7 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
   });
   it('resumes exact editorial judgment with journal authority and retains factual blocks',()=>{
     const f=fixture();const proposal={...f.review,careAssessment:{state:'owner-judgment-required',rationale:'Synthetic high-care treatment judgment.'}};
-    let cycle=transitionCycle(startCycle(f.authority,f.root),f.event('discovery'),registry,f.root);
+    let cycle=approvePremise(f,transitionCycle(startCycle(f.authority,f.root),f.event('discovery'),registry,f.root));
     const scope=f.put(proposal);cycle=transitionCycle(cycle,{type:'escalate',reason:'High-care treatment judgment',record:scope,at:now},registry,f.root);
     const exception=f.put(cycle.exception);
     const decisionData={...read(join(f.root,f.decision('master-review',proposal).path)),gate:'exception',targetSha256:sha256Json(cycle.exception),scope,validUntil:'2026-10-03T13:00:00.000Z'};
@@ -218,9 +231,11 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
     const approve=f.put({...decisionData,scope:target,targetSha256:sha256Json(ex)});
     expect(()=>verifyInternalEditorial({...unsupported,exceptionResumptions:[{exception:exRef,decision:approve,resumedAt:now}]},pkg,f.asset,f.root,[approve])).toThrow(/cannot automatically/);
   });
-  it('runs all internal work from one start until exact master review with real retained media and no owner continuation',async()=>{
+  it('stops autonomously at premise review, then reaches distinct master and publication gates',async()=>{
     const f=fixture();const events:CycleEvent[]=[];
-    const current=await runUntilGate(startCycle(f.authority,f.root),registry,async stage=>{if(stage==='presentation')throw new Error('Must stop at master gate');const e=f.event(stage);events.push(e);return e;},()=>{},f.root);
+    const premise=await runUntilGate(startCycle(f.authority,f.root),registry,async stage=>{if(stage==='presentation')throw new Error('Must stop at master gate');const e=f.event(stage);events.push(e);return e;},()=>{},f.root);
+    expect(events).toHaveLength(1);expect(nextAction(premise)).toEqual({kind:'owner',gate:'premise-review'});expect(premise.candidate).toBeNull();
+    const current=await runUntilGate(approvePremise(f,premise),registry,async stage=>{const e=f.event(stage as keyof typeof f.records);events.push(e);return e;},()=>{},f.root);
     expect(events).toHaveLength(4);expect(nextAction(current)).toEqual({kind:'owner',gate:'master-review'});expect(current.masterDecision).toBeNull();
     const locked=transitionCycle(current,{type:'owner-decision',record:f.decision('master-review',f.candidate),at:now},registry,f.root);
     expect(locked.stage).toBe('presentation');
@@ -245,7 +260,7 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
     expect(()=>transitionCycle(initial,f.event('production'),registry,f.root)).toThrow(/Unsupported/);
   });
   it('requires exact owner targets and preserves rejected candidate history',async()=>{
-    const f=fixture();const candidate=await runUntilGate(startCycle(f.authority,f.root),registry,async stage=>f.event(stage as keyof typeof f.records),()=>{},f.root);
+    const f=fixture();const candidate=await runToMaster(f);
     expect(()=>transitionCycle(candidate,{type:'owner-decision',record:f.decision('master-review',{changed:true}),at:now},registry,f.root)).toThrow(/exact review target/);
     const revision=transitionCycle(candidate,{type:'owner-decision',record:f.decision('master-review',f.candidate,'revise'),at:now},registry,f.root);
     expect(revision.stage).toBe('production');expect(revision.candidate).toBeNull();expect(revision.receipts.some(r=>r.stage==='production')).toBe(true);
@@ -305,9 +320,10 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
     writeFileSync(eventPath,JSON.stringify({previousSha256:sha256Json(initial),event,nextSha256:sha256Json(next)}));
     expect(()=>loadCycle(f.root,initial.id,registry)).toThrow(/Incomplete prior transaction/);
     expect(recoverCycleEvent(f.root,initial.id,registry)).toEqual(next);
-    expect(loadCurrentCycle(f.root,registry)?.stage).toBe('editorial');
+    expect(loadCurrentCycle(f.root,registry)?.stage).toBe('premise-review');
+    const approved=persistCycleEvent(f.root,next,{type:'owner-decision',record:f.decision('premise-review',f.selection),at:now},registry);
     const start=f.put({cycleId:initial.id,stage:'editorial',action:'Test-only internal stage start.'});
-    const begun=persistCycleEvent(f.root,next,{type:'begin-internal',stage:'editorial',record:start,at:now},registry);
+    const begun=persistCycleEvent(f.root,approved,{type:'begin-internal',stage:'editorial',record:start,at:now},registry);
     expect(begun.workInProgress?.stage).toBe('editorial');expect(begun.candidate).toBeNull();
     expect(()=>transitionCycle(begun,{type:'begin-internal',stage:'editorial',record:start,at:now},registry,f.root)).toThrow(/already active/);
     expect(()=>initializeCycle(f.root,f.authority)).toThrow();
@@ -327,7 +343,7 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
   it('prevents an internal executor from crossing a real owner gate and supports upstream evidence revisions',async()=>{
     const f=fixture();const initial=startCycle(f.authority,f.root);
     await expect(runUntilGate(initial,registry,async()=>({type:'owner-decision',record:f.decision('master-review',f.candidate),at:now}),()=>{},f.root)).rejects.toThrow(/cannot forge/);
-    let state=transitionCycle(initial,f.event('discovery'),registry,f.root);
+    let state=approvePremise(f,transitionCycle(initial,f.event('discovery'),registry,f.root));
     state=transitionCycle(state,f.event('editorial'),registry,f.root);
     const reason=f.put({cycleId:f.review.cycleId,reason:'Test-only editorial wording revision.'});
     const retry=transitionCycle(state,{type:'retry-internal',stage:'editorial',record:reason,at:now},registry,f.root);
@@ -346,6 +362,105 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
     const projected=projectLegacyPresentationProfile(profiles.find((p:{id:string})=>p.id==='safe-area.youtube-shorts.v2'),source,exp,now);
     expect(projected.compositionSafe.state).toBe('provisional');expect(projected.nativeExclusions.regions).toBeNull();expect(projected.cropSafe.state).toBe('unknown');
     expect(projected.compositionSafe.regions![0]!.y).toBe(240);
+  });
+
+  it('preserves cheap premise rejection/revision, fresh selection and exact decision reasons',()=>{
+    const f=fixture();const initial=initializeCycle(f.root,f.authority);
+    const premise=persistCycleEvent(f.root,initial,f.event('discovery'),registry);
+    const handoff=ownerHandoff(premise,registry,f.root);
+    expect(handoff.gate).toBe('AHMET — PREMISE REVIEW');
+    expect(handoff).toMatchObject({plannedVideo:f.selection.candidates[0]!.curiosityReview.honestPremise,expectedPayoff:f.selection.candidates[0]!.explanatoryPayoff});
+    expect(handoff).not.toHaveProperty('candidates');
+    expect(()=>transitionCycle(premise,f.event('editorial'),registry,f.root)).toThrow(/Unsupported/);
+    const decision=f.put({...read(join(f.root,f.decision('premise-review',f.selection,'reject').path)),reason:'The anticipated resolution is too foreseeable.',nonGeneralizations:['No exclusion of this topic or domain.']});
+    const rejected=persistCycleEvent(f.root,premise,{type:'owner-decision',record:decision,at:now},registry);
+    expect(rejected).toMatchObject({id:initial.id,stage:'discovery',premise:null,premiseDecision:null,candidate:null,receipts:[]});
+    const learning=editorialDecisionContext(f.root);
+    expect(learning).toHaveLength(1);expect(learning[0]).toMatchObject({decision,judgment:'reject',statedReason:'The anticipated resolution is too foreseeable.'});
+    const review=learning.map(c=>({decision:c.decision,application:'Apply the information-gap lesson; do not penalize a domain.',nonGeneralizations:c.nonGeneralizations}));
+    const runnerUp={...f.selection,editorialLearningReview:review,selectedId:'alternative-fixture',candidates:f.selection.candidates.map(c=>({...c,disposition:'eligible'}))};
+    expect(()=>transitionCycle(rejected,{type:'complete-internal',stage:'discovery',record:f.put(runnerUp),at:now},registry,f.root)).toThrow(/fresh autonomous comparison/);
+    // Same subject remains eligible under new independently sufficient framing/comparison.
+    const fresh={...f.selection,editorialLearningReview:review,searchRecord:f.put({round:2,fixtureOnly:true}),rationale:'Fresh independently sufficient comparison, not a queued runner-up.'};
+    const replacement=persistCycleEvent(f.root,rejected,{type:'complete-internal',stage:'discovery',record:f.put(fresh),at:now},registry);
+    expect(replacement.stage).toBe('premise-review');expect(replacement.id).toBe(initial.id);
+    expect(loadCycle(f.root,initial.id,registry)).toEqual(replacement);
+    const revised=persistCycleEvent(f.root,replacement,{type:'owner-decision',record:f.decision('premise-review',fresh,'revise'),at:now},registry);
+    expect(revised.stage).toBe('discovery');expect(revised.history.filter(h=>h.event==='discovery')).toHaveLength(2);
+    expect(loadCycle(f.root,initial.id,registry)).toEqual(revised);
+  });
+  it('requires inspected preliminary premise and payoff support, not snippets or final approval',()=>{
+    const f=fixture();const initial=startCycle(f.authority,f.root);const inspection=f.selection.premiseAssessment.inspections[0]!;
+    for(const change of [
+      {premiseAssessment:undefined},
+      {premiseAssessment:{...f.selection.premiseAssessment,inspections:[{...inspection,covers:['premise']}]}},
+      {premiseAssessment:{...f.selection.premiseAssessment,inspections:[{...inspection,url:'https://example.org/other'}]}},
+    ])expect(()=>transitionCycle(initial,{type:'complete-internal',stage:'discovery',record:f.put({...f.selection,...change}),at:now},registry,f.root)).toThrow();
+    const snippet=f.put({sourceId:inspection.sourceId,url:inspection.url,retrievedAt:now,accessStatus:'inspected',snippet:'A search result is not an inspected source body.'});
+    const unsupported={...f.selection,candidates:f.selection.candidates.map(c=>({...c,evidence:[snippet]})),premiseAssessment:{...f.selection.premiseAssessment,inspections:[{...inspection,inspectedEvidence:snippet}]}};
+    expect(()=>transitionCycle(initial,{type:'complete-internal',stage:'discovery',record:f.put(unsupported),at:now},registry,f.root)).toThrow();
+    const disputed={...f.selection,premiseAssessment:{...f.selection.premiseAssessment,status:'disputed',truthfulFraming:'An investigation of competing explanations, not an assertion of the disputed claim.',caveats:['The causal conclusion is unresolved.']}};
+    const pending=transitionCycle(initial,{type:'complete-internal',stage:'discovery',record:f.put(disputed),at:now},registry,f.root);
+    expect(ownerHandoff(pending,registry,f.root)).toMatchObject({truthEvidenceStatus:{status:'disputed',caveats:['The causal conclusion is unresolved.']}});
+    expect(()=>transitionCycle(pending,{type:'owner-decision',record:f.decision('premise-review',{changed:true}),at:now},registry,f.root)).toThrow(/exact review target/);
+    const approved=transitionCycle(pending,{type:'owner-decision',record:f.decision('premise-review',disputed),at:now},registry,f.root);
+    expect(approved).toMatchObject({stage:'editorial',masterDecision:null,publicationDecision:null,candidate:null});
+    expect(()=>transitionCycle(approved,f.event('production'),registry,f.root)).toThrow(/Unsupported/);
+    expect(()=>transitionCycle({...initial,stage:'editorial',receipts:[{stage:'discovery',record:f.records.discovery}]},f.event('editorial'),registry,f.root)).toThrow(/premise approval missing/);
+  });
+  it('keeps factual veto and requires renewed premise review for material changes, not immaterial refinements',()=>{
+    const f=fixture();const approved=approvePremise(f,transitionCycle(startCycle(f.authority,f.root),f.event('discovery'),registry,f.root));
+    for(const alignment of [undefined,{...f.review.premiseAlignment,preservesPublishingOpportunity:false},{...f.review.premiseAlignment,selectionSha256:'0'.repeat(64)}]){
+      const record=f.put({draftPackage:f.pkg,draftAsset:f.asset,review:{...f.review,premiseAlignment:alignment}});
+      expect(()=>transitionCycle(approved,{type:'complete-internal',stage:'editorial',record,at:now},registry,f.root)).toThrow();
+    }
+    const failed=f.put({draftPackage:f.pkg,draftAsset:f.asset,review:{...f.review,exceptionalConditions:['Unsupported central causal story.']}});
+    expect(()=>transitionCycle(approved,{type:'complete-internal',stage:'editorial',record:failed,at:now},registry,f.root)).toThrow(/cannot be overridden/);
+    const reason=f.put({cycleId:approved.id,reason:'Later research invalidated the publishing opportunity; preserve approval but abandon this attempt.'});
+    const retry=transitionCycle(approved,{type:'retry-internal',stage:'discovery',record:reason,at:now},registry,f.root);
+    expect(retry).toMatchObject({id:approved.id,stage:'discovery',premise:null,premiseDecision:null});
+    expect(retry.history.some(h=>h.event==='owner-decision')).toBe(true);
+    const creative=transitionCycle(approved,f.event('editorial'),registry,f.root);
+    const refine=transitionCycle(creative,{type:'retry-internal',stage:'editorial',record:reason,at:now},registry,f.root);
+    expect(refine.premiseDecision).toEqual(approved.premiseDecision);
+    expect(transitionCycle(refine,f.event('editorial'),registry,f.root).stage).toBe('creative');
+  });
+  it('recovers premise approval, learns approval as well as rejection, and rejects forged learning state',()=>{
+    const f=fixture();const initial=initializeCycle(f.root,f.authority);
+    const pending=persistCycleEvent(f.root,initial,f.event('discovery'),registry);
+    const event:CycleEvent={type:'owner-decision',record:f.decision('premise-review',f.selection),at:now};
+    const approved=transitionCycle(pending,event,registry,f.root);
+    writeFileSync(join(f.root,'workflow/cycles',initial.id,'event-2.json'),JSON.stringify({previousSha256:sha256Json(pending),event,nextSha256:sha256Json(approved)}));
+    expect(recoverCycleEvent(f.root,initial.id,registry)).toEqual(approved);
+    expect(editorialDecisionContext(f.root)[0]).toMatchObject({judgment:'approve',statedReason:null,interpretation:null});
+    expect(loadCycle(f.root,initial.id,registry)).toEqual(approved);
+    const statePath=join(f.root,'workflow/cycles',initial.id,'state.json');
+    writeFileSync(statePath,JSON.stringify({...approved,stage:'authorized'}));
+    expect(()=>editorialDecisionContext(f.root)).toThrow(/committed journal events/);
+  });
+  it('replays all historical cycles without adding premise gates or transferring authority',()=>{
+    const cycles=loadProjectCycles(process.cwd(),registry);
+    expect(cycles.map(c=>c.id)).toEqual(['cycle.4','cycle.5','cycle.6','cycle.7']);
+    for(const cycle of cycles){expect(cycle).not.toHaveProperty('premise');expect(cycle).not.toHaveProperty('premiseDecision');expect(cycle.history.some(h=>h.event==='premise-review')).toBe(false);}
+    expect(cycles.at(-1)).toMatchObject({stage:'authorized',revision:25});
+    const f=fixture();const pending=transitionCycle(startCycle(f.authority,f.root),f.event('discovery'),registry,f.root);
+    expect(()=>transitionCycle(pending,{type:'owner-decision',record:f.put({...read(join(f.root,f.decision('premise-review',f.selection).path)),cycleId:'cycle.other'}),at:now},registry,f.root)).toThrow(/exact review target/);
+    const context=editorialDecisionContext(process.cwd());
+    expect(context.map(c=>c.judgment)).toEqual(['reject-premise','approve-premise']);
+    expect(context.every(c=>c.nonGeneralizations.length>0)).toBe(true);
+  },60000);
+
+  it('supplies contextual approvals and rejections without a scoring or exclusion contract',async()=>{
+    const f=fixture();const adapterPath='system-audits/pre-production-premise-review/historical-editorial-decisions.json';
+    const adapters=read(adapterPath);
+    for(const entry of adapters)for(const ref of [entry.decision,entry.target,entry.selection]){mkdirSync(join(f.root,ref.path,'..'),{recursive:true});cpSync(ref.path,join(f.root,ref.path));}
+    mkdirSync(join(f.root,adapterPath,'..'),{recursive:true});cpSync(adapterPath,join(f.root,adapterPath));
+    await expect(chooseTopicAutonomously({maximumRounds:1,root:f.root,preserve:async s=>f.put(s),discoverAndCompare:async(_round,_prior,context)=>{expect(context.map(c=>c.judgment)).toEqual(['reject-premise','approve-premise']);return f.selection;}})).rejects.toThrow(/consideration/);
+    const result=await chooseTopicAutonomously({maximumRounds:1,root:f.root,preserve:async s=>f.put(s),discoverAndCompare:async(_round,_prior,context)=>({...f.selection,editorialLearningReview:context.map(c=>({decision:c.decision,application:'Use intrinsic pull and non-obvious payoff; never topic categories.',nonGeneralizations:c.nonGeneralizations}))})});
+    expect(result.outcome).toBe('selected');
+    expect(()=>validateTopicSelection({...result.selection,editorialLearningReview:[{decision:adapters[0].decision,application:'Ban related topics',nonGeneralizations:[],domainBlacklist:['history']}]},f.root)).toThrow();
+    const original=read('workflow/authorities/cycle-7-start.json');const altered=f.put({...original,instruction:'Synthetic changed authority cannot opt out of the new gate.'});
+    expect(startCycle(altered,f.root)).toMatchObject({stage:'discovery',premise:null,premiseDecision:null});
   });
 
 });

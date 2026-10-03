@@ -22,10 +22,11 @@ export const readBoundFile = (input: RecordReference, root = process.cwd()): Buf
 export const readBoundRecord = (input: RecordReference, root = process.cwd()): unknown => JSON.parse(readBoundFile(input,root).toString('utf8'));
 export const ownerDecisionSchema = z.object({
   schemaVersion: z.literal(3), id: text.startsWith('owner-decision.'), revision: z.number().int().positive(),
-  gate: z.enum(['master-review', 'publication-review', 'exception']),
+  gate: z.enum(['premise-review', 'master-review', 'publication-review', 'exception']),
   cycleId: text, targetSha256: digest, decision: z.enum(['approve', 'revise', 'reject']),
   enteredAt: z.iso.datetime(), suppliedReviewTime: z.iso.datetime().nullable(),
   reviewer: text, evidenceBasis: z.literal('explicit-owner-message'), instruction: text,
+  reason:text.optional(), nonGeneralizations:z.array(text).optional(),
   acceptedUnknowns: z.array(text), scope:recordReferenceSchema.optional(),
   validUntil:z.iso.datetime().optional(),lifecycle:z.enum(['active','superseded']).optional(),
 }).strict();

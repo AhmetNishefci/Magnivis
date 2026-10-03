@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {premiseAlignmentSchema} from './premise';
 import {knowledgePackageSchema, type KnowledgePackage} from '../knowledge/schema';
 import {contentAssetSchema, type ContentAsset} from '../content-assets/schema';
 import {sourceInspectionSchema} from '../content-intelligence/claim-review';
@@ -6,6 +7,7 @@ import {sha256Json} from '../content-intelligence/run-schema';
 import {digest, text, recordReferenceSchema, readBoundRecord,requireOwnerDecision,type RecordReference} from './evidence';
 
 export const internalEditorialReviewSchema = z.object({
+  premiseAlignment:premiseAlignmentSchema.optional(),
   schemaVersion: z.literal(3), cycleId: text, topicCandidateId: text, enteredAt: z.iso.datetime(), reviewer: text,
   packageSha256: digest, assetSha256: digest, scriptSha256: digest,
   inspections: z.array(sourceInspectionSchema.extend({

@@ -1,0 +1,121 @@
+{
+  "recordedAt": "2026-10-03T18:10:05.331979+00:00",
+  "runtime": "Node22.23.3/pnpm10.17.1",
+  "baseMain": "ca4b1ea4d2d553fa68be1a1af7bd318e5738b3b8",
+  "branch": "system/pre-production-premise-review",
+  "fullCheck": {
+    "passed": true,
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": 474,
+    "files": 49,
+    "diffHygiene": "passed"
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 699,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "historicalProtection": {
+    "passed": true,
+    "frozenHistoricalFiles": 948,
+    "changedFiles": 1231,
+    "untrackedFiles": 5
+  },
+  "recovery": {
+    "passed": true,
+    "restoredArtifacts": 227,
+    "deliveryPackages": 8,
+    "historicalWoodFrog": "HASH_ONLY",
+    "publicationAuthorized": false
+  },
+  "workflowReplay": {
+    "passed": true,
+    "cycles": [
+      {
+        "id": "cycle.4",
+        "stage": "authorized",
+        "revision": 9,
+        "observationKinds": []
+      },
+      {
+        "id": "cycle.5",
+        "stage": "authorized",
+        "revision": 13,
+        "observationKinds": [
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported"
+        ]
+      },
+      {
+        "id": "cycle.6",
+        "stage": "authorized",
+        "revision": 23,
+        "observationKinds": [
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported"
+        ]
+      },
+      {
+        "id": "cycle.7",
+        "stage": "authorized",
+        "revision": 25,
+        "observationKinds": [
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported",
+          "scheduled-owner-reported"
+        ]
+      }
+    ]
+  },
+  "protectedPathsUnchanged": [
+    "workflow/cycles",
+    "workflow/authorities",
+    "content-intelligence",
+    "artifacts",
+    "public",
+    "docs/STRATEGY.md",
+    "src/ai",
+    "src/content-intelligence/prompts.ts",
+    "src/design"
+  ],
+  "secretScan": "Zero high-confidence findings in changed text; heuristic, not proof of absence.",
+  "cleanCheckout": "pending committed branch verification",
+  "mainIntegrated": false,
+  "cycle8Started": false,
+  "discoveryPerformed": false,
+  "productionMediaGenerated": false,
+  "externalMediaPlatformActions": [],
+  "restore": {
+    "passed": true,
+    "records": 822,
+    "dispositions": {
+      "VERIFIED": 821,
+      "HISTORICAL_MISSING_EXPECTATION": 1
+    }
+  },
+  "verify": {
+    "passed": true,
+    "records": 822,
+    "dispositions": {
+      "VERIFIED": 821,
+      "HISTORICAL_MISSING_EXPECTATION": 1
+    }
+  }
+}

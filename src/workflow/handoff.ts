@@ -1,3 +1,5 @@
+import {validatePremiseSelection} from './premise';
+import {validateTopicSelection} from './topic-selection';
 import type {MediaRegistry} from '../artifacts/media';
 import {sha256Json} from '../content-intelligence/run-schema';
 import {cycleReleaseSchema, inspectCycleRelease} from './release';
@@ -7,6 +9,7 @@ import {readBoundRecord} from './evidence';
 export const ownerHandoff=(cycle:Cycle,media:MediaRegistry,root=process.cwd())=>{
   const status=cycleStatus(cycle,root,media);
   if(cycle.exception)return {gate:'exception',reason:cycle.exception.reason,evidence:cycle.exception.target,targetSha256:sha256Json(cycle.exception)};
+  if(cycle.stage==='premise-review'&&cycle.premise)return {gate:'AHMET — PREMISE REVIEW',cycleId:cycle.id,...validatePremiseSelection(validateTopicSelection(readBoundRecord(cycle.premise,root),root),root),evidence:cycle.premise,targetSha256:sha256Json(readBoundRecord(cycle.premise,root)),decision:'APPROVE PREMISE, REJECT PREMISE with reason, or REVISE PREMISE / FRAMING with specific feedback. Approval permits further research/development only; no claims, script, master or release approved.'};
   if(cycle.stage==='master-review'&&status.candidate&&cycle.candidate)return {
     gate:'MASTER REVIEW',cycleId:cycle.id,
     candidateFile:media.resolveFile(status.candidate.media),durationSeconds:status.candidate.durationSeconds,

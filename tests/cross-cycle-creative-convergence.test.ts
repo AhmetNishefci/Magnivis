@@ -80,10 +80,11 @@ describe('Cross-cycle convergence awareness within Adaptive Creative Direction',
   expect(validateCreativeDirection(old,paperPkg,paperAsset)).toEqual(old);
   expect(()=>validateCreativeDirection({...old,revision:2},paperPkg,paperAsset)).toThrow('rendered cross-cycle');
  });
- it('preserves the exact approved Cycle 4, two normal V3 gates and pre-Cycle-5 milestone state',()=>{
+ it('preserves exact Cycle 4, its historical two gates and pre-Cycle-5 milestone state',()=>{
   const registry=loadMediaRegistry();const cycle=loadCycle(process.cwd(),'cycle.4',registry);
   expect(cycle.stage).toBe('authorized');expect(cycle.revision).toBe(9);expect(action(cycle)).toEqual({kind:'manual-publication',gate:null});
-  const spec=readFileSync('src/workflow/cycle.ts','utf8');expect(spec).toContain("['master-review','publication-review'].includes(cycle.stage)");
+  expect(cycle.history.filter(h=>h.event==='owner-decision').map(h=>JSON.parse(readFileSync(h.evidence.path,'utf8')).gate)).toEqual(['master-review','publication-review']);
+  expect(cycle).not.toHaveProperty('premiseDecision');
   expect(mediaHash('artifacts/masters/paper-half-shape-candidate-v1.mp4')).toBe('93955c8959157fd01c680c195d0f4ed9bcdb883fe4472e92e7af5c9505dd74b7');
   // The system milestone did not authorize Cycle 5; a later explicit owner start may.
   expect(execFileSync('git',['show','87cc71f:workflow/project-state.json'],{encoding:'utf8'})).not.toContain('cycle.5');

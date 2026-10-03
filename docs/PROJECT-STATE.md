@@ -1,3 +1,5 @@
+> 2026-10-03 review branch: focused prospective Premise Review/editorial-decision learning implementation on `system/pre-production-premise-review`, based on main `ca4b1ea`. Pending owner workflow review/integration; main's historical architecture approval is not reinterpreted. Cycle #7 stays authorized at revision 25 with four owner-reported schedules, publication pending and analytics unknown. Cycle #8 remains unstarted. See [audit](../system-audits/pre-production-premise-review/audit.md).
+
 > 2026-10-03 Cycle #7 scheduling update — OWNER-REPORTED manually scheduled on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels. Four append-only existing V3 observations bind exact authorized media/manifests; independent journal remains authorized at revision25. Scheduling-action time and scheduled date/time/timezone not supplied, retained unknown. Actual publication, URLs/IDs/time, processing, settings, comments, presentation/device QA and analytics remain unknown. Evidence: content-intelligence/operations/interaction-free-scheduling-v1/owner-report.json. Approved master/package unchanged. No assistant media-platform action, Cycle8, discovery, calibration change or Premise Review workflow modification. Earlier checkpoints below remain historical.
 
 > 2026-10-03 Cycle #7 — AHMET — MANUAL RELEASE: Explicit owner publication approval records event21/authorized, accepting52 presentation and5 operational uncertainties for exact four-platform release. Approved master and package unchanged; canonical file resolution verified. [Manual-release handoff](../content-intelligence/cycles/cycle-7/publication/manual-release-v1.md). Only Ahmet performs platform actions; actual scheduling/publication/settings/comments/URLs/IDs/device observations/analytics remain unknown. No Cycle8 or Premise Review workflow modification; separate task awaits explicit authority. Earlier checkpoints below remain historical.
@@ -117,7 +119,7 @@ The dated milestone sections below are historical evidence; their pending archit
 
 ---
 
-> Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
+> Current prospective orchestration and gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
 
 # Current bounded milestone — Artifact Architecture V2
 
