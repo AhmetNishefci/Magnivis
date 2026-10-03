@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-03T12:03:18.631Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/heat-v4-render.mp4",
+    "sha256": "4f760efb6b6695a34929f0f0f64bace73d7546af39c9d77ed1d91c7bba426266",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/heat-barrier-cycle6-candidate-v4.mp4",
+    "sha256": "8ce566dacc0ca2c5a91decd2c2ddd44b6c0c96ad1943076d9496b9600754c040"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.69",
+    "input_tp": "-9.09",
+    "input_lra": "1.80",
+    "input_thresh": "-34.11",
+    "output_i": "-19.03",
+    "output_tp": "-4.33",
+    "output_lra": "1.10",
+    "output_thresh": "-29.45",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "gainDb": 4.690000000000001,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

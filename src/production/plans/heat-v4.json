@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.heat-barrier.v4",
+  "revision": 4,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "heat-barrier",
+    "revision": 1,
+    "sha256": "bb194f31d882b7fc256ab5b3b6a479229e12a9426854328319ae5677fa1d6126"
+  },
+  "contentAsset": {
+    "id": "heat-barrier.asset.vapor-cushion",
+    "revision": 1,
+    "sha256": "abb64f94bda80748f5b415a4582d3b383d8a4847a14151bb454af369e2f93574"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.6",
+    "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/youtube.json",
+      "sha256": "f0bcdea7d9e5883ac2b82ffc4c79c3ddf892a8bf6c4349c47a47aa6696c1a58d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/tiktok.json",
+      "sha256": "35c02fb9da7b384680a11d8b964cfec1ff54f6b4219906986cc25f5e31ec2d77"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/instagram.json",
+      "sha256": "13d3a3c7178ef28ef6ef9208f424152db0a85e5c546f49735ba60f60f4faa4ea"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/facebook.json",
+      "sha256": "c1613d7ec12fcde4238be8dafa789c76bfda3ad7a66d1d5ad67bb5d64b8203a1"
+    }
+  ],
+  "approvedScriptSha256": "8ce53cb6ca2663ef8e38fe278bf5e77715d1f3acf8b2efbd697b5ec53a7b039d",
+  "creativeDirection": {
+    "id": "creative-direction.heat-barrier.v1",
+    "revision": 1,
+    "sha256": "ab380133988b0697065fe970b8e7ca911ac1a01768c709fe16f424d5487d4dcc"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "heat-barrier.claim.always"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 41.86666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "heat.production.1",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.1",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.1",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.1"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.reversal"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 105
+      },
+      "sceneType": "thermal-reversal",
+      "objective": "Pose the conditional reversal with a disappearing direct-contact drop and a persistent bead.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.2",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.2",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.2",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.2"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.contact"
+      ],
+      "frames": {
+        "start": 105,
+        "end": 240
+      },
+      "sceneType": "direct-contact",
+      "objective": "Show wetting and rapid boiling on hot metal.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.3",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.3",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.3",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.3"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.cushion"
+      ],
+      "frames": {
+        "start": 240,
+        "end": 315
+      },
+      "sceneType": "transition",
+      "objective": "Transform from contact to vapor-supported state without numeric threshold.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.4",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.4",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.4",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.4"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.cushion"
+      ],
+      "frames": {
+        "start": 315,
+        "end": 417
+      },
+      "sceneType": "bottom-vapor",
+      "objective": "Magnify bottom evaporation; reveal vapor formation.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.5",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.5",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.5",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.5"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.cushion"
+      ],
+      "frames": {
+        "start": 417,
+        "end": 543
+      },
+      "sceneType": "pressure-support",
+      "objective": "Show enlarged vapor cushion and pressure support.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.6",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.6",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.6",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.6"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.insulation"
+      ],
+      "frames": {
+        "start": 543,
+        "end": 638
+      },
+      "sceneType": "gas-resistance",
+      "objective": "Contrast direct thermal path with slower transfer across gas.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.7",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.7",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.7",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.7"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.insulation",
+        "heat-barrier.claim.reversal"
+      ],
+      "frames": {
+        "start": 638,
+        "end": 743
+      },
+      "sceneType": "self-made-barrier",
+      "objective": "Resolve the paradox: heat creates the barrier.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.8",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.8",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.8",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.8"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.name"
+      ],
+      "frames": {
+        "start": 743,
+        "end": 810
+      },
+      "sceneType": "name",
+      "objective": "Name the understood phenomenon, not jargon before explanation.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.9",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.9",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.9",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.9"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.boundary"
+      ],
+      "frames": {
+        "start": 810,
+        "end": 903
+      },
+      "sceneType": "scope",
+      "objective": "Reject monotonic interpretation explicitly.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.10",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.10",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.10",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.10"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.boundary"
+      ],
+      "frames": {
+        "start": 903,
+        "end": 1001
+      },
+      "sceneType": "conditions",
+      "objective": "Show surface and droplet conditions matter without calibrated values.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.11",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.11",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.11",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.11"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.boundary"
+      ],
+      "frames": {
+        "start": 1001,
+        "end": 1094
+      },
+      "sceneType": "continued-evaporation",
+      "objective": "Show evaporation continues and can accelerate above transition.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    },
+    {
+      "id": "heat.production.12",
+      "sourceVisualPlanId": "heat-barrier.asset.vapor-cushion.visual.12",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.12",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.12"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.cushion",
+        "heat-barrier.claim.insulation"
+      ],
+      "frames": {
+        "start": 1094,
+        "end": 1256
+      },
+      "sceneType": "contact-payoff",
+      "objective": "Return to paired contact/no-contact view with the mechanism understood.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic material comparison to enlarged vapor interface; qualitative heat paths, never measured times or fluid simulation.",
+      "transitionIntent": "Paired comparison grows into enlarged interface; stable contact plane and water identity; return for scoped payoff.",
+      "audioIntent": "Measured af_heart full sentences; narration alone, no music or experiment recording."
+    }
+  ],
+  "assets": [
+    {
+      "id": "heat.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis thermal-interface illustration code",
+        "rights": "Project-owned original artwork",
+        "notes": "No third-party visual assets; gap, heat paths and shrinkage are qualitative illustrations.",
+        "evidence": "content-intelligence/cycles/cycle-6/revision-3/rights-provenance.json"
+      }
+    },
+    {
+      "id": "heat.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Mikhail Sharanda / fontsource pinned package",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing installed font selected for readable print execution; unmodified.",
+        "evidence": "content-intelligence/cycles/cycle-6/revision-2/Manrope-OFL.txt"
+      }
+    },
+    {
+      "id": "heat.narration",
+      "kind": "audio",
+      "path": "public/audio/heat-v4/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart from internally reviewed script",
+        "rights": "Project output under established Apache-2.0 model terms",
+        "notes": "No voice cloning or paid calls.",
+        "evidence": "src/production/narration/heat-v4.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/heat-barrier-v4.en.vtt",
+    "captionPlanId": "caption-plan.heat-barrier.v4",
+    "captionPlanRevision": 4,
+    "captionPlanSha256": "245957926f2d0b011a87475fab99c9da18044ca1a9db24e21b2f596a0c8fea82",
+    "generatorId": "generator.heat-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Technical probe, full decode, typography and exact caption reconstruction.",
+    "Actual master and every caption midpoint decoded and inspected.",
+    "Inspect contact-versus-gap behavior, vapor support, continuing evaporation and nonmonotonic qualification; persistent enlarged-gap disclosure.",
+    "Preflight remains provisional local playback geometry; no device/crop pass.",
+    "AHMET — MASTER REVIEW required before presentation/publication preparation."
+  ]
+}

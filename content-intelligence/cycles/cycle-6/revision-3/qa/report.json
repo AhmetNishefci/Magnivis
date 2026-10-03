@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-03T12:03:40.417Z",
+  "input": "artifacts/masters/heat-barrier-cycle6-candidate-v4.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 41.86666666666667
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -22.2,
+    "maxVolumeDb": -4.4,
+    "duration": 41.92,
+    "sizeBytes": 16777835,
+    "bitRate": 3201876
+  },
+  "passed": true,
+  "failures": []
+}

@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-03T12:09:53.627814Z",
+  "passed": true,
+  "commands": {
+    "openingSmoke": "passed:90 frames",
+    "pnpm qa heat-barrier-v4": "passed:1080x1920/30fps/H264/AAC;54 decoded checkpoints/contact sheet",
+    "fullMediaDecode": "passed:ffmpeg -xerror -err_detect explode, both video/audio",
+    "captionAndNarrationFidelity": "passed:12 exact sentences,12 exact captions/WEBVTT; all retained PCM matches bound source trim",
+    "browserLayout": "passed:54 checkpoints, every caption midpoint; no font overflow or provisional inset collision",
+    "audioInspection": "12 source +12 decoded master sentence ASR checks and complete master; full text except rare-name recognition; >=0.3s internal silence only at two grammatical commas; subjective pronunciation/prosody unresolved",
+    "workflow": "replay-validated cycle.6 revision15 master-review; candidate v4 bound; no master/publication approval",
+    "pnpm check": "passed:TypeScript +ESLint +468 tests across49 test files +git diff --check;30.71s test duration",
+    "pnpm artifacts:durable": "passed:516 canonical payloads,442 frozen legacy paths,731 durable artifacts; accepted historical original Wood Frog missing expectation unchanged"
+  },
+  "integrity": "483 previous catalog entries and payload hashes unchanged;866 historical frozen paths unchanged; nine original heat implementation/helper files byte-compared unchanged. See preservation-audit.json.",
+  "limitations": [
+    "Pronunciation/prosody and continuous subjective playback are owner judgments; name sentence24.767\u201326.742s controlled phonetic input but ASR light and frost.",
+    "All four profiles preserve due-for-renewal/provisional/unknown native UI, caption-safe/crop and absent device states; no native safety or real-device proof.",
+    "No remote push/fresh-clone durability verification in this turn."
+  ]
+}

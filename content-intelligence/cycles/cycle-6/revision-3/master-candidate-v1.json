@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.6",
+  "media": {
+    "id": "media.8ce566dacc0ca2c5a91decd2c2ddd44b6c0c96ad1943076d9496b9600754c040",
+    "sha256": "8ce566dacc0ca2c5a91decd2c2ddd44b6c0c96ad1943076d9496b9600754c040"
+  },
+  "durationSeconds": 41.86666666666667,
+  "scriptSha256": "8ce53cb6ca2663ef8e38fe278bf5e77715d1f3acf8b2efbd697b5ec53a7b039d",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-6/revision-3/production-plan.candidate-v1.json",
+    "sha256": "fb851ad8d8b82fe1f0f6eb814539d8d452e29d69bf7b58012653399ad0aeb03e"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/heat-v4.json",
+    "sha256": "2b789a5d886b5ab2ae01a62ce0ceb30b8fc0ffb47fe07e27a25b2dfe66241f4c"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/heat-v4.json",
+    "sha256": "0582dd5447b1de6b75e9b5fe1fe26c1768ba4d8283997975e0774cabec4edccd"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/youtube.json",
+        "sha256": "f0bcdea7d9e5883ac2b82ffc4c79c3ddf892a8bf6c4349c47a47aa6696c1a58d"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/youtube.json",
+        "sha256": "10e2692cf3387276c3bf11d82cbfb26eca54f2e04d61a9a314b3a52c48f26ce2"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/tiktok.json",
+        "sha256": "35c02fb9da7b384680a11d8b964cfec1ff54f6b4219906986cc25f5e31ec2d77"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/tiktok.json",
+        "sha256": "d284f87d3aeee0e76b3426be4449c10d9f960e14a8e3b37f345290235bab3472"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/instagram.json",
+        "sha256": "13d3a3c7178ef28ef6ef9208f424152db0a85e5c546f49735ba60f60f4faa4ea"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/instagram.json",
+        "sha256": "9d3b27d3f6e9b9c00239571d77854fe216a0888d6ab098eb13e79eb600ed1010"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/profiles/facebook.json",
+        "sha256": "c1613d7ec12fcde4238be8dafa789c76bfda3ad7a66d1d5ad67bb5d64b8203a1"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/preflight/facebook.json",
+        "sha256": "1e222a24fdb11455e5d5930d7294e252b882cdbb04f0639073f4fb6dd5f3292c"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "heat-cue-1",
+      "transcript": "Why can a hotter pan make a drop of water last longer?",
+      "start": 0,
+      "duration": 3.159583,
+      "media": {
+        "id": "media.4c3220bfa3d5e9844bf96ce3c1a9d9f99a826bc92127748834a0cc61f51d6036",
+        "sha256": "4c3220bfa3d5e9844bf96ce3c1a9d9f99a826bc92127748834a0cc61f51d6036"
+      }
+    },
+    {
+      "id": "heat-cue-2",
+      "transcript": "On a hot metal surface, water can touch the metal and boil away quickly.",
+      "start": 3.5,
+      "duration": 4.233375,
+      "media": {
+        "id": "media.561f80d78ce734fcf613813dce49d4b7a00ca2c423878ee6ad2ea0043b90a567",
+        "sha256": "561f80d78ce734fcf613813dce49d4b7a00ca2c423878ee6ad2ea0043b90a567"
+      }
+    },
+    {
+      "id": "heat-cue-3",
+      "transcript": "Heat it far enough, and something changes.",
+      "start": 8,
+      "duration": 2.236875,
+      "media": {
+        "id": "media.a343ebfed2822f1e095d42752114d8af84a86cc129bb00cd188a3430b1694c09",
+        "sha256": "a343ebfed2822f1e095d42752114d8af84a86cc129bb00cd188a3430b1694c09"
+      }
+    },
+    {
+      "id": "heat-cue-4",
+      "transcript": "The bottom of the drop turns to vapor almost instantly.",
+      "start": 10.5,
+      "duration": 3.149333,
+      "media": {
+        "id": "media.5d4581a89a4e8d6dc0b5f9f8a1d92861b84f462e58ef6307ff12d2a5f7acbaa2",
+        "sha256": "5d4581a89a4e8d6dc0b5f9f8a1d92861b84f462e58ef6307ff12d2a5f7acbaa2"
+      }
+    },
+    {
+      "id": "heat-cue-5",
+      "transcript": "That vapor forms a cushion, lifting the rest of the water off the metal.",
+      "start": 13.9,
+      "duration": 3.833917,
+      "media": {
+        "id": "media.607844ce99c82d04e39d2a9e1527e00ae6f19e9207ef2facb586943782a45a3c",
+        "sha256": "607844ce99c82d04e39d2a9e1527e00ae6f19e9207ef2facb586943782a45a3c"
+      }
+    },
+    {
+      "id": "heat-cue-6",
+      "transcript": "Now heat must cross a poorly conducting gas layer.",
+      "start": 18.1,
+      "duration": 2.927208,
+      "media": {
+        "id": "media.942abc8f21cff9e052ed35224e03d80eec1698277d9054b48a74d2507b92f8cc",
+        "sha256": "942abc8f21cff9e052ed35224e03d80eec1698277d9054b48a74d2507b92f8cc"
+      }
+    },
+    {
+      "id": "heat-cue-7",
+      "transcript": "The hotter surface has created a barrier to its own heat.",
+      "start": 21.266666666666666,
+      "duration": 3.110708,
+      "media": {
+        "id": "media.94f92e7c9c250f3872f7713e3d6c63c63878c93f7e6c00c4f646f1d491e724f6",
+        "sha256": "94f92e7c9c250f3872f7713e3d6c63c63878c93f7e6c00c4f646f1d491e724f6"
+      }
+    },
+    {
+      "id": "heat-cue-8",
+      "transcript": "This is the Leidenfrost effect.",
+      "start": 24.766666666666666,
+      "duration": 1.975292,
+      "media": {
+        "id": "media.b33a0b25b2dab7de68d0bf28427d1a138e5f6e155c06ccd6b347c9e1c8b16cfd",
+        "sha256": "b33a0b25b2dab7de68d0bf28427d1a138e5f6e155c06ccd6b347c9e1c8b16cfd"
+      }
+    },
+    {
+      "id": "heat-cue-9",
+      "transcript": "It doesn’t mean hotter always makes water last longer.",
+      "start": 27,
+      "duration": 2.849417,
+      "media": {
+        "id": "media.9443a4b3f8d2eec0bdd0bfd34d60a3f9ed4eaa6c7b9334cb56c43fa4781a67ba",
+        "sha256": "9443a4b3f8d2eec0bdd0bfd34d60a3f9ed4eaa6c7b9334cb56c43fa4781a67ba"
+      }
+    },
+    {
+      "id": "heat-cue-10",
+      "transcript": "The transition depends on the surface and the drop.",
+      "start": 30.1,
+      "duration": 3.011125,
+      "media": {
+        "id": "media.8a00dfd999a8a6d951af001b2ced98f3db3e0a179b878bc41d64a3bbe91f8d06",
+        "sha256": "8a00dfd999a8a6d951af001b2ced98f3db3e0a179b878bc41d64a3bbe91f8d06"
+      }
+    },
+    {
+      "id": "heat-cue-11",
+      "transcript": "Above it, more heat can speed evaporation again.",
+      "start": 33.36666666666667,
+      "duration": 2.858167,
+      "media": {
+        "id": "media.d959508a90fbef3cfacaf97a59e52110386283594f37320d637e45508988ce7d",
+        "sha256": "d959508a90fbef3cfacaf97a59e52110386283594f37320d637e45508988ce7d"
+      }
+    },
+    {
+      "id": "heat-cue-12",
+      "transcript": "The surprise is that a hotter surface can give water less direct contact with the heat.",
+      "start": 36.46666666666667,
+      "duration": 4.927,
+      "media": {
+        "id": "media.4b41a1bf63c7b570183c526156231197f9315a6a7cd22ead503e2acf5fe691e7",
+        "sha256": "4b41a1bf63c7b570183c526156231197f9315a6a7cd22ead503e2acf5fe691e7"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/qa/final-report.json",
+        "sha256": "cfd47c3a2404e44a72ed47c09269034dce08a96c50f19dd22f542ac3c9a04c1b"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Conditional can across the transition; never hotter-always or a universal pan temperature.",
+    "Vapor supports the liquid away from metal and impedes heat transfer, not total insulation.",
+    "Water continues evaporating; more heat above transition can speed evaporation again.",
+    "Original qualitative illustration; vapor gap enlarged, shrinkage and paths not calibrated, no laboratory footage or simulation.",
+    "No human contact, cooking prescription or thermal safety implication."
+  ],
+  "uncertainties": [
+    "Owner listening must assess the production-corrected LYE-den-frost sentence at 24.767–26.742s, semantic prosody and naturalness. Input phonemes are controlled; ASR cannot certify final audible quality. Full sentences remain connected; only edge silence trimmed.",
+    "Playback preflight clears sampled provisional insets; native exclusions, caption-safe geometry/crops and exact-media mobile behavior remain unknown.",
+    "No all-frame bounds or continuous-motion human playback proof; sampled decoded frames do not establish either.",
+    "No platform adaptation, cover, delivery, upload, scheduling, publication or performance evidence created.",
+    "Primary bodies inspected as text with source-access qualifications; no raw data, supplementary videos or figure images inspected."
+  ],
+  "unusualProduction": [
+    "Original reflective water/metal illustration with enlarged vapor interface, qualitative heat paths and voice-only sound. No borrowed footage or generated raster imagery."
+  ]
+}

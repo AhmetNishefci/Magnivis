@@ -1,0 +1,385 @@
+{
+  "enteredAt": "2026-10-03T12:00:43.613Z",
+  "unchangedScriptSha256": "8ce53cb6ca2663ef8e38fe278bf5e77715d1f3acf8b2efbd697b5ec53a7b039d",
+  "voice": "af_heart",
+  "speed": 0.97,
+  "semanticPolicy": "Every full sentence generated as one connected unit; caption breaks do not drive audio generation. Other eleven full-sentence sources unchanged before boundary trimming.",
+  "name": {
+    "exactText": "This is the Leidenfrost effect.",
+    "oldPhonemes": "ðɪs ɪz ðə lˈeɪdənfɹˌɔst ɪfˈɛkt.",
+    "newPhonemes": "ðɪs ɪz ðə lˈaɪdənfɹˌɔst ɪfˈɛkt.",
+    "intended": "LYE-den-frost effect",
+    "source": {
+      "path": "public/audio/heat-v4/narration/name-source.wav",
+      "sha256": "2c0ff2a70d86a0de166f6185c721a7080f6447d3e74eacc0d8cdc2e20b82501c"
+    },
+    "treatment": "Existing narrator generate_from_ids with sentence-local bound phonemes; only first vowel changed from eɪ to aɪ. No text substitution, global lexicon, provider or narrator change.",
+    "pronunciationEvidence": "content-intelligence/cycles/cycle-6/revision-3/pronunciation-evidence.json",
+    "status": "Intended phonetic input controlled; final audible intelligibility and prosody require owner listening, never inferred from ASR."
+  },
+  "pacing": {
+    "previousFrames": 1528,
+    "newFrames": 1256,
+    "previousPictureSeconds": 50.93333333333333,
+    "newPictureSeconds": 41.86666666666667,
+    "rationale": "Previous sentence boundaries stacked roughly 0.8s generated edge silence with authored 0.25–0.55s gaps. Retain active speech and internal pauses; leave 75ms at both edges plus 0.22s typical semantic pause, 0.32s hook/cushion, 0.38s barrier reveal, 0.45s closing hold. Duration follows these beats, no target runtime."
+  },
+  "trims": [
+    {
+      "cueId": "heat-cue-1",
+      "source": {
+        "path": "public/audio/heat/narration/cue-1.wav",
+        "sha256": "f99c6b30c5958c094afecafa33745022a329429e69697c85b7e7dcc2777c79be"
+      },
+      "sourceDuration": 3.85,
+      "detectedSilence": [
+        [
+          0,
+          0.333333
+        ],
+        [
+          3.34292,
+          3.85
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.258333,
+        "end": 3.41792
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.32,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-1.wav",
+        "sha256": "4c3220bfa3d5e9844bf96ce3c1a9d9f99a826bc92127748834a0cc61f51d6036"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-2",
+      "source": {
+        "path": "public/audio/heat/narration/cue-2.wav",
+        "sha256": "963302dd75ba0e05944aa4770e2759d64710dc9b11c1c9ae1cae9f34924eaeaf"
+      },
+      "sourceDuration": 4.95,
+      "detectedSilence": [
+        [
+          0,
+          0.33475
+        ],
+        [
+          1.71958,
+          2.04817
+        ],
+        [
+          4.41812,
+          4.95
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.25975,
+        "end": 4.49312
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-2.wav",
+        "sha256": "561f80d78ce734fcf613813dce49d4b7a00ca2c423878ee6ad2ea0043b90a567"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-3",
+      "source": {
+        "path": "public/audio/heat/narration/cue-3.wav",
+        "sha256": "1fa56bad97b6d02f3bc81a7ad6b1e475e2e2ae7d966df63cf0162159b41aac1a"
+      },
+      "sourceDuration": 2.875,
+      "detectedSilence": [
+        [
+          0,
+          0.318417
+        ],
+        [
+          2.40529,
+          2.875
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.243417,
+        "end": 2.48029
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-3.wav",
+        "sha256": "a343ebfed2822f1e095d42752114d8af84a86cc129bb00cd188a3430b1694c09"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-4",
+      "source": {
+        "path": "public/audio/heat/narration/cue-4.wav",
+        "sha256": "35845b13cd856696a67d0b4044014e8b5f10b684f2ffdc7b5869115a42f2ccef"
+      },
+      "sourceDuration": 3.825,
+      "detectedSilence": [
+        [
+          0,
+          0.328625
+        ],
+        [
+          3.32796,
+          3.825
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.253625,
+        "end": 3.40296
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-4.wav",
+        "sha256": "5d4581a89a4e8d6dc0b5f9f8a1d92861b84f462e58ef6307ff12d2a5f7acbaa2"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-5",
+      "source": {
+        "path": "public/audio/heat/narration/cue-5.wav",
+        "sha256": "01e17275abb3597e5b0bd5504d643696e75c3ebb704054eb38f55c023e88ca1a"
+      },
+      "sourceDuration": 4.525,
+      "detectedSilence": [
+        [
+          0,
+          0.330875
+        ],
+        [
+          1.80817,
+          2.20775
+        ],
+        [
+          4.01479,
+          4.525
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.25587499999999996,
+        "end": 4.08979
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.32,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-5.wav",
+        "sha256": "607844ce99c82d04e39d2a9e1527e00ae6f19e9207ef2facb586943782a45a3c"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-6",
+      "source": {
+        "path": "public/audio/heat/narration/cue-6.wav",
+        "sha256": "8d2eeb31f5a1b8d19b763a0c66e76a2792b7546d448c5cb51bb530136ec2a6f6"
+      },
+      "sourceDuration": 3.625,
+      "detectedSilence": [
+        [
+          0,
+          0.334375
+        ],
+        [
+          3.11158,
+          3.625
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.25937499999999997,
+        "end": 3.18658
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-6.wav",
+        "sha256": "942abc8f21cff9e052ed35224e03d80eec1698277d9054b48a74d2507b92f8cc"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-7",
+      "source": {
+        "path": "public/audio/heat/narration/cue-7.wav",
+        "sha256": "35205d7722a2596b24bbe87136996056c3b572d11b9ee09fff0cc0834a9e7a80"
+      },
+      "sourceDuration": 3.775,
+      "detectedSilence": [
+        [
+          0,
+          0.324458
+        ],
+        [
+          3.28517,
+          3.775
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.249458,
+        "end": 3.36017
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.38,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-7.wav",
+        "sha256": "94f92e7c9c250f3872f7713e3d6c63c63878c93f7e6c00c4f646f1d491e724f6"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-8",
+      "source": {
+        "path": "public/audio/heat-v4/narration/name-source.wav",
+        "sha256": "2c0ff2a70d86a0de166f6185c721a7080f6447d3e74eacc0d8cdc2e20b82501c"
+      },
+      "sourceDuration": 2.625,
+      "detectedSilence": [
+        [
+          0,
+          0.3145
+        ],
+        [
+          2.13979,
+          2.625
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.2395,
+        "end": 2.2147900000000003
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-8.wav",
+        "sha256": "b33a0b25b2dab7de68d0bf28427d1a138e5f6e155c06ccd6b347c9e1c8b16cfd"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-9",
+      "source": {
+        "path": "public/audio/heat/narration/cue-9.wav",
+        "sha256": "c9d57e3ac3b2b1ab55c6a8fe7854bde9b230a52a060021d3c81b30334afa3f6a"
+      },
+      "sourceDuration": 3.525,
+      "detectedSilence": [
+        [
+          0,
+          0.317792
+        ],
+        [
+          3.01721,
+          3.525
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.242792,
+        "end": 3.09221
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-9.wav",
+        "sha256": "9443a4b3f8d2eec0bdd0bfd34d60a3f9ed4eaa6c7b9334cb56c43fa4781a67ba"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-10",
+      "source": {
+        "path": "public/audio/heat/narration/cue-10.wav",
+        "sha256": "c85742f1068199d2192650b4a0df0d0478980700e6320e96b194c5b321fb59d5"
+      },
+      "sourceDuration": 3.675,
+      "detectedSilence": [
+        [
+          0,
+          0.321417
+        ],
+        [
+          3.18254,
+          3.675
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.246417,
+        "end": 3.25754
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-10.wav",
+        "sha256": "8a00dfd999a8a6d951af001b2ced98f3db3e0a179b878bc41d64a3bbe91f8d06"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-11",
+      "source": {
+        "path": "public/audio/heat/narration/cue-11.wav",
+        "sha256": "cf3f15eb071deda98cd95f333a62bcf1e3c23fc2b8fbfea0da405a200b95032b"
+      },
+      "sourceDuration": 3.525,
+      "detectedSilence": [
+        [
+          0,
+          0.303708
+        ],
+        [
+          3.01187,
+          3.525
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.22870799999999997,
+        "end": 3.0868700000000002
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.22,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-11.wav",
+        "sha256": "d959508a90fbef3cfacaf97a59e52110386283594f37320d637e45508988ce7d"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    },
+    {
+      "cueId": "heat-cue-12",
+      "source": {
+        "path": "public/audio/heat/narration/cue-12.wav",
+        "sha256": "0f3751b42f9ee1fd130f915624badc27df9bb8128552238ed05883d55d4c2da2"
+      },
+      "sourceDuration": 5.6,
+      "detectedSilence": [
+        [
+          0,
+          0.3285
+        ],
+        [
+          5.1055,
+          5.6
+        ]
+      ],
+      "retainedRange": {
+        "start": 0.2535,
+        "end": 5.1805
+      },
+      "boundaryMarginSeconds": 0.075,
+      "interBeatGapSeconds": 0.45,
+      "output": {
+        "path": "public/audio/heat-v4/narration/cue-12.wav",
+        "sha256": "4b41a1bf63c7b570183c526156231197f9315a6a7cd22ead503e2acf5fe691e7"
+      },
+      "internalSpeech": "Unchanged; no internal pause removal, time stretch or speech-rate increase."
+    }
+  ]
+}

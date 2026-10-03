@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.6",
-  "revision": 12,
+  "revision": 15,
   "authority": {
     "path": "workflow/authorities/cycle-6-start.json",
     "sha256": "6aed3e90317de6e37b4ea4668d1ee33d27054985c8c6238e732687de054e45b6"
@@ -36,11 +36,18 @@
         "path": "content-intelligence/cycles/cycle-6/revision-2/master-candidate-v1.json",
         "sha256": "712d37d787b12da233dcbc5f97dd3b85a3e9b99471910ad8f5486f9b1e501956"
       }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/master-candidate-v1.json",
+        "sha256": "e01b5dfb96680813340433f1eb47824a0d7f555c78d899c19604b18b46314066"
+      }
     }
   ],
   "candidate": {
-    "path": "content-intelligence/cycles/cycle-6/revision-2/master-candidate-v1.json",
-    "sha256": "712d37d787b12da233dcbc5f97dd3b85a3e9b99471910ad8f5486f9b1e501956"
+    "path": "content-intelligence/cycles/cycle-6/revision-3/master-candidate-v1.json",
+    "sha256": "e01b5dfb96680813340433f1eb47824a0d7f555c78d899c19604b18b46314066"
   },
   "masterDecision": null,
   "release": null,
@@ -166,6 +173,36 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-6/revision-2/master-candidate-v1.json",
         "sha256": "712d37d787b12da233dcbc5f97dd3b85a3e9b99471910ad8f5486f9b1e501956"
+      }
+    },
+    {
+      "revision": 13,
+      "previousSha256": "24f7bce26af71298e70a93b41fc1617eb333235093be5d6d75893fd733414e2b",
+      "event": "owner-decision",
+      "at": "2026-10-03T11:57:49.061Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/owner-execution-revision.json",
+        "sha256": "ba127208cdc290913db8af91d68bfe72275251f5db8efbb92d3ac17f47cd70dd"
+      }
+    },
+    {
+      "revision": 14,
+      "previousSha256": "2635a52aa5b69006ce4786907e0b775fcdb0df16a502aa1c8e96332fa4ca3a81",
+      "event": "begin-production",
+      "at": "2026-10-03T11:58:14.545Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/production-start.json",
+        "sha256": "6eced33cfff0728f1fffd6773c2f1cf9b930b7053c28c5557a5772b385113fe5"
+      }
+    },
+    {
+      "revision": 15,
+      "previousSha256": "cdf596a6bcb9c9fbb9f9c291fb43b54b3b6d0042269eceeb905ea04e0bda5397",
+      "event": "production",
+      "at": "2026-10-03T12:05:03.490Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-3/master-candidate-v1.json",
+        "sha256": "e01b5dfb96680813340433f1eb47824a0d7f555c78d899c19604b18b46314066"
       }
     }
   ]

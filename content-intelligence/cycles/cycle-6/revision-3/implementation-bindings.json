@@ -1,0 +1,53 @@
+{
+  "enteredAt": "2026-10-03T12:05:01.590Z",
+  "sourceBaseCommit": "1ef8d268903a858f82c3f237b63131024c00fcc7",
+  "files": [
+    {
+      "path": "src/heat-v4-index.tsx",
+      "sha256": "99b51fa41d55dba63e0a495df798708caa2cb2a7a4a29037fd19ba9fa48d0c84"
+    },
+    {
+      "path": "src/compositions/HeatBarrierV4.tsx",
+      "sha256": "95692121bdc2dd8688d6afae13671878f85227dc64b3e6375f3620cb5fe4842a"
+    },
+    {
+      "path": "src/components/ThermalInterfaceV4.tsx",
+      "sha256": "2b89cbe5a7eeed43d4a631ebaa870fd5999bbf42a0ccccc17118e357341ca260"
+    },
+    {
+      "path": "scripts/render-heat-v4.ts",
+      "sha256": "451640f732d6d4386cf458113cbf262a4d3f3049bc978f666f09b2a72abd2fb1"
+    },
+    {
+      "path": "scripts/qa-heat-v4-layout.ts",
+      "sha256": "342ffa8b659d4cfaac4d971f0dc96b901a91e7325a3ae9df16be5847c97f9e13"
+    },
+    {
+      "path": "scripts/generate-heat-v4-narration.mjs",
+      "sha256": "9bc97731f8b7025884900d78fadc137c0bfd74783c4b2039ba5caaa6adf5ee86"
+    },
+    {
+      "path": "scripts/prepare-heat-v4-production.ts",
+      "sha256": "afa6bf70027f81884ec4ec2c6897292c38f47172da33dfeaa9ac21f99ffc1bfe"
+    },
+    {
+      "path": "src/production/plans/heat-v4.json",
+      "sha256": "8895b4fac682a842828838f6c911b79aa63daa1eff402cebe5f531f9e36b2e12"
+    },
+    {
+      "path": "src/captions/plans/heat-v4.json",
+      "sha256": "2b789a5d886b5ab2ae01a62ce0ceb30b8fc0ffb47fe07e27a25b2dfe66241f4c"
+    },
+    {
+      "path": "src/production/narration/heat-v4.json",
+      "sha256": "0582dd5447b1de6b75e9b5fe1fe26c1768ba4d8283997975e0774cabec4edccd"
+    }
+  ],
+  "videoPacketSha256": "SHA256=be85faae6b3561365725cd26a76a56752822d6eebb1bb3bfba49535a84e878f5",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-6/revision-3/audio-mastering-v4.json",
+    "sha256": "6593d52bc58a83d9417044d00a60db4313071fedd07987b72595ea41bc5dcd0c"
+  },
+  "renderInputs": "Exact revised thermal plan, unchanged sentence text, boundary-trimmed full-sentence narration and sentence-local name phonemes; licensed Manrope fonts, original qualitative water/metal interface; no music or soundscape.",
+  "note": "Base commit identifies starting repository policy; exact new source hashes bind the implementation without a circular self-commit claim."
+}
