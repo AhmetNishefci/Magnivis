@@ -1,0 +1,72 @@
+{
+  "previousMain": "c183ad45ca6c4a0b1c906d6e27e1ad3f2e5d9529",
+  "approvedCommit": "04f03e846d6fe3d066e6b1605c79dc2404db16ed",
+  "reviewedBranch": "system/editorial-intelligence-calibration",
+  "integrationMethod": "history-preserving-fast-forward",
+  "ownerApprovalSource": "Ahmet explicit approval and main integration instruction in this session",
+  "preflight": {
+    "workingTreeClean": true,
+    "localMainMatchedFreshOriginMain": true,
+    "reviewedLocalAndRemoteBranchMatchedApprovedCommit": true,
+    "previousMainAncestorOfApprovedCommit": true
+  },
+  "metadataReconciliation": [
+    "workflow/project-state.json: calibration approval/integration status only",
+    "docs/PROJECT-STATE.md: appended current integration checkpoint ahead of preserved history",
+    "docs/DECISIONS.md: appended integration decision"
+  ],
+  "reviewedEditorialChangesUnmodified": true,
+  "validation": {
+    "runtime": "Node 22.23.3 / pnpm 10.17.1",
+    "pnpmCheck": "passed",
+    "testFiles": 49,
+    "tests": 468,
+    "diffHygiene": "passed",
+    "scopedAddedLineSecretScan": "passed; heuristic scan, not proof of absence"
+  },
+  "workflowReplay": {
+    "cyclesAndOverviewUnchanged": true,
+    "cycles": [
+      {
+        "id": "cycle.4",
+        "revision": 9,
+        "stage": "authorized"
+      },
+      {
+        "id": "cycle.5",
+        "revision": 13,
+        "stage": "authorized"
+      },
+      {
+        "id": "cycle.6",
+        "revision": 23,
+        "stage": "authorized"
+      }
+    ],
+    "cycle7Started": false,
+    "snapshotSha256": "a7e50c5135f654ef0c029f6438ad9619015e79dc9f8a7a4a866be1b8a5070c07"
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 517,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "operationalState": "Cycle #6 remains authorized with owner-reported schedules; actual publication and analytics unknown; no new evidence or platform actions",
+  "protectedHistoricalPathsUnchanged": true,
+  "limits": [
+    "Editorial judgments and inspection truth remain session/accountable operator work.",
+    "Historical missing original Wood Frog master remains an accepted closed-recovery gap."
+  ],
+  "gitNote": "Final metadata commit and remote synchronization are reported after commit/push; this receipt cannot self-bind its own commit."
+}
