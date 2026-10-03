@@ -105,3 +105,9 @@ One original 1080×1920 cover PNG in `artifacts/covers/paper-half-shape-cover-v1
 ## Cycle #5 Chladni presentation cover — 2026-10-03
 
 `artifacts/covers/chladni-sand-cover-v1.png` is original repository-native artwork, rendered from `src/chladni-cover-index.tsx` using the existing original Chladni plate/grain component and licensed Manrope fonts. Existing Cycle #5 OFL/license/provenance applies unchanged. No institutional image, third-party footage or AI-generated bitmap is embedded. The cover is a separate publication-review candidate; master approval does not approve it. TikTok/Facebook reference the already canonical decoded `frame-24-19.4s.png`; no new extract or duplicate was created.
+
+## Cycle #6 — tally-fire master candidate
+
+Original project-owned tally grain/split, two-cart illustration, old-Palace silhouette, furnace/chimney/floor cutaway and restrained fire in `src/components/TallyRecord.tsx`, `src/components/PalaceFireScene.tsx` and `src/compositions/TallyFire.tsx`. All geometry is disclosed reconstruction; no museum image, historical painting, source figure or third-party footage embedded. Furnace rumble/wood ticks are original deterministic synthesis in `scripts/generate-tally-sound.mjs`, not historical recordings or sampled music.
+
+Twenty-two exact af_heart narration clips use established local Kokoro 82M ONNX q8 CPU / Apache-2.0 terms, with measured cue/sample/hash provenance in `src/production/narration/tally.json`. No voice cloning, auditions, paid calls or new service. Manrope 5.3.0 is unmodified under SIL OFL 1.1; complete license retained in `content-intelligence/cycles/cycle-6/Manrope-OFL.txt`, with font binary hashes and rights assessment in `rights-provenance.json`. Master/audio/selected decoded evidence are registered canonical payloads; no master approval or publication rights decision is implied by generation.

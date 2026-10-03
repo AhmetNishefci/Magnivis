@@ -1,0 +1,61 @@
+{
+  "enteredAt": "2026-10-03T00:40:11.912Z",
+  "sourceBaseCommit": "19cd60b4ed72391ada4a56a20766e3efb991f8d7",
+  "files": [
+    {
+      "path": "src/tally-index.tsx",
+      "sha256": "66cf93c23426aefa2a0336e3aaac195693ef1a9f60b3814f64f7aa25a3e75380"
+    },
+    {
+      "path": "src/compositions/TallyFire.tsx",
+      "sha256": "64523170aade368c9fd919ee0796c4761196330b0be8b23484a3936387ec1f9c"
+    },
+    {
+      "path": "src/components/TallyRecord.tsx",
+      "sha256": "1572b7382b0c2872decf26cce7472603dda671e5a6e2d1c4a9ef4873de41782f"
+    },
+    {
+      "path": "src/components/PalaceFireScene.tsx",
+      "sha256": "22a0cae4cc8c19259927be798964211502f429b4c5f75d035c0748655f3e1ff9"
+    },
+    {
+      "path": "scripts/render-tally.ts",
+      "sha256": "24c39d2107bba41da670e37533715b97a74c1ec234f6c83a5966bb7531f74fda"
+    },
+    {
+      "path": "scripts/qa-tally-layout.ts",
+      "sha256": "223d34e856f8633de06703eac8ddcb2f788351f5c30494bd4725557e0dbb3861"
+    },
+    {
+      "path": "scripts/generate-tally-narration.mjs",
+      "sha256": "370b8153782125753bbe628a5fac73715c902a2856901d9900d195e80d491cb4"
+    },
+    {
+      "path": "scripts/generate-tally-sound.mjs",
+      "sha256": "0c12dbd1df04ea3ae24a5124100f7a72e7455e1b62639e237af9352a73fea271"
+    },
+    {
+      "path": "scripts/prepare-tally-production.ts",
+      "sha256": "e694a05a155689c16fd0a1af76db29214f4089c188201f53a67e5467da045d6c"
+    },
+    {
+      "path": "src/production/plans/tally.json",
+      "sha256": "6028f71491c458c1b8681f9cadd034a57599e35151a210a98898105d8049fe10"
+    },
+    {
+      "path": "src/captions/plans/tally.json",
+      "sha256": "8730e37d41a99410a49bbdb3b96babe17c9114aa06461f0e4b3f903a5b86d0f4"
+    },
+    {
+      "path": "src/production/narration/tally.json",
+      "sha256": "7cb45ee3ba33cef73d214669619b9adc4ed9bd6e2ad63d9b42236aed3fb9b972"
+    }
+  ],
+  "videoPacketSha256": "SHA256=815642323a510e3126d4d9fea9c87af5dbffbea4e7c6b1e66d218a0c6a972230",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-6/audio-mastering.json",
+    "sha256": "13076326d43ff3bbcc641fc1b5c984b5157e4fa71c6022ebd0228b9c3575f9eb"
+  },
+  "renderInputs": "Exact scoped plan/captions/narration and licensed Manrope fonts; original historical reconstruction and sparse synthesized sound.",
+  "note": "Base commit identifies starting repository policy; exact new source hashes bind the implementation without a circular self-commit claim."
+}

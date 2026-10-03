@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-03T00:36:35.483Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/tally-render.mp4",
+    "sha256": "0e1c382a03475b9acb12f1515f8c25a660715d5f6fe9e76251931629b3a359cb",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/tally-fire-candidate-v1.mp4",
+    "sha256": "9f056825167ac0004eb0faa52e0142253f1cd91cd860d4ea14a40ddd17ede000"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.30",
+    "input_tp": "-6.28",
+    "input_lra": "2.60",
+    "input_thresh": "-34.31",
+    "output_i": "-19.03",
+    "output_tp": "-2.33",
+    "output_lra": "2.40",
+    "output_thresh": "-30.06",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "gainDb": 4.08,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

@@ -1,0 +1,98 @@
+{
+  "mediaSha256": "9f056825167ac0004eb0faa52e0142253f1cd91cd860d4ea14a40ddd17ede000",
+  "scriptSha256": "6a6f711abb9af3edcf9c4a6c6baa0f01ab10b92a6b755ad78ae64e15ab22d79a",
+  "checkedAt": "2026-10-03T00:40:35.952Z",
+  "checks": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed"
+  },
+  "actualMedia": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 58.923,
+    "sizeBytes": 18923529,
+    "bitRate": 2569255
+  },
+  "fullDecode": "passed",
+  "videoPayloadUnchangedByMastering": "SHA256=815642323a510e3126d4d9fea9c87af5dbffbea4e7c6b1e66d218a0c6a972230",
+  "captionCount": 22,
+  "browserCheckpoints": 51,
+  "decodedContactSheet": {
+    "id": "media.93dda38deab9e57ae73fdcd3c4940418036959cb334f5d0415ac795aaf672654",
+    "sha256": "93dda38deab9e57ae73fdcd3c4940418036959cb334f5d0415ac795aaf672654"
+  },
+  "retainedReviewFrames": [
+    {
+      "id": "media.6f11640b15cbe14868c6243d72517545f0768c8a0ad67479f138b53fb5dfaea0",
+      "sha256": "6f11640b15cbe14868c6243d72517545f0768c8a0ad67479f138b53fb5dfaea0"
+    },
+    {
+      "id": "media.7c7951743cb3a54c06e3b7537c4b4347406713355d773d2d6b96c93d57a24cd3",
+      "sha256": "7c7951743cb3a54c06e3b7537c4b4347406713355d773d2d6b96c93d57a24cd3"
+    },
+    {
+      "id": "media.de316e754ed2ab3cb12eebf83bba1d2be5a783a32bb455db145494a6d260790a",
+      "sha256": "de316e754ed2ab3cb12eebf83bba1d2be5a783a32bb455db145494a6d260790a"
+    },
+    {
+      "id": "media.a19c4b941e64a250111355c7bd17f037242f83da59079e2c544fea1f524fc245",
+      "sha256": "a19c4b941e64a250111355c7bd17f037242f83da59079e2c544fea1f524fc245"
+    },
+    {
+      "id": "media.f383913fb80da7dccb7edefa627062d657e66202c1c34b0a46d1b2d0a859b1ae",
+      "sha256": "f383913fb80da7dccb7edefa627062d657e66202c1c34b0a46d1b2d0a859b1ae"
+    },
+    {
+      "id": "media.640741a35b64d459230cfe505d384abd16d2218eaab791f28d29c4aee7f1c3d8",
+      "sha256": "640741a35b64d459230cfe505d384abd16d2218eaab791f28d29c4aee7f1c3d8"
+    },
+    {
+      "id": "media.20f01ad2f772f0a640e7641bc9b718a3b3e567b725f8df6efc060031d6c1ea12",
+      "sha256": "20f01ad2f772f0a640e7641bc9b718a3b3e567b725f8df6efc060031d6c1ea12"
+    },
+    {
+      "id": "media.156a037e9c8e8b4295ea7a617679a17914d73df1f269d193fc233865d7ecca8c",
+      "sha256": "156a037e9c8e8b4295ea7a617679a17914d73df1f269d193fc233865d7ecca8c"
+    },
+    {
+      "id": "media.73894c60d7536ab60c3e4b551b301651b1012866129a03f43c7977511d24fb99",
+      "sha256": "73894c60d7536ab60c3e4b551b301651b1012866129a03f43c7977511d24fb99"
+    }
+  ],
+  "sourceReports": [
+    {
+      "path": "content-intelligence/cycles/cycle-6/qa/report.json",
+      "sha256": "52c35f10e44dac603dc562d82ab0deb4e8de7df5d1d72ae4d08bd872e3a49107"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/qa/typography-report.json",
+      "sha256": "58abe89b66408a7dcc3ef5c26bece7edf113b78868aa2bf18bfcb7df8ac5df4b"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/qa/audio-inspection.json",
+      "sha256": "1fb5ee81807dd703e6fdfa7f82f6d02227e0efc3f022787410bfbaaa6076da65"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/qa/visual-inspection.json",
+      "sha256": "db06993454abfc9685bb435649f9c5c7711b8a95c62acc8150e2eb17742aa3e5"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/sources/inspection-access-qualification.json",
+      "sha256": "11e6ca56caf380a12f44f5c88677ce1772c3355d5f5e77088eb630e61512e7e9"
+    }
+  ],
+  "audio": {
+    "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -19.2 LUFS\n    Threshold: -30.2 LUFS\n\n  Loudness range:\n    LRA:         2.3 LU\n    Threshold: -40.9 LUFS\n    LRA low:   -21.9 LUFS\n    LRA high:  -19.6 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+    "subjectiveLimit": "ASR, loudness and source-cue checks are machine corroboration; naturalness and tone balance remain owner judgment.",
+    "recognitionNote": "Whole-master Whisper skipped a middle passage. Each of all 22 exact decoded-master cue intervals was independently transcribed and corroborates the spoken text, including that entire passage. Exact source words remain canonical; ASR punctuation and smouldered/smoldered spelling differ."
+  },
+  "coverage": "51 sampled layouts and decoded checkpoints including every caption midpoint; complete media decode. No all-frame bounds or native/mobile/crop proof.",
+  "publicationApprovalGranted": false
+}

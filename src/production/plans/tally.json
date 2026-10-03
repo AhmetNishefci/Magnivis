@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.tally-fire.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "tally-fire",
+    "revision": 1,
+    "sha256": "bd81d3ef77cbc1252e2eeaf59a0a44ea062aba0f6855e0dbdd4bf8ffbf184832"
+  },
+  "contentAsset": {
+    "id": "tally-fire.asset.disposal",
+    "revision": 1,
+    "sha256": "2ae5377be2565e5edb9f812dca2ba487d86348248d1af2a7fe6fb029b10177c3"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.6",
+    "reviewSha256": "703ad752de1a069911731d8d037d1b6adf16e5c1375011d08a96319e5fda3cad"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-6/profiles/youtube.json",
+      "sha256": "f745b3f5136ea18bef79f6dd3df8b04345f7e58e3154c8d1756b7b1c1b37c307"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/profiles/tiktok.json",
+      "sha256": "65655716f52999639a6679cc460d23eb03c4c6f35d20ee401c19ccf9591b1e96"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/profiles/instagram.json",
+      "sha256": "2b8ccb0ae11d0952d623f79b3cf30a53c89c73e99ef6a8354bf4f914081a2bbf"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-6/profiles/facebook.json",
+      "sha256": "9d3624af4571bfb5f3aa9c9c689cc7b2eacbf56738b470669529a65ff3ba4dd2"
+    }
+  ],
+  "approvedScriptSha256": "6a6f711abb9af3edcf9c4a6c6baa0f01ab10b92a6b755ad78ae64e15ab22d79a",
+  "creativeDirection": {
+    "id": "creative-direction.tally-fire.v1",
+    "revision": 1,
+    "sha256": "8614b2d919147113f52d1d93da267b3583e4b86a71f03750aa5f166ad48a9ab2"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "tally-fire.claim.all-destroyed"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 58.86666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "tally.production.1",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.1",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.1",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.1"
+      ],
+      "claimIds": [
+        "tally-fire.claim.receipts"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 239
+      },
+      "sceneType": "fire-premise",
+      "objective": "Open on an original old-Palace silhouette with smouldering fire and a notched stick; causal mystery begins immediately.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.2",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.2",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.2",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.2"
+      ],
+      "claimIds": [
+        "tally-fire.claim.receipts"
+      ],
+      "frames": {
+        "start": 239,
+        "end": 319
+      },
+      "sceneType": "receipt-macro",
+      "objective": "Macro view of one original notched wooden tally; no currency claim.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.3",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.3",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.3",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.3"
+      ],
+      "claimIds": [
+        "tally-fire.claim.split"
+      ],
+      "frames": {
+        "start": 319,
+        "end": 627
+      },
+      "sceneType": "split-record",
+      "objective": "Notches cross a matching longitudinal split; separate two halves without implying a forged monetary value.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.4",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.4",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.4",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.4"
+      ],
+      "claimIds": [
+        "tally-fire.claim.cartloads"
+      ],
+      "frames": {
+        "start": 627,
+        "end": 826
+      },
+      "sceneType": "obsolete-loads",
+      "objective": "Show two schematic carts of obsolete sticks, distinguish quantity from mass.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.5",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.5",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.5",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.5"
+      ],
+      "claimIds": [
+        "tally-fire.claim.furnaces"
+      ],
+      "frames": {
+        "start": 826,
+        "end": 1001
+      },
+      "sceneType": "furnace-disposal",
+      "objective": "Move bundle toward furnace in a clearly labelled Lords cutaway; no modern palace silhouette.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.6",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.6",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.6",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.6"
+      ],
+      "claimIds": [
+        "tally-fire.claim.warnings"
+      ],
+      "frames": {
+        "start": 1001,
+        "end": 1273
+      },
+      "sceneType": "chimney-warning",
+      "objective": "Follow schematic chimney heat/smoke toward chamber floor; visible warning signs, no invented person/dialogue.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.7",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.7",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.7",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.7"
+      ],
+      "claimIds": [
+        "tally-fire.claim.breakthrough"
+      ],
+      "frames": {
+        "start": 1273,
+        "end": 1365
+      },
+      "sceneType": "floor-breakthrough",
+      "objective": "Fire breaks through chamber floor; restrained historical reconstruction, no explosion claim.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.8",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.8",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.8",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.8"
+      ],
+      "claimIds": [
+        "tally-fire.claim.survival"
+      ],
+      "frames": {
+        "start": 1365,
+        "end": 1547
+      },
+      "sceneType": "surviving-hall",
+      "objective": "Chambers darken to damage silhouettes while labelled Westminster Hall remains standing; other survival not denied.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    },
+    {
+      "id": "tally.production.9",
+      "sourceVisualPlanId": "tally-fire.asset.disposal.visual.9",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.9",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.9"
+      ],
+      "claimIds": [
+        "tally-fire.claim.receipts",
+        "tally-fire.claim.furnaces"
+      ],
+      "frames": {
+        "start": 1547,
+        "end": 1766
+      },
+      "sceneType": "choice-payoff",
+      "objective": "Return to stick beside furnace boundary; land the choice-of-disposal causal distinction.",
+      "onScreenText": [],
+      "animationIntent": "Deterministic connected illustrated narrative; longitudinal split matches notches; schematic furnace chimney rises to chamber floor. No modern clock tower or surveyed plan.",
+      "transitionIntent": "Macro wood to carts to architectural cutaway to aftermath; sober hard cuts and spatial continuity.",
+      "audioIntent": "Measured af_heart narration, sparse original wood ticks and low furnace rumble; no music."
+    }
+  ],
+  "assets": [
+    {
+      "id": "tally.sound",
+      "kind": "audio",
+      "path": "public/audio/tally/illustrative-sound.wav",
+      "provenance": {
+        "origin": "Original Magnivis deterministic synthesis",
+        "rights": "Project-owned original audio",
+        "notes": "Not an eyewitness recording; low-level fictional material sound.",
+        "evidence": "scripts/generate-tally-sound.mjs"
+      }
+    },
+    {
+      "id": "tally.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis historical illustration code",
+        "rights": "Project-owned original artwork",
+        "notes": "No third-party visual assets; architecture and fire progression are explicitly schematic.",
+        "evidence": "content-intelligence/cycles/cycle-6/rights-provenance.json"
+      }
+    },
+    {
+      "id": "tally.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Mikhail Sharanda / fontsource pinned package",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing installed font selected for readable print execution; unmodified.",
+        "evidence": "content-intelligence/cycles/cycle-6/Manrope-OFL.txt"
+      }
+    },
+    {
+      "id": "tally.narration",
+      "kind": "audio",
+      "path": "public/audio/tally/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart from internally reviewed script",
+        "rights": "Project output under established Apache-2.0 model terms",
+        "notes": "No voice cloning or paid calls.",
+        "evidence": "src/production/narration/tally.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/tally-fire.en.vtt",
+    "captionPlanId": "caption-plan.tally-fire.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "0cee5194cdbe422e2ad9ac91514ad82a8d648a7e16558a00bb736108a8cc8b44",
+    "generatorId": "generator.tally-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Technical probe, full decode, typography and exact caption reconstruction.",
+    "Actual master and every caption midpoint decoded and inspected.",
+    "Inspect matching tally split, two-load representation, furnace/chimney/floor connection, old-Palace absence of modern tower, survival scope and disclosure.",
+    "Preflight remains provisional local playback geometry; no device/crop pass.",
+    "AHMET — MASTER REVIEW required before presentation/publication preparation."
+  ]
+}

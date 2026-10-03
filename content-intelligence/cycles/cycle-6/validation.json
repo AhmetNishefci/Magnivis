@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-03T00:44:26.698110Z",
+  "cycleId": "cycle.6",
+  "stage": "master-review",
+  "candidateSha256": "9f056825167ac0004eb0faa52e0142253f1cd91cd860d4ea14a40ddd17ede000",
+  "checks": {
+    "pnpm check": {
+      "passed": true,
+      "tests": 468,
+      "testFiles": 49,
+      "typecheck": "passed",
+      "lint": "passed",
+      "diffCheck": "passed"
+    },
+    "pnpm artifacts:durable": {
+      "passed": true,
+      "canonicalPayloads": 456,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442,
+      "durableArtifactCount": 731,
+      "historicalMissingExpectationsUnchanged": [
+        "wood-frog.historical-master"
+      ]
+    },
+    "pnpm qa tally-fire": {
+      "passed": true,
+      "decodedSamples": 51
+    },
+    "sourceBindings": {
+      "passed": true
+    },
+    "historicalCatalog": {
+      "passed": true,
+      "preservedEntries": 422,
+      "appendOnlyAdditions": 34
+    },
+    "cycleReplay": {
+      "passed": true,
+      "stage": "master-review",
+      "ownerDecisionAbsent": true
+    }
+  },
+  "mediaDetails": {
+    "pixelFormat": "yuvj420p",
+    "colorRange": "full-range 4:2:0",
+    "audioChannels": 2,
+    "channelLayout": "stereo",
+    "audioSampleRate": 48000,
+    "pictureFrames": 1766,
+    "muxDurationSeconds": 58.923,
+    "bytes": 18923529
+  },
+  "recognition": "All 22 source and decoded-master cue intervals corroborate narration. Whole-master tiny Whisper omitted middle passage; does not imply missing speech or canonical word changes.",
+  "limitations": [
+    "Historical missing Wood Frog original remains unchanged, not a new production blocker.",
+    "Local sampled bounds/decode and ASR do not establish subjective continuous playback or real-device safety.",
+    "No remote push/fresh clone performed in this cycle; local Git checkpoint and canonical checks only."
+  ],
+  "externalActionsPerformed": false,
+  "masterApprovalGranted": false,
+  "publicationPreparationPerformed": false
+}

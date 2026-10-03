@@ -1,20 +1,13 @@
 {
   "schemaVersion": 3,
   "id": "cycle.6",
-  "revision": 4,
+  "revision": 5,
   "authority": {
     "path": "workflow/authorities/cycle-6-start.json",
     "sha256": "6aed3e90317de6e37b4ea4668d1ee33d27054985c8c6238e732687de054e45b6"
   },
-  "stage": "production",
-  "workInProgress": {
-    "stage": "production",
-    "record": {
-      "path": "content-intelligence/cycles/cycle-6/production-start.json",
-      "sha256": "e63bfb64ca8f0d5587ee6d1e8d73eb4cee05242adc3d2f974aa00282f5377207"
-    },
-    "startedAt": "2026-10-03T00:30:32.460Z"
-  },
+  "stage": "master-review",
+  "workInProgress": null,
   "receipts": [
     {
       "stage": "discovery",
@@ -36,9 +29,19 @@
         "path": "content-intelligence/cycles/cycle-6/direction-v1.json",
         "sha256": "b2bfea71ee0220cb819af9a00ea701a7a86d6781d6f7e74afecc8e097c42ab17"
       }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-6/master-candidate-v1.json",
+        "sha256": "41d91235c4fcd275a0739dad1d553c8aa65fd3f5d2c7b3041a7a487c7405124b"
+      }
     }
   ],
-  "candidate": null,
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-6/master-candidate-v1.json",
+    "sha256": "41d91235c4fcd275a0739dad1d553c8aa65fd3f5d2c7b3041a7a487c7405124b"
+  },
   "masterDecision": null,
   "release": null,
   "publicationDecision": null,
@@ -83,6 +86,16 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-6/production-start.json",
         "sha256": "e63bfb64ca8f0d5587ee6d1e8d73eb4cee05242adc3d2f974aa00282f5377207"
+      }
+    },
+    {
+      "revision": 5,
+      "previousSha256": "273dad645cc11d7ef09002261fe93d04e10c382cad28167c00d5bf1a46dc0304",
+      "event": "production",
+      "at": "2026-10-03T00:40:36.847Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/master-candidate-v1.json",
+        "sha256": "41d91235c4fcd275a0739dad1d553c8aa65fd3f5d2c7b3041a7a487c7405124b"
       }
     }
   ]
