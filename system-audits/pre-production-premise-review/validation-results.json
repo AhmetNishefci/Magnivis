@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-10-03T18:10:05.331979+00:00",
+  "recordedAt": "2026-10-03T18:35:09.517865+00:00",
   "runtime": "Node22.23.3/pnpm10.17.1",
   "baseMain": "ca4b1ea4d2d553fa68be1a1af7bd318e5738b3b8",
   "branch": "system/pre-production-premise-review",
@@ -95,8 +95,19 @@
     "src/content-intelligence/prompts.ts",
     "src/design"
   ],
-  "secretScan": "Zero high-confidence findings in changed text; heuristic, not proof of absence.",
-  "cleanCheckout": "pending committed branch verification",
+  "secretScan": {
+    "scope": "Changed text versus ca4b1ea plus new untracked review receipt",
+    "files": 31,
+    "highConfidenceFindings": [],
+    "limitation": "Heuristic scan does not prove absence of secrets."
+  },
+  "cleanCheckout": {
+    "passed": true,
+    "evidence": "system-audits/pre-production-premise-review/clean-checkout.json",
+    "testedCodeCommit": "14973f74150c986fba6327101deae70e90906738",
+    "fullCheck": "474 tests / 49 files; typecheck/lint/diff hygiene passed",
+    "defaultSettings": true
+  },
   "mainIntegrated": false,
   "cycle8Started": false,
   "discoveryPerformed": false,
@@ -117,5 +128,7 @@
       "VERIFIED": 821,
       "HISTORICAL_MISSING_EXPECTATION": 1
     }
-  }
+  },
+  "testedCodeCommit": "14973f74150c986fba6327101deae70e90906738",
+  "editorialContextProtection": "Callback receives copied context; completeness uses original supplied judgments; mutation regression passed."
 }

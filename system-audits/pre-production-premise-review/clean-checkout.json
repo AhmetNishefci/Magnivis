@@ -1,0 +1,88 @@
+{
+  "recordedAt": "2026-10-03T18:35:09.517624+00:00",
+  "testedCodeCommit": "14973f74150c986fba6327101deae70e90906738",
+  "cloneMethod": "GitHub --single-branch --reference source object cache --dissociate; independent Git object store, no alternates; not a full uncached network download",
+  "dependencies": "fresh pnpm install --offline --frozen-lockfile from existing local package cache; no node_modules symlink",
+  "fullCheck": {
+    "passed": true,
+    "command": "pnpm check",
+    "testFiles": 49,
+    "tests": 474,
+    "unchangedTimeouts": true,
+    "defaultWorkers": true,
+    "defaultGitRenameSettings": true
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 699,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "recovery": {
+    "passed": true,
+    "restoredArtifacts": 227,
+    "deliveryPackages": 8,
+    "historicalWoodFrog": "HASH_ONLY",
+    "publicationAuthorized": false
+  },
+  "workflowReplay": [
+    {
+      "id": "cycle.4",
+      "stage": "authorized",
+      "revision": 9,
+      "observations": []
+    },
+    {
+      "id": "cycle.5",
+      "stage": "authorized",
+      "revision": 13,
+      "observations": [
+        "scheduled-owner-reported",
+        "scheduled-owner-reported",
+        "scheduled-owner-reported",
+        "scheduled-owner-reported"
+      ]
+    },
+    {
+      "id": "cycle.6",
+      "stage": "authorized",
+      "revision": 23,
+      "observations": [
+        "scheduled-owner-reported",
+        "scheduled-owner-reported",
+        "scheduled-owner-reported",
+        "scheduled-owner-reported"
+      ]
+    },
+    {
+      "id": "cycle.7",
+      "stage": "authorized",
+      "revision": 25,
+      "observations": [
+        "scheduled-owner-reported",
+        "scheduled-owner-reported",
+        "scheduled-owner-reported",
+        "scheduled-owner-reported"
+      ]
+    }
+  ],
+  "restore": "passed, copies exact retained bytes only; no rendering",
+  "artifactVerify": "passed",
+  "trackedTreeClean": true,
+  "cycle8Exists": false,
+  "initialTimeouts": "Historical validators exceeded unchanged 5-second timeouts before checkout index refresh. One-worker, rename and object-layout hypotheses did not resolve them. Normal git status refreshed index metadata; default full check then passed, including the final callback safeguard. No tests skipped or limits relaxed.",
+  "remainingLimitations": [
+    "Object cache and local locked dependency cache reused; no claim of fresh all-network download.",
+    "Hashes and structural checks cannot prove scientific truth, taste or semantic materiality."
+  ]
+}
