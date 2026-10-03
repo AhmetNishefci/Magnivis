@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-03T17:23:20.833726+00:00",
+  "passed": true,
+  "runtime": "Node22.23.3 / pnpm10.17.1",
+  "pnpmCheck": {
+    "finalExitCode": 0,
+    "files": 49,
+    "tests": 468,
+    "typecheck": "passed",
+    "lint": "passed",
+    "firstAttempt": {
+      "exitCode": 1,
+      "passedTests": 466,
+      "failedTests": 2,
+      "failures": [
+        {
+          "file": "tests/chocolate-direction.test.ts",
+          "reason": "5000ms timeout"
+        },
+        {
+          "file": "tests/chocolate-finalization.test.ts",
+          "reason": "5000ms timeout"
+        }
+      ]
+    },
+    "resolution": "Full unchanged pnpm check rerun idle; all468 tests passed. No timeout/test/schema changes or bypass."
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 699,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "authorizedCliResolver": "passed with exact replayed authorized release and owner decision",
+  "diffAndScopedSecretChecks": "passed",
+  "approvedMediaAndPackaging": "unchanged from b07cb9a; prior rendering/full exact-media QA remains bound, authorization did not render or copy anything",
+  "state": "authorized",
+  "revision": 21,
+  "actualScheduling": null,
+  "actualPublication": null,
+  "analytics": null,
+  "externalActions": [],
+  "cycle8Started": false,
+  "premiseReviewModificationStarted": false
+}
