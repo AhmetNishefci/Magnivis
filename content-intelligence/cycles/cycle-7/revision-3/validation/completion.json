@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-03T16:46:49.928904Z",
+  "node": "22.23.3",
+  "sourceBaseCommit": "4c0a9a5",
+  "requiredChecks": {
+    "pnpm check": {
+      "exitCode": 0,
+      "typescript": "passed",
+      "eslint": "passed",
+      "testFiles": 49,
+      "tests": 468,
+      "gitDiffCheck": "passed"
+    },
+    "pnpm artifacts:durable": {
+      "exitCode": 0,
+      "passed": true,
+      "canonicalMedia": {
+        "passed": true,
+        "canonicalPayloads": 698,
+        "explicitExceptions": 0,
+        "frozenLegacyBinaryPaths": 442
+      },
+      "durableArtifactCount": 731,
+      "historicalMissingExpectations": [
+        {
+          "artifactId": "wood-frog.historical-master",
+          "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+        }
+      ]
+    },
+    "smokeRender": "passed; opening segment and full final render",
+    "fullRenderAndNormalMediaQA": "passed",
+    "fullDecode": "passed",
+    "browserCheckpoints": 101,
+    "captionMidpoints": 28,
+    "exactAudioRecognition": "corroborated; variations and listening limitations retained"
+  },
+  "historicalPreservation": {
+    "path": "content-intelligence/cycles/cycle-7/revision-3/validation/historical-preservation.json",
+    "sha256": "aca9662b4707b168e3809619810ef09f7a2c5312ec5554822970d6623b1fc57d"
+  },
+  "controller": {
+    "cycleId": "cycle.7",
+    "revision": 18,
+    "stage": "master-review",
+    "masterApproved": false,
+    "publicationAuthorized": false
+  },
+  "scope": "Additive approved-premise master revision; no discovery, Cycle8, publication preparation, external actions or history rewrite. Full qa reports and immutable media are bound in candidate; checks cannot establish empirical audience comprehension or mobile safety."
+}

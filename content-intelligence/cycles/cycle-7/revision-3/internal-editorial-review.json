@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.7",
+  "topicCandidateId": "interaction-free",
+  "enteredAt": "2026-10-03T16:27:29.925Z",
+  "reviewer": "Codex session — internal evidence review, not Ahmet",
+  "packageSha256": "89cbe3746c3456a9b1dd7564f29ed99cbb207290956d2f9dbff68c981a724c67",
+  "assetSha256": "c073234641fe160693864a47288e0f80515d9fca17532c7ba06f5bb82d379eb4",
+  "scriptSha256": "ef38982c80ebbb65e51cf1fb8f28f319a2fc8a40d22aeb5ee12c99d8981b700d",
+  "inspections": [
+    {
+      "sourceId": "source.interaction-free.ev1993",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7"
+      ],
+      "supportsClaimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.paths",
+        "interaction-free.claim.dark",
+        "interaction-free.claim.cancel",
+        "interaction-free.claim.absorber",
+        "interaction-free.claim.click",
+        "interaction-free.claim.fail"
+      ],
+      "limitations": [
+        "Theory and ideal apparatus; real alignment, leakage and detector noise matter.",
+        "No preferred path or interpretation asserted. No general zero disturbance claim."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/sources/ev1993-inspection.json",
+        "sha256": "0590913bbda73dceef3277fd509f78ae151e85080da9ae3c261ebfdaedcc072c"
+      },
+      "sourceQualityRationale": "Original published theoretical proposal, exact ideal-model equations and explicit interpretational caveat."
+    },
+    {
+      "sourceId": "source.interaction-free.kwiat1996",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration"
+      ],
+      "supportsClaimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.dark",
+        "interaction-free.claim.click",
+        "interaction-free.claim.fail",
+        "interaction-free.claim.demo"
+      ],
+      "limitations": [
+        "Participant explanation, not independent replication or raw data review.",
+        "Production uses an ideal Mach-Zehnder absorbing-obstacle model, not a replica of their Michelson mirror experiment.",
+        "1995 PRL researcher PDF was image-only: fetched and attempted text extraction, but body not inspected; not used as verified evidence."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/sources/kwiat1996-inspection.json",
+        "sha256": "99f009b86b8fcdd3ea0289742e7dc019e2805f99d897178eca82e4b3b10597a1"
+      },
+      "sourceQualityRationale": "Experimenters’ own detailed published account qualifies empirical demonstration and actual apparatus; no claim of independent corroboration or raw data inspection."
+    }
+  ],
+  "claims": [
+    {
+      "id": "interaction-free.claim.detect",
+      "statementSha256": "4e24924ce7a54d264c1c6725f67d638542f7fbb4db0e7bd088d0103b14a0ea7f",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "assessment": "Operational successful-trial statement; no metaphysical zero interaction or guarantee.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "assessment": "Operational successful-trial statement; no metaphysical zero interaction or guarantee.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.paths",
+      "statementSha256": "cb441e733be52368a933644cc314b33aaff3b1b031fddfbcb9461bcb6bd79725",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "assessment": "Path wave amplitudes, not two half photons or classical definite trajectories.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.dark",
+      "statementSha256": "37cb66c196325b5d6b562b62e327275d9134dc9777f28f3a8c1486abaef06cc7",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "assessment": "Real leakage and detector noise prevent absolute experimental certainty.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "assessment": "Real leakage and detector noise prevent absolute experimental certainty.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.cancel",
+      "statementSha256": "d8c90a39a16ba6497c2385da532a9110bd073e0c1a1afac9bcf6987dcc463e2b",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "assessment": "Schematic waves represent probability amplitudes, not visible light or destroyed photon energy.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.absorber",
+      "statementSha256": "7486712f2a051884afe44df8a3c9bc57b712cf77589e756151d74cb7cceb6c9f",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "assessment": "One photon, ideal absorber and output detectors; not all detectors in actual heralding apparatus.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.click",
+      "statementSha256": "4b1b98be739f62f5d4a0158667237b19d9295739d2105965c86acbb6fb1bff53",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "assessment": "Sometimes, not every trial; no unqualified practical detector certainty.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "assessment": "Sometimes, not every trial; no unqualified practical detector certainty.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.fail",
+      "statementSha256": "ba277bdee70c0fd172150df964279219c5438f229d9fceb6a332816fd4a61e68",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.ev1993",
+          "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+          "assessment": "This simple arrangement risks absorption; no universally harmless sensing claim.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "assessment": "This simple arrangement risks absorption; no universally harmless sensing claim.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.demo",
+      "statementSha256": "3916e13a1bb5875dc37bc3f8a7f6ace2c2ca2908e4bb56f26a9722581124fbc7",
+      "disposition": "verify",
+      "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.interaction-free.kwiat1996",
+          "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+          "assessment": "Participant account describes different physical implementation; original research figures and raw data not inspected.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "interaction-free.claim.metaphysics",
+      "statementSha256": "53670a3d1cfb1b2a252426ac5d2853ece81008220dbdf6df57df8ce1b66a6b9b",
+      "disposition": "exclude",
+      "rationale": "Unrestricted metaphysical no-interaction claim not supported; excluded unchanged.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    }
+  ],
+  "misconceptionSafeguards": [
+    "No two half photons, energy destruction or classical definite trajectory.",
+    "Probability-amplitude schematic; no actual measurement footage or trace.",
+    "No photon hits absorber then reaches output; separate trial labels.",
+    "Correctly aligned ideal apparatus; noise/leakage not erased from review.",
+    "Other trials absorb or yield inconclusive output; no guarantee or universal harmless sensing.",
+    "No preferred quantum interpretation, consciousness effect, faster-than-light signal or observation-as-mind assertion."
+  ],
+  "comprehensionReview": "Owner approves premise, requests causal execution. New exact wording removes front-loaded interferometer jargon; one photon/two possibilities precede cancellation; intervention precedes two separately identified outcomes; successful nonabsorption is climax before explanatory return. Demonstration and probabilistic risks remain explicit. Source statements and qualifications unchanged; original inspected evidence records reused with original retrieval dates, not falsely reread or redated.",
+  "rightsReview": "Original instrument/amplitude artwork only; no research figures, photos or footage. Existing OFL fonts and local Kokoro model; no unresolved rights/purchase.",
+  "careAssessment": {
+    "state": "routine",
+    "rationale": "Scoped physical explanation and ideal model with author experimental account; no medical use, hazardous demonstration instructions or metaphysical verdict."
+  },
+  "exceptionalConditions": []
+}

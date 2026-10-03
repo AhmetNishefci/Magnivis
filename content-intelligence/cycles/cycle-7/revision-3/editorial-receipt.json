@@ -1,0 +1,866 @@
+{
+  "draftPackage": {
+    "id": "interaction-free",
+    "revision": 2,
+    "topic": "Single-photon interaction-free detection",
+    "centralQuestion": "How can light reveal an obstacle without being absorbed or reflected by it?",
+    "taxonomy": {
+      "pillar": "science-reality",
+      "domains": [
+        "quantum-optics"
+      ],
+      "topics": [
+        "interference",
+        "interaction-free-measurement"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "In an ideal aligned interferometer, an absorbing obstacle changes interference and allows a previously dark detector to click without absorbing that detected photon; other trials can fail.",
+    "viewerPayoff": "The click reveals a blocked possibility without absorption of the detected photon, while unsuccessful trials retain risk.",
+    "sources": [
+      {
+        "id": "source.interaction-free.ev1993",
+        "organization": "Elitzur and Vaidman / Tel Aviv University; Foundations of Physics",
+        "title": "Quantum Mechanical Interaction-Free Measurements (1993)",
+        "sourceType": "peer-reviewed",
+        "url": "https://arxiv.org/pdf/hep-th/9305002",
+        "retrieved": "2026-10-03",
+        "notes": "Theory and ideal apparatus; real alignment, leakage and detector noise matter. No preferred path or interpretation asserted. No general zero disturbance claim."
+      },
+      {
+        "id": "source.interaction-free.kwiat1996",
+        "organization": "Kwiat, Weinfurter and Zeilinger / Scientific American; author-hosted Illinois copy",
+        "title": "Quantum Seeing in the Dark (November 1996)",
+        "sourceType": "primary-source",
+        "url": "https://research.physics.illinois.edu/QI/Photonics/papers/My%20Collection.Data/PDF/Quantum%20Seeing%20in%20the%20Dark.pdf",
+        "retrieved": "2026-10-03",
+        "notes": "Participant explanation, not independent replication or raw data review. Production uses an ideal Mach-Zehnder absorbing-obstacle model, not a replica of their Michelson mirror experiment. 1995 PRL researcher PDF was image-only: fetched and attempted text extraction, but body not inspected; not used as verified evidence."
+      }
+    ],
+    "claims": [
+      {
+        "id": "interaction-free.claim.detect",
+        "statement": "In an ideal aligned single-photon interferometer, a successful dark-output click can reveal an opaque obstacle without that photon being absorbed or scattered by it.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "Operational successful-trial statement; no metaphysical zero interaction or guarantee."
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "notes": "Operational successful-trial statement; no metaphysical zero interaction or guarantee."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Operational successful-trial statement; no metaphysical zero interaction or guarantee."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.paths",
+        "statement": "A balanced interferometer offers two possible paths that recombine.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "Path wave amplitudes, not two half photons or classical definite trajectories."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Path wave amplitudes, not two half photons or classical definite trajectories."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.dark",
+        "statement": "With both arms unobstructed and correct alignment, destructive interference makes one output dark in the ideal model.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "Real leakage and detector noise prevent absolute experimental certainty."
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "notes": "Real leakage and detector noise prevent absolute experimental certainty."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Real leakage and detector noise prevent absolute experimental certainty."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.cancel",
+        "statement": "The amplitudes associated with the two arms cancel at that output.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "Schematic waves represent probability amplitudes, not visible light or destroyed photon energy."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Schematic waves represent probability amplitudes, not visible light or destroyed photon energy."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.absorber",
+        "statement": "An object that absorbs the single photon prevents it reaching either output detector.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "One photon, ideal absorber and output detectors; not all detectors in actual heralding apparatus."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "One photon, ideal absorber and output detectors; not all detectors in actual heralding apparatus."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.click",
+        "statement": "Blocking one arm makes a formerly dark output possible in the ideal model.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "Sometimes, not every trial; no unqualified practical detector certainty."
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "notes": "Sometimes, not every trial; no unqualified practical detector certainty."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Sometimes, not every trial; no unqualified practical detector certainty."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.fail",
+        "statement": "Other trials result in photon absorption or inconclusive bright-output detection.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "This simple arrangement risks absorption; no universally harmless sensing claim."
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "notes": "This simple arrangement risks absorption; no universally harmless sensing claim."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "This simple arrangement risks absorption; no universally harmless sensing claim."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.demo",
+        "statement": "Researchers have experimentally demonstrated interaction-free measurement.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "notes": "Participant account describes different physical implementation; original research figures and raw data not inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Participant account describes different physical implementation; original research figures and raw data not inspected."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "interaction-free.claim.metaphysics",
+        "statement": "Interaction-free measurement proves that nothing interacts anywhere in every interpretation.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "notes": "Unverified overreach explicitly excluded; source discusses interpretation dependence."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Unverified overreach explicitly excluded; source discusses interpretation dependence."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "interaction-free.caveat.model",
+        "statement": "Ideal apparatus schematic; curves are path amplitudes, not two photons or measured trajectories. Real noise/leakage and quantum interpretation limit unrestricted claims.",
+        "claimIds": [
+          "interaction-free.claim.detect",
+          "interaction-free.claim.paths",
+          "interaction-free.claim.dark",
+          "interaction-free.claim.cancel",
+          "interaction-free.claim.absorber",
+          "interaction-free.claim.click",
+          "interaction-free.claim.fail",
+          "interaction-free.claim.demo"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "interaction-free.hook.no-exchange",
+        "archetype": "apparent-impossibility",
+        "text": "How can light reveal an obstacle without being absorbed or reflected by it?",
+        "viewerPromise": "Explain the successful outcome without reflected object light or absorption of the detected photon.",
+        "claimIds": [
+          "interaction-free.claim.detect"
+        ]
+      },
+      {
+        "id": "interaction-free.hook.dark",
+        "archetype": "forbidden-outcome",
+        "text": "An obstacle makes a previously dark detector click.",
+        "viewerPromise": "Explain why removing a path allows an output.",
+        "claimIds": [
+          "interaction-free.claim.dark",
+          "interaction-free.claim.click"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "interaction-free.narrative.outcome",
+        "title": "The detector that should stay dark",
+        "description": "Puzzle, open baseline, cancellation, absorber, successful click, reasoning and failed outcomes.",
+        "claimIds": [
+          "interaction-free.claim.detect",
+          "interaction-free.claim.paths",
+          "interaction-free.claim.dark",
+          "interaction-free.claim.cancel",
+          "interaction-free.claim.absorber",
+          "interaction-free.claim.click",
+          "interaction-free.claim.fail",
+          "interaction-free.claim.demo"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "interaction-free.visual.instrument",
+        "title": "Keep the instrument fixed while the possibility changes",
+        "description": "Progressive path construction, enlarged cancellation, separate trial outcomes and successful detector climax; original ideal model.",
+        "claimIds": [
+          "interaction-free.claim.detect",
+          "interaction-free.claim.paths",
+          "interaction-free.claim.dark",
+          "interaction-free.claim.cancel",
+          "interaction-free.claim.absorber",
+          "interaction-free.claim.click",
+          "interaction-free.claim.fail",
+          "interaction-free.claim.demo"
+        ]
+      }
+    ],
+    "relatedQuestions": [
+      "How does an interference dark port differ from a classical shadow?",
+      "Why does interaction-free not mean guaranteed harmless?"
+    ],
+    "followUpOpportunities": [
+      "A separately researched quantum-Zeno efficiency story."
+    ],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "interaction-free.asset.dark-detector",
+    "revision": 2,
+    "knowledgePackageId": "interaction-free",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Understand how an obstacle changes an interference outcome without absorbing the detected photon, while recognizing unsuccessful trials.",
+    "storyAngle": "The clue is an outcome made possible by a blocked path.",
+    "hookId": "interaction-free.hook.no-exchange",
+    "selectedClaimIds": [
+      "interaction-free.claim.detect",
+      "interaction-free.claim.paths",
+      "interaction-free.claim.dark",
+      "interaction-free.claim.cancel",
+      "interaction-free.claim.absorber",
+      "interaction-free.claim.click",
+      "interaction-free.claim.fail",
+      "interaction-free.claim.demo"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 40,
+      "maximum": 75
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "interaction-free.asset.dark-detector.script.1",
+          "type": "factual",
+          "text": "How can light reveal an obstacle without being absorbed or reflected by it?",
+          "claimIds": [
+            "interaction-free.claim.detect"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.2",
+          "type": "factual",
+          "text": "Start with one photon and two possible paths that meet again.",
+          "claimIds": [
+            "interaction-free.claim.paths"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.3",
+          "type": "factual",
+          "text": "In this carefully aligned setup, the waves associated with the paths cancel at one output. This detector stays dark.",
+          "claimIds": [
+            "interaction-free.claim.dark",
+            "interaction-free.claim.cancel"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.4",
+          "type": "factual",
+          "text": "Now block one path with an absorber.",
+          "claimIds": [
+            "interaction-free.claim.absorber",
+            "interaction-free.claim.click"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.5",
+          "type": "factual",
+          "text": "Sometimes it absorbs the photon. That trial ends.",
+          "claimIds": [
+            "interaction-free.claim.absorber",
+            "interaction-free.claim.fail"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.6",
+          "type": "factual",
+          "text": "But in another trial, the dark detector clicks.",
+          "claimIds": [
+            "interaction-free.claim.click"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.7",
+          "type": "factual",
+          "text": "The photon reached this detector. The obstacle was detected, without absorbing that photon.",
+          "claimIds": [
+            "interaction-free.claim.detect"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.8",
+          "type": "factual",
+          "text": "Why? Blocking one possible path removed the cancellation that kept this detector dark.",
+          "claimIds": [
+            "interaction-free.claim.cancel",
+            "interaction-free.claim.click"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.9",
+          "type": "factual",
+          "text": "This is interaction-free measurement, demonstrated in experiments.",
+          "claimIds": [
+            "interaction-free.claim.demo"
+          ]
+        },
+        {
+          "id": "interaction-free.asset.dark-detector.script.10",
+          "type": "factual",
+          "text": "It succeeds only in some trials. Others absorb the photon, or give no clear answer.",
+          "claimIds": [
+            "interaction-free.claim.fail"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "interaction-free.asset.dark-detector.beat.1",
+        "label": "puzzle",
+        "purpose": "Pose approved no-absorption/reflection puzzle; withhold answer.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.1"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.2",
+        "label": "alternatives",
+        "purpose": "One input photon; progressively reveal two coherent alternatives and reunion.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.2"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.3",
+        "label": "cancellation",
+        "purpose": "Enlarge opposed probability amplitudes and their zero sum at dark output; other output retains photon possibility.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.3"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.4",
+        "label": "intervention",
+        "purpose": "Introduce absorber only after baseline is understood.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.4"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.5",
+        "label": "absorbed",
+        "purpose": "A separate absorbed trial ends; no output click.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.5"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.6",
+        "label": "successful",
+        "purpose": "A different successful trial produces the formerly dark click.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.6"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.7",
+        "label": "paradox",
+        "purpose": "Make detected obstacle and nonabsorbed photon the visual climax.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.7"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.8",
+        "label": "reason",
+        "purpose": "Compare cancellation with blocked alternative; remove opposing contribution at same output.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.8"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.9",
+        "label": "name",
+        "purpose": "Name demonstrated effect after viewer understands the successful inference.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.9"
+        ]
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.beat.10",
+        "label": "qualification",
+        "purpose": "Retain probabilistic success, absorbed trials and inconclusive bright output.",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.10"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "interaction-free.asset.dark-detector.visual.1",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.1",
+        "objective": "Pose approved no-absorption/reflection puzzle; withhold answer.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.1"
+        ],
+        "claimIds": [
+          "interaction-free.claim.detect"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.2",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.2",
+        "objective": "One input photon; progressively reveal two coherent alternatives and reunion.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.2"
+        ],
+        "claimIds": [
+          "interaction-free.claim.paths"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.3",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.3",
+        "objective": "Enlarge opposed probability amplitudes and their zero sum at dark output; other output retains photon possibility.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.3"
+        ],
+        "claimIds": [
+          "interaction-free.claim.dark",
+          "interaction-free.claim.cancel"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.4",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.4",
+        "objective": "Introduce absorber only after baseline is understood.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.4"
+        ],
+        "claimIds": [
+          "interaction-free.claim.absorber",
+          "interaction-free.claim.click"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.5",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.5",
+        "objective": "A separate absorbed trial ends; no output click.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.5"
+        ],
+        "claimIds": [
+          "interaction-free.claim.absorber",
+          "interaction-free.claim.fail"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.6",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.6",
+        "objective": "A different successful trial produces the formerly dark click.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.6"
+        ],
+        "claimIds": [
+          "interaction-free.claim.click"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.7",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.7",
+        "objective": "Make detected obstacle and nonabsorbed photon the visual climax.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.7"
+        ],
+        "claimIds": [
+          "interaction-free.claim.detect"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.8",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.8",
+        "objective": "Compare cancellation with blocked alternative; remove opposing contribution at same output.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.8"
+        ],
+        "claimIds": [
+          "interaction-free.claim.cancel",
+          "interaction-free.claim.click"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.9",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.9",
+        "objective": "Name demonstrated effect after viewer understands the successful inference.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.9"
+        ],
+        "claimIds": [
+          "interaction-free.claim.demo"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      },
+      {
+        "id": "interaction-free.asset.dark-detector.visual.10",
+        "narrativeBeatId": "interaction-free.asset.dark-detector.beat.10",
+        "objective": "Retain probabilistic success, absorbed trials and inconclusive bright output.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "interaction-free.asset.dark-detector.script.10"
+        ],
+        "claimIds": [
+          "interaction-free.claim.fail"
+        ],
+        "notes": "Progressive enlarged ideal-model possibilities, not measured photon trajectories. Exactly one event particle at source or output/absorption; path animation denotes amplitudes, never two half photons. Separate trials; no observed complete classical route."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Primary Kokoro af_heart, curious calm explanation, whole semantic sentences; no mystery whisper or mystical quantum tone.",
+      "pronunciationNotes": [
+        "Interaction-free."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.7",
+    "topicCandidateId": "interaction-free",
+    "enteredAt": "2026-10-03T16:27:29.925Z",
+    "reviewer": "Codex session — internal evidence review, not Ahmet",
+    "packageSha256": "89cbe3746c3456a9b1dd7564f29ed99cbb207290956d2f9dbff68c981a724c67",
+    "assetSha256": "c073234641fe160693864a47288e0f80515d9fca17532c7ba06f5bb82d379eb4",
+    "scriptSha256": "ef38982c80ebbb65e51cf1fb8f28f319a2fc8a40d22aeb5ee12c99d8981b700d",
+    "inspections": [
+      {
+        "sourceId": "source.interaction-free.ev1993",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7"
+        ],
+        "supportsClaimIds": [
+          "interaction-free.claim.detect",
+          "interaction-free.claim.paths",
+          "interaction-free.claim.dark",
+          "interaction-free.claim.cancel",
+          "interaction-free.claim.absorber",
+          "interaction-free.claim.click",
+          "interaction-free.claim.fail"
+        ],
+        "limitations": [
+          "Theory and ideal apparatus; real alignment, leakage and detector noise matter.",
+          "No preferred path or interpretation asserted. No general zero disturbance claim."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-7/revision-2/sources/ev1993-inspection.json",
+          "sha256": "0590913bbda73dceef3277fd509f78ae151e85080da9ae3c261ebfdaedcc072c"
+        },
+        "sourceQualityRationale": "Original published theoretical proposal, exact ideal-model equations and explicit interpretational caveat."
+      },
+      {
+        "sourceId": "source.interaction-free.kwiat1996",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration"
+        ],
+        "supportsClaimIds": [
+          "interaction-free.claim.detect",
+          "interaction-free.claim.dark",
+          "interaction-free.claim.click",
+          "interaction-free.claim.fail",
+          "interaction-free.claim.demo"
+        ],
+        "limitations": [
+          "Participant explanation, not independent replication or raw data review.",
+          "Production uses an ideal Mach-Zehnder absorbing-obstacle model, not a replica of their Michelson mirror experiment.",
+          "1995 PRL researcher PDF was image-only: fetched and attempted text extraction, but body not inspected; not used as verified evidence."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-7/revision-2/sources/kwiat1996-inspection.json",
+          "sha256": "99f009b86b8fcdd3ea0289742e7dc019e2805f99d897178eca82e4b3b10597a1"
+        },
+        "sourceQualityRationale": "Experimenters’ own detailed published account qualifies empirical demonstration and actual apparatus; no claim of independent corroboration or raw data inspection."
+      }
+    ],
+    "claims": [
+      {
+        "id": "interaction-free.claim.detect",
+        "statementSha256": "4e24924ce7a54d264c1c6725f67d638542f7fbb4db0e7bd088d0103b14a0ea7f",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "assessment": "Operational successful-trial statement; no metaphysical zero interaction or guarantee.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "assessment": "Operational successful-trial statement; no metaphysical zero interaction or guarantee.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.paths",
+        "statementSha256": "cb441e733be52368a933644cc314b33aaff3b1b031fddfbcb9461bcb6bd79725",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "assessment": "Path wave amplitudes, not two half photons or classical definite trajectories.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.dark",
+        "statementSha256": "37cb66c196325b5d6b562b62e327275d9134dc9777f28f3a8c1486abaef06cc7",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "assessment": "Real leakage and detector noise prevent absolute experimental certainty.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "assessment": "Real leakage and detector noise prevent absolute experimental certainty.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.cancel",
+        "statementSha256": "d8c90a39a16ba6497c2385da532a9110bd073e0c1a1afac9bcf6987dcc463e2b",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "assessment": "Schematic waves represent probability amplitudes, not visible light or destroyed photon energy.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.absorber",
+        "statementSha256": "7486712f2a051884afe44df8a3c9bc57b712cf77589e756151d74cb7cceb6c9f",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "assessment": "One photon, ideal absorber and output detectors; not all detectors in actual heralding apparatus.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.click",
+        "statementSha256": "4b1b98be739f62f5d4a0158667237b19d9295739d2105965c86acbb6fb1bff53",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "assessment": "Sometimes, not every trial; no unqualified practical detector certainty.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "assessment": "Sometimes, not every trial; no unqualified practical detector certainty.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.fail",
+        "statementSha256": "ba277bdee70c0fd172150df964279219c5438f229d9fceb6a332816fd4a61e68",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.ev1993",
+            "locator": "Preprint PDF pages3–6, sections1–2, equations3–5; interpretation qualification on pages6–7",
+            "assessment": "This simple arrangement risks absorption; no universally harmless sensing claim.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "assessment": "This simple arrangement risks absorption; no universally harmless sensing claim.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.demo",
+        "statementSha256": "3916e13a1bb5875dc37bc3f8a7f6ace2c2ca2908e4bb56f26a9722581124fbc7",
+        "disposition": "verify",
+        "rationale": "Narrow statement matched to inspected original model/author account; successful-trial, ideal-apparatus and interpretation boundaries preserved.",
+        "evidence": [
+          {
+            "sourceId": "source.interaction-free.kwiat1996",
+            "locator": "Printed pages74–75 / PDF pages3–4: Pebble in the Path and author experimental demonstration",
+            "assessment": "Participant account describes different physical implementation; original research figures and raw data not inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "interaction-free.claim.metaphysics",
+        "statementSha256": "53670a3d1cfb1b2a252426ac5d2853ece81008220dbdf6df57df8ce1b66a6b9b",
+        "disposition": "exclude",
+        "rationale": "Unrestricted metaphysical no-interaction claim not supported; excluded unchanged.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "No two half photons, energy destruction or classical definite trajectory.",
+      "Probability-amplitude schematic; no actual measurement footage or trace.",
+      "No photon hits absorber then reaches output; separate trial labels.",
+      "Correctly aligned ideal apparatus; noise/leakage not erased from review.",
+      "Other trials absorb or yield inconclusive output; no guarantee or universal harmless sensing.",
+      "No preferred quantum interpretation, consciousness effect, faster-than-light signal or observation-as-mind assertion."
+    ],
+    "comprehensionReview": "Owner approves premise, requests causal execution. New exact wording removes front-loaded interferometer jargon; one photon/two possibilities precede cancellation; intervention precedes two separately identified outcomes; successful nonabsorption is climax before explanatory return. Demonstration and probabilistic risks remain explicit. Source statements and qualifications unchanged; original inspected evidence records reused with original retrieval dates, not falsely reread or redated.",
+    "rightsReview": "Original instrument/amplitude artwork only; no research figures, photos or footage. Existing OFL fonts and local Kokoro model; no unresolved rights/purchase.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Scoped physical explanation and ideal model with author experimental account; no medical use, hazardous demonstration instructions or metaphysical verdict."
+    },
+    "exceptionalConditions": []
+  }
+}

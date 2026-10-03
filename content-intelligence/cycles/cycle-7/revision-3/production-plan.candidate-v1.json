@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.interaction-free.v2",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "interaction-free",
+    "revision": 2,
+    "sha256": "7fe18f005e9e65bbb15f8e9043eb82bc0310c8fc31be91583fc661f1074da26f"
+  },
+  "contentAsset": {
+    "id": "interaction-free.asset.dark-detector",
+    "revision": 2,
+    "sha256": "92022e61a7714e913f6ef40e4a784d251aab35e97db55738f654fbf5f1903437"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.7",
+    "reviewSha256": "7a35d859e604fab4cb850e3d616fe37235a08b02810b5747aa2f1829a4148be0"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/youtube.json",
+      "sha256": "b16d43d28581831eac8c3a7b18133229c01fc5ec465ebc257ea9901e0d2952e5"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/tiktok.json",
+      "sha256": "b687b20edc42cb1afa4a9c8cc6f996d9816d416a6d54b9b732b720fad33974e6"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/instagram.json",
+      "sha256": "ac98f588bb317019d14a685a2b1fcb47d0e8853df80f599afd3afee62cb25d8e"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/facebook.json",
+      "sha256": "67616375c5e086bc0bc2db21480a412c2ad7e5a423b0e5f71c224f66bd2d0506"
+    }
+  ],
+  "approvedScriptSha256": "ef38982c80ebbb65e51cf1fb8f28f319a2fc8a40d22aeb5ee12c99d8981b700d",
+  "creativeDirection": {
+    "id": "creative-direction.interaction-free.v2",
+    "revision": 2,
+    "sha256": "4fef95305a2e4e84999692625b82182a35a3b506b0afa75c28ff9e564c7963c9"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "interaction-free.claim.metaphysics"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 53.8
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "ifm.production.1",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.1",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.1",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.1"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 170
+      },
+      "sceneType": "unexplained-puzzle",
+      "objective": "Pose approved no-absorption/reflection puzzle; withhold answer.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.2",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.2",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.2",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.2"
+      ],
+      "claimIds": [
+        "interaction-free.claim.paths"
+      ],
+      "frames": {
+        "start": 170,
+        "end": 305
+      },
+      "sceneType": "progressive-alternatives",
+      "objective": "One input photon; progressively reveal two coherent alternatives and reunion.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.3",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.3",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.3",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.3"
+      ],
+      "claimIds": [
+        "interaction-free.claim.dark",
+        "interaction-free.claim.cancel"
+      ],
+      "frames": {
+        "start": 305,
+        "end": 557
+      },
+      "sceneType": "enlarged-cancellation",
+      "objective": "Enlarge opposed probability amplitudes and their zero sum at dark output; other output retains photon possibility.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.4",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.4",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.4",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.4"
+      ],
+      "claimIds": [
+        "interaction-free.claim.absorber",
+        "interaction-free.claim.click"
+      ],
+      "frames": {
+        "start": 557,
+        "end": 646
+      },
+      "sceneType": "intervention",
+      "objective": "Introduce absorber only after baseline is understood.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.5",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.5",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.5",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.5"
+      ],
+      "claimIds": [
+        "interaction-free.claim.absorber",
+        "interaction-free.claim.fail"
+      ],
+      "frames": {
+        "start": 646,
+        "end": 770
+      },
+      "sceneType": "absorbed-trial",
+      "objective": "A separate absorbed trial ends; no output click.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.6",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.6",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.6",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.6"
+      ],
+      "claimIds": [
+        "interaction-free.claim.click"
+      ],
+      "frames": {
+        "start": 770,
+        "end": 880
+      },
+      "sceneType": "detected-trial",
+      "objective": "A different successful trial produces the formerly dark click.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.7",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.7",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.7",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.7"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect"
+      ],
+      "frames": {
+        "start": 880,
+        "end": 1082
+      },
+      "sceneType": "paradox-climax",
+      "objective": "Make detected obstacle and nonabsorbed photon the visual climax.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.8",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.8",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.8",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.8"
+      ],
+      "claimIds": [
+        "interaction-free.claim.cancel",
+        "interaction-free.claim.click"
+      ],
+      "frames": {
+        "start": 1082,
+        "end": 1270
+      },
+      "sceneType": "why-cancellation",
+      "objective": "Compare cancellation with blocked alternative; remove opposing contribution at same output.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.9",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.9",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.9",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.9"
+      ],
+      "claimIds": [
+        "interaction-free.claim.demo"
+      ],
+      "frames": {
+        "start": 1270,
+        "end": 1419
+      },
+      "sceneType": "demonstrated-effect",
+      "objective": "Name demonstrated effect after viewer understands the successful inference.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.10",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.10",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.10",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.10"
+      ],
+      "claimIds": [
+        "interaction-free.claim.fail"
+      ],
+      "frames": {
+        "start": 1419,
+        "end": 1614
+      },
+      "sceneType": "trial-qualification",
+      "objective": "Retain probabilistic success, absorbed trials and inconclusive bright output.",
+      "onScreenText": [],
+      "animationIntent": "Progressively reveal alternatives, enlarge opposing amplitudes and zero sum, isolate absorbed and successful trial events, then paired-fact detector climax. No half photons, destroyed energy or measured definite route.",
+      "transitionIntent": "Progressive spatial construction and changes in scale; persistent path/output identities, separate event trials and causal before/after comparison.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    }
+  ],
+  "assets": [
+    {
+      "id": "ifm.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original SVG illustration",
+        "rights": "Project-owned artwork",
+        "notes": "Idealized optical topology and amplitude model, not measurement footage or photon trajectories.",
+        "evidence": "content-intelligence/cycles/cycle-7/revision-3/rights-provenance.json"
+      }
+    },
+    {
+      "id": "ifm.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource / Manrope by Mikhail Sharanda",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing licensed font; unchanged.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "ifm.narration",
+      "kind": "audio",
+      "path": "public/audio/ifm-v3/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache-2.0 model/output terms",
+        "notes": "Connected reviewed sentences, no paid API.",
+        "evidence": "src/production/narration/ifm-v3.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/interaction-free-v3.en.vtt",
+    "captionPlanId": "caption-plan.interaction-free.v2",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "58b5731504abda898c63a1c69a9f6fafbb4252810a310384a167ce784b5a6091",
+    "generatorId": "generator.ifm-phrases.v3",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full media probe and decode, exact caption reconstruction and typography fit.",
+    "Every caption midpoint and opening/cancellation/absorption/success/outcomes checkpoints decoded and inspected.",
+    "Open baseline, opposed amplitudes and blockage stay coherent; no successful photon absorption; distinct failed-trial outcomes remain explicit.",
+    "Actual audio interval recognition and mix; owner pronunciation/prosody remains judgment.",
+    "Four sampled provisional profile preflights; no invented native/device safety.",
+    "AHMET — MASTER REVIEW; no release preparation before approval."
+  ]
+}

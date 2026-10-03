@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.7",
+  "media": {
+    "id": "media.d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3",
+    "sha256": "d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3"
+  },
+  "durationSeconds": 53.8,
+  "scriptSha256": "ef38982c80ebbb65e51cf1fb8f28f319a2fc8a40d22aeb5ee12c99d8981b700d",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-7/revision-3/production-plan.candidate-v1.json",
+    "sha256": "636851570dca43fd423c1532d04cd5856f03afccc19f1a387a029710b202f6ce"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/ifm-v3.json",
+    "sha256": "43ba0e6eddc90608ebac2404a01f30d9116ccf63de4dd7efdf011b67941186eb"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/ifm-v3.json",
+    "sha256": "e1d06923bd6716b1f861ef2faf41e243e6f32834c512881048472d3691635c01"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/youtube.json",
+        "sha256": "b16d43d28581831eac8c3a7b18133229c01fc5ec465ebc257ea9901e0d2952e5"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/preflight/youtube.json",
+        "sha256": "86e4b90b8e7a4d1979089fc35d3c4e228f65e37bbeeb8d39a3c82a95b0f649ae"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/tiktok.json",
+        "sha256": "b687b20edc42cb1afa4a9c8cc6f996d9816d416a6d54b9b732b720fad33974e6"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/preflight/tiktok.json",
+        "sha256": "6e6defd314ac1275a9bf2187f7a736fef5d5bc5bdaee57ef7d286d1f64a3b09d"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/instagram.json",
+        "sha256": "ac98f588bb317019d14a685a2b1fcb47d0e8853df80f599afd3afee62cb25d8e"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/preflight/instagram.json",
+        "sha256": "ad01d37e87e7f19735e83a2731caa921b3112707cc8c9751bba2100fe6851782"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/profiles/facebook.json",
+        "sha256": "67616375c5e086bc0bc2db21480a412c2ad7e5a423b0e5f71c224f66bd2d0506"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/preflight/facebook.json",
+        "sha256": "d3215282559ae6b3ffc6730de553c885b21db6ade5bdee7a632e140c4a7361af"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "ifm-v3-cue-1",
+      "transcript": "How can light reveal an obstacle without being absorbed or reflected by it?",
+      "start": 0,
+      "duration": 5.3,
+      "media": {
+        "id": "media.b5a7d5e28a01e089655359e9920607de1e175de741aef264c289f18affd10001",
+        "sha256": "b5a7d5e28a01e089655359e9920607de1e175de741aef264c289f18affd10001"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-2",
+      "transcript": "Start with one photon and two possible paths that meet again.",
+      "start": 5.666666666666667,
+      "duration": 4.275,
+      "media": {
+        "id": "media.3cc7f830aab16fbe1180fea2dc497da608a7350dfb9f40b2a6cf983ae73f752c",
+        "sha256": "3cc7f830aab16fbe1180fea2dc497da608a7350dfb9f40b2a6cf983ae73f752c"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-3",
+      "transcript": "In this carefully aligned setup, the waves associated with the paths cancel at one output. This detector stays dark.",
+      "start": 10.166666666666666,
+      "duration": 8.2,
+      "media": {
+        "id": "media.6ec6226033244d73d87cfc65126efc77f146d7daf1a762760dba8c2ffa92642e",
+        "sha256": "6ec6226033244d73d87cfc65126efc77f146d7daf1a762760dba8c2ffa92642e"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-4",
+      "transcript": "Now block one path with an absorber.",
+      "start": 18.566666666666666,
+      "duration": 2.75,
+      "media": {
+        "id": "media.a48ed0b4adf4abaaab5c8d03ef27fa6437ee24cb22ee7f71c5bcddffb2f77324",
+        "sha256": "a48ed0b4adf4abaaab5c8d03ef27fa6437ee24cb22ee7f71c5bcddffb2f77324"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-5",
+      "transcript": "Sometimes it absorbs the photon. That trial ends.",
+      "start": 21.533333333333335,
+      "duration": 3.925,
+      "media": {
+        "id": "media.8691c50b36e8b01361056d2a506c11db4c4c25acb6b2da37f58c19155e7a391e",
+        "sha256": "8691c50b36e8b01361056d2a506c11db4c4c25acb6b2da37f58c19155e7a391e"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-6",
+      "transcript": "But in another trial, the dark detector clicks.",
+      "start": 25.666666666666668,
+      "duration": 3.275,
+      "media": {
+        "id": "media.0318ddb45a941f1ce49bf5f0797371a9422059945a83a9e94e6dbab195a4127b",
+        "sha256": "0318ddb45a941f1ce49bf5f0797371a9422059945a83a9e94e6dbab195a4127b"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-7",
+      "transcript": "The photon reached this detector. The obstacle was detected, without absorbing that photon.",
+      "start": 29.333333333333332,
+      "duration": 6.525,
+      "media": {
+        "id": "media.56e225ebf7231b2a2af57ba62659f75e39f670f91d14af7442fff6ea27fb0d08",
+        "sha256": "56e225ebf7231b2a2af57ba62659f75e39f670f91d14af7442fff6ea27fb0d08"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-8",
+      "transcript": "Why? Blocking one possible path removed the cancellation that kept this detector dark.",
+      "start": 36.06666666666667,
+      "duration": 6.05,
+      "media": {
+        "id": "media.82a51dd5df9b5eac94836ee2c121e98be69aa1aab19a018e3d79384805e2161e",
+        "sha256": "82a51dd5df9b5eac94836ee2c121e98be69aa1aab19a018e3d79384805e2161e"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-9",
+      "transcript": "This is interaction-free measurement, demonstrated in experiments.",
+      "start": 42.333333333333336,
+      "duration": 4.6,
+      "media": {
+        "id": "media.21ed8f6da9a76a0a9b7833df64bc47ce61b16213db31aee5c972bffcf7afaf81",
+        "sha256": "21ed8f6da9a76a0a9b7833df64bc47ce61b16213db31aee5c972bffcf7afaf81"
+      }
+    },
+    {
+      "id": "ifm-v3-cue-10",
+      "transcript": "It succeeds only in some trials. Others absorb the photon, or give no clear answer.",
+      "start": 47.3,
+      "duration": 6.275,
+      "media": {
+        "id": "media.6ec405a5b469c85fd5cb4535eee60937230d4a7a26821ac3097b13cf017280cf",
+        "sha256": "6ec405a5b469c85fd5cb4535eee60937230d4a7a26821ac3097b13cf017280cf"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-7/revision-3/qa/final-report.json",
+        "sha256": "a9e729e54c2343e3a989eed4e3576e529f3532695387f8a96920f274853937cd"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Ideal aligned optical model; curves are path amplitudes, not two photons or visible measured trajectories.",
+    "Absorbed and detected outcomes belong to explicitly different trials.",
+    "One detected photon was not absorbed by the object; no preferred classical trajectory or metaphysical no-interaction assertion.",
+    "Other trials can absorb photons or be inconclusive; no guaranteed harmless test.",
+    "Experimental author account concerns a different implementation, not authentic footage of this schematic."
+  ],
+  "uncertainties": [
+    "Owner listening must judge interaction-free pronunciation, naturalness, complete sentence prosody and authored caption timing. ASR is corroboration only.",
+    "Ideal-model dark baseline excludes practical leakage/detector noise; no claim of absolute empirical certainty.",
+    "Native UI, caption-safe geometry, crops and exact-media real-device behavior remain unknown.",
+    "Sampled visual/browser checks and complete decode, not all-frame bounds or continuous human playback.",
+    "Original theory and participant account inspected; no raw data or1995 image-only paper body inspection.",
+    "No variants, covers, deliveries, uploads, scheduling, publication or analytics created."
+  ],
+  "unusualProduction": [
+    "Progressive possibilities, enlarged cancellation and separate absorption/detector event stages; explicitly schematic amplitudes, voice-only sound."
+  ]
+}
