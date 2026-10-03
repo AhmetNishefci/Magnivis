@@ -1,0 +1,27 @@
+{
+  "runtime": "Node 22.23.3 / pnpm 10.17.1",
+  "check": {
+    "passed": true,
+    "typecheck": true,
+    "lint": true,
+    "testFiles": 49,
+    "tests": 468,
+    "diffHygiene": true
+  },
+  "durableArtifacts": {
+    "passed": true,
+    "canonicalPayloads": 517,
+    "durableArtifactCount": 731,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "workflowReplay": "cycle states and overview unchanged; only project calibration-task metadata updated",
+  "promptCompatibility": "v2 source object equals baseline; v1/v2 lookup and historical envelopes covered by full suite",
+  "testsChanged": "existing advisory version/provenance/instruction-contract assertions only; no subjective taste tests",
+  "render": "not applicable: no visual/production changes; no rendering performed",
+  "initialRuns": "default Node 24 was outside supported range; stale new-version expectation corrected; historical tests timed out during competing hash work. Full suite subsequently passed under supported Node 22.",
+  "limitations": [
+    "Heuristic scoped scan does not prove absence of secrets.",
+    "Prompt/receipt completeness does not prove editorial taste or factual truth.",
+    "Publication and native analytics remain unknown."
+  ]
+}

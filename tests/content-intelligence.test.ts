@@ -158,7 +158,7 @@ describe('Content Intelligence V1 topic candidates and prompts', () => {
     ]);
     expect(new Set(workflows.map(({id}) => id)).size).toBe(workflows.length);
     expect(workflows.every(({id, version, outputSchemaId}) =>
-      version === (id === 'workflow.creative-direction' ? 3 : id === 'workflow.topic-evaluation' ? 2 : 1) && outputSchemaId.endsWith('.v1'))).toBe(true);
+      version === (id === 'workflow.creative-direction' ? 3 : id === 'workflow.topic-evaluation' ? 3 : 1) && outputSchemaId.endsWith('.v1'))).toBe(true);
     expect(contentAssetDraftWorkflow.systemInstructions.join(' ')).toMatch(/cannot approve/i);
   });
 });
@@ -172,7 +172,7 @@ describe('Content Intelligence V1 AI-assisted workflow', () => {
       provider: 'fixture',
       model: 'fixture-v1',
       workflowId: 'workflow.topic-evaluation',
-      workflowVersion: 2,
+      workflowVersion: 3,
       inputReferences: [speedOfLightTopicCandidate.id],
       cost: {amount: 0, currency: 'USD', estimated: false},
     });

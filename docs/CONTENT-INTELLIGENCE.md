@@ -4,7 +4,10 @@
 
 ## Current topic evaluation prompt
 
-`workflow.topic-evaluation` version 2 strengthens existing qualitative `curiosityGap` and `narrativePotential` rationales with the cold-audience premise question, open story forms, honest reframing, optional sharing and provenance-bound learning. The existing output schema remains version 1; no ranking system or topic taxonomy is added. Stored version-1 runs still resolve the original prompt through version-aware registry lookup; their envelopes and hashes remain unchanged. V2 also reconciles historical human-retrieval wording with actual internal evidence inspection under V3, without an extra owner gate. This advisory evaluation does not replace V3’s autonomous selection receipt or later evidence inspection. [STRATEGY](STRATEGY.md) owns the objective and [WORKFLOW-V3](WORKFLOW-V3.md) owns prospective orchestration.
+The preceding `workflow.topic-evaluation` version 2 strengthens existing qualitative `curiosityGap` and `narrativePotential` rationales with the cold-audience premise question, open story forms, honest reframing, optional sharing and provenance-bound learning. The existing output schema remains version 1; no ranking system or topic taxonomy is added. Stored version-1 runs still resolve the original prompt through version-aware registry lookup; their envelopes and hashes remain unchanged. V2 also reconciles historical human-retrieval wording with actual internal evidence inspection under V3, without an extra owner gate. This advisory evaluation does not replace V3’s autonomous selection receipt or later evidence inspection. [STRATEGY](STRATEGY.md) owns the objective and [WORKFLOW-V3](WORKFLOW-V3.md) owns prospective orchestration.
+
+Current `workflow.topic-evaluation` version 3 projects the [STRATEGY editorial calibration](STRATEGY.md#editorial-calibration--intrinsic-pull-and-worthwhile-payoff) into existing curiosity/payoff rationales. It tests the plain premise without production polish, combines pre-answer pull with post-answer value, preserves example eligibility without preference, and distinguishes extraordinary-claim investigation from factual assertion. Versions 1 and 2 retain exact historical instructions; the output schema and V3 selection contract are unchanged.
+
 
 ## Cycle #3 open-world discovery — owner selection pending
 

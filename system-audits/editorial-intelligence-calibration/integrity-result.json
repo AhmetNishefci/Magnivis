@@ -1,0 +1,43 @@
+{
+  "baselineCommit": "c183ad45ca6c4a0b1c906d6e27e1ad3f2e5d9529",
+  "workflowReplay": {
+    "beforeAfterIdentical": false,
+    "cycles": [
+      "cycle.4",
+      "cycle.5",
+      "cycle.6"
+    ],
+    "cycle7Present": false,
+    "snapshotSha256": "61609761818215fb5b637b1d8e3515d9542f722baec28f657cc026530cf8f3a3",
+    "cycleStatesAndOverviewIdentical": true,
+    "projectMetadataChange": "Only calibration task status/report/branch updated; no journal or operational state change"
+  },
+  "protectedTrackedPathsUnchanged": [
+    "artifacts",
+    "public",
+    "content-intelligence/cycles",
+    "content-intelligence/reviews",
+    "content-intelligence/runs",
+    "workflow/cycles",
+    "workflow/authorities",
+    "src/videos",
+    "recovery-audit"
+  ],
+  "topicEvaluationV2SourceUnchanged": true,
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 517,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  }
+}

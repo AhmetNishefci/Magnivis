@@ -38,7 +38,7 @@ export const topicEvaluationWorkflowV1: PromptWorkflow<TopicCandidate, TopicEval
   buildUserPrompt: (candidate) => jsonInput(candidate),
 };
 
-export const topicEvaluationWorkflow: typeof topicEvaluationWorkflowV1 = {
+export const topicEvaluationWorkflowV2: typeof topicEvaluationWorkflowV1 = {
   ...topicEvaluationWorkflowV1,
   version: 2,
   systemInstructions: [
@@ -50,6 +50,21 @@ export const topicEvaluationWorkflow: typeof topicEvaluationWorkflowV1 = {
     'Shareability is an optional qualitative signal, never a requirement or numerical virality prediction. A merely acceptable fixed pool need not produce a selection.',
     'Domains and owner calibration examples are not a whitelist, preference or candidate bank. Fresh open-world discovery remains necessary; retained leads are reconsiderable, never mandatory queue items.',
     'Only provenance-bearing native metrics may inform cautious story, hook or execution hypotheses with definitions and observation windows preserved; scheduling and qualitative feedback are not analytics. Do not infer a preferred domain from performance.',
+  ],
+};
+
+// Operational projection of STRATEGY's editorial calibration; old versions remain immutable.
+export const topicEvaluationWorkflow: typeof topicEvaluationWorkflowV1 = {
+  ...topicEvaluationWorkflowV2,
+  version: 3,
+  systemInstructions: [
+    ...topicEvaluationWorkflowV2.systemInstructions,
+    'STRATEGY owns editorial calibration. The subject need not be extraordinary; evaluate the underlying story or question, not domain drama.',
+    'In curiosityGap strip away production polish and provocative wording: explain the plain premise and its pre-answer pull. Educational validity, interest and surprise alone do not earn a publishing slot.',
+    'In narrativePotential explain post-answer value and assess it together with pre-answer pull: a strong hook with a trivial payoff is insufficient, as is depth without enough cold-audience pull. Production potential alone cannot rescue a weak premise; continued discovery may be appropriate.',
+    'Every owner calibration example remains fully eligible, with no avoidance penalty, automatic preference or novelty bonus. Examples are not a finite backlog or training-only topics. Generalize transferable curiosity properties, not semantic similarity; unfamiliar domains and story forms remain eligible.',
+    'Extraordinary claims, alleged conspiracies and disputed events remain investigable without a predetermined verdict. Separate evidence of an allegation from evidence for or against it; evidence determines the permitted conclusion, with medical care standards preserved.',
+    'Hooks must be truthful independently; later caveats cannot repair a misleading opening. Do not manufacture uncertainty or false balance, promote correlation to causation, or generalize specific misconduct to broad identity groups.',
   ],
 };
 
@@ -152,6 +167,7 @@ const workflows = [
 export const contentIntelligencePromptRegistry = Object.freeze({
   get: (id: string, version?: number) => {
     if (id === topicEvaluationWorkflowV1.id && version === 1) return topicEvaluationWorkflowV1;
+    if (id === topicEvaluationWorkflowV2.id && version === 2) return topicEvaluationWorkflowV2;
     const workflow = workflows.find((candidate) => candidate.id === id);
     if (!workflow || (version !== undefined && workflow.version !== version)) throw new Error(`Unknown content-intelligence workflow: ${id}`);
     return workflow;

@@ -78,7 +78,7 @@ describe('Prospective curiosity standard inside V3', () => {
   });
   it('uses the strengthened advisory prompt prospectively and preserves old workflow-version validation', () => {
     const current = contentIntelligencePromptRegistry.get('workflow.topic-evaluation');
-    expect(current.version).toBe(2);
+    expect(current.version).toBe(3);
     const instructions = current.systemInstructions.join(' ');
     expect(instructions).toMatch(/zero domain interest/);
     expect(instructions).toMatch(/actual evidence is retrieved and inspected under V3/);
@@ -90,6 +90,12 @@ describe('Prospective curiosity standard inside V3', () => {
     expect(instructions).toMatch(/scheduling and qualitative feedback are not analytics/);
     expect(instructions).toMatch(/not a whitelist/);
     expect(contentIntelligencePromptRegistry.get(current.id, 1).version).toBe(1);
+    expect(contentIntelligencePromptRegistry.get(current.id, 2).version).toBe(2);
+    expect(instructions).toMatch(/no avoidance penalty, automatic preference or novelty bonus/);
+    expect(instructions).toMatch(/strong hook with a trivial payoff is insufficient/);
+    expect(instructions).toMatch(/Production potential alone cannot rescue/);
+    expect(instructions).toMatch(/claims.*remain investigable/);
+    expect(instructions).toMatch(/Hooks must be truthful independently/);
     expect(() => contentIntelligencePromptRegistry.get(current.id, 99)).toThrow();
   });
 });
