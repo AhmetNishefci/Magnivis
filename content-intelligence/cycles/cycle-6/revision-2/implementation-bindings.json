@@ -1,0 +1,53 @@
+{
+  "enteredAt": "2026-10-03T11:40:06.119Z",
+  "sourceBaseCommit": "cd457e183c94cc297102c68e55197b67cc5f80af",
+  "files": [
+    {
+      "path": "src/heat-index.tsx",
+      "sha256": "be6b2997ef87f0445e7807dcccf5510d4e4ff6fce495af657e8550676c6b5d35"
+    },
+    {
+      "path": "src/compositions/HeatBarrier.tsx",
+      "sha256": "166f7a4f04b491a0ac849f11dc571845276f0eadbb49e64c59b39797e1597340"
+    },
+    {
+      "path": "src/components/ThermalInterface.tsx",
+      "sha256": "7c72d69429a6edde65a7ca9e85d4b54bcd99f1e2b76297d615a1952f13b4c3e0"
+    },
+    {
+      "path": "scripts/render-heat.ts",
+      "sha256": "9f7eeff0f43356680d33097ea8c9df966a9d893b686d9660aa56667e430631ee"
+    },
+    {
+      "path": "scripts/qa-heat-layout.ts",
+      "sha256": "c5dc2b12266b44e09a7dc30c4cd90a953a742d2454c1669c75de78010290fe65"
+    },
+    {
+      "path": "scripts/generate-heat-narration.mjs",
+      "sha256": "bbf91e238ad19fdfca9cee02d97d92984c4a43778a534e208727f0ef9be2a205"
+    },
+    {
+      "path": "scripts/prepare-heat-production.ts",
+      "sha256": "12e261d1bcc1684ff32a04b46ad79463330e447d759804e9485c336564114e8b"
+    },
+    {
+      "path": "src/production/plans/heat.json",
+      "sha256": "2884f7df21e59bd15eabeeed54b57c94429d80c422a9d91bcb2997adc6521a77"
+    },
+    {
+      "path": "src/captions/plans/heat.json",
+      "sha256": "139f8965e927f836af66c77dda43933f73cc51878f9786ba3f146142f3e6914f"
+    },
+    {
+      "path": "src/production/narration/heat.json",
+      "sha256": "76210a5ab2226b8797a02d0735b3334b787d8784d9f0e47105cf4b73b716e78d"
+    }
+  ],
+  "videoPacketSha256": "SHA256=6ef134058dcfb0b340749e28deaf18074aa968b0751ff8af6ed07844b4232620",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-6/revision-2/audio-mastering-v3.json",
+    "sha256": "e6cb76b6e40df5da4765cb608101bb0024931712fcb2d2021122698d88c62571"
+  },
+  "renderInputs": "Exact thermal plan, sentence captions and full-sentence narration; licensed Manrope fonts, original qualitative water/metal interface; no music or soundscape.",
+  "note": "Base commit identifies starting repository policy; exact new source hashes bind the implementation without a circular self-commit claim."
+}

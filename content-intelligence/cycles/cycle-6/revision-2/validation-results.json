@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-03T11:46:53.283212Z",
+  "nodeVersion": "v22.23.3",
+  "repositoryCheck": {
+    "command": "pnpm check",
+    "passed": true,
+    "testFiles": 49,
+    "tests": 468,
+    "scope": "type checking, lint, required validators and offline tests",
+    "initialFailure": "Two unused authoring variables; removed, then complete check passed."
+  },
+  "durableArtifacts": {
+    "command": "pnpm artifacts:durable",
+    "passed": true,
+    "canonicalPayloads": 483,
+    "frozenLegacyBinaryPaths": 442,
+    "durableArtifactCount": 731,
+    "unchangedHistoricalMissingExpectation": "wood-frog.historical-master: original approved identity remains missing; accepted replacement retains its separate identity."
+  },
+  "mediaQA": {
+    "command": "pnpm qa heat-barrier",
+    "passed": true,
+    "strictFullDecode": "passed",
+    "smokeRender": "passed",
+    "browserCheckpoints": 50,
+    "captionCount": 12,
+    "scriptReconstruction": "passed",
+    "mediaSha256": "1871970b91268039d4013825143b34230426d39215946e0acb66ac46089d3b98",
+    "subjectiveAudio": "Leidenfrost ASR ambiguity and human prosody remain explicitly flagged; no pronunciation acceptance claim."
+  },
+  "preservationAudit": {
+    "path": "content-intelligence/cycles/cycle-6/revision-2/preservation-audit.json",
+    "sha256": "5bc9c4bdaf70c1e83abe1efcf8df5ee3908e8e18cc60ea6172cd67f2d52cfee3"
+  },
+  "cycle": {
+    "id": "cycle.6",
+    "revision": 12,
+    "stage": "master-review",
+    "masterApproved": false,
+    "publicationAuthorized": false
+  },
+  "externalActions": "none",
+  "architectureChanges": "none"
+}

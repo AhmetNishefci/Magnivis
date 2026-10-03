@@ -1,0 +1,486 @@
+{
+  "checkedAt": "2026-10-03T11:38:23.599Z",
+  "masterPath": "artifacts/masters/heat-barrier-cycle6-candidate-v3.mp4",
+  "masterSha256": "1871970b91268039d4013825143b34230426d39215946e0acb66ac46089d3b98",
+  "method": "Local Whisper tiny.en ASR of each clip and full decoded master, plus independent ffprobe durations; machine corroboration, not human subjective listening. All exact decoded-master sentence intervals also inspected; whole-master recognition is secondary corroboration, never pronunciation/prosody acceptance.",
+  "model": "onnx-community/whisper-tiny.en",
+  "modelSha256": "e93ec822f16a8fd264e7de972ad17d615ea7334b75a52d54c50c2e18dd503a25",
+  "narratorModelSha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478",
+  "semanticUnits": [
+    {
+      "id": "heat-cue-1",
+      "fullSentence": "Why can a hotter pan make a drop of water last longer?",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000030fc000] silence_start: 0",
+        "[silencedetect @ 0x6000030fc000] silence_end: 0.333333 | silence_duration: 0.333333",
+        "[silencedetect @ 0x6000030fc000] silence_start: 3.34292",
+        "[silencedetect @ 0x6000030fc000] silence_end: 3.85 | silence_duration: 0.507083"
+      ]
+    },
+    {
+      "id": "heat-cue-2",
+      "fullSentence": "On a hot metal surface, water can touch the metal and boil away quickly.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002db4000] silence_start: 0",
+        "[silencedetect @ 0x600002db4000] silence_end: 0.33475 | silence_duration: 0.33475",
+        "[silencedetect @ 0x600002db4000] silence_start: 1.71958",
+        "[silencedetect @ 0x600002db4000] silence_end: 2.04817 | silence_duration: 0.328583",
+        "[silencedetect @ 0x600002db4000] silence_start: 4.41812",
+        "[silencedetect @ 0x600002db4000] silence_end: 4.95 | silence_duration: 0.531875"
+      ]
+    },
+    {
+      "id": "heat-cue-3",
+      "fullSentence": "Heat it far enough, and something changes.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003348000] silence_start: 0",
+        "[silencedetect @ 0x600003348000] silence_end: 0.318417 | silence_duration: 0.318417",
+        "[silencedetect @ 0x600003348000] silence_start: 2.40529",
+        "[silencedetect @ 0x600003348000] silence_end: 2.875 | silence_duration: 0.469708"
+      ]
+    },
+    {
+      "id": "heat-cue-4",
+      "fullSentence": "The bottom of the drop turns to vapor almost instantly.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x60000293c000] silence_start: 0",
+        "[silencedetect @ 0x60000293c000] silence_end: 0.328625 | silence_duration: 0.328625",
+        "[silencedetect @ 0x60000293c000] silence_start: 3.32796",
+        "[silencedetect @ 0x60000293c000] silence_end: 3.825 | silence_duration: 0.497042"
+      ]
+    },
+    {
+      "id": "heat-cue-5",
+      "fullSentence": "That vapor forms a cushion, lifting the rest of the water off the metal.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000013a8000] silence_start: 0",
+        "[silencedetect @ 0x6000013a8000] silence_end: 0.330875 | silence_duration: 0.330875",
+        "[silencedetect @ 0x6000013a8000] silence_start: 1.80817",
+        "[silencedetect @ 0x6000013a8000] silence_end: 2.20775 | silence_duration: 0.399583",
+        "[silencedetect @ 0x6000013a8000] silence_start: 4.01479",
+        "[silencedetect @ 0x6000013a8000] silence_end: 4.525 | silence_duration: 0.510208"
+      ]
+    },
+    {
+      "id": "heat-cue-6",
+      "fullSentence": "Now heat must cross a poorly conducting gas layer.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000011e4000] silence_start: 0",
+        "[silencedetect @ 0x6000011e4000] silence_end: 0.334375 | silence_duration: 0.334375",
+        "[silencedetect @ 0x6000011e4000] silence_start: 3.11158",
+        "[silencedetect @ 0x6000011e4000] silence_end: 3.625 | silence_duration: 0.513417"
+      ]
+    },
+    {
+      "id": "heat-cue-7",
+      "fullSentence": "The hotter surface has created a barrier to its own heat.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000035cc0c0] silence_start: 0",
+        "[silencedetect @ 0x6000035cc0c0] silence_end: 0.324458 | silence_duration: 0.324458",
+        "[silencedetect @ 0x6000035cc0c0] silence_start: 3.28517",
+        "[silencedetect @ 0x6000035cc0c0] silence_end: 3.775 | silence_duration: 0.489833"
+      ]
+    },
+    {
+      "id": "heat-cue-8",
+      "fullSentence": "This is the Leidenfrost effect.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000035b4000] silence_start: 0",
+        "[silencedetect @ 0x6000035b4000] silence_end: 0.313833 | silence_duration: 0.313833",
+        "[silencedetect @ 0x6000035b4000] silence_start: 2.13979",
+        "[silencedetect @ 0x6000035b4000] silence_end: 2.625 | silence_duration: 0.485208"
+      ]
+    },
+    {
+      "id": "heat-cue-9",
+      "fullSentence": "It doesn’t mean hotter always makes water last longer.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003d6c000] silence_start: 0",
+        "[silencedetect @ 0x600003d6c000] silence_end: 0.317792 | silence_duration: 0.317792",
+        "[silencedetect @ 0x600003d6c000] silence_start: 3.01721",
+        "[silencedetect @ 0x600003d6c000] silence_end: 3.525 | silence_duration: 0.507792"
+      ]
+    },
+    {
+      "id": "heat-cue-10",
+      "fullSentence": "The transition depends on the surface and the drop.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000014ec000] silence_start: 0",
+        "[silencedetect @ 0x6000014ec000] silence_end: 0.321417 | silence_duration: 0.321417",
+        "[silencedetect @ 0x6000014ec000] silence_start: 3.18254",
+        "[silencedetect @ 0x6000014ec000] silence_end: 3.675 | silence_duration: 0.492458"
+      ]
+    },
+    {
+      "id": "heat-cue-11",
+      "fullSentence": "Above it, more heat can speed evaporation again.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003b84000] silence_start: 0",
+        "[silencedetect @ 0x600003b84000] silence_end: 0.303708 | silence_duration: 0.303708",
+        "[silencedetect @ 0x600003b84000] silence_start: 3.01187",
+        "[silencedetect @ 0x600003b84000] silence_end: 3.525 | silence_duration: 0.513125"
+      ]
+    },
+    {
+      "id": "heat-cue-12",
+      "fullSentence": "The surprise is that a hotter surface can give water less direct contact with the heat.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003bdc000] silence_start: 0",
+        "[silencedetect @ 0x600003bdc000] silence_end: 0.3285 | silence_duration: 0.3285",
+        "[silencedetect @ 0x600003bdc000] silence_start: 5.1055",
+        "[silencedetect @ 0x600003bdc000] silence_end: 5.6 | silence_duration: 0.4945"
+      ]
+    }
+  ],
+  "generationBoundaryReview": {
+    "practice": "Complete semantic sentences generated together; caption line breaks never create TTS boundaries. No lexical substitutions or word-specific pronunciation hacks.",
+    "limitation": "Acoustic silence and ASR are machine measurements. Sentence-internal prosody, correct stress and pronunciation remain listening judgments at master review."
+  },
+  "results": [
+    {
+      "id": "heat-cue-1",
+      "exactText": "Why can a hotter pan make a drop of water last longer?",
+      "recognized": " Why can a hotter pan make a drop of water last longer?",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.52
+          ],
+          "text": " Why can a hotter pan make a drop of water last longer?"
+        }
+      ],
+      "duration": 3.85,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-2",
+      "exactText": "On a hot metal surface, water can touch the metal and boil away quickly.",
+      "recognized": " On a hot metal surface, water can touch the metal and boil away quickly.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.5
+          ],
+          "text": " On a hot metal surface, water can touch the metal and boil away quickly."
+        }
+      ],
+      "duration": 4.95,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-3",
+      "exactText": "Heat it far enough, and something changes.",
+      "recognized": " Heat it far enough and something changes.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Heat it far enough and something changes."
+        }
+      ],
+      "duration": 2.875,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-4",
+      "exactText": "The bottom of the drop turns to vapor almost instantly.",
+      "recognized": " The bottom of the drop turns to vapor almost instantly.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " The bottom of the drop turns to vapor almost instantly."
+        }
+      ],
+      "duration": 3.825,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-5",
+      "exactText": "That vapor forms a cushion, lifting the rest of the water off the metal.",
+      "recognized": " That vapor forms a cushion, lifting the rest of the water off the metal.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " That vapor forms a cushion, lifting the rest of the water off the metal."
+        }
+      ],
+      "duration": 4.525,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-6",
+      "exactText": "Now heat must cross a poorly conducting gas layer.",
+      "recognized": " Now heat must cross a poorly conducting gas layer.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Now heat must cross a poorly conducting gas layer."
+        }
+      ],
+      "duration": 3.625,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-7",
+      "exactText": "The hotter surface has created a barrier to its own heat.",
+      "recognized": " The hotter surface has created a barrier to its own heat.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " The hotter surface has created a barrier to its own heat."
+        }
+      ],
+      "duration": 3.775,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-8",
+      "exactText": "This is the Leidenfrost effect.",
+      "recognized": " This is the late and frost effect.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " This is the late and frost effect."
+        }
+      ],
+      "duration": 2.625,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-9",
+      "exactText": "It doesn’t mean hotter always makes water last longer.",
+      "recognized": " It doesn't mean hotter always makes water last longer.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " It doesn't mean hotter always makes water last longer."
+        }
+      ],
+      "duration": 3.525,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-10",
+      "exactText": "The transition depends on the surface and the drop.",
+      "recognized": " The transition depends on the surface and the drop.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " The transition depends on the surface and the drop."
+        }
+      ],
+      "duration": 3.675,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-11",
+      "exactText": "Above it, more heat can speed evaporation again.",
+      "recognized": " Above it, more heat can speed evaporation again.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Above it, more heat can speed evaporation again."
+        }
+      ],
+      "duration": 3.525,
+      "sampleRate": 24000
+    },
+    {
+      "id": "heat-cue-12",
+      "exactText": "The surprise is that a hotter surface can give water less direct contact with the heat.",
+      "recognized": " The surprise is that a hotter surface can give water less direct contact with the heat.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            6
+          ],
+          "text": " The surprise is that a hotter surface can give water less direct contact with the heat."
+        }
+      ],
+      "duration": 5.6,
+      "sampleRate": 24000
+    }
+  ],
+  "actualMasterCues": [
+    {
+      "id": "heat-cue-1",
+      "exactText": "Why can a hotter pan make a drop of water last longer?",
+      "recognized": " Why can a hotter pan make a drop of water last longer?",
+      "start": 0,
+      "duration": 3.85
+    },
+    {
+      "id": "heat-cue-2",
+      "exactText": "On a hot metal surface, water can touch the metal and boil away quickly.",
+      "recognized": " On a hot metal surface, water can touch the metal and boil away quickly.",
+      "start": 4.433333333333334,
+      "duration": 4.95
+    },
+    {
+      "id": "heat-cue-3",
+      "exactText": "Heat it far enough, and something changes.",
+      "recognized": " Heat it far enough, and something changes.",
+      "start": 9.666666666666666,
+      "duration": 2.875
+    },
+    {
+      "id": "heat-cue-4",
+      "exactText": "The bottom of the drop turns to vapor almost instantly.",
+      "recognized": " The bottom of the drop turns to vapor almost instantly.",
+      "start": 12.833333333333334,
+      "duration": 3.825
+    },
+    {
+      "id": "heat-cue-5",
+      "exactText": "That vapor forms a cushion, lifting the rest of the water off the metal.",
+      "recognized": " That vapor forms a cushion, lifting the rest of the water off the metal.",
+      "start": 16.933333333333334,
+      "duration": 4.525
+    },
+    {
+      "id": "heat-cue-6",
+      "exactText": "Now heat must cross a poorly conducting gas layer.",
+      "recognized": " Now heat must cross a poorly conducting gas layer.",
+      "start": 22.033333333333335,
+      "duration": 3.625
+    },
+    {
+      "id": "heat-cue-7",
+      "exactText": "The hotter surface has created a barrier to its own heat.",
+      "recognized": " The hotter surface has created a barrier to its own heat.",
+      "start": 25.933333333333334,
+      "duration": 3.775
+    },
+    {
+      "id": "heat-cue-8",
+      "exactText": "This is the Leidenfrost effect.",
+      "recognized": " This is the late and frost effect.",
+      "start": 30.3,
+      "duration": 2.625
+    },
+    {
+      "id": "heat-cue-9",
+      "exactText": "It doesn’t mean hotter always makes water last longer.",
+      "recognized": " It doesn't mean hotter always makes water last longer.",
+      "start": 33.2,
+      "duration": 3.525
+    },
+    {
+      "id": "heat-cue-10",
+      "exactText": "The transition depends on the surface and the drop.",
+      "recognized": " The transition depends on the surface and the drop.",
+      "start": 37,
+      "duration": 3.675
+    },
+    {
+      "id": "heat-cue-11",
+      "exactText": "Above it, more heat can speed evaporation again.",
+      "recognized": " Above it, more heat can speed evaporation again.",
+      "start": 40.96666666666667,
+      "duration": 3.525
+    },
+    {
+      "id": "heat-cue-12",
+      "exactText": "The surprise is that a hotter surface can give water less direct contact with the heat.",
+      "recognized": " The surprise is that a hotter surface can give water less direct contact with the heat.",
+      "start": 44.766666666666666,
+      "duration": 5.6
+    }
+  ],
+  "completeMasterRecognition": {
+    "text": " Why can a hotter pan make a drop of water last longer? On a hot metal surface, water can touch the metal and boil away quickly. Heat it far enough and something changes. The bottom of the drop turns to vapor almost instantly. That vapor forms a cushion, lifting the rest of the water. more heat can speed evaporation again. The surprise is that a hotter surface can give water less direct contact with the heat.",
+    "chunks": [
+      {
+        "timestamp": [
+          0,
+          3.98
+        ],
+        "text": " Why can a hotter pan make a drop of water last longer?"
+      },
+      {
+        "timestamp": [
+          3.98,
+          9.68
+        ],
+        "text": " On a hot metal surface, water can touch the metal and boil away quickly."
+      },
+      {
+        "timestamp": [
+          9.68,
+          12.68
+        ],
+        "text": " Heat it far enough and something changes."
+      },
+      {
+        "timestamp": [
+          12.68,
+          16.94
+        ],
+        "text": " The bottom of the drop turns to vapor almost instantly."
+      },
+      {
+        "timestamp": [
+          16.94,
+          45.2
+        ],
+        "text": " That vapor forms a cushion, lifting the rest of the water. more heat can speed evaporation again."
+      },
+      {
+        "timestamp": [
+          45.2,
+          49.96
+        ],
+        "text": " The surprise is that a hotter surface can give water less direct contact with the heat."
+      }
+    ]
+  },
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -18.8 LUFS\n    Threshold: -29.2 LUFS\n\n  Loudness range:\n    LRA:         2.7 LU\n    Threshold: -40.0 LUFS\n    LRA low:   -21.3 LUFS\n    LRA high:  -18.6 LUFS\n\n  True peak:\n    Peak:       -4.1 dBFS\n",
+  "subjectiveListening": "Owner master review: voice naturalness, Leidenfrost pronunciation, complete sentence prosody and semantic contrast; ASR cannot establish pronunciation or naturalness.",
+  "reviewFindings": {
+    "properName": "Source and decoded-master ASR render Leidenfrost as late and frost. This is a flagged recognition/pronunciation ambiguity, not a passed pronunciation test; owner should listen around cue 8.",
+    "wholeMaster": "Whole-master ASR omits a middle span; sentence-level decoded-master results cover every source interval.",
+    "semanticBoundaries": "Every sentence generated as one unit; no internal >=0.3s quiet interval detected in the complete doesn’t-mean contrast sentence. Interior quiet intervals >=0.3s occur only in two comma-bearing sentences in the measured clips. This does not prove natural stress or syntax by human hearing.",
+    "audioStatus": "Technical decoding, loudness and sentence presence pass; pronunciation/prosody remain owner listening judgments."
+  }
+}

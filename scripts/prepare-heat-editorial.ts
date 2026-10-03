@@ -5,7 +5,6 @@ import {sha256Json} from '../src/content-intelligence/run-schema';
 import {knowledgePackageSchema} from '../src/knowledge/schema';
 import {contentAssetSchema} from '../src/content-assets/schema';
 import {verifyInternalEditorial} from '../src/workflow/editorial';
-import {recentApprovedVisualWorks} from '../src/content-assets/visual-convergence';
 import {loadCycle,persistCycleEvent} from '../src/workflow/store';
 import type {RecordReference} from '../src/workflow/evidence';
 const base='content-intelligence/cycles/cycle-6/revision-2',now=new Date().toISOString();
@@ -14,8 +13,6 @@ const put=(name:string,data:unknown)=>{const path=`${base}/${name}.json`;if(exis
 const advance=(stage:'discovery'|'editorial'|'creative',record:RecordReference)=>{const registry=loadMediaRegistry();persistCycleEvent(process.cwd(),loadCycle(process.cwd(),'cycle.6',registry),{type:'complete-internal',stage,record,at:new Date().toISOString()},registry);};
 const data=JSON.parse(readFileSync(`${base}/authoring-data.json`,'utf8')) as {sources:{key:string;organization:string;title:string;type:'peer-reviewed'|'university';url:string;locator:string;summary:string;limits:string[]}[];definitions:[string,string,string[],string][];lines:[string,string[]][];objectives:string[]};
 const id='heat-barrier',aid=`${id}.asset.vapor-cushion`,cid=(key:string)=>`${id}.claim.${key}`;
-const works=recentApprovedVisualWorks(now,aid);
-const search=ref(`${base}/discovery-search.json`);
 const sourceInfo=data.sources;
 const evidenceRecords=sourceInfo.map(s=>put(`sources/${s.key}-inspection`,{sourceId:`source.heat-barrier.${s.key}`,url:s.url,retrievedAt:now,accessStatus:'inspected',inspectedText:s.summary,acquisition:'manual-source-inspection',inspectionMethod:'Actual body opened in session web tool; original bounded inspection summary and section locator. Not a stored HTTP body, full paper or snippet-only verification.',locator:s.locator,limitations:s.limits}));
 const definitions=data.definitions;

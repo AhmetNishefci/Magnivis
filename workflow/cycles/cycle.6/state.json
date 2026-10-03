@@ -1,20 +1,13 @@
 {
   "schemaVersion": 3,
   "id": "cycle.6",
-  "revision": 11,
+  "revision": 12,
   "authority": {
     "path": "workflow/authorities/cycle-6-start.json",
     "sha256": "6aed3e90317de6e37b4ea4668d1ee33d27054985c8c6238e732687de054e45b6"
   },
-  "stage": "production",
-  "workInProgress": {
-    "stage": "production",
-    "record": {
-      "path": "content-intelligence/cycles/cycle-6/revision-2/production-start.json",
-      "sha256": "bb39d0fc66a6b323d92e2056cb0bb3684c1e51492e9946fcc20391ae99cd6dcf"
-    },
-    "startedAt": "2026-10-03T11:29:35.706Z"
-  },
+  "stage": "master-review",
+  "workInProgress": null,
   "receipts": [
     {
       "stage": "discovery",
@@ -36,9 +29,19 @@
         "path": "content-intelligence/cycles/cycle-6/revision-2/direction-v1.json",
         "sha256": "1d1c3261e199635ad831285653fe94d24125f30afbd83b0757d419fe8dc00b27"
       }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/master-candidate-v1.json",
+        "sha256": "712d37d787b12da233dcbc5f97dd3b85a3e9b99471910ad8f5486f9b1e501956"
+      }
     }
   ],
-  "candidate": null,
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-6/revision-2/master-candidate-v1.json",
+    "sha256": "712d37d787b12da233dcbc5f97dd3b85a3e9b99471910ad8f5486f9b1e501956"
+  },
   "masterDecision": null,
   "release": null,
   "publicationDecision": null,
@@ -153,6 +156,16 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-6/revision-2/production-start.json",
         "sha256": "bb39d0fc66a6b323d92e2056cb0bb3684c1e51492e9946fcc20391ae99cd6dcf"
+      }
+    },
+    {
+      "revision": 12,
+      "previousSha256": "e93d232e59fcf90274df554ebdda5049182ab93ed35a4ade389f7c719d06c057",
+      "event": "production",
+      "at": "2026-10-03T11:40:07.589Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/master-candidate-v1.json",
+        "sha256": "712d37d787b12da233dcbc5f97dd3b85a3e9b99471910ad8f5486f9b1e501956"
       }
     }
   ]
