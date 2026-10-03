@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.8",
+  "media": {
+    "id": "media.174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d",
+    "sha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d"
+  },
+  "durationSeconds": 97.4,
+  "scriptSha256": "421cbf910562bb55ede7be7e3e0bd89765b76b670ce20209340ef436d8294125",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-8/production-plan.candidate-v2.json",
+    "sha256": "e87ec2eb3fddc0dc5f80082dd9adff457203c89447cd99ef013e3f7f27dd8742"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/oklo.json",
+    "sha256": "c2dea5443176cb4d73c04aaaa82dbd9aa8039896766ba6fec9be55b3ae51391d"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/oklo.json",
+    "sha256": "39ae8ff89ca22414c228a852ea38bbaab9721a6f6c31ce5f321bcd402173c099"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-8/profiles/youtube.json",
+        "sha256": "4db6d19738256dba45d0d75fd8c9df4312ecba9d06377643d041283ff83564a1"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-8/preflight/youtube.json",
+        "sha256": "8b903471cffdc27de5b626c6634a7759d4f340725d4c068718d4decd2ff18ff6"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-8/profiles/tiktok.json",
+        "sha256": "16fe42cb1046902bc562f046ced4fd994d23f130d4e1d624d399837524c93c2d"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-8/preflight/tiktok.json",
+        "sha256": "5d07be27c91d97f524d18bc20750d7e9ac11493f4ab9863f8c91d7749c888811"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-8/profiles/instagram.json",
+        "sha256": "60005b34a6a6184094b4b5028c7a2c6ed1814f45aab0514ae0b1f962634de9ad"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-8/preflight/instagram.json",
+        "sha256": "fad136ba3a793f363e55f3103f3e8c6faf97b725d9cb55ff8e896ce5941336ba"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-8/profiles/facebook.json",
+        "sha256": "224c9bf590b26b7ee99edf67fe59b3a8f6b31b42f169e9c30b422a9674989b19"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-8/preflight/facebook.json",
+        "sha256": "b17bc5c190f5f2742712262481ff7ca91e6c48f1328788da948cd3b0e7b0159f"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "oklo-cue-1",
+      "transcript": "Earth had nuclear reactors about two billion years ago. Nobody built them.",
+      "start": 0,
+      "duration": 5.15,
+      "media": {
+        "id": "media.be7d3cfa72ddd124db5fe7cd99c82a1515aa3dcbe3510f27b124decce04f678c",
+        "sha256": "be7d3cfa72ddd124db5fe7cd99c82a1515aa3dcbe3510f27b124decce04f678c"
+      }
+    },
+    {
+      "id": "oklo-cue-2",
+      "transcript": "At Oklo, in what is now Gabon, uranium-rich rock sustained nuclear chain reactions.",
+      "start": 5.533333333333333,
+      "duration": 6.325,
+      "media": {
+        "id": "media.9bdcdfd36347ac05e3c8c3a7c45409645d948e4f5d9851cb874d0e829af132bb",
+        "sha256": "9bdcdfd36347ac05e3c8c3a7c45409645d948e4f5d9851cb874d0e829af132bb"
+      }
+    },
+    {
+      "id": "oklo-cue-3",
+      "transcript": "Scientists found the clues in 1972: missing uranium-235, and the distinctive products of fission.",
+      "start": 12.066666666666666,
+      "duration": 8.45,
+      "media": {
+        "id": "media.c170b3b62a440abdd171a001b76cf34f5cac2a777911795c0dd9d19ed464fb0d",
+        "sha256": "c170b3b62a440abdd171a001b76cf34f5cac2a777911795c0dd9d19ed464fb0d"
+      }
+    },
+    {
+      "id": "oklo-cue-4",
+      "transcript": "But radioactive rock alone is not a reactor. One splitting nucleus must release neutrons that can split more nuclei, keeping a chain going.",
+      "start": 20.733333333333334,
+      "duration": 9.8,
+      "media": {
+        "id": "media.dd0f3b851c18c0d3dd5772a5d314f60640a02a05f2a3639ddb7662fe46104368",
+        "sha256": "dd0f3b851c18c0d3dd5772a5d314f60640a02a05f2a3639ddb7662fe46104368"
+      }
+    },
+    {
+      "id": "oklo-cue-5",
+      "transcript": "Back then, natural uranium contained more uranium-235, because that isotope decays faster than uranium-238.",
+      "start": 30.733333333333334,
+      "duration": 10.8,
+      "media": {
+        "id": "media.af79a561dfc2deded17fad36e195c20c824f70ae353264315a6c669ab8238ddd",
+        "sha256": "af79a561dfc2deded17fad36e195c20c824f70ae353264315a6c669ab8238ddd"
+      }
+    },
+    {
+      "id": "oklo-cue-6",
+      "transcript": "Geology concentrated the uranium. The deposit had to retain enough neutrons, with few impurities that would absorb them.",
+      "start": 41.733333333333334,
+      "duration": 8.55,
+      "media": {
+        "id": "media.e1325e368e8b4558b84a366a48d1517e84cb82d068386df593fa2cc280d3a435",
+        "sha256": "e1325e368e8b4558b84a366a48d1517e84cb82d068386df593fa2cc280d3a435"
+      }
+    },
+    {
+      "id": "oklo-cue-7",
+      "transcript": "Groundwater supplied another crucial ingredient.",
+      "start": 50.666666666666664,
+      "duration": 3.3,
+      "media": {
+        "id": "media.1cb01b52c9cc5c56cf96e02b2a6f3e551d6767edf41fa08727554652fb13310a",
+        "sha256": "1cb01b52c9cc5c56cf96e02b2a6f3e551d6767edf41fa08727554652fb13310a"
+      }
+    },
+    {
+      "id": "oklo-cue-8",
+      "transcript": "Collisions with hydrogen in the water slowed the neutrons, making further uranium-235 fissions more likely. Enough kept the chain alive.",
+      "start": 54.166666666666664,
+      "duration": 10.6,
+      "media": {
+        "id": "media.f0e5f8d7038773548d73b4a9b9d29fed441a86924da789b283e441c116003c6a",
+        "sha256": "f0e5f8d7038773548d73b4a9b9d29fed441a86924da789b283e441c116003c6a"
+      }
+    },
+    {
+      "id": "oklo-cue-9",
+      "transcript": "In one studied reaction zone, xenon isotope evidence points to repeated starts and stops.",
+      "start": 64.96666666666667,
+      "duration": 6.475,
+      "media": {
+        "id": "media.e513e5773d2b13fdbfa6785a649afef91d43c12f9e51c2866491e4ae5185d3ea",
+        "sha256": "e513e5773d2b13fdbfa6785a649afef91d43c12f9e51c2866491e4ae5185d3ea"
+      }
+    },
+    {
+      "id": "oklo-cue-10",
+      "transcript": "Researchers infer that heating drove moderating water away, stopping the chain. Cooling let water return, and fission restart.",
+      "start": 71.83333333333333,
+      "duration": 8.925,
+      "media": {
+        "id": "media.f43f007dc852d63e1b537c49d2d7497709f94832a6074df8b09e2b5c3b3edae6",
+        "sha256": "f43f007dc852d63e1b537c49d2d7497709f94832a6074df8b09e2b5c3b3edae6"
+      }
+    },
+    {
+      "id": "oklo-cue-11",
+      "transcript": "That cycle is reconstructed from traces in the rock, not an ancient clock anyone watched.",
+      "start": 80.96666666666667,
+      "duration": 6.1,
+      "media": {
+        "id": "media.8e9ff2fa8b8282017ab6538628db68154904d291c14389683dcde369de55cd1e",
+        "sha256": "8e9ff2fa8b8282017ab6538628db68154904d291c14389683dcde369de55cd1e"
+      }
+    },
+    {
+      "id": "oklo-cue-12",
+      "transcript": "No machinery. No electricity. Just heat from nuclear fission, sustained by fuel, water, and geology, long before humans existed.",
+      "start": 87.26666666666667,
+      "duration": 9.925,
+      "media": {
+        "id": "media.589cf56c8f834e46527cfb092c14e3c4a4ddca93ed00bcdfeff8b3715795779d",
+        "sha256": "589cf56c8f834e46527cfb092c14e3c4a4ddca93ed00bcdfeff8b3715795779d"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-8/qa/final-report.json",
+        "sha256": "730163495d5cc3c2a983c8575d82ff34e15a93205b5c6d1e93e74f345a2cc334"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Natural fission zones in rock, not human-built machinery or electricity generation.",
+    "Approximate two-billion-year age, not a precise common start date for every zone.",
+    "Ancient fissile fraction, concentration/geometry, neutron retention, competing absorption and moderation are jointly relevant.",
+    "Water slows neutrons through collisions, especially hydrogen; moderation is distinct from absorption.",
+    "Present depleted uranium and fission products provide evidence of ancient fission; operational details are reconstructed.",
+    "Cycling explicitly scoped to one studied reaction zone; groundwater feedback is an inference, no universal precise pulse clock.",
+    "Original illustrative geological and atomic views, not site footage, exact ancient geometry, quantitative neutron paths or visible radioactivity."
+  ],
+  "uncertainties": [
+    "Owner listening must judge Oklo, Gabon, xenon and isotope pronunciation, prosody and authored caption synchrony; ASR is corroboration only.",
+    "Ancient geometry, water content and detailed behavior are reconstructed; individual reaction zones need not share a schedule.",
+    "Relevant scholarly review, original criticality modeling and participant account inspected; original2004 full paper inaccessible beyond abstract, no raw-data replication.",
+    "Native UI, crop behavior and exact-media real-device performance remain untested.",
+    "Sampled browser and decoded visual inspection with full decode, not all-frame bounds or continuous human playback.",
+    "No variants, covers, deliveries, publication package, upload, scheduling, publication or analytics created."
+  ],
+  "unusualProduction": [
+    "Continuous original geological relief and scale changes, with two limited atomic mechanism views; restrained heat illustration and voice-only sound."
+  ]
+}

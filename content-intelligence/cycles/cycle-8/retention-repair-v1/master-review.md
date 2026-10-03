@@ -1,0 +1,20 @@
+# Cycle #8 — AHMET — MASTER REVIEW
+
+Repository-readiness repair completed under explicit owner authority. This does not approve the master.
+
+Current candidate: `artifacts/masters/oklo-cycle8-candidate-v3.mp4`
+SHA-256 `b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20`,98,563,307bytes,97.4s picture/97.45s container. The file, narration, story, factual qualifications, visuals, captions and pacing are unchanged.
+
+Root cause: the V2 catalog correctly excludes lifecycle/approval from immutable identity, while durability incorrectly treated every catalog identity as eligible production media. That made preservation of a registered failed candidate incompatible with current readiness. Merely exempting the raw105MBGit blob would also violate GitHub's physical limit.
+
+Resulting invariant: active production and new registrations obey the unchanged exclusive100MiB limit. Journal-proven historical failed/rejected/superseded candidates can be retained as ineligible exact-byte evidence. Admission requires original registration, exact owner revision/rejection, scoped retention authority, failure evidence and any later replacement event; an active candidate cannot qualify. All storage parts obey the same physical Git limit and their ordered concatenation must reproduce the original identity. No filename/hash whitelist confers eligibility.
+
+V2 remains at its original path locally,105,056,676bytes, exact SHA-256 `174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d`. Its immutable catalog row, original review event/state, ordering error and durability failure remain unchanged. Git retains the full payload in67,108,864byte and37,947,812byte archival parts; the raw path is an ignored materialization. It is not recompressed, approved, production-eligible or an upload asset. Clean-checkout resolution restores exact original bytes without encoding/rendering or overwriting existing files.
+
+Contract/code: separate hash-bound `artifacts/media-retentions.json` and general retention validator/resolver; durability validates evidence, physical parts and original identity; current/pending workflow state checks retain production eligibility/size enforcement while historical replay remains truthful; variants, release and upload resolution reject retained production media. Shared JSON identity/evidence schema extraction removes an import cycle without changing hashes or owner-decision semantics. Existing pre-registration size checks remain enabled. ARTIFACT-ARCHITECTURE-V2, ARTIFACT-STORAGE and WORKFLOW-V3 record the scoped owner-authorized policy.
+
+Validation: typecheck, lint, all480tests/51files, workflow replay, no-op pending-event recovery, authoritative durability, artifact architecture, native recovery, artifact verification, isolated checkout reconstruction, historical preservation, diff hygiene and scoped secret scanning pass. Four new general retention tests cover exact restore/non-promotion, active/forged/corrupt/missing evidence rejection, oversized active/new registration rejection and required tracking. The two prior pre-registration regressions also pass. No tests were disabled.417Cycle7/related files remain byte-identical to authoritative main.
+
+Journal/state unchanged: revision11/event11, AHMET — MASTER REVIEW, exact state SHA-256 `ba0f3615a014c1d2a6d9c783b856df0f178b90e521031095c37c9b92e1d16b12` is the journal's normalized next-state digest; the actual state-file byte hash is recorded in scope-verification.json. Original revisions1–11 retained. Premise approved; master and publication approvals absent. No variants, covers, publication packages, platform actions or Cycle9.
+
+Owner-authorized local commit follows successful validation. No remote push/remote clone proof is claimed. Full evidence is in this directory; earlier failed-validation checkpoints remain historical, unchanged. Pronunciation/prosody, continuous subjective playback quality and native/mobile behavior remain owner review limitations. Original zone-specific scientific reconstruction caveats and historical Wood Frog missing-original limitation remain unchanged.

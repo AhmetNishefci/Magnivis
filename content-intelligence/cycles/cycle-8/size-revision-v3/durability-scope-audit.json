@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-03T22:32:51.545637Z",
+  "method": "Independent exhaustive catalog identity/tracking/size/provenance audit; supplements, never overrides authoritative durability command.",
+  "catalogRowsChecked": 739,
+  "problems": [
+    {
+      "path": "artifacts/masters/oklo-cycle8-candidate-v2.mp4",
+      "issue": "over exclusive 100MiB limit",
+      "bytes": 105056676
+    }
+  ],
+  "preservationBindings": "all unchanged",
+  "oldMasterReviewRevision": 8,
+  "currentRevision": 11,
+  "globalDurability": "blocked solely by preserved oversized V2",
+  "replacementDurability": "V3 actual identity, Git index tracking, size and all provenance tracked; no size exception applied",
+  "limitBytesExclusive": 104857600,
+  "commitStatus": "staged checkpoint; no new commit; HEAD2c14498"
+}

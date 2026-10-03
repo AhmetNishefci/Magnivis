@@ -1,0 +1,18 @@
+{
+  "enteredAt": "2026-10-03T22:16:55.555879+00:00",
+  "cycleStage": "master-review",
+  "candidate": "master-candidate-v2.json",
+  "exactMasterSha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d",
+  "mediaQa": "passed: probe/full decode,53 exact caption phrases,117 browser/decoded checkpoints, sampled visual inspection, interval ASR and mix",
+  "repositoryCheck": "failed",
+  "durabilityCheck": "failed",
+  "fileBytes": 105056676,
+  "maximumExclusiveBytes": 104857600,
+  "excessBytes": 199076,
+  "blockingReason": "Canonical media exceeds current Git file policy. Local index tracking was corrected, but size remains above100MiB.",
+  "registrationOrderingError": "Master was catalogued and production receipt entered before final artifact durability validation. No owner decision or publication authority has been forged.",
+  "authorityRequired": "src/workflow/cycle.ts retry-internal refuses master-review; an owner revision decision is needed before further production work. Canonical payload and journal are immutable; do not silently replace bytes or rewrite audit history.",
+  "recommendation": "Request a file-size revision and authorize a scoped repair of this newly introduced pre-approval durability failure while preserving the premise, verified wording and all historical cycles. Re-encode with adequate file-size margin and rerun full exact-media QA before approval.",
+  "unverified": "No compression repair has been executed or quality-verified.",
+  "historicalPreservation": "417 matching Cycle7/related historical tracked files byte-equal to authoritative base; Cycle7 remains authorized revision25."
+}

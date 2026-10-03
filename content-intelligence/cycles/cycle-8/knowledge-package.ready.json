@@ -1,0 +1,432 @@
+{
+  "id": "oklo",
+  "revision": 1,
+  "topic": "Oklo natural fission reactors",
+  "centralQuestion": "How did natural nuclear reactors operate about two billion years ago without anyone building them?",
+  "taxonomy": {
+    "pillar": "science-reality",
+    "domains": [
+      "geology",
+      "nuclear-physics"
+    ],
+    "topics": [
+      "natural-reactors",
+      "deep-time"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "Ancient fuel composition, concentrated ore, neutron economy and groundwater moderation enabled natural nuclear chain reactions.",
+  "viewerPayoff": "No machinery. No electricity. Just heat from nuclear fission, sustained by fuel, water, and geology, long before humans existed.",
+  "sources": [
+    {
+      "id": "source.oklo.bentridi",
+      "organization": "Comptes Rendus Geoscience / Bentridi et al.",
+      "title": "Inception and evolution of Oklo natural nuclear reactors (2011)",
+      "sourceType": "peer-reviewed",
+      "url": "https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.1016/j.crte.2011.09.008/",
+      "retrieved": "2026-10-03",
+      "notes": "Full relevant article text inspected; no raw neutron-transport simulation reproduced. Model concerns specific zones and reconstructed conditions; no universal concentration, dimensions or water threshold."
+    },
+    {
+      "id": "source.oklo.davis",
+      "organization": "Davis, Gould and Sharapov",
+      "title": "Oklo Reactors and Implications for Nuclear Science (2014)",
+      "sourceType": "peer-reviewed",
+      "url": "https://arxiv.org/pdf/1404.4948",
+      "retrieved": "2026-10-03",
+      "notes": "Relevant pages inspected in parsed PDF; review synthesizes original investigations, not independent raw-data replication. Approximate age, inferred activity. RZ13 pulse estimates must not be generalized to all reaction zones."
+    },
+    {
+      "id": "source.oklo.meshik",
+      "organization": "Alex P. Meshik / Scientific American",
+      "title": "The Workings of an Ancient Nuclear Reactor (original October 2005; web 2009)",
+      "sourceType": "primary-source",
+      "url": "https://www.scientificamerican.com/article/ancient-nuclear-reactor/",
+      "retrieved": "2026-10-03",
+      "notes": "Author explanatory account inspected; popular participant exposition, not a second independent experiment. Original 2004 PRL abstract inspected separately; full subscription paper could not be accessed. Excluded blanket modern-natural-uranium, explosion and waste-storage generalizations."
+    },
+    {
+      "id": "source.oklo.doe",
+      "organization": "United States Department of Energy",
+      "title": "History — nuclear fission and chain reactions",
+      "sourceType": "government",
+      "url": "https://www.energy.gov/ne/history",
+      "retrieved": "2026-10-03",
+      "notes": "Institutional introductory body inspected; used for fundamental mechanism, not Oklo site-specific claims."
+    },
+    {
+      "id": "source.oklo.moderation",
+      "organization": "US Department of Energy",
+      "title": "DOE/EIS-0288D (1998), Appendix A: Nuclear Fission Reactors",
+      "sourceType": "government",
+      "url": "https://www.energy.gov/sites/default/files/EIS-0288-DEIS-1998.pdf",
+      "retrieved": "2026-10-03",
+      "notes": "Only relevant Appendix A body inspected, not entire environmental impact statement. Basic scattering mechanism only; modern engineered control-rod descriptions not imported into Oklo."
+    }
+  ],
+  "claims": [
+    {
+      "id": "oklo.claim.natural",
+      "statement": "Natural fission reaction zones at Oklo in present-day Gabon operated about two billion years ago, without human construction.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "notes": "Approximate geological age, multiple natural reaction zones; not human machinery or electricity production."
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "notes": "Approximate geological age, multiple natural reaction zones; not human machinery or electricity production."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Approximate geological age, multiple natural reaction zones; not human machinery or electricity production."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.evidence",
+      "statement": "In 1972, anomalously depleted U235 led to investigation; distinctive fission-product isotope patterns establish ancient fission.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "notes": "Present isotope measurements provide evidence; ancient operation reconstructed. No invented archival imagery or sample measurement."
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "notes": "Present isotope measurements provide evidence; ancient operation reconstructed. No invented archival imagery or sample measurement."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Present isotope measurements provide evidence; ancient operation reconstructed. No invented archival imagery or sample measurement."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.chain",
+      "statement": "A U235 nucleus absorbing a neutron can split, releasing heat and further neutrons; enough further fissions sustain a chain.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.doe",
+          "locator": "Opening explanation and paragraphs on released neutrons and a self-sustaining chain reaction",
+          "notes": "Simplified schematic, not an exact atom count, neutron trajectory or model of every fission channel."
+        },
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "notes": "Simplified schematic, not an exact atom count, neutron trajectory or model of every fission channel."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Simplified schematic, not an exact atom count, neutron trajectory or model of every fission channel."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.fuel",
+      "statement": "Ancient natural uranium had a larger U235 fraction because U235 decays faster than U238.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "notes": "No exact percentage required; fuel composition alone is insufficient."
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "notes": "No exact percentage required; fuel composition alone is insufficient."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No exact percentage required; fuel composition alone is insufficient."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.criticality",
+      "statement": "Concentrated uranium in favorable geometry, sufficiently few neutron absorbers and suitable moderation allowed enough neutrons to cause further fission.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "notes": "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe."
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "notes": "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe."
+        },
+        {
+          "sourceId": "source.oklo.moderation",
+          "locator": "Appendix A, printed A-2 and A-4 (PDF pages 395 and 397 zero-based): neutron economy and hydrogen scattering",
+          "notes": "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.water",
+      "statement": "Groundwater served as a neutron moderator: collisions, especially with hydrogen, slowed neutrons, increasing the likelihood of further U235 fission.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "notes": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation."
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "notes": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation."
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "notes": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation."
+        },
+        {
+          "sourceId": "source.oklo.moderation",
+          "locator": "Appendix A, printed A-2 and A-4 (PDF pages 395 and 397 zero-based): neutron economy and hydrogen scattering",
+          "notes": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.cycling",
+      "statement": "Xenon isotope evidence from one studied reaction zone supports reconstructed repeated activity and dormancy; researchers infer heating removed moderating water and cooling permitted its return.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "notes": "Inference for studied RZ13, not a directly observed ancient clock or established universal schedule; no precise pulse durations used."
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "notes": "Inference for studied RZ13, not a directly observed ancient clock or established universal schedule; no precise pulse durations used."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Inference for studied RZ13, not a directly observed ancient clock or established universal schedule; no precise pulse durations used."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.heat",
+      "statement": "Natural fission produced heat; Oklo was not an engineered electricity-generating plant.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.doe",
+          "locator": "Opening explanation and paragraphs on released neutrons and a self-sustaining chain reaction",
+          "notes": "No electric output or geothermal-to-electric conversion implication."
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "notes": "No electric output or geothermal-to-electric conversion implication."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No electric output or geothermal-to-electric conversion implication."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.8",
+          "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "oklo.claim.universal-clock",
+      "statement": "All Oklo reaction zones ran on exactly the same thirty-minute-on, two-and-a-half-hour-off schedule.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "notes": "Excluded: precision originates in a particular sample/zone model, not a universal clock."
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "notes": "Excluded: precision originates in a particular sample/zone model, not a universal clock."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Excluded: precision originates in a particular sample/zone model, not a universal clock."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "oklo.caveat.model",
+      "statement": "Original illustrative reconstruction, approximate age and zone-specific inferred cycling; no exact ancient geometry, electric generation or universal pulse schedule.",
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.evidence",
+        "oklo.claim.chain",
+        "oklo.claim.fuel",
+        "oklo.claim.criticality",
+        "oklo.claim.water",
+        "oklo.claim.cycling",
+        "oklo.claim.heat"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "oklo.hook.unbuilt",
+      "archetype": "apparent-impossibility",
+      "text": "Earth had nuclear reactors about two billion years ago. Nobody built them.",
+      "viewerPromise": "Explain how geology supplied the conditions for natural fission.",
+      "claimIds": [
+        "oklo.claim.natural"
+      ]
+    },
+    {
+      "id": "oklo.hook.water",
+      "archetype": "hidden-mechanism",
+      "text": "Groundwater helped keep ancient nuclear chain reactions going.",
+      "viewerPromise": "Understand neutron moderation in natural rock.",
+      "claimIds": [
+        "oklo.claim.water"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "oklo.narrative.mechanism",
+      "title": "The nuclear reactors nobody built",
+      "description": "Contradiction, evidence, ancient fuel, neutron economy, water, qualified cycling and geological payoff.",
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.evidence",
+        "oklo.claim.chain",
+        "oklo.claim.fuel",
+        "oklo.claim.criticality",
+        "oklo.claim.water",
+        "oklo.claim.cycling",
+        "oklo.claim.heat"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "oklo.visual.strata",
+      "title": "Enter the ore body",
+      "description": "Original continuous geological strata, close ore textures and selective microscopic explanation; illustrative reconstruction.",
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.evidence",
+        "oklo.claim.chain",
+        "oklo.claim.fuel",
+        "oklo.claim.criticality",
+        "oklo.claim.water",
+        "oklo.claim.cycling",
+        "oklo.claim.heat"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "How do isotope patterns reveal ancient events?"
+  ],
+  "followUpOpportunities": [
+    "Any future story requires fresh open discovery and approval."
+  ],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.8",
+      "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+    },
+    "approvedAt": "2026-10-03",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

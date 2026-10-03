@@ -1,5 +1,14 @@
 # Asset licenses and provenance
 
+## Cycle #8 — Oklo master-review candidate
+
+- Original geological relief, ore seams, groundwater flow, atomic fission and moderation artwork: Magnivis-authored `src/components/OkloWorld.tsx` and `src/compositions/Oklo.tsx`, project-owned. Illustrative reconstruction, not site footage, calibrated geometry, neutron tracks or visible radioactivity. Research figures and institutional media are consulted evidence only.
+- Manrope400/600, pinned Fontsource5.3.0, unmodified SIL OFL1.1. Exact font/license hashes in `content-intelligence/cycles/cycle-8/rights-provenance.json`.
+- Twelve original narration WAVs from established local Kokoro82M, `af_heart`, q8CPU, speed0.97, Apache2.0 model/output terms. Exact reviewed text and measured identities retained in `src/production/narration/oklo.json`; no paid API, cloned voice, music or sampled sound.
+- Designed burned-in phrases and optional accessibility VTT are original text. Exact master and bounded decoded QA evidence are canonical SHA256-bound media; smoke/intermediate encodes and ordinary browser captures are disposable.
+
+This records internal rights/provenance, not owner master or publication approval.
+
 ## Cycle #5 — Chladni sand master-review candidate
 
 - Original plate/material drawing, analytic nodal fields, deterministic grain choreography, enlarged grain view and slowed side-view section: Magnivis-authored `src/components/ChladniPlate.tsx`, `src/production/chladni-geometry.ts` and `src/compositions/ChladniSand.tsx`; project-owned original artwork. These are explicitly qualitative illustrations, not calibrated plate dynamics or experimental footage. Smithsonian, Exploratorium and UNSW bodies were inspected as factual references; their photographs, figures, videos and sounds are not production assets.
@@ -145,3 +154,7 @@ Original progressive quantum-path ribbons, enlarged probability-amplitude compar
 ## Cycle #7 publication cover — 2026-10-03
 
 `artifacts/covers/interaction-free-cover-v1.png` is project-owned original procedural artwork in `src/ifm-cover-index.tsx`, using the unchanged approved QuantumPossibilities absorber/detector primitives. Existing Manrope Latin400/600, pinned5.3.0, SIL OFL1.1; exact font/license evidence remains in Cycle7 revision3 rights provenance. No external photograph/figure/AI raster or new audio. One immutable SHA-256-bound PNG shared by YouTube/Instagram; TikTok/Facebook use existing canonical decoded32.7s frame by reference. Cover review/rights/layout evidence under Cycle7 publication/qa; exact owner-approved master unchanged. Cover/publication approval pending.
+
+Cycle #8 scoped V3 encoding replacement uses the exact same original visual implementation, designed captions and existing licensed/local narration assets as V2. No new external assets. Exact AAC and decoded PCM are unchanged. Candidate identity and encoding evidence: `content-intelligence/cycles/cycle-8/size-revision-v3/encoding.json`. V2 remains preserved as failed registered evidence.
+
+Cycle #8 historical retention parts preserve exact existing V2 payload byte ranges for audit/recovery, with no new creative assets or rights change. Their concatenation binds the original source provenance and catalog identity; retained V2 is ineligible for production/delivery. V3 remains unchanged.

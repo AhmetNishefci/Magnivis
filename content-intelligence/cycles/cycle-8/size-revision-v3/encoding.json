@@ -1,0 +1,34 @@
+{
+  "enteredAt": "2026-10-03T22:24:28.619Z",
+  "old": {
+    "path": "artifacts/masters/oklo-cycle8-candidate-v2.mp4",
+    "sha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d",
+    "bytes": 105056676
+  },
+  "replacement": {
+    "path": "artifacts/masters/oklo-cycle8-candidate-v3.mp4",
+    "sha256": "b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20",
+    "bytes": 98563307
+  },
+  "limitExclusiveBytes": 104857600,
+  "headroomBytes": 6294293,
+  "headroomPercent": 6.0027055740356445,
+  "encoding": {
+    "videoBitrateBefore": "8M",
+    "videoBitrateAfter": "7.5M",
+    "changePercent": -6.25,
+    "codec": "H264",
+    "pixelFormat": "yuv420p",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "pictureSource": "Same unchanged Remotion source rerendered before compression; avoids transcoding V2 picture.",
+    "audio": "Exact V2 AAC packets copied; decoded audio hash identical.",
+    "contentChanges": [],
+    "audioPacketSha256": "SHA256=0ce3a3c4acfe03cfd43aedaa14ac358ba80b7205e9a986fcea695ecae5e4d78d",
+    "decodedAudioSha256": "SHA256=179722b34e981ef3164c2283bf77acdcb27247be841139b67c7ae552e3b32574",
+    "videoPacketSha256": "SHA256=ae1c58ce532295a40afbcb50533dd8425452b6a82060cff72cf1d261dd79719f"
+  },
+  "fileSizePreflight": "passed before registration; over5% headroom",
+  "approvalGranted": false
+}

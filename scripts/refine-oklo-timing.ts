@@ -1,0 +1,21 @@
+import {mkdirSync,readFileSync,writeFileSync,renameSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+const base='content-intelligence/cycles/cycle-8',read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+const captions=read('src/captions/plans/oklo.json'),plan=read('src/production/plans/oklo.json');
+mkdirSync(`${base}/production-drafts`,{recursive:true});
+for(const [name,data] of [['captions-v1',captions],['plan-v1',plan]])writeFileSync(`${base}/production-drafts/${name}.json`,JSON.stringify(data,null,2)+'\n',{flag:'wx'});
+const cueStart=2155,sourceEnd=2423,cooling=cueStart+150;
+const groups=captions.cues.filter((c:{sourceNarrationCueId:string})=>c.sourceNarrationCueId==='oklo-cue-10');
+const firstWeights=[2,3,3,3];let acc=0;
+for(let i=0;i<4;i++){groups[i].startFrame=cueStart+Math.round(acc/11*150);acc+=firstWeights[i]!;groups[i].endFrame=cueStart+Math.round(acc/11*150);}
+groups[4].startFrame=cooling;groups[4].endFrame=cooling+Math.round(4/7*(sourceEnd-cooling));groups[5].startFrame=groups[4].endFrame;groups[5].endFrame=sourceEnd;
+for(const g of groups)g.presentationIntent='Authored phrase timing; the cooling sentence starts at5.0s corroborated by local clip ASR. Exact reviewed words retained; not a word-level forced alignment.';
+captions.revision=2;
+writeFileSync('src/captions/plans/oklo.json',JSON.stringify(captions,null,2)+'\n');
+plan.captions.captionPlanRevision=2;plan.captions.captionPlanSha256=sha256Json(captions);
+writeFileSync('src/production/plans/oklo.json',JSON.stringify(plan,null,2)+'\n');
+const stamp=(f:number)=>{const ms=Math.round(f/30*1000);return `${String(Math.floor(ms/3600000)).padStart(2,'0')}:${String(Math.floor(ms/60000)%60).padStart(2,'0')}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}.${String(ms%1000).padStart(3,'0')}`;};
+writeFileSync(plan.captions.file,'WEBVTT\n\n'+captions.cues.map((c:{startFrame:number;endFrame:number;lines:string[]},i:number)=>`${i+1}\n${stamp(c.startFrame)} --> ${stamp(c.endFrame)}\n${c.lines.join('\n')}\n`).join('\n'));
+writeFileSync(`${base}/production-drafts/refinement.json`,JSON.stringify({enteredAt:new Date().toISOString(),reason:'Decoded frame review found cooling label before stopping-chain phrase ended. Synchronize caption and image with the5.0s measured sentence boundary.',draftMaster:{path:'output/oklo-unretained-draft-v1.mp4',sha256:mediaHash('artifacts/masters/oklo-cycle8-candidate-v1.mp4')},retention:'Unregistered temporary draft; no approval or canonical identity. Final master uses a distinct v2 path.',evidence:'qa/oklo/audio-inspection.json',coolingFrame:cooling,narrationUnchanged:true},null,2)+'\n',{flag:'wx'});
+renameSync('artifacts/masters/oklo-cycle8-candidate-v1.mp4','output/oklo-unretained-draft-v1.mp4');

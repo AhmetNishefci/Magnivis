@@ -1,0 +1,21 @@
+{
+  "cycleId": "cycle.8",
+  "status": "passed",
+  "pnpmCheck": {
+    "passed": true,
+    "execution": "Node22.23.3 with locally cached pnpm10.17.1 runs package check script",
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFilesPassed": 49,
+    "testsPassed": 474,
+    "gitDiffCheck": "passed",
+    "logSha256": "11bb891063c9f23ba7d0bd5213656831093b187683eda6e265c3f6f377776a55"
+  },
+  "testMaintenance": {
+    "file": "tests/cycle-v3.test.ts",
+    "reason": "Historical compatibility test incorrectly assumed all future repository cycles were Cycles4\u20137; scope existing assertions to exact historical IDs and decision identities, retaining historical gate/state/revision assertions while admitting prospective cycles. No workflow or historical evidence modified."
+  },
+  "durability": "Same durability verifier passed through Node import loader; see scope-verification.json. No new media payload or historical binary changes.",
+  "firstAttempts": "System pnpm wrapper stalled without output; explicit cached pinned pnpm with supported Node22 used. pnpm artifacts:durable tsx CLI IPC denied by sandbox; same verifier passed via Node loader. Initial check473/474 exposed fixed historical-list assumption; final complete check474/474 passed.",
+  "scope": "Premise Review only. No final editorial development, CreativeDirection execution, production or release work; no platform actions. Existing205 Cycle7 files match baseline bytes."
+}

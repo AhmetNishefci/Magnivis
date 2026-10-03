@@ -439,13 +439,16 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
     expect(()=>editorialDecisionContext(f.root)).toThrow(/committed journal events/);
   });
   it('replays all historical cycles without adding premise gates or transferring authority',()=>{
-    const cycles=loadProjectCycles(process.cwd(),registry);
-    expect(cycles.map(c=>c.id)).toEqual(['cycle.4','cycle.5','cycle.6','cycle.7']);
+    const historicalIds=['cycle.4','cycle.5','cycle.6','cycle.7'];
+    // New independent cycles coexist with this frozen compatibility checkpoint.
+    const cycles=loadProjectCycles(process.cwd(),registry).filter(c=>historicalIds.includes(c.id));
+    expect(cycles.map(c=>c.id)).toEqual(historicalIds);
     for(const cycle of cycles){expect(cycle).not.toHaveProperty('premise');expect(cycle).not.toHaveProperty('premiseDecision');expect(cycle.history.some(h=>h.event==='premise-review')).toBe(false);}
     expect(cycles.at(-1)).toMatchObject({stage:'authorized',revision:25});
     const f=fixture();const pending=transitionCycle(startCycle(f.authority,f.root),f.event('discovery'),registry,f.root);
     expect(()=>transitionCycle(pending,{type:'owner-decision',record:f.put({...read(join(f.root,f.decision('premise-review',f.selection).path)),cycleId:'cycle.other'}),at:now},registry,f.root)).toThrow(/exact review target/);
-    const context=editorialDecisionContext(process.cwd());
+    const historicalDecisions=read('system-audits/pre-production-premise-review/historical-editorial-decisions.json') as {decision:RecordReference}[];
+    const context=editorialDecisionContext(process.cwd()).filter(c=>historicalDecisions.some(h=>h.decision.path===c.decision.path&&h.decision.sha256===c.decision.sha256));
     expect(context.map(c=>c.judgment)).toEqual(['reject-premise','approve-premise']);
     expect(context.every(c=>c.nonGeneralizations.length>0)).toBe(true);
   },60000);

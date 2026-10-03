@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-03T22:52:45.144Z",
+  "scope": "isolated-index-checkout",
+  "restoredFromArchive": true,
+  "sourceMediaCachesUsed": false,
+  "durability": {
+    "passed": true,
+    "canonicalPayloads": 739,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "workflowReplay": [
+    {
+      "id": "cycle.4",
+      "revision": 9,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.5",
+      "revision": 13,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.6",
+      "revision": 23,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.7",
+      "revision": 25,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.8",
+      "revision": 11,
+      "stage": "master-review"
+    }
+  ],
+  "recovery": "exact no-op; no pending event",
+  "preservationBindings": "all exact",
+  "historicalFilesCompared": 417,
+  "cycle8": {
+    "revision": 11,
+    "stage": "master-review",
+    "stateSha256": "cda8200895e143371e3eb3554d620ffe0995527ff97c79ba6c2a02b06198a771",
+    "candidate": {
+      "path": "content-intelligence/cycles/cycle-8/size-revision-v3/master-candidate-v3.json",
+      "sha256": "f7e828c282b0238c5ff7d1ffe36a2faef50b68f503e359077135ca98b09f3b63"
+    },
+    "media": {
+      "id": "media.b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20",
+      "sha256": "b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20"
+    }
+  },
+  "v2": {
+    "bytes": 105056676,
+    "sha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d",
+    "productionEligible": false,
+    "materializationPresent": true
+  },
+  "v3": {
+    "bytes": 98563307,
+    "sha256": "b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20",
+    "unchanged": true
+  },
+  "architecture": null,
+  "masterApproved": false,
+  "releasePrepared": false,
+  "externalPlatformActions": []
+}

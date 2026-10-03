@@ -1,0 +1,342 @@
+{
+  "premiseAlignment": {
+    "selectionSha256": "92aabdda7c65042afbd06c76460992a00d6f85b639348acb2fac08cbcf0a83a1",
+    "preservesPublishingOpportunity": true,
+    "rationale": "The approved unbuilt-reactor contradiction and physical mechanism remain intact; qualified zone-specific cycling sharpens truth without weakening the central payoff."
+  },
+  "schemaVersion": 3,
+  "cycleId": "cycle.8",
+  "topicCandidateId": "oklo",
+  "enteredAt": "2026-10-03T21:56:12.321Z",
+  "reviewer": "Codex session — internal evidence review, not Ahmet",
+  "packageSha256": "dc8364a255ea88408e7f394182445405db8d7e6534eaaf008a7e49fd66ee85fb",
+  "assetSha256": "f59ea9b410ec782a7d2afc3d74ddecbda35cc3ffc8ad318866c69461cf006c03",
+  "scriptSha256": "421cbf910562bb55ede7be7e3e0bd89765b76b670ce20209340ef436d8294125",
+  "inspections": [
+    {
+      "sourceId": "source.oklo.bentridi",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions"
+      ],
+      "supportsClaimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.chain",
+        "oklo.claim.fuel",
+        "oklo.claim.criticality",
+        "oklo.claim.water"
+      ],
+      "limitations": [
+        "Full relevant article text inspected; no raw neutron-transport simulation reproduced.",
+        "Model concerns specific zones and reconstructed conditions; no universal concentration, dimensions or water threshold."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-8/sources/bentridi-inspection.json",
+        "sha256": "2b9bd1c0d4515a9dee6ec57e18afe8dd1a834fb76723e1157054462fb69668bf"
+      },
+      "sourceQualityRationale": "Original field-constrained peer-reviewed criticality modeling; initial-state uncertainties explicitly retained."
+    },
+    {
+      "sourceId": "source.oklo.davis",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction"
+      ],
+      "supportsClaimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.evidence",
+        "oklo.claim.fuel",
+        "oklo.claim.water",
+        "oklo.claim.cycling",
+        "oklo.claim.heat"
+      ],
+      "limitations": [
+        "Relevant pages inspected in parsed PDF; review synthesizes original investigations, not independent raw-data replication.",
+        "Approximate age, inferred activity. RZ13 pulse estimates must not be generalized to all reaction zones."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-8/sources/davis-inspection.json",
+        "sha256": "a3b891a309cf6cfbd4e565b819c08819a5ca208f9912340fb894e8f1eb71d3f0"
+      },
+      "sourceQualityRationale": "Technical scholarly synthesis with original isotope-study references and specific RZ13 limitations."
+    },
+    {
+      "sourceId": "source.oklo.meshik",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling"
+      ],
+      "supportsClaimIds": [
+        "oklo.claim.evidence",
+        "oklo.claim.criticality",
+        "oklo.claim.water",
+        "oklo.claim.cycling"
+      ],
+      "limitations": [
+        "Author explanatory account inspected; popular participant exposition, not a second independent experiment.",
+        "Original 2004 PRL abstract inspected separately; full subscription paper could not be accessed.",
+        "Excluded blanket modern-natural-uranium, explosion and waste-storage generalizations."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-8/sources/meshik-inspection.json",
+        "sha256": "705791faacbb203859397ad1307ecc0aeda987a3d211deb3fdf3724a31e50c27"
+      },
+      "sourceQualityRationale": "Participating investigator explains his sample analysis and distinguishes likely feedback mechanism from measurement."
+    },
+    {
+      "sourceId": "source.oklo.doe",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Opening explanation and paragraphs on released neutrons and a self-sustaining chain reaction"
+      ],
+      "supportsClaimIds": [
+        "oklo.claim.chain",
+        "oklo.claim.heat"
+      ],
+      "limitations": [
+        "Institutional introductory body inspected; used for fundamental mechanism, not Oklo site-specific claims."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-8/sources/doe-inspection.json",
+        "sha256": "12cf834aefe282b40b23b81e431cf157db516078ff8d1ab63ad2d3ec3aaf1835"
+      },
+      "sourceQualityRationale": "Government fundamentals, not site-specific evidence."
+    },
+    {
+      "sourceId": "source.oklo.moderation",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Appendix A, printed A-2 and A-4 (PDF pages 395 and 397 zero-based): neutron economy and hydrogen scattering"
+      ],
+      "supportsClaimIds": [
+        "oklo.claim.criticality",
+        "oklo.claim.water"
+      ],
+      "limitations": [
+        "Only relevant Appendix A body inspected, not entire environmental impact statement.",
+        "Basic scattering mechanism only; modern engineered control-rod descriptions not imported into Oklo."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-8/sources/moderation-inspection.json",
+        "sha256": "4b27bdd8d04941cbf2db0722e4a2d44348505e2211e78a42145dc35b57b12305"
+      },
+      "sourceQualityRationale": "Government fundamentals, not site-specific evidence."
+    }
+  ],
+  "claims": [
+    {
+      "id": "oklo.claim.natural",
+      "statementSha256": "c95686a73d6c48dd89d5bc12eeeae926757c8db14aae1be79d7b9dc25919d437",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "assessment": "Approximate geological age, multiple natural reaction zones; not human machinery or electricity production.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "assessment": "Approximate geological age, multiple natural reaction zones; not human machinery or electricity production.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.evidence",
+      "statementSha256": "9546a5f4e9959df087a6714d0f357dc696d1bfc91d3d72bb3647cc0fffcba18a",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "assessment": "Present isotope measurements provide evidence; ancient operation reconstructed. No invented archival imagery or sample measurement.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "assessment": "Present isotope measurements provide evidence; ancient operation reconstructed. No invented archival imagery or sample measurement.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.chain",
+      "statementSha256": "ce4a0eb22b640cd7e222467936295c541391b02bf442c2602e8481894c0ccc13",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.doe",
+          "locator": "Opening explanation and paragraphs on released neutrons and a self-sustaining chain reaction",
+          "assessment": "Simplified schematic, not an exact atom count, neutron trajectory or model of every fission channel.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "assessment": "Simplified schematic, not an exact atom count, neutron trajectory or model of every fission channel.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.fuel",
+      "statementSha256": "4c37c01d209e2750a88b633412be9efd0658b7388821a5c7189cd05ac1b3488e",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "assessment": "No exact percentage required; fuel composition alone is insufficient.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "assessment": "No exact percentage required; fuel composition alone is insufficient.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.criticality",
+      "statementSha256": "7ce89e11ebd6035198b073bfa3973b2ba1026bbe36e78f0c7ddedd905e80c728",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "assessment": "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "assessment": "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.moderation",
+          "locator": "Appendix A, printed A-2 and A-4 (PDF pages 395 and 397 zero-based): neutron economy and hydrogen scattering",
+          "assessment": "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.water",
+      "statementSha256": "087bcfb83f897c466a479641a2729ba152d78cb914457dddb09d55d737d6858c",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.bentridi",
+          "locator": "Sections 1–3: geological context, initial criticality conditions, numerical modeling; conclusions",
+          "assessment": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "assessment": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "assessment": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.moderation",
+          "locator": "Appendix A, printed A-2 and A-4 (PDF pages 395 and 397 zero-based): neutron economy and hydrogen scattering",
+          "assessment": "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.cycling",
+      "statementSha256": "5ce6f7740faa502999535b6e7ddfdf8e05e96183a9be5ee3688700f1052fbaec",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "assessment": "Inference for studied RZ13, not a directly observed ancient clock or established universal schedule; no precise pulse durations used.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.meshik",
+          "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature’s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+          "assessment": "Inference for studied RZ13, not a directly observed ancient clock or established universal schedule; no precise pulse durations used.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.heat",
+      "statementSha256": "cb822ea4f74eed4c771c87784ff084bc0933867084d3d1d0997c31f15caebaab",
+      "disposition": "verify",
+      "rationale": "Wording matched to actually inspected evidence; approximate age, neutron economy and reconstruction boundaries retained.",
+      "evidence": [
+        {
+          "sourceId": "source.oklo.doe",
+          "locator": "Opening explanation and paragraphs on released neutrons and a self-sustaining chain reaction",
+          "assessment": "No electric output or geothermal-to-electric conversion implication.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.oklo.davis",
+          "locator": "Pages 2–8: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+          "assessment": "No electric output or geothermal-to-electric conversion implication.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "oklo.claim.universal-clock",
+      "statementSha256": "5a2eff7f27c04b7bdce5f46869ff0c81b4a0148428da7a0ffaec5a0484268982",
+      "disposition": "exclude",
+      "rationale": "A specific zone model cannot establish a universal exact schedule; excluded.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    }
+  ],
+  "misconceptionSafeguards": [
+    "Natural fission zones, not machinery or electricity generation.",
+    "Several neutron-economy conditions, not uranium abundance alone.",
+    "Water slows neutrons through collisions; moderation is not absorption.",
+    "Present isotope signatures are measured; ancient operation is reconstructed.",
+    "Cycling inference explicitly limited to one studied reaction zone; no universal pulse timing.",
+    "All visuals are original illustrative reconstruction; no research figure or archival-footage implication."
+  ],
+  "comprehensionReview": "The contradiction leads to actual isotope evidence, then chain requirement, ancient fuel, concentration and water. The optional cycle explanation is scoped and qualified; the close returns to naturally assembled conditions rather than jargon.",
+  "rightsReview": "Original geological/atomic artwork only. Existing OFL fonts and Apache-2.0 local Kokoro model; no reproduced research figure or purchased asset.",
+  "careAssessment": {
+    "state": "routine",
+    "rationale": "Historical scientific explanation without nuclear construction instructions, contested verdicts or policy prescriptions."
+  },
+  "exceptionalConditions": []
+}

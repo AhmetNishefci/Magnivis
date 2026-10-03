@@ -38,6 +38,9 @@ flowchart TD
 
 The diagram is an operational recipe; typed transitions enforce receipt dependencies. It is not a background producer or publisher.
 
+Prospective canonical media registration must check the actual binary against the unchanged exclusive 100 MiB Git durability ceiling before catalog mutation. Finalizers must preflight their complete proposed media set before the first registration, then persist the production receipt only after candidate QA. This size preflight does not certify Git tracking or substitute for the final repository durability audit. Oversized immutable historical registrations remain historically failed; replacement registration does not erase that failure. The owner-authorized retention contract in ARTIFACT-ARCHITECTURE-V2 permits journal-proven failed evidence to remain durable and auditable while ineligible for production. Current and pending workflow heads must pass production eligibility and actual-size checks; replay retains the original failed state before its revision.
+
+
 ## Authority and exceptions
 
 Cycle-start authority permits normal internal operations within existing local capabilities and established costs. Escalate material evidence conflict, insufficient central evidence, sensitive/high-care judgment, unresolved rights/legal issues, purchases/new paid services/infrastructure, production cost outside established authority, narrator/brand policy change, destructive historical migration or unrecoverable ambiguity. Do not label normal artistic indecision an exception. Exceptions bind a concrete target; owner approval permits re-evaluation, never overrides a failed factual invariant or known collision.

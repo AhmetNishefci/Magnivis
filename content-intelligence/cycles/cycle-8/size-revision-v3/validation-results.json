@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-03T22:34:32.126691Z",
+  "typecheck": "passed",
+  "lint": "passed",
+  "tests": {
+    "files": 50,
+    "passedFiles": 49,
+    "failedFiles": 1,
+    "tests": 476,
+    "passed": 475,
+    "failed": 1,
+    "failure": "Existing canonical durability assertion rejects preserved V2 at105056676bytes. No other failures."
+  },
+  "focusedRegressions": {
+    "passed": 2,
+    "purpose": "Actual-file exclusive-limit rejection before catalog mutation; batch preflight before any registration."
+  },
+  "pnpmCheck": "failed solely by preserved V2 durability test",
+  "authoritativeDurability": "failed solely by preserved V2 size; no exception applied",
+  "mediaQa": "passed",
+  "fullDecode": "passed",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "pictureFrames": 2922,
+  "pictureSeconds": 97.4,
+  "containerSeconds": 97.45,
+  "audio": "AAC48k; exact packets and decoded PCM unchanged",
+  "historicalIntegrity": {
+    "filesCompared": 417,
+    "allUnchanged": true
+  },
+  "state": {
+    "id": "cycle.8",
+    "revision": 11,
+    "stage": "master-review"
+  },
+  "stateFileSha256": "cda8200895e143371e3eb3554d620ffe0995527ff97c79ba6c2a02b06198a771",
+  "event11Sha256": "33cc9eb0dc67a40fbe80be7a57cfc670138bb4af756b00b5cb6e8e37c5a570e9",
+  "newCandidateRecordSha256": "f7e828c282b0238c5ff7d1ffe36a2faef50b68f503e359077135ca98b09f3b63",
+  "masterApproval": false,
+  "releasePrepared": false,
+  "cycle9Started": false,
+  "commit": "none;HEAD2c14498ae6e04333869e44affacc86cc11e77156",
+  "remaining": "Owner disposition required to reconcile immutable oversized V2 with all-catalog Git durability. Scoped failed-evidence quarantine question is pending; no answer inferred. Owner master listening/approval and native/mobile QA remain pending.",
+  "workflowStatus": "scripts/cycle.ts status passed; independent journals replay validated, Cycle8 master-review revision11",
+  "diffCheck": "passed after removing handoff Markdown trailing spaces"
+}

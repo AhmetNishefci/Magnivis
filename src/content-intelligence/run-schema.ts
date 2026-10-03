@@ -1,4 +1,5 @@
-import {createHash} from 'node:crypto';
+import {sha256Json} from '../artifacts/json-identity';
+export {sha256Json,stableJson} from '../artifacts/json-identity';
 import {z} from 'zod';
 import {aiGenerationProvenanceSchema} from '../ai/schema';
 import {stableKnowledgeIdSchema} from '../knowledge/schema';
@@ -61,25 +62,6 @@ export const workflowRunSchema = z.object({
 }).strict();
 
 export type WorkflowRun = z.infer<typeof workflowRunSchema>;
-
-const normalizeJson = (value: unknown): unknown => {
-  if (Array.isArray(value)) return value.map(normalizeJson);
-  if (value && typeof value === 'object') {
-    return Object.fromEntries(
-      Object.entries(value)
-        .sort(([left], [right]) => left.localeCompare(right))
-        .map(([key, child]) => [key, normalizeJson(child)]),
-    );
-  }
-  return value;
-};
-
-export const stableJson = (value: unknown, indentation?: number) =>
-  JSON.stringify(normalizeJson(value), null, indentation);
-
-export const sha256Json = (value: unknown) => createHash('sha256')
-  .update(stableJson(value))
-  .digest('hex');
 
 const workflowByStage: Record<WorkflowRun['stage'], string> = {
   'creative-direction': 'workflow.creative-direction',

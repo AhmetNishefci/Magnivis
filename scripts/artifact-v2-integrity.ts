@@ -2,6 +2,8 @@ import {readFileSync, existsSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {z} from 'zod';
+import {loadHistoricalMediaRetentions,validateHistoricalMediaRetention} from '../src/artifacts/retention';
+import {gitMediaByteLimit} from '../src/artifacts/durability';
 import {loadMediaRegistry, mediaReference, mediaHash} from '../src/artifacts/media';
 const auditRoot = 'system-audits/artifact-architecture-v2';
 const hash = (bytes: Buffer) => createHash('sha256').update(bytes).digest('hex');
@@ -51,9 +53,17 @@ export const validateArchitectureScope = () => {
 export const validateCanonicalMediaDurability = (root = process.cwd(), trackedPaths?: readonly string[]) => {
   const registry = loadMediaRegistry(root);
   const tracked = new Set(trackedPaths ?? execFileSync('git', ['ls-files', '-z'], {cwd: root, encoding: 'utf8'}).split('\0').filter(Boolean));
+  const retentions=loadHistoricalMediaRetentions(root),retained=new Map(retentions.map(r=>[r.retention.media.id,r])),archivalParts=new Map<string,{sha256:string;bytes:number}>();
+  if(retentions.length&&!tracked.has('artifacts/media-retentions.json'))throw new Error('Retention ledger is not Git tracked');
+  for(const row of retentions){
+    const r=validateHistoricalMediaRetention(row.retention,registry.get(row.retention.media),root);
+    for(const ref of [row.ref,r.candidate,r.registrationEvent,r.revisionEvent,r.ownerDecision,r.authority,...r.failureEvidence,...(r.replacementCandidate?[r.replacementCandidate,r.replacementEvent!]:[])])if(!tracked.has(ref.path))throw new Error('Retention evidence is not Git tracked: '+ref.path);
+    for(const part of r.storage.parts){if(!tracked.has(part.path))throw new Error('Historical archival part is not Git tracked');archivalParts.set(part.path,part);}
+    if(tracked.has(registry.get(r.media).canonicalPath))throw new Error('Historical materialization must not be a second Git binary');
+  }
   for (const m of registry.list()) {
-    if (!tracked.has(m.canonicalPath)) throw new Error('Canonical durable media is not Git tracked: ' + m.canonicalPath);
-    if (m.bytes >= 100 * 1024 * 1024) throw new Error('Canonical media exceeds current Git file policy');
+    if (!retained.has(m.id)&&!tracked.has(m.canonicalPath)) throw new Error('Canonical durable media is not Git tracked: ' + m.canonicalPath);
+    if (!retained.has(m.id)&&m.bytes >= gitMediaByteLimit) throw new Error('Canonical media exceeds current Git file policy');
     registry.resolveFile(mediaReference(m));
     for (const path of m.provenance.sourceRecords) if (!tracked.has(path)) throw new Error('Media provenance is not durably tracked: ' + path);
     if (m.exception && !tracked.has(m.exception.decision.path)) throw new Error('Exception decision is not durably tracked');
@@ -64,6 +74,7 @@ export const validateCanonicalMediaDurability = (root = process.cwd(), trackedPa
   const old = new Map([...frozen.files, ...legacyFiles].map(m => [m.path, m.sha256]));
   const canonical = new Map(registry.list().map(m => [m.canonicalPath, m]));
   for (const path of tracked) {
+    if(archivalParts.has(path)){const part=archivalParts.get(path)!;const bytes=readFileSync(`${root}/${path}`);if(bytes.length!==part.bytes||bytes.length>=gitMediaByteLimit||hash(bytes)!==part.sha256)throw new Error('Historical archival part drift');continue;}
     if (old.has(path)) {
       if (mediaHash(`${root}/${path}`) !== old.get(path)) throw new Error('Legacy binary changed: ' + path);
       continue;
@@ -78,5 +89,5 @@ export const validateCanonicalMediaDurability = (root = process.cwd(), trackedPa
     if (!m) throw new Error('New durable binary must be canonical media or an explicit evidence exception: ' + path);
     registry.resolveFile(mediaReference(m));
   }
-  return {passed: true, canonicalPayloads: registry.list().filter(m => !m.exception).length, explicitExceptions: registry.list().filter(m => m.exception).length, frozenLegacyBinaryPaths: legacyFiles.length};
+  return {passed: true, canonicalPayloads: registry.list().filter(m => !m.exception).length, historicalRetentions:retentions.length,archivalParts:archivalParts.size,explicitExceptions: registry.list().filter(m => m.exception).length, frozenLegacyBinaryPaths: legacyFiles.length};
 };

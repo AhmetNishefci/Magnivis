@@ -1,0 +1,9 @@
+/Users/ahmetnishefci/Developer/Magnivis/scripts/artifact-v2-integrity.ts:57
+    if (m.bytes >= gitMediaByteLimit) throw new Error('Canonical media exceeds current Git file policy');
+                                            ^
+
+Error: Canonical media exceeds current Git file policy
+    at validateCanonicalMediaDurability (/Users/ahmetnishefci/Developer/Magnivis/scripts/artifact-v2-integrity.ts:57:45)
+    at <anonymous> (/Users/ahmetnishefci/Developer/Magnivis/scripts/verify-durable-artifacts.ts:17:56)
+
+Node.js v22.23.3

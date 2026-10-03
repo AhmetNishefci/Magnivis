@@ -1,0 +1,414 @@
+{
+  "id": "oklo.asset.natural-reactors",
+  "revision": 1,
+  "knowledgePackageId": "oklo",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Explain how geology sustained fission naturally before humans.",
+  "storyAngle": "An apparently impossible fact resolves into jointly sufficient physical conditions.",
+  "hookId": "oklo.hook.unbuilt",
+  "selectedClaimIds": [
+    "oklo.claim.natural",
+    "oklo.claim.evidence",
+    "oklo.claim.chain",
+    "oklo.claim.fuel",
+    "oklo.claim.criticality",
+    "oklo.claim.water",
+    "oklo.claim.cycling",
+    "oklo.claim.heat"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 70,
+    "maximum": 120
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "oklo.asset.natural-reactors.script.1",
+        "type": "factual",
+        "text": "Earth had nuclear reactors about two billion years ago. Nobody built them.",
+        "claimIds": [
+          "oklo.claim.natural"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.2",
+        "type": "factual",
+        "text": "At Oklo, in what is now Gabon, uranium-rich rock sustained nuclear chain reactions.",
+        "claimIds": [
+          "oklo.claim.natural",
+          "oklo.claim.criticality"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.3",
+        "type": "factual",
+        "text": "Scientists found the clues in 1972: missing uranium-235, and the distinctive products of fission.",
+        "claimIds": [
+          "oklo.claim.evidence"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.4",
+        "type": "factual",
+        "text": "But radioactive rock alone is not a reactor. One splitting nucleus must release neutrons that can split more nuclei, keeping a chain going.",
+        "claimIds": [
+          "oklo.claim.chain",
+          "oklo.claim.criticality"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.5",
+        "type": "factual",
+        "text": "Back then, natural uranium contained more uranium-235, because that isotope decays faster than uranium-238.",
+        "claimIds": [
+          "oklo.claim.fuel"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.6",
+        "type": "factual",
+        "text": "Geology concentrated the uranium. The deposit had to retain enough neutrons, with few impurities that would absorb them.",
+        "claimIds": [
+          "oklo.claim.criticality"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.7",
+        "type": "factual",
+        "text": "Groundwater supplied another crucial ingredient.",
+        "claimIds": [
+          "oklo.claim.water"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.8",
+        "type": "factual",
+        "text": "Collisions with hydrogen in the water slowed the neutrons, making further uranium-235 fissions more likely. Enough kept the chain alive.",
+        "claimIds": [
+          "oklo.claim.water",
+          "oklo.claim.chain",
+          "oklo.claim.criticality"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.9",
+        "type": "factual",
+        "text": "In one studied reaction zone, xenon isotope evidence points to repeated starts and stops.",
+        "claimIds": [
+          "oklo.claim.cycling"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.10",
+        "type": "factual",
+        "text": "Researchers infer that heating drove moderating water away, stopping the chain. Cooling let water return, and fission restart.",
+        "claimIds": [
+          "oklo.claim.cycling"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.11",
+        "type": "factual",
+        "text": "That cycle is reconstructed from traces in the rock, not an ancient clock anyone watched.",
+        "claimIds": [
+          "oklo.claim.cycling"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.12",
+        "type": "factual",
+        "text": "No machinery. No electricity. Just heat from nuclear fission, sustained by fuel, water, and geology, long before humans existed.",
+        "claimIds": [
+          "oklo.claim.natural",
+          "oklo.claim.heat",
+          "oklo.claim.criticality",
+          "oklo.claim.water"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "oklo.asset.natural-reactors.beat.1",
+      "label": "story-1",
+      "purpose": "Impossible-seeming deep-time reactor, immediately natural scope.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.1"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.2",
+      "label": "story-2",
+      "purpose": "Ground the place and natural ore body.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.2"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.3",
+      "label": "story-3",
+      "purpose": "Present-day evidence makes the astonishing fact investigable.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.3"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.4",
+      "label": "story-4",
+      "purpose": "Distinguish mere radioactivity from a continuing neutron chain.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.4"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.5",
+      "label": "story-5",
+      "purpose": "Reveal why ancient fuel differed.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.5"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.6",
+      "label": "story-6",
+      "purpose": "Show concentration, neutron retention and competing absorption.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.6"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.7",
+      "label": "story-7",
+      "purpose": "Introduce water as the missing mechanism.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.7"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.8",
+      "label": "story-8",
+      "purpose": "Show slowing and renewed fission without a chemical-fuel implication.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.8"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.9",
+      "label": "story-9",
+      "purpose": "Narrow cycling to one studied zone and isotope evidence.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.9"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.10",
+      "label": "story-10",
+      "purpose": "Qualify the proposed groundwater feedback mechanism.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.10"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.11",
+      "label": "story-11",
+      "purpose": "Make reconstruction versus observation explicit.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.11"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.12",
+      "label": "story-12",
+      "purpose": "Return to geological reality and earned astonishing payoff.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.12"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "oklo.asset.natural-reactors.visual.1",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.1",
+      "objective": "Impossible-seeming deep-time reactor, immediately natural scope.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.1"
+      ],
+      "claimIds": [
+        "oklo.claim.natural"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.2",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.2",
+      "objective": "Ground the place and natural ore body.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.2"
+      ],
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.criticality"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.3",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.3",
+      "objective": "Present-day evidence makes the astonishing fact investigable.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.3"
+      ],
+      "claimIds": [
+        "oklo.claim.evidence"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.4",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.4",
+      "objective": "Distinguish mere radioactivity from a continuing neutron chain.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.4"
+      ],
+      "claimIds": [
+        "oklo.claim.chain",
+        "oklo.claim.criticality"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.5",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.5",
+      "objective": "Reveal why ancient fuel differed.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.5"
+      ],
+      "claimIds": [
+        "oklo.claim.fuel"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.6",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.6",
+      "objective": "Show concentration, neutron retention and competing absorption.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.6"
+      ],
+      "claimIds": [
+        "oklo.claim.criticality"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.7",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.7",
+      "objective": "Introduce water as the missing mechanism.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.7"
+      ],
+      "claimIds": [
+        "oklo.claim.water"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.8",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.8",
+      "objective": "Show slowing and renewed fission without a chemical-fuel implication.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.8"
+      ],
+      "claimIds": [
+        "oklo.claim.water",
+        "oklo.claim.chain",
+        "oklo.claim.criticality"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.9",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.9",
+      "objective": "Narrow cycling to one studied zone and isotope evidence.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.9"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.10",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.10",
+      "objective": "Qualify the proposed groundwater feedback mechanism.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.10"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.11",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.11",
+      "objective": "Make reconstruction versus observation explicit.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.11"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.12",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.12",
+      "objective": "Return to geological reality and earned astonishing payoff.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.12"
+      ],
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.heat",
+        "oklo.claim.criticality",
+        "oklo.claim.water"
+      ],
+      "notes": "Illustrative geological and atomic reconstruction, not site footage, actual ancient geometry or measured neutron tracks. Preserve RZ13-only inference."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Primary Kokoro af_heart, clear curious connected sentences; geological wonder without science-fiction menace.",
+    "pronunciationNotes": [
+      "Oklo: OH-kloh. Gabon: guh-BON. Xenon: ZEE-non. uranium-235 and uranium-238 are isotope names."
+    ]
+  },
+  "editorialStatus": "editorial-review"
+}

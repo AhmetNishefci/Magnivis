@@ -1,0 +1,250 @@
+{
+  "sources": [
+    {
+      "key": "bentridi",
+      "organization": "Comptes Rendus Geoscience / Bentridi et al.",
+      "title": "Inception and evolution of Oklo natural nuclear reactors (2011)",
+      "type": "peer-reviewed",
+      "url": "https://comptes-rendus.academie-sciences.fr/geoscience/articles/10.1016/j.crte.2011.09.008/",
+      "locator": "Sections 1\u20133: geological context, initial criticality conditions, numerical modeling; conclusions",
+      "summary": "Field-constrained neutron-transport models investigate uranium content, water-bearing porosity, geometry and neutron absorbers. Higher ancient fissile fraction and concentrated ore enabled criticality. Geological processes mobilized and deposited uranium. Remaining geometry is an end state; inception scenarios are reconstructions, not unique measured ancient conditions.",
+      "limits": [
+        "Full relevant article text inspected; no raw neutron-transport simulation reproduced.",
+        "Model concerns specific zones and reconstructed conditions; no universal concentration, dimensions or water threshold."
+      ]
+    },
+    {
+      "key": "davis",
+      "organization": "Davis, Gould and Sharapov",
+      "title": "Oklo Reactors and Implications for Nuclear Science (2014)",
+      "type": "peer-reviewed",
+      "url": "https://arxiv.org/pdf/1404.4948",
+      "locator": "Pages 2\u20138: discovery, fission products, dating, moderation and RZ13 xenon-based pulsing reconstruction",
+      "summary": "Review describes depleted U235 and characteristic fission-product isotope patterns; activity about two billion years ago. Different uranium half-lives imply a larger ancient U235 share. Water moderation and neutron absorption constrain operation. RZ13 xenon measurements support a modeled intermittent operating regime. Water content, ore composition and geometry constrain but do not uniquely establish every ancient operational detail.",
+      "limits": [
+        "Relevant pages inspected in parsed PDF; review synthesizes original investigations, not independent raw-data replication.",
+        "Approximate age, inferred activity. RZ13 pulse estimates must not be generalized to all reaction zones."
+      ]
+    },
+    {
+      "key": "meshik",
+      "organization": "Alex P. Meshik / Scientific American",
+      "title": "The Workings of an Ancient Nuclear Reactor (original October 2005; web 2009)",
+      "type": "primary-source",
+      "url": "https://www.scientificamerican.com/article/ancient-nuclear-reactor/",
+      "locator": "Proof in the Light Elements; Noble-Gas Epiphanies; Nature\u2019s Operating Schedule; especially paragraphs on groundwater and mathematical modeling",
+      "summary": "A participating investigator explains evidence of fission from depleted uranium and fission products. Neutron retention, ancient U235 abundance, a moderator and sufficiently few neutron poisons enable a sustained chain. The researcher recounts xenon isotope analysis in a sample from one reactor. Modeled isotope patterns support cycling, with groundwater loss and return described as the most likely mechanism. This is an inference from preserved isotopes, not observation of ancient pulses.",
+      "limits": [
+        "Author explanatory account inspected; popular participant exposition, not a second independent experiment.",
+        "Original 2004 PRL abstract inspected separately; full subscription paper could not be accessed.",
+        "Excluded blanket modern-natural-uranium, explosion and waste-storage generalizations."
+      ]
+    },
+    {
+      "key": "doe",
+      "organization": "United States Department of Energy",
+      "title": "History \u2014 nuclear fission and chain reactions",
+      "type": "government",
+      "url": "https://www.energy.gov/ne/history",
+      "locator": "Opening explanation and paragraphs on released neutrons and a self-sustaining chain reaction",
+      "summary": "U235 can absorb a neutron and fission into lighter nuclei, releasing heat and additional neutrons. Under appropriate conditions sufficient uranium enables a continuing chain reaction. Electrical generation requires additional engineered plant machinery; geological fission is not evidence of electricity generation.",
+      "limits": [
+        "Institutional introductory body inspected; used for fundamental mechanism, not Oklo site-specific claims."
+      ]
+    },
+    {
+      "key": "moderation",
+      "organization": "US Department of Energy",
+      "title": "DOE/EIS-0288D (1998), Appendix A: Nuclear Fission Reactors",
+      "type": "government",
+      "url": "https://www.energy.gov/sites/default/files/EIS-0288-DEIS-1998.pdf",
+      "locator": "Appendix A, printed A-2 and A-4 (PDF pages 395 and 397 zero-based): neutron economy and hydrogen scattering",
+      "summary": "Neutron scattering transfers energy; hydrogen nuclei close to neutron mass reduce neutron energy effectively through repeated collisions. Slower neutrons can induce U235 fission more readily. Leakage and non-fission absorption reduce the population available to sustain a chain.",
+      "limits": [
+        "Only relevant Appendix A body inspected, not entire environmental impact statement.",
+        "Basic scattering mechanism only; modern engineered control-rod descriptions not imported into Oklo."
+      ]
+    }
+  ],
+  "definitions": [
+    [
+      "natural",
+      "Natural fission reaction zones at Oklo in present-day Gabon operated about two billion years ago, without human construction.",
+      [
+        "bentridi",
+        "davis"
+      ],
+      "Approximate geological age, multiple natural reaction zones; not human machinery or electricity production."
+    ],
+    [
+      "evidence",
+      "In 1972, anomalously depleted U235 led to investigation; distinctive fission-product isotope patterns establish ancient fission.",
+      [
+        "davis",
+        "meshik"
+      ],
+      "Present isotope measurements provide evidence; ancient operation reconstructed. No invented archival imagery or sample measurement."
+    ],
+    [
+      "chain",
+      "A U235 nucleus absorbing a neutron can split, releasing heat and further neutrons; enough further fissions sustain a chain.",
+      [
+        "doe",
+        "bentridi"
+      ],
+      "Simplified schematic, not an exact atom count, neutron trajectory or model of every fission channel."
+    ],
+    [
+      "fuel",
+      "Ancient natural uranium had a larger U235 fraction because U235 decays faster than U238.",
+      [
+        "bentridi",
+        "davis"
+      ],
+      "No exact percentage required; fuel composition alone is insufficient."
+    ],
+    [
+      "criticality",
+      "Concentrated uranium in favorable geometry, sufficiently few neutron absorbers and suitable moderation allowed enough neutrons to cause further fission.",
+      [
+        "bentridi",
+        "meshik",
+        "moderation"
+      ],
+      "Several jointly necessary neutron-economy conditions; reconstructed geometry and composition, not a universal recipe."
+    ],
+    [
+      "water",
+      "Groundwater served as a neutron moderator: collisions, especially with hydrogen, slowed neutrons, increasing the likelihood of further U235 fission.",
+      [
+        "bentridi",
+        "davis",
+        "meshik",
+        "moderation"
+      ],
+      "Water is a moderator, not fuel or a chemical trigger. Slowing is distinct from neutron absorption. Hydrogen specificity follows basic elastic-scattering physics, compatible with water moderation."
+    ],
+    [
+      "cycling",
+      "Xenon isotope evidence from one studied reaction zone supports reconstructed repeated activity and dormancy; researchers infer heating removed moderating water and cooling permitted its return.",
+      [
+        "davis",
+        "meshik"
+      ],
+      "Inference for studied RZ13, not a directly observed ancient clock or established universal schedule; no precise pulse durations used."
+    ],
+    [
+      "heat",
+      "Natural fission produced heat; Oklo was not an engineered electricity-generating plant.",
+      [
+        "doe",
+        "davis"
+      ],
+      "No electric output or geothermal-to-electric conversion implication."
+    ],
+    [
+      "universal-clock",
+      "All Oklo reaction zones ran on exactly the same thirty-minute-on, two-and-a-half-hour-off schedule.",
+      [
+        "meshik",
+        "davis"
+      ],
+      "Excluded: precision originates in a particular sample/zone model, not a universal clock."
+    ]
+  ],
+  "lines": [
+    [
+      "Earth had nuclear reactors about two billion years ago. Nobody built them.",
+      [
+        "natural"
+      ]
+    ],
+    [
+      "At Oklo, in what is now Gabon, uranium-rich rock sustained nuclear chain reactions.",
+      [
+        "natural",
+        "criticality"
+      ]
+    ],
+    [
+      "Scientists found the clues in 1972: missing uranium-235, and the distinctive products of fission.",
+      [
+        "evidence"
+      ]
+    ],
+    [
+      "But radioactive rock alone is not a reactor. One splitting nucleus must release neutrons that can split more nuclei, keeping a chain going.",
+      [
+        "chain",
+        "criticality"
+      ]
+    ],
+    [
+      "Back then, natural uranium contained more uranium-235, because that isotope decays faster than uranium-238.",
+      [
+        "fuel"
+      ]
+    ],
+    [
+      "Geology concentrated the uranium. The deposit had to retain enough neutrons, with few impurities that would absorb them.",
+      [
+        "criticality"
+      ]
+    ],
+    [
+      "Groundwater supplied another crucial ingredient.",
+      [
+        "water"
+      ]
+    ],
+    [
+      "Collisions with hydrogen in the water slowed the neutrons, making further uranium-235 fissions more likely. Enough kept the chain alive.",
+      [
+        "water",
+        "chain",
+        "criticality"
+      ]
+    ],
+    [
+      "In one studied reaction zone, xenon isotope evidence points to repeated starts and stops.",
+      [
+        "cycling"
+      ]
+    ],
+    [
+      "Researchers infer that heating drove moderating water away, stopping the chain. Cooling let water return, and fission restart.",
+      [
+        "cycling"
+      ]
+    ],
+    [
+      "That cycle is reconstructed from traces in the rock, not an ancient clock anyone watched.",
+      [
+        "cycling"
+      ]
+    ],
+    [
+      "No machinery. No electricity. Just heat from nuclear fission, sustained by fuel, water, and geology, long before humans existed.",
+      [
+        "natural",
+        "heat",
+        "criticality",
+        "water"
+      ]
+    ]
+  ],
+  "objectives": [
+    "Impossible-seeming deep-time reactor, immediately natural scope.",
+    "Ground the place and natural ore body.",
+    "Present-day evidence makes the astonishing fact investigable.",
+    "Distinguish mere radioactivity from a continuing neutron chain.",
+    "Reveal why ancient fuel differed.",
+    "Show concentration, neutron retention and competing absorption.",
+    "Introduce water as the missing mechanism.",
+    "Show slowing and renewed fission without a chemical-fuel implication.",
+    "Narrow cycling to one studied zone and isotope evidence.",
+    "Qualify the proposed groundwater feedback mechanism.",
+    "Make reconstruction versus observation explicit.",
+    "Return to geological reality and earned astonishing payoff."
+  ]
+}

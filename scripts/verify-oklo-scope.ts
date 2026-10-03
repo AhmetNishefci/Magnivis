@@ -1,0 +1,15 @@
+import{execFileSync}from'node:child_process';
+import{readFileSync,existsSync,writeFileSync}from'node:fs';
+import{mediaHash,loadMediaRegistry}from'../src/artifacts/media';
+import{loadCycle}from'../src/workflow/store';
+import{editorialDecisionContext}from'../src/workflow/editorial-learning';
+const base='2c14498ae6e04333869e44affacc86cc11e77156';
+const paths=execFileSync('git',['ls-tree','-r','--name-only',base],{encoding:'utf8'}).trim().split('\n').filter(p=>/cycle-7|cycle\.7|interaction-free|ifm|sealed-scroll|QuantumPossibilities/.test(p));
+const changed=paths.filter(p=>!existsSync(p)||!readFileSync(p).equals(execFileSync('git',['show',`${base}:${p}`],{maxBuffer:128*1024*1024})));
+if(changed.length)throw new Error(`Cycle7 bytes changed: ${changed.join(', ')}`);
+const registry=loadMediaRegistry(),cycle=loadCycle(process.cwd(),'cycle.8',registry),historical=loadCycle(process.cwd(),'cycle.7',registry);
+if(cycle.stage!=='master-review'||cycle.release||cycle.masterDecision||cycle.publicationDecision||existsSync('workflow/cycles/cycle.9'))throw new Error('Wrong stop boundary');
+if(historical.stage!=='authorized'||historical.revision!==25)throw new Error('Cycle7 altered');
+const data={checkedAt:new Date().toISOString(),baseCommit:base,cycle:{id:cycle.id,revision:cycle.revision,stage:cycle.stage},candidate:cycle.candidate,premiseDecision:cycle.premiseDecision,masterApprovalAbsent:true,releaseAbsent:true,cycle9Absent:true,historicalByteComparison:{filesCompared:paths.length,allUnchanged:true},cycle7:{stage:historical.stage,revision:historical.revision,publication:'unknown; scheduling is not publication',analytics:'unknown'},editorialLearning:editorialDecisionContext().filter(x=>x.decision.path.includes('cycle-8')),exactMaster:mediaHash('artifacts/masters/oklo-cycle8-candidate-v2.mp4'),externalPlatformActions:[],scope:'Authorized continuation of same approved premise through exact master QA only.'};
+writeFileSync('content-intelligence/cycles/cycle-8/master-scope-verification.json',JSON.stringify(data,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({passed:true,historicalFiles:paths.length,cycle:cycle.stage,revision:cycle.revision}));

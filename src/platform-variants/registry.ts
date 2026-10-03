@@ -1,3 +1,5 @@
+import {assertGitMediaSize} from '../artifacts/durability';
+import {assertMediaProductionEligible} from '../artifacts/retention';
 import {loadMediaRegistry, type MediaRegistry} from '../artifacts/media';
 import {longitudePublicationVariants as longitudePlatformVariants} from './variants/longitude-clock-publication';
 import {phantomTrafficPublicationVariants as phantomTrafficPlatformVariants} from './variants/phantom-traffic-publication';
@@ -40,7 +42,8 @@ export const createPlatformVariantRegistry = (
     if (variant.mediaArtifact) {
       const registry = media ?? loadMediaRegistry();
       if (registry.get(variant.mediaArtifact).mediaType !== 'video/mp4') throw new Error('PlatformVariant media must be an actual MP4 artifact');
-      registry.resolveFile(variant.mediaArtifact);
+      assertMediaProductionEligible(variant.mediaArtifact);
+      assertGitMediaSize(registry.resolveFile(variant.mediaArtifact));
     }
     if (variantMap.has(variant.id)) {
       throw new Error(`Duplicate platform variant ID: ${variant.id}`);

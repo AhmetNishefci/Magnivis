@@ -1,0 +1,15 @@
+import{createRequire}from'node:module';
+import{readFileSync,writeFileSync}from'node:fs';
+import{mediaHash}from'../src/artifacts/media';
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const base='content-intelligence/cycles/cycle-8/size-revision-v3',old='artifacts/masters/oklo-cycle8-candidate-v2.mp4',next='artifacts/masters/oklo-cycle8-candidate-v3.mp4';
+import{spawnSync}from'node:child_process';
+const metrics=(name:string)=>{const run=spawnSync(ffmpeg,['-hide_banner','-i',old,'-i',next,'-filter_complex',`[0:v][1:v]${name}=stats_file=/tmp/oklo-v3-${name}.log`,'-an','-f','null','-'],{encoding:'utf8'});if(run.status!==0)throw new Error(run.stderr);return run.stderr.split('\n').filter(l=>l.includes(name==='ssim'?'SSIM ':'PSNR ')).at(-1)!;};
+const ssim=metrics('ssim'),psnr=metrics('psnr'),lines=readFileSync('/tmp/oklo-v3-ssim.log','utf8').trim().split('\n');
+const perFrame=lines.map(l=>({frame:Number(l.match(/n:(\d+)/)![1])-1,ssim:Number(l.match(/All:([\d.]+)/)![1])}));
+if(perFrame.length!==2922)throw new Error('Frame count changed');
+const worst=[...perFrame].sort((a,b)=>a.ssim-b.ssim).slice(0,12);
+const bindings=JSON.parse(readFileSync(`${base}/preservation-bindings.json`,'utf8')) as {files:{path:string;sha256:string}[]};
+for(const f of bindings.files)if(f.path!=='workflow/cycles/cycle.8/state.json'&&mediaHash(f.path)!==f.sha256)throw new Error(`Preserved content changed: ${f.path}`);
+const result={enteredAt:new Date().toISOString(),oldSha256:mediaHash(old),replacementSha256:mediaHash(next),method:'All2922 decoded frames compared at full1080×1920 using FFmpeg SSIM and PSNR; same source rerender, not source-ground-truth quality metrics.',ssim,psnr,framesCompared:perFrame.length,worstFrames:worst,minimumSsim:worst[0]!.ssim,scope:'Metrics quantify encoding differences, not subjective quality or factual validity. Worst-frame and story-checkpoint visual inspection is separate.',preservedBindings:'All preserved source/research/script/caption/narration/direction/V2/old-event hashes unchanged.',audio:'Packet and decoded PCM identity checked in encoding.json',perFrameMetricsSha256:mediaHash('/tmp/oklo-v3-ssim.log')};
+writeFileSync(`${base}/quality-comparison.json`,JSON.stringify(result,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(result,null,2));

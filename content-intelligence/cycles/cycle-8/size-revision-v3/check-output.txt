@@ -1,0 +1,51 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/media-artifacts.test.ts (6 tests | 1 failed) 2007ms
+   ❯ Media content identity, historical safety and durability (6)
+     × enforces scoped historical preservation and canonical durability in pnpm check 1469ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/media-artifacts.test.ts > Media content identity, historical safety and durability > enforces scoped historical preservation and canonical durability in pnpm check
+Error: Canonical media exceeds current Git file policy
+ ❯ validateCanonicalMediaDurability scripts/artifact-v2-integrity.ts:57:45
+     55|   for (const m of registry.list()) {
+     56|     if (!tracked.has(m.canonicalPath)) throw new Error('Canonical dura…
+     57|     if (m.bytes >= gitMediaByteLimit) throw new Error('Canonical media…
+       |                                             ^
+     58|     registry.resolveFile(mediaReference(m));
+     59|     for (const path of m.provenance.sourceRecords) if (!tracked.has(pa…
+ ❯ tests/media-artifacts.test.ts:18:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 49 passed (50)
+      Tests  1 failed | 475 passed (476)
+   Start at  00:32:26
+   Duration  55.72s (tests 88%, import 6%, transform 5%)
+
+ ELIFECYCLE  Test failed. See above for more details.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

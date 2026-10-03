@@ -1,0 +1,18 @@
+import{existsSync,writeFileSync,statSync}from'node:fs';
+import{createRequire}from'node:module';
+import{execFileSync}from'node:child_process';
+import{mediaHash}from'../src/artifacts/media';
+import{preflightMediaRegistration,gitMediaByteLimit}from'../src/artifacts/durability';
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const old='artifacts/masters/oklo-cycle8-candidate-v2.mp4',picture='output/oklo-picture-v3.mp4',replacement='artifacts/masters/oklo-cycle8-candidate-v3.mp4';
+if(existsSync(replacement))throw new Error('Preserve replacement identity');
+if(mediaHash(old)!=='174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d')throw new Error('V2 changed');
+execFileSync(ffmpeg,['-v','error','-i',picture,'-i',old,'-map','0:v:0','-map','1:a:0','-c','copy','-movflags','+faststart',replacement]);
+const size=preflightMediaRegistration([replacement])[0]!;
+if(size.bytes>gitMediaByteLimit*.95)throw new Error('Replacement lacks planned5% durability headroom');
+const packets=(p:string,map:string)=>execFileSync(ffmpeg,['-v','error','-i',p,'-map',map,'-c','copy','-f','hash','-hash','sha256','-'],{encoding:'utf8'}).trim();
+const audioBefore=packets(old,'0:a:0'),audioAfter=packets(replacement,'0:a:0');if(audioBefore!==audioAfter)throw new Error('Audio packet change');
+const decodedAudio=(p:string)=>execFileSync(ffmpeg,['-v','error','-i',p,'-map','0:a:0','-f','hash','-hash','sha256','-'],{encoding:'utf8'}).trim();
+if(decodedAudio(old)!==decodedAudio(replacement))throw new Error('Decoded audio differs');
+writeFileSync('content-intelligence/cycles/cycle-8/size-revision-v3/encoding.json',JSON.stringify({enteredAt:new Date().toISOString(),old:{path:old,sha256:mediaHash(old),bytes:statSync(old).size},replacement:{path:replacement,sha256:mediaHash(replacement),bytes:size.bytes},limitExclusiveBytes:gitMediaByteLimit,headroomBytes:gitMediaByteLimit-size.bytes,headroomPercent:(gitMediaByteLimit-size.bytes)/gitMediaByteLimit*100,encoding:{videoBitrateBefore:'8M',videoBitrateAfter:'7.5M',changePercent:-6.25,codec:'H264',pixelFormat:'yuv420p',width:1080,height:1920,fps:30,pictureSource:'Same unchanged Remotion source rerendered before compression; avoids transcoding V2 picture.',audio:'Exact V2 AAC packets copied; decoded audio hash identical.',contentChanges:[],audioPacketSha256:audioBefore,decodedAudioSha256:decodedAudio(old),videoPacketSha256:packets(replacement,'0:v:0')},fileSizePreflight:'passed before registration; over5% headroom',approvalGranted:false},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({bytes:size.bytes,headroom:gitMediaByteLimit-size.bytes,audio:'bit-identical'}));

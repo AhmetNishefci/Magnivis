@@ -1,0 +1,40 @@
+{
+  "mediaSha256": "b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20",
+  "inspectedAt": "2026-10-03T22:30:18.767922+00:00",
+  "passed": true,
+  "method": "Actual V3 contact sheet viewed; five full-size mechanism/moderation/feedback/inference/payoff checkpoints viewed, plus full-size worst-SSIM frame26 compared against V2. No continuous human playback or device proof.",
+  "contactSheetSha256": "118f765f46d1b6042ce0d22e066477fbccca144867eacfea7272bd9a9c40dae0",
+  "focusedFrames": [
+    {
+      "path": "qa/oklo/frame-35-25.7s.png",
+      "sha256": "5b1d854ab4b3d359c2b3d2dd6cf3616e942bf69a538ce3958c0270f5aa61dffc"
+    },
+    {
+      "path": "qa/oklo/frame-72-59.6s.png",
+      "sha256": "e03ab10f57759176a46d9bebdc094776d3c1ad036f24db996665f78de7a82514"
+    },
+    {
+      "path": "qa/oklo/frame-93-76.4s.png",
+      "sha256": "4c24bc6c8e9ed00370fc14eba326de5720fd50ec17490ce4f2201ee61d03b7f8"
+    },
+    {
+      "path": "qa/oklo/frame-102-84.1s.png",
+      "sha256": "4acc4c750b99e11176282eb0db6bdb7f0e2c452324ef8d4cb5e9be4af2a6ae50"
+    },
+    {
+      "path": "qa/oklo/frame-112-92.3s.png",
+      "sha256": "752d6ea45a137b30529ac7d6cedcd74d757a30f734dbfe993752ba3a873c58e7"
+    }
+  ],
+  "findings": [
+    "No perceptible new block artifacts, caption edge degradation or material changes in sampled geology gradients.",
+    "Scientific and illustrative qualifications remain visible, unchanged in wording and timing.",
+    "Browser geometry report inherited from exact unchanged source; decoded V3 checkpoints are fresh."
+  ],
+  "limits": [
+    "Sampled visual inspection and all-frame objective comparison do not establish continuous subjective playback quality.",
+    "Exact unchanged audio inherits pronunciation and prosody uncertainties.",
+    "Native UI, cropping and device safety remain untested."
+  ],
+  "approvalScope": "Internal candidate only; owner master approval pending."
+}

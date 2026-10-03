@@ -1,6 +1,8 @@
 import {mkdirSync, readFileSync, writeFileSync, renameSync, rmSync, existsSync, readdirSync} from 'node:fs';
 import {resolve, relative, isAbsolute, sep} from 'node:path';
 import {sha256Json} from '../content-intelligence/run-schema';
+import {assertMediaProductionEligible} from '../artifacts/retention';
+import {assertGitMediaSize} from '../artifacts/durability';
 import type {MediaRegistry} from '../artifacts/media';
 import {startCycle, transitionCycle, nextAction, cycleSchema, type Cycle, type CycleEvent} from './cycle';
 import {recordReferenceSchema,readBoundRecord, type RecordReference} from './evidence';
@@ -13,6 +15,7 @@ const directory = (root: string, id: string) => {
 };
 const json=(path:string)=>JSON.parse(readFileSync(path,'utf8'));
 const writeExclusive=(path:string,value:unknown)=>writeFileSync(path,JSON.stringify(value,null,2)+'\n',{flag:'wx'});
+const assertCurrentMedia=(cycle:Cycle,registry:MediaRegistry,root:string)=>{if(cycle.candidate){const candidate=readBoundRecord(cycle.candidate,root) as {media:{id:string;sha256:string}};assertMediaProductionEligible(candidate.media,root);assertGitMediaSize(registry.resolveFile(candidate.media),root);}};
 /** Replay committed events, rather than trusting a writable stage flag or branch name. */
 export const loadCycle = (root: string, id: string, registry: MediaRegistry, allowPending = false): Cycle => {
   const dir=directory(root,id);const head=cycleSchema.parse(json(resolve(dir,'state.json')));
@@ -26,6 +29,7 @@ export const loadCycle = (root: string, id: string, registry: MediaRegistry, all
   }
   if(sha256Json(current)!==sha256Json(head)) throw new Error('Current cycle state differs from replayed evidence');
   if(!allowPending && existsSync(resolve(dir,`event-${head.revision+1}.json`)))throw new Error('Incomplete prior transaction; recover the proven pending event before continuing');
+  assertCurrentMedia(current,registry,root);
   return current;
 };
 /** Project overview is derived from independent replayed journals, never a shared
@@ -66,6 +70,7 @@ export const persistCycleEvent = (root: string, previous: Cycle, event: CycleEve
     const current=loadCycle(root,previous.id,registry);
     if(sha256Json(previous)!==sha256Json(current)) throw new Error('Concurrent cycle update; reload current state');
     const next=transitionCycle(current,event,registry,root);
+    assertCurrentMedia(next,registry,root);
     if(sha256Json(next)===sha256Json(current))return current;
     const pending=resolve(dir,`event-${next.revision}.json`);
     if(existsSync(pending)) throw new Error('Incomplete prior transaction requires explicit recovery inspection');
@@ -89,6 +94,7 @@ export const recoverCycleEvent=(root:string,id:string,registry:MediaRegistry)=>{
     const stored=json(path) as {previousSha256:string;event:CycleEvent;nextSha256:string};
     if(stored.previousSha256!==sha256Json(current))throw new Error('Pending event does not bind current state');
     const next=transitionCycle(current,stored.event,registry,root);
+    assertCurrentMedia(next,registry,root);
     if(stored.nextSha256!==sha256Json(next))throw new Error('Pending event cannot be reproduced');
     const pending=resolve(dir,'state.pending.json');
     if(existsSync(pending)&&sha256Json(json(pending))!==sha256Json(next))throw new Error('Ambiguous pending state requires inspection');

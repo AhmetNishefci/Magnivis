@@ -1,3 +1,5 @@
+import {assertGitMediaSize} from '../artifacts/durability';
+import {assertMediaProductionEligible} from '../artifacts/retention';
 import {z} from 'zod';
 import {inspectMedia,inspectImage} from '../artifacts/inspection';
 import {mediaReferenceSchema,type MediaRegistry,type MediaReference} from '../artifacts/media';
@@ -32,6 +34,8 @@ export const inspectCycleRelease=(input:unknown,registry:MediaRegistry,at:string
     if(delivery.artifacts.filter(a=>a.role==='video').length!==1||!delivery.artifacts.some(a=>a.role==='video'&&sha256Json(a.media)===sha256Json(variant.media)))throw new Error('Delivery video identity mismatch');
     const presentation=assessPresentationV3(readBoundRecord(variant.presentation,root),readBoundRecord(variant.profile,root),variant.media,registry,at,root);
     if(presentation.profile.platform!==variant.platform||presentation.profile.surface!==variant.surface||presentation.evidence.platform!==variant.platform||presentation.evidence.surface!==variant.surface)throw new Error('Presentation destination differs from exact variant destination');
+    assertMediaProductionEligible(variant.media,root);assertMediaProductionEligible(variant.master,root);
+    assertGitMediaSize(registry.resolveFile(variant.media),root);assertGitMediaSize(registry.resolveFile(variant.master),root);
     const probe=inspectMedia(registry.resolveFile(variant.media));const envelope=presentation.profile.export;
     if(presentation.evidence.medium!=='video'||registry.get(variant.media).mediaType!=='video/mp4'||!envelope.containers.includes('mp4')||probe.width!==presentation.profile.canvas.width||probe.height!==presentation.profile.canvas.height||!envelope.fps.includes(probe.fps)||!envelope.videoCodecs.includes(probe.videoCodec)||!envelope.audioCodecs.includes(probe.audioCodec)||probe.durationSeconds<envelope.duration.minimum||probe.durationSeconds>envelope.duration.maximum)throw new Error('Actual upload media is outside versioned presentation export profile');
     if(presentation.evidence.fps!==probe.fps||Math.abs(presentation.evidence.durationFrames/probe.fps-probe.durationSeconds)>0.12)throw new Error('Presentation timeline detached from actual media');

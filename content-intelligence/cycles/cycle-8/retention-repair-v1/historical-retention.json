@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "disposition": "failed",
+  "media": {
+    "id": "media.174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d",
+    "sha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d"
+  },
+  "cycleId": "cycle.8",
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-8/master-candidate-v2.json",
+    "sha256": "fdffc0556c869e90260bbf8cfa632a806f87b80683e8b198238e7285520b67fe"
+  },
+  "registrationEvent": {
+    "path": "workflow/cycles/cycle.8/event-8.json",
+    "sha256": "9add472b13c6961db5759134622bd399f1702de52f5491a1f8f80d6aa1cc1589"
+  },
+  "revisionEvent": {
+    "path": "workflow/cycles/cycle.8/event-9.json",
+    "sha256": "a849fc398b477fdf4c6b50dcb4c0c1a4f07e5ae49444ac559cabbc8fc7db57ae"
+  },
+  "ownerDecision": {
+    "path": "content-intelligence/cycles/cycle-8/size-revision-v3/owner-size-revision.json",
+    "sha256": "eaed70e19acd947ff89bc857d753d583f587c4504279ba54cba2758788c1401b"
+  },
+  "authority": {
+    "path": "content-intelligence/cycles/cycle-8/retention-repair-v1/owner-authority.json",
+    "sha256": "b9d403b69d0600f6a7b9158640e5094e1239eb5cdadd650278efb39cb598b533"
+  },
+  "failureEvidence": [
+    {
+      "path": "content-intelligence/cycles/cycle-8/master-validation-blocker.json",
+      "sha256": "b528c3fb4f621bb14e51074a55c82b359cda28a548b0a46b09df6d8b08fcbc8a"
+    }
+  ],
+  "replacementCandidate": {
+    "path": "content-intelligence/cycles/cycle-8/size-revision-v3/master-candidate-v3.json",
+    "sha256": "f7e828c282b0238c5ff7d1ffe36a2faef50b68f503e359077135ca98b09f3b63"
+  },
+  "replacementEvent": {
+    "path": "workflow/cycles/cycle.8/event-11.json",
+    "sha256": "33cc9eb0dc67a40fbe80be7a57cfc670138bb4af756b00b5cb6e8e37c5a570e9"
+  },
+  "storage": {
+    "kind": "exact-byte-parts",
+    "parts": [
+      {
+        "path": "artifacts/historical-media/174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d/part-001.bin",
+        "sha256": "fe84ccdf21443b98004fa277a3d9e122bec5ee7be3779b0e3811eaa75a20bc56",
+        "bytes": 67108864,
+        "offset": 0
+      },
+      {
+        "path": "artifacts/historical-media/174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d/part-002.bin",
+        "sha256": "d3462570f0b70f6aaac95d246a3f56dbdf6ccb64dd3350c91c755ecaa6b82d34",
+        "bytes": 37947812,
+        "offset": 67108864
+      }
+    ]
+  }
+}

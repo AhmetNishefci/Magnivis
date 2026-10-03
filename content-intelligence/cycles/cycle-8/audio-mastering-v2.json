@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-03T22:08:21.963Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/oklo-render-v2.mp4",
+    "sha256": "20d00d78cc412f7e8e9dc59c7c6d125e35a022c1453940767201cd0bb7d3c250",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/oklo-cycle8-candidate-v2.mp4",
+    "sha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.52",
+    "input_tp": "-6.55",
+    "input_lra": "2.90",
+    "input_thresh": "-33.87",
+    "output_i": "-19.06",
+    "output_tp": "-2.16",
+    "output_lra": "2.90",
+    "output_thresh": "-29.42",
+    "normalization_type": "dynamic",
+    "target_offset": "0.06"
+  },
+  "gainDb": 4.35,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-03T19:06:46.430Z",
+  "runtime": "v22.23.3",
+  "cycle": {
+    "id": "cycle.8",
+    "revision": 2,
+    "stage": "premise-review"
+  },
+  "selectedId": "oklo",
+  "comparisons": 7,
+  "inspections": 5,
+  "contextualOwnerJudgments": 2,
+  "selection": {
+    "path": "content-intelligence/cycles/cycle-8/topic-selection.json",
+    "sha256": "d50a39fde692fcefc0b2441f50bad9ad40017cd24f6a287645bb27d2efa8458c"
+  },
+  "ownerDecisionTargetSha256": "92aabdda7c65042afbd06c76460992a00d6f85b639348acb2fac08cbcf0a83a1",
+  "checks": {
+    "boundSourcesAndSelection": true,
+    "journalReplay": true,
+    "allAvailableDecisionContextConsidered": true,
+    "handoffMatchesController": true,
+    "premiseDecisionAbsent": true,
+    "productionAndReleaseAbsent": true,
+    "cycle7AuthorizedRevision25": true
+  },
+  "durableVerifier": {
+    "passed": true,
+    "execution": "Node22 --import tsx scripts/verify-durable-artifacts.ts; pnpm tsx CLI IPC restricted by sandbox",
+    "canonicalPayloads": 699,
+    "durableArtifactCount": 731,
+    "newMediaCreated": 0,
+    "historicalMissingMasterUnchanged": true
+  },
+  "historicalByteComparison": {
+    "baseCommit": "2c14498ae6e04333869e44affacc86cc11e77156",
+    "cycle7FilesCompared": 205,
+    "allUnchanged": true
+  }
+}

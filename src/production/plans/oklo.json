@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.oklo.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "oklo",
+    "revision": 1,
+    "sha256": "8a358c66ebf28a75cc44b461d4278760a40fe84045587488132934794eec4443"
+  },
+  "contentAsset": {
+    "id": "oklo.asset.natural-reactors",
+    "revision": 1,
+    "sha256": "d87e5d044beed43e469e85636d7dc734ddae5562e1b6554f717b0ac2fc7a4dea"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.8",
+    "reviewSha256": "fb0809505b46643c5bd1fbf1b6c971e803d9593da5af74dfbaffcd5c6388e60b"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-8/profiles/youtube.json",
+      "sha256": "4db6d19738256dba45d0d75fd8c9df4312ecba9d06377643d041283ff83564a1"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/profiles/tiktok.json",
+      "sha256": "16fe42cb1046902bc562f046ced4fd994d23f130d4e1d624d399837524c93c2d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/profiles/instagram.json",
+      "sha256": "60005b34a6a6184094b4b5028c7a2c6ed1814f45aab0514ae0b1f962634de9ad"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/profiles/facebook.json",
+      "sha256": "224c9bf590b26b7ee99edf67fe59b3a8f6b31b42f169e9c30b422a9674989b19"
+    }
+  ],
+  "approvedScriptSha256": "421cbf910562bb55ede7be7e3e0bd89765b76b670ce20209340ef436d8294125",
+  "creativeDirection": {
+    "id": "creative-direction.oklo.v1",
+    "revision": 1,
+    "sha256": "ff53487472ac17abea873132d37aca5a83c1d6e7f923f13d9f21b659771793ab"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "oklo.claim.universal-clock"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 97.4
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "oklo.production.1",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.1",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.1",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.1"
+      ],
+      "claimIds": [
+        "oklo.claim.natural"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 166
+      },
+      "sceneType": "deep-time",
+      "objective": "Impossible-seeming deep-time reactor, immediately natural scope.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.2",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.2",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.2",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.2"
+      ],
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.criticality"
+      ],
+      "frames": {
+        "start": 166,
+        "end": 362
+      },
+      "sceneType": "oklo-place",
+      "objective": "Ground the place and natural ore body.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.3",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.3",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.3",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.3"
+      ],
+      "claimIds": [
+        "oklo.claim.evidence"
+      ],
+      "frames": {
+        "start": 362,
+        "end": 622
+      },
+      "sceneType": "isotope-evidence",
+      "objective": "Present-day evidence makes the astonishing fact investigable.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.4",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.4",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.4",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.4"
+      ],
+      "claimIds": [
+        "oklo.claim.chain",
+        "oklo.claim.criticality"
+      ],
+      "frames": {
+        "start": 622,
+        "end": 922
+      },
+      "sceneType": "chain",
+      "objective": "Distinguish mere radioactivity from a continuing neutron chain.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.5",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.5",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.5",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.5"
+      ],
+      "claimIds": [
+        "oklo.claim.fuel"
+      ],
+      "frames": {
+        "start": 922,
+        "end": 1252
+      },
+      "sceneType": "ancient-fuel",
+      "objective": "Reveal why ancient fuel differed.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.6",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.6",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.6",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.6"
+      ],
+      "claimIds": [
+        "oklo.claim.criticality"
+      ],
+      "frames": {
+        "start": 1252,
+        "end": 1520
+      },
+      "sceneType": "ore-concentration",
+      "objective": "Show concentration, neutron retention and competing absorption.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.7",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.7",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.7",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.7"
+      ],
+      "claimIds": [
+        "oklo.claim.water"
+      ],
+      "frames": {
+        "start": 1520,
+        "end": 1625
+      },
+      "sceneType": "groundwater",
+      "objective": "Introduce water as the missing mechanism.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.8",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.8",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.8",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.8"
+      ],
+      "claimIds": [
+        "oklo.claim.water",
+        "oklo.claim.chain",
+        "oklo.claim.criticality"
+      ],
+      "frames": {
+        "start": 1625,
+        "end": 1949
+      },
+      "sceneType": "moderation",
+      "objective": "Show slowing and renewed fission without a chemical-fuel implication.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.9",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.9",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.9",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.9"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "frames": {
+        "start": 1949,
+        "end": 2155
+      },
+      "sceneType": "zone-evidence",
+      "objective": "Narrow cycling to one studied zone and isotope evidence.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.10",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.10",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.10",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.10"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "frames": {
+        "start": 2155,
+        "end": 2429
+      },
+      "sceneType": "feedback",
+      "objective": "Qualify the proposed groundwater feedback mechanism.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.11",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.11",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.11",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.11"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "frames": {
+        "start": 2429,
+        "end": 2618
+      },
+      "sceneType": "inference",
+      "objective": "Make reconstruction versus observation explicit.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.production.12",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.12",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.12",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.12"
+      ],
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.heat",
+        "oklo.claim.criticality",
+        "oklo.claim.water"
+      ],
+      "frames": {
+        "start": 2618,
+        "end": 2922
+      },
+      "sceneType": "payoff",
+      "objective": "Return to geological reality and earned astonishing payoff.",
+      "onScreenText": [],
+      "animationIntent": "Spatial geological push-in, ore concentration, selective atomic chain and water-scattering cutaway, inferred feedback and return to rock. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Slow spatial camera movement and motivated scale transitions; preserve rock identity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    }
+  ],
+  "assets": [
+    {
+      "id": "oklo.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original SVG illustration",
+        "rights": "Project-owned artwork",
+        "notes": "Illustrative geology and neutron mechanism, not actual Oklo geometry or measured events.",
+        "evidence": "content-intelligence/cycles/cycle-8/rights-provenance.json"
+      }
+    },
+    {
+      "id": "oklo.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource / Manrope by Mikhail Sharanda",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing licensed font; unchanged.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "oklo.narration",
+      "kind": "audio",
+      "path": "public/audio/oklo/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache-2.0 model/output terms",
+        "notes": "Connected reviewed sentences, no paid API.",
+        "evidence": "src/production/narration/oklo.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/oklo-v3.en.vtt",
+    "captionPlanId": "caption-plan.oklo.v1",
+    "captionPlanRevision": 2,
+    "captionPlanSha256": "378099eb75c619ca1b0678ef4eab39cf0aa1e868aa315fa2c61beb3ffe483654",
+    "generatorId": "generator.oklo-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full media probe and decode, exact caption reconstruction and typography fit.",
+    "Every caption midpoint and opening/evidence/chain/moderation/feedback/payoff checkpoints decoded and inspected.",
+    "Natural rock setting, heat not visible radioactivity, moderation not absorption, and zone-specific inferred feedback remain explicit.",
+    "Actual audio interval recognition and mix; owner pronunciation/prosody remains judgment.",
+    "Four sampled provisional profile preflights; no invented native/device safety.",
+    "AHMET — MASTER REVIEW; no release preparation before approval."
+  ]
+}

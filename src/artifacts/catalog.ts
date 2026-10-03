@@ -1,5 +1,6 @@
 import {readFileSync,writeFileSync,renameSync,mkdirSync,rmSync} from 'node:fs';
 import {resolve} from 'node:path';
+import {assertGitMediaSize} from './durability';
 import {sha256Json} from '../content-intelligence/run-schema';
 import {loadMediaRegistry,registerMediaArtifact,type MediaArtifact,type MediaRegistry} from './media';
 
@@ -22,6 +23,8 @@ export const openMediaCatalog=(root=process.cwd()):MediaRegistry=>{
 
 /** Catalog is the persistent authority, not a mutable session registry. */
 export const persistMediaArtifact=(artifact:MediaArtifact,root=process.cwd())=>{
+  // Validate actual bytes before creating a lock or mutating the append-only catalog.
+  assertGitMediaSize(artifact.canonicalPath,root);
   const directory=resolve(root,'artifacts');const lock=resolve(directory,'.media-catalog-lock');mkdirSync(lock);
   try{
     const current=loadMediaRegistry(root);const same=current.byHash(artifact.sha256);

@@ -1,0 +1,70 @@
+{
+  "sourceBaseCommit": "2c14498ae6e04333869e44affacc86cc11e77156",
+  "files": [
+    {
+      "path": "src/artifacts/retention.ts",
+      "sha256": "382a769342d5e541569e6b65f2a3fa106d665a5708faf4a5c0a7968f53e5642f"
+    },
+    {
+      "path": "src/artifacts/media.ts",
+      "sha256": "7761102041f686405896464e33586d1b2b657d5cfdf0b96a05b276a02b28c4cb"
+    },
+    {
+      "path": "src/artifacts/catalog.ts",
+      "sha256": "898de95df262974755fe1bb1367a10a4a31eb83f67818cd3ae7799ec95d7e71f"
+    },
+    {
+      "path": "src/artifacts/durability.ts",
+      "sha256": "192fda66e40fa0a974ee7a778da695cd232a96197313d3ccd716808ccc10b155"
+    },
+    {
+      "path": "src/artifacts/json-identity.ts",
+      "sha256": "7b113197665cb5b3f568e56de64de0f4157353af0366d1c9c2e354bae143ff02"
+    },
+    {
+      "path": "src/workflow/evidence-schema.ts",
+      "sha256": "7539cbb29ed9a6d43ac08ada03142a3b981b72e686bd3e0f851787cdb169eaf6"
+    },
+    {
+      "path": "src/workflow/evidence.ts",
+      "sha256": "5a4057b6c823dc9de9053f679d9721976fe9cb7cfe0b18853833c9f3cdddb8ac"
+    },
+    {
+      "path": "src/content-intelligence/run-schema.ts",
+      "sha256": "c162df81b42feb7cd8714158a933bbc2cadfffabde869bdb8e03255ffa94f5da"
+    },
+    {
+      "path": "src/workflow/store.ts",
+      "sha256": "530f17d1ef0ea5177ea03b4800506b7b2f07f33fca5ca76c02f302c9394c66f9"
+    },
+    {
+      "path": "src/workflow/release.ts",
+      "sha256": "b8afce045fbba349efd5bc22050265da6c949ae1092fe754098701ae8f8782f5"
+    },
+    {
+      "path": "src/platform-variants/registry.ts",
+      "sha256": "565905fde8e360bf3885dff2247186507ece68770868508f9f56873bae56cd39"
+    },
+    {
+      "path": "src/delivery/media-bindings.ts",
+      "sha256": "f95b4bb63276971ff9e2e8fbca8a08018aa5da0f1756021bf5fd359e55f9a355"
+    },
+    {
+      "path": "scripts/artifact-v2-integrity.ts",
+      "sha256": "d87a4c8225a04b0bfec75a7e8ce750df6d3a89f8d39f659e735deee0eeee3cf2"
+    },
+    {
+      "path": "tests/historical-media-retention.test.ts",
+      "sha256": "aa912e99326b78f1fc0f3cc82b50593449ef6114e6bcd5a1980e0f344cf50470"
+    },
+    {
+      "path": "tests/media-registration-preflight.test.ts",
+      "sha256": "dc5ba1b3629d86dbc59050934bb469e41ab0bc3033ab544ff83fb2ef1e0d372c"
+    },
+    {
+      "path": "scripts/verify-oklo-retention.ts",
+      "sha256": "08d406f56a6ca5153259ad833b5b95c5ed806e7edcb269e6485342a2b569d3e6"
+    }
+  ],
+  "note": "Shared evidence-schema and canonical JSON hash extraction is behavior-preserving and removes an import cycle. No media/story implementation changed."
+}

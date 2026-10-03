@@ -1,0 +1,10 @@
+import{readFileSync,writeFileSync}from'node:fs';
+import{createRequire}from'node:module';
+import{spawnSync}from'node:child_process';
+import{mediaHash}from'../src/artifacts/media';
+const base='content-intelligence/cycles/cycle-8',old=JSON.parse(readFileSync(`${base}/qa/audio-inspection.json`,'utf8')),encoding=JSON.parse(readFileSync(`${base}/size-revision-v3/encoding.json`,'utf8'));
+const master='artifacts/masters/oklo-cycle8-candidate-v3.mp4';
+if(old.masterSha256!==encoding.old.sha256||mediaHash(master)!==encoding.replacement.sha256)throw new Error('Detached audio proof');
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const loudness=spawnSync(ffmpeg,['-hide_banner','-i',master,'-af','ebur128=peak=true','-vn','-f','null','-'],{encoding:'utf8'});if(loudness.status!==0)throw new Error(loudness.stderr);
+writeFileSync('qa/oklo/audio-inspection.json',JSON.stringify({...old,checkedAt:new Date().toISOString(),masterPath:master,masterSha256:mediaHash(master),method:'Fresh exact-master packet and decoded-PCM identity versus V2; independent V3 loudness measurement. Prior sentence-interval and complete-master ASR results retained as inherited corroboration because decoded audio is identical, not a claim of a fresh ASR run.',inheritedInspection:{path:`${base}/qa/audio-inspection.json`,sha256:mediaHash(`${base}/qa/audio-inspection.json`)},encodingEvidence:{path:`${base}/size-revision-v3/encoding.json`,sha256:mediaHash(`${base}/size-revision-v3/encoding.json`)},loudnessSummary:loudness.stderr.slice(loudness.stderr.lastIndexOf('Summary:'))},null,2)+'\n');

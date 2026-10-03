@@ -1,3 +1,5 @@
+import {assertGitMediaSize} from '../artifacts/durability';
+import {assertMediaProductionEligible} from '../artifacts/retention';
 import {z} from 'zod';
 import {mediaReferenceSchema, loadMediaRegistry, type MediaRegistry, mediaHash} from '../artifacts/media';
 import {deliveryManifestSchema, type DeliveryManifest} from './schema';
@@ -28,7 +30,8 @@ export const validatePublicationMediaAuthorization = (input: unknown, manifest: 
     || authorization.delivery.id !== manifest.deliveryId || authorization.delivery.sha256 !== sha256Json(manifest)
     || authorization.mediaArtifact.id !== manifest.source.mediaArtifact?.id || authorization.mediaArtifact.sha256 !== manifest.source.mediaArtifact?.sha256
     || authorization.mediaArtifact.id !== variant.mediaArtifact?.id || authorization.mediaArtifact.sha256 !== variant.mediaArtifact?.sha256) throw new Error('Publication authorization does not bind the exact reviewed ready delivery/variant/media');
-  registry.resolveFile(authorization.mediaArtifact);
+  assertMediaProductionEligible(authorization.mediaArtifact);
+  assertGitMediaSize(registry.resolveFile(authorization.mediaArtifact));
   return authorization;
 };
 /** Read-only upload resolution for both frozen portable packages and prospective V3. */
@@ -38,7 +41,9 @@ export const resolveDeliveryUpload = (input: unknown, registry: MediaRegistry = 
   const artifact = video.mediaArtifact ? registry.get(video.mediaArtifact) : registry.byHash(video.sha256);
   if (!artifact || artifact.sha256 !== video.sha256 || artifact.bytes !== video.bytes) throw new Error('Delivery media is not catalogued or exact');
   const ref = {id: artifact.id, sha256: artifact.sha256};
+  assertMediaProductionEligible(ref);
   const path = registry.resolveFile(ref);
+  assertGitMediaSize(path);
   if (mediaHash(path) !== video.sha256) throw new Error('Upload byte identity mismatch');
   return {mediaArtifact: ref, uploadFile: artifact.canonicalPath, absoluteUploadFile: path, bytes: artifact.bytes, legacyPackage: manifest.schemaVersion < 3};
 };

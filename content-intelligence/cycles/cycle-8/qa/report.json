@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-03T22:09:16.521Z",
+  "input": "artifacts/masters/oklo-cycle8-candidate-v2.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 97.4
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -22.7,
+    "maxVolumeDb": -2.2,
+    "duration": 97.451,
+    "sizeBytes": 105056676,
+    "bitRate": 8624369
+  },
+  "passed": true,
+  "failures": []
+}

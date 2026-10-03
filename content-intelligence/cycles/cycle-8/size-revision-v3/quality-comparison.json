@@ -1,0 +1,64 @@
+{
+  "enteredAt": "2026-10-03T22:25:20.077Z",
+  "oldSha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d",
+  "replacementSha256": "b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20",
+  "method": "All2922 decoded frames compared at full1080×1920 using FFmpeg SSIM and PSNR; same source rerender, not source-ground-truth quality metrics.",
+  "ssim": "[Parsed_ssim_0 @ 0x600002e7c000] SSIM Y:0.999792 (36.826721) U:0.999844 (38.077134) V:0.999860 (38.523268) All:0.999812 (37.263081)",
+  "psnr": "[Parsed_psnr_0 @ 0x6000030cc000] PSNR y:63.065222 u:67.931065 v:68.314776 average:64.195883 min:54.299116 max:inf",
+  "framesCompared": 2922,
+  "worstFrames": [
+    {
+      "frame": 26,
+      "ssim": 0.998303
+    },
+    {
+      "frame": 24,
+      "ssim": 0.998364
+    },
+    {
+      "frame": 25,
+      "ssim": 0.998377
+    },
+    {
+      "frame": 22,
+      "ssim": 0.998412
+    },
+    {
+      "frame": 20,
+      "ssim": 0.998432
+    },
+    {
+      "frame": 18,
+      "ssim": 0.998443
+    },
+    {
+      "frame": 16,
+      "ssim": 0.998459
+    },
+    {
+      "frame": 21,
+      "ssim": 0.99846
+    },
+    {
+      "frame": 27,
+      "ssim": 0.998466
+    },
+    {
+      "frame": 17,
+      "ssim": 0.998502
+    },
+    {
+      "frame": 14,
+      "ssim": 0.998505
+    },
+    {
+      "frame": 12,
+      "ssim": 0.998531
+    }
+  ],
+  "minimumSsim": 0.998303,
+  "scope": "Metrics quantify encoding differences, not subjective quality or factual validity. Worst-frame and story-checkpoint visual inspection is separate.",
+  "preservedBindings": "All preserved source/research/script/caption/narration/direction/V2/old-event hashes unchanged.",
+  "audio": "Packet and decoded PCM identity checked in encoding.json",
+  "perFrameMetricsSha256": "88a40a54bf209f01ea64762f248479be9bcf04ebd01f75b0675dbcf7963926da"
+}
