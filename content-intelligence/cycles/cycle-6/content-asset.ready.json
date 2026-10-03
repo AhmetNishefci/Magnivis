@@ -1,0 +1,322 @@
+{
+  "id": "tally-fire.asset.disposal",
+  "revision": 1,
+  "knowledgePackageId": "tally-fire",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand matching split tally receipts and the documented disposal decision that led to catastrophic fire.",
+  "storyAngle": "An everyday disposal decision became a catastrophe.",
+  "hookId": "tally-fire.hook.receipts",
+  "selectedClaimIds": [
+    "tally-fire.claim.receipts",
+    "tally-fire.claim.split",
+    "tally-fire.claim.cartloads",
+    "tally-fire.claim.furnaces",
+    "tally-fire.claim.warnings",
+    "tally-fire.claim.breakthrough",
+    "tally-fire.claim.survival"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 40,
+    "maximum": 75
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "tally-fire.asset.disposal.script.1",
+        "type": "factual",
+        "text": "In 1834, Britain’s Parliament caught fire because workers were destroying old receipts.",
+        "claimIds": [
+          "tally-fire.claim.receipts"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.2",
+        "type": "factual",
+        "text": "The receipts were wooden sticks.",
+        "claimIds": [
+          "tally-fire.claim.receipts"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.3",
+        "type": "factual",
+        "text": "For centuries, the government recorded payments with notches, then split the wood so both sides kept a matching record.",
+        "claimIds": [
+          "tally-fire.claim.split"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.4",
+        "type": "factual",
+        "text": "When that system became obsolete, two cartloads of sticks were left to dispose of.",
+        "claimIds": [
+          "tally-fire.claim.cartloads"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.5",
+        "type": "factual",
+        "text": "Workers fed them into heating furnaces beneath the House of Lords.",
+        "claimIds": [
+          "tally-fire.claim.furnaces"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.6",
+        "type": "factual",
+        "text": "A chimney fire smouldered under the chamber floor. Heat and smoke were noticed, but the burning continued.",
+        "claimIds": [
+          "tally-fire.claim.warnings"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.7",
+        "type": "factual",
+        "text": "That evening, flames broke through.",
+        "claimIds": [
+          "tally-fire.claim.breakthrough"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.8",
+        "type": "factual",
+        "text": "Both parliamentary chambers were destroyed. Westminster Hall survived.",
+        "claimIds": [
+          "tally-fire.claim.survival"
+        ]
+      },
+      {
+        "id": "tally-fire.asset.disposal.script.9",
+        "type": "factual",
+        "text": "The dangerous part wasn’t keeping records on wood. It was choosing where to burn them.",
+        "claimIds": [
+          "tally-fire.claim.receipts",
+          "tally-fire.claim.furnaces"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "tally-fire.asset.disposal.beat.1",
+      "label": "outcome",
+      "purpose": "Open on an original old-Palace silhouette with smouldering fire and a notched stick; causal mystery begins immediately.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.1"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.2",
+      "label": "wooden-receipts",
+      "purpose": "Macro view of one original notched wooden tally; no currency claim.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.2"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.3",
+      "label": "matching-record",
+      "purpose": "Notches cross a matching longitudinal split; separate two halves without implying a forged monetary value.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.3"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.4",
+      "label": "obsolete-loads",
+      "purpose": "Show two schematic carts of obsolete sticks, distinguish quantity from mass.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.4"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.5",
+      "label": "disposal",
+      "purpose": "Move bundle toward furnace in a clearly labelled Lords cutaway; no modern palace silhouette.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.5"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.6",
+      "label": "warnings",
+      "purpose": "Follow schematic chimney heat/smoke toward chamber floor; visible warning signs, no invented person/dialogue.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.6"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.7",
+      "label": "breakthrough",
+      "purpose": "Fire breaks through chamber floor; restrained historical reconstruction, no explosion claim.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.7"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.8",
+      "label": "survivors",
+      "purpose": "Chambers darken to damage silhouettes while labelled Westminster Hall remains standing; other survival not denied.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.8"
+      ]
+    },
+    {
+      "id": "tally-fire.asset.disposal.beat.9",
+      "label": "choice",
+      "purpose": "Return to stick beside furnace boundary; land the choice-of-disposal causal distinction.",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.9"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "tally-fire.asset.disposal.visual.1",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.1",
+      "objective": "Open on an original old-Palace silhouette with smouldering fire and a notched stick; causal mystery begins immediately.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.1"
+      ],
+      "claimIds": [
+        "tally-fire.claim.receipts"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.2",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.2",
+      "objective": "Macro view of one original notched wooden tally; no currency claim.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.2"
+      ],
+      "claimIds": [
+        "tally-fire.claim.receipts"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.3",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.3",
+      "objective": "Notches cross a matching longitudinal split; separate two halves without implying a forged monetary value.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.3"
+      ],
+      "claimIds": [
+        "tally-fire.claim.split"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.4",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.4",
+      "objective": "Show two schematic carts of obsolete sticks, distinguish quantity from mass.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.4"
+      ],
+      "claimIds": [
+        "tally-fire.claim.cartloads"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.5",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.5",
+      "objective": "Move bundle toward furnace in a clearly labelled Lords cutaway; no modern palace silhouette.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.5"
+      ],
+      "claimIds": [
+        "tally-fire.claim.furnaces"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.6",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.6",
+      "objective": "Follow schematic chimney heat/smoke toward chamber floor; visible warning signs, no invented person/dialogue.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.6"
+      ],
+      "claimIds": [
+        "tally-fire.claim.warnings"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.7",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.7",
+      "objective": "Fire breaks through chamber floor; restrained historical reconstruction, no explosion claim.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.7"
+      ],
+      "claimIds": [
+        "tally-fire.claim.breakthrough"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.8",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.8",
+      "objective": "Chambers darken to damage silhouettes while labelled Westminster Hall remains standing; other survival not denied.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.8"
+      ],
+      "claimIds": [
+        "tally-fire.claim.survival"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    },
+    {
+      "id": "tally-fire.asset.disposal.visual.9",
+      "narrativeBeatId": "tally-fire.asset.disposal.beat.9",
+      "objective": "Return to stick beside furnace boundary; land the choice-of-disposal causal distinction.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "tally-fire.asset.disposal.script.9"
+      ],
+      "claimIds": [
+        "tally-fire.claim.receipts",
+        "tally-fire.claim.furnaces"
+      ],
+      "notes": "Original schematic reconstruction; not exact architecture, measured flame spread, authentic currency notches or an actual surviving 1834 stick. No modern clock tower."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Current primary af_heart; direct intrigued opening, measured explanation, restrained gravity at fire and survival.",
+    "pronunciationNotes": [
+      "1834 read as eighteen thirty-four",
+      "Westminster; House of Lords; chimney; tally"
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.6",
+      "reviewSha256": "703ad752de1a069911731d8d037d1b6adf16e5c1375011d08a96319e5fda3cad"
+    },
+    "approvedAt": "2026-10-03",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

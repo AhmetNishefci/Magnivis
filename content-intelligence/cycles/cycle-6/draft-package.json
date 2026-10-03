@@ -1,0 +1,316 @@
+{
+  "id": "tally-fire",
+  "revision": 1,
+  "topic": "The wooden receipts behind Parliament’s 1834 fire",
+  "centralQuestion": "How did disposing of obsolete wooden receipts help destroy the old Palace of Westminster?",
+  "taxonomy": {
+    "pillar": "history-stories",
+    "domains": [
+      "institutional-history",
+      "accounting",
+      "fire-history"
+    ],
+    "topics": [
+      "tally-sticks",
+      "palace-of-westminster",
+      "disposal-decisions"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "A record system became obsolete; furnace disposal of its wooden leftovers caused a chimney fire that spread through the old Palace.",
+  "viewerPayoff": "Understand matching split tally receipts and the documented disposal decision that led to catastrophic fire.",
+  "sources": [
+    {
+      "id": "source.tally-fire.parliament-fire",
+      "organization": "UK Parliament",
+      "title": "The Great Fire of 1834",
+      "sourceType": "government",
+      "url": "https://www.parliament.uk/about/living-heritage/building/palace/architecture/palacestructure/great-fire/",
+      "retrieved": "2026-10-03",
+      "notes": "Institutional historical synthesis, not an eyewitness transcript. The blaze followed a chimney fire; not a claim that sticks directly touched the chamber floor. Most of the old Palace, not all Parliament or the present Victorian building."
+    },
+    {
+      "id": "source.tally-fire.parliament-tallies",
+      "organization": "UK Parliament / Parliamentary Archives",
+      "title": "Tally Sticks",
+      "sourceType": "government",
+      "url": "https://www.parliament.uk/about/living-heritage/building/palace/estatehistory/from-the-parliamentary-collections/fire-of-westminster/tallysticks/",
+      "retrieved": "2026-10-03",
+      "notes": "Correlated with Parliament fire account; not independent institutional corroboration. Catalogue objects are surviving examples, not sticks recovered from the fire."
+    },
+    {
+      "id": "source.tally-fire.boe",
+      "organization": "Bank of England Museum",
+      "title": "Payments through time",
+      "sourceType": "museum",
+      "url": "https://www.bankofengland.co.uk/museum/whats-on/2019/325-years-exhibition/payments-through-time",
+      "retrieved": "2026-10-03",
+      "notes": "Debt example corroborates split-record mechanism, not every government payment procedure. No monetary value or Bank loan date is narrated."
+    },
+    {
+      "id": "source.tally-fire.parliament-booklet",
+      "organization": "UK Parliament",
+      "title": "The Fire of 1834 and the Old Palace of Westminster",
+      "sourceType": "government",
+      "url": "https://www.parliament.uk/globalassets/documents/works-of-art/the-fire-of-1834-booklet.pdf",
+      "retrieved": "2026-10-03",
+      "notes": "Parsed PDF and page 2 screenshot inspected; no artwork reproduced. Same institution as other fire sources; no false independence claim. Furnace/flue geometry, flame timings and trajectories in visuals are qualitative schematics."
+    }
+  ],
+  "claims": [
+    {
+      "id": "tally-fire.claim.receipts",
+      "statement": "The 1834 Palace of Westminster fire resulted from furnace disposal of obsolete wooden tally receipts.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "Established institutional historical account; dangerous disposal in a vulnerable building, not accounting itself. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-tallies",
+          "locator": "Introductory paragraphs; catalogue HL/PO/RO/1/195",
+          "notes": "Established institutional historical account; dangerous disposal in a vulnerable building, not accounting itself. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-booklet",
+          "locator": "PDF pages 2–3 (A Georgian Conflagration), page 10 (Westminster Hall)",
+          "notes": "Established institutional historical account; dangerous disposal in a vulnerable building, not accounting itself. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Established institutional historical account; dangerous disposal in a vulnerable building, not accounting itself."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "tally-fire.claim.split",
+      "statement": "Government tallies recorded financial transactions with notches and were split to give matching records.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "Receipt and debt uses varied; schematic notches represent no exact monetary amount. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-tallies",
+          "locator": "Introductory paragraphs; catalogue HL/PO/RO/1/195",
+          "notes": "Receipt and debt uses varied; schematic notches represent no exact monetary amount. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.boe",
+          "locator": "1694 — Wooden tally stick",
+          "notes": "Receipt and debt uses varied; schematic notches represent no exact monetary amount. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Receipt and debt uses varied; schematic notches represent no exact monetary amount."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "tally-fire.claim.cartloads",
+      "statement": "Two cartloads of obsolete tallies remained for disposal in 1834.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "Historical approximate volume; carts shown represent the stated two loads, not measured mass. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-tallies",
+          "locator": "Introductory paragraphs; catalogue HL/PO/RO/1/195",
+          "notes": "Historical approximate volume; carts shown represent the stated two loads, not measured mass. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-booklet",
+          "locator": "PDF pages 2–3 (A Georgian Conflagration), page 10 (Westminster Hall)",
+          "notes": "Historical approximate volume; carts shown represent the stated two loads, not measured mass. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Historical approximate volume; carts shown represent the stated two loads, not measured mass."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "tally-fire.claim.furnaces",
+      "statement": "Workers burned the tallies in heating furnaces beneath the House of Lords.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "Simplified cutaway, not a surveyed furnace/flue plan. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-booklet",
+          "locator": "PDF pages 2–3 (A Georgian Conflagration), page 10 (Westminster Hall)",
+          "notes": "Simplified cutaway, not a surveyed furnace/flue plan. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Simplified cutaway, not a surveyed furnace/flue plan."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "tally-fire.claim.warnings",
+      "statement": "A chimney fire smouldered below the chamber floor; heat and smoke were noticed but the disposal continued.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "Compresses documented afternoon sequence; no invented motives, dialogue or precise combustion model. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-booklet",
+          "locator": "PDF pages 2–3 (A Georgian Conflagration), page 10 (Westminster Hall)",
+          "notes": "Compresses documented afternoon sequence; no invented motives, dialogue or precise combustion model. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Compresses documented afternoon sequence; no invented motives, dialogue or precise combustion model."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "tally-fire.claim.breakthrough",
+      "statement": "Flames emerged through the House of Lords floor that evening.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-booklet",
+          "locator": "PDF pages 2–3 (A Georgian Conflagration), page 10 (Westminster Hall)",
+          "notes": "No explosion mechanism or minute-level time claimed. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "No explosion mechanism or minute-level time claimed. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "No explosion mechanism or minute-level time claimed."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "tally-fire.claim.survival",
+      "statement": "Both parliamentary chambers were destroyed, while Westminster Hall survived.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "Other parts also survived. Old Palace, not present Big Ben/new Palace. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.tally-fire.parliament-booklet",
+          "locator": "PDF pages 2–3 (A Georgian Conflagration), page 10 (Westminster Hall)",
+          "notes": "Other parts also survived. Old Palace, not present Big Ben/new Palace. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Other parts also survived. Old Palace, not present Big Ben/new Palace."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "tally-fire.claim.all-destroyed",
+      "statement": "The entire Palace of Westminster was destroyed.",
+      "evidence": [
+        {
+          "sourceId": "source.tally-fire.parliament-fire",
+          "locator": "The Great Fire of 1834; Fire!; Did you know?",
+          "notes": "False universal scope; excluded. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "False universal scope; excluded."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "tally-fire.caveat.reconstruction",
+      "statement": "Original simplified reconstruction, not eyewitness footage, surveyed architecture or a combustion simulation. Other portions besides Hall survived.",
+      "claimIds": [
+        "tally-fire.claim.receipts",
+        "tally-fire.claim.split",
+        "tally-fire.claim.cartloads",
+        "tally-fire.claim.furnaces",
+        "tally-fire.claim.warnings",
+        "tally-fire.claim.breakthrough",
+        "tally-fire.claim.survival"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "tally-fire.hook.receipts",
+      "archetype": "documented-consequence",
+      "text": "In 1834, Britain’s Parliament caught fire because workers were destroying old receipts.",
+      "viewerPromise": "Explain how clearing old receipts could cause a catastrophic fire.",
+      "claimIds": [
+        "tally-fire.claim.receipts"
+      ]
+    },
+    {
+      "id": "tally-fire.hook.choice",
+      "archetype": "causal-question",
+      "text": "How can throwing away receipts destroy a parliament?",
+      "viewerPromise": "Follow the physical disposal decision and its consequences.",
+      "claimIds": [
+        "tally-fire.claim.receipts",
+        "tally-fire.claim.furnaces"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "tally-fire.narrative.disposal",
+      "title": "Receipts to ruin",
+      "description": "Rewind from outcome to records; follow disposal and warning signs back to consequence.",
+      "claimIds": [
+        "tally-fire.claim.receipts",
+        "tally-fire.claim.split",
+        "tally-fire.claim.cartloads",
+        "tally-fire.claim.furnaces",
+        "tally-fire.claim.warnings",
+        "tally-fire.claim.breakthrough",
+        "tally-fire.claim.survival"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "tally-fire.visual.sequence",
+      "title": "Record, furnace, floor, aftermath",
+      "description": "Original split-record macro and architectural cutaway, disclosed qualitative reconstruction.",
+      "claimIds": [
+        "tally-fire.claim.receipts",
+        "tally-fire.claim.split",
+        "tally-fire.claim.cartloads",
+        "tally-fire.claim.furnaces",
+        "tally-fire.claim.warnings",
+        "tally-fire.claim.breakthrough",
+        "tally-fire.claim.survival"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "How did matching tallies resist alteration?",
+    "How was the old Palace rebuilt?"
+  ],
+  "followUpOpportunities": [
+    "A separately evidenced story of physical authentication or rebuilding."
+  ],
+  "editorialStatus": "review"
+}

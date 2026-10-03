@@ -1,0 +1,202 @@
+{
+  "sources": [
+    {
+      "key": "parliament-fire",
+      "organization": "UK Parliament",
+      "title": "The Great Fire of 1834",
+      "type": "government",
+      "url": "https://www.parliament.uk/about/living-heritage/building/palace/architecture/palacestructure/great-fire/",
+      "locator": "The Great Fire of 1834; Fire!; Did you know?",
+      "summary": "Two cartloads of obsolete tally sticks were burned in underfloor stoves below the Lords. Visitors noticed heat and smoke but work continued. Furnaces extinguished at 5pm; alarm at 6pm. Both chambers and most site buildings destroyed; Westminster Hall and other parts survived. Split tallies served medieval accounting.",
+      "limits": [
+        "Institutional historical synthesis, not an eyewitness transcript.",
+        "The blaze followed a chimney fire; not a claim that sticks directly touched the chamber floor.",
+        "Most of the old Palace, not all Parliament or the present Victorian building."
+      ]
+    },
+    {
+      "key": "parliament-tallies",
+      "organization": "UK Parliament / Parliamentary Archives",
+      "title": "Tally Sticks",
+      "type": "government",
+      "url": "https://www.parliament.uk/about/living-heritage/building/palace/estatehistory/from-the-parliamentary-collections/fire-of-westminster/tallysticks/",
+      "locator": "Introductory paragraphs; catalogue HL/PO/RO/1/195",
+      "summary": "Tallies were receipts for government income originating in the Middle Ages. Residual two cartloads after abolition in 1826; Clerk of Works chose furnace disposal rather than open-air burning or firewood distribution. Catalogue identifies genuine medieval tallies c1293-1294 as similar examples, not the destroyed 1834 batch.",
+      "limits": [
+        "Correlated with Parliament fire account; not independent institutional corroboration.",
+        "Catalogue objects are surviving examples, not sticks recovered from the fire."
+      ]
+    },
+    {
+      "key": "boe",
+      "organization": "Bank of England Museum",
+      "title": "Payments through time",
+      "type": "museum",
+      "url": "https://www.bankofengland.co.uk/museum/whats-on/2019/325-years-exhibition/payments-through-time",
+      "locator": "1694 \u2014 Wooden tally stick",
+      "summary": "Notches represented the recorded debt; splitting lengthwise gave each party a record. Museum example records one of the Bank\u2019s earliest government loans in 1694.",
+      "limits": [
+        "Debt example corroborates split-record mechanism, not every government payment procedure.",
+        "No monetary value or Bank loan date is narrated."
+      ]
+    },
+    {
+      "key": "parliament-booklet",
+      "organization": "UK Parliament",
+      "title": "The Fire of 1834 and the Old Palace of Westminster",
+      "type": "government",
+      "url": "https://www.parliament.uk/globalassets/documents/works-of-art/the-fire-of-1834-booklet.pdf",
+      "locator": "PDF pages 2\u20133 (A Georgian Conflagration), page 10 (Westminster Hall)",
+      "summary": "Chimney fire smouldered under the Lords floor following burning of two cartloads of obsolete receipts in heating furnaces. Warnings ignored; flames emerged through floor after six. Vulnerable sprawling building and firefighting conditions mattered. Westminster Hall was protected and survived.",
+      "limits": [
+        "Parsed PDF and page 2 screenshot inspected; no artwork reproduced.",
+        "Same institution as other fire sources; no false independence claim.",
+        "Furnace/flue geometry, flame timings and trajectories in visuals are qualitative schematics."
+      ]
+    }
+  ],
+  "definitions": [
+    [
+      "receipts",
+      "The 1834 Palace of Westminster fire resulted from furnace disposal of obsolete wooden tally receipts.",
+      [
+        "parliament-fire",
+        "parliament-tallies",
+        "parliament-booklet"
+      ],
+      "Established institutional historical account; dangerous disposal in a vulnerable building, not accounting itself."
+    ],
+    [
+      "split",
+      "Government tallies recorded financial transactions with notches and were split to give matching records.",
+      [
+        "parliament-fire",
+        "parliament-tallies",
+        "boe"
+      ],
+      "Receipt and debt uses varied; schematic notches represent no exact monetary amount."
+    ],
+    [
+      "cartloads",
+      "Two cartloads of obsolete tallies remained for disposal in 1834.",
+      [
+        "parliament-fire",
+        "parliament-tallies",
+        "parliament-booklet"
+      ],
+      "Historical approximate volume; carts shown represent the stated two loads, not measured mass."
+    ],
+    [
+      "furnaces",
+      "Workers burned the tallies in heating furnaces beneath the House of Lords.",
+      [
+        "parliament-fire",
+        "parliament-booklet"
+      ],
+      "Simplified cutaway, not a surveyed furnace/flue plan."
+    ],
+    [
+      "warnings",
+      "A chimney fire smouldered below the chamber floor; heat and smoke were noticed but the disposal continued.",
+      [
+        "parliament-fire",
+        "parliament-booklet"
+      ],
+      "Compresses documented afternoon sequence; no invented motives, dialogue or precise combustion model."
+    ],
+    [
+      "breakthrough",
+      "Flames emerged through the House of Lords floor that evening.",
+      [
+        "parliament-booklet",
+        "parliament-fire"
+      ],
+      "No explosion mechanism or minute-level time claimed."
+    ],
+    [
+      "survival",
+      "Both parliamentary chambers were destroyed, while Westminster Hall survived.",
+      [
+        "parliament-fire",
+        "parliament-booklet"
+      ],
+      "Other parts also survived. Old Palace, not present Big Ben/new Palace."
+    ],
+    [
+      "all-destroyed",
+      "The entire Palace of Westminster was destroyed.",
+      [
+        "parliament-fire"
+      ],
+      "False universal scope; excluded."
+    ]
+  ],
+  "lines": [
+    [
+      "In 1834, Britain\u2019s Parliament caught fire because workers were destroying old receipts.",
+      [
+        "receipts"
+      ]
+    ],
+    [
+      "The receipts were wooden sticks.",
+      [
+        "receipts"
+      ]
+    ],
+    [
+      "For centuries, the government recorded payments with notches, then split the wood so both sides kept a matching record.",
+      [
+        "split"
+      ]
+    ],
+    [
+      "When that system became obsolete, two cartloads of sticks were left to dispose of.",
+      [
+        "cartloads"
+      ]
+    ],
+    [
+      "Workers fed them into heating furnaces beneath the House of Lords.",
+      [
+        "furnaces"
+      ]
+    ],
+    [
+      "A chimney fire smouldered under the chamber floor. Heat and smoke were noticed, but the burning continued.",
+      [
+        "warnings"
+      ]
+    ],
+    [
+      "That evening, flames broke through.",
+      [
+        "breakthrough"
+      ]
+    ],
+    [
+      "Both parliamentary chambers were destroyed. Westminster Hall survived.",
+      [
+        "survival"
+      ]
+    ],
+    [
+      "The dangerous part wasn\u2019t keeping records on wood. It was choosing where to burn them.",
+      [
+        "receipts",
+        "furnaces"
+      ]
+    ]
+  ],
+  "objectives": [
+    "Open on an original old-Palace silhouette with smouldering fire and a notched stick; causal mystery begins immediately.",
+    "Macro view of one original notched wooden tally; no currency claim.",
+    "Notches cross a matching longitudinal split; separate two halves without implying a forged monetary value.",
+    "Show two schematic carts of obsolete sticks, distinguish quantity from mass.",
+    "Move bundle toward furnace in a clearly labelled Lords cutaway; no modern palace silhouette.",
+    "Follow schematic chimney heat/smoke toward chamber floor; visible warning signs, no invented person/dialogue.",
+    "Fire breaks through chamber floor; restrained historical reconstruction, no explosion claim.",
+    "Chambers darken to damage silhouettes while labelled Westminster Hall remains standing; other survival not denied.",
+    "Return to stick beside furnace boundary; land the choice-of-disposal causal distinction."
+  ]
+}

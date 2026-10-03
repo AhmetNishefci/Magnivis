@@ -1,0 +1,21 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {validateCreativeDirection} from '../src/content-assets/creative-direction-integrity';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {mediaHash,loadMediaRegistry} from '../src/artifacts/media';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+import {projectLegacyPresentationProfile} from '../src/workflow/profile-compatibility';
+const base='content-intelligence/cycles/cycle-6',now=new Date().toISOString();
+const read=(n:string)=>JSON.parse(readFileSync(`${base}/${n}.json`,'utf8')) as unknown;
+const pkg=knowledgePackageSchema.parse(read('knowledge-package.ready')),asset=contentAssetSchema.parse(read('content-asset.ready'));
+const bind=(v:{id:string;revision:number})=>({id:v.id,revision:v.revision,sha256:sha256Json(v)});
+const direction=validateCreativeDirection({...read('direction-draft') as object,knowledgePackage:bind(pkg),contentAsset:bind(asset),approvedScriptSha256:sha256Json(asset.script)},pkg,asset);
+const ref=(path:string)=>({path,sha256:mediaHash(path)});
+writeFileSync(`${base}/direction-v1.json`,JSON.stringify(direction,null,2)+'\n',{flag:'wx'});
+const registry=loadMediaRegistry();persistCycleEvent(process.cwd(),loadCycle(process.cwd(),'cycle.6',registry),{type:'complete-internal',stage:'creative',record:ref(`${base}/direction-v1.json`),at:now},registry);
+const profileSource=ref('artifacts/presentation-profiles.json'),exportSource=ref('src/platform-variants/platform-profiles.ts');
+const profiles=JSON.parse(readFileSync(profileSource.path,'utf8')) as {platform:string;lifecycle:string;id:string}[];
+mkdirSync(`${base}/profiles`,{recursive:true});
+for(const platform of ['youtube','tiktok','instagram','facebook']){const p=profiles.find(p=>p.platform===platform&&p.lifecycle!=='HISTORICAL_SUPERSEDED'&&p.id.startsWith('safe-area.'));if(!p)throw new Error('Missing profile');writeFileSync(`${base}/profiles/${platform}.json`,JSON.stringify(projectLegacyPresentationProfile(p,profileSource,exportSource,now),null,2)+'\n',{flag:'wx'});}
+const path=`${base}/production-start.json`;writeFileSync(path,JSON.stringify({cycleId:'cycle.6',stage:'production',action:'Generate exact measured narration, captions, plan; original tally and scene reconstruction, sparse sound, render and QA.'},null,2)+'\n',{flag:'wx'});persistCycleEvent(process.cwd(),loadCycle(process.cwd(),'cycle.6',registry),{type:'begin-internal',stage:'production',record:ref(path),at:new Date().toISOString()},registry);

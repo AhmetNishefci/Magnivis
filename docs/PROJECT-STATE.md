@@ -1,3 +1,7 @@
+# Cycle #6 — internal production in progress
+
+Explicit owner instruction starts Cycle #6 on current main. Independent journal `workflow/cycles/cycle.6` owns state. Fresh selection chose the wooden receipts behind Parliament’s 1834 fire; seven scoped claims internally verified, entire-Palace destruction excluded. Bound direction follows rendered comparison of latest Chladni, Paper, Chocolate and Longitude masters. No owner master approval, publication preparation or external actions. Earlier idle/no-Cycle-6 statements below are dated historical scope, superseded by this start authority; prior scheduling/publication uncertainties unchanged.
+
 # CONTENT CYCLE #5 — AHMET — MANUAL RELEASE
 
 ## Current update — 2026-10-03
