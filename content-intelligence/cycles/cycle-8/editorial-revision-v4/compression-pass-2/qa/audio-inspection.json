@@ -1,0 +1,420 @@
+{
+  "checkedAt": "2026-10-03T23:22:54.530Z",
+  "masterPath": "artifacts/masters/oklo-cycle8-candidate-v4.mp4",
+  "masterSha256": "571ae7df335f5933c988374ca3b68baf653ad4a9d358aafc7a013ecd1160bdde",
+  "method": "Local Whisper tiny.en ASR of each clip and full decoded master, plus independent ffprobe durations; machine corroboration, not human subjective listening. All exact decoded-master sentence intervals also inspected; whole-master recognition is secondary corroboration, never pronunciation/prosody acceptance.",
+  "model": "onnx-community/whisper-tiny.en",
+  "modelSha256": "e93ec822f16a8fd264e7de972ad17d615ea7334b75a52d54c50c2e18dd503a25",
+  "narratorModelSha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478",
+  "semanticUnits": [
+    {
+      "id": "oklo-v4-r2-cue-1",
+      "fullSentence": "About two billion years ago, Earth had nuclear reactors. Nobody built them.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000001e40c0] silence_start: 0",
+        "[silencedetect @ 0x6000001e40c0] silence_end: 0.304667 | silence_duration: 0.304667",
+        "[silencedetect @ 0x6000001e40c0] silence_start: 3.48442",
+        "[silencedetect @ 0x6000001e40c0] silence_end: 3.9165 | silence_duration: 0.432083",
+        "[silencedetect @ 0x6000001e40c0] silence_start: 4.83983",
+        "[silencedetect @ 0x6000001e40c0] silence_end: 5.35 | silence_duration: 0.510167"
+      ]
+    },
+    {
+      "id": "oklo-v4-r2-cue-2",
+      "fullSentence": "In 1972, uranium from Gabon held less uranium-235 than expected.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002fc4000] silence_start: 0",
+        "[silencedetect @ 0x600002fc4000] silence_end: 0.332583 | silence_duration: 0.332583",
+        "[silencedetect @ 0x600002fc4000] silence_start: 1.51508",
+        "[silencedetect @ 0x600002fc4000] silence_end: 1.94125 | silence_duration: 0.426167",
+        "[silencedetect @ 0x600002fc4000] silence_start: 4.55904",
+        "[silencedetect @ 0x600002fc4000] silence_end: 4.88837 | silence_duration: 0.329333",
+        "[silencedetect @ 0x600002fc4000] silence_start: 6.90217",
+        "[silencedetect @ 0x600002fc4000] silence_end: 7.425 | silence_duration: 0.522833"
+      ]
+    },
+    {
+      "id": "oklo-v4-r2-cue-3",
+      "fullSentence": "Fission fingerprints in the rock revealed ancient nuclear reactions. How could geology sustain them?",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000015d4000] silence_start: 0",
+        "[silencedetect @ 0x6000015d4000] silence_end: 0.331 | silence_duration: 0.331",
+        "[silencedetect @ 0x6000015d4000] silence_start: 4.26812",
+        "[silencedetect @ 0x6000015d4000] silence_end: 4.77712 | silence_duration: 0.509",
+        "[silencedetect @ 0x6000015d4000] silence_start: 6.43412",
+        "[silencedetect @ 0x6000015d4000] silence_end: 6.95 | silence_duration: 0.515875"
+      ]
+    },
+    {
+      "id": "oklo-v4-r2-cue-4",
+      "fullSentence": "Back then, uranium had a higher share of that easily split isotope. Geology concentrated it into rich deposits.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000031d00c0] silence_start: 0",
+        "[silencedetect @ 0x6000031d00c0] silence_end: 0.337292 | silence_duration: 0.337292",
+        "[silencedetect @ 0x6000031d00c0] silence_start: 4.52492",
+        "[silencedetect @ 0x6000031d00c0] silence_end: 5.12154 | silence_duration: 0.596625",
+        "[silencedetect @ 0x6000031d00c0] silence_start: 7.86287",
+        "[silencedetect @ 0x6000031d00c0] silence_end: 8.325 | silence_duration: 0.462125"
+      ]
+    },
+    {
+      "id": "oklo-v4-r2-cue-5",
+      "fullSentence": "Splitting uranium released neutrons. Collisions with hydrogen in groundwater slowed them, helping them split more uranium.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000037e4000] silence_start: 2.563",
+        "[silencedetect @ 0x6000037e4000] silence_end: 3.12979 | silence_duration: 0.566792",
+        "[silencedetect @ 0x6000037e4000] silence_start: 5.91683",
+        "[silencedetect @ 0x6000037e4000] silence_end: 6.25937 | silence_duration: 0.342542",
+        "[silencedetect @ 0x6000037e4000] silence_start: 7.95917",
+        "[silencedetect @ 0x6000037e4000] silence_end: 8.475 | silence_duration: 0.515833"
+      ]
+    },
+    {
+      "id": "oklo-v4-r2-cue-6",
+      "fullSentence": "Enough avoided escape or absorption elsewhere to keep the chain going.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000008ec0c0] silence_start: 0",
+        "[silencedetect @ 0x6000008ec0c0] silence_end: 0.324708 | silence_duration: 0.324708",
+        "[silencedetect @ 0x6000008ec0c0] silence_start: 1.5775",
+        "[silencedetect @ 0x6000008ec0c0] silence_end: 1.94033 | silence_duration: 0.362833",
+        "[silencedetect @ 0x6000008ec0c0] silence_start: 4.30842",
+        "[silencedetect @ 0x6000008ec0c0] silence_end: 4.825 | silence_duration: 0.516583"
+      ]
+    },
+    {
+      "id": "oklo-v4-r2-cue-7",
+      "fullSentence": "From one studied zone's isotopes, researchers infer starts and stops: heating drove water away; cooling let it return.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002d08000] silence_start: 0",
+        "[silencedetect @ 0x600002d08000] silence_end: 0.322625 | silence_duration: 0.322625",
+        "[silencedetect @ 0x600002d08000] silence_start: 2.13346",
+        "[silencedetect @ 0x600002d08000] silence_end: 2.43754 | silence_duration: 0.304083",
+        "[silencedetect @ 0x600002d08000] silence_start: 4.54312",
+        "[silencedetect @ 0x600002d08000] silence_end: 5.03967 | silence_duration: 0.496542",
+        "[silencedetect @ 0x600002d08000] silence_start: 6.492",
+        "[silencedetect @ 0x600002d08000] silence_end: 6.82525 | silence_duration: 0.33325",
+        "[silencedetect @ 0x600002d08000] silence_start: 7.90837",
+        "[silencedetect @ 0x600002d08000] silence_end: 8.4 | silence_duration: 0.491625"
+      ]
+    },
+    {
+      "id": "oklo-v4-r2-cue-8",
+      "fullSentence": "Reaction zones in rock. Heat, not electricity. Earth had assembled the conditions for fission, without machinery.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600001130000] silence_start: 0",
+        "[silencedetect @ 0x600001130000] silence_end: 0.333292 | silence_duration: 0.333292",
+        "[silencedetect @ 0x600001130000] silence_start: 1.95654",
+        "[silencedetect @ 0x600001130000] silence_end: 2.30404 | silence_duration: 0.3475",
+        "[silencedetect @ 0x600001130000] silence_start: 3.79292",
+        "[silencedetect @ 0x600001130000] silence_end: 4.43621 | silence_duration: 0.643292",
+        "[silencedetect @ 0x600001130000] silence_start: 7.59087",
+        "[silencedetect @ 0x600001130000] silence_end: 8.1 | silence_duration: 0.509125"
+      ]
+    }
+  ],
+  "generationBoundaryReview": {
+    "practice": "Complete semantic sentences generated together; caption line breaks never create TTS boundaries. No text substitutions; No phonetic substitution, global narrator modification or trimming; complete source clips retained.",
+    "limitation": "Acoustic silence and ASR are machine measurements. Sentence-internal prosody, correct stress and pronunciation remain listening judgments at master review."
+  },
+  "results": [
+    {
+      "id": "oklo-v4-r2-cue-1",
+      "exactText": "About two billion years ago, Earth had nuclear reactors. Nobody built them.",
+      "recognized": " About 2 billion years ago, Earth had nuclear reactors. Nobody built them.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.64
+          ],
+          "text": " About 2 billion years ago, Earth had nuclear reactors."
+        },
+        {
+          "timestamp": [
+            3.64,
+            4.84
+          ],
+          "text": " Nobody built them."
+        }
+      ],
+      "duration": 5.35,
+      "sampleRate": 24000
+    },
+    {
+      "id": "oklo-v4-r2-cue-2",
+      "exactText": "In 1972, uranium from Gabon held less uranium-235 than expected.",
+      "recognized": " In 1972, uranium from Gabon held less uranium 235 than expected.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            7
+          ],
+          "text": " In 1972, uranium from Gabon held less uranium 235 than expected."
+        }
+      ],
+      "duration": 7.425,
+      "sampleRate": 24000
+    },
+    {
+      "id": "oklo-v4-r2-cue-3",
+      "exactText": "Fission fingerprints in the rock revealed ancient nuclear reactions. How could geology sustain them?",
+      "recognized": " Fish and fingerprints in the rock revealed ancient nuclear reactions. How could geology sustain them?",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.7
+          ],
+          "text": " Fish and fingerprints in the rock revealed ancient nuclear reactions."
+        },
+        {
+          "timestamp": [
+            4.7,
+            6.5
+          ],
+          "text": " How could geology sustain them?"
+        }
+      ],
+      "duration": 6.95,
+      "sampleRate": 24000
+    },
+    {
+      "id": "oklo-v4-r2-cue-4",
+      "exactText": "Back then, uranium had a higher share of that easily split isotope. Geology concentrated it into rich deposits.",
+      "recognized": " Back then, uranium had a higher share of that easily split isotope. Geology concentrated it into rich deposits.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5
+          ],
+          "text": " Back then, uranium had a higher share of that easily split isotope."
+        },
+        {
+          "timestamp": [
+            5,
+            8
+          ],
+          "text": " Geology concentrated it into rich deposits."
+        }
+      ],
+      "duration": 8.325,
+      "sampleRate": 24000
+    },
+    {
+      "id": "oklo-v4-r2-cue-5",
+      "exactText": "Splitting uranium released neutrons. Collisions with hydrogen in groundwater slowed them, helping them split more uranium.",
+      "recognized": " Splitting uranium released neutrons. Collisions with hydrogen and groundwater slowed them, helping them split more uranium.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Splitting uranium released neutrons."
+        },
+        {
+          "timestamp": [
+            3,
+            6
+          ],
+          "text": " Collisions with hydrogen and groundwater slowed them,"
+        },
+        {
+          "timestamp": [
+            6,
+            8
+          ],
+          "text": " helping them split more uranium."
+        }
+      ],
+      "duration": 8.475,
+      "sampleRate": 24000
+    },
+    {
+      "id": "oklo-v4-r2-cue-6",
+      "exactText": "Enough avoided escape or absorption elsewhere to keep the chain going.",
+      "recognized": " Enough avoided escape, or absorption elsewhere to keep the chain going.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.32
+          ],
+          "text": " Enough avoided escape, or absorption elsewhere to keep the chain going."
+        }
+      ],
+      "duration": 4.825,
+      "sampleRate": 24000
+    },
+    {
+      "id": "oklo-v4-r2-cue-7",
+      "exactText": "From one studied zone's isotopes, researchers infer starts and stops: heating drove water away; cooling let it return.",
+      "recognized": " From one studied zone's isotopes, researchers infer starts and stops, heating drove water away, cooling let it return.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            8
+          ],
+          "text": " From one studied zone's isotopes, researchers infer starts and stops, heating drove water away, cooling let it return."
+        }
+      ],
+      "duration": 8.4,
+      "sampleRate": 24000
+    },
+    {
+      "id": "oklo-v4-r2-cue-8",
+      "exactText": "Reaction zones in rock. Heat, not electricity. Earth had assembled the conditions for fission, without machinery.",
+      "recognized": " Reaction zones in rock, heat, not electricity. Earth had assembled the conditions for fission without machinery.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.18
+          ],
+          "text": " Reaction zones in rock, heat, not electricity."
+        },
+        {
+          "timestamp": [
+            4.18,
+            7.96
+          ],
+          "text": " Earth had assembled the conditions for fission without machinery."
+        }
+      ],
+      "duration": 8.1,
+      "sampleRate": 24000
+    }
+  ],
+  "actualMasterCues": [
+    {
+      "id": "oklo-v4-r2-cue-1",
+      "exactText": "About two billion years ago, Earth had nuclear reactors. Nobody built them.",
+      "recognized": " About 2 billion years ago, Earth had nuclear reactors. Nobody built them.",
+      "start": 0,
+      "duration": 5.35
+    },
+    {
+      "id": "oklo-v4-r2-cue-2",
+      "exactText": "In 1972, uranium from Gabon held less uranium-235 than expected.",
+      "recognized": " In 1972, uranium from Gabon held less uranium, 235 than expected.",
+      "start": 5.666666666666667,
+      "duration": 7.425
+    },
+    {
+      "id": "oklo-v4-r2-cue-3",
+      "exactText": "Fission fingerprints in the rock revealed ancient nuclear reactions. How could geology sustain them?",
+      "recognized": " Fish and fingerprints in the rock revealed ancient nuclear reactions. How could geology sustain them?",
+      "start": 13.266666666666667,
+      "duration": 6.95
+    },
+    {
+      "id": "oklo-v4-r2-cue-4",
+      "exactText": "Back then, uranium had a higher share of that easily split isotope. Geology concentrated it into rich deposits.",
+      "recognized": " Back then, uranium had a higher share of that easily split isotope. Geology concentrated it into rich deposits.",
+      "start": 20.533333333333335,
+      "duration": 8.325
+    },
+    {
+      "id": "oklo-v4-r2-cue-5",
+      "exactText": "Splitting uranium released neutrons. Collisions with hydrogen in groundwater slowed them, helping them split more uranium.",
+      "recognized": " Splitting Uranium released neutrons. Collisions with hydrogen and groundwater slowed them, helping them split more Uranium.",
+      "start": 29.033333333333335,
+      "duration": 8.475
+    },
+    {
+      "id": "oklo-v4-r2-cue-6",
+      "exactText": "Enough avoided escape or absorption elsewhere to keep the chain going.",
+      "recognized": " Enough avoided escape, or absorption elsewhere to keep the chain going.",
+      "start": 37.7,
+      "duration": 4.825
+    },
+    {
+      "id": "oklo-v4-r2-cue-7",
+      "exactText": "From one studied zone's isotopes, researchers infer starts and stops: heating drove water away; cooling let it return.",
+      "recognized": " From one studied zones isotopes, researchers infer starts and stops, heating drove water away, cooling let it return.",
+      "start": 42.7,
+      "duration": 8.4
+    },
+    {
+      "id": "oklo-v4-r2-cue-8",
+      "exactText": "Reaction zones in rock. Heat, not electricity. Earth had assembled the conditions for fission, without machinery.",
+      "recognized": " Reaction zones in rock, heat, not electricity. Earth had assembled the conditions for fission without machinery.",
+      "start": 51.4,
+      "duration": 8.1
+    }
+  ],
+  "completeMasterRecognition": {
+    "text": " About 2 billion years ago, Earth had nuclear reactors. Nobody built them. In 1972, uranium from Gabon held less uranium, 235 than expected. Fish and fingerprints in the rock revealed ancient nuclear reactions. How could geology sustain them? Back then, uranium had a higher share of that easily split isotope. Geology concentrated it into rich deposits. Splitting uranium released neutrons. Collisions with hydrogen and ground From one studied zones isotopes, researchers infer starts and stops, heating drove water away, cooling let it return. Reaction zones in rock, heat, not electricity. Earth had assembled the conditions for fission without machinery.",
+    "chunks": [
+      {
+        "timestamp": [
+          0,
+          5
+        ],
+        "text": " About 2 billion years ago, Earth had nuclear reactors. Nobody built them."
+      },
+      {
+        "timestamp": [
+          6,
+          13
+        ],
+        "text": " In 1972, uranium from Gabon held less uranium, 235 than expected."
+      },
+      {
+        "timestamp": [
+          13.5,
+          19.68
+        ],
+        "text": " Fish and fingerprints in the rock revealed ancient nuclear reactions. How could geology sustain them?"
+      },
+      {
+        "timestamp": [
+          20.8,
+          27.12
+        ],
+        "text": " Back then, uranium had a higher share of that easily split isotope. Geology concentrated it"
+      },
+      {
+        "timestamp": [
+          27.12,
+          48.44
+        ],
+        "text": " into rich deposits. Splitting uranium released neutrons. Collisions with hydrogen and ground From one studied zones isotopes, researchers infer starts and stops, heating drove"
+      },
+      {
+        "timestamp": [
+          48.44,
+          52.2
+        ],
+        "text": " water away, cooling let it return."
+      },
+      {
+        "timestamp": [
+          52.2,
+          56
+        ],
+        "text": " Reaction zones in rock, heat, not electricity."
+      },
+      {
+        "timestamp": [
+          56,
+          59.04
+        ],
+        "text": " Earth had assembled the conditions for fission without machinery."
+      }
+    ]
+  },
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -18.9 LUFS\n    Threshold: -29.3 LUFS\n\n  Loudness range:\n    LRA:         2.7 LU\n    Threshold: -39.7 LUFS\n    LRA low:   -21.1 LUFS\n    LRA high:  -18.4 LUFS\n\n  True peak:\n    Peak:       -4.0 dBFS\n",
+  "subjectiveListening": "Owner master review: voice naturalness, Gabon and uranium isotope pronunciation, complete sentence prosody and semantic contrast; ASR cannot establish pronunciation or naturalness."
+}

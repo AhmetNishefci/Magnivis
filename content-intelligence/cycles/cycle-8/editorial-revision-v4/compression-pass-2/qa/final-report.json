@@ -1,0 +1,89 @@
+{
+  "mediaSha256": "571ae7df335f5933c988374ca3b68baf653ad4a9d358aafc7a013ecd1160bdde",
+  "scriptSha256": "767b45b798549231ffef3fab1625a984a71c53cc747439fd8f7e2a6bcf097fe4",
+  "checkedAt": "2026-10-03T23:24:30.265Z",
+  "checks": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed"
+  },
+  "actualMedia": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 59.712,
+    "sizeBytes": 16827006,
+    "bitRate": 2254422
+  },
+  "fullDecode": "passed",
+  "videoPayloadUnchangedByMastering": "SHA256=982b4280f958c4cd97e007645be405ce1f0796003d7195be372c37f5af9fb6e0",
+  "captionCount": 38,
+  "browserCheckpoints": 79,
+  "decodedContactSheet": {
+    "id": "media.1169c4989bd4a2313bf4ee91f5db48cca42b182fe3c3af033abce2445281170f",
+    "sha256": "1169c4989bd4a2313bf4ee91f5db48cca42b182fe3c3af033abce2445281170f"
+  },
+  "retainedReviewFrames": [
+    {
+      "id": "media.5a323de85e64fc9f08efe0b58060efb80034c75cd3dee0cf94cadf930cd4f5a5",
+      "sha256": "5a323de85e64fc9f08efe0b58060efb80034c75cd3dee0cf94cadf930cd4f5a5"
+    },
+    {
+      "id": "media.6b25cd507f146098a1777f5dcffbbcb04c495958968e9e10313d11a187c7c624",
+      "sha256": "6b25cd507f146098a1777f5dcffbbcb04c495958968e9e10313d11a187c7c624"
+    },
+    {
+      "id": "media.761190346d098fc1c4636ef6a2a882d93d6aca54a0c6eae4c2b096c2ca5b1f66",
+      "sha256": "761190346d098fc1c4636ef6a2a882d93d6aca54a0c6eae4c2b096c2ca5b1f66"
+    },
+    {
+      "id": "media.5138fc6f2ed1bf827d26ebf41c49696a4f0733238a317fb0cf0b47ecc4f84063",
+      "sha256": "5138fc6f2ed1bf827d26ebf41c49696a4f0733238a317fb0cf0b47ecc4f84063"
+    },
+    {
+      "id": "media.f9281ce0262c9f9ced428ebd7807eb7862c593c0326682c341c3e0ce427ee085",
+      "sha256": "f9281ce0262c9f9ced428ebd7807eb7862c593c0326682c341c3e0ce427ee085"
+    },
+    {
+      "id": "media.75e488e7ed7239bc13efebf976b79c03295b72ca14453c7923c59eb9b084c735",
+      "sha256": "75e488e7ed7239bc13efebf976b79c03295b72ca14453c7923c59eb9b084c735"
+    },
+    {
+      "id": "media.c9d0cc6c82a4056019b9483fea948095dcd5f47dbd4d11f2a676ee0a6455b1f2",
+      "sha256": "c9d0cc6c82a4056019b9483fea948095dcd5f47dbd4d11f2a676ee0a6455b1f2"
+    },
+    {
+      "id": "media.b73505ef1da7bfacbeab2d8d84495d9dab93e2520936b6a1d8d3dc58f2bce642",
+      "sha256": "b73505ef1da7bfacbeab2d8d84495d9dab93e2520936b6a1d8d3dc58f2bce642"
+    }
+  ],
+  "sourceReports": [
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/qa/report.json",
+      "sha256": "b822f51bfab142b3c17041ba6b7350baf5bab19b49cede9e14cf393c013201e3"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/qa/typography-report.json",
+      "sha256": "cf6cad3aa98df5577ada502853ebc58782a2292a5535ff53d1d87006d88c88da"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/qa/audio-inspection.json",
+      "sha256": "0573959dfdbddcadfc9d1d84a03dd382ebba71a70d317baba594cf4061eba21f"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/qa/visual-inspection.json",
+      "sha256": "0740b54f4e76e6cc414540560b2f0fb075e36fdc07e1e5fdf2ea8dd633fb20f0"
+    }
+  ],
+  "audio": {
+    "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -18.9 LUFS\n    Threshold: -29.3 LUFS\n\n  Loudness range:\n    LRA:         2.7 LU\n    Threshold: -39.7 LUFS\n    LRA low:   -21.1 LUFS\n    LRA high:  -18.4 LUFS\n\n  True peak:\n    Peak:       -4.0 dBFS\n",
+    "limitation": "ASR and signal measurements corroborate speech; pronunciation, tone, naturalness and semantic phrase synchrony remain owner listening judgments."
+  },
+  "coverage": "All registered browser and decoded checkpoint samples, every caption midpoint, opening and beat boundaries. Full media decoded; no all-frame bounds or native/mobile/crop proof.",
+  "publicationApprovalGranted": false
+}

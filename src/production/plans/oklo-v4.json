@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.oklo.v4",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "oklo",
+    "revision": 3,
+    "sha256": "bc889f5ea01d12ffdeb8045ef415cce3220e9ab39017603ef81781aba0f41e27"
+  },
+  "contentAsset": {
+    "id": "oklo.asset.natural-reactors",
+    "revision": 3,
+    "sha256": "3d8a51807bcc5b00e30a76e4e425544e7eaf97786fbf56e2b5d5df13649887bc"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.8",
+    "reviewSha256": "e575eeabe8c514ff766dcd227ade11c070a95d914015ccdfd60407c01fd5f215"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/profiles/youtube.json",
+      "sha256": "526c6fb80a55d60819baf2d14dfe13bbfb6eec9a44286c135580965c4886e97f"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/profiles/tiktok.json",
+      "sha256": "4a5cd957ff6beeb3fe3398429361c944f45af862da952a84d8311906801c5669"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/profiles/instagram.json",
+      "sha256": "26779deccae1b30da07e399e87e1a2a5e6a7980eef4c03b29e0ef5a1dc96de05"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/profiles/facebook.json",
+      "sha256": "83fb2c9a655e6b61241bebf9b69b4bef054e37a2b8098b1db0c050036e0e1fea"
+    }
+  ],
+  "approvedScriptSha256": "767b45b798549231ffef3fab1625a984a71c53cc747439fd8f7e2a6bcf097fe4",
+  "creativeDirection": {
+    "id": "creative-direction.oklo.v3",
+    "revision": 3,
+    "sha256": "da560f66cfac8d4bba248da2ef6858b450238d6ff171fa30692f3460e1faef76"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "oklo.claim.universal-clock"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 59.666666666666664
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "oklo.v4.production.1",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.1",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.1",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.1"
+      ],
+      "claimIds": [
+        "oklo.claim.natural"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 170
+      },
+      "sceneType": "earth",
+      "objective": "Extraordinary reality immediately, with natural/nonhuman construction scope.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.v4.production.2",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.2",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.2",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.2"
+      ],
+      "claimIds": [
+        "oklo.claim.evidence",
+        "oklo.claim.natural"
+      ],
+      "frames": {
+        "start": 170,
+        "end": 398
+      },
+      "sceneType": "investigation",
+      "objective": "A small isotope anomaly makes the discovery investigation concrete, without invented suspicion.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.v4.production.3",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.3",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.3",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.3"
+      ],
+      "claimIds": [
+        "oklo.claim.evidence",
+        "oklo.claim.chain"
+      ],
+      "frames": {
+        "start": 398,
+        "end": 616
+      },
+      "sceneType": "fission-evidence",
+      "objective": "Fission fingerprints establish the past event and create the how-could-rock-sustain-it question.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.v4.production.4",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.4",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.4",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.4"
+      ],
+      "claimIds": [
+        "oklo.claim.fuel",
+        "oklo.claim.criticality"
+      ],
+      "frames": {
+        "start": 616,
+        "end": 871
+      },
+      "sceneType": "ancient-deposition",
+      "objective": "Reverse into deep time and connect larger fissile share to concentrated natural deposits.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.v4.production.5",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.5",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.5",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.5"
+      ],
+      "claimIds": [
+        "oklo.claim.chain",
+        "oklo.claim.water"
+      ],
+      "frames": {
+        "start": 871,
+        "end": 1131
+      },
+      "sceneType": "moderation",
+      "objective": "Follow one split into a water collision and another split; explain moderation through action.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.v4.production.6",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.6",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.6",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.6"
+      ],
+      "claimIds": [
+        "oklo.claim.criticality",
+        "oklo.claim.chain"
+      ],
+      "frames": {
+        "start": 1131,
+        "end": 1281
+      },
+      "sceneType": "chain-retention",
+      "objective": "Show enough useful neutrons remaining while others escape or are absorbed; sustain, not explode.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.v4.production.7",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.7",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.7",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.7"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "frames": {
+        "start": 1281,
+        "end": 1542
+      },
+      "sceneType": "inferred-feedback",
+      "objective": "Brief qualified reconstruction in one studied zone; water retreat/return, no universal pulse clock.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    },
+    {
+      "id": "oklo.v4.production.8",
+      "sourceVisualPlanId": "oklo.asset.natural-reactors.visual.8",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.8",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.8"
+      ],
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.heat",
+        "oklo.claim.criticality",
+        "oklo.claim.water"
+      ],
+      "frames": {
+        "start": 1542,
+        "end": 1790
+      },
+      "sceneType": "earth-payoff",
+      "objective": "Pull out to natural rock and Earth; heat without machinery or electrical output.",
+      "onScreenText": [],
+      "animationIntent": "Earth, sample investigation, fission evidence, deep-time deposition, linked fission and water moderation, neutron retention, scoped inferred feedback and Earth return. No actual site footage, exact particle counts or measured tracks.",
+      "transitionIntent": "Story-motivated changes of setting and scale; maintain causal particle continuity and scoped inference.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic radiation or underground recording."
+    }
+  ],
+  "assets": [
+    {
+      "id": "oklo.v4.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original SVG illustration",
+        "rights": "Project-owned artwork",
+        "notes": "Illustrative geology and neutron mechanism, not actual Oklo geometry or measured events.",
+        "evidence": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/rights-provenance.json"
+      }
+    },
+    {
+      "id": "oklo.v4.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource / Manrope by Mikhail Sharanda",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing licensed font; unchanged.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "oklo.v4.narration",
+      "kind": "audio",
+      "path": "public/audio/oklo-v4-r2/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache-2.0 model/output terms",
+        "notes": "Connected reviewed sentences, no paid API.",
+        "evidence": "src/production/narration/oklo-v4-r2.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/oklo-v4.en.vtt",
+    "captionPlanId": "caption-plan.oklo.v4",
+    "captionPlanRevision": 2,
+    "captionPlanSha256": "ce2fd8fd45994af452f8a74865a4f408c2c4aeb6a2459fa605e7a881efb5de24",
+    "generatorId": "generator.oklo-phrases.v4",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full media probe and decode, exact caption reconstruction and typography fit.",
+    "Every caption midpoint and opening/evidence/chain/moderation/feedback/payoff checkpoints decoded and inspected.",
+    "Natural rock setting, heat not visible radioactivity, moderation not absorption, and zone-specific inferred feedback remain explicit.",
+    "Actual audio interval recognition and mix; owner pronunciation/prosody remains judgment.",
+    "Four sampled provisional profile preflights; no invented native/device safety.",
+    "AHMET — MASTER REVIEW; no release preparation before approval."
+  ]
+}

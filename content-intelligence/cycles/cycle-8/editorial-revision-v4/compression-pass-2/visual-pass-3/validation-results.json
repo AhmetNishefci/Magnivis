@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-03T23:34:17.893257Z",
+  "checks": {
+    "pnpm check": {
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 51,
+      "tests": 480,
+      "diffHygiene": "passed"
+    },
+    "media": "1080x1920,30fps,H264/AAC48000Hz,59.712s container,full xerror decode passed",
+    "designedCaptions": "38 phrases reconstruct exact reviewed narration; measured sampled glyph fit passed; phrase timing authored with ASR sentence anchors, not word alignment",
+    "audio": "Source/model identities preserved; clip and decoded-master interval ASR; -18.9LUFS,2.7LU loudness range,-4.0dBFS true peak; no clipping",
+    "browserBounds": "79 sampled actual-render checkpoints passed",
+    "preRegistrationSize": "Passed unchanged exclusive100MiB guard",
+    "durability": "762 canonical payloads, one historical retention and two archive parts passed",
+    "workflowReplayRecovery": "Cycles4\u20138 replay valid; currentCycle8revision23 master-review; recovery no-op",
+    "historicalIntegrity": "166 Cycle8 preservation bindings,739 existing catalog rows,417 Cycle7 files and architecture historical bounds unchanged",
+    "scopedSecretScan": "zero findings; bounded pattern scan"
+  },
+  "cycle8": {
+    "revision": 23,
+    "stage": "master-review",
+    "stateSha256": "f16f9f0a01da9edaf3306509ea57643f31d2939365d04b183eb1d90faa3bac89",
+    "normalizedStateSha256": "b8451507257a1e65177f003de0c52cf1b18eda04f88b8a42b8f4a1927d9879c8",
+    "eventSha256": "ea8d76b4e4eea736151cca2462ed5f6d8bb9b40ce3ada6023ec3e97237d79857",
+    "candidate": {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/visual-pass-3/master-candidate-v5.json",
+      "sha256": "293a861fc608b89588604108c43a3b850eaea6640337bf82f4916099bfa2a381"
+    },
+    "media": {
+      "id": "media.476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3",
+      "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+    },
+    "bytes": 16831063
+  },
+  "premiseApproved": true,
+  "masterApproved": false,
+  "releasePrepared": false,
+  "cycle9Started": false,
+  "externalPlatformActions": [],
+  "architectureWork": "None; accepted retention/pre-registration executable behavior and policy files unchanged. Only new production target integration.",
+  "regressionCoverage": "No generic workflow/retention behavior changed; all existing focused regression tests pass.",
+  "remainingLimitations": [
+    "Original2004 full paper remains inaccessible beyond abstract; consulted original criticality model, scholarly review and investigator account, no raw-data replication.",
+    "Ancient geometry/water behavior reconstructed; cycling scoped to one studied zone without exact generalized timings.",
+    "Owner playback/listening needed for editorial sufficiency, pacing, pronunciation, naturalness and caption synchrony. Tiny ASR misrecognition of fission fingerprints and in groundwater remains disclosed.",
+    "Sampled visual/bounds QA and full decode, not all-frame bounds or continuous human playback; exact-media device/native UI untested."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-03T23:32:43.556Z",
+  "durability": {
+    "passed": true,
+    "canonicalPayloads": 762,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "preservationBindings": {
+    "files": 166,
+    "passed": true
+  },
+  "historicalFilesCompared": 417,
+  "historicalCatalogRowsUnchanged": 739,
+  "workflowReplay": [
+    {
+      "id": "cycle.4",
+      "revision": 9,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.5",
+      "revision": 13,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.6",
+      "revision": 23,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.7",
+      "revision": 25,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.8",
+      "revision": 23,
+      "stage": "master-review"
+    }
+  ],
+  "recovery": "exact no-op; no pending event",
+  "cycle8": {
+    "revision": 23,
+    "stage": "master-review",
+    "stateSha256": "f16f9f0a01da9edaf3306509ea57643f31d2939365d04b183eb1d90faa3bac89",
+    "normalizedStateSha256": "b8451507257a1e65177f003de0c52cf1b18eda04f88b8a42b8f4a1927d9879c8",
+    "eventSha256": "ea8d76b4e4eea736151cca2462ed5f6d8bb9b40ce3ada6023ec3e97237d79857",
+    "candidate": {
+      "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/visual-pass-3/master-candidate-v5.json",
+      "sha256": "293a861fc608b89588604108c43a3b850eaea6640337bf82f4916099bfa2a381"
+    },
+    "media": {
+      "id": "media.476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3",
+      "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+    },
+    "bytes": 16831063
+  },
+  "v2": {
+    "bytes": 105056676,
+    "sha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d",
+    "productionEligible": false,
+    "preserved": true
+  },
+  "v3": {
+    "bytes": 98563307,
+    "sha256": "b4711621e710e0878a297d60684e6d0208d1e3184c85b698637d57459e023c20",
+    "unchanged": true
+  },
+  "v4": {
+    "sha256": "571ae7df335f5933c988374ca3b68baf653ad4a9d358aafc7a013ecd1160bdde",
+    "preservedUnsubmittedIntermediate": true
+  },
+  "architecture": {
+    "passed": true,
+    "frozenHistoricalFiles": 948,
+    "changedFiles": 1593,
+    "untrackedFiles": 1
+  },
+  "masterApproved": false,
+  "releasePrepared": false,
+  "externalPlatformActions": []
+}

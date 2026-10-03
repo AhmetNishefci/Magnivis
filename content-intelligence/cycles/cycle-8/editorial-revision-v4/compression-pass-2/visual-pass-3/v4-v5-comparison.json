@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-03T23:28:37.030Z",
+  "masters": [
+    {
+      "path": "artifacts/masters/oklo-cycle8-candidate-v4.mp4",
+      "sha256": "571ae7df335f5933c988374ca3b68baf653ad4a9d358aafc7a013ecd1160bdde"
+    },
+    {
+      "path": "artifacts/masters/oklo-cycle8-candidate-v5.mp4",
+      "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+    }
+  ],
+  "audioPacketSha256": "SHA256=9810ac2650f32c5037edb3fafa4866c955ef5ab3ebc25ba33ef08e0df0129063",
+  "audioPacketsIdentical": true,
+  "narrationBundleUnchanged": {
+    "path": "src/production/narration/oklo-v4-r2.json",
+    "sha256": "c1d39581eeabb76fdc3e593889c7fbc535a8631b445bfdef3087cd42704cd608"
+  },
+  "captionsUnchanged": {
+    "path": "src/captions/plans/oklo-v4.json",
+    "sha256": "17b18304be42738c57077c23fbaa39b9740ae7ba31d3351f07ea7ff73878be0d"
+  },
+  "durationFrames": 1790,
+  "visualChange": "Only explicitly disable fill on open neutron paths in retention scene; component renamed to preserve old bindings. Exact normalized source comparison passed. All other story/pacing/captions/audio unchanged."
+}

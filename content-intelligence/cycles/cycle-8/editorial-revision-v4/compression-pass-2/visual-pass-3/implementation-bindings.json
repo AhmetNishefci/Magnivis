@@ -1,0 +1,64 @@
+{
+  "enteredAt": "2026-10-03T23:28:37.290Z",
+  "sourceBaseCommit": "f090f76e067e244c0c72b3b7887d22d4af4132fa",
+  "files": [
+    {
+      "path": "src/oklo-v5-index.tsx",
+      "sha256": "4415484c4b20f62797318d5a1d1a57c44098d07f61f0070993abfd99cb0a8ff1"
+    },
+    {
+      "path": "src/compositions/OkloRevisedV5.tsx",
+      "sha256": "3171b146d702c962aa80f947b23e114f1b610a470d040aa2d0058febdd36e362"
+    },
+    {
+      "path": "src/components/OkloRevisedWorldV5.tsx",
+      "sha256": "fbbd0a4139321bebaab9c8126fbd4eea7fb7fd01bcb105b351efdc509b0a1c1f"
+    },
+    {
+      "path": "src/content/videos/oklo-v5.ts",
+      "sha256": "ef8d1db3c99ae879be1e04c354a26213e25312eda3082a7799346b04585564fe"
+    },
+    {
+      "path": "scripts/render-oklo-v5.ts",
+      "sha256": "ce85a61b42e6c4c71972c9d7b0754d9f5e4aa252f6d325ac2d7ccb222077b8a8"
+    },
+    {
+      "path": "scripts/qa-oklo-v5-layout.ts",
+      "sha256": "7c2965099fa121f20ed11e2e39ca7b39cc74108ca6f1df8cf211d2e4b2d8e858"
+    },
+    {
+      "path": "scripts/inspect-oklo-v5-audio.mjs",
+      "sha256": "ca28e10c2fd47c5137ca18c5dc97f727710d5312e85522b19100272fcde358c9"
+    },
+    {
+      "path": "scripts/generate-oklo-v4-compressed-narration.mjs",
+      "sha256": "0b2ecc8f92eb4bbe2af8ac2d74d4df13bd2a980b1d0d0eb0827f223eff82ccdd"
+    },
+    {
+      "path": "scripts/prepare-oklo-v4-production.ts",
+      "sha256": "342512346ee97b45900a9d8fde2d82b982a407f9480e58683659817f62d5bef2"
+    },
+    {
+      "path": "scripts/refine-oklo-v4-timing.ts",
+      "sha256": "cee78a39b3cd59ab2d59821398d7900c61a67b0e4214e28dfc85b6a4d57c6d50"
+    },
+    {
+      "path": "src/production/plans/oklo-v4.json",
+      "sha256": "08bb04641e63a56a618dc397bf8489b1399467f9e7281752c1942635606ecb0d"
+    },
+    {
+      "path": "src/captions/plans/oklo-v4.json",
+      "sha256": "17b18304be42738c57077c23fbaa39b9740ae7ba31d3351f07ea7ff73878be0d"
+    },
+    {
+      "path": "src/production/narration/oklo-v4-r2.json",
+      "sha256": "c1d39581eeabb76fdc3e593889c7fbc535a8631b445bfdef3087cd42704cd608"
+    }
+  ],
+  "videoPacketSha256": "SHA256=a37f8a2126ffd3f359060e781a070cb96455ff89125443e42c8b5f5bd6289cc6",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/visual-pass-3/audio-mastering-v5.json",
+    "sha256": "6510bf291a0ced19a5d17290270f5c6f7e6defce889d29b52efd417cda1c5ea6"
+  },
+  "note": "Exact new source hashes bind implementation; base commit is not a circular self-commit claim. Original geometry, consultation-only research and established fonts/local narration."
+}

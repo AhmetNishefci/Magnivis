@@ -1,0 +1,11 @@
+{
+  "enteredAt": "2026-10-03T23:25:50.897745Z",
+  "priorCandidate": "content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/master-candidate-v4.json",
+  "master": "artifacts/masters/oklo-cycle8-candidate-v4.mp4",
+  "masterSha256": "571ae7df335f5933c988374ca3b68baf653ad4a9d358aafc7a013ecd1160bdde",
+  "status": "registered canonical render, not submitted through native master-review event; preserve bytes and all QA evidence",
+  "finding": "Close neutron-retention frame inspection showed SVG open trajectory paths rendered with default black fill. Earlier inspection passed broad scientific/layout checks but did not catch this visual defect before local registration. New version corrects fills without changing narration, captions, timing or premise.",
+  "evidence": "artifacts/qa-evidence/oklo-cycle8-v4/frame-56-39.9s.png",
+  "newCandidatePath": "artifacts/masters/oklo-cycle8-candidate-v5.mp4",
+  "ownerMasterApproval": false
+}

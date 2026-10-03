@@ -1,0 +1,306 @@
+{
+  "id": "oklo.asset.natural-reactors",
+  "revision": 2,
+  "knowledgePackageId": "oklo",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Explain how geology sustained fission naturally before humans.",
+  "storyAngle": "The1972uranium anomaly reveals ancient fission, then a compact causal reconstruction explains how nature sustained it.",
+  "hookId": "oklo.hook.unbuilt",
+  "selectedClaimIds": [
+    "oklo.claim.natural",
+    "oklo.claim.evidence",
+    "oklo.claim.chain",
+    "oklo.claim.fuel",
+    "oklo.claim.criticality",
+    "oklo.claim.water",
+    "oklo.claim.cycling",
+    "oklo.claim.heat"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 50,
+    "maximum": 85
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "oklo.asset.natural-reactors.script.1",
+        "type": "factual",
+        "text": "About two billion years ago, Earth had nuclear reactors. Nobody built them.",
+        "claimIds": [
+          "oklo.claim.natural"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.2",
+        "type": "factual",
+        "text": "In 1972, uranium from Gabon showed an anomaly: less uranium-235 than expected.",
+        "claimIds": [
+          "oklo.claim.evidence",
+          "oklo.claim.natural"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.3",
+        "type": "factual",
+        "text": "The rock also carried fission's isotope fingerprints. Uranium nuclei had split. But how could rock keep that going?",
+        "claimIds": [
+          "oklo.claim.evidence",
+          "oklo.claim.chain"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.4",
+        "type": "factual",
+        "text": "Ancient uranium had a higher share of uranium-235, an isotope that splits readily. Geology concentrated the uranium into rich deposits.",
+        "claimIds": [
+          "oklo.claim.fuel",
+          "oklo.claim.criticality"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.5",
+        "type": "factual",
+        "text": "Each split released neutrons that could split more uranium. Groundwater helped: collisions with hydrogen slowed those neutrons, making further splits more likely.",
+        "claimIds": [
+          "oklo.claim.chain",
+          "oklo.claim.water"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.6",
+        "type": "factual",
+        "text": "Enough neutrons stayed in the deposit instead of escaping or being absorbed elsewhere. The chain sustained itself.",
+        "claimIds": [
+          "oklo.claim.criticality",
+          "oklo.claim.chain"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.7",
+        "type": "factual",
+        "text": "In one studied zone, isotope evidence suggests repeated stops and starts. Researchers infer that heating drove water away; cooling let it return.",
+        "claimIds": [
+          "oklo.claim.cycling"
+        ]
+      },
+      {
+        "id": "oklo.asset.natural-reactors.script.8",
+        "type": "factual",
+        "text": "These were reaction zones in rock. Heat, not electricity. Earth had assembled the fuel, water and geology, long before machinery.",
+        "claimIds": [
+          "oklo.claim.natural",
+          "oklo.claim.heat",
+          "oklo.claim.criticality",
+          "oklo.claim.water"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "oklo.asset.natural-reactors.beat.1",
+      "label": "discovery-to-reconstruction-1",
+      "purpose": "Extraordinary reality immediately, with natural/nonhuman construction scope.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.1"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.2",
+      "label": "discovery-to-reconstruction-2",
+      "purpose": "A small isotope anomaly makes the discovery investigation concrete, without invented suspicion.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.2"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.3",
+      "label": "discovery-to-reconstruction-3",
+      "purpose": "Fission fingerprints establish the past event and create the how-could-rock-sustain-it question.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.3"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.4",
+      "label": "discovery-to-reconstruction-4",
+      "purpose": "Reverse into deep time and connect larger fissile share to concentrated natural deposits.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.4"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.5",
+      "label": "discovery-to-reconstruction-5",
+      "purpose": "Follow one split into a water collision and another split; explain moderation through action.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.5"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.6",
+      "label": "discovery-to-reconstruction-6",
+      "purpose": "Show enough useful neutrons remaining while others escape or are absorbed; sustain, not explode.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.6"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.7",
+      "label": "discovery-to-reconstruction-7",
+      "purpose": "Brief qualified reconstruction in one studied zone; water retreat/return, no universal pulse clock.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.7"
+      ]
+    },
+    {
+      "id": "oklo.asset.natural-reactors.beat.8",
+      "label": "discovery-to-reconstruction-8",
+      "purpose": "Pull out to natural rock and Earth; heat without machinery or electrical output.",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.8"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "oklo.asset.natural-reactors.visual.1",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.1",
+      "objective": "Extraordinary reality immediately, with natural/nonhuman construction scope.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.1"
+      ],
+      "claimIds": [
+        "oklo.claim.natural"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.2",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.2",
+      "objective": "A small isotope anomaly makes the discovery investigation concrete, without invented suspicion.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.2"
+      ],
+      "claimIds": [
+        "oklo.claim.evidence",
+        "oklo.claim.natural"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.3",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.3",
+      "objective": "Fission fingerprints establish the past event and create the how-could-rock-sustain-it question.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.3"
+      ],
+      "claimIds": [
+        "oklo.claim.evidence",
+        "oklo.claim.chain"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.4",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.4",
+      "objective": "Reverse into deep time and connect larger fissile share to concentrated natural deposits.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.4"
+      ],
+      "claimIds": [
+        "oklo.claim.fuel",
+        "oklo.claim.criticality"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.5",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.5",
+      "objective": "Follow one split into a water collision and another split; explain moderation through action.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.5"
+      ],
+      "claimIds": [
+        "oklo.claim.chain",
+        "oklo.claim.water"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.6",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.6",
+      "objective": "Show enough useful neutrons remaining while others escape or are absorbed; sustain, not explode.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.6"
+      ],
+      "claimIds": [
+        "oklo.claim.criticality",
+        "oklo.claim.chain"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.7",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.7",
+      "objective": "Brief qualified reconstruction in one studied zone; water retreat/return, no universal pulse clock.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.7"
+      ],
+      "claimIds": [
+        "oklo.claim.cycling"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    },
+    {
+      "id": "oklo.asset.natural-reactors.visual.8",
+      "narrativeBeatId": "oklo.asset.natural-reactors.beat.8",
+      "objective": "Pull out to natural rock and Earth; heat without machinery or electrical output.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "oklo.asset.natural-reactors.script.8"
+      ],
+      "claimIds": [
+        "oklo.claim.natural",
+        "oklo.claim.heat",
+        "oklo.claim.criticality",
+        "oklo.claim.water"
+      ],
+      "notes": "Original illustrative Earth, sample investigation, symbolic isotope evidence, deep-time deposition, linked neutron/water action and inferred one-zone feedback. No real footage, measured chart or exact particle counts."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Primary af_heart, connected curious sentences at established natural speed; no blanket acceleration or clipped qualifications.",
+    "pronunciationNotes": [
+      "Oklo: OH-kloh. Gabon: guh-BON. Xenon: ZEE-non. uranium-235 and uranium-238 are isotope names."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.8",
+      "reviewSha256": "14396ab11df6bdf9d6d6610592f1d3a9499acd0c45d90204f80610192fbfa029"
+    },
+    "approvedAt": "2026-10-03",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

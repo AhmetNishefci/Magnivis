@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash,loadMediaRegistry} from '../src/artifacts/media';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+import {ownerHandoff} from '../src/workflow/handoff';
+const root=process.cwd(),base='content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2',registry=loadMediaRegistry(root);
+const candidatePath=`${base}/master-candidate-v4.json`,record={path:candidatePath,sha256:mediaHash(candidatePath)};
+const validation=JSON.parse(readFileSync(`${base}/pre-handoff-durability.json`,'utf8')) as {passed:boolean;candidateSha256:string};
+if(!validation.passed||validation.candidateSha256!==record.sha256)throw new Error('Missing exact-candidate durability checkpoint');
+const state=persistCycleEvent(root,loadCycle(root,'cycle.8',registry),{type:'complete-internal',stage:'production',record,at:new Date().toISOString()},registry);
+writeFileSync(`${base}/master-review-controller-handoff.json`,JSON.stringify(ownerHandoff(state,registry),null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({revision:state.revision,stage:state.stage,candidate:state.candidate},null,2));
