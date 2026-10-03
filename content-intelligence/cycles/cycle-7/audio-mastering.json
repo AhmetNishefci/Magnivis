@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-03T15:02:52.553Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/scroll-render.mp4",
+    "sha256": "ad9ba93a28e9ecd059751d4e3e21350fc86909dc9f6f0f5bc46c0e9b60212254",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/sealed-scroll-cycle7-candidate-v1.mp4",
+    "sha256": "d698366f129d1ae66c72504ee0a8d54e2bbf9c31f3ba85e06f8f8658ac074c83"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.62",
+    "input_tp": "-3.90",
+    "input_lra": "2.70",
+    "input_thresh": "-33.96",
+    "output_i": "-19.10",
+    "output_tp": "-2.00",
+    "output_lra": "2.40",
+    "output_thresh": "-29.42",
+    "normalization_type": "dynamic",
+    "target_offset": "0.10"
+  },
+  "gainDb": 1.6999999999999997,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

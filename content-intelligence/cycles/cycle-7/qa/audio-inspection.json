@@ -1,0 +1,426 @@
+{
+  "checkedAt": "2026-10-03T15:04:44.418Z",
+  "masterPath": "artifacts/masters/sealed-scroll-cycle7-candidate-v1.mp4",
+  "masterSha256": "d698366f129d1ae66c72504ee0a8d54e2bbf9c31f3ba85e06f8f8658ac074c83",
+  "method": "Local Whisper tiny.en ASR of each clip and full decoded master, plus independent ffprobe durations; machine corroboration, not human subjective listening. All exact decoded-master sentence intervals also inspected; whole-master recognition is secondary corroboration, never pronunciation/prosody acceptance.",
+  "model": "onnx-community/whisper-tiny.en",
+  "modelSha256": "e93ec822f16a8fd264e7de972ad17d615ea7334b75a52d54c50c2e18dd503a25",
+  "narratorModelSha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478",
+  "semanticUnits": [
+    {
+      "id": "scroll-cue-1",
+      "fullSentence": "This burned scroll was too fragile to open. Scientists read it anyway.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003bc0000] silence_start: 0",
+        "[silencedetect @ 0x600003bc0000] silence_end: 0.3285 | silence_duration: 0.3285",
+        "[silencedetect @ 0x600003bc0000] silence_start: 2.63625",
+        "[silencedetect @ 0x600003bc0000] silence_end: 3.08179 | silence_duration: 0.445542",
+        "[silencedetect @ 0x600003bc0000] silence_start: 4.46333",
+        "[silencedetect @ 0x600003bc0000] silence_end: 4.975 | silence_duration: 0.511667"
+      ]
+    },
+    {
+      "id": "scroll-cue-2",
+      "fullSentence": "The En-Gedi scroll crumbled when it was touched.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003aec000] silence_start: 0",
+        "[silencedetect @ 0x600003aec000] silence_end: 0.333917 | silence_duration: 0.333917",
+        "[silencedetect @ 0x600003aec000] silence_start: 2.56167",
+        "[silencedetect @ 0x600003aec000] silence_end: 3.025 | silence_duration: 0.463333"
+      ]
+    },
+    {
+      "id": "scroll-cue-3",
+      "fullSentence": "Researchers scanned it with X-rays, building a three-dimensional map.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003420720] silence_start: 0",
+        "[silencedetect @ 0x600003420720] silence_end: 0.33575 | silence_duration: 0.33575",
+        "[silencedetect @ 0x600003420720] silence_start: 2.16104",
+        "[silencedetect @ 0x600003420720] silence_end: 2.48933 | silence_duration: 0.328292",
+        "[silencedetect @ 0x600003420720] silence_start: 4.01138",
+        "[silencedetect @ 0x600003420720] silence_end: 4.5 | silence_duration: 0.488625"
+      ]
+    },
+    {
+      "id": "scroll-cue-4",
+      "fullSentence": "Inside that scan, they traced the surviving layers.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000005c8720] silence_start: 0",
+        "[silencedetect @ 0x6000005c8720] silence_end: 0.33925 | silence_duration: 0.33925",
+        "[silencedetect @ 0x6000005c8720] silence_start: 3.18812",
+        "[silencedetect @ 0x6000005c8720] silence_end: 3.65 | silence_duration: 0.461875"
+      ]
+    },
+    {
+      "id": "scroll-cue-5",
+      "fullSentence": "In this scroll, the ink showed up more densely than the parchment.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000003dc720] silence_start: 0",
+        "[silencedetect @ 0x6000003dc720] silence_end: 0.341167 | silence_duration: 0.341167",
+        "[silencedetect @ 0x6000003dc720] silence_start: 3.66167",
+        "[silencedetect @ 0x6000003dc720] silence_end: 4.15 | silence_duration: 0.488333"
+      ]
+    },
+    {
+      "id": "scroll-cue-6",
+      "fullSentence": "They mapped that signal onto digital surfaces, then flattened them into readable images.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002634000] silence_start: 0",
+        "[silencedetect @ 0x600002634000] silence_end: 0.339333 | silence_duration: 0.339333",
+        "[silencedetect @ 0x600002634000] silence_start: 2.699",
+        "[silencedetect @ 0x600002634000] silence_end: 3.13125 | silence_duration: 0.43225",
+        "[silencedetect @ 0x600002634000] silence_start: 5.29692",
+        "[silencedetect @ 0x600002634000] silence_end: 5.775 | silence_duration: 0.478083"
+      ]
+    },
+    {
+      "id": "scroll-cue-7",
+      "fullSentence": "The recovered Hebrew text came from the Book of Leviticus.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000017e4000] silence_start: 0",
+        "[silencedetect @ 0x6000017e4000] silence_end: 0.328583 | silence_duration: 0.328583",
+        "[silencedetect @ 0x6000017e4000] silence_start: 3.39183",
+        "[silencedetect @ 0x6000017e4000] silence_end: 3.85 | silence_duration: 0.458167"
+      ]
+    },
+    {
+      "id": "scroll-cue-8",
+      "fullSentence": "This worked because the ink was detectable in the scan. Different materials need different approaches.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000032f4720] silence_start: 0",
+        "[silencedetect @ 0x6000032f4720] silence_end: 0.324417 | silence_duration: 0.324417",
+        "[silencedetect @ 0x6000032f4720] silence_start: 3.36204",
+        "[silencedetect @ 0x6000032f4720] silence_end: 3.91512 | silence_duration: 0.553083",
+        "[silencedetect @ 0x6000032f4720] silence_start: 6.15333",
+        "[silencedetect @ 0x6000032f4720] silence_end: 6.625 | silence_duration: 0.471667"
+      ]
+    },
+    {
+      "id": "scroll-cue-9",
+      "fullSentence": "They revealed surviving writing without unrolling the fragile original.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003ef8720] silence_start: 0",
+        "[silencedetect @ 0x600003ef8720] silence_end: 0.344042 | silence_duration: 0.344042",
+        "[silencedetect @ 0x600003ef8720] silence_start: 1.8855",
+        "[silencedetect @ 0x600003ef8720] silence_end: 2.28308 | silence_duration: 0.397583",
+        "[silencedetect @ 0x600003ef8720] silence_start: 4.41562",
+        "[silencedetect @ 0x600003ef8720] silence_end: 4.95 | silence_duration: 0.534375"
+      ]
+    }
+  ],
+  "generationBoundaryReview": {
+    "practice": "Complete semantic sentences generated together; caption line breaks never create TTS boundaries. No text substitutions; No phonetic substitution, global narrator modification or trimming; complete source clips retained.",
+    "limitation": "Acoustic silence and ASR are machine measurements. Sentence-internal prosody, correct stress and pronunciation remain listening judgments at master review."
+  },
+  "results": [
+    {
+      "id": "scroll-cue-1",
+      "exactText": "This burned scroll was too fragile to open. Scientists read it anyway.",
+      "recognized": " This burn scroll was too fragile to open. Scientists read it anyway.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " This burn scroll was too fragile to open."
+        },
+        {
+          "timestamp": [
+            3,
+            5
+          ],
+          "text": " Scientists read it anyway."
+        }
+      ],
+      "duration": 4.975,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-2",
+      "exactText": "The En-Gedi scroll crumbled when it was touched.",
+      "recognized": " The end-jettie scroll crumbled when it was touched.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " The end-jettie scroll crumbled when it was touched."
+        }
+      ],
+      "duration": 3.025,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-3",
+      "exactText": "Researchers scanned it with X-rays, building a three-dimensional map.",
+      "recognized": " Researchers scanned it with X-rays, building a three-dimensional map.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " Researchers scanned it with X-rays, building a three-dimensional map."
+        }
+      ],
+      "duration": 4.5,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-4",
+      "exactText": "Inside that scan, they traced the surviving layers.",
+      "recognized": " Inside that scan, they trace the surviving layers.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Inside that scan, they trace the surviving layers."
+        }
+      ],
+      "duration": 3.65,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-5",
+      "exactText": "In this scroll, the ink showed up more densely than the parchment.",
+      "recognized": " In this scroll, the ink showed up more densely than the parchment.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " In this scroll, the ink showed up more densely than the parchment."
+        }
+      ],
+      "duration": 4.15,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-6",
+      "exactText": "They mapped that signal onto digital surfaces, then flattened them into readable images.",
+      "recognized": " They mapped that signal onto digital surfaces, then flattened them into readable images.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5.36
+          ],
+          "text": " They mapped that signal onto digital surfaces, then flattened them into readable images."
+        }
+      ],
+      "duration": 5.775,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-7",
+      "exactText": "The recovered Hebrew text came from the Book of Leviticus.",
+      "recognized": " The recovered Hebrew text came from the book of Leviticus.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " The recovered Hebrew text came from the book of Leviticus."
+        }
+      ],
+      "duration": 3.85,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-8",
+      "exactText": "This worked because the ink was detectable in the scan. Different materials need different approaches.",
+      "recognized": " This worked because the ink was detectable in the scan. Different materials need different approaches.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.68
+          ],
+          "text": " This worked because the ink was detectable in the scan."
+        },
+        {
+          "timestamp": [
+            3.68,
+            6.48
+          ],
+          "text": " Different materials need different approaches."
+        }
+      ],
+      "duration": 6.625,
+      "sampleRate": 24000
+    },
+    {
+      "id": "scroll-cue-9",
+      "exactText": "They revealed surviving writing without unrolling the fragile original.",
+      "recognized": " They revealed surviving writing without unrolling the fragile original.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.5
+          ],
+          "text": " They revealed surviving writing without unrolling the fragile original."
+        }
+      ],
+      "duration": 4.95,
+      "sampleRate": 24000
+    }
+  ],
+  "actualMasterCues": [
+    {
+      "id": "scroll-cue-1",
+      "exactText": "This burned scroll was too fragile to open. Scientists read it anyway.",
+      "recognized": " This burn scroll was too fragile to open. Scientists read it anyway.",
+      "start": 0,
+      "duration": 4.975
+    },
+    {
+      "id": "scroll-cue-2",
+      "exactText": "The En-Gedi scroll crumbled when it was touched.",
+      "recognized": " The end-jettie scroll crumbled when it was touched.",
+      "start": 5.366666666666666,
+      "duration": 3.025
+    },
+    {
+      "id": "scroll-cue-3",
+      "exactText": "Researchers scanned it with X-rays, building a three-dimensional map.",
+      "recognized": " Researchers scanned it with X-rays, building a three-dimensional map.",
+      "start": 8.6,
+      "duration": 4.5
+    },
+    {
+      "id": "scroll-cue-4",
+      "exactText": "Inside that scan, they traced the surviving layers.",
+      "recognized": " Inside that scan, they trace the surviving layers.",
+      "start": 13.3,
+      "duration": 3.65
+    },
+    {
+      "id": "scroll-cue-5",
+      "exactText": "In this scroll, the ink showed up more densely than the parchment.",
+      "recognized": " In this scroll, the ink showed up more densely than the parchment.",
+      "start": 17.166666666666668,
+      "duration": 4.15
+    },
+    {
+      "id": "scroll-cue-6",
+      "exactText": "They mapped that signal onto digital surfaces, then flattened them into readable images.",
+      "recognized": " They mapped that signal onto digital surfaces, then flattened them into readable images.",
+      "start": 21.533333333333335,
+      "duration": 5.775
+    },
+    {
+      "id": "scroll-cue-7",
+      "exactText": "The recovered Hebrew text came from the Book of Leviticus.",
+      "recognized": " The recovered Hebrew text came from the book of Leviticus.",
+      "start": 27.7,
+      "duration": 3.85
+    },
+    {
+      "id": "scroll-cue-8",
+      "exactText": "This worked because the ink was detectable in the scan. Different materials need different approaches.",
+      "recognized": " This worked because the ink was detectable in the scan. Different materials need different approaches.",
+      "start": 31.766666666666666,
+      "duration": 6.625
+    },
+    {
+      "id": "scroll-cue-9",
+      "exactText": "They revealed surviving writing without unrolling the fragile original.",
+      "recognized": " They revealed surviving writing, without unrolling the fragile original.",
+      "start": 38.6,
+      "duration": 4.95
+    }
+  ],
+  "completeMasterRecognition": {
+    "text": " This burned scroll was too fragile to open. Scientists read it anyway. The end-getty scroll crumbled when it was touched. Researchers scanned it with X-rays building a three-dimensional map. Inside that scan, they traced the surviving layers. In this scroll, the ink showed up more densely than the parchment. They mapped that signal onto digital surfaces, then flattened them into readable images. The recovered Hebrew text came from the book of Leviticus. This worked because the ink was detectable in the scan. Different materials need different approaches. They revealed surviving writing without unrolling the fragile original.",
+    "chunks": [
+      {
+        "timestamp": [
+          0,
+          3
+        ],
+        "text": " This burned scroll was too fragile to open."
+      },
+      {
+        "timestamp": [
+          3,
+          5
+        ],
+        "text": " Scientists read it anyway."
+      },
+      {
+        "timestamp": [
+          5,
+          9
+        ],
+        "text": " The end-getty scroll crumbled when it was touched."
+      },
+      {
+        "timestamp": [
+          9,
+          13
+        ],
+        "text": " Researchers scanned it with X-rays building a three-dimensional map."
+      },
+      {
+        "timestamp": [
+          13,
+          20
+        ],
+        "text": " Inside that scan, they traced the surviving layers. In this scroll, the ink showed up more densely"
+      },
+      {
+        "timestamp": [
+          20,
+          25.76
+        ],
+        "text": " than the parchment. They mapped that signal onto digital surfaces, then flattened them into"
+      },
+      {
+        "timestamp": [
+          25.76,
+          32.08
+        ],
+        "text": " readable images. The recovered Hebrew text came from the book of Leviticus."
+      },
+      {
+        "timestamp": [
+          32.08,
+          35.68
+        ],
+        "text": " This worked because the ink was detectable in the scan."
+      },
+      {
+        "timestamp": [
+          35.68,
+          38.92
+        ],
+        "text": " Different materials need different approaches."
+      },
+      {
+        "timestamp": [
+          38.92,
+          43.12
+        ],
+        "text": " They revealed surviving writing without unrolling the fragile original."
+      }
+    ]
+  },
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -21.9 LUFS\n    Threshold: -32.2 LUFS\n\n  Loudness range:\n    LRA:         2.2 LU\n    Threshold: -42.8 LUFS\n    LRA low:   -23.9 LUFS\n    LRA high:  -21.7 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+  "subjectiveListening": "Owner master review: voice naturalness, En-Gedi and Leviticus pronunciation, complete sentence prosody and semantic contrast; ASR cannot establish pronunciation or naturalness."
+}

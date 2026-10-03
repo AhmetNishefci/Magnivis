@@ -1,0 +1,858 @@
+{
+  "draftPackage": {
+    "id": "sealed-scroll",
+    "revision": 1,
+    "topic": "Reading a burned scroll without physically opening it",
+    "centralQuestion": "How can writing be read inside a scroll too fragile to open?",
+    "taxonomy": {
+      "pillar": "interdisciplinary",
+      "domains": [
+        "computational-imaging",
+        "cultural-preservation",
+        "archaeology"
+      ],
+      "topics": [
+        "en-gedi",
+        "virtual-unwrapping",
+        "signal-provenance"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "A detectable ink signal and traced internal surfaces can be mapped into readable digital images while leaving the fragile original rolled up.",
+    "viewerPayoff": "Understand the distinction between physically opening a page and computationally locating, texturing and flattening its surviving surface.",
+    "sources": [
+      {
+        "id": "source.sealed-scroll.seales2016",
+        "organization": "Seales, Parker, Segal, Tov, Shor and Porath / Science Advances",
+        "title": "From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi",
+        "sourceType": "peer-reviewed",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5031465/",
+        "retrieved": "2026-10-03",
+        "notes": "Actual full article body inspected as parsed text on 2026-10-03; not raw data, supplementary material or an independent replication. Figure captions inspected, not figure image pixels; figures and artifact photograph not used as production assets. CC BY-NC article is research consultation only; no image/figure copying. Authors are participants; correlated university account does not add independent corroboration."
+      },
+      {
+        "id": "source.sealed-scroll.uk-project",
+        "organization": "University of Kentucky / project investigators",
+        "title": "Living Virtually: Creating and Intervacing Digital Surrogates of Textual Data Embedded (Hidden) in Cultural Heritage Artifacts",
+        "sourceType": "university",
+        "url": "https://scholars.uky.edu/en/projects/living-virtually-creating-and-intervacing-digital-surrogates-of-t/",
+        "retrieved": "2026-10-03",
+        "notes": "Actual project-description body inspected on 2026-10-03; source is correlated with the original team. Historical Herculaneum limitations do not describe 2026 progress; no current Herculaneum claim selected."
+      }
+    ],
+    "claims": [
+      {
+        "id": "sealed-scroll.claim.fragile",
+        "statement": "The burned En-Gedi scroll was too fragile to physically open safely.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Fragile conservation object; noninvasive scanning still required careful handling."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Fragile conservation object; noninvasive scanning still required careful handling."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.damage",
+        "statement": "The charred En-Gedi fragments continued to disintegrate when touched.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Reported condition of this particular material, not all burned manuscripts."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Reported condition of this particular material, not all burned manuscripts."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.scan",
+        "statement": "Researchers used X-ray micro-CT to acquire a three-dimensional volume of the En-Gedi scroll.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "A scan is not an instant readable photograph of a closed page."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "A scan is not an instant readable photograph of a closed page."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.surfaces",
+        "statement": "Researchers traced and modeled surviving parchment surfaces within the scan.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Complex piecewise segmentation, not automatic perfect detection of every sheet."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Complex piecewise segmentation, not automatic perfect detection of every sheet."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.density",
+        "statement": "The En-Gedi ink responded more densely than surrounding materials in the micro-CT scan.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Composition was not chemically established; do not assert iron or lead as a measured fact."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Composition was not chemically established; do not assert iron or lead as a measured fact."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.mapping",
+        "statement": "The pipeline assigned scan intensities to modeled surfaces and flattened them into readable images.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Algorithmic approximations and merge steps omitted from animation but not denied."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Algorithmic approximations and merge steps omitted from animation but not denied."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.text",
+        "statement": "The recovered Hebrew text was identified as part of the Book of Leviticus.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "No superlative, age claim, religious proof or complete original manuscript claim."
+          },
+          {
+            "sourceId": "source.sealed-scroll.uk-project",
+            "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+            "notes": "No superlative, age claim, religious proof or complete original manuscript claim."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "No superlative, age claim, religious proof or complete original manuscript claim."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.closed",
+        "statement": "The En-Gedi text was recovered without physically unrolling the scroll.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Does not mean never transported or touched."
+          },
+          {
+            "sourceId": "source.sealed-scroll.uk-project",
+            "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+            "notes": "Does not mean never transported or touched."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Does not mean never transported or touched."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.conditional",
+        "statement": "Virtual unwrapping requires a scan that makes the writing detectable.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Not a universal scanner for every ink and material."
+          },
+          {
+            "sourceId": "source.sealed-scroll.uk-project",
+            "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+            "notes": "Not a universal scanner for every ink and material."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Not a universal scanner for every ink and material."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "sealed-scroll.claim.metal-certain",
+        "statement": "The ink was proven to contain iron.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "notes": "Excluded: paper infers possible metal, chemistry remains unknown."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Excluded: paper infers possible metal, chemistry remains unknown."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "sealed-scroll.caveat.model",
+        "statement": "Original schematic layers and sample marks, not the actual scan, measured geometry, Hebrew transcription, laboratory footage or repaired parchment.",
+        "claimIds": [
+          "sealed-scroll.claim.fragile",
+          "sealed-scroll.claim.damage",
+          "sealed-scroll.claim.scan",
+          "sealed-scroll.claim.surfaces",
+          "sealed-scroll.claim.density",
+          "sealed-scroll.claim.mapping",
+          "sealed-scroll.claim.text",
+          "sealed-scroll.claim.closed",
+          "sealed-scroll.claim.conditional"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "sealed-scroll.hook.closed",
+        "archetype": "impossible-task-resolved",
+        "text": "This burned scroll was too fragile to open. Scientists read it anyway.",
+        "viewerPromise": "Resolve how surviving text can be accessed without physical unrolling.",
+        "claimIds": [
+          "sealed-scroll.claim.fragile",
+          "sealed-scroll.claim.closed"
+        ]
+      },
+      {
+        "id": "sealed-scroll.hook.signal",
+        "archetype": "hidden-signal",
+        "text": "The page is still rolled up. The readable image is not.",
+        "viewerPromise": "Explain the geometric transformation between object and image.",
+        "claimIds": [
+          "sealed-scroll.claim.mapping",
+          "sealed-scroll.claim.closed"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "sealed-scroll.narrative.surface",
+        "title": "Work on the digital surface",
+        "description": "Obstacle, volume, surface, contrast, flattening, result and limitation.",
+        "claimIds": [
+          "sealed-scroll.claim.fragile",
+          "sealed-scroll.claim.damage",
+          "sealed-scroll.claim.scan",
+          "sealed-scroll.claim.surfaces",
+          "sealed-scroll.claim.density",
+          "sealed-scroll.claim.mapping",
+          "sealed-scroll.claim.text",
+          "sealed-scroll.claim.closed",
+          "sealed-scroll.claim.conditional"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "sealed-scroll.visual.continuity",
+        "title": "Follow one marked layer",
+        "description": "Same illustrative marks remain attached through curved surface to flat image; original remains closed.",
+        "claimIds": [
+          "sealed-scroll.claim.fragile",
+          "sealed-scroll.claim.damage",
+          "sealed-scroll.claim.scan",
+          "sealed-scroll.claim.surfaces",
+          "sealed-scroll.claim.density",
+          "sealed-scroll.claim.mapping",
+          "sealed-scroll.claim.text",
+          "sealed-scroll.claim.closed",
+          "sealed-scroll.claim.conditional"
+        ]
+      }
+    ],
+    "relatedQuestions": [
+      "How can extracted letters be traced back to scan data?",
+      "Why do different inks require different imaging?"
+    ],
+    "followUpOpportunities": [
+      "A separately researched Herculaneum contrast and uncertainty story."
+    ],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "sealed-scroll.asset.read-without-opening",
+    "revision": 1,
+    "knowledgePackageId": "sealed-scroll",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Understand the distinction between physically opening a page and computationally locating, texturing and flattening its surviving surface.",
+    "storyAngle": "Access information by transforming its digital carrier, without opening the fragile physical one.",
+    "hookId": "sealed-scroll.hook.closed",
+    "selectedClaimIds": [
+      "sealed-scroll.claim.fragile",
+      "sealed-scroll.claim.damage",
+      "sealed-scroll.claim.scan",
+      "sealed-scroll.claim.surfaces",
+      "sealed-scroll.claim.density",
+      "sealed-scroll.claim.mapping",
+      "sealed-scroll.claim.text",
+      "sealed-scroll.claim.closed",
+      "sealed-scroll.claim.conditional"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 35,
+      "maximum": 75
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.1",
+          "type": "factual",
+          "text": "This burned scroll was too fragile to open. Scientists read it anyway.",
+          "claimIds": [
+            "sealed-scroll.claim.fragile",
+            "sealed-scroll.claim.closed"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.2",
+          "type": "factual",
+          "text": "The En-Gedi scroll crumbled when it was touched.",
+          "claimIds": [
+            "sealed-scroll.claim.damage"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.3",
+          "type": "factual",
+          "text": "Researchers scanned it with X-rays, building a three-dimensional map.",
+          "claimIds": [
+            "sealed-scroll.claim.scan"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.4",
+          "type": "factual",
+          "text": "Inside that scan, they traced the surviving layers.",
+          "claimIds": [
+            "sealed-scroll.claim.surfaces"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.5",
+          "type": "factual",
+          "text": "In this scroll, the ink showed up more densely than the parchment.",
+          "claimIds": [
+            "sealed-scroll.claim.density"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.6",
+          "type": "factual",
+          "text": "They mapped that signal onto digital surfaces, then flattened them into readable images.",
+          "claimIds": [
+            "sealed-scroll.claim.mapping"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.7",
+          "type": "factual",
+          "text": "The recovered Hebrew text came from the Book of Leviticus.",
+          "claimIds": [
+            "sealed-scroll.claim.text"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.8",
+          "type": "factual",
+          "text": "This worked because the ink was detectable in the scan. Different materials need different approaches.",
+          "claimIds": [
+            "sealed-scroll.claim.conditional"
+          ]
+        },
+        {
+          "id": "sealed-scroll.asset.read-without-opening.script.9",
+          "type": "factual",
+          "text": "They revealed surviving writing without unrolling the fragile original.",
+          "claimIds": [
+            "sealed-scroll.claim.closed"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.1",
+        "label": "task",
+        "purpose": "Establish impossible-seeming task with immediate truthful resolution promise.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.1"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.2",
+        "label": "fragility",
+        "purpose": "Explain why physical opening is unavailable.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.2"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.3",
+        "label": "volume",
+        "purpose": "Change the object of work from artifact to volume.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.3"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.4",
+        "label": "surface",
+        "purpose": "Trace the hidden page, not a generic see-through photograph.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.4"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.5",
+        "label": "contrast",
+        "purpose": "Show ink contrast without asserting chemical composition.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.5"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.6",
+        "label": "flatten",
+        "purpose": "Carry the same sample marks through surface extraction and flattening.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.6"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.7",
+        "label": "result",
+        "purpose": "Identify result without theology, invented transcription or superlatives.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.7"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.8",
+        "label": "boundary",
+        "purpose": "Retain material-dependent boundary.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.8"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.beat.9",
+        "label": "return",
+        "purpose": "Return to unchanged closed artifact and digital image together.",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.9"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.1",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.1",
+        "objective": "Establish impossible-seeming task with immediate truthful resolution promise.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.1"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.fragile",
+          "sealed-scroll.claim.closed"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.2",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.2",
+        "objective": "Explain why physical opening is unavailable.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.2"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.damage"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.3",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.3",
+        "objective": "Change the object of work from artifact to volume.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.3"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.scan"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.4",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.4",
+        "objective": "Trace the hidden page, not a generic see-through photograph.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.4"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.surfaces"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.5",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.5",
+        "objective": "Show ink contrast without asserting chemical composition.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.5"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.density"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.6",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.6",
+        "objective": "Carry the same sample marks through surface extraction and flattening.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.6"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.mapping"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.7",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.7",
+        "objective": "Identify result without theology, invented transcription or superlatives.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.7"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.text"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.8",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.8",
+        "objective": "Retain material-dependent boundary.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.8"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.conditional"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.visual.9",
+        "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.9",
+        "objective": "Return to unchanged closed artifact and digital image together.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "sealed-scroll.asset.read-without-opening.script.9"
+        ],
+        "claimIds": [
+          "sealed-scroll.claim.closed"
+        ],
+        "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Primary Kokoro af_heart; curious clear delivery, connected sentences; no mystical, religious or thriller tone.",
+      "pronunciationNotes": [
+        "En-Gedi: en GEH-dee; Leviticus: luh-VIT-ih-kus; X-rays and three-dimensional."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.7",
+    "topicCandidateId": "sealed-scroll",
+    "enteredAt": "2026-10-03T14:54:02.383Z",
+    "reviewer": "Codex session — internal evidence review, not Ahmet",
+    "packageSha256": "0bb9b5eba93aade7dc83e3f08995e119352053398c1df2b74f80f930e3867cef",
+    "assetSha256": "6ab26af5f47ace09cbd73f2db92b9d1ab21c0fd83330857103c0a1f565757679",
+    "scriptSha256": "7e9e9194c85beebcdb3d43078209b1101325f6694579420d4136f5f2a2b0fd94",
+    "inspections": [
+      {
+        "sourceId": "source.sealed-scroll.seales2016",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion"
+        ],
+        "supportsClaimIds": [
+          "sealed-scroll.claim.fragile",
+          "sealed-scroll.claim.damage",
+          "sealed-scroll.claim.scan",
+          "sealed-scroll.claim.surfaces",
+          "sealed-scroll.claim.density",
+          "sealed-scroll.claim.mapping",
+          "sealed-scroll.claim.text",
+          "sealed-scroll.claim.closed",
+          "sealed-scroll.claim.conditional"
+        ],
+        "limitations": [
+          "Actual full article body inspected as parsed text on 2026-10-03; not raw data, supplementary material or an independent replication.",
+          "Figure captions inspected, not figure image pixels; figures and artifact photograph not used as production assets.",
+          "CC BY-NC article is research consultation only; no image/figure copying.",
+          "Authors are participants; correlated university account does not add independent corroboration."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-7/sources/seales2016-inspection.json",
+          "sha256": "ba1b86f508961cc3745b9918729e98384df8e128e00cbab42bdab124a0c0f1d8"
+        },
+        "sourceQualityRationale": "Original peer-reviewed methods/results paper with explicit material and provenance constraints; adequate for narrow method account, not an independently replicated universal ability."
+      },
+      {
+        "sourceId": "source.sealed-scroll.uk-project",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion"
+        ],
+        "supportsClaimIds": [
+          "sealed-scroll.claim.text",
+          "sealed-scroll.claim.closed",
+          "sealed-scroll.claim.conditional"
+        ],
+        "limitations": [
+          "Actual project-description body inspected on 2026-10-03; source is correlated with the original team.",
+          "Historical Herculaneum limitations do not describe 2026 progress; no current Herculaneum claim selected."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-7/sources/uk-project-inspection.json",
+          "sha256": "bcc6f91e0ce40f3560bd4747d350a05c4ee4c71e013de946b6c35607de6c5728"
+        },
+        "sourceQualityRationale": "Participant institution’s technical project account qualifies material dependence; correlated with paper, not independent corroboration."
+      }
+    ],
+    "claims": [
+      {
+        "id": "sealed-scroll.claim.fragile",
+        "statementSha256": "281fb0010b1d158a14071ca6b70b13a5cbe74611f7928fe6ffcb76eec5ebaa95",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "Fragile conservation object; noninvasive scanning still required careful handling.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.damage",
+        "statementSha256": "9ae13f15ad08fb9d80013b1601071da3042a9e433d52817a65dfc58b966d8f81",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "Reported condition of this particular material, not all burned manuscripts.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.scan",
+        "statementSha256": "9b4860b74258cc0581c2818e0ae9ac83c5df3ec612ad3062c03487a75bad65ab",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "A scan is not an instant readable photograph of a closed page.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.surfaces",
+        "statementSha256": "7aa60ecb359e04497dd0099a32b5fa7a0dd0e436e0b86cb873689ee566ccd40b",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "Complex piecewise segmentation, not automatic perfect detection of every sheet.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.density",
+        "statementSha256": "c7ff41177ef50575077d9c3384585162dfe527bf7ce14a5336d828420132b1c9",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "Composition was not chemically established; do not assert iron or lead as a measured fact.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.mapping",
+        "statementSha256": "a0445d8e9075e405de50602adf4daafa14fb8597bcecd7c1d2c4a3f49f2e6e33",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "Algorithmic approximations and merge steps omitted from animation but not denied.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.text",
+        "statementSha256": "f5f52d55a818e8ef1c2389ccdc4a1d165d878ae02f701a486ab330655b3dce77",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "No superlative, age claim, religious proof or complete original manuscript claim.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.sealed-scroll.uk-project",
+            "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+            "assessment": "No superlative, age claim, religious proof or complete original manuscript claim.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.closed",
+        "statementSha256": "aa9be4bc0eb7a63269844a8f1157f0b47d0a24d5dff65c94ffb47595bfc77da0",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "Does not mean never transported or touched.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.sealed-scroll.uk-project",
+            "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+            "assessment": "Does not mean never transported or touched.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.conditional",
+        "statementSha256": "b48a168883e06725619379bcfa001695d12fccfa0ea98cd83703732d7d2bc17b",
+        "disposition": "verify",
+        "rationale": "Exact narrow wording traced to inspected primary methods/results; scope preserved in script, visual disclosure and caveats.",
+        "evidence": [
+          {
+            "sourceId": "source.sealed-scroll.seales2016",
+            "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+            "assessment": "Not a universal scanner for every ink and material.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.sealed-scroll.uk-project",
+            "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+            "assessment": "Not a universal scanner for every ink and material.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "sealed-scroll.claim.metal-certain",
+        "statementSha256": "f3914ef37c2398b1cda71755f32f79880909e18a6fe119978e01e7eee539d949",
+        "disposition": "exclude",
+        "rationale": "Composition remains inferred; unsupported certainty excluded.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "The actual artifact never physically unrolls in the animation.",
+      "Marks are illustrative, not Hebrew transcription or original scan data.",
+      "The method needs detectable surviving ink; no guessing or resurrection of destroyed writing.",
+      "Higher scan density is observed; ink metal identity is not established.",
+      "No Herculaneum, exact age, oldest-Bible, theological or safety claim."
+    ],
+    "comprehensionReview": "Task has a concrete obstacle; volume leads to traced surface, contrast is carried onto that surface and flattened. Return distinguishes unchanged object from readable image. Material boundary prevents universal magic-scanner takeaway.",
+    "rightsReview": "Original SVG geometry and illustrative marks only. Research figures have noncommercial terms and are never reused. Existing OFL Manrope and local Kokoro terms; no purchases or new paid services.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Technical conservation-method explanation, neutral identification of documented text. No religious/political verdict, high-care medical issue, unresolved rights or material central evidence conflict."
+    },
+    "exceptionalConditions": []
+  }
+}

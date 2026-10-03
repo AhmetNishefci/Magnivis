@@ -1,0 +1,393 @@
+{
+  "id": "sealed-scroll",
+  "revision": 1,
+  "topic": "Reading a burned scroll without physically opening it",
+  "centralQuestion": "How can writing be read inside a scroll too fragile to open?",
+  "taxonomy": {
+    "pillar": "interdisciplinary",
+    "domains": [
+      "computational-imaging",
+      "cultural-preservation",
+      "archaeology"
+    ],
+    "topics": [
+      "en-gedi",
+      "virtual-unwrapping",
+      "signal-provenance"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "A detectable ink signal and traced internal surfaces can be mapped into readable digital images while leaving the fragile original rolled up.",
+  "viewerPayoff": "Understand the distinction between physically opening a page and computationally locating, texturing and flattening its surviving surface.",
+  "sources": [
+    {
+      "id": "source.sealed-scroll.seales2016",
+      "organization": "Seales, Parker, Segal, Tov, Shor and Porath / Science Advances",
+      "title": "From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi",
+      "sourceType": "peer-reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5031465/",
+      "retrieved": "2026-10-03",
+      "notes": "Actual full article body inspected as parsed text on 2026-10-03; not raw data, supplementary material or an independent replication. Figure captions inspected, not figure image pixels; figures and artifact photograph not used as production assets. CC BY-NC article is research consultation only; no image/figure copying. Authors are participants; correlated university account does not add independent corroboration."
+    },
+    {
+      "id": "source.sealed-scroll.uk-project",
+      "organization": "University of Kentucky / project investigators",
+      "title": "Living Virtually: Creating and Intervacing Digital Surrogates of Textual Data Embedded (Hidden) in Cultural Heritage Artifacts",
+      "sourceType": "university",
+      "url": "https://scholars.uky.edu/en/projects/living-virtually-creating-and-intervacing-digital-surrogates-of-t/",
+      "retrieved": "2026-10-03",
+      "notes": "Actual project-description body inspected on 2026-10-03; source is correlated with the original team. Historical Herculaneum limitations do not describe 2026 progress; no current Herculaneum claim selected."
+    }
+  ],
+  "claims": [
+    {
+      "id": "sealed-scroll.claim.fragile",
+      "statement": "The burned En-Gedi scroll was too fragile to physically open safely.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Fragile conservation object; noninvasive scanning still required careful handling."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Fragile conservation object; noninvasive scanning still required careful handling."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.damage",
+      "statement": "The charred En-Gedi fragments continued to disintegrate when touched.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Reported condition of this particular material, not all burned manuscripts."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Reported condition of this particular material, not all burned manuscripts."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.scan",
+      "statement": "Researchers used X-ray micro-CT to acquire a three-dimensional volume of the En-Gedi scroll.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "A scan is not an instant readable photograph of a closed page."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "A scan is not an instant readable photograph of a closed page."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.surfaces",
+      "statement": "Researchers traced and modeled surviving parchment surfaces within the scan.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Complex piecewise segmentation, not automatic perfect detection of every sheet."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Complex piecewise segmentation, not automatic perfect detection of every sheet."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.density",
+      "statement": "The En-Gedi ink responded more densely than surrounding materials in the micro-CT scan.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Composition was not chemically established; do not assert iron or lead as a measured fact."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Composition was not chemically established; do not assert iron or lead as a measured fact."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.mapping",
+      "statement": "The pipeline assigned scan intensities to modeled surfaces and flattened them into readable images.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Algorithmic approximations and merge steps omitted from animation but not denied."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Algorithmic approximations and merge steps omitted from animation but not denied."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.text",
+      "statement": "The recovered Hebrew text was identified as part of the Book of Leviticus.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "No superlative, age claim, religious proof or complete original manuscript claim."
+        },
+        {
+          "sourceId": "source.sealed-scroll.uk-project",
+          "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+          "notes": "No superlative, age claim, religious proof or complete original manuscript claim."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No superlative, age claim, religious proof or complete original manuscript claim."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.closed",
+      "statement": "The En-Gedi text was recovered without physically unrolling the scroll.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Does not mean never transported or touched."
+        },
+        {
+          "sourceId": "source.sealed-scroll.uk-project",
+          "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+          "notes": "Does not mean never transported or touched."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Does not mean never transported or touched."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.conditional",
+      "statement": "Virtual unwrapping requires a scan that makes the writing detectable.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Not a universal scanner for every ink and material."
+        },
+        {
+          "sourceId": "source.sealed-scroll.uk-project",
+          "locator": "Project description: Intact Scrolls; True Born-Digital Text; ink detectability discussion",
+          "notes": "Not a universal scanner for every ink and material."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Not a universal scanner for every ink and material."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.7",
+          "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "sealed-scroll.claim.metal-certain",
+      "statement": "The ink was proven to contain iron.",
+      "evidence": [
+        {
+          "sourceId": "source.sealed-scroll.seales2016",
+          "locator": "Introduction; Virtual unwrapping; The volumetric scan; Segmentation; Texturing; Flattening; Results; Discussion",
+          "notes": "Excluded: paper infers possible metal, chemistry remains unknown."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Excluded: paper infers possible metal, chemistry remains unknown."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "sealed-scroll.caveat.model",
+      "statement": "Original schematic layers and sample marks, not the actual scan, measured geometry, Hebrew transcription, laboratory footage or repaired parchment.",
+      "claimIds": [
+        "sealed-scroll.claim.fragile",
+        "sealed-scroll.claim.damage",
+        "sealed-scroll.claim.scan",
+        "sealed-scroll.claim.surfaces",
+        "sealed-scroll.claim.density",
+        "sealed-scroll.claim.mapping",
+        "sealed-scroll.claim.text",
+        "sealed-scroll.claim.closed",
+        "sealed-scroll.claim.conditional"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "sealed-scroll.hook.closed",
+      "archetype": "impossible-task-resolved",
+      "text": "This burned scroll was too fragile to open. Scientists read it anyway.",
+      "viewerPromise": "Resolve how surviving text can be accessed without physical unrolling.",
+      "claimIds": [
+        "sealed-scroll.claim.fragile",
+        "sealed-scroll.claim.closed"
+      ]
+    },
+    {
+      "id": "sealed-scroll.hook.signal",
+      "archetype": "hidden-signal",
+      "text": "The page is still rolled up. The readable image is not.",
+      "viewerPromise": "Explain the geometric transformation between object and image.",
+      "claimIds": [
+        "sealed-scroll.claim.mapping",
+        "sealed-scroll.claim.closed"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "sealed-scroll.narrative.surface",
+      "title": "Work on the digital surface",
+      "description": "Obstacle, volume, surface, contrast, flattening, result and limitation.",
+      "claimIds": [
+        "sealed-scroll.claim.fragile",
+        "sealed-scroll.claim.damage",
+        "sealed-scroll.claim.scan",
+        "sealed-scroll.claim.surfaces",
+        "sealed-scroll.claim.density",
+        "sealed-scroll.claim.mapping",
+        "sealed-scroll.claim.text",
+        "sealed-scroll.claim.closed",
+        "sealed-scroll.claim.conditional"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "sealed-scroll.visual.continuity",
+      "title": "Follow one marked layer",
+      "description": "Same illustrative marks remain attached through curved surface to flat image; original remains closed.",
+      "claimIds": [
+        "sealed-scroll.claim.fragile",
+        "sealed-scroll.claim.damage",
+        "sealed-scroll.claim.scan",
+        "sealed-scroll.claim.surfaces",
+        "sealed-scroll.claim.density",
+        "sealed-scroll.claim.mapping",
+        "sealed-scroll.claim.text",
+        "sealed-scroll.claim.closed",
+        "sealed-scroll.claim.conditional"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "How can extracted letters be traced back to scan data?",
+    "Why do different inks require different imaging?"
+  ],
+  "followUpOpportunities": [
+    "A separately researched Herculaneum contrast and uncertainty story."
+  ],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.7",
+      "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+    },
+    "approvedAt": "2026-10-03",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

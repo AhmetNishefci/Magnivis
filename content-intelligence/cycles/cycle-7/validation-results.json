@@ -1,0 +1,62 @@
+{
+  "enteredAt": "2026-10-03T15:14:55.802943Z",
+  "nodeVersion": "22.23.3",
+  "pnpmCheck": {
+    "passed": true,
+    "testFiles": 49,
+    "tests": 468,
+    "typecheck": "passed",
+    "lint": "passed",
+    "diffHygiene": "passed",
+    "afterGitTracking": true,
+    "earlierFailure": "One historical Chocolate finalization test exceeded unchanged 5000ms timeout while concurrent full render ran; idle full checks passed twice. No test, timeout or validation bypass."
+  },
+  "render": {
+    "smoke": "passed 90 frames",
+    "full": "passed 1318 frames",
+    "qaCommand": "pnpm qa sealed-scroll",
+    "technical": "passed",
+    "browserSamples": 54,
+    "captionMidpoints": 23,
+    "fullDecode": "passed",
+    "contactSheet": "inspected",
+    "audio": "exact-master source intervals recognized; names/prosody remain owner listening judgment"
+  },
+  "durability": {
+    "passed": true,
+    "canonicalPayloads": 554,
+    "newPayloads": 37,
+    "durableArtifactCount": 731,
+    "frozenLegacyBinaryPaths": 442,
+    "explicitExceptions": 0,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "git": {
+    "startingHead": "0317ff08172eee04e0191ca911ea40429de02f0f",
+    "startingWorkingTree": "clean",
+    "newWork": "Cycle #7 canonical review records/media and scoped production/metadata only; staged for local durability commit",
+    "remoteHead": "not re-queried; origin/main remains checkpoint locally",
+    "push": "not performed",
+    "commitIdentity": "Commit containing this record is reported in final session response, avoiding circular self-commit claims."
+  },
+  "secretScan": {
+    "passed": true,
+    "credentialSignatures": 0,
+    "checked": "Staged text for private-key / provider-token / AWS access-key signatures; filenames exclude environment files, caches and dependencies. No secret values logged. Scope is bounded, not exhaustive."
+  },
+  "currentState": {
+    "cycleId": "cycle.7",
+    "revision": 5,
+    "stage": "master-review",
+    "next": "owner exact-master decision",
+    "masterDecision": null,
+    "publicationDecision": null,
+    "externalActions": []
+  },
+  "sandboxRecovery": "Local Chromium/tsx launches required automatic sandbox escalation; accepted. Source and audio work stayed local. No auto-review rejection or new service."
+}

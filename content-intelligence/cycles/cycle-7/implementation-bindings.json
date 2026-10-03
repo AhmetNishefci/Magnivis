@@ -1,0 +1,60 @@
+{
+  "enteredAt": "2026-10-03T15:08:54.358Z",
+  "sourceBaseCommit": "0317ff08172eee04e0191ca911ea40429de02f0f",
+  "files": [
+    {
+      "path": "src/scroll-index.tsx",
+      "sha256": "03e12de576d6a1b8f864ad4f6009a5d4793ba2daf12c467e3979d3a1161b1f6b"
+    },
+    {
+      "path": "src/compositions/SealedScroll.tsx",
+      "sha256": "5514c3ba752609afcde59f431b796941ff86c43cb9f60d1d01d163afbc5094fb"
+    },
+    {
+      "path": "src/components/ScrollSurface.tsx",
+      "sha256": "296d6383e5f2754bd0acf708ee1c22bd6063d5d102c37c98bc3dba4268ba0c65"
+    },
+    {
+      "path": "src/content/videos/sealed-scroll.ts",
+      "sha256": "56c348a39e0b54e70609a58d25c5163a3c396b28ecbccd6da8f2d0fc8508f842"
+    },
+    {
+      "path": "scripts/render-scroll.ts",
+      "sha256": "8d25a98621caad6a79a293fc76337167db6a1857b70da779f702bf2f9774ed9d"
+    },
+    {
+      "path": "scripts/qa-scroll-layout.ts",
+      "sha256": "ab0c0d39f7a1ca33bd7cc25f857e26152bcabb16e519343da8b3db5f64cf2aa1"
+    },
+    {
+      "path": "scripts/inspect-scroll-audio.mjs",
+      "sha256": "40ef6ce844e666a1ae9401ee2b236299818d0dcd853fee5be2e4afac36c97994"
+    },
+    {
+      "path": "scripts/generate-scroll-narration.mjs",
+      "sha256": "e5e86400e3da4c0c3020958babb255f55b4b45e598aaefaea4c1452d8f2b5928"
+    },
+    {
+      "path": "scripts/prepare-scroll-production.ts",
+      "sha256": "d0eee1e52ffea34ec79dec62a6aaf31b6e76da323868663e311f5009262b2d57"
+    },
+    {
+      "path": "src/production/plans/scroll.json",
+      "sha256": "764ca08c6c7add58b67b140d4bc219b426544c9b6a0466a9577ef7e5a7330f10"
+    },
+    {
+      "path": "src/captions/plans/scroll.json",
+      "sha256": "c8339fb3d17ed8a679e8473b74d74cff86a00d35470b2a9f7df8c61bf501f46e"
+    },
+    {
+      "path": "src/production/narration/scroll.json",
+      "sha256": "75111b0f832ce8e8de4f54ce84497d00745e0f19a2d52ed124e6834cc62f9bb3"
+    }
+  ],
+  "videoPacketSha256": "SHA256=cbda7d6e7a3c86863cd1823195ba2800ebb64b0f4d67d146fd7f43d06fb7e943",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-7/audio-mastering.json",
+    "sha256": "fbb971bcb08d34e07f183acd056da1a0c5f640c8bdf3f96b98cf7caf0f4998dc"
+  },
+  "note": "Exact new source hashes bind implementation; base commit is not a circular self-commit claim. Original geometry, consultation-only research and established fonts/local narration."
+}

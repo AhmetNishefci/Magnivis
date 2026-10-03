@@ -1,0 +1,323 @@
+{
+  "id": "sealed-scroll.asset.read-without-opening",
+  "revision": 1,
+  "knowledgePackageId": "sealed-scroll",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand the distinction between physically opening a page and computationally locating, texturing and flattening its surviving surface.",
+  "storyAngle": "Access information by transforming its digital carrier, without opening the fragile physical one.",
+  "hookId": "sealed-scroll.hook.closed",
+  "selectedClaimIds": [
+    "sealed-scroll.claim.fragile",
+    "sealed-scroll.claim.damage",
+    "sealed-scroll.claim.scan",
+    "sealed-scroll.claim.surfaces",
+    "sealed-scroll.claim.density",
+    "sealed-scroll.claim.mapping",
+    "sealed-scroll.claim.text",
+    "sealed-scroll.claim.closed",
+    "sealed-scroll.claim.conditional"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 35,
+    "maximum": 75
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.1",
+        "type": "factual",
+        "text": "This burned scroll was too fragile to open. Scientists read it anyway.",
+        "claimIds": [
+          "sealed-scroll.claim.fragile",
+          "sealed-scroll.claim.closed"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.2",
+        "type": "factual",
+        "text": "The En-Gedi scroll crumbled when it was touched.",
+        "claimIds": [
+          "sealed-scroll.claim.damage"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.3",
+        "type": "factual",
+        "text": "Researchers scanned it with X-rays, building a three-dimensional map.",
+        "claimIds": [
+          "sealed-scroll.claim.scan"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.4",
+        "type": "factual",
+        "text": "Inside that scan, they traced the surviving layers.",
+        "claimIds": [
+          "sealed-scroll.claim.surfaces"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.5",
+        "type": "factual",
+        "text": "In this scroll, the ink showed up more densely than the parchment.",
+        "claimIds": [
+          "sealed-scroll.claim.density"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.6",
+        "type": "factual",
+        "text": "They mapped that signal onto digital surfaces, then flattened them into readable images.",
+        "claimIds": [
+          "sealed-scroll.claim.mapping"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.7",
+        "type": "factual",
+        "text": "The recovered Hebrew text came from the Book of Leviticus.",
+        "claimIds": [
+          "sealed-scroll.claim.text"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.8",
+        "type": "factual",
+        "text": "This worked because the ink was detectable in the scan. Different materials need different approaches.",
+        "claimIds": [
+          "sealed-scroll.claim.conditional"
+        ]
+      },
+      {
+        "id": "sealed-scroll.asset.read-without-opening.script.9",
+        "type": "factual",
+        "text": "They revealed surviving writing without unrolling the fragile original.",
+        "claimIds": [
+          "sealed-scroll.claim.closed"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.1",
+      "label": "task",
+      "purpose": "Establish impossible-seeming task with immediate truthful resolution promise.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.1"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.2",
+      "label": "fragility",
+      "purpose": "Explain why physical opening is unavailable.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.2"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.3",
+      "label": "volume",
+      "purpose": "Change the object of work from artifact to volume.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.3"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.4",
+      "label": "surface",
+      "purpose": "Trace the hidden page, not a generic see-through photograph.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.4"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.5",
+      "label": "contrast",
+      "purpose": "Show ink contrast without asserting chemical composition.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.5"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.6",
+      "label": "flatten",
+      "purpose": "Carry the same sample marks through surface extraction and flattening.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.6"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.7",
+      "label": "result",
+      "purpose": "Identify result without theology, invented transcription or superlatives.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.7"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.8",
+      "label": "boundary",
+      "purpose": "Retain material-dependent boundary.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.8"
+      ]
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.beat.9",
+      "label": "return",
+      "purpose": "Return to unchanged closed artifact and digital image together.",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.9"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.1",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.1",
+      "objective": "Establish impossible-seeming task with immediate truthful resolution promise.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.1"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.fragile",
+        "sealed-scroll.claim.closed"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.2",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.2",
+      "objective": "Explain why physical opening is unavailable.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.2"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.damage"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.3",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.3",
+      "objective": "Change the object of work from artifact to volume.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.3"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.scan"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.4",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.4",
+      "objective": "Trace the hidden page, not a generic see-through photograph.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.4"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.surfaces"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.5",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.5",
+      "objective": "Show ink contrast without asserting chemical composition.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.5"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.density"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.6",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.6",
+      "objective": "Carry the same sample marks through surface extraction and flattening.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.6"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.mapping"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.7",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.7",
+      "objective": "Identify result without theology, invented transcription or superlatives.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.7"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.text"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.8",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.8",
+      "objective": "Retain material-dependent boundary.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.8"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.conditional"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    },
+    {
+      "id": "sealed-scroll.asset.read-without-opening.visual.9",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.9",
+      "objective": "Return to unchanged closed artifact and digital image together.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.9"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.closed"
+      ],
+      "notes": "Original schematic geometry and marks only; do not physically unroll the artifact, invent Hebrew lettering, identify ink chemistry or imply scan data reconstructed destroyed text."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Primary Kokoro af_heart; curious clear delivery, connected sentences; no mystical, religious or thriller tone.",
+    "pronunciationNotes": [
+      "En-Gedi: en GEH-dee; Leviticus: luh-VIT-ih-kus; X-rays and three-dimensional."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.7",
+      "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+    },
+    "approvedAt": "2026-10-03",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

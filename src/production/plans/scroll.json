@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.sealed-scroll.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "sealed-scroll",
+    "revision": 1,
+    "sha256": "0de545be9e12318c532b60a8bcbbe18c386ce0372fd1717ad4035cbc735cd2ba"
+  },
+  "contentAsset": {
+    "id": "sealed-scroll.asset.read-without-opening",
+    "revision": 1,
+    "sha256": "11247e991a2a70a0dc9fe21760238d6e06d72388fbcd0ebb4c33541d6d0bc10b"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.7",
+    "reviewSha256": "7e649c57a3bbd0376cd78ffa2489c608a48fe59c5a0d212ad280a6d94c5a5d5c"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-7/profiles/youtube.json",
+      "sha256": "878c9a70e12e01a9e3ba34761436f6bc7fa2a2b530a6827110495bca301c190d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/profiles/tiktok.json",
+      "sha256": "260d724c9e6409fd6aede1f205d859d18d71e48ab2792641dce3041b1fe52a0d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/profiles/instagram.json",
+      "sha256": "f2f56f8c635c4b7c3089f5a0324958a4ed480972a4a184a6872bfc139d747c87"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/profiles/facebook.json",
+      "sha256": "59d98c9d32089254965d44425be4b53b5bbd5b3544aa9b8dc19e285638123f4b"
+    }
+  ],
+  "approvedScriptSha256": "7e9e9194c85beebcdb3d43078209b1101325f6694579420d4136f5f2a2b0fd94",
+  "creativeDirection": {
+    "id": "creative-direction.sealed-scroll.v1",
+    "revision": 1,
+    "sha256": "f8adc771a9d596b4e8e293c87574acd3085e1f5ab59da9b5f7a36ac8b04b417c"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "sealed-scroll.claim.metal-certain"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 43.93333333333333
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "scroll.production.1",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.1",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.1",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.1"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.fragile",
+        "sealed-scroll.claim.closed"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 161
+      },
+      "sceneType": "closed-task",
+      "objective": "Establish impossible-seeming task with immediate truthful resolution promise.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.2",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.2",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.2",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.2"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.damage"
+      ],
+      "frames": {
+        "start": 161,
+        "end": 258
+      },
+      "sceneType": "fragile-original",
+      "objective": "Explain why physical opening is unavailable.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.3",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.3",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.3",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.3"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.scan"
+      ],
+      "frames": {
+        "start": 258,
+        "end": 399
+      },
+      "sceneType": "scan-volume",
+      "objective": "Change the object of work from artifact to volume.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.4",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.4",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.4",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.4"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.surfaces"
+      ],
+      "frames": {
+        "start": 399,
+        "end": 515
+      },
+      "sceneType": "trace-surface",
+      "objective": "Trace the hidden page, not a generic see-through photograph.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.5",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.5",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.5",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.5"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.density"
+      ],
+      "frames": {
+        "start": 515,
+        "end": 646
+      },
+      "sceneType": "ink-contrast",
+      "objective": "Show ink contrast without asserting chemical composition.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.6",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.6",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.6",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.6"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.mapping"
+      ],
+      "frames": {
+        "start": 646,
+        "end": 831
+      },
+      "sceneType": "flatten-surface",
+      "objective": "Carry the same sample marks through surface extraction and flattening.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.7",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.7",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.7",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.7"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.text"
+      ],
+      "frames": {
+        "start": 831,
+        "end": 953
+      },
+      "sceneType": "identified-text",
+      "objective": "Identify result without theology, invented transcription or superlatives.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.8",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.8",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.8",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.8"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.conditional"
+      ],
+      "frames": {
+        "start": 953,
+        "end": 1158
+      },
+      "sceneType": "material-boundary",
+      "objective": "Retain material-dependent boundary.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "scroll.production.9",
+      "sourceVisualPlanId": "sealed-scroll.asset.read-without-opening.visual.9",
+      "narrativeBeatId": "sealed-scroll.asset.read-without-opening.beat.9",
+      "scriptSegmentIds": [
+        "sealed-scroll.asset.read-without-opening.script.9"
+      ],
+      "claimIds": [
+        "sealed-scroll.claim.closed"
+      ],
+      "frames": {
+        "start": 1158,
+        "end": 1318
+      },
+      "sceneType": "unchanged-object",
+      "objective": "Return to unchanged closed artifact and digital image together.",
+      "onScreenText": [],
+      "animationIntent": "Continuous original schematic: closed object, volumetric slices, traced layer, sample marks attached to digital surface during flattening. No physical unrolling or recovered scan/text depiction.",
+      "transitionIntent": "Follow representations with restrained cuts and spatial continuity, returning to original plus image.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    }
+  ],
+  "assets": [
+    {
+      "id": "scroll.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original SVG illustration",
+        "rights": "Project-owned artwork",
+        "notes": "Simplified geometry and sample marks, not measured scans or transcription.",
+        "evidence": "content-intelligence/cycles/cycle-7/rights-provenance.json"
+      }
+    },
+    {
+      "id": "scroll.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource / Manrope by Mikhail Sharanda",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing licensed font; unchanged.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "scroll.narration",
+      "kind": "audio",
+      "path": "public/audio/scroll/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache-2.0 model/output terms",
+        "notes": "Connected reviewed sentences, no paid API.",
+        "evidence": "src/production/narration/scroll.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/sealed-scroll.en.vtt",
+    "captionPlanId": "caption-plan.sealed-scroll.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "25b02257cd1548e2ee7bcc53138f0e73c917625b2c9934120e37b60c8fe9ec04",
+    "generatorId": "generator.scroll-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full media probe and decode, exact caption reconstruction and typography fit.",
+    "Every caption midpoint and opening/flattening/result checkpoints decoded and inspected.",
+    "Original remains closed; illustrative marks remain attached through transformation; material/scan dependence stays explicit.",
+    "Actual audio interval recognition and mix; owner pronunciation/prosody remains judgment.",
+    "Four sampled provisional profile preflights; no invented native/device safety.",
+    "AHMET — MASTER REVIEW; no release preparation before approval."
+  ]
+}

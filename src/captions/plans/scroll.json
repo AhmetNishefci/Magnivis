@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 2,
+  "id": "caption-plan.sealed-scroll.v1",
+  "revision": 1,
+  "status": "review-required",
+  "creativeDirection": {
+    "id": "creative-direction.sealed-scroll.v1",
+    "revision": 1,
+    "sha256": "f8adc771a9d596b4e8e293c87574acd3085e1f5ab59da9b5f7a36ac8b04b417c"
+  },
+  "approvedScriptSha256": "7e9e9194c85beebcdb3d43078209b1101325f6694579420d4136f5f2a2b0fd94",
+  "fps": 30,
+  "coverage": "complete-narration",
+  "visualTreatment": {
+    "fontAsset": "@fontsource/manrope@5.3.0/latin-600.css",
+    "fontFamily": "Manrope",
+    "fontSize": 48,
+    "fontWeight": 600,
+    "lineHeight": 1.25,
+    "foreground": "#18232B",
+    "emphasisMethod": "Natural phrase boundaries, no word bouncing or independent factual highlights.",
+    "backdrop": "Clear pearl-gray lower field; no box.",
+    "animation": "Four-frame opacity entrance/exit, fixed glyph locations.",
+    "rendererId": "renderer.scroll-phrases.v1",
+    "rationale": "Large stable speech contrasts with transformed geometry; qualifiers stay complete."
+  },
+  "cues": [
+    {
+      "id": "scroll-caption-1-1",
+      "sourceNarrationCueId": "scroll-cue-1",
+      "startFrame": 0,
+      "endFrame": 50,
+      "lines": [
+        "This burned scroll was"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-1-2",
+      "sourceNarrationCueId": "scroll-cue-1",
+      "startFrame": 50,
+      "endFrame": 99,
+      "lines": [
+        "too fragile to open."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-1-3",
+      "sourceNarrationCueId": "scroll-cue-1",
+      "startFrame": 99,
+      "endFrame": 149,
+      "lines": [
+        "Scientists read it anyway."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-2-1",
+      "sourceNarrationCueId": "scroll-cue-2",
+      "startFrame": 161,
+      "endFrame": 207,
+      "lines": [
+        "The En-Gedi scroll crumbled"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-2-2",
+      "sourceNarrationCueId": "scroll-cue-2",
+      "startFrame": 207,
+      "endFrame": 252,
+      "lines": [
+        "when it was touched."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-3-1",
+      "sourceNarrationCueId": "scroll-cue-3",
+      "startFrame": 258,
+      "endFrame": 333,
+      "lines": [
+        "Researchers scanned it",
+        "with X-rays,"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-3-2",
+      "sourceNarrationCueId": "scroll-cue-3",
+      "startFrame": 333,
+      "endFrame": 393,
+      "lines": [
+        "building a",
+        "three-dimensional map."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-4-1",
+      "sourceNarrationCueId": "scroll-cue-4",
+      "startFrame": 399,
+      "endFrame": 440,
+      "lines": [
+        "Inside that scan,"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-4-2",
+      "sourceNarrationCueId": "scroll-cue-4",
+      "startFrame": 440,
+      "endFrame": 509,
+      "lines": [
+        "they traced",
+        "the surviving layers."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-5-1",
+      "sourceNarrationCueId": "scroll-cue-5",
+      "startFrame": 515,
+      "endFrame": 546,
+      "lines": [
+        "In this scroll,"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-5-2",
+      "sourceNarrationCueId": "scroll-cue-5",
+      "startFrame": 546,
+      "endFrame": 609,
+      "lines": [
+        "the ink showed up",
+        "more densely"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-5-3",
+      "sourceNarrationCueId": "scroll-cue-5",
+      "startFrame": 609,
+      "endFrame": 640,
+      "lines": [
+        "than the parchment."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-6-1",
+      "sourceNarrationCueId": "scroll-cue-6",
+      "startFrame": 646,
+      "endFrame": 699,
+      "lines": [
+        "They mapped that signal"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-6-2",
+      "sourceNarrationCueId": "scroll-cue-6",
+      "startFrame": 699,
+      "endFrame": 739,
+      "lines": [
+        "onto digital surfaces,"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-6-3",
+      "sourceNarrationCueId": "scroll-cue-6",
+      "startFrame": 739,
+      "endFrame": 779,
+      "lines": [
+        "then flattened them"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-6-4",
+      "sourceNarrationCueId": "scroll-cue-6",
+      "startFrame": 779,
+      "endFrame": 819,
+      "lines": [
+        "into readable images."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-7-1",
+      "sourceNarrationCueId": "scroll-cue-7",
+      "startFrame": 831,
+      "endFrame": 877,
+      "lines": [
+        "The recovered Hebrew text"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-7-2",
+      "sourceNarrationCueId": "scroll-cue-7",
+      "startFrame": 877,
+      "endFrame": 947,
+      "lines": [
+        "came from the",
+        "Book of Leviticus."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-8-1",
+      "sourceNarrationCueId": "scroll-cue-8",
+      "startFrame": 953,
+      "endFrame": 993,
+      "lines": [
+        "This worked because"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-8-2",
+      "sourceNarrationCueId": "scroll-cue-8",
+      "startFrame": 993,
+      "endFrame": 1086,
+      "lines": [
+        "the ink was detectable",
+        "in the scan."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-8-3",
+      "sourceNarrationCueId": "scroll-cue-8",
+      "startFrame": 1086,
+      "endFrame": 1152,
+      "lines": [
+        "Different materials need",
+        "different approaches."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-9-1",
+      "sourceNarrationCueId": "scroll-cue-9",
+      "startFrame": 1158,
+      "endFrame": 1224,
+      "lines": [
+        "They revealed",
+        "surviving writing"
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    },
+    {
+      "id": "scroll-caption-9-2",
+      "sourceNarrationCueId": "scroll-cue-9",
+      "startFrame": 1224,
+      "endFrame": 1307,
+      "lines": [
+        "without unrolling",
+        "the fragile original."
+      ],
+      "bounds": {
+        "x": 120,
+        "y": 1370,
+        "width": 750,
+        "height": 180
+      },
+      "presentationIntent": "Authored semantic timing within measured full-sentence clip; exact words retained, not forced-aligner evidence."
+    }
+  ]
+}

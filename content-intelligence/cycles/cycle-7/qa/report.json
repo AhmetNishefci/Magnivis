@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-03T15:06:37.010Z",
+  "input": "artifacts/masters/sealed-scroll-cycle7-candidate-v1.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 43.93333333333333
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -25.7,
+    "maxVolumeDb": -2.2,
+    "duration": 43.99,
+    "sizeBytes": 12136208,
+    "bitRate": 2207084
+  },
+  "passed": true,
+  "failures": []
+}

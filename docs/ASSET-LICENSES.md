@@ -125,3 +125,9 @@ Same original thermal-interface direction and licensed Manrope typography; no ex
 ## Cycle #6 publication cover — 2026-10-03
 
 `artifacts/covers/heat-barrier-cover-v1.png` is original Magnivis procedural artwork generated from existing thermal-interface primitives in `src/heat-cover-index.tsx`, with the existing licensed Manrope typography (SIL OFL1.1). No photo/AI raster/third-party illustration added. It is one canonical PNG shared by the YouTube/Instagram recommendations; TikTok/Facebook reference the existing decoded2.0s frame. Cover rights/layout/visual/presentation evidence is under `content-intelligence/cycles/cycle-6/publication/qa/`; the owner-approved V4 video remains byte-identical. Cover selection/publication approval is pending at the existing publication gate.
+
+## Cycle #7 — sealed scroll master candidate (2026-10-03)
+
+Original Magnivis SVG charcoal/slice/surface geometry and sample marks: project-owned original artwork, `src/components/ScrollSurface.tsx` and `src/compositions/SealedScroll.tsx`. Marks are illustrative, never an original scan or Hebrew transcription. No source figure, artifact photograph, footage, music or soundscape is included. The Seales et al. CC BY-NC article and university pages are consultation evidence only.
+
+Manrope 400/600 uses existing pinned `@fontsource/manrope@5.3.0`, SIL OFL 1.1; exact font/license hashes in `content-intelligence/cycles/cycle-7/rights-provenance.json`. Nine narration clips are original local Kokoro `af_heart` output under the established Apache-2.0 model terms; measured words/timing and clip hashes in `src/production/narration/scroll.json`. No cloning, paid API, purchases or new infrastructure. Candidate review grants no master or publication approval.

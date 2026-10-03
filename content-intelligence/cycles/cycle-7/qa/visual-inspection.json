@@ -1,0 +1,23 @@
+{
+  "mediaSha256": "d698366f129d1ae66c72504ee0a8d54e2bbf9c31f3ba85e06f8f8658ac074c83",
+  "inspectedAt": "2026-10-03T15:08:54.127345Z",
+  "passed": true,
+  "method": "Session actual decoded-master contact sheet viewed with view_image; all 54 thumbnails reviewed at overview scale, plus full-size curved surface (24.0s), flat surface (27.7s), and identified result (29.7s). Browser opening at 0.5s separately inspected. No human continuous-playback or listening claim.",
+  "contactSheet": {
+    "path": "artifacts/qa-evidence/sealed-scroll-cycle7-v1/contact-sheet.jpg",
+    "sha256": "21bacb11681dd5fb7a144ad5dff4fe516678146954d52c3ff589fc2cc33fcf47"
+  },
+  "findings": [
+    "Original remains closed in the opening and return.",
+    "Sample marks remain attached to the curved surface, then become flat; illustrative disclosure present.",
+    "Result identification does not claim the drawn marks are recovered Hebrew.",
+    "No detected sampled typography collisions, clipping or captions detached from canonical narration.",
+    "Material-dependent boundary appears explicitly; empty sheet is illustrative missing contrast, not false recovered writing."
+  ],
+  "limitations": [
+    "Contact overview does not prove all-frame geometry, continuous motion or mobile/native UI.",
+    "Authored phrase timing uses measured clip bounds and word allocation, not phonetic forced alignment.",
+    "ASR En-Gedi variants end-getty / end-jettie require owner listening at 5.333\u20138.358s. Recognition also drops inflection in burned/traced in some interval outputs; whole-master recognition restores them. No wrong production wording inferred solely from recognition.",
+    "No subjective pronunciation, naturalness or tone approval."
+  ]
+}
