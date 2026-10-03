@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
   "id": "cycle.7",
-  "revision": 18,
+  "revision": 20,
   "authority": {
     "path": "workflow/authorities/cycle-7-start.json",
     "sha256": "fd3e0521311bcc0db62a132b9451584f4ecac851090f802b695e8761e983cefe"
   },
-  "stage": "master-review",
+  "stage": "publication-review",
   "workInProgress": null,
   "receipts": [
     {
@@ -36,14 +36,27 @@
         "path": "content-intelligence/cycles/cycle-7/revision-3/master-candidate-v1.json",
         "sha256": "ac517147e32d083ed85114d122d76f684a8241d9f1c4cbac9fea210c227e99e6"
       }
+    },
+    {
+      "stage": "presentation",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-7/publication/release-v1.json",
+        "sha256": "cb4b2cc4d6209f89eab7ebbc04daa8e47155636cfb96de769aa3661ba0fa2f46"
+      }
     }
   ],
   "candidate": {
     "path": "content-intelligence/cycles/cycle-7/revision-3/master-candidate-v1.json",
     "sha256": "ac517147e32d083ed85114d122d76f684a8241d9f1c4cbac9fea210c227e99e6"
   },
-  "masterDecision": null,
-  "release": null,
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-7/publication/master-approval-v1.json",
+    "sha256": "3ea6ed8158f62d030e5aefa38bb46cdbfaec2046d29598e8b049378dff2c21a9"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-7/publication/release-v1.json",
+    "sha256": "cb4b2cc4d6209f89eab7ebbc04daa8e47155636cfb96de769aa3661ba0fa2f46"
+  },
   "publicationDecision": null,
   "exception": null,
   "observations": [],
@@ -226,6 +239,26 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-7/revision-3/master-candidate-v1.json",
         "sha256": "ac517147e32d083ed85114d122d76f684a8241d9f1c4cbac9fea210c227e99e6"
+      }
+    },
+    {
+      "revision": 19,
+      "previousSha256": "b4af430ef3e92e28439a8a61ab2b2276e5ccbb6d8d21b76711c9ec408f7ff1c6",
+      "event": "owner-decision",
+      "at": "2026-10-03T16:59:10.785Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/publication/master-approval-v1.json",
+        "sha256": "3ea6ed8158f62d030e5aefa38bb46cdbfaec2046d29598e8b049378dff2c21a9"
+      }
+    },
+    {
+      "revision": 20,
+      "previousSha256": "4c2c808f826c43b5f5a25e72331ed34a02b93048449201e8de2e37cec020f9e0",
+      "event": "presentation",
+      "at": "2026-10-03T17:11:02.825Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/publication/release-v1.json",
+        "sha256": "cb4b2cc4d6209f89eab7ebbc04daa8e47155636cfb96de769aa3661ba0fa2f46"
       }
     }
   ]

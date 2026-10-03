@@ -1,0 +1,35 @@
+import {createRequire} from 'node:module';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {execFileSync,spawnSync} from 'node:child_process';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {mediaHash} from '../src/artifacts/media';
+import {readBoundRecord,requireOwnerDecision} from '../src/workflow/evidence';
+import {inspectCycleRelease} from '../src/workflow/release';
+import {loadCycle} from '../src/workflow/store';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {nextAction} from '../src/workflow/cycle';
+const base='content-intelligence/cycles/cycle-7/publication',root=process.cwd(),registry=openMediaCatalog(root);
+const cycle=loadCycle(root,'cycle.7',registry);
+if(cycle.stage!=='publication-review'||!cycle.candidate||!cycle.masterDecision||!cycle.release||cycle.publicationDecision)throw new Error('Exact publication-review gate required');
+const candidate=readBoundRecord(cycle.candidate) as {media:{id:string;sha256:string}};
+const decision=requireOwnerDecision(cycle.masterDecision,cycle.id,'master-review',candidate);
+if(decision.decision!=='approve'||candidate.media.sha256!=='d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3')throw new Error('Master lock drift');
+const at=new Date().toISOString(),inspection=inspectCycleRelease(readBoundRecord(cycle.release),registry,at);
+const risks=JSON.parse(readFileSync(`${base}/risk-register-v1.json`,'utf8'));
+if(sha256Json(inspection.unknowns)!==sha256Json(risks.requiredExactPresentationUnknowns)||risks.acceptedByOwner||risks.knownCollisions.length)throw new Error('Risk register drift');
+const old=JSON.parse(execFileSync('git',['show','2924999:artifacts/media-catalog.json'],{encoding:'utf8'})).artifacts;
+const catalog=JSON.parse(readFileSync('artifacts/media-catalog.json','utf8')).artifacts;
+if(sha256Json(catalog.slice(0,old.length))!==sha256Json(old))throw new Error('Prior catalog changed');
+for(const f of JSON.parse(readFileSync('content-intelligence/cycles/cycle-7/revision-3/implementation-bindings.json','utf8')).files)if(mediaHash(f.path)!==f.sha256)throw new Error('Approved source/input drift: '+f.path);
+for(const d of inspection.release.deliveries){
+ if(d.variant.relationship!=='exact-master'||sha256Json(d.variant.media)!==sha256Json(candidate.media))throw new Error('Unexpected derivative or changed approved bytes');
+ const manifest=readBoundRecord(d.manifest) as {metadata:{path:string;sha256:string};uploadCopy:{path:string;sha256:string}};
+ const m=readBoundRecord(manifest.metadata) as {firstComment:string;description:string;publicationAuthorized:boolean};
+ if(!m.firstComment||!m.description.includes('synthetic narration')||m.publicationAuthorized)throw new Error('Copy/disclosure/readiness drift');
+}
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const decoded=spawnSync(ffmpeg,['-v','error','-xerror','-err_detect','explode','-i',registry.resolveFile(candidate.media),'-map','0:v:0','-map','0:a:0','-f','null','-'],{encoding:'utf8'});if(decoded.status!==0)throw new Error(decoded.stderr);
+const report={checkedAt:at,passed:true,cycleId:cycle.id,revision:cycle.revision,nextAction:nextAction(cycle),release:cycle.release,reviewTargetSha256:sha256Json(inspection.release),masterApproval:cycle.masterDecision,masterUnchanged:true,fullMediaDecode:'passed',approvedSourceAndInputHashesUnchanged:true,priorCanonicalEntriesUnchanged:old.length,canonicalPayloads:catalog.length,newCanonicalPayloads:catalog.length-old.length,newMediaBytes:catalog.slice(old.length).reduce((n:number,a:{bytes:number})=>n+a.bytes,0),uniqueVideoPayloads:1,derivativeVideos:0,uniqueSelectedCoverPayloads:2,newCoverPayloads:1,unknownCount:inspection.unknowns.length,knownCollisions:[],uploads:inspection.uploads,publicationAuthorized:false,externalPlatformActions:[]};
+const path=`${base}/readiness-validation-v1.json`;
+writeFileSync(path,JSON.stringify(report,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({passed:true,revision:cycle.revision,gate:cycle.stage,masterUnchanged:true,unknownCount:inspection.unknowns.length,newMediaBytes:report.newMediaBytes}));

@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-03T17:13:51.044357+00:00",
+  "baseline": "2924999",
+  "passed": true,
+  "priorTrackedDurableAndHistoricalPathsUnchanged": 1814,
+  "priorCanonicalEntriesUnchanged": 698,
+  "newCanonicalEntries": 1,
+  "appendOnlyCatalog": true,
+  "historicalDocumentationBytesPreserved": true,
+  "onlyPriorModifiedPaths": [
+    "artifacts/media-catalog.json",
+    "docs/ASSET-LICENSES.md",
+    "docs/DECISIONS.md",
+    "docs/OPERATIONS.md",
+    "docs/PROJECT-STATE.md",
+    "workflow/cycles/cycle.7/state.json",
+    "workflow/project-state.json"
+  ],
+  "scopedSecretScan": {
+    "files": 56,
+    "findings": 0,
+    "scope": "High-confidence private-key, API-key and AWS-key patterns on changed text files; not a comprehensive credential audit."
+  },
+  "externalActions": []
+}

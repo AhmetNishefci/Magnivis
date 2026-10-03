@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-03T17:15:17.315372+00:00",
+  "passed": true,
+  "runtime": "Node22.23.3 / pnpm10.17.1",
+  "checks": {
+    "pnpm check": {
+      "exitCode": 0,
+      "testFiles": 49,
+      "tests": 468,
+      "typecheck": "passed",
+      "lint": "passed"
+    },
+    "pnpm qa interaction-free-v3": {
+      "exitCode": 0,
+      "input": "exact approved canonical master",
+      "passed": true
+    },
+    "full verification render": {
+      "exitCode": 0,
+      "output": "ignored temporary scratch only",
+      "approvedPicturePacketMatch": true
+    },
+    "release controller validation": {
+      "exitCode": 0,
+      "cycleRevision": 20,
+      "stage": "publication-review",
+      "unknowns": 52,
+      "knownCollisions": 0
+    },
+    "pnpm artifacts:durable": {
+      "exitCode": 0,
+      "passed": true,
+      "canonicalPayloads": 699,
+      "nativeDurableArtifacts": 731,
+      "frozenLegacyBinaryPaths": 442,
+      "explicitExceptions": 0,
+      "historicalMissingExpectations": "Accepted original Wood Frog master expectation remains missing; unchanged."
+    },
+    "historicalIntegrity": "1814 prior tracked evidence paths and698 canonical entries unchanged",
+    "diffHygiene": "passed",
+    "scopedSecretScan": "passed,0 high-confidence findings"
+  },
+  "publicationAuthorized": false,
+  "externalPlatformActions": [],
+  "priorMasterBytesAndApprovedInputsUnchanged": true,
+  "newVideoPayloads": 0,
+  "newCoverPayloads": 1
+}

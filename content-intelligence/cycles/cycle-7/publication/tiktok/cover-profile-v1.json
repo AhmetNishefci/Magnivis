@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.ifm.tiktok.cover-v1",
+  "revision": 1,
+  "platform": "tiktok",
+  "surface": "tiktok-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-03T17:10:29.836Z",
+  "reviewAfter": "2026-10-03T17:10:29.836Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Full-canvas critical layout inspected; no platform-derived safe composition region measured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No native thumbnail overlay measurements.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static image; no platform caption/overlay measurements.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No native cover crop measurements; no invented geometry.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-7/publication/qa/selected-frame-cover-v1.json",
+        "sha256": "924aabd8a168886ee6d92fc6966de490539f1db67f9f5a24c2c4f7d1656e6d78"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-7/publication/policy-inspection-v1.json",
+        "sha256": "caec15f2dce184b472f2d8795e1a1f666eaa8db5b13dfabbb86a6563ef5d07c2"
+      }
+    ],
+    "rationale": "Static local 1080×1920 PNG cover reference; actual native upload/selection capability is untested."
+  }
+}

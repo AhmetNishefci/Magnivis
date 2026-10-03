@@ -1,0 +1,16 @@
+import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+const root=process.cwd(),registry=openMediaCatalog(),cycle=loadCycle(root,'cycle.7',registry),base='content-intelligence/cycles/cycle-7/publication';
+if(cycle.stage!=='master-review'||!cycle.candidate)throw new Error('Exact master-review gate required');
+const candidate=JSON.parse(readFileSync(cycle.candidate.path,'utf8'));
+const path='artifacts/masters/interaction-free-cycle7-candidate-v3.mp4',expected='d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3';
+if(mediaHash(path)!==expected||candidate.media.sha256!==expected||registry.resolveFile(candidate.media)!==`${root}/${path}`)throw new Error('Owner-approved master identity mismatch');
+mkdirSync(base,{recursive:true});const at=new Date().toISOString();
+const decision={schemaVersion:3,id:'owner-decision.cycle-7.ifm-master-approval.v1',revision:1,gate:'master-review',cycleId:cycle.id,targetSha256:sha256Json(candidate),decision:'approve',enteredAt:at,suppliedReviewTime:null,reviewer:'Ahmet — owner',evidenceBasis:'explicit-owner-message',instruction:'APPROVE — Cycle #7 revised master V3. Owner approves exact artifacts/masters/interaction-free-cycle7-candidate-v3.mp4: Interaction-Free Measurement premise, narration, pacing, visual explanation, factual qualifications, captions and overall treatment. Record Master Review approval and lock exact master without creative modification. Proceed to AHMET — PUBLICATION REVIEW / AUTHORIZATION. Prepare YouTube Shorts, TikTok, Instagram Reels and Facebook Reels with canonical media; reuse exact master when presentation-safe, derivative only for actual requirement. Prepare strongest truthful supported titles, descriptions/captions, hashtags, tags/keywords, first comments, covers/thumbnails, settings and applicable AI/synthetic disclosure guidance. Preserve probabilistic scope, no guaranteed zero interaction across all trials. Authoritative presentation checks; no upload/schedule/publication. Stop at Publication Review; print actual copy/settings directly in owner response. EnteredAt is record-entry time, no review time supplied.',acceptedUnknowns:[]};
+const dpath=`${base}/master-approval-v1.json`;writeFileSync(dpath,JSON.stringify(decision,null,2)+'\n',{flag:'wx'});const ref={path:dpath,sha256:mediaHash(dpath)};
+const next=persistCycleEvent(root,cycle,{type:'owner-decision',record:ref,at},registry);
+writeFileSync(`${base}/master-lock-v1.json`,JSON.stringify({cycleId:cycle.id,lockedAt:at,master:candidate.media,canonicalPath:path,candidate:cycle.candidate,ownerApproval:ref,scriptSha256:candidate.scriptSha256,lockMethod:'Approval locks existing canonical identity by reference. No media copy, render replacement, creative/source/input modification or approval transfer.',publicationAuthorized:false},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({stage:next.stage,revision:next.revision,master:candidate.media}));

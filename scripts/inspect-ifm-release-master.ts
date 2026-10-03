@@ -1,0 +1,17 @@
+import {createRequire} from 'node:module';
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+const base='content-intelligence/cycles/cycle-7/publication',master='artifacts/masters/interaction-free-cycle7-candidate-v3.mp4',scratch='output/ifm-v3-release-verification.mp4';
+const expected='d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3';
+if(mediaHash(master)!==expected)throw new Error('Exact approved master changed');
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const packets=(path:string)=>execFileSync(ffmpeg,['-v','error','-i',path,'-map','0:v:0','-c','copy','-f','hash','-hash','sha256','-'],{encoding:'utf8'}).trim();
+const original=packets(master),verification=packets(scratch);
+if(original!==verification)throw new Error('Verification render picture packets differ');
+const qa=JSON.parse(readFileSync('qa/interaction-free-v3/report.json','utf8'));
+if(!qa.passed)throw new Error('Canonical QA failed');
+const bindings=JSON.parse(readFileSync('content-intelligence/cycles/cycle-7/revision-3/implementation-bindings.json','utf8'));
+for(const f of bindings.files)if(mediaHash(f.path)!==f.sha256)throw new Error('Approved input changed: '+f.path);
+writeFileSync(`${base}/qa/master-release-validation-v1.json`,JSON.stringify({checkedAt:new Date().toISOString(),passed:true,master:{path:master,sha256:expected},approvedSourceAndInputHashesUnchanged:true,fullVerificationRender:{path:scratch,retention:'ignored temporary output, never a delivery or replacement',picturePacketSha256:verification,exactApprovedPicturePacketsMatch:true,audio:'Raw verification render precedes the approved mastering gain; approved canonical audio remains unchanged and is independently checked by full media QA.'},canonicalQa:qa,contactSheetInspection:{path:'qa/interaction-free-v3/contact-sheet.jpg',actualLocalInspection:true,findings:['Progressive paths, enlarged cancellation, distinct trial outcomes, paired climax and final probabilistic qualification intact.','No new local visual issue; owner-approved creative remains unchanged.'],devicePass:false},scope:'Full technical media QA and contact sheet; existing101 browser bounds sampled evidence reused, not continuous/native/device proof.'},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({masterUnchanged:true,picturePacketsMatch:true,qaPassed:true}));

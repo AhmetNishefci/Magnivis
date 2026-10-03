@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-10-03T17:11:15.369Z",
+  "passed": true,
+  "cycleId": "cycle.7",
+  "revision": 20,
+  "nextAction": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-7/publication/release-v1.json",
+    "sha256": "cb4b2cc4d6209f89eab7ebbc04daa8e47155636cfb96de769aa3661ba0fa2f46"
+  },
+  "reviewTargetSha256": "ced578011b0b483c09849cb0afe5185d75fc14c0b28baf237288c616a9f12d12",
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-7/publication/master-approval-v1.json",
+    "sha256": "3ea6ed8158f62d030e5aefa38bb46cdbfaec2046d29598e8b049378dff2c21a9"
+  },
+  "masterUnchanged": true,
+  "fullMediaDecode": "passed",
+  "approvedSourceAndInputHashesUnchanged": true,
+  "priorCanonicalEntriesUnchanged": 698,
+  "canonicalPayloads": 699,
+  "newCanonicalPayloads": 1,
+  "newMediaBytes": 1782235,
+  "uniqueVideoPayloads": 1,
+  "derivativeVideos": 0,
+  "uniqueSelectedCoverPayloads": 2,
+  "newCoverPayloads": 1,
+  "unknownCount": 52,
+  "knownCollisions": [],
+  "uploads": [
+    {
+      "variantId": "interaction-free.variant.youtube.v1",
+      "platform": "youtube",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3",
+            "sha256": "d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/interaction-free-cycle7-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.a0757daefec248b8996ed90b1f04ffa5a74333c44522657729ad07c7ea3d254d",
+            "sha256": "a0757daefec248b8996ed90b1f04ffa5a74333c44522657729ad07c7ea3d254d"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/interaction-free-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "ef2403c5d30e5ff0bb264d3992e28df0d40d1173a949e5ebe518283d7842f034"
+    },
+    {
+      "variantId": "interaction-free.variant.tiktok.v1",
+      "platform": "tiktok",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3",
+            "sha256": "d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/interaction-free-cycle7-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.9e557bb3e7d2e73393540f5d1dc3bf296f4f85270048342dfe694e689d9d1891",
+            "sha256": "9e557bb3e7d2e73393540f5d1dc3bf296f4f85270048342dfe694e689d9d1891"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/interaction-free-cycle7-v3/frame-66-32.7s.png"
+        }
+      ],
+      "manifestSha256": "548d1c40d3b5c2817575bb4463e17dfcbc227fe849211aa896ea65ba426491a8"
+    },
+    {
+      "variantId": "interaction-free.variant.instagram.v1",
+      "platform": "instagram",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3",
+            "sha256": "d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/interaction-free-cycle7-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.a0757daefec248b8996ed90b1f04ffa5a74333c44522657729ad07c7ea3d254d",
+            "sha256": "a0757daefec248b8996ed90b1f04ffa5a74333c44522657729ad07c7ea3d254d"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/interaction-free-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "b4366a36488a85e66e2ecf32507b2c1a89a0bcdd2b847949b4c769ede50945bd"
+    },
+    {
+      "variantId": "interaction-free.variant.facebook.v1",
+      "platform": "facebook",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3",
+            "sha256": "d781b6e8a48d01715d02c5ffb0d471008c5dbaf35f98413b1440be8b2eb5d5a3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/interaction-free-cycle7-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.9e557bb3e7d2e73393540f5d1dc3bf296f4f85270048342dfe694e689d9d1891",
+            "sha256": "9e557bb3e7d2e73393540f5d1dc3bf296f4f85270048342dfe694e689d9d1891"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/interaction-free-cycle7-v3/frame-66-32.7s.png"
+        }
+      ],
+      "manifestSha256": "b1c7f19c1550804d770ae3399e76ff4cca5a05c2398e017db5213ecf52032e27"
+    }
+  ],
+  "publicationAuthorized": false,
+  "externalPlatformActions": []
+}

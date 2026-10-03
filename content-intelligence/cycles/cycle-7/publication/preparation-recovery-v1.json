@@ -1,0 +1,12 @@
+{
+  "recordedAt": "2026-10-03T17:12:55.837881+00:00",
+  "firstAttempt": {
+    "stage": "presentation",
+    "journalRevision": 19,
+    "error": "Missing required presentation checkpoint",
+    "cause": "Expanded payoff coverage referenced existing measured frames but did not add samples with payoff kind. Controller refused readiness."
+  },
+  "preservedRecord": "youtube/video-evidence-v1.json",
+  "correction": "New video-evidence-v2 records add payoff-kind samples using existing measured critical bounds at981/1176/1516. Existing samples and media remain unchanged. Reused byte-identical partial records, no overwrites.",
+  "result": "Canonical complete-internal presentation transition accepted at event20. No bypass/schema changes or platform action."
+}
