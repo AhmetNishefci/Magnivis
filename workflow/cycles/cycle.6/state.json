@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.6",
-  "revision": 19,
+  "revision": 23,
   "authority": {
     "path": "workflow/authorities/cycle-6-start.json",
     "sha256": "6aed3e90317de6e37b4ea4668d1ee33d27054985c8c6238e732687de054e45b6"
@@ -69,7 +69,36 @@
     "sha256": "b58e2ef464adcf6121f59bf24ad88616dcded1b4bd19eb64deb111da0e6611c4"
   },
   "exception": null,
-  "observations": [],
+  "observations": [
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/youtube.json",
+        "sha256": "769a05dc36decd941df08f4e17a8180633f81d2c95e6fdb043f6797cf7967251"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/tiktok.json",
+        "sha256": "c2f6b0372f21e19430cab2a4d825466fbec83a1cce84afb3b200a1e6dc9cfaf9"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/instagram.json",
+        "sha256": "45f929468488938174b88a6c0bde33385c8b30f87ef9e28da83e64e24c3e4c6d"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/facebook.json",
+        "sha256": "70954c842d6030ed8636afb01559e5ba66bc442c8523d24559612218fba7932d"
+      }
+    }
+  ],
   "history": [
     {
       "revision": 1,
@@ -259,6 +288,46 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-6/publication/owner-publication-decision-v1.json",
         "sha256": "b58e2ef464adcf6121f59bf24ad88616dcded1b4bd19eb64deb111da0e6611c4"
+      }
+    },
+    {
+      "revision": 20,
+      "previousSha256": "a8f8881908e86c34522991c3e1fa27956204a8a09b059481d27dea39b8f30b0d",
+      "event": "observe",
+      "at": "2026-10-03T14:11:04.251Z",
+      "evidence": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/youtube.json",
+        "sha256": "769a05dc36decd941df08f4e17a8180633f81d2c95e6fdb043f6797cf7967251"
+      }
+    },
+    {
+      "revision": 21,
+      "previousSha256": "e2158b1aca71d18be9365c0fe607ce5d11b3d3921176253cdea66b63789da67e",
+      "event": "observe",
+      "at": "2026-10-03T14:11:04.251Z",
+      "evidence": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/tiktok.json",
+        "sha256": "c2f6b0372f21e19430cab2a4d825466fbec83a1cce84afb3b200a1e6dc9cfaf9"
+      }
+    },
+    {
+      "revision": 22,
+      "previousSha256": "6cd7cf17d4d10e0ef4c4df5e92e9dc98f37090643f4711615d1aacd47b3907ee",
+      "event": "observe",
+      "at": "2026-10-03T14:11:04.251Z",
+      "evidence": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/instagram.json",
+        "sha256": "45f929468488938174b88a6c0bde33385c8b30f87ef9e28da83e64e24c3e4c6d"
+      }
+    },
+    {
+      "revision": 23,
+      "previousSha256": "57931f57e200c49755c98ce07a9256eb753c75e40db52ec3e241d1314d9081b7",
+      "event": "observe",
+      "at": "2026-10-03T14:11:04.251Z",
+      "evidence": {
+        "path": "content-intelligence/operations/heat-barrier-scheduling-v1/facebook.json",
+        "sha256": "70954c842d6030ed8636afb01559e5ba66bc442c8523d24559612218fba7932d"
       }
     }
   ]
