@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "cycleId": "cycle.6",
+  "revisionAttempt": 2,
+  "method": "manual-session-assisted-open-world-search",
+  "provenance": "Session-authored discovery and qualitative comparison; no provider workflow envelope, paid API, invented metrics or owner topic bank.",
+  "maximumRounds": 3,
+  "rounds": [
+    {
+      "round": 1,
+      "queries": [
+        "Smithsonian Objects of Wonder institutional discoveries",
+        "Smithsonian invention unusual discoveries",
+        "British Library digitised manuscripts discoveries",
+        "NASA Ceres bright spots",
+        "Leidenfrost water drops hotter surfaces lifetime"
+      ],
+      "leads": [
+        "Hope Diamond postal package",
+        "Kevlar cloudy polymer",
+        "recovering erased manuscript text",
+        "Ceres bright deposits",
+        "Leidenfrost thermal reversal"
+      ],
+      "status": "insufficient provisional pool; strengthen plain premise and nontrivial payoff before selection"
+    },
+    {
+      "round": 2,
+      "queries": [
+        "site.si.edu research discovery surprising behavior language memory experiment",
+        "site.nobelprize.org auction winner curse explanation",
+        "site.nasa.gov star disappeared without supernova failed supernova evidence",
+        "site.nature.com human perception wetness no wetness receptors",
+        "M31 2014 DS1 Science 2026 disappearing star De Kishalay infrared 10000",
+        "site.nobelprize.org 2020 common value winner curse bidders",
+        "site.loc.gov discoveries manuscript erased text palimpsest",
+        "site.edu Leidenfrost drop lifetime temperature vapor cushion hotter lasts longer",
+        "Leidenfrost lifetime droplets temperature 200 300 evaporation experiment primary"
+      ],
+      "status": "compare stronger developed premises against first pool; access-check competing science before selection"
+    }
+  ],
+  "leads": [
+    {
+      "id": "diamond",
+      "url": "https://siarchives.si.edu/blog/17-objects-170-years-happy-birthday-smithsonian"
+    },
+    {
+      "id": "kevlar",
+      "url": "https://invention.si.edu/invention-stories/recognize-unusual"
+    },
+    {
+      "id": "star",
+      "url": "https://www.jpl.nasa.gov/news/archival-data-from-nasas-neowise-tracks-star-turning-into-black-hole/"
+    },
+    {
+      "id": "star-challenge",
+      "url": "https://arxiv.org/html/2601.14497v1",
+      "scope": "Abstract and introduction inspected; competing dusty binary-interaction explanation. Unsettled, no confirmed-black-hole premise."
+    },
+    {
+      "id": "auction",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2020/milgrom/biographical/"
+    },
+    {
+      "id": "manuscript",
+      "url": "https://blogs.loc.gov/loc/2018/01/technology-at-the-library-long-hidden-text-is-uncovered-in-alexander-hamilton-letter/"
+    },
+    {
+      "id": "wetness",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5384974/"
+    },
+    {
+      "key": "dupeux",
+      "organization": "Dupeux et al. / Scientific Reports",
+      "title": "Propulsion on a superhydrophobic ratchet",
+      "type": "peer-reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4055890/",
+      "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+      "summary": "Authors measured 60 microliter deionised water drops trapped on heated brass ratchets. Bare brass lifetime falls to seconds in the boiling regime and rises sharply beyond the Leidenfrost transition; above that transition lifetime gradually declines again. Vapor pressure supports the drop and removes direct liquid-solid contact. Coating changes the transition behavior. This supports a conditional hotter-can-last-longer statement, not a monotonic law.",
+      "limits": [
+        "Primary article body returned in full through the search retrieval result; subsequent direct-open requests returned a browser check. No figure or video visually inspected or reproduced.",
+        "Ratchet, trapped drop and coated comparison are specific experimental setups; no universal pan temperature or lifetime claimed."
+      ]
+    },
+    {
+      "key": "lyu",
+      "organization": "Lyu et al. / Science Advances",
+      "title": "Final fate of a Leidenfrost droplet: Explosion or takeoff",
+      "type": "peer-reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6499590/",
+      "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+      "summary": "The introduction explicitly describes the reversal of evaporation rate above a threshold and levitation on a vapor layer with poor thermal conductivity. Experiments on quartz examine how initial size and contamination affect later behavior. Used for the thermal barrier and dependence on droplet conditions, not for a claim about every droplet exploding or taking off.",
+      "limits": [
+        "Full article HTML text inspected. No microscopy, supplementary videos or raw data inspected.",
+        "The production excludes final-stage explosions, human contact and practical cooking prescriptions."
+      ]
+    },
+    {
+      "key": "walker",
+      "organization": "Jearl Walker / Reed University-hosted teaching compilation",
+      "title": "Boiling and the Leidenfrost Effect; compiled experimental papers",
+      "type": "university",
+      "url": "https://www.reed.edu/physics/332/pdf/Leidenfrost.pdf",
+      "locator": "PDF pages 1\u20132, vapor layer and Figure 3 lifetime explanation; pages 13\u201316, Bernardin and Mudawar experimental results",
+      "summary": "Walker describes his hot-plate experiments: direct-contact drops disappear quickly below the transition; the bottom vaporizes promptly at the transition, pressure supports the remaining liquid, and an insulating layer is replenished. Later compiled primary experimental results discuss surface roughness, deposits and thermal properties affecting the transition. No single numeric threshold is transferred to pans.",
+      "limits": [
+        "Parsed PDF text inspected, not a screenshot inspection. It is a compilation of distinct works; source locators keep those identities separate.",
+        "Unsafe stunt passages are excluded from both narration and visuals. No instructions for touching hot surfaces."
+      ]
+    }
+  ],
+  "access": "Discovery search leads remain unverified except separately documented selected-source inspections. No retrieved social-platform views used as performance evidence."
+}

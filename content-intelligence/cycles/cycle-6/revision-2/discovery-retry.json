@@ -1,0 +1,16 @@
+{
+  "cycleId": "cycle.6",
+  "ownerDecision": {
+    "path": "content-intelligence/cycles/cycle-6/revision-2/tally-owner-rejection-v1.json",
+    "sha256": "e9cc509173334df599b3cf3b354a5eb1af2eef0c5aeefc5f6449752b006eaff0"
+  },
+  "ownerFeedback": {
+    "path": "content-intelligence/cycles/cycle-6/revision-2/owner-feedback.json",
+    "sha256": "ed9dabf54640dffc7ac9a232162728bb7e4a0a3ca4dd4858b9dee2c6136f6246"
+  },
+  "reason": "Topic-level rejection; existing owner-decision returns to production, existing retry-internal returns upstream to discovery while immutable journal preserves all old receipts.",
+  "maximumRounds": 3,
+  "priorRecords": [],
+  "budgetBasis": "Explicit owner replacement-discovery authority: three new bounded rounds; rejected successful selection is history, not an unfinished prior round.",
+  "workflowAudit": "No architecture defect: existing two-event path supports same-cycle topic revision. No code or gate change."
+}

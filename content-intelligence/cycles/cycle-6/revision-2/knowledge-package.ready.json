@@ -1,0 +1,341 @@
+{
+  "id": "heat-barrier",
+  "revision": 1,
+  "topic": "Why a hotter surface can make water last longer",
+  "centralQuestion": "Why can a hotter pan make a drop of water last longer?",
+  "taxonomy": {
+    "pillar": "science-reality",
+    "domains": [
+      "heat-transfer",
+      "fluid-physics"
+    ],
+    "topics": [
+      "leidenfrost",
+      "phase-transition",
+      "thermal-contact"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "Crossing into vapor-supported levitation can reduce direct thermal contact despite a hotter surface.",
+  "viewerPayoff": "Understand why heat transfer depends on the path into the water, not temperature alone.",
+  "sources": [
+    {
+      "id": "source.heat-barrier.dupeux",
+      "organization": "Dupeux et al. / Scientific Reports",
+      "title": "Propulsion on a superhydrophobic ratchet",
+      "sourceType": "peer-reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4055890/",
+      "retrieved": "2026-10-03",
+      "notes": "Primary article body returned in full through the search retrieval result; subsequent direct-open requests returned a browser check. No figure or video visually inspected or reproduced. Ratchet, trapped drop and coated comparison are specific experimental setups; no universal pan temperature or lifetime claimed."
+    },
+    {
+      "id": "source.heat-barrier.lyu",
+      "organization": "Lyu et al. / Science Advances",
+      "title": "Final fate of a Leidenfrost droplet: Explosion or takeoff",
+      "sourceType": "peer-reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6499590/",
+      "retrieved": "2026-10-03",
+      "notes": "Full article HTML text inspected. No microscopy, supplementary videos or raw data inspected. The production excludes final-stage explosions, human contact and practical cooking prescriptions."
+    },
+    {
+      "id": "source.heat-barrier.walker",
+      "organization": "Jearl Walker / Reed University-hosted teaching compilation",
+      "title": "Boiling and the Leidenfrost Effect; compiled experimental papers",
+      "sourceType": "university",
+      "url": "https://www.reed.edu/physics/332/pdf/Leidenfrost.pdf",
+      "retrieved": "2026-10-03",
+      "notes": "Parsed PDF text inspected, not a screenshot inspection. It is a compilation of distinct works; source locators keep those identities separate. Unsafe stunt passages are excluded from both narration and visuals. No instructions for touching hot surfaces."
+    }
+  ],
+  "claims": [
+    {
+      "id": "heat-barrier.claim.reversal",
+      "statement": "Across the transition to vapor-supported levitation, a hotter metal surface can make a water drop evaporate more slowly.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "notes": "Conditional comparison across boiling regimes, never hotter-always-slower. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "notes": "Conditional comparison across boiling regimes, never hotter-always-slower. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "notes": "Conditional comparison across boiling regimes, never hotter-always-slower. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Conditional comparison across boiling regimes, never hotter-always-slower."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.6",
+          "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "heat-barrier.claim.contact",
+      "statement": "Water in direct contact with a sufficiently hot metal surface can boil and evaporate quickly.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "notes": "Not all hot surfaces; below-boiling temperatures also evaporate slowly. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "notes": "Not all hot surfaces; below-boiling temperatures also evaporate slowly. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Not all hot surfaces; below-boiling temperatures also evaporate slowly."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.6",
+          "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "heat-barrier.claim.cushion",
+      "statement": "Rapid vaporization at the bottom creates a vapor layer whose pressure supports the remaining liquid away from the surface.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "notes": "Qualitative schematic; layer thickness enlarged and no levitation height claimed. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "notes": "Qualitative schematic; layer thickness enlarged and no levitation height claimed. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Qualitative schematic; layer thickness enlarged and no levitation height claimed."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.6",
+          "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "heat-barrier.claim.insulation",
+      "statement": "The vapor layer conducts heat poorly, reducing heat transfer and slowing evaporation.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "notes": "Heat still crosses by conduction and radiation; not complete insulation. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "notes": "Heat still crosses by conduction and radiation; not complete insulation. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Heat still crosses by conduction and radiation; not complete insulation."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.6",
+          "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "heat-barrier.claim.name",
+      "statement": "Vapor-supported droplet levitation over a hot surface is the Leidenfrost effect.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "notes": "No first-discoverer or historical-priority claim. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "notes": "No first-discoverer or historical-priority claim. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No first-discoverer or historical-priority claim."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.6",
+          "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "heat-barrier.claim.boundary",
+      "statement": "The transition depends on surface and droplet conditions; further heating above the transition can speed evaporation again.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "notes": "Surface roughness, coating, contamination, size and setup matter; no universal threshold. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "notes": "Surface roughness, coating, contamination, size and setup matter; no universal threshold. Assessment limited to documented historical scope."
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "notes": "Surface roughness, coating, contamination, size and setup matter; no universal threshold. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Surface roughness, coating, contamination, size and setup matter; no universal threshold."
+      ],
+      "review": {
+        "reviewedBy": "Codex session — internal evidence review, not Ahmet",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.6",
+          "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+        },
+        "reviewedAt": "2026-10-03"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "heat-barrier.claim.always",
+      "statement": "A hotter surface always makes water evaporate more slowly.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "notes": "False monotonic generalization explicitly excluded. Assessment limited to documented historical scope."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "False monotonic generalization explicitly excluded."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "heat-barrier.caveat.reconstruction",
+      "statement": "Original qualitative model, not experimental footage or a fluid simulation; vapor gap enlarged, no numeric threshold or drop lifetime.",
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.contact",
+        "heat-barrier.claim.cushion",
+        "heat-barrier.claim.insulation",
+        "heat-barrier.claim.name",
+        "heat-barrier.claim.boundary"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "heat-barrier.hook.reversal",
+      "archetype": "conditional-paradox",
+      "text": "Why can a hotter pan make a drop of water last longer?",
+      "viewerPromise": "Resolve a temperature-versus-heat-transfer contradiction.",
+      "claimIds": [
+        "heat-barrier.claim.reversal"
+      ]
+    },
+    {
+      "id": "heat-barrier.hook.contact",
+      "archetype": "causal-question",
+      "text": "How can heat create a barrier to its own heat?",
+      "viewerPromise": "Explain the vapor layer without claiming complete insulation.",
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.insulation"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "heat-barrier.narrative.contact",
+      "title": "Contact to cushion",
+      "description": "Show the reversal, magnify the gap, explain thermal resistance, return with scope.",
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.contact",
+        "heat-barrier.claim.cushion",
+        "heat-barrier.claim.insulation",
+        "heat-barrier.claim.name",
+        "heat-barrier.claim.boundary"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "heat-barrier.visual.sequence",
+      "title": "Paired drops to enlarged vapor gap",
+      "description": "Original metal-and-water macro with enlarged vapor layer and qualitative thermal paths.",
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.contact",
+        "heat-barrier.claim.cushion",
+        "heat-barrier.claim.insulation",
+        "heat-barrier.claim.name",
+        "heat-barrier.claim.boundary"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "How do surface coatings change boiling?",
+    "What controls the vapor layer?"
+  ],
+  "followUpOpportunities": [
+    "Separate investigation of droplet motion on structured surfaces."
+  ],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex session — internal evidence review, not Ahmet",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.6",
+      "reviewSha256": "dae50d8bda5361f0f017efb70c8a0f10e3a1e6ea9e33e25fef17b9268a1b44ec"
+    },
+    "approvedAt": "2026-10-03",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

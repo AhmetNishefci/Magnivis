@@ -1,0 +1,201 @@
+{
+  "sources": [
+    {
+      "key": "dupeux",
+      "organization": "Dupeux et al. / Scientific Reports",
+      "title": "Propulsion on a superhydrophobic ratchet",
+      "type": "peer-reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4055890/",
+      "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+      "summary": "Authors measured 60 microliter deionised water drops trapped on heated brass ratchets. Bare brass lifetime falls to seconds in the boiling regime and rises sharply beyond the Leidenfrost transition; above that transition lifetime gradually declines again. Vapor pressure supports the drop and removes direct liquid-solid contact. Coating changes the transition behavior. This supports a conditional hotter-can-last-longer statement, not a monotonic law.",
+      "limits": [
+        "Primary article body returned in full through the search retrieval result; subsequent direct-open requests returned a browser check. No figure or video visually inspected or reproduced.",
+        "Ratchet, trapped drop and coated comparison are specific experimental setups; no universal pan temperature or lifetime claimed."
+      ]
+    },
+    {
+      "key": "lyu",
+      "organization": "Lyu et al. / Science Advances",
+      "title": "Final fate of a Leidenfrost droplet: Explosion or takeoff",
+      "type": "peer-reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6499590/",
+      "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+      "summary": "The introduction explicitly describes the reversal of evaporation rate above a threshold and levitation on a vapor layer with poor thermal conductivity. Experiments on quartz examine how initial size and contamination affect later behavior. Used for the thermal barrier and dependence on droplet conditions, not for a claim about every droplet exploding or taking off.",
+      "limits": [
+        "Full article HTML text inspected. No microscopy, supplementary videos or raw data inspected.",
+        "The production excludes final-stage explosions, human contact and practical cooking prescriptions."
+      ]
+    },
+    {
+      "key": "walker",
+      "organization": "Jearl Walker / Reed University-hosted teaching compilation",
+      "title": "Boiling and the Leidenfrost Effect; compiled experimental papers",
+      "type": "university",
+      "url": "https://www.reed.edu/physics/332/pdf/Leidenfrost.pdf",
+      "locator": "PDF pages 1\u20132, vapor layer and Figure 3 lifetime explanation; pages 13\u201316, Bernardin and Mudawar experimental results",
+      "summary": "Walker describes his hot-plate experiments: direct-contact drops disappear quickly below the transition; the bottom vaporizes promptly at the transition, pressure supports the remaining liquid, and an insulating layer is replenished. Later compiled primary experimental results discuss surface roughness, deposits and thermal properties affecting the transition. No single numeric threshold is transferred to pans.",
+      "limits": [
+        "Parsed PDF text inspected, not a screenshot inspection. It is a compilation of distinct works; source locators keep those identities separate.",
+        "Unsafe stunt passages are excluded from both narration and visuals. No instructions for touching hot surfaces."
+      ]
+    }
+  ],
+  "definitions": [
+    [
+      "reversal",
+      "Across the transition to vapor-supported levitation, a hotter metal surface can make a water drop evaporate more slowly.",
+      [
+        "dupeux",
+        "lyu",
+        "walker"
+      ],
+      "Conditional comparison across boiling regimes, never hotter-always-slower."
+    ],
+    [
+      "contact",
+      "Water in direct contact with a sufficiently hot metal surface can boil and evaporate quickly.",
+      [
+        "dupeux",
+        "walker"
+      ],
+      "Not all hot surfaces; below-boiling temperatures also evaporate slowly."
+    ],
+    [
+      "cushion",
+      "Rapid vaporization at the bottom creates a vapor layer whose pressure supports the remaining liquid away from the surface.",
+      [
+        "dupeux",
+        "walker"
+      ],
+      "Qualitative schematic; layer thickness enlarged and no levitation height claimed."
+    ],
+    [
+      "insulation",
+      "The vapor layer conducts heat poorly, reducing heat transfer and slowing evaporation.",
+      [
+        "lyu",
+        "walker"
+      ],
+      "Heat still crosses by conduction and radiation; not complete insulation."
+    ],
+    [
+      "name",
+      "Vapor-supported droplet levitation over a hot surface is the Leidenfrost effect.",
+      [
+        "lyu",
+        "dupeux"
+      ],
+      "No first-discoverer or historical-priority claim."
+    ],
+    [
+      "boundary",
+      "The transition depends on surface and droplet conditions; further heating above the transition can speed evaporation again.",
+      [
+        "dupeux",
+        "lyu",
+        "walker"
+      ],
+      "Surface roughness, coating, contamination, size and setup matter; no universal threshold."
+    ],
+    [
+      "always",
+      "A hotter surface always makes water evaporate more slowly.",
+      [
+        "dupeux"
+      ],
+      "False monotonic generalization explicitly excluded."
+    ]
+  ],
+  "lines": [
+    [
+      "Why can a hotter pan make a drop of water last longer?",
+      [
+        "reversal"
+      ]
+    ],
+    [
+      "On a hot metal surface, water can touch the metal and boil away quickly.",
+      [
+        "contact"
+      ]
+    ],
+    [
+      "Heat it far enough, and something changes.",
+      [
+        "reversal",
+        "cushion"
+      ]
+    ],
+    [
+      "The bottom of the drop turns to vapor almost instantly.",
+      [
+        "cushion"
+      ]
+    ],
+    [
+      "That vapor forms a cushion, lifting the rest of the water off the metal.",
+      [
+        "cushion"
+      ]
+    ],
+    [
+      "Now heat must cross a poorly conducting gas layer.",
+      [
+        "insulation"
+      ]
+    ],
+    [
+      "The hotter surface has created a barrier to its own heat.",
+      [
+        "insulation",
+        "reversal"
+      ]
+    ],
+    [
+      "This is the Leidenfrost effect.",
+      [
+        "name"
+      ]
+    ],
+    [
+      "It doesn\u2019t mean hotter always makes water last longer.",
+      [
+        "boundary"
+      ]
+    ],
+    [
+      "The transition depends on the surface and the drop.",
+      [
+        "boundary"
+      ]
+    ],
+    [
+      "Above it, more heat can speed evaporation again.",
+      [
+        "boundary"
+      ]
+    ],
+    [
+      "The surprise is that a hotter surface can give water less direct contact with the heat.",
+      [
+        "reversal",
+        "cushion",
+        "insulation"
+      ]
+    ]
+  ],
+  "objectives": [
+    "Pose the conditional reversal with a disappearing direct-contact drop and a persistent bead.",
+    "Show wetting and rapid boiling on hot metal.",
+    "Transform from contact to vapor-supported state without numeric threshold.",
+    "Magnify bottom evaporation; reveal vapor formation.",
+    "Show enlarged vapor cushion and pressure support.",
+    "Contrast direct thermal path with slower transfer across gas.",
+    "Resolve the paradox: heat creates the barrier.",
+    "Name the understood phenomenon, not jargon before explanation.",
+    "Reject monotonic interpretation explicitly.",
+    "Show surface and droplet conditions matter without calibrated values.",
+    "Show evaporation continues and can accelerate above transition.",
+    "Return to paired contact/no-contact view with the mechanism understood."
+  ]
+}

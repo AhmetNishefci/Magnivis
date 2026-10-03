@@ -1,0 +1,407 @@
+{
+  "id": "heat-barrier.asset.vapor-cushion",
+  "revision": 1,
+  "knowledgePackageId": "heat-barrier",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand why heat transfer depends on the path into the water, not temperature alone.",
+  "storyAngle": "A hotter surface can create its own thermal barrier.",
+  "hookId": "heat-barrier.hook.reversal",
+  "selectedClaimIds": [
+    "heat-barrier.claim.reversal",
+    "heat-barrier.claim.contact",
+    "heat-barrier.claim.cushion",
+    "heat-barrier.claim.insulation",
+    "heat-barrier.claim.name",
+    "heat-barrier.claim.boundary"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 40,
+    "maximum": 80
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.1",
+        "type": "factual",
+        "text": "Why can a hotter pan make a drop of water last longer?",
+        "claimIds": [
+          "heat-barrier.claim.reversal"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.2",
+        "type": "factual",
+        "text": "On a hot metal surface, water can touch the metal and boil away quickly.",
+        "claimIds": [
+          "heat-barrier.claim.contact"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.3",
+        "type": "factual",
+        "text": "Heat it far enough, and something changes.",
+        "claimIds": [
+          "heat-barrier.claim.reversal",
+          "heat-barrier.claim.cushion"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.4",
+        "type": "factual",
+        "text": "The bottom of the drop turns to vapor almost instantly.",
+        "claimIds": [
+          "heat-barrier.claim.cushion"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.5",
+        "type": "factual",
+        "text": "That vapor forms a cushion, lifting the rest of the water off the metal.",
+        "claimIds": [
+          "heat-barrier.claim.cushion"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.6",
+        "type": "factual",
+        "text": "Now heat must cross a poorly conducting gas layer.",
+        "claimIds": [
+          "heat-barrier.claim.insulation"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.7",
+        "type": "factual",
+        "text": "The hotter surface has created a barrier to its own heat.",
+        "claimIds": [
+          "heat-barrier.claim.insulation",
+          "heat-barrier.claim.reversal"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.8",
+        "type": "factual",
+        "text": "This is the Leidenfrost effect.",
+        "claimIds": [
+          "heat-barrier.claim.name"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.9",
+        "type": "factual",
+        "text": "It doesn’t mean hotter always makes water last longer.",
+        "claimIds": [
+          "heat-barrier.claim.boundary"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.10",
+        "type": "factual",
+        "text": "The transition depends on the surface and the drop.",
+        "claimIds": [
+          "heat-barrier.claim.boundary"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.11",
+        "type": "factual",
+        "text": "Above it, more heat can speed evaporation again.",
+        "claimIds": [
+          "heat-barrier.claim.boundary"
+        ]
+      },
+      {
+        "id": "heat-barrier.asset.vapor-cushion.script.12",
+        "type": "factual",
+        "text": "The surprise is that a hotter surface can give water less direct contact with the heat.",
+        "claimIds": [
+          "heat-barrier.claim.reversal",
+          "heat-barrier.claim.cushion",
+          "heat-barrier.claim.insulation"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.1",
+      "label": "reversal",
+      "purpose": "Pose the conditional reversal with a disappearing direct-contact drop and a persistent bead.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.1"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.2",
+      "label": "contact",
+      "purpose": "Show wetting and rapid boiling on hot metal.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.2"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.3",
+      "label": "transition",
+      "purpose": "Transform from contact to vapor-supported state without numeric threshold.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.3"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.4",
+      "label": "vapor",
+      "purpose": "Magnify bottom evaporation; reveal vapor formation.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.4"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.5",
+      "label": "support",
+      "purpose": "Show enlarged vapor cushion and pressure support.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.5"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.6",
+      "label": "resistance",
+      "purpose": "Contrast direct thermal path with slower transfer across gas.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.6"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.7",
+      "label": "paradox",
+      "purpose": "Resolve the paradox: heat creates the barrier.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.7"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.8",
+      "label": "name",
+      "purpose": "Name the understood phenomenon, not jargon before explanation.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.8"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.9",
+      "label": "scope",
+      "purpose": "Reject monotonic interpretation explicitly.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.9"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.10",
+      "label": "conditions",
+      "purpose": "Show surface and droplet conditions matter without calibrated values.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.10"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.11",
+      "label": "continued-evaporation",
+      "purpose": "Show evaporation continues and can accelerate above transition.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.11"
+      ]
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.beat.12",
+      "label": "payoff",
+      "purpose": "Return to paired contact/no-contact view with the mechanism understood.",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.12"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.1",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.1",
+      "objective": "Pose the conditional reversal with a disappearing direct-contact drop and a persistent bead.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.1"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.reversal"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.2",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.2",
+      "objective": "Show wetting and rapid boiling on hot metal.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.2"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.contact"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.3",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.3",
+      "objective": "Transform from contact to vapor-supported state without numeric threshold.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.3"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.cushion"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.4",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.4",
+      "objective": "Magnify bottom evaporation; reveal vapor formation.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.4"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.cushion"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.5",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.5",
+      "objective": "Show enlarged vapor cushion and pressure support.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.5"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.cushion"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.6",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.6",
+      "objective": "Contrast direct thermal path with slower transfer across gas.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.6"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.insulation"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.7",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.7",
+      "objective": "Resolve the paradox: heat creates the barrier.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.7"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.insulation",
+        "heat-barrier.claim.reversal"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.8",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.8",
+      "objective": "Name the understood phenomenon, not jargon before explanation.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.8"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.name"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.9",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.9",
+      "objective": "Reject monotonic interpretation explicitly.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.9"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.boundary"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.10",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.10",
+      "objective": "Show surface and droplet conditions matter without calibrated values.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.10"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.boundary"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.11",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.11",
+      "objective": "Show evaporation continues and can accelerate above transition.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.11"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.boundary"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    },
+    {
+      "id": "heat-barrier.asset.vapor-cushion.visual.12",
+      "narrativeBeatId": "heat-barrier.asset.vapor-cushion.beat.12",
+      "objective": "Return to paired contact/no-contact view with the mechanism understood.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "heat-barrier.asset.vapor-cushion.script.12"
+      ],
+      "claimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.cushion",
+        "heat-barrier.claim.insulation"
+      ],
+      "notes": "Original qualitative droplet/metal model; enlarged gap, no measured times, temperatures or numerical heat flux. No hands or cooking instruction."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Current primary af_heart; curious question, clear thermal explanation, complete semantic sentences generated together; captions independent.",
+    "pronunciationNotes": [
+      "Leidenfrost: verify recognition and flag listening limitation",
+      "vapor; conducting; evaporation; semantic integrity of doesn’t mean contrast"
+    ]
+  },
+  "editorialStatus": "editorial-review"
+}

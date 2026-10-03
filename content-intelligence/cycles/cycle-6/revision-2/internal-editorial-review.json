@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.6",
+  "topicCandidateId": "heat-barrier",
+  "enteredAt": "2026-10-03T11:25:42.412Z",
+  "reviewer": "Codex session — internal evidence review, not Ahmet",
+  "packageSha256": "62d7881a840b2c67edae27276121f7749777d782876e4d04bba2cdfe1a5a58a2",
+  "assetSha256": "9b884cccdd6215da7280b3b6f4e8bfe20f1ef779c05c3ee15c00bd9dad4785d5",
+  "scriptSha256": "8ce53cb6ca2663ef8e38fe278bf5e77715d1f3acf8b2efbd697b5ec53a7b039d",
+  "inspections": [
+    {
+      "sourceId": "source.heat-barrier.dupeux",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation"
+      ],
+      "supportsClaimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.contact",
+        "heat-barrier.claim.cushion",
+        "heat-barrier.claim.name",
+        "heat-barrier.claim.boundary"
+      ],
+      "limitations": [
+        "Primary article body returned in full through the search retrieval result; subsequent direct-open requests returned a browser check. No figure or video visually inspected or reproduced.",
+        "Ratchet, trapped drop and coated comparison are specific experimental setups; no universal pan temperature or lifetime claimed."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/sources/dupeux-inspection.json",
+        "sha256": "b5d3f5f129729736bce2a2be97e91151c8f6f630d8ea77c197a0269ad1f68232"
+      },
+      "sourceQualityRationale": "Peer-reviewed primary experimental report; specific results not universalized."
+    },
+    {
+      "sourceId": "source.heat-barrier.lyu",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Introduction first paragraph; Results initial-size and contamination discussion"
+      ],
+      "supportsClaimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.insulation",
+        "heat-barrier.claim.name",
+        "heat-barrier.claim.boundary"
+      ],
+      "limitations": [
+        "Full article HTML text inspected. No microscopy, supplementary videos or raw data inspected.",
+        "The production excludes final-stage explosions, human contact and practical cooking prescriptions."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/sources/lyu-inspection.json",
+        "sha256": "1fee3af41e353c946f838722d4d3e3f9594cf28aea6027128197b4aaa4230c38"
+      },
+      "sourceQualityRationale": "Peer-reviewed primary experimental report; specific results not universalized."
+    },
+    {
+      "sourceId": "source.heat-barrier.walker",
+      "accessStatus": "inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results"
+      ],
+      "supportsClaimIds": [
+        "heat-barrier.claim.reversal",
+        "heat-barrier.claim.contact",
+        "heat-barrier.claim.cushion",
+        "heat-barrier.claim.insulation",
+        "heat-barrier.claim.boundary"
+      ],
+      "limitations": [
+        "Parsed PDF text inspected, not a screenshot inspection. It is a compilation of distinct works; source locators keep those identities separate.",
+        "Unsafe stunt passages are excluded from both narration and visuals. No instructions for touching hot surfaces."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-6/revision-2/sources/walker-inspection.json",
+        "sha256": "5f106c9315c50d6dde3fad1affb84ad5b847121b9d5dbfdb5550bec0fb26e14b"
+      },
+      "sourceQualityRationale": "University-hosted authored experimental explanation and compiled primary research; scoped locators."
+    }
+  ],
+  "claims": [
+    {
+      "id": "heat-barrier.claim.reversal",
+      "statementSha256": "826df4bed2ea56c5dde6bb81dcc60adc8f1f979cc73ee5ca40a226a7a7fc5ec3",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; historical scope and reconstruction limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "assessment": "Conditional comparison across boiling regimes, never hotter-always-slower. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "assessment": "Conditional comparison across boiling regimes, never hotter-always-slower. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "assessment": "Conditional comparison across boiling regimes, never hotter-always-slower. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "heat-barrier.claim.contact",
+      "statementSha256": "b20a9bcf17ccdea69deeb04f3af5d6ef7239c586f0b737c440146e83fa812584",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; historical scope and reconstruction limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "assessment": "Not all hot surfaces; below-boiling temperatures also evaporate slowly. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "assessment": "Not all hot surfaces; below-boiling temperatures also evaporate slowly. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "heat-barrier.claim.cushion",
+      "statementSha256": "1ea01e11219306d753879e82f6fc5cb24bae0a979c7e78f0f9c1b2b97f82eaea",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; historical scope and reconstruction limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "assessment": "Qualitative schematic; layer thickness enlarged and no levitation height claimed. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "assessment": "Qualitative schematic; layer thickness enlarged and no levitation height claimed. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "heat-barrier.claim.insulation",
+      "statementSha256": "de0cade08ee7f7f70d8463474891f56c27a8137fe32794da0bba3ca435982baa",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; historical scope and reconstruction limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "assessment": "Heat still crosses by conduction and radiation; not complete insulation. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "assessment": "Heat still crosses by conduction and radiation; not complete insulation. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "heat-barrier.claim.name",
+      "statementSha256": "8c7fa65d575a72d966b98259e2d0278fe4d8ffda9ce2e71f70cfdf3aefc6a873",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; historical scope and reconstruction limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "assessment": "No first-discoverer or historical-priority claim. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "assessment": "No first-discoverer or historical-priority claim. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "heat-barrier.claim.boundary",
+      "statementSha256": "9cce8e65ff6e4d0e011b3b416103febde450a5c1b5327ddde64e0d88d8af31b2",
+      "disposition": "verify",
+      "rationale": "Exact statement traced to inspected bodies; historical scope and reconstruction limits preserved.",
+      "evidence": [
+        {
+          "sourceId": "source.heat-barrier.dupeux",
+          "locator": "Experimental lifetime paragraph and Figure 2 caption; opening vapor-cushion explanation",
+          "assessment": "Surface roughness, coating, contamination, size and setup matter; no universal threshold. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.lyu",
+          "locator": "Introduction first paragraph; Results initial-size and contamination discussion",
+          "assessment": "Surface roughness, coating, contamination, size and setup matter; no universal threshold. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.heat-barrier.walker",
+          "locator": "PDF pages 1–2, vapor layer and Figure 3 lifetime explanation; pages 13–16, Bernardin and Mudawar experimental results",
+          "assessment": "Surface roughness, coating, contamination, size and setup matter; no universal threshold. Assessment limited to documented historical scope.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "heat-barrier.claim.always",
+      "statementSha256": "9c26f819b169fc66a9ba4b37fcc6a4513bfc37f935ef4b546353d05050fe399a",
+      "disposition": "exclude",
+      "rationale": "Unsupported or false extension explicitly excluded; cannot enter script or visual.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    }
+  ],
+  "misconceptionSafeguards": [
+    "Can and across-transition scope; never a monotonic temperature law.",
+    "Vapor is poorly conducting, not an absolute heat shield; evaporation continues.",
+    "No universal numerical transition temperature or lifetime.",
+    "Schematic enlarged gap, no measured footage, simulation or contact-safety claim."
+  ],
+  "comprehensionReview": "The plain reversal opens an information gap; direct contact versus vapor gap supplies causal payoff; scope and continued evaporation prevent a false universal.",
+  "rightsReview": "Original visual code and licensed existing fonts/local Kokoro only. Scientific figures, photos and videos are consultation evidence only. No new paid service, cost deviation, purchase or infrastructure.",
+  "careAssessment": {
+    "state": "routine",
+    "rationale": "Established physical mechanism with bounded empirical support; explanation only, no experiment instructions or sensitive advice."
+  },
+  "exceptionalConditions": []
+}

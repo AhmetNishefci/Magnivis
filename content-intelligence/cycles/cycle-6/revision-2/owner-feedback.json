@@ -1,0 +1,28 @@
+{
+  "cycleId": "cycle.6",
+  "enteredAt": "2026-10-03T11:08:50.332Z",
+  "evidenceBasis": "explicit-owner-message",
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-6/master-candidate-v1.json",
+    "sha256": "41d91235c4fcd275a0739dad1d553c8aa65fd3f5d2c7b3041a7a487c7405124b"
+  },
+  "ownerDecision": {
+    "path": "content-intelligence/cycles/cycle-6/revision-2/tally-owner-rejection-v1.json",
+    "sha256": "e9cc509173334df599b3cf3b354a5eb1af2eef0c5aeefc5f6449752b006eaff0"
+  },
+  "topicDisposition": "rejected-below-opportunity-threshold",
+  "rationale": "Factual/surprising/reasonably interesting does not establish unusually strong intrinsic cold-audience curiosity and meaningful payoff.",
+  "productionObservations": [
+    {
+      "text": "“destroyed” was pronounced incorrectly, sounding closer to “destrayd” than the intended pronunciation.",
+      "kind": "owner-listening-pronunciation-failure"
+    },
+    {
+      "text": "The dangerous part wasn’t keeping records on wood. It was choosing where to burn them.",
+      "kind": "owner-listening-prosody-failure",
+      "finding": "Audible sentence end after wasn’t broke intended grammatical contrast."
+    }
+  ],
+  "preservation": "Rejected canonical bytes, package, evidence, original QA and owner handoff remain unchanged. ASR correctness is not subjective pronunciation/prosody acceptance.",
+  "futurePractice": "Generate narration on complete semantic clauses/sentences rather than caption chunks; segment captions independently on actual measured speech. Review actual pronunciation and semantic prosody; ASR is corroboration only. No word-specific substitution or rejected-master repair."
+}
