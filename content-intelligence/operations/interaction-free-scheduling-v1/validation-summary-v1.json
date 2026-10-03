@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-03T17:29:58.286578+00:00",
+  "passed": true,
+  "schedulingCommit": "0125a40",
+  "runtime": "Node22.23.3/pnpm10.17.1",
+  "pnpmCheck": {
+    "exitCode": 0,
+    "testFiles": 49,
+    "tests": 468,
+    "typecheck": "passed",
+    "lint": "passed"
+  },
+  "workflowReplay": "passed; authorized revision25, four scheduling observations, zero publication/metrics observations",
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 699,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "integrity": "Exact approved master/package/catalog/earlier journals and prior protected files unchanged",
+  "scopedSecretScan": {
+    "files": 14,
+    "findings": 0,
+    "scope": "High-confidence private-key/API-key/AWS-key patterns in changed text"
+  },
+  "diffHygiene": "passed",
+  "pushPreflight": {
+    "historyPreserving": true,
+    "remoteAncestorOfLocal": true,
+    "preexistingLocalCommitsAwaitingPush": 6,
+    "newReachableBlobCount": 480,
+    "largestNewReachableBlobBytes": 12259210,
+    "newReachableBlobBytes": 118558120,
+    "noOversizedNewGitHubFile": true
+  },
+  "scheduling": "owner-reported on all four destinations; scheduled date/time/timezone/action time unknown",
+  "publication": "unknown, evidence pending",
+  "analytics": null,
+  "assistantMediaPlatformActions": [],
+  "cycle8Started": false,
+  "discoveryStarted": false,
+  "calibrationModified": false,
+  "premiseReviewModified": false
+}
