@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-03T13:55:16.904105Z",
+  "cycleId": "cycle.6",
+  "revision": 19,
+  "stage": "authorized",
+  "passed": true,
+  "checks": {
+    "authorizedCliResolution": "passed: exact replayed four-platform release and owner decision",
+    "manualCopyFidelity": "All four descriptions/captions and first comments exact; YouTube/Facebook titles and YouTube tags exact",
+    "reviewedHistoricalPathsUnchanged": 1236,
+    "canonicalCatalogAndPayloadHashesUnchanged": 517,
+    "acceptedPresentationUnknowns": 52,
+    "acceptedOperationalUnknowns": 5,
+    "newMediaPayloads": 0,
+    "mediaRegeneratedEncodedOrCopied": 0,
+    "publicationEvidenceCreated": false,
+    "cycle7Started": false,
+    "pnpm check": {
+      "passed": true,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 49,
+      "tests": 468,
+      "whitespace": "passed"
+    },
+    "pnpm artifacts:durable": {
+      "passed": true,
+      "canonicalPayloads": 517,
+      "frozenLegacyBinaryPaths": 442,
+      "durableArtifacts": 731,
+      "historicalMissingWoodFrogExpectation": "preserved"
+    }
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-6/publication/release-v1.json",
+    "sha256": "84401b8027fef4ec13fe825ab00a367e58367c072551a10222cafd8008c9105c"
+  },
+  "ownerDecision": {
+    "path": "content-intelligence/cycles/cycle-6/publication/owner-publication-decision-v1.json",
+    "sha256": "b58e2ef464adcf6121f59bf24ad88616dcded1b4bd19eb64deb111da0e6611c4"
+  },
+  "scheduling": null,
+  "publication": null,
+  "URLsAndIDs": null,
+  "settings": null,
+  "presentationObservations": null,
+  "analytics": null,
+  "assistantPlatformActions": [],
+  "futureTask": "Separate editorial calibration before Cycle #7; recorded only, not executed."
+}

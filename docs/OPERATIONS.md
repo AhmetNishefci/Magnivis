@@ -1,3 +1,5 @@
+> 2026-10-03 Cycle #6: Exact V4 four-platform release is owner-authorized under V3 with scoped presentation/operational uncertainty acceptance. Owner performs all platform actions; no assistant upload, schedule, publish or private preview. Actual scheduling/publication/URLs/IDs/settings/comments/presentation/analytics remain unknown. `content-intelligence/cycles/cycle-6/publication/manual-release-v1.md` contains exact approved copy/settings and media; `publication-evidence-intake-v1.json` is awaiting evidence, not a PublicationRecord. No Cycle #7 start; separate editorial calibration is the next future system task. Historical states below remain unchanged.
+
 > Current prospective orchestration and two-gate authority: [WORKFLOW-V3](WORKFLOW-V3.md). Current machine state: [project-state](../workflow/project-state.json). Dated milestones below retain their historical meaning; V3 does not reapprove or rewrite them.
 
 # Platform operations and measurement
