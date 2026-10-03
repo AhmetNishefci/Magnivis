@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.7",
-  "revision": 21,
+  "revision": 25,
   "authority": {
     "path": "workflow/authorities/cycle-7-start.json",
     "sha256": "fd3e0521311bcc0db62a132b9451584f4ecac851090f802b695e8761e983cefe"
@@ -62,7 +62,36 @@
     "sha256": "c217154a63fba59a0233a364c8b0eb33d58d29009ea83fdd3d19e8b091dfd4b0"
   },
   "exception": null,
-  "observations": [],
+  "observations": [
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/youtube.json",
+        "sha256": "b8d58991933d9564f96020091610612e4ced723152cfb83cf48cde2f23e83869"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/tiktok.json",
+        "sha256": "73f91b0c5c62ff0dbbc6fb1b049acd408bfc7c8b40ed8b72446e52c015701773"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/instagram.json",
+        "sha256": "278f9ea4aa7295bdfa893550982b3b6692b97165f56be001a5f10f3c25b5677e"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/facebook.json",
+        "sha256": "51090ce872d7e26ed0a9c34fda87bf06baa2182117f6fbbed47d54cec35b483b"
+      }
+    }
+  ],
   "history": [
     {
       "revision": 1,
@@ -272,6 +301,46 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-7/publication/owner-publication-decision-v1.json",
         "sha256": "c217154a63fba59a0233a364c8b0eb33d58d29009ea83fdd3d19e8b091dfd4b0"
+      }
+    },
+    {
+      "revision": 22,
+      "previousSha256": "86d1714d68d7646aaa2e93c845d44cfe32ba7746bc9a1c7a857c29b3d2fb69db",
+      "event": "observe",
+      "at": "2026-10-03T17:27:03.328Z",
+      "evidence": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/youtube.json",
+        "sha256": "b8d58991933d9564f96020091610612e4ced723152cfb83cf48cde2f23e83869"
+      }
+    },
+    {
+      "revision": 23,
+      "previousSha256": "b3e065ce236cc52c7c66ca01e11f9e7d0dd1890d5b5f051c784292590d07af35",
+      "event": "observe",
+      "at": "2026-10-03T17:27:03.328Z",
+      "evidence": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/tiktok.json",
+        "sha256": "73f91b0c5c62ff0dbbc6fb1b049acd408bfc7c8b40ed8b72446e52c015701773"
+      }
+    },
+    {
+      "revision": 24,
+      "previousSha256": "9698b53318d138c3caf4ea1e6d4548701388d7c161e597a3522533026dc1a1a9",
+      "event": "observe",
+      "at": "2026-10-03T17:27:03.328Z",
+      "evidence": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/instagram.json",
+        "sha256": "278f9ea4aa7295bdfa893550982b3b6692b97165f56be001a5f10f3c25b5677e"
+      }
+    },
+    {
+      "revision": 25,
+      "previousSha256": "8286704ace6227f491219046974886629c31dcfb93d0d6324672bca45f19ba62",
+      "event": "observe",
+      "at": "2026-10-03T17:27:03.328Z",
+      "evidence": {
+        "path": "content-intelligence/operations/interaction-free-scheduling-v1/facebook.json",
+        "sha256": "51090ce872d7e26ed0a9c34fda87bf06baa2182117f6fbbed47d54cec35b483b"
       }
     }
   ]
