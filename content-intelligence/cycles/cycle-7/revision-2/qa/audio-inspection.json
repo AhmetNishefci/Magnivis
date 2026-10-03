@@ -1,0 +1,483 @@
+{
+  "checkedAt": "2026-10-03T15:47:34.841Z",
+  "masterPath": "artifacts/masters/interaction-free-cycle7-candidate-v2.mp4",
+  "masterSha256": "8b93fa46e79e0e16bd2d3e5465beb812a1670eb4cfa1279e87f9c09706d6c987",
+  "method": "Local Whisper tiny.en ASR of each clip and full decoded master, plus independent ffprobe durations; machine corroboration, not human subjective listening. All exact decoded-master sentence intervals also inspected; whole-master recognition is secondary corroboration, never pronunciation/prosody acceptance.",
+  "model": "onnx-community/whisper-tiny.en",
+  "modelSha256": "e93ec822f16a8fd264e7de972ad17d615ea7334b75a52d54c50c2e18dd503a25",
+  "narratorModelSha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478",
+  "semanticUnits": [
+    {
+      "id": "ifm-cue-1",
+      "fullSentence": "How can light reveal an obstacle without being absorbed or reflected by it?",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000012f0000] silence_start: 0",
+        "[silencedetect @ 0x6000012f0000] silence_end: 0.300542 | silence_duration: 0.300542",
+        "[silencedetect @ 0x6000012f0000] silence_start: 2.09175",
+        "[silencedetect @ 0x6000012f0000] silence_end: 2.47092 | silence_duration: 0.379167",
+        "[silencedetect @ 0x6000012f0000] silence_start: 4.82579",
+        "[silencedetect @ 0x6000012f0000] silence_end: 5.3 | silence_duration: 0.474208"
+      ]
+    },
+    {
+      "id": "ifm-cue-2",
+      "fullSentence": "Send one photon into an interferometer: two possible paths, joined again.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600001bfc000] silence_start: 2.57842",
+        "[silencedetect @ 0x600001bfc000] silence_end: 3.07675 | silence_duration: 0.498333",
+        "[silencedetect @ 0x600001bfc000] silence_start: 5.03167",
+        "[silencedetect @ 0x600001bfc000] silence_end: 5.525 | silence_duration: 0.493333"
+      ]
+    },
+    {
+      "id": "ifm-cue-3",
+      "fullSentence": "With both paths open and the device correctly aligned, interference keeps one detector dark.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600000058000] silence_start: 0",
+        "[silencedetect @ 0x600000058000] silence_end: 0.330375 | silence_duration: 0.330375",
+        "[silencedetect @ 0x600000058000] silence_start: 3.48046",
+        "[silencedetect @ 0x600000058000] silence_end: 3.93446 | silence_duration: 0.454",
+        "[silencedetect @ 0x600000058000] silence_start: 5.9455",
+        "[silencedetect @ 0x600000058000] silence_end: 6.425 | silence_duration: 0.4795"
+      ]
+    },
+    {
+      "id": "ifm-cue-4",
+      "fullSentence": "The waves associated with the two paths cancel at that output.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003a300c0] silence_start: 0",
+        "[silencedetect @ 0x600003a300c0] silence_end: 0.328583 | silence_duration: 0.328583",
+        "[silencedetect @ 0x600003a300c0] silence_start: 3.80592",
+        "[silencedetect @ 0x600003a300c0] silence_end: 4.375 | silence_duration: 0.569083"
+      ]
+    },
+    {
+      "id": "ifm-cue-5",
+      "fullSentence": "Now put a light-absorbing object in one path. If it absorbs the photon, neither output detector clicks.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003a84000] silence_start: 0",
+        "[silencedetect @ 0x600003a84000] silence_end: 0.3285 | silence_duration: 0.3285",
+        "[silencedetect @ 0x600003a84000] silence_start: 3.01812",
+        "[silencedetect @ 0x600003a84000] silence_end: 3.57462 | silence_duration: 0.5565",
+        "[silencedetect @ 0x600003a84000] silence_start: 6.95658",
+        "[silencedetect @ 0x600003a84000] silence_end: 7.4 | silence_duration: 0.443417"
+      ]
+    },
+    {
+      "id": "ifm-cue-6",
+      "fullSentence": "But sometimes the formerly dark detector clicks instead.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003cd4000] silence_start: 0",
+        "[silencedetect @ 0x600003cd4000] silence_end: 0.312167 | silence_duration: 0.312167",
+        "[silencedetect @ 0x600003cd4000] silence_start: 3.47896",
+        "[silencedetect @ 0x600003cd4000] silence_end: 4 | silence_duration: 0.521042"
+      ]
+    },
+    {
+      "id": "ifm-cue-7",
+      "fullSentence": "That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000017740c0] silence_start: 0",
+        "[silencedetect @ 0x6000017740c0] silence_end: 0.328625 | silence_duration: 0.328625",
+        "[silencedetect @ 0x6000017740c0] silence_start: 2.42033",
+        "[silencedetect @ 0x6000017740c0] silence_end: 2.73104 | silence_duration: 0.310708",
+        "[silencedetect @ 0x6000017740c0] silence_start: 4.50708",
+        "[silencedetect @ 0x6000017740c0] silence_end: 5.09387 | silence_duration: 0.586792",
+        "[silencedetect @ 0x6000017740c0] silence_start: 7.40871",
+        "[silencedetect @ 0x6000017740c0] silence_end: 7.9 | silence_duration: 0.491292"
+      ]
+    },
+    {
+      "id": "ifm-cue-8",
+      "fullSentence": "The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x60000296c120] silence_start: 0",
+        "[silencedetect @ 0x60000296c120] silence_end: 0.324417 | silence_duration: 0.324417",
+        "[silencedetect @ 0x60000296c120] silence_start: 2.06725",
+        "[silencedetect @ 0x60000296c120] silence_end: 2.63708 | silence_duration: 0.569833",
+        "[silencedetect @ 0x60000296c120] silence_start: 6.17904",
+        "[silencedetect @ 0x60000296c120] silence_end: 6.693 | silence_duration: 0.513958",
+        "[silencedetect @ 0x60000296c120] silence_start: 9.10496",
+        "[silencedetect @ 0x60000296c120] silence_end: 9.55 | silence_duration: 0.445042"
+      ]
+    },
+    {
+      "id": "ifm-cue-9",
+      "fullSentence": "Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003270000] silence_start: 0",
+        "[silencedetect @ 0x600003270000] silence_end: 0.323958 | silence_duration: 0.323958",
+        "[silencedetect @ 0x600003270000] silence_start: 2.53675",
+        "[silencedetect @ 0x600003270000] silence_end: 2.891 | silence_duration: 0.35425",
+        "[silencedetect @ 0x600003270000] silence_start: 4.58662",
+        "[silencedetect @ 0x600003270000] silence_end: 5.17158 | silence_duration: 0.584958",
+        "[silencedetect @ 0x600003270000] silence_start: 7.86825",
+        "[silencedetect @ 0x600003270000] silence_end: 8.375 | silence_duration: 0.50675"
+      ]
+    }
+  ],
+  "generationBoundaryReview": {
+    "practice": "Complete semantic sentences generated together; caption line breaks never create TTS boundaries. No text substitutions; No phonetic substitution, global narrator modification or trimming; complete source clips retained.",
+    "limitation": "Acoustic silence and ASR are machine measurements. Sentence-internal prosody, correct stress and pronunciation remain listening judgments at master review."
+  },
+  "results": [
+    {
+      "id": "ifm-cue-1",
+      "exactText": "How can light reveal an obstacle without being absorbed or reflected by it?",
+      "recognized": " How can light reveal an obstacle without being absorbed or reflected by it?",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.84
+          ],
+          "text": " How can light reveal an obstacle without being absorbed or reflected by it?"
+        }
+      ],
+      "duration": 5.3,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-2",
+      "exactText": "Send one photon into an interferometer: two possible paths, joined again.",
+      "recognized": " Send one photon into an interferometer. Two possible paths joined again.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5
+          ],
+          "text": " Send one photon into an interferometer. Two possible paths joined again."
+        }
+      ],
+      "duration": 5.525,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-3",
+      "exactText": "With both paths open and the device correctly aligned, interference keeps one detector dark.",
+      "recognized": " With both paths open and the device correctly aligned, interference keeps one detector dark.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.64
+          ],
+          "text": " With both paths open and the device correctly aligned,"
+        },
+        {
+          "timestamp": [
+            3.64,
+            6
+          ],
+          "text": " interference keeps one detector dark."
+        }
+      ],
+      "duration": 6.425,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-4",
+      "exactText": "The waves associated with the two paths cancel at that output.",
+      "recognized": " The waves associated with the two paths cancel at that output.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " The waves associated with the two paths cancel at that output."
+        }
+      ],
+      "duration": 4.375,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-5",
+      "exactText": "Now put a light-absorbing object in one path. If it absorbs the photon, neither output detector clicks.",
+      "recognized": " Now put a light-upsorbing object in one path. If it absorbs the photon, neither output detector clicks.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Now put a light-upsorbing object in one path."
+        },
+        {
+          "timestamp": [
+            3,
+            7
+          ],
+          "text": " If it absorbs the photon, neither output detector clicks."
+        }
+      ],
+      "duration": 7.4,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-6",
+      "exactText": "But sometimes the formerly dark detector clicks instead.",
+      "recognized": " But sometimes, the formerly dark detector clicks instead.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " But sometimes, the formerly dark detector clicks instead."
+        }
+      ],
+      "duration": 4,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-7",
+      "exactText": "That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation.",
+      "recognized": " That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5
+          ],
+          "text": " That single photon reached the detector, so the object did not absorb it."
+        },
+        {
+          "timestamp": [
+            5,
+            8
+          ],
+          "text": " The blocked path removed the cancellation."
+        }
+      ],
+      "duration": 7.9,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-8",
+      "exactText": "The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test.",
+      "recognized": " The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.4
+          ],
+          "text": " The click reveals the obstacle."
+        },
+        {
+          "timestamp": [
+            2.4,
+            6.4
+          ],
+          "text": " Other trials absorb the photon or give no clear answer."
+        },
+        {
+          "timestamp": [
+            6.4,
+            9.2
+          ],
+          "text": " This is not a guaranteed harmless test."
+        }
+      ],
+      "duration": 9.55,
+      "sampleRate": 24000
+    },
+    {
+      "id": "ifm-cue-9",
+      "exactText": "Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+      "recognized": " Researchers have demonstrated this effect called interaction-free measurement. The clue comes from changing which paths are available.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5
+          ],
+          "text": " Researchers have demonstrated this effect called interaction-free measurement."
+        },
+        {
+          "timestamp": [
+            5,
+            8
+          ],
+          "text": " The clue comes from changing which paths are available."
+        }
+      ],
+      "duration": 8.375,
+      "sampleRate": 24000
+    }
+  ],
+  "actualMasterCues": [
+    {
+      "id": "ifm-cue-1",
+      "exactText": "How can light reveal an obstacle without being absorbed or reflected by it?",
+      "recognized": " How can light reveal an obstacle without being absorbed or reflected by it?",
+      "start": 0,
+      "duration": 5.3
+    },
+    {
+      "id": "ifm-cue-2",
+      "exactText": "Send one photon into an interferometer: two possible paths, joined again.",
+      "recognized": " Send one photon into an interferometer. Two possible paths joined again.",
+      "start": 5.666666666666667,
+      "duration": 5.525
+    },
+    {
+      "id": "ifm-cue-3",
+      "exactText": "With both paths open and the device correctly aligned, interference keeps one detector dark.",
+      "recognized": " With both paths open and the device correctly aligned, interference keeps one detector dark.",
+      "start": 11.4,
+      "duration": 6.425
+    },
+    {
+      "id": "ifm-cue-4",
+      "exactText": "The waves associated with the two paths cancel at that output.",
+      "recognized": " The waves associated with the two paths cancel at that output.",
+      "start": 18.033333333333335,
+      "duration": 4.375
+    },
+    {
+      "id": "ifm-cue-5",
+      "exactText": "Now put a light-absorbing object in one path. If it absorbs the photon, neither output detector clicks.",
+      "recognized": " Now put a light-habsolving object in one path. If it absorbs the photon, neither output detector clicks.",
+      "start": 22.633333333333333,
+      "duration": 7.4
+    },
+    {
+      "id": "ifm-cue-6",
+      "exactText": "But sometimes the formerly dark detector clicks instead.",
+      "recognized": " But sometimes, the formerly dark detector clicks instead.",
+      "start": 30.233333333333334,
+      "duration": 4
+    },
+    {
+      "id": "ifm-cue-7",
+      "exactText": "That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation.",
+      "recognized": " That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation.",
+      "start": 34.6,
+      "duration": 7.9
+    },
+    {
+      "id": "ifm-cue-8",
+      "exactText": "The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test.",
+      "recognized": " The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test.",
+      "start": 42.7,
+      "duration": 9.55
+    },
+    {
+      "id": "ifm-cue-9",
+      "exactText": "Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+      "recognized": " Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+      "start": 52.46666666666667,
+      "duration": 8.375
+    }
+  ],
+  "completeMasterRecognition": {
+    "text": " How can light reveal an obstacle without being absorbed or reflected by it? Send one photon into an interferometer, two possible paths joined again. With both paths open and the device correctly aligned, interference keeps one detector dark. The waves associated with the two paths cancel at that output. Now put a light-habsorbing object in one path. If it absorbs the photon, neither output detector clicks. But sometimes, the formally dark detector clicks instead. That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation. The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test. Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+    "chunks": [
+      {
+        "timestamp": [
+          0,
+          5
+        ],
+        "text": " How can light reveal an obstacle without being absorbed or reflected by it?"
+      },
+      {
+        "timestamp": [
+          5,
+          11
+        ],
+        "text": " Send one photon into an interferometer, two possible paths joined again."
+      },
+      {
+        "timestamp": [
+          11,
+          18.42
+        ],
+        "text": " With both paths open and the device correctly aligned, interference keeps one detector dark."
+      },
+      {
+        "timestamp": [
+          18.42,
+          23.1
+        ],
+        "text": " The waves associated with the two paths cancel at that output."
+      },
+      {
+        "timestamp": [
+          23.1,
+          26.3
+        ],
+        "text": " Now put a light-habsorbing object in one path."
+      },
+      {
+        "timestamp": [
+          26.3,
+          30.6
+        ],
+        "text": " If it absorbs the photon, neither output detector clicks."
+      },
+      {
+        "timestamp": [
+          30.6,
+          35
+        ],
+        "text": " But sometimes, the formally dark detector clicks instead."
+      },
+      {
+        "timestamp": [
+          35,
+          39.74
+        ],
+        "text": " That single photon reached the detector, so the object did not absorb it."
+      },
+      {
+        "timestamp": [
+          39.74,
+          43.08
+        ],
+        "text": " The blocked path removed the cancellation."
+      },
+      {
+        "timestamp": [
+          43.08,
+          49
+        ],
+        "text": " The click reveals the obstacle. Other trials absorb the photon or give no clear answer."
+      },
+      {
+        "timestamp": [
+          49,
+          52
+        ],
+        "text": " This is not a guaranteed harmless test."
+      },
+      {
+        "timestamp": [
+          52,
+          57
+        ],
+        "text": " Researchers have demonstrated this effect, called interaction-free measurement."
+      },
+      {
+        "timestamp": [
+          57,
+          60
+        ],
+        "text": " The clue comes from changing which paths are available."
+      }
+    ]
+  },
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -19.5 LUFS\n    Threshold: -29.9 LUFS\n\n  Loudness range:\n    LRA:         2.6 LU\n    Threshold: -40.4 LUFS\n    LRA low:   -21.7 LUFS\n    LRA high:  -19.1 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+  "subjectiveListening": "Owner master review: voice naturalness, interferometer and interaction-free pronunciation, complete sentence prosody and semantic contrast; ASR cannot establish pronunciation or naturalness."
+}

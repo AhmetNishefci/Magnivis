@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-03T15:47:03.702Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/ifm-render-v2.mp4",
+    "sha256": "06f19c65b6b039694e63af467a38942fae140f90e767b3317ef6e930f0efeb24",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/interaction-free-cycle7-candidate-v2.mp4",
+    "sha256": "8b93fa46e79e0e16bd2d3e5465beb812a1670eb4cfa1279e87f9c09706d6c987"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.53",
+    "input_tp": "-6.19",
+    "input_lra": "2.40",
+    "input_thresh": "-33.93",
+    "output_i": "-19.03",
+    "output_tp": "-2.00",
+    "output_lra": "2.50",
+    "output_thresh": "-29.42",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "gainDb": 3.99,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

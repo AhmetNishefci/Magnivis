@@ -1,0 +1,10 @@
+{
+  "check": "pnpm check and pnpm artifacts:durable",
+  "result": "failed before staging new canonical binaries",
+  "failures": [
+    "Canonical durable media not yet Git tracked (new failed replacement draft).",
+    "Historical Chocolate finalization test5000ms timeout."
+  ],
+  "remediation": "Stage authorized canonical files with source/provenance, then rerun required checks with render/ASR idle. Do not change tests, extend timeouts, weaken durability or bypass checks.",
+  "historicalRecords": "Unchanged; no approval or claims weakened."
+}

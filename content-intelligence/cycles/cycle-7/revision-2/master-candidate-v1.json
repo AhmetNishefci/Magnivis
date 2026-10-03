@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.7",
+  "media": {
+    "id": "media.8b93fa46e79e0e16bd2d3e5465beb812a1670eb4cfa1279e87f9c09706d6c987",
+    "sha256": "8b93fa46e79e0e16bd2d3e5465beb812a1670eb4cfa1279e87f9c09706d6c987"
+  },
+  "durationSeconds": 61.233333333333334,
+  "scriptSha256": "60479bcc16ffbfca266d912f35350eb195e04a679a5b66fefa9d01a140f9988d",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-7/revision-2/production-plan.candidate-v1.json",
+    "sha256": "1d56d571ab74ba827c76dcc49baa97b44088c64da93b29cdfd1908d193df094d"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/ifm.json",
+    "sha256": "20b5c6f2fb15bc7b3718aeba68064032fb0caf9b8c304f2b9ede2e891b1fcd68"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/ifm.json",
+    "sha256": "a3f4bade7283c08618fc0e9540de589f9a7939d9f7d4cb25643e01f18b0526de"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/youtube.json",
+        "sha256": "6bd76a41c8135b607386402dd8496f29fb6fadc3c216f66c2737b72c5e3401bd"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/preflight/youtube.json",
+        "sha256": "b75548934194563fc88fb6de93d3f6b62958884308b49e951545608744d5a70c"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/tiktok.json",
+        "sha256": "b7918424225ed0f6a6a7e9aed6a8c2cf58e594ef79232409cb5cdab205474a45"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/preflight/tiktok.json",
+        "sha256": "0e638abc48d588aa716b6baccd75e16ad61fc30d93e67954fecd3f233444c095"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/instagram.json",
+        "sha256": "75149233fd5cf548021245736562017439ebab722151d7a87b3346d4d6cd242d"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/preflight/instagram.json",
+        "sha256": "a4c6cadc2a3b12ce5017d1dac19c7eddff9050bca76e0731bc2b18ca84053627"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/facebook.json",
+        "sha256": "7b402d0b6a7666516d1b5a4f665be35beaec7aeeb70fd43714912db9ee5cef29"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/preflight/facebook.json",
+        "sha256": "4130b5fd00c3bdadc7bb56cb4950f3bd885ccc06df57abc7ea935c04d5b801c6"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "ifm-cue-1",
+      "transcript": "How can light reveal an obstacle without being absorbed or reflected by it?",
+      "start": 0,
+      "duration": 5.3,
+      "media": {
+        "id": "media.b5a7d5e28a01e089655359e9920607de1e175de741aef264c289f18affd10001",
+        "sha256": "b5a7d5e28a01e089655359e9920607de1e175de741aef264c289f18affd10001"
+      }
+    },
+    {
+      "id": "ifm-cue-2",
+      "transcript": "Send one photon into an interferometer: two possible paths, joined again.",
+      "start": 5.666666666666667,
+      "duration": 5.525,
+      "media": {
+        "id": "media.5c94b4c807463a6b21e105b206889c354a945a8adead2d347b2c34888faf55a9",
+        "sha256": "5c94b4c807463a6b21e105b206889c354a945a8adead2d347b2c34888faf55a9"
+      }
+    },
+    {
+      "id": "ifm-cue-3",
+      "transcript": "With both paths open and the device correctly aligned, interference keeps one detector dark.",
+      "start": 11.4,
+      "duration": 6.425,
+      "media": {
+        "id": "media.2f25a7a958cff95e90d4cccc6faeeb319d079db0f9cf987760e7dc525e71ebe2",
+        "sha256": "2f25a7a958cff95e90d4cccc6faeeb319d079db0f9cf987760e7dc525e71ebe2"
+      }
+    },
+    {
+      "id": "ifm-cue-4",
+      "transcript": "The waves associated with the two paths cancel at that output.",
+      "start": 18.033333333333335,
+      "duration": 4.375,
+      "media": {
+        "id": "media.5267a407e3e7a09d46838fc22f6566bd9617b217554073d675aa4879775aba7e",
+        "sha256": "5267a407e3e7a09d46838fc22f6566bd9617b217554073d675aa4879775aba7e"
+      }
+    },
+    {
+      "id": "ifm-cue-5",
+      "transcript": "Now put a light-absorbing object in one path. If it absorbs the photon, neither output detector clicks.",
+      "start": 22.633333333333333,
+      "duration": 7.4,
+      "media": {
+        "id": "media.ba0a7d0e0b8f83acc20a9bbbb314fe90fe821cf811a494cb438336ac3125b4d7",
+        "sha256": "ba0a7d0e0b8f83acc20a9bbbb314fe90fe821cf811a494cb438336ac3125b4d7"
+      }
+    },
+    {
+      "id": "ifm-cue-6",
+      "transcript": "But sometimes the formerly dark detector clicks instead.",
+      "start": 30.233333333333334,
+      "duration": 4,
+      "media": {
+        "id": "media.887f1e77873dbb0569e499893fe5f694ecda3c57d47668f43c7feabb6384b9cc",
+        "sha256": "887f1e77873dbb0569e499893fe5f694ecda3c57d47668f43c7feabb6384b9cc"
+      }
+    },
+    {
+      "id": "ifm-cue-7",
+      "transcript": "That single photon reached the detector, so the object did not absorb it. The blocked path removed the cancellation.",
+      "start": 34.6,
+      "duration": 7.9,
+      "media": {
+        "id": "media.38a097ee674802afab320f78d11fee6afa5e505e9885011af00ef83b1be9a938",
+        "sha256": "38a097ee674802afab320f78d11fee6afa5e505e9885011af00ef83b1be9a938"
+      }
+    },
+    {
+      "id": "ifm-cue-8",
+      "transcript": "The click reveals the obstacle. Other trials absorb the photon or give no clear answer. This is not a guaranteed harmless test.",
+      "start": 42.7,
+      "duration": 9.55,
+      "media": {
+        "id": "media.fdf71b892d0dc6222ad42b47d2212a94f4fb2edd015b203da278128ce7398bd6",
+        "sha256": "fdf71b892d0dc6222ad42b47d2212a94f4fb2edd015b203da278128ce7398bd6"
+      }
+    },
+    {
+      "id": "ifm-cue-9",
+      "transcript": "Researchers have demonstrated this effect, called interaction-free measurement. The clue comes from changing which paths are available.",
+      "start": 52.46666666666667,
+      "duration": 8.375,
+      "media": {
+        "id": "media.404625f682738f2813b83b5b8c954090c40e5437672553a41b54bbee45d249b5",
+        "sha256": "404625f682738f2813b83b5b8c954090c40e5437672553a41b54bbee45d249b5"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-7/revision-2/qa/final-report.json",
+        "sha256": "9d656f5cd387aa6ddf033febe82e6de6544308bace2a333432d97dbbd4c5ec18"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Ideal aligned optical model; curves are path amplitudes, not two photons or visible measured trajectories.",
+    "Absorbed and detected outcomes belong to explicitly different trials.",
+    "One detected photon was not absorbed by the object; no preferred classical trajectory or metaphysical no-interaction assertion.",
+    "Other trials can absorb photons or be inconclusive; no guaranteed harmless test.",
+    "Experimental author account concerns a different implementation, not authentic footage of this schematic."
+  ],
+  "uncertainties": [
+    "Owner listening must judge interferometer pronunciation, naturalness, complete sentence prosody and authored caption timing. ASR is corroboration only.",
+    "Ideal-model dark baseline excludes practical leakage/detector noise; no claim of absolute empirical certainty.",
+    "Native UI, caption-safe geometry, crops and exact-media real-device behavior remain unknown.",
+    "Sampled visual/browser checks and complete decode, not all-frame bounds or continuous human playback.",
+    "Original theory and participant account inspected; no raw data or1995 image-only paper body inspection.",
+    "No variants, covers, deliveries, uploads, scheduling, publication or analytics created."
+  ],
+  "unusualProduction": [
+    "Original stable instrument/outcome visualization; explicitly schematic probability amplitudes and distinct trials, voice-only sound."
+  ]
+}

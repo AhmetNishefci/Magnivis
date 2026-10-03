@@ -1,0 +1,60 @@
+{
+  "enteredAt": "2026-10-03T15:48:36.939Z",
+  "sourceBaseCommit": "a5288e3b33eeb4818eec127ddf99ad9d466cc1ee",
+  "files": [
+    {
+      "path": "src/ifm-index.tsx",
+      "sha256": "92e8bd6983d49567543f95b593fdacd328f024541c9af3cb1e6141425b2c1f96"
+    },
+    {
+      "path": "src/compositions/InteractionFree.tsx",
+      "sha256": "de373de734adbfb23bf3ade22abc7231ad325763d8b5df18bcf9e759727c7ef3"
+    },
+    {
+      "path": "src/components/OpticalBench.tsx",
+      "sha256": "3da2d5954688e61d56f6e8465747fc6b6a5e49e3f9ccd8edb3818e86896258a1"
+    },
+    {
+      "path": "src/content/videos/interaction-free.ts",
+      "sha256": "caf0ec0eae0b8fa5db05052f4e8195e4acdee8fef0763c3920761a2088183701"
+    },
+    {
+      "path": "scripts/render-ifm.ts",
+      "sha256": "afb18087861b7167416868ff9c4a563149ca2a523e122f9a2ae7c2435844423b"
+    },
+    {
+      "path": "scripts/qa-ifm-layout.ts",
+      "sha256": "465902bf11a37b3272addfebff1999e5f276a45864c73e9d03526aefb19de916"
+    },
+    {
+      "path": "scripts/inspect-ifm-audio.mjs",
+      "sha256": "5b0b84f2a42adeb02b67f5145a2b78f5a9484107a6b995a868d7f97a931e9364"
+    },
+    {
+      "path": "scripts/generate-ifm-narration.mjs",
+      "sha256": "daeb93edff9a968a6f5390cf5e19b9c6035bfd35321d7bda29560c64f9564326"
+    },
+    {
+      "path": "scripts/prepare-ifm-production.ts",
+      "sha256": "5417f3a6949fa2258bfd7c45780fb81fddd69d07537a2195178675c9c8d68f4d"
+    },
+    {
+      "path": "src/production/plans/ifm.json",
+      "sha256": "38658c9eb99afe8c53b93df0ec585998ffbb53326b133057eee902face5ff256"
+    },
+    {
+      "path": "src/captions/plans/ifm.json",
+      "sha256": "20b5c6f2fb15bc7b3718aeba68064032fb0caf9b8c304f2b9ede2e891b1fcd68"
+    },
+    {
+      "path": "src/production/narration/ifm.json",
+      "sha256": "a3f4bade7283c08618fc0e9540de589f9a7939d9f7d4cb25643e01f18b0526de"
+    }
+  ],
+  "videoPacketSha256": "SHA256=17d9b05f576b50dc6301da00e02c1fd449d6b2bc2294f63f75bf7dd5a33f731e",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-7/revision-2/audio-mastering-v2.json",
+    "sha256": "a937db8e313c4efea9cf39edc2331785b17a3865e2048ab4cf085efa1d32b07d"
+  },
+  "note": "Exact new source hashes bind implementation; base commit is not a circular self-commit claim. Original geometry, consultation-only research and established fonts/local narration."
+}

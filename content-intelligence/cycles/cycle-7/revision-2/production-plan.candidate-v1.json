@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.interaction-free.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "interaction-free",
+    "revision": 1,
+    "sha256": "3cde98a76ca06d72fcb8a41b8add598338f412c41acb91421d16b116b1de58ec"
+  },
+  "contentAsset": {
+    "id": "interaction-free.asset.dark-detector",
+    "revision": 1,
+    "sha256": "c851e34891f2ce3eeeaa66ae9215c3fa7e66175d57e7ee41c888aa38d48f9d69"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.7",
+    "reviewSha256": "e78ef98908b256128985df19e19046f8b1b4f4ec48921857da364ab12eac3104"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/youtube.json",
+      "sha256": "6bd76a41c8135b607386402dd8496f29fb6fadc3c216f66c2737b72c5e3401bd"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/tiktok.json",
+      "sha256": "b7918424225ed0f6a6a7e9aed6a8c2cf58e594ef79232409cb5cdab205474a45"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/instagram.json",
+      "sha256": "75149233fd5cf548021245736562017439ebab722151d7a87b3346d4d6cd242d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-7/revision-2/profiles/facebook.json",
+      "sha256": "7b402d0b6a7666516d1b5a4f665be35beaec7aeeb70fd43714912db9ee5cef29"
+    }
+  ],
+  "approvedScriptSha256": "60479bcc16ffbfca266d912f35350eb195e04a679a5b66fefa9d01a140f9988d",
+  "creativeDirection": {
+    "id": "creative-direction.interaction-free.v1",
+    "revision": 1,
+    "sha256": "944e298773977b424daddef92b4f6d4b0a1a6e1eb767475e810dde9c7144eb23"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "interaction-free.claim.metaphysics"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 61.233333333333334
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "ifm.production.1",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.1",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.1",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.1"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 170
+      },
+      "sceneType": "no-exchange-puzzle",
+      "objective": "Present the operational puzzle: obstacle absorption excluded in the detected outcome.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.2",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.2",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.2",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.2"
+      ],
+      "claimIds": [
+        "interaction-free.claim.paths"
+      ],
+      "frames": {
+        "start": 170,
+        "end": 342
+      },
+      "sceneType": "two-paths",
+      "objective": "Establish one photon and two coherent alternatives, not split photon energy.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.3",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.3",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.3",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.3"
+      ],
+      "claimIds": [
+        "interaction-free.claim.dark"
+      ],
+      "frames": {
+        "start": 342,
+        "end": 541
+      },
+      "sceneType": "dark-baseline",
+      "objective": "Set up dark detector baseline in ideal aligned model.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.4",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.4",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.4",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.4"
+      ],
+      "claimIds": [
+        "interaction-free.claim.cancel"
+      ],
+      "frames": {
+        "start": 541,
+        "end": 679
+      },
+      "sceneType": "amplitude-cancellation",
+      "objective": "Show opposed amplitude contributions at the output.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.5",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.5",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.5",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.5"
+      ],
+      "claimIds": [
+        "interaction-free.claim.absorber"
+      ],
+      "frames": {
+        "start": 679,
+        "end": 907
+      },
+      "sceneType": "absorbed-trial",
+      "objective": "Show absorber and separately labeled absorbed trial.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.6",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.6",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.6",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.6"
+      ],
+      "claimIds": [
+        "interaction-free.claim.click"
+      ],
+      "frames": {
+        "start": 907,
+        "end": 1038
+      },
+      "sceneType": "detected-trial",
+      "objective": "Return to a successful dark-output trial, conditional not universal.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.7",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.7",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.7",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.7"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.click",
+        "interaction-free.claim.cancel"
+      ],
+      "frames": {
+        "start": 1038,
+        "end": 1281
+      },
+      "sceneType": "single-photon-inference",
+      "objective": "Connect detected photon to absence of absorption, and blocked-path loss of cancellation.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.8",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.8",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.8",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.8"
+      ],
+      "claimIds": [
+        "interaction-free.claim.detect",
+        "interaction-free.claim.fail"
+      ],
+      "frames": {
+        "start": 1281,
+        "end": 1574
+      },
+      "sceneType": "all-outcomes",
+      "objective": "Show all three ideal-model outcomes; retain risk and inconclusive trial.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    },
+    {
+      "id": "ifm.production.9",
+      "sourceVisualPlanId": "interaction-free.asset.dark-detector.visual.9",
+      "narrativeBeatId": "interaction-free.asset.dark-detector.beat.9",
+      "scriptSegmentIds": [
+        "interaction-free.asset.dark-detector.script.9"
+      ],
+      "claimIds": [
+        "interaction-free.claim.demo",
+        "interaction-free.claim.click"
+      ],
+      "frames": {
+        "start": 1574,
+        "end": 1837
+      },
+      "sceneType": "changing-alternatives",
+      "objective": "Return to the successful outcome and name experimentally demonstrated effect.",
+      "onScreenText": [],
+      "animationIntent": "Stable original optical network and detector identities. Path amplitudes oppose at dark output; distinguish an absorbed trial from successful detection. No two half photons, no energy destruction, no path-measurement claim.",
+      "transitionIntent": "Keep optical topology constant; local cancellation overlay, separate trial-state transitions and a detector reveal.",
+      "audioIntent": "Measured connected af_heart narration and silence; no pseudo-authentic scanner audio."
+    }
+  ],
+  "assets": [
+    {
+      "id": "ifm.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original SVG illustration",
+        "rights": "Project-owned artwork",
+        "notes": "Idealized optical topology and amplitude model, not measurement footage or photon trajectories.",
+        "evidence": "content-intelligence/cycles/cycle-7/revision-2/rights-provenance.json"
+      }
+    },
+    {
+      "id": "ifm.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource / Manrope by Mikhail Sharanda",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing licensed font; unchanged.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "ifm.narration",
+      "kind": "audio",
+      "path": "public/audio/ifm/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache-2.0 model/output terms",
+        "notes": "Connected reviewed sentences, no paid API.",
+        "evidence": "src/production/narration/ifm.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/interaction-free.en.vtt",
+    "captionPlanId": "caption-plan.interaction-free.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "06f957a7c36af746225394d0cdddd4633cb5a3890cdb160a21855d2af7a22cbe",
+    "generatorId": "generator.ifm-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full media probe and decode, exact caption reconstruction and typography fit.",
+    "Every caption midpoint and opening/cancellation/absorption/success/outcomes checkpoints decoded and inspected.",
+    "Open baseline, opposed amplitudes and blockage stay coherent; no successful photon absorption; distinct failed-trial outcomes remain explicit.",
+    "Actual audio interval recognition and mix; owner pronunciation/prosody remains judgment.",
+    "Four sampled provisional profile preflights; no invented native/device safety.",
+    "AHMET — MASTER REVIEW; no release preparation before approval."
+  ]
+}

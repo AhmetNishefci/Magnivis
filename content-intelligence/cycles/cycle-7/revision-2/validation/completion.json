@@ -1,0 +1,43 @@
+{
+  "enteredAt": "2026-10-03T16:13:51.069814Z",
+  "environment": "Node22.23.3; pnpm10.17.1; existing local capabilities",
+  "pnpmCheck": {
+    "passed": true,
+    "testFiles": 49,
+    "tests": 468,
+    "checks": [
+      "TypeScript",
+      "ESLint",
+      "Vitest",
+      "git diff --check"
+    ],
+    "attempts": "Pre-staging attempt failed on untracked canonical media and historical Chocolate timeout; after staging and idle rendering/ASR, full unchanged check passed."
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 601,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "scopedSecretCheck": {
+    "passed": true,
+    "stagedPathsInspected": 89,
+    "scope": "Recognizable private keys/API/GitHub/AWS credential patterns; binary media skipped. Not a guarantee of absence of every possible secret."
+  },
+  "historicalPreservation": {
+    "path": "content-intelligence/cycles/cycle-7/revision-2/validation/historical-preservation.json",
+    "sha256": "f99f5151403db8615a5243302602256e8605049c672bad98a6ad3808e0d718e1"
+  },
+  "diffHygiene": "Working diff passed; final staged diff must pass before commit.",
+  "authority": "Master Review only; no owner decision, platform action or publication authority."
+}
