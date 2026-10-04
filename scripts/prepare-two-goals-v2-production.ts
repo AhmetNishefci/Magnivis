@@ -1,0 +1,25 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {validateAdaptiveCaptionPlan} from '../src/captions/adaptive-plan';
+import {validateInternalProductionPlanReferences} from '../src/production/schema';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {creativeDirectionSchema} from '../src/content-assets/creative-direction';
+import oldNarration from '../src/production/narration/two-goals.json';
+import narration from '../src/production/narration/two-goals-v2.json';
+import oldCaptions from '../src/captions/plans/two-goals.json';
+import oldPlan from '../src/production/plans/two-goals.json';
+const base='content-intelligence/cycles/cycle-9',read=(n:string)=>JSON.parse(readFileSync(`${base}/${n}.json`,'utf8')) as unknown;
+const pkg=knowledgePackageSchema.parse(read('knowledge-package.ready')),asset=contentAssetSchema.parse(read('content-asset.ready')),direction=creativeDirectionSchema.parse(read('direction-v1'));
+const cues=oldCaptions.cues.map(c=>{
+ const index=oldNarration.cues.findIndex(n=>n.id===c.sourceNarrationCueId),old=oldNarration.cues[index]!,next=narration.cues[index]!;
+ const scale=[7,8,10].includes(index)?next.duration/old.duration:1;
+ return {...c,startFrame:Math.round(next.start*30+(c.startFrame-old.start*30)*scale),endFrame:Math.min(Math.round((next.start+next.duration)*30),Math.round(next.start*30+(c.endFrame-old.start*30)*scale))};
+});
+const captions=validateAdaptiveCaptionPlan({...oldCaptions,revision:2,cues},narration.cues,narration.format,direction,asset);
+writeFileSync('src/captions/plans/two-goals-v2.json',JSON.stringify(captions,null,2)+'\n',{flag:'wx'});
+const stamp=(f:number)=>{const ms=Math.round(f/30*1000);return `${String(Math.floor(ms/3600000)).padStart(2,'0')}:${String(Math.floor(ms/60000)%60).padStart(2,'0')}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}.${String(ms%1000).padStart(3,'0')}`;};
+writeFileSync('captions/two-goals-v2.en.vtt','WEBVTT\n\n'+captions.cues.map((c,i)=>`${i+1}\n${stamp(c.startFrame)} --> ${stamp(c.endFrame)}\n${c.lines.join('\n')}\n`).join('\n'),{flag:'wx'});
+const plan=validateInternalProductionPlanReferences({...oldPlan,revision:2,format:narration.format,beats:oldPlan.beats.map((b,i)=>({...b,frames:{start:Math.round(narration.cues[i]!.start*30),end:i+1<narration.cues.length?Math.round(narration.cues[i+1]!.start*30):narration.durationFrames}})),assets:oldPlan.assets.map(a=>a.id==='two-goals.narration'?{...a,provenance:{...a.provenance,evidence:'src/production/narration/two-goals-v2.json'}}:a),captions:{...oldPlan.captions,file:'captions/two-goals-v2.en.vtt',captionPlanRevision:2,captionPlanSha256:sha256Json(captions)}},pkg,asset,direction);
+writeFileSync('src/production/plans/two-goals-v2.json',JSON.stringify(plan,null,2)+'\n',{flag:'wx'});
+console.log(`V2 ${narration.durationFrames} frames; exact caption words/design retained; affected phrase timing scaled to measured speech, unchanged clips translated only.`);

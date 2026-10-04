@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-04T21:41:09.669988Z",
+  "passed": true,
+  "checks": {
+    "repository-check": {
+      "passed": true,
+      "logSha256": "f675601c8d8c781e301caacb988e3c751f8ec4ed9d6567fd82e28134192efdd0",
+      "scratchLog": "/tmp/c9-v2-final-check.log"
+    },
+    "durability": {
+      "passed": true,
+      "logSha256": "41970292089c55f278986a8020c6a81e5ecbcc437106f6a4e0246d84c2b23570",
+      "scratchLog": "/tmp/c9-v2-final-durable.log"
+    },
+    "workflow-replay": {
+      "passed": true,
+      "logSha256": "56749b435e3f2ef07a878072f666d428c0a1ba057abf492f3f4c02fff875d9bf",
+      "scratchLog": "/tmp/c9-v2-replay.log"
+    },
+    "recovery": {
+      "passed": true,
+      "logSha256": "24527e833ee323af88e3a5e3b12306262229e8a2dbf93f478aae70ea8553b293",
+      "scratchLog": "/tmp/c9-v2-recovery.log"
+    },
+    "frozen-history": {
+      "passed": true,
+      "logSha256": "3548168977037044b196ea87a2e799cacb7994d5bb649dd8101a1330c6bfe296",
+      "scratchLog": "/tmp/c9-v2-frozen.log"
+    },
+    "media-qa": {
+      "passed": true,
+      "logSha256": "9f1cad435d4b616481f0e4d2f160609dac58f8f7820ca3085645276f64310618",
+      "scratchLog": "/tmp/c9-v2-qa.log"
+    },
+    "layout": {
+      "passed": true,
+      "logSha256": "27f1c833929372e65e2f744c80905f5b1dccf28f2ba880c4254f34ae61092571",
+      "scratchLog": "/tmp/c9-v2-layout.log"
+    },
+    "audio": {
+      "passed": true,
+      "logSha256": "37aefbf9b42acc2ce7efc566c69ebcb735f6f4582fce746d96c776049fd4ce23",
+      "scratchLog": "/tmp/c9-v2-audio.log"
+    },
+    "smoke": {
+      "passed": true,
+      "logSha256": "986ab6dc1c33aaaeaa5a8410d36bb40efd0cc88b212e6a26d2a0adfeda111553",
+      "scratchLog": "/tmp/c9-v2-smoke.log"
+    }
+  },
+  "tests": {
+    "files": 52,
+    "tests": 483,
+    "pronunciationRegressions": 3
+  },
+  "canonicalMedia": {
+    "passed": true,
+    "canonicalPayloads": 812,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "nativeDurableArtifacts": 731,
+  "frozenHistoricalFiles": 948,
+  "workflow": "All journals replayed; Cycle9 revision11 at master-review, no master/publication approval or release; Cycle10 absent.",
+  "historicalIntegrity": "All 798 prior catalog entries and V1 source/master/review untouched; 3326 prior tracked files preserved outside explicit append-only/helper/current-state scope. Earlier scheduling evidence unchanged.",
+  "limitations": [
+    "No independent human acoustic listening pass. Four corrected phonetic inputs and contextual auditions support owner listening; ASR spelling not proof.",
+    "Sampled geometry/visual checks, not all-frame bounds or native/mobile/crop/device proof.",
+    "Historical Wood Frog original remains missing/hash-only under closed recovery; no new recovery claim."
+  ],
+  "diffHygiene": "git diff --check and staged diff --check passed",
+  "secretScan": "scoped-secret-scan.json",
+  "cleanCheckout": "Independent clean checkout validation to follow exact source/media commit; separately reported."
+}

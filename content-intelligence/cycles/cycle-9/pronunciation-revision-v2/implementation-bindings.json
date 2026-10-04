@@ -1,0 +1,72 @@
+{
+  "enteredAt": "2026-10-04T21:36:02.237Z",
+  "sourceBaseCommit": "a56eb2ebcc4672e17669cfd15d37edf60490218a",
+  "files": [
+    {
+      "path": "src/two-goals-v2-index.tsx",
+      "sha256": "cfec2d8f505dc986e62089f903f7d1f46335b887f906841bd10d8cd658b4ecfb"
+    },
+    {
+      "path": "src/compositions/TwoGoalsV2.tsx",
+      "sha256": "54b565f2745483021ef8b16836b3fd8bf68b66b8d1972884754be5c3129cfb5a"
+    },
+    {
+      "path": "src/components/TwoGoalsPitch.tsx",
+      "sha256": "4aae63cf7df10d6c2127af875776e90631be3e58f3a69999af83b1c51865e1df"
+    },
+    {
+      "path": "src/content/videos/two-goals-v2.ts",
+      "sha256": "95f12300e1f58ae0de0f479210344446edf68693b745640dc5e2c1d70954ccee"
+    },
+    {
+      "path": "scripts/production-video-targets.ts",
+      "sha256": "da5455f79cad857d8a05096ec98f7fb3c69a804f1ddfe8e41b488d81474bf444"
+    },
+    {
+      "path": "scripts/render-two-goals-v2.ts",
+      "sha256": "1556e6d9adcd1d4d7b1b2f686216a5aeadb86e3755f499435967bc361fe2afbe"
+    },
+    {
+      "path": "scripts/qa-two-goals-v2-layout.ts",
+      "sha256": "8f0160f22c17f009d2116cc77bf05d1be84e0052bb6f6947445fc2cdc9fd9b51"
+    },
+    {
+      "path": "scripts/inspect-two-goals-v2-audio.mjs",
+      "sha256": "b8ce32e1e566d21d3a26323c69b9f3af06307484edf1f6ec21c089bb9e04700c"
+    },
+    {
+      "path": "scripts/generate-two-goals-v2-narration.mjs",
+      "sha256": "419ae5555ce1e4c1d5dbcc960d08ce1562a214c2e83ee4a1f95545cb0b266bf9"
+    },
+    {
+      "path": "scripts/prepare-two-goals-v2-production.ts",
+      "sha256": "fbb8ffadba58e4dc0dad5820ae4d34673307ff2e61a191671d62b0f548429d16"
+    },
+    {
+      "path": "src/production/plans/two-goals-v2.json",
+      "sha256": "83f1e22be65ba499aabaf94357c357a62f0fd55a14be5882a015574516562454"
+    },
+    {
+      "path": "src/captions/plans/two-goals-v2.json",
+      "sha256": "b6ef37512d118c1da97bc712acf5845b13c9ea1606277ecc28f7d3d7942feb76"
+    },
+    {
+      "path": "src/production/narration/two-goals-v2.json",
+      "sha256": "a3300b5fcfe227a80b309ebaab2315da35d595ec5d330bc9a9b7afade90b53c8"
+    },
+    {
+      "path": "src/ai/providers/kokoro-local.mjs",
+      "sha256": "c75deed7b350b467cf0bc7169473e99c16f9628ac72d5dfb418542b97461c6b1"
+    },
+    {
+      "path": "src/ai/grenada-pronunciation.ts",
+      "sha256": "6f5d68bb6d9e98347007e64f57fe027f2fc19536c27c46bf5252235e206bf967"
+    }
+  ],
+  "videoPacketSha256": "SHA256=f3b9f2721170d4828ec1850588effe58a2abbc5d44b65ad4f5272848ada3bd49",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/audio-mastering-v2.json",
+    "sha256": "b24b41a652b47943b6f4aabb409c3229f83b761ea16c213f92972d632ef51303"
+  },
+  "note": "Exact new source hashes bind implementation; base commit is not a circular self-commit claim. Original pitch illustration, consultation-only historical research and established fonts/local narration."
+}

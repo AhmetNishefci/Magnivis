@@ -1,0 +1,37 @@
+{
+  "mediaSha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+  "inspectedAt": "2026-10-04T21:36:01.983797+00:00",
+  "passed": true,
+  "method": "Actual V2 decoded contact overview viewed; four full-size key frames inspected through view_image. Sampled visual review, not continuous playback. Unchanged original pitch component independently scope-bound.",
+  "inspectedVisuals": [
+    {
+      "path": "qa/two-goals-v2/contact-sheet.jpg",
+      "sha256": "5249491c3b373608546e42ed44dddb3d4c5bb06d1e736564b3a6a2444f5952ac"
+    },
+    {
+      "path": "qa/two-goals-v2/frame-75-46.4s.png",
+      "sha256": "930d747c4044601c2d0c73cbe3f2f6890400a7c533c95e5dac3f70f56f0bcd54"
+    },
+    {
+      "path": "qa/two-goals-v2/frame-81-53.4s.png",
+      "sha256": "55b1b6d21ad05faab2d5c3d84b718ffe21d94e2217804c39d75109c7afce8b28"
+    },
+    {
+      "path": "qa/two-goals-v2/frame-94-61.1s.png",
+      "sha256": "b11634ca259e579115ce1a3bbca4a4dbf81ea55c642d1f574ce9bab2a90cc979"
+    },
+    {
+      "path": "qa/two-goals-v2/frame-114-73.3s.png",
+      "sha256": "87288dd04022edbf1754b74878f6f27681d985706ae36d282b5aed2a730ad978"
+    }
+  ],
+  "findings": [
+    "Actual score and hypothetical outcomes remain explicitly separated.",
+    "Both ends defense and weighted extra-time result retain exact visual treatment.",
+    "Caption text/style unchanged; visible sampled phrases fit; reconstruction qualification retained."
+  ],
+  "limitations": [
+    "Reduced contact overview cannot establish all-frame visual quality.",
+    "No independent human listening, native/mobile/crop or real-device pass."
+  ]
+}

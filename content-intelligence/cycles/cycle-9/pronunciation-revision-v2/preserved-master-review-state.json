@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.9",
-  "revision": 11,
+  "revision": 8,
   "authority": {
     "path": "workflow/authorities/cycle-9-start.json",
     "sha256": "01daad2996fe55066bd3344a88ed25f72dbf00c71250d471ab16c081e576ed46"
@@ -36,13 +36,6 @@
         "path": "content-intelligence/cycles/cycle-9/master-candidate-v1.json",
         "sha256": "aa63930246228ff7005064a6d85c87d2801af50f8026ca2b1011ed7717edab27"
       }
-    },
-    {
-      "stage": "production",
-      "record": {
-        "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/master-candidate-v2.json",
-        "sha256": "d8905fccbe338c4592c499e7f79c49695ba44cc5337aee9042091f90ea0d1048"
-      }
     }
   ],
   "premise": {
@@ -54,8 +47,8 @@
     "sha256": "fd4b077f444b57a7c2141f52fb63f5360f60b82e84c1faca48b0eac8a24d60da"
   },
   "candidate": {
-    "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/master-candidate-v2.json",
-    "sha256": "d8905fccbe338c4592c499e7f79c49695ba44cc5337aee9042091f90ea0d1048"
+    "path": "content-intelligence/cycles/cycle-9/master-candidate-v1.json",
+    "sha256": "aa63930246228ff7005064a6d85c87d2801af50f8026ca2b1011ed7717edab27"
   },
   "masterDecision": null,
   "release": null,
@@ -141,36 +134,6 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-9/master-candidate-v1.json",
         "sha256": "aa63930246228ff7005064a6d85c87d2801af50f8026ca2b1011ed7717edab27"
-      }
-    },
-    {
-      "revision": 9,
-      "previousSha256": "cdf33a04604acaa5b551e76901e4500b9003bfcbb0ffff1ba53bf4e6f0244f12",
-      "event": "owner-decision",
-      "at": "2026-10-04T21:29:35.266Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/owner-pronunciation-revision.json",
-        "sha256": "497073d0daf0cbdacebaa4f7a1f19d6d92305f9127a945c5c0c361a36e3c901d"
-      }
-    },
-    {
-      "revision": 10,
-      "previousSha256": "3ca6734984ff9a01c09b4b42dd9b9921f502c5aa73f06b509ca8e77a3ebf688e",
-      "event": "begin-production",
-      "at": "2026-10-04T21:29:35.701Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/production-start.json",
-        "sha256": "b8f9ab2912e663a41ea9812b98ceb0c4b173a2a1952edd1d918cd2ad722a896c"
-      }
-    },
-    {
-      "revision": 11,
-      "previousSha256": "c1356a37ac63f4411a77cdcabe7762c9e6aedc74739e5ba61a69629ee52eb6d1",
-      "event": "production",
-      "at": "2026-10-04T21:37:34.647Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/master-candidate-v2.json",
-        "sha256": "d8905fccbe338c4592c499e7f79c49695ba44cc5337aee9042091f90ea0d1048"
       }
     }
   ]

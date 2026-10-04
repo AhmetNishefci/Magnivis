@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/two-goals-v2.json';
+import asset from '../../../content-intelligence/cycles/cycle-9/content-asset.ready.json';
+import narration from '../../production/narration/two-goals-v2.json';
+export const twoGoalsV2=videoSpecSchema.parse({id:'two-goals-v2',compositionId:'Magnivis-Two-Goals-V2',workingTitle:'The team that defended both goals',titleCandidates:['The team that defended both goals'],descriptionCandidates:['Why Barbados deliberately scored an own goal, then defended both goals in a 1994 qualifier.'],hook:asset.script.segments[0]!.text,pillar:'history-stories',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration','silence'],narration:true,narrationCues:narration.cues}});

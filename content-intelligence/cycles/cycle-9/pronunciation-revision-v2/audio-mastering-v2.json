@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-04T21:33:38.879Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/two-goals-render-v2.mp4",
+    "sha256": "415a024afd6261d78da8c053e73e2904153906aa41ca89f6a6db754d4dd5d893",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+    "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.48",
+    "input_tp": "-3.89",
+    "input_lra": "1.80",
+    "input_thresh": "-33.94",
+    "output_i": "-18.94",
+    "output_tp": "-2.00",
+    "output_lra": "2.00",
+    "output_thresh": "-29.41",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.06"
+  },
+  "gainDb": 1.69,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

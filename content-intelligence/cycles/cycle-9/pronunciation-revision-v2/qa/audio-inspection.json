@@ -1,0 +1,701 @@
+{
+  "checkedAt": "2026-10-04T21:34:35.656Z",
+  "masterPath": "artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+  "masterSha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+  "method": "Local Whisper tiny.en ASR of each clip and full decoded master, plus independent ffprobe durations; machine corroboration, not human subjective listening. All exact decoded-master sentence intervals also inspected; whole-master recognition is secondary corroboration, never pronunciation/prosody acceptance.",
+  "model": "onnx-community/whisper-tiny.en",
+  "modelSha256": "e93ec822f16a8fd264e7de972ad17d615ea7334b75a52d54c50c2e18dd503a25",
+  "narratorModelSha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478",
+  "semanticUnits": [
+    {
+      "id": "two-goals-cue-1",
+      "fullSentence": "Barbados scored an own goal on purpose. Then they defended both goals.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000010c8000] silence_start: 0",
+        "[silencedetect @ 0x6000010c8000] silence_end: 0.340208 | silence_duration: 0.340208",
+        "[silencedetect @ 0x6000010c8000] silence_start: 2.5795",
+        "[silencedetect @ 0x6000010c8000] silence_end: 2.9875 | silence_duration: 0.408",
+        "[silencedetect @ 0x6000010c8000] silence_start: 4.43788",
+        "[silencedetect @ 0x6000010c8000] silence_end: 4.875 | silence_duration: 0.437125"
+      ]
+    },
+    {
+      "id": "two-goals-cue-2",
+      "fullSentence": "It was a Caribbean Cup qualifier in 1994. And winning the match wasn't enough.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003b34720] silence_start: 0",
+        "[silencedetect @ 0x600003b34720] silence_end: 0.32075 | silence_duration: 0.32075",
+        "[silencedetect @ 0x600003b34720] silence_start: 3.176",
+        "[silencedetect @ 0x600003b34720] silence_end: 3.65704 | silence_duration: 0.481042",
+        "[silencedetect @ 0x600003b34720] silence_start: 5.33083",
+        "[silencedetect @ 0x600003b34720] silence_end: 5.775 | silence_duration: 0.444167"
+      ]
+    },
+    {
+      "id": "two-goals-cue-3",
+      "fullSentence": "Barbados needed to win by two goals to qualify. Late in the game, they led two-one. A win—but still elimination.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600000a4c000] silence_start: 0",
+        "[silencedetect @ 0x600000a4c000] silence_end: 0.339417 | silence_duration: 0.339417",
+        "[silencedetect @ 0x600000a4c000] silence_start: 3.14004",
+        "[silencedetect @ 0x600000a4c000] silence_end: 3.66617 | silence_duration: 0.526125",
+        "[silencedetect @ 0x600000a4c000] silence_start: 5.35787",
+        "[silencedetect @ 0x600000a4c000] silence_end: 5.76938 | silence_duration: 0.4115",
+        "[silencedetect @ 0x600000a4c000] silence_start: 7.73312",
+        "[silencedetect @ 0x600000a4c000] silence_end: 8.225 | silence_duration: 0.491875"
+      ]
+    },
+    {
+      "id": "two-goals-cue-4",
+      "fullSentence": "They could try to score again. Or exploit an unusual rule.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600001018000] silence_start: 0",
+        "[silencedetect @ 0x600001018000] silence_end: 0.316042 | silence_duration: 0.316042",
+        "[silencedetect @ 0x600001018000] silence_start: 1.48529",
+        "[silencedetect @ 0x600001018000] silence_end: 1.83796 | silence_duration: 0.352667",
+        "[silencedetect @ 0x600001018000] silence_start: 3.51221",
+        "[silencedetect @ 0x600001018000] silence_end: 4 | silence_duration: 0.487792"
+      ]
+    },
+    {
+      "id": "two-goals-cue-5",
+      "fullSentence": "A draw at full time meant extra time. The first goal there would end the match—and count double.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x60000231c000] silence_start: 0",
+        "[silencedetect @ 0x60000231c000] silence_end: 0.30775 | silence_duration: 0.30775",
+        "[silencedetect @ 0x60000231c000] silence_start: 2.57317",
+        "[silencedetect @ 0x60000231c000] silence_end: 3.10358 | silence_duration: 0.530417",
+        "[silencedetect @ 0x60000231c000] silence_start: 5.66717",
+        "[silencedetect @ 0x60000231c000] silence_end: 6.15 | silence_duration: 0.482833"
+      ]
+    },
+    {
+      "id": "two-goals-cue-6",
+      "fullSentence": "So, one goal in extra time could give Barbados the two-goal margin they needed.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000011c0000] silence_start: 2.26154",
+        "[silencedetect @ 0x6000011c0000] silence_end: 2.64304 | silence_duration: 0.3815",
+        "[silencedetect @ 0x6000011c0000] silence_start: 5.20504",
+        "[silencedetect @ 0x6000011c0000] silence_end: 5.7 | silence_duration: 0.494958"
+      ]
+    },
+    {
+      "id": "two-goals-cue-7",
+      "fullSentence": "They deliberately scored into their own net. Two-two. Now they just needed to keep it tied.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003644000] silence_start: 0",
+        "[silencedetect @ 0x600003644000] silence_end: 0.316042 | silence_duration: 0.316042",
+        "[silencedetect @ 0x600003644000] silence_start: 2.31838",
+        "[silencedetect @ 0x600003644000] silence_end: 2.72479 | silence_duration: 0.406417",
+        "[silencedetect @ 0x600003644000] silence_start: 3.25154",
+        "[silencedetect @ 0x600003644000] silence_end: 3.60292 | silence_duration: 0.351375",
+        "[silencedetect @ 0x600003644000] silence_start: 5.34029",
+        "[silencedetect @ 0x600003644000] silence_end: 5.8 | silence_duration: 0.459708"
+      ]
+    },
+    {
+      "id": "two-goals-cue-8",
+      "fullSentence": "But Grenada had spotted a way to stop them.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600001098660] silence_start: 0",
+        "[silencedetect @ 0x600001098660] silence_end: 0.311708 | silence_duration: 0.311708",
+        "[silencedetect @ 0x600001098660] silence_start: 2.61233",
+        "[silencedetect @ 0x600001098660] silence_end: 3.1 | silence_duration: 0.487667"
+      ]
+    },
+    {
+      "id": "two-goals-cue-9",
+      "fullSentence": "Score against Barbados, and Grenada wins. Score into their own goal, and Grenada loses by only one—still enough to qualify.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003768720] silence_start: 2.97354",
+        "[silencedetect @ 0x600003768720] silence_end: 3.51117 | silence_duration: 0.537625",
+        "[silencedetect @ 0x600003768720] silence_start: 8.528",
+        "[silencedetect @ 0x600003768720] silence_end: 9.05 | silence_duration: 0.522"
+      ]
+    },
+    {
+      "id": "two-goals-cue-10",
+      "fullSentence": "Before full time, either goal would do.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002b40000] silence_start: 0",
+        "[silencedetect @ 0x600002b40000] silence_end: 0.336667 | silence_duration: 0.336667",
+        "[silencedetect @ 0x600002b40000] silence_start: 2.33796",
+        "[silencedetect @ 0x600002b40000] silence_end: 2.825 | silence_duration: 0.487042"
+      ]
+    },
+    {
+      "id": "two-goals-cue-11",
+      "fullSentence": "Barbados had to protect their own goal—and Grenada's. The opponent's net had become something they needed to defend.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600000ebc000] silence_start: 0",
+        "[silencedetect @ 0x600000ebc000] silence_end: 0.336417 | silence_duration: 0.336417",
+        "[silencedetect @ 0x600000ebc000] silence_start: 2.47146",
+        "[silencedetect @ 0x600000ebc000] silence_end: 2.83783 | silence_duration: 0.366375",
+        "[silencedetect @ 0x600000ebc000] silence_start: 3.68788",
+        "[silencedetect @ 0x600000ebc000] silence_end: 4.21196 | silence_duration: 0.524083",
+        "[silencedetect @ 0x600000ebc000] silence_start: 7.11537",
+        "[silencedetect @ 0x600000ebc000] silence_end: 7.575 | silence_duration: 0.459625"
+      ]
+    },
+    {
+      "id": "two-goals-cue-12",
+      "fullSentence": "They kept it two-two until full time.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000039cc000] silence_start: 0",
+        "[silencedetect @ 0x6000039cc000] silence_end: 0.333917 | silence_duration: 0.333917",
+        "[silencedetect @ 0x6000039cc000] silence_start: 2.33913",
+        "[silencedetect @ 0x6000039cc000] silence_end: 2.825 | silence_duration: 0.485875"
+      ]
+    },
+    {
+      "id": "two-goals-cue-13",
+      "fullSentence": "Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000026980c0] silence_start: 0",
+        "[silencedetect @ 0x6000026980c0] silence_end: 0.30125 | silence_duration: 0.30125",
+        "[silencedetect @ 0x6000026980c0] silence_start: 2.59075",
+        "[silencedetect @ 0x6000026980c0] silence_end: 3.02496 | silence_duration: 0.434208",
+        "[silencedetect @ 0x6000026980c0] silence_start: 4.79467",
+        "[silencedetect @ 0x6000026980c0] silence_end: 5.17992 | silence_duration: 0.38525",
+        "[silencedetect @ 0x6000026980c0] silence_start: 5.94987",
+        "[silencedetect @ 0x6000026980c0] silence_end: 6.425 | silence_duration: 0.475125"
+      ]
+    },
+    {
+      "id": "two-goals-cue-14",
+      "fullSentence": "Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+      "generatedAsSingleUnit": true,
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002738000] silence_start: 3.04979",
+        "[silencedetect @ 0x600002738000] silence_end: 3.55754 | silence_duration: 0.50775",
+        "[silencedetect @ 0x600002738000] silence_start: 5.76417",
+        "[silencedetect @ 0x600002738000] silence_end: 6.25 | silence_duration: 0.485833"
+      ]
+    }
+  ],
+  "generationBoundaryReview": {
+    "practice": "Complete semantic sentences generated together; caption line breaks never create TTS boundaries. No text substitutions; Explicit Grenada phoneme correction in three complete units; no global narrator modification, isolated-word splice or trimming; complete source clips retained.",
+    "limitation": "Acoustic silence and ASR are machine measurements. Sentence-internal prosody, correct stress and pronunciation remain listening judgments at master review."
+  },
+  "results": [
+    {
+      "id": "two-goals-cue-1",
+      "exactText": "Barbados scored an own goal on purpose. Then they defended both goals.",
+      "recognized": " Barbados scored an own goal on purpose, then they defended both goals.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.5
+          ],
+          "text": " Barbados scored an own goal on purpose, then they defended both goals."
+        }
+      ],
+      "duration": 4.875,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-2",
+      "exactText": "It was a Caribbean Cup qualifier in 1994. And winning the match wasn't enough.",
+      "recognized": " It was a Caribbean Cup qualifier in 1994, and winning the match wasn't enough.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5.36
+          ],
+          "text": " It was a Caribbean Cup qualifier in 1994, and winning the match wasn't enough."
+        }
+      ],
+      "duration": 5.775,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-3",
+      "exactText": "Barbados needed to win by two goals to qualify. Late in the game, they led two-one. A win—but still elimination.",
+      "recognized": " Barbados needed to win by two goals to qualify. Late in the game, they led two won, a win, but still elimination.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.5
+          ],
+          "text": " Barbados needed to win by two goals to qualify."
+        },
+        {
+          "timestamp": [
+            3.5,
+            7.74
+          ],
+          "text": " Late in the game, they led two won, a win, but still elimination."
+        }
+      ],
+      "duration": 8.225,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-4",
+      "exactText": "They could try to score again. Or exploit an unusual rule.",
+      "recognized": " They could try to score again, or exploit an unusual rule.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " They could try to score again, or exploit an unusual rule."
+        }
+      ],
+      "duration": 4,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-5",
+      "exactText": "A draw at full time meant extra time. The first goal there would end the match—and count double.",
+      "recognized": " A draw at full time meant extra time. The first goal there would end the match and count double.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " A draw at full time meant extra time."
+        },
+        {
+          "timestamp": [
+            3,
+            6
+          ],
+          "text": " The first goal there would end the match and count double."
+        }
+      ],
+      "duration": 6.15,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-6",
+      "exactText": "So, one goal in extra time could give Barbados the two-goal margin they needed.",
+      "recognized": " So, one goal in extra time could give Barbados the two goal margin they needed.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5.2
+          ],
+          "text": " So, one goal in extra time could give Barbados the two goal margin they needed."
+        }
+      ],
+      "duration": 5.7,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-7",
+      "exactText": "They deliberately scored into their own net. Two-two. Now they just needed to keep it tied.",
+      "recognized": " They deliberately scored into their own net. 2-2. Now they just needed to keep it tied.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.5
+          ],
+          "text": " They deliberately scored into their own net."
+        },
+        {
+          "timestamp": [
+            2.5,
+            5.5
+          ],
+          "text": " 2-2. Now they just needed to keep it tied."
+        }
+      ],
+      "duration": 5.8,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-8",
+      "exactText": "But Grenada had spotted a way to stop them.",
+      "recognized": " but Grenada had spotted a way to stop them.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " but Grenada had spotted a way to stop them."
+        }
+      ],
+      "duration": 3.1,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-9",
+      "exactText": "Score against Barbados, and Grenada wins. Score into their own goal, and Grenada loses by only one—still enough to qualify.",
+      "recognized": " Score against Barbados and Grenada wins. Score into their own goal, and Grenada loses by only one, still enough to qualify.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.2
+          ],
+          "text": " Score against Barbados and Grenada wins."
+        },
+        {
+          "timestamp": [
+            3.2,
+            9
+          ],
+          "text": " Score into their own goal, and Grenada loses by only one, still enough to qualify."
+        }
+      ],
+      "duration": 9.05,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-10",
+      "exactText": "Before full time, either goal would do.",
+      "recognized": " Before full time, either goal would do.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Before full time, either goal would do."
+        }
+      ],
+      "duration": 2.825,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-11",
+      "exactText": "Barbados had to protect their own goal—and Grenada's. The opponent's net had become something they needed to defend.",
+      "recognized": " Barbados had to protect their own goal and Grenadas. The opponent's net had become something they needed to defend.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " Barbados had to protect their own goal and Grenadas."
+        },
+        {
+          "timestamp": [
+            4,
+            7
+          ],
+          "text": " The opponent's net had become something they needed to defend."
+        }
+      ],
+      "duration": 7.575,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-12",
+      "exactText": "They kept it two-two until full time.",
+      "recognized": " They kept it to to until full time.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.4
+          ],
+          "text": " They kept it to to until full time."
+        }
+      ],
+      "duration": 2.825,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-13",
+      "exactText": "Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+      "recognized": " Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Then Barbados scored the extra-time winner."
+        },
+        {
+          "timestamp": [
+            3,
+            5
+          ],
+          "text": " It counted as a two-goal victory."
+        },
+        {
+          "timestamp": [
+            5,
+            6
+          ],
+          "text": " They qualified."
+        }
+      ],
+      "duration": 6.425,
+      "sampleRate": 24000
+    },
+    {
+      "id": "two-goals-cue-14",
+      "exactText": "Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+      "recognized": " Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Scoring against themselves hadn't been the mistake."
+        },
+        {
+          "timestamp": [
+            3,
+            6
+          ],
+          "text": " It was their way of making the rules work for them."
+        }
+      ],
+      "duration": 6.25,
+      "sampleRate": 24000
+    }
+  ],
+  "actualMasterCues": [
+    {
+      "id": "two-goals-cue-1",
+      "exactText": "Barbados scored an own goal on purpose. Then they defended both goals.",
+      "recognized": " Barbados scored an own goal on purpose, then they defended both goals.",
+      "start": 0,
+      "duration": 4.875
+    },
+    {
+      "id": "two-goals-cue-2",
+      "exactText": "It was a Caribbean Cup qualifier in 1994. And winning the match wasn't enough.",
+      "recognized": " It was a Caribbean cup qualifier in 1994, and winning the match wasn't enough.",
+      "start": 5.266666666666667,
+      "duration": 5.775
+    },
+    {
+      "id": "two-goals-cue-3",
+      "exactText": "Barbados needed to win by two goals to qualify. Late in the game, they led two-one. A win—but still elimination.",
+      "recognized": " Barbados needed to win by two goals to qualify. Late in the game, they led two won, a win, but still elimination.",
+      "start": 11.266666666666667,
+      "duration": 8.225
+    },
+    {
+      "id": "two-goals-cue-4",
+      "exactText": "They could try to score again. Or exploit an unusual rule.",
+      "recognized": " They could try to score again, or exploit an unusual rule.",
+      "start": 19.7,
+      "duration": 4
+    },
+    {
+      "id": "two-goals-cue-5",
+      "exactText": "A draw at full time meant extra time. The first goal there would end the match—and count double.",
+      "recognized": " A draw at full time meant extra time. The first goal there would end the match and count double.",
+      "start": 23.9,
+      "duration": 6.15
+    },
+    {
+      "id": "two-goals-cue-6",
+      "exactText": "So, one goal in extra time could give Barbados the two-goal margin they needed.",
+      "recognized": " So, one goal in extra time could give Barbados the two goal margin they needed.",
+      "start": 30.266666666666666,
+      "duration": 5.7
+    },
+    {
+      "id": "two-goals-cue-7",
+      "exactText": "They deliberately scored into their own net. Two-two. Now they just needed to keep it tied.",
+      "recognized": " They deliberately scored into their own net. 2-2. Now they just needed to keep it tied.",
+      "start": 36.166666666666664,
+      "duration": 5.8
+    },
+    {
+      "id": "two-goals-cue-8",
+      "exactText": "But Grenada had spotted a way to stop them.",
+      "recognized": " but Grenada had spotted a way to stop them.",
+      "start": 42.333333333333336,
+      "duration": 3.1
+    },
+    {
+      "id": "two-goals-cue-9",
+      "exactText": "Score against Barbados, and Grenada wins. Score into their own goal, and Grenada loses by only one—still enough to qualify.",
+      "recognized": " Score against Barbados and Grenada wins. Score into their own goal, and Grenada loses by only one, still enough to qualify.",
+      "start": 45.63333333333333,
+      "duration": 9.05
+    },
+    {
+      "id": "two-goals-cue-10",
+      "exactText": "Before full time, either goal would do.",
+      "recognized": " Before full time, either goal would do.",
+      "start": 54.9,
+      "duration": 2.825
+    },
+    {
+      "id": "two-goals-cue-11",
+      "exactText": "Barbados had to protect their own goal—and Grenada's. The opponent's net had become something they needed to defend.",
+      "recognized": " Barbados had to protect their own goal and Grenadas. The opponent's net had become something they needed to defend.",
+      "start": 58.1,
+      "duration": 7.575
+    },
+    {
+      "id": "two-goals-cue-12",
+      "exactText": "They kept it two-two until full time.",
+      "recognized": " They kept it to to until full time.",
+      "start": 65.9,
+      "duration": 2.825
+    },
+    {
+      "id": "two-goals-cue-13",
+      "exactText": "Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+      "recognized": " Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+      "start": 68.93333333333334,
+      "duration": 6.425
+    },
+    {
+      "id": "two-goals-cue-14",
+      "exactText": "Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+      "recognized": " Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+      "start": 75.56666666666666,
+      "duration": 6.25
+    }
+  ],
+  "completeMasterRecognition": {
+    "text": " Barbados scored an own goal on purpose, then they defended both goals. It was a Caribbean Cup qualifier in 1994, and winning the match wasn't enough. Barbados needed to win by two goals to qualify. Late in the game, they led two won, a win, but still elimination. and the match and count double. So one goal in extra time could give Barbados the two goal margin they needed. They deliberately scored into their own net. Two two, now they just needed to keep it tied. But Grenada had spotted a way to stop them. Score against Barbados and Grenada wins. Score into their own goal and Grenada loses by only one, still enough to qualify. Before full time, either goal would do. Barbados had to protect their own goal and Grenadas. The opponent's net had become something they needed to defend. They kept it too-too until full-time. Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified. Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+    "chunks": [
+      {
+        "timestamp": [
+          0,
+          5.6
+        ],
+        "text": " Barbados scored an own goal on purpose, then they defended both goals."
+      },
+      {
+        "timestamp": [
+          5.6,
+          11.6
+        ],
+        "text": " It was a Caribbean Cup qualifier in 1994, and winning the match wasn't enough."
+      },
+      {
+        "timestamp": [
+          11.6,
+          14.96
+        ],
+        "text": " Barbados needed to win by two goals to qualify."
+      },
+      {
+        "timestamp": [
+          14.96,
+          34
+        ],
+        "text": " Late in the game, they led two won, a win, but still elimination. and the match and count double. So one goal in extra time could give Barbados"
+      },
+      {
+        "timestamp": [
+          34,
+          36.56
+        ],
+        "text": " the two goal margin they needed."
+      },
+      {
+        "timestamp": [
+          36.56,
+          38.92
+        ],
+        "text": " They deliberately scored into their own net."
+      },
+      {
+        "timestamp": [
+          38.92,
+          42.76
+        ],
+        "text": " Two two, now they just needed to keep it tied."
+      },
+      {
+        "timestamp": [
+          42.76,
+          45.56
+        ],
+        "text": " But Grenada had spotted a way to stop them."
+      },
+      {
+        "timestamp": [
+          45.56,
+          48.96
+        ],
+        "text": " Score against Barbados and Grenada wins."
+      },
+      {
+        "timestamp": [
+          48.96,
+          52.76
+        ],
+        "text": " Score into their own goal and Grenada loses by only one,"
+      },
+      {
+        "timestamp": [
+          52.76,
+          54.88
+        ],
+        "text": " still enough to qualify."
+      },
+      {
+        "timestamp": [
+          54.88,
+          57.92
+        ],
+        "text": " Before full time, either goal would do."
+      },
+      {
+        "timestamp": [
+          57.92,
+          61.6
+        ],
+        "text": " Barbados had to protect their own goal and Grenadas."
+      },
+      {
+        "timestamp": [
+          61.6,
+          66.72
+        ],
+        "text": " The opponent's net had become something they needed to defend. They kept it"
+      },
+      {
+        "timestamp": [
+          66.72,
+          72.48
+        ],
+        "text": " too-too until full-time. Then Barbados scored the extra-time winner. It counted"
+      },
+      {
+        "timestamp": [
+          72.48,
+          74.88
+        ],
+        "text": " as a two-goal victory. They qualified."
+      },
+      {
+        "timestamp": [
+          75.84,
+          82.24
+        ],
+        "text": " Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them."
+      }
+    ]
+  },
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -21.8 LUFS\n    Threshold: -32.2 LUFS\n\n  Loudness range:\n    LRA:         2.3 LU\n    Threshold: -42.7 LUFS\n    LRA low:   -23.9 LUFS\n    LRA high:  -21.6 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+  "subjectiveListening": "Owner master review: voice naturalness, Barbados and Grenada pronunciation, complete sentence prosody and semantic contrast; ASR cannot establish pronunciation or naturalness."
+}
