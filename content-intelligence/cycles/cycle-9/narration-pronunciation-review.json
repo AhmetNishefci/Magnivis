@@ -1,0 +1,46 @@
+{
+  "enteredAt": "2026-10-04T21:14:00.315664+00:00",
+  "cycleId": "cycle.9",
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-9/master-candidate-v1.json",
+    "sha256": "aa63930246228ff7005064a6d85c87d2801af50f8026ca2b1011ed7717edab27"
+  },
+  "mediaSha256": "969193b8cf9892d978fcb584b30f2d55109acb6e3a61cfbe27feb2cc980f6bba",
+  "finding": "Default Kokoro phonemizer input for Grenada has the stressed AH vowel, rather than the Caribbean country name NAY vowel. This is a demonstrated phonetic-input mismatch, not a claim of human listening. Actual-master ASR independently renders Granada in several relevant intervals.",
+  "method": {
+    "input": "Barbados and Grenada",
+    "phonemizerLanguage": "en-us",
+    "actualOutput": [
+      "b\u0251\u02d0\u0279b\u02c8e\u026ado\u028as \u00e6nd \u0261\u0279\u025bn\u02c8\u0251\u02d0d\u0259"
+    ],
+    "kokoroImplementationSha256": "31b1db2aa4a7411f55786900f0cbdd0351f1063859b107f9a99699a03b098b7d",
+    "phonemizerImplementationSha256": "193481f474f7c1ea81df3195d18b45df8ef7254dbdccb3f193d60215c4897bec"
+  },
+  "expectedPronunciation": {
+    "surface": "gre-NAY-dah",
+    "source": "National Hurricane Operations Plan2024, AppendixJ: geographical defining points and phonetic pronunciations",
+    "url": "https://www.icams-portal.gov/resources/ofcm/nhop/2024_full_nhop.pdf",
+    "inspectedExcerpt": "Grenada \u2014 gre-NAY-dah",
+    "access": "Search-engine indexed excerpt inspected; direct PDF fetch403. No full-document inspection claimed."
+  },
+  "affectedNarrationCueIds": [
+    "two-goals-cue-8",
+    "two-goals-cue-9",
+    "two-goals-cue-11"
+  ],
+  "orderingError": "Master Review transition was completed before this phonetic-input check. Existing exact candidate, receipts and historical technical QA remain preserved. No owner revision decision is invented.",
+  "recommendation": "REVISE MASTER \u2014 Cycle #9: correct Grenada pronunciation, preserving the verified script and approved premise. Regenerate affected complete sentences through a scoped local phonetic surface, remeasure timing, adapt captions/visual synchronization, create a new immutable master and complete QA/durability before renewed Master Review.",
+  "scope": [
+    "No discovery or premise replacement.",
+    "No written-word substitution, global narrator change, word-level audio splice or historical media overwrite.",
+    "No publication preparation or platform action."
+  ],
+  "workflowBoundary": {
+    "stage": "master-review",
+    "revision": 8,
+    "masterApproval": false,
+    "rule": "Internal retry cannot cross a human gate or locked-master boundary",
+    "source": "src/workflow/cycle.ts",
+    "ownerDecisionRequired": "Existing exact-master revise decision, not an additional gate."
+  }
+}

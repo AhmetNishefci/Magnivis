@@ -8,6 +8,10 @@ Exact master SHA-256: `969193b8cf9892d978fcb584b30f2d55109acb6e3a61cfbe27feb2cc9
 
 10,900,358 bytes; 2,453 frames / **81.7667 seconds** picture, 81.814 seconds container; 1080×1920, 30 fps, H.264, AAC 48 kHz. Canonical identity is immutable; this handoff grants no approval.
 
+**Recommendation: REVISE MASTER for Grenada pronunciation before approval.** A post-candidate check demonstrates that Kokoro’s default phonetic input maps the name to “gre-NAH-duh,” rather than the country’s “gre-NAY-duh.” This agrees with the earlier ASR ambiguity. The issue is now more specific than a subjective listening caveat. I completed the Master Review transition before this phonetic check; the exact candidate and all receipts remain preserved. [Evidence and scoped correction proposal](narration-pronunciation-review.json).
+
+The current V3 journal is already at Master Review. Its existing owner `revise` decision is required to return to production; an internal retry cannot cross this gate. The proposed revision keeps the premise, verified written script and primary voice, regenerates the affected complete sentences with a scoped pronunciation correction, remeasures timing and rebuilds captions/visual synchronization into a new immutable master. No owner decision is fabricated and no production continues behind the gate.
+
 ## What the viewer gets
 
 The deliberate own goal appears irrational. The two-goal qualification constraint and double-value extra-time winner explain Barbados's gamble. Then Grenada can qualify by scoring at either end before full time, so Barbados must protect both. The real outcome completes the explanation: unusual rules changed which actions helped each team. The story remains about this match rather than a generic game-theory lecture.
@@ -40,11 +44,11 @@ Independent journal `workflow/cycles/cycle.9/` revision 8 is **master-review**. 
 
 Cycle #8 remains authorized at revision 30 with its original owner-reported scheduling and unknown actual publication. Earlier cycles, approvals, research, media, operational evidence and recovery remain unchanged. [Scope proof](master-scope-verification.json). No publication package, variants, covers, deliveries, uploads, scheduling, publication or Cycle #10.
 
-Production is on isolated review branch `content/cycle-9-premise-review`; main remains the authorized baseline. [Validation](validation.json) and [remote/clean-checkout proof](remote-durability.json) record the final repository results and commits. No architecture, scoring, editorial-selection policy or additional owner gate was changed; existing execution/session contracts were used.
+Production is on isolated review branch `content/cycle-9-premise-review`; main remains the authorized baseline. [Validation](validation.json) and [remote/clean-checkout proof](remote-durability.json) record the results:480 tests/51 files, exact artifact restore, recovery and media QA also pass in an independent local clone with locked offline dependencies. Pushed/tested source and media checkpoint is `02931b7`; the later review addendum and durability receipt are metadata only. A completed remote network restore is not claimed. These results do not waive the demonstrated pronunciation defect. No architecture, scoring, editorial-selection policy or additional owner gate was changed; existing execution/session contracts were used.
 
 ## Decision
 
-**APPROVE MASTER — Cycle #9** approves these exact bytes and permits the next internal publication-preparation stage. **REVISE MASTER — specific feedback** returns this cycle for revision. Upload, scheduling and publication remain separately gated.
+**Recommended: REVISE MASTER — Cycle #9: correct Grenada pronunciation; preserve the verified script, premise and primary voice.** This returns the same cycle to production. Approval is not recommended for the current candidate. Upload, scheduling and publication remain separately gated.
 
 ## Exact narration
 
