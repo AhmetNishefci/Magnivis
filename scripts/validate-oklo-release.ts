@@ -1,0 +1,35 @@
+import {execFileSync,spawnSync} from 'node:child_process';
+import {existsSync,readFileSync,writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {mediaHash} from '../src/artifacts/media';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {loadCycle,recoverCycleEvent,loadProjectCycles} from '../src/workflow/store';
+import {inspectCycleRelease} from '../src/workflow/release';
+import {readBoundRecord,requireOwnerDecision} from '../src/workflow/evidence';
+import {nextAction} from '../src/workflow/cycle';
+const registry=openMediaCatalog(),root=process.cwd(),base='content-intelligence/cycles/cycle-8/publication',cycle=loadCycle(root,'cycle.8',registry),baseline='928b8201b5a7f31006745ec3dc3a801f0f0a3669';
+if(cycle.stage!=='publication-review'||cycle.revision!==25||!cycle.candidate||!cycle.masterDecision||!cycle.release||cycle.publicationDecision||existsSync('workflow/cycles/cycle.9'))throw new Error('Wrong publication boundary');
+const candidate=readBoundRecord(cycle.candidate) as {media:{id:string;sha256:string}},decision=requireOwnerDecision(cycle.masterDecision,cycle.id,'master-review',candidate);
+if(decision.decision!=='approve'||candidate.media.sha256!=='476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3')throw new Error('Master lock drift');
+const at=new Date().toISOString(),inspection=inspectCycleRelease(readBoundRecord(cycle.release),registry,at),risks=JSON.parse(readFileSync(`${base}/risk-register-v1.json`,'utf8'));
+if(sha256Json(inspection.unknowns)!==sha256Json(risks.requiredExactPresentationUnknowns)||risks.acceptedByOwner||risks.knownCollisions.length)throw new Error('Risk register drift');
+const old=JSON.parse(execFileSync('git',['show',`${baseline}:artifacts/media-catalog.json`],{encoding:'utf8',maxBuffer:16*1024*1024})).artifacts as {id:string;bytes:number}[],catalog=JSON.parse(readFileSync('artifacts/media-catalog.json','utf8')).artifacts as {id:string;bytes:number}[];
+for(const row of old)if(sha256Json(row)!==sha256Json(catalog.find(a=>a.id===row.id)))throw new Error('Prior catalog entry changed');
+const inputs=JSON.parse(readFileSync('content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/visual-pass-3/implementation-bindings.json','utf8'));
+for(const f of inputs.files)if(mediaHash(f.path)!==f.sha256)throw new Error('Approved input changed: '+f.path);
+const asset=JSON.parse(readFileSync('content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/content-asset.ready.json','utf8'));
+for(const d of inspection.release.deliveries){
+ if(d.variant.relationship!=='exact-master'||sha256Json(d.variant.media)!==sha256Json(candidate.media))throw new Error('Unexpected derivative or changed approved media');
+ const manifest=readBoundRecord(d.manifest) as {metadata:{path:string;sha256:string};uploadCopy:{path:string;sha256:string}},m=readBoundRecord(manifest.metadata) as {claimIds:string[];firstComment:string;description:string;publicationAuthorized:boolean;operatorSettings:{state:string}};
+ if(!m.firstComment||!m.description.includes('AI-generated narration')||m.publicationAuthorized||m.claimIds.some(id=>!asset.selectedClaimIds.includes(id))||m.operatorSettings.state!=='recommendations-not-applied')throw new Error('Metadata/copy/claim authority drift');
+}
+const paths=execFileSync('git',['ls-tree','-r','--name-only',baseline],{encoding:'utf8'}).trim().split('\n').filter(p=>p.startsWith('content-intelligence/cycles/cycle-8/')||p.startsWith('workflow/cycles/cycle.')&&p!=='workflow/cycles/cycle.8/state.json'||p.startsWith('artifacts/masters/oklo-')||p.startsWith('artifacts/historical-media/')||p==='artifacts/media-retentions.json');
+for(const path of paths)if(!readFileSync(path).equals(execFileSync('git',['show',`${baseline}:${path}`],{maxBuffer:128*1024*1024})))throw new Error('Historical bytes changed: '+path);
+const v2={path:'artifacts/masters/oklo-cycle8-candidate-v2.mp4',sha256:'174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d'};if(mediaHash(v2.path)!==v2.sha256)throw new Error('Historical V2 materialization changed');
+const restored=recoverCycleEvent(root,cycle.id,registry);if(sha256Json(restored)!==sha256Json(cycle))throw new Error('Recovery changed state');
+const cycles=loadProjectCycles(root,registry),ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const decoded=spawnSync(ffmpeg,['-v','error','-xerror','-err_detect','explode','-i',registry.resolveFile(candidate.media),'-map','0:v:0','-map','0:a:0','-f','null','-'],{encoding:'utf8'});if(decoded.status!==0)throw new Error(decoded.stderr);
+const additions=catalog.filter(row=>!old.some(o=>o.id===row.id));
+const report={checkedAt:at,passed:true,cycleId:cycle.id,revision:cycle.revision,nextAction:nextAction(cycle),release:cycle.release,reviewTargetSha256:sha256Json(inspection.release),masterApproval:cycle.masterDecision,masterUnchanged:true,fullMediaDecode:'passed',approvedSourceAndInputHashesUnchanged:true,priorCanonicalEntriesUnchanged:old.length,canonicalPayloads:catalog.length,newCanonicalPayloads:additions.length,newMediaBytes:additions.reduce((n,a)=>n+a.bytes,0),historicalFilesUnchanged:paths.length,v2Preserved:v2,workflowReplay:cycles.map(c=>({id:c.id,revision:c.revision,stage:c.stage})),recovery:'exact no-op',stateSha256:mediaHash('workflow/cycles/cycle.8/state.json'),event25Sha256:mediaHash('workflow/cycles/cycle.8/event-25.json'),uniqueVideoPayloads:1,derivativeVideos:0,uniqueSelectedCoverPayloads:2,newCoverPayloads:1,unknownCount:inspection.unknowns.length,knownCollisions:[],uploads:inspection.uploads,publicationAuthorized:false,externalPlatformActions:[]};
+writeFileSync(`${base}/readiness-validation-v1.json`,JSON.stringify(report,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({passed:true,revision:cycle.revision,gate:cycle.stage,masterUnchanged:true,unknownCount:inspection.unknowns.length,newMediaBytes:report.newMediaBytes}));

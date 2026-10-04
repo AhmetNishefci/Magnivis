@@ -1,0 +1,17 @@
+import {createRequire} from 'node:module';
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+const base='content-intelligence/cycles/cycle-8/publication',master='artifacts/masters/oklo-cycle8-candidate-v5.mp4',scratch='output/oklo-v5-release-verification.mp4';
+const expected='476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3';
+if(mediaHash(master)!==expected)throw new Error('Exact approved master changed');
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const packets=(path:string)=>execFileSync(ffmpeg,['-v','error','-i',path,'-map','0:v:0','-c','copy','-f','hash','-hash','sha256','-'],{encoding:'utf8'}).trim();
+const original=packets(master),verification=packets(scratch);
+if(original!==verification)throw new Error('Verification render picture packets differ');
+const qa=JSON.parse(readFileSync('qa/oklo-v5/report.json','utf8'));
+if(!qa.passed)throw new Error('Canonical QA failed');
+const bindings=JSON.parse(readFileSync('content-intelligence/cycles/cycle-8/editorial-revision-v4/compression-pass-2/visual-pass-3/implementation-bindings.json','utf8'));
+for(const f of bindings.files)if(mediaHash(f.path)!==f.sha256)throw new Error('Approved input changed: '+f.path);
+writeFileSync(`${base}/qa/master-release-validation-v1.json`,JSON.stringify({checkedAt:new Date().toISOString(),passed:true,master:{path:master,sha256:expected},approvedSourceAndInputHashesUnchanged:true,fullVerificationRender:{path:scratch,retention:'ignored temporary output, never a delivery or replacement',picturePacketSha256:verification,exactApprovedPicturePacketsMatch:true,audio:'Raw verification render precedes the approved mastering gain; approved canonical audio remains unchanged and is independently checked by full media QA.'},canonicalQa:qa,contactSheetInspection:{path:'qa/oklo-v5/contact-sheet.jpg',actualLocalInspection:true,findings:['Earth opening, illustrative investigation and fission evidence, deep-time deposition, connected moderation, neutron-loss condition, scoped inferred feedback and Earth payoff intact.','No new local visual issue; owner-approved creative remains unchanged.'],devicePass:false},scope:'Full technical media QA and contact sheet; existing79 browser bounds sampled evidence reused, not continuous/native/device proof.'},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({masterUnchanged:true,picturePacketsMatch:true,qaPassed:true}));

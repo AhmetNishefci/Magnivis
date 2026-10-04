@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-04T10:44:01.963Z",
+  "passed": true,
+  "master": {
+    "path": "artifacts/masters/oklo-cycle8-candidate-v5.mp4",
+    "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+  },
+  "approvedSourceAndInputHashesUnchanged": true,
+  "fullVerificationRender": {
+    "path": "output/oklo-v5-release-verification.mp4",
+    "retention": "ignored temporary output, never a delivery or replacement",
+    "picturePacketSha256": "SHA256=a37f8a2126ffd3f359060e781a070cb96455ff89125443e42c8b5f5bd6289cc6",
+    "exactApprovedPicturePacketsMatch": true,
+    "audio": "Raw verification render precedes the approved mastering gain; approved canonical audio remains unchanged and is independently checked by full media QA."
+  },
+  "canonicalQa": {
+    "checkedAt": "2026-10-04T10:41:05.822Z",
+    "input": "artifacts/masters/oklo-cycle8-candidate-v5.mp4",
+    "expected": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 59.666666666666664
+    },
+    "observed": {
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "audioSampleRate": "48000",
+      "meanVolumeDb": -22.5,
+      "maxVolumeDb": -4,
+      "duration": 59.712,
+      "sizeBytes": 16831063,
+      "bitRate": 2254965
+    },
+    "passed": true,
+    "failures": []
+  },
+  "contactSheetInspection": {
+    "path": "qa/oklo-v5/contact-sheet.jpg",
+    "actualLocalInspection": true,
+    "findings": [
+      "Earth opening, illustrative investigation and fission evidence, deep-time deposition, connected moderation, neutron-loss condition, scoped inferred feedback and Earth payoff intact.",
+      "No new local visual issue; owner-approved creative remains unchanged."
+    ],
+    "devicePass": false
+  },
+  "scope": "Full technical media QA and contact sheet; existing79 browser bounds sampled evidence reused, not continuous/native/device proof."
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "count": 822,
+  "dispositions": {
+    "VERIFIED": 821,
+    "HISTORICAL_MISSING_EXPECTATION": 1
+  },
+  "nonVerified": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "provenance": "HISTORICAL_EXACT",
+      "historicalStatus": "original",
+      "approvalDecisionId": "production-plan.wood-frog-freeze.v1.visualApproval",
+      "publication": "unknown",
+      "retention": "HISTORICAL_EXPECTATION_ONLY",
+      "disposition": "HISTORICAL_MISSING_EXPECTATION",
+      "verification": {
+        "state": "MISSING",
+        "sha256": null,
+        "bytes": null
+      },
+      "providers": [],
+      "result": null
+    }
+  ],
+  "historicalGapPreserved": "Closed-recovery original Wood Frog master remains a hash-only historical missing expectation; this does not transfer approval to replacement media."
+}

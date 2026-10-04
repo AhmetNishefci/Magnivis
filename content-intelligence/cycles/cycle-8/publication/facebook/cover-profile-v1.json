@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.oklo.facebook.cover-v1",
+  "revision": 1,
+  "platform": "facebook",
+  "surface": "facebook-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-04T10:44:02.219Z",
+  "reviewAfter": "2026-10-11T10:44:02.219Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static browser canvas checked; no platform-derived safe composition region measured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail overlay geometry unmeasured.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static image; no native caption/overlay geometry measured.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Grid/profile/feed/native cover crop geometry unknown; no invented rectangle.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-8/publication/qa/selected-frame-cover-v1.json",
+        "sha256": "fb94196143e577da4f08dfbe40855e9c31d362556c8ac01198095683f8f4f1fb"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-8/publication/policy-inspection-v1.json",
+        "sha256": "7376809347400eebd29570dd3fddfc9ca9e3d66f8570a009509ecb5d102f3449"
+      }
+    ],
+    "rationale": "Local1080x1920PNG cover or exact decoded frame reference; native upload/selection capability not tested. Seven-day internal policy review window is not geometry evidence."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-04T13:43:20.505720+00:00",
+  "passed": true,
+  "check": {
+    "command": "VITEST_MAX_WORKERS=1 pnpm check",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 51,
+    "tests": 480,
+    "diffHygiene": "passed",
+    "timeoutsAndAssertionsUnchanged": true,
+    "repositoryConfigChanged": false
+  },
+  "priorAttempts": [
+    {
+      "command": "pnpm check",
+      "result": "four timeout failures; no assertion failures; concurrent heavy validation",
+      "log": "validation/check.log"
+    },
+    {
+      "command": "pnpm check",
+      "result": "479 passed, one Chocolate historical test exceeded 5000ms",
+      "log": "validation/check-repeat.log"
+    },
+    {
+      "command": "pnpm test --maxWorkers=1",
+      "result": "480 passed",
+      "log": "validation/tests-serial.log"
+    }
+  ],
+  "releaseReadiness": "readiness-validation-v1.json",
+  "durability": "durability-report-v1.json",
+  "recovery": "recovery-validation-v1.json",
+  "artifactVerification": "artifact-verification-v1.json",
+  "secretScan": "secret-scan-v1.json",
+  "mediaQA": "qa/master-release-validation-v1.json",
+  "history": "310 historical files and 762 prior canonical catalog rows byte-identical; V2\u2013V4 preserved, V5 unchanged; Cycle7 unchanged",
+  "noWorkflowArchitectureRepair": true,
+  "publicationAuthorized": false,
+  "externalActions": [],
+  "logNormalization": "Only trailing terminal blank lines stripped for Git diff hygiene; test output and failure details preserved."
+}

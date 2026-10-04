@@ -1,0 +1,94 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/chocolate-production.test.ts (6 tests | 1 failed) 5055ms
+   ❯ Chocolate candidate authority and scientific safeguards (6)
+     × binds owner scope, eight claims and measured story duration while preserving history 5037ms
+ ❯ tests/chocolate-finalization.test.ts (7 tests | 1 failed) 7068ms
+   ❯ Chocolate editorial finalization scope (7)
+     × verifies only eight needed statements and retains final asset approval gate 6621ms
+ ❯ tests/chocolate-direction.test.ts (8 tests | 1 failed) 7156ms
+   ❯ Chocolate exact editorial approval and direction proposal (8)
+     × preserves eight verified statements and requires owner direction approval 5870ms
+ ❯ tests/cycle-v3.test.ts (23 tests | 1 failed) 626571ms
+   ❯ Cycle V3 generic lifecycle and integration (23)
+     × replays all historical cycles without adding premise gates or transferring authority 590191ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/chocolate-direction.test.ts > Chocolate exact editorial approval and direction proposal > preserves eight verified statements and requires owner direction approval
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/chocolate-direction.test.ts:15:3
+     13| };
+     14| describe('Chocolate exact editorial approval and direction proposal',(…
+     15|   it('preserves eight verified statements and requires owner direction…
+       |   ^
+     16|     expect(validateChocolateDirection()).toMatchObject({passed:true,st…
+     17|       verifiedClaims:8,reserveClaimsUnchanged:34,unresolvedConvenience…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  tests/chocolate-finalization.test.ts > Chocolate editorial finalization scope > verifies only eight needed statements and retains final asset approval gate
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/chocolate-finalization.test.ts:16:3
+     14| };
+     15| describe('Chocolate editorial finalization scope', () => {
+     16|   it('verifies only eight needed statements and retains final asset ap…
+       |   ^
+     17|     expect(validateChocolateFinalization()).toMatchObject({passed: tru…
+     18|       preservedReserveClaims: 34, conceptualBeats: 8, packageState: 'r…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  tests/chocolate-production.test.ts > Chocolate candidate authority and scientific safeguards > binds owner scope, eight claims and measured story duration while preserving history
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/chocolate-production.test.ts:16:2
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  tests/cycle-v3.test.ts > Cycle V3 generic lifecycle and integration > replays all historical cycles without adding premise gates or transferring authority
+Error: Test timed out in 60000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/cycle-v3.test.ts:441:3
+    439|     expect(()=>editorialDecisionContext(f.root)).toThrow(/committed jo…
+    440|   });
+    441|   it('replays all historical cycles without adding premise gates or tr…
+       |   ^
+    442|     const historicalIds=['cycle.4','cycle.5','cycle.6','cycle.7'];
+    443|     // New independent cycles coexist with this frozen compatibility c…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  4 failed | 47 passed (51)
+      Tests  4 failed | 476 passed (480)
+   Start at  12:46:48
+   Duration  627.96s (tests 97%, import 1%, transform 1%)
+
+ ELIFECYCLE  Test failed. See above for more details.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

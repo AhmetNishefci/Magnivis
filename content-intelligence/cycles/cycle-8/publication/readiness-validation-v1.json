@@ -1,0 +1,163 @@
+{
+  "checkedAt": "2026-10-04T10:46:44.456Z",
+  "passed": true,
+  "cycleId": "cycle.8",
+  "revision": 25,
+  "nextAction": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-8/publication/release-v1.json",
+    "sha256": "9b01a7fe5ad927f76ef9ee8e6cc30b0fbab7ede3cf7edf8ae3aba449288cd800"
+  },
+  "reviewTargetSha256": "981882bd2f9f5bd85670bead950506e89adaaa8fbddcb91b6c577920b45959d2",
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-8/publication/master-approval-v1.json",
+    "sha256": "9acbddc45be585226777d0cb3d15d2e594b217604688004c75eccdfd053ba3d2"
+  },
+  "masterUnchanged": true,
+  "fullMediaDecode": "passed",
+  "approvedSourceAndInputHashesUnchanged": true,
+  "priorCanonicalEntriesUnchanged": 762,
+  "canonicalPayloads": 763,
+  "newCanonicalPayloads": 1,
+  "newMediaBytes": 1752940,
+  "historicalFilesUnchanged": 310,
+  "v2Preserved": {
+    "path": "artifacts/masters/oklo-cycle8-candidate-v2.mp4",
+    "sha256": "174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d"
+  },
+  "workflowReplay": [
+    {
+      "id": "cycle.4",
+      "revision": 9,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.5",
+      "revision": 13,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.6",
+      "revision": 23,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.7",
+      "revision": 25,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.8",
+      "revision": 25,
+      "stage": "publication-review"
+    }
+  ],
+  "recovery": "exact no-op",
+  "stateSha256": "68f79c2a3f7d9b411d30690dcb3f8567cd54d3555191fbc074ec02edf51019ce",
+  "event25Sha256": "e871003583820d9dcf98be5c7d65b6ff92c4df2ece29a1b5e73d63b6d85e50ff",
+  "uniqueVideoPayloads": 1,
+  "derivativeVideos": 0,
+  "uniqueSelectedCoverPayloads": 2,
+  "newCoverPayloads": 1,
+  "unknownCount": 48,
+  "knownCollisions": [],
+  "uploads": [
+    {
+      "variantId": "oklo.variant.youtube.v1",
+      "platform": "youtube",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3",
+            "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/oklo-cycle8-candidate-v5.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.3e6feac0cc7f90f9c3ba1afcaf36d11d6ae44eca97db2e34234b91637bd15278",
+            "sha256": "3e6feac0cc7f90f9c3ba1afcaf36d11d6ae44eca97db2e34234b91637bd15278"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/oklo-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "02cb2eb09934f54b1b4cfa1dd62d73144ff0d836f382da58fdd69f8e8445a732"
+    },
+    {
+      "variantId": "oklo.variant.tiktok.v1",
+      "platform": "tiktok",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3",
+            "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/oklo-cycle8-candidate-v5.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.5a323de85e64fc9f08efe0b58060efb80034c75cd3dee0cf94cadf930cd4f5a5",
+            "sha256": "5a323de85e64fc9f08efe0b58060efb80034c75cd3dee0cf94cadf930cd4f5a5"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/oklo-cycle8-v4/frame-07-2.8s.png"
+        }
+      ],
+      "manifestSha256": "9f240d22cf80d312e1eca8ee02d5fefa127039701db72ccb7a8962a9e759e746"
+    },
+    {
+      "variantId": "oklo.variant.instagram.v1",
+      "platform": "instagram",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3",
+            "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/oklo-cycle8-candidate-v5.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.3e6feac0cc7f90f9c3ba1afcaf36d11d6ae44eca97db2e34234b91637bd15278",
+            "sha256": "3e6feac0cc7f90f9c3ba1afcaf36d11d6ae44eca97db2e34234b91637bd15278"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/oklo-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "65ae34a7cc17d7ecbdceeb8daeedb77043978c551fef8fd7ae0ca5ff1c842d27"
+    },
+    {
+      "variantId": "oklo.variant.facebook.v1",
+      "platform": "facebook",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3",
+            "sha256": "476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/oklo-cycle8-candidate-v5.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.5a323de85e64fc9f08efe0b58060efb80034c75cd3dee0cf94cadf930cd4f5a5",
+            "sha256": "5a323de85e64fc9f08efe0b58060efb80034c75cd3dee0cf94cadf930cd4f5a5"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/oklo-cycle8-v4/frame-07-2.8s.png"
+        }
+      ],
+      "manifestSha256": "e5c0b45b540f5b6078d94f193c4f6f05cecc5e64c1a74408c74e73081d8a05dd"
+    }
+  ],
+  "publicationAuthorized": false,
+  "externalPlatformActions": []
+}
