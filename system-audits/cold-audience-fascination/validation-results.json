@@ -1,0 +1,108 @@
+{
+  "recordedAt": "2026-10-04T15:35:21.541542+00:00",
+  "baseline": "60743f21f67119a1e3abad5c72e8f8c151ef5684",
+  "testedSubstantiveCommit": "0ee176e7fba4f8b3df3cbfed3a9d8ecf9aa27bfe",
+  "branch": "system/cold-audience-fascination-audit",
+  "scope": "documentation-only; validation receipts follow tested commit",
+  "sourceCheck": {
+    "passed": true,
+    "tests": 480,
+    "files": 51,
+    "initialFailure": "One unchanged historical test timed out; full rerun passed after index refresh."
+  },
+  "cleanCheckout": {
+    "method": "Local git clone --no-hardlinks --single-branch; independent objects, no alternates",
+    "dependencies": "Fresh offline frozen-lockfile pnpm10.17.1 install using populated existing package cache; no node_modules symlink",
+    "node": "22.23.3",
+    "checkPassed": true,
+    "tests": 480,
+    "files": 51,
+    "defaultWorkersAndTimeouts": true,
+    "initialFailure": "Four unchanged historical tests timed out; full rerun passed after index refresh. Empty default offline package store was replaced with explicit populated existing cache for installation.",
+    "trackedTreeClean": true,
+    "exactArtifactRestoreAndVerifyPassed": true,
+    "workflowReplay": [
+      {
+        "id": "cycle.4",
+        "stage": "authorized",
+        "revision": 9
+      },
+      {
+        "id": "cycle.5",
+        "stage": "authorized",
+        "revision": 13
+      },
+      {
+        "id": "cycle.6",
+        "stage": "authorized",
+        "revision": 23
+      },
+      {
+        "id": "cycle.7",
+        "stage": "authorized",
+        "revision": 25
+      },
+      {
+        "id": "cycle.8",
+        "stage": "authorized",
+        "revision": 30
+      }
+    ],
+    "historicalPreservation": {
+      "passed": true,
+      "frozenHistoricalFiles": 948,
+      "changedFiles": 1685,
+      "untrackedFiles": 0
+    },
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 763,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "recovery": {
+      "passed": true,
+      "restoredArtifacts": 227,
+      "deliveryPackages": 8,
+      "historicalWoodFrog": "HASH_ONLY",
+      "publicationAuthorized": false
+    },
+    "cycle9Exists": false
+  },
+  "integrity": {
+    "baseline": "60743f2",
+    "protectedDiffEmpty": true,
+    "cycle9Exists": false,
+    "scopedSecretScan": {
+      "files": [
+        "docs/CONTENT-INTELLIGENCE.md",
+        "docs/DECISIONS.md",
+        "docs/PROJECT-STATE.md",
+        "system-audits/cold-audience-fascination/validation.md",
+        "system-audits/cold-audience-fascination/audit.md",
+        "system-audits/cold-audience-fascination/validation-results.json"
+      ],
+      "highConfidencePatternMatches": 0,
+      "limitation": "Heuristic scan, not proof of absence."
+    },
+    "auditLinksResolve": true,
+    "strategySha256": "bd28ba6a9f2b674622efd4cd8d83e13e727bd62a881cc4906e3337f14b9b24a3"
+  },
+  "limits": [
+    "No uncached network bootstrap proof.",
+    "Heuristic secret scan is not a guarantee.",
+    "Hashes and typed judgments do not prove factual truth, editorial fascination or future performance."
+  ],
+  "mediaGenerated": false,
+  "platformActions": false,
+  "mainIntegrated": false
+}
