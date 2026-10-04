@@ -1,0 +1,262 @@
+{
+  "recordedAt": "2026-10-04T15:47:46.995082+00:00",
+  "previousMain": "60743f21f67119a1e3abad5c72e8f8c151ef5684",
+  "approvedBranch": "system/cold-audience-fascination-audit",
+  "approvedCommit": "19e39696c9d9cb1f60e1beeb105f5475026ab9fc",
+  "substantiveAuditedCommit": "0ee176e7fba4f8b3df3cbfed3a9d8ecf9aa27bfe",
+  "integrationMethod": "history-preserving-fast-forward",
+  "metadataOnlyCommit": "2c5303d36a19f660ed9c3b8adf1df4080714c045",
+  "testedIntegratedCommit": "2c5303d36a19f660ed9c3b8adf1df4080714c045",
+  "followingChanges": "Only additive integration validation receipts; final main and actual remote synchronization reported in owner response.",
+  "toolchain": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1"
+  },
+  "sourceValidation": {
+    "pnpmCheck": {
+      "passed": true,
+      "testFiles": 51,
+      "tests": 480
+    },
+    "additionalChecks": [
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/verify-durable-artifacts.ts"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-source-0.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/artifacts.ts",
+          "verify"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-source-1.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/recovery-validate.ts"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-source-2.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/cycle.ts",
+          "status"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-source-3.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "-e",
+          "import {validateArchitectureScope} from './scripts/artifact-v2-integrity.ts'; console.log(JSON.stringify(validateArchitectureScope()))"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-source-4.log"
+      }
+    ]
+  },
+  "cleanCheckout": {
+    "method": "Local git clone --no-hardlinks --single-branch --branch main; independent Git objects, no alternates",
+    "dependencies": "Fresh pnpm install --offline --frozen-lockfile using existing populated package cache; no source node_modules symlink",
+    "trackedTreeClean": true,
+    "exactArtifactRestorePassed": true,
+    "pnpmCheck": {
+      "passed": true,
+      "testFiles": 51,
+      "tests": 480,
+      "defaultWorkersAndTimeouts": true
+    },
+    "initialAttempt": {
+      "passedTests": 476,
+      "timeouts": 4,
+      "failures": "Unchanged 5-second historical checks: Chocolate direction, finalization, production and cross-cycle preservation. No reported semantic assertion failure.",
+      "resolution": "Git index refreshed and complete unchanged suite rerun successfully. Timing cause not established; no assertions or timeouts changed."
+    },
+    "checks": [
+      {
+        "command": [
+          "pnpm",
+          "check"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-clean-final-0.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/verify-durable-artifacts.ts"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-clean-final-1.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/artifacts.ts",
+          "verify"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-clean-final-2.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/recovery-validate.ts"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-clean-final-3.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/cycle.ts",
+          "status"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-clean-final-4.log"
+      },
+      {
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "-e",
+          "import {validateArchitectureScope} from './scripts/artifact-v2-integrity.ts'; console.log(JSON.stringify(validateArchitectureScope()))"
+        ],
+        "exitCode": 0,
+        "log": "/tmp/magnivis-cold-integration-clean-final-5.log"
+      }
+    ]
+  },
+  "canonicalMedia": {
+    "passed": true,
+    "canonicalPayloads": 763,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "durableArtifactCount": 731,
+  "historicalMissingExpectations": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "historicalPreservation": {
+    "passed": true,
+    "frozenHistoricalFiles": 948,
+    "changedFiles": 1687,
+    "untrackedFiles": 0
+  },
+  "recovery": {
+    "passed": true,
+    "restoredArtifacts": 227,
+    "deliveryPackages": 8,
+    "historicalWoodFrog": "HASH_ONLY",
+    "publicationAuthorized": false
+  },
+  "workflowReplay": [
+    {
+      "id": "cycle.4",
+      "stage": "authorized",
+      "revision": 9
+    },
+    {
+      "id": "cycle.5",
+      "stage": "authorized",
+      "revision": 13
+    },
+    {
+      "id": "cycle.6",
+      "stage": "authorized",
+      "revision": 23
+    },
+    {
+      "id": "cycle.7",
+      "stage": "authorized",
+      "revision": 25
+    },
+    {
+      "id": "cycle.8",
+      "stage": "authorized",
+      "revision": 30
+    }
+  ],
+  "integrity": {
+    "reviewedGuidanceAndAuditBytesUnchanged": true,
+    "reviewedProjectStateAndDecisionNotesPreservedAsHistoricalText": true,
+    "projectMetadataExistingFieldsChanged": [
+      "nextSystemTask"
+    ],
+    "cycle8MetadataUnchanged": true,
+    "cycle9Exists": false,
+    "scopedSecretScan": {
+      "files": [
+        "docs/CONTENT-INTELLIGENCE.md",
+        "docs/DECISIONS.md",
+        "docs/PROJECT-STATE.md",
+        "system-audits/cold-audience-fascination/audit.md",
+        "system-audits/cold-audience-fascination/integration-approval.json",
+        "system-audits/cold-audience-fascination/integration-validation.json",
+        "system-audits/cold-audience-fascination/integration-validation.md",
+        "system-audits/cold-audience-fascination/validation-results.json",
+        "system-audits/cold-audience-fascination/validation.md",
+        "workflow/project-state.json"
+      ],
+      "highConfidencePatternMatches": 0,
+      "limitation": "Heuristic scan, not proof of absence."
+    }
+  },
+  "authoritativeResult": {
+    "status": "owner-approved-integrated",
+    "branch": "main",
+    "editorialAuthority": "docs/STRATEGY.md",
+    "sessionGuidance": "docs/CONTENT-INTELLIGENCE.md",
+    "workflowAuthority": "docs/WORKFLOW-V3.md",
+    "normalOwnerGates": [
+      "AHMET \u2014 PREMISE REVIEW",
+      "AHMET \u2014 MASTER REVIEW",
+      "AHMET \u2014 PUBLICATION REVIEW / AUTHORIZATION"
+    ]
+  },
+  "cycle9Started": false,
+  "discoveryPerformed": false,
+  "topicBacklogCreated": false,
+  "productionMediaGenerated": false,
+  "cycle8OperationalEvidenceModified": false,
+  "externalMediaPlatformActions": false,
+  "limitations": [
+    "Session judgment remains qualitative; validation does not prove fascination or factual interpretation.",
+    "Clean checkout reused local Git source and package cache; no claim of uncached network bootstrap.",
+    "First clean-checkout suite had timing-only failures before successful unchanged rerun.",
+    "Scoped secret scanning is heuristic."
+  ]
+}
