@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-04T14:08:59.650220+00:00",
+  "check": {
+    "command": "VITEST_MAX_WORKERS=1 pnpm check",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 51,
+    "tests": 480,
+    "diffHygiene": "passed",
+    "unchangedTimeoutsAndAssertions": true
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 763,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "recovery": {
+    "passed": true,
+    "restoredArtifacts": 227,
+    "deliveryPackages": 8,
+    "historicalWoodFrog": "HASH_ONLY",
+    "publicationAuthorized": false
+  },
+  "recoveryScope": "Historical recovery only; its publicationAuthorized:false is not Cycle8 authorization status. Cycle8 remains authorized, with scheduling observations only.",
+  "workflow": "workflow-validation-v1.json",
+  "historicalIntegrity": "integrity-validation-v1.json",
+  "secretScan": {
+    "passed": true,
+    "files": [
+      "content-intelligence/operations/oklo-scheduling-v1/facebook.json",
+      "content-intelligence/operations/oklo-scheduling-v1/instagram.json",
+      "content-intelligence/operations/oklo-scheduling-v1/integrity-validation-v1.json",
+      "content-intelligence/operations/oklo-scheduling-v1/owner-report.json",
+      "content-intelligence/operations/oklo-scheduling-v1/tiktok.json",
+      "content-intelligence/operations/oklo-scheduling-v1/workflow-validation-v1.json",
+      "content-intelligence/operations/oklo-scheduling-v1/youtube.json",
+      "docs/OPERATIONS.md",
+      "docs/PROJECT-STATE.md",
+      "workflow/cycles/cycle.8/event-27.json",
+      "workflow/cycles/cycle.8/event-28.json",
+      "workflow/cycles/cycle.8/event-29.json",
+      "workflow/cycles/cycle.8/event-30.json",
+      "workflow/cycles/cycle.8/state.json",
+      "workflow/project-state.json"
+    ],
+    "findings": [],
+    "scope": "Changed/new staged text only; recognizable credential/private-key patterns and sensitive filenames. No secret values emitted."
+  },
+  "remotePreflight": {
+    "mainAtInspection": "2c14498ae6e04333869e44affacc86cc11e77156",
+    "ancestorOfLocalMain": true,
+    "incomingBlobCountBeforeSchedulingCommit": 453,
+    "incomingBlobBytesBeforeSchedulingCommit": 288403297,
+    "oversizedBlobs": 0,
+    "pushMethod": "fast-forward only; no force"
+  },
+  "assistantMediaPlatformActions": [],
+  "actualPublication": null,
+  "analytics": null
+}
