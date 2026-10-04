@@ -1,0 +1,288 @@
+{
+  "sources": [
+    {
+      "key": "times",
+      "organization": "The Times / Andrew Longmore",
+      "title": "Lawmakers move goalposts in game of farce, 1 February 1994, p.44",
+      "type": "primary-source",
+      "file": "times-inspection.json",
+      "quality": "Contemporary recognized newspaper report inspected in original page scan and compared with OCR. Stronger historical provenance than later repetitions; no assertion of onsite eyewitness status.",
+      "limits": [
+        "Not an official rulebook or complete match film.",
+        "Origin of earlier2–1 conflicts with later accounts; exclude scorer.",
+        "Exact positions, player roles, quotations and 'only chance' rhetoric not used."
+      ]
+    },
+    {
+      "key": "analysis",
+      "organization": "Graham Kendall and Liam J.A.Lenten / European Journal of Operational Research",
+      "title": "When sports rules go awry (2017), section3.9.4",
+      "type": "peer-reviewed",
+      "file": "rules-inspection.json",
+      "quality": "Original scholarly incentive analysis, retrospective historical account. Not treated as independent eyewitness corroboration of Times.",
+      "limits": [
+        "Incorrect/conflicting25January andSt.George's peripheral details not used.",
+        "Csato derives from this source; not another witness.",
+        "No generalization to current football rules or every1994 match."
+      ]
+    },
+    {
+      "key": "results",
+      "organization": "RSSSF / Chris J.McKain and contributors",
+      "title": "Shell Caribbean Cup1994 results and weighted sudden-death scoring note",
+      "type": "reference",
+      "file": "results-inspection.json",
+      "quality": "Attributed specialist result compilation supplies group arithmetic and explicit goals-for/against weighting. Not official match sheet; its source independence from newspaper not established.",
+      "limits": [
+        "3–2 counts scoring events; weighted goal-difference totals reflect4–2.",
+        "Rule note and compilation used with contemporary report, not instead of it."
+      ]
+    },
+    {
+      "key": "location",
+      "organization": "RSSSF / international match compilation",
+      "title": "North/CentralAmerica and Caribbean1994 match entries",
+      "type": "reference",
+      "file": "location-inspection.json",
+      "quality": "Additional page from same specialist source family; supports date/location reconciliation, not an extra independent witness.",
+      "limits": [
+        "No extra corroboration count from same source family.",
+        "Specific27January retained research conclusion with unresolved scholarly typo; narration uses only1994."
+      ]
+    }
+  ],
+  "definitions": [
+    [
+      "context",
+      "Barbados played Grenada in a 1994 Caribbean Cup qualifier.",
+      [
+        "times",
+        "results"
+      ],
+      "Contemporary reported event; not the final tournament or an elimination final.",
+      "verify"
+    ],
+    [
+      "margin",
+      "Barbados needed a victory by at least two goals to qualify; a one-goal victory would leave Grenada qualifying.",
+      [
+        "times",
+        "analysis",
+        "results"
+      ],
+      "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points.",
+      "verify"
+    ],
+    [
+      "late-lead",
+      "Late in normal time Barbados led2–1; the match later stood2–2 before extra time.",
+      [
+        "times",
+        "analysis"
+      ],
+      "Agreement on scores; scorer and exact minute of the earlier2–1 are excluded.",
+      "verify"
+    ],
+    [
+      "rule",
+      "A draw at full time led to sudden-death extra time; an extra-time winner gave a two-goal winning margin through double weighting.",
+      [
+        "times",
+        "analysis",
+        "results"
+      ],
+      "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double.",
+      "verify"
+    ],
+    [
+      "own-goal",
+      "Barbados deliberately scored into their own net to equalize and try to reach advantageous extra time.",
+      [
+        "times",
+        "analysis"
+      ],
+      "Contemporary report describes exchanged passes then intentional finish; motives reconstructed from reported constraint and action. No invented dialogue.",
+      "verify"
+    ],
+    [
+      "either-net",
+      "At2–2 before full time, scoring into either goal would allow Grenada to qualify: win the match, or lose by only one.",
+      [
+        "times",
+        "analysis",
+        "results"
+      ],
+      "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time.",
+      "verify"
+    ],
+    [
+      "both-goals",
+      "Barbados defended both their own goal and Grenada's goal, keeping the score2–2 until full time.",
+      [
+        "times",
+        "analysis"
+      ],
+      "Contemporary report explicitly documents defending the opponents' goal and Grenada failing at either end; own-goal defense is consistent normal play and later detailed account. Exact player allocation/choreography is not established.",
+      "verify"
+    ],
+    [
+      "outcome",
+      "Barbados scored the extra-time winner, received the required two-goal margin and qualified.",
+      [
+        "times",
+        "results"
+      ],
+      "Contemporary report plus compiled group winner. Qualification is distinct from eventual CaribbeanCup championship; no trophy or tournament-win implication.",
+      "verify"
+    ],
+    [
+      "strategy",
+      "The deliberate equalizer opened a different route to qualification: preserve a tie then score one double-weighted extra-time goal.",
+      [
+        "times",
+        "analysis",
+        "results"
+      ],
+      "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim.",
+      "verify"
+    ],
+    [
+      "first-concession",
+      "Grenada's scorer made the earlier2–1 at exactly83minutes.",
+      [
+        "times",
+        "analysis"
+      ],
+      "Contemporary Times says a Bajan own goal; later accounts differ. Scorer and exact minute excluded, without declaring which account is correct.",
+      "exclude"
+    ],
+    [
+      "exact-formation",
+      "Exactly half Barbados's players defended each goal in specified positions.",
+      [
+        "analysis"
+      ],
+      "Later analytical account gives half; contemporary report does not establish exact arrangement. Not needed for core story; exclude.",
+      "exclude"
+    ],
+    [
+      "sanction",
+      "FIFA formally ruled the team blameless and abolished the rule immediately.",
+      [
+        "analysis"
+      ],
+      "No inspected primary ruling or rule-amendment record; later accounts vary on timing. Exclude.",
+      "exclude"
+    ]
+  ],
+  "lines": [
+    [
+      "Barbados scored an own goal on purpose. Then they defended both goals.",
+      [
+        "own-goal",
+        "both-goals"
+      ]
+    ],
+    [
+      "It was a Caribbean Cup qualifier in 1994. And winning the match wasn't enough.",
+      [
+        "context",
+        "margin"
+      ]
+    ],
+    [
+      "Barbados needed to win by two goals to qualify. Late in the game, they led two-one. A win—but still elimination.",
+      [
+        "margin",
+        "late-lead"
+      ]
+    ],
+    [
+      "They could try to score again. Or exploit an unusual rule.",
+      [
+        "strategy"
+      ]
+    ],
+    [
+      "A draw at full time meant extra time. The first goal there would end the match—and count double.",
+      [
+        "rule"
+      ]
+    ],
+    [
+      "So, one goal in extra time could give Barbados the two-goal margin they needed.",
+      [
+        "rule",
+        "margin"
+      ]
+    ],
+    [
+      "They deliberately scored into their own net. Two-two. Now they just needed to keep it tied.",
+      [
+        "own-goal",
+        "strategy"
+      ]
+    ],
+    [
+      "But Grenada had spotted a way to stop them.",
+      [
+        "either-net"
+      ]
+    ],
+    [
+      "Score against Barbados, and Grenada wins. Score into their own goal, and Grenada loses by only one—still enough to qualify.",
+      [
+        "either-net"
+      ]
+    ],
+    [
+      "Before full time, either goal would do.",
+      [
+        "either-net"
+      ]
+    ],
+    [
+      "Barbados had to protect their own goal—and Grenada's. The opponent's net had become something they needed to defend.",
+      [
+        "both-goals"
+      ]
+    ],
+    [
+      "They kept it two-two until full time.",
+      [
+        "both-goals",
+        "late-lead"
+      ]
+    ],
+    [
+      "Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+      [
+        "outcome",
+        "rule"
+      ]
+    ],
+    [
+      "Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+      [
+        "strategy",
+        "outcome"
+      ]
+    ]
+  ],
+  "objectives": [
+    "Impossible-looking own goal and second objective, without revealing mechanism.",
+    "Anchor actual match and separate winning from qualifying.",
+    "One clear necessary constraint and an insufficient lead.",
+    "Keep alternative choice alive; no probabilities or 'only possible' claim.",
+    "Reveal the historically particular double-value rule.",
+    "Connect one extra-time goal to the qualifying margin.",
+    "Return to the actual deliberate equalizer after rule understanding.",
+    "Shift viewpoint to Grenada and reopen curiosity.",
+    "Explain two alternative outcomes sequentially.",
+    "Hold normal-time scope while revealing dual target.",
+    "Show Barbados's reversed defensive responsibility without invented formation.",
+    "Establish preserved tie and honest passage to extra time.",
+    "Resolve with documented winner and qualification, not trophy.",
+    "Retellable payoff grounded in this event, not generic game theory."
+  ]
+}

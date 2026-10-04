@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-04T20:57:05.613473+00:00",
+  "scopedSecretScan": {
+    "textFiles": 82,
+    "rules": [
+      "aws-key",
+      "private-key",
+      "github-token",
+      "openai-key"
+    ],
+    "findings": [],
+    "limitation": "Pattern scan of changed text, not a guarantee against every possible credential."
+  },
+  "catalogHistory": {
+    "existingEntriesCompared": 763,
+    "allUnchanged": true,
+    "newEntries": 35
+  },
+  "earlierCycleFilesPreserved": 1351
+}

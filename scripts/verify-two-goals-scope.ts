@@ -1,0 +1,17 @@
+import {execFileSync} from 'node:child_process';
+import {existsSync,readFileSync,writeFileSync} from 'node:fs';
+import {loadMediaRegistry,mediaHash} from '../src/artifacts/media';
+import {loadCycle} from '../src/workflow/store';
+const base='d0e947eed958fb8286d0fb18f4cb61f6d72c1dbb',registry=loadMediaRegistry();
+const baseline=execFileSync('git',['ls-tree','-r','--name-only',base],{encoding:'utf8'}).trim().split('\n');
+const historical=baseline.filter(p=>p.startsWith('content-intelligence/cycles/')||p.startsWith('workflow/cycles/')||p.startsWith('content-intelligence/operations/')||p.startsWith('content-intelligence/reviews/')||p.startsWith('recovery-audit/'));
+const changed=new Set(execFileSync('git',['diff','--name-only',base,'--'],{encoding:'utf8'}).trim().split('\n').filter(Boolean));
+const drift=historical.filter(p=>changed.has(p)||!existsSync(p));if(drift.length)throw new Error(`Earlier history changed: ${drift.join(', ')}`);
+const cycle=loadCycle(process.cwd(),'cycle.9',registry),cycle8=loadCycle(process.cwd(),'cycle.8',registry);
+if(cycle.stage!=='master-review'||cycle.masterDecision||cycle.publicationDecision||cycle.release||existsSync('workflow/cycles/cycle.10'))throw new Error('Wrong owner boundary');
+if(cycle8.revision!==30||cycle8.stage!=='authorized')throw new Error('Cycle8 operational state changed');
+const prior=execFileSync('git',['show','0335622:scripts/production-video-targets.ts'],{encoding:'utf8'});
+const current=readFileSync('scripts/production-video-targets.ts','utf8').replace(/^import .*two-goals.*;\n/gm,'').replace(/^export const twoGoalsTarget=.*;\n/m,'').replace("id==='two-goals'?twoGoalsTarget:",'');
+if(current!==prior)throw new Error('Earlier production targets changed');
+const data={checkedAt:new Date().toISOString(),baseMain:base,currentCycle:{id:cycle.id,revision:cycle.revision,stage:cycle.stage},premiseDecision:cycle.premiseDecision,candidate:cycle.candidate,earlierHistoricalFilesCompared:historical.length,earlierTrackedHistoryUnchanged:true,priorProductionTargetsUnchanged:true,cycle8:{stage:cycle8.stage,revision:cycle8.revision,publication:'unknown; scheduling is not publication'},masterSha256:mediaHash('artifacts/masters/two-goals-cycle9-candidate-v1.mp4'),masterApprovalAbsent:true,releaseAbsent:true,externalPlatformActions:[],cycle10Absent:true};
+writeFileSync('content-intelligence/cycles/cycle-9/master-scope-verification.json',JSON.stringify(data,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({passed:true,historicalFiles:historical.length,stage:cycle.stage}));

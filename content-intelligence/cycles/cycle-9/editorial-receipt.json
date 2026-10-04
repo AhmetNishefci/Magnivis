@@ -1,0 +1,1249 @@
+{
+  "draftPackage": {
+    "id": "two-goals",
+    "revision": 1,
+    "topic": "Barbados–Grenada qualification and reversed incentives",
+    "centralQuestion": "Why did a football team deliberately score an own goal—then defend both goals—to qualify?",
+    "taxonomy": {
+      "pillar": "history-stories",
+      "domains": [
+        "sports-history",
+        "incentive-design"
+      ],
+      "topics": [
+        "qualification",
+        "deliberate-own-goal"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "The specific qualifying margin and double-weighted extra-time winner made an intentional equalizer useful, then gave Grenada two possible scoring targets.",
+    "viewerPayoff": "Reconstruct why these apparently irrational decisions served the actual qualification objective.",
+    "sources": [
+      {
+        "id": "source.two-goals.times",
+        "organization": "The Times / Andrew Longmore",
+        "title": "Lawmakers move goalposts in game of farce, 1 February 1994, p.44",
+        "sourceType": "primary-source",
+        "url": "https://archive.org/download/NewsUK1994UKEnglish/Feb%2001%201994%2C%20The%20Times%2C%20%2364867%2C%20UK%20%28en%29.pdf",
+        "retrieved": "2026-10-04",
+        "notes": "Contemporary recognized newspaper report inspected in original page scan and compared with OCR. Stronger historical provenance than later repetitions; no assertion of onsite eyewitness status. Not an official rulebook or complete match film. Origin of earlier2–1 conflicts with later accounts; exclude scorer. Exact positions, player roles, quotations and 'only chance' rhetoric not used."
+      },
+      {
+        "id": "source.two-goals.analysis",
+        "organization": "Graham Kendall and Liam J.A.Lenten / European Journal of Operational Research",
+        "title": "When sports rules go awry (2017), section3.9.4",
+        "sourceType": "peer-reviewed",
+        "url": "https://www.graham-kendall.com/papers/kl2017.pdf",
+        "retrieved": "2026-10-04",
+        "notes": "Original scholarly incentive analysis, retrospective historical account. Not treated as independent eyewitness corroboration of Times. Incorrect/conflicting25January andSt.George's peripheral details not used. Csato derives from this source; not another witness. No generalization to current football rules or every1994 match."
+      },
+      {
+        "id": "source.two-goals.results",
+        "organization": "RSSSF / Chris J.McKain and contributors",
+        "title": "Shell Caribbean Cup1994 results and weighted sudden-death scoring note",
+        "sourceType": "reference",
+        "url": "https://www.rsssf.org/tabless/shell-car94.html",
+        "retrieved": "2026-10-04",
+        "notes": "Attributed specialist result compilation supplies group arithmetic and explicit goals-for/against weighting. Not official match sheet; its source independence from newspaper not established. 3–2 counts scoring events; weighted goal-difference totals reflect4–2. Rule note and compilation used with contemporary report, not instead of it."
+      },
+      {
+        "id": "source.two-goals.location",
+        "organization": "RSSSF / international match compilation",
+        "title": "North/CentralAmerica and Caribbean1994 match entries",
+        "sourceType": "reference",
+        "url": "https://www.rsssf.org/intldetails/1994nca.html",
+        "retrieved": "2026-10-04",
+        "notes": "Additional page from same specialist source family; supports date/location reconciliation, not an extra independent witness. No extra corroboration count from same source family. Specific27January retained research conclusion with unresolved scholarly typo; narration uses only1994."
+      }
+    ],
+    "claims": [
+      {
+        "id": "two-goals.claim.context",
+        "statement": "Barbados played Grenada in a 1994 Caribbean Cup qualifier.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Contemporary reported event; not the final tournament or an elimination final."
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "notes": "Contemporary reported event; not the final tournament or an elimination final."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Contemporary reported event; not the final tournament or an elimination final."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.margin",
+        "statement": "Barbados needed a victory by at least two goals to qualify; a one-goal victory would leave Grenada qualifying.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points."
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "notes": "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.late-lead",
+        "statement": "Late in normal time Barbados led2–1; the match later stood2–2 before extra time.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Agreement on scores; scorer and exact minute of the earlier2–1 are excluded."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Agreement on scores; scorer and exact minute of the earlier2–1 are excluded."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Agreement on scores; scorer and exact minute of the earlier2–1 are excluded."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.rule",
+        "statement": "A draw at full time led to sudden-death extra time; an extra-time winner gave a two-goal winning margin through double weighting.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double."
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "notes": "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.own-goal",
+        "statement": "Barbados deliberately scored into their own net to equalize and try to reach advantageous extra time.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Contemporary report describes exchanged passes then intentional finish; motives reconstructed from reported constraint and action. No invented dialogue."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Contemporary report describes exchanged passes then intentional finish; motives reconstructed from reported constraint and action. No invented dialogue."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Contemporary report describes exchanged passes then intentional finish; motives reconstructed from reported constraint and action. No invented dialogue."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.either-net",
+        "statement": "At2–2 before full time, scoring into either goal would allow Grenada to qualify: win the match, or lose by only one.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time."
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "notes": "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.both-goals",
+        "statement": "Barbados defended both their own goal and Grenada's goal, keeping the score2–2 until full time.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Contemporary report explicitly documents defending the opponents' goal and Grenada failing at either end; own-goal defense is consistent normal play and later detailed account. Exact player allocation/choreography is not established."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Contemporary report explicitly documents defending the opponents' goal and Grenada failing at either end; own-goal defense is consistent normal play and later detailed account. Exact player allocation/choreography is not established."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Contemporary report explicitly documents defending the opponents' goal and Grenada failing at either end; own-goal defense is consistent normal play and later detailed account. Exact player allocation/choreography is not established."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.outcome",
+        "statement": "Barbados scored the extra-time winner, received the required two-goal margin and qualified.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Contemporary report plus compiled group winner. Qualification is distinct from eventual CaribbeanCup championship; no trophy or tournament-win implication."
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "notes": "Contemporary report plus compiled group winner. Qualification is distinct from eventual CaribbeanCup championship; no trophy or tournament-win implication."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Contemporary report plus compiled group winner. Qualification is distinct from eventual CaribbeanCup championship; no trophy or tournament-win implication."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.strategy",
+        "statement": "The deliberate equalizer opened a different route to qualification: preserve a tie then score one double-weighted extra-time goal.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim."
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "notes": "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.first-concession",
+        "statement": "Grenada's scorer made the earlier2–1 at exactly83minutes.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "notes": "Contemporary Times says a Bajan own goal; later accounts differ. Scorer and exact minute excluded, without declaring which account is correct."
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Contemporary Times says a Bajan own goal; later accounts differ. Scorer and exact minute excluded, without declaring which account is correct."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Contemporary Times says a Bajan own goal; later accounts differ. Scorer and exact minute excluded, without declaring which account is correct."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.exact-formation",
+        "statement": "Exactly half Barbados's players defended each goal in specified positions.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "Later analytical account gives half; contemporary report does not establish exact arrangement. Not needed for core story; exclude."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Later analytical account gives half; contemporary report does not establish exact arrangement. Not needed for core story; exclude."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "two-goals.claim.sanction",
+        "statement": "FIFA formally ruled the team blameless and abolished the rule immediately.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "notes": "No inspected primary ruling or rule-amendment record; later accounts vary on timing. Exclude."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "No inspected primary ruling or rule-amendment record; later accounts vary on timing. Exclude."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "two-goals.caveat.reconstruction",
+        "statement": "Contemporary reporting and specialist results support the core reconstruction; no official1994rulebook or complete film inspected. Exact date, scorer of earlier2–1, positions, quotes and sanctions are omitted. Illustrative colors and positions are not historical kit or movement evidence.",
+        "claimIds": [
+          "two-goals.claim.context",
+          "two-goals.claim.margin",
+          "two-goals.claim.late-lead",
+          "two-goals.claim.rule",
+          "two-goals.claim.own-goal",
+          "two-goals.claim.either-net",
+          "two-goals.claim.both-goals",
+          "two-goals.claim.outcome",
+          "two-goals.claim.strategy"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "two-goals.hook.own-goal",
+        "archetype": "irrational-decision",
+        "text": "Barbados scored an own goal on purpose. Then they defended both goals.",
+        "viewerPromise": "Explain both successive tactical reversals within this event.",
+        "claimIds": [
+          "two-goals.claim.own-goal",
+          "two-goals.claim.both-goals"
+        ]
+      },
+      {
+        "id": "two-goals.hook.opponent-net",
+        "archetype": "changed-objective",
+        "text": "Why protect your opponent's goal?",
+        "viewerPromise": "Understand the normal-time counterstrategy after the deliberate equalizer.",
+        "claimIds": [
+          "two-goals.claim.both-goals",
+          "two-goals.claim.either-net"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "two-goals.narrative.match",
+        "title": "The match with two defensive goals",
+        "description": "Event-specific decisions, hidden qualification constraint, rule, counterstrategy and outcome.",
+        "claimIds": [
+          "two-goals.claim.context",
+          "two-goals.claim.margin",
+          "two-goals.claim.late-lead",
+          "two-goals.claim.rule",
+          "two-goals.claim.own-goal",
+          "two-goals.claim.either-net",
+          "two-goals.claim.both-goals",
+          "two-goals.claim.outcome",
+          "two-goals.claim.strategy"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "two-goals.visual.pitch",
+        "title": "Follow the changing target",
+        "description": "Original pitch reconstruction follows the ball, then expands to reveal both goals and opposing qualification objectives.",
+        "claimIds": [
+          "two-goals.claim.context",
+          "two-goals.claim.margin",
+          "two-goals.claim.late-lead",
+          "two-goals.claim.rule",
+          "two-goals.claim.own-goal",
+          "two-goals.claim.either-net",
+          "two-goals.claim.both-goals",
+          "two-goals.claim.outcome",
+          "two-goals.claim.strategy"
+        ]
+      }
+    ],
+    "relatedQuestions": [],
+    "followUpOpportunities": [],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "two-goals.asset.qualification",
+    "revision": 1,
+    "knowledgePackageId": "two-goals",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Reconstruct why these apparently irrational decisions served the actual qualification objective.",
+    "storyAngle": "Apparently irrational decisions become rational through the actual match constraints.",
+    "hookId": "two-goals.hook.own-goal",
+    "selectedClaimIds": [
+      "two-goals.claim.context",
+      "two-goals.claim.margin",
+      "two-goals.claim.late-lead",
+      "two-goals.claim.rule",
+      "two-goals.claim.own-goal",
+      "two-goals.claim.either-net",
+      "two-goals.claim.both-goals",
+      "two-goals.claim.outcome",
+      "two-goals.claim.strategy"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 60,
+      "maximum": 125
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "two-goals.asset.qualification.script.1",
+          "type": "factual",
+          "text": "Barbados scored an own goal on purpose. Then they defended both goals.",
+          "claimIds": [
+            "two-goals.claim.own-goal",
+            "two-goals.claim.both-goals"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.2",
+          "type": "factual",
+          "text": "It was a Caribbean Cup qualifier in 1994. And winning the match wasn't enough.",
+          "claimIds": [
+            "two-goals.claim.context",
+            "two-goals.claim.margin"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.3",
+          "type": "factual",
+          "text": "Barbados needed to win by two goals to qualify. Late in the game, they led two-one. A win—but still elimination.",
+          "claimIds": [
+            "two-goals.claim.margin",
+            "two-goals.claim.late-lead"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.4",
+          "type": "factual",
+          "text": "They could try to score again. Or exploit an unusual rule.",
+          "claimIds": [
+            "two-goals.claim.strategy"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.5",
+          "type": "factual",
+          "text": "A draw at full time meant extra time. The first goal there would end the match—and count double.",
+          "claimIds": [
+            "two-goals.claim.rule"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.6",
+          "type": "factual",
+          "text": "So, one goal in extra time could give Barbados the two-goal margin they needed.",
+          "claimIds": [
+            "two-goals.claim.rule",
+            "two-goals.claim.margin"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.7",
+          "type": "factual",
+          "text": "They deliberately scored into their own net. Two-two. Now they just needed to keep it tied.",
+          "claimIds": [
+            "two-goals.claim.own-goal",
+            "two-goals.claim.strategy"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.8",
+          "type": "factual",
+          "text": "But Grenada had spotted a way to stop them.",
+          "claimIds": [
+            "two-goals.claim.either-net"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.9",
+          "type": "factual",
+          "text": "Score against Barbados, and Grenada wins. Score into their own goal, and Grenada loses by only one—still enough to qualify.",
+          "claimIds": [
+            "two-goals.claim.either-net"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.10",
+          "type": "factual",
+          "text": "Before full time, either goal would do.",
+          "claimIds": [
+            "two-goals.claim.either-net"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.11",
+          "type": "factual",
+          "text": "Barbados had to protect their own goal—and Grenada's. The opponent's net had become something they needed to defend.",
+          "claimIds": [
+            "two-goals.claim.both-goals"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.12",
+          "type": "factual",
+          "text": "They kept it two-two until full time.",
+          "claimIds": [
+            "two-goals.claim.both-goals",
+            "two-goals.claim.late-lead"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.13",
+          "type": "factual",
+          "text": "Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+          "claimIds": [
+            "two-goals.claim.outcome",
+            "two-goals.claim.rule"
+          ]
+        },
+        {
+          "id": "two-goals.asset.qualification.script.14",
+          "type": "factual",
+          "text": "Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+          "claimIds": [
+            "two-goals.claim.strategy",
+            "two-goals.claim.outcome"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "two-goals.asset.qualification.beat.1",
+        "label": "decision-1",
+        "purpose": "Impossible-looking own goal and second objective, without revealing mechanism.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.1"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.2",
+        "label": "decision-2",
+        "purpose": "Anchor actual match and separate winning from qualifying.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.2"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.3",
+        "label": "decision-3",
+        "purpose": "One clear necessary constraint and an insufficient lead.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.3"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.4",
+        "label": "decision-4",
+        "purpose": "Keep alternative choice alive; no probabilities or 'only possible' claim.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.4"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.5",
+        "label": "decision-5",
+        "purpose": "Reveal the historically particular double-value rule.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.5"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.6",
+        "label": "decision-6",
+        "purpose": "Connect one extra-time goal to the qualifying margin.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.6"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.7",
+        "label": "decision-7",
+        "purpose": "Return to the actual deliberate equalizer after rule understanding.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.7"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.8",
+        "label": "decision-8",
+        "purpose": "Shift viewpoint to Grenada and reopen curiosity.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.8"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.9",
+        "label": "decision-9",
+        "purpose": "Explain two alternative outcomes sequentially.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.9"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.10",
+        "label": "decision-10",
+        "purpose": "Hold normal-time scope while revealing dual target.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.10"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.11",
+        "label": "decision-11",
+        "purpose": "Show Barbados's reversed defensive responsibility without invented formation.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.11"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.12",
+        "label": "decision-12",
+        "purpose": "Establish preserved tie and honest passage to extra time.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.12"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.13",
+        "label": "decision-13",
+        "purpose": "Resolve with documented winner and qualification, not trophy.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.13"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.beat.14",
+        "label": "decision-14",
+        "purpose": "Retellable payoff grounded in this event, not generic game theory.",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.14"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "two-goals.asset.qualification.visual.1",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.1",
+        "objective": "Impossible-looking own goal and second objective, without revealing mechanism.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.1"
+        ],
+        "claimIds": [
+          "two-goals.claim.own-goal",
+          "two-goals.claim.both-goals"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.2",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.2",
+        "objective": "Anchor actual match and separate winning from qualifying.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.2"
+        ],
+        "claimIds": [
+          "two-goals.claim.context",
+          "two-goals.claim.margin"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.3",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.3",
+        "objective": "One clear necessary constraint and an insufficient lead.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.3"
+        ],
+        "claimIds": [
+          "two-goals.claim.margin",
+          "two-goals.claim.late-lead"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.4",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.4",
+        "objective": "Keep alternative choice alive; no probabilities or 'only possible' claim.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.4"
+        ],
+        "claimIds": [
+          "two-goals.claim.strategy"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.5",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.5",
+        "objective": "Reveal the historically particular double-value rule.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.5"
+        ],
+        "claimIds": [
+          "two-goals.claim.rule"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.6",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.6",
+        "objective": "Connect one extra-time goal to the qualifying margin.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.6"
+        ],
+        "claimIds": [
+          "two-goals.claim.rule",
+          "two-goals.claim.margin"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.7",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.7",
+        "objective": "Return to the actual deliberate equalizer after rule understanding.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.7"
+        ],
+        "claimIds": [
+          "two-goals.claim.own-goal",
+          "two-goals.claim.strategy"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.8",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.8",
+        "objective": "Shift viewpoint to Grenada and reopen curiosity.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.8"
+        ],
+        "claimIds": [
+          "two-goals.claim.either-net"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.9",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.9",
+        "objective": "Explain two alternative outcomes sequentially.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.9"
+        ],
+        "claimIds": [
+          "two-goals.claim.either-net"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.10",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.10",
+        "objective": "Hold normal-time scope while revealing dual target.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.10"
+        ],
+        "claimIds": [
+          "two-goals.claim.either-net"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.11",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.11",
+        "objective": "Show Barbados's reversed defensive responsibility without invented formation.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.11"
+        ],
+        "claimIds": [
+          "two-goals.claim.both-goals"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.12",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.12",
+        "objective": "Establish preserved tie and honest passage to extra time.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.12"
+        ],
+        "claimIds": [
+          "two-goals.claim.both-goals",
+          "two-goals.claim.late-lead"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.13",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.13",
+        "objective": "Resolve with documented winner and qualification, not trophy.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.13"
+        ],
+        "claimIds": [
+          "two-goals.claim.outcome",
+          "two-goals.claim.rule"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      },
+      {
+        "id": "two-goals.asset.qualification.visual.14",
+        "narrativeBeatId": "two-goals.asset.qualification.beat.14",
+        "objective": "Retellable payoff grounded in this event, not generic game theory.",
+        "visualType": "bespoke",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "two-goals.asset.qualification.script.14"
+        ],
+        "claimIds": [
+          "two-goals.claim.strategy",
+          "two-goals.claim.outcome"
+        ],
+        "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Established af_heart, connected curious storytelling and increasingly clear decisions; no football commentator imitation.",
+      "pronunciationNotes": [
+        "Barbados: bar-BAY-dohs. Grenada: grih-NAY-duh. Two-one and two-two are score readings."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.9",
+    "topicCandidateId": "two-goals",
+    "enteredAt": "2026-10-04T16:21:00.703Z",
+    "reviewer": "Codex session internal evidence review; not owner approval",
+    "premiseAlignment": {
+      "selectionSha256": "eaf913c398289d976103c20f0595b1623bb9f247df998482ad45ed701b71064a",
+      "preservesPublishingOpportunity": true,
+      "rationale": "New contemporary report strengthens central own-goal/both-goal account. Excluding disputed peripheral scorer/date/positions leaves the approved rule-and-qualification publishing opportunity intact."
+    },
+    "packageSha256": "fceeeb147341e15a376d36961e84530d1099d52378e64990611dd76c294c997d",
+    "assetSha256": "88d3cc620591149c88d4692527cc613eee7adfbe3f44182024bbfcf16bd9db46",
+    "scriptSha256": "42222b55de96bbac90c53c6321d9045abc309f8d36df234ea83f27761fe35862",
+    "inspections": [
+      {
+        "sourceId": "source.two-goals.times",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "PDF page44 (zero-based43); bottom article across four text columns"
+        ],
+        "supportsClaimIds": [
+          "two-goals.claim.context",
+          "two-goals.claim.margin",
+          "two-goals.claim.late-lead",
+          "two-goals.claim.rule",
+          "two-goals.claim.own-goal",
+          "two-goals.claim.either-net",
+          "two-goals.claim.both-goals",
+          "two-goals.claim.outcome",
+          "two-goals.claim.strategy"
+        ],
+        "limitations": [
+          "Not an official rulebook or complete match film.",
+          "Origin of earlier2–1 conflicts with later accounts; exclude scorer.",
+          "Exact positions, player roles, quotations and 'only chance' rhetoric not used."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-9/research/times-inspection.json",
+          "sha256": "18d673ab9e9801c402591705bad1ef84a9151d3de753aad401e486b22a720cb5"
+        },
+        "sourceQualityRationale": "Contemporary recognized newspaper report inspected in original page scan and compared with OCR. Stronger historical provenance than later repetitions; no assertion of onsite eyewitness status."
+      },
+      {
+        "sourceId": "source.two-goals.analysis",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9"
+        ],
+        "supportsClaimIds": [
+          "two-goals.claim.margin",
+          "two-goals.claim.late-lead",
+          "two-goals.claim.rule",
+          "two-goals.claim.own-goal",
+          "two-goals.claim.either-net",
+          "two-goals.claim.both-goals",
+          "two-goals.claim.strategy"
+        ],
+        "limitations": [
+          "Incorrect/conflicting25January andSt.George's peripheral details not used.",
+          "Csato derives from this source; not another witness.",
+          "No generalization to current football rules or every1994 match."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-9/research/rules-inspection.json",
+          "sha256": "fb374a83290a7e68d52ab8e78f8a5475eb17883b63550fe46dcc902196b39a2b"
+        },
+        "sourceQualityRationale": "Original scholarly incentive analysis, retrospective historical account. Not treated as independent eyewitness corroboration of Times."
+      },
+      {
+        "sourceId": "source.two-goals.results",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Preliminary Round Group1, lines9–14; provenance lines95–105"
+        ],
+        "supportsClaimIds": [
+          "two-goals.claim.context",
+          "two-goals.claim.margin",
+          "two-goals.claim.rule",
+          "two-goals.claim.either-net",
+          "two-goals.claim.outcome",
+          "two-goals.claim.strategy"
+        ],
+        "limitations": [
+          "3–2 counts scoring events; weighted goal-difference totals reflect4–2.",
+          "Rule note and compilation used with contemporary report, not instead of it."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-9/research/results-inspection.json",
+          "sha256": "38215f18b43666d0a72a1cdbe04dcba22453f0849da63f23a99f88841e165874"
+        },
+        "sourceQualityRationale": "Attributed specialist result compilation supplies group arithmetic and explicit goals-for/against weighting. Not official match sheet; its source independence from newspaper not established."
+      },
+      {
+        "sourceId": "source.two-goals.location",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Match entries23–27January1994, lines30–47"
+        ],
+        "supportsClaimIds": [],
+        "limitations": [
+          "No extra corroboration count from same source family.",
+          "Specific27January retained research conclusion with unresolved scholarly typo; narration uses only1994."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-9/research/location-inspection.json",
+          "sha256": "57d4baa3590b904ec88f587ff9443dc1a56a0156800a4ea925372d50600622ae"
+        },
+        "sourceQualityRationale": "Additional page from same specialist source family; supports date/location reconciliation, not an extra independent witness."
+      }
+    ],
+    "claims": [
+      {
+        "id": "two-goals.claim.context",
+        "statementSha256": "09964ba543ffb8f46def9686cee04d914e1813ed2e8f71890ba3b7c198bd32da",
+        "disposition": "verify",
+        "rationale": "Contemporary reported event; not the final tournament or an elimination final.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Contemporary reported event; not the final tournament or an elimination final.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "assessment": "Contemporary reported event; not the final tournament or an elimination final.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.margin",
+        "statementSha256": "fc6b574c2caf355bf6b366b99fe03d3ceecb7bf37680db607d484bd8bcd60480",
+        "disposition": "verify",
+        "rationale": "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "assessment": "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "assessment": "Contemporary reported constraint plus arithmetic from compiled group results; qualifier goal difference, not double match points.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.late-lead",
+        "statementSha256": "892d3a80a939aa8aafad1053312180786a968aeed00f91f967b17ad24c98246b",
+        "disposition": "verify",
+        "rationale": "Agreement on scores; scorer and exact minute of the earlier2–1 are excluded.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Agreement on scores; scorer and exact minute of the earlier2–1 are excluded.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "assessment": "Agreement on scores; scorer and exact minute of the earlier2–1 are excluded.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.rule",
+        "statementSha256": "f803869634c5711b4f7ce6c882b9ccd6923f3d09b3f748d3bc2d2051da79be1c",
+        "disposition": "verify",
+        "rationale": "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "assessment": "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "assessment": "Applicable historical rule reconstructed from contemporary description and result note; no original rulebook inspected. Not all football golden goals count double.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.own-goal",
+        "statementSha256": "25a73276cfc6dbbd5c0ca5b4a2b07c481ddd397833857d29bacbc7d9bb6ed9df",
+        "disposition": "verify",
+        "rationale": "Contemporary report describes exchanged passes then intentional finish; motives reconstructed from reported constraint and action. No invented dialogue.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Contemporary report describes exchanged passes then intentional finish; motives reconstructed from reported constraint and action. No invented dialogue.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "assessment": "Contemporary report describes exchanged passes then intentional finish; motives reconstructed from reported constraint and action. No invented dialogue.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.either-net",
+        "statementSha256": "386a63e785f7f7fc7f418eb9d73df7a017d387b3b323df0960814b329350b3eb",
+        "disposition": "verify",
+        "rationale": "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "assessment": "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "assessment": "Reliable reconstruction combining contemporary reported own-goal attempt and independently recomputed qualification logic; this incentive is limited to normal time.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.both-goals",
+        "statementSha256": "20ac1833c40cd8e670e3783634fa304656fcd28c5f79190e2f27f466ebd04364",
+        "disposition": "verify",
+        "rationale": "Contemporary report explicitly documents defending the opponents' goal and Grenada failing at either end; own-goal defense is consistent normal play and later detailed account. Exact player allocation/choreography is not established.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Contemporary report explicitly documents defending the opponents' goal and Grenada failing at either end; own-goal defense is consistent normal play and later detailed account. Exact player allocation/choreography is not established.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "assessment": "Contemporary report explicitly documents defending the opponents' goal and Grenada failing at either end; own-goal defense is consistent normal play and later detailed account. Exact player allocation/choreography is not established.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.outcome",
+        "statementSha256": "8354421deefb61b605e2b00127d2b1f87e46a0d2da11531b3e448944cdfaebd6",
+        "disposition": "verify",
+        "rationale": "Contemporary report plus compiled group winner. Qualification is distinct from eventual CaribbeanCup championship; no trophy or tournament-win implication.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Contemporary report plus compiled group winner. Qualification is distinct from eventual CaribbeanCup championship; no trophy or tournament-win implication.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "assessment": "Contemporary report plus compiled group winner. Qualification is distinct from eventual CaribbeanCup championship; no trophy or tournament-win implication.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.strategy",
+        "statementSha256": "52ce2338fc59921c821db18a247305fe2d0aa391cbd8ada032b185376186e1c0",
+        "disposition": "verify",
+        "rationale": "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim.",
+        "evidence": [
+          {
+            "sourceId": "source.two-goals.times",
+            "locator": "PDF page44 (zero-based43); bottom article across four text columns",
+            "assessment": "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.analysis",
+            "locator": "Published paper pp.385–386, section3.9.4, Table8; PDF pages8–9",
+            "assessment": "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.two-goals.results",
+            "locator": "Preliminary Round Group1, lines9–14; provenance lines95–105",
+            "assessment": "Later causal interpretation grounded in the actual rule and arithmetic; no optimality, safety or numerical probability claim.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.first-concession",
+        "statementSha256": "b7a78229f47db813cb87dc38afc714e8adbf34dcfcf747fd42a2ebcbd58cf97a",
+        "disposition": "exclude",
+        "rationale": "Contemporary Times says a Bajan own goal; later accounts differ. Scorer and exact minute excluded, without declaring which account is correct.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.exact-formation",
+        "statementSha256": "b8d490a4786912d9c6ab3b5cb8a08021755fe7468f6104a61af2f0de59c92924",
+        "disposition": "exclude",
+        "rationale": "Later analytical account gives half; contemporary report does not establish exact arrangement. Not needed for core story; exclude.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "two-goals.claim.sanction",
+        "statementSha256": "24218db51e3230dba9720f0e2215658fc20a2228b8cc5d98b7c5a2c117b4eea0",
+        "disposition": "exclude",
+        "rationale": "No inspected primary ruling or rule-amendment record; later accounts vary on timing. Exclude.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "Own goal is deliberate; the earlier2–1 scorer is not asserted.",
+      "Qualifying is distinct from winning a match or winning the tournament.",
+      "Double weighting is this historical rule, not normal golden-goal scoring or double match points.",
+      "Grenada either-net incentive is before full time.",
+      "No guaranteed optimal strategy, probability estimate, fixed player formation, quoted dialogue or current-rule claim.",
+      "Illustrations/colors are original reconstruction, not authentic match footage."
+    ],
+    "comprehensionReview": "One constraint at a time: insufficient lead, alternative route, double goal, tied score, Grenada win/one-goal loss, Barbados defending both, outcome. No group table required in narration; arithmetic independently recomputed in research/qualification-arithmetic.json. Limited full-time/extra-time labels protect scope.",
+    "rightsReview": "Original illustrations only; Times scan consulted solely as research, no reproduction in master. Existing OFL font and Apache2.0localKokoro. No third-party match film, stadium image, logo or player likeness.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Historical strategic event without unsupported wrongdoing allegations, harmful advice or demographic attribution."
+    },
+    "exceptionalConditions": []
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "id": "two-goals.asset.qualification",
+  "revision": 1,
+  "knowledgePackageId": "two-goals",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Reconstruct why these apparently irrational decisions served the actual qualification objective.",
+  "storyAngle": "Apparently irrational decisions become rational through the actual match constraints.",
+  "hookId": "two-goals.hook.own-goal",
+  "selectedClaimIds": [
+    "two-goals.claim.context",
+    "two-goals.claim.margin",
+    "two-goals.claim.late-lead",
+    "two-goals.claim.rule",
+    "two-goals.claim.own-goal",
+    "two-goals.claim.either-net",
+    "two-goals.claim.both-goals",
+    "two-goals.claim.outcome",
+    "two-goals.claim.strategy"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 60,
+    "maximum": 125
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "two-goals.asset.qualification.script.1",
+        "type": "factual",
+        "text": "Barbados scored an own goal on purpose. Then they defended both goals.",
+        "claimIds": [
+          "two-goals.claim.own-goal",
+          "two-goals.claim.both-goals"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.2",
+        "type": "factual",
+        "text": "It was a Caribbean Cup qualifier in 1994. And winning the match wasn't enough.",
+        "claimIds": [
+          "two-goals.claim.context",
+          "two-goals.claim.margin"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.3",
+        "type": "factual",
+        "text": "Barbados needed to win by two goals to qualify. Late in the game, they led two-one. A win—but still elimination.",
+        "claimIds": [
+          "two-goals.claim.margin",
+          "two-goals.claim.late-lead"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.4",
+        "type": "factual",
+        "text": "They could try to score again. Or exploit an unusual rule.",
+        "claimIds": [
+          "two-goals.claim.strategy"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.5",
+        "type": "factual",
+        "text": "A draw at full time meant extra time. The first goal there would end the match—and count double.",
+        "claimIds": [
+          "two-goals.claim.rule"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.6",
+        "type": "factual",
+        "text": "So, one goal in extra time could give Barbados the two-goal margin they needed.",
+        "claimIds": [
+          "two-goals.claim.rule",
+          "two-goals.claim.margin"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.7",
+        "type": "factual",
+        "text": "They deliberately scored into their own net. Two-two. Now they just needed to keep it tied.",
+        "claimIds": [
+          "two-goals.claim.own-goal",
+          "two-goals.claim.strategy"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.8",
+        "type": "factual",
+        "text": "But Grenada had spotted a way to stop them.",
+        "claimIds": [
+          "two-goals.claim.either-net"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.9",
+        "type": "factual",
+        "text": "Score against Barbados, and Grenada wins. Score into their own goal, and Grenada loses by only one—still enough to qualify.",
+        "claimIds": [
+          "two-goals.claim.either-net"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.10",
+        "type": "factual",
+        "text": "Before full time, either goal would do.",
+        "claimIds": [
+          "two-goals.claim.either-net"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.11",
+        "type": "factual",
+        "text": "Barbados had to protect their own goal—and Grenada's. The opponent's net had become something they needed to defend.",
+        "claimIds": [
+          "two-goals.claim.both-goals"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.12",
+        "type": "factual",
+        "text": "They kept it two-two until full time.",
+        "claimIds": [
+          "two-goals.claim.both-goals",
+          "two-goals.claim.late-lead"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.13",
+        "type": "factual",
+        "text": "Then Barbados scored the extra-time winner. It counted as a two-goal victory. They qualified.",
+        "claimIds": [
+          "two-goals.claim.outcome",
+          "two-goals.claim.rule"
+        ]
+      },
+      {
+        "id": "two-goals.asset.qualification.script.14",
+        "type": "factual",
+        "text": "Scoring against themselves hadn't been the mistake. It was their way of making the rules work for them.",
+        "claimIds": [
+          "two-goals.claim.strategy",
+          "two-goals.claim.outcome"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "two-goals.asset.qualification.beat.1",
+      "label": "decision-1",
+      "purpose": "Impossible-looking own goal and second objective, without revealing mechanism.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.1"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.2",
+      "label": "decision-2",
+      "purpose": "Anchor actual match and separate winning from qualifying.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.2"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.3",
+      "label": "decision-3",
+      "purpose": "One clear necessary constraint and an insufficient lead.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.3"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.4",
+      "label": "decision-4",
+      "purpose": "Keep alternative choice alive; no probabilities or 'only possible' claim.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.4"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.5",
+      "label": "decision-5",
+      "purpose": "Reveal the historically particular double-value rule.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.5"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.6",
+      "label": "decision-6",
+      "purpose": "Connect one extra-time goal to the qualifying margin.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.6"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.7",
+      "label": "decision-7",
+      "purpose": "Return to the actual deliberate equalizer after rule understanding.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.7"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.8",
+      "label": "decision-8",
+      "purpose": "Shift viewpoint to Grenada and reopen curiosity.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.8"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.9",
+      "label": "decision-9",
+      "purpose": "Explain two alternative outcomes sequentially.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.9"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.10",
+      "label": "decision-10",
+      "purpose": "Hold normal-time scope while revealing dual target.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.10"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.11",
+      "label": "decision-11",
+      "purpose": "Show Barbados's reversed defensive responsibility without invented formation.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.11"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.12",
+      "label": "decision-12",
+      "purpose": "Establish preserved tie and honest passage to extra time.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.12"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.13",
+      "label": "decision-13",
+      "purpose": "Resolve with documented winner and qualification, not trophy.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.13"
+      ]
+    },
+    {
+      "id": "two-goals.asset.qualification.beat.14",
+      "label": "decision-14",
+      "purpose": "Retellable payoff grounded in this event, not generic game theory.",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.14"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "two-goals.asset.qualification.visual.1",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.1",
+      "objective": "Impossible-looking own goal and second objective, without revealing mechanism.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.1"
+      ],
+      "claimIds": [
+        "two-goals.claim.own-goal",
+        "two-goals.claim.both-goals"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.2",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.2",
+      "objective": "Anchor actual match and separate winning from qualifying.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.2"
+      ],
+      "claimIds": [
+        "two-goals.claim.context",
+        "two-goals.claim.margin"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.3",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.3",
+      "objective": "One clear necessary constraint and an insufficient lead.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.3"
+      ],
+      "claimIds": [
+        "two-goals.claim.margin",
+        "two-goals.claim.late-lead"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.4",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.4",
+      "objective": "Keep alternative choice alive; no probabilities or 'only possible' claim.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.4"
+      ],
+      "claimIds": [
+        "two-goals.claim.strategy"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.5",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.5",
+      "objective": "Reveal the historically particular double-value rule.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.5"
+      ],
+      "claimIds": [
+        "two-goals.claim.rule"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.6",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.6",
+      "objective": "Connect one extra-time goal to the qualifying margin.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.6"
+      ],
+      "claimIds": [
+        "two-goals.claim.rule",
+        "two-goals.claim.margin"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.7",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.7",
+      "objective": "Return to the actual deliberate equalizer after rule understanding.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.7"
+      ],
+      "claimIds": [
+        "two-goals.claim.own-goal",
+        "two-goals.claim.strategy"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.8",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.8",
+      "objective": "Shift viewpoint to Grenada and reopen curiosity.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.8"
+      ],
+      "claimIds": [
+        "two-goals.claim.either-net"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.9",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.9",
+      "objective": "Explain two alternative outcomes sequentially.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.9"
+      ],
+      "claimIds": [
+        "two-goals.claim.either-net"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.10",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.10",
+      "objective": "Hold normal-time scope while revealing dual target.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.10"
+      ],
+      "claimIds": [
+        "two-goals.claim.either-net"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.11",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.11",
+      "objective": "Show Barbados's reversed defensive responsibility without invented formation.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.11"
+      ],
+      "claimIds": [
+        "two-goals.claim.both-goals"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.12",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.12",
+      "objective": "Establish preserved tie and honest passage to extra time.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.12"
+      ],
+      "claimIds": [
+        "two-goals.claim.both-goals",
+        "two-goals.claim.late-lead"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.13",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.13",
+      "objective": "Resolve with documented winner and qualification, not trophy.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.13"
+      ],
+      "claimIds": [
+        "two-goals.claim.outcome",
+        "two-goals.claim.rule"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    },
+    {
+      "id": "two-goals.asset.qualification.visual.14",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.14",
+      "objective": "Retellable payoff grounded in this event, not generic game theory.",
+      "visualType": "bespoke",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.14"
+      ],
+      "claimIds": [
+        "two-goals.claim.strategy",
+        "two-goals.claim.outcome"
+      ],
+      "notes": "Original illustrated reconstruction, not match footage. Schematic player positions/colors; no exact historical formation. Earlier2–1 is a scoreboard change only, not a claim about its scorer. Extra-time score display distinguishes weighted margin from physical goal events."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established af_heart, connected curious storytelling and increasingly clear decisions; no football commentator imitation.",
+    "pronunciationNotes": [
+      "Barbados: bar-BAY-dohs. Grenada: grih-NAY-duh. Two-one and two-two are score readings."
+    ]
+  },
+  "editorialStatus": "editorial-review"
+}

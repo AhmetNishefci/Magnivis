@@ -1,0 +1,64 @@
+{
+  "enteredAt": "2026-10-04T20:53:02.550Z",
+  "sourceBaseCommit": "0335622ebfbc6633f732c0696a7cf6bf85e0e8ad",
+  "files": [
+    {
+      "path": "src/two-goals-index.tsx",
+      "sha256": "840efc9d148f2162d8cc79141e054cb98a20cb0c25d274bbc1bae6e30fd53cf8"
+    },
+    {
+      "path": "src/compositions/TwoGoals.tsx",
+      "sha256": "f0215962a5a1d0b223a0d00af743c5724ce388b487e21f79557daa75a52d566c"
+    },
+    {
+      "path": "src/components/TwoGoalsPitch.tsx",
+      "sha256": "4aae63cf7df10d6c2127af875776e90631be3e58f3a69999af83b1c51865e1df"
+    },
+    {
+      "path": "src/content/videos/two-goals.ts",
+      "sha256": "068bbdb79e1887a90beb36be0d680c8ec1671f2ba27573ecf6274f21197192f7"
+    },
+    {
+      "path": "scripts/production-video-targets.ts",
+      "sha256": "bd7050f977ec978d4d268b249885ec99f700a2af73db9832f5e450d056740c0c"
+    },
+    {
+      "path": "scripts/render-two-goals.ts",
+      "sha256": "c48fa064f4f54603764189f6bb397170e7f41f00c2f02e189867599434890172"
+    },
+    {
+      "path": "scripts/qa-two-goals-layout.ts",
+      "sha256": "5fbc1467790ff7136546562a042f82f988db039248d9eba58dd8edffc0d34abc"
+    },
+    {
+      "path": "scripts/inspect-two-goals-audio.mjs",
+      "sha256": "438288057a3feb5946197a9d25f516b93f9989c164b6df4bb1bf0a9c2d703909"
+    },
+    {
+      "path": "scripts/generate-two-goals-narration.mjs",
+      "sha256": "1970fb0d9a372f6324ec10f89852d9028ad09fdf452a1aa3acb2071777bd3480"
+    },
+    {
+      "path": "scripts/prepare-two-goals-production.ts",
+      "sha256": "31891762794a0d7cb9a3e618dd1924ef9b7c26482b5df1f12a7538d986fceda4"
+    },
+    {
+      "path": "src/production/plans/two-goals.json",
+      "sha256": "6d984b0e1257aa7cb87d836fcef315534fda806dd99a3f42d5797243ead6a1ee"
+    },
+    {
+      "path": "src/captions/plans/two-goals.json",
+      "sha256": "08bebd16ce7174f0904a85a66f185118ace051082c024ad3d487e07b2a838dcc"
+    },
+    {
+      "path": "src/production/narration/two-goals.json",
+      "sha256": "9f65968902a97f273b2b6a7df10c67367c3b7e67ba7c60755ac4cf11b10c6c72"
+    }
+  ],
+  "videoPacketSha256": "SHA256=68e7fbb64b9c5fba0c278350298e8dc4c8d503947baf3ab5a3e9fd6b8e442f55",
+  "audioMastering": {
+    "path": "content-intelligence/cycles/cycle-9/audio-mastering-v1.json",
+    "sha256": "82c15c66b05894cfd857e53f027065c24922583551f69ca9ffc5bbc6c6bb1bd3"
+  },
+  "note": "Exact new source hashes bind implementation; base commit is not a circular self-commit claim. Original pitch illustration, consultation-only historical research and established fonts/local narration."
+}

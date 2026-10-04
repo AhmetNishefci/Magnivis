@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.two-goals.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "two-goals",
+    "revision": 1,
+    "sha256": "52cb16eac69ec20aa4e438b053e3d9074d1ff2799938066db532386f52bebe1b"
+  },
+  "contentAsset": {
+    "id": "two-goals.asset.qualification",
+    "revision": 1,
+    "sha256": "5d1780490dc6e4df821dd113513ed19d0b31abf3e85270c0c4b488c81dcbfc98"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.9",
+    "reviewSha256": "e8d847cbed89f688bd3ed789822e7dc0f25d3cc559106a022fd5e0f5616aafbf"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-9/profiles/youtube.json",
+      "sha256": "684eef0a40ab0aa56e78c3c84c2e597a34e492471828c24fcbf9a8ea6473e3a2"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/profiles/tiktok.json",
+      "sha256": "8c872cb7122c29e48dacd638c813e09deeb54663b5bc4b6efde19e39db20d960"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/profiles/instagram.json",
+      "sha256": "ba28d2c92ba4a7d30d6739ba3b9cc4513bbf7b1bbf326a3e2ba86966ecdb78c6"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/profiles/facebook.json",
+      "sha256": "bb9a792be40e75c03310d09134a8becef9d9457f9287e433866083b1eefc1370"
+    }
+  ],
+  "approvedScriptSha256": "42222b55de96bbac90c53c6321d9045abc309f8d36df234ea83f27761fe35862",
+  "creativeDirection": {
+    "id": "creative-direction.two-goals.v1",
+    "revision": 1,
+    "sha256": "e9cab067cd8f15df030b97bdeb9bd99446bd9c5a00dc4e51ee540edce32f4a4b"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "two-goals.claim.first-concession",
+    "two-goals.claim.exact-formation",
+    "two-goals.claim.sanction"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 81.76666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "two-goals.production.1",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.1",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.1",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.1"
+      ],
+      "claimIds": [
+        "two-goals.claim.own-goal",
+        "two-goals.claim.both-goals"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 158
+      },
+      "sceneType": "own-goal-puzzle",
+      "objective": "Impossible-looking own goal and second objective, without revealing mechanism.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.2",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.2",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.2",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.2"
+      ],
+      "claimIds": [
+        "two-goals.claim.context",
+        "two-goals.claim.margin"
+      ],
+      "frames": {
+        "start": 158,
+        "end": 338
+      },
+      "sceneType": "setting",
+      "objective": "Anchor actual match and separate winning from qualifying.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.3",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.3",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.3",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.3"
+      ],
+      "claimIds": [
+        "two-goals.claim.margin",
+        "two-goals.claim.late-lead"
+      ],
+      "frames": {
+        "start": 338,
+        "end": 591
+      },
+      "sceneType": "qualification-constraint",
+      "objective": "One clear necessary constraint and an insufficient lead.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.4",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.4",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.4",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.4"
+      ],
+      "claimIds": [
+        "two-goals.claim.strategy"
+      ],
+      "frames": {
+        "start": 591,
+        "end": 717
+      },
+      "sceneType": "choice",
+      "objective": "Keep alternative choice alive; no probabilities or 'only possible' claim.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.5",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.5",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.5",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.5"
+      ],
+      "claimIds": [
+        "two-goals.claim.rule"
+      ],
+      "frames": {
+        "start": 717,
+        "end": 908
+      },
+      "sceneType": "extra-time-rule",
+      "objective": "Reveal the historically particular double-value rule.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.6",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.6",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.6",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.6"
+      ],
+      "claimIds": [
+        "two-goals.claim.rule",
+        "two-goals.claim.margin"
+      ],
+      "frames": {
+        "start": 908,
+        "end": 1085
+      },
+      "sceneType": "double-margin",
+      "objective": "Connect one extra-time goal to the qualifying margin.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.7",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.7",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.7",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.7"
+      ],
+      "claimIds": [
+        "two-goals.claim.own-goal",
+        "two-goals.claim.strategy"
+      ],
+      "frames": {
+        "start": 1085,
+        "end": 1270
+      },
+      "sceneType": "deliberate-own-goal",
+      "objective": "Return to the actual deliberate equalizer after rule understanding.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.8",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.8",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.8",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.8"
+      ],
+      "claimIds": [
+        "two-goals.claim.either-net"
+      ],
+      "frames": {
+        "start": 1270,
+        "end": 1367
+      },
+      "sceneType": "grenada-reversal",
+      "objective": "Shift viewpoint to Grenada and reopen curiosity.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.9",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.9",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.9",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.9"
+      ],
+      "claimIds": [
+        "two-goals.claim.either-net"
+      ],
+      "frames": {
+        "start": 1367,
+        "end": 1640
+      },
+      "sceneType": "either-outcome",
+      "objective": "Explain two alternative outcomes sequentially.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.10",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.10",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.10",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.10"
+      ],
+      "claimIds": [
+        "two-goals.claim.either-net"
+      ],
+      "frames": {
+        "start": 1640,
+        "end": 1736
+      },
+      "sceneType": "two-targets",
+      "objective": "Hold normal-time scope while revealing dual target.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.11",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.11",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.11",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.11"
+      ],
+      "claimIds": [
+        "two-goals.claim.both-goals"
+      ],
+      "frames": {
+        "start": 1736,
+        "end": 1969
+      },
+      "sceneType": "defend-both",
+      "objective": "Show Barbados's reversed defensive responsibility without invented formation.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.12",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.12",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.12",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.12"
+      ],
+      "claimIds": [
+        "two-goals.claim.both-goals",
+        "two-goals.claim.late-lead"
+      ],
+      "frames": {
+        "start": 1969,
+        "end": 2060
+      },
+      "sceneType": "full-time",
+      "objective": "Establish preserved tie and honest passage to extra time.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.13",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.13",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.13",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.13"
+      ],
+      "claimIds": [
+        "two-goals.claim.outcome",
+        "two-goals.claim.rule"
+      ],
+      "frames": {
+        "start": 2060,
+        "end": 2259
+      },
+      "sceneType": "winner",
+      "objective": "Resolve with documented winner and qualification, not trophy.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    },
+    {
+      "id": "two-goals.production.14",
+      "sourceVisualPlanId": "two-goals.asset.qualification.visual.14",
+      "narrativeBeatId": "two-goals.asset.qualification.beat.14",
+      "scriptSegmentIds": [
+        "two-goals.asset.qualification.script.14"
+      ],
+      "claimIds": [
+        "two-goals.claim.strategy",
+        "two-goals.claim.outcome"
+      ],
+      "frames": {
+        "start": 2259,
+        "end": 2453
+      },
+      "sceneType": "payoff",
+      "objective": "Retellable payoff grounded in this event, not generic game theory.",
+      "onScreenText": [],
+      "animationIntent": "Ball-led original pitch narrative, wide two-target reveal, and labeled hypothetical one-goal outcomes. No actual match footage, exact formations or authenticated kit colors.",
+      "transitionIntent": "Motivated close-to-wide pitch transitions and separated hypothetical outcomes; actual sequence returns to two-two.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated crowd recording or broadcast."
+    }
+  ],
+  "assets": [
+    {
+      "id": "two-goals.original-geometry",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original SVG illustration",
+        "rights": "Project-owned artwork",
+        "notes": "Illustrated match reconstruction; trajectories and player positions are symbolic, not documented formations.",
+        "evidence": "content-intelligence/cycles/cycle-9/rights-provenance.json"
+      }
+    },
+    {
+      "id": "two-goals.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource / Manrope by Mikhail Sharanda",
+        "rights": "SIL OFL 1.1",
+        "notes": "Existing licensed font; unchanged.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "two-goals.narration",
+      "kind": "audio",
+      "path": "public/audio/two-goals/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache-2.0 model/output terms",
+        "notes": "Connected reviewed sentences, no paid API.",
+        "evidence": "src/production/narration/two-goals.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/two-goals.en.vtt",
+    "captionPlanId": "caption-plan.two-goals.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "898758dfb802d87042949d53731f0740d8348a76b6144756d691d288bec74de8",
+    "generatorId": "generator.two-goals-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full media probe and decode, exact caption reconstruction and typography fit.",
+    "Every caption midpoint and opening/constraint/rule/own-goal/reversal/both-goals/outcome checkpoints decoded and inspected.",
+    "Deliberate own goal, the two possible Grenada targets, and the two-goal weighted extra-time margin remain clear. Hypothetical outcomes are labeled; the first concession scorer and exact formation remain excluded.",
+    "Actual audio interval recognition and mix; owner pronunciation/prosody remains judgment.",
+    "Four sampled provisional profile preflights; no invented native/device safety.",
+    "AHMET — MASTER REVIEW; no release preparation before approval."
+  ]
+}

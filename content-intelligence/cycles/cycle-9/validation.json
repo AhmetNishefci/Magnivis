@@ -1,35 +1,32 @@
 {
-  "schemaVersion": 1,
-  "cycleId": "cycle.9",
-  "recordedAt": "2026-10-04T16:09:07.035813Z",
-  "baseMain": "d0e947eed958fb8286d0fb18f4cb61f6d72c1dbb",
-  "branch": "content/cycle-9-premise-review",
-  "scope": "Cycle9 start, fresh autonomous discovery, preliminary evidence inspection, one selection, premise handoff and current metadata only. No executable behavior changes or new tests.",
-  "check": {
-    "passed": true,
-    "testFiles": 51,
-    "tests": 480,
-    "typecheck": true,
-    "lint": true,
-    "diffHygiene": true,
-    "initialAttempt": "479 passed; one unchanged Chocolate-finalization5000ms timeout. Full unchanged rerun passed480; no assertion/time-limit changed."
+  "checkedAt": "2026-10-04T21:01:22.706622+00:00",
+  "passed": true,
+  "masterSha256": "969193b8cf9892d978fcb584b30f2d55109acb6e3a61cfbe27feb2cc980f6bba",
+  "workflow": {
+    "replay": "passed; all independent journals via cycle.ts status",
+    "cycle9Stage": "master-review",
+    "cycle9Revision": 8,
+    "masterApproval": false,
+    "release": null,
+    "cycle10Started": false
   },
-  "workflowReplay": {
-    "passed": true,
-    "registeredCycles": 6,
-    "cycle9Stage": "premise-review",
-    "revision": 2,
-    "ownerDecision": null
-  },
-  "recovery": {
-    "cycle9ReplayRecovery": true,
-    "operationalRecoveryPassed": true
+  "repositoryCheck": {
+    "command": "pnpm check",
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "passed": 480,
+      "files": 51,
+      "unchangedRerun": "One earlier attempt hit the existing5000ms Chocolate historical-validator timeout under concurrent work. A full unchanged rerun passed; no assertion or timeout setting changed."
+    },
+    "diffHygiene": "passed"
   },
   "durability": {
+    "command": "pnpm artifacts:durable",
     "passed": true,
     "canonicalMedia": {
       "passed": true,
-      "canonicalPayloads": 763,
+      "canonicalPayloads": 798,
       "historicalRetentions": 1,
       "archivalParts": 2,
       "explicitExceptions": 0,
@@ -41,31 +38,49 @@
         "artifactId": "wood-frog.historical-master",
         "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
       }
-    ],
-    "initialRunnerIssue": "tsx local IPC pipe blocked by sandbox before check; exact pnpm command passed with permission enabled."
+    ]
   },
-  "historicalIntegrity": {
+  "recovery": {
+    "command": "pnpm recovery:validate",
     "passed": true,
-    "frozenHistoricalFiles": 948,
-    "allPriorCycleTreesUnchanged": true,
-    "cycle8SchedulingPublicationEvidenceUnchanged": true,
-    "allPriorProjectMetadataFieldsPreservedExceptCurrentGateAndTask": true
+    "restoredArtifacts": 227,
+    "deliveryPackages": 8,
+    "historicalWoodFrog": "HASH_ONLY",
+    "publicationAuthorized": false
+  },
+  "frozenHistoricalFiles": 948,
+  "earlierCycleFilesPreserved": 1351,
+  "priorDiscoveryFilesPreserved": 27,
+  "catalogHistory": {
+    "existingEntriesCompared": 763,
+    "allUnchanged": true,
+    "newEntries": 35
   },
   "scopedSecretScan": {
-    "passed": true,
-    "scope": "NewCycle9records and authority; no private keys or common credential token patterns found; public source contact emails redacted before binding."
+    "textFiles": 82,
+    "rules": [
+      "aws-key",
+      "private-key",
+      "github-token",
+      "openai-key"
+    ],
+    "findings": [],
+    "limitation": "Pattern scan of changed text, not a guarantee against every possible credential."
   },
-  "limits": [
-    "Historical test timing instability remains; successful rerun does not prove its sole cause.",
-    "No clean-checkout bootstrap repeated for this record-only cycle handoff; no runtime, dependencies, media or architecture changed.",
-    "Premise feasibility is preliminary; no full historical verification or source independence guarantee."
-  ],
-  "boundary": {
-    "cycle10Started": false,
-    "fullDevelopment": false,
-    "productionMedia": false,
-    "publicationPreparation": false,
-    "externalPlatformActions": false,
-    "stop": "AHMET \u2014 PREMISE REVIEW"
-  }
+  "productionQA": {
+    "fullRender": "passed",
+    "fullDecode": "passed",
+    "checks": {
+      "technical": "passed",
+      "typography": "passed",
+      "captions": "passed",
+      "audio": "passed"
+    },
+    "captions": 56,
+    "browserCheckpoints": 127,
+    "fourPreflights": "No sampled provisional inset collisions; native/device/crop unknowns preserved.",
+    "audio": "All actual decoded sentence intervals and full-master local ASR, exact hash-bound loudness; no subjective listening claim."
+  },
+  "cleanCheckoutAndRemoteEvidence": "remote-durability.json; separate subsequent proof, no self-referential commit identity",
+  "platformActions": []
 }

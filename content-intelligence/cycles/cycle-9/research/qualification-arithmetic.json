@@ -1,0 +1,64 @@
+{
+  "before": {
+    "Barbados": {
+      "points": 0,
+      "gd": -1
+    },
+    "Grenada": {
+      "points": 3,
+      "gd": 2
+    },
+    "PuertoRico": {
+      "points": 3,
+      "gd": -1
+    }
+  },
+  "scenarios": {
+    "barbados-one-goal-win": {
+      "Barbados": {
+        "points": 3,
+        "gd": 0
+      },
+      "Grenada": {
+        "points": 3,
+        "gd": 1
+      },
+      "PuertoRico": {
+        "points": 3,
+        "gd": -1
+      }
+    },
+    "barbados-two-goal-win": {
+      "Barbados": {
+        "points": 3,
+        "gd": 1
+      },
+      "Grenada": {
+        "points": 3,
+        "gd": 0
+      },
+      "PuertoRico": {
+        "points": 3,
+        "gd": -1
+      }
+    },
+    "grenada-one-goal-win": {
+      "Barbados": {
+        "points": 0,
+        "gd": -2
+      },
+      "Grenada": {
+        "points": 6,
+        "gd": 3
+      },
+      "PuertoRico": {
+        "points": 3,
+        "gd": -1
+      }
+    }
+  },
+  "verified": true,
+  "basis": "RSSSF weighted goals note and group records, Times contemporary two-goal constraint; original calculations here.",
+  "meaning": "A Grenada goal at either end during normal time avoids Barbados double-margin extra-time opportunity. No safety/optimality probability estimate.",
+  "extraTime": "Barbados winner gives weighted margin+2 and qualifying+1GD versus Grenada0GD."
+}
