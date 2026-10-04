@@ -1,0 +1,96 @@
+{
+  "objectIndependence": {
+    "sharedAlternates": false,
+    "objectsCompared": 5415,
+    "hardlinkedObjects": 0
+  },
+  "startedAt": "2026-10-04T21:42:05.644702+00:00",
+  "testedCommit": "cf7eed61c7dabe815d82d328439dda0d9570718e",
+  "source": "Independent local Git clone --no-hardlinks --single-branch; complete history and working files. Remote branch identity verified separately, not a completed network restore.",
+  "initialTreeClean": true,
+  "dependencies": "Existing locked dependencies, offline frozen-lockfile install; no new package/provider.",
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "install",
+        "--offline",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 0,
+      "logSha256": "7656782286da7a59f02b496225ae3bb0ab9732c54d423b792490922edf77c9dd",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-0.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:restore"
+      ],
+      "exitCode": 0,
+      "logSha256": "8f089296f35da9d3701d4e9dd2ded38c99d283bd54cc48d5c6893230d0878e98",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-1.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "logSha256": "09878454061f1132053a0ec2413ea78235e826ee958a89690c2453b2450806b1",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-2.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "logSha256": "2582fa7bf4106de5cbddbe9f186edb3a1ce10d0156d4ec83dda98fe14b95ef39",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-3.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "logSha256": "7875639533de311de3a9db0fcae6fa3a7ff2628269daf2c18b8deffb5cc051b7",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-4.log"
+    },
+    {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/cycle.ts",
+        "status"
+      ],
+      "exitCode": 0,
+      "logSha256": "56749b435e3f2ef07a878072f666d428c0a1ba057abf492f3f4c02fff875d9bf",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-5.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0,
+      "logSha256": "fc062d9a2a624be16652224d438c684e247b568ac79e3348d9a1c874d54ac164",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-6.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "two-goals-v2"
+      ],
+      "exitCode": 0,
+      "logSha256": "007d12cedf63f02730ae5b1a02135c9846d06c8033e1d7751d3cee2c816acd00",
+      "scratchLog": "/tmp/magnivis-c9-v2-clean-7.log"
+    }
+  ],
+  "finishedAt": "2026-10-04T21:44:44.498112+00:00",
+  "treeClean": true,
+  "masterSha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+  "passed": true
+}
