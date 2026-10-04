@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "cycleId": "cycle.9",
+  "recordedAt": "2026-10-04T16:09:07.035813Z",
+  "baseMain": "d0e947eed958fb8286d0fb18f4cb61f6d72c1dbb",
+  "branch": "content/cycle-9-premise-review",
+  "scope": "Cycle9 start, fresh autonomous discovery, preliminary evidence inspection, one selection, premise handoff and current metadata only. No executable behavior changes or new tests.",
+  "check": {
+    "passed": true,
+    "testFiles": 51,
+    "tests": 480,
+    "typecheck": true,
+    "lint": true,
+    "diffHygiene": true,
+    "initialAttempt": "479 passed; one unchanged Chocolate-finalization5000ms timeout. Full unchanged rerun passed480; no assertion/time-limit changed."
+  },
+  "workflowReplay": {
+    "passed": true,
+    "registeredCycles": 6,
+    "cycle9Stage": "premise-review",
+    "revision": 2,
+    "ownerDecision": null
+  },
+  "recovery": {
+    "cycle9ReplayRecovery": true,
+    "operationalRecoveryPassed": true
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 763,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "initialRunnerIssue": "tsx local IPC pipe blocked by sandbox before check; exact pnpm command passed with permission enabled."
+  },
+  "historicalIntegrity": {
+    "passed": true,
+    "frozenHistoricalFiles": 948,
+    "allPriorCycleTreesUnchanged": true,
+    "cycle8SchedulingPublicationEvidenceUnchanged": true,
+    "allPriorProjectMetadataFieldsPreservedExceptCurrentGateAndTask": true
+  },
+  "scopedSecretScan": {
+    "passed": true,
+    "scope": "NewCycle9records and authority; no private keys or common credential token patterns found; public source contact emails redacted before binding."
+  },
+  "limits": [
+    "Historical test timing instability remains; successful rerun does not prove its sole cause.",
+    "No clean-checkout bootstrap repeated for this record-only cycle handoff; no runtime, dependencies, media or architecture changed.",
+    "Premise feasibility is preliminary; no full historical verification or source independence guarantee."
+  ],
+  "boundary": {
+    "cycle10Started": false,
+    "fullDevelopment": false,
+    "productionMedia": false,
+    "publicationPreparation": false,
+    "externalPlatformActions": false,
+    "stop": "AHMET \u2014 PREMISE REVIEW"
+  }
+}

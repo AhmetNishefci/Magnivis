@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 3,
+  "id": "cycle.9",
+  "revision": 2,
+  "authority": {
+    "path": "workflow/authorities/cycle-9-start.json",
+    "sha256": "01daad2996fe55066bd3344a88ed25f72dbf00c71250d471ab16c081e576ed46"
+  },
+  "stage": "premise-review",
+  "workInProgress": null,
+  "receipts": [
+    {
+      "stage": "discovery",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-9/topic-selection.json",
+        "sha256": "2e3b37d056fb5c4907a957b63ffdd538ec883ab8c4223ab99caaad7d7c02da56"
+      }
+    }
+  ],
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-9/topic-selection.json",
+    "sha256": "2e3b37d056fb5c4907a957b63ffdd538ec883ab8c4223ab99caaad7d7c02da56"
+  },
+  "premiseDecision": null,
+  "candidate": null,
+  "masterDecision": null,
+  "release": null,
+  "publicationDecision": null,
+  "exception": null,
+  "observations": [],
+  "history": [
+    {
+      "revision": 1,
+      "previousSha256": "58741713c14c309546b46edd6a5c0cc38c0d1befa37fe9760da3f76e6c978145",
+      "event": "begin-discovery",
+      "at": "2026-10-04T15:53:35.513631Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-9/discovery-start.json",
+        "sha256": "8c3c5657cc3b66f52af3e5fb34a091cb76632dd09d43a30b8ea956ef1a585e23"
+      }
+    },
+    {
+      "revision": 2,
+      "previousSha256": "1ec63777ad37d83ed3075c4e2cdfd4df32e2a5cbbec82d59390a3dde67fa3553",
+      "event": "discovery",
+      "at": "2026-10-04T16:04:34.390Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-9/topic-selection.json",
+        "sha256": "2e3b37d056fb5c4907a957b63ffdd538ec883ab8c4223ab99caaad7d7c02da56"
+      }
+    }
+  ]
+}
