@@ -1,0 +1,24 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {execFileSync,spawnSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {mediaHash} from '../src/artifacts/media';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {loadCycle,loadProjectCycles,recoverCycleEvent} from '../src/workflow/store';
+import {nextAction} from '../src/workflow/cycle';
+import {readBoundRecord} from '../src/workflow/evidence';
+import {resolveAuthorizedCycleUpload} from '../src/workflow/release';
+
+const root=process.cwd(),base='content-intelligence/cycles/cycle-8/publication',baseline='6a9814939d0d384c0049f9491289724d87de917c',registry=openMediaCatalog(root),cycle=loadCycle(root,'cycle.8',registry);
+if(cycle.stage!=='authorized'||cycle.revision!==26||!cycle.release||!cycle.publicationDecision)throw new Error('Expected exact authorized Cycle8 revision26');
+const uploads=resolveAuthorizedCycleUpload(readBoundRecord(cycle.release),cycle.publicationDecision,registry,root);
+if(uploads.length!==4||uploads.some(u=>u.files.find(f=>f.role==='video')!.media.sha256!=='476d3241fe6a4e8297de42d7799dd8a6b3da65b8e9a6554c85d339513aefa1e3'))throw new Error('Authorized master/destinations drift');
+const historicalPaths=execFileSync('git',['ls-tree','-r','--name-only',baseline],{encoding:'utf8'}).trim().split('\n').filter(p=>p.startsWith('content-intelligence/cycles/cycle-8/')||p.startsWith('workflow/cycles/')&&p!=='workflow/cycles/cycle.8/state.json'||p.startsWith('artifacts/masters/oklo-')||p.startsWith('artifacts/historical-media/')||p==='artifacts/media-retentions.json'||p==='artifacts/media-catalog.json'||p==='src/oklo-v5-index.tsx'||p.endsWith('/OkloRevisedV5.tsx')||p.endsWith('/OkloRevisedWorldV5.tsx'));
+for(const path of historicalPaths)if(!readFileSync(path).equals(execFileSync('git',['show',`${baseline}:${path}`],{maxBuffer:128*1024*1024})))throw new Error('Historical/prepared bytes changed: '+path);
+const v2='artifacts/masters/oklo-cycle8-candidate-v2.mp4';if(mediaHash(v2)!=='174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d')throw new Error('V2 changed');
+if(sha256Json(recoverCycleEvent(root,cycle.id,registry))!==sha256Json(cycle))throw new Error('Recovery changed authorized state');
+const cycles=loadProjectCycles(root,registry),ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const decoded=spawnSync(ffmpeg,['-v','error','-xerror','-err_detect','explode','-i',uploads[0]!.files.find(f=>f.role==='video')!.path,'-map','0:v:0','-map','0:a:0','-f','null','-'],{encoding:'utf8'});if(decoded.status!==0)throw new Error(decoded.stderr);
+const bindings=JSON.parse(readFileSync(`${base}/authorization-bindings-v1.json`,'utf8'));
+const report={passed:true,checkedAt:new Date().toISOString(),stage:cycle.stage,revision:cycle.revision,nextAction:nextAction(cycle),decision:cycle.publicationDecision,release:cycle.release,uploads,historicalFilesUnchanged:historicalPaths.length,canonicalCatalogUnchanged:true,v2Preserved:true,fullMediaDecode:'passed',preparedCopyCoversMetadataProfilesManifestsUnchanged:true,mediaCopied:0,mediaRegenerated:0,recovery:'exact no-op',replay:cycles.map(c=>({id:c.id,stage:c.stage,revision:c.revision})),stateSha256:mediaHash('workflow/cycles/cycle.8/state.json'),event26Sha256:mediaHash('workflow/cycles/cycle.8/event-26.json'),acceptedPresentationUnknowns:bindings.acceptedPresentationUnknowns,acceptedOperationalUnknowns:bindings.acceptedOperationalUnknowns,scheduling:null,publication:null,analytics:null,externalPlatformActions:[]};
+writeFileSync(`${base}/authorization-validation-v1.json`,JSON.stringify(report,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(report));
