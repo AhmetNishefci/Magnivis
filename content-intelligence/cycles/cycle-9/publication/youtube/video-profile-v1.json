@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.two-goals.youtube.release-v1",
+  "revision": 1,
+  "platform": "youtube",
+  "surface": "youtube-shorts-viewer",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-04T21:52:46.918629Z",
+  "reviewAfter": "2026-10-11T21:52:46.918996Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "provisional",
+    "regions": [
+      {
+        "x": 84,
+        "y": 240,
+        "width": 806,
+        "height": 1370
+      }
+    ],
+    "rationale": "Repository projection only. Owner Phase 2 20A: top approximately 240; other insets provisionally inherited from Git V1, not recovered measurements; Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "provenance": [
+      {
+        "path": "artifacts/presentation-profiles.json",
+        "sha256": "33d66ce6fee9bbfa4c05720b2270d07319f250d2d0673b1b50856715bd81c2cb"
+      }
+    ]
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy native exclusions; null stays unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy caption geometry; null stays unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No legacy measured crop model; nothing inferred.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "mp4"
+    ],
+    "videoCodecs": [
+      "h264"
+    ],
+    "audioCodecs": [
+      "aac"
+    ],
+    "fps": [
+      30
+    ],
+    "duration": {
+      "minimum": 3,
+      "maximum": 90
+    },
+    "provenance": [
+      {
+        "path": "src/platform-variants/platform-profiles.ts",
+        "sha256": "f5cc2f039121b608ad1428d952084d161fd2685907ae6f1a8b7a03f2e978d0f1"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-9/publication/policy-inspection-v1.json",
+        "sha256": "00fa3e2bd22f6f5662b4abb95a339275c951b8936f00704d6784af1626a2f06f"
+      }
+    ],
+    "rationale": "Cycle9 release-specific conservative90second envelope, supported by inspected official upload/Reels documentation; not a universal platform duration maximum. Codec/dimensions/FPS remain repository settings. Review dates concern policy and inherited-profile inspection, not a new measured native geometry pass."
+  }
+}

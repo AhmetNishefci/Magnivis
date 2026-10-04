@@ -1,0 +1,131 @@
+{
+  "gate": "PUBLICATION REVIEW / AUTHORIZATION",
+  "cycleId": "cycle.9",
+  "platforms": [
+    {
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/manifest-v1.json",
+        "sha256": "e815c74924341e759ce9c1b316835bf347b44c71c1517f4142d1ee129ab5d41e"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/video-evidence-v1.json",
+        "sha256": "b21ca0497720c233d1a74f7af57ef18fc1f69e9c2ec01c3557afa296feb0f15a"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/video-profile-v1.json",
+        "sha256": "85a9d7c0bd73758e2bac6237f237e390fa417639370c51a2c58cd323b6a76f0e"
+      }
+    },
+    {
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/manifest-v1.json",
+        "sha256": "953169fe0f816cfe80c381c411128deaafb86afd09d5213253566a4016eba61c"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/video-evidence-v1.json",
+        "sha256": "af9c579f97cdaccac9db8a38fe6860b364827db310aec6461ac166675d7345f7"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/video-profile-v1.json",
+        "sha256": "cd48b72b827f9695901a9d4125c6dfe0d3c0ade483c395d5d219e8d066f93b26"
+      }
+    },
+    {
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/manifest-v1.json",
+        "sha256": "5e6d5ffb67b968a99221dfd4a5beff555d36fa41d291708cffd836c5b12e81f0"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/video-evidence-v1.json",
+        "sha256": "2aa9cbab8f06fb3df3ef3d54bd33713dab7dc96cecfaf40e8414c611e40dc3cb"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/video-profile-v1.json",
+        "sha256": "9275d79f995e6eb9fd3b47b77695ba0847f4ab84719b92aa08f1e69a8c5d148f"
+      }
+    },
+    {
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/manifest-v1.json",
+        "sha256": "59887745679cdc697af6bcb99741267ca873edab8f1c8033246c9d5c351b795a"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/video-evidence-v1.json",
+        "sha256": "60843dd91a12358c665593dbebb589389e111ab3a0ebc011ababff2565e34da2"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/video-profile-v1.json",
+        "sha256": "1b1f10c41088f6acf11f0167dc4a46c2c587f1ad0ccdf721dbe1303cb9cdd017"
+      }
+    }
+  ],
+  "presentationUncertainties": [
+    "two-goals.variant.youtube.v1: composition: provisional",
+    "two-goals.variant.youtube.v1: nativeUI: unknown",
+    "two-goals.variant.youtube.v1: captions: unknown",
+    "two-goals.variant.youtube.v1: crop: unknown",
+    "two-goals.variant.youtube.v1: Unsampled timeline motion not proven",
+    "two-goals.variant.youtube.v1: No exact-media real-device evidence",
+    "two-goals.variant.youtube.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: composition: unknown",
+    "two-goals.variant.youtube.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: nativeUI: unknown",
+    "two-goals.variant.youtube.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: captions: unknown",
+    "two-goals.variant.youtube.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: crop: unknown",
+    "two-goals.variant.youtube.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: No exact-media real-device evidence",
+    "two-goals.variant.tiktok.v1: composition: provisional",
+    "two-goals.variant.tiktok.v1: nativeUI: unknown",
+    "two-goals.variant.tiktok.v1: captions: unknown",
+    "two-goals.variant.tiktok.v1: crop: unknown",
+    "two-goals.variant.tiktok.v1: Unsampled timeline motion not proven",
+    "two-goals.variant.tiktok.v1: No exact-media real-device evidence",
+    "two-goals.variant.tiktok.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: composition: unknown",
+    "two-goals.variant.tiktok.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: nativeUI: unknown",
+    "two-goals.variant.tiktok.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: captions: unknown",
+    "two-goals.variant.tiktok.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: crop: unknown",
+    "two-goals.variant.tiktok.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: No exact-media real-device evidence",
+    "two-goals.variant.instagram.v1: composition: provisional",
+    "two-goals.variant.instagram.v1: nativeUI: unknown",
+    "two-goals.variant.instagram.v1: captions: unknown",
+    "two-goals.variant.instagram.v1: crop: unknown",
+    "two-goals.variant.instagram.v1: Unsampled timeline motion not proven",
+    "two-goals.variant.instagram.v1: No exact-media real-device evidence",
+    "two-goals.variant.instagram.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: composition: unknown",
+    "two-goals.variant.instagram.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: nativeUI: unknown",
+    "two-goals.variant.instagram.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: captions: unknown",
+    "two-goals.variant.instagram.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: crop: unknown",
+    "two-goals.variant.instagram.v1/cover.media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923: No exact-media real-device evidence",
+    "two-goals.variant.facebook.v1: composition: provisional",
+    "two-goals.variant.facebook.v1: nativeUI: unknown",
+    "two-goals.variant.facebook.v1: captions: unknown",
+    "two-goals.variant.facebook.v1: crop: unknown",
+    "two-goals.variant.facebook.v1: Unsampled timeline motion not proven",
+    "two-goals.variant.facebook.v1: No exact-media real-device evidence",
+    "two-goals.variant.facebook.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: composition: unknown",
+    "two-goals.variant.facebook.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: nativeUI: unknown",
+    "two-goals.variant.facebook.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: captions: unknown",
+    "two-goals.variant.facebook.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: crop: unknown",
+    "two-goals.variant.facebook.v1/cover.media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425: No exact-media real-device evidence"
+  ],
+  "uniqueVideoPayloads": 1,
+  "evidence": {
+    "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+    "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+  },
+  "targetSha256": "b63e8dfde1df90650bfe560ab819a3576f91938b00747a8a86536073c68e2827",
+  "decision": "Review copy, covers, exact files and scoped presentation uncertainties. Approve owner manual release or request revision. No upload/scheduling/publication is performed by this system."
+}

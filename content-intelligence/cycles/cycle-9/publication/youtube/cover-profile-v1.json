@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.two-goals.youtube.cover-v1",
+  "revision": 1,
+  "platform": "youtube",
+  "surface": "youtube-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-04T21:55:19.150Z",
+  "reviewAfter": "2026-10-11T21:55:19.150Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static browser canvas checked; no platform-derived safe composition region measured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail overlay geometry unmeasured.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static image; no native caption/overlay geometry measured.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Grid/profile/feed/native cover crop geometry unknown; no invented rectangle.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-9/publication/qa/cover-visual-v1.json",
+        "sha256": "20f89e46e697546f33fef86a7832c60d60ca69d81c69449d4d1f3ea041caea5a"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-9/publication/policy-inspection-v1.json",
+        "sha256": "00fa3e2bd22f6f5662b4abb95a339275c951b8936f00704d6784af1626a2f06f"
+      }
+    ],
+    "rationale": "Local1080x1920PNG cover or exact decoded frame reference; native upload/selection capability not tested. Seven-day internal policy review window is not geometry evidence."
+  }
+}

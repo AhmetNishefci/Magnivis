@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-04T22:02:32.238936Z",
+  "passed": true,
+  "checks": {
+    "repository-check": {
+      "passed": true,
+      "logSha256": "69fe8c3e05be8983a285c89dc477c8ece0bcb610023ae5d68ad24061959e0059",
+      "scratchLog": "/tmp/c9-publication-final-check.log"
+    },
+    "canonical-durability": {
+      "passed": true,
+      "logSha256": "39d0572c1084db63526a40de09ced560eae75358a7fb417173c6f47be5bf2055",
+      "scratchLog": "/tmp/c9-publication-durable.log"
+    },
+    "recovery": {
+      "passed": true,
+      "logSha256": "24527e833ee323af88e3a5e3b12306262229e8a2dbf93f478aae70ea8553b293",
+      "scratchLog": "/tmp/c9-publication-recovery.log"
+    },
+    "frozen-history": {
+      "passed": true,
+      "logSha256": "8f51feebeb38380ce0f200768664cf030e7315da60b68251881425d12e39946b",
+      "scratchLog": "/tmp/c9-publication-frozen.log"
+    },
+    "release-validation": {
+      "passed": true,
+      "logSha256": "4fff689a94371a46b2a16df39d018b19e2dc087d7ab41274d20e7ff890df8539",
+      "scratchLog": "/tmp/c9-publication-validation.log"
+    },
+    "exact-master-qa": {
+      "passed": true,
+      "logSha256": "bbb896a91ecea493d5726d6bcb2abb842781d4bf6e19d345a5a8d410745ea478",
+      "scratchLog": "/tmp/c9-publication-media-qa.log"
+    },
+    "cover-render": {
+      "passed": true,
+      "logSha256": "c991bac42d27be8de6c003229eace389dad6db1b5f53ad357c7652d6bac36e2c",
+      "scratchLog": "/tmp/c9-publication-cover.log"
+    },
+    "full-verification-render": {
+      "passed": true,
+      "logSha256": "333455d8bdcad8c109b954413c2196070b82c1f586ff8c9c86f5b74f182c231d",
+      "scratchLog": "/tmp/c9-publication-full-render.log"
+    }
+  },
+  "testFiles": 52,
+  "tests": 483,
+  "canonicalMedia": {
+    "passed": true,
+    "canonicalPayloads": 813,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "nativeDurableArtifactCount": 731,
+  "workflow": "Independent journals replayed; recovery exact no-op; Cycle9 revision13 at publication-review; owner master approval recorded, publication approval absent. Cycle10 absent.",
+  "historicalIntegrity": "812 prior canonical entries and3396 prior tracked files preserved outside explicitly permitted current-state/catalog/doc append scope; all948 frozen files and442 frozen binary paths pass. V1/V2/source/captions/reviews/pronunciation evidence and earlier operational records unchanged.",
+  "media": "One unchanged approved canonical video; zero derivatives/copies. One new original cover payload1,389,611bytes; other selected cover is existing exact-master frame. Full verification picture packets match approved master.",
+  "presentation": "All127 existing bound browser samples,56 caption midpoints, fresh full-master probe/decode and selected frame exact-byte comparison. No known sampled collision;44 unaccepted presentation unknowns. No native/mobile/crop/device pass.",
+  "initialValidationFailure": "validation-staging-correction-v1.json; full unchanged check passed after tracking canonical cover.",
+  "diffHygiene": "git diff --check and staged diff --check passed",
+  "secretScan": "scoped-secret-scan-v1.json",
+  "cleanCheckout": "To follow exact source/media commit; separately reported."
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "cycleId": "cycle.9",
+  "state": "publication-review",
+  "publicationAuthorized": false,
+  "canonicalApprovedMaster": {
+    "path": "artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+    "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+  },
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-9/publication/master-approval-v1.json",
+    "sha256": "ea8cc50c5d4fd0100e093297db71b9f4a57db387352d635d532a6edef8e52da0"
+  },
+  "masterLock": {
+    "path": "content-intelligence/cycles/cycle-9/publication/master-lock-v1.json",
+    "sha256": "665c05d6e1c08806f940f3d5fadd97107eb477efb7ae32bd10e9adaf6927c026"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+    "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+  },
+  "reviewTargetSha256": "b63e8dfde1df90650bfe560ab819a3576f91938b00747a8a86536073c68e2827",
+  "ownerReview": {
+    "path": "content-intelligence/cycles/cycle-9/publication/owner-review.md",
+    "sha256": "9c883f897f2c4f7fad81453bec2c5de55514be7111b6b86249cbee51ba00ef0e"
+  },
+  "platformDeliveries": [
+    {
+      "platform": "youtube",
+      "variant": {
+        "id": "two-goals.variant.youtube.v1",
+        "revision": 1,
+        "platform": "youtube",
+        "surface": "youtube-shorts-viewer",
+        "media": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "master": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "relationship": "exact-master",
+        "adaptationReason": null,
+        "presentation": {
+          "path": "content-intelligence/cycles/cycle-9/publication/youtube/video-evidence-v1.json",
+          "sha256": "b21ca0497720c233d1a74f7af57ef18fc1f69e9c2ec01c3557afa296feb0f15a"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-9/publication/youtube/video-profile-v1.json",
+          "sha256": "85a9d7c0bd73758e2bac6237f237e390fa417639370c51a2c58cd323b6a76f0e"
+        }
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/manifest-v1.json",
+        "sha256": "e815c74924341e759ce9c1b316835bf347b44c71c1517f4142d1ee129ab5d41e"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/metadata-v1.json",
+        "sha256": "2824e813a05c15a2333c51c7a3fa4d80684e91a6e3e734a8b3cbeb013f7cdf20"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/upload-copy-v1.txt",
+        "sha256": "603261e083f2fa6223693bfa04293061f36810754d6ee153e9a564130e3b8aba"
+      }
+    },
+    {
+      "platform": "tiktok",
+      "variant": {
+        "id": "two-goals.variant.tiktok.v1",
+        "revision": 1,
+        "platform": "tiktok",
+        "surface": "tiktok-feed",
+        "media": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "master": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "relationship": "exact-master",
+        "adaptationReason": null,
+        "presentation": {
+          "path": "content-intelligence/cycles/cycle-9/publication/tiktok/video-evidence-v1.json",
+          "sha256": "af9c579f97cdaccac9db8a38fe6860b364827db310aec6461ac166675d7345f7"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-9/publication/tiktok/video-profile-v1.json",
+          "sha256": "cd48b72b827f9695901a9d4125c6dfe0d3c0ade483c395d5d219e8d066f93b26"
+        }
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/manifest-v1.json",
+        "sha256": "953169fe0f816cfe80c381c411128deaafb86afd09d5213253566a4016eba61c"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/metadata-v1.json",
+        "sha256": "3d2aecc8bdc39e5c16438c1d8c9024dd1a77a1a71746b93bfe74d32fc7a57d24"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/upload-copy-v1.txt",
+        "sha256": "75edd19e74ffc2313243bc7ed0d8e2a6180bb22c5c9e77286cfe5d94f6a2ba4e"
+      }
+    },
+    {
+      "platform": "instagram",
+      "variant": {
+        "id": "two-goals.variant.instagram.v1",
+        "revision": 1,
+        "platform": "instagram",
+        "surface": "instagram-reels-playback",
+        "media": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "master": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "relationship": "exact-master",
+        "adaptationReason": null,
+        "presentation": {
+          "path": "content-intelligence/cycles/cycle-9/publication/instagram/video-evidence-v1.json",
+          "sha256": "2aa9cbab8f06fb3df3ef3d54bd33713dab7dc96cecfaf40e8414c611e40dc3cb"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-9/publication/instagram/video-profile-v1.json",
+          "sha256": "9275d79f995e6eb9fd3b47b77695ba0847f4ab84719b92aa08f1e69a8c5d148f"
+        }
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/manifest-v1.json",
+        "sha256": "5e6d5ffb67b968a99221dfd4a5beff555d36fa41d291708cffd836c5b12e81f0"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/metadata-v1.json",
+        "sha256": "97a2ccc71a5b4817c5804f88546bf39a18f413083bdbb7427e569a130f1982ab"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/upload-copy-v1.txt",
+        "sha256": "bcd442ec358b05ba7fee8e15e28b343a609c1bdb8158d58265c0f9ee01460fa8"
+      }
+    },
+    {
+      "platform": "facebook",
+      "variant": {
+        "id": "two-goals.variant.facebook.v1",
+        "revision": 1,
+        "platform": "facebook",
+        "surface": "facebook-reels-viewer",
+        "media": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "master": {
+          "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+          "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+        },
+        "relationship": "exact-master",
+        "adaptationReason": null,
+        "presentation": {
+          "path": "content-intelligence/cycles/cycle-9/publication/facebook/video-evidence-v1.json",
+          "sha256": "60843dd91a12358c665593dbebb589389e111ab3a0ebc011ababff2565e34da2"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-9/publication/facebook/video-profile-v1.json",
+          "sha256": "1b1f10c41088f6acf11f0167dc4a46c2c587f1ad0ccdf721dbe1303cb9cdd017"
+        }
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/manifest-v1.json",
+        "sha256": "59887745679cdc697af6bcb99741267ca873edab8f1c8033246c9d5c351b795a"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/metadata-v1.json",
+        "sha256": "a052b38ebe997b76e9d4a2bfec8339e2190b157d6e59e84481a4b8834c031558"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/upload-copy-v1.txt",
+        "sha256": "4d4aa3987282a799d2b1bc25300ff5a3c60c65cbe1dcac9a34937f94df0d8c3a"
+      }
+    }
+  ],
+  "selectedCoverAssets": [
+    {
+      "path": "artifacts/covers/two-goals-cover-v1.png",
+      "sha256": "709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923"
+    },
+    {
+      "path": "artifacts/qa-evidence/two-goals-cycle9-v2/frame-95-62.0s.png",
+      "sha256": "863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/policy-inspection-v1.json",
+      "sha256": "00fa3e2bd22f6f5662b4abb95a339275c951b8936f00704d6784af1626a2f06f"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/presentation-analysis-v1.json",
+      "sha256": "0067910eba2a96305c0eb71fc2340a36d8cd0de6c165d6fae797c6732b1bf960"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/risk-register-v1.json",
+      "sha256": "37a05635fe20d6bce8f5a4bc5dcc19a9e8e0d25c2c7952ef3ca2b64a14a3e735"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/readiness-validation-v1.json",
+      "sha256": "188759c4692288735f3deed29c48fd927ca49b8f2fdea39dce0461af5d9fe6d8"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/validation-v1.json",
+      "sha256": "cfa2eda04a0e22489f122e3c0344b775809bce5cc82701753f876c4faf97eed3"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/qa/master-release-validation-v1.json",
+      "sha256": "d98ef5e415ec48bd840705282684bea89a86c43aa6653501578c03eb9d7836e1"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/qa/full-render-verification-v1.json",
+      "sha256": "6bd205fba5dbb5cb00e7ca108c10e3a3c0cd1b86e728d3458bb30210e14c7f6e"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/qa/cover-layout-v1.json",
+      "sha256": "a6bcbb399bfce53f096b8e3ca8068a215773552f36220238db6315ef91ae4118"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/qa/cover-visual-v1.json",
+      "sha256": "20f89e46e697546f33fef86a7832c60d60ca69d81c69449d4d1f3ea041caea5a"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/qa/selected-frame-cover-v1.json",
+      "sha256": "23173aee6b25101368aa4b2d2c3183984c0d66b2ae0fd64df6c8b8dfcce7ea2f"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-9/publication/qa/contact-inspection-v1.json",
+      "sha256": "bb67fcc070b0303e2fabe5ccc676ac2b3c9cbaa0349538ac1d26db52c16940c2"
+    }
+  ],
+  "publicationDecision": null,
+  "externalActions": [],
+  "cycle10Started": false
+}

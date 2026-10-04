@@ -1,0 +1,60 @@
+{
+  "inspectedAt": "2026-10-04T21:55:19.150Z",
+  "reviewer": "Codex actual local image inspection",
+  "media": {
+    "id": "media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425",
+    "sha256": "863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425"
+  },
+  "sourceMaster": {
+    "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+    "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+  },
+  "sourcePosition": {
+    "frame": 1860,
+    "seconds": 62,
+    "frameSelectionApproximate": false
+  },
+  "dimensions": {
+    "width": 1080,
+    "height": 1920
+  },
+  "passed": true,
+  "bounds": [
+    {
+      "x": 125,
+      "y": 252,
+      "width": 153.265625,
+      "height": 35
+    },
+    {
+      "x": 125,
+      "y": 332,
+      "width": 735,
+      "height": 112
+    },
+    {
+      "x": 125,
+      "y": 495,
+      "width": 735,
+      "height": 720
+    },
+    {
+      "x": 125,
+      "y": 1232,
+      "width": 735,
+      "height": 67.59375
+    },
+    {
+      "x": 120,
+      "y": 1370,
+      "width": 750,
+      "height": 180
+    }
+  ],
+  "method": "Viewed actual decoded V2 frame1860; exact payload matches existing canonical V2 evidence. Identical frames deduplicated, provenance unchanged; new actual-master relation recorded here. Bounds reused from exact approved frame1860 browser sample, not native crop measurement.",
+  "findings": [
+    "Both-goals pitch, two Barbados markers, match names/score, schematic disclosure and exact speech caption visible.",
+    "Corresponding native cover frame selection near62.0s only; exact selector precision, cropping and persistence untested. No custom TikTok PNG-upload capability asserted."
+  ],
+  "devicePass": false
+}

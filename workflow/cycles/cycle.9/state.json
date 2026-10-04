@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
   "id": "cycle.9",
-  "revision": 11,
+  "revision": 13,
   "authority": {
     "path": "workflow/authorities/cycle-9-start.json",
     "sha256": "01daad2996fe55066bd3344a88ed25f72dbf00c71250d471ab16c081e576ed46"
   },
-  "stage": "master-review",
+  "stage": "publication-review",
   "workInProgress": null,
   "receipts": [
     {
@@ -43,6 +43,13 @@
         "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/master-candidate-v2.json",
         "sha256": "d8905fccbe338c4592c499e7f79c49695ba44cc5337aee9042091f90ea0d1048"
       }
+    },
+    {
+      "stage": "presentation",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+        "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+      }
     }
   ],
   "premise": {
@@ -57,8 +64,14 @@
     "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/master-candidate-v2.json",
     "sha256": "d8905fccbe338c4592c499e7f79c49695ba44cc5337aee9042091f90ea0d1048"
   },
-  "masterDecision": null,
-  "release": null,
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-9/publication/master-approval-v1.json",
+    "sha256": "ea8cc50c5d4fd0100e093297db71b9f4a57db387352d635d532a6edef8e52da0"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+    "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+  },
   "publicationDecision": null,
   "exception": null,
   "observations": [],
@@ -171,6 +184,26 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-9/pronunciation-revision-v2/master-candidate-v2.json",
         "sha256": "d8905fccbe338c4592c499e7f79c49695ba44cc5337aee9042091f90ea0d1048"
+      }
+    },
+    {
+      "revision": 12,
+      "previousSha256": "a3b6babaf45261b24fd4916d5be752380860ef71b91a9e5337e72a94dfcc16e3",
+      "event": "owner-decision",
+      "at": "2026-10-04T21:49:48.479Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-9/publication/master-approval-v1.json",
+        "sha256": "ea8cc50c5d4fd0100e093297db71b9f4a57db387352d635d532a6edef8e52da0"
+      }
+    },
+    {
+      "revision": 13,
+      "previousSha256": "c1ed6e223be12098349dacb16258a5eda29a8b35e76ede17641338297a6facc0",
+      "event": "presentation",
+      "at": "2026-10-04T21:55:20.830Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+        "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
       }
     }
   ]

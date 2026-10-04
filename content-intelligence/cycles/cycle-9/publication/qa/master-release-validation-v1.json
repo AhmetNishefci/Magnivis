@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-04T21:55:18.889Z",
+  "passed": true,
+  "master": {
+    "path": "artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+    "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+  },
+  "approvedSourceAndInputHashesUnchanged": true,
+  "fullDecode": "passed",
+  "canonicalQa": {
+    "checkedAt": "2026-10-04T21:54:09.804Z",
+    "input": "artifacts/masters/two-goals-cycle9-candidate-v2.mp4",
+    "expected": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "durationSeconds": 82.03333333333333
+    },
+    "observed": {
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "audioSampleRate": "48000",
+      "meanVolumeDb": -25.5,
+      "maxVolumeDb": -2.3,
+      "duration": 82.091,
+      "sizeBytes": 10893377,
+      "bitRate": 1061590
+    },
+    "passed": true,
+    "failures": []
+  },
+  "selectedCoverFrame": {
+    "path": "artifacts/qa-evidence/two-goals-cycle9-v2/frame-95-62.0s.png",
+    "frame": 1860,
+    "seconds": 62,
+    "sha256": "863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425",
+    "exactNewDecodeMatches": true
+  },
+  "scope": "Exact owner-approved master re-probed and fully decoded. Existing bound127 browser checkpoints and owner creative approval retained. No new video render or source/audio/caption modification; no native/device/crop pass.",
+  "externalActions": []
+}

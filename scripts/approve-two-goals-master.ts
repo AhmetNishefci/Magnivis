@@ -1,0 +1,16 @@
+import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+const root=process.cwd(),registry=openMediaCatalog(),cycle=loadCycle(root,'cycle.9',registry),base='content-intelligence/cycles/cycle-9/publication';
+if(cycle.stage!=='master-review'||!cycle.candidate)throw new Error('Exact master-review gate required');
+const candidate=JSON.parse(readFileSync(cycle.candidate.path,'utf8'));
+const path='artifacts/masters/two-goals-cycle9-candidate-v2.mp4',expected='d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3';
+if(mediaHash(path)!==expected||candidate.media.sha256!==expected||registry.resolveFile(candidate.media)!==`${root}/${path}`)throw new Error('Owner-approved master identity mismatch');
+mkdirSync(base,{recursive:true});const at=new Date().toISOString();
+const decision={schemaVersion:3,id:'owner-decision.cycle-9.two-goals-master-approval.v1',revision:1,gate:'master-review',cycleId:cycle.id,targetSha256:sha256Json(candidate),decision:'approve',enteredAt:at,suppliedReviewTime:null,reviewer:'Ahmet — owner',evidenceBasis:'explicit-owner-message',instruction:'AHMET — MASTER APPROVED. Ahmet reviewed artifacts/masters/two-goals-cycle9-candidate-v2.mp4 and approves Cycle9 replacement master V2. Corrected Grenada pronunciation accepted; visual treatment, pacing, captions, reconstruction, rule explanation, narrative progression and final payoff approved. Treat V2 as approved canonical master; record approval durably, proceed normal post-master presentation and four-platform Publication Review packages for YouTube Shorts, TikTok, Instagram Reels and Facebook Reels. Preserve V1, original Master Review, pronunciation evidence and all history. Validate deliveries against existing platform/safe-area rules and prepare final metadata/copy. No upload, scheduling, publication or Cycle10. Stop AHMET — PUBLICATION REVIEW with canonical master, variants, copy, hashtags, covers, validation and remaining owner judgments. Entry time is recording time, not an invented owner review time.' ,acceptedUnknowns:[]};
+const dpath=`${base}/master-approval-v1.json`;writeFileSync(dpath,JSON.stringify(decision,null,2)+'\n',{flag:'wx'});const ref={path:dpath,sha256:mediaHash(dpath)};
+const next=persistCycleEvent(root,cycle,{type:'owner-decision',record:ref,at},registry);
+writeFileSync(`${base}/master-lock-v1.json`,JSON.stringify({cycleId:cycle.id,lockedAt:at,master:candidate.media,canonicalPath:path,candidate:cycle.candidate,ownerApproval:ref,scriptSha256:candidate.scriptSha256,lockMethod:'Approval locks existing canonical identity by reference. No media copy, render replacement, creative/source/input modification or approval transfer.',publicationAuthorized:false},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({stage:next.stage,revision:next.revision,master:candidate.media}));

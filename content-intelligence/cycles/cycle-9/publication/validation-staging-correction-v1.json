@@ -1,0 +1,11 @@
+{
+  "recordedAt": "2026-10-04T22:00:07.191252Z",
+  "initialCheck": {
+    "exitCode": 1,
+    "testFilesFailed": 1,
+    "testsFailed": 1,
+    "logSha256": "0699912457b5a21d2ecd43d1a790637b615bae2b5b66c6ba29d13dfac86193c6",
+    "reason": "Canonical cover was not yet Git tracked when the first full check started. Existing durability assertion rejected it."
+  },
+  "correction": "Stage the complete authorized release, including new canonical cover; full durability audit then passed. Re-run complete check unchanged. No weakened tests or assertion, no source/media/evidence modification to resolve failure."
+}
