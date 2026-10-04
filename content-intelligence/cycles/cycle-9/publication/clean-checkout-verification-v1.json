@@ -1,0 +1,109 @@
+{
+  "objectIndependence": {
+    "sharedAlternates": false,
+    "objectsCompared": 5505,
+    "hardlinkedObjects": 0
+  },
+  "startedAt": "2026-10-04T22:04:55.670055+00:00",
+  "testedCommit": "49586e50070502db74fed4ead324c9bc0a2e18d0",
+  "source": "Independent local Git clone --no-hardlinks --single-branch; complete history and working files. Remote branch identity verified separately, not a completed network restore.",
+  "initialTreeClean": true,
+  "dependencies": "Existing locked dependencies, offline frozen-lockfile install; no new package/provider.",
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "install",
+        "--offline",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 0,
+      "logSha256": "eba208c159a4c5c095f497bcc62ff68d6c7c33fed3d170d64098c3771dc6220b",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-0.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:restore"
+      ],
+      "exitCode": 0,
+      "logSha256": "b5f4f94c73b630a3e84456753d06465cff2cad5a3967f1f467e161c26af1a90a",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-1.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:verify"
+      ],
+      "exitCode": 0,
+      "logSha256": "0bf65843e0eac6c66df856e71cc53496282646e5e5fc8b2fcd4ac56d4de2813a",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-2.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "logSha256": "a45a5f8c09f3d15002bedbbc5f37b9ca3af65f721339298e9784022724a782c9",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-3.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "logSha256": "031e9e8f000e3ab9df64dc9366218c823d44767bffc2fa20fd37343c8fadb3ce",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-4.log"
+    },
+    {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/cycle.ts",
+        "status"
+      ],
+      "exitCode": 0,
+      "logSha256": "3e927f24907cfbb235517413b010cc37d58480b7f7907bbbda88b64fb42f7dd7",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-5.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0,
+      "logSha256": "c630ee010c55382c676b8dce7e477a0f59147e7fef237de276a7422b7e9ae6c3",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-6.log"
+    },
+    {
+      "command": [
+        "pnpm",
+        "qa",
+        "two-goals-v2"
+      ],
+      "exitCode": 0,
+      "logSha256": "b205f503e2e3a7e8817d001d7c738d2c991006dc766eb77a4e318f26323e997a",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-7.log"
+    },
+    {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "--input-type=module",
+        "-e",
+        "import {readFileSync} from 'node:fs'; import {loadMediaRegistry} from './src/artifacts/media.ts'; import {loadCycle} from './src/workflow/store.ts'; import {readBoundRecord} from './src/workflow/evidence.ts'; import {inspectCycleRelease} from './src/workflow/release.ts'; const registry=loadMediaRegistry(); const cycle=loadCycle(process.cwd(),'cycle.9',registry); if(cycle.stage!=='publication-review'||cycle.revision!==13||!cycle.masterDecision||!cycle.release||cycle.publicationDecision)throw new Error('Wrong boundary'); const result=inspectCycleRelease(readBoundRecord(cycle.release),registry,new Date().toISOString()); if(result.uploads.length!==4||result.unknowns.length!==44)throw new Error('Release scope changed'); console.log(JSON.stringify({passed:true,stage:cycle.stage,revision:cycle.revision,deliveries:result.uploads.length,unacceptedUnknowns:result.unknowns.length,publicationAuthorized:false}));"
+      ],
+      "exitCode": 0,
+      "logSha256": "52980a83d5cd276d77ced0c7c85e872f3968e3d6b2c097b7356b523f522cfee4",
+      "scratchLog": "/tmp/magnivis-c9-publication-clean-8.log"
+    }
+  ],
+  "finishedAt": "2026-10-04T22:07:37.368177+00:00",
+  "treeClean": true,
+  "masterSha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+  "passed": true
+}
