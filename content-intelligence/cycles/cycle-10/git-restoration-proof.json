@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-05T13:22:15.254Z",
+  "sourceCommit": "1ad369bb69e7d0fb950a3d9397ae71431413c56e",
+  "method": "Fresh scoped git archive extraction into a temporary directory; no working-tree copying or media regeneration. Native topic and premise validation against restored bytes.",
+  "retainedFilesVerified": 49,
+  "restoredSelection": "craft-escape",
+  "gate": "AHMET — PREMISE REVIEW",
+  "newMediaPayloads": 0,
+  "temporaryDirectory": "/var/folders/hr/qr78bx6j0mqbl15cj3k30n0m0000gn/T/magnivis-cycle10-premise-restore-HqwLDM",
+  "node": "v22.23.3",
+  "remoteBackup": {
+    "status": "blocked-by-automatic-approval-review",
+    "action": "git push origin main",
+    "reason": "External data egress and main-branch mutation; review did not find established trust/explicit payload-send authority for this remote.",
+    "attemptDidNotRun": true,
+    "permissionRequired": true
+  },
+  "nextRequiredOwnerAuthority": "Explicit Cycle10premise decision; remote push is a separate storage permission, not premise or publication approval."
+}
