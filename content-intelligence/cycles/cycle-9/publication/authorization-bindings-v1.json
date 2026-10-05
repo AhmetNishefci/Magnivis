@@ -1,0 +1,223 @@
+{
+  "cycleId": "cycle.9",
+  "recordedAt": "2026-10-05T09:30:37.071Z",
+  "sourceReviewCommit": "1065260590ef8e533bc29d154e5e40c6d215abff",
+  "release": {
+    "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+    "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+  },
+  "releaseTargetSha256": "b63e8dfde1df90650bfe560ab819a3576f91938b00747a8a86536073c68e2827",
+  "decision": {
+    "path": "content-intelligence/cycles/cycle-9/publication/owner-publication-decision-v1.json",
+    "sha256": "0bd6f9f6bb3af7a7b507c1e05976c098597335c9fa03474398601525ec1b7716"
+  },
+  "riskRegister": {
+    "path": "content-intelligence/cycles/cycle-9/publication/risk-register-v1.json",
+    "sha256": "37a05635fe20d6bce8f5a4bc5dcc19a9e8e0d25c2c7952ef3ca2b64a14a3e735"
+  },
+  "scope": "Owner manual release only; no assistant external platform action.",
+  "stage": "authorized",
+  "revision": 14,
+  "nextAction": {
+    "kind": "manual-publication",
+    "gate": null
+  },
+  "bindings": [
+    {
+      "variantId": "two-goals.variant.youtube.v1",
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "variantSha256": "051003c4a07b2d3f391b5612a47ae4eee71f2d04d47563644729174710919918",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/manifest-v1.json",
+        "sha256": "e815c74924341e759ce9c1b316835bf347b44c71c1517f4142d1ee129ab5d41e"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/metadata-v1.json",
+        "sha256": "2824e813a05c15a2333c51c7a3fa4d80684e91a6e3e734a8b3cbeb013f7cdf20"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/youtube/upload-copy-v1.txt",
+        "sha256": "603261e083f2fa6223693bfa04293061f36810754d6ee153e9a564130e3b8aba"
+      },
+      "media": {
+        "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+        "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+            "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923",
+            "sha256": "709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-9/publication/youtube/cover-evidence-v1.json",
+            "sha256": "93b0da1bdffcff0db92a03ccb59a8c937f8ee431caad3c38f721970739662cbc"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-9/publication/youtube/cover-profile-v1.json",
+            "sha256": "5c51529ba98f139050bcbdf60c7dcc50ebcd13fb30d90e95b50fe2169621ea1c"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release"
+    },
+    {
+      "variantId": "two-goals.variant.tiktok.v1",
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "variantSha256": "2124dc05430bc2dc7b5f8c2c4ff7484a55c0f4cd769ae53a4c9f39b4c2cb099d",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/manifest-v1.json",
+        "sha256": "953169fe0f816cfe80c381c411128deaafb86afd09d5213253566a4016eba61c"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/metadata-v1.json",
+        "sha256": "3d2aecc8bdc39e5c16438c1d8c9024dd1a77a1a71746b93bfe74d32fc7a57d24"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/tiktok/upload-copy-v1.txt",
+        "sha256": "75edd19e74ffc2313243bc7ed0d8e2a6180bb22c5c9e77286cfe5d94f6a2ba4e"
+      },
+      "media": {
+        "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+        "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+            "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425",
+            "sha256": "863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-9/publication/tiktok/cover-evidence-v1.json",
+            "sha256": "5cb8fa9ac12116aeff83bf0837d0cf7898f04dd2fb26c738ed7a286c56da1dbd"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-9/publication/tiktok/cover-profile-v1.json",
+            "sha256": "b607c5c8ab601e61e21d5e6992950ae68613c49863faefe47e3a54ab6eaaf896"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release"
+    },
+    {
+      "variantId": "two-goals.variant.instagram.v1",
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "variantSha256": "dbfd347ad6325a9a64c025a86a225f2f0ae2bb3e548ebf1189499aded7e9ca80",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/manifest-v1.json",
+        "sha256": "5e6d5ffb67b968a99221dfd4a5beff555d36fa41d291708cffd836c5b12e81f0"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/metadata-v1.json",
+        "sha256": "97a2ccc71a5b4817c5804f88546bf39a18f413083bdbb7427e569a130f1982ab"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/instagram/upload-copy-v1.txt",
+        "sha256": "bcd442ec358b05ba7fee8e15e28b343a609c1bdb8158d58265c0f9ee01460fa8"
+      },
+      "media": {
+        "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+        "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+            "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923",
+            "sha256": "709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-9/publication/instagram/cover-evidence-v1.json",
+            "sha256": "e2df091bad223829da723fd8268a98786828bf9a75a94de0cbbcb6759a05fda7"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-9/publication/instagram/cover-profile-v1.json",
+            "sha256": "38860b3f8fe8b7dd008296e5bc730036bfa56178f97e99da08c8c245c19e8415"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release"
+    },
+    {
+      "variantId": "two-goals.variant.facebook.v1",
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "variantSha256": "3b0c63b5bde6ab29ddffdb1f10aca4283d8380841e1b3af4c21837cc3d3740a5",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/manifest-v1.json",
+        "sha256": "59887745679cdc697af6bcb99741267ca873edab8f1c8033246c9d5c351b795a"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/metadata-v1.json",
+        "sha256": "a052b38ebe997b76e9d4a2bfec8339e2190b157d6e59e84481a4b8834c031558"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-9/publication/facebook/upload-copy-v1.txt",
+        "sha256": "4d4aa3987282a799d2b1bc25300ff5a3c60c65cbe1dcac9a34937f94df0d8c3a"
+      },
+      "media": {
+        "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+        "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+      },
+      "artifacts": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3",
+            "sha256": "d9cb6ec0cbaa4e04c282f10deb782520f9eb924f4611e0b4e183ed07ba6feea3"
+          }
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425",
+            "sha256": "863536cee2acfd23e74d38941890579db436b8c18210a67a90c3a1c0c946c425"
+          },
+          "presentation": {
+            "path": "content-intelligence/cycles/cycle-9/publication/facebook/cover-evidence-v1.json",
+            "sha256": "29054eaa98d32fd078a7cdf7b51c2ecc23141ad5677135a308e178a0aac738ef"
+          },
+          "profile": {
+            "path": "content-intelligence/cycles/cycle-9/publication/facebook/cover-profile-v1.json",
+            "sha256": "a7bc0f997a8e94eb75e4c554736f53bfc8c49e1e17dbddcbc06ebcbbb2ece4ee"
+          }
+        }
+      ],
+      "readyFor": "owner-manual-release"
+    }
+  ],
+  "acceptedPresentationUnknowns": 44,
+  "acceptedOperationalUnknowns": 6,
+  "mediaCopied": 0,
+  "mediaRegenerated": 0,
+  "externalPlatformActionsPerformed": [],
+  "actualScheduling": null,
+  "actualPublication": null,
+  "analytics": null
+}

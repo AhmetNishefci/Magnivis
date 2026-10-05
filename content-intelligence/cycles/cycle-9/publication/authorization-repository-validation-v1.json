@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-05T09:35:13.833450+00:00",
+  "typecheck": "passed",
+  "lint": "passed",
+  "tests": 483,
+  "testFiles": 52,
+  "check": "passed on full unchanged rerun",
+  "initialAttempt": "482 passed; one unchanged historical Chocolate test exceeded its 5000ms timeout while validations ran concurrently. No test/assertion/configuration changed. Full isolated rerun passed.",
+  "durability": "passed",
+  "recovery": "passed; original Wood Frog HASH_ONLY limitation unchanged",
+  "authorizationValidation": "authorization-validation-v1.json",
+  "packagePreservation": "authorization-package-preservation-v1.json",
+  "secretScan": "authorization-secret-scan-v1.json",
+  "logs": [
+    {
+      "path": "/tmp/c9-authorization-check.log",
+      "sha256": "d106027cba840ff7a99f61c0406f6726b029ae514471c5aad45954f72551bace"
+    },
+    {
+      "path": "/tmp/c9-authorization-check-retry.log",
+      "sha256": "369ef4f40601bdb60bd90f66798969b25afbefee8bcdf3b1473c21baf14c1f97"
+    },
+    {
+      "path": "/tmp/c9-authorization-durable.log",
+      "sha256": "ff44de6e35fafe7bb46ee5739dd74ef1afc5c6aee20c066c83d0e529de8472b5"
+    },
+    {
+      "path": "/tmp/c9-authorization-recovery.log",
+      "sha256": "51fc98eb2e60189241eb03c7d4020daecee75e78d92992d42f9c8eb68e1b1225"
+    }
+  ],
+  "mediaChanged": false,
+  "externalActions": []
+}

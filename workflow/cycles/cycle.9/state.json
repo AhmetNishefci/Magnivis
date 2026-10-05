@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
   "id": "cycle.9",
-  "revision": 13,
+  "revision": 14,
   "authority": {
     "path": "workflow/authorities/cycle-9-start.json",
     "sha256": "01daad2996fe55066bd3344a88ed25f72dbf00c71250d471ab16c081e576ed46"
   },
-  "stage": "publication-review",
+  "stage": "authorized",
   "workInProgress": null,
   "receipts": [
     {
@@ -72,7 +72,10 @@
     "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
     "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
   },
-  "publicationDecision": null,
+  "publicationDecision": {
+    "path": "content-intelligence/cycles/cycle-9/publication/owner-publication-decision-v1.json",
+    "sha256": "0bd6f9f6bb3af7a7b507c1e05976c098597335c9fa03474398601525ec1b7716"
+  },
   "exception": null,
   "observations": [],
   "history": [
@@ -204,6 +207,16 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
         "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+      }
+    },
+    {
+      "revision": 14,
+      "previousSha256": "f8b185e96421913ad0232a624db7fc34538976ffc48dfc13aff13fa89b97fb3a",
+      "event": "owner-decision",
+      "at": "2026-10-05T09:30:37.071Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-9/publication/owner-publication-decision-v1.json",
+        "sha256": "0bd6f9f6bb3af7a7b507c1e05976c098597335c9fa03474398601525ec1b7716"
       }
     }
   ]
