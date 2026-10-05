@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.9",
-  "revision": 14,
+  "revision": 18,
   "authority": {
     "path": "workflow/authorities/cycle-9-start.json",
     "sha256": "01daad2996fe55066bd3344a88ed25f72dbf00c71250d471ab16c081e576ed46"
@@ -77,7 +77,36 @@
     "sha256": "0bd6f9f6bb3af7a7b507c1e05976c098597335c9fa03474398601525ec1b7716"
   },
   "exception": null,
-  "observations": [],
+  "observations": [
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/youtube.json",
+        "sha256": "73ef53d358f6ee658e9ca98ec9abcdfe0fc0e8207941614c2590193c95587f35"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/tiktok.json",
+        "sha256": "4e682020c2a17d5e3687a9ed7cdf042779f56e57e7497071fb0236fc6b2c3203"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/instagram.json",
+        "sha256": "7a9a7baaff79f76c494446dbb290802bf10df801fdd272693a3f79dd89f2cd3e"
+      }
+    },
+    {
+      "kind": "scheduled-owner-reported",
+      "record": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/facebook.json",
+        "sha256": "4c42dd32133e56acb69ea0a334ec770b077d172a180d44e1476998974d5b5d29"
+      }
+    }
+  ],
   "history": [
     {
       "revision": 1,
@@ -217,6 +246,46 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-9/publication/owner-publication-decision-v1.json",
         "sha256": "0bd6f9f6bb3af7a7b507c1e05976c098597335c9fa03474398601525ec1b7716"
+      }
+    },
+    {
+      "revision": 15,
+      "previousSha256": "a1caaddc5e868cbb7aba649446cbbf70bbb3e7e3f23e6abfa6229a49fae99369",
+      "event": "observe",
+      "at": "2026-10-05T12:30:19.401Z",
+      "evidence": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/youtube.json",
+        "sha256": "73ef53d358f6ee658e9ca98ec9abcdfe0fc0e8207941614c2590193c95587f35"
+      }
+    },
+    {
+      "revision": 16,
+      "previousSha256": "9277564a4f2583e472f65e000921c313cd4fd85fc5109f95255a7a32137eaa76",
+      "event": "observe",
+      "at": "2026-10-05T12:30:19.401Z",
+      "evidence": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/tiktok.json",
+        "sha256": "4e682020c2a17d5e3687a9ed7cdf042779f56e57e7497071fb0236fc6b2c3203"
+      }
+    },
+    {
+      "revision": 17,
+      "previousSha256": "0587038e6bd12f586436dbf086d80b590eaa47e0895b1e70f18a47e9de09fb89",
+      "event": "observe",
+      "at": "2026-10-05T12:30:19.401Z",
+      "evidence": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/instagram.json",
+        "sha256": "7a9a7baaff79f76c494446dbb290802bf10df801fdd272693a3f79dd89f2cd3e"
+      }
+    },
+    {
+      "revision": 18,
+      "previousSha256": "e8ca5db2713b0c24f690f84861b106ab589d421d848fc997852f4c8cc5934508",
+      "event": "observe",
+      "at": "2026-10-05T12:30:19.401Z",
+      "evidence": {
+        "path": "content-intelligence/operations/two-goals-scheduling-v1/facebook.json",
+        "sha256": "4c42dd32133e56acb69ea0a334ec770b077d172a180d44e1476998974d5b5d29"
       }
     }
   ]

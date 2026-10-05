@@ -457,3 +457,7 @@ Ahmet explicitly approved canonical `artifacts/masters/two-goals-cycle9-candidat
 ## Cycle #9 — publication authorization recorded
 
 Owner authorized the exact approved V2 and four frozen platform packages for manual release. Journal revision14 is `authorized`; the separate publication decision accepts44 presentation and6 operational uncertainties. Authorization is not scheduling or publication. Manual instructions: `content-intelligence/cycles/cycle-9/publication/manual-release-v1.md`. No media/source/copy/cover mutation or assistant platform actions; Cycle10 remains unstarted. The append-only entry clarification records a copied handoff-label typo without changing decision scope or identity.
+
+## Cycle #9 — owner-reported scheduling
+
+Ahmet reports manual scheduling on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels. Four hash-bound `scheduled-owner-reported` observations bring the authorized journal to revision18; evidence: `content-intelligence/operations/two-goals-scheduling-v1/owner-report.json`. Scheduling is not publication. Scheduling-action time and scheduled date/time/timezone remain unknown, as do publication URLs/IDs/time, processing, actual settings, first comments, native/device presentation and analytics. Exact V2, authorization and entire publication package remain unchanged. No assistant platform action, discovery, editorial-intelligence modification or Cycle10.

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-05T12:35:05.767600+00:00",
+  "typecheck": "passed",
+  "lint": "passed",
+  "testFiles": 52,
+  "tests": 483,
+  "initialAttempt": "One unchanged historical Chocolate test hit the existing 5000ms timeout; 482 passed. Full unchanged isolated rerun passed all483. No assertions/configuration changed.",
+  "workflowReplayRecovery": "workflow-integrity-validation-v1.json; exact recovery no-op",
+  "canonicalDurability": "passed;442 frozen legacy binary paths retained",
+  "historicalRecovery": "passed;227 artifacts/8 deliveries; original WoodFrog HASH_ONLY limitation unchanged",
+  "historicalPreservation": "3473 prior tracked files unchanged except three allowed current-state files; prior document body retained exactly; all38 package hashes unchanged",
+  "diffHygiene": "passed",
+  "secretScan": "scoped-secret-scan-v1.json",
+  "logs": {
+    "/tmp/c9-scheduling-check.log": "84011ff7004b1b8897c77e74bb54a48e472c06d278f5fa15d13f89e35505e435",
+    "/tmp/c9-scheduling-check-retry.log": "b039bb736f196ec1ba56504b8eed2785a1abf6c00422f024a0636fe30e40cfba",
+    "/tmp/c9-scheduling-durable.log": "ff44de6e35fafe7bb46ee5739dd74ef1afc5c6aee20c066c83d0e529de8472b5",
+    "/tmp/c9-scheduling-recovery.log": "51fc98eb2e60189241eb03c7d4020daecee75e78d92992d42f9c8eb68e1b1225"
+  },
+  "publication": null,
+  "analytics": null,
+  "externalActions": []
+}
