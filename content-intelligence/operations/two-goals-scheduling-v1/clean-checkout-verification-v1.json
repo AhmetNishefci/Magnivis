@@ -1,0 +1,67 @@
+{
+  "testedCommit": "c146ccd8b53af9046e717b805e8d60f406f0082c",
+  "checkout": "/private/tmp/magnivis-cycle9-publication-clean-20261005",
+  "method": "Independent full-history no-hardlinks checkout fast-forwarded to scheduling commit; no shared alternates; unchanged locked dependencies.",
+  "checks": [
+    {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "exitCode": 0,
+      "logSha256": "b7e0cd6e7b41ef80d8378dcccc22cb65beb325eeb2753fe227490dbe85acce0d"
+    },
+    {
+      "command": [
+        "pnpm",
+        "artifacts:durable"
+      ],
+      "exitCode": 0,
+      "logSha256": "a45a5f8c09f3d15002bedbbc5f37b9ca3af65f721339298e9784022724a782c9"
+    },
+    {
+      "command": [
+        "pnpm",
+        "recovery:validate"
+      ],
+      "exitCode": 0,
+      "logSha256": "031e9e8f000e3ab9df64dc9366218c823d44767bffc2fa20fd37343c8fadb3ce"
+    },
+    {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/cycle.ts",
+        "status",
+        "cycle.9"
+      ],
+      "exitCode": 0,
+      "logSha256": "70441e67848fd311f7a3331dbf4737ef4acea596ac5c559597f1c36340615aa9"
+    },
+    {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "scripts/resolve-delivery-media.ts",
+        "--authorized",
+        "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+        "content-intelligence/cycles/cycle-9/publication/owner-publication-decision-reference-v1.json"
+      ],
+      "exitCode": 0,
+      "logSha256": "39d2d7f1cac4b8ef33a5e605a64dc92141efd0c98f7df20e7f4a85f6a48f7a69"
+    }
+  ],
+  "passed": true,
+  "checkedAt": "2026-10-05T12:37:08.537959+00:00",
+  "treeClean": true,
+  "revision": 18,
+  "stage": "authorized",
+  "scheduling": "owner-reported only",
+  "publication": null,
+  "externalActions": [],
+  "subsequentCommit": "Proof metadata only; no workflow/media/package changes",
+  "mainUnchanged": "d0e947eed958fb8286d0fb18f4cb61f6d72c1dbb",
+  "mainIntegration": "Separate integration required to place accumulated Cycle9 branch history on main; not performed."
+}
