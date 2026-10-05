@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-05T13:19:29.460Z",
+  "baseMain": "89c1cb83621f1cea41ffcf7a05ccb635fc0525ec",
+  "scope": "New Cycle10 evidence/journal and prospective project navigation only; no runtime changes or production",
+  "node": "v22.23.3",
+  "earlierCycleStatesByteIdentical": [
+    "cycle.4",
+    "cycle.5",
+    "cycle.6",
+    "cycle.7",
+    "cycle.8",
+    "cycle.9"
+  ],
+  "earlierTrackedFilesUnchangedExceptProjectNavigation": true,
+  "cycle9": {
+    "stage": "authorized",
+    "revision": 18,
+    "operationalStatus": "scheduled-owner-reported",
+    "publication": "pending",
+    "analytics": "unknown"
+  },
+  "boundReferencesChecked": 48,
+  "learningDecisionsConsidered": 4,
+  "cycle10": {
+    "stage": "premise-review",
+    "revision": 2,
+    "premiseApproved": false,
+    "productionBegun": false,
+    "publicationAuthorized": false
+  },
+  "ownerTargetSha256": "9a542621b994c43934d5195aaf8ec509d257d65a5ca6f328a94e835c57df86c1",
+  "requiredChecks": {
+    "toolchain": "Node22.23.3/pnpm10.17.1",
+    "check": {
+      "command": "pnpm check",
+      "passed": true,
+      "testFiles": 52,
+      "tests": 483,
+      "typecheck": true,
+      "lint": true,
+      "diffCheck": true
+    },
+    "durability": {
+      "command": "pnpm artifacts:durable",
+      "passed": true,
+      "durableArtifactCount": 731,
+      "canonicalMediaPassed": true,
+      "woodFrogMissingOriginal": "Historical expectation remains missing; accepted replacement separate"
+    },
+    "initialAttempt": {
+      "check": "One historical chocolate-finalization test exceeded default5000ms sandbox run;482others passed. Full unchanged suite passed on unsandboxed retry.",
+      "durability": "tsx IPC pipe listen EPERM under sandbox; exact pnpm command passed unsandboxed."
+    },
+    "visualValidation": "Not applicable: no visuals/media or rendering code changed; production has not begun."
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "cycleId": "cycle.10",
+  "method": "fresh-session-open-world-discovery",
+  "baseMain": "89c1cb83621f1cea41ffcf7a05ccb635fc0525ec",
+  "maximumRounds": 3,
+  "priorPoolsConsumed": 0,
+  "recordTiming": "Searches and inspections were performed in this session. Records retained at capture/collection time; first-pass pool will explicitly be a retrospective reconstruction, not falsely timestamped before source inspection.",
+  "routes": [
+    {
+      "route": "Institutional collection/research discovery",
+      "records": [
+        "broad1-web-results.json"
+      ],
+      "queries": [
+        "site.si.edu surprising discovery history collection mystery",
+        "site.nasa.gov unexpected discovery mission failure investigation",
+        "site.nature.com animal behavior unexpected experiment",
+        "site.nber.org unexpected historical natural experiment"
+      ],
+      "finding": "Over-returned institutional science/failure explainers and general portals. Portia and ichthyosaur investigation arose, but apparent domain breadth did not solve institutional-route concentration."
+    },
+    {
+      "route": "Open history/community questions and experiments",
+      "records": [
+        "broad2-web-results.json"
+      ],
+      "queries": [
+        "strange true event solved \"archive\" \"deception\"",
+        "\"AskHistorians\" \"unexpected\" \"discovery\"",
+        "\"experiment\" \"memory\" \"surprising\" \"confidence\"",
+        "\"invention\" \"accident\" \"impossible\" museum"
+      ],
+      "finding": "Original memory studies and collection-provenance questions appeared. No community post, search snippet or provocative headline treated as verified evidence."
+    },
+    {
+      "route": "Human escape records, sensory questions, commerce and declassified claims",
+      "records": [
+        "broad3-web-results.json"
+      ],
+      "queries": [
+        "historical escape ingenious story ship prisoner museum",
+        "counterintuitive everyday phenomenon question why sound perception",
+        "\"strange\" \"insurance\" \"history\" shipping",
+        "\"mystery\" \"declassified\" \"CIA\" document"
+      ],
+      "finding": "Catalpa, Craft, Hare, Hawkins and prisoner accounts provided human-event routes beyond generic institutional surprise. Auditory illusions and alleged biofield material were noticed without asserting their explanations. Broad commerce query was noisy; later more specific institutional route tested its leads."
+    },
+    {
+      "route": "Focused source and rival inspection",
+      "records": [
+        "focused1-web-results.json",
+        "bodies1-web-results.json",
+        "bodies2-web-results.json",
+        "bodies3-web-results.json",
+        "detail0-web-results.json",
+        "detail1-web-results.json",
+        "detail2-web-results.json",
+        "corroboration-search-web-results.json",
+        "rivals-and-independence-web-results.json",
+        "comparison-bodies-web-results.json",
+        "craft-scholarship-web-results.json",
+        "targeted-history-web-results.json",
+        "brown-locator-web-results.json"
+      ],
+      "queries": [
+        "Ellen William Craft escape bandage signature Running Thousand Miles Freedom primary narrative",
+        "Portia spider detour experiment prey out of sight planning primary study",
+        "Catalpa rescue Georgette American flag international waters source",
+        "execution of planned detours Cross Jackson2016full text",
+        "Catalpa rescue captain Anthony diary1876museum report",
+        "unusual economic history ships insurance coffee house Lloyds missing ship Lutine",
+        "site.loc.gov Ellen Craft1849",
+        "site.docsouth.unc.edu craft summary",
+        "Ellen Craft1849Liberator Boston archive"
+      ],
+      "finding": "Focused queries were agent-generated follow-ups to fresh leads, not owner seeds. Original memoir body altered the assessment from a costume reveal to interlocking tests and near failures. Rival evidence was inspected fairly; full-body access failures do not imply editorial weakness."
+    }
+  ],
+  "triage": [
+    {
+      "id": "craft-escape",
+      "origin": "broad3escape query surfaced Wikipedia Craft; focused search located NPS and primary memoir",
+      "judgment": "Advance to meaningful comparison; no reliance on Wikipedia to support the premise."
+    },
+    {
+      "id": "catalpa-rescue",
+      "origin": "broad3WA museum event",
+      "judgment": "Serious rival; primary routes identified, specialist PDF inspected."
+    },
+    {
+      "id": "spider-detour",
+      "origin": "broad1Nature Portia lead",
+      "judgment": "Serious rival; original abstract inspected, methods access limitation explicit."
+    },
+    {
+      "id": "moral-memory",
+      "origin": "broad2original Nature experiment",
+      "judgment": "Investigate standards/responsibility beyond predictable self-justification."
+    },
+    {
+      "id": "ichthyosaur-nursery",
+      "origin": "broad1Smithsonian investigation",
+      "judgment": "Inspect evidence-changing-explanation, not a solved-all-deaths headline."
+    },
+    {
+      "id": "hypercorrection",
+      "origin": "broad2surprising feedback original papers",
+      "judgment": "Potential useful learning effect; stronger than a confidence slogan, but no absolute gap/payoff demonstrated in this session; not selected on utility alone."
+    },
+    {
+      "id": "coldtiz-hare-hawkins",
+      "origin": "broad3archives/museum escape leads",
+      "judgment": "Individual escapes remain leads; disguises/tunnels not sufficient alone. No claim these leads were fully researched or permanently rejected."
+    },
+    {
+      "id": "lloyds-coffee",
+      "origin": "commerce route then specific Lloyds history search",
+      "judgment": "Origins of insurance, information and pooled risk legitimate. Coffeehouse reveal is fairly foreseeable social gathering evolution; no urgent independent payoff shown for this slot. Lutine treasure exactness conflicts even within returned owner history; not adopted."
+    },
+    {
+      "id": "auditory-illusion",
+      "origin": "broad3sensory/community questions",
+      "judgment": "Shepard-tone and soundless-motion possibilities retain eligibility, but source/method inspections not undertaken; no sound demo used to select."
+    },
+    {
+      "id": "declassified-biofield",
+      "origin": "broad3CIA/community lead",
+      "judgment": "Archiving a translation proves a report existed, not paranormal capability. No adequate selected investigation payoff established; not a conspiracy exclusion."
+    },
+    {
+      "id": "roswell-artifact",
+      "origin": "broad1museum title",
+      "judgment": "403body access; attention-grabbing/declassified title supplies no factual authority, authenticity/story not assessed."
+    },
+    {
+      "id": "space-mishaps",
+      "origin": "broad1NASA failure route",
+      "judgment": "Consequential events legitimate; no new strong concise opportunity established beyond familiar malfunction labels. Current mission uncertainties retained; no claim topic itself too familiar or banned."
+    }
+  ],
+  "sourceAccessFailures": [
+    "UNC primary and summary failed via web; sandbox HTTP DNS unavailable. Gutenberg direct guessed files path failed; actual index link produced a readable primary text transcription.",
+    "Portia PMC returned captcha; EuropePMC failed and Wiley full endpoint redirected to abstract. No full-text claim.",
+    "Catalpa NMA PDF/page and Whaling Museum bulletin failed; association PDF succeeded; log catalogue403. Primary newspaper snippet not body evidence.",
+    "BWHT PDF screenshot cache miss; extracted text inspected, original1849scan uninspected.",
+    "Roswell article403; not used as fact."
+  ],
+  "sourceIndependence": "Gutenberg is a transcription of1860Craft; NPS and scholar often draw from same memoir. Brown letter's earlier date is promising but modern transcription not original scan, and Brown's information source not independent eyewitness proof. Treat source families explicitly. Rivals equally retain their limitations.",
+  "scope": "Preliminary source inspection and editorial comparison only. No claim package, final narration, full story, CreativeDirection or production assets. Manual session adapter, not a paid/provider Content Intelligence run; no fabricated provider usage/envelope.",
+  "analytics": "All current pending-cycle analytics unknown; no new platform data inspected or performance/domain rule inferred.",
+  "poolStoppingQuestion": "Would these opportunities still be strong without animation or source-access differences? Is worthwhile understanding left after disguise, flag, or memory is named? Compare that jointly with pre-answer pull, not a candidate/domain count."
+}
