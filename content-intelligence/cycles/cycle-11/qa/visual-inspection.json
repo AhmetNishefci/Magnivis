@@ -1,0 +1,68 @@
+{
+  "mediaSha256": "cefa95c98accb232b1fb00d3087f74687219200cbbd339275493dd27812d6ff3",
+  "inspectedAt": "2026-10-09T19:42:26.510494+00:00",
+  "passed": true,
+  "method": "Actual image inspection of final mastered-MP4 decoded sheets, plus enlarged decoded final frames; no continuous playback or audio listening claim.",
+  "coverage": {
+    "captionMidpoints": 62,
+    "sceneMidpoints": 10,
+    "motionSamples": 12,
+    "fullTechnicalContactSheetCheckpoints": 116,
+    "enlargedDecodedFrames": [
+      "frame-79-57.9s.png",
+      "frame-90-65.4s.png",
+      "frame-104-75.5s.png"
+    ]
+  },
+  "sourceSheets": [
+    {
+      "path": "qa/vermeer-forgery/contact-sheet.jpg",
+      "sha256": "c41eb421d97504aa430258325142f36c733484e741aaf6ff8f88c07369bb0c82"
+    },
+    {
+      "path": "qa/vermeer-forgery/scene-overview.jpg",
+      "sha256": "36796119dadb29d4791d7ef544a5abbc33ff1971cb62cf24573e032b8b767fd9"
+    },
+    {
+      "path": "qa/vermeer-forgery/motion-progression.jpg",
+      "sha256": "23c3f6a19fc5ca13e2dd09b06b0f5ee53ea136946e285d6b2bd15b8e0e339e6b"
+    },
+    {
+      "path": "qa/vermeer-forgery/captions-1.jpg",
+      "sha256": "f6f4c98de0333a292b2d047191022e721929ea8163ec14d528a3469cc193b387"
+    },
+    {
+      "path": "qa/vermeer-forgery/captions-2.jpg",
+      "sha256": "d1a136cd8313b2cbd5ad5572ef24d26e3108340b9ebf4f6ccaa7c426c8873815"
+    },
+    {
+      "path": "qa/vermeer-forgery/captions-3.jpg",
+      "sha256": "f0a24ee01f283c3975428b67365f2c58631cfeafef4277bc2379b62ab46030d6"
+    },
+    {
+      "path": "qa/vermeer-forgery/captions-4.jpg",
+      "sha256": "c2c38a8872a78be9770ac924ec77aa6a048f524d726f0c907b2161ccab0cb37d"
+    },
+    {
+      "path": "qa/vermeer-forgery/captions-5.jpg",
+      "sha256": "c3556688e95d067402f037e9dbdcf9a647449d66598acfa16187bf6b6ec0ccd4"
+    },
+    {
+      "path": "qa/vermeer-forgery/captions-6.jpg",
+      "sha256": "7b49ae21ac2b48104788a4ab8bce5d6ced6ca7d68e4997d40c84ea3b0b21d396"
+    }
+  ],
+  "findings": [
+    "Essential scene labels and all sampled caption phrases are contained and legible in decoded samples; no observed label overlaps or clipping.",
+    "Two enlarged crack networks distinguish old layers from newer surface; explicitly schematic rather than actual X-ray.",
+    "Resolve shows old canvas separately from newer paint; no false cracked linen support.",
+    "1947 court photograph is dated; legal summary preserves collaboration accusation versus fraud/forgery conviction.",
+    "Motion-progression samples show opening reveal, manufacture, split crack patterns and old-support/new-paint separation; no fabricated historical footage.",
+    "All 62 caption midpoint samples inspected across six enlarged sheets; correct wording and meaningful punctuation."
+  ],
+  "limitations": [
+    "Source disclosures remain secondary, approximately 9px when a 1080px frame is scaled to 360px width.",
+    "Contact sheet establishes progression, not fine-text legibility; enlarged sheets and decoded frames were used for text.",
+    "No continuous subjective playback, human audio listening, real-device/native controls/crop proof, or all-frame geometry assertion."
+  ]
+}

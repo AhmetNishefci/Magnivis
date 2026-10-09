@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T19:44:25.305584+00:00",
+  "baselineCommit": "cf44f9c45d084720ec27bb7423923de4ad54281e",
+  "existingCatalogRowsUnchanged": 896,
+  "appendedCanonicalPayloads": 34,
+  "existingChangedPaths": [
+    "artifacts/media-catalog.json",
+    "docs/ASSET-LICENSES.md",
+    "scripts/production-video-targets.ts",
+    "workflow/cycles/cycle.11/state.json",
+    "workflow/project-state.json"
+  ],
+  "policyBytesUnchanged": [
+    "docs/WORKFLOW-V3.md",
+    "docs/PROJECT-STATE.md"
+  ],
+  "historicalPreservation": "Git diff verifies no tracked prior cycle, media, publication package or operational record changed relative to baseline; asset-license documentation appended only. Full durability validators independently check frozen byte identities.",
+  "productionPreparationRecovery": [
+    "First preparation stopped registering caption sheets because its source-record JSON had not yet been persisted; moved source-report persistence before dependent registration.",
+    "Second preparation stopped provisional evidence validation on non-Z ISO timestamp; normalized only the new evidence timestamp, preserving the inspection record.",
+    "No failed preparation persisted a workflow candidate event. Existing media identities reused without rewriting; resumed preparation completed."
+  ]
+}

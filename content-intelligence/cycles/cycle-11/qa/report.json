@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-09T19:37:10.549Z",
+  "input": "artifacts/masters/vermeer-forgery-cycle11-candidate-v1.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 82.9
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -24.6,
+    "maxVolumeDb": -2.3,
+    "duration": 82.944,
+    "sizeBytes": 39049375,
+    "bitRate": 3766336
+  },
+  "passed": true,
+  "failures": []
+}

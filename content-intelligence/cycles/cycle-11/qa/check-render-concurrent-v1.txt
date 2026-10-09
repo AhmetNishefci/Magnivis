@@ -1,0 +1,78 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/chocolate-production.test.ts (6 tests | 1 failed) 5035ms
+   ❯ Chocolate candidate authority and scientific safeguards (6)
+     × binds owner scope, eight claims and measured story duration while preserving history 5031ms
+ ❯ tests/chocolate-finalization.test.ts (7 tests | 1 failed) 6185ms
+   ❯ Chocolate editorial finalization scope (7)
+     × verifies only eight needed statements and retains final asset approval gate 5808ms
+ ❯ tests/chocolate-direction.test.ts (8 tests | 1 failed) 6460ms
+   ❯ Chocolate exact editorial approval and direction proposal (8)
+     × preserves eight verified statements and requires owner direction approval 5465ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/chocolate-direction.test.ts > Chocolate exact editorial approval and direction proposal > preserves eight verified statements and requires owner direction approval
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/chocolate-direction.test.ts:15:3
+     13| };
+     14| describe('Chocolate exact editorial approval and direction proposal',(…
+     15|   it('preserves eight verified statements and requires owner direction…
+       |   ^
+     16|     expect(validateChocolateDirection()).toMatchObject({passed:true,st…
+     17|       verifiedClaims:8,reserveClaimsUnchanged:34,unresolvedConvenience…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tests/chocolate-finalization.test.ts > Chocolate editorial finalization scope > verifies only eight needed statements and retains final asset approval gate
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/chocolate-finalization.test.ts:16:3
+     14| };
+     15| describe('Chocolate editorial finalization scope', () => {
+     16|   it('verifies only eight needed statements and retains final asset ap…
+       |   ^
+     17|     expect(validateChocolateFinalization()).toMatchObject({passed: tru…
+     18|       preservedReserveClaims: 34, conceptualBeats: 8, packageState: 'r…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  tests/chocolate-production.test.ts > Chocolate candidate authority and scientific safeguards > binds owner scope, eight claims and measured story duration while preserving history
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/chocolate-production.test.ts:16:2
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  3 failed | 49 passed (52)
+      Tests  3 failed | 480 passed (483)
+   Start at  21:35:20
+   Duration  84.45s (tests 90%, import 5%, transform 4%)
+
+ ELIFECYCLE  Test failed. See above for more details.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-09T19:46:24.444576+00:00",
+  "passed": true,
+  "command": "PATH=Node22.23.3 VITEST_MAX_WORKERS=4 pnpm check",
+  "records": [
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/check-render-concurrent-v1.txt",
+      "sha256": "48a0a2f8005ee0c142843e44e820c4af234eb22bc2e2167a1f2340031325baa2",
+      "result": "failed: three 5-second test timeouts during concurrent production"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/check-pre-staging-v1.txt",
+      "sha256": "e3d5dc00bb159c1eb34c4bc6a61bc98e3dea60960c3d4dbe785b9b7f30ffce76",
+      "result": "failed: new canonical media not Git tracked at audit start"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/check-staged-v1.txt",
+      "sha256": "f4f532caf56cd7ed653d96ae265f9897b28c1b5721667795d8b2bb0f1c04692c",
+      "result": "passed: 52 files, 483 tests; typecheck, lint and diff check"
+    }
+  ],
+  "resolution": "No test assertion or timeout changes. Reran with bounded workers after rendering, then staged canonical payloads before the final passing durability-aware test suite.",
+  "testFiles": 52,
+  "tests": 483
+}

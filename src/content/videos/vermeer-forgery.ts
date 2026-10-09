@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/vermeer-forgery.json';
+import asset from '../../../content-intelligence/cycles/cycle-11/content-asset.ready.json';
+import narration from '../../production/narration/vermeer-forgery.json';
+export const vermeerForgery=videoSpecSchema.parse({id:'vermeer-forgery',compositionId:'Magnivis-Vermeer-Forgery',workingTitle:'The forgery that became a defense',titleCandidates:['The forgery that became a defense'],descriptionCandidates:['How material evidence tested Han van Meegeren’s forgery confession.'],hook:asset.script.segments[0]!.text,pillar:'history-stories',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration','silence'],narration:true,narrationCues:narration.cues}});

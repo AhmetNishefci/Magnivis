@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.vermeer-forgery.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "vermeer-forgery",
+    "revision": 1,
+    "sha256": "c8134499e8f06fc150eca42e387113e738154c762ab259909e48d5dffbf3230f"
+  },
+  "contentAsset": {
+    "id": "vermeer-forgery.asset.forgery-defense",
+    "revision": 1,
+    "sha256": "9eb4f10b8e165b28a9bc841f6fcdc5e1a4e7dc884a3ffb013dba3bd359300079"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.11",
+    "reviewSha256": "621c452fc70081a4a44bf5c341af13656194e3b28c3c50f658a522551fb557d0"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/youtube.json",
+      "sha256": "a678cc67a848c3e12724d458502abd388c0dbe8c3eb5d41df58efa6eab79698b"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/tiktok.json",
+      "sha256": "b89b548339f63a4cc72e511bca36f0f59d74159f505c98aaa782f090952092ec"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/instagram.json",
+      "sha256": "1d5983007f9f51aa91500367cbd817e510f00f8361effdee642ff2b998b87e66"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/facebook.json",
+      "sha256": "3bbc38f17d9744071f2934d21d36bb95ac27a23017f11d2cf54560e1ef454254"
+    }
+  ],
+  "approvedScriptSha256": "2b61cdf28fe15f81bf7e136781bb9dd1dc01a3ef23b5b1bf5500d69f739cc734",
+  "creativeDirection": {
+    "id": "creative-direction.vermeer-forgery.v1",
+    "revision": 1,
+    "sha256": "6b73733f7864aa358004408525179deca0ae2025924476814c12a2cd05873077"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "vermeer-forgery.claim.courtroom-myth",
+    "vermeer-forgery.claim.hero-motive"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 82.9
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "vermeer.production.1",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.1",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.1",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.1"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.paradox"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 148
+      },
+      "sceneType": "defense-paradox",
+      "objective": "Immediate defense paradox, person identified through authentic1947court photograph, not an invented event.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.2",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.2",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.2",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.2"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.arrest"
+      ],
+      "frames": {
+        "start": 148,
+        "end": 492
+      },
+      "sceneType": "collaboration-suspicion",
+      "objective": "Explain serious collaboration suspicion and intermediary sale; no fake painting substitution for Adulteress.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.3",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.3",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.3",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.3"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.resistance"
+      ],
+      "frames": {
+        "start": 492,
+        "end": 751
+      },
+      "sceneType": "confession-is-a-claim",
+      "objective": "Present a defense claim, not proof; authorship question remains open.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.4",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.4",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.4",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.4"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.acceptance"
+      ],
+      "frames": {
+        "start": 751,
+        "end": 1096
+      },
+      "sceneType": "missing-early-vermeer",
+      "objective": "Explain why a gap and expert endorsement made Emmaus plausible; distinguish it from Göring’s painting.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.5",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.5",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.5",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.5"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.manufacture"
+      ],
+      "frames": {
+        "start": 1096,
+        "end": 1376
+      },
+      "sceneType": "manufactured-age",
+      "objective": "Visualize old support plus new hardened paint, then mechanically generated cracks, without reenactment.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.6",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.6",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.6",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.6"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.chemistry"
+      ],
+      "frames": {
+        "start": 1376,
+        "end": 1644
+      },
+      "sceneType": "material-test",
+      "objective": "Differentiate material evidence from confession and link comparison to studio samples.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.7",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.7",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.7",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.7"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.xray"
+      ],
+      "frames": {
+        "start": 1644,
+        "end": 1871
+      },
+      "sceneType": "two-crack-networks",
+      "objective": "Show two schematic crack networks in separate layers; never portray as actual scan.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.8",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.8",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.8",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.8"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.authorship",
+        "vermeer-forgery.claim.manufacture"
+      ],
+      "frames": {
+        "start": 1871,
+        "end": 2064
+      },
+      "sceneType": "old-support-new-paint",
+      "objective": "Resolve support-versus-paint age and authorship through combined evidence.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.9",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.9",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.9",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.9"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.outcome"
+      ],
+      "frames": {
+        "start": 2064,
+        "end": 2359
+      },
+      "sceneType": "culpable-outcome",
+      "objective": "Give precise conviction/year/sentence, no innocence or heroic vindication.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    },
+    {
+      "id": "vermeer.production.10",
+      "sourceVisualPlanId": "vermeer-forgery.asset.forgery-defense.visual.10",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.10",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.10"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.acceptance"
+      ],
+      "frames": {
+        "start": 2359,
+        "end": 2487
+      },
+      "sceneType": "attribution-payoff",
+      "objective": "Return the perceived masterpiece to its true author; understanding of attribution completes the paradox.",
+      "onScreenText": [],
+      "animationIntent": "Meaningful state changes: identity reversal, expert expectation, old support/new paint separation, synthetic hardening and mechanical cracks, two layer networks, material comparison and accountable conviction. No decorative loops or invented historic events.",
+      "transitionIntent": "Motivated image-to-material scale change and layer separation; authentic photo dated and diagrams visibly modern.",
+      "audioIntent": "Measured af_heart connected semantic units and silence."
+    }
+  ],
+  "assets": [
+    {
+      "id": "vermeer.original-graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original explanatory layer/crack/legal models",
+        "rights": "Project-owned artwork",
+        "notes": "Schematic models, not actual historical scans or documents.",
+        "evidence": "content-intelligence/cycles/cycle-11/rights-provenance.json"
+      }
+    },
+    {
+      "id": "vermeer.archives",
+      "kind": "archival",
+      "path": "public/visuals/vermeer-forgery",
+      "provenance": {
+        "origin": "Nationaal Archief photographs by Bram Wisman and Koos Raucamp / Anefo",
+        "rights": "Explicit CC0 1.0dedication on inspected file pages",
+        "notes": "Current Commons crops;1947court photo and1945Emmaus reproduction, no fake Adulteress image.",
+        "evidence": "content-intelligence/cycles/cycle-11/archival-assets.json"
+      }
+    },
+    {
+      "id": "vermeer.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource/Manrope",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing licensed font.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "vermeer.narration",
+      "kind": "audio",
+      "path": "public/audio/vermeer-forgery/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache2.0local model terms",
+        "notes": "No paid API.",
+        "evidence": "src/production/narration/vermeer-forgery.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/vermeer-forgery.en.vtt",
+    "captionPlanId": "caption-plan.vermeer-forgery.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "aa62efc85b7306cb78cc5e87310f6698d72350f0db9e159805d427b49eb58da8",
+    "generatorId": "generator.vermeer-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full actual media probe/decode and exact script/caption reconstruction.",
+    "Every caption midpoint, opening and critical diagram state browser measurement and decoded inspection.",
+    "Correct distinction of Emmaus, Adulteress,1945suspicion,1947court photo and conviction.",
+    "Synthetic binder and crack-network models visibly explanatory; no fabricated scans or demonstration.",
+    "Actual mix/ASR and signal audit; pronunciation/prosody owner listening judgment.",
+    "Four provisional profile preflights, no invented mobile safety.",
+    "Stop AHMET — MASTER REVIEW; no publication preparation."
+  ]
+}

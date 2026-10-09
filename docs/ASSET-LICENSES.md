@@ -198,3 +198,12 @@ Cycle #10 V2 also presents the unchanged original newspaper crops `content-intel
 Cycle #10 V3 reuses the exact V2 narration, public-domain portraits and newspaper crops, and Manrope font under their existing provenance. New connected signature-line, bound-hand adaptation and Baltimore assurance-question graphics are original SVG/CSS in `src/components/CraftDocumentTheatreV3.tsx`; the interrupted line is expressly explanatory, not a reconstructed physical gate. No new archival acquisition, synthetic actor, historical footage, third-party asset or music is introduced. V2 media and licensing records remain preserved.
 
 Cycle #10 publication cover V1: `artifacts/covers/craft-escape-cover-v1.png` is original code-authored typography/layout (`src/craft-cover-index.tsx`) using existing SIL-OFL Manrope and the already registered public-domain Ellen Craft1860 frontispiece and William Craft1872 engraving from `public/visuals/craft-escape/`. Later portrait dates are disclosed on the cover; no new historical scene or AI image. Native TikTok/Facebook cover reference is unchanged canonical V3 QA frame2313 (77.1s); its original archival licensing and master identity remain intact. No new audio/video or license transfer.
+
+
+## Cycle #11 — Han van Meegeren candidate V1
+
+- `public/visuals/vermeer-forgery/court.jpg`: Bram Wisman / Anefo, 29 October1947, Nationaal Archief934-6704. Current Commons crop, explicit CC0 1.0dedication. Source and exact hash: `content-intelligence/cycles/cycle-11/archival-assets.json`. A dated court photograph, never1945arrest footage or reenactment.
+- `public/visuals/vermeer-forgery/emmaus.jpg`: Koos Raucamp / Anefo, October1945photograph of van Meegeren’s1937Emmaus painting, Nationaal Archief133-1145. Current Commons straightened reproduction, explicit CC0 1.0dedication. Same hash-bound provenance record. It is not the Adulteress painting sold to Göring.
+- Original paint/support layers, schematic crack networks, material-comparison shapes and modern legal summaries: Magnivis-owned explanatory artwork; no actual scan, recovered paper or historical scene implied.
+- Existing pinned Manrope400/600, SIL OFL1.1; existing local Kokoro82Maf_heart under established Apache2.0model terms. Exact font/model/output bindings accompany production. Narration and silence; no additional music, sound library or generated historical image.
+- Scholarly and period reporting inspected for research only; no thesis/report PDF or copyrighted scientific figure reused as a production asset.

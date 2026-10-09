@@ -1,0 +1,347 @@
+{
+  "id": "vermeer-forgery.asset.forgery-defense",
+  "revision": 1,
+  "knowledgePackageId": "vermeer-forgery",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand how a gap in attribution made the fakes persuasive and how separating old support from new paint tested the confession.",
+  "storyAngle": "The forgery defense required independent proof of modern manufacture; old canvas and expert expectations concealed new paint.",
+  "hookId": "vermeer-forgery.hook.defense",
+  "selectedClaimIds": [
+    "vermeer-forgery.claim.paradox",
+    "vermeer-forgery.claim.arrest",
+    "vermeer-forgery.claim.resistance",
+    "vermeer-forgery.claim.acceptance",
+    "vermeer-forgery.claim.manufacture",
+    "vermeer-forgery.claim.chemistry",
+    "vermeer-forgery.claim.xray",
+    "vermeer-forgery.claim.authorship",
+    "vermeer-forgery.claim.outcome"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 55,
+    "maximum": 160
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.1",
+        "type": "factual",
+        "text": "To defend himself, this painter had to prove his masterpiece was a fake.",
+        "claimIds": [
+          "vermeer-forgery.claim.paradox"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.2",
+        "type": "factual",
+        "text": "In 1945, Han van Meegeren was arrested on suspicion of collaboration. A supposed Vermeer had reached Hermann Göring, a leading Nazi, through an art dealer.",
+        "claimIds": [
+          "vermeer-forgery.claim.arrest"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.3",
+        "type": "factual",
+        "text": "His defense was that he had painted it himself. But some experts resisted believing that their celebrated Vermeers were forgeries.",
+        "claimIds": [
+          "vermeer-forgery.claim.paradox",
+          "vermeer-forgery.claim.resistance"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.4",
+        "type": "factual",
+        "text": "He had exploited a gap in Vermeer’s known early work. Religious paintings filled what experts expected to find. A prominent scholar endorsed one; a museum bought it.",
+        "claimIds": [
+          "vermeer-forgery.claim.acceptance"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.5",
+        "type": "factual",
+        "text": "He used old canvases, then heated modern resin-based paint until it hardened. Cracking that surface made new paint look centuries old.",
+        "claimIds": [
+          "vermeer-forgery.claim.manufacture"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.6",
+        "type": "factual",
+        "text": "But court-appointed examiners tested the materials. They found evidence of modern synthetic resin, matching materials from his studio.",
+        "claimIds": [
+          "vermeer-forgery.claim.chemistry"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.7",
+        "type": "factual",
+        "text": "X-rays revealed another problem: separate crack patterns in the old layers underneath and the newer painting above.",
+        "claimIds": [
+          "vermeer-forgery.claim.xray"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.8",
+        "type": "factual",
+        "text": "The evidence supported his confession. An old canvas did not make the painting an old master.",
+        "claimIds": [
+          "vermeer-forgery.claim.authorship",
+          "vermeer-forgery.claim.manufacture"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.9",
+        "type": "factual",
+        "text": "The collaboration case fell away. The fraud did not. In 1947, he was convicted of fraud and forgery, and sentenced to one year.",
+        "claimIds": [
+          "vermeer-forgery.claim.outcome"
+        ]
+      },
+      {
+        "id": "vermeer-forgery.asset.forgery-defense.script.10",
+        "type": "factual",
+        "text": "He had not sold a Vermeer. He had sold the belief that it was one.",
+        "claimIds": [
+          "vermeer-forgery.claim.paradox",
+          "vermeer-forgery.claim.acceptance"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.1",
+      "label": "proof-1",
+      "purpose": "Immediate defense paradox, person identified through authentic1947court photograph, not an invented event.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.1"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.2",
+      "label": "proof-2",
+      "purpose": "Explain serious collaboration suspicion and intermediary sale; no fake painting substitution for Adulteress.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.2"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.3",
+      "label": "proof-3",
+      "purpose": "Present a defense claim, not proof; authorship question remains open.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.3"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.4",
+      "label": "proof-4",
+      "purpose": "Explain why a gap and expert endorsement made Emmaus plausible; distinguish it from Göring’s painting.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.4"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.5",
+      "label": "proof-5",
+      "purpose": "Visualize old support plus new hardened paint, then mechanically generated cracks, without reenactment.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.5"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.6",
+      "label": "proof-6",
+      "purpose": "Differentiate material evidence from confession and link comparison to studio samples.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.6"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.7",
+      "label": "proof-7",
+      "purpose": "Show two schematic crack networks in separate layers; never portray as actual scan.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.7"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.8",
+      "label": "proof-8",
+      "purpose": "Resolve support-versus-paint age and authorship through combined evidence.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.8"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.9",
+      "label": "proof-9",
+      "purpose": "Give precise conviction/year/sentence, no innocence or heroic vindication.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.9"
+      ]
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.beat.10",
+      "label": "proof-10",
+      "purpose": "Return the perceived masterpiece to its true author; understanding of attribution completes the paradox.",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.10"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.1",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.1",
+      "objective": "Immediate defense paradox, person identified through authentic1947court photograph, not an invented event.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.1"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.paradox"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.2",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.2",
+      "objective": "Explain serious collaboration suspicion and intermediary sale; no fake painting substitution for Adulteress.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.2"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.arrest"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.3",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.3",
+      "objective": "Present a defense claim, not proof; authorship question remains open.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.3"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.resistance"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.4",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.4",
+      "objective": "Explain why a gap and expert endorsement made Emmaus plausible; distinguish it from Göring’s painting.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.4"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.acceptance"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.5",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.5",
+      "objective": "Visualize old support plus new hardened paint, then mechanically generated cracks, without reenactment.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.5"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.manufacture"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.6",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.6",
+      "objective": "Differentiate material evidence from confession and link comparison to studio samples.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.6"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.chemistry"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.7",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.7",
+      "objective": "Show two schematic crack networks in separate layers; never portray as actual scan.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.7"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.xray"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.8",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.8",
+      "objective": "Resolve support-versus-paint age and authorship through combined evidence.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.8"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.authorship",
+        "vermeer-forgery.claim.manufacture"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.9",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.9",
+      "objective": "Give precise conviction/year/sentence, no innocence or heroic vindication.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.9"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.outcome"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    },
+    {
+      "id": "vermeer-forgery.asset.forgery-defense.visual.10",
+      "narrativeBeatId": "vermeer-forgery.asset.forgery-defense.beat.10",
+      "objective": "Return the perceived masterpiece to its true author; understanding of attribution completes the paradox.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "vermeer-forgery.asset.forgery-defense.script.10"
+      ],
+      "claimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.acceptance"
+      ],
+      "notes": "Authentic1947court photograph clearly dated;1937Emmaus identified separately from Adulteress. Modern legal summary cards never imitated archival papers. Original layer and crack models visibly labeled explanatory, not actual microscopy or X-ray. No synthetic historical people, dialogue, courtroom painting, threats or magical single-test proof."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Current Kokoro af_heart; direct thoughtful connected delivery, no villain voice or triumphalism.",
+    "pronunciationNotes": [
+      "Han van Meegeren: Dutch approximate Hahn vun MAY-ghuh-run; Vermeer: vur-MEER; Hermann Göring: German approximate HAIR-mahn GUR-ing. Preserve proper-name spelling in script and captions; audit actual output."
+    ]
+  },
+  "editorialStatus": "editorial-review"
+}

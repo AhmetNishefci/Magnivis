@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.11",
+  "topicCandidateId": "vermeer-forgery",
+  "enteredAt": "2026-10-09T19:18:43.239Z",
+  "reviewer": "Codex internal evidence review; not owner factual approval",
+  "premiseAlignment": {
+    "selectionSha256": "77620e8d4ecf32d85c5c4c99e2ea82a6f75b53728177c1e5fc3222f54ed945d4",
+    "preservesPublishingOpportunity": true,
+    "rationale": "Contemporary reporting confirms the defense paradox and distinct later conviction; direct court-examiner report gives substantial material payoff beyond a confession. Omitted dramatic trial myths are unnecessary to premise."
+  },
+  "packageSha256": "8c4f48b94a42c276858ba075631f2bf40ce191d1ec47c44417c898a8ccce4d41",
+  "assetSha256": "079274ef1ff825c75f7660e35886f5d4703e1f54582a6bd405d3c05a40cb1f1d",
+  "scriptSha256": "2b61cdf28fe15f81bf7e136781bb9dd1dc01a3ef23b5b1bf5500d69f739cc734",
+  "inspections": [
+    {
+      "sourceId": "source.vermeer-forgery.examiners",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Chemisch Weekblad45, pp269–277; PDFpp3–8 §§1–2 and technical findings"
+      ],
+      "supportsClaimIds": [
+        "vermeer-forgery.claim.manufacture",
+        "vermeer-forgery.claim.chemistry",
+        "vermeer-forgery.claim.xray",
+        "vermeer-forgery.claim.authorship"
+      ],
+      "limitations": [
+        "Methods and observations belong to the eight examined paintings; do not generalize every fake or reproduce later simplified X-ray claims.",
+        "Report combines van Meegeren’s explanation with experimental confirmation; pigment tests alone did not date these paintings.",
+        "Some color reactions alone were insufficient; isolated binder, optical comparison, cross-sections and material comparisons formed the evidence."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-11/research/examiners-inspection.json",
+        "sha256": "ee5ff9688d2b9605172b409b004b16d8465ef034324127acd87ad1cb0893d900"
+      },
+      "sourceQualityRationale": "Report by two court-appointed examiners, contemporary to the investigation. Dutch OCR checked against parsed passages; summaries translated, no purported courtroom transcript."
+    },
+    {
+      "sourceId": "source.vermeer-forgery.met",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Printedpp247–252; PDFpp7–12, especially missing oeuvre, Italian influence, Bredius and Miedl passages"
+      ],
+      "supportsClaimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.arrest",
+        "vermeer-forgery.claim.acceptance"
+      ],
+      "limitations": [
+        "1968 retrospective account is not a contemporaneous interrogation transcript.",
+        "Psychological motives, exact dialogue, cobalt-blue shortcut and universal statements not adopted."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-11/research/met-inspection.json",
+        "sha256": "1d52b9344160b1ee41d63517ab7cc8b287e73459185691393e667258c363cfa4"
+      },
+      "sourceQualityRationale": "Art historian who interrogated intermediary Miedl; specialist retrospective account. His own interrogation is participant-linked; other reconstruction is later interpretation."
+    },
+    {
+      "sourceId": "source.vermeer-forgery.tummers",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Chapter1 printedpp18–22, notes4–16"
+      ],
+      "supportsClaimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.arrest",
+        "vermeer-forgery.claim.resistance",
+        "vermeer-forgery.claim.acceptance",
+        "vermeer-forgery.claim.chemistry"
+      ],
+      "limitations": [
+        "Secondary legal description uses treason broadly; narration instead says suspicion of collaboration.",
+        "Painting during the trial denotes the extended1945–47 proceedings, not proven painting in1947courtroom.",
+        "Some experts rejected the work; never claim unanimous acceptance."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-11/research/tummers-inspection.json",
+        "sha256": "176e593507de952ba67090b15f91f6c4521f3c9d1d423e08f397105303a42929"
+      },
+      "sourceQualityRationale": "Footnoted specialist research separating period criticism, material evidence, later claims and disputed retrospection."
+    },
+    {
+      "sourceId": "source.vermeer-forgery.nrc",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Article body paragraphs1–7, webparsed lines94–102"
+      ],
+      "supportsClaimIds": [
+        "vermeer-forgery.claim.authorship",
+        "vermeer-forgery.claim.outcome"
+      ],
+      "limitations": [
+        "OCR names/punctuation may be imperfect; exact dialogue excluded.",
+        "Emmaus itself was time-barred; do not say every forgery was a count in conviction."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-11/research/nrc-inspection.json",
+        "sha256": "134c7eb8a8b1eca9ac0187483b4f0cf00b5a6645a4cd27e413dfac741aa2fb2b"
+      },
+      "sourceQualityRationale": "Same-day court reporting quotes verdict descriptions. Original court judgment not acquired; archive OCR is reporting rather than certified transcript."
+    },
+    {
+      "sourceId": "source.vermeer-forgery.time46",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Article concluding paragraphs; webparsed lines100–103"
+      ],
+      "supportsClaimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.outcome"
+      ],
+      "limitations": [
+        "Reported legal status, not original dismissal order; patriotic self-presentation is his claim, not established motive."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-11/research/time46-inspection.json",
+        "sha256": "d3e95cd882f0428cb19cf9fb621dc932cc3c62820ea86024b53ef3acb44534c3"
+      },
+      "sourceQualityRationale": "Near-contemporary public reporting on changing legal position, cross-checked with later verdict coverage."
+    },
+    {
+      "sourceId": "source.vermeer-forgery.time47",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Actual historical article at webparsed lines102–109, beneath unrelated modern promotional material"
+      ],
+      "supportsClaimIds": [
+        "vermeer-forgery.claim.paradox",
+        "vermeer-forgery.claim.arrest",
+        "vermeer-forgery.claim.outcome"
+      ],
+      "limitations": [
+        "Unrelated promotional FAQ preceding the actual article excluded; identity anchored to historical body and date.",
+        "Reported dialogue, money, authority count and psychological/motive claims excluded."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-11/research/time47-inspection.json",
+        "sha256": "a278725ed5c6f480b852e014e5eb85fcc2c4d8269848be64ec8b2ffa9b9372b0"
+      },
+      "sourceQualityRationale": "Contemporary trial reporting corroborates accusation, laboratory evidence and one-year sentence."
+    },
+    {
+      "sourceId": "source.vermeer-forgery.archive45",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Photograph133-1144 metadata, date1945-10, description"
+      ],
+      "supportsClaimIds": [],
+      "limitations": [
+        "Metadata supports a1945demonstration, not an exact start/end date or courtroom venue. Photograph inspected via repository-independent archive page; no production use planned."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-11/research/archive45-inspection.json",
+        "sha256": "0a4f4e51bc16ebd9db023891a32653853c25959acaf7dbc092bc5854b0d043be"
+      },
+      "sourceQualityRationale": "Institutional metadata for an actual period photograph of demonstration painting."
+    }
+  ],
+  "claims": [
+    {
+      "id": "vermeer-forgery.claim.paradox",
+      "statementSha256": "368bfa6aca90208e1da917b0251ba29f6867e82ab7a2543fc2bde954b1d59753",
+      "disposition": "verify",
+      "rationale": "Collaboration suspicion and later fraud prosecution are distinct; confession alone did not establish authorship or innocence.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.met",
+          "locator": "Printedpp247–252; PDFpp7–12, especially missing oeuvre, Italian influence, Bredius and Miedl passages",
+          "assessment": "Collaboration suspicion and later fraud prosecution are distinct; confession alone did not establish authorship or innocence.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.tummers",
+          "locator": "Chapter1 printedpp18–22, notes4–16",
+          "assessment": "Collaboration suspicion and later fraud prosecution are distinct; confession alone did not establish authorship or innocence.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.time46",
+          "locator": "Article concluding paragraphs; webparsed lines100–103",
+          "assessment": "Collaboration suspicion and later fraud prosecution are distinct; confession alone did not establish authorship or innocence.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.time47",
+          "locator": "Actual historical article at webparsed lines102–109, beneath unrelated modern promotional material",
+          "assessment": "Collaboration suspicion and later fraud prosecution are distinct; confession alone did not establish authorship or innocence.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.arrest",
+      "statementSha256": "eafa5287ade4823c735c410b4eebdf11eee180e72532611995a215c5f4db085a",
+      "disposition": "verify",
+      "rationale": "Use suspicion of collaboration, not a fabricated specific treason statute, death sentence, execution deadline or direct personal sale to Göring.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.met",
+          "locator": "Printedpp247–252; PDFpp7–12, especially missing oeuvre, Italian influence, Bredius and Miedl passages",
+          "assessment": "Use suspicion of collaboration, not a fabricated specific treason statute, death sentence, execution deadline or direct personal sale to Göring.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.tummers",
+          "locator": "Chapter1 printedpp18–22, notes4–16",
+          "assessment": "Use suspicion of collaboration, not a fabricated specific treason statute, death sentence, execution deadline or direct personal sale to Göring.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.time47",
+          "locator": "Actual historical article at webparsed lines102–109, beneath unrelated modern promotional material",
+          "assessment": "Use suspicion of collaboration, not a fabricated specific treason statute, death sentence, execution deadline or direct personal sale to Göring.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.resistance",
+      "statementSha256": "ced490780b4d9860f425b30d4172c1a0828bd8a24b0ac3951ae0b1a3a32265a5",
+      "disposition": "verify",
+      "rationale": "Not all experts accepted every painting. No invented dialogue, universal agreement or private emotions.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.tummers",
+          "locator": "Chapter1 printedpp18–22, notes4–16",
+          "assessment": "Not all experts accepted every painting. No invented dialogue, universal agreement or private emotions.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.acceptance",
+      "statementSha256": "cbdd8f873b54baaf41313913fd0509f667acb61f6ee0f3231907809fea459ff4",
+      "disposition": "verify",
+      "rationale": "Specialist historical interpretation, expressed as explanatory account rather than measured psychology. Emmaus is distinct from Adulteress sold to Göring; precise acquisition/accession differences avoided.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.met",
+          "locator": "Printedpp247–252; PDFpp7–12, especially missing oeuvre, Italian influence, Bredius and Miedl passages",
+          "assessment": "Specialist historical interpretation, expressed as explanatory account rather than measured psychology. Emmaus is distinct from Adulteress sold to Göring; precise acquisition/accession differences avoided.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.tummers",
+          "locator": "Chapter1 printedpp18–22, notes4–16",
+          "assessment": "Specialist historical interpretation, expressed as explanatory account rather than measured psychology. Emmaus is distinct from Adulteress sold to Göring; precise acquisition/accession differences avoided.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.manufacture",
+      "statementSha256": "f33e36221c73f68d2fb1ca7f28330994c1565775ef02b7a2fe7e09b6a6e60176",
+      "disposition": "verify",
+      "rationale": "His account was investigated and experimentally checked; no detailed recipe, exact temperatures or claim baking alone created cracks.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.examiners",
+          "locator": "Chemisch Weekblad45, pp269–277; PDFpp3–8 §§1–2 and technical findings",
+          "assessment": "His account was investigated and experimentally checked; no detailed recipe, exact temperatures or claim baking alone created cracks.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.chemistry",
+      "statementSha256": "ef7d66f7d29c87e61358be43b264f75c8be6e14fed77a029da7afe951fa8c145",
+      "disposition": "verify",
+      "rationale": "Not one magical spot-test: simple color reactions alone were insufficient. Binder isolation, microscopy, optical comparison and cross-section work contributed.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.examiners",
+          "locator": "Chemisch Weekblad45, pp269–277; PDFpp3–8 §§1–2 and technical findings",
+          "assessment": "Not one magical spot-test: simple color reactions alone were insufficient. Binder isolation, microscopy, optical comparison and cross-section work contributed.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.tummers",
+          "locator": "Chapter1 printedpp18–22, notes4–16",
+          "assessment": "Not one magical spot-test: simple color reactions alone were insufficient. Binder isolation, microscopy, optical comparison and cross-section work contributed.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.xray",
+      "statementSha256": "cf8cc992bf3330434ca2f0a6ea427635f01e33f77d5d2e95183d95b5049ccbc3",
+      "disposition": "verify",
+      "rationale": "Faithful to original report, not RKD’s simpler shorthand. Show explanatory model, not invented archival X-ray; schematic paths not exact crack geometry.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.examiners",
+          "locator": "Chemisch Weekblad45, pp269–277; PDFpp3–8 §§1–2 and technical findings",
+          "assessment": "Faithful to original report, not RKD’s simpler shorthand. Show explanatory model, not invented archival X-ray; schematic paths not exact crack geometry.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.authorship",
+      "statementSha256": "d3ee5c34e6dac2d104f624cf3c81a0b5022928abf23dfaaad1c8768b703b87cb",
+      "disposition": "verify",
+      "rationale": "Examiners conclude could be his hand from combined evidence; not a unique chemical fingerprint or sole method identifying a person.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.examiners",
+          "locator": "Chemisch Weekblad45, pp269–277; PDFpp3–8 §§1–2 and technical findings",
+          "assessment": "Examiners conclude could be his hand from combined evidence; not a unique chemical fingerprint or sole method identifying a person.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.nrc",
+          "locator": "Article body paragraphs1–7, webparsed lines94–102",
+          "assessment": "Examiners conclude could be his hand from combined evidence; not a unique chemical fingerprint or sole method identifying a person.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.outcome",
+      "statementSha256": "0f71c7c9bc26c18924829fd4d454121b75f3f411469a5a881cc96935f3049e33",
+      "disposition": "verify",
+      "rationale": "Broad English labels summarize verdict acts. No innocence, anti-Nazi heroism, conviction for all fakes, or claim sentence was served.",
+      "evidence": [
+        {
+          "sourceId": "source.vermeer-forgery.time46",
+          "locator": "Article concluding paragraphs; webparsed lines100–103",
+          "assessment": "Broad English labels summarize verdict acts. No innocence, anti-Nazi heroism, conviction for all fakes, or claim sentence was served.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.time47",
+          "locator": "Actual historical article at webparsed lines102–109, beneath unrelated modern promotional material",
+          "assessment": "Broad English labels summarize verdict acts. No innocence, anti-Nazi heroism, conviction for all fakes, or claim sentence was served.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.vermeer-forgery.nrc",
+          "locator": "Article body paragraphs1–7, webparsed lines94–102",
+          "assessment": "Broad English labels summarize verdict acts. No innocence, anti-Nazi heroism, conviction for all fakes, or claim sentence was served.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.courtroom-myth",
+      "statementSha256": "b3329181225467f9a136700c3da671b0e0edf7804307e49037dacf7cbe0c01b0",
+      "disposition": "exclude",
+      "rationale": "Unsupported composite dramatic retelling; period photo places demonstration in1945. Excluded.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "vermeer-forgery.claim.hero-motive",
+      "statementSha256": "082837c5abeb38982f9b213723c26f4c5c804ea1bf6ae5acc885a537c56a5d10",
+      "disposition": "exclude",
+      "rationale": "Participant self-presentation not verified motive; criminal fraud and non-Nazi victims retained.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    }
+  ],
+  "misconceptionSafeguards": [
+    "Confession is a claim until corroborated; narrative says evidence supported it.",
+    "Collaboration suspicion and final fraud/forgery conviction distinct; no exoneration of moral or political character.",
+    "No heroic motive, execution deadline, fabricated dialogue or1947courtroom demonstration.",
+    "Emmaus is not Adulteress; named art shown only for its own role.",
+    "Modern resin evidence combines methods; X-ray model shows distinct layer networks, not invented actual scan.",
+    "Some experts resisted while others had earlier doubts; no universal blindness.",
+    "Rousseau1968retrospection and Tummers2009interpretation differentiated from1949examiner evidence and1946/1947reporting.",
+    "Original verdict and dismissal order not acquired after stronger primary report access; precise statute/charge labels in reporting notes only."
+  ],
+  "comprehensionReview": "Cold viewer learns why supposed cultural-treasure sale raised collaboration suspicion, why false attribution was credible, how old support can conceal newer paint, and why proving forgery still leaves fraud. No specialist connoisseurship or chemistry vocabulary required.",
+  "rightsReview": "Two inspected archival photographs under explicit Nationaal Archief CC0 dedication, original explanatory graphics, existing OFL Manrope, established local Apache2.0Kokoro. No scholarly figures/scans reused in production; inspected research is consultation-only.",
+  "careAssessment": {
+    "state": "routine",
+    "rationale": "Historical criminal/Nazi context treated without glamorization, invented danger or rehabilitating culprit. Strong primary technical and period legal reporting support bounded wording; no unresolved central conflict or rights exception."
+  },
+  "exceptionalConditions": []
+}

@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-09T19:36:40.200Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/vermeer-forgery-render-v1.mp4",
+    "sha256": "ec26b8da998b0b3e76e33448df5a53860e3f1a9d22e6fe1010a3e8df92cc9d39",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/vermeer-forgery-cycle11-candidate-v1.mp4",
+    "sha256": "cefa95c98accb232b1fb00d3087f74687219200cbbd339275493dd27812d6ff3"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.44",
+    "input_tp": "-4.60",
+    "input_lra": "2.90",
+    "input_thresh": "-33.84",
+    "output_i": "-19.03",
+    "output_tp": "-2.00",
+    "output_lra": "2.90",
+    "output_thresh": "-29.46",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "gainDb": 2.3999999999999995,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}
