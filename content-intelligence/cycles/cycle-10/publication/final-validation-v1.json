@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T15:57:31.221173+00:00",
+  "repositoryCheck": {
+    "command": "VITEST_MAX_WORKERS=4 pnpm check",
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 52,
+    "tests": 483,
+    "gitDiffCheck": "passed"
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 896,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731
+  },
+  "nativePublicationReview": {
+    "path": "content-intelligence/cycles/cycle-10/publication/readiness-validation-v1.json",
+    "sha256": "3505cce431f4b1921fd366a9bff73b641a1e083051b8f0edfd728e560d7ac621"
+  },
+  "restore": {
+    "path": "content-intelligence/cycles/cycle-10/publication/clean-restore-check.json",
+    "sha256": "af83941a89e7c434d4bbfad0dd2854502e457ee7d09400e1f68d20a67d954369"
+  },
+  "captionDelivery": {
+    "path": "content-intelligence/cycles/cycle-10/publication/qa/captions-delivery-v1.json",
+    "sha256": "40d76ac90af0e847b7a1a641eb339da661b973e6d9c0a506ee540238bdefdd66"
+  },
+  "historicalReconciliation": {
+    "path": "content-intelligence/cycles/cycle-10/publication/historical-document-reconciliation-v1.json",
+    "sha256": "9d0464b1c938c77eeafeba999b169d9bbdd50bc144131b700481ba673bb45cef"
+  },
+  "intermediateFailure": "One follow-up full check and direct native replay rejected a changed historical PROJECT-STATE.md digest. Exact prior bytes restored; no historical reference/schema/approval was changed. The final full check and native release replay pass.",
+  "publicationAuthorized": false,
+  "externalPlatformActions": []
+}

@@ -1,0 +1,131 @@
+{
+  "gate": "PUBLICATION REVIEW / AUTHORIZATION",
+  "cycleId": "cycle.10",
+  "platforms": [
+    {
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-10/publication/youtube/manifest-v1.json",
+        "sha256": "e92bfe1e5e172a909a0cac8c7bba8baff3a4e1d2bb98171e3020e1e190917d96"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-10/publication/youtube/video-evidence-v1.json",
+        "sha256": "0bd53e4d763c1e822f91045aa2f219ffd4659892c522c7a8e13e26a1def0dc1e"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-10/publication/youtube/video-profile-v1.json",
+        "sha256": "d07eb4ba9e6f6d338de4f6279d1bda5850d063ad56dd45752af58526a782939e"
+      }
+    },
+    {
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-10/publication/tiktok/manifest-v2.json",
+        "sha256": "e20f16699685fffe6344f4876d2c88ce5d508d04a5a32ac06100eef9215533c4"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-10/publication/tiktok/video-evidence-v1.json",
+        "sha256": "2e0f4a204682fa6fc7c0c116caf7ac1e46039e40652cfc8595f3ef58a20b9824"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-10/publication/tiktok/video-profile-v1.json",
+        "sha256": "290482226db812b2d44abc17e9954a4e96f2f262e805631360f04b39ec3c1238"
+      }
+    },
+    {
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-10/publication/instagram/manifest-v1.json",
+        "sha256": "e9a4c5e68354b4baeb134a4ade5b0cd32387f2491bd54b484ad555bc6dd9c3ad"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-10/publication/instagram/video-evidence-v1.json",
+        "sha256": "5385cbbf2a03ae387572ee5b0af18b6daea09f5ea4b93e068bf3eabf9dcce975"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-10/publication/instagram/video-profile-v1.json",
+        "sha256": "f65cb57ac6f4fc1361611baa7206b43791e4dd743b0a7ab428b0b325518d53d1"
+      }
+    },
+    {
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "uploadFile": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "relationship": "exact-master",
+      "delivery": {
+        "path": "content-intelligence/cycles/cycle-10/publication/facebook/manifest-v1.json",
+        "sha256": "8fee53af7b67eb04a5d04a7bdec9585f98eb5bcba663599d1c263d1b78d4e817"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-10/publication/facebook/video-evidence-v1.json",
+        "sha256": "d2d7a4f02e20e00c9f7dfc88ceb91c1c02e9220b9ca637c8f1f98e8ffe7d3694"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-10/publication/facebook/video-profile-v1.json",
+        "sha256": "064c539494d209ea053a86018b70b3ebaaef8ad85d4094ea279d1ca921ca4a89"
+      }
+    }
+  ],
+  "presentationUncertainties": [
+    "craft-escape.variant.youtube.v1: composition: provisional",
+    "craft-escape.variant.youtube.v1: nativeUI: unknown",
+    "craft-escape.variant.youtube.v1: captions: unknown",
+    "craft-escape.variant.youtube.v1: crop: unknown",
+    "craft-escape.variant.youtube.v1: Unsampled timeline motion not proven",
+    "craft-escape.variant.youtube.v1: No exact-media real-device evidence",
+    "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: composition: unknown",
+    "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: nativeUI: unknown",
+    "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: captions: unknown",
+    "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: crop: unknown",
+    "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: No exact-media real-device evidence",
+    "craft-escape.variant.tiktok.v2: composition: provisional",
+    "craft-escape.variant.tiktok.v2: nativeUI: unknown",
+    "craft-escape.variant.tiktok.v2: captions: unknown",
+    "craft-escape.variant.tiktok.v2: crop: unknown",
+    "craft-escape.variant.tiktok.v2: Unsampled timeline motion not proven",
+    "craft-escape.variant.tiktok.v2: No exact-media real-device evidence",
+    "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: composition: unknown",
+    "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: nativeUI: unknown",
+    "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: captions: unknown",
+    "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: crop: unknown",
+    "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: No exact-media real-device evidence",
+    "craft-escape.variant.instagram.v1: composition: provisional",
+    "craft-escape.variant.instagram.v1: nativeUI: unknown",
+    "craft-escape.variant.instagram.v1: captions: unknown",
+    "craft-escape.variant.instagram.v1: crop: unknown",
+    "craft-escape.variant.instagram.v1: Unsampled timeline motion not proven",
+    "craft-escape.variant.instagram.v1: No exact-media real-device evidence",
+    "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: composition: unknown",
+    "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: nativeUI: unknown",
+    "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: captions: unknown",
+    "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: crop: unknown",
+    "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: No exact-media real-device evidence",
+    "craft-escape.variant.facebook.v1: composition: provisional",
+    "craft-escape.variant.facebook.v1: nativeUI: unknown",
+    "craft-escape.variant.facebook.v1: captions: unknown",
+    "craft-escape.variant.facebook.v1: crop: unknown",
+    "craft-escape.variant.facebook.v1: Unsampled timeline motion not proven",
+    "craft-escape.variant.facebook.v1: No exact-media real-device evidence",
+    "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: composition: unknown",
+    "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: nativeUI: unknown",
+    "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: captions: unknown",
+    "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: crop: unknown",
+    "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: No exact-media real-device evidence"
+  ],
+  "uniqueVideoPayloads": 1,
+  "evidence": {
+    "path": "content-intelligence/cycles/cycle-10/publication/release-v2.json",
+    "sha256": "972ea805a27da4261a5911a01443630b60ace43ac0817881ae56cc60ed98411a"
+  },
+  "targetSha256": "a52e25476aaaf778c0003a87a08393c21a140ea9d2bb06d59f7f007eacf7d745",
+  "decision": "Review copy, covers, exact files and scoped presentation uncertainties. Approve owner manual release or request revision. No upload/scheduling/publication is performed by this system."
+}

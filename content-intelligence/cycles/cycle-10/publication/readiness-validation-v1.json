@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026-10-09T15:54:51.109Z",
+  "passed": true,
+  "cycleId": "cycle.10",
+  "revision": 26,
+  "nextAction": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-10/publication/release-v2.json",
+    "sha256": "972ea805a27da4261a5911a01443630b60ace43ac0817881ae56cc60ed98411a"
+  },
+  "reviewTargetSha256": "a52e25476aaaf778c0003a87a08393c21a140ea9d2bb06d59f7f007eacf7d745",
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-10/publication/master-approval-v1.json",
+    "sha256": "535f299536dc3dd28398ee5d738d9bacbcf31a42e7053388c33e0fae5faaeedd"
+  },
+  "masterUnchanged": true,
+  "fullMediaDecode": "passed",
+  "approvedSourceAndInputHashesUnchanged": true,
+  "priorCanonicalEntriesUnchanged": 895,
+  "canonicalPayloads": 896,
+  "newCanonicalPayloads": 1,
+  "newMediaBytes": 335993,
+  "historicalFilesUnchanged": 3822,
+  "v1Preserved": {
+    "path": "artifacts/masters/craft-escape-cycle10-candidate-v1.mp4",
+    "sha256": "2099dadf287c962053331becfd1a8597bc9ce3365badb63ffa7cba57c70c4b51"
+  },
+  "workflowReplay": [
+    {
+      "id": "cycle.10",
+      "revision": 26,
+      "stage": "publication-review"
+    },
+    {
+      "id": "cycle.4",
+      "revision": 9,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.5",
+      "revision": 13,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.6",
+      "revision": 23,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.7",
+      "revision": 25,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.8",
+      "revision": 30,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.9",
+      "revision": 18,
+      "stage": "authorized"
+    }
+  ],
+  "recovery": "exact no-op",
+  "stateSha256": "ea3f89196d8ad8739d4c2ff842f67368a6f7303cfc155ed59595f8db998e73f2",
+  "event26Sha256": "a007ce2051858254c1bbac46c505a4c9dd66fdd17fb0f69499685e152d5d8c0c",
+  "copyLengths": [
+    {
+      "platform": "youtube",
+      "titleCharacters": 45,
+      "descriptionCharacters": 1319
+    },
+    {
+      "platform": "tiktok",
+      "titleCharacters": 0,
+      "descriptionCharacters": 681
+    },
+    {
+      "platform": "instagram",
+      "titleCharacters": 0,
+      "descriptionCharacters": 669
+    },
+    {
+      "platform": "facebook",
+      "titleCharacters": 49,
+      "descriptionCharacters": 784
+    }
+  ],
+  "inheritedGeometryUnchanged": true,
+  "uniqueVideoPayloads": 1,
+  "derivativeVideos": 0,
+  "uniqueSelectedCoverPayloads": 2,
+  "newCoverPayloads": 1,
+  "unknownCount": 44,
+  "knownCollisions": [],
+  "uploads": [
+    {
+      "variantId": "craft-escape.variant.youtube.v1",
+      "platform": "youtube",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+            "sha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead",
+            "sha256": "43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/craft-escape-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "e92bfe1e5e172a909a0cac8c7bba8baff3a4e1d2bb98171e3020e1e190917d96"
+    },
+    {
+      "variantId": "craft-escape.variant.tiktok.v2",
+      "platform": "tiktok",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+            "sha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9",
+            "sha256": "afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/craft-escape-cycle10-v3/frame-129-77.1s.png"
+        }
+      ],
+      "manifestSha256": "e20f16699685fffe6344f4876d2c88ce5d508d04a5a32ac06100eef9215533c4"
+    },
+    {
+      "variantId": "craft-escape.variant.instagram.v1",
+      "platform": "instagram",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+            "sha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead",
+            "sha256": "43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/craft-escape-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "e9a4c5e68354b4baeb134a4ade5b0cd32387f2491bd54b484ad555bc6dd9c3ad"
+    },
+    {
+      "variantId": "craft-escape.variant.facebook.v1",
+      "platform": "facebook",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+            "sha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9",
+            "sha256": "afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/craft-escape-cycle10-v3/frame-129-77.1s.png"
+        }
+      ],
+      "manifestSha256": "8fee53af7b67eb04a5d04a7bdec9585f98eb5bcba663599d1c263d1b78d4e817"
+    }
+  ],
+  "publicationAuthorized": false,
+  "externalPlatformActions": []
+}
