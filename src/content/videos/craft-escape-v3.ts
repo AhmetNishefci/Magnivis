@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/craft-escape-v3.json';
+import asset from '../../../content-intelligence/cycles/cycle-10/revision-v2/content-asset.ready.json';
+import narration from '../../production/narration/craft-escape-v2.json';
+export const craftEscapeV3=videoSpecSchema.parse({id:'craft-escape-v3',compositionId:'Magnivis-Craft-Escape-V3',workingTitle:'Ellen and William Craft’s open escape',titleCandidates:['Ellen and William Craft’s open escape'],descriptionCandidates:['How Ellen and William Craft navigated the vulnerabilities created by their assumed identities.'],hook:asset.script.segments[0]!.text,pillar:'history-stories',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration','silence'],narration:true,narrationCues:narration.cues}});

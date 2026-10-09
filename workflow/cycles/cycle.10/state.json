@@ -1,13 +1,20 @@
 {
   "schemaVersion": 3,
   "id": "cycle.10",
-  "revision": 17,
+  "revision": 22,
   "authority": {
     "path": "workflow/authorities/cycle-10-start.json",
     "sha256": "915b2b628de3349ef4475e88c746d7b2e20013e5f9275c1357ae43deebd79e08"
   },
-  "stage": "master-review",
-  "workInProgress": null,
+  "stage": "production",
+  "workInProgress": {
+    "stage": "production",
+    "record": {
+      "path": "content-intelligence/cycles/cycle-10/revision-v3/production-start.json",
+      "sha256": "9d49de21d7543766bdd6a28e5ef2c43b3b871f24c7642fc37e133ed9c02fa20c"
+    },
+    "startedAt": "2026-10-09T15:06:01.190Z"
+  },
   "receipts": [
     {
       "stage": "discovery",
@@ -26,15 +33,8 @@
     {
       "stage": "creative",
       "record": {
-        "path": "content-intelligence/cycles/cycle-10/revision-v2/direction-v2.json",
-        "sha256": "a3801b0595fea3001661a3c77e3822eaee1922732a8447652b7c7c5ae24445be"
-      }
-    },
-    {
-      "stage": "production",
-      "record": {
-        "path": "content-intelligence/cycles/cycle-10/revision-v2/master-candidate-v2.json",
-        "sha256": "c0df64f005f644d6e5cd8db2b27e54a1c6e999c1625ad2d585b591ab834bb94e"
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/direction-v3.json",
+        "sha256": "8d309df110f343768d85fcc1291614e99f39cfffa64dceee09b2020bb4de042c"
       }
     }
   ],
@@ -46,10 +46,7 @@
     "path": "content-intelligence/cycles/cycle-10/owner-premise-approval-v1.json",
     "sha256": "3da547328bca255e538eb6ae67a5b6d7404a63e962c6c5030bd47c742a36e386"
   },
-  "candidate": {
-    "path": "content-intelligence/cycles/cycle-10/revision-v2/master-candidate-v2.json",
-    "sha256": "c0df64f005f644d6e5cd8db2b27e54a1c6e999c1625ad2d585b591ab834bb94e"
-  },
+  "candidate": null,
   "masterDecision": null,
   "release": null,
   "publicationDecision": null,
@@ -224,6 +221,56 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-10/revision-v2/master-candidate-v2.json",
         "sha256": "c0df64f005f644d6e5cd8db2b27e54a1c6e999c1625ad2d585b591ab834bb94e"
+      }
+    },
+    {
+      "revision": 18,
+      "previousSha256": "7ddc56bb84cba89044208291ecc7cf6352f338bf9afa40002500badd414a0375",
+      "event": "owner-decision",
+      "at": "2026-10-09T15:03:22.606Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/owner-master-revision.json",
+        "sha256": "adf5363612d546d5ea9baa7b9621bda46c08e9e6b9d3a5e498be418b7f52afc8"
+      }
+    },
+    {
+      "revision": 19,
+      "previousSha256": "dc5f4be813fb51d1ed842be3bd0048b32481289cde17d18a7b270ac576514e11",
+      "event": "retry-internal",
+      "at": "2026-10-09T15:03:24.437Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/revision-scope.json",
+        "sha256": "265cae2271c6d7d211ce4a22cb10a32439f9ce7c8dec94c401b580ddbb20ebb1"
+      }
+    },
+    {
+      "revision": 20,
+      "previousSha256": "7fa0af41150c02e56335a875fd903690b9c038207b400a99d75c33eda2c88e59",
+      "event": "begin-creative",
+      "at": "2026-10-09T15:03:25.347Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/creative-start.json",
+        "sha256": "0098da0e9d1c0cfb0d3234019911c6f41cede5169d4ff1dd375c020b9ee2f8be"
+      }
+    },
+    {
+      "revision": 21,
+      "previousSha256": "2ce7f3e3287ce02788f08d119b587c51890387a77e1057f605a4668d1a59824b",
+      "event": "creative",
+      "at": "2026-10-09T15:05:01.832Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/direction-v3.json",
+        "sha256": "8d309df110f343768d85fcc1291614e99f39cfffa64dceee09b2020bb4de042c"
+      }
+    },
+    {
+      "revision": 22,
+      "previousSha256": "158c282f38a4ce112b8e42745f4fdf402eefab72ba4cda6294673f076efb1753",
+      "event": "begin-production",
+      "at": "2026-10-09T15:06:01.190Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/production-start.json",
+        "sha256": "9d49de21d7543766bdd6a28e5ef2c43b3b871f24c7642fc37e133ed9c02fa20c"
       }
     }
   ]

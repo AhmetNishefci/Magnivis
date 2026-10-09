@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-09T15:11:26.658Z",
+  "input": "artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 81.56666666666666
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -23.8,
+    "maxVolumeDb": -2.3,
+    "duration": 81.622,
+    "sizeBytes": 36119114,
+    "bitRate": 3540135
+  },
+  "passed": true,
+  "failures": []
+}
