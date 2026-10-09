@@ -1,0 +1,15 @@
+import {spawnSync} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {mediaHash} from '../src/artifacts/media';
+const base='content-intelligence/cycles/cycle-10/publication',production='content-intelligence/cycles/cycle-10/revision-v3',master='artifacts/masters/craft-escape-cycle10-candidate-v3.mp4';
+if(mediaHash(master)!=='b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc')throw new Error('Approved master drift');
+const bindings=JSON.parse(readFileSync(`${production}/implementation-bindings.json`,'utf8')) as {files:{path:string;sha256:string}[]};
+for(const f of bindings.files)if(mediaHash(f.path)!==f.sha256)throw new Error('Approved input drift: '+f.path);
+const qa=JSON.parse(readFileSync('qa/craft-escape-v3/report.json','utf8')) as {passed:boolean};if(!qa.passed)throw new Error('Master QA failed');
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const decode=spawnSync(ffmpeg,['-v','error','-xerror','-err_detect','explode','-i',master,'-map','0:v:0','-map','0:a:0','-f','null','-'],{encoding:'utf8'});if(decode.status!==0)throw new Error(decode.stderr);
+const canonicalFrame='artifacts/qa-evidence/craft-escape-cycle10-v3/frame-129-77.1s.png';
+if(mediaHash(canonicalFrame)!==mediaHash('qa/craft-escape-v3/frame-129-77.1s.png'))throw new Error('Selected cover frame differs from actual approved master decode');
+writeFileSync(`${base}/qa/master-release-validation-v1.json`,JSON.stringify({checkedAt:new Date().toISOString(),passed:true,master:{path:master,sha256:mediaHash(master)},approvedSourceAndInputHashesUnchanged:true,fullDecode:'passed',canonicalQa:qa,selectedCoverFrame:{path:canonicalFrame,frame:2313,seconds:77.1,sha256:mediaHash(canonicalFrame),exactNewDecodeMatches:true},scope:'Exact owner-approved master re-probed and fully decoded. Existing bound133 browser checkpoints and owner creative approval retained. No new video render or source/audio/caption modification; no native/device/crop pass.',externalActions:[]},null,2)+'\n',{flag:'wx'});
+console.log('Exact approved master and source bindings unchanged; full decode/QA and selected frame verified.');

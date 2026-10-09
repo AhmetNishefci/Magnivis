@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.craft-escape.youtube.release-v1",
+  "revision": 1,
+  "platform": "youtube",
+  "surface": "youtube-shorts-viewer",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-09T15:46:05.404742Z",
+  "reviewAfter": "2026-10-16T15:46:05.404742Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "provisional",
+    "regions": [
+      {
+        "x": 84,
+        "y": 240,
+        "width": 806,
+        "height": 1370
+      }
+    ],
+    "rationale": "Repository projection only. Owner Phase 2 20A: top approximately 240; other insets provisionally inherited from Git V1, not recovered measurements; Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "provenance": [
+      {
+        "path": "artifacts/presentation-profiles.json",
+        "sha256": "33d66ce6fee9bbfa4c05720b2270d07319f250d2d0673b1b50856715bd81c2cb"
+      }
+    ]
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy native exclusions; null stays unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy caption geometry; null stays unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No legacy measured crop model; nothing inferred.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "mp4"
+    ],
+    "videoCodecs": [
+      "h264"
+    ],
+    "audioCodecs": [
+      "aac"
+    ],
+    "fps": [
+      30
+    ],
+    "duration": {
+      "minimum": 3,
+      "maximum": 90
+    },
+    "provenance": [
+      {
+        "path": "src/platform-variants/platform-profiles.ts",
+        "sha256": "f5cc2f039121b608ad1428d952084d161fd2685907ae6f1a8b7a03f2e978d0f1"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-10/publication/policy-inspection-v1.json",
+        "sha256": "e9559ff343d5914299919472ba5fb31344a8d4df11f929ae9411527af9b18342"
+      }
+    ],
+    "rationale": "Evidence-backed conservative release envelope for the exact81.622second master; official access limits preserved in bound inspection. Geometry confidence unchanged. Not a universal platform cap or live-account pass."
+  }
+}

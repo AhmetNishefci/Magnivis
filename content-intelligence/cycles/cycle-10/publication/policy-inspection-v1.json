@@ -1,0 +1,63 @@
+{
+  "inspectedAt": "2026-10-09T15:46:05.404742Z",
+  "reviewAfter": "2026-10-16T15:46:05.404742Z",
+  "method": "Fresh official open-web bodies and explicitly differentiated official indexed excerpts. No authenticated account, upload, native mobile inspection or crop measurement.",
+  "sources": [
+    {
+      "platform": "youtube",
+      "url": "https://support.google.com/youtube/answer/15424877?hl=en",
+      "access": "direct official body",
+      "finding": "Vertical/square uploads up to three minutes qualify under the dated Shorts policy. Over-one-minute Shorts with active Content ID claims are blocked. Claim processing for this exact account/media remains untested."
+    },
+    {
+      "platform": "youtube",
+      "url": "https://support.google.com/youtube/answer/72431?hl=en",
+      "access": "direct official body",
+      "finding": "Custom Shorts thumbnails supported through desktop Studio with account verification. PNG/JPG supported; minimum height 640, recommended2160x3840. This1080x1920 cover clears minimum; live account capability and thumbnail surfaces untested."
+    },
+    {
+      "platform": "youtube",
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en",
+      "access": "direct official body",
+      "finding": "Current AI use disclosure covers materially realistic synthetic content. Stock synthetic narration is disclosed in copy; recommend AI use Yes for transparency without claiming its exact stock-voice example is expressly resolved by policy."
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/creator-tools-on-tiktok?lang=nl",
+      "access": "official indexed body inspected; older crawl, direct access unavailable",
+      "finding": "Indexed TikTok Studio guidance lists MP4/WebM, minimum720x1280, up to30minutes, under10GB and cover selection. Older indexed crawl does not verify live controls. Use conservative90second release envelope; no arbitrary custom-PNG feature assumed."
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content?invalid_lang=es-419",
+      "access": "official indexed body inspected; crawled3months ago; direct robots denial",
+      "finding": "Realistic AI-generated audio requires labeling; creator labeling and contextual description are available. Recommend labelOn for realistic synthetic narration, retain live-control uncertainty."
+    },
+    {
+      "platform": "instagram",
+      "url": "https://about.fb.com/news/2022/07/new-ways-to-create-instagram-reels-remix/",
+      "access": "direct official body; July2022 historical announcement",
+      "finding": "Historical announcement describes Reels under90seconds as discovery-eligible for public accounts. Used only as conservative release envelope, never current universal duration limit or promised reach."
+    },
+    {
+      "platform": "facebook",
+      "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+      "access": "direct official body, paragraph at253 inspected",
+      "finding": "Announced gradual transition to sharing videos as Reels with no length/format restrictions. Account rollout remains unknown; conservative90second prepared presentation retained."
+    },
+    {
+      "platform": "meta",
+      "url": "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+      "access": "direct official body, paragraph266 inspected",
+      "finding": "Requires disclosure tool for digitally created realistic-sounding audio. Recommend AI disclosure on Facebook/Instagram; actual current label/control appearance remains untested."
+    }
+  ],
+  "exportDecision": "MP4 H264 AAC1080x1920 30fps,81.622seconds passes conservative3–90second package envelopes. These are versioned local release limits, not comprehensive platform specifications.",
+  "unresolved": [
+    "Live cover/thumbnail selection and persistence",
+    "Native UI exclusions and grid/profile/feed crops",
+    "Account identity/verification and feature rollout",
+    "Post-processing copyright/transcoding and label appearance"
+  ],
+  "externalActions": []
+}

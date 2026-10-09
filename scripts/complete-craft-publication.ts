@@ -1,0 +1,15 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {loadMediaRegistry,mediaHash} from '../src/artifacts/media';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+import {ownerHandoff} from '../src/workflow/handoff';
+import {inspectCycleRelease} from '../src/workflow/release';
+const root=process.cwd(),base='content-intelligence/cycles/cycle-10/publication',registry=loadMediaRegistry();
+let cycle=loadCycle(root,'cycle.10',registry);
+if(cycle.stage!=='presentation'||cycle.revision!==25)throw new Error('Wrong completion checkpoint');
+const read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+for(const name of ['pre-handoff-durability','clean-restore-check'])if(!read(`${base}/${name}.json`).passed)throw new Error('Required durable validation missing: '+name);
+const path=`${base}/release-v2.json`,release={path,sha256:mediaHash(path)};
+inspectCycleRelease(read(path),registry,new Date().toISOString(),root);
+cycle=persistCycleEvent(root,cycle,{type:'complete-internal',stage:'presentation',record:release,at:new Date().toISOString()},registry);
+writeFileSync(`${base}/controller-handoff-v1.json`,JSON.stringify(ownerHandoff(cycle,registry,root),null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({gate:cycle.stage,revision:cycle.revision,publicationAuthorized:false}));

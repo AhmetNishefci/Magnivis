@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.craft-escape.instagram.cover-v1",
+  "revision": 1,
+  "platform": "instagram",
+  "surface": "instagram-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-09T15:47:01.251Z",
+  "reviewAfter": "2026-10-16T15:47:01.251Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static browser canvas checked; no platform-derived safe composition region measured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail overlay geometry unmeasured.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static image; no native caption/overlay geometry measured.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Grid/profile/feed/native cover crop geometry unknown; no invented rectangle.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-10/publication/qa/cover-visual-v1.json",
+        "sha256": "f90b14d67249ad24218d7df5e138feb83d089a473b7dda6670f99992bbab059f"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-10/publication/policy-inspection-v1.json",
+        "sha256": "e9559ff343d5914299919472ba5fb31344a8d4df11f929ae9411527af9b18342"
+      }
+    ],
+    "rationale": "Local1080x1920PNG cover or exact decoded frame reference; native upload/selection capability not tested. Seven-day internal policy review window is not geometry evidence."
+  }
+}

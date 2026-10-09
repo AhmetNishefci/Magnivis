@@ -4,7 +4,7 @@ import {resolveAuthorizedCycleUpload} from '../src/workflow/release';
 import {recordReferenceSchema} from '../src/workflow/evidence';
 import {loadMediaRegistry} from '../src/artifacts/media';
 import {loadCycle} from '../src/workflow/store';
-import {cycleReleaseSchema} from '../src/workflow/release';
+import {cycleDeliverySchema,cycleReleaseSchema} from '../src/workflow/release';
 import {sha256Json} from '../src/content-intelligence/run-schema';
 import {readBoundRecord} from '../src/workflow/evidence';
 const [mode,release,decision]=process.argv.slice(2);
@@ -17,5 +17,10 @@ if(mode==='--authorized') {
   console.log(JSON.stringify(resolveAuthorizedCycleUpload(input,authority,registry),null,2));
 } else {
   if(!mode)throw new Error('Usage: node --import tsx scripts/resolve-delivery-media.ts <legacy-manifest.json> | --authorized <release.json> <decision-reference.json>');
-  console.log(JSON.stringify({purpose:'byte-lookup-only; no publication authorization',...resolveDeliveryUpload(read(mode))},null,2));
+  const input=read(mode);
+  if(input.schemaVersion===3&&typeof input.cycleId==='string'){
+    const manifest=cycleDeliverySchema.parse(input),registry=loadMediaRegistry();
+    const files=manifest.artifacts.map(a=>({role:a.role,media:a.media,path:registry.resolveFile(a.media),bytes:registry.get(a.media).bytes}));
+    console.log(JSON.stringify({purpose:'byte-lookup-only; no publication authorization',manifestId:manifest.id,state:manifest.state,files},null,2));
+  }else console.log(JSON.stringify({purpose:'byte-lookup-only; no publication authorization',...resolveDeliveryUpload(input)},null,2));
 }

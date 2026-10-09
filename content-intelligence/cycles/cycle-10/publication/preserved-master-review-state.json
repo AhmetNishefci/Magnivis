@@ -1,20 +1,13 @@
 {
   "schemaVersion": 3,
   "id": "cycle.10",
-  "revision": 25,
+  "revision": 23,
   "authority": {
     "path": "workflow/authorities/cycle-10-start.json",
     "sha256": "915b2b628de3349ef4475e88c746d7b2e20013e5f9275c1357ae43deebd79e08"
   },
-  "stage": "presentation",
-  "workInProgress": {
-    "stage": "presentation",
-    "record": {
-      "path": "content-intelligence/cycles/cycle-10/publication/presentation-start-v1.json",
-      "sha256": "94e55ff59293869f31ea4c8a98741ebca769f825fa47489a9221d4e8f855b9f0"
-    },
-    "startedAt": "2026-10-09T15:43:51.357Z"
-  },
+  "stage": "master-review",
+  "workInProgress": null,
   "receipts": [
     {
       "stage": "discovery",
@@ -57,10 +50,7 @@
     "path": "content-intelligence/cycles/cycle-10/revision-v3/master-candidate-v3.json",
     "sha256": "4e2a4a467199a034c8b8364acf5bc33b26265d2b5f58ab47fd90f27b4c51d317"
   },
-  "masterDecision": {
-    "path": "content-intelligence/cycles/cycle-10/publication/master-approval-v1.json",
-    "sha256": "535f299536dc3dd28398ee5d738d9bacbcf31a42e7053388c33e0fae5faaeedd"
-  },
+  "masterDecision": null,
   "release": null,
   "publicationDecision": null,
   "exception": null,
@@ -294,26 +284,6 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-10/revision-v3/master-candidate-v3.json",
         "sha256": "4e2a4a467199a034c8b8364acf5bc33b26265d2b5f58ab47fd90f27b4c51d317"
-      }
-    },
-    {
-      "revision": 24,
-      "previousSha256": "80157c21917351a04646c88566fbf41cf6028e759b274980713c28b862819fa5",
-      "event": "owner-decision",
-      "at": "2026-10-09T15:43:49.889Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-10/publication/master-approval-v1.json",
-        "sha256": "535f299536dc3dd28398ee5d738d9bacbcf31a42e7053388c33e0fae5faaeedd"
-      }
-    },
-    {
-      "revision": 25,
-      "previousSha256": "e9ad4bb9d6c71de29920c4fa87f3352074ba6fc6f5dc3f2b272f6f288143a9ff",
-      "event": "begin-presentation",
-      "at": "2026-10-09T15:43:51.357Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-10/publication/presentation-start-v1.json",
-        "sha256": "94e55ff59293869f31ea4c8a98741ebca769f825fa47489a9221d4e8f855b9f0"
       }
     }
   ]
