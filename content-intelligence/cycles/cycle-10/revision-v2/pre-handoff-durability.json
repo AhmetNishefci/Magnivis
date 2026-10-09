@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T14:56:18.068798Z",
+  "candidateSha256": "c0df64f005f644d6e5cd8db2b27e54a1c6e999c1625ad2d585b591ab834bb94e",
+  "canonicalMedia": {
+    "passed": true,
+    "canonicalPayloads": 877,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "durableArtifactCount": 731,
+  "historicalMissingExpectations": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "checks": {
+    "pnpm check": "passed;52 files;483 tests",
+    "pnpm artifacts:durable": "passed",
+    "exactCandidateNativeTransition": "passed without persistence or owner decision",
+    "scopedGitRestore": {
+      "path": "content-intelligence/cycles/cycle-10/revision-v2/clean-restore-check.json",
+      "sha256": "e7885a67a28f2ba766bbb6d5826c338e1e7bb34b33dba9c352f3cbb6b5bf119b"
+    },
+    "historyCheck": {
+      "path": "content-intelligence/cycles/cycle-10/revision-v2/historical-integrity-check.json",
+      "sha256": "b4efc7f48730399691c62a96b2283f2a7fbae8168bd29ccabddb462c5fb19487"
+    }
+  },
+  "scope": "Exact committed canonical source/media and independent bounded Git restore/native validation; pinned dependencies reused. Remote checkpoint e69a3af8d3fadeb76074f0cfbbff351f89e9bdf0 verified equal to origin/content/cycle-10-craft; no remote clone or clean dependency installation claimed. Main remains89c1cb83621f1cea41ffcf7a05ccb635fc0525ec."
+}
