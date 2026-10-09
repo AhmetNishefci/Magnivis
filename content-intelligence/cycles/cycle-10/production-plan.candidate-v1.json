@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.craft-escape.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "craft-escape",
+    "revision": 1,
+    "sha256": "f88937894fb4afc2771629acf7778696e15251f0c23074afa4f22183edbf4b00"
+  },
+  "contentAsset": {
+    "id": "craft-escape.asset.open-escape",
+    "revision": 1,
+    "sha256": "6da22d8aa5f6284b7b5032c8abe1f35dfdac99a12cb836798a7ecce0ba7db359"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.10",
+    "reviewSha256": "64e0f97157e9f974c32f065367e5116dde7d996139f059dd70e08e943d147cf7"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-10/profiles/youtube.json",
+      "sha256": "08f6e6bec670a596d0ee19a2fec24a359d7a774a28dc4841cdbc02fcfc9af538"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/profiles/tiktok.json",
+      "sha256": "a32865a02db3986492fdd663d6b284c721112a6445611663e308e940da671c74"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/profiles/instagram.json",
+      "sha256": "35fe52399b552cf9af9841eac83c28b600171c7c94dc972112f569f3e997f6c2"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/profiles/facebook.json",
+      "sha256": "0475ac3dddb03578c4fb43057f112ac3849346242ee813424a64bbca27ce2fff"
+    }
+  ],
+  "approvedScriptSha256": "18c614bf3090a7eacb4f1e9b9e336382f0484c89316f86901bf988be47ffd811",
+  "creativeDirection": {
+    "id": "creative-direction.craft-escape.v1",
+    "revision": 1,
+    "sha256": "5b87cbf914ca6bbd67dcd84c05cc5335c95fdc6394c14d4fa88e3fd77652b548"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "craft-escape.claim.dialogue",
+    "craft-escape.claim.dates",
+    "craft-escape.claim.guarantee"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 104.76666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "craft-escape.production.1",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.1",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.1",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.1"
+      ],
+      "claimIds": [
+        "craft-escape.claim.escape"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 181
+      },
+      "sceneType": "open-escape",
+      "objective": "Immediate human stakes and open travel contradiction",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.2",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.2",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.2",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.2"
+      ],
+      "claimIds": [
+        "craft-escape.claim.escape"
+      ],
+      "frames": {
+        "start": 181,
+        "end": 399
+      },
+      "sceneType": "identity-inversion",
+      "objective": "Relationship inversion, two people acting together",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.3",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.3",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.3",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.3"
+      ],
+      "claimIds": [
+        "craft-escape.claim.signature"
+      ],
+      "frames": {
+        "start": 399,
+        "end": 631
+      },
+      "sceneType": "signature-test",
+      "objective": "New identity creates literacy vulnerability",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.4",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.4",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.4",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.4"
+      ],
+      "claimIds": [
+        "craft-escape.claim.signature"
+      ],
+      "frames": {
+        "start": 631,
+        "end": 910
+      },
+      "sceneType": "injured-hand",
+      "objective": "Her proactive adaptation, early-source provenance",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.5",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.5",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.5",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.5"
+      ],
+      "claimIds": [
+        "craft-escape.claim.illness"
+      ],
+      "frames": {
+        "start": 910,
+        "end": 1234
+      },
+      "sceneType": "illness-presentation",
+      "objective": "Functional disguise explained through later testimony",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.6",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.6",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.6",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.6"
+      ],
+      "claimIds": [
+        "craft-escape.claim.william",
+        "craft-escape.claim.route"
+      ],
+      "frames": {
+        "start": 1234,
+        "end": 1465
+      },
+      "sceneType": "joint-journey",
+      "objective": "William’s agency and joint northbound movement",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.7",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.7",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.7",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.7"
+      ],
+      "claimIds": [
+        "craft-escape.claim.checkpoint"
+      ],
+      "frames": {
+        "start": 1465,
+        "end": 1615
+      },
+      "sceneType": "ownership-test",
+      "objective": "Raise ownership test without premature answer",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.8",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.8",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.8",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.8"
+      ],
+      "claimIds": [
+        "craft-escape.claim.checkpoint"
+      ],
+      "frames": {
+        "start": 1615,
+        "end": 1857
+      },
+      "sceneType": "baltimore-demand",
+      "objective": "Baltimore demand explicitly attributed",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.9",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.9",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.9",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.9"
+      ],
+      "claimIds": [
+        "craft-escape.claim.checkpoint"
+      ],
+      "frames": {
+        "start": 1857,
+        "end": 1975
+      },
+      "sceneType": "appearance-not-proof",
+      "objective": "Distinguish appearance from documentation",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.10",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.10",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.10",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.10"
+      ],
+      "claimIds": [
+        "craft-escape.claim.release"
+      ],
+      "frames": {
+        "start": 1975,
+        "end": 2301
+      },
+      "sceneType": "discretionary-release",
+      "objective": "Discretionary passage, not guaranteed mechanism",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.11",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.11",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.11",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.11"
+      ],
+      "claimIds": [
+        "craft-escape.claim.arrival",
+        "craft-escape.claim.safety"
+      ],
+      "frames": {
+        "start": 2301,
+        "end": 2477
+      },
+      "sceneType": "arrival-not-safety",
+      "objective": "Arrival versus enduring danger",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.12",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.12",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.12",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.12"
+      ],
+      "claimIds": [
+        "craft-escape.claim.safety"
+      ],
+      "frames": {
+        "start": 2477,
+        "end": 2680
+      },
+      "sceneType": "further-flight",
+      "objective": "Actual1850recapture threat and further flight",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.13",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.13",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.13",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.13"
+      ],
+      "claimIds": [
+        "craft-escape.claim.meaning"
+      ],
+      "frames": {
+        "start": 2680,
+        "end": 2966
+      },
+      "sceneType": "system-accommodations",
+      "objective": "Historical interpretation of accommodations",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    },
+    {
+      "id": "craft-escape.production.14",
+      "sourceVisualPlanId": "craft-escape.asset.open-escape.visual.14",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.14",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.14"
+      ],
+      "claimIds": [
+        "craft-escape.claim.meaning",
+        "craft-escape.claim.escape"
+      ],
+      "frames": {
+        "start": 2966,
+        "end": 3143
+      },
+      "sceneType": "restored-identities",
+      "objective": "Restore identities and explain exploitation of imposed relationship",
+      "onScreenText": [],
+      "animationIntent": "Portrait-led documentary explanation; pages and modern explanatory graphics change scale to reveal specific constraints. No invented historical actors, dialogue or authentic-looking fabricated papers.",
+      "transitionIntent": "Motivated portrait-to-detail and route transitions; source provenance appears when testimony is introduced. Closing returns to both named people.",
+      "audioIntent": "Measured connected af_heart narration and silence; no fabricated historic ambience."
+    }
+  ],
+  "assets": [
+    {
+      "id": "craft-escape.original-graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original modern explanatory linework",
+        "rights": "Project-owned artwork",
+        "notes": "Symbolic hand/register and route sequence, not historic objects or recovered documents.",
+        "evidence": "content-intelligence/cycles/cycle-10/rights-provenance.json"
+      }
+    },
+    {
+      "id": "craft-escape.archival-portraits",
+      "kind": "archival",
+      "path": "public/visuals/craft-escape",
+      "provenance": {
+        "origin": "1860frontispiece and1872portrait leaf, faithful InternetArchive scans",
+        "rights": "Public domain19th-century published2Dworks",
+        "notes": "Exact acquired images, later depictions, no alterations to identity.",
+        "evidence": "content-intelligence/cycles/cycle-10/archival-assets.json"
+      }
+    },
+    {
+      "id": "craft-escape.manrope",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource / Manrope",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing licensed font.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "craft-escape.narration",
+      "kind": "audio",
+      "path": "public/audio/craft-escape/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache2.0model/output terms",
+        "notes": "Connected verified narration, no paid API.",
+        "evidence": "src/production/narration/craft-escape.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/craft-escape.en.vtt",
+    "captionPlanId": "caption-plan.craft-escape.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "1121a604976a99602f28ef379810d8dc140d058f609efc5e2db406d65eb91b44",
+    "generatorId": "generator.craft-escape-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Full media probe and decode, exact caption reconstruction and typography fit.",
+    "Every caption midpoint and opening/constraint/rule/own-goal/reversal/both-goals/outcome checkpoints decoded and inspected.",
+    "Identity inversion, signing adaptation, ownership assurance and continuing danger remain clear. Later portraits and1860participant testimony are labeled; no real documents, dialogue or guaranteed passage implied.",
+    "Actual audio interval recognition and mix; owner pronunciation/prosody remains judgment.",
+    "Four sampled provisional profile preflights; no invented native/device safety.",
+    "AHMET — MASTER REVIEW; no release preparation before approval."
+  ]
+}

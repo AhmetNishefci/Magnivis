@@ -184,3 +184,11 @@ Three original complete-unit Kokoro af_heart/speed1 WAVs at `public/audio/two-go
 ### Cycle #9 Publication Review original cover — 2026-10-04
 
 `artifacts/covers/two-goals-cover-v1.png`, SHA-256 `709d424ed6a3125539af942a73868ca5d85c9022ad3ce8ff5a629c439bcd1923`, is original code-authored SVG/CSS pitch artwork rendered from `src/two-goals-cover-index.tsx`. Existing Manrope Fontsource5.3.0/SIL OFL1.1 typography; no broadcast footage, team logos, portrait, photograph or generated photorealistic imagery. Shows symbolic Barbados markers protecting opposite goals; marked illustrated reconstruction. The approved master is its registered parent. YouTube/Instagram reference that one cover payload. TikTok/Facebook reference existing project-owned decoded V2 frame1860 at62.0s, with unchanged canonical provenance and newly bound cover-selection evidence. No new music, third-party asset or video payload. Cover selection awaits separate publication approval.
+
+## Cycle #10 — Craft documentary master candidate
+
+- Exact archival pages: 1860 *Running a Thousand Miles for Freedom* frontispiece/title page and 1872 William Still portrait leaf. Public-domain nineteenth-century published works; faithful two-dimensional scans acquired via Internet Archive IIIF. Canonical files are in `public/visuals/craft-escape/`; exact URLs, SHA-256, inspected identity, rights rationale and limitations are in `content-intelligence/cycles/cycle-10/archival-assets.json`. CSS viewport crops do not change canonical bytes. Later portraits are labeled; the memoir’s stated omission of facial poultice is preserved. No generated likeness or reenactment.
+- Modern register, bandaged-hand illustration and route sequence: original Magnivis explanatory linework, not authentic historical documents/objects or a measured route.
+- Manrope 5.3.0, pinned Fontsource package: SIL OFL 1.1; exact font/license identities in Cycle #10 `rights-provenance.json`.
+- Narration: local Kokoro af_heart under existing Apache-2.0 model terms; exact script/cue/model provenance retained. No paid API, cloned voice, music or third-party historical ambience.
+- Research newspaper and scholarly facsimiles remain research evidence. They are not reproduced as production artwork. No publication authorization granted.

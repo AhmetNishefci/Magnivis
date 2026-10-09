@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.compatibility.safe-area.tiktok-feed.v2",
+  "revision": 2,
+  "platform": "tiktok",
+  "surface": "tiktok-feed",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-09T13:46:01.444Z",
+  "reviewAfter": "2026-10-09T13:46:01.444Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "provisional",
+    "regions": [
+      {
+        "x": 84,
+        "y": 240,
+        "width": 806,
+        "height": 1370
+      }
+    ],
+    "rationale": "Repository projection only. src/design/safe-areas.ts; Speed of Light iPhone 17 Pro Max 2026-09-27 historical pass, app/OS/hash unknown; Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "provenance": [
+      {
+        "path": "artifacts/presentation-profiles.json",
+        "sha256": "33d66ce6fee9bbfa4c05720b2270d07319f250d2d0673b1b50856715bd81c2cb"
+      }
+    ]
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy native exclusions; null stays unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy caption geometry; null stays unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No legacy measured crop model; nothing inferred.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "mp4"
+    ],
+    "videoCodecs": [
+      "h264"
+    ],
+    "audioCodecs": [
+      "aac"
+    ],
+    "fps": [
+      30
+    ],
+    "duration": {
+      "minimum": 3,
+      "maximum": 60
+    },
+    "provenance": [
+      {
+        "path": "src/platform-variants/platform-profiles.ts",
+        "sha256": "f5cc2f039121b608ad1428d952084d161fd2685907ae6f1a8b7a03f2e978d0f1"
+      }
+    ],
+    "rationale": "Historical conservative export envelope only. Future evidence-backed versions may change dimensions, FPS, codec and duration; not complete native platform limits."
+  }
+}

@@ -1,13 +1,20 @@
 {
   "schemaVersion": 3,
   "id": "cycle.10",
-  "revision": 2,
+  "revision": 8,
   "authority": {
     "path": "workflow/authorities/cycle-10-start.json",
     "sha256": "915b2b628de3349ef4475e88c746d7b2e20013e5f9275c1357ae43deebd79e08"
   },
-  "stage": "premise-review",
-  "workInProgress": null,
+  "stage": "production",
+  "workInProgress": {
+    "stage": "production",
+    "record": {
+      "path": "content-intelligence/cycles/cycle-10/production-start.json",
+      "sha256": "01698671f8d0d7311cd4d86dd7eda71f042f845f220ee9dfd25e9690b7e90b8b"
+    },
+    "startedAt": "2026-10-09T13:46:01.779Z"
+  },
   "receipts": [
     {
       "stage": "discovery",
@@ -15,13 +22,30 @@
         "path": "content-intelligence/cycles/cycle-10/topic-selection.json",
         "sha256": "35a9985d626e4094e44b82613eaad3de93427e6e200854a757d5170256460045"
       }
+    },
+    {
+      "stage": "editorial",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-10/editorial-receipt.json",
+        "sha256": "a6bf738f6ef09cbd4b9cf27113e71ee13224c0305531f6296c593b735ef06fbf"
+      }
+    },
+    {
+      "stage": "creative",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-10/direction-v1.json",
+        "sha256": "0b4e4b92b732481295e89b7d262751bcfee775d6ee89a8c7d0b0e3a097546158"
+      }
     }
   ],
   "premise": {
     "path": "content-intelligence/cycles/cycle-10/topic-selection.json",
     "sha256": "35a9985d626e4094e44b82613eaad3de93427e6e200854a757d5170256460045"
   },
-  "premiseDecision": null,
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-10/owner-premise-approval-v1.json",
+    "sha256": "3da547328bca255e538eb6ae67a5b6d7404a63e962c6c5030bd47c742a36e386"
+  },
   "candidate": null,
   "masterDecision": null,
   "release": null,
@@ -47,6 +71,66 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-10/topic-selection.json",
         "sha256": "35a9985d626e4094e44b82613eaad3de93427e6e200854a757d5170256460045"
+      }
+    },
+    {
+      "revision": 3,
+      "previousSha256": "3d0c091781ff6f0590a18c242c87fb6ca388a12306b1d126fb1d7b880a56dfab",
+      "event": "owner-decision",
+      "at": "2026-10-09T13:28:09.080164Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/owner-premise-approval-v1.json",
+        "sha256": "3da547328bca255e538eb6ae67a5b6d7404a63e962c6c5030bd47c742a36e386"
+      }
+    },
+    {
+      "revision": 4,
+      "previousSha256": "8123f9dce4d9e62fe7261e3cf62d68a99bb8cc24c452348b4d6cccf84de8a867",
+      "event": "begin-editorial",
+      "at": "2026-10-09T13:29:20.596641Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/editorial-start.json",
+        "sha256": "11be21c80b4784b2fc3ff17f29976b07871009154378e2ea1e2df308804f1401"
+      }
+    },
+    {
+      "revision": 5,
+      "previousSha256": "ccaa3bdf375b8f5cd4d6d1a1222577b2d4d3327475f9dcb07fa5c26e27a9de71",
+      "event": "editorial",
+      "at": "2026-10-09T13:39:03.141Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/editorial-receipt.json",
+        "sha256": "a6bf738f6ef09cbd4b9cf27113e71ee13224c0305531f6296c593b735ef06fbf"
+      }
+    },
+    {
+      "revision": 6,
+      "previousSha256": "d284f5c6e51555e253ece2867768ab47b0f6d689e871cbc739160cc99caa4bfb",
+      "event": "begin-creative",
+      "at": "2026-10-09T13:41:04.608950Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/creative-start.json",
+        "sha256": "b040c2ee6a77d10aa202c3cb2d96e8f4dab290c7511a2b0af1f906bd7bfb27c2"
+      }
+    },
+    {
+      "revision": 7,
+      "previousSha256": "1a9bd5990e897d102deeeaa03ec7ff5837647ed015118914d9d7df11ba9fc7a8",
+      "event": "creative",
+      "at": "2026-10-09T13:46:01.444Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/direction-v1.json",
+        "sha256": "0b4e4b92b732481295e89b7d262751bcfee775d6ee89a8c7d0b0e3a097546158"
+      }
+    },
+    {
+      "revision": 8,
+      "previousSha256": "384dba00e3b308fa8bfccffc351e8ddc5fda9c669e09426d7ba8012a21b31b32",
+      "event": "begin-production",
+      "at": "2026-10-09T13:46:01.779Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/production-start.json",
+        "sha256": "01698671f8d0d7311cd4d86dd7eda71f042f845f220ee9dfd25e9690b7e90b8b"
       }
     }
   ]

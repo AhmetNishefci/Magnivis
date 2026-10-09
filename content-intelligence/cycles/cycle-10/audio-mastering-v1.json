@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-09T14:03:25.972Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/craft-escape-render-v1.mp4",
+    "sha256": "fbda37144b52d5bcf9314acccc14880a0c805eeee079d1559b67370d4ca1a7ea",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/craft-escape-cycle10-candidate-v1.mp4",
+    "sha256": "2099dadf287c962053331becfd1a8597bc9ce3365badb63ffa7cba57c70c4b51"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.51",
+    "input_tp": "-5.05",
+    "input_lra": "2.80",
+    "input_thresh": "-33.91",
+    "output_i": "-19.10",
+    "output_tp": "-2.00",
+    "output_lra": "2.60",
+    "output_thresh": "-29.48",
+    "normalization_type": "dynamic",
+    "target_offset": "0.10"
+  },
+  "gainDb": 2.8499999999999996,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

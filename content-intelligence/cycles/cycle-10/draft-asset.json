@@ -1,0 +1,468 @@
+{
+  "id": "craft-escape.asset.open-escape",
+  "revision": 1,
+  "knowledgePackageId": "craft-escape",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand two people’s strategy, the constraints it created, and the danger that survived arrival in the North.",
+  "storyAngle": "Their identity inversion opened travel but created new tests; illness was functional and passage remained precarious.",
+  "hookId": "craft-escape.hook.open-escape",
+  "selectedClaimIds": [
+    "craft-escape.claim.escape",
+    "craft-escape.claim.signature",
+    "craft-escape.claim.illness",
+    "craft-escape.claim.william",
+    "craft-escape.claim.route",
+    "craft-escape.claim.checkpoint",
+    "craft-escape.claim.release",
+    "craft-escape.claim.arrival",
+    "craft-escape.claim.safety",
+    "craft-escape.claim.meaning"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 70,
+    "maximum": 170
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "craft-escape.asset.open-escape.script.1",
+        "type": "factual",
+        "text": "In 1848, Ellen and William Craft escaped slavery by traveling openly.",
+        "claimIds": [
+          "craft-escape.claim.escape"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.2",
+        "type": "factual",
+        "text": "Ellen posed as a white male slaveholder. Her husband, William, posed as her enslaved servant.",
+        "claimIds": [
+          "craft-escape.claim.escape"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.3",
+        "type": "factual",
+        "text": "But that identity created a dangerous problem. A gentleman might be asked to sign his name. Ellen could not write.",
+        "claimIds": [
+          "craft-escape.claim.signature"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.4",
+        "type": "factual",
+        "text": "So she bound her right hand, making it appear injured. A report published weeks after their escape describes her avoiding signatures this way.",
+        "claimIds": [
+          "craft-escape.claim.signature"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.5",
+        "type": "factual",
+        "text": "Their later book explains more: bandages hid her beardless chin, spectacles obscured her face, and apparent illness gave her a reason to avoid conversation.",
+        "claimIds": [
+          "craft-escape.claim.illness"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.6",
+        "type": "factual",
+        "text": "William helped sustain the performance, acting as her attendant. Together, they traveled north by train and steamer.",
+        "claimIds": [
+          "craft-escape.claim.william",
+          "craft-escape.claim.route"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.7",
+        "type": "factual",
+        "text": "But before Philadelphia, they faced a test the disguise could not answer.",
+        "claimIds": [
+          "craft-escape.claim.checkpoint"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.8",
+        "type": "factual",
+        "text": "In their account, officials in Baltimore demanded assurance that the supposed master had the right to take William along.",
+        "claimIds": [
+          "craft-escape.claim.checkpoint"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.9",
+        "type": "factual",
+        "text": "Looking like a slaveholder was not proof of ownership.",
+        "claimIds": [
+          "craft-escape.claim.checkpoint"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.10",
+        "type": "factual",
+        "text": "William’s account says a conductor confirmed they had arrived on his train. With departure approaching, the officer allowed them through, citing the apparent master’s illness.",
+        "claimIds": [
+          "craft-escape.claim.release"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.11",
+        "type": "factual",
+        "text": "They reached Philadelphia after four days. Yet escape did not mean lasting safety.",
+        "claimIds": [
+          "craft-escape.claim.arrival",
+          "craft-escape.claim.safety"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.12",
+        "type": "factual",
+        "text": "In 1850, men came to Boston to recapture them. The Crafts subsequently left for England.",
+        "claimIds": [
+          "craft-escape.claim.safety"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.13",
+        "type": "factual",
+        "text": "Their plan exploited the treatment given to a supposed white gentleman. But every accommodation depended on keeping that false identity intact.",
+        "claimIds": [
+          "craft-escape.claim.meaning"
+        ]
+      },
+      {
+        "id": "craft-escape.asset.open-escape.script.14",
+        "type": "factual",
+        "text": "They escaped a system that treated them as property, by making it appear that one owned the other.",
+        "claimIds": [
+          "craft-escape.claim.meaning",
+          "craft-escape.claim.escape"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "craft-escape.asset.open-escape.beat.1",
+      "label": "constraint-1",
+      "purpose": "Immediate human stakes and open travel contradiction",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.1"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.2",
+      "label": "constraint-2",
+      "purpose": "Relationship inversion, two people acting together",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.2"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.3",
+      "label": "constraint-3",
+      "purpose": "New identity creates literacy vulnerability",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.3"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.4",
+      "label": "constraint-4",
+      "purpose": "Her proactive adaptation, early-source provenance",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.4"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.5",
+      "label": "constraint-5",
+      "purpose": "Functional disguise explained through later testimony",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.5"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.6",
+      "label": "constraint-6",
+      "purpose": "William’s agency and joint northbound movement",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.6"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.7",
+      "label": "constraint-7",
+      "purpose": "Raise ownership test without premature answer",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.7"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.8",
+      "label": "constraint-8",
+      "purpose": "Baltimore demand explicitly attributed",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.8"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.9",
+      "label": "constraint-9",
+      "purpose": "Distinguish appearance from documentation",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.9"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.10",
+      "label": "constraint-10",
+      "purpose": "Discretionary passage, not guaranteed mechanism",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.10"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.11",
+      "label": "constraint-11",
+      "purpose": "Arrival versus enduring danger",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.11"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.12",
+      "label": "constraint-12",
+      "purpose": "Actual1850recapture threat and further flight",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.12"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.13",
+      "label": "constraint-13",
+      "purpose": "Historical interpretation of accommodations",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.13"
+      ]
+    },
+    {
+      "id": "craft-escape.asset.open-escape.beat.14",
+      "label": "constraint-14",
+      "purpose": "Restore identities and explain exploitation of imposed relationship",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.14"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "craft-escape.asset.open-escape.visual.1",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.1",
+      "objective": "Immediate human stakes and open travel contradiction",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.1"
+      ],
+      "claimIds": [
+        "craft-escape.claim.escape"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.2",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.2",
+      "objective": "Relationship inversion, two people acting together",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.2"
+      ],
+      "claimIds": [
+        "craft-escape.claim.escape"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.3",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.3",
+      "objective": "New identity creates literacy vulnerability",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.3"
+      ],
+      "claimIds": [
+        "craft-escape.claim.signature"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.4",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.4",
+      "objective": "Her proactive adaptation, early-source provenance",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.4"
+      ],
+      "claimIds": [
+        "craft-escape.claim.signature"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.5",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.5",
+      "objective": "Functional disguise explained through later testimony",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.5"
+      ],
+      "claimIds": [
+        "craft-escape.claim.illness"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.6",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.6",
+      "objective": "William’s agency and joint northbound movement",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.6"
+      ],
+      "claimIds": [
+        "craft-escape.claim.william",
+        "craft-escape.claim.route"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.7",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.7",
+      "objective": "Raise ownership test without premature answer",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.7"
+      ],
+      "claimIds": [
+        "craft-escape.claim.checkpoint"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.8",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.8",
+      "objective": "Baltimore demand explicitly attributed",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.8"
+      ],
+      "claimIds": [
+        "craft-escape.claim.checkpoint"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.9",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.9",
+      "objective": "Distinguish appearance from documentation",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.9"
+      ],
+      "claimIds": [
+        "craft-escape.claim.checkpoint"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.10",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.10",
+      "objective": "Discretionary passage, not guaranteed mechanism",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.10"
+      ],
+      "claimIds": [
+        "craft-escape.claim.release"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.11",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.11",
+      "objective": "Arrival versus enduring danger",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.11"
+      ],
+      "claimIds": [
+        "craft-escape.claim.arrival",
+        "craft-escape.claim.safety"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.12",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.12",
+      "objective": "Actual1850recapture threat and further flight",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.12"
+      ],
+      "claimIds": [
+        "craft-escape.claim.safety"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.13",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.13",
+      "objective": "Historical interpretation of accommodations",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.13"
+      ],
+      "claimIds": [
+        "craft-escape.claim.meaning"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    },
+    {
+      "id": "craft-escape.asset.open-escape.visual.14",
+      "narrativeBeatId": "craft-escape.asset.open-escape.beat.14",
+      "objective": "Restore identities and explain exploitation of imposed relationship",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "craft-escape.asset.open-escape.script.14"
+      ],
+      "claimIds": [
+        "craft-escape.claim.meaning",
+        "craft-escape.claim.escape"
+      ],
+      "notes": "Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established af_heart; connected restrained documentary delivery, human stakes without melodrama or character imitation.",
+    "pronunciationNotes": [
+      "Ellen and William Craft; clear singular surname Craft. Baltimore: BAWL-tih-more. Philadelphia: fill-uh-DELL-fee-uh. No quoted character voices."
+    ]
+  },
+  "editorialStatus": "editorial-review"
+}

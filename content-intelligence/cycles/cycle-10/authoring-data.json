@@ -1,0 +1,307 @@
+{
+  "sources": [
+    {
+      "key": "memoir",
+      "organization": "William Craft / William Tweedie; UNC DocSouth transcription",
+      "title": "Running a Thousand Miles for Freedom (1860), first-edition pagination",
+      "type": "primary-source",
+      "file": "memoir-inspection.json",
+      "quality": "Participant narrative twelve years after escape, narrated by William; primary testimony rather than independently observed checkpoint events. UNC proofed transcription with original pagination; title/frontispiece images identified.",
+      "limits": [
+        "Exact dialogue, reconstructed emotions and surrounding anecdotes are not transcripts or adopted facts.",
+        "Weekdays conflict with 1848 calendar; use December1848, not precise daily dates.",
+        "The portrait omits facial poultice deliberately; it is a later portrait, not escape-day imagery."
+      ]
+    },
+    {
+      "key": "brown",
+      "organization": "William Wells Brown / The Liberator",
+      "title": "Singular Escape, letter dated January4,1849; issue January12,1849",
+      "type": "primary-source",
+      "file": "brown-inspection.json",
+      "quality": "Original issue header and enlarged article actually viewed. Near-contemporary abolitionist report after meeting the Crafts; not eyewitness observation of their journey.",
+      "limits": [
+        "Information may come from the Crafts; early reporting is not independent travel corroboration.",
+        "Its assertion they were out of reach in the North is contradicted by subsequent recapture attempts.",
+        "Superlative unprecedented plan excluded."
+      ]
+    },
+    {
+      "key": "traveler",
+      "organization": "Anonymous Daily Mercury correspondent; reproduced by Rosa Martinez / Cambridge University Press",
+      "title": "An Incident at the South (January19,1849), facsimile in Ellen Craft\u2019s Spanish Masquerade (2023)",
+      "type": "peer-reviewed",
+      "file": "traveler-inspection.json",
+      "quality": "Inspected facsimile reproduced within scholarly article. Anonymous writer claims to have seen travelers aboard GeneralClinch and identified them after reading Brown. Additional perspective on presentation, with retrospective identification influenced by prior report.",
+      "limits": [
+        "Original standalone microfilm not acquired; this is scholarly reproduced facsimile.",
+        "Appended Brown extract is same source family, not extra corroboration.",
+        "Spanish extraction is observer inference, not established intended ethnicity or a universal response.",
+        "Literary readings and fictional appropriations are distinguished from historical action."
+      ]
+    },
+    {
+      "key": "recapture",
+      "organization": "The Liberator / William Lloyd Garrison",
+      "title": "Slave-Hunters in Boston!!, November1,1850, printed p.174",
+      "type": "primary-source",
+      "file": "recapture-inspection.json",
+      "quality": "Original issue and enlarged article actually viewed. Contemporary Boston abolitionist reporting, independent of the later1860 memoir.",
+      "limits": [
+        "Partisan rhetoric, numerical crowds and dramatic threats not used.",
+        "Quoted Knight letter reproduced by newspaper is not its original manuscript.",
+        "Does not establish every escape detail or all later travel dates."
+      ]
+    },
+    {
+      "key": "nps",
+      "organization": "National Park Service",
+      "title": "A Desperate Leap for Liberty: The Escape of William and Ellen Craft",
+      "type": "government",
+      "file": "nps-inspection.json",
+      "quality": "Footnoted institutional synthesis; fine escape scenes mostly derive from memoir. Not an additional eyewitness.",
+      "limits": [
+        "Daily route labels contain chronology/typographic errors, including1848January label.",
+        "Baltimore bond-purchase wording oversimplifies memoir security demand; no universal statute asserted.",
+        "Summary receipt retained as manual inspection, not full HTML body."
+      ]
+    }
+  ],
+  "definitions": [
+    [
+      "escape",
+      "In December1848, enslaved married couple Ellen and William Craft escaped from Georgia by traveling openly, Ellen presenting as a white male slaveholder and William as her enslaved attendant.",
+      [
+        "memoir",
+        "brown",
+        "nps"
+      ],
+      "Core escape supported by near-contemporary report and institutional scholarship; fine mechanisms retain separate provenance.",
+      "verify"
+    ],
+    [
+      "signature",
+      "Ellen could not write; she bound her right hand to appear injured and avoid having to sign registers, a strategy described in Brown\u2019s January1849 report.",
+      [
+        "memoir",
+        "brown"
+      ],
+      "Early report likely based on participant account, not independent eyewitness; signature strategy appears before1860book.",
+      "verify"
+    ],
+    [
+      "illness",
+      "Their1860account says facial bandages concealed Ellen\u2019s beardless chin, spectacles obscured her face, and apparent illness excused general conversation.",
+      [
+        "memoir"
+      ],
+      "Verify attribution to later participant narrative; no universal guarantee of avoiding scrutiny.",
+      "verify"
+    ],
+    [
+      "william",
+      "William sustained their presentation by acting as Ellen\u2019s attendant; an anonymous1849traveling correspondent also described the servant supporting the apparent invalid and explaining illness.",
+      [
+        "memoir",
+        "traveler"
+      ],
+      "Traveling observer facsimile in scholarly source; anonymous identification influenced by Brown report; appended extract not independent.",
+      "verify"
+    ],
+    [
+      "route",
+      "Their northbound escape used trains and steamers from Georgia toward Philadelphia, through Baltimore.",
+      [
+        "memoir",
+        "nps"
+      ],
+      "Broad route sufficient; no detailed distances, daily chronology or rail carriage reconstruction.",
+      "verify"
+    ],
+    [
+      "checkpoint",
+      "Their1860account reports officials at Baltimore demanded assurance that the supposed master had the right to take William onward to Philadelphia.",
+      [
+        "memoir"
+      ],
+      "Later participant account only for detailed checkpoint; no original railway rules or official checkpoint record acquired.",
+      "verify"
+    ],
+    [
+      "release",
+      "William\u2019s1860narrative says a conductor confirmed their previous train journey and the officer ultimately let them pass as departure approached, invoking the apparent master\u2019s illness.",
+      [
+        "memoir"
+      ],
+      "Attribution maintained; confirmation of travel was not legal proof of ownership; no fabricated countdown, dialogue or guaranteed causal explanation.",
+      "verify"
+    ],
+    [
+      "arrival",
+      "They reached Philadelphia after four days of travel.",
+      [
+        "memoir",
+        "brown",
+        "nps"
+      ],
+      "Near-contemporary report and later participant narrative agree on four days; exact dates/weekday conflict excluded.",
+      "verify"
+    ],
+    [
+      "safety",
+      "In1850men came to Boston seeking to recapture the Crafts; they subsequently left for England.",
+      [
+        "recapture",
+        "nps",
+        "memoir"
+      ],
+      "Contemporaneous recapture report distinct from later memoir; northward arrival did not ensure lasting safety. No absolute legal immunity asserted.",
+      "verify"
+    ],
+    [
+      "meaning",
+      "Their strategy exploited accommodations to an apparent white gentleman while maintaining the appearance that he owned William; this did not remove the threat of enslavement.",
+      [
+        "memoir",
+        "brown",
+        "traveler",
+        "recapture"
+      ],
+      "Historical interpretation grounded in reported treatment and later danger; not a universal psychological law.",
+      "verify"
+    ],
+    [
+      "dialogue",
+      "The exact words exchanged during the escape can be established as verbatim dialogue.",
+      [
+        "memoir"
+      ],
+      "No transcripts; memoir dialogue12yearsafter event is not verbatim established.",
+      "exclude"
+    ],
+    [
+      "dates",
+      "The memoir\u2019s stated weekdays and calendar dates in December1848 align.",
+      [
+        "memoir"
+      ],
+      "Python calendar check:Dec21Thursday,Dec24Sunday,Dec25Monday; memoirWednesday,Saturday,Sunday conflict. Exclude precise dates/weekday rather than pick without evidence.",
+      "exclude"
+    ],
+    [
+      "guarantee",
+      "The disguise guaranteed passage and ensured permanent safety in the North.",
+      [
+        "memoir",
+        "recapture"
+      ],
+      "Charleston signature refusal,Baltimore scrutiny and1850recapture directly defeat claim; exclude.",
+      "exclude"
+    ]
+  ],
+  "lines": [
+    [
+      "In 1848, Ellen and William Craft escaped slavery by traveling openly.",
+      [
+        "escape"
+      ]
+    ],
+    [
+      "Ellen posed as a white male slaveholder. Her husband, William, posed as her enslaved servant.",
+      [
+        "escape"
+      ]
+    ],
+    [
+      "But that identity created a dangerous problem. A gentleman might be asked to sign his name. Ellen could not write.",
+      [
+        "signature"
+      ]
+    ],
+    [
+      "So she bound her right hand, making it appear injured. A report published weeks after their escape describes her avoiding signatures this way.",
+      [
+        "signature"
+      ]
+    ],
+    [
+      "Their later book explains more: bandages hid her beardless chin, spectacles obscured her face, and apparent illness gave her a reason to avoid conversation.",
+      [
+        "illness"
+      ]
+    ],
+    [
+      "William helped sustain the performance, acting as her attendant. Together, they traveled north by train and steamer.",
+      [
+        "william",
+        "route"
+      ]
+    ],
+    [
+      "But before Philadelphia, they faced a test the disguise could not answer.",
+      [
+        "checkpoint"
+      ]
+    ],
+    [
+      "In their account, officials in Baltimore demanded assurance that the supposed master had the right to take William along.",
+      [
+        "checkpoint"
+      ]
+    ],
+    [
+      "Looking like a slaveholder was not proof of ownership.",
+      [
+        "checkpoint"
+      ]
+    ],
+    [
+      "William\u2019s account says a conductor confirmed they had arrived on his train. With departure approaching, the officer allowed them through, citing the apparent master\u2019s illness.",
+      [
+        "release"
+      ]
+    ],
+    [
+      "They reached Philadelphia after four days. Yet escape did not mean lasting safety.",
+      [
+        "arrival",
+        "safety"
+      ]
+    ],
+    [
+      "In 1850, men came to Boston to recapture them. The Crafts subsequently left for England.",
+      [
+        "safety"
+      ]
+    ],
+    [
+      "Their plan exploited the treatment given to a supposed white gentleman. But every accommodation depended on keeping that false identity intact.",
+      [
+        "meaning"
+      ]
+    ],
+    [
+      "They escaped a system that treated them as property, by making it appear that one owned the other.",
+      [
+        "meaning",
+        "escape"
+      ]
+    ]
+  ],
+  "objectives": [
+    "Immediate human stakes and open travel contradiction",
+    "Relationship inversion, two people acting together",
+    "New identity creates literacy vulnerability",
+    "Her proactive adaptation, early-source provenance",
+    "Functional disguise explained through later testimony",
+    "William\u2019s agency and joint northbound movement",
+    "Raise ownership test without premature answer",
+    "Baltimore demand explicitly attributed",
+    "Distinguish appearance from documentation",
+    "Discretionary passage, not guaranteed mechanism",
+    "Arrival versus enduring danger",
+    "Actual1850recapture threat and further flight",
+    "Historical interpretation of accommodations",
+    "Restore identities and explain exploitation of imposed relationship"
+  ]
+}

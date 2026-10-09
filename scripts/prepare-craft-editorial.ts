@@ -1,0 +1,47 @@
+import {existsSync, readFileSync, writeFileSync} from 'node:fs';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {verifyInternalEditorial} from '../src/workflow/editorial';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {loadMediaRegistry, mediaHash} from '../src/artifacts/media';
+import {loadCycle, persistCycleEvent} from '../src/workflow/store';
+import data from '../content-intelligence/cycles/cycle-10/authoring-data.json';
+
+const base = 'content-intelligence/cycles/cycle-10';
+const now = new Date().toISOString();
+const id = 'craft-escape', aid = `${id}.asset.open-escape`;
+const cid = (key: string) => `${id}.claim.${key}`;
+const ref = (path: string) => ({path, sha256: mediaHash(path)});
+const put = (name: string, value: unknown) => {
+  const path = `${base}/${name}.json`;
+  if (existsSync(path)) throw new Error(`Preserve existing ${path}`);
+  writeFileSync(path, JSON.stringify(value, null, 2) + '\n', {flag: 'wx'});
+  return ref(path);
+};
+const sourceBodies = data.sources.map(s => {
+  const path = `${base}/research/${s.file}`;
+  const body = JSON.parse(readFileSync(path, 'utf8')) as {sourceId:string;url:string;retrievedAt:string;accessStatus:'partially-inspected';locator:string};
+  if (body.sourceId !== `source.craft-escape.${s.key}`) throw new Error('Source identity drift');
+  return {...s, ...body, inspectedEvidence:ref(path)};
+});
+const claims = data.definitions.map(d => ({id:cid(d[0] as string), type:'qualitative' as const,
+  statement:d[1] as string, verificationStatus:d[4] === 'verify' ? 'supported' as const : 'unverified' as const,
+  caveats:[d[3] as string], evidence:(d[2] as string[]).map(key => {
+    const s=sourceBodies.find(s=>s.key===key);if(!s)throw new Error('Unknown evidence source');
+    return {sourceId:s.sourceId, locator:s.locator, notes:d[3] as string};
+  })}));
+const selected=claims.filter(c=>c.verificationStatus==='supported').map(c=>c.id);
+const pkg=knowledgePackageSchema.parse({id,revision:1,topic:'Ellen and William Craft’s escape from slavery',centralQuestion:'How did an enslaved couple escape openly—with the wife posing as a slaveholder and her husband as her slave?',taxonomy:{pillar:'history-stories',domains:['african-american-history','slavery','self-emancipation'],topics:['ellen-and-william-craft','identity','escape']},timeliness:'evergreen',thesis:'The Crafts sustained an inverted social presentation by adapting to signature and conversation vulnerabilities; ownership scrutiny exposed its limits.',viewerPayoff:'Understand two people’s strategy, the constraints it created, and the danger that survived arrival in the North.',sources:sourceBodies.map(s=>({id:s.sourceId,organization:s.organization,title:s.title,sourceType:s.type,url:s.url,retrieved:s.retrievedAt.slice(0,10),notes:s.quality+' '+s.limits.join(' ')})),claims,caveats:[{id:`${id}.caveat.testimony`,statement:'Fine escape details derive mainly from their1860participant narrative. Early reporting supports inversion/signature strategy; traveling-correspondent facsimile supports appearance and William’s attendant role. Neither corroborates detailed Baltimore sequence independently. Exact dialogue, daily dates and universal travel rules omitted.',claimIds:selected}],hooks:[{id:`${id}.hook.open-escape`,archetype:'identity-inversion',text:data.lines[0]![0],viewerPromise:'Explain how open travel exposed specific vulnerabilities and how they navigated them.',claimIds:[cid('escape')]},{id:`${id}.hook.signature`,archetype:'solution-created-problem',text:'How could Ellen sign as a slaveholder when she could not write?',viewerPromise:'Understand the functional disguise and its limits.',claimIds:[cid('signature')]}],narrativeOpportunities:[{id:`${id}.narrative.constraints`,title:'A false identity under real scrutiny',description:'Inversion, vulnerabilities, joint adaptations, ownership test and outcome.',claimIds:selected}],visualOpportunities:[{id:`${id}.visual.documentary`,title:'People, presentation and proof',description:'Authentic later portraits anchor people; original labeled explanatory document and route graphics distinguish appearance from proof.',claimIds:selected}],relatedQuestions:[],followUpOpportunities:[],editorialStatus:'review'});
+const asset=contentAssetSchema.parse({id:aid,revision:1,knowledgePackageId:id,assetType:'short-form-video',editorialPurpose:pkg.viewerPayoff,storyAngle:'Their identity inversion opened travel but created new tests; illness was functional and passage remained precarious.',hookId:pkg.hooks[0]!.id,selectedClaimIds:selected,durationIntentSeconds:{minimum:70,maximum:170},script:{language:'en',segments:data.lines.map((l,i)=>({id:`${aid}.script.${i+1}`,type:'factual',text:l[0],claimIds:(l[1] as string[]).map(cid)}))},narrativeStructure:data.lines.map((_,i)=>({id:`${aid}.beat.${i+1}`,label:`constraint-${i+1}`,purpose:data.objectives[i],scriptSegmentIds:[`${aid}.script.${i+1}`]})),visualPlan:data.lines.map((l,i)=>({id:`${aid}.visual.${i+1}`,narrativeBeatId:`${aid}.beat.${i+1}`,objective:data.objectives[i],visualType:'hybrid',suggestedPrimitive:'bespoke',scriptSegmentIds:[`${aid}.script.${i+1}`],claimIds:(l[1] as string[]).map(cid),notes:'Public-domain later portraits and original explanatory graphics. No escape-day photograph, invented actors, authentic-looking fabricated document, direct dialogue, costume comedy or real-time countdown. Source provenance visibly separated. Portrait bandage omission explicitly preserved.'})),narrationPlan:{mode:'narrated',voiceDirection:'Established af_heart; connected restrained documentary delivery, human stakes without melodrama or character imitation.',pronunciationNotes:['Ellen and William Craft; clear singular surname Craft. Baltimore: BAWL-tih-more. Philadelphia: fill-uh-DELL-fee-uh. No quoted character voices.']},editorialStatus:'editorial-review'});
+const review={schemaVersion:3,cycleId:'cycle.10',topicCandidateId:'craft-escape',enteredAt:now,reviewer:'Codex session internal evidence review; not owner approval',
+  premiseAlignment:{selectionSha256:sha256Json(JSON.parse(readFileSync(`${base}/topic-selection.json`,'utf8'))),preservesPublishingOpportunity:true,rationale:'Original1849report strengthens inversion and signature mechanism; participant-attributed Baltimore remains useful and truthful without exact dialogue. Stronger evidence preserves the approved publishing opportunity and substantial explanatory payoff.'},
+  packageSha256:sha256Json(pkg),assetSha256:sha256Json(asset),scriptSha256:sha256Json(asset.script),
+  inspections:sourceBodies.map(s=>({sourceId:s.sourceId,accessStatus:s.accessStatus,identityConfirmed:true,evidenceLocations:[s.locator],supportsClaimIds:claims.filter(c=>c.verificationStatus==='supported'&&c.evidence.some(e=>e.sourceId===s.sourceId)).map(c=>c.id),limitations:s.limits,inspectedEvidence:s.inspectedEvidence,sourceQualityRationale:s.quality})),
+  claims:claims.map(c=>({id:c.id,statementSha256:sha256Json(c.statement),disposition:c.verificationStatus==='supported'?'verify':'exclude',rationale:c.caveats[0],evidence:c.verificationStatus==='supported'?c.evidence.map(e=>({sourceId:e.sourceId,locator:e.locator,assessment:e.notes,sufficientForWording:true})):[],qualificationsPreserved:true})),
+  misconceptionSafeguards:['Both people have agency; enslavement remains the stakes.','Early Brown report is not independent journey eyewitness testimony.','Anonymous traveling observer’s reproduced facsimile supports presentation only; copied Brown extract counted once.','Baltimore details are explicitly attributed to later participant account; no exact dialogue, authentic document or guaranteed escape mechanism.','Portraits are later representations, not escape-day imagery; frontispiece omits facial bandage.','Philadelphia arrival does not imply lasting safety;1850recapture threat and England departure retained.'],comprehensionReview:'Identity inversion creates signing/conversation vulnerabilities. Explain adaptations before ownership check; distinguish visual appearance from documentary assurance. Attribution accompanies later checkpoint testimony. Outcome includes continuing danger. No specialist slavery/railway history required.',rightsReview:'Public-domain historical portraits and original explanatory graphics planned; exact asset provenance must precede production. Source scans consultation only unless separately cleared. Existing OFL font and local Apache2.0Kokoro; no paid calls or cloned voices.',careAssessment:{state:'routine',rationale:'Historical enslavement treated through people’s deliberate self-emancipation and evidence-bound agency. No graphic violence, caricature, demeaning imitation, sensationalism or invented feelings. User’s explicit care guidance implemented; no unresolved factual/rights/brand exception.'},exceptionalConditions:[]};
+put('draft-package',pkg);put('draft-asset',asset);put('internal-editorial-review',review);
+const ready=verifyInternalEditorial(review,pkg,asset);
+put('knowledge-package.ready',ready.knowledgePackage);put('content-asset.ready',ready.contentAsset);
+const record=put('editorial-receipt',{draftPackage:pkg,draftAsset:asset,review}),registry=loadMediaRegistry();
+persistCycleEvent(process.cwd(),loadCycle(process.cwd(),'cycle.10',registry),{type:'complete-internal',stage:'editorial',record,at:new Date().toISOString()},registry);
+console.log('Cycle10 editorial verification complete; creative stage pending.');
