@@ -1,0 +1,34 @@
+{
+  "enteredAt": "2026-10-09T20:21:10.027910+00:00",
+  "validatedCommit": "303a4ad79728804d4ce3dba289007d55ccd102c5",
+  "passed": true,
+  "check": {
+    "command": "PATH=Node22.23.3 VITEST_MAX_WORKERS=4 pnpm check",
+    "exitCode": 0,
+    "testFiles": 52,
+    "tests": 483,
+    "durationSeconds": 75.61
+  },
+  "durability": "pnpm artifacts:durable passed:956canonical payloads,731durable native artifacts; legacy missing original expectation preserved.",
+  "journal": {
+    "cycleId": "cycle.11",
+    "revision": 14,
+    "stage": "master-review",
+    "premiseApproved": true,
+    "masterApproved": false
+  },
+  "committedRestoration": "committed-restore-proof-v2.json:26newcanonical payloads plus exact recorded implementation/preserved V1 files,59total; all hashes match.",
+  "masterSha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+  "postCheckChanges": "Only this validation/restore/backup checkpoint metadata; no master, candidate, implementation, canonical guidance or journal mutation.",
+  "ownerOutstanding": [
+    "Exact V2 viewing/listening judgment",
+    "Pronunciation/prosody and phrase synchrony",
+    "Native-device/UI/crop evidence"
+  ],
+  "boundaries": [
+    "No main merge",
+    "No Cycle12",
+    "No publication preparation",
+    "No platform upload/schedule/publication"
+  ]
+}
