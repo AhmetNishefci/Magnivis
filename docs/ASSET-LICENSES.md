@@ -207,3 +207,7 @@ Cycle #10 publication cover V1: `artifacts/covers/craft-escape-cover-v1.png` is 
 - Original paint/support layers, schematic crack networks, material-comparison shapes and modern legal summaries: Magnivis-owned explanatory artwork; no actual scan, recovered paper or historical scene implied.
 - Existing pinned Manrope400/600, SIL OFL1.1; existing local Kokoro82Maf_heart under established Apache2.0model terms. Exact font/model/output bindings accompany production. Narration and silence; no additional music, sound library or generated historical image.
 - Scholarly and period reporting inspected for research only; no thesis/report PDF or copyrighted scientific figure reused as a production asset.
+
+### Cycle #11 V2 revision
+
+V2 reuses the exact two CC0 photographs, ten local Kokoro `af_heart` WAVs and pinned OFL Manrope font assets documented above. No new external asset or historical footage was acquired. `src/components/VermeerInvestigationV2.tsx` contains new Magnivis-owned empty attribution-frame, hardened paint-plane, schematic binder comparison and connected layer-network/legal-summary graphics. The binder motif is illustrative, not molecular structure, a real micrograph or a chemical fingerprint. Crack paths reuse the project-owned schematic primitive. V2's rights and preservation bindings are under `content-intelligence/cycles/cycle-11/revision-v2/`; no historical asset rights or approval changed.

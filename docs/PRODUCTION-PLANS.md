@@ -26,6 +26,28 @@ Run the current production-chain validation with:
 pnpm production:validate wood-frog
 ```
 
+## Production corrections and finished-sequence editorial review
+
+Every meaningful correction improves both the current artifact and, if the failure exposes a reusable lesson, the existing process. Diagnose the actual failure before adding guidance: inspect owner feedback, direction, implementation and rendered evidence. Distinguish missing guidance, weak application, technical-only QA, tooling convenience and failed lesson transfer. Record the supported explanation, counterevidence, smallest correction and non-generalizations in the existing cycle revision/review evidence. A recurring correction warrants this investigation without another owner reminder; no separate knowledge ledger or new owner gate is needed.
+
+Before direction/implementation, inspect relevant recent **master revision decisions** through the existing cycle journal history, not only `editorialDecisionContext` (which intentionally supplies premise judgments). Explain which production lesson applies to this story, which does not, and how the implementation will demonstrate it. Read the relevant prior rendered/review evidence where available. Previous approval is precedent, not proof that a treatment will work again.
+
+During authoring, identify what the viewer learns or what changes visually at each consequential development. Carry objects, questions, spatial relations or evidence status forward when that clarifies the story. Visuals should unfold the discovery, conflict, transformation or mechanism where the subject supports it. Text, diagrams, archival stillness and restrained movement are legitimate choices; use them for clarity, not merely generation convenience. A direction's promise of progression must be realized in the composition and tested in the render.
+
+Before **AHMET — MASTER REVIEW**, keep technical validation and **cold-viewer rendered-sequence editorial review** separate in the existing QA/visual-inspection record. Inspect the complete rendered result as tools permit, in chronological order, including opening, transitions, mechanisms and ending; inspect decoded phone-scale samples and every caption midpoint. Full playback/listening is preferable when available. When unavailable, use dense chronological decoded samples, enlarge important states and record exactly what was inspected; full decode is not subjective watching or listening. Bind findings to the exact master hash and inspection evidence.
+
+Assess these questions with concrete scene/time references, not a score or a blanket pass:
+
+- Does the opening create truthful curiosity, and can an unfamiliar viewer understand the central contradiction?
+- Does the presentation evolve with the story; are consequential developments visible rather than only narrated?
+- Do consecutive scenes unnecessarily repeat composition, static background or text arrangements? Does each retained repetition serve continuity or comprehension?
+- Are text and diagrams the clearest treatment, or a shortcut? Is the mechanism understandable without excessive simultaneous information?
+- Does the ending deliver the promised payoff, and would an unfamiliar viewer find the rendered experience worth watching?
+
+Revise clear actionable weaknesses internally before handoff. Verify the changed stretches and their effect on the complete sequence. Stop when remaining refinements offer no material benefit or are subjective/unresolved; do not run an endless perfection loop. Escalate material trade-offs, factual uncertainty and unresolved consequential weaknesses honestly. Record remaining weaknesses, actions taken, reasons for retained choices, coverage and audio/device limitations. Internal judgment never impersonates owner approval or self-certifies excellence.
+
+At the next production, the entry-point instruction above brings relevant correction evidence into planning automatically through normal session work. Detect recurrence by comparing the rendered sequence with those specific lessons and the selected direction. Geometry, decode, source/caption identity and evidence presence can be automated; curiosity, purposeful motion, repetition, explanatory adequacy and worth watching require accountable editorial judgment. No automated quality guarantee is made.
+
 ## Wood Frog V1
 
 `production-plan.wood-frog-freeze.v1` revision 3 is the first implemented ProductionPlan. It binds approved package and asset revision 2, plus `caption-plan.wood-frog.v1` revision 2, to the 40-second, 1080x1920, 30 fps `Magnivis-Wood-Frog` composition. Its five beats preserve the approved scientific sequence:

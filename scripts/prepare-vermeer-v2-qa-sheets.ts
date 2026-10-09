@@ -1,0 +1,17 @@
+import {createRequire} from 'node:module';
+import {spawnSync} from 'node:child_process';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+import {vermeerV2Target as target} from './production-video-targets';
+import captions from '../src/captions/plans/vermeer-forgery-v2.json';
+import plan from '../src/production/plans/vermeer-forgery-v2.json';
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string,base='qa/vermeer-forgery-v2';mkdirSync(base,{recursive:true});
+const sheet=(name:string,frames:number[],columns:number,width:number)=>{const rows=Math.ceil(frames.length/columns),selection=frames.map(f=>`eq(n\\,${f})`).join('+');const r=spawnSync(ffmpeg,['-v','error','-i',target.output,'-vf',`select=${selection},setpts=N/FRAME_RATE/TB,scale=${width}:${Math.round(width*1920/1080)},tile=${columns}x${rows}:nb_frames=${frames.length}:padding=6:margin=6:color=0x222325`,'-frames:v','1','-q:v','2',`${base}/${name}.jpg`],{encoding:'utf8'});if(r.status!==0)throw new Error(r.stderr);return {path:`${base}/${name}.jpg`,sha256:mediaHash(`${base}/${name}.jpg`),frames};};
+const midpoints=captions.cues.map(c=>Math.floor((c.startFrame+c.endFrame)/2));const sheets=[];
+for(let i=0;i<midpoints.length;i+=12)sheets.push(sheet(`captions-${i/12+1}`,midpoints.slice(i,i+12),3,270));
+const overview=sheet('scene-overview',plan.beats.map(b=>b.frames.start+Math.floor((b.frames.end-b.frames.start)*.5)),5,216);
+const motion=sheet('motion-progression',[0,60,120,...[4,6,7].flatMap(i=>[.12,.5,.88].map(p=>plan.beats[i]!.frames.start+Math.floor((plan.beats[i]!.frames.end-plan.beats[i]!.frames.start)*p)))].sort((a,b)=>a-b),4,270);
+const sequenceFrames=Array.from({length:83},(_,i)=>Math.min(i*30,2486));
+const sequenceSheets=[];for(let i=0;i<sequenceFrames.length;i+=20)sequenceSheets.push(sheet(`sequence-${i/20+1}`,sequenceFrames.slice(i,i+20),5,216));
+const phone=sheet('phone-readability',[60,630,1209,1495,1831,2035,2280,2467],4,360);
+writeFileSync(`${base}/sheet-bindings.json`,JSON.stringify({enteredAt:new Date().toISOString(),masterSha256:mediaHash(target.output),method:'All images decoded from exact mastered MP4, not browser approximations; bounded sheets support actual image inspection. No real-device pass or continuous human playback implied.',captionSheets:sheets,sceneOverview:overview,motionProgression:motion,chronologicalSequence:sequenceSheets,phoneScale:phone},null,2)+'\n',{flag:'wx'});console.log('Prepared six caption sheets, scene overview and motion progression.');

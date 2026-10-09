@@ -1,0 +1,45 @@
+{
+  "enteredAt": "2026-10-09T20:17:35.931259+00:00",
+  "passed": true,
+  "candidateSha256": "773ca24cade456906138efee2432d78007cbebfcbaa33231a6756939753f37cd",
+  "masterSha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+  "check": {
+    "command": "PATH=Node22.23.3 VITEST_MAX_WORKERS=4 pnpm check",
+    "exitCode": 0,
+    "testFilesPassed": 52,
+    "testsPassed": 483,
+    "scope": "TypeScript, ESLint, complete Vitest suite and git diff --check."
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 956,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "validationHistory": [
+    {
+      "result": "initial full check failed",
+      "finding": "Earlier discovery history binds exact WORKFLOW-V3/CREATIVE-DIRECTION bytes.",
+      "remedy": "Restore exact bound document bytes; keep durable production lesson in AGENTS/PRODUCTION-PLANS. No historical digest/receipt rewrite."
+    },
+    {
+      "result": "final full check passed",
+      "files": 52,
+      "tests": 483
+    }
+  ],
+  "limits": "Staged Git tracking verified here; remote synchronization and committed-byte restore recorded separately. No device/listening/owner approval implied."
+}
