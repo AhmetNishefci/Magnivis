@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T15:21:28.822856Z",
+  "candidateSha256": "4e2a4a467199a034c8b8364acf5bc33b26265d2b5f58ab47fd90f27b4c51d317",
+  "canonicalMedia": {
+    "passed": true,
+    "canonicalPayloads": 895,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "durableArtifactCount": 731,
+  "historicalMissingExpectations": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "checks": {
+    "pnpm check": "passed;52files;483tests",
+    "pnpm artifacts:durable": "passed",
+    "exactCandidateNativeTransition": "passed without persistence or owner decision",
+    "scopedGitRestore": {
+      "path": "content-intelligence/cycles/cycle-10/revision-v3/clean-restore-check.json",
+      "sha256": "e2035897ffa26f02c80726ed75a1319b0956c91ceccff68682f91552538a9cbe"
+    },
+    "historyCheck": {
+      "path": "content-intelligence/cycles/cycle-10/revision-v3/historical-integrity-check.json",
+      "sha256": "08f8a071f736d81136459f86b417271f4fbc30b65f2f71aa954fab2973dbca2c"
+    },
+    "audioIdentity": {
+      "path": "content-intelligence/cycles/cycle-10/revision-v3/audio-identity-check.json",
+      "sha256": "9032413dee72c949047de50e661f8f547997df381d0d8bc6eca4511b4b9c45e2"
+    }
+  },
+  "scope": "Exact committed canonical V3 source/media plus bounded fresh Git restore and native candidate validation. Pinned dependencies reused; no clean dependency install or remote clone claimed. Backup synchronization verified separately.",
+  "initialCheckFailure": "One unrelated historical Chocolate test exceeded the existing5000ms timeout during concurrent durability hashing. Full pnpm check repeated without concurrent hashing passed all483tests; no tests or timeouts modified."
+}

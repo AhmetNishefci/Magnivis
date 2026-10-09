@@ -1,20 +1,13 @@
 {
   "schemaVersion": 3,
   "id": "cycle.10",
-  "revision": 22,
+  "revision": 23,
   "authority": {
     "path": "workflow/authorities/cycle-10-start.json",
     "sha256": "915b2b628de3349ef4475e88c746d7b2e20013e5f9275c1357ae43deebd79e08"
   },
-  "stage": "production",
-  "workInProgress": {
-    "stage": "production",
-    "record": {
-      "path": "content-intelligence/cycles/cycle-10/revision-v3/production-start.json",
-      "sha256": "9d49de21d7543766bdd6a28e5ef2c43b3b871f24c7642fc37e133ed9c02fa20c"
-    },
-    "startedAt": "2026-10-09T15:06:01.190Z"
-  },
+  "stage": "master-review",
+  "workInProgress": null,
   "receipts": [
     {
       "stage": "discovery",
@@ -36,6 +29,13 @@
         "path": "content-intelligence/cycles/cycle-10/revision-v3/direction-v3.json",
         "sha256": "8d309df110f343768d85fcc1291614e99f39cfffa64dceee09b2020bb4de042c"
       }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/master-candidate-v3.json",
+        "sha256": "4e2a4a467199a034c8b8364acf5bc33b26265d2b5f58ab47fd90f27b4c51d317"
+      }
     }
   ],
   "premise": {
@@ -46,7 +46,10 @@
     "path": "content-intelligence/cycles/cycle-10/owner-premise-approval-v1.json",
     "sha256": "3da547328bca255e538eb6ae67a5b6d7404a63e962c6c5030bd47c742a36e386"
   },
-  "candidate": null,
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-10/revision-v3/master-candidate-v3.json",
+    "sha256": "4e2a4a467199a034c8b8364acf5bc33b26265d2b5f58ab47fd90f27b4c51d317"
+  },
   "masterDecision": null,
   "release": null,
   "publicationDecision": null,
@@ -271,6 +274,16 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-10/revision-v3/production-start.json",
         "sha256": "9d49de21d7543766bdd6a28e5ef2c43b3b871f24c7642fc37e133ed9c02fa20c"
+      }
+    },
+    {
+      "revision": 23,
+      "previousSha256": "a02b63c7ffd3ba3467ec0f30dc4f097d59d62c758987f209c30161d88dc09c6d",
+      "event": "production",
+      "at": "2026-10-09T15:21:30.279Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/revision-v3/master-candidate-v3.json",
+        "sha256": "4e2a4a467199a034c8b8364acf5bc33b26265d2b5f58ab47fd90f27b4c51d317"
       }
     }
   ]
