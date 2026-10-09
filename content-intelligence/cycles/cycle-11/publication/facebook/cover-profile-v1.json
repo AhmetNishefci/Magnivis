@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.vermeer-forgery.facebook.cover-v1",
+  "revision": 1,
+  "platform": "facebook",
+  "surface": "facebook-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-09T20:51:33.931Z",
+  "reviewAfter": "2026-10-16T20:51:33.931Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static browser canvas checked; no platform-derived safe composition region measured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail overlay geometry unmeasured.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Static image; no native caption/overlay geometry measured.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Grid/profile/feed/native cover crop geometry unknown; no invented rectangle.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-11/publication/qa/selected-frame-cover-v1.json",
+        "sha256": "4fb1f64441f6a3a4249cde66524b521aa031bab014975e685d7dfea10c42a428"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-11/publication/policy-inspection-v1.json",
+        "sha256": "cc83e78b6a1029ded02b5cc22ac8a0ccd11cb0c7a799db29f4509e80a50948b5"
+      }
+    ],
+    "rationale": "Local1080x1920PNG cover or exact decoded frame reference; native upload/selection capability not tested. Seven-day internal policy review window is not geometry evidence."
+  }
+}

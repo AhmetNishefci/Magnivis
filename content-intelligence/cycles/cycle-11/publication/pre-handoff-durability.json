@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T20:53:38.102664Z",
+  "canonicalMedia": {
+    "passed": true,
+    "canonicalPayloads": 957,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "durableArtifactCount": 731,
+  "historicalMissingExpectations": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "method": "pnpm artifacts:durable on staged authorized release; exact hashes and Git tracking validated, historical missing expectations retained"
+}

@@ -1,0 +1,201 @@
+{
+  "checkedAt": "2026-10-09T20:54:11.243Z",
+  "passed": true,
+  "cycleId": "cycle.11",
+  "revision": 17,
+  "nextAction": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
+    "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
+  },
+  "reviewTargetSha256": "e1ce2c8246c35a3b3ab5d9a2d3bd709725f95f13e2b6e63b09152886077e3483",
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-11/publication/master-approval-v1.json",
+    "sha256": "9f0e7c569dc495da64368738ec79eb7e00f4d6e5d90998a8f7eb80213cba3859"
+  },
+  "masterUnchanged": true,
+  "fullMediaDecode": "passed",
+  "approvedSourceAndInputHashesUnchanged": true,
+  "priorCanonicalEntriesUnchanged": 956,
+  "canonicalPayloads": 957,
+  "newCanonicalPayloads": 1,
+  "newMediaBytes": 353687,
+  "historicalFilesUnchanged": 4177,
+  "v1Preserved": {
+    "path": "artifacts/masters/vermeer-forgery-cycle11-candidate-v1.mp4",
+    "sha256": "cefa95c98accb232b1fb00d3087f74687219200cbbd339275493dd27812d6ff3"
+  },
+  "workflowReplay": [
+    {
+      "id": "cycle.10",
+      "revision": 26,
+      "stage": "publication-review"
+    },
+    {
+      "id": "cycle.11",
+      "revision": 17,
+      "stage": "publication-review"
+    },
+    {
+      "id": "cycle.4",
+      "revision": 9,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.5",
+      "revision": 13,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.6",
+      "revision": 23,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.7",
+      "revision": 25,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.8",
+      "revision": 30,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.9",
+      "revision": 18,
+      "stage": "authorized"
+    }
+  ],
+  "recovery": "exact no-op",
+  "stateSha256": "19241c6510029d28846d91bfd9165ddaf0038af1cc4b8cfcc8a268ed3f16fca8",
+  "event17Sha256": "022905acd602e0e653bd25f04ee01d58791fd2ab5397afbc17b3121df21c85c8",
+  "copyLengths": [
+    {
+      "platform": "youtube",
+      "titleCharacters": 44,
+      "descriptionCharacters": 1289
+    },
+    {
+      "platform": "tiktok",
+      "titleCharacters": 0,
+      "descriptionCharacters": 781
+    },
+    {
+      "platform": "instagram",
+      "titleCharacters": 0,
+      "descriptionCharacters": 982
+    },
+    {
+      "platform": "facebook",
+      "titleCharacters": 44,
+      "descriptionCharacters": 942
+    }
+  ],
+  "inheritedGeometryUnchanged": true,
+  "uniqueVideoPayloads": 1,
+  "derivativeVideos": 0,
+  "uniqueSelectedCoverPayloads": 2,
+  "newCoverPayloads": 1,
+  "unknownCount": 44,
+  "knownCollisions": [],
+  "uploads": [
+    {
+      "variantId": "vermeer-forgery.variant.youtube.v1",
+      "platform": "youtube",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+            "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/vermeer-forgery-cycle11-candidate-v2.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.91e6e2c0ec4bb8607e1b18fbc0d3bad1af22fd61de1cad416b786aad350d2e00",
+            "sha256": "91e6e2c0ec4bb8607e1b18fbc0d3bad1af22fd61de1cad416b786aad350d2e00"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/vermeer-forgery-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "1ec198ed6d5b1b801ad5896f9f270cc54263420bfac46c6a5001ffe838f91547"
+    },
+    {
+      "variantId": "vermeer-forgery.variant.tiktok.v1",
+      "platform": "tiktok",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+            "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/vermeer-forgery-cycle11-candidate-v2.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.faa9b1c63a1481fad87d421d7d4556d9ad439aa191489b288278cdf023a8b659",
+            "sha256": "faa9b1c63a1481fad87d421d7d4556d9ad439aa191489b288278cdf023a8b659"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/vermeer-cycle11-v2/frame-09-2.5s.png"
+        }
+      ],
+      "manifestSha256": "d0eb799582f4d94974f9d839edbc5bcd2d5b801fbd07d4eeeb904d31bf97f28e"
+    },
+    {
+      "variantId": "vermeer-forgery.variant.instagram.v1",
+      "platform": "instagram",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+            "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/vermeer-forgery-cycle11-candidate-v2.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.91e6e2c0ec4bb8607e1b18fbc0d3bad1af22fd61de1cad416b786aad350d2e00",
+            "sha256": "91e6e2c0ec4bb8607e1b18fbc0d3bad1af22fd61de1cad416b786aad350d2e00"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/vermeer-forgery-cover-v1.png"
+        }
+      ],
+      "manifestSha256": "c050eee00629494b653eaa19fb67a653787582a7cfb3167632994032ef7a8be3"
+    },
+    {
+      "variantId": "vermeer-forgery.variant.facebook.v1",
+      "platform": "facebook",
+      "files": [
+        {
+          "role": "video",
+          "media": {
+            "id": "media.f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+            "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/vermeer-forgery-cycle11-candidate-v2.mp4"
+        },
+        {
+          "role": "cover",
+          "media": {
+            "id": "media.faa9b1c63a1481fad87d421d7d4556d9ad439aa191489b288278cdf023a8b659",
+            "sha256": "faa9b1c63a1481fad87d421d7d4556d9ad439aa191489b288278cdf023a8b659"
+          },
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/qa-evidence/vermeer-cycle11-v2/frame-09-2.5s.png"
+        }
+      ],
+      "manifestSha256": "ace475e0ba45a79c7a47a2cb051d9d08b0041e90b2503ff7c513643acead2c17"
+    }
+  ],
+  "publicationAuthorized": false,
+  "externalPlatformActions": []
+}

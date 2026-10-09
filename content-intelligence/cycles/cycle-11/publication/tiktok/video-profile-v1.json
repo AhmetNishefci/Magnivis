@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.vermeer-forgery.tiktok.release-v1",
+  "revision": 1,
+  "platform": "tiktok",
+  "surface": "tiktok-feed",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-09T20:49:39.957587Z",
+  "reviewAfter": "2026-10-16T20:49:39.958635Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "provisional",
+    "regions": [
+      {
+        "x": 84,
+        "y": 240,
+        "width": 806,
+        "height": 1370
+      }
+    ],
+    "rationale": "Repository projection only. src/design/safe-areas.ts; Speed of Light iPhone 17 Pro Max 2026-09-27 historical pass, app/OS/hash unknown; Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "provenance": [
+      {
+        "path": "artifacts/presentation-profiles.json",
+        "sha256": "33d66ce6fee9bbfa4c05720b2270d07319f250d2d0673b1b50856715bd81c2cb"
+      }
+    ]
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy native exclusions; null stays unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy caption geometry; null stays unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No legacy measured crop model; nothing inferred.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "mp4"
+    ],
+    "videoCodecs": [
+      "h264"
+    ],
+    "audioCodecs": [
+      "aac"
+    ],
+    "fps": [
+      30
+    ],
+    "duration": {
+      "minimum": 3,
+      "maximum": 90
+    },
+    "provenance": [
+      {
+        "path": "src/platform-variants/platform-profiles.ts",
+        "sha256": "f5cc2f039121b608ad1428d952084d161fd2685907ae6f1a8b7a03f2e978d0f1"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-11/publication/policy-inspection-v1.json",
+        "sha256": "cc83e78b6a1029ded02b5cc22ac8a0ccd11cb0c7a799db29f4509e80a50948b5"
+      }
+    ],
+    "rationale": "Conservative local3–90second envelope for exact82.944second approved master. Official policy inspection bound; no universal platform cap or live account pass. Geometry confidence unchanged. Seven-day refresh is an internal review window, not device evidence."
+  }
+}

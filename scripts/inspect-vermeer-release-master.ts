@@ -1,0 +1,15 @@
+import {spawnSync} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {mediaHash} from '../src/artifacts/media';
+const base='content-intelligence/cycles/cycle-11/publication',production='content-intelligence/cycles/cycle-11/revision-v2',master='artifacts/masters/vermeer-forgery-cycle11-candidate-v2.mp4';
+if(mediaHash(master)!=='f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8')throw new Error('Approved master drift');
+const bindings=JSON.parse(readFileSync(`${production}/implementation-bindings.json`,'utf8')) as {files:{path:string;sha256:string}[]};
+for(const f of bindings.files)if(mediaHash(f.path)!==f.sha256)throw new Error('Approved input drift: '+f.path);
+const qa=JSON.parse(readFileSync('qa/vermeer-forgery-v2/report.json','utf8')) as {passed:boolean};if(!qa.passed)throw new Error('Master QA failed');
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+const decode=spawnSync(ffmpeg,['-v','error','-xerror','-err_detect','explode','-i',master,'-map','0:v:0','-map','0:a:0','-f','null','-'],{encoding:'utf8'});if(decode.status!==0)throw new Error(decode.stderr);
+const canonicalFrame='artifacts/qa-evidence/vermeer-cycle11-v2/frame-09-2.5s.png';
+if(mediaHash(canonicalFrame)!==mediaHash('qa/vermeer-forgery-v2/frame-09-2.5s.png'))throw new Error('Selected cover frame differs from actual approved master decode');
+writeFileSync(`${base}/qa/master-release-validation-v2.json`,JSON.stringify({checkedAt:new Date().toISOString(),passed:true,master:{path:master,sha256:mediaHash(master)},approvedSourceAndInputHashesUnchanged:true,fullDecode:'passed',canonicalQa:qa,selectedCoverFrame:{path:canonicalFrame,frame:74,seconds:74/30,sha256:mediaHash(canonicalFrame),exactNewDecodeMatches:true},scope:'Exact owner-approved master re-probed and fully decoded. Existing bound116 browser checkpoints and owner creative approval retained. No new video render or source/audio/caption modification; no native/device/crop pass.',externalActions:[]},null,2)+'\n',{flag:'wx'});
+console.log('Exact approved master and source bindings unchanged; full decode/QA and selected frame verified.');

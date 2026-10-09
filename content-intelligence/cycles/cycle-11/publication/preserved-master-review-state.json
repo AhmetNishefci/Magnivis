@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
   "id": "cycle.11",
-  "revision": 17,
+  "revision": 14,
   "authority": {
     "path": "workflow/authorities/cycle-11-start.json",
     "sha256": "5a69f06745b84a90dc57e6cc3500da4c7395b5623909b7218e92722e3e421d4e"
   },
-  "stage": "publication-review",
+  "stage": "master-review",
   "workInProgress": null,
   "receipts": [
     {
@@ -36,13 +36,6 @@
         "path": "content-intelligence/cycles/cycle-11/revision-v2/master-candidate-v2.json",
         "sha256": "773ca24cade456906138efee2432d78007cbebfcbaa33231a6756939753f37cd"
       }
-    },
-    {
-      "stage": "presentation",
-      "record": {
-        "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
-        "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
-      }
     }
   ],
   "premise": {
@@ -57,14 +50,8 @@
     "path": "content-intelligence/cycles/cycle-11/revision-v2/master-candidate-v2.json",
     "sha256": "773ca24cade456906138efee2432d78007cbebfcbaa33231a6756939753f37cd"
   },
-  "masterDecision": {
-    "path": "content-intelligence/cycles/cycle-11/publication/master-approval-v1.json",
-    "sha256": "9f0e7c569dc495da64368738ec79eb7e00f4d6e5d90998a8f7eb80213cba3859"
-  },
-  "release": {
-    "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
-    "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
-  },
+  "masterDecision": null,
+  "release": null,
   "publicationDecision": null,
   "exception": null,
   "observations": [],
@@ -207,36 +194,6 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-11/revision-v2/master-candidate-v2.json",
         "sha256": "773ca24cade456906138efee2432d78007cbebfcbaa33231a6756939753f37cd"
-      }
-    },
-    {
-      "revision": 15,
-      "previousSha256": "40e9e019c8497ba1ded26aa8cc06e381830c2aeca70be39c94b26300d6412e5f",
-      "event": "owner-decision",
-      "at": "2026-10-09T20:48:00.909Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-11/publication/master-approval-v1.json",
-        "sha256": "9f0e7c569dc495da64368738ec79eb7e00f4d6e5d90998a8f7eb80213cba3859"
-      }
-    },
-    {
-      "revision": 16,
-      "previousSha256": "f83b26db103b1acd4e5fb6b7e8e222df747b1afc8f2538688c4021091f74a5fb",
-      "event": "begin-presentation",
-      "at": "2026-10-09T20:48:01.986Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-11/publication/presentation-start-v1.json",
-        "sha256": "e19ad9a325d7d480786859c4b8908f6219d31e8bd1bf91addd8f3e149f0f023a"
-      }
-    },
-    {
-      "revision": 17,
-      "previousSha256": "c973840f3851011f88bae3ad896bdd0f45f04988d1ed61545fc0b1ce0cb0cfde",
-      "event": "presentation",
-      "at": "2026-10-09T20:54:05.931Z",
-      "evidence": {
-        "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
-        "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
       }
     }
   ]

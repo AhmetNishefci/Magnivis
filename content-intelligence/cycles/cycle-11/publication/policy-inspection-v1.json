@@ -1,0 +1,55 @@
+{
+  "inspectedAt": "2026-10-09T20:49:39.957587Z",
+  "method": "Official web-page inspection and clearly limited indexed excerpts; no authenticated account access",
+  "sources": [
+    {
+      "key": "youtube-shorts",
+      "url": "https://support.google.com/youtube/answer/15424877?hl=en",
+      "retrievedAt": "2026-10-09T20:49:39.957587Z",
+      "finding": "Full official page inspected: vertical or square up to three minutes; active Content ID claim on Short over one minute blocks globally. No claim/account check performed."
+    },
+    {
+      "key": "youtube-thumbnail",
+      "url": "https://support.google.com/youtube/answer/72431?hl=en",
+      "retrievedAt": "2026-10-09T20:49:39.957587Z",
+      "finding": "Full official page inspected: custom Shorts thumbnail desktop Studio for verified accounts; 9:16 recommended. 2160x3840 recommended, 640 minimum height; provided1080x1920 falls below preferred size but above minimum. Actual account control and surface crop untested."
+    },
+    {
+      "key": "youtube-disclosure",
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en",
+      "retrievedAt": "2026-10-09T20:49:39.957587Z",
+      "finding": "Official page inspected: meaningful realistic synthetic content disclosure. Stock synthetic narrator is not claimed to clone a real person; recommend Yes for transparency, not a verified mandatory classification."
+    },
+    {
+      "key": "tiktok-disclosure",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content?authuser=0",
+      "retrievedAt": "2026-10-09T20:49:39.957587Z",
+      "finding": "Official indexed search excerpt inspected; full page body inaccessible/empty. Excerpt requires labeling realistic synthetic audio/images/video. Recommend AI label on; current actual UI untested."
+    },
+    {
+      "key": "tiktok-cover",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/editing-posting-and-deleting?lang=id",
+      "retrievedAt": "2026-10-09T20:49:39.957587Z",
+      "finding": "Official indexed excerpt says cover may be selected before posting. Full page redirect inaccessible; no custom image capability or selector precision asserted."
+    },
+    {
+      "key": "meta-disclosure",
+      "url": "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+      "retrievedAt": "2026-10-09T20:49:39.957587Z",
+      "finding": "Full official page inspected, including later labeling updates. Realistic-sounding digitally created audio uses disclosure tool. Recommend available AI disclosure on; current wording/control requires live confirmation."
+    },
+    {
+      "key": "facebook-reels",
+      "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+      "retrievedAt": "2026-10-09T20:49:39.957587Z",
+      "finding": "Official announcement inspected: gradual rollout of unified videos-as-Reels and audience controls, no length/format restriction in announced flow. No account rollout verification. No universal90s cap asserted."
+    }
+  ],
+  "limitations": [
+    "Instagram cover image upload and grid/feed crop not verified from accessible official current instructions or actual account. Conditional operator action only.",
+    "TikTok full help bodies inaccessible; excerpt-supported statements are not account tests.",
+    "Visibility, audience, category, reuse, upload quality and AI label controls require live confirmation.",
+    "Export3–90seconds is a conservative local envelope for this82.944s asset, not a universal platform limit."
+  ],
+  "externalActions": []
+}
