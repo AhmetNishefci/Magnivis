@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T14:12:21.132093+00:00",
+  "candidateSha256": "83a3495d35acc49d1f71d7b394edfd376cc8c5293b41f68ca138fd11744a1ca8",
+  "canonicalMedia": {
+    "passed": true,
+    "canonicalPayloads": 853,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "frozenLegacyBinaryPaths": 442
+  },
+  "durableArtifactCount": 731,
+  "historicalMissingExpectations": [
+    {
+      "artifactId": "wood-frog.historical-master",
+      "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+    }
+  ],
+  "checks": {
+    "pnpm check": "passed;52 files;483 tests",
+    "pnpm artifacts:durable": "passed",
+    "exactCandidateNativeTransition": "passed without persistence or owner decision",
+    "scopedGitRestore": {
+      "path": "content-intelligence/cycles/cycle-10/clean-restore-check.json",
+      "sha256": "f91b7c7d6fd07babdc0147bf38b5b0d28ad353e59f20f4167402f4a4cc467ebc"
+    },
+    "historyCheck": {
+      "path": "content-intelligence/cycles/cycle-10/historical-integrity-check.json",
+      "sha256": "85d99d3ae413f3c9b3a8a63105f7ffae3368fde12403fbe20b94b0d1c0e30032"
+    }
+  },
+  "scope": "Local committed canonical source/media/evidence, exact source acquisition bytes, native restored candidate validation and exclusive100MiB physical Git size limit. No remote durability assertion. Owner authorized push only through491013e to existing branch; no Cycle10 remote branch exists, requested new-branch authority still pending.",
+  "initialCheckFailure": "First check began before new media staging and during render; untracked canonical evidence and three5-second test timeouts. Rerun after tracking and rendering passed all483tests."
+}

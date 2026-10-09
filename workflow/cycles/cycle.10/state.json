@@ -1,20 +1,13 @@
 {
   "schemaVersion": 3,
   "id": "cycle.10",
-  "revision": 8,
+  "revision": 9,
   "authority": {
     "path": "workflow/authorities/cycle-10-start.json",
     "sha256": "915b2b628de3349ef4475e88c746d7b2e20013e5f9275c1357ae43deebd79e08"
   },
-  "stage": "production",
-  "workInProgress": {
-    "stage": "production",
-    "record": {
-      "path": "content-intelligence/cycles/cycle-10/production-start.json",
-      "sha256": "01698671f8d0d7311cd4d86dd7eda71f042f845f220ee9dfd25e9690b7e90b8b"
-    },
-    "startedAt": "2026-10-09T13:46:01.779Z"
-  },
+  "stage": "master-review",
+  "workInProgress": null,
   "receipts": [
     {
       "stage": "discovery",
@@ -36,6 +29,13 @@
         "path": "content-intelligence/cycles/cycle-10/direction-v1.json",
         "sha256": "0b4e4b92b732481295e89b7d262751bcfee775d6ee89a8c7d0b0e3a097546158"
       }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-10/master-candidate-v1.json",
+        "sha256": "83a3495d35acc49d1f71d7b394edfd376cc8c5293b41f68ca138fd11744a1ca8"
+      }
     }
   ],
   "premise": {
@@ -46,7 +46,10 @@
     "path": "content-intelligence/cycles/cycle-10/owner-premise-approval-v1.json",
     "sha256": "3da547328bca255e538eb6ae67a5b6d7404a63e962c6c5030bd47c742a36e386"
   },
-  "candidate": null,
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-10/master-candidate-v1.json",
+    "sha256": "83a3495d35acc49d1f71d7b394edfd376cc8c5293b41f68ca138fd11744a1ca8"
+  },
   "masterDecision": null,
   "release": null,
   "publicationDecision": null,
@@ -131,6 +134,16 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-10/production-start.json",
         "sha256": "01698671f8d0d7311cd4d86dd7eda71f042f845f220ee9dfd25e9690b7e90b8b"
+      }
+    },
+    {
+      "revision": 9,
+      "previousSha256": "fe5061285ba3c94412c12f8950b3bb3418a149b5a32016090e5548d55dcc4fd6",
+      "event": "production",
+      "at": "2026-10-09T14:12:24.637Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-10/master-candidate-v1.json",
+        "sha256": "83a3495d35acc49d1f71d7b394edfd376cc8c5293b41f68ca138fd11744a1ca8"
       }
     }
   ]
