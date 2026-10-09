@@ -1,0 +1,664 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T19:47:07.281753+00:00",
+  "sourceCommit": "d72d071ae8131d61ee69342962471bb599c109e7",
+  "baselineCommit": "cf44f9c45d084720ec27bb7423923de4ad54281e",
+  "destination": "/private/tmp/magnivis-cycle11-git-restore-2qw2ju87",
+  "method": "Empty isolated directory restored from committed Git archive blobs, no workspace-media copy, regeneration, browser/model cache or credentials. Every Cycle11 changed file independently compared with authoritative bytes.",
+  "scope": "Bounded Cycle11 additions and five common-file changes; not a full clean-machine install/render or remote clone. Existing repository media separately checked by full durability validator and historical validators.",
+  "fileCount": 130,
+  "restoredBytes": 138355880,
+  "masterSha256": "cefa95c98accb232b1fb00d3087f74687219200cbbd339275493dd27812d6ff3",
+  "files": [
+    {
+      "path": "artifacts/masters/vermeer-forgery-cycle11-candidate-v1.mp4",
+      "sha256": "cefa95c98accb232b1fb00d3087f74687219200cbbd339275493dd27812d6ff3",
+      "bytes": 39049375
+    },
+    {
+      "path": "artifacts/media-catalog.json",
+      "sha256": "f92a3aa0fae8941897218e2da6edfed323bb81081465f7bb85a3619d3b84fe88",
+      "bytes": 846484
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-first-pass/refinement-render.mp4",
+      "sha256": "333462626fa32b68087a5337a53811a854981d6dbbf6cca650a8e2b53fe82630",
+      "bytes": 39092817
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-first-pass/unreviewed-render.mp4",
+      "sha256": "5ffeb0ff62605f04a8d2b7c5460da3a54961f589f0fc90d42d6df525dcc6d6f6",
+      "bytes": 40163551
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/captions-1.jpg",
+      "sha256": "f6f4c98de0333a292b2d047191022e721929ea8163ec14d528a3469cc193b387",
+      "bytes": 157677
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/captions-2.jpg",
+      "sha256": "d1a136cd8313b2cbd5ad5572ef24d26e3108340b9ebf4f6ccaa7c426c8873815",
+      "bytes": 162727
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/captions-3.jpg",
+      "sha256": "f0a24ee01f283c3975428b67365f2c58631cfeafef4277bc2379b62ab46030d6",
+      "bytes": 150126
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/captions-4.jpg",
+      "sha256": "c2c38a8872a78be9770ac924ec77aa6a048f524d726f0c907b2161ccab0cb37d",
+      "bytes": 144982
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/captions-5.jpg",
+      "sha256": "c3556688e95d067402f037e9dbdcf9a647449d66598acfa16187bf6b6ec0ccd4",
+      "bytes": 165145
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/captions-6.jpg",
+      "sha256": "7b49ae21ac2b48104788a4ab8bce5d6ced6ca7d68e4997d40c84ea3b0b21d396",
+      "bytes": 37241
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/contact-sheet.jpg",
+      "sha256": "c41eb421d97504aa430258325142f36c733484e741aaf6ff8f88c07369bb0c82",
+      "bytes": 1647991
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-09-2.5s.png",
+      "sha256": "7c5725bd8ddd48bdc7d88626d2b7427c963d2f0826fc87384ab103fa4c70833b",
+      "bytes": 499894
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-102-73.7s.png",
+      "sha256": "21ae855b08efb475bfc5daf3543cf5db1401d9add8997015b6c7b397f53b13c9",
+      "bytes": 447950
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-112-80.8s.png",
+      "sha256": "203966b2754ca438ee3d77c9465ab7b9222cec2227e3834f6700e1d29045493c",
+      "bytes": 731631
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-19-10.7s.png",
+      "sha256": "1fe50892b51edfe237e8158419b9d9e7e6f3861da76f600cdfc56043d8f8105b",
+      "bytes": 336217
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-30-20.7s.png",
+      "sha256": "2c7ff3234f8a0b28988dd5d20755ded92b894f2021396fa282a3338b0b9bc0fa",
+      "bytes": 306529
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-44-30.8s.png",
+      "sha256": "f7edae78d1764245e0b8c0ed550752ec01156ab6909d1de0a9db8c8a49c83c68",
+      "bytes": 717628
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-56-41.2s.png",
+      "sha256": "15503e31106a5de7bc165e9570f50fa7ef5e60245bdefd1a557cbd3fccf629d5",
+      "bytes": 295628
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-69-50.3s.png",
+      "sha256": "b6172990f28a5113f705bd8069efd230627cf5cb2a2d94f450e89a1086064fb8",
+      "bytes": 265433
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-80-58.6s.png",
+      "sha256": "2cf3bdb3b5d2bc6caba439a8b1da5e9d9e2ca03a6544d4fc2624a2d867195dc2",
+      "bytes": 356540
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/frame-91-65.6s.png",
+      "sha256": "c7c9b3938353f8ba0df6cbcd8050794eca2d58fc7c545e1136414b4fc68b7dab",
+      "bytes": 317389
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/motion-progression.jpg",
+      "sha256": "23c3f6a19fc5ca13e2dd09b06b0f5ee53ea136946e285d6b2bd15b8e0e339e6b",
+      "bytes": 150911
+    },
+    {
+      "path": "artifacts/qa-evidence/vermeer-cycle11-v1/scene-overview.jpg",
+      "sha256": "36796119dadb29d4791d7ef544a5abbc33ff1971cb62cf24573e032b8b767fd9",
+      "bytes": 97159
+    },
+    {
+      "path": "captions/vermeer-forgery.en.vtt",
+      "sha256": "8a00f3ea5f3c0c39fac17fc90b105f48c064b8aef9ffcd524ab1d8121ee35f0f",
+      "bytes": 3310
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/archival-assets.json",
+      "sha256": "702bd60e040ebc01dcfd1bab23361465f9f7c2368d496107585a7571d7e2ffb1",
+      "bytes": 1884
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/audio-mastering-v1.json",
+      "sha256": "8676276f057f80c3e5dc592164bbf3de0cab929d557bbed629a490b28f28f0e9",
+      "bytes": 994
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/authoring-data.json",
+      "sha256": "ef5cdac44e5be9e0e534a1abfc9479eb0a286e8ad2d64c698c9d6b2b18519307",
+      "bytes": 15423
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/caption-phrases.json",
+      "sha256": "6ba21bf8c1b2e1316a42ab037dfdf6505575ea7b72f4c04a172d840a5375d815",
+      "bytes": 1474
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/content-asset.ready.json",
+      "sha256": "afef3b80a0c130ecc8583cba70a94bae67ac32646ade6fb617201098863f105e",
+      "bytes": 17039
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/direction-v1.json",
+      "sha256": "81b6dcc3e5ae114a6d211594cb9852bfac35ae9dc23c49c00f10a44b7e9fe3ad",
+      "bytes": 27961
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/draft-asset.json",
+      "sha256": "d96ed64d7f1d1bccb67dd72efa99a370c464df0d482629d9b18240f66beef96e",
+      "bytes": 16638
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/draft-package.json",
+      "sha256": "ee8228cd6aad2bf7673f05c72256247feac4abd59ac94fffd1909071741145fc",
+      "bytes": 21361
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-attempt-v1/content-asset.ready.json",
+      "sha256": "a6f4a4c2ccc59a160749953c71abfae3508e9a889aa58314db5fcecb1758f91c",
+      "bytes": 17039
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-attempt-v1/draft-asset.json",
+      "sha256": "d96ed64d7f1d1bccb67dd72efa99a370c464df0d482629d9b18240f66beef96e",
+      "bytes": 16638
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-attempt-v1/draft-package.json",
+      "sha256": "ee8228cd6aad2bf7673f05c72256247feac4abd59ac94fffd1909071741145fc",
+      "bytes": 21361
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-attempt-v1/editorial-receipt.json",
+      "sha256": "5bf3334ea58757ebec7ebc76a5d73948f0bb63a7ab5b6cc06dc6cd9b65e9f921",
+      "bytes": 62117
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-attempt-v1/failure.json",
+      "sha256": "aaab5bd3e2233e8794647a9abfe1f2ad00c33bfcedb90e7e4ec31054adee7c4e",
+      "bytes": 263
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-attempt-v1/internal-editorial-review.json",
+      "sha256": "16e45af07af66f643304d715bbe464a1ab06b96c4503093e1fcc052a6bb95c36",
+      "bytes": 21790
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-attempt-v1/knowledge-package.ready.json",
+      "sha256": "58c70bb70d9ca738cfabe7d770ebcf7adf2b1141706b023382b917ee6196ea26",
+      "bytes": 24931
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-receipt.json",
+      "sha256": "5bf6bdea7d5c02ddfa29746557ea74fd3d61a85c0f99de565200ce6adf4ee7b8",
+      "bytes": 62132
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/editorial-start.json",
+      "sha256": "95a6a530ec701e343f74b5e96746ee47641a292fd9cd87551f889a4785731a5c",
+      "bytes": 207
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/first-pass-PaintLayerModel.tsx",
+      "sha256": "db9b1f6a8b74ed6eeac0e558552c056c2b7cb8e5c088de5e354e286f4a9f6704",
+      "bytes": 3256
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/first-pass-audio-mastering.json",
+      "sha256": "193a7dce06427b9321d4edfed5f4442e3b19c0a1f9b2696816bfd041e50536c0",
+      "bytes": 994
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/first-pass-defect.json",
+      "sha256": "5dd11c7cf966da56a38f86d3febcac272b910d1885085b848a4a137f49adc05f",
+      "bytes": 583
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/first-pass-typography-report.json",
+      "sha256": "46550b2845b9d0a4b6aa476b6ad17ce990ec3a5aac9f4b270d8d3752faa54bb2",
+      "bytes": 234313
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/implementation-bindings.json",
+      "sha256": "6762b6bf7ee9622b439898f36ecfd3adbe1794a092be7be977c91573428b08ed",
+      "bytes": 3257
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/internal-editorial-review.json",
+      "sha256": "bbd1f7a2b0780536a548788b6df22584917bf653e6b4a4dac184b626fe664222",
+      "bytes": 21805
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/knowledge-package.ready.json",
+      "sha256": "bcad973de97c4840ffdd2d398ec02d7d5ac97578028cb5d8085bd9e5d48119e4",
+      "bytes": 24931
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/master-candidate-v1.json",
+      "sha256": "f492d6c4c1cbc616191a485adbe7e83debe6486c47e7b6e4e4823f961c1d81ef",
+      "bytes": 9752
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/master-review-v1.md",
+      "sha256": "e3702e0e953df0cea92a5fcea2beb11c44313dacf824f9d610596024df7e5d30",
+      "bytes": 5152
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/owner-premise-approval-v1.json",
+      "sha256": "cff5b4ddaa0e18beb67858ef04c42ae63a2965dfc9c2ef2a31dd7df0f0f1e195",
+      "bytes": 1885
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/portfolio-visual-inspection.json",
+      "sha256": "97caf7b9c5a40d003322f6974b8b271d7b5d89185ed5095a5ffb6068721bdb25",
+      "bytes": 4953
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/preflight/facebook.json",
+      "sha256": "6513815af9fc264472f58843d58e17e87d39f9f5735bcd57f39d859f65aa5449",
+      "bytes": 182048
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/preflight/instagram.json",
+      "sha256": "41c44f0a3245abb6964857a38f1ce55387dc84a9f8000f46097ac79e24be7cc6",
+      "bytes": 182052
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/preflight/tiktok.json",
+      "sha256": "8daefc2a57755b335c284d1f2943aab91af84a5bec322546c0ac3b21553a0fc6",
+      "bytes": 182036
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/preflight/youtube.json",
+      "sha256": "fa69f46e6c2eab4dd8bc997d1a12a442964b75f0e4c719418e323f892a004d61",
+      "bytes": 182047
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/production-integrity-v1.json",
+      "sha256": "7c68f936d3a840601611f9de9cbfc45cf74019bcb772096d343822d91506faca",
+      "bytes": 1324
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/production-plan.candidate-v1.json",
+      "sha256": "530478cd994dc6a8a47b374fe1ba4565ab56e30b8577cbeb825d0943d082d42f",
+      "bytes": 16459
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/production-start.json",
+      "sha256": "7de8f21759c79dd9863995e21124cd72c528774eabc908b13b65048632566b54",
+      "bytes": 244
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/facebook.json",
+      "sha256": "3bbc38f17d9744071f2934d21d36bb95ac27a23017f11d2cf54560e1ef454254",
+      "bytes": 2075
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/instagram.json",
+      "sha256": "1d5983007f9f51aa91500367cbd817e510f00f8361effdee642ff2b998b87e66",
+      "bytes": 2093
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/tiktok.json",
+      "sha256": "b89b548339f63a4cc72e511bca36f0f59d74159f505c98aaa782f090952092ec",
+      "bytes": 2078
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/profiles/youtube.json",
+      "sha256": "a678cc67a848c3e12724d458502abd388c0dbe8c3eb5d41df58efa6eab79698b",
+      "bytes": 2104
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/audio-inspection.json",
+      "sha256": "18081d00c5cc5dffc95c831126323745e5f60d39a45882224b8c8800ab4e9396",
+      "bytes": 25591
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/check-pre-staging-v1.txt",
+      "sha256": "e3d5dc00bb159c1eb34c4bc6a61bc98e3dea60960c3d4dbe785b9b7f30ffce76",
+      "bytes": 1994
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/check-render-concurrent-v1.txt",
+      "sha256": "48a0a2f8005ee0c142843e44e820c4af234eb22bc2e2167a1f2340031325baa2",
+      "bytes": 3674
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/check-staged-v1.txt",
+      "sha256": "f4f532caf56cd7ed653d96ae265f9897b28c1b5721667795d8b2bb0f1c04692c",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/durability-v1.json",
+      "sha256": "701f3d46ba576d31e435c368a8fcdaf97149a4b2835bcd7c74c40454834a7381",
+      "bytes": 234852
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/final-report.json",
+      "sha256": "0f610a740264706cedbce9f412b187462942b9288d6274e58a46c5ad77de4aaf",
+      "bytes": 6144
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/narration-alignment.json",
+      "sha256": "23a3af88ce45b868bfab04896be10ec4f5cfd41902557013a8e6b7ebcb60c06c",
+      "bytes": 7287
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/presentation-summary.json",
+      "sha256": "89fed6f65c13c8b363a14c9439c0e9331667b165b38aa226438eb7082ae9588d",
+      "bytes": 4850
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/report.json",
+      "sha256": "b8baa3e30b53269e752903ed0dc02983e0c65197f5f2b99d50446b01c0cde99f",
+      "bytes": 546
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/sheet-bindings.json",
+      "sha256": "b6d2ee3a0ffbdef711945b0152bb19a563f3cca4c75c6eafc95c38fe6f41f46e",
+      "bytes": 2855
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/typography-report.json",
+      "sha256": "4c3111b775d502d3b2ada908063bea9be669672de7e098482d88929c2f00f830",
+      "bytes": 231064
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/validation-history-v1.json",
+      "sha256": "72d9a681d77c183ef6054923725881d54c44fb300bc4592191cfdd7fa66bd804",
+      "bytes": 1154
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/qa/visual-inspection.json",
+      "sha256": "16996a054345652acc03d92e416aef371b0992f0bfa0444a8c3a05392c625cb7",
+      "bytes": 3138
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/refinement-PaintLayerModel.tsx",
+      "sha256": "002108313af7483308b48558368110fb7ecb15ee5b4104b0a7ce6d37cf78277b",
+      "bytes": 3907
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/refinement-audio-mastering.json",
+      "sha256": "66ee40261a17776875bf6f913edaba256b02d1a4914e1a70dcc26797b17c5743",
+      "bytes": 994
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/refinement-defect.json",
+      "sha256": "06f1d26152a9f1f782ac0c666aaf423f9a54b8a8dc9d385f48ecdbbaff0ad8a1",
+      "bytes": 644
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/refinement-typography-attempt.json",
+      "sha256": "9de5c96a29f7083e7f0f6a50be15fb6e68cf7785d34b54c2d48ecb500e97fdc0",
+      "bytes": 235009
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/archive45-inspection.json",
+      "sha256": "0a4f4e51bc16ebd9db023891a32653853c25959acaf7dbc092bc5854b0d043be",
+      "bytes": 1144
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/examiners-inspection.json",
+      "sha256": "ee5ff9688d2b9605172b409b004b16d8465ef034324127acd87ad1cb0893d900",
+      "bytes": 1947
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/met-inspection.json",
+      "sha256": "1d52b9344160b1ee41d63517ab7cc8b287e73459185691393e667258c363cfa4",
+      "bytes": 1492
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/nrc-inspection.json",
+      "sha256": "134c7eb8a8b1eca9ac0187483b4f0cf00b5a6645a4cd27e413dfac741aa2fb2b",
+      "bytes": 1435
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/time46-inspection.json",
+      "sha256": "d3e95cd882f0428cb19cf9fb621dc932cc3c62820ea86024b53ef3acb44534c3",
+      "bytes": 1168
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/time47-inspection.json",
+      "sha256": "a278725ed5c6f480b852e014e5eb85fcc2c4d8269848be64ec8b2ffa9b9372b0",
+      "bytes": 1252
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/tummers-inspection.json",
+      "sha256": "176e593507de952ba67090b15f91f6c4521f3c9d1d423e08f397105303a42929",
+      "bytes": 1438
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/research/verification-notes.md",
+      "sha256": "0f526e7137bc813ee2776dab98a66c1cedbde5f9f63ad10d2090148226e485c2",
+      "bytes": 2861
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-11/rights-provenance.json",
+      "sha256": "f48479679032398fef4528833a870ea46a16093f321e87c4766342faa95d32ef",
+      "bytes": 3330
+    },
+    {
+      "path": "docs/ASSET-LICENSES.md",
+      "sha256": "39b4c1441f613a5a6d93bf7a754c07d7240d6890919d45a8248bbabf502d2e88",
+      "bytes": 40197
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-1.wav",
+      "sha256": "b1814fd5d224049f800fac2e570892f160d051390706ef3c35c4c9752385c45a",
+      "bytes": 448844
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-10.wav",
+      "sha256": "12aa00264456371de40c36a3bcd48007d6ecf50b5bc4010eb0aacb5674d56136",
+      "bytes": 396044
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-2.wav",
+      "sha256": "1d208e17d73b4df0149fcc0f245ae149ec7165104aa7677f4cc0d866d4021cf7",
+      "bytes": 1087244
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-3.wav",
+      "sha256": "b4917a10814bb64bcb4e265974886b84def8774382e528e671cb0163d2342038",
+      "bytes": 804044
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-4.wav",
+      "sha256": "440c13b95738490a33e99a3acb92551a30110be9efb8c878b055f8a12c91c780",
+      "bytes": 1089644
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-5.wav",
+      "sha256": "2b2948dfe5ca2b7b87e8326ada96a909e5351b4bc31c2f278800e99039a279bf",
+      "bytes": 880844
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-6.wav",
+      "sha256": "8f365d5339eed043e1b1a755904cf07acb850e40bd61d00d0ce4c0117a8c1854",
+      "bytes": 842444
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-7.wav",
+      "sha256": "ff6230701ca02f0cfe9bfe9baacf90139a57d857c0b7dae0dbadeef27d774726",
+      "bytes": 712844
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-8.wav",
+      "sha256": "f31152a3bcf212552f6ffb145a31a6171c22a78a4a7fbf6fd6e07dd3bc9056fa",
+      "bytes": 595244
+    },
+    {
+      "path": "public/audio/vermeer-forgery/narration/cue-9.wav",
+      "sha256": "169b8fa45ac887d485f0980bd739a35802f3ef0bf4f10847bf895ef5a9339efd",
+      "bytes": 921644
+    },
+    {
+      "path": "public/visuals/vermeer-forgery/court.jpg",
+      "sha256": "e5c21656f595192123dfab205a95766fd37482ccebc1f933085341cb159bbbc6",
+      "bytes": 819775
+    },
+    {
+      "path": "public/visuals/vermeer-forgery/emmaus.jpg",
+      "sha256": "8283aada9fbab976a2bdb723f0dabcc9773ad131d2c17b06f67af722cbedfd75",
+      "bytes": 1224866
+    },
+    {
+      "path": "scripts/complete-vermeer-master.ts",
+      "sha256": "f72535fa9f101e20f6f7c23ecb95a97f388ed5abc7cf0fdab532bd1cfa2e5498",
+      "bytes": 1127
+    },
+    {
+      "path": "scripts/finalize-vermeer-master.ts",
+      "sha256": "a050bfd24957f9e09e79a83da893deb3c704d779cac1565081e9351e8b14de6c",
+      "bytes": 16764
+    },
+    {
+      "path": "scripts/generate-vermeer-narration.mjs",
+      "sha256": "64376144b7a2cd06e941e9b6ea9668c2a6d28645ff37cd26cc047b7f8ef2110f",
+      "bytes": 2889
+    },
+    {
+      "path": "scripts/inspect-vermeer-audio.mjs",
+      "sha256": "aba710e7c40aeea0c006fc23a621a5dee3c78e6668ffdda171b19d4a1b930489",
+      "bytes": 4008
+    },
+    {
+      "path": "scripts/inspect-vermeer-narration.mjs",
+      "sha256": "43f4057429f84c57b76554ed67780f31f1b9a66cad37131261076dda5dfe91d4",
+      "bytes": 1337
+    },
+    {
+      "path": "scripts/prepare-vermeer-direction.ts",
+      "sha256": "c050b406a9396a3314deebb7dd10fcde28e4c5b9a49d806d47f227d659eaaf92",
+      "bytes": 12266
+    },
+    {
+      "path": "scripts/prepare-vermeer-editorial.ts",
+      "sha256": "64d18de721f26e3cf454da25f02db2b45c613f2a201f80da644fdbce096dfb2f",
+      "bytes": 9802
+    },
+    {
+      "path": "scripts/prepare-vermeer-production.ts",
+      "sha256": "1fb1e900bd3e5692ec5df556536e4536458280b658947d3f8480519a597974bf",
+      "bytes": 9161
+    },
+    {
+      "path": "scripts/prepare-vermeer-qa-sheets.ts",
+      "sha256": "4bc0db79ae5133435a3502a495bbe1847d1d20e06e28a7e61e1365d55dfbcc4c",
+      "bytes": 2169
+    },
+    {
+      "path": "scripts/production-video-targets.ts",
+      "sha256": "57e8b4c257ecf42a5d4062d0cd5490ba6543a6a225008845af603f25edcebaae",
+      "bytes": 13599
+    },
+    {
+      "path": "scripts/qa-vermeer-layout.ts",
+      "sha256": "aead5e41a0e6218f50610f92d05670de6267f17fa635c4e3fea249b372148a61",
+      "bytes": 3740
+    },
+    {
+      "path": "scripts/record-cycle11-premise.ts",
+      "sha256": "8197f905e46c8869923a149c43a4a1d21dcba9a332274d703715d594b65fb0b2",
+      "bytes": 2956
+    },
+    {
+      "path": "scripts/render-vermeer.ts",
+      "sha256": "9401f133f830d2db172b256984d03bd0140fba9b1bea2687170f03d122e9da87",
+      "bytes": 2709
+    },
+    {
+      "path": "src/captions/plans/vermeer-forgery.json",
+      "sha256": "acf735ec738e8ecbc902e22279eda3de9e82ece794c1f147052eac8c2162f08d",
+      "bytes": 32856
+    },
+    {
+      "path": "src/components/PaintLayerModel.tsx",
+      "sha256": "58cdea3b26bcbb004c3dc5d9c3b248bd2604dd83bb2f703d9f73bed996ef6ac1",
+      "bytes": 3774
+    },
+    {
+      "path": "src/components/VermeerInvestigation.tsx",
+      "sha256": "9024dcaeb1a90941acf2560f20d70a57b8096b0df53e1fa463e2ae57eeaa43b6",
+      "bytes": 7916
+    },
+    {
+      "path": "src/compositions/VermeerForgery.tsx",
+      "sha256": "362e4ee3246f41566feb53d99661ab1d04db2a0c0639687ae46eb77bbc158ecf",
+      "bytes": 3858
+    },
+    {
+      "path": "src/content/videos/vermeer-forgery.ts",
+      "sha256": "18f160ae0120681c6eb51da3ef25759cf9e536c72c3c49f06a0e01643ba202fc",
+      "bytes": 1013
+    },
+    {
+      "path": "src/production/narration/vermeer-forgery.json",
+      "sha256": "872fcc0baa31ca8d4ff5580960ad065b6da48425cecf33ab22bc3dd8fdc6a236",
+      "bytes": 6549
+    },
+    {
+      "path": "src/production/plans/vermeer-forgery.json",
+      "sha256": "93d76bb975f0089b5730c6ff3d2d85eef9a9b1aa1944ce2f8f2a75fa07a290a3",
+      "bytes": 16438
+    },
+    {
+      "path": "src/vermeer-index.tsx",
+      "sha256": "0cf5cf7eeaf41e61c82c6cf1589ce7f95629532739fdccb73fe4beca97b1f4b5",
+      "bytes": 404
+    },
+    {
+      "path": "workflow/cycles/cycle.11/event-3.json",
+      "sha256": "943b3db5896aa06c45193250490c1876ee9ba2cdd57eb2d094285acfebd22502",
+      "bytes": 451
+    },
+    {
+      "path": "workflow/cycles/cycle.11/event-4.json",
+      "sha256": "01b5bd7c3104c5d0fdb1ebe7fe8cdea95a1f7002058676d545c231b9db18366d",
+      "bytes": 467
+    },
+    {
+      "path": "workflow/cycles/cycle.11/event-5.json",
+      "sha256": "cf6204c826cbe22b63ee2642e85e284223ce9908d9b8a79bf1c0c5a1b80af53e",
+      "bytes": 472
+    },
+    {
+      "path": "workflow/cycles/cycle.11/event-6.json",
+      "sha256": "6f2e8a5c8b0194ad23488e6ad1f241ba92bf88cf883beeada11684d80536cc20",
+      "bytes": 466
+    },
+    {
+      "path": "workflow/cycles/cycle.11/event-7.json",
+      "sha256": "96736c5d76eb0f83ceaee12f046234406fef1ee3f13b5c5ff6424c148455f8cd",
+      "bytes": 469
+    },
+    {
+      "path": "workflow/cycles/cycle.11/state.json",
+      "sha256": "d24d8ef34ff1ed1c3e6e1a1a9cb152ece0ded44175856d9fb465cca80a944cd0",
+      "bytes": 4477
+    },
+    {
+      "path": "workflow/project-state.json",
+      "sha256": "027563c8e430d71ae8346ba03fbac71ed018703025616c3957a2a1442ecd9d0e",
+      "bytes": 10573
+    }
+  ]
+}
