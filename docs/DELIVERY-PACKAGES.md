@@ -14,6 +14,16 @@ KnowledgePackage → ContentAsset → PlatformVariant → VideoSpec / Remotion
 
 It produces files for a human operator. It does not authenticate, upload, schedule, publish, select an account, or create a PublicationRecord.
 
+## Owner-facing publication instructions
+
+At every prospective **AHMET — PUBLICATION REVIEW / AUTHORIZATION**, the session must provide complete manual publishing instructions directly in its response, organized by platform in practical upload order. Links and machine/controller handoffs supplement this response; they never replace the fields the owner must enter. Persist the same instructions as an additive cycle-scoped handoff.
+
+Extract verbatim copy and exact asset identities from the selected canonical release manifests and bound metadata/upload-copy, not a superseded package or conversation memory. For each destination include: account confirmation and exact final video path; separate title only where supported; complete copyable description/caption with hashtags; applicable YouTube tags/search keywords; exact cover path, image/frame position and existing cover text; captions/accessibility handling; source and attribution text; first comment to post after publication; audience, category, visibility, comments, remix/duet/stitch/reuse and AI/synthetic-content settings; story-specific steps; and a short manual checklist before scheduling/publication. Put pasteable fields in separate code blocks, without labels or citations inside the copy unless they are part of the canonical field.
+
+Distinguish repository-verified bytes/copy from packaged setting recommendations, live-interface/account confirmation and missing values. Never describe an unapplied setting as live verified. Identify unsupported/not-applicable fields explicitly. If a value is absent, say so and label a suitable addition **proposed for owner review**; do not silently replace canonical copy, assume account settings or rewrite approved packages. Preserve exact asset references even when platforms share one master. A selected-cover change requires versioned package review, not an implicit fallback.
+
+End with remaining decision-relevant presentation uncertainties and the actual authorization state. Instructions, readiness, owner device QA and master approval do not authorize preview upload, scheduling or publication. Existing three gates, schemas, immutable history and manual-release architecture remain unchanged. This is a presentation requirement for the existing gate, not a new gate or automation.
+
 ## Commands
 
 Generate every registered variant for a video:

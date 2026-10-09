@@ -1,0 +1,86 @@
+{
+  "recordedAt": "2026-10-09T16:11:13.213604+00:00",
+  "ownerInstruction": "Final readiness audit accepted; Cycle10 remains READY FOR OWNER DEVICE QA. Owner requests complete exact publishing fields directly in response, proposals for missing values and a minimal permanent publication-handoff guidance improvement. No media changes, platform actions, Cycle11 or main merge.",
+  "readinessAuditAccepted": true,
+  "presentationUnknownsAccepted": false,
+  "publicationAuthorized": false,
+  "canonicalSourceRelease": {
+    "path": "content-intelligence/cycles/cycle-10/publication/release-v2.json",
+    "sha256": "972ea805a27da4261a5911a01443630b60ace43ac0817881ae56cc60ed98411a"
+  },
+  "canonicalSourceBindings": [
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/youtube/manifest-v1.json",
+      "sha256": "e92bfe1e5e172a909a0cac8c7bba8baff3a4e1d2bb98171e3020e1e190917d96"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/youtube/metadata-v1.json",
+      "sha256": "94aee3389779bd97f4795bd13e493e3abbd89ce452874ad642ccd20d66e8427d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/youtube/upload-copy-v1.txt",
+      "sha256": "65867457d53c0d6953cecca5be6d4f6ddae9d1a05cb610329fe85ccc22b0f591"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/tiktok/manifest-v2.json",
+      "sha256": "e20f16699685fffe6344f4876d2c88ce5d508d04a5a32ac06100eef9215533c4"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/tiktok/metadata-v2.json",
+      "sha256": "ee843df4593ae9966e7607fb49c541324946b11e12be74d74ca3cff448f505e9"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/tiktok/upload-copy-v2.txt",
+      "sha256": "cc1ad1aeabd1058559d5f34ae425f0ba6cefd586cb0f67862fcba22ae1fa973d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/instagram/manifest-v1.json",
+      "sha256": "e9a4c5e68354b4baeb134a4ade5b0cd32387f2491bd54b484ad555bc6dd9c3ad"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/instagram/metadata-v1.json",
+      "sha256": "1e2eaaf38380bcbd9a196a075bfb20b0dc1fce999ca5c33392fb399e60191d55"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/instagram/upload-copy-v1.txt",
+      "sha256": "108c1ee06b670ff2a045d2061e16a68125c33ded798b507e58cfd5aebb7e7903"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/facebook/manifest-v1.json",
+      "sha256": "8fee53af7b67eb04a5d04a7bdec9585f98eb5bcba663599d1c263d1b78d4e817"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/facebook/metadata-v1.json",
+      "sha256": "8a01904a1d699ec0c7ea4a2933160730fac6bd8fbe0a74d763d7fcb2822b84f5"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-10/publication/facebook/upload-copy-v1.txt",
+      "sha256": "fe62952c27a5ffcb82d3f80c5c812e2774c3619520e1ca8a707d9b81ffc9bf4e"
+    }
+  ],
+  "instructions": {
+    "path": "content-intelligence/cycles/cycle-10/publication/owner-upload-instructions-v1.md",
+    "sha256": "e4271348dabcafcb543094506a1985560bf5c70244be350292c549eff1c8f472"
+  },
+  "proposalsNotCanonicalPackageChanges": {
+    "youtubeCategory": "Education if supported",
+    "visibility": "Public/Everyone after owner authorization; platform-specific control and current account privacy must be confirmed",
+    "otherPlatformCategories": "Retain account/Page category; no optional per-post category invented",
+    "reuse": "Observe and retain existing account policy; no new On/Off mandate",
+    "youtubeRecordingDateLocation": "Leave unset;1848 is subject date, not filming date",
+    "schedule": "20:00 Kosovo local time, existing provisional brand test window; owner chooses authorized date and confirms live scheduler timezone. No Cycle10 schedule assigned.",
+    "additionalSearchKeywordList": "None proposed beyond existing YouTube tags"
+  },
+  "guidanceChanges": [
+    "AGENTS.md",
+    "docs/DELIVERY-PACKAGES.md"
+  ],
+  "historicalWorkflowPreserved": "docs/WORKFLOW-V3.md",
+  "cycleJournalUnchanged": true,
+  "externalPlatformActions": [],
+  "existingSchedulingGuidance": {
+    "path": "docs/STRATEGY.md",
+    "sha256": "bd28ba6a9f2b674622efd4cd8d83e13e727bd62a881cc4906e3337f14b9b24a3",
+    "status": "Existing provisional test window, not an analytics-proven optimum or assigned Cycle10 schedule."
+  }
+}

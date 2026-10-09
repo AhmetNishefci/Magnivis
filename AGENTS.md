@@ -28,6 +28,7 @@ Current prospective workflow/gate authority: `docs/WORKFLOW-V3.md`. Project meta
 - Do not add databases, queues, cloud infrastructure, dashboards, publishing automation, or paid APIs without a current need and human approval.
 - Never upload or publish to any platform without explicit human approval. Publishing credentials and public-release operations are sensitive.
 - Treat generated delivery packages as hashed operator handoffs. Do not mark a review package publishable unless its registered PlatformVariant is `production-ready`; package generation never grants publication approval.
+- At AHMET — PUBLICATION REVIEW / AUTHORIZATION, include complete ready-to-use manual instructions directly in the response for every platform, in upload order; package links alone are insufficient. Follow the owner-facing publication instructions in `docs/DELIVERY-PACKAGES.md`. Extract exact canonical copy/assets, distinguish packaged recommendations from live settings, and mark absent values/additions as proposals for owner review without silently changing packages or granting publication authority.
 - Keep raw platform analytics and platform-specific definitions; never present incomparable metrics as normalized equivalents.
 - Never commit secrets, credentials, personal data, or generated `.env` files. Use environment variables and maintain `.env.example`.
 - Avoid destructive commands and history rewrites. Never force-push. Preserve unrelated work.
