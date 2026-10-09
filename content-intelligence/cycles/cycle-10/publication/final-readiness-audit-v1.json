@@ -1,0 +1,679 @@
+{
+  "recommendation": "READY FOR OWNER DEVICE QA",
+  "checkedAt": "2026-10-09T16:01:21.504671+00:00",
+  "sourceCommit": "15a204b9891476a62e7b211edeca49ba59f6b5b3",
+  "gate": "AHMET — PUBLICATION REVIEW / AUTHORIZATION",
+  "cycleRevision": 26,
+  "release": {
+    "path": "content-intelligence/cycles/cycle-10/publication/release-v2.json",
+    "sha256": "972ea805a27da4261a5911a01443630b60ace43ac0817881ae56cc60ed98411a"
+  },
+  "releaseTargetSha256": "a52e25476aaaf778c0003a87a08393c21a140ea9d2bb06d59f7f007eacf7d745",
+  "master": {
+    "path": "artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+    "sha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc"
+  },
+  "riskRegister": {
+    "path": "content-intelligence/cycles/cycle-10/publication/risk-register-v2.json",
+    "sha256": "25cc70493f52ec20e67db0d520b670c4808dce42ca21f270e96fa27d931f910e"
+  },
+  "scope": "Read-only native journal/release inspection, exact media/file hashes, manual copy/source-qualification and actual local cover inspection, caption text/timing and evidence completeness. Existing full render/decode/QA retained; no new render, native/device pass, live-control verification or source-claim expansion.",
+  "observedPublicationDefects": [],
+  "knownTechnicalOrContentBlockers": [],
+  "proceduralPublicationHold": "Separate owner publication authorization remains absent. This recommendation authorizes no upload or preview. Unknowns remain unaccepted.",
+  "severityCountsByPlatform": {
+    "youtube": {
+      "high": 4,
+      "medium": 6,
+      "low": 1
+    },
+    "tiktok": {
+      "high": 4,
+      "medium": 6,
+      "low": 1
+    },
+    "instagram": {
+      "high": 4,
+      "medium": 6,
+      "low": 1
+    },
+    "facebook": {
+      "high": 4,
+      "medium": 6,
+      "low": 1
+    }
+  },
+  "severityCounts": {
+    "high": 16,
+    "medium": 24,
+    "low": 4
+  },
+  "all44Uncertainties": [
+    {
+      "index": 1,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1: composition: provisional",
+      "platform": "youtube",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Composition geometry is inherited and provisional; sampled bounds clear it. Confirm opening, labels and payoff on the actual platform."
+    },
+    {
+      "index": 2,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1: nativeUI: unknown",
+      "platform": "youtube",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native control geometry is unmeasured. Check upper navigation, right rail and lower description/navigation for overlap."
+    },
+    {
+      "index": 3,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1: captions: unknown",
+      "platform": "youtube",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "A distinct native caption-safe region is unknown. Check all55 phrases and transitions against actual controls and any duplicate caption layer."
+    },
+    {
+      "index": 4,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1: crop: unknown",
+      "platform": "youtube",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native playback/feed crop is unmeasured. Check opening, signature explanation, Baltimore labels, source qualifications and final payoff."
+    },
+    {
+      "index": 5,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1: Unsampled timeline motion not proven",
+      "platform": "youtube",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "133 sampled frames include55 caption midpoints and motion checkpoints; there is no all-frame bounds proof. Watch transitions and moving explanatory graphics."
+    },
+    {
+      "index": 6,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1: No exact-media real-device evidence",
+      "platform": "youtube",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Owner accepted overall master mobile presentation; named platform/surface/device/time evidence is absent. Record the exact media and observed result without inventing measurements."
+    },
+    {
+      "index": 7,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: composition: unknown",
+      "platform": "youtube",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Local static layout passes; a separate platform-derived cover composition model is absent. Confirm headline and both Crafts in the selected presentation."
+    },
+    {
+      "index": 8,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: nativeUI: unknown",
+      "platform": "youtube",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Thumbnail badges/overlays are unmeasured. Confirm they do not obscure essential cover information."
+    },
+    {
+      "index": 9,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: captions: unknown",
+      "platform": "youtube",
+      "medium": "cover",
+      "severity": "low",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Generic cover-profile caption geometry is unknown. This is a static image, not a missing caption track or synchrony defect; visible image text is checked locally. Confirm text remains legible."
+    },
+    {
+      "index": 10,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: crop: unknown",
+      "platform": "youtube",
+      "medium": "cover",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Cover/profile/grid/feed crops are unmeasured. Confirm headline and both Crafts; do not infer safety from the uncropped PNG."
+    },
+    {
+      "index": 11,
+      "exactRegisteredUncertainty": "craft-escape.variant.youtube.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: No exact-media real-device evidence",
+      "platform": "youtube",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "No exact selected-cover native device evidence. Confirm selection, persistence, crop and live account support."
+    },
+    {
+      "index": 12,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2: composition: provisional",
+      "platform": "tiktok",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Composition geometry is inherited and provisional; sampled bounds clear it. Confirm opening, labels and payoff on the actual platform."
+    },
+    {
+      "index": 13,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2: nativeUI: unknown",
+      "platform": "tiktok",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native control geometry is unmeasured. Check upper navigation, right rail and lower description/navigation for overlap."
+    },
+    {
+      "index": 14,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2: captions: unknown",
+      "platform": "tiktok",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "A distinct native caption-safe region is unknown. Check all55 phrases and transitions against actual controls and any duplicate caption layer."
+    },
+    {
+      "index": 15,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2: crop: unknown",
+      "platform": "tiktok",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native playback/feed crop is unmeasured. Check opening, signature explanation, Baltimore labels, source qualifications and final payoff."
+    },
+    {
+      "index": 16,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2: Unsampled timeline motion not proven",
+      "platform": "tiktok",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "133 sampled frames include55 caption midpoints and motion checkpoints; there is no all-frame bounds proof. Watch transitions and moving explanatory graphics."
+    },
+    {
+      "index": 17,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2: No exact-media real-device evidence",
+      "platform": "tiktok",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Owner accepted overall master mobile presentation; named platform/surface/device/time evidence is absent. Record the exact media and observed result without inventing measurements."
+    },
+    {
+      "index": 18,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: composition: unknown",
+      "platform": "tiktok",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Local static layout passes; a separate platform-derived cover composition model is absent. Confirm headline and both Crafts in the selected presentation."
+    },
+    {
+      "index": 19,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: nativeUI: unknown",
+      "platform": "tiktok",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Thumbnail badges/overlays are unmeasured. Confirm they do not obscure essential cover information."
+    },
+    {
+      "index": 20,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: captions: unknown",
+      "platform": "tiktok",
+      "medium": "cover",
+      "severity": "low",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Generic cover-profile caption geometry is unknown. This is a static image, not a missing caption track or synchrony defect; visible image text is checked locally. Confirm text remains legible."
+    },
+    {
+      "index": 21,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: crop: unknown",
+      "platform": "tiktok",
+      "medium": "cover",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Cover/profile/grid/feed crops are unmeasured. Confirm headline and both Crafts; do not infer safety from the uncropped PNG."
+    },
+    {
+      "index": 22,
+      "exactRegisteredUncertainty": "craft-escape.variant.tiktok.v2/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: No exact-media real-device evidence",
+      "platform": "tiktok",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "No exact selected-cover native device evidence. Confirm selection, persistence, crop and live account support."
+    },
+    {
+      "index": 23,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1: composition: provisional",
+      "platform": "instagram",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Composition geometry is inherited and provisional; sampled bounds clear it. Confirm opening, labels and payoff on the actual platform."
+    },
+    {
+      "index": 24,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1: nativeUI: unknown",
+      "platform": "instagram",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native control geometry is unmeasured. Check upper navigation, right rail and lower description/navigation for overlap."
+    },
+    {
+      "index": 25,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1: captions: unknown",
+      "platform": "instagram",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "A distinct native caption-safe region is unknown. Check all55 phrases and transitions against actual controls and any duplicate caption layer."
+    },
+    {
+      "index": 26,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1: crop: unknown",
+      "platform": "instagram",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native playback/feed crop is unmeasured. Check opening, signature explanation, Baltimore labels, source qualifications and final payoff."
+    },
+    {
+      "index": 27,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1: Unsampled timeline motion not proven",
+      "platform": "instagram",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "133 sampled frames include55 caption midpoints and motion checkpoints; there is no all-frame bounds proof. Watch transitions and moving explanatory graphics."
+    },
+    {
+      "index": 28,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1: No exact-media real-device evidence",
+      "platform": "instagram",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Owner accepted overall master mobile presentation; named platform/surface/device/time evidence is absent. Record the exact media and observed result without inventing measurements."
+    },
+    {
+      "index": 29,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: composition: unknown",
+      "platform": "instagram",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Local static layout passes; a separate platform-derived cover composition model is absent. Confirm headline and both Crafts in the selected presentation."
+    },
+    {
+      "index": 30,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: nativeUI: unknown",
+      "platform": "instagram",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Thumbnail badges/overlays are unmeasured. Confirm they do not obscure essential cover information."
+    },
+    {
+      "index": 31,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: captions: unknown",
+      "platform": "instagram",
+      "medium": "cover",
+      "severity": "low",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Generic cover-profile caption geometry is unknown. This is a static image, not a missing caption track or synchrony defect; visible image text is checked locally. Confirm text remains legible."
+    },
+    {
+      "index": 32,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: crop: unknown",
+      "platform": "instagram",
+      "medium": "cover",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Cover/profile/grid/feed crops are unmeasured. Confirm headline and both Crafts; do not infer safety from the uncropped PNG."
+    },
+    {
+      "index": 33,
+      "exactRegisteredUncertainty": "craft-escape.variant.instagram.v1/cover.media.43f2bb95e9567f1860d11e00c6c7c37474e84c103f1be34d29ec8f53ff35aead: No exact-media real-device evidence",
+      "platform": "instagram",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "No exact selected-cover native device evidence. Confirm selection, persistence, crop and live account support."
+    },
+    {
+      "index": 34,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1: composition: provisional",
+      "platform": "facebook",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Composition geometry is inherited and provisional; sampled bounds clear it. Confirm opening, labels and payoff on the actual platform."
+    },
+    {
+      "index": 35,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1: nativeUI: unknown",
+      "platform": "facebook",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native control geometry is unmeasured. Check upper navigation, right rail and lower description/navigation for overlap."
+    },
+    {
+      "index": 36,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1: captions: unknown",
+      "platform": "facebook",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "A distinct native caption-safe region is unknown. Check all55 phrases and transitions against actual controls and any duplicate caption layer."
+    },
+    {
+      "index": 37,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1: crop: unknown",
+      "platform": "facebook",
+      "medium": "video",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Native playback/feed crop is unmeasured. Check opening, signature explanation, Baltimore labels, source qualifications and final payoff."
+    },
+    {
+      "index": 38,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1: Unsampled timeline motion not proven",
+      "platform": "facebook",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "133 sampled frames include55 caption midpoints and motion checkpoints; there is no all-frame bounds proof. Watch transitions and moving explanatory graphics."
+    },
+    {
+      "index": 39,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1: No exact-media real-device evidence",
+      "platform": "facebook",
+      "medium": "video",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Owner accepted overall master mobile presentation; named platform/surface/device/time evidence is absent. Record the exact media and observed result without inventing measurements."
+    },
+    {
+      "index": 40,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: composition: unknown",
+      "platform": "facebook",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Local static layout passes; a separate platform-derived cover composition model is absent. Confirm headline and both Crafts in the selected presentation."
+    },
+    {
+      "index": 41,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: nativeUI: unknown",
+      "platform": "facebook",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Thumbnail badges/overlays are unmeasured. Confirm they do not obscure essential cover information."
+    },
+    {
+      "index": 42,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: captions: unknown",
+      "platform": "facebook",
+      "medium": "cover",
+      "severity": "low",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Generic cover-profile caption geometry is unknown. This is a static image, not a missing caption track or synchrony defect; visible image text is checked locally. Confirm text remains legible."
+    },
+    {
+      "index": 43,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: crop: unknown",
+      "platform": "facebook",
+      "medium": "cover",
+      "severity": "high",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "Cover/profile/grid/feed crops are unmeasured. Confirm headline and both Crafts; do not infer safety from the uncropped PNG."
+    },
+    {
+      "index": 44,
+      "exactRegisteredUncertainty": "craft-escape.variant.facebook.v1/cover.media.afa34e1e6054370422549e4a31677a8cd7dd5bfa75f67ef2b5db19758cab09b9: No exact-media real-device evidence",
+      "platform": "facebook",
+      "medium": "cover",
+      "severity": "medium",
+      "severityBasis": "Potential consequence and QA priority, not an observed defect or likelihood estimate.",
+      "observedDefect": false,
+      "assessment": "No exact selected-cover native device evidence. Confirm selection, persistence, crop and live account support."
+    }
+  ],
+  "packages": [
+    {
+      "platform": "youtube",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-10/publication/youtube/manifest-v1.json",
+        "sha256": "e92bfe1e5e172a909a0cac8c7bba8baff3a4e1d2bb98171e3020e1e190917d96"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-10/publication/youtube/metadata-v1.json",
+        "sha256": "94aee3389779bd97f4795bd13e493e3abbd89ce452874ad642ccd20d66e8427d"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-10/publication/youtube/upload-copy-v1.txt",
+        "sha256": "65867457d53c0d6953cecca5be6d4f6ddae9d1a05cb610329fe85ccc22b0f591"
+      },
+      "absoluteVideoPath": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "videoSha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+      "coverPath": "artifacts/covers/craft-escape-cover-v1.png",
+      "coverMethod": "custom-image-if-live-control-available",
+      "captionTrack": {
+        "path": "captions/craft-escape-v2.en.vtt",
+        "sha256": "a87cb26f4bd01b02a10ee6be314db85313b44c72cee2c26ecff554893caf108d"
+      },
+      "sources": {
+        "path": "content-intelligence/cycles/cycle-10/publication/sources-v1.md",
+        "sha256": "111e3bb7534c20954a652a8a57c85cf6b939a565cb597b63296f5a2a0a515209"
+      },
+      "copyCharacters": {
+        "title": 45,
+        "description": 1319,
+        "firstComment": 786
+      },
+      "verification": {
+        "captionTrackTextAndTiming": true,
+        "133FramesAnd55CaptionMidpoints": true,
+        "sourceAndClaimBindings": true,
+        "disclosuresPresent": true,
+        "copyMatchesMetadata": true,
+        "correctCoverIdentity": true,
+        "deliveryVideoIsExactApprovedMaster": true
+      },
+      "nativeDevicePass": false
+    },
+    {
+      "platform": "tiktok",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-10/publication/tiktok/manifest-v2.json",
+        "sha256": "e20f16699685fffe6344f4876d2c88ce5d508d04a5a32ac06100eef9215533c4"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-10/publication/tiktok/metadata-v2.json",
+        "sha256": "ee843df4593ae9966e7607fb49c541324946b11e12be74d74ca3cff448f505e9"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-10/publication/tiktok/upload-copy-v2.txt",
+        "sha256": "cc1ad1aeabd1058559d5f34ae425f0ba6cefd586cb0f67862fcba22ae1fa973d"
+      },
+      "absoluteVideoPath": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "videoSha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+      "coverPath": "artifacts/qa-evidence/craft-escape-cycle10-v3/frame-129-77.1s.png",
+      "coverMethod": "select-corresponding-master-frame-in-app",
+      "captionTrack": {
+        "path": "captions/craft-escape-v2.en.vtt",
+        "sha256": "a87cb26f4bd01b02a10ee6be314db85313b44c72cee2c26ecff554893caf108d"
+      },
+      "sources": {
+        "path": "content-intelligence/cycles/cycle-10/publication/sources-v1.md",
+        "sha256": "111e3bb7534c20954a652a8a57c85cf6b939a565cb597b63296f5a2a0a515209"
+      },
+      "copyCharacters": {
+        "title": 0,
+        "description": 681,
+        "firstComment": 125
+      },
+      "verification": {
+        "captionTrackTextAndTiming": true,
+        "133FramesAnd55CaptionMidpoints": true,
+        "sourceAndClaimBindings": true,
+        "disclosuresPresent": true,
+        "copyMatchesMetadata": true,
+        "correctCoverIdentity": true,
+        "deliveryVideoIsExactApprovedMaster": true
+      },
+      "nativeDevicePass": false
+    },
+    {
+      "platform": "instagram",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-10/publication/instagram/manifest-v1.json",
+        "sha256": "e9a4c5e68354b4baeb134a4ade5b0cd32387f2491bd54b484ad555bc6dd9c3ad"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-10/publication/instagram/metadata-v1.json",
+        "sha256": "1e2eaaf38380bcbd9a196a075bfb20b0dc1fce999ca5c33392fb399e60191d55"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-10/publication/instagram/upload-copy-v1.txt",
+        "sha256": "108c1ee06b670ff2a045d2061e16a68125c33ded798b507e58cfd5aebb7e7903"
+      },
+      "absoluteVideoPath": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "videoSha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+      "coverPath": "artifacts/covers/craft-escape-cover-v1.png",
+      "coverMethod": "custom-image-if-live-control-available",
+      "captionTrack": {
+        "path": "captions/craft-escape-v2.en.vtt",
+        "sha256": "a87cb26f4bd01b02a10ee6be314db85313b44c72cee2c26ecff554893caf108d"
+      },
+      "sources": {
+        "path": "content-intelligence/cycles/cycle-10/publication/sources-v1.md",
+        "sha256": "111e3bb7534c20954a652a8a57c85cf6b939a565cb597b63296f5a2a0a515209"
+      },
+      "copyCharacters": {
+        "title": 0,
+        "description": 669,
+        "firstComment": 786
+      },
+      "verification": {
+        "captionTrackTextAndTiming": true,
+        "133FramesAnd55CaptionMidpoints": true,
+        "sourceAndClaimBindings": true,
+        "disclosuresPresent": true,
+        "copyMatchesMetadata": true,
+        "correctCoverIdentity": true,
+        "deliveryVideoIsExactApprovedMaster": true
+      },
+      "nativeDevicePass": false
+    },
+    {
+      "platform": "facebook",
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-10/publication/facebook/manifest-v1.json",
+        "sha256": "8fee53af7b67eb04a5d04a7bdec9585f98eb5bcba663599d1c263d1b78d4e817"
+      },
+      "metadata": {
+        "path": "content-intelligence/cycles/cycle-10/publication/facebook/metadata-v1.json",
+        "sha256": "8a01904a1d699ec0c7ea4a2933160730fac6bd8fbe0a74d763d7fcb2822b84f5"
+      },
+      "uploadCopy": {
+        "path": "content-intelligence/cycles/cycle-10/publication/facebook/upload-copy-v1.txt",
+        "sha256": "fe62952c27a5ffcb82d3f80c5c812e2774c3619520e1ca8a707d9b81ffc9bf4e"
+      },
+      "absoluteVideoPath": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/craft-escape-cycle10-candidate-v3.mp4",
+      "videoSha256": "b8e1e4433ec33ee4de08eb6dbd3b9c9a27e73f457245ab49bc67aac1a0e531fc",
+      "coverPath": "artifacts/qa-evidence/craft-escape-cycle10-v3/frame-129-77.1s.png",
+      "coverMethod": "select-corresponding-master-frame-in-app",
+      "captionTrack": {
+        "path": "captions/craft-escape-v2.en.vtt",
+        "sha256": "a87cb26f4bd01b02a10ee6be314db85313b44c72cee2c26ecff554893caf108d"
+      },
+      "sources": {
+        "path": "content-intelligence/cycles/cycle-10/publication/sources-v1.md",
+        "sha256": "111e3bb7534c20954a652a8a57c85cf6b939a565cb597b63296f5a2a0a515209"
+      },
+      "copyCharacters": {
+        "title": 49,
+        "description": 784,
+        "firstComment": 786
+      },
+      "verification": {
+        "captionTrackTextAndTiming": true,
+        "133FramesAnd55CaptionMidpoints": true,
+        "sourceAndClaimBindings": true,
+        "disclosuresPresent": true,
+        "copyMatchesMetadata": true,
+        "correctCoverIdentity": true,
+        "deliveryVideoIsExactApprovedMaster": true
+      },
+      "nativeDevicePass": false
+    }
+  ],
+  "operationalUnknownsOutsideThe44": [
+    "YouTube: verified-account custom-thumbnail availability and actual channel/search/feed/desktop presentation untested.",
+    "TikTok: native cover selector precision/profile/search crop, actual account and current controls untested.",
+    "Instagram: cover image selector/grid/feed crop/persistence and actual account controls untested.",
+    "Facebook: separate title/thumbnail controls, Page/feed crop/obstructions and actual Page identity/settings untested.",
+    "All: platform transcoding, optional caption duplication, synthetic-audio label appearance, live reuse/settings and mobile playback untested.",
+    "Selected cover identities are immutable. A fallback that changes selected media must receive a versioned manifest, not an implicit approval transfer."
+  ],
+  "potentialBlockingFindingsIfObserved": [
+    "An essential caption/label/historical qualification cropped or obscured by controls requires scoped presentation remediation. No owner waiver overrides a known collision.",
+    "Live account cannot use the exact selected cover: revise that package/cover manifest and renew review; never silently substitute media. This alone does not require a new master.",
+    "Synthetic-audio disclosure unavailable or omitted in the live composer: resolve the required disclosure before release. Prepared copy/settings contain the disclosures, but no live labels have been applied."
+  ],
+  "preservation": "All existing tracked files, master, narration/caption inputs, approved history, journal state and release packages remain byte-identical to sourceCommit. Only this additive audit and its summary are created.",
+  "publicationAuthorized": false,
+  "externalPlatformActions": []
+}
