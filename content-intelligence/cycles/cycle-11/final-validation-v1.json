@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T19:50:26.972860+00:00",
+  "gate": "AHMET \u2014 MASTER REVIEW",
+  "cycleRevision": 8,
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-11/master-candidate-v1.json",
+    "sha256": "f492d6c4c1cbc616191a485adbe7e83debe6486c47e7b6e4e4823f961c1d81ef"
+  },
+  "masterSha256": "cefa95c98accb232b1fb00d3087f74687219200cbbd339275493dd27812d6ff3",
+  "repositoryCheck": {
+    "path": "content-intelligence/cycles/cycle-11/qa/check-handoff-v1.json",
+    "sha256": "c1b438b30ec0afdd89c4a7518c41f4ff892e722881ab38d84413571c8ecd72ef"
+  },
+  "allCycleJournalReplay": {
+    "path": "content-intelligence/cycles/cycle-11/workflow-replay-master-v1.json",
+    "sha256": "c1c0d7f4c310c6e8485d2dc56a647ab67062082386295a33fb627d541c464e38"
+  },
+  "durability": {
+    "path": "content-intelligence/cycles/cycle-11/qa/durability-v1.json",
+    "sha256": "701f3d46ba576d31e435c368a8fcdaf97149a4b2835bcd7c74c40454834a7381"
+  },
+  "cleanGitBlobRestore": {
+    "path": "content-intelligence/cycles/cycle-11/clean-restore-master-v1.json",
+    "sha256": "fb5e09f0e78886f121b79224be18fc37780ca0e9b159637cf4ae00bb5b7ae74d"
+  },
+  "backupCheckpoint": {
+    "path": "content-intelligence/cycles/cycle-11/remote-backup-status-v2.json",
+    "sha256": "1f8f3c1dee3ca893d79caa10ec24c51540e94d827c75a896d7f63801bd851758"
+  },
+  "priorHistoryUnchanged": true,
+  "projectMetadataChangedKeys": [
+    "nextOwnerGate",
+    "nextSystemTask",
+    "cycle11"
+  ],
+  "knownLimits": [
+    "No human listening or continuous subjective playback assertion.",
+    "Four provisional platform preflights retain seven uncertainties each; no device/native-control/crop proof.",
+    "Bounded Git-blob recovery of130files is not a full remote clean clone or rendering proof."
+  ],
+  "masterApproved": false,
+  "publicationPreparation": false,
+  "platformActions": [],
+  "mainMutation": false
+}

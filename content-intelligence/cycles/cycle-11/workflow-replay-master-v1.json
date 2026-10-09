@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T19:49:00.748983+00:00",
+  "command": "Node22.23.3 node --import tsx scripts/cycle.ts status",
+  "cycles": [
+    {
+      "id": "cycle.10",
+      "stage": "publication-review",
+      "revision": 26
+    },
+    {
+      "id": "cycle.11",
+      "stage": "master-review",
+      "revision": 8
+    },
+    {
+      "id": "cycle.4",
+      "stage": "authorized",
+      "revision": 9
+    },
+    {
+      "id": "cycle.5",
+      "stage": "authorized",
+      "revision": 13
+    },
+    {
+      "id": "cycle.6",
+      "stage": "authorized",
+      "revision": 23
+    },
+    {
+      "id": "cycle.7",
+      "stage": "authorized",
+      "revision": 25
+    },
+    {
+      "id": "cycle.8",
+      "stage": "authorized",
+      "revision": 30
+    },
+    {
+      "id": "cycle.9",
+      "stage": "authorized",
+      "revision": 18
+    }
+  ],
+  "productionActive": [],
+  "ownerActions": [
+    {
+      "cycleId": "cycle.10",
+      "kind": "owner",
+      "gate": "publication-review"
+    },
+    {
+      "cycleId": "cycle.11",
+      "kind": "owner",
+      "gate": "master-review"
+    }
+  ],
+  "previousCyclesUnchanged": true,
+  "operationalDistinction": "Native Cycles9/10 remain at their existing stages; raw owner-reported publication/scheduling records and canonical operational index preserve the later owner updates without fabricated strict typed metadata."
+}

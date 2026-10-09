@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-09T19:50:26.972622+00:00",
+  "command": "PATH=Node22.23.3 VITEST_MAX_WORKERS=4 pnpm check",
+  "testFiles": 52,
+  "tests": 483,
+  "rawOutput": "\n> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis\n> pnpm validate && git diff --check\n\n\n> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis\n> pnpm typecheck && pnpm lint && pnpm test\n\n\n> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis\n> tsc --noEmit\n\n\n> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis\n> eslint src scripts tests remotion.config.ts vitest.config.ts\n\n\n> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis\n> vitest run\n\n\n RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  52 passed (52)\n      Tests  483 passed (483)\n   Start at  21:48:43\n   Duration  76.04s (tests 95%, import 4%, transform 1%)\n\n",
+  "scope": "Final production-to-master-review journal revision8 and exact owner handoff."
+}

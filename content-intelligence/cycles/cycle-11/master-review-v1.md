@@ -22,6 +22,8 @@ No execution countdown, courtroom painting performance, invented dialogue, priva
 
 ## Validation and owner review
 
+`pnpm check` passed all 52 test files / 483 tests on the completed master-review state. Git durability passed (930 canonical payloads; all prior identities preserved); 130 committed Cycle #11 changed files, including the exact master, were restored into an empty isolated directory and compared byte for byte. This was a bounded Git-blob recovery check, not a full remote clean clone or rerender.
+
 Full render and full audiovisual decoding passed. Technical QA, 116 browser checkpoints (including every caption midpoint), observed-text overlap checks, all 62 decoded caption midpoint inspections, ten scene midpoint inspections and bounded motion samples passed. The exact mastered file retains the rendered video packet payload. Master signal measurement is −21.0 LUFS, 2.9 LU loudness range, −2.2 dBTP; all ten master speech intervals are corroborated by machine recognition.
 
 Machine recognition is approximate: full-file chunk recognition omitted an interval and misrecognized “court-appointed”; isolated recognition of each actual-master interval recovered complete speech. Proper-name spellings also differ. Word-level alignment was unavailable; actual sentence anchors and measured clip timing inform phrase placement, with approximate timing within sentences. These are not human listening results.
@@ -37,5 +39,7 @@ All four provisional platform preflights show **zero known sampled collisions**,
 - [Research verification and exclusions](research/verification-notes.md)
 - [Workflow controller handoff](master-review-controller-handoff.json)
 - [Durability checkpoint](pre-handoff-durability.json)
+- [Final validation](final-validation-v1.json)
+- [Verified remote backup checkpoint](remote-backup-status-v2.json)
 
 **Await exact-master owner approval.** No publication preparation, upload, scheduling, publication, Cycle #12 or main integration is authorized or performed. Remote backup is restricted to `origin/content/cycle-11-discovery`; synchronization checkpoints are recorded separately from owner media approval.
