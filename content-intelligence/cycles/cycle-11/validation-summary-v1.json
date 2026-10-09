@@ -1,0 +1,69 @@
+{
+  "recordedAt": "2026-10-09T19:05:44.221672Z",
+  "pnpmCheck": {
+    "status": "passed",
+    "testFiles": 52,
+    "tests": 483,
+    "typecheck": "passed",
+    "lint": "passed",
+    "diffCheck": "passed"
+  },
+  "nativeReplay": {
+    "status": "passed",
+    "cycles": [
+      {
+        "id": "cycle.10",
+        "stage": "publication-review",
+        "revision": 26
+      },
+      {
+        "id": "cycle.11",
+        "stage": "premise-review",
+        "revision": 2
+      },
+      {
+        "id": "cycle.4",
+        "stage": "authorized",
+        "revision": 9
+      },
+      {
+        "id": "cycle.5",
+        "stage": "authorized",
+        "revision": 13
+      },
+      {
+        "id": "cycle.6",
+        "stage": "authorized",
+        "revision": 23
+      },
+      {
+        "id": "cycle.7",
+        "stage": "authorized",
+        "revision": 25
+      },
+      {
+        "id": "cycle.8",
+        "stage": "authorized",
+        "revision": 30
+      },
+      {
+        "id": "cycle.9",
+        "stage": "authorized",
+        "revision": 18
+      }
+    ]
+  },
+  "durability": {
+    "status": "passed",
+    "canonicalPayloads": 896,
+    "legacyDurableArtifacts": 731,
+    "knownHistoricalMissingMaster": "Wood Frog; existing recovery closed, unchanged"
+  },
+  "historicalIntegrity": "passed; only existing operations documentation and current project metadata changed; all prior journals/media/packages unchanged",
+  "hygiene": "scoped secret-pattern scan found no credentials; signed source-access URLs omitted from raw tool evidence",
+  "productionOrPlatformActions": false,
+  "gate": "AHMET \u2014 PREMISE REVIEW",
+  "cycle11Revision": 2,
+  "ownerDecision": null,
+  "visualValidation": "not applicable; no visual or media change"
+}
