@@ -1,0 +1,192 @@
+{
+  "checkedAt": "2026-10-09T21:04:04.268Z",
+  "passed": true,
+  "baselineCommit": "75db37e10751617fc2a38ec36399a007c40a16b6",
+  "previousRelease": {
+    "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
+    "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
+  },
+  "currentRelease": {
+    "path": "content-intelligence/cycles/cycle-11/publication/release-v2.json",
+    "sha256": "ed1278652778f6be258c013afb1308eb8c1301aa788e4153ccb0ed770e81975f"
+  },
+  "reviewTargetSha256": "bcab86d05490b82fc9eef7791f2405a1bb4ea969bb495fff1a994405440e6156",
+  "ownerInstruction": {
+    "path": "content-intelligence/cycles/cycle-11/publication/owner-publication-refinement-v1.json",
+    "sha256": "104240d41c1f20df0536d7a01db9894a8012c1acac5bd8d957c52cfb5763cae7"
+  },
+  "checks": [
+    {
+      "platform": "youtube",
+      "firstComment": "An old canvas can be genuine while the paint above it is modern. Which layer would you examine first?",
+      "commentCharacters": 101,
+      "approvedFieldsUnchanged": [
+        "title",
+        "titleSupport",
+        "description",
+        "hashtags",
+        "tags",
+        "keywords",
+        "keywordFieldSupport",
+        "language",
+        "cover",
+        "captions",
+        "claimIds",
+        "knowledgePackage",
+        "contentAsset",
+        "masterDecision",
+        "sources",
+        "media"
+      ],
+      "geometryAndSelectedMediaUnchanged": true,
+      "operatorChanges": [
+        "reuse",
+        "reuseControls"
+      ],
+      "accountPolicyValues": "unknown pending live confirmation",
+      "exceptionsRequiringDecision": []
+    },
+    {
+      "platform": "tiktok",
+      "firstComment": "The cracks looked old. The paint told a different story. What would you test first?",
+      "commentCharacters": 83,
+      "approvedFieldsUnchanged": [
+        "title",
+        "titleSupport",
+        "description",
+        "hashtags",
+        "tags",
+        "keywords",
+        "keywordFieldSupport",
+        "language",
+        "cover",
+        "captions",
+        "claimIds",
+        "knowledgePackage",
+        "contentAsset",
+        "masterDecision",
+        "sources",
+        "media"
+      ],
+      "geometryAndSelectedMediaUnchanged": true,
+      "operatorChanges": [
+        "reuse",
+        "reuseControls"
+      ],
+      "accountPolicyValues": "unknown pending live confirmation",
+      "exceptionsRequiringDecision": []
+    },
+    {
+      "platform": "instagram",
+      "firstComment": "The image stayed the same; its attribution changed. What makes a masterpiece: the painting, the artist, or the evidence?",
+      "commentCharacters": 120,
+      "approvedFieldsUnchanged": [
+        "title",
+        "titleSupport",
+        "description",
+        "hashtags",
+        "tags",
+        "keywords",
+        "keywordFieldSupport",
+        "language",
+        "cover",
+        "captions",
+        "claimIds",
+        "knowledgePackage",
+        "contentAsset",
+        "masterDecision",
+        "sources",
+        "media"
+      ],
+      "geometryAndSelectedMediaUnchanged": true,
+      "operatorChanges": [
+        "reuse",
+        "reuseControls"
+      ],
+      "accountPolicyValues": "unknown pending live confirmation",
+      "exceptionsRequiringDecision": []
+    },
+    {
+      "platform": "facebook",
+      "firstComment": "His confession was also an admission of deception. Does proving a painting false change how you judge the person who sold it?",
+      "commentCharacters": 125,
+      "approvedFieldsUnchanged": [
+        "title",
+        "titleSupport",
+        "description",
+        "hashtags",
+        "tags",
+        "keywords",
+        "keywordFieldSupport",
+        "language",
+        "cover",
+        "captions",
+        "claimIds",
+        "knowledgePackage",
+        "contentAsset",
+        "masterDecision",
+        "sources",
+        "media"
+      ],
+      "geometryAndSelectedMediaUnchanged": true,
+      "operatorChanges": [
+        "reuse",
+        "reuseControls"
+      ],
+      "accountPolicyValues": "unknown pending live confirmation",
+      "exceptionsRequiringDecision": []
+    }
+  ],
+  "priorTrackedFilesPreserved": 4243,
+  "mediaCatalogUnchanged": true,
+  "masterUnchanged": true,
+  "permanentGuidanceUnchanged": true,
+  "unknownCount": 44,
+  "knownCollisions": [],
+  "workflowReplay": [
+    {
+      "id": "cycle.10",
+      "revision": 26,
+      "stage": "publication-review"
+    },
+    {
+      "id": "cycle.11",
+      "revision": 20,
+      "stage": "publication-review"
+    },
+    {
+      "id": "cycle.4",
+      "revision": 9,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.5",
+      "revision": 13,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.6",
+      "revision": 23,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.7",
+      "revision": 25,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.8",
+      "revision": 30,
+      "stage": "authorized"
+    },
+    {
+      "id": "cycle.9",
+      "revision": 18,
+      "stage": "authorized"
+    }
+  ],
+  "projectMetadataReconciliation": "project-state.json cycle11/nextOwnerGate text remains a historical master-review revision14 summary. Per canonical WORKFLOW-V3, current authority is the replayed cycle11 journal: publication-review revision20. No historical metadata rewritten in this package-only refinement.",
+  "nativeQa": "pending; no upload/device evidence supplied",
+  "publicationAuthorized": false,
+  "externalActions": []
+}

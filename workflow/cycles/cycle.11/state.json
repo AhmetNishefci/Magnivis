@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.11",
-  "revision": 17,
+  "revision": 20,
   "authority": {
     "path": "workflow/authorities/cycle-11-start.json",
     "sha256": "5a69f06745b84a90dc57e6cc3500da4c7395b5623909b7218e92722e3e421d4e"
@@ -43,6 +43,13 @@
         "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
         "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
       }
+    },
+    {
+      "stage": "presentation",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-11/publication/release-v2.json",
+        "sha256": "ed1278652778f6be258c013afb1308eb8c1301aa788e4153ccb0ed770e81975f"
+      }
     }
   ],
   "premise": {
@@ -62,8 +69,8 @@
     "sha256": "9f0e7c569dc495da64368738ec79eb7e00f4d6e5d90998a8f7eb80213cba3859"
   },
   "release": {
-    "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
-    "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
+    "path": "content-intelligence/cycles/cycle-11/publication/release-v2.json",
+    "sha256": "ed1278652778f6be258c013afb1308eb8c1301aa788e4153ccb0ed770e81975f"
   },
   "publicationDecision": null,
   "exception": null,
@@ -237,6 +244,36 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-11/publication/release-v1.json",
         "sha256": "ba83aa32fdbfa32bab6789dd601872c2a8afd1393422b2ef91a4dbe25a830f0a"
+      }
+    },
+    {
+      "revision": 18,
+      "previousSha256": "30ca6163d97bf1feb17e7918fc66338168c398ce7c60bee3a04f0982099586c7",
+      "event": "owner-decision",
+      "at": "2026-10-09T21:03:52.474Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-11/publication/owner-publication-refinement-v1.json",
+        "sha256": "104240d41c1f20df0536d7a01db9894a8012c1acac5bd8d957c52cfb5763cae7"
+      }
+    },
+    {
+      "revision": 19,
+      "previousSha256": "17f52fe1271902fa31fbb7c5b52acb6cbe99398ca734f2c86a84ec07a76c3cec",
+      "event": "begin-presentation",
+      "at": "2026-10-09T21:03:57.062Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-11/publication/presentation-refinement-start-v1.json",
+        "sha256": "397bd3a1f283a1c299a713a6407f6e56da672169921e38ba0646bf84ab4603e8"
+      }
+    },
+    {
+      "revision": 20,
+      "previousSha256": "f31650267833ca057e1f5678fa5a56fd5bd1c6d70c536959e4f811bd770005a6",
+      "event": "presentation",
+      "at": "2026-10-09T21:04:00.145Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-11/publication/release-v2.json",
+        "sha256": "ed1278652778f6be258c013afb1308eb8c1301aa788e4153ccb0ed770e81975f"
       }
     }
   ]
