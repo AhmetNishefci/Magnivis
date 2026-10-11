@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.11",
+  "evidenceBasis": "explicit-owner-message",
+  "recordedAt": "2026-10-11T15:25:26.144Z",
+  "recordedAtBasis": "Record-entry time only; no scheduling-action, scheduled release or actual publication date/time supplied.",
+  "instruction": "MAGNIVIS — CYCLE #11 SCHEDULING CONFIRMATION\n\nOWNER UPDATE:\n\nI have manually scheduled Cycle #11 (Han van Meegeren / Vermeer Forgery) on all four platforms:\n\n- YouTube Shorts\n- TikTok\n- Instagram Reels\n- Facebook Reels\n\nRecord this owner-reported scheduling status in the existing Magnivis operations and publication registry.\n\nUse the validated Cycle #11 V2 publication packages and approved master as the intended release artifacts.\n\nDo not invent publication dates, exact times, URLs, platform post IDs, analytics, or native-device QA evidence. Any information I have not supplied must remain explicitly unknown or pending.\n\nPreserve the distinction between owner-reported scheduling and independently verified publication.\n\nDo not change the approved master or publication packages.\n\nRun the appropriate validation checks, preserve repository integrity, and back up the resulting state.\n\nThen prepare for our first cross-platform analytics review.\n\nDo not start Cycle #12 discovery yet, and do not assume analytics are available until I provide them.\n\nStop and report the updated project state and the information needed for the analytics review.",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "state": "scheduled-owner-reported",
+  "publication": "unknown",
+  "independentPlatformVerification": false,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "scheduledFor": null,
+  "schedulingTimeZone": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "intendedMaster": {
+    "path": "artifacts/masters/vermeer-forgery-cycle11-candidate-v2.mp4",
+    "media": {
+      "id": "media.f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+      "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+    },
+    "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+  },
+  "existingPreparedRelease": {
+    "path": "content-intelligence/cycles/cycle-11/publication/release-v2.json",
+    "sha256": "ed1278652778f6be258c013afb1308eb8c1301aa788e4153ccb0ed770e81975f"
+  },
+  "existingPublicationDecision": null,
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-11/publication/master-approval-v1.json",
+    "sha256": "9f0e7c569dc495da64368738ec79eb7e00f4d6e5d90998a8f7eb80213cba3859"
+  },
+  "conditionalContentCoverAcceptance": {
+    "path": "content-intelligence/cycles/cycle-11/publication/conditional-content-cover-acceptance-v1.json",
+    "sha256": "ea25b008ec8df6d0b758503b161cf224e88c02189b174fb3e74bf73dc08f0748"
+  },
+  "nativeWorkflow": {
+    "stage": "publication-review",
+    "revision": 20,
+    "unchanged": true
+  },
+  "limitations": [
+    "Owner scheduling report only, not independently verified publication.",
+    "Validated release V2 and approved master are intended artifacts; actual uploaded bytes, cover selection, applied settings and posted comments unverified.",
+    "No native QA completion, exact-release authorization or acceptance of presentation uncertainty inferred from scheduling.",
+    "Publication status is unknown, not an invented claim that it remains unpublished."
+  ],
+  "nativeRecordReconciliation": "Existing operations owner-report/per-platform scheduling evidence pattern retained. Typed PublicationRecord cannot represent scheduling and requires actual publication identity/evidence. Native authorized-release observations require a persisted exact publication decision; none supplied. Preserve cycle11 journal and register this owner report separately rather than fabricate approval, QA or publication."
+}

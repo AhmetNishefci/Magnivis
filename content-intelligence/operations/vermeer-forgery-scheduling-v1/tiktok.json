@@ -1,0 +1,69 @@
+{
+  "cycleId": "cycle.11",
+  "platform": "tiktok",
+  "state": "scheduled-owner-reported",
+  "publication": "unknown",
+  "evidenceBasis": "explicit-owner-message",
+  "ownerReport": {
+    "path": "content-intelligence/operations/vermeer-forgery-scheduling-v1/owner-report.json",
+    "sha256": "740ddbcb80831d1dac583c11e89fc20200f7428a5435b6a086ea74bddc4a0ba0"
+  },
+  "recordedAt": "2026-10-11T15:25:26.144Z",
+  "actualEventTime": null,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "scheduledFor": null,
+  "schedulingTimeZone": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-11/publication/release-v2.json",
+    "sha256": "ed1278652778f6be258c013afb1308eb8c1301aa788e4153ccb0ed770e81975f"
+  },
+  "intendedVariant": {
+    "id": "vermeer-forgery.variant.tiktok.v2",
+    "revision": 2,
+    "media": {
+      "id": "media.f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+      "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-11/publication/tiktok/manifest-v2.json",
+    "sha256": "32af7356d65f173c95d552c72c127f7715f339170c49cbc77e8f1d9301ea4050"
+  },
+  "intendedArtifacts": [
+    {
+      "role": "video",
+      "media": {
+        "id": "media.f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8",
+        "sha256": "f6d6da416f45aef07d7ac61eac232eadce5a854b9cd97094162849a70ee98df8"
+      }
+    },
+    {
+      "role": "cover",
+      "media": {
+        "id": "media.faa9b1c63a1481fad87d421d7d4556d9ad439aa191489b288278cdf023a8b659",
+        "sha256": "faa9b1c63a1481fad87d421d7d4556d9ad439aa191489b288278cdf023a8b659"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-11/publication/tiktok/cover-evidence-v1.json",
+        "sha256": "3affee4dce43f8db8f7c568994d510ea5aeb21381a8b042cf5740f5e85284f53"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-11/publication/tiktok/cover-profile-v1.json",
+        "sha256": "d856cec20203b050192aa7bfcfc4dcfcc7b04d0e7fb07cbba42a92e017463f16"
+      }
+    }
+  ],
+  "identityBasis": "owner-designated validated packages and approved master as intended release, not independently verified uploaded bytes"
+}
