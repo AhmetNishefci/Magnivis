@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-13T10:24:40.025208+00:00",
+  "status": "validated-production-commits-pushed-and-remotely-verified",
+  "branch": "content/cycle-11-discovery",
+  "remote": "origin",
+  "remoteRef": "refs/heads/content/cycle-11-discovery",
+  "baselineCommit": "d9f089e626f1c0eb27e9dbe6c2a1ca7a092d97ef",
+  "productionCommits": [
+    "cf9aa4b0df5dbea1b594206e48e87f6bee867c9d",
+    "34788bf8ba03f9cb91e7a7b2511fed5df67fa5f3",
+    "3e168ddbe13153caa916bb51e8bd168a20f45b5f"
+  ],
+  "verifiedSnapshotCommit": "3e168ddbe13153caa916bb51e8bd168a20f45b5f",
+  "actualRemoteHead": "3e168ddbe13153caa916bb51e8bd168a20f45b5f",
+  "remoteCheckMethod": "git ls-remote after successful non-force push; all three commits are ancestors of actual remote head",
+  "ahead": 0,
+  "behind": 0,
+  "push": {
+    "passed": true,
+    "force": false,
+    "output": "To https://github.com/AhmetNishefci/Magnivis.git\n   d9f089e..3e168dd  HEAD -> content/cycle-11-discovery\n"
+  },
+  "isolatedCheckout": {
+    "commit": "3e168ddbe13153caa916bb51e8bd168a20f45b5f",
+    "worktree": "/private/tmp/magnivis-cycle13-sync-Fzr3Z6",
+    "passed": true,
+    "testsPerformed": [
+      "Exact scheduling records and protected files",
+      "Cycle13 ready package/source/master/approval chain",
+      "Cycle12 preserved source/release and exact catalog/license prefix proof",
+      "1074 canonical payloads and731 legacy artifacts"
+    ],
+    "dependencies": "Existing Node dependencies shared by symlink; no independent reinstall or continuous audiovisual/device test claimed",
+    "mediaRenderingPerformed": false,
+    "evidence": [
+      {
+        "path": "content-intelligence/operations/devils-hole-scheduling-v1/committed-scheduling-validation-v2.json",
+        "sha256": "e8a8f9f166faf397d7c33e0deaac804dfe875c04bacfe9fda6f038e0c087b045"
+      },
+      {
+        "path": "content-intelligence/operations/devils-hole-scheduling-v1/committed-cycle13-release-validation-v2.json",
+        "sha256": "45e2930efa2b94860e45c3a951dcbbdcd9d2a4ecb2f11c781955aab294827ede"
+      },
+      {
+        "path": "content-intelligence/operations/devils-hole-scheduling-v1/committed-cycle12-release-validation-v2.json",
+        "sha256": "3b38cff096caa82e1a39c4a5f840b9ad64dae2f19da765ab3c7a564689663412"
+      },
+      {
+        "path": "content-intelligence/operations/devils-hole-scheduling-v1/committed-durability-v2.json",
+        "sha256": "b1856e79517ac9c65775f92d2bf465b710189fbf4b87e0605713dd5a9541c57d"
+      }
+    ]
+  },
+  "sourceValidation": {
+    "path": "content-intelligence/operations/devils-hole-scheduling-v1/validation-summary.json",
+    "sha256": "38f0d70c6f32aba73eea754d7c1a7aff3b9a467755e0b765c94cc034007a3bee"
+  },
+  "ignoredEvidenceRepair": {
+    "path": "content-intelligence/operations/devils-hole-scheduling-v1/ignored-evidence-reconciliation.json",
+    "sha256": "73a464fa101e8f2616cda56c078e6676a1f7814aa9cbac5978e0a6c4d264c169"
+  },
+  "masterSha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+  "cycle13Status": "OWNER-REPORTED SCHEDULED",
+  "scheduledDate": "2026-10-13",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "publication": "unknown",
+  "nativeJournal": "publication-review revision17, unchanged",
+  "mainModified": false,
+  "historyRewritten": false,
+  "strategyWorkPerformed": false,
+  "cycle14Started": false,
+  "cycle14Hold": "Separate strategy review must be resolved and approved changes integrated, if any, before new explicit cycle-start authorization.",
+  "remainingUnknowns": [
+    "Exact schedule times/timezone/action time",
+    "Actual publication/URLs/postIDs/uploaded or transcoded bytes",
+    "Native-device/audio evidence,live settings/comments/analytics"
+  ],
+  "finalReceiptCommit": "This receipt describes the verified production snapshot and push. Its own later archival commit is verified separately in the final tool/result report; no self-referential hash fabricated."
+}
