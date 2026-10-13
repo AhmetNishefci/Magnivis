@@ -1,0 +1,778 @@
+{
+  "recordKind": "manual-analytics-mapping-review",
+  "entries": [
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 3,
+      "remoteId": "ATPAdRdrRRw",
+      "status": "exact-publication",
+      "publicationId": "publication.youtube.speed-of-light",
+      "videoSpecCandidate": "speed-of-light",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/speed-of-light.ts",
+          "sha256": "f24d1fcb6aef2ffcbf96e47f56f2743c8287e0860dfc243f758a75d9047942b2"
+        },
+        {
+          "path": "src/operations/publications.ts",
+          "sha256": "ff839aa6824d3d5c66cbcdcead0399eca0d9a30bdf8c6cde15ca1a2c2fc299b4"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Exact existing YouTube post ID, corroborated title/date.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 4,
+      "remoteId": "3jmxLXcowC8",
+      "status": "exact-publication",
+      "publicationId": "publication.youtube.phantom-traffic",
+      "videoSpecCandidate": "phantom-traffic",
+      "cycleCandidate": "cycle.1",
+      "evidence": [
+        {
+          "path": "src/content/videos/phantom-traffic.ts",
+          "sha256": "a9ca1ad36cd0ed41ed05a1ddbe194446ac8cd999afc347e88e655f05a58849e5"
+        },
+        {
+          "path": "content-intelligence/reviews/phantom-traffic-closure-v1/publication-records.json",
+          "sha256": "cd5c38112d0d9319076628bf9e0fbf4c309e2a15e1dbb6b2da5081ef53c06a32"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Exact existing YouTube post ID, corroborated title/date.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 5,
+      "remoteId": "bvgmCR2Dtcs",
+      "status": "legacy-remote-id",
+      "publicationId": null,
+      "videoSpecCandidate": "earth-to-stars",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/earth-to-stars.ts",
+          "sha256": "8ec18d76eea623db981ef93dcd7879e659c1cacb98fd72aa034e30973f71afb8"
+        },
+        {
+          "path": "docs/PERFORMANCE.md",
+          "sha256": "03fedb1283a33a8a3041fdc52f779eb854a2f4c27aa0f6a0fc3745777b626d09"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Exact YouTube ID already recorded in legacy PERFORMANCE; no strict PublicationRecord for this post.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 6,
+      "remoteId": "-t6xICbP68s",
+      "status": "legacy-remote-id",
+      "publicationId": null,
+      "videoSpecCandidate": "billion-dollars",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/billion-dollars.ts",
+          "sha256": "a80b325b5bd42106e10bb29f5601e6b3a3f75544dc57283cf8cac1ef5eb5222e"
+        },
+        {
+          "path": "docs/PERFORMANCE.md",
+          "sha256": "03fedb1283a33a8a3041fdc52f779eb854a2f4c27aa0f6a0fc3745777b626d09"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Exact YouTube ID already recorded in legacy PERFORMANCE; no strict PublicationRecord for this post.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 7,
+      "remoteId": "UTZmqCFew_I",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "human-engineering",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/human-engineering.ts",
+          "sha256": "c3605b2b4747939f85d83f218eef7de7e932b770411ae426359d50460a37fe74"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 8,
+      "remoteId": "PS0K2amRIuo",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "chladni-sand",
+      "cycleCandidate": "cycle.5",
+      "evidence": [
+        {
+          "path": "src/content/videos/chladni-sand.ts",
+          "sha256": "61a37e713db1a427a2327747ed206659388438277cc3c741949cc2414b4fb059"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-5/publication/release-v1.json",
+        "sha256": "829f2c797177190b6b06bb824398b8005c7d9cf8bd8cf924d05f5a88e40d5412"
+      },
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 9,
+      "remoteId": "OkZxSqAfbps",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "wood-frog",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/wood-frog.ts",
+          "sha256": "d53423f3a813daa76f4527bab82235722c8c3197b4929f1d0d67850851cdb3e2"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 10,
+      "remoteId": "BrT6aLMvu68",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "paper-half-shape",
+      "cycleCandidate": "cycle.4",
+      "evidence": [
+        {
+          "path": "src/content/videos/paper-half-shape.ts",
+          "sha256": "1e387a7b7554dc18ed69060d200f3d64065261082c354ca37861eab75a921cd2"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+        "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+      },
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 11,
+      "remoteId": "rfVe_wqDKAQ",
+      "status": "legacy-remote-id",
+      "publicationId": null,
+      "videoSpecCandidate": "ocean-depth",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/ocean-depth.ts",
+          "sha256": "707cc07cb04f9eaa85383857d10530d699fd5a27446262c5d42153144b8eb710"
+        },
+        {
+          "path": "docs/PERFORMANCE.md",
+          "sha256": "03fedb1283a33a8a3041fdc52f779eb854a2f4c27aa0f6a0fc3745777b626d09"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Exact YouTube ID already recorded in legacy PERFORMANCE; no strict PublicationRecord for this post.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 12,
+      "remoteId": "cojsKD4YLxA",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "chocolate-crystal-choice",
+      "cycleCandidate": "cycle.3",
+      "evidence": [
+        {
+          "path": "src/content/videos/chocolate-crystal-choice.ts",
+          "sha256": "b622ecd75facbca6c99e5cd9e9cc693e0dfb9385d232f9193a675493a401d10f"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 13,
+      "remoteId": "TW7pFCcjn4s",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "heat-barrier-v4",
+      "cycleCandidate": "cycle.6",
+      "evidence": [
+        {
+          "path": "src/content/videos/heat-barrier-v4.ts",
+          "sha256": "9325f9b7bf462af50000ae19b93f934dd1f1352198583bef2fb389488712afa1"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-6/publication/release-v1.json",
+        "sha256": "84401b8027fef4ec13fe825ab00a367e58367c072551a10222cafd8008c9105c"
+      },
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 14,
+      "remoteId": "nypxYEoWZFI",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "oklo-v5",
+      "cycleCandidate": "cycle.8",
+      "evidence": [
+        {
+          "path": "src/content/videos/oklo-v5.ts",
+          "sha256": "ef8d1db3c99ae879be1e04c354a26213e25312eda3082a7799346b04585564fe"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-8/publication/release-v1.json",
+        "sha256": "9b01a7fe5ad927f76ef9ee8e6cc30b0fbab7ede3cf7edf8ae3aba449288cd800"
+      },
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 15,
+      "remoteId": "x4-sZpeFdHc",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "two-goals-v2",
+      "cycleCandidate": "cycle.9",
+      "evidence": [
+        {
+          "path": "src/content/videos/two-goals-v2.ts",
+          "sha256": "95f12300e1f58ae0de0f479210344446edf68693b745640dc5e2c1d70954ccee"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+        "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+      },
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 16,
+      "remoteId": "BkprrNo_tE0",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "interaction-free-v3",
+      "cycleCandidate": "cycle.7",
+      "evidence": [
+        {
+          "path": "src/content/videos/interaction-free-v3.ts",
+          "sha256": "f0797eaeaf098c291bbc691e863c008bb82311b8d7f71da0218b611433bf8b84"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-7/publication/release-v1.json",
+        "sha256": "cb4b2cc4d6209f89eab7ebbc04daa8e47155636cfb96de769aa3661ba0fa2f46"
+      },
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 17,
+      "remoteId": "LDNHrp0RdMU",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "longitude-clock-locked",
+      "cycleCandidate": "cycle.2",
+      "evidence": [
+        {
+          "path": "src/content/videos/longitude-clock-locked.ts",
+          "sha256": "7be88128ff10de71827e119baa10ec04eca8974cd86ddd7ea3c4938f07936d1f"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "youtube-table",
+      "recordNumber": 18,
+      "remoteId": "hkofIk-YiCU",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "craft-escape-v3",
+      "cycleCandidate": "cycle.10",
+      "evidence": [
+        {
+          "path": "src/content/videos/craft-escape-v3.ts",
+          "sha256": "7026973deb260b5e970e2053d7857ae998f2cdc06e3f7ce403df0f61c6410de1"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-10/publication/release-v1.json",
+        "sha256": "04f92a3d0b29696abd3f07855e972a201f3fa639c0e59bbbbab713f187ac6203"
+      },
+      "rationale": "Distinctive title and native date/duration corroborate repository story; remote ID newly supplied. Exact uploaded variant/media not established.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 2,
+      "remoteId": "18125134168908079",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "craft-escape-v3",
+      "cycleCandidate": "cycle.10",
+      "evidence": [
+        {
+          "path": "src/content/videos/craft-escape-v3.ts",
+          "sha256": "7026973deb260b5e970e2053d7857ae998f2cdc06e3f7ce403df0f61c6410de1"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-10/publication/release-v1.json",
+        "sha256": "04f92a3d0b29696abd3f07855e972a201f3fa639c0e59bbbbab713f187ac6203"
+      },
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 3,
+      "remoteId": "18504351160101734",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "two-goals-v2",
+      "cycleCandidate": "cycle.9",
+      "evidence": [
+        {
+          "path": "src/content/videos/two-goals-v2.ts",
+          "sha256": "95f12300e1f58ae0de0f479210344446edf68693b745640dc5e2c1d70954ccee"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+        "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+      },
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 4,
+      "remoteId": "18422020192157149",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "oklo-v5",
+      "cycleCandidate": "cycle.8",
+      "evidence": [
+        {
+          "path": "src/content/videos/oklo-v5.ts",
+          "sha256": "ef8d1db3c99ae879be1e04c354a26213e25312eda3082a7799346b04585564fe"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-8/publication/release-v1.json",
+        "sha256": "9b01a7fe5ad927f76ef9ee8e6cc30b0fbab7ede3cf7edf8ae3aba449288cd800"
+      },
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 5,
+      "remoteId": "17971734591158599",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "interaction-free-v3",
+      "cycleCandidate": "cycle.7",
+      "evidence": [
+        {
+          "path": "src/content/videos/interaction-free-v3.ts",
+          "sha256": "f0797eaeaf098c291bbc691e863c008bb82311b8d7f71da0218b611433bf8b84"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-7/publication/release-v1.json",
+        "sha256": "cb4b2cc4d6209f89eab7ebbc04daa8e47155636cfb96de769aa3661ba0fa2f46"
+      },
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 6,
+      "remoteId": "18412904506085687",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "heat-barrier-v4",
+      "cycleCandidate": "cycle.6",
+      "evidence": [
+        {
+          "path": "src/content/videos/heat-barrier-v4.ts",
+          "sha256": "9325f9b7bf462af50000ae19b93f934dd1f1352198583bef2fb389488712afa1"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-6/publication/release-v1.json",
+        "sha256": "84401b8027fef4ec13fe825ab00a367e58367c072551a10222cafd8008c9105c"
+      },
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 7,
+      "remoteId": "18338768095279595",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "chladni-sand",
+      "cycleCandidate": "cycle.5",
+      "evidence": [
+        {
+          "path": "src/content/videos/chladni-sand.ts",
+          "sha256": "61a37e713db1a427a2327747ed206659388438277cc3c741949cc2414b4fb059"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-5/publication/release-v1.json",
+        "sha256": "829f2c797177190b6b06bb824398b8005c7d9cf8bd8cf924d05f5a88e40d5412"
+      },
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 8,
+      "remoteId": "17956233867260796",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "paper-half-shape",
+      "cycleCandidate": "cycle.4",
+      "evidence": [
+        {
+          "path": "src/content/videos/paper-half-shape.ts",
+          "sha256": "1e387a7b7554dc18ed69060d200f3d64065261082c354ca37861eab75a921cd2"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+        "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+      },
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 9,
+      "remoteId": "18184391266414181",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "chocolate-crystal-choice",
+      "cycleCandidate": "cycle.3",
+      "evidence": [
+        {
+          "path": "src/content/videos/chocolate-crystal-choice.ts",
+          "sha256": "b622ecd75facbca6c99e5cd9e9cc693e0dfb9385d232f9193a675493a401d10f"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 10,
+      "remoteId": "17914876221464046",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "longitude-clock-locked",
+      "cycleCandidate": "cycle.2",
+      "evidence": [
+        {
+          "path": "src/content/videos/longitude-clock-locked.ts",
+          "sha256": "7be88128ff10de71827e119baa10ec04eca8974cd86ddd7ea3c4938f07936d1f"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 11,
+      "remoteId": "18634039852053392",
+      "status": "exact-publication",
+      "publicationId": "publication.instagram.phantom-traffic",
+      "videoSpecCandidate": "phantom-traffic",
+      "cycleCandidate": "cycle.1",
+      "evidence": [
+        {
+          "path": "src/content/videos/phantom-traffic.ts",
+          "sha256": "a9ca1ad36cd0ed41ed05a1ddbe194446ac8cd999afc347e88e655f05a58849e5"
+        },
+        {
+          "path": "content-intelligence/reviews/phantom-traffic-closure-v1/publication-records.json",
+          "sha256": "cd5c38112d0d9319076628bf9e0fbf4c309e2a15e1dbb6b2da5081ef53c06a32"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Exact existing Instagram shortcode, corroborated description/date. Numeric Post ID is retained separately; /p/ and /reel/ URLs share shortcode.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "instagram-posts",
+      "recordNumber": 12,
+      "remoteId": "18106757828522900",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "wood-frog",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/wood-frog.ts",
+          "sha256": "d53423f3a813daa76f4527bab82235722c8c3197b4929f1d0d67850851cdb3e2"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Distinctive description and publish date/duration corroborate story; exact media/variant remains unverified.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 2,
+      "remoteId": "1090940843898143",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "wood-frog",
+      "cycleCandidate": null,
+      "evidence": [
+        {
+          "path": "src/content/videos/wood-frog.ts",
+          "sha256": "d53423f3a813daa76f4527bab82235722c8c3197b4929f1d0d67850851cdb3e2"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 3,
+      "remoteId": "1124639570513284",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "phantom-traffic",
+      "cycleCandidate": "cycle.1",
+      "evidence": [
+        {
+          "path": "src/content/videos/phantom-traffic.ts",
+          "sha256": "a9ca1ad36cd0ed41ed05a1ddbe194446ac8cd999afc347e88e655f05a58849e5"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 4,
+      "remoteId": "1684362383213138",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "longitude-clock-locked",
+      "cycleCandidate": "cycle.2",
+      "evidence": [
+        {
+          "path": "src/content/videos/longitude-clock-locked.ts",
+          "sha256": "7be88128ff10de71827e119baa10ec04eca8974cd86ddd7ea3c4938f07936d1f"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 5,
+      "remoteId": "1087423553879854",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "chocolate-crystal-choice",
+      "cycleCandidate": "cycle.3",
+      "evidence": [
+        {
+          "path": "src/content/videos/chocolate-crystal-choice.ts",
+          "sha256": "b622ecd75facbca6c99e5cd9e9cc693e0dfb9385d232f9193a675493a401d10f"
+        }
+      ],
+      "preparedReleaseCandidate": null,
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 6,
+      "remoteId": "1804692670558879",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "paper-half-shape",
+      "cycleCandidate": "cycle.4",
+      "evidence": [
+        {
+          "path": "src/content/videos/paper-half-shape.ts",
+          "sha256": "1e387a7b7554dc18ed69060d200f3d64065261082c354ca37861eab75a921cd2"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-4/publication/release-v1.json",
+        "sha256": "172bed47fb3966826f5e5edcaf44d485ccb11a6da86c8b53fd3252ed2c1f8b7f"
+      },
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 7,
+      "remoteId": "1432121365710907",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "chladni-sand",
+      "cycleCandidate": "cycle.5",
+      "evidence": [
+        {
+          "path": "src/content/videos/chladni-sand.ts",
+          "sha256": "61a37e713db1a427a2327747ed206659388438277cc3c741949cc2414b4fb059"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-5/publication/release-v1.json",
+        "sha256": "829f2c797177190b6b06bb824398b8005c7d9cf8bd8cf924d05f5a88e40d5412"
+      },
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 8,
+      "remoteId": "1758074082113820",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "heat-barrier-v4",
+      "cycleCandidate": "cycle.6",
+      "evidence": [
+        {
+          "path": "src/content/videos/heat-barrier-v4.ts",
+          "sha256": "9325f9b7bf462af50000ae19b93f934dd1f1352198583bef2fb389488712afa1"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-6/publication/release-v1.json",
+        "sha256": "84401b8027fef4ec13fe825ab00a367e58367c072551a10222cafd8008c9105c"
+      },
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 9,
+      "remoteId": "1794364248273961",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "interaction-free-v3",
+      "cycleCandidate": "cycle.7",
+      "evidence": [
+        {
+          "path": "src/content/videos/interaction-free-v3.ts",
+          "sha256": "f0797eaeaf098c291bbc691e863c008bb82311b8d7f71da0218b611433bf8b84"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-7/publication/release-v1.json",
+        "sha256": "cb4b2cc4d6209f89eab7ebbc04daa8e47155636cfb96de769aa3661ba0fa2f46"
+      },
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 10,
+      "remoteId": "974079688354786",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "oklo-v5",
+      "cycleCandidate": "cycle.8",
+      "evidence": [
+        {
+          "path": "src/content/videos/oklo-v5.ts",
+          "sha256": "ef8d1db3c99ae879be1e04c354a26213e25312eda3082a7799346b04585564fe"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-8/publication/release-v1.json",
+        "sha256": "9b01a7fe5ad927f76ef9ee8e6cc30b0fbab7ede3cf7edf8ae3aba449288cd800"
+      },
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 11,
+      "remoteId": "1770659317537757",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "two-goals-v2",
+      "cycleCandidate": "cycle.9",
+      "evidence": [
+        {
+          "path": "src/content/videos/two-goals-v2.ts",
+          "sha256": "95f12300e1f58ae0de0f479210344446edf68693b745640dc5e2c1d70954ccee"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-9/publication/release-v1.json",
+        "sha256": "309687c801ff6c93e5c38c134e75dac0c84af7b57cd1b8ec7d079b8c847bb6b5"
+      },
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    },
+    {
+      "sourceId": "facebook-videos",
+      "recordNumber": 12,
+      "remoteId": "2609598729500428",
+      "status": "candidate-content",
+      "publicationId": null,
+      "videoSpecCandidate": "craft-escape-v3",
+      "cycleCandidate": "cycle.10",
+      "evidence": [
+        {
+          "path": "src/content/videos/craft-escape-v3.ts",
+          "sha256": "7026973deb260b5e970e2053d7857ae998f2cdc06e3f7ce403df0f61c6410de1"
+        }
+      ],
+      "preparedReleaseCandidate": {
+        "path": "content-intelligence/cycles/cycle-10/publication/release-v1.json",
+        "sha256": "04f92a3d0b29696abd3f07855e972a201f3fa639c0e59bbbbab713f187ac6203"
+      },
+      "rationale": "Tentative date/duration correspondence only: all titles, Universal video IDs and permalinks absent. Video asset ID is NOT assumed to equal a Reel post ID.",
+      "exactUploadedMediaEstablishedByCsv": false
+    }
+  ],
+  "unmatchedPolicy": "Every post row requires a disposition, including unmatched; no title-only automatic promotion. Candidate mappings are unresolved exact-publication matches.",
+  "knownConflict": "Facebook Phantom candidate Video asset ID 1124639570513284 differs from existing Reel post ID 2300822597344788; no equivalence is asserted."
+}

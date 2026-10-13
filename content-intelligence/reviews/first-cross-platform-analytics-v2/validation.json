@@ -1,0 +1,156 @@
+{
+  "recordKind": "analytics-evidence-integration-validation",
+  "recordedAt": "2026-10-11T16:40:46.813256Z",
+  "environment": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1",
+    "VITEST_MAX_WORKERS": "4"
+  },
+  "checks": [
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFilesPassed": 53,
+      "testsPassed": 501,
+      "gitDiffCheck": "passed",
+      "logSha256": "d36d7502fcc1dacf9113c51c1074edea9f795b3a48c36583bca1693300aa36c3"
+    },
+    {
+      "command": "pnpm exec vitest run tests/analytics-intake.test.ts",
+      "exitCode": 0,
+      "testsPassed": 18,
+      "logSha256": "06a1376886831497e2e2945fe627c72c703759f20cb832ce4d9a280508536261"
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "canonicalPayloads": 957,
+      "durableArtifactCount": 731,
+      "logSha256": "ede783d41b0b79531603817eca1c8e0f7a1bb393ff5b239bc2c3b8d5a83e1056",
+      "executionContext": "Local escalation permitted temporary tsx IPC; no platform operation. Existing missing historical expectations remain unchanged."
+    },
+    {
+      "command": "node --import tsx scripts/analytics.ts verify/context <manifest>",
+      "exitCode": 0,
+      "sources": 5,
+      "sourceRecords": 207,
+      "postRecords": 38,
+      "contextLessons": 6
+    },
+    {
+      "command": "independent Python source/arithmetic/preservation audit",
+      "result": "passed",
+      "sourceBytesComparedWithOriginalFiles": 5,
+      "sourceCellBoundCalculationsVerified": 64,
+      "preservedBaselineFileCount": 198,
+      "reportLinks": "passed",
+      "trackedChanges": "Only workflow/project-state.json differs from HEAD; new files listed in file bindings."
+    }
+  ],
+  "implementationScope": {
+    "runtimeFiles": [
+      "src/operations/analytics-intake.ts",
+      "src/content-intelligence/performance-context.ts",
+      "scripts/analytics.ts"
+    ],
+    "testFile": "tests/analytics-intake.test.ts",
+    "newDocumentation": "docs/ANALYTICS.md",
+    "priorV1FilesUnchanged": true,
+    "canonicalExistingDocumentsUnchanged": true,
+    "journalsUnchanged": true,
+    "publicationStatusesUnchanged": true,
+    "historicalMastersAndPackagesUnchanged": true,
+    "nativeMetricSnapshotsCreated": 0,
+    "typedLearningSignalsCreated": 0,
+    "rendersPerformed": false,
+    "platformActionsPerformed": false,
+    "cycle12Started": false,
+    "ownerReview": "pending",
+    "commitOrPushPerformed": false
+  },
+  "draftPreparationNotes": [
+    "Before handoff, importer checks exposed native aggregate/listed-row differences; behavior was corrected to preserve warnings, not refuse discrepant original data. No original source or historical record was changed.",
+    "The initial unhanded parsed draft was regenerated once to include strict normalized publication-date validation; this final handoff is hash-bound, and subsequent changes require a new batch."
+  ],
+  "limitations": [
+    "Collection/export times and source timezone remain unknown.",
+    "Only3 exact existing PublicationRecord matches;3 legacy IDs and32 candidate publication mappings preserved.",
+    "Facebook interval/denominator semantics and asset-to-post equivalence unresolved.",
+    "TikTok screenshots unprovided and uninspected.",
+    "No clean-machine restore, remote backup, commit, owner approval or Cycle12 start claimed.",
+    "Existing durable-artifact counts do not imply new CSV handoffs are registered external-backup artifacts."
+  ],
+  "fileBindings": [
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/baseline.json",
+      "sha256": "783cd066587cb80591a190ee2e1d38c705d247e13375fc98bed8d5fa784c6b61"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/learning-context.json",
+      "sha256": "917ab98399fb6a74b1ae54f048c06c068147074b8f3b7a547b4b45d8885e2209"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/manifest.json",
+      "sha256": "8a8a0e8d377748ff0fd930120ae7366d2a50acaec383c84d4a15f9e52a9ad439"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/mappings.json",
+      "sha256": "8b117d02a93c055d694678c566d54de5ad43f0b625d358d405235f6d5a24bfc3"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/parsed.json",
+      "sha256": "210e8c7320ae22726054aaed1accb104c001717aacf058e056dcd34a14bd27d4"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/sources/facebook/Sep-13-2026_Oct-10-2026_2337340933762037.csv",
+      "sha256": "1493bbf59a27434bcd32c39e6f9254caa98a72966a773cd78b7113b0d82b3888"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/sources/instagram/Sep-13-2026_Oct-10-2026_1896361564660178.csv",
+      "sha256": "af703b660e2699bb3adb9000cdda91061ad26ee2d47284785c1af4c72d38b3b8"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/sources/youtube/Chart data.csv",
+      "sha256": "770c3a9ea343966cf6f2acd0b9c850f19495640707deedb9ca401a8d3fbcf13e"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/sources/youtube/Table data.csv",
+      "sha256": "d575e9148cbffd12dd30e454345ab2e252d0e59d48099b587d050abeb3f4580d"
+    },
+    {
+      "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/sources/youtube/Totals.csv",
+      "sha256": "fb5028f50da533992b4d57a39b7a3913c800153e85baec790f8a6edc5dd91caf"
+    },
+    {
+      "path": "content-intelligence/reviews/first-cross-platform-analytics-v2/analysis.json",
+      "sha256": "3ef9f911b6c929a67da7e4409c320c3318371400d8abe2d16a7faa4360511cb2"
+    },
+    {
+      "path": "content-intelligence/reviews/first-cross-platform-analytics-v2/owner-review.md",
+      "sha256": "8d6beb707f4bd0fb558924e9572a000669ef810e34d05627769a41ffa9874021"
+    },
+    {
+      "path": "docs/ANALYTICS.md",
+      "sha256": "0472b485cb9b9f5cd6424458b0afcb187837cb12d41e16686b5cb2d6eafa82fc"
+    },
+    {
+      "path": "scripts/analytics.ts",
+      "sha256": "6354c94c3acf60d2fd5eb8c922ca7e98296ac390e01d3c5682998e67e4051ae8"
+    },
+    {
+      "path": "src/content-intelligence/performance-context.ts",
+      "sha256": "5580322aaf9ee477acb79af8b896183d89e6c83aafd9fa5d75bbcbbf0b8e1943"
+    },
+    {
+      "path": "src/operations/analytics-intake.ts",
+      "sha256": "c2916de76d71db3ac74b3ee5e98f41c1e9299e17bb683a983aabf5ab549e57fa"
+    },
+    {
+      "path": "tests/analytics-intake.test.ts",
+      "sha256": "67e30b3d8874258c73fb1e6a41c650cc9f52ce829251fd568840e8b556cf4077"
+    }
+  ],
+  "logs": "Temporary execution logs are not durable artifacts; recorded outcomes/counts and log hashes are retained."
+}

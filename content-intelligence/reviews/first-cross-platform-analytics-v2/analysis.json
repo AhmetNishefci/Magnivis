@@ -1,0 +1,1543 @@
+{
+  "recordKind": "analytics-review-reconciliation",
+  "parsed": {
+    "path": "content-intelligence/operations/analytics-intake-2026-10-11-v1/parsed.json",
+    "sha256": "210e8c7320ae22726054aaed1accb104c001717aacf058e056dcd34a14bd27d4"
+  },
+  "earlierReview": {
+    "path": "content-intelligence/reviews/first-cross-platform-analytics-v1/owner-review.md",
+    "sha256": "f9c012aedcc46a29ae11a84c71e62afbab499ce744df97f4c6afecd37121bdd2"
+  },
+  "calculations": [
+    {
+      "id": "youtube-unallocated-view-difference",
+      "formula": "v[0] - sum(v[1:])",
+      "inputs": [
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 2,
+          "field": "Views",
+          "value": 6825
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 3,
+          "field": "Views",
+          "value": 1629
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 4,
+          "field": "Views",
+          "value": 1342
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 5,
+          "field": "Views",
+          "value": 1082
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 6,
+          "field": "Views",
+          "value": 871
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 7,
+          "field": "Views",
+          "value": 521
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 8,
+          "field": "Views",
+          "value": 500
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 9,
+          "field": "Views",
+          "value": 218
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 10,
+          "field": "Views",
+          "value": 161
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 11,
+          "field": "Views",
+          "value": 104
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 12,
+          "field": "Views",
+          "value": 97
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 13,
+          "field": "Views",
+          "value": 82
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 14,
+          "field": "Views",
+          "value": 66
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 15,
+          "field": "Views",
+          "value": 64
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 16,
+          "field": "Views",
+          "value": 30
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 17,
+          "field": "Views",
+          "value": 28
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 18,
+          "field": "Views",
+          "value": 19
+        }
+      ],
+      "value": 11,
+      "unit": "count",
+      "limitations": "Unreconciled aggregate minus listed rows; not imputed to any missing/reported video."
+    },
+    {
+      "id": "youtube-unallocated-impressions-difference",
+      "formula": "v[0] - sum(v[1:])",
+      "inputs": [
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 2,
+          "field": "Thumbnail impressions",
+          "value": 3921
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 3,
+          "field": "Thumbnail impressions",
+          "value": 116
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 4,
+          "field": "Thumbnail impressions",
+          "value": 441
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 5,
+          "field": "Thumbnail impressions",
+          "value": 252
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 6,
+          "field": "Thumbnail impressions",
+          "value": 1037
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 7,
+          "field": "Thumbnail impressions",
+          "value": 214
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 8,
+          "field": "Thumbnail impressions",
+          "value": 304
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 9,
+          "field": "Thumbnail impressions",
+          "value": 233
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 10,
+          "field": "Thumbnail impressions",
+          "value": 126
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 11,
+          "field": "Thumbnail impressions",
+          "value": 197
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 12,
+          "field": "Thumbnail impressions",
+          "value": 397
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 13,
+          "field": "Thumbnail impressions",
+          "value": 82
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 14,
+          "field": "Thumbnail impressions",
+          "value": 77
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 15,
+          "field": "Thumbnail impressions",
+          "value": 53
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 16,
+          "field": "Thumbnail impressions",
+          "value": 169
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 17,
+          "field": "Thumbnail impressions",
+          "value": 159
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 18,
+          "field": "Thumbnail impressions",
+          "value": 55
+        }
+      ],
+      "value": 9,
+      "unit": "count",
+      "limitations": "Unresolved aggregate discrepancy; no inferred CTR counts."
+    },
+    {
+      "id": "youtube-watch-hours-difference",
+      "formula": "v[0] - sum(v[1:])",
+      "inputs": [
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 2,
+          "field": "Watch time (hours)",
+          "value": 16.9105
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 3,
+          "field": "Watch time (hours)",
+          "value": 3.8542
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 4,
+          "field": "Watch time (hours)",
+          "value": 4.6948
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 5,
+          "field": "Watch time (hours)",
+          "value": 2.5815
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 6,
+          "field": "Watch time (hours)",
+          "value": 1.6617
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 7,
+          "field": "Watch time (hours)",
+          "value": 1.1204
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 8,
+          "field": "Watch time (hours)",
+          "value": 1.0438
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 9,
+          "field": "Watch time (hours)",
+          "value": 0.2705
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 10,
+          "field": "Watch time (hours)",
+          "value": 0.1661
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 11,
+          "field": "Watch time (hours)",
+          "value": 0.2247
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 12,
+          "field": "Watch time (hours)",
+          "value": 0.1937
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 13,
+          "field": "Watch time (hours)",
+          "value": 0.2168
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 14,
+          "field": "Watch time (hours)",
+          "value": 0.383
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 15,
+          "field": "Watch time (hours)",
+          "value": 0.2451
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 16,
+          "field": "Watch time (hours)",
+          "value": 0.0566
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 17,
+          "field": "Watch time (hours)",
+          "value": 0.0667
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 18,
+          "field": "Watch time (hours)",
+          "value": 0.0743
+        }
+      ],
+      "value": 0.05659999999999954,
+      "unit": "hours",
+      "limitations": "Unresolved aggregate discrepancy; no repair and no derived engaged views."
+    },
+    {
+      "id": "youtube-six-leading-views",
+      "formula": "sum(v)",
+      "inputs": [
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 3,
+          "field": "Views",
+          "value": 1629
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 4,
+          "field": "Views",
+          "value": 1342
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 5,
+          "field": "Views",
+          "value": 1082
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 6,
+          "field": "Views",
+          "value": 871
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 7,
+          "field": "Views",
+          "value": 521
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 8,
+          "field": "Views",
+          "value": 500
+        }
+      ],
+      "value": 5945,
+      "unit": "count",
+      "limitations": "Source-row ordering is supplied; not age-adjusted quality ranking."
+    },
+    {
+      "id": "youtube-six-share-native-total",
+      "formula": "sum(v[1:]) / v[0] * 100",
+      "inputs": [
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 2,
+          "field": "Views",
+          "value": 6825
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 3,
+          "field": "Views",
+          "value": 1629
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 4,
+          "field": "Views",
+          "value": 1342
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 5,
+          "field": "Views",
+          "value": 1082
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 6,
+          "field": "Views",
+          "value": 871
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 7,
+          "field": "Views",
+          "value": 521
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 8,
+          "field": "Views",
+          "value": 500
+        }
+      ],
+      "value": 87.10622710622711,
+      "unit": "percent",
+      "limitations": "Uses native total6825; includes11 unallocated views in denominator."
+    },
+    {
+      "id": "youtube-six-share-listed-rows",
+      "formula": "sum(v[:6]) / sum(v) * 100",
+      "inputs": [
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 3,
+          "field": "Views",
+          "value": 1629
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 4,
+          "field": "Views",
+          "value": 1342
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 5,
+          "field": "Views",
+          "value": 1082
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 6,
+          "field": "Views",
+          "value": 871
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 7,
+          "field": "Views",
+          "value": 521
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 8,
+          "field": "Views",
+          "value": 500
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 9,
+          "field": "Views",
+          "value": 218
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 10,
+          "field": "Views",
+          "value": 161
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 11,
+          "field": "Views",
+          "value": 104
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 12,
+          "field": "Views",
+          "value": 97
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 13,
+          "field": "Views",
+          "value": 82
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 14,
+          "field": "Views",
+          "value": 66
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 15,
+          "field": "Views",
+          "value": 64
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 16,
+          "field": "Views",
+          "value": 30
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 17,
+          "field": "Views",
+          "value": 28
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 18,
+          "field": "Views",
+          "value": 19
+        }
+      ],
+      "value": 87.24684473143527,
+      "unit": "percent",
+      "limitations": "Uses listed-row sum6814; different scope from native total."
+    },
+    {
+      "id": "youtube-other-ten-listed-views",
+      "formula": "sum(v[6:])",
+      "inputs": [
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 3,
+          "field": "Views",
+          "value": 1629
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 4,
+          "field": "Views",
+          "value": 1342
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 5,
+          "field": "Views",
+          "value": 1082
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 6,
+          "field": "Views",
+          "value": 871
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 7,
+          "field": "Views",
+          "value": 521
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 8,
+          "field": "Views",
+          "value": 500
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 9,
+          "field": "Views",
+          "value": 218
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 10,
+          "field": "Views",
+          "value": 161
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 11,
+          "field": "Views",
+          "value": 104
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 12,
+          "field": "Views",
+          "value": 97
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 13,
+          "field": "Views",
+          "value": 82
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 14,
+          "field": "Views",
+          "value": 66
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 15,
+          "field": "Views",
+          "value": 64
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 16,
+          "field": "Views",
+          "value": 30
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 17,
+          "field": "Views",
+          "value": 28
+        },
+        {
+          "sourceId": "youtube-table",
+          "recordNumber": 18,
+          "field": "Views",
+          "value": 19
+        }
+      ],
+      "value": 869,
+      "unit": "count",
+      "limitations": "Corrects previous880 inference; listed other ten actually869."
+    },
+    {
+      "id": "instagram-hotter-pan-views-share",
+      "formula": "v[0] / sum(v[1:]) * 100",
+      "inputs": [
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Views",
+          "value": 1676
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 2,
+          "field": "Views",
+          "value": 138
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 3,
+          "field": "Views",
+          "value": 153
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 4,
+          "field": "Views",
+          "value": 141
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 5,
+          "field": "Views",
+          "value": 58
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Views",
+          "value": 1676
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 7,
+          "field": "Views",
+          "value": 135
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 8,
+          "field": "Views",
+          "value": 273
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 9,
+          "field": "Views",
+          "value": 150
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 10,
+          "field": "Views",
+          "value": 159
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 11,
+          "field": "Views",
+          "value": 238
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 12,
+          "field": "Views",
+          "value": 63
+        }
+      ],
+      "value": 52.63819095477387,
+      "unit": "percent",
+      "limitations": "Same supplied Lifetime batch. Events not unique-person probabilities; Reach sum not unique channel reach."
+    },
+    {
+      "id": "instagram-hotter-pan-reach-share",
+      "formula": "v[0] / sum(v[1:]) * 100",
+      "inputs": [
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Reach",
+          "value": 1442
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 2,
+          "field": "Reach",
+          "value": 109
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 3,
+          "field": "Reach",
+          "value": 140
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 4,
+          "field": "Reach",
+          "value": 125
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 5,
+          "field": "Reach",
+          "value": 110
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Reach",
+          "value": 1442
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 7,
+          "field": "Reach",
+          "value": 114
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 8,
+          "field": "Reach",
+          "value": 248
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 9,
+          "field": "Reach",
+          "value": 133
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 10,
+          "field": "Reach",
+          "value": 136
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 11,
+          "field": "Reach",
+          "value": 185
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 12,
+          "field": "Reach",
+          "value": 45
+        }
+      ],
+      "value": 51.740222461428054,
+      "unit": "percent",
+      "limitations": "Same supplied Lifetime batch. Events not unique-person probabilities; Reach sum not unique channel reach."
+    },
+    {
+      "id": "instagram-hotter-pan-saves-share",
+      "formula": "v[0] / sum(v[1:]) * 100",
+      "inputs": [
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Saves",
+          "value": 11
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 2,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 3,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 4,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 5,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Saves",
+          "value": 11
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 7,
+          "field": "Saves",
+          "value": 1
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 8,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 9,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 10,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 11,
+          "field": "Saves",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 12,
+          "field": "Saves",
+          "value": 0
+        }
+      ],
+      "value": 91.66666666666666,
+      "unit": "percent",
+      "limitations": "Same supplied Lifetime batch. Events not unique-person probabilities; Reach sum not unique channel reach."
+    },
+    {
+      "id": "instagram-hotter-pan-shares-share",
+      "formula": "v[0] / sum(v[1:]) * 100",
+      "inputs": [
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Shares",
+          "value": 6
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 2,
+          "field": "Shares",
+          "value": 5
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 3,
+          "field": "Shares",
+          "value": 5
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 4,
+          "field": "Shares",
+          "value": 5
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 5,
+          "field": "Shares",
+          "value": 4
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Shares",
+          "value": 6
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 7,
+          "field": "Shares",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 8,
+          "field": "Shares",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 9,
+          "field": "Shares",
+          "value": 1
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 10,
+          "field": "Shares",
+          "value": 5
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 11,
+          "field": "Shares",
+          "value": 5
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 12,
+          "field": "Shares",
+          "value": 0
+        }
+      ],
+      "value": 16.666666666666664,
+      "unit": "percent",
+      "limitations": "Same supplied Lifetime batch. Events not unique-person probabilities; Reach sum not unique channel reach."
+    },
+    {
+      "id": "instagram-hotter-pan-follows-share",
+      "formula": "v[0] / sum(v[1:]) * 100",
+      "inputs": [
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Follows",
+          "value": 3
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 2,
+          "field": "Follows",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 3,
+          "field": "Follows",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 4,
+          "field": "Follows",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 5,
+          "field": "Follows",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Follows",
+          "value": 3
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 7,
+          "field": "Follows",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 8,
+          "field": "Follows",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 9,
+          "field": "Follows",
+          "value": 0
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 10,
+          "field": "Follows",
+          "value": 3
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 11,
+          "field": "Follows",
+          "value": 3
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 12,
+          "field": "Follows",
+          "value": 0
+        }
+      ],
+      "value": 33.33333333333333,
+      "unit": "percent",
+      "limitations": "Same supplied Lifetime batch. Events not unique-person probabilities; Reach sum not unique channel reach."
+    },
+    {
+      "id": "instagram-hotter-pan-save-events-per-reach",
+      "formula": "v[0] / v[1] * 100",
+      "inputs": [
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Saves",
+          "value": 11
+        },
+        {
+          "sourceId": "instagram-posts",
+          "recordNumber": 6,
+          "field": "Reach",
+          "value": 1442
+        }
+      ],
+      "value": 0.7628294036061026,
+      "unit": "percent",
+      "limitations": "11 save events/1442 reported reached accounts; not unique-person conversion or causal visual effect."
+    },
+    {
+      "id": "facebook-average-seconds-min",
+      "formula": "min(v)",
+      "inputs": [
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 2,
+          "field": "Average Seconds viewed",
+          "value": 3.921
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 3,
+          "field": "Average Seconds viewed",
+          "value": 4.999
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 4,
+          "field": "Average Seconds viewed",
+          "value": 4.624
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 5,
+          "field": "Average Seconds viewed",
+          "value": 2.464
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 6,
+          "field": "Average Seconds viewed",
+          "value": 2.281
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 7,
+          "field": "Average Seconds viewed",
+          "value": 4.742
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 8,
+          "field": "Average Seconds viewed",
+          "value": 11.06
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 9,
+          "field": "Average Seconds viewed",
+          "value": 6.101
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 10,
+          "field": "Average Seconds viewed",
+          "value": 5.391
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 11,
+          "field": "Average Seconds viewed",
+          "value": 3.07
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 12,
+          "field": "Average Seconds viewed",
+          "value": 7.035
+        }
+      ],
+      "value": 2.281,
+      "unit": "seconds",
+      "limitations": "Per-video native average minimum; do not average these row averages."
+    },
+    {
+      "id": "facebook-average-seconds-max",
+      "formula": "max(v)",
+      "inputs": [
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 2,
+          "field": "Average Seconds viewed",
+          "value": 3.921
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 3,
+          "field": "Average Seconds viewed",
+          "value": 4.999
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 4,
+          "field": "Average Seconds viewed",
+          "value": 4.624
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 5,
+          "field": "Average Seconds viewed",
+          "value": 2.464
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 6,
+          "field": "Average Seconds viewed",
+          "value": 2.281
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 7,
+          "field": "Average Seconds viewed",
+          "value": 4.742
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 8,
+          "field": "Average Seconds viewed",
+          "value": 11.06
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 9,
+          "field": "Average Seconds viewed",
+          "value": 6.101
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 10,
+          "field": "Average Seconds viewed",
+          "value": 5.391
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 11,
+          "field": "Average Seconds viewed",
+          "value": 3.07
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 12,
+          "field": "Average Seconds viewed",
+          "value": 7.035
+        }
+      ],
+      "value": 11.06,
+      "unit": "seconds",
+      "limitations": "Per-video native average maximum; denominator unavailable."
+    },
+    {
+      "id": "facebook-recommendation-watch-seconds",
+      "formula": "sum(v)",
+      "inputs": [
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 2,
+          "field": "Seconds viewed from Recommendations",
+          "value": 713.243
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 3,
+          "field": "Seconds viewed from Recommendations",
+          "value": 586.39
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 4,
+          "field": "Seconds viewed from Recommendations",
+          "value": 994.224
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 5,
+          "field": "Seconds viewed from Recommendations",
+          "value": 485.762
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 6,
+          "field": "Seconds viewed from Recommendations",
+          "value": 391.626
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 7,
+          "field": "Seconds viewed from Recommendations",
+          "value": 950.143
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 8,
+          "field": "Seconds viewed from Recommendations",
+          "value": 553.623
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 9,
+          "field": "Seconds viewed from Recommendations",
+          "value": 1098.633
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 10,
+          "field": "Seconds viewed from Recommendations",
+          "value": 1847.461
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 11,
+          "field": "Seconds viewed from Recommendations",
+          "value": 470.703
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 12,
+          "field": "Seconds viewed from Recommendations",
+          "value": 1291.76
+        }
+      ],
+      "value": 9383.568,
+      "unit": "seconds",
+      "limitations": "Native recommendation-source watch seconds, not recommendation views or For You traffic."
+    },
+    {
+      "id": "facebook-follower-watch-seconds",
+      "formula": "sum(v)",
+      "inputs": [
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 2,
+          "field": "Seconds viewed from Followers",
+          "value": 86.826
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 3,
+          "field": "Seconds viewed from Followers",
+          "value": 145.564
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 4,
+          "field": "Seconds viewed from Followers",
+          "value": 92.649
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 5,
+          "field": "Seconds viewed from Followers",
+          "value": 51.404
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 6,
+          "field": "Seconds viewed from Followers",
+          "value": 5.292
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 7,
+          "field": "Seconds viewed from Followers",
+          "value": 12.485
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 8,
+          "field": "Seconds viewed from Followers",
+          "value": 98.826
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 9,
+          "field": "Seconds viewed from Followers",
+          "value": 71.503
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 10,
+          "field": "Seconds viewed from Followers",
+          "value": 93.403
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 11,
+          "field": "Seconds viewed from Followers",
+          "value": 164.874
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 12,
+          "field": "Seconds viewed from Followers",
+          "value": 101.319
+        }
+      ],
+      "value": 924.145,
+      "unit": "seconds",
+      "limitations": "Native source watch seconds; no claim that viewers are all distinct followers."
+    },
+    {
+      "id": "facebook-recommendation-watch-share",
+      "formula": "sum(v[:11]) / sum(v[11:]) * 100",
+      "inputs": [
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 2,
+          "field": "Seconds viewed from Recommendations",
+          "value": 713.243
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 3,
+          "field": "Seconds viewed from Recommendations",
+          "value": 586.39
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 4,
+          "field": "Seconds viewed from Recommendations",
+          "value": 994.224
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 5,
+          "field": "Seconds viewed from Recommendations",
+          "value": 485.762
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 6,
+          "field": "Seconds viewed from Recommendations",
+          "value": 391.626
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 7,
+          "field": "Seconds viewed from Recommendations",
+          "value": 950.143
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 8,
+          "field": "Seconds viewed from Recommendations",
+          "value": 553.623
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 9,
+          "field": "Seconds viewed from Recommendations",
+          "value": 1098.633
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 10,
+          "field": "Seconds viewed from Recommendations",
+          "value": 1847.461
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 11,
+          "field": "Seconds viewed from Recommendations",
+          "value": 470.703
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 12,
+          "field": "Seconds viewed from Recommendations",
+          "value": 1291.76
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 2,
+          "field": "Seconds viewed",
+          "value": 800.069
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 3,
+          "field": "Seconds viewed",
+          "value": 731.954
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 4,
+          "field": "Seconds viewed",
+          "value": 1086.873
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 5,
+          "field": "Seconds viewed",
+          "value": 537.166
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 6,
+          "field": "Seconds viewed",
+          "value": 396.918
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 7,
+          "field": "Seconds viewed",
+          "value": 962.628
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 8,
+          "field": "Seconds viewed",
+          "value": 652.449
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 9,
+          "field": "Seconds viewed",
+          "value": 1170.136
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 10,
+          "field": "Seconds viewed",
+          "value": 1940.864
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 11,
+          "field": "Seconds viewed",
+          "value": 635.577
+        },
+        {
+          "sourceId": "facebook-videos",
+          "recordNumber": 12,
+          "field": "Seconds viewed",
+          "value": 1393.079
+        }
+      ],
+      "value": 91.03443217714734,
+      "unit": "percent",
+      "limitations": "Within native watch-time totals, not a cross-platform traffic-normalized rate."
+    }
+  ],
+  "confirmedOwnerTotals": {
+    "youtubeNativeAggregateViews": 6825,
+    "youtubeListedVideoCount": 16,
+    "instagramViews": 3184,
+    "instagramShares": 36,
+    "instagramSaves": 12,
+    "instagramFollows": 9,
+    "facebookSumPostReach": 2157
+  },
+  "corrections": [
+    "YouTube listed video Views sum6814, not6825; remaining ten869, not880.",
+    "YouTube chart has only five selected series (140 records); it is not full per-video daily coverage.",
+    "Meta metrics explicitly Lifetime; filename date range is content-selection context.",
+    "Facebook retention cells are present but coordinate/denominator semantics unverified.",
+    "TikTok previously reported nine reviewed posts; screenshots remain uninspected, owner observations only."
+  ],
+  "snapshotPromotionBlockedBy": [
+    "Unknown capture/export timestamp",
+    "Unknown reporting timezone/date-only selected range",
+    "Only three exact existing PublicationRecord matches; other remote/media bindings incomplete"
+  ],
+  "nativeSnapshotsCreated": 0,
+  "publicationStatusesModified": false,
+  "ownerReviewPending": true
+}

@@ -1,0 +1,65 @@
+{
+  "recordKind": "manual-review-derived-arithmetic",
+  "input": {
+    "path": "content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json",
+    "sha256": "7b61f31b96c603dc4e7904173a68a09cc2fa3b6a7eb0030419c3b6188dc26f1e",
+    "basis": "Owner-reported values; raw exports/screenshots uninspected"
+  },
+  "preconditions": [
+    "Reported leading rows and totals share scope/window and contain no duplicates.",
+    "No age adjustment or cross-platform normalization.",
+    "No cause, quality or unique-viewer inference."
+  ],
+  "calculations": [
+    {
+      "id": "youtube-leading-six-sum",
+      "formula": "1629 + 1342 + 1082 + 871 + 521 + 500",
+      "value": 5945,
+      "unit": "count"
+    },
+    {
+      "id": "youtube-leading-six-view-share",
+      "formula": "5945 / 6825 * 100",
+      "value": 87.10622710622711,
+      "unit": "percent"
+    },
+    {
+      "id": "youtube-remaining-ten-views",
+      "formula": "6825 - 5945",
+      "value": 880,
+      "unit": "count"
+    },
+    {
+      "id": "instagram-hotter-pan-views-share",
+      "formula": "1676 / 3184 * 100",
+      "value": 52.63819095477387,
+      "unit": "percent"
+    },
+    {
+      "id": "instagram-hotter-pan-saves-share",
+      "formula": "11 / 12 * 100",
+      "value": 91.66666666666666,
+      "unit": "percent"
+    },
+    {
+      "id": "instagram-hotter-pan-shares-share",
+      "formula": "6 / 36 * 100",
+      "value": 16.666666666666664,
+      "unit": "percent"
+    },
+    {
+      "id": "instagram-hotter-pan-follows-share",
+      "formula": "3 / 9 * 100",
+      "value": 33.33333333333333,
+      "unit": "percent"
+    },
+    {
+      "id": "instagram-hotter-pan-saves-per-reach",
+      "formula": "11 / 1442 * 100",
+      "value": 0.7628294036061026,
+      "unit": "percent",
+      "interpretation": "Save events per reported reached account; not proven unique-person saving probability."
+    }
+  ],
+  "rounding": "Report percentages rounded to one decimal except saves/reach to two; retained numeric results are unrounded binary-floating computations."
+}

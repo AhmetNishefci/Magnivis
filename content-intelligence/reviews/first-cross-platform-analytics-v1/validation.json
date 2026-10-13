@@ -1,0 +1,96 @@
+{
+  "recordKind": "manual-review-validation",
+  "recordedAt": "2026-10-11T16:18:29.385196+00:00",
+  "environment": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1",
+    "VITEST_MAX_WORKERS": "4"
+  },
+  "checks": [
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFilesPassed": 52,
+      "testsPassed": 483,
+      "gitDiffCheck": "passed",
+      "logSha256": "53c422a9e370a213326d10fc8092d3c688a27f6292bd0af6709ebc5e7d38d977"
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "canonicalPayloads": 957,
+      "durableArtifactCount": 731,
+      "historicalMissingExpectations": "Preserved existing recovery exclusions; passing validation does not restore missing historical media.",
+      "executionContext": "Local sandbox escalation allowed temporary tsx IPC pipe; no external platform action.",
+      "logSha256": "ede783d41b0b79531603817eca1c8e0f7a1bb393ff5b239bc2c3b8d5a83e1056"
+    },
+    {
+      "command": "manual companion/preservation audit",
+      "result": "passed",
+      "coverage": [
+        "JSON parsing",
+        "all eight arithmetic formulas",
+        "owner input hash and metadata reference",
+        "local report links",
+        "inspected historical evidence and media hashes",
+        "all inspected policy/document hashes unchanged",
+        "tracked modifications limited to workflow/project-state.json",
+        "no Cycle12 journal",
+        "git diff --check"
+      ]
+    }
+  ],
+  "earlierAttempts": [
+    {
+      "context": "Default Node24 pnpm launcher attempts",
+      "result": "No check results produced; interrupted; reran with supported Node22."
+    },
+    {
+      "context": "Initial Node22 pnpm check",
+      "result": "Six test failures from changed hash-bound documentation; pointer additions removed and original exact bytes restored. Final full suite passed; no historical hashes were rebound."
+    },
+    {
+      "context": "Initial sandboxed durable validator",
+      "result": "tsx temporary IPC pipe blocked with EPERM; same command passed with local execution escalation."
+    }
+  ],
+  "finalScope": {
+    "trackedChangedFiles": [
+      "workflow/project-state.json"
+    ],
+    "newReviewFolder": "content-intelligence/reviews/first-cross-platform-analytics-v1",
+    "rawAnalyticsIngested": false,
+    "nativeSnapshotsCreated": 0,
+    "historicalDocumentsChanged": false,
+    "journalsChanged": false,
+    "productionMediaChanged": false,
+    "codeChanged": false,
+    "rendersPerformed": false,
+    "renderReason": "No rendering changes; existing contact sheets inspected with recorded limits.",
+    "platformActionsPerformed": false,
+    "cycle12Started": false,
+    "ownerReviewPending": true
+  },
+  "reviewFileBindings": [
+    {
+      "path": "content-intelligence/reviews/first-cross-platform-analytics-v1/calculations.json",
+      "sha256": "132e9ac19869e4cb72f9fb81b9799fbc88632e37ed2c4f4197e1e357340c8bb0"
+    },
+    {
+      "path": "content-intelligence/reviews/first-cross-platform-analytics-v1/inspection-record.json",
+      "sha256": "ba43d67d5327c59f35ef185350371b44f07551621ffab701d721351d6a913636"
+    },
+    {
+      "path": "content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json",
+      "sha256": "7b61f31b96c603dc4e7904173a68a09cc2fa3b6a7eb0030419c3b6188dc26f1e"
+    },
+    {
+      "path": "content-intelligence/reviews/first-cross-platform-analytics-v1/owner-review.md",
+      "sha256": "f9c012aedcc46a29ae11a84c71e62afbab499ce744df97f4c6afecd37121bdd2"
+    }
+  ],
+  "logRetention": "Full execution logs are temporary local files, not durable report artifacts; hashes and actual outcome/counts recorded here.",
+  "limits": "Checks certify repository consistency and artifact integrity only; no analytics ingestion, causality, listening, mobile QA, live publication or owner approval is established."
+}

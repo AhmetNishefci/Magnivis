@@ -1,0 +1,83 @@
+{
+  "recordKind": "manual-review-evidence-companion",
+  "evidenceBasis": "explicit-owner-message",
+  "ownerMessageDateContext": "2026-10-11",
+  "analyticsCaptureDate": null,
+  "analyticsReportingWindow": null,
+  "analyticsWindowKind": "unknown",
+  "rawFilesInspected": [],
+  "ingestedMetricSnapshots": [],
+  "operationalStatements": [
+    "Production is complete through Cycle #11.",
+    "Cycle #10 covers Ellen and William Craft's escape and has been published on the four platforms.",
+    "Cycle #11 covers Han van Meegeren and the Vermeer forgery and has been manually scheduled.",
+    "The current publishing cadence is one video daily.",
+    "Cycle #12 discovery has not started.",
+    "Owner approvals and publication gates remain mandatory."
+  ],
+  "youtube": {
+    "ownerStatement": "The exported table reports 6,825 views across 16 published Shorts.",
+    "reportedViews": 6825,
+    "reportedPublishedShorts": 16,
+    "reportedLeadingRows": [
+      {"ownerLabel": "Speed of Light", "views": 1629},
+      {"ownerLabel": "Traffic Jam", "views": 1342},
+      {"ownerLabel": "Earth's Scale", "views": 1082},
+      {"ownerLabel": "$1 Billion", "views": 871},
+      {"ownerLabel": "Tallest Building", "views": 521},
+      {"ownerLabel": "Vibration Patterns", "views": 500}
+    ],
+    "reportedAvailableFields": ["per-video duration", "views", "average view duration", "watch time", "separate daily chart data"],
+    "ownerLimitation": "The export does not itself provide complete per-video swipe-away and retention curves."
+  },
+  "tiktok": {
+    "reportedExamples": [
+      {"ownerLabel": "Hotter Pan", "averageWatchSeconds": 6.99, "watchedFullVideoPercent": 2.9},
+      {"ownerLabel": "Ship's Clock", "averageWatchSeconds": 3.82, "watchedFullVideoPercent": 1.4},
+      {"ownerLabel": "Vibration Patterns", "averageWatchSeconds": 4.15, "watchedFullVideoPercent": 2.2},
+      {"ownerLabel": "A4 Paper", "averageWatchSeconds": 5.12, "watchedFullVideoPercent": 1.9},
+      {"ownerLabel": "Wood Frog", "averageWatchSeconds": 5.25, "watchedFullVideoPercent": 4.7}
+    ],
+    "ownerStatements": [
+      "The available individual-video screenshots show weak average watch time and completion for several posts.",
+      "Multiple screenshots identify 0:01 as the point where the most viewers stopped watching.",
+      "TikTok's For You feed accounts for most observed traffic.",
+      "These are observations, not definitive proof of the cause of drop-off."
+    ]
+  },
+  "instagram": {
+    "reportedReels": 11,
+    "reportedTotals": {"views": 3184, "shares": 36, "saves": 12, "follows": 9},
+    "reportedHotterPan": {"views": 1676, "reach": 1442, "saves": 11, "shares": 6, "follows": 3},
+    "ownerLimitation": "Instagram watch-time and retention data were not included in the export."
+  },
+  "facebook": {
+    "reportedVideoRecords": 11,
+    "reportedSummedPerVideoReach": 2157,
+    "approximateAverageSecondsViewedRange": [2.3, 11.1],
+    "reportedAvailableFields": ["native reach", "3-second views", "seconds viewed", "average seconds viewed", "reactions", "comments", "shares", "retention-related fields"],
+    "ownerLimitations": [
+      "Summed per-video reach is 2,157; this is not unique channel reach.",
+      "Average seconds viewed ranges approximately from 2.3 to 11.1 seconds across these videos.",
+      "Do not conflate Facebook reach, 3-second views, or other metrics with YouTube, TikTok or Instagram views."
+    ]
+  },
+  "allPlatformsUnknowns": {
+    "originalFilenames": null,
+    "fileHashes": null,
+    "exportOrCaptureTimes": null,
+    "reportingTimeZones": null,
+    "windowStartAndEnd": null,
+    "publicationAges": null,
+    "exactPostMapping": null,
+    "nativeViewingDenominators": null,
+    "organicOrPaidContext": null
+  },
+  "authorityLimits": [
+    "Owner numerical summaries preserved without claiming inspection of underlying exports/screenshots.",
+    "Owner-message/review date is not an analytics capture date or platform event date.",
+    "New Cycle #10 owner-reported publication supersedes older owner-reported scheduling externally; it does not supply missing exact-release authority, dates, IDs or uploaded bytes.",
+    "No changes to native cycle journals, publication registry, release authority or historical evidence.",
+    "No Cycle #12 start, production, platform action or broad architecture implementation."
+  ]
+}
