@@ -1,0 +1,67 @@
+{
+  "inspectedAt": "2026-10-13T16:17:32.703303Z",
+  "method": "Fresh primary public evidence inspection; retrieval limits explicit. No authenticated or platform-action access.",
+  "sources": [
+    {
+      "key": "youtube-duration",
+      "url": "https://support.google.com/youtube/answer/15424877?hl=en",
+      "access": "fresh-official-body-inspected",
+      "finding": "Vertical or square Shorts up to180s through app/Studio. Active copyright claims block Shorts longer than one minute. This60.523s master fits duration; actual platform copyright processing untested."
+    },
+    {
+      "key": "youtube-cover",
+      "url": "https://support.google.com/youtube/answer/72431?hl=en",
+      "access": "fresh-official-body-inspected",
+      "finding": "Verified-account computer Studio supports custom Shorts PNG/JPG thumbnails.9:16 preferred;2160x3840 recommended, minimum640pxheight, desktop50MB limit. Actual account entitlement and crops unknown. Selected1080x1920 frame exceeds minimum; no synthetic upscaling."
+    },
+    {
+      "key": "youtube-ai",
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en",
+      "access": "fresh-official-body-inspected",
+      "finding": "Meaningfully AI-generated realistic content requires disclosure; non-realistic animation/production assistance excluded. This video is original code animation with realistic-sounding synthetic narrator, not an impersonation or fabricated event. Recommend AI use/Altered content Yes for transparency; do not claim all code animation requires it. Live control untested."
+    },
+    {
+      "key": "tiktok-duration",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/creator-tools-on-tiktok?lang=nl",
+      "access": "fresh-official-indexed-body-inspected; direct fetch robots denied; current Studio URL returns empty shell",
+      "finding": "Indexed official Studio web Upload accepts MP4/WebM at least720x1280, up to30min, below10GB. Current body and account acceptance unverified; file fits indexed route. Local180s is bounded internal validation, not asserted universal maximum."
+    },
+    {
+      "key": "tiktok-ai",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content",
+      "access": "fresh-official-indexed-body-inspected",
+      "finding": "Realistic AI audio requires labeling; creator setting under More options. Recommend On for synthetic af_heart narration. Original rendered dice are illustrative and not empirical footage."
+    },
+    {
+      "key": "tiktok-cover",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/editing-posting-and-deleting",
+      "access": "direct fetch inaccessible redirect; Studio indexed text inspected",
+      "finding": "Studio indexed official upload article supports cover selection. Exact selector precision, imported-image option and native crops untested; select matching original frame if picker available, do not silently replace."
+    },
+    {
+      "key": "instagram-duration",
+      "url": "https://about.instagram.com/features/reels",
+      "access": "web429; fresh public curl body retrieved and actually inspected",
+      "finding": "Hero supports3min gallery videos; FAQ describes20min creation and no recommendation to new audiences above3min.60.523s below both. Gallery route/account processing untested;180s local envelope is conservative internal bound.",
+      "body": {
+        "path": "content-intelligence/cycles/cycle-14/publication/policy-sources/instagram-reels-body.txt",
+        "sha256": "bacb3241e58a356b53864df760c749c450a819018f4ac8020f2d5bb01fbb8da2"
+      }
+    },
+    {
+      "key": "facebook-duration",
+      "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+      "access": "fresh-official-body-inspected",
+      "finding": "Announced unified Reels flow has no length/format restrictions, rollout gradual to profiles/Pages. Actual Page flow untested.180s local envelope only internal validation bound."
+    },
+    {
+      "key": "meta-ai",
+      "url": "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+      "access": "fresh-official-body-inspected",
+      "finding": "Disclosure tool applies to organic realistic-sounding digitally created audio. Recommend available AI disclosure On for narration on Instagram/Facebook. Exact live controls untested; no generated-image claim for procedural dice."
+    }
+  ],
+  "masterContainerSeconds": 60.523,
+  "localEnvelope": "3–180seconds bounded delivery validation; only YouTube180s is asserted as relevant official Shorts cap. Geometry remains provisional/unknown.",
+  "externalActions": []
+}

@@ -1,0 +1,15 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../../../../src/artifacts/media';
+import {openMediaCatalog} from '../../../../src/artifacts/catalog';
+import {sha256Json} from '../../../../src/content-intelligence/run-schema';
+import {loadCycle,persistCycleEvent} from '../../../../src/workflow/store';
+import {ownerDecisionSchema} from '../../../../src/workflow/evidence';
+const b='content-intelligence/cycles/cycle-14/publication',registry=openMediaCatalog(),cycle=loadCycle(process.cwd(),'cycle.14',registry),at=new Date().toISOString();
+if(cycle.stage!=='master-review'||cycle.revision!==19||!cycle.candidate)throw new Error('Expected V4master gate');
+const candidate=JSON.parse(readFileSync(cycle.candidate.path,'utf8'));if(candidate.media.sha256!=='2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2')throw new Error('Wrong master');
+const put=(n:string,v:unknown)=>{const path=`${b}/${n}.json`;writeFileSync(path,JSON.stringify(v,null,2)+'\n',{flag:'wx'});return {path,sha256:mediaHash(path)};};
+const decision=put('master-approval-v1',ownerDecisionSchema.parse({schemaVersion:3,id:'owner-decision.cycle-14.master-v4-approval.v1',revision:1,gate:'master-review',cycleId:cycle.id,targetSha256:sha256Json(candidate),decision:'approve',enteredAt:at,suppliedReviewTime:null,reviewer:'Ahmet — owner',evidenceBasis:'explicit-owner-message',instruction:readFileSync(`${b}/owner-instruction.md`,'utf8'),acceptedUnknowns:[]}));
+const approved=persistCycleEvent(process.cwd(),cycle,{type:'owner-decision',record:decision,at},registry);
+put('master-lock-v1',{cycleId:cycle.id,media:candidate.media,masterDecision:decision,candidate:cycle.candidate,path:registry.resolveFile(candidate.media),identityUnchanged:true,newMediaCreated:0,publicationAuthorized:false});
+const start=put('presentation-start-v1',{cycleId:cycle.id,stage:'presentation',action:'Prepare four exact-master reference deliveries, independently inspect selected cover, refresh export requirements, preserve native/device unknowns; stop at owner DELIVERY REVIEW without platform actions.'});
+const begun=persistCycleEvent(process.cwd(),approved,{type:'begin-internal',stage:'presentation',record:start,at:new Date().toISOString()},registry);console.log(JSON.stringify({stage:begun.stage,revision:begun.revision,masterApproved:true,publicationAuthorized:false}));

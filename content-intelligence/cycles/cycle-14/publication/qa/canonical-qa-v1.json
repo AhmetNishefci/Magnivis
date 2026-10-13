@@ -1,0 +1,6 @@
+{
+  "command": "pnpm qa dice-v4",
+  "exitCode": 0,
+  "rawOutput": "\n> magnivis@0.1.0 qa /Users/ahmetnishefci/Developer/Magnivis\n> tsx scripts/qa.ts dice-v4\n\n{\n  \"checkedAt\": \"2026-10-13T16:18:54.483Z\",\n  \"input\": \"artifacts/masters/dice-cycle14-candidate-v4.mp4\",\n  \"expected\": {\n    \"width\": 1080,\n    \"height\": 1920,\n    \"fps\": 30,\n    \"durationSeconds\": 60.46666666666667\n  },\n  \"observed\": {\n    \"width\": 1080,\n    \"height\": 1920,\n    \"fps\": \"30/1\",\n    \"videoCodec\": \"h264\",\n    \"audioCodec\": \"aac\",\n    \"audioSampleRate\": \"48000\",\n    \"meanVolumeDb\": -25.2,\n    \"maxVolumeDb\": -2.4,\n    \"duration\": 60.523,\n    \"sizeBytes\": 25764974,\n    \"bitRate\": 3405644\n  },\n  \"passed\": true,\n  \"failures\": []\n}\n",
+  "rawOutputSha256": "bec5095061d6314d50c3fb7e7569da0c33c6676c0054df827b493df16a19ea37"
+}

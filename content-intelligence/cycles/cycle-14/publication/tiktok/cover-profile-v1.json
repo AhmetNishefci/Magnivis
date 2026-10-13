@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.dice.tiktok.cover-v1",
+  "revision": 1,
+  "platform": "tiktok",
+  "surface": "tiktok-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-13T16:17:32.975Z",
+  "reviewAfter": "2026-10-20T16:17:32.975Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Exact static canvas/bounds checked; native composition unmeasured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail UI geometry unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native cover overlay geometry unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Profile/grid/feed/search crop unknown; no crop invented.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-14/publication/qa/selected-cover-v1.json",
+        "sha256": "360ca825790785b651ff170a71da311f926d7d7f9843625331412e01e07b8578"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-14/publication/policy-inspection-v1.json",
+        "sha256": "e404af85e97ab1c4028b4ce0f7819d16fa5b246c744500f6fa4a5ab64b15b18c"
+      }
+    ],
+    "rationale": "Exact decoded1080x1920PNG or corresponding native frame; actual selector/crops untested."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-10-13T16:24:56.240087Z",
+  "passed": true,
+  "pnpmCheck": {
+    "exitCode": 0,
+    "testFiles": 54,
+    "tests": 507
+  },
+  "pnpmArtifactsDurable": {
+    "exitCode": 0,
+    "passed": true
+  },
+  "canonicalVideoQA": {
+    "exitCode": 0,
+    "passed": true,
+    "fullDecode": "passed",
+    "meanVolumeDb": -25.2,
+    "maxVolumeDb": -2.4
+  },
+  "mathematics": {
+    "exactScriptWords": 128,
+    "scriptWordCountingRule": "Canonical Unicode word sequences, contractions/hyphenated two-thirds count once; em dash separates words.",
+    "comparisons": 4,
+    "indexedPairOutcomes": 144,
+    "winsPerComparison": 24,
+    "lossesPerComparison": 12,
+    "tiesPerComparison": 0,
+    "greenRoutes": [
+      18,
+      6
+    ],
+    "orangeRoutes": [
+      12,
+      12
+    ],
+    "record": {
+      "path": "content-intelligence/cycles/cycle-14/revision-v4/mathematical-qa.json",
+      "sha256": "ca5a59e6ccc44d7bed60e0b2bc0594dda1ca4201a9b1e638015788284cfeaf1f"
+    }
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-14/publication/release-v1.json",
+    "sha256": "4216867ed7455e757e45a7e15bd55259bd4eb915273a808989e3d1d4bbb38345"
+  },
+  "scopedReleaseValidation": {
+    "path": "content-intelligence/cycles/cycle-14/publication/qa/release-validation-final-v1.json",
+    "sha256": "023b314c56d3fa02805b430ae4268920542d38c2f3a61d81dd467d8009608478"
+  },
+  "preservation": {
+    "path": "content-intelligence/cycles/cycle-14/publication/preservation-verification-v1.json",
+    "sha256": "97bb277025ed8ff05a47dc69892dc4c106ee7c0310f4f0f552771eefa4ffa9ce"
+  },
+  "mediaResolvers": [
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/qa/youtube-media-resolution-v1.json",
+      "sha256": "7a5511b56874a0a4e9003802cb9948ca10f4542412ee9e38a4a435e1189238ce"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/qa/tiktok-media-resolution-v1.json",
+      "sha256": "1c902ad57be586da629ccddaf95d1232b91c08ec57c0fa8bef47cc8c9b5cd251"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/qa/instagram-media-resolution-v1.json",
+      "sha256": "f2a2cf21e36704a9c9c443127394b079ac5a168ff79fdf389f908df5bc4438d5"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/qa/facebook-media-resolution-v1.json",
+      "sha256": "cdd09dcb2f27fe8e2c46afd2284a7e07309875c7705320fc2523152927d8164d"
+    }
+  ],
+  "reports": [
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/qa/repository-check-v1.json",
+      "sha256": "6763127c7c94915eb8c01688618b449bbb5dd5a20e93a329f2194b1e113e6aa1"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/qa/durable-artifacts-v1.json",
+      "sha256": "8e683a97ce8584dedfb774f7c493dde5f9b641759f9bddb354c73222bf05dded"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/qa/canonical-qa-v1.json",
+      "sha256": "c6898fdee70a24bf5a89588843a280b199a5c6d4ef6e73d988a4a61fc946f934"
+    }
+  ],
+  "masterSha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+  "videoPayloads": 1,
+  "newMedia": 0,
+  "captionMidpointsPerPlatform": 25,
+  "browserCheckpoints": 119,
+  "knownCollisions": 0,
+  "presentationUnknowns": 44,
+  "nativeRevision": 22,
+  "ownerFacingGate": "AHMET \u2014 CYCLE #14 DELIVERY REVIEW",
+  "publicationAuthorized": false,
+  "platformActions": [],
+  "limitations": [
+    "No actual-device/native-platform tests or continuous subjective audiovisual playback.",
+    "TikTok current help-body access limited; actual upload route/account processing untested.",
+    "Native controls/crops/caption overlays and copyright processing unknown; no risk acceptance inferred."
+  ]
+}

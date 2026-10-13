@@ -1,0 +1,110 @@
+{
+  "cycleId": "cycle.14",
+  "variantId": "dice.variant.facebook.v1",
+  "platform": "facebook",
+  "surface": "facebook-reels-viewer",
+  "media": {
+    "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+    "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+  },
+  "claimIds": [
+    "dice-no-best.claim.first-choice",
+    "dice-no-best.claim.rule",
+    "dice-no-best.claim.configuration",
+    "dice-no-best.claim.model",
+    "dice-no-best.claim.yellow-orange",
+    "dice-no-best.claim.blue-yellow",
+    "dice-no-best.claim.green-blue",
+    "dice-no-best.claim.sample-space",
+    "dice-no-best.claim.orange-green",
+    "dice-no-best.claim.cycle",
+    "dice-no-best.claim.not-guaranteed",
+    "dice-no-best.claim.no-best"
+  ],
+  "knowledgePackage": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/knowledge-package.ready.json",
+    "sha256": "e40f3cdc1bd5a0a7053b89e19d38fed30ae14cc27362f322f34da469d9be02ff"
+  },
+  "contentAsset": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/content-asset.ready.json",
+    "sha256": "54af170335ab1692d37227b88f3a71ea7fbbbda9e62ffd80ab8f0c9121c30993"
+  },
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-14/publication/master-approval-v1.json",
+    "sha256": "5030ccfafb344bfba18fb18230c7a3e1519570bf1e81efc8f83931aecd4cae2e"
+  },
+  "policyInspection": {
+    "path": "content-intelligence/cycles/cycle-14/publication/policy-inspection-v1.json",
+    "sha256": "e404af85e97ab1c4028b4ce0f7819d16fa5b246c744500f6fa4a5ab64b15b18c"
+  },
+  "sourceCopyReview": {
+    "path": "content-intelligence/cycles/cycle-14/publication/source-copy-review-v1.json",
+    "sha256": "512ec49d4d5b97de6dfc1d0292e6132f39dae1c05f8622e236bb7fcfe7c11244"
+  },
+  "title": "Which Die Would You Choose?",
+  "titleSupport": "Conditional title only if live Page composer provides field",
+  "description": "You get first choice of these four dice. I get second. Is that really an advantage for you?\n\nHigher number wins. Look closely at the faces before you decide.\n\nOriginal mathematical animation. AI-generated narration.\nMathematical reference: Wolfram MathWorld.\nhttps://mathworld.wolfram.com/EfronsDice.html\n\n#Magnivis #MathPuzzle #Probability",
+  "hashtags": [
+    "#Magnivis",
+    "#MathPuzzle",
+    "#Probability"
+  ],
+  "firstComment": "Where else have you seen “better” depend on what something is being compared with?",
+  "pinnedCommentOptional": true,
+  "pinAvailability": "Confirm live control; comment may remain unpinned",
+  "tags": [],
+  "keywordFieldSupport": "No independent keyword field asserted",
+  "language": "en",
+  "sourceReferences": [
+    "https://mathworld.wolfram.com/EfronsDice.html"
+  ],
+  "cover": {
+    "media": {
+      "id": "media.f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a",
+      "sha256": "f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a"
+    },
+    "path": "artifacts/qa-evidence/dice-cycle14-v4/frame-04-0.9s.png",
+    "method": "Select original frame26 in native cover picker; use exact PNG only if live image-control exists",
+    "position": {
+      "frame": 26,
+      "seconds": 0.8666666666666667
+    },
+    "text": "HIGHER NUMBER WINS; Yellow; Blue; Green; Orange; Higher number wins.",
+    "approval": "pending-owner-delivery-review",
+    "nativeCropVerified": false,
+    "selectedIdentityChangeRequiresVersionedManifest": true
+  },
+  "captions": {
+    "designedBurnedIn": true,
+    "accessibilityTrack": {
+      "path": "captions/dice-v4.en.vtt",
+      "sha256": "3abb3e3559e92dc3eea5640d2cc0e4028254f225e47a0c6e5df1bfe5d1846835"
+    },
+    "guidance": "Designed English captions are burned in. Optional exact English VTT as separate accessibility track where supported; inspect native caption duplication and transcription of dice/zeros/ones/two-thirds."
+  },
+  "operatorSettings": {
+    "state": "recommendations-not-applied",
+    "audience": "General educational audience; not specifically directed at children; no age restriction proposed. Owner confirms audience designation.",
+    "visibility": "Public only after separate explicit publication authorization; no schedule/time selected",
+    "comments": "On with existing account moderation",
+    "reuse": "Retain existing account-level remix, Duet, Stitch, reuse and download policies; confirm actual values. No account-wide changes proposed.",
+    "reuseAuthority": {
+      "path": "content-intelligence/cycles/cycle-11/publication/owner-publication-refinement-v1.json",
+      "sha256": "104240d41c1f20df0536d7a01db9894a8012c1acac5bd8d957c52cfb5763cae7"
+    },
+    "aiDisclosure": "Recommend available AI use/Altered content/AI-generated disclosure Yes/On for realistic-sounding synthetic af_heart narration. Original dice are procedural animation, not an empirical filmed trial. Live wording/control untested; do not describe all code animation as AI-generated imagery.",
+    "sound": "Keep approved narration and procedural sound at original level; no platform music or replacement voice",
+    "editing": "No trimming, speed changes, filters, stickers, overlays, new CTA or outro",
+    "accessibility": "Designed English captions are burned in. Optional exact English VTT as separate accessibility track where supported; inspect native caption duplication and transcription of dice/zeros/ones/two-thirds.",
+    "crossPosting": "Off; each platform reviewed independently",
+    "commercial": "No sponsorship/product/paid-promotion proposed; owner confirms actual relationship",
+    "quality": "Use original1080x1920MP4 and highest-quality option where available; inspect processed output",
+    "otherFields": "No location, collaborator, product, paid boost or extra links proposed. No independent keyword field assumed outside YouTube.",
+    "category": "No independent category field asserted; retain account category",
+    "destinationAccount": "Magnivis Facebook Page; reported ID1336222216247095; confirm live identity"
+  },
+  "readiness": "prepared-for-delivery-review",
+  "productionReady": false,
+  "publicationAuthorized": false,
+  "publicationEvidence": null
+}

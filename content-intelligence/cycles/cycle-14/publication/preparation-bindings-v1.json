@@ -1,0 +1,51 @@
+{
+  "createdAt": "2026-10-13T16:22:00.458547Z",
+  "scripts": [
+    {
+      "path": "scripts/prepare-dice-release.ts",
+      "sha256": "4dad6a39c9bc2de881dcbc197bb0c95ea5365e6d628140ffb8ddff2173d2a44c"
+    },
+    {
+      "path": "scripts/validate-dice-release.ts",
+      "sha256": "5d1a00fda5429e60ff86d6365fda24bfd58732df29ea0f4e61cf80f010b39796"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/publication/record-approval.ts",
+      "sha256": "2344265e26331d0f70c56a0d20167d9a449ba232496a7812b97f19819805e86a"
+    }
+  ],
+  "policies": [
+    {
+      "path": "docs/WORKFLOW-V3.md",
+      "sha256": "589366927415b9d2e4955aef4d3faa810d9f3dd499631a299ebea4a6917c628c"
+    },
+    {
+      "path": "docs/DELIVERY-PACKAGES.md",
+      "sha256": "dede65ca54455ae43eaac18154b32ac119a04827139392aaf66d305383f3d797"
+    },
+    {
+      "path": "docs/PLATFORM-VARIANTS.md",
+      "sha256": "6841e8e597b135e0de040b0d935a6d1fefada321053895232da8b43f12909f73"
+    },
+    {
+      "path": "docs/PLATFORM-QA.md",
+      "sha256": "db94839d47c850ef2a3b70d10f41ae062ff1f23cbdbb4d3c9cea25ec2d5bd141"
+    },
+    {
+      "path": "docs/PLATFORM-EXPORT-REQUIREMENTS.md",
+      "sha256": "4c2ed465529bf88e6a16571abf1a96fe73726fb434e7194a675e65f8b967d28b"
+    }
+  ],
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-14/publication/master-approval-v1.json",
+    "sha256": "5030ccfafb344bfba18fb18230c7a3e1519570bf1e81efc8f83931aecd4cae2e"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-14/publication/release-v1.json",
+    "sha256": "4216867ed7455e757e45a7e15bd55259bd4eb915273a808989e3d1d4bbb38345"
+  },
+  "policyInspection": {
+    "path": "content-intelligence/cycles/cycle-14/publication/policy-inspection-v1.json",
+    "sha256": "e404af85e97ab1c4028b4ce0f7819d16fa5b246c744500f6fa4a5ab64b15b18c"
+  }
+}

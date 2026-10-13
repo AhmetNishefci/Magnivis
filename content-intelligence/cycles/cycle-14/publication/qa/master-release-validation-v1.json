@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "inspectedAt": "2026-10-13T16:17:32.975Z",
+  "master": {
+    "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+    "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+  },
+  "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/dice-cycle14-candidate-v4.mp4",
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-14/publication/master-approval-v1.json",
+    "sha256": "5030ccfafb344bfba18fb18230c7a3e1519570bf1e81efc8f83931aecd4cae2e"
+  },
+  "probe": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 60.523,
+    "sizeBytes": 25764974,
+    "bitRate": 3405644
+  },
+  "fullDecode": "passed",
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "High",
+      "codec_type": "video",
+      "codec_tag_string": "avc1",
+      "codec_tag": "0x31637661",
+      "width": 1080,
+      "height": 1920,
+      "coded_width": 1080,
+      "coded_height": 1920,
+      "closed_captions": 0,
+      "has_b_frames": 2,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "9:16",
+      "pix_fmt": "yuvj420p",
+      "level": 40,
+      "color_range": "pc",
+      "color_space": "bt470bg",
+      "chroma_location": "center",
+      "refs": 1,
+      "is_avc": "true",
+      "nal_length_size": "4",
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "time_base": "1/90000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 5442000,
+      "duration": "60.466667",
+      "bit_rate": "3254928",
+      "bits_per_raw_sample": "8",
+      "nb_frames": "1814",
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "vendor_id": "[0][0][0][0]",
+        "encoder": "Lavc61.19.100 libx264"
+      },
+      "side_data_list": [
+        {
+          "side_data_type": "ICC Profile"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_long_name": "AAC (Advanced Audio Coding)",
+      "profile": "LC",
+      "codec_type": "audio",
+      "codec_tag_string": "mp4a",
+      "codec_tag": "0x6134706d",
+      "sample_fmt": "fltp",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "bits_per_sample": 0,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "time_base": "1/48000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 2905056,
+      "duration": "60.522000",
+      "bit_rate": "144689",
+      "nb_frames": "2838",
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "SoundHandler",
+        "vendor_id": "[0][0][0][0]"
+      }
+    }
+  ],
+  "containerDurationSeconds": 60.523,
+  "masterUnchanged": true,
+  "scriptWords": 128,
+  "scriptSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+  "ownerReview": "Exact V4 master approved for delivery preparation; no device pass or presentation-risk acceptance supplied.",
+  "renderedAgain": false,
+  "limitations": "Local QA and creative acceptance do not certify native UI/crops/processing, copyright checks or live settings."
+}
