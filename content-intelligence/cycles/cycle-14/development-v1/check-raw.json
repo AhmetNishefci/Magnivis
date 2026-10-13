@@ -1,0 +1,7 @@
+{
+  "command": "VITEST_MAX_WORKERS=2 pnpm check",
+  "rawUtf8Text": "\n> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis\n> pnpm validate && git diff --check\n\n\n> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis\n> pnpm typecheck && pnpm lint && pnpm test\n\n\n> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis\n> tsc --noEmit\n\n\n> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis\n> eslint src scripts tests remotion.config.ts vitest.config.ts\n\n\n> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis\n> vitest run\n\n\n RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  53 passed (53)\n      Tests  501 passed (501)\n   Start at  15:27:15\n   Duration  84.92s (tests 95%, import 4%, transform 1%)\n\n",
+  "rawBytesSha256": "a9c8926add908be7e0ee65f22cad765f8f159be76b75ec2eac2fb43e5daec047",
+  "byteCount": 694,
+  "displayText": "check.txt removes surplus terminal blank lines only to satisfy Git whitespace checks."
+}

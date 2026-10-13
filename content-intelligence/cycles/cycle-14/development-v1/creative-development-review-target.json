@@ -1,0 +1,58 @@
+{
+  "cycleId": "cycle.14",
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-14/owner-premise-approval-v1.json",
+    "sha256": "720f45677ef1dc22771dc3c00f26a3b0c1e1ba4f538f2b65343d4f581b5ac804"
+  },
+  "package": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/knowledge-package.ready.json",
+    "sha256": "7d27909e31adf4a9231919e3d5b03cc6fffefc40ced4ee14893f2aeceae8e9dc"
+  },
+  "asset": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/content-asset.ready.json",
+    "sha256": "3311814cbcb459a44aa06a1c0ff43af3bf698fbaedac1b69dea68b8137484797"
+  },
+  "script": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/script.md",
+    "sha256": "f939573863241d601fa6045f82f1f40af37060a2c3ca874af1eae0040087d1fa"
+  },
+  "scriptJsonSha256": "d9800686da59a8e28dec9f5f57c187f8e5ba16862e405676348757e500d83fb6",
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/direction-v1.json",
+    "sha256": "ba89958437376bd03a88e2936a9d986bb3d7d47b26b200372afadd16eb0ecbf3"
+  },
+  "mathematicalProof": [
+    {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json",
+      "sha256": "79eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json",
+      "sha256": "5585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e"
+    }
+  ],
+  "exploration": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/authoring-data.json",
+    "sha256": "04fd4ce33e9ce639eedba35b497f24faa82011cc6267196c3736408540706e79"
+  },
+  "runtimeEstimate": {
+    "words": 178,
+    "method": "Lexical whitespace count; speech at145–165words/min gives speech-only bounds. Add provisional4–8seconds for mental choice and proof recognition. Not measured narration or an imposed duration.",
+    "speechSeconds": [
+      64.7,
+      73.7
+    ],
+    "provisionalTotalSeconds": [
+      68.7,
+      81.7
+    ],
+    "renewal": "Update after authorized complete speech/audio and visual comprehension review; no padding or forced compression."
+  },
+  "ownerScriptApproval": false,
+  "ownerCreativeApproval": false,
+  "productionAuthorized": false,
+  "visualComprehensionContract": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/visual-comprehension-contract.json",
+    "sha256": "fee571e86021ae77d3043e62ac404f2c5f35299071055b865ebcf7c62fe59300"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "dice-no-best.configuration.v1",
+  "rules": {
+    "facesPerDie": 6,
+    "equallyLikelyFaces": true,
+    "independentRolls": true,
+    "winningCondition": "strictly-higher-number",
+    "playersUseDistinctDice": true
+  },
+  "dice": [
+    {
+      "id": "yellow",
+      "faces": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "blue",
+      "faces": [
+        4,
+        4,
+        4,
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "green",
+      "faces": [
+        1,
+        1,
+        1,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "orange",
+      "faces": [
+        2,
+        2,
+        2,
+        2,
+        6,
+        6
+      ]
+    }
+  ],
+  "favoredCycleEdges": [
+    {
+      "winner": "yellow",
+      "opponent": "orange"
+    },
+    {
+      "winner": "blue",
+      "opponent": "yellow"
+    },
+    {
+      "winner": "green",
+      "opponent": "blue"
+    },
+    {
+      "winner": "orange",
+      "opponent": "green"
+    }
+  ],
+  "faceOrderMeaning": "Index order is for proof only, not an approved physical cube net. Actual cube net must retain each exact multiset; spatial allocation affects illustration identity but not the equal-face model.",
+  "source": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/research/microsoft-inspection.json",
+    "sha256": "155bf381d6e7daf54fc1e629ff5ca12aba2eec45ba3c18e3f5e1bb90a8b3cd93"
+  },
+  "scope": "Same exact color/distribution mapping as approved premise; no silent switch to other Efron variants."
+}

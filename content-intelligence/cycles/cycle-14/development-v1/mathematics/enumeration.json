@@ -1,0 +1,3172 @@
+{
+  "passed": true,
+  "configuration": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json",
+    "sha256": "88e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d"
+  },
+  "implementation": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/enumerate.ts",
+    "sha256": "ba077d87ab6f5600158b6ba317d4d44967ea454ad7d763cceb579eff4e7311ea"
+  },
+  "method": "Index each of six faces separately, including repeated labels; enumerate all 36 independent face pairs for each of twelve ordered comparisons. All six unordered pairs covered; reverse directions retained.",
+  "assumptions": {
+    "facesPerDie": 6,
+    "equallyLikelyFaces": true,
+    "independentRolls": true,
+    "winningCondition": "strictly-higher-number",
+    "playersUseDistinctDice": true
+  },
+  "orderedComparisons": [
+    {
+      "first": "yellow",
+      "second": "blue",
+      "wins": 12,
+      "losses": 24,
+      "ties": 0,
+      "probability": "1/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 0,
+          "result": "win"
+        }
+      ]
+    },
+    {
+      "first": "yellow",
+      "second": "green",
+      "wins": 18,
+      "losses": 18,
+      "ties": 0,
+      "probability": "1/2",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 5,
+          "result": "loss"
+        }
+      ]
+    },
+    {
+      "first": "yellow",
+      "second": "orange",
+      "wins": 24,
+      "losses": 12,
+      "ties": 0,
+      "probability": "2/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 3,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 3,
+          "secondValue": 6,
+          "result": "loss"
+        }
+      ]
+    },
+    {
+      "first": "blue",
+      "second": "yellow",
+      "wins": 24,
+      "losses": 12,
+      "ties": 0,
+      "probability": "2/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 0,
+          "secondValue": 3,
+          "result": "loss"
+        }
+      ]
+    },
+    {
+      "first": "blue",
+      "second": "green",
+      "wins": 12,
+      "losses": 24,
+      "ties": 0,
+      "probability": "1/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 0,
+          "secondValue": 1,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 0,
+          "secondValue": 1,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 0,
+          "secondValue": 1,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 0,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 0,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 0,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 0,
+          "secondValue": 1,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 0,
+          "secondValue": 1,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 0,
+          "secondValue": 1,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 0,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 0,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 0,
+          "secondValue": 5,
+          "result": "loss"
+        }
+      ]
+    },
+    {
+      "first": "blue",
+      "second": "orange",
+      "wins": 16,
+      "losses": 20,
+      "ties": 0,
+      "probability": "4/9",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 4,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 4,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 0,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 0,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 0,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 0,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 0,
+          "secondValue": 6,
+          "result": "loss"
+        }
+      ]
+    },
+    {
+      "first": "green",
+      "second": "yellow",
+      "wins": 18,
+      "losses": 18,
+      "ties": 0,
+      "probability": "1/2",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 3,
+          "result": "win"
+        }
+      ]
+    },
+    {
+      "first": "green",
+      "second": "blue",
+      "wins": 24,
+      "losses": 12,
+      "ties": 0,
+      "probability": "2/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 0,
+          "result": "win"
+        }
+      ]
+    },
+    {
+      "first": "green",
+      "second": "orange",
+      "wins": 12,
+      "losses": 24,
+      "ties": 0,
+      "probability": "1/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 1,
+          "secondValue": 2,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 1,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 1,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 5,
+          "secondValue": 2,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 5,
+          "secondValue": 6,
+          "result": "loss"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 5,
+          "secondValue": 6,
+          "result": "loss"
+        }
+      ]
+    },
+    {
+      "first": "orange",
+      "second": "yellow",
+      "wins": 12,
+      "losses": 24,
+      "ties": 0,
+      "probability": "1/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 3,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 6,
+          "secondValue": 3,
+          "result": "win"
+        }
+      ]
+    },
+    {
+      "first": "orange",
+      "second": "blue",
+      "wins": 20,
+      "losses": 16,
+      "ties": 0,
+      "probability": "5/9",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 4,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 6,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 6,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 6,
+          "secondValue": 4,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 6,
+          "secondValue": 0,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 6,
+          "secondValue": 0,
+          "result": "win"
+        }
+      ]
+    },
+    {
+      "first": "orange",
+      "second": "green",
+      "wins": 24,
+      "losses": 12,
+      "ties": 0,
+      "probability": "2/3",
+      "outcomes": [
+        {
+          "firstFace": 1,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 1,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 2,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 3,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 1,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 2,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 3,
+          "firstValue": 2,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 4,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 5,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 4,
+          "secondFace": 6,
+          "firstValue": 2,
+          "secondValue": 5,
+          "result": "loss"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 1,
+          "firstValue": 6,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 2,
+          "firstValue": 6,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 3,
+          "firstValue": 6,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 4,
+          "firstValue": 6,
+          "secondValue": 5,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 5,
+          "firstValue": 6,
+          "secondValue": 5,
+          "result": "win"
+        },
+        {
+          "firstFace": 5,
+          "secondFace": 6,
+          "firstValue": 6,
+          "secondValue": 5,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 1,
+          "firstValue": 6,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 2,
+          "firstValue": 6,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 3,
+          "firstValue": 6,
+          "secondValue": 1,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 4,
+          "firstValue": 6,
+          "secondValue": 5,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 5,
+          "firstValue": 6,
+          "secondValue": 5,
+          "result": "win"
+        },
+        {
+          "firstFace": 6,
+          "secondFace": 6,
+          "firstValue": 6,
+          "secondValue": 5,
+          "result": "win"
+        }
+      ]
+    }
+  ],
+  "observations": [
+    "Each of the four favored cycle edges has 24 wins/36 outcomes = 2/3.",
+    "Orange against blue has 20 wins/36 outcomes = 5/9; yellow against green has 18/36 = 1/2.",
+    "No distinct-die pairing has ties. Opposite pairings do not inherit the cycle’s 2/3 probability.",
+    "Individual realized numbers remain ordered normally. Nontransitivity concerns pairwise win probabilities, not greater-than on actual numbers.",
+    "Every favorable edge still has 12 losing face pairs. No finite winning sequence or physical fairness experiment inferred."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "sourceId": "source.dice-no-best.angel-davis",
+  "url": "https://arxiv.org/pdf/1610.08595",
+  "retrievedAt": "2026-10-13T13:15:02.567521Z",
+  "retrievalTimeBasis": "Preserved after actual session retrieval, not publication date.",
+  "accessStatus": "partially-inspected",
+  "acquisition": "pdf-inspection",
+  "inspectedText": "L0@P0: arXiv:1610.08595v1 [math.CO] 27 Oct 2016\nL1@P0: A Direct Construction of Non-Transitive Dice\nL2@P0: Sets\nL3@P0: Levi Angel and Matt Davis∗\nL4@P0: Muskingum University\nL5@P0: October 28, 2016\nL6@P0: Abstract\nL7@P0: In this paper, we give a direct construction for a set of dice realizing any\nL8@P0: given tournament T . The construction for a tournament with n vertices\nL9@P0: requires a number of sides on the order of n, which is the best general\nL10@P0: construction to date. Our construction relies only on a standard theorem\nL11@P0: from graph theory.\nL12@P0: 1 Introduction\nL13@P0: Non-transitive dice have been a object of wide interest since Martin Gardner\nL14@P0: introduced some work (now known as Efron Dice) of Bradley Efron to the\nL15@P0: general public in [5]. For a set of at least 3 dice {X1, X2, X3, . . .}, with faces\nL16@P0: labeled in a nonstandard way, we define the relation \u0017 by declaring that Xi \u0017 Xj\nL17@P0: exactly if, when the dice are rolled, the probability that Xi rolls a higher number\nL18@P0: than Xj is greater than 1/2. Paradoxically, it is entirely possible to put numbers\nL19@P0: on the dice in order to make the relation \u0017 non-transitive. The most basic\nL20@P0: example of such a set of dice is the following set of three 3-sided dice:\nL21@P0: Die: Faces:\nL22@P0: X1 1,5,9\nL23@P0: X2 3,4,8\nL24@P0: X3 2,6,7\nL25@P0: (1)\nL26@P0: One can easily check that X1 \u0017 X2, X2 \u0017 X3, and X3 \u0017 X1, where the\nL27@P0: stronger die in each pair has probability 5/9 of winning. Note that we could\nL28@P0: widen our focus and examine non-transitive sets of general random variables.\nL29@P0: (See for example [8] and [9], which seem to predate any notion of non-transitive\nL30@P0: dice specifically). However, even focusing on dice, there are many open ques\u0002tions.",
+  "inspectionScope": "Extracted body lines0–30; PDF page0 introduction only",
+  "bodyRecord": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/research/c14research2.json",
+    "sha256": "0a59c491a97cba78cff9b54c2a3e7445ab222dff513dbf95fca015dfda093daa"
+  },
+  "sourceQualityRationale": "Author research preprint; introduction defines dominance by P(X>Y)>1/2 and gives a separate three-sided5/9 example. Supports the mathematical distinction and open class, not the selected four-die face values. Only introductory extracted PDF text inspected; no screenshot/full-proof review or peer-reviewed status claimed.",
+  "limits": [
+    "Exact mathematical assumptions are model conditions, not measured physical fairness.",
+    "No downloaded production figure or copied audiovisual material."
+  ],
+  "assessment": "Accountable full-research scope inspection; claim-specific dispositions recorded separately. Source prestige alone is not claim verification."
+}

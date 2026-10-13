@@ -1,0 +1,268 @@
+{
+  "authority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.14",
+    "reviewSha256": "5b845106dfa2b1eff7dc24dcc584d35c1839ac21de27c8fa9d4c739a1c76c501"
+  },
+  "definitions": [
+    {
+      "key": "configuration",
+      "statement": "The selected six-face distributions are yellow [3,3,3,3,3,3], blue [4,4,4,4,0,0], green [1,1,1,5,5,5], and orange [2,2,2,2,6,6].",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Exact same selected configuration and color mapping; repeated labels are distinct equally likely faces. Index order is not a physical cube net.",
+      "disposition": "verify"
+    },
+    {
+      "key": "rule",
+      "statement": "In this two-player model, each player selects a different die, rolls once independently, and the higher number wins.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Not a sum-of-rolls game or arbitrary altered rules. An illustrative outcome is not sampled empirical evidence.",
+      "disposition": "verify"
+    },
+    {
+      "key": "model",
+      "statement": "The calculations assume six equally likely faces per die and independent rolls, so each indexed face pair has probability 1/36.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Mathematical model assumptions, not measured fairness of physical dice or a guarantee from a physics simulation.",
+      "disposition": "verify"
+    },
+    {
+      "key": "sample-space",
+      "statement": "Two independent six-face dice with equally likely faces give 36 equally likely indexed face-pair outcomes.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Derived as6×6; repeated displayed values must not be deduplicated or assigned equal weight to value types.",
+      "disposition": "verify",
+      "value": 36,
+      "unit": "equally-likely-face-pairs"
+    },
+    {
+      "key": "yellow-orange",
+      "statement": "Yellow has probability 2/3 of beating orange: its constant3 beats the four2 faces and loses to the two6 faces, giving24 wins out of36 indexed pairs.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Strictly greater, independent equal-face model. Chance result, not a guaranteed individual or finite-series outcome.",
+      "disposition": "verify",
+      "value": 0.6666666666666666,
+      "unit": "probability"
+    },
+    {
+      "key": "blue-yellow",
+      "statement": "Blue has probability 2/3 of beating yellow: four4 faces beat3 while two0 faces lose, giving24 wins out of36 indexed pairs.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Same exact model; no claim that blue beats every opponent2/3 of the time.",
+      "disposition": "verify",
+      "value": 0.6666666666666666,
+      "unit": "probability"
+    },
+    {
+      "key": "green-blue",
+      "statement": "Green has probability 2/3 of beating blue: its three5 faces produce18 winning pairs against all blue faces, and its three1 faces produce6 further winning pairs against blue’s two0 faces, giving24 of36.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Add disjoint branches:1/2+(1/2×1/3)=2/3. Do not imply that all four value-type combinations are equally likely.",
+      "disposition": "verify",
+      "value": 0.6666666666666666,
+      "unit": "probability"
+    },
+    {
+      "key": "orange-green",
+      "statement": "Orange has probability 2/3 of beating green: its two6 faces produce12 winning pairs against all green faces, and its four2 faces produce12 further winning pairs against green’s three1 faces, giving24 of36.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Add disjoint branches:1/3+(2/3×1/2)=2/3. Every2-versus5 pair loses.",
+      "disposition": "verify",
+      "value": 0.6666666666666666,
+      "unit": "probability"
+    },
+    {
+      "key": "cycle",
+      "statement": "The four specified advantages form the cycle yellow over orange, blue over yellow, green over blue, and orange over green, each with probability2/3.",
+      "sourceKeys": [
+        "microsoft",
+        "harvard"
+      ],
+      "caveat": "An arrow means pairwise probability advantage, not guaranteed victory. Only these neighboring cycle matchups have2/3.",
+      "disposition": "verify"
+    },
+    {
+      "key": "first-choice",
+      "statement": "After any first choice in this set, an informed second player can select a remaining die that has probability2/3 of beating it under the model.",
+      "sourceKeys": [
+        "microsoft",
+        "harvard"
+      ],
+      "caveat": "Information and counter-choice are essential; selecting second randomly does not confer this strategy. No gambling or financial advice.",
+      "disposition": "verify"
+    },
+    {
+      "key": "not-guaranteed",
+      "statement": "Every specified favorable2/3 matchup still has12 losing face pairs out of36; either player can win an individual roll.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "A single possible loss does not refute the probability result. Finite series need not show a2:1 ratio.",
+      "disposition": "verify"
+    },
+    {
+      "key": "no-best",
+      "statement": "No die in this selected set is more likely to beat every other die; which die has favorable odds depends on the opponent.",
+      "sourceKeys": [
+        "microsoft",
+        "angel-davis"
+      ],
+      "caveat": "Pairwise distributions can be nontransitive; actual realized numbers retain ordinary transitive ordering. No universal claim about all rankings.",
+      "disposition": "verify"
+    },
+    {
+      "key": "no-ties",
+      "statement": "No two distinct dice in this selected configuration can tie in a single roll because their sets of face labels are disjoint.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Different Efron sets can have ties; MathWorld’s separate reroll variant is not this configuration.",
+      "disposition": "verify"
+    },
+    {
+      "key": "definition",
+      "statement": "Nontransitivity here concerns the relation P(X>Y)>1/2 between dice, not greater-than between individual realized numbers.",
+      "sourceKeys": [
+        "angel-davis",
+        "microsoft"
+      ],
+      "caveat": "Precise mathematical concept; terminology intentionally not required in the spoken script.",
+      "disposition": "reserve"
+    },
+    {
+      "key": "other-oj",
+      "statement": "Orange against blue has probability5/9=20/36 of winning in the selected independent equal-face model.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Derived from exact source face labels and fully enumerated; not a cycle edge or another2/3 claim.",
+      "disposition": "reserve",
+      "value": 0.5555555555555556,
+      "unit": "probability"
+    },
+    {
+      "key": "other-yg",
+      "statement": "Yellow against green has probability1/2=18/36 of winning in the selected independent equal-face model.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Equal win probabilities are not ties in realized numbers; every roll still produces a strict winner.",
+      "disposition": "reserve",
+      "value": 0.5,
+      "unit": "probability"
+    },
+    {
+      "key": "variant-ties",
+      "statement": "A separate Efron dice variant has ties and a reroll rule, unlike this selected set.",
+      "sourceKeys": [
+        "mathworld"
+      ],
+      "caveat": "Reference prose inspected; its image labels not inspected. No imported alternate set or odds claim.",
+      "disposition": "reserve"
+    },
+    {
+      "key": "guaranteed-win",
+      "statement": "Choosing second guarantees winning every roll.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Excluded: each favorable edge still has12 losing face pairs.",
+      "disposition": "exclude"
+    },
+    {
+      "key": "all-pairs",
+      "statement": "Every distinct pairing in the four-die set gives one player a2/3 win probability.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Excluded: opposite pairings are5/9 and1/2, not2/3.",
+      "disposition": "exclude"
+    },
+    {
+      "key": "three-beats-six",
+      "statement": "A realized3 can beat a realized6 under the higher-number-wins rule.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Excluded:3<6. Yellow outperforms the2/6 distribution, not the outcome6.",
+      "disposition": "exclude"
+    },
+    {
+      "key": "nine-rolls",
+      "statement": "A favorable die must win exactly six of nine rolls.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Excluded: probability is not a guaranteed finite frequency. No series performed.",
+      "disposition": "exclude"
+    },
+    {
+      "key": "loaded",
+      "statement": "The paradox requires physically loaded dice.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Excluded: the equal-face model already demonstrates the complete result.",
+      "disposition": "exclude"
+    },
+    {
+      "key": "physical-test",
+      "statement": "Physical specimens of these dice have been experimentally demonstrated to give equiprobable faces.",
+      "sourceKeys": [
+        "microsoft"
+      ],
+      "caveat": "Unresolved and unselected: no physical specimens or experiment acquired. Model assumption is retained explicitly.",
+      "disposition": "unresolved"
+    }
+  ],
+  "calculations": [
+    {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json",
+      "sha256": "88e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json",
+      "sha256": "79eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json",
+      "sha256": "5585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e"
+    }
+  ],
+  "selectedClaimIds": [
+    "dice-no-best.claim.first-choice",
+    "dice-no-best.claim.rule",
+    "dice-no-best.claim.configuration",
+    "dice-no-best.claim.model",
+    "dice-no-best.claim.yellow-orange",
+    "dice-no-best.claim.blue-yellow",
+    "dice-no-best.claim.green-blue",
+    "dice-no-best.claim.sample-space",
+    "dice-no-best.claim.orange-green",
+    "dice-no-best.claim.cycle",
+    "dice-no-best.claim.not-guaranteed",
+    "dice-no-best.claim.no-best"
+  ],
+  "counts": {
+    "verified": 13,
+    "reserve": 4,
+    "excluded": 5,
+    "unresolvedUnselected": 1
+  }
+}

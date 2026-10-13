@@ -1,0 +1,152 @@
+{
+  "lines": [
+    [
+      "You choose first. I choose second—and I can get better odds, whichever die you pick. Higher number wins.",
+      [
+        "first-choice",
+        "rule"
+      ]
+    ],
+    [
+      "These dice have unusual numbers. For this puzzle, each face is equally likely, and one roll doesn’t affect the other.",
+      [
+        "configuration",
+        "model"
+      ]
+    ],
+    [
+      "Yellow always rolls three. Orange has four twos and two sixes. Yellow beats four of those six faces: a two-thirds chance.",
+      [
+        "configuration",
+        "yellow-orange"
+      ]
+    ],
+    [
+      "But blue has four fours and two zeros. It beats yellow with every four—also two-thirds.",
+      [
+        "configuration",
+        "blue-yellow"
+      ]
+    ],
+    [
+      "Switch to blue? Green has three fives and three ones. Its fives beat every blue face. Even its ones beat blue’s zeros. That adds up to twenty-four winning combinations out of thirty-six.",
+      [
+        "configuration",
+        "green-blue",
+        "sample-space"
+      ]
+    ],
+    [
+      "Then orange has better odds against green: its sixes beat every face, and its twos beat green’s ones. Again, twenty-four out of thirty-six.",
+      [
+        "orange-green",
+        "sample-space"
+      ]
+    ],
+    [
+      "And yellow still beats orange.",
+      [
+        "yellow-orange"
+      ]
+    ],
+    [
+      "The advantages form a circle. Every die has a counter with a two-thirds chance.",
+      [
+        "cycle"
+      ]
+    ],
+    [
+      "You can still win—or lose—any roll. Choosing second gives an informed player the advantage.",
+      [
+        "not-guaranteed",
+        "first-choice"
+      ]
+    ],
+    [
+      "There’s no best die in this set. The better choice depends on what it’s up against.",
+      [
+        "no-best"
+      ]
+    ]
+  ],
+  "objectives": [
+    "The viewer makes a mental choice and knows the high-number rule before decoding probabilities. Four inspectable large dice presented as a challenge, no dominant lecture title.",
+    "Clarify unusual values and mathematical conditions. Reveal each die’s repeated-face signature through local turns; no fair-physical-dice certification.",
+    "Build the simplest proof. Keep a single yellow3 as the reference; unfold orange’s six equally likely faces into a shallow semicircle, highlight the four2s that lose and retain the two6s that win.",
+    "Let the viewer reconsider. Blue enters as the response to yellow; its four4s and two0s split visibly. Different opposition changes the answer without a new full table.",
+    "Green looks weak with ones, then reveals two disjoint winning routes. Use a half-and-half green split: all18 pairs in the5 branch win; in the1 branch, six pairs against blue0s win and twelve against4s lose. Build24/36 from18+6; blocks sized to multiplicity, not four equally weighted value types.",
+    "Orange returns as a plausible surprise with two6s. Twelve pairs for6 beat every green face; twelve pairs for2 against green1 win; twelve2-versus5 pairs lose. Build24/36 as12+12, using the established visual grammar but a purposeful re-fold/re-pairing, not replaying another grid.",
+    "Keep orange visible as yellow re-enters; the apparently best counter is itself countered. Start closing accumulated matchup marks.",
+    "Pull back to all four physical identities with a closed counter-choice loop. Arrow direction explicitly means more likely to beat; show the original first choice still has a response.",
+    "Show one losing possible outcome briefly while the2/3 label remains; label it possible outcome, not random experimental result. Put the informed second-choice decision in context.",
+    "Settle on the closed loop, then emphasize one die beside two different opponents. Same object, different matchup: the exact opening promise is answered without an engagement outro."
+  ],
+  "openingExploration": [
+    {
+      "id": "choice-first",
+      "text": "You choose first. I choose second—and I can get better odds, whichever die you pick. Higher number wins.",
+      "selected": true,
+      "firstFrame": "Four large unusual dice on a continuous tactile playing surface. Higher number wins is a short supporting rule. An opposing choice space is visible before any odds labels.",
+      "rationale": "A conversational challenge gives the viewer agency and explains who chooses when. Better odds is independently truthful; whichever die refers to this exact visible set. No fictional host hands or guaranteed win.",
+      "risk": "Four objects need adequate scale, stable identities and enough exposed numbers; first frame alone cannot prove hidden labels. Reveal distributions through the sequence."
+    },
+    {
+      "id": "owner-candidate",
+      "text": "Choose any of these four dice. Whichever you pick, another has better odds against it.",
+      "selected": false,
+      "rationale": "Strong concise approved-premise candidate. The chosen variant gives choosing order a clearer conversational role and states the winning rule immediately. No performance prediction or owner wording rejection."
+    },
+    {
+      "id": "no-best-question",
+      "text": "Which of these dice is the strongest? None of them beats all the others more often.",
+      "selected": false,
+      "rationale": "Clear central question, but reveals the closing idea before the viewer has made a choice. Still truthful and usable if later comprehension tests favor it."
+    },
+    {
+      "id": "outcome-led",
+      "text": "This three beats that six more often.",
+      "selected": false,
+      "rationale": "A dramatic shorthand for yellow versus orange, but independently misleading:3neverbeats6 in a realized roll. Rejected; later face qualifiers cannot repair it."
+    },
+    {
+      "id": "circle-led",
+      "text": "These dice have no best choice. The advantages go in a circle.",
+      "selected": false,
+      "rationale": "Truthful concise statement, but without a rule or participation cue may feel like unexplained jargon. It could work with a sufficiently legible first picture, untested here."
+    }
+  ],
+  "endingExploration": [
+    {
+      "id": "matchup",
+      "selected": true,
+      "text": "There’s no best die in this set. The better choice depends on what it’s up against.",
+      "rationale": "Resolves the opening choice and states exactly what changes: the opponent, not the die. Limited to this set, no generic moral or forced question."
+    },
+    {
+      "id": "rps",
+      "selected": false,
+      "text": "It’s rock-paper-scissors hiding inside random rolls.",
+      "rationale": "Memorable analogy but a less complete closing explanation; may suggest fixed winners or three objects. A visual resemblance can help without making it the final line."
+    },
+    {
+      "id": "invitation",
+      "selected": false,
+      "text": "Which die would you choose now?",
+      "rationale": "Would invite comments but repeats a choice whose mathematical limits were just resolved. We prefer settled understanding without a spoken CTA."
+    }
+  ],
+  "runtimeEstimate": {
+    "words": 178,
+    "method": "Lexical whitespace count; speech at145–165words/min gives speech-only bounds. Add provisional4–8seconds for mental choice and proof recognition. Not measured narration or an imposed duration.",
+    "speechSeconds": [
+      64.7,
+      73.7
+    ],
+    "provisionalTotalSeconds": [
+      68.7,
+      81.7
+    ],
+    "renewal": "Update after authorized complete speech/audio and visual comprehension review; no padding or forced compression."
+  },
+  "cta": "No spoken CTA; final choice-dependence insight is stronger without an engagement request. No pinned comment or release copy prepared."
+}

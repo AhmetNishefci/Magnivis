@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "recordedAt": "2026-10-13T13:31:40.371071Z",
+  "checks": [
+    {
+      "command": "VITEST_MAX_WORKERS=2 pnpm check",
+      "passed": true,
+      "testFiles": 53,
+      "tests": 501,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/check.txt",
+        "sha256": "7aac20d468b055aabe73e8befaf4a7f3f9e42c08aeb7d875a6202f910f4bce7f"
+      },
+      "rawLog": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/check-raw.json",
+        "sha256": "20a497941eedc84a949c1d3781c628e7586dcda0c24ae4f552fa0e2de0d8853f"
+      },
+      "displayNormalization": "Surplus terminal blank line removed from check.txt; exact original output reconstructable from check-raw.json with original byte hash. No test result changed."
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "passed": true,
+      "canonicalPayloads": 1074,
+      "durableArtifactCount": 731,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/durability.txt",
+        "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c"
+      }
+    },
+    {
+      "command": "node --import tsx content-intelligence/cycles/cycle-14/development-v1/validate-development.ts",
+      "passed": true,
+      "result": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/scope-validation.json",
+        "sha256": "ea3fcbc4336e6b40a91699edec5766d5d6e00db7dcc83c615e1d4f8fadda6a5d"
+      },
+      "log": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/scope-validation.txt",
+        "sha256": "ea3fcbc4336e6b40a91699edec5766d5d6e00db7dcc83c615e1d4f8fadda6a5d"
+      }
+    },
+    {
+      "command": "node --import tsx content-intelligence/cycles/cycle-14/development-v1/mathematics/enumerate.ts --verify; python3 content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.py --verify",
+      "passed": true,
+      "result": [
+        {
+          "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json",
+          "sha256": "79eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716"
+        },
+        {
+          "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json",
+          "sha256": "5585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e"
+        }
+      ]
+    }
+  ],
+  "earlierScopeValidatorCorrection": {
+    "log": {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/scope-validation.initial.txt",
+      "sha256": "ed43ada6ce73f5285f313c7c54333466510cf0b2c40beb0218382f1b9d2438cc"
+    },
+    "reason": "The owner-decision schema trims instruction text. Initial raw-file comparison included its final newline; corrected validator to compare trimmed instruction. Immutable actual approval bytes and scope unchanged."
+  },
+  "review": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/development-review.md",
+    "sha256": "c3fff01b6c1e6356fa370176540d4013ccae874dd4182cb99fdf52009338a8a6"
+  },
+  "reviewTarget": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/creative-development-review-target.json",
+    "sha256": "f2bfd19adaeaaea3a5edcf10661a42737bb9a8c517ddc8427e018932869ccd2b"
+  },
+  "newMedia": 0,
+  "rendering": false,
+  "productionAuthorized": false,
+  "ownerScriptApproval": false,
+  "ownerCreativeApproval": false,
+  "platformActions": [],
+  "historicalFilesUnchanged": 2175,
+  "discoveryFilesUnchanged": 52,
+  "cycle13Unchanged": true,
+  "gate": "AHMET — CYCLE #14 CREATIVE DEVELOPMENT REVIEW",
+  "nativeWorkflow": "creative revision6; proposal not transitioned to production; scoped owner hold indexed in project metadata."
+}

@@ -1,0 +1,1384 @@
+{
+  "draftPackage": {
+    "id": "dice-no-best",
+    "revision": 1,
+    "topic": "The dice with no best choice",
+    "centralQuestion": "How can each of four dice have another die that is more likely to beat it?",
+    "taxonomy": {
+      "pillar": "science-reality",
+      "domains": [
+        "probability",
+        "mathematical-games"
+      ],
+      "topics": [
+        "nontransitive-dice",
+        "efron-dice",
+        "pairwise-comparison"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "Fair face selection can yield a circular chain of pairwise probability advantages; a strongest die need not exist.",
+    "viewerPayoff": "Reconstruct why the specified dice form a2/3 counter-choice circle without confusing probability with guaranteed wins.",
+    "sources": [
+      {
+        "id": "source.dice-no-best.microsoft",
+        "organization": "Microsoft Research",
+        "title": "Non-transitive Dice",
+        "sourceType": "scientific-organization",
+        "url": "https://www.microsoft.com/en-us/research/project/non-transitive-dice/",
+        "retrieved": "2026-10-13",
+        "notes": "Institutional mathematical demonstration with explicit face labels and conditional game; primary source for its own example. No physical experiment. Its prose introducing mixed-case formulas says multiplying probabilities; we independently sum the disjoint cases. Formula images not inspected."
+      },
+      {
+        "id": "source.dice-no-best.harvard",
+        "organization": "Harvard Mathematics",
+        "title": "Nontransitive and Balanced Sets of Dice",
+        "sourceType": "university",
+        "url": "https://www.math.harvard.edu/event/nontransitive-and-balanced-sets-of-dice/",
+        "retrieved": "2026-10-13",
+        "notes": "Mathematics department seminar abstract corroborates the four-way2/3 cycle; no explicit face assignments/full proof. Different letter conventions are presentation labels."
+      },
+      {
+        "id": "source.dice-no-best.mathworld",
+        "organization": "Wolfram Research",
+        "title": "Efron’s Dice",
+        "sourceType": "reference",
+        "url": "https://mathworld.wolfram.com/EfronsDice.html",
+        "retrieved": "2026-10-13",
+        "notes": "Mathematical reference corroborates balanced four-die cyclic odds and distinguishes a separate set with ties. Diagram face values not inspected and not used as source for exact configuration."
+      },
+      {
+        "id": "source.dice-no-best.angel-davis",
+        "organization": "Levi Angel and Matt Davis, Muskingum University",
+        "title": "A Direct Construction of Non-Transitive Dice Sets",
+        "sourceType": "primary-source",
+        "url": "https://arxiv.org/pdf/1610.08595",
+        "retrieved": "2026-10-13",
+        "notes": "Author research preprint; introduction defines dominance by P(X>Y)>1/2 and gives a separate three-sided5/9 example. Supports the mathematical distinction and open class, not the selected four-die face values. Only introductory extracted PDF text inspected; no screenshot/full-proof review or peer-reviewed status claimed."
+      }
+    ],
+    "claims": [
+      {
+        "id": "dice-no-best.claim.configuration",
+        "statement": "The selected six-face distributions are yellow [3,3,3,3,3,3], blue [4,4,4,4,0,0], green [1,1,1,5,5,5], and orange [2,2,2,2,6,6].",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Exact same selected configuration and color mapping; repeated labels are distinct equally likely faces. Index order is not a physical cube net. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Exact same selected configuration and color mapping; repeated labels are distinct equally likely faces. Index order is not a physical cube net."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.rule",
+        "statement": "In this two-player model, each player selects a different die, rolls once independently, and the higher number wins.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Not a sum-of-rolls game or arbitrary altered rules. An illustrative outcome is not sampled empirical evidence. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Not a sum-of-rolls game or arbitrary altered rules. An illustrative outcome is not sampled empirical evidence."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.model",
+        "statement": "The calculations assume six equally likely faces per die and independent rolls, so each indexed face pair has probability 1/36.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Mathematical model assumptions, not measured fairness of physical dice or a guarantee from a physics simulation. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Mathematical model assumptions, not measured fairness of physical dice or a guarantee from a physics simulation."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.sample-space",
+        "statement": "Two independent six-face dice with equally likely faces give 36 equally likely indexed face-pair outcomes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Derived as6×6; repeated displayed values must not be deduplicated or assigned equal weight to value types. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Derived as6×6; repeated displayed values must not be deduplicated or assigned equal weight to value types."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 36,
+          "unit": "equally-likely-face-pairs",
+          "precision": "exact"
+        },
+        "basis": "derived",
+        "display": "36"
+      },
+      {
+        "id": "dice-no-best.claim.yellow-orange",
+        "statement": "Yellow has probability 2/3 of beating orange: its constant3 beats the four2 faces and loses to the two6 faces, giving24 wins out of36 indexed pairs.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Strictly greater, independent equal-face model. Chance result, not a guaranteed individual or finite-series outcome. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Strictly greater, independent equal-face model. Chance result, not a guaranteed individual or finite-series outcome."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 0.6666666666666666,
+          "unit": "probability",
+          "precision": "exact"
+        },
+        "basis": "derived",
+        "display": "2/3"
+      },
+      {
+        "id": "dice-no-best.claim.blue-yellow",
+        "statement": "Blue has probability 2/3 of beating yellow: four4 faces beat3 while two0 faces lose, giving24 wins out of36 indexed pairs.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Same exact model; no claim that blue beats every opponent2/3 of the time. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Same exact model; no claim that blue beats every opponent2/3 of the time."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 0.6666666666666666,
+          "unit": "probability",
+          "precision": "exact"
+        },
+        "basis": "derived",
+        "display": "2/3"
+      },
+      {
+        "id": "dice-no-best.claim.green-blue",
+        "statement": "Green has probability 2/3 of beating blue: its three5 faces produce18 winning pairs against all blue faces, and its three1 faces produce6 further winning pairs against blue’s two0 faces, giving24 of36.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Add disjoint branches:1/2+(1/2×1/3)=2/3. Do not imply that all four value-type combinations are equally likely. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Add disjoint branches:1/2+(1/2×1/3)=2/3. Do not imply that all four value-type combinations are equally likely."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 0.6666666666666666,
+          "unit": "probability",
+          "precision": "exact"
+        },
+        "basis": "derived",
+        "display": "2/3"
+      },
+      {
+        "id": "dice-no-best.claim.orange-green",
+        "statement": "Orange has probability 2/3 of beating green: its two6 faces produce12 winning pairs against all green faces, and its four2 faces produce12 further winning pairs against green’s three1 faces, giving24 of36.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Add disjoint branches:1/3+(2/3×1/2)=2/3. Every2-versus5 pair loses. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Add disjoint branches:1/3+(2/3×1/2)=2/3. Every2-versus5 pair loses."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 0.6666666666666666,
+          "unit": "probability",
+          "precision": "exact"
+        },
+        "basis": "derived",
+        "display": "2/3"
+      },
+      {
+        "id": "dice-no-best.claim.cycle",
+        "statement": "The four specified advantages form the cycle yellow over orange, blue over yellow, green over blue, and orange over green, each with probability2/3.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "An arrow means pairwise probability advantage, not guaranteed victory. Only these neighboring cycle matchups have2/3. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          },
+          {
+            "sourceId": "source.dice-no-best.harvard",
+            "locator": "Extracted body lines25–27",
+            "notes": "An arrow means pairwise probability advantage, not guaranteed victory. Only these neighboring cycle matchups have2/3. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "An arrow means pairwise probability advantage, not guaranteed victory. Only these neighboring cycle matchups have2/3."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.first-choice",
+        "statement": "After any first choice in this set, an informed second player can select a remaining die that has probability2/3 of beating it under the model.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Information and counter-choice are essential; selecting second randomly does not confer this strategy. No gambling or financial advice. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          },
+          {
+            "sourceId": "source.dice-no-best.harvard",
+            "locator": "Extracted body lines25–27",
+            "notes": "Information and counter-choice are essential; selecting second randomly does not confer this strategy. No gambling or financial advice. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Information and counter-choice are essential; selecting second randomly does not confer this strategy. No gambling or financial advice."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.not-guaranteed",
+        "statement": "Every specified favorable2/3 matchup still has12 losing face pairs out of36; either player can win an individual roll.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "A single possible loss does not refute the probability result. Finite series need not show a2:1 ratio. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "A single possible loss does not refute the probability result. Finite series need not show a2:1 ratio."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.no-best",
+        "statement": "No die in this selected set is more likely to beat every other die; which die has favorable odds depends on the opponent.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Pairwise distributions can be nontransitive; actual realized numbers retain ordinary transitive ordering. No universal claim about all rankings. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          },
+          {
+            "sourceId": "source.dice-no-best.angel-davis",
+            "locator": "Extracted body lines0–30; PDF page0 introduction only",
+            "notes": "Pairwise distributions can be nontransitive; actual realized numbers retain ordinary transitive ordering. No universal claim about all rankings. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Pairwise distributions can be nontransitive; actual realized numbers retain ordinary transitive ordering. No universal claim about all rankings."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.no-ties",
+        "statement": "No two distinct dice in this selected configuration can tie in a single roll because their sets of face labels are disjoint.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Different Efron sets can have ties; MathWorld’s separate reroll variant is not this configuration. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Different Efron sets can have ties; MathWorld’s separate reroll variant is not this configuration."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.definition",
+        "statement": "Nontransitivity here concerns the relation P(X>Y)>1/2 between dice, not greater-than between individual realized numbers.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.angel-davis",
+            "locator": "Extracted body lines0–30; PDF page0 introduction only",
+            "notes": "Precise mathematical concept; terminology intentionally not required in the spoken script. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          },
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Precise mathematical concept; terminology intentionally not required in the spoken script. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Precise mathematical concept; terminology intentionally not required in the spoken script."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.other-oj",
+        "statement": "Orange against blue has probability5/9=20/36 of winning in the selected independent equal-face model.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Derived from exact source face labels and fully enumerated; not a cycle edge or another2/3 claim. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Derived from exact source face labels and fully enumerated; not a cycle edge or another2/3 claim."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 0.5555555555555556,
+          "unit": "probability",
+          "precision": "exact"
+        },
+        "basis": "derived",
+        "display": "5/9"
+      },
+      {
+        "id": "dice-no-best.claim.other-yg",
+        "statement": "Yellow against green has probability1/2=18/36 of winning in the selected independent equal-face model.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Equal win probabilities are not ties in realized numbers; every roll still produces a strict winner. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Equal win probabilities are not ties in realized numbers; every roll still produces a strict winner."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 0.5,
+          "unit": "probability",
+          "precision": "exact"
+        },
+        "basis": "derived",
+        "display": "1/2"
+      },
+      {
+        "id": "dice-no-best.claim.variant-ties",
+        "statement": "A separate Efron dice variant has ties and a reroll rule, unlike this selected set.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.mathworld",
+            "locator": "Extracted body lines15–22",
+            "notes": "Reference prose inspected; its image labels not inspected. No imported alternate set or odds claim. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Reference prose inspected; its image labels not inspected. No imported alternate set or odds claim."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.guaranteed-win",
+        "statement": "Choosing second guarantees winning every roll.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Excluded: each favorable edge still has12 losing face pairs. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Excluded: each favorable edge still has12 losing face pairs."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.all-pairs",
+        "statement": "Every distinct pairing in the four-die set gives one player a2/3 win probability.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Excluded: opposite pairings are5/9 and1/2, not2/3. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Excluded: opposite pairings are5/9 and1/2, not2/3."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.three-beats-six",
+        "statement": "A realized3 can beat a realized6 under the higher-number-wins rule.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Excluded:3<6. Yellow outperforms the2/6 distribution, not the outcome6. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Excluded:3<6. Yellow outperforms the2/6 distribution, not the outcome6."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.nine-rolls",
+        "statement": "A favorable die must win exactly six of nine rolls.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Excluded: probability is not a guaranteed finite frequency. No series performed. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Excluded: probability is not a guaranteed finite frequency. No series performed."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.loaded",
+        "statement": "The paradox requires physically loaded dice.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Excluded: the equal-face model already demonstrates the complete result. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Excluded: the equal-face model already demonstrates the complete result."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "dice-no-best.claim.physical-test",
+        "statement": "Physical specimens of these dice have been experimentally demonstrated to give equiprobable faces.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "notes": "Unresolved and unselected: no physical specimens or experiment acquired. Model assumption is retained explicitly. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e."
+          }
+        ],
+        "verificationStatus": "uncertain",
+        "caveats": [
+          "Unresolved and unselected: no physical specimens or experiment acquired. Model assumption is retained explicitly."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "dice-no-best.caveat.model",
+        "statement": "Exact selected face multisets, distinct dice, independent equal-face rolls and strictly higher number wins. No physical experiment, guaranteed outcome, universal ranking claim or alternate tie/reroll game. Source letters vary; color/distribution identity is canonical here.",
+        "claimIds": [
+          "dice-no-best.claim.first-choice",
+          "dice-no-best.claim.rule",
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.model",
+          "dice-no-best.claim.yellow-orange",
+          "dice-no-best.claim.blue-yellow",
+          "dice-no-best.claim.green-blue",
+          "dice-no-best.claim.sample-space",
+          "dice-no-best.claim.orange-green",
+          "dice-no-best.claim.cycle",
+          "dice-no-best.claim.not-guaranteed",
+          "dice-no-best.claim.no-best"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "dice-no-best.hook.choose-first",
+        "archetype": "participatory-counter-choice",
+        "text": "You choose first. I choose second—and I can get better odds, whichever die you pick. Higher number wins.",
+        "viewerPromise": "Explain why an informed second choice can have better odds regardless of the first die selected.",
+        "claimIds": [
+          "dice-no-best.claim.first-choice",
+          "dice-no-best.claim.rule"
+        ]
+      },
+      {
+        "id": "dice-no-best.hook.no-best",
+        "archetype": "ranking-failure",
+        "text": "Which of these dice is the strongest? None of them beats all the others more often.",
+        "viewerPromise": "Explain the circular matchup relation.",
+        "claimIds": [
+          "dice-no-best.claim.no-best",
+          "dice-no-best.claim.cycle"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "dice-no-best.narrative.choice",
+        "title": "Choose, reconsider, close the circle",
+        "description": "First choice and rule; exact simple pairing; stronger reply; two mixed-pair proofs; counter-cycle; possible loss; matchup-dependent ending.",
+        "claimIds": [
+          "dice-no-best.claim.first-choice",
+          "dice-no-best.claim.rule",
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.model",
+          "dice-no-best.claim.yellow-orange",
+          "dice-no-best.claim.blue-yellow",
+          "dice-no-best.claim.green-blue",
+          "dice-no-best.claim.sample-space",
+          "dice-no-best.claim.orange-green",
+          "dice-no-best.claim.cycle",
+          "dice-no-best.claim.not-guaranteed",
+          "dice-no-best.claim.no-best"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "dice-no-best.visual.face-branches",
+        "title": "Faces become weighted opportunities",
+        "description": "Large tactile dice reveal exact repeated-face signatures; move from six-face comparison to two disjoint winning branches without four repeating probability grids.",
+        "claimIds": [
+          "dice-no-best.claim.first-choice",
+          "dice-no-best.claim.rule",
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.model",
+          "dice-no-best.claim.yellow-orange",
+          "dice-no-best.claim.blue-yellow",
+          "dice-no-best.claim.green-blue",
+          "dice-no-best.claim.sample-space",
+          "dice-no-best.claim.orange-green",
+          "dice-no-best.claim.cycle",
+          "dice-no-best.claim.not-guaranteed",
+          "dice-no-best.claim.no-best"
+        ]
+      }
+    ],
+    "relatedQuestions": [
+      "Can adding together two rolls reverse which die is favored?",
+      "How do pairwise preferences differ from a single global ranking?"
+    ],
+    "followUpOpportunities": [],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "dice-no-best.asset.choose-second",
+    "revision": 1,
+    "knowledgePackageId": "dice-no-best",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Reconstruct why the specified dice form a2/3 counter-choice circle without confusing probability with guaranteed wins.",
+    "storyAngle": "A mentally participatory choice becomes a visible proof that matchup odds need not rank dice linearly.",
+    "hookId": "dice-no-best.hook.choose-first",
+    "selectedClaimIds": [
+      "dice-no-best.claim.first-choice",
+      "dice-no-best.claim.rule",
+      "dice-no-best.claim.configuration",
+      "dice-no-best.claim.model",
+      "dice-no-best.claim.yellow-orange",
+      "dice-no-best.claim.blue-yellow",
+      "dice-no-best.claim.green-blue",
+      "dice-no-best.claim.sample-space",
+      "dice-no-best.claim.orange-green",
+      "dice-no-best.claim.cycle",
+      "dice-no-best.claim.not-guaranteed",
+      "dice-no-best.claim.no-best"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 68,
+      "maximum": 83
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "dice-no-best.asset.choose-second.script.1",
+          "type": "factual",
+          "text": "You choose first. I choose second—and I can get better odds, whichever die you pick. Higher number wins.",
+          "claimIds": [
+            "dice-no-best.claim.first-choice",
+            "dice-no-best.claim.rule"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.2",
+          "type": "factual",
+          "text": "These dice have unusual numbers. For this puzzle, each face is equally likely, and one roll doesn’t affect the other.",
+          "claimIds": [
+            "dice-no-best.claim.configuration",
+            "dice-no-best.claim.model"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.3",
+          "type": "factual",
+          "text": "Yellow always rolls three. Orange has four twos and two sixes. Yellow beats four of those six faces: a two-thirds chance.",
+          "claimIds": [
+            "dice-no-best.claim.configuration",
+            "dice-no-best.claim.yellow-orange"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.4",
+          "type": "factual",
+          "text": "But blue has four fours and two zeros. It beats yellow with every four—also two-thirds.",
+          "claimIds": [
+            "dice-no-best.claim.configuration",
+            "dice-no-best.claim.blue-yellow"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.5",
+          "type": "factual",
+          "text": "Switch to blue? Green has three fives and three ones. Its fives beat every blue face. Even its ones beat blue’s zeros. That adds up to twenty-four winning combinations out of thirty-six.",
+          "claimIds": [
+            "dice-no-best.claim.configuration",
+            "dice-no-best.claim.green-blue",
+            "dice-no-best.claim.sample-space"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.6",
+          "type": "factual",
+          "text": "Then orange has better odds against green: its sixes beat every face, and its twos beat green’s ones. Again, twenty-four out of thirty-six.",
+          "claimIds": [
+            "dice-no-best.claim.orange-green",
+            "dice-no-best.claim.sample-space"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.7",
+          "type": "factual",
+          "text": "And yellow still beats orange.",
+          "claimIds": [
+            "dice-no-best.claim.yellow-orange"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.8",
+          "type": "factual",
+          "text": "The advantages form a circle. Every die has a counter with a two-thirds chance.",
+          "claimIds": [
+            "dice-no-best.claim.cycle"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.9",
+          "type": "factual",
+          "text": "You can still win—or lose—any roll. Choosing second gives an informed player the advantage.",
+          "claimIds": [
+            "dice-no-best.claim.not-guaranteed",
+            "dice-no-best.claim.first-choice"
+          ]
+        },
+        {
+          "id": "dice-no-best.asset.choose-second.script.10",
+          "type": "factual",
+          "text": "There’s no best die in this set. The better choice depends on what it’s up against.",
+          "claimIds": [
+            "dice-no-best.claim.no-best"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "dice-no-best.asset.choose-second.beat.1",
+        "label": "choice",
+        "purpose": "The viewer makes a mental choice and knows the high-number rule before decoding probabilities. Four inspectable large dice presented as a challenge, no dominant lecture title.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.1"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.2",
+        "label": "conditions",
+        "purpose": "Clarify unusual values and mathematical conditions. Reveal each die’s repeated-face signature through local turns; no fair-physical-dice certification.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.2"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.3",
+        "label": "first-proof",
+        "purpose": "Build the simplest proof. Keep a single yellow3 as the reference; unfold orange’s six equally likely faces into a shallow semicircle, highlight the four2s that lose and retain the two6s that win.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.3"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.4",
+        "label": "reconsider",
+        "purpose": "Let the viewer reconsider. Blue enters as the response to yellow; its four4s and two0s split visibly. Different opposition changes the answer without a new full table.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.4"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.5",
+        "label": "green-reply",
+        "purpose": "Green looks weak with ones, then reveals two disjoint winning routes. Use a half-and-half green split: all18 pairs in the5 branch win; in the1 branch, six pairs against blue0s win and twelve against4s lose. Build24/36 from18+6; blocks sized to multiplicity, not four equally weighted value types.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.5"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.6",
+        "label": "orange-return",
+        "purpose": "Orange returns as a plausible surprise with two6s. Twelve pairs for6 beat every green face; twelve pairs for2 against green1 win; twelve2-versus5 pairs lose. Build24/36 as12+12, using the established visual grammar but a purposeful re-fold/re-pairing, not replaying another grid.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.6"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.7",
+        "label": "closure",
+        "purpose": "Keep orange visible as yellow re-enters; the apparently best counter is itself countered. Start closing accumulated matchup marks.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.7"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.8",
+        "label": "circle",
+        "purpose": "Pull back to all four physical identities with a closed counter-choice loop. Arrow direction explicitly means more likely to beat; show the original first choice still has a response.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.8"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.9",
+        "label": "chance",
+        "purpose": "Show one losing possible outcome briefly while the2/3 label remains; label it possible outcome, not random experimental result. Put the informed second-choice decision in context.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.9"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.beat.10",
+        "label": "payoff",
+        "purpose": "Settle on the closed loop, then emphasize one die beside two different opponents. Same object, different matchup: the exact opening promise is answered without an engagement outro.",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.10"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "dice-no-best.asset.choose-second.visual.1",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.1",
+        "objective": "The viewer makes a mental choice and knows the high-number rule before decoding probabilities. Four inspectable large dice presented as a challenge, no dominant lecture title.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.1"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.first-choice",
+          "dice-no-best.claim.rule"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.2",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.2",
+        "objective": "Clarify unusual values and mathematical conditions. Reveal each die’s repeated-face signature through local turns; no fair-physical-dice certification.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.2"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.model"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.3",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.3",
+        "objective": "Build the simplest proof. Keep a single yellow3 as the reference; unfold orange’s six equally likely faces into a shallow semicircle, highlight the four2s that lose and retain the two6s that win.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.3"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.yellow-orange"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.4",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.4",
+        "objective": "Let the viewer reconsider. Blue enters as the response to yellow; its four4s and two0s split visibly. Different opposition changes the answer without a new full table.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.4"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.blue-yellow"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.5",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.5",
+        "objective": "Green looks weak with ones, then reveals two disjoint winning routes. Use a half-and-half green split: all18 pairs in the5 branch win; in the1 branch, six pairs against blue0s win and twelve against4s lose. Build24/36 from18+6; blocks sized to multiplicity, not four equally weighted value types.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.5"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.green-blue",
+          "dice-no-best.claim.sample-space"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.6",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.6",
+        "objective": "Orange returns as a plausible surprise with two6s. Twelve pairs for6 beat every green face; twelve pairs for2 against green1 win; twelve2-versus5 pairs lose. Build24/36 as12+12, using the established visual grammar but a purposeful re-fold/re-pairing, not replaying another grid.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.6"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.orange-green",
+          "dice-no-best.claim.sample-space"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.7",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.7",
+        "objective": "Keep orange visible as yellow re-enters; the apparently best counter is itself countered. Start closing accumulated matchup marks.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.7"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.yellow-orange"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.8",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.8",
+        "objective": "Pull back to all four physical identities with a closed counter-choice loop. Arrow direction explicitly means more likely to beat; show the original first choice still has a response.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.8"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.cycle"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.9",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.9",
+        "objective": "Show one losing possible outcome briefly while the2/3 label remains; label it possible outcome, not random experimental result. Put the informed second-choice decision in context.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.9"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.not-guaranteed",
+          "dice-no-best.claim.first-choice"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.visual.10",
+        "narrativeBeatId": "dice-no-best.asset.choose-second.beat.10",
+        "objective": "Settle on the closed loop, then emphasize one die beside two different opponents. Same object, different matchup: the exact opening promise is answered without an engagement outro.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "dice-no-best.asset.choose-second.script.10"
+        ],
+        "claimIds": [
+          "dice-no-best.claim.no-best"
+        ],
+        "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Current Kokoro af_heart. Conversational puzzle invitation, mild surprise at changing opponent and lucid unhurried face explanation. No professor/quizmaster theatrics, exaggerated certainty or narration generated during development.",
+      "pronunciationNotes": [
+        "Use die for singular and dice for plural naturally. Speak zeros distinctly; four fours must remain understandable in complete context. Say two-thirds conversationally. No Efron name or nontransitive jargon needed in narration. Actual auditory review remains after production authorization."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.14",
+    "topicCandidateId": "topic.cycle14.dice",
+    "enteredAt": "2026-10-13T13:19:28.656Z",
+    "reviewer": "Codex internal mathematical/evidence review; not Ahmet script/creative/master approval",
+    "premiseAlignment": {
+      "selectionSha256": "c70f81bf7ee83ba1e5c051d7a01421fa8f7fb2ea04ed482da7aef8a02b05cf5e",
+      "preservesPublishingOpportunity": true,
+      "rationale": "Exact approved four-die configuration retains each specified2/3 counter. All432 ordered face pairs and independent rational frequency-block calculations agree; sources substantiate conditional circle. Wording and visual proof refine comprehension without changing premise, probability or payoff."
+    },
+    "packageSha256": "fd149c1306c132dde5c270da41bd3154b36cae0e252ad42b95476b6c3c27f0a7",
+    "assetSha256": "9a4ec0f7cea70574f7a8630d1783ffd3f1acfdc7ab3f672b716a0f6a892b5728",
+    "scriptSha256": "d9800686da59a8e28dec9f5f57c187f8e5ba16862e405676348757e500d83fb6",
+    "inspections": [
+      {
+        "sourceId": "source.dice-no-best.microsoft",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks"
+        ],
+        "supportsClaimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.rule",
+          "dice-no-best.claim.model",
+          "dice-no-best.claim.sample-space",
+          "dice-no-best.claim.yellow-orange",
+          "dice-no-best.claim.blue-yellow",
+          "dice-no-best.claim.green-blue",
+          "dice-no-best.claim.orange-green",
+          "dice-no-best.claim.cycle",
+          "dice-no-best.claim.first-choice",
+          "dice-no-best.claim.not-guaranteed",
+          "dice-no-best.claim.no-best",
+          "dice-no-best.claim.no-ties",
+          "dice-no-best.claim.definition",
+          "dice-no-best.claim.other-oj",
+          "dice-no-best.claim.other-yg"
+        ],
+        "limitations": [
+          "Institutional mathematical demonstration with explicit face labels and conditional game; primary source for its own example. No physical experiment. Its prose introducing mixed-case formulas says multiplying probabilities; we independently sum the disjoint cases. Formula images not inspected.",
+          "Bound independently reproduced arithmetic is used for derived statements; no source diagram or empirical fairness test inferred."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-14/development-v1/research/microsoft-inspection.json",
+          "sha256": "155bf381d6e7daf54fc1e629ff5ca12aba2eec45ba3c18e3f5e1bb90a8b3cd93"
+        },
+        "sourceQualityRationale": "Institutional mathematical demonstration with explicit face labels and conditional game; primary source for its own example. No physical experiment. Its prose introducing mixed-case formulas says multiplying probabilities; we independently sum the disjoint cases. Formula images not inspected."
+      },
+      {
+        "sourceId": "source.dice-no-best.harvard",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Extracted body lines25–27"
+        ],
+        "supportsClaimIds": [
+          "dice-no-best.claim.cycle",
+          "dice-no-best.claim.first-choice"
+        ],
+        "limitations": [
+          "Mathematics department seminar abstract corroborates the four-way2/3 cycle; no explicit face assignments/full proof. Different letter conventions are presentation labels.",
+          "Bound independently reproduced arithmetic is used for derived statements; no source diagram or empirical fairness test inferred."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-14/development-v1/research/harvard-inspection.json",
+          "sha256": "74dba4590d01fa36d3d35eefbc6b6de863bf08fd3115cd12f87446a52a00c77f"
+        },
+        "sourceQualityRationale": "Mathematics department seminar abstract corroborates the four-way2/3 cycle; no explicit face assignments/full proof. Different letter conventions are presentation labels."
+      },
+      {
+        "sourceId": "source.dice-no-best.mathworld",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Extracted body lines15–22"
+        ],
+        "supportsClaimIds": [
+          "dice-no-best.claim.variant-ties"
+        ],
+        "limitations": [
+          "Mathematical reference corroborates balanced four-die cyclic odds and distinguishes a separate set with ties. Diagram face values not inspected and not used as source for exact configuration.",
+          "Bound independently reproduced arithmetic is used for derived statements; no source diagram or empirical fairness test inferred."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-14/development-v1/research/mathworld-inspection.json",
+          "sha256": "55716733a99946f26394028ebe9d86f48678002bb510eb78ad0dbb979cc462c2"
+        },
+        "sourceQualityRationale": "Mathematical reference corroborates balanced four-die cyclic odds and distinguishes a separate set with ties. Diagram face values not inspected and not used as source for exact configuration."
+      },
+      {
+        "sourceId": "source.dice-no-best.angel-davis",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Extracted body lines0–30; PDF page0 introduction only"
+        ],
+        "supportsClaimIds": [
+          "dice-no-best.claim.no-best",
+          "dice-no-best.claim.definition"
+        ],
+        "limitations": [
+          "Author research preprint; introduction defines dominance by P(X>Y)>1/2 and gives a separate three-sided5/9 example. Supports the mathematical distinction and open class, not the selected four-die face values. Only introductory extracted PDF text inspected; no screenshot/full-proof review or peer-reviewed status claimed.",
+          "Bound independently reproduced arithmetic is used for derived statements; no source diagram or empirical fairness test inferred."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-14/development-v1/research/angel-davis-inspection.json",
+          "sha256": "5b6dacb4218bc3dc3b5fa66cabc3a3c089599ce25a121066273d2d1f4991a2a3"
+        },
+        "sourceQualityRationale": "Author research preprint; introduction defines dominance by P(X>Y)>1/2 and gives a separate three-sided5/9 example. Supports the mathematical distinction and open class, not the selected four-die face values. Only introductory extracted PDF text inspected; no screenshot/full-proof review or peer-reviewed status claimed."
+      }
+    ],
+    "claims": [
+      {
+        "id": "dice-no-best.claim.configuration",
+        "statementSha256": "77d07c2862ef7d878bdd0387e0330ac807b8bf5a9cd4af760a1aa2d656aa7b77",
+        "disposition": "verify",
+        "rationale": "Exact same selected configuration and color mapping; repeated labels are distinct equally likely faces. Index order is not a physical cube net. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Exact same selected configuration and color mapping; repeated labels are distinct equally likely faces. Index order is not a physical cube net. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.rule",
+        "statementSha256": "b4dfc686dd29cd47b14ce00ff8da30251db572750b0d09a888e12200aedbaff4",
+        "disposition": "verify",
+        "rationale": "Not a sum-of-rolls game or arbitrary altered rules. An illustrative outcome is not sampled empirical evidence. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Not a sum-of-rolls game or arbitrary altered rules. An illustrative outcome is not sampled empirical evidence. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.model",
+        "statementSha256": "82dbbcce74f3084421b1c368c06b9c2d3deede09076de365acb0d62af0831fec",
+        "disposition": "verify",
+        "rationale": "Mathematical model assumptions, not measured fairness of physical dice or a guarantee from a physics simulation. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Mathematical model assumptions, not measured fairness of physical dice or a guarantee from a physics simulation. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.sample-space",
+        "statementSha256": "ebd3380ca82e827ce17088efb3582902614abe7aa0a9d86503e2f04c3548b02a",
+        "disposition": "verify",
+        "rationale": "Derived as6×6; repeated displayed values must not be deduplicated or assigned equal weight to value types. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Derived as6×6; repeated displayed values must not be deduplicated or assigned equal weight to value types. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.yellow-orange",
+        "statementSha256": "158f66cd54e0d72ebae766b96ab3c7eacaee3456fd87babed465e8313ab5cf1e",
+        "disposition": "verify",
+        "rationale": "Strictly greater, independent equal-face model. Chance result, not a guaranteed individual or finite-series outcome. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Strictly greater, independent equal-face model. Chance result, not a guaranteed individual or finite-series outcome. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.blue-yellow",
+        "statementSha256": "3db8fe1b1a967243efef5db3141df280ed9ad3fad2255067ef4baad36d78f24b",
+        "disposition": "verify",
+        "rationale": "Same exact model; no claim that blue beats every opponent2/3 of the time. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Same exact model; no claim that blue beats every opponent2/3 of the time. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.green-blue",
+        "statementSha256": "9bae5a7c45f84d624f188561e142c8885e89acea353211b9010bbc39b22cd791",
+        "disposition": "verify",
+        "rationale": "Add disjoint branches:1/2+(1/2×1/3)=2/3. Do not imply that all four value-type combinations are equally likely. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Add disjoint branches:1/2+(1/2×1/3)=2/3. Do not imply that all four value-type combinations are equally likely. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.orange-green",
+        "statementSha256": "272d5db9d2924183872a675341a356a0d0fa87af5130b11f1d2c9bde3de7a465",
+        "disposition": "verify",
+        "rationale": "Add disjoint branches:1/3+(2/3×1/2)=2/3. Every2-versus5 pair loses. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Add disjoint branches:1/3+(2/3×1/2)=2/3. Every2-versus5 pair loses. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.cycle",
+        "statementSha256": "4b384a653e5f735026fc11e52d4c59e4d3e1242a15e69017b6e028ce8ce051a6",
+        "disposition": "verify",
+        "rationale": "An arrow means pairwise probability advantage, not guaranteed victory. Only these neighboring cycle matchups have2/3. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "An arrow means pairwise probability advantage, not guaranteed victory. Only these neighboring cycle matchups have2/3. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.dice-no-best.harvard",
+            "locator": "Extracted body lines25–27",
+            "assessment": "An arrow means pairwise probability advantage, not guaranteed victory. Only these neighboring cycle matchups have2/3. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.first-choice",
+        "statementSha256": "d555b31fecc2bf29ff0af43a30f6e170a00901e517fcd35006e569dc0820e33e",
+        "disposition": "verify",
+        "rationale": "Information and counter-choice are essential; selecting second randomly does not confer this strategy. No gambling or financial advice. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Information and counter-choice are essential; selecting second randomly does not confer this strategy. No gambling or financial advice. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.dice-no-best.harvard",
+            "locator": "Extracted body lines25–27",
+            "assessment": "Information and counter-choice are essential; selecting second randomly does not confer this strategy. No gambling or financial advice. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.not-guaranteed",
+        "statementSha256": "39c39c4040bcbb9a60c5a5420a795378e9bca2d0ec390ca133589621de86ae28",
+        "disposition": "verify",
+        "rationale": "A single possible loss does not refute the probability result. Finite series need not show a2:1 ratio. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "A single possible loss does not refute the probability result. Finite series need not show a2:1 ratio. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.no-best",
+        "statementSha256": "99884a18ef894534f5dcd539b6cd20b25942d970a77f774516fa778423980272",
+        "disposition": "verify",
+        "rationale": "Pairwise distributions can be nontransitive; actual realized numbers retain ordinary transitive ordering. No universal claim about all rankings. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Pairwise distributions can be nontransitive; actual realized numbers retain ordinary transitive ordering. No universal claim about all rankings. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.dice-no-best.angel-davis",
+            "locator": "Extracted body lines0–30; PDF page0 introduction only",
+            "assessment": "Pairwise distributions can be nontransitive; actual realized numbers retain ordinary transitive ordering. No universal claim about all rankings. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.no-ties",
+        "statementSha256": "3ff56281e8e41b8a22d7a4d901b15d0d6cff7d057ebe0dc26ed3d016bfcc5e1b",
+        "disposition": "verify",
+        "rationale": "Different Efron sets can have ties; MathWorld’s separate reroll variant is not this configuration. Exact calculation references retained in evidence notes.",
+        "evidence": [
+          {
+            "sourceId": "source.dice-no-best.microsoft",
+            "locator": "Extracted body lines9–34; derived claims independently checked against content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json and cross-check.json: all indexed pairs and disjoint frequency blocks",
+            "assessment": "Different Efron sets can have ties; MathWorld’s separate reroll variant is not this configuration. Calculation bindings: content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json SHA25688e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d; content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json SHA25679eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716; content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json SHA2565585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.definition",
+        "statementSha256": "920e307add8a41d99fc56ca51278387d4fe5f95f0935e99bba7d154e857724c3",
+        "disposition": "reserve",
+        "rationale": "Precise mathematical concept; terminology intentionally not required in the spoken script. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.other-oj",
+        "statementSha256": "a33705461e764227e90d637c28d860c3d8c62298c2ee34cf603495ef635e06d8",
+        "disposition": "reserve",
+        "rationale": "Derived from exact source face labels and fully enumerated; not a cycle edge or another2/3 claim. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.other-yg",
+        "statementSha256": "e0c18f8fdc3d14499072bd04166976d52607bb7bf6a4fc0bcafeb901fca354c4",
+        "disposition": "reserve",
+        "rationale": "Equal win probabilities are not ties in realized numbers; every roll still produces a strict winner. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.variant-ties",
+        "statementSha256": "e87327b64a88e35a89db03852b0f38d1f04173830bbdf44f7a6a451a4fde438a",
+        "disposition": "reserve",
+        "rationale": "Reference prose inspected; its image labels not inspected. No imported alternate set or odds claim. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.guaranteed-win",
+        "statementSha256": "a92b2b40f7f8ba27d255f6087124a179b562ba0f42a92777687542b7c5f29a86",
+        "disposition": "exclude",
+        "rationale": "Excluded: each favorable edge still has12 losing face pairs. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.all-pairs",
+        "statementSha256": "c05003a153d0edff3d762a5d1cd146973b7c5e6110895de991ed0d4e1a6bd903",
+        "disposition": "exclude",
+        "rationale": "Excluded: opposite pairings are5/9 and1/2, not2/3. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.three-beats-six",
+        "statementSha256": "49ea54a3ee87ed57a2917c2990a3078a38ab935f4904c5bb564fb480b816b223",
+        "disposition": "exclude",
+        "rationale": "Excluded:3<6. Yellow outperforms the2/6 distribution, not the outcome6. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.nine-rolls",
+        "statementSha256": "2d16dece4c9f51d792980d3d627f97f315dbb43aaba7067d09e4b9b64df7459c",
+        "disposition": "exclude",
+        "rationale": "Excluded: probability is not a guaranteed finite frequency. No series performed. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.loaded",
+        "statementSha256": "c2bb19e8c90444d818f444fc767f89d6c54cb42ee8738cc8637fd138d387e0eb",
+        "disposition": "exclude",
+        "rationale": "Excluded: the equal-face model already demonstrates the complete result. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "dice-no-best.claim.physical-test",
+        "statementSha256": "4d5ca9744ec212e836e09c88a9327d50568d7fa35977cd1353434a5ade1032a0",
+        "disposition": "unresolved",
+        "rationale": "Unresolved and unselected: no physical specimens or experiment acquired. Model assumption is retained explicitly. Exact calculation references retained in evidence notes.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "Fairness is a model assumption about six face probabilities; no physical specimen certified.",
+      "The actual number comparison stays transitive. The circle concerns probabilities from distributions.",
+      "Color is accompanied by exact numbers and persistent names; no color-only coding.",
+      "Every winning branch size is weighted by indexed multiplicity; four possible value categories are notfour equal probabilities.",
+      "No distinct-die ties. Do not copy MathWorld’s different reroll variant or create summed-dice rules.",
+      "Arrow direction must state beats more often or counter-choice; never silently reverse dominance versus response arrows.",
+      "Source prose around multiplying probabilities is reconciled with disjoint-case addition. Primary research three-sided5/9 example is not imported.",
+      "Illustrated roll outcomes are marked possible outcomes; no experimental victory sequence, loaded-dice insinuation or nine-roll guarantee.",
+      "No single die beats all opponents more often; orange-blue5/9 and yellow-green1/2 are documented reserves, not2/3 edges."
+    ],
+    "comprehensionReview": "Conceptual cold-viewer audit: challenge states selecting order and winning rule immediately; simple yellow-orange proof precedes blue, then weighted branches make both mixed edges visible. Final circle returns to the initial choice. Four identities and18+6/12+12 branches remain a real comprehension risk; large current objects, progressive reveals and no simultaneous full grid are proposed safeguards. No human panel, playback, rendered sequence or retention effect claimed.",
+    "rightsReview": "No production images, figures, fonts, audio or footage created/imported. Mathematical facts and independently derived configurations inform original proposed illustrations; source artwork remains consultation-only. Existing appropriately licensed Manrope and primary Kokoro af_heart proposed, exact production asset provenance must be recorded after authorization. Source citations/retrieval are evidence, not rights to copy diagrams.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Mathematical educational puzzle, no real wagering, betting instruction, medical/financial advice or high-care subjects. Exact owner scope reserves creative-review and production authorization; no cost/infrastructure/brand exception needed."
+    },
+    "exceptionalConditions": []
+  }
+}

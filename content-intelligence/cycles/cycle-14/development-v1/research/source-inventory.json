@@ -1,0 +1,75 @@
+{
+  "sources": [
+    {
+      "key": "microsoft",
+      "id": "source.dice-no-best.microsoft",
+      "organization": "Microsoft Research",
+      "title": "Non-transitive Dice",
+      "sourceType": "scientific-organization",
+      "url": "https://www.microsoft.com/en-us/research/project/non-transitive-dice/",
+      "retrieved": "2026-10-13",
+      "notes": "Institutional mathematical demonstration with explicit face labels and conditional game; primary source for its own example. No physical experiment. Its prose introducing mixed-case formulas says multiplying probabilities; we independently sum the disjoint cases. Formula images not inspected.",
+      "locator": "Extracted body lines9–34",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/research/microsoft-inspection.json",
+        "sha256": "155bf381d6e7daf54fc1e629ff5ca12aba2eec45ba3c18e3f5e1bb90a8b3cd93"
+      }
+    },
+    {
+      "key": "harvard",
+      "id": "source.dice-no-best.harvard",
+      "organization": "Harvard Mathematics",
+      "title": "Nontransitive and Balanced Sets of Dice",
+      "sourceType": "university",
+      "url": "https://www.math.harvard.edu/event/nontransitive-and-balanced-sets-of-dice/",
+      "retrieved": "2026-10-13",
+      "notes": "Mathematics department seminar abstract corroborates the four-way2/3 cycle; no explicit face assignments/full proof. Different letter conventions are presentation labels.",
+      "locator": "Extracted body lines25–27",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/research/harvard-inspection.json",
+        "sha256": "74dba4590d01fa36d3d35eefbc6b6de863bf08fd3115cd12f87446a52a00c77f"
+      }
+    },
+    {
+      "key": "mathworld",
+      "id": "source.dice-no-best.mathworld",
+      "organization": "Wolfram Research",
+      "title": "Efron’s Dice",
+      "sourceType": "reference",
+      "url": "https://mathworld.wolfram.com/EfronsDice.html",
+      "retrieved": "2026-10-13",
+      "notes": "Mathematical reference corroborates balanced four-die cyclic odds and distinguishes a separate set with ties. Diagram face values not inspected and not used as source for exact configuration.",
+      "locator": "Extracted body lines15–22",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/research/mathworld-inspection.json",
+        "sha256": "55716733a99946f26394028ebe9d86f48678002bb510eb78ad0dbb979cc462c2"
+      }
+    },
+    {
+      "key": "angel-davis",
+      "id": "source.dice-no-best.angel-davis",
+      "organization": "Levi Angel and Matt Davis, Muskingum University",
+      "title": "A Direct Construction of Non-Transitive Dice Sets",
+      "sourceType": "primary-source",
+      "url": "https://arxiv.org/pdf/1610.08595",
+      "retrieved": "2026-10-13",
+      "notes": "Author research preprint; introduction defines dominance by P(X>Y)>1/2 and gives a separate three-sided5/9 example. Supports the mathematical distinction and open class, not the selected four-die face values. Only introductory extracted PDF text inspected; no screenshot/full-proof review or peer-reviewed status claimed.",
+      "locator": "Extracted body lines0–30; PDF page0 introduction only",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-14/development-v1/research/angel-davis-inspection.json",
+        "sha256": "5b6dacb4218bc3dc3b5fa66cabc3a3c089599ce25a121066273d2d1f4991a2a3"
+      }
+    }
+  ],
+  "unusedLeads": [
+    {
+      "url": "https://www.scientificamerican.com/article/mathematical-games-1970-12/",
+      "status": "Publisher identity found; article body not inspected or needed for selected proof."
+    },
+    {
+      "url": "https://www.wkbpic.com/wkbx/SA/1970/1970-12-01.pdf",
+      "status": "Search surfaced a third-party mirror; not acquired, inspected, licensed or used."
+    }
+  ],
+  "scope": "No complete original1970 article or scientific experiment claimed. The exact configuration is directly supported by Microsoft body and independently proved below."
+}

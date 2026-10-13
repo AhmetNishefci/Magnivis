@@ -1,0 +1,360 @@
+{
+  "id": "dice-no-best.asset.choose-second",
+  "revision": 1,
+  "knowledgePackageId": "dice-no-best",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Reconstruct why the specified dice form a2/3 counter-choice circle without confusing probability with guaranteed wins.",
+  "storyAngle": "A mentally participatory choice becomes a visible proof that matchup odds need not rank dice linearly.",
+  "hookId": "dice-no-best.hook.choose-first",
+  "selectedClaimIds": [
+    "dice-no-best.claim.first-choice",
+    "dice-no-best.claim.rule",
+    "dice-no-best.claim.configuration",
+    "dice-no-best.claim.model",
+    "dice-no-best.claim.yellow-orange",
+    "dice-no-best.claim.blue-yellow",
+    "dice-no-best.claim.green-blue",
+    "dice-no-best.claim.sample-space",
+    "dice-no-best.claim.orange-green",
+    "dice-no-best.claim.cycle",
+    "dice-no-best.claim.not-guaranteed",
+    "dice-no-best.claim.no-best"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 68,
+    "maximum": 83
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "dice-no-best.asset.choose-second.script.1",
+        "type": "factual",
+        "text": "You choose first. I choose second—and I can get better odds, whichever die you pick. Higher number wins.",
+        "claimIds": [
+          "dice-no-best.claim.first-choice",
+          "dice-no-best.claim.rule"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.2",
+        "type": "factual",
+        "text": "These dice have unusual numbers. For this puzzle, each face is equally likely, and one roll doesn’t affect the other.",
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.model"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.3",
+        "type": "factual",
+        "text": "Yellow always rolls three. Orange has four twos and two sixes. Yellow beats four of those six faces: a two-thirds chance.",
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.yellow-orange"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.4",
+        "type": "factual",
+        "text": "But blue has four fours and two zeros. It beats yellow with every four—also two-thirds.",
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.blue-yellow"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.5",
+        "type": "factual",
+        "text": "Switch to blue? Green has three fives and three ones. Its fives beat every blue face. Even its ones beat blue’s zeros. That adds up to twenty-four winning combinations out of thirty-six.",
+        "claimIds": [
+          "dice-no-best.claim.configuration",
+          "dice-no-best.claim.green-blue",
+          "dice-no-best.claim.sample-space"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.6",
+        "type": "factual",
+        "text": "Then orange has better odds against green: its sixes beat every face, and its twos beat green’s ones. Again, twenty-four out of thirty-six.",
+        "claimIds": [
+          "dice-no-best.claim.orange-green",
+          "dice-no-best.claim.sample-space"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.7",
+        "type": "factual",
+        "text": "And yellow still beats orange.",
+        "claimIds": [
+          "dice-no-best.claim.yellow-orange"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.8",
+        "type": "factual",
+        "text": "The advantages form a circle. Every die has a counter with a two-thirds chance.",
+        "claimIds": [
+          "dice-no-best.claim.cycle"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.9",
+        "type": "factual",
+        "text": "You can still win—or lose—any roll. Choosing second gives an informed player the advantage.",
+        "claimIds": [
+          "dice-no-best.claim.not-guaranteed",
+          "dice-no-best.claim.first-choice"
+        ]
+      },
+      {
+        "id": "dice-no-best.asset.choose-second.script.10",
+        "type": "factual",
+        "text": "There’s no best die in this set. The better choice depends on what it’s up against.",
+        "claimIds": [
+          "dice-no-best.claim.no-best"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "dice-no-best.asset.choose-second.beat.1",
+      "label": "choice",
+      "purpose": "The viewer makes a mental choice and knows the high-number rule before decoding probabilities. Four inspectable large dice presented as a challenge, no dominant lecture title.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.1"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.2",
+      "label": "conditions",
+      "purpose": "Clarify unusual values and mathematical conditions. Reveal each die’s repeated-face signature through local turns; no fair-physical-dice certification.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.2"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.3",
+      "label": "first-proof",
+      "purpose": "Build the simplest proof. Keep a single yellow3 as the reference; unfold orange’s six equally likely faces into a shallow semicircle, highlight the four2s that lose and retain the two6s that win.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.3"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.4",
+      "label": "reconsider",
+      "purpose": "Let the viewer reconsider. Blue enters as the response to yellow; its four4s and two0s split visibly. Different opposition changes the answer without a new full table.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.4"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.5",
+      "label": "green-reply",
+      "purpose": "Green looks weak with ones, then reveals two disjoint winning routes. Use a half-and-half green split: all18 pairs in the5 branch win; in the1 branch, six pairs against blue0s win and twelve against4s lose. Build24/36 from18+6; blocks sized to multiplicity, not four equally weighted value types.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.5"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.6",
+      "label": "orange-return",
+      "purpose": "Orange returns as a plausible surprise with two6s. Twelve pairs for6 beat every green face; twelve pairs for2 against green1 win; twelve2-versus5 pairs lose. Build24/36 as12+12, using the established visual grammar but a purposeful re-fold/re-pairing, not replaying another grid.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.6"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.7",
+      "label": "closure",
+      "purpose": "Keep orange visible as yellow re-enters; the apparently best counter is itself countered. Start closing accumulated matchup marks.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.7"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.8",
+      "label": "circle",
+      "purpose": "Pull back to all four physical identities with a closed counter-choice loop. Arrow direction explicitly means more likely to beat; show the original first choice still has a response.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.8"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.9",
+      "label": "chance",
+      "purpose": "Show one losing possible outcome briefly while the2/3 label remains; label it possible outcome, not random experimental result. Put the informed second-choice decision in context.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.9"
+      ]
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.beat.10",
+      "label": "payoff",
+      "purpose": "Settle on the closed loop, then emphasize one die beside two different opponents. Same object, different matchup: the exact opening promise is answered without an engagement outro.",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.10"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "dice-no-best.asset.choose-second.visual.1",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.1",
+      "objective": "The viewer makes a mental choice and knows the high-number rule before decoding probabilities. Four inspectable large dice presented as a challenge, no dominant lecture title.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.1"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.first-choice",
+        "dice-no-best.claim.rule"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.2",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.2",
+      "objective": "Clarify unusual values and mathematical conditions. Reveal each die’s repeated-face signature through local turns; no fair-physical-dice certification.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.2"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.model"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.3",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.3",
+      "objective": "Build the simplest proof. Keep a single yellow3 as the reference; unfold orange’s six equally likely faces into a shallow semicircle, highlight the four2s that lose and retain the two6s that win.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.3"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.yellow-orange"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.4",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.4",
+      "objective": "Let the viewer reconsider. Blue enters as the response to yellow; its four4s and two0s split visibly. Different opposition changes the answer without a new full table.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.4"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.blue-yellow"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.5",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.5",
+      "objective": "Green looks weak with ones, then reveals two disjoint winning routes. Use a half-and-half green split: all18 pairs in the5 branch win; in the1 branch, six pairs against blue0s win and twelve against4s lose. Build24/36 from18+6; blocks sized to multiplicity, not four equally weighted value types.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.5"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.green-blue",
+        "dice-no-best.claim.sample-space"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.6",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.6",
+      "objective": "Orange returns as a plausible surprise with two6s. Twelve pairs for6 beat every green face; twelve pairs for2 against green1 win; twelve2-versus5 pairs lose. Build24/36 as12+12, using the established visual grammar but a purposeful re-fold/re-pairing, not replaying another grid.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.6"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.orange-green",
+        "dice-no-best.claim.sample-space"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.7",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.7",
+      "objective": "Keep orange visible as yellow re-enters; the apparently best counter is itself countered. Start closing accumulated matchup marks.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.7"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.yellow-orange"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.8",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.8",
+      "objective": "Pull back to all four physical identities with a closed counter-choice loop. Arrow direction explicitly means more likely to beat; show the original first choice still has a response.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.8"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.cycle"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.9",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.9",
+      "objective": "Show one losing possible outcome briefly while the2/3 label remains; label it possible outcome, not random experimental result. Put the informed second-choice decision in context.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.9"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.not-guaranteed",
+        "dice-no-best.claim.first-choice"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    },
+    {
+      "id": "dice-no-best.asset.choose-second.visual.10",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.10",
+      "objective": "Settle on the closed loop, then emphasize one die beside two different opponents. Same object, different matchup: the exact opening promise is answered without an engagement outro.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.10"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.no-best"
+      ],
+      "notes": "Conceptual original dice/face illustration, not played-game footage or empirical random sampling. Preserve exact face multiplicities and stable identity through turns. Branch area/token count corresponds to enumerated pair weights; repeated values are not equiprobable value categories. Actual cube topology, typography, timing, captions and roll motion require future implementation QA after authorization."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Current Kokoro af_heart. Conversational puzzle invitation, mild surprise at changing opponent and lucid unhurried face explanation. No professor/quizmaster theatrics, exaggerated certainty or narration generated during development.",
+    "pronunciationNotes": [
+      "Use die for singular and dice for plural naturally. Speak zeros distinctly; four fours must remain understandable in complete context. Say two-thirds conversationally. No Efron name or nontransitive jargon needed in narration. Actual auditory review remains after production authorization."
+    ]
+  },
+  "editorialStatus": "editorial-review"
+}

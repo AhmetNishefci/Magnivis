@@ -1,0 +1,391 @@
+{
+  "passed": true,
+  "configuration": {
+    "path": "/Users/ahmetnishefci/Developer/Magnivis/content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json",
+    "sha256": "88e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d"
+  },
+  "enumeration": {
+    "path": "/Users/ahmetnishefci/Developer/Magnivis/content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json",
+    "sha256": "79eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716"
+  },
+  "implementation": {
+    "path": "/Users/ahmetnishefci/Developer/Magnivis/content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.py",
+    "sha256": "e29a539d6b81af100f65c949234ac067cabb29fff2b6515bfca1d3ec40ffb501"
+  },
+  "method": "Aggregate identical values into frequency blocks and use exact rational arithmetic; compare every ordered result with independent TypeScript face-index enumeration. Not randomized simulation or physical testing.",
+  "orderedComparisons": [
+    {
+      "first": "yellow",
+      "second": "blue",
+      "blocks": [
+        {
+          "firstValue": 3,
+          "secondValue": 0,
+          "multiplicity": 12,
+          "result": "win"
+        },
+        {
+          "firstValue": 3,
+          "secondValue": 4,
+          "multiplicity": 24,
+          "result": "loss"
+        }
+      ],
+      "totals": {
+        "win": 12,
+        "loss": 24,
+        "tie": 0
+      },
+      "probability": "1/3"
+    },
+    {
+      "first": "yellow",
+      "second": "green",
+      "blocks": [
+        {
+          "firstValue": 3,
+          "secondValue": 1,
+          "multiplicity": 18,
+          "result": "win"
+        },
+        {
+          "firstValue": 3,
+          "secondValue": 5,
+          "multiplicity": 18,
+          "result": "loss"
+        }
+      ],
+      "totals": {
+        "win": 18,
+        "loss": 18,
+        "tie": 0
+      },
+      "probability": "1/2"
+    },
+    {
+      "first": "yellow",
+      "second": "orange",
+      "blocks": [
+        {
+          "firstValue": 3,
+          "secondValue": 2,
+          "multiplicity": 24,
+          "result": "win"
+        },
+        {
+          "firstValue": 3,
+          "secondValue": 6,
+          "multiplicity": 12,
+          "result": "loss"
+        }
+      ],
+      "totals": {
+        "win": 24,
+        "loss": 12,
+        "tie": 0
+      },
+      "probability": "2/3"
+    },
+    {
+      "first": "blue",
+      "second": "yellow",
+      "blocks": [
+        {
+          "firstValue": 0,
+          "secondValue": 3,
+          "multiplicity": 12,
+          "result": "loss"
+        },
+        {
+          "firstValue": 4,
+          "secondValue": 3,
+          "multiplicity": 24,
+          "result": "win"
+        }
+      ],
+      "totals": {
+        "win": 24,
+        "loss": 12,
+        "tie": 0
+      },
+      "probability": "2/3"
+    },
+    {
+      "first": "blue",
+      "second": "green",
+      "blocks": [
+        {
+          "firstValue": 0,
+          "secondValue": 1,
+          "multiplicity": 6,
+          "result": "loss"
+        },
+        {
+          "firstValue": 0,
+          "secondValue": 5,
+          "multiplicity": 6,
+          "result": "loss"
+        },
+        {
+          "firstValue": 4,
+          "secondValue": 1,
+          "multiplicity": 12,
+          "result": "win"
+        },
+        {
+          "firstValue": 4,
+          "secondValue": 5,
+          "multiplicity": 12,
+          "result": "loss"
+        }
+      ],
+      "totals": {
+        "win": 12,
+        "loss": 24,
+        "tie": 0
+      },
+      "probability": "1/3"
+    },
+    {
+      "first": "blue",
+      "second": "orange",
+      "blocks": [
+        {
+          "firstValue": 0,
+          "secondValue": 2,
+          "multiplicity": 8,
+          "result": "loss"
+        },
+        {
+          "firstValue": 0,
+          "secondValue": 6,
+          "multiplicity": 4,
+          "result": "loss"
+        },
+        {
+          "firstValue": 4,
+          "secondValue": 2,
+          "multiplicity": 16,
+          "result": "win"
+        },
+        {
+          "firstValue": 4,
+          "secondValue": 6,
+          "multiplicity": 8,
+          "result": "loss"
+        }
+      ],
+      "totals": {
+        "win": 16,
+        "loss": 20,
+        "tie": 0
+      },
+      "probability": "4/9"
+    },
+    {
+      "first": "green",
+      "second": "yellow",
+      "blocks": [
+        {
+          "firstValue": 1,
+          "secondValue": 3,
+          "multiplicity": 18,
+          "result": "loss"
+        },
+        {
+          "firstValue": 5,
+          "secondValue": 3,
+          "multiplicity": 18,
+          "result": "win"
+        }
+      ],
+      "totals": {
+        "win": 18,
+        "loss": 18,
+        "tie": 0
+      },
+      "probability": "1/2"
+    },
+    {
+      "first": "green",
+      "second": "blue",
+      "blocks": [
+        {
+          "firstValue": 1,
+          "secondValue": 0,
+          "multiplicity": 6,
+          "result": "win"
+        },
+        {
+          "firstValue": 1,
+          "secondValue": 4,
+          "multiplicity": 12,
+          "result": "loss"
+        },
+        {
+          "firstValue": 5,
+          "secondValue": 0,
+          "multiplicity": 6,
+          "result": "win"
+        },
+        {
+          "firstValue": 5,
+          "secondValue": 4,
+          "multiplicity": 12,
+          "result": "win"
+        }
+      ],
+      "totals": {
+        "win": 24,
+        "loss": 12,
+        "tie": 0
+      },
+      "probability": "2/3"
+    },
+    {
+      "first": "green",
+      "second": "orange",
+      "blocks": [
+        {
+          "firstValue": 1,
+          "secondValue": 2,
+          "multiplicity": 12,
+          "result": "loss"
+        },
+        {
+          "firstValue": 1,
+          "secondValue": 6,
+          "multiplicity": 6,
+          "result": "loss"
+        },
+        {
+          "firstValue": 5,
+          "secondValue": 2,
+          "multiplicity": 12,
+          "result": "win"
+        },
+        {
+          "firstValue": 5,
+          "secondValue": 6,
+          "multiplicity": 6,
+          "result": "loss"
+        }
+      ],
+      "totals": {
+        "win": 12,
+        "loss": 24,
+        "tie": 0
+      },
+      "probability": "1/3"
+    },
+    {
+      "first": "orange",
+      "second": "yellow",
+      "blocks": [
+        {
+          "firstValue": 2,
+          "secondValue": 3,
+          "multiplicity": 24,
+          "result": "loss"
+        },
+        {
+          "firstValue": 6,
+          "secondValue": 3,
+          "multiplicity": 12,
+          "result": "win"
+        }
+      ],
+      "totals": {
+        "win": 12,
+        "loss": 24,
+        "tie": 0
+      },
+      "probability": "1/3"
+    },
+    {
+      "first": "orange",
+      "second": "blue",
+      "blocks": [
+        {
+          "firstValue": 2,
+          "secondValue": 0,
+          "multiplicity": 8,
+          "result": "win"
+        },
+        {
+          "firstValue": 2,
+          "secondValue": 4,
+          "multiplicity": 16,
+          "result": "loss"
+        },
+        {
+          "firstValue": 6,
+          "secondValue": 0,
+          "multiplicity": 4,
+          "result": "win"
+        },
+        {
+          "firstValue": 6,
+          "secondValue": 4,
+          "multiplicity": 8,
+          "result": "win"
+        }
+      ],
+      "totals": {
+        "win": 20,
+        "loss": 16,
+        "tie": 0
+      },
+      "probability": "5/9"
+    },
+    {
+      "first": "orange",
+      "second": "green",
+      "blocks": [
+        {
+          "firstValue": 2,
+          "secondValue": 1,
+          "multiplicity": 12,
+          "result": "win"
+        },
+        {
+          "firstValue": 2,
+          "secondValue": 5,
+          "multiplicity": 12,
+          "result": "loss"
+        },
+        {
+          "firstValue": 6,
+          "secondValue": 1,
+          "multiplicity": 6,
+          "result": "win"
+        },
+        {
+          "firstValue": 6,
+          "secondValue": 5,
+          "multiplicity": 6,
+          "result": "win"
+        }
+      ],
+      "totals": {
+        "win": 24,
+        "loss": 12,
+        "tie": 0
+      },
+      "probability": "2/3"
+    }
+  ],
+  "mixedCaseProofs": {
+    "greenOverBlue": "1/2 + (1/2 \u00d7 1/3) = 2/3",
+    "orangeOverGreen": "1/3 + (2/3 \u00d7 1/2) = 2/3"
+  },
+  "faceProbability": "1/6",
+  "pairProbability": "1/36",
+  "conditions": {
+    "facesPerDie": 6,
+    "equallyLikelyFaces": true,
+    "independentRolls": true,
+    "winningCondition": "strictly-higher-number",
+    "playersUseDistinctDice": true
+  }
+}
