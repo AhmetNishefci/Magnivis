@@ -1,0 +1,43 @@
+/** Read-only validation of discovery scope, exact evidence, owner target and preservation. */
+import {readFileSync, writeFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {loadMediaRegistry, mediaHash} from '../../../src/artifacts/media';
+import {sha256Json} from '../../../src/content-intelligence/run-schema';
+import {readBoundRecord, readBoundFile, type RecordReference} from '../../../src/workflow/evidence';
+import {loadCycle} from '../../../src/workflow/store';
+import {validateTopicSelection} from '../../../src/workflow/topic-selection';
+import {validatePremiseSelection} from '../../../src/workflow/premise';
+import {editorialDecisionContext} from '../../../src/workflow/editorial-learning';
+const root = process.cwd(), base = 'content-intelligence/cycles/cycle-14';
+const ensure = (value: unknown, message: string) => {if (!value) throw new Error(message);};
+const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+const registry = loadMediaRegistry(root), cycle = loadCycle(root, 'cycle.14', registry);
+ensure(cycle.stage === 'premise-review' && cycle.revision === 2 && !cycle.premiseDecision, 'Wrong premise gate');
+ensure(!cycle.research && !cycle.narration && !cycle.direction && !cycle.productionBegun && !cycle.candidate && !cycle.release && !cycle.publicationDecision && !cycle.workInProgress, 'Downstream work invented');
+ensure(cycle.receipts.length === 1 && cycle.receipts[0]!.stage === 'discovery', 'Unexpected receipt');
+const selection = validateTopicSelection(readBoundRecord(cycle.premise!, root), root);
+validatePremiseSelection(selection, root);
+for (const c of editorialDecisionContext(root)) ensure(selection.editorialLearningReview?.some(r => r.decision.path === c.decision.path && r.decision.sha256 === c.decision.sha256), 'Missing current contextual decision');
+const handoff = read(`${base}/premise-review-controller-handoff.json`);
+ensure(handoff.targetSha256 === sha256Json(selection), 'Detached owner target');
+const result = read(`${base}/discovery-result.json`);
+ensure(result.roundsUsed === 1 && result.maximumRounds === 3, 'Budget drift');
+for (const candidate of selection.candidates) for (const evidence of candidate.evidence) {
+ const inspection = readBoundRecord(evidence, root) as {bodyRecord?: RecordReference};
+ if (inspection.bodyRecord) readBoundFile(inspection.bodyRecord, root);
+}
+const baseline = read(`${base}/repository-baseline.json`) as {historicalFiles: RecordReference[]; commit: string};
+baseline.historicalFiles.forEach(r => readBoundFile(r, root));
+ensure(baseline.commit === 'c6aac13a2438df33df5a3d7c6a53a9b862718669', 'Wrong authorized baseline');
+const changes = execFileSync('git', ['diff', '--name-only', baseline.commit], {encoding: 'utf8'}).trim().split('\n').filter(Boolean);
+ensure(changes.every(p => p === 'workflow/project-state.json' || p.startsWith(`${base}/`) || p.startsWith('workflow/cycles/cycle.14/') || p === 'workflow/authorities/cycle-14-start.json'), 'Out-of-scope tracked change');
+const project = read('workflow/project-state.json');
+ensure(project.cycle14Discovery.nativeStage === 'premise-review' && project.cycle14Discovery.productionStarted === false && project.cycle14Discovery.researchDevelopmentAuthorized === false, 'Metadata overstates scope');
+ensure(mediaHash(project.cycle13Production.master) === project.cycle13Production.masterSha256, 'Cycle13 master drift');
+ensure(project.cycle13Presentation.externalState === 'scheduled-owner-reported' && project.cycle13Presentation.publication === 'unknown', 'Scheduling became publication');
+readBoundRecord(project.cycle14Discovery.authority, root);
+readBoundRecord(project.cycle14Discovery.selection, root);
+readBoundRecord(project.cycle14Discovery.controllerHandoff, root);
+const output = {passed: true, checkedAt: new Date().toISOString(), gate: 'AHMET — CYCLE #14 PREMISE REVIEW', cycleRevision: cycle.revision, selectedId: selection.selectedId, selectionJsonSha256: sha256Json(selection), seriousComparedCandidates: selection.candidates.length, roundsUsed: result.roundsUsed, maximumRounds: result.maximumRounds, historicalFilesUnchanged: baseline.historicalFiles.length, historicalJournalReplay: 'All predecessor journals replayed during capture-context; baseline hashes unchanged at handoff', cycle13MasterUnchanged: true, cycle13Publication: 'unknown; owner-reported scheduled 2026-10-13 on all four', researchDevelopmentStarted: false, productionStarted: false, platformActions: [], limits: ['No final claim verification, rendered-sequence acceptance, physical game, subjective audio/video playback or real-device evidence claimed'], discoveryStartValidation: 'Initial unpersisted begin-record draft included an unsupported maximumRounds key; strict controller rejected it without journal mutation. Removed from draft; effort bound remains explicit in action/search/discovery-result. Successful begin and complete events replay.'};
+writeFileSync(`${base}/scope-validation.json`, JSON.stringify(output, null, 2) + '\n');
+console.log(JSON.stringify(output, null, 2));

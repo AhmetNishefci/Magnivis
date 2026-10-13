@@ -1,0 +1,86 @@
+{
+  "scope": "Small feasibility check of the exact source example, not full research development or final editorial verification.",
+  "assumptions": [
+    "Six equally likely faces on each die",
+    "Independent rolls",
+    "Higher number wins; one die against one die"
+  ],
+  "faceAssignments": {
+    "orange": [
+      2,
+      2,
+      2,
+      2,
+      6,
+      6
+    ],
+    "yellow": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "blue": [
+      4,
+      4,
+      4,
+      4,
+      0,
+      0
+    ],
+    "green": [
+      1,
+      1,
+      1,
+      5,
+      5,
+      5
+    ]
+  },
+  "source": {
+    "path": "content-intelligence/cycles/cycle-14/discovery/dice-microsoft-inspection.json",
+    "sha256": "86e1cf959d7de92883606358d2108edc6b94aa73cef03f54886bc1b0bd4f03fd"
+  },
+  "method": "Exhaustively compare the 36 face pairs for each neighboring match-up. No random sample or fabricated played game.",
+  "results": [
+    {
+      "favored": "yellow",
+      "opponent": "orange",
+      "winningFacePairs": 24,
+      "equallyLikelyFacePairs": 36,
+      "ties": 0,
+      "probability": "2/3"
+    },
+    {
+      "favored": "blue",
+      "opponent": "yellow",
+      "winningFacePairs": 24,
+      "equallyLikelyFacePairs": 36,
+      "ties": 0,
+      "probability": "2/3"
+    },
+    {
+      "favored": "green",
+      "opponent": "blue",
+      "winningFacePairs": 24,
+      "equallyLikelyFacePairs": 36,
+      "ties": 0,
+      "probability": "2/3"
+    },
+    {
+      "favored": "orange",
+      "opponent": "green",
+      "winningFacePairs": 24,
+      "equallyLikelyFacePairs": 36,
+      "ties": 0,
+      "probability": "2/3"
+    }
+  ],
+  "limits": [
+    "Does not demonstrate physical dice fairness",
+    "Chance advantage is not a guaranteed roll or finite-series victory",
+    "No interpretation of two-dice sums or arbitrary variants"
+  ]
+}

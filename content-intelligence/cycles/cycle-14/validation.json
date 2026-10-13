@@ -1,0 +1,64 @@
+{
+  "recordedAt": "2026-10-13T13:03:53.743431Z",
+  "passed": true,
+  "node": "22.23.3",
+  "check": {
+    "command": "VITEST_MAX_WORKERS=2 pnpm check",
+    "passed": true,
+    "testFiles": 53,
+    "tests": 501,
+    "log": {
+      "path": "content-intelligence/cycles/cycle-14/check-bounded-workers.log",
+      "sha256": "3f0e96625a23f2753d853bba02e974e789670cdd8f580b25cd0b48a9da9809c0"
+    },
+    "earlierRuns": [
+      {
+        "path": "content-intelligence/cycles/cycle-14/check.log",
+        "sha256": "a5c3ea4a1ef34c1cc76ac3f8bb541fd9f04ee91a44c10eaf20603c9e6c00b1fa"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-14/check-retry.log",
+        "sha256": "d0966e4053a21cf25de52128d7c7d2ffd1ec869cb89c6882582b3c4a78614fa2"
+      }
+    ],
+    "earlierFailure": "Existing synchronous artifact-validation tests exceeded the default5-second timeout under unrestricted worker concurrency. No assertions or repository code changed; bounded-worker full check passed."
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "passed": true,
+    "canonicalPayloads": 1074,
+    "durableArtifactCount": 731,
+    "log": {
+      "path": "content-intelligence/cycles/cycle-14/durability-confirmed.log",
+      "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c"
+    },
+    "initialSandboxFailure": {
+      "path": "content-intelligence/cycles/cycle-14/durability.log",
+      "sha256": "bdf9ad9bc1ef188aaad3536ecdca39016b1ba6a326f2e879d577b367b9a095f4"
+    },
+    "directImportPassed": {
+      "path": "content-intelligence/cycles/cycle-14/durability-node-import.log",
+      "sha256": "b1856e79517ac9c65775f92d2bf465b710189fbf4b87e0605713dd5a9541c57d"
+    },
+    "resolution": "tsx IPC socket was sandbox-blocked; direct import of the same verifier passed, then standard pnpm command passed with approved read-only escalation."
+  },
+  "scope": {
+    "path": "content-intelligence/cycles/cycle-14/scope-validation.json",
+    "sha256": "b62bd201c0987311327cdb2b32bb95aa1436a18ff94623535a8342f26d419307"
+  },
+  "ownerReview": {
+    "path": "content-intelligence/cycles/cycle-14/owner-review.md",
+    "sha256": "cb138c95d2a57de2e697e1fa0cfea46173425251ca3ec24ccdf6e18f3dce2320"
+  },
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-14/topic-selection.json",
+    "sha256": "736af38bcee1e1c4a9b0637809d796ec5c64c6213d173550180daa16f5de1975"
+  },
+  "newProductionMedia": 0,
+  "fullResearchDevelopment": false,
+  "renders": 0,
+  "platformActions": [],
+  "historicalFilesPreserved": 2175,
+  "nextGate": "AHMET — CYCLE #14 PREMISE REVIEW",
+  "gitScope": "Local review checkpoint on authorized production branch. No main merge, history rewrite or remote push. Exact baseline recorded separately."
+}

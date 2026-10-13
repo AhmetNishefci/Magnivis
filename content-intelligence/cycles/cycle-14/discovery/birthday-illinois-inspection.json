@@ -1,0 +1,17 @@
+{
+  "sourceId": "birthday-illinois",
+  "url": "https://mste.illinois.edu/activity/birthday/explanation.php",
+  "retrievedAt": "2026-10-13T12:49:56.500968Z",
+  "retrievalTimeBasis": "Actual preservation time after web retrieval during this session; not original publication time.",
+  "accessStatus": "partially-inspected",
+  "inspectedText": "L18: Let's look at the probabilities a step at a time.\nL19:   * For one person, there are 365 distinct birthdays.\nL20:   * For two people, there are 364 different ways that the second could have a birthday without matching the first.\nL21:   * If there is no match after two people, the third person has 363 different birthdays that do not match the other two. So, the probability of a match is 1 - (365)(364)(363)/(365)(365)(365).\nL22:   * This leads to the following formula for calculating the probability of a match with N birthdays is 1 - (365)(364)(363)...(365 - N + 1)/(365)^N.\nL23: Running this through a computer gives the chart below. Notice that a probability of over .5 is obtained after 23 dates!\nL24: cite14†Image: Chart of birthday probabilities with Number of Birthdays along X-axis and Probability of a Match along Y-axis. The graph curves up, rising quickly from 0,0 to 50% probability by 23 people, and slowly leveling off after about 40 people at above 90% probability. By 60 people, the probability is nearly 100%.\nL25: Notice that the probability is above .9 before the sample size reaches even 45.",
+  "acquisition": "manual-source-inspection",
+  "acquisitionDetail": "Actual web extracted source body inspected. This is not raw HTTP bytes, audiovisual playback or final claim verification.",
+  "inspectionScope": "Extracted body lines 18–25.",
+  "bodyRecord": {
+    "path": "content-intelligence/cycles/cycle-14/discovery/c14bodies3-web-results.json",
+    "sha256": "73265feb30760ff14bb784412c3d5d8d5a58e6c58362d3f634f32db981fb8894"
+  },
+  "sourceQualityRationale": "University teaching derivation under 365-date model; empirical birthday seasonality and independence not established.",
+  "reviewStatus": "preliminary-feasibility-only; no final claim verification or owner approval"
+}
