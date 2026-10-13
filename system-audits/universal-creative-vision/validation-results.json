@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "recordedAt": "2026-10-13T12:20:31.305698Z",
+  "baseCommit": "c322565869e37783f97beff10e72291e649e67b7",
+  "runtime": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1"
+  },
+  "repositoryCheck": {
+    "command": "PATH=/Users/ahmetnishefci/.nvm/versions/node/v22.23.3/bin:$PATH pnpm check",
+    "exitCode": 0,
+    "typecheck": true,
+    "lint": true,
+    "testFiles": 53,
+    "tests": 501,
+    "whitespace": true,
+    "log": {
+      "path": "system-audits/universal-creative-vision/validation/check.txt",
+      "sha256": "679384dad9caedf8d6e263401c365753551332c9b4f2f72c27f963eab1850aa2",
+      "capturedRawOutputSha256": "6a8e3ce02a51b98d99a8c9997dd789e0651fab6db83922aff1e77d5c614e29ba",
+      "normalization": "Only terminal blank lines removed for git diff --check; full textual command output retained."
+    }
+  },
+  "durability": {
+    "command": "node --import tsx scripts/verify-durable-artifacts.ts",
+    "scriptBehind": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "summary": {
+      "passed": true,
+      "canonicalMedia": {
+        "passed": true,
+        "canonicalPayloads": 1074,
+        "historicalRetentions": 1,
+        "archivalParts": 2,
+        "explicitExceptions": 0,
+        "frozenLegacyBinaryPaths": 442
+      },
+      "durableArtifactCount": 731,
+      "historicalMissingExpectations": [
+        {
+          "artifactId": "wood-frog.historical-master",
+          "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+        }
+      ]
+    },
+    "temporaryFullOutputSha256": "b1856e79517ac9c65775f92d2bf465b710189fbf4b87e0605713dd5a9541c57d"
+  },
+  "journalReplay": {
+    "command": "node --import tsx scripts/cycle.ts status",
+    "exitCode": 0,
+    "cycles": [
+      {
+        "id": "cycle.10",
+        "stage": "publication-review",
+        "revision": 26
+      },
+      {
+        "id": "cycle.11",
+        "stage": "publication-review",
+        "revision": 20
+      },
+      {
+        "id": "cycle.12",
+        "stage": "publication-review",
+        "revision": 12
+      },
+      {
+        "id": "cycle.13",
+        "stage": "publication-review",
+        "revision": 17
+      },
+      {
+        "id": "cycle.4",
+        "stage": "authorized",
+        "revision": 9
+      },
+      {
+        "id": "cycle.5",
+        "stage": "authorized",
+        "revision": 13
+      },
+      {
+        "id": "cycle.6",
+        "stage": "authorized",
+        "revision": 23
+      },
+      {
+        "id": "cycle.7",
+        "stage": "authorized",
+        "revision": 25
+      },
+      {
+        "id": "cycle.8",
+        "stage": "authorized",
+        "revision": 30
+      },
+      {
+        "id": "cycle.9",
+        "stage": "authorized",
+        "revision": 18
+      }
+    ],
+    "cycle14Exists": false,
+    "temporaryFullOutputSha256": "ac447e7968eecaf04d10292503681e5a057e944dd2189e98cf08c263985d844a"
+  },
+  "cycle13Preservation": {
+    "command": "node --import tsx scripts/validate-devils-hole-release.ts",
+    "exitCode": 0,
+    "protectedFilesChecked": 4917,
+    "masterSha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+    "stage": "publication-review",
+    "revision": 17,
+    "publicationAuthorized": false,
+    "finalNativeDeviceAcceptance": "pending",
+    "finalAudioAcceptance": "pending",
+    "temporaryFullOutputSha256": "7884aa287890e62d148a6d71840d251ce5b9411d4df3d515ddd953e120dc3b5f"
+  },
+  "scopedChecks": {
+    "existingChangedFiles": [
+      "workflow/project-state.json"
+    ],
+    "allowedNewFiles": [
+      "docs/CREATIVE-INSPIRATION.md",
+      "docs/EDITORIAL-DISCOVERY-CALIBRATION.md",
+      "system-audits/universal-creative-vision/audit.md",
+      "system-audits/universal-creative-vision/inspection.json",
+      "system-audits/universal-creative-vision/library-verification.json",
+      "system-audits/universal-creative-vision/owner-approval.json",
+      "system-audits/universal-creative-vision/validation.md",
+      "system-audits/universal-creative-vision/validation/check.txt"
+    ],
+    "metadataProjectionEqualsBase": true,
+    "boundMetadataHashesValid": true,
+    "inspectionEvidenceUnchanged": true,
+    "libraryVerification": {
+      "path": "system-audits/universal-creative-vision/library-verification.json",
+      "sha256": "41979c03391115c38360e997e5807fa312453dedff8b17d6e9bcecc0758049d5"
+    },
+    "noProductionOrRuntimeChanges": true,
+    "localMarkdownLinksChecked": 25
+  },
+  "limitations": [
+    "Full temporary command outputs for durability/status/release were inspected; summaries and output hashes are retained here, not duplicate production records.",
+    "No render, new factual verification, device/audio acceptance, platform action, merge or Cycle14 start."
+  ]
+}
