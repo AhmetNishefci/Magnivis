@@ -254,3 +254,10 @@ Candidate revision authorization only; no exact owner Master Review approval, re
 - `public/audio/dice/tactile.wav`: original deterministic damped oscillator/filtered-noise placement cues from `scripts/generate-dice-soundscape.mjs`; no music or third-party sound recordings.
 - Existing pinned Fontsource Manrope5.3.0 Latin600/700, SIL OFL1.1. Font/license hashes and source provenance in `content-intelligence/cycles/cycle-14/production-v1/rights-provenance.json`.
 - Master and bounded decoded QA images derive from these sources. Immutable canonical media registration supplies unique identities and generation lineage; QA imagery and sound comparison are inspection evidence. Candidate-production authority grants no master acceptance, platform or publication permission.
+
+## Cycle #14 — V4 visual revision
+
+- `src/production/dice-v4/` and versioned V4 world/evidence/composition components: original bounded WebGL rounded-cube ray intersections, fixed six-plane Manrope glyph atlas, face material/lighting/contact shadows, procedural walnut surface, thick face tokens, equal outcome beads and counter arrows. No stock/generated photographic dice, copied source figure or recorded random rolls; all geometry/motion is illustrative. Glyphs use existing pinned Manrope5.3.0 under SIL OFL1.1, unchanged.
+- Original nine approved128-word Kokoro `af_heart` WAVs are reused by canonical reference. New `dice-v4.json` changes only timeline start times/holds; no voice, speed, waveform or words changed. Existing Apache2.0model provenance retained.
+- `public/audio/dice-v4/tactile.wav`: new original deterministic procedural contact/face-turn/placement cues. No external sound, music or physical experiment. Source and hashes in `dice-v4-soundscape.json`; voice remains foreground.
+- Exact source/rights bindings at `content-intelligence/cycles/cycle-14/revision-v4/`. New master and retained prototype/decoded QA evidence have unique canonical identities; previous masters/assets and their rights remain unchanged. Candidate revision authority only, no publication permission.

@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-13T15:29:48.671Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/dice-render-v4.mp4",
+    "sha256": "b40ef286df5612250ebf38be773fc6bd53840101373e1cfb8bae629a8126db2f",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/dice-cycle14-candidate-v4.mp4",
+    "sha256": "f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.76",
+    "input_tp": "-3.92",
+    "input_lra": "4.60",
+    "input_thresh": "-33.06",
+    "output_i": "-19.01",
+    "output_tp": "-2.00",
+    "output_lra": "4.10",
+    "output_thresh": "-29.29",
+    "normalization_type": "dynamic",
+    "target_offset": "0.01"
+  },
+  "gainDb": 1.7199999999999998,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

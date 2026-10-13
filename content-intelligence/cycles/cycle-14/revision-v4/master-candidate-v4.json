@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.14",
+  "media": {
+    "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+    "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+  },
+  "durationSeconds": 60.46666666666667,
+  "scriptSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v4/production-plan.candidate-v4.json",
+    "sha256": "61a5e6e807e1d3b9ae83aa424e709580fb01e504a59ccf76887526551d62cef9"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/dice-v4.json",
+    "sha256": "ccb331cd29835eefb43c839bb56ad46e3a3b5ecf913413b7ab2f508a0385fe94"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/dice-v4.json",
+    "sha256": "f280979c358d9001f54a59fd7a6c8c5fa56cfe7d213a420165a6f56031803382"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/youtube.json",
+        "sha256": "09c6ee7c99c9291896d7fe3d9979761fe60a725a74b25bea2fece58c8f135b46"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/preflight/youtube.json",
+        "sha256": "deb326e1366f2d06e39d48df382d308eafc730f99f4d363808f4111e0698ebe1"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/tiktok.json",
+        "sha256": "c6505ed5fe5cc2e632bd558e8703d1499c6b3727064550029a88fdc5c93b52a9"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/preflight/tiktok.json",
+        "sha256": "502073d3bfb84168448fd9bbb835e38896b28a2573dfa0b6873b2c449f73cc9c"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/instagram.json",
+        "sha256": "bfa20777a49ae0f128b71abbfd1d01aad9d31be6b0553d5af3bfdf3b32a0f76a"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/preflight/instagram.json",
+        "sha256": "7e4a009c3b73f662c52fcac43237f8e9945e302f9393607d03d85ea24f704752"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/facebook.json",
+        "sha256": "a191eba4f9151751cadd940c85510dc1dab312dbed75c1608a817273a438f99e"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/preflight/facebook.json",
+        "sha256": "dcf36511b37a295a8552c70dd82d5c3439d2f125beda9a6bb0ff674a380d6b1b"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "dice-cue-1",
+      "transcript": "Pick a die. Higher number wins. Whatever you choose, I can pick one with better odds.",
+      "start": 0,
+      "duration": 5.375,
+      "media": {
+        "id": "media.0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0",
+        "sha256": "0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0"
+      }
+    },
+    {
+      "id": "dice-cue-2",
+      "transcript": "Every face has an equal chance in this puzzle, and neither roll affects the other.",
+      "start": 6.2,
+      "duration": 5.125,
+      "media": {
+        "id": "media.ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5",
+        "sha256": "ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5"
+      }
+    },
+    {
+      "id": "dice-cue-3",
+      "transcript": "Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces out of six: two-thirds.",
+      "start": 11.833333333333334,
+      "duration": 8.475,
+      "media": {
+        "id": "media.a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba",
+        "sha256": "a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba"
+      }
+    },
+    {
+      "id": "dice-cue-4",
+      "transcript": "But blue has four fours, so it has better odds against yellow.",
+      "start": 21.233333333333334,
+      "duration": 4.2,
+      "media": {
+        "id": "media.6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb",
+        "sha256": "6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb"
+      }
+    },
+    {
+      "id": "dice-cue-5",
+      "transcript": "Switch to blue? Green’s fives beat every blue face. Its ones still beat blue’s zeros.",
+      "start": 26.233333333333334,
+      "duration": 5.9,
+      "media": {
+        "id": "media.928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82",
+        "sha256": "928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82"
+      }
+    },
+    {
+      "id": "dice-cue-6",
+      "transcript": "Then orange counters green: its sixes beat everything, and its twos beat green’s ones.",
+      "start": 34.93333333333333,
+      "duration": 5.975,
+      "media": {
+        "id": "media.56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9",
+        "sha256": "56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9"
+      }
+    },
+    {
+      "id": "dice-cue-7",
+      "transcript": "And yellow still counters orange.",
+      "start": 43.733333333333334,
+      "duration": 2.45,
+      "media": {
+        "id": "media.b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708",
+        "sha256": "b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708"
+      }
+    },
+    {
+      "id": "dice-cue-8",
+      "transcript": "Every reply shown has those same two-thirds odds. That’s an advantage, not a guaranteed win.",
+      "start": 46.6,
+      "duration": 6.525,
+      "media": {
+        "id": "media.31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3",
+        "sha256": "31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3"
+      }
+    },
+    {
+      "id": "dice-cue-9",
+      "transcript": "The advantages form a circle. There’s no best die in this set—just a better matchup.",
+      "start": 53.733333333333334,
+      "duration": 5.625,
+      "media": {
+        "id": "media.b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b",
+        "sha256": "b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/qa/final-report.json",
+        "sha256": "8ea127a707157d7b72961465f5a01f1fccd5389f72026df99c9a1ca1b8cab093"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Exact approved128words/af_heart WAVs unchanged.",
+    "All six physical planes/face tokens preserve yellow3×6,blue4×4/0×2,green1×3/5×3,orange2×4/6×2.",
+    "Highernumber rule, ideal independent equally likely faces; no random physical trial or measured fairness.",
+    "Yellow-orange/blue-yellow4of6; green-blue18+6of36; orange-green12+12of36;12losses remain for each favored comparison.",
+    "Counter-choice arrows yellow→blue→green→orange→yellow; no all-pairs2/3claim or guaranteedwin."
+  ],
+  "uncertainties": [
+    "Stylized rendered material/motion, not physically filmed dice or rigid-body random-roll simulation.",
+    "No continuous subjective watching/listening or real-device/native platform tests; owner to judge whole-video rhythm, comprehension, voice and mix.",
+    "Caption interior phrase timing approximate; sourceWAVs and measured complete-clip durations unchanged.",
+    "119checkpoints and1s chronology are sampled; no every-frame presentation certification.",
+    "Provisional/stale native profiles retain unknown controls/caption/crop geometry; inherited60s export envelope requires later actual destination review.",
+    "Loss/secondary labels31–34px and small parkeddice are less prominent than52pxspeech/59pxface tokens; actualphone review remains necessary."
+  ],
+  "unusualProduction": [
+    "Rounded shader dice with fixed glyph planes, large diagonal close-up poses, rotating faces and camera elevation changes.",
+    "Six-face fans and separate highlighted winning routes accumulate36equal outcome beads before a single combined2/3result.",
+    "Final return to allfourdimensional dice and an overhead counter circle; no standing matchup panels or spokenCTA.",
+    "Relevant repeated owner feedback investigated; prototype and complete chronological reviews caught texture/label/arrow issues before final owner review."
+  ]
+}

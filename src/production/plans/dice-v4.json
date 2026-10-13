@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.dice.v4",
+  "revision": 4,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "dice-no-best",
+    "revision": 2,
+    "sha256": "1681ea701bff0c4ab381dad4fc64f5138fc374a11ad43133dae0dfdbe2273d07"
+  },
+  "contentAsset": {
+    "id": "dice-no-best.asset.choose-second",
+    "revision": 2,
+    "sha256": "69ca9a64c9c340eb6881f7f2ca4f18afaea04201f405a568a16f60dd4e693d01"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.14",
+    "reviewSha256": "98f27e9e5cb280251e7c0ad4c28e80693c978c8e574eed8c69bbf6226495bbcd"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/youtube.json",
+      "sha256": "09c6ee7c99c9291896d7fe3d9979761fe60a725a74b25bea2fece58c8f135b46"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/tiktok.json",
+      "sha256": "c6505ed5fe5cc2e632bd558e8703d1499c6b3727064550029a88fdc5c93b52a9"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/instagram.json",
+      "sha256": "bfa20777a49ae0f128b71abbfd1d01aad9d31be6b0553d5af3bfdf3b32a0f76a"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/facebook.json",
+      "sha256": "a191eba4f9151751cadd940c85510dc1dab312dbed75c1608a817273a438f99e"
+    }
+  ],
+  "approvedScriptSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+  "creativeDirection": {
+    "id": "creative-direction.dice-no-best.choose-second.v4",
+    "revision": 4,
+    "sha256": "ede102de4e5621372da79da07df18c01614d1007299b48049224b6a168ea2881"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "dice-no-best.claim.definition",
+    "dice-no-best.claim.other-oj",
+    "dice-no-best.claim.other-yg",
+    "dice-no-best.claim.variant-ties",
+    "dice-no-best.claim.guaranteed-win",
+    "dice-no-best.claim.all-pairs",
+    "dice-no-best.claim.three-beats-six",
+    "dice-no-best.claim.nine-rolls",
+    "dice-no-best.claim.loaded",
+    "dice-no-best.claim.physical-test"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 60.46666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "dice-v4.production.1",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.1",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.1",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.1"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.first-choice",
+        "dice-no-best.claim.rule"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 186
+      },
+      "sceneType": "tactile-choice",
+      "objective": "Four dimensional dice at different depths; close orange6turns to2as yellow3offers a counter, with context in exact speech.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.2",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.2",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.2",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.2"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.model"
+      ],
+      "frames": {
+        "start": 186,
+        "end": 355
+      },
+      "sceneType": "independent-face-motion",
+      "objective": "Independent object turns retain fixed six-plane numbers; equally likely/independent qualifications spoken and disclosed.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.3",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.3",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.3",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.3"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.yellow-orange",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 355,
+        "end": 637
+      },
+      "sceneType": "orange-face-reveal",
+      "objective": "One constant yellow3and orange six tangible face tokens: four2wins, two6losses.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.4",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.4",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.4",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.4"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.blue-yellow",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 637,
+        "end": 787
+      },
+      "sceneType": "blue-counter-move",
+      "objective": "Blue becomes the large opposite viewpoint; four4faces win against3, two0faces lose.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.5",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.5",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.5",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.5"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.green-blue",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 787,
+        "end": 1048
+      },
+      "sceneType": "green-branch-beads",
+      "objective": "Green face-wheel retains three5s/three1s, blue four4s/two0s; first3\u00d76route fills18equal pair beads, second3\u00d72fills6more;12losing1versus4pairs remain.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.6",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.6",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.6",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.6"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.orange-green",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 1048,
+        "end": 1312
+      },
+      "sceneType": "orange-branch-beads",
+      "objective": "Orange six-face wheel retains two6s/four2s, green three1s/three5s; first2\u00d76route fills12equal pair beads, second4\u00d73fills12more;12losing2versus5pairs remain.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.7",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.7",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.7",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.7"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.yellow-orange"
+      ],
+      "frames": {
+        "start": 1312,
+        "end": 1398
+      },
+      "sceneType": "yellow-loop-return",
+      "objective": "Returnyellow3to unchanged orange to showthe preceding counter has a counter too, withoutrepeating a full probability panel.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.8",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.8",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.8",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.8"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.cycle",
+        "dice-no-best.claim.not-guaranteed"
+      ],
+      "frames": {
+        "start": 1398,
+        "end": 1612
+      },
+      "sceneType": "illustrative-possible-loss",
+      "objective": "Large yellow3andorange6possible loss; maintain2/3onlyasodds, disclosure no experimental roll.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    },
+    {
+      "id": "dice-v4.production.9",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.9",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.9",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.9"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.cycle",
+        "dice-no-best.claim.no-best"
+      ],
+      "frames": {
+        "start": 1612,
+        "end": 1814
+      },
+      "sceneType": "spatial-counter-circle",
+      "objective": "The same four dice re-form in a spatial circle; arrows from choice to favored reply yellow\u2192blue\u2192green\u2192orange\u2192yellow, no spokenCTA.",
+      "onScreenText": [],
+      "animationIntent": "Rounded fixed-face dice rotate, enter and change depth/pose; sequential face groups and equal outcome beads carry the evidence before totals.",
+      "transitionIntent": "Continuous counterpart replacement with varied viewing elevation, diagonal pair placement and final motivated circle. No standing title/panel slots.",
+      "audioIntent": "Exact original af_heart units, voice-forward illustrative tactile cues at revised object moves."
+    }
+  ],
+  "assets": [
+    {
+      "id": "dice-v4.material-world",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original WebGL cube/material/glyph/wood implementation",
+        "rights": "Project-owned code artwork plusOFLManrope",
+        "notes": "Fixed six-plane values, rounded geometry, illustrative motion",
+        "evidence": "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+      }
+    },
+    {
+      "id": "dice-v4.proof-faces",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original six-face tokens and equal outcome beads",
+        "rights": "Project-owned artwork",
+        "notes": "Explicit3\u00d76+3\u00d72and2\u00d76+4\u00d73route weights,12losses",
+        "evidence": "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+      }
+    },
+    {
+      "id": "dice.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Manrope Fontsource5.3.0",
+        "rights": "SIL OFL1.1",
+        "notes": "Licensed existing type",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "dice.narration",
+      "kind": "audio",
+      "path": "public/audio/dice/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache2.0model terms",
+        "notes": "Exact approved128-word units",
+        "evidence": "src/production/narration/dice.json"
+      }
+    },
+    {
+      "id": "dice-v4.tactile-sound",
+      "kind": "audio",
+      "path": "public/audio/dice-v4/tactile.wav",
+      "provenance": {
+        "origin": "Original deterministic placement and face-turn cues",
+        "rights": "Magnivis original procedural sound",
+        "notes": "Illustrative modular effects, no music or actual recorded dice",
+        "evidence": "src/production/narration/dice-v4-soundscape.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/dice-v4.en.vtt",
+    "captionPlanId": "caption-plan.dice.v4",
+    "captionPlanRevision": 4,
+    "captionPlanSha256": "36ec03353042a16ef060405c70f96acc6d8145a4910a0bdc8c1baf84498a3e42",
+    "generatorId": "generator.dice-v4-rebound-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact128-word source identity.",
+    "Fixed die values, correct 4/6,4/6,18+6=24/36,12+12=24/36 proofs, retained12losses.",
+    "Counter-choice arrows yellow\u2192blue\u2192green\u2192orange\u2192yellow; no all-pairs2/3claim or guaranteed win.",
+    "Separate full rendered-sequence chronological editorial review and every caption midpoint.",
+    "Full decode, measured audio, typography fit and four local profile preflights; no inferred subjective listening/device pass.",
+    "Stop AHMET \u2014 CYCLE14 MASTER REVIEW; no publication preparation or external actions.",
+    "Inspect the opening and both branch prototypes before fullrender; compare material prominence and progressive evidence, not just canvas containment.",
+    "Sample every consequential branch state and opponent/face/circle transition, alongside all captionmidpoints and full chronologicaldecode.",
+    "Determine whether the picture still tells the choice/proof progression without standing matchup headings or a numeric panel."
+  ]
+}

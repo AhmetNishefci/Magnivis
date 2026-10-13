@@ -1,0 +1,11 @@
+# Rendered review application — objects and progressive evidence
+
+Prospective application of existing PRODUCTION-PLANS and CREATIVE-DIRECTION, grounded in the Cycle14 V4 owner revision and `content-intelligence/cycles/cycle-14/revision-v4/production-learning.json`. Original hash-bound policies and historical media remain unchanged. This supplement adds no owner gate, style mandate or separate learning ledger.
+
+When an approved direction promises a tangible experience, inspect the opening and consequential explanation in inexpensive rendered prototypes before treating the medium as realized. Actual material/subject prominence, readable evidence and a changing relationship matter; a correctly numbered cube or a new background does not alone satisfy the promise. Diagnose whether words, headings and panels still carry most developments. Text and diagrams remain legitimate when they best serve the idea.
+
+Sample actual mechanism states and transitions as well as narration/caption midpoints. A cue midpoint can miss the first winning route, the second route, their accumulation or a final relation stroke crossing a label. Existing per-video QA timestamps should include these authored states, without inventing an all-frame or continuous-playback pass. Mathematical multiplicities and losing possibilities remain visible even when calculation text is reduced.
+
+Use bounds derived from the actual rendering camera/model where feasible; distinguish conservative geometry, meaningful face/text regions and decorative shadows. Repair a false measurement with supported geometry or decoded evidence, never by loosening native limits. Separately inspect actual label/arrow/subject relationships: overlapping rectangles alone neither prove nor disprove an intersecting curved stroke.
+
+Retain the separate complete chronological cold-viewer review, phone simulation and every caption midpoint, with exact media identity. Record actionable corrections and reasons for retained repetition. Technical correctness is not an editorial quality certificate. No mandatory dark palette,3D medium, perpetual movement, duration or novelty quota follows. Continuous audiovisual listening/viewing and real-device limitations remain explicit.

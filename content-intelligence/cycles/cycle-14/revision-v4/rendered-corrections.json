@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-13T15:38:45.346037Z",
+  "firstFullRender": {
+    "path": "artifacts/qa-evidence/dice-cycle14-v4-authoring/first-full-render.mp4",
+    "sha256": "f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535",
+    "originalGeneratedPath": "artifacts/masters/dice-cycle14-candidate-v4.mp4",
+    "status": "Internal unapproved authoring render; not registered before archival path selection."
+  },
+  "findings": [
+    "Early opening prototype showed missing numbers because a1536px non-power-of-two glyph atlas was used with WebGL1repeat wrapping; changed atlas to2048width with6occupied256px face columns and2unused columns. Fixed-plane values remain unchanged.",
+    "Prototype branch counter text exceeded the bead ring; compacted36pairs/18counted and retained full branch route explanation in visible faces/captions.",
+    "Layout caught transitional name overlap and tight final probability legend; names fade while moving, then settle; added20px legend separation.",
+    "One conservatively estimated die box crossed the provisional left inset by2px, whereas actual decoded die remained inside. QA now projects the shader camera and physical8-corner envelope, retaining the same inset limits. This inspectQa-only metadata change does not alter rendered pixels; original as-rendered composition is retained.",
+    "Full decoded chronological inspection found bottom counter arrows crossing Blue/Orange names. Reroute them along the exterior sides toward the next counter, keeping mathematical direction and names clear."
+  ],
+  "actions": [
+    "Preserve first render/audio mastering/decoded reports and original visual inputs.",
+    "Produce corrected V4 binary after arrow relocation; no V3overwrites or narration/math changes.",
+    "Recheck all119mechanism/caption/bounds checkpoints and complete decoded chronology after correction."
+  ],
+  "inputEvidence": [
+    "authoring/DicePuzzleV4-as-rendered.tsx",
+    "authoring/typography-report-first-pass.json",
+    "authoring/sheet-bindings-first-pass.json"
+  ],
+  "limits": "Decoded chronological images and actual browser geometry. No subjective continuous viewing/listening or native-device pass."
+}

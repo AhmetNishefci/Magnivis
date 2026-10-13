@@ -24503,6 +24503,1004 @@
           "sha256": "fc4050ab023db63369334393f54c61d32ce9de61c08831ff6e4964ce5d876a8a"
         }
       ]
+    },
+    {
+      "id": "media.38ec3b1c4e0237e8bbbf06788a494dec4dd875bf6aa8f62e90f9475ec66de8dc",
+      "sha256": "38ec3b1c4e0237e8bbbf06788a494dec4dd875bf6aa8f62e90f9475ec66de8dc",
+      "canonicalPath": "public/audio/dice-v4/tactile.wav",
+      "mediaType": "audio/wav",
+      "bytes": 11609644,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "src/production/narration/dice-v4-soundscape.json",
+          "scripts/generate-dice-v4-soundscape.mjs",
+          "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-13T15:17:59.533Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+      "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+      "canonicalPath": "artifacts/masters/dice-cycle14-candidate-v4.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 25764974,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/implementation-bindings.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/audio-mastering-v4.json"
+        ],
+        "createdAt": "2026-10-13T15:41:31.346Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.38ec3b1c4e0237e8bbbf06788a494dec4dd875bf6aa8f62e90f9475ec66de8dc",
+          "sha256": "38ec3b1c4e0237e8bbbf06788a494dec4dd875bf6aa8f62e90f9475ec66de8dc"
+        },
+        {
+          "id": "media.0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0",
+          "sha256": "0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0"
+        },
+        {
+          "id": "media.ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5",
+          "sha256": "ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5"
+        },
+        {
+          "id": "media.a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba",
+          "sha256": "a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba"
+        },
+        {
+          "id": "media.6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb",
+          "sha256": "6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb"
+        },
+        {
+          "id": "media.928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82",
+          "sha256": "928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82"
+        },
+        {
+          "id": "media.56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9",
+          "sha256": "56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9"
+        },
+        {
+          "id": "media.b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708",
+          "sha256": "b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708"
+        },
+        {
+          "id": "media.31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3",
+          "sha256": "31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3"
+        },
+        {
+          "id": "media.b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b",
+          "sha256": "b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b"
+        }
+      ]
+    },
+    {
+      "id": "media.f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535",
+      "sha256": "f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/first-full-render.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 25736876,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/authoring/DicePuzzleV4-as-rendered.tsx",
+          "content-intelligence/cycles/cycle-14/revision-v4/authoring/audio-mastering-original-record.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-13T15:29:48.103Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.38ec3b1c4e0237e8bbbf06788a494dec4dd875bf6aa8f62e90f9475ec66de8dc",
+          "sha256": "38ec3b1c4e0237e8bbbf06788a494dec4dd875bf6aa8f62e90f9475ec66de8dc"
+        },
+        {
+          "id": "media.0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0",
+          "sha256": "0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0"
+        },
+        {
+          "id": "media.ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5",
+          "sha256": "ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5"
+        },
+        {
+          "id": "media.a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba",
+          "sha256": "a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba"
+        },
+        {
+          "id": "media.6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb",
+          "sha256": "6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb"
+        },
+        {
+          "id": "media.928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82",
+          "sha256": "928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82"
+        },
+        {
+          "id": "media.56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9",
+          "sha256": "56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9"
+        },
+        {
+          "id": "media.b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708",
+          "sha256": "b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708"
+        },
+        {
+          "id": "media.31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3",
+          "sha256": "31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3"
+        },
+        {
+          "id": "media.b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b",
+          "sha256": "b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b"
+        }
+      ]
+    },
+    {
+      "id": "media.9867e850f03e79aab96482821948d8b32b368f09c2ef3fa8842e8932b61d12ba",
+      "sha256": "9867e850f03e79aab96482821948d8b32b368f09c2ef3fa8842e8932b61d12ba",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/first-pass-scene-overview.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 199918,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/authoring/qa-before-final-decode/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:33.883Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535",
+          "sha256": "f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535"
+        }
+      ]
+    },
+    {
+      "id": "media.6d22a465ffc9bdd7c92233b786cc299262259166c3feb0043aef5a548c1d3634",
+      "sha256": "6d22a465ffc9bdd7c92233b786cc299262259166c3feb0043aef5a548c1d3634",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/first-pass-motion-progression.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 427025,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/authoring/qa-before-final-decode/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:34.526Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535",
+          "sha256": "f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535"
+        }
+      ]
+    },
+    {
+      "id": "media.063c750c0e006f78380312a72109daba9cce2d3ed363358f80a95abd828e8dcd",
+      "sha256": "063c750c0e006f78380312a72109daba9cce2d3ed363358f80a95abd828e8dcd",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/first-pass-phone-readability.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 263137,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/authoring/qa-before-final-decode/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:37.182Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535",
+          "sha256": "f38c0ac199d8e9778edb7861c4a350dd3794b0391ab7808504d0625b6c96a535"
+        }
+      ]
+    },
+    {
+      "id": "media.ae20e03fe6a145a6a2b4b079e333457c6d923879a0eabdc375e4dc27210257aa",
+      "sha256": "ae20e03fe6a145a6a2b4b079e333457c6d923879a0eabdc375e4dc27210257aa",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/opening-blank.png",
+      "mediaType": "image/png",
+      "bytes": 1366111,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/prototype-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-13T15:18:48.809Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.6fc69252f02660ef41ff81faded754982c5eb53f958e0942d508ea7b49ccc9af",
+      "sha256": "6fc69252f02660ef41ff81faded754982c5eb53f958e0942d508ea7b49ccc9af",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/green-blank.png",
+      "mediaType": "image/png",
+      "bytes": 1349913,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/prototype-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-13T15:18:52.875Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.a0928051282f61a6cc112a5f578afef6839980431c1c89769b534b8ae33c8676",
+      "sha256": "a0928051282f61a6cc112a5f578afef6839980431c1c89769b534b8ae33c8676",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/opening-numbered.png",
+      "mediaType": "image/png",
+      "bytes": 1382496,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/prototype-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-13T15:21:00.735Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.7694c82e1eeab7746d4f3ba935d3018d5048ad601bb60f3248a3dc58e9eda0cb",
+      "sha256": "7694c82e1eeab7746d4f3ba935d3018d5048ad601bb60f3248a3dc58e9eda0cb",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4-authoring/green-numbered.png",
+      "mediaType": "image/png",
+      "bytes": 1329442,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/prototype-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-13T15:21:04.171Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.bac684f59a6d6b6f7a050205b9a4826068b483db8ff675d04e1ec1c32ea11c65",
+      "sha256": "bac684f59a6d6b6f7a050205b9a4826068b483db8ff675d04e1ec1c32ea11c65",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/contact-sheet.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 2349796,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:53:35.097Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.5fefcd90cde1782e2e9d20b1796a6b488e5716beabae4f685d79d663c4b3576e",
+      "sha256": "5fefcd90cde1782e2e9d20b1796a6b488e5716beabae4f685d79d663c4b3576e",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/scene-overview.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 200303,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:25.681Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.d9ed7921bf813e1b01c6dfa260be825ea539b1555601b21796e76d9e6e7b6ba7",
+      "sha256": "d9ed7921bf813e1b01c6dfa260be825ea539b1555601b21796e76d9e6e7b6ba7",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/phone-readability.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 263602,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:28.038Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.a847eba17f76e3fd0c41cd93c3709011188bb282c5c1cc71c884e0c88a2c6663",
+      "sha256": "a847eba17f76e3fd0c41cd93c3709011188bb282c5c1cc71c884e0c88a2c6663",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/motion-progression.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 428028,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:26.194Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.612647a65c5d35aa599ffe9f7897325d9169cf91c7c6824d03a7cc972d33f0d6",
+      "sha256": "612647a65c5d35aa599ffe9f7897325d9169cf91c7c6824d03a7cc972d33f0d6",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/captions-1.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 241451,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:24.167Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.bfeaede344b44db506f9d795b225c343c020ac4521f3f494088571d7225394fd",
+      "sha256": "bfeaede344b44db506f9d795b225c343c020ac4521f3f494088571d7225394fd",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/captions-2.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 245484,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:24.657Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.c6b673315e68e3610a5def944333726383d6ef2a7c645c39f1f06b335ed8515f",
+      "sha256": "c6b673315e68e3610a5def944333726383d6ef2a7c645c39f1f06b335ed8515f",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/captions-3.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 25660,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:25.153Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.0ed097c7213221b68eb70348cd0d129ac8775b5f17f070d894d512c86eda0093",
+      "sha256": "0ed097c7213221b68eb70348cd0d129ac8775b5f17f070d894d512c86eda0093",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/sequence-1.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 311607,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:26.364Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.489881ba9b99ffb388c54bd5c7011025858ad459b8322c7e5274866e3f3eee2a",
+      "sha256": "489881ba9b99ffb388c54bd5c7011025858ad459b8322c7e5274866e3f3eee2a",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/sequence-2.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 338536,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:26.628Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.98f4e89ccf343ef3b0ed1ca710dbfc8a6b9a44ecaaa31a5aea943d5b87030be3",
+      "sha256": "98f4e89ccf343ef3b0ed1ca710dbfc8a6b9a44ecaaa31a5aea943d5b87030be3",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/sequence-3.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 342748,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:27.038Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.03e09b402217cf53b1633301c3c2c6d976b4ff58a91cbcb8eae0e9de81c72de8",
+      "sha256": "03e09b402217cf53b1633301c3c2c6d976b4ff58a91cbcb8eae0e9de81c72de8",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/sequence-4.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 267818,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:48:27.541Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.a153749e5f753938e342b66ba3f2989de6f6de428f344f157d5b80c07a71b9db",
+      "sha256": "a153749e5f753938e342b66ba3f2989de6f6de428f344f157d5b80c07a71b9db",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-01-0.0s.png",
+      "mediaType": "image/png",
+      "bytes": 927174,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:34.727Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a",
+      "sha256": "f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-04-0.9s.png",
+      "mediaType": "image/png",
+      "bytes": 959639,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:34.982Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.aa0c14d82f3085c0e4d08f6023d533a31479907f1c1440f4b08de1cb7b06e923",
+      "sha256": "aa0c14d82f3085c0e4d08f6023d533a31479907f1c1440f4b08de1cb7b06e923",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-10-2.7s.png",
+      "mediaType": "image/png",
+      "bytes": 985050,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:35.513Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.91526771ad134acaa6dcb90c205648c2a574bbf897b47f58c24a0f4e6e041b44",
+      "sha256": "91526771ad134acaa6dcb90c205648c2a574bbf897b47f58c24a0f4e6e041b44",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-11-3.0s.png",
+      "mediaType": "image/png",
+      "bytes": 970335,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:35.604Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.127248632c670ddf7424661b0aeae9440b93211a81e28c5ae8b7bc91e804ac03",
+      "sha256": "127248632c670ddf7424661b0aeae9440b93211a81e28c5ae8b7bc91e804ac03",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-119-60.4s.png",
+      "mediaType": "image/png",
+      "bytes": 964906,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:34:10.886Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.40c6c3526f12d4799307ad2ce150626760efaef6c52599f7220c8c16607509de",
+      "sha256": "40c6c3526f12d4799307ad2ce150626760efaef6c52599f7220c8c16607509de",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-12-3.1s.png",
+      "mediaType": "image/png",
+      "bytes": 957913,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:35.697Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.a2ca7fc8c3cb366edc23f8ae96aed302f7991639585b68fc99f6f45d88b3a7ac",
+      "sha256": "a2ca7fc8c3cb366edc23f8ae96aed302f7991639585b68fc99f6f45d88b3a7ac",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-23-9.0s.png",
+      "mediaType": "image/png",
+      "bytes": 994632,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:37.144Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.f30bbd6ddfc9897563efc7e45e1e9e3fe0f329892b5db0214eda66e603e7a87a",
+      "sha256": "f30bbd6ddfc9897563efc7e45e1e9e3fe0f329892b5db0214eda66e603e7a87a",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-35-16.5s.png",
+      "mediaType": "image/png",
+      "bytes": 1049903,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:39.068Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.b78eeeef10cf7f5a86bb579f0f2b72f65cb9d1e8641041b606f150b23f673f72",
+      "sha256": "b78eeeef10cf7f5a86bb579f0f2b72f65cb9d1e8641041b606f150b23f673f72",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-47-23.7s.png",
+      "mediaType": "image/png",
+      "bytes": 1042675,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:41.808Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.af771d96841683843d702762a3e24d5b2a8084b1c9b951e8ffe2f87beb228609",
+      "sha256": "af771d96841683843d702762a3e24d5b2a8084b1c9b951e8ffe2f87beb228609",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-61-30.6s.png",
+      "mediaType": "image/png",
+      "bytes": 1096379,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:45.652Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.05d9f4ab5f16feb4d1b1ca72e4747b3dd152182033b020000a63c4be41bb0a72",
+      "sha256": "05d9f4ab5f16feb4d1b1ca72e4747b3dd152182033b020000a63c4be41bb0a72",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-79-39.3s.png",
+      "mediaType": "image/png",
+      "bytes": 1106067,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:51.799Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.63eaad6c53bd04541fb109213b451eab99caf675c23567f8ce21647060418fdf",
+      "sha256": "63eaad6c53bd04541fb109213b451eab99caf675c23567f8ce21647060418fdf",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-94-45.2s.png",
+      "mediaType": "image/png",
+      "bytes": 954064,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:58.124Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.93cd244b460c8e6e4ad7c77b55a243bb24d0d9186c8e65ab9a9bf50aaf04b01d",
+      "sha256": "93cd244b460c8e6e4ad7c77b55a243bb24d0d9186c8e65ab9a9bf50aaf04b01d",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-104-50.2s.png",
+      "mediaType": "image/png",
+      "bytes": 908458,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:34:02.887Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.bed95a6e902f1e7212e59919fc691c2a5ad6f16f18a6b289b8395da114f68890",
+      "sha256": "bed95a6e902f1e7212e59919fc691c2a5ad6f16f18a6b289b8395da114f68890",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-116-57.1s.png",
+      "mediaType": "image/png",
+      "bytes": 1019013,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:34:09.171Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.bdef04ed03c1da17ee4c696c6928e1682402f1858523f92233abb92e2012207e",
+      "sha256": "bdef04ed03c1da17ee4c696c6928e1682402f1858523f92233abb92e2012207e",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-58-28.8s.png",
+      "mediaType": "image/png",
+      "bytes": 1104369,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:44.762Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.f76595b5662ccbb50a176ebcbaf0c8d35a42792a2d3ad749bda57e97ae0abfbc",
+      "sha256": "f76595b5662ccbb50a176ebcbaf0c8d35a42792a2d3ad749bda57e97ae0abfbc",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-62-30.7s.png",
+      "mediaType": "image/png",
+      "bytes": 1095666,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:45.963Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.8aafa8d9a61836a987ff30adde89d545c1fbc863f36779ad8967341ea84a6398",
+      "sha256": "8aafa8d9a61836a987ff30adde89d545c1fbc863f36779ad8967341ea84a6398",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-66-33.4s.png",
+      "mediaType": "image/png",
+      "bytes": 1062741,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:47.260Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.6c69e86f545320054bef657f00214a0ed722c871d05cfe32b9f6234c674ebd46",
+      "sha256": "6c69e86f545320054bef657f00214a0ed722c871d05cfe32b9f6234c674ebd46",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-75-37.5s.png",
+      "mediaType": "image/png",
+      "bytes": 1083577,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:50.313Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.5189ce722ef5ce1d0f5f630f9cf1392b7ecceb7c7e4b54c965717a89888e2b6d",
+      "sha256": "5189ce722ef5ce1d0f5f630f9cf1392b7ecceb7c7e4b54c965717a89888e2b6d",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-80-39.4s.png",
+      "mediaType": "image/png",
+      "bytes": 1106160,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:52.182Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
+    },
+    {
+      "id": "media.53a1327d37d56b3f78fb027cd85194642ceeb46f01178baf58b2fe99f86227a2",
+      "sha256": "53a1327d37d56b3f78fb027cd85194642ceeb46f01178baf58b2fe99f86227a2",
+      "canonicalPath": "artifacts/qa-evidence/dice-cycle14-v4/frame-84-42.1s.png",
+      "mediaType": "image/png",
+      "bytes": 1069706,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "58c5ffa41dd0240413fb7427888dcd0ad8462fa8",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-14/revision-v4/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-13T15:33:53.808Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+          "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+        }
+      ]
     }
   ]
 }

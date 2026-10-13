@@ -1,0 +1,24 @@
+{
+  "reason": "First finalization admitted media and retained QA, then rejected Python UTC +00:00 syntax at native ISO-Z presentation boundary. Original records/media remain unchanged. Resume normalizes only native evidence timestamp syntax, preserving inspection instant.",
+  "failedImplementation": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v4/implementation-bindings.json",
+    "sha256": "0d2d140671fe7db65f25c98a58d4e3b5d71130ae07dfcdf13b45ce2934013c55"
+  },
+  "resumeSource": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v4/authoring/resume-finalization-failed.ts",
+    "sha256": "2a286079daa44ca7fc2855942e92fe711bb3549dd44126f16e49ee37120205ce"
+  },
+  "originalInspection": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v4/qa/visual-inspection.json",
+    "sha256": "0d916041518a4e5e1e0aeda0f672cfed5fcb5ef8c772a90710f7b917918b285a"
+  },
+  "media": {
+    "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+    "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+  },
+  "validatedResumeTool": {
+    "path": "scripts/resume-dice-v4-finalization.ts",
+    "sha256": "df4143ad399d139b3a2505bd7a1a5f9fa8675fffab7d8896a985e4a95c832286"
+  },
+  "reconciliation": "Failed as-executed source and original operational envelope preserved under authoring. Current tool receives missing checks declaration for strict type validation; no rendered source, master, QA or native candidate changed."
+}

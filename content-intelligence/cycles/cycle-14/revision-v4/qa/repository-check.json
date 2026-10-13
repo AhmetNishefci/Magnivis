@@ -1,0 +1,7 @@
+{
+  "command": "repository-check",
+  "exitCode": 0,
+  "rawOutput": "\n> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis\n> pnpm validate && git diff --check\n\n\n> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis\n> pnpm typecheck && pnpm lint && pnpm test\n\n\n> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis\n> tsc --noEmit\n\n\n> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis\n> eslint src scripts tests remotion.config.ts vitest.config.ts\n\n\n> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis\n> vitest run\n\n\n RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  54 passed (54)\n      Tests  507 passed (507)\n   Start at  18:02:09\n   Duration  86.62s (tests 96%, import 4%, transform 1%)\n\n",
+  "rawOutputSha256": "d3bc82ad1248ba5b4b0e521e7e89ee443e175f99730807e6e6533bc1f86b1dc5",
+  "note": "Initial check log records unstaged canonical-media failure; earlier missing checks declaration was corrected with original source retained. Final check and durability passed."
+}

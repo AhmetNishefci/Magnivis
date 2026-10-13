@@ -1,0 +1,16 @@
+{
+  "resumeSource": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v4/authoring/resume-finalization-failed.ts",
+    "sha256": "2a286079daa44ca7fc2855942e92fe711bb3549dd44126f16e49ee37120205ce"
+  },
+  "completionSource": {
+    "path": "scripts/complete-dice-v4-finalization.ts",
+    "sha256": "4b5387b13d4771bdb2df9c7f7c5ec5125c13d134f842947d1ceb771e26e90808"
+  },
+  "note": "Completes candidate envelope after missing local checks variable in resumed finalization; all original media, QA and preflight records preserved.",
+  "validatedResumeTool": {
+    "path": "scripts/resume-dice-v4-finalization.ts",
+    "sha256": "df4143ad399d139b3a2505bd7a1a5f9fa8675fffab7d8896a985e4a95c832286"
+  },
+  "reconciliation": "Failed as-executed source and original operational envelope preserved under authoring. Current tool receives missing checks declaration for strict type validation; no rendered source, master, QA or native candidate changed."
+}

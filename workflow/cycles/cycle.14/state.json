@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.14",
-  "revision": 13,
+  "revision": 19,
   "authority": {
     "path": "workflow/authorities/cycle-14-start.json",
     "sha256": "7e67f1dc5d5880d478ac416ed9787bfe31c19d8d0fd2511c2221e6f32bae916f"
@@ -26,15 +26,15 @@
     {
       "stage": "creative",
       "record": {
-        "path": "content-intelligence/cycles/cycle-14/production-v1/direction-ready.json",
-        "sha256": "6b032a91510959c4b38bb7934eb653a627e37359f989e259b720b9ea37b05cc3"
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/direction-v4.json",
+        "sha256": "6695bf6198f84bb8e6db7b0623358c804c7fa70c2abec7a9b879a28b63a6a349"
       }
     },
     {
       "stage": "production",
       "record": {
-        "path": "content-intelligence/cycles/cycle-14/production-v1/master-candidate-v3.json",
-        "sha256": "8b28b241cc98f379e7e072a6188a4b93c5a6e1607ca568c8f268fd2a962d72f7"
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/master-candidate-v4.json",
+        "sha256": "6c3f4ef565e5d81a0bffc9e18e7b6c38950d52b0e854d9336f636db7f961250e"
       }
     }
   ],
@@ -47,8 +47,8 @@
     "sha256": "720f45677ef1dc22771dc3c00f26a3b0c1e1ba4f538f2b65343d4f581b5ac804"
   },
   "candidate": {
-    "path": "content-intelligence/cycles/cycle-14/production-v1/master-candidate-v3.json",
-    "sha256": "8b28b241cc98f379e7e072a6188a4b93c5a6e1607ca568c8f268fd2a962d72f7"
+    "path": "content-intelligence/cycles/cycle-14/revision-v4/master-candidate-v4.json",
+    "sha256": "6c3f4ef565e5d81a0bffc9e18e7b6c38950d52b0e854d9336f636db7f961250e"
   },
   "masterDecision": null,
   "release": null,
@@ -184,6 +184,66 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-14/production-v1/master-candidate-v3.json",
         "sha256": "8b28b241cc98f379e7e072a6188a4b93c5a6e1607ca568c8f268fd2a962d72f7"
+      }
+    },
+    {
+      "revision": 14,
+      "previousSha256": "191a2c65891b85df45d59bac37ac7eacbf3d4b680ade3cc08e1d6555e51c0143",
+      "event": "owner-decision",
+      "at": "2026-10-13T15:05:03.252Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/owner-master-revision.json",
+        "sha256": "9fd8ad1437819d880af7adae13e4e8d134999d1c6f82f4099f984ea560ef3535"
+      }
+    },
+    {
+      "revision": 15,
+      "previousSha256": "0da39b9d46fa7986090126335cd83d7b8305d4032b5ebcf7650a97a3cda5b18c",
+      "event": "retry-internal",
+      "at": "2026-10-13T15:05:03.252Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/creative-retry.json",
+        "sha256": "e998e9f15fbc614c06fb371e40ecdea3829522709164c063369add8c23dd7ea2"
+      }
+    },
+    {
+      "revision": 16,
+      "previousSha256": "fdc3ae7b2fa1611afc285bf7bd07e5294dc6f80be4187c716529022bcf0a681a",
+      "event": "begin-creative",
+      "at": "2026-10-13T15:05:03.252Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/creative-start.json",
+        "sha256": "2d5779119728564ba0cd84b0c32fa9ef6c6b64ce8e1ccfcf15d4fd06b75e76df"
+      }
+    },
+    {
+      "revision": 17,
+      "previousSha256": "cbb703a4fcb3ddc8ba3dee14535f1b90c651685127364af2a128da034cddc8f0",
+      "event": "creative",
+      "at": "2026-10-13T15:16:50.240Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/direction-v4.json",
+        "sha256": "6695bf6198f84bb8e6db7b0623358c804c7fa70c2abec7a9b879a28b63a6a349"
+      }
+    },
+    {
+      "revision": 18,
+      "previousSha256": "212bd984961d8ddef99ba12b0c5bd7f1ae89ab93a1f3e375d99c98afb78584c6",
+      "event": "begin-production",
+      "at": "2026-10-13T15:16:50.240Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/production-start.json",
+        "sha256": "694898c8f804dbf2b57d67d823caf6d591a1bb832e13bd7af217ada7edc0923f"
+      }
+    },
+    {
+      "revision": 19,
+      "previousSha256": "74635e49fe1cf0731e7e3a131d2df10393e43dfca6afbd296bb44f6d44fa89b6",
+      "event": "production",
+      "at": "2026-10-13T15:59:02.683Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v4/master-candidate-v4.json",
+        "sha256": "6c3f4ef565e5d81a0bffc9e18e7b6c38950d52b0e854d9336f636db7f961250e"
       }
     }
   ]
