@@ -246,3 +246,11 @@ Candidate production authorization only; exact owner master and publication appr
 - Distinct V2 master, generated/observational assets and bounded QA evidence get immutable canonical SHA256 identities; failed first authoring pictures/renders remain separately unapproved. V1 and all historical inputs/media/approvals preserved.
 
 Candidate revision authorization only; no exact owner Master Review approval, release/publishing package or platform action.
+
+## Cycle #14 — The Dice With No Best Choice candidate V1
+
+- `src/components/TactileDie.tsx` and `src/compositions/DicePuzzle.tsx`: original Magnivis software-projected six-plane cubes, mineral-grey surface, face shading, shadows, six-face demonstrations, weighted outcome partitions, dots and counter-choice arrows. No imported or traced mathematical figure, stock image, recorded physical throw or experimental data. Face topology preserves the verified multisets; motion illustrates a mathematical puzzle.
+- `public/audio/dice/narration/cue-{1..9}.wav`: exact approved128-word narration, local Kokoro82M `af_heart`, q8CPU speed1, established Apache2.0model terms. Complete-unit phoneme/token and measured output records accompany the production. No voice cloning or paid API.
+- `public/audio/dice/tactile.wav`: original deterministic damped oscillator/filtered-noise placement cues from `scripts/generate-dice-soundscape.mjs`; no music or third-party sound recordings.
+- Existing pinned Fontsource Manrope5.3.0 Latin600/700, SIL OFL1.1. Font/license hashes and source provenance in `content-intelligence/cycles/cycle-14/production-v1/rights-provenance.json`.
+- Master and bounded decoded QA images derive from these sources. Immutable canonical media registration supplies unique identities and generation lineage; QA imagery and sound comparison are inspection evidence. Candidate-production authority grants no master acceptance, platform or publication permission.

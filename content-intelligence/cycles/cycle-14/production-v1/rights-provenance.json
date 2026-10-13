@@ -1,0 +1,41 @@
+{
+  "enteredAt": "2026-10-13T13:58:24.731Z",
+  "visuals": "Magnivis original software-projected cubes with fixed six-plane face topology, procedural surface, shadows, weighted outcome partitions, dots and arrows. No copied research figures, external photographs or historical recordings.",
+  "font": {
+    "package": "@fontsource/manrope",
+    "version": "5.3.0",
+    "license": "SIL OFL1.1",
+    "evidence": {
+      "path": "node_modules/@fontsource/manrope/LICENSE",
+      "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+    },
+    "files": [
+      {
+        "path": "node_modules/@fontsource/manrope/files/manrope-latin-600-normal.woff2",
+        "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593"
+      },
+      {
+        "path": "node_modules/@fontsource/manrope/files/manrope-latin-700-normal.woff2",
+        "sha256": "d2a12c85a831e4b5db341767d0347fa3d1361d22a1fcb3e361a16b6c90080f71"
+      }
+    ]
+  },
+  "narration": {
+    "provider": "kokoro-local",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "voice": "af_heart",
+    "license": "Established Apache2.0 model terms; no voice cloning or paid API",
+    "source": {
+      "path": "src/production/narration/dice.json",
+      "sha256": "56420cf109fbe397da9049bb18aa6f439973e1ea0a80a96d4a436e106b49fe8a"
+    }
+  },
+  "sound": {
+    "source": {
+      "path": "src/production/narration/dice-soundscape.json",
+      "sha256": "daa8ee69767617517f4dccb292dca046b92e7ec4717ae65f6c535b9bb8f1b329"
+    },
+    "rights": "Original Magnivis deterministic damped placement sounds"
+  },
+  "scope": "Candidate production only; no physical fairness test or experimental roll evidence."
+}

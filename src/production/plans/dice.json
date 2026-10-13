@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.dice.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "dice-no-best",
+    "revision": 2,
+    "sha256": "1681ea701bff0c4ab381dad4fc64f5138fc374a11ad43133dae0dfdbe2273d07"
+  },
+  "contentAsset": {
+    "id": "dice-no-best.asset.choose-second",
+    "revision": 2,
+    "sha256": "69ca9a64c9c340eb6881f7f2ca4f18afaea04201f405a568a16f60dd4e693d01"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.14",
+    "reviewSha256": "98f27e9e5cb280251e7c0ad4c28e80693c978c8e574eed8c69bbf6226495bbcd"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/youtube.json",
+      "sha256": "09c6ee7c99c9291896d7fe3d9979761fe60a725a74b25bea2fece58c8f135b46"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/tiktok.json",
+      "sha256": "c6505ed5fe5cc2e632bd558e8703d1499c6b3727064550029a88fdc5c93b52a9"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/instagram.json",
+      "sha256": "bfa20777a49ae0f128b71abbfd1d01aad9d31be6b0553d5af3bfdf3b32a0f76a"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/facebook.json",
+      "sha256": "a191eba4f9151751cadd940c85510dc1dab312dbed75c1608a817273a438f99e"
+    }
+  ],
+  "approvedScriptSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+  "creativeDirection": {
+    "id": "creative-direction.dice-no-best.choose-second.v2",
+    "revision": 2,
+    "sha256": "7a2d53d1299562e258e40a0b12fbc45e93c503771047f9266f9eccbcfae1d4c3"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "dice-no-best.claim.definition",
+    "dice-no-best.claim.other-oj",
+    "dice-no-best.claim.other-yg",
+    "dice-no-best.claim.variant-ties",
+    "dice-no-best.claim.guaranteed-win",
+    "dice-no-best.claim.all-pairs",
+    "dice-no-best.claim.three-beats-six",
+    "dice-no-best.claim.nine-rolls",
+    "dice-no-best.claim.loaded",
+    "dice-no-best.claim.physical-test"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 58.46666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "dice.production.1",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.1",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.1",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.1"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.first-choice",
+        "dice-no-best.claim.rule"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 186
+      },
+      "sceneType": "choose-a-die",
+      "objective": "Immediate mental choice, higher-number rule and informed counter-choice promise; no greeting or delayed setup.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.2",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.2",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.2",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.2"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.model"
+      ],
+      "frames": {
+        "start": 186,
+        "end": 355
+      },
+      "sceneType": "fair-independent-model",
+      "objective": "Equal-face and independent-roll model stated in plain English, without claiming physical testing.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.3",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.3",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.3",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.3"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.yellow-orange",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 355,
+        "end": 637
+      },
+      "sceneType": "yellow-orange-faces",
+      "objective": "One constant yellow3 beside orange’s six equally likely face positions. Four2s lose to3; two6s beat3. Highlight4/6=2/3 while the2/6losses remain. One spoken count earns the rest of the proof vocabulary.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.4",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.4",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.4",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.4"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.blue-yellow",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 637,
+        "end": 787
+      },
+      "sceneType": "blue-yellow-faces",
+      "objective": "Blue’s exact four4s/two0s turn into six face opportunities beside the persistent yellow3. Four winning faces show4/6=2/3; two zeros still lose. Blue is named and its zeros are revealed before green enters.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.5",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.5",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.5",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.5"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.green-blue",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 787,
+        "end": 1018
+      },
+      "sceneType": "green-blue-weighted",
+      "objective": "Reveal green’s three5s/three1s as two equal face groups. The5branch wins against all blue faces; the1branch wins only against blue’s two0s. A single area of36indexed opportunities has an18/36winning half plus6/36winning slice, leaving12/36losses. Show24/36=2/3once, hold for recognition; the narration names the winning routes rather than reciting the sum.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.6",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.6",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.6",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.6"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.configuration",
+        "dice-no-best.claim.orange-green",
+        "dice-no-best.claim.sample-space"
+      ],
+      "frames": {
+        "start": 1018,
+        "end": 1252
+      },
+      "sceneType": "orange-green-weighted",
+      "objective": "Keep the original orange four2s/two6s. Its6branch is one third of face space and wins against every green face:12/36. Its2branch is two thirds, winning against the green1half:12/36more. Twelve2-versus5pairs lose. Show24/36=2/3once; same weighted grammar, changed matchup—not a second grid of calculations.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.7",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.7",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.7",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.7"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.yellow-orange"
+      ],
+      "frames": {
+        "start": 1252,
+        "end": 1338
+      },
+      "sceneType": "yellow-returns",
+      "objective": "Yellow returns beside the unchanged orange; the apparently strongest reply itself has a counter. Accumulated relation starts closing.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.8",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.8",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.8",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.8"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.cycle",
+        "dice-no-best.claim.not-guaranteed"
+      ],
+      "frames": {
+        "start": 1338,
+        "end": 1552
+      },
+      "sceneType": "possible-loss",
+      "objective": "Each earlier2/3label returns only after its proof; losing outcomes remain. A single marked possible loss prevents guarantee inference.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    },
+    {
+      "id": "dice.production.9",
+      "sourceVisualPlanId": "dice-no-best.asset.choose-second.visual.9",
+      "narrativeBeatId": "dice-no-best.asset.choose-second.beat.9",
+      "scriptSegmentIds": [
+        "dice-no-best.asset.choose-second.script.9"
+      ],
+      "claimIds": [
+        "dice-no-best.claim.cycle",
+        "dice-no-best.claim.no-best"
+      ],
+      "frames": {
+        "start": 1552,
+        "end": 1754
+      },
+      "sceneType": "counter-choice-circle",
+      "objective": "Close the labelled counter-choice circle with the same four identities; resolve into opponent-dependent advantage, no spoken CTA.",
+      "onScreenText": [],
+      "animationIntent": "Persistent tactile die identities; six faces unfold into weighted possibilities, losing outcomes remain, then same objects close the counter-choice circle.",
+      "transitionIntent": "Move the same four dice to focus the new opponent; retain unused choices at smaller scale.",
+      "audioIntent": "Exact approved af_heart unit atspeed1 with measured comprehension gaps; original quiet placement cues, no music/CTA."
+    }
+  ],
+  "assets": [
+    {
+      "id": "dice.original-graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original software cube/weighted proof renderer",
+        "rights": "Project-owned code artwork",
+        "notes": "Exact six-plane labels; orthographic projection and illustrative movement, not physical roll simulation or data.",
+        "evidence": "content-intelligence/cycles/cycle-14/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "dice.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Manrope Fontsource5.3.0",
+        "rights": "SIL OFL1.1",
+        "notes": "Licensed existing type",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "dice.narration",
+      "kind": "audio",
+      "path": "public/audio/dice/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache2.0model terms",
+        "notes": "Exact approved128-word units",
+        "evidence": "src/production/narration/dice.json"
+      }
+    },
+    {
+      "id": "dice.placement",
+      "kind": "audio",
+      "path": "public/audio/dice/tactile.wav",
+      "provenance": {
+        "origin": "Magnivis deterministic damped noise/oscillator",
+        "rights": "Original project-owned sound",
+        "notes": "Quiet illustrative cues",
+        "evidence": "src/production/narration/dice-soundscape.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/dice.en.vtt",
+    "captionPlanId": "caption-plan.dice.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "1a26ce4831bcff8c0a7cc60fccf2cf74d0aa6c6583d5496f2959bf76f21e89d2",
+    "generatorId": "generator.dice-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact128-word source identity.",
+    "Fixed die values, correct 4/6,4/6,18+6=24/36,12+12=24/36 proofs, retained12losses.",
+    "Counter-choice arrows yellow→blue→green→orange→yellow; no all-pairs2/3claim or guaranteed win.",
+    "Separate full rendered-sequence chronological editorial review and every caption midpoint.",
+    "Full decode, measured audio, typography fit and four local profile preflights; no inferred subjective listening/device pass.",
+    "Stop AHMET — CYCLE14 MASTER REVIEW; no publication preparation or external actions."
+  ]
+}

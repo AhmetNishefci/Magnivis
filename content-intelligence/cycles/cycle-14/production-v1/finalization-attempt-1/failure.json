@@ -1,0 +1,5 @@
+{
+  "stage": "Before any media registration",
+  "cause": "Finalizer referenced the V2 diagnostic path after the V3 diagnostic had been generated. Prior attempt source-binding/QA copies preserved here.",
+  "correction": "Use exact V3 path and perform input/media preflight before writing finalization receipts. No media, script, approval or journal change from the failure."
+}

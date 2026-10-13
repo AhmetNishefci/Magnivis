@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "cues": [
+    {
+      "id": "dice-cue-1",
+      "transcript": "Pick a die. Higher number wins. Whatever you choose, I can pick one with better odds.",
+      "file": "audio/dice/narration/cue-1.wav",
+      "start": 0,
+      "duration": 5.375,
+      "beatIndex": 0,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.1",
+      "samples": 129000,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-2",
+      "transcript": "Every face has an equal chance in this puzzle, and neither roll affects the other.",
+      "file": "audio/dice/narration/cue-2.wav",
+      "start": 6.2,
+      "duration": 5.125,
+      "beatIndex": 1,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.2",
+      "samples": 123000,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-3",
+      "transcript": "Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces out of six: two-thirds.",
+      "file": "audio/dice/narration/cue-3.wav",
+      "start": 11.833333333333334,
+      "duration": 8.475,
+      "beatIndex": 2,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.3",
+      "samples": 203400,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-4",
+      "transcript": "But blue has four fours, so it has better odds against yellow.",
+      "file": "audio/dice/narration/cue-4.wav",
+      "start": 21.233333333333334,
+      "duration": 4.2,
+      "beatIndex": 3,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.4",
+      "samples": 100800,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-5",
+      "transcript": "Switch to blue? Green’s fives beat every blue face. Its ones still beat blue’s zeros.",
+      "file": "audio/dice/narration/cue-5.wav",
+      "start": 26.233333333333334,
+      "duration": 5.9,
+      "beatIndex": 4,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.5",
+      "samples": 141600,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-6",
+      "transcript": "Then orange counters green: its sixes beat everything, and its twos beat green’s ones.",
+      "file": "audio/dice/narration/cue-6.wav",
+      "start": 33.93333333333333,
+      "duration": 5.975,
+      "beatIndex": 5,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.6",
+      "samples": 143400,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-7",
+      "transcript": "And yellow still counters orange.",
+      "file": "audio/dice/narration/cue-7.wav",
+      "start": 41.733333333333334,
+      "duration": 2.45,
+      "beatIndex": 6,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.7",
+      "samples": 58800,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-8",
+      "transcript": "Every reply shown has those same two-thirds odds. That’s an advantage, not a guaranteed win.",
+      "file": "audio/dice/narration/cue-8.wav",
+      "start": 44.6,
+      "duration": 6.525,
+      "beatIndex": 7,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.8",
+      "samples": 156600,
+      "sampleRate": 24000
+    },
+    {
+      "id": "dice-cue-9",
+      "transcript": "The advantages form a circle. There’s no best die in this set—just a better matchup.",
+      "file": "audio/dice/narration/cue-9.wav",
+      "start": 51.733333333333334,
+      "duration": 5.625,
+      "beatIndex": 8,
+      "sourceScriptSegmentId": "dice-no-best.asset.choose-second.script.9",
+      "samples": 135000,
+      "sampleRate": 24000
+    }
+  ],
+  "durationFrames": 1754,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 58.46666666666667
+  },
+  "measuredNarrationSeconds": 49.650000000000006,
+  "provenance": {
+    "provider": "kokoro-local",
+    "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "voiceId": "af_heart",
+    "speed": 1,
+    "generatedAt": "2026-10-13T13:53:35.111Z",
+    "approvedScriptSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+    "cueArtifacts": [
+      {
+        "id": "dice-cue-1",
+        "sha256": "0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0"
+      },
+      {
+        "id": "dice-cue-2",
+        "sha256": "ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5"
+      },
+      {
+        "id": "dice-cue-3",
+        "sha256": "a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba"
+      },
+      {
+        "id": "dice-cue-4",
+        "sha256": "6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb"
+      },
+      {
+        "id": "dice-cue-5",
+        "sha256": "928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82"
+      },
+      {
+        "id": "dice-cue-6",
+        "sha256": "56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9"
+      },
+      {
+        "id": "dice-cue-7",
+        "sha256": "b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708"
+      },
+      {
+        "id": "dice-cue-8",
+        "sha256": "31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3"
+      },
+      {
+        "id": "dice-cue-9",
+        "sha256": "b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b"
+      }
+    ]
+  }
+}

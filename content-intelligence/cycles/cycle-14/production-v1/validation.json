@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-13T14:24:53.411105Z",
+  "passed": true,
+  "repositoryCheck": {
+    "command": "VITEST_MAX_WORKERS=2 pnpm check",
+    "exitCode": 0,
+    "testFilesPassed": 53,
+    "testsPassed": 501,
+    "durationSeconds": 86.16,
+    "evidence": {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/check-output.json",
+      "sha256": "0170e1d8da3a6339e0d15198805a88c85965dcfc4c47d9ba6fa3406772599dab"
+    }
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "evidence": {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/durability-output.json",
+      "sha256": "b070e26d140cfe520a62170d1a41923a9e34cf24430104cf2e570790cf5d6cfc"
+    }
+  },
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-14/production-v1/master-candidate-v3.json",
+    "sha256": "8b28b241cc98f379e7e072a6188a4b93c5a6e1607ca568c8f268fd2a962d72f7"
+  },
+  "qa": {
+    "path": "content-intelligence/cycles/cycle-14/production-v1/qa/final-report.json",
+    "sha256": "b939ee0547884d0437e2843a2897b7838d41d7bfdfb915ff03a055c68d6ac45f"
+  },
+  "streamInspection": {
+    "path": "content-intelligence/cycles/cycle-14/production-v1/qa/stream-specifications.json",
+    "sha256": "6c4654cdd2932d8abe6aa91b2c531fd1977a30429b714abf8f1149ca1888c6bc"
+  },
+  "mathematicalVerification": {
+    "path": "content-intelligence/cycles/cycle-14/production-v1/mathematical-qa.json",
+    "sha256": "f4ec97146c724ab74394aa1ad4fac53c59f54abf96971a1698db90fe342836d8"
+  },
+  "preflightCompletion": {
+    "path": "content-intelligence/cycles/cycle-14/production-v1/preflight-completion-v2.json",
+    "sha256": "95af70b7136b33a2b7bd9c272fb3a05d388dcef9af9ffae1b58b0ee00f2964cf"
+  },
+  "nativeCycle": {
+    "stage": "master-review",
+    "revision": 13,
+    "masterApproved": false,
+    "publicationAuthorized": false
+  },
+  "limitations": [
+    "Validation is internal readiness, not owner master acceptance or subjective audiovisual/device QA.",
+    "No remote push, main merge, delivery package or external platform action."
+  ]
+}

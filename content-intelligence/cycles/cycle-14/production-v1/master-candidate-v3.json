@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.14",
+  "media": {
+    "id": "media.dde230a6d7bd7533fa2538466a598aa7a4c393011bb71a5fea889e4efe08eb9f",
+    "sha256": "dde230a6d7bd7533fa2538466a598aa7a4c393011bb71a5fea889e4efe08eb9f"
+  },
+  "durationSeconds": 58.46666666666667,
+  "scriptSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-14/production-v1/production-plan.candidate-v3.json",
+    "sha256": "359442f7a0cf9d9994c4eaf65d4a9a577039a1e67938fe8eb09502b3c2bc1d1e"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/dice.json",
+    "sha256": "34b76eee91db64f07dd98f23e3f73750d3167e981765bae95150f7afb96066fd"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/dice.json",
+    "sha256": "56420cf109fbe397da9049bb18aa6f439973e1ea0a80a96d4a436e106b49fe8a"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/youtube.json",
+        "sha256": "09c6ee7c99c9291896d7fe3d9979761fe60a725a74b25bea2fece58c8f135b46"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/preflight/youtube.json",
+        "sha256": "e92fec8cf41491a1b14972bb69a7faebb75cc671c086409323ea3f1c3f8f2992"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/tiktok.json",
+        "sha256": "c6505ed5fe5cc2e632bd558e8703d1499c6b3727064550029a88fdc5c93b52a9"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/preflight/tiktok.json",
+        "sha256": "ce56f69d5636d1afd7c0011aac82abbd6ab012d3b18d522c0e0efd0e4da6bad3"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/instagram.json",
+        "sha256": "bfa20777a49ae0f128b71abbfd1d01aad9d31be6b0553d5af3bfdf3b32a0f76a"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/preflight/instagram.json",
+        "sha256": "93daef9f0668aa6d33e6029602fcb95fae8b44b09a43584dbf97e72d601060a7"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/profiles/facebook.json",
+        "sha256": "a191eba4f9151751cadd940c85510dc1dab312dbed75c1608a817273a438f99e"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/preflight/facebook.json",
+        "sha256": "820db6e8322bfc07aafc853eb75e9d94ec7e140ac551bea20ab88243c2af28ad"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "dice-cue-1",
+      "transcript": "Pick a die. Higher number wins. Whatever you choose, I can pick one with better odds.",
+      "start": 0,
+      "duration": 5.375,
+      "media": {
+        "id": "media.0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0",
+        "sha256": "0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0"
+      }
+    },
+    {
+      "id": "dice-cue-2",
+      "transcript": "Every face has an equal chance in this puzzle, and neither roll affects the other.",
+      "start": 6.2,
+      "duration": 5.125,
+      "media": {
+        "id": "media.ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5",
+        "sha256": "ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5"
+      }
+    },
+    {
+      "id": "dice-cue-3",
+      "transcript": "Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces out of six: two-thirds.",
+      "start": 11.833333333333334,
+      "duration": 8.475,
+      "media": {
+        "id": "media.a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba",
+        "sha256": "a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba"
+      }
+    },
+    {
+      "id": "dice-cue-4",
+      "transcript": "But blue has four fours, so it has better odds against yellow.",
+      "start": 21.233333333333334,
+      "duration": 4.2,
+      "media": {
+        "id": "media.6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb",
+        "sha256": "6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb"
+      }
+    },
+    {
+      "id": "dice-cue-5",
+      "transcript": "Switch to blue? Green’s fives beat every blue face. Its ones still beat blue’s zeros.",
+      "start": 26.233333333333334,
+      "duration": 5.9,
+      "media": {
+        "id": "media.928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82",
+        "sha256": "928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82"
+      }
+    },
+    {
+      "id": "dice-cue-6",
+      "transcript": "Then orange counters green: its sixes beat everything, and its twos beat green’s ones.",
+      "start": 33.93333333333333,
+      "duration": 5.975,
+      "media": {
+        "id": "media.56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9",
+        "sha256": "56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9"
+      }
+    },
+    {
+      "id": "dice-cue-7",
+      "transcript": "And yellow still counters orange.",
+      "start": 41.733333333333334,
+      "duration": 2.45,
+      "media": {
+        "id": "media.b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708",
+        "sha256": "b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708"
+      }
+    },
+    {
+      "id": "dice-cue-8",
+      "transcript": "Every reply shown has those same two-thirds odds. That’s an advantage, not a guaranteed win.",
+      "start": 44.6,
+      "duration": 6.525,
+      "media": {
+        "id": "media.31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3",
+        "sha256": "31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3"
+      }
+    },
+    {
+      "id": "dice-cue-9",
+      "transcript": "The advantages form a circle. There’s no best die in this set—just a better matchup.",
+      "start": 51.733333333333334,
+      "duration": 5.625,
+      "media": {
+        "id": "media.b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b",
+        "sha256": "b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-14/production-v1/qa/final-report.json",
+        "sha256": "b939ee0547884d0437e2843a2897b7838d41d7bfdfb915ff03a055c68d6ac45f"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Exact approved128-word script, af_heart voice and all verified editorial/source/claim/exclusion bytes preserved.",
+    "Yellow[3,3,3,3,3,3],blue[4,4,4,4,0,0],green[1,1,1,5,5,5],orange[2,2,2,2,6,6]; each cube has six permanently assigned faces.",
+    "All four displayed favored replies have24/36wins12/36losses0ties: simple4/6,4/6, then18+6 and12+12weighted winning groups.",
+    "Independent equally likely faces and higher-number rule; illustrative objects and possible loss do not constitute physical testing or random experimental evidence.",
+    "Arrows go from choice to favored reply yellow→blue→green→orange→yellow. No all-pairs2/3claim, loaded dice, guaranteed victory or gambling advice."
+  ],
+  "uncertainties": [
+    "No continuous subjective audiovisual playback/listening tool or native-device test performed. Owner must judge voice naturalness, four fours, sound balance, pacing and whole-video comprehension.",
+    "ASR has homophone, possessive and short-word substitutions; exact source/phoneme input and WAV identity preserved. Recognition is corroboration, not proof of output pronunciation.",
+    "Caption phrase timings authored approximately inside measured full clips; every midpoint geometry inspected, no forced word alignment.",
+    "72browser samples and1s decoded chronology do not establish every-frame or continuous audiovisual quality.",
+    "Four provisional presentation profiles preserve unknown native UI/caption/crop geometry; no private preview or real-device acceptance.",
+    "Proof labels26–31px are smaller than50px speech; legibility and density require actual-phone owner assessment.",
+    "No actual physical dice, fairness experiment, master acceptance, release preparation or platform action."
+  ],
+  "unusualProduction": [
+    "Same large software-projected tactile cubes carry choice, face possibilities, weighted proof and final circle on one original surface.",
+    "Actual typography crowding found internally; first render preserved, proof spacing corrected and actual label overlap regression applied.",
+    "Exact modular af_heart narration with8.82s timeline rounding/holds and original subdued tactile cues; no music or spoken CTA."
+  ]
+}

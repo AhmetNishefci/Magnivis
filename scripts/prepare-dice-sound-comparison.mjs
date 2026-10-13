@@ -1,0 +1,8 @@
+import {createRequire} from 'node:module';
+import {execFileSync} from 'node:child_process';
+import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static'),n=JSON.parse(readFileSync('src/production/narration/dice.json','utf8')),m=JSON.parse(readFileSync('content-intelligence/cycles/cycle-14/production-v1/audio-mastering-v3.json','utf8')),c=n.cues[4],out='artifacts/qa-evidence/dice-cycle14-v3/voice-only-then-full-mix.wav',hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+mkdirSync('artifacts/qa-evidence/dice-cycle14-v3',{recursive:true});
+execFileSync(ffmpeg,['-v','error','-i',`public/${c.file}`,'-ss',String(c.start),'-t',String(c.duration),'-i',m.candidate.path,'-f','lavfi','-t','0.5','-i','anullsrc=r=48000:cl=stereo','-filter_complex',`[0:a]volume=${m.gainDb}dB,aresample=48000,aformat=channel_layouts=stereo[a];[1:a]aresample=48000,aformat=channel_layouts=stereo[b];[a][2:a][b]concat=n=3:v=0:a=1[out]`,'-map','[out]','-c:a','pcm_s16le',out]);
+writeFileSync('content-intelligence/cycles/cycle-14/production-v1/qa/sound-comparison.json',JSON.stringify({enteredAt:new Date().toISOString(),path:out,sha256:hash(out),master:{path:m.candidate.path,sha256:hash(m.candidate.path)},source:{path:`public/${c.file}`,sha256:hash(`public/${c.file}`)},order:['Source green-blue narration at matching mastered gain','0.5seconds silence','Exact mastered green-blue mix'],sourceUnit:c.transcript,scope:'Owner listening diagnostic only. No subjective acceptance or alternate production master.'},null,2)+'\n',{flag:'wx'});

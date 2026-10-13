@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 2,
+  "id": "caption-plan.dice.v1",
+  "revision": 1,
+  "status": "review-required",
+  "creativeDirection": {
+    "id": "creative-direction.dice-no-best.choose-second.v2",
+    "revision": 2,
+    "sha256": "7a2d53d1299562e258e40a0b12fbc45e93c503771047f9266f9eccbcfae1d4c3"
+  },
+  "approvedScriptSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+  "fps": 30,
+  "coverage": "complete-narration",
+  "visualTreatment": {
+    "fontAsset": "@fontsource/manrope@5.3.0/latin-600.css",
+    "fontFamily": "Manrope",
+    "fontSize": 50,
+    "fontWeight": 600,
+    "lineHeight": 1.24,
+    "foreground": "#23343D",
+    "emphasisMethod": "Natural complete spoken phrases; no number karaoke.",
+    "backdrop": "Quiet mineral-grey tabletop below the dice and probability proof.",
+    "animation": "Stable phrase replacement; no moving speech glyphs.",
+    "rendererId": "renderer.dice-puzzle.v1",
+    "rationale": "Speech remains separate from object numbers; two-line50px type is16.7px at360px-width."
+  },
+  "cues": [
+    {
+      "id": "dice-caption-1-1",
+      "sourceNarrationCueId": "dice-cue-1",
+      "startFrame": 0,
+      "endFrame": 26,
+      "lines": [
+        "Pick a die."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-1-2",
+      "sourceNarrationCueId": "dice-cue-1",
+      "startFrame": 26,
+      "endFrame": 65,
+      "lines": [
+        "Higher number wins."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-1-3",
+      "sourceNarrationCueId": "dice-cue-1",
+      "startFrame": 65,
+      "endFrame": 94,
+      "lines": [
+        "Whatever you choose,"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-1-4",
+      "sourceNarrationCueId": "dice-cue-1",
+      "startFrame": 94,
+      "endFrame": 161,
+      "lines": [
+        "I can pick one",
+        "with better odds."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-2-1",
+      "sourceNarrationCueId": "dice-cue-2",
+      "startFrame": 186,
+      "endFrame": 275,
+      "lines": [
+        "Every face has an equal chance",
+        "in this puzzle,"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-2-2",
+      "sourceNarrationCueId": "dice-cue-2",
+      "startFrame": 275,
+      "endFrame": 340,
+      "lines": [
+        "and neither roll",
+        "affects the other."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-3-1",
+      "sourceNarrationCueId": "dice-cue-3",
+      "startFrame": 355,
+      "endFrame": 406,
+      "lines": [
+        "Yellow always rolls three."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-3-2",
+      "sourceNarrationCueId": "dice-cue-3",
+      "startFrame": 406,
+      "endFrame": 496,
+      "lines": [
+        "Orange has four twos",
+        "and two sixes."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-3-3",
+      "sourceNarrationCueId": "dice-cue-3",
+      "startFrame": 496,
+      "endFrame": 585,
+      "lines": [
+        "Yellow wins against",
+        "four faces out of six:"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-3-4",
+      "sourceNarrationCueId": "dice-cue-3",
+      "startFrame": 585,
+      "endFrame": 609,
+      "lines": [
+        "two-thirds."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-4-1",
+      "sourceNarrationCueId": "dice-cue-4",
+      "startFrame": 637,
+      "endFrame": 687,
+      "lines": [
+        "But blue has four fours,"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-4-2",
+      "sourceNarrationCueId": "dice-cue-4",
+      "startFrame": 687,
+      "endFrame": 763,
+      "lines": [
+        "so it has better odds",
+        "against yellow."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-5-1",
+      "sourceNarrationCueId": "dice-cue-5",
+      "startFrame": 787,
+      "endFrame": 816,
+      "lines": [
+        "Switch to blue?"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-5-2",
+      "sourceNarrationCueId": "dice-cue-5",
+      "startFrame": 816,
+      "endFrame": 893,
+      "lines": [
+        "Green’s fives beat",
+        "every blue face."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-5-3",
+      "sourceNarrationCueId": "dice-cue-5",
+      "startFrame": 893,
+      "endFrame": 964,
+      "lines": [
+        "Its ones still beat",
+        "blue’s zeros."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-6-1",
+      "sourceNarrationCueId": "dice-cue-6",
+      "startFrame": 1018,
+      "endFrame": 1078,
+      "lines": [
+        "Then orange counters green:"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-6-2",
+      "sourceNarrationCueId": "dice-cue-6",
+      "startFrame": 1078,
+      "endFrame": 1129,
+      "lines": [
+        "its sixes beat everything,"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-6-3",
+      "sourceNarrationCueId": "dice-cue-6",
+      "startFrame": 1129,
+      "endFrame": 1197,
+      "lines": [
+        "and its twos beat",
+        "green’s ones."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-7-1",
+      "sourceNarrationCueId": "dice-cue-7",
+      "startFrame": 1252,
+      "endFrame": 1326,
+      "lines": [
+        "And yellow still",
+        "counters orange."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-8-1",
+      "sourceNarrationCueId": "dice-cue-8",
+      "startFrame": 1338,
+      "endFrame": 1440,
+      "lines": [
+        "Every reply shown has",
+        "those same two-thirds odds."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-8-2",
+      "sourceNarrationCueId": "dice-cue-8",
+      "startFrame": 1440,
+      "endFrame": 1478,
+      "lines": [
+        "That’s an advantage,"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-8-3",
+      "sourceNarrationCueId": "dice-cue-8",
+      "startFrame": 1478,
+      "endFrame": 1534,
+      "lines": [
+        "not a guaranteed win."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-9-1",
+      "sourceNarrationCueId": "dice-cue-9",
+      "startFrame": 1552,
+      "endFrame": 1612,
+      "lines": [
+        "The advantages form a circle."
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-9-2",
+      "sourceNarrationCueId": "dice-cue-9",
+      "startFrame": 1612,
+      "endFrame": 1679,
+      "lines": [
+        "There’s no best die",
+        "in this set"
+      ],
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    },
+    {
+      "id": "dice-caption-9-3",
+      "sourceNarrationCueId": "dice-cue-9",
+      "startFrame": 1679,
+      "endFrame": 1721,
+      "lines": [
+        "just a better matchup."
+      ],
+      "sourceBoundaryBefore": {
+        "sourceText": "—",
+        "treatment": "phrase-transition",
+        "rationale": "Approved rhetorical dash carried by the spoken phrase transition, exact source reconstruction preserved."
+      },
+      "bounds": {
+        "x": 110,
+        "y": 1430,
+        "width": 770,
+        "height": 150
+      },
+      "presentationIntent": "Authored speech-first phrase grouping; measured whole clips and approximate internal boundaries."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "enteredAt": "2026-10-13T14:05:31.680690Z",
+  "firstRender": {
+    "path": "artifacts/masters/dice-cycle14-candidate-v1.mp4",
+    "sha256": "fc4050ab023db63369334393f54c61d32ce9de61c08831ff6e4964ce5d876a8a"
+  },
+  "firstImplementation": {
+    "path": "content-intelligence/cycles/cycle-14/production-v1/authoring-pass-1/DicePuzzle.tsx",
+    "sha256": "9ba3306c79bdaf87952188865330c84f2aa9c50b4443b8bb137bffb2942f8ec7"
+  },
+  "finding": "Initial geometry QA measured aggregate objects and canvas containment but inherited overlap filter selected scene-text while the new renderer labels use label. A direct label-pair test then found mixed inventory/title and branch-label/count bounding collisions; actual weighted still also showed crowded typography.",
+  "actions": [
+    "Move pair dice30px upward to make inventory space.",
+    "Move two separate inventories15px upward; retain all exact face values.",
+    "Increase lower proof label/count baseline separation11px.",
+    "Change existing QA filter to actual label kind; no new review gate, framework or policy."
+  ],
+  "retainedChoices": [
+    "Same original tabletop/cubes, weighted outcome dots and circle; no script, probabilities, caption wording, voice or claim changes.",
+    "Two proof partitions have distinct half-versus-third branching weights; losing outcomes remain visible."
+  ],
+  "nonGeneralizations": [
+    "No universal layout, font-size, palette or forced visual diversity rule."
+  ],
+  "inspectionLimits": "Rendered still and actual browser geometry; no subjective playback/listening or native device acceptance.",
+  "additionalReview": {
+    "finding": "Complete chronological decoded review of V2 revealed each opponent transition re-used opening positions, creating visible discontinuity and a brief proof/object pile-up. The scene1model disclosure also crowded lower die names. All objects needed to carry their previous positions forward.",
+    "evidence": {
+      "path": "qa/dice-v2/sheet-bindings.json",
+      "sha256": "49cc6e343a5df20e9046b647fd79b11268c8efb7d6c36d0a3643e4e669bd4106"
+    },
+    "secondRender": {
+      "path": "artifacts/masters/dice-cycle14-candidate-v2.mp4",
+      "sha256": "7fbdc5f95cd39ea06e6f4071bdb8af4a149ae5efcfae7c5e88c63dbe5f4801c9"
+    },
+    "secondImplementation": {
+      "path": "content-intelligence/cycles/cycle-14/production-v1/authoring-pass-2/DicePuzzle.tsx",
+      "sha256": "8a47d961e8e12f182286eb3180e75aa1b0cb4c4eb528c193bb77d92551fb4a19"
+    },
+    "actions": [
+      "Interpolate each position and size from its preceding scene, not the opening grid.",
+      "Delay mixed proof to after the new pair settles; arrows form after circle positioning.",
+      "Move model disclosure below initial die names.",
+      "Use Every choice has a counter headline to distinguish existence of a reply from guaranteed outcome."
+    ],
+    "systemLesson": "Actual DOM labels now checked by the existing layout QA; complete chronological review remains necessary for relationship continuity. No new framework or production gate."
+  }
+}

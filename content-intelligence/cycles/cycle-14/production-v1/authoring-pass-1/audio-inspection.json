@@ -1,0 +1,474 @@
+{
+  "checkedAt": "2026-10-13T14:03:14.929Z",
+  "masterPath": "artifacts/masters/dice-cycle14-candidate-v1.mp4",
+  "masterSha256": "fc4050ab023db63369334393f54c61d32ce9de61c08831ff6e4964ce5d876a8a",
+  "method": "Actual decoded master recognized per complete source unit; independent EBU R128 signal/loudness and silence inspection. Machine evidence, not subjective audiovisual review.",
+  "model": "onnx-community/whisper-tiny.en",
+  "narrator": "Kokoro af_heart speed1",
+  "actualMasterCues": [
+    {
+      "id": "dice-cue-1",
+      "exactText": "Pick a die. Higher number wins. Whatever you choose, I can pick one with better odds.",
+      "recognized": " Pick a die, hire number wins. Whatever you choose, I can pick one with better odds.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.18
+          ],
+          "text": " Pick a die, hire number wins."
+        },
+        {
+          "timestamp": [
+            2.18,
+            4.96
+          ],
+          "text": " Whatever you choose, I can pick one with better odds."
+        }
+      ],
+      "start": 0,
+      "duration": 5.375
+    },
+    {
+      "id": "dice-cue-2",
+      "exactText": "Every face has an equal chance in this puzzle, and neither roll affects the other.",
+      "recognized": " Every face has an equal chance in this puzzle, and neither role affects the other.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5
+          ],
+          "text": " Every face has an equal chance in this puzzle, and neither role affects the other."
+        }
+      ],
+      "start": 6.2,
+      "duration": 5.125
+    },
+    {
+      "id": "dice-cue-3",
+      "exactText": "Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces out of six: two-thirds.",
+      "recognized": " Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces of six. Two thirds.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            7.9
+          ],
+          "text": " Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces of six. Two thirds."
+        }
+      ],
+      "start": 11.833333333333334,
+      "duration": 8.475
+    },
+    {
+      "id": "dice-cue-4",
+      "exactText": "But blue has four fours, so it has better odds against yellow.",
+      "recognized": " But Blue has four fours, so it has better odds against yellow.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " But Blue has four fours, so it has better odds against yellow."
+        }
+      ],
+      "start": 21.233333333333334,
+      "duration": 4.2
+    },
+    {
+      "id": "dice-cue-5",
+      "exactText": "Switch to blue? Green’s fives beat every blue face. Its ones still beat blue’s zeros.",
+      "recognized": " Switch to blue, greens fives beat every blue face. It's one still beat blue zeros.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.52
+          ],
+          "text": " Switch to blue, greens fives beat every blue face."
+        },
+        {
+          "timestamp": [
+            3.52,
+            5.48
+          ],
+          "text": " It's one still beat blue zeros."
+        }
+      ],
+      "start": 26.233333333333334,
+      "duration": 5.9
+    },
+    {
+      "id": "dice-cue-6",
+      "exactText": "Then orange counters green: its sixes beat everything, and its twos beat green’s ones.",
+      "recognized": " Then orange counters green. It's sixes beat everything, and it's two's beat green's ones.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            6
+          ],
+          "text": " Then orange counters green. It's sixes beat everything, and it's two's beat green's ones."
+        }
+      ],
+      "start": 33.93333333333333,
+      "duration": 5.975
+    },
+    {
+      "id": "dice-cue-7",
+      "exactText": "And yellow still counters orange.",
+      "recognized": " and yellow still counters orange.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " and yellow still counters orange."
+        }
+      ],
+      "start": 41.733333333333334,
+      "duration": 2.45
+    },
+    {
+      "id": "dice-cue-8",
+      "exactText": "Every reply shown has those same two-thirds odds. That’s an advantage, not a guaranteed win.",
+      "recognized": " Every reply shown has those same two-thirds odds. That's an advantage, not a guaranteed win.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.52
+          ],
+          "text": " Every reply shown has those same two-thirds odds."
+        },
+        {
+          "timestamp": [
+            3.52,
+            6.12
+          ],
+          "text": " That's an advantage, not a guaranteed win."
+        }
+      ],
+      "start": 44.6,
+      "duration": 6.525
+    },
+    {
+      "id": "dice-cue-9",
+      "exactText": "The advantages form a circle. There’s no best die in this set—just a better matchup.",
+      "recognized": " The advantages form a circle. There's no best die in the set, just a better matchup.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " The advantages form a circle."
+        },
+        {
+          "timestamp": [
+            2,
+            5
+          ],
+          "text": " There's no best die in the set, just a better matchup."
+        }
+      ],
+      "start": 51.733333333333334,
+      "duration": 5.625
+    }
+  ],
+  "semanticUnits": [
+    {
+      "id": "dice-cue-1",
+      "fullUnit": "Pick a die. Higher number wins. Whatever you choose, I can pick one with better odds.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000003fc000] silence_start: 2.01683",
+        "[silencedetect @ 0x6000003fc000] silence_end: 2.47654 | silence_duration: 0.459708",
+        "[silencedetect @ 0x6000003fc000] silence_start: 4.92858",
+        "[silencedetect @ 0x6000003fc000] silence_end: 5.375 | silence_duration: 0.446417"
+      ]
+    },
+    {
+      "id": "dice-cue-2",
+      "fullUnit": "Every face has an equal chance in this puzzle, and neither roll affects the other.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002ea8060] silence_start: 0",
+        "[silencedetect @ 0x600002ea8060] silence_end: 0.319333 | silence_duration: 0.319333",
+        "[silencedetect @ 0x600002ea8060] silence_start: 2.64167",
+        "[silencedetect @ 0x600002ea8060] silence_end: 3.025 | silence_duration: 0.383333",
+        "[silencedetect @ 0x600002ea8060] silence_start: 4.61321",
+        "[silencedetect @ 0x600002ea8060] silence_end: 5.125 | silence_duration: 0.511792"
+      ]
+    },
+    {
+      "id": "dice-cue-3",
+      "fullUnit": "Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces out of six: two-thirds.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002208060] silence_start: 0",
+        "[silencedetect @ 0x600002208060] silence_end: 0.333333 | silence_duration: 0.333333",
+        "[silencedetect @ 0x600002208060] silence_start: 1.76775",
+        "[silencedetect @ 0x600002208060] silence_end: 2.20796 | silence_duration: 0.440208",
+        "[silencedetect @ 0x600002208060] silence_start: 4.3795",
+        "[silencedetect @ 0x600002208060] silence_end: 4.83913 | silence_duration: 0.459625",
+        "[silencedetect @ 0x600002208060] silence_start: 7.99337",
+        "[silencedetect @ 0x600002208060] silence_end: 8.475 | silence_duration: 0.481625"
+      ]
+    },
+    {
+      "id": "dice-cue-4",
+      "fullUnit": "But blue has four fours, so it has better odds against yellow.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    \r[silencedetect @ 0x6000002140c0] silence_start: 0",
+        "[silencedetect @ 0x6000002140c0] silence_end: 0.311208 | silence_duration: 0.311208",
+        "[silencedetect @ 0x6000002140c0] silence_start: 3.68371",
+        "[silencedetect @ 0x6000002140c0] silence_end: 4.2 | silence_duration: 0.516292"
+      ]
+    },
+    {
+      "id": "dice-cue-5",
+      "fullUnit": "Switch to blue? Green’s fives beat every blue face. Its ones still beat blue’s zeros.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000030a0000] silence_start: 1.07771",
+        "[silencedetect @ 0x6000030a0000] silence_end: 1.40863 | silence_duration: 0.330917",
+        "[silencedetect @ 0x6000030a0000] silence_start: 3.43058",
+        "[silencedetect @ 0x6000030a0000] silence_end: 3.80842 | silence_duration: 0.377833",
+        "[silencedetect @ 0x6000030a0000] silence_start: 5.45637",
+        "[silencedetect @ 0x6000030a0000] silence_end: 5.9 | silence_duration: 0.443625"
+      ]
+    },
+    {
+      "id": "dice-cue-6",
+      "fullUnit": "Then orange counters green: its sixes beat everything, and its twos beat green’s ones.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000035ac600] silence_start: 0",
+        "[silencedetect @ 0x6000035ac600] silence_end: 0.330917 | silence_duration: 0.330917",
+        "[silencedetect @ 0x6000035ac600] silence_start: 1.8835",
+        "[silencedetect @ 0x6000035ac600] silence_end: 2.37867 | silence_duration: 0.495167",
+        "[silencedetect @ 0x6000035ac600] silence_start: 5.51442",
+        "[silencedetect @ 0x6000035ac600] silence_end: 5.975 | silence_duration: 0.460583"
+      ]
+    },
+    {
+      "id": "dice-cue-7",
+      "fullUnit": "And yellow still counters orange.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003768060] silence_start: 0",
+        "[silencedetect @ 0x600003768060] silence_end: 0.328292 | silence_duration: 0.328292",
+        "[silencedetect @ 0x600003768060] silence_start: 2.00988",
+        "[silencedetect @ 0x600003768060] silence_end: 2.45 | silence_duration: 0.440125"
+      ]
+    },
+    {
+      "id": "dice-cue-8",
+      "fullUnit": "Every reply shown has those same two-thirds odds. That’s an advantage, not a guaranteed win.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600000d78720] silence_start: 0",
+        "[silencedetect @ 0x600000d78720] silence_end: 0.318875 | silence_duration: 0.318875",
+        "[silencedetect @ 0x600000d78720] silence_start: 3.22354",
+        "[silencedetect @ 0x600000d78720] silence_end: 3.73171 | silence_duration: 0.508167",
+        "[silencedetect @ 0x600000d78720] silence_start: 6.03383",
+        "[silencedetect @ 0x600000d78720] silence_end: 6.525 | silence_duration: 0.491167"
+      ]
+    },
+    {
+      "id": "dice-cue-9",
+      "fullUnit": "The advantages form a circle. There’s no best die in this set—just a better matchup.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000028280c0] silence_start: 0",
+        "[silencedetect @ 0x6000028280c0] silence_end: 0.311958 | silence_duration: 0.311958",
+        "[silencedetect @ 0x6000028280c0] silence_start: 1.92883",
+        "[silencedetect @ 0x6000028280c0] silence_end: 2.40358 | silence_duration: 0.47475",
+        "[silencedetect @ 0x6000028280c0] silence_start: 3.82508",
+        "[silencedetect @ 0x6000028280c0] silence_end: 4.14642 | silence_duration: 0.321333",
+        "[silencedetect @ 0x6000028280c0] silence_start: 5.18312",
+        "[silencedetect @ 0x6000028280c0] silence_end: 5.625 | silence_duration: 0.441875"
+      ]
+    }
+  ],
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -21.0 LUFS\n    Threshold: -31.3 LUFS\n\n  Loudness range:\n    LRA:         4.5 LU\n    Threshold: -42.2 LUFS\n    LRA low:   -24.9 LUFS\n    LRA high:  -20.4 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+  "sourceAlignment": {
+    "enteredAt": "2026-10-13T13:56:44.659Z",
+    "method": "Source WAVs decoded at16kHz and recognized locally with Whisper tiny.en segment timestamps. Approximate sentence anchors, not forced word alignment or listening.",
+    "results": [
+      {
+        "id": "dice-cue-1",
+        "exactText": "Pick a die. Higher number wins. Whatever you choose, I can pick one with better odds.",
+        "recognized": " Pick a die, hire number wins. Whatever you choose, I can pick one with better odds.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              2.18
+            ],
+            "text": " Pick a die, hire number wins."
+          },
+          {
+            "timestamp": [
+              2.18,
+              4.96
+            ],
+            "text": " Whatever you choose, I can pick one with better odds."
+          }
+        ],
+        "sourceSha256": "0dedf2864475485b28ba4c6629aebbe2f439a5f576ba0a7b5f5019ca3c9bc4b0"
+      },
+      {
+        "id": "dice-cue-2",
+        "exactText": "Every face has an equal chance in this puzzle, and neither roll affects the other.",
+        "recognized": " Every face has an equal chance in this puzzle, and neither role affects the other.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              5
+            ],
+            "text": " Every face has an equal chance in this puzzle, and neither role affects the other."
+          }
+        ],
+        "sourceSha256": "ea32fc267b34d3f7d26cff0501ec85b321ab9cdd4ac54d3cf0b031618ddc02c5"
+      },
+      {
+        "id": "dice-cue-3",
+        "exactText": "Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces out of six: two-thirds.",
+        "recognized": " Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces of six. Two thirds.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              7.84
+            ],
+            "text": " Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces of six. Two thirds."
+          }
+        ],
+        "sourceSha256": "a0b70ffbf94aa2ce35d34cdffaecb3d57688cf4f628d79ada124eb2cc46af6ba"
+      },
+      {
+        "id": "dice-cue-4",
+        "exactText": "But blue has four fours, so it has better odds against yellow.",
+        "recognized": " But Blue has four fours, so it has better odds against yellow.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4
+            ],
+            "text": " But Blue has four fours, so it has better odds against yellow."
+          }
+        ],
+        "sourceSha256": "6b4fbddbc545cfb554f5bd8f51ea84c83a6956836cef727fd88efaafc1390dcb"
+      },
+      {
+        "id": "dice-cue-5",
+        "exactText": "Switch to blue? Green’s fives beat every blue face. Its ones still beat blue’s zeros.",
+        "recognized": " Switch to blue, greens fives beat every blue face. It's one still beat blue zeros.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3.52
+            ],
+            "text": " Switch to blue, greens fives beat every blue face."
+          },
+          {
+            "timestamp": [
+              3.52,
+              5.56
+            ],
+            "text": " It's one still beat blue zeros."
+          }
+        ],
+        "sourceSha256": "928c776ee5c6cc75f7fa2a94bc6bff46b9dcb17114d4c4e5ac87fceb6c6b3f82"
+      },
+      {
+        "id": "dice-cue-6",
+        "exactText": "Then orange counters green: its sixes beat everything, and its twos beat green’s ones.",
+        "recognized": " Then orange counters green. It's sixes beat everything, and it's twoes beat greens ones.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              2
+            ],
+            "text": " Then orange counters green."
+          },
+          {
+            "timestamp": [
+              2,
+              6
+            ],
+            "text": " It's sixes beat everything, and it's twoes beat greens ones."
+          }
+        ],
+        "sourceSha256": "56493aec1ba06f515520cc260b32bb2cf85035f522c79d89063b4a573aeb26f9"
+      },
+      {
+        "id": "dice-cue-7",
+        "exactText": "And yellow still counters orange.",
+        "recognized": " and yellow still counters orange.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              2
+            ],
+            "text": " and yellow still counters orange."
+          }
+        ],
+        "sourceSha256": "b8e0ef23419b17b2a24a676c80291765d48f0a3fe8d2580d341a46add6d05708"
+      },
+      {
+        "id": "dice-cue-8",
+        "exactText": "Every reply shown has those same two-thirds odds. That’s an advantage, not a guaranteed win.",
+        "recognized": " Every reply shown has those same two-thirds odds. That's an advantage, not a guaranteed win.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3.4
+            ],
+            "text": " Every reply shown has those same two-thirds odds."
+          },
+          {
+            "timestamp": [
+              3.4,
+              6
+            ],
+            "text": " That's an advantage, not a guaranteed win."
+          }
+        ],
+        "sourceSha256": "31925d6636513a76c1a7a3094ff0596ac4f2339fd46125b9e7b6b1e2087c5ff3"
+      },
+      {
+        "id": "dice-cue-9",
+        "exactText": "The advantages form a circle. There’s no best die in this set—just a better matchup.",
+        "recognized": " The advantages form a circle. There's no best die in the set, just a better matchup.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              2
+            ],
+            "text": " The advantages form a circle."
+          },
+          {
+            "timestamp": [
+              2,
+              5
+            ],
+            "text": " There's no best die in the set, just a better matchup."
+          }
+        ],
+        "sourceSha256": "b03f7ca035774509197ce7dc560f10f48534c60a020a017bc1b6d331086edb4b"
+      }
+    ]
+  },
+  "pronunciationInputEvidence": "content-intelligence/cycles/cycle-14/production-v1/phoneme-audit.json",
+  "limitations": [
+    "No callable subjective audio listening or continuous video playback available.",
+    "Whisper recognition cannot certify pronunciation, stress, naturalness or purposeful sound.",
+    "Caption phrases within ASR sentence chunks are authored approximate timing."
+  ],
+  "subjectiveListening": "Required owner review of four fours, two-thirds, zeros, natural sentence phrasing, placement cues, caption synchronization and whole sequence."
+}

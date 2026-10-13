@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {DIE_FACES,DIE_TOPOLOGY,type DieId} from '../src/components/TactileDie';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {creativeDirectionSchema} from '../src/content-assets/creative-direction';
+import {validateInternalProductionPlanReferences} from '../src/production/schema';
+import {validateAdaptiveCaptionPlan} from '../src/captions/adaptive-plan';
+import n from '../src/production/narration/dice.json';
+const b='content-intelligence/cycles/cycle-14/production-v1',e='content-intelligence/cycles/cycle-14/revision-v2',read=(p:string):unknown=>JSON.parse(readFileSync(p,'utf8'));
+const pkg=knowledgePackageSchema.parse(read(`${e}/knowledge-package.ready.json`)),asset=contentAssetSchema.parse(read(`${e}/content-asset.ready.json`)),direction=creativeDirectionSchema.parse(read(`${b}/direction-ready.json`));
+validateInternalProductionPlanReferences(read('src/production/plans/dice.json'),pkg,asset,direction);validateAdaptiveCaptionPlan(read('src/captions/plans/dice.json'),n.cues,n.format,direction,asset);
+assert.equal(sha256Json(asset.script),'4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b');assert.equal(n.cues.map(c=>c.transcript).join(' '),asset.script.segments.map(c=>c.text).join(' '));
+const expected={yellow:[3,3,3,3,3,3],blue:[4,4,4,4,0,0],green:[1,1,1,5,5,5],orange:[2,2,2,2,6,6]};
+for(const id of Object.keys(expected) as DieId[]){assert.deepEqual(DIE_FACES[id],expected[id]);assert.deepEqual([...DIE_TOPOLOGY[id]].sort(),[...expected[id]].sort());}
+const cycle:DieId[]=['yellow','blue','green','orange'];const comparisons=cycle.map((loser,i)=>{const winner=cycle[(i+1)%4]!;const pairs=DIE_FACES[winner].flatMap((a,faceA)=>DIE_FACES[loser].map((z,faceB)=>({faceA,faceB,a,z,win:a>z,tie:a===z})));assert.equal(pairs.filter(p=>p.win).length,24);assert.equal(pairs.filter(p=>!p.win).length,12);assert.equal(pairs.filter(p=>p.tie).length,0);return {winner,loser,wins:24,losses:12,ties:0,probability:'2/3',enumerated:pairs};});
+const gb=comparisons.find(c=>c.winner==='green')!,og=comparisons.find(c=>c.winner==='orange')!;assert.equal(gb.enumerated.filter(p=>p.a===5&&p.win).length,18);assert.equal(gb.enumerated.filter(p=>p.a===1&&p.z===0).length,6);assert.equal(og.enumerated.filter(p=>p.a===6&&p.win).length,12);assert.equal(og.enumerated.filter(p=>p.a===2&&p.z===1).length,12);
+const baseline=read(`${b}/preservation-baseline.json`) as {files:{path:string;sha256:string}[]};const allowed=['docs/ASSET-LICENSES.md','scripts/resolve-qa-video-target.ts'];const failures=baseline.files.filter(r=>!allowed.includes(r.path)&&mediaHash(r.path)!==r.sha256);assert.deepEqual(failures,[]);
+writeFileSync(`${b}/mathematical-qa.json`,JSON.stringify({checkedAt:new Date().toISOString(),passed:true,scriptSha256:sha256Json(asset.script),comparisons,counterChoiceCircle:[...cycle,cycle[0]],weights:{greenBlue:{winning:[18,6],losing:12,rowHeights:[.5,.5],lowerWinningWidth:1/3},orangeGreen:{winning:[12,12],losing:12,rowHeights:[1/3,2/3],lowerWinningWidth:.5}},preservation:{unchangedBaselineFiles:baseline.files.length-allowed.length,authorizedChanges:allowed},limitations:['Illustrative cubes and deterministic motion; no empirical fairness or experimental rolls.','Exhaustive indexedfacepairs prove the ideal independent equally likely model, not physical dice.']},null,2)+'\n');console.log('Dice source/script/geometry multisets,144 relevant face pairs, weighted branches and historical preservation verified.');
