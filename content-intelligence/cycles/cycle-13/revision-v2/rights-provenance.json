@@ -1,0 +1,43 @@
+{
+  "enteredAt": "2026-10-12T23:19:43.043Z",
+  "visualCode": [
+    "src/components/DevilsHoleGlobeV2.tsx",
+    "src/components/DevilsHoleWaterV2.tsx",
+    "src/graphics/ShaderSurface.tsx",
+    "src/production/visuals/devils-hole-shaders.ts",
+    "src/compositions/DevilsHoleV2.tsx"
+  ],
+  "assets": [
+    {
+      "path": "public/images/devils-hole-v2/desert-pool-reconstruction.png",
+      "sha256": "352f8c14500afa1684cbdf230722085290ba12d2a1892a132848351459eb2101",
+      "origin": "Original built-in generated key art",
+      "evidence": "content-intelligence/cycles/cycle-13/revision-v2/image-generation.json",
+      "use": "Illustrative reconstruction only; no generated scientific or actual-event evidence."
+    },
+    {
+      "path": "public/images/devils-hole-v2/nps-2025-07-30-shelf.png",
+      "sha256": "07feff2be4f11402a352ad0cf0b406413ab0c244b4c64a62cb40846f480b92f3",
+      "source": "https://home.nps.gov/common/uploads/pwr/park/deva/D10C86B5-EB00-C7EF-48013FFEDEFC0F1A/D10C86B5-EB00-C7EF-48013FFEDEFC0F1A.png",
+      "sourcePage": "https://home.nps.gov/deva/learn/news/devils-hole-2025-07-29.htm",
+      "credit": "NPS",
+      "rights": "Public-domain official U.S.Government work; asset-specific NPS credit and official policy inspected. No marks.",
+      "notice": "No claim to original U.S. Government works",
+      "use": "Dated July30 following-day observation, not wave footage, immediate before/after or measured removal."
+    },
+    {
+      "path": "src/data/devils-hole-land.json",
+      "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+      "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson",
+      "rights": "Public Domain Natural Earth land geometry; original color/shading/globe motion",
+      "evidence": "content-intelligence/cycles/cycle-13/revision-v2/map-rights.json"
+    }
+  ],
+  "reused": {
+    "font": "Pinned Manrope5.3.0/SIL OFL1.1; exact font hashes and license in production-v1/rights-provenance.json",
+    "narration": "Eleven canonical af_heart WAVs/Apache2.0established model terms unchanged, full-context input corrections retained",
+    "sound": "Existing original local-water/connection WAV unchanged"
+  },
+  "sourceEvidence": "content-intelligence/cycles/cycle-13/revision-v2/source-reinspection.json",
+  "scope": "Candidate revision only; no owner master/platform/publication approval."
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.devils-hole.instagram.delivery-v1",
+  "revision": 1,
+  "platform": "instagram",
+  "surface": "instagram-reels-playback",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-13T09:06:59.176Z",
+  "reviewAfter": "2026-10-20T09:06:59.176Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "provisional",
+    "regions": [
+      {
+        "x": 72,
+        "y": 130,
+        "width": 838,
+        "height": 1510
+      }
+    ],
+    "rationale": "Repository projection only. src/design/safe-areas.ts; conservative internal playback profile, owner Wood Frog playback acceptable; Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "provenance": [
+      {
+        "path": "artifacts/presentation-profiles.json",
+        "sha256": "33d66ce6fee9bbfa4c05720b2270d07319f250d2d0673b1b50856715bd81c2cb"
+      }
+    ]
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy native exclusions; null stays unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy caption geometry; null stays unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No legacy measured crop model; nothing inferred.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "mp4"
+    ],
+    "videoCodecs": [
+      "h264"
+    ],
+    "audioCodecs": [
+      "aac"
+    ],
+    "fps": [
+      30
+    ],
+    "duration": {
+      "minimum": 3,
+      "maximum": 180
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-13/publication/policy-inspection-v1.json",
+        "sha256": "c733b075b5f88f96dcd10a7ef8ad88c9b29fadec4f96621567139270240321a8"
+      },
+      {
+        "path": "docs/PLATFORM-EXPORT-REQUIREMENTS.md",
+        "sha256": "4c2ed465529bf88e6a16571abf1a96fe73726fb434e7194a675e65f8b967d28b"
+      }
+    ],
+    "rationale": "Dated manual-route review; bounded3–180s package envelope. YouTube180s is Shorts cap; other platforms180s is conservative internal bound, not universal cap. Geometry remains provisional/unknown; no live account or processing test."
+  }
+}

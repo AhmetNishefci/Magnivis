@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.12",
+  "topicCandidateId": "topic.cycle12.flip",
+  "enteredAt": "2026-10-11T17:10:28.687Z",
+  "reviewer": "Codex internal evidence review; not owner factual/script/visual approval",
+  "premiseAlignment": {
+    "selectionSha256": "e2965c0224c1fbe73b30258a6a226d0a8fc5545c7930eb3239132a7be0ea8253",
+    "preservesPublishingOpportunity": true,
+    "rationale": "Verified original measurement requirements, controlled rotation and reduced wave response retain the approved vertical-laboratory opportunity. Field-study residual motion bounds the explanation rather than changing its premise."
+  },
+  "packageSha256": "a6f403a456b10d1600413037edc8774dd2c62c431da2a3e6a6188a87d23fed6a",
+  "assetSha256": "00d36cb7f0f16ffa36516a3ae081217b1ee7d3ba653d3ca6b7a05eb3bdf8729f",
+  "scriptSha256": "a1cc265cfe1f8ca836170094ab9692cd942c1886d5b8cb8c38a7c28287dd75ea",
+  "inspections": [
+    {
+      "sourceId": "source.flip-floating-laboratory.history",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines6–22,25; requirements and model studies"
+      ],
+      "supportsClaimIds": [
+        "flip-floating-laboratory.claim.measurement",
+        "flip-floating-laboratory.claim.ballast"
+      ],
+      "limitations": [
+        "Retrospective history; original1963 design paper body not acquired. Do not narrate model tests as full-scale accidents."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-12/development-v1/research/history-inspection.json",
+        "sha256": "e1fff9914223eaa0250faee480d662340a9ae9b637e8c39c6789e890e161bb2a"
+      },
+      "sourceQualityRationale": "First-party former operator account of engineering requirements and development, not an independent second institution."
+    },
+    {
+      "sourceId": "source.flip-floating-laboratory.technical",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines10–13,17–18,21–28"
+      ],
+      "supportsClaimIds": [
+        "flip-floating-laboratory.claim.rotation",
+        "flip-floating-laboratory.claim.ballast",
+        "flip-floating-laboratory.claim.draft",
+        "flip-floating-laboratory.claim.geometry",
+        "flip-floating-laboratory.claim.residual"
+      ],
+      "limitations": [
+        "10m wave / <1m vertical motion observation lacks full conditions; no universal reduction ratio. Geometry is historical platform, not current refit."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-12/development-v1/research/technical-inspection.json",
+        "sha256": "f2ff83ca5e655cf8b1c845419fcffec0ee736515792570a74bfd7e6550f39985"
+      },
+      "sourceQualityRationale": "Former operator technical description; geometry and operations authority."
+    },
+    {
+      "sourceId": "source.flip-floating-laboratory.operation",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines17–26; published26June2012"
+      ],
+      "supportsClaimIds": [
+        "flip-floating-laboratory.claim.rotation",
+        "flip-floating-laboratory.claim.ballast",
+        "flip-floating-laboratory.claim.return"
+      ],
+      "limitations": [
+        "Dated2012 operation; present-tense statements describe then, not current operational status. Several Scripps pages are related sources, not independent replication."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-12/development-v1/research/operation-inspection.json",
+        "sha256": "7e1d016a6e670305ca3288f6809685ca934053c3691a66a12f3a971449da7a07"
+      },
+      "sourceQualityRationale": "First-party operator publication with named administrator and operational account; corroborates controlled flooding and recovery."
+    },
+    {
+      "sourceId": "source.flip-floating-laboratory.radyo",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text"
+      ],
+      "supportsClaimIds": [
+        "flip-floating-laboratory.claim.draft",
+        "flip-floating-laboratory.claim.geometry",
+        "flip-floating-laboratory.claim.residual"
+      ],
+      "limitations": [
+        "Inspected relevant PDF paragraphs, not complete39-page paper. PDF screenshots failed; text successfully inspected. Launch day2June conflicts with Scripps22June: omit exact launch day. Original1963 and1997 paper bodies unavailable; no claim to have read them. Resonance and response depend on conditions. Copyrighted figures/photos not cleared for production."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-12/development-v1/research/radyo-inspection.json",
+        "sha256": "51f3a58c2cfe3d8f40f4ba4e012577f11daf05e4fb5c66091bd500abeb49405d"
+      },
+      "sourceQualityRationale": "Primary field-study account for residual motion and deployments; historical design summary is cited synthesis rather than new engineering test."
+    },
+    {
+      "sourceId": "source.flip-floating-laboratory.waves",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Printedp19/PDFpage index18, extracted lines940–978, particle-motion explanation; earlier deep/shallow-water distinction"
+      ],
+      "supportsClaimIds": [
+        "flip-floating-laboratory.claim.depth"
+      ],
+      "limitations": [
+        "Inspected selected extracted PDF text only; no full108-page inspection. No half-wavelength cutoff or still-water assertion in script. Applies deep-water surface-wave model, not all ocean motion."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-12/development-v1/research/waves-inspection.json",
+        "sha256": "1b38543ba7eda7f3e51cd848f30d14f2d5df223aa5bacbbeb536af859f131280"
+      },
+      "sourceQualityRationale": "Official NOAA/NWS physical-oceanography teaching source supporting general mechanism; not a FLIP performance test."
+    }
+  ],
+  "claims": [
+    {
+      "id": "flip-floating-laboratory.claim.rotation",
+      "statementSha256": "1e32b8f0d4f057fd30847f075d4f4e4faf99abc6e6f5ff727dca0eb94f1e2002",
+      "disposition": "verify",
+      "rationale": "Historical original configuration; a spar buoy, not a powered ship.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "assessment": "Historical original configuration; a spar buoy, not a powered ship.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.operation",
+          "locator": "Extracted body lines17–26; published26June2012",
+          "assessment": "Historical original configuration; a spar buoy, not a powered ship.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.measurement",
+      "statementSha256": "6420c26a27b4f8c74d9fef5469d20b131fef69dc30f6a361ead717b1da4777e6",
+      "disposition": "verify",
+      "rationale": "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.history",
+          "locator": "Extracted body lines6–22,25; requirements and model studies",
+          "assessment": "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.ballast",
+      "statementSha256": "ec3613be3b01635b2afae8525771e58ddedc29ad106b3ce4683ffa67ab111676",
+      "disposition": "verify",
+      "rationale": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.operation",
+          "locator": "Extracted body lines17–26; published26June2012",
+          "assessment": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.history",
+          "locator": "Extracted body lines6–22,25; requirements and model studies",
+          "assessment": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "assessment": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.draft",
+      "statementSha256": "b3a8447480e65b2d99c108d4c99c0eff41e349fd78d6316fe38543f2a0cec621",
+      "disposition": "verify",
+      "rationale": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "assessment": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "assessment": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.geometry",
+      "statementSha256": "a5bc8866d722f8afa5fd12fbdd4eb5a3206e3120a0990753b75293458198b2ea",
+      "disposition": "verify",
+      "rationale": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "assessment": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "assessment": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.depth",
+      "statementSha256": "28dc37a80f9b0fdb445739f93284797679ec2d39c0f96f6103e4b7234289dc63",
+      "disposition": "verify",
+      "rationale": "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.waves",
+          "locator": "Printedp19/PDFpage index18, extracted lines940–978, particle-motion explanation; earlier deep/shallow-water distinction",
+          "assessment": "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.residual",
+      "statementSha256": "78403563e0e38743446edcf2fe8854aa750da20391658ab399e4842051d06995",
+      "disposition": "verify",
+      "rationale": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "assessment": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "assessment": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.return",
+      "statementSha256": "becbde56d200368730c0ce054dfd1557431e40231ab41c0e7f0b54bee1bd8ac9",
+      "disposition": "verify",
+      "rationale": "Historical return operation; do not show compressed air rotating it downward.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.operation",
+          "locator": "Extracted body lines17–26; published26June2012",
+          "assessment": "Historical return operation; do not show compressed air rotating it downward.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.immune",
+      "statementSha256": "50e222c26978c0a04d5fb0d946c947b90b3760713653deeeb18f18d4489e48c4",
+      "disposition": "exclude",
+      "rationale": "Contradicted by actual tilt, oscillation and drift; exclude.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.ratio",
+      "statementSha256": "fd0baa91dcad1a9aaa94b1e8cca1b0c4a7d66f43f093db8a83ed76acbfcd802d",
+      "disposition": "exclude",
+      "rationale": "Conditional observation/design summary is not universal; exclude unqualified ratio.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.launch-day",
+      "statementSha256": "2308ce24994d8c7bd37efdbaac7c5f9f7587cbff69c02ad86e196e95a20a739d",
+      "disposition": "exclude",
+      "rationale": "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "flip-floating-laboratory.claim.present-service",
+      "statementSha256": "ec3dcdbbb57d84247b0c797d908ba8f5e7dafd6ff2d8d39254eef5064133f387",
+      "disposition": "exclude",
+      "rationale": "Scripps describes retirement and future restoration; actual current operations not inspected. Exclude current-service claim.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    }
+  ],
+  "misconceptionSafeguards": [
+    "FLIP is a deliberately rotated spar buoy; no accidental ship sinking or propulsion.",
+    "Acoustic reference problem is the initial specific purpose; narration opens with a bounded general explanation, not a claim that moving instruments cannot measure.",
+    "Flooding controlled by crew and several tanks; diagrams never present a replication procedure.",
+    "Wave-motion attenuation is deep-water surface-wave behavior; no hard cutoff or motionless deep ocean.",
+    "Narrow upper / broader deep geometry and large draft reduce wave responsiveness; no universal quantified performance guarantee.",
+    "Stable is explicitly qualified by drift and tilt; moored and free-drift research are distinct.",
+    "Compressed air expels water for horizontal return, not the downward flip.",
+    "Original1963/1997 articles located but bodies inaccessible; no fabricated inspection. Launch-day conflict excluded.",
+    "No present-service, current ownership or refit completion assertion."
+  ],
+  "comprehensionReview": "Cold viewer sees deliberate upright laboratory before explanatory setup. Moving sensor/reference dilemma supplies why. Same hull changes through transit, ballast, deep shape, waves and residual motion. Final sentence resolves orientation as a measurement tool. The schematic wave overlay supports only qualitative understanding; no resonance formula needed for this short explanation.",
+  "rightsReview": "Original diagrams are the selected visual medium. Scripps brochure diagram and scholarly figures are consultation-only, not cleared or selected production assets. Established licensed Manrope and af_heart are planned, not newly generated. No asset-license entry needed for a research-only reference; record actual future production assets when created.",
+  "careAssessment": {
+    "state": "routine",
+    "rationale": "Historical engineering explanation with sufficient primary operator and actual field-study evidence; excluded date conflict and unsupported absolute claims do not affect premise. No new services, costs, brand deviation or rights exception."
+  },
+  "exceptionalConditions": []
+}

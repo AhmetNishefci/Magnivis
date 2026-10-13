@@ -1,0 +1,48 @@
+/** Read-only Cycle #13 operator handoff validation; no approval or platform action. */
+import {readFileSync} from 'node:fs';
+import {loadMediaRegistry, mediaHash} from '../../../src/artifacts/media';
+import {sha256Json} from '../../../src/content-intelligence/run-schema';
+import {readBoundRecord} from '../../../src/workflow/evidence';
+import {loadCycle, loadProjectCycles} from '../../../src/workflow/store';
+import {validateTopicSelection} from '../../../src/workflow/topic-selection';
+import {validatePremiseSelection} from '../../../src/workflow/premise';
+const root = process.cwd();
+const base = 'content-intelligence/cycles/cycle-13';
+const read = (path: string): Record<string, unknown> => JSON.parse(readFileSync(path, 'utf8'));
+const ensure = (condition: unknown, message: string) => {if (!condition) throw new Error(message);};
+const registry = loadMediaRegistry(root);
+const cycle = loadCycle(root, 'cycle.13', registry);
+const prior = loadCycle(root, 'cycle.12', registry);
+const selection = validateTopicSelection(readBoundRecord(cycle.premise!, root), root);
+validatePremiseSelection(selection, root);
+ensure(cycle.stage === 'premise-review' && cycle.revision === 2 && !cycle.premiseDecision, 'Incorrect owner gate');
+ensure(!cycle.candidate && !cycle.release && !cycle.publicationDecision && !cycle.workInProgress, 'Downstream work or authority invented');
+ensure(cycle.receipts.length === 1 && cycle.receipts[0]!.stage === 'discovery', 'Unexpected development receipt');
+ensure(prior.stage === 'publication-review' && prior.revision === 12 && !prior.publicationDecision, 'Cycle12 journal changed');
+const handoff = read(`${base}/premise-review-controller-handoff.json`);
+ensure(handoff.targetSha256 === sha256Json(selection), 'Owner decision target drift');
+const discovery = read(`${base}/discovery-result.json`);
+ensure(discovery.maximumRounds === 3 && discovery.roundsUsed === 1, 'Discovery budget drift');
+const index = read('content-intelligence/operations/flip-publication-v1/publication-index-v1.json');
+const refs = index.perPlatformRecords as {path: string; sha256: string}[];
+ensure(refs.length === 4, 'Missing platform status');
+const platforms = new Set<string>();
+for (const ref of refs) {
+ const record = readBoundRecord(ref, root) as Record<string, unknown>;
+ platforms.add(record.platform as string);
+ ensure(record.state === 'published-owner-reported' && record.actualPublicationDate === '2026-10-12', 'Owner status/date lost');
+ ensure(record.independentPlatformVerification === false, 'Independent verification invented');
+ for (const key of ['actualEventTime', 'publicationTimeZone', 'publicUrl', 'platformId', 'actualUploadedBytes', 'analytics']) ensure(record[key] === null, `Unknown ${key} invented`);
+ ensure(Array.isArray(record.screenshots) && record.screenshots.length === 0, 'Screenshots invented');
+ readBoundRecord(record.ownerReport as {path: string; sha256: string}, root);
+ readBoundRecord(record.preparedManifest as {path: string; sha256: string}, root);
+}
+ensure(['youtube', 'tiktok', 'instagram', 'facebook'].every(p => platforms.has(p)), 'Wrong platform coverage');
+ensure(mediaHash('artifacts/masters/flip-cycle12-candidate-v1.mp4') === '71cc87c2794de9096569dd6759ad29c6a53b9c027d43b0ef95794bd14a6a45e5', 'Approved master drift');
+const preserved = read(`${base}/historical-preservation.json`);
+ensure(preserved.masterPreserved === true && JSON.stringify(preserved.changed) === '["workflow/project-state.json"]' && JSON.stringify(preserved.missing) === '[]', 'Preservation audit failed');
+const project = read('workflow/project-state.json');
+const publication = project.cycle12Publication as {index: {path: string; sha256: string}; ownerReport: {path: string; sha256: string}};
+readBoundRecord(publication.index, root); readBoundRecord(publication.ownerReport, root);
+const all = loadProjectCycles(root, registry);
+console.log(JSON.stringify({passed: true, gate: 'AHMET — PREMISE REVIEW · Cycle #13', cycleRevision: cycle.revision, selectedId: selection.selectedId, selectionJsonSha256: sha256Json(selection), seriousCandidates: selection.candidates.length, maximumRounds: 3, roundsUsed: 1, allIndependentJournalsReplayed: all.length, cycle12NativeStage: prior.stage, ownerReportedPublishedPlatforms: [...platforms], ownerReportedPublishedOn: '2026-10-12', independentPlatformVerification: false, productionBegun: false, approvedMasterPreserved: true}, null, 2));

@@ -1,0 +1,387 @@
+{
+  "id": "devils-hole-seismic-seiche.asset.connection",
+  "revision": 1,
+  "knowledgePackageId": "devils-hole-seismic-seiche",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Explain the distant-earthquake/local-water connection and its limited, real ecological consequence.",
+  "storyAngle": "An isolated-looking pool responds to a remote earthquake through seismic motion, with a modest consequence for a vulnerable habitat.",
+  "hookId": "devils-hole-seismic-seiche.hook.connection",
+  "selectedClaimIds": [
+    "devils-hole-seismic-seiche.claim.local-event",
+    "devils-hole-seismic-seiche.claim.magnitude",
+    "devils-hole-seismic-seiche.claim.distance",
+    "devils-hole-seismic-seiche.claim.delay",
+    "devils-hole-seismic-seiche.claim.forcing",
+    "devils-hole-seismic-seiche.claim.local-water",
+    "devils-hole-seismic-seiche.claim.distinction",
+    "devils-hole-seismic-seiche.claim.wave-size",
+    "devils-hole-seismic-seiche.claim.shelf",
+    "devils-hole-seismic-seiche.claim.impact"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 45,
+    "maximum": 85
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.1",
+        "type": "factual",
+        "text": "An earthquake nearly four thousand miles away made waves in this Nevada desert pool.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.local-event",
+          "devils-hole-seismic-seiche.claim.distance"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.2",
+        "type": "factual",
+        "text": "On July twenty-ninth, twenty twenty-five, a magnitude eight point eight quake struck off Russia’s Kamchatka Peninsula.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.local-event",
+          "devils-hole-seismic-seiche.claim.magnitude"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.3",
+        "type": "factual",
+        "text": "Twenty-one minutes later, water in Devils Hole began sloshing.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.delay"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.4",
+        "type": "factual",
+        "text": "But seawater hadn’t crossed the ocean into Nevada.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.local-water"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.5",
+        "type": "factual",
+        "text": "Seismic waves traveled through the ground.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.forcing"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.6",
+        "type": "factual",
+        "text": "As the ground moved, water already inside the cave rocked back and forth—like water in a shaken bathtub.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.forcing",
+          "devils-hole-seismic-seiche.claim.local-water"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.7",
+        "type": "factual",
+        "text": "That oscillation is called a seismic seiche, different from an ocean tsunami.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.distinction",
+          "devils-hole-seismic-seiche.claim.forcing"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.8",
+        "type": "factual",
+        "text": "The waves here were about ten inches.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.wave-size"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.9",
+        "type": "factual",
+        "text": "Small, but enough to disturb a shallow shelf where the endangered Devils Hole pupfish feed and spawn.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.shelf",
+          "devils-hole-seismic-seiche.claim.impact"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.10",
+        "type": "factual",
+        "text": "This event removed some material from the shelf. The park described it as a minor disturbance.",
+        "claimIds": [
+          "devils-hole-seismic-seiche.claim.impact"
+        ]
+      },
+      {
+        "id": "devils-hole-seismic-seiche.asset.connection.script.11",
+        "type": "editorial",
+        "text": "An isolated-looking pool can reveal just how connected the ground beneath us really is."
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.1",
+      "label": "understanding-1",
+      "purpose": "Immediate local water motion linked to a distant earthquake. Dry rock and a narrow pool fill the main field; a simple geographic locator shows the remote origin.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.1"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.2",
+      "label": "understanding-2",
+      "purpose": "Brief date, place and magnitude context. Keep the Nevada pool connected to the offshore Kamchatka origin; avoid a disaster montage or numerical overload.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.2"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.3",
+      "label": "understanding-3",
+      "purpose": "Compare earthquake and reported cave response with a compressed 21-minute interval. Not real-time footage or a fabricated monitoring trace.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.3"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.4",
+      "label": "understanding-4",
+      "purpose": "Make existing water identity explicit. No water stream crossing the ocean into Nevada.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.4"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.5",
+      "label": "understanding-5",
+      "purpose": "Show qualitative seismic energy through and along solid Earth. No core-crossing chord or universal fixed route.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.5"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.6",
+      "label": "understanding-6",
+      "purpose": "A near-surface cave cutaway separates ground/wall motion from water rocking. Label exaggerated ground motion and schematic geometry; briefly use the bathtub analogy only if it clarifies coupling.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.6"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.7",
+      "label": "understanding-7",
+      "purpose": "Name the demonstrated oscillation after the causal action. Distinguish it from displaced ocean water without depicting an ocean tsunami arriving at the cave.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.7"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.8",
+      "label": "understanding-8",
+      "purpose": "Give the modest reported ten-inch scale in text/context. Do not depict an unverified measurement convention or borrow the generic two-metre maximum.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.8"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.9",
+      "label": "understanding-9",
+      "purpose": "Move toward the near-surface feeding shelf and a few representative pupfish. Limited food-material disturbance, with no fish deaths or entirely stripped shelf.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.9"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.10",
+      "label": "understanding-10",
+      "purpose": "Show limited material movement and persistence of the habitat. The consulted before/after frames are July 14 and July 30; no invented adjacent observations or removal percentage.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.10"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.beat.11",
+      "label": "understanding-11",
+      "purpose": "Return to the original pool and distant-location connection. Resolve energy travel and local water response; end on understanding, without a generic CTA or cliffhanger.",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.11"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.1",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.1",
+      "objective": "Immediate local water motion linked to a distant earthquake. Dry rock and a narrow pool fill the main field; a simple geographic locator shows the remote origin.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.1"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.distance"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.2",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.2",
+      "objective": "Brief date, place and magnitude context. Keep the Nevada pool connected to the offshore Kamchatka origin; avoid a disaster montage or numerical overload.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.2"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.magnitude"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.3",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.3",
+      "objective": "Compare earthquake and reported cave response with a compressed 21-minute interval. Not real-time footage or a fabricated monitoring trace.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.3"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.delay"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.4",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.4",
+      "objective": "Make existing water identity explicit. No water stream crossing the ocean into Nevada.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.4"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-water"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.5",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.5",
+      "objective": "Show qualitative seismic energy through and along solid Earth. No core-crossing chord or universal fixed route.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.5"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.forcing"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.6",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.6",
+      "objective": "A near-surface cave cutaway separates ground/wall motion from water rocking. Label exaggerated ground motion and schematic geometry; briefly use the bathtub analogy only if it clarifies coupling.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.6"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.7",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.7",
+      "objective": "Name the demonstrated oscillation after the causal action. Distinguish it from displaced ocean water without depicting an ocean tsunami arriving at the cave.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.7"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.distinction",
+        "devils-hole-seismic-seiche.claim.forcing"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.8",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.8",
+      "objective": "Give the modest reported ten-inch scale in text/context. Do not depict an unverified measurement convention or borrow the generic two-metre maximum.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.8"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.wave-size"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.9",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.9",
+      "objective": "Move toward the near-surface feeding shelf and a few representative pupfish. Limited food-material disturbance, with no fish deaths or entirely stripped shelf.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.9"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.shelf",
+        "devils-hole-seismic-seiche.claim.impact"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.10",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.10",
+      "objective": "Show limited material movement and persistence of the habitat. The consulted before/after frames are July 14 and July 30; no invented adjacent observations or removal percentage.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.10"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.impact"
+      ],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    },
+    {
+      "id": "devils-hole-seismic-seiche.asset.connection.visual.11",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.11",
+      "objective": "Return to the original pool and distant-location connection. Resolve energy travel and local water response; end on understanding, without a generic CTA or cliffhanger.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.11"
+      ],
+      "claimIds": [],
+      "notes": "Original explanatory reconstruction, not monitoring footage. A geographic locator is schematic; seismic cues run through/along Earth, not seawater. Near-surface cave geometry and exaggerated ground motion are labeled schematic, with no claimed calibrated displacement or wave period. Reported ten inches is context, not an invented amplitude convention. Shelf persists; no implied complete stripping or fish death."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established Kokoro af_heart. Connected natural English, immediate curiosity, calm physical explanation and proportional ecological consequence. No disaster delivery or unnecessary number recital speed. No narration generated at this stage.",
+    "pronunciationNotes": [
+      "USGS gives seiche as SAYSH /seɪʃ/. Review Kamchatka and Devils Hole in complete speech units during authorized production; no ASR-only pronunciation pass or subjective listening claim."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review; not Ahmet claim/script/visual approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.13",
+      "reviewSha256": "19f8f18135de81e00d06db49c093398c8e5b58ee8901f1d99ea8532c81a12159"
+    },
+    "approvedAt": "2026-10-12",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

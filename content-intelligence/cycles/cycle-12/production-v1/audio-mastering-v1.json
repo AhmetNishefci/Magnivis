@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-11T22:10:57.462Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/flip-render-v1.mp4",
+    "sha256": "5367bcbc17fe53c76ce627b0cc94a5b3ac37efb300f7b555fa6956170fafc1ed",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/flip-cycle12-candidate-v1.mp4",
+    "sha256": "71cc87c2794de9096569dd6759ad29c6a53b9c027d43b0ef95794bd14a6a45e5"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.59",
+    "input_tp": "-8.26",
+    "input_lra": "3.00",
+    "input_thresh": "-34.46",
+    "output_i": "-19.10",
+    "output_tp": "-3.84",
+    "output_lra": "2.80",
+    "output_thresh": "-29.97",
+    "normalization_type": "dynamic",
+    "target_offset": "0.10"
+  },
+  "gainDb": 4.59,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

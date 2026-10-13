@@ -1,0 +1,58 @@
+{
+  "inspectedAt": "2026-10-11T22:37:30.946874+00:00",
+  "method": "Official article-body inspection; Instagram body fetched publicly and parsed. TikTok indexed article text distinguished from inaccessible live body; no account access.",
+  "sources": [
+    {
+      "key": "youtube-duration",
+      "url": "https://support.google.com/youtube/answer/15424877?hl=en",
+      "access": "official-body-inspected",
+      "finding": "Square/vertical uploads up to 180 seconds qualify as Shorts. Shorts over one minute with an active Content ID claim are globally blocked. No platform copyright processing tested."
+    },
+    {
+      "key": "instagram-duration",
+      "url": "https://about.instagram.com/features/reels",
+      "access": "official-body-inspected-via-public-HTTP-200",
+      "finding": "Hero describes up to 3 minutes and gallery upload. FAQ allows recording/editing up to 20 minutes; above 3 minutes not recommended to new audiences. Distinct statements preserved. This60.395s file is below both thresholds; this package uses conservative180s internal envelope, not a universal maximum.",
+      "body": "content-intelligence/cycles/cycle-12/publication/policy-sources/instagram-reels-official-body.txt"
+    },
+    {
+      "key": "tiktok-duration",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/creator-tools-on-tiktok?lang=nl",
+      "access": "official-indexed-article-text; live redirects to JS-only TikTok Support shell",
+      "finding": "Indexed official TikTok Studio web Upload section lists MP4/WebM, at least720x1280, up to30minutes, under10GB. Actual current body/account acceptance unverified; moderate confidence. Local export180s is bounded conservative internal envelope, not verified platform maximum. File60.395s meets indexed instructions; live confirmation required before manual release."
+    },
+    {
+      "key": "facebook-duration",
+      "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+      "access": "official-body-inspected",
+      "finding": "June17/July14,2025 announcement: unified videos as Reels have no length/format restrictions; phased rollout to profiles/Pages. Actual Page rollout/controls unverified. Local180s envelope bounded to this package; no finite universal Facebook cap asserted."
+    },
+    {
+      "key": "youtube-cover",
+      "url": "https://support.google.com/youtube/answer/72431?hl=en",
+      "access": "official-body-inspected",
+      "finding": "Current instructions support custom Shorts PNG/JPG thumbnail in computer Studio for verified accounts, 9:16 preferred;2160x3840 recommended, minimum640pxheight, desktop50MB. Existing1080x1920 decoded PNG meets minimum but below preferred size; actual control and native crops unknown."
+    },
+    {
+      "key": "youtube-ai",
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en",
+      "access": "official-body-inspected",
+      "finding": "Current AI use control disclosed in Attributes; realistic or materially altered content rules. Stock af_heart is not a real-person impersonation. Recommend Yes for transparent synthetic narration; no mandatory classification/account setting inferred."
+    },
+    {
+      "key": "meta-ai",
+      "url": "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+      "access": "official-body-inspected",
+      "finding": "Realistic-sounding digitally created audio disclosure tool; recommend available AI disclosure on; actual wording/control untested."
+    }
+  ],
+  "masterDurationSeconds": 60.395,
+  "durationResult": {
+    "youtube": "eligible",
+    "instagram": "eligible; below both official page durations",
+    "facebook": "eligible in announced unified flow; live Page flow unverified",
+    "tiktok": "eligible against official indexed web instructions; current live-body/account confirmation outstanding"
+  },
+  "knownCollisions": [],
+  "externalActions": []
+}

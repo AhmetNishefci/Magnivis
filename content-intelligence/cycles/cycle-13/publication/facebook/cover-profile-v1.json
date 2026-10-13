@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.devils-hole.facebook.cover-v1",
+  "revision": 1,
+  "platform": "facebook",
+  "surface": "facebook-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-13T09:06:59.176Z",
+  "reviewAfter": "2026-10-20T09:06:59.176Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Exact static canvas/bounds checked; platform composition not measured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail UI geometry unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native static-cover overlay geometry unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native grid/profile/feed/search crop unknown; no rectangle invented.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-13/publication/qa/selected-cover-v1.json",
+        "sha256": "a4c8e9bf38d87de634d21995c615936246c141807875bf35c2af9eb99689da3e"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-13/publication/policy-inspection-v1.json",
+        "sha256": "c733b075b5f88f96dcd10a7ef8ad88c9b29fadec4f96621567139270240321a8"
+      }
+    ],
+    "rationale": "Existing exact1080x1920 decoded PNG reference or matching native frame; account/selector/crops untested."
+  }
+}

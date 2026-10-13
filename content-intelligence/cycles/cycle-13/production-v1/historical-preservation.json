@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-12T22:54:06.237256Z",
+  "baselineFiles": 4682,
+  "changes": [
+    {
+      "path": "artifacts/media-catalog.json",
+      "baselineSha256": "0c45fca9f78e3178a2f04ba742c15b8647279ba0e54fbc8a7609d41bed4b942b",
+      "currentSha256": "b09802f7339869f4c6d9108164fc49a702381d84c1843630ec0e93bc15d7bb38",
+      "reason": "Append-only canonical media registration"
+    },
+    {
+      "path": "docs/ASSET-LICENSES.md",
+      "baselineSha256": "bcbd4e28f83cb0bddf3d621f5734bf2dc63f645a3a6bd45b7c427439972c7c48",
+      "currentSha256": "d2e32bf4217f313a67f92aa2869de57e274e243570b126d157c7bca3aac5a77d",
+      "reason": "Additive Cycle13 production rights"
+    },
+    {
+      "path": "workflow/cycles/cycle.13/state.json",
+      "baselineSha256": "d563933d2f93e380baf1af48bafdcfaad6c8bc0fab20b36d2693e179bab02527",
+      "currentSha256": "bb6dd7550f22a3143764732093c9b05fdd562c1057614ee61891e50240b37a06",
+      "reason": "Native production completion to Master Review only"
+    },
+    {
+      "path": "workflow/project-state.json",
+      "baselineSha256": "d47afcdbbdaed23949b70033b0a655a080a498637b0a91c8e793fe804f003feb",
+      "currentSha256": "5d084033689def5ad47e8b84d517e737f5b885e0d55366bc1e8dff6401ff6ff4",
+      "reason": "Current owner-approved production scope and Master Review index"
+    }
+  ],
+  "missing": [],
+  "unexpected": [],
+  "catalogPriorEntriesBytesPreserved": true,
+  "catalogPriorPayloadReconstructedSha256": "0c45fca9f78e3178a2f04ba742c15b8647279ba0e54fbc8a7609d41bed4b942b",
+  "passed": true
+}

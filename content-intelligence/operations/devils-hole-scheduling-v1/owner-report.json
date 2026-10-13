@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.13",
+  "evidenceBasis": "explicit-owner-message",
+  "recordedAt": "2026-10-13T10:04:42.698Z",
+  "recordedAtBasis": "Record-entry time only. Owner supplies scheduled date 2026-10-13; exact time/timezone/scheduling-action time and actual publication date/time unknown.",
+  "instruction": "# MAGNIVIS — Cycle #13 Completion, Scheduling Record & Git Synchronization\n\n## Context\n\nThe owner has approved Cycle #13 Revision 2 and manually scheduled the video on all four platforms for **October 13, 2026**.\n\nPlatforms:\n- YouTube Shorts\n- TikTok\n- Instagram Reels\n- Facebook Reels\n\nApproved master:\n`artifacts/masters/devils-hole-cycle13-candidate-v2.mp4`\n\nThis task concerns **Cycle #13 completion and repository synchronization only**.\n\nDo not perform editorial-strategy work in this session.\n\n## 1. Inspect repository state\n\nRead `AGENTS.md` and relevant canonical repository documentation.\n\nInspect:\n\n- Current branch\n- Working tree status\n- Uncommitted changes\n- Untracked files\n- Recent commits\n- Local and remote branch synchronization\n- Cycle #13 production and publication artifacts\n\nDetermine why completed work has not yet been committed or pushed, if that is the case.\n\nDo not assume that all existing uncommitted changes belong to Cycle #13.\n\nDo not discard, overwrite, or accidentally include unrelated work.\n\n## 2. Record Cycle #13 scheduling\n\nUpdate the canonical Operations/publication records with the following owner-confirmed information:\n\n- Cycle: #13\n- Approved master: Revision 2\n- Scheduled date: `2026-10-13`\n- Platforms: YouTube Shorts, TikTok, Instagram Reels, Facebook Reels\n- Status: `OWNER-REPORTED SCHEDULED`\n- Scheduling performed manually by the owner\n\nExact scheduling times, publication URLs, post IDs, and live publication status remain unknown unless supported by existing evidence.\n\nDo not fabricate or infer missing information.\n\nDo not mark the video as published.\n\nPreserve the approved master, verified claims, research, licensing evidence, narration, and historical artifacts.\n\n## 3. Validate completed work\n\nRun the appropriate repository validation, including relevant tests, type checking, linting, delivery checks, and artifact-integrity checks.\n\nConfirm that Cycle #13 production, publication packages, and scheduling records are consistent.\n\nIf validation fails, investigate and resolve issues within the authorized scope.\n\nDo not modify approved creative content without owner authorization.\n\n## 4. Commit and push\n\nAfter validation:\n\n1. Identify the completed, validated, authorized changes belonging to Cycle #13 and any other already-approved production work.\n2. Preserve all existing historical records and artifacts.\n3. Stage only the appropriate files.\n4. Create clear, meaningful Git commit(s).\n5. Push the commits to the appropriate existing remote branch, following the repository's established workflow.\n6. Verify that the local branch and remote branch contain the intended commits.\n7. Confirm the working tree is clean, or explicitly report any remaining unrelated changes.\n\nDo not force-push, rewrite history, delete work, or merge unrelated changes.\n\nIf there are conflicting changes from the separate editorial-strategy session, preserve them and stop for owner review rather than overwriting them.\n\nIf any required synchronization step is blocked, report the exact blocker.\n\n## 5. Keep editorial strategy separate\n\nAnother Codex session is responsible for:\n\n- Universal creative vision\n- The 30-video inspiration library\n- Broader topic and curiosity discovery\n- Opening and ending philosophy\n- Editorial discovery calibration\n\nDo not modify, integrate, or approve that work in this session.\n\nDo not begin Cycle #14 discovery until the strategy review has been resolved and its approved changes, if any, have been integrated.\n\n## 6. Final report\n\nReport:\n\n1. Cycle #13 final recorded status.\n2. Files and artifacts updated.\n3. Validation results.\n4. Git commits created, including hashes.\n5. Remote push result.\n6. Local and remote synchronization status.\n7. Remaining unknowns or blockers.\n8. Whether the production repository is ready for the next authorized cycle.\n\n**Stop after completing and verifying the repository synchronization.**\n\nNo uploading, rescheduling, publishing, or other platform actions.\n\n**Magnivis — See the unimaginable.**\n",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledDate": "2026-10-13",
+  "scheduledDateBasis": "explicit-owner-message",
+  "scheduledBy": "owner-manual",
+  "publication": "unknown",
+  "independentPlatformVerification": false,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "scheduledFor": null,
+  "schedulingTimeZone": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "intendedMaster": {
+    "path": "artifacts/masters/devils-hole-cycle13-candidate-v2.mp4",
+    "media": {
+      "id": "media.03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+      "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92"
+    },
+    "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92"
+  },
+  "existingPreparedRelease": {
+    "path": "content-intelligence/cycles/cycle-13/publication/release-v1.json",
+    "sha256": "59efbd8cc23833a13661a722b7353d274d3315b7676e0f36c8787f13a43cc972"
+  },
+  "existingPublicationDecision": null,
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-13/publication/master-approval-v1.json",
+    "sha256": "455e8cb2aade7700fe75e7ca570e58637ae946c0793446862660ae459ade28fc"
+  },
+  "nativeWorkflow": {
+    "stage": "publication-review",
+    "revision": 17,
+    "unchanged": true
+  },
+  "limitations": [
+    "Owner scheduling report only, not independently verified publication.",
+    "Validated prepared release V1 for master V2 and approved master are intended artifacts; actual uploaded bytes, cover selection, applied settings and posted comments unverified.",
+    "No native QA completion, exact-release authorization or acceptance of presentation uncertainty inferred from scheduling.",
+    "Publication status is unknown, not an invented claim that it remains unpublished."
+  ],
+  "nativeRecordReconciliation": "Existing operations owner-report/per-platform scheduling evidence pattern retained. Typed PublicationRecord cannot represent scheduling and requires actual publication identity/evidence. Native authorized-release observations require a persisted exact publication decision; none supplied. Preserve cycle13 journal and register this owner report separately rather than fabricate approval, QA or publication."
+}

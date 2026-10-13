@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "sources": 5,
+  "sourceRecords": 207,
+  "postRecords": 38,
+  "nativeMetricSnapshotsCreated": 0,
+  "warnings": [
+    "Collection/export times and source timezones unknown; no strict MetricSnapshot or validated LearningSignal is created.",
+    "Meta Lifetime rows are not fixed-window metrics. Filename range selects content; capture time remains unknown.",
+    "Prepared release candidates do not establish exact uploaded variant/media or retrospective authority.",
+    "Facebook interval units/denominators unverified; raw ratio cells retained without seconds-indexed interpretation.",
+    "TikTok screenshots absent; no TikTok CSV/native observations in this intake.",
+    "YouTube total Watch time (hours) differs from sum of per-video rows; preserve both, do not repair.",
+    "YouTube per-post Views differ from native aggregate/daily total; preserve the discrepancy without imputing missing views.",
+    "YouTube Chart contains selected series only; do not add Chart and Totals or infer missing per-video daily series."
+  ]
+}

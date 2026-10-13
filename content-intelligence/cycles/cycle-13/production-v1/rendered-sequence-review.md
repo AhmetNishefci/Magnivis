@@ -1,0 +1,15 @@
+# Cycle13 — exact rendered-sequence editorial review
+
+Candidate SHA-256: `d2b59496ac486833ca7f59153756d0e1b3aa6ae5df87713bb4dfa0ff1249bfa1`. Internal review entered 2026-10-12T22:50:09.791217+00:00; this is not owner master approval.
+
+Inspected all60 chronological samples (0–59 seconds) in order across four decoded sheets, all26 caption midpoints, scene/motion sheets, contact sheet and360px phone simulation. Enlarged opening, ground/water and shelf browser views supported the comparison. No callable subjective audio listening or continuous audiovisual playback was available; full decode and ASR do not stand in for those.
+
+The opening pairs the earthquake location with a rocky Nevada pool at frame zero. It states the distance/place contradiction before introducing numbers. The same locator/pool remains through18.6s while date, magnitude and delay supply context. That repetition keeps the question stable, but it is a restrained opening treatment: whether its pacing and visual sophistication meet the intended premium standard remains an owner viewing judgment, not a retention conclusion.
+
+At18.7s existing cave water becomes explicit;22.3–25.1s shows seismic energy through/along an outer Earth band. At25.2–32.3s the rock marker moves against a stationary reference while the existing water rocks. The motion is qualitative and ground displacement explicitly exaggerated. The repeated cave view at32.5–40.4s names the already-demonstrated oscillation, distinguishes ocean tsunami and gives the reported modest height; it serves understanding rather than introducing unrelated evidence cards.
+
+At40.7s the camera enlarges the near-surface shelf and representative fish. The first internal render had a nested-SVG camera bug that shrank this view instead: corrected at the basin viewport, checked in the full revised sequence and phone sheet. A few material particles move at47.3s while the shelf, material and fish remain. The consulted USGS/USFWS fish image prompted a rounded-tail schematic correction. No observed count, removal percentage or mortality is implied.53.9–59.9s returns to the first connection: distant energy, local water. This resolves what traveled and what stayed local without a generic CTA.
+
+The original scene code realizes geographic, physical and ecological scales rather than replacing nouns in the FLIP diagram. Existing rendered-review guidance was sufficient; the camera defect reflected implementation, not missing policy. The smallest reusable correction is the basin's explicit camera viewport plus the existing additive parameterized technical QA. No new style mandate, narrator audition, duration rule or workflow gate.
+
+Stopped internal refinement after corrected explanatory scale/motion and accurate schematic fish detail. Remaining judgments are narration stress/prosody in the actual audio, purposeful sound, continuous pacing/caption synchronization, opening strength and overall finish. All require Ahmet's exact-video review. Native device/UI/crop evidence remains absent and four profile preflights are provisional.

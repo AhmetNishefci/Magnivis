@@ -1,0 +1,276 @@
+{
+  "sources": [
+    {
+      "key": "history",
+      "organization": "Scripps Institution of Oceanography / Marine Physical Laboratory",
+      "title": "FLIP History",
+      "type": "university",
+      "url": "https://scripps.ucsd.edu/ships/flip/history",
+      "locator": "Extracted body lines6–22,25; requirements and model studies",
+      "text": "Institutional history identifies fine acoustic bearing, phase and amplitude research. Submarine yaw limited bearing fluctuation measurements even at300ft. A manned spar buoy connected deep hydrophones to an above-water optical benchmark and electronics laboratory. Controlled flooding required subdivided hard tank and ballast following model tests; unrestricted flooding caused plunging in models.",
+      "quality": "First-party former operator account of engineering requirements and development, not an independent second institution.",
+      "limits": [
+        "Retrospective history; original1963 design paper body not acquired. Do not narrate model tests as full-scale accidents."
+      ],
+      "body": "research/flip-primary-bodies3.json"
+    },
+    {
+      "key": "technical",
+      "organization": "Scripps Institution of Oceanography / Marine Physical Laboratory",
+      "title": "FLIP Technical Details",
+      "type": "technical-documentation",
+      "url": "https://scripps.ucsd.edu/ships/flip/technical",
+      "locator": "Extracted body lines10–13,17–18,21–28",
+      "text": "The355ft non-propelled manned spar buoy was towed horizontally and rotated through ballast changes. Vertical stern depth300ft. Hull diameter6.5m at91–49m depths tapered to4m at20m. Operator attributes reduced wave responsiveness to diameter change; reports a particular vertical-motion observation. Free drifting or moored use permitted; equipment could mount along submerged hull and booms.",
+      "quality": "Former operator technical description; geometry and operations authority.",
+      "limits": [
+        "10m wave / <1m vertical motion observation lacks full conditions; no universal reduction ratio. Geometry is historical platform, not current refit."
+      ],
+      "body": "research/flip-primary-bodies3.json"
+    },
+    {
+      "key": "operation",
+      "organization": "Scripps Institution of Oceanography",
+      "title": "Scripps’ one-of-a-kind FLIP turns50",
+      "type": "university",
+      "url": "https://scripps.ucsd.edu/news/scripps-one-kind-flip-turns-50",
+      "locator": "Extracted body lines17–26; published26June2012",
+      "text": "Operator account: horizontally towed355ft platform; crew directed water into several ballast tanks for slow rotation.300ft submerged in vertical state, upper section with laboratory and command spaces. Compressed air expelled ballast water to return horizontal.",
+      "quality": "First-party operator publication with named administrator and operational account; corroborates controlled flooding and recovery.",
+      "limits": [
+        "Dated2012 operation; present-tense statements describe then, not current operational status. Several Scripps pages are related sources, not independent replication."
+      ],
+      "body": "research/flip-bodies8.json"
+    },
+    {
+      "key": "radyo",
+      "organization": "RaDyO field investigators / Journal of Geophysical Research: Oceans",
+      "title": "Dickey et al.2012, Introduction to special section on Recent Advances in the Study of Optical Variability in the Near-Surface and Upper Ocean",
+      "type": "peer-reviewed",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2012JC007964",
+      "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+      "text": "Field investigators describe approximately108m length and90m submerged;6.5m deep hull tapering to4m at20m. Their geometry/response summary cites original engineering papers, with resonance outside dominant wave periods in free drift. Their actual Santa Barbara moored deployment tilted with winds/currents and showed heading/depth oscillations. Hawaii deployment drifted with winds/currents.",
+      "quality": "Primary field-study account for residual motion and deployments; historical design summary is cited synthesis rather than new engineering test.",
+      "limits": [
+        "Inspected relevant PDF paragraphs, not complete39-page paper. PDF screenshots failed; text successfully inspected. Launch day2June conflicts with Scripps22June: omit exact launch day. Original1963 and1997 paper bodies unavailable; no claim to have read them. Resonance and response depend on conditions. Copyrighted figures/photos not cleared for production."
+      ],
+      "body": "research/flip-mechanism-inspection6.json"
+    },
+    {
+      "key": "waves",
+      "organization": "NOAA / National Weather Service",
+      "title": "Mariners Weather Log43(1), April1999, Physical Oceanography: How Wind Generates Waves",
+      "type": "government",
+      "url": "https://www.vos.noaa.gov/MWL/apr1999.pdf",
+      "locator": "Printedp19/PDFpage index18, extracted lines940–978, particle-motion explanation; earlier deep/shallow-water distinction",
+      "text": "Deep-water surface-wave particle motion decreases with depth; shallow-water behavior differs. Approximate half-wavelength description is educational simplification, not a literal zero-motion boundary. Wave shape/energy propagation differs from bulk water transport.",
+      "quality": "Official NOAA/NWS physical-oceanography teaching source supporting general mechanism; not a FLIP performance test.",
+      "limits": [
+        "Inspected selected extracted PDF text only; no full108-page inspection. No half-wavelength cutoff or still-water assertion in script. Applies deep-water surface-wave model, not all ocean motion."
+      ],
+      "body": "research/flip-locators10.json"
+    }
+  ],
+  "definitions": [
+    [
+      "rotation",
+      "FLIP was a floating research laboratory deliberately rotated from horizontal transit to a vertical working orientation.",
+      [
+        "technical",
+        "operation"
+      ],
+      "Historical original configuration; a spar buoy, not a powered ship.",
+      "verify"
+    ],
+    [
+      "measurement",
+      "Platform motion could limit acoustic measurements; FLIP was developed to reduce this problem while connecting deep sensors to an above-water reference.",
+      [
+        "history"
+      ],
+      "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose.",
+      "verify"
+    ],
+    [
+      "ballast",
+      "Operators admitted water into ballast tanks to rotate FLIP, lowering the stern while laboratory spaces remained above water.",
+      [
+        "operation",
+        "history",
+        "technical"
+      ],
+      "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+      "verify"
+    ],
+    [
+      "draft",
+      "About ninety metres of FLIP’s hull extended below the waterline in its vertical working configuration.",
+      [
+        "technical",
+        "radyo"
+      ],
+      "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state.",
+      "verify"
+    ],
+    [
+      "geometry",
+      "FLIP had a narrow upper hull and a broader submerged lower hull; this shape reduced its responsiveness to waves.",
+      [
+        "technical",
+        "radyo"
+      ],
+      "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion.",
+      "verify"
+    ],
+    [
+      "depth",
+      "For deep-water surface waves, wave-induced water motion decreases with depth.",
+      [
+        "waves"
+      ],
+      "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity.",
+      "verify"
+    ],
+    [
+      "residual",
+      "FLIP could still drift and tilt; investigators observed motion even during moored research.",
+      [
+        "radyo",
+        "technical"
+      ],
+      "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale.",
+      "verify"
+    ],
+    [
+      "return",
+      "Compressed air expelled ballast water to return FLIP to horizontal.",
+      [
+        "operation"
+      ],
+      "Historical return operation; do not show compressed air rotating it downward.",
+      "verify"
+    ],
+    [
+      "immune",
+      "FLIP was perfectly stationary or immune to ocean motion.",
+      [
+        "radyo"
+      ],
+      "Contradicted by actual tilt, oscillation and drift; exclude.",
+      "exclude"
+    ],
+    [
+      "ratio",
+      "FLIP always moved less than one tenth as far as any ocean wave.",
+      [
+        "technical",
+        "radyo"
+      ],
+      "Conditional observation/design summary is not universal; exclude unqualified ratio.",
+      "exclude"
+    ],
+    [
+      "launch-day",
+      "FLIP was launched on2June1962.",
+      [
+        "history",
+        "radyo"
+      ],
+      "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude.",
+      "exclude"
+    ],
+    [
+      "present-service",
+      "FLIP is currently operating scientific cruises following its refit.",
+      [
+        "history"
+      ],
+      "Scripps describes retirement and future restoration; actual current operations not inspected. Exclude current-service claim.",
+      "exclude"
+    ]
+  ],
+  "lines": [
+    [
+      "Scientists deliberately tipped this floating laboratory upright. Why?",
+      [
+        "rotation"
+      ]
+    ],
+    [
+      "Because when your instrument moves, it’s harder to tell what the ocean is doing.",
+      [
+        "measurement"
+      ]
+    ],
+    [
+      "FLIP was built to study underwater sound. Even a research submarine turned enough to limit those measurements.",
+      [
+        "measurement"
+      ]
+    ],
+    [
+      "So engineers made a laboratory that travelled horizontally, then flooded ballast tanks to lower its stern.",
+      [
+        "rotation",
+        "ballast"
+      ]
+    ],
+    [
+      "The lab stayed above water, while about ninety metres of hull extended beneath it.",
+      [
+        "ballast",
+        "draft"
+      ]
+    ],
+    [
+      "Look at the shape: a narrow section near the surface, with a broader hull deep below.",
+      [
+        "geometry"
+      ]
+    ],
+    [
+      "In deep water, the motion caused by surface waves weakens with depth.",
+      [
+        "depth"
+      ]
+    ],
+    [
+      "FLIP’s shape made it much less responsive to those waves.",
+      [
+        "geometry"
+      ]
+    ],
+    [
+      "It could still drift and tilt. Stable didn’t mean motionless.",
+      [
+        "residual"
+      ]
+    ],
+    [
+      "And when the work was done, compressed air pushed water out of the ballast tanks, returning it to horizontal.",
+      [
+        "return"
+      ]
+    ],
+    [
+      "They tipped the laboratory upright to make a moving ocean easier to measure.",
+      [
+        "measurement",
+        "geometry"
+      ]
+    ]
+  ],
+  "objectives": [
+    "Recognizable vertical laboratory immediately; pose deliberate mystery before history.",
+    "Reveal the measurement-reference problem using an instrument and signal, no fake measured graph.",
+    "Show a hydrophone/reference pair; schematic submarine yaw visibly changes reference direction.",
+    "Follow same hull from horizontal tow to controlled ballast fill and rotation; time-compressed.",
+    "Reveal underwater length while retaining small above-water lab and common waterline.",
+    "Emphasize upper narrow section and broader deep hull; remove internal ballast overlay before wave lesson.",
+    "Show schematic shrinking wave-motion loops with depth; no hard wave-base boundary.",
+    "Passing surface waves and smaller nonzero FLIP motion show why geometry matters; no numerical animation ratio.",
+    "Show gentle drift/tilt in same spatial field, preserving limited rather than absolute stability.",
+    "Reverse ballast process with air displacing water; connect return to original horizontal silhouette.",
+    "Return to vertical lab and ocean/reference distinction: the orientation spectacle resolves into measurement insight."
+  ]
+}

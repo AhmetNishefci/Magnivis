@@ -3,7 +3,7 @@ import {readFileSync} from 'node:fs';
 import {parseManifests} from '../src/artifacts/schema';
 import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
-import {resolveProductionVideoTarget as resolveVideoTarget} from './production-video-targets';
+import {resolveProductionVideoTarget as resolveVideoTarget} from './resolve-qa-video-target';
 import {inspectMedia} from './media-inspection';
 
 import {createRequire} from 'node:module';

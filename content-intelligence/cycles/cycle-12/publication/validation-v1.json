@@ -1,0 +1,56 @@
+{
+  "inspectedAt": "2026-10-11T22:42:16.579849+00:00",
+  "passed": true,
+  "check": {
+    "command": "VITEST_MAX_WORKERS=4 pnpm check",
+    "node": "22.23.3",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFilesPassed": 53,
+    "testsPassed": 501,
+    "diffCheck": "passed",
+    "log": "content-intelligence/cycles/cycle-12/publication/qa/repository-check-v1.txt"
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 999,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "evidence": "content-intelligence/cycles/cycle-12/publication/qa/durability-v1.json"
+  },
+  "fullDecode": {
+    "passed": true,
+    "output": "content-intelligence/cycles/cycle-12/publication/qa/full-decode-v1.txt"
+  },
+  "releaseValidation": {
+    "passed": true,
+    "protectedFilesChecked": 4521,
+    "captionMidpointsPerPlatform": 33,
+    "platforms": 4,
+    "unknowns": 44,
+    "knownCollisions": 0,
+    "ownerCreativeApproval": true,
+    "publicationAuthorized": false
+  },
+  "limits": [
+    "TikTok current official body inaccessible; indexed primary Studio instructions support duration with live-account confirmation outstanding.",
+    "Provisional composition insets; native UI, caption-safe and crop models unknown; sampled motion and device presentation not proven.",
+    "Actual accounts, processing, sound copyright checks, controls and cover-selector precision/persistence untested.",
+    "Local audits do not replace human audiovisual/device review. Owner has completed creative audiovisual review; native presentation acceptance remains separate.",
+    "No new commit, remote push, distribution, upload, scheduling, publication or Cycle13; source/media remain in local working tree/index."
+  ]
+}

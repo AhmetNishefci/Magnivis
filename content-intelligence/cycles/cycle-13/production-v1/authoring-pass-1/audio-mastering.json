@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-12T22:42:56.054Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/devils-hole-render-v1.mp4",
+    "sha256": "5f66ed51ae27efdea5016b7d3e5e3521c913ad728c74acc9353601c4810474a3",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/devils-hole-cycle13-candidate-v1.mp4",
+    "sha256": "21c70f204b6c08183dfabf8b28560b67ca8333216184587a38364d0beb1d35ab"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.77",
+    "input_tp": "-6.97",
+    "input_lra": "2.80",
+    "input_thresh": "-34.50",
+    "output_i": "-19.09",
+    "output_tp": "-2.37",
+    "output_lra": "2.50",
+    "output_thresh": "-29.92",
+    "normalization_type": "dynamic",
+    "target_offset": "0.09"
+  },
+  "gainDb": 4.77,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

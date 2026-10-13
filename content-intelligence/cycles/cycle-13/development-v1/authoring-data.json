@@ -1,0 +1,333 @@
+{
+  "sources": [
+    {
+      "key": "event",
+      "organization": "National Park Service / Death Valley National Park",
+      "title": "Russian earthquake causes minor disturbance in Devils Hole",
+      "type": "government",
+      "url": "https://home.nps.gov/deva/learn/news/devils-hole-2025-07-29.htm",
+      "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+      "text": "NPS reports July 29, 2025; magnitude 8.8 offshore Kamchatka; nearly 4,000 miles; 21 minutes until waves at Devils Hole. Ten-inch waves removed some material from the shallow shelf. Biologists were less concerned than after earlier disturbances. The shelf supports most feeding and spawning; monitoring captions describe some algae and invertebrate removal.",
+      "quality": "Direct site-operator event report and biological interpretation. Authoritative for local observations, not an independent analysis of raw monitoring data.",
+      "limits": [
+        "Distance, delay and wave size are reported NPS values. Amplitude convention and raw onset series are absent; no universal seismic speed is derived.",
+        "December/February ecological effects and the March count of 38 fish are separate observations and unused.",
+        "The before image bears July 14, 2025; the after image July 30. They are not immediately adjacent observations or a quantitative mortality comparison."
+      ],
+      "body": "research/c13research2.json"
+    },
+    {
+      "key": "seiche",
+      "organization": "U.S. Geological Survey / Earthquake Hazards Program",
+      "title": "Seismic Seiches",
+      "type": "government",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/seismic-seiches",
+      "locator": "Extracted body lines23–33",
+      "text": "Passing seismic waves can excite standing waves in enclosed water. Distant seismic seiches are associated with seismic surface waves. Seiches differ from tsunami generation by sudden sea-floor displacement; local and geological factors affect responses.",
+      "quality": "Established mechanism from the relevant scientific agency. A different institution from NPS, not independent replication of July 2025 cave monitoring.",
+      "limits": [
+        "General physics, not a calculated Devils Hole normal mode, calibrated amplitude or exact propagation path.",
+        "No one-path model or claim that distance alone determines local wave height."
+      ],
+      "body": "research/c13research2.json"
+    },
+    {
+      "key": "ground",
+      "organization": "U.S. Geological Survey / Earthquake Hazards Program",
+      "title": "Cool Earthquake Facts",
+      "type": "government",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/cool-earthquake-facts",
+      "locator": "Extracted body lines73–75; seiche definition and pronunciation",
+      "text": "USGS describes a seismic seiche as water sloshing because the ground shakes. Oscillation can persist after forcing. Pronunciation: SAYSH. Seiches can have other causes; earthquake magnitude differs from local shaking intensity.",
+      "quality": "Relevant official explanation for qualitative ground-water coupling and pronunciation. Only the bounded passage is used; volatile facts elsewhere on the page are unused.",
+      "limits": [
+        "The shaken bathtub is a labeled analogy, not a measured simulation of cave displacement or frequency.",
+        "Magnitude does not imply identical shaking in Russia and Nevada."
+      ],
+      "body": "research/c13research4.json"
+    },
+    {
+      "key": "habitat",
+      "organization": "National Park Service / Death Valley National Park",
+      "title": "Devils Hole",
+      "type": "government",
+      "url": "https://www.nps.gov/deva/learn/nature/devils-hole.htm",
+      "locator": "Extracted body lines22–27",
+      "text": "Devils Hole is a Nevada water-filled cavern and the natural habitat of its endangered pupfish. A near-surface shelf supports foraging and spawning. Distant earthquakes have caused sloshing; the operator uses a bathtub comparison.",
+      "quality": "Site-operator ecological and geographic context. Related to the event report, not counted as independent replication.",
+      "limits": [
+        "Older temperature, population and isolation-age wording is unused. Generic two-metre waves do not describe July 2025.",
+        "An unmapped bottom does not mean bottomless. Full cave geometry is unknown; show only an illustrative near-surface cutaway."
+      ],
+      "body": "research/c13research2.json"
+    },
+    {
+      "key": "catalog",
+      "organization": "U.S. Geological Survey / reviewed ComCat event record",
+      "title": "M8.8 — 2025 Kamchatka Peninsula, Russia Earthquake, us6000qw60",
+      "type": "government",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=us6000qw60",
+      "locator": "GeoJSON properties.mag, properties.time, properties.status and geometry.coordinates",
+      "text": "Reviewed event us6000qw60: magnitude 8.8; origin epoch 1753831492483 milliseconds, equivalent to 2025-07-29T23:24:52.483Z. Epicenter longitude 160.2395, latitude 52.4948, depth 35 km. Calendar conversions give July 29 in Nevada/UTC and July 30 in Kamchatka. Coordinates describe the earthquake origin, not cave ground motion.",
+      "quality": "Direct USGS scientific-catalog HTTP GeoJSON response, with exact bytes preserved. Corroborates magnitude and origin date, not local wave size or delay.",
+      "limits": [
+        "Current reviewed catalog metadata may differ from initial news estimates; no older epicenter or depth estimate is reused.",
+        "Do not manufacture an exact cave-disturbance timestamp from the reported 21-minute interval.",
+        "Calendar conversions are labeled derivations, not independent timestamp observations."
+      ],
+      "body": "research/usgs-event-response.json"
+    },
+    {
+      "key": "rights",
+      "organization": "National Park Service",
+      "title": "Disclaimer — Ownership",
+      "type": "government",
+      "url": "https://www.nps.gov/aboutus/disclaimer.htm",
+      "locator": "Extracted body lines28–37",
+      "text": "Official NPS-created government works are generally public domain unless otherwise indicated. Third-party content and protected marks are separate. The page requests attribution and an appropriate notice for commercial reuse.",
+      "quality": "Official provenance policy. Specific asset credits were checked on the event and habitat pages; the policy is not blanket clearance of every website asset.",
+      "limits": [
+        "NPS-credited images were consulted only. No external image selected for production and no protected NPS marks reproduced.",
+        "Any later exact image import requires asset-specific provenance, canonical registration and an ASSET-LICENSES entry."
+      ],
+      "body": "research/c13research5.json"
+    }
+  ],
+  "definitions": [
+    [
+      "local-event",
+      "NPS reports that the July 29, 2025 Kamchatka earthquake caused waves in Devils Hole, a water-filled cave in Nevada.",
+      [
+        "event",
+        "habitat",
+        "catalog"
+      ],
+      "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar.",
+      "verify"
+    ],
+    [
+      "magnitude",
+      "The reviewed USGS event magnitude is 8.8.",
+      [
+        "event",
+        "catalog"
+      ],
+      "Magnitude is dimensionless, not local intensity or an asserted Richter-scale measurement.",
+      "verify"
+    ],
+    [
+      "distance",
+      "NPS reports the Devils Hole disturbance nearly 4,000 miles from the earthquake.",
+      [
+        "event"
+      ],
+      "Approximate reported separation; no precise geodesic distance or actual travel path implied.",
+      "verify"
+    ],
+    [
+      "delay",
+      "NPS reports waves triggered at Devils Hole 21 minutes after the earthquake.",
+      [
+        "event"
+      ],
+      "Reported elapsed time, not a precise onset/arrival series or universal travel-time law.",
+      "verify"
+    ],
+    [
+      "forcing",
+      "Seismic waves can travel through and along Earth; passing ground motion can set enclosed water oscillating back and forth.",
+      [
+        "seiche",
+        "ground"
+      ],
+      "Qualitative coupling; distant seiches are associated with surface waves. No exact resonance, perceptible local shaking or uniform global motion claimed.",
+      "verify"
+    ],
+    [
+      "local-water",
+      "A seismic seiche is oscillation of water already in an enclosed pool in response to seismic motion, not ocean water traveling into Nevada.",
+      [
+        "seiche",
+        "ground"
+      ],
+      "Distinguish energy transport from bulk water transport. No underground channel to Russia.",
+      "verify"
+    ],
+    [
+      "distinction",
+      "A seismic seiche is distinct from an ocean tsunami generated by displacement of seawater.",
+      [
+        "seiche"
+      ],
+      "No claim that seiches are always small, tsunamis are caused only by earthquakes, or this quake generated no real ocean tsunami.",
+      "verify"
+    ],
+    [
+      "wave-size",
+      "NPS reports ten-inch waves at Devils Hole for the July 2025 event.",
+      [
+        "event"
+      ],
+      "Narrate about ten inches. Crest-to-trough, amplitude and runup conventions are not supplied; animation is not calibrated to this reported value.",
+      "verify"
+    ],
+    [
+      "shelf",
+      "The endangered Devils Hole pupfish depend on a shallow shelf near the surface for most of their food and spawning.",
+      [
+        "event",
+        "habitat"
+      ],
+      "Shelf function, not a claim that all fish remain on it or deep water is uninhabited.",
+      "verify"
+    ],
+    [
+      "impact",
+      "The July 2025 waves removed some material from the shelf. NPS described the disturbance as minor and biologists were less concerned than after earlier quakes.",
+      [
+        "event"
+      ],
+      "No near-extinction, mortality count, quantified egg loss, complete food loss or confirmed population rebound.",
+      "verify"
+    ],
+    [
+      "maximum-height",
+      "The July 2025 waves reached two metres.",
+      [
+        "habitat"
+      ],
+      "A generic older maximum cannot be transferred to this event; excluded.",
+      "exclude"
+    ],
+    [
+      "mortality",
+      "The July 2025 quake almost wiped out the remaining pupfish.",
+      [
+        "event"
+      ],
+      "Unsupported and contrary to the scoped minor impact; excluded.",
+      "exclude"
+    ],
+    [
+      "exact-resonance",
+      "A specific cave resonance period amplified the Kamchatka waves by a known factor.",
+      [
+        "seiche"
+      ],
+      "No local normal-mode or forcing measurements acquired; unresolved and unselected.",
+      "unresolved"
+    ],
+    [
+      "current-count",
+      "Only 38 Devils Hole pupfish remain today.",
+      [
+        "event"
+      ],
+      "The March 2025 historical count is not a current count; excluded.",
+      "exclude"
+    ],
+    [
+      "bottomless",
+      "Devils Hole is bottomless.",
+      [
+        "habitat"
+      ],
+      "Unmapped is not infinite depth; excluded.",
+      "exclude"
+    ],
+    [
+      "ocean-arrival",
+      "The ocean tsunami traveled into Devils Hole.",
+      [
+        "seiche",
+        "event"
+      ],
+      "Wrong causal mechanism; excluded.",
+      "exclude"
+    ]
+  ],
+  "lines": [
+    [
+      "An earthquake nearly four thousand miles away made waves in this Nevada desert pool.",
+      [
+        "local-event",
+        "distance"
+      ]
+    ],
+    [
+      "On July twenty-ninth, twenty twenty-five, a magnitude eight point eight quake struck off Russia’s Kamchatka Peninsula.",
+      [
+        "local-event",
+        "magnitude"
+      ]
+    ],
+    [
+      "Twenty-one minutes later, water in Devils Hole began sloshing.",
+      [
+        "delay"
+      ]
+    ],
+    [
+      "But seawater hadn’t crossed the ocean into Nevada.",
+      [
+        "local-water"
+      ]
+    ],
+    [
+      "Seismic waves traveled through the ground.",
+      [
+        "forcing"
+      ]
+    ],
+    [
+      "As the ground moved, water already inside the cave rocked back and forth—like water in a shaken bathtub.",
+      [
+        "forcing",
+        "local-water"
+      ]
+    ],
+    [
+      "That oscillation is called a seismic seiche, different from an ocean tsunami.",
+      [
+        "distinction",
+        "forcing"
+      ]
+    ],
+    [
+      "The waves here were about ten inches.",
+      [
+        "wave-size"
+      ]
+    ],
+    [
+      "Small, but enough to disturb a shallow shelf where the endangered Devils Hole pupfish feed and spawn.",
+      [
+        "shelf",
+        "impact"
+      ]
+    ],
+    [
+      "This event removed some material from the shelf. The park described it as a minor disturbance.",
+      [
+        "impact"
+      ]
+    ],
+    [
+      "An isolated-looking pool can reveal just how connected the ground beneath us really is.",
+      []
+    ]
+  ],
+  "objectives": [
+    "Immediate local water motion linked to a distant earthquake. Dry rock and a narrow pool fill the main field; a simple geographic locator shows the remote origin.",
+    "Brief date, place and magnitude context. Keep the Nevada pool connected to the offshore Kamchatka origin; avoid a disaster montage or numerical overload.",
+    "Compare earthquake and reported cave response with a compressed 21-minute interval. Not real-time footage or a fabricated monitoring trace.",
+    "Make existing water identity explicit. No water stream crossing the ocean into Nevada.",
+    "Show qualitative seismic energy through and along solid Earth. No core-crossing chord or universal fixed route.",
+    "A near-surface cave cutaway separates ground/wall motion from water rocking. Label exaggerated ground motion and schematic geometry; briefly use the bathtub analogy only if it clarifies coupling.",
+    "Name the demonstrated oscillation after the causal action. Distinguish it from displaced ocean water without depicting an ocean tsunami arriving at the cave.",
+    "Give the modest reported ten-inch scale in text/context. Do not depict an unverified measurement convention or borrow the generic two-metre maximum.",
+    "Move toward the near-surface feeding shelf and a few representative pupfish. Limited food-material disturbance, with no fish deaths or entirely stripped shelf.",
+    "Show limited material movement and persistence of the habitat. The consulted before/after frames are July 14 and July 30; no invented adjacent observations or removal percentage.",
+    "Return to the original pool and distant-location connection. Resolve energy travel and local water response; end on understanding, without a generic CTA or cliffhanger."
+  ]
+}

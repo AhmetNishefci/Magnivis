@@ -1,0 +1,17 @@
+import {readFileSync,writeFileSync,renameSync,existsSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {spawnSync} from 'node:child_process';
+import {mediaHash} from '../src/artifacts/media';
+import narration from '../src/production/narration/devils-hole.json';
+import mix from '../src/production/narration/devils-hole-v2-mix.json';
+import sound from '../src/production/narration/devils-hole-soundscape.json';
+const base='content-intelligence/cycles/cycle-13/revision-v2',master='artifacts/masters/devils-hole-cycle13-candidate-v2.mp4',first='artifacts/qa-evidence/devils-hole-cycle13-v2-authoring/first-mix-render.mp4',wave='output/devils-hole-v2-refined-mix.wav',ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string;
+if(existsSync(first)||!existsSync(master))throw new Error('Preserve prior identity / need first full render');
+const run=(args:string[])=>{const r=spawnSync(ffmpeg,args,{encoding:'utf8'});if(r.status!==0)throw new Error(r.stderr);return r;};
+const inputs=['-i',`public/${sound.file}`,...narration.cues.flatMap(c=>['-i',`public/${c.file}`])];
+const filters=[`[0:a]volume=${mix.soundGain},aresample=48000,aformat=channel_layouts=stereo[a0]`,...narration.cues.map((c,i)=>`[${i+1}:a]volume=${mix.narrationGain},aresample=48000,aformat=channel_layouts=stereo,adelay=${Math.round(c.start*48000)}S:all=1[a${i+1}]`),`${Array.from({length:12},(_,i)=>`[a${i}]`).join('')}amix=inputs=12:normalize=0:duration=longest,atrim=duration=${narration.format.durationSeconds}[out]`];
+run(['-v','error',...inputs,'-filter_complex',filters.join(';'),'-map','[out]','-c:a','pcm_s16le',wave]);
+const measure=run(['-hide_banner','-i',wave,'-af','loudnorm=I=-19:TP=-2:LRA=7:print_format=json','-f','null','-']);const match=measure.stderr.match(/\{\s*"input_i"[\s\S]*?\}/);if(!match)throw new Error('No loudness');const values=JSON.parse(match[0]) as {input_i:string;input_tp:string};const gain=Math.min(-19-Number(values.input_i),-2.2-Number(values.input_tp));
+const firstRecord=JSON.parse(readFileSync(`${base}/audio-mastering-v2.json`,'utf8'));renameSync(`${base}/audio-mastering-v2.json`,`${base}/authoring/audio-mastering-first-pass.json`);renameSync(master,first);
+run(['-hide_banner','-i',first,'-i',wave,'-map','0:v:0','-map','1:a:0','-c:v','copy','-af',`volume=${gain}dB`,'-c:a','aac','-b:a','192k','-movflags','+faststart',master]);
+writeFileSync(`${base}/audio-mastering-v2.json`,JSON.stringify({enteredAt:new Date().toISOString(),method:'Measured refined mix from exact canonical narration and original sound, sample-aligned to approved30fps cue starts; copy video stream. Narration wording/timing unchanged.',renderIntermediate:firstRecord.renderIntermediate,initialAuthoring:{path:first,sha256:mediaHash(first),source:`${base}/authoring/DevilsHoleV2-first-audio.tsx`},mix:{path:wave,sha256:mediaHash(wave),retention:'temporary',settings:'src/production/narration/devils-hole-v2-mix.json',narrationGain:mix.narrationGain,soundGain:mix.soundGain},candidate:{path:master,sha256:mediaHash(master)},inputMeasurements:values,gainDb:gain,rationale:mix.rationale,ownerListening:'Not performed; explicit uncertainty retained.'},null,2)+'\n',{flag:'wx'});console.log({refined:true,gainDb:gain,masterSha256:mediaHash(master)});

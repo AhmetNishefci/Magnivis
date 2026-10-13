@@ -1,0 +1,77 @@
+{
+  "inspectedAt": "2026-10-13T09:01:47.802141+00:00",
+  "method": "Fresh official public web body inspection plus indexed TikTok help text; public Instagram body retrieved via HTTP200. No authenticated access. Findings paraphrased; blocked/empty bodies distinguished.",
+  "sources": [
+    {
+      "key": "youtube-duration",
+      "url": "https://support.google.com/youtube/answer/15424877?hl=en",
+      "access": "official-body-inspected",
+      "finding": "Square/vertical uploads up to 180 seconds qualify as Shorts. Shorts over one minute with an active Content ID claim are globally blocked. No platform copyright processing tested."
+    },
+    {
+      "key": "instagram-duration",
+      "url": "https://about.instagram.com/features/reels",
+      "access": "fresh-public-HTTP-200-body-inspected; web tool initially429/help login-only",
+      "finding": "Hero describes up to 3 minutes and gallery upload. FAQ allows recording/editing up to 20 minutes; above 3 minutes not recommended to new audiences. Distinct statements preserved. This59.990s file is below both thresholds; this package uses conservative180s internal envelope, not a universal maximum.",
+      "body": "content-intelligence/cycles/cycle-13/publication/policy-sources/instagram-reels-body.txt",
+      "bodySha256": "68ecdaea52f2e634444f0e0beb192ce08ce3f4ee9310bb446904db1ec95d0ed6"
+    },
+    {
+      "key": "tiktok-duration",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/creator-tools-on-tiktok?lang=nl",
+      "access": "official-indexed-article-text; live redirects to JS-only TikTok Support shell",
+      "finding": "Indexed official TikTok Studio web Upload section lists MP4/WebM, at least720x1280, up to30minutes, under10GB. Actual current body/account acceptance unverified; moderate confidence. Local export180s is bounded conservative internal envelope, not verified platform maximum. File59.990s meets indexed instructions; live confirmation required before manual release."
+    },
+    {
+      "key": "facebook-duration",
+      "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+      "access": "official-body-inspected",
+      "finding": "June17/July14,2025 announcement: unified videos as Reels have no length/format restrictions; phased rollout to profiles/Pages. Actual Page rollout/controls unverified. Local180s envelope bounded to this package; no finite universal Facebook cap asserted."
+    },
+    {
+      "key": "youtube-cover",
+      "url": "https://support.google.com/youtube/answer/72431?hl=en",
+      "access": "official-body-inspected",
+      "finding": "Current instructions support custom Shorts PNG/JPG thumbnail in computer Studio for verified accounts, 9:16 preferred;2160x3840 recommended, minimum640pxheight, desktop50MB. Existing1080x1920 decoded PNG meets minimum but below preferred size; actual control and native crops unknown. Official July24,2026 rollout announcement initially scoped to YPP creators, with expansion planned; actual live entitlement must be confirmed."
+    },
+    {
+      "key": "youtube-ai",
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en",
+      "access": "official-body-inspected",
+      "finding": "Official body requires disclosure for realistic AI scenes of real places/events; use AI use Yes for the illustrative generated locality and synthetic narration. Actual live control untested."
+    },
+    {
+      "key": "meta-ai",
+      "url": "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/",
+      "access": "official-body-inspected",
+      "finding": "Realistic-sounding digitally created audio disclosure tool; recommend available AI disclosure on; actual wording/control untested."
+    },
+    {
+      "key": "youtube-cover-rollout",
+      "url": "https://blog.youtube/news-and-events/youtube-studio-custom-thumbnail-updates/",
+      "access": "official-body-inspected",
+      "finding": "July24,2026 initial YPP rollout; desktop suggestions and mobile frame selection remain options. Do not assume channel entitlement."
+    },
+    {
+      "key": "tiktok-cover",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/editing-posting-and-deleting?lang=id",
+      "access": "official-indexed-article-text-inspected",
+      "finding": "Before posting, Select cover, drag to video frame and Save. Actual precision/crops untested."
+    },
+    {
+      "key": "tiktok-ai",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content",
+      "access": "official-indexed-article-text-inspected",
+      "finding": "Creator AI-generated-content disclosure available under More options. Use On for generated illustrative locality and synthetic narration; live UI untested."
+    }
+  ],
+  "masterDurationSeconds": 59.99,
+  "durationResult": {
+    "youtube": "Within180s Shorts cap",
+    "instagram": "Below both3min hero and20min FAQ; manual gallery route untested",
+    "facebook": "Within announced unified Reels flow; Page rollout untested",
+    "tiktok": "Fits indexed official Studio instructions; empty live body/account acceptance unverified"
+  },
+  "localEnvelope": "Bounded3\u2013180s package validation; only YouTube180s is asserted as relevant official Shorts cap. Other180s bounds are conservative internal, not universal maxima.",
+  "externalActions": []
+}

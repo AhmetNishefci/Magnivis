@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.devils-hole.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "devils-hole-seismic-seiche",
+    "revision": 1,
+    "sha256": "1df19d3b3e84e9351156cb5a2b674e025ae2b90d9b0070cfc22a4320f061fd64"
+  },
+  "contentAsset": {
+    "id": "devils-hole-seismic-seiche.asset.connection",
+    "revision": 1,
+    "sha256": "74d6737b2ce63182729ec1dca7d4c2b817cc624511978b078c562040cb2b508b"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.13",
+    "reviewSha256": "19f8f18135de81e00d06db49c093398c8e5b58ee8901f1d99ea8532c81a12159"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-13/production-v1/profiles/youtube.json",
+      "sha256": "c8767204717794c21b444b65201724180a7e07845cd04350736a636a6d5f457f"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/production-v1/profiles/tiktok.json",
+      "sha256": "0413ec7abfe912cb9ce8c0905c67b366663c62c4d721cd947d3f627b7b2779c4"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/production-v1/profiles/instagram.json",
+      "sha256": "c7612fffac0edfb38bf179f86f4520793e80fde303a7ced0c857c3b6cd61cc01"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/production-v1/profiles/facebook.json",
+      "sha256": "f9b9ee4ad60959860201fd4275298cf9090f2a1882403943222b6175ced09f89"
+    }
+  ],
+  "approvedScriptSha256": "28a3fc46396bb96ec767dd9dae790345c45d20c16ac06738e7ac884e60ef7496",
+  "creativeDirection": {
+    "id": "creative-direction.devils-hole-seismic-seiche.connection.v1",
+    "revision": 1,
+    "sha256": "150adf4ef95995417724bc238e656245477e81868221d496ccab31953ca89bb2"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "devils-hole-seismic-seiche.claim.maximum-height",
+    "devils-hole-seismic-seiche.claim.mortality",
+    "devils-hole-seismic-seiche.claim.exact-resonance",
+    "devils-hole-seismic-seiche.claim.current-count",
+    "devils-hole-seismic-seiche.claim.bottomless",
+    "devils-hole-seismic-seiche.claim.ocean-arrival"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 59.93333333333333
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "devils-hole.production.1",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.1",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.1",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.1"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.distance"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 184
+      },
+      "sceneType": "distant-connection",
+      "objective": "Immediate local water motion linked to a distant earthquake. Dry rock and a narrow pool fill the main field; a simple geographic locator shows the remote origin.",
+      "onScreenText": [],
+      "animationIntent": "Immediate local water motion linked to a distant earthquake. Dry rock and a narrow pool fill the main field; a simple geographic locator shows the remote origin.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.2",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.2",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.2",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.2"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.magnitude"
+      ],
+      "frames": {
+        "start": 184,
+        "end": 428
+      },
+      "sceneType": "earthquake-context",
+      "objective": "Brief date, place and magnitude context. Keep the Nevada pool connected to the offshore Kamchatka origin; avoid a disaster montage or numerical overload.",
+      "onScreenText": [],
+      "animationIntent": "Brief date, place and magnitude context. Keep the Nevada pool connected to the offshore Kamchatka origin; avoid a disaster montage or numerical overload.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.3",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.3",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.3",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.3"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.delay"
+      ],
+      "frames": {
+        "start": 428,
+        "end": 562
+      },
+      "sceneType": "local-response",
+      "objective": "Compare earthquake and reported cave response with a compressed 21-minute interval. Not real-time footage or a fabricated monitoring trace.",
+      "onScreenText": [],
+      "animationIntent": "Compare earthquake and reported cave response with a compressed 21-minute interval. Not real-time footage or a fabricated monitoring trace.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.4",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.4",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.4",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.4"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-water"
+      ],
+      "frames": {
+        "start": 562,
+        "end": 668
+      },
+      "sceneType": "existing-water",
+      "objective": "Make existing water identity explicit. No water stream crossing the ocean into Nevada.",
+      "onScreenText": [],
+      "animationIntent": "Make existing water identity explicit. No water stream crossing the ocean into Nevada.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.5",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.5",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.5",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.5"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.forcing"
+      ],
+      "frames": {
+        "start": 668,
+        "end": 756
+      },
+      "sceneType": "seismic-energy",
+      "objective": "Show qualitative seismic energy through and along solid Earth. No core-crossing chord or universal fixed route.",
+      "onScreenText": [],
+      "animationIntent": "Show qualitative seismic energy through and along solid Earth. No core-crossing chord or universal fixed route.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.6",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.6",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.6",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.6"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water"
+      ],
+      "frames": {
+        "start": 756,
+        "end": 975
+      },
+      "sceneType": "ground-water-coupling",
+      "objective": "A near-surface cave cutaway separates ground/wall motion from water rocking. Label exaggerated ground motion and schematic geometry; briefly use the bathtub analogy only if it clarifies coupling.",
+      "onScreenText": [],
+      "animationIntent": "A near-surface cave cutaway separates ground/wall motion from water rocking. Label exaggerated ground motion and schematic geometry; briefly use the bathtub analogy only if it clarifies coupling.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.7",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.7",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.7",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.7"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.distinction",
+        "devils-hole-seismic-seiche.claim.forcing"
+      ],
+      "frames": {
+        "start": 975,
+        "end": 1132
+      },
+      "sceneType": "seiche-distinction",
+      "objective": "Name the demonstrated oscillation after the causal action. Distinguish it from displaced ocean water without depicting an ocean tsunami arriving at the cave.",
+      "onScreenText": [],
+      "animationIntent": "Name the demonstrated oscillation after the causal action. Distinguish it from displaced ocean water without depicting an ocean tsunami arriving at the cave.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.8",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.8",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.8",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.8"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.wave-size"
+      ],
+      "frames": {
+        "start": 1132,
+        "end": 1220
+      },
+      "sceneType": "modest-scale",
+      "objective": "Give the modest reported ten-inch scale in text/context. Do not depict an unverified measurement convention or borrow the generic two-metre maximum.",
+      "onScreenText": [],
+      "animationIntent": "Give the modest reported ten-inch scale in text/context. Do not depict an unverified measurement convention or borrow the generic two-metre maximum.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.9",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.9",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.9",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.9"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.shelf",
+        "devils-hole-seismic-seiche.claim.impact"
+      ],
+      "frames": {
+        "start": 1220,
+        "end": 1420
+      },
+      "sceneType": "feeding-shelf",
+      "objective": "Move toward the near-surface feeding shelf and a few representative pupfish. Limited food-material disturbance, with no fish deaths or entirely stripped shelf.",
+      "onScreenText": [],
+      "animationIntent": "Move toward the near-surface feeding shelf and a few representative pupfish. Limited food-material disturbance, with no fish deaths or entirely stripped shelf.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.10",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.10",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.10",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.10"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.impact"
+      ],
+      "frames": {
+        "start": 1420,
+        "end": 1616
+      },
+      "sceneType": "limited-disturbance",
+      "objective": "Show limited material movement and persistence of the habitat. The consulted before/after frames are July 14 and July 30; no invented adjacent observations or removal percentage.",
+      "onScreenText": [],
+      "animationIntent": "Show limited material movement and persistence of the habitat. The consulted before/after frames are July 14 and July 30; no invented adjacent observations or removal percentage.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    },
+    {
+      "id": "devils-hole.production.11",
+      "sourceVisualPlanId": "devils-hole-seismic-seiche.asset.connection.visual.11",
+      "narrativeBeatId": "devils-hole-seismic-seiche.asset.connection.beat.11",
+      "scriptSegmentIds": [
+        "devils-hole-seismic-seiche.asset.connection.script.11"
+      ],
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water"
+      ],
+      "frames": {
+        "start": 1616,
+        "end": 1798
+      },
+      "sceneType": "connected-earth-payoff",
+      "objective": "Return to the original pool and distant-location connection. Resolve energy travel and local water response; end on understanding, without a generic CTA or cliffhanger.",
+      "onScreenText": [],
+      "animationIntent": "Return to the original pool and distant-location connection. Resolve energy travel and local water response; end on understanding, without a generic CTA or cliffhanger.",
+      "transitionIntent": "Motivated geographic-to-local physical scale changes; rock, water and shelf retain distinct identities. No disconnected slide stack.",
+      "audioIntent": "Exact af_heart full unit with quiet original illustrative local-water effects from audio/devils-hole/local-water.wav."
+    }
+  ],
+  "assets": [
+    {
+      "id": "devils-hole.original-graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original cave/ground/water/geographic models",
+        "rights": "Project-owned code artwork",
+        "notes": "Qualitative near-surface geometry, seismic paths and representative fish; no imported research imagery.",
+        "evidence": "content-intelligence/cycles/cycle-13/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "devils-hole.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Manrope Fontsource5.3.0",
+        "rights": "SIL OFL1.1",
+        "notes": "Established licensed type.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "devils-hole.narration",
+      "kind": "audio",
+      "path": "public/audio/devils-hole/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache2.0model terms",
+        "notes": "Exact script units, inspected input and full-context pronunciation repair.",
+        "evidence": "src/production/narration/devils-hole.json"
+      }
+    },
+    {
+      "id": "devils-hole.local-water",
+      "kind": "audio",
+      "path": "public/audio/devils-hole/local-water.wav",
+      "provenance": {
+        "origin": "Magnivis seeded procedural water/connection cues",
+        "rights": "Original project-owned sound",
+        "notes": "Illustrative, no recorded July2025 audio.",
+        "evidence": "src/production/narration/devils-hole-soundscape.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/devils-hole.en.vtt",
+    "captionPlanId": "caption-plan.devils-hole.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "2e119f79a6a53a493ab0edd349ff2a4f4c19fa6c420b7a885f6b0953f57cc23d",
+    "generatorId": "generator.devils-hole-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact137-word script and verified claims/direction hashes unchanged.",
+    "Full-unit Kamchatka/seiche pronunciation input and actual-master recognition; no subjective listening inferred.",
+    "Visible earthquake → seismic energy → local ground → existing water slosh → limited shelf effect, without ocean transfer.",
+    "Schematic local ground displacement and geometry, no invented period, ray path, amplitude convention or local shaking measurement.",
+    "All captions/critical transitions bounds and exact-master phone-scale inspection.",
+    "Full decode and measured mix/technical QA; four provisional profile preflights retain unknown native geometry.",
+    "Separate chronological rendered-sequence editorial review and meaningful internal revisions when demonstrated.",
+    "Stop AHMET — MASTER REVIEW · Cycle13, no publication preparation or actions."
+  ]
+}

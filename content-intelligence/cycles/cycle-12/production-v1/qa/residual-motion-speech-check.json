@@ -1,0 +1,50 @@
+{
+  "enteredAt": "2026-10-11T22:07:00.893Z",
+  "source": "public/audio/flip/narration/cue-9.wav",
+  "exactText": "It could still drift and tilt. Stable didn’t mean motionless.",
+  "purpose": "Investigate tiny.en until misrecognition without editing source audio/script.",
+  "results": [
+    {
+      "name": "first-clause",
+      "transformation": [
+        "-t",
+        "2.1"
+      ],
+      "recognized": " It could still drift and tilt.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " It could still drift and tilt."
+        }
+      ]
+    },
+    {
+      "name": "slower-full-unit",
+      "transformation": [
+        "-af",
+        "atempo=0.85"
+      ],
+      "recognized": " It could still drift until. Stable didn't mean motionless.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.1
+          ],
+          "text": " It could still drift until."
+        },
+        {
+          "timestamp": [
+            2.1,
+            4.3
+          ],
+          "text": " Stable didn't mean motionless."
+        }
+      ]
+    }
+  ],
+  "scope": "Diagnostic machine recognition only. Phoneme input includes drift ænd tˈɪlt; actual listening remains required."
+}

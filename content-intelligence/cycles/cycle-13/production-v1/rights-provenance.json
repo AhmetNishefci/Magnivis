@@ -1,0 +1,43 @@
+{
+  "enteredAt": "2026-10-12T22:41:39.086Z",
+  "visuals": "Original code-authored simplified geographic locator, warm limestone narrow pool, qualitative solid-Earth wavefronts, local cave section, shallow shelf and representative pupfish. Consulted NPS images remain research-only; no imported or traced pixels.",
+  "font": {
+    "package": "@fontsource/manrope",
+    "version": "5.3.0",
+    "license": "SIL OFL1.1",
+    "licenseSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+    "files": [
+      {
+        "path": "node_modules/@fontsource/manrope/files/manrope-latin-600-normal.woff2",
+        "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593"
+      },
+      {
+        "path": "node_modules/@fontsource/manrope/files/manrope-latin-400-normal.woff2",
+        "sha256": "849290ef12a2eeb9af5c11924120d11aa4ae8b435ed3347d7fc8bc240c293ca3"
+      }
+    ]
+  },
+  "narration": {
+    "provider": "kokoro-local",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "voice": "af_heart",
+    "license": "Established Apache2.0model terms; no voice cloning or paid API",
+    "source": {
+      "path": "src/production/narration/devils-hole.json",
+      "sha256": "512ad3173ba39a545328a60159cfdb7a057bb9f857f527ee680a6128c4dde0e3"
+    }
+  },
+  "sound": {
+    "source": {
+      "path": "src/production/narration/devils-hole-soundscape.json",
+      "sha256": "77e11b0e11984f1dd2008cff13ab77ea97de334f54409b4972dcafd98d9556df"
+    },
+    "rights": "Magnivis original seeded procedural water and connection cues; no historical recordings or music."
+  },
+  "research": "NPS/USGS evidence consultation-only. Qualitative motion, not recorded or calibrated event data.",
+  "approvalScope": "Owner authorized candidate production only; no master/platform/publication approval.",
+  "consultedAnatomyReference": {
+    "inspection": "content-intelligence/cycles/cycle-13/production-v1/pupfish-visual-inspection.json",
+    "usage": "Consultation only, original rounded-tail illustration; no external pixels in production."
+  }
+}

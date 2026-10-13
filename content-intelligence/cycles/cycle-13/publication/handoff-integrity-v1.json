@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-13T09:19:52.011111+00:00",
+  "gate": "AHMET \u2014 PUBLICATION REVIEW \u00b7 Cycle #13 Revision 2",
+  "master": {
+    "path": "artifacts/masters/devils-hole-cycle13-candidate-v2.mp4",
+    "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+    "bytes": 33491428
+  },
+  "cycleState": {
+    "path": "workflow/cycles/cycle.13/state.json",
+    "sha256": "4eefcb3fd716c33f5818f5e2b3a8988506c1ca09611147211dddf79b73a05b79",
+    "bytes": 9360
+  },
+  "stage": "publication-review",
+  "revision": 17,
+  "ownerMasterApproval": "Approved exact V2 for package preparation, subject to final native-device and audio acceptance",
+  "finalNativeDeviceAcceptance": "pending",
+  "finalAudioAcceptance": "pending",
+  "publicationAuthorized": false,
+  "newMedia": 0,
+  "packageState": "prepared-for-publication-review; not declared publishable",
+  "checks": {
+    "releaseSourceAndApprovalChain": true,
+    "fourManifestsAndMediaResolutions": true,
+    "technicalRecheck": true,
+    "typecheck": true,
+    "lint": true,
+    "defaultPnpmCheck": "Two required runs hit five-second timeout(s) in unchanged historical tests; logs preserved",
+    "fullSuiteTwoWorkers": {
+      "passed": true,
+      "testFiles": 53,
+      "tests": 501,
+      "command": "pnpm exec vitest run --maxWorkers=2"
+    },
+    "gitDiffCheck": true,
+    "durability": {
+      "passed": true,
+      "canonicalPayloads": 1074,
+      "legacyRegisteredArtifacts": 731
+    },
+    "preservation": {
+      "passed": true,
+      "baselineFiles": 4919
+    }
+  },
+  "remainingPresentationUnknowns": 44,
+  "uncertaintyAcceptedByOwner": false,
+  "limits": [
+    "Machine signal and sampled pictures do not prove continuous listening/native-device acceptance.",
+    "Small scientific/disclosure labels require mobile inspection.",
+    "Actual native UI/crops/cover precision/processing/live account settings untested.",
+    "Default test-run timing limitation retained; no input/test/config changes."
+  ],
+  "externalActions": [],
+  "evidence": [
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/controller-handoff-v1.json",
+      "sha256": "51f542f675f237afb97514883327260bf4b7ed8324a438633ab3cb778f47d493",
+      "bytes": 8426
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/durability-retry.log",
+      "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/durability.log",
+      "sha256": "f706e55bd87b523084f2ea864999b4226e176362dd1d6e17375f6f8e89b02ff2",
+      "bytes": 1135
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/cover-evidence-v1.json",
+      "sha256": "b5d6035b6ed826cdbfc9ecea101b7c9a75df2342813b46b97352d3003f31e282",
+      "bytes": 2008
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/cover-profile-v1.json",
+      "sha256": "d56a484539f766a5b75115b428fa05cd6eff58a996c9eebd5d46f44469fcf4cf",
+      "bytes": 1786
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/manifest-v1.json",
+      "sha256": "9866e5116dff210d80516ef085671d178ab6771d2dcbfd999d6786c5acab515f",
+      "bytes": 1691
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/metadata-v1.json",
+      "sha256": "96116cb927836ae8432724a6f58b8c9e562c88fa35f3b4f6dd20976279afbc68",
+      "bytes": 7457
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/review-v1.md",
+      "sha256": "58751264e8d9af974cde47549a92419a7a8b60f167dabb91510279ba0bf1040b",
+      "bytes": 2973
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/upload-copy-v1.txt",
+      "sha256": "9eb10391caf9351de1af2a849720e70f4a3b14a844cd8d9d468fdc583018a3a9",
+      "bytes": 4420
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/video-evidence-v1.json",
+      "sha256": "7045e70afdc2e2ed3a9a9937fbce9763bcdc1d48058d3a545a6c323cdf9c9933",
+      "bytes": 75944
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/facebook/video-profile-v1.json",
+      "sha256": "79a8e82c2d6e011deb3993ebd012296009397d1fe3fcc8e4efd3416b1aebbab5",
+      "bytes": 2327
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/cover-evidence-v1.json",
+      "sha256": "b013f860b6ab1a643938c3546d5d2d1205c990e823236e6b536dcd6a6e0f5d1d",
+      "bytes": 2010
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/cover-profile-v1.json",
+      "sha256": "6981f7c2fcdb3535d950e79f0e6377ffba9d7657385afd708ce05f3f49e39820",
+      "bytes": 1789
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/manifest-v1.json",
+      "sha256": "87fe905db42d2b94c2b1f07c6a4d5bdd367720e321e3af0c16a65cd185cc68d2",
+      "bytes": 1696
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/metadata-v1.json",
+      "sha256": "f3ad6cc9ecd0162aeae5c792b4627e7dc7880d01847d60a721fe977d999010bf",
+      "bytes": 7277
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/review-v1.md",
+      "sha256": "0663afdd2cb1b879d863483d3823dacd5d97467318648237833ebc5d0d917c3f",
+      "bytes": 2862
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/upload-copy-v1.txt",
+      "sha256": "a91f06b039f3ce5bc1bc0b935379d379c3cd7ec497c5a2c14aaf824c55b06925",
+      "bytes": 4225
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/video-evidence-v1.json",
+      "sha256": "1f185578458607cbc37ee75e88c9d9e816b43b33104f51157a48f4ef58e69127",
+      "bytes": 75948
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/instagram/video-profile-v1.json",
+      "sha256": "39008ef78462da010d2fdf2fdf1bb08d6d96c64864425f507b4c22409aac9e3e",
+      "bytes": 2345
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/master-approval-v1.json",
+      "sha256": "455e8cb2aade7700fe75e7ca570e58637ae946c0793446862660ae459ade28fc",
+      "bytes": 1419
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/master-lock-v1.json",
+      "sha256": "ad90e359db9b2b18d66aeb1dcac8bb934eaf8c30f2ccdb7146f3b748822c1056",
+      "bytes": 1300
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/mobile-audio-assessment-v1.json",
+      "sha256": "d9d32a946604e151d251a642db49a8bb54235bb61f36fe0ee584c2497a94039f",
+      "bytes": 2803
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/native-device-audio-checklist-v1.md",
+      "sha256": "80c9a019794f876e40e29c359a2aab650b48b06b73f23fdb60293b6823e322c7",
+      "bytes": 2794
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/owner-instruction.md",
+      "sha256": "e19c58c27a41d10a9caaa6de756d5429ec6356e4a8a8478f81f67b24934f7767",
+      "bytes": 945
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/owner-review-v1.md",
+      "sha256": "d2071e3449b5f3a040bb6278f56eea70728fc2ad96ad0a21039024ccf7617675",
+      "bytes": 20213
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/policy-inspection-v1.json",
+      "sha256": "c733b075b5f88f96dcd10a7ef8ad88c9b29fadec4f96621567139270240321a8",
+      "bytes": 5381
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/policy-sources/instagram-reels-body.txt",
+      "sha256": "68ecdaea52f2e634444f0e0beb192ce08ce3f4ee9310bb446904db1ec95d0ed6",
+      "bytes": 140039
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/presentation-analysis-v1.json",
+      "sha256": "973407be7e2dcda5f3ddd1fc3823a89d28d7df9e9b0da14debeb80e9b6fa74f4",
+      "bytes": 2363
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/presentation-start-v1.json",
+      "sha256": "4091aff7cdcb6713ba6d5c2c11f69e9bba4b3e83907f15e592f95d1fc1d033d6",
+      "bytes": 288
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/preservation-baseline-v1.json",
+      "sha256": "1cc766c71d84ed548f7a0cf728754e90f83165011f29d6104b2749bd91e340e4",
+      "bytes": 860246
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/preservation-verification-v1.json",
+      "sha256": "5d18ca1f981f0bd58e7df9cc44d6aa92f04e219d1f61619a562cde89d59ebed3",
+      "bytes": 776
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/preserved-master-review-state.json",
+      "sha256": "35e70184ab94a149027f75b265ea41dcd5afd7ffe9b66fe9665177944187d066",
+      "bytes": 7572
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/contact-sheet-recheck-v1.json",
+      "sha256": "16109af59ac53807476b4ee77001a9213f3bc610405cde220e2764316de46547",
+      "bytes": 564
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/facebook-media-resolution-v1.json",
+      "sha256": "391947ee11614f1d5cd06554fcf633f2758f2987debe70ec0fc0d40fe7f12d63",
+      "bytes": 904
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/instagram-media-resolution-v1.json",
+      "sha256": "37ad3a0473b20beb786cdf37e74f0db9f01ae8e5dae16506bc093dcb55aa7459",
+      "bytes": 905
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/master-release-validation-v1.json",
+      "sha256": "136eca0e70ac679c32a7cb117e1539f1428a357c2ec7e460642aa05db4ec6300",
+      "bytes": 1424
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/release-validation-at-gate.json",
+      "sha256": "7884aa287890e62d148a6d71840d251ce5b9411d4df3d515ddd953e120dc3b5f",
+      "bytes": 5011
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/release-validation-before-gate.json",
+      "sha256": "62b3705f458b65f987a78b55beb551f8f76f20ba513afcfbeccb74513a67497a",
+      "bytes": 5005
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/selected-cover-v1.json",
+      "sha256": "a4c8e9bf38d87de634d21995c615936246c141807875bf35c2af9eb99689da3e",
+      "bytes": 1876
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/technical-recheck-v1.json",
+      "sha256": "37baff965006ca16a2b2f89bf418077c922a193bd4cea44d833afd75e547d1e6",
+      "bytes": 554
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/tiktok-media-resolution-v1.json",
+      "sha256": "61c4103a28d9c04986d3da978eae37543cbf890cb4fda9b0fea2cafa7d35beae",
+      "bytes": 902
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/qa/youtube-media-resolution-v1.json",
+      "sha256": "c762ad5aaa4426ee6ff75b877b8929f0d417f682bfbc043a9cf63fd525770e11",
+      "bytes": 903
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/release-inspection-v1.json",
+      "sha256": "a4757c46ea3a1204cdb66f34d92de44e67da18b0ad2980be125c8c66b75cc279",
+      "bytes": 13991
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/release-v1.json",
+      "sha256": "59efbd8cc23833a13661a722b7353d274d3315b7676e0f36c8787f13a43cc972",
+      "bytes": 5375
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/repository-check-retry.log",
+      "sha256": "a34297762777b9362c84eae09fe6e7d59d28ebc58b1829fa00e93ef1669ee10b",
+      "bytes": 1933
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/repository-check.log",
+      "sha256": "065744172bec54ea76cced42705379c8f329c9047aa86fd631fa867df280d0d6",
+      "bytes": 2944
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/repository-tests-two-workers.log",
+      "sha256": "693f019c65edef24dedc5b18d7bcb338e194ba11ccb6e8abb406eccb3944bf6a",
+      "bytes": 194
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/risk-register-v1.json",
+      "sha256": "ea457d702459ab62445da3b54396330e0f89003a0d3abcd67f80be1a6882b928",
+      "bytes": 6037
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/source-copy-review-v1.json",
+      "sha256": "daa3df541f781132a81384b493ee404cbde988c7848f65c4689fbf19128881fd",
+      "bytes": 1870
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/technical-qa.log",
+      "sha256": "37baff965006ca16a2b2f89bf418077c922a193bd4cea44d833afd75e547d1e6",
+      "bytes": 554
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/cover-evidence-v1.json",
+      "sha256": "333ef32737e974cbb45b0a09106c9d264e0461c08b7009ed104bb094352e8773",
+      "bytes": 2004
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/cover-profile-v1.json",
+      "sha256": "e48ecfc65d6b589d7505f9bd6389a0e056a1b1045bdde746382df35b83412eed",
+      "bytes": 1780
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/manifest-v1.json",
+      "sha256": "2a8917558470a857a62ce038a7012549b1b370fdea46f2d422753ab193c39d78",
+      "bytes": 1681
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/metadata-v1.json",
+      "sha256": "25ddd6984473eaea14a978bba8fe4d3f9f0092bf7086ac0b4818958e05dba961",
+      "bytes": 6978
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/review-v1.md",
+      "sha256": "6a35aabac656aa2ccfdab72627e109678b16879912e9ac9c31c8667a3699983e",
+      "bytes": 2553
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/upload-copy-v1.txt",
+      "sha256": "7e31167fcf00a94d73981ebe9c80eaff7870a57e2821a99c5eda93f2ce29ffda",
+      "bytes": 3946
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/video-evidence-v1.json",
+      "sha256": "a93f8b072c0d144ada120e6f03f98671a012527a5c39934a48c67849c6565fc8",
+      "bytes": 75932
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/tiktok/video-profile-v1.json",
+      "sha256": "8805058e15265b96a5026d6b05e5ba598da02aadaf693d457156e2a0ed11d89f",
+      "bytes": 2331
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/validation-v1.json",
+      "sha256": "62b3705f458b65f987a78b55beb551f8f76f20ba513afcfbeccb74513a67497a",
+      "bytes": 5005
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/cover-evidence-v1.json",
+      "sha256": "86c959c6850b4cb7cf4f4d6e79e5d4d9e5297d735415502a4dfaa965b4512e82",
+      "bytes": 2006
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/cover-profile-v1.json",
+      "sha256": "23bc5a81ae622e83a8c6b581822725c8650e96cf62077ae1243571a7cc8d5d6d",
+      "bytes": 1783
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/manifest-v1.json",
+      "sha256": "ec101d49f5038f01b2a5a7615db12181e4b566de7cea7a3860046832d0221d96",
+      "bytes": 1686
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/metadata-v1.json",
+      "sha256": "51cdd15cb9817edfdfed3ffc14db720ae2aa5daaff653426a7aec9621a2a192e",
+      "bytes": 7582
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/review-v1.md",
+      "sha256": "b8b44fe713b4bbbbc356da83877778142125f85a2c4467bdc58a099b1df16b60",
+      "bytes": 3282
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/upload-copy-v1.txt",
+      "sha256": "5cbecec5ee6bb8e89c7292a76b1a4de6cccfbc822154e6ca2c11940d42d07306",
+      "bytes": 4518
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/video-evidence-v1.json",
+      "sha256": "7cc0c8c10507b9e1a5836b9274dc0cf4838c1493e2d5977ea6d72a17a98212bd",
+      "bytes": 75943
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/youtube/video-profile-v1.json",
+      "sha256": "e6c6133a03137627f32fa73ab48036ba610c5fc9fd739480bf1a1f5145000024",
+      "bytes": 2355
+    }
+  ]
+}

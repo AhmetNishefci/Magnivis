@@ -1,0 +1,111 @@
+{
+  "recordKind": "cycle12-discovery-validation",
+  "recordedAt": "2026-10-11T16:58:38.818615Z",
+  "environment": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1",
+    "VITEST_MAX_WORKERS": "4"
+  },
+  "checks": [
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 53,
+      "testsPassed": 501,
+      "gitDiffCheck": "passed",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-12/validation/check-passed.log",
+        "sha256": "b0087eb5d5e0317ba71090790767800310df726df85c1850dad74f12a0fd5b76"
+      }
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "canonicalPayloads": 957,
+      "durableArtifacts": 731,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-12/validation/durable-passed.log",
+        "sha256": "ede783d41b0b79531603817eca1c8e0f7a1bb393ff5b239bc2c3b8d5a83e1056"
+      }
+    },
+    {
+      "command": "node --import tsx scripts/analytics.ts verify/context <original manifest>",
+      "exitCode": 0,
+      "originalSources": 5,
+      "dataRecords": 207,
+      "postRecords": 38,
+      "warnings": "Original capture/window/denominator/mapping/TikTok/YouTube-reconciliation warnings preserved; no correction or imputation.",
+      "context": {
+        "path": "content-intelligence/cycles/cycle-12/analytics-context.json",
+        "sha256": "a6cc090c948653a84f12908bb576a071687d3e3bd17e549e19d91d40f2bcc383"
+      },
+      "strictMetricSnapshotsCreated": 0,
+      "validatedLearningSignalsCreated": 0
+    },
+    {
+      "command": "chooseTopicAutonomously + controller start/begin/complete/review/status",
+      "exitCode": 0,
+      "cycleId": "cycle.12",
+      "revision": 2,
+      "gate": "premise-review",
+      "ownerPremiseDecision": null,
+      "integrity": {
+        "path": "content-intelligence/cycles/cycle-12/handoff-integrity.json",
+        "sha256": "27b649538de5fb6f56d6b8226890eb336bc099fda18564f0a1b8071675807bc2"
+      },
+      "replay": {
+        "path": "content-intelligence/cycles/cycle-12/workflow-replay.json",
+        "sha256": "4518a624959078e91c786fe0fb42b92a512762801c100d4fd70027539dab0b68"
+      }
+    },
+    {
+      "command": "independent SHA-256 pre-existing evidence preservation audit",
+      "passed": true,
+      "filesChecked": 1937,
+      "changedOrMissing": [],
+      "baseline": {
+        "path": "content-intelligence/cycles/cycle-12/repository-baseline.json",
+        "sha256": "897fa1788b1da0cf181eb139c2d82fce146c5f100082bbf8009d8fca78dd7d30"
+      },
+      "report": {
+        "path": "content-intelligence/cycles/cycle-12/historical-preservation.json",
+        "sha256": "423503e16869932c1b76f3fa73f88a8234117290df7f30b1d0eebd9d1dd3d5ee"
+      }
+    }
+  ],
+  "initialAttempts": [
+    {
+      "attempt": "Default shell used Node24 and package-manager launcher attempted network identity verification; then tsx CLI sandbox IPC denied.",
+      "resolution": "Use installed supported Node22/pnpm10.17.1. Direct node --import tsx for controller/analytics, approved local escalation for required pnpm checks. No package or environment configuration changed."
+    },
+    {
+      "attempt": "Unbounded pnpm check interrupted after two historical-test failures and stalled progress; first log lacks final failure diagnostics.",
+      "resolution": "Retained first log; reran complete check with VITEST_MAX_WORKERS=4 as in V2 validation. All501 passed; no test/validator changes or asserted root cause.",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-12/validation/check-initial-interrupted.log",
+        "sha256": "71ac9e781c253b480b24a18fb2787919ee30bbbd95009fce68a90eb34fadf44c"
+      }
+    }
+  ],
+  "scope": {
+    "discoveryStarted": true,
+    "premiseApproved": false,
+    "fullScriptOrCreativeDirectionExecuted": false,
+    "productionOrRender": false,
+    "platformActions": false,
+    "newRuntimeArchitecture": false,
+    "historicalChanges": false,
+    "commitPushMainMergeOrRestoreClaimed": false
+  },
+  "review": {
+    "path": "content-intelligence/cycles/cycle-12/owner-review.md",
+    "sha256": "e3755c0780c99324528cf2a8abc3d32fa149bf31f30825712d204312717d3d3f"
+  },
+  "selection": {
+    "path": "content-intelligence/cycles/cycle-12/topic-selection.json",
+    "sha256": "1132dcaa3bc745cfbd5501b4888884610b8b74eae4b0ebaa98d19d91432efe4e"
+  },
+  "selectionJsonSha256": "e2965c0224c1fbe73b30258a6a226d0a8fc5545c7930eb3239132a7be0ea8253"
+}

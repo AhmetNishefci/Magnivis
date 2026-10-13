@@ -1,0 +1,488 @@
+{
+  "id": "devils-hole-seismic-seiche",
+  "revision": 1,
+  "topic": "Devils Hole and the distant Kamchatka earthquake",
+  "centralQuestion": "How did an earthquake thousands of miles away make waves in a Nevada desert cave?",
+  "taxonomy": {
+    "pillar": "earth-nature",
+    "domains": [
+      "seismology",
+      "geography",
+      "conservation"
+    ],
+    "topics": [
+      "devils-hole",
+      "seismic-seiche",
+      "kamchatka-earthquake",
+      "pupfish"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "Passing seismic motion can set local enclosed water oscillating; a modest physical disturbance can affect the shallow shelf of an apparently isolated habitat.",
+  "viewerPayoff": "Explain the distant-earthquake/local-water connection and its limited, real ecological consequence.",
+  "sources": [
+    {
+      "id": "source.devils-hole-seismic-seiche.event",
+      "organization": "National Park Service / Death Valley National Park",
+      "title": "Russian earthquake causes minor disturbance in Devils Hole",
+      "sourceType": "government",
+      "url": "https://home.nps.gov/deva/learn/news/devils-hole-2025-07-29.htm",
+      "retrieved": "2026-10-12",
+      "notes": "Direct site-operator event report and biological interpretation. Authoritative for local observations, not an independent analysis of raw monitoring data. Distance, delay and wave size are reported NPS values. Amplitude convention and raw onset series are absent; no universal seismic speed is derived. December/February ecological effects and the March count of 38 fish are separate observations and unused. The before image bears July 14, 2025; the after image July 30. They are not immediately adjacent observations or a quantitative mortality comparison."
+    },
+    {
+      "id": "source.devils-hole-seismic-seiche.seiche",
+      "organization": "U.S. Geological Survey / Earthquake Hazards Program",
+      "title": "Seismic Seiches",
+      "sourceType": "government",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/seismic-seiches",
+      "retrieved": "2026-10-12",
+      "notes": "Established mechanism from the relevant scientific agency. A different institution from NPS, not independent replication of July 2025 cave monitoring. General physics, not a calculated Devils Hole normal mode, calibrated amplitude or exact propagation path. No one-path model or claim that distance alone determines local wave height."
+    },
+    {
+      "id": "source.devils-hole-seismic-seiche.ground",
+      "organization": "U.S. Geological Survey / Earthquake Hazards Program",
+      "title": "Cool Earthquake Facts",
+      "sourceType": "government",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/cool-earthquake-facts",
+      "retrieved": "2026-10-12",
+      "notes": "Relevant official explanation for qualitative ground-water coupling and pronunciation. Only the bounded passage is used; volatile facts elsewhere on the page are unused. The shaken bathtub is a labeled analogy, not a measured simulation of cave displacement or frequency. Magnitude does not imply identical shaking in Russia and Nevada."
+    },
+    {
+      "id": "source.devils-hole-seismic-seiche.habitat",
+      "organization": "National Park Service / Death Valley National Park",
+      "title": "Devils Hole",
+      "sourceType": "government",
+      "url": "https://www.nps.gov/deva/learn/nature/devils-hole.htm",
+      "retrieved": "2026-10-12",
+      "notes": "Site-operator ecological and geographic context. Related to the event report, not counted as independent replication. Older temperature, population and isolation-age wording is unused. Generic two-metre waves do not describe July 2025. An unmapped bottom does not mean bottomless. Full cave geometry is unknown; show only an illustrative near-surface cutaway."
+    },
+    {
+      "id": "source.devils-hole-seismic-seiche.catalog",
+      "organization": "U.S. Geological Survey / reviewed ComCat event record",
+      "title": "M8.8 — 2025 Kamchatka Peninsula, Russia Earthquake, us6000qw60",
+      "sourceType": "government",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=us6000qw60",
+      "retrieved": "2026-10-12",
+      "notes": "Direct USGS scientific-catalog HTTP GeoJSON response, with exact bytes preserved. Corroborates magnitude and origin date, not local wave size or delay. Current reviewed catalog metadata may differ from initial news estimates; no older epicenter or depth estimate is reused. Do not manufacture an exact cave-disturbance timestamp from the reported 21-minute interval. Calendar conversions are labeled derivations, not independent timestamp observations."
+    },
+    {
+      "id": "source.devils-hole-seismic-seiche.rights",
+      "organization": "National Park Service",
+      "title": "Disclaimer — Ownership",
+      "sourceType": "government",
+      "url": "https://www.nps.gov/aboutus/disclaimer.htm",
+      "retrieved": "2026-10-12",
+      "notes": "Official provenance policy. Specific asset credits were checked on the event and habitat pages; the policy is not blanket clearance of every website asset. NPS-credited images were consulted only. No external image selected for production and no protected NPS marks reproduced. Any later exact image import requires asset-specific provenance, canonical registration and an ASSET-LICENSES entry."
+    }
+  ],
+  "claims": [
+    {
+      "id": "devils-hole-seismic-seiche.claim.local-event",
+      "statement": "NPS reports that the July 29, 2025 Kamchatka earthquake caused waves in Devils Hole, a water-filled cave in Nevada.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar."
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.habitat",
+          "locator": "Extracted body lines22–27",
+          "notes": "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar."
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.catalog",
+          "locator": "GeoJSON properties.mag, properties.time, properties.status and geometry.coordinates",
+          "notes": "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.magnitude",
+      "statement": "The reviewed USGS event magnitude is 8.8.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "Magnitude is dimensionless, not local intensity or an asserted Richter-scale measurement."
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.catalog",
+          "locator": "GeoJSON properties.mag, properties.time, properties.status and geometry.coordinates",
+          "notes": "Magnitude is dimensionless, not local intensity or an asserted Richter-scale measurement."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Magnitude is dimensionless, not local intensity or an asserted Richter-scale measurement."
+      ],
+      "type": "quantitative",
+      "quantity": {
+        "kind": "scalar",
+        "value": 8.8,
+        "unit": "magnitude",
+        "precision": "approximate"
+      },
+      "basis": "estimated",
+      "display": "magnitude 8.8"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.distance",
+      "statement": "NPS reports the Devils Hole disturbance nearly 4,000 miles from the earthquake.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "Approximate reported separation; no precise geodesic distance or actual travel path implied."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Approximate reported separation; no precise geodesic distance or actual travel path implied."
+      ],
+      "type": "quantitative",
+      "quantity": {
+        "kind": "scalar",
+        "value": 4000,
+        "unit": "mile",
+        "precision": "approximate"
+      },
+      "basis": "estimated",
+      "display": "nearly 4,000 miles"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.delay",
+      "statement": "NPS reports waves triggered at Devils Hole 21 minutes after the earthquake.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "Reported elapsed time, not a precise onset/arrival series or universal travel-time law."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Reported elapsed time, not a precise onset/arrival series or universal travel-time law."
+      ],
+      "type": "quantitative",
+      "quantity": {
+        "kind": "scalar",
+        "value": 21,
+        "unit": "min",
+        "precision": "approximate"
+      },
+      "basis": "estimated",
+      "display": "21 minutes (NPS reported)"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.forcing",
+      "statement": "Seismic waves can travel through and along Earth; passing ground motion can set enclosed water oscillating back and forth.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "notes": "Qualitative coupling; distant seiches are associated with surface waves. No exact resonance, perceptible local shaking or uniform global motion claimed."
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.ground",
+          "locator": "Extracted body lines73–75; seiche definition and pronunciation",
+          "notes": "Qualitative coupling; distant seiches are associated with surface waves. No exact resonance, perceptible local shaking or uniform global motion claimed."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Qualitative coupling; distant seiches are associated with surface waves. No exact resonance, perceptible local shaking or uniform global motion claimed."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.local-water",
+      "statement": "A seismic seiche is oscillation of water already in an enclosed pool in response to seismic motion, not ocean water traveling into Nevada.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "notes": "Distinguish energy transport from bulk water transport. No underground channel to Russia."
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.ground",
+          "locator": "Extracted body lines73–75; seiche definition and pronunciation",
+          "notes": "Distinguish energy transport from bulk water transport. No underground channel to Russia."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Distinguish energy transport from bulk water transport. No underground channel to Russia."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.distinction",
+      "statement": "A seismic seiche is distinct from an ocean tsunami generated by displacement of seawater.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "notes": "No claim that seiches are always small, tsunamis are caused only by earthquakes, or this quake generated no real ocean tsunami."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "No claim that seiches are always small, tsunamis are caused only by earthquakes, or this quake generated no real ocean tsunami."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.wave-size",
+      "statement": "NPS reports ten-inch waves at Devils Hole for the July 2025 event.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "Narrate about ten inches. Crest-to-trough, amplitude and runup conventions are not supplied; animation is not calibrated to this reported value."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Narrate about ten inches. Crest-to-trough, amplitude and runup conventions are not supplied; animation is not calibrated to this reported value."
+      ],
+      "type": "quantitative",
+      "quantity": {
+        "kind": "scalar",
+        "value": 10,
+        "unit": "in",
+        "precision": "approximate"
+      },
+      "basis": "estimated",
+      "display": "about ten inches (NPS reported)"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.shelf",
+      "statement": "The endangered Devils Hole pupfish depend on a shallow shelf near the surface for most of their food and spawning.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "Shelf function, not a claim that all fish remain on it or deep water is uninhabited."
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.habitat",
+          "locator": "Extracted body lines22–27",
+          "notes": "Shelf function, not a claim that all fish remain on it or deep water is uninhabited."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "Shelf function, not a claim that all fish remain on it or deep water is uninhabited."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.impact",
+      "statement": "The July 2025 waves removed some material from the shelf. NPS described the disturbance as minor and biologists were less concerned than after earlier quakes.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "No near-extinction, mortality count, quantified egg loss, complete food loss or confirmed population rebound."
+        }
+      ],
+      "verificationStatus": "supported",
+      "caveats": [
+        "No near-extinction, mortality count, quantified egg loss, complete food loss or confirmed population rebound."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.maximum-height",
+      "statement": "The July 2025 waves reached two metres.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.habitat",
+          "locator": "Extracted body lines22–27",
+          "notes": "A generic older maximum cannot be transferred to this event; excluded."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "A generic older maximum cannot be transferred to this event; excluded."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.mortality",
+      "statement": "The July 2025 quake almost wiped out the remaining pupfish.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "Unsupported and contrary to the scoped minor impact; excluded."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Unsupported and contrary to the scoped minor impact; excluded."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.exact-resonance",
+      "statement": "A specific cave resonance period amplified the Kamchatka waves by a known factor.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "notes": "No local normal-mode or forcing measurements acquired; unresolved and unselected."
+        }
+      ],
+      "verificationStatus": "uncertain",
+      "caveats": [
+        "No local normal-mode or forcing measurements acquired; unresolved and unselected."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.current-count",
+      "statement": "Only 38 Devils Hole pupfish remain today.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "The March 2025 historical count is not a current count; excluded."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "The March 2025 historical count is not a current count; excluded."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.bottomless",
+      "statement": "Devils Hole is bottomless.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.habitat",
+          "locator": "Extracted body lines22–27",
+          "notes": "Unmapped is not infinite depth; excluded."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Unmapped is not infinite depth; excluded."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.ocean-arrival",
+      "statement": "The ocean tsunami traveled into Devils Hole.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "notes": "Wrong causal mechanism; excluded."
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "notes": "Wrong causal mechanism; excluded."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Wrong causal mechanism; excluded."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "devils-hole-seismic-seiche.caveat.bounds",
+      "statement": "Reported event values remain qualified. Energy travels through/along Earth; local water oscillates. Ten-inch July 2025 waves and minor shelf disturbance, not an ocean tsunami reaching Nevada, a two-metre wall of water, near-extinction or a current fish count. Cave/ground-motion illustrations are schematic, not measured data or footage.",
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.magnitude",
+        "devils-hole-seismic-seiche.claim.distance",
+        "devils-hole-seismic-seiche.claim.delay",
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water",
+        "devils-hole-seismic-seiche.claim.distinction",
+        "devils-hole-seismic-seiche.claim.wave-size",
+        "devils-hole-seismic-seiche.claim.shelf",
+        "devils-hole-seismic-seiche.claim.impact"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "devils-hole-seismic-seiche.hook.connection",
+      "archetype": "distant-local-connection",
+      "text": "An earthquake nearly four thousand miles away made waves in this Nevada desert pool.",
+      "viewerPromise": "Explain what traveled and why water already inside a Nevada cave moved.",
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.distance"
+      ]
+    },
+    {
+      "id": "devils-hole-seismic-seiche.hook.delay",
+      "archetype": "delayed-observation",
+      "text": "Twenty-one minutes after a distant earthquake, this desert pool was moving. How?",
+      "viewerPromise": "Distinguish seismic energy from traveling ocean water.",
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.delay",
+        "devils-hole-seismic-seiche.claim.local-water"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "devils-hole-seismic-seiche.narrative.connection",
+      "title": "What traveled?",
+      "description": "Local slosh linked to remote quake → brief event context → seismic forcing → enclosed oscillation → shelf consequence → connected Earth insight.",
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.magnitude",
+        "devils-hole-seismic-seiche.claim.distance",
+        "devils-hole-seismic-seiche.claim.delay",
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water",
+        "devils-hole-seismic-seiche.claim.distinction",
+        "devils-hole-seismic-seiche.claim.wave-size",
+        "devils-hole-seismic-seiche.claim.shelf",
+        "devils-hole-seismic-seiche.claim.impact"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "devils-hole-seismic-seiche.visual.local-water",
+      "title": "The water stays here",
+      "description": "Original geographic locator and faithful near-surface cave illustration; separate seismic ground motion from local water rocking and limited shelf-material movement.",
+      "claimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.magnitude",
+        "devils-hole-seismic-seiche.claim.distance",
+        "devils-hole-seismic-seiche.claim.delay",
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water",
+        "devils-hole-seismic-seiche.claim.distinction",
+        "devils-hole-seismic-seiche.claim.wave-size",
+        "devils-hole-seismic-seiche.claim.shelf",
+        "devils-hole-seismic-seiche.claim.impact"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "Why do different pools respond differently to the same earthquake?",
+    "How can ground-water systems register distant seismic motion?"
+  ],
+  "followUpOpportunities": [],
+  "editorialStatus": "review"
+}

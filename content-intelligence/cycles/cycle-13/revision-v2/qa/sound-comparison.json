@@ -1,0 +1,20 @@
+{
+  "enteredAt": "2026-10-12T23:39:47.930996Z",
+  "masterSha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+  "comparison": {
+    "path": "artifacts/qa-evidence/devils-hole-cycle13-v2/voice-only-then-full-mix.wav",
+    "sha256": "9a2d5ee8bfb4f01ee4ecb9a8b12cf09526ea7c2debc2ccc267f46fddc1ec1343",
+    "order": "Same cue6: source voice-only at actual master gain, then decoded actual full V2 mix.",
+    "start": 25.2,
+    "duration": 7.05
+  },
+  "settings": {
+    "schemaVersion": 1,
+    "narrationGain": 0.9,
+    "soundGain": 8,
+    "rationale": "V1 cue6 procedural sound measured42dB below narration RMS. Lift only the existing quiet original sound18dB; keep narration unchanged. Measure actual mix/peak and preserve owner listening uncertainty. No disaster rumble or archival-sound implication.",
+    "meaningChanged": false
+  },
+  "signalBasis": "V1 cue6 voice mean-23.2dB, original sound mean-65.6dB; gain8raises only sound18.06dB. Final exact mix independently measured.",
+  "limits": "No subjective listening acceptance; owner assesses prosody, pronunciation, sound purpose and rhythm."
+}

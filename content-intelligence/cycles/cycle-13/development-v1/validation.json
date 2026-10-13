@@ -1,0 +1,92 @@
+{
+  "recordedAt": "2026-10-12T22:27:15.024555+00:00",
+  "passed": true,
+  "runtime": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1",
+    "vitestMaximumWorkers": 4
+  },
+  "checks": [
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 53,
+      "tests": 501,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/repository-check.log",
+        "sha256": "adc9f952fd25e298b67ba15a5a378c362ea23fad8af0212ebd0a54d6222438f9"
+      }
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "canonicalPayloads": 999,
+      "durableArtifacts": 731,
+      "historicalMissingExpectationsUnchanged": 1,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/durability.log",
+        "sha256": "43eb3975ee641b60243197bc5036aa2fa9c024ca8bee0e6c017b1928c2f0cbf7"
+      }
+    },
+    {
+      "command": "node --import tsx content-intelligence/cycles/cycle-13/development-v1/validate-development.ts",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/handoff-integrity.json",
+        "sha256": "81d59a06b0176a41e5229d8bd206c4b061464ad99eeb783aa777803ba5e38db8"
+      }
+    },
+    {
+      "command": "node --import tsx scripts/analytics.ts verify <existing intake manifest>",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/analytics-preservation.json",
+        "sha256": "ed65c71386589535120762da9f76766de671bc950ec42c6c1c73b3a120c21464"
+      }
+    },
+    {
+      "command": "Existing working-tree byte preservation comparison",
+      "report": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/historical-preservation.json",
+        "sha256": "e4fa1434b30b393aa3caab356fff7ab21ffb23691604ee662af0dfb37e7b4ea1"
+      },
+      "filesChecked": 4635,
+      "onlyExistingChanges": [
+        "workflow/cycles/cycle.13/state.json",
+        "workflow/project-state.json"
+      ]
+    }
+  ],
+  "ownerReview": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/development-review.md",
+    "sha256": "52fc37e738b99cc7b61cd2d3037b6ea14720720a67e66ac575663e0c4249ebca"
+  },
+  "productionScope": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/production-scope-checkpoint.json",
+    "sha256": "d1d1d081a6f5af7fae3ac0a96734de85ee79b3cd49dea5e848b2b4668d04c8b1"
+  },
+  "script": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/script.md",
+    "sha256": "6753e010c385e6995902a354a828e6875b2f6fdc875e4c201b9235968cbbd8ea"
+  },
+  "knowledgePackage": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/knowledge-package.ready.json",
+    "sha256": "3b96a29860652751efbdeb7aad5edf110029dd56ba4852bf205ab5436fcde9a0"
+  },
+  "contentAsset": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/content-asset.ready.json",
+    "sha256": "7bf638ab0005f1782596afb3320b74f2732b71fd8d221e28857dcfdfb6a5eb1b"
+  },
+  "creativeDirection": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/direction-v1.json",
+    "sha256": "fa91f6b6253636273a3d6171adf1da3d152fd80d7959b6789320d739773f8f56"
+  },
+  "provenance": "Manual session source inspection and existing native internal evidence/direction controllers. No fabricated provider envelope, model usage, human approval or external state.",
+  "productionBegun": false,
+  "newProductionMedia": 0,
+  "rendering": "Not applicable: no rendering code or production media changes. Later production requires smoke/full render, exact-media QA and separate rendered-sequence editorial review.",
+  "platformActions": [],
+  "workingTree": "Prior staged and untracked work preserved. No commit, main integration, remote backup or clean-machine restore claimed."
+}

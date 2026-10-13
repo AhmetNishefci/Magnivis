@@ -1,0 +1,97 @@
+{
+  "recordedAt": "2026-10-12T22:10:14.102674+00:00",
+  "passed": true,
+  "runtime": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1",
+    "vitestMaximumWorkers": 4
+  },
+  "checks": [
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFilesPassed": 53,
+      "testsPassed": 501,
+      "whitespace": "passed",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-13/repository-check.log",
+        "sha256": "ac31de8bdeea73e39e475c066ddc054d9310e81fa2fb9dd86ca5294325707937"
+      }
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "canonicalPayloads": 999,
+      "durableArtifacts": 731,
+      "historicalMissingExpectations": 1,
+      "existingHistoricalLimitationsUnchanged": true,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-13/durability.log",
+        "sha256": "43eb3975ee641b60243197bc5036aa2fa9c024ca8bee0e6c017b1928c2f0cbf7"
+      }
+    },
+    {
+      "command": "node --import tsx content-intelligence/cycles/cycle-13/validate-handoff.ts",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-13/handoff-integrity.json",
+        "sha256": "d9715ceae7c3a416a3518fd697e7a8c90f967dce55ed3bb135e38fdcd6f7caab"
+      },
+      "allIndependentJournalsReplayed": 10
+    },
+    {
+      "command": "node --import tsx scripts/analytics.ts verify content-intelligence/operations/analytics-intake-2026-10-11-v1/manifest.json",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-13/analytics-preservation-validation.json",
+        "sha256": "ed65c71386589535120762da9f76766de671bc950ec42c6c1c73b3a120c21464"
+      }
+    },
+    {
+      "command": "Baseline working-tree SHA-256 preservation comparison",
+      "report": {
+        "path": "content-intelligence/cycles/cycle-13/historical-preservation.json",
+        "sha256": "b740461a48edcc31ceb7f07059084b8919997b5cbd08c5a533e0d10a1d2a6e15"
+      },
+      "filesChecked": 4582,
+      "onlyPreExistingChange": "workflow/project-state.json"
+    },
+    {
+      "command": "git diff --check and git diff --cached --check",
+      "exitCode": 0
+    }
+  ],
+  "handoff": {
+    "path": "content-intelligence/cycles/cycle-13/owner-review.md",
+    "sha256": "09a48803c5218fb5677daaf3f8036079cfa2e8422251ec424d6d7a99097f8260"
+  },
+  "controllerHandoff": {
+    "path": "content-intelligence/cycles/cycle-13/premise-review-controller-handoff.json",
+    "sha256": "cef73bd0ef4547e504d2517d2496514b61d3ce84b9ef2eb4ac81d8730e6a228b"
+  },
+  "selection": {
+    "path": "content-intelligence/cycles/cycle-13/topic-selection.json",
+    "sha256": "d31ba0989e992f40448268631f29144222400494d14d29012f5bc6055b7fdd19"
+  },
+  "selectionJsonSha256": "b1d14f32a93b46d9b235cbc117a642b6633e0525ffea91371e5a6c8b1b091ca9",
+  "operationsIndex": {
+    "path": "content-intelligence/operations/flip-publication-v1/publication-index-v1.json",
+    "sha256": "01080016c35fcf7ce953b5d76f5f1c55195ec2acdce43d9edf0cf9b69a226ff8"
+  },
+  "scope": {
+    "cycle13Stage": "premise-review",
+    "ownerPremiseApproved": false,
+    "productionBegun": false,
+    "newProductionMedia": 0,
+    "externalPlatformActions": [],
+    "noCommitOrRemoteBackupClaimed": true,
+    "rendering": "Not applicable: discovery/operations records only; no rendering changes."
+  },
+  "environmentNotes": [
+    "Default shell initially used Node24 and native pnpm launcher stalled; supported installed Node22/corepack pnpm10.17.1 with network disabled used without dependency or environment-file changes.",
+    "Artifact check first failed in sandbox because tsx could not create its IPC pipe; local escalation succeeded, no publication/upload action.",
+    "Sandboxed complete check passed501 tests. A redundant escalation retry started while its outcome was unresolved and was interrupted after the original check passed; the interrupted log is not test-failure evidence."
+  ]
+}

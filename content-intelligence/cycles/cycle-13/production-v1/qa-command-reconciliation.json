@@ -1,0 +1,8 @@
+{
+  "enteredAt": "2026-10-12T22:47:41.986144+00:00",
+  "finding": "Root package.json is a hash-bound approved historical source; adding a QA dispatch there caused historical integrity validation failures. scripts/qa.ts and the existing target resolvers are also bound.",
+  "correction": "Restored exact baseline root package.json. Historical QA and resolvers unchanged. Added parameterized technical QA helper and isolated Cycle13 entry without altering historical bytes.",
+  "currentCommand": "node --import tsx scripts/qa-devils-hole.ts",
+  "comparison": "Same inspectMedia codec/resolution/fps/duration checks, volumedetect non-silence/peak, decoded timestamp frames and contact sheet from existing QA. Additional exact full decode, audio, captions/browser and editorial checks remain separate.",
+  "scope": "Candidate-only QA, no publishing code, no historical approval transfer. Root pnpm qa dispatch remains historical."
+}

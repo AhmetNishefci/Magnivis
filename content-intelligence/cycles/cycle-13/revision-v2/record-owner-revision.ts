@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {sha256Json} from '../../../../src/content-intelligence/run-schema';
+import {mediaHash,loadMediaRegistry} from '../../../../src/artifacts/media';
+import {loadCycle,persistCycleEvent} from '../../../../src/workflow/store';
+const base='content-intelligence/cycles/cycle-13/revision-v2',now=new Date().toISOString(),ref=(path:string)=>({path,sha256:mediaHash(path)}),put=(name:string,data:unknown)=>{const p=`${base}/${name}.json`;writeFileSync(p,JSON.stringify(data,null,2)+'\n',{flag:'wx'});return ref(p);};
+const target=JSON.parse(readFileSync('content-intelligence/cycles/cycle-13/production-v1/master-candidate-v1.json','utf8'));
+const decision=put('owner-master-revision',{schemaVersion:3,id:'owner-decision.cycle-13.master-revision-v2',revision:1,gate:'master-review',cycleId:'cycle.13',targetSha256:sha256Json(target),decision:'revise',enteredAt:now,suppliedReviewTime:null,reviewer:'Ahmet — owner',evidenceBasis:'explicit-owner-message',instruction:readFileSync(`${base}/owner-instruction.md`,'utf8').trim(),reason:'Uniform beige field, small schematics, repeated compositions and presentation-style sequences do not achieve the intended premium educational film.',nonGeneralizations:['No mandatory shot checklist, question hook, CTA, identical intro/outro, visual palette or arbitrary pacing target.','Approved claims and137-word script retained unless material change earns fresh owner review.'],acceptedUnknowns:[]});
+const registry=loadMediaRegistry();let state=persistCycleEvent(process.cwd(),loadCycle(process.cwd(),'cycle.13',registry),{type:'owner-decision',record:decision,at:now},registry);
+const retry=put('creative-revision-start',{cycleId:'cycle.13',reason:'Owner-authorized material visual revision under unchanged verified script/claims; renew hash-bound direction before new production.',ownerDecision:decision});state=persistCycleEvent(process.cwd(),state,{type:'retry-internal',stage:'creative',record:retry,at:new Date().toISOString()},registry);
+console.log({stage:state.stage,revision:state.revision});

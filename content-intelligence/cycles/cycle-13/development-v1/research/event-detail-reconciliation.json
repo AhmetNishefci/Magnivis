@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-10-12T22:23:22.044157+00:00",
+  "catalogResponse": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/research/usgs-event-response.json",
+    "sha256": "0a9e62c258570d2e89794bbd8821570dd7977ed561d5e2696490e722ced93b93"
+  },
+  "eventId": "us6000qw60",
+  "catalogStatus": "reviewed",
+  "magnitude": 8.8,
+  "originTimeUTC": "2025-07-29T23:24:52.483000+00:00",
+  "dateChecks": {
+    "America/Los_Angeles": "2025-07-29T16:24:52.483000-07:00",
+    "Asia/Kamchatka": "2025-07-30T11:24:52.483000+12:00"
+  },
+  "dateBasis": "Epoch-to-UTC and named-zone calendar conversions derived with Python zoneinfo. NPS July29 is consistent with Nevada/UTC; July30 Kamchatka local describes the same event.",
+  "reportedLocalValues": {
+    "distanceMiles": {
+      "value": 4000,
+      "qualifier": "nearly",
+      "basis": "NPS report, not independently remeasured"
+    },
+    "delayMinutes": {
+      "value": 21,
+      "basis": "NPS reported interval; no raw onset trace or exact cave-arrival time inferred"
+    },
+    "wavesInches": {
+      "value": 10,
+      "qualifier": "about in narration",
+      "heightConvention": "not supplied"
+    }
+  },
+  "caution": "No travel velocity, resonance factor, calibrated cave-wave amplitude or fish-mortality inference."
+}

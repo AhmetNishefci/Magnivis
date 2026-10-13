@@ -1,0 +1,72 @@
+{
+  "cycleId": "cycle.13",
+  "platform": "tiktok",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledDate": "2026-10-13",
+  "scheduledBy": "owner-manual",
+  "publication": "unknown",
+  "evidenceBasis": "explicit-owner-message",
+  "ownerReport": {
+    "path": "content-intelligence/operations/devils-hole-scheduling-v1/owner-report.json",
+    "sha256": "7e9ef09c105a97e7d97e16ca78ce6cdf737d593429b0be6c6a0fc9473d376002"
+  },
+  "recordedAt": "2026-10-13T10:04:42.698Z",
+  "actualEventTime": null,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "scheduledFor": null,
+  "schedulingTimeZone": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-13/publication/release-v1.json",
+    "sha256": "59efbd8cc23833a13661a722b7353d274d3315b7676e0f36c8787f13a43cc972"
+  },
+  "intendedVariant": {
+    "id": "devils-hole.variant.tiktok.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+      "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-13/publication/tiktok/manifest-v1.json",
+    "sha256": "2a8917558470a857a62ce038a7012549b1b370fdea46f2d422753ab193c39d78"
+  },
+  "intendedArtifacts": [
+    {
+      "role": "video",
+      "media": {
+        "id": "media.03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+        "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92"
+      }
+    },
+    {
+      "role": "cover",
+      "media": {
+        "id": "media.582869ee73155e0d61e175bc03bf37bbbe9dd429fae9697b5b631955545cee8f",
+        "sha256": "582869ee73155e0d61e175bc03bf37bbbe9dd429fae9697b5b631955545cee8f"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-13/publication/tiktok/cover-evidence-v1.json",
+        "sha256": "333ef32737e974cbb45b0a09106c9d264e0461c08b7009ed104bb094352e8773"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-13/publication/tiktok/cover-profile-v1.json",
+        "sha256": "e48ecfc65d6b589d7505f9bd6389a0e056a1b1045bdde746382df35b83412eed"
+      }
+    }
+  ],
+  "identityBasis": "owner-designated validated packages and approved master as intended release, not independently verified uploaded bytes"
+}

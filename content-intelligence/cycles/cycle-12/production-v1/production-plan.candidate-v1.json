@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.flip.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "flip-floating-laboratory",
+    "revision": 1,
+    "sha256": "f85a98bb5a7695df23f11ce5f4ab0c9da43fde11dec3e3cffdc6a278bb208899"
+  },
+  "contentAsset": {
+    "id": "flip-floating-laboratory.asset.measurement",
+    "revision": 1,
+    "sha256": "2a9450cad059e8ff97d7b8b2eab8e2232f7d9d9c2b8994108cd275c004ac801f"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.12",
+    "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/profiles/youtube.json",
+      "sha256": "0e8fae837d849b7308d31a3c5c5b7f8dffe7a1190f11e098ef40dd81390d46a6"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/profiles/tiktok.json",
+      "sha256": "62efa9f189110be9af913428a0beb45e822d540884819135ece24ba359e02649"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/profiles/instagram.json",
+      "sha256": "4d86e7c5351c304224031a670391ce252de427aabc63ef46b57876c51a83b33a"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/profiles/facebook.json",
+      "sha256": "21cc77f1bf91180406623676acd55db6f68499e3c91fa7df27c98ebd26dfcf51"
+    }
+  ],
+  "approvedScriptSha256": "a1cc265cfe1f8ca836170094ab9692cd942c1886d5b8cb8c38a7c28287dd75ea",
+  "creativeDirection": {
+    "id": "creative-direction.flip-floating-laboratory.v1",
+    "revision": 1,
+    "sha256": "53edacd6425ae196c040ab80e5564d81aab0423b1d34608fdf6cac0170dae901"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "flip-floating-laboratory.claim.immune",
+    "flip-floating-laboratory.claim.ratio",
+    "flip-floating-laboratory.claim.launch-day",
+    "flip-floating-laboratory.claim.present-service"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 60.333333333333336
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "flip.production.1",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.1",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.1",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.1"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.rotation"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 152
+      },
+      "sceneType": "upright-mystery",
+      "objective": "Recognizable vertical laboratory immediately; pose deliberate mystery before history.",
+      "onScreenText": [],
+      "animationIntent": "Recognizable vertical laboratory immediately; pose deliberate mystery before history.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.2",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.2",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.2",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.2"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.measurement"
+      ],
+      "frames": {
+        "start": 152,
+        "end": 301
+      },
+      "sceneType": "moving-reference",
+      "objective": "Reveal the measurement-reference problem using an instrument and signal, no fake measured graph.",
+      "onScreenText": [],
+      "animationIntent": "Reveal the measurement-reference problem using an instrument and signal, no fake measured graph.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.3",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.3",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.3",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.3"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.measurement"
+      ],
+      "frames": {
+        "start": 301,
+        "end": 517
+      },
+      "sceneType": "acoustic-problem",
+      "objective": "Show a hydrophone/reference pair; schematic submarine yaw visibly changes reference direction.",
+      "onScreenText": [],
+      "animationIntent": "Show a hydrophone/reference pair; schematic submarine yaw visibly changes reference direction.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.4",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.4",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.4",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.4"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.rotation",
+        "flip-floating-laboratory.claim.ballast"
+      ],
+      "frames": {
+        "start": 517,
+        "end": 726
+      },
+      "sceneType": "controlled-rotation",
+      "objective": "Follow same hull from horizontal tow to controlled ballast fill and rotation; time-compressed.",
+      "onScreenText": [],
+      "animationIntent": "Follow same hull from horizontal tow to controlled ballast fill and rotation; time-compressed.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.5",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.5",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.5",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.5"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.ballast",
+        "flip-floating-laboratory.claim.draft"
+      ],
+      "frames": {
+        "start": 726,
+        "end": 896
+      },
+      "sceneType": "submerged-reveal",
+      "objective": "Reveal underwater length while retaining small above-water lab and common waterline.",
+      "onScreenText": [
+        {
+          "text": "About90m below the surface",
+          "claimIds": [
+            "flip-floating-laboratory.claim.draft"
+          ]
+        }
+      ],
+      "animationIntent": "Reveal underwater length while retaining small above-water lab and common waterline.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.6",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.6",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.6",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.6"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.geometry"
+      ],
+      "frames": {
+        "start": 896,
+        "end": 1061
+      },
+      "sceneType": "hull-geometry",
+      "objective": "Emphasize upper narrow section and broader deep hull; remove internal ballast overlay before wave lesson.",
+      "onScreenText": [],
+      "animationIntent": "Emphasize upper narrow section and broader deep hull; remove internal ballast overlay before wave lesson.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.7",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.7",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.7",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.7"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.depth"
+      ],
+      "frames": {
+        "start": 1061,
+        "end": 1212
+      },
+      "sceneType": "wave-depth",
+      "objective": "Show schematic shrinking wave-motion loops with depth; no hard wave-base boundary.",
+      "onScreenText": [],
+      "animationIntent": "Show schematic shrinking wave-motion loops with depth; no hard wave-base boundary.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.8",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.8",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.8",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.8"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.geometry"
+      ],
+      "frames": {
+        "start": 1212,
+        "end": 1325
+      },
+      "sceneType": "reduced-response",
+      "objective": "Passing surface waves and smaller nonzero FLIP motion show why geometry matters; no numerical animation ratio.",
+      "onScreenText": [],
+      "animationIntent": "Passing surface waves and smaller nonzero FLIP motion show why geometry matters; no numerical animation ratio.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.9",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.9",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.9",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.9"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.residual"
+      ],
+      "frames": {
+        "start": 1325,
+        "end": 1457
+      },
+      "sceneType": "residual-motion",
+      "objective": "Show gentle drift/tilt in same spatial field, preserving limited rather than absolute stability.",
+      "onScreenText": [],
+      "animationIntent": "Show gentle drift/tilt in same spatial field, preserving limited rather than absolute stability.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.10",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.10",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.10",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.10"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.return"
+      ],
+      "frames": {
+        "start": 1457,
+        "end": 1656
+      },
+      "sceneType": "air-return",
+      "objective": "Reverse ballast process with air displacing water; connect return to original horizontal silhouette.",
+      "onScreenText": [],
+      "animationIntent": "Reverse ballast process with air displacing water; connect return to original horizontal silhouette.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    },
+    {
+      "id": "flip.production.11",
+      "sourceVisualPlanId": "flip-floating-laboratory.asset.measurement.visual.11",
+      "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.11",
+      "scriptSegmentIds": [
+        "flip-floating-laboratory.asset.measurement.script.11"
+      ],
+      "claimIds": [
+        "flip-floating-laboratory.claim.measurement",
+        "flip-floating-laboratory.claim.geometry"
+      ],
+      "frames": {
+        "start": 1656,
+        "end": 1810
+      },
+      "sceneType": "measurement-payoff",
+      "objective": "Return to vertical lab and ocean/reference distinction: the orientation spectacle resolves into measurement insight.",
+      "onScreenText": [],
+      "animationIntent": "Return to vertical lab and ocean/reference distinction: the orientation spectacle resolves into measurement insight.",
+      "transitionIntent": "Persistent hull/lab/waterline identity; motivated camera scale, orientation and cutaway changes. No decorative slide sequence or fixed hinge.",
+      "audioIntent": "Exact af_heart unit; restrained original ocean/air/water effects from audio/flip/ocean-process.wav."
+    }
+  ],
+  "assets": [
+    {
+      "id": "flip.original-graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original spatial ocean/FLIP models",
+        "rights": "Project-owned code artwork",
+        "notes": "Schematic geometry, ballast and motions; no research image reuse.",
+        "evidence": "content-intelligence/cycles/cycle-12/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "flip.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Manrope Fontsource5.3.0",
+        "rights": "SIL OFL1.1",
+        "notes": "Established licensed type.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "flip.narration",
+      "kind": "audio",
+      "path": "public/audio/flip/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache2.0model terms",
+        "notes": "Exact full script units and phoneme audit.",
+        "evidence": "src/production/narration/flip.json"
+      }
+    },
+    {
+      "id": "flip.ocean-process",
+      "kind": "audio",
+      "path": "public/audio/flip/ocean-process.wav",
+      "provenance": {
+        "origin": "Magnivis deterministic procedural sea wash/water/air effects",
+        "rights": "Original project-owned sound",
+        "notes": "Illustrative, no recorded ship operation.",
+        "evidence": "src/production/narration/flip-soundscape.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/flip.en.vtt",
+    "captionPlanId": "caption-plan.flip.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "6fdb026cb819260434a4812bc3aff792bbc28e3834f39ed210a2523e25489565",
+    "generatorId": "generator.flip-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact script/claims/direction hashes and caption reconstruction.",
+    "FLIP pronunciation input and actual master speech corroboration; no listening pass inferred.",
+    "Ballast-driven stern descent, lab above water, tapered deep hull and nonzero wave/drift/tilt response.",
+    "All caption midpoints and critical transitions, font bounds and decoded phone-scale inspection.",
+    "Full rendered decode, audio loudness/peak/codec/duration and four provisional profile preflights.",
+    "Separate chronological rendered-sequence editorial review; revise demonstrated failures before handoff.",
+    "Stop AHMET — MASTER REVIEW; no platform/content distribution or Cycle13."
+  ]
+}

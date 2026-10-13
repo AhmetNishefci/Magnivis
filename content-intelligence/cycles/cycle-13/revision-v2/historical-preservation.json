@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-12T23:46:23.411098Z",
+  "baselineFiles": 4808,
+  "changes": [
+    {
+      "path": "artifacts/media-catalog.json",
+      "before": "b09802f7339869f4c6d9108164fc49a702381d84c1843630ec0e93bc15d7bb38",
+      "after": "58313557284cad9eda89baba9e0f50cf58462c1be859bcf194d4ea78e7ae03ad",
+      "reason": "Append-only V2 media records"
+    },
+    {
+      "path": "docs/ASSET-LICENSES.md",
+      "before": "d2e32bf4217f313a67f92aa2869de57e274e243570b126d157c7bca3aac5a77d",
+      "after": "bc7ce3ccc5d8b0a13a8123fc0409a0b8ae4c40ccf9798ea077af8828d6745e92",
+      "reason": "Additive exact V2 rights"
+    },
+    {
+      "path": "workflow/cycles/cycle.13/state.json",
+      "before": "bb6dd7550f22a3143764732093c9b05fdd562c1057614ee61891e50240b37a06",
+      "after": "35e70184ab94a149027f75b265ea41dcd5afd7ffe9b66fe9665177944187d066",
+      "reason": "Native revision2 journal state"
+    },
+    {
+      "path": "workflow/project-state.json",
+      "before": "5d084033689def5ad47e8b84d517e737f5b885e0d55366bc1e8dff6401ff6ff4",
+      "after": "42cfc6c81a528673ab49165643dfec450307fe6812102d52d58de701aabdb659",
+      "reason": "Current Revision2 owner queue/guidance routing"
+    }
+  ],
+  "missing": [],
+  "unexpected": [],
+  "priorCatalogBytesPreserved": true,
+  "passed": true,
+  "preservedV1Master": "d2b59496ac486833ca7f59153756d0e1b3aa6ae5df87713bb4dfa0ff1249bfa1",
+  "sourceHashValidation": "Original V1implementation inputs and policy files unchanged. No historical approval transferred."
+}

@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-11T22:14:31.941Z",
+  "audition": {
+    "path": "artifacts/qa-evidence/flip-cycle12-v1/voice-only-then-full-mix.wav",
+    "sha256": "498b4f8271ba41cb4d88e9ad7b970a85405474a79d675d25375de5272d85c89d",
+    "order": [
+      "Entire ballast sentence voice-only, matched voice gain",
+      "0.5s silence",
+      "Same exact-master interval with original ocean/process bed"
+    ],
+    "limitation": "A separate diagnostic excerpt, not a different master or listening pass."
+  },
+  "masterSha256": "71cc87c2794de9096569dd6759ad29c6a53b9c027d43b0ef95794bd14a6a45e5",
+  "voiceOnlySource": [
+    "[Parsed_volumedetect_0 @ 0x600003ab8000] mean_volume: -23.2 dB",
+    "[Parsed_volumedetect_0 @ 0x600003ab8000] max_volume: -4.4 dB"
+  ],
+  "bedSource": [
+    "[Parsed_volumedetect_0 @ 0x600002989080] mean_volume: -61.6 dB",
+    "[Parsed_volumedetect_0 @ 0x600002989080] max_volume: -39.0 dB"
+  ],
+  "actualMix": [
+    "[Parsed_volumedetect_0 @ 0x6000013580b0] mean_volume: -22.7 dB",
+    "[Parsed_volumedetect_0 @ 0x6000013580b0] max_volume: -3.9 dB"
+  ],
+  "decision": "Retain restrained sea wash/water/air trial because it follows the spatial/process explanation and remains well below narration in signal level. Voice-only is available for owner comparison. No music; subjective usefulness and audibility remain unverified without listening."
+}

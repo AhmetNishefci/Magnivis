@@ -1,0 +1,471 @@
+{
+  "id": "flip-floating-laboratory",
+  "revision": 1,
+  "topic": "FLIP floating laboratory and ocean measurement",
+  "centralQuestion": "Why would scientists intentionally tip a floating laboratory upright?",
+  "taxonomy": {
+    "pillar": "technology-built-world",
+    "domains": [
+      "oceanography",
+      "engineering",
+      "measurement-science"
+    ],
+    "topics": [
+      "flip",
+      "spar-buoy",
+      "surface-waves",
+      "ballast"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "Controlled rotation changed the platform geometry to reduce wave response and improve a scientific reference, without eliminating ocean motion.",
+  "viewerPayoff": "Understand why an extraordinary-looking laboratory was shaped to distinguish ocean behavior from instrument motion.",
+  "sources": [
+    {
+      "id": "source.flip-floating-laboratory.history",
+      "organization": "Scripps Institution of Oceanography / Marine Physical Laboratory",
+      "title": "FLIP History",
+      "sourceType": "university",
+      "url": "https://scripps.ucsd.edu/ships/flip/history",
+      "retrieved": "2026-10-11",
+      "notes": "First-party former operator account of engineering requirements and development, not an independent second institution. Retrospective history; original1963 design paper body not acquired. Do not narrate model tests as full-scale accidents."
+    },
+    {
+      "id": "source.flip-floating-laboratory.technical",
+      "organization": "Scripps Institution of Oceanography / Marine Physical Laboratory",
+      "title": "FLIP Technical Details",
+      "sourceType": "technical-documentation",
+      "url": "https://scripps.ucsd.edu/ships/flip/technical",
+      "retrieved": "2026-10-11",
+      "notes": "Former operator technical description; geometry and operations authority. 10m wave / <1m vertical motion observation lacks full conditions; no universal reduction ratio. Geometry is historical platform, not current refit."
+    },
+    {
+      "id": "source.flip-floating-laboratory.operation",
+      "organization": "Scripps Institution of Oceanography",
+      "title": "Scripps’ one-of-a-kind FLIP turns50",
+      "sourceType": "university",
+      "url": "https://scripps.ucsd.edu/news/scripps-one-kind-flip-turns-50",
+      "retrieved": "2026-10-11",
+      "notes": "First-party operator publication with named administrator and operational account; corroborates controlled flooding and recovery. Dated2012 operation; present-tense statements describe then, not current operational status. Several Scripps pages are related sources, not independent replication."
+    },
+    {
+      "id": "source.flip-floating-laboratory.radyo",
+      "organization": "RaDyO field investigators / Journal of Geophysical Research: Oceans",
+      "title": "Dickey et al.2012, Introduction to special section on Recent Advances in the Study of Optical Variability in the Near-Surface and Upper Ocean",
+      "sourceType": "peer-reviewed",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2012JC007964",
+      "retrieved": "2026-10-11",
+      "notes": "Primary field-study account for residual motion and deployments; historical design summary is cited synthesis rather than new engineering test. Inspected relevant PDF paragraphs, not complete39-page paper. PDF screenshots failed; text successfully inspected. Launch day2June conflicts with Scripps22June: omit exact launch day. Original1963 and1997 paper bodies unavailable; no claim to have read them. Resonance and response depend on conditions. Copyrighted figures/photos not cleared for production."
+    },
+    {
+      "id": "source.flip-floating-laboratory.waves",
+      "organization": "NOAA / National Weather Service",
+      "title": "Mariners Weather Log43(1), April1999, Physical Oceanography: How Wind Generates Waves",
+      "sourceType": "government",
+      "url": "https://www.vos.noaa.gov/MWL/apr1999.pdf",
+      "retrieved": "2026-10-11",
+      "notes": "Official NOAA/NWS physical-oceanography teaching source supporting general mechanism; not a FLIP performance test. Inspected selected extracted PDF text only; no full108-page inspection. No half-wavelength cutoff or still-water assertion in script. Applies deep-water surface-wave model, not all ocean motion."
+    }
+  ],
+  "claims": [
+    {
+      "id": "flip-floating-laboratory.claim.rotation",
+      "statement": "FLIP was a floating research laboratory deliberately rotated from horizontal transit to a vertical working orientation.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "notes": "Historical original configuration; a spar buoy, not a powered ship."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.operation",
+          "locator": "Extracted body lines17–26; published26June2012",
+          "notes": "Historical original configuration; a spar buoy, not a powered ship."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Historical original configuration; a spar buoy, not a powered ship."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.measurement",
+      "statement": "Platform motion could limit acoustic measurements; FLIP was developed to reduce this problem while connecting deep sensors to an above-water reference.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.history",
+          "locator": "Extracted body lines6–22,25; requirements and model studies",
+          "notes": "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.ballast",
+      "statement": "Operators admitted water into ballast tanks to rotate FLIP, lowering the stern while laboratory spaces remained above water.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.operation",
+          "locator": "Extracted body lines17–26; published26June2012",
+          "notes": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.history",
+          "locator": "Extracted body lines6–22,25; requirements and model studies",
+          "notes": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "notes": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.draft",
+      "statement": "About ninety metres of FLIP’s hull extended below the waterline in its vertical working configuration.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "notes": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "notes": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "quantitative",
+      "quantity": {
+        "kind": "scalar",
+        "value": 90,
+        "unit": "m",
+        "precision": "rounded"
+      },
+      "basis": "derived",
+      "display": "about90metres"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.geometry",
+      "statement": "FLIP had a narrow upper hull and a broader submerged lower hull; this shape reduced its responsiveness to waves.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "notes": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "notes": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.depth",
+      "statement": "For deep-water surface waves, wave-induced water motion decreases with depth.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.waves",
+          "locator": "Printedp19/PDFpage index18, extracted lines940–978, particle-motion explanation; earlier deep/shallow-water distinction",
+          "notes": "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.residual",
+      "statement": "FLIP could still drift and tilt; investigators observed motion even during moored research.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "notes": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "notes": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.return",
+      "statement": "Compressed air expelled ballast water to return FLIP to horizontal.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.operation",
+          "locator": "Extracted body lines17–26; published26June2012",
+          "notes": "Historical return operation; do not show compressed air rotating it downward."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Historical return operation; do not show compressed air rotating it downward."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.12",
+          "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+        },
+        "reviewedAt": "2026-10-11"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.immune",
+      "statement": "FLIP was perfectly stationary or immune to ocean motion.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "notes": "Contradicted by actual tilt, oscillation and drift; exclude."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Contradicted by actual tilt, oscillation and drift; exclude."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.ratio",
+      "statement": "FLIP always moved less than one tenth as far as any ocean wave.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.technical",
+          "locator": "Extracted body lines10–13,17–18,21–28",
+          "notes": "Conditional observation/design summary is not universal; exclude unqualified ratio."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "notes": "Conditional observation/design summary is not universal; exclude unqualified ratio."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Conditional observation/design summary is not universal; exclude unqualified ratio."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.launch-day",
+      "statement": "FLIP was launched on2June1962.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.history",
+          "locator": "Extracted body lines6–22,25; requirements and model studies",
+          "notes": "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude."
+        },
+        {
+          "sourceId": "source.flip-floating-laboratory.radyo",
+          "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+          "notes": "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude."
+      ],
+      "type": "qualitative"
+    },
+    {
+      "id": "flip-floating-laboratory.claim.present-service",
+      "statement": "FLIP is currently operating scientific cruises following its refit.",
+      "evidence": [
+        {
+          "sourceId": "source.flip-floating-laboratory.history",
+          "locator": "Extracted body lines6–22,25; requirements and model studies",
+          "notes": "Scripps describes retirement and future restoration; actual current operations not inspected. Exclude current-service claim."
+        }
+      ],
+      "verificationStatus": "unverified",
+      "caveats": [
+        "Scripps describes retirement and future restoration; actual current operations not inspected. Exclude current-service claim."
+      ],
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "flip-floating-laboratory.caveat.bounds",
+      "statement": "Historical original design. Reduced motion is not immobility; deep-water surface-wave attenuation varies with wavelength. Controlled ballast sequence and hull diagram are simplified, not an engineering operating procedure. No universal motion ratio, literal still-water depth, invented data trace or current-service claim.",
+      "claimIds": [
+        "flip-floating-laboratory.claim.rotation",
+        "flip-floating-laboratory.claim.measurement",
+        "flip-floating-laboratory.claim.ballast",
+        "flip-floating-laboratory.claim.draft",
+        "flip-floating-laboratory.claim.geometry",
+        "flip-floating-laboratory.claim.depth",
+        "flip-floating-laboratory.claim.residual",
+        "flip-floating-laboratory.claim.return"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "flip-floating-laboratory.hook.upright",
+      "archetype": "purpose-mystery",
+      "text": "Scientists deliberately tipped this floating laboratory upright. Why?",
+      "viewerPromise": "Resolve the deliberate rotation through ballast, hull geometry and scientific measurement.",
+      "claimIds": [
+        "flip-floating-laboratory.claim.rotation"
+      ]
+    },
+    {
+      "id": "flip-floating-laboratory.hook.measurement",
+      "archetype": "instrument-versus-signal",
+      "text": "How do you measure a moving ocean from a moving laboratory?",
+      "viewerPromise": "See the platform itself become part of the measurement solution.",
+      "claimIds": [
+        "flip-floating-laboratory.claim.measurement",
+        "flip-floating-laboratory.claim.geometry"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "flip-floating-laboratory.narrative.rotate",
+      "title": "Change the reference",
+      "description": "Vertical mystery → measurement problem → ballast rotation → underwater shape → reduced response with residual motion → return and insight.",
+      "claimIds": [
+        "flip-floating-laboratory.claim.rotation",
+        "flip-floating-laboratory.claim.measurement",
+        "flip-floating-laboratory.claim.ballast",
+        "flip-floating-laboratory.claim.draft",
+        "flip-floating-laboratory.claim.geometry",
+        "flip-floating-laboratory.claim.depth",
+        "flip-floating-laboratory.claim.residual",
+        "flip-floating-laboratory.claim.return"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "flip-floating-laboratory.visual.cutaway",
+      "title": "One hull, two orientations",
+      "description": "Original continuous ocean cutaway with causal ballast and geometry transformations, labeled conceptual wave-motion overlay.",
+      "claimIds": [
+        "flip-floating-laboratory.claim.rotation",
+        "flip-floating-laboratory.claim.measurement",
+        "flip-floating-laboratory.claim.ballast",
+        "flip-floating-laboratory.claim.draft",
+        "flip-floating-laboratory.claim.geometry",
+        "flip-floating-laboratory.claim.depth",
+        "flip-floating-laboratory.claim.residual",
+        "flip-floating-laboratory.claim.return"
+      ]
+    }
+  ],
+  "relatedQuestions": [
+    "How does wavelength affect wave motion below the surface?",
+    "How do scientists correct measurements for platform motion?"
+  ],
+  "followUpOpportunities": [],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review; not owner factual/script/visual approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.12",
+      "reviewSha256": "d76efe16af8ca5128240a077ebe76487e4eea31ca70d901a6236dc46eefeec60"
+    },
+    "approvedAt": "2026-10-11",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.13",
+  "topicCandidateId": "topic.cycle13.devils-hole",
+  "enteredAt": "2026-10-12T22:19:28.089Z",
+  "reviewer": "Codex internal evidence review; not Ahmet claim/script/visual approval",
+  "premiseAlignment": {
+    "selectionSha256": "b1d14f32a93b46d9b235cbc117a642b6633e0525ffea91371e5a6c8b1b091ca9",
+    "preservesPublishingOpportunity": true,
+    "rationale": "Actual NPS event body, reviewed USGS catalog, seismic-seiche/ground-motion passages and site ecology preserve the approved distant-earthquake/local-cave premise and modest shelf consequence. Number qualifications and date conversion refine comprehension without changing the publishing question."
+  },
+  "packageSha256": "33ae3102d983b6a68daad33040f95f8e1944e93838b256d3acff221cdf1cba92",
+  "assetSha256": "4fc4d17a3f50a68ccdccf2ed618f4b5e4bc56582afb8811d26856df21b8c405f",
+  "scriptSha256": "28a3fc46396bb96ec767dd9dae790345c45d20c16ac06738e7ac884e60ef7496",
+  "inspections": [
+    {
+      "sourceId": "source.devils-hole-seismic-seiche.event",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines38–42 and monitoring-image captions47–58"
+      ],
+      "supportsClaimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.magnitude",
+        "devils-hole-seismic-seiche.claim.distance",
+        "devils-hole-seismic-seiche.claim.delay",
+        "devils-hole-seismic-seiche.claim.wave-size",
+        "devils-hole-seismic-seiche.claim.shelf",
+        "devils-hole-seismic-seiche.claim.impact"
+      ],
+      "limitations": [
+        "Distance, delay and wave size are reported NPS values. Amplitude convention and raw onset series are absent; no universal seismic speed is derived.",
+        "December/February ecological effects and the March count of 38 fish are separate observations and unused.",
+        "The before image bears July 14, 2025; the after image July 30. They are not immediately adjacent observations or a quantitative mortality comparison."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/research/event-inspection.json",
+        "sha256": "e1e982aa4012ddb00884c663688ce04f9cc3d993000e30cbcb2fdc1a55f99287"
+      },
+      "sourceQualityRationale": "Direct site-operator event report and biological interpretation. Authoritative for local observations, not an independent analysis of raw monitoring data."
+    },
+    {
+      "sourceId": "source.devils-hole-seismic-seiche.seiche",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines23–33"
+      ],
+      "supportsClaimIds": [
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water",
+        "devils-hole-seismic-seiche.claim.distinction"
+      ],
+      "limitations": [
+        "General physics, not a calculated Devils Hole normal mode, calibrated amplitude or exact propagation path.",
+        "No one-path model or claim that distance alone determines local wave height."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/research/seiche-inspection.json",
+        "sha256": "bbb6be22712a15d8fde487676fba1f4706b4142aadfacd47bf9c555df45f8ee4"
+      },
+      "sourceQualityRationale": "Established mechanism from the relevant scientific agency. A different institution from NPS, not independent replication of July 2025 cave monitoring."
+    },
+    {
+      "sourceId": "source.devils-hole-seismic-seiche.ground",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines73–75; seiche definition and pronunciation"
+      ],
+      "supportsClaimIds": [
+        "devils-hole-seismic-seiche.claim.forcing",
+        "devils-hole-seismic-seiche.claim.local-water"
+      ],
+      "limitations": [
+        "The shaken bathtub is a labeled analogy, not a measured simulation of cave displacement or frequency.",
+        "Magnitude does not imply identical shaking in Russia and Nevada."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/research/ground-inspection.json",
+        "sha256": "29df401eeca7f90f70d289c61259f08d5d70d106b9539d922e50635a63dc4cdb"
+      },
+      "sourceQualityRationale": "Relevant official explanation for qualitative ground-water coupling and pronunciation. Only the bounded passage is used; volatile facts elsewhere on the page are unused."
+    },
+    {
+      "sourceId": "source.devils-hole-seismic-seiche.habitat",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines22–27"
+      ],
+      "supportsClaimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.shelf"
+      ],
+      "limitations": [
+        "Older temperature, population and isolation-age wording is unused. Generic two-metre waves do not describe July 2025.",
+        "An unmapped bottom does not mean bottomless. Full cave geometry is unknown; show only an illustrative near-surface cutaway."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/research/habitat-inspection.json",
+        "sha256": "0e13a02b023b23d328b108173e3dc5c3d5a7a46e97556f46e4a640bb7555791a"
+      },
+      "sourceQualityRationale": "Site-operator ecological and geographic context. Related to the event report, not counted as independent replication."
+    },
+    {
+      "sourceId": "source.devils-hole-seismic-seiche.catalog",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "GeoJSON properties.mag, properties.time, properties.status and geometry.coordinates"
+      ],
+      "supportsClaimIds": [
+        "devils-hole-seismic-seiche.claim.local-event",
+        "devils-hole-seismic-seiche.claim.magnitude"
+      ],
+      "limitations": [
+        "Current reviewed catalog metadata may differ from initial news estimates; no older epicenter or depth estimate is reused.",
+        "Do not manufacture an exact cave-disturbance timestamp from the reported 21-minute interval.",
+        "Calendar conversions are labeled derivations, not independent timestamp observations."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/research/catalog-inspection.json",
+        "sha256": "836aca97c75714b78b1ee792c8e44bdc41d9bc8d33630a1b71edf4ce3d0b2b31"
+      },
+      "sourceQualityRationale": "Direct USGS scientific-catalog HTTP GeoJSON response, with exact bytes preserved. Corroborates magnitude and origin date, not local wave size or delay."
+    },
+    {
+      "sourceId": "source.devils-hole-seismic-seiche.rights",
+      "accessStatus": "partially-inspected",
+      "identityConfirmed": true,
+      "evidenceLocations": [
+        "Extracted body lines28–37"
+      ],
+      "supportsClaimIds": [],
+      "limitations": [
+        "NPS-credited images were consulted only. No external image selected for production and no protected NPS marks reproduced.",
+        "Any later exact image import requires asset-specific provenance, canonical registration and an ASSET-LICENSES entry."
+      ],
+      "inspectedEvidence": {
+        "path": "content-intelligence/cycles/cycle-13/development-v1/research/rights-inspection.json",
+        "sha256": "53397eab97392cbb6f930eeaee042fa0d9caed9279e4208f0c0ea22563327841"
+      },
+      "sourceQualityRationale": "Official provenance policy. Specific asset credits were checked on the event and habitat pages; the policy is not blanket clearance of every website asset."
+    }
+  ],
+  "claims": [
+    {
+      "id": "devils-hole-seismic-seiche.claim.local-event",
+      "statementSha256": "6e65bc7e0e6475283930fdb3a2d20f1b0838552aa092bc76f0074ec7bab96323",
+      "disposition": "verify",
+      "rationale": "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "assessment": "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.habitat",
+          "locator": "Extracted body lines22–27",
+          "assessment": "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.catalog",
+          "locator": "GeoJSON properties.mag, properties.time, properties.status and geometry.coordinates",
+          "assessment": "July 29 is the Nevada/UTC calendar date. July 30 in Kamchatka is the same event on a different local calendar.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.magnitude",
+      "statementSha256": "cd8bb44b28f5361204641a811fff3299dbbfb4782c34887c4e747f7fcf798d33",
+      "disposition": "verify",
+      "rationale": "Magnitude is dimensionless, not local intensity or an asserted Richter-scale measurement.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "assessment": "Magnitude is dimensionless, not local intensity or an asserted Richter-scale measurement.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.catalog",
+          "locator": "GeoJSON properties.mag, properties.time, properties.status and geometry.coordinates",
+          "assessment": "Magnitude is dimensionless, not local intensity or an asserted Richter-scale measurement.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.distance",
+      "statementSha256": "9546138ffd917ce4da78540a12423889a91febd48dad4f173c978aa7f9d0b255",
+      "disposition": "verify",
+      "rationale": "Approximate reported separation; no precise geodesic distance or actual travel path implied.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "assessment": "Approximate reported separation; no precise geodesic distance or actual travel path implied.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.delay",
+      "statementSha256": "17e667a83f8d6ea697148913073bb7f17c46129453302351829de623092c2ae1",
+      "disposition": "verify",
+      "rationale": "Reported elapsed time, not a precise onset/arrival series or universal travel-time law.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "assessment": "Reported elapsed time, not a precise onset/arrival series or universal travel-time law.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.forcing",
+      "statementSha256": "5563d86932709717177a90343587891574a1cfba9de3a7ab6fb76352f23506b8",
+      "disposition": "verify",
+      "rationale": "Qualitative coupling; distant seiches are associated with surface waves. No exact resonance, perceptible local shaking or uniform global motion claimed.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "assessment": "Qualitative coupling; distant seiches are associated with surface waves. No exact resonance, perceptible local shaking or uniform global motion claimed.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.ground",
+          "locator": "Extracted body lines73–75; seiche definition and pronunciation",
+          "assessment": "Qualitative coupling; distant seiches are associated with surface waves. No exact resonance, perceptible local shaking or uniform global motion claimed.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.local-water",
+      "statementSha256": "c9efaa5490f31b9354b54c8e41c3544fefd71104c51e1e3edbac7c09720246c9",
+      "disposition": "verify",
+      "rationale": "Distinguish energy transport from bulk water transport. No underground channel to Russia.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "assessment": "Distinguish energy transport from bulk water transport. No underground channel to Russia.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.ground",
+          "locator": "Extracted body lines73–75; seiche definition and pronunciation",
+          "assessment": "Distinguish energy transport from bulk water transport. No underground channel to Russia.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.distinction",
+      "statementSha256": "0e2b6cb196889a516120ae402285bf4e1b12e5fa2b17c40a9e7200aa431d074d",
+      "disposition": "verify",
+      "rationale": "No claim that seiches are always small, tsunamis are caused only by earthquakes, or this quake generated no real ocean tsunami.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.seiche",
+          "locator": "Extracted body lines23–33",
+          "assessment": "No claim that seiches are always small, tsunamis are caused only by earthquakes, or this quake generated no real ocean tsunami.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.wave-size",
+      "statementSha256": "ffa4f32a9ee3b44b7c4cc491d8680c749b8e33b4e026cb9ad7a1a7367820dbb5",
+      "disposition": "verify",
+      "rationale": "Narrate about ten inches. Crest-to-trough, amplitude and runup conventions are not supplied; animation is not calibrated to this reported value.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "assessment": "Narrate about ten inches. Crest-to-trough, amplitude and runup conventions are not supplied; animation is not calibrated to this reported value.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.shelf",
+      "statementSha256": "d5ed4333fc5eb92bbeca4360f7434d0def1b57836b318f1609a898ac85e6f128",
+      "disposition": "verify",
+      "rationale": "Shelf function, not a claim that all fish remain on it or deep water is uninhabited.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "assessment": "Shelf function, not a claim that all fish remain on it or deep water is uninhabited.",
+          "sufficientForWording": true
+        },
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.habitat",
+          "locator": "Extracted body lines22–27",
+          "assessment": "Shelf function, not a claim that all fish remain on it or deep water is uninhabited.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.impact",
+      "statementSha256": "00f08d282a5a178d7be27058b797f1751d5e09822b95fa506e4ec52cf7511d1e",
+      "disposition": "verify",
+      "rationale": "No near-extinction, mortality count, quantified egg loss, complete food loss or confirmed population rebound.",
+      "evidence": [
+        {
+          "sourceId": "source.devils-hole-seismic-seiche.event",
+          "locator": "Extracted body lines38–42 and monitoring-image captions47–58",
+          "assessment": "No near-extinction, mortality count, quantified egg loss, complete food loss or confirmed population rebound.",
+          "sufficientForWording": true
+        }
+      ],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.maximum-height",
+      "statementSha256": "609255543c35b184e49545adf0c7e1f9c5c816bb29e31c83c0b493b8efea448a",
+      "disposition": "exclude",
+      "rationale": "A generic older maximum cannot be transferred to this event; excluded.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.mortality",
+      "statementSha256": "d02c6a5cef4a78e486be79d6e18d1be8760b35f117e89e200b0b292389b7b090",
+      "disposition": "exclude",
+      "rationale": "Unsupported and contrary to the scoped minor impact; excluded.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.exact-resonance",
+      "statementSha256": "2d5134426795abf3539f34060495c66e81024900a1c052a3f49cedb613248268",
+      "disposition": "unresolved",
+      "rationale": "No local normal-mode or forcing measurements acquired; unresolved and unselected.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.current-count",
+      "statementSha256": "fc2db7a04dad3c8db6d0c7107c6e8e7fc0fd12d1aaa1cb6c68146ef46b9b8d51",
+      "disposition": "exclude",
+      "rationale": "The March 2025 historical count is not a current count; excluded.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.bottomless",
+      "statementSha256": "e7030687c358742d184bf0a750d8119ab010f45e1d92c0e2ab9867c90f279d86",
+      "disposition": "exclude",
+      "rationale": "Unmapped is not infinite depth; excluded.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    },
+    {
+      "id": "devils-hole-seismic-seiche.claim.ocean-arrival",
+      "statementSha256": "2605cfec8db3f0e7843d84ff37538bb8a81ff988bdc851a90f70a31d883df41a",
+      "disposition": "exclude",
+      "rationale": "Wrong causal mechanism; excluded.",
+      "evidence": [],
+      "qualificationsPreserved": true
+    }
+  ],
+  "misconceptionSafeguards": [
+    "Energy propagation and water displacement are distinct. No ocean-water path or subterranean channel from Russia to Nevada.",
+    "Distant forcing is represented by qualitative seismic surface-motion cues; no ray through Earth’s core, calibrated travel speed or human-perceptible shaking at the cave.",
+    "Date context is July29 Nevada/UTC, July30 Kamchatka local. No invented exact cave-arrival timestamp from a rounded interval.",
+    "Ten inches is a reported event value with unspecified height convention. No universal seiche size, metre-scale July wave or magnitude-equals-local-intensity claim.",
+    "Shelf dependence and limited July material loss are distinct from previous disturbances, extinction risk estimates and current population.",
+    "NPS before/after frames bear July14 and July30; not adjacent observations, a mortality test or a measured removal ratio.",
+    "An ocean tsunami can also have been generated by this earthquake; its existence does not make the cave waves a tsunami.",
+    "All new illustrations must identify schematic geometry/motion and reconstruction; source photos are consultation-only."
+  ],
+  "comprehensionReview": "First frame links a recognizable dry-rock pool to a distant earthquake without waiting for generic establishing footage. Event numbers appear sequentially. Existing water remains continuous as ground motion is separated and translated into rocking. The term seiche follows the visual causal explanation; the feeding shelf becomes meaningful only afterward. Ending resolves the connected-Earth idea. Actual first-frame clarity, caption density and pacing need future rendered review; no audience panel conducted.",
+  "rightsReview": "Original geographic/cave/shelf illustrations selected conceptually. Three NPS-credited reference photos were inspected ephemerally under the published government-work policy, with asset URLs/hashes/credits retained; none imported for production. No monitoring video viewed or audio copied, no protected logo or source image selected. Established Manrope and af_heart remain proposed; record licenses and canonical identities for actual future assets when authorized.",
+  "careAssessment": {
+    "state": "routine",
+    "rationale": "Historical geophysical explanation with inspected operator evidence and corroborating scientific-agency mechanisms/catalog. No medical advice, exceptional cost, rights exception or brand deviation. Unselected exact resonance and exaggerated impact claims are excluded from the artifact."
+  },
+  "exceptionalConditions": []
+}

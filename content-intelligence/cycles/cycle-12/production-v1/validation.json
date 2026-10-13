@@ -1,0 +1,91 @@
+{
+  "recordedAt": "2026-10-11T22:20:41.993414Z",
+  "runtime": "Node22.23.3 / pnpm10.17.1; VITEST_MAX_WORKERS=4",
+  "masterSha256": "71cc87c2794de9096569dd6759ad29c6a53b9c027d43b0ef95794bd14a6a45e5",
+  "checks": [
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "result": "TypeScript/lint and53files/501tests pass; git whitespace checks pass",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/validation/check.log",
+        "sha256": "0b5906c7af9a4846295f4b7f4759128b4f916bde08efbe877102df3f569f0fa0"
+      }
+    },
+    {
+      "command": "pnpm qa flip",
+      "exitCode": 0,
+      "result": "1080\u00d71920/30fps/H.264/AAC48kHz; duration60.395s versus60.333333s picture timeline within0.12s tolerance; non-silent/non-clipped signal",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/validation/qa.log",
+        "sha256": "07936ad33209b14b60cdc31eefec11dc49d6acc93054e030087d2dc8fcca836f"
+      }
+    },
+    {
+      "command": "Local Chrome layout inspection",
+      "exitCode": 0,
+      "result": "90checkpoint samples including all33caption midpoints pass fonts, containment, fit and observed text separation",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/validation/layout.log",
+        "sha256": "77f992456e14d1a87447de9ec7c2973a37b8429505d07cea9a0fa578b6510a9f"
+      }
+    },
+    {
+      "command": "Full strict video/audio decode and video-payload identity through mastering",
+      "result": "passed; bound in final report",
+      "report": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/qa/final-report.json",
+        "sha256": "e6bc34cd7dac88964f13d280427fc2a9aaff883b2f621d511cbe923d8a01e4a0"
+      }
+    },
+    {
+      "command": "Actual-master ASR / phoneme input / focused residual-motion recognition / EBU R128",
+      "result": "Machine checks corroborate exact script and target voice input; input /fl\u026ap/ preserved, focused drift-and-tilt recovered; full-unit misrecognition retained. \u221219LUFS /\u22123.9dB true peak. No listening pass.",
+      "report": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/qa/audio-inspection.json",
+        "sha256": "3b37322b4e91e43f6e1648703c85125e6ccd88696d765f7b863c6ee6bf7571d9"
+      }
+    },
+    {
+      "command": "node --import tsx scripts/validate-flip-master.ts",
+      "exitCode": 0,
+      "result": "Native editorial/script/caption/production/source-media identity and journal replay pass; revision9 Master Review unapproved",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/validation/master-integrity.json",
+        "sha256": "3d5f98ac70f1480d832c0a23c27d6d49acff8ebcd1f945734f1f4ad7dc81dacc"
+      }
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "result": "999canonical payloads,731durable native artifacts,442frozen legacy paths pass; original957catalog identities unchanged",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/pre-handoff-durability.json",
+        "sha256": "384ff2682e185684eb2822d85d7d483d1bbec26ad2aa0f003ba1e22563d17f15"
+      }
+    },
+    {
+      "command": "Historical hash baseline and metadata diff",
+      "result": "4393baseline files checked; only expected append-only catalog/license and current QA routing/Cycle12state/metadata changes",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-12/production-v1/historical-preservation-final.json",
+        "sha256": "eebe3fca610040187344e9834d92e3ff3293d256e26fdecfa7388ef385cf048e"
+      }
+    }
+  ],
+  "ownerGate": "AHMET \u2014 MASTER REVIEW",
+  "limitations": [
+    "No continuous subjective playback or actual audio listening; phoneme/ASR/signal checks are not human pronunciation/prosody/mix approval.",
+    "Within-sentence captions approximately aligned; actual audiovisual synchrony/rhythm remains owner judgment.",
+    "Sampled local geometry/phone simulation does not prove every frame or native UI/caption/crop/device safety.",
+    "Existing compatibility export model3\u201360s is exceeded by60.33s; destination suitability unresolved, no publishable variants or delivery.",
+    "Task files/media staged for Git-tracking audit; no commit/push/off-machine backup/main integration."
+  ],
+  "failedAuthoringChecksResolved": [
+    "Native begin-internal extra-key rejection corrected with valid strict record; no mutation on failed attempt.",
+    "Clipped labels and tight browser text boxes corrected; lint missing process import corrected.",
+    "First rendered geometry repetition refined with linked detail and progressive wave cues; detached bubbles removed.",
+    "Refinement39pxtext-box overlap corrected by spacing; final90samples passed."
+  ],
+  "historicalAnalytics": "Original CSVs/V1/V2/calculations and unresolved mappings untouched; no analytics invented or promoted."
+}

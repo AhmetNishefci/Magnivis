@@ -1,0 +1,31 @@
+{
+  "recordedAt": "2026-10-11T22:44:50.336898+00:00",
+  "passed": true,
+  "stage": "publication-review",
+  "revision": 12,
+  "priorFullValidation": {
+    "path": "content-intelligence/cycles/cycle-12/publication/validation-v1.json",
+    "sha256": "5028c66f58667ade9f5e60afdd195c7855a4531de5dc80e82d797ee7478fe4cc"
+  },
+  "finalRepositoryCheck": {
+    "command": "VITEST_MAX_WORKERS=4 pnpm check",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFilesPassed": 53,
+    "testsPassed": 501,
+    "diffCheck": "passed",
+    "log": "content-intelligence/cycles/cycle-12/publication/qa/repository-check-final-v1.txt"
+  },
+  "finalReleaseValidation": {
+    "path": "content-intelligence/cycles/cycle-12/publication/qa/release-validation-final-v1.json",
+    "sha256": "dd114007534254686149a355e6bc15b0d8fe1be10e2c4a74ae0b894a84c51870"
+  },
+  "masterUnchanged": true,
+  "scriptWords": 149,
+  "captionMidpointsPerPlatform": 33,
+  "knownCollisions": 0,
+  "presentationUnknowns": 44,
+  "publicationAuthorized": false,
+  "externalActions": []
+}

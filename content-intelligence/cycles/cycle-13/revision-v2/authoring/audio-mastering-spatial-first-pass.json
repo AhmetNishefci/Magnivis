@@ -1,0 +1,41 @@
+{
+  "enteredAt": "2026-10-12T23:30:45.143Z",
+  "method": "Measured refined mix from exact canonical narration and original sound, sample-aligned to approved30fps cue starts; copy video stream. Narration wording/timing unchanged.",
+  "renderIntermediate": {
+    "path": "output/devils-hole-render-v2.mp4",
+    "sha256": "04653d7f88f5b07a688d00da4c1b71f777b9b8bbc70db7e21db7a5ff46e01e16",
+    "retention": "temporary"
+  },
+  "initialAuthoring": {
+    "path": "artifacts/qa-evidence/devils-hole-cycle13-v2-authoring/first-mix-render.mp4",
+    "sha256": "c463edaa89c332a2a97599ada41325301967da3daa12f785e1bad1c0e553249e",
+    "source": "content-intelligence/cycles/cycle-13/revision-v2/authoring/DevilsHoleV2-first-audio.tsx"
+  },
+  "mix": {
+    "path": "output/devils-hole-v2-refined-mix.wav",
+    "sha256": "d5eeca8f28b09c12df4eb954fa57a2e46f31e60d3462d5bced36c1e8c3a1c635",
+    "retention": "temporary",
+    "settings": "src/production/narration/devils-hole-v2-mix.json",
+    "narrationGain": 0.9,
+    "soundGain": 8
+  },
+  "candidate": {
+    "path": "artifacts/masters/devils-hole-cycle13-candidate-v2.mp4",
+    "sha256": "ebd2c1321b7241964c48c81d148d258eff60e55dae18397cef349be98ce8ec8f"
+  },
+  "inputMeasurements": {
+    "input_i": "-23.73",
+    "input_tp": "-6.95",
+    "input_lra": "2.60",
+    "input_thresh": "-34.58",
+    "output_i": "-19.12",
+    "output_tp": "-2.39",
+    "output_lra": "2.50",
+    "output_thresh": "-29.98",
+    "normalization_type": "dynamic",
+    "target_offset": "0.12"
+  },
+  "gainDb": 4.73,
+  "rationale": "V1 cue6 procedural sound measured42dB below narration RMS. Lift only the existing quiet original sound18dB; keep narration unchanged. Measure actual mix/peak and preserve owner listening uncertainty. No disaster rumble or archival-sound implication.",
+  "ownerListening": "Not performed; explicit uncertainty retained."
+}

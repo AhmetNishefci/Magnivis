@@ -1,0 +1,21 @@
+{
+  "sourceId": "source.devils-hole-seismic-seiche.catalog",
+  "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=us6000qw60",
+  "retrievedAt": "2026-10-12T22:19:28.089Z",
+  "retrievalTimeBasis": "Entry following actual session retrieval and inspection, not source publication time.",
+  "accessStatus": "partially-inspected",
+  "acquisition": "http-body",
+  "inspectedText": "Reviewed event us6000qw60: magnitude 8.8; origin epoch 1753831492483 milliseconds, equivalent to 2025-07-29T23:24:52.483Z. Epicenter longitude 160.2395, latitude 52.4948, depth 35 km. Calendar conversions give July 29 in Nevada/UTC and July 30 in Kamchatka. Coordinates describe the earthquake origin, not cave ground motion.",
+  "locator": "GeoJSON properties.mag, properties.time, properties.status and geometry.coordinates",
+  "sourceQualityRationale": "Direct USGS scientific-catalog HTTP GeoJSON response, with exact bytes preserved. Corroborates magnitude and origin date, not local wave size or delay.",
+  "limitations": [
+    "Current reviewed catalog metadata may differ from initial news estimates; no older epicenter or depth estimate is reused.",
+    "Do not manufacture an exact cave-disturbance timestamp from the reported 21-minute interval.",
+    "Calendar conversions are labeled derivations, not independent timestamp observations."
+  ],
+  "bodyRecord": {
+    "path": "content-intelligence/cycles/cycle-13/development-v1/research/usgs-event-response.json",
+    "sha256": "0a9e62c258570d2e89794bbd8821570dd7977ed561d5e2696490e722ced93b93"
+  },
+  "method": "Bounded paraphrased assessment of actual inspected passages, with raw acquisition/extracted text retained. No search-snippet verification or monitoring-video playback implied."
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-13T08:25:32.661036+00:00",
+  "gate": "AHMET \u2014 MASTER REVIEW \u00b7 CYCLE #13 REVISION 2",
+  "master": {
+    "path": "artifacts/masters/devils-hole-cycle13-candidate-v2.mp4",
+    "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+    "bytes": 33491428
+  },
+  "cycleState": {
+    "path": "workflow/cycles/cycle.13/state.json",
+    "sha256": "35e70184ab94a149027f75b265ea41dcd5afd7ffe9b66fe9665177944187d066",
+    "bytes": 7572
+  },
+  "revision": 14,
+  "stage": "master-review",
+  "ownerMasterApproval": false,
+  "publicationAuthorized": false,
+  "evidence": [
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/master-review.md",
+      "sha256": "0f12a19cff5fe3c673507f81e97ad8ed709295ad08fa98a1f5c8bea19c12a2a6",
+      "bytes": 15086
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/master-candidate-v2.json",
+      "sha256": "7e2ec6b39501d565945dfc9ebe8d396745db511210f4fc1db37c53d2834718a9",
+      "bytes": 10176
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/native-owner-handoff.json",
+      "sha256": "857d649761b6abe57ce7bdf88a2174548e4ca444f60c22d644a9244b4322a103",
+      "bytes": 7761
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/owner-instruction.md",
+      "sha256": "bf7a7f6c2777d7b03cd1d64ec980d3df2375227c0310e8a2a55a90a7f2623bad",
+      "bytes": 9401
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/owner-master-revision.json",
+      "sha256": "ac4cfee76c1b8d388c4cfe605f2153369b6a9079becd468b74aed9681475ea0c",
+      "bytes": 10533
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/direction-v2.json",
+      "sha256": "1ff89b6d00b98e9d1944a1a4f6a24f812f2ec9f21da8d81742869c644361b0a3",
+      "bytes": 35420
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/implementation-bindings.json",
+      "sha256": "9f88d251d85dfaf15c40af7e582ca5ce679f9f722f9df23c355601e5b63619cb",
+      "bytes": 4858
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/production-plan.candidate-v2.json",
+      "sha256": "ed7e02207add8cc4f19dc7bc1a0a7c54525907cb58e484ecd2cacde600f521a8",
+      "bytes": 20580
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/validation.json",
+      "sha256": "db7fc23bd6dab213d051c9896780c7e0c9368b74c92577aeeeb869b730e09732",
+      "bytes": 918
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/technical-stream-inspection.json",
+      "sha256": "dcceace3656fb5e100490f273a8f5406b93e526d39c7e550bb83e9febfe7d7b3",
+      "bytes": 3340
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/rights-provenance.json",
+      "sha256": "cb2ca79757959bb6ff698a4c9ef82631e221245a5898d6d88cea02daa03d8632",
+      "bytes": 2428
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/image-generation.json",
+      "sha256": "2eeae7ce656ac3bfc97eca5f1d9b7759326df3a78629e70d5276ecabf6f2e29b",
+      "bytes": 2614
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/historical-preservation.json",
+      "sha256": "069d9c3f1f3505485d7bf10a695b3823d7ef69615107afd27df9daaf8c0f464d",
+      "bytes": 1511
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/rendered-sequence-review.md",
+      "sha256": "a43abd29cd31055fc30ce6023236c11500ff93ed56eb6ca92d35b3b2ad2c8a6b",
+      "bytes": 3491
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/repository-check.log",
+      "sha256": "ba0328641b2cb7ed7977154956a8e550032111e4dadf0e24123c7d6f5fc427f4",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/durability.log",
+      "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/qa/final-report.json",
+      "sha256": "119a5e45659f1e473aa4b9c3cccafe2cb8b702ed76ac790d709154534d15e067",
+      "bytes": 8377
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/qa/visual-inspection.json",
+      "sha256": "f4bfcc464a2902faf3f94a4c4154b8711e7bb17ed5ca726e2ca6b1cd6f316010",
+      "bytes": 7557
+    }
+  ],
+  "checks": {
+    "repository": {
+      "passed": true,
+      "testFiles": 53,
+      "tests": 501
+    },
+    "durability": {
+      "passed": true,
+      "canonicalPayloads": 1074,
+      "legacyRegisteredArtifacts": 731
+    }
+  },
+  "assetSummaryErratum": {
+    "affected": [
+      "master-candidate-v2.json",
+      "native-owner-handoff.json"
+    ],
+    "supersededSentence": "Original visuals and procedural audio; external references consultation-only.",
+    "correction": "The individually licensed NPS July 30 monitoring still and public-domain Natural Earth land geometry are production assets; other site references are consultation-only. Full provenance is bound in rights-provenance.json and explained in master-review.md. Candidate/journal bytes remain preserved."
+  },
+  "limitations": [
+    "Sampled decoded-frame inspection and machine audio checks do not establish continuous audiovisual acceptance.",
+    "Specialist pronunciation, prosody, sound purpose, pacing and premium finish require owner viewing/listening.",
+    "Actual mobile/platform UI and crop evidence remain absent."
+  ],
+  "stopCondition": "No publication preparation, upload, scheduling or publishing.",
+  "preservedUnrelatedStagedWhitespace": [
+    "content-intelligence/cycles/cycle-13/production-v1/master-review.md:7-8",
+    "scripts/generate-devils-hole-soundscape.mjs:17"
+  ]
+}

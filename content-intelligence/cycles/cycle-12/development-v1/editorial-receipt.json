@@ -1,0 +1,1096 @@
+{
+  "draftPackage": {
+    "id": "flip-floating-laboratory",
+    "revision": 1,
+    "topic": "FLIP floating laboratory and ocean measurement",
+    "centralQuestion": "Why would scientists intentionally tip a floating laboratory upright?",
+    "taxonomy": {
+      "pillar": "technology-built-world",
+      "domains": [
+        "oceanography",
+        "engineering",
+        "measurement-science"
+      ],
+      "topics": [
+        "flip",
+        "spar-buoy",
+        "surface-waves",
+        "ballast"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "Controlled rotation changed the platform geometry to reduce wave response and improve a scientific reference, without eliminating ocean motion.",
+    "viewerPayoff": "Understand why an extraordinary-looking laboratory was shaped to distinguish ocean behavior from instrument motion.",
+    "sources": [
+      {
+        "id": "source.flip-floating-laboratory.history",
+        "organization": "Scripps Institution of Oceanography / Marine Physical Laboratory",
+        "title": "FLIP History",
+        "sourceType": "university",
+        "url": "https://scripps.ucsd.edu/ships/flip/history",
+        "retrieved": "2026-10-11",
+        "notes": "First-party former operator account of engineering requirements and development, not an independent second institution. Retrospective history; original1963 design paper body not acquired. Do not narrate model tests as full-scale accidents."
+      },
+      {
+        "id": "source.flip-floating-laboratory.technical",
+        "organization": "Scripps Institution of Oceanography / Marine Physical Laboratory",
+        "title": "FLIP Technical Details",
+        "sourceType": "technical-documentation",
+        "url": "https://scripps.ucsd.edu/ships/flip/technical",
+        "retrieved": "2026-10-11",
+        "notes": "Former operator technical description; geometry and operations authority. 10m wave / <1m vertical motion observation lacks full conditions; no universal reduction ratio. Geometry is historical platform, not current refit."
+      },
+      {
+        "id": "source.flip-floating-laboratory.operation",
+        "organization": "Scripps Institution of Oceanography",
+        "title": "Scripps’ one-of-a-kind FLIP turns50",
+        "sourceType": "university",
+        "url": "https://scripps.ucsd.edu/news/scripps-one-kind-flip-turns-50",
+        "retrieved": "2026-10-11",
+        "notes": "First-party operator publication with named administrator and operational account; corroborates controlled flooding and recovery. Dated2012 operation; present-tense statements describe then, not current operational status. Several Scripps pages are related sources, not independent replication."
+      },
+      {
+        "id": "source.flip-floating-laboratory.radyo",
+        "organization": "RaDyO field investigators / Journal of Geophysical Research: Oceans",
+        "title": "Dickey et al.2012, Introduction to special section on Recent Advances in the Study of Optical Variability in the Near-Surface and Upper Ocean",
+        "sourceType": "peer-reviewed",
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2012JC007964",
+        "retrieved": "2026-10-11",
+        "notes": "Primary field-study account for residual motion and deployments; historical design summary is cited synthesis rather than new engineering test. Inspected relevant PDF paragraphs, not complete39-page paper. PDF screenshots failed; text successfully inspected. Launch day2June conflicts with Scripps22June: omit exact launch day. Original1963 and1997 paper bodies unavailable; no claim to have read them. Resonance and response depend on conditions. Copyrighted figures/photos not cleared for production."
+      },
+      {
+        "id": "source.flip-floating-laboratory.waves",
+        "organization": "NOAA / National Weather Service",
+        "title": "Mariners Weather Log43(1), April1999, Physical Oceanography: How Wind Generates Waves",
+        "sourceType": "government",
+        "url": "https://www.vos.noaa.gov/MWL/apr1999.pdf",
+        "retrieved": "2026-10-11",
+        "notes": "Official NOAA/NWS physical-oceanography teaching source supporting general mechanism; not a FLIP performance test. Inspected selected extracted PDF text only; no full108-page inspection. No half-wavelength cutoff or still-water assertion in script. Applies deep-water surface-wave model, not all ocean motion."
+      }
+    ],
+    "claims": [
+      {
+        "id": "flip-floating-laboratory.claim.rotation",
+        "statement": "FLIP was a floating research laboratory deliberately rotated from horizontal transit to a vertical working orientation.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "notes": "Historical original configuration; a spar buoy, not a powered ship."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.operation",
+            "locator": "Extracted body lines17–26; published26June2012",
+            "notes": "Historical original configuration; a spar buoy, not a powered ship."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Historical original configuration; a spar buoy, not a powered ship."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.measurement",
+        "statement": "Platform motion could limit acoustic measurements; FLIP was developed to reduce this problem while connecting deep sensors to an above-water reference.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.history",
+            "locator": "Extracted body lines6–22,25; requirements and model studies",
+            "notes": "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.ballast",
+        "statement": "Operators admitted water into ballast tanks to rotate FLIP, lowering the stern while laboratory spaces remained above water.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.operation",
+            "locator": "Extracted body lines17–26; published26June2012",
+            "notes": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.history",
+            "locator": "Extracted body lines6–22,25; requirements and model studies",
+            "notes": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "notes": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.draft",
+        "statement": "About ninety metres of FLIP’s hull extended below the waterline in its vertical working configuration.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "notes": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "notes": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 90,
+          "unit": "m",
+          "precision": "rounded"
+        },
+        "basis": "derived",
+        "display": "about90metres"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.geometry",
+        "statement": "FLIP had a narrow upper hull and a broader submerged lower hull; this shape reduced its responsiveness to waves.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "notes": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "notes": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.depth",
+        "statement": "For deep-water surface waves, wave-induced water motion decreases with depth.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.waves",
+            "locator": "Printedp19/PDFpage index18, extracted lines940–978, particle-motion explanation; earlier deep/shallow-water distinction",
+            "notes": "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.residual",
+        "statement": "FLIP could still drift and tilt; investigators observed motion even during moored research.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "notes": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "notes": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.return",
+        "statement": "Compressed air expelled ballast water to return FLIP to horizontal.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.operation",
+            "locator": "Extracted body lines17–26; published26June2012",
+            "notes": "Historical return operation; do not show compressed air rotating it downward."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Historical return operation; do not show compressed air rotating it downward."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.immune",
+        "statement": "FLIP was perfectly stationary or immune to ocean motion.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "notes": "Contradicted by actual tilt, oscillation and drift; exclude."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Contradicted by actual tilt, oscillation and drift; exclude."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.ratio",
+        "statement": "FLIP always moved less than one tenth as far as any ocean wave.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "notes": "Conditional observation/design summary is not universal; exclude unqualified ratio."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "notes": "Conditional observation/design summary is not universal; exclude unqualified ratio."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Conditional observation/design summary is not universal; exclude unqualified ratio."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.launch-day",
+        "statement": "FLIP was launched on2June1962.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.history",
+            "locator": "Extracted body lines6–22,25; requirements and model studies",
+            "notes": "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude."
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "notes": "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flip-floating-laboratory.claim.present-service",
+        "statement": "FLIP is currently operating scientific cruises following its refit.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.history",
+            "locator": "Extracted body lines6–22,25; requirements and model studies",
+            "notes": "Scripps describes retirement and future restoration; actual current operations not inspected. Exclude current-service claim."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Scripps describes retirement and future restoration; actual current operations not inspected. Exclude current-service claim."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "flip-floating-laboratory.caveat.bounds",
+        "statement": "Historical original design. Reduced motion is not immobility; deep-water surface-wave attenuation varies with wavelength. Controlled ballast sequence and hull diagram are simplified, not an engineering operating procedure. No universal motion ratio, literal still-water depth, invented data trace or current-service claim.",
+        "claimIds": [
+          "flip-floating-laboratory.claim.rotation",
+          "flip-floating-laboratory.claim.measurement",
+          "flip-floating-laboratory.claim.ballast",
+          "flip-floating-laboratory.claim.draft",
+          "flip-floating-laboratory.claim.geometry",
+          "flip-floating-laboratory.claim.depth",
+          "flip-floating-laboratory.claim.residual",
+          "flip-floating-laboratory.claim.return"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "flip-floating-laboratory.hook.upright",
+        "archetype": "purpose-mystery",
+        "text": "Scientists deliberately tipped this floating laboratory upright. Why?",
+        "viewerPromise": "Resolve the deliberate rotation through ballast, hull geometry and scientific measurement.",
+        "claimIds": [
+          "flip-floating-laboratory.claim.rotation"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.hook.measurement",
+        "archetype": "instrument-versus-signal",
+        "text": "How do you measure a moving ocean from a moving laboratory?",
+        "viewerPromise": "See the platform itself become part of the measurement solution.",
+        "claimIds": [
+          "flip-floating-laboratory.claim.measurement",
+          "flip-floating-laboratory.claim.geometry"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "flip-floating-laboratory.narrative.rotate",
+        "title": "Change the reference",
+        "description": "Vertical mystery → measurement problem → ballast rotation → underwater shape → reduced response with residual motion → return and insight.",
+        "claimIds": [
+          "flip-floating-laboratory.claim.rotation",
+          "flip-floating-laboratory.claim.measurement",
+          "flip-floating-laboratory.claim.ballast",
+          "flip-floating-laboratory.claim.draft",
+          "flip-floating-laboratory.claim.geometry",
+          "flip-floating-laboratory.claim.depth",
+          "flip-floating-laboratory.claim.residual",
+          "flip-floating-laboratory.claim.return"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "flip-floating-laboratory.visual.cutaway",
+        "title": "One hull, two orientations",
+        "description": "Original continuous ocean cutaway with causal ballast and geometry transformations, labeled conceptual wave-motion overlay.",
+        "claimIds": [
+          "flip-floating-laboratory.claim.rotation",
+          "flip-floating-laboratory.claim.measurement",
+          "flip-floating-laboratory.claim.ballast",
+          "flip-floating-laboratory.claim.draft",
+          "flip-floating-laboratory.claim.geometry",
+          "flip-floating-laboratory.claim.depth",
+          "flip-floating-laboratory.claim.residual",
+          "flip-floating-laboratory.claim.return"
+        ]
+      }
+    ],
+    "relatedQuestions": [
+      "How does wavelength affect wave motion below the surface?",
+      "How do scientists correct measurements for platform motion?"
+    ],
+    "followUpOpportunities": [],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "flip-floating-laboratory.asset.measurement",
+    "revision": 1,
+    "knowledgePackageId": "flip-floating-laboratory",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Understand why an extraordinary-looking laboratory was shaped to distinguish ocean behavior from instrument motion.",
+    "storyAngle": "An apparently sinking laboratory deliberately changes shape in relation to the waves to become a better scientific reference.",
+    "hookId": "flip-floating-laboratory.hook.upright",
+    "selectedClaimIds": [
+      "flip-floating-laboratory.claim.rotation",
+      "flip-floating-laboratory.claim.measurement",
+      "flip-floating-laboratory.claim.ballast",
+      "flip-floating-laboratory.claim.draft",
+      "flip-floating-laboratory.claim.geometry",
+      "flip-floating-laboratory.claim.depth",
+      "flip-floating-laboratory.claim.residual",
+      "flip-floating-laboratory.claim.return"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 50,
+      "maximum": 95
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.1",
+          "type": "factual",
+          "text": "Scientists deliberately tipped this floating laboratory upright. Why?",
+          "claimIds": [
+            "flip-floating-laboratory.claim.rotation"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.2",
+          "type": "factual",
+          "text": "Because when your instrument moves, it’s harder to tell what the ocean is doing.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.measurement"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.3",
+          "type": "factual",
+          "text": "FLIP was built to study underwater sound. Even a research submarine turned enough to limit those measurements.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.measurement"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.4",
+          "type": "factual",
+          "text": "So engineers made a laboratory that travelled horizontally, then flooded ballast tanks to lower its stern.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.rotation",
+            "flip-floating-laboratory.claim.ballast"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.5",
+          "type": "factual",
+          "text": "The lab stayed above water, while about ninety metres of hull extended beneath it.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.ballast",
+            "flip-floating-laboratory.claim.draft"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.6",
+          "type": "factual",
+          "text": "Look at the shape: a narrow section near the surface, with a broader hull deep below.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.geometry"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.7",
+          "type": "factual",
+          "text": "In deep water, the motion caused by surface waves weakens with depth.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.depth"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.8",
+          "type": "factual",
+          "text": "FLIP’s shape made it much less responsive to those waves.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.geometry"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.9",
+          "type": "factual",
+          "text": "It could still drift and tilt. Stable didn’t mean motionless.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.residual"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.10",
+          "type": "factual",
+          "text": "And when the work was done, compressed air pushed water out of the ballast tanks, returning it to horizontal.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.return"
+          ]
+        },
+        {
+          "id": "flip-floating-laboratory.asset.measurement.script.11",
+          "type": "factual",
+          "text": "They tipped the laboratory upright to make a moving ocean easier to measure.",
+          "claimIds": [
+            "flip-floating-laboratory.claim.measurement",
+            "flip-floating-laboratory.claim.geometry"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.1",
+        "label": "understanding-1",
+        "purpose": "Recognizable vertical laboratory immediately; pose deliberate mystery before history.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.1"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.2",
+        "label": "understanding-2",
+        "purpose": "Reveal the measurement-reference problem using an instrument and signal, no fake measured graph.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.2"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.3",
+        "label": "understanding-3",
+        "purpose": "Show a hydrophone/reference pair; schematic submarine yaw visibly changes reference direction.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.3"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.4",
+        "label": "understanding-4",
+        "purpose": "Follow same hull from horizontal tow to controlled ballast fill and rotation; time-compressed.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.4"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.5",
+        "label": "understanding-5",
+        "purpose": "Reveal underwater length while retaining small above-water lab and common waterline.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.5"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.6",
+        "label": "understanding-6",
+        "purpose": "Emphasize upper narrow section and broader deep hull; remove internal ballast overlay before wave lesson.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.6"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.7",
+        "label": "understanding-7",
+        "purpose": "Show schematic shrinking wave-motion loops with depth; no hard wave-base boundary.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.7"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.8",
+        "label": "understanding-8",
+        "purpose": "Passing surface waves and smaller nonzero FLIP motion show why geometry matters; no numerical animation ratio.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.8"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.9",
+        "label": "understanding-9",
+        "purpose": "Show gentle drift/tilt in same spatial field, preserving limited rather than absolute stability.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.9"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.10",
+        "label": "understanding-10",
+        "purpose": "Reverse ballast process with air displacing water; connect return to original horizontal silhouette.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.10"
+        ]
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.beat.11",
+        "label": "understanding-11",
+        "purpose": "Return to vertical lab and ocean/reference distinction: the orientation spectacle resolves into measurement insight.",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.11"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.1",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.1",
+        "objective": "Recognizable vertical laboratory immediately; pose deliberate mystery before history.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.1"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.rotation"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.2",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.2",
+        "objective": "Reveal the measurement-reference problem using an instrument and signal, no fake measured graph.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.2"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.measurement"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.3",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.3",
+        "objective": "Show a hydrophone/reference pair; schematic submarine yaw visibly changes reference direction.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.3"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.measurement"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.4",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.4",
+        "objective": "Follow same hull from horizontal tow to controlled ballast fill and rotation; time-compressed.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.4"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.rotation",
+          "flip-floating-laboratory.claim.ballast"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.5",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.5",
+        "objective": "Reveal underwater length while retaining small above-water lab and common waterline.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.5"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.ballast",
+          "flip-floating-laboratory.claim.draft"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.6",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.6",
+        "objective": "Emphasize upper narrow section and broader deep hull; remove internal ballast overlay before wave lesson.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.6"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.geometry"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.7",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.7",
+        "objective": "Show schematic shrinking wave-motion loops with depth; no hard wave-base boundary.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.7"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.depth"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.8",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.8",
+        "objective": "Passing surface waves and smaller nonzero FLIP motion show why geometry matters; no numerical animation ratio.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.8"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.geometry"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.9",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.9",
+        "objective": "Show gentle drift/tilt in same spatial field, preserving limited rather than absolute stability.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.9"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.residual"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.10",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.10",
+        "objective": "Reverse ballast process with air displacing water; connect return to original horizontal silhouette.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.10"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.return"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      },
+      {
+        "id": "flip-floating-laboratory.asset.measurement.visual.11",
+        "narrativeBeatId": "flip-floating-laboratory.asset.measurement.beat.11",
+        "objective": "Return to vertical lab and ocean/reference distinction: the orientation spectacle resolves into measurement insight.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "scriptSegmentIds": [
+          "flip-floating-laboratory.asset.measurement.script.11"
+        ],
+        "claimIds": [
+          "flip-floating-laboratory.claim.measurement",
+          "flip-floating-laboratory.claim.geometry"
+        ],
+        "notes": "Original historical-shape explanatory illustration, not footage. Keep waterline, lab and stern identity across orientation; about90m submerged, about108m total for proportion. Actual operator diagram consulted only. Ballast compartments, motion, water loops and acoustic reference are visibly schematic. No fixed pivot, uncontrolled plunge, measured waveform, quantitative response animation or stationary FLIP. Essential diagram and burned-in speech must stay independently readable."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Established Kokoro af_heart; connected thoughtful speech, inviting first question, plain technical wording, space to grasp the underwater reveal. No disaster voice. Exact narration not generated or auditioned at this stage.",
+      "pronunciationNotes": [
+        "FLIP: ordinary single-syllable English flip /flɪp/, not spelled F-L-I-P. Merriam-Webster headword phonetic entry inspected; institution writes FLoating Instrument Platform. No proper scientist/place names in script. Audit actual complete narration units by listening when produced; no pronunciation/audio pass claimed."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.12",
+    "topicCandidateId": "topic.cycle12.flip",
+    "enteredAt": "2026-10-11T17:10:28.687Z",
+    "reviewer": "Codex internal evidence review; not owner factual/script/visual approval",
+    "premiseAlignment": {
+      "selectionSha256": "e2965c0224c1fbe73b30258a6a226d0a8fc5545c7930eb3239132a7be0ea8253",
+      "preservesPublishingOpportunity": true,
+      "rationale": "Verified original measurement requirements, controlled rotation and reduced wave response retain the approved vertical-laboratory opportunity. Field-study residual motion bounds the explanation rather than changing its premise."
+    },
+    "packageSha256": "a6f403a456b10d1600413037edc8774dd2c62c431da2a3e6a6188a87d23fed6a",
+    "assetSha256": "00d36cb7f0f16ffa36516a3ae081217b1ee7d3ba653d3ca6b7a05eb3bdf8729f",
+    "scriptSha256": "a1cc265cfe1f8ca836170094ab9692cd942c1886d5b8cb8c38a7c28287dd75ea",
+    "inspections": [
+      {
+        "sourceId": "source.flip-floating-laboratory.history",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Extracted body lines6–22,25; requirements and model studies"
+        ],
+        "supportsClaimIds": [
+          "flip-floating-laboratory.claim.measurement",
+          "flip-floating-laboratory.claim.ballast"
+        ],
+        "limitations": [
+          "Retrospective history; original1963 design paper body not acquired. Do not narrate model tests as full-scale accidents."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-12/development-v1/research/history-inspection.json",
+          "sha256": "e1fff9914223eaa0250faee480d662340a9ae9b637e8c39c6789e890e161bb2a"
+        },
+        "sourceQualityRationale": "First-party former operator account of engineering requirements and development, not an independent second institution."
+      },
+      {
+        "sourceId": "source.flip-floating-laboratory.technical",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Extracted body lines10–13,17–18,21–28"
+        ],
+        "supportsClaimIds": [
+          "flip-floating-laboratory.claim.rotation",
+          "flip-floating-laboratory.claim.ballast",
+          "flip-floating-laboratory.claim.draft",
+          "flip-floating-laboratory.claim.geometry",
+          "flip-floating-laboratory.claim.residual"
+        ],
+        "limitations": [
+          "10m wave / <1m vertical motion observation lacks full conditions; no universal reduction ratio. Geometry is historical platform, not current refit."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-12/development-v1/research/technical-inspection.json",
+          "sha256": "f2ff83ca5e655cf8b1c845419fcffec0ee736515792570a74bfd7e6550f39985"
+        },
+        "sourceQualityRationale": "Former operator technical description; geometry and operations authority."
+      },
+      {
+        "sourceId": "source.flip-floating-laboratory.operation",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Extracted body lines17–26; published26June2012"
+        ],
+        "supportsClaimIds": [
+          "flip-floating-laboratory.claim.rotation",
+          "flip-floating-laboratory.claim.ballast",
+          "flip-floating-laboratory.claim.return"
+        ],
+        "limitations": [
+          "Dated2012 operation; present-tense statements describe then, not current operational status. Several Scripps pages are related sources, not independent replication."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-12/development-v1/research/operation-inspection.json",
+          "sha256": "7e1d016a6e670305ca3288f6809685ca934053c3691a66a12f3a971449da7a07"
+        },
+        "sourceQualityRationale": "First-party operator publication with named administrator and operational account; corroborates controlled flooding and recovery."
+      },
+      {
+        "sourceId": "source.flip-floating-laboratory.radyo",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text"
+        ],
+        "supportsClaimIds": [
+          "flip-floating-laboratory.claim.draft",
+          "flip-floating-laboratory.claim.geometry",
+          "flip-floating-laboratory.claim.residual"
+        ],
+        "limitations": [
+          "Inspected relevant PDF paragraphs, not complete39-page paper. PDF screenshots failed; text successfully inspected. Launch day2June conflicts with Scripps22June: omit exact launch day. Original1963 and1997 paper bodies unavailable; no claim to have read them. Resonance and response depend on conditions. Copyrighted figures/photos not cleared for production."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-12/development-v1/research/radyo-inspection.json",
+          "sha256": "51f3a58c2cfe3d8f40f4ba4e012577f11daf05e4fb5c66091bd500abeb49405d"
+        },
+        "sourceQualityRationale": "Primary field-study account for residual motion and deployments; historical design summary is cited synthesis rather than new engineering test."
+      },
+      {
+        "sourceId": "source.flip-floating-laboratory.waves",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Printedp19/PDFpage index18, extracted lines940–978, particle-motion explanation; earlier deep/shallow-water distinction"
+        ],
+        "supportsClaimIds": [
+          "flip-floating-laboratory.claim.depth"
+        ],
+        "limitations": [
+          "Inspected selected extracted PDF text only; no full108-page inspection. No half-wavelength cutoff or still-water assertion in script. Applies deep-water surface-wave model, not all ocean motion."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-12/development-v1/research/waves-inspection.json",
+          "sha256": "1b38543ba7eda7f3e51cd848f30d14f2d5df223aa5bacbbeb536af859f131280"
+        },
+        "sourceQualityRationale": "Official NOAA/NWS physical-oceanography teaching source supporting general mechanism; not a FLIP performance test."
+      }
+    ],
+    "claims": [
+      {
+        "id": "flip-floating-laboratory.claim.rotation",
+        "statementSha256": "1e32b8f0d4f057fd30847f075d4f4e4faf99abc6e6f5ff727dca0eb94f1e2002",
+        "disposition": "verify",
+        "rationale": "Historical original configuration; a spar buoy, not a powered ship.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "assessment": "Historical original configuration; a spar buoy, not a powered ship.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.operation",
+            "locator": "Extracted body lines17–26; published26June2012",
+            "assessment": "Historical original configuration; a spar buoy, not a powered ship.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.measurement",
+        "statementSha256": "6420c26a27b4f8c74d9fef5469d20b131fef69dc30f6a361ead717b1da4777e6",
+        "disposition": "verify",
+        "rationale": "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.history",
+            "locator": "Extracted body lines6–22,25; requirements and model studies",
+            "assessment": "Specific original bearing/fluctuation measurements, not all science requires stationary instruments. Payoff is editorial synthesis of documented purpose.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.ballast",
+        "statementSha256": "ec3613be3b01635b2afae8525771e58ddedc29ad106b3ce4683ffa67ab111676",
+        "disposition": "verify",
+        "rationale": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.operation",
+            "locator": "Extracted body lines17–26; published26June2012",
+            "assessment": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.history",
+            "locator": "Extracted body lines6–22,25; requirements and model studies",
+            "assessment": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "assessment": "Controlled sequence involving several tanks; no single magical rear tank or free plunge. Simplified diagram not an operating procedure.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.draft",
+        "statementSha256": "b3a8447480e65b2d99c108d4c99c0eff41e349fd78d6316fe38543f2a0cec621",
+        "disposition": "verify",
+        "rationale": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "assessment": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "assessment": "300ft =91.44m; about90m is rounded, also directly supported by investigators. Historical working draft, not exact for every loading state.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.geometry",
+        "statementSha256": "a5bc8866d722f8afa5fd12fbdd4eb5a3206e3120a0990753b75293458198b2ea",
+        "disposition": "verify",
+        "rationale": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "assessment": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "assessment": "Do not draw a broad horizontal ship hull simply attached atop a generic cylinder. Preserve taper and historical approximate submerged proportion.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.depth",
+        "statementSha256": "28dc37a80f9b0fdb445739f93284797679ec2d39c0f96f6103e4b7234289dc63",
+        "disposition": "verify",
+        "rationale": "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.waves",
+            "locator": "Printedp19/PDFpage index18, extracted lines940–978, particle-motion explanation; earlier deep/shallow-water distinction",
+            "assessment": "Depends on wavelength and water depth; no exact depth at which all ocean motion stops. No tsunami, current or internal-wave immunity.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.residual",
+        "statementSha256": "78403563e0e38743446edcf2fe8854aa750da20391658ab399e4842051d06995",
+        "disposition": "verify",
+        "rationale": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.radyo",
+            "locator": "Section2.2.1, paragraphs12–14, PDF printedpp4–5, extracted lines304–357; author-hosted39-page PDF inspected text",
+            "assessment": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flip-floating-laboratory.technical",
+            "locator": "Extracted body lines10–13,17–18,21–28",
+            "assessment": "Stability means reduced response, not perfect stationarity. Free drift and mooring are alternative deployments; no universal numerical scale.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.return",
+        "statementSha256": "becbde56d200368730c0ce054dfd1557431e40231ab41c0e7f0b54bee1bd8ac9",
+        "disposition": "verify",
+        "rationale": "Historical return operation; do not show compressed air rotating it downward.",
+        "evidence": [
+          {
+            "sourceId": "source.flip-floating-laboratory.operation",
+            "locator": "Extracted body lines17–26; published26June2012",
+            "assessment": "Historical return operation; do not show compressed air rotating it downward.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.immune",
+        "statementSha256": "50e222c26978c0a04d5fb0d946c947b90b3760713653deeeb18f18d4489e48c4",
+        "disposition": "exclude",
+        "rationale": "Contradicted by actual tilt, oscillation and drift; exclude.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.ratio",
+        "statementSha256": "fd0baa91dcad1a9aaa94b1e8cca1b0c4a7d66f43f093db8a83ed76acbfcd802d",
+        "disposition": "exclude",
+        "rationale": "Conditional observation/design summary is not universal; exclude unqualified ratio.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.launch-day",
+        "statementSha256": "2308ce24994d8c7bd37efdbaac7c5f9f7587cbff69c02ad86e196e95a20a739d",
+        "disposition": "exclude",
+        "rationale": "Conflicting exact date in sources; unnecessary to explanation, retain unverified and exclude.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flip-floating-laboratory.claim.present-service",
+        "statementSha256": "ec3dcdbbb57d84247b0c797d908ba8f5e7dafd6ff2d8d39254eef5064133f387",
+        "disposition": "exclude",
+        "rationale": "Scripps describes retirement and future restoration; actual current operations not inspected. Exclude current-service claim.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "FLIP is a deliberately rotated spar buoy; no accidental ship sinking or propulsion.",
+      "Acoustic reference problem is the initial specific purpose; narration opens with a bounded general explanation, not a claim that moving instruments cannot measure.",
+      "Flooding controlled by crew and several tanks; diagrams never present a replication procedure.",
+      "Wave-motion attenuation is deep-water surface-wave behavior; no hard cutoff or motionless deep ocean.",
+      "Narrow upper / broader deep geometry and large draft reduce wave responsiveness; no universal quantified performance guarantee.",
+      "Stable is explicitly qualified by drift and tilt; moored and free-drift research are distinct.",
+      "Compressed air expels water for horizontal return, not the downward flip.",
+      "Original1963/1997 articles located but bodies inaccessible; no fabricated inspection. Launch-day conflict excluded.",
+      "No present-service, current ownership or refit completion assertion."
+    ],
+    "comprehensionReview": "Cold viewer sees deliberate upright laboratory before explanatory setup. Moving sensor/reference dilemma supplies why. Same hull changes through transit, ballast, deep shape, waves and residual motion. Final sentence resolves orientation as a measurement tool. The schematic wave overlay supports only qualitative understanding; no resonance formula needed for this short explanation.",
+    "rightsReview": "Original diagrams are the selected visual medium. Scripps brochure diagram and scholarly figures are consultation-only, not cleared or selected production assets. Established licensed Manrope and af_heart are planned, not newly generated. No asset-license entry needed for a research-only reference; record actual future production assets when created.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Historical engineering explanation with sufficient primary operator and actual field-study evidence; excluded date conflict and unsupported absolute claims do not affect premise. No new services, costs, brand deviation or rights exception."
+    },
+    "exceptionalConditions": []
+  }
+}
