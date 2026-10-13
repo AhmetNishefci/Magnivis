@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "enteredAt": "2026-10-13T13:47:56.221724Z",
+  "checks": [
+    {
+      "command": "VITEST_MAX_WORKERS=2 pnpm check",
+      "passed": true,
+      "testFiles": 53,
+      "tests": 501,
+      "exactOutput": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v2/check-output.json",
+        "sha256": "3cb83924709a71e0f06fd12a1551e71251229d2af6d2450384adfaffe44ab827"
+      }
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "passed": true,
+      "canonicalPayloads": 1074,
+      "durableArtifactCount": 731,
+      "output": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v2/durability.txt",
+        "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c"
+      }
+    },
+    {
+      "command": "node --import tsx content-intelligence/cycles/cycle-14/revision-v2/validate-refinement.ts",
+      "passed": true,
+      "result": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v2/scope-validation.json",
+        "sha256": "d6eee94fe39f68de9aa9baec4a5214ac6bc4ad6804f3c5242d500ffa44b1d2ef"
+      },
+      "output": {
+        "path": "content-intelligence/cycles/cycle-14/revision-v2/scope-validation.txt",
+        "sha256": "d6eee94fe39f68de9aa9baec4a5214ac6bc4ad6804f3c5242d500ffa44b1d2ef"
+      }
+    }
+  ],
+  "gate": "AHMET — CYCLE #14 FINAL CREATIVE REVIEW",
+  "review": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/owner-review.md",
+    "sha256": "b3264418b678a008f5c1ab139d7a22c8fb3a5bc037e452bfa625907c92e60c98"
+  },
+  "reviewTarget": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/final-creative-review-target.json",
+    "sha256": "9586719d4b2bb7803c52605ef430ffc58bda026d4dbd92c37d1da4dd3c3b721a"
+  },
+  "ownerFeedback": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/owner-feedback.json",
+    "sha256": "08e3a3468fe5191de34f432694f6a423c3db3a69ad55149afad666c1082cd43b"
+  },
+  "spokenWords": 128,
+  "estimatedRuntimeSeconds": [
+    52.5,
+    65
+  ],
+  "fourVisualProofsChecked": true,
+  "claimContentAndDispositionsUnchanged": true,
+  "priorFilesUnchanged": 2277,
+  "ownerTreatmentAspectsApproved": true,
+  "revisedNarrationApproved": false,
+  "productionAuthorized": false,
+  "newMedia": 0,
+  "renders": 0,
+  "platformActions": [],
+  "cycle13Unchanged": true,
+  "limits": [
+    "Runtime estimated without TTS or render.",
+    "Conceptual visual proof checked against exact outcomes; no human-comprehension or actual-video acceptance claimed."
+  ],
+  "gitScope": "Local versioned review checkpoint only; no main merge, history rewrite or remote push."
+}

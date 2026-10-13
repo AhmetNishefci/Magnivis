@@ -1,0 +1,9 @@
+{
+  "command": "VITEST_MAX_WORKERS=2 pnpm check",
+  "passed": true,
+  "rawOutput": "\n> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis\n> pnpm validate && git diff --check\n\n\n> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis\n> pnpm typecheck && pnpm lint && pnpm test\n\n\n> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis\n> tsc --noEmit\n\n\n> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis\n> eslint src scripts tests remotion.config.ts vitest.config.ts\n\n\n> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis\n> vitest run\n\n\n RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  53 passed (53)\n      Tests  501 passed (501)\n   Start at  15:45:07\n   Duration  85.12s (tests 95%, import 4%, transform 1%)\n\n",
+  "rawBytesSha256": "fb0bd5d2894d6ac980da95d485bfc7542b1e7d4d6e3156458e8abbc3910720ee",
+  "byteCount": 694,
+  "testFiles": 53,
+  "tests": 501
+}

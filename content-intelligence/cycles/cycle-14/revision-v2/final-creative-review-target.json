@@ -1,0 +1,71 @@
+{
+  "cycleId": "cycle.14",
+  "ownerFeedback": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/owner-feedback.json",
+    "sha256": "08e3a3468fe5191de34f432694f6a423c3db3a69ad55149afad666c1082cd43b"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-14/owner-premise-approval-v1.json",
+    "sha256": "720f45677ef1dc22771dc3c00f26a3b0c1e1ba4f538f2b65343d4f581b5ac804"
+  },
+  "package": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/knowledge-package.ready.json",
+    "sha256": "e40f3cdc1bd5a0a7053b89e19d38fed30ae14cc27362f322f34da469d9be02ff"
+  },
+  "asset": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/content-asset.ready.json",
+    "sha256": "54af170335ab1692d37227b88f3a71ea7fbbbda9e62ffd80ab8f0c9121c30993"
+  },
+  "script": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/script.md",
+    "sha256": "e39395990fad95bf4ead87d254ed8ec0c3a0be25bae7b1fe5782fb071df90ed4"
+  },
+  "scriptJsonSha256": "4c96934b18bf82f5f393634d28d2a2be3f755893f639e479735076a6025f069b",
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/direction-v2.json",
+    "sha256": "f5b6b2ce37e7d68ef78ce1b54a09b9e0a6dbaf8ea5943c05a58d8c36304b50f1"
+  },
+  "visualProof": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/visual-proof-plan.json",
+    "sha256": "f18d0081d1b210c9822ee17b672f61f6d116bf8be89df520a726a232393c52a3"
+  },
+  "authoring": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/authoring-data.json",
+    "sha256": "858b66a60b13fcf6afafb99ba8765e750b3314e2786a0fdb2f5661d26e2841d0"
+  },
+  "mathematicalProof": [
+    {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json",
+      "sha256": "79eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json",
+      "sha256": "5585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e"
+    }
+  ],
+  "runtimeEstimate": {
+    "spokenWords": 128,
+    "whitespaceTokens": 127,
+    "wordCountingRule": "Unicode word sequences; contractions and hyphenated two-thirds count as one; em dash separates words. Original V1 was reported178whitespace tokens(182spoken-word tokens under this rule). Original report remains untouched.",
+    "speechRateWordsPerMinute": [
+      145,
+      165
+    ],
+    "speechOnlySeconds": [
+      46.5,
+      53
+    ],
+    "provisionalUnderstandingHoldsSeconds": [
+      6,
+      12
+    ],
+    "estimatedTotalSeconds": [
+      52.5,
+      65
+    ],
+    "basis": "Estimate only. Allow mental choice and weighted-proof recognition. No60second target, padding, generated narration or measured performance."
+  },
+  "treatmentAspectsApproved": true,
+  "revisedNarrationApproved": false,
+  "productionAuthorized": false
+}

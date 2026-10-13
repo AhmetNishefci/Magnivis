@@ -1,0 +1,116 @@
+{
+  "cycleId": "cycle.14",
+  "revision": 2,
+  "status": "script-bound conceptual proof; owner final narration review pending; no render or animation implementation",
+  "configuration": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/configuration.json",
+    "sha256": "88e80984a30683b922ff02c96bf248278ba087552666a84c44e0b95c7ed5130d"
+  },
+  "enumeration": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/enumeration.json",
+    "sha256": "79eb34e6df25ee0a58b9eb9b74988d627a6b67f99ad73f8b05870eea7f0ef716"
+  },
+  "independentCrossCheck": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/mathematics/cross-check.json",
+    "sha256": "5585d758b4a1ecf896046f6a5d81620db10999275f9926e3cced6aae7dabda3e"
+  },
+  "priorContract": {
+    "path": "content-intelligence/cycles/cycle-14/development-v1/visual-comprehension-contract.json",
+    "sha256": "fee571e86021ae77d3043e62ac404f2c5f35299071055b865ebcf7c62fe59300"
+  },
+  "ownerTreatmentApproval": {
+    "path": "content-intelligence/cycles/cycle-14/revision-v2/owner-feedback.json",
+    "sha256": "08e3a3468fe5191de34f432694f6a423c3db3a69ad55149afad666c1082cd43b"
+  },
+  "identityContinuity": {
+    "policy": "Name and exact face signature travel with the same colored object. Unused dice remain recognizable nearby; no generic die swaps, renumbering or color-only meaning. Focus on one pair at a time rather than a dense permanent table.",
+    "signatures": {
+      "yellow": "six3s",
+      "blue": "four4s;two0s",
+      "green": "three5s;three1s",
+      "orange": "four2s;two6s"
+    },
+    "reveals": "Inspect all six logical faces in the active inventory before relying on its multiplicity; parked object identity persists. Blue0s and green equal groups must be shown even when not recited."
+  },
+  "fourProofs": [
+    {
+      "key": "yellow-orange",
+      "favored": "yellow",
+      "opponent": "orange",
+      "winningParts": [
+        24
+      ],
+      "losingParts": [
+        12
+      ],
+      "concept": "One constant yellow3 beside orange’s six equally likely face positions. Four2s lose to3; two6s beat3. Highlight4/6=2/3 while the2/6losses remain. One spoken count earns the rest of the proof vocabulary."
+    },
+    {
+      "key": "blue-yellow",
+      "favored": "blue",
+      "opponent": "yellow",
+      "winningParts": [
+        24
+      ],
+      "losingParts": [
+        12
+      ],
+      "concept": "Blue’s exact four4s/two0s turn into six face opportunities beside the persistent yellow3. Four winning faces show4/6=2/3; two zeros still lose. Blue is named and its zeros are revealed before green enters."
+    },
+    {
+      "key": "green-blue",
+      "favored": "green",
+      "opponent": "blue",
+      "winningParts": [
+        18,
+        6
+      ],
+      "losingParts": [
+        12
+      ],
+      "concept": "Reveal green’s three5s/three1s as two equal face groups. The5branch wins against all blue faces; the1branch wins only against blue’s two0s. A single area of36indexed opportunities has an18/36winning half plus6/36winning slice, leaving12/36losses. Show24/36=2/3once, hold for recognition; the narration names the winning routes rather than reciting the sum."
+    },
+    {
+      "key": "orange-green",
+      "favored": "orange",
+      "opponent": "green",
+      "winningParts": [
+        12,
+        12
+      ],
+      "losingParts": [
+        12
+      ],
+      "concept": "Keep the original orange four2s/two6s. Its6branch is one third of face space and wins against every green face:12/36. Its2branch is two thirds, winning against the green1half:12/36more. Twelve2-versus5pairs lose. Show24/36=2/3once; same weighted grammar, changed matchup—not a second grid of calculations."
+    }
+  ],
+  "probabilityPresentation": "All four favorable comparisons visibly earn2/3using correct face opportunities or weighted branches. Three possible value categories or four value combinations are never equal-weighted unless their face multiplicities justify it. On-screen counts are explanatory content, not extra narration. No rapid flashing through unexplained24/36 badges.",
+  "circle": {
+    "arrowMeaning": "counter-choice; from the selected die to a reply with2/3probability of beating it",
+    "arrows": [
+      {
+        "fromFirstChoice": "yellow",
+        "toCounterChoice": "blue"
+      },
+      {
+        "fromFirstChoice": "blue",
+        "toCounterChoice": "green"
+      },
+      {
+        "fromFirstChoice": "green",
+        "toCounterChoice": "orange"
+      },
+      {
+        "fromFirstChoice": "orange",
+        "toCounterChoice": "yellow"
+      }
+    ]
+  },
+  "chanceGuard": "Each branch proof retains the losing third. At the non-guarantee line, show one explicitly illustrative possible yellow3/orange6loss; do not treat it as another favored counter-choice or random trial. Probability is about the enumerated model, never a manufactured victory sequence.",
+  "opening": "Four tactile dice already visible. Spoken rule precedes challenge; first-person can pick is a conditional strategy in the model, not a claim of a performed match.",
+  "ending": "Close the same4-object counter-circle; briefly pair a recognizable die against different opponents. No bestdie in thisset is scoped to higher-number pairwise probabilities; no generic lesson about every ranking. Keep the approved no-spoken-CTA decision.",
+  "reviewLimits": [
+    "No physical fairness test, random sampled game, generated audio, camera/layout implementation, actual duration or audience panel.",
+    "Native/phone caption safety and proof-reading time require later exact-media inspection after authorization."
+  ]
+}

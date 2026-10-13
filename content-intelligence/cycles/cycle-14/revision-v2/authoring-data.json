@@ -1,0 +1,115 @@
+{
+  "lines": [
+    [
+      "Pick a die. Higher number wins. Whatever you choose, I can pick one with better odds.",
+      [
+        "first-choice",
+        "rule"
+      ]
+    ],
+    [
+      "Every face has an equal chance in this puzzle, and neither roll affects the other.",
+      [
+        "model"
+      ]
+    ],
+    [
+      "Yellow always rolls three. Orange has four twos and two sixes. Yellow wins against four faces out of six: two-thirds.",
+      [
+        "configuration",
+        "yellow-orange"
+      ]
+    ],
+    [
+      "But blue has four fours, so it has better odds against yellow.",
+      [
+        "configuration",
+        "blue-yellow"
+      ]
+    ],
+    [
+      "Switch to blue? Green’s fives beat every blue face. Its ones still beat blue’s zeros.",
+      [
+        "configuration",
+        "green-blue"
+      ]
+    ],
+    [
+      "Then orange counters green: its sixes beat everything, and its twos beat green’s ones.",
+      [
+        "configuration",
+        "orange-green"
+      ]
+    ],
+    [
+      "And yellow still counters orange.",
+      [
+        "yellow-orange"
+      ]
+    ],
+    [
+      "Every reply shown has those same two-thirds odds. That’s an advantage, not a guaranteed win.",
+      [
+        "cycle",
+        "not-guaranteed"
+      ]
+    ],
+    [
+      "The advantages form a circle. There’s no best die in this set—just a better matchup.",
+      [
+        "cycle",
+        "no-best"
+      ]
+    ]
+  ],
+  "objectives": [
+    "Immediate mental choice, higher-number rule and informed counter-choice promise; no greeting or delayed setup.",
+    "Equal-face and independent-roll model stated in plain English, without claiming physical testing.",
+    "One constant yellow3 beside orange’s six equally likely face positions. Four2s lose to3; two6s beat3. Highlight4/6=2/3 while the2/6losses remain. One spoken count earns the rest of the proof vocabulary.",
+    "Blue’s exact four4s/two0s turn into six face opportunities beside the persistent yellow3. Four winning faces show4/6=2/3; two zeros still lose. Blue is named and its zeros are revealed before green enters.",
+    "Reveal green’s three5s/three1s as two equal face groups. The5branch wins against all blue faces; the1branch wins only against blue’s two0s. A single area of36indexed opportunities has an18/36winning half plus6/36winning slice, leaving12/36losses. Show24/36=2/3once, hold for recognition; the narration names the winning routes rather than reciting the sum.",
+    "Keep the original orange four2s/two6s. Its6branch is one third of face space and wins against every green face:12/36. Its2branch is two thirds, winning against the green1half:12/36more. Twelve2-versus5pairs lose. Show24/36=2/3once; same weighted grammar, changed matchup—not a second grid of calculations.",
+    "Yellow returns beside the unchanged orange; the apparently strongest reply itself has a counter. Accumulated relation starts closing.",
+    "Each earlier2/3label returns only after its proof; losing outcomes remain. A single marked possible loss prevents guarantee inference.",
+    "Close the labelled counter-choice circle with the same four identities; resolve into opponent-dependent advantage, no spoken CTA."
+  ],
+  "runtimeEstimate": {
+    "spokenWords": 128,
+    "whitespaceTokens": 127,
+    "wordCountingRule": "Unicode word sequences; contractions and hyphenated two-thirds count as one; em dash separates words. Original V1 was reported178whitespace tokens(182spoken-word tokens under this rule). Original report remains untouched.",
+    "speechRateWordsPerMinute": [
+      145,
+      165
+    ],
+    "speechOnlySeconds": [
+      46.5,
+      53.0
+    ],
+    "provisionalUnderstandingHoldsSeconds": [
+      6,
+      12
+    ],
+    "estimatedTotalSeconds": [
+      52.5,
+      65.0
+    ],
+    "basis": "Estimate only. Allow mental choice and weighted-proof recognition. No60second target, padding, generated narration or measured performance."
+  },
+  "comparison": {
+    "priorScript": {
+      "path": "content-intelligence/cycles/cycle-14/development-v1/script.md",
+      "sha256": "f939573863241d601fa6045f82f1f40af37060a2c3ca874af1eae0040087d1fa"
+    },
+    "priorReportedWords": 178,
+    "priorCountOnSameSpokenWordRule": 182,
+    "revisedSpokenWords": 128,
+    "changes": [
+      "Opening leads with choice and rule; selecting-order advantage remains explicit through can pick a favorable reply.",
+      "Retain the first six-face count; remove both spoken24/36totals and duplicated numericalrecitals.",
+      "Keep winning-route explanations for green and orange. Visual multiplicities and weighted areas now carry the calculations.",
+      "One recap explicitly applies the same2/3odds to every displayed counter; non-guarantee and circle payoff retained."
+    ],
+    "selectionRationale": "Prefer this route over an ultra-short assertion-only script: green/blue and orange/green still have an audible mechanism. Prefer it over merely removing count phrases from V1: opening, assumptions and closing are also made more compact without a duration target.",
+    "unprovidedReference": "No suggested shorter narration text supplied in this message; none treated as reviewed/approved."
+  }
+}
