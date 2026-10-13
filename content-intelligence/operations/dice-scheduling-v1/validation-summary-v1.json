@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-13T18:35:14.060100Z",
+  "passed": true,
+  "status": "OWNER-REPORTED SCHEDULED",
+  "scheduledDate": "2026-10-14",
+  "scheduledDateBasis": "explicit-owner-message",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "pnpmCheck": {
+    "exitCode": 0,
+    "testFiles": 54,
+    "tests": 507
+  },
+  "finalTypecheckAndScopedLint": "passed after record text normalization and protected-file count correction",
+  "pnpmArtifactsDurable": {
+    "exitCode": 0,
+    "passed": true
+  },
+  "schedulingValidation": {
+    "path": "content-intelligence/operations/dice-scheduling-v1/scheduling-validation.json",
+    "sha256": "8953271e55ae67dc8890132df1bd8b614e9a7181322029aebba1e17791084f3d"
+  },
+  "releaseValidation": {
+    "path": "content-intelligence/operations/dice-scheduling-v1/preserved-release-validation.json",
+    "sha256": "023b314c56d3fa02805b430ae4268920542d38c2f3a61d81dd467d8009608478"
+  },
+  "sourceBindings": [
+    {
+      "path": "scripts/record-dice-scheduling.ts",
+      "sha256": "6cf4a465ea138f12d5d261a0b4a07c0326e7b22fdc6f80a7b5069f82efaab7c8"
+    },
+    {
+      "path": "scripts/validate-dice-scheduling.ts",
+      "sha256": "3363985d2344788b60fc8cff6431c2592e6d0390f4ffd03292ffffe0767a20b2"
+    }
+  ],
+  "reports": [
+    {
+      "path": "content-intelligence/operations/dice-scheduling-v1/repository-check.json",
+      "sha256": "019284c6841dc7c9344d8cd7d4c22f43aeff2dd0329cf2bde5afabdc7f6d4bee"
+    },
+    {
+      "path": "content-intelligence/operations/dice-scheduling-v1/durable-artifacts.json",
+      "sha256": "8e683a97ce8584dedfb774f7c493dde5f9b641759f9bddb354c73222bf05dded"
+    }
+  ],
+  "protectedFilesChecked": 5550,
+  "masterAndPackagesUnchanged": true,
+  "nativeCycleStage": "publication-review",
+  "nativeRevision": 22,
+  "nativeJournalUnchanged": true,
+  "actualPublication": "unknown",
+  "exactTimesAndTimezones": "unknown",
+  "postURLsAndPlatformIDs": "unknown",
+  "analytics": "not-supplied",
+  "assistantPlatformActions": [],
+  "cycle15Started": false
+}

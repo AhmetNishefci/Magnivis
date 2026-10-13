@@ -1,0 +1,72 @@
+{
+  "cycleId": "cycle.14",
+  "platform": "facebook",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledDate": "2026-10-14",
+  "scheduledBy": "owner-manual",
+  "publication": "unknown",
+  "evidenceBasis": "explicit-owner-message",
+  "ownerReport": {
+    "path": "content-intelligence/operations/dice-scheduling-v1/owner-report.json",
+    "sha256": "e153a31df17d68ca057e36cd2f102b7cd5402624e667a0e5db8868e95da8838d"
+  },
+  "recordedAt": "2026-10-13T18:32:32.617Z",
+  "actualEventTime": null,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "scheduledFor": null,
+  "schedulingTimeZone": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-14/publication/release-v1.json",
+    "sha256": "4216867ed7455e757e45a7e15bd55259bd4eb915273a808989e3d1d4bbb38345"
+  },
+  "intendedVariant": {
+    "id": "dice.variant.facebook.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+      "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-14/publication/facebook/manifest-v1.json",
+    "sha256": "c80925a325f1a8f6842904edb50c559a113d04ddd8c8e133096bb68f8560e21a"
+  },
+  "intendedArtifacts": [
+    {
+      "role": "video",
+      "media": {
+        "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+        "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+      }
+    },
+    {
+      "role": "cover",
+      "media": {
+        "id": "media.f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a",
+        "sha256": "f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-14/publication/facebook/cover-evidence-v1.json",
+        "sha256": "c3a0ca96a115260d50e4e21f135ff1b03ae32b418d06f81d518df775b630d8d9"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/publication/facebook/cover-profile-v1.json",
+        "sha256": "ebd2195b5ff4325fed4e22e15c521d892c81bb88f5323a6c169ef5901a78a8f8"
+      }
+    }
+  ],
+  "identityBasis": "owner-designated validated packages and approved master as intended release, not independently verified uploaded bytes"
+}

@@ -1,0 +1,72 @@
+{
+  "cycleId": "cycle.14",
+  "platform": "instagram",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledDate": "2026-10-14",
+  "scheduledBy": "owner-manual",
+  "publication": "unknown",
+  "evidenceBasis": "explicit-owner-message",
+  "ownerReport": {
+    "path": "content-intelligence/operations/dice-scheduling-v1/owner-report.json",
+    "sha256": "e153a31df17d68ca057e36cd2f102b7cd5402624e667a0e5db8868e95da8838d"
+  },
+  "recordedAt": "2026-10-13T18:32:32.617Z",
+  "actualEventTime": null,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "scheduledFor": null,
+  "schedulingTimeZone": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-14/publication/release-v1.json",
+    "sha256": "4216867ed7455e757e45a7e15bd55259bd4eb915273a808989e3d1d4bbb38345"
+  },
+  "intendedVariant": {
+    "id": "dice.variant.instagram.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+      "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-14/publication/instagram/manifest-v1.json",
+    "sha256": "44141e014b2fd3e59f35e3bbabf4942fc97323896711e86372675387494d2915"
+  },
+  "intendedArtifacts": [
+    {
+      "role": "video",
+      "media": {
+        "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+        "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+      }
+    },
+    {
+      "role": "cover",
+      "media": {
+        "id": "media.f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a",
+        "sha256": "f1bcc805366b507c397c89f22491c7f9f6a67ff431c2fcc68689db684d8d121a"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-14/publication/instagram/cover-evidence-v1.json",
+        "sha256": "2f93f8e69f2e5a69a499923a92e499e460c5f63f1fdefdaaecbf0989ef8d0275"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-14/publication/instagram/cover-profile-v1.json",
+        "sha256": "efcaf63b0ba9308ff775479553159555120bdbaf15f8cd0ac8eb124e099199b1"
+      }
+    }
+  ],
+  "identityBasis": "owner-designated validated packages and approved master as intended release, not independently verified uploaded bytes"
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.14",
+  "evidenceBasis": "explicit-owner-message",
+  "recordedAt": "2026-10-13T18:32:32.617Z",
+  "recordedAtBasis": "Record-entry time only. Owner supplies scheduled date 2026-10-14; exact time/timezone/scheduling-action time and actual publication date/time unknown.",
+  "instruction": "# MAGNIVIS — CYCLE #14 · RECORD SCHEDULING & SYNCHRONIZE\n\n## Owner confirmation\n\nCycle #14 — \"The Dice With No Best Choice\" has been manually scheduled by the owner on:\n\n- YouTube Shorts\n- TikTok\n- Instagram Reels\n- Facebook Reels\n\nApproved master:\n`artifacts/masters/dice-cycle14-candidate-v4.mp4`\n\nDelivery baseline commit:\n`7f7b2c9`\n\n## 1. Record scheduling\n\nUpdate the canonical Operations and publication records using existing repository conventions.\n\nRecord all four platforms as:\n\n**OWNER-REPORTED SCHEDULED**\n\nDo not mark them as published.\n\nPublication dates, exact times, timezones, post URLs, platform IDs, and analytics remain unknown unless supported by existing evidence.\n\nDo not invent missing details.\n\n## 2. Preserve approved production\n\nDo not modify:\n\n- The approved V4 master.\n- Platform-specific delivery packages.\n- Narration or mathematical evidence.\n- Existing publication metadata.\n- Previous cycles or historical artifacts.\n\nDo not perform platform actions.\n\n## 3. Validate and synchronize\n\nRun the appropriate repository and integrity checks.\n\nCommit and push the scheduling records to the existing production branch.\n\nVerify remote synchronization and a clean working tree.\n\nDo not merge into `main`.\n\n## 4. Final handoff\n\nReport:\n\n- Updated scheduling records.\n- Validation results.\n- Final commit hash.\n- Remote synchronization.\n- Any outstanding publication evidence.\n\n**STOP AT: AHMET — CYCLE #14 SCHEDULING RECORDED.**\n\nDo not begin Cycle #15 without separate authorization.\n\nMagnivis — See the unimaginable.\n\nAdditional owner-confirmed scheduling evidence:\n\nCycle #14 is scheduled for **October 14, 2026**, on YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels.\n\nRecord the date as owner-reported for all four platforms. Exact publication times and platform timezones remain unverified.\n\nPreserve the distinction between SCHEDULED and PUBLISHED.\n",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledDate": "2026-10-14",
+  "scheduledDateBasis": "explicit-owner-message",
+  "scheduledBy": "owner-manual",
+  "publication": "unknown",
+  "independentPlatformVerification": false,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "scheduledFor": null,
+  "schedulingTimeZone": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "intendedMaster": {
+    "path": "artifacts/masters/dice-cycle14-candidate-v4.mp4",
+    "media": {
+      "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+      "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+    },
+    "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+  },
+  "existingPreparedRelease": {
+    "path": "content-intelligence/cycles/cycle-14/publication/release-v1.json",
+    "sha256": "4216867ed7455e757e45a7e15bd55259bd4eb915273a808989e3d1d4bbb38345"
+  },
+  "existingPublicationDecision": null,
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-14/publication/master-approval-v1.json",
+    "sha256": "5030ccfafb344bfba18fb18230c7a3e1519570bf1e81efc8f83931aecd4cae2e"
+  },
+  "deliveryBaselineCommit": "7f7b2c9f4b08d2b465f5f3da805278ed99fb1915",
+  "nativeWorkflow": {
+    "stage": "publication-review",
+    "revision": 22,
+    "unchanged": true
+  },
+  "limitations": [
+    "Owner scheduling report only, not independently verified publication.",
+    "Validated prepared release V1 for master V4 and approved master are intended artifacts; actual uploaded bytes, cover selection, applied settings and posted comments unverified.",
+    "No native QA completion, exact-release authorization or acceptance of presentation uncertainty inferred from scheduling.",
+    "Publication status is unknown, not an invented claim that it remains unpublished."
+  ],
+  "nativeRecordReconciliation": "Existing operations owner-report/per-platform scheduling evidence pattern retained. Typed PublicationRecord cannot represent scheduling and requires actual publication identity/evidence. Native authorized-release observations require a persisted exact publication decision; none supplied. Preserve cycle14 journal and register this owner report separately rather than fabricate approval, QA or publication."
+}

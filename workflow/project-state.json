@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "phase": "content-cycle",
-  "nextOwnerGate": "AHMET — CYCLE #14 DELIVERY REVIEW. Exact V4 master approved; four prepared reference deliveries at native publication-review revision22. No upload, scheduling, publication or presentation-risk acceptance.",
-  "externalActions": "Owner reports Cycle #9 published. New owner message on 2026-10-11 reports Cycle #10 published on all four, superseding the 2026-10-09 report that it was scheduled/not yet published; newer report preserved in content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json. Cycle #11 remains owner-reported manually scheduled on all four; actual publication unknown. Actual event dates/times/URLs/IDs/uploaded bytes/settings/comments/device evidence remain unknown; no independently verified platform evidence or assistant platform action. Earlier reports retain their original dated meaning. Owner explicitly confirms Cycle #12 FLIP published on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels on October 12, 2026, superseding scheduling-only status. Exact times/timezone/URLs/IDs/uploaded bytes/settings/comments/device evidence/screenshots/analytics remain unknown; no independent platform verification or assistant platform action. Current owner instruction authorizes Cycle #13 discovery through Premise Review. New explicit Cycle #13 premise approval authorizes research and creative development. That historical research/development work was followed by explicit candidate-production authorization. Cycle13 V1 received REVISE MASTER and remains preserved. V2 is now owner-approved for publication-package preparation subject to final native-device and audio acceptance; four prepared packages reach Publication Review without publication authority. No assistant platform actions or new publication evidence. Owner now reports Cycle13 V2 manually scheduled for 2026-10-13 on all four. Exact times/timezone/URLs/IDs and live publication unknown; no assistant platform actions.",
+  "nextOwnerGate": "AHMET — CYCLE #14 SCHEDULING RECORDED. Owner-reported scheduled for 2026-10-14 on all four; await actual publication evidence. Native review stage remains unchanged. Cycle #15 not authorized.",
+  "externalActions": "Owner reports Cycle #9 published. New owner message on 2026-10-11 reports Cycle #10 published on all four, superseding the 2026-10-09 report that it was scheduled/not yet published; newer report preserved in content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json. Cycle #11 remains owner-reported manually scheduled on all four; actual publication unknown. Actual event dates/times/URLs/IDs/uploaded bytes/settings/comments/device evidence remain unknown; no independently verified platform evidence or assistant platform action. Earlier reports retain their original dated meaning. Owner explicitly confirms Cycle #12 FLIP published on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels on October 12, 2026, superseding scheduling-only status. Exact times/timezone/URLs/IDs/uploaded bytes/settings/comments/device evidence/screenshots/analytics remain unknown; no independent platform verification or assistant platform action. Current owner instruction authorizes Cycle #13 discovery through Premise Review. New explicit Cycle #13 premise approval authorizes research and creative development. That historical research/development work was followed by explicit candidate-production authorization. Cycle13 V1 received REVISE MASTER and remains preserved. V2 is now owner-approved for publication-package preparation subject to final native-device and audio acceptance; four prepared packages reach Publication Review without publication authority. No assistant platform actions or new publication evidence. Owner now reports Cycle13 V2 manually scheduled for 2026-10-13 on all four. Exact times/timezone/URLs/IDs and live publication unknown; no assistant platform actions. Owner reports Cycle14 V4 manually scheduled for 2026-10-14 on all four. Exact times/platform timezones and actual publication remain unknown; no assistant platform actions.",
   "historicalCycles": [
     {
       "id": "wood-frog",
@@ -83,7 +83,7 @@
     "cycle6Started": true
   },
   "cycle6": "authorized; scheduled-owner-reported on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels; journal revision23; scheduled date/time/timezone and scheduling-action time unknown; actual publication/URLs/IDs/settings/comments/processing/presentation/device QA/analytics unknown; awaiting owner publication evidence; exact authorized canonical master and publication package unchanged",
-  "nextSystemTask": "Stop for owner Delivery Review. No platform actions. Subsequent publication authorization must bind the exact release and resolve or accept itemized presentation unknowns.",
+  "nextSystemTask": "Stop after scheduling records and Git synchronization. Await actual publication/date/time/timezone/URL/ID evidence separately; no platform actions or Cycle #15 work.",
   "editorialCalibration": {
     "report": "system-audits/editorial-intelligence-calibration/audit.md",
     "authority": "docs/STRATEGY.md",
@@ -610,7 +610,7 @@
     "platformActions": false,
     "nextOwnerGate": "AHMET — CYCLE #14 FINAL CREATIVE REVIEW"
   },
-  "cycle14": "Exact V4 master approved; four delivery packages prepared. Native publication-review revision22; owner-facing DELIVERY REVIEW. No publication authority or platform actions; historical review indices remain as-of evidence.",
+  "cycle14": "OWNER-REPORTED SCHEDULED on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels for 2026-10-14. Owner performed scheduling manually. Approved V4 master and exact delivery baseline 7f7b2c9 preserved. Actual publication, exact times/timezones, URLs/IDs, uploaded bytes, settings, native presentation and analytics unknown. Native publication-review revision 22 remains unchanged; no exact-release authorization, presentation risk acceptance or publication inferred.",
   "cycle14MasterReview": {
     "enteredAt": "2026-10-13T14:20:58.767151Z",
     "review": "content-intelligence/cycles/cycle-14/production-v1/owner-review.md",
@@ -711,5 +711,28 @@
     "unknownsAccepted": false,
     "publicationAuthorized": false,
     "platformActions": []
+  },
+  "cycle14SchedulingEvidence": {
+    "path": "content-intelligence/operations/dice-scheduling-v1/scheduling-index-v1.json",
+    "sha256": "a8e4e61b66b16d8e148eab37c9a2600ef314ec28882ff5a8b2d362bc86e1456b"
+  },
+  "cycle14ExternalState": {
+    "state": "scheduled-owner-reported",
+    "statusLabel": "OWNER-REPORTED SCHEDULED",
+    "scheduledDate": "2026-10-14",
+    "scheduledDateBasis": "explicit-owner-message",
+    "schedulingEvidence": {
+      "path": "content-intelligence/operations/dice-scheduling-v1/scheduling-index-v1.json",
+      "sha256": "a8e4e61b66b16d8e148eab37c9a2600ef314ec28882ff5a8b2d362bc86e1456b"
+    },
+    "publication": "unknown",
+    "scheduledTime": null,
+    "schedulingTimeZone": null,
+    "analytics": null
+  },
+  "cycle15Hold": {
+    "state": "not-authorized",
+    "basis": "Explicit owner instruction: do not begin Cycle15 without separate authorization.",
+    "started": false
   }
 }
