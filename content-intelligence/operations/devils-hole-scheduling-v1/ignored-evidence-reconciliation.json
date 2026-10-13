@@ -1,0 +1,170 @@
+{
+  "recordedAt": "2026-10-13T10:20:45.832420+00:00",
+  "finding": "Global *.log ignore omitted exact logs referenced by historical Cycle12 preservation baseline and Cycle13 review/handoff evidence. Working-tree checks passed because local ignored logs existed; isolated committed verification detected missing Cycle12 dependency.",
+  "action": "Force-add only existing approved-cycle validation/render/QA logs and this task validation logs, unchanged. No blanket gitignore edit, source/approval hash change, log regeneration or creative change.",
+  "files": [
+    {
+      "path": "content-intelligence/cycles/cycle-12/development-v1/validation/check.log",
+      "sha256": "45d82c7bee7a62ed15476e33efb277f90567c9dd4d4ea9456abda01536462195",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/development-v1/validation/durable.log",
+      "sha256": "ede783d41b0b79531603817eca1c8e0f7a1bb393ff5b239bc2c3b8d5a83e1056",
+      "bytes": 234971
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/qa/authoring-lint-first-pass.log",
+      "sha256": "1e9ed50ab1579f3391408a8d8920d6c374a22d3c4dcfb10ccb01eb82c27626cc",
+      "bytes": 337
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/validation/check.log",
+      "sha256": "0b5906c7af9a4846295f4b7f4759128b4f916bde08efbe877102df3f569f0fa0",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/validation/layout.log",
+      "sha256": "77f992456e14d1a87447de9ec7c2973a37b8429505d07cea9a0fa578b6510a9f",
+      "bytes": 90294
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/validation/pre-handoff-durable.log",
+      "sha256": "43eb3975ee641b60243197bc5036aa2fa9c024ca8bee0e6c017b1928c2f0cbf7",
+      "bytes": 234971
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/validation/qa.log",
+      "sha256": "07936ad33209b14b60cdc31eefec11dc49d6acc93054e030087d2dc8fcca836f",
+      "bytes": 636
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/production-v1/validation/render.log",
+      "sha256": "cb0ce40e2f6354b553049da80ca4eccb22c2980e85f561c3ab11cb3c1f41f860",
+      "bytes": 71166
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/validation/check-initial-interrupted.log",
+      "sha256": "71ac9e781c253b480b24a18fb2787919ee30bbbd95009fce68a90eb34fadf44c",
+      "bytes": 1115
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/validation/check-passed.log",
+      "sha256": "b0087eb5d5e0317ba71090790767800310df726df85c1850dad74f12a0fd5b76",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-12/validation/durable-passed.log",
+      "sha256": "ede783d41b0b79531603817eca1c8e0f7a1bb393ff5b239bc2c3b8d5a83e1056",
+      "bytes": 234971
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/development-v1/durability.log",
+      "sha256": "43eb3975ee641b60243197bc5036aa2fa9c024ca8bee0e6c017b1928c2f0cbf7",
+      "bytes": 234971
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/development-v1/repository-check.log",
+      "sha256": "adc9f952fd25e298b67ba15a5a378c362ea23fad8af0212ebd0a54d6222438f9",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/duplicate-check-interrupted.log",
+      "sha256": "31a4107a61a88a553419cd008bb8dfd697c1612d5b16d8d5d9a445cb80995dce",
+      "bytes": 679
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/durability-sandbox-failure.log",
+      "sha256": "03f8844e4942c6044e935ee1adfe31d89071c624c945e0d497054099a65b51b7",
+      "bytes": 1135
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/durability.log",
+      "sha256": "43eb3975ee641b60243197bc5036aa2fa9c024ca8bee0e6c017b1928c2f0cbf7",
+      "bytes": 234971
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/production-v1/durability.log",
+      "sha256": "3a8e56c2dea5c3582d4f7829d04ed82efd3d041065227864dbe8325cc34dbd87",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/production-v1/repository-check.log",
+      "sha256": "17c96872d0932cf2652d96008dac818b55bfe4a6ef30c0062b26665e4024331a",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/durability-retry.log",
+      "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/durability.log",
+      "sha256": "f706e55bd87b523084f2ea864999b4226e176362dd1d6e17375f6f8e89b02ff2",
+      "bytes": 1135
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/repository-check-retry.log",
+      "sha256": "a34297762777b9362c84eae09fe6e7d59d28ebc58b1829fa00e93ef1669ee10b",
+      "bytes": 1933
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/repository-check.log",
+      "sha256": "065744172bec54ea76cced42705379c8f329c9047aa86fd631fa867df280d0d6",
+      "bytes": 2944
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/repository-tests-two-workers.log",
+      "sha256": "693f019c65edef24dedc5b18d7bcb338e194ba11ccb6e8abb406eccb3944bf6a",
+      "bytes": 194
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/publication/technical-qa.log",
+      "sha256": "37baff965006ca16a2b2f89bf418077c922a193bd4cea44d833afd75e547d1e6",
+      "bytes": 554
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/repository-check.log",
+      "sha256": "ac31de8bdeea73e39e475c066ddc054d9310e81fa2fb9dd86ca5294325707937",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/durability.log",
+      "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-13/revision-v2/repository-check.log",
+      "sha256": "ba0328641b2cb7ed7977154956a8e550032111e4dadf0e24123c7d6f5fc427f4",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/operations/devils-hole-scheduling-v1/durability.log",
+      "sha256": "1f59bcdb538b270894d4bc76ab99b62944b36ed820faea7e9ccfe835a833e75c",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/operations/devils-hole-scheduling-v1/final-lint.log",
+      "sha256": "509d511736bfb099ee7f8259ba3f18f7d3401a75fffce546183599766c4114db",
+      "bytes": 127
+    },
+    {
+      "path": "content-intelligence/operations/devils-hole-scheduling-v1/final-typecheck.log",
+      "sha256": "ffa3e8ee1f2315b2931295b4c908f4e577611892f5404a905ec613edaa0d2386",
+      "bytes": 84
+    },
+    {
+      "path": "content-intelligence/operations/devils-hole-scheduling-v1/repository-check.log",
+      "sha256": "9d0fda751f984f35ff225ac86bb907e4936e183109bc94bf4ad6b778e9a2c046",
+      "bytes": 2944
+    },
+    {
+      "path": "content-intelligence/operations/devils-hole-scheduling-v1/tests-two-workers.log",
+      "sha256": "ea41a374d8917e1bbc1afca949896a0a4b97965041728d8d31fa16f249cdbb16",
+      "bytes": 194
+    }
+  ],
+  "historicalCycle12RequiredLogs": 11,
+  "newMedia": 0,
+  "strategyFilesIncluded": false
+}

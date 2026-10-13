@@ -1,0 +1,67 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/media-artifacts.test.ts (6 tests | 1 failed) 5487ms
+   ❯ Media content identity, historical safety and durability (6)
+     × enforces scoped historical preservation and canonical durability in pnpm check 5068ms
+ ❯ tests/chocolate-finalization.test.ts (7 tests | 1 failed) 5420ms
+   ❯ Chocolate editorial finalization scope (7)
+     × verifies only eight needed statements and retains final asset approval gate 5067ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/chocolate-finalization.test.ts > Chocolate editorial finalization scope > verifies only eight needed statements and retains final asset approval gate
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/chocolate-finalization.test.ts:16:3
+     14| };
+     15| describe('Chocolate editorial finalization scope', () => {
+     16|   it('verifies only eight needed statements and retains final asset ap…
+       |   ^
+     17|     expect(validateChocolateFinalization()).toMatchObject({passed: tru…
+     18|       preservedReserveClaims: 34, conceptualBeats: 8, packageState: 'r…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/media-artifacts.test.ts > Media content identity, historical safety and durability > enforces scoped historical preservation and canonical durability in pnpm check
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/media-artifacts.test.ts:16:3
+     14| };
+     15| describe('Media content identity, historical safety and durability', (…
+     16|   it('enforces scoped historical preservation and canonical durability…
+       |   ^
+     17|     expect(validateArchitectureScope().passed).toBe(true);
+     18|     expect(validateCanonicalMediaDurability().passed).toBe(true);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed | 51 passed (53)
+      Tests  2 failed | 499 passed (501)
+   Start at  11:12:52
+   Duration  85.12s (tests 90%, import 5%, transform 5%)
+
+ ELIFECYCLE  Test failed. See above for more details.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

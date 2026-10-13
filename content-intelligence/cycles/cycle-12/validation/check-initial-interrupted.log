@@ -1,0 +1,32 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/chocolate-finalization.test.ts (7 tests | 1 failed) 5936ms
+   ❯ Chocolate editorial finalization scope (7)
+     × verifies only eight needed statements and retains final asset approval gate 5605ms
+ ❯ tests/chocolate-direction.test.ts (8 tests | 1 failed) 6195ms
+   ❯ Chocolate exact editorial approval and direction proposal (8)
+     × preserves eight verified statements and requires owner direction approval 5292ms
+ ELIFECYCLE  Test failed. See above for more details.
+ ELIFECYCLE  Command failed.
+ ELIFECYCLE  Command failed.
