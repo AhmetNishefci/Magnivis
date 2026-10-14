@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {readFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {creativeDirectionSchema} from '../src/content-assets/creative-direction';
+import {validateInternalProductionPlanReferences} from '../src/production/schema';
+import {validateAdaptiveCaptionPlan} from '../src/captions/adaptive-plan';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {loadCycle} from '../src/workflow/store';
+import {cycleStatus} from '../src/workflow/cycle';
+import n from '../src/production/narration/flytrap.json';
+const b='content-intelligence/cycles/cycle-15/production-v1',e='content-intelligence/cycles/cycle-15/development-v1',read=(p:string):unknown=>JSON.parse(readFileSync(p,'utf8'));
+type Ref={path:string;sha256:string};
+const pkg=knowledgePackageSchema.parse(read(`${e}/knowledge-package.ready.json`)),asset=contentAssetSchema.parse(read(`${e}/content-asset.ready.json`)),direction=creativeDirectionSchema.parse(read(`${b}/direction-ready.json`));
+validateInternalProductionPlanReferences(read('src/production/plans/flytrap.json'),pkg,asset,direction);validateAdaptiveCaptionPlan(read('src/captions/plans/flytrap.json'),n.cues,n.format,direction,asset);
+assert.equal(sha256Json(asset.script),'029ab1010bef6553e6f2e95957376f0191054be34b81cb30d51b778ac5afda86');assert.equal(n.cues.map(c=>c.transcript).join(' '),asset.script.segments.map(c=>c.text).join(' '));
+for(const c of n.cues)assert.equal(mediaHash(`public/${c.file}`),n.provenance.cueArtifacts.find(a=>a.id===c.id)!.sha256);
+const baseline=read(`${b}/baseline.json`) as {preservedEditorialFiles:Ref[]},bindings=read(`${b}/implementation-bindings.json`) as {files:Ref[]};
+for(const r of [...baseline.preservedEditorialFiles,...bindings.files])assert.equal(mediaHash(r.path),r.sha256,r.path);
+const recovery=read(`${b}/finalization-recovery.json`) as {originalFinalizer:Ref;resumeImplementation:Ref;existingFinalReport:Ref;originalInspection:Ref};
+for(const r of [recovery.originalFinalizer,recovery.resumeImplementation,recovery.existingFinalReport,recovery.originalInspection])assert.equal(mediaHash(r.path),r.sha256,r.path);
+const registry=openMediaCatalog(),cycle=loadCycle(process.cwd(),'cycle.15',registry),status=cycleStatus(cycle,process.cwd(),registry);
+assert.equal(status.stage,'master-review');assert.equal(status.masterApproved,false);assert.equal(status.publicationAuthorized,false);
+assert.equal(mediaHash('artifacts/masters/flytrap-cycle15-candidate-v1.mp4'),'ab87a60394b52220159ba702fd31a6747a21870f0fe95bae78ea4f2698fb776f');
+// No previous cycle journal or approved editorial/media payload can change.
+const changed=execFileSync('git',['diff','e039cf2','--name-only'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
+assert.deepEqual(changed.filter(p=>p.startsWith('workflow/cycles/')&&!p.startsWith('workflow/cycles/cycle.15/')),[]);
+assert.deepEqual(changed.filter(p=>p.startsWith('content-intelligence/cycles/')&&!p.startsWith('content-intelligence/cycles/cycle-15/')),[]);
+for(let i=1;i<=6;i++){const p=`workflow/cycles/cycle.15/event-${i}.json`;assert.equal(readFileSync(p,'utf8'),execFileSync('git',['show',`e039cf2:${p}`],{encoding:'utf8'}));}
+console.log(JSON.stringify({passed:true,gate:status.next,scriptSha256:sha256Json(asset.script),masterSha256:mediaHash('artifacts/masters/flytrap-cycle15-candidate-v1.mp4'),priorEditorialFiles:baseline.preservedEditorialFiles.length,implementationFiles:bindings.files.length,captionWordsExact:true,originalCueHashes:true,oldCycleJournalsUnchanged:true,previousCycle15EventsUnchanged:true,masterApproval:false,publicationAuthority:false}));

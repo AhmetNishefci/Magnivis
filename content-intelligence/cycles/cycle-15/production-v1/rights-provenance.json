@@ -1,0 +1,38 @@
+{
+  "enteredAt": "2026-10-14T13:26:15.398Z",
+  "visuals": "Original AI-generated botanical surface plate from built-in image_gen.imagegen; animated lobes, six trigger hairs and qualitative tissue authored in Magnivis code. Not a filmed plant or experimental calcium recording.",
+  "image": {
+    "path": "public/images/flytrap/open-leaf.png",
+    "sha256": "1cfe6b861d623ab952e3337e9f4d587a2b6b8345fcc845b5f14e867ac78a8574",
+    "tool": "image_gen.imagegen",
+    "prompt": {
+      "path": "content-intelligence/cycles/cycle-15/production-v1/image-prompt.txt",
+      "sha256": "ca082add3c83993760a1871ad1829033149b781face90348620013156c40fd5f"
+    },
+    "generatedAt": "2026-10-14",
+    "rights": "Original generated production artwork; no source figure or external photo used."
+  },
+  "font": {
+    "package": "@fontsource/manrope",
+    "version": "5.3.0",
+    "license": "SIL OFL1.1",
+    "evidence": {
+      "path": "node_modules/@fontsource/manrope/LICENSE",
+      "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+    }
+  },
+  "narration": {
+    "provider": "kokoro-local",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "voice": "af_heart",
+    "license": "Established Apache2.0 model terms; no voice cloning or paid API",
+    "source": {
+      "path": "src/production/narration/flytrap.json",
+      "sha256": "57408d35d27124d7074aadaa4d8f1686d8109793d7227a8fe223384075603de0"
+    }
+  },
+  "sound": {
+    "treatment": "Voice-only selected; no literal cellular sounds or continuous music."
+  },
+  "scope": "Candidate production only; no empirical experimental images."
+}

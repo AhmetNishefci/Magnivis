@@ -1,0 +1,4 @@
+{
+  "issue": "Unpersisted begin record included unsupported ownerAuthority field. Strict controller rejected begin without journal mutation.",
+  "resolution": "Removed field from unpersisted draft; actual authority remains preserved separately and named in action. Creative completion at revision7 retained; authorized begin retried."
+}

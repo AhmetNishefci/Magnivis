@@ -261,3 +261,11 @@ Candidate revision authorization only; no exact owner Master Review approval, re
 - Original nine approved128-word Kokoro `af_heart` WAVs are reused by canonical reference. New `dice-v4.json` changes only timeline start times/holds; no voice, speed, waveform or words changed. Existing Apache2.0model provenance retained.
 - `public/audio/dice-v4/tactile.wav`: new original deterministic procedural contact/face-turn/placement cues. No external sound, music or physical experiment. Source and hashes in `dice-v4-soundscape.json`; voice remains foreground.
 - Exact source/rights bindings at `content-intelligence/cycles/cycle-14/revision-v4/`. New master and retained prototype/decoded QA evidence have unique canonical identities; previous masters/assets and their rights remain unchanged. Candidate revision authority only, no publication permission.
+
+## Cycle #15 — Venus Flytrap’s Fading Touch Memory candidate V1
+
+- `public/images/flytrap/open-leaf.png`: original built-in `image_gen.imagegen` botanical surface plate, transparent background, exact prompt/tool/output hash in `content-intelligence/cycles/cycle-15/production-v1/`. Not filmed plant, microscopy or copied research imagery. Exterior reconstruction disclosed.
+- `src/components/FlytrapLeaf.tsx`, `src/production/flytrap/model.ts` and composition: original Magnivis lobe/hair/probe articulation and qualitative organic tissue, electrical cues, calcium tint, fades and camera transitions. No empirical cell map, calibrated concentration, closure threshold or mechanics simulation.
+- `public/audio/flytrap/narration/cue-{1..8}.wav`: exact locked116-word narration, local Kokoro82M `af_heart`, q8CPU speed1, established Apache2.0model terms. No cloned voice, paid API, third-party sound or music. Phoneme/audible machine inspection records retained.
+- Existing pinned Fontsource Manrope5.3.0 Latin600 under SIL OFL1.1; license hash in production rights provenance.
+- Master and bounded QA/authoring evidence derive from these sources and receive immutable canonical identities. Failed first pictures/render retained as unapproved evidence; all earlier cycles/assets/media/approvals unchanged. Candidate-production authority grants no master acceptance, delivery preparation or publication permission.

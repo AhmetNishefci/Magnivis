@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.flytrap.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "flytrap-touch-memory",
+    "revision": 1,
+    "sha256": "d9ba094e923f4930f74794d4c06ae3c0b58a79e387852a37835625b68d3553d2"
+  },
+  "contentAsset": {
+    "id": "flytrap-touch-memory.asset.fading-trace",
+    "revision": 1,
+    "sha256": "781cd4da8e7caedc2489c6b4483b3dbbba289d1248f11afd9d94faa0ba57a631"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.15",
+    "reviewSha256": "1025531ea3c6863b69653b16d2f0bd9c20e3f6e734c82b0543406511010f5a1e"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/youtube.json",
+      "sha256": "d1a1fe28b624971bab5f107d2bf2b2aeadecebfa0be6c3ffa80bbd9b6f38afa0"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/tiktok.json",
+      "sha256": "765947a46bcb78240343f6267d7305f18920cdffd70729ceee94d059aab90792"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/instagram.json",
+      "sha256": "1c88b0f43a093820c099e41235c9c48663c151d4ab09325324574cd440686877"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/facebook.json",
+      "sha256": "287425689a3638c278b6f5171742b83dba06e86f0a4d9660b6b38dae9899f604"
+    }
+  ],
+  "approvedScriptSha256": "029ab1010bef6553e6f2e95957376f0191054be34b81cb30d51b778ac5afda86",
+  "creativeDirection": {
+    "id": "creative-direction.flytrap-touch-memory.fading-trace.v1",
+    "revision": 1,
+    "sha256": "bc81fd6a03323c16a7f62dbcec53ac468b9435642b620cfc788b08e74087a713"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [
+    "flytrap-touch-memory.claim.timing-fit",
+    "flytrap-touch-memory.claim.review-timing",
+    "flytrap-touch-memory.claim.mechanics-update",
+    "flytrap-touch-memory.claim.identifiable-memory-cell",
+    "flytrap-touch-memory.claim.exactly-two-touches",
+    "flytrap-touch-memory.claim.fixed-timer",
+    "flytrap-touch-memory.claim.every-touch",
+    "flytrap-touch-memory.claim.natural-glow",
+    "flytrap-touch-memory.claim.conscious-math",
+    "flytrap-touch-memory.claim.static-hold",
+    "flytrap-touch-memory.claim.settled-hydraulics",
+    "flytrap-touch-memory.claim.absolute-threshold",
+    "flytrap-touch-memory.claim.molecular-bridge"
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 50.53333333333333
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "flytrap.production.1",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.1",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.1",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.1"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.brain-free",
+        "flytrap-touch-memory.claim.functional-memory",
+        "flytrap-touch-memory.claim.hair-layout"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 158
+      },
+      "sceneType": "living-memory",
+      "objective": "Memory can exist without a brain in a specific physiological sense.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    },
+    {
+      "id": "flytrap.production.2",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.2",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.2",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.2"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.hair-signal",
+        "flytrap-touch-memory.claim.first-open",
+        "flytrap-touch-memory.claim.hair-layout"
+      ],
+      "frames": {
+        "start": 158,
+        "end": 370
+      },
+      "sceneType": "hair-to-signal",
+      "objective": "External movement and internal signaling differ.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    },
+    {
+      "id": "flytrap.production.3",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.3",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.3",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.3"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.calcium-rise",
+        "flytrap-touch-memory.claim.signal-distinction",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "frames": {
+        "start": 370,
+        "end": 513
+      },
+      "sceneType": "enter-tissue",
+      "objective": "Calcium concentration changes inside cells as the trap is excited.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    },
+    {
+      "id": "flytrap.production.4",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.4",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.4",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.4"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.decay",
+        "flytrap-touch-memory.claim.residual",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "frames": {
+        "start": 513,
+        "end": 689
+      },
+      "sceneType": "retained-state",
+      "objective": "The retained state is temporary information about the earlier signal.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    },
+    {
+      "id": "flytrap.production.5",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.5",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.5",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.5"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.summation",
+        "flytrap-touch-memory.claim.closure-threshold",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "frames": {
+        "start": 689,
+        "end": 963
+      },
+      "sceneType": "close-spaced-trial",
+      "objective": "Temporal accumulation can take a response into the closure-associated regime.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    },
+    {
+      "id": "flytrap.production.6",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.6",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.6",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.6"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.delay",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "frames": {
+        "start": 963,
+        "end": 1112
+      },
+      "sceneType": "delayed-separate-trial",
+      "objective": "Timing changes how much residual state the next signal can build on.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    },
+    {
+      "id": "flytrap.production.7",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.7",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.7",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.7"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.single-movement"
+      ],
+      "frames": {
+        "start": 1112,
+        "end": 1300
+      },
+      "sceneType": "one-movement-two-signals",
+      "objective": "A physical movement is not the unit being integrated.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    },
+    {
+      "id": "flytrap.production.8",
+      "sourceVisualPlanId": "flytrap-touch-memory.asset.fading-trace.visual.8",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.8",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.8"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.functional-memory"
+      ],
+      "frames": {
+        "start": 1300,
+        "end": 1516
+      },
+      "sceneType": "return-to-plant",
+      "objective": "A past event persists as chemistry and can affect the next response.",
+      "onScreenText": [],
+      "animationIntent": "Six articulated hairs on a macro leaf; spatial transition into illustrative tissue. Calcium persists and fades, a close second signal accumulates; a separate delayed trial loses residual and remains open.",
+      "transitionIntent": "Macro-to-tissue continuity and explicit separate-trial cuts; closed trap never instantly reopens.",
+      "audioIntent": "Exact approved af_heart at speed1, measured comprehension gaps, voice-only."
+    }
+  ],
+  "assets": [
+    {
+      "id": "flytrap.botanical",
+      "kind": "generated-image",
+      "path": "public/images/flytrap/open-leaf.png",
+      "provenance": {
+        "origin": "Built-in image_gen.imagegen",
+        "rights": "Original generated artwork",
+        "notes": "Botanical illustration; exact prompt and bytes recorded.",
+        "evidence": "content-intelligence/cycles/cycle-15/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "flytrap.original-graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Magnivis original animated lobes, hairs and tissue",
+        "rights": "Project-owned code artwork",
+        "notes": "Qualitative calcium state; no empirical cell map, signal amplitude or threshold calibration.",
+        "evidence": "content-intelligence/cycles/cycle-15/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "flytrap.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Manrope Fontsource5.3.0",
+        "rights": "SIL OFL1.1",
+        "notes": "Licensed existing type",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "flytrap.narration",
+      "kind": "audio",
+      "path": "public/audio/flytrap/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Established Apache2.0model terms",
+        "notes": "Exact locked116-word units",
+        "evidence": "src/production/narration/flytrap.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/flytrap.en.vtt",
+    "captionPlanId": "caption-plan.flytrap.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "9381dadbdd9e981eeb6ef6f4814823ce62a9df911b6c022a68c01781458192a9",
+    "generatorId": "generator.flytrap-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact locked narration unchanged.",
+    "Qualitative illustrative calcium, no naturally glowing tissue or universal threshold/time/touch mapping.",
+    "Close-spaced accumulation and delayed separate trial visually distinct.",
+    "One moving bend-and-return yields two electrical cues, not stationary sustained touch.",
+    "Separate full chronological editorial review, caption midpoints and360px samples.",
+    "Full decode, measured audio, typography fit and local profile preflights; no inferred subjective listening/device pass.",
+    "Stop AHMET — CYCLE15 MASTER REVIEW; no delivery preparation or publication."
+  ]
+}

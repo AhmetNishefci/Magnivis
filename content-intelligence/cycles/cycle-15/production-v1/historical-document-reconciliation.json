@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-14T13:51:30.640794Z",
+  "failure": "Full pnpm check historical-cycle replay rejected edited docs/PROJECT-STATE.md: Cycle10 historyReviewed binds exact bytes.",
+  "affectedEvidence": "content-intelligence/cycles/cycle-10/topic-selection.json",
+  "originalSha256": "2bfdec20f86254916c741efacabfa22f61ccbe705d287cfdd84e832e20f2e5fe",
+  "action": "Restore docs/PROJECT-STATE.md exactly from approved baseline e039cf2; retain current scoped routing in workflow/project-state.json and independent journal. No old selection or bound hash changed.",
+  "restoredSha256": "2bfdec20f86254916c741efacabfa22f61ccbe705d287cfdd84e832e20f2e5fe",
+  "lesson": "Shared files can be frozen historical evidence even when named as current documentation; inspect bound references before updating. No new architecture/policy or gate necessary."
+}

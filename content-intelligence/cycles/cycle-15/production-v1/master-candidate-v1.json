@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.15",
+  "media": {
+    "id": "media.ab87a60394b52220159ba702fd31a6747a21870f0fe95bae78ea4f2698fb776f",
+    "sha256": "ab87a60394b52220159ba702fd31a6747a21870f0fe95bae78ea4f2698fb776f"
+  },
+  "durationSeconds": 50.53333333333333,
+  "scriptSha256": "029ab1010bef6553e6f2e95957376f0191054be34b81cb30d51b778ac5afda86",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-15/production-v1/production-plan.candidate-v1.json",
+    "sha256": "2e08f308c4fe1942a14ce91cad7d3ab6399fafb7eff6a15c5133798598d5e7ae"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/flytrap.json",
+    "sha256": "0efa673f56a8ea1d1dc3082743807fe99ce366bdb80c30a81b780ac40c58db50"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/flytrap.json",
+    "sha256": "57408d35d27124d7074aadaa4d8f1686d8109793d7227a8fe223384075603de0"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/youtube.json",
+        "sha256": "d1a1fe28b624971bab5f107d2bf2b2aeadecebfa0be6c3ffa80bbd9b6f38afa0"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/preflight/youtube.json",
+        "sha256": "2ff08180aa01360ce924fb0182b4e7064a738a8bb66e9478f10f9a70e75466d0"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/tiktok.json",
+        "sha256": "765947a46bcb78240343f6267d7305f18920cdffd70729ceee94d059aab90792"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/preflight/tiktok.json",
+        "sha256": "5b77ac4c6bf6d578d92142788c47bf36315b39239ba3f1a2e3a5db33486bc391"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/instagram.json",
+        "sha256": "1c88b0f43a093820c099e41235c9c48663c151d4ab09325324574cd440686877"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/preflight/instagram.json",
+        "sha256": "97e40d81468c96b4f72ed5b1897634507e5cfcc753657d4f7c025c1cc24cfa5c"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/profiles/facebook.json",
+        "sha256": "287425689a3638c278b6f5171742b83dba06e86f0a4d9660b6b38dae9899f604"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/preflight/facebook.json",
+        "sha256": "960044e5ac3501ee93ef07adac6dba2c4c2f63830357c2200605e4a48a7e102c"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "flytrap-cue-1",
+      "transcript": "A Venus flytrap has no brain. Yet a touch can leave a fading memory.",
+      "start": 0,
+      "duration": 4.9,
+      "media": {
+        "id": "media.df63e132a3f305b07bc6d999bf48e80b4025fcabc1b7fd78263016f4e1981285",
+        "sha256": "df63e132a3f305b07bc6d999bf48e80b4025fcabc1b7fd78263016f4e1981285"
+      }
+    },
+    {
+      "id": "flytrap-cue-2",
+      "transcript": "A brief bend of a sensitive hair can send an electrical signal through the trap while it stays open.",
+      "start": 5.266666666666667,
+      "duration": 6.475,
+      "media": {
+        "id": "media.19d93489b6e69dea2c035cac35cbbe796aeb88fe0e36f5a35e8fae8b2cd74d7b",
+        "sha256": "19d93489b6e69dea2c035cac35cbbe796aeb88fe0e36f5a35e8fae8b2cd74d7b"
+      }
+    },
+    {
+      "id": "flytrap-cue-3",
+      "transcript": "Alongside that signal, calcium rises inside the leaf’s cells.",
+      "start": 12.333333333333334,
+      "duration": 4.45,
+      "media": {
+        "id": "media.e43cb9dcc2a8acb3d324456b1cef67b09bc8853016a0e47b829dcfd6b9d82231",
+        "sha256": "e43cb9dcc2a8acb3d324456b1cef67b09bc8853016a0e47b829dcfd6b9d82231"
+      }
+    },
+    {
+      "id": "flytrap-cue-4",
+      "transcript": "Then the calcium level falls. For a short time, part of that change remains.",
+      "start": 17.1,
+      "duration": 5.15,
+      "media": {
+        "id": "media.bfdfef580814306d3e3eae33f0b209bb4b849bab5aed1cdae1a0bfcd1c8a9aeb",
+        "sha256": "bfdfef580814306d3e3eae33f0b209bb4b849bab5aed1cdae1a0bfcd1c8a9aeb"
+      }
+    },
+    {
+      "id": "flytrap-cue-5",
+      "transcript": "Another signal arriving soon enough raises the level further. If it reaches the level needed for closure, the trap can snap shut.",
+      "start": 22.966666666666665,
+      "duration": 8.3,
+      "media": {
+        "id": "media.28e9bb05f0b5ae061b97e7fc5badf4026093739db64fc0a10ce5cd1605078fea",
+        "sha256": "28e9bb05f0b5ae061b97e7fc5badf4026093739db64fc0a10ce5cd1605078fea"
+      }
+    },
+    {
+      "id": "flytrap-cue-6",
+      "transcript": "Wait too long, and the next signal may no longer reach that level.",
+      "start": 32.1,
+      "duration": 4.275,
+      "media": {
+        "id": "media.0e8d4b72ccf1508b3d83888c7a7d1b431dc3e1cbf12148c3cdffe34fcd34311c",
+        "sha256": "0e8d4b72ccf1508b3d83888c7a7d1b431dc3e1cbf12148c3cdffe34fcd34311c"
+      }
+    },
+    {
+      "id": "flytrap-cue-7",
+      "transcript": "Two signals don’t always mean two touches: one slower hair movement can produce both.",
+      "start": 37.06666666666667,
+      "duration": 5.65,
+      "media": {
+        "id": "media.788716c0dd28f6af2a0c03a73ed71116d2d1b807ddb0fb69d09b5b891dc208de",
+        "sha256": "788716c0dd28f6af2a0c03a73ed71116d2d1b807ddb0fb69d09b5b891dc208de"
+      }
+    },
+    {
+      "id": "flytrap-cue-8",
+      "transcript": "Here, memory means retained information—a fading chemical state, not conscious recollection.",
+      "start": 43.333333333333336,
+      "duration": 6.525,
+      "media": {
+        "id": "media.9748ed17587bfeb3e3fbbf5c19449dce65c3d990865df9f06f13885b38b484b1",
+        "sha256": "9748ed17587bfeb3e3fbbf5c19449dce65c3d990865df9f06f13885b38b484b1"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/qa/final-report.json",
+        "sha256": "dc443cc6e432ce073d7521cdb815532dc5326a1f528083f4ff6baeb7b302a316"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Exact locked116words and af_heart narration preserved.",
+    "Illustrative signal cues separate electrical events from physical hair movement.",
+    "Qualitative intracellular calcium state rises, persists, fades and accumulates; no universal time or numerical threshold.",
+    "Distinct delayed trial loses residual and remains open; close-spaced chosen example closes.",
+    "Single continuous slower bend-and-return produces two signal cues and closure in the chosen example.",
+    "All cellular activity explicitly illustrative; no natural fluorescence or literal measured tissue map.",
+    "Final open leaf is explicitly the first trial, not instantaneous reopening.",
+    "Functional chemical memory, not conscious recollection."
+  ],
+  "uncertainties": [
+    "AI-generated botanical surface with code articulation, not recorded experimental plant footage.",
+    "Planar lobe hinge and authored hairs are simplified, not a full biomechanical closure simulation; edge-on closure and hair/material integration require owner judgment.",
+    "Cell layout, tint strengths, signal wave shape and compressed timing are qualitative; no measured units or calibrated threshold.",
+    "Internal region remains visually explanatory; owner must judge living macro quality, repetition and silent timing comprehension.",
+    "No continuous subjective playback/listening or actual-phone/native-platform evidence.",
+    "Caption phrase timing is approximate;54px captions,34–40px disclosures/labels should be judged on a phone.",
+    "Primary-source access/raw-data limitations remain in approved research record; no stronger factual certainty introduced."
+  ],
+  "unusualProduction": [
+    "Original generated leaf plate; six separately articulated hairs, contact-aligned probe and lobe hinge.",
+    "Spatial move into organic qualitative tissue, progressive retained versus faded state, no numerical meter or dashboard.",
+    "Voice-only sound choice keeps the mechanism free of literal electrical or cellular sound effects.",
+    "First incomplete ending and initial contact/circular-view prototypes preserved as unapproved evidence; final candidate follows all8approved scenes."
+  ]
+}

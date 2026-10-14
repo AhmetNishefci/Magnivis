@@ -1,0 +1,21 @@
+{
+  "enteredAt": "2026-10-14T13:43:49.796Z",
+  "originalFinalizer": {
+    "path": "scripts/finalize-flytrap-master.ts",
+    "sha256": "183944b25fe00a7e027d2f49be39053364a1399e86189825ff71d6c5370c922b"
+  },
+  "resumeImplementation": {
+    "path": "scripts/complete-flytrap-finalization.ts",
+    "sha256": "792a4a7bc853bdf8bce1b6eb68e1342b943224c671cd31f4d009f105032b65d5"
+  },
+  "failure": "PresentationEvidenceV3 requires a Z UTC datetime; manual inspection timestamp used equivalent +00:00. All media/QA registration succeeded before schema rejected preflight; no production-completion event or owner gate changed.",
+  "resolution": "Normalize that exact recorded instant with Date.toISOString() for native evidence; preserve all original source/QA/media records unchanged. No fabricated inspection time or repeated render.",
+  "originalInspection": {
+    "path": "content-intelligence/cycles/cycle-15/production-v1/qa/visual-inspection.json",
+    "sha256": "481d8ace3d27ca7e1919231a473c78637d5daca50055c727735ed6f4396b6944"
+  },
+  "existingFinalReport": {
+    "path": "content-intelligence/cycles/cycle-15/production-v1/qa/final-report.json",
+    "sha256": "dc443cc6e432ce073d7521cdb815532dc5326a1f528083f4ff6baeb7b302a316"
+  }
+}

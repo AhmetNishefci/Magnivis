@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-10-14T13:54:03.927384Z",
+  "passed": true,
+  "gate": "AHMET \u2014 CYCLE #15 MASTER REVIEW",
+  "nativeRevision": 9,
+  "masterSha256": "ab87a60394b52220159ba702fd31a6747a21870f0fe95bae78ea4f2698fb776f",
+  "commands": [
+    {
+      "command": "VITEST_MAX_WORKERS=2 pnpm check",
+      "exitCode": 0,
+      "node": "22.23.3",
+      "files": 54,
+      "tests": 507,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/check-output.txt",
+        "sha256": "4cef0d69ea6cc30c63ffc2281e73cf2b839a98433d7a93b4079c60366ecc964c"
+      },
+      "scope": "Unchanged assertions/timeouts; worker limit avoids media-heavy contention."
+    },
+    {
+      "command": "pnpm artifacts:durable",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/durability-output.json",
+        "sha256": "863729a4271ee6b6b1c62ac7f1ad3ff6fa9f47c9d67a92f3ba7cd20828b3196d"
+      }
+    },
+    {
+      "command": "node --import tsx scripts/verify-flytrap-handoff.ts",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/read-only-verification.json",
+        "sha256": "1837559610571ee9d1d7fbcd5b4b406f7b60a1606012d4a90caf424ebd0b7f48"
+      }
+    },
+    {
+      "command": "pnpm qa flytrap",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/qa/report.json",
+        "sha256": "f504fe88b71dab047cc8045f2a380f50773e460a7cc53a3729b82c08e3f317cb"
+      }
+    },
+    {
+      "command": "node --import tsx scripts/qa-flytrap-layout.ts",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/qa/typography-report.json",
+        "sha256": "fb927f06eede790dbc1821f2184a56ff002d333a0a6df3eb3ebc513980f125b8"
+      }
+    },
+    {
+      "command": "node scripts/inspect-flytrap-audio.mjs",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/qa/audio-inspection.json",
+        "sha256": "5c3badd5e7912d19a7f82bd926892adbaf863dd82822df03e37a991086a0fea0"
+      }
+    },
+    {
+      "command": "ffmpeg full audiovisual decode with -xerror and -err_detect explode",
+      "exitCode": 0,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/qa/final-report.json",
+        "sha256": "dc443cc6e432ce073d7521cdb815532dc5326a1f528083f4ff6baeb7b302a316"
+      }
+    }
+  ],
+  "correctedValidationAttempts": [
+    "tsx local IPC required permitted escalation.",
+    "Concurrent full checks/render/QA caused historical test timeouts; final tests used2workers with no render/ASR overlap.",
+    "Canonical media must be staged Git-tracked before durability validation; after registration and staging all passed.",
+    "Shared docs/PROJECT-STATE.md is frozen Cycle10 discovery evidence; restored byte-exact and current routing kept in workflow/project-state.json.",
+    "Native preflight required Z timestamp; same instant normalized through separate finalization-recovery record, preserving prior records."
+  ],
+  "approval": {
+    "master": false,
+    "deliveryPreparation": false,
+    "publication": false
+  },
+  "inspectionLimits": "Sampled decoded visuals and machine audio inspection; no subjective continuous playback/listening, real device or native-platform processing proof."
+}

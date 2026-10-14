@@ -1,0 +1,85 @@
+{
+  "enteredAt": "2026-10-14T13:42:12.905Z",
+  "sourceBaseCommit": "e039cf23159c3b81d089d8b560ac83388cad8862",
+  "files": [
+    {
+      "path": "src/flytrap-index.tsx",
+      "sha256": "2e6a0f772d6ce408d3fb8f607cde397f3a4e57d1eae41490b174516dfe815296"
+    },
+    {
+      "path": "src/compositions/FlytrapMemory.tsx",
+      "sha256": "ff56819856f47f60ea11b1735f3260bae89fc2877401c6ad7cb3c0aa99f6395d"
+    },
+    {
+      "path": "src/components/FlytrapLeaf.tsx",
+      "sha256": "c581f863c59987f3abce0a910ce32486437030ed60758345e2e99f2757de8c3f"
+    },
+    {
+      "path": "src/production/flytrap/model.ts",
+      "sha256": "ee5f96b41790d5d2c20547f818e5f6a615111e4e386d3d8d8bf4c0c0c685aaa3"
+    },
+    {
+      "path": "src/content/videos/flytrap.ts",
+      "sha256": "ef289833f32d4e04564b798c08a424d28fdd48804e91921a3f91db0af3a66c70"
+    },
+    {
+      "path": "src/production/plans/flytrap.json",
+      "sha256": "45e75f4a695058b6e91183e13fb87e4be29c5849c3470b6037febbda5d10ee31"
+    },
+    {
+      "path": "src/captions/plans/flytrap.json",
+      "sha256": "0efa673f56a8ea1d1dc3082743807fe99ce366bdb80c30a81b780ac40c58db50"
+    },
+    {
+      "path": "src/production/narration/flytrap.json",
+      "sha256": "57408d35d27124d7074aadaa4d8f1686d8109793d7227a8fe223384075603de0"
+    },
+    {
+      "path": "scripts/flytrap-video-target.ts",
+      "sha256": "c7eecec17cb2db01a6e05a36912e404ddc2aaef47f82ebef49685b5bc4d7e2be"
+    },
+    {
+      "path": "scripts/render-flytrap.ts",
+      "sha256": "7124b2e907ae22173c3d2e8a7920b3ce031cb419e0c23f443f5edaf6d9104974"
+    },
+    {
+      "path": "scripts/qa-flytrap-layout.ts",
+      "sha256": "d1c6e45a58d940c229516e91214c4baba099313dd1fec27634f7a19e4c71cf3d"
+    },
+    {
+      "path": "scripts/prepare-flytrap-qa-sheets.ts",
+      "sha256": "5d598167eb32cae288e1bf5c2f0d46f5f2efda1169211ee4eb21bd1e570ed454"
+    },
+    {
+      "path": "scripts/generate-flytrap-narration.mjs",
+      "sha256": "c75afcbd63d5c6c0a05cd51c615de56c0b7673e5ed44a4537aa63874d261c8ed"
+    },
+    {
+      "path": "scripts/inspect-flytrap-audio.mjs",
+      "sha256": "3bb29dfed951c7cca5505f8b41d4613c8972acb081f38bdcde64a39e7dbc8b50"
+    },
+    {
+      "path": "scripts/validate-flytrap-production.ts",
+      "sha256": "2d655c57d740d2a58cfd473cb5523ae29e587868cec8d4c1c2772c792f5b8ab6"
+    },
+    {
+      "path": "scripts/finalize-flytrap-master.ts",
+      "sha256": "183944b25fe00a7e027d2f49be39053364a1399e86189825ff71d6c5370c922b"
+    }
+  ],
+  "scriptSha256": "029ab1010bef6553e6f2e95957376f0191054be34b81cb30d51b778ac5afda86",
+  "ownerAuthority": {
+    "path": "content-intelligence/cycles/cycle-15/production-v1/production-authority.json",
+    "sha256": "f2498a8b6837733f7f02f2092c295117568ff7f3b591116364639f93bf7c2259"
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-15/production-v1/direction-ready.json",
+    "sha256": "d336672f9f59b7f28fc40c3e34c513b739d193e1f2860eda9d2fe2a98b0bea12"
+  },
+  "corrections": {
+    "path": "content-intelligence/cycles/cycle-15/production-v1/rendered-corrections.json",
+    "sha256": "25f5c66aec34b08c4a7cc51db4b1b91f819ceeff238e5b83b4b54e7c9cb86ead"
+  },
+  "videoPacketSha256": "SHA256=a5e9210386f5d734dcd743ed858883c2ce98a8b0b9208399e5f14c7ae8bb3b19",
+  "note": "Final eight-scene implementation. QA instrumentation changed only data attributes and inspectQa-only measurement while final render was in progress; presentation pixels at inspectQa=false unchanged. First render separately retained as unapproved authoring evidence."
+}

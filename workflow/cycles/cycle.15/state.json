@@ -1,20 +1,13 @@
 {
   "schemaVersion": 3,
   "id": "cycle.15",
-  "revision": 6,
+  "revision": 9,
   "authority": {
     "path": "workflow/authorities/cycle-15-start.json",
     "sha256": "297522607781102b91000c93e805586e74b46054684c4c1f4fa9497cc16c4698"
   },
-  "stage": "creative",
-  "workInProgress": {
-    "stage": "creative",
-    "record": {
-      "path": "content-intelligence/cycles/cycle-15/development-v1/creative-start.json",
-      "sha256": "30367fd2c3a769fe055cfaf7fe758a533d61285d7d990bc2fa55feb40655443e"
-    },
-    "startedAt": "2026-10-14T13:06:58.809Z"
-  },
+  "stage": "master-review",
+  "workInProgress": null,
   "receipts": [
     {
       "stage": "discovery",
@@ -29,6 +22,20 @@
         "path": "content-intelligence/cycles/cycle-15/development-v1/editorial-receipt.json",
         "sha256": "44d96c482282384e8cffcda4a3fb35d695eb51179c5bb11bc1b23708faa8eb59"
       }
+    },
+    {
+      "stage": "creative",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/direction-ready.json",
+        "sha256": "d336672f9f59b7f28fc40c3e34c513b739d193e1f2860eda9d2fe2a98b0bea12"
+      }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/master-candidate-v1.json",
+        "sha256": "4e1aad8553525e725620a1c2230b702b4213fde608d94c362a92c341b0d2592d"
+      }
     }
   ],
   "premise": {
@@ -39,7 +46,10 @@
     "path": "content-intelligence/cycles/cycle-15/owner-premise-approval-v1.json",
     "sha256": "c43244ddb5540eca20b451ed612a94bef7730aa82c303869215b9d58e38e2a67"
   },
-  "candidate": null,
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-15/production-v1/master-candidate-v1.json",
+    "sha256": "4e1aad8553525e725620a1c2230b702b4213fde608d94c362a92c341b0d2592d"
+  },
   "masterDecision": null,
   "release": null,
   "publicationDecision": null,
@@ -104,6 +114,36 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-15/development-v1/creative-start.json",
         "sha256": "30367fd2c3a769fe055cfaf7fe758a533d61285d7d990bc2fa55feb40655443e"
+      }
+    },
+    {
+      "revision": 7,
+      "previousSha256": "fee681447e80eab2b0cfd6bcd14a6ae5b2ba3996ddde945a5ff4f592cad45c28",
+      "event": "creative",
+      "at": "2026-10-14T13:19:21.381Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/direction-ready.json",
+        "sha256": "d336672f9f59b7f28fc40c3e34c513b739d193e1f2860eda9d2fe2a98b0bea12"
+      }
+    },
+    {
+      "revision": 8,
+      "previousSha256": "2018aa2240f27244a80f4d37540c0c6662db33adba4add41e3a8966d657676a3",
+      "event": "begin-production",
+      "at": "2026-10-14T13:19:51.720581Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/production-start.json",
+        "sha256": "621fd1ba81b17199455d310600529018f653fc34205b459497fc8654e8572300"
+      }
+    },
+    {
+      "revision": 9,
+      "previousSha256": "e22307e80af78fd85ca53bc03c1995eb861f9a108777f79c848bc62c4903e181",
+      "event": "production",
+      "at": "2026-10-14T13:43:49.796Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/production-v1/master-candidate-v1.json",
+        "sha256": "4e1aad8553525e725620a1c2230b702b4213fde608d94c362a92c341b0d2592d"
       }
     }
   ]

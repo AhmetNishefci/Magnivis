@@ -1,0 +1,45 @@
+{
+  "enteredAt": "2026-10-14T13:42:12.732864+00:00",
+  "candidate": {
+    "path": "artifacts/masters/flytrap-cycle15-candidate-v1.mp4",
+    "sha256": "ab87a60394b52220159ba702fd31a6747a21870f0fe95bae78ea4f2698fb776f"
+  },
+  "inspectedPriorProductionContext": "development-v1/portfolio-visual-inspection.json and prior exact owner corrections recorded there, inspected before production.",
+  "findings": [
+    {
+      "issue": "Probe endpoint did not follow the selected trigger-hair tip in first browser frames.",
+      "evidence": {
+        "path": "artifacts/qa-evidence/flytrap-cycle15-authoring/initial-hair-contact.png",
+        "sha256": "939918f0f1da2b34fac93fd85794010a3dab1e355a27f3bbfe3673aa5277f750"
+      },
+      "cause": "Separate screen-space probe was authored independently from leaf/hair transforms.",
+      "action": "Move probe into the same articulated lobe coordinates; endpoint calculated from selected hair tip.",
+      "systemCorrection": "Subject primitive owns contact geometry; actual hair bounds replace inspection proxy."
+    },
+    {
+      "issue": "Circular tissue overlay looked like a diagram pasted over a plant.",
+      "evidence": {
+        "path": "artifacts/qa-evidence/flytrap-cycle15-authoring/initial-tissue.png",
+        "sha256": "5ef1ce107330c33a8b06d77b0dedafc17d42b03ebd25e28387056d99eba3793e"
+      },
+      "cause": "Convenient bounded ellipse did not implement approved spatial inward experience strongly enough. Existing direction/process guidance was sufficient; weak application.",
+      "action": "Scale from hair-side interior and dissolve into an enlarged organic field with irregular cell outlines, peripheral falloff, changing intracellular tint, surface detail and small motion. No boxed comparison/chart.",
+      "retainedTradeoff": "The cell field is still an explanatory illustration with one shared state, not photorealistic microscopy or accurate cell topology."
+    },
+    {
+      "issue": "First full render omitted the approved single-movement closing response and explicit return to earlier trial.",
+      "evidence": {
+        "path": "artifacts/qa-evidence/flytrap-cycle15-authoring/first-render.mp4",
+        "sha256": "2db587dc72ae62a9f7a2f679d5f50f91a06af0f72c42e6abb12a38df97fecda1"
+      },
+      "cause": "Incomplete scene7/8 implementation; validation needed to cover exact approved endpoint and reset semantics.",
+      "action": "Chosen one-movement example closes after its two distinct cues; final open leaf is identified as the first trial. Increase final closure angle for clearer top-down outcome.",
+      "systemCorrection": "Production scientific-contract validation now asserts one continuous bend-and-return, selected closure and explicit first-trial return. No universal biological threshold assertion."
+    }
+  ],
+  "preservation": "First render, three initial browser evidence frames and first-render source snapshots preserved as unapproved authoring evidence. Final master unique immutable payload.",
+  "nonGeneralizations": [
+    "No mandatory macro template, cell motif, palette, effect or music rule added.",
+    "No claim that local geometry or technical validation proves biological realism or premium quality."
+  ]
+}

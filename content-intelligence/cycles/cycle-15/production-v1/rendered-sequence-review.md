@@ -1,0 +1,21 @@
+# Cycle #15 — rendered-sequence editorial review
+
+Exact candidate `ab87a60394b52220159ba702fd31a6747a21870f0fe95bae78ea4f2698fb776f`. Inspected 2026-10-14T13:42:12.732864+00:00. This review is separate from technical QA and does not grant owner approval.
+
+The complete decoded chronology was inspected in order at every integer second from0through50, along with all23caption midpoints, all8scene midpoints,20mechanism-progression frames,81checkpoint contact-sheet overview and8samples decoded at360px width. Evidence/frame lists and exact hashes are in [visual-inspection.json](qa/visual-inspection.json). Important hair and internal states were also enlarged in browser-rendered full-size images. No continuous subjective playback or audio listening was available.
+
+Opening,0–5.27s: an immediately visible open leaf and the exact brain-free memory statement create a truthful contradiction without a title lead-in. Surface texture and six hairs make the subject identifiable. The camera and selected hair move subtly; this remains a reconstructed macro scene rather than filmed living tissue.
+
+Hair and inward transition,5.27–17.1s: a brief hair bend occurs around5.82–6.76s; the contact-aligned probe and separate dashed electrical cue are different visual objects. The leaf remains open. At12.33s the illustration scales inward and exterior dissolves into a larger tissue field. Disclosures distinguish calcium color from naturally visible fluorescence. No new signal cue is replayed during the inward reveal.
+
+Persistence and accumulation,17.1–32.1s: warm intracellular tint decreases to a retained state, then another electrical cue around23.82s accompanies a stronger response. The relevant visual change is tissue state, not a new heading or a numerical meter. The exterior returns around28.32–29.12s and closes around29.02–29.32s. Top-down closure is visibly different from the open leaf but planar articulation and narrow final silhouette remain the strongest realism concern.
+
+Delayed comparison,32.1–37.07s: an explicit separate-trial cut prevents the closed trap from appearing to reopen. Residual tint disappears before the later electrical cue around34.3s. That response is lower than the close-spaced response, and the exterior remains open around35.75s onward. The pair can be distinguished by retained versus absent state, stronger versus lower color and closed versus open outcome without a number. This is a judgment from decoded states; silent continuous comprehension remains for owner review. Compressed delay is disclosed and is not a biological countdown.
+
+Movement versus signals,37.07–43.33s: one continuous bend-and-return supports two distinct cues at38.57s and40.62s. The selected example closes near41.87–42.17s. This is one documented pattern, not an invariant conversion from touch count to electrical events. The macro composition is reused to make the same physical hair identifiable.
+
+Ending,43.33–50.53s picture: “First trial · after one signal” identifies the return to the earlier open example; a short residual representation dissolves into the exterior. The exact final narration gives the functional meaning and consciousness qualification. The promised payoff is delivered without an engagement outro.
+
+The same plant orientation and tissue field are intentionally retained across these particular comparisons; this helps track the information. Captions remain in a stable readable region. Large scene changes are macro, inward tissue, fade/accumulation, exterior closure, separate failed trial, one-movement exception and earlier-example return. Remaining repetition/material realism is a creative concern, not silently treated as a technical pass. The former circular overlay and orphan probe were actionable weaknesses and were corrected; exact evidence and causes are in [rendered-corrections.json](rendered-corrections.json). Existing canonical review/direction guidance already required these checks, so no speculative universal style rule was added.
+
+Owner should judge living botanical quality, hair integration, closure credibility, whole-film rhythm, whether the cell field feels too illustrative, silent timing comprehension, approximate caption synchronization, voice delivery and actual-phone readability. No categorical “premium” certification, actual-device claim or subjective listening pass is made.
