@@ -1,3 +1,4 @@
+import {recentApprovedVisualWorks} from '../src/content-assets/visual-convergence';
 import {execFileSync} from 'node:child_process';
 import {convergenceFixture,copyComparisonEvidence} from './fixtures/visual-convergence';
 import type {CreativeDirection} from '../src/content-assets/creative-direction';
@@ -91,6 +92,32 @@ const runToMaster=async(f:ReturnType<typeof fixture>,cycle=startCycle(f.authorit
 };
 
 describe('Cycle V3 generic lifecycle and integration',()=>{
+  it('selects only an exact owner-approved journal-preserved master and invalidates superseded deliveries',async()=>{
+    const f=fixture('cycle.preserved-selection'),first=await runToMaster(f);
+    const firstCandidate=first.candidate!;
+    let current=transitionCycle(first,{type:'owner-decision',record:f.decision('master-review',f.candidate,'revise'),at:now},registry,f.root);
+    const newer={...f.candidate,uncertainties:['Synthetic newer treatment, not a real master revision.']};
+    current=transitionCycle(current,{type:'complete-internal',stage:'production',record:f.put(newer),at:now},registry,f.root);
+    current=transitionCycle(current,{type:'owner-decision',record:f.decision('master-review',newer),at:now},registry,f.root);
+    current=transitionCycle(current,{type:'complete-internal',stage:'presentation',record:f.releaseFixture().record,at:now},registry,f.root);
+    const record={cycleId:current.id,previousCandidate:current.candidate,previousRelease:current.release,candidate:firstCandidate,creative:f.records.creative,decision:f.decision('master-review',f.candidate),reason:'Test-only owner selection of preserved coherent treatment; no new media.'};
+    const select=(value:unknown)=>transitionCycle(current,{type:'select-preserved-master',record:f.put(value),at:now},registry,f.root);
+    expect(()=>select({...record,candidate:f.put({...f.candidate,uncertainties:['Unjournaled candidate']})})).toThrow(/journal-proven/);
+    expect(()=>select({...record,previousRelease:null})).toThrow(/current candidate and release/);
+    expect(()=>select({...record,decision:f.decision('master-review',newer)})).toThrow(/target/);
+    expect(()=>select({...record,decision:f.decision('master-review',f.candidate,'revise')})).toThrow(/exact owner approval/);
+    expect(()=>transitionCycle({...current,observations:[{kind:'scheduled-owner-reported',record:f.put({fixtureOnly:true})}]},{type:'select-preserved-master',record:f.put(record),at:now},registry,f.root)).toThrow(/unpublished review boundary/);
+    const selected=select(record);
+    expect(selected.stage).toBe('presentation');expect(selected.candidate).toEqual(firstCandidate);expect(selected.masterDecision).toEqual(record.decision);
+    expect(selected.release).toBeNull();expect(selected.publicationDecision).toBeNull();expect(selected.history.slice(0,-1)).toEqual(current.history);
+    expect(current.release).not.toBeNull();expect(selected.receipts.find(r=>r.stage==='creative')?.record).toEqual(f.records.creative);
+    const dir=join(f.root,'workflow/cycles',selected.id);mkdirSync(dir,{recursive:true});writeFileSync(join(dir,'state.json'),JSON.stringify(selected));
+    selected.history.forEach((h,i)=>writeFileSync(join(dir,`event-${i+1}.json`),JSON.stringify({previousSha256:h.previousSha256,nextSha256:selected.history[i+1]?.previousSha256??sha256Json(selected),event:{type:h.event==='select-preserved-master'?'select-preserved-master':h.event==='owner-decision'?'owner-decision':'complete-internal',record:h.evidence}})));
+    expect(recentApprovedVisualWorks(now,'different-asset',f.root)[0]).toMatchObject({master:f.media,approval:record.decision,creativeDirection:f.records.creative});
+    writeFileSync(join(dir,`event-${selected.revision}.json`),JSON.stringify({previousSha256:selected.history.at(-1)!.previousSha256,nextSha256:sha256Json(selected),event:{type:'select-preserved-master',record:f.put({...record,decision:f.decision('master-review',newer)})}}));
+    expect(()=>recentApprovedVisualWorks(now,'different-asset',f.root)).toThrow(/journal/);
+  });
+
   it('runs fresh media, a fresh derivative, complete release, backlog and isolated late publication in one catalog lifecycle',async()=>{
     const f=fixture('cycle.integration-a');mkdirSync(join(f.root,'artifacts'),{recursive:true});
     const narrationRecords=f.candidate.narration.map((n:{media:ReturnType<typeof mediaReference>})=>registry.get(n.media));

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.15",
-  "revision": 25,
+  "revision": 28,
   "authority": {
     "path": "workflow/authorities/cycle-15-start.json",
     "sha256": "297522607781102b91000c93e805586e74b46054684c4c1f4fa9497cc16c4698"
@@ -26,22 +26,22 @@
     {
       "stage": "creative",
       "record": {
-        "path": "content-intelligence/cycles/cycle-15/revision-v3/direction-v4.json",
-        "sha256": "2d96a6a12f484a82c3d3cdbc5edd377340578c7989d3a5b77ddf653e66660d1e"
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/direction-v3.json",
+        "sha256": "54b2211d0e4711cd02230f316218a6f04c4cfb28387758a0eec56ab167965e7e"
       }
     },
     {
       "stage": "production",
       "record": {
-        "path": "content-intelligence/cycles/cycle-15/revision-v3/master-candidate-v3.json",
-        "sha256": "1a6b1c8e91875da34e422ff52c6bb3f91e8932929979ae073195997d56fed333"
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/master-candidate-v2.json",
+        "sha256": "6233ae4f9c0b308e8d74557a0e7a1bd6a5852ae0c71ae1267411205d21fa5b20"
       }
     },
     {
       "stage": "presentation",
       "record": {
-        "path": "content-intelligence/cycles/cycle-15/delivery-v1/release-v1.json",
-        "sha256": "a95c8b41db97e1b0900a9007ef2be458ac715eb60627515ebb2265ac2b4bdcce"
+        "path": "content-intelligence/cycles/cycle-15/delivery-v2/release-v2.json",
+        "sha256": "47849a0a560c067b3a9629cfe6172cb2909572199ab6cd301a0f50f2f03ec842"
       }
     }
   ],
@@ -54,16 +54,16 @@
     "sha256": "c43244ddb5540eca20b451ed612a94bef7730aa82c303869215b9d58e38e2a67"
   },
   "candidate": {
-    "path": "content-intelligence/cycles/cycle-15/revision-v3/master-candidate-v3.json",
-    "sha256": "1a6b1c8e91875da34e422ff52c6bb3f91e8932929979ae073195997d56fed333"
+    "path": "content-intelligence/cycles/cycle-15/revision-v2/master-candidate-v2.json",
+    "sha256": "6233ae4f9c0b308e8d74557a0e7a1bd6a5852ae0c71ae1267411205d21fa5b20"
   },
   "masterDecision": {
-    "path": "content-intelligence/cycles/cycle-15/delivery-v1/master-approval-v1.json",
-    "sha256": "6321b7b111ed3e1085fbbe4ea392c994ea0a12aaa05f668d1b356c67d9fa00b5"
+    "path": "content-intelligence/cycles/cycle-15/delivery-v2/master-approval-v2.json",
+    "sha256": "7c66cd2da6780cc0df40c5112b260f0586b3b2749d9d068cb5f50eb572877d35"
   },
   "release": {
-    "path": "content-intelligence/cycles/cycle-15/delivery-v1/release-v1.json",
-    "sha256": "a95c8b41db97e1b0900a9007ef2be458ac715eb60627515ebb2265ac2b4bdcce"
+    "path": "content-intelligence/cycles/cycle-15/delivery-v2/release-v2.json",
+    "sha256": "47849a0a560c067b3a9629cfe6172cb2909572199ab6cd301a0f50f2f03ec842"
   },
   "publicationDecision": null,
   "exception": null,
@@ -317,6 +317,36 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-15/delivery-v1/release-v1.json",
         "sha256": "a95c8b41db97e1b0900a9007ef2be458ac715eb60627515ebb2265ac2b4bdcce"
+      }
+    },
+    {
+      "revision": 26,
+      "previousSha256": "ca450dab385cc50501040a25e58592dee40387141ddde128b7a5c67271bb178e",
+      "event": "select-preserved-master",
+      "at": "2026-10-14T22:14:49.422Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/delivery-v2/master-selection-v2.json",
+        "sha256": "512441e1280b163b3ee88b28d3be5f11c2164478d0d5d4a3be4e3b38a4b32fc0"
+      }
+    },
+    {
+      "revision": 27,
+      "previousSha256": "6886c0ce6f013748fc8295cb02637a981e8203a0f1dd65ad329e4748a5116701",
+      "event": "begin-presentation",
+      "at": "2026-10-14T22:14:56.911Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/delivery-v2/presentation-start-v2.json",
+        "sha256": "3da9d41d200a888b7f85c861b3c15a95b08c1ae5b7fbfc9cb29c8e6f3c66d937"
+      }
+    },
+    {
+      "revision": 28,
+      "previousSha256": "ce83710523a3646df5e71e97cf8d6228dbeb3034094f209a8beb19a02fb75067",
+      "event": "presentation",
+      "at": "2026-10-14T22:16:16.513Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/delivery-v2/release-v2.json",
+        "sha256": "47849a0a560c067b3a9629cfe6172cb2909572199ab6cd301a0f50f2f03ec842"
       }
     }
   ]

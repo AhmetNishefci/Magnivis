@@ -149,6 +149,7 @@ const eventSchema = z.discriminatedUnion('type',[
   z.object({type:z.literal('begin-internal'),stage:z.enum(internalStages),record:ref,at:z.iso.datetime()}).strict(),
   z.object({type:z.literal('complete-internal'),stage:z.enum(internalStages),record:ref,at:z.iso.datetime()}).strict(),
   z.object({type:z.literal('owner-decision'),record:ref,at:z.iso.datetime()}).strict(),
+  z.object({type:z.literal('select-preserved-master'),record:ref,at:z.iso.datetime()}).strict(),
   z.object({type:z.literal('escalate'),reason:text,record:ref,at:z.iso.datetime()}).strict(),
   z.object({type:z.literal('close'),record:ref,at:z.iso.datetime()}).strict(),
   z.object({type:z.literal('retry-internal'),stage:z.enum(['discovery','editorial','creative','production']),record:ref,at:z.iso.datetime()}).strict(),
@@ -159,7 +160,19 @@ export type CycleEvent=z.infer<typeof eventSchema>;
 export const transitionCycle = (input: Cycle, eventInput: unknown, registry: MediaRegistry, root = process.cwd()): Cycle => {
   const cycle=validateCycle(input,registry,root); const event=eventSchema.parse(eventInput); const next=structuredClone(cycle);
   readBoundRecord(event.record,root);
-  if(event.type==='escalate') {
+  if(event.type==='select-preserved-master') {
+    if(cycle.exception||cycle.workInProgress||cycle.publicationDecision||!['master-review','presentation','publication-review'].includes(cycle.stage)||cycle.observations.some(o=>['scheduled-owner-reported','published'].includes(o.kind)))throw new Error('Preserved-master selection requires an inactive, unpublished review boundary');
+    const selection=z.object({cycleId:text,previousCandidate:ref,previousRelease:ref.nullable(),candidate:ref,creative:ref,decision:ref,reason:text}).strict().parse(readBoundRecord(event.record,root));
+    if(selection.cycleId!==cycle.id||sha256Json(selection.previousCandidate)!==sha256Json(cycle.candidate)||sha256Json(selection.previousRelease)!==sha256Json(cycle.release))throw new Error('Preserved-master selection must bind current candidate and release');
+    const production=cycle.history.filter(h=>h.event==='production'&&sha256Json(h.evidence)===sha256Json(selection.candidate)).at(-1);
+    const creative=production&&cycle.history.filter(h=>h.event==='creative'&&h.revision<production.revision).at(-1);
+    if(!production||!creative||sha256Json(creative.evidence)!==sha256Json(selection.creative))throw new Error('Selection requires a journal-proven candidate and its original creative receipt');
+    const decision=requireOwnerDecision(selection.decision,cycle.id,'master-review',readBoundRecord(selection.candidate,root),root);
+    if(decision.decision!=='approve'||decision.lifecycle==='superseded'||(decision.validUntil&&event.at>decision.validUntil)||event.at<decision.enteredAt)throw new Error('Preserved-master selection requires valid exact owner approval');
+    next.receipts=[...cycle.receipts.filter(r=>!['creative','production','presentation'].includes(r.stage)),{stage:'creative',record:selection.creative},{stage:'production',record:selection.candidate}];
+    next.candidate=selection.candidate;next.masterDecision=selection.decision;next.release=null;next.publicationDecision=null;next.stage='presentation';
+    validateCandidateReceipt(next,selection.candidate,registry,root);
+  } else if(event.type==='escalate') {
     if(cycle.exception) throw new Error('An exceptional decision is already pending');
     const scope=z.object({cycleId:text.optional()}).passthrough().parse(readBoundRecord(event.record,root));
     if(scope.cycleId){if(scope.cycleId!==cycle.id)throw new Error('Exception scope belongs to another cycle');}

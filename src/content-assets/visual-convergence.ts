@@ -46,6 +46,10 @@ export const recentApprovedVisualWorks=(at:string,excludeAssetId:string,root=pro
    if(previous&&event.previousSha256!==previous)throw new Error('Recent approved cycle journal chain drift');
    previous=event.nextSha256;
    if(event.event.type==='owner-decision'&&sha256Json(event.event.record)===sha256Json(state.masterDecision))approvalJournaled=true;
+   if(event.event.type==='select-preserved-master'){
+    const selected=z.object({cycleId:z.string(),candidate:recordReferenceSchema,creative:recordReferenceSchema,decision:recordReferenceSchema}).passthrough().parse(readBoundRecord(event.event.record,root));
+    if(selected.cycleId===state.id&&sha256Json(selected.candidate)===sha256Json(state.candidate)&&sha256Json(selected.decision)===sha256Json(state.masterDecision)&&sha256Json(selected.creative)===sha256Json(state.receipts.filter(r=>r.stage==='creative').at(-1)?.record))approvalJournaled=true;
+   }
   }
   if(!approvalJournaled||previous!==sha256Json(state))throw new Error('Recent approval must bind the independent cycle journal');
   const direction=state.receipts.filter(r=>r.stage==='creative').at(-1)?.record;
