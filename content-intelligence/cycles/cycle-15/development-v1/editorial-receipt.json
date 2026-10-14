@@ -1,0 +1,1648 @@
+{
+  "draftPackage": {
+    "id": "flytrap-touch-memory",
+    "revision": 1,
+    "topic": "Venus flytrap fading touch memory",
+    "centralQuestion": "How can a Venus flytrap retain information about a recent touch without a brain or nervous system?",
+    "taxonomy": {
+      "pillar": "earth-nature",
+      "domains": [
+        "plant-physiology",
+        "biology",
+        "signal-integration"
+      ],
+      "topics": [
+        "venus-flytrap",
+        "calcium-signaling",
+        "short-term-biochemical-memory"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "A brief stimulus can leave a temporary calcium response that decays and interacts with subsequent stimulation; this supplies a form of biological short-term memory without conscious recollection.",
+    "viewerPayoff": "Explain how a past stimulus can alter a later trap response through a fading biochemical state, while distinguishing physical movements, electrical signals and calcium changes.",
+    "sources": [
+      {
+        "id": "source.flytrap-touch-memory.suda-primary",
+        "organization": "Suda et al. / Nature Plants; public third-party typeset copy",
+        "title": "Calcium dynamics during trap closure visualized in transgenic Venus flytrap",
+        "sourceType": "peer-reviewed",
+        "url": "https://im7.freeforumzone.it/up/72/65/1608312795.pdf",
+        "retrieved": "2026-10-14",
+        "identifiers": [
+          {
+            "scheme": "DOI",
+            "value": "10.1038/s41477-020-00773-1"
+          }
+        ],
+        "notes": "Primary 2020 paper identified by DOI/title/authors and corroborated with author-group abstract and institutional report. Accessed through public third-party mirror; typeset copy has a publication-date placeholder, so not asserted byte-identical to the final publisher version. Direct Nature body/PDF inaccessible; screenshot retrieval failed. Statistical thresholds use normalized reporter fluorescence and probabilities, not an absolute universal ion concentration. Authors call for further causal investigation. Main text/method sections inspected, not all 18 pages or supplementary movies/data."
+      },
+      {
+        "id": "source.flytrap-touch-memory.suda-author-abstract",
+        "organization": "Suda et al. / Constrained & Directional Evolution research newsletter",
+        "title": "Author-group republication of the calcium-dynamics abstract",
+        "sourceType": "primary-source",
+        "url": "https://www.constrained-evo.shigenobulab.org/docs/CDENewsVol4NoS5s.pdf",
+        "retrieved": "2026-10-14",
+        "identifiers": [
+          {
+            "scheme": "DOI",
+            "value": "10.1038/s41477-020-00773-1"
+          }
+        ],
+        "notes": "Primary abstract republished by the research-group newsletter; confirms same work, not independent replication or full paper access. Republication omits usually in two-stimulus sentence; do not import that absolute wording. PDF screenshot retrieval failed; extracted English abstract inspected."
+      },
+      {
+        "id": "source.flytrap-touch-memory.burri-primary",
+        "organization": "Burri et al. / PLOS Biology",
+        "title": "A single touch can provide sufficient mechanical stimulation to trigger Venus flytrap closure",
+        "sourceType": "peer-reviewed",
+        "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000740",
+        "retrieved": "2026-10-14",
+        "identifiers": [
+          {
+            "scheme": "DOI",
+            "value": "10.1371/journal.pbio.3000740"
+          }
+        ],
+        "notes": "Peer-reviewed primary experiments with controlled sensory-hair movement and electrical recording. One deflection includes bending and return, not a stationary bend. Intermediate angular velocities can elicit two APs; very small/slow/fast movements do not all do so. No raw-data or source-video review and no new plant experiment."
+      },
+      {
+        "id": "source.flytrap-touch-memory.hedrich-review",
+        "organization": "Hedrich and Kreuzer / New Phytologist",
+        "title": "Demystifying the Venus flytrap action potential",
+        "sourceType": "peer-reviewed",
+        "url": "https://doi.org/10.1111/nph.19113",
+        "retrieved": "2026-10-14",
+        "identifiers": [
+          {
+            "scheme": "DOI",
+            "value": "10.1111/nph.19113"
+          }
+        ],
+        "notes": "Peer-reviewed 2023 review, not independent primary replication. Useful integration/timing context; review20-second summary differs from Suda fitted approximately30-second relation. Its older hydraulic mechanical account must not become the proposed motor explanation after the inspected2026 primary abstract."
+      },
+      {
+        "id": "source.flytrap-touch-memory.nibb",
+        "organization": "National Institute for Basic Biology",
+        "title": "Memory of the Venus flytrap",
+        "sourceType": "scientific-organization",
+        "url": "https://www.nibb.ac.jp/en/pressroom/news/2020/10/06.html",
+        "retrieved": "2026-10-14",
+        "notes": "Research-team account clarifies biological information without a nervous system and engineered fluorescence. Same underlying2020study, not independent replication; simplified absolute two-touch phrasing is qualified by PLOS and original paper."
+      },
+      {
+        "id": "source.flytrap-touch-memory.ryu-primary-abstract",
+        "organization": "Ryu et al. / Science; primary abstract via PubMed",
+        "title": "Fast cell wall softening causes Venus flytrap closure",
+        "sourceType": "peer-reviewed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42275490/",
+        "retrieved": "2026-10-14",
+        "identifiers": [
+          {
+            "scheme": "DOI",
+            "value": "10.1126/science.aed5051"
+          }
+        ],
+        "notes": "Primary2026abstract reports in situ mechanical/hydraulic measurements and rapid wall softening rather than water transport as driver. Abstract-only; full Science/HAL attempts failed. Used to avoid outdated mechanical assertions, not to claim complete calcium-to-wall causal resolution or introduce a new premise."
+      }
+    ],
+    "claims": [
+      {
+        "id": "flytrap-touch-memory.claim.brain-free",
+        "statement": "The Venus flytrap has no brain or nervous system, although its tissues can generate electrical and calcium signals.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "notes": "Electrical excitability is not an animal nervous system; no claim about plant subjective experience. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "Electrical excitability is not an animal nervous system; no claim about plant subjective experience. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Electrical excitability is not an animal nervous system; no claim about plant subjective experience."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.functional-memory",
+        "statement": "In this story, short-term memory means that a temporary biochemical state retains information about recent stimulation and can affect a later response; it is not conscious recollection.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Functional interpretation of observed signal persistence and timing; not proof of consciousness or the absence of all other information-storage mechanisms. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "notes": "Functional interpretation of observed signal persistence and timing; not proof of consciousness or the absence of all other information-storage mechanisms. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Functional interpretation of observed signal persistence and timing; not proof of consciousness or the absence of all other information-storage mechanisms."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.hair-signal",
+        "statement": "A sufficiently effective sensory-hair deflection can generate an action potential that propagates through the trap.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "notes": "A contact is not always anAP; amplitude and movement speed matter. No axons or neuronal network implied. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "A contact is not always anAP; amplitude and movement speed matter. No axons or neuronal network implied. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "A contact is not always anAP; amplitude and movement speed matter. No axons or neuronal network implied."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.first-open",
+        "statement": "In the tested brief-deflection regime, one action potential can occur while the trap remains open; a single AP was insufficient to cause the rapid closing response.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "notes": "Conditional tested regime, not every first physical touch or every possible activation method. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Conditional tested regime, not every first physical touch or every possible activation method."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.calcium-rise",
+        "statement": "In transgenic calcium-reporter experiments, sensory-hair stimulation raised cytosolic calcium-associated fluorescence, starting near the hair and spreading into leaf tissue.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Fluorescent proxy and measured tissue regions; no literal calcium light or precise localization to all cells. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "notes": "Fluorescent proxy and measured tissue regions; no literal calcium light or precise localization to all cells. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Fluorescent proxy and measured tissue regions; no literal calcium light or precise localization to all cells."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.signal-distinction",
+        "statement": "Electrical excitation and cytosolic calcium changes are coupled components of the trap response; the narration distinguishes them and describes the calcium rise as accompanying the signal.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Does not settle exact causal order or propagation speeds.2020paper noted setup-dependent distinctions;2023review discusses co-propagation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "Does not settle exact causal order or propagation speeds.2020paper noted setup-dependent distinctions;2023review discusses co-propagation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Does not settle exact causal order or propagation speeds.2020paper noted setup-dependent distinctions;2023review discusses co-propagation."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.decay",
+        "statement": "After the first stimulus, the calcium-reporter response rose and then gradually declined in the measured leaf regions.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "The2020paper fit two-phase exponential decay; qualitative tint is not a linear or exact fit. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "notes": "The2020paper fit two-phase exponential decay; qualitative tint is not a linear or exact fit. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "The2020paper fit two-phase exponential decay; qualitative tint is not a linear or exact fit."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.residual",
+        "statement": "The residual calcium-reporter signal before a second stimulus was significantly associated with whether the leaf closed in the2020experiments.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Residual state correlates with response, not an independently isolated sole memory molecule. Fig3d/e decay observations used6leaves from2plants. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Residual state correlates with response, not an independently isolated sole memory molecule. Fig3d/e decay observations used6leaves from2plants."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.summation",
+        "statement": "A second sufficiently nearby stimulus raised the calcium-reporter response above the first response in the tested leaf regions, consistent with accumulation of recent signals.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "notes": "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.closure-threshold",
+        "statement": "The2020study supports a putative calcium-response threshold associated with trap closure; a sufficiently elevated response can accompany snapping shut.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Thresholds inferred from relative reporter intensity and closure probabilities. Region dependence, reporter saturation and rapid movement limit measurement. No universal scalar cutoff, sole-cause claim or guarantee from calcium level alone. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "Thresholds inferred from relative reporter intensity and closure probabilities. Region dependence, reporter saturation and rapid movement limit measurement. No universal scalar cutoff, sole-cause claim or guarantee from calcium level alone. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Thresholds inferred from relative reporter intensity and closure probabilities. Region dependence, reporter saturation and rapid movement limit measurement. No universal scalar cutoff, sole-cause claim or guarantee from calcium level alone."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.delay",
+        "statement": "As the earlier calcium response decays, a later stimulus may fail to elevate the response enough for closure; timing therefore changes the outcome.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Conditional response, not a hard30-second boundary; full causal bridge to mechanical motion remains outside this explanation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "notes": "Conditional response, not a hard30-second boundary; full causal bridge to mechanical motion remains outside this explanation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Conditional response, not a hard30-second boundary; full causal bridge to mechanical motion remains outside this explanation."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.single-movement",
+        "statement": "One suitably slower sensory-hair deflection can generate two action potentials, either during bending or during bending and return, and trigger trap closure.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "notes": "Intermediate tested angular velocity, not all slow movements. Holding the hair motionless is distinct and was not sufficient in tested static-displacement trials. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Intermediate tested angular velocity, not all slow movements. Holding the hair motionless is distinct and was not sufficient in tested static-displacement trials."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.reporter",
+        "statement": "The study visualized calcium dynamics using transgenicGCaMP6f and fluorescence microscopy; the depicted calcium tint in the proposed film is an explanatory visualization.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "No naturally glowing plant or raw-measurement authenticity implied. Methods also describe pseudocoloring. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "notes": "No naturally glowing plant or raw-measurement authenticity implied. Methods also describe pseudocoloring. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "No naturally glowing plant or raw-measurement authenticity implied. Methods also describe pseudocoloring."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.hair-layout",
+        "statement": "A typical trap has six inner sensory hairs, three on each lobe; these are distinct from the marginal cilia.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "notes": "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.timing-fit",
+        "statement": "Suda et al. reported a fitted50-percent-closure duration of30.88seconds, with95-percentconfidence interval21.4–45.42seconds, in a30-observation logistic analysis.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "A fitted association with reported experimental conditioning, not every plant’s memory lifetime. Unselected numerical detail; Table1text/caption inspected, screenshot unavailable. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "A fitted association with reported experimental conditioning, not every plant’s memory lifetime. Unselected numerical detail; Table1text/caption inspected, screenshot unavailable."
+        ],
+        "type": "quantitative",
+        "quantity": {
+          "kind": "scalar",
+          "value": 30.88,
+          "unit": "seconds",
+          "precision": "approximate"
+        },
+        "basis": "estimated",
+        "display": "30.88 s fitted 50% closure duration"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.review-timing",
+        "statement": "The2023New Phytologist review summarizes the first-AP memory as approximately20seconds.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "Review summary differs from2020fitted~30secondrelationship. Do not manufacture a measured20–30secondrange or average. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Review summary differs from2020fitted~30secondrelationship. Do not manufacture a measured20–30secondrange or average."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.mechanics-update",
+        "statement": "A2026primary study reports epidermal cell-wall softening rather than water transport as the rapid mechanical driver releasing stored elastic energy.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.ryu-primary-abstract",
+            "locator": "June11,2026 bibliographic record and original primary abstract; extracted lines177–191 and239–241.",
+            "notes": "Original abstract inspected, fulltext inaccessible. Scientific result attributed to that study, not independently reanalyzed; not selected for the memory narration. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/ryu-primary-abstract-inspection.json SHA256 1c354daa34d4c173917619f1697fe6b98f005fe760d89be0a42a5017420d85c4."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Original abstract inspected, fulltext inaccessible. Scientific result attributed to that study, not independently reanalyzed; not selected for the memory narration."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.identifiable-memory-cell",
+        "statement": "The2020study localized all relevant calcium memory to one identifiable cell type.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Unresolved/excluded from visuals: authors could not localize fluorescence to specific deep intact cells. No named memorycell. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Unresolved/excluded from visuals: authors could not localize fluorescence to specific deep intact cells. No named memorycell."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.exactly-two-touches",
+        "statement": "Exactly two separate physical touches are universally required to close a Venus flytrap.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "notes": "False shortcut; movement/APmapping depends on amplitude/speed and a singledeflectioncan2APs. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "False shortcut; movement/APmapping depends on amplitude/speed and a singledeflectioncan2APs."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.fixed-timer",
+        "statement": "Every flytrap completely erases its memory at exactly30seconds.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Unsupported universal/digital reset; source statistics and differing summaries exclude it. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "Unsupported universal/digital reset; source statistics and differing summaries exclude it. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Unsupported universal/digital reset; source statistics and differing summaries exclude it."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.every-touch",
+        "statement": "Every physical touch produces exactly one electrical signal.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "notes": "False: noAP,oneAPor2APs can occur under different movement conditions. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "False: noAP,oneAPor2APs can occur under different movement conditions."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.natural-glow",
+        "statement": "Calcium signaling naturally produces naked-eye glowing light in ordinary flytrap leaves.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Engineered reporter and imaging light, not intrinsic bioluminescence. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "notes": "Engineered reporter and imaging light, not intrinsic bioluminescence. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Engineered reporter and imaging light, not intrinsic bioluminescence."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.conscious-math",
+        "statement": "The reported signal integration proves that Venus flytraps consciously remember and perform arithmetic.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Data establish biochemical responses, not conscious recollection or numerical concepts. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "notes": "Data establish biochemical responses, not conscious recollection or numerical concepts. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Data establish biochemical responses, not conscious recollection or numerical concepts."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.static-hold",
+        "statement": "Keeping a hair bent motionlessly for30seconds necessarily produces twoAPs and closure.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "notes": "Tested static-displacementtrials n11 did not close; slowmovingdeflectionis different. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Tested static-displacementtrials n11 did not close; slowmovingdeflectionis different."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.settled-hydraulics",
+        "statement": "Rapid water transport is the settled demonstrated motor mechanism behind the snap in this story.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "notes": "Older explanatory model is challenged by2026primaryabstract; do not animate rapid pumping as established. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.ryu-primary-abstract",
+            "locator": "June11,2026 bibliographic record and original primary abstract; extracted lines177–191 and239–241.",
+            "notes": "Older explanatory model is challenged by2026primaryabstract; do not animate rapid pumping as established. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/ryu-primary-abstract-inspection.json SHA256 1c354daa34d4c173917619f1697fe6b98f005fe760d89be0a42a5017420d85c4."
+          }
+        ],
+        "verificationStatus": "unverified",
+        "caveats": [
+          "Older explanatory model is challenged by2026primaryabstract; do not animate rapid pumping as established."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.absolute-threshold",
+        "statement": "A single absolute calcium concentration universally guarantees closure in all flytrap cells and specimens.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "No sufficient calibration, universal celllocalization or probability-one threshold in inspected evidence. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          }
+        ],
+        "verificationStatus": "uncertain",
+        "caveats": [
+          "No sufficient calibration, universal celllocalization or probability-one threshold in inspected evidence."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "flytrap-touch-memory.claim.molecular-bridge",
+        "statement": "The full molecular pathway from calcium/electrical signaling to mechanical wall softening is completely resolved by the inspected studies.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "notes": "Memoryintegration explanation does not claim a full mechanical causal chain; no direct bridge verified here. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1."
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.ryu-primary-abstract",
+            "locator": "June11,2026 bibliographic record and original primary abstract; extracted lines177–191 and239–241.",
+            "notes": "Memoryintegration explanation does not claim a full mechanical causal chain; no direct bridge verified here. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/ryu-primary-abstract-inspection.json SHA256 1c354daa34d4c173917619f1697fe6b98f005fe760d89be0a42a5017420d85c4."
+          }
+        ],
+        "verificationStatus": "uncertain",
+        "caveats": [
+          "Memoryintegration explanation does not claim a full mechanical causal chain; no direct bridge verified here."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "flytrap-touch-memory.caveat.scope",
+        "statement": "Conditional signal integration in tested flytrap tissue, not a universal touch count, exact timer, calibrated absolute calcium cutoff, naturally visible glow or proof of consciousness. Main calcium paper accessed as a public typeset mirror with explicit version/access limits; no raw-data reanalysis or full mechanical pathway claim.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.functional-memory",
+          "flytrap-touch-memory.claim.hair-signal",
+          "flytrap-touch-memory.claim.first-open",
+          "flytrap-touch-memory.claim.calcium-rise",
+          "flytrap-touch-memory.claim.signal-distinction",
+          "flytrap-touch-memory.claim.decay",
+          "flytrap-touch-memory.claim.residual",
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold",
+          "flytrap-touch-memory.claim.delay",
+          "flytrap-touch-memory.claim.single-movement",
+          "flytrap-touch-memory.claim.reporter",
+          "flytrap-touch-memory.claim.hair-layout"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "flytrap-touch-memory.hook.brain-free-memory",
+        "archetype": "extraordinary-biological-capability",
+        "text": "A Venus flytrap has no brain. Yet a touch can leave a fading memory.",
+        "viewerPromise": "Understand a fading biochemical state that retains recent stimulation without a brain.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.functional-memory"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.hook.timing",
+        "archetype": "temporal-outcome-comparison",
+        "text": "The same hair movement can close this trap—or leave it open. What changes is how recently it was stimulated.",
+        "viewerPromise": "Understand why closely spaced and delayed stimulation can produce different outcomes.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.delay",
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "flytrap-touch-memory.narrative.trace",
+        "title": "Follow the trace left by a touch",
+        "description": "Living hair movement, internal response and decay, close versus delayed next signal, correction of literal two-touch counting, functional memory payoff.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.functional-memory",
+          "flytrap-touch-memory.claim.hair-signal",
+          "flytrap-touch-memory.claim.first-open",
+          "flytrap-touch-memory.claim.calcium-rise",
+          "flytrap-touch-memory.claim.signal-distinction",
+          "flytrap-touch-memory.claim.decay",
+          "flytrap-touch-memory.claim.residual",
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold",
+          "flytrap-touch-memory.claim.delay",
+          "flytrap-touch-memory.claim.single-movement",
+          "flytrap-touch-memory.claim.reporter",
+          "flytrap-touch-memory.claim.hair-layout"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "flytrap-touch-memory.visual.living-trace",
+        "title": "From macro observation into a transient state",
+        "description": "Original living-looking macro scene and spatially connected qualitative tissue cutaway, with explicit illustration/time-compression provenance; no dashboard or implied natural fluorescence.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.functional-memory",
+          "flytrap-touch-memory.claim.hair-signal",
+          "flytrap-touch-memory.claim.first-open",
+          "flytrap-touch-memory.claim.calcium-rise",
+          "flytrap-touch-memory.claim.signal-distinction",
+          "flytrap-touch-memory.claim.decay",
+          "flytrap-touch-memory.claim.residual",
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold",
+          "flytrap-touch-memory.claim.delay",
+          "flytrap-touch-memory.claim.single-movement",
+          "flytrap-touch-memory.claim.reporter",
+          "flytrap-touch-memory.claim.hair-layout"
+        ]
+      }
+    ],
+    "relatedQuestions": [
+      "How does the trap convert signaling into mechanical motion?",
+      "How does subsequent signaling initiate digestion?"
+    ],
+    "followUpOpportunities": [],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "flytrap-touch-memory.asset.fading-trace",
+    "revision": 1,
+    "knowledgePackageId": "flytrap-touch-memory",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Explain how a past stimulus can alter a later trap response through a fading biochemical state, while distinguishing physical movements, electrical signals and calcium changes.",
+    "storyAngle": "A living trap retains a short history in a transient biochemical response; timing determines what a later signal can build on.",
+    "hookId": "flytrap-touch-memory.hook.brain-free-memory",
+    "selectedClaimIds": [
+      "flytrap-touch-memory.claim.brain-free",
+      "flytrap-touch-memory.claim.functional-memory",
+      "flytrap-touch-memory.claim.hair-signal",
+      "flytrap-touch-memory.claim.first-open",
+      "flytrap-touch-memory.claim.calcium-rise",
+      "flytrap-touch-memory.claim.signal-distinction",
+      "flytrap-touch-memory.claim.decay",
+      "flytrap-touch-memory.claim.residual",
+      "flytrap-touch-memory.claim.summation",
+      "flytrap-touch-memory.claim.closure-threshold",
+      "flytrap-touch-memory.claim.delay",
+      "flytrap-touch-memory.claim.single-movement",
+      "flytrap-touch-memory.claim.reporter",
+      "flytrap-touch-memory.claim.hair-layout"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 47.5,
+      "maximum": 56
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.1",
+          "type": "factual",
+          "text": "A Venus flytrap has no brain. Yet a touch can leave a fading memory.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.brain-free",
+            "flytrap-touch-memory.claim.functional-memory"
+          ]
+        },
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.2",
+          "type": "factual",
+          "text": "A brief bend of a sensitive hair can send an electrical signal through the trap while it stays open.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.hair-signal",
+            "flytrap-touch-memory.claim.first-open"
+          ]
+        },
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.3",
+          "type": "factual",
+          "text": "Alongside that signal, calcium rises inside the leaf’s cells.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.calcium-rise",
+            "flytrap-touch-memory.claim.signal-distinction"
+          ]
+        },
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.4",
+          "type": "factual",
+          "text": "Then the calcium level falls. For a short time, part of that change remains.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.decay",
+            "flytrap-touch-memory.claim.residual"
+          ]
+        },
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.5",
+          "type": "factual",
+          "text": "Another signal arriving soon enough raises the level further. If it reaches the level needed for closure, the trap can snap shut.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.summation",
+            "flytrap-touch-memory.claim.closure-threshold"
+          ]
+        },
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.6",
+          "type": "factual",
+          "text": "Wait too long, and the next signal may no longer reach that level.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.delay"
+          ]
+        },
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.7",
+          "type": "factual",
+          "text": "Two signals don’t always mean two touches: one slower hair movement can produce both.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.single-movement"
+          ]
+        },
+        {
+          "id": "flytrap-touch-memory.asset.fading-trace.script.8",
+          "type": "factual",
+          "text": "Here, memory means retained information—a fading chemical state, not conscious recollection.",
+          "claimIds": [
+            "flytrap-touch-memory.claim.functional-memory"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.1",
+        "label": "A living trap, already active",
+        "purpose": "Memory can exist without a brain in a specific physiological sense.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.1"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.2",
+        "label": "One brief stimulus, trap still open",
+        "purpose": "External movement and internal signaling differ.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.2"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.3",
+        "label": "The invisible response",
+        "purpose": "Calcium concentration changes inside cells as the trap is excited.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.3"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.4",
+        "label": "A trace that fades",
+        "purpose": "The retained state is temporary information about the earlier signal.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.4"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.5",
+        "label": "A nearby signal builds on what remains",
+        "purpose": "Temporal accumulation can take a response into the closure-associated regime.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.5"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.6",
+        "label": "Longer waiting changes the outcome",
+        "purpose": "Timing changes how much residual state the next signal can build on.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.6"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.7",
+        "label": "Signals are not touches",
+        "purpose": "A physical movement is not the unit being integrated.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.7"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.beat.8",
+        "label": "The memory is the trace",
+        "purpose": "A past event persists as chemistry and can affect the next response.",
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.8"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.1",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.1",
+        "objective": "Memory can exist without a brain in a specific physiological sense.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.1"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.functional-memory",
+          "flytrap-touch-memory.claim.hair-layout"
+        ],
+        "notes": "Extreme macro of an open living-looking trap: inner lobe texture and a tiny moving subject or clearly identified illustrative probe. A hair begins bending while the opening names the plant and memory; no title card. Original illustrative biological scene, not unstated laboratory footage. Six trigger hairs across two lobes; larger marginal cilia are not trigger hairs. No natural visible calcium light. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.2",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.2",
+        "objective": "External movement and internal signaling differ.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.2"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.hair-signal",
+          "flytrap-touch-memory.claim.first-open",
+          "flytrap-touch-memory.claim.hair-layout"
+        ],
+        "notes": "Camera approaches one inner trigger hair, follows its brief deflection at the base, then reveals the open lobes. Choose an illustrative above-signal-threshold single-AP example; the probe/insect does not keep touching other hairs. The chosen brief movement is one possible response, not proof that every first physical touch creates exactly oneAP. No animal-neuron cables or lightning. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.3",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.3",
+        "objective": "Calcium concentration changes inside cells as the trap is excited.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.3"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.calcium-rise",
+          "flytrap-touch-memory.claim.signal-distinction",
+          "flytrap-touch-memory.claim.reporter"
+        ],
+        "notes": "A matched move from the hair base into a simplified tissue cutaway. A short electrical-signal cue is accompanied by a spreading calcium-activity tint in leaf tissue. Warm signal tint against natural greens; label it calcium activity • illustration throughout. Tint is qualitative relative activity, not emitted light, measured cells, moving calcium fluid, or a universal route via veins. Do not claim an exact AP/Ca propagation-speed relation. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.4",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.4",
+        "objective": "The retained state is temporary information about the earlier signal.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.4"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.decay",
+          "flytrap-touch-memory.claim.residual",
+          "flytrap-touch-memory.claim.reporter"
+        ],
+        "notes": "The moving signal cue passes; calcium tint remains and gradually weakens. A restrained time-compressed dissolve shows waiting without a stopwatch. Do not instantly zero the trace. Decay has no fixed linear slope or30-second reset. Time compression and qualitative illustration are disclosed. Representative tissue, not a single identified memory cell. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.5",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.5",
+        "objective": "Temporal accumulation can take a response into the closure-associated regime.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.5"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold",
+          "flytrap-touch-memory.claim.reporter"
+        ],
+        "notes": "In the close-spacing example, another distinct electrical cue accompanies an increase on the remaining calcium tint. The tissue becomes more active; camera returns to the whole trap for a convincing snap. Keep a short level linked to closure cue if needed, with no numeric chart. Separate electrical events; model threshold is qualitative/probabilistic. Show one plausible closing example, not guaranteed closure for all plants or a mapped mechanical motor. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.6",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.6",
+        "objective": "Timing changes how much residual state the next signal can build on.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.6"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.delay",
+          "flytrap-touch-memory.claim.reporter"
+        ],
+        "notes": "Cut clearly to a separate illustrative trial with a wider view. First response fades more; a later signal produces another rise that remains too low for closure in this example. The trap stays open. A compact separate example • time compressed cue prevents apparent instant reopening. Do not reverse a snapped trap to reopen immediately or imply a complete reset at exactly30s. No universal delay cutoff; no new claim about reopening time. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.7",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.7",
+        "objective": "A physical movement is not the unit being integrated.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.7"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.single-movement"
+        ],
+        "notes": "Extreme hair-base view in another clearly separate trial: one slower bend-and-return movement accompanies two distinct signal cues and a plausible closing response. Event cues remain visible briefly, without a dense calcium/AP chart. Slow movement within tested triggering conditions, not stationary holding. Both APs may occur on bending or on bending plus return; select the latter documented case. No claim each contact always gives twoAPs. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.visual.8",
+        "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.8",
+        "objective": "A past event persists as chemistry and can affect the next response.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+          "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+        ],
+        "scriptSegmentIds": [
+          "flytrap-touch-memory.asset.fading-trace.script.8"
+        ],
+        "claimIds": [
+          "flytrap-touch-memory.claim.functional-memory"
+        ],
+        "notes": "Return to natural light and the original open-trap illustrative trial after the first signal; briefly reveal its residual chemical state, then settle on the living leaf with biochemical memory as the only optional concluding label. No unmarked reopening or reset, no engagement outro. A clearly signaled return to the earlier example, not continuity from a freshly snapped trap. Memory is defined functionally and does not establish conscious experience. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Current Kokoro af_heart; warm, observant, curious first sentence and lucid midsection. Pause slightly for the fading trace and the single-movement exception; avoid horror, plant consciousness theatrics or clinical lecture cadence. No audio generated.",
+      "pronunciationNotes": [
+        "Say calcium naturally; action potential jargon is deliberately replaced by electrical signal.",
+        "Keep two signals and two touches distinct in spoken emphasis.",
+        "Actual audio listening and cue timing remain downstream of further authorization."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.15",
+    "topicCandidateId": "topic.cycle15.flytrap",
+    "enteredAt": "2026-10-14T13:04:06.503Z",
+    "reviewer": "Codex internal V3 source/evidence editorial review; not Ahmet script, creative or master approval",
+    "premiseAlignment": {
+      "selectionSha256": "9f80edc36a770075590493d81a80bcd0def9a871872ef58bbeb9e93abc4f3e7d",
+      "preservesPublishingOpportunity": true,
+      "rationale": "The exact approved fascination survives primary inspection: transient calcium-related state, stimulus timing and subsequent responses explain short-term information retention without a brain. Full primary text strengthens scope limits; slower movement replaces ambiguous sustained wording, no fixed timer or complete mechanical pathway promised. These are scientific/comprehension refinements within the approved premise, not a new consciousness or biomechanics story."
+    },
+    "packageSha256": "1b0e0a7e37ed7d4697cfe5a51d23885712e42cc120640fefe9550f5ee247867d",
+    "assetSha256": "111941a105c4eb9de1b15e7e885ffd8706c3c13b9436ffac2af0027161ef676e",
+    "scriptSha256": "029ab1010bef6553e6f2e95957376f0191054be34b81cb30d51b778ac5afda86",
+    "inspections": [
+      {
+        "sourceId": "source.flytrap-touch-memory.suda-primary",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508."
+        ],
+        "supportsClaimIds": [
+          "flytrap-touch-memory.claim.functional-memory",
+          "flytrap-touch-memory.claim.hair-signal",
+          "flytrap-touch-memory.claim.calcium-rise",
+          "flytrap-touch-memory.claim.signal-distinction",
+          "flytrap-touch-memory.claim.decay",
+          "flytrap-touch-memory.claim.residual",
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold",
+          "flytrap-touch-memory.claim.delay",
+          "flytrap-touch-memory.claim.reporter",
+          "flytrap-touch-memory.claim.hair-layout",
+          "flytrap-touch-memory.claim.timing-fit"
+        ],
+        "limitations": [
+          "Primary 2020 paper identified by DOI/title/authors and corroborated with author-group abstract and institutional report. Accessed through public third-party mirror; typeset copy has a publication-date placeholder, so not asserted byte-identical to the final publisher version. Direct Nature body/PDF inaccessible; screenshot retrieval failed. Statistical thresholds use normalized reporter fluorescence and probabilities, not an absolute universal ion concentration. Authors call for further causal investigation. Main text/method sections inspected, not all 18 pages or supplementary movies/data.",
+          "Actual extracted sections inspected; unavailable source screenshots/movies/raw data are not silently supplied."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json",
+          "sha256": "fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1"
+        },
+        "sourceQualityRationale": "Primary 2020 paper identified by DOI/title/authors and corroborated with author-group abstract and institutional report. Accessed through public third-party mirror; typeset copy has a publication-date placeholder, so not asserted byte-identical to the final publisher version. Direct Nature body/PDF inaccessible; screenshot retrieval failed. Statistical thresholds use normalized reporter fluorescence and probabilities, not an absolute universal ion concentration. Authors call for further causal investigation. Main text/method sections inspected, not all 18 pages or supplementary movies/data."
+      },
+      {
+        "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+        "accessStatus": "abstract-only",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity."
+        ],
+        "supportsClaimIds": [
+          "flytrap-touch-memory.claim.calcium-rise",
+          "flytrap-touch-memory.claim.decay",
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.delay"
+        ],
+        "limitations": [
+          "Primary abstract republished by the research-group newsletter; confirms same work, not independent replication or full paper access. Republication omits usually in two-stimulus sentence; do not import that absolute wording. PDF screenshot retrieval failed; extracted English abstract inspected.",
+          "Actual extracted sections inspected; unavailable source screenshots/movies/raw data are not silently supplied."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json",
+          "sha256": "ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35"
+        },
+        "sourceQualityRationale": "Primary abstract republished by the research-group newsletter; confirms same work, not independent replication or full paper access. Republication omits usually in two-stimulus sentence; do not import that absolute wording. PDF screenshot retrieval failed; extracted English abstract inspected."
+      },
+      {
+        "sourceId": "source.flytrap-touch-memory.burri-primary",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials."
+        ],
+        "supportsClaimIds": [
+          "flytrap-touch-memory.claim.hair-signal",
+          "flytrap-touch-memory.claim.first-open",
+          "flytrap-touch-memory.claim.single-movement",
+          "flytrap-touch-memory.claim.hair-layout"
+        ],
+        "limitations": [
+          "Peer-reviewed primary experiments with controlled sensory-hair movement and electrical recording. One deflection includes bending and return, not a stationary bend. Intermediate angular velocities can elicit two APs; very small/slow/fast movements do not all do so. No raw-data or source-video review and no new plant experiment.",
+          "Actual extracted sections inspected; unavailable source screenshots/movies/raw data are not silently supplied."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json",
+          "sha256": "67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b"
+        },
+        "sourceQualityRationale": "Peer-reviewed primary experiments with controlled sensory-hair movement and electrical recording. One deflection includes bending and return, not a stationary bend. Intermediate angular velocities can elicit two APs; very small/slow/fast movements do not all do so. No raw-data or source-video review and no new plant experiment."
+      },
+      {
+        "sourceId": "source.flytrap-touch-memory.hedrich-review",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account."
+        ],
+        "supportsClaimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.signal-distinction",
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold",
+          "flytrap-touch-memory.claim.hair-layout",
+          "flytrap-touch-memory.claim.review-timing"
+        ],
+        "limitations": [
+          "Peer-reviewed 2023 review, not independent primary replication. Useful integration/timing context; review20-second summary differs from Suda fitted approximately30-second relation. Its older hydraulic mechanical account must not become the proposed motor explanation after the inspected2026 primary abstract.",
+          "Actual extracted sections inspected; unavailable source screenshots/movies/raw data are not silently supplied."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json",
+          "sha256": "432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7"
+        },
+        "sourceQualityRationale": "Peer-reviewed 2023 review, not independent primary replication. Useful integration/timing context; review20-second summary differs from Suda fitted approximately30-second relation. Its older hydraulic mechanical account must not become the proposed motor explanation after the inspected2026 primary abstract."
+      },
+      {
+        "sourceId": "source.flytrap-touch-memory.nibb",
+        "accessStatus": "partially-inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory."
+        ],
+        "supportsClaimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.functional-memory",
+          "flytrap-touch-memory.claim.reporter"
+        ],
+        "limitations": [
+          "Research-team account clarifies biological information without a nervous system and engineered fluorescence. Same underlying2020study, not independent replication; simplified absolute two-touch phrasing is qualified by PLOS and original paper.",
+          "Actual extracted sections inspected; unavailable source screenshots/movies/raw data are not silently supplied."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json",
+          "sha256": "a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219"
+        },
+        "sourceQualityRationale": "Research-team account clarifies biological information without a nervous system and engineered fluorescence. Same underlying2020study, not independent replication; simplified absolute two-touch phrasing is qualified by PLOS and original paper."
+      },
+      {
+        "sourceId": "source.flytrap-touch-memory.ryu-primary-abstract",
+        "accessStatus": "abstract-only",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "June11,2026 bibliographic record and original primary abstract; extracted lines177–191 and239–241."
+        ],
+        "supportsClaimIds": [
+          "flytrap-touch-memory.claim.mechanics-update"
+        ],
+        "limitations": [
+          "Primary2026abstract reports in situ mechanical/hydraulic measurements and rapid wall softening rather than water transport as driver. Abstract-only; full Science/HAL attempts failed. Used to avoid outdated mechanical assertions, not to claim complete calcium-to-wall causal resolution or introduce a new premise.",
+          "Actual extracted sections inspected; unavailable source screenshots/movies/raw data are not silently supplied."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-15/development-v1/research/ryu-primary-abstract-inspection.json",
+          "sha256": "1c354daa34d4c173917619f1697fe6b98f005fe760d89be0a42a5017420d85c4"
+        },
+        "sourceQualityRationale": "Primary2026abstract reports in situ mechanical/hydraulic measurements and rapid wall softening rather than water transport as driver. Abstract-only; full Science/HAL attempts failed. Used to avoid outdated mechanical assertions, not to claim complete calcium-to-wall causal resolution or introduce a new premise."
+      }
+    ],
+    "claims": [
+      {
+        "id": "flytrap-touch-memory.claim.brain-free",
+        "statementSha256": "0f03e07e5e5903a5277a2416951a5bdca2899332d5f88d581683e8c03f8720ae",
+        "disposition": "verify",
+        "rationale": "Electrical excitability is not an animal nervous system; no claim about plant subjective experience.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "assessment": "Electrical excitability is not an animal nervous system; no claim about plant subjective experience. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "assessment": "Electrical excitability is not an animal nervous system; no claim about plant subjective experience. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.functional-memory",
+        "statementSha256": "0cdf791f62241f21f2a581d5f99470ad9a9f31f0e4980f8a4153d69e7ac8ece4",
+        "disposition": "verify",
+        "rationale": "Functional interpretation of observed signal persistence and timing; not proof of consciousness or the absence of all other information-storage mechanisms.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "Functional interpretation of observed signal persistence and timing; not proof of consciousness or the absence of all other information-storage mechanisms. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "assessment": "Functional interpretation of observed signal persistence and timing; not proof of consciousness or the absence of all other information-storage mechanisms. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.hair-signal",
+        "statementSha256": "b3a7caf98e44be806458e44ea23a2150160adec81ba0cf8af347f82988cb7c25",
+        "disposition": "verify",
+        "rationale": "A contact is not always anAP; amplitude and movement speed matter. No axons or neuronal network implied.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "assessment": "A contact is not always anAP; amplitude and movement speed matter. No axons or neuronal network implied. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "A contact is not always anAP; amplitude and movement speed matter. No axons or neuronal network implied. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.first-open",
+        "statementSha256": "4af7fb4ccf7badc253d543293444d1a5374d25cad59500a6f494d8444ae0ae14",
+        "disposition": "verify",
+        "rationale": "Conditional tested regime, not every first physical touch or every possible activation method.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "assessment": "Conditional tested regime, not every first physical touch or every possible activation method. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.calcium-rise",
+        "statementSha256": "38e30902a221e088ac22acd85ac5b51be752d09dc9394f38e8d4a0ce5ec60171",
+        "disposition": "verify",
+        "rationale": "Fluorescent proxy and measured tissue regions; no literal calcium light or precise localization to all cells.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "Fluorescent proxy and measured tissue regions; no literal calcium light or precise localization to all cells. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "assessment": "Fluorescent proxy and measured tissue regions; no literal calcium light or precise localization to all cells. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.signal-distinction",
+        "statementSha256": "5bec8ba9a8001239d3318891f7a7a8237c414203f2a28ed0820df03731badea5",
+        "disposition": "verify",
+        "rationale": "Does not settle exact causal order or propagation speeds.2020paper noted setup-dependent distinctions;2023review discusses co-propagation.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "Does not settle exact causal order or propagation speeds.2020paper noted setup-dependent distinctions;2023review discusses co-propagation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "assessment": "Does not settle exact causal order or propagation speeds.2020paper noted setup-dependent distinctions;2023review discusses co-propagation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.decay",
+        "statementSha256": "59b7a7d73b06dddf0273665acd0b569298a7ebc86bdb7d60119b106337cfff61",
+        "disposition": "verify",
+        "rationale": "The2020paper fit two-phase exponential decay; qualitative tint is not a linear or exact fit.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "The2020paper fit two-phase exponential decay; qualitative tint is not a linear or exact fit. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "assessment": "The2020paper fit two-phase exponential decay; qualitative tint is not a linear or exact fit. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.residual",
+        "statementSha256": "98d9cdb21e25b095bca595d97de0b51ae137e2d495587bdfc033e8a70382e938",
+        "disposition": "verify",
+        "rationale": "Residual state correlates with response, not an independently isolated sole memory molecule. Fig3d/e decay observations used6leaves from2plants.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "Residual state correlates with response, not an independently isolated sole memory molecule. Fig3d/e decay observations used6leaves from2plants. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.summation",
+        "statementSha256": "d16fc4715210c9f0f174a24372df6f50e0d67344ea6c750d9edfe0d508a3eb5f",
+        "disposition": "verify",
+        "rationale": "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "assessment": "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "assessment": "The addition is a biological response, not arithmetic of identical calcium packets or moving fluid. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.closure-threshold",
+        "statementSha256": "53c92ca836fd9c7614ae511f0f34feaa36c61f8a396aca773ab11e8e1d9e189e",
+        "disposition": "verify",
+        "rationale": "Thresholds inferred from relative reporter intensity and closure probabilities. Region dependence, reporter saturation and rapid movement limit measurement. No universal scalar cutoff, sole-cause claim or guarantee from calcium level alone.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "Thresholds inferred from relative reporter intensity and closure probabilities. Region dependence, reporter saturation and rapid movement limit measurement. No universal scalar cutoff, sole-cause claim or guarantee from calcium level alone. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "assessment": "Thresholds inferred from relative reporter intensity and closure probabilities. Region dependence, reporter saturation and rapid movement limit measurement. No universal scalar cutoff, sole-cause claim or guarantee from calcium level alone. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.delay",
+        "statementSha256": "7ff0972d0e8568fb931e341609249589f16d05f8603754bf8708e0a2a3e70630",
+        "disposition": "verify",
+        "rationale": "Conditional response, not a hard30-second boundary; full causal bridge to mechanical motion remains outside this explanation.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "Conditional response, not a hard30-second boundary; full causal bridge to mechanical motion remains outside this explanation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-author-abstract",
+            "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+            "assessment": "Conditional response, not a hard30-second boundary; full causal bridge to mechanical motion remains outside this explanation. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json SHA256 ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.single-movement",
+        "statementSha256": "0c99fe05be63ff61e9f2630f053930e8ff011a7aceefc67de4609d31b3eaf964",
+        "disposition": "verify",
+        "rationale": "Intermediate tested angular velocity, not all slow movements. Holding the hair motionless is distinct and was not sufficient in tested static-displacement trials.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "assessment": "Intermediate tested angular velocity, not all slow movements. Holding the hair motionless is distinct and was not sufficient in tested static-displacement trials. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.reporter",
+        "statementSha256": "733e144b6c4275b8dca9ffc0f590190e052e175af8db042599313223a341fbe1",
+        "disposition": "verify",
+        "rationale": "No naturally glowing plant or raw-measurement authenticity implied. Methods also describe pseudocoloring.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "No naturally glowing plant or raw-measurement authenticity implied. Methods also describe pseudocoloring. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.nibb",
+            "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+            "assessment": "No naturally glowing plant or raw-measurement authenticity implied. Methods also describe pseudocoloring. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json SHA256 a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.hair-layout",
+        "statementSha256": "fdc1d3e560df681cee8d3bda43f2baad68801bcb05242be5fe0a75c0b5e1a2b8",
+        "disposition": "verify",
+        "rationale": "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement.",
+        "evidence": [
+          {
+            "sourceId": "source.flytrap-touch-memory.suda-primary",
+            "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+            "assessment": "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json SHA256 fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.hedrich-review",
+            "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+            "assessment": "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json SHA256 432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7.",
+            "sufficientForWording": true
+          },
+          {
+            "sourceId": "source.flytrap-touch-memory.burri-primary",
+            "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+            "assessment": "Geometry must not confuse marginal teeth with trigger hairs; do not invent exact cell arrangement. Actual inspection: content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json SHA256 67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.timing-fit",
+        "statementSha256": "54450ff5b5420d9065d29b372604e9a5f3e6289cf5b6bcd673ac0381f6f8c957",
+        "disposition": "reserve",
+        "rationale": "A fitted association with reported experimental conditioning, not every plant’s memory lifetime. Unselected numerical detail; Table1text/caption inspected, screenshot unavailable.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.review-timing",
+        "statementSha256": "17e0b63c58f6fb022e48b427f1cb6ccd66fe9134fc5dc9e6dcc320ecd8f41480",
+        "disposition": "reserve",
+        "rationale": "Review summary differs from2020fitted~30secondrelationship. Do not manufacture a measured20–30secondrange or average.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.mechanics-update",
+        "statementSha256": "02824f68125b029ebb7bc6ded1bf63d8725f7dae2615a481a4a778840a83f4f3",
+        "disposition": "reserve",
+        "rationale": "Original abstract inspected, fulltext inaccessible. Scientific result attributed to that study, not independently reanalyzed; not selected for the memory narration.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.identifiable-memory-cell",
+        "statementSha256": "a6404d7d37134be9569591b43568c3c8b5dbf8ccd41650831c1abf5367330a43",
+        "disposition": "exclude",
+        "rationale": "Unresolved/excluded from visuals: authors could not localize fluorescence to specific deep intact cells. No named memorycell.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.exactly-two-touches",
+        "statementSha256": "d17044bb9eea0418125f820475ab091e0c9096545c05368359ec3c16bebbcc9a",
+        "disposition": "exclude",
+        "rationale": "False shortcut; movement/APmapping depends on amplitude/speed and a singledeflectioncan2APs.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.fixed-timer",
+        "statementSha256": "87e3400d55e05ff7e10dfdce1cc02954de5becefa47111d8c4f9631afc8a4967",
+        "disposition": "exclude",
+        "rationale": "Unsupported universal/digital reset; source statistics and differing summaries exclude it.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.every-touch",
+        "statementSha256": "2c8fb996dcbc691826e039512cad73ed613a585b9e6cdf2a25cbf555c3384299",
+        "disposition": "exclude",
+        "rationale": "False: noAP,oneAPor2APs can occur under different movement conditions.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.natural-glow",
+        "statementSha256": "67d39f477d7c70e006ac60b13b2cc650de26e2708532fb609978256e2b1be205",
+        "disposition": "exclude",
+        "rationale": "Engineered reporter and imaging light, not intrinsic bioluminescence.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.conscious-math",
+        "statementSha256": "a73aba653137c82a0e9145bf230a0fee788d69d911eee4ac138f438c2fd37cb1",
+        "disposition": "exclude",
+        "rationale": "Data establish biochemical responses, not conscious recollection or numerical concepts.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.static-hold",
+        "statementSha256": "49b1a0dff01c4eae9ae697ceb7e2692eee3320040cecfb7320bc17b83f602ae1",
+        "disposition": "exclude",
+        "rationale": "Tested static-displacementtrials n11 did not close; slowmovingdeflectionis different.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.settled-hydraulics",
+        "statementSha256": "11311fca20a3a8c7961233da7261a092edee02c7076da73d834e92175afbb869",
+        "disposition": "exclude",
+        "rationale": "Older explanatory model is challenged by2026primaryabstract; do not animate rapid pumping as established.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.absolute-threshold",
+        "statementSha256": "7b43231ea8c980d77bb2d1b9e6ffa033d6279a8e67bb92df78827db7abe901ed",
+        "disposition": "unresolved",
+        "rationale": "No sufficient calibration, universal celllocalization or probability-one threshold in inspected evidence.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "flytrap-touch-memory.claim.molecular-bridge",
+        "statementSha256": "74f0dbd432789cc7a36a1afb088192cc0119f742bf64e598c6e15fab4163ee2e",
+        "disposition": "unresolved",
+        "rationale": "Memoryintegration explanation does not claim a full mechanical causal chain; no direct bridge verified here.",
+        "evidence": [],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "Physical movement, AP and calcium response are distinct; can/conditional wording prevents one movement equals one signal.",
+      "No exactly two separate touches, stationary hair-holding trigger, or universal first-touch response.",
+      "No universal 30-second countdown or invented20–30secondmeasurement. The timing statistics and review discrepancy remain in reserve.",
+      "Calcium response threshold is putative, relative, region-dependent and probabilistic; no absolute calibrated meter or guarantee from calcium alone.",
+      "Electrical/calcium coupling is not depicted as a literal spark causing delayed fluid movement or as an animal nervous system.",
+      "Engineered reporter microscopy is evidence, not natural naked-eye glow; original tint remains labeled illustration.",
+      "The2026mechanics update prevents reuse of old hydraulic motor assertions. Whole-trap observed snap is shown without inventing the molecular bridge.",
+      "Separate illustrative trials prevent instantaneous reopening or animation reversing presented as biology.",
+      "Memory is defined as transient information, with no conscious recollection or sentience established."
+    ],
+    "comprehensionReview": "Conceptual cold-viewer audit: identify plant and memory immediately; show one brief physical event; distinguish short electrical excitation from lingering calcium response; compare close and delayed events; show one-movement/two-signal exception only after main mechanism. Minimal level vocabulary replaces ion-channel terminology.116words preserve all four requested learning steps plus exception and functional definition. Cutaway must not imply measured cells or the chemical trace as a substance flowing through veins. No audience panel, actual rendered retelling, playback or retention evidence claimed.",
+    "rightsReview": "No production assets acquired or generated. Normalized source text is research evidence; copyrighted paper figures/movies are consultation-only and are not licensed by citation. Proposed future original macro/tissue illustration and appropriately licensed fonts require exact asset provenance after production authority. Existing historical image comparisons are read-only; no copies or historical rerenders. No paid services or purchases.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Plant physiology explanation, no medical claims, animal-treatment instructions or conscious-plant claims. Explicit owner development-only scope held; no unusual cost/brand/rights exception needed to prepare this review."
+    },
+    "exceptionalConditions": []
+  }
+}

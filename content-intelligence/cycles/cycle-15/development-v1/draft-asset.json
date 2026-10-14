@@ -1,0 +1,336 @@
+{
+  "id": "flytrap-touch-memory.asset.fading-trace",
+  "revision": 1,
+  "knowledgePackageId": "flytrap-touch-memory",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Explain how a past stimulus can alter a later trap response through a fading biochemical state, while distinguishing physical movements, electrical signals and calcium changes.",
+  "storyAngle": "A living trap retains a short history in a transient biochemical response; timing determines what a later signal can build on.",
+  "hookId": "flytrap-touch-memory.hook.brain-free-memory",
+  "selectedClaimIds": [
+    "flytrap-touch-memory.claim.brain-free",
+    "flytrap-touch-memory.claim.functional-memory",
+    "flytrap-touch-memory.claim.hair-signal",
+    "flytrap-touch-memory.claim.first-open",
+    "flytrap-touch-memory.claim.calcium-rise",
+    "flytrap-touch-memory.claim.signal-distinction",
+    "flytrap-touch-memory.claim.decay",
+    "flytrap-touch-memory.claim.residual",
+    "flytrap-touch-memory.claim.summation",
+    "flytrap-touch-memory.claim.closure-threshold",
+    "flytrap-touch-memory.claim.delay",
+    "flytrap-touch-memory.claim.single-movement",
+    "flytrap-touch-memory.claim.reporter",
+    "flytrap-touch-memory.claim.hair-layout"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 47.5,
+    "maximum": 56
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.1",
+        "type": "factual",
+        "text": "A Venus flytrap has no brain. Yet a touch can leave a fading memory.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.brain-free",
+          "flytrap-touch-memory.claim.functional-memory"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.2",
+        "type": "factual",
+        "text": "A brief bend of a sensitive hair can send an electrical signal through the trap while it stays open.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.hair-signal",
+          "flytrap-touch-memory.claim.first-open"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.3",
+        "type": "factual",
+        "text": "Alongside that signal, calcium rises inside the leaf’s cells.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.calcium-rise",
+          "flytrap-touch-memory.claim.signal-distinction"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.4",
+        "type": "factual",
+        "text": "Then the calcium level falls. For a short time, part of that change remains.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.decay",
+          "flytrap-touch-memory.claim.residual"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.5",
+        "type": "factual",
+        "text": "Another signal arriving soon enough raises the level further. If it reaches the level needed for closure, the trap can snap shut.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.summation",
+          "flytrap-touch-memory.claim.closure-threshold"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.6",
+        "type": "factual",
+        "text": "Wait too long, and the next signal may no longer reach that level.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.delay"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.7",
+        "type": "factual",
+        "text": "Two signals don’t always mean two touches: one slower hair movement can produce both.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.single-movement"
+        ]
+      },
+      {
+        "id": "flytrap-touch-memory.asset.fading-trace.script.8",
+        "type": "factual",
+        "text": "Here, memory means retained information—a fading chemical state, not conscious recollection.",
+        "claimIds": [
+          "flytrap-touch-memory.claim.functional-memory"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.1",
+      "label": "A living trap, already active",
+      "purpose": "Memory can exist without a brain in a specific physiological sense.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.1"
+      ]
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.2",
+      "label": "One brief stimulus, trap still open",
+      "purpose": "External movement and internal signaling differ.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.2"
+      ]
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.3",
+      "label": "The invisible response",
+      "purpose": "Calcium concentration changes inside cells as the trap is excited.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.3"
+      ]
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.4",
+      "label": "A trace that fades",
+      "purpose": "The retained state is temporary information about the earlier signal.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.4"
+      ]
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.5",
+      "label": "A nearby signal builds on what remains",
+      "purpose": "Temporal accumulation can take a response into the closure-associated regime.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.5"
+      ]
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.6",
+      "label": "Longer waiting changes the outcome",
+      "purpose": "Timing changes how much residual state the next signal can build on.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.6"
+      ]
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.7",
+      "label": "Signals are not touches",
+      "purpose": "A physical movement is not the unit being integrated.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.7"
+      ]
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.beat.8",
+      "label": "The memory is the trace",
+      "purpose": "A past event persists as chemistry and can affect the next response.",
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.8"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.1",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.1",
+      "objective": "Memory can exist without a brain in a specific physiological sense.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.1"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.brain-free",
+        "flytrap-touch-memory.claim.functional-memory",
+        "flytrap-touch-memory.claim.hair-layout"
+      ],
+      "notes": "Extreme macro of an open living-looking trap: inner lobe texture and a tiny moving subject or clearly identified illustrative probe. A hair begins bending while the opening names the plant and memory; no title card. Original illustrative biological scene, not unstated laboratory footage. Six trigger hairs across two lobes; larger marginal cilia are not trigger hairs. No natural visible calcium light. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.2",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.2",
+      "objective": "External movement and internal signaling differ.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.2"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.hair-signal",
+        "flytrap-touch-memory.claim.first-open",
+        "flytrap-touch-memory.claim.hair-layout"
+      ],
+      "notes": "Camera approaches one inner trigger hair, follows its brief deflection at the base, then reveals the open lobes. Choose an illustrative above-signal-threshold single-AP example; the probe/insect does not keep touching other hairs. The chosen brief movement is one possible response, not proof that every first physical touch creates exactly oneAP. No animal-neuron cables or lightning. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.3",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.3",
+      "objective": "Calcium concentration changes inside cells as the trap is excited.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.3"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.calcium-rise",
+        "flytrap-touch-memory.claim.signal-distinction",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "notes": "A matched move from the hair base into a simplified tissue cutaway. A short electrical-signal cue is accompanied by a spreading calcium-activity tint in leaf tissue. Warm signal tint against natural greens; label it calcium activity • illustration throughout. Tint is qualitative relative activity, not emitted light, measured cells, moving calcium fluid, or a universal route via veins. Do not claim an exact AP/Ca propagation-speed relation. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.4",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.4",
+      "objective": "The retained state is temporary information about the earlier signal.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.4"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.decay",
+        "flytrap-touch-memory.claim.residual",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "notes": "The moving signal cue passes; calcium tint remains and gradually weakens. A restrained time-compressed dissolve shows waiting without a stopwatch. Do not instantly zero the trace. Decay has no fixed linear slope or30-second reset. Time compression and qualitative illustration are disclosed. Representative tissue, not a single identified memory cell. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.5",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.5",
+      "objective": "Temporal accumulation can take a response into the closure-associated regime.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.5"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.summation",
+        "flytrap-touch-memory.claim.closure-threshold",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "notes": "In the close-spacing example, another distinct electrical cue accompanies an increase on the remaining calcium tint. The tissue becomes more active; camera returns to the whole trap for a convincing snap. Keep a short level linked to closure cue if needed, with no numeric chart. Separate electrical events; model threshold is qualitative/probabilistic. Show one plausible closing example, not guaranteed closure for all plants or a mapped mechanical motor. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.6",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.6",
+      "objective": "Timing changes how much residual state the next signal can build on.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.6"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.delay",
+        "flytrap-touch-memory.claim.reporter"
+      ],
+      "notes": "Cut clearly to a separate illustrative trial with a wider view. First response fades more; a later signal produces another rise that remains too low for closure in this example. The trap stays open. A compact separate example • time compressed cue prevents apparent instant reopening. Do not reverse a snapped trap to reopen immediately or imply a complete reset at exactly30s. No universal delay cutoff; no new claim about reopening time. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.7",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.7",
+      "objective": "A physical movement is not the unit being integrated.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.7"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.single-movement"
+      ],
+      "notes": "Extreme hair-base view in another clearly separate trial: one slower bend-and-return movement accompanies two distinct signal cues and a plausible closing response. Event cues remain visible briefly, without a dense calcium/AP chart. Slow movement within tested triggering conditions, not stationary holding. Both APs may occur on bending or on bending plus return; select the latter documented case. No claim each contact always gives twoAPs. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    },
+    {
+      "id": "flytrap-touch-memory.asset.fading-trace.visual.8",
+      "narrativeBeatId": "flytrap-touch-memory.asset.fading-trace.beat.8",
+      "objective": "A past event persists as chemistry and can affect the next response.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original anatomy-consistent macro illustration or rights-cleared macro footage after explicit production approval.",
+        "Original qualitative calcium visualization with disclosed illustrative/temporal scope; research figures consultation-only."
+      ],
+      "scriptSegmentIds": [
+        "flytrap-touch-memory.asset.fading-trace.script.8"
+      ],
+      "claimIds": [
+        "flytrap-touch-memory.claim.functional-memory"
+      ],
+      "notes": "Return to natural light and the original open-trap illustrative trial after the first signal; briefly reveal its residual chemical state, then settle on the living leaf with biochemical memory as the only optional concluding label. No unmarked reopening or reset, no engagement outro. A clearly signaled return to the earlier example, not continuity from a freshly snapped trap. Memory is defined functionally and does not establish conscious experience. Conceptual treatment only; no media, geometry, frame timings or caption cues authored."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Current Kokoro af_heart; warm, observant, curious first sentence and lucid midsection. Pause slightly for the fading trace and the single-movement exception; avoid horror, plant consciousness theatrics or clinical lecture cadence. No audio generated.",
+    "pronunciationNotes": [
+      "Say calcium naturally; action potential jargon is deliberately replaced by electrical signal.",
+      "Keep two signals and two touches distinct in spoken emphasis.",
+      "Actual audio listening and cue timing remain downstream of further authorization."
+    ]
+  },
+  "editorialStatus": "editorial-review"
+}

@@ -1,0 +1,133 @@
+{
+  "sources": [
+    {
+      "key": "suda-primary",
+      "id": "source.flytrap-touch-memory.suda-primary",
+      "organization": "Suda et al. / Nature Plants; public third-party typeset copy",
+      "title": "Calcium dynamics during trap closure visualized in transgenic Venus flytrap",
+      "sourceType": "peer-reviewed",
+      "url": "https://im7.freeforumzone.it/up/72/65/1608312795.pdf",
+      "retrieved": "2026-10-14",
+      "notes": "Primary 2020 paper identified by DOI/title/authors and corroborated with author-group abstract and institutional report. Accessed through public third-party mirror; typeset copy has a publication-date placeholder, so not asserted byte-identical to the final publisher version. Direct Nature body/PDF inaccessible; screenshot retrieval failed. Statistical thresholds use normalized reporter fluorescence and probabilities, not an absolute universal ion concentration. Authors call for further causal investigation. Main text/method sections inspected, not all 18 pages or supplementary movies/data.",
+      "locator": "Typeset main-text PDF pages 1–5: sensory hairs, reporter, calcium dynamics, Fig.3 caption/Table1, inference limits and microscopy; extracted lines 0–180,205–224,275–295,363–433,486–508.",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-15/development-v1/research/suda-primary-inspection.json",
+        "sha256": "fd23fbdc5d2537e647f17d7039efc43579e0e13cb9ab9c3659ed3b083c9fbbd1"
+      },
+      "accessStatus": "partially-inspected",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1038/s41477-020-00773-1"
+        }
+      ]
+    },
+    {
+      "key": "suda-author-abstract",
+      "id": "source.flytrap-touch-memory.suda-author-abstract",
+      "organization": "Suda et al. / Constrained & Directional Evolution research newsletter",
+      "title": "Author-group republication of the calcium-dynamics abstract",
+      "sourceType": "primary-source",
+      "url": "https://www.constrained-evo.shigenobulab.org/docs/CDENewsVol4NoS5s.pdf",
+      "retrieved": "2026-10-14",
+      "notes": "Primary abstract republished by the research-group newsletter; confirms same work, not independent replication or full paper access. Republication omits usually in two-stimulus sentence; do not import that absolute wording. PDF screenshot retrieval failed; extracted English abstract inspected.",
+      "locator": "Research-group newsletter PDF page 3 (printed page1), extracted lines 6–28: original paper abstract and bibliographic identity.",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-15/development-v1/research/suda-author-abstract-inspection.json",
+        "sha256": "ac313f382ae427f78bc5fbd185154fba14ada9e88959b962e9a71c2ad07d7c35"
+      },
+      "accessStatus": "abstract-only",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1038/s41477-020-00773-1"
+        }
+      ]
+    },
+    {
+      "key": "burri-primary",
+      "id": "source.flytrap-touch-memory.burri-primary",
+      "organization": "Burri et al. / PLOS Biology",
+      "title": "A single touch can provide sufficient mechanical stimulation to trigger Venus flytrap closure",
+      "sourceType": "peer-reviewed",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000740",
+      "retrieved": "2026-10-14",
+      "notes": "Peer-reviewed primary experiments with controlled sensory-hair movement and electrical recording. One deflection includes bending and return, not a stationary bend. Intermediate angular velocities can elicit two APs; very small/slow/fast movements do not all do so. No raw-data or source-video review and no new plant experiment.",
+      "locator": "PLOS abstract/introduction and Results: lines194–256 and266–288; methods discussion lines340–395 where returned. Single deflection versus held displacement; electrical measurements and force-probe trials.",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-15/development-v1/research/burri-primary-inspection.json",
+        "sha256": "67e0ee97b00437ffdee652c29b15eb07dbaed1a26d07690eef0a3b5510f04b7b"
+      },
+      "accessStatus": "partially-inspected",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1371/journal.pbio.3000740"
+        }
+      ]
+    },
+    {
+      "key": "hedrich-review",
+      "id": "source.flytrap-touch-memory.hedrich-review",
+      "organization": "Hedrich and Kreuzer / New Phytologist",
+      "title": "Demystifying the Venus flytrap action potential",
+      "sourceType": "peer-reviewed",
+      "url": "https://doi.org/10.1111/nph.19113",
+      "retrieved": "2026-10-14",
+      "notes": "Peer-reviewed 2023 review, not independent primary replication. Useful integration/timing context; review20-second summary differs from Suda fitted approximately30-second relation. Its older hydraulic mechanical account must not become the proposed motor explanation after the inspected2026 primary abstract.",
+      "locator": "Review introduction/Fig.1 caption, extracted lines111–138: electrical signals, calcium summation, approximate20-second memory, decoding and older snap-mechanism account.",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-15/development-v1/research/hedrich-review-inspection.json",
+        "sha256": "432974d60acd8f817d98e781ca70ec04940c3d5b14414b7f1f041edfe94b42e7"
+      },
+      "accessStatus": "partially-inspected",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1111/nph.19113"
+        }
+      ]
+    },
+    {
+      "key": "nibb",
+      "id": "source.flytrap-touch-memory.nibb",
+      "organization": "National Institute for Basic Biology",
+      "title": "Memory of the Venus flytrap",
+      "sourceType": "scientific-organization",
+      "url": "https://www.nibb.ac.jp/en/pressroom/news/2020/10/06.html",
+      "retrieved": "2026-10-14",
+      "notes": "Research-team account clarifies biological information without a nervous system and engineered fluorescence. Same underlying2020study, not independent replication; simplified absolute two-touch phrasing is qualified by PLOS and original paper.",
+      "locator": "Research-team institutional body, extracted lines115–131: no brain/nervous system, transgenic reporter, calcium rise/decay and temporal memory.",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-15/development-v1/research/nibb-inspection.json",
+        "sha256": "a9647ff03b727bf917225cdeb48de3b588da268640b9b39c6a651f15b9b56219"
+      },
+      "accessStatus": "partially-inspected"
+    },
+    {
+      "key": "ryu-primary-abstract",
+      "id": "source.flytrap-touch-memory.ryu-primary-abstract",
+      "organization": "Ryu et al. / Science; primary abstract via PubMed",
+      "title": "Fast cell wall softening causes Venus flytrap closure",
+      "sourceType": "peer-reviewed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42275490/",
+      "retrieved": "2026-10-14",
+      "notes": "Primary2026abstract reports in situ mechanical/hydraulic measurements and rapid wall softening rather than water transport as driver. Abstract-only; full Science/HAL attempts failed. Used to avoid outdated mechanical assertions, not to claim complete calcium-to-wall causal resolution or introduce a new premise.",
+      "locator": "June11,2026 bibliographic record and original primary abstract; extracted lines177–191 and239–241.",
+      "inspection": {
+        "path": "content-intelligence/cycles/cycle-15/development-v1/research/ryu-primary-abstract-inspection.json",
+        "sha256": "1c354daa34d4c173917619f1697fe6b98f005fe760d89be0a42a5017420d85c4"
+      },
+      "accessStatus": "abstract-only",
+      "identifiers": [
+        {
+          "scheme": "DOI",
+          "value": "10.1126/science.aed5051"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-14",
+  "provider": "manual session web research; no paid calls/envelope/token usage fabricated",
+  "sourceDependence": "Suda full typeset copy, author abstract and NIBB describe same experiment. Burri supplies separate stimulus/AP experiments; Hedrich is review; Ryu addresses mechanics, not calcium-memory replication."
+}

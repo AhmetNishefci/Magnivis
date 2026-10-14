@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-14T13:12:15.214349Z",
+  "repositoryCheck": {
+    "command": "VITEST_MAX_WORKERS=2 pnpm check under installed supported Node22.23.3",
+    "exitCode": 0,
+    "tests": 507,
+    "testFiles": 54,
+    "output": {
+      "path": "content-intelligence/cycles/cycle-15/development-v1/check-output.txt",
+      "sha256": "5d004fc12315ed507a018ed41c5076dbc733376dce9ae463e2e2d66d5bbaae4d"
+    },
+    "normalization": "Trailing empty log lines omitted, results retained."
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable under Node22; approved read-only escalation for tsx local IPC",
+    "exitCode": 0,
+    "canonicalPayloads": 1163,
+    "durableArtifactCount": 731,
+    "output": {
+      "path": "content-intelligence/cycles/cycle-15/development-v1/durability-output.json",
+      "sha256": "ef3e4fc18b2fd76b61dac2f354f2c76b04130e7b777967d6f0630555123e52bb"
+    }
+  },
+  "scopeValidation": {
+    "path": "content-intelligence/cycles/cycle-15/development-v1/scope-validation.json",
+    "sha256": "777e746b452a5b874348e57283d3fd9066a0bfd013cef1998df6507c80d55ff4"
+  },
+  "nativeJournal": "cycle.15 revision6 at creative with scoped work-in-progress; no creative/production completion",
+  "ownerScriptApproval": false,
+  "ownerCreativeApproval": false,
+  "productionAuthorized": false,
+  "mediaGenerated": 0,
+  "finalAudioGenerated": false,
+  "renders": 0,
+  "platformActions": [],
+  "limits": "Scientific evidence limitations and conceptual-only audiovisual/comprehension limits are preserved in source reconciliation and owner review."
+}
