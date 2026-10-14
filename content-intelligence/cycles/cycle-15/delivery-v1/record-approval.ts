@@ -1,0 +1,16 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../../../../src/artifacts/media';
+import {openMediaCatalog} from '../../../../src/artifacts/catalog';
+import {sha256Json} from '../../../../src/content-intelligence/run-schema';
+import {loadCycle,persistCycleEvent} from '../../../../src/workflow/store';
+import {ownerDecisionSchema} from '../../../../src/workflow/evidence';
+const b='content-intelligence/cycles/cycle-15/delivery-v1',registry=openMediaCatalog(),cycle=loadCycle(process.cwd(),'cycle.15',registry),at=new Date().toISOString();
+if(cycle.stage!=='master-review'||cycle.revision!==22||!cycle.candidate)throw new Error('Expected V3master gate');
+const candidate=JSON.parse(readFileSync(cycle.candidate.path,'utf8'));if(candidate.media.sha256!=='b43025461b0f2042d88444696048fbf1a1d83bb4991ee95d09adfc2baf9f7133')throw new Error('Wrong master');
+const put=(n:string,v:unknown)=>{const path=`${b}/${n}.json`;writeFileSync(path,JSON.stringify(v,null,2)+'\n',{flag:'wx'});return {path,sha256:mediaHash(path)};};
+const decision=put('master-approval-v1',ownerDecisionSchema.parse({schemaVersion:3,id:'owner-decision.cycle-15.master-v3-approval.v1',revision:1,gate:'master-review',cycleId:cycle.id,targetSha256:sha256Json(candidate),decision:'approve',enteredAt:at,suppliedReviewTime:null,reviewer:'Ahmet — owner',evidenceBasis:'explicit-owner-message',instruction:readFileSync(`${b}/owner-instruction.md`,'utf8'),acceptedUnknowns:[]}));
+const approved=persistCycleEvent(process.cwd(),cycle,{type:'owner-decision',record:decision,at},registry);
+put('master-lock-v1',{cycleId:cycle.id,media:candidate.media,masterDecision:decision,candidate:cycle.candidate,path:registry.resolveFile(candidate.media),identityUnchanged:true,newMediaCreated:0,publicationAuthorized:false});
+put('owner-playback-condition-v1',{cycleId:cycle.id,master:candidate.media,masterDecision:decision,status:'pending-owner-confirmation',fullSpeedViewingWithAudio:'pending-owner-confirmation',phoneSizedReadability:'pending-owner-confirmation',ownerConfirmation:null,publicationBlockedUntilConfirmation:true,materialProblemAction:'Pause and request targeted correction; preserve exact V3 until owner authorizes correction.'});
+const start=put('presentation-start-v1',{cycleId:cycle.id,stage:'presentation',action:'Prepare four exact-master reference deliveries, independently inspect selected cover, refresh export requirements, preserve native/device unknowns; stop at owner DELIVERY REVIEW without platform actions.'});
+const begun=persistCycleEvent(process.cwd(),approved,{type:'begin-internal',stage:'presentation',record:start,at:new Date().toISOString()},registry);console.log(JSON.stringify({stage:begun.stage,revision:begun.revision,masterApproved:true,publicationAuthorized:false}));

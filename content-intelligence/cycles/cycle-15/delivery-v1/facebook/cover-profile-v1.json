@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.flytrap.facebook.cover-v1",
+  "revision": 1,
+  "platform": "facebook",
+  "surface": "facebook-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-14T21:46:36.934Z",
+  "reviewAfter": "2026-10-21T21:46:36.934Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Exact static canvas/bounds checked; native composition unmeasured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail UI geometry unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native cover overlay geometry unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Profile/grid/feed/search crop unknown; no crop invented.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-15/delivery-v1/qa/selected-cover-v1.json",
+        "sha256": "5d0b238ee84fb5b83b6a460e10916fbae5fe1f3d722b8492ff171761fba71672"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-15/delivery-v1/policy-inspection-v1.json",
+        "sha256": "af91e68d4d352d4fc59306c5966eb68d39c0c545e9f6ce0ae3b704fb5e60e2d6"
+      }
+    ],
+    "rationale": "Exact decoded1080x1920PNG or corresponding native frame; actual selector/crops untested."
+  }
+}

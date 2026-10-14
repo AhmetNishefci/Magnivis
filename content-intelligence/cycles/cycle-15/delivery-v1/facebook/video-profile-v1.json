@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.flytrap.facebook.delivery-v1",
+  "revision": 1,
+  "platform": "facebook",
+  "surface": "facebook-reels-viewer",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-14T21:46:36.934Z",
+  "reviewAfter": "2026-10-21T21:46:36.934Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "provisional",
+    "regions": [
+      {
+        "x": 72,
+        "y": 120,
+        "width": 848,
+        "height": 1530
+      }
+    ],
+    "rationale": "Repository projection only. src/design/safe-areas.ts; conservative internal viewer profile, owner broadly acceptable; Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "provenance": [
+      {
+        "path": "artifacts/presentation-profiles.json",
+        "sha256": "33d66ce6fee9bbfa4c05720b2270d07319f250d2d0673b1b50856715bd81c2cb"
+      }
+    ]
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy native exclusions; null stays unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy caption geometry; null stays unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No legacy measured crop model; nothing inferred.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "mp4"
+    ],
+    "videoCodecs": [
+      "h264"
+    ],
+    "audioCodecs": [
+      "aac"
+    ],
+    "fps": [
+      30
+    ],
+    "duration": {
+      "minimum": 3,
+      "maximum": 180
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-15/delivery-v1/policy-inspection-v1.json",
+        "sha256": "af91e68d4d352d4fc59306c5966eb68d39c0c545e9f6ce0ae3b704fb5e60e2d6"
+      },
+      {
+        "path": "docs/PLATFORM-EXPORT-REQUIREMENTS.md",
+        "sha256": "4c2ed465529bf88e6a16571abf1a96fe73726fb434e7194a675e65f8b967d28b"
+      }
+    ],
+    "rationale": "Dated manual-route inspection; bounded3–180s delivery envelope. YouTube180s is official Shorts cap; others180s are internal bounds, not platform maxima. Geometry remains provisional/unknown; no live account/device proof."
+  }
+}
