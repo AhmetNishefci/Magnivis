@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-14T12:42:42.616518Z",
+  "runtime": "Node22.23.3 / repository-declared supported runtime",
+  "repositoryCheck": {
+    "command": "PATH=<installed Node22>/bin:$PATH VITEST_MAX_WORKERS=2 pnpm check",
+    "exitCode": 0,
+    "output": {
+      "path": "content-intelligence/cycles/cycle-15/check-output.txt",
+      "sha256": "fe58fd00ff6a9123982104cefc381b01e1a35ea5d778ca72289deb2a33b25591"
+    },
+    "outputNormalization": "Trailing empty log lines omitted; command exit and all test results retained."
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable under Node22, approved read-only sandbox escalation",
+    "exitCode": 0,
+    "output": {
+      "path": "content-intelligence/cycles/cycle-15/durability-output.json",
+      "sha256": "ef3e4fc18b2fd76b61dac2f354f2c76b04130e7b777967d6f0630555123e52bb"
+    },
+    "canonicalPayloads": 1163,
+    "durableArtifactCount": 731
+  },
+  "scopeValidation": {
+    "path": "content-intelligence/cycles/cycle-15/scope-validation.json",
+    "sha256": "d9f75a151d9e4d8189a65ade04b44e9d92ac0b8dd2611f8afa58dce0b326229a"
+  },
+  "journal": "cycle.15 revision2 at premise-review; actual cycle.ts review replay passed",
+  "historicalFiles": "git diff from b816cc2 contains only scoped Cycle15 additions and project-state routing changes; all predecessor evidence/media/policy bytes preserved",
+  "executionLimits": [
+    "Initial unqualified pnpm commands stalled before output under default Node24; interrupted and rerun using supported Node22.",
+    "Initial durability command failed at tsx local IPC socket, then approved read-only retry passed.",
+    "No visual render appropriate or authorized for discovery-only changes.",
+    "No provider calls or fabricated usage, no final claim verification, no production or platform actions."
+  ]
+}
