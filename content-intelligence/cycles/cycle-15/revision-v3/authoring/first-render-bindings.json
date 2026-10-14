@@ -1,0 +1,37 @@
+{
+  "media": {
+    "path": "artifacts/qa-evidence/flytrap-cycle15-v3-authoring/first-render.mp4",
+    "sha256": "dd5d217395dd8005eeaf3821ef619e75f34e48bce09d6d6d7939c0b5d1795190"
+  },
+  "diagnosticSheets": [
+    {
+      "path": "artifacts/qa-evidence/flytrap-cycle15-v3-authoring/first-phone-readability.jpg",
+      "sha256": "92ed2b116b422db7de1012d51567a5bfe7e9c60c439d16ced890dc5ebbc78164"
+    },
+    {
+      "path": "artifacts/qa-evidence/flytrap-cycle15-v3-authoring/first-temporal-1.jpg",
+      "sha256": "856acc78e8a23f09587aa03324b35202890c1b0c4a93212052ebdec4ec185231"
+    },
+    {
+      "path": "artifacts/qa-evidence/flytrap-cycle15-v3-authoring/first-temporal-13.jpg",
+      "sha256": "abd893e3a61c84145524bff2fe9d92312e79b63e278ff748fe89375087e522f3"
+    }
+  ],
+  "finding": "All13ordered4fps strips inspected. Context Img was in normal document flow after full-height background, outside viewport; natural-photo credit falsely appeared on illustration. Conservative calcium masks also needed tighter tissue clipping. Technical/full-caption/ASR checks had passed; editorial sequence review found both.",
+  "correction": "Absolute full-bleed photo positioning, viewport/source-identity browser checks, conservative schematic tissue masks. Same approved script/audio/duration. Full replacement rendered and all final QA renewed.",
+  "asRenderedSources": [
+    {
+      "path": "content-intelligence/cycles/cycle-15/revision-v3/authoring/first-FlytrapMemoryV3.tsx",
+      "sha256": "b02036c3dccc0f60a7544908e5f32310181d03264669e5bf80ca84ab99cecf2d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/revision-v3/authoring/first-FlytrapCalciumTraceV3.tsx",
+      "sha256": "dda4a1b99c250625a23c79f63c473dd22532f7829042870fb495fd1c4e23cac8"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/revision-v3/authoring/first-flytrap-v3.json",
+      "sha256": "3c626dc062cc9e3a80411f3f0a26c45e422cc53a9ecc20b47e7df6a215a990dd"
+    }
+  ],
+  "lintOnlyChange": "shiftX constant declaration changed after first bundle; values/output identical; pre-lint choreography-render-input.ts retained."
+}

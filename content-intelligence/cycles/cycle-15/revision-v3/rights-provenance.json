@@ -1,0 +1,106 @@
+{
+  "retrievedAt": "2026-10-14",
+  "previousRightsPreserved": {
+    "path": "content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json",
+    "sha256": "7460d8b08ad4c5ffa1d8feb190193a550ea95f723211b1611967f9d4a8d8d88b"
+  },
+  "assets": [
+    {
+      "path": "public/images/flytrap-v3/open-trap.png",
+      "origin": "Original built-in image generation",
+      "rights": "Original generated illustration",
+      "role": "Photographic botanical reconstruction, six trigger hairs; no measured cell map or same-specimen promise"
+    },
+    {
+      "path": "public/images/flytrap-v3/hair-macro.png",
+      "origin": "Original built-in image generation referencing original open-trap illustration",
+      "rights": "Original generated illustration",
+      "role": "Illustrative close lens position, three visible hairs; no exact specimen anatomy"
+    },
+    {
+      "path": "public/images/flytrap-v3/source-hair-bridge.png",
+      "origin": "Frame extracted from existing Burri S1 first-stimulus derivative at2.3s",
+      "rights": "CC BY4.0",
+      "role": "Explicit source-ending hold into reconstruction",
+      "parent": "public/video/flytrap-v2/first-stimulus.mp4"
+    },
+    {
+      "path": "public/video/flytrap-v3/recent-stimulus.mp4",
+      "origin": "Burri etal2020 S1",
+      "rights": "CC BY4.0",
+      "modifications": "Source8.0\u20139.4s, crop640:800:580:80, muted30fps; already source slow-motion. No AP/calcium overlay.",
+      "parent": "artifacts/research-evidence/flytrap-v2/burri-s1.avi"
+    },
+    {
+      "path": "public/video/flytrap-v3/one-movement.mp4",
+      "origin": "Burri etal2020 S2",
+      "rights": "CC BY4.0",
+      "modifications": "Source0.6\u20136.866667s, crop720:800:0:130; source hair-base, scale and labels retained, muted30fps; source time not a universal signal interval. No AP/calcium overlay.",
+      "parent": "artifacts/research-evidence/flytrap-v2/burri-s2.avi"
+    },
+    {
+      "path": "artifacts/research-evidence/flytrap-v3/poppinga-s4.mov",
+      "origin": "Poppinga,Kampowski,Metzger,Speck,Speck2016",
+      "url": "https://www.beilstein-journals.org/bjnano/content/supplementary/2190-4286-7-59-S4.mov",
+      "article": "https://www.beilstein-journals.org/bjnano/articles/7/59",
+      "rights": "CC BY2.0",
+      "license": "https://creativecommons.org/licenses/by/2.0/",
+      "licenseLocator": "Article copyright lines578\u2013580, no separate restriction in supporting-file listing",
+      "role": "Observed synchronous closure example, not a paired calcium trial;100fps recording/20fps source playback,5xslow",
+      "captureInstant": "unknown"
+    },
+    {
+      "path": "public/video/flytrap-v3/closure.mp4",
+      "origin": "Derivative of Poppinga S4",
+      "rights": "CC BY2.0",
+      "modifications": "Trim0.7\u20134.2s, muted30fps conversion; existing5xslow motion retained. Enlargement disclosed; grayscale retained, no invented pixels or biological movement.",
+      "parent": "artifacts/research-evidence/flytrap-v3/poppinga-s4.mov"
+    },
+    {
+      "path": "artifacts/research-evidence/flytrap-v3/hirata-s1.gif",
+      "origin": "Hirata etal2026 PLOS One S1Movie",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0349246.s003&type=supplementary",
+      "article": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0349246",
+      "rights": "CC BY4.0",
+      "role": "Consultation only;349x168 two-camera GIF with ink markers, rejected for production resolution. Linked data site returned404; no original high-resolution acquisition.",
+      "captureInstant": "unknown"
+    }
+  ],
+  "existingAssets": "LucyBradleyCC0 opening/end photo, original af_heart WAVs, Manrope600 and V2 first-stimulus movie reused without copying. Existing author/DOI/licenses credited in film.",
+  "scientificBoundary": "Point density is qualitative calcium emphasis, not molecules/cells/counts or observed fluorescence. Documentary and reconstructed specimens are distinct. Experimental closure is a separate example, not proof of the illustrative paired trial.",
+  "sourceInspection": "Source S1/S2 previously inspected complete; new S4 densely inspected and GIF whole temporal sequence inspected. Article method/support captions/license inspected online.",
+  "hashes": [
+    {
+      "path": "public/images/flytrap-v3/open-trap.png",
+      "sha256": "7af01e0d5d403fa3e69f5bc373b69148107c7cd738e69ba37cf144d9600e955a"
+    },
+    {
+      "path": "public/images/flytrap-v3/hair-macro.png",
+      "sha256": "ef0079d79f090b47fee8f3e2b89379cf7027756d9e8ad30ba22a636c71dc1c8b"
+    },
+    {
+      "path": "public/images/flytrap-v3/source-hair-bridge.png",
+      "sha256": "da81af75e7072752506340ec68c45e0c708afa554037f404c786ecb92a3d4925"
+    },
+    {
+      "path": "public/video/flytrap-v3/recent-stimulus.mp4",
+      "sha256": "970c864139a68ef7e727f56eaf6616028fd28b4533a72137d65caf6c10a1f9a9"
+    },
+    {
+      "path": "public/video/flytrap-v3/one-movement.mp4",
+      "sha256": "3a73589dd41956f1c75babdb9771992f874e43e1cce38137ce61e25ab7768ca1"
+    },
+    {
+      "path": "public/video/flytrap-v3/closure.mp4",
+      "sha256": "880da2d59c931df615d867576165d23f9ac80653d4eb4743b190ef181e374761"
+    },
+    {
+      "path": "artifacts/research-evidence/flytrap-v3/poppinga-s4.mov",
+      "sha256": "d616b99168e7ae634d809588fbf74a00b40be4367e8d7d138ae430efe5501624"
+    },
+    {
+      "path": "artifacts/research-evidence/flytrap-v3/hirata-s1.gif",
+      "sha256": "559c9c0ca81a5724681d7fd37f79dcd19fe1240702ff1324aa4b56c7de31b20d"
+    }
+  ]
+}

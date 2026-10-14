@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-14T21:32:32.625704+00:00",
+  "masterSha256": "b43025461b0f2042d88444696048fbf1a1d83bb4991ee95d09adfc2baf9f7133",
+  "repositoryCheck": {
+    "command": "VITEST_MAX_WORKERS=2 PATH=<Node22>:$PATH pnpm check",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 54,
+    "testsPassed": 507,
+    "durationSeconds": 89.13,
+    "assertionsOrTimeoutsRelaxed": false
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "passed": true,
+    "canonicalPayloads": 1245,
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "note": "Historical Wood Frog original gap unchanged, recovery closed; no new missing media."
+  },
+  "actualMasterQA": "Full technical/error-sensitive decode, scientific contracts, ASR/loudness, captions and87browser layout checkpoints passed. See hash-bound qa/final-report.json.",
+  "separateEditorialReview": "All203orderedtemporal samples,23caption midpoints,phone layouts, keyprogressions andcontact sheet inspected. Initialdraft defects corrected and whole replacement renewed; not owner creative approval.",
+  "preservation": {
+    "passed": true,
+    "nativeRevision": 22,
+    "masterSha256": "b43025461b0f2042d88444696048fbf1a1d83bb4991ee95d09adfc2baf9f7133",
+    "hashReferences": 2799,
+    "preservedHistoricalFiles": 2728,
+    "priorJournalEvents": 17,
+    "publicationAuthorized": false,
+    "scope": "Read-only identity/preservation verification, not subjective editorial or device approval."
+  },
+  "nativeStage": "master-review",
+  "nativeRevision": 22,
+  "continuousSubjectivePlayback": "unavailable; no claim of subjective continuous watching/listening",
+  "actualDeviceEvidence": "not-tested",
+  "masterApproved": false,
+  "deliveryPreparationAuthorized": false,
+  "publicationAuthorized": false
+}

@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {sha256Json} from '../../../../src/content-intelligence/run-schema';
+import {mediaHash,loadMediaRegistry} from '../../../../src/artifacts/media';
+import {loadCycle,persistCycleEvent} from '../../../../src/workflow/store';
+const base='content-intelligence/cycles/cycle-15/revision-v3',now=new Date().toISOString(),ref=(path:string)=>({path,sha256:mediaHash(path)}),put=(name:string,data:unknown)=>{const p=`${base}/${name}.json`;writeFileSync(p,JSON.stringify(data,null,2)+'\n',{flag:'wx'});return ref(p);};
+const target=JSON.parse(readFileSync('content-intelligence/cycles/cycle-15/revision-v2/master-candidate-v2.json','utf8'));
+const decision=put('owner-master-revision',{schemaVersion:3,id:'owner-decision.cycle-15.master-revision-v3',revision:1,gate:'master-review',cycleId:'cycle.15',targetSha256:sha256Json(target),decision:'revise',enteredAt:now,suppliedReviewTime:null,reviewer:'Ahmet — owner',evidenceBasis:'explicit-owner-message',instruction:readFileSync(`${base}/owner-instruction.md`,'utf8').trim(),reason:'Owner acknowledges V2 improvements but requires materially less repetitive middle, credible botanical realism, deliberate documentary-to-illustration continuity and stronger retained/late response comparison.',nonGeneralizations:['No mandatory shot checklist, question hook, CTA, identical intro/outro, visual palette or arbitrary pacing target.','Approved claims and116-word script retained unless material change earns fresh owner review.'],acceptedUnknowns:[]});
+const registry=loadMediaRegistry();let state=persistCycleEvent(process.cwd(),loadCycle(process.cwd(),'cycle.15',registry),{type:'owner-decision',record:decision,at:now},registry);
+const retry=put('creative-revision-start',{cycleId:'cycle.15',reason:'Owner-authorized targeted V3 visual revision under unchanged verified script/claims; renew hash-bound direction before new production.',ownerDecision:decision});state=persistCycleEvent(process.cwd(),state,{type:'retry-internal',stage:'creative',record:retry,at:new Date().toISOString()},registry);
+console.log({stage:state.stage,revision:state.revision});
