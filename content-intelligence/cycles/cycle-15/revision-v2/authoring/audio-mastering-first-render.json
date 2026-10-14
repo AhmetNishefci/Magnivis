@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-14T14:45:16.297Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/flytrap-render-v2.mp4",
+    "sha256": "826d1a03db12cd9429096966f0357af1b895a93730d0f9dcdefb2285c174e79f",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/flytrap-cycle15-candidate-v2.mp4",
+    "sha256": "7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.71",
+    "input_tp": "-5.05",
+    "input_lra": "3.90",
+    "input_thresh": "-33.16",
+    "output_i": "-18.99",
+    "output_tp": "-2.00",
+    "output_lra": "3.20",
+    "output_thresh": "-29.38",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.01"
+  },
+  "gainDb": 2.8499999999999996,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

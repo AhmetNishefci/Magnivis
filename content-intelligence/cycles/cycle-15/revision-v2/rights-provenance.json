@@ -1,0 +1,56 @@
+{
+  "enteredAt": "2026-10-14T14:34:23.851220Z",
+  "photo": {
+    "path": "public/images/flytrap-v2/lucy-bradley-cc0.jpg",
+    "sha256": "922bb62dccb66278cb75833b5610378d3c8fb0a77bde1266647d83b061569e39",
+    "author": "Lucy Bradley",
+    "title": "Dionaea muscipula \u2014 rosette plant in natural habitat; traps mostly green",
+    "page": "https://plants.ces.ncsu.edu/plants/dionaea-muscipula/",
+    "url": "https://eit-planttoolbox-prod.s3.amazonaws.com/media/images/Dionaea_muscipula--L_XGuotHxfJ94a.jpg",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "evidence": "NC State per-image credit explicitly identifies Lucy Bradley/CC0; full unmodified source decoded and visually inspected. Other NC/ND photographs excluded.",
+    "changes": "Original JPEG unmodified; film crops/scales/dissolves and applies an independent readable lower gradient. Actual plant photograph, not experimental specimen or motion recording."
+  },
+  "motionReference": {
+    "path": "artifacts/research-evidence/flytrap-v2/burri-s2.avi",
+    "sha256": "50f29f8487600917c45bfe370f2b8aeffda0a5c7cf6a29abc4b2d05ebb10bf20",
+    "title": "S2 Video. Single deflection of a sensory hair leading to trap closure.",
+    "authors": "Burri et al.,2020,PLOS Biology",
+    "url": "https://journals.plos.org/plosbiology/article/file?id=10.1371%2Fjournal.pbio.3000740.s005&type=supplementary",
+    "article": "https://doi.org/10.1371/journal.pbio.3000740",
+    "license": "CC BY4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "inspected": "Downloaded publisher supporting movie;720\u00d7960,15fps,8.133333s. Inspected complete1second chronology. Shaft largely straight, pivot localized near constriction, no whole-trap translation under initial hair deflection. Source has laboratory sensor/holder and original labels.",
+    "productionUse": "Consultation-only motion reference; no movie pixels or audio used in V2. No falsely synchronized action-potential or calcium observations."
+  },
+  "texture": {
+    "path": "public/images/flytrap-v2/inner-lobe-texture.png",
+    "sha256": "e8a7737f20f23eb8fa8e1c168cbb3b2f8735a847ac02ab95d6573e545a281af0",
+    "tool": "image_gen.imagegen",
+    "prompt": "content-intelligence/cycles/cycle-15/revision-v2/texture-prompt.txt",
+    "rights": "Original generated botanical material illustration; not microscopy or measured anatomical evidence.",
+    "whyNew": "Old complete leaf silhouette was unsuitable as mesh texture; new uninterrupted internal tissue material eliminates false texture edges."
+  },
+  "graphics": "Original Magnivis parametric curved two-lobe mesh, base-pivot tapered hairs, tapered cilia, contact-derived probe, camera projection, natural-like materials and qualitative calcium color field. Not calibrated anatomy, measured concentration or complete mechanics simulation. No invented internal cell map.",
+  "narration": "Original exact8af_heart WAVs reused by canonical reference; no new synthesis/copies/voice/script changes. Existing Apache2.0model provenance unchanged.",
+  "font": "Existing pinned Manrope5.3.0, SIL OFL1.1, unchanged.",
+  "sound": "Voice-only retained; no third-party or cellular sound.",
+  "documentaryMacro": {
+    "source": "artifacts/research-evidence/flytrap-v2/burri-s1.avi",
+    "sourceSha256": "2cac429fd169f3af54f0c6ebf5a6165ce654e102a4c5af2d5893b094d2d934b0",
+    "derived": "public/video/flytrap-v2/first-stimulus.mp4",
+    "derivedSha256": "c61f0f36fcac446d4f9e318c1df9b553452a0ed07a4272ef83d60fd502b42735",
+    "author": "Burri etal.2020",
+    "title": "S1 Video. Double deflection of a sensory hair leading to two APs and trap closure.",
+    "sourceUrl": "https://journals.plos.org/plosbiology/article/file?id=10.1371%2Fjournal.pbio.3000740.s004&type=supplementary",
+    "article": "https://doi.org/10.1371/journal.pbio.3000740",
+    "license": "CC BY4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceSpec": "2040\u00d7960,20fps,18.8s; left macro video/right measured plots; already0.5\u00d7slow motion stated in source.",
+    "changes": "Input seek5.0s, trim2.35s, crop640\u00d7800 at580,80,convert30fps,mute and hold last frame to7.066667s. Source plots,0.5\u00d7label and2mm scale excluded from crop; film credits modifications.",
+    "ffmpegFilter": "trim=duration=2.35,setpts=PTS-STARTPTS,crop=640:800:580:80,fps=30,tpad=stop_mode=clone:stop_duration=4.8",
+    "interpretation": "Only first-deflection excerpt shown, before second deflection/closure; held open ending is a disclosed image hold, not continuous waiting data. No extra measured waveform, action-potential timing or calcium activity synthesized on this footage.",
+    "inspection": "Full source1schronology and complete derived0.5s samples inspected; original source graphs corroborate first AP versus later second/closure. No raw-electrical or calcium reanalysis."
+  }
+}

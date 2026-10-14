@@ -269,3 +269,13 @@ Candidate revision authorization only; no exact owner Master Review approval, re
 - `public/audio/flytrap/narration/cue-{1..8}.wav`: exact locked116-word narration, local Kokoro82M `af_heart`, q8CPU speed1, established Apache2.0model terms. No cloned voice, paid API, third-party sound or music. Phoneme/audible machine inspection records retained.
 - Existing pinned Fontsource Manrope5.3.0 Latin600 under SIL OFL1.1; license hash in production rights provenance.
 - Master and bounded QA/authoring evidence derive from these sources and receive immutable canonical identities. Failed first pictures/render retained as unapproved evidence; all earlier cycles/assets/media/approvals unchanged. Candidate-production authority grants no master acceptance, delivery preparation or publication permission.
+
+## Cycle 15 V2 revision — 2026-10-14
+
+V1 and all historical provenance remain unchanged. Exact V2 source hashes and URLs are recorded in `content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json`.
+
+- `public/images/flytrap-v2/lucy-bradley-cc0.jpg`: Lucy Bradley, CC0, explicitly identified by NC State at https://plants.ces.ncsu.edu/plants/dionaea-muscipula/ . Runtime cropping, enlargement and gradient; credited in film. No license inferred for other page images.
+- Burri et al. 2020, PLOS Biology, DOI 10.1371/journal.pbio.3000740, CC BY 4.0: original S1/S2 AVI files retained in `artifacts/research-evidence/flytrap-v2/`. `public/video/flytrap-v2/first-stimulus.mp4` derives from S1: first-stimulus excerpt, source already slowed, cropped to remove charts, converted to 30 fps and held at its end. Author, DOI, license and modifications disclosed in the film. S2 consulted for trigger-hair movement only, not rendered. Source https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000740 ; license https://creativecommons.org/licenses/by/4.0/ . Capture instants are unknown; acquisition records are not claimed as capture times.
+- `public/images/flytrap-v2/inner-lobe-texture.png`: original generated illustrative tissue material via built-in image generation, exact prompt retained. No external reference image, observed microscopy or fluorescence claim.
+- New curved mesh, camera choreography, WebGL shaders and qualitative calcium coloring: original repository-authored illustration. Existing af_heart narration, Manrope font and exact wording are reused with their original provenance.
+- V2 master and QA images: original composite derivatives with parent identities in `artifacts/media-catalog.json`; first draft and prototype evidence remain separately preserved. No platform package or publication action.

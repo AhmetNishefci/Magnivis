@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.15",
-  "revision": 9,
+  "revision": 17,
   "authority": {
     "path": "workflow/authorities/cycle-15-start.json",
     "sha256": "297522607781102b91000c93e805586e74b46054684c4c1f4fa9497cc16c4698"
@@ -26,15 +26,15 @@
     {
       "stage": "creative",
       "record": {
-        "path": "content-intelligence/cycles/cycle-15/production-v1/direction-ready.json",
-        "sha256": "d336672f9f59b7f28fc40c3e34c513b739d193e1f2860eda9d2fe2a98b0bea12"
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/direction-v3.json",
+        "sha256": "54b2211d0e4711cd02230f316218a6f04c4cfb28387758a0eec56ab167965e7e"
       }
     },
     {
       "stage": "production",
       "record": {
-        "path": "content-intelligence/cycles/cycle-15/production-v1/master-candidate-v1.json",
-        "sha256": "4e1aad8553525e725620a1c2230b702b4213fde608d94c362a92c341b0d2592d"
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/master-candidate-v2.json",
+        "sha256": "6233ae4f9c0b308e8d74557a0e7a1bd6a5852ae0c71ae1267411205d21fa5b20"
       }
     }
   ],
@@ -47,8 +47,8 @@
     "sha256": "c43244ddb5540eca20b451ed612a94bef7730aa82c303869215b9d58e38e2a67"
   },
   "candidate": {
-    "path": "content-intelligence/cycles/cycle-15/production-v1/master-candidate-v1.json",
-    "sha256": "4e1aad8553525e725620a1c2230b702b4213fde608d94c362a92c341b0d2592d"
+    "path": "content-intelligence/cycles/cycle-15/revision-v2/master-candidate-v2.json",
+    "sha256": "6233ae4f9c0b308e8d74557a0e7a1bd6a5852ae0c71ae1267411205d21fa5b20"
   },
   "masterDecision": null,
   "release": null,
@@ -144,6 +144,86 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-15/production-v1/master-candidate-v1.json",
         "sha256": "4e1aad8553525e725620a1c2230b702b4213fde608d94c362a92c341b0d2592d"
+      }
+    },
+    {
+      "revision": 10,
+      "previousSha256": "a5aa0e712c34f1c167c1b00fb9745981e448b15c9a38d733538a8fba89888103",
+      "event": "owner-decision",
+      "at": "2026-10-14T14:15:18.448Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/owner-master-revision.json",
+        "sha256": "6d1e88a0e39b75cce106706263f6491463cf5f292a016f16dd7a5212336a2a73"
+      }
+    },
+    {
+      "revision": 11,
+      "previousSha256": "7c878fa5d717da38cd04e05875c551b7c702625b6826770dbd628cf56e213cc7",
+      "event": "retry-internal",
+      "at": "2026-10-14T14:15:19.720Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/creative-revision-start.json",
+        "sha256": "680caca872970d19d5f15e0fb413f2009a42694357c2dde9fda38f39597d55b2"
+      }
+    },
+    {
+      "revision": 12,
+      "previousSha256": "cf4620f95e404b40b97b33d26ef9be56c895824a4d59e3a14681d8b9fc4ca6dc",
+      "event": "creative",
+      "at": "2026-10-14T14:27:45.442Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/direction-v2.json",
+        "sha256": "29b112abc62c5ad74552ec6006f549c2702325104e3b3c55a94518646121ba0c"
+      }
+    },
+    {
+      "revision": 13,
+      "previousSha256": "3ce0d259a53f72649902a79ada2b487042acd6c0fd4fabc114e7547d4230ba23",
+      "event": "begin-production",
+      "at": "2026-10-14T14:27:47.114Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/production-start.json",
+        "sha256": "8598e71ce5dc702ee87c62605c5c6dad029f33c2d4c40ff35702abc434e468b7"
+      }
+    },
+    {
+      "revision": 14,
+      "previousSha256": "839d18a3bcfd989497adb2dd5e60c735431a78172a3f17b88f4001083ac6b0bd",
+      "event": "retry-internal",
+      "at": "2026-10-14T14:57:38.574Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/direction-refinement-start.json",
+        "sha256": "d8ea30ca7088a097ca8b24260214b7434c98e44421db8565d827213cb783f0ae"
+      }
+    },
+    {
+      "revision": 15,
+      "previousSha256": "fb407f2ff631587b941a972c573341636bd5e63f8b6e2a12b43f865a99a4aba7",
+      "event": "creative",
+      "at": "2026-10-14T14:57:40.317Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/direction-v3.json",
+        "sha256": "54b2211d0e4711cd02230f316218a6f04c4cfb28387758a0eec56ab167965e7e"
+      }
+    },
+    {
+      "revision": 16,
+      "previousSha256": "939c4fb5eaf18b79099a5ca1a6660b548066da6ea65402317755fb025fc22117",
+      "event": "begin-production",
+      "at": "2026-10-14T14:57:41.116Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/production-start-v3.json",
+        "sha256": "384defd08ff5e09d96de24b89f253dfbee03388a0c29a63e61cd0a155f113a7a"
+      }
+    },
+    {
+      "revision": 17,
+      "previousSha256": "786804d9226c501bcab66ea99752fa4c7c2fbf87588f9eebec72721d42073876",
+      "event": "production",
+      "at": "2026-10-14T15:11:55.307Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-15/revision-v2/master-candidate-v2.json",
+        "sha256": "6233ae4f9c0b308e8d74557a0e7a1bd6a5852ae0c71ae1267411205d21fa5b20"
       }
     }
   ]

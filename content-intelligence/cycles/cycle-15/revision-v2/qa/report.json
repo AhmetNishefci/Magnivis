@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-14T15:05:43.739Z",
+  "input": "artifacts/masters/flytrap-cycle15-candidate-v2.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 50.53333333333333
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -23.8,
+    "maxVolumeDb": -2.3,
+    "duration": 50.582,
+    "sizeBytes": 27690369,
+    "bitRate": 4379481
+  },
+  "passed": true,
+  "failures": []
+}

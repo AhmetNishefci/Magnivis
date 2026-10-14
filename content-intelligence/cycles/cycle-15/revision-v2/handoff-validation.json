@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-14T15:24:50.341690+00:00",
+  "masterSha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+  "repositoryCheck": {
+    "command": "VITEST_MAX_WORKERS=2 PATH=<Node22>:$PATH pnpm check",
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 54,
+    "testsPassed": 507,
+    "testDurationSeconds": 86.69,
+    "assertionsOrTimeoutsRelaxed": false
+  },
+  "durableArtifacts": {
+    "command": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "passed": true,
+    "canonicalPayloads": 1209,
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "note": "Known historical Wood Frog gap remains unchanged; no new missing production assets."
+  },
+  "technicalScientificAudioCaptionChecks": "passed; detailed hash-bound qa/final-report.json and scientific-production-validation.json",
+  "productionToolHashes": "all nine supplemental hashes verified",
+  "readOnlyPreservation": {
+    "status": "passed",
+    "masterSha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+    "nativeStage": "master-review",
+    "nativeRevision": 17,
+    "checkedHashReferences": 128,
+    "preservedBaselineFiles": 62,
+    "preservedHistoricalFiles": 2609,
+    "publicationAuthorized": false,
+    "scope": "Read-only exact hashes and historical bytes; no creative or actual-device certification."
+  },
+  "editorialApproval": "pending owner; technical passes do not certify premium biological storytelling",
+  "inspectionLimits": "Sampled complete chronology, all caption midpoints and 360px layouts; no continuous subjective playback/listening or real-device evidence.",
+  "deliveryPreparationAuthorized": false,
+  "publicationAuthorized": false
+}

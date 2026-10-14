@@ -26083,6 +26083,560 @@
           "sha256": "ab87a60394b52220159ba702fd31a6747a21870f0fe95bae78ea4f2698fb776f"
         }
       ]
+    },
+    {
+      "id": "media.e8a7737f20f23eb8fa8e1c168cbb3b2f8735a847ac02ab95d6573e545a281af0",
+      "sha256": "e8a7737f20f23eb8fa8e1c168cbb3b2f8735a847ac02ab95d6573e545a281af0",
+      "canonicalPath": "public/images/flytrap-v2/inner-lobe-texture.png",
+      "mediaType": "image/png",
+      "bytes": 3418135,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/texture-prompt.txt"
+        ],
+        "createdAt": "2026-10-14T14:34:23.815Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.922bb62dccb66278cb75833b5610378d3c8fb0a77bde1266647d83b061569e39",
+      "sha256": "922bb62dccb66278cb75833b5610378d3c8fb0a77bde1266647d83b061569e39",
+      "canonicalPath": "public/images/flytrap-v2/lucy-bradley-cc0.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 703231,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json"
+        ],
+        "createdAt": null,
+        "creationTimeUnknownReason": "Original photography/capture instant unknown; acquisition and source dates distinguished in rights provenance."
+      },
+      "parents": []
+    },
+    {
+      "id": "media.2cac429fd169f3af54f0c6ebf5a6165ce654e102a4c5af2d5893b094d2d934b0",
+      "sha256": "2cac429fd169f3af54f0c6ebf5a6165ce654e102a4c5af2d5893b094d2d934b0",
+      "canonicalPath": "artifacts/research-evidence/flytrap-v2/burri-s1.avi",
+      "mediaType": "video/x-msvideo",
+      "bytes": 3521800,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/treatment-refinement-v3.json"
+        ],
+        "createdAt": null,
+        "creationTimeUnknownReason": "Original photography/capture instant unknown; acquisition and source dates distinguished in rights provenance."
+      },
+      "parents": []
+    },
+    {
+      "id": "media.c61f0f36fcac446d4f9e318c1df9b553452a0ed07a4272ef83d60fd502b42735",
+      "sha256": "c61f0f36fcac446d4f9e318c1df9b553452a0ed07a4272ef83d60fd502b42735",
+      "canonicalPath": "public/video/flytrap-v2/first-stimulus.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 430773,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/treatment-refinement-v3.json"
+        ],
+        "createdAt": "2026-10-14T14:53:35.775Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.2cac429fd169f3af54f0c6ebf5a6165ce654e102a4c5af2d5893b094d2d934b0",
+          "sha256": "2cac429fd169f3af54f0c6ebf5a6165ce654e102a4c5af2d5893b094d2d934b0"
+        }
+      ]
+    },
+    {
+      "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+      "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+      "canonicalPath": "artifacts/masters/flytrap-cycle15-candidate-v2.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 27690369,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/implementation-bindings.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/audio-mastering-v2.json"
+        ],
+        "createdAt": "2026-10-14T15:04:00.640Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.e8a7737f20f23eb8fa8e1c168cbb3b2f8735a847ac02ab95d6573e545a281af0",
+          "sha256": "e8a7737f20f23eb8fa8e1c168cbb3b2f8735a847ac02ab95d6573e545a281af0"
+        },
+        {
+          "id": "media.922bb62dccb66278cb75833b5610378d3c8fb0a77bde1266647d83b061569e39",
+          "sha256": "922bb62dccb66278cb75833b5610378d3c8fb0a77bde1266647d83b061569e39"
+        },
+        {
+          "id": "media.c61f0f36fcac446d4f9e318c1df9b553452a0ed07a4272ef83d60fd502b42735",
+          "sha256": "c61f0f36fcac446d4f9e318c1df9b553452a0ed07a4272ef83d60fd502b42735"
+        },
+        {
+          "id": "media.df63e132a3f305b07bc6d999bf48e80b4025fcabc1b7fd78263016f4e1981285",
+          "sha256": "df63e132a3f305b07bc6d999bf48e80b4025fcabc1b7fd78263016f4e1981285"
+        },
+        {
+          "id": "media.19d93489b6e69dea2c035cac35cbbe796aeb88fe0e36f5a35e8fae8b2cd74d7b",
+          "sha256": "19d93489b6e69dea2c035cac35cbbe796aeb88fe0e36f5a35e8fae8b2cd74d7b"
+        },
+        {
+          "id": "media.e43cb9dcc2a8acb3d324456b1cef67b09bc8853016a0e47b829dcfd6b9d82231",
+          "sha256": "e43cb9dcc2a8acb3d324456b1cef67b09bc8853016a0e47b829dcfd6b9d82231"
+        },
+        {
+          "id": "media.bfdfef580814306d3e3eae33f0b209bb4b849bab5aed1cdae1a0bfcd1c8a9aeb",
+          "sha256": "bfdfef580814306d3e3eae33f0b209bb4b849bab5aed1cdae1a0bfcd1c8a9aeb"
+        },
+        {
+          "id": "media.28e9bb05f0b5ae061b97e7fc5badf4026093739db64fc0a10ce5cd1605078fea",
+          "sha256": "28e9bb05f0b5ae061b97e7fc5badf4026093739db64fc0a10ce5cd1605078fea"
+        },
+        {
+          "id": "media.0e8d4b72ccf1508b3d83888c7a7d1b431dc3e1cbf12148c3cdffe34fcd34311c",
+          "sha256": "0e8d4b72ccf1508b3d83888c7a7d1b431dc3e1cbf12148c3cdffe34fcd34311c"
+        },
+        {
+          "id": "media.788716c0dd28f6af2a0c03a73ed71116d2d1b807ddb0fb69d09b5b891dc208de",
+          "sha256": "788716c0dd28f6af2a0c03a73ed71116d2d1b807ddb0fb69d09b5b891dc208de"
+        },
+        {
+          "id": "media.9748ed17587bfeb3e3fbbf5c19449dce65c3d990865df9f06f13885b38b484b1",
+          "sha256": "9748ed17587bfeb3e3fbbf5c19449dce65c3d990865df9f06f13885b38b484b1"
+        }
+      ]
+    },
+    {
+      "id": "media.50f29f8487600917c45bfe370f2b8aeffda0a5c7cf6a29abc4b2d05ebb10bf20",
+      "sha256": "50f29f8487600917c45bfe370f2b8aeffda0a5c7cf6a29abc4b2d05ebb10bf20",
+      "canonicalPath": "artifacts/research-evidence/flytrap-v2/burri-s2.avi",
+      "mediaType": "video/x-msvideo",
+      "bytes": 1757772,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/rights-provenance.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/treatment-exploration.json"
+        ],
+        "createdAt": null,
+        "creationTimeUnknownReason": "Original photography/capture instant unknown; acquisition and source dates distinguished in rights provenance."
+      },
+      "parents": []
+    },
+    {
+      "id": "media.7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596",
+      "sha256": "7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2-authoring/first-render.mp4",
+      "mediaType": "video/mp4",
+      "bytes": 28032543,
+      "provenance": {
+        "kind": "original-production",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/treatment-refinement-v3.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/authoring/audio-mastering-first-render.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/authoring/composition-first-render.tsx",
+          "content-intelligence/cycles/cycle-15/revision-v2/authoring/rights-first-render.json"
+        ],
+        "createdAt": "2026-10-14T14:45:15.802Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.e8a7737f20f23eb8fa8e1c168cbb3b2f8735a847ac02ab95d6573e545a281af0",
+          "sha256": "e8a7737f20f23eb8fa8e1c168cbb3b2f8735a847ac02ab95d6573e545a281af0"
+        },
+        {
+          "id": "media.922bb62dccb66278cb75833b5610378d3c8fb0a77bde1266647d83b061569e39",
+          "sha256": "922bb62dccb66278cb75833b5610378d3c8fb0a77bde1266647d83b061569e39"
+        },
+        {
+          "id": "media.df63e132a3f305b07bc6d999bf48e80b4025fcabc1b7fd78263016f4e1981285",
+          "sha256": "df63e132a3f305b07bc6d999bf48e80b4025fcabc1b7fd78263016f4e1981285"
+        },
+        {
+          "id": "media.19d93489b6e69dea2c035cac35cbbe796aeb88fe0e36f5a35e8fae8b2cd74d7b",
+          "sha256": "19d93489b6e69dea2c035cac35cbbe796aeb88fe0e36f5a35e8fae8b2cd74d7b"
+        },
+        {
+          "id": "media.e43cb9dcc2a8acb3d324456b1cef67b09bc8853016a0e47b829dcfd6b9d82231",
+          "sha256": "e43cb9dcc2a8acb3d324456b1cef67b09bc8853016a0e47b829dcfd6b9d82231"
+        },
+        {
+          "id": "media.bfdfef580814306d3e3eae33f0b209bb4b849bab5aed1cdae1a0bfcd1c8a9aeb",
+          "sha256": "bfdfef580814306d3e3eae33f0b209bb4b849bab5aed1cdae1a0bfcd1c8a9aeb"
+        },
+        {
+          "id": "media.28e9bb05f0b5ae061b97e7fc5badf4026093739db64fc0a10ce5cd1605078fea",
+          "sha256": "28e9bb05f0b5ae061b97e7fc5badf4026093739db64fc0a10ce5cd1605078fea"
+        },
+        {
+          "id": "media.0e8d4b72ccf1508b3d83888c7a7d1b431dc3e1cbf12148c3cdffe34fcd34311c",
+          "sha256": "0e8d4b72ccf1508b3d83888c7a7d1b431dc3e1cbf12148c3cdffe34fcd34311c"
+        },
+        {
+          "id": "media.788716c0dd28f6af2a0c03a73ed71116d2d1b807ddb0fb69d09b5b891dc208de",
+          "sha256": "788716c0dd28f6af2a0c03a73ed71116d2d1b807ddb0fb69d09b5b891dc208de"
+        },
+        {
+          "id": "media.9748ed17587bfeb3e3fbbf5c19449dce65c3d990865df9f06f13885b38b484b1",
+          "sha256": "9748ed17587bfeb3e3fbbf5c19449dce65c3d990865df9f06f13885b38b484b1"
+        }
+      ]
+    },
+    {
+      "id": "media.60587d9d61d09f412cc6710b2e439dab1132f6213a1d0eadb50b4259e6d46f35",
+      "sha256": "60587d9d61d09f412cc6710b2e439dab1132f6213a1d0eadb50b4259e6d46f35",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2-authoring/first-scene-overview.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 170896,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/treatment-refinement-v3.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/authoring/qa-first-render/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T14:46:44.813Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596",
+          "sha256": "7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596"
+        }
+      ]
+    },
+    {
+      "id": "media.f93fbce69e22460dddf3507590cf842776ed957291e20b9723b9e200a43a767a",
+      "sha256": "f93fbce69e22460dddf3507590cf842776ed957291e20b9723b9e200a43a767a",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2-authoring/first-phone-readability.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 414481,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/treatment-refinement-v3.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/authoring/qa-first-render/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T14:46:48.063Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596",
+          "sha256": "7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596"
+        }
+      ]
+    },
+    {
+      "id": "media.e5bba37747acefe0191c4a88be1c9c74dac6a15ea3a0f275557b85ded99f5352",
+      "sha256": "e5bba37747acefe0191c4a88be1c9c74dac6a15ea3a0f275557b85ded99f5352",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2-authoring/first-motion-progression.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 377726,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/treatment-refinement-v3.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/authoring/qa-first-render/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T14:46:45.297Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596",
+          "sha256": "7d6de70c31bd4ebdec709fc3c29dcd31ac93912cdc3f0e25f4b85fdd799af596"
+        }
+      ]
+    },
+    {
+      "id": "media.43f5749af9956e4b2299a099b6e8e723f8ad3a3117f90725216a5275171c1a92",
+      "sha256": "43f5749af9956e4b2299a099b6e8e723f8ad3a3117f90725216a5275171c1a92",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2-authoring/initial-macro.png",
+      "mediaType": "image/png",
+      "bytes": 2544283,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-15/production-v1/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-14T14:32:22.090Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.3417ca6f91f76ec62eb910cd62b9a18a050af43b5fd13769df8f3bf8c32f7d51",
+      "sha256": "3417ca6f91f76ec62eb910cd62b9a18a050af43b5fd13769df8f3bf8c32f7d51",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2-authoring/initial-calcium.png",
+      "mediaType": "image/png",
+      "bytes": 1809546,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/rendered-corrections.json",
+          "content-intelligence/cycles/cycle-15/production-v1/rights-provenance.json"
+        ],
+        "createdAt": "2026-10-14T14:32:22.094Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": []
+    },
+    {
+      "id": "media.cc80a8d2b06d5567eb09eac3908a5e1276cd1cb37143d4de6b30d5d232c952ba",
+      "sha256": "cc80a8d2b06d5567eb09eac3908a5e1276cd1cb37143d4de6b30d5d232c952ba",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/contact-sheet.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 1722304,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:06:11.236Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.3ac38832775cb224547696f79b1f08ff608fdd8abcb4432794aeea26047b67fc",
+      "sha256": "3ac38832775cb224547696f79b1f08ff608fdd8abcb4432794aeea26047b67fc",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/scene-overview.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 167332,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:45.578Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.7d9dc64429c1719dea23f94e721f2c06020965e4dde824418f3ba187045994ab",
+      "sha256": "7d9dc64429c1719dea23f94e721f2c06020965e4dde824418f3ba187045994ab",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/phone-readability.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 405493,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:48.993Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.ba2945c9c4fc5d68a8803a25c88902f572e877607e0378e59ff1b941b5a7eb26",
+      "sha256": "ba2945c9c4fc5d68a8803a25c88902f572e877607e0378e59ff1b941b5a7eb26",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/motion-progression.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 377917,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:46.086Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.661d74ffdbc8c79824f9eb3619220aab50c85ca8a9bd111b3f00e27760793323",
+      "sha256": "661d74ffdbc8c79824f9eb3619220aab50c85ca8a9bd111b3f00e27760793323",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/captions-1.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 231932,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:44.615Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.37fa8d5444437619102174603ea9e6a839388a24543a8d1b8925a9051380ca3e",
+      "sha256": "37fa8d5444437619102174603ea9e6a839388a24543a8d1b8925a9051380ca3e",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/captions-2.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 239200,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:45.124Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.7db5abeed2a5689fc92a784fb8ca5d70261647699e8bab0b453fdaca0dd88feb",
+      "sha256": "7db5abeed2a5689fc92a784fb8ca5d70261647699e8bab0b453fdaca0dd88feb",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/sequence-1.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 330031,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:46.357Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.3f89a962fa1120a8efc12cb96cf8fdc61584f89a8b99aecdeeb3c9db2975f792",
+      "sha256": "3f89a962fa1120a8efc12cb96cf8fdc61584f89a8b99aecdeeb3c9db2975f792",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/sequence-2.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 280506,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:46.803Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.c5811744f51b302ca9595ee48bdadb309c43eb5d19e715621a750fd4d8b84f45",
+      "sha256": "c5811744f51b302ca9595ee48bdadb309c43eb5d19e715621a750fd4d8b84f45",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/sequence-3.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 327808,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:47.482Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
+    },
+    {
+      "id": "media.934e23eba075c7eb1c7ae314a7f072b5c5875a8f338306478dabb2b67a51b037",
+      "sha256": "934e23eba075c7eb1c7ae314a7f072b5c5875a8f338306478dabb2b67a51b037",
+      "canonicalPath": "artifacts/qa-evidence/flytrap-cycle15-v2/sequence-4.jpg",
+      "mediaType": "image/jpeg",
+      "bytes": 113766,
+      "provenance": {
+        "kind": "evidence-snapshot",
+        "sourceCommit": "10fa4d9fecc7819c99635c2f612ab012747cdc9c",
+        "sourceRecords": [
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/visual-inspection.json",
+          "content-intelligence/cycles/cycle-15/revision-v2/qa/sheet-bindings.json"
+        ],
+        "createdAt": "2026-10-14T15:05:48.250Z",
+        "creationTimeUnknownReason": null
+      },
+      "parents": [
+        {
+          "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+          "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+        }
+      ]
     }
   ]
 }
