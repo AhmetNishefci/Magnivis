@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "cycleId": "cycle.15",
+  "kind": "owner-master-playback-readability-approval",
+  "enteredAt": "2026-10-15T10:21:38.232811+00:00",
+  "reviewer": "Ahmet — owner",
+  "evidenceBasis": "explicit-owner-message",
+  "instruction": {
+    "path": "content-intelligence/cycles/cycle-15/delivery-v2/owner-playback-instruction-v1.md",
+    "sha256": "f6244004df8db922e7cd34be7b66e6a6257382e29ca23538f31722108b2c5265"
+  },
+  "master": {
+    "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+    "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+  },
+  "masterPath": "artifacts/masters/flytrap-cycle15-candidate-v2.mp4",
+  "masterSelection": {
+    "path": "content-intelligence/cycles/cycle-15/delivery-v2/master-selection-v2.json",
+    "sha256": "512441e1280b163b3ee88b28d3be5f11c2164478d0d5d4a3be4e3b38a4b32fc0"
+  },
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-15/delivery-v2/master-approval-v2.json",
+    "sha256": "7c66cd2da6780cc0df40c5112b260f0586b3b2749d9d068cb5f50eb572877d35"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-15/delivery-v2/release-v2.json",
+    "sha256": "47849a0a560c067b3a9629cfe6172cb2909572199ab6cd301a0f50f2f03ec842"
+  },
+  "cover": {
+    "id": "media.5fdd80fee901543bec55a200ab28f5b205468afa795dd5fae8c948b060ac6a09",
+    "sha256": "5fdd80fee901543bec55a200ab28f5b205468afa795dd5fae8c948b060ac6a09"
+  },
+  "coverPath": "artifacts/covers/flytrap-cycle15-delivery-v2/frame-90-3s.png",
+  "packages": [
+    {
+      "path": "content-intelligence/cycles/cycle-15/delivery-v2/youtube/manifest-v2.json",
+      "sha256": "50c9f21c9876995746aed84c326dc21cbae2bd7753dbcd9ca5832a68e388beb8"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/delivery-v2/tiktok/manifest-v2.json",
+      "sha256": "583d86e7f09a7f87bcd62c0765dcd5bd9145d691b9175d67b1401aa4909acb1b"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/delivery-v2/instagram/manifest-v2.json",
+      "sha256": "92c89f5f44c53c1bc43d3379a91d5e043ba4e2a7f32bbfc39dfedf59769e9746"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-15/delivery-v2/facebook/manifest-v2.json",
+      "sha256": "a34c3759203f052a593e0896e51fed2ec95fa4a214de65e37cc982e05b250c54"
+    }
+  ],
+  "priorPendingCondition": {
+    "path": "content-intelligence/cycles/cycle-15/delivery-v2/owner-playback-condition-v2.json",
+    "sha256": "2773276f97c09c43de519bf83a63b40ad40564183d080bd25a629611af01818b"
+  },
+  "completePlayback": "approved-owner-reported",
+  "visualPresentation": "approved-owner-reported",
+  "narration": "approved-owner-reported",
+  "audio": "approved-owner-reported",
+  "captions": "approved-owner-reported",
+  "pacing": "approved-owner-reported",
+  "phoneSizedReadability": "approved-owner-reported",
+  "ownerPlaybackConditionSatisfied": true,
+  "playbackSpeed": null,
+  "device": null,
+  "os": null,
+  "appVersion": null,
+  "reviewPerformedAt": null,
+  "unknownDetailsReason": "Owner confirms complete viewing and readability; exact viewing time, playback rate, device and native app not supplied.",
+  "nativePlatformQA": {
+    "youtube": "pending-owner-test",
+    "tiktok": "pending-owner-test",
+    "instagram": "pending-owner-test",
+    "facebook": "pending-owner-test"
+  },
+  "nativePlatformPassInferred": false,
+  "presentationUnknownsAccepted": false,
+  "publicationAuthorized": false,
+  "platformActions": [],
+  "v3Superseded": true,
+  "v4Cancelled": true,
+  "mediaPackagesUnchanged": true,
+  "nextOwnerGate": "AHMET — PUBLICATION REVIEW / AUTHORIZATION",
+  "reconciliation": "This additive review record satisfies the earlier pending owner playback/readability condition for exact V2. Package metadata and prior review remain unchanged as preparation-time snapshots; their pending-owner fields are historical, superseded only by this explicit owner report. Native-platform checks and release authorization are not supplied."
+}
