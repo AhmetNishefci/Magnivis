@@ -1,0 +1,7 @@
+# Explicit owner-selected production intake
+
+This addendum documents the narrow capability used by the October 16, 2026 Voyager assignment. The owner’s explicit selected-topic and production instruction takes precedence over the ordinary autonomous discovery sequence in WORKFLOW-V3. All downstream evidence, direction, master, presentation and publication contracts remain in force.
+
+Explicit owner-selected production assignments may use `explicit-owner-selected-topic` intake instead of autonomous discovery. Retain the exact owner instruction, subject and cycle identity; validate inspected preliminary evidence, truthful framing and the real explanatory payoff. This path permits one candidate and records no invented comparison or search. Its instruction must equal the cycle-start instruction, and the autonomous selector cannot emit this method. If the same owner message explicitly authorizes development and candidate production, record that supplied premise authority against the inspected selected opportunity; do not request the same authority again. Evidence verification, adaptive direction, production, exact master review and publication authorization remain separate. No master or publication approval follows from an assignment. Historical cycles and the normal autonomous path are unchanged.
+
+The existing WORKFLOW-V3 file is hash-bound by historical cycle discovery evidence and remains byte-for-byte unchanged. This addendum neither changes those historical records nor grants future production authority without a new explicit owner assignment.

@@ -230,6 +230,7 @@ export const transitionCycle = (input: Cycle, eventInput: unknown, registry: Med
     if(event.stage==='discovery') {
       const selected=validateTopicSelection(readBoundRecord(event.record,root),root);
       if(selected.cycleId!==cycle.id)throw new Error('Discovery evidence belongs to another cycle');
+      if(selected.method==='explicit-owner-selected-topic'){const owner=z.object({instruction:text}).passthrough().parse(readBoundRecord(selected.ownerSelection!,root));if(owner.instruction!==cycleStartAuthoritySchema.parse(readBoundRecord(cycle.authority,root)).instruction)throw new Error('Owner-selected intake must bind the actual cycle-start instruction');}
       if(selected.outcome!=='selected') throw new Error('Continue discovery or escalate; no eligible selection');
       if(requiresPremiseReview(cycle.authority)){
         validatePremiseSelection(selected,root);validateEditorialLearningReview(selected,root);

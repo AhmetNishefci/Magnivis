@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-16T16:59:03.040Z",
+  "input": "artifacts/masters/voyager-cycle16-candidate-v1.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 44.86666666666667
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -23.6,
+    "maxVolumeDb": -2.2,
+    "duration": 44.928,
+    "sizeBytes": 28243391,
+    "bitRate": 5029093
+  },
+  "passed": true,
+  "failures": []
+}

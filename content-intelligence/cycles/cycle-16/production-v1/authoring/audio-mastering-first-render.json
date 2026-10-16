@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-16T16:57:13.893Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/voyager-render-v1.mp4",
+    "sha256": "41bea6900af5103295e9442d96549467acda1c4d13e5912ee609f1eb59af114d",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/voyager-cycle16-candidate-v1.mp4",
+    "sha256": "a0ef1943be084f582c3b28c660732e187e6f7298443744f84b7e3343bff1cd97"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.52",
+    "input_tp": "-5.07",
+    "input_lra": "2.90",
+    "input_thresh": "-33.68",
+    "output_i": "-18.90",
+    "output_tp": "-2.00",
+    "output_lra": "2.90",
+    "output_thresh": "-29.96",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.10"
+  },
+  "gainDb": 2.87,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

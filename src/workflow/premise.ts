@@ -9,7 +9,7 @@ export const premiseAssessmentSchema=z.object({
 }).strict();
 export const premiseAlignmentSchema=z.object({selectionSha256:z.string().regex(/^[a-f0-9]{64}$/),preservesPublishingOpportunity:z.boolean(),rationale:text}).strict();
 export const validatePremiseSelection=(selection:TopicSelection,root=process.cwd())=>{
- if(selection.outcome!=='selected'||!selection.premiseAssessment)throw new Error('Premise review requires autonomous selection and preliminary inspected evidence');
+ if(selection.outcome!=='selected'||!selection.premiseAssessment)throw new Error('Premise review requires a selected topic and preliminary inspected evidence');
  const selected=selection.candidates.find(c=>c.id===selection.selectedId)!;
  const assessment=premiseAssessmentSchema.parse(selection.premiseAssessment);
  const coverage=new Set<string>();

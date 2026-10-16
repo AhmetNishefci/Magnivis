@@ -1,0 +1,760 @@
+{
+  "draftPackage": {
+    "id": "voyager-memory",
+    "revision": 1,
+    "topic": "How NASA Rescued Voyager 1's Broken Memory",
+    "centralQuestion": "How did engineers restore readable data from an unreachable spacecraft with failed memory?",
+    "taxonomy": {
+      "pillar": "technology-built-world",
+      "domains": [
+        "space-exploration",
+        "software-engineering"
+      ],
+      "topics": [
+        "voyager-1",
+        "remote-repair",
+        "memory-relocation"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "Relocating and reconnecting software can work around permanently failed memory hardware.",
+    "viewerPayoff": "See code divided among spare working memory locations and references updated, while the damaged chip stays failed.",
+    "sources": [
+      {
+        "id": "source.voyager.april",
+        "organization": "NASA/JPL-Caltech",
+        "title": "NASA’s Voyager1Resumes Sending Engineering Updates to Earth",
+        "sourceType": "government",
+        "url": "https://science.nasa.gov/blogs/voyager/2024/04/22/nasas-voyager-1-resumes-sending-engineering-updates-to-earth/",
+        "retrieved": "2026-10-16",
+        "notes": "Actual primary article body inspected via browser tool; source snapshot retained. "
+      },
+      {
+        "id": "source.voyager.june",
+        "organization": "NASA/JPL-Caltech",
+        "title": "Voyager1Returning Science Data From All Four Instruments",
+        "sourceType": "government",
+        "url": "https://science.nasa.gov/blogs/voyager/2024/06/13/voyager-1-returning-science-data-from-all-four-instruments/",
+        "retrieved": "2026-10-16",
+        "notes": "Actual primary article body inspected via browser tool; source snapshot retained. May/June command-day discrepancy explicitly omitted."
+      }
+    ],
+    "claims": [
+      {
+        "id": "voyager-memory.claim.outage",
+        "statement": "Voyager1 stopped returning readable science and engineering data on November14,2023; radio contact and command reception continued.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Outage start, not total radio silence."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "voyager-memory.claim.distance",
+        "statement": "In April2024 Voyager1 was over15billion miles from Earth.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Historical approximate Earth distance; no current position assertion."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "voyager-memory.claim.memory",
+        "statement": "A failed chip stored part of the flight data subsystem memory, including code needed to package science and engineering data.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Not an assertion about the chip failure cause."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "voyager-memory.claim.workaround",
+        "statement": "Unable to repair the chip, engineers divided affected code into sections, placed it elsewhere in FDS memory and adjusted code and references to its new locations.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "The chip stayed failed; data-packaging code relocation was staged."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "voyager-memory.claim.capacity",
+        "statement": "No single functioning memory location had room for the entire affected code section.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "A qualitative capacity constraint, not a literal measured memory map."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "voyager-memory.claim.delay",
+        "statement": "A radio command took about22.5hours one way at the time of the April2024repair.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Not22.5hours round trip; not a current2026light time."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "voyager-memory.claim.engineering",
+        "statement": "On April20,2024, the team received readable health/status engineering data after relocating the packaging code on April18.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Not science recovery in April."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "voyager-memory.claim.science",
+        "statement": "Science data returned later: two instruments reported by May22; all four by June13,2024.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.june",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "notes": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/june.json"
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "May report says commands May17; June report says May19. Exact May command day omitted; staged recovery is consistent."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "voyager-memory.caveat.timeline",
+        "statement": "Historical2023–24repair. Engineering recovery and later science recovery are separate; cause of physical chip failure unspecified.",
+        "claimIds": [
+          "voyager-memory.claim.outage",
+          "voyager-memory.claim.distance",
+          "voyager-memory.claim.memory",
+          "voyager-memory.claim.workaround",
+          "voyager-memory.claim.capacity",
+          "voyager-memory.claim.delay",
+          "voyager-memory.claim.engineering",
+          "voyager-memory.claim.science"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "voyager-memory.hook.unreachable",
+        "archetype": "unreachable-repair",
+        "text": "Over fifteen billion miles away, Voyager One was sending signals nobody could read.",
+        "viewerPromise": "See code divided among spare working memory locations and references updated, while the damaged chip stays failed.",
+        "claimIds": [
+          "voyager-memory.claim.distance",
+          "voyager-memory.claim.outage"
+        ]
+      },
+      {
+        "id": "voyager-memory.hook.workaround",
+        "archetype": "repair-without-replacement",
+        "text": "The chip stayed broken. The software worked around it.",
+        "viewerPromise": "See code divided among spare working memory locations and references updated, while the damaged chip stays failed.",
+        "claimIds": [
+          "voyager-memory.claim.workaround"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "voyager-memory.story.relocate",
+        "title": "Repair without replacement",
+        "description": "See code divided among spare working memory locations and references updated, while the damaged chip stays failed.",
+        "claimIds": [
+          "voyager-memory.claim.outage",
+          "voyager-memory.claim.distance",
+          "voyager-memory.claim.memory",
+          "voyager-memory.claim.workaround",
+          "voyager-memory.claim.capacity",
+          "voyager-memory.claim.delay",
+          "voyager-memory.claim.engineering",
+          "voyager-memory.claim.science"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "voyager-memory.visual.memory",
+        "title": "Move instructions, preserve damage",
+        "description": "Abstract memory capacity and relocation; not a real schematic or literal chip repair.",
+        "claimIds": [
+          "voyager-memory.claim.workaround",
+          "voyager-memory.claim.capacity"
+        ]
+      }
+    ],
+    "relatedQuestions": [],
+    "followUpOpportunities": [],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "voyager-memory.asset.remote-repair",
+    "revision": 1,
+    "knowledgePackageId": "voyager-memory",
+    "assetType": "short-form-video",
+    "editorialPurpose": "See code divided among spare working memory locations and references updated, while the damaged chip stays failed.",
+    "storyAngle": "A physical failure survives while software finds room elsewhere.",
+    "hookId": "voyager-memory.hook.unreachable",
+    "selectedClaimIds": [
+      "voyager-memory.claim.outage",
+      "voyager-memory.claim.distance",
+      "voyager-memory.claim.memory",
+      "voyager-memory.claim.workaround",
+      "voyager-memory.claim.capacity",
+      "voyager-memory.claim.delay",
+      "voyager-memory.claim.engineering",
+      "voyager-memory.claim.science"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 35,
+      "maximum": 55
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "voyager-memory.asset.remote-repair.script.1",
+          "type": "factual",
+          "text": "Over fifteen billion miles away, Voyager One was sending signals nobody could read.",
+          "claimIds": [
+            "voyager-memory.claim.distance",
+            "voyager-memory.claim.outage"
+          ]
+        },
+        {
+          "id": "voyager-memory.asset.remote-repair.script.2",
+          "type": "factual",
+          "text": "The trouble began in November twenty twenty-three: a failed memory chip in its data-packaging computer.",
+          "claimIds": [
+            "voyager-memory.claim.outage",
+            "voyager-memory.claim.memory"
+          ]
+        },
+        {
+          "id": "voyager-memory.asset.remote-repair.script.3",
+          "type": "factual",
+          "text": "Engineers couldn't repair the chip. So they moved the affected code.",
+          "claimIds": [
+            "voyager-memory.claim.workaround"
+          ]
+        },
+        {
+          "id": "voyager-memory.asset.remote-repair.script.4",
+          "type": "factual",
+          "text": "But it wouldn't fit in one place.",
+          "claimIds": [
+            "voyager-memory.claim.capacity"
+          ]
+        },
+        {
+          "id": "voyager-memory.asset.remote-repair.script.5",
+          "type": "factual",
+          "text": "They split it across working memory, then updated the instructions so the pieces still worked together.",
+          "claimIds": [
+            "voyager-memory.claim.workaround"
+          ]
+        },
+        {
+          "id": "voyager-memory.asset.remote-repair.script.6",
+          "type": "factual",
+          "text": "A command took about twenty-two and a half hours just to reach the spacecraft.",
+          "claimIds": [
+            "voyager-memory.claim.delay"
+          ]
+        },
+        {
+          "id": "voyager-memory.asset.remote-repair.script.7",
+          "type": "factual",
+          "text": "On April twentieth, twenty twenty-four, readable engineering data came back. Science data followed later.",
+          "claimIds": [
+            "voyager-memory.claim.engineering",
+            "voyager-memory.claim.science"
+          ]
+        },
+        {
+          "id": "voyager-memory.asset.remote-repair.script.8",
+          "type": "factual",
+          "text": "The chip stayed broken. The software worked around it.",
+          "claimIds": [
+            "voyager-memory.claim.workaround"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.1",
+        "label": "Unreachable computer",
+        "purpose": "Credited NASA spacecraft imagery, prominent distance; corrupted illustrative receiving stream becomes unreadable.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.1"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.2",
+        "label": "Locate the failure",
+        "purpose": "Move into an explicitly schematic FDS memory array; isolate one failed region without claiming exact hardware layout.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.2"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.3",
+        "label": "Move the code",
+        "purpose": "Keep failed chip red; affected software leaves the failed address region as amber instruction tiles.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.3"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.4",
+        "label": "The capacity problem",
+        "purpose": "One unbroken code strip approaches a short free slot and cannot fit; no physical chip movement.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.4"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.5",
+        "label": "Split and reconnect",
+        "purpose": "Strip divides into three sections and travels to separate available slots; update connector routes in order, then show a coherent instruction path.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.5"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.6",
+        "label": "The wait",
+        "purpose": "Pull out to a schematic Earth-to-Voyager radio path, travel cue and one-way22.5h notation dated April2024.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.6"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.7",
+        "label": "Readable again",
+        "purpose": "Engineering response resolves into clean illustrative data lines; date April20,2024. Science later appears as a separate dated milestone.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.7"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.beat.8",
+        "label": "Work around the damage",
+        "purpose": "Return to NASA spacecraft with a small schematic bypass around the still-failed region; no launch, chase camera or physical repair.",
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.8"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.1",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.1",
+        "objective": "Credited NASA spacecraft imagery, prominent distance; corrupted illustrative receiving stream becomes unreadable.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.1"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.distance",
+          "voyager-memory.claim.outage"
+        ],
+        "notes": "Unreachable computer; all code,hardware geometry and receiving data illustrative."
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.2",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.2",
+        "objective": "Move into an explicitly schematic FDS memory array; isolate one failed region without claiming exact hardware layout.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.2"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.outage",
+          "voyager-memory.claim.memory"
+        ],
+        "notes": "Locate the failure; all code,hardware geometry and receiving data illustrative."
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.3",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.3",
+        "objective": "Keep failed chip red; affected software leaves the failed address region as amber instruction tiles.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.3"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.workaround"
+        ],
+        "notes": "Move the code; all code,hardware geometry and receiving data illustrative."
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.4",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.4",
+        "objective": "One unbroken code strip approaches a short free slot and cannot fit; no physical chip movement.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.4"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.capacity"
+        ],
+        "notes": "The capacity problem; all code,hardware geometry and receiving data illustrative."
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.5",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.5",
+        "objective": "Strip divides into three sections and travels to separate available slots; update connector routes in order, then show a coherent instruction path.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.5"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.workaround"
+        ],
+        "notes": "Split and reconnect; all code,hardware geometry and receiving data illustrative."
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.6",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.6",
+        "objective": "Pull out to a schematic Earth-to-Voyager radio path, travel cue and one-way22.5h notation dated April2024.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.6"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.delay"
+        ],
+        "notes": "The wait; all code,hardware geometry and receiving data illustrative."
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.7",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.7",
+        "objective": "Engineering response resolves into clean illustrative data lines; date April20,2024. Science later appears as a separate dated milestone.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.7"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.engineering",
+          "voyager-memory.claim.science"
+        ],
+        "notes": "Readable again; all code,hardware geometry and receiving data illustrative."
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.visual.8",
+        "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.8",
+        "objective": "Return to NASA spacecraft with a small schematic bypass around the still-failed region; no launch, chase camera or physical repair.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Credited NASA/JPL-Caltech concept images.",
+          "Original memory and radio-path motion."
+        ],
+        "scriptSegmentIds": [
+          "voyager-memory.asset.remote-repair.script.8"
+        ],
+        "claimIds": [
+          "voyager-memory.claim.workaround"
+        ],
+        "notes": "Work around the damage; all code,hardware geometry and receiving data illustrative."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Established local Kokoro af_heart; lucid, warm and deliberate. Pauses for capacity failure, split and engineering recovery.",
+      "pronunciationNotes": [
+        "Voyager One spoken, Voyager1in on-screen labels.",
+        "Twenty-two and a half hours one way; dates fully spoken."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.16",
+    "topicCandidateId": "topic.cycle16.voyager",
+    "enteredAt": "2026-10-16T16:50:54.963Z",
+    "reviewer": "Codex internal evidence review; not owner master approval",
+    "premiseAlignment": {
+      "selectionSha256": "d1e24af4c76488ced9790c7c8402130ef18c711a65a04f18bbfed9f427861d3a",
+      "preservesPublishingOpportunity": true,
+      "rationale": "Exact owner-selected code-relocation payoff preserved. Nov2023outage date corrects background timeline without changing the selected opportunity."
+    },
+    "packageSha256": "1de8c7868916cf0de654834d18bc2abaa8b6efb70233fa751482c53ae3130854",
+    "assetSha256": "17707af38767a679840630456886a9de77d03bfc9e67523c55de7fc63c135c30",
+    "scriptSha256": "a3002736a6683c7e3e0bdb0fa9b61ea9a064f85ebe2efcdeb0ecbdc7e4bdd87e",
+    "inspections": [
+      {
+        "sourceId": "source.voyager.april",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs."
+        ],
+        "supportsClaimIds": [
+          "voyager-memory.claim.outage",
+          "voyager-memory.claim.distance",
+          "voyager-memory.claim.memory",
+          "voyager-memory.claim.workaround",
+          "voyager-memory.claim.capacity",
+          "voyager-memory.claim.delay",
+          "voyager-memory.claim.engineering"
+        ],
+        "limitations": [
+          "Official engineering account; no hardware inspection or independent telemetry.",
+          "May17/May19command-day discrepancy not needed for narration and explicitly omitted."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-16/research/verified-april.json",
+          "sha256": "4010ce5b6ea61db921e9e44fddd3796356d643055231a78708d993f839032621"
+        },
+        "sourceQualityRationale": "Contemporaneous NASA mission report, appropriate primary evidence for spacecraft operations."
+      },
+      {
+        "sourceId": "source.voyager.june",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs."
+        ],
+        "supportsClaimIds": [
+          "voyager-memory.claim.science"
+        ],
+        "limitations": [
+          "Official engineering account; no hardware inspection or independent telemetry.",
+          "May17/May19command-day discrepancy not needed for narration and explicitly omitted."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-16/research/verified-june.json",
+          "sha256": "c7d116b98a7d0bf81eb748010d059010093a39e99cd1e47c74566c646a432f4f"
+        },
+        "sourceQualityRationale": "Contemporaneous NASA mission report, appropriate primary evidence for spacecraft operations."
+      }
+    ],
+    "claims": [
+      {
+        "id": "voyager-memory.claim.outage",
+        "statementSha256": "177de626496cab75cfd3704f2bd2e0917f34886c3ed27c8ec14dce5d81e519b1",
+        "disposition": "verify",
+        "rationale": "Outage start, not total radio silence.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "voyager-memory.claim.distance",
+        "statementSha256": "96d2e41c1d4f2dcd3f169ae787de50c8ec83879a09a912111fb35da19bbac28f",
+        "disposition": "verify",
+        "rationale": "Historical approximate Earth distance; no current position assertion.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "voyager-memory.claim.memory",
+        "statementSha256": "c0d84f199372b323f243bb5c361cb392b7ba71d1e9e16987cbb2debbe4ecfe39",
+        "disposition": "verify",
+        "rationale": "Not an assertion about the chip failure cause.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "voyager-memory.claim.workaround",
+        "statementSha256": "c35541db6b27a7765b3176eb5c20d91156f0b0126c905caafa89c32b39e7ef71",
+        "disposition": "verify",
+        "rationale": "The chip stayed failed; data-packaging code relocation was staged.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "voyager-memory.claim.capacity",
+        "statementSha256": "85f2415bfa0014723b6174859f7d7c42d651903d976b98478bdab39a76d3f96c",
+        "disposition": "verify",
+        "rationale": "A qualitative capacity constraint, not a literal measured memory map.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "voyager-memory.claim.delay",
+        "statementSha256": "5aeab1ee254cecf7d61da492060305eb8d726763082724e5398a2a2c11c53094",
+        "disposition": "verify",
+        "rationale": "Not22.5hours round trip; not a current2026light time.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "voyager-memory.claim.engineering",
+        "statementSha256": "c66ae3ffe7ee2674b54ba7b33193cb5761780eec593ad971919ab693d5ee3b04",
+        "disposition": "verify",
+        "rationale": "Not science recovery in April.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.april",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/april.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "voyager-memory.claim.science",
+        "statementSha256": "ae6745c21e627238820a5535a0d79e9d40d84f214fc236cc32673250347411ec",
+        "disposition": "verify",
+        "rationale": "May report says commands May17; June report says May19. Exact May command day omitted; staged recovery is consistent.",
+        "evidence": [
+          {
+            "sourceId": "source.voyager.june",
+            "locator": "Full article body: failure, relocation, dated recovery and distance/light-time paragraphs.",
+            "assessment": "Inspected exact source snapshot content-intelligence/cycles/cycle-16/research/june.json",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "Radio signal continued; unreadable data is not silence.",
+      "Code moves, hardware does not. Failed chip remains red/disabled throughout.",
+      "Memory slots and instruction tiles are qualitative; not real Voyager software, literal addresses or measured capacity.",
+      "April20engineering data is separate from later science recovery.",
+      "Distance and light time explicitly historical April2024.",
+      "No physical chip repair, astronaut intervention, unsupported failure cause or present-day health claim."
+    ],
+    "comprehensionReview": "Concrete vocabulary: code represented as instructions; no addresses, machine language or programming prerequisite. A failed fit motivates splitting. Connecting separate pieces explains reference updates. Dated return is the promised payoff.",
+    "rightsReview": "NASA/JPL concept imagery credited and labeled artist concept; no identifiable people or logos. JPL image-use policy inspected, exact image pages and downloads retained. Original graphics/sound; existing licensed fonts and local Kokoro.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Historical engineering explanation within explicit owner scope; no external release or paid service."
+    },
+    "exceptionalConditions": []
+  }
+}

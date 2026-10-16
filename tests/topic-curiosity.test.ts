@@ -27,6 +27,20 @@ const fixture = () => {
 };
 
 describe('Prospective curiosity standard inside V3', () => {
+  it('admits one exact owner-selected subject only with scoped production authority and keeps autonomous selection separate', async () => {
+    const f=fixture();
+    const owner={cycleId:f.selection.cycleId,selectedSubject:f.selection.candidates[0]!.subject,evidenceBasis:'explicit-owner-message',instruction:'Produce this exact selected topic through candidate master review.',productionAuthorized:true,masterApprovalGranted:false,publicationApprovalGranted:false};
+    const ownerSelection=await f.preserve(owner);
+    const selected={...f.selection,method:'explicit-owner-selected-topic',ownerSelection,candidates:[f.selection.candidates[0]]};
+    expect(validateTopicSelection(selected,f.root).selectedId).toBe('one');
+    expect(()=>validateTopicSelection({...selected,ownerSelection:undefined},f.root)).toThrow(/owner evidence/);
+    expect(()=>validateTopicSelection({...selected,cycleId:'cycle.wrong'},f.root)).toThrow(/exact authorized/);
+    expect(()=>validateTopicSelection({...selected,candidates:f.selection.candidates},f.root)).toThrow(/exact authorized/);
+    const unapproved=await f.preserve({...owner,productionAuthorized:false});
+    expect(()=>validateTopicSelection({...selected,ownerSelection:unapproved},f.root)).toThrow();
+    expect(()=>validateTopicSelection({...f.selection,candidates:[f.selection.candidates[0]]},f.root)).toThrow(/Autonomous discovery/);
+    await expect(chooseTopicAutonomously({root:f.root,maximumRounds:1,preserve:f.preserve,discoverAndCompare:async()=>selected})).rejects.toThrow(/impersonate owner/);
+  });
   it('requires qualitative premise and absolute pool judgments without a numerical score', () => {
     const f = fixture();
     expect(validateTopicSelection(f.selection, f.root).selectedId).toBe('one');

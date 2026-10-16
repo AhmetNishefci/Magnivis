@@ -1,0 +1,329 @@
+{
+  "id": "voyager-memory.asset.remote-repair",
+  "revision": 1,
+  "knowledgePackageId": "voyager-memory",
+  "assetType": "short-form-video",
+  "editorialPurpose": "See code divided among spare working memory locations and references updated, while the damaged chip stays failed.",
+  "storyAngle": "A physical failure survives while software finds room elsewhere.",
+  "hookId": "voyager-memory.hook.unreachable",
+  "selectedClaimIds": [
+    "voyager-memory.claim.outage",
+    "voyager-memory.claim.distance",
+    "voyager-memory.claim.memory",
+    "voyager-memory.claim.workaround",
+    "voyager-memory.claim.capacity",
+    "voyager-memory.claim.delay",
+    "voyager-memory.claim.engineering",
+    "voyager-memory.claim.science"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 35,
+    "maximum": 55
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "voyager-memory.asset.remote-repair.script.1",
+        "type": "factual",
+        "text": "Over fifteen billion miles away, Voyager One was sending signals nobody could read.",
+        "claimIds": [
+          "voyager-memory.claim.distance",
+          "voyager-memory.claim.outage"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.script.2",
+        "type": "factual",
+        "text": "The trouble began in November twenty twenty-three: a failed memory chip in its data-packaging computer.",
+        "claimIds": [
+          "voyager-memory.claim.outage",
+          "voyager-memory.claim.memory"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.script.3",
+        "type": "factual",
+        "text": "Engineers couldn't repair the chip. So they moved the affected code.",
+        "claimIds": [
+          "voyager-memory.claim.workaround"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.script.4",
+        "type": "factual",
+        "text": "But it wouldn't fit in one place.",
+        "claimIds": [
+          "voyager-memory.claim.capacity"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.script.5",
+        "type": "factual",
+        "text": "They split it across working memory, then updated the instructions so the pieces still worked together.",
+        "claimIds": [
+          "voyager-memory.claim.workaround"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.script.6",
+        "type": "factual",
+        "text": "A command took about twenty-two and a half hours just to reach the spacecraft.",
+        "claimIds": [
+          "voyager-memory.claim.delay"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.script.7",
+        "type": "factual",
+        "text": "On April twentieth, twenty twenty-four, readable engineering data came back. Science data followed later.",
+        "claimIds": [
+          "voyager-memory.claim.engineering",
+          "voyager-memory.claim.science"
+        ]
+      },
+      {
+        "id": "voyager-memory.asset.remote-repair.script.8",
+        "type": "factual",
+        "text": "The chip stayed broken. The software worked around it.",
+        "claimIds": [
+          "voyager-memory.claim.workaround"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.1",
+      "label": "Unreachable computer",
+      "purpose": "Credited NASA spacecraft imagery, prominent distance; corrupted illustrative receiving stream becomes unreadable.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.1"
+      ]
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.2",
+      "label": "Locate the failure",
+      "purpose": "Move into an explicitly schematic FDS memory array; isolate one failed region without claiming exact hardware layout.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.2"
+      ]
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.3",
+      "label": "Move the code",
+      "purpose": "Keep failed chip red; affected software leaves the failed address region as amber instruction tiles.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.3"
+      ]
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.4",
+      "label": "The capacity problem",
+      "purpose": "One unbroken code strip approaches a short free slot and cannot fit; no physical chip movement.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.4"
+      ]
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.5",
+      "label": "Split and reconnect",
+      "purpose": "Strip divides into three sections and travels to separate available slots; update connector routes in order, then show a coherent instruction path.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.5"
+      ]
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.6",
+      "label": "The wait",
+      "purpose": "Pull out to a schematic Earth-to-Voyager radio path, travel cue and one-way22.5h notation dated April2024.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.6"
+      ]
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.7",
+      "label": "Readable again",
+      "purpose": "Engineering response resolves into clean illustrative data lines; date April20,2024. Science later appears as a separate dated milestone.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.7"
+      ]
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.beat.8",
+      "label": "Work around the damage",
+      "purpose": "Return to NASA spacecraft with a small schematic bypass around the still-failed region; no launch, chase camera or physical repair.",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.8"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.1",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.1",
+      "objective": "Credited NASA spacecraft imagery, prominent distance; corrupted illustrative receiving stream becomes unreadable.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.1"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.distance",
+        "voyager-memory.claim.outage"
+      ],
+      "notes": "Unreachable computer; all code,hardware geometry and receiving data illustrative."
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.2",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.2",
+      "objective": "Move into an explicitly schematic FDS memory array; isolate one failed region without claiming exact hardware layout.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.2"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.outage",
+        "voyager-memory.claim.memory"
+      ],
+      "notes": "Locate the failure; all code,hardware geometry and receiving data illustrative."
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.3",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.3",
+      "objective": "Keep failed chip red; affected software leaves the failed address region as amber instruction tiles.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.3"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.workaround"
+      ],
+      "notes": "Move the code; all code,hardware geometry and receiving data illustrative."
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.4",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.4",
+      "objective": "One unbroken code strip approaches a short free slot and cannot fit; no physical chip movement.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.4"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.capacity"
+      ],
+      "notes": "The capacity problem; all code,hardware geometry and receiving data illustrative."
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.5",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.5",
+      "objective": "Strip divides into three sections and travels to separate available slots; update connector routes in order, then show a coherent instruction path.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.5"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.workaround"
+      ],
+      "notes": "Split and reconnect; all code,hardware geometry and receiving data illustrative."
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.6",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.6",
+      "objective": "Pull out to a schematic Earth-to-Voyager radio path, travel cue and one-way22.5h notation dated April2024.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.6"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.delay"
+      ],
+      "notes": "The wait; all code,hardware geometry and receiving data illustrative."
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.7",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.7",
+      "objective": "Engineering response resolves into clean illustrative data lines; date April20,2024. Science later appears as a separate dated milestone.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.7"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.engineering",
+        "voyager-memory.claim.science"
+      ],
+      "notes": "Readable again; all code,hardware geometry and receiving data illustrative."
+    },
+    {
+      "id": "voyager-memory.asset.remote-repair.visual.8",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.8",
+      "objective": "Return to NASA spacecraft with a small schematic bypass around the still-failed region; no launch, chase camera or physical repair.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Credited NASA/JPL-Caltech concept images.",
+        "Original memory and radio-path motion."
+      ],
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.8"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.workaround"
+      ],
+      "notes": "Work around the damage; all code,hardware geometry and receiving data illustrative."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established local Kokoro af_heart; lucid, warm and deliberate. Pauses for capacity failure, split and engineering recovery.",
+    "pronunciationNotes": [
+      "Voyager One spoken, Voyager1in on-screen labels.",
+      "Twenty-two and a half hours one way; dates fully spoken."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review; not owner master approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.16",
+      "reviewSha256": "446609f1571b2d2dd8d2433fdbb737b9565e3398f79c21a4c23d073496ad3039"
+    },
+    "approvedAt": "2026-10-16",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

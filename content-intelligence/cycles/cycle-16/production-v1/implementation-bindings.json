@@ -1,0 +1,89 @@
+{
+  "enteredAt": "2026-10-16T17:01:55.457Z",
+  "sourceBaseCommit": "2683c11fe60cbb9e23c8ff4c841224793839900a",
+  "files": [
+    {
+      "path": "src/voyager-index.tsx",
+      "sha256": "d391693413bbfa667ecb273fd95baedcf72d598d3f03a7f171427e6a7530453d"
+    },
+    {
+      "path": "src/compositions/VoyagerMemory.tsx",
+      "sha256": "aca9e2e5483b83585262e47563e3618134e7d27cba4e0b568b17624da4a86ccf"
+    },
+    {
+      "path": "src/content/videos/voyager.ts",
+      "sha256": "8dc87c769071e011d0b9e801c8fcbf2331d2142852abfea14b057c6330923f30"
+    },
+    {
+      "path": "src/production/plans/voyager.json",
+      "sha256": "dd37e8ce4478b48f7d111e166e290e6d4a3eeb490bb0180c8a8a0e8d23399e9c"
+    },
+    {
+      "path": "src/captions/plans/voyager.json",
+      "sha256": "34a17e441a6ffc82a5d91603b113ee1abf477795f014738b5922d2af4210be58"
+    },
+    {
+      "path": "src/production/narration/voyager.json",
+      "sha256": "961daabfb6c3b4fe1be0421f75eeb7a3fcc321b65778ba283a5d1f82f3be5236"
+    },
+    {
+      "path": "scripts/voyager-video-target.ts",
+      "sha256": "4adec38e363c8fc7bf1fae6f36a8e673a1c92ac6e6c25cb1fd1000ea5cca46a7"
+    },
+    {
+      "path": "scripts/render-voyager.ts",
+      "sha256": "3b846e6033df2a45ba9e76ba13778f4c3bf78cb1e7f468dcbc7d622d131592cc"
+    },
+    {
+      "path": "scripts/qa-voyager-layout.ts",
+      "sha256": "951600101f22f08c1fc2ba35f698bed77d7804ff5adc30e7747537afdd0d7276"
+    },
+    {
+      "path": "scripts/prepare-voyager-qa-sheets.ts",
+      "sha256": "e7bfba3f46aba57c50551faa8690888500ce35a0cb53703efc8f332881ce26bd"
+    },
+    {
+      "path": "scripts/generate-voyager-narration.mjs",
+      "sha256": "b39388ce5995588d4ac3066f6507d11820e30b34b6334c0dbf063bb8f3d950be"
+    },
+    {
+      "path": "scripts/generate-voyager-soundscape.mjs",
+      "sha256": "07ff39643af9dd415aa022e27b042aa9a3421361b24b9c6ceb95643527b6d091"
+    },
+    {
+      "path": "scripts/inspect-voyager-audio.mjs",
+      "sha256": "c3df868966045dd6f49f887d21fbe29b9e98a14f0702f178e45894b481c1506e"
+    },
+    {
+      "path": "scripts/finalize-voyager-master.ts",
+      "sha256": "b8e1060dcce3eded82a3798d0b3bfc433d115f5e53d46b1731edea55ffbd69ed"
+    }
+  ],
+  "scriptSha256": "a3002736a6683c7e3e0bdb0fa9b61ea9a064f85ebe2efcdeb0ecbdc7e4bdd87e",
+  "authority": {
+    "path": "content-intelligence/cycles/cycle-16/owner-selection.json",
+    "sha256": "181ee041c790ac21a5fdde0b0c5ff369e48cba4251e44b1fcfa0da238db3bbcf"
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-16/production-v1/direction-ready.json",
+    "sha256": "9131b46aac76be267fe209d9f20114efc51ff10167053cdb2753a627aa93c93d"
+  },
+  "corrections": {
+    "path": "content-intelligence/cycles/cycle-16/production-v1/rendered-corrections.json",
+    "sha256": "e1f5429cb4a97f3a5d64ee14125a4029d78a6afd1a9d8857a54ea7fa2e0a9cbf"
+  },
+  "videoPacketSha256": "SHA256=960cac0b0c287b8f1ea333b1e2a23f91ca02aed082672bb55d857a531acc6767",
+  "note": "Current source and full master bind final corrected implementation; lint-only equivalent quote spelling/import does not alter generated sound or pixels.",
+  "nonsemanticCleanup": {
+    "at": "2026-10-16T17:08:04.101746Z",
+    "reason": "Remove trailing whitespace caught by staged git diff --check. No code token, audio, caption or rendered pixel changed. Exact original source preserved as JSON.",
+    "originalBindings": {
+      "path": "content-intelligence/cycles/cycle-16/production-v1/authoring/implementation-bindings-before-cleanup.json",
+      "sha256": "bc0ff50a6f69ab113b9ec8bba8c880d88a80b946454b92ca03593e3323673194"
+    },
+    "originalRenderSource": {
+      "path": "content-intelligence/cycles/cycle-16/production-v1/authoring/render-source-before-whitespace.json",
+      "sha256": "5f944df521c86c5d78203addef1c762c56362b29daf05ab8eabb0e8906b88259"
+    }
+  }
+}

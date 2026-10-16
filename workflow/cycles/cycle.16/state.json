@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 3,
+  "id": "cycle.16",
+  "revision": 7,
+  "authority": {
+    "path": "workflow/authorities/cycle-16-start.json",
+    "sha256": "c23a6227d426d5bbb2ee45c930cf67f18a3f9970c3e4078e9084e2d661bd8e63"
+  },
+  "stage": "master-review",
+  "workInProgress": null,
+  "receipts": [
+    {
+      "stage": "discovery",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-16/topic-selection.json",
+        "sha256": "fa79dadebcf325e2854435274a740ef080c053a7a78efaef87153e77c5a2a9f0"
+      }
+    },
+    {
+      "stage": "editorial",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-16/editorial-receipt.json",
+        "sha256": "dccfeb1bf81b708c8649d766837687686e0b5ca1be87223d49adf9eb9c1af05b"
+      }
+    },
+    {
+      "stage": "creative",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/direction-ready.json",
+        "sha256": "9131b46aac76be267fe209d9f20114efc51ff10167053cdb2753a627aa93c93d"
+      }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/master-candidate-v1.json",
+        "sha256": "ec727acddf8b5c133a7097b80cb8bb8fb0686fe108c8e4ef7f245185cdd19899"
+      }
+    }
+  ],
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-16/topic-selection.json",
+    "sha256": "fa79dadebcf325e2854435274a740ef080c053a7a78efaef87153e77c5a2a9f0"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-16/owner-premise-authority.json",
+    "sha256": "b20c574bfcbf68363d35497b02c6ad4818c3f266811f8ed54b2290a1c3c6ee15"
+  },
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-16/production-v1/master-candidate-v1.json",
+    "sha256": "ec727acddf8b5c133a7097b80cb8bb8fb0686fe108c8e4ef7f245185cdd19899"
+  },
+  "masterDecision": null,
+  "release": null,
+  "publicationDecision": null,
+  "exception": null,
+  "observations": [],
+  "history": [
+    {
+      "revision": 1,
+      "previousSha256": "d3b40e69314d7797c1fe85de8327773690e0cb6d1fd90b5a8903d4702e9e1ca6",
+      "event": "discovery",
+      "at": "2026-10-16T16:50:19.745Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/topic-selection.json",
+        "sha256": "fa79dadebcf325e2854435274a740ef080c053a7a78efaef87153e77c5a2a9f0"
+      }
+    },
+    {
+      "revision": 2,
+      "previousSha256": "761c2082318b375fa717833ecf1e26bcd1cad6de8b39b0c33d49ef79633e61b9",
+      "event": "owner-decision",
+      "at": "2026-10-16T16:50:19.766Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/owner-premise-authority.json",
+        "sha256": "b20c574bfcbf68363d35497b02c6ad4818c3f266811f8ed54b2290a1c3c6ee15"
+      }
+    },
+    {
+      "revision": 3,
+      "previousSha256": "33323bcbdd696dfe6ad4944bd6e40d5ded2a3530d29d58fae1754c7f9b28982c",
+      "event": "begin-editorial",
+      "at": "2026-10-16T16:50:39.620Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/editorial-start.json",
+        "sha256": "ae7e1ddd7a75d03d2476351eed35158f1f7159181d142194c57f165040f7dd14"
+      }
+    },
+    {
+      "revision": 4,
+      "previousSha256": "82c1bc9d9e6efaa1f6cd8c3cbdc0e47a01b08ae0939597fa1a8b72b5bc0381b4",
+      "event": "editorial",
+      "at": "2026-10-16T16:50:54.989Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/editorial-receipt.json",
+        "sha256": "dccfeb1bf81b708c8649d766837687686e0b5ca1be87223d49adf9eb9c1af05b"
+      }
+    },
+    {
+      "revision": 5,
+      "previousSha256": "8cf52e3d7e5ebb8d15a14c3cf8f03c84466b051b4369ad83242765e17104c2cb",
+      "event": "creative",
+      "at": "2026-10-16T16:51:09.612Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/direction-ready.json",
+        "sha256": "9131b46aac76be267fe209d9f20114efc51ff10167053cdb2753a627aa93c93d"
+      }
+    },
+    {
+      "revision": 6,
+      "previousSha256": "59a328913cb61d4cb78795d22546432b575e1ee9510dfff69650714a8bbf0269",
+      "event": "begin-production",
+      "at": "2026-10-16T16:51:09.817Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/production-start.json",
+        "sha256": "d2d7350714ba9df3894018e635697a8146ab0e7eaf5397eab0ac96e35836b95f"
+      }
+    },
+    {
+      "revision": 7,
+      "previousSha256": "65db6b49954c10a994974ed6e8f7a77332aea859eb0b19c368c7031aa863bb74",
+      "event": "production",
+      "at": "2026-10-16T17:01:55.457Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/master-candidate-v1.json",
+        "sha256": "ec727acddf8b5c133a7097b80cb8bb8fb0686fe108c8e4ef7f245185cdd19899"
+      }
+    }
+  ]
+}

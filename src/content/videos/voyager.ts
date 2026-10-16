@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/voyager.json';
+import asset from '../../../content-intelligence/cycles/cycle-16/content-asset.ready.json';
+import narration from '../../production/narration/voyager.json';
+export const voyager=videoSpecSchema.parse({id:'voyager',compositionId:'Magnivis-Voyager-Memory',workingTitle:'How NASA Rescued Voyager 1’s Broken Memory',titleCandidates:['How NASA Rescued Voyager 1’s Broken Memory'],descriptionCandidates:['Engineers moved software around failed memory to recover readable engineering data in April 2024.'],hook:asset.script.segments[0]!.text,pillar:'science',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration'],narration:true,narrationCues:narration.cues}});

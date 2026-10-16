@@ -26,7 +26,8 @@ const candidate = z.object({
 export const topicSelectionSchema = z.object({
   premiseAssessment: premiseAssessmentSchema.optional(),
   editorialLearningReview: z.array(z.object({decision:recordReferenceSchema,application:text,nonGeneralizations:z.array(text).min(1)}).strict()).optional(),
-  schemaVersion: z.literal(3), method: z.literal('qualitative-open-world-comparison'),
+  schemaVersion: z.literal(3), method: z.enum(['qualitative-open-world-comparison','explicit-owner-selected-topic']),
+  ownerSelection: recordReferenceSchema.optional(),
   cycleId:text.regex(/^cycle\.[a-z0-9-]+$/),
   searchRecord: recordReferenceSchema,
   searchBreadth: text, classificationAfterDiscovery: z.literal(true),
@@ -35,13 +36,18 @@ export const topicSelectionSchema = z.object({
   convenienceAdvantageRejected: z.literal(true),
   selectionStandard: z.literal('cold-audience-curiosity.v1').optional(),
   poolReview: z.object({adequateOpportunityFound: z.boolean(), rationale: text, nextSearchChange: text.nullable()}).strict().optional(),
-  candidates: z.array(candidate).min(2), selectedId: text.nullable(),
+  candidates: z.array(candidate).min(1), selectedId: text.nullable(),
   outcome: z.enum(['selected', 'continue-discovery', 'escalate']), rationale: text,
 }).strict();
 export type TopicSelection=z.infer<typeof topicSelectionSchema>;
 export const validateTopicSelection = (input: unknown, root = process.cwd()) => {
   const selection = topicSelectionSchema.parse(input);
   readBoundRecord(selection.searchRecord, root);
+  if(selection.method==='explicit-owner-selected-topic') {
+    if(!selection.ownerSelection)throw new Error('Owner-selected intake requires exact scoped owner evidence');
+    const owner=z.object({cycleId:text,selectedSubject:text,evidenceBasis:z.literal('explicit-owner-message'),instruction:text,productionAuthorized:z.literal(true),masterApprovalGranted:z.literal(false),publicationApprovalGranted:z.literal(false)}).passthrough().parse(readBoundRecord(selection.ownerSelection,root));
+    if(owner.cycleId!==selection.cycleId||selection.candidates.length!==1||selection.candidates[0]?.subject!==owner.selectedSubject||selection.outcome!=='selected')throw new Error('Owner-selected intake must preserve the exact authorized subject and cycle');
+  } else if(selection.candidates.length<2||selection.ownerSelection)throw new Error('Autonomous discovery requires comparison and cannot inherit owner selection');
   if (!selection.historyReviewed.length && !selection.noHistoryReason) throw new Error('Discovery must inspect history or explain its absence');
   selection.historyReviewed.forEach(r => readBoundFile(r, root));
   const ids = new Set(selection.candidates.map(c => c.id));
@@ -85,6 +91,7 @@ export const chooseTopicAutonomously = async ({discoverAndCompare, preserve, max
   for (let round = pools.length + 1; round <= maximumRounds; round++) {
     const context=editorialDecisionContext(root);
     const selection = validateTopicSelection(await discoverAndCompare(round, structuredClone(pools), structuredClone(context)), root);
+    if(selection.method!=='qualitative-open-world-comparison')throw new Error('Autonomous discovery cannot impersonate owner-directed selection');
     if(context.some(c=>!selection.editorialLearningReview?.some(r=>r.decision.path===c.decision.path&&r.decision.sha256===c.decision.sha256)))throw new Error('Discovery must record consideration of supplied editorial judgments without topic preferences');
     if (pools.length && pools[0]!.cycleId !== selection.cycleId) throw new Error('Discovery cannot switch cycles');
     const record = await preserve(selection);

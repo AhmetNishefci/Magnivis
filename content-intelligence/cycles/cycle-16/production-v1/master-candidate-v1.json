@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.16",
+  "media": {
+    "id": "media.3112303528db8e52f4f68f831a7c0f08220874b3625bee2911ee6d6299238b9b",
+    "sha256": "3112303528db8e52f4f68f831a7c0f08220874b3625bee2911ee6d6299238b9b"
+  },
+  "durationSeconds": 44.86666666666667,
+  "scriptSha256": "a3002736a6683c7e3e0bdb0fa9b61ea9a064f85ebe2efcdeb0ecbdc7e4bdd87e",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-16/production-v1/production-plan.candidate-v1.json",
+    "sha256": "a790e3374a80d128606d4fb8a58a5b9a79b9b47fc3440021d7fe9c1b85cbbc46"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/voyager.json",
+    "sha256": "34a17e441a6ffc82a5d91603b113ee1abf477795f014738b5922d2af4210be58"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/voyager.json",
+    "sha256": "961daabfb6c3b4fe1be0421f75eeb7a3fcc321b65778ba283a5d1f82f3be5236"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/youtube.json",
+        "sha256": "804e9a19b9f8dd8d291576ab2216f6735ae7716219b13255e0a68502b844b271"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/preflight/youtube.json",
+        "sha256": "239dfcbc75d8f9efcb8eb2421286888763d054ccf61a5f612052f684cf3a8f30"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/tiktok.json",
+        "sha256": "6e502c02c0fd9dc2c65cd401f2473cce6003f90b1f435b154333845b7994ba92"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/preflight/tiktok.json",
+        "sha256": "b541b28a364c28ec3fa7ea51d031734e8002d08db2e8d55243070fab7dc0de4c"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/instagram.json",
+        "sha256": "9e319e2364990371c58974820331de7023141f6d080fe78a4e3f7d107b32f9d4"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/preflight/instagram.json",
+        "sha256": "2f4a10176dcf546ebb5297fa925eadae560aad8ac98871ec510c157b6caef90a"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/facebook.json",
+        "sha256": "c6a7adaea5d0cf9a6e7e6f98c86814b5d2729015f8e3e2f59111cf34aa910f3e"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/preflight/facebook.json",
+        "sha256": "07b9f9ddf584c6505e7c46c011c6cce4a27bec8ccef056eedd62ed7ea27ec42c"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "voyager-cue-1",
+      "transcript": "Over fifteen billion miles away, Voyager One was sending signals nobody could read.",
+      "start": 0,
+      "duration": 5.95,
+      "media": {
+        "id": "media.13bf520e47d3017edf6d01162acc54de72cc1d6ffedf171a1ae820287ce9ab3f",
+        "sha256": "13bf520e47d3017edf6d01162acc54de72cc1d6ffedf171a1ae820287ce9ab3f"
+      }
+    },
+    {
+      "id": "voyager-cue-2",
+      "transcript": "The trouble began in November twenty twenty-three: a failed memory chip in its data-packaging computer.",
+      "start": 6.233333333333333,
+      "duration": 6.9,
+      "media": {
+        "id": "media.ae5666d0002f1f0bf70d1a34fd2ca594152e776460b68ecb95890ebebf1fa3c7",
+        "sha256": "ae5666d0002f1f0bf70d1a34fd2ca594152e776460b68ecb95890ebebf1fa3c7"
+      }
+    },
+    {
+      "id": "voyager-cue-3",
+      "transcript": "Engineers couldn't repair the chip. So they moved the affected code.",
+      "start": 13.4,
+      "duration": 4.4,
+      "media": {
+        "id": "media.085d3aa68fa95d9c9aecc93fa30b7aab7932625418e0815acddcca0810703435",
+        "sha256": "085d3aa68fa95d9c9aecc93fa30b7aab7932625418e0815acddcca0810703435"
+      }
+    },
+    {
+      "id": "voyager-cue-4",
+      "transcript": "But it wouldn't fit in one place.",
+      "start": 18.1,
+      "duration": 2.15,
+      "media": {
+        "id": "media.58c9ccc8cbd018b594eeb7b0de940a7069c45350302cc56fe4c03b2c76a10c39",
+        "sha256": "58c9ccc8cbd018b594eeb7b0de940a7069c45350302cc56fe4c03b2c76a10c39"
+      }
+    },
+    {
+      "id": "voyager-cue-5",
+      "transcript": "They split it across working memory, then updated the instructions so the pieces still worked together.",
+      "start": 20.733333333333334,
+      "duration": 6.425,
+      "media": {
+        "id": "media.427d1a28f81910150d4f1cdb7aeabbc8e257951600dc9ba2ad624f2471cfc68f",
+        "sha256": "427d1a28f81910150d4f1cdb7aeabbc8e257951600dc9ba2ad624f2471cfc68f"
+      }
+    },
+    {
+      "id": "voyager-cue-6",
+      "transcript": "A command took about twenty-two and a half hours just to reach the spacecraft.",
+      "start": 27.633333333333333,
+      "duration": 4.875,
+      "media": {
+        "id": "media.efacc3e796b92d6225a251b261af1574838d5132abd6bc43b990e92ba32de4c1",
+        "sha256": "efacc3e796b92d6225a251b261af1574838d5132abd6bc43b990e92ba32de4c1"
+      }
+    },
+    {
+      "id": "voyager-cue-7",
+      "transcript": "On April twentieth, twenty twenty-four, readable engineering data came back. Science data followed later.",
+      "start": 32.9,
+      "duration": 7.25,
+      "media": {
+        "id": "media.20d05ebe886c1ca6c5269a498efc087e91f9e1894df00738395d9eb18f46bcdc",
+        "sha256": "20d05ebe886c1ca6c5269a498efc087e91f9e1894df00738395d9eb18f46bcdc"
+      }
+    },
+    {
+      "id": "voyager-cue-8",
+      "transcript": "The chip stayed broken. The software worked around it.",
+      "start": 40.53333333333333,
+      "duration": 3.625,
+      "media": {
+        "id": "media.3f026291fd5576e996f9f08ad5e005ceaa58ea7f488e630d4fc0c0714a4b4342",
+        "sha256": "3f026291fd5576e996f9f08ad5e005ceaa58ea7f488e630d4fc0c0714a4b4342"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-16/production-v1/qa/final-report.json",
+        "sha256": "68743e8826312c9d44c41a19767577662ed69385d86c9888d8aaec7abee325b4"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Outage began Nov14,2023; no total radio silence.",
+    "Failed chip stays disabled; software relocates and reconnects.",
+    "Illustrative memory model; no real addresses, exact capacity or chip failure cause.",
+    "Distance/light time historical April2024; one-way22.5hours.",
+    "April20engineering return distinct from May–Junescience.",
+    "NASA artist concepts credited; original graphics/audio explicitly nonliteral."
+  ],
+  "uncertainties": [
+    "No continuous subjective video/audio playback or actual-phone/native-platform test.",
+    "Source images1280x720and800x600are cropped/enlarged; not newly generated footage.",
+    "Memory diagram simplifies a staged software recovery; chip icon is conceptual and not Voyager hardware geometry.",
+    "Caption phrase times authored approximately with full-take ASR corroboration, not forced word alignment.",
+    "Provisional platform inset profiles, unknown controls/crops and sampled motion do not prove mobile safety.",
+    "NASA May/June command-date discrepancy omitted; only supported recovery sequence narrated."
+  ],
+  "unusualProduction": [
+    "Credited existing NASA artwork plus original animated memory and radio-path diagrams; no paid services.",
+    "First full render preserved as unapproved authoring evidence; final causal-motion and caption corrections documented."
+  ]
+}

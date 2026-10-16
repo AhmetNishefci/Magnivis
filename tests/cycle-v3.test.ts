@@ -467,8 +467,9 @@ describe('Cycle V3 generic lifecycle and integration',()=>{
   });
   it('replays all historical cycles without adding premise gates or transferring authority',()=>{
     const historicalIds=['cycle.4','cycle.5','cycle.6','cycle.7'];
-    // New independent cycles coexist with this frozen compatibility checkpoint.
-    const cycles=loadProjectCycles(process.cwd(),registry).filter(c=>historicalIds.includes(c.id));
+    // This frozen compatibility assertion concerns only Cycles4–7. Replay each
+    // exact journal without repeatedly replaying the growing production backlog.
+    const cycles=historicalIds.map(id=>loadCycle(process.cwd(),id,registry));
     expect(cycles.map(c=>c.id)).toEqual(historicalIds);
     for(const cycle of cycles){expect(cycle).not.toHaveProperty('premise');expect(cycle).not.toHaveProperty('premiseDecision');expect(cycle.history.some(h=>h.event==='premise-review')).toBe(false);}
     expect(cycles.at(-1)).toMatchObject({stage:'authorized',revision:25});
