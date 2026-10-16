@@ -1,0 +1,10 @@
+import {existsSync,mkdirSync,readFileSync,writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {spawnSync,execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+import {voyagerV2Target as target} from './voyager-v2-video-target';
+const smoke=process.argv.includes('--smoke'),from=Number(process.argv.find(x=>x.startsWith('--from='))?.slice(7)??0),intermediate=smoke?`output/voyager-v2-smoke-${from}.mp4`:'output/voyager-v2-picture.mp4';
+if(!smoke&&existsSync(target.output))throw new Error('Preserve V2 candidate; use a new authored identity for a replacement.');
+mkdirSync('output',{recursive:true});mkdirSync('artifacts/masters',{recursive:true});
+const r=spawnSync('pnpm',['exec','remotion','render',target.entryPoint,target.spec.compositionId,intermediate,'--codec=h264','--muted','--video-bitrate=6M','--pixel-format=yuv420p','--concurrency=2',...(smoke?[`--frames=${from}-${Math.min(1345,from+89)}`]:[])],{stdio:'inherit'});if(r.status!==0)process.exit(r.status??1);
+if(!smoke){const ff=createRequire(import.meta.url)('ffmpeg-static') as string,v1='artifacts/masters/voyager-cycle16-candidate-v1.mp4';const mux=spawnSync(ff,['-v','error','-i',intermediate,'-i',v1,'-map','0:v:0','-map','1:a:0','-c','copy','-movflags','+faststart',target.output],{encoding:'utf8'});if(mux.status!==0)throw new Error(mux.stderr);const packetHash=(p:string)=>execFileSync(ff,['-v','error','-i',p,'-map','0:a:0','-c','copy','-f','hash','-hash','sha256','-'],{encoding:'utf8'}).trim();if(packetHash(v1)!==packetHash(target.output))throw new Error('Audio packet identity changed');const hash=(p:string)=>createHash('sha256').update(readFileSync(p)).digest('hex');writeFileSync('content-intelligence/cycles/cycle-16/revision-v2/audio-preservation.json',JSON.stringify({enteredAt:new Date().toISOString(),method:'Render pictures muted; mux complete original V1AACstream unchanged. No TTS,audio mastering or source regeneration.',v1:{path:v1,sha256:hash(v1)},v2:{path:target.output,sha256:hash(target.output)},audioPacketSha256:packetHash(v1),audioIdentityPassed:true},null,2)+'\n',{flag:'wx'});}

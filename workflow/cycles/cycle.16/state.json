@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "cycle.16",
-  "revision": 7,
+  "revision": 12,
   "authority": {
     "path": "workflow/authorities/cycle-16-start.json",
     "sha256": "c23a6227d426d5bbb2ee45c930cf67f18a3f9970c3e4078e9084e2d661bd8e63"
@@ -26,15 +26,15 @@
     {
       "stage": "creative",
       "record": {
-        "path": "content-intelligence/cycles/cycle-16/production-v1/direction-ready.json",
-        "sha256": "9131b46aac76be267fe209d9f20114efc51ff10167053cdb2753a627aa93c93d"
+        "path": "content-intelligence/cycles/cycle-16/revision-v2/direction-v2.json",
+        "sha256": "6113042501415bc4b23e1bd73f61e8ce181816e54863e0bf5eae4a540ae66f07"
       }
     },
     {
       "stage": "production",
       "record": {
-        "path": "content-intelligence/cycles/cycle-16/production-v1/master-candidate-v1.json",
-        "sha256": "ec727acddf8b5c133a7097b80cb8bb8fb0686fe108c8e4ef7f245185cdd19899"
+        "path": "content-intelligence/cycles/cycle-16/revision-v2/master-candidate-v2.json",
+        "sha256": "92ad6071d5a86148c7cc9f63ca046ad5449389776c375c52bb50344bb99742ae"
       }
     }
   ],
@@ -47,8 +47,8 @@
     "sha256": "b20c574bfcbf68363d35497b02c6ad4818c3f266811f8ed54b2290a1c3c6ee15"
   },
   "candidate": {
-    "path": "content-intelligence/cycles/cycle-16/production-v1/master-candidate-v1.json",
-    "sha256": "ec727acddf8b5c133a7097b80cb8bb8fb0686fe108c8e4ef7f245185cdd19899"
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/master-candidate-v2.json",
+    "sha256": "92ad6071d5a86148c7cc9f63ca046ad5449389776c375c52bb50344bb99742ae"
   },
   "masterDecision": null,
   "release": null,
@@ -124,6 +124,56 @@
       "evidence": {
         "path": "content-intelligence/cycles/cycle-16/production-v1/master-candidate-v1.json",
         "sha256": "ec727acddf8b5c133a7097b80cb8bb8fb0686fe108c8e4ef7f245185cdd19899"
+      }
+    },
+    {
+      "revision": 8,
+      "previousSha256": "5d635e042d84193e0d22e37f48199b02523391f95a7793d6b66901e26ef637cc",
+      "event": "owner-decision",
+      "at": "2026-10-16T17:28:44.304Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/revision-v2/owner-master-revision.json",
+        "sha256": "dffaf9689ef88cf3d162bb7be62b318ae8df673468cf28bcd2f3eed3c8bf56ed"
+      }
+    },
+    {
+      "revision": 9,
+      "previousSha256": "e968ae4126a493564e727b281a170ece83dcadfb4596157d7396df7b4811aa23",
+      "event": "retry-internal",
+      "at": "2026-10-16T17:28:45.730Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/revision-v2/creative-revision-start.json",
+        "sha256": "efb4192b4ebcd297e3d26a3c2512164e899c38d81230c422c295eefd1b4ba772"
+      }
+    },
+    {
+      "revision": 10,
+      "previousSha256": "0d133b2ba519133d019c9136f6c3e0f5c9441c8f495bb7ec6e3a2480a2c49e2b",
+      "event": "creative",
+      "at": "2026-10-16T17:28:46.481Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/revision-v2/direction-v2.json",
+        "sha256": "6113042501415bc4b23e1bd73f61e8ce181816e54863e0bf5eae4a540ae66f07"
+      }
+    },
+    {
+      "revision": 11,
+      "previousSha256": "6892f3ac37e2edcda4e1b46809de5fbcc222809fba3aff498e342eb46ba45376",
+      "event": "begin-production",
+      "at": "2026-10-16T17:28:47.292Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/revision-v2/production-start.json",
+        "sha256": "14bae0445fff5650fcc58b3dc026950ae25131be2303fa332a3ff45cf1e73021"
+      }
+    },
+    {
+      "revision": 12,
+      "previousSha256": "d5cd5f1f2ab662cad82bf49469057ff8cbc9a8b04d2327917a425e158f94550b",
+      "event": "production",
+      "at": "2026-10-16T17:42:56.934Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-16/revision-v2/master-candidate-v2.json",
+        "sha256": "92ad6071d5a86148c7cc9f63ca046ad5449389776c375c52bb50344bb99742ae"
       }
     }
   ]

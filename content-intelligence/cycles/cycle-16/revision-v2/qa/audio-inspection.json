@@ -1,0 +1,153 @@
+{
+  "checkedAt": "2026-10-16T17:42:12.408Z",
+  "masterPath": "artifacts/masters/voyager-cycle16-candidate-v2.mp4",
+  "masterSha256": "74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607",
+  "method": "Actual V2 EBU R128 measurement; entire AAC packet stream and decoded PCM hash equal V1. Original V1 full-unit ASR and source phoneme evidence apply to byte-identical audio, without regeneration or repeat recognition.",
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -19.7 LUFS\n    Threshold: -30.7 LUFS\n\n  Loudness range:\n    LRA:         3.3 LU\n    Threshold: -40.7 LUFS\n    LRA low:   -22.4 LUFS\n    LRA high:  -19.1 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+  "audioIdentity": "SHA256=27060cf943063e33728c3cbb56857379ef83943750ecde573723ce077cb5d145",
+  "decodedAudioIdentity": "SHA256=1e850443e8d4fa25599772facaaa1866d41949e4fa7d942943d6f01eca27a908",
+  "sourceEvidence": "content-intelligence/cycles/cycle-16/production-v1/qa/audio-inspection.json",
+  "originalActualMasterCues": [
+    {
+      "id": "voyager-cue-1",
+      "exactText": "Over fifteen billion miles away, Voyager One was sending signals nobody could read.",
+      "recognized": " Over 15 billion miles away, Voyager 1 was sending signals nobody could read.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            6
+          ],
+          "text": " Over 15 billion miles away, Voyager 1 was sending signals nobody could read."
+        }
+      ],
+      "start": 0,
+      "duration": 5.95
+    },
+    {
+      "id": "voyager-cue-2",
+      "exactText": "The trouble began in November twenty twenty-three: a failed memory chip in its data-packaging computer.",
+      "recognized": " The trouble began in November 2023, a failed memory chip in its data packaging computer.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            7
+          ],
+          "text": " The trouble began in November 2023, a failed memory chip in its data packaging computer."
+        }
+      ],
+      "start": 6.233333333333333,
+      "duration": 6.9
+    },
+    {
+      "id": "voyager-cue-3",
+      "exactText": "Engineers couldn't repair the chip. So they moved the affected code.",
+      "recognized": " Engineers couldn't repair the chip, so they moved the affected code.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " Engineers couldn't repair the chip, so they moved the affected code."
+        }
+      ],
+      "start": 13.4,
+      "duration": 4.4
+    },
+    {
+      "id": "voyager-cue-4",
+      "exactText": "But it wouldn't fit in one place.",
+      "recognized": " But it wouldn't fit in one place.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " But it wouldn't fit in one place."
+        }
+      ],
+      "start": 18.1,
+      "duration": 2.15
+    },
+    {
+      "id": "voyager-cue-5",
+      "exactText": "They split it across working memory, then updated the instructions so the pieces still worked together.",
+      "recognized": " They split it across working memory, then updated the instructions so the pieces still work together.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            6
+          ],
+          "text": " They split it across working memory, then updated the instructions so the pieces still work together."
+        }
+      ],
+      "start": 20.733333333333334,
+      "duration": 6.425
+    },
+    {
+      "id": "voyager-cue-6",
+      "exactText": "A command took about twenty-two and a half hours just to reach the spacecraft.",
+      "recognized": " A command took about 22.5 hours just to reach the spacecraft.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.7
+          ],
+          "text": " A command took about 22.5 hours just to reach the spacecraft."
+        }
+      ],
+      "start": 27.633333333333333,
+      "duration": 4.875
+    },
+    {
+      "id": "voyager-cue-7",
+      "exactText": "On April twentieth, twenty twenty-four, readable engineering data came back. Science data followed later.",
+      "recognized": " On April 20, 2024, readable engineering data came back. Science data followed later.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            5
+          ],
+          "text": " On April 20, 2024, readable engineering data came back."
+        },
+        {
+          "timestamp": [
+            5,
+            7
+          ],
+          "text": " Science data followed later."
+        }
+      ],
+      "start": 32.9,
+      "duration": 7.25
+    },
+    {
+      "id": "voyager-cue-8",
+      "exactText": "The chip stayed broken. The software worked around it.",
+      "recognized": " The chip stayed broken, the software worked around it.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.4
+          ],
+          "text": " The chip stayed broken, the software worked around it."
+        }
+      ],
+      "start": 40.53333333333333,
+      "duration": 3.625
+    }
+  ],
+  "limitations": [
+    "No callable subjective audio listening or continuous video playback available.",
+    "Whisper recognition cannot certify pronunciation, stress, naturalness or purposeful sound.",
+    "Caption phrases within ASR sentence chunks are authored approximate timing."
+  ],
+  "subjectiveListening": "Owner full-speed playback required; no subjective listening claimed."
+}

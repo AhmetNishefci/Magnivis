@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-16T17:46:53.214532Z",
+  "node": "22.23.3",
+  "branch": "content/cycle-11-discovery",
+  "head": "9cea2fd44f865656669e16b7c3c1f3e3826b7306",
+  "pnpmCheck": {
+    "passed": true,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 55,
+    "tests": 514,
+    "gitDiffCheck": "passed",
+    "initialFailureResolved": "Canonical master needed Git-index tracking; scoped changes staged, no commit/push. First run513passed,1durability failure. Second run all514passed."
+  },
+  "durability": {
+    "passed": true,
+    "canonicalPayloads": 1282,
+    "newPayloads": 13,
+    "sameByteCanonicalDuplicates": 0
+  },
+  "cycleReplay": {
+    "passed": true,
+    "revision": 12,
+    "stage": "master-review",
+    "masterApproved": false,
+    "ownerStop": "AHMET \u2014 VOYAGER V2 MASTER REVIEW"
+  },
+  "allOtherProjectMetadataValuesUnchanged": true,
+  "noCommitsOrPushes": true,
+  "noBranchSwitchOrWorktree": true,
+  "noDeliveryVariantUploadSchedulePublish": true,
+  "indexStatus": "Scoped new and changed V2 files staged for canonical durability; remain uncommitted. See repository-status.txt.",
+  "stagedDiffCheck": "passed",
+  "reviewWhitespace": "One exact review file has a scoped attribute allowing its intentional CommonMark hard break; hash-bound review bytes preserved."
+}

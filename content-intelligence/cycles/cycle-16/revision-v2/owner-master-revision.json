@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "id": "owner-decision.cycle-16.master-revision-v2",
+  "revision": 1,
+  "gate": "master-review",
+  "cycleId": "cycle.16",
+  "targetSha256": "c126561754642eb57deac3640b1eae9f5d1f2a3f904fe9bf6481fe384a29def9",
+  "decision": "revise",
+  "enteredAt": "2026-10-16T17:28:44.304Z",
+  "suppliedReviewTime": null,
+  "reviewer": "Ahmet — owner",
+  "evidenceBasis": "explicit-owner-message",
+  "instruction": "**APPROVED — IMPLEMENT**\n\nProceed with the focused Voyager Cycle 16 V2 revision according to your proposed implementation plan.\n\nImplement all **Essential** and **Recommended** improvements. Preserve the existing ending unless a demonstrable issue requires correction.\n\nRequirements:\n\n1. Preserve the exact approved narration, all eight original narration WAV files, their hashes and timing, the existing sound identity, and the 44.87-second video timeline.\n2. Improve the opening by making the unreadable-signal problem immediately understandable without changing the narration.\n3. Correct inconsistent code-block dimensions and preserve section identity throughout the memory-relocation explanation.\n4. Complete all logical connections and make the reference-update mechanism visually clear.\n5. Improve mobile readability, diagram hierarchy, supporting labels, and caption-area separation.\n6. Improve the recovery sequence so the visual payoff connects to the opening, with engineering and science recovery transitions correctly synchronized.\n7. Fix the identified QA instrumentation gap involving `critical` labels and SVG object bounds. Ensure the updated checks genuinely evaluate the relevant elements.\n8. Preserve factual accuracy, NASA attribution, illustration qualifications, and the visibly disabled memory chip throughout.\n\nCreate a separate V2 candidate and supporting evidence. Do not overwrite V1 or modify unrelated cycles.\n\nRun the proposed smoke renders, complete master render, media validation, caption checks, visual inspections, audio checks, platform preflights, repository tests, durability validation, and historical-preservation checks.\n\nCritically inspect the actual rendered result. Do not treat passing automated tests as proof of editorial quality.\n\nIf a proposed improvement introduces new problems, resolve them within the approved scope rather than accepting a regression.\n\n**Git constraints:** Remain on the existing branch. Do not create worktrees, switch branches, commit, or push unless separately authorized.\n\nWhen complete, provide:\n\n- Exact V2 master path and SHA-256.\n- Summary of implemented changes with before/after evidence.\n- Validation results and any remaining limitations.\n- Confirmation that V1 and previous cycles remain unchanged.\n- Repository status and changed files.\n- Any unresolved issues requiring owner judgment.\n\nStop at **AHMET — VOYAGER V2 MASTER REVIEW**.\n\nDo not create delivery packages, upload, schedule, or publish anything. Master approval remains exclusively an owner decision.\n",
+  "reason": "Explicit APPROVED — IMPLEMENT authorizes all essential/recommended changes in the inspected plan, preserves narration/timing/sound/ending and withholds master approval, commits and push.",
+  "nonGeneralizations": [
+    "No new narration, paid assets, visual template, additional discovery or forced runtime changes.",
+    "Implementation authority is not master or publication approval."
+  ],
+  "acceptedUnknowns": []
+}

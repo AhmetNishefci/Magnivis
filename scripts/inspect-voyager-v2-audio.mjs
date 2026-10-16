@@ -1,0 +1,12 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {spawnSync} from 'node:child_process';
+const base='content-intelligence/cycles/cycle-16/revision-v2',read=p=>JSON.parse(readFileSync(p,'utf8'));
+const preservation=read(base+'/qa/preservation-report.json');
+if(!preservation.passed)throw new Error('Original audio identity not proven');
+const master=preservation.v2.path,ffmpeg=createRequire(import.meta.url)('ffmpeg-static');
+const loudness=spawnSync(ffmpeg,['-hide_banner','-i',master,'-af','ebur128=peak=true','-vn','-f','null','-'],{encoding:'utf8'});
+if(loudness.status!==0)throw new Error(loudness.stderr);
+const original=read('content-intelligence/cycles/cycle-16/production-v1/qa/audio-inspection.json');
+writeFileSync('qa/voyager-v2/audio-inspection.json',JSON.stringify({checkedAt:new Date().toISOString(),masterPath:master,masterSha256:preservation.v2.sha256,method:'Actual V2 EBU R128 measurement; entire AAC packet stream and decoded PCM hash equal V1. Original V1 full-unit ASR and source phoneme evidence apply to byte-identical audio, without regeneration or repeat recognition.',loudnessSummary:loudness.stderr.slice(loudness.stderr.lastIndexOf('Summary:')),audioIdentity:preservation.aacPacketSha256,decodedAudioIdentity:preservation.decodedAudioSha256,sourceEvidence:'content-intelligence/cycles/cycle-16/production-v1/qa/audio-inspection.json',originalActualMasterCues:original.actualMasterCues,limitations:original.limitations,subjectiveListening:'Owner full-speed playback required; no subjective listening claimed.'},null,2)+'\n',{flag:'wx'});
+writeFileSync('qa/voyager-v2/narration-alignment.json',JSON.stringify({method:'Original unchanged source WAVs and identical decoded full master audio inherit V1 segment ASR evidence. Science boundary additionally corroborated by source silence; no word-level forced alignment.',originalEvidence:'content-intelligence/cycles/cycle-16/production-v1/qa/narration-alignment.json',sourceAlignment:original.sourceAlignment,wordTimingLimitation:base+'/qa/word-timing-limitation.json'},null,2)+'\n',{flag:'wx'});

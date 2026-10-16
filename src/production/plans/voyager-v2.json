@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.voyager-memory.v2",
+  "revision": 2,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "voyager-memory",
+    "revision": 1,
+    "sha256": "f168cd5f14ba152f456d1dbe578db5fa3b56a8367b39ac31f48e75e7415fd03b"
+  },
+  "contentAsset": {
+    "id": "voyager-memory.asset.remote-repair",
+    "revision": 1,
+    "sha256": "67551a9024c91f01d6ceff5d9640a56fdeb9011d2e622744c211b23c987e2723"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.16",
+    "reviewSha256": "446609f1571b2d2dd8d2433fdbb737b9565e3398f79c21a4c23d073496ad3039"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/youtube.json",
+      "sha256": "804e9a19b9f8dd8d291576ab2216f6735ae7716219b13255e0a68502b844b271"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/tiktok.json",
+      "sha256": "6e502c02c0fd9dc2c65cd401f2473cce6003f90b1f435b154333845b7994ba92"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/instagram.json",
+      "sha256": "9e319e2364990371c58974820331de7023141f6d080fe78a4e3f7d107b32f9d4"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/facebook.json",
+      "sha256": "c6a7adaea5d0cf9a6e7e6f98c86814b5d2729015f8e3e2f59111cf34aa910f3e"
+    }
+  ],
+  "approvedScriptSha256": "a3002736a6683c7e3e0bdb0fa9b61ea9a064f85ebe2efcdeb0ecbdc7e4bdd87e",
+  "creativeDirection": {
+    "id": "creative-direction.voyager-memory.remote-repair.v1",
+    "revision": 2,
+    "sha256": "7b550ca15b9ad81730e8092a527521756b9c21900443203b84bfc9b2a60a2bbb"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 44.86666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "voyager.production.1",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.1",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.1",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.1"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.distance",
+        "voyager-memory.claim.outage"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 187
+      },
+      "sceneType": "unreadable-from-space",
+      "objective": "Credited NASA spacecraft imagery, prominent distance; corrupted illustrative receiving stream becomes unreadable.",
+      "onScreenText": [],
+      "animationIntent": "Received-but-unreadable signal immediately visible over same creditedNASAartistconcept. One restrained reframing.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "voyager.production.2",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.2",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.2",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.2"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.outage",
+        "voyager-memory.claim.memory"
+      ],
+      "frames": {
+        "start": 187,
+        "end": 402
+      },
+      "sceneType": "locate-failed-memory",
+      "objective": "Move into an explicitly schematic FDS memory array; isolate one failed region without claiming exact hardware layout.",
+      "onScreenText": [],
+      "animationIntent": "One-shot diagnosis: arrival,failed packaging,isolate disabled memory; no endless loop.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "voyager.production.3",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.3",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.3",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.3"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.workaround"
+      ],
+      "frames": {
+        "start": 402,
+        "end": 543
+      },
+      "sceneType": "move-instructions",
+      "objective": "Keep failed chip red; affected software leaves the failed address region as amber instruction tiles.",
+      "onScreenText": [],
+      "animationIntent": "Same240\u00d764instruction sections lift from failed location without changing size.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "voyager.production.4",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.4",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.4",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.4"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.capacity"
+      ],
+      "frames": {
+        "start": 543,
+        "end": 622
+      },
+      "sceneType": "no-single-space",
+      "objective": "One unbroken code strip approaches a short free slot and cannot fit; no physical chip movement.",
+      "onScreenText": [],
+      "animationIntent": "Joined192high code cannot fit104high available region; same coordinates, no resizing.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "voyager.production.5",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.5",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.5",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.5"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.workaround"
+      ],
+      "frames": {
+        "start": 622,
+        "end": 829
+      },
+      "sceneType": "split-and-reconnect",
+      "objective": "Strip divides into three sections and travels to separate available slots; update connector routes in order, then show a coherent instruction path.",
+      "onScreenText": [],
+      "animationIntent": "Sections retain marks/dimensions, separate into distinct locations; all3references visibly reach their destinations in sequence.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "voyager.production.6",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.6",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.6",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.6"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.delay"
+      ],
+      "frames": {
+        "start": 829,
+        "end": 987
+      },
+      "sceneType": "radio-wait",
+      "objective": "Pull out to a schematic Earth-to-Voyager radio path, travel cue and one-way22.5h notation dated April2024.",
+      "onScreenText": [],
+      "animationIntent": "Retain legible one-way22.5hradio wait; enlarge only supportinglabels/disclosure.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "voyager.production.7",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.7",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.7",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.7"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.engineering",
+        "voyager-memory.claim.science"
+      ],
+      "frames": {
+        "start": 987,
+        "end": 1216
+      },
+      "sceneType": "engineering-then-science",
+      "objective": "Engineering response resolves into clean illustrative data lines; date April20,2024. Science later appears as a separate dated milestone.",
+      "onScreenText": [],
+      "animationIntent": "Opening packet marks become orderly usable engineering information; separate science state atframe1143matches source phrase gap.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "voyager.production.8",
+      "sourceVisualPlanId": "voyager-memory.asset.remote-repair.visual.8",
+      "narrativeBeatId": "voyager-memory.asset.remote-repair.beat.8",
+      "scriptSegmentIds": [
+        "voyager-memory.asset.remote-repair.script.8"
+      ],
+      "claimIds": [
+        "voyager-memory.claim.workaround"
+      ],
+      "frames": {
+        "start": 1216,
+        "end": 1346
+      },
+      "sceneType": "broken-but-working",
+      "objective": "Return to NASA spacecraft with a small schematic bypass around the still-failed region; no launch, chase camera or physical repair.",
+      "onScreenText": [],
+      "animationIntent": "Reuse exactV1ending renderer fromframe1216to1345; compare decoded pixels.",
+      "transitionIntent": "Cut and spatial scale changes follow causal steps; failed region remains disabled after code moves.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    }
+  ],
+  "assets": [
+    {
+      "id": "voyager.image.space",
+      "kind": "licensed-image",
+      "path": "public/images/voyager/space.jpg",
+      "provenance": {
+        "origin": "NASA/JPL-Caltech official image catalog",
+        "rights": "JPL public image use policy with credit",
+        "notes": "Artist concept, not archival footage; no third-party credit.",
+        "evidence": "content-intelligence/cycles/cycle-16/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "voyager.image.explorer",
+      "kind": "licensed-image",
+      "path": "public/images/voyager/explorer.jpg",
+      "provenance": {
+        "origin": "NASA/JPL-Caltech official image catalog",
+        "rights": "JPL public image use policy with credit",
+        "notes": "Artist concept, not archival footage; no third-party credit.",
+        "evidence": "content-intelligence/cycles/cycle-16/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "voyager.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned",
+        "notes": "Schematic memory, original paths and illustrative data.",
+        "evidence": "content-intelligence/cycles/cycle-16/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "voyager.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource packages",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing Manrope and Space Grotesk",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "voyager.narration",
+      "kind": "audio",
+      "path": "public/audio/voyager/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact evidence-locked wording",
+        "evidence": "src/production/narration/voyager.json"
+      }
+    },
+    {
+      "id": "voyager.soundscape",
+      "kind": "audio",
+      "path": "public/audio/voyager/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesized sound",
+        "rights": "Project-owned",
+        "notes": "Nonliteral texture and cues, not recorded spacecraft sounds.",
+        "evidence": "content-intelligence/cycles/cycle-16/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/voyager-v2.en.vtt",
+    "captionPlanId": "caption-plan.voyager-memory.v2",
+    "captionPlanRevision": 2,
+    "captionPlanSha256": "10372aebb555852f2fa20e7d8c010d6ee3786d52105d93ef960b3641cec6aec4",
+    "generatorId": "generator.voyager-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact source-verified narration.",
+    "No radio silence, chip repair, literal addresses or current-day distance claim.",
+    "April20engineering response distinct from later science.",
+    "Source art and schematic disclosures readable.",
+    "Caption midpoints, typography bounds, full decode and measured audio.",
+    "Separate rendered chronological editorial inspection; no inferred subjective listening or native-device pass.",
+    "Stop AHMET \u2014 VOYAGER SAME-DAY MASTER REVIEW; no packages or external actions.",
+    "Original complete AAC elementary stream must match V1 exactly.",
+    "Every fixed section bounds and path endpoint inspected; negative fixtures prove SVG/critical-tag overlaps are detected.",
+    "Original ending all130rendered source frames must matchV1pixels before independent lossy encodes; exact AACand decoded audio must match."
+  ]
+}

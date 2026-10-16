@@ -310,3 +310,7 @@ Exact URLs, source/derivative hashes, inspection and capture-date limits: `conte
 - Pinned Manrope 5.3.0 and Space Grotesk 5.3.0 via existing Fontsource packages, SIL Open Font License 1.1. License files remain in their installed packages. Burned-in captions use Manrope 600 at 54 px; no new typeface acquisition.
 
 Every durable source/master/evidence payload has one immutable canonical catalog identity. Initial unapproved authoring render is preserved separately; no historical master or Flytrap asset is changed. These rights records grant no master approval or publication authorization.
+
+## Voyager Cycle16 V2 editorial revision — October16,2026
+
+Separate candidate `artifacts/masters/voyager-cycle16-candidate-v2.mp4` reuses the existing credited NASA/JPL-Caltech artist concepts, pinned OFL fonts, original Kokoro `af_heart` recordings and original synthesized soundscape under the unchanged V1 rights evidence. Revised memory/reference/signal graphics are original Magnivis code and explicitly illustrative. No new external media, generated image, paid service or literal spacecraft audio was introduced. The original failed chip remains disabled; the V1 ending renderer is reused. Full asset lineage and immutable binary identity: `content-intelligence/cycles/cycle-16/revision-v2/rights-provenance.json`, `implementation-bindings.json` and `master-candidate-v2.json`. This note grants no master/publication approval.

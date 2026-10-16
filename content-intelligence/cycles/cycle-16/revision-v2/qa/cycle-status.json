@@ -1,0 +1,168 @@
+{
+  "id": "cycle.16",
+  "revision": 12,
+  "premiseApproved": true,
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-16/topic-selection.json",
+    "sha256": "fa79dadebcf325e2854435274a740ef080c053a7a78efaef87153e77c5a2a9f0"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-16/owner-premise-authority.json",
+    "sha256": "b20c574bfcbf68363d35497b02c6ad4818c3f266811f8ed54b2290a1c3c6ee15"
+  },
+  "stage": "master-review",
+  "next": {
+    "kind": "owner",
+    "gate": "master-review"
+  },
+  "topic": {
+    "id": "topic.cycle16.voyager",
+    "rationale": "Explicit owner selection independently supported by inspected NASA primary reports; no broad discovery requested or performed."
+  },
+  "research": {
+    "reviewSha256": "446609f1571b2d2dd8d2433fdbb737b9565e3398f79c21a4c23d073496ad3039",
+    "package": "voyager-memory",
+    "verifiedClaimIds": [
+      "voyager-memory.claim.outage",
+      "voyager-memory.claim.distance",
+      "voyager-memory.claim.memory",
+      "voyager-memory.claim.workaround",
+      "voyager-memory.claim.capacity",
+      "voyager-memory.claim.delay",
+      "voyager-memory.claim.engineering",
+      "voyager-memory.claim.science"
+    ]
+  },
+  "narration": {
+    "scriptSha256": "a3002736a6683c7e3e0bdb0fa9b61ea9a064f85ebe2efcdeb0ecbdc7e4bdd87e",
+    "text": "Over fifteen billion miles away, Voyager One was sending signals nobody could read. The trouble began in November twenty twenty-three: a failed memory chip in its data-packaging computer. Engineers couldn't repair the chip. So they moved the affected code. But it wouldn't fit in one place. They split it across working memory, then updated the instructions so the pieces still worked together. A command took about twenty-two and a half hours just to reach the spacecraft. On April twentieth, twenty twenty-four, readable engineering data came back. Science data followed later. The chip stayed broken. The software worked around it."
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/direction-v2.json",
+    "sha256": "6113042501415bc4b23e1bd73f61e8ce181816e54863e0bf5eae4a540ae66f07"
+  },
+  "productionBegun": true,
+  "workInProgress": null,
+  "candidate": {
+    "media": {
+      "id": "media.74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607",
+      "sha256": "74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607"
+    },
+    "durationSeconds": 44.86666666666667,
+    "factualSafeguards": [
+      "Outage began Nov14,2023; no total radio silence.",
+      "Failed chip stays disabled; software relocates and reconnects.",
+      "Illustrative memory model; no real addresses, exact capacity or chip failure cause.",
+      "Distance/light time historical April2024; one-way22.5hours.",
+      "April20engineering return distinct from May–Junescience.",
+      "NASA artist concepts credited; original graphics/audio explicitly nonliteral."
+    ],
+    "unusualProduction": [
+      "Credited existing NASA artwork plus original animated memory and radio-path diagrams; no paid services.",
+      "V1 remains immutable; revised causal motion, stable section identity and complete references are documented in V2 review."
+    ],
+    "platformPreflight": [
+      {
+        "platform": "youtube",
+        "surface": "youtube-shorts-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-16/revision-v2/preflight/youtube.json",
+          "sha256": "d90c8fafa99a78e5509a39c13a3947612cd685da9072698fe9e16e705133ef65"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/youtube.json",
+          "sha256": "804e9a19b9f8dd8d291576ab2216f6735ae7716219b13255e0a68502b844b271"
+        }
+      },
+      {
+        "platform": "tiktok",
+        "surface": "tiktok-feed",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-16/revision-v2/preflight/tiktok.json",
+          "sha256": "1b231b82e8769e94cf0f80e4c17d1ab046a51be74ed00c745146acc6b15c44fa"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/tiktok.json",
+          "sha256": "6e502c02c0fd9dc2c65cd401f2473cce6003f90b1f435b154333845b7994ba92"
+        }
+      },
+      {
+        "platform": "instagram",
+        "surface": "instagram-reels-playback",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-16/revision-v2/preflight/instagram.json",
+          "sha256": "3e7438f7c59bb70dac83bd4515a7eef4437e3cfa1e646b39772075382171f21f"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/instagram.json",
+          "sha256": "9e319e2364990371c58974820331de7023141f6d080fe78a4e3f7d107b32f9d4"
+        }
+      },
+      {
+        "platform": "facebook",
+        "surface": "facebook-reels-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-16/revision-v2/preflight/facebook.json",
+          "sha256": "a103532675bdd9b6a4de97c31f190fa2ec4b7c4e32d353778fc83c9fc09ed58c"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-16/production-v1/profiles/facebook.json",
+          "sha256": "c6a7adaea5d0cf9a6e7e6f98c86814b5d2729015f8e3e2f59111cf34aa910f3e"
+        }
+      }
+    ],
+    "uncertainties": [
+      "No continuous subjective video/audio playback or actual-phone/native-platform test.",
+      "Source images1280x720and800x600are cropped/enlarged; not newly generated footage.",
+      "Memory diagram simplifies a staged software recovery; chip icon is conceptual and not Voyager hardware geometry.",
+      "Caption phrase times authored approximately with full-take ASR corroboration, not forced word alignment.",
+      "Provisional platform inset profiles, unknown controls/crops and sampled motion do not prove mobile safety.",
+      "NASA May/June command-date discrepancy omitted; only supported recovery sequence narrated."
+    ]
+  },
+  "masterApproved": false,
+  "masterDecision": null,
+  "platformMedia": [],
+  "publicationAuthorized": false,
+  "observations": []
+}

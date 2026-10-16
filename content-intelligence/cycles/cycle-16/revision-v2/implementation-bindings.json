@@ -1,0 +1,90 @@
+{
+  "enteredAt": "2026-10-16T17:42:56.934Z",
+  "sourceBaseCommit": "9cea2fd44f865656669e16b7c3c1f3e3826b7306",
+  "files": [
+    {
+      "path": "src/voyager-v2-index.tsx",
+      "sha256": "78180cbfd7c631a6996f9cd695a38dadf6b9e3645a322cb117fa47bb4d669c2e"
+    },
+    {
+      "path": "src/compositions/VoyagerMemoryV2.tsx",
+      "sha256": "54fbe7cc5a26ec3ff4479ce1bc48a9403a4ab3a80024d51852483dfccc34fb8a"
+    },
+    {
+      "path": "src/compositions/VoyagerMemory.tsx",
+      "sha256": "aca9e2e5483b83585262e47563e3618134e7d27cba4e0b568b17624da4a86ccf"
+    },
+    {
+      "path": "src/content/videos/voyager-v2.ts",
+      "sha256": "cd9e409888ae6f50d235059db4fe7ebe0332387decba3fd1e78b7299457b5599"
+    },
+    {
+      "path": "src/production/plans/voyager-v2.json",
+      "sha256": "51274a3e97420cdab40051f72cbf859cf4b6121fa5b1bde67d491bc0514f6c7b"
+    },
+    {
+      "path": "src/captions/plans/voyager-v2.json",
+      "sha256": "13f88c86a6efa83f215b985e5cb7d3e5f06adb6b24ad7d75a1e9c2e754253cd6"
+    },
+    {
+      "path": "src/production/narration/voyager.json",
+      "sha256": "961daabfb6c3b4fe1be0421f75eeb7a3fcc321b65778ba283a5d1f82f3be5236"
+    },
+    {
+      "path": "src/production/voyager-v2/model.ts",
+      "sha256": "9e585f6d408ba021fe46c8970815eec38c992864618047b30950f7d8db7d1fc7"
+    },
+    {
+      "path": "src/production/qa/geometry.ts",
+      "sha256": "9c41ae6c57574569d4b1de46cc31eb5ec59e6cef077445ec34d084f756bad6cd"
+    },
+    {
+      "path": "scripts/voyager-v2-video-target.ts",
+      "sha256": "c2ec97ca76680db2a649ab303c079553b681103f76ec9843d4ba19dc2163afd5"
+    },
+    {
+      "path": "scripts/render-voyager-v2.ts",
+      "sha256": "2ca83433131c1183ffb63944b8768a450e050e1135750bb7903ff3ed857e2adc"
+    },
+    {
+      "path": "scripts/qa-voyager-v2-layout.ts",
+      "sha256": "4584275b1bbfac4f7b5d30db46f08b8fd6e3a02046db46bc923ea88ba342b819"
+    },
+    {
+      "path": "scripts/prepare-voyager-v2-qa-sheets.ts",
+      "sha256": "3d840f5351c067877482e25f6a997f700055b2ef4efe96ae6f393eb9afb0abf6"
+    },
+    {
+      "path": "scripts/inspect-voyager-v2-preservation.ts",
+      "sha256": "a792f058f9841c4f7f3cdadf8313d9bff367866f8e39d7e9fdc6d7d046333911"
+    },
+    {
+      "path": "scripts/finalize-voyager-v2.ts",
+      "sha256": "b18e300e1bf6aa7071c9ac2b96df7dc04e25ca076e620a9e133f3591189d2c4d"
+    },
+    {
+      "path": "scripts/inspect-voyager-v2-audio.mjs",
+      "sha256": "d3156ebec198c66a0ea9795850d370e9fe9327313590ac61bbcd45e1d4363835"
+    },
+    {
+      "path": "tests/production-geometry.test.ts",
+      "sha256": "b222aee3c876346276ba9891ad0003fe5550fda45580b82bd0ee649cbe79aad3"
+    }
+  ],
+  "scriptSha256": "a3002736a6683c7e3e0bdb0fa9b61ea9a064f85ebe2efcdeb0ecbdc7e4bdd87e",
+  "authority": {
+    "path": "content-intelligence/cycles/cycle-16/owner-selection.json",
+    "sha256": "181ee041c790ac21a5fdde0b0c5ff369e48cba4251e44b1fcfa0da238db3bbcf"
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/direction-v2.json",
+    "sha256": "6113042501415bc4b23e1bd73f61e8ce181816e54863e0bf5eae4a540ae66f07"
+  },
+  "revisionContract": {
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/implementation-contract.json",
+    "sha256": "e0eb0a1c6368e7f55de0fbfbe2feaa382f43e2ce08ce516ad82c684722c34829"
+  },
+  "videoPacketSha256": "SHA256=7f07d497d6858b5a5d9c879ac357d0c605c2b527070c10d19767750e071418dd",
+  "note": "Separate V2; exact original audio and ending source frames preserved. QA-only DOM measurements do not change production pixels.",
+  "sourceAuditNote": "Finalizer gained a production-stage rerun guard after registration; no rendered pixels or registered candidate references changed."
+}
