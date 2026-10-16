@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "inspectedAt": "2026-10-16T18:12:41.795Z",
+  "master": {
+    "id": "media.74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607",
+    "sha256": "74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607"
+  },
+  "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/voyager-cycle16-candidate-v2.mp4",
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-16/delivery-v2/master-approval-v2.json",
+    "sha256": "781515ff0e0ab32f0770ec438ca3d9c2238e7dbe5136310910fa2fe6bd33564a"
+  },
+  "probe": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 44.928,
+    "sizeBytes": 26288105,
+    "bitRate": 4680930
+  },
+  "fullDecode": "passed",
+  "masterUnchanged": true,
+  "scriptSha256": "a3002736a6683c7e3e0bdb0fa9b61ea9a064f85ebe2efcdeb0ecbdc7e4bdd87e",
+  "audioEvidence": {
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/qa/audio-inspection.json",
+    "sha256": "47f0989ef3e8b273db5c7116ed912c9a3795e1e8c75b107693cec149cae01e62"
+  },
+  "audioPreservation": {
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/qa/preservation-report.json",
+    "sha256": "17eeb489f9f07718e5aeebf92fa24dcccea49fc53df04ae95b9c958e0e27379f"
+  },
+  "captionValidation": {
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/qa/caption-vtt-validation.json",
+    "sha256": "463238eda363fa07cd35c4d4db5210210929e0083221ef47b6961ca68b061561"
+  },
+  "geometry": {
+    "path": "content-intelligence/cycles/cycle-16/revision-v2/qa/typography-report.json",
+    "sha256": "fc70167390e8dc37f430696a8449f3b6b4f23b2d5fd4069237bdf0fabfc0ff17"
+  },
+  "ownerReview": "Exact master approved for delivery; native/device presentation and publication uncertainty not accepted or inferred.",
+  "renderedAgain": false,
+  "limitations": "No subjective continuous playback/listening or physical-device test. Existing full render and exact-media QA preserved; approval promotion does not render another video."
+}
