@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.ohio.instagram.cover-v2",
+  "revision": 1,
+  "platform": "instagram",
+  "surface": "instagram-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-17T14:07:01.672Z",
+  "reviewAfter": "2026-10-24T14:07:01.672Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Exact canvas checked; native thumbnail composition unmeasured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail UI geometry unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native cover overlay geometry unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Profile/grid/feed/search crop unknown; no crop invented.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/selected-cover-v2.json",
+        "sha256": "332b2c71a65ed9b16ff6e006f3aa59d12bee5849981242af383ebf28520c8222"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-17/delivery-v2/policy-inspection-v2.json",
+        "sha256": "9b5a525deb124104805fdad7bbea50166c7fdde5a6ba43f87fd990f823d72fee"
+      }
+    ],
+    "rationale": "Exact decoded1080×1920PNG or corresponding native frame; actual controls/crops untested."
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.ohio-pedestal.v2",
+  "revision": 2,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "ohio-pedestal",
+    "revision": 1,
+    "sha256": "d86792cc3ede226acbd53df1c6f8a5a026d1a787fa616ae35883c414cc74d90d"
+  },
+  "contentAsset": {
+    "id": "ohio-pedestal.asset.arrival",
+    "revision": 1,
+    "sha256": "3e7a3b4c1363da7382ee2990eb1caedde7c25030b176c31b7d0f58d5945059ae"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.17",
+    "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/youtube.json",
+      "sha256": "ee3c5aa5c08b19f094737302ad88be9bed3de6c234c446cb0808d65530fedfa6"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/tiktok.json",
+      "sha256": "9c8ef9205695496f4eaf5463480ddce956d792cbbe09d74f5a8ef13815fbb890"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/instagram.json",
+      "sha256": "6691a603309fc9975f3c915c122a01fc691c7358dd2702a4753776ffcfd1b0e2"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/facebook.json",
+      "sha256": "fdf8a58aeb36a356d4cfb5cf4e397aa5800ca62028ac66b1b9c4dcebe558265f"
+    }
+  ],
+  "approvedScriptSha256": "6a3b2bc39f9ad31b72b761a48ae3a6ee2c3611a1f97cc3615f7604abf0df1a06",
+  "creativeDirection": {
+    "id": "creative-direction.ohio-pedestal.v2",
+    "revision": 2,
+    "sha256": "2441cd89310259004db55fb35128f89a3af18c0cae51c9de149659f8729032d3"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 44.06666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "ohio.production.1",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.1",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.1",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.1"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.arrival"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 132
+      },
+      "sceneType": "real-formation",
+      "objective": "Immediate authentic frontal photograph showing three ships; short emphasis on central tanker and flanking warships, then arrest the image for spatial inspection.",
+      "onScreenText": [],
+      "animationIntent": "An extraordinary formation; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.2",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.2",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.2",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.2"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.stakes"
+      ],
+      "frames": {
+        "start": 132,
+        "end": 320
+      },
+      "sceneType": "malta-stakes",
+      "objective": "Original geographic locator for Malta between Sicily and North Africa, then narrow into island; no fictitious route or exact military front.",
+      "onScreenText": [],
+      "animationIntent": "An island needs fuel; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.3",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.3",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.3",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.3"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.cargo"
+      ],
+      "frames": {
+        "start": 320,
+        "end": 414
+      },
+      "sceneType": "fuel-aboard",
+      "objective": "Original qualitative tanker profile; warm fuel compartments within a single intact hull. Clearly labeled reconstruction; no measured capacity.",
+      "onScreenText": [],
+      "animationIntent": "The cargo; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.4",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.4",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.4",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.4"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.attacks",
+        "ohio-pedestal.claim.disabled"
+      ],
+      "frames": {
+        "start": 414,
+        "end": 598
+      },
+      "sceneType": "damaged-and-disabled",
+      "objective": "Preserve torpedo view and actual aircraft-crash damage photo; transition to a large oblique powerless tanker, propulsion trace dying and external flooding cue without invented interior mechanism.",
+      "onScreenText": [],
+      "animationIntent": "A ship disabled; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.5",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.5",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.5",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.5"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.tow"
+      ],
+      "frames": {
+        "start": 598,
+        "end": 736
+      },
+      "sceneType": "tow-yaw",
+      "objective": "Carry the same damaged hull into yawing tow; ahead assistance and heading deviation explain control difficulty.",
+      "onScreenText": [],
+      "animationIntent": "Why towing was hard; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.6",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.6",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.6",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.6"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.tow"
+      ],
+      "frames": {
+        "start": 736,
+        "end": 943
+      },
+      "sceneType": "flanks-join",
+      "objective": "Destroyers close on both flanks of Ohio; qualitative securing lines and a camera pullback reveal separate towing assistance ahead. No lifting, hull clamping or fixed ship-name claim.",
+      "onScreenText": [],
+      "animationIntent": "Bring the ships alongside; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.7",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.7",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.7",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.7"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.arrival"
+      ],
+      "frames": {
+        "start": 943,
+        "end": 1065
+      },
+      "sceneType": "harbour-arrival",
+      "objective": "Cut to authentic harbour photograph, retain date and tanker identity. No synthetic archival footage.",
+      "onScreenText": [],
+      "animationIntent": "Into Grand Harbour; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.8",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.8",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.8",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.8"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.delivery"
+      ],
+      "frames": {
+        "start": 1065,
+        "end": 1206
+      },
+      "sceneType": "unload-fuel",
+      "objective": "Authentic unloading photograph and separate original schematic transfer; identify oilers rather than pretend archive still is moving footage.",
+      "onScreenText": [],
+      "animationIntent": "Deliver the fuel; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "ohio.production.9",
+      "sourceVisualPlanId": "ohio-pedestal.asset.arrival.visual.9",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.9",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.9"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.disabled",
+        "ohio-pedestal.claim.cargo",
+        "ohio-pedestal.claim.delivery"
+      ],
+      "frames": {
+        "start": 1206,
+        "end": 1322
+      },
+      "sceneType": "surviving-value",
+      "objective": "Return to the same battered intact hull; highlight surviving fuel, connect it to a symbolic aircraft and continued air operations; retrospective conclusion, not renewed cargo after unloading.",
+      "onScreenText": [],
+      "animationIntent": "The surviving value; authentic photographs remain still records; original geometry is explicitly qualitative.",
+      "transitionIntent": "Cuts follow destination, damage, physical towing challenge, alongside solution, harbour and fuel delivery.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    }
+  ],
+  "assets": [
+    {
+      "id": "ohio.image.supported",
+      "kind": "licensed-image",
+      "path": "public/images/ohio/supported.jpg",
+      "provenance": {
+        "origin": "Official IWM photographs via Commons",
+        "rights": "Public-domain official1942UKgovernment photograph; PD-scan/PD-UKGov",
+        "notes": "Actual photograph; catalog credit retained; exact record and scan rights inspected.",
+        "evidence": "content-intelligence/cycles/cycle-17/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "ohio.image.arrival",
+      "kind": "licensed-image",
+      "path": "public/images/ohio/arrival.jpg",
+      "provenance": {
+        "origin": "Official IWM photographs via Commons",
+        "rights": "Public-domain official1942UKgovernment photograph; PD-scan/PD-UKGov",
+        "notes": "Actual photograph; catalog credit retained; exact record and scan rights inspected.",
+        "evidence": "content-intelligence/cycles/cycle-17/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "ohio.image.damage",
+      "kind": "licensed-image",
+      "path": "public/images/ohio/damage.jpg",
+      "provenance": {
+        "origin": "Official IWM photographs via Commons",
+        "rights": "Public-domain official1942UKgovernment photograph; PD-scan/PD-UKGov",
+        "notes": "Actual photograph; catalog credit retained; exact record and scan rights inspected.",
+        "evidence": "content-intelligence/cycles/cycle-17/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "ohio.image.unloading",
+      "kind": "licensed-image",
+      "path": "public/images/ohio/unloading.jpg",
+      "provenance": {
+        "origin": "Official IWM photographs via Commons",
+        "rights": "Public-domain official1942UKgovernment photograph; PD-scan/PD-UKGov",
+        "notes": "Actual photograph; catalog credit retained; exact record and scan rights inspected.",
+        "evidence": "content-intelligence/cycles/cycle-17/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "ohio.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned",
+        "notes": "Qualitative tanker, towing and geographic locator; no exact technical geometry.",
+        "evidence": "content-intelligence/cycles/cycle-17/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "ohio.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource packages",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing Manrope and Space Grotesk",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "ohio.narration",
+      "kind": "audio",
+      "path": "public/audio/ohio/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact evidence-locked wording",
+        "evidence": "src/production/narration/ohio.json"
+      }
+    },
+    {
+      "id": "ohio.soundscape",
+      "kind": "audio",
+      "path": "public/audio/ohio/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesized sound",
+        "rights": "Project-owned",
+        "notes": "Nonliteral texture and cues, not an authentic wartime recording.",
+        "evidence": "content-intelligence/cycles/cycle-17/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/ohio.en.vtt",
+    "captionPlanId": "caption-plan.ohio-pedestal.v2",
+    "captionPlanRevision": 2,
+    "captionPlanSha256": "723e21d258ff68b870d347781a16c6eb447702233db103070967dfa9fab9c4c1",
+    "generatorId": "generator.ohio-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact source-verified narration.",
+    "No cut-in-half hull, literal lifting, precise cargo amount or single-ship-saved-Malta claim.",
+    "Cargo and final value are retrospective; unloading and continued air operations distinct.",
+    "Actual archive credits and reconstruction disclosures readable.",
+    "Caption midpoints, typography bounds, full decode and measured audio.",
+    "Separate rendered chronological editorial inspection; no inferred subjective listening or native-device pass.",
+    "Stop AHMET — CYCLE17 MASTER REVIEW; no packages or external actions."
+  ]
+}

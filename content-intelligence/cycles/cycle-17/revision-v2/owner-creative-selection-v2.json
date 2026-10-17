@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "cycleId": "cycle.17",
+  "enteredAt": "2026-10-17T13:58:39.165376Z",
+  "reviewer": "Ahmet — owner",
+  "evidenceBasis": "explicit-owner-message",
+  "suppliedReviewTime": null,
+  "instruction": "MAGNIVIS — CYCLE #17 V2 APPROVAL AND DELIVERY PREPARATION\n\nCreative decision: V2 is selected as the final master candidate. No V3 is requested.\n\nApproved master candidate:\n`artifacts/masters/ohio-cycle17-candidate-v2.mp4`\n\nExpected SHA-256:\n`e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091`\n\nBefore recording final approval, confirm owner audio/device QA. If not yet confirmed, preserve V2 as creatively selected and report the remaining approval gate without falsely marking it complete.\n\nOnce that gate is satisfied:\n\n1. Record the V2 master approval using existing repository conventions.\n2. Prepare delivery packages for YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels.\n3. Use the exact approved V2 master without modifying its audio, captions, or visuals.\n4. Prepare platform-specific titles, captions, descriptions, hashtags, disclosures, source attribution, optional first comments, and recommended cover frames.\n5. Verify package integrity, hashes, video decoding, safe-area requirements, and existing platform rules.\n6. Return a concise delivery handoff with exact artifacts, upload settings, known uncertainties, and manual review requirements.\n\nDo not create a V3, change earlier masters, or perform unrelated refactoring.\n\nDo not upload, schedule, publish, or mark any platform post as published.\n\nFollow repository Git and approval rules. Preserve all historical evidence and existing work.\n\nStop at owner delivery review.",
+  "master": {
+    "path": "artifacts/masters/ohio-cycle17-candidate-v2.mp4",
+    "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+  },
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-17/revision-v2/master-candidate-v2.json",
+    "sha256": "46b9af3a5868bf29bdf873bd67d2da129af243eeec7e2a78352ab9a6631145e8"
+  },
+  "creativeSelection": "V2 selected as final master candidate; no V3 requested",
+  "approvalStatus": "creatively-selected-awaiting-owner-audio-device-confirmation",
+  "requiredFinalConfirmation": [
+    "Exact V2 full-speed audio acceptable, including warship lashed pronunciation",
+    "Caption synchronization acceptable",
+    "Phone/device presentation and readability acceptable"
+  ],
+  "finalConfirmationRecorded": false,
+  "ownerConfirmation": null,
+  "nativeUnconditionalMasterDecisionWritten": false,
+  "workflowStage": "master-review",
+  "journalRevision": 12,
+  "continuationAuthority": {
+    "condition": "Owner audio/device QA confirmed for this exact V2 before recording final master approval",
+    "scope": "Exact-byte master approval, then four-platform delivery preparation through owner delivery review",
+    "targetPlatforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "masterChangesAuthorized": false,
+    "v3Requested": false,
+    "uploadAuthorized": false,
+    "scheduleAuthorized": false,
+    "publishAuthorized": false,
+    "commitOrPushAuthorized": false
+  },
+  "interpretation": "Explicit prerequisite in this owner instruction. Existing machine audio and local phone-scale samples do not supply owner listening/device acceptance. Preserve V2 selection; leave native master decision, master lock and delivery preparation pending. No prior-cycle device acceptance transfers to Ohio."
+}

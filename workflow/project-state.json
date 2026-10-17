@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "phase": "content-cycle",
-  "nextOwnerGate": "Independent owner queues: AHMET \u2014 CYCLE #16 DELIVERY READY for approved exact Voyager V2 and four prepared packages; Cycle15 remains independently at PUBLICATION REVIEW / AUTHORIZATION. No external actions authorized.",
+  "nextOwnerGate": "Cycle17 scheduled-owner-reported on all four for 2026-10-17 20:00 CEST (18:00 UTC); publication evidence pending. Native journal remains publication-review revision15; independent earlier queues unchanged. No Cycle18 authority.",
   "externalActions": "Owner reports Cycle #9 published. New owner message on 2026-10-11 reports Cycle #10 published on all four, superseding the 2026-10-09 report that it was scheduled/not yet published; newer report preserved in content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json. Cycle #11 remains owner-reported manually scheduled on all four; actual publication unknown. Actual event dates/times/URLs/IDs/uploaded bytes/settings/comments/device evidence remain unknown; no independently verified platform evidence or assistant platform action. Earlier reports retain their original dated meaning. Owner explicitly confirms Cycle #12 FLIP published on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels on October 12, 2026, superseding scheduling-only status. Exact times/timezone/URLs/IDs/uploaded bytes/settings/comments/device evidence/screenshots/analytics remain unknown; no independent platform verification or assistant platform action. Current owner instruction authorizes Cycle #13 discovery through Premise Review. New explicit Cycle #13 premise approval authorizes research and creative development. That historical research/development work was followed by explicit candidate-production authorization. Cycle13 V1 received REVISE MASTER and remains preserved. V2 is now owner-approved for publication-package preparation subject to final native-device and audio acceptance; four prepared packages reach Publication Review without publication authority. No assistant platform actions or new publication evidence. Owner now reports Cycle13 V2 manually scheduled for 2026-10-13 on all four. Exact times/timezone/URLs/IDs and live publication unknown; no assistant platform actions. Owner reports Cycle14 V4 manually scheduled for 2026-10-14 on all four. Exact times/platform timezones and actual publication remain unknown; no assistant platform actions.",
   "historicalCycles": [
     {
@@ -83,7 +83,7 @@
     "cycle6Started": true
   },
   "cycle6": "authorized; scheduled-owner-reported on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels; journal revision23; scheduled date/time/timezone and scheduling-action time unknown; actual publication/URLs/IDs/settings/comments/processing/presentation/device QA/analytics unknown; awaiting owner publication evidence; exact authorized canonical master and publication package unchanged",
-  "nextSystemTask": "Stop at AHMET \u2014 CYCLE #16 DELIVERY READY. Present four exact-V2 delivery packages, recommended cover and unresolved native presentation risks. Separate publication authorization required. Prior cycles unchanged.",
+  "nextSystemTask": "Await actual Cycle17 publication evidence and separate Cycle18 authorization. Owner-authorized Git audit, validation and synchronization evidence is in content-intelligence/cycles/cycle-17/git-audit-v1; exact commit/remote identity is verified after committing. No external platform action or new cycle authorized.",
   "editorialCalibration": {
     "report": "system-audits/editorial-intelligence-calibration/audit.md",
     "authority": "docs/STRATEGY.md",
@@ -1051,14 +1051,14 @@
       "sha256": "74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607"
     },
     "review": "content-intelligence/cycles/cycle-16/delivery-v2/owner-review-v2.md",
-    "gate": "AHMET \u2014 CYCLE #16 DELIVERY READY",
+    "gate": "AHMET — CYCLE #16 DELIVERY READY",
     "masterApproved": true,
     "publicationAuthorized": false,
     "deliveryPackagesGenerated": true,
     "nativeRevision": 15,
     "priorCandidate": "content-intelligence/cycles/cycle-16/production-v1/master-candidate-v1.json",
     "revisionAuthority": "content-intelligence/cycles/cycle-16/revision-v2/owner-instruction.md",
-    "historicalReconciliation": "Owner explicitly approved exact V2 for delivery preparation and authorized two commits/pushes on the existing branch. First87-file V2 revision committed23b7f4b and synchronized before delivery preparation. Current native publication-review is subordinate to AHMET \u2014 CYCLE #16 DELIVERY READY. V1/V2and prior-cycle media/evidence unchanged; noV3, upload, schedule, publication or accepted presentation risk inferred.",
+    "historicalReconciliation": "Owner explicitly approved exact V2 for delivery preparation and authorized two commits/pushes on the existing branch. First87-file V2 revision committed23b7f4b and synchronized before delivery preparation. Current native publication-review is subordinate to AHMET — CYCLE #16 DELIVERY READY. V1/V2and prior-cycle media/evidence unchanged; noV3, upload, schedule, publication or accepted presentation risk inferred.",
     "nativeStage": "publication-review",
     "masterDecision": "content-intelligence/cycles/cycle-16/delivery-v2/master-approval-v2.json",
     "masterLock": "content-intelligence/cycles/cycle-16/delivery-v2/master-lock-v2.json",
@@ -1075,5 +1075,94 @@
     "presentationUnknowns": 48,
     "unknownsAccepted": false,
     "platformActions": []
+  },
+  "cycle17": {
+    "status": "final-master-approved-delivery-review",
+    "nativeStage": "publication-review",
+    "nativeRevision": 15,
+    "journal": "workflow/cycles/cycle.17",
+    "candidate": {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/master-candidate-v2.json",
+      "sha256": "46b9af3a5868bf29bdf873bd67d2da129af243eeec7e2a78352ab9a6631145e8"
+    },
+    "masterDecision": {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/master-approval-v2.json",
+      "sha256": "8ae50012ef38f27af9bb0d2c5f342eed1332e9423afc39e93448da64821a6f4d"
+    },
+    "ownerPhoneQA": {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/owner-audio-device-qa-v2.json",
+      "sha256": "01133673cde877008519dc9acfc572bd5bca5554ff92decf683708edb54e529f"
+    },
+    "ownerAudioQA": "PASSED — owner-reported",
+    "ownerCaptionSynchronization": "PASSED — owner-reported",
+    "ownerPhoneReadability": "PASSED — owner-reported",
+    "priorConditionalSelectionAsOf": "V2 creatively selected as final master candidate by owner; final approval explicitly conditional on owner audio/device QA, not yet confirmed. Exact44.0667s MP4 e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091 verified unchanged. Evidence content-intelligence/cycles/cycle-17/revision-v2/owner-creative-selection-v2.json and owner-audio-device-qa-pending.md; native journal revision12 remains master-review, masterApproved=false. Four-platform delivery preparation authorized only after confirmation; no V3 or delivery/platform actions.",
+    "masterApproved": true,
+    "masterPath": "artifacts/masters/ohio-cycle17-candidate-v2.mp4",
+    "media": {
+      "id": "media.e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+      "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+    },
+    "release": {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/release-v2.json",
+      "sha256": "56964f511176daa667c73b9fa980c513a5403fa66037bd27dadf5bb146dee764"
+    },
+    "platformPackages": {
+      "youtube": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/manifest-v2.json",
+      "tiktok": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/manifest-v2.json",
+      "instagram": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/manifest-v2.json",
+      "facebook": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/manifest-v2.json"
+    },
+    "review": "content-intelligence/cycles/cycle-17/delivery-v2/owner-review-v2.md",
+    "selectedCover": {
+      "id": "media.b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03",
+      "sha256": "b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03"
+    },
+    "coverPath": "artifacts/covers/ohio-cycle17-delivery-v2/frame-107-3.567s.png",
+    "coverFrame": 107,
+    "coverSeconds": 3.566666666666667,
+    "presentationUnknowns": 48,
+    "unknownsAccepted": false,
+    "nativePlatformPassInferred": false,
+    "coverApproved": false,
+    "publicationAuthorized": false,
+    "publicationDate": null,
+    "platformActions": [],
+    "gitAuthority": "No Cycle17 commit/push authorized; existing staged work preserved.",
+    "historicalReconciliation": "Final owner instruction supersedes pending owner audio/device QA condition for exact V2 only. Previous conditional selection, master records and QA evidence remain unchanged. Native publication-review is subordinate to explicit owner delivery review stop."
+  },
+  "cycle17SchedulingV1": {
+    "status": "scheduled-owner-reported",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "scheduledFor": "2026-10-17T20:00:00+02:00",
+    "scheduledForUtc": "2026-10-17T18:00:00Z",
+    "timezone": "Kosovo local time; CEST, UTC+2; explicitly owner-supplied",
+    "report": {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/owner-report.json",
+      "sha256": "cd58907925439502f7386fb282b631b5d0f38ea88e9d52b6ba6a551799c330d0"
+    },
+    "index": {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/scheduling-index-v1.json",
+      "sha256": "f926cf7de6a11cac327b2ca45993b5b4c34ff00499086b60d8d55f94735a5323"
+    },
+    "publication": "unknown",
+    "actualPublicationTime": null,
+    "publicUrls": null,
+    "nativeStage": "publication-review",
+    "nativeRevision": 15,
+    "nativeJournalUnchanged": true,
+    "publicationDecision": null,
+    "historicalReconciliation": "Additive current-status successor to cycle17 delivery-review metadata. Owner reports manual scheduling; immutable prepared packages and prior owner gates stay as-of evidence. No retrospective exact-release authorization, risk acceptance or native QA inferred.",
+    "gitAuthorization": {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/owner-instruction.md",
+      "sha256": "6c3e12f4fcdc0aeb0a7f27b835a624bf14a2477ab2d1a2d85c96f5c3acd1546b"
+    },
+    "assistantPlatformActions": [],
+    "cycle18Started": false
   }
 }

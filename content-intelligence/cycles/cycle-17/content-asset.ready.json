@@ -1,0 +1,367 @@
+{
+  "id": "ohio-pedestal.asset.arrival",
+  "revision": 1,
+  "knowledgePackageId": "ohio-pedestal",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+  "storyAngle": "Deliver the cargo when the ship can no longer get there alone.",
+  "hookId": "ohio-pedestal.hook.alongside",
+  "selectedClaimIds": [
+    "ohio-pedestal.claim.alongside",
+    "ohio-pedestal.claim.stakes",
+    "ohio-pedestal.claim.cargo",
+    "ohio-pedestal.claim.attacks",
+    "ohio-pedestal.claim.disabled",
+    "ohio-pedestal.claim.tow",
+    "ohio-pedestal.claim.arrival",
+    "ohio-pedestal.claim.delivery"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 35,
+    "maximum": 50
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "ohio-pedestal.asset.arrival.script.1",
+        "type": "factual",
+        "text": "This tanker reached Malta with a warship lashed to each side.",
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.arrival"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.2",
+        "type": "factual",
+        "text": "It was August nineteen forty-two. Malta was under siege, and desperately short of fuel.",
+        "claimIds": [
+          "ohio-pedestal.claim.stakes"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.3",
+        "type": "factual",
+        "text": "Ohio was carrying thousands of tons.",
+        "claimIds": [
+          "ohio-pedestal.claim.cargo"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.4",
+        "type": "factual",
+        "text": "A torpedo struck. Bomb attacks followed. Her engines failed, and water flooded in.",
+        "claimIds": [
+          "ohio-pedestal.claim.attacks",
+          "ohio-pedestal.claim.disabled"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.5",
+        "type": "factual",
+        "text": "Towing her was a struggle: the damaged ship kept swinging off course.",
+        "claimIds": [
+          "ohio-pedestal.claim.tow"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.6",
+        "type": "factual",
+        "text": "So destroyers came alongside, securing the tanker between them, while other vessels helped with the tow.",
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.tow"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.7",
+        "type": "factual",
+        "text": "On August fifteenth, Ohio entered Grand Harbour.",
+        "claimIds": [
+          "ohio-pedestal.claim.arrival"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.8",
+        "type": "factual",
+        "text": "Her fuel was unloaded, helping Malta’s aircraft keep fighting.",
+        "claimIds": [
+          "ohio-pedestal.claim.delivery"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.script.9",
+        "type": "factual",
+        "text": "The precious part of this wreck was still inside her.",
+        "claimIds": [
+          "ohio-pedestal.claim.disabled",
+          "ohio-pedestal.claim.cargo",
+          "ohio-pedestal.claim.delivery"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.1",
+      "label": "An extraordinary formation",
+      "purpose": "Immediate authentic frontal photograph showing three ships; short emphasis on central tanker and flanking warships, then arrest the image for spatial inspection.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.1"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.2",
+      "label": "An island needs fuel",
+      "purpose": "Original geographic locator for Malta between Sicily and North Africa, then narrow into island; no fictitious route or exact military front.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.2"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.3",
+      "label": "The cargo",
+      "purpose": "Original qualitative tanker profile; warm fuel compartments within a single intact hull. Clearly labeled reconstruction; no measured capacity.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.3"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.4",
+      "label": "A ship disabled",
+      "purpose": "Attack dates, actual deck-damage image; original qualitative side-profile flooding/propulsion overlay without fictional battle footage or a separated hull.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.4"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.5",
+      "label": "Why towing was hard",
+      "purpose": "Overhead tanker with ahead tow swings off centerline; compressed qualitative movement, not a recreated exact incident.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.5"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.6",
+      "label": "Bring the ships alongside",
+      "purpose": "Same tanker identity; two smaller destroyers move against sides, connections become visible, an additional towing vessel remains ahead. Hold readable completed formation.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.6"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.7",
+      "label": "Into Grand Harbour",
+      "purpose": "Cut to authentic harbour photograph, retain date and tanker identity. No synthetic archival footage.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.7"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.8",
+      "label": "Deliver the fuel",
+      "purpose": "Authentic unloading photograph and separate original schematic transfer; identify oilers rather than pretend archive still is moving footage.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.8"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.beat.9",
+      "label": "The surviving value",
+      "purpose": "Return to intact damaged profile; fuel remains highlighted as a connection leads toward Malta. Close on fuel delivered rather than generic inspiration.",
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.9"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.1",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.1",
+      "objective": "Immediate authentic frontal photograph showing three ships; short emphasis on central tanker and flanking warships, then arrest the image for spatial inspection.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.1"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.arrival"
+      ],
+      "notes": "An extraordinary formation; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.2",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.2",
+      "objective": "Original geographic locator for Malta between Sicily and North Africa, then narrow into island; no fictitious route or exact military front.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.2"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.stakes"
+      ],
+      "notes": "An island needs fuel; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.3",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.3",
+      "objective": "Original qualitative tanker profile; warm fuel compartments within a single intact hull. Clearly labeled reconstruction; no measured capacity.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.3"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.cargo"
+      ],
+      "notes": "The cargo; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.4",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.4",
+      "objective": "Attack dates, actual deck-damage image; original qualitative side-profile flooding/propulsion overlay without fictional battle footage or a separated hull.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.4"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.attacks",
+        "ohio-pedestal.claim.disabled"
+      ],
+      "notes": "A ship disabled; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.5",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.5",
+      "objective": "Overhead tanker with ahead tow swings off centerline; compressed qualitative movement, not a recreated exact incident.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.5"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.tow"
+      ],
+      "notes": "Why towing was hard; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.6",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.6",
+      "objective": "Same tanker identity; two smaller destroyers move against sides, connections become visible, an additional towing vessel remains ahead. Hold readable completed formation.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.6"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.tow"
+      ],
+      "notes": "Bring the ships alongside; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.7",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.7",
+      "objective": "Cut to authentic harbour photograph, retain date and tanker identity. No synthetic archival footage.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.7"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.arrival"
+      ],
+      "notes": "Into Grand Harbour; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.8",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.8",
+      "objective": "Authentic unloading photograph and separate original schematic transfer; identify oilers rather than pretend archive still is moving footage.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.8"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.delivery"
+      ],
+      "notes": "Deliver the fuel; authentic photographs remain still records; original geometry is explicitly qualitative."
+    },
+    {
+      "id": "ohio-pedestal.asset.arrival.visual.9",
+      "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.9",
+      "objective": "Return to intact damaged profile; fuel remains highlighted as a connection leads toward Malta. Close on fuel delivered rather than generic inspiration.",
+      "visualType": "hybrid",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Public-domain official photographs, credited by catalog ID.",
+        "Original qualitative map, tanker and towing model."
+      ],
+      "scriptSegmentIds": [
+        "ohio-pedestal.asset.arrival.script.9"
+      ],
+      "claimIds": [
+        "ohio-pedestal.claim.disabled",
+        "ohio-pedestal.claim.cargo",
+        "ohio-pedestal.claim.delivery"
+      ],
+      "notes": "The surviving value; authentic photographs remain still records; original geometry is explicitly qualitative."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established local Kokoro af_heart; clear urgent curiosity, then measured physical explanation. No acted wartime dialogue.",
+    "pronunciationNotes": [
+      "Ohio: oh-HIGH-oh. Malta: MAWL-tuh.",
+      "August fifteenth; no precise hour or cargo quantity."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review; not owner factual or master approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.17",
+      "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+    },
+    "approvedAt": "2026-10-16",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

@@ -1,0 +1,886 @@
+{
+  "draftPackage": {
+    "id": "ohio-pedestal",
+    "revision": 1,
+    "topic": "SS Ohio: the tanker brought into Malta between warships",
+    "centralQuestion": "How did a disabled tanker reach Malta, and why did its cargo matter?",
+    "taxonomy": {
+      "pillar": "history-stories",
+      "domains": [
+        "naval-history",
+        "logistics"
+      ],
+      "topics": [
+        "operation-pedestal",
+        "malta",
+        "ss-ohio"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "A changing team of escorts and local vessels brought a badly damaged tanker to Malta so its fuel could be delivered.",
+    "viewerPayoff": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+    "sources": [
+      {
+        "id": "source.ohio.hill",
+        "organization": "Royal Navy participant report (hosted transcription)",
+        "title": "HMS Ledbury letter of proceedings — Roger Hill",
+        "sourceType": "government",
+        "url": "https://www.bosburyhistoryresource.org.uk/HMSLedbury/HMSLedbury-letter-of-proceedings.pdf",
+        "retrieved": "2026-10-16",
+        "notes": "Actual source body inspected; saved web extraction. Hosted modern transcription, not examination of original signed document."
+      },
+      {
+        "id": "source.ohio.nhb",
+        "organization": "Royal Navy Naval Historical Branch",
+        "title": "Operation Pedestal — Naval Historical Branch information brief, Malcolm Llewellyn-Jones",
+        "sourceType": "government",
+        "url": "https://www.um.edu.mt/library/oar/bitstream/123456789/23022/1/20120801%20%20Operation%20Pedestal%20Aug%2042.pdf",
+        "retrieved": "2026-10-16",
+        "notes": "Actual source body inspected; saved web extraction. "
+      },
+      {
+        "id": "source.ohio.unloading",
+        "organization": "Imperial War Museums",
+        "title": "IWM A11498: Ohio unloading fuel — catalog reproduced on Commons",
+        "sourceType": "museum",
+        "url": "https://commons.wikimedia.org/wiki/File:Operation_Pedestal,_August_1942_A11498.jpg",
+        "retrieved": "2026-10-16",
+        "notes": "Actual source body inspected; saved web extraction. "
+      },
+      {
+        "id": "source.ohio.gazette",
+        "organization": "Admiralty / London Gazette",
+        "title": "Operation Pedestal dispatch, London Gazette supplement 38377",
+        "sourceType": "government",
+        "url": "https://www.ibiblio.org/hyperwar/UN/UK/LondonGazette/38377.pdf",
+        "retrieved": "2026-10-16",
+        "notes": "Actual source body inspected; saved web extraction. "
+      },
+      {
+        "id": "source.ohio.liaison",
+        "organization": "Royal Navy participant report (hosted transcription)",
+        "title": "Report from naval liaison officer aboard Ohio",
+        "sourceType": "government",
+        "url": "https://www.bosburyhistoryresource.org.uk/HMSLedbury/SSOhio-personal-accounts.pdf",
+        "retrieved": "2026-10-16",
+        "notes": "Actual source body inspected; saved web extraction. Hosted modern transcription, not examination of original signed document."
+      }
+    ],
+    "claims": [
+      {
+        "id": "ohio-pedestal.claim.alongside",
+        "statement": "Two destroyers were secured either side of Ohio during the successful assisted passage into Malta.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.hill",
+            "locator": "p7, after final air attack: Penn and Bramham secured either side; 15 August entry.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/hill.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Identities in some IWM captions differ; generic destroyers in narration/diagram, full discrepancy retained."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "ohio-pedestal.claim.stakes",
+        "statement": "Malta was under siege in August 1942 and urgently needed fuel to sustain its aircraft.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.nhb",
+            "locator": "pp4–5 fuel shortage; pp12–13 Ohio role.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Fuel was one part of a wider resupply effort; no sole saviour or precise surrender deadline."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "ohio-pedestal.claim.cargo",
+        "statement": "Ohio carried thousands of tons of fuel for Malta.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.unloading",
+            "locator": "IWM A11498 catalog description of cargo and unloading.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/unloading.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Totals and cargo descriptions vary among catalogs: 10000/11000 and elsewhere 11500; retain only broad thousands of tons. No claim it was all aviation gasoline."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "ohio-pedestal.claim.attacks",
+        "statement": "Ohio was torpedoed on 12 August 1942 and further damaged in air attacks on 13 August.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.gazette",
+            "locator": "Syfret dispatch para26; diary13August paras24–26; corroborating A11498 caption.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/gazette.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Early observer uncertainty about mines is preserved; later official dispatch identifies torpedo. No invented impact count."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "ohio-pedestal.claim.disabled",
+        "statement": "Ohio lost propulsion, suffered flooding and had serious structural damage.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.liaison",
+            "locator": "Naval liaison report paras12–19: stopped engines, flooded engine room, buckled deck and alongside tow.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/liaison.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Transcription, not original manuscript. Broken-back language means structural damage, not literal severance."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "ohio-pedestal.claim.tow",
+        "statement": "Early towing attempts struggled to keep Ohio straight; alongside assistance and other towing vessels helped bring her in.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.hill",
+            "locator": "pp7–8: Rye/ Ledbury towing, Penn acting as drag; final Penn/Bramham either side; channel alignment.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/hill.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Liaison paras13–19 independently describe circling and steering difficulty. No exact load paths, rope plan, quantified buoyancy or constant arrangement."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "ohio-pedestal.claim.arrival",
+        "statement": "Ohio entered Grand Harbour at Malta on the morning of 15 August 1942.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.nhb",
+            "locator": "p11 arrival; corroborated official dispatch para39 and RN war diary.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "RMG painting title says14August; painting title is not event chronology. Exact hour omitted."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "ohio-pedestal.claim.delivery",
+        "statement": "Ohio unloaded fuel at Malta; the delivery helped sustain aircraft operations from the island.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.nhb",
+            "locator": "pp12–13 fuel/air operations; IWM A11498 depicts unloading into Boxall and Plumleaf.",
+            "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Do not attribute all Malta survival or North Africa victory to this one ship."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "ohio-pedestal.caveat.scope",
+        "statement": "No literal cut-in-half hull, unquantified lifting mechanics, exact tonnage, invented battle incident or sole-saviour conclusion. Reconstruction is qualitative and compressed.",
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.stakes",
+          "ohio-pedestal.claim.cargo",
+          "ohio-pedestal.claim.attacks",
+          "ohio-pedestal.claim.disabled",
+          "ohio-pedestal.claim.tow",
+          "ohio-pedestal.claim.arrival",
+          "ohio-pedestal.claim.delivery"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "ohio-pedestal.hook.alongside",
+        "archetype": "extraordinary-physical-arrangement",
+        "text": "This tanker reached Malta with a warship lashed to each side.",
+        "viewerPromise": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.arrival"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.hook.cargo",
+        "archetype": "surviving-value",
+        "text": "A disabled ship could still deliver its most valuable part: the fuel inside.",
+        "viewerPromise": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+        "claimIds": [
+          "ohio-pedestal.claim.disabled",
+          "ohio-pedestal.claim.delivery"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "ohio-pedestal.story.delivery",
+        "title": "A tanker becomes a shared rescue",
+        "description": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.stakes",
+          "ohio-pedestal.claim.cargo",
+          "ohio-pedestal.claim.attacks",
+          "ohio-pedestal.claim.disabled",
+          "ohio-pedestal.claim.tow",
+          "ohio-pedestal.claim.arrival",
+          "ohio-pedestal.claim.delivery"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "ohio-pedestal.visual.arrangement",
+        "title": "See the flanking ships",
+        "description": "Authentic formation photo and clearly distinct overhead model make the relationship readable.",
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.tow"
+        ]
+      }
+    ],
+    "relatedQuestions": [],
+    "followUpOpportunities": [],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "ohio-pedestal.asset.arrival",
+    "revision": 1,
+    "knowledgePackageId": "ohio-pedestal",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+    "storyAngle": "Deliver the cargo when the ship can no longer get there alone.",
+    "hookId": "ohio-pedestal.hook.alongside",
+    "selectedClaimIds": [
+      "ohio-pedestal.claim.alongside",
+      "ohio-pedestal.claim.stakes",
+      "ohio-pedestal.claim.cargo",
+      "ohio-pedestal.claim.attacks",
+      "ohio-pedestal.claim.disabled",
+      "ohio-pedestal.claim.tow",
+      "ohio-pedestal.claim.arrival",
+      "ohio-pedestal.claim.delivery"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 35,
+      "maximum": 50
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "ohio-pedestal.asset.arrival.script.1",
+          "type": "factual",
+          "text": "This tanker reached Malta with a warship lashed to each side.",
+          "claimIds": [
+            "ohio-pedestal.claim.alongside",
+            "ohio-pedestal.claim.arrival"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.2",
+          "type": "factual",
+          "text": "It was August nineteen forty-two. Malta was under siege, and desperately short of fuel.",
+          "claimIds": [
+            "ohio-pedestal.claim.stakes"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.3",
+          "type": "factual",
+          "text": "Ohio was carrying thousands of tons.",
+          "claimIds": [
+            "ohio-pedestal.claim.cargo"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.4",
+          "type": "factual",
+          "text": "A torpedo struck. Bomb attacks followed. Her engines failed, and water flooded in.",
+          "claimIds": [
+            "ohio-pedestal.claim.attacks",
+            "ohio-pedestal.claim.disabled"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.5",
+          "type": "factual",
+          "text": "Towing her was a struggle: the damaged ship kept swinging off course.",
+          "claimIds": [
+            "ohio-pedestal.claim.tow"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.6",
+          "type": "factual",
+          "text": "So destroyers came alongside, securing the tanker between them, while other vessels helped with the tow.",
+          "claimIds": [
+            "ohio-pedestal.claim.alongside",
+            "ohio-pedestal.claim.tow"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.7",
+          "type": "factual",
+          "text": "On August fifteenth, Ohio entered Grand Harbour.",
+          "claimIds": [
+            "ohio-pedestal.claim.arrival"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.8",
+          "type": "factual",
+          "text": "Her fuel was unloaded, helping Malta’s aircraft keep fighting.",
+          "claimIds": [
+            "ohio-pedestal.claim.delivery"
+          ]
+        },
+        {
+          "id": "ohio-pedestal.asset.arrival.script.9",
+          "type": "factual",
+          "text": "The precious part of this wreck was still inside her.",
+          "claimIds": [
+            "ohio-pedestal.claim.disabled",
+            "ohio-pedestal.claim.cargo",
+            "ohio-pedestal.claim.delivery"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.1",
+        "label": "An extraordinary formation",
+        "purpose": "Immediate authentic frontal photograph showing three ships; short emphasis on central tanker and flanking warships, then arrest the image for spatial inspection.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.1"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.2",
+        "label": "An island needs fuel",
+        "purpose": "Original geographic locator for Malta between Sicily and North Africa, then narrow into island; no fictitious route or exact military front.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.2"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.3",
+        "label": "The cargo",
+        "purpose": "Original qualitative tanker profile; warm fuel compartments within a single intact hull. Clearly labeled reconstruction; no measured capacity.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.3"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.4",
+        "label": "A ship disabled",
+        "purpose": "Attack dates, actual deck-damage image; original qualitative side-profile flooding/propulsion overlay without fictional battle footage or a separated hull.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.4"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.5",
+        "label": "Why towing was hard",
+        "purpose": "Overhead tanker with ahead tow swings off centerline; compressed qualitative movement, not a recreated exact incident.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.5"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.6",
+        "label": "Bring the ships alongside",
+        "purpose": "Same tanker identity; two smaller destroyers move against sides, connections become visible, an additional towing vessel remains ahead. Hold readable completed formation.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.6"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.7",
+        "label": "Into Grand Harbour",
+        "purpose": "Cut to authentic harbour photograph, retain date and tanker identity. No synthetic archival footage.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.7"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.8",
+        "label": "Deliver the fuel",
+        "purpose": "Authentic unloading photograph and separate original schematic transfer; identify oilers rather than pretend archive still is moving footage.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.8"
+        ]
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.beat.9",
+        "label": "The surviving value",
+        "purpose": "Return to intact damaged profile; fuel remains highlighted as a connection leads toward Malta. Close on fuel delivered rather than generic inspiration.",
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.9"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.1",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.1",
+        "objective": "Immediate authentic frontal photograph showing three ships; short emphasis on central tanker and flanking warships, then arrest the image for spatial inspection.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.1"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.arrival"
+        ],
+        "notes": "An extraordinary formation; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.2",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.2",
+        "objective": "Original geographic locator for Malta between Sicily and North Africa, then narrow into island; no fictitious route or exact military front.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.2"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.stakes"
+        ],
+        "notes": "An island needs fuel; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.3",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.3",
+        "objective": "Original qualitative tanker profile; warm fuel compartments within a single intact hull. Clearly labeled reconstruction; no measured capacity.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.3"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.cargo"
+        ],
+        "notes": "The cargo; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.4",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.4",
+        "objective": "Attack dates, actual deck-damage image; original qualitative side-profile flooding/propulsion overlay without fictional battle footage or a separated hull.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.4"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.attacks",
+          "ohio-pedestal.claim.disabled"
+        ],
+        "notes": "A ship disabled; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.5",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.5",
+        "objective": "Overhead tanker with ahead tow swings off centerline; compressed qualitative movement, not a recreated exact incident.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.5"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.tow"
+        ],
+        "notes": "Why towing was hard; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.6",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.6",
+        "objective": "Same tanker identity; two smaller destroyers move against sides, connections become visible, an additional towing vessel remains ahead. Hold readable completed formation.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.6"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.tow"
+        ],
+        "notes": "Bring the ships alongside; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.7",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.7",
+        "objective": "Cut to authentic harbour photograph, retain date and tanker identity. No synthetic archival footage.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.7"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.arrival"
+        ],
+        "notes": "Into Grand Harbour; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.8",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.8",
+        "objective": "Authentic unloading photograph and separate original schematic transfer; identify oilers rather than pretend archive still is moving footage.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.8"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.delivery"
+        ],
+        "notes": "Deliver the fuel; authentic photographs remain still records; original geometry is explicitly qualitative."
+      },
+      {
+        "id": "ohio-pedestal.asset.arrival.visual.9",
+        "narrativeBeatId": "ohio-pedestal.asset.arrival.beat.9",
+        "objective": "Return to intact damaged profile; fuel remains highlighted as a connection leads toward Malta. Close on fuel delivered rather than generic inspiration.",
+        "visualType": "hybrid",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Public-domain official photographs, credited by catalog ID.",
+          "Original qualitative map, tanker and towing model."
+        ],
+        "scriptSegmentIds": [
+          "ohio-pedestal.asset.arrival.script.9"
+        ],
+        "claimIds": [
+          "ohio-pedestal.claim.disabled",
+          "ohio-pedestal.claim.cargo",
+          "ohio-pedestal.claim.delivery"
+        ],
+        "notes": "The surviving value; authentic photographs remain still records; original geometry is explicitly qualitative."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Established local Kokoro af_heart; clear urgent curiosity, then measured physical explanation. No acted wartime dialogue.",
+      "pronunciationNotes": [
+        "Ohio: oh-HIGH-oh. Malta: MAWL-tuh.",
+        "August fifteenth; no precise hour or cargo quantity."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.17",
+    "topicCandidateId": "topic.cycle17.ohio",
+    "enteredAt": "2026-10-16T19:04:24.736Z",
+    "reviewer": "Codex internal evidence review; not owner factual or master approval",
+    "premiseAlignment": {
+      "selectionSha256": "fd5b0d1bb056fd8270d156eda0c904bcc36b509f891f71525e7c876a734ec89a",
+      "preservesPublishingOpportunity": true,
+      "rationale": "Exact owner-selected assisted arrival and fuel-delivery payoff. Safer lashed-alongside hook resolves the expressly provisional hold-it-up wording, preserving opportunity."
+    },
+    "packageSha256": "29a772a8db80c931c1079bac966bebea7194840a67b292428aeacf3c367e0f66",
+    "assetSha256": "1cffd156b4d878b90bfa07c0c521224d721d2055328188bf24aa24b89b2e6259",
+    "scriptSha256": "6a3b2bc39f9ad31b72b761a48ae3a6ee2c3611a1f97cc3615f7604abf0df1a06",
+    "inspections": [
+      {
+        "sourceId": "source.ohio.hill",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "p7, after final air attack: Penn and Bramham secured either side; 15 August entry.",
+          "pp7–8: Rye/ Ledbury towing, Penn acting as drag; final Penn/Bramham either side; channel alignment."
+        ],
+        "supportsClaimIds": [
+          "ohio-pedestal.claim.alongside",
+          "ohio-pedestal.claim.tow"
+        ],
+        "limitations": [
+          "Web source/PDF extraction; participant reports are transcriptions, not original signatures.",
+          "NHB erroneously calls Ledbury a minesweeper; cargo totals and named flanks differ in photo captions. These details excluded or reconciled."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-17/research/hill-inspection.json",
+          "sha256": "79ad1f9710397a0d4012227a5d375dfa13a06895a45f754b6be1229523377547"
+        },
+        "sourceQualityRationale": "Official history, dispatch, official catalog or contemporaneous participant report as appropriate; cross-checked with independent source types."
+      },
+      {
+        "sourceId": "source.ohio.nhb",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "pp4–5 fuel shortage; pp12–13 Ohio role.",
+          "p11 arrival; corroborated official dispatch para39 and RN war diary.",
+          "pp12–13 fuel/air operations; IWM A11498 depicts unloading into Boxall and Plumleaf."
+        ],
+        "supportsClaimIds": [
+          "ohio-pedestal.claim.stakes",
+          "ohio-pedestal.claim.arrival",
+          "ohio-pedestal.claim.delivery"
+        ],
+        "limitations": [
+          "Web source/PDF extraction; participant reports are transcriptions, not original signatures.",
+          "NHB erroneously calls Ledbury a minesweeper; cargo totals and named flanks differ in photo captions. These details excluded or reconciled."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-17/research/nhb-inspection.json",
+          "sha256": "72924f4356a6cacc413cae600dd440ae1dda62e482dce99198179c1d01ad989e"
+        },
+        "sourceQualityRationale": "Official history, dispatch, official catalog or contemporaneous participant report as appropriate; cross-checked with independent source types."
+      },
+      {
+        "sourceId": "source.ohio.unloading",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "IWM A11498 catalog description of cargo and unloading."
+        ],
+        "supportsClaimIds": [
+          "ohio-pedestal.claim.cargo"
+        ],
+        "limitations": [
+          "Web source/PDF extraction; participant reports are transcriptions, not original signatures.",
+          "NHB erroneously calls Ledbury a minesweeper; cargo totals and named flanks differ in photo captions. These details excluded or reconciled."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-17/research/unloading-inspection.json",
+          "sha256": "e6f8e49d9086e06e489b4015f995fd3f6e3d6b716ffa3a467da4be0f2864607a"
+        },
+        "sourceQualityRationale": "Official history, dispatch, official catalog or contemporaneous participant report as appropriate; cross-checked with independent source types."
+      },
+      {
+        "sourceId": "source.ohio.gazette",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Syfret dispatch para26; diary13August paras24–26; corroborating A11498 caption."
+        ],
+        "supportsClaimIds": [
+          "ohio-pedestal.claim.attacks"
+        ],
+        "limitations": [
+          "Web source/PDF extraction; participant reports are transcriptions, not original signatures.",
+          "NHB erroneously calls Ledbury a minesweeper; cargo totals and named flanks differ in photo captions. These details excluded or reconciled."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-17/research/gazette-inspection.json",
+          "sha256": "61dfa6728a764dfb94235813637bc34337ac53aa22e0346ac7e4fc57dcdc6437"
+        },
+        "sourceQualityRationale": "Official history, dispatch, official catalog or contemporaneous participant report as appropriate; cross-checked with independent source types."
+      },
+      {
+        "sourceId": "source.ohio.liaison",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Naval liaison report paras12–19: stopped engines, flooded engine room, buckled deck and alongside tow."
+        ],
+        "supportsClaimIds": [
+          "ohio-pedestal.claim.disabled"
+        ],
+        "limitations": [
+          "Web source/PDF extraction; participant reports are transcriptions, not original signatures.",
+          "NHB erroneously calls Ledbury a minesweeper; cargo totals and named flanks differ in photo captions. These details excluded or reconciled."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-17/research/liaison-inspection.json",
+          "sha256": "f8e14bea9180721e6c90ebe7fc2af39b26f78fc17d36ca6d3bf27cd35b4bed73"
+        },
+        "sourceQualityRationale": "Official history, dispatch, official catalog or contemporaneous participant report as appropriate; cross-checked with independent source types."
+      }
+    ],
+    "claims": [
+      {
+        "id": "ohio-pedestal.claim.alongside",
+        "statementSha256": "32f4438eca99bb3dc50c6ed90e3b6a6249dc565a4b656cb6a5e97f17ace26a16",
+        "disposition": "verify",
+        "rationale": "Identities in some IWM captions differ; generic destroyers in narration/diagram, full discrepancy retained.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.hill",
+            "locator": "p7, after final air attack: Penn and Bramham secured either side; 15 August entry.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/hill.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "ohio-pedestal.claim.stakes",
+        "statementSha256": "c55a48a1a1d405973b2d49a8b88a7818ec3c8d607defd74c8074861a27dbf275",
+        "disposition": "verify",
+        "rationale": "Fuel was one part of a wider resupply effort; no sole saviour or precise surrender deadline.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.nhb",
+            "locator": "pp4–5 fuel shortage; pp12–13 Ohio role.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "ohio-pedestal.claim.cargo",
+        "statementSha256": "df246657dc0df5c26eb4238f4efdc357ebb21c0d3808cf88e2a7f5f1d9222371",
+        "disposition": "verify",
+        "rationale": "Totals and cargo descriptions vary among catalogs: 10000/11000 and elsewhere 11500; retain only broad thousands of tons. No claim it was all aviation gasoline.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.unloading",
+            "locator": "IWM A11498 catalog description of cargo and unloading.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/unloading.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "ohio-pedestal.claim.attacks",
+        "statementSha256": "7cd3228124ec8cc1f255762232a23c533c8b74819c29b5dd8ae2ea0e87e9fe53",
+        "disposition": "verify",
+        "rationale": "Early observer uncertainty about mines is preserved; later official dispatch identifies torpedo. No invented impact count.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.gazette",
+            "locator": "Syfret dispatch para26; diary13August paras24–26; corroborating A11498 caption.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/gazette.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "ohio-pedestal.claim.disabled",
+        "statementSha256": "df8b080b39ec7d43141b920eed77b0e6f40f48aabec91052fc119791531ebcc7",
+        "disposition": "verify",
+        "rationale": "Transcription, not original manuscript. Broken-back language means structural damage, not literal severance.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.liaison",
+            "locator": "Naval liaison report paras12–19: stopped engines, flooded engine room, buckled deck and alongside tow.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/liaison.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "ohio-pedestal.claim.tow",
+        "statementSha256": "2489bcf2967716cfcac78459c6aacde2b25ebb3327c89e9f86a43feba7ac4bb6",
+        "disposition": "verify",
+        "rationale": "Liaison paras13–19 independently describe circling and steering difficulty. No exact load paths, rope plan, quantified buoyancy or constant arrangement.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.hill",
+            "locator": "pp7–8: Rye/ Ledbury towing, Penn acting as drag; final Penn/Bramham either side; channel alignment.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/hill.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "ohio-pedestal.claim.arrival",
+        "statementSha256": "11c4d364c391b806cde285ac69ebbfeea5d09724e421bffc5ec9a794959e7f4d",
+        "disposition": "verify",
+        "rationale": "RMG painting title says14August; painting title is not event chronology. Exact hour omitted.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.nhb",
+            "locator": "p11 arrival; corroborated official dispatch para39 and RN war diary.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "ohio-pedestal.claim.delivery",
+        "statementSha256": "13caea0a1a2a22c545bc0ee9f7c384b04c98accd847b22bea2a6eb13b0e08aa5",
+        "disposition": "verify",
+        "rationale": "Do not attribute all Malta survival or North Africa victory to this one ship.",
+        "evidence": [
+          {
+            "sourceId": "source.ohio.nhb",
+            "locator": "pp12–13 fuel/air operations; IWM A11498 depicts unloading into Boxall and Plumleaf.",
+            "assessment": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "One intact seriously damaged hull throughout; no two halves.",
+      "No ship lifted completely from the sea, no quantified buoyancy, no exact lashings or recovered engineering diagram.",
+      "Changing towing arrangements compressed and labeled; two alongside plus another ahead, not only two rescuers.",
+      "Cargo thousands of tons, not an exact total or all aviation gasoline.",
+      "No invented casualties, dialogue, attack count or sole-saviour claim.",
+      "Archive black and white remains distinct from clearly labeled original reconstruction; no fake archival battle."
+    ],
+    "comprehensionReview": "Opening names a tanker and visibly shows flanks; stakes established in one sentence; disabled engines and swinging tow motivate alongside assistance; unloading delivers specific payoff. Final precious part is an editorial metaphor for fuel, not a new historical event.",
+    "rightsReview": "Four inspected official 1942 photographs from Commons, PD-scan/expired UK Crown copyright; IWM NC metadata is not the commercial permission relied on. Original drawing/audio, existing licensed fonts/Kokoro. RMG art and IWM licensed film excluded. See rights-provenance.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Historical logistics explanation; no glorified violence, invented battle footage or graphic casualties. Existing local capabilities and costs."
+    },
+    "exceptionalConditions": []
+  }
+}

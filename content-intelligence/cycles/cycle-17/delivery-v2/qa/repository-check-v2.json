@@ -1,0 +1,22 @@
+{
+  "command": "pnpm check",
+  "exitCode": 0,
+  "passed": true,
+  "typecheck": "passed",
+  "lint": "passed",
+  "testFiles": 55,
+  "testFilesPassed": 55,
+  "tests": 514,
+  "testsPassed": 514,
+  "gitDiffCheck": "passed",
+  "initialFailureResolved": "First attempt found new canonical cover not yet Git tracked; scoped staging completed, rerun passes.",
+  "otherChecks": [
+    "pnpm qa ohio-v2 passed",
+    "pnpm artifacts:durable passed",
+    "node --import tsx scripts/validate-ohio-v2-release.ts passed",
+    "git diff --cached --check passed"
+  ],
+  "noCommit": true,
+  "noPush": true,
+  "noExternalAction": true
+}

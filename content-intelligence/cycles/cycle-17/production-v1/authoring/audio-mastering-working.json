@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-16T19:13:04.550Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/ohio-render-v1.mp4",
+    "sha256": "289aef3647d9dbfdf15cc4b33cfbb9bc5db30f5ade5e019eafcac9002e340e70",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/ohio-cycle17-candidate-v1.mp4",
+    "sha256": "4202ffaf2fb5bccdf6ef43e3dce97afbe16bdf8a946e2139638497f29360e9f2"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.65",
+    "input_tp": "-5.40",
+    "input_lra": "3.20",
+    "input_thresh": "-33.81",
+    "output_i": "-19.08",
+    "output_tp": "-2.00",
+    "output_lra": "3.00",
+    "output_thresh": "-30.20",
+    "normalization_type": "dynamic",
+    "target_offset": "0.08"
+  },
+  "gainDb": 3.2,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

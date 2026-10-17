@@ -1,0 +1,47 @@
+{
+  "cycleId": "cycle.17",
+  "recordedAt": "2026-10-17T14:24:57.306296Z",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledDate": "2026-10-17",
+  "scheduledLocalTime": "20:00:00",
+  "scheduledFor": "2026-10-17T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-17T18:00:00Z",
+  "schedulingTimeZone": {
+    "ownerLabel": "Kosovo local time (CEST, UTC+2)",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "ianaIdentifier": null,
+    "basis": "explicit-owner-message; supplied offset used for deterministic UTC conversion"
+  },
+  "publication": "unknown",
+  "report": {
+    "path": "content-intelligence/operations/ohio-scheduling-v1/owner-report.json",
+    "sha256": "cd58907925439502f7386fb282b631b5d0f38ea88e9d52b6ba6a551799c330d0"
+  },
+  "platformRecords": [
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/youtube.json",
+      "sha256": "4b6ba8947c6e8be9af260b76b8579bb0cdcba0112e9fcec9d2a8684224b32d68"
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/tiktok.json",
+      "sha256": "b3216f90cae170b837067257d5f0a3e270a9c515b4d11180396ce964a39b69cf"
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/instagram.json",
+      "sha256": "5852025cf46aca03b107187d79039bbb3c4bf6f62901716444d5568e390b06df"
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/facebook.json",
+      "sha256": "73dec298e6fc343d49adb90436041c9fff54c4c535914e9694330b81185fb5a9"
+    }
+  ],
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/release-v2.json",
+    "sha256": "56964f511176daa667c73b9fa980c513a5403fa66037bd27dadf5bb146dee764"
+  },
+  "nativeJournalUnchanged": true,
+  "assistantPlatformActions": []
+}

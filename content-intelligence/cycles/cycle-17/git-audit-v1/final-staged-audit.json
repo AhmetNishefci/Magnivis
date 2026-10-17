@@ -1,0 +1,1633 @@
+{
+  "passed": true,
+  "baselineHead": "11f99b4b3fe5e07418341c5b56ae9568e065a8df",
+  "branch": "content/cycle-11-discovery",
+  "stagedFiles": 266,
+  "categories": {
+    "canonical-media": 25,
+    "production-system-or-source": 47,
+    "cycle17-evidence": 166,
+    "documentation": 9,
+    "journal": 19
+  },
+  "modifiedExistingFiles": [
+    "artifacts/media-catalog.json",
+    "docs/ASSET-LICENSES.md",
+    "docs/PROJECT-STATE.md",
+    "scripts/resolve-qa-video-target.ts",
+    "workflow/project-state.json"
+  ],
+  "unrelatedFiles": [],
+  "sensitivePatternsDetected": [],
+  "jsonSyntax": "all valid",
+  "indexEqualsWorkingFiles": true,
+  "priorCatalogRowsUnchanged": 1283,
+  "newCatalogRows": 38,
+  "preexistingDocumentation": "exact old prefixes retained; dated Cycle17 appendices only",
+  "priorProjectMetadataChangedKeys": [
+    "nextOwnerGate",
+    "nextSystemTask"
+  ],
+  "protectedSessionFilesUnchanged": 6601,
+  "packageInventoryFilesValidated": 39,
+  "masterV2Sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+  "retainedAuthoringEvidence": "First render MP4, authoring snapshots and intermediate audio records are explicitly referenced historical Cycle17 correction evidence, not disposable scratch files. Temporary output/qa/cache/node_modules files are not staged.",
+  "files": [
+    {
+      "path": "artifacts/covers/ohio-cycle17-delivery-v2/frame-107-3.567s.png",
+      "bytes": 829205,
+      "sha256": "b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03",
+      "binary": true
+    },
+    {
+      "path": "artifacts/masters/ohio-cycle17-candidate-v1.mp4",
+      "bytes": 24096648,
+      "sha256": "8f9bbae1546c829d91eae109717d4e759fb7169bc732bdd13662363d448308fd",
+      "binary": true
+    },
+    {
+      "path": "artifacts/masters/ohio-cycle17-candidate-v2.mp4",
+      "bytes": 29131047,
+      "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+      "binary": true
+    },
+    {
+      "path": "artifacts/media-catalog.json",
+      "bytes": 1260571,
+      "sha256": "24d04a9ca1523258d9628c5af858075dfcecc9479e6698b12b0c522fd8583e50",
+      "binary": false
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-authoring/first-render.mp4",
+      "bytes": 20020344,
+      "sha256": "97784690264b82002a16303b4a667c1202d3571e4f23221fdb8fe889d61e92c8",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/captions-1.jpg",
+      "bytes": 202013,
+      "sha256": "20ed9d8cf729ed4f2665d79b2eb35489138afa2c3d93601638b2244132a71d1a",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/captions-2.jpg",
+      "bytes": 190765,
+      "sha256": "f8c0a5c8efef6f525535969b3980edebee49655052d04a661f8360e2fd1af438",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/contact-sheet.jpg",
+      "bytes": 1337223,
+      "sha256": "3211e7b0d577bb53ea4fcb188d08fe701b680c5a30516ee8d7401c4b94247206",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/motion-progression.jpg",
+      "bytes": 406813,
+      "sha256": "2f45f7750d95da7586ef43475c182703748d8c75a73bfef6bfba37ab7d447495",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/phone-readability.jpg",
+      "bytes": 251807,
+      "sha256": "9d74debef8a6fa62945d4e9af4f462d07446692826c18f03ee2b9ab82768821c",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/scene-overview.jpg",
+      "bytes": 177325,
+      "sha256": "033a94bad8179925d769308570c9aa0fdfd1631f50ec512b3a1f4cf7dabeaae6",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/sequence-1.jpg",
+      "bytes": 255001,
+      "sha256": "e8109835fb5bf4e70199d2f17ad19b60be0ae4be7863118cbb4778ef67346cae",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/sequence-2.jpg",
+      "bytes": 271285,
+      "sha256": "6a3eb3863a786d49cd127fa12c2829ada0a4b9bf59726ce5374eee29707efaa7",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v1/sequence-3.jpg",
+      "bytes": 256669,
+      "sha256": "894b1ffa422adbb122c85b2c76ead2232e93e03303b530fbd925ced2041f90e0",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/before-after-1.jpg",
+      "bytes": 53499,
+      "sha256": "c39a2eb78ac9ee40ac6f4282b33ea23b18a4f65c08672abdd9ab01a8ac6ab275",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/before-after-2.jpg",
+      "bytes": 60376,
+      "sha256": "f9569ff32e0419d0274b52bb5e9febc4539d0888d30a7dab80dd7199053264fa",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/before-after-3.jpg",
+      "bytes": 50840,
+      "sha256": "d216e6014fce8d64cb40bb427ec5c0522ad9710e216b87622d7d65c59a58aabb",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/captions-1.jpg",
+      "bytes": 210120,
+      "sha256": "95f780480c674c1e1d823d6b8b8ee3aa9e13fb96c1db00cac983ea1c4472b271",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/captions-2.jpg",
+      "bytes": 206940,
+      "sha256": "6012f51e9e0245676c9132e258f02bef5621608783bd66cf513a03e8110bdc86",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/contact-sheet.jpg",
+      "bytes": 1451551,
+      "sha256": "2408b95bf047f13b2cbddac7ff09bb75298e1425515e5d363e91521a11a27d1f",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/motion-progression.jpg",
+      "bytes": 433561,
+      "sha256": "50b35433847ca12e09d4d62f19f5900be5a7a289a0230753b890a282a783125a",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/phone-readability.jpg",
+      "bytes": 274359,
+      "sha256": "69c0dcf98787a5991267b03e5f3401e9adf96c2562e1837e271fb50b99321852",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/scene-overview.jpg",
+      "bytes": 187588,
+      "sha256": "ec345aa4bc0ffaba8fd59bb67f191ff722be8cc2587a72aeda5b5fb9b08c9c23",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/sequence-2.jpg",
+      "bytes": 313798,
+      "sha256": "3330355c55181d7ee1803a1f2aa1f77010dc3483ae6d7b97f6ad5eadcbff73f0",
+      "binary": true
+    },
+    {
+      "path": "artifacts/qa-evidence/ohio-cycle17-v2/sequence-3.jpg",
+      "bytes": 269603,
+      "sha256": "62c66a6bc4ab53075eaefd0e16828126d8f889a58abfd1760f92d03a54a6e859",
+      "binary": true
+    },
+    {
+      "path": "captions/ohio.en.vtt",
+      "bytes": 1359,
+      "sha256": "6e8dedd074ffd8abc8070d19d7d6b923331889d0dab0abf46f1d583a42035954",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/content-asset.ready.json",
+      "bytes": 14798,
+      "sha256": "7d0ee874b27b558fe311a9a0a950538cb301c088969029bd654385d29a996c5e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/cover-evidence-v2.json",
+      "bytes": 2032,
+      "sha256": "ff55c5a5ba01abd627ad52ced5d42c5e9fd21eb5788ce09b1de277a4d2c8024d",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/cover-profile-v2.json",
+      "bytes": 1737,
+      "sha256": "221f717818d73224299533b1a62e7c3950ee4723f20985964156bfe60b37a6bd",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/manifest-v2.json",
+      "bytes": 1691,
+      "sha256": "309a7a6bf4c026718bfb9ec8d7214aba8c058079051ef28f9d6671bbd84c5533",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/metadata-v2.json",
+      "bytes": 7985,
+      "sha256": "a0f54d0f03dfbb73e4be1dffbb0a63c45ed437c88bcc5a30a0f754ce3da31fb0",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/review-v2.md",
+      "bytes": 856,
+      "sha256": "b7f0ebf132c3684f7713f44f7b59bca8e3c3faef39f7fc080cc41170b83bccc3",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/upload-copy-v2.txt",
+      "bytes": 4088,
+      "sha256": "36901dbe477a90bb0fed5b6e99c7b0dfbb534238daa9a5195e749f2d1c57784a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/video-evidence-v2.json",
+      "bytes": 101996,
+      "sha256": "4a3b21aef6b0630f4d31a6be075f752e3101f9ef52dfd4947b8254731bc52bd6",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/cover-evidence-v2.json",
+      "bytes": 2034,
+      "sha256": "2185ec795f10e03b27cdae23f467a1d4fdc28bad81c86829a9ae2f8dc4e7f265",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/cover-profile-v2.json",
+      "bytes": 1740,
+      "sha256": "9fd0b5867db54566f3c014c2fea5d6f8ecd1c11cec76fd85c477c76ef158083f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/manifest-v2.json",
+      "bytes": 1696,
+      "sha256": "015b4c2dffd0db0c4e90fb443160f63eee1adc0097d6dd04c84a403f48c15ca0",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/metadata-v2.json",
+      "bytes": 7934,
+      "sha256": "a31643e94869d2d13dd969c698b4fd2b12e727cf1cd390d6294798a947a3b470",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/review-v2.md",
+      "bytes": 857,
+      "sha256": "8a20f48c02d5c21aefcf270aff2f60e9e527f53b039aa02a24e49b70f7c35908",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/upload-copy-v2.txt",
+      "bytes": 3977,
+      "sha256": "96c594c54a7ffdaf0e751540dca3ef0b4d80c24437994a0098d1364621ef57c8",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/video-evidence-v2.json",
+      "bytes": 102000,
+      "sha256": "4cfc201e6c3f9b3556860ebeadfbb2f30a3868f3437bbbd7a100e3d7e7e2267b",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/master-approval-v2.json",
+      "bytes": 2669,
+      "sha256": "8ae50012ef38f27af9bb0d2c5f342eed1332e9423afc39e93448da64821a6f4d",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/master-lock-v2.json",
+      "bytes": 789,
+      "sha256": "603a1a5dd1e655587bee5fcaf164b2330ddc861b5a8b9cafcc3f6650993c5515",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/owner-audio-device-qa-v2.json",
+      "bytes": 1766,
+      "sha256": "01133673cde877008519dc9acfc572bd5bca5554ff92decf683708edb54e529f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/owner-instruction.md",
+      "bytes": 2169,
+      "sha256": "8ffd38b55aa24fffa3b9e653a519d550543764ab82e06d58c8659674cea9ff30",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/owner-review-v2.md",
+      "bytes": 20774,
+      "sha256": "9a31f6381a40f0d119c19119e6c6ce18c0a45e03bfeaea6d5daff26c838939ee",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/policy-inspection-v2.json",
+      "bytes": 3988,
+      "sha256": "9b5a525deb124104805fdad7bbea50166c7fdde5a6ba43f87fd990f823d72fee",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/presentation-analysis-v2.json",
+      "bytes": 2127,
+      "sha256": "16b3a7d594f1def01b43769d9633c37a0c87d9cb0dd73e8aca699fea0bea13da",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/presentation-complete-event-v2.json",
+      "bytes": 277,
+      "sha256": "0ab210d964e4747e06b6fb48e400f026b5f363f91fbae06a4345d91cb74a7f76",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/presentation-start-v2.json",
+      "bytes": 300,
+      "sha256": "dcaa8046f01ee9229ec8c9c7d18f47e998ea2983ea78766ec568b52b614ca5f8",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/preservation-baseline-v2.json",
+      "bytes": 2481027,
+      "sha256": "32b27319e56df667b59c96130954d114fe106ce14dcb3ba3eb9417e2b7dbccbb",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/caption-vtt-validation-v2.json",
+      "bytes": 506,
+      "sha256": "cb98cc4e73270dda5c1dd1b19ba053068739d99e670c534a35b13f2d98a93d60",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/cycle-status-v2.json",
+      "bytes": 11351,
+      "sha256": "2e7c2e187804e57849fa562e28c836a91b89a5ef9d4b9c23504a48a9f9d41188",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/delivery-byte-lookup-youtube-v2.json",
+      "bytes": 895,
+      "sha256": "d06b47121b769267e6f81987f5d66686e14f2e9c1608480d7f2472c19dbc31ed",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/durability-v2.json",
+      "bytes": 692,
+      "sha256": "8e755381c94d5d5d6d82249c3ecc1f2c2d0907d0bf4d48d58a09d5437bef784f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/master-release-validation-v2.json",
+      "bytes": 2501,
+      "sha256": "a417330766a7a66d7f006f530b6a207ccccd1ef1c10ff2ec5b44e68d14be6670",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/package-integrity-v2.json",
+      "bytes": 8321,
+      "sha256": "e4f02c4a1045b29aca772037aae7ada56f32d0a9a317dbea42210170bbc8ba1a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/release-validation-v2.json",
+      "bytes": 5011,
+      "sha256": "7e5b1daf0875975054984a2a73d407730f1b1e467cd881f84728bf977691fe98",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/rendered-inspection-v2.json",
+      "bytes": 1666,
+      "sha256": "61ee332a34da58bb58c03bf82ea1e0c1b105094f61ba9d11d3c88dc9cb2f8662",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/repository-check-v2.json",
+      "bytes": 616,
+      "sha256": "33b4fa0b70ec9f2f45069ce264e62f752477c81a2a8e09c687655b3d3d3a0fbe",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/selected-cover-v2.json",
+      "bytes": 2119,
+      "sha256": "332b2c71a65ed9b16ff6e006f3aa59d12bee5849981242af383ebf28520c8222",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/technical-qa-v2.json",
+      "bytes": 548,
+      "sha256": "494645a9fecd20570acd1774b36c21fb37ac56f55e6d472d4dfe2b21d1ea21d5",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/record-approval.ts",
+      "bytes": 3571,
+      "sha256": "c284b36ebeded7108790cf06b715186772c6330d2505b873477b885995fdc038",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/release-inspection-v2.json",
+      "bytes": 13913,
+      "sha256": "0f86aeea11abbcd092ecbfb6933d9996e2bf4d387ab14f6c04512796a019f243",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/release-v2.json",
+      "bytes": 5323,
+      "sha256": "56964f511176daa667c73b9fa980c513a5403fa66037bd27dadf5bb146dee764",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/risk-register-v2.json",
+      "bytes": 6109,
+      "sha256": "09556fdb7ed5882b9c640c5d146b139fd5ba1a2442b4b37cbfb29ed9f9a955de",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/source-copy-review-v2.json",
+      "bytes": 2809,
+      "sha256": "141263caf838be67a13229d5fc888a41ac478467522ea960dbb8facdaf52d1b3",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/cover-evidence-v2.json",
+      "bytes": 2028,
+      "sha256": "537eb8d4ea9845b319762f33f4655f259d826fad7ba087caf028ef150e5fbd6e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/cover-profile-v2.json",
+      "bytes": 1731,
+      "sha256": "912b536dee54d970d1ddebbefaea2e9385ee9e07faed0ee0de66607bc02c29a4",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/manifest-v2.json",
+      "bytes": 1681,
+      "sha256": "95db777ed4498d3197651b568a896022e3273541c27077d800dc4d7fc2126dc2",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/metadata-v2.json",
+      "bytes": 7868,
+      "sha256": "a152c528027e824183b796f640c4e85a6ba7671dd717d6f468d2b02d98b74afb",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/review-v2.md",
+      "bytes": 854,
+      "sha256": "cfb239c919a31e11e1a65348c330264a992cee6e73bc7146d6354aca5f506967",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/upload-copy-v2.txt",
+      "bytes": 3941,
+      "sha256": "c0066858497fd7751d2d9351ae9d3969af22b3b683f4319d0f5aeecd93e520ad",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/tiktok/video-evidence-v2.json",
+      "bytes": 101984,
+      "sha256": "2d8b8e2c012fffc981444ba400907632b7706ab2549b2476ad613cec19db7ecc",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/cover-evidence-v2.json",
+      "bytes": 2030,
+      "sha256": "4d65819d66dc98cd71d424ef0dd55b7634c14cd41f7d165c86e3ac98142ea33e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/cover-profile-v2.json",
+      "bytes": 1734,
+      "sha256": "e961125530a66eba402667075d6841e0048b6e45016aab435e0895fcfa4a73fe",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/manifest-v2.json",
+      "bytes": 1686,
+      "sha256": "05f2415ca3d835259935d892e27a38924f599a588baffa5dd5e37ed194648a2e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/metadata-v2.json",
+      "bytes": 8182,
+      "sha256": "594a0f8fc41f02945229862ac59276cfb55d03d0df0795ec7c74f6aa926aa5d1",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/review-v2.md",
+      "bytes": 855,
+      "sha256": "0004695964868325ded1bddc23fe5daa01ed06c1161b92ba6adaad0f3f543820",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/upload-copy-v2.txt",
+      "bytes": 4183,
+      "sha256": "20e1c30895e546b48c23b65cd096cb2de9341efef86c387c9e5dcb1239363659",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/delivery-v2/youtube/video-evidence-v2.json",
+      "bytes": 101995,
+      "sha256": "51e2693061e77e48a974e8f78a5f8d032ac1a58b1331978ea0cd1191682fdbf9",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/editorial-receipt.json",
+      "bytes": 41477,
+      "sha256": "01215566b64b270fc45f87da2dd960b95a6cb65b45206141c5c644e4705d2932",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/editorial-start.json",
+      "bytes": 152,
+      "sha256": "613925be72dc688b4e790a15ea03d74f131b78ce92056df28ab4dc2fc6de117f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/git-audit-v1/initial-staged-audit.json",
+      "bytes": 57679,
+      "sha256": "ac4bdad1215debf113bb89ac46e9cfadda60a0a78f1a2225a58c2135facb5b71",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/knowledge-package.ready.json",
+      "bytes": 14857,
+      "sha256": "10f84aeab92afbb01afb0c7ade836bdc320080cd3f4136c5941fbfd1ebf17a7f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/narration.txt",
+      "bytes": 621,
+      "sha256": "7ac5bbf408e09e509427fa44f1973b4ef3ae36631473fff50c3fe6d91197a4bd",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/owner-instruction.md",
+      "bytes": 2462,
+      "sha256": "4ea328c5faf559534e40632336a2ac6ee9f2e4a461a9640559d334ce65a7c96a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/owner-master-review-v1.md",
+      "bytes": 5469,
+      "sha256": "9547c0089c9ae9d88ab7b564dee2df807d95c3593eb94caf794ab16210975884",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/owner-premise-authority.json",
+      "bytes": 3177,
+      "sha256": "8509094504427a8580b154c7a7d6ad393aaf1d7f323cf65e47e1586017e23372",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/owner-selection.json",
+      "bytes": 3179,
+      "sha256": "d121b346316e795426ddbbf4923e37148b67f6867eb75bf324cca871faf818a6",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/portfolio-inspection.json",
+      "bytes": 18612,
+      "sha256": "25d73308d91a316488e9b109cebbc4969780514ba48dc90b2fc8b019d1eb339e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/prepare-direction.ts",
+      "bytes": 11383,
+      "sha256": "2710fbacb154e1e908a4bf348b17499a4f849805318e277432f072c481602f6c",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/prepare-session.ts",
+      "bytes": 21390,
+      "sha256": "fd1af9ad4acabc18e4b4e697701c48cbee3b8a28dffdbccd987030a92517e60a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/audio-mastering-v1.json",
+      "bytes": 957,
+      "sha256": "11db5b862c1189f84bb0e4894d70e91b3d9ed83d8b8431273c0a90d738fb0bef",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/authoring/OhioPedestal.first-render.tsx.txt",
+      "bytes": 13832,
+      "sha256": "e13329005f7c1200f6f265f2fb0dbf6e5748814976ddab3b5905e2f7eb3b2060",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/authoring/audio-mastering-v1.json",
+      "bytes": 957,
+      "sha256": "e65658cad0846dddedf3fb47303ef6b798b65ffe6a9da49a5564809b8dcd078b",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/authoring/audio-mastering-working.json",
+      "bytes": 957,
+      "sha256": "c7704e9e7a41add24ffcd041a4b9a9d41682ea644c4f86697d64748a0afa8645",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/caption-authorship.json",
+      "bytes": 2091,
+      "sha256": "b45241a99f1b03a6e037117bcd9c953cbcb3621d85225879c61f35ca031ca03c",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/direction-ready.json",
+      "bytes": 27767,
+      "sha256": "e6848c4a1b8504337472e55ebe334e331bac494b57a744dadda6cde402045b82",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/implementation-bindings.json",
+      "bytes": 3047,
+      "sha256": "ee82930a8f1cc0a3fd8d6b0afb444664de9911396aedea25312087f38fbd0b83",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/master-candidate-v1.json",
+      "bytes": 8180,
+      "sha256": "6ff24c04fdff32c7530d973ed9e5faee038a99f42c92b84dab4dd3ca657f7600",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/phoneme-audit.json",
+      "bytes": 4415,
+      "sha256": "96959cf1f3dd4eb991cd7793df2e0a4ab2f6a619d43c5e5fdf11003d83388cfe",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/facebook-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/facebook.json",
+      "bytes": 89906,
+      "sha256": "2b793fa7cd7ee8a912409e0fb001384471d384bae489f958aceb625402a6bacc",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/instagram-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/instagram.json",
+      "bytes": 89910,
+      "sha256": "90fc0dff06b66c46b838e2fbb4eeb0ffdbd54b507d526cd682d60b415b24ff56",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/tiktok-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/tiktok.json",
+      "bytes": 89894,
+      "sha256": "bb4433000b1bc14d73624409624add6d44208a8264174f968b24ab5c3642df37",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/youtube-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/preflight/youtube.json",
+      "bytes": 89905,
+      "sha256": "e984b4bfb2e45dcb52b4ff642ffa76636342622c99b60cd09e054e099f91fe10",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/production-complete-event.json",
+      "bytes": 286,
+      "sha256": "d2d4f7ba65523d5bfff59db4c753bd564f25e7cbd06a92d1bfe197732512cced",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/production-plan.candidate-v1.json",
+      "bytes": 15985,
+      "sha256": "be97245f7da2fabfd8400fde52d8537af5e8f37e2237d47f0e164c4c444ebb45",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/production-start.json",
+      "bytes": 144,
+      "sha256": "bd8a94202943429d6c37eeac52f85b74e0d72a4de3e1b1c075493ddecb8d6d20",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/facebook.json",
+      "bytes": 2075,
+      "sha256": "fdf8a58aeb36a356d4cfb5cf4e397aa5800ca62028ac66b1b9c4dcebe558265f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/instagram.json",
+      "bytes": 2093,
+      "sha256": "6691a603309fc9975f3c915c122a01fc691c7358dd2702a4753776ffcfd1b0e2",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/tiktok.json",
+      "bytes": 2078,
+      "sha256": "9c8ef9205695496f4eaf5463480ddce956d792cbbe09d74f5a8ef13815fbb890",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/profiles/youtube.json",
+      "bytes": 2104,
+      "sha256": "ee3c5aa5c08b19f094737302ad88be9bed3de6c234c446cb0808d65530fedfa6",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/audio-inspection.json",
+      "bytes": 16911,
+      "sha256": "f675b233b9e786c5306eda46037dd4dc993afd71ed62bf425b9a82d32a400df9",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/final-report.json",
+      "bytes": 4646,
+      "sha256": "590a58d5f230a4d6e7ea3709bcd690ef2da1ac27f09f3343bc3cfaaf06cd8cd2",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/narration-alignment.json",
+      "bytes": 5039,
+      "sha256": "9117b0c2a1f481df3853b6b515e739a67c9fca5a2c6029efd795911c555c8230",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/report.json",
+      "bytes": 548,
+      "sha256": "7c37d98adf4c6684406f71f130da8071160342a08c9e89eb961de856df168d69",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/sheet-bindings.json",
+      "bytes": 3103,
+      "sha256": "ae41b6e9b4f62bf5f7bd70de64cef7f65531abb592d85d967491418630d95c65",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/stream-specifications.json",
+      "bytes": 3419,
+      "sha256": "ad6f3df6f083c6c4999f2813a6bb7425e6a377bc2709fa8c278246c7f12d91a7",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/typography-report.json",
+      "bytes": 121174,
+      "sha256": "b949a9012beaadc0399abcaabe4d3f70db0d094a3e81d9e0301e073f248a50c1",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/qa/visual-inspection.json",
+      "bytes": 1139,
+      "sha256": "24821aeb7353ec1b585f1b2344a0a9d53632a2e481c88a44fc1d8bd92905df17",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/rendered-corrections.json",
+      "bytes": 1330,
+      "sha256": "f65341de6cd126f684dacde7db314e98463157bb3fc3a4d3b0d469e68bc5526f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/rendered-sequence-review.md",
+      "bytes": 5652,
+      "sha256": "7e19b65cfdcebdf70b79e1d8e4c230525b665c982ec2669f04f5c93921977d81",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/production-v1/rights-provenance.json",
+      "bytes": 3108,
+      "sha256": "3c32f20c62ef585184c611c64f386f8ad475fb4c2982698329a2a803b9f98b49",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/recent-approved-works.json",
+      "bytes": 3543,
+      "sha256": "cf3076eed545170545ac393b61d05bdf039d859ce7cae585ea3759a959d2a91e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/arrival-inspection.json",
+      "bytes": 29752,
+      "sha256": "729540114df5549e8ae570827718a9e6c9f220daf416b9c79f15786630d48737",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/arrival.json",
+      "bytes": 13351,
+      "sha256": "70300a2c14ae7335ba5e8757a984604e4657e2e65483b9b0d82d23a1f80c28ee",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/damage-inspection.json",
+      "bytes": 28054,
+      "sha256": "64931b1755bef03c49d1ef947cbd4fad1e54557464fed2e819f2eddcaaa8b2d7",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/damage.json",
+      "bytes": 12467,
+      "sha256": "91ff473894b4bacf1dc029787540ba1ea021c7870b14241c60ddc75d1553d6fc",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/film-inspection.json",
+      "bytes": 8762,
+      "sha256": "d77e8b550147023eecd9511984ce7d1615bac333dfbb50d37e822db09f0343c5",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/film.json",
+      "bytes": 4017,
+      "sha256": "82686c1be1e465684af989499aec47f96a1e756bdc1db65a96b98a03d592b0b7",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/gazette-inspection.json",
+      "bytes": 49579,
+      "sha256": "61dfa6728a764dfb94235813637bc34337ac53aa22e0346ac7e4fc57dcdc6437",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/gazette.json",
+      "bytes": 23862,
+      "sha256": "20cc25d5f5af1c8bd21543708707262939af7fded9eb8afa525a05ba1fcb3463",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/hill-inspection.json",
+      "bytes": 37150,
+      "sha256": "79ad1f9710397a0d4012227a5d375dfa13a06895a45f754b6be1229523377547",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/hill.json",
+      "bytes": 18494,
+      "sha256": "591046b79e9754c586425cf80c47c7a52e3b9f22866261f5a8c8645594fb6034",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/liaison-inspection.json",
+      "bytes": 46904,
+      "sha256": "f8e14bea9180721e6c90ebe7fc2af39b26f78fc17d36ca6d3bf27cd35b4bed73",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/liaison.json",
+      "bytes": 22978,
+      "sha256": "0c41da748ebda32930e1b8dcdc25a0e4862aa83a74d409e6ba7123ab5aed90c4",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/nhb-inspection.json",
+      "bytes": 59876,
+      "sha256": "72924f4356a6cacc413cae600dd440ae1dda62e482dce99198179c1d01ad989e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/nhb.json",
+      "bytes": 29034,
+      "sha256": "82c895cfc25f2544dffdff9d35e4871cbe1e6744568f75fa54624e0eae957b54",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/reconciliation.md",
+      "bytes": 5157,
+      "sha256": "3a27a24bf0009e8fc020c01119efa72b10c35f52d2a8f1f61ca1f81d13ccb5b4",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/supported-inspection.json",
+      "bytes": 27780,
+      "sha256": "172b4c4ffcc092d07b50326155cae74ae3feb95fd866b8a694e854948139269e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/supported.json",
+      "bytes": 12592,
+      "sha256": "5d96d2e79304fad1f7a847a60e25d268c564b431baf4e3116c4ceef251a5ad31",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/unloading-inspection.json",
+      "bytes": 27269,
+      "sha256": "e6f8e49d9086e06e489b4015f995fd3f6e3d6b716ffa3a467da4be0f2864607a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/research/unloading.json",
+      "bytes": 12232,
+      "sha256": "fdde788bdec4a990e907d22c0772090fb6cc25895fa9264f500639c8408b3d8b",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/audio-preservation.json",
+      "bytes": 599,
+      "sha256": "c3399d6b47c4264df83791befd763b89c4654c28c252c105319430671f3519f9",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/baseline-files.json",
+      "bytes": 887904,
+      "sha256": "32f12a56bced49895fc0041719f6d2499f462b12c9a84694d9dcd7b3717ae79d",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/begin-production-event.json",
+      "bytes": 281,
+      "sha256": "75c670a46e1e59c20033168127e0be16aa12d3f2c7915c0f952f2b788c343b17",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/creative-revision-start.json",
+      "bytes": 415,
+      "sha256": "93289ef9b49e0c1b4fda248a5c00fb7c931d4c9f3617c8e8c2a869f9f9fdc113",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/direction-v2.json",
+      "bytes": 28174,
+      "sha256": "68686f02d37a3ea0a7a3d78988f78f5a48ef948410a8c776cc3a7ad5c8ad7222",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/implementation-bindings.json",
+      "bytes": 3233,
+      "sha256": "b1638071fc443f632075b6befcf440c92e7c7130cacf514df8be866c8c33d17a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/master-candidate-v2.json",
+      "bytes": 8281,
+      "sha256": "46b9af3a5868bf29bdf873bd67d2da129af243eeec7e2a78352ab9a6631145e8",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/master-review.md",
+      "bytes": 3599,
+      "sha256": "4c6849f6e1d7536413c5e75506be97164740fa753d83cade99bad0edfd8953e7",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/owner-audio-device-qa-pending.md",
+      "bytes": 1796,
+      "sha256": "559f4daa4e094ad720fd493480dec378b966e945ed4b2327ef1834df8d7a31cb",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/owner-creative-selection-v2.json",
+      "bytes": 3521,
+      "sha256": "b10591ec187d0975b5ca806ff1f24e065c0c3fa7d95e914305e58ae2778c0444",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/owner-instruction.md",
+      "bytes": 2496,
+      "sha256": "cf94ffe55b3352b39c066821a4d6abaee8271169b202e213edc98a21ca8c3081",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/owner-master-revision.json",
+      "bytes": 3295,
+      "sha256": "f25cd023fb1249ca0f2b0cfcc05e37eda4f31d8cf36d725d855f67f455274d69",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/facebook-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/facebook.json",
+      "bytes": 101417,
+      "sha256": "37a9d448b8c66143be63163fb87a2423fa65c31905766318c5cb72a4d5ba66ba",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/instagram-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/instagram.json",
+      "bytes": 101421,
+      "sha256": "36af5bc97cf0b403501f53c90c96f766905fa524bbbb9237abe83804ecc969fe",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/tiktok-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/tiktok.json",
+      "bytes": 101405,
+      "sha256": "900bd648a3e676d60580ab99f683df8bea7948d5c4a62019efee6f30f75f0c31",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/youtube-assessment.json",
+      "bytes": 452,
+      "sha256": "1ba3c88385a9f4064c383617d97c4945b50a4267f734c19826b05e7ad8d71708",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/preflight/youtube.json",
+      "bytes": 101416,
+      "sha256": "6e07c709324665026d7a6f68aab7aab9cec0503f4f917450efd36c871bb5715a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/production-complete-event.json",
+      "bytes": 284,
+      "sha256": "b99334ce4641df272720c1576be184c251d86f86acef8d873f41ceb2ac1258b1",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/production-investigation.md",
+      "bytes": 3608,
+      "sha256": "9baa44c6fffc5d5089e4c674c142541e8f016c41fa707ed943527dfc2a51c069",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/production-plan.candidate-v2.json",
+      "bytes": 16070,
+      "sha256": "fce7972d383d8191955648d59986ed4efc214e42fc782580e6517b9be600ee16",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/production-start.json",
+      "bytes": 226,
+      "sha256": "cdb488a37a8f3fb820eb967bf3e87975ad95ab0ed0bcf9863f62c26d47b3d1af",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/audio-inspection.json",
+      "bytes": 16911,
+      "sha256": "ce051e82824fa6d427254e7f002e8358f8deef09b3cc13a251f0596adb36a824",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/before-after-bindings.json",
+      "bytes": 807,
+      "sha256": "9ed76d93bbc706feee34e14eece658f0d2005688bd91f7b511c78434ada80a54",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/cycle-status.json",
+      "bytes": 8009,
+      "sha256": "c8d5ea719e8e5a11da9acc654d76c777f25c5f06f66801dfbd7bb145e92b2363",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/durability.json",
+      "bytes": 234853,
+      "sha256": "10e1c48974f5c40d44e30461f57647b84f9b017bf28bc8f90c93444eb8d3d664",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/final-report.json",
+      "bytes": 5177,
+      "sha256": "ec3eb294f35dfebf040a077e435b5f3e9dd79134495343012dc7e9c28bd43e37",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/narration-alignment.json",
+      "bytes": 5039,
+      "sha256": "9117b0c2a1f481df3853b6b515e739a67c9fca5a2c6029efd795911c555c8230",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/preservation-report.json",
+      "bytes": 1236,
+      "sha256": "085f3ed40e4ed4b03f71fbd9e92e574654d7930826fa08db5c126b8921dcff2f",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/report.json",
+      "bytes": 548,
+      "sha256": "13ea11b7612813cce931ef84b9389585cb6a56414bcb4aac449f5bdfa287adaf",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/repository-check.txt",
+      "bytes": 693,
+      "sha256": "d923277061d8de7b812fefc420226a4733e31114f9d0c5499e91d947dc1df99a",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/repository-validation.json",
+      "bytes": 2138,
+      "sha256": "b6899613498a7f9b80d20e626bcc712044db571976e6182b66ed8a176f789903",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/sheet-bindings.json",
+      "bytes": 3127,
+      "sha256": "fce35ad28f28e5e48190509c9479cf168d67c114606e0da357616a084bcc9e64",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/stream-specifications.json",
+      "bytes": 3419,
+      "sha256": "6d21dbd9f6cbc73043706ea180d26fd64497600df81f1a946a3d79e15ab1ce00",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/typography-report.json",
+      "bytes": 134634,
+      "sha256": "86e55d03e77e1af00b1e91dfd785e625059c3ed09e1c53a1046d75e1d1415246",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/visual-inspection.json",
+      "bytes": 1050,
+      "sha256": "5eb8cd4a771e8899b7323fe8f94881d9fe0e902221904c0456299a37c6a53faa",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/rendered-corrections.json",
+      "bytes": 1129,
+      "sha256": "935409aca39c5f5ac2196b46d65ec95432cf269664df929bd4a1e3e928aac007",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/rendered-sequence-review.md",
+      "bytes": 4391,
+      "sha256": "cb955e5c84061557f93e6b33e715cff5c95ecd714809fcbf30614d31ce0c6e25",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/rights-provenance.json",
+      "bytes": 3258,
+      "sha256": "4a5b06e017eebddb216a4fd7dc77108dd524668ca969fc4ee8ab2e592a593a21",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/selection-validation-v1.json",
+      "bytes": 1229,
+      "sha256": "4154310e7ea76861d13b2edacc3469a2bbe6be6f17c75d2c79d947602a6fd386",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/topic-selection.json",
+      "bytes": 11413,
+      "sha256": "72b39cc403b81e4d7e9f4abd4b6168b039b90df5a750928e144ccb1c298c96c8",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-17/validation.json",
+      "bytes": 5511,
+      "sha256": "6a4d8575519eec3444718e5002e43c231ca8585cb444fe6dfa810b42dd9eba0e",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/facebook.json",
+      "bytes": 2997,
+      "sha256": "73dec298e6fc343d49adb90436041c9fff54c4c535914e9694330b81185fb5a9",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/instagram.json",
+      "bytes": 3002,
+      "sha256": "5852025cf46aca03b107187d79039bbb3c4bf6f62901716444d5568e390b06df",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/owner-instruction.md",
+      "bytes": 2201,
+      "sha256": "6c3e12f4fcdc0aeb0a7f27b835a624bf14a2477ab2d1a2d85c96f5c3acd1546b",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/owner-report.json",
+      "bytes": 5734,
+      "sha256": "cd58907925439502f7386fb282b631b5d0f38ea88e9d52b6ba6a551799c330d0",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/scheduling-index-v1.json",
+      "bytes": 1819,
+      "sha256": "f926cf7de6a11cac327b2ca45993b5b4c34ff00499086b60d8d55f94735a5323",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/tiktok.json",
+      "bytes": 2987,
+      "sha256": "b3216f90cae170b837067257d5f0a3e270a9c515b4d11180396ce964a39b69cf",
+      "binary": false
+    },
+    {
+      "path": "content-intelligence/operations/ohio-scheduling-v1/youtube.json",
+      "bytes": 2992,
+      "sha256": "4b6ba8947c6e8be9af260b76b8579bb0cdcba0112e9fcec9d2a8684224b32d68",
+      "binary": false
+    },
+    {
+      "path": "docs/ASSET-LICENSES.md",
+      "bytes": 65901,
+      "sha256": "910ca44a171cc322c8593c16104b76979cb3c9db144c5b6041469c6c7b59e46e",
+      "binary": false
+    },
+    {
+      "path": "docs/PROJECT-STATE.md",
+      "bytes": 108046,
+      "sha256": "b9a7f9f92f8f150572f859c4bf819b35bc2587f763d923a319dbdbc92d2b1780",
+      "binary": false
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-1.wav",
+      "bytes": 391244,
+      "sha256": "c5f32de6ece5a6ea48789683534ebec62963a82c458924b38d1c4631a7960357",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-2.wav",
+      "bytes": 573644,
+      "sha256": "160262352c411203bb47393fbc3928f33c48f081bb34dc7eef85bcd66065d444",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-3.wav",
+      "bytes": 271244,
+      "sha256": "b731c0d5abcbe1c75e04021e65b8dd2b47bc60c58a194ccbf9e548ea6c7c8c78",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-4.wav",
+      "bytes": 559244,
+      "sha256": "85b8f8c7f9a6f5b8d32aab9ec40099c2b98754d92e6556a7bfc119389312c61b",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-5.wav",
+      "bytes": 412844,
+      "sha256": "de3a64c418b4e679abba8d902ed24ac11738d34bfc5420c4c89a155d5dc25f72",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-6.wav",
+      "bytes": 624044,
+      "sha256": "0fb5277098a6f9c72cce1a568a9427cd4bde0f784310af6a9e28d08f70910c22",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-7.wav",
+      "bytes": 352844,
+      "sha256": "5ebd6cda67585053b23148f0dc5523626024fe72583e7239458671b137937698",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-8.wav",
+      "bytes": 420044,
+      "sha256": "514fd28e23c500cb5f0138b5b1e9ea1c06de224a445e50e031e878c179f2de7a",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/narration/cue-9.wav",
+      "bytes": 302444,
+      "sha256": "d86ac578d3c026f39e5d0d04661f75edabb0e22ae6b2994fb0e8589ebd2391f7",
+      "binary": true
+    },
+    {
+      "path": "public/audio/ohio/soundscape.wav",
+      "bytes": 8460844,
+      "sha256": "7bf1dfee901cd02af16bb14d0b74d910c5f4512c2e392afa27d5ffb74a927efd",
+      "binary": true
+    },
+    {
+      "path": "public/images/ohio/arrival.jpg",
+      "bytes": 1128172,
+      "sha256": "37c6bff6eebd60072410593b5c5e5eb0c78de012bb33b161c546ccb164019fcc",
+      "binary": true
+    },
+    {
+      "path": "public/images/ohio/damage.jpg",
+      "bytes": 982060,
+      "sha256": "9e2efdda9bbbcf5ecfb3fa813e541fa4a60a446de947ee5560ca70f02c131d04",
+      "binary": true
+    },
+    {
+      "path": "public/images/ohio/supported.jpg",
+      "bytes": 59968,
+      "sha256": "4d55184acc88c0d24561b3b42c705931e4056e697bdb6d80a2ae8e2db1b9bb66",
+      "binary": true
+    },
+    {
+      "path": "public/images/ohio/unloading.jpg",
+      "bytes": 49875,
+      "sha256": "db1602b75285f3222b93413ee15e7014d871e0d2252dafa5f69f98804b587b3d",
+      "binary": true
+    },
+    {
+      "path": "scripts/finalize-ohio-master.ts",
+      "bytes": 13071,
+      "sha256": "64c6befa0c0c1c62ad1bae79010dcca52c1789d5af6e67505fca552759b6681e",
+      "binary": false
+    },
+    {
+      "path": "scripts/finalize-ohio-v2.ts",
+      "bytes": 13602,
+      "sha256": "65c7c96c7639ac92396b825d95269395e86e4b8c4aa60e63f59d75ecf262df05",
+      "binary": false
+    },
+    {
+      "path": "scripts/generate-ohio-narration.mjs",
+      "bytes": 3609,
+      "sha256": "8cda0ce3abfe997f86a82ffe095286542a84dcf31b4d43a8cdfbeba0735f2409",
+      "binary": false
+    },
+    {
+      "path": "scripts/generate-ohio-soundscape.mjs",
+      "bytes": 1206,
+      "sha256": "9463773f662111e21a582e7e004c857bc9afc1e954bf1993865fc23641c139a9",
+      "binary": false
+    },
+    {
+      "path": "scripts/inspect-ohio-audio.mjs",
+      "bytes": 3522,
+      "sha256": "a905efbb68102be7f21b3c78e6fad1b21c7c22e0486ace99dd6d06a568d219a1",
+      "binary": false
+    },
+    {
+      "path": "scripts/inspect-ohio-v2-audio.mjs",
+      "bytes": 3523,
+      "sha256": "0f09ad1b3b49e6a06db94906240040c14461d3f9a518fc5deee96283977903aa",
+      "binary": false
+    },
+    {
+      "path": "scripts/inspect-ohio-v2-preservation.ts",
+      "bytes": 2700,
+      "sha256": "ff4376ded1fb9177f4472e6eb5c4f51f203da1c96b8434f8d13ab9b4c64d3366",
+      "binary": false
+    },
+    {
+      "path": "scripts/ohio-v2-video-target.ts",
+      "bytes": 822,
+      "sha256": "e42b61d539d80527eaee53167f1a85ab4f638ec3ccc97e284840a3c0075e5faa",
+      "binary": false
+    },
+    {
+      "path": "scripts/ohio-video-target.ts",
+      "bytes": 801,
+      "sha256": "ce67d09ecf13dab8b4a45715c5ad50e566df124cf8fe53ead7ce2b96b57a98dd",
+      "binary": false
+    },
+    {
+      "path": "scripts/prepare-ohio-production.ts",
+      "bytes": 9683,
+      "sha256": "86992f4056c0862370d3ee7418a106a95bfc42a65203607f38466e3d56a03ae6",
+      "binary": false
+    },
+    {
+      "path": "scripts/prepare-ohio-qa-sheets.ts",
+      "bytes": 2644,
+      "sha256": "d58f87c2383cb81649df3139ebcfe0efb6e06c9376894a9b0b85e28f067d6503",
+      "binary": false
+    },
+    {
+      "path": "scripts/prepare-ohio-v2-qa-sheets.ts",
+      "bytes": 3916,
+      "sha256": "48b9f2927a957668c871f8b9adfe3a5e002ee0429e0987966c818b8fe5cb0309",
+      "binary": false
+    },
+    {
+      "path": "scripts/prepare-ohio-v2-release.ts",
+      "bytes": 22715,
+      "sha256": "bd83653f0f721e7d06cc4052f18677e25ec7ed86213c276f8162674cb42d4f2a",
+      "binary": false
+    },
+    {
+      "path": "scripts/prepare-ohio-v2-revision.ts",
+      "bytes": 2663,
+      "sha256": "ae8408e13cfcac532e42bcb3c1f32b87965c3f86228ed57ba7f0ccca74b3de5e",
+      "binary": false
+    },
+    {
+      "path": "scripts/qa-ohio-layout.ts",
+      "bytes": 3955,
+      "sha256": "c6e476154369410df722c7aa6fe08326cd8882d5a6df29481f739868bc22f566",
+      "binary": false
+    },
+    {
+      "path": "scripts/qa-ohio-v2-layout.ts",
+      "bytes": 3975,
+      "sha256": "370386ddb15698b2b16bbc35f925638113c27c8be59ce4c237e6d769fcad2607",
+      "binary": false
+    },
+    {
+      "path": "scripts/render-ohio-v2.ts",
+      "bytes": 1942,
+      "sha256": "a4dd1b3cd2998503296a1f268b2ab9d0bdac049055edad203c3f48e5c451c239",
+      "binary": false
+    },
+    {
+      "path": "scripts/render-ohio.ts",
+      "bytes": 2673,
+      "sha256": "83cf5aacd40b896c4c3ea50ab673bac8869bdb85ac438609f6442a6d42985381",
+      "binary": false
+    },
+    {
+      "path": "scripts/resolve-qa-video-target.ts",
+      "bytes": 1097,
+      "sha256": "e80db2961239cd898327a8f4bf4310ebace1e373eecf9791d0380950e7d5c94b",
+      "binary": false
+    },
+    {
+      "path": "scripts/validate-ohio-v2-release.ts",
+      "bytes": 8710,
+      "sha256": "fb4662879d3e53d756d60333eeb33aa51f641ea3f22aab6e051d09a2efe50a69",
+      "binary": false
+    },
+    {
+      "path": "src/captions/plans/ohio-v2.json",
+      "bytes": 10000,
+      "sha256": "fcbdc1e7c870ad36b015522bdae0be9a16c740277232db960b07bca4db8435c6",
+      "binary": false
+    },
+    {
+      "path": "src/captions/plans/ohio.json",
+      "bytes": 10000,
+      "sha256": "74d72c3e758b8d46767454fb123436952aa276f1f8330ee2fbcff54de879675d",
+      "binary": false
+    },
+    {
+      "path": "src/compositions/OhioPedestal.tsx",
+      "bytes": 14391,
+      "sha256": "23e0a79db0c352229144fa138d8a4d57490f1350222884d6d5425efa01e0c35c",
+      "binary": false
+    },
+    {
+      "path": "src/compositions/OhioPedestalV2.tsx",
+      "bytes": 10328,
+      "sha256": "b8e3742910f368c42a97f71748d759a3404b02c875e7f05062aa69d66d572f89",
+      "binary": false
+    },
+    {
+      "path": "src/compositions/ohio/RescueSequence.tsx",
+      "bytes": 9941,
+      "sha256": "d261ca1d3096540e317999faf90e289613acafb880c7cb5a9795f9c7bc3ab3db",
+      "binary": false
+    },
+    {
+      "path": "src/content/videos/ohio-v2.ts",
+      "bytes": 1013,
+      "sha256": "00ac0aac6cbcf3b1ec42dcb1f894e10329c2f7a4ce9c7ef5b41f4b7ecfcfc29a",
+      "binary": false
+    },
+    {
+      "path": "src/content/videos/ohio.ts",
+      "bytes": 1002,
+      "sha256": "71d971d5346163ea44384b6268d199ae640f22c820adf110c3f3d44e7b73f218",
+      "binary": false
+    },
+    {
+      "path": "src/ohio-index.tsx",
+      "bytes": 421,
+      "sha256": "183311a5dd8f6575fe42103a4adfcac95ce408175665e7c22397a0b40dd3404d",
+      "binary": false
+    },
+    {
+      "path": "src/ohio-v2-index.tsx",
+      "bytes": 430,
+      "sha256": "83628789cf50192205cf90319c73c3d934a51df029b4686e5d6d1490d93409cf",
+      "binary": false
+    },
+    {
+      "path": "src/production/narration/ohio.json",
+      "bytes": 5079,
+      "sha256": "f3433979543ab25bfa825139285093616090ce859ccd64ec8a2b78e99941bd33",
+      "binary": false
+    },
+    {
+      "path": "src/production/plans/ohio-v2.json",
+      "bytes": 16049,
+      "sha256": "6a1be2963ca10ebfe97ef693465646a5e1617d909bbe9181e2d7c04a45ad502e",
+      "binary": false
+    },
+    {
+      "path": "src/production/plans/ohio.json",
+      "bytes": 15964,
+      "sha256": "0e92ece8e31345cf65ce22b5365e34901154f35f0d4c42ac83b536be326e92fc",
+      "binary": false
+    },
+    {
+      "path": "workflow/authorities/cycle-17-start.json",
+      "bytes": 2805,
+      "sha256": "5d9f76602e461cbb42af05abb89009575ea26bb499e9b39f3b7da20f02ab5141",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/authority.json",
+      "bytes": 137,
+      "sha256": "db781bbdda5ec9d335b4fc179f3b944edccfc5dc48f5a4f212efc82b898a56d6",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-1.json",
+      "bytes": 470,
+      "sha256": "dc6e6c9f85714b9043200f94cec896bd16e3d3a612e6781645bc16073801fba6",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-10.json",
+      "bytes": 478,
+      "sha256": "6822f15e4a87ac6f36876fe901e4d569b28f5deac3011f5bcaded7c2b7e0abca",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-11.json",
+      "bytes": 484,
+      "sha256": "8ce7698255172a9bbcf88d4685fb08cc6b74b736ac0db135d4762c9489683b36",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-12.json",
+      "bytes": 487,
+      "sha256": "3124b3af56d26e5de50fb27da0bff19612b8bc4240549dbacaeb7a5db5b28f0e",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-13.json",
+      "bytes": 456,
+      "sha256": "8470a89ded368d7a05e2a9f967a09fb6519b0b58489c378c64a544b817be6920",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-14.json",
+      "bytes": 488,
+      "sha256": "9227ee205ba89b6ac13d15907589fbae55d31d74c54ad36e9f465556fc657c2e",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-15.json",
+      "bytes": 480,
+      "sha256": "479661484e1053c4a0b5e21419abbaba8ca7938392d41c890df509ae3430e152",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-2.json",
+      "bytes": 449,
+      "sha256": "099cab5503a80450dac5fc2dabcd396be165f172c9faa9b658312d8bfb5c1a60",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-3.json",
+      "bytes": 467,
+      "sha256": "ff9ffac9248c6a7d35ba5dcc506437ee7b4d88f735ee007f9b7f054c0af962ec",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-4.json",
+      "bytes": 472,
+      "sha256": "1daab26df21ebdf625c94862efbd113a296ce1136221b0c5df5dcd7b7675edb4",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-5.json",
+      "bytes": 483,
+      "sha256": "8e8751dd910bf8d137d10844210458268ea8416520df957ea4bef7e669fb3757",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-6.json",
+      "bytes": 483,
+      "sha256": "e90d4c8206a9ce9c7edb81def3b9a209bc73a1f5dbc3897865252c0cfdb4d89a",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-7.json",
+      "bytes": 489,
+      "sha256": "d45f2a15ef8b5bc1810d44820915d021d69725d891a605fd238427a20797c5ef",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-8.json",
+      "bytes": 459,
+      "sha256": "b0c8c5fc3ab95662b2c1a020e71e6d428e279020be6b079e6ee17fc72602ba99",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/event-9.json",
+      "bytes": 486,
+      "sha256": "8d2f2899bb9e6253de603ecdd56d8f0601fc7566c6246df197a42ce1933e79dd",
+      "binary": false
+    },
+    {
+      "path": "workflow/cycles/cycle.17/state.json",
+      "bytes": 8503,
+      "sha256": "54e2f3995c96165abf147bb6b79d39a1e51cdb52029641b73268d16b36076af7",
+      "binary": false
+    },
+    {
+      "path": "workflow/project-state.json",
+      "bytes": 66390,
+      "sha256": "09b0f9b10bc5acbab37fb66dc3a6ddc62b5d5f0b02092b0a039a7bf8d0f1f2c5",
+      "binary": false
+    }
+  ]
+}

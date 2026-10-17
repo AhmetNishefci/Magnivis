@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "inspectedAt": "2026-10-17T14:07:01.672Z",
+  "master": {
+    "id": "media.e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+    "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+  },
+  "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/ohio-cycle17-candidate-v2.mp4",
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/master-approval-v2.json",
+    "sha256": "8ae50012ef38f27af9bb0d2c5f342eed1332e9423afc39e93448da64821a6f4d"
+  },
+  "probe": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 44.117,
+    "sizeBytes": 29131047,
+    "bitRate": 5282507
+  },
+  "fullDecode": "passed",
+  "masterUnchanged": true,
+  "scriptSha256": "6a3b2bc39f9ad31b72b761a48ae3a6ee2c3611a1f97cc3615f7604abf0df1a06",
+  "audioEvidence": {
+    "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/audio-inspection.json",
+    "sha256": "ce051e82824fa6d427254e7f002e8358f8deef09b3cc13a251f0596adb36a824"
+  },
+  "audioPreservation": {
+    "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/preservation-report.json",
+    "sha256": "085f3ed40e4ed4b03f71fbd9e92e574654d7930826fa08db5c126b8921dcff2f"
+  },
+  "captionValidation": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/qa/caption-vtt-validation-v2.json",
+    "sha256": "cb98cc4e73270dda5c1dd1b19ba053068739d99e670c534a35b13f2d98a93d60"
+  },
+  "geometry": {
+    "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/typography-report.json",
+    "sha256": "86e55d03e77e1af00b1e91dfd785e625059c3ed09e1c53a1046d75e1d1415246"
+  },
+  "ownerReview": "Owner personally reviewed exact V2 on phone and reports audio QA, caption synchronization, phone presentation/readability PASSED. Exact final master approved. Native platform/crop/cover passes and risk acceptance not inferred.",
+  "ownerPhoneQA": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/owner-audio-device-qa-v2.json",
+    "sha256": "01133673cde877008519dc9acfc572bd5bca5554ff92decf683708edb54e529f"
+  },
+  "renderedAgain": false,
+  "limitations": "No additional assistant subjective continuous playback/listening or physical-device test. Owner-reported exact-master phone passes are recorded separately. Existing full render and exact-media QA preserved; approval promotion does not render another video."
+}

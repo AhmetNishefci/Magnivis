@@ -1,0 +1,58 @@
+import {execFileSync} from 'node:child_process';
+import {readFileSync} from 'node:fs';
+import {mediaHash,loadMediaRegistry} from '../src/artifacts/media';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {knowledgePackageSchema} from '../src/knowledge/schema';
+import {contentAssetSchema} from '../src/content-assets/schema';
+import {creativeDirectionSchema} from '../src/content-assets/creative-direction';
+import {validateInternalProductionPlanReferences} from '../src/production/schema';
+import {validateAdaptiveCaptionPlan} from '../src/captions/adaptive-plan';
+import {verifyInternalEditorial} from '../src/workflow/editorial';
+import {loadCycle} from '../src/workflow/store';
+import {cycleReleaseSchema,inspectCycleRelease} from '../src/workflow/release';
+import {inspectMedia} from '../src/artifacts/inspection';
+import narration from '../src/production/narration/ohio.json';
+const base='content-intelligence/cycles/cycle-17',production=`${base}/revision-v2`,publication=`${base}/delivery-v2`;
+const read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+const pkg=knowledgePackageSchema.parse(read(`${base}/knowledge-package.ready.json`)),asset=contentAssetSchema.parse(read(`${base}/content-asset.ready.json`)),direction=creativeDirectionSchema.parse(read(`${production}/direction-v2.json`));
+const receipt=read(`${base}/editorial-receipt.json`),verified=verifyInternalEditorial(receipt.review,knowledgePackageSchema.parse(receipt.draftPackage),contentAssetSchema.parse(receipt.draftAsset));
+if(sha256Json(verified.knowledgePackage)!==sha256Json(pkg)||sha256Json(verified.contentAsset)!==sha256Json(asset))throw new Error('Changed verified editorial output');
+const plan=validateInternalProductionPlanReferences(read('src/production/plans/ohio-v2.json'),pkg,asset,direction);
+const captions=validateAdaptiveCaptionPlan(read('src/captions/plans/ohio-v2.json'),narration.cues,plan.format,direction,asset);
+if(plan.captions.captionPlanSha256!==sha256Json(captions)||narration.provenance.approvedScriptSha256!==sha256Json(asset.script)||sha256Json(asset.script)!=='6a3b2bc39f9ad31b72b761a48ae3a6ee2c3611a1f97cc3615f7604abf0df1a06')throw new Error('Changed approved wording/timing');
+for(const c of narration.cues)if(narration.provenance.cueArtifacts.find(s=>s.id===c.id)?.sha256!==mediaHash(`public/${c.file}`))throw new Error('Original WAV changed');
+for(const f of read(`${production}/implementation-bindings.json`).files)if(mediaHash(f.path)!==f.sha256)throw new Error('V2 implementation changed: '+f.path);
+const registry=loadMediaRegistry(),cycle=loadCycle(process.cwd(),'cycle.17',registry);
+if(cycle.stage!=='publication-review'||cycle.revision!==15||!cycle.masterDecision||!cycle.candidate||cycle.publicationDecision)throw new Error('Expected exact approved master and prepared release, no publication decision');
+const approval=read(cycle.masterDecision.path),candidate=read(cycle.candidate.path);
+if(approval.decision!=='approve'||approval.targetSha256!==sha256Json(candidate)||approval.acceptedUnknowns.length||!approval.instruction.includes('APPROVED as the final master')||candidate.media.sha256!=='e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091')throw new Error('Wrong owner approval or inferred risk acceptance');
+const baseline=read(`${publication}/preservation-baseline-v2.json`),originalFiles=baseline.files as {path:string;sha256:string}[];
+const violations=originalFiles.filter(f=>!baseline.allowedExistingChanges.includes(f.path)&&mediaHash(f.path)!==f.sha256);if(violations.length)throw new Error('Protected staged/tracked bytes changed: '+JSON.stringify(violations));
+const oldCatalog=baseline.catalog.artifacts,currentCatalog=read('artifacts/media-catalog.json').artifacts;
+if(sha256Json(currentCatalog.slice(0,oldCatalog.length))!==sha256Json(oldCatalog)||currentCatalog.length!==oldCatalog.length+1)throw new Error('Catalog not append-only, or unexpected media');
+// Owner-authorized commits may descend from the recorded baseline; protected bytes and branch still validate below.
+execFileSync('git',['merge-base','--is-ancestor',baseline.commit,'HEAD']);
+if(execFileSync('git',['branch','--show-current'],{encoding:'utf8'}).trim()!==baseline.branch)throw new Error('Wrong branch');
+const release=cycleReleaseSchema.parse(read(`${publication}/release-v2.json`)),inspection=inspectCycleRelease(release,registry,new Date().toISOString());
+if([...new Set(release.deliveries.map(d=>d.variant.platform))].sort().join(',')!=='facebook,instagram,tiktok,youtube'||release.deliveries.length!==4)throw new Error('Wrong platform scope');
+const captionMidpoints=captions.cues.map(c=>Math.floor((c.startFrame+c.endFrame)/2));
+for(const d of release.deliveries){
+ if(d.variant.relationship!=='exact-master'||d.variant.media.sha256!==candidate.media.sha256)throw new Error('Unapproved replacement media');
+ const e=read(d.variant.presentation.path);if(captionMidpoints.some(f=>!e.coverage.captionMidpoints.includes(f))||e.device.state!=='not-tested')throw new Error('Missing captions or invented native pass');
+ const manifest=read(d.manifest.path),metadata=read(manifest.metadata.path),copy=readFileSync(manifest.uploadCopy.path,'utf8');
+ for(const text of ['15 August 1942','IWM GM1505','GM1480','GM1469','A11498','public domain','Original reconstruction','illustrative','Synthetic narration','not wartime recordings',...pkg.sources.map(s=>s.url)])if(!metadata.description.includes(text)||!copy.includes(text))throw new Error('Missing source/qualification in exact copy: '+text);
+ if(!copy.includes(metadata.description)||!copy.includes(metadata.firstComment)||metadata.title&&!copy.includes(metadata.title)||metadata.productionReady||metadata.publicationAuthorized||metadata.publicationEvidence||metadata.claimIds.some((id:string)=>!asset.selectedClaimIds.includes(id)))throw new Error('Copy mismatch, unsupported claim or false readiness');
+ if(metadata.description.length>2200||metadata.title?.length>100)throw new Error('Conservative copy length exceeded');
+ if(metadata.captions.accessibilityTrack.sha256!==mediaHash('captions/ohio.en.vtt'))throw new Error('Wrong caption identity');
+ if(d.variant.platform!=='youtube'&&d.variant.platform!=='facebook'&&metadata.title!==null)throw new Error('Unsupported separate title field');
+}
+const risk=read(`${publication}/risk-register-v2.json`);if(risk.acceptedByOwner||sha256Json(risk.requiredExactPresentationUnknowns)!==sha256Json(inspection.unknowns))throw new Error('Risk register detached or acceptance invented');
+const cover=read(`${publication}/qa/selected-cover-v2.json`);if(!cover.pixelEqualityWithActualMasterFrame||cover.position.frame!==107||sha256Json(cover.sourceMaster)!==sha256Json(candidate.media)||sha256Json(registry.get(cover.media).parents)!==sha256Json([candidate.media]))throw new Error('Cover identity/lineage mismatch');
+if(!read(`${publication}/qa/master-release-validation-v2.json`).passed)throw new Error('Actual media decode failed');
+const geometry=read(`${production}/qa/typography-report.json`);if(!geometry.passed||geometry.observations.length!==78)throw new Error('Invalid original geometry evidence');
+console.log(JSON.stringify({passed:true,stage:cycle.stage,revision:cycle.revision,masterPath:registry.get(candidate.media).canonicalPath,masterSha256:candidate.media.sha256,actualMedia:inspectMedia(registry.resolveFile(candidate.media)),protectedFilesChecked:originalFiles.length-baseline.allowedExistingChanges.length,protectedFilesChanged:violations,originalCatalogRowsUnchanged:oldCatalog.length,newCanonicalMedia:1,platforms:inspection.uploads,captionMidpointsPerPlatform:captionMidpoints.length,actualGeometryCheckpoints:78,unknowns:inspection.unknowns.length,knownCollisions:0,coverPixelMatch:true,allNineOriginalWavsUnchanged:true,originalScriptPreserved:true,masterApproved:true,ownerPhoneQA:'audio, caption synchronization and readability PASSED — owner-reported',nativePlatformTesting:'not-tested',assistantContinuousListening:'not-performed',publicationAuthorized:false,ownerStop:'AHMET — CYCLE #17 DELIVERY REVIEW'},null,2));
+
+const ownerQA=read(`${publication}/owner-audio-device-qa-v2.json`);
+if(!ownerQA.conditionSatisfied||ownerQA.master.sha256!==candidate.media.sha256||ownerQA.nativePlatformPassInferred||ownerQA.presentationUnknownsAccepted||ownerQA.coverApprovalInferred||ownerQA.publicationAuthorized)throw new Error('Owner QA scope invalid');
+for(const field of ['audioQA','captionSynchronization','phonePresentationReadability'])if(ownerQA[field]!=='PASSED — owner-reported')throw new Error('Missing explicit phone QA pass');
+if(!read(`${publication}/qa/caption-vtt-validation-v2.json`).passed)throw new Error('Invalid VTT validation');

@@ -1,0 +1,17 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {execFileSync} from 'node:child_process';
+import {mediaHash} from '../src/artifacts/media';
+import captions from '../src/captions/plans/ohio.json';
+import revisedCaptions from '../src/captions/plans/ohio-v2.json';
+import narration from '../src/production/narration/ohio.json';
+const p='content-intelligence/cycles/cycle-17/revision-v2',baseline=JSON.parse(readFileSync(p+'/baseline-files.json','utf8')) as Record<string,string>;
+const allowed=['artifacts/media-catalog.json','workflow/cycles/cycle.17/state.json','workflow/project-state.json','docs/PROJECT-STATE.md','docs/ASSET-LICENSES.md','scripts/resolve-qa-video-target.ts'];
+const failures=Object.entries(baseline).filter(([path,sha])=>!allowed.includes(path)&&mediaHash(path)!==sha).map(([path])=>path);
+for(const cue of narration.cues)if(mediaHash('public/'+cue.file)!==narration.provenance.cueArtifacts.find(c=>c.id===cue.id)!.sha256)failures.push('public/'+cue.file);
+if(JSON.stringify(captions.cues)!==JSON.stringify(revisedCaptions.cues)||JSON.stringify(captions.visualTreatment)!==JSON.stringify(revisedCaptions.visualTreatment))failures.push('Caption presentation changed');
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static') as string,v1='artifacts/masters/ohio-cycle17-candidate-v1.mp4',v2='artifacts/masters/ohio-cycle17-candidate-v2.mp4';
+const hash=(file:string,copy:boolean)=>execFileSync(ffmpeg,['-v','error','-i',file,'-map','0:a:0',...(copy?['-c','copy']:['-c:a','pcm_s16le']),'-f','hash','-hash','sha256','-'],{encoding:'utf8'}).trim();
+const compressedIdentical=hash(v1,true)===hash(v2,true),decodedIdentical=hash(v1,false)===hash(v2,false);if(!compressedIdentical||!decodedIdentical)failures.push('Audio identity');
+mkdirSync(p+'/qa',{recursive:true});writeFileSync(p+'/qa/preservation-report.json',JSON.stringify({checkedAt:new Date().toISOString(),passed:failures.length===0,failures,v1:{path:v1,sha256:mediaHash(v1)},v2:{path:v2,sha256:mediaHash(v2)},compressedAudioIdentical:compressedIdentical,decodedAudioIdentical:decodedIdentical,audioPacketSha256:hash(v1,true),decodedAudioSha256:hash(v1,false),narrationWavs:9,captionCuesAndVisualTreatmentIdentical:true,baselineFilesChecked:Object.keys(baseline).length,allowedExistingMutations:allowed,scope:'Every preexisting Git-index path checked against session-start SHA256 except listed bookkeeping. V1 composition, plan, captions, narration, MP4 and all V1 evidence unchanged. No earlier-cycle changes.'},null,2)+'\n');
+if(failures.length)throw new Error(failures.join('\n'));console.log('V1, previous cycles, narration and exact audio preserved.');

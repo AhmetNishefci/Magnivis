@@ -1,0 +1,79 @@
+{
+  "cycleId": "cycle.17",
+  "platform": "instagram",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledDate": "2026-10-17",
+  "scheduledLocalTime": "20:00:00",
+  "scheduledFor": "2026-10-17T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-17T18:00:00Z",
+  "schedulingTimeZone": {
+    "ownerLabel": "Kosovo local time (CEST, UTC+2)",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "ianaIdentifier": null,
+    "basis": "explicit-owner-message; supplied offset used for deterministic UTC conversion"
+  },
+  "publication": "unknown",
+  "evidenceBasis": "explicit-owner-message",
+  "recordedAt": "2026-10-17T14:24:57.306296Z",
+  "schedulingActionTime": null,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "ownerReport": {
+    "path": "content-intelligence/operations/ohio-scheduling-v1/owner-report.json",
+    "sha256": "cd58907925439502f7386fb282b631b5d0f38ea88e9d52b6ba6a551799c330d0"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/release-v2.json",
+    "sha256": "56964f511176daa667c73b9fa980c513a5403fa66037bd27dadf5bb146dee764"
+  },
+  "intendedVariant": {
+    "id": "ohio.variant.instagram.v2",
+    "revision": 1,
+    "media": {
+      "id": "media.e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+      "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/manifest-v2.json",
+    "sha256": "015b4c2dffd0db0c4e90fb443160f63eee1adc0097d6dd04c84a403f48c15ca0"
+  },
+  "intendedArtifacts": [
+    {
+      "role": "video",
+      "media": {
+        "id": "media.e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+        "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+      }
+    },
+    {
+      "role": "cover",
+      "media": {
+        "id": "media.b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03",
+        "sha256": "b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/cover-evidence-v2.json",
+        "sha256": "2185ec795f10e03b27cdae23f467a1d4fdc28bad81c86829a9ae2f8dc4e7f265"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-17/delivery-v2/instagram/cover-profile-v2.json",
+        "sha256": "9fd0b5867db54566f3c014c2fea5d6f8ecd1c11cec76fd85c477c76ef158083f"
+      }
+    }
+  ],
+  "identityBasis": "Owner-designated approved V2 and prepared packages as intended release; uploaded bytes not independently verified."
+}

@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "id": "creative-direction.ohio-pedestal.v2",
+  "revision": 2,
+  "state": "ready-for-production-planning",
+  "knowledgePackage": {
+    "id": "ohio-pedestal",
+    "revision": 1,
+    "sha256": "d86792cc3ede226acbd53df1c6f8a5a026d1a787fa616ae35883c414cc74d90d"
+  },
+  "contentAsset": {
+    "id": "ohio-pedestal.asset.arrival",
+    "revision": 1,
+    "sha256": "3e7a3b4c1363da7382ee2990eb1caedde7c25030b176c31b7d0f58d5945059ae"
+  },
+  "approvedScriptSha256": "6a3b2bc39f9ad31b72b761a48ae3a6ee2c3611a1f97cc3615f7604abf0df1a06",
+  "creativeThesis": "A tanker unable to deliver itself becomes a shared vessel for getting its fuel to Malta.",
+  "viewerExperience": "Real formation → besieged destination → fuel cargo → attacks and actual deck damage → powerless flooding hull → struggling tow → destroyers join → real arrival and discharge → battered hull, surviving fuel, continued air operations.",
+  "emotionalTarget": "Surprise at the real arrangement, tension from physical difficulty, satisfaction from understanding the cargo delivery.",
+  "visualThesis": "Archive-authenticated rescue, with a large oblique volumetric tanker carried continuously from lost propulsion through a yawing tow to destroyers secured alongside and towing assistance ahead. Return to the same battered hull with surviving fuel highlighted and a symbolic aircraft connection.",
+  "decisions": [
+    {
+      "dimension": "visual-medium",
+      "treatment": "Existing documentary archive with a large oblique original rescue reconstruction",
+      "rationale": "Different evidence types answer different questions: actual ship, physical relationship, destination and surviving fuel."
+    },
+    {
+      "dimension": "art-direction",
+      "treatment": "Monochrome unaltered official photographs; deep green-grey sea and limestone chart, muted brass fuel in original reconstruction. Manrope captions and restrained Space Grotesk identifiers. V2 uses deck, hull depth and superstructure planes, deliberate camera pullback to show assisting vessels, and an intact battered tanker; no literal lifting or physical simulation claim.",
+      "rationale": "Photographs retain historical identity; contemporary drawings are visibly distinct. No sepia war preset, fake grain, invented damage footage or decorative battle action."
+    },
+    {
+      "dimension": "narration",
+      "treatment": "Local Kokoro af_heart speed1; 98words, lucid and measured, restrained urgency.",
+      "rationale": "Established primary voice; no war-announcer acting or routine narrator audition."
+    },
+    {
+      "dimension": "captions",
+      "treatment": "Manrope600 at54px, mixed case, natural speech phrases on quiet lower field; short supporting labels36–56px, outside caption space.",
+      "rationale": "Archive and moving ships need visual room; complete exact narration remains readable without a second wall of prose."
+    },
+    {
+      "dimension": "sound",
+      "treatment": "Original low sea-like filtered texture and restrained nonliteral tension tone; soften under spatial explanation, slight release on arrival.",
+      "rationale": "No unlicensed music, historical radio, invented gunfire or authentic-recording claim. Voice leads."
+    },
+    {
+      "dimension": "pacing",
+      "treatment": "Approximately35–50seconds from measured complete takes; pause on joined formation and fuel payoff.",
+      "rationale": "Each cut advances destination, damage, towing problem, solution or delivery; no padding or constant camera motion."
+    },
+    {
+      "dimension": "hook",
+      "treatment": "This tanker reached Malta with a warship lashed to each side.",
+      "rationale": "Show real three-ship relationship immediately, then explain why it was necessary."
+    },
+    {
+      "dimension": "platform-presentation",
+      "treatment": "1080x1920at30fps; critical objects/labels within conservative local insets, full-bleed noncritical sea/archive atmosphere.",
+      "rationale": "Candidate preflight all four; unknown native UI/crops/device remain explicit. No variants/packages at this stage."
+    }
+  ],
+  "convergenceReview": {
+    "recentAssets": [
+      {
+        "contentAsset": {
+          "id": "voyager-memory.asset.remote-repair",
+          "revision": 1,
+          "sha256": "67551a9024c91f01d6ceff5d9640a56fdeb9011d2e622744c211b23c987e2723"
+        },
+        "learnedPrinciple": "Consequential changes and authentic evidence carry explanation; passing QA does not prove storytelling.",
+        "applicability": "Show propulsion loss, tow swing and flank joining, not only narrated events.",
+        "similarities": [
+          "af_heart narration and stable lower speech captions.",
+          "Authentic imagery and qualitative causal reconstruction."
+        ],
+        "differences": [
+          "Documentary naval photographs and shared towing arrangement, rather than code, leaves, dice or seismic terrain."
+        ],
+        "assessment": "reconsidered",
+        "rationale": "Rendered overviews and exact revision feedback inspected; alternatives answer realism and fixed-panel risks.",
+        "visualComparison": {
+          "master": {
+            "id": "media.74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607",
+            "sha256": "74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607"
+          },
+          "approval": {
+            "path": "content-intelligence/cycles/cycle-16/delivery-v2/master-approval-v2.json",
+            "sha256": "781515ff0e0ab32f0770ec438ca3d9c2238e7dbe5136310910fa2fe6bd33564a"
+          },
+          "creativeDirection": {
+            "path": "content-intelligence/cycles/cycle-16/revision-v2/direction-v2.json",
+            "sha256": "6113042501415bc4b23e1bd73f61e8ce181816e54863e0bf5eae4a540ae66f07"
+          },
+          "inspectedVisuals": [
+            {
+              "id": "media.c4063d2c426c7f5b926d371d43bec80254f1e5eecca3751862a729474390d2a8",
+              "sha256": "c4063d2c426c7f5b926d371d43bec80254f1e5eecca3751862a729474390d2a8"
+            }
+          ],
+          "inspectionRecord": {
+            "path": "content-intelligence/cycles/cycle-17/portfolio-inspection.json",
+            "sha256": "25d73308d91a316488e9b109cebbc4969780514ba48dc90b2fc8b019d1eb339e"
+          },
+          "overallImpression": "Dark spacecraft documentary imagery and pale code schematics; persistent section identity and resolved opening signal deliver causal payoff.",
+          "dimensions": [
+            {
+              "dimension": "physical-story-progression",
+              "observed": "Dark spacecraft documentary imagery and pale code schematics; persistent section identity and resolved opening signal deliver causal payoff.",
+              "proposed": "Real frontal formation; geographical stakes; cargo; actual damage; top-down yaw; flank approach; authentic arrival; unload.",
+              "reason": "Changes answer successive viewer questions and make the physical solution legible."
+            }
+          ],
+          "similarityCauses": [
+            {
+              "similarity": "Established narrator and lower phrase captions.",
+              "cause": "brand-continuity",
+              "justification": "Auditory continuity and accessible complete speech."
+            },
+            {
+              "similarity": "Source image plus explanation model.",
+              "cause": "story-justified",
+              "justification": "Archive authenticates event while a model clarifies relationships not readable in a single still."
+            },
+            {
+              "similarity": "Convenient fixed dark panel with centered model.",
+              "cause": "convenience-driven",
+              "justification": "Would repeat earlier presentation risks; archive-led and fully reconstructed alternatives examined."
+            }
+          ],
+          "convenienceResponse": {
+            "alternatives": [
+              {
+                "treatment": "Documentary archive with a modern moving rescue model",
+                "materialChanges": [
+                  "Authentic three-ship photograph opens; broad Malta locator gives stakes.",
+                  "Cargo profile, actual damage, overhead towing failure, flank joining and authentic harbour/unloading complete the explanation."
+                ],
+                "storyTradeoffs": "Selected: protects authenticity and makes ship relationship visible, with a short reconstruction rather than a slideshow."
+              },
+              {
+                "treatment": "Fully reconstructed cinematic sea-level voyage",
+                "materialChanges": [
+                  "One continuous water world; camera travels between tanker and escorts.",
+                  "Damage and arrival could unfold without documentary cuts."
+                ],
+                "storyTradeoffs": "Rejected: no verified exact lashings/geometry, current custom3D realism risks invented historical precision; no need to fabricate archive."
+              },
+              {
+                "treatment": "Archive-only evidence film",
+                "materialChanges": [
+                  "Report details and photographs organize a strictly documentary sequence.",
+                  "No synthetic ships or moving map."
+                ],
+                "storyTradeoffs": "Authentic but still photographs alone poorly explain changing towing/steering geometry and risk a slideshow; licensed motion archive is not cleared."
+              }
+            ],
+            "resolution": "Choose archive-authenticated changing views and one evolving model, with spatially meaningful ship movement.",
+            "chosenForStory": "The tanker must stay recognizable while the rescuers physically join, then real unloading fulfills the opening."
+          }
+        }
+      },
+      {
+        "contentAsset": {
+          "id": "flytrap-touch-memory.asset.fading-trace",
+          "revision": 1,
+          "sha256": "781cd4da8e7caedc2489c6b4483b3dbbba289d1248f11afd9d94faa0ba57a631"
+        },
+        "learnedPrinciple": "Consequential changes and authentic evidence carry explanation; passing QA does not prove storytelling.",
+        "applicability": "Show propulsion loss, tow swing and flank joining, not only narrated events.",
+        "similarities": [
+          "af_heart narration and stable lower speech captions.",
+          "Authentic imagery and qualitative causal reconstruction."
+        ],
+        "differences": [
+          "Documentary naval photographs and shared towing arrangement, rather than code, leaves, dice or seismic terrain."
+        ],
+        "assessment": "reconsidered",
+        "rationale": "Rendered overviews and exact revision feedback inspected; alternatives answer realism and fixed-panel risks.",
+        "visualComparison": {
+          "master": {
+            "id": "media.cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+            "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582"
+          },
+          "approval": {
+            "path": "content-intelligence/cycles/cycle-15/delivery-v2/master-approval-v2.json",
+            "sha256": "7c66cd2da6780cc0df40c5112b260f0586b3b2749d9d068cb5f50eb572877d35"
+          },
+          "creativeDirection": {
+            "path": "content-intelligence/cycles/cycle-15/revision-v2/direction-v3.json",
+            "sha256": "54b2211d0e4711cd02230f316218a6f04c4cfb28387758a0eec56ab167965e7e"
+          },
+          "inspectedVisuals": [
+            {
+              "id": "media.3ac38832775cb224547696f79b1f08ff608fdd8abcb4432794aeea26047b67fc",
+              "sha256": "3ac38832775cb224547696f79b1f08ff608fdd8abcb4432794aeea26047b67fc"
+            }
+          ],
+          "inspectionRecord": {
+            "path": "content-intelligence/cycles/cycle-17/portfolio-inspection.json",
+            "sha256": "25d73308d91a316488e9b109cebbc4969780514ba48dc90b2fc8b019d1eb339e"
+          },
+          "overallImpression": "Natural macro and clearly differentiated scientific illustration; repeated leaf framing risks a static middle.",
+          "dimensions": [
+            {
+              "dimension": "physical-story-progression",
+              "observed": "Natural macro and clearly differentiated scientific illustration; repeated leaf framing risks a static middle.",
+              "proposed": "Real frontal formation; geographical stakes; cargo; actual damage; top-down yaw; flank approach; authentic arrival; unload.",
+              "reason": "Changes answer successive viewer questions and make the physical solution legible."
+            }
+          ],
+          "similarityCauses": [
+            {
+              "similarity": "Established narrator and lower phrase captions.",
+              "cause": "brand-continuity",
+              "justification": "Auditory continuity and accessible complete speech."
+            },
+            {
+              "similarity": "Source image plus explanation model.",
+              "cause": "story-justified",
+              "justification": "Archive authenticates event while a model clarifies relationships not readable in a single still."
+            },
+            {
+              "similarity": "Convenient fixed dark panel with centered model.",
+              "cause": "convenience-driven",
+              "justification": "Would repeat earlier presentation risks; archive-led and fully reconstructed alternatives examined."
+            }
+          ],
+          "convenienceResponse": {
+            "alternatives": [
+              {
+                "treatment": "Documentary archive with a modern moving rescue model",
+                "materialChanges": [
+                  "Authentic three-ship photograph opens; broad Malta locator gives stakes.",
+                  "Cargo profile, actual damage, overhead towing failure, flank joining and authentic harbour/unloading complete the explanation."
+                ],
+                "storyTradeoffs": "Selected: protects authenticity and makes ship relationship visible, with a short reconstruction rather than a slideshow."
+              },
+              {
+                "treatment": "Fully reconstructed cinematic sea-level voyage",
+                "materialChanges": [
+                  "One continuous water world; camera travels between tanker and escorts.",
+                  "Damage and arrival could unfold without documentary cuts."
+                ],
+                "storyTradeoffs": "Rejected: no verified exact lashings/geometry, current custom3D realism risks invented historical precision; no need to fabricate archive."
+              },
+              {
+                "treatment": "Archive-only evidence film",
+                "materialChanges": [
+                  "Report details and photographs organize a strictly documentary sequence.",
+                  "No synthetic ships or moving map."
+                ],
+                "storyTradeoffs": "Authentic but still photographs alone poorly explain changing towing/steering geometry and risk a slideshow; licensed motion archive is not cleared."
+              }
+            ],
+            "resolution": "Choose archive-authenticated changing views and one evolving model, with spatially meaningful ship movement.",
+            "chosenForStory": "The tanker must stay recognizable while the rescuers physically join, then real unloading fulfills the opening."
+          }
+        }
+      },
+      {
+        "contentAsset": {
+          "id": "dice-no-best.asset.choose-second",
+          "revision": 2,
+          "sha256": "69ca9a64c9c340eb6881f7f2ca4f18afaea04201f405a568a16f60dd4e693d01"
+        },
+        "learnedPrinciple": "Consequential changes and authentic evidence carry explanation; passing QA does not prove storytelling.",
+        "applicability": "Show propulsion loss, tow swing and flank joining, not only narrated events.",
+        "similarities": [
+          "af_heart narration and stable lower speech captions.",
+          "Authentic imagery and qualitative causal reconstruction."
+        ],
+        "differences": [
+          "Documentary naval photographs and shared towing arrangement, rather than code, leaves, dice or seismic terrain."
+        ],
+        "assessment": "reconsidered",
+        "rationale": "Rendered overviews and exact revision feedback inspected; alternatives answer realism and fixed-panel risks.",
+        "visualComparison": {
+          "master": {
+            "id": "media.2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+            "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2"
+          },
+          "approval": {
+            "path": "content-intelligence/cycles/cycle-14/publication/master-approval-v1.json",
+            "sha256": "5030ccfafb344bfba18fb18230c7a3e1519570bf1e81efc8f83931aecd4cae2e"
+          },
+          "creativeDirection": {
+            "path": "content-intelligence/cycles/cycle-14/revision-v4/direction-v4.json",
+            "sha256": "6695bf6198f84bb8e6db7b0623358c804c7fa70c2abec7a9b879a28b63a6a349"
+          },
+          "inspectedVisuals": [
+            {
+              "id": "media.5fefcd90cde1782e2e9d20b1796a6b488e5716beabae4f685d79d663c4b3576e",
+              "sha256": "5fefcd90cde1782e2e9d20b1796a6b488e5716beabae4f685d79d663c4b3576e"
+            }
+          ],
+          "inspectionRecord": {
+            "path": "content-intelligence/cycles/cycle-17/portfolio-inspection.json",
+            "sha256": "25d73308d91a316488e9b109cebbc4969780514ba48dc90b2fc8b019d1eb339e"
+          },
+          "overallImpression": "Tactile dice on wood, progressive matchup reveals and circular payoff; objects carry the challenge.",
+          "dimensions": [
+            {
+              "dimension": "physical-story-progression",
+              "observed": "Tactile dice on wood, progressive matchup reveals and circular payoff; objects carry the challenge.",
+              "proposed": "Real frontal formation; geographical stakes; cargo; actual damage; top-down yaw; flank approach; authentic arrival; unload.",
+              "reason": "Changes answer successive viewer questions and make the physical solution legible."
+            }
+          ],
+          "similarityCauses": [
+            {
+              "similarity": "Established narrator and lower phrase captions.",
+              "cause": "brand-continuity",
+              "justification": "Auditory continuity and accessible complete speech."
+            },
+            {
+              "similarity": "Source image plus explanation model.",
+              "cause": "story-justified",
+              "justification": "Archive authenticates event while a model clarifies relationships not readable in a single still."
+            },
+            {
+              "similarity": "Convenient fixed dark panel with centered model.",
+              "cause": "convenience-driven",
+              "justification": "Would repeat earlier presentation risks; archive-led and fully reconstructed alternatives examined."
+            }
+          ],
+          "convenienceResponse": {
+            "alternatives": [
+              {
+                "treatment": "Documentary archive with a modern moving rescue model",
+                "materialChanges": [
+                  "Authentic three-ship photograph opens; broad Malta locator gives stakes.",
+                  "Cargo profile, actual damage, overhead towing failure, flank joining and authentic harbour/unloading complete the explanation."
+                ],
+                "storyTradeoffs": "Selected: protects authenticity and makes ship relationship visible, with a short reconstruction rather than a slideshow."
+              },
+              {
+                "treatment": "Fully reconstructed cinematic sea-level voyage",
+                "materialChanges": [
+                  "One continuous water world; camera travels between tanker and escorts.",
+                  "Damage and arrival could unfold without documentary cuts."
+                ],
+                "storyTradeoffs": "Rejected: no verified exact lashings/geometry, current custom3D realism risks invented historical precision; no need to fabricate archive."
+              },
+              {
+                "treatment": "Archive-only evidence film",
+                "materialChanges": [
+                  "Report details and photographs organize a strictly documentary sequence.",
+                  "No synthetic ships or moving map."
+                ],
+                "storyTradeoffs": "Authentic but still photographs alone poorly explain changing towing/steering geometry and risk a slideshow; licensed motion archive is not cleared."
+              }
+            ],
+            "resolution": "Choose archive-authenticated changing views and one evolving model, with spatially meaningful ship movement.",
+            "chosenForStory": "The tanker must stay recognizable while the rescuers physically join, then real unloading fulfills the opening."
+          }
+        }
+      },
+      {
+        "contentAsset": {
+          "id": "devils-hole-seismic-seiche.asset.connection",
+          "revision": 1,
+          "sha256": "74d6737b2ce63182729ec1dca7d4c2b817cc624511978b078c562040cb2b508b"
+        },
+        "learnedPrinciple": "Consequential changes and authentic evidence carry explanation; passing QA does not prove storytelling.",
+        "applicability": "Show propulsion loss, tow swing and flank joining, not only narrated events.",
+        "similarities": [
+          "af_heart narration and stable lower speech captions.",
+          "Authentic imagery and qualitative causal reconstruction."
+        ],
+        "differences": [
+          "Documentary naval photographs and shared towing arrangement, rather than code, leaves, dice or seismic terrain."
+        ],
+        "assessment": "reconsidered",
+        "rationale": "Rendered overviews and exact revision feedback inspected; alternatives answer realism and fixed-panel risks.",
+        "visualComparison": {
+          "master": {
+            "id": "media.03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+            "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92"
+          },
+          "approval": {
+            "path": "content-intelligence/cycles/cycle-13/publication/master-approval-v1.json",
+            "sha256": "455e8cb2aade7700fe75e7ca570e58637ae946c0793446862660ae459ade28fc"
+          },
+          "creativeDirection": {
+            "path": "content-intelligence/cycles/cycle-13/revision-v2/direction-v2.json",
+            "sha256": "1ff89b6d00b98e9d1944a1a4f6a24f812f2ec9f21da8d81742869c644361b0a3"
+          },
+          "inspectedVisuals": [
+            {
+              "id": "media.62b5c9b0cfcd96cc8b091facced8d1b87dd47dfa2745fc9858f383abb25f1d69",
+              "sha256": "62b5c9b0cfcd96cc8b091facced8d1b87dd47dfa2745fc9858f383abb25f1d69"
+            }
+          ],
+          "inspectionRecord": {
+            "path": "content-intelligence/cycles/cycle-17/portfolio-inspection.json",
+            "sha256": "25d73308d91a316488e9b109cebbc4969780514ba48dc90b2fc8b019d1eb339e"
+          },
+          "overallImpression": "Geographic environment, changing globe scale and cave section; real location grounds the abstract propagation.",
+          "dimensions": [
+            {
+              "dimension": "physical-story-progression",
+              "observed": "Geographic environment, changing globe scale and cave section; real location grounds the abstract propagation.",
+              "proposed": "Real frontal formation; geographical stakes; cargo; actual damage; top-down yaw; flank approach; authentic arrival; unload.",
+              "reason": "Changes answer successive viewer questions and make the physical solution legible."
+            }
+          ],
+          "similarityCauses": [
+            {
+              "similarity": "Established narrator and lower phrase captions.",
+              "cause": "brand-continuity",
+              "justification": "Auditory continuity and accessible complete speech."
+            },
+            {
+              "similarity": "Source image plus explanation model.",
+              "cause": "story-justified",
+              "justification": "Archive authenticates event while a model clarifies relationships not readable in a single still."
+            },
+            {
+              "similarity": "Convenient fixed dark panel with centered model.",
+              "cause": "convenience-driven",
+              "justification": "Would repeat earlier presentation risks; archive-led and fully reconstructed alternatives examined."
+            }
+          ],
+          "convenienceResponse": {
+            "alternatives": [
+              {
+                "treatment": "Documentary archive with a modern moving rescue model",
+                "materialChanges": [
+                  "Authentic three-ship photograph opens; broad Malta locator gives stakes.",
+                  "Cargo profile, actual damage, overhead towing failure, flank joining and authentic harbour/unloading complete the explanation."
+                ],
+                "storyTradeoffs": "Selected: protects authenticity and makes ship relationship visible, with a short reconstruction rather than a slideshow."
+              },
+              {
+                "treatment": "Fully reconstructed cinematic sea-level voyage",
+                "materialChanges": [
+                  "One continuous water world; camera travels between tanker and escorts.",
+                  "Damage and arrival could unfold without documentary cuts."
+                ],
+                "storyTradeoffs": "Rejected: no verified exact lashings/geometry, current custom3D realism risks invented historical precision; no need to fabricate archive."
+              },
+              {
+                "treatment": "Archive-only evidence film",
+                "materialChanges": [
+                  "Report details and photographs organize a strictly documentary sequence.",
+                  "No synthetic ships or moving map."
+                ],
+                "storyTradeoffs": "Authentic but still photographs alone poorly explain changing towing/steering geometry and risk a slideshow; licensed motion archive is not cleared."
+              }
+            ],
+            "resolution": "Choose archive-authenticated changing views and one evolving model, with spatially meaningful ship movement.",
+            "chosenForStory": "The tanker must stay recognizable while the rescuers physically join, then real unloading fulfills the opening."
+          }
+        }
+      }
+    ],
+    "unresolvedConvenienceReuse": [],
+    "conclusion": "Four latest approved outputs considered with honest sampled limits; no copied historical palette or fixed panel.",
+    "portfolioReview": {
+      "selectionRationale": "Latest four actual approved decisions:VoyagerV2,FlytrapV2,DiceV4,DevilsHoleV2.",
+      "proposedFeedImpression": "Archival ship texture, geographic stakes and contemporary physical explanation form a documentary short.",
+      "toolingBiasCheck": "Compared archive-only and full sea reconstruction; select hybrid for genuine evidence and explanatory clarity, not renderer availability."
+    }
+  },
+  "ownerReview": {
+    "required": false,
+    "rationale": "Explicit owner research-and-V1 instruction supplies routine internal production scope; no extra review stage or claim/master approval."
+  },
+  "risks": [
+    "Some archival scans low resolution; preserve their visible texture without AI restoration/fabrication.",
+    "Source ship identity/cargo-total disagreements excluded from exact narration.",
+    "Qualitative drawing does not reproduce exact proportions, lashings, hydrodynamics or an unchanging tow formation.",
+    "No continuous subjective playback/listening or native-device evidence; owner must assess those."
+  ],
+  "provenance": {
+    "method": "ai-assisted-editorial",
+    "enteredAt": "2026-10-16T19:05:19.215Z",
+    "notes": "Manual session evidence inspection and source-bound direction; no paid provider run, human viewing or approval fabricated."
+  },
+  "platformApprovalGranted": false,
+  "publicationApprovalGranted": false
+}

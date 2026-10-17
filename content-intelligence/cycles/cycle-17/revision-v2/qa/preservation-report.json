@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-17T13:43:37.280Z",
+  "passed": true,
+  "failures": [],
+  "v1": {
+    "path": "artifacts/masters/ohio-cycle17-candidate-v1.mp4",
+    "sha256": "8f9bbae1546c829d91eae109717d4e759fb7169bc732bdd13662363d448308fd"
+  },
+  "v2": {
+    "path": "artifacts/masters/ohio-cycle17-candidate-v2.mp4",
+    "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+  },
+  "compressedAudioIdentical": true,
+  "decodedAudioIdentical": true,
+  "audioPacketSha256": "SHA256=a8684c0f7e5f1f361b3f447861b6a3fbe68e5aceb5188e6437a23662671d8644",
+  "decodedAudioSha256": "SHA256=481369dce42ffbf9f86fe28395a7f546ec7815459e5d2cf7fcfd436cbb0138e4",
+  "narrationWavs": 9,
+  "captionCuesAndVisualTreatmentIdentical": true,
+  "baselineFilesChecked": 6533,
+  "allowedExistingMutations": [
+    "artifacts/media-catalog.json",
+    "workflow/cycles/cycle.17/state.json",
+    "workflow/project-state.json",
+    "docs/PROJECT-STATE.md",
+    "docs/ASSET-LICENSES.md",
+    "scripts/resolve-qa-video-target.ts"
+  ],
+  "scope": "Every preexisting Git-index path checked against session-start SHA256 except listed bookkeeping. V1 composition, plan, captions, narration, MP4 and all V1 evidence unchanged. No earlier-cycle changes."
+}

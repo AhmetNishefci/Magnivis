@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "baselineHead": "11f99b4b3fe5e07418341c5b56ae9568e065a8df",
+  "ownerAuthority": "content-intelligence/operations/ohio-scheduling-v1/owner-instruction.md",
+  "pnpmCheck": {
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFilesPassed": 55,
+    "testsPassed": 514,
+    "gitDiffCheck": "passed"
+  },
+  "durability": {
+    "exitCode": 0,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 1321,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "exactMasterStrictDecode": "passed: all video/audio, xerror and explode flags",
+  "releaseValidation": "passed: source/script/narration/captions, original evidence, four exact-master variants,39file package inventory, independent cover lineage and preserved geometry",
+  "schedulingValidation": "passed: four owner-reported records, exact release/package references,2026-10-17T20:00:00+02:00 /2026-10-17T18:00:00Z, no invented publication or metadata; native revision15 unchanged",
+  "sensitiveScan": "No secret patterns or inappropriate tracked paths detected in audited text; this is a bounded heuristic scan, not a universal secret guarantee.",
+  "unrelatedOrIncompleteWork": [],
+  "retainedHistoricalEvidence": "Unapproved V1 and authoring snapshots remain purposeful correction history. Prior pending approvals remain immutable as-of records superseded by final owner approval.",
+  "necessaryValidatorCorrection": "New Cycle17 release validator originally prohibited every HEAD change. Explicit Git authorization now permits descendant commits; git merge-base ancestry, branch, original file bytes and all package/master invariants remain checked. No unrelated production refactor.",
+  "inspectionCorrection": "Legacy preservation script rewrote its QA timestamp/report during inspection. Exact index bytes restored immediately, then original baseline, package hashes and read-only release checks passed. No historical report change staged.",
+  "remoteAtAudit": "Live origin/content/cycle-11-discovery matched baselineHead before commit.",
+  "commitPlan": "One logically complete Cycle17 production, final approval, four reference delivery packages, owner scheduling and audit commit on existing branch; normal push only.",
+  "publication": "unknown",
+  "assistantPlatformActions": [],
+  "cycle18Started": false,
+  "receiptScope": "Precommit evidence; final commit identity and remote synchronization are verified after commit and reported separately. Audit snapshots exclude these final attached audit receipts to avoid recursive hashes."
+}

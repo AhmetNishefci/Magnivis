@@ -1,0 +1,77 @@
+{
+  "enteredAt": "2026-10-16T19:15:51.926Z",
+  "sourceBaseCommit": "11f99b4b3fe5e07418341c5b56ae9568e065a8df",
+  "files": [
+    {
+      "path": "src/ohio-index.tsx",
+      "sha256": "183311a5dd8f6575fe42103a4adfcac95ce408175665e7c22397a0b40dd3404d"
+    },
+    {
+      "path": "src/compositions/OhioPedestal.tsx",
+      "sha256": "23e0a79db0c352229144fa138d8a4d57490f1350222884d6d5425efa01e0c35c"
+    },
+    {
+      "path": "src/content/videos/ohio.ts",
+      "sha256": "71d971d5346163ea44384b6268d199ae640f22c820adf110c3f3d44e7b73f218"
+    },
+    {
+      "path": "src/production/plans/ohio.json",
+      "sha256": "0e92ece8e31345cf65ce22b5365e34901154f35f0d4c42ac83b536be326e92fc"
+    },
+    {
+      "path": "src/captions/plans/ohio.json",
+      "sha256": "74d72c3e758b8d46767454fb123436952aa276f1f8330ee2fbcff54de879675d"
+    },
+    {
+      "path": "src/production/narration/ohio.json",
+      "sha256": "f3433979543ab25bfa825139285093616090ce859ccd64ec8a2b78e99941bd33"
+    },
+    {
+      "path": "scripts/ohio-video-target.ts",
+      "sha256": "ce67d09ecf13dab8b4a45715c5ad50e566df124cf8fe53ead7ce2b96b57a98dd"
+    },
+    {
+      "path": "scripts/render-ohio.ts",
+      "sha256": "83cf5aacd40b896c4c3ea50ab673bac8869bdb85ac438609f6442a6d42985381"
+    },
+    {
+      "path": "scripts/qa-ohio-layout.ts",
+      "sha256": "c6e476154369410df722c7aa6fe08326cd8882d5a6df29481f739868bc22f566"
+    },
+    {
+      "path": "scripts/prepare-ohio-qa-sheets.ts",
+      "sha256": "d58f87c2383cb81649df3139ebcfe0efb6e06c9376894a9b0b85e28f067d6503"
+    },
+    {
+      "path": "scripts/generate-ohio-narration.mjs",
+      "sha256": "8cda0ce3abfe997f86a82ffe095286542a84dcf31b4d43a8cdfbeba0735f2409"
+    },
+    {
+      "path": "scripts/generate-ohio-soundscape.mjs",
+      "sha256": "9463773f662111e21a582e7e004c857bc9afc1e954bf1993865fc23641c139a9"
+    },
+    {
+      "path": "scripts/inspect-ohio-audio.mjs",
+      "sha256": "a905efbb68102be7f21b3c78e6fad1b21c7c22e0486ace99dd6d06a568d219a1"
+    },
+    {
+      "path": "scripts/finalize-ohio-master.ts",
+      "sha256": "64c6befa0c0c1c62ad1bae79010dcca52c1789d5af6e67505fca552759b6681e"
+    }
+  ],
+  "scriptSha256": "6a3b2bc39f9ad31b72b761a48ae3a6ee2c3611a1f97cc3615f7604abf0df1a06",
+  "authority": {
+    "path": "content-intelligence/cycles/cycle-17/owner-selection.json",
+    "sha256": "d121b346316e795426ddbbf4923e37148b67f6867eb75bf324cca871faf818a6"
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-17/production-v1/direction-ready.json",
+    "sha256": "e6848c4a1b8504337472e55ebe334e331bac494b57a744dadda6cde402045b82"
+  },
+  "corrections": {
+    "path": "content-intelligence/cycles/cycle-17/production-v1/rendered-corrections.json",
+    "sha256": "f65341de6cd126f684dacde7db314e98463157bb3fc3a4d3b0d469e68bc5526f"
+  },
+  "videoPacketSha256": "SHA256=6d92676db56355229381121c8c81318d526a8d37bb985cd6b3d68ddc71bc7ff5",
+  "note": "Current source and full master bind final corrected implementation; lint-only equivalent quote spelling/import does not alter generated sound or pixels."
+}

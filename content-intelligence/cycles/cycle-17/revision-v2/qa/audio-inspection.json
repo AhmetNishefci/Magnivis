@@ -1,0 +1,440 @@
+{
+  "checkedAt": "2026-10-17T13:43:54.865Z",
+  "masterPath": "artifacts/masters/ohio-cycle17-candidate-v2.mp4",
+  "masterSha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+  "method": "Actual decoded master recognized per complete source unit; independent EBU R128 signal/loudness and silence inspection. Machine evidence, not subjective audiovisual review.",
+  "model": "onnx-community/whisper-tiny.en",
+  "narrator": "Kokoro af_heart speed1",
+  "actualMasterCues": [
+    {
+      "id": "ohio-cue-1",
+      "exactText": "This tanker reached Malta with a warship lashed to each side.",
+      "recognized": " This tanker reached Malta, with a worship lash to each side.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " This tanker reached Malta, with a worship lash to each side."
+        }
+      ],
+      "start": 0,
+      "duration": 4.075
+    },
+    {
+      "id": "ohio-cue-2",
+      "exactText": "It was August nineteen forty-two. Malta was under siege, and desperately short of fuel.",
+      "recognized": " It was August 1942. Malta was under siege and desperately short of fuel.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.48
+          ],
+          "text": " It was August 1942."
+        },
+        {
+          "timestamp": [
+            2.48,
+            5.68
+          ],
+          "text": " Malta was under siege and desperately short of fuel."
+        }
+      ],
+      "start": 4.4,
+      "duration": 5.975
+    },
+    {
+      "id": "ohio-cue-3",
+      "exactText": "Ohio was carrying thousands of tons.",
+      "recognized": " Ohio was carrying thousands of tons.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.46
+          ],
+          "text": " Ohio was carrying thousands of tons."
+        }
+      ],
+      "start": 10.666666666666666,
+      "duration": 2.825
+    },
+    {
+      "id": "ohio-cue-4",
+      "exactText": "A torpedo struck. Bomb attacks followed. Her engines failed, and water flooded in.",
+      "recognized": " A torpedo struck, bomb attacks followed. Her engines failed and water flooded in.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " A torpedo struck, bomb attacks followed."
+        },
+        {
+          "timestamp": [
+            3,
+            6
+          ],
+          "text": " Her engines failed and water flooded in."
+        }
+      ],
+      "start": 13.8,
+      "duration": 5.825
+    },
+    {
+      "id": "ohio-cue-5",
+      "exactText": "Towing her was a struggle: the damaged ship kept swinging off course.",
+      "recognized": " Towing her was a struggle. The damaged ship kept swinging off course.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            1.8
+          ],
+          "text": " Towing her was a struggle."
+        },
+        {
+          "timestamp": [
+            1.8,
+            3.98
+          ],
+          "text": " The damaged ship kept swinging off course."
+        }
+      ],
+      "start": 19.933333333333334,
+      "duration": 4.3
+    },
+    {
+      "id": "ohio-cue-6",
+      "exactText": "So destroyers came alongside, securing the tanker between them, while other vessels helped with the tow.",
+      "recognized": " So, destroyers came alongside, securing the tanker between them, while other vessels helped with the tow.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            6
+          ],
+          "text": " So, destroyers came alongside, securing the tanker between them, while other vessels helped with the tow."
+        }
+      ],
+      "start": 24.533333333333335,
+      "duration": 6.5
+    },
+    {
+      "id": "ohio-cue-7",
+      "exactText": "On August fifteenth, Ohio entered Grand Harbour.",
+      "recognized": " On August 15th, Ohio entered Grand Harbor.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3.4
+          ],
+          "text": " On August 15th, Ohio entered Grand Harbor."
+        }
+      ],
+      "start": 31.433333333333334,
+      "duration": 3.675
+    },
+    {
+      "id": "ohio-cue-8",
+      "exactText": "Her fuel was unloaded, helping Malta’s aircraft keep fighting.",
+      "recognized": " Her fuel was unloaded, helping Malta's aircraft keep fighting.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " Her fuel was unloaded, helping Malta's aircraft keep fighting."
+        }
+      ],
+      "start": 35.5,
+      "duration": 4.375
+    },
+    {
+      "id": "ohio-cue-9",
+      "exactText": "The precious part of this wreck was still inside her.",
+      "recognized": " The precious part of this wreck was still inside her.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " The precious part of this wreck was still inside her."
+        }
+      ],
+      "start": 40.2,
+      "duration": 3.15
+    }
+  ],
+  "semanticUnits": [
+    {
+      "id": "ohio-cue-1",
+      "fullUnit": "This tanker reached Malta with a warship lashed to each side.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600000264000] silence_start: 0",
+        "[silencedetect @ 0x600000264000] silence_end: 0.324458 | silence_duration: 0.324458",
+        "[silencedetect @ 0x600000264000] silence_start: 3.59",
+        "[silencedetect @ 0x600000264000] silence_end: 4.075 | silence_duration: 0.485"
+      ]
+    },
+    {
+      "id": "ohio-cue-2",
+      "fullUnit": "It was August nineteen forty-two. Malta was under siege, and desperately short of fuel.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002fc8720] silence_start: 0",
+        "[silencedetect @ 0x600002fc8720] silence_end: 0.318417 | silence_duration: 0.318417",
+        "[silencedetect @ 0x600002fc8720] silence_start: 2.11371",
+        "[silencedetect @ 0x600002fc8720] silence_end: 2.61183 | silence_duration: 0.498125",
+        "[silencedetect @ 0x600002fc8720] silence_start: 5.48758",
+        "[silencedetect @ 0x600002fc8720] silence_end: 5.975 | silence_duration: 0.487417"
+      ]
+    },
+    {
+      "id": "ohio-cue-3",
+      "fullUnit": "Ohio was carrying thousands of tons.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003234720] silence_start: 0",
+        "[silencedetect @ 0x600003234720] silence_end: 0.338667 | silence_duration: 0.338667",
+        "[silencedetect @ 0x600003234720] silence_start: 2.3795",
+        "[silencedetect @ 0x600003234720] silence_end: 2.825 | silence_duration: 0.4455"
+      ]
+    },
+    {
+      "id": "ohio-cue-4",
+      "fullUnit": "A torpedo struck. Bomb attacks followed. Her engines failed, and water flooded in.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600001eec000] silence_start: 0",
+        "[silencedetect @ 0x600001eec000] silence_end: 0.31175 | silence_duration: 0.31175",
+        "[silencedetect @ 0x600001eec000] silence_start: 2.76592",
+        "[silencedetect @ 0x600001eec000] silence_end: 3.17338 | silence_duration: 0.407458",
+        "[silencedetect @ 0x600001eec000] silence_start: 5.34004",
+        "[silencedetect @ 0x600001eec000] silence_end: 5.825 | silence_duration: 0.484958"
+      ]
+    },
+    {
+      "id": "ohio-cue-5",
+      "fullUnit": "Towing her was a struggle: the damaged ship kept swinging off course.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600000c9c000] silence_start: 0",
+        "[silencedetect @ 0x600000c9c000] silence_end: 0.306583 | silence_duration: 0.306583",
+        "[silencedetect @ 0x600000c9c000] silence_start: 1.40383",
+        "[silencedetect @ 0x600000c9c000] silence_end: 1.76758 | silence_duration: 0.36375",
+        "[silencedetect @ 0x600000c9c000] silence_start: 3.86104",
+        "[silencedetect @ 0x600000c9c000] silence_end: 4.3 | silence_duration: 0.438958"
+      ]
+    },
+    {
+      "id": "ohio-cue-6",
+      "fullUnit": "So destroyers came alongside, securing the tanker between them, while other vessels helped with the tow.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x60000368c000] silence_start: 2.09396",
+        "[silencedetect @ 0x60000368c000] silence_end: 2.40346 | silence_duration: 0.3095",
+        "[silencedetect @ 0x60000368c000] silence_start: 3.87871",
+        "[silencedetect @ 0x60000368c000] silence_end: 4.25079 | silence_duration: 0.372083",
+        "[silencedetect @ 0x60000368c000] silence_start: 5.96517",
+        "[silencedetect @ 0x60000368c000] silence_end: 6.5 | silence_duration: 0.534833"
+      ]
+    },
+    {
+      "id": "ohio-cue-7",
+      "fullUnit": "On August fifteenth, Ohio entered Grand Harbour.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000011e8000] silence_start: 0",
+        "[silencedetect @ 0x6000011e8000] silence_end: 0.328667 | silence_duration: 0.328667",
+        "[silencedetect @ 0x6000011e8000] silence_start: 3.18437",
+        "[silencedetect @ 0x6000011e8000] silence_end: 3.675 | silence_duration: 0.490625"
+      ]
+    },
+    {
+      "id": "ohio-cue-8",
+      "fullUnit": "Her fuel was unloaded, helping Malta’s aircraft keep fighting.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x60000034c000] silence_start: 0",
+        "[silencedetect @ 0x60000034c000] silence_end: 0.322458 | silence_duration: 0.322458",
+        "[silencedetect @ 0x60000034c000] silence_start: 1.56725",
+        "[silencedetect @ 0x60000034c000] silence_end: 1.88479 | silence_duration: 0.317542",
+        "[silencedetect @ 0x60000034c000] silence_start: 3.88371",
+        "[silencedetect @ 0x60000034c000] silence_end: 4.375 | silence_duration: 0.491292"
+      ]
+    },
+    {
+      "id": "ohio-cue-9",
+      "fullUnit": "The precious part of this wreck was still inside her.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600003d44120] silence_start: 0",
+        "[silencedetect @ 0x600003d44120] silence_end: 0.303542 | silence_duration: 0.303542",
+        "[silencedetect @ 0x600003d44120] silence_start: 2.67604",
+        "[silencedetect @ 0x600003d44120] silence_end: 3.15 | silence_duration: 0.473958"
+      ]
+    }
+  ],
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -19.4 LUFS\n    Threshold: -30.5 LUFS\n\n  Loudness range:\n    LRA:         3.1 LU\n    Threshold: -40.5 LUFS\n    LRA low:   -22.1 LUFS\n    LRA high:  -18.9 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+  "sourceAlignment": {
+    "enteredAt": "2026-10-16T19:08:16.707Z",
+    "method": "Source WAVs decoded at16kHz and recognized locally with Whisper tiny.en segment timestamps. Approximate sentence anchors, not forced word alignment or listening.",
+    "results": [
+      {
+        "id": "ohio-cue-1",
+        "exactText": "This tanker reached Malta with a warship lashed to each side.",
+        "recognized": " This tanker reached Malta with a worship lash to each side.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4
+            ],
+            "text": " This tanker reached Malta with a worship lash to each side."
+          }
+        ],
+        "sourceSha256": "c5f32de6ece5a6ea48789683534ebec62963a82c458924b38d1c4631a7960357"
+      },
+      {
+        "id": "ohio-cue-2",
+        "exactText": "It was August nineteen forty-two. Malta was under siege, and desperately short of fuel.",
+        "recognized": " It was August 1942. Malta was under siege and desperately short of fuel.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              2.34
+            ],
+            "text": " It was August 1942."
+          },
+          {
+            "timestamp": [
+              2.34,
+              5.68
+            ],
+            "text": " Malta was under siege and desperately short of fuel."
+          }
+        ],
+        "sourceSha256": "160262352c411203bb47393fbc3928f33c48f081bb34dc7eef85bcd66065d444"
+      },
+      {
+        "id": "ohio-cue-3",
+        "exactText": "Ohio was carrying thousands of tons.",
+        "recognized": " Ohio was carrying thousands of tons.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " Ohio was carrying thousands of tons."
+          }
+        ],
+        "sourceSha256": "b731c0d5abcbe1c75e04021e65b8dd2b47bc60c58a194ccbf9e548ea6c7c8c78"
+      },
+      {
+        "id": "ohio-cue-4",
+        "exactText": "A torpedo struck. Bomb attacks followed. Her engines failed, and water flooded in.",
+        "recognized": " A torpedo struck, bomb attacks followed. Her engines failed and water flooded in.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " A torpedo struck, bomb attacks followed."
+          },
+          {
+            "timestamp": [
+              3,
+              6
+            ],
+            "text": " Her engines failed and water flooded in."
+          }
+        ],
+        "sourceSha256": "85b8f8c7f9a6f5b8d32aab9ec40099c2b98754d92e6556a7bfc119389312c61b"
+      },
+      {
+        "id": "ohio-cue-5",
+        "exactText": "Towing her was a struggle: the damaged ship kept swinging off course.",
+        "recognized": " Towing her was a struggle. The damaged ship kept swinging off course.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4
+            ],
+            "text": " Towing her was a struggle. The damaged ship kept swinging off course."
+          }
+        ],
+        "sourceSha256": "de3a64c418b4e679abba8d902ed24ac11738d34bfc5420c4c89a155d5dc25f72"
+      },
+      {
+        "id": "ohio-cue-6",
+        "exactText": "So destroyers came alongside, securing the tanker between them, while other vessels helped with the tow.",
+        "recognized": " So, destroyers came alongside, securing the tanker between them, while other vessels helped with the tow.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              6
+            ],
+            "text": " So, destroyers came alongside, securing the tanker between them, while other vessels helped with the tow."
+          }
+        ],
+        "sourceSha256": "0fb5277098a6f9c72cce1a568a9427cd4bde0f784310af6a9e28d08f70910c22"
+      },
+      {
+        "id": "ohio-cue-7",
+        "exactText": "On August fifteenth, Ohio entered Grand Harbour.",
+        "recognized": " On August 15th, Ohio entered Grand Harbor.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " On August 15th, Ohio entered Grand Harbor."
+          }
+        ],
+        "sourceSha256": "5ebd6cda67585053b23148f0dc5523626024fe72583e7239458671b137937698"
+      },
+      {
+        "id": "ohio-cue-8",
+        "exactText": "Her fuel was unloaded, helping Malta’s aircraft keep fighting.",
+        "recognized": " Her fuel was unloaded, helping Malta's aircraft keep fighting.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4
+            ],
+            "text": " Her fuel was unloaded, helping Malta's aircraft keep fighting."
+          }
+        ],
+        "sourceSha256": "514fd28e23c500cb5f0138b5b1e9ea1c06de224a445e50e031e878c179f2de7a"
+      },
+      {
+        "id": "ohio-cue-9",
+        "exactText": "The precious part of this wreck was still inside her.",
+        "recognized": " The precious part of this wreck was still inside her.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " The precious part of this wreck was still inside her."
+          }
+        ],
+        "sourceSha256": "d86ac578d3c026f39e5d0d04661f75edabb0e22ae6b2994fb0e8589ebd2391f7"
+      }
+    ]
+  },
+  "pronunciationInputEvidence": "content-intelligence/cycles/cycle-17/production-v1/phoneme-audit.json",
+  "limitations": [
+    "No callable subjective audio listening or continuous video playback available.",
+    "Whisper recognition cannot certify pronunciation, stress, naturalness or purposeful sound.",
+    "Caption phrases within ASR sentence chunks are authored approximate timing."
+  ],
+  "subjectiveListening": "Required owner review of Ohio/Malta pronunciation, warship lashed, historical dates, natural phrasing and caption synchronization."
+}

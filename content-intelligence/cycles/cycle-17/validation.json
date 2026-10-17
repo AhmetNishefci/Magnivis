@@ -1,0 +1,155 @@
+{
+  "checkedAt": "2026-10-16T19:19:14.920860Z",
+  "node": "22.23.3",
+  "branch": "content/cycle-11-discovery",
+  "head": "11f99b4b3fe5e07418341c5b56ae9568e065a8df",
+  "commands": {
+    "pnpm check": {
+      "passed": true,
+      "testFiles": 55,
+      "tests": 514,
+      "logSha256": "1368fc1e814f3b11df9e41a274ac62bc0be03387abac24adcb92c32b6761689c",
+      "earlierAttempt": "Existing historical-media test timed out at5s during renders; normal complete rerun passed unchanged."
+    },
+    "pnpm qa ohio": {
+      "passed": true,
+      "report": "content-intelligence/cycles/cycle-17/production-v1/qa/report.json"
+    },
+    "pnpm artifacts:durable": {
+      "passed": true,
+      "canonicalMedia": {
+        "passed": true,
+        "canonicalPayloads": 1308,
+        "historicalRetentions": 1,
+        "archivalParts": 2,
+        "explicitExceptions": 0,
+        "frozenLegacyBinaryPaths": 442
+      },
+      "scope": "Git-index/worktree validation. Staged, uncommitted; no remote durability claimed."
+    },
+    "controllerReplay": {
+      "passed": true,
+      "stage": "master-review",
+      "revision": 7
+    }
+  },
+  "mediaHash": "8f9bbae1546c829d91eae109717d4e759fb7169bc732bdd13662363d448308fd",
+  "pictureFrames": 1322,
+  "durationSeconds": 44.06666666666667,
+  "containerSeconds": 44.118,
+  "captionMidpoints": 22,
+  "browserCheckpoints": 78,
+  "platformPreflight": [
+    {
+      "platform": "youtube",
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    },
+    {
+      "platform": "tiktok",
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    },
+    {
+      "platform": "instagram",
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    },
+    {
+      "platform": "facebook",
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    }
+  ],
+  "historicalPreservation": {
+    "allPriorCatalogEntriesUnchanged": true,
+    "newCatalogEntries": 25,
+    "boundedApprovedMasters": [
+      {
+        "path": "artifacts/masters/voyager-cycle16-candidate-v2.mp4",
+        "sha256": "74c237b32f35654949075ad4fa73c366d8b0dbf60b84303dbcc59eabc5788607",
+        "unchanged": true
+      },
+      {
+        "path": "artifacts/masters/flytrap-cycle15-candidate-v2.mp4",
+        "sha256": "cfd1b744e79631e940b3b009737be6addc96659501d520d7bfab61a9a7589582",
+        "unchanged": true
+      },
+      {
+        "path": "artifacts/masters/dice-cycle14-candidate-v4.mp4",
+        "sha256": "2ee261eb4b7b51b0c3925d93051218ec5c8ffbe36953a45ccc78f987972527f2",
+        "unchanged": true
+      },
+      {
+        "path": "artifacts/masters/devils-hole-cycle13-candidate-v2.mp4",
+        "sha256": "03a008634795659bd0ed51cf61d16381e7e24c3050184cbb375477cf963feb92",
+        "unchanged": true
+      }
+    ],
+    "existingModifiedFiles": [
+      "artifacts/media-catalog.json",
+      "docs/ASSET-LICENSES.md",
+      "docs/PROJECT-STATE.md",
+      "scripts/resolve-qa-video-target.ts",
+      "workflow/project-state.json"
+    ],
+    "earlierCyclesJournalsAndApprovalsUnchanged": true,
+    "frozenHistoricalChecks": "948 frozen historical files,442 legacy binary paths checked in repository tests."
+  },
+  "gitPolicy": {
+    "stagedForRequiredDurability": true,
+    "commitCreated": false,
+    "pushPerformed": false,
+    "branchChanged": false
+  },
+  "externalActions": [],
+  "deliveriesGenerated": false,
+  "ownerMasterApprovalGranted": false,
+  "limitations": [
+    "No subjective continuous playback/listening or native-device evidence.",
+    "Provisional geometry and unmeasured native controls/crops.",
+    "Hosted participant-report transcriptions; source identity/quantity discrepancies excluded.",
+    "Low-resolution archives and explicitly qualitative model.",
+    "Opening ASR warship/worship ambiguity needs owner listening."
+  ]
+}

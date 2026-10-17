@@ -1,0 +1,349 @@
+{
+  "id": "ohio-pedestal",
+  "revision": 1,
+  "topic": "SS Ohio: the tanker brought into Malta between warships",
+  "centralQuestion": "How did a disabled tanker reach Malta, and why did its cargo matter?",
+  "taxonomy": {
+    "pillar": "history-stories",
+    "domains": [
+      "naval-history",
+      "logistics"
+    ],
+    "topics": [
+      "operation-pedestal",
+      "malta",
+      "ss-ohio"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "A changing team of escorts and local vessels brought a badly damaged tanker to Malta so its fuel could be delivered.",
+  "viewerPayoff": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+  "sources": [
+    {
+      "id": "source.ohio.hill",
+      "organization": "Royal Navy participant report (hosted transcription)",
+      "title": "HMS Ledbury letter of proceedings — Roger Hill",
+      "sourceType": "government",
+      "url": "https://www.bosburyhistoryresource.org.uk/HMSLedbury/HMSLedbury-letter-of-proceedings.pdf",
+      "retrieved": "2026-10-16",
+      "notes": "Actual source body inspected; saved web extraction. Hosted modern transcription, not examination of original signed document."
+    },
+    {
+      "id": "source.ohio.nhb",
+      "organization": "Royal Navy Naval Historical Branch",
+      "title": "Operation Pedestal — Naval Historical Branch information brief, Malcolm Llewellyn-Jones",
+      "sourceType": "government",
+      "url": "https://www.um.edu.mt/library/oar/bitstream/123456789/23022/1/20120801%20%20Operation%20Pedestal%20Aug%2042.pdf",
+      "retrieved": "2026-10-16",
+      "notes": "Actual source body inspected; saved web extraction. "
+    },
+    {
+      "id": "source.ohio.unloading",
+      "organization": "Imperial War Museums",
+      "title": "IWM A11498: Ohio unloading fuel — catalog reproduced on Commons",
+      "sourceType": "museum",
+      "url": "https://commons.wikimedia.org/wiki/File:Operation_Pedestal,_August_1942_A11498.jpg",
+      "retrieved": "2026-10-16",
+      "notes": "Actual source body inspected; saved web extraction. "
+    },
+    {
+      "id": "source.ohio.gazette",
+      "organization": "Admiralty / London Gazette",
+      "title": "Operation Pedestal dispatch, London Gazette supplement 38377",
+      "sourceType": "government",
+      "url": "https://www.ibiblio.org/hyperwar/UN/UK/LondonGazette/38377.pdf",
+      "retrieved": "2026-10-16",
+      "notes": "Actual source body inspected; saved web extraction. "
+    },
+    {
+      "id": "source.ohio.liaison",
+      "organization": "Royal Navy participant report (hosted transcription)",
+      "title": "Report from naval liaison officer aboard Ohio",
+      "sourceType": "government",
+      "url": "https://www.bosburyhistoryresource.org.uk/HMSLedbury/SSOhio-personal-accounts.pdf",
+      "retrieved": "2026-10-16",
+      "notes": "Actual source body inspected; saved web extraction. Hosted modern transcription, not examination of original signed document."
+    }
+  ],
+  "claims": [
+    {
+      "id": "ohio-pedestal.claim.alongside",
+      "statement": "Two destroyers were secured either side of Ohio during the successful assisted passage into Malta.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.hill",
+          "locator": "p7, after final air attack: Penn and Bramham secured either side; 15 August entry.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/hill.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Identities in some IWM captions differ; generic destroyers in narration/diagram, full discrepancy retained."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "ohio-pedestal.claim.stakes",
+      "statement": "Malta was under siege in August 1942 and urgently needed fuel to sustain its aircraft.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.nhb",
+          "locator": "pp4–5 fuel shortage; pp12–13 Ohio role.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Fuel was one part of a wider resupply effort; no sole saviour or precise surrender deadline."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "ohio-pedestal.claim.cargo",
+      "statement": "Ohio carried thousands of tons of fuel for Malta.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.unloading",
+          "locator": "IWM A11498 catalog description of cargo and unloading.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/unloading.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Totals and cargo descriptions vary among catalogs: 10000/11000 and elsewhere 11500; retain only broad thousands of tons. No claim it was all aviation gasoline."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "ohio-pedestal.claim.attacks",
+      "statement": "Ohio was torpedoed on 12 August 1942 and further damaged in air attacks on 13 August.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.gazette",
+          "locator": "Syfret dispatch para26; diary13August paras24–26; corroborating A11498 caption.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/gazette.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Early observer uncertainty about mines is preserved; later official dispatch identifies torpedo. No invented impact count."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "ohio-pedestal.claim.disabled",
+      "statement": "Ohio lost propulsion, suffered flooding and had serious structural damage.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.liaison",
+          "locator": "Naval liaison report paras12–19: stopped engines, flooded engine room, buckled deck and alongside tow.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/liaison.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Transcription, not original manuscript. Broken-back language means structural damage, not literal severance."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "ohio-pedestal.claim.tow",
+      "statement": "Early towing attempts struggled to keep Ohio straight; alongside assistance and other towing vessels helped bring her in.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.hill",
+          "locator": "pp7–8: Rye/ Ledbury towing, Penn acting as drag; final Penn/Bramham either side; channel alignment.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/hill.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Liaison paras13–19 independently describe circling and steering difficulty. No exact load paths, rope plan, quantified buoyancy or constant arrangement."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "ohio-pedestal.claim.arrival",
+      "statement": "Ohio entered Grand Harbour at Malta on the morning of 15 August 1942.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.nhb",
+          "locator": "p11 arrival; corroborated official dispatch para39 and RN war diary.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "RMG painting title says14August; painting title is not event chronology. Exact hour omitted."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "ohio-pedestal.claim.delivery",
+      "statement": "Ohio unloaded fuel at Malta; the delivery helped sustain aircraft operations from the island.",
+      "evidence": [
+        {
+          "sourceId": "source.ohio.nhb",
+          "locator": "pp12–13 fuel/air operations; IWM A11498 depicts unloading into Boxall and Plumleaf.",
+          "notes": "Exact inspected body in content-intelligence/cycles/cycle-17/research/nhb.json; source conflicts reconciled in research/reconciliation.md."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Do not attribute all Malta survival or North Africa victory to this one ship."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual or master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.17",
+          "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+        },
+        "reviewedAt": "2026-10-16"
+      },
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "ohio-pedestal.caveat.scope",
+      "statement": "No literal cut-in-half hull, unquantified lifting mechanics, exact tonnage, invented battle incident or sole-saviour conclusion. Reconstruction is qualitative and compressed.",
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.stakes",
+        "ohio-pedestal.claim.cargo",
+        "ohio-pedestal.claim.attacks",
+        "ohio-pedestal.claim.disabled",
+        "ohio-pedestal.claim.tow",
+        "ohio-pedestal.claim.arrival",
+        "ohio-pedestal.claim.delivery"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "ohio-pedestal.hook.alongside",
+      "archetype": "extraordinary-physical-arrangement",
+      "text": "This tanker reached Malta with a warship lashed to each side.",
+      "viewerPromise": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.arrival"
+      ]
+    },
+    {
+      "id": "ohio-pedestal.hook.cargo",
+      "archetype": "surviving-value",
+      "text": "A disabled ship could still deliver its most valuable part: the fuel inside.",
+      "viewerPromise": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+      "claimIds": [
+        "ohio-pedestal.claim.disabled",
+        "ohio-pedestal.claim.delivery"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "ohio-pedestal.story.delivery",
+      "title": "A tanker becomes a shared rescue",
+      "description": "Understand the side-by-side assistance and why delivering the surviving fuel mattered more than recovering a working ship.",
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.stakes",
+        "ohio-pedestal.claim.cargo",
+        "ohio-pedestal.claim.attacks",
+        "ohio-pedestal.claim.disabled",
+        "ohio-pedestal.claim.tow",
+        "ohio-pedestal.claim.arrival",
+        "ohio-pedestal.claim.delivery"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "ohio-pedestal.visual.arrangement",
+      "title": "See the flanking ships",
+      "description": "Authentic formation photo and clearly distinct overhead model make the relationship readable.",
+      "claimIds": [
+        "ohio-pedestal.claim.alongside",
+        "ohio-pedestal.claim.tow"
+      ]
+    }
+  ],
+  "relatedQuestions": [],
+  "followUpOpportunities": [],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review; not owner factual or master approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.17",
+      "reviewSha256": "a410a6d2ac2a0cd423a92cefe85fd1ca5f714c892610deacf71b02df055002c5"
+    },
+    "approvedAt": "2026-10-16",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

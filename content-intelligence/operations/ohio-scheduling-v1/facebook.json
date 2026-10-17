@@ -1,0 +1,79 @@
+{
+  "cycleId": "cycle.17",
+  "platform": "facebook",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledDate": "2026-10-17",
+  "scheduledLocalTime": "20:00:00",
+  "scheduledFor": "2026-10-17T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-17T18:00:00Z",
+  "schedulingTimeZone": {
+    "ownerLabel": "Kosovo local time (CEST, UTC+2)",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "ianaIdentifier": null,
+    "basis": "explicit-owner-message; supplied offset used for deterministic UTC conversion"
+  },
+  "publication": "unknown",
+  "evidenceBasis": "explicit-owner-message",
+  "recordedAt": "2026-10-17T14:24:57.306296Z",
+  "schedulingActionTime": null,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "ownerReport": {
+    "path": "content-intelligence/operations/ohio-scheduling-v1/owner-report.json",
+    "sha256": "cd58907925439502f7386fb282b631b5d0f38ea88e9d52b6ba6a551799c330d0"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/release-v2.json",
+    "sha256": "56964f511176daa667c73b9fa980c513a5403fa66037bd27dadf5bb146dee764"
+  },
+  "intendedVariant": {
+    "id": "ohio.variant.facebook.v2",
+    "revision": 1,
+    "media": {
+      "id": "media.e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+      "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/manifest-v2.json",
+    "sha256": "309a7a6bf4c026718bfb9ec8d7214aba8c058079051ef28f9d6671bbd84c5533"
+  },
+  "intendedArtifacts": [
+    {
+      "role": "video",
+      "media": {
+        "id": "media.e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+        "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+      }
+    },
+    {
+      "role": "cover",
+      "media": {
+        "id": "media.b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03",
+        "sha256": "b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/cover-evidence-v2.json",
+        "sha256": "ff55c5a5ba01abd627ad52ced5d42c5e9fd21eb5788ce09b1de277a4d2c8024d"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-17/delivery-v2/facebook/cover-profile-v2.json",
+        "sha256": "221f717818d73224299533b1a62e7c3950ee4723f20985964156bfe60b37a6bd"
+      }
+    }
+  ],
+  "identityBasis": "Owner-designated approved V2 and prepared packages as intended release; uploaded bytes not independently verified."
+}

@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-17T13:48:14.250027Z",
+  "runtime": "Node22.23.3 / pnpm10.17.1",
+  "pnpmCheck": {
+    "passed": true,
+    "exitCode": 0,
+    "testFiles": 55,
+    "testsPassed": 514,
+    "typecheck": "passed",
+    "lint": "passed",
+    "diffCheck": "passed",
+    "log": {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/repository-check.txt",
+      "sha256": "d923277061d8de7b812fefc420226a4733e31114f9d0c5499e91d947dc1df99a"
+    }
+  },
+  "artifactsDurable": {
+    "passed": true,
+    "exitCode": 0,
+    "report": {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/durability.json",
+      "sha256": "10e1c48974f5c40d44e30461f57647b84f9b017bf28bc8f90c93444eb8d3d664"
+    }
+  },
+  "mediaQa": {
+    "passed": true,
+    "report": {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/report.json",
+      "sha256": "13ea11b7612813cce931ef84b9389585cb6a56414bcb4aac449f5bdfa287adaf"
+    },
+    "fullDecode": "passed"
+  },
+  "preservation": {
+    "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/preservation-report.json",
+    "sha256": "085f3ed40e4ed4b03f71fbd9e92e574654d7930826fa08db5c126b8921dcff2f"
+  },
+  "browserGeometry": {
+    "checkpoints": 78,
+    "failures": 0
+  },
+  "captionCues": 22,
+  "workflow": {
+    "revision": 12,
+    "stage": "master-review",
+    "masterApproved": false,
+    "publicationAuthorized": false,
+    "status": {
+      "path": "content-intelligence/cycles/cycle-17/revision-v2/qa/cycle-status.json",
+      "sha256": "c8d5ea719e8e5a11da9acc654d76c777f25c5f06f66801dfbd7bb145e92b2363"
+    }
+  },
+  "git": {
+    "branch": "content/cycle-11-discovery",
+    "commitOrPushPerformed": false,
+    "stagedForLocalDurability": true,
+    "scope": "Preexisting V1 staged work preserved. Only V2, current catalog/state/status/source-resolver/license updates added. No branch switch or worktree."
+  },
+  "limitations": [
+    "No subjective audio listening/continuous playback or native-device preview.",
+    "Exact V1 AAC retained; warship lashed pronunciation unresolved.",
+    "Local index durability only; no remote synchronization authorized."
+  ]
+}

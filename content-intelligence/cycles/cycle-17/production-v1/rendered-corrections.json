@@ -1,0 +1,20 @@
+{
+  "enteredAt": "2026-10-16T19:11:12.618184+00:00",
+  "finding": "All original scene SVGs were behind the positioned Sea layer despite valid geometry. Actual sampled pixels exposed the failure; bounds/font checks alone missed it.",
+  "cause": "Weak implementation: unpositioned SVG content paints below positioned siblings. Existing rendered-review rule was necessary; not missing general policy.",
+  "correction": "Explicit absolute positioning for every scene SVG, preserving source claims and exact narration. Renew actual rendered and measured QA.",
+  "firstSource": {
+    "path": "content-intelligence/cycles/cycle-17/production-v1/authoring/OhioPedestal.first-render.tsx.txt",
+    "sha256": "e13329005f7c1200f6f265f2fb0dbf6e5748814976ddab3b5905e2f7eb3b2060"
+  },
+  "firstRender": "artifacts/qa-evidence/ohio-cycle17-authoring/first-render.mp4",
+  "otherCorrections": [
+    "Darken archive sky behind headings; fill photo width without a vertical edge.",
+    "Show12August torpedo separately from13August crash-damage photograph.",
+    "Measure critical labels, SVG objects, caption/visual separation and text pair intersections."
+  ],
+  "nonGeneralizations": [
+    "No change to historical videos, no requirement for a universal renderer.",
+    "Geometry cannot prove that pixels are visible or communicate meaning."
+  ]
+}

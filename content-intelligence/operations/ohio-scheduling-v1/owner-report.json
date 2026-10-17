@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.17",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledDate": "2026-10-17",
+  "scheduledLocalTime": "20:00:00",
+  "scheduledFor": "2026-10-17T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-17T18:00:00Z",
+  "schedulingTimeZone": {
+    "ownerLabel": "Kosovo local time (CEST, UTC+2)",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "ianaIdentifier": null,
+    "basis": "explicit-owner-message; supplied offset used for deterministic UTC conversion"
+  },
+  "publication": "unknown",
+  "evidenceBasis": "explicit-owner-message",
+  "recordedAt": "2026-10-17T14:24:57.306296Z",
+  "schedulingActionTime": null,
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "processingResults": null,
+  "actualSettings": null,
+  "comments": null,
+  "presentationObservations": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "recordedAtBasis": "Record-entry time only; scheduled date/time/offset supplied by owner; actual scheduling-action and publication time unknown.",
+  "instruction": "MAGNIVIS — GIT AUDIT, COMMIT & PUSH\n\nCycle #17 (SS Ohio V2) has received final owner approval and has been scheduled manually on YouTube Shorts, TikTok, Instagram Reels, and Facebook Reels for October 17, 2026, at 20:00 Kosovo local time (CEST, UTC+2).\n\nBefore starting Cycle #18, I want to safely commit and push the completed repository work.\n\n## Instructions\n\n1. Read `AGENTS.md` and relevant canonical repository documentation.\n2. Verify the current repository path, branch, HEAD, working tree, and remote tracking state.\n3. Inspect all staged changes and identify which cycles, approvals, artifacts, delivery packages, and other work they contain.\n4. Check for incomplete, unrelated, generated temporary, sensitive, or inappropriate files.\n5. Confirm that no earlier approved masters or historical evidence have been accidentally modified.\n6. Verify that Cycle #17 final approval and delivery packages are included.\n7. Record the owner-reported scheduling status for Cycle #17 using existing repository conventions, if supported. The four platforms are scheduled for October 17, 2026, at 20:00 CEST. Do not mark them as published, invent URLs, or assume successful publication.\n8. Run the appropriate repository validation checks.\n\n## Git authorization\n\nYou are explicitly authorized to commit and push completed, validated Magnivis repository work to the existing branch.\n\nDo not create or switch branches, rebase, reset, force-push, or perform destructive Git operations.\n\nIf the staged changes contain unrelated or incomplete work that cannot safely be included, stop and report the issue before committing.\n\nIf the audit passes:\n\n- Create a descriptive commit, or a small number of logically separated commits if appropriate.\n- Push normally to the existing tracked remote branch.\n- Verify the remote HEAD matches the local HEAD.\n- Verify the final working tree is clean.\n\n## Final report\n\nReturn:\n- Branch and remote.\n- Summary of committed changes.\n- Commit SHA(s) and messages.\n- Test and validation results.\n- Push confirmation.\n- Final working-tree status.\n- Any remaining issues.\n\nDo not upload, schedule, publish, or modify posts on any social platform.\n\nDo not start Cycle #18 yet.\n",
+  "instructionRecord": {
+    "path": "content-intelligence/operations/ohio-scheduling-v1/owner-instruction.md",
+    "sha256": "6c3e12f4fcdc0aeb0a7f27b835a624bf14a2477ab2d1a2d85c96f5c3acd1546b"
+  },
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "intendedMaster": {
+    "path": "artifacts/masters/ohio-cycle17-candidate-v2.mp4",
+    "media": {
+      "id": "media.e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091",
+      "sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+    }
+  },
+  "existingPreparedRelease": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/release-v2.json",
+    "sha256": "56964f511176daa667c73b9fa980c513a5403fa66037bd27dadf5bb146dee764"
+  },
+  "existingPublicationDecision": null,
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-17/delivery-v2/master-approval-v2.json",
+    "sha256": "8ae50012ef38f27af9bb0d2c5f342eed1332e9423afc39e93448da64821a6f4d"
+  },
+  "nativeWorkflow": {
+    "stage": "publication-review",
+    "revision": 15,
+    "unchanged": true,
+    "journalState": {
+      "path": "workflow/cycles/cycle.17/state.json",
+      "sha256": "54e2f3995c96165abf147bb6b79d39a1e51cdb52029641b73268d16b36076af7"
+    }
+  },
+  "limitations": [
+    "Owner-reported scheduling only, not independently verified publication.",
+    "Prepared release and approved master are intended identities; actual uploaded bytes, cover selection and live settings are unknown.",
+    "No exact-release publication authorization, presentation-risk acceptance or platform-native QA inferred. Existing exact-master owner phone QA passes remain valid separately."
+  ],
+  "nativeRecordReconciliation": "Follow existing Cycle14 operations convention: strict journal operational observations require an authorized release and exact publication decision, which are absent. Persist owner report and four per-platform records separately; preserve native revision15/publication-review. No completed PublicationRecord or retrospective authorization fabricated.",
+  "assistantPlatformActions": [],
+  "cycle18Started": false,
+  "gitAuthority": "Explicit owner permits validated commit and normal push on existing tracked branch only."
+}

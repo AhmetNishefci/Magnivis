@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/ohio-v2.json';
+import asset from '../../../content-intelligence/cycles/cycle-17/content-asset.ready.json';
+import narration from '../../production/narration/ohio.json';
+export const ohioV2=videoSpecSchema.parse({id:'ohio-v2',compositionId:'Magnivis-Ohio-Pedestal-V2',workingTitle:'The tanker brought into Malta between warships',titleCandidates:['The tanker brought into Malta between warships'],descriptionCandidates:['SS Ohio reached Malta in August1942 with extensive assistance, delivering urgently needed fuel.'],hook:asset.script.segments[0]!.text,pillar:'history',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration'],narration:true,narrationCues:narration.cues}});

@@ -1,0 +1,81 @@
+{
+  "enteredAt": "2026-10-17T13:45:40.999Z",
+  "sourceBaseCommit": "11f99b4b3fe5e07418341c5b56ae9568e065a8df",
+  "files": [
+    {
+      "path": "src/ohio-v2-index.tsx",
+      "sha256": "83628789cf50192205cf90319c73c3d934a51df029b4686e5d6d1490d93409cf"
+    },
+    {
+      "path": "src/compositions/OhioPedestalV2.tsx",
+      "sha256": "b8e3742910f368c42a97f71748d759a3404b02c875e7f05062aa69d66d572f89"
+    },
+    {
+      "path": "src/compositions/ohio/RescueSequence.tsx",
+      "sha256": "d261ca1d3096540e317999faf90e289613acafb880c7cb5a9795f9c7bc3ab3db"
+    },
+    {
+      "path": "src/content/videos/ohio-v2.ts",
+      "sha256": "00ac0aac6cbcf3b1ec42dcb1f894e10329c2f7a4ce9c7ef5b41f4b7ecfcfc29a"
+    },
+    {
+      "path": "src/production/plans/ohio-v2.json",
+      "sha256": "6a1be2963ca10ebfe97ef693465646a5e1617d909bbe9181e2d7c04a45ad502e"
+    },
+    {
+      "path": "src/captions/plans/ohio-v2.json",
+      "sha256": "fcbdc1e7c870ad36b015522bdae0be9a16c740277232db960b07bca4db8435c6"
+    },
+    {
+      "path": "src/production/narration/ohio.json",
+      "sha256": "f3433979543ab25bfa825139285093616090ce859ccd64ec8a2b78e99941bd33"
+    },
+    {
+      "path": "scripts/ohio-v2-video-target.ts",
+      "sha256": "e42b61d539d80527eaee53167f1a85ab4f638ec3ccc97e284840a3c0075e5faa"
+    },
+    {
+      "path": "scripts/render-ohio-v2.ts",
+      "sha256": "a4dd1b3cd2998503296a1f268b2ab9d0bdac049055edad203c3f48e5c451c239"
+    },
+    {
+      "path": "scripts/qa-ohio-v2-layout.ts",
+      "sha256": "370386ddb15698b2b16bbc35f925638113c27c8be59ce4c237e6d769fcad2607"
+    },
+    {
+      "path": "scripts/prepare-ohio-v2-qa-sheets.ts",
+      "sha256": "48b9f2927a957668c871f8b9adfe3a5e002ee0429e0987966c818b8fe5cb0309"
+    },
+    {
+      "path": "scripts/generate-ohio-narration.mjs",
+      "sha256": "8cda0ce3abfe997f86a82ffe095286542a84dcf31b4d43a8cdfbeba0735f2409"
+    },
+    {
+      "path": "scripts/generate-ohio-soundscape.mjs",
+      "sha256": "9463773f662111e21a582e7e004c857bc9afc1e954bf1993865fc23641c139a9"
+    },
+    {
+      "path": "scripts/inspect-ohio-v2-audio.mjs",
+      "sha256": "0f09ad1b3b49e6a06db94906240040c14461d3f9a518fc5deee96283977903aa"
+    },
+    {
+      "path": "scripts/finalize-ohio-v2.ts",
+      "sha256": "65c7c96c7639ac92396b825d95269395e86e4b8c4aa60e63f59d75ecf262df05"
+    }
+  ],
+  "scriptSha256": "6a3b2bc39f9ad31b72b761a48ae3a6ee2c3611a1f97cc3615f7604abf0df1a06",
+  "authority": {
+    "path": "content-intelligence/cycles/cycle-17/owner-selection.json",
+    "sha256": "d121b346316e795426ddbbf4923e37148b67f6867eb75bf324cca871faf818a6"
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-17/revision-v2/direction-v2.json",
+    "sha256": "68686f02d37a3ea0a7a3d78988f78f5a48ef948410a8c776cc3a7ad5c8ad7222"
+  },
+  "corrections": {
+    "path": "content-intelligence/cycles/cycle-17/revision-v2/rendered-corrections.json",
+    "sha256": "935409aca39c5f5ac2196b46d65ec95432cf269664df929bd4a1e3e928aac007"
+  },
+  "videoPacketSha256": "SHA256=31bfaba8b45ccc2aa7ad606f0d37f87282aeeeeb8358c27bb686b129f7aee65d",
+  "note": "Separate V2 source and final master. V1 files frozen; caption cues, visual treatment and timings identical with renewed direction bindings. Full V1 AAC stream copied."
+}
