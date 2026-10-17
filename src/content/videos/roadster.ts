@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/roadster.json';
+import asset from '../../../content-intelligence/cycles/cycle-18/content-asset.ready.json';
+import narration from '../../production/narration/roadster.json';
+export const roadster=videoSpecSchema.parse({id:'roadster',compositionId:'Magnivis-Roadster',workingTitle:'How a car can stay inverted and move through air',titleCandidates:['How a car can stay inverted and move through air'],descriptionCandidates:['Pressure contact and compressed-gas reaction are distinct mechanisms; original qualitative reconstruction.'],hook:asset.script.segments[0]!.text,pillar:'engineering',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration'],narration:true,narrationCues:narration.cues}});

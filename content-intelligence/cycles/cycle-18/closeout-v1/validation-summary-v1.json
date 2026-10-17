@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-17T19:26:37.543508+00:00",
+  "typecheck": {
+    "passed": true,
+    "command": "pnpm check (typecheck phase)"
+  },
+  "lint": {
+    "passed": true,
+    "command": "pnpm check (lint phase)"
+  },
+  "defaultCheck": {
+    "passed": false,
+    "command": "pnpm check",
+    "testFilesPassed": 54,
+    "testsPassed": 513,
+    "testsFailed": 1,
+    "failure": "Existing media-artifacts.test.ts scoped historical preservation/canonical durability test exceeded unchanged 5000ms timeout (5243ms); no assertion mismatch reported.",
+    "evidence": "repository-check-default-v1.txt"
+  },
+  "fullSuiteSingleWorker": {
+    "passed": true,
+    "command": "pnpm exec vitest run --maxWorkers 1",
+    "testFiles": 55,
+    "tests": 514,
+    "durationSeconds": 97.98,
+    "testCodeOrConfigurationChanged": false,
+    "evidence": "tests-single-worker-v1.txt"
+  },
+  "fullMediaDecode": {
+    "passed": true,
+    "videoAndAudio": true
+  },
+  "approvedMasterSha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+  "cycle18JournalReplay": {
+    "passed": true,
+    "stage": "publication-review",
+    "revision": 12
+  },
+  "releaseCaptionsAndPackageValidation": {
+    "passed": true,
+    "designedCaptionMidpoints": 24,
+    "platformPackages": 4,
+    "geometryCheckpoints": 85,
+    "presentationUnknownsRetained": 48
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 1344,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "whitespace": {
+    "workingDiffPassed": true,
+    "stagedDiffPassed": true
+  },
+  "projectWideReplay": {
+    "passed": false,
+    "failure": "Known historical Cycle10 evidence digest mismatch; unchanged and separately detailed in preservation-and-scheduling-validation-v1.json"
+  },
+  "platformActions": []
+}

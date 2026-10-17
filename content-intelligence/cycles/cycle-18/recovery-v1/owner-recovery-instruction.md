@@ -1,0 +1,9 @@
+# Cycle #18 — owner research recovery authority
+
+Faithful scope transcription, entered 2026-10-17. Exact owner message remains in the session.
+
+Keep the selected Tesla Roadster topic and preserve existing Cycle18 research and journal. Reassess the factual production gate using the supplied Reuters, Car and Driver reveal and technical explanation, Electrek technical analysis and original Tesla replay, plus accessible authoritative evidence. Inspect content and corroborate material claims; links are not verification. Separate credible witness reports, Tesla claims, established physics and unverified specifications/performance.
+
+Direct replay inspection is desirable but not an absolute requirement when independent reporting adequately supports a carefully bounded explanation. Prioritize original Magnivis animation/reconstruction. No proprietary footage, copied protected frames, fake demonstration footage, exact invented thruster positions, pressures, plumbing, force magnitudes or system architecture. Explain suction against an inverted surface and compressed-gas thrust for short maneuvers; distinguish brief motion from sustained flight. If research passes, continue existing workflow to V1 owner master review; otherwise report exact unresolved claims and minimum evidence. Preserve all earlier cycles; no deliveries or social actions. Run relevant tests/media QA.
+
+This changes the previous inspection requirement; it does not waive factual verification or approve a master. Original labeled reconstruction is explicitly authorized.

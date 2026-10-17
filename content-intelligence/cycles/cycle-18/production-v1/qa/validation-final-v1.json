@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-10-17T15:13:42.904397+00:00",
+  "master": {
+    "path": "artifacts/masters/roadster-cycle18-candidate-v1.mp4",
+    "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+    "bytes": 15921324,
+    "videoSeconds": 44.46666666666667,
+    "containerSeconds": 44.523
+  },
+  "pnpmCheck": {
+    "passed": true,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 55,
+    "tests": 514,
+    "diffCheck": "passed",
+    "initialAttempt": "One media durability test timed out at5s while render/ASR/layout jobs were active; no assertion failure. Serial final run passed all514 in60.16s."
+  },
+  "durability": {
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 1343,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ]
+  },
+  "mediaQA": {
+    "passed": true,
+    "fullDecode": "passed",
+    "browserCheckpoints": 85,
+    "captionMidpointsInspected": 24,
+    "phoneSimulationPixelsWide": 360,
+    "pixelDimensions": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "videoFrames": 1334,
+    "audio": "AAC48kHz stereo; sourceKokoro af_heart",
+    "subjectiveAudio": "not-certified; owner review required"
+  },
+  "cycle18Replay": {
+    "passed": true,
+    "stage": "master-review",
+    "revision": 9,
+    "masterApproved": false
+  },
+  "projectWideStatus": {
+    "passed": false,
+    "preExisting": true,
+    "affectedCycle": "cycle.10",
+    "error": "Evidence file digest mismatch in historical TopicSelection historyReviewed docs/PROJECT-STATE.md",
+    "expectedSha256": "2bfdec20f86254916c741efacabfa22f61ccbe705d287cfdd84e832e20f2e5fe",
+    "actualAndHeadSha256": "b9a7f9f92f8f150572f859c4bf819b35bc2587f763d923a319dbdbc92d2b1780",
+    "resolution": "Previously documented in preserved initial Cycle18 validation.json; no unrelated historical repair."
+  },
+  "presentationPreflight": {
+    "youtube": {
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    },
+    "tiktok": {
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    },
+    "instagram": {
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    },
+    "facebook": {
+      "collisions": [],
+      "unknowns": [
+        "Profile is superseded or due for renewed inspection",
+        "composition: provisional",
+        "nativeUI: unknown",
+        "captions: unknown",
+        "crop: unknown",
+        "Unsampled timeline motion not proven",
+        "No exact-media real-device evidence"
+      ],
+      "disposition": "owner-risk-review",
+      "scope": "Candidate master only; provisional geometry/device uncertainties retained. No platform variant or delivery."
+    }
+  },
+  "preservationCheck": {
+    "path": "content-intelligence/cycles/cycle-18/production-v1/qa/preservation-check.json",
+    "sha256": "551c8ba21fbd3e6c4e472ac9d9c1e4b2ed4da6dc9984d7af64614bcd07bd173f"
+  },
+  "git": {
+    "branch": "content/cycle-11-discovery",
+    "head": "6699154735cdae39be004949f8ddbf08b22d31bf",
+    "state": "Task files staged for required durability checks; uncommitted. No commit/push authorization for Cycle18.",
+    "commitPushPerformed": false
+  },
+  "limits": [
+    "No original Tesla replay playback; credible source bodies inspected under explicit recovery authority.",
+    "No continuous audiovisual playback or subjective listening.",
+    "No real-phone, native app or platform safety pass.",
+    "No delivery packages, uploads, scheduling or publication."
+  ]
+}

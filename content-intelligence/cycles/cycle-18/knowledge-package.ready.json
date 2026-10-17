@@ -1,0 +1,398 @@
+{
+  "id": "roadster",
+  "revision": 1,
+  "topic": "Tesla Roadster: inverted surface grip and brief compressed-gas thrust",
+  "centralQuestion": "How can surface suction and compressed-gas thrust produce two different surprising car maneuvers?",
+  "taxonomy": {
+    "pillar": "technology-built-world",
+    "domains": [
+      "vehicle-engineering",
+      "physics"
+    ],
+    "topics": [
+      "fan-downforce",
+      "reaction-thrust"
+    ]
+  },
+  "timeliness": "timely",
+  "thesis": "Understand pressure-difference surface grip versus gas-reaction thrust, and why brief airborne motion does not establish sustained practical flight.",
+  "viewerPayoff": "Understand pressure-difference surface grip versus gas-reaction thrust, and why brief airborne motion does not establish sustained practical flight.",
+  "sources": [
+    {
+      "id": "source.roadster.reveal",
+      "organization": "Car and Driver",
+      "title": "Eric Stafford; updated October16; update notice October15 9:30pm ET",
+      "sourceType": "reference",
+      "url": "https://www.caranddriver.com/news/a74145531/tesla-roadster-revealed/",
+      "retrieved": "2026-10-17",
+      "notes": "body inspected; lines55–62: McGregor reveal; inverted ramp and airborne roll. Lines103–105 distinguish stunt/show prototypes and attribute configuration claims. Witness reporting supports events, not independently measured performance. Exclude all numerical specs."
+    },
+    {
+      "id": "source.roadster.technical",
+      "organization": "Car and Driver",
+      "title": "Sebastian Blanco; October17",
+      "sourceType": "reference",
+      "url": "https://www.caranddriver.com/news/a74165059/tesla-roadster-thrusters-fan-system-explained/",
+      "retrieved": "2026-10-17",
+      "notes": "body inspected via reveal article link26; lines77–90 attribute compressed-air thrusters and fan modes to Tesla/Moravy. Hardware quantities/performance remain manufacturer claims and are excluded. Reported mechanics are not independent tests."
+    },
+    {
+      "id": "source.roadster.electrek",
+      "organization": "Electrek",
+      "title": "Jameson Dow; October15 8:36pm PT; updated body",
+      "sourceType": "reference",
+      "url": "https://electrek.co/2026/10/15/an-updated-technical-look-at-teslas-kick-flipping-0-60-in-1s-next-gen-roadster/",
+      "retrieved": "2026-10-17",
+      "notes": "body inspected; Driving upside-down and jumping sections corroborate sequence; opening explicitly assumes authenticity for discussion. Speculative quantities and energy sufficiency do not verify flight. Used for corroboration/qualification, not sole engineering authority."
+    },
+    {
+      "id": "source.roadster.pressure",
+      "organization": "McMurtry Automotive",
+      "title": "McMurtry Automotive; April11 2025",
+      "sourceType": "primary-source",
+      "url": "https://mcmurtry.com/upside-down-driving/",
+      "retrieved": "2026-10-17",
+      "notes": "body inspected; How is it possible? describes fan-created underfloor vacuum holding a different vehicle inverted even stationary. General physical precedent only; no transfer of McMurtry hardware/performance to Tesla."
+    },
+    {
+      "id": "source.roadster.reaction",
+      "organization": "NASA",
+      "title": "NASA Glenn; Thrust",
+      "sourceType": "government",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/thrust/",
+      "retrieved": "2026-10-17",
+      "notes": "body inspected; Thrust definition: accelerating gas one way produces reaction in the opposite direction; actual acceleration depends on force balance. No Tesla measurements."
+    },
+    {
+      "id": "source.roadster.coldgas",
+      "organization": "NASA",
+      "title": "NASA Small Spacecraft Virtual Institute; May7 2026",
+      "sourceType": "government",
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/",
+      "retrieved": "2026-10-17",
+      "notes": "body inspected; Cold Gas section lines631–642: no combustion, expulsion of gaseous propellant, compressed-gas storage, finite total impulse and attitude-control use. Spacecraft context supports mechanism only, not Roadster capability."
+    },
+    {
+      "id": "source.roadster.rotation",
+      "organization": "OpenStax / Rice University",
+      "title": "OpenStax Physics section6.3",
+      "sourceType": "university",
+      "url": "https://openstax.org/books/physics/pages/6-3-rotational-motion",
+      "retrieved": "2026-10-17",
+      "notes": "body inspected; Torque section: forces acting with lever arms change rotation; opposed torques can balance. General physical principle; exact Roadster nozzle arrangement/control law unknown."
+    }
+  ],
+  "claims": [
+    {
+      "id": "roadster.claim.event",
+      "statement": "Tesla demonstrated a Roadster prototype driving inverted and briefly airborne at its October15,2026 Texas reveal.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.reveal",
+          "locator": "Event update and ramp/roll reporting, lines55–62.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/reveal-body.json. Reported observation; no direct replay viewing, exact trajectory or independent performance verification."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Reported observation; no direct replay viewing, exact trajectory or independent performance verification."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.fans",
+      "statement": "Tesla attributes inverted surface grip to a fan suction system.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.technical",
+          "locator": "Sucks to Stick, lines85–90, attributed Moravy statements.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/technical-body.json. Attributed manufacturer mechanism, no exact architecture, fan count, position, pressure, power or measured force."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Attributed manufacturer mechanism, no exact architecture, fan count, position, pressure, power or measured force."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.pressure",
+      "statement": "Removing underfloor air lowers pressure; surrounding air can press a vehicle against its contacting surface, including inverted when sufficient.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.pressure",
+          "locator": "How is it possible?, fan vacuum hold against gravity.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/pressure-body.json. Established pressure principle; McMurtry is separate corroborating precedent, not Tesla hardware evidence."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Established pressure principle; McMurtry is separate corroborating precedent, not Tesla hardware evidence."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.gravity",
+      "statement": "At an inverted stationary hold the force pressing the car toward the surface must exceed its weight for positive tire contact load.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.pressure",
+          "locator": "Inverted hold described as exceeding gravity.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/pressure-body.json. Qualitative stationary condition, not quantified dynamics or all forces on a moving ramp."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Qualitative stationary condition, not quantified dynamics or all forces on a moving ramp."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.attribution",
+      "statement": "Tesla attributes airborne motion to cold-gas thrusters using compressed air.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.technical",
+          "locator": "Thrust from SpaceX, lines77–78.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/technical-body.json. Manufacturer attribution reported by journalists, not our causal measurement or certification."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Manufacturer attribution reported by journalists, not our causal measurement or certification."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.gas",
+      "statement": "Cold-gas thrust expels stored gas without combustion; its available impulse is finite.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.coldgas",
+          "locator": "Cold Gas technology description and Small Total Impulse considerations.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/coldgas-body.json. General primary engineering principle; no measured Roadster gas mass, pressure, endurance or recharge time."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "General primary engineering principle; no measured Roadster gas mass, pressure, endurance or recharge time."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.reaction",
+      "statement": "Gas accelerated in one direction creates a reaction force on the vehicle in the opposite direction.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.reaction",
+          "locator": "Thrust definition and force balance paragraphs.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/reaction-body.json. General physics; arrows qualitative and not independent measured forces."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "General physics; arrows qualitative and not independent measured forces."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.rotation",
+      "statement": "Different force directions affect translation; off-center force can produce torque and change rotation.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.rotation",
+          "locator": "Torque and opposed torques subsections.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/rotation-body.json. Generic control illustration only; no exact thruster placement, firing sequence or control algorithm."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Generic control illustration only; no exact thruster placement, firing sequence or control algorithm."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "roadster.claim.limit",
+      "statement": "Brief airborne motion is not evidence of sustained practical flight.",
+      "evidence": [
+        {
+          "sourceId": "source.roadster.coldgas",
+          "locator": "Finite total impulse; editorial distinction scoped to reported short maneuvers.",
+          "notes": "Actual body inspected; original summary: content-intelligence/cycles/cycle-18/recovery-v1/research/coldgas-body.json. No claim all gas vehicles cannot sustain flight; no exact Roadster endurance, certification or production capability asserted."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No claim all gas vehicles cannot sustain flight; no exact Roadster endurance, certification or production capability asserted."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review; not owner factual/master approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.18",
+          "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "roadster.caveat.scope",
+      "statement": "Reported prototype event, attributed Tesla mechanisms, independently supported general physics. No original footage, exact hardware, measurements or sustained practical flight verified.",
+      "claimIds": [
+        "roadster.claim.event",
+        "roadster.claim.fans",
+        "roadster.claim.pressure",
+        "roadster.claim.gravity",
+        "roadster.claim.attribution",
+        "roadster.claim.gas",
+        "roadster.claim.reaction",
+        "roadster.claim.rotation",
+        "roadster.claim.limit"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "roadster.hook.two-tricks",
+      "archetype": "physical-contradiction",
+      "text": "Tesla showed a Roadster driving upside down, then briefly airborne.",
+      "viewerPromise": "Understand pressure-difference surface grip versus gas-reaction thrust, and why brief airborne motion does not establish sustained practical flight.",
+      "claimIds": [
+        "roadster.claim.event"
+      ]
+    },
+    {
+      "id": "roadster.hook.pressure",
+      "archetype": "hidden-mechanism",
+      "text": "The air around a car can help hold it upside down.",
+      "viewerPromise": "Understand pressure-difference surface grip versus gas-reaction thrust, and why brief airborne motion does not establish sustained practical flight.",
+      "claimIds": [
+        "roadster.claim.pressure"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "roadster.story.forces",
+      "title": "Two tricks, two forces",
+      "description": "Understand pressure-difference surface grip versus gas-reaction thrust, and why brief airborne motion does not establish sustained practical flight.",
+      "claimIds": [
+        "roadster.claim.event",
+        "roadster.claim.fans",
+        "roadster.claim.pressure",
+        "roadster.claim.gravity",
+        "roadster.claim.attribution",
+        "roadster.claim.gas",
+        "roadster.claim.reaction",
+        "roadster.claim.rotation",
+        "roadster.claim.limit"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "roadster.visual.force",
+      "title": "Stay attached, then push free",
+      "description": "Large white wedge prototype on a curved ramp; separate brief hop. Clearly labeled illustrative reconstruction of reported events, not recovered footage or exact stunt trajectory. Match-cut same car from ramp contact to open space; visual accent separates suction/grip from gas thrust. Intimate side section: tire contact at surface and qualitative low-pressure space; animated evacuation outside body, no internal fan positions. Rotate whole view into inverted hold; sparse outside pressure arrows push toward surface; preserve contact and underfloor region. Hold inverted: gravity away from road and larger qualitative net pressure force toward it. No numeric vectors or calibrated relative scale. Camera pulls free of surface; explicitly attributed cold-gas principle, car free in open space. Enlarged detached principle inset shows gas release and opposite reaction, then applied qualitative motion with no visible proprietary nozzle hardware. Generic vectors next to car show translation, then off-center action changes orientation; no literal reconstruction of Tesla firing sequence. Separate abstract gas reservoir graphic progressively empties, detached from car body, not an internal tank design. Return to ramp/site motif and grounded car; two visual states recap contact grip versus brief thrust, ending lands rather than endless hover.",
+      "claimIds": [
+        "roadster.claim.event",
+        "roadster.claim.fans",
+        "roadster.claim.pressure",
+        "roadster.claim.gravity",
+        "roadster.claim.attribution",
+        "roadster.claim.gas",
+        "roadster.claim.reaction",
+        "roadster.claim.rotation",
+        "roadster.claim.limit"
+      ]
+    }
+  ],
+  "relatedQuestions": [],
+  "followUpOpportunities": [],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review; not owner factual/master approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.18",
+      "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+    },
+    "approvedAt": "2026-10-17",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

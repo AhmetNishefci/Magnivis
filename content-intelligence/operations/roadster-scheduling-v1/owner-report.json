@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.18",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-18T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-18T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-17T19:22:57.456243Z",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "ownerInstruction": {
+    "path": "content-intelligence/operations/roadster-scheduling-v1/owner-instruction.md",
+    "sha256": "f25fe5be0d5469dbf76248a93d3d3ed5b08c5b99507339a7c82170349f5a4c0b"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/roadster-cycle18-candidate-v1.mp4",
+    "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-18/delivery-v1/release-v1.json",
+    "sha256": "757d000c6630fe550b2a6f17753117ac23fcc15b6bb2d6563d8621cfab6e3fac"
+  },
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-18/delivery-v1/master-approval-v1.json",
+    "sha256": "3491ae763b11e0d026a87351680d57d467c7ab3c82ec852f2c12e7d3db68f3e7"
+  },
+  "nativeWorkflow": {
+    "stage": "publication-review",
+    "revision": 12,
+    "unchanged": true,
+    "publicationDecision": null
+  },
+  "nativeRecordReconciliation": "Owner scheduling report recorded separately from strict gate projection, following Cycles11/13/17. Native observations require an exact-release publication decision, absent here. Preserve all twelve events and state; add a cycle-scoped evidence addendum without forging an event, authorization, risk acceptance, native QA or successful publication. Earlier master/delivery reviews retain their as-of meaning.",
+  "limitations": [
+    "Actual uploaded bytes, cover selection, settings, first comments and platform processing not independently inspected.",
+    "Scheduled target is known; successful publication and public identities remain unknown.",
+    "Prepared release and presentation uncertainty records remain immutable; scheduling does not supply missing native QA or retrospective authorization."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-17T19:23:42.397921+00:00",
+  "passed": true,
+  "initialStagedFiles": 204,
+  "initialAudit": {
+    "stagedFiles": 204,
+    "modifiedExistingFiles": [
+      "artifacts/media-catalog.json",
+      "docs/ASSET-LICENSES.md",
+      "scripts/resolve-qa-video-target.ts",
+      "workflow/project-state.json"
+    ],
+    "unrelatedPaths": [],
+    "sensitiveFileNames": [],
+    "secretPatternMatches": []
+  },
+  "initialStagedFilesChangedDuringCloseout": [
+    "workflow/project-state.json"
+  ],
+  "masterAndAllDeliveryBytesUnchanged": true,
+  "nativeTwelveEventsAndStateUnchanged": true,
+  "earlierProjectStateEntriesUnchanged": true,
+  "oldCatalogRowsUnchanged": 1321,
+  "newCycle18CatalogRows": 23,
+  "schedulingPlatformRecords": 4,
+  "scheduledFor": "2026-10-18T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-18T18:00:00Z",
+  "publication": "unknown",
+  "earlierCycleFilesModified": false,
+  "historicalAuthoringEvidence": "Unapproved first render, initial research blocker and failed finalization attempt retained as auditable Cycle18 production history; excluded from approved delivery identities.",
+  "knownUnresolvedCycle10": {
+    "record": "content-intelligence/cycles/cycle-10/topic-selection.json",
+    "referencedPath": "docs/PROJECT-STATE.md",
+    "expectedSha256": "2bfdec20f86254916c741efacabfa22f61ccbe705d287cfdd84e832e20f2e5fe",
+    "actualAndHeadSha256": "b9a7f9f92f8f150572f859c4bf819b35bc2587f763d923a319dbdbc92d2b1780",
+    "historicalFilesModified": false
+  },
+  "nativeReconciliation": "Strict publication-review revision12 preserved; scheduling evidence addendum points to four operational reports. No retrospective publication decision invented.",
+  "assistantPlatformActions": []
+}

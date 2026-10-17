@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 3,
+  "cycleId": "cycle.18",
+  "media": {
+    "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+    "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+  },
+  "durationSeconds": 44.46666666666667,
+  "scriptSha256": "112093306ec89560e6bc9047f875b2382995124868dfcb4d228f148a3e2ac6a2",
+  "productionPlan": {
+    "path": "content-intelligence/cycles/cycle-18/production-v1/production-plan.candidate-v1.json",
+    "sha256": "43d2ab08ab9a86264bb3dfb8a8e3e36dfcd9f92063e26827faa8384dc70c56ef"
+  },
+  "captionPlan": {
+    "path": "src/captions/plans/roadster.json",
+    "sha256": "e05aad25896d71e8ddb19d5f477ed72bfb3a2b078823f9baa7dc88ea25bcdbc0"
+  },
+  "narrationBundle": {
+    "path": "src/production/narration/roadster.json",
+    "sha256": "511b0f23b3e11f713ca27468f496f261c15b83425629a936b7a3a062aedecfe7"
+  },
+  "platformPreflight": [
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/youtube.json",
+        "sha256": "001a13812fcb07bde55ecb24325b4ddd79538d0244439f5f3a7ba9ba04d4d9c8"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/youtube.json",
+        "sha256": "8e96f1bae02a3cc5b3cdf0265b8e5c7324bf6f5758b4a77d55be676db57457ee"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/tiktok.json",
+        "sha256": "6b585092555cf0bae3dba31506fe636e7be9816c545267bc8efab3c18f2db7ef"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/tiktok.json",
+        "sha256": "f1753599e3ceaeef82db1dba1fb2cc8b30e95d06ec5816ba94ddbc2cdcf37aa2"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/instagram.json",
+        "sha256": "d30107380f00e3f30147fbfb0e4a40b52df2e54c9c8f21f327efef3b81841a25"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/instagram.json",
+        "sha256": "c2a1c1436f1935d670f616e696b3eef4c2065f844a5833104c3b8fbc1062c8dc"
+      }
+    },
+    {
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/facebook.json",
+        "sha256": "002f2d232eff195853b3b36ac7aa8a52c24d5a65e095d241bb17f34eb1838719"
+      },
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/facebook.json",
+        "sha256": "12f16734714204a7418add2f825ab276461e4c14dde5219dbfc9bea72d7be6a1"
+      }
+    }
+  ],
+  "narration": [
+    {
+      "id": "roadster-cue-1",
+      "transcript": "Tesla showed a Roadster driving upside down, then briefly airborne.",
+      "start": 0,
+      "duration": 4.65,
+      "media": {
+        "id": "media.c618192a6e661b17d77b9c5e221cc28135cf0613142988e8e39ad568358aef5f",
+        "sha256": "c618192a6e661b17d77b9c5e221cc28135cf0613142988e8e39ad568358aef5f"
+      }
+    },
+    {
+      "id": "roadster-cue-2",
+      "transcript": "But those are two different engineering tricks.",
+      "start": 5.033333333333333,
+      "duration": 2.9,
+      "media": {
+        "id": "media.c8128f18f9ba8af75c4d3d3404ff1a8256310932c6fb92e93a7357fbd2c2eaf9",
+        "sha256": "c8128f18f9ba8af75c4d3d3404ff1a8256310932c6fb92e93a7357fbd2c2eaf9"
+      }
+    },
+    {
+      "id": "roadster-cue-3",
+      "transcript": "Tesla says fans remove air from beneath the car.",
+      "start": 8.2,
+      "duration": 3.45,
+      "media": {
+        "id": "media.627865d4c839d94654a2f82df0048c5e0344a572a4847ac91ed1ced66cd40a44",
+        "sha256": "627865d4c839d94654a2f82df0048c5e0344a572a4847ac91ed1ced66cd40a44"
+      }
+    },
+    {
+      "id": "roadster-cue-4",
+      "transcript": "Lower pressure underneath lets outside air press it against the surface.",
+      "start": 11.933333333333334,
+      "duration": 4.875,
+      "media": {
+        "id": "media.74ba1fb021452b11004369e4edc3332d5629d31db1708f72d40782e18e0ba42e",
+        "sha256": "74ba1fb021452b11004369e4edc3332d5629d31db1708f72d40782e18e0ba42e"
+      }
+    },
+    {
+      "id": "roadster-cue-5",
+      "transcript": "Upside down, that force must beat gravity.",
+      "start": 17.133333333333333,
+      "duration": 3.225,
+      "media": {
+        "id": "media.06febe66f3a925e41f4046a418ce9c36eb06d1b9d6446e9b72c5bd243e56083a",
+        "sha256": "06febe66f3a925e41f4046a418ce9c36eb06d1b9d6446e9b72c5bd243e56083a"
+      }
+    },
+    {
+      "id": "roadster-cue-6",
+      "transcript": "Tesla attributes the airborne motion to cold-gas thrusters.",
+      "start": 20.733333333333334,
+      "duration": 4.3,
+      "media": {
+        "id": "media.5eacb4dc26903c6689490b4592bb1799539345c76e8337cb9c500a2406ec5d92",
+        "sha256": "5eacb4dc26903c6689490b4592bb1799539345c76e8337cb9c500a2406ec5d92"
+      }
+    },
+    {
+      "id": "roadster-cue-7",
+      "transcript": "They release compressed air. Gas shoots one way; the car is pushed the other.",
+      "start": 25.3,
+      "duration": 4.95,
+      "media": {
+        "id": "media.1b2b2102c5d6073fb29d9803b61acedb4d4143e45c56181e73e38a094ae144c8",
+        "sha256": "1b2b2102c5d6073fb29d9803b61acedb4d4143e45c56181e73e38a094ae144c8"
+      }
+    },
+    {
+      "id": "roadster-cue-8",
+      "transcript": "Different jet directions can change its motion. Off-center pushes can turn it.",
+      "start": 30.566666666666666,
+      "duration": 5.325,
+      "media": {
+        "id": "media.15514baf3810471bb9f16c649f8d583d76c01041390c99b5fa7564d8db87f220",
+        "sha256": "15514baf3810471bb9f16c649f8d583d76c01041390c99b5fa7564d8db87f220"
+      }
+    },
+    {
+      "id": "roadster-cue-9",
+      "transcript": "But the stored gas is limited.",
+      "start": 36.266666666666666,
+      "duration": 2.3,
+      "media": {
+        "id": "media.5eb679ef6bd26a93865fb7c9c86154271b3cdc1c6403236849c3180283d0b921",
+        "sha256": "5eb679ef6bd26a93865fb7c9c86154271b3cdc1c6403236849c3180283d0b921"
+      }
+    },
+    {
+      "id": "roadster-cue-10",
+      "transcript": "A short, controlled maneuver is not proof of sustained, practical flight.",
+      "start": 38.86666666666667,
+      "duration": 4.925,
+      "media": {
+        "id": "media.3f8d1d15f44e71fca643786a4dadfef684da391ddad5dfc7df3d94c32af66ed4",
+        "sha256": "3f8d1d15f44e71fca643786a4dadfef684da391ddad5dfc7df3d94c32af66ed4"
+      }
+    }
+  ],
+  "qa": {
+    "technical": "passed",
+    "typography": "passed",
+    "captions": "passed",
+    "audio": "passed",
+    "reports": [
+      {
+        "path": "content-intelligence/cycles/cycle-18/production-v1/qa/final-report.json",
+        "sha256": "50b5f59608f547070cfcaac38c3d5594f8b3aaccae7d56d7ad33d060a0cf6cd0"
+      }
+    ]
+  },
+  "factualSafeguards": [
+    "Reported events separately supported by inspected reveal reporting; Tesla mechanisms explicitly attributed.",
+    "General pressure, reaction and torque supported by primary institutional or manufacturer evidence; not independently measured Tesla capability.",
+    "No proprietary nozzle positions, plumbing, pressures, force magnitudes, performance, range or production claims.",
+    "Original reconstruction/physics illustration disclosed throughout; no external footage or protected frames.",
+    "Brief controlled motion is not proof of sustained practical flight."
+  ],
+  "uncertainties": [
+    "No direct inspection of Tesla original replay; credible reporting used under explicit owner recovery scope.",
+    "Exterior, ramp and trajectories qualitative; motion studies slowed and detached gas store conceptual.",
+    "No subjective continuous playback/listening or real-phone/native-platform test.",
+    "Caption phrase boundaries authored approximately within measured takes; machine ASR is not forced word alignment or a synchronization pass.",
+    "Provisional inset profiles and sampled geometry do not prove native platform safety."
+  ],
+  "unusualProduction": [
+    "Entirely original exterior/surface/force reconstruction, existing licensed fonts/local narrator and synthesized sound.",
+    "First authoring render retained unapproved after chronological review identified repetitive airborne pose; corrected with displacement, frontal torque, grounded storage and landing.",
+    "No new paid services, delivery packages or external platform actions."
+  ]
+}

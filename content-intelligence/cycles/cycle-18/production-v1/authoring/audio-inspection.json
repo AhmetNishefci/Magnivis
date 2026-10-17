@@ -1,0 +1,465 @@
+{
+  "checkedAt": "2026-10-17T15:03:27.955Z",
+  "masterPath": "artifacts/masters/roadster-cycle18-candidate-v1.mp4",
+  "masterSha256": "9ef13a357bf4abd5177281bbff97adb351d8c6a91de6b81aa2ec5f753fd0edd9",
+  "method": "Actual decoded master recognized per complete source unit; independent EBU R128 signal/loudness and silence inspection. Machine evidence, not subjective audiovisual review.",
+  "model": "onnx-community/whisper-tiny.en",
+  "narrator": "Kokoro af_heart speed1",
+  "actualMasterCues": [
+    {
+      "id": "roadster-cue-1",
+      "exactText": "Tesla showed a Roadster driving upside down, then briefly airborne.",
+      "recognized": " Tesla showed a roadster driving upside down, then briefly airborne.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.08
+          ],
+          "text": " Tesla showed a roadster driving upside down, then briefly airborne."
+        }
+      ],
+      "start": 0,
+      "duration": 4.65
+    },
+    {
+      "id": "roadster-cue-2",
+      "exactText": "But those are two different engineering tricks.",
+      "recognized": " But those are two different engineering tricks.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2.56
+          ],
+          "text": " But those are two different engineering tricks."
+        }
+      ],
+      "start": 5.033333333333333,
+      "duration": 2.9
+    },
+    {
+      "id": "roadster-cue-3",
+      "exactText": "Tesla says fans remove air from beneath the car.",
+      "recognized": " Tesla says fans remove air from beneath the car.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Tesla says fans remove air from beneath the car."
+        }
+      ],
+      "start": 8.2,
+      "duration": 3.45
+    },
+    {
+      "id": "roadster-cue-4",
+      "exactText": "Lower pressure underneath lets outside air press it against the surface.",
+      "recognized": " Lower pressure underneath. Let's outside air-press it against the surface.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " Lower pressure underneath."
+        },
+        {
+          "timestamp": [
+            2,
+            5
+          ],
+          "text": " Let's outside air-press it against the surface."
+        }
+      ],
+      "start": 11.933333333333334,
+      "duration": 4.875
+    },
+    {
+      "id": "roadster-cue-5",
+      "exactText": "Upside down, that force must beat gravity.",
+      "recognized": " Upside down, that force must beat gravity.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Upside down, that force must beat gravity."
+        }
+      ],
+      "start": 17.133333333333333,
+      "duration": 3.225
+    },
+    {
+      "id": "roadster-cue-6",
+      "exactText": "Tesla attributes the airborne motion to cold-gas thrusters.",
+      "recognized": " Tesla attributes the airborne motion to cold gas thrusters.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4
+          ],
+          "text": " Tesla attributes the airborne motion to cold gas thrusters."
+        }
+      ],
+      "start": 20.733333333333334,
+      "duration": 4.3
+    },
+    {
+      "id": "roadster-cue-7",
+      "exactText": "They release compressed air. Gas shoots one way; the car is pushed the other.",
+      "recognized": " They release compressed air. Gas shoots one way, the car is pushed the other.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.7
+          ],
+          "text": " They release compressed air. Gas shoots one way, the car is pushed the other."
+        }
+      ],
+      "start": 25.3,
+      "duration": 4.95
+    },
+    {
+      "id": "roadster-cue-8",
+      "exactText": "Different jet directions can change its motion. Off-center pushes can turn it.",
+      "recognized": " Different jet directions can change its motion. Off-center pushes can turn it.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            3
+          ],
+          "text": " Different jet directions can change its motion."
+        },
+        {
+          "timestamp": [
+            3,
+            5
+          ],
+          "text": " Off-center pushes can turn it."
+        }
+      ],
+      "start": 30.566666666666666,
+      "duration": 5.325
+    },
+    {
+      "id": "roadster-cue-9",
+      "exactText": "But the stored gas is limited.",
+      "recognized": " But the stored gas is limited.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            2
+          ],
+          "text": " But the stored gas is limited."
+        }
+      ],
+      "start": 36.266666666666666,
+      "duration": 2.3
+    },
+    {
+      "id": "roadster-cue-10",
+      "exactText": "A short, controlled maneuver is not proof of sustained, practical flight.",
+      "recognized": " A short, controlled maneuver is not proof of sustained, practical flight.",
+      "chunks": [
+        {
+          "timestamp": [
+            0,
+            4.5
+          ],
+          "text": " A short, controlled maneuver is not proof of sustained, practical flight."
+        }
+      ],
+      "start": 38.86666666666667,
+      "duration": 4.925
+    }
+  ],
+  "semanticUnits": [
+    {
+      "id": "roadster-cue-1",
+      "fullUnit": "Tesla showed a Roadster driving upside down, then briefly airborne.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600001e1c0c0] silence_start: 0",
+        "[silencedetect @ 0x600001e1c0c0] silence_end: 0.30675 | silence_duration: 0.30675",
+        "[silencedetect @ 0x600001e1c0c0] silence_start: 2.60829",
+        "[silencedetect @ 0x600001e1c0c0] silence_end: 2.97446 | silence_duration: 0.366167",
+        "[silencedetect @ 0x600001e1c0c0] silence_start: 4.13375",
+        "[silencedetect @ 0x600001e1c0c0] silence_end: 4.65 | silence_duration: 0.51625"
+      ]
+    },
+    {
+      "id": "roadster-cue-2",
+      "fullUnit": "But those are two different engineering tricks.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600000fe0000] silence_start: 0",
+        "[silencedetect @ 0x600000fe0000] silence_end: 0.311917 | silence_duration: 0.311917",
+        "[silencedetect @ 0x600000fe0000] silence_start: 2.45942",
+        "[silencedetect @ 0x600000fe0000] silence_end: 2.9 | silence_duration: 0.440583"
+      ]
+    },
+    {
+      "id": "roadster-cue-3",
+      "fullUnit": "Tesla says fans remove air from beneath the car.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x60000057c720] silence_start: 0",
+        "[silencedetect @ 0x60000057c720] silence_end: 0.308667 | silence_duration: 0.308667",
+        "[silencedetect @ 0x60000057c720] silence_start: 2.948",
+        "[silencedetect @ 0x60000057c720] silence_end: 3.45 | silence_duration: 0.502"
+      ]
+    },
+    {
+      "id": "roadster-cue-4",
+      "fullUnit": "Lower pressure underneath lets outside air press it against the surface.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000031480c0] silence_start: 0",
+        "[silencedetect @ 0x6000031480c0] silence_end: 0.333125 | silence_duration: 0.333125",
+        "[silencedetect @ 0x6000031480c0] silence_start: 1.62813",
+        "[silencedetect @ 0x6000031480c0] silence_end: 2.09163 | silence_duration: 0.4635",
+        "[silencedetect @ 0x6000031480c0] silence_start: 4.42379",
+        "[silencedetect @ 0x6000031480c0] silence_end: 4.875 | silence_duration: 0.451208"
+      ]
+    },
+    {
+      "id": "roadster-cue-5",
+      "fullUnit": "Upside down, that force must beat gravity.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000031e8000] silence_start: 0",
+        "[silencedetect @ 0x6000031e8000] silence_end: 0.313708 | silence_duration: 0.313708",
+        "[silencedetect @ 0x6000031e8000] silence_start: 2.7305",
+        "[silencedetect @ 0x6000031e8000] silence_end: 3.225 | silence_duration: 0.4945"
+      ]
+    },
+    {
+      "id": "roadster-cue-6",
+      "fullUnit": "Tesla attributes the airborne motion to cold-gas thrusters.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000010b8000] silence_start: 0",
+        "[silencedetect @ 0x6000010b8000] silence_end: 0.308833 | silence_duration: 0.308833",
+        "[silencedetect @ 0x6000010b8000] silence_start: 3.83137",
+        "[silencedetect @ 0x6000010b8000] silence_end: 4.3 | silence_duration: 0.468625"
+      ]
+    },
+    {
+      "id": "roadster-cue-7",
+      "fullUnit": "They release compressed air. Gas shoots one way; the car is pushed the other.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x60000182c000] silence_start: 0",
+        "[silencedetect @ 0x60000182c000] silence_end: 0.321542 | silence_duration: 0.321542",
+        "[silencedetect @ 0x60000182c000] silence_start: 1.54537",
+        "[silencedetect @ 0x60000182c000] silence_end: 2.01417 | silence_duration: 0.468792",
+        "[silencedetect @ 0x60000182c000] silence_start: 4.45592",
+        "[silencedetect @ 0x60000182c000] silence_end: 4.95 | silence_duration: 0.494083"
+      ]
+    },
+    {
+      "id": "roadster-cue-8",
+      "fullUnit": "Different jet directions can change its motion. Off-center pushes can turn it.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    \r[silencedetect @ 0x600001ee0720] silence_start: 0",
+        "[silencedetect @ 0x600001ee0720] silence_end: 0.306958 | silence_duration: 0.306958",
+        "[silencedetect @ 0x600001ee0720] silence_start: 2.83529",
+        "[silencedetect @ 0x600001ee0720] silence_end: 3.32825 | silence_duration: 0.492958",
+        "[silencedetect @ 0x600001ee0720] silence_start: 4.85058",
+        "[silencedetect @ 0x600001ee0720] silence_end: 5.325 | silence_duration: 0.474417"
+      ]
+    },
+    {
+      "id": "roadster-cue-9",
+      "fullUnit": "But the stored gas is limited.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x600002504720] silence_start: 0",
+        "[silencedetect @ 0x600002504720] silence_end: 0.311458 | silence_duration: 0.311458",
+        "[silencedetect @ 0x600002504720] silence_start: 1.81537",
+        "[silencedetect @ 0x600002504720] silence_end: 2.3 | silence_duration: 0.484625"
+      ]
+    },
+    {
+      "id": "roadster-cue-10",
+      "fullUnit": "A short, controlled maneuver is not proof of sustained, practical flight.",
+      "silenceReport": [
+        "size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    \r[silencedetect @ 0x6000019fc1e0] silence_start: 0",
+        "[silencedetect @ 0x6000019fc1e0] silence_end: 0.308542 | silence_duration: 0.308542",
+        "[silencedetect @ 0x6000019fc1e0] silence_start: 4.45796",
+        "[silencedetect @ 0x6000019fc1e0] silence_end: 4.925 | silence_duration: 0.467042"
+      ]
+    }
+  ],
+  "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -22.0 LUFS\n    Threshold: -33.1 LUFS\n\n  Loudness range:\n    LRA:         2.9 LU\n    Threshold: -43.1 LUFS\n    LRA low:   -24.5 LUFS\n    LRA high:  -21.6 LUFS\n\n  True peak:\n    Peak:       -2.2 dBFS\n",
+  "sourceAlignment": {
+    "enteredAt": "2026-10-17T15:01:51.280Z",
+    "method": "Source WAVs decoded at16kHz and recognized locally with Whisper tiny.en segment timestamps. Approximate sentence anchors, not forced word alignment or listening.",
+    "results": [
+      {
+        "id": "roadster-cue-1",
+        "exactText": "Tesla showed a Roadster driving upside down, then briefly airborne.",
+        "recognized": " Tesla showed a roadster driving upside down, then briefly airborne.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4.08
+            ],
+            "text": " Tesla showed a roadster driving upside down, then briefly airborne."
+          }
+        ],
+        "sourceSha256": "c618192a6e661b17d77b9c5e221cc28135cf0613142988e8e39ad568358aef5f"
+      },
+      {
+        "id": "roadster-cue-2",
+        "exactText": "But those are two different engineering tricks.",
+        "recognized": " But those are two different engineering tricks.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " But those are two different engineering tricks."
+          }
+        ],
+        "sourceSha256": "c8128f18f9ba8af75c4d3d3404ff1a8256310932c6fb92e93a7357fbd2c2eaf9"
+      },
+      {
+        "id": "roadster-cue-3",
+        "exactText": "Tesla says fans remove air from beneath the car.",
+        "recognized": " Tesla says fans remove air from beneath the car.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " Tesla says fans remove air from beneath the car."
+          }
+        ],
+        "sourceSha256": "627865d4c839d94654a2f82df0048c5e0344a572a4847ac91ed1ced66cd40a44"
+      },
+      {
+        "id": "roadster-cue-4",
+        "exactText": "Lower pressure underneath lets outside air press it against the surface.",
+        "recognized": " Lower pressure underneath. Let's outside air press it against the surface.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4.5
+            ],
+            "text": " Lower pressure underneath. Let's outside air press it against the surface."
+          }
+        ],
+        "sourceSha256": "74ba1fb021452b11004369e4edc3332d5629d31db1708f72d40782e18e0ba42e"
+      },
+      {
+        "id": "roadster-cue-5",
+        "exactText": "Upside down, that force must beat gravity.",
+        "recognized": " Upside down, that force must beat gravity.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " Upside down, that force must beat gravity."
+          }
+        ],
+        "sourceSha256": "06febe66f3a925e41f4046a418ce9c36eb06d1b9d6446e9b72c5bd243e56083a"
+      },
+      {
+        "id": "roadster-cue-6",
+        "exactText": "Tesla attributes the airborne motion to cold-gas thrusters.",
+        "recognized": " Tesla attributes the airborne motion to cold gas thrusters.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4
+            ],
+            "text": " Tesla attributes the airborne motion to cold gas thrusters."
+          }
+        ],
+        "sourceSha256": "5eacb4dc26903c6689490b4592bb1799539345c76e8337cb9c500a2406ec5d92"
+      },
+      {
+        "id": "roadster-cue-7",
+        "exactText": "They release compressed air. Gas shoots one way; the car is pushed the other.",
+        "recognized": " They release compressed air. Gas shoots one way, the car is pushed the other.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4.5
+            ],
+            "text": " They release compressed air. Gas shoots one way, the car is pushed the other."
+          }
+        ],
+        "sourceSha256": "1b2b2102c5d6073fb29d9803b61acedb4d4143e45c56181e73e38a094ae144c8"
+      },
+      {
+        "id": "roadster-cue-8",
+        "exactText": "Different jet directions can change its motion. Off-center pushes can turn it.",
+        "recognized": " Different jet directions can change its motion. Off-center pushes can turn it.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              3
+            ],
+            "text": " Different jet directions can change its motion."
+          },
+          {
+            "timestamp": [
+              3,
+              5
+            ],
+            "text": " Off-center pushes can turn it."
+          }
+        ],
+        "sourceSha256": "15514baf3810471bb9f16c649f8d583d76c01041390c99b5fa7564d8db87f220"
+      },
+      {
+        "id": "roadster-cue-9",
+        "exactText": "But the stored gas is limited.",
+        "recognized": " But the stored gas is limited.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              2
+            ],
+            "text": " But the stored gas is limited."
+          }
+        ],
+        "sourceSha256": "5eb679ef6bd26a93865fb7c9c86154271b3cdc1c6403236849c3180283d0b921"
+      },
+      {
+        "id": "roadster-cue-10",
+        "exactText": "A short, controlled maneuver is not proof of sustained, practical flight.",
+        "recognized": " A short, controlled maneuver is not proof of sustained, practical flight.",
+        "chunks": [
+          {
+            "timestamp": [
+              0,
+              4.5
+            ],
+            "text": " A short, controlled maneuver is not proof of sustained, practical flight."
+          }
+        ],
+        "sourceSha256": "3f8d1d15f44e71fca643786a4dadfef684da391ddad5dfc7df3d94c32af66ed4"
+      }
+    ]
+  },
+  "pronunciationInputEvidence": "content-intelligence/cycles/cycle-18/production-v1/phoneme-audit.json",
+  "limitations": [
+    "No callable subjective audio listening or continuous video playback available.",
+    "Whisper recognition cannot certify pronunciation, stress, naturalness or purposeful sound.",
+    "Caption phrases within ASR sentence chunks are authored approximate timing."
+  ],
+  "subjectiveListening": "Required owner review of Tesla/Roadster, cold-gas and off-center pronunciation, natural phrasing and caption synchronization."
+}

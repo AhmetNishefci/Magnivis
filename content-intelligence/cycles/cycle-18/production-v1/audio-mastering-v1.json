@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-17T15:05:37.130Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/roadster-render-v1.mp4",
+    "sha256": "d995556b112b7b8c4618b2934fd676907038bcb395596d627b12dd885641ba8c",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/roadster-cycle18-candidate-v1.mp4",
+    "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.91",
+    "input_tp": "-2.97",
+    "input_lra": "3.10",
+    "input_thresh": "-33.97",
+    "output_i": "-18.92",
+    "output_tp": "-2.00",
+    "output_lra": "2.60",
+    "output_thresh": "-30.03",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.08"
+  },
+  "gainDb": 0.77,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "phase": "content-cycle",
-  "nextOwnerGate": "Cycle17 scheduled-owner-reported on all four for 2026-10-17 20:00 CEST (18:00 UTC); publication evidence pending. Native journal remains publication-review revision15; independent earlier queues unchanged. No Cycle18 authority.",
-  "externalActions": "Owner reports Cycle #9 published. New owner message on 2026-10-11 reports Cycle #10 published on all four, superseding the 2026-10-09 report that it was scheduled/not yet published; newer report preserved in content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json. Cycle #11 remains owner-reported manually scheduled on all four; actual publication unknown. Actual event dates/times/URLs/IDs/uploaded bytes/settings/comments/device evidence remain unknown; no independently verified platform evidence or assistant platform action. Earlier reports retain their original dated meaning. Owner explicitly confirms Cycle #12 FLIP published on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels on October 12, 2026, superseding scheduling-only status. Exact times/timezone/URLs/IDs/uploaded bytes/settings/comments/device evidence/screenshots/analytics remain unknown; no independent platform verification or assistant platform action. Current owner instruction authorizes Cycle #13 discovery through Premise Review. New explicit Cycle #13 premise approval authorizes research and creative development. That historical research/development work was followed by explicit candidate-production authorization. Cycle13 V1 received REVISE MASTER and remains preserved. V2 is now owner-approved for publication-package preparation subject to final native-device and audio acceptance; four prepared packages reach Publication Review without publication authority. No assistant platform actions or new publication evidence. Owner now reports Cycle13 V2 manually scheduled for 2026-10-13 on all four. Exact times/timezone/URLs/IDs and live publication unknown; no assistant platform actions. Owner reports Cycle14 V4 manually scheduled for 2026-10-14 on all four. Exact times/platform timezones and actual publication remain unknown; no assistant platform actions.",
+  "nextOwnerGate": "Cycle18 owner-reported scheduled on all four for 2026-10-18 20:00 Europe/Belgrade (18:00 UTC). Await actual publication evidence. Earlier independent owner queues remain unchanged.",
+  "externalActions": "Owner reports Cycle #9 published. New owner message on 2026-10-11 reports Cycle #10 published on all four, superseding the 2026-10-09 report that it was scheduled/not yet published; newer report preserved in content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json. Cycle #11 remains owner-reported manually scheduled on all four; actual publication unknown. Actual event dates/times/URLs/IDs/uploaded bytes/settings/comments/device evidence remain unknown; no independently verified platform evidence or assistant platform action. Earlier reports retain their original dated meaning. Owner explicitly confirms Cycle #12 FLIP published on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels on October 12, 2026, superseding scheduling-only status. Exact times/timezone/URLs/IDs/uploaded bytes/settings/comments/device evidence/screenshots/analytics remain unknown; no independent platform verification or assistant platform action. Current owner instruction authorizes Cycle #13 discovery through Premise Review. New explicit Cycle #13 premise approval authorizes research and creative development. That historical research/development work was followed by explicit candidate-production authorization. Cycle13 V1 received REVISE MASTER and remains preserved. V2 is now owner-approved for publication-package preparation subject to final native-device and audio acceptance; four prepared packages reach Publication Review without publication authority. No assistant platform actions or new publication evidence. Owner now reports Cycle13 V2 manually scheduled for 2026-10-13 on all four. Exact times/timezone/URLs/IDs and live publication unknown; no assistant platform actions. Owner reports Cycle14 V4 manually scheduled for 2026-10-14 on all four. Exact times/platform timezones and actual publication remain unknown; no assistant platform actions. Cycle18 owner reports manual scheduling on all four for 2026-10-18T20:00:00+02:00 (Europe/Belgrade; 18:00 UTC). Publication remains unconfirmed; no assistant platform action. Evidence content-intelligence/operations/roadster-scheduling-v1/scheduling-index-v1.json.",
   "historicalCycles": [
     {
       "id": "wood-frog",
@@ -83,7 +83,7 @@
     "cycle6Started": true
   },
   "cycle6": "authorized; scheduled-owner-reported on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels; journal revision23; scheduled date/time/timezone and scheduling-action time unknown; actual publication/URLs/IDs/settings/comments/processing/presentation/device QA/analytics unknown; awaiting owner publication evidence; exact authorized canonical master and publication package unchanged",
-  "nextSystemTask": "Await actual Cycle17 publication evidence and separate Cycle18 authorization. Owner-authorized Git audit, validation and synchronization evidence is in content-intelligence/cycles/cycle-17/git-audit-v1; exact commit/remote identity is verified after committing. No external platform action or new cycle authorized.",
+  "nextSystemTask": "Await actual Cycle18 publication evidence or new owner direction after the owner-authorized repository closeout. No new cycle or platform actions authorized. Native publication-review gates and earlier independent queues remain unchanged.",
   "editorialCalibration": {
     "report": "system-audits/editorial-intelligence-calibration/audit.md",
     "authority": "docs/STRATEGY.md",
@@ -1164,5 +1164,116 @@
     },
     "assistantPlatformActions": [],
     "cycle18Started": false
+  },
+  "cycle18V1": {
+    "status": "owner-master-review",
+    "journal": "workflow/cycles/cycle.18",
+    "masterPath": "artifacts/masters/roadster-cycle18-candidate-v1.mp4",
+    "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+    "pictureDurationSeconds": 44.46666666666667,
+    "containerDurationSeconds": 44.523,
+    "candidateRecord": "content-intelligence/cycles/cycle-18/production-v1/master-candidate-v1.json",
+    "review": "content-intelligence/cycles/cycle-18/owner-master-review-v1.md",
+    "authority": "content-intelligence/cycles/cycle-18/recovery-v1/owner-recovery-instruction.md",
+    "masterApproved": false,
+    "deviceQA": "not-tested",
+    "subjectiveAudioQA": "pending-owner",
+    "deliveryPackages": [],
+    "assistantPlatformActions": [],
+    "reconciliation": "Current owner start/recovery authority supersedes earlier no-Cycle18-authority metadata. Old research blocker, original authority/event and Cycle17 scheduling evidence remain unchanged. No original replay inspection inferred. Native journal owns current cycle state."
+  },
+  "cycle18DeliveryV1": {
+    "status": "owner-delivery-review",
+    "nativeStage": "publication-review",
+    "nativeRevision": 12,
+    "masterApproved": true,
+    "masterDecision": {
+      "path": "content-intelligence/cycles/cycle-18/delivery-v1/master-approval-v1.json",
+      "sha256": "3491ae763b11e0d026a87351680d57d467c7ab3c82ec852f2c12e7d3db68f3e7"
+    },
+    "masterPath": "artifacts/masters/roadster-cycle18-candidate-v1.mp4",
+    "masterSha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+    "ownerQualityAcceptance": "content-intelligence/cycles/cycle-18/delivery-v1/owner-quality-acceptance-v1.json",
+    "device": "unspecified; no native test inferred",
+    "release": {
+      "path": "content-intelligence/cycles/cycle-18/delivery-v1/release-v1.json",
+      "sha256": "757d000c6630fe550b2a6f17753117ac23fcc15b6bb2d6563d8621cfab6e3fac"
+    },
+    "packages": {
+      "youtube": "content-intelligence/cycles/cycle-18/delivery-v1/youtube/manifest-v1.json",
+      "tiktok": "content-intelligence/cycles/cycle-18/delivery-v1/tiktok/manifest-v1.json",
+      "instagram": "content-intelligence/cycles/cycle-18/delivery-v1/instagram/manifest-v1.json",
+      "facebook": "content-intelligence/cycles/cycle-18/delivery-v1/facebook/manifest-v1.json"
+    },
+    "coverPath": "artifacts/covers/roadster-cycle18-delivery-v1/frame-28-0.933s.png",
+    "coverSha256": "997310839cd7499089429d98798a99be13405369c048fc618bdb91ef76d87c27",
+    "coverFrame": 28,
+    "coverApproved": false,
+    "presentationUnknowns": 48,
+    "unknownsAccepted": false,
+    "productionReady": false,
+    "publicationAuthorized": false,
+    "publicationDate": null,
+    "platformActions": [],
+    "review": "content-intelligence/cycles/cycle-18/delivery-v1/owner-review-v1.md",
+    "reconciliation": "Additive final approval/delivery successor to earlier cycle18V1 master-review metadata. Original research, candidate, evidence, earlier QA and prior cycles unchanged. Owner reports acceptable master quality; no phone/native/device metadata, selected-cover approval, risk acceptance or publication authority inferred."
+  },
+  "cycle18SchedulingV1": {
+    "cycleId": "cycle.18",
+    "state": "scheduled-owner-reported",
+    "statusLabel": "OWNER-REPORTED SCHEDULED",
+    "scheduledBy": "owner-manual",
+    "scheduledFor": "2026-10-18T20:00:00+02:00",
+    "scheduledForUtc": "2026-10-18T18:00:00Z",
+    "schedulingTimeZone": {
+      "ianaIdentifier": "Europe/Belgrade",
+      "abbreviation": "CEST",
+      "utcOffset": "+02:00",
+      "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+    },
+    "recordedAt": "2026-10-17T19:22:57.456243Z",
+    "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+    "evidenceBasis": "explicit-owner-message",
+    "publication": "unknown",
+    "actualPublicationTime": null,
+    "actualPublicationDate": null,
+    "schedulingActionTime": null,
+    "publicUrl": null,
+    "platformId": null,
+    "actualUploadedBytes": null,
+    "actualSettings": null,
+    "comments": null,
+    "processingResults": null,
+    "deviceQa": null,
+    "analytics": null,
+    "independentPlatformVerification": false,
+    "assistantPlatformActions": [],
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "report": {
+      "path": "content-intelligence/operations/roadster-scheduling-v1/owner-report.json",
+      "sha256": "dac9795f935648d0cb08ee62701f5c952d59507e19265ac00fe49392261f020c"
+    },
+    "index": {
+      "path": "content-intelligence/operations/roadster-scheduling-v1/scheduling-index-v1.json",
+      "sha256": "773bc55e7bc38bec0919f020fe531b4794e46925adcbbe188896c2fce03dbc2f"
+    },
+    "cycleJournalAddendum": {
+      "path": "workflow/cycles/cycle.18/scheduling-evidence-v1.json",
+      "sha256": "5b261a322f6e2792d11fe3266be0370037666d343e2079379c625e1940ceeb2b"
+    },
+    "nativeStage": "publication-review",
+    "nativeRevision": 12,
+    "nativeJournalUnchanged": true,
+    "publicationDecision": null,
+    "historicalReconciliation": "Owner scheduling report recorded separately from strict gate projection, following Cycles11/13/17. Native observations require an exact-release publication decision, absent here. Preserve all twelve events and state; add a cycle-scoped evidence addendum without forging an event, authorization, risk acceptance, native QA or successful publication. Earlier master/delivery reviews retain their as-of meaning.",
+    "gitAuthorization": {
+      "path": "content-intelligence/operations/roadster-scheduling-v1/owner-instruction.md",
+      "sha256": "f25fe5be0d5469dbf76248a93d3d3ed5b08c5b99507339a7c82170349f5a4c0b"
+    }
   }
 }

@@ -333,3 +333,16 @@ Original Magnivis geographic locator and qualitative tanker/escorts/tow/fuel dia
 ### Cycle #17 delivery V2 cover — 2026-10-17
 
 `artifacts/covers/ohio-cycle17-delivery-v2/frame-107-3.567s.png` is an unretouched lossless decode of frame107 (3.566667s) of owner-approved Ohio V2 `e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091`. Cover SHA-256 `b50cc40085c0c8d181ad526ee0d9c1ee23982f01f38b1597ad755636452a9f03`; one canonical payload referenced by four platforms. Original IWM GM1505 / Sgt Deakin official1942 photograph has expired Crown copyright (PD-UKGov / faithful scan), with existing original Magnivis type/captions and previously recorded font licenses. Same source image/provenance as the approved master; no new source, license reliance, retouch or generated historical imagery. Source inspection and rights remain in Cycle17 research and revision-v2/rights-provenance.json. Native cover crops and owner cover selection approval pending.
+
+## Cycle #18 — Roadster V1 candidate
+
+- Original approximate car exterior, curved surface, pressure arrows, reaction/rotation studies and abstract finite gas supply: Magnivis code in `src/components/roadster/` and `src/compositions/Roadster.tsx`. Qualitative original reconstruction/physics illustration, disclosed throughout; not Tesla CAD, copied frames, actual event footage, proprietary nozzle placement, internal architecture or measured force/trajectory. Research images/footage are excluded from production.
+- Existing pinned Manrope 600 and Space Grotesk 500, Fontsource 5.3.0, unmodified SIL OFL 1.1. Exact license identities in Cycle18 `production-v1/rights-provenance.json`.
+- Ten original exact-script local Kokoro82M q8 CPU `af_heart` speed1 narration WAVs; existing Apache2.0 model. Provenance, full-context phonemes and exact cue hashes retained; no paid service or cloned voice.
+- Original deterministic synthesized low texture/air-like accent in `scripts/generate-roadster-soundscape.mjs`; no Tesla event sound, sampled recording or third-party music. Burned-in captions and optional VTT are original narration-derived text.
+
+Source bodies are factual references only. No external footage license is assumed or required for this all-original visual production. Internal production does not grant owner master or publication approval.
+
+### Cycle18 approved-V1 delivery cover
+
+`artifacts/covers/roadster-cycle18-delivery-v1/frame-28-0.933s.png` is a lossless decoded frame28 (0.933333s) from exact approved original master `2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc`. Original Magnivis reconstruction, existing licensed fonts and burned-in captions/disclosures preserved; no external imagery, new text, crop or retouch. Pixel equality and parent media identity are bound in `content-intelligence/cycles/cycle-18/delivery-v1/qa/selected-cover-v1.json`. Cover is recommended for owner delivery review; native crop and selection controls remain unverified.

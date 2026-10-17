@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.roadster.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "roadster",
+    "revision": 1,
+    "sha256": "5aa1826f3ce6347aa88cb8d3a55d1039c78afa41954efef5188a9174b87463d5"
+  },
+  "contentAsset": {
+    "id": "roadster.asset.physics",
+    "revision": 1,
+    "sha256": "7f08b87e03d1054934443392b7bd571f3570caaf5a47a15148de43d0d68eb743"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.18",
+    "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/youtube.json",
+      "sha256": "001a13812fcb07bde55ecb24325b4ddd79538d0244439f5f3a7ba9ba04d4d9c8"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/tiktok.json",
+      "sha256": "6b585092555cf0bae3dba31506fe636e7be9816c545267bc8efab3c18f2db7ef"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/instagram.json",
+      "sha256": "d30107380f00e3f30147fbfb0e4a40b52df2e54c9c8f21f327efef3b81841a25"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/facebook.json",
+      "sha256": "002f2d232eff195853b3b36ac7aa8a52c24d5a65e095d241bb17f34eb1838719"
+    }
+  ],
+  "approvedScriptSha256": "112093306ec89560e6bc9047f875b2382995124868dfcb4d228f148a3e2ac6a2",
+  "creativeDirection": {
+    "id": "creative-direction.roadster.v1",
+    "revision": 1,
+    "sha256": "ab7d8fca2ffc0191df5e673392db2f16d02092080e11e5b93e80b0362d4b9831"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 44.46666666666667
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "roadster.production.1",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.1",
+      "narrativeBeatId": "roadster.asset.physics.beat.1",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.1"
+      ],
+      "claimIds": [
+        "roadster.claim.event"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 151
+      },
+      "sceneType": "inverted-then-airborne",
+      "objective": "Large white wedge prototype on a curved ramp; separate brief hop. Clearly labeled illustrative reconstruction of reported events, not recovered footage or exact stunt trajectory.",
+      "onScreenText": [],
+      "animationIntent": "Inverted, then airborne; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.2",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.2",
+      "narrativeBeatId": "roadster.asset.physics.beat.2",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.2"
+      ],
+      "claimIds": [
+        "roadster.claim.fans",
+        "roadster.claim.attribution"
+      ],
+      "frames": {
+        "start": 151,
+        "end": 246
+      },
+      "sceneType": "two-systems",
+      "objective": "Match-cut same car from ramp contact to open space; visual accent separates suction/grip from gas thrust.",
+      "onScreenText": [],
+      "animationIntent": "Two force systems; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.3",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.3",
+      "narrativeBeatId": "roadster.asset.physics.beat.3",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.3"
+      ],
+      "claimIds": [
+        "roadster.claim.fans"
+      ],
+      "frames": {
+        "start": 246,
+        "end": 358
+      },
+      "sceneType": "remove-air",
+      "objective": "Intimate side section: tire contact at surface and qualitative low-pressure space; animated evacuation outside body, no internal fan positions.",
+      "onScreenText": [],
+      "animationIntent": "Remove the air; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.4",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.4",
+      "narrativeBeatId": "roadster.asset.physics.beat.4",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.4"
+      ],
+      "claimIds": [
+        "roadster.claim.pressure"
+      ],
+      "frames": {
+        "start": 358,
+        "end": 514
+      },
+      "sceneType": "outside-pressure",
+      "objective": "Rotate whole view into inverted hold; sparse outside pressure arrows push toward surface; preserve contact and underfloor region.",
+      "onScreenText": [],
+      "animationIntent": "Outside air does the pressing; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.5",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.5",
+      "narrativeBeatId": "roadster.asset.physics.beat.5",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.5"
+      ],
+      "claimIds": [
+        "roadster.claim.gravity"
+      ],
+      "frames": {
+        "start": 514,
+        "end": 622
+      },
+      "sceneType": "against-gravity",
+      "objective": "Hold inverted: gravity away from road and larger qualitative net pressure force toward it. No numeric vectors or calibrated relative scale.",
+      "onScreenText": [],
+      "animationIntent": "Against gravity; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.6",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.6",
+      "narrativeBeatId": "roadster.asset.physics.beat.6",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.6"
+      ],
+      "claimIds": [
+        "roadster.claim.attribution"
+      ],
+      "frames": {
+        "start": 622,
+        "end": 759
+      },
+      "sceneType": "separate-thrust",
+      "objective": "Camera pulls free of surface; explicitly attributed cold-gas principle, car free in open space.",
+      "onScreenText": [],
+      "animationIntent": "A different job in open air; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.7",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.7",
+      "narrativeBeatId": "roadster.asset.physics.beat.7",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.7"
+      ],
+      "claimIds": [
+        "roadster.claim.gas",
+        "roadster.claim.reaction"
+      ],
+      "frames": {
+        "start": 759,
+        "end": 917
+      },
+      "sceneType": "gas-and-reaction",
+      "objective": "Enlarged detached principle inset shows gas release and opposite reaction, then applied qualitative motion with no visible proprietary nozzle hardware.",
+      "onScreenText": [],
+      "animationIntent": "Gas one way, car the other; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.8",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.8",
+      "narrativeBeatId": "roadster.asset.physics.beat.8",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.8"
+      ],
+      "claimIds": [
+        "roadster.claim.rotation"
+      ],
+      "frames": {
+        "start": 917,
+        "end": 1088
+      },
+      "sceneType": "motion-and-rotation",
+      "objective": "Generic vectors next to car show translation, then off-center action changes orientation; no literal reconstruction of Tesla firing sequence.",
+      "onScreenText": [],
+      "animationIntent": "Movement and rotation; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.9",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.9",
+      "narrativeBeatId": "roadster.asset.physics.beat.9",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.9"
+      ],
+      "claimIds": [
+        "roadster.claim.gas"
+      ],
+      "frames": {
+        "start": 1088,
+        "end": 1166
+      },
+      "sceneType": "finite-gas",
+      "objective": "Separate abstract gas reservoir graphic progressively empties, detached from car body, not an internal tank design.",
+      "onScreenText": [],
+      "animationIntent": "Finite stored gas; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "roadster.production.10",
+      "sourceVisualPlanId": "roadster.asset.physics.visual.10",
+      "narrativeBeatId": "roadster.asset.physics.beat.10",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.10"
+      ],
+      "claimIds": [
+        "roadster.claim.limit"
+      ],
+      "frames": {
+        "start": 1166,
+        "end": 1334
+      },
+      "sceneType": "brief-not-sustained",
+      "objective": "Return to ramp/site motif and grounded car; two visual states recap contact grip versus brief thrust, ending lands rather than endless hover.",
+      "onScreenText": [],
+      "animationIntent": "Short maneuver, not sustained flight; original labeled qualitative geometry, not exact Tesla hardware or film.",
+      "transitionIntent": "Contact versus open air; pressure removal, outside force, gravity, reaction, rotation, finite supply and landing.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    }
+  ],
+  "assets": [
+    {
+      "id": "roadster.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned",
+        "notes": "Original approximate car exterior, surface and external force illustrations; no hardware layout.",
+        "evidence": "content-intelligence/cycles/cycle-18/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "roadster.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource packages",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing Manrope and Space Grotesk",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "roadster.narration",
+      "kind": "audio",
+      "path": "public/audio/roadster/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact evidence-locked wording",
+        "evidence": "src/production/narration/roadster.json"
+      }
+    },
+    {
+      "id": "roadster.soundscape",
+      "kind": "audio",
+      "path": "public/audio/roadster/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesized sound",
+        "rights": "Project-owned",
+        "notes": "Nonliteral texture and force-change cues, not Tesla event recordings.",
+        "evidence": "content-intelligence/cycles/cycle-18/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/roadster.en.vtt",
+    "captionPlanId": "caption-plan.roadster.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "40e53b08e2f929b6b4b748b437db9f8b4bd641952651ffb891261e0b1eb76aa8",
+    "generatorId": "generator.roadster-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact verified narration with Tesla attributions and brief-flight distinction.",
+    "No exact proprietary quantities, internal architecture or nozzle positions.",
+    "Original illustration/reconstruction disclosures on every scene.",
+    "Critical car and force relationships must evolve, not a static slide sequence.",
+    "Caption midpoints, typography, full decode, actual audio signal inspection.",
+    "Separate chronological rendered-sequence and phone-size review; no invented device/listening pass.",
+    "Stop Cycle18 V1 owner master review; no delivery or social actions."
+  ]
+}

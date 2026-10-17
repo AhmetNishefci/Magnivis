@@ -1,0 +1,75 @@
+{
+  "inspectedAt": "2026-10-17T19:01:43.063Z",
+  "reviewer": "Codex decoded-image inspection",
+  "media": {
+    "id": "media.997310839cd7499089429d98798a99be13405369c048fc618bdb91ef76d87c27",
+    "sha256": "997310839cd7499089429d98798a99be13405369c048fc618bdb91ef76d87c27"
+  },
+  "sourceMaster": {
+    "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+    "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+  },
+  "position": {
+    "frame": 28,
+    "seconds": 0.9333333333333333
+  },
+  "dimensions": {
+    "width": 1080,
+    "height": 1920
+  },
+  "passed": true,
+  "pixelEqualityWithActualMasterFrame": true,
+  "bounds": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "x": 172.73501586914062,
+      "y": 797.8945922851562,
+      "width": 625.9984130859375,
+      "height": 314.02655029296875
+    },
+    {
+      "x": 112,
+      "y": 340,
+      "width": 514.671875,
+      "height": 70
+    },
+    {
+      "x": 112,
+      "y": 1220,
+      "width": 654.578125,
+      "height": 47.5
+    },
+    {
+      "x": 112,
+      "y": 1320,
+      "width": 648.890625,
+      "height": 40
+    },
+    {
+      "x": 112,
+      "y": 1363,
+      "width": 432.078125,
+      "height": 36.25
+    },
+    {
+      "x": 110,
+      "y": 1450,
+      "width": 770,
+      "height": 142
+    }
+  ],
+  "boundsMethod": "Exact full canvas plus source browser-measured critical regions; unknown native crop remains null.",
+  "findings": [
+    "Compared actual approved frames0,28,75,119 at full resolution. Selected28 combines a large inverted car, curved surface and complete opening headline.",
+    "Inspected360px-wide selected image; existing source and original-reconstruction disclosure remain visible.",
+    "No new text, crop, image generation, retouch or protected frame; source is the approved original Magnivis animation.",
+    "Select exactPNG or native frame28at0.933333seconds. Do not substitute a different frame without versioned review. Native selector precision and crops untested."
+  ],
+  "nativeDevicePass": false,
+  "coverSelection": "recommendation-for-owner-delivery-review"
+}

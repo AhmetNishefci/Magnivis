@@ -1,0 +1,103 @@
+{
+  "cycleId": "cycle.18",
+  "enteredAt": "2026-10-17T14:34:57.712062Z",
+  "reviewer": "Codex session; not owner factual approval",
+  "sources": [
+    {
+      "id": "tesla-event",
+      "url": "https://www.youtube.com/watch?v=qt5p-_tE8d0",
+      "access": "metadata-only; playback/transcript not inspected",
+      "finding": "Public YouTube oEmbed identifies Roadster Event and author Tesla. Watch-page web extraction contains navigation only; direct request returns HTTP 429. This establishes a titled upload, not its date, location, visual contents, mechanism or independence.",
+      "metadataUrl": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=qt5p-_tE8d0&format=json",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "tesla-kickflip",
+      "url": "https://www.youtube.com/watch?v=r5vsHHPVhJg",
+      "access": "link discovered; playback not inspected",
+      "finding": "Located via secondary link directory. Do not promote a directory\u2019s model-generated observations to our own footage inspection.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "tesla-x",
+      "url": "https://x.com/Tesla/status/2110904290743402880",
+      "access": "unavailable",
+      "finding": "Web request HTTP 403. Public syndication returned empty JSON; no statements/video inspected.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "tesla-roadster",
+      "url": "https://www.tesla.com/roadster?lang=en",
+      "access": "fragment-only",
+      "finding": "Web extraction exposes trim/optional-upgrade footnotes only; direct HTTP 403. No inspected current detailed engineering statement.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "tesla-rights",
+      "url": "https://www.tesla.com/legal/additional-resources",
+      "access": "body inspected",
+      "locator": "Intellectual Property, web extraction lines 109\u2013122",
+      "finding": "Website IP terms reserve copyright and restrict commercial copying/reposting; no blanket production-footage permission found. No definitive legal fair-use conclusion made. No contact or purchase initiated.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "techcrunch",
+      "url": "https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/",
+      "access": "body inspected",
+      "finding": "Reports Texas reveal, inverted ramp and airborne maneuvers; attributes suction and cold-gas systems to Tesla. Secondary reporting, not our independent demonstration inspection.",
+      "copyrightSummaryBudgetWords": 25,
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "aviationweek",
+      "url": "https://aviationweek.com/aerospace/emerging-technologies/tesla-demos-flying-roadster-powered-spacex-cold-gas-thrusters",
+      "access": "headline/date/caption/teaser inspected; full article paywalled",
+      "finding": "Garrett Reim, October 16, 2026. Visible teaser reports passengerless short hop and axial roll over vehicle lineup, with Tesla/SpaceX cold-gas thrusters. Full technical discussion not inspected.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/tesla-set-unveil-next-generation-roadster-sports-ev-after-years-delay-2026-10-15/",
+      "access": "unavailable",
+      "finding": "Repeated tool opens failed; do not claim inspected Reuters support.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "caranddriver",
+      "url": "https://www.caranddriver.com/news/a74165059/tesla-roadster-thrusters-fan-system-explained/",
+      "access": "unavailable",
+      "finding": "Tool open failed; no body inspected.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "ap",
+      "url": "https://apnews.com/article/7d5f19665435b7408025bfb7a2f2f0b7",
+      "access": "search extraction only; direct open failed",
+      "finding": "Discovery corroboration only; not recorded as inspected full article.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "mcmurtry",
+      "url": "https://mcmurtry.com/upside-down-driving/",
+      "access": "body inspected",
+      "locator": "How is it possible?, paragraphs describing inverted rotating platform",
+      "finding": "Manufacturer primary record describes fan-created underfloor vacuum holding a DIFFERENT car inverted, including at standstill. Supports general pressure-force explanation; does not verify any Tesla hardware or stunt.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "nasa-coldgas-lead",
+      "url": "https://www.nasa.gov/wp-content/uploads/2026/05/4-in-space-propulsion-chapter-2026-final.pdf?emrc=6a08bb876b790",
+      "access": "search lead only",
+      "finding": "Cold-gas propulsion background lead; not promoted to completed primary engineering review.",
+      "retrievedDate": "2026-10-17"
+    },
+    {
+      "id": "postcutoff-directory",
+      "url": "https://postcutoff.com/v/tesla-roadster-event-livestream-2026-10-15/",
+      "access": "body inspected for original-source link discovery only",
+      "finding": "Explicitly AI-written observations and unresolved stunt-support questions. Used to locate original YouTube URL, not verify motion, authenticity, timing, support rig, mass, nozzle placement or causal adequacy.",
+      "retrievedDate": "2026-10-17"
+    }
+  ],
+  "verification": "Preliminary research only. No ready KnowledgePackage, script or production approval receipt created."
+}

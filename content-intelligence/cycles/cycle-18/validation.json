@@ -1,0 +1,70 @@
+{
+  "cycleId": "cycle.18",
+  "enteredAt": "2026-10-17T14:36:31.801997+00:00",
+  "result": "Research evidence blocker preserved; no production claimed",
+  "checks": {
+    "pnpm check": {
+      "passed": true,
+      "testFiles": 55,
+      "tests": 514,
+      "typecheck": true,
+      "lint": true,
+      "gitDiffCheck": true
+    },
+    "pnpm artifacts:durable": {
+      "passed": true,
+      "canonicalMedia": {
+        "passed": true,
+        "canonicalPayloads": 1321,
+        "historicalRetentions": 1,
+        "archivalParts": 2,
+        "explicitExceptions": 0,
+        "frozenLegacyBinaryPaths": 442
+      },
+      "durableArtifactCount": 731,
+      "historicalMissingExpectations": [
+        {
+          "artifactId": "wood-frog.historical-master",
+          "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+        }
+      ]
+    },
+    "cycleJournalReplayAll": {
+      "passed": false,
+      "command": "node --import tsx scripts/cycle.ts status",
+      "error": "Historical evidence file digest mismatch while replaying discovery; investigating exact record. No tracked files changed in this task.",
+      "preExistingAtHead": true,
+      "affectedCycle": "cycle.10",
+      "selection": "content-intelligence/cycles/cycle-10/topic-selection.json",
+      "historicalReference": {
+        "path": "docs/PROJECT-STATE.md",
+        "expectedSha256": "2bfdec20f86254916c741efacabfa22f61ccbe705d287cfdd84e832e20f2e5fe",
+        "actualAndHeadSha256": "b9a7f9f92f8f150572f859c4bf819b35bc2587f763d923a319dbdbc92d2b1780"
+      },
+      "resolution": "Reported; historical records and documentation left unchanged. No unrelated repair authorized."
+    },
+    "trackedFilePreservation": {
+      "passed": true,
+      "modifiedTrackedFiles": [],
+      "ohioV2Sha256": "e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091"
+    },
+    "cycle18JournalReplay": {
+      "passed": true,
+      "command": "node --import tsx scripts/cycle.ts status cycle.18",
+      "revision": 1,
+      "stage": "discovery",
+      "exception": "insufficient-central-evidence"
+    }
+  },
+  "notApplicable": [
+    "Media decode, caption validation, rendered-sequence review and full/mobile frame inspection: no media or script created."
+  ],
+  "git": {
+    "branch": "content/cycle-11-discovery",
+    "head": "6699154735cdae39be004949f8ddbf08b22d31bf",
+    "remoteHeadVerified": "6699154735cdae39be004949f8ddbf08b22d31bf",
+    "aheadBehind": "0 0",
+    "newWork": "Untracked Cycle18 evidence/authority/journal only",
+    "commitPushPerformed": false
+  }
+}

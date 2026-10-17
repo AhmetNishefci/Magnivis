@@ -1,0 +1,244 @@
+{
+  "id": "cycle.18",
+  "revision": 12,
+  "premiseApproved": true,
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-18/recovery-v1/topic-selection-v3.json",
+    "sha256": "fbf590c33b8144a91d57fb6243c5287fe80a3d219dc50a935c0acef1b2305f18"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-18/recovery-v1/owner-premise-authority.json",
+    "sha256": "d960173b7ccefada471c04b7081e73277415b4ba221ce5dd4015e8c264d7768d"
+  },
+  "stage": "publication-review",
+  "next": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "topic": {
+    "id": "topic.cycle18.roadster",
+    "rationale": "Reporting clears event-level viability under explicit recovery scope; general physics has primary support."
+  },
+  "research": {
+    "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa",
+    "package": "roadster",
+    "verifiedClaimIds": [
+      "roadster.claim.event",
+      "roadster.claim.fans",
+      "roadster.claim.pressure",
+      "roadster.claim.gravity",
+      "roadster.claim.attribution",
+      "roadster.claim.gas",
+      "roadster.claim.reaction",
+      "roadster.claim.rotation",
+      "roadster.claim.limit"
+    ]
+  },
+  "narration": {
+    "scriptSha256": "112093306ec89560e6bc9047f875b2382995124868dfcb4d228f148a3e2ac6a2",
+    "text": "Tesla showed a Roadster driving upside down, then briefly airborne. But those are two different engineering tricks. Tesla says fans remove air from beneath the car. Lower pressure underneath lets outside air press it against the surface. Upside down, that force must beat gravity. Tesla attributes the airborne motion to cold-gas thrusters. They release compressed air. Gas shoots one way; the car is pushed the other. Different jet directions can change its motion. Off-center pushes can turn it. But the stored gas is limited. A short, controlled maneuver is not proof of sustained, practical flight."
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-18/production-v1/direction-ready.json",
+    "sha256": "bfb0fd16baafa1823189db4ddcd164a3b5e4e73adea5c133e17fcdeedc24d36e"
+  },
+  "productionBegun": true,
+  "workInProgress": null,
+  "candidate": {
+    "media": {
+      "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+      "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+    },
+    "durationSeconds": 44.46666666666667,
+    "factualSafeguards": [
+      "Reported events separately supported by inspected reveal reporting; Tesla mechanisms explicitly attributed.",
+      "General pressure, reaction and torque supported by primary institutional or manufacturer evidence; not independently measured Tesla capability.",
+      "No proprietary nozzle positions, plumbing, pressures, force magnitudes, performance, range or production claims.",
+      "Original reconstruction/physics illustration disclosed throughout; no external footage or protected frames.",
+      "Brief controlled motion is not proof of sustained practical flight."
+    ],
+    "unusualProduction": [
+      "Entirely original exterior/surface/force reconstruction, existing licensed fonts/local narrator and synthesized sound.",
+      "First authoring render retained unapproved after chronological review identified repetitive airborne pose; corrected with displacement, frontal torque, grounded storage and landing.",
+      "No new paid services, delivery packages or external platform actions."
+    ],
+    "platformPreflight": [
+      {
+        "platform": "youtube",
+        "surface": "youtube-shorts-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/youtube.json",
+          "sha256": "8e96f1bae02a3cc5b3cdf0265b8e5c7324bf6f5758b4a77d55be676db57457ee"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/youtube.json",
+          "sha256": "001a13812fcb07bde55ecb24325b4ddd79538d0244439f5f3a7ba9ba04d4d9c8"
+        }
+      },
+      {
+        "platform": "tiktok",
+        "surface": "tiktok-feed",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/tiktok.json",
+          "sha256": "f1753599e3ceaeef82db1dba1fb2cc8b30e95d06ec5816ba94ddbc2cdcf37aa2"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/tiktok.json",
+          "sha256": "6b585092555cf0bae3dba31506fe636e7be9816c545267bc8efab3c18f2db7ef"
+        }
+      },
+      {
+        "platform": "instagram",
+        "surface": "instagram-reels-playback",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/instagram.json",
+          "sha256": "c2a1c1436f1935d670f616e696b3eef4c2065f844a5833104c3b8fbc1062c8dc"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/instagram.json",
+          "sha256": "d30107380f00e3f30147fbfb0e4a40b52df2e54c9c8f21f327efef3b81841a25"
+        }
+      },
+      {
+        "platform": "facebook",
+        "surface": "facebook-reels-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/preflight/facebook.json",
+          "sha256": "12f16734714204a7418add2f825ab276461e4c14dde5219dbfc9bea72d7be6a1"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-18/production-v1/profiles/facebook.json",
+          "sha256": "002f2d232eff195853b3b36ac7aa8a52c24d5a65e095d241bb17f34eb1838719"
+        }
+      }
+    ],
+    "uncertainties": [
+      "No direct inspection of Tesla original replay; credible reporting used under explicit owner recovery scope.",
+      "Exterior, ramp and trajectories qualitative; motion studies slowed and detached gas store conceptual.",
+      "No subjective continuous playback/listening or real-phone/native-platform test.",
+      "Caption phrase boundaries authored approximately within measured takes; machine ASR is not forced word alignment or a synchronization pass.",
+      "Provisional inset profiles and sampled geometry do not prove native platform safety."
+    ]
+  },
+  "masterApproved": true,
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-18/delivery-v1/master-approval-v1.json",
+    "sha256": "3491ae763b11e0d026a87351680d57d467c7ab3c82ec852f2c12e7d3db68f3e7"
+  },
+  "platformMedia": [
+    {
+      "variantId": "roadster.variant.youtube.v1",
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "media": {
+        "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+        "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/youtube/video-evidence-v1.json",
+        "sha256": "454438852cca5694fb2e2ee311310e513b44cf9e02fa5c68d0d83b356df93a02"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/youtube/manifest-v1.json",
+        "sha256": "d34e5beb52a9f3657d7d0e9bb0e79b2dd341883516f49890088f2941885d4153"
+      }
+    },
+    {
+      "variantId": "roadster.variant.tiktok.v1",
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "media": {
+        "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+        "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/tiktok/video-evidence-v1.json",
+        "sha256": "133a6170236a2aab444caf63206783bef9e9a249a0529232913cea05d19caa40"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/tiktok/manifest-v1.json",
+        "sha256": "f8d6fd21a4b0c6b77c6415a3bc16e9717d68a95aec221424e6f2fe4402f351bb"
+      }
+    },
+    {
+      "variantId": "roadster.variant.instagram.v1",
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "media": {
+        "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+        "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/instagram/video-evidence-v1.json",
+        "sha256": "db5b7366abd94041c3c6f5f43946e76c5165d408aecd2d42df552a60f64f6a10"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/instagram/manifest-v1.json",
+        "sha256": "125f57a32e1722a6e96983aa56ab0f67d72a386f653ff039dd366e6a543f67ff"
+      }
+    },
+    {
+      "variantId": "roadster.variant.facebook.v1",
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "media": {
+        "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+        "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/facebook/video-evidence-v1.json",
+        "sha256": "181c64e107401efa1d1f5048f8bf8843c1e41d07a8dae06e4233425583988731"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/facebook/manifest-v1.json",
+        "sha256": "40122b53a5a03ab1d287e9a77516e5e7e5fb63cc1b2d9d1c0ccfacb90e92c8b1"
+      }
+    }
+  ],
+  "publicationAuthorized": false,
+  "observations": []
+}

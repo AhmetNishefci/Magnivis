@@ -1,0 +1,385 @@
+{
+  "id": "roadster.asset.physics",
+  "revision": 1,
+  "knowledgePackageId": "roadster",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand pressure-difference surface grip versus gas-reaction thrust, and why brief airborne motion does not establish sustained practical flight.",
+  "storyAngle": "Surface grip and airborne reaction are distinct.",
+  "hookId": "roadster.hook.two-tricks",
+  "selectedClaimIds": [
+    "roadster.claim.event",
+    "roadster.claim.fans",
+    "roadster.claim.pressure",
+    "roadster.claim.gravity",
+    "roadster.claim.attribution",
+    "roadster.claim.gas",
+    "roadster.claim.reaction",
+    "roadster.claim.rotation",
+    "roadster.claim.limit"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 35,
+    "maximum": 45
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "roadster.asset.physics.script.1",
+        "type": "factual",
+        "text": "Tesla showed a Roadster driving upside down, then briefly airborne.",
+        "claimIds": [
+          "roadster.claim.event"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.2",
+        "type": "factual",
+        "text": "But those are two different engineering tricks.",
+        "claimIds": [
+          "roadster.claim.fans",
+          "roadster.claim.attribution"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.3",
+        "type": "factual",
+        "text": "Tesla says fans remove air from beneath the car.",
+        "claimIds": [
+          "roadster.claim.fans"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.4",
+        "type": "factual",
+        "text": "Lower pressure underneath lets outside air press it against the surface.",
+        "claimIds": [
+          "roadster.claim.pressure"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.5",
+        "type": "factual",
+        "text": "Upside down, that force must beat gravity.",
+        "claimIds": [
+          "roadster.claim.gravity"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.6",
+        "type": "factual",
+        "text": "Tesla attributes the airborne motion to cold-gas thrusters.",
+        "claimIds": [
+          "roadster.claim.attribution"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.7",
+        "type": "factual",
+        "text": "They release compressed air. Gas shoots one way; the car is pushed the other.",
+        "claimIds": [
+          "roadster.claim.gas",
+          "roadster.claim.reaction"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.8",
+        "type": "factual",
+        "text": "Different jet directions can change its motion. Off-center pushes can turn it.",
+        "claimIds": [
+          "roadster.claim.rotation"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.9",
+        "type": "factual",
+        "text": "But the stored gas is limited.",
+        "claimIds": [
+          "roadster.claim.gas"
+        ]
+      },
+      {
+        "id": "roadster.asset.physics.script.10",
+        "type": "factual",
+        "text": "A short, controlled maneuver is not proof of sustained, practical flight.",
+        "claimIds": [
+          "roadster.claim.limit"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "roadster.asset.physics.beat.1",
+      "label": "Inverted, then airborne",
+      "purpose": "Large white wedge prototype on a curved ramp; separate brief hop. Clearly labeled illustrative reconstruction of reported events, not recovered footage or exact stunt trajectory.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.1"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.2",
+      "label": "Two force systems",
+      "purpose": "Match-cut same car from ramp contact to open space; visual accent separates suction/grip from gas thrust.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.2"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.3",
+      "label": "Remove the air",
+      "purpose": "Intimate side section: tire contact at surface and qualitative low-pressure space; animated evacuation outside body, no internal fan positions.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.3"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.4",
+      "label": "Outside air does the pressing",
+      "purpose": "Rotate whole view into inverted hold; sparse outside pressure arrows push toward surface; preserve contact and underfloor region.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.4"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.5",
+      "label": "Against gravity",
+      "purpose": "Hold inverted: gravity away from road and larger qualitative net pressure force toward it. No numeric vectors or calibrated relative scale.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.5"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.6",
+      "label": "A different job in open air",
+      "purpose": "Camera pulls free of surface; explicitly attributed cold-gas principle, car free in open space.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.6"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.7",
+      "label": "Gas one way, car the other",
+      "purpose": "Enlarged detached principle inset shows gas release and opposite reaction, then applied qualitative motion with no visible proprietary nozzle hardware.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.7"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.8",
+      "label": "Movement and rotation",
+      "purpose": "Generic vectors next to car show translation, then off-center action changes orientation; no literal reconstruction of Tesla firing sequence.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.8"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.9",
+      "label": "Finite stored gas",
+      "purpose": "Separate abstract gas reservoir graphic progressively empties, detached from car body, not an internal tank design.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.9"
+      ]
+    },
+    {
+      "id": "roadster.asset.physics.beat.10",
+      "label": "Short maneuver, not sustained flight",
+      "purpose": "Return to ramp/site motif and grounded car; two visual states recap contact grip versus brief thrust, ending lands rather than endless hover.",
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.10"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "roadster.asset.physics.visual.1",
+      "narrativeBeatId": "roadster.asset.physics.beat.1",
+      "objective": "Large white wedge prototype on a curved ramp; separate brief hop. Clearly labeled illustrative reconstruction of reported events, not recovered footage or exact stunt trajectory.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.1"
+      ],
+      "claimIds": [
+        "roadster.claim.event"
+      ],
+      "notes": "Inverted, then airborne; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.2",
+      "narrativeBeatId": "roadster.asset.physics.beat.2",
+      "objective": "Match-cut same car from ramp contact to open space; visual accent separates suction/grip from gas thrust.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.2"
+      ],
+      "claimIds": [
+        "roadster.claim.fans",
+        "roadster.claim.attribution"
+      ],
+      "notes": "Two force systems; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.3",
+      "narrativeBeatId": "roadster.asset.physics.beat.3",
+      "objective": "Intimate side section: tire contact at surface and qualitative low-pressure space; animated evacuation outside body, no internal fan positions.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.3"
+      ],
+      "claimIds": [
+        "roadster.claim.fans"
+      ],
+      "notes": "Remove the air; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.4",
+      "narrativeBeatId": "roadster.asset.physics.beat.4",
+      "objective": "Rotate whole view into inverted hold; sparse outside pressure arrows push toward surface; preserve contact and underfloor region.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.4"
+      ],
+      "claimIds": [
+        "roadster.claim.pressure"
+      ],
+      "notes": "Outside air does the pressing; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.5",
+      "narrativeBeatId": "roadster.asset.physics.beat.5",
+      "objective": "Hold inverted: gravity away from road and larger qualitative net pressure force toward it. No numeric vectors or calibrated relative scale.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.5"
+      ],
+      "claimIds": [
+        "roadster.claim.gravity"
+      ],
+      "notes": "Against gravity; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.6",
+      "narrativeBeatId": "roadster.asset.physics.beat.6",
+      "objective": "Camera pulls free of surface; explicitly attributed cold-gas principle, car free in open space.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.6"
+      ],
+      "claimIds": [
+        "roadster.claim.attribution"
+      ],
+      "notes": "A different job in open air; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.7",
+      "narrativeBeatId": "roadster.asset.physics.beat.7",
+      "objective": "Enlarged detached principle inset shows gas release and opposite reaction, then applied qualitative motion with no visible proprietary nozzle hardware.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.7"
+      ],
+      "claimIds": [
+        "roadster.claim.gas",
+        "roadster.claim.reaction"
+      ],
+      "notes": "Gas one way, car the other; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.8",
+      "narrativeBeatId": "roadster.asset.physics.beat.8",
+      "objective": "Generic vectors next to car show translation, then off-center action changes orientation; no literal reconstruction of Tesla firing sequence.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.8"
+      ],
+      "claimIds": [
+        "roadster.claim.rotation"
+      ],
+      "notes": "Movement and rotation; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.9",
+      "narrativeBeatId": "roadster.asset.physics.beat.9",
+      "objective": "Separate abstract gas reservoir graphic progressively empties, detached from car body, not an internal tank design.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.9"
+      ],
+      "claimIds": [
+        "roadster.claim.gas"
+      ],
+      "notes": "Finite stored gas; original labeled qualitative geometry, not exact Tesla hardware or film."
+    },
+    {
+      "id": "roadster.asset.physics.visual.10",
+      "narrativeBeatId": "roadster.asset.physics.beat.10",
+      "objective": "Return to ramp/site motif and grounded car; two visual states recap contact grip versus brief thrust, ending lands rather than endless hover.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original exterior approximation, generic surface, pressure and thrust illustration; no protected frames."
+      ],
+      "scriptSegmentIds": [
+        "roadster.asset.physics.script.10"
+      ],
+      "claimIds": [
+        "roadster.claim.limit"
+      ],
+      "notes": "Short maneuver, not sustained flight; original labeled qualitative geometry, not exact Tesla hardware or film."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established local Kokoro af_heart, clear curious delivery, no product-advertising hype.",
+    "pronunciationNotes": [
+      "Tesla; Roadster; cold-gas; off-center. Full context normalization, no new narrator audition."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review; not owner factual/master approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.18",
+      "reviewSha256": "1e433f968d59771795d7c09e1f8df41f34170dc43a792ea19d1b7e51126f86aa"
+    },
+    "approvedAt": "2026-10-17",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-17T19:09:06.329389Z",
+  "typecheck": "passed",
+  "lint": "passed",
+  "pnpmCheck": {
+    "passed": false,
+    "attempts": 2,
+    "testsPassedPerDefaultRun": 513,
+    "failure": "Existing media-artifacts durability test exceeded unchanged5000ms timeout;5068ms first attempt,5004ms retry. No assertion failure reported.",
+    "defaultWorkers": 4
+  },
+  "fullSerialSuite": {
+    "passed": true,
+    "command": "pnpm exec vitest run --maxWorkers 1",
+    "testFiles": 55,
+    "tests": 514,
+    "durationSeconds": 96.32,
+    "configurationAndAssertionsUnchanged": true,
+    "result": "RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  55 passed (55)\n      Tests  514 passed (514)\n   Start at  21:06:36\n   Duration  96.32s (tests 95%, import 4%, transform 1%)"
+  },
+  "workingAndStagedWhitespace": "passed",
+  "artifactDurability": "passed",
+  "canonicalPayloadCount": 1344,
+  "legacyDurableCount": 731,
+  "masterUnchanged": true,
+  "mediaAndPackageValidation": "passed",
+  "releaseValidation": {
+    "path": "content-intelligence/cycles/cycle-18/delivery-v1/qa/release-validation-v1.json",
+    "sha256": "b6e2aee8e7f0000d2fcd6f32127e1deff353811a62330683aaf6093e64df6f83"
+  },
+  "remainingIssues": [
+    "Default four-worker pnpm check has a borderline hashing timeout; unchanged full suite passes serially. No unrelated runner configuration change.",
+    "Pre-existing Cycle10 historical evidence digest mismatch affects project-wide status; Cycle18 independently replays.",
+    "Native presentation/device/cover/account-control uncertainties remain itemized in risk-register-v1.json."
+  ],
+  "git": {
+    "branch": "content/cycle-11-discovery",
+    "head": "6699154735cdae39be004949f8ddbf08b22d31bf",
+    "commitPushPerformed": false,
+    "stagedWork": "Only existing Cycle18 production/research, current approval/delivery and narrow shared indices; no unrelated files.",
+    "untrackedWork": "None after final record staging."
+  },
+  "publicationAuthorized": false,
+  "externalActions": []
+}

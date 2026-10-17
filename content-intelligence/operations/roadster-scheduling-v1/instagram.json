@@ -1,0 +1,57 @@
+{
+  "cycleId": "cycle.18",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-18T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-18T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-17T19:22:57.456243Z",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "platform": "instagram",
+  "ownerReport": {
+    "path": "content-intelligence/operations/roadster-scheduling-v1/owner-report.json",
+    "sha256": "dac9795f935648d0cb08ee62701f5c952d59507e19265ac00fe49392261f020c"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/roadster-cycle18-candidate-v1.mp4",
+    "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-18/delivery-v1/release-v1.json",
+    "sha256": "757d000c6630fe550b2a6f17753117ac23fcc15b6bb2d6563d8621cfab6e3fac"
+  },
+  "intendedVariant": {
+    "id": "roadster.variant.instagram.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc",
+      "sha256": "2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-18/delivery-v1/instagram/manifest-v1.json",
+    "sha256": "125f57a32e1722a6e96983aa56ab0f67d72a386f653ff039dd366e6a543f67ff"
+  },
+  "identityBasis": "Owner-designated master and prepared package; actual upload identity not independently verified."
+}

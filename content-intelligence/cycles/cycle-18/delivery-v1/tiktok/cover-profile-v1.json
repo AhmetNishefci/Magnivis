@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.roadster.tiktok.cover-v1",
+  "revision": 1,
+  "platform": "tiktok",
+  "surface": "tiktok-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-17T19:01:43.063Z",
+  "reviewAfter": "2026-10-24T19:01:43.063Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Exact canvas checked; native thumbnail composition unmeasured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail UI geometry unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native cover overlay geometry unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Profile/grid/feed/search crop unknown; no crop invented.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/qa/selected-cover-v1.json",
+        "sha256": "caab225cb86ce2dee3a996903f02cb956f4281a7599b4b36f656414dbb7d30d5"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-18/delivery-v1/policy-inspection-v1.json",
+        "sha256": "7745f6e79e46e536455bc1e8f1e4b813a1824aff49f9341b7785388082225e11"
+      }
+    ],
+    "rationale": "Exact decoded1080×1920PNG or corresponding native frame; actual controls/crops untested."
+  }
+}

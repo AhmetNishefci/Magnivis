@@ -1,0 +1,69 @@
+import React,{useEffect,useState} from 'react';
+import {AbsoluteFill,Audio,Sequence,staticFile,useCurrentFrame,delayRender,continueRender,interpolate} from 'remotion';
+import '@fontsource/manrope/latin-600.css';
+import '@fontsource/space-grotesk/latin-500.css';
+import narration from '../production/narration/roadster.json';
+import captions from '../captions/plans/roadster.json';
+import {RoadsterWorld,project,type Camera} from '../components/roadster/RoadsterWorld';
+const cream='#eef1ec',cyan='#7fe8e2',amber='#f3bd77',dim='#bdc9c7',ink='#111b22';
+const smooth=(f:number,a:number,b:number)=>{const t=interpolate(f,[a,b],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});return t*t*(3-2*t);};
+const Label:React.FC<{x?:number;y:number;size?:number;color?:string;kind?:string;children:React.ReactNode}>=({x=112,y,size=38,color=cream,kind='critical',children})=><div data-qabounds={kind} style={{position:'absolute',left:x,top:y,fontSize:size,color,lineHeight:1.25,fontWeight:600,whiteSpace:'pre',textShadow:'0 2px 12px #111b22'}}>{children}</div>;
+const Arrow:React.FC<{x:number;y:number;dx:number;dy:number;color:string;opacity?:number}>=({x,y,dx,dy,color,opacity=1})=>{const length=Math.hypot(dx,dy),ux=dx/length,uy=dy/length;return <g opacity={opacity} data-qabounds="critical-visual" aria-label="Qualitative force direction"><path d={`M${x} ${y}l${dx} ${dy}m${-ux*19-uy*12} ${-uy*19+ux*12}L${x+dx} ${y+dy}l${-ux*19+uy*12} ${-uy*19-ux*12}`} fill="none" stroke={color} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round"/></g>;};
+const Svg:React.FC<{children:React.ReactNode}>=({children})=><svg width={1080} height={1920} style={{position:'absolute',inset:0}}>{children}</svg>;
+const Inverted:React.FC<{f:number;stage:number}>=({f,stage})=>{
+ const camera:Camera={yaw:0,tilt:0,scale:151,target:[0,2.35,0],cy:870},phase=(f%50)/50;
+ return <><Svg><RoadsterWorld camera={camera} position={[0,3,0]} pitch={Math.PI} surfaceY={3}/>
+ <g opacity={.5} data-qabounds="critical-visual" aria-label="Qualitative lower-pressure region between body and surface"><path d="M235 779H765V807H235Z" fill={cyan}/></g>
+ {stage===2&&Array.from({length:15},(_,i)=>{const t=((i/15+phase)%1);return <circle key={i} cx={250+t*525} cy={798-Math.sin(t*Math.PI)*10} r={3.8} fill={cyan} opacity={1-t*.5}/>;})}
+ {stage===3&&[300,490,680].map(x=><Arrow key={x} x={x} y={1120+phase*12} dx={0} dy={-96} color={cyan}/>)}
+ {stage===4&&<><Arrow x={347} y={1130} dx={0} dy={-130} color={cyan}/><Arrow x={660} y={1040} dx={0} dy={100} color={amber}/></>}
+ </Svg>
+ <Label y={340} size={52}>{stage===2?'First: remove the air.':stage===3?'Outside air does the pressing.':'Enough to hold\nagainst gravity.'}</Label>
+ {stage===2?<Label y={1185} color={cyan}>Underfloor air · schematic</Label>:stage===3?<Label y={1200} color={cyan}>Pressure pushes toward the surface</Label>:<><Label x={230} y={1190} color={cyan} size={34}>Toward surface</Label><Label x={600} y={1190} color={amber} size={34}>Gravity</Label></>}
+ </>;
+};
+const OpenAir:React.FC<{f:number;stage:number;duration:number}>=({f,stage,duration})=>{
+ const t=f/duration,rotation=stage===7?smooth(f,duration*.6,duration*.9)*.65:0,height=stage===9?.7*(1-smooth(f,0,duration*.5)):stage===5?.2+smooth(f,15,60)*.65:stage===6?.95:stage===8?0:.6;
+ const camera:Camera={yaw:stage===7?-1.05:stage===9?-.5:.43,tilt:stage===9?.18:.27,scale:stage===7?180:stage===8?95:stage===9?146:135,target:[0,.5,0],cy:stage===8?1120:970};
+ const x=stage===6?-.8*smooth(f,duration*.35,duration*.8):0;
+ const forcePoint=project([0,height,-1.15],camera),centerPoint=project([0,height,0],camera);
+ return <><Svg><RoadsterWorld camera={camera} position={[x,height,0]} roll={rotation} ground/>
+ {stage===5&&<><Arrow x={480} y={1160} dx={0} dy={-120} color={amber}/><path d="M530 1090l-23 100m52-100l22 100" stroke={amber} strokeWidth={3} opacity={.35}/></>}
+ {stage===6&&<g data-qabounds="critical-visual" aria-label="Detached gas-release principle, not an installed nozzle"><rect x={445} y={1137} width={68} height={70} rx={12} fill="#2e3c44" stroke={dim} strokeWidth={2}/><path d="M511 1158h34l22 28h-56Z" fill={amber}/>{Array.from({length:18},(_,i)=>{const q=(i/18+f/42)%1;return <circle key={i} cx={570+q*205} cy={1173+Math.sin(i*3.1)*q*24} r={2+q*4} fill={amber} opacity={1-q}/>;})}<Arrow x={437} y={1173} dx={-170} dy={0} color={cyan}/></g>}
+ {stage===7&&(t<.58?<Arrow x={centerPoint.x} y={centerPoint.y+125} dx={0} dy={-110} color={amber}/>:<><Arrow x={forcePoint.x} y={forcePoint.y+120} dx={0} dy={-130} color={amber}/><path d="M655 727Q755 775 715 852" fill="none" stroke={cyan} strokeWidth={5}/><path d="M701 838l14 14 15-16" fill="none" stroke={cyan} strokeWidth={5}/></>)}
+ {stage===8&&<g data-qabounds="critical-visual" aria-label="Abstract finite gas supply, not a vehicle tank layout"><rect x={240} y={700} width={520} height={150} rx={55} fill="none" stroke={dim} strokeWidth={2}/>{Array.from({length:25},(_,i)=>{const visible=i/25<1-t*.68;return <circle key={i} cx={275+i*18.5} cy={775+Math.sin(i*2)*40} r={9} fill={amber} opacity={visible?.9:.08}/>;})}</g>}
+ </Svg>
+ <Label y={340} size={stage===9?50:52}>{stage===5?'Then: a different force.':stage===6?'Gas one way. Car the other.':stage===7?(t<.58?'Change the motion.':'An off-center push\ncan turn it.'):stage===8?'Stored gas is finite.':'A maneuver.\nNot proof of practical flight.'}</Label>
+ {stage===5&&<Label y={1220} color={amber} size={36}>Cold-gas thrust · attributed to Tesla</Label>}
+ {stage===6&&<><Label x={238} y={1240} color={cyan} size={34}>Reaction</Label><Label x={637} y={1240} color={amber} size={34}>Gas out</Label></>}
+ {stage===7&&<Label y={1215} size={34} color={amber}>Force directions only · no nozzle layout</Label>}
+ {stage===8&&<Label y={885} size={36} color={amber}>Gas supply · conceptual</Label>}
+ {stage===9&&<><Label x={210} y={1190} color={cyan} size={38}>Surface grip</Label><Label x={605} y={1190} color={amber} size={38}>Brief thrust</Label></>}
+ </>;
+};
+const Hook:React.FC<{f:number;comparison?:boolean}>=({f,comparison=false})=>{
+ const inAir=comparison?f>36:f>98;
+ const theta=2.62+.49*smooth(f,0,75),position:[number,number,number]=[5*Math.sin(theta),5-5*Math.cos(theta),0];
+ const camera:Camera={yaw:.45,tilt:.29,scale:142,target:[position[0],position[1]-.2,0],cy:910};
+ return <>{inAir?<Svg><RoadsterWorld camera={{...camera,target:[0,1,0],yaw:.52}} position={[0,1.45,0]} roll={-.2+.4*smooth(f,80,130)} ground/></Svg>:<Svg><RoadsterWorld camera={camera} position={position} pitch={theta} curved/></Svg>}
+ <Label y={340} size={56}>{comparison?'Two systems. Two jobs.':inAir?'Then, briefly airborne.':'A car. Upside down.'}</Label>
+ <Label y={1220} color={inAir?amber:cyan} size={38}>{comparison?(inAir?'Gas thrust':'Surface grip'):'Roadster prototype · reported reveal'}</Label>
+ </>;
+};
+export const Roadster:React.FC<{inspectQa?:boolean}>=({inspectQa=false})=>{
+ const frame=useCurrentFrame(),[handle]=useState(()=>delayRender('Roadster fonts')),[ready,setReady]=useState(false);
+ useEffect(()=>{Promise.all([document.fonts.load('600 54px Manrope'),document.fonts.load('500 20px "Space Grotesk"')]).then(()=>setReady(true));},[]);
+ const index=narration.cues.reduce((last,c,i)=>frame>=Math.round(c.start*30)?i:last,0),f=frame-Math.round(narration.cues[index]!.start*30),duration=(index+1<narration.cues.length?Math.round(narration.cues[index+1]!.start*30):narration.durationFrames)-Math.round(narration.cues[index]!.start*30),cue=captions.cues.find(c=>frame>=c.startFrame&&frame<c.endFrame);
+ useEffect(()=>{if(!ready)return;if(inspectQa){const root=document.querySelector('[data-roadster-root]')!.getBoundingClientRect(),scale=root.width/1080,bounds=[...document.querySelectorAll<Element>('[data-qabounds]')].map(el=>{const r=el.getBoundingClientRect();return {kind:el.getAttribute('data-qabounds')!,text:el.textContent||el.getAttribute('aria-label')||'',x:(r.x-root.x)/scale,y:(r.y-root.y)/scale,width:r.width/scale,height:r.height/scale};});const caption=document.querySelector<HTMLElement>('[data-caption]');console.log('ROADSTER_LAYOUT_QA '+JSON.stringify({frame,fontsLoaded:document.fonts.check('600 54px Manrope'),bounds,caption:caption?{width:caption.scrollWidth,height:caption.scrollHeight,availableWidth:caption.clientWidth,availableHeight:caption.clientHeight}:null,disclosure:true}));}continueRender(handle);},[frame,inspectQa,ready,handle]);
+ const source=index<2?'Reported reveal · Car and Driver':index<5?'Physics: pressure difference · McMurtry':index===5?'Tesla claim · reported by Car and Driver':index===7?'Physics: forces & torque · NASA / OpenStax':'Physics: gas reaction & finite supply · NASA';
+ return <AbsoluteFill data-roadster-root style={{background:ink,color:cream,fontFamily:'Manrope',overflow:'hidden'}}>
+ <AbsoluteFill style={{background:'radial-gradient(ellipse at 48% 50%,#53646a 0%,#23343d 45%,#111b22 78%)'}}/>
+ {index<2?<Hook f={f} comparison={index===1}/>:index<5?<Inverted f={f} stage={index}/>:<OpenAir f={f} stage={index} duration={duration}/>}
+ <div style={{position:'absolute',left:112,top:265,fontSize:20,letterSpacing:5,opacity:.7,fontFamily:'Space Grotesk'}}>MAGNIVIS</div>
+ <Label y={1320} size={32} color={dim} kind="disclosure">{index<2?'Original reconstruction · not event footage':(index>=5&&index<=7?'Physics study · motion slowed':'Original physics illustration · qualitative')}</Label>
+ <Label y={1363} size={29} color={dim} kind="disclosure">{source}</Label>
+ <div style={{position:'absolute',left:0,top:1410,width:1080,height:510,background:'linear-gradient(transparent,#111b22 28%)'}}/>
+ {cue&&<div data-qabounds="caption-midpoint" data-caption style={{position:'absolute',left:110,top:1450,width:770,height:142,display:'flex',alignItems:'center',justifyContent:'center',fontSize:54,fontWeight:600,lineHeight:1.24,textAlign:'center',whiteSpace:'pre-line',textShadow:'0 2px 12px #111b22'}}>{cue.lines.join('\n')}</div>}
+ {narration.cues.map(c=><Sequence key={c.id} from={Math.round(c.start*30)} durationInFrames={Math.ceil(c.duration*30)}><Audio src={staticFile(c.file)} volume={1}/></Sequence>)}<Audio src={staticFile('audio/roadster/soundscape.wav')} volume={.17}/>
+ </AbsoluteFill>;
+};
