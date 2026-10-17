@@ -1,0 +1,384 @@
+{
+  "id": "mirror-eyes.asset.perception",
+  "revision": 1,
+  "knowledgePackageId": "mirror-eyes",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand how simultaneous looking and moving, rapid retinal motion, reduced sensitivity and visual masking differ from watching a recording afterward.",
+  "storyAngle": "The eyes doing the observing are the eyes making the movement; later playback changes that timing.",
+  "hookId": "mirror-eyes.hook.try",
+  "selectedClaimIds": [
+    "mirror-eyes.claim.mirror",
+    "mirror-eyes.claim.saccade",
+    "mirror-eyes.claim.simultaneous",
+    "mirror-eyes.claim.sensitivity",
+    "mirror-eyes.claim.masking",
+    "mirror-eyes.claim.not-blind",
+    "mirror-eyes.claim.playback",
+    "mirror-eyes.claim.continuity"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 35,
+    "maximum": 50
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "mirror-eyes.asset.perception.script.1",
+        "type": "factual",
+        "text": "Look from one eye to the other in a mirror. Why can't you normally catch the movement?",
+        "claimIds": [
+          "mirror-eyes.claim.mirror"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.2",
+        "type": "factual",
+        "text": "Now record your eyes, and watch it back. There it is.",
+        "claimIds": [
+          "mirror-eyes.claim.playback"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.3",
+        "type": "factual",
+        "text": "Each quick jump is a saccade.",
+        "claimIds": [
+          "mirror-eyes.claim.saccade"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.4",
+        "type": "factual",
+        "text": "In the mirror, the eyes you're watching are also the eyes doing the looking.",
+        "claimIds": [
+          "mirror-eyes.claim.simultaneous"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.5",
+        "type": "factual",
+        "text": "As they turn, the image sweeps across the retina.",
+        "claimIds": [
+          "mirror-eyes.claim.saccade"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.6",
+        "type": "factual",
+        "text": "Visual sensitivity drops around the movement. That's saccadic suppression.",
+        "claimIds": [
+          "mirror-eyes.claim.sensitivity"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.7",
+        "type": "factual",
+        "text": "The clear views before and after can also mask the brief blur.",
+        "claimIds": [
+          "mirror-eyes.claim.masking"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.8",
+        "type": "factual",
+        "text": "You aren't completely blind. These effects help keep vision stable.",
+        "claimIds": [
+          "mirror-eyes.claim.not-blind",
+          "mirror-eyes.claim.continuity"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.9",
+        "type": "factual",
+        "text": "Watching a recording later separates the movement from your own eye turn.",
+        "claimIds": [
+          "mirror-eyes.claim.playback"
+        ]
+      },
+      {
+        "id": "mirror-eyes.asset.perception.script.10",
+        "type": "factual",
+        "text": "The mirror never stopped showing it. Your visual system normally keeps the sweep out of awareness.",
+        "claimIds": [
+          "mirror-eyes.claim.simultaneous",
+          "mirror-eyes.claim.continuity"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "mirror-eyes.asset.perception.beat.1",
+      "label": "The missing movement",
+      "purpose": "Over-shoulder person at a framed mirror; two reflected eyes and gaze targets. Push toward eyes while subjective state is clearly labeled. No third-person view falsely frozen.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.1"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.2",
+      "label": "The same movement recorded",
+      "purpose": "Camera icon beside same mirror portrait, then visibly transition to later playback with a moving iris. Recorded external view, not direct mirror perception.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.2"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.3",
+      "label": "One fast gaze shift",
+      "purpose": "Macro eyes show a brief ballistic movement then a labeled slowed replay revealing continuous rotation, no teleportation presented as physical fact.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.3"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.4",
+      "label": "Observer and observed",
+      "purpose": "Pull back to shoulder and reflection, highlight that reflected eyes and observer are the same person. Optical link stays continuous.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.4"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.5",
+      "label": "A retinal sweep",
+      "purpose": "Same eye pivots in simplified side section; light from a fixed mirror feature falls on changing retinal positions. Not a detailed neural circuit.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.5"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.6",
+      "label": "Reduced sensitivity",
+      "purpose": "Carry eye and retinal sweep into a softly attenuated feature illustration; qualitative dip spans before/during/after, never a flat zero or blackout.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.6"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.7",
+      "label": "Clear views hide blur",
+      "purpose": "Same eye closeup expands into before/blur/after sequence, then clear flank views visually dominate. Label perception schematic, time expanded.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.7"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.8",
+      "label": "Continuity without blackout",
+      "purpose": "First-person mirror view shifts gaze target and resolves without black frames; stable perception illustration, not literal subjective recording or complete explanation of spatial constancy.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.8"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.9",
+      "label": "The timing difference",
+      "purpose": "Large camera/playback frame shows filmed iris moving while a small stationary viewer-eye motif establishes steady current gaze. Replay timeline distinct from original recording.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.9"
+      ]
+    },
+    {
+      "id": "mirror-eyes.asset.perception.beat.10",
+      "label": "The mirror stayed honest",
+      "purpose": "Return to original person/mirror with continuous reflected movement on external view; momentary direct-perception annotation and confident resolved ending.",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.10"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "mirror-eyes.asset.perception.visual.1",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.1",
+      "objective": "Over-shoulder person at a framed mirror; two reflected eyes and gaze targets. Push toward eyes while subjective state is clearly labeled. No third-person view falsely frozen.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.1"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.mirror"
+      ],
+      "notes": "The missing movement; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.2",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.2",
+      "objective": "Camera icon beside same mirror portrait, then visibly transition to later playback with a moving iris. Recorded external view, not direct mirror perception.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.2"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.playback"
+      ],
+      "notes": "The same movement recorded; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.3",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.3",
+      "objective": "Macro eyes show a brief ballistic movement then a labeled slowed replay revealing continuous rotation, no teleportation presented as physical fact.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.3"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.saccade"
+      ],
+      "notes": "One fast gaze shift; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.4",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.4",
+      "objective": "Pull back to shoulder and reflection, highlight that reflected eyes and observer are the same person. Optical link stays continuous.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.4"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.simultaneous"
+      ],
+      "notes": "Observer and observed; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.5",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.5",
+      "objective": "Same eye pivots in simplified side section; light from a fixed mirror feature falls on changing retinal positions. Not a detailed neural circuit.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.5"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.saccade"
+      ],
+      "notes": "A retinal sweep; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.6",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.6",
+      "objective": "Carry eye and retinal sweep into a softly attenuated feature illustration; qualitative dip spans before/during/after, never a flat zero or blackout.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.6"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.sensitivity"
+      ],
+      "notes": "Reduced sensitivity; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.7",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.7",
+      "objective": "Same eye closeup expands into before/blur/after sequence, then clear flank views visually dominate. Label perception schematic, time expanded.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.7"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.masking"
+      ],
+      "notes": "Clear views hide blur; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.8",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.8",
+      "objective": "First-person mirror view shifts gaze target and resolves without black frames; stable perception illustration, not literal subjective recording or complete explanation of spatial constancy.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.8"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.not-blind",
+        "mirror-eyes.claim.continuity"
+      ],
+      "notes": "Continuity without blackout; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.9",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.9",
+      "objective": "Large camera/playback frame shows filmed iris moving while a small stationary viewer-eye motif establishes steady current gaze. Replay timeline distinct from original recording.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.9"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.playback"
+      ],
+      "notes": "The timing difference; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    },
+    {
+      "id": "mirror-eyes.asset.perception.visual.10",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.10",
+      "objective": "Return to original person/mirror with continuous reflected movement on external view; momentary direct-perception annotation and confident resolved ending.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original layered illustrated portrait, eye macro, mirror frame, retinal side section and camera/playback motifs."
+      ],
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.10"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.simultaneous",
+        "mirror-eyes.claim.continuity"
+      ],
+      "notes": "The mirror stayed honest; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Local Kokoro af_heart, curious precise delivery, speed1.",
+    "pronunciationNotes": [
+      "saccade /səˈkɑːd/; saccadic /səˈkædɪk/; retina. Inspect normalization and actual signal."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review, not owner scientific approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.19",
+      "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+    },
+    "approvedAt": "2026-10-17",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

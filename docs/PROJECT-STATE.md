@@ -480,3 +480,26 @@ Owner selects exact Ohio V2 `e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4
 Owner personally reviewed exact Ohio V2 on a phone and explicitly passed audio QA, caption synchronization and phone presentation/readability, then approved it as final master. Approval and three passes: `content-intelligence/cycles/cycle-17/delivery-v2/master-approval-v2.json` and `owner-audio-device-qa-v2.json`. Earlier conditional selection and pending-QA evidence retain their historical meaning; the final approval satisfies that condition without changing any master.
 
 Exact MP4 `artifacts/masters/ohio-cycle17-candidate-v2.mp4`, SHA-256 `e870cc600484eda2a366e921987db61d273ebd04a30bef25fa4019d12e6a9091`, remains the single canonical video for all four reference-only packages beneath `content-intelligence/cycles/cycle-17/delivery-v2/{youtube,tiktok,instagram,facebook}/`. Recommended cover is actual archival frame107 (3.566667s), decoded losslessly without retouching; new cover approval and native platform crops remain unconfirmed. Native journal revision15 is publication-review; the explicit owner-facing stop is **AHMET — CYCLE #17 DELIVERY REVIEW**. 48 exact presentation unknowns remain unaccepted. No V3, encode, upload, scheduling, publication, commit or push. Earlier-cycle work and V1/V2 evidence preserved.
+
+
+## 2026-10-17 — Cycle #19 mirror eyes V1 at owner master review
+
+The explicit Cycle19 production brief starts the owner-selected mirror-eye phenomenon and authorizes internal research/development/production through V1. It supersedes the prior idle/no-new-cycle continuation wording only for this cycle. The independent journal is `workflow/cycles/cycle.19`, revision7, stage `master-review`; current metadata is indexed in `workflow/project-state.json`. Earlier cycles and platform state are unchanged.
+
+One original V1 is at `artifacts/masters/mirror-eyes-cycle19-candidate-v1.mp4`,46.1667seconds,SHA-256 `c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d`. The116-word verified narration distinguishes ordinary mirror perception, retinal sweep, partial perisaccadic sensitivity reduction, visual masking and later camera playback. It rejects total blindness/time-deletion framing and discloses illustrative/expanded timing.
+
+Owner master handoff and exact claim mapping: `content-intelligence/cycles/cycle-19/owner-review.md`. Designed34-phrase captions, local af_heart, original synthesized sound and original portrait/eye animation. Canonical decoded evidence: `artifacts/qa-evidence/mirror-eyes-cycle19-v1/`. Local phone-size and sampled geometry evidence do not establish real-device/native-UI safety. Subjective continuous playback/listening, technical-term pronunciation and creative acceptance remain owner review items. No delivery packages, uploads, scheduling, publication, existing-post changes or master approval.
+
+
+## 2026-10-17 — Cycle #19 V1 approved; four delivery packages prepared
+
+Owner viewed V1, reported it looks good and approved exact master `c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d` for delivery preparation. Native journal `cycle.19` revision 10 is at `publication-review`; owner-facing stop is **Cycle #19 delivery review**. [Approval and manual handoff](../content-intelligence/cycles/cycle-19/delivery-v1/owner-review-v1.md) bind four reference-only packages to the unchanged 46.167s master and one exact decoded frame 136 cover. No V2, encode or duplicate video was created.
+
+All 34 caption midpoints and 91 production geometry checkpoints inform local presentation evidence; 48 presentation unknowns remain unaccepted. Cover selection is a recommendation. No device/native pass, private upload, scheduling, publication, live-post modification or publication authority inferred. Audio and captions were not separately characterized by the owner. Earlier Cycle #19 master-review entries retain their as-of meaning; all previous cycles and owner scheduling/publication reports remain unchanged. Future creative standards are incorporated in CREATIVE-DIRECTION.md without retroactive regeneration.
+
+
+## Cycle #19 scheduling confirmation — recorded 2026-10-17
+
+Owner reports manual scheduling on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels for **October 19, 2026 at 20:00 Europe/Belgrade (CEST, UTC+2; 18:00 UTC)**. Status: **OWNER-REPORTED SCHEDULED**; publication is unconfirmed. [Canonical scheduling index](../content-intelligence/operations/mirror-eyes-scheduling-v1/scheduling-index-v1.json) binds four platform reports to the exact approved V1 master and unchanged prepared delivery manifests. Record-entry time is separate from the unknown scheduling-action time. No post IDs, public URLs, actual uploaded bytes, settings, comments, processing or native-device passes are invented.
+
+[Cycle journal evidence addendum](../workflow/cycles/cycle.19/scheduling-evidence-v1.json) preserves the ten native events and state at publication-review revision10. Scheduling supplies neither the absent exact-release decision nor acceptance of48 presentation unknowns. Earlier approvals, packages, reports and other cycles remain unchanged. Owner authorizes audited, validated Cycle19 commit and normal push to the existing branch; no new cycle or live-post action.

@@ -1,0 +1,75 @@
+{
+  "inspectedAt": "2026-10-17T20:05:55.691Z",
+  "reviewer": "Codex decoded-image inspection",
+  "media": {
+    "id": "media.f1f1ee7bd4586283655defd59b3bb97d522f0bf4d733cadde9ff3276ae672760",
+    "sha256": "f1f1ee7bd4586283655defd59b3bb97d522f0bf4d733cadde9ff3276ae672760"
+  },
+  "sourceMaster": {
+    "id": "media.c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+    "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+  },
+  "position": {
+    "frame": 136,
+    "seconds": 4.533333333333333
+  },
+  "dimensions": {
+    "width": 1080,
+    "height": 1920
+  },
+  "passed": true,
+  "pixelEqualityWithActualMasterFrame": true,
+  "bounds": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "x": 325.8546142578125,
+      "y": 659.3300170898438,
+      "width": 217.90863037109375,
+      "height": 139.68572998046875
+    },
+    {
+      "x": 579.5176391601562,
+      "y": 659.3300170898438,
+      "width": 217.90863037109375,
+      "height": 139.68572998046875
+    },
+    {
+      "x": 112,
+      "y": 350,
+      "width": 361.109375,
+      "height": 60
+    },
+    {
+      "x": 112,
+      "y": 426,
+      "width": 500.171875,
+      "height": 42.5
+    },
+    {
+      "x": 112,
+      "y": 1340,
+      "width": 753.328125,
+      "height": 38.75
+    },
+    {
+      "x": 110,
+      "y": 1450,
+      "width": 770,
+      "height": 142
+    }
+  ],
+  "boundsMethod": "Exact full canvas plus source browser-measured critical regions; unknown native crop remains null.",
+  "findings": [
+    "Compared actual approved frames17,105,136,293,1210 at360px width. Frame136 combines the visible mirror/person and large eyes with an invitation and question.",
+    "Selected frame has existing headline Try it in a mirror. and caption catch the movement? Main hook/caption legible at360px; smaller disclosure is secondary and native crops remain untested.",
+    "No new text, crop, generation or retouch; lossless decode from approved original Magnivis animation.",
+    "Select exactPNG or native frame136at4.533333seconds. Do not substitute another selected identity without versioned review."
+  ],
+  "nativeDevicePass": false,
+  "coverSelection": "recommendation-for-owner-delivery-review"
+}

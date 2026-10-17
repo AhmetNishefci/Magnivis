@@ -1,0 +1,94 @@
+{
+  "enteredAt": "2026-10-17T19:33:35.154Z",
+  "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "voice": "af_heart",
+  "units": [
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.1",
+      "text": "Look from one eye to the other in a mirror. Why can't you normally catch the movement?",
+      "phonemes": "l\u02c8\u028ak f\u0279\u028cm w\u02c8\u028cn \u02c8a\u026a t\u0259 \u00f0\u026a \u02c8\u028c\u00f0\u025a\u0279 \u026an \u0250 m\u02c8\u026a\u0279\u025a. w\u02cca\u026a k\u02c8\u00e6nt ju\u02d0 n\u02c8o\u02d0\u0279m\u0259li k\u02c8\u00e6t\u0283 \u00f0\u0259 m\u02c8u\u02d0vm\u0259nt?",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.2",
+      "text": "Now record your eyes, and watch it back. There it is.",
+      "phonemes": "n\u02c8a\u028a \u0279\u1d7bk\u02c8o\u02d0\u0279d j\u028a\u0279 \u02c8a\u026az, \u00e6nd w\u02c8\u0251\u02d0t\u0283 \u026at b\u02c8\u00e6k. \u00f0\u025b\u0279 \u026a\u027e \u02c8\u026az.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.3",
+      "text": "Each quick jump is a saccade.",
+      "phonemes": "\u02c8i\u02d0t\u0283 kw\u02c8\u026ak d\u0292\u02c8\u028cmp \u026az \u0250 s\u0259k\u02c8\u0251\u02d0d.",
+      "tokenRoundtrip": true,
+      "substitutions": [
+        {
+          "original": "\u02c8i\u02d0t\u0283 kw\u02c8\u026ak d\u0292\u02c8\u028cmp \u026az \u0250 s\u02c8\u00e6ke\u026ad.",
+          "corrected": "\u02c8i\u02d0t\u0283 kw\u02c8\u026ak d\u0292\u02c8\u028cmp \u026az \u0250 s\u0259k\u02c8\u0251\u02d0d.",
+          "reason": "Default normalization renders saccade with an English long-A vowel; replace with standard saccade /s\u0259\u02c8k\u0251\u02d0d/. Exact transcript unchanged."
+        }
+      ],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.4",
+      "text": "In the mirror, the eyes you're watching are also the eyes doing the looking.",
+      "phonemes": "\u026an\u00f0\u0259 m\u02c8\u026a\u0279\u025a, \u00f0\u026a \u02c8a\u026az j\u028a\u0279 w\u02c8\u0251\u02d0t\u0283\u026a\u014b \u0251\u02d0\u0279 \u02c8\u0254\u02d0lso\u028a \u00f0\u026a \u02c8a\u026az d\u02ccu\u02d0\u026a\u014b \u00f0\u0259 l\u02c8\u028ak\u026a\u014b.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.5",
+      "text": "As they turn, the image sweeps across the retina.",
+      "phonemes": "\u00e6z \u00f0e\u026a t\u02c8\u025c\u02d0n, \u00f0\u026a \u02c8\u026am\u026ad\u0292 sw\u02c8i\u02d0ps \u0259k\u0279\u02cc\u0251\u02d0s \u00f0\u0259 \u0279\u02c8\u025bt\u026an\u0259.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.6",
+      "text": "Visual sensitivity drops around the movement. That's saccadic suppression.",
+      "phonemes": "v\u02c8\u026a\u0292u\u02d0\u0259l s\u02cc\u025bns\u026at\u02c8\u026av\u1d7b\u027ei d\u0279\u02c8\u0251\u02d0ps \u025a\u0279\u02c8a\u028and \u00f0\u0259 m\u02c8u\u02d0vm\u0259nt. \u00f0\u00e6ts s\u00e6k\u02c8\u00e6d\u026ak s\u0259p\u0279\u02c8\u025b\u0283\u0259n.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.7",
+      "text": "The clear views before and after can also mask the brief blur.",
+      "phonemes": "\u00f0\u0259 kl\u02c8\u026a\u0279 vj\u02c8u\u02d0z b\u1d7bf\u02cco\u02d0\u0279 \u00e6nd \u02c8\u00e6ft\u025a k\u00e6n \u02c8\u0254\u02d0lso\u028a m\u02c8\u00e6sk \u00f0\u0259 b\u0279\u02c8i\u02d0f bl\u02c8\u025c\u02d0.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.8",
+      "text": "You aren't completely blind. These effects help keep vision stable.",
+      "phonemes": "ju\u02d0 \u02cc\u0251\u02d0\u0279nt k\u0259mpl\u02c8i\u02d0tli bl\u02c8a\u026and. \u00f0i\u02d0z \u026af\u02c8\u025bkts h\u02c8\u025blp k\u02c8i\u02d0p v\u02c8\u026a\u0292\u0259n st\u02c8e\u026ab\u0259l.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.9",
+      "text": "Watching a recording later separates the movement from your own eye turn.",
+      "phonemes": "w\u02c8\u0251\u02d0t\u0283\u026a\u014b \u0250 \u0279\u1d7bk\u02c8o\u02d0\u0279d\u026a\u014b l\u02c8e\u026a\u027e\u025a s\u02c8\u025bp\u025a\u0279\u02cce\u026ats \u00f0\u0259 m\u02c8u\u02d0vm\u0259nt f\u0279\u028cm j\u028a\u0279 \u02c8o\u028an \u02c8a\u026a t\u02c8\u025c\u02d0n.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    },
+    {
+      "sourceScriptSegmentId": "mirror-eyes.asset.perception.script.10",
+      "text": "The mirror never stopped showing it. Your visual system normally keeps the sweep out of awareness.",
+      "phonemes": "\u00f0\u0259 m\u02c8\u026a\u0279\u025a n\u02c8\u025bv\u025a st\u02c8\u0251\u02d0pt \u0283\u02c8o\u028a\u026a\u014b \u026at. j\u028a\u0279 v\u02c8\u026a\u0292u\u02d0\u0259l s\u02c8\u026ast\u0259m n\u02c8o\u02d0\u0279m\u0259li k\u02c8i\u02d0ps \u00f0\u0259 sw\u02c8i\u02d0p \u02cca\u028a\u027e\u0259v \u0250w\u02c8\u025b\u0279n\u0259s.",
+      "tokenRoundtrip": true,
+      "substitutions": [],
+      "interpretation": "Input phonemes are inspectable pronunciation evidence, not subjective listening."
+    }
+  ],
+  "scope": "Exact complete script units with one documented phoneme correction for saccade; input verification does not certify output pronunciation or prosody."
+}

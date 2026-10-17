@@ -1,0 +1,57 @@
+{
+  "cycleId": "cycle.19",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-19T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-19T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-17T20:34:08.020592+00:00",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "platform": "youtube",
+  "ownerReport": {
+    "path": "content-intelligence/operations/mirror-eyes-scheduling-v1/owner-report.json",
+    "sha256": "a829d9b7772fe976aa747b3beff1bb1436553bfb0713b852b567e14e49fcc06e"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/mirror-eyes-cycle19-candidate-v1.mp4",
+    "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-19/delivery-v1/release-v1.json",
+    "sha256": "46a58cd47711c56f7d3430979d19291bd1ab0608c09389312ce198c6fd2677f1"
+  },
+  "intendedVariant": {
+    "id": "mirror-eyes.variant.youtube.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+      "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-19/delivery-v1/youtube/manifest-v1.json",
+    "sha256": "bf8b27f25fa6f5bc7d35f475fc48ea224caf58670be106bcbd39e8755a65d4d6"
+  },
+  "identityBasis": "Owner-designated master and prepared package; actual upload identity not independently verified."
+}

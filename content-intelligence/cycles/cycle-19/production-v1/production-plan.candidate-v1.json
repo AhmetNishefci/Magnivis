@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.mirror-eyes.v1",
+  "revision": 1,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "mirror-eyes",
+    "revision": 1,
+    "sha256": "e55d86f25d29af3bc9f99d012b4dfcf6f800a94a28630b93f42f4aabb9c0f0a7"
+  },
+  "contentAsset": {
+    "id": "mirror-eyes.asset.perception",
+    "revision": 1,
+    "sha256": "3a4bf0c5485991f76ec9bbaa2d02ec58420675358f726ede811c19d2cb41d126"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.19",
+    "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/youtube.json",
+      "sha256": "b95b46b5fce398474fddd27b14ee4062f683354684726376005102eb82ba6719"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/tiktok.json",
+      "sha256": "55c0ffad158889eebe36eb7396466f1fb82bd9f7d4f2f303c415879661f2b56d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/instagram.json",
+      "sha256": "17c65fbfe2a9e8bca32a32e0b2b2d194bcb8b182c9a53b0c891fbbcbd9b6297d"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/facebook.json",
+      "sha256": "7238b62d1536be132f7f5d1718623965258d25317a09526c789e422e41af0c60"
+    }
+  ],
+  "approvedScriptSha256": "90991cec9b971b0317fbc64772d1e1a9628cdde55ce435aa600738cab6a4d83c",
+  "creativeDirection": {
+    "id": "creative-direction.mirror-eyes.v1",
+    "revision": 1,
+    "sha256": "b30faaecd94fab03174cc93c7f722e537daf2660256756fda56d54c6d4c7afeb"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 46.166666666666664
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "mirror-eyes.production.1",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.1",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.1",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.1"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.mirror"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 159
+      },
+      "sceneType": "mirror-puzzle",
+      "objective": "Over-shoulder person at a framed mirror; two reflected eyes and gaze targets. Push toward eyes while subjective state is clearly labeled. No third-person view falsely frozen.",
+      "onScreenText": [],
+      "animationIntent": "The missing movement; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.2",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.2",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.2",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.2"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.playback"
+      ],
+      "frames": {
+        "start": 159,
+        "end": 276
+      },
+      "sceneType": "record-and-replay",
+      "objective": "Camera icon beside same mirror portrait, then visibly transition to later playback with a moving iris. Recorded external view, not direct mirror perception.",
+      "onScreenText": [],
+      "animationIntent": "The same movement recorded; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.3",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.3",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.3",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.3"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.saccade"
+      ],
+      "frames": {
+        "start": 276,
+        "end": 353
+      },
+      "sceneType": "rapid-saccade",
+      "objective": "Macro eyes show a brief ballistic movement then a labeled slowed replay revealing continuous rotation, no teleportation presented as physical fact.",
+      "onScreenText": [],
+      "animationIntent": "One fast gaze shift; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.4",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.4",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.4",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.4"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.simultaneous"
+      ],
+      "frames": {
+        "start": 353,
+        "end": 496
+      },
+      "sceneType": "observer-and-observed",
+      "objective": "Pull back to shoulder and reflection, highlight that reflected eyes and observer are the same person. Optical link stays continuous.",
+      "onScreenText": [],
+      "animationIntent": "Observer and observed; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.5",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.5",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.5",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.5"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.saccade"
+      ],
+      "frames": {
+        "start": 496,
+        "end": 611
+      },
+      "sceneType": "retinal-sweep",
+      "objective": "Same eye pivots in simplified side section; light from a fixed mirror feature falls on changing retinal positions. Not a detailed neural circuit.",
+      "onScreenText": [],
+      "animationIntent": "A retinal sweep; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.6",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.6",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.6",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.6"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.sensitivity"
+      ],
+      "frames": {
+        "start": 611,
+        "end": 768
+      },
+      "sceneType": "partial-sensitivity",
+      "objective": "Carry eye and retinal sweep into a softly attenuated feature illustration; qualitative dip spans before/during/after, never a flat zero or blackout.",
+      "onScreenText": [],
+      "animationIntent": "Reduced sensitivity; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.7",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.7",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.7",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.7"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.masking"
+      ],
+      "frames": {
+        "start": 768,
+        "end": 902
+      },
+      "sceneType": "clear-view-masking",
+      "objective": "Same eye closeup expands into before/blur/after sequence, then clear flank views visually dominate. Label perception schematic, time expanded.",
+      "onScreenText": [],
+      "animationIntent": "Clear views hide blur; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.8",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.8",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.8",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.8"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.not-blind",
+        "mirror-eyes.claim.continuity"
+      ],
+      "frames": {
+        "start": 902,
+        "end": 1042
+      },
+      "sceneType": "subjective-continuity",
+      "objective": "First-person mirror view shifts gaze target and resolves without black frames; stable perception illustration, not literal subjective recording or complete explanation of spatial constancy.",
+      "onScreenText": [],
+      "animationIntent": "Continuity without blackout; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.9",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.9",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.9",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.9"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.playback"
+      ],
+      "frames": {
+        "start": 1042,
+        "end": 1191
+      },
+      "sceneType": "later-playback",
+      "objective": "Large camera/playback frame shows filmed iris moving while a small stationary viewer-eye motif establishes steady current gaze. Replay timeline distinct from original recording.",
+      "onScreenText": [],
+      "animationIntent": "The timing difference; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "mirror-eyes.production.10",
+      "sourceVisualPlanId": "mirror-eyes.asset.perception.visual.10",
+      "narrativeBeatId": "mirror-eyes.asset.perception.beat.10",
+      "scriptSegmentIds": [
+        "mirror-eyes.asset.perception.script.10"
+      ],
+      "claimIds": [
+        "mirror-eyes.claim.simultaneous",
+        "mirror-eyes.claim.continuity"
+      ],
+      "frames": {
+        "start": 1191,
+        "end": 1385
+      },
+      "sceneType": "mirror-resolution",
+      "objective": "Return to original person/mirror with continuous reflected movement on external view; momentary direct-perception annotation and confident resolved ending.",
+      "onScreenText": [],
+      "animationIntent": "The mirror stayed honest; retain person/eye identity and label external view, later playback, subjective schematic and time expansion accurately.",
+      "transitionIntent": "One eye identity through portrait, macro, retinal section, subjective view and explicitly later external playback.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    }
+  ],
+  "assets": [
+    {
+      "id": "mirror-eyes.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned",
+        "notes": "Original portrait, mirror geometry, qualitative retinal and perceptual schematics; no reproduced scientific figures.",
+        "evidence": "content-intelligence/cycles/cycle-19/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "mirror-eyes.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource packages",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing Manrope and Space Grotesk",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "mirror-eyes.narration",
+      "kind": "audio",
+      "path": "public/audio/mirror-eyes/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact evidence-locked wording",
+        "evidence": "src/production/narration/mirror-eyes.json"
+      }
+    },
+    {
+      "id": "mirror-eyes.soundscape",
+      "kind": "audio",
+      "path": "public/audio/mirror-eyes/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesized sound",
+        "rights": "Project-owned",
+        "notes": "Original room tone and recording/replay cues; no sampled recordings.",
+        "evidence": "content-intelligence/cycles/cycle-19/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/mirror-eyes.en.vtt",
+    "captionPlanId": "caption-plan.mirror-eyes.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "5cb218590dd6cd5528ec54568306b05a85864346cd14028eaa75247941d10a97",
+    "generatorId": "generator.mirror-eyes-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Exact verified116-word narration, normally and partial-suppression qualifiers retained.",
+    "Physical reflection continuous; no external frozen iris mislabeled as actual mirror behavior.",
+    "Recorded later view and direct subjective illustration always distinct.",
+    "Eye rotation and retinal sweep explain mechanism; no blackout, deleted time or measured neural curve.",
+    "Caption midpoints, full decode, actual audio signal inspection and pronunciation checks.",
+    "Separate chronological rendered-sequence review and phone-scale samples.",
+    "Stop Cycle19 V1 owner master review; no packages or platform actions."
+  ]
+}

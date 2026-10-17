@@ -1,0 +1,30 @@
+{
+  "enteredAt": "2026-10-17T19:40:33.163Z",
+  "authoringDraft": {
+    "path": "output/mirror-eyes-authoring-draft.mp4",
+    "sha256": "b4357cfa00012e8adc6a0287314882e72b5394be781d6c79462883142623f16d",
+    "retention": "Temporary unregistered authoring export, not a separate requested version or approved master."
+  },
+  "findings": [
+    {
+      "issue": "Eye-macro background extended past the playback frame.",
+      "action": "Clip the portrait into the playback aperture, with controls and labels outside eye detail."
+    },
+    {
+      "issue": "Recording camera was visible too briefly before replay.",
+      "action": "Hold recording setup for about1.3seconds before later playback. Keep simultaneous direct observation and delayed playback distinct."
+    },
+    {
+      "issue": "Reflected eye geometry not initially instrumented.",
+      "action": "Add critical-visual bounds to reflected eyes; repeat browser QA."
+    },
+    {
+      "issue": "Fixed optical ray did not pass the diagram eye center consistently.",
+      "action": "Use a qualitative ray through the fixed nodal center while eye/retina rotates, no calibrated anatomy claim."
+    }
+  ],
+  "exactNarrationChanged": false,
+  "claimMeaningChanged": false,
+  "additionalCandidateVersionsCreated": false,
+  "processApplication": "Apply existing PRODUCTION-PLANS rendered-sequence review and instrument all consequential visible elements. No new generic production policy needed."
+}

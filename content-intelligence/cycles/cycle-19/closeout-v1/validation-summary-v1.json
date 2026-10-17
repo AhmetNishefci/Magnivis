@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "completedAt": "2026-10-17T20:39:08.707385+00:00",
+  "ownerInstruction": "content-intelligence/operations/mirror-eyes-scheduling-v1/owner-instruction.md",
+  "scope": "Cycle19 repository closeout, not publication lifecycle closure",
+  "initialStagedPathsAudited": 183,
+  "masterSha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+  "masterCoverCaptionsAndDeliveryPackagesUnchanged": true,
+  "validation": {
+    "typecheck": "passed in both pnpm check attempts",
+    "lint": "passed in both pnpm check attempts",
+    "defaultPnpmCheck": "Two attempts:513/514 passed; existing media durability test exceeded unchanged5000ms timeout. Logs retained.",
+    "fullSuite": {
+      "command": "pnpm exec vitest run --maxWorkers=1",
+      "passed": true,
+      "testFiles": 55,
+      "tests": 514,
+      "durationSeconds": 97.09,
+      "testTimeoutChanged": false,
+      "testConfigurationChanged": false
+    },
+    "worktreeDiffCheck": "passed",
+    "cachedWhitespace": "Original Markdown hard-break whitespace and production transcript EOF blank retained as audited existing Cycle19 evidence; no blanket pass claimed.",
+    "mediaQA": {
+      "command": "pnpm qa mirror-eyes",
+      "passed": true,
+      "fullDecode": "passed"
+    },
+    "artifactDurability": {
+      "command": "pnpm artifacts:durable",
+      "passed": true,
+      "canonicalPayloads": 1367
+    },
+    "packageValidation": {
+      "command": "node --import tsx scripts/validate-mirror-release.ts",
+      "passed": true,
+      "platforms": 4,
+      "captionMidpointsPerPlatform": 34,
+      "geometryCheckpoints": 91,
+      "coverPixelEquality": true,
+      "unknownsRetained": 48
+    },
+    "cycle19Replay": {
+      "command": "node --import tsx scripts/cycle.ts status cycle.19",
+      "passed": true,
+      "nativeStage": "publication-review",
+      "nativeRevision": 10
+    }
+  },
+  "scheduling": {
+    "status": "OWNER-REPORTED SCHEDULED",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "scheduledFor": "2026-10-19T20:00:00+02:00",
+    "scheduledForUtc": "2026-10-19T18:00:00Z",
+    "publication": "unknown",
+    "postIds": null,
+    "urls": null,
+    "liveSettingsVerification": null,
+    "nativeJournal": "Unchanged ten events/state plus canonical scheduling evidence addendum"
+  },
+  "knownPreexistingProjectWideReplayIssue": "Cycle10 references an outdated docs/PROJECT-STATE.md digest; already mismatched at base HEAD and recorded during Cycle18. Historical evidence preserved.",
+  "assistantPlatformActions": [],
+  "commitAndPush": "Explicitly authorized, pending successful completion of this audit. Postcommit SHA/normal push/remote equality/clean tree checked and reported to owner without modifying this precommit record."
+}

@@ -75,3 +75,10 @@ This milestone implements decision authoring, source binding and future producti
 ## Prospective premise boundary
 
 WORKFLOW-V3 places owner Premise Review before full CreativeDirection execution and production. Preliminary story/visual feasibility reasoning may support autonomous selection; final script-bound direction and convergence remain downstream of premise approval and factual verification. Approval does not dictate a treatment or waive convergence. Historical approved directions and media remain unchanged.
+
+
+## Owner creative standards — Cycle #19 delivery approval, prospective
+
+The [2026-10-17 owner instruction](../content-intelligence/cycles/cycle-19/delivery-v1/owner-instruction.md) sets these standards for all future cycles: make the first 1–2 seconds visually and narratively irresistible with an immediate, truthful curiosity gap. Explain the mechanism through coherent, cinematic, original visual storytelling. Every major shot must reveal something, demonstrate a mechanism or advance the narrative; avoid generic stock montages, slideshow pacing, repetitive animations and filler. Build toward a clear, surprising, memorable ending. Preserve scientific accuracy and appropriate uncertainty, and prioritize comprehension, emotional impact and retention over decorative complexity. Request another version only for a specific, meaningful defect.
+
+Apply these judgments in the existing direction and rendered-sequence editorial reviews; this adds no new owner gate, fixed visual template, forced duration or automatic revision. Approved historical masters and their evidence remain unchanged.

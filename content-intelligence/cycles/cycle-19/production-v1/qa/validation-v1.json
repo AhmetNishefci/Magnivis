@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-17T19:45:40.091249Z",
+  "master": {
+    "path": "artifacts/masters/mirror-eyes-cycle19-candidate-v1.mp4",
+    "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+    "bytes": 24789897,
+    "runtimeSeconds": 46.166666666666664,
+    "frames": 1385
+  },
+  "repositoryCheck": {
+    "command": "pnpm check",
+    "passed": true,
+    "node": "22.23.3",
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 55,
+    "tests": 514,
+    "durationSeconds": 60.38,
+    "gitDiffCheck": "passed",
+    "testConfigurationChanged": false,
+    "initialAttempt": "One existing media-artifacts test exceeded its unchanged5000ms timeout during concurrent render/QA. Final ordinary pnpm check passed all55files/514tests; no timeout or test modifications."
+  },
+  "technical": {
+    "passed": true,
+    "command": "node --import tsx scripts/qa.ts mirror-eyes (same qa.ts invoked by pnpm qa)",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "video": "H.264 yuv420p",
+    "audio": "AAC stereo48kHz",
+    "fullDecode": "passed",
+    "captionPlanReconstruction": "passed",
+    "captionPhrases": 34,
+    "wordCount": 116,
+    "browserCheckpoints": 91,
+    "sampledBounds": "passed",
+    "allFrameGeometry": false,
+    "loudnessLUFS": -18.9,
+    "truePeakDb": -3.1
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "passed": true,
+    "canonicalPayloads": 1366,
+    "newCycle19Payloads": 22,
+    "durableLegacyArtifactCount": 731,
+    "historicalMissingExpectations": "Original Wood Frog expectation remains explicitly historical; no new missing canonical media."
+  },
+  "preservation": {
+    "passed": true,
+    "baselineFilesHashed": 6894,
+    "previousCyclesChanged": false,
+    "priorCatalogIdentitiesPreserved": 1344
+  },
+  "cycle": {
+    "id": "cycle.19",
+    "stage": "master-review",
+    "revision": 7,
+    "masterApproval": false,
+    "deliveryPackages": false,
+    "externalActions": []
+  },
+  "limits": [
+    "Technical audio check is not subjective pronunciation/mix acceptance.",
+    "No continuous playback/listening or real-device/native-platform evidence.",
+    "Frame samples and provisional geometry do not certify all-frame or native UI safety.",
+    "Qualitative optical/perceptual diagrams, expanded timing and authored approximate phrase boundaries."
+  ],
+  "git": {
+    "stagedForLocalDurability": true,
+    "committed": false,
+    "pushed": false
+  }
+}

@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/mirror-eyes.json';
+import asset from '../../../content-intelligence/cycles/cycle-19/content-asset.ready.json';
+import narration from '../../production/narration/mirror-eyes.json';
+export const mirrorEyes=videoSpecSchema.parse({id:'mirror-eyes',compositionId:'Magnivis-MirrorEyes',workingTitle:'Why you cannot normally see your eyes move in a mirror',titleCandidates:['Why you cannot normally see your eyes move in a mirror'],descriptionCandidates:['Retinal sweep, reduced sensitivity and visual masking; direct mirror perception differs from later camera playback.'],hook:asset.script.segments[0]!.text,pillar:'human-behavior',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration'],narration:true,narrationCues:narration.cues}});

@@ -1,0 +1,51 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/media-artifacts.test.ts (6 tests | 1 failed) 6616ms
+   ❯ Media content identity, historical safety and durability (6)
+     × enforces scoped historical preservation and canonical durability in pnpm check 6185ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/media-artifacts.test.ts > Media content identity, historical safety and durability > enforces scoped historical preservation and canonical durability in pnpm check
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/media-artifacts.test.ts:16:3
+     14| };
+     15| describe('Media content identity, historical safety and durability', (…
+     16|   it('enforces scoped historical preservation and canonical durability…
+       |   ^
+     17|     expect(validateArchitectureScope().passed).toBe(true);
+     18|     expect(validateCanonicalMediaDurability().passed).toBe(true);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 54 passed (55)
+      Tests  1 failed | 513 passed (514)
+   Start at  21:38:23
+   Duration  74.90s (tests 93%, import 5%, transform 2%)
+
+ ELIFECYCLE  Test failed. See above for more details.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

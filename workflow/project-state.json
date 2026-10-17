@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "phase": "content-cycle",
-  "nextOwnerGate": "Cycle18 owner-reported scheduled on all four for 2026-10-18 20:00 Europe/Belgrade (18:00 UTC). Await actual publication evidence. Earlier independent owner queues remain unchanged.",
+  "nextOwnerGate": "Await Cycle19 actual publication evidence or new owner direction. Owner reports all four scheduled; strict publication-review and earlier independent queues preserved.",
   "externalActions": "Owner reports Cycle #9 published. New owner message on 2026-10-11 reports Cycle #10 published on all four, superseding the 2026-10-09 report that it was scheduled/not yet published; newer report preserved in content-intelligence/reviews/first-cross-platform-analytics-v1/owner-observations.json. Cycle #11 remains owner-reported manually scheduled on all four; actual publication unknown. Actual event dates/times/URLs/IDs/uploaded bytes/settings/comments/device evidence remain unknown; no independently verified platform evidence or assistant platform action. Earlier reports retain their original dated meaning. Owner explicitly confirms Cycle #12 FLIP published on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels on October 12, 2026, superseding scheduling-only status. Exact times/timezone/URLs/IDs/uploaded bytes/settings/comments/device evidence/screenshots/analytics remain unknown; no independent platform verification or assistant platform action. Current owner instruction authorizes Cycle #13 discovery through Premise Review. New explicit Cycle #13 premise approval authorizes research and creative development. That historical research/development work was followed by explicit candidate-production authorization. Cycle13 V1 received REVISE MASTER and remains preserved. V2 is now owner-approved for publication-package preparation subject to final native-device and audio acceptance; four prepared packages reach Publication Review without publication authority. No assistant platform actions or new publication evidence. Owner now reports Cycle13 V2 manually scheduled for 2026-10-13 on all four. Exact times/timezone/URLs/IDs and live publication unknown; no assistant platform actions. Owner reports Cycle14 V4 manually scheduled for 2026-10-14 on all four. Exact times/platform timezones and actual publication remain unknown; no assistant platform actions. Cycle18 owner reports manual scheduling on all four for 2026-10-18T20:00:00+02:00 (Europe/Belgrade; 18:00 UTC). Publication remains unconfirmed; no assistant platform action. Evidence content-intelligence/operations/roadster-scheduling-v1/scheduling-index-v1.json.",
   "historicalCycles": [
     {
@@ -83,7 +83,7 @@
     "cycle6Started": true
   },
   "cycle6": "authorized; scheduled-owner-reported on YouTube Shorts, TikTok, Instagram Reels and Facebook Reels; journal revision23; scheduled date/time/timezone and scheduling-action time unknown; actual publication/URLs/IDs/settings/comments/processing/presentation/device QA/analytics unknown; awaiting owner publication evidence; exact authorized canonical master and publication package unchanged",
-  "nextSystemTask": "Await actual Cycle18 publication evidence or new owner direction after the owner-authorized repository closeout. No new cycle or platform actions authorized. Native publication-review gates and earlier independent queues remain unchanged.",
+  "nextSystemTask": "Complete owner-authorized Cycle19 repository closeout and normal push on existing branch, then await publication evidence. No new cycle or live-platform action authorized.",
   "editorialCalibration": {
     "report": "system-audits/editorial-intelligence-calibration/audit.md",
     "authority": "docs/STRATEGY.md",
@@ -1274,6 +1274,107 @@
     "gitAuthorization": {
       "path": "content-intelligence/operations/roadster-scheduling-v1/owner-instruction.md",
       "sha256": "f25fe5be0d5469dbf76248a93d3d3ed5b08c5b99507339a7c82170349f5a4c0b"
+    }
+  },
+  "cycle19": {
+    "state": "owner-v1-master-review",
+    "authority": "workflow/authorities/cycle-19-start.json",
+    "journal": "workflow/cycles/cycle.19",
+    "topic": "Why you normally cannot see your own rapid eye movements in a mirror",
+    "candidate": "content-intelligence/cycles/cycle-19/production-v1/master-candidate-v1.json",
+    "masterPath": "artifacts/masters/mirror-eyes-cycle19-candidate-v1.mp4",
+    "masterSha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+    "durationSeconds": 46.166666666666664,
+    "masterApproval": false,
+    "deliveryPackagesPrepared": false,
+    "externalActions": [],
+    "scope": "Explicit owner production brief authorizes selected topic through V1 master review. Earlier independent queues and publication unknowns unchanged."
+  },
+  "cycle19DeliveryV1": {
+    "cycleId": "cycle.19",
+    "state": "owner-delivery-review",
+    "nativeStage": "publication-review",
+    "nativeRevision": 10,
+    "masterApproved": true,
+    "masterPath": "artifacts/masters/mirror-eyes-cycle19-candidate-v1.mp4",
+    "masterSha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+    "masterApproval": "content-intelligence/cycles/cycle-19/delivery-v1/master-approval-v1.json",
+    "release": "content-intelligence/cycles/cycle-19/delivery-v1/release-v1.json",
+    "review": "content-intelligence/cycles/cycle-19/delivery-v1/owner-review-v1.md",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "coverPath": "artifacts/covers/mirror-eyes-cycle19-delivery-v1/frame-136-4.533s.png",
+    "coverSha256": "f1f1ee7bd4586283655defd59b3bb97d522f0bf4d733cadde9ff3276ae672760",
+    "coverFrame": 136,
+    "coverApproved": false,
+    "presentationUnknowns": 48,
+    "unknownsAccepted": false,
+    "productionReady": false,
+    "publicationAuthorized": false,
+    "publicationDate": null,
+    "platformActions": [],
+    "reconciliation": "Additive successor to original cycle19 master-review milestone; owner viewed master and reported looks good, exact V1 approved for delivery. Audio/captions not separately characterized; no device/native QA, cover approval, risk acceptance or publication authority inferred. Prior cycles and scheduling/publication records preserved."
+  },
+  "cycle19SchedulingV1": {
+    "cycleId": "cycle.19",
+    "state": "scheduled-owner-reported",
+    "statusLabel": "OWNER-REPORTED SCHEDULED",
+    "scheduledBy": "owner-manual",
+    "scheduledFor": "2026-10-19T20:00:00+02:00",
+    "scheduledForUtc": "2026-10-19T18:00:00Z",
+    "schedulingTimeZone": {
+      "ianaIdentifier": "Europe/Belgrade",
+      "abbreviation": "CEST",
+      "utcOffset": "+02:00",
+      "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+    },
+    "recordedAt": "2026-10-17T20:34:08.020592+00:00",
+    "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+    "evidenceBasis": "explicit-owner-message",
+    "publication": "unknown",
+    "actualPublicationTime": null,
+    "actualPublicationDate": null,
+    "schedulingActionTime": null,
+    "publicUrl": null,
+    "platformId": null,
+    "actualUploadedBytes": null,
+    "actualSettings": null,
+    "comments": null,
+    "processingResults": null,
+    "deviceQa": null,
+    "analytics": null,
+    "independentPlatformVerification": false,
+    "assistantPlatformActions": [],
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "report": {
+      "path": "content-intelligence/operations/mirror-eyes-scheduling-v1/owner-report.json",
+      "sha256": "a829d9b7772fe976aa747b3beff1bb1436553bfb0713b852b567e14e49fcc06e"
+    },
+    "index": {
+      "path": "content-intelligence/operations/mirror-eyes-scheduling-v1/scheduling-index-v1.json",
+      "sha256": "247b8fc2bbc27652df40630968944f6d3c1277ff2c8623778b5d34af61690480"
+    },
+    "cycleJournalAddendum": {
+      "path": "workflow/cycles/cycle.19/scheduling-evidence-v1.json",
+      "sha256": "e5d6085afc2aa39bef14c998e742c2bc56d618bcc109b87d1361d6b59b5631a4"
+    },
+    "nativeStage": "publication-review",
+    "nativeRevision": 10,
+    "nativeJournalUnchanged": true,
+    "publicationDecision": null,
+    "historicalReconciliation": "Owner scheduling report recorded separately from strict gate projection, following Cycles11/13/17/18. Native observations require an exact-release publication decision, absent here. Preserve all ten events and state; add a cycle-scoped evidence addendum without forging an event, authorization, risk acceptance, native QA or successful publication. Earlier master/delivery reviews retain their as-of meaning.",
+    "gitAuthorization": {
+      "path": "content-intelligence/operations/mirror-eyes-scheduling-v1/owner-instruction.md",
+      "sha256": "c4a28da929966b84f8be1031d6ed78113cb81cdf57750dfd41b27d866d84df3e"
     }
   }
 }

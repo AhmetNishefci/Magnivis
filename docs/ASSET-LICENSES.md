@@ -346,3 +346,16 @@ Source bodies are factual references only. No external footage license is assume
 ### Cycle18 approved-V1 delivery cover
 
 `artifacts/covers/roadster-cycle18-delivery-v1/frame-28-0.933s.png` is a lossless decoded frame28 (0.933333s) from exact approved original master `2172f0f77fc655f83bb00c8203204954625d7153a1612ea06261eec99fc25fdc`. Original Magnivis reconstruction, existing licensed fonts and burned-in captions/disclosures preserved; no external imagery, new text, crop or retouch. Pixel equality and parent media identity are bound in `content-intelligence/cycles/cycle-18/delivery-v1/qa/selected-cover-v1.json`. Cover is recommended for owner delivery review; native crop and selection controls remain unverified.
+
+## Cycle #19 — mirror eyes V1 (2026-10-17)
+
+- Original deterministic illustrated person, mirror, irises, eye section, sensitivity/masking schematics and playback motifs: Magnivis-authored in `src/components/mirror-eyes/MirrorWorld.tsx` and `src/compositions/MirrorEyes.tsx`. No external portrait, stock, scientific figure or footage. Illustrative anatomy, expanded movement and subjective schematics are disclosed.
+- Narration: existing local Kokoro82M q8, `af_heart`, Apache2.0 model via repository provider; original exact script output. `src/production/narration/mirror-eyes.json` and Cycle19 phoneme audit preserve measured timing, input correction for “saccade” and provenance.
+- Sound: original synthesized room tone and tactile recording/replay cues, no samples or third-party music; `scripts/generate-mirror-soundscape.mjs`.
+- Fonts: existing pinned Manrope5.3.0 and Space Grotesk5.3.0, SIL Open Font License1.1; package LICENSE files bound in Cycle19 rights provenance.
+- Scientific text excerpts remain research evidence only; no publisher imagery or figure rights inferred. Sources, acquisition limits, retrieval date and claim qualifications are retained in `content-intelligence/cycles/cycle-19/research/` and its verified knowledge package. No delivery, upload or publication authority.
+
+
+### Cycle #19 delivery V1 selected cover
+
+`artifacts/covers/mirror-eyes-cycle19-delivery-v1/frame-136-4.533s.png` is an exact lossless decoded frame 136 (4.533333s) from the owner-approved original Magnivis master, SHA-256 `c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d`. Cover SHA-256 `f1f1ee7bd4586283655defd59b3bb97d522f0bf4d733cadde9ff3276ae672760`. Original code artwork and existing licensed fonts retain production provenance; no external imagery, added text, retouch or new video. Parent identity and pixel equality are recorded in Cycle19delivery-v1/qa/selected-cover-v1.json. Selection is recommended for owner delivery review; native crop and separate cover approval unknown.

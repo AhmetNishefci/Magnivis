@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "completedAt": "2026-10-17T20:09:43.341850+00:00",
+  "master": {
+    "path": "artifacts/masters/mirror-eyes-cycle19-candidate-v1.mp4",
+    "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+    "unchanged": true,
+    "reencoded": false
+  },
+  "approval": "Exact V1 approved for delivery; looks good owner-reported; no separate device/audio/caption pass inferred",
+  "repositoryCheck": {
+    "command": "pnpm check",
+    "passed": true,
+    "testFiles": 55,
+    "tests": 514,
+    "durationSeconds": 59.33,
+    "typecheck": "passed",
+    "lint": "passed",
+    "gitDiffCheck": "passed",
+    "logNormalization": "Trailing blank lines removed after successful capture outside repository; no diagnostic content removed.",
+    "correctedAttempts": [
+      "Delivery script hashtag ternary caused TypeScript unreachable-comparison error; simplified extraction from canonical copy, no package content changed.",
+      "New cover initially not staged; durability test rejected it. Staging resolved it; no test configuration changed."
+    ]
+  },
+  "mediaQA": {
+    "command": "pnpm qa mirror-eyes",
+    "passed": true,
+    "fullDecode": "passed",
+    "runtimeSeconds": 46.166666666666664,
+    "resolution": "1080x1920",
+    "fps": 30,
+    "video": "H264 yuv420p",
+    "audio": "AAC stereo48kHz",
+    "newRender": false
+  },
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "passed": true,
+    "canonicalPayloads": 1367,
+    "newCoverPayloads": 1,
+    "newVideoPayloads": 0
+  },
+  "packages": {
+    "count": 4,
+    "validated": true,
+    "uploadResolvers": 4,
+    "captionCuesValidated": 34,
+    "coverPixelEquality": true,
+    "coverFrame": 136,
+    "captionMidpointsPerPlatform": 34,
+    "productionGeometryCheckpoints": 91,
+    "knownSampledCollisions": 0,
+    "presentationUnknowns": 48,
+    "operationalUnknowns": 6,
+    "riskAcceptance": false,
+    "productionReady": false,
+    "publicationAuthorized": false
+  },
+  "preservation": {
+    "protectedFilesChecked": 7003,
+    "protectedFilesChanged": [],
+    "preexistingCatalogRowsUnchanged": 1366,
+    "previousProjectStateFieldsSemanticallyUnchanged": true,
+    "previousCyclesAndSchedulingPublicationRecords": "unchanged",
+    "implementationBindingsScriptNarrationCaptionsAndWavs": "unchanged"
+  },
+  "limits": [
+    "Local decoded-image and360px approximations, no actual-device/native-platform pass.",
+    "Small illustration disclosures not equivalent to main-caption mobile legibility.",
+    "No assistant continuous playback/listening; owner only reported looks good and exact master delivery approval.",
+    "Known historical missing Wood Frog master remains unchanged.",
+    "No upload, schedule, publish, preview upload, live-post modification, commit or push."
+  ],
+  "ownerStop": "Cycle #19 delivery review"
+}

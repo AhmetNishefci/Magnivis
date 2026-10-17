@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "auditedAt": "2026-10-17T20:39:08.901530+00:00",
+  "initialStagedPathsAudited": 183,
+  "initialStagedProtectedFilesUnchanged": 181,
+  "protectedFileViolations": [],
+  "sharedModifiedPaths": [
+    "artifacts/media-catalog.json",
+    "docs/ASSET-LICENSES.md",
+    "docs/CREATIVE-DIRECTION.md",
+    "docs/PROJECT-STATE.md",
+    "scripts/resolve-qa-video-target.ts",
+    "workflow/project-state.json"
+  ],
+  "earlierCycleFilesChanged": false,
+  "previousProjectStateFieldsUnchanged": true,
+  "preexistingCatalogRowsUnchanged": 1344,
+  "cycle19NewMediaCatalogRows": 23,
+  "masterCoverCaptionsAndFourPackages": "exact initial183-path baseline identities preserved",
+  "nativeEventsAndState": "all ten events and revision10 state unchanged; scheduling evidence addendum only",
+  "schedulingPlatformRecords": 4,
+  "scheduledFor": "2026-10-19T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-19T18:00:00Z",
+  "publication": "unknown",
+  "postIdsUrlsSettingsVerification": "not supplied; not inferred",
+  "secretScan": {
+    "suspiciousPaths": [],
+    "testedPrivateKeyTokenPatterns": [],
+    "scope": "Bounded filename and private-key/GitHub-token/AWS-access-key pattern audit, not exhaustive secret detection"
+  },
+  "knownPreexistingProjectReplayIssue": {
+    "cycle": "cycle.10",
+    "record": "content-intelligence/cycles/cycle-10/topic-selection.json",
+    "referencedPath": "docs/PROJECT-STATE.md",
+    "expectedSha256": "2bfdec20f86254916c741efacabfa22f61ccbe705d287cfdd84e832e20f2e5fe",
+    "baseHeadActualSha256": "b9a7f9f92f8f150572f859c4bf819b35bc2587f763d923a319dbdbc92d2b1780",
+    "currentSha256": "5781cef56f1d4647a069ea7eb0a6d5d90af67c01bd0afb4d4639b86d44f9d037",
+    "preexistingEvidence": "content-intelligence/cycles/cycle-18/closeout-v1/preservation-and-scheduling-validation-v1.json",
+    "historicalRecordUnchanged": true,
+    "action": "Document separately; no historical evidence rewrite"
+  },
+  "stagedWhitespaceDisposition": {
+    "preservedOriginalEvidence": [
+      "content-intelligence/cycles/cycle-19/owner-review.md lines5\u20137 intentional Markdown hard breaks",
+      "content-intelligence/cycles/cycle-19/production-v1/qa/repository-check-v1.txt final blank line"
+    ],
+    "noBlanketCachedWhitespacePassClaimed": true
+  },
+  "assistantPlatformActions": []
+}

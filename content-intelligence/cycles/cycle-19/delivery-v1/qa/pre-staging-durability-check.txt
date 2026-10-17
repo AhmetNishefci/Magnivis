@@ -1,0 +1,51 @@
+
+> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis
+> pnpm validate && git diff --check
+
+
+> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis
+> pnpm typecheck && pnpm lint && pnpm test
+
+
+> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis
+> tsc --noEmit
+
+
+> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis
+> eslint src scripts tests remotion.config.ts vitest.config.ts
+
+
+> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis
+> vitest run
+
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/media-artifacts.test.ts (6 tests | 1 failed) 2787ms
+   ❯ Media content identity, historical safety and durability (6)
+     × enforces scoped historical preservation and canonical durability in pnpm check 2348ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/media-artifacts.test.ts > Media content identity, historical safety and durability > enforces scoped historical preservation and canonical durability in pnpm check
+Error: Canonical durable media is not Git tracked: artifacts/covers/mirror-eyes-cycle19-delivery-v1/frame-136-4.533s.png
+ ❯ validateCanonicalMediaDurability scripts/artifact-v2-integrity.ts:65:67
+     63|   }
+     64|   for (const m of registry.list()) {
+     65|     if (!retained.has(m.id)&&!tracked.has(m.canonicalPath)) throw new …
+       |                                                                   ^
+     66|     if (!retained.has(m.id)&&m.bytes >= gitMediaByteLimit) throw new E…
+     67|     registry.resolveFile(mediaReference(m));
+ ❯ tests/media-artifacts.test.ts:18:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 54 passed (55)
+      Tests  1 failed | 513 passed (514)
+   Start at  22:07:06
+   Duration  60.67s (tests 94%, import 5%, transform 1%)
+
+ ELIFECYCLE  Test failed. See above for more details.
+ ELIFECYCLE  Command failed with exit code 1.
+ ELIFECYCLE  Command failed with exit code 1.

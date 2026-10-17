@@ -1,0 +1,29 @@
+
+> magnivis@0.1.0 qa /Users/ahmetnishefci/Developer/Magnivis
+> tsx scripts/qa.ts mirror-eyes
+
+{
+  "checkedAt": "2026-10-17T20:07:47.851Z",
+  "input": "artifacts/masters/mirror-eyes-cycle19-candidate-v1.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 46.166666666666664
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -22.9,
+    "maxVolumeDb": -3.1,
+    "duration": 46.23,
+    "sizeBytes": 24789897,
+    "bitRate": 4289837
+  },
+  "passed": true,
+  "failures": []
+}

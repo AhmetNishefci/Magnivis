@@ -1,0 +1,344 @@
+{
+  "id": "mirror-eyes",
+  "revision": 1,
+  "topic": "Why you normally cannot see your own rapid eye movements in a mirror",
+  "centralQuestion": "Why does direct mirror perception omit rapid eye motion that can be seen in later playback?",
+  "taxonomy": {
+    "pillar": "science-reality",
+    "domains": [
+      "vision-science",
+      "neuroscience"
+    ],
+    "topics": [
+      "saccades",
+      "visual-masking"
+    ]
+  },
+  "timeliness": "evergreen",
+  "thesis": "Understand how simultaneous looking and moving, rapid retinal motion, reduced sensitivity and visual masking differ from watching a recording afterward.",
+  "viewerPayoff": "Understand how simultaneous looking and moving, rapid retinal motion, reduced sensitivity and visual masking differ from watching a recording afterward.",
+  "sources": [
+    {
+      "id": "source.mirror.kleiser",
+      "organization": "Kleiser, Seitz & Krekelberg; Current Biology (2004)",
+      "title": "Neural correlates of saccadic suppression in humans",
+      "sourceType": "primary-source",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15028213/",
+      "retrieved": "2026-10-17",
+      "notes": "Abstract inspected; primary human study, no full-method inspection claimed. Evidence content-intelligence/cycles/cycle-19/research/kleiser-body.json"
+    },
+    {
+      "id": "source.mirror.wurtz",
+      "organization": "Robert H Wurtz; NIH / Vision Research (2008)",
+      "title": "Neuronal mechanisms of visual stability",
+      "sourceType": "primary-source",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2556215/",
+      "retrieved": "2026-10-17",
+      "notes": "Actual extracted author article sections inspected, including masking and separate displacement problem. Evidence content-intelligence/cycles/cycle-19/research/wurtz-body.json"
+    },
+    {
+      "id": "source.mirror.diamond",
+      "organization": "Diamond, Ross & Morrone; Journal of Neuroscience (2000)",
+      "title": "Extraretinal Control of Saccadic Suppression",
+      "sourceType": "primary-source",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6773104/",
+      "retrieved": "2026-10-17",
+      "notes": "Actual abstract and discussion body in additional-bodies; failed broad lookup retained separately. Evidence content-intelligence/cycles/cycle-19/research/additional-bodies.json"
+    },
+    {
+      "id": "source.mirror.castet",
+      "organization": "Castet & Masson; Nature Neuroscience (2000)",
+      "title": "Motion perception during saccadic eye movements",
+      "sourceType": "primary-source",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10649574/",
+      "retrieved": "2026-10-17",
+      "notes": "Primary abstract inspected, not full paper. Evidence content-intelligence/cycles/cycle-19/research/castet-body.json"
+    }
+  ],
+  "claims": [
+    {
+      "id": "mirror-eyes.claim.mirror",
+      "statement": "Under ordinary conditions, a person looking between their reflected eyes does not consciously see the rapid saccadic movement.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.kleiser",
+          "locator": "Abstract opening mirror demonstration.",
+          "notes": "Normally, not never; only rapid saccades, not every eye movement. Actual source body inspected."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Normally, not never; only rapid saccades, not every eye movement."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "mirror-eyes.claim.saccade",
+      "statement": "Saccades are rapid gaze shifts that move the retinal image across the retina.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.wurtz",
+          "locator": "Abstract and Saccadic suppression opening.",
+          "notes": "Illustration timing qualitative; no universal duration or numerical claim. Actual source body inspected."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Illustration timing qualitative; no universal duration or numerical claim."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "mirror-eyes.claim.simultaneous",
+      "statement": "When looking directly in a mirror the observer’s own moving eyes supply the visual input used to try to see that movement.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.kleiser",
+          "locator": "Mirror demonstration interpreted with rapid image motion described by Wurtz.",
+          "notes": "Optical/observational reasoning; mirror reflection is continuous, not frozen. Explicit optical/temporal inference using inspected mechanism; not represented as an experiment reported in the source."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Optical/observational reasoning; mirror reflection is continuous, not frozen."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "mirror-eyes.claim.sensitivity",
+      "statement": "Visual sensitivity to some stimuli is reduced around saccades; reduction is selective, not a complete interruption of all visual processing.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.diamond",
+          "locator": "Abstract and discussion: real versus simulated motion, time course and stimulus dependence.",
+          "notes": "No universal percentage, fixed window or single brain locus asserted. Actual source body inspected."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "No universal percentage, fixed window or single brain locus asserted."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "mirror-eyes.claim.masking",
+      "statement": "Clear visual stimulation before and after saccades can mask awareness of the brief retinal blur during them.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.wurtz",
+          "locator": "Suppression by visual masking, Behavioral evidence: Matin1972, Campbell/Wurtz1978 and Castet/Masson.",
+          "notes": "Can mask; relative contribution depends on viewing conditions. No literal replacement frames or time deletion. Actual source body inspected."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Can mask; relative contribution depends on viewing conditions. No literal replacement frames or time deletion."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "mirror-eyes.claim.not-blind",
+      "statement": "Visual motion can be perceived during saccades under suitable conditions, so complete blindness is false.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.castet",
+          "locator": "Abstract reports intrasaccadic motion perception and functioning motion pathway.",
+          "notes": "Primary study abstract only; no claim ordinary mirror attempts will reveal motion. Actual source body inspected."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Primary study abstract only; no claim ordinary mirror attempts will reveal motion."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "mirror-eyes.claim.playback",
+      "statement": "Watching a recording afterward separates filmed eye movement from the observer’s original saccade, permitting the movement to be inspected without making that same eye turn at the same time.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.kleiser",
+          "locator": "Mirror phenomenon plus ordinary asynchronous camera observation; explicit inference, not a tested protocol in this study.",
+          "notes": "Use later playback and steady gaze; camera frame rate/exposure can affect recording; not equivalent to direct mirror viewing. Explicit optical/temporal inference using inspected mechanism; not represented as an experiment reported in the source."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "Use later playback and steady gaze; camera frame rate/exposure can affect recording; not equivalent to direct mirror viewing."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    },
+    {
+      "id": "mirror-eyes.claim.continuity",
+      "statement": "Reduced sensitivity and visual masking help avoid awareness of disruptive retinal sweep; spatial stability also involves distinct position and eye-movement signals.",
+      "evidence": [
+        {
+          "sourceId": "source.mirror.wurtz",
+          "locator": "Abstract; Saccadic suppression; Summary and conclusions.",
+          "notes": "These effects help, not a complete account of spatial constancy; no claim the brain erases time. Actual source body inspected."
+        }
+      ],
+      "verificationStatus": "verified",
+      "caveats": [
+        "These effects help, not a complete account of spatial constancy; no claim the brain erases time."
+      ],
+      "review": {
+        "reviewedBy": "Codex internal evidence review, not owner scientific approval",
+        "authority": {
+          "kind": "internal-evidence-review",
+          "cycleId": "cycle.19",
+          "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+        },
+        "reviewedAt": "2026-10-17"
+      },
+      "type": "qualitative"
+    }
+  ],
+  "caveats": [
+    {
+      "id": "mirror.caveat.scope",
+      "statement": "Ordinary conditions; multiple mechanisms and partial stimulus-dependent suppression. Recorded later and direct perception are distinct. No absolute blindness, time deletion or unique neural locus.",
+      "claimIds": [
+        "mirror-eyes.claim.mirror",
+        "mirror-eyes.claim.saccade",
+        "mirror-eyes.claim.simultaneous",
+        "mirror-eyes.claim.sensitivity",
+        "mirror-eyes.claim.masking",
+        "mirror-eyes.claim.not-blind",
+        "mirror-eyes.claim.playback",
+        "mirror-eyes.claim.continuity"
+      ]
+    }
+  ],
+  "hooks": [
+    {
+      "id": "mirror-eyes.hook.try",
+      "archetype": "everyday-perceptual-puzzle",
+      "text": "Look from one eye to the other in a mirror. Why can't you normally catch the movement?",
+      "viewerPromise": "Understand how simultaneous looking and moving, rapid retinal motion, reduced sensitivity and visual masking differ from watching a recording afterward.",
+      "claimIds": [
+        "mirror-eyes.claim.mirror"
+      ]
+    },
+    {
+      "id": "mirror-eyes.hook.camera",
+      "archetype": "observation-contrast",
+      "text": "The mirror shows a movement you normally cannot catch.",
+      "viewerPromise": "Understand how simultaneous looking and moving, rapid retinal motion, reduced sensitivity and visual masking differ from watching a recording afterward.",
+      "claimIds": [
+        "mirror-eyes.claim.mirror",
+        "mirror-eyes.claim.simultaneous"
+      ]
+    }
+  ],
+  "narrativeOpportunities": [
+    {
+      "id": "mirror.story.timing",
+      "title": "Same eyes, different observation",
+      "description": "Understand how simultaneous looking and moving, rapid retinal motion, reduced sensitivity and visual masking differ from watching a recording afterward.",
+      "claimIds": [
+        "mirror-eyes.claim.mirror",
+        "mirror-eyes.claim.saccade",
+        "mirror-eyes.claim.simultaneous",
+        "mirror-eyes.claim.sensitivity",
+        "mirror-eyes.claim.masking",
+        "mirror-eyes.claim.not-blind",
+        "mirror-eyes.claim.playback",
+        "mirror-eyes.claim.continuity"
+      ]
+    }
+  ],
+  "visualOpportunities": [
+    {
+      "id": "mirror.visual.continuity",
+      "title": "One person and one mirror",
+      "description": "Over-shoulder person at a framed mirror; two reflected eyes and gaze targets. Push toward eyes while subjective state is clearly labeled. No third-person view falsely frozen. Camera icon beside same mirror portrait, then visibly transition to later playback with a moving iris. Recorded external view, not direct mirror perception. Macro eyes show a brief ballistic movement then a labeled slowed replay revealing continuous rotation, no teleportation presented as physical fact. Pull back to shoulder and reflection, highlight that reflected eyes and observer are the same person. Optical link stays continuous. Same eye pivots in simplified side section; light from a fixed mirror feature falls on changing retinal positions. Not a detailed neural circuit. Carry eye and retinal sweep into a softly attenuated feature illustration; qualitative dip spans before/during/after, never a flat zero or blackout. Same eye closeup expands into before/blur/after sequence, then clear flank views visually dominate. Label perception schematic, time expanded. First-person mirror view shifts gaze target and resolves without black frames; stable perception illustration, not literal subjective recording or complete explanation of spatial constancy. Large camera/playback frame shows filmed iris moving while a small stationary viewer-eye motif establishes steady current gaze. Replay timeline distinct from original recording. Return to original person/mirror with continuous reflected movement on external view; momentary direct-perception annotation and confident resolved ending.",
+      "claimIds": [
+        "mirror-eyes.claim.mirror",
+        "mirror-eyes.claim.saccade",
+        "mirror-eyes.claim.simultaneous",
+        "mirror-eyes.claim.sensitivity",
+        "mirror-eyes.claim.masking",
+        "mirror-eyes.claim.not-blind",
+        "mirror-eyes.claim.playback",
+        "mirror-eyes.claim.continuity"
+      ]
+    }
+  ],
+  "relatedQuestions": [],
+  "followUpOpportunities": [],
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review, not owner scientific approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.19",
+      "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810"
+    },
+    "approvedAt": "2026-10-17",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

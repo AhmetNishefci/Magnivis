@@ -1,0 +1,245 @@
+{
+  "id": "cycle.19",
+  "revision": 10,
+  "premiseApproved": true,
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-19/topic-selection-v1.json",
+    "sha256": "46cf1da651b1f1a45e44529df71418d6d2e2fbdbfa33a8685d7dd156dc0a3f9f"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-19/owner-premise-authority.json",
+    "sha256": "1518eae9b5340f54938a081511a605b2851df61a57e4fef6053b477c62ac45fe"
+  },
+  "stage": "publication-review",
+  "next": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "topic": {
+    "id": "topic.cycle19.mirror",
+    "rationale": "Follow explicit selected-topic V1 authority with independent factual verification."
+  },
+  "research": {
+    "reviewSha256": "57ddee72b66a927bc79432cfe6bbf10a68a817df9f3fc294d4074095a9571810",
+    "package": "mirror-eyes",
+    "verifiedClaimIds": [
+      "mirror-eyes.claim.mirror",
+      "mirror-eyes.claim.saccade",
+      "mirror-eyes.claim.simultaneous",
+      "mirror-eyes.claim.sensitivity",
+      "mirror-eyes.claim.masking",
+      "mirror-eyes.claim.not-blind",
+      "mirror-eyes.claim.playback",
+      "mirror-eyes.claim.continuity"
+    ]
+  },
+  "narration": {
+    "scriptSha256": "90991cec9b971b0317fbc64772d1e1a9628cdde55ce435aa600738cab6a4d83c",
+    "text": "Look from one eye to the other in a mirror. Why can't you normally catch the movement? Now record your eyes, and watch it back. There it is. Each quick jump is a saccade. In the mirror, the eyes you're watching are also the eyes doing the looking. As they turn, the image sweeps across the retina. Visual sensitivity drops around the movement. That's saccadic suppression. The clear views before and after can also mask the brief blur. You aren't completely blind. These effects help keep vision stable. Watching a recording later separates the movement from your own eye turn. The mirror never stopped showing it. Your visual system normally keeps the sweep out of awareness."
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-19/production-v1/direction-ready.json",
+    "sha256": "27527de0bf4a93e369b4d19d7b9f10895211fb2667b0e45155c4c474af2d1b9d"
+  },
+  "productionBegun": true,
+  "workInProgress": null,
+  "candidate": {
+    "media": {
+      "id": "media.c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+      "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+    },
+    "durationSeconds": 46.166666666666664,
+    "factualSafeguards": [
+      "Ordinary saccadic mirror viewing, not every possible eye movement or absolute impossibility.",
+      "Physical reflection remains continuous; direct perception labeled separately from external view and later playback.",
+      "Retinal sweep, selective sensitivity reduction and visual masking differentiated.",
+      "No complete blindness, blackout, deleted time, literal brain frames, quantitative neural curve or single brain switch.",
+      "Camera/eye timing and steady-gaze playback explanation identified as optical/temporal inference, not a protocol measured in the cited studies.",
+      "Spatial stability also involves distinct signals; suppression/masking help rather than fully explain all spatial constancy."
+    ],
+    "unusualProduction": [
+      "One original V1 with local primary narrator and original synthesized sound.",
+      "Authoring corrections resolved replay frame overflow, camera timing and relevant eye QA instrumentation before canonical registration.",
+      "No paid services, delivery packages, upload, scheduling, publication or existing-post changes."
+    ],
+    "platformPreflight": [
+      {
+        "platform": "youtube",
+        "surface": "youtube-shorts-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/preflight/youtube.json",
+          "sha256": "93f5e4dc999aa4386823a3b579f9d09b9ae1551fc53b32b10418904c5a68e962"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/youtube.json",
+          "sha256": "b95b46b5fce398474fddd27b14ee4062f683354684726376005102eb82ba6719"
+        }
+      },
+      {
+        "platform": "tiktok",
+        "surface": "tiktok-feed",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/preflight/tiktok.json",
+          "sha256": "f8614bc910fef06dba9a73b1a452ce3e572011de0f64b7b23308271f6d1fd1b5"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/tiktok.json",
+          "sha256": "55c0ffad158889eebe36eb7396466f1fb82bd9f7d4f2f303c415879661f2b56d"
+        }
+      },
+      {
+        "platform": "instagram",
+        "surface": "instagram-reels-playback",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/preflight/instagram.json",
+          "sha256": "a48b4b92eb40a81e7440c297131423c24e81c432100358adc14f290ef1edfe39"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/instagram.json",
+          "sha256": "17c65fbfe2a9e8bca32a32e0b2b2d194bcb8b182c9a53b0c891fbbcbd9b6297d"
+        }
+      },
+      {
+        "platform": "facebook",
+        "surface": "facebook-reels-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/preflight/facebook.json",
+          "sha256": "6f705a01cecb272e33a26f11917f7a55edb2350a608ea93510068bc3af65a871"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-19/production-v1/profiles/facebook.json",
+          "sha256": "7238b62d1536be132f7f5d1718623965258d25317a09526c789e422e41af0c60"
+        }
+      }
+    ],
+    "uncertainties": [
+      "Original stylized anatomy, expanded motion and perception diagrams are explanatory rather than medically calibrated.",
+      "Relative contributions of mechanisms depend on conditions; not experimentally measured for this mirror setup.",
+      "No subjective continuous watching/listening or real-phone/native-platform test available.",
+      "Technical terms need owner listening; tiny.en misrecognized saccade/saccadic despite documented phoneme input.",
+      "Phrase boundaries authored approximately within measured sentence takes; not forced word alignment.",
+      "Provisional inset profiles and sampled geometry cannot prove native safety."
+    ]
+  },
+  "masterApproved": true,
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-19/delivery-v1/master-approval-v1.json",
+    "sha256": "e96601cc048c4b5de86602c4d2b790c02e581f2ebc69f8a13ac50df13a42d8ff"
+  },
+  "platformMedia": [
+    {
+      "variantId": "mirror-eyes.variant.youtube.v1",
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "media": {
+        "id": "media.c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+        "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/youtube/video-evidence-v1.json",
+        "sha256": "049818709f336e5e9b377119ab8d27a372b3f7642b1539ee740a9f5f9438a35c"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/youtube/manifest-v1.json",
+        "sha256": "bf8b27f25fa6f5bc7d35f475fc48ea224caf58670be106bcbd39e8755a65d4d6"
+      }
+    },
+    {
+      "variantId": "mirror-eyes.variant.tiktok.v1",
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "media": {
+        "id": "media.c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+        "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/tiktok/video-evidence-v1.json",
+        "sha256": "b7f3f5e2c2158ec1033e718bfa6c283f8fc28cbc7dbc51d03e43c7feeb2c3ff0"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/tiktok/manifest-v1.json",
+        "sha256": "98b809bca0c5f8108850fb6aebc601599784d619a1a8fdbe4a8dff816b84b88f"
+      }
+    },
+    {
+      "variantId": "mirror-eyes.variant.instagram.v1",
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "media": {
+        "id": "media.c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+        "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/instagram/video-evidence-v1.json",
+        "sha256": "63772894d4bf7e48ab15232a2124330d9faa61abc19fe412106c650abb5bcd6a"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/instagram/manifest-v1.json",
+        "sha256": "73cbc61b6dff501ea59e617de9128232f5f06c165b8a5cc3cba47dd6f5a63a02"
+      }
+    },
+    {
+      "variantId": "mirror-eyes.variant.facebook.v1",
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "media": {
+        "id": "media.c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+        "sha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/facebook/video-evidence-v1.json",
+        "sha256": "8c191e327b02d9933ef64457ce382a8d91ba2176f65803ebc654ab5d5d17d587"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-19/delivery-v1/facebook/manifest-v1.json",
+        "sha256": "d0948e22e352e1cf89b0134fa298503aef1e82f1669c179761ff50cabbbca5c2"
+      }
+    }
+  ],
+  "publicationAuthorized": false,
+  "observations": []
+}

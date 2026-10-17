@@ -1,0 +1,74 @@
+{
+  "mediaSha256": "c06b3f746fdff2ec22d8b7820d36079ae73b79bd619d13656bc954a767c9cc6d",
+  "inspectedAt": "2026-10-17T19:42:50.839135Z",
+  "actionableIssuesResolved": true,
+  "inspectionMethod": "Actual decoded chronological1s samples, every caption midpoint, overview/motion and360px phone approximation; full1080px opening. No continuous playback or subjective audio.",
+  "captionMidpointsInspected": 34,
+  "chronologicalSamples": 47,
+  "geometryCheckpoints": 91,
+  "files": [
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/contact-sheet.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/contact-sheet.jpg",
+      "sha256": "9d32edc9a8e8b906bb5c644ba2bd05c1136979654e3296e25719069853cfd1ce"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/scene-overview.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/scene-overview.jpg",
+      "sha256": "01cc0e082e34e51491745111a39b7cd374bb268df0b2107f6615a151716b51be"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/phone-readability.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/phone-readability.jpg",
+      "sha256": "80a96d4f670fb79a2e4c0385d30f19098ee42cfda0e6674054563cf20b874c86"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/motion-progression.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/motion-progression.jpg",
+      "sha256": "53336d192c129ff1f813b5e4e92fe5ea371e87acfc6e7883541fcb7bfbc4bff9"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/captions-1.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/captions-1.jpg",
+      "sha256": "905aacc854bfd3ff2a294b78c5572eeb4daba71a79a47b309459dddc536d9ba6"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/captions-2.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/captions-2.jpg",
+      "sha256": "63c0e87d4dc6b6ca40a94ac15bf23d1bc0049d9955f0a77512d4e5db9bbe3cb9"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/captions-3.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/captions-3.jpg",
+      "sha256": "e63a7ad5197f2ce3de4aa5c4723533f0b062a8f82e81b01a607dc7e0d4ab1521"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/sequence-1.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/sequence-1.jpg",
+      "sha256": "a916bacd4e71af532038d5eb0215d1013a7472ceba5b1f881bd41be6165b92e7"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/sequence-2.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/sequence-2.jpg",
+      "sha256": "9e4222635dda87905f7ccfb583067e5f3977165c39f9fc2a0558592689d4db1e"
+    },
+    {
+      "sourcePathAtInspection": "qa/mirror-eyes/sequence-3.jpg",
+      "canonicalPath": "artifacts/qa-evidence/mirror-eyes-cycle19-v1/sequence-3.jpg",
+      "sha256": "59522016aaa0c3ba060ad6f634cf48ce96b9ac1447dd254e13a69004f514d4aa"
+    }
+  ],
+  "findings": [
+    "Recording precedes explicitly later playback, with no screen overflow.",
+    "External physical reflection and subjective schematic separately labeled.",
+    "Retinal motion, nonzero sensitivity dip, masking and steady-gaze replay have distinct visual developments.",
+    "All34 exact phrases visible and legible in local phone-size inspection; small disclosures and native UI still need real-phone review."
+  ],
+  "limitations": [
+    "No continuous playback/listening.",
+    "No real-device or native-platform inspection.",
+    "Sampled motion coverage, not all-frame geometric proof.",
+    "Stylized anatomy and qualitative expanded timing; not calibrated physiology.",
+    "Owner creative acceptance and audio pronunciation remain pending."
+  ]
+}
