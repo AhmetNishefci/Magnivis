@@ -1,0 +1,82 @@
+{
+  "kind": "qa-log-durability-supplement",
+  "replacementCommit": "09283914c057dd5c726880dc70514ab8b0375ebb",
+  "reason": "Repository *.log ignore rule excluded exact referenced validation logs from the initial remediation commit. Retain exact existing bytes without rewriting any pushed commit or modifying frozen QA records.",
+  "logs": [
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/artifact-durability-v1.log",
+      "sha256": "ba7c65ce07e8187f40d220120ed5aad93fc9a24d780f1223b68ca6384b69cdd5",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/repository-check-v1.log",
+      "sha256": "c0b821801b63bc6caa60bf5db1435826359c08593ac6b544f386aea3e0b2bece",
+      "bytes": 1946
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/repository-check-v2.log",
+      "sha256": "4f9851acbdd680ba4b69a374d3575a43edd729565efa3e4853ac94611c9de1ee",
+      "bytes": 1946
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/repository-check-v3.log",
+      "sha256": "a6a6a2b3f57830e49377965098c3d7c6758c666e54e318ae27a5c7dd7abdba7f",
+      "bytes": 694
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/artifact-durability-v1.log",
+      "sha256": "ba7c65ce07e8187f40d220120ed5aad93fc9a24d780f1223b68ca6384b69cdd5",
+      "bytes": 234972
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/media-qa-v1.log",
+      "sha256": "aaa87d2b88138d17913a67e53e3e63b02bd6c4fe6b696e8c8889a5c0ff75c21d",
+      "bytes": 666
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/repository-check-v1.log",
+      "sha256": "ec69ffcaf05df340b02e920bafd216da35e8a90134a40a446a69ce62ea8312b3",
+      "bytes": 1946
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/repository-check-v2.log",
+      "sha256": "25a8e009bd8de90053820d7624bc1d1ce5be744ee0aad6f724375b979e0ca539",
+      "bytes": 694
+    }
+  ],
+  "scientificEvidenceChanged": false,
+  "approvedMediaChanged": false,
+  "deliveryPackagesChanged": false,
+  "schedulingRecordsChanged": false,
+  "sourceOrTestCodeChanged": false,
+  "tokenScanPassed": true,
+  "gitOperation": "Additive follow-up commit and normal push only; no amend of pushed history.",
+  "rawLogWhitespace": "Two captured passing logs end with a final blank line. Preserve exact hash-bound bytes using scoped qa/.gitattributes for raw *.log evidence; no source whitespace policy or test configuration changes.",
+  "scopedAttributes": [
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/.gitattributes",
+      "sha256": "e0f71f5a63a6e921de9929b3bb3040051f7fd482fad92db4ecf3c9a777cc233f"
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/.gitattributes",
+      "sha256": "e0f71f5a63a6e921de9929b3bb3040051f7fd482fad92db4ecf3c9a777cc233f"
+    }
+  ],
+  "postStagingValidation": {
+    "checkedAt": "2026-10-18T13:02:45.813529+00:00",
+    "artifactDurabilityPassed": true,
+    "canonicalPayloads": 1450,
+    "durableArtifacts": 731,
+    "allEightReferencedLogsTrackedAndHashExact": true,
+    "existingFilesModified": 0,
+    "sourceOrTestsChanged": false,
+    "fullPendingIndexExactTokenOccurrences": 0,
+    "gitDiffCheckPassed": true,
+    "fullSourceSuiteAlreadyPassedAtReplacementCommit": {
+      "testFiles": 56,
+      "tests": 518,
+      "typecheck": "passed",
+      "lint": "passed"
+    }
+  }
+}
