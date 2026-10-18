@@ -1,0 +1,248 @@
+{
+  "id": "cycle.21",
+  "revision": 15,
+  "premiseApproved": true,
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-21/topic-selection-v1.json",
+    "sha256": "64cde87f2a28ee650ef50268ca1cc9953084e9f89435836d6271509274fb6a07"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-21/owner-premise-authority.json",
+    "sha256": "e68660a05df0380713995cfacc7cb6c46852dc79c31e6990d2a9049d3f61f97b"
+  },
+  "stage": "publication-review",
+  "next": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "topic": {
+    "id": "topic.cycle21.jellyfish",
+    "rationale": "Explicit selected-species brief; normal gates preserved. No second topic selection."
+  },
+  "research": {
+    "reviewSha256": "147afcb25f5e58e6bd5d838c6bb27aac75150deeefe08eda2d0729578ae13194",
+    "package": "jellyfish-reversal",
+    "verifiedClaimIds": [
+      "jellyfish-reversal.claim.reverse",
+      "jellyfish-reversal.claim.normal",
+      "jellyfish-reversal.claim.trigger",
+      "jellyfish-reversal.claim.stages",
+      "jellyfish-reversal.claim.stolon",
+      "jellyfish-reversal.claim.cells",
+      "jellyfish-reversal.claim.molecular",
+      "jellyfish-reversal.claim.repeat",
+      "jellyfish-reversal.claim.mortality",
+      "jellyfish-reversal.claim.anatomy",
+      "jellyfish-reversal.claim.species"
+    ]
+  },
+  "narration": {
+    "scriptSha256": "76de467a6fe64316c81abca2f4bca26338003fa6bf82a454297d8f85fa554c46",
+    "text": "What if an animal could reverse its own life cycle? This is Turritopsis dohrnii. Normally, attached polyps bud off tiny jellyfish, which grow into swimming adults. But injury or starvation can send an adult another way. Its bell collapses. Its tentacles disappear. It settles into a cyst-like mass. Inside, cells reorganize. Some can change their specialized identity: transdifferentiation. A stolon grows, then polyps. That colony can bud new jellyfish. Life-cycle reversal can happen repeatedly in laboratory cultures. The molecular controls are still being studied. But predators can still kill it. Reversal isn't guaranteed survival. It doesn't make death impossible. It makes the direction of development reversible."
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-21/revision-v2/direction-v2.json",
+    "sha256": "66edd99230b603196cb7ac6ff14caa92167b99becfed98f3b0122e3da2f36b2e"
+  },
+  "productionBegun": true,
+  "workInProgress": null,
+  "candidate": {
+    "media": {
+      "id": "media.f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+      "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+    },
+    "durationSeconds": 53.233333333333334,
+    "factualSafeguards": [
+      "Medusa → cyst-like mass → stolon → polyps → colony that buds new medusae, not a smaller baby jellyfish.",
+      "Some specialized cells change identity; illustrative forms are not observed lineages or exact molecular events.",
+      "Molecular controls explicitly still under study; candidate pathways are not proven causal switches.",
+      "Repeated reversal scoped to laboratory cultures; no10-repeat or infinite lifespan claim.",
+      "Predators can kill it; reversal is not guaranteed survival.",
+      "T.dohrnii species-informed16-tentacle adult reference; no other species footage or numerical species-generalization."
+    ],
+    "unusualProduction": [
+      "Exact V1 af_heart narration, soundscape and complete finished AAC audio preserved by packet copy and decoded PCM equality.",
+      "No paid services, deliveries, upload, scheduling or publication authority."
+    ],
+    "platformPreflight": [
+      {
+        "platform": "youtube",
+        "surface": "youtube-shorts-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-21/revision-v2/preflight/youtube.json",
+          "sha256": "49c91bfb4bf5713ee112a378d1a3a67ebaf4ed791b5f2293ce6f4ba952eecbf4"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/youtube.json",
+          "sha256": "dad5ddd53a9be33f5d3118e21e6f87fe450d9173dae8c4e37aecceaf71beaaac"
+        }
+      },
+      {
+        "platform": "tiktok",
+        "surface": "tiktok-feed",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-21/revision-v2/preflight/tiktok.json",
+          "sha256": "9c5e15f301638830507ad571d1918bbd512d2bef2173f6cec222a681a2ab170e"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/tiktok.json",
+          "sha256": "d1b328720173bc9ef46ae1b782cdc08512475fa10e63863ee2ba082d9a3edfdc"
+        }
+      },
+      {
+        "platform": "instagram",
+        "surface": "instagram-reels-playback",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-21/revision-v2/preflight/instagram.json",
+          "sha256": "7a598c55d974c49027f0b005bb5f05e1d719bbd527dd30681f9bf91980350c4d"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/instagram.json",
+          "sha256": "3abd0c71b3470bf810b3e3ff80b9d93c2e0a6583714952c9eb6365e494f3c73b"
+        }
+      },
+      {
+        "platform": "facebook",
+        "surface": "facebook-reels-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-21/revision-v2/preflight/facebook.json",
+          "sha256": "64f42aaba59360463e43d62824357b0197bb7e2c9e090ba97970296f839cc7fd"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/facebook.json",
+          "sha256": "d3dd013ff37e59650adb985816b6aa3a7094fa1bd6b5940b10eccca43cfbc7ef"
+        }
+      }
+    ],
+    "uncertainties": [
+      "Original layered anatomical macro is illustrative, not photorealistic footage or measured simulation.",
+      "No specific cell-fate map, molecular switch or universal cell survival is asserted.",
+      "No continuous subjective watching/listening or actual-phone/native-app review available.",
+      "Within-take caption timing is authored approximately; technical text/geometry checks are not listening certification.",
+      "Provisional geometry, unknown native UI/crops and sampled motion remain untested.",
+      "Exact 1597-frame V1 timeline retained at owner request: 53.233333 seconds of picture; AAC/container tail is separately reported.",
+      "No disease incidence, quantified wild mortality or unlimited individual longevity established."
+    ]
+  },
+  "masterApproved": true,
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-21/delivery-v1/master-approval-v1.json",
+    "sha256": "4597fa0b49dcf05d4938b4d83d472f52973b60399f10ef481be8d4703cc0310d"
+  },
+  "platformMedia": [
+    {
+      "variantId": "jellyfish-reversal.variant.youtube.v1",
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "media": {
+        "id": "media.f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+        "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/youtube/video-evidence-v1.json",
+        "sha256": "0168745b6048464329551f0a7ab7c50b0171ea2033f5a32b9546fa32cbc08c34"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/youtube/manifest-v1.json",
+        "sha256": "1480d852c364280ffe9c55abb5ab48d1c35e0222aa5e714f55a31575a136f4c3"
+      }
+    },
+    {
+      "variantId": "jellyfish-reversal.variant.tiktok.v1",
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "media": {
+        "id": "media.f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+        "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/tiktok/video-evidence-v1.json",
+        "sha256": "6f682fe396ebade8432f1256c599e83b6faf40fb77e26a582cbea0701b4d4348"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/tiktok/manifest-v1.json",
+        "sha256": "d0ef3f7d802621e8119d27cfadc2c1de46aa2eb58cb523224ecece4800e316d9"
+      }
+    },
+    {
+      "variantId": "jellyfish-reversal.variant.instagram.v1",
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "media": {
+        "id": "media.f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+        "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/instagram/video-evidence-v1.json",
+        "sha256": "096046802ab30df03d53bd5365c1d8051a3ac484c9b92a002f30d88906bb6e38"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/instagram/manifest-v1.json",
+        "sha256": "582efcb02d09394be4b1ef4f7126e214c7df1c3c856217911a91eafab8a08bd7"
+      }
+    },
+    {
+      "variantId": "jellyfish-reversal.variant.facebook.v1",
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "media": {
+        "id": "media.f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+        "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/facebook/video-evidence-v1.json",
+        "sha256": "ebc1334a8368f7a621d5db0167bca57e58fd181e9ff4c2c9dd13f4848c7d5cdd"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-21/delivery-v1/facebook/manifest-v1.json",
+        "sha256": "0fb66903f7fb49a8aba0b9f12dc7164e541d84afab65b880637b337a97075076"
+      }
+    }
+  ],
+  "publicationAuthorized": false,
+  "observations": []
+}

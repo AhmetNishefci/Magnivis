@@ -6,6 +6,8 @@ export default defineConfig({
     include: ['tests/**/*.test.{ts,tsx}'],
     // Several suites hash full durable media; bound file-level concurrency to avoid
     // disk/CPU contention exhausting unchanged per-test timeouts on larger catalogs.
-    maxWorkers: 4,
+    // Serial file execution keeps the growing canonical-media audit within its
+    // existing timeout without weakening assertions or increasing time budgets.
+    maxWorkers: 1,
   },
 });

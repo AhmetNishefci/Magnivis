@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="en">
+
+
+
+
+
+
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/nemesis/calnemo/static/css/styles.css"  rel="stylesheet">
+    <link href="/nemesis/calnemo/static/css/nemesis.css"  rel="stylesheet">
+    <link href="/nemesis/calnemo/static/css/bioregions.css"  rel="stylesheet" type="text/css">
+  
+
+    <!-- font awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- load jQuery JS from CDN -->
+    <!--<script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>-->
+  
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1818437-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1818437-2');
+</script>
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<!-- htmx-->
+<script src="https://unpkg.com/htmx.org@1.9.6"></script>
+
+  <!-- DataTable -->
+<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script> -->
+
+<link href="https://cdn.datatables.net/v/bs4/dt-1.13.4/b-2.3.6/b-html5-2.3.6/datatables.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="https://cdn.datatables.net/v/bs4/dt-1.13.4/b-2.3.6/b-html5-2.3.6/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
+
+    <!-- load Leaflet CSS and JS from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+
+
+          <!--<script src="/static/js/scripts.js"></script>-->
+          
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+         <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+           integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+           crossorigin="">
+         </script>
+         
+
+
+
+         
+
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+  
+         <!-- load Popper JS from CDN -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+           integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+           crossorigin="anonymous">
+         </script>
+  
+         <!-- chart.js -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+  
+  
+         <link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
+  
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+  
+<script  type="text/javascript">
+        /*
+  Source: https://stackoverflow.com/a/16887276/1709587
+
+  Usage instructions:
+
+  Call
+
+      jQuery('#mySelectElement').selectOptionWithText('target_text');
+
+  to select the <option> element from within #mySelectElement whose text content
+  is 'target_text' (or do nothing if no such <option> element exists).
+*/
+jQuery.fn.selectOptionWithText = function selectOptionWithText(targetText) {
+    return this.each(function () {
+        var $selectElement, $options, $targetOption;
+
+        $selectElement = jQuery(this);
+        $options = $selectElement.find('option');
+        $targetOption = $options.filter(
+            function () {return jQuery(this).text() == targetText}
+        );
+
+        // We use `.prop` if it's available (which it should be for any jQuery
+        // versions above and including 1.6), and fall back on `.attr` (which
+        // was used for changing DOM properties in pre-1.6) otherwise.
+        if ($targetOption.prop) {
+            $targetOption.prop('selected', true);
+        } 
+        else {
+            $targetOption.attr('selected', 'true');
+        }
+    });
+}
+</script>
+
+
+    
+    <style>
+      .jumbotron {
+        background-image: url("/nemesis/calnemo/static/images/calnemo.jpg");
+        background-size: cover;
+        background-position: 58.33325% center;
+      }
+      .jumbotron h1 {
+        color: #fff;
+      }
+      .jumbotron h2 {
+        color: #fff;
+      }
+      .jumbotron p {
+        color: #fff;
+      }
+      .card {
+        background-color: #4A504C;
+      }
+  
+    .wrapper {
+        display: flex;
+        width: 100%;
+    }
+  
+    #sidebar {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 999;
+        background: #7386D5;
+        color: #fff;
+        transition: all 0.3s;
+    }
+
+
+}
+
+    </style>
+  </head>
+
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href=https://www.wildlife.ca.gov/OSPR/Science/Marine-Invasive-Species-Program><img height = '40' src='/nemesis/static/images/CDFW shield.png'></a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/nemesis/calnemo/">CalNEMO <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://serc.si.edu/labs/marine-invasions-research">Marine Invasions Lab<span
+              class="sr-only"></span></a>
+        </li>
+      </ul>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    
+    
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+
+    <!--    <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    -->
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="/nemesis/calnemo/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner Portals</a>
+      <div class="dropdown-menu" aria-labelledby="dropdown01">
+        <a class="dropdown-item" href="/nemesis/">Nemesis</a>
+        <a class="dropdown-item" href="/nemesis/calnemo/">California</a>
+        <a class="dropdown-item" href="/nemesis/panama/">Panama</a>
+        <a class="dropdown-item" href="/nemesis/galapagos/">Galapagos</a>
+        <a class="dropdown-item" href="/nemesis/coconemo/">Cocos Island NP</a>
+        <a class="dropdown-item" href="/nemesis/jtmd/">JTMD</a>
+        <div class="dropdown-divider"></div>
+        <div class="dropdown-header h6">Archived Projects</div>
+        <a class="dropdown-item" href="/nemesis/chesreport/">Chesapeake</a>
+        
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown">Browse Species<a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/nemesis/calnemo/group_profiles">Taxonomic Groups</a>
+        <a class="dropdown-item" href="/nemesis/calnemo/all_taxa">All Species</a>
+      </div>
+    </li>
+    
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/nemesis/calnemo/regions">Browse Regions</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/nemesis/news">News</a>
+    </li>
+    <li class="nav-item dropdown"></li>
+    
+    
+    <li class="nav-item">
+      <a class="nav-link" href="/nemesis/login">login</a>
+    </li>
+    
+    <span class="navbar-text">
+      
+    </span>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0" method="post" action="/nemesis/calnemo/results">
+        <input type="hidden" name="csrf_token" value="ImMwYzM5MzNkYjhjN2RmMzVhNWU2N2ZjODc3OGUwODdjYzNiZjRmNzAi.atQOvA.QGFDYkqyCTb6e6gHLepdsQOFUSE">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search Taxa" aria-label="Search Taxa" id="taxon" name="taxon">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Search Taxa</button>
+      </form>
+    </div>
+  </nav>
+  
+
+  
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="card flex-row flex-wrap">
+            <div class="card-header border-0" style="width: 14rem">
+                <img src="https://invasions.si.edu/SpImages/Turritopsis dohrnii_Japan.JPG" class="card-img-top" alt="Image of Turritopsis dohrnii">
+            </div>
+            <div class="card-block px-2">
+                <h1 class="card-title text-white"><em>Turritopsis dohrnii</em></h1>
+                <h4 class="text-white"><a href='../group_summary/Cnidarians-Hydrozoans'>Cnidarians-Hydrozoans</a></h4>
+                <p class="card-text text-white">Immortal Jellyfish</p>
+            </div>
+            <div class="card-block px-2">
+                    <p class="card-text text-white">The immortal jellyfish (<em>Turritopsis dohrnii)</em>&nbsp;has both a polyp and medusa stage, and can switch between the two stages. This ability to go from medusa to polyp means an individual can live a very long life! It was first described from Naples, Italy, and is a common hydroid on rocky substrates in the Western Mediterranean and Adriatic where its distribution is considered cryptogenic. Introduced populations are known from the Indian River Lagoon, Florida; both the Caribbean and Pacific coasts of Panama; and Japan. The hydroid stage of this species can be found attached to rocks, docks, pilings and ships&rsquo; hulls.  No impacts have been reported from introduced populations.</p>
+            </div>
+            
+            <div class="card-footer w-100 text-white small">
+                <p><b>Image Credit:</b> Shin Kubota, Seto Marine Biological Laboratory, Japan</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+<main role="main" class="px-3">
+
+
+    
+    <div>
+        
+<div>
+
+    <h2 id="invhist">Invasion History</h2>
+    First Non-native North American Tidal Record: 2006<br/> First Non-native West Coast Tidal Record: 2010<br/> First Non-native East/Gulf Coast Tidal Record: 2006<br/>
+    <hr>
+    <h3>General Invasion History:</h3>
+    <p><em>Turritopsis dohrnii</em> was first described from Naples, Italy, and is a common hydroid on rocky substrates in the Western Mediterranean and Adriatic. However, it is less well-known in this region as a medusa (Schuchert 2004). In a survey of hydroids in Lebanon, it was collected only once, in a harbor (Morri et al. 2009). Most reports of <em>T. nutricula</em> in the Mediterranean probably refer to <em>T. dohrnii</em>, but the presence of <em>T. nutricula</em> or other species, cannot be excluded (Schuchert 2004). Miglietta et al. (2006) and Miglietta and Lessios (2009) conducted a genetic survey of <em>Turritopsis</em> spp., and found <em>T. dohrnii</em> in the Indian River Lagoon, Florida; both the Caribbean and Pacific coasts of Panama; and Japan. They also found a high degree of genetic similarity among populations. They concluded that this disjunct distribution could not be explained by long-distance dispersal of medusae in ballast water, or polyps on ships&rsquo; hulls. An unusual feature of <em>T. dohrnii</em>'s life cycle is the ability of medusae to transform into a cyst, which can then regenerate into a polyp, making the organism potentially immortal (Miglietta and Lessios 2009).</p>
+
+
+    <h3>North American Invasion History:</h3>
+    
+        <h4>Invasion History on the West Coast:</h4>
+        <p>In 2019 two samples of colonies from Newport Beach, California were genetically identified as <em>T. dohrnii</em> (Miglietta et al. 2019).</p>
+     
+    
+        <h4>Invasion History on the East Coast:</h4>
+        <p>Medusae and polyps of <em>Turritopsis dohrnii</em> were collected at Fort Pierce, Florida in 2006, in the Indian River Lagoon, and identified using 16S mitochondrial DNA (Miglietta and Lessios 2009).</p>
+     
+     
+     
+    
+        <h4>Invasion History Elsewhere in the World:</h4>
+        <p>Miglietta and Lessios (2009) surveyed populations of <em>Turritopsis</em> spp. at many locations in the Atlantic and Pacific in 2002-2009. On the Caribbean coast of Panama, medusae of <em>T. dohrnii</em> were found at Galeta Island, near the Panama Canal entrance, this hydrozoan was also found in many samples in Bocas del Toro, about 200 km west of the Canal. On the Pacific side of Panama, medusae of <em>T. dohrnii</em> were found in Panama Bay, and were one of the more abundant hydromedusae present (Miglietta and Lessios 2009). In Japan, polyps of this species were found in 2002 in 'southern Japan' and in 2003 on Okinawa (Miglietta et al. 2006; Miglietta and Lessios 2009).</p>
+    
+
+    <hr>
+
+
+</div>
+        
+<div>
+
+    <h2 id="desc">Description</h2>
+    <p><em>Turritopsis dohrnii </em>is a hydrozoan with both a polyp and medusa stage.  The hydroid colonies vary from sparingly branched colonies a few mm high to much-branched, multiple-stemmed colonies up to 35 mm high. The hydranths branch off at an acute angle from the hydrocaulus (stem), and then curve away. The stem and branches are covered by a firm perisarc, often encrusted with detritus and algae. The hydranths are spindle-shaped and have 12-20 filiform (thread-like) tentacles, spread over most of their length, and end in a conical hypostome. The pear-shaped medusa buds arise singly on short stems from below the hydranths. The hydranths can be colorless or pinkish. <br /><br /> Newly released medusae have 8-12 tentacles, and a conical manubrium, with four fluorescent-yellow pads between the roots of the interradial canals. The adult medusae are up to 2.7 mm in height and 3.3 mm in diameter, with 14-32 tentacles. Numbers of tentacles in adult medusae vary regionally with: 8 in Bocas del Toro, Panama; 12-24 in Italy; and 14-24 in Japan, probably in part due to environmental influences. The tentacles sometimes have terminal swellings. The manubrium is cross-shaped in cross section, ending in four lips, and reaches to the bell margin. It is red, while the gonads are brownish, with four rust-colored dots, between the radial canals. (Description from: Bouillon et al. 2004; Schuchert 2004)<br /><br /> Medusae of the genus <em>Turritopsis</em> have been widely identified as <em>T. nutricula</em> McCrady, 1857 (described from Charleston, South Carolina) around the world. <em>Turritopsis dohrnii</em> is often treated as a synonym of <em>T. nutricula</em>; however, different populations have been shown to have different morphologies and life histories, both in the medusa and polyp stage (Schuchert 2004). A genetic study of <em>Turritopsis</em> identified seven species from the Atlantic and Pacific, four of which are unnamed (Miglietta et al. 2006). <em>Turritopsis dohrnii</em>, described from the Mediterranean, has a disjunct distribution and genetic similarity indicative of human-mediated introduction (Miglietta and Lessios 2009). Additional cryptic species of <em>Turritopsis </em>may exist, and other 'silent invasions' are possible. Identification of the cryptic species of <em>Turritopsis</em> is only possible by molecular means (Miglietta and Lessios 2009).
+</br>
+</br>
+<i>Turritopsis dohrnii</i> has been christened 'Immortal Jellyfish' in the popular press, because  starved medusae can settle to become an undifferentiated cyst, which grows into a new polyp, restartimg the life cycle. This process of transdifferentiation makes each individual organism potentially immortal (Miglietta et al. 2009).</p>
+    <hr>
+</div>
+        
+<div>
+
+
+    <h2 id="tax">Taxonomy</h2>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Taxonomic Tree</h3>
+            
+            <table>
+                      
+                <tr>
+                    <td><strong>Kingdom:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Animalia</td>
+                </tr> 
+                <tr>
+                    <td><strong>Phylum:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Cnidaria</td>
+                </tr> 
+                <tr>
+                    <td><strong>Class:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Hydrozoa</td>
+                </tr> 
+                <tr>
+                    <td><strong>Subclass:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Hydroidolina</td>
+                </tr> 
+                <tr>
+                    <td><strong>Order:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Anthoathecatae</td>
+                </tr> 
+                <tr>
+                    <td><strong>Suborder:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Filifera</td>
+                </tr> 
+                <tr>
+                    <td><strong>Family:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Oceaniidae</td>
+                </tr> 
+                <tr>
+                    <td><strong>Genus:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> Turritopsis</td>
+                </tr> 
+                <tr>
+                    <td><strong>Species:</strong></td>
+                    <td>&nbsp;</td>
+                    <td> dohrnii</td>
+                </tr>
+            </table>
+            
+
+
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Synonyms</h3>
+        </div>
+        <div class="panel-body">
+             
+            <em>Dendroclava dohrnii</em> (Weismann, 1883)<br/>   
+            <em>Tubiclava fruticosa</em> (Riedl, 1959)<br/>  
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Potentially Misidentified Species</h3>
+        </div>
+        <div class="panel-body">
+            
+            <b><em>Turritopsis nutricula</em></b><br/>  NW Atlantic (Woods Hole, Miglietta et al. 2009)<br/> 
+            <br/> 
+            <b><em>Turritopsis rubra</em></b><br/>  W Pacific (Japan, New Zealand, Miglietta et al. 2009)<br/> 
+            <br/> 
+            <b><em>Turritopsis sp. 1</em></b><br/>  W Atlantic  (Panama, Miglietta et al. 2009)<br/> 
+            <br/> 
+            <b><em>Turritopsis sp. 2</em></b><br/>  NW Pacific (Japan, Miglietta et al. 2009)<br/> 
+            <br/> 
+            <b><em>Turritopsis sp. 3</em></b><br/>  Mediterranean (Spain, Miglietta et al. 2009)<br/> 
+            <br/> 
+            <b><em>Turritopsis sp. 4</em></b><br/>  W Atlantic  (Panama, Miglietta et al. 2009)<br/> 
+            <br/> 
+        </div>
+    </div>
+</div>
+        
+<div>
+
+
+    <h2 id="eco">Ecology</h2>
+    
+    <h3>General:</h3>
+    <p>The hydrozoan <em>Turritopsis dohrnii</em> forms branched hydroid colonies up to 35 mm high. The colonies grow medusa buds which release planktonic medusae. The medusae have separate sexes, and release gametes which fuse to form planulae, which settle to form hydroids.&nbsp;The hydroid stage of this species can be found attached to rocks, docks, pilings and ships&rsquo; hulls.&nbsp;A unique feature of the genus is that starved medusae settle to become an undifferentiated cyst, which can grow into a new polyp. This process of transdifferentiation restarts the life cycle, and makes each individual organism potentially immortal (Miglietta et al. 2009).</p>
+     
+    
+    <h3>Food:</h3>
+    <p>Zooplankton</p>
+     
+     
+    
+    
+  
+    <!--
+      Jina2 - create dictionary to replace codes with full words and replace inline
+    -->
+    <!-- use dictionary to replace Trophic Status codes-->
+
+
+    <h3>Trophic Status:</h3>
+     <p>Carnivore</p>
+     Carn
+    
+
+    <hr>
+     
+    <h3>Habitats</h3>
+    <table class="table table-striped">
+        
+        <tr>
+            <td>General Habitat</td><td>Rocky</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Marinas &amp; Docks</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Vessel Hull</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>General Habitat</td><td>Unstructured Bottom</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>Salinity Range</td><td>Polyhaline</td><td>18-30 PSU</td>
+        </tr>
+        
+        <tr>
+            <td>Salinity Range</td><td>Euhaline</td><td>30-40 PSU</td>
+        </tr>
+        
+        <tr>
+            <td>Tidal Range</td><td>Subtidal</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>Vertical Habitat</td><td>Epibenthic</td><td>None</td>
+        </tr>
+        
+        <tr>
+            <td>Vertical Habitat</td><td>Planktonic</td><td>None</td>
+        </tr>
+        
+    </table>
+    
+    <hr>
+   
+     
+
+    <hr>
+    <h3>Tolerances and Life History Parameters</h3>  
+    <table class="table table-striped">
+        
+            <tr>
+                <td>Maximum Height (mm)</td><td>35</td><td>Bouillon et al. 2004; Schuchert 2004</td>
+            </tr>
+        
+            <tr>
+                <td>Broad Temperature Range</td><td>None</td><td>Warm temperate-Tropical</td>
+            </tr>
+        
+            <tr>
+                <td>Broad Salinity Range</td><td>None</td><td>Polyhaline-Euhaline</td>
+            </tr>
+        
+    </table>
+
+</div>
+        
+<div>
+
+    <h2 id="imp">General Impacts</h2>
+    
+        No impacts have been reported from introduced populations of <em>Turritopsis dohrnii</em>. However, in Panama Bay, Panama this was one of the seven most abundant hydromedusan taxa (Miglietta et al. 2008).
+    
+    <hr>
+
+
+  
+        
+ 
+</div>
+
+
+        
+<div>
+
+
+    <!--<h2 id="dist">Distribution</h2>-->
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Regional Distribution Map</h3>
+              <div id="dist_map" style="height: 600px; width: 1000px; display: block; margin: 0 auto;"></div>
+              <div id="gbif_map_note" style="font-size: 0.9rem; margin: 6px 0 12px 0; color: #444;"></div>
+            <table class="table table-striped" id="dist_table">
+                <thead>
+                    <tr>
+                        <th>Bioregion</th>
+                        <th>Region Name</th>
+                        <th>Year</th>
+                        <th>Invasion Status</th>
+                        <th>Population Status</th>
+                        <th>Vectors</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/-502/NEP-VI'>NEP-VI</a></td>
+                        <td>Pt. Conception to Southern Baja California</td>
+                        <td>2010</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href='../species_region_summary/-502/P040'>P040</a></td>
+                        <td>Newport Bay</td>
+                        <td>2010</td>
+                        <td>
+                                Non-native
+                            
+                        </td>
+                        <td>
+                            
+                                Established
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+       </div>
+   </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#dist_table').DataTable(
+            {
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'csv',
+                        //Name the CSV
+                        filename: 'Turritopsis_dohrnii_nemesis_distributions_list'
+                    }
+                ]
+            }
+        );
+    });
+</script>
+
+
+        
+<div>
+
+    <!--<h2 id="dist">Distribution</h2>-->
+
+    <div id="occ_panel" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 id="occ_map_label">Occurrence Map</h3>
+              <div id="occ_map" style="height: 600px; width: 1000px; display: block; margin: 0 auto;"></div>
+
+            
+            <table class="table table-striped" id="occ_table">
+                <thead>
+                    <tr>
+                        <th>OCC_ID</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Date</th>
+                        <th>Locality</th>
+                        <th>Status</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    
+                </tbody>
+            </table>
+        
+       </div>
+   </div>
+</div>
+<script type="text/javascript">
+            $(document).ready( function () {
+                $('#occ_table').DataTable();
+    } );
+</script>
+
+
+<script>
+    document.getElementById("occ_map").style.height = '0px'
+    document.getElementById("occ_map_label").style.visibility = 'Hidden'
+    document.getElementById("occ_table").style.visibility = 'Hidden'
+</script>
+
+        
+<div>
+
+    <h2 id="ref">References</h2>
+    
+      
+        <b>Bouillon, Jean;  Medel, Maria Dolores; Pagès, Francesc; 
+ Gili, Josep-Maria; Boero, Ferdinando ; Gravili, Cinzia</b> (2004) <u>Fauna of the Mediterranean Hydrozoa.</u>, <em>Scientia Marina</em> 68(suppl. 2): 5-438 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+      
+      
+      
+        <b>Kingon, Kelly; Robertson, D. Ross</b> 2019 The alien Damselfish, Neopomacentrus cyanomos at Trinidad. https://zenodo.org/records/3364568<br/><br/>
+      
+      
+      <br><br>
+    
+      
+        <b>Marquez, Federico M.; Zabala, Soledad; Bokenhans, Verena; Cumplido, Mariano; Espinosa, Free; Bigatti, Gregorio; Averbuj, Andres </b> (2024) <u>Predation of the invasive green crab Carcinus maenas on the edible snail Buccinastrum deforme, targeted as the most important nearshore marine gastropod fishery from Patagonia, Argentina</u>, <em>Regional Studies in Marine Science</em> 69(103299): Published online 
+      
+      
+      
+      
+      
+          <br>
+          
+          
+              <a href="https://doi.org/10.1016/j.rsma.2023.103299" target="_blank">https://doi.org/10.1016/j.rsma.2023.103299</a>
+          
+      
+      <br><br>
+    
+      
+        <b>Miglietta, M. P.; Piraino,  S.;  Kubota, S.;  Schuchert, P.</b> (2006) <u>Species in the genus <i>Turritopsis</i> (Cnidaria, Hydrozoa): a molecular evaluation.</u>, <em>Journal of Zoological Systematics and Evolutionary Research</em> 45: 11-19 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Miglietta, Maria Pia;  Rossi, Marco; Collin, Rachel</b> (2008) <u>Hydromedusa blooms and upwelling events in the Bay of Panama, Tropical East Pacific.</u>, <em>Journal of Plankton Research</em> 30(7): 783-793 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Miglietta, Maria Pia; Lessios, Harilaos A.</b> (2009) <u>A silent invasion.</u>, <em>Biological Invasions</em> 11: 825-834 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Morri, Carla; Puce, Stefania; Bianchi, Carlo Nike; Bitar, Ghazi; Zibrowius, Helmut; Bavestrello, Giorgio</b> (2009) <u>Hydroids (Cnidaria: Hydrozoa) from the Levant Sea (mainly Lebanon), with emphasis on alien species</u>, <em>Journal of the Marine Biological Association of the United  Kingdom</em> 81: 49-62 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Schuchert, Peter</b> (2004) <u>Revision of the European athecate hydroids and their medusae (Hydrozoa, Cnidaria): Families Oceanidae and Pachycordylidae</u>, <em>Revue Suisse de Zoologie</em> 111(2): 315-369 
+      
+      
+      
+      
+      
+      <br><br>
+    
+      
+        <b>Spano, Carlos; Rozbaczylo, Nicolás; Häussermann, Vreni; Bravo, Ricardo</b> (2013) <u>Redescription of the sea anemones Anthopleura hermaphroditica and Bunodactis hermafroditica (Cnidaria: Anthozoa: Actiniaria) from Chile</u>, <em>Revista de Biología Marina y Oceanografía</em> 48(3): 521-534 
+      
+      
+      
+      
+      
+          <br>
+          
+          
+              <a href="https://DOI 10.4067/S0718-19572013000300010 " target="_blank">DOI 10.4067/S0718-19572013000300010 </a>
+          
+      
+      <br><br>
+    
+    <hr>
+</div>
+    </div>
+    
+
+</main>
+
+<!-- set up variables for leaflet map in _distribution_map.html -->
+<script type="text/javascript">
+	var map_center = [35,-120];
+    var zoom_level = 5;
+    var min_zoom = 4;
+    var northBound = 50;
+    var southBound = 25;
+    var eastBound = -140;
+    var westBound = -100;
+    var portal = 'nemesis/calnemo';
+</script>
+
+<script type="text/javascript">
+
+  var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=[REDACTED THIRD-PARTY MAPBOX TOKEN — unrelated site map configuration]';
+    var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+        maxZoom: 18,
+        noWrap: true
+        });
+    var Esri_OceanBasemap = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
+	    attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
+	    maxZoom: 13,
+	    noWrap: true
+        });
+
+    var ESRI_Streetmap = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community',
+        maxZoom: 19,
+        noWrap: true
+    });
+
+
+    var Esri_WorldImagery2 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+        maxZoom: 18,
+        noWrap: true
+        });
+    var Esri_OceanBasemap2 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
+        maxZoom: 13,
+        noWrap: true
+        });
+    var ESRI_Streetmap2 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community',
+        maxZoom: 19,
+        noWrap: true
+    });
+
+    
+
+
+
+	var baseLayers = {
+		"ESRI Imagery": Esri_WorldImagery,
+		"ESRI Ocean": Esri_OceanBasemap, 
+        "ESRI Streetmap": ESRI_Streetmap,
+	};
+    
+    var baseLayers2 = {
+        "ESRI Imagery": Esri_WorldImagery2,
+        "ESRI Ocean": Esri_OceanBasemap2,
+        "ESRI Streetmap": ESRI_Streetmap2,
+    };
+
+
+
+
+
+
+    function getColor(d) {
+        return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+    }
+    
+
+
+    // var reg_map = L.map('reg_map', {
+    //     center: map_center,
+    //     zoom: zoom_level,
+    //     layers: [Esri_OceanBasemap]
+    // });
+
+	// var map_center = [-1,-90];
+    // var zoom_level = 6;
+    // var min_zoom = 6;
+    // var northBound = 10;
+    // var southBound = -10;
+    // var eastBound = -80;
+    // var westBound = -100;    
+    
+       
+	var dist_map = L.map('dist_map', {
+		center: [0, 0],
+		zoom: zoom_level,
+        minZoom: min_zoom,
+        layers: [Esri_WorldImagery, Esri_OceanBasemap, ESRI_Streetmap]
+	});
+
+    var southWest = L.latLng(southBound, westBound),
+    northEast = L.latLng(northBound, eastBound);
+    var bounds = L.latLngBounds(southWest, northEast);
+
+    dist_map.setMaxBounds(bounds);
+    dist_map.on('drag', function() {
+	    dist_map.panInsideBounds(bounds, { animate: false });
+    }); 
+    
+
+
+    var legend = L.control({position: 'bottomleft'});
+    legend.onAdd = function (dist_map) {
+        var div = L.DomUtil.create('div', 'info legend');
+        var labels = [''];
+        var categories = ['&nbsp;  Non-native &nbsp; ',' &nbsp; Native &nbsp;  ',' &nbsp;  Cryptogenic &nbsp; ', ' &nbsp;  Failed &nbsp;  '];
+        var colors = ['red','blue','yellow','pink'];
+        var fontcolors = ['white', 'white', 'black', 'black'];
+
+        for (var i = 0; i < categories.length; i++) {
+
+            div.innerHTML += 
+            labels.push(
+                '<span style="background-color:'+ colors[i]+ '; color: ' + fontcolors[i] + '; font-size: 20px" >' + categories[i] + '</span>' 
+                );
+
+        }
+        div.innerHTML = labels.join('<br>');
+        return div;
+    };
+    legend.addTo(dist_map);
+
+
+
+
+
+    var occs = L.layerGroup();
+     var markers = L.markerClusterGroup();
+    
+
+
+    var occ_map = L.map('occ_map', {
+        center: [10, 0],
+        zoom: zoom_level,
+        layers: [Esri_WorldImagery2, Esri_OceanBasemap2, ESRI_Streetmap2, markers]
+       });
+    occ_map.setMaxBounds(bounds);
+    
+    // Invalidate map sizes when tabs become visible
+    setTimeout(function() {
+        dist_map.invalidateSize();
+        occ_map.invalidateSize();
+    }, 100);
+
+    // Also invalidate when tabs are switched
+    document.addEventListener('shown.bs.tab', function(e) {
+        if (e.target.id === 'nav-dist-tab') {
+            setTimeout(function() { dist_map.invalidateSize(); }, 50);
+        } else if (e.target.id === 'nav-occ-tab') {
+            setTimeout(function() { occ_map.invalidateSize(); }, 50);
+        }
+    });
+
+
+
+
+
+
+    var distLayerControl = L.control.layers(baseLayers, {}).addTo(dist_map);
+    L.control.layers(baseLayers2).addTo(occ_map);
+   //L.control.layers(baseLayers).addTo(reg_map);
+   
+   var NatBioRegions = "[]";
+   var InvBioRegions = "[(&#39;CAR-I&#39;,), (&#39;CAR-III&#39;,), (&#39;SEP-H&#39;,), (&#39;NWP-2&#39;,), (&#39;S190&#39;,), (&#39;NWP-3b&#39;,), (&#39;PAN_PAC&#39;,), (&#39;PAN_CAR&#39;,), (&#39;MED-VIII&#39;,), (&#39;NEP-VI&#39;,), (&#39;P040&#39;,), (&#39;G260&#39;,), (&#39;SA-II&#39;,), (&#39;CAR-VII&#39;,)]";
+   var CryptoRegions = "[(&#39;MED-III&#39;,), (&#39;MED-II&#39;,), (&#39;MED-VII&#39;,), (&#39;MED-V&#39;,)]";
+   var FailedRegions = "[]"
+
+    if (document.getElementById("dist_map") && portal === "nemesis/secret_squirrel") {
+       dist_map.createPane("gbifOverlay");
+       dist_map.getPane("gbifOverlay").style.zIndex = 650;
+
+       var gbifSpeciesName = "Turritopsis dohrnii".trim();
+       var gbifNote = document.getElementById("gbif_map_note");
+
+       if (!gbifSpeciesName) {
+           if (gbifNote) {
+               gbifNote.textContent = "No species name provided for GBIF lookup.";
+           }
+       } else {
+           if (gbifNote) {
+               gbifNote.textContent = "GBIF lookup for: " + gbifSpeciesName;
+           }
+           fetch("https://api.gbif.org/v1/species/match?name=" + encodeURIComponent(gbifSpeciesName))
+               .then(function (response) {
+                   return response.json();
+               })
+               .then(function (data) {
+                   var taxonKey = data.usageKey || data.speciesKey || data.genusKey;
+                   if (!taxonKey) {
+                       if (gbifNote) {
+                           gbifNote.textContent = "GBIF taxon key not found for " + gbifSpeciesName + ".";
+                       }
+                       return;
+                   }
+
+                   if (gbifNote) {
+                       gbifNote.textContent =
+                           "GBIF taxonKey: " + taxonKey +
+                           (data.rank ? " (rank: " + data.rank + ")" : "") +
+                           (data.scientificName ? " - " + data.scientificName : "");
+                   }
+
+                   var gbifUrl =
+                       "https://api.gbif.org/v2/map/occurrence/density/{z}/{x}/{y}@1x.png" +
+                       "?taxonKey=" + encodeURIComponent(taxonKey) +
+                       "&style=iNaturalist.poly" +
+                       "&bin=hex" +
+                       "&srs=EPSG:3857";
+
+                   fetch("https://api.gbif.org/v1/occurrence/search?limit=0&taxonKey=" + encodeURIComponent(taxonKey))
+                       .then(function (response) {
+                           return response.json();
+                       })
+                       .then(function (occData) {
+                           var occCount = occData.count || 0;
+                           if (gbifNote) {
+                               gbifNote.innerHTML =
+                                   "<span style='color: red; font-size: 14px;'>●</span> " +
+                                   "GBIF Occurrences for " + gbifSpeciesName +
+                                   " | taxonKey: " + taxonKey +
+                                   " | occurrences: " + occCount +
+                                   " | tiles: " + gbifUrl;
+                           }
+                           if (occCount === 0) {
+                               var gbifMapEl = document.getElementById("gbif_map");
+                               var gbifLabelEl = document.getElementById("gbif_map_label");
+                               if (gbifMapEl) {
+                                   gbifMapEl.style.height = "0px";
+                               }
+                               if (gbifLabelEl) {
+                                   gbifLabelEl.style.visibility = "hidden";
+                               }
+                               if (gbifNote) {
+                                   gbifNote.textContent = "No GBIF occurrences found for " + gbifSpeciesName + ".";
+                               }
+                               return;
+                           }
+
+                           var gbifOverlay = L.tileLayer(gbifUrl, {
+                               maxZoom: 18,
+                               maxNativeZoom: 18,
+                               opacity: 0.8,
+                               attribution: "GBIF",
+                               pane: "gbifOverlay",
+                               crossOrigin: true
+                           }).addTo(dist_map);
+
+                           if (distLayerControl) {
+                               distLayerControl.addOverlay(gbifOverlay, "<span style='color: red; font-size: 14px;'>●</span> GBIF Occurrences (hex)");
+                           }
+                       })
+                       .catch(function () {
+                           if (gbifNote) {
+                               gbifNote.textContent = "Unable to reach the GBIF occurrences API.";
+                           }
+                       });
+               })
+               .catch(function () {
+                   if (gbifNote) {
+                       gbifNote.textContent = "Unable to reach the GBIF API.";
+                   }
+               });
+       }
+   }
+
+  var NatStyle = {
+   "color": "blue",
+   "weight": 1,
+   "fillOpacity": 0.3
+};
+
+  var InvStyle = {
+   "color": "red",
+   "weight": 1,
+   "fillOpacity": 0.3
+  }
+
+  var CryptoStyle = {
+   "color": "yellow",
+   "weight": 1,
+   "fillOpacity": 0.3
+  }
+
+  var FailedStyle = {
+   "color": "pink",
+   "weight": 1,
+   "fillOpacity": 0.3
+  }
+
+
+   var myJSON = $.getJSON("/nemesis/calnemo/static/json/bioregions.geojson", function(json) {
+     natResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return NatBioRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(natResult, { style: NatStyle }).bindPopup(function (layer){
+         return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+     invResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return InvBioRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(invResult, { style: InvStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+     cryptoResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return CryptoRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(cryptoResult, { style: CryptoStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+     failedResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+         return FailedRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+     })
+     L.geoJSON(failedResult, { style: FailedStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.REG_LRGGEO + "'>" +   layer.feature.properties.REG_LRGGEO  + "</a>";
+     }).addTo(dist_map);
+   });
+   
+   var myJSON2 = $.getJSON("/nemesis/calnemo/static/json/bays_closed.geojson", function(json) {
+     natResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return NatBioRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(natResult2, { style: NatStyle }).bindPopup(function (layer){
+         return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+
+     }).addTo(dist_map);
+     invResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return InvBioRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(invResult2, { style: InvStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+     }).addTo(dist_map);
+     cryptoResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return CryptoRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(cryptoResult2, { style: CryptoStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+     }).addTo(dist_map);
+
+     failedResult2 = $.grep(myJSON2.responseJSON.features, function (element, index) {
+         return FailedRegions.includes("&#39;" + element.properties.EDACDA + "&#39;");
+     })
+     L.geoJSON(failedResult2, { style: FailedStyle }).bindPopup(function (layer){
+        return  "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.properties.EDACDA + "'>" +   layer.feature.properties.EDACDA  + "</a>";
+     }).addTo(dist_map);
+   });
+  
+
+    var myJSON3 = $.getJSON("/nemesis/calnemo/static/json/us-states.json", function (json) {
+        natResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return NatBioRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(natResult2, { style: NatStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+
+        }).addTo(dist_map);
+        invResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return InvBioRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(invResult2, { style: InvStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+        }).addTo(dist_map);
+        cryptoResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return CryptoRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(cryptoResult2, { style: CryptoStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+        }).addTo(dist_map);
+
+        failedResult2 = $.grep(myJSON3.responseJSON.features, function (element, index) {
+            return FailedRegions.includes("&#39;" + element.id + "&#39;");
+        })
+        L.geoJSON(failedResult2, { style: FailedStyle }).bindPopup(function (layer) {
+            return "<a href='/" + portal + "/species_region_summary/-502/" + layer.feature.id + "'>" + layer.feature.id + "</a>";
+        }).addTo(dist_map);
+    });
+//    var myJSON3 = $.getJSON("/nemesis/calnemo/static/json/bioregions.geojson", function (json) {
+//         natResult = $.grep(myJSON.responseJSON.features, function (element, index) {
+//             return NatBioRegions.includes("&#39;" + element.properties.REG_LRGGEO + "&#39;");
+//         }).addTo(reg_map);
+//    });
+
+
+
+
+
+</script>
+
+
+
+
+
+      <footer class="container">
+
+        <h6>Cite NEMESIS</h6>
+        Fofonoff PW, Ruiz GM, Steves B, Simkanin C, & Carlton JT (2018) <br>
+        National Exotic Marine and Estuarine Species Information System. <br>
+        https://invasions.si.edu/nemesis<br>
+        Access Date: October 17, 2026
+        <br>
+        <br>
+        <p>Direct questions and comments to <a href='mailto:calnemo@si.edu'>calnemo@si.edu</a>.</p>
+        <a href="https://serc.si.edu"><img height="50" src="/nemesis/calnemo/static/images/serc.png"><img height="50" src="/nemesis/calnemo/static/images/serc2.png"></a>
+
+        <p>&copy; </p>
+        
+      </footer>
+    </body>
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--  <script src="//d3js.org/d3.v3.min.js"></script>
+      <script src="//d3js.org/queue.v1.min.js"></script>
+      <script src="//d3js.org/topojson.v1.min.js"></script>
+      <script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+    
+      <script src="/static/js/bioregions.js?v=26"></script>
+      <script src="/static/js/occurrences.js?v=739"></script>
+    -->
+    
+
+</html>

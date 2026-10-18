@@ -1,0 +1,15 @@
+import console from 'node:console';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync,spawnSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+const ffmpeg=createRequire(import.meta.url)('ffmpeg-static'),base='content-intelligence/cycles/cycle-21',p=base+'/revision-v2',v1='artifacts/masters/jellyfish-reversal-cycle21-candidate-v1.mp4',v2='artifacts/masters/jellyfish-reversal-cycle21-candidate-v2.mp4';
+const sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex'),hashAudio=(file,decoded)=>execFileSync(ffmpeg,['-v','error','-i',file,'-map','0:a:0',...(decoded?['-c:a','pcm_s16le']:['-c','copy']),'-f','hash','-hash','sha256','-'],{encoding:'utf8'}).trim();
+const packets=hashAudio(v1,false),decoded=hashAudio(v1,true);if(packets!==hashAudio(v2,false)||decoded!==hashAudio(v2,true))throw Error('Audio preservation failed');
+const measurement=spawnSync(ffmpeg,['-hide_banner','-i',v2,'-af','ebur128=peak=true','-f','null','-'],{encoding:'utf8'});if(measurement.status!==0)throw Error(measurement.stderr);
+const original=JSON.parse(readFileSync(base+'/production-v1/qa/audio-inspection.json','utf8')),loudnessSummary=measurement.stderr.slice(measurement.stderr.lastIndexOf('Summary:'));
+mkdirSync('qa/jellyfish-reversal-v2',{recursive:true});
+writeFileSync('qa/jellyfish-reversal-v2/audio-inspection.json',JSON.stringify({checkedAt:new Date().toISOString(),masterSha256:sha(v2),method:'Exact V1 AAC packet and decoded PCM identity plus independent V2 loudness measurement; no new subjective listening or ASR claimed.',audioPacketSha256:packets,decodedAudioSha256:decoded,audioIdentityPassed:true,originalEvidence:{path:base+'/production-v1/qa/audio-inspection.json',sha256:sha(base+'/production-v1/qa/audio-inspection.json')},actualMasterCues:original.actualMasterCues,loudnessSummary,limitations:original.limitations,subjectiveListening:original.subjectiveListening},null,2)+'\n');
+writeFileSync('qa/jellyfish-reversal-v2/narration-alignment.json',JSON.stringify({checkedAt:new Date().toISOString(),masterSha256:sha(v2),method:'Unchanged V1 source takes, cue timeline, audio packets and decoded PCM. Original source/master ASR remains applicable by exact identity; no new word alignment inferred.',sourceReport:{path:base+'/production-v1/qa/narration-alignment.json',sha256:sha(base+'/production-v1/qa/narration-alignment.json')},captionTiming:'All37 phrase boundaries identical to V1; owner listening remains pending.'},null,2)+'\n');
+writeFileSync(p+'/audio-verification.json',JSON.stringify({v1:{path:v1,sha256:sha(v1)},v2:{path:v2,sha256:sha(v2)},audioPacketSha256:packets,decodedAudioSha256:decoded,passed:true},null,2)+'\n',{flag:'wx'});
+console.log('Exact packet and decoded audio identity passed; V2 loudness measured.');

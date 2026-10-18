@@ -1,0 +1,57 @@
+{
+  "cycleId": "cycle.21",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-21T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-21T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-18T12:35:52.965740+00:00",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "platform": "tiktok",
+  "ownerReport": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/owner-report.json",
+    "sha256": "fb4bb77a668e7ecefdbd8dfb26de74ff8491c79b73017089908b8ab4c2ba6e32"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/jellyfish-reversal-cycle21-candidate-v2.mp4",
+    "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-21/delivery-v1/release-v1.json",
+    "sha256": "29a908a1ecb5289035c1f2c0beb6c4cf30c2a2fae1871ef146605024e62b1c27"
+  },
+  "intendedVariant": {
+    "id": "jellyfish-reversal.variant.tiktok.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+      "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-21/delivery-v1/tiktok/manifest-v1.json",
+    "sha256": "d0ef3f7d802621e8119d27cfadc2c1de46aa2eb58cb523224ecece4800e316d9"
+  },
+  "identityBasis": "Owner-designated master and prepared package; actual upload identity not independently verified."
+}

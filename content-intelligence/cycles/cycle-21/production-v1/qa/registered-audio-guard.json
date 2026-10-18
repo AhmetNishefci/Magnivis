@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-18T09:49:40.729270+00:00",
+  "command": "node scripts/generate-jellyfish-narration.mjs --retime",
+  "expectedResult": "Registered Cycle21 audio is immutable; revisions need new paths and identities.",
+  "observedExitCode": 1,
+  "cue1Sha256BeforeAndAfter": "58c80ee968e305cd253bd812bf1a3b202eb7a5350daf4b05969c51e1ce1c1c79",
+  "scope": "Refused before provider import, model creation and all output writes"
+}

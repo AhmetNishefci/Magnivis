@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-18T12:58:10.876944+00:00",
+  "replacedUnpublishedCommit": "34d00ca74d953d3fd5d52e76f1e4aeda98fc58c3",
+  "unchangedParent": "bd3f5ee33516cf8b4ad6501a7453c03b3571c642",
+  "branch": "content/cycle-11-discovery",
+  "research": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/research-integrity-v1.json",
+    "sha256": "8ff853fe740a81bbfbfc22e575cdbe1670902692813d5af492f0d89192d7d373"
+  },
+  "securityScan": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/pending-index-token-scan-v1.json",
+    "sha256": "da2f63655d8ab08c53b241a8d7cf0f6f91558e65e71f1fb6055f5e29df65b84a"
+  },
+  "preRemediationHistoryScan": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/pre-remediation-token-scan-v1.json",
+    "sha256": "240b7c4b5029b81a4c83a2827b0af35d143897712d7dc2d3d33dacfc7565378c"
+  },
+  "protectedOriginalCycleFiles": 304,
+  "allOriginalTrackedFilesChecked": 7704,
+  "unrelatedTrackedFilesChanged": [],
+  "preservationBaseline": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/preservation-baseline-v1.json",
+    "sha256": "cf1db707f06e36c8a9dd256342592a7a1274f99c32cd17e1f3ad157fbbc3c1f0"
+  },
+  "allowedExistingChanges": [
+    "content-intelligence/cycles/cycle-21/research/smithsonian.html",
+    "scripts/validate-jellyfish-release.ts",
+    "scripts/validate-jellyfish-scheduling.ts"
+  ],
+  "typecheck": "passed",
+  "lint": "passed",
+  "testFiles": 56,
+  "tests": 518,
+  "testDurationSeconds": 98.38,
+  "testsLog": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/repository-check-v3.log",
+    "sha256": "a6a6a2b3f57830e49377965098c3d7c6758c666e54e318ae27a5c7dd7abdba7f"
+  },
+  "additionalEarlierAttempt": {
+    "log": {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/repository-check-v2.log",
+      "sha256": "4f9851acbdd680ba4b69a374d3575a43edd729565efa3e4853ac94611c9de1ee"
+    },
+    "testsPassed": 517,
+    "failures": 1,
+    "reason": "Same catalog test reached6233ms against5000ms; all assertions and settings unchanged."
+  },
+  "earlierAttempt": {
+    "log": {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/repository-check-v1.log",
+      "sha256": "c0b821801b63bc6caa60bf5db1435826359c08593ac6b544f386aea3e0b2bece"
+    },
+    "testsPassed": 517,
+    "failures": 1,
+    "reason": "Whole-catalog test reached5318ms against unchanged5000ms timeout; no causal conclusion. Complete unchanged rerun passed."
+  },
+  "existingTestsAssertionsTimeoutsUnchanged": true,
+  "testExecutionPolicy": "Only own validation shell moved out of macOS background scheduling using taskpolicy -B; no process interruption, timeout override or assertion change. Causality for prior timing failures is not established.",
+  "newSecurityBoundaryTests": 4,
+  "media": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/media-caption-cover-v1.json",
+    "sha256": "c30d4377537d177b9e699a5b96d3f1f446abf26d9e292fb9eccace048b367e82"
+  },
+  "release": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/release-validation-v1.json",
+    "sha256": "68ac9deee865e350404db71ba2bed7b701ffe070dea11c34128e3aa8f38582fb"
+  },
+  "scheduling": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/scheduling-validation-v1.json",
+    "sha256": "8363a4e4184074ca3d19bc19eeaeef02d669903a3414447c7033b812521e0700"
+  },
+  "deliveries": [
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/youtube-delivery-v1.json",
+      "sha256": "9daccde85b21b88029495856a5010063722acdcdd01eaf991bad659f49daad21"
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/tiktok-delivery-v1.json",
+      "sha256": "919cdeac83bd4104d546fd402d5765bca8546126e6c678d5b36bc1e4a5076f4d"
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/instagram-delivery-v1.json",
+      "sha256": "944aefef7f6239551ec9de210b5dea46a16bb919fbd661b836b525ef375cdfe5"
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/facebook-delivery-v1.json",
+      "sha256": "bee8f7b2a3f0760d7992c6a76fd58c1df7e9091bb3732e6801da581ff692873a"
+    }
+  ],
+  "journal": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/journal-replay-v1.json",
+    "sha256": "4d266aa2b69fb9b3b95b0288403863d1cd6629834a489c230f8c98847d8402b1"
+  },
+  "artifactDurability": {
+    "passed": true,
+    "canonicalPayloads": 1450,
+    "durableArtifacts": 731,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "log": {
+      "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/qa/artifact-durability-v1.log",
+      "sha256": "ba7c65ce07e8187f40d220120ed5aad93fc9a24d780f1223b68ca6384b69cdd5"
+    }
+  },
+  "nativeStage": "publication-review",
+  "nativeRevision": 15,
+  "nativeJournalUnchanged": true,
+  "presentationUnknownsUnaccepted": 48,
+  "approvedV2Sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+  "scheduledFor": "2026-10-21T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-21T18:00:00Z",
+  "publication": "unknown",
+  "assistantPlatformActions": [],
+  "remainingLimitations": [
+    "Native interfaces, crops, devices and actual uploaded bytes/publication remain unverified.",
+    "Prior whole-catalog test timing sensitivity and historical missing Wood Frog expectation remain documented.",
+    "Rejected original commit may remain only in local reflog/object storage; no destructive cleanup performed."
+  ],
+  "gitDiffCheck": true,
+  "pushStatus": "Not yet performed at evidence-entry time. Replacement HEAD reachable-history scan and actual normal-push synchronization verified separately after amend; do not infer push success from this file."
+}

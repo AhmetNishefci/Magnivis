@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.jellyfish-reversal.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "jellyfish-reversal",
+    "revision": 1,
+    "sha256": "4150e76fd7bd39bf420a77c744b670ed0109cb0552e1d4d02e334c864f29a3b0"
+  },
+  "contentAsset": {
+    "id": "jellyfish-reversal.asset.transformation",
+    "revision": 1,
+    "sha256": "b42f54922ad697d6409d2693eca49e18d063c57537c44a23de6a180319ce03a7"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.21",
+    "reviewSha256": "147afcb25f5e58e6bd5d838c6bb27aac75150deeefe08eda2d0729578ae13194"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/youtube.json",
+      "sha256": "dad5ddd53a9be33f5d3118e21e6f87fe450d9173dae8c4e37aecceaf71beaaac"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/tiktok.json",
+      "sha256": "d1b328720173bc9ef46ae1b782cdc08512475fa10e63863ee2ba082d9a3edfdc"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/instagram.json",
+      "sha256": "3abd0c71b3470bf810b3e3ff80b9d93c2e0a6583714952c9eb6365e494f3c73b"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-21/production-v1/profiles/facebook.json",
+      "sha256": "d3dd013ff37e59650adb985816b6aa3a7094fa1bd6b5940b10eccca43cfbc7ef"
+    }
+  ],
+  "approvedScriptSha256": "76de467a6fe64316c81abca2f4bca26338003fa6bf82a454297d8f85fa554c46",
+  "creativeDirection": {
+    "id": "creative-direction.jellyfish-reversal.v1",
+    "revision": 1,
+    "sha256": "ede6a5d3e35c244f6ea430f970b5f9f1992e0ca082f0027015aa2c356d8b8f15"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 53.233333333333334
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "jellyfish-reversal.production.1",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.1",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.1",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.1"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.reverse"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 106
+      },
+      "sceneType": "adult-premise",
+      "objective": "One translucent species-informed adult medusa suspended in a dark teal water column, red-brown central manubrium, fine moving tentacles and grazing light. Immediate large subject and short curiosity statement.",
+      "onScreenText": [],
+      "animationIntent": "Impossible premise; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.2",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.2",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.2",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.2"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.reverse",
+        "jellyfish-reversal.claim.anatomy"
+      ],
+      "frames": {
+        "start": 106,
+        "end": 179
+      },
+      "sceneType": "species",
+      "objective": "Stay with same adult. Camera arcs to reveal transparent bell and four radial canals; species name large enough to read. Original illustration disclosure.",
+      "onScreenText": [],
+      "animationIntent": "Species identity; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.3",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.3",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.3",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.3"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.normal"
+      ],
+      "frames": {
+        "start": 179,
+        "end": 354
+      },
+      "sceneType": "normal-budding",
+      "objective": "Camera descends to attached branching polyps. A pear-shaped medusa bud grows below a hydranth, detaches and rises; continue toward recognizable adult. No ephyra/disc stack.",
+      "onScreenText": [],
+      "animationIntent": "Ordinary development; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.4",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.4",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.4",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.4"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.trigger",
+        "jellyfish-reversal.claim.reverse"
+      ],
+      "frames": {
+        "start": 354,
+        "end": 486
+      },
+      "sceneType": "regression",
+      "objective": "Same adult loses pulse and descends toward substrate; tentacles retract and bell contracts. No clock, reversed footage, shrinking baby or injury gore.",
+      "onScreenText": [],
+      "animationIntent": "A different route; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.5",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.5",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.5",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.5"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.stages"
+      ],
+      "frames": {
+        "start": 486,
+        "end": 665
+      },
+      "sceneType": "cyst",
+      "objective": "Continuous collapse toward a lobed intermediate then compact cyst-like mass on substrate. Bell and tentacles vanish as recognizable structures; time compression disclosed.",
+      "onScreenText": [],
+      "animationIntent": "Lose the medusa form; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.6",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.6",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.6",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.6"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.cells"
+      ],
+      "frames": {
+        "start": 665,
+        "end": 874
+      },
+      "sceneType": "cell-reorganization",
+      "objective": "Camera pushes from surface of cyst into original illustrative tissue field; some elongated cells lose and change shape amongst surviving cells. No specific traced lineage, molecule, DNA repair visualization or literal microscopy. End by pulling toward cyst surface.",
+      "onScreenText": [],
+      "animationIntent": "Reorganize; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.7",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.7",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.7",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.7"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.stolon"
+      ],
+      "frames": {
+        "start": 874,
+        "end": 1027
+      },
+      "sceneType": "stolon-colony",
+      "objective": "A stolon visibly extends sideways from cyst. First polyp rises, then branches develop into a colony. A medusa bud subsequently detaches; support survives through sequence.",
+      "onScreenText": [],
+      "animationIntent": "Grow a new body plan; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.8",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.8",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.8",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.8"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.repeat"
+      ],
+      "frames": {
+        "start": 1027,
+        "end": 1179
+      },
+      "sceneType": "repeat-culture",
+      "objective": "Widen to cultured colony/medusa relationship; restrained ghosted earlier stage chain indicates another possible reversal, not an infinite loop. Laboratory context explicit.",
+      "onScreenText": [],
+      "animationIntent": "Repeatability; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.9",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.9",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.9",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.9"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.molecular"
+      ],
+      "frames": {
+        "start": 1179,
+        "end": 1274
+      },
+      "sceneType": "open-molecular-controls",
+      "objective": "Macro colony remains physical; briefly return to illustrative tissue field with varied cell identities. Molecular controls still studied; no identified master switch.",
+      "onScreenText": [],
+      "animationIntent": "Known shape, open mechanism; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.10",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.10",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.10",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.10"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.mortality"
+      ],
+      "frames": {
+        "start": 1274,
+        "end": 1420
+      },
+      "sceneType": "mortality",
+      "objective": "Return to ocean scale: fragile medusa remains small against passing out-of-focus predator silhouette and light shadow. No specific predator species or escaping/resurrection performance implied.",
+      "onScreenText": [],
+      "animationIntent": "Survival has limits; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "jellyfish-reversal.production.11",
+      "sourceVisualPlanId": "jellyfish-reversal.asset.transformation.visual.11",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.11",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.11"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.reverse",
+        "jellyfish-reversal.claim.mortality"
+      ],
+      "frames": {
+        "start": 1420,
+        "end": 1597
+      },
+      "sceneType": "reversible-development",
+      "objective": "Beautiful medusa above living attached polyp colony, then camera settles on colony and new bud ascending into light. Resolve initial adult-only mental model through changed developmental route; no infinity or guaranteed survival.",
+      "onScreenText": [],
+      "animationIntent": "The direction can change; original species-informed illustration, qualitative cells, compressed stage timing.",
+      "transitionIntent": "Persistent medusa and cyst origin through macro-to-cell illustration; new stolon and polyps grow from attached cyst. Timing compressed.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    }
+  ],
+  "assets": [
+    {
+      "id": "jellyfish-reversal.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned",
+        "notes": "Original species-informed medusa, substrate, cyst, stolon, polyps and qualitative tissue; no reproduced scientific figures.",
+        "evidence": "content-intelligence/cycles/cycle-21/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "jellyfish-reversal.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource packages",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing Manrope and Space Grotesk",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "jellyfish-reversal.narration",
+      "kind": "audio",
+      "path": "public/audio/jellyfish-reversal/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact evidence-locked wording",
+        "evidence": "src/production/narration/jellyfish-reversal.json"
+      }
+    },
+    {
+      "id": "jellyfish-reversal.soundscape",
+      "kind": "audio",
+      "path": "public/audio/jellyfish-reversal/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesized sound",
+        "rights": "Project-owned",
+        "notes": "Original underwater air and harmonic transformation bloom; no samples.",
+        "evidence": "content-intelligence/cycles/cycle-21/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/jellyfish-reversal.en.vtt",
+    "captionPlanId": "caption-plan.jellyfish-reversal.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "3856a8d1226d3269d3adf7673f30df5b3d7bdb08cd8a95ffffc1c6476cc397c9",
+    "generatorId": "generator.jellyfish-reversal-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Life-cycle reversal, not a smaller baby medusa; cyst and stolon before polyp colony.",
+    "Species-informed16-tentacle mature form, four radial canals, transparent bell and rust manubrium; illustrative anatomy.",
+    "Macro-to-cell transition disclosed as illustrative, no exact lineage or molecular switch.",
+    "Cell participation qualified with some; molecular controls still studied.",
+    "Repeatability laboratory-scoped, no numerical or infinite claim.",
+    "Predation and survival limits narrated.",
+    "Every caption midpoint, stage transition, chronological sequence and360px readability inspected.",
+    "Signal/phoneme/machine recognition separate from owner subjective listening.",
+    "Runtime exceeds target if measured speech and transformation clarity require it; no padding.",
+    "Stop at Cycle21 V1 master review; no delivery or publication."
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-18T12:39:01.717Z",
+  "master": {
+    "path": "artifacts/masters/jellyfish-reversal-cycle21-candidate-v2.mp4",
+    "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+  },
+  "decoded": [
+    {
+      "path": "artifacts/masters/jellyfish-reversal-cycle21-candidate-v1.mp4",
+      "sha256": "bd498a19a37532ace4b06d646e228d752efae30d252d759b6d89110cf0b1714e",
+      "fullDecodePassed": true,
+      "stderr": ""
+    },
+    {
+      "path": "artifacts/masters/jellyfish-reversal-cycle21-candidate-v2.mp4",
+      "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+      "fullDecodePassed": true,
+      "stderr": ""
+    }
+  ],
+  "streams": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "closed_captions": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuvj420p",
+        "level": 40,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 4791000,
+        "duration": "53.233333",
+        "bit_rate": "6025420",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1597",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.100 libx264"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2557920,
+        "duration": "53.290000",
+        "bit_rate": "191818",
+        "nb_frames": "2499",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "artifacts/masters/jellyfish-reversal-cycle21-candidate-v2.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "53.290000",
+      "size": "41433028",
+      "bit_rate": "6220007",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf60.3.100",
+        "comment": "Made with Remotion 4.0.527"
+      }
+    }
+  },
+  "cover": {
+    "path": "artifacts/covers/jellyfish-reversal-cycle21-delivery-v1/frame-0080-2.667s.png",
+    "sha256": "def8dd2aacd26e3f6a644f15a02f0fc3df005615198c2a2212c289ff97a49994",
+    "frame": 80,
+    "timestampSeconds": 2.6666666666666665,
+    "pixelEquality": true,
+    "rgb24Sha256": "08424706d82e18db582932541c9e54b35544d2e71ed09a02775385888377e923"
+  },
+  "audio": {
+    "exactV1AacPayloadPreserved": true,
+    "exactV1DecodedPcmPreserved": true,
+    "packet": "SHA256=299cfd5b759448a839565faf2dd3140a2ce475d77ff696b7e4ad2ce099fec0df",
+    "pcm": "SHA256=e026b1842b7c19097d2edd7f3dbeace141bd2082218f17225cdc8294ef11958d"
+  },
+  "captions": {
+    "count": 37,
+    "exactV1CuesAndTimings": true,
+    "vttExact": true,
+    "sha256": "21568bf729d09b68f3b24d935269ab79d76f1bf30e4be508a152195c261996ab"
+  },
+  "limitations": "Automated byte/geometry checks and existing sampled visual evidence; no continuous human AV or native/device verification."
+}

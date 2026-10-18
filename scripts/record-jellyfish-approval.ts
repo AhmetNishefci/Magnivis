@@ -1,0 +1,18 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {mediaHash} from '../src/artifacts/media';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {ownerDecisionSchema} from '../src/workflow/evidence';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+const b='content-intelligence/cycles/cycle-21/delivery-v1',registry=openMediaCatalog(),at=new Date().toISOString(),cycle=loadCycle(process.cwd(),'cycle.21',registry);
+if(cycle.revision!==12||cycle.stage!=='master-review'||!cycle.candidate)throw new Error('Expected exact V2 master-review state');
+const ref=(path:string)=>({path,sha256:mediaHash(path)}),put=(name:string,data:unknown)=>{const path=`${b}/${name}.json`;writeFileSync(path,JSON.stringify(data,null,2)+'\n',{flag:'wx'});return ref(path);};
+const target=JSON.parse(readFileSync(cycle.candidate.path,'utf8'));
+if(target.media.sha256!=='f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c'||mediaHash(registry.resolveFile(target.media))!==target.media.sha256)throw new Error('Owner-approved master differs');
+const decision=put('master-approval-v1',ownerDecisionSchema.parse({schemaVersion:3,id:'owner-decision.cycle-21.master-v2.v1',revision:1,gate:'master-review',cycleId:cycle.id,targetSha256:sha256Json(target),decision:'approve',enteredAt:at,suppliedReviewTime:null,reviewer:'Ahmet Nishefci — explicit owner message',evidenceBasis:'explicit-owner-message',instruction:readFileSync(`${b}/owner-instruction.md`,'utf8'),acceptedUnknowns:[]}));
+const approved=persistCycleEvent(process.cwd(),cycle,{type:'owner-decision',record:decision,at},registry);
+put('master-lock-v1',{cycleId:cycle.id,candidate:cycle.candidate,media:target.media,masterDecision:decision,path:registry.resolveFile(target.media),identityUnchanged:true,noV3Required:true,publicationAuthorized:false});
+put('owner-quality-acceptance-v1',{schemaVersion:1,cycleId:cycle.id,enteredAt:at,reviewer:'Ahmet Nishefci — explicit owner message',evidenceBasis:'explicit-owner-message',instruction:ref(`${b}/owner-instruction.md`),master:target.media,masterPath:registry.resolveFile(target.media),masterDecision:decision,visualPresentation:'APPROVED V2 — explicit owner decision',narration:'Not separately characterized by owner',captions:'Not separately characterized by owner',overallQuality:'Exact V2 approved as final master by owner; delivery preparation authorized; no V3 required',device:null,os:null,appVersion:null,testedAt:null,phoneTestInferred:false,nativePlatformPassInferred:false,presentationUnknownsAccepted:false,coverApprovalInferred:false,publicationAuthorized:false,externalActions:[]});
+const start=put('presentation-start-v1',{cycleId:cycle.id,stage:'presentation',action:'Prepare four exact-V2 reference delivery packages, independently checked decoded cover, verified bounded marine-biology copy, essential QA and durable records; stop CYCLE #21 OWNER DELIVERY REVIEW. No upload, schedule, publication or V3.'});
+const begun=persistCycleEvent(process.cwd(),approved,{type:'begin-internal',stage:'presentation',record:start,at:new Date().toISOString()},registry);
+console.log(JSON.stringify({revision:begun.revision,stage:begun.stage,master:target.media,publicationAuthorized:false}));

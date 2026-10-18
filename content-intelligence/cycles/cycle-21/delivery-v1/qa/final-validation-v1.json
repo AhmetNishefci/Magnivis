@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-18T10:58:26.066213Z",
+  "passed": true,
+  "master": {
+    "path": "artifacts/masters/jellyfish-reversal-cycle21-candidate-v2.mp4",
+    "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+  },
+  "cycle": {
+    "id": "cycle.21",
+    "revision": 15,
+    "stage": "publication-review",
+    "ownerStop": "CYCLE #21 OWNER DELIVERY REVIEW",
+    "masterApproved": true,
+    "publicationAuthorized": false
+  },
+  "checks": {
+    "mediaIntegrity": true,
+    "fullDecode": true,
+    "fourDeliveryManifests": true,
+    "fourMediaResolvers": true,
+    "captionCueCount": 37,
+    "captionTextFrameAndVttIdentity": true,
+    "geometryCheckpointsInheritedFromExactMaster": 128,
+    "knownSampledCollisions": 0,
+    "coverCandidatesInspected": 6,
+    "coverPixelMatch": true,
+    "coverFrame": 80,
+    "coverTimestampSeconds": 2.6666666666666665,
+    "typecheck": true,
+    "lint": true,
+    "testFiles": 55,
+    "tests": 514,
+    "testDurationSeconds": 97.86,
+    "durability": true,
+    "canonicalPayloads": 1450,
+    "legacyDurableArtifacts": 731,
+    "protectedFilesUnchanged": 213,
+    "gitWhitespace": true
+  },
+  "unknowns": {
+    "presentationUnknowns": 48,
+    "ownerAccepted": false,
+    "nativeDevicePass": false,
+    "subjectiveListeningNewlyPerformed": false,
+    "schedulingDate": null,
+    "schedulingTime": null,
+    "schedulingTimezone": null,
+    "actualPublication": null
+  },
+  "limits": "Local geometry is sampled and provisional; native UI/crops/controls and device rendering remain unverified. Master approval does not grant publication authority. Wait owner scheduling confirmation before repository closeout.",
+  "actions": {
+    "newVideos": 0,
+    "canonicalDecodedCover": 1,
+    "coverCandidateEvidenceSheet": 1,
+    "commits": 0,
+    "pushes": 0,
+    "branchesOrWorktrees": 0,
+    "uploads": 0,
+    "schedules": 0,
+    "publications": 0
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-18T09:50:05.730032+00:00",
+  "mediaSha256": "bd498a19a37532ace4b06d646e228d752efae30d252d759b6d89110cf0b1714e",
+  "checks": {
+    "pnpm check": "passed",
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "filesPassed": 55,
+      "testsPassed": 514,
+      "testsFailed": 0,
+      "durationSeconds": 96.4,
+      "log": "content-intelligence/cycles/cycle-21/production-v1/qa/check-serial.log"
+    },
+    "pnpm qa jellyfish-reversal": "passed",
+    "fullMediaDecode": "passed",
+    "layout": {
+      "passed": true,
+      "sampledCheckpoints": 104
+    },
+    "captions": {
+      "passed": true,
+      "phrases": 37,
+      "sourceTakes": 11,
+      "webVttExact": true
+    },
+    "pnpm artifacts:durable": "passed",
+    "stagedDiffWhitespace": "passed",
+    "registeredAudioOverwriteGuard": "passed",
+    "postguardTypecheck": "passed",
+    "postguardLint": "passed"
+  },
+  "testRetryEvidence": [
+    {
+      "log": "content-intelligence/cycles/cycle-21/production-v1/qa/check-during-render.log",
+      "result": "Three unchanged timeout-limited hashing tests exceeded5000ms during concurrent render;511 other tests passed"
+    },
+    {
+      "log": "content-intelligence/cycles/cycle-21/production-v1/qa/check-before-staging.log",
+      "result": "513passed; canonical tracking precondition failed because the check began before new audio was staged"
+    },
+    {
+      "log": "content-intelligence/cycles/cycle-21/production-v1/qa/check-parallel.log",
+      "result": "513passed; full-catalog test took5275ms beyond5000ms timeout"
+    },
+    {
+      "log": "content-intelligence/cycles/cycle-21/production-v1/qa/check-serial.log",
+      "result": "All514passed after maxWorkers4\u21921, no timeout increase or assertion removal"
+    }
+  ],
+  "smallestReusableCorrection": "vitest.config.ts serializes test-file execution to reduce concurrent whole-media hashing; original5000ms timeout and full assertions preserved. All55suites pass. New narration repair also refuses registered-media overwrite before provider import.",
+  "durability": {
+    "canonicalPayloads": 1431,
+    "historicalRetentions": 1,
+    "archivalParts": 2,
+    "explicitExceptions": 0,
+    "durableArtifactCount": 731,
+    "log": "content-intelligence/cycles/cycle-21/production-v1/qa/durability.log",
+    "scope": "Local Git index tracking and exact working media verified; staged uncommitted state is not a pushed remote backup"
+  },
+  "historicalPreservation": {
+    "priorCatalogRecordsUnchanged": true,
+    "newCatalogRecords": 25,
+    "priorProjectStateEntriesUnchangedExceptNextGateAndTask": true,
+    "historicalMastersModified": false
+  },
+  "inspectionLimits": [
+    "Agent sampled visual interpretation of exact decoded frames, not continuous human audiovisual verification",
+    "No subjective audio listening; ASR/phoneme/signal evidence only",
+    "No actual phone or native platform QA",
+    "Provisional presentation profiles retain unknown nativeUI/crops/device constraints"
+  ],
+  "sourceIdentityAmendments": [
+    "content-intelligence/cycles/cycle-21/production-v1/qa/implementation-whitespace-amendment.json",
+    "content-intelligence/cycles/cycle-21/production-v1/qa/narration-immutability-amendment.json"
+  ],
+  "approval": {
+    "master": false,
+    "delivery": false,
+    "publication": false
+  },
+  "platformActions": [],
+  "committed": false,
+  "pushed": false
+}

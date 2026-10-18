@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-18T12:42:10.405377+00:00",
+  "branch": "content/cycle-11-discovery",
+  "masterSha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+  "typecheck": "passed",
+  "lint": "passed",
+  "testFiles": 55,
+  "tests": 514,
+  "testDurationSeconds": 97.04,
+  "testLog": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/repository-check-v2.log",
+    "sha256": "25a8e009bd8de90053820d7624bc1d1ce5be744ee0aad6f724375b979e0ca539"
+  },
+  "earlierAttempt": {
+    "passed": false,
+    "log": {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/repository-check-v1.log",
+      "sha256": "ec69ffcaf05df340b02e920bafd216da35e8a90134a40a446a69ce62ea8312b3"
+    },
+    "testFilesPassed": 54,
+    "testsPassed": 513,
+    "failures": 1,
+    "reason": "Whole-catalog durability test reached5097ms against unchanged5000ms timeout. Complete unchanged rerun passed; no causality asserted.",
+    "testsAssertionsTimeoutsChangedDuringCloseout": false
+  },
+  "media": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/media-caption-cover-v1.json",
+    "sha256": "ad7d025dce59762055340bde0df03b46ec6818e250e8d0bf7d3090b475bd3740"
+  },
+  "canonicalMediaQa": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/media-report-v1.json",
+    "sha256": "28c79ca451f618f0e8ae70fe426ed30f3eb94f792e0f785957d53fe784d5db76"
+  },
+  "releaseValidation": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/release-validation-v1.json",
+    "sha256": "da158e9866a8e61928ee31077ebfcd5ef323ba7cc164480518f14db669547120"
+  },
+  "platformDeliveryByteLookups": [
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/youtube-delivery-v1.json",
+      "sha256": "9daccde85b21b88029495856a5010063722acdcdd01eaf991bad659f49daad21"
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/tiktok-delivery-v1.json",
+      "sha256": "919cdeac83bd4104d546fd402d5765bca8546126e6c678d5b36bc1e4a5076f4d"
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/instagram-delivery-v1.json",
+      "sha256": "944aefef7f6239551ec9de210b5dea46a16bb919fbd661b836b525ef375cdfe5"
+    },
+    {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/facebook-delivery-v1.json",
+      "sha256": "bee8f7b2a3f0760d7992c6a76fd58c1df7e9091bb3732e6801da581ff692873a"
+    }
+  ],
+  "artifactDurability": {
+    "passed": true,
+    "canonicalPayloads": 1450,
+    "durableArtifacts": 731,
+    "existingHistoricalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "log": {
+      "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/artifact-durability-v1.log",
+      "sha256": "ba7c65ce07e8187f40d220120ed5aad93fc9a24d780f1223b68ca6384b69cdd5"
+    }
+  },
+  "schedulingValidation": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/scheduling-validation-v1.json",
+    "sha256": "1f5e2e1dc5b14b40bd92fadc2dbcc2871ca4ef7330d648389a820766a290e69d"
+  },
+  "journalReplay": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/journal-replay-v1.json",
+    "sha256": "4d266aa2b69fb9b3b95b0288403863d1cd6629834a489c230f8c98847d8402b1"
+  },
+  "originalStagedAudit": {
+    "path": "content-intelligence/operations/jellyfish-reversal-scheduling-v1/qa/staged-284-audit-v1.json",
+    "sha256": "18e7cb87230a1dae74f3625dca9a9dae3a859afd8425ff7f9ecba5d639fa9a52"
+  },
+  "masterAndDeliveryFilesUnchanged": true,
+  "initialStagedFilesPreservedExceptCurrentProjectIndexes": true,
+  "chronologicalInspection": "Fresh canonical contact sheet examined for stage progression at montage scale; existing bound full-resolution chronology and phone/caption evidence retained. Cover-candidate phone sheet re-examined. No continuous AV listening/playback, native or device verification.",
+  "nativeStage": "publication-review",
+  "nativeRevision": 15,
+  "nativeJournalUnchanged": true,
+  "presentationUnknownsUnaccepted": 48,
+  "scheduledFor": "2026-10-21T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-21T18:00:00Z",
+  "publication": "unknown",
+  "assistantPlatformActions": [],
+  "remainingLimitations": [
+    "Native interfaces, geometry/crops, device rendering, native cover selection and processing remain unverified.",
+    "All48 delivery presentation unknowns remain unaccepted; native publication gate unchanged.",
+    "Whole-catalog timing sensitivity remains documented; no timeout or assertion change.",
+    "Historical Wood Frog original master remains missing under closed recovery evidence."
+  ],
+  "gitDiffCheck": "passed before final staging; rerun required immediately before commit",
+  "pushStatus": "Not yet performed at evidence-entry time; verify final local/upstream/remote identity after normal push."
+}

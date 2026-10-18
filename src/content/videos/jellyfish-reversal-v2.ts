@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/jellyfish-reversal-v2.json';
+import asset from '../../../content-intelligence/cycles/cycle-21/content-asset.ready.json';
+import narration from '../../production/narration/jellyfish-reversal.json';
+export const jellyfishReversalV2=videoSpecSchema.parse({id:'jellyfish-reversal-v2',compositionId:'Magnivis-JellyfishReversalV2',workingTitle:'The jellyfish that can reverse its life cycle',titleCandidates:['The jellyfish that can reverse its life cycle'],descriptionCandidates:['Medusa, cyst, stolon and polyps: reversible development without invulnerability.'],hook:asset.script.segments[0]!.text,pillar:'marine-biology',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration'],narration:true,narrationCues:narration.cues}});

@@ -1,0 +1,421 @@
+{
+  "id": "jellyfish-reversal.asset.transformation",
+  "revision": 1,
+  "knowledgePackageId": "jellyfish-reversal",
+  "assetType": "short-form-video",
+  "editorialPurpose": "An adult medusa can reorganize through a cyst into polyps that bud new medusae; reversible development does not mean death is impossible.",
+  "storyAngle": "Follow a change of body plan, then distinguish reversible development from invulnerability.",
+  "hookId": "jellyfish-reversal.hook.reverse",
+  "selectedClaimIds": [
+    "jellyfish-reversal.claim.reverse",
+    "jellyfish-reversal.claim.normal",
+    "jellyfish-reversal.claim.trigger",
+    "jellyfish-reversal.claim.stages",
+    "jellyfish-reversal.claim.stolon",
+    "jellyfish-reversal.claim.cells",
+    "jellyfish-reversal.claim.molecular",
+    "jellyfish-reversal.claim.repeat",
+    "jellyfish-reversal.claim.mortality",
+    "jellyfish-reversal.claim.anatomy"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 40,
+    "maximum": 50
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.1",
+        "type": "factual",
+        "text": "What if an animal could reverse its own life cycle?",
+        "claimIds": [
+          "jellyfish-reversal.claim.reverse"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.2",
+        "type": "factual",
+        "text": "This is Turritopsis dohrnii.",
+        "claimIds": [
+          "jellyfish-reversal.claim.reverse",
+          "jellyfish-reversal.claim.anatomy"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.3",
+        "type": "factual",
+        "text": "Normally, attached polyps bud off tiny jellyfish, which grow into swimming adults.",
+        "claimIds": [
+          "jellyfish-reversal.claim.normal"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.4",
+        "type": "factual",
+        "text": "But injury or starvation can send an adult another way.",
+        "claimIds": [
+          "jellyfish-reversal.claim.trigger",
+          "jellyfish-reversal.claim.reverse"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.5",
+        "type": "factual",
+        "text": "Its bell collapses. Its tentacles disappear. It settles into a cyst-like mass.",
+        "claimIds": [
+          "jellyfish-reversal.claim.stages"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.6",
+        "type": "factual",
+        "text": "Inside, cells reorganize. Some can change their specialized identity: transdifferentiation.",
+        "claimIds": [
+          "jellyfish-reversal.claim.cells"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.7",
+        "type": "factual",
+        "text": "A stolon grows, then polyps. That colony can bud new jellyfish.",
+        "claimIds": [
+          "jellyfish-reversal.claim.stolon"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.8",
+        "type": "factual",
+        "text": "Life-cycle reversal can happen repeatedly in laboratory cultures.",
+        "claimIds": [
+          "jellyfish-reversal.claim.repeat"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.9",
+        "type": "factual",
+        "text": "The molecular controls are still being studied.",
+        "claimIds": [
+          "jellyfish-reversal.claim.molecular"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.10",
+        "type": "factual",
+        "text": "But predators can still kill it. Reversal isn't guaranteed survival.",
+        "claimIds": [
+          "jellyfish-reversal.claim.mortality"
+        ]
+      },
+      {
+        "id": "jellyfish-reversal.asset.transformation.script.11",
+        "type": "factual",
+        "text": "It doesn't make death impossible. It makes the direction of development reversible.",
+        "claimIds": [
+          "jellyfish-reversal.claim.reverse",
+          "jellyfish-reversal.claim.mortality"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.1",
+      "label": "Impossible premise",
+      "purpose": "One translucent species-informed adult medusa suspended in a dark teal water column, red-brown central manubrium, fine moving tentacles and grazing light. Immediate large subject and short curiosity statement.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.1"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.2",
+      "label": "Species identity",
+      "purpose": "Stay with same adult. Camera arcs to reveal transparent bell and four radial canals; species name large enough to read. Original illustration disclosure.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.2"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.3",
+      "label": "Ordinary development",
+      "purpose": "Camera descends to attached branching polyps. A pear-shaped medusa bud grows below a hydranth, detaches and rises; continue toward recognizable adult. No ephyra/disc stack.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.3"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.4",
+      "label": "A different route",
+      "purpose": "Same adult loses pulse and descends toward substrate; tentacles retract and bell contracts. No clock, reversed footage, shrinking baby or injury gore.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.4"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.5",
+      "label": "Lose the medusa form",
+      "purpose": "Continuous collapse toward a lobed intermediate then compact cyst-like mass on substrate. Bell and tentacles vanish as recognizable structures; time compression disclosed.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.5"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.6",
+      "label": "Reorganize",
+      "purpose": "Camera pushes from surface of cyst into original illustrative tissue field; some elongated cells lose and change shape amongst surviving cells. No specific traced lineage, molecule, DNA repair visualization or literal microscopy. End by pulling toward cyst surface.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.6"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.7",
+      "label": "Grow a new body plan",
+      "purpose": "A stolon visibly extends sideways from cyst. First polyp rises, then branches develop into a colony. A medusa bud subsequently detaches; support survives through sequence.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.7"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.8",
+      "label": "Repeatability",
+      "purpose": "Widen to cultured colony/medusa relationship; restrained ghosted earlier stage chain indicates another possible reversal, not an infinite loop. Laboratory context explicit.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.8"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.9",
+      "label": "Known shape, open mechanism",
+      "purpose": "Macro colony remains physical; briefly return to illustrative tissue field with varied cell identities. Molecular controls still studied; no identified master switch.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.9"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.10",
+      "label": "Survival has limits",
+      "purpose": "Return to ocean scale: fragile medusa remains small against passing out-of-focus predator silhouette and light shadow. No specific predator species or escaping/resurrection performance implied.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.10"
+      ]
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.beat.11",
+      "label": "The direction can change",
+      "purpose": "Beautiful medusa above living attached polyp colony, then camera settles on colony and new bud ascending into light. Resolve initial adult-only mental model through changed developmental route; no infinity or guaranteed survival.",
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.11"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.1",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.1",
+      "objective": "One translucent species-informed adult medusa suspended in a dark teal water column, red-brown central manubrium, fine moving tentacles and grazing light. Immediate large subject and short curiosity statement.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.1"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.reverse"
+      ],
+      "notes": "Impossible premise; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.2",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.2",
+      "objective": "Stay with same adult. Camera arcs to reveal transparent bell and four radial canals; species name large enough to read. Original illustration disclosure.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.2"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.reverse",
+        "jellyfish-reversal.claim.anatomy"
+      ],
+      "notes": "Species identity; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.3",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.3",
+      "objective": "Camera descends to attached branching polyps. A pear-shaped medusa bud grows below a hydranth, detaches and rises; continue toward recognizable adult. No ephyra/disc stack.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.3"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.normal"
+      ],
+      "notes": "Ordinary development; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.4",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.4",
+      "objective": "Same adult loses pulse and descends toward substrate; tentacles retract and bell contracts. No clock, reversed footage, shrinking baby or injury gore.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.4"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.trigger",
+        "jellyfish-reversal.claim.reverse"
+      ],
+      "notes": "A different route; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.5",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.5",
+      "objective": "Continuous collapse toward a lobed intermediate then compact cyst-like mass on substrate. Bell and tentacles vanish as recognizable structures; time compression disclosed.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.5"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.stages"
+      ],
+      "notes": "Lose the medusa form; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.6",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.6",
+      "objective": "Camera pushes from surface of cyst into original illustrative tissue field; some elongated cells lose and change shape amongst surviving cells. No specific traced lineage, molecule, DNA repair visualization or literal microscopy. End by pulling toward cyst surface.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.6"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.cells"
+      ],
+      "notes": "Reorganize; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.7",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.7",
+      "objective": "A stolon visibly extends sideways from cyst. First polyp rises, then branches develop into a colony. A medusa bud subsequently detaches; support survives through sequence.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.7"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.stolon"
+      ],
+      "notes": "Grow a new body plan; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.8",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.8",
+      "objective": "Widen to cultured colony/medusa relationship; restrained ghosted earlier stage chain indicates another possible reversal, not an infinite loop. Laboratory context explicit.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.8"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.repeat"
+      ],
+      "notes": "Repeatability; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.9",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.9",
+      "objective": "Macro colony remains physical; briefly return to illustrative tissue field with varied cell identities. Molecular controls still studied; no identified master switch.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.9"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.molecular"
+      ],
+      "notes": "Known shape, open mechanism; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.10",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.10",
+      "objective": "Return to ocean scale: fragile medusa remains small against passing out-of-focus predator silhouette and light shadow. No specific predator species or escaping/resurrection performance implied.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.10"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.mortality"
+      ],
+      "notes": "Survival has limits; original species-informed illustration, qualitative cells, compressed stage timing."
+    },
+    {
+      "id": "jellyfish-reversal.asset.transformation.visual.11",
+      "narrativeBeatId": "jellyfish-reversal.asset.transformation.beat.11",
+      "objective": "Beautiful medusa above living attached polyp colony, then camera settles on colony and new bud ascending into light. Resolve initial adult-only mental model through changed developmental route; no infinity or guaranteed survival.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original translucent medusa, branched polyp, substrate, cyst, stolon and illustrative cell field; no copied third-party imagery."
+      ],
+      "scriptSegmentIds": [
+        "jellyfish-reversal.asset.transformation.script.11"
+      ],
+      "claimIds": [
+        "jellyfish-reversal.claim.reverse",
+        "jellyfish-reversal.claim.mortality"
+      ],
+      "notes": "The direction can change; original species-informed illustration, qualitative cells, compressed stage timing."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established local Kokoro af_heart, curious natural delivery; measured takes.",
+    "pronunciationNotes": [
+      "Turritopsis dohrnii; stolon; transdifferentiation. Full-context phoneme inspection and machine output check; owner listening pending."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review, not owner scientific approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.21",
+      "reviewSha256": "147afcb25f5e58e6bd5d838c6bb27aac75150deeefe08eda2d0729578ae13194"
+    },
+    "approvedAt": "2026-10-18",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

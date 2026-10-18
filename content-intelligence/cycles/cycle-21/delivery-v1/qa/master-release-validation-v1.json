@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "inspectedAt": "2026-10-18T10:50:51.270Z",
+  "master": {
+    "id": "media.f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c",
+    "sha256": "f7c2dacd425fc683bd7dca672c4e3c3ab2b93c929d934acaefb50e9664e67c4c"
+  },
+  "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/jellyfish-reversal-cycle21-candidate-v2.mp4",
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-21/delivery-v1/master-approval-v1.json",
+    "sha256": "4597fa0b49dcf05d4938b4d83d472f52973b60399f10ef481be8d4703cc0310d"
+  },
+  "probe": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 53.29,
+    "sizeBytes": 41433028,
+    "bitRate": 6220007
+  },
+  "fullDecode": "passed",
+  "masterUnchanged": true,
+  "scriptSha256": "76de467a6fe64316c81abca2f4bca26338003fa6bf82a454297d8f85fa554c46",
+  "audioEvidence": {
+    "path": "content-intelligence/cycles/cycle-21/revision-v2/qa/audio-inspection.json",
+    "sha256": "149dc5a91203be15464e4048e9750ee63a1c5e6ee6fa5856fdce4b70510b16ae"
+  },
+  "captionValidation": {
+    "path": "content-intelligence/cycles/cycle-21/delivery-v1/qa/caption-vtt-validation-v1.json",
+    "sha256": "a2794f06f1094b1328d4138c3ea0aefbc0e400fef37e6b34de0e56b81deedcf7"
+  },
+  "geometry": {
+    "path": "content-intelligence/cycles/cycle-21/revision-v2/qa/typography-report.json",
+    "sha256": "a68b7a9aa642a9505112e932b9abe95df8dc7d919615cd26ab06be1029f43d8e"
+  },
+  "ownerReview": "Owner explicitly approved exact V2; noV3 required. Narration and captions preserved without separate owner listening/device evidence; actual review time unspecified.",
+  "ownerAcceptance": {
+    "path": "content-intelligence/cycles/cycle-21/delivery-v1/owner-quality-acceptance-v1.json",
+    "sha256": "8fea1cab1bf6854180df0320155d696b1b590af6827bffab8cfd13d28c58b78a"
+  },
+  "renderedAgain": false,
+  "limitations": "No additional assistant subjective listening or device test. Approval promotion does not render or encode another video."
+}

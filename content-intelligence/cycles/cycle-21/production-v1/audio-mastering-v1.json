@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-18T00:20:13.018Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/jellyfish-reversal-render-v1.mp4",
+    "sha256": "fdaca56cae8140c870cff7ce985d24cca12360962c03871046f07d4db4410bcc",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/jellyfish-reversal-cycle21-candidate-v1.mp4",
+    "sha256": "bd498a19a37532ace4b06d646e228d752efae30d252d759b6d89110cf0b1714e"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.73",
+    "input_tp": "-7.58",
+    "input_lra": "2.30",
+    "input_thresh": "-33.66",
+    "output_i": "-19.03",
+    "output_tp": "-3.90",
+    "output_lra": "2.40",
+    "output_thresh": "-29.99",
+    "normalization_type": "dynamic",
+    "target_offset": "0.03"
+  },
+  "gainDb": 3.7300000000000004,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

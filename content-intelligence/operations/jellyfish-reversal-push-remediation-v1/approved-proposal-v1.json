@@ -1,0 +1,19 @@
+{
+  "status": "proposal-only; repository evidence unchanged",
+  "sourcePath": "content-intelligence/cycles/cycle-21/research/smithsonian.html",
+  "originalSha256": "f4d7fcd39f799aad4396177b656ffa916484d9b5b6e558e8c61f19314fabd165",
+  "proposedSanitizedPath": "/tmp/cycle21-smithsonian-sanitized.html",
+  "proposedSanitizedSha256": "bb1f7ae5f468ea9af4f915357a27c0bdfece6ff7bea0163b44b2b555d578cccb",
+  "occurrencesRemoved": 1,
+  "scientificArticleTextChanged": false,
+  "affectedLine": 800,
+  "tokenBytesNotRecorded": true,
+  "requiredWork": [
+    "Explicit provenance amendment for archived raw HTML; retain original hash and source acquisition evidence.",
+    "Preserve approved media, research claim wording, all four delivery bytes, native journal and historical baseline files.",
+    "Extend preservation validation to recognize this exact approved sanitization exception without rewriting historical baseline hashes.",
+    "Replace only unpublished local commit; normal push, no force push.",
+    "Rerun required validation and verify remote identity."
+  ],
+  "reasonAuthorizationNeeded": "Current instruction preserves research evidence; AGENTS.md says avoid history rewrites. Existing preservation baselines bind original raw HTML bytes. No bypass of GitHub protection attempted."
+}

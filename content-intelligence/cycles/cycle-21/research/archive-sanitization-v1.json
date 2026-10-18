@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "kind": "owner-authorized-security-redaction",
+  "cycleId": "cycle.21",
+  "recordedAt": "2026-10-18T12:49:35.910956+00:00",
+  "ownerInstruction": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/owner-instruction.md",
+    "sha256": "6bfa279b42f05a5f34128c6c923a65d26b6e3cef76e18386fb9c4a99ca75aaa6"
+  },
+  "approvedProposal": {
+    "path": "content-intelligence/operations/jellyfish-reversal-push-remediation-v1/approved-proposal-v1.json",
+    "sha256": "e9d5eb5ae2dd7a3195a1ff873cc4edc8b39e0676a5325f92d0cbf41571b33f4c"
+  },
+  "originalUnpublishedCommit": "34d00ca74d953d3fd5d52e76f1e4aeda98fc58c3",
+  "unchangedSynchronizedParent": "bd3f5ee33516cf8b4ad6501a7453c03b3571c642",
+  "archive": {
+    "path": "content-intelligence/cycles/cycle-21/research/smithsonian.html",
+    "originalSha256": "f4d7fcd39f799aad4396177b656ffa916484d9b5b6e558e8c61f19314fabd165",
+    "originalBytes": 49469,
+    "sanitizedSha256": "5f0d1d7038b0c58f9719eb736e980c27b1e8b57011ac48701b0d672220277ed5",
+    "sanitizedBytes": 49453,
+    "line": 800,
+    "occurrencesRedacted": 1,
+    "redactionMarker": "[REDACTED THIRD-PARTY MAPBOX TOKEN \u2014 unrelated site map configuration]",
+    "originalTokenSha256": "3e01926f5e2cc7f3366e76e294960abc2e9a7de5a1548581b0acb075c8f3f083",
+    "unchangedPrefixSha256": "94df45d15063190dc4269ff51c0c5298526bfc1d7d48f1cfcf2d10b7217cbf97",
+    "unchangedSuffixSha256": "449b57767ac8fbac9cc50320319663bc4cb60d79635b8320042affa3675510ce",
+    "scientificTextEvidence": {
+      "path": "content-intelligence/cycles/cycle-21/research/smithsonian.txt",
+      "sha256": "2dc56a3715fbfdbfb485ed30ae9c5c992971f168c7dacb3725b70bafad88cf68"
+    },
+    "scientificBodyEvidence": {
+      "path": "content-intelligence/cycles/cycle-21/research/smithsonian-body.json",
+      "sha256": "b09cf2af179b71c7ed95a813ecec16c5310d31099accd068c779a69247344f6c"
+    },
+    "acquisitionRecord": {
+      "path": "content-intelligence/cycles/cycle-21/research/acquisition.json",
+      "sha256": "b13940517b0b34eaab44dc4ef038f5589c4a1eb5af316378220ad6eb5fece8c8"
+    },
+    "historicalQa": {
+      "path": "content-intelligence/cycles/cycle-21/production-v1/qa/caption-and-research-integrity.json",
+      "sha256": "bc44a2c35f104420b8949fbf5069381f088c2bfbcef0b1418e4817b9359333f0"
+    },
+    "notByteIdenticalToOriginal": true
+  },
+  "substitutions": [
+    {
+      "path": "content-intelligence/cycles/cycle-21/research/smithsonian.html",
+      "originalSha256": "f4d7fcd39f799aad4396177b656ffa916484d9b5b6e558e8c61f19314fabd165",
+      "currentSha256": "5f0d1d7038b0c58f9719eb736e980c27b1e8b57011ac48701b0d672220277ed5",
+      "reason": "Remove only the unrelated site map credential."
+    },
+    {
+      "path": "scripts/validate-jellyfish-release.ts",
+      "originalSha256": "e82b5cfa42b9501eeebc1423a8b219a59e4bd9f21431b292692195211d2b7eb5",
+      "currentSha256": "4078dffe725a6977611e96a80da850719827dd752f45921d0157bdd85a093ec3",
+      "reason": "Resolve the exact owner-authorized sanitization amendment while retaining historical preservation hashes."
+    },
+    {
+      "path": "scripts/validate-jellyfish-scheduling.ts",
+      "originalSha256": "648dd72ab13d08a037e04a3a370968a1a92293e01d976251cf94370435fe8298",
+      "currentSha256": "294fc10b1e20bdfed9161e2597e21eefa6e3a68cad96534e8a7ff77bdb801f3d",
+      "reason": "Resolve the exact owner-authorized sanitization amendment while retaining historical preservation hashes."
+    }
+  ],
+  "proposalReconciliation": "Draft proposal normalized four CRLF sequences through text-mode I/O. Implementation preserves all original line endings and changes only the single token span; actual sanitized SHA differs from the draft and is explicitly recorded.",
+  "historicalInterpretation": "Original acquisition, QA, V1/V2/delivery preservation baselines and changed-file manifests retain their as-of hashes. They describe the original acquired bytes, not current sanitized bytes. This exact owner-authorized sidecar resolves current archive identity without silently rewriting source acquisition or transferring editorial/master/publication approval.",
+  "scientificEvidence": "Only map configuration inside script content changed. The original extraction ignores scripts and styles. Extracted scientific text and body/claim inspection records remain byte-identical; independently reconstructed below.",
+  "masterMediaChanged": false,
+  "deliveryFilesChanged": false,
+  "schedulingRecordsChanged": false,
+  "nativeJournalChanged": false,
+  "publication": "unknown",
+  "assistantPlatformActions": []
+}

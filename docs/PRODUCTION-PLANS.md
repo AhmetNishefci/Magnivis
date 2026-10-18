@@ -36,6 +36,8 @@ During authoring, identify what the viewer learns or what changes visually at ea
 
 Before **AHMET — MASTER REVIEW**, keep technical validation and **cold-viewer rendered-sequence editorial review** separate in the existing QA/visual-inspection record. Inspect the complete rendered result as tools permit, in chronological order, including opening, transitions, mechanisms and ending; inspect decoded phone-scale samples and every caption midpoint. Full playback/listening is preferable when available. When unavailable, use dense chronological decoded samples, enlarge important states and record exactly what was inspected; full decode is not subjective watching or listening. Bind findings to the exact master hash and inspection evidence.
 
+For focused visual revisions, compare exact decoded frames from both masters at matching timestamps chosen around the owner's specific defects. Preserve the frame indices, both media identities and column order; `scripts/lib/decoded-comparison.ts` provides this evidence without substituting source-component stills. Compare subject scale, physical correspondence and development across adjacent states, rather than treating new materials or a geometry pass as proof that the creative correction succeeded.
+
 Assess these questions with concrete scene/time references, not a score or a blanket pass:
 
 - Does the opening create truthful curiosity, and can an unfamiliar viewer understand the central contradiction?

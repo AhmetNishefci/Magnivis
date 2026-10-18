@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-18T10:57:38.376593Z",
+  "passed": true,
+  "testFiles": 55,
+  "tests": 514,
+  "testDurationSeconds": 97.86,
+  "stdout": "\n> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis\n> pnpm validate && git diff --check\n\n\n> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis\n> pnpm typecheck && pnpm lint && pnpm test\n\n\n> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis\n> tsc --noEmit\n\n\n> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis\n> eslint src scripts tests remotion.config.ts vitest.config.ts\n\n\n> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis\n> vitest run\n\n\n RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  55 passed (55)\n      Tests  514 passed (514)\n   Start at  12:55:43\n   Duration  97.86s (tests 95%, import 4%, transform 1%)\n\n",
+  "earlierAttempts": [
+    {
+      "result": "lint failure",
+      "cause": "Unused import in new approval recorder",
+      "resolution": "Removed unused import; no production media changed."
+    },
+    {
+      "result": "one timed-out test,513 passed",
+      "cause": "Whole-catalog integrity test exceeded unchanged5000ms limit at5069ms in a run initially overlapping other validation. Resource contention is a possible explanation, not demonstrated causation.",
+      "resolution": "Waited for jobs to finish; pnpm check rerun alone passed all514 tests. No test source, assertions, concurrency configuration or timeout changed."
+    }
+  ]
+}
