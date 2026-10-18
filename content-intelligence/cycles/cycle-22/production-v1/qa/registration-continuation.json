@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-10-18T14:48:36.028593+00:00",
+  "initialFinalizer": {
+    "path": "scripts/finalize-anglerfish-master.ts",
+    "sha256": "031f95b440d38ab3bf1ec678b6ad496b1e1b17d0ed131443b8c9a17f6ccf2b6e"
+  },
+  "failure": "Presentation evidence requires UTC Z datetime; inspection record used valid ISO +00:00. Detected after media and QA registration, before candidate/event.",
+  "retained": "Existing implementation bindings, source reports, catalog rows and moved canonical QA sheets preserved byte-for-byte. No duplicate media or rewritten audit hash.",
+  "continuation": {
+    "path": "content-intelligence/cycles/cycle-22/production-v1/qa/resume-executed-source.ts.txt",
+    "sha256": "331da26cad1013f7f1f7a8445952b561b6470b7d71c7393328c72f0d08a6329e"
+  },
+  "correction": "Coerce equivalent inspection instant to UTC Z only when projecting presentation evidence; resume remaining preflight/candidate/event. Original inspection bytes retained.",
+  "result": {
+    "stage": "master-review",
+    "revision": 7,
+    "candidate": {
+      "path": "content-intelligence/cycles/cycle-22/production-v1/master-candidate-v1.json",
+      "sha256": "bb81ffbaebb6d467ffb8fb61e6966fc36ae608d572219677465414f0bd38a6a9"
+    }
+  },
+  "futureLesson": "Validate schema-specific timestamp form before immutable writes. A recovery continuation is required rather than replaying append-only registration.",
+  "maintainedContinuation": {
+    "path": "scripts/resume-anglerfish-master.ts",
+    "sha256": "d4128d2d6540e283883efa0cbda010dcd254dc193413e35de09bc87118ea2e9c"
+  },
+  "postExecutionLintCorrection": "Remove unused sourceCommit variable/import. Exact executed source retained as text evidence; media,candidate,journal and QA untouched."
+}

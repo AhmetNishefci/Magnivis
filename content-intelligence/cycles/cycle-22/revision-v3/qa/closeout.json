@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-18T16:15:28.789770Z",
+  "mediaSha256": "8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369",
+  "gate": "master-review",
+  "nativeRevision": 17,
+  "ownerApproved": false,
+  "technicalMediaQA": "passed",
+  "fullDecode": "passed",
+  "typecheck": "passed",
+  "lint": "passed",
+  "captions": {
+    "passed": true,
+    "phrases": 36,
+    "wordingTimingTypographyBoundsUnchanged": true
+  },
+  "browserGeometry": {
+    "passed": true,
+    "checkpoints": 96,
+    "failures": 0
+  },
+  "audioIdentity": {
+    "passed": true,
+    "AACPayloadAndDecodedPCMExactlyEqual": true,
+    "originalKokoroTakesAndSoundscapeUnchanged": true
+  },
+  "presentationSchedule": {
+    "passed": true,
+    "videoFrames": 1422,
+    "audioPackets": 2225,
+    "equalAcrossV1V2V3": true
+  },
+  "repositoryCheck": {
+    "passed": false,
+    "attempts": 3,
+    "passedTests": 517,
+    "totalTests": 518,
+    "passedFiles": 55,
+    "totalFiles": 56,
+    "failure": "Unchanged five-second timeout in tests/media-artifacts.test.ts scoped historical preservation/canonical durability test. No failed integrity assertion. Three durations5637ms/5259ms/5197ms.",
+    "typecheckAndLintPassedEveryAttempt": true,
+    "testCodeConfigurationAndTimeoutsUnchanged": true,
+    "standaloneSameValidators": {
+      "path": "content-intelligence/cycles/cycle-22/revision-v3/qa/standalone-integrity.json",
+      "passed": true,
+      "elapsedMs": 5145.100708
+    }
+  },
+  "artifactDurability": {
+    "passed": true,
+    "canonicalPayloads": 1506,
+    "newCanonicalPayloads": 18,
+    "retention": "Git index and local canonical bytes verified; no commit, remote upload or independent clean-clone claim."
+  },
+  "visualInspection": {
+    "method": "Agent inspection of decoded sampled sheets and360px proxy, separate from automated browser/media QA",
+    "continuousHumanAudiovisualReview": false,
+    "actualDeviceReview": false,
+    "ownerCreativeApproval": false
+  },
+  "historicalPreservation": {
+    "passed": true,
+    "unchangedInitialTrackedFiles": 7974,
+    "initialTrackedFiles": 7978,
+    "legitimateSharedRecordChanges": 4,
+    "inheritedCatalogEntriesUnchanged": 1488,
+    "inheritedLogsUnchanged": 21
+  },
+  "provenanceScan": "New research text scanned before staging, no high-confidence credentials found. Final text rescan retained.",
+  "implementationBindings": "20 files exact; final registration changes to source completed before immutable bindings.",
+  "prohibitedActions": {
+    "branchChange": false,
+    "worktree": false,
+    "commit": false,
+    "push": false,
+    "deliveryPreparation": false,
+    "upload": false,
+    "schedule": false,
+    "publication": false
+  },
+  "remainingConcerns": [
+    "Default pnpm check is red solely due repeated catalog-test timeout; standalone identical integrity validators and durable-artifact command pass.",
+    "Layered generated artwork rather than volumetric animal animation; fixed female mouth pose, fine male detail at wide scale.",
+    "Qualitative local tissue/vessel window remains schematic; timings compressed, no measured histology.",
+    "No human continuous audiovisual review or actual device/native-app test.",
+    "Inherited source-access limits and approximate within-take caption boundaries preserved."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "recordedAt": "2026-10-18T19:35:06.294377+00:00",
+  "phase": "pre-commit-closeout-validation",
+  "passed": true,
+  "branch": "content/cycle-11-discovery",
+  "scheduledPlatforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "scheduledFor": "2026-10-22T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-22T18:00:00Z",
+  "publication": "unknown",
+  "master": {
+    "path": "artifacts/masters/anglerfish-fusion-cycle22-candidate-v3.mp4",
+    "sha256": "8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369"
+  },
+  "evidence": [
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/check-v1.log",
+      "sha256": "81f0afef97f1fec1028633cf3d67bea9728aa0614a4de1aaf473abfaee29b184"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/durability-v1.log",
+      "sha256": "94eac11963a2b1d8a0a757cc232fa3b9d4541443a7ffd0711bac8e684a676cd6"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/scheduling-validation-v1.json",
+      "sha256": "6c3aa5e20641b50d9fcbcf5101ccb7679b24892dd10b822eb522621225950c05"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/journal-replay-v1.json",
+      "sha256": "4f62eca41248837a82d6a115a619cda7e41eb998878ad6bcbe2005828d77ee77"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/full-decode-v1.json",
+      "sha256": "c051ca6a9b58253844f50b2c02cf6fc5f0dba8689ad56e672fba3682223eda63"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/delivery-validation-v1.log",
+      "sha256": "063df73f6b877dd9180ba9336678a8965653a044fbd016b3c79fdf9e238b2c9e"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/preservation-v1.json",
+      "sha256": "a0b18cdc3c933ef415b17bc88e513e9ecf0baca6f3d220cf2959ad90faab23f5"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/performance-regression-preservation-v1.json",
+      "sha256": "f49f68f5a83c13260af9e36041802c7647c374089176434faf66d224c4e5ba24"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/sensitive-material-scan-v1.json",
+      "sha256": "fa8ea23feda8da39547d55dbd67de02c24fa86e646a82c407111080c3fe86797"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/repository-review-v1.json",
+      "sha256": "e99aa693266e57e774008a9c2832e209ab604a2b1764d945823d4d1c0f818e9a"
+    },
+    {
+      "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/qa/isolated-git-restore-v1.json",
+      "sha256": "0671f6c63147c2d49d6ca140c0bea3bc7130ef8a2c3102dfb42901ba6948a296"
+    }
+  ],
+  "changedFileManifest": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/changed-files-v1.json",
+  "gitAuthority": {
+    "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/owner-instruction.md",
+    "sha256": "b4bca58c662a967ba874a2a1ed09f4c080e6d2326d242e6bd1ba3282b72a276a"
+  },
+  "nextRepositoryAction": "Owner-authorized normal commit and push only after final staged manifest/diff verification; actual resulting SHA and remote synchronization reported separately.",
+  "limitations": [
+    "Native platform previews, applied upload settings and actual uploaded bytes unverified.",
+    "48 presentation uncertainties retained without inferred acceptance; native journal publication-review revision20 preserved.",
+    "Earlier global backlog overview has pre-existing historical bound-document mismatches; Cycle22 independent replay passes.",
+    "No publication success, platform URLs, screenshots, analytics or device passes invented.",
+    "No live-platform action and no Cycle23 start."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "cycleId": "cycle.22",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-22T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-22T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-18T19:30:39.237001+00:00",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "schemaVersion": 3,
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "ownerInstruction": {
+    "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/owner-instruction.md",
+    "sha256": "b4bca58c662a967ba874a2a1ed09f4c080e6d2326d242e6bd1ba3282b72a276a"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/anglerfish-fusion-cycle22-candidate-v3.mp4",
+    "sha256": "8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-22/delivery-v1/release-v1.json",
+    "sha256": "80f5728cb639522e8fbcd8d0af50e5c42b16ab4308f278c1b1ddf980dc9a2261"
+  },
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-22/delivery-v1/master-approval-v1.json",
+    "sha256": "0c065bdc048546d892c39952125cc520e56663375d39ead352eb993b3dce8329"
+  },
+  "nativeWorkflow": {
+    "stage": "publication-review",
+    "revision": 20,
+    "unchanged": true,
+    "publicationDecision": null
+  },
+  "nativeRecordReconciliation": "Owner scheduling report recorded separately from strict gate projection, following prior-cycle scheduling records. Native observations require an exact-release publication decision, absent here. Preserve all twenty events and state; add a cycle-scoped evidence addendum without forging an event, authorization, risk acceptance, native QA or successful publication. Earlier master/delivery reviews retain their as-of meaning.",
+  "limitations": [
+    "Actual uploaded bytes, platform IDs/URLs, settings, comments, processing and device evidence unknown.",
+    "Successful publication remains unconfirmed.",
+    "Scheduling is not native QA, uncertainty acceptance or retrospective exact-release authorization."
+  ]
+}

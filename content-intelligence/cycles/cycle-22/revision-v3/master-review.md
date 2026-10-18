@@ -1,0 +1,32 @@
+# CYCLE #22 V3 MASTER REVIEW
+
+Owner review required. No master approval, delivery or publication authority inferred.
+
+Master: `artifacts/masters/anglerfish-fusion-cycle22-candidate-v3.mp4`
+SHA-256: `8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369`
+39,717,504 bytes; 1080×1920; H.264, 4:2:0; 30fps; 1,422 picture frames /47.4 seconds. AAC stereo48kHz; container47.445 seconds including unchanged audio tail.
+
+V3 replaces the underlying procedural fish with original generated transparent raster artwork, retained with exact prompts and provenance, animated through a deterministic layered rig. It is disclosed as biological reconstruction, not deep-sea footage. Copyright reference figures informed anatomy only; their pixels were not supplied to generation, traced or incorporated into production. Selected PNGs make rendering reproducible; generation itself is stochastic and provider model/version was not exposed.
+
+The female now has an organic compressed oval body, a tapered caudal peduncle, near-vertical recessed mouth, needle teeth, tiny eye, textured spinulose/wrinkled skin, ray fins, short esca and three posterior club caruncles. The male has a distinct elongated body, large eye, textured head, ray fins and articulated jaw denticles. Search foreground scale and male contrast were strengthened. A local head-and-skin section replaces the former whole-male oval, follows the actual jaw anchor and leaves the external male body/tail recognizable. The final shot moves into a tighter diagonal portrait instead of repeating the wide shot. Immunity metaphor and qualifications remain intact.
+
+| Time | V2 / V3 evidence (left / right) | Review focus |
+| --- | --- | --- |
+|1.000,2.167s|[Comparison1](../../../../artifacts/qa-evidence/anglerfish-fusion-cycle22-v3/before-after-1.jpg)|Organic silhouette, skin, mouth, male presence in hook|
+|5.000,6.833s|[Comparison1](../../../../artifacts/qa-evidence/anglerfish-fusion-cycle22-v3/before-after-1.jpg)|Detailed foreground male and female scale reveal|
+|11.000,14.000s|[Comparison2](../../../../artifacts/qa-evidence/anglerfish-fusion-cycle22-v3/before-after-2.jpg)|Approach, jaws and macro contact|
+|15.933,17.000s|[Comparison2](../../../../artifacts/qa-evidence/anglerfish-fusion-cycle22-v3/before-after-2.jpg)|External-to-section transition, same attachment location|
+|18.267,19.333,21.667,25.000s|[Comparison3](../../../../artifacts/qa-evidence/anglerfish-fusion-cycle22-v3/before-after-3.jpg)|Bridge before vessels, local head window, external male retained|
+|29.333,31.667,40.000,46.000s|[Comparison4](../../../../artifacts/qa-evidence/anglerfish-fusion-cycle22-v3/before-after-4.jpg)|Inherited-information metaphor, pair and final diagonal close portrait|
+
+Paths in the original decoded-sheet reports precede immutable registration; canonical-location addenda map identical hashes to retained paths. The old shared comparison helper emitted inherited V1/V2 column labels, and the audio helper uses the legacy key `v2`; the metadata corrigendum explicitly establishes V2-left/V3-right and the actual V3 audio media path/hash. Exact media identity takes precedence over those legacy names. Reports were preserved rather than silently rewritten.
+
+Exact verified narration is retained in [narration.txt](../narration.txt), with no wording change. All eleven Kokoro af_heart takes, original soundscape and finished V1 audio remain byte-identical. AAC payload and decoded PCM equality are verified. All36 caption cues, bounds, typography and timing match V1/V2. All1,422 presentation timestamps/durations and2,225 copied audio packet timestamps/durations/side data match across V1/V2/V3. CaptionPlan renderer/direction/revision provenance is renewed; no scientific or narration change.
+
+The locked knowledge package and claim-level research remain unchanged. [Anatomy inspection](research/anatomy-inspection.json) supplements them with actually inspected2016 and1998 primary taxonomy pages and museum specimen context. The selected anteroventral attachment site is illustrative, not universal. Exact generated fin-ray counts/denticle geometry are not certified. Cutaway tissue/routes are qualitative; time is compressed. Shared circulation does not carry sperm in this explanation. Male remains identifiable and reproductive. The inherited-information metaphor is not literal DNA, a counted gene map or a bite-triggered switch. Remaining defenses and proposed reproductive advantage retain their original scientific qualifications and source-access limits.
+
+[Rendered sequence editorial review](rendered-sequence-review.md) is separate from technical QA. Agent inspection covers decoded chronological, caption, motion, contact, phone-proxy and matched comparison sheets, with96 browser checkpoints. No human continuous audiovisual viewing/listening or actual phone/native-app testing is claimed. Main56px captions are18.7px at360px width; tiny denticles and explanatory qualifications remain fine. The artwork is layered2.5D rather than volumetric animation; female mouth pose remains fixed, with fin/tail movement. The local tissue plate remains visibly schematic. Owner judgment of cinematic quality is pending.
+
+Full media decode, media integrity, caption validation, audio identity, browser geometry and source checks passed. Local durability passed for1,506 canonical payloads. Default `pnpm check` did not pass:517/518 tests passed and the catalog preservation/durability test exceeded its unchanged5s deadline on three attempts (5.637s,5.259s,5.197s). No failed integrity assertion was reported. Typecheck and lint passed on each attempt; the standalone durability validator passed. Exact repository outcomes and standalone audit results are recorded in `qa/closeout.json` and raw validation logs. The timing failure is retained as an unresolved technical concern; no timeout or assertion was relaxed. PriorV1/V2 media/evidence and all earlier catalog entries are hash-preserved. Cycle22 independently replays to master-review revision17; older unrelated global bound-document mismatches remain unchanged. Local staging supports durability checks; no commit, push or remote backup is implied.
+
+[Changed-file manifest](changed-files.json) reports this V3 increment against the initial staged working tree, excluding inherited V1/V2 additions. Four shared records legitimately change: catalog, asset licenses, cycle22 state and project routing metadata. No branch switch, worktree, commit, push, delivery preparation, scheduling, upload or publication occurred.

@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.anglerfish-fusion.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "anglerfish-fusion",
+    "revision": 1,
+    "sha256": "0fd17120cf54bd6c6db36ff985f56a51f236176e71a8d95afdc81dc38de04c20"
+  },
+  "contentAsset": {
+    "id": "anglerfish-fusion.asset.permanent-pair",
+    "revision": 1,
+    "sha256": "bc30e9652d97e5daf652dfbbbd403868e14ecef346cf488064a81d2cebc83b10"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.22",
+    "reviewSha256": "03a2f706b829acfc94c5af5caeac599580164839df1515e7bfd1cc001216de8d"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-22/production-v1/profiles/youtube.json",
+      "sha256": "b6c0a1e399c1311364283fb2b1c29c9424bebebeb0f42db9a019660fde76927b"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-22/production-v1/profiles/tiktok.json",
+      "sha256": "9dfea517b05ce7f2c8076e429a7cedca1f3741b539298f2017c222f51ae75229"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-22/production-v1/profiles/instagram.json",
+      "sha256": "12899581db52797e1ead14dee236cd0f8858c02e6c64a4e859384e5d3d0bf742"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-22/production-v1/profiles/facebook.json",
+      "sha256": "290b4273755188d5e9286fe750231c30af6ae725ef6ea814eed4b760560631f8"
+    }
+  ],
+  "approvedScriptSha256": "78063ddbcdbb3fa1074f71b3d4dcf8697b1a6c40008c92c45ad822d650e7572b",
+  "creativeDirection": {
+    "id": "creative-direction.anglerfish-fusion.v1",
+    "revision": 1,
+    "sha256": "28b58ccc9f6d3cd94191ee1556669de80e4691eedccc601746aa6a1ed8196f62"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 47.4
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "anglerfish-fusion.production.1",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.1",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.1",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.1"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.scope",
+        "anglerfish-fusion.claim.tissue"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 84
+      },
+      "sceneType": "fused-mates-premise",
+      "objective": "Large female occupies frame with tiny male beside her ventral flank; short lure,3 dorsal caruncles and jaw establish species. Camera closes immediately; no empty water opening.",
+      "onScreenText": [],
+      "animationIntent": "A permanent encounter; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.2",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.2",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.2",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.2"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.species",
+        "anglerfish-fusion.claim.search"
+      ],
+      "frames": {
+        "start": 84,
+        "end": 220
+      },
+      "sceneType": "male-search",
+      "objective": "Track a large-eyed, lureless male swimming through black water; restrained distant point of female light and huge female silhouette emerge. Search direction is illustrative, not a proven tracking path.",
+      "onScreenText": [],
+      "animationIntent": "Search the water column; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.3",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.3",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.3",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.3"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.species"
+      ],
+      "frames": {
+        "start": 220,
+        "end": 299
+      },
+      "sceneType": "species-reveal",
+      "objective": "Reveal entire same female at near-profile angle; three dorsal caruncles, tiny female eye, small pectoral and short esca remain visible. Scientific species label.",
+      "onScreenText": [],
+      "animationIntent": "Meet the triplewart; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.4",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.4",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.4",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.4"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.grip",
+        "anglerfish-fusion.claim.species",
+        "anglerfish-fusion.claim.tissue"
+      ],
+      "frames": {
+        "start": 299,
+        "end": 466
+      },
+      "sceneType": "jaw-contact",
+      "objective": "Continuous close-in approach ending with both jaw tips physically against female ventral skin; tiny hooked denticles visible only in macro. Hold the grip, no immediate vascular join.",
+      "onScreenText": [],
+      "animationIntent": "Grip then remain; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.5",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.5",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.5",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.5"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.tissue"
+      ],
+      "frames": {
+        "start": 466,
+        "end": 587
+      },
+      "sceneType": "tissue-vascular-union",
+      "objective": "Camera enters the contact seam. Two adjoining tissue surfaces become continuous across a narrow junction; vascular lumen connection develops only later. Organic connected tissue, not floating cell grid.",
+      "onScreenText": [],
+      "animationIntent": "Tissue then circulation; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.6",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.6",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.6",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.6"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.nutrition",
+        "anglerfish-fusion.claim.sperm"
+      ],
+      "frames": {
+        "start": 587,
+        "end": 743
+      },
+      "sceneType": "nutrient-dependence",
+      "objective": "Follow illustrative paired vessel paths across the same narrow seam and into the recognizable male. Warm flow motion means nutrient transport only. Male remains whole; no detailed internal organ map or sperm-in-blood imagery.",
+      "onScreenText": [],
+      "animationIntent": "Nutrition and reproduction; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.7",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.7",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.7",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.7"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.organs"
+      ],
+      "frames": {
+        "start": 743,
+        "end": 860
+      },
+      "sceneType": "retained-male",
+      "objective": "Pull out from seam to show male retained externally, with body and fin movement; no shrinking into organ or disappearance.",
+      "onScreenText": [],
+      "animationIntent": "Still two fish; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.8",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.8",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.8",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.8"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.immune"
+      ],
+      "frames": {
+        "start": 860,
+        "end": 1034
+      },
+      "sceneType": "immune-tolerance",
+      "objective": "Macro seam remains anatomically joined; secondary restrained visual distinction between intact tissue and absent rejection attack, no literal immune cells being switched off. Large adaptive-immunity label plus evolved-gene-loss qualification.",
+      "onScreenText": [],
+      "animationIntent": "Tolerance puzzle; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.9",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.9",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.9",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.9"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.defenses"
+      ],
+      "frames": {
+        "start": 1034,
+        "end": 1167
+      },
+      "sceneType": "open-defense-research",
+      "objective": "Camera orbits joined tissue toward exterior. Both fish remain distinct. Research qualification legible; no pathogens, shields or speculative defense pathways.",
+      "onScreenText": [],
+      "animationIntent": "Defense remains open; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.10",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.10",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.10",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.10"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.advantage",
+        "anglerfish-fusion.claim.sperm"
+      ],
+      "frames": {
+        "start": 1167,
+        "end": 1331
+      },
+      "sceneType": "reproductive-assurance",
+      "objective": "Return to matched opening view of attached pair in huge dark water column; camera widens while pair stays physically connected. No egg or sperm release not directly verified for species.",
+      "onScreenText": [],
+      "animationIntent": "Future spawning association; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    },
+    {
+      "id": "anglerfish-fusion.production.11",
+      "sourceVisualPlanId": "anglerfish-fusion.asset.permanent-pair.visual.11",
+      "narrativeBeatId": "anglerfish-fusion.asset.permanent-pair.beat.11",
+      "scriptSegmentIds": [
+        "anglerfish-fusion.asset.permanent-pair.script.11"
+      ],
+      "claimIds": [
+        "anglerfish-fusion.claim.tissue",
+        "anglerfish-fusion.claim.organs"
+      ],
+      "frames": {
+        "start": 1331,
+        "end": 1422
+      },
+      "sceneType": "lasting-pair",
+      "objective": "Final gentle orbit of joined pair, female moves and male follows at exact attachment point; resolve first image with lasting physical association, no single-individual or love metaphor.",
+      "onScreenText": [],
+      "animationIntent": "A lasting connection; original species-informed illustration; compressed fusion timing; qualitative tissue and vascular connections.",
+      "transitionIntent": "One jaw-skin attachment site persists through macro, tissue join, later vascular connection and external pair. Fusion time compressed; no exact duration or map.",
+      "audioIntent": "Exact measured af_heart; original underwater air and transformation tones under speech."
+    }
+  ],
+  "assets": [
+    {
+      "id": "anglerfish-fusion.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned",
+        "notes": "Original triplewart pair, small hooked jaws, connected tissue and qualitative vascular paths; no scientific figures reproduced.",
+        "evidence": "content-intelligence/cycles/cycle-22/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "anglerfish-fusion.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource packages",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing Manrope and Space Grotesk",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "anglerfish-fusion.narration",
+      "kind": "audio",
+      "path": "public/audio/anglerfish-fusion/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact evidence-locked wording",
+        "evidence": "src/production/narration/anglerfish-fusion.json"
+      }
+    },
+    {
+      "id": "anglerfish-fusion.soundscape",
+      "kind": "audio",
+      "path": "public/audio/anglerfish-fusion/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesized sound",
+        "rights": "Project-owned",
+        "notes": "Original underwater air and harmonic transformation bloom; no samples.",
+        "evidence": "content-intelligence/cycles/cycle-22/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/anglerfish-fusion.en.vtt",
+    "captionPlanId": "caption-plan.anglerfish-fusion.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "955942dd45e83689303acdb96daeae37a435dfcd096f5b0ad2bfe011902d8f56",
+    "generatorId": "generator.anglerfish-fusion-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Permanent fusion in this species only; external male remains anatomically recognizable.",
+    "Female short lure, three dorsal caruncles, small eye, spinulose skin; male large eye, no lure and hooked jaws.",
+    "Physical jaw contact precedes tissue union, which precedes vascular connection; persistent seam anchor.",
+    "Immune gene losses evolutionary, not switched off on biting; defense mechanisms still being studied.",
+    "Reproductive assurance framed may;2026 mathematical model distinct from direct evolutionary observation.",
+    "No claim all organs disappear, DNA merges, sperm passes through blood or exact respiration mechanism.",
+    "Every caption midpoint, stage transition, chronological sequence and360px readability inspected.",
+    "Input phonemes, output ASR, signal integrity and loudness separate from owner subjective listening.",
+    "Runtime target40–55seconds, measured narration drives timing; no padding.",
+    "Stop at Cycle22 V1 master review; no delivery or publication."
+  ]
+}

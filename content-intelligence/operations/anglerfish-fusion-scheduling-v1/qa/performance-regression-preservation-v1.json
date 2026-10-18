@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "implementation": [
+    {
+      "path": "scripts/artifact-v2-integrity.ts",
+      "sha256": "e2a75338b961e29762b16729470ea626c736ac74b522a2476b877c82e7524ce2"
+    },
+    {
+      "path": "tests/media-artifacts.test.ts",
+      "sha256": "7fa4de56997e7816c83420f0de8701a604fd7883e4c836c8e7d52b8bfe13c365"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "7d9b060292352a5db3d5961fbde8260b9c2cf657345106409b054aefc48012a2"
+    }
+  ],
+  "defaultCheck": "56 test files / 519 tests passed; 98.89s",
+  "regressionCases": [
+    "Same-size canonical corruption rejected",
+    "Untracked provenance rejected",
+    "Missing provenance rejected",
+    "Unregistered duplicate/disguised binaries rejected",
+    "Legacy digests, containment, exceptions retained"
+  ],
+  "timeoutAndAssertionsUnchanged": true
+}

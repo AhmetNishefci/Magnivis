@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-18T15:24:57.503912Z",
+  "masterSha256": "d1636cda408e41583750065117932907cec823a5c40b6eb9ba279b6887d31ccf",
+  "pnpmCheck": {
+    "passed": true,
+    "testFiles": 56,
+    "tests": 518,
+    "typecheck": "passed",
+    "lint": "passed",
+    "firstAttempt": "517/518; one existing durability test timed out at5000ms. Unchanged assertions/config. Idle rerun all passed. Both raw logs retained."
+  },
+  "artifactDurability": {
+    "passed": true,
+    "canonicalPayloads": 1488,
+    "scope": "Git-index local retained payloads and source records; no commit/push, remote backup or clean-clone assertion."
+  },
+  "implementationBindingsVerified": 17,
+  "fullDecode": "passed",
+  "presentationSchedule": "All1422 video PTS/durations equal after presentation-order sorting; audio2225 packet timestamps/durations/side data equal.",
+  "independentCycleReplay": "master-review revision12",
+  "globalBacklog": "Existing older bound-document mismatches; unchanged V1 historical-replay-limit evidence remains applicable.",
+  "ownerApproval": false,
+  "deliveriesPrepared": false,
+  "platformActions": [],
+  "gitActions": [
+    "local staging for durability only"
+  ]
+}

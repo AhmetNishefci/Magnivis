@@ -79,15 +79,18 @@ export const validateCanonicalMediaDurability = (root = process.cwd(), trackedPa
       if (mediaHash(`${root}/${path}`) !== old.get(path)) throw new Error('Legacy binary changed: ' + path);
       continue;
     }
+    // Every canonical path was fully resolved above (bytes, containment, provenance
+    // and exception decision). This pass classifies uncatalogued tracked files;
+    // reading/hashing/resolving canonical payloads again adds no new invariant.
+    // Keep the legacy branch above: its independent historical digest still applies.
+    if (canonical.has(path)) continue;
     const file = `${root}/${path}`;
     const mediaExtension = /\.(mp4|wav|png|jpe?g|webp|mp3|flac|ogg|gif|avif|mov|m4a|webm|aac|opus|mkv|tiff?|heic|bmp|ttf|otf|woff2?)$/i.test(path);
     const buffer = readFileSync(file);
     const largeBinary = buffer.includes(0) || !Buffer.from(buffer.toString('utf8'), 'utf8').equals(buffer);
     const alreadyCanonicalHash = registry.byHash(hash(buffer));
-    const m = canonical.get(path);
-    if (!m && !mediaExtension && !largeBinary && !alreadyCanonicalHash) continue;
-    if (!m) throw new Error('New durable binary must be canonical media or an explicit evidence exception: ' + path);
-    registry.resolveFile(mediaReference(m));
+    if (!mediaExtension && !largeBinary && !alreadyCanonicalHash) continue;
+    throw new Error('New durable binary must be canonical media or an explicit evidence exception: ' + path);
   }
   return {passed: true, canonicalPayloads: registry.list().filter(m => !m.exception).length, historicalRetentions:retentions.length,archivalParts:archivalParts.size,explicitExceptions: registry.list().filter(m => m.exception).length, frozenLegacyBinaryPaths: legacyFiles.length};
 };

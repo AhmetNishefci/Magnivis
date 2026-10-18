@@ -1,0 +1,22 @@
+{
+  "recordKind": "operational-evidence-addendum",
+  "cycleId": "cycle.22",
+  "recordedAt": "2026-10-18T19:30:39.237001+00:00",
+  "state": "scheduled-owner-reported",
+  "scheduledFor": "2026-10-22T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-22T18:00:00Z",
+  "schedulingIndex": {
+    "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/scheduling-index-v1.json",
+    "sha256": "1a99a5f008774b72b86cbd52d4137f5c01f2752638b7d7d7ab4d26893ebd0c74"
+  },
+  "ownerReport": {
+    "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/owner-report.json",
+    "sha256": "5899a813b0aba52ea820f0876248ce41d933e9267db891879f27a9df427006ee"
+  },
+  "nativeStage": "publication-review",
+  "nativeRevision": 20,
+  "nativeJournalUnchanged": true,
+  "publicationDecision": null,
+  "publication": "unknown",
+  "reconciliation": "Owner scheduling report recorded separately from strict gate projection, following prior-cycle scheduling records. Native observations require an exact-release publication decision, absent here. Preserve all twenty events and state; add a cycle-scoped evidence addendum without forging an event, authorization, risk acceptance, native QA or successful publication. Earlier master/delivery reviews retain their as-of meaning."
+}

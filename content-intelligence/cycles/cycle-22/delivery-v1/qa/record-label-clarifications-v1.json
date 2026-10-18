@@ -1,0 +1,26 @@
+{
+  "enteredAt": "2026-10-18T16:28:54.379990Z",
+  "scope": "Additive clarification; journal-bound original records remain unchanged.",
+  "ownerDecisionLabel": {
+    "record": {
+      "path": "content-intelligence/cycles/cycle-22/delivery-v1/master-approval-v1.json",
+      "sha256": "0c065bdc048546d892c39952125cc520e56663375d39ead352eb993b3dce8329"
+    },
+    "inheritedIdSuffix": "master-v2.v1",
+    "actualApprovedTarget": {
+      "path": "content-intelligence/cycles/cycle-22/revision-v3/master-candidate-v3.json",
+      "sha256": "c2e3bb074389907297623e0d65d9785d50000a6121447f9650b8122c780a756c"
+    },
+    "actualMediaSha256": "8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369",
+    "meaning": "ID suffix is a copied nominal label; targetSha256 and exact owner instruction bind V3, not V2. Candidate lineage and replay verified independently."
+  },
+  "presentationStartLabel": {
+    "record": {
+      "path": "content-intelligence/cycles/cycle-22/delivery-v1/presentation-start-v1.json",
+      "sha256": "180e2eb1c6a128fcfaec5289f12e8aa83cba2eff7e9d1fd11b407e657be65c78"
+    },
+    "inheritedStopText": "CYCLE #21 OWNER DELIVERY REVIEW",
+    "correctStop": "CYCLE #22 DELIVERY REVIEW",
+    "meaning": "CycleId is cycle.22 and journal events18\u201320 belong exclusively to cycle22; prose stop label and initial stdout label were inherited from reference script. No cycle21 state/evidence changed."
+  }
+}

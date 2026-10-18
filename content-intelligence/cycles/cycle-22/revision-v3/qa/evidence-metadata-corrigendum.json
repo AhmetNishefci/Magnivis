@@ -1,0 +1,16 @@
+{
+  "enteredAt": "2026-10-18T16:09:30.404127Z",
+  "scope": "Metadata-only clarification; exact decoded sheets and bound original reports unchanged.",
+  "comparisonColumns": {
+    "legacyField": "comparison-bindings.json beforeAfter[*].columnOrder contains inherited V1,V2 labels from frozen historical helper.",
+    "correctOrder": [
+      "V2 (left)",
+      "V3 (right)"
+    ],
+    "authority": "Exact before/after file paths and hashes in every comparison record, plus ffmpeg input0/input1 hstack order. No comparison pixels or timestamps affected."
+  },
+  "audioFields": {
+    "legacyField": "audio-verification.json v2",
+    "actualMedia": "V3, as explicitly identified by its path and SHA-256. The key name was inherited from the V2 audio comparison helper."
+  }
+}

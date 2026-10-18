@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-18T16:35:10.322345Z",
+  "passed": true,
+  "defaultCheckBeforeDeliveries": {
+    "passed": true,
+    "files": 56,
+    "tests": 519,
+    "log": "technical-gate/check-before-deliveries.log"
+  },
+  "defaultCheckAfterDeliveries": {
+    "passed": true,
+    "files": 56,
+    "tests": 519,
+    "log": "qa/validation/check.log"
+  },
+  "typecheck": "passed",
+  "lint": "passed",
+  "testTimeoutUnchangedMs": 5000,
+  "workerConfigurationUnchanged": true,
+  "technicalFix": "Full canonical verification retained; redundant canonical payload reads/resolutions removed only from uncatalogued-file scan. Existing assertions preserved, additional tamper/provenance regression.",
+  "fullMediaDecode": "passed, fresh complete approved V3 decode during package preparation",
+  "AACPayloadAndDecodedPCM": "passed, exact approved identity",
+  "captionValidation": {
+    "passed": true,
+    "phrases": 36,
+    "wordingAndTimingUnchanged": true
+  },
+  "allPlatformProfiles": {
+    "passed": true,
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "captionMidpointsPerPlatform": 36,
+    "originalGeometryCheckpoints": 96,
+    "knownSampledCollisions": 0,
+    "unresolvedItemizedPresentationUnknowns": 48,
+    "nativeGeometryAndDeviceScope": "Provisional/stale/unknown profile fields retained; no real-device pass inferred."
+  },
+  "cover": {
+    "frame": 1380,
+    "seconds": 46,
+    "pixelEqualToApprovedMaster": true,
+    "dimensions": "1080x1920",
+    "separateOwnerApproval": false
+  },
+  "artifactDurability": {
+    "passed": true,
+    "canonicalPayloads": 1508,
+    "priorCatalogEntriesUnchanged": 1506,
+    "newPayloads": 2,
+    "scope": "Local canonical bytes and Git index; no commit or remote/clean-clone claim."
+  },
+  "journalReplay": {
+    "passed": true,
+    "stage": "publication-review",
+    "revision": 20,
+    "publicationDecision": null
+  },
+  "preservation": "All8081initial tracked files checked;8075unchanged; six legitimate implementation/catalog/license/routing/state changes. PriorV1/V2/V3 masters, content and evidence unchanged.",
+  "humanContinuousAVReview": false,
+  "realDeviceReview": false,
+  "externalActions": [],
+  "commitOrPush": false,
+  "ownerStop": "CYCLE #22 DELIVERY REVIEW"
+}

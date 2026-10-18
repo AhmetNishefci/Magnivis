@@ -1,0 +1,29 @@
+{
+  "recordedAt": "2026-10-18T14:44:18.920604+00:00",
+  "unsubmittedPreflight": {
+    "path": "output/anglerfish-fusion-layout-preflight.mp4",
+    "sha256": "e5b86e0c9829c978418468831b551d2ce10e9486802290d955de0a0fda605c4d",
+    "durability": "Temporary local diagnostic export; not selected, registered, owner-reviewed or approved media."
+  },
+  "findings": [
+    {
+      "issue": "Whole-fish male oscillated about body, moving the jaw at attachment.",
+      "action": "Attached male now rotates about jaw origin; parent contact point remains common."
+    },
+    {
+      "issue": "Four browser samples showed144px text scroll height in142px caption box.",
+      "action": "Increase designed box height to150px (bottom1600); keep wording,font size,timing and horizontal placement. Re-render and remeasure all96checkpoints."
+    }
+  ],
+  "recordReconciliation": "Earlier mastering record preserves the original attempted final pathname; preflight file was moved to the diagnostic path before final V1 registration. The corrected export exclusively owns the selected master pathname. No owner gate crossed.",
+  "selectedMaster": {
+    "path": "artifacts/masters/anglerfish-fusion-cycle22-candidate-v1.mp4",
+    "sha256": "56386455a05aae05ce6581c2202e8217dc29bacb6fc5fb4de62ca5d573252ceb"
+  },
+  "finalLayout": {
+    "path": "qa/anglerfish-fusion/typography-report.json",
+    "passed": true,
+    "checkpoints": 96
+  },
+  "reusableCorrection": "Existing adaptive caption bounds, actual browser overflow checks and actual attachment transform used directly; no new template or general framework needed."
+}

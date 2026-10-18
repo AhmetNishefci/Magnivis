@@ -1,0 +1,32 @@
+{
+  "enteredAt": "2026-10-18T16:31:30.254268Z",
+  "sourceCommit": "557457cd4c4ace79337199cc58da5be86616ce3c",
+  "workingTree": "Exact uncommitted final implementation; base commit alone does not contain changes.",
+  "files": [
+    {
+      "path": "scripts/artifact-v2-integrity.ts",
+      "sha256": "e2a75338b961e29762b16729470ea626c736ac74b522a2476b877c82e7524ce2"
+    },
+    {
+      "path": "tests/media-artifacts.test.ts",
+      "sha256": "7fa4de56997e7816c83420f0de8701a604fd7883e4c836c8e7d52b8bfe13c365"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "7d9b060292352a5db3d5961fbde8260b9c2cf657345106409b054aefc48012a2"
+    },
+    {
+      "path": "scripts/record-anglerfish-approval.ts",
+      "sha256": "c1aad505cb0ebffe0757d35363a3a42515bcfae1c8a9fe4fe395b94cab469b4c"
+    },
+    {
+      "path": "scripts/prepare-anglerfish-release.ts",
+      "sha256": "aeb1f94f577969b366adfba8898f6c8845d26c45a79d4d920129ca217f8629fa"
+    },
+    {
+      "path": "scripts/validate-anglerfish-release.ts",
+      "sha256": "96bf57a2363c34197acc4fc03e7faaa7ae615d5f58a7ba5f0f38f5914441a1de"
+    }
+  ],
+  "executionNote": "Approval script nominal decision ID/stop labels and preparation stdout stop label corrected after initial execution. Original bound approval/start records remain immutable; qa/record-label-clarifications-v1.json binds their actual cycle22/V3 meaning. No event/approval/media hash rewritten."
+}

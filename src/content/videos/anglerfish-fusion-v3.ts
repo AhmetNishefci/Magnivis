@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/anglerfish-fusion-v3.json';
+import asset from '../../../content-intelligence/cycles/cycle-22/content-asset.ready.json';
+import narration from '../../production/narration/anglerfish-fusion.json';
+export const anglerfishFusionV3=videoSpecSchema.parse({id:'anglerfish-fusion-v3',compositionId:'Magnivis-AnglerfishFusion-V3',workingTitle:'The Fish That Fuses With Its Mate',titleCandidates:['The Fish That Fuses With Its Mate'],descriptionCandidates:['A triplewart seadevil pair: permanent tissue fusion, nutrition and reproductive association.'],hook:asset.script.segments[0]!.text,pillar:'marine-biology',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration'],narration:true,narrationCues:narration.cues}});

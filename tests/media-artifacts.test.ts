@@ -77,6 +77,24 @@ describe('Media content identity, historical safety and durability', () => {
       expect(() => validateCanonicalMediaDurability(root, ['recipe.json'])).toThrow(/not Git tracked/);
     } finally {rmSync(root, {recursive: true, force: true});}
   });
+  it('verifies canonical hashes and provenance before excluding them from the unregistered-file scan', () => {
+    const {root, media} = create();
+    try {
+      const audit = join(root, 'system-audits/artifact-architecture-v2');
+      mkdirSync(audit, {recursive: true}); mkdirSync(join(root, 'artifacts'));
+      writeFileSync(join(audit, 'legacy-binaries.json'), '{"files":[]}');
+      writeFileSync(join(audit, 'historical-bindings.json'), '{"files":[]}');
+      writeFileSync(join(root, 'artifacts/media-catalog.json'), JSON.stringify({schemaVersion: 2, artifacts: [media]}));
+      const tracked = ['one.wav', 'recipe.json'];
+      expect(validateCanonicalMediaDurability(root, tracked).passed).toBe(true);
+      writeFileSync(join(root, 'one.wav'), 'modified audio!'); // Same byte count: digest must still be checked.
+      expect(() => validateCanonicalMediaDurability(root, tracked)).toThrow(/integrity/);
+      writeFileSync(join(root, 'one.wav'), 'synthetic audio');
+      expect(() => validateCanonicalMediaDurability(root, ['one.wav'])).toThrow(/provenance/);
+      rmSync(join(root, 'recipe.json'));
+      expect(() => validateCanonicalMediaDurability(root, tracked)).toThrow();
+    } finally {rmSync(root, {recursive: true, force: true});}
+  });
   it('accepts only the exact owner-authorized documentation amendment', () => {
     const current = readFileSync('AGENTS.md');
     const old = architecturePreviousDocumentBytes('AGENTS.md', current);

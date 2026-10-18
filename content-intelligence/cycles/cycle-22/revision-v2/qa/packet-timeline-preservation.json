@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-18T15:21:33.731Z",
+  "videoPacketCount": 1422,
+  "videoPresentationTimestampsAndDurationsEqual": true,
+  "audioPacketCount": 2225,
+  "audioPacketTimestampsDurationsAndSideDataEqual": true,
+  "scope": "Exact V1 picture presentation schedule and copied audio schedule preserved. First unsorted diagnostic compared codec decode order; corrected to presentation-order comparison.",
+  "method": "Sort video packets by presentation time before comparing all1422 PTS/durations; compare copied audio packets including side data. Container decode order can differ after encoding."
+}

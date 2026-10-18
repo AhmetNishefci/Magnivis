@@ -1,0 +1,57 @@
+{
+  "cycleId": "cycle.22",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-22T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-22T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-18T19:30:39.237001+00:00",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "platform": "facebook",
+  "ownerReport": {
+    "path": "content-intelligence/operations/anglerfish-fusion-scheduling-v1/owner-report.json",
+    "sha256": "5899a813b0aba52ea820f0876248ce41d933e9267db891879f27a9df427006ee"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/anglerfish-fusion-cycle22-candidate-v3.mp4",
+    "sha256": "8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-22/delivery-v1/release-v1.json",
+    "sha256": "80f5728cb639522e8fbcd8d0af50e5c42b16ab4308f278c1b1ddf980dc9a2261"
+  },
+  "intendedVariant": {
+    "id": "anglerfish-fusion.variant.facebook.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369",
+      "sha256": "8a88ff1c5c7e7318c8ae7fa719acb72e60e78372ffc1527ff211a4e62daee369"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-22/delivery-v1/facebook/manifest-v1.json",
+    "sha256": "293b5082f6ebc4fb4e90623c90e7ad6b814c682b83f24310468f2875cb8b984a"
+  },
+  "identityBasis": "Owner-designated master and prepared package; actual upload identity not independently verified."
+}

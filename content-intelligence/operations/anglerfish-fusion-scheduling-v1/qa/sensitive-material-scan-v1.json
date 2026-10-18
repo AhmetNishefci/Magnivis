@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "textFilesScanned": 392,
+  "binaryFilesExcluded": 58,
+  "scope": "All staged changed files and current closeout evidence; includes all newly staged research extracts.",
+  "detectors": [
+    "private-key",
+    "github-token",
+    "aws-access-key",
+    "bearer-token",
+    "credential-in-url",
+    "jwt",
+    "provider-key"
+  ],
+  "matches": [],
+  "limitations": "Pattern-based scan plus changed-file/diff review; no claim of universal secret detection."
+}

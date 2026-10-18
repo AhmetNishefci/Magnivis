@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "command": "node --import tsx scripts/validate-anglerfish-release.ts",
+  "timing": "Before additive scheduling metadata changes, on the original delivery baseline HEAD.",
+  "evidencePreservation": "Validator writes its historical audio-integrity report. Exact prior bytes captured before execution and restored in finally; entire pre-closeout file baseline verifies no change. Fresh output retained here.",
+  "postSchedulingValidation": "validate-anglerfish-scheduling.ts replays the journal, inspects all four canonical deliveries and verifies the entire pre-closeout snapshot except the two declared additive operations/index changes."
+}

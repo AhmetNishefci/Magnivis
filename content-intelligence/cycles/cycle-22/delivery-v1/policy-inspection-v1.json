@@ -1,0 +1,46 @@
+{
+  "inspectedAt": "2026-10-18T16:24:02.234172Z",
+  "scope": "Read-only official guidance, no live account controls/device tests or new geometry.",
+  "documentationRead": [
+    "AGENTS.md",
+    "docs/WORKFLOW-V3.md",
+    "workflow/project-state.json",
+    "docs/DELIVERY-PACKAGES.md",
+    "docs/PLATFORM-QA.md",
+    "docs/PLATFORM-VARIANTS.md",
+    "docs/ARTIFACT-ARCHITECTURE-V2.md",
+    "docs/ARTIFACT-STORAGE.md",
+    "docs/CAPTIONS.md",
+    "docs/OPERATIONS.md",
+    "docs/BRAND.md",
+    "docs/PRODUCTION-PLANS.md",
+    "docs/CONTENT-ASSETS.md",
+    "docs/KNOWLEDGE-PACKAGES.md",
+    "docs/RESEARCH-STANDARDS.md",
+    "docs/ASSET-LICENSES.md"
+  ],
+  "officialSources": [
+    {
+      "url": "https://support.google.com/youtube/answer/72431?hl=en",
+      "access": "Full help body inspected",
+      "finding": "Computer Studio supports custom9:16Shorts thumbnails for verified accounts; actual account eligibility/control unknown. Native frame selection remains conditional on live UI."
+    },
+    {
+      "url": "https://support.google.com/youtube/answer/14328491?hl=en",
+      "access": "Full help body inspected",
+      "finding": "AI use disclosure addresses realistic generated content; nonrealistic illustration differs. Recommend transparent disclosure for generated biological reconstruction and synthetic narration, not a universal mandate for all animation."
+    },
+    {
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content",
+      "access": "Official indexed excerpt; full body returned internal error",
+      "finding": "Indexed guidance encourages identifying substantially AI-created/edited content; exact live UI unverified."
+    },
+    {
+      "url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/",
+      "access": "Full official body inspected",
+      "finding": "Meta describes AI labeling and disclosure. Live controls, native crops and account settings not verified."
+    }
+  ],
+  "unchangedProfileAuthority": "Exact four production-bound profiles preserved, including provisional/stale/unknown states. No Meta crop coordinates invented. Selected cover has independent unknown-geometry profiles.",
+  "archivePolicy": "URLs/access notes only; no raw credential-bearing response/header archive staged."
+}

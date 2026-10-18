@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-18T14:42:52.930Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/anglerfish-fusion-render-v1.mp4",
+    "sha256": "f505774fc9cd60a3a2305ffffcdcf1b913961670ef16c32a3cc252a47e928cf1",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/anglerfish-fusion-cycle22-candidate-v1.mp4",
+    "sha256": "e5b86e0c9829c978418468831b551d2ce10e9486802290d955de0a0fda605c4d"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.53",
+    "input_tp": "-5.99",
+    "input_lra": "2.50",
+    "input_thresh": "-33.53",
+    "output_i": "-18.96",
+    "output_tp": "-2.53",
+    "output_lra": "2.50",
+    "output_thresh": "-29.97",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.04"
+  },
+  "gainDb": 3.530000000000001,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

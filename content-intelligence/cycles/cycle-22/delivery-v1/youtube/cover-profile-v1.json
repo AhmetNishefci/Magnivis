@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.anglerfish-fusion.youtube.cover-v1",
+  "revision": 1,
+  "platform": "youtube",
+  "surface": "youtube-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-18T16:26:07.100Z",
+  "reviewAfter": "2026-10-25T16:26:07.100Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Exact canvas checked; native thumbnail composition unmeasured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail UI geometry unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native cover overlay geometry unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Profile/grid/feed/search crop unknown; no crop invented.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-22/delivery-v1/qa/selected-cover-v1.json",
+        "sha256": "773c1a9200fa10b47630424c370d1351d9d7315e62751c8b2f1b52a9b79776b1"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-22/delivery-v1/policy-inspection-v1.json",
+        "sha256": "e8069256859d34ade2f0920f9799646211a254e4e5c60cf7976654866827e1ab"
+      }
+    ],
+    "rationale": "Exact decoded1080×1920PNG or corresponding native frame; actual controls/crops untested."
+  }
+}

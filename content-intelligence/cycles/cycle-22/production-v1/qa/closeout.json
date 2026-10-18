@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-10-18T14:53:43.644897+00:00",
+  "master": {
+    "path": "artifacts/masters/anglerfish-fusion-cycle22-candidate-v1.mp4",
+    "sha256": "56386455a05aae05ce6581c2202e8217dc29bacb6fc5fb4de62ca5d573252ceb"
+  },
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-22/production-v1/master-candidate-v1.json",
+    "sha256": "bb81ffbaebb6d467ffb8fb61e6966fc36ae608d572219677465414f0bd38a6a9"
+  },
+  "gate": {
+    "cycleId": "cycle.22",
+    "stage": "master-review",
+    "revision": 7,
+    "ownerApproved": false,
+    "deliveryAuthorized": false,
+    "publicationAuthorized": false
+  },
+  "validation": {
+    "pnpmCheck": {
+      "passed": true,
+      "testFiles": 56,
+      "tests": 518,
+      "typecheck": "passed",
+      "lint": "passed",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-22/production-v1/qa/validation/check.log",
+        "sha256": "1c027878a2a8c1889d5eb4d6c846d169c22a5745a4ec0e0378bb717a3501065f"
+      }
+    },
+    "pnpmQaAnglerfishFusion": {
+      "passed": true,
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-22/production-v1/qa/validation/media-qa.log",
+        "sha256": "c344f7d5800bd043f722236fd8c5b2a1ad5e51916bc911b7d993eee1e2cf804e"
+      }
+    },
+    "fullDecode": {
+      "passed": true,
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-22/production-v1/qa/stream-specifications.json",
+        "sha256": "90a56e8f82465f5fc404f0fc19c432aec491ce05dcfb9dde7c53179be9fc81f0"
+      }
+    },
+    "browserLayout": {
+      "passed": true,
+      "samples": 96,
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-22/production-v1/qa/typography-report.json",
+        "sha256": "b25bc41814d1c63b5926d630b2fbf9c95c636f3b28a40fe3206aeef4cacbe7b4"
+      }
+    },
+    "artifactDurability": {
+      "passed": true,
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-22/production-v1/qa/validation/durability.log",
+        "sha256": "11090b9fc50d3057b1bef5cd8c681b7f44cd17f8197cdcd751d3cd0b2ff31d72"
+      },
+      "scope": "Local indexed canonical bytes and provenance; no commit, push or clean-machine remote-backup proof."
+    },
+    "independentCycleReplay": {
+      "passed": true,
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-22/production-v1/qa/validation/cycle22-replay.json",
+        "sha256": "7fb14d453eedfc55733e8e4fbe12cde915c0d4ee5fa0ef48c2bfba656876e119"
+      }
+    },
+    "unstagedAndStagedWhitespaceCheck": "passed; only acquired research extracts retain original whitespace under cycle-local attributes.",
+    "sourceImplementationBindings": "All19 exact bound implementation files match selected render inputs.",
+    "historicalPreservation": {
+      "path": "content-intelligence/cycles/cycle-22/production-v1/qa/preservation.json",
+      "sha256": "2b20e43ff91894ab5e2b4fdbb481c5a517a5a82a51dc97a95e1d223b1531de0f"
+    },
+    "researchCredentialScan": {
+      "path": "content-intelligence/cycles/cycle-22/production-v1/qa/research-secret-scan.json",
+      "sha256": "4b1ba582634a78c9a27da7c88658b783052488c43b3646ca4d9b88c1a23692a8"
+    }
+  },
+  "knownGlobalRepositoryIssue": {
+    "path": "content-intelligence/cycles/cycle-22/production-v1/qa/historical-replay-limit.json",
+    "sha256": "3e5d32b9ef2106f53c5b78d6429668123b6b00fb18b43cabb1132cb8d77ceabd"
+  },
+  "registrationContinuation": {
+    "path": "content-intelligence/cycles/cycle-22/production-v1/qa/registration-continuation.json",
+    "sha256": "dc4c13ddcee47a1acbea5a98ef56c033921d82d9b7fd3571b92ae0880d1d9aab"
+  },
+  "creativeReview": {
+    "path": "content-intelligence/cycles/cycle-22/production-v1/rendered-sequence-review.md",
+    "sha256": "af461f40a6c785dd6445590e78c0b586b6a4f7c3a7be30948b05adcea85b881b"
+  },
+  "timingCorrigendum": {
+    "path": "content-intelligence/cycles/cycle-22/production-v1/qa/review-timestamp-corrigendum.json",
+    "sha256": "312230e9595cdcc8fc7fdbd5b552d38910fac8aefa560683648bbbf4d8acd194"
+  },
+  "limits": [
+    "Stylized2D biological illustration, schematic cutaway, repeated immunity shot.",
+    "No continuous subjective watching/listening or actual-phone/native app evidence.",
+    "Approximate internal caption timing, not forced word alignment.",
+    "Full primary2020/2024/2026 texts inaccessible; verified abstracts and access depth retained.",
+    "Old global-backlog replay blocked by unchanged historical document bindings."
+  ],
+  "git": "Branch and HEAD unchanged; scanned task files staged locally; no commit,push,worktree or platform action."
+}

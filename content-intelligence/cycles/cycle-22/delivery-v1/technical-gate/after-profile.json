@@ -1,0 +1,273 @@
+{
+  "at": "2026-10-18T16:21:04.797Z",
+  "results": [
+    {
+      "name": "architecture",
+      "elapsedMs": 473.91170900000003,
+      "result": {
+        "passed": true,
+        "frozenHistoricalFiles": 948,
+        "changedFiles": 6587,
+        "untrackedFiles": 3
+      },
+      "readCalls": 982,
+      "readBytes": 846681380,
+      "readMs": 105.32537799999848,
+      "repeatedPaths": [
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/docs/PROJECT-STATE.md",
+          "count": 2,
+          "bytes": 245292,
+          "readMs": 0.058250000000043656
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/docs/DECISIONS.md",
+          "count": 2,
+          "bytes": 142476,
+          "readMs": 0.03208299999994324
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/docs/OPERATIONS.md",
+          "count": 2,
+          "bytes": 45794,
+          "readMs": 0.04224999999996726
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/docs/DELIVERY-PACKAGES.md",
+          "count": 2,
+          "bytes": 29666,
+          "readMs": 0.029668000000015127
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/docs/ARTIFACT-STORAGE.md",
+          "count": 2,
+          "bytes": 26746,
+          "readMs": 0.02691699999991215
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/docs/PLATFORM-VARIANTS.md",
+          "count": 2,
+          "bytes": 26656,
+          "readMs": 0.027166999999963082
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/system-audits/artifact-architecture-v2/authority-amendment.json",
+          "count": 9,
+          "bytes": 25578,
+          "readMs": 0.1571239999999534
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/docs/ARCHITECTURE.md",
+          "count": 2,
+          "bytes": 24204,
+          "readMs": 0.038000000000010914
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/AGENTS.md",
+          "count": 2,
+          "bytes": 21690,
+          "readMs": 1.499249999999961
+        }
+      ],
+      "uniquePaths": 966
+    },
+    {
+      "name": "canonicalDurability",
+      "elapsedMs": 2726.741459,
+      "result": {
+        "passed": true,
+        "canonicalPayloads": 1506,
+        "historicalRetentions": 1,
+        "archivalParts": 2,
+        "explicitExceptions": 0,
+        "frozenLegacyBinaryPaths": 442
+      },
+      "readCalls": 8505,
+      "readBytes": 3993344334,
+      "readMs": 1165.1202749999952,
+      "repeatedPaths": [
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/historical-media/174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d/part-001.bin",
+          "count": 2,
+          "bytes": 134217728,
+          "readMs": 15.440457999999694
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/earth-to-stars/earth-to-stars-narrated.mp4",
+          "count": 2,
+          "bytes": 85957802,
+          "readMs": 8.15341600000022
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/human-engineering/human-engineering-narrated.mp4",
+          "count": 2,
+          "bytes": 85243890,
+          "readMs": 5.543625000000247
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/historical-media/174246ddb71176af3c23d2372ed2cc0019fd386421cb7e0c15fff2ee091cf29d/part-002.bin",
+          "count": 2,
+          "bytes": 75895624,
+          "readMs": 10.821415999999886
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/phantom-traffic-candidate-v1.mp4",
+          "count": 2,
+          "bytes": 53890898,
+          "readMs": 3.4052500000000236
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/billion-dollars/billion-dollars-narrated.mp4",
+          "count": 2,
+          "bytes": 38538534,
+          "readMs": 2.3862080000000105
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/delivery-packages/wood-frog-tiktok/tiktok-feed/video.mp4",
+          "count": 2,
+          "bytes": 37038420,
+          "readMs": 3.8343750000001364
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/wood-frog/wood-frog-narrated.mp4",
+          "count": 2,
+          "bytes": 36987646,
+          "readMs": 2.245624000000248
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/ocean-depth/ocean-depth-narrated.mp4",
+          "count": 2,
+          "bytes": 34898008,
+          "readMs": 2.043749999999818
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/delivery-packages/speed-of-light-tiktok/tiktok-feed/video.mp4",
+          "count": 2,
+          "bytes": 33631692,
+          "readMs": 2.3683759999997847
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/speed-of-light/speed-of-light-narrated.mp4",
+          "count": 2,
+          "bytes": 33482768,
+          "readMs": 2.5488339999999425
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/earth-to-stars.wav",
+          "count": 2,
+          "bytes": 16128088,
+          "readMs": 2.061583000000155
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/wood-frog.wav",
+          "count": 2,
+          "bytes": 14976088,
+          "readMs": 1.4213750000001255
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/billion-dollars.wav",
+          "count": 2,
+          "bytes": 13440088,
+          "readMs": 1.3998339999999416
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/phantom-traffic.wav",
+          "count": 2,
+          "bytes": 13120088,
+          "readMs": 1.8039589999998498
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/speed-of-light.wav",
+          "count": 2,
+          "bytes": 12672088,
+          "readMs": 1.7732079999998405
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/ocean-depth.wav",
+          "count": 2,
+          "bytes": 12288088,
+          "readMs": 1.4180830000000242
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/human-engineering.wav",
+          "count": 2,
+          "bytes": 11904088,
+          "readMs": 1.7284169999999222
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/longitude-clock-candidate-v1.mp4",
+          "count": 2,
+          "bytes": 8204088,
+          "readMs": 1.067916000000082
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/longitude-clock-candidate-v2.mp4",
+          "count": 2,
+          "bytes": 8145390,
+          "readMs": 0.5179579999997941
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/chocolate/tactile.wav",
+          "count": 2,
+          "bytes": 7648088,
+          "readMs": 1.1781669999999167
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/chocolate-crystal-choice-candidate-v1.mp4",
+          "count": 2,
+          "bytes": 5846758,
+          "readMs": 0.5691249999998718
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/longitude-clock/soundscape.wav",
+          "count": 2,
+          "bytes": 4643288,
+          "readMs": 0.5533330000004071
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/longitude-clock/v2/soundscape.wav",
+          "count": 2,
+          "bytes": 4512088,
+          "readMs": 0.3699589999999944
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/longitude-clock/auditions/bm_george.wav",
+          "count": 2,
+          "bytes": 3811288,
+          "readMs": 0.5092080000002852
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/longitude-clock/auditions/bf_emma.wav",
+          "count": 2,
+          "bytes": 3475288,
+          "readMs": 0.7747080000000324
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/public/audio/longitude-clock/auditions/bf_isabella.wav",
+          "count": 2,
+          "bytes": 3465688,
+          "readMs": 0.30600000000004
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/media-catalog.json",
+          "count": 2,
+          "bytes": 2913334,
+          "readMs": 0.8879999999996926
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/phantom-traffic-instagram-cover-v1.png",
+          "count": 2,
+          "bytes": 2712012,
+          "readMs": 0.19929299999978412
+        },
+        {
+          "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/covers/longitude-clock-instagram-cover-v1.png",
+          "count": 2,
+          "bytes": 2419186,
+          "readMs": 0.16775000000006912
+        }
+      ],
+      "uniquePaths": 8082
+    }
+  ]
+}

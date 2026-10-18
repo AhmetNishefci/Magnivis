@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-18T15:14:44.991Z",
+  "input": "artifacts/masters/anglerfish-fusion-cycle22-candidate-v2.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 47.4
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -22.8,
+    "maxVolumeDb": -2.6,
+    "duration": 47.445,
+    "sizeBytes": 36130630,
+    "bitRate": 6092212
+  },
+  "passed": true,
+  "failures": []
+}
