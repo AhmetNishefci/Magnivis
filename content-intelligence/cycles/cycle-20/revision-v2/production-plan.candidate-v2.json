@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.self-tickle.v2",
+  "revision": 2,
+  "status": "rendered-candidate-visual-review-required",
+  "knowledgePackage": {
+    "id": "self-tickle",
+    "revision": 1,
+    "sha256": "caa0e6a4641fb36e51907be775807cd473324d94e7edd306ce936c2a59bba56b"
+  },
+  "contentAsset": {
+    "id": "self-tickle.asset.perception",
+    "revision": 1,
+    "sha256": "489d3fa8c111edc3cac13e900f1c3e5d3e8ee39046d89d8559fec6e1b4af0c93"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.20",
+    "reviewSha256": "7e1196c4278d0558e0bfe12ffb3025d15d37c5bc5a8bd6615bea9b79d92b66ea"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/youtube.json",
+      "sha256": "c6993779783929513942b32a75b64f41d7159fca6d073d7758e51a48bb7373d9"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/tiktok.json",
+      "sha256": "af226fbb043bdd961e612469b991cd0237d5adae7e2723d156eb69b3d3ada6f2"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/instagram.json",
+      "sha256": "e85e2b7bf53454da23abecdce30fe77feebadc49cb452e4b63b44768ccbfa5dc"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/facebook.json",
+      "sha256": "b2fa17c75d5049317565bc0818c2d8401bd9b3f7746ec81b1f8ded6c7fe56891"
+    }
+  ],
+  "approvedScriptSha256": "9e86ca595878bf48d13741445eebd3faf432271b338b0b4d3e80ce8c391dc474",
+  "creativeDirection": {
+    "id": "creative-direction.self-tickle.v1",
+    "revision": 2,
+    "sha256": "fc0fc2e991a98fb65858ace760f5ed286a0033f9bd4c8628086cb93b7f0e75ca"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 49.233333333333334
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "self-tickle.production.1",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.1",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.1",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.1"
+      ],
+      "claimIds": [
+        "self-tickle.claim.contrast"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 120
+      },
+      "sceneType": "external-self-contrast",
+      "objective": "Immediate macro of external fingers touching ribs, sculpted faceless person recoils; match into visibly connected self-hand with much smaller reaction. No laughter recording or clinical demonstration.",
+      "onScreenText": [],
+      "animationIntent": "Close cropped ribs: external fingertips approach, contact and modest withdrawal; same-person connected self-arm contrasts within4seconds.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.2",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.2",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.2",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.2"
+      ],
+      "claimIds": [
+        "self-tickle.claim.contrast",
+        "self-tickle.claim.prediction"
+      ],
+      "frames": {
+        "start": 120,
+        "end": 234
+      },
+      "sceneType": "contact-remains",
+      "objective": "Two same-material skin surfaces indent under touch; keep sensation motif visible in both; no absence of sensory input.",
+      "onScreenText": [],
+      "animationIntent": "Macro hand and skin contact, input remains physically present.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.3",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.3",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.3",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.3"
+      ],
+      "claimIds": [
+        "self-tickle.claim.prediction"
+      ],
+      "frames": {
+        "start": 234,
+        "end": 390
+      },
+      "sceneType": "movement-prediction",
+      "objective": "Camera opens from the self-hand into an abstract prediction model: intended movement branches to anticipated contact and hand action, then actual tactile feedback enters. Conceptual model, not anatomical pathway.",
+      "onScreenText": [],
+      "animationIntent": "Moving hand approaches; conceptual future-contact impression and ghost hand precede actual hand arrival, then nonzero response.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.4",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.4",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.4",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.4"
+      ],
+      "claimIds": [
+        "self-tickle.claim.weaker"
+      ],
+      "frames": {
+        "start": 390,
+        "end": 541
+      },
+      "sceneType": "nonzero-attenuation",
+      "objective": "Expected and actual contact motifs align, then a smaller but nonzero felt-touch motif emerges. Illustrative magnitude only, no calibrated neural signal.",
+      "onScreenText": [],
+      "animationIntent": "Retain established contact and forecast; camera eases to emphasize smaller nonzero sensation, no branch diagram.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.5",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.5",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.5",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.5"
+      ],
+      "claimIds": [
+        "self-tickle.claim.experiment"
+      ],
+      "frames": {
+        "start": 541,
+        "end": 706
+      },
+      "sceneType": "matched-touch",
+      "objective": "Same original palm and soft probe; self-produced and external condition shown in matched scale with different subjective sensation motifs. No laughter implied.",
+      "onScreenText": [],
+      "animationIntent": "Two matched macro touches; same physical contact with different qualitative subjective response motifs.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.6",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.6",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.6",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.6"
+      ],
+      "claimIds": [
+        "self-tickle.claim.delay"
+      ],
+      "frames": {
+        "start": 706,
+        "end": 841
+      },
+      "sceneType": "robot-delay",
+      "objective": "Original simplified robot control and forearm probe: hand moves a stylus first, probe follows later; expected and actual contact motifs separate in time. Motion expanded, no exact apparatus reproduction.",
+      "onScreenText": [],
+      "animationIntent": "One controller/follower apparatus: immediate synchronous pass, then controller moves and holds while probe visibly waits before touching.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.7",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.7",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.7",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.7"
+      ],
+      "claimIds": [
+        "self-tickle.claim.experiment",
+        "self-tickle.claim.delay",
+        "self-tickle.claim.light"
+      ],
+      "frames": {
+        "start": 841,
+        "end": 977
+      },
+      "sceneType": "two-tickles",
+      "objective": "Pull back from robot light touch to same person at ribs, side-by-side light brushing and stronger tickle; no transition suggesting measured laughter from robot.",
+      "onScreenText": [],
+      "animationIntent": "Feather-like light sensation changes to close rib interaction, distinguishing light tickle from laughter-associated tickle.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.8",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.8",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.8",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.8"
+      ],
+      "claimIds": [
+        "self-tickle.claim.light",
+        "self-tickle.claim.limits"
+      ],
+      "frames": {
+        "start": 977,
+        "end": 1205
+      },
+      "sceneType": "individual-variation",
+      "objective": "A light self-brush remains visibly felt; three sculpted figures show different external tickle reactions. Individual/context differences illustrated, not study-derived categories.",
+      "onScreenText": [],
+      "animationIntent": "Large light touch and qualitative response variation; no fixed classes or population measurements.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.9",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.9",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.9",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.9"
+      ],
+      "claimIds": [
+        "self-tickle.claim.limits"
+      ],
+      "frames": {
+        "start": 1205,
+        "end": 1321
+      },
+      "sceneType": "qualified-clue",
+      "objective": "Return to self and external contrast, show prediction as one contributing strand with open space instead of a complete circuit. No claim social anticipation alone explains laughter.",
+      "onScreenText": [],
+      "animationIntent": "Return to the original connected self-arm with prediction clearly qualified as one clue.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    },
+    {
+      "id": "self-tickle.production.10",
+      "sourceVisualPlanId": "self-tickle.asset.perception.visual.10",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.10",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.10"
+      ],
+      "claimIds": [
+        "self-tickle.claim.prediction"
+      ],
+      "frames": {
+        "start": 1321,
+        "end": 1477
+      },
+      "sceneType": "anticipated-contact",
+      "objective": "Return to original self-hand; translucent anticipated contact precedes physical arrival, actual touch persists. One concise illustrated reframe with no CTA.",
+      "onScreenText": [],
+      "animationIntent": "Same opening interaction: future-contact impression visible before own fingertips arrive; actual touch and nonzero response resolve opening.",
+      "transitionIntent": "Preserve physical identity and change scale/view only to reveal the next causal or evidential development.",
+      "audioIntent": "Exact measured af_heart; original restrained texture under speech."
+    }
+  ],
+  "assets": [
+    {
+      "id": "self-tickle.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code",
+        "rights": "Project-owned",
+        "notes": "Original cinematic macro-contact and robot artwork, illustrative rather than measured anatomy or neural recordings.",
+        "evidence": "content-intelligence/cycles/cycle-20/revision-v2/rights-provenance.json"
+      }
+    },
+    {
+      "id": "self-tickle.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource packages",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing Manrope and Space Grotesk",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "self-tickle.narration",
+      "kind": "audio",
+      "path": "public/audio/self-tickle/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact evidence-locked wording",
+        "evidence": "src/production/narration/self-tickle.json"
+      }
+    },
+    {
+      "id": "self-tickle.soundscape",
+      "kind": "audio",
+      "path": "public/audio/self-tickle/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesized sound",
+        "rights": "Project-owned",
+        "notes": "Original tactile accents and airy model transitions; no samples.",
+        "evidence": "content-intelligence/cycles/cycle-20/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/self-tickle.en.vtt",
+    "captionPlanId": "caption-plan.self-tickle.v2",
+    "captionPlanRevision": 2,
+    "captionPlanSha256": "53e071a1bc970877582931e8bbf9c814e89b869d121c5d590a8175465e2ca90a",
+    "generatorId": "generator.self-tickle-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "Preserve exactV1 science/script/narration/timing and allV1 artifacts.",
+    "No distant mannequin or static branch diagram; macro physical action carries explanation.",
+    "Forecast precedes actual contact; sensation remains nonzero.",
+    "Robot immediate and delayed passes visually distinct.",
+    "Opening and ending same physical contact experiment; owner creative review pending."
+  ]
+}

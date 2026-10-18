@@ -1,0 +1,387 @@
+{
+  "id": "self-tickle.asset.perception",
+  "revision": 1,
+  "knowledgePackageId": "self-tickle",
+  "assetType": "short-form-video",
+  "editorialPurpose": "Understand motor-related prediction and weaker self-touch, while distinguishing light ticklishness from incompletely explained tickle laughter.",
+  "storyAngle": "Motor prediction helps explain weaker self-touch, while the laughter question remains incompletely solved.",
+  "hookId": "self-tickle.hook.try",
+  "selectedClaimIds": [
+    "self-tickle.claim.contrast",
+    "self-tickle.claim.prediction",
+    "self-tickle.claim.weaker",
+    "self-tickle.claim.experiment",
+    "self-tickle.claim.delay",
+    "self-tickle.claim.light",
+    "self-tickle.claim.limits"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 40,
+    "maximum": 50
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "self-tickle.asset.perception.script.1",
+        "type": "factual",
+        "text": "Why can their fingers make you laugh, but yours usually can't?",
+        "claimIds": [
+          "self-tickle.claim.contrast"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.2",
+        "type": "factual",
+        "text": "Both touch your skin. One important clue is prediction.",
+        "claimIds": [
+          "self-tickle.claim.contrast",
+          "self-tickle.claim.prediction"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.3",
+        "type": "factual",
+        "text": "When you move your hand, your nervous system can anticipate the touch it will produce.",
+        "claimIds": [
+          "self-tickle.claim.prediction"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.4",
+        "type": "factual",
+        "text": "That touch can feel weaker. Scientists call this sensory attenuation.",
+        "claimIds": [
+          "self-tickle.claim.weaker"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.5",
+        "type": "factual",
+        "text": "In experiments, self-produced touch felt less ticklish than matching external touch.",
+        "claimIds": [
+          "self-tickle.claim.experiment"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.6",
+        "type": "factual",
+        "text": "Adding a delay to a robotic self-touch made it feel more ticklish.",
+        "claimIds": [
+          "self-tickle.claim.delay"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.7",
+        "type": "factual",
+        "text": "But those experiments used light touch, not full-on tickle laughter.",
+        "claimIds": [
+          "self-tickle.claim.experiment",
+          "self-tickle.claim.delay",
+          "self-tickle.claim.light"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.8",
+        "type": "factual",
+        "text": "You can give yourself a light, tickly sensation. Laughter-inducing tickling is harder to explain, and people differ.",
+        "claimIds": [
+          "self-tickle.claim.light",
+          "self-tickle.claim.limits"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.9",
+        "type": "factual",
+        "text": "Prediction is an important clue, not the whole answer.",
+        "claimIds": [
+          "self-tickle.claim.limits"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.script.10",
+        "type": "factual",
+        "text": "Your nervous system doesn't just receive touch. It can anticipate your own.",
+        "claimIds": [
+          "self-tickle.claim.prediction"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "self-tickle.asset.perception.beat.1",
+      "label": "Their hand. Your hand.",
+      "purpose": "Immediate macro of external fingers touching ribs, sculpted faceless person recoils; match into visibly connected self-hand with much smaller reaction. No laughter recording or clinical demonstration.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.1"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.2",
+      "label": "Touch remains",
+      "purpose": "Two same-material skin surfaces indent under touch; keep sensation motif visible in both; no absence of sensory input.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.2"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.3",
+      "label": "Movement has consequences",
+      "purpose": "Camera opens from the self-hand into an abstract prediction model: intended movement branches to anticipated contact and hand action, then actual tactile feedback enters. Conceptual model, not anatomical pathway.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.3"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.4",
+      "label": "Reduced, not erased",
+      "purpose": "Expected and actual contact motifs align, then a smaller but nonzero felt-touch motif emerges. Illustrative magnitude only, no calibrated neural signal.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.4"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.5",
+      "label": "Matched touch",
+      "purpose": "Same original palm and soft probe; self-produced and external condition shown in matched scale with different subjective sensation motifs. No laughter implied.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.5"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.6",
+      "label": "Delay breaks the match",
+      "purpose": "Original simplified robot control and forearm probe: hand moves a stylus first, probe follows later; expected and actual contact motifs separate in time. Motion expanded, no exact apparatus reproduction.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.6"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.7",
+      "label": "The crucial distinction",
+      "purpose": "Pull back from robot light touch to same person at ribs, side-by-side light brushing and stronger tickle; no transition suggesting measured laughter from robot.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.7"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.8",
+      "label": "Different experiences",
+      "purpose": "A light self-brush remains visibly felt; three sculpted figures show different external tickle reactions. Individual/context differences illustrated, not study-derived categories.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.8"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.9",
+      "label": "An incomplete explanation",
+      "purpose": "Return to self and external contrast, show prediction as one contributing strand with open space instead of a complete circuit. No claim social anticipation alone explains laughter.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.9"
+      ]
+    },
+    {
+      "id": "self-tickle.asset.perception.beat.10",
+      "label": "See it coming",
+      "purpose": "Return to original self-hand; translucent anticipated contact precedes physical arrival, actual touch persists. One concise illustrated reframe with no CTA.",
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.10"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "self-tickle.asset.perception.visual.1",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.1",
+      "objective": "Immediate macro of external fingers touching ribs, sculpted faceless person recoils; match into visibly connected self-hand with much smaller reaction. No laughter recording or clinical demonstration.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.1"
+      ],
+      "claimIds": [
+        "self-tickle.claim.contrast"
+      ],
+      "notes": "Their hand. Your hand.; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.2",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.2",
+      "objective": "Two same-material skin surfaces indent under touch; keep sensation motif visible in both; no absence of sensory input.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.2"
+      ],
+      "claimIds": [
+        "self-tickle.claim.contrast",
+        "self-tickle.claim.prediction"
+      ],
+      "notes": "Touch remains; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.3",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.3",
+      "objective": "Camera opens from the self-hand into an abstract prediction model: intended movement branches to anticipated contact and hand action, then actual tactile feedback enters. Conceptual model, not anatomical pathway.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.3"
+      ],
+      "claimIds": [
+        "self-tickle.claim.prediction"
+      ],
+      "notes": "Movement has consequences; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.4",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.4",
+      "objective": "Expected and actual contact motifs align, then a smaller but nonzero felt-touch motif emerges. Illustrative magnitude only, no calibrated neural signal.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.4"
+      ],
+      "claimIds": [
+        "self-tickle.claim.weaker"
+      ],
+      "notes": "Reduced, not erased; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.5",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.5",
+      "objective": "Same original palm and soft probe; self-produced and external condition shown in matched scale with different subjective sensation motifs. No laughter implied.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.5"
+      ],
+      "claimIds": [
+        "self-tickle.claim.experiment"
+      ],
+      "notes": "Matched touch; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.6",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.6",
+      "objective": "Original simplified robot control and forearm probe: hand moves a stylus first, probe follows later; expected and actual contact motifs separate in time. Motion expanded, no exact apparatus reproduction.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.6"
+      ],
+      "claimIds": [
+        "self-tickle.claim.delay"
+      ],
+      "notes": "Delay breaks the match; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.7",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.7",
+      "objective": "Pull back from robot light touch to same person at ribs, side-by-side light brushing and stronger tickle; no transition suggesting measured laughter from robot.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.7"
+      ],
+      "claimIds": [
+        "self-tickle.claim.experiment",
+        "self-tickle.claim.delay",
+        "self-tickle.claim.light"
+      ],
+      "notes": "The crucial distinction; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.8",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.8",
+      "objective": "A light self-brush remains visibly felt; three sculpted figures show different external tickle reactions. Individual/context differences illustrated, not study-derived categories.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.8"
+      ],
+      "claimIds": [
+        "self-tickle.claim.light",
+        "self-tickle.claim.limits"
+      ],
+      "notes": "Different experiences; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.9",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.9",
+      "objective": "Return to self and external contrast, show prediction as one contributing strand with open space instead of a complete circuit. No claim social anticipation alone explains laughter.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.9"
+      ],
+      "claimIds": [
+        "self-tickle.claim.limits"
+      ],
+      "notes": "An incomplete explanation; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    },
+    {
+      "id": "self-tickle.asset.perception.visual.10",
+      "narrativeBeatId": "self-tickle.asset.perception.beat.10",
+      "objective": "Return to original self-hand; translucent anticipated contact precedes physical arrival, actual touch persists. One concise illustrated reframe with no CTA.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+      ],
+      "scriptSegmentIds": [
+        "self-tickle.asset.perception.script.10"
+      ],
+      "claimIds": [
+        "self-tickle.claim.prediction"
+      ],
+      "notes": "See it coming; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Local Kokoro af_heart, curious precise delivery, speed1.",
+    "pronunciationNotes": [
+      "sensory attenuation /əˌtɛnjuˈeɪʃən/; robotic; self-produced. Inspect full-unit phonemes, source/master signal and approximate phrase synchronization."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal evidence review, not owner scientific approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.20",
+      "reviewSha256": "7e1196c4278d0558e0bfe12ffb3025d15d37c5bc5a8bd6615bea9b79d92b66ea"
+    },
+    "approvedAt": "2026-10-17",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

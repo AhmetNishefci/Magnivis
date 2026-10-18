@@ -46,6 +46,8 @@ Assess these questions with concrete scene/time references, not a score or a bla
 
 Revise clear actionable weaknesses internally before handoff. Verify the changed stretches and their effect on the complete sequence. Stop when remaining refinements offer no material benefit or are subjective/unresolved; do not run an endless perfection loop. Escalate material trade-offs, factual uncertainty and unresolved consequential weaknesses honestly. Record remaining weaknesses, actions taken, reasons for retained choices, coverage and audio/device limitations. Internal judgment never impersonates owner approval or self-certifies excellence.
 
+When a direction promises an anticipation, contact, delayed response or resolved opening, inspect decoded states before, at and after that event. Check the visible physical correspondence as well as its labels: a hovering control hand, premature contact effect or unchanged explanatory layout can defeat the promised mechanism even when caption and canvas checks pass. Record the actual sequence and any correction in the current cycle evidence; do not turn one story's treatment into a mandatory style.
+
 At the next production, the entry-point instruction above brings relevant correction evidence into planning automatically through normal session work. Detect recurrence by comparing the rendered sequence with those specific lessons and the selected direction. Geometry, decode, source/caption identity and evidence presence can be automated; curiosity, purposeful motion, repetition, explanatory adequacy and worth watching require accountable editorial judgment. No automated quality guarantee is made.
 
 ## Wood Frog V1

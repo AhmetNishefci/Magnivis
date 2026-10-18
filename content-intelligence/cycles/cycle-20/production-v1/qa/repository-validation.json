@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-17T21:16:25.976010Z",
+  "masterSha256": "02845d2ca37483b65348b1a422fc92bf710d6b88d28e156574fe2749471c89c5",
+  "node": "22.23.3",
+  "pnpmCheck": {
+    "command": "pnpm check",
+    "exitCode": 1,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testsPassed": 513,
+    "testsTotal": 514,
+    "failure": "Unchanged5000ms artifact preservation/durability test timeout; idle default run measured5107ms. All assertions subsequently pass in complete one-worker suite.",
+    "rawLog": "content-intelligence/cycles/cycle-20/production-v1/qa/repository-check-idle.txt"
+  },
+  "fullTestSuite": {
+    "command": "pnpm exec vitest run --maxWorkers=1",
+    "exitCode": 0,
+    "testFilesPassed": 55,
+    "testsPassed": 514,
+    "testsTotal": 514,
+    "durationSeconds": 92.95,
+    "assertionsOrTimeoutsModified": false,
+    "rawLog": "content-intelligence/cycles/cycle-20/production-v1/qa/repository-tests-idle-single-worker.txt"
+  },
+  "postFormattingTypecheck": "passed",
+  "postFormattingLint": "passed",
+  "formattingScope": "One source blank-line trailing space removed; exact as-rendered source retained with explicit reconciliation, no code-token/media change. Two unbound test logs normalized only at EOF.",
+  "durability": {
+    "command": "pnpm artifacts:durable",
+    "exitCode": 0,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 1390,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "fullReport": "content-intelligence/cycles/cycle-20/production-v1/qa/durability.json"
+  },
+  "render": "complete1477frames",
+  "strictDecode": "passed",
+  "mediaQa": {
+    "command": "pnpm qa self-tickle",
+    "passed": true
+  },
+  "browserQa": {
+    "passed": true,
+    "checkpoints": 96,
+    "captionMidpoints": 33
+  },
+  "cycleReplay": "passed, stage master-review revision9;28 exact as-rendered source/QA bindings",
+  "gitDiffCheck": "passed for both staged and unstaged changes",
+  "subjectiveAudioPlayback": "not performed; owner pending",
+  "actualDeviceNativeUiQa": "not performed; owner pending",
+  "masterOwnerApproved": false,
+  "publicationAuthorized": false
+}

@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-17T21:04:29.977Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/self-tickle-render-v1.mp4",
+    "sha256": "7b9a7fcdfc4cd08275c848f49786ea8598e1f6e746c4a65f295cdfae7773c961",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/self-tickle-cycle20-candidate-v1.mp4",
+    "sha256": "3dfa0f9d221738da226d1af07f8696542fbcdd3a96e60b9bd17baa3fa53137fa"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.63",
+    "input_tp": "-5.72",
+    "input_lra": "3.70",
+    "input_thresh": "-33.02",
+    "output_i": "-19.11",
+    "output_tp": "-2.54",
+    "output_lra": "2.70",
+    "output_thresh": "-29.96",
+    "normalization_type": "dynamic",
+    "target_offset": "0.11"
+  },
+  "gainDb": 3.5199999999999996,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

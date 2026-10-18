@@ -1,0 +1,81 @@
+{
+  "enteredAt": "2026-10-17T23:31:04.658Z",
+  "sourceBaseCommit": "7a013e566f73b723cf354c0f11202468e7a368a7",
+  "workingTree": "Exact uncommitted implementation files bound here; base commit alone does not contain Cycle20.",
+  "files": [
+    {
+      "path": "src/components/self-tickle/TactileFilm.tsx",
+      "sha256": "ba42dba8f5bedff8d42c39fec60d0a93505d7417be6dbab25779c98ee664c721"
+    },
+    {
+      "path": "src/compositions/SelfTickleV2.tsx",
+      "sha256": "e7a3b509ea701cbfbae1559774150611a033ed25a99a62f8fc434889616c2ca2"
+    },
+    {
+      "path": "src/self-tickle-v2-index.tsx",
+      "sha256": "0461b4375c6704f30afa5863d81ed3fef098e798bc72ee19c4ecdc4dfdfdaac8"
+    },
+    {
+      "path": "src/content/videos/self-tickle-v2.ts",
+      "sha256": "6ec0408ce724a0519d4b117b46abe9f0588c1e3c5f42cdbef13c3d3f33c11d3f"
+    },
+    {
+      "path": "src/production/plans/self-tickle-v2.json",
+      "sha256": "e27817c0e0e0bfcbbc9751da1821888978375ecd9c9b819266a6cc401addd363"
+    },
+    {
+      "path": "src/captions/plans/self-tickle-v2.json",
+      "sha256": "ab8338c134da82f8536574a15c2f1bb49f4927cec184e3a27d2d83da11f36c94"
+    },
+    {
+      "path": "src/production/narration/self-tickle.json",
+      "sha256": "32de473426f0f6d94fa9c0bc03f85a36666656abf0d906a53bedf3da1883be7f"
+    },
+    {
+      "path": "scripts/prepare-tickle-v2-revision.ts",
+      "sha256": "1c9d149fbd7c1cf8d2cf065ff007df0c41f61a475d3908cb8d98b44287633163"
+    },
+    {
+      "path": "scripts/tickle-v2-video-target.ts",
+      "sha256": "f40bbb429073ca6235ca2fbdb8594f725f4d6035f94e5959e883bc77d21a9092"
+    },
+    {
+      "path": "scripts/render-tickle-v2.ts",
+      "sha256": "f89780f62de4ef0a86ff675dd7e542ea3746b9783c28c367f68104d36fb15962"
+    },
+    {
+      "path": "scripts/qa-tickle-v2-layout.ts",
+      "sha256": "07c4ccbaf07c7a5a9f78cf6b9374901ee49186b4104578868f2dee54a0c29a18"
+    },
+    {
+      "path": "scripts/prepare-tickle-v2-qa-sheets.ts",
+      "sha256": "1b03f20415c5544c68b081c47ac6e5e89a98803908bd976e057b66a437237a1b"
+    },
+    {
+      "path": "scripts/inspect-tickle-v2-audio.mjs",
+      "sha256": "ecaae416cc0169fd8e77ffbb9671d8993e09dce00f30ec2798112c6f7d05e74a"
+    },
+    {
+      "path": "scripts/finalize-tickle-v2.ts",
+      "sha256": "ef915b861c73547606065c60bc854c7dfed4fe5742d1ec4479754daf03c5f753"
+    },
+    {
+      "path": "scripts/resolve-qa-video-target.ts",
+      "sha256": "5c7164b7daa667323b386f0c3a93ba30c9ed0e0c75e8466913bfa8c797ffc606"
+    }
+  ],
+  "scriptSha256": "9e86ca595878bf48d13741445eebd3faf432271b338b0b4d3e80ce8c391dc474",
+  "authority": {
+    "path": "content-intelligence/cycles/cycle-20/revision-v2/owner-master-revision.json",
+    "sha256": "cfb55a6431f9ccd9b81508383510d8216904e5fa80644320fcfcbe3fdc94d2ec"
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-20/revision-v2/direction-v2.json",
+    "sha256": "f700d90a4274d8991e2e00bce2c0a7dbe0902fe7357e79a0e135d747da179ed3"
+  },
+  "corrections": {
+    "path": "content-intelligence/cycles/cycle-20/revision-v2/rendered-corrections.json",
+    "sha256": "affb3e1221c8a921c2cc89b8cd601377f7548d2a096eeec5a5fe6dfb6bbc28b5"
+  },
+  "note": "Focused V2 tactile film. ExactV1 audio, source takes, timeline and caption phrase timings preserved. No V1/source/QA binding is rewritten; temporary authoring exports unselected."
+}

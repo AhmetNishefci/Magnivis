@@ -1,0 +1,13 @@
+{
+  "enteredAt": "2026-10-17T21:09:54.025689Z",
+  "issue": "Original registration completed immutable media, sheets and final QA; provisional preflight rejected valid ISO +00:00 timestamp because schema requires terminal Z. No production-complete event had been written.",
+  "resolution": "Resume from existing immutable records, normalize inspectedAt with Date.toISOString only at presentation-evidence serialization; preserve original review, source script, bindings and QA. No media changed.",
+  "continuation": {
+    "path": "scripts/complete-tickle-registration.ts",
+    "sha256": "f2bc3c09ebaed73ca9339ee5e6c2ec5429f4dbd5cefabc6a372cd4ef07abf781"
+  },
+  "masterSha256": "02845d2ca37483b65348b1a422fc92bf710d6b88d28e156574fe2749471c89c5",
+  "ownerApproval": false,
+  "executedContinuationSha256": "2a9953a626e2ae70876791ee2c4366c9c3919bf27fa357da0522543c3779a6ee",
+  "postExecutionLintCorrection": "Removed unused base-commit variable/import only; executed hash retained. No render, evidence or event change."
+}

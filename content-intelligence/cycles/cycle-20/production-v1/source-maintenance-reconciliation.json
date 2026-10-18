@@ -1,0 +1,17 @@
+{
+  "enteredAt": "2026-10-17T21:15:37.726451Z",
+  "reason": "Final staged diff check found one whitespace-only blank line after the V1 receipt was retained. Remove trailing space from active source, preserving exact as-rendered source bytes instead of rewriting accepted bindings.",
+  "renderedSourcePath": "src/components/self-tickle/TouchWorld.tsx",
+  "renderedSourceSha256": "72048bb38c934ef6ba64c3096bc94fe3d1c4d9d8561974d9ec4b6cbe76ad2246",
+  "retainedAsRenderedSource": {
+    "path": "content-intelligence/cycles/cycle-20/production-v1/source-snapshots/TouchWorld.as-rendered.source.json",
+    "sha256": "d202d38515e2e15e5fd6c8aa71d3faae79a8ad8abd43b94155c43b53d0040256",
+    "encoding": "JSON content field; UTF-8 bytes recover exact original source",
+    "decodedSourceSha256": "72048bb38c934ef6ba64c3096bc94fe3d1c4d9d8561974d9ec4b6cbe76ad2246"
+  },
+  "currentSourceSha256": "8d02c3c8a98e4050a1fe363cefe2a74c91147d66c57a95436bf278c3ea51763e",
+  "transformation": "Remove trailing ASCII spaces/tabs per line only; token byte sequences compared equal. No visual, code-token, script, timing, caption, audio or media change.",
+  "candidateAndHistoricalBindingsUnchanged": true,
+  "rerenderRequired": false,
+  "masterSha256": "02845d2ca37483b65348b1a422fc92bf710d6b88d28e156574fe2749471c89c5"
+}

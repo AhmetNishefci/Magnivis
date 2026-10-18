@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-17T23:35:28.221034Z",
+  "masterSha256": "8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac",
+  "pnpmCheck": {
+    "exitCode": 1,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 55,
+    "passedTests": 513,
+    "failedTests": 1,
+    "failure": "tests/media-artifacts.test.ts historical preservation/durability check took5.366s against unchanged5000ms test timeout. Same limitation recorded at V1.",
+    "report": "content-intelligence/cycles/cycle-20/revision-v2/qa/repository-check.log"
+  },
+  "singleWorkerFullSuite": {
+    "command": "pnpm exec vitest run --maxWorkers=1",
+    "exitCode": 0,
+    "testFiles": 55,
+    "passedTests": 514,
+    "failedTests": 0,
+    "durationSeconds": 97.32,
+    "report": "content-intelligence/cycles/cycle-20/revision-v2/qa/vitest-single-worker.log",
+    "assertionsAndTimeoutsUnchanged": true
+  },
+  "durability": {
+    "exitCode": 0,
+    "passed": true,
+    "canonicalMedia": {
+      "passed": true,
+      "canonicalPayloads": 1405,
+      "historicalRetentions": 1,
+      "archivalParts": 2,
+      "explicitExceptions": 0,
+      "frozenLegacyBinaryPaths": 442
+    },
+    "durableArtifactCount": 731,
+    "report": "content-intelligence/cycles/cycle-20/revision-v2/qa/durability.json"
+  },
+  "exactMediaQa": {
+    "technical": "passed",
+    "fullVideoAudioDecode": "passed",
+    "captions": 33,
+    "browserCheckpoints": 119,
+    "geometryFailures": 0,
+    "semantics": {
+      "predictionBeforeContact": true,
+      "predictionThenContact": true,
+      "endingForecastBeforeContact": true,
+      "endingThenContact": true,
+      "robotImmediateMatches": true,
+      "robotVisibleWait": true,
+      "robotEventuallyTouches": true
+    },
+    "audioIdentity": "Exact V1 AAC packets and decoded PCM retained",
+    "decodedReviewSheets": 14
+  },
+  "nativeReplay": {
+    "stage": "master-review",
+    "revision": 14,
+    "report": "content-intelligence/cycles/cycle-20/revision-v2/qa/native-status.json"
+  },
+  "git": {
+    "branch": "content/cycle-11-discovery",
+    "head": "7a013e566f73b723cf354c0f11202468e7a368a7",
+    "stagedAndUnstagedWhitespace": "passed; final checked again after staging handoff",
+    "commitPushBranchWorktreeActions": []
+  },
+  "rawLogNormalization": "Final empty lines trimmed to one newline for repository whitespace hygiene; diagnostic content unchanged.",
+  "humanReviewLimits": [
+    "No continuous audiovisual playback/listening",
+    "No real-device/native-app test",
+    "Creative master approval pending owner"
+  ]
+}

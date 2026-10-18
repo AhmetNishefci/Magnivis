@@ -1,0 +1,111 @@
+{
+  "completedAt": "2026-10-18T00:06:29.028384+00:00",
+  "passedWithKnownRepositoryTimingLimitation": true,
+  "initialAudit": {
+    "paths": 297,
+    "cataloguedMedia": 39,
+    "json": 195,
+    "documentationEvidence": 32,
+    "implementation": 31,
+    "scopeAndIntegrityPassed": true
+  },
+  "repositoryCheck": {
+    "command": "pnpm check",
+    "exitCode": 1,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testsPassed": 513,
+    "testsFailed": 1,
+    "testFilesPassed": 54,
+    "testFilesFailed": 1,
+    "durationSeconds": 60.27,
+    "failure": "Existing tests/media-artifacts.test.ts full-catalog preservation/durability test exceeded unchanged5000ms timeout (5608ms).",
+    "singleWorkerCommand": "pnpm exec vitest run --maxWorkers=1",
+    "singleWorkerExitCode": 0,
+    "singleWorkerTestsPassed": 514,
+    "singleWorkerTestFilesPassed": 55,
+    "singleWorkerDurationSeconds": 98.35,
+    "testsAssertionsTimeoutsConfigurationUnchanged": true,
+    "diffCheck": "passed; final index check repeated before commit"
+  },
+  "durability": {
+    "passed": true,
+    "canonicalPayloads": 1406,
+    "durableArchives": 731,
+    "frozenLegacyBinaryPaths": 442,
+    "historicalMissingExpectations": [
+      {
+        "artifactId": "wood-frog.historical-master",
+        "sha256": "4c5354d9368908f11f5f9b5767371694c2e51ad895786b2c31f7e329b83eaac2"
+      }
+    ],
+    "launcherNote": "Sandbox tsx IPC launch denied EPERM; identical pnpm artifacts:durable rerun outside sandbox passed."
+  },
+  "delivery": {
+    "packages": 4,
+    "inspectionPassed": true,
+    "byteLookupsPassed": 4,
+    "stateUnchanged": "prepared",
+    "unknownsUnchanged": 48,
+    "nativeDeviceVerification": false
+  },
+  "media": {
+    "masterPath": "artifacts/masters/self-tickle-cycle20-candidate-v2.mp4",
+    "sha256": "8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac",
+    "unchanged": true,
+    "qaPassed": true,
+    "strictFullDecodePassed": true,
+    "captionCues": 33,
+    "coverPixelIdentityPassed": true,
+    "browserGeometryCheckpoints": 119,
+    "browserGeometryFailures": 0,
+    "newRender": false
+  },
+  "nativeJournal": {
+    "replayPassed": true,
+    "stage": "publication-review",
+    "revision": 17,
+    "eventsAndStateUnchanged": true,
+    "publicationDecision": null,
+    "schedulingEvidence": "workflow/cycles/cycle.20/scheduling-evidence-v1.json"
+  },
+  "scheduling": {
+    "status": "OWNER-REPORTED SCHEDULED",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "facebook"
+    ],
+    "scheduledFor": "2026-10-20T20:00:00+02:00",
+    "timeZone": "Europe/Belgrade",
+    "scheduledForUtc": "2026-10-20T18:00:00Z",
+    "publication": "unknown",
+    "independentPlatformVerification": false,
+    "assistantPlatformActions": []
+  },
+  "preservation": {
+    "originalStagedFilesPreserved": 295,
+    "allowedCurrentIndexUpdates": [
+      "docs/PROJECT-STATE.md",
+      "workflow/project-state.json"
+    ],
+    "catalogRowsUnchanged": 1406,
+    "priorCycleChanges": false,
+    "approvedMediaAndPackagesChanged": false
+  },
+  "limits": [
+    "Default parallel test timing failure remains; full unchanged single-worker suite and independent durability pass.",
+    "Local sampled visual/geometry inspection does not certify creative quality, continuous listening or real-device/native-platform safety.",
+    "48 prior presentation unknowns remain; no risk acceptance or exact-release native authorization inferred.",
+    "Historical Wood Frog original missing expectation remains unchanged.",
+    "Actual publication, live settings, uploaded bytes and public identities unknown."
+  ],
+  "git": {
+    "authorizedBy": "content-intelligence/operations/self-tickle-scheduling-v1/owner-instruction.md",
+    "branch": "content/cycle-11-discovery",
+    "preCommitHead": "7a013e566f73b723cf354c0f11202468e7a368a7",
+    "remoteHeadBeforeCommit": "7a013e566f73b723cf354c0f11202468e7a368a7",
+    "commitPush": "To be executed only after final staging checks; final SHA and remote equality reported in handoff."
+  }
+}

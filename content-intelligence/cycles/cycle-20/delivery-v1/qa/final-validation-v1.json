@@ -1,0 +1,90 @@
+{
+  "passedWithKnownRepositoryTimingLimitation": true,
+  "completedAt": "2026-10-17T23:49:24.991109Z",
+  "master": {
+    "path": "artifacts/masters/self-tickle-cycle20-candidate-v2.mp4",
+    "sha256": "8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac",
+    "unchanged": true,
+    "reencoded": false
+  },
+  "approval": "Exact V2 approved by explicitly delegated creative director; delivery preparation authorized; noV3 required. No separate device/listening or cover selection/risk acceptance inferred.",
+  "repositoryCheck": {
+    "command": "pnpm check",
+    "exitCode": 1,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 55,
+    "passedTests": 513,
+    "failedTests": 1,
+    "failure": "Historical artifact preservation/durability test exceeded unchanged5000ms timeout (5485ms). Same known timing limitation recorded at V1/V2.",
+    "singleWorkerCommand": "pnpm exec vitest run --maxWorkers=1",
+    "singleWorkerExitCode": 0,
+    "singleWorkerTestFiles": 55,
+    "singleWorkerPassedTests": 514,
+    "singleWorkerFailedTests": 0,
+    "singleWorkerDurationSeconds": 96.54,
+    "assertionsTimeoutsAndConfigurationUnchanged": true,
+    "gitDiffCheck": "passed before and after final staging",
+    "logNormalization": "Trailing empty lines trimmed to one final newline; diagnostic content unchanged."
+  },
+  "mediaQa": {
+    "passed": true,
+    "fullDecode": "passed",
+    "durationPictureSeconds": 49.233333333333334,
+    "containerSeconds": 49.28,
+    "video": "1080x1920,30fps,H264 yuv420p",
+    "audio": "AAC stereo48kHz",
+    "newRender": false
+  },
+  "packages": {
+    "count": 4,
+    "nativeCycleValidation": true,
+    "byteResolvers": 4,
+    "state": "prepared",
+    "productionReady": false,
+    "publicationAuthorized": false,
+    "captionCuesValidated": 33,
+    "captionMidpointsPerPlatform": 33,
+    "browserCheckpoints": 119,
+    "coverPixelEquality": true,
+    "coverFrame": 1431,
+    "coverSeconds": 47.7,
+    "coverSha256": "72a47daf30bfcbd3749823db206148a518812d0ca3fddc9e5327860f7c4762a5",
+    "nativeCoverCropsAndSelectionUntested": true,
+    "knownSampledCollisions": 0,
+    "presentationUnknowns": 48,
+    "riskAcceptance": false
+  },
+  "durability": {
+    "passed": true,
+    "canonicalPayloads": 1406,
+    "durableArchives": 731,
+    "frozenHistoricalBinaryPaths": 442,
+    "newCoverPayloads": 1,
+    "newVideoPayloads": 0
+  },
+  "preservation": {
+    "checkedAt": "2026-10-17T23:45:51.419992Z",
+    "passed": true,
+    "frozenV1V2FilesChecked": 225,
+    "changedFrozenFiles": [],
+    "preexistingCatalogRowsUnchanged": 1405,
+    "newMediaRows": 1,
+    "newVideoPayloads": 0,
+    "newCoverPayloads": 1,
+    "historicalProjectMetadataUnchanged": true,
+    "v2MasterReviewIndexPreserved": true,
+    "branch": "content/cycle-11-discovery",
+    "head": "7a013e566f73b723cf354c0f11202468e7a368a7",
+    "commitPushBranchWorktreePlatformActions": []
+  },
+  "limits": [
+    "Local decoded-image and360px approximation only; no actual-device/native-platform pass",
+    "No new continuous playback/listening evidence",
+    "Historical missing Wood Frog original remains unchanged",
+    "No upload, preview upload, scheduling, publication, commit or push"
+  ],
+  "ownerStop": "Cycle20 owner delivery review",
+  "nativeStage": "publication-review",
+  "nativeRevision": 17
+}

@@ -1,0 +1,27 @@
+
+ RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis
+
+ ❯ tests/media-artifacts.test.ts (6 tests | 1 failed) 6993ms
+   ❯ Media content identity, historical safety and durability (6)
+     × enforces scoped historical preservation and canonical durability in pnpm check 6476ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/media-artifacts.test.ts > Media content identity, historical safety and durability > enforces scoped historical preservation and canonical durability in pnpm check
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/media-artifacts.test.ts:16:3
+     14| };
+     15| describe('Media content identity, historical safety and durability', (…
+     16|   it('enforces scoped historical preservation and canonical durability…
+       |   ^
+     17|     expect(validateArchitectureScope().passed).toBe(true);
+     18|     expect(validateCanonicalMediaDurability().passed).toBe(true);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 54 passed (55)
+      Tests  1 failed | 513 passed (514)
+   Start at  23:06:13
+   Duration  113.14s (tests 95%, import 4%, transform 1%)

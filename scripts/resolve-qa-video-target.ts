@@ -1,3 +1,5 @@
+import {selfTickleV2Target} from './tickle-v2-video-target';
+import {selfTickleTarget} from './tickle-video-target';
 import {mirrorEyesTarget} from './mirror-video-target';
 import {roadsterTarget} from './roadster-video-target';
 import {ohioV2Target} from './ohio-v2-video-target';
@@ -12,4 +14,4 @@ import {diceTarget} from './dice-video-target';
 import {flipTarget} from './flip-video-target';
 import {resolveProductionVideoTarget as resolveHistoricalProductionTarget} from './production-video-targets';
 // Historical target bytes are bound by exact approved-media validation.
-export const resolveProductionVideoTarget=(id:string)=>id==='mirror-eyes'?mirrorEyesTarget:id==='roadster'?roadsterTarget:id==='ohio-v2'?ohioV2Target:id==='ohio'?ohioTarget:id==='voyager-v2'?voyagerV2Target:id==='voyager'?voyagerTarget:id==='flytrap-v3'?flytrapV3Target:id==='flytrap-v2'?flytrapV2Target:id==='flytrap'?flytrapTarget:id==='dice-v4'?diceV4Target:id==='dice'?diceTarget:id==='flip'?flipTarget:resolveHistoricalProductionTarget(id);
+export const resolveProductionVideoTarget=(id:string)=>id==='self-tickle-v2'?selfTickleV2Target:id==='self-tickle'?selfTickleTarget:id==='mirror-eyes'?mirrorEyesTarget:id==='roadster'?roadsterTarget:id==='ohio-v2'?ohioV2Target:id==='ohio'?ohioTarget:id==='voyager-v2'?voyagerV2Target:id==='voyager'?voyagerTarget:id==='flytrap-v3'?flytrapV3Target:id==='flytrap-v2'?flytrapV2Target:id==='flytrap'?flytrapTarget:id==='dice-v4'?diceV4Target:id==='dice'?diceTarget:id==='flip'?flipTarget:resolveHistoricalProductionTarget(id);

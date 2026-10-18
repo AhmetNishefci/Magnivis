@@ -1,0 +1,5 @@
+import {selfTickleV2} from '../src/content/videos/self-tickle-v2';
+import captions from '../src/captions/plans/self-tickle-v2.json';
+import plan from '../src/production/plans/self-tickle-v2.json';
+const points=[0,9,20,35,55,56,70,90,100,234+9,234+28,234+55,234+70,234+80,234+130,706+20,706+40,706+60,706+80,706+100,706+110,706+125,1321+10,1321+30,1321+60,1321+85,1321+100,...plan.beats.flatMap(b=>[b.frames.start,(b.frames.start+b.frames.end)/2,b.frames.end-1]),...captions.cues.map(c=>Math.floor((c.startFrame+c.endFrame)/2)),...plan.beats.filter((_,i)=>i>=2&&i<=5).flatMap(b=>[b.frames.start+25,b.frames.start+39,b.frames.start+40,b.frames.start+60,b.frames.start+94,b.frames.start+95,b.frames.start+100,b.frames.start+112,b.frames.start+150].filter(f=>f<b.frames.end))];
+export const selfTickleV2Target={spec:selfTickleV2,entryPoint:'src/self-tickle-v2-index.tsx',output:'artifacts/masters/self-tickle-cycle20-candidate-v2.mp4',qaDirectory:'qa/self-tickle-v2',qaTimestamps:[...new Set(points.map(f=>Math.floor(f)/30))].sort((a,b)=>a-b)};

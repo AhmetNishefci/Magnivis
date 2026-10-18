@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-17T21:07:13.889Z",
+  "input": "artifacts/masters/self-tickle-cycle20-candidate-v1.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 49.233333333333334
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -22.8,
+    "maxVolumeDb": -2.3,
+    "duration": 49.28,
+    "sizeBytes": 27090991,
+    "bitRate": 4397888
+  },
+  "passed": true,
+  "failures": []
+}

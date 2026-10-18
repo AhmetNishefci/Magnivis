@@ -1,0 +1,14 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {loadMediaRegistry,mediaHash} from '../src/artifacts/media';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+import {verifyInternalEditorial} from '../src/workflow/editorial';
+const b='content-intelligence/cycles/cycle-20',registry=loadMediaRegistry(),read=(p:string)=>JSON.parse(readFileSync(p,'utf8')),ref=(path:string)=>({path,sha256:mediaHash(path)});
+let state=loadCycle(process.cwd(),'cycle.20',registry);
+state=persistCycleEvent(process.cwd(),state,{type:'retry-internal',stage:'editorial',record:ref(b+'/editorial-evidence-correction.json'),at:new Date().toISOString()},registry);
+const {draftPackage,draftAsset,review}=read(b+'/editorial-receipt.json');
+review.enteredAt=new Date().toISOString();
+for(const s of review.inspections)if(s.sourceId==='source.tickle.classic'||s.sourceId==='source.tickle.attenuation')s.inspectedEvidence=ref(b+'/research/'+s.sourceId.split('.').at(-1)+'-body-v2.json');
+const ready=verifyInternalEditorial(review,draftPackage,draftAsset);
+for(const [file,value]of [['knowledge-package.ready-v2.json',ready.knowledgePackage],['content-asset.ready-v2.json',ready.contentAsset],['editorial-receipt-v2.json',{draftPackage,draftAsset,review}] ] as const)writeFileSync(b+'/'+file,JSON.stringify(value,null,2)+'\n',{flag:'wx'});
+state=persistCycleEvent(process.cwd(),state,{type:'complete-internal',stage:'editorial',record:ref(b+'/editorial-receipt-v2.json'),at:new Date().toISOString()},registry);
+console.log(state.stage);

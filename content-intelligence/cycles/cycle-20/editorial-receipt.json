@@ -1,0 +1,874 @@
+{
+  "draftPackage": {
+    "id": "self-tickle",
+    "revision": 1,
+    "topic": "Why your own touch usually fails to make you laugh",
+    "centralQuestion": "Why can someone else tickle you into laughter while your own hand usually cannot?",
+    "taxonomy": {
+      "pillar": "human-life",
+      "domains": [
+        "neuroscience",
+        "human-behavior"
+      ],
+      "topics": [
+        "self-touch",
+        "sensory-prediction"
+      ]
+    },
+    "timeliness": "evergreen",
+    "thesis": "Understand motor-related prediction and weaker self-touch, while distinguishing light ticklishness from incompletely explained tickle laughter.",
+    "viewerPayoff": "Understand motor-related prediction and weaker self-touch, while distinguishing light ticklishness from incompletely explained tickle laughter.",
+    "sources": [
+      {
+        "id": "source.tickle.classic",
+        "organization": "Blakemore, Wolpert & Frith; Nature Neuroscience1:635–640 (1998); DOI10.1038/2870",
+        "title": "Central cancellation of self-produced tickle sensation",
+        "sourceType": "primary-source",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10196573/",
+        "retrieved": "2026-10-17",
+        "notes": "Original experiment abstract inspected, not full paper. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json"
+      },
+      {
+        "id": "source.tickle.attenuation",
+        "organization": "Kilteni & Ehrsson; iScience25:104077 (2022); DOI10.1016/j.isci.2022.104077",
+        "title": "Predictive attenuation of touch and tactile gating are distinct perceptual phenomena",
+        "sourceType": "primary-source",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8968059/",
+        "retrieved": "2026-10-17",
+        "notes": "Available body extract inspected: summary and distinction from gating; full numerical methods not claimed. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json"
+      },
+      {
+        "id": "source.tickle.gargalesis",
+        "organization": "Proelss, Ishiyama, Maier, Schultze-Kraft & Brecht; Phil.Trans.R.Soc.B377:20210185 (2022); DOI10.1098/rstb.2021.0185",
+        "title": "The human tickle response and mechanisms of self-tickle suppression",
+        "sourceType": "primary-source",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9489287/",
+        "retrieved": "2026-10-17",
+        "notes": "Introduction, participant methods, results and discussion inspected;12 recruited,11 analyzed, familiar pairs. Alternative broad self-touch suppression account is a proposal, not settled mechanism. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json"
+      },
+      {
+        "id": "source.tickle.robot",
+        "organization": "Kilteni, Houborg & Ehrsson; eLife8:e42888 (2019); DOI10.7554/eLife.42888",
+        "title": "Rapid learning and unlearning of predicted sensory delays in self-generated touch",
+        "sourceType": "primary-source",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6860990/",
+        "retrieved": "2026-10-17",
+        "notes": "Indexed original body excerpt including Figure3 methods/results inspected; publisher re-open challenged.30 participants in tickle experiment; effects retuned after repeated exposure. Evidence content-intelligence/cycles/cycle-20/research/delay-identity-inspection.json"
+      },
+      {
+        "id": "source.tickle.review2025",
+        "organization": "Konstantina Kilteni; Science Advances11:eadt0350 (2025); DOI10.1126/sciadv.adt0350",
+        "title": "The extraordinary enigma of ordinary tickle behavior: Why gargalesis still puzzles neuroscience",
+        "sourceType": "primary-source",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12101506/",
+        "retrieved": "2026-10-17",
+        "notes": "Available review body extract inspected; later PMC re-open challenged. Distinguishes gargalesis and identifies self/other and individual variation as unresolved. Evidence content-intelligence/cycles/cycle-20/research/further-source-inspection.json"
+      }
+    ],
+    "claims": [
+      {
+        "id": "self-tickle.claim.contrast",
+        "statement": "Laughter-inducing tickling is generally difficult to self-induce, whereas another person can elicit it.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.gargalesis",
+            "locator": "Introduction and discussion; results show body-site and individual variation.",
+            "notes": "Usually and can, not universal inability or guaranteed laughter. Mood, familiarity and context matter. Actual source body inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Usually and can, not universal inability or guaranteed laughter. Mood, familiarity and context matter."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "self-tickle.claim.prediction",
+        "statement": "Motor-related predictions can anticipate sensory consequences of self-generated action and contribute to attenuation of self-touch.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.attenuation",
+            "locator": "Summary, introduction and dissociation of predictive attenuation from movement gating.",
+            "notes": "Forward-model account supported by behavioral evidence; no literal circuit, unique anatomical locus or claim every predicted touch weakens. Actual source body inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Forward-model account supported by behavioral evidence; no literal circuit, unique anatomical locus or claim every predicted touch weakens."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "self-tickle.claim.weaker",
+        "statement": "Self-produced tactile stimuli can feel weaker than physically matched externally produced stimuli.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.attenuation",
+            "locator": "Summary and results separating perceived amplitude from precision.",
+            "notes": "Attenuation is not disappearance; gating of detection/precision is distinct. Actual source body inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Attenuation is not disappearance; gating of detection/precision is distinct."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "self-tickle.claim.experiment",
+        "statement": "In a human experiment, a self-produced tactile stimulus was perceived as less ticklish than the same stimulus generated externally.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.classic",
+            "locator": "Abstract opening and somatosensory/fMRI comparison.",
+            "notes": "1998 abstract inspected; light tactile stimulation, not a demonstrated laughter response. Imaging association does not alone prove causal cancellation. Actual source body inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "1998 abstract inspected; light tactile stimulation, not a demonstrated laughter response. Imaging association does not alone prove causal cancellation."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "self-tickle.claim.delay",
+        "statement": "In a robotic forearm-touch experiment, initially delayed self-produced touch was more often judged ticklier than immediate touch; repeated exposure changed that comparison.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.robot",
+            "locator": "Tickling experiment, Figure3 methods/results; thirty new participants, delay exposure retuned judgments.",
+            "notes": "2019 full indexed methods/results extract inspected. Initial comparison only in narration; no universal delay, delay magnitude or guaranteed laughter. Learning means surprise alone is insufficient. Actual source body inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "2019 full indexed methods/results extract inspected. Initial comparison only in narration; no universal delay, delay magnitude or guaranteed laughter. Learning means surprise alone is insufficient."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "self-tickle.claim.light",
+        "statement": "Light feather-like ticklishness can be self-evoked and differs from stronger laughter-inducing tickling.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.gargalesis",
+            "locator": "Introduction distinguishes knismesis and gargalesis and notes common conflation in brush/foam studies.",
+            "notes": "No claim that light tickle never varies or that the two have one settled neural mechanism. Actual source body inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "No claim that light tickle never varies or that the two have one settled neural mechanism."
+        ],
+        "type": "qualitative"
+      },
+      {
+        "id": "self-tickle.claim.limits",
+        "statement": "Prediction and self-touch attenuation are important clues, but they do not fully explain laughter-inducing tickling or individual differences.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.review2025",
+            "locator": "Abstract, introduction, definition and outstanding questions sections available in retrieved extract.",
+            "notes": "Mechanistic incompleteness, individual differences and affective/context influences explicit; no clinical conclusions. Actual source body inspected."
+          }
+        ],
+        "verificationStatus": "supported",
+        "caveats": [
+          "Mechanistic incompleteness, individual differences and affective/context influences explicit; no clinical conclusions."
+        ],
+        "type": "qualitative"
+      }
+    ],
+    "caveats": [
+      {
+        "id": "tickle.caveat.scope",
+        "statement": "Prediction contributes to weaker self-touch; light tickle differs from gargalesis. No total cancellation, universal self-tickle incapacity or complete explanation of laughter. Context and individuals differ.",
+        "claimIds": [
+          "self-tickle.claim.contrast",
+          "self-tickle.claim.prediction",
+          "self-tickle.claim.weaker",
+          "self-tickle.claim.experiment",
+          "self-tickle.claim.delay",
+          "self-tickle.claim.light",
+          "self-tickle.claim.limits"
+        ]
+      }
+    ],
+    "hooks": [
+      {
+        "id": "self-tickle.hook.try",
+        "archetype": "everyday-perceptual-puzzle",
+        "text": "Why can their fingers make you laugh, but yours usually can't?",
+        "viewerPromise": "Understand motor-related prediction and weaker self-touch, while distinguishing light ticklishness from incompletely explained tickle laughter.",
+        "claimIds": [
+          "self-tickle.claim.contrast"
+        ]
+      },
+      {
+        "id": "self-tickle.hook.camera",
+        "archetype": "observation-contrast",
+        "text": "Your own touch can feel different before it reaches you.",
+        "viewerPromise": "Understand motor-related prediction and weaker self-touch, while distinguishing light ticklishness from incompletely explained tickle laughter.",
+        "claimIds": [
+          "self-tickle.claim.prediction"
+        ]
+      }
+    ],
+    "narrativeOpportunities": [
+      {
+        "id": "tickle.story.timing",
+        "title": "Same skin, different origin",
+        "description": "Understand motor-related prediction and weaker self-touch, while distinguishing light ticklishness from incompletely explained tickle laughter.",
+        "claimIds": [
+          "self-tickle.claim.contrast",
+          "self-tickle.claim.prediction",
+          "self-tickle.claim.weaker",
+          "self-tickle.claim.experiment",
+          "self-tickle.claim.delay",
+          "self-tickle.claim.light",
+          "self-tickle.claim.limits"
+        ]
+      }
+    ],
+    "visualOpportunities": [
+      {
+        "id": "tickle.visual.continuity",
+        "title": "One body, one connected hand",
+        "description": "Immediate macro of external fingers touching ribs, sculpted faceless person recoils; match into visibly connected self-hand with much smaller reaction. No laughter recording or clinical demonstration. Two same-material skin surfaces indent under touch; keep sensation motif visible in both; no absence of sensory input. Camera opens from the self-hand into an abstract prediction model: intended movement branches to anticipated contact and hand action, then actual tactile feedback enters. Conceptual model, not anatomical pathway. Expected and actual contact motifs align, then a smaller but nonzero felt-touch motif emerges. Illustrative magnitude only, no calibrated neural signal. Same original palm and soft probe; self-produced and external condition shown in matched scale with different subjective sensation motifs. No laughter implied. Original simplified robot control and forearm probe: hand moves a stylus first, probe follows later; expected and actual contact motifs separate in time. Motion expanded, no exact apparatus reproduction. Pull back from robot light touch to same person at ribs, side-by-side light brushing and stronger tickle; no transition suggesting measured laughter from robot. A light self-brush remains visibly felt; three sculpted figures show different external tickle reactions. Individual/context differences illustrated, not study-derived categories. Return to self and external contrast, show prediction as one contributing strand with open space instead of a complete circuit. No claim social anticipation alone explains laughter. Return to original self-hand; translucent anticipated contact precedes physical arrival, actual touch persists. One concise illustrated reframe with no CTA.",
+        "claimIds": [
+          "self-tickle.claim.contrast",
+          "self-tickle.claim.prediction",
+          "self-tickle.claim.weaker",
+          "self-tickle.claim.experiment",
+          "self-tickle.claim.delay",
+          "self-tickle.claim.light",
+          "self-tickle.claim.limits"
+        ]
+      }
+    ],
+    "relatedQuestions": [],
+    "followUpOpportunities": [],
+    "editorialStatus": "review"
+  },
+  "draftAsset": {
+    "id": "self-tickle.asset.perception",
+    "revision": 1,
+    "knowledgePackageId": "self-tickle",
+    "assetType": "short-form-video",
+    "editorialPurpose": "Understand motor-related prediction and weaker self-touch, while distinguishing light ticklishness from incompletely explained tickle laughter.",
+    "storyAngle": "Motor prediction helps explain weaker self-touch, while the laughter question remains incompletely solved.",
+    "hookId": "self-tickle.hook.try",
+    "selectedClaimIds": [
+      "self-tickle.claim.contrast",
+      "self-tickle.claim.prediction",
+      "self-tickle.claim.weaker",
+      "self-tickle.claim.experiment",
+      "self-tickle.claim.delay",
+      "self-tickle.claim.light",
+      "self-tickle.claim.limits"
+    ],
+    "durationIntentSeconds": {
+      "minimum": 40,
+      "maximum": 50
+    },
+    "script": {
+      "language": "en",
+      "segments": [
+        {
+          "id": "self-tickle.asset.perception.script.1",
+          "type": "factual",
+          "text": "Why can their fingers make you laugh, but yours usually can't?",
+          "claimIds": [
+            "self-tickle.claim.contrast"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.2",
+          "type": "factual",
+          "text": "Both touch your skin. One important clue is prediction.",
+          "claimIds": [
+            "self-tickle.claim.contrast",
+            "self-tickle.claim.prediction"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.3",
+          "type": "factual",
+          "text": "When you move your hand, your nervous system can anticipate the touch it will produce.",
+          "claimIds": [
+            "self-tickle.claim.prediction"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.4",
+          "type": "factual",
+          "text": "That touch can feel weaker. Scientists call this sensory attenuation.",
+          "claimIds": [
+            "self-tickle.claim.weaker"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.5",
+          "type": "factual",
+          "text": "In experiments, self-produced touch felt less ticklish than matching external touch.",
+          "claimIds": [
+            "self-tickle.claim.experiment"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.6",
+          "type": "factual",
+          "text": "Adding a delay to a robotic self-touch made it feel more ticklish.",
+          "claimIds": [
+            "self-tickle.claim.delay"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.7",
+          "type": "factual",
+          "text": "But those experiments used light touch, not full-on tickle laughter.",
+          "claimIds": [
+            "self-tickle.claim.experiment",
+            "self-tickle.claim.delay",
+            "self-tickle.claim.light"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.8",
+          "type": "factual",
+          "text": "You can give yourself a light, tickly sensation. Laughter-inducing tickling is harder to explain, and people differ.",
+          "claimIds": [
+            "self-tickle.claim.light",
+            "self-tickle.claim.limits"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.9",
+          "type": "factual",
+          "text": "Prediction is an important clue, not the whole answer.",
+          "claimIds": [
+            "self-tickle.claim.limits"
+          ]
+        },
+        {
+          "id": "self-tickle.asset.perception.script.10",
+          "type": "factual",
+          "text": "Your nervous system doesn't just receive touch. It can anticipate your own.",
+          "claimIds": [
+            "self-tickle.claim.prediction"
+          ]
+        }
+      ]
+    },
+    "narrativeStructure": [
+      {
+        "id": "self-tickle.asset.perception.beat.1",
+        "label": "Their hand. Your hand.",
+        "purpose": "Immediate macro of external fingers touching ribs, sculpted faceless person recoils; match into visibly connected self-hand with much smaller reaction. No laughter recording or clinical demonstration.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.1"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.2",
+        "label": "Touch remains",
+        "purpose": "Two same-material skin surfaces indent under touch; keep sensation motif visible in both; no absence of sensory input.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.2"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.3",
+        "label": "Movement has consequences",
+        "purpose": "Camera opens from the self-hand into an abstract prediction model: intended movement branches to anticipated contact and hand action, then actual tactile feedback enters. Conceptual model, not anatomical pathway.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.3"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.4",
+        "label": "Reduced, not erased",
+        "purpose": "Expected and actual contact motifs align, then a smaller but nonzero felt-touch motif emerges. Illustrative magnitude only, no calibrated neural signal.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.4"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.5",
+        "label": "Matched touch",
+        "purpose": "Same original palm and soft probe; self-produced and external condition shown in matched scale with different subjective sensation motifs. No laughter implied.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.5"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.6",
+        "label": "Delay breaks the match",
+        "purpose": "Original simplified robot control and forearm probe: hand moves a stylus first, probe follows later; expected and actual contact motifs separate in time. Motion expanded, no exact apparatus reproduction.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.6"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.7",
+        "label": "The crucial distinction",
+        "purpose": "Pull back from robot light touch to same person at ribs, side-by-side light brushing and stronger tickle; no transition suggesting measured laughter from robot.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.7"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.8",
+        "label": "Different experiences",
+        "purpose": "A light self-brush remains visibly felt; three sculpted figures show different external tickle reactions. Individual/context differences illustrated, not study-derived categories.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.8"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.9",
+        "label": "An incomplete explanation",
+        "purpose": "Return to self and external contrast, show prediction as one contributing strand with open space instead of a complete circuit. No claim social anticipation alone explains laughter.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.9"
+        ]
+      },
+      {
+        "id": "self-tickle.asset.perception.beat.10",
+        "label": "See it coming",
+        "purpose": "Return to original self-hand; translucent anticipated contact precedes physical arrival, actual touch persists. One concise illustrated reframe with no CTA.",
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.10"
+        ]
+      }
+    ],
+    "visualPlan": [
+      {
+        "id": "self-tickle.asset.perception.visual.1",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.1",
+        "objective": "Immediate macro of external fingers touching ribs, sculpted faceless person recoils; match into visibly connected self-hand with much smaller reaction. No laughter recording or clinical demonstration.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.1"
+        ],
+        "claimIds": [
+          "self-tickle.claim.contrast"
+        ],
+        "notes": "Their hand. Your hand.; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.2",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.2",
+        "objective": "Two same-material skin surfaces indent under touch; keep sensation motif visible in both; no absence of sensory input.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.2"
+        ],
+        "claimIds": [
+          "self-tickle.claim.contrast",
+          "self-tickle.claim.prediction"
+        ],
+        "notes": "Touch remains; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.3",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.3",
+        "objective": "Camera opens from the self-hand into an abstract prediction model: intended movement branches to anticipated contact and hand action, then actual tactile feedback enters. Conceptual model, not anatomical pathway.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.3"
+        ],
+        "claimIds": [
+          "self-tickle.claim.prediction"
+        ],
+        "notes": "Movement has consequences; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.4",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.4",
+        "objective": "Expected and actual contact motifs align, then a smaller but nonzero felt-touch motif emerges. Illustrative magnitude only, no calibrated neural signal.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.4"
+        ],
+        "claimIds": [
+          "self-tickle.claim.weaker"
+        ],
+        "notes": "Reduced, not erased; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.5",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.5",
+        "objective": "Same original palm and soft probe; self-produced and external condition shown in matched scale with different subjective sensation motifs. No laughter implied.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.5"
+        ],
+        "claimIds": [
+          "self-tickle.claim.experiment"
+        ],
+        "notes": "Matched touch; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.6",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.6",
+        "objective": "Original simplified robot control and forearm probe: hand moves a stylus first, probe follows later; expected and actual contact motifs separate in time. Motion expanded, no exact apparatus reproduction.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.6"
+        ],
+        "claimIds": [
+          "self-tickle.claim.delay"
+        ],
+        "notes": "Delay breaks the match; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.7",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.7",
+        "objective": "Pull back from robot light touch to same person at ribs, side-by-side light brushing and stronger tickle; no transition suggesting measured laughter from robot.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.7"
+        ],
+        "claimIds": [
+          "self-tickle.claim.experiment",
+          "self-tickle.claim.delay",
+          "self-tickle.claim.light"
+        ],
+        "notes": "The crucial distinction; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.8",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.8",
+        "objective": "A light self-brush remains visibly felt; three sculpted figures show different external tickle reactions. Individual/context differences illustrated, not study-derived categories.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.8"
+        ],
+        "claimIds": [
+          "self-tickle.claim.light",
+          "self-tickle.claim.limits"
+        ],
+        "notes": "Different experiences; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.9",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.9",
+        "objective": "Return to self and external contrast, show prediction as one contributing strand with open space instead of a complete circuit. No claim social anticipation alone explains laughter.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.9"
+        ],
+        "claimIds": [
+          "self-tickle.claim.limits"
+        ],
+        "notes": "An incomplete explanation; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      },
+      {
+        "id": "self-tickle.asset.perception.visual.10",
+        "narrativeBeatId": "self-tickle.asset.perception.beat.10",
+        "objective": "Return to original self-hand; translucent anticipated contact precedes physical arrival, actual touch persists. One concise illustrated reframe with no CTA.",
+        "visualType": "animation",
+        "suggestedPrimitive": "bespoke",
+        "assetRequirements": [
+          "Original procedural sculpted adult, connected hands, skin contact, abstract prediction ribbons and qualitative robotic control study."
+        ],
+        "scriptSegmentIds": [
+          "self-tickle.asset.perception.script.10"
+        ],
+        "claimIds": [
+          "self-tickle.claim.prediction"
+        ],
+        "notes": "See it coming; original explanatory animation; model and time expansion explicit, no measured anatomy or neural circuit."
+      }
+    ],
+    "narrationPlan": {
+      "mode": "narrated",
+      "voiceDirection": "Local Kokoro af_heart, curious precise delivery, speed1.",
+      "pronunciationNotes": [
+        "sensory attenuation /əˌtɛnjuˈeɪʃən/; robotic; self-produced. Inspect full-unit phonemes, source/master signal and approximate phrase synchronization."
+      ]
+    },
+    "editorialStatus": "editorial-review"
+  },
+  "review": {
+    "schemaVersion": 3,
+    "cycleId": "cycle.20",
+    "topicCandidateId": "topic.cycle20.tickle",
+    "enteredAt": "2026-10-17T20:54:14.501Z",
+    "reviewer": "Codex internal evidence review, not owner scientific approval",
+    "premiseAlignment": {
+      "selectionSha256": "1115b0ff5151ba053c7875accc0ca60abaaa0114c84f719e402e4b29ebf98f8c",
+      "preservesPublishingOpportunity": true,
+      "rationale": "Owner-selected self-tickle question, reframed as evidence-supported prediction clue with explicit unsolved laughter limit."
+    },
+    "packageSha256": "764470d2797fca06a031530fe94e1c6b166b1a828ecc55b6b950eab8ea5f28a6",
+    "assetSha256": "fc5eb1aa4faab45408a3af8ccd450dd6614d68bb234ea124dafb3e9a07c37e82",
+    "scriptSha256": "9e86ca595878bf48d13741445eebd3faf432271b338b0b4d3e80ce8c391dc474",
+    "inspections": [
+      {
+        "sourceId": "source.tickle.classic",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Abstract opening and somatosensory/fMRI comparison."
+        ],
+        "supportsClaimIds": [
+          "self-tickle.claim.experiment"
+        ],
+        "limitations": [
+          "Original experiment abstract inspected, not full paper. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json",
+          "No original experiment replication or direct neurological measurement."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-20/research/classic-body.json",
+          "sha256": "2c8136148db3731be15c606ea5d4a1f97c923eadbeca0b0058c2b0549eefcbcf"
+        },
+        "sourceQualityRationale": "Original experiment abstract inspected, not full paper. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json"
+      },
+      {
+        "sourceId": "source.tickle.attenuation",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Summary, introduction and dissociation of predictive attenuation from movement gating.",
+          "Summary and results separating perceived amplitude from precision."
+        ],
+        "supportsClaimIds": [
+          "self-tickle.claim.prediction",
+          "self-tickle.claim.weaker"
+        ],
+        "limitations": [
+          "Available body extract inspected: summary and distinction from gating; full numerical methods not claimed. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json",
+          "No original experiment replication or direct neurological measurement."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-20/research/attenuation-body.json",
+          "sha256": "9aa9d439fd5e3d1a1f1cef7867485de1425bc163441b411e46c5c995a92da310"
+        },
+        "sourceQualityRationale": "Available body extract inspected: summary and distinction from gating; full numerical methods not claimed. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json"
+      },
+      {
+        "sourceId": "source.tickle.gargalesis",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Introduction and discussion; results show body-site and individual variation.",
+          "Introduction distinguishes knismesis and gargalesis and notes common conflation in brush/foam studies."
+        ],
+        "supportsClaimIds": [
+          "self-tickle.claim.contrast",
+          "self-tickle.claim.light"
+        ],
+        "limitations": [
+          "Introduction, participant methods, results and discussion inspected;12 recruited,11 analyzed, familiar pairs. Alternative broad self-touch suppression account is a proposal, not settled mechanism. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json",
+          "No original experiment replication or direct neurological measurement."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-20/research/gargalesis-body.json",
+          "sha256": "aaf8def9c9609fa8178119472e6f3ac17f6cd2f92537f591e6e2260072df2adb"
+        },
+        "sourceQualityRationale": "Introduction, participant methods, results and discussion inspected;12 recruited,11 analyzed, familiar pairs. Alternative broad self-touch suppression account is a proposal, not settled mechanism. Evidence content-intelligence/cycles/cycle-20/research/inspected-source-bodies.json"
+      },
+      {
+        "sourceId": "source.tickle.robot",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Tickling experiment, Figure3 methods/results; thirty new participants, delay exposure retuned judgments."
+        ],
+        "supportsClaimIds": [
+          "self-tickle.claim.delay"
+        ],
+        "limitations": [
+          "Indexed original body excerpt including Figure3 methods/results inspected; publisher re-open challenged.30 participants in tickle experiment; effects retuned after repeated exposure. Evidence content-intelligence/cycles/cycle-20/research/delay-identity-inspection.json",
+          "No original experiment replication or direct neurological measurement."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-20/research/robot-body.json",
+          "sha256": "1a906fbf13aa288177722e9dd9c9d9536454f7e3de810194f70f504df4af53c9"
+        },
+        "sourceQualityRationale": "Indexed original body excerpt including Figure3 methods/results inspected; publisher re-open challenged.30 participants in tickle experiment; effects retuned after repeated exposure. Evidence content-intelligence/cycles/cycle-20/research/delay-identity-inspection.json"
+      },
+      {
+        "sourceId": "source.tickle.review2025",
+        "accessStatus": "inspected",
+        "identityConfirmed": true,
+        "evidenceLocations": [
+          "Abstract, introduction, definition and outstanding questions sections available in retrieved extract."
+        ],
+        "supportsClaimIds": [
+          "self-tickle.claim.limits"
+        ],
+        "limitations": [
+          "Available review body extract inspected; later PMC re-open challenged. Distinguishes gargalesis and identifies self/other and individual variation as unresolved. Evidence content-intelligence/cycles/cycle-20/research/further-source-inspection.json",
+          "No original experiment replication or direct neurological measurement."
+        ],
+        "inspectedEvidence": {
+          "path": "content-intelligence/cycles/cycle-20/research/review2025-body.json",
+          "sha256": "88a9b5a8d854eda2b8999933c30740e083f3e3194343b8027fad8471a1488fa7"
+        },
+        "sourceQualityRationale": "Available review body extract inspected; later PMC re-open challenged. Distinguishes gargalesis and identifies self/other and individual variation as unresolved. Evidence content-intelligence/cycles/cycle-20/research/further-source-inspection.json"
+      }
+    ],
+    "claims": [
+      {
+        "id": "self-tickle.claim.contrast",
+        "statementSha256": "c223cd5f44789417c00d81bc20c114592d6e6244dda98b4385a2bb2d87c18fd8",
+        "disposition": "verify",
+        "rationale": "Usually and can, not universal inability or guaranteed laughter. Mood, familiarity and context matter.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.gargalesis",
+            "locator": "Introduction and discussion; results show body-site and individual variation.",
+            "assessment": "Usually and can, not universal inability or guaranteed laughter. Mood, familiarity and context matter. Actual source body inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "self-tickle.claim.prediction",
+        "statementSha256": "311507ff826821db2f2cc49a7cb10912a12e83e6c93c997795ac7c04eab4f4ff",
+        "disposition": "verify",
+        "rationale": "Forward-model account supported by behavioral evidence; no literal circuit, unique anatomical locus or claim every predicted touch weakens.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.attenuation",
+            "locator": "Summary, introduction and dissociation of predictive attenuation from movement gating.",
+            "assessment": "Forward-model account supported by behavioral evidence; no literal circuit, unique anatomical locus or claim every predicted touch weakens. Actual source body inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "self-tickle.claim.weaker",
+        "statementSha256": "c1e12e9b1b4af079c970d27dbc56e35c6f421ce0a4788fc0993c388d2f41f524",
+        "disposition": "verify",
+        "rationale": "Attenuation is not disappearance; gating of detection/precision is distinct.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.attenuation",
+            "locator": "Summary and results separating perceived amplitude from precision.",
+            "assessment": "Attenuation is not disappearance; gating of detection/precision is distinct. Actual source body inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "self-tickle.claim.experiment",
+        "statementSha256": "309333f62cb215049108a5ec0936b5fd1d5b40b0bd65e5cdf10681c8f84e7d26",
+        "disposition": "verify",
+        "rationale": "1998 abstract inspected; light tactile stimulation, not a demonstrated laughter response. Imaging association does not alone prove causal cancellation.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.classic",
+            "locator": "Abstract opening and somatosensory/fMRI comparison.",
+            "assessment": "1998 abstract inspected; light tactile stimulation, not a demonstrated laughter response. Imaging association does not alone prove causal cancellation. Actual source body inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "self-tickle.claim.delay",
+        "statementSha256": "82e5f56b2b104b51308b2ccbe853cb759117f681f6a4c0f597b428cdbdc49b1f",
+        "disposition": "verify",
+        "rationale": "2019 full indexed methods/results extract inspected. Initial comparison only in narration; no universal delay, delay magnitude or guaranteed laughter. Learning means surprise alone is insufficient.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.robot",
+            "locator": "Tickling experiment, Figure3 methods/results; thirty new participants, delay exposure retuned judgments.",
+            "assessment": "2019 full indexed methods/results extract inspected. Initial comparison only in narration; no universal delay, delay magnitude or guaranteed laughter. Learning means surprise alone is insufficient. Actual source body inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "self-tickle.claim.light",
+        "statementSha256": "c3e709abaa2e96aa64b073ad7d29b0642d941d0ce11fb67bc4acf6e30801fab3",
+        "disposition": "verify",
+        "rationale": "No claim that light tickle never varies or that the two have one settled neural mechanism.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.gargalesis",
+            "locator": "Introduction distinguishes knismesis and gargalesis and notes common conflation in brush/foam studies.",
+            "assessment": "No claim that light tickle never varies or that the two have one settled neural mechanism. Actual source body inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      },
+      {
+        "id": "self-tickle.claim.limits",
+        "statementSha256": "f9c253aea3f9ebb1bbc2a961792c4ee8a0e0013e8fc8ad482926710247651253",
+        "disposition": "verify",
+        "rationale": "Mechanistic incompleteness, individual differences and affective/context influences explicit; no clinical conclusions.",
+        "evidence": [
+          {
+            "sourceId": "source.tickle.review2025",
+            "locator": "Abstract, introduction, definition and outstanding questions sections available in retrieved extract.",
+            "assessment": "Mechanistic incompleteness, individual differences and affective/context influences explicit; no clinical conclusions. Actual source body inspected.",
+            "sufficientForWording": true
+          }
+        ],
+        "qualificationsPreserved": true
+      }
+    ],
+    "misconceptionSafeguards": [
+      "Usually and can; no universal inability.",
+      "Light ticklishness can be self-evoked; classic brush studies do not prove laughter cancellation.",
+      "Prediction contributes; not a literal complete subtractor or single anatomical circuit.",
+      "Touch remains; attenuated output never becomes zero.",
+      "Delay comparison initially; repeated exposure retunes it, no universal surprise law.",
+      "Social context, individual variation and broad sensory suppression remain relevant.",
+      "No diagnosis, clinical implication, forced tickling or medical advice."
+    ],
+    "comprehensionReview": "Immediate social/self contrast; one sculpted body and hand; build motor prediction then actual input. Experimental light-touch limit is narrated before qualified payoff.",
+    "rightsReview": "Original procedural 3D-style forms, original synthesized sound, existing licensed fonts and existing local Kokoro. Scientific texts evidence-only, no copied figures or third-party production media.",
+    "careAssessment": {
+      "state": "routine",
+      "rationale": "Qualified general neuroscience education, no clinical or diagnostic inference. Newer uncertainty handled in exact narration; no unresolved factual assertion required."
+    },
+    "exceptionalConditions": []
+  }
+}

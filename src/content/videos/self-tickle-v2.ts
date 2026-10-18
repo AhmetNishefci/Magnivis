@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/self-tickle-v2.json';
+import asset from '../../../content-intelligence/cycles/cycle-20/content-asset.ready-v2.json';
+import narration from '../../production/narration/self-tickle.json';
+export const selfTickleV2=videoSpecSchema.parse({id:'self-tickle-v2',compositionId:'Magnivis-SelfTickleV2',workingTitle:'Why your own touch usually cannot tickle you into laughter',titleCandidates:['Why your own touch usually cannot tickle you into laughter'],descriptionCandidates:['Motor prediction and attenuated self-touch; light ticklishness differs from laughter-inducing tickling.'],hook:asset.script.segments[0]!.text,pillar:'human-behavior',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration'],narration:true,narrationCues:narration.cues}});

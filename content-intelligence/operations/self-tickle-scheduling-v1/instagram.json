@@ -1,0 +1,57 @@
+{
+  "cycleId": "cycle.20",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-20T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-20T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-18T00:01:53.538983+00:00",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "platform": "instagram",
+  "ownerReport": {
+    "path": "content-intelligence/operations/self-tickle-scheduling-v1/owner-report.json",
+    "sha256": "5214f1c2280f408ce84e7d75dabd56a8ea618d89a14586a3d8a151f81fe554ed"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/self-tickle-cycle20-candidate-v2.mp4",
+    "sha256": "8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-20/delivery-v1/release-v1.json",
+    "sha256": "a77eca6390553b3a0fe2a672404b238e3978b0130157e3ecfe48180851a0f7b2"
+  },
+  "intendedVariant": {
+    "id": "self-tickle.variant.instagram.v1",
+    "revision": 1,
+    "media": {
+      "id": "media.8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac",
+      "sha256": "8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-20/delivery-v1/instagram/manifest-v1.json",
+    "sha256": "426c17d514e879e6bc21cc23ad0731e7b6f52fb7acb8c05dd8da572c851319f0"
+  },
+  "identityBasis": "Owner-designated master and prepared package; actual upload identity not independently verified."
+}

@@ -1,0 +1,166 @@
+{
+  "id": "cycle.20",
+  "revision": 14,
+  "premiseApproved": true,
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-20/topic-selection-v1.json",
+    "sha256": "dabb24781f99defd348b9895cc887d2a2d620f0d463911ec77f58ed96f10d9c8"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-20/owner-premise-authority.json",
+    "sha256": "23099c090f8d2114cc4507426b3e81b2d62c727d973e8b3f806e9875b16c3530"
+  },
+  "stage": "master-review",
+  "next": {
+    "kind": "owner",
+    "gate": "master-review"
+  },
+  "topic": {
+    "id": "topic.cycle20.tickle",
+    "rationale": "Owner-selected V1 authority; source inspection requires explicitly incomplete explanation of laughter."
+  },
+  "research": {
+    "reviewSha256": "7e1196c4278d0558e0bfe12ffb3025d15d37c5bc5a8bd6615bea9b79d92b66ea",
+    "package": "self-tickle",
+    "verifiedClaimIds": [
+      "self-tickle.claim.contrast",
+      "self-tickle.claim.prediction",
+      "self-tickle.claim.weaker",
+      "self-tickle.claim.experiment",
+      "self-tickle.claim.delay",
+      "self-tickle.claim.light",
+      "self-tickle.claim.limits"
+    ]
+  },
+  "narration": {
+    "scriptSha256": "9e86ca595878bf48d13741445eebd3faf432271b338b0b4d3e80ce8c391dc474",
+    "text": "Why can their fingers make you laugh, but yours usually can't? Both touch your skin. One important clue is prediction. When you move your hand, your nervous system can anticipate the touch it will produce. That touch can feel weaker. Scientists call this sensory attenuation. In experiments, self-produced touch felt less ticklish than matching external touch. Adding a delay to a robotic self-touch made it feel more ticklish. But those experiments used light touch, not full-on tickle laughter. You can give yourself a light, tickly sensation. Laughter-inducing tickling is harder to explain, and people differ. Prediction is an important clue, not the whole answer. Your nervous system doesn't just receive touch. It can anticipate your own."
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-20/revision-v2/direction-v2.json",
+    "sha256": "f700d90a4274d8991e2e00bce2c0a7dbe0902fe7357e79a0e135d747da179ed3"
+  },
+  "productionBegun": true,
+  "workInProgress": null,
+  "candidate": {
+    "media": {
+      "id": "media.8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac",
+      "sha256": "8c457201205fcdc811a4894b59cfdd9472d110b2f12c45dc70e02f4b722c32ac"
+    },
+    "durationSeconds": 49.233333333333334,
+    "factualSafeguards": [
+      "Usually, not universal self-tickle impossibility.",
+      "Prediction contributes to attenuation; no literal subtractor, complete cancellation or unique anatomical locus.",
+      "Classic and robot light-touch experiments are explicitly distinguished from laughter-inducing tickling.",
+      "Robot delay result is an initial comparison; repeated exposure retunes judgments.",
+      "Light tickly sensation can be self-evoked; individual/context differences and unresolved laughter mechanism remain explicit."
+    ],
+    "unusualProduction": [
+      "Owner-authorized focused V2; exact V1 af_heart narration/sound AAC stream and1477-frame timing preserved.",
+      "Exact V1 science, qualifications and script preserved; V1 remains unapproved and unchanged.",
+      "No paid services, delivery, upload, scheduling or publication authority."
+    ],
+    "platformPreflight": [
+      {
+        "platform": "youtube",
+        "surface": "youtube-shorts-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-20/revision-v2/preflight/youtube.json",
+          "sha256": "58962a70a4e8e48ccec52aeba32dfc9848b57f16f6b98d7e26da649b782f553c"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/youtube.json",
+          "sha256": "c6993779783929513942b32a75b64f41d7159fca6d073d7758e51a48bb7373d9"
+        }
+      },
+      {
+        "platform": "tiktok",
+        "surface": "tiktok-feed",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-20/revision-v2/preflight/tiktok.json",
+          "sha256": "26885bd1774c242befb838197b783daea9562a0b2ce44da9cf464d3cdf8c6375"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/tiktok.json",
+          "sha256": "af226fbb043bdd961e612469b991cd0237d5adae7e2723d156eb69b3d3ada6f2"
+        }
+      },
+      {
+        "platform": "instagram",
+        "surface": "instagram-reels-playback",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-20/revision-v2/preflight/instagram.json",
+          "sha256": "fbf5a22ceb5db51754a75a0a9cd0016683b2012fac4ff89f35ae8a5bf2bbbfed"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/instagram.json",
+          "sha256": "e85e2b7bf53454da23abecdce30fe77feebadc49cb452e4b63b44768ccbfa5dc"
+        }
+      },
+      {
+        "platform": "facebook",
+        "surface": "facebook-reels-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-20/revision-v2/preflight/facebook.json",
+          "sha256": "baa28dc71a3696a4dba3fc95b2da37dc645950fb42253f26c44142eeb1f91685"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-20/production-v1/profiles/facebook.json",
+          "sha256": "b2fa17c75d5049317565bc0818c2d8401bd9b3f7746ec81b1f8ded6c7fe56891"
+        }
+      }
+    ],
+    "uncertainties": [
+      "Macro body/hands, sensation ripples and robot are qualitative original illustrations.",
+      "Anticipated contact overlay is a conceptual metaphor, not a neural recording or calibrated signal amplitude.",
+      "No subjective continuous audiovisual playback/listening or actual-phone/native-app test available.",
+      "Caption within-take phrase timing authored approximately, not listening-certified forced alignment.",
+      "Provisional inset geometry and sampled motion cannot prove native UI safety."
+    ]
+  },
+  "masterApproved": false,
+  "masterDecision": null,
+  "platformMedia": [],
+  "publicationAuthorized": false,
+  "observations": []
+}
