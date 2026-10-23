@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.yamaguchi-two-bombs.tiktok.delivery-v1",
+  "revision": 1,
+  "platform": "tiktok",
+  "surface": "tiktok-feed",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-18T22:39:20.533Z",
+  "reviewAfter": "2026-10-18T22:39:20.533Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "provisional",
+    "regions": [
+      {
+        "x": 84,
+        "y": 240,
+        "width": 806,
+        "height": 1370
+      }
+    ],
+    "rationale": "Repository projection only. src/design/safe-areas.ts; Speed of Light iPhone 17 Pro Max 2026-09-27 historical pass, app/OS/hash unknown; Caption-specific region and exact native UI exclusion geometry require renewed review; unknown dates remain null. Existing video bindings unchanged.",
+    "provenance": [
+      {
+        "path": "artifacts/presentation-profiles.json",
+        "sha256": "33d66ce6fee9bbfa4c05720b2270d07319f250d2d0673b1b50856715bd81c2cb"
+      }
+    ]
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy native exclusions; null stays unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Legacy caption geometry; null stays unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "No legacy measured crop model; nothing inferred.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "mp4"
+    ],
+    "videoCodecs": [
+      "h264"
+    ],
+    "audioCodecs": [
+      "aac"
+    ],
+    "fps": [
+      30
+    ],
+    "duration": {
+      "minimum": 3,
+      "maximum": 90
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/policy-inspection-v1.json",
+        "sha256": "819f3b5f55952e23f65813fbed33cabea9ca4eb1bce51ffe4f4f4cdf6ec3b371"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/tiktok.json",
+        "sha256": "01a150398ad1dd497ef67faad6b1008096537b31bace6863b4086468f12762f8"
+      }
+    ],
+    "rationale": "Conservative internal3\u201390second MP4/H264/AAC30fps envelope for the unchanged64.426second candidate. Official source inspection supports longer-than60second uploads; this is not a claimed complete native limit. Original geometry and overdue review dates retained; live account acceptance remains unknown."
+  }
+}

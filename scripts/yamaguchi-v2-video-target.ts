@@ -1,0 +1,5 @@
+import {yamaguchiTwoBombs} from '../src/content/videos/yamaguchi-two-bombs';
+import captions from '../src/captions/plans/yamaguchi-two-bombs-v2.json';
+import plan from '../src/production/plans/yamaguchi-two-bombs-v2.json';
+const points=[0,71,72,145,146,284,285,479,486,488,503,517,518,603,604,669,670,749,750,777,778,824,825,923,924,1013,1014,1029,1040,1067,1150,1151,1283,1284,1425,1426,1598,1599,1687,1688,1792,1793,1930,...plan.beats.flatMap(b=>[b.frames.start,Math.floor((b.frames.start+b.frames.end)/2),b.frames.end-1]),...captions.cues.map(c=>Math.floor((c.startFrame+c.endFrame)/2)),...Array.from({length:10},(_,i)=>450+i*7),...Array.from({length:15},(_,i)=>670+i*12),...Array.from({length:10},(_,i)=>1014+i*12)];
+export const yamaguchiV2Target={spec:{...yamaguchiTwoBombs,id:'yamaguchi-two-bombs-v2',compositionId:'Magnivis-Yamaguchi-Two-Bombs-V2'},entryPoint:'src/yamaguchi-v2-index.tsx',output:'artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v2.mp4',qaDirectory:'qa/yamaguchi-two-bombs-v2',qaTimestamps:[...new Set(points.map(f=>Math.floor(f)/30))].sort((a,b)=>a-b)};

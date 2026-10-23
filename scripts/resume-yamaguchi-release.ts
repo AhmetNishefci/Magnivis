@@ -1,0 +1,25 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {mediaHash} from '../src/artifacts/media';
+import {openMediaCatalog} from '../src/artifacts/catalog';
+import {sha256Json} from '../src/content-intelligence/run-schema';
+import {assessPresentationV3} from '../src/workflow/presentation';
+import {cycleDeliverySchema,cycleReleaseSchema,inspectCycleRelease} from '../src/workflow/release';
+import {loadCycle,persistCycleEvent} from '../src/workflow/store';
+const p='content-intelligence/cycles/cycle-23/delivery-v1',registry=openMediaCatalog(),at=new Date().toISOString(),cycle=loadCycle(process.cwd(),'cycle.23',registry);
+if(cycle.stage!=='presentation'||cycle.revision!==14||!cycle.masterDecision||!cycle.candidate)throw new Error('Expected approved V2 and unfinished presentation');
+const read=(path:string)=>JSON.parse(readFileSync(path,'utf8')),ref=(path:string)=>({path,sha256:mediaHash(path)}),put=(name:string,data:unknown)=>{const path=p+'/'+name+'.json';writeFileSync(path,JSON.stringify(data,null,2)+'\n',{flag:'wx'});return ref(path);};
+const master=read(cycle.candidate.path).media;
+if(master.sha256!=='9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7'||mediaHash(registry.resolveFile(master))!==master.sha256)throw new Error('Approved master changed');
+const deliveries=['youtube','tiktok','instagram','facebook'].map(platform=>{
+ const profile=ref(`${p}/${platform}/video-profile-v1.json`),evidence=read(`${p}/${platform}/video-evidence-v1.json`);evidence.profileSha256=sha256Json(read(profile.path));evidence.reports.push(ref(p+'/profile-binding-correction-v1.json'));
+ const assessed=assessPresentationV3(evidence,read(profile.path),master,registry,at);if(assessed.collisions.length)throw new Error('Known presentation collision');
+ const presentation=put(`${platform}/video-evidence-v2`,evidence),variant={id:`yamaguchi-two-bombs.variant.${platform}.v1`,revision:2,platform,surface:read(profile.path).surface,media:master,master,relationship:'exact-master' as const,adaptationReason:null,presentation,profile};
+ const prior=read(`${p}/${platform}/manifest-v1.json`),manifest=cycleDeliverySchema.parse({...prior,id:`delivery.cycle-23.${platform}.v2`,variantSha256:sha256Json(variant)});
+ return {variant,manifest:put(`${platform}/manifest-v2`,manifest)};
+});
+const release=cycleReleaseSchema.parse({schemaVersion:3,cycleId:cycle.id,deliveries}),inspection=inspectCycleRelease(release,registry,at),record=put('release-v1',release);
+put('release-inspection-v1',{inspectedAt:at,...inspection,knownCollisions:[],noPublicationAuthorization:true});
+put('risk-register-v1',{cycleId:cycle.id,release:record,targetSha256:sha256Json(release),inspectedAt:at,acceptedByOwner:false,requiredExactPresentationUnknowns:inspection.unknowns,additionalOperationalUnknowns:read(p+'/presentation-analysis-v1.json').additionalUnknowns,knownCollisions:[],requirement:'Exact V2 playback approval permits delivery preparation only. Separate publication authorization and explicit resolution/acceptance of each presentation unknown are still required. No upload, scheduling or publication.'});
+put('implementation-bindings-v1',{enteredAt:at,sourceBaseCommit:read(p+'/preservation-baseline.json').head,files:['scripts/record-yamaguchi-approval.ts','scripts/prepare-yamaguchi-release.ts','scripts/resume-yamaguchi-release.ts','scripts/validate-yamaguchi-release.ts',p+'/policy-inspection-v1.json',p+'/profile-binding-correction-v1.json'].map(ref),preservedFailedStudy:['youtube','tiktok','instagram','facebook'].map(platform=>ref(`${p}/${platform}/manifest-v1.json`)),note:'Corrected delivery profile binding; strict export validation retained. Approved video/voice/captions/history untouched.'});
+put('presentation-complete-event-v1',{type:'complete-internal',stage:'presentation',record,at});
+const state=persistCycleEvent(process.cwd(),cycle,{type:'complete-internal',stage:'presentation',record,at},registry);console.log(JSON.stringify({stage:state.stage,revision:state.revision,release:record,knownCollisions:0,unknowns:inspection.unknowns.length,master,publicationAuthorized:false}));

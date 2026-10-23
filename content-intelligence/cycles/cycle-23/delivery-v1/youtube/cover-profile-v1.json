@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 3,
+  "id": "presentation-profile.yamaguchi-two-bombs.youtube.cover-v1",
+  "revision": 1,
+  "platform": "youtube",
+  "surface": "youtube-cover",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reviewedAt": "2026-10-23T16:22:29.899Z",
+  "reviewAfter": "2026-10-30T16:22:29.899Z",
+  "lifecycle": "current",
+  "compositionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Exact canvas checked; native thumbnail composition unmeasured.",
+    "provenance": []
+  },
+  "nativeExclusions": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native thumbnail UI geometry unknown.",
+    "provenance": []
+  },
+  "captionSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Native cover overlay geometry unknown.",
+    "provenance": []
+  },
+  "cropSafe": {
+    "state": "unknown",
+    "regions": null,
+    "rationale": "Profile/grid/feed/search crop unknown; no crop invented.",
+    "provenance": []
+  },
+  "export": {
+    "containers": [
+      "png"
+    ],
+    "videoCodecs": [
+      "png"
+    ],
+    "audioCodecs": [
+      "not-applicable"
+    ],
+    "fps": [
+      1
+    ],
+    "duration": {
+      "minimum": 1,
+      "maximum": 1
+    },
+    "provenance": [
+      {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/selected-cover-v1.json",
+        "sha256": "2e0b2b4f59324f620665c61e4c6a220fc8733eee704ff94cf9ee24015d83c3dc"
+      },
+      {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/policy-inspection-v1.json",
+        "sha256": "819f3b5f55952e23f65813fbed33cabea9ca4eb1bce51ffe4f4f4cdf6ec3b371"
+      }
+    ],
+    "rationale": "Exact decoded1080×1920PNG or corresponding native frame; actual controls/crops untested."
+  }
+}

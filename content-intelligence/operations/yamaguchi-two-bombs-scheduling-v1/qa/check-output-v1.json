@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-10-23T16:51:22.064973Z",
+  "command": "pnpm check",
+  "exitCode": 0,
+  "rawOutputSha256": "0594622d9976a0d2d4895e597285dee2f4cced08cfa752e7a34961615ca0ee73",
+  "utf8Content": "\n> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis\n> pnpm validate && git diff --check\n\n\n> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis\n> pnpm typecheck && pnpm lint && pnpm test\n\n\n> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis\n> tsc --noEmit\n\n\n> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis\n> eslint src scripts tests remotion.config.ts vitest.config.ts\n\n\n> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis\n> vitest run\n\n\n RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  56 passed (56)\n      Tests  519 passed (519)\n   Start at  18:47:48\n   Duration  94.66s (tests 94%, import 5%, transform 1%)\n\n",
+  "retention": "Exact command output including final blank lines; JSON snapshot preserves default Git whitespace checks."
+}

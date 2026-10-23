@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "id": "production-plan.yamaguchi-two-bombs.v1",
+  "revision": 1,
+  "status": "implementation-ready",
+  "knowledgePackage": {
+    "id": "yamaguchi-two-bombs",
+    "revision": 1,
+    "sha256": "4574d3f53325c1351302644da0a741192848b80b6ad2c7bb1da855c4a7af72ba"
+  },
+  "contentAsset": {
+    "id": "yamaguchi-two-bombs.asset.return-home",
+    "revision": 1,
+    "sha256": "b6cdcd2f0901732b5b0020d4dab52cdc5b2286c225ff24eb8eb13db59eadd0de"
+  },
+  "internalEditorialAuthority": {
+    "kind": "internal-evidence-review",
+    "cycleId": "cycle.23",
+    "reviewSha256": "32bc515ca9951255ce70e237ee921aa6c25d5f76d6053598548b1291cce30cf1"
+  },
+  "presentationProfiles": [
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/youtube.json",
+      "sha256": "9ada3a7351c7bd90dfe82ee244d9f590ee1105582b07ed17a598fa509a475f93"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/tiktok.json",
+      "sha256": "01a150398ad1dd497ef67faad6b1008096537b31bace6863b4086468f12762f8"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/instagram.json",
+      "sha256": "9d5d6a0aa0e47e602ff73693eee544c438e87767954caa66077c68c3d3381e49"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/facebook.json",
+      "sha256": "904e5e446ed248d94c350f05f8daa0141549895dc6e1f8d84c36b83781060fb0"
+    }
+  ],
+  "approvedScriptSha256": "ccf7fc2e5b003f9c6fe538790bed56487dd6abc84a7cfb9da3044398e637643d",
+  "creativeDirection": {
+    "id": "creative-direction.yamaguchi-two-bombs.v1",
+    "revision": 1,
+    "sha256": "12309068f0ece140a9326033ca10090c46d940f346ba65533b0a8a589fc4d8c8"
+  },
+  "executionPolicy": {
+    "policySha256": "d025583e3d53cd653cc947d2217ebc34b57427879bc262b1c912285f67c91b85",
+    "narrator": {
+      "provider": "kokoro-local",
+      "voiceId": "af_heart",
+      "deviationRationale": null
+    },
+    "visualAuthority": "story-specific",
+    "captionAuthority": "story-specific",
+    "soundscapeAuthority": "story-specific",
+    "universalMusicRequired": false,
+    "durationAuthority": "story-led",
+    "monetizationOnlyPadding": false
+  },
+  "excludedClaimIds": [],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 64.36666666666666
+  },
+  "safeAreaProfileId": "safe-area.youtube-shorts.v2",
+  "beats": [
+    {
+      "id": "yamaguchi.production.1",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.1",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.1",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.1"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.double"
+      ],
+      "frames": {
+        "start": 0,
+        "end": 146
+      },
+      "sceneType": "survival-hook",
+      "objective": "Intimate young engineer portrait; true story identification and explicit reconstruction disclosure.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.2",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.2",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.2",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.2"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.engineer"
+      ],
+      "frames": {
+        "start": 146,
+        "end": 285
+      },
+      "sceneType": "identity",
+      "objective": "Move from face toward ship-design papers and1945 setting; same engineer identity.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.3",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.3",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.3",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.3"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.engineer",
+        "yamaguchi-two-bombs.claim.hiroshima"
+      ],
+      "frames": {
+        "start": 285,
+        "end": 518
+      },
+      "sceneType": "hiroshima",
+      "objective": "Hiroshima morning context; date and restrained distant light, no mushroom-cloud spectacle.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.4",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.4",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.4",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.4"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.burns"
+      ],
+      "frames": {
+        "start": 518,
+        "end": 604
+      },
+      "sceneType": "injury",
+      "objective": "Ash and damaged environment; bandaged same engineer, no graphic wounds.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.5",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.5",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.5",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.5"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.train"
+      ],
+      "frames": {
+        "start": 604,
+        "end": 825
+      },
+      "sceneType": "journey",
+      "objective": "Hiroshima to Nagasaki geographic map animated as city link, then rail travel; no claimed exact itinerary.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.6",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.6",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.6",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.6"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.workplace"
+      ],
+      "frames": {
+        "start": 825,
+        "end": 1014
+      },
+      "sceneType": "workplace",
+      "objective": "Nagasaki August9; same bandaged man at design office, no invented dialogue enacted.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.7",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.7",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.7",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.7"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.workplace",
+        "yamaguchi-two-bombs.claim.nagasaki"
+      ],
+      "frames": {
+        "start": 1014,
+        "end": 1151
+      },
+      "sceneType": "second-flash",
+      "objective": "Office light intensifies and papers move, aftermath held; second event unmistakably separated by city/date.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.8",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.8",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.8",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.8"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.double",
+        "yamaguchi-two-bombs.claim.family-survival"
+      ],
+      "frames": {
+        "start": 1151,
+        "end": 1284
+      },
+      "sceneType": "surviving-family",
+      "objective": "Reflective aftermath; wife/infant survival stated without invented family reunion scene.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.9",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.9",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.9",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.9"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.loss"
+      ],
+      "frames": {
+        "start": 1284,
+        "end": 1426
+      },
+      "sceneType": "human-cost",
+      "objective": "City absence and ruins acknowledge lives lost; no triumph or graphic victims.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.10",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.10",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.10",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.10"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.recognition"
+      ],
+      "frames": {
+        "start": 1426,
+        "end": 1599
+      },
+      "sceneType": "recognition",
+      "objective": "Geographic two-city record resolves official double-exposure distinction, no fabricated certificate.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.11",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.11",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.11",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.11"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.plural"
+      ],
+      "frames": {
+        "start": 1599,
+        "end": 1688
+      },
+      "sceneType": "other-survivors",
+      "objective": "Plural survivor distinction clear in caption; map retains two cities.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.12",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.12",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.12",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.12"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.death"
+      ],
+      "frames": {
+        "start": 1688,
+        "end": 1793
+      },
+      "sceneType": "long-life",
+      "objective": "Life dates1916–2010 and93; no unverified aged likeness or false archival portrait.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    },
+    {
+      "id": "yamaguchi.production.13",
+      "sourceVisualPlanId": "yamaguchi-two-bombs.asset.return-home.visual.13",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.13",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.13"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.advocacy"
+      ],
+      "frames": {
+        "start": 1793,
+        "end": 1931
+      },
+      "sceneType": "witness",
+      "objective": "Quiet empty drafting desk/paper toward soft daylight, later witness and abolition message; no unrelated slogan.",
+      "onScreenText": [],
+      "animationIntent": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction.",
+      "transitionIntent": "Same plausible engineer representation and left-side bandages; date/city established before distinct light events. Original map links cities, not a train-route reconstruction. Geographic scene bridges into layered moving rail environment.",
+      "audioIntent": "Exact measured af_heart, original restrained room/rail air; light events reduce ambience, no bomb-impact spectacle."
+    }
+  ],
+  "assets": [
+    {
+      "id": "yamaguchi.graphics",
+      "kind": "procedural-visual",
+      "provenance": {
+        "origin": "Original Magnivis code and built-in imagegen assets",
+        "rights": "Original output; no exclusivity claim",
+        "notes": "Disclosed reconstruction, original schematic city-link map, deterministic environmental animation.",
+        "evidence": "content-intelligence/cycles/cycle-23/production-v1/rights-provenance.json"
+      }
+    },
+    {
+      "id": "yamaguchi.font",
+      "kind": "font",
+      "provenance": {
+        "origin": "Pinned Fontsource Manrope5.3.0",
+        "rights": "SIL OFL1.1",
+        "notes": "Existing licensed font.",
+        "evidence": "node_modules/@fontsource/manrope/LICENSE"
+      }
+    },
+    {
+      "id": "yamaguchi.narration",
+      "kind": "audio",
+      "path": "public/audio/yamaguchi-two-bombs/narration",
+      "provenance": {
+        "origin": "Local Kokoro af_heart",
+        "rights": "Existing Apache2.0model",
+        "notes": "Exact internally evidence-verified narration.",
+        "evidence": "src/production/narration/yamaguchi-two-bombs.json"
+      }
+    },
+    {
+      "id": "yamaguchi.soundscape",
+      "kind": "audio",
+      "path": "public/audio/yamaguchi-two-bombs/soundscape.wav",
+      "provenance": {
+        "origin": "Original deterministic synthesis",
+        "rights": "Project-owned",
+        "notes": "Reconstructed room, air and quiet rail texture; no sampled music.",
+        "evidence": "content-intelligence/cycles/cycle-23/production-v1/rights-provenance.json"
+      }
+    }
+  ],
+  "captions": {
+    "file": "captions/yamaguchi-two-bombs.en.vtt",
+    "captionPlanId": "caption-plan.yamaguchi-two-bombs.v1",
+    "captionPlanRevision": 1,
+    "captionPlanSha256": "5033d73087cef156090f49b27626183a5cc2d074784eff3df3b6ed3bbcc6d043",
+    "generatorId": "generator.yamaguchi-phrases.v1",
+    "generatorVersion": 1,
+    "source": "approved-narration-cues",
+    "designedBurnedIn": true,
+    "placement": "optional-platform-track-lower-center"
+  },
+  "reviewRequirements": [
+    "HiroshimaAug6→trainAug7, arrivalAug8→NagasakiAug9; no false same-day travel implication.",
+    "Conversation is recalled, no invented quotes, thoughts, exact distances or radiation doses.",
+    "Severe burns, family survival and catastrophic loss must prevent immunity/unharmed implication.",
+    "Official2009 recognition distinct from being the only double survivor.",
+    "Same engineer/clothing/left bandages; generated actor not verified portrait.",
+    "No archive aesthetic conceals reconstruction; disclosure legible.",
+    "Chronological decoded sequence, every caption midpoint, phone-scale and before/at/after light and train transition inspection.",
+    "Measured mix, proper-name input phonemes and output ASR separate from subjective owner listening.",
+    "No subjective playback/device certification inferred from full decode.",
+    "Stop at Cycle23 V1 master review; no platform preparation or publication."
+  ]
+}

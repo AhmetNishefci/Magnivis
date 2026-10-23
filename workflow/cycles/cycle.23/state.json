@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 3,
+  "id": "cycle.23",
+  "revision": 15,
+  "authority": {
+    "path": "workflow/authorities/cycle-23-start.json",
+    "sha256": "9c48625d162f3b169b2424ea61742a5d2aab5d99584d553c872c32a3fccc189d"
+  },
+  "stage": "publication-review",
+  "workInProgress": null,
+  "receipts": [
+    {
+      "stage": "discovery",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-23/topic-selection-v1.json",
+        "sha256": "7f60e7d65708cf36d77530a5bead7d1dd8f31cc75a9291c2dd12cc8224c46a54"
+      }
+    },
+    {
+      "stage": "editorial",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-23/editorial-receipt.json",
+        "sha256": "c5222fa075e481a7a172f05724479b22a0070ee04ca69aba8ab2026a498d859d"
+      }
+    },
+    {
+      "stage": "creative",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/direction-v2.json",
+        "sha256": "0641100e3c5627366b30403718e781f5556ed9da353fc5c6545ceb5d92666241"
+      }
+    },
+    {
+      "stage": "production",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/master-candidate-v2.json",
+        "sha256": "9a3b0c7b7472c079e0415389d0f59beb5804b5365c0db2b680a518062af5c15f"
+      }
+    },
+    {
+      "stage": "presentation",
+      "record": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/release-v1.json",
+        "sha256": "9ea4454728bb26ab0c6de3f1582a0cc62479b0368cae18d3df055dd3ffce6e97"
+      }
+    }
+  ],
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-23/topic-selection-v1.json",
+    "sha256": "7f60e7d65708cf36d77530a5bead7d1dd8f31cc75a9291c2dd12cc8224c46a54"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-23/owner-premise-authority.json",
+    "sha256": "ae82794eb3148771b749dd34624969336aee1e578a08ff9e179ff99088bc1794"
+  },
+  "candidate": {
+    "path": "content-intelligence/cycles/cycle-23/revision-v2/master-candidate-v2.json",
+    "sha256": "9a3b0c7b7472c079e0415389d0f59beb5804b5365c0db2b680a518062af5c15f"
+  },
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/master-approval-v1.json",
+    "sha256": "7788acbeb4254b67567fac2a1ad4a27cd1406590e058c2181add0165b7ea80d5"
+  },
+  "release": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/release-v1.json",
+    "sha256": "9ea4454728bb26ab0c6de3f1582a0cc62479b0368cae18d3df055dd3ffce6e97"
+  },
+  "publicationDecision": null,
+  "exception": null,
+  "observations": [],
+  "history": [
+    {
+      "revision": 1,
+      "previousSha256": "7eb677c77d65d5de93c9316334ac54bf6710b26b82e4fd6cfcedbf88afc64534",
+      "event": "discovery",
+      "at": "2026-10-18T22:33:46.189Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/topic-selection-v1.json",
+        "sha256": "7f60e7d65708cf36d77530a5bead7d1dd8f31cc75a9291c2dd12cc8224c46a54"
+      }
+    },
+    {
+      "revision": 2,
+      "previousSha256": "d581513d125707889c016164bd6be99143d75aabe03fcd2c091cafe4f1a7ca08",
+      "event": "owner-decision",
+      "at": "2026-10-18T22:33:46.222Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/owner-premise-authority.json",
+        "sha256": "ae82794eb3148771b749dd34624969336aee1e578a08ff9e179ff99088bc1794"
+      }
+    },
+    {
+      "revision": 3,
+      "previousSha256": "8a2bde6fb92a5a9d72672d07157ae6692b20d3e88be0cbda5e38882a680db53f",
+      "event": "begin-editorial",
+      "at": "2026-10-18T22:33:46.259Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/editorial-start.json",
+        "sha256": "b6610a5a588bcea62366fb545f30ec48733e12631130b5df4db5ad8780a4e301"
+      }
+    },
+    {
+      "revision": 4,
+      "previousSha256": "0d3f104386676c2ed3efa7f37b8a9bb1f0826d1d289f8b0c4d08b0da3dd2ef3a",
+      "event": "editorial",
+      "at": "2026-10-18T22:33:46.299Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/editorial-receipt.json",
+        "sha256": "c5222fa075e481a7a172f05724479b22a0070ee04ca69aba8ab2026a498d859d"
+      }
+    },
+    {
+      "revision": 5,
+      "previousSha256": "66049bbb2cafa922e27ef065d74e3a136cca03781aa3a32f1b27626332f6121d",
+      "event": "creative",
+      "at": "2026-10-18T22:34:40.107Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/direction-ready.json",
+        "sha256": "983536eda196fa177e149284924d40a9b9075b61d011547780177fc647dbb3d2"
+      }
+    },
+    {
+      "revision": 6,
+      "previousSha256": "e9855a89f832f1e171de01c0c39a9adae5d0373c0ef1b5d0d871e57dc090bddd",
+      "event": "begin-production",
+      "at": "2026-10-18T22:34:40.548Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/production-start.json",
+        "sha256": "db876e036f8c4178dca1b30aaa5a4d70e2432209f12470d3d40f629701b9224d"
+      }
+    },
+    {
+      "revision": 7,
+      "previousSha256": "202c2ebfad29c6fb0aedf5b8813c14234de2f9e587d1936560e4d61302750784",
+      "event": "production",
+      "at": "2026-10-18T22:52:29.953Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/master-candidate-v1.json",
+        "sha256": "412bb15c0dd1b2304b771ccd4d77c52f97b9d5c5c12e759e5d75c7cc761e89ea"
+      }
+    },
+    {
+      "revision": 8,
+      "previousSha256": "4549c4d7ea79003b97080406265d1804590e98b1ef4928fda5863a9642622e25",
+      "event": "owner-decision",
+      "at": "2026-10-18T23:41:27.844Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/owner-master-revision.json",
+        "sha256": "b4e92f1746b118fa09a501c0280d702b354313fac2013872973d13492e7a3e38"
+      }
+    },
+    {
+      "revision": 9,
+      "previousSha256": "322afbbc229a6e8c38db1184d6081a1277656c7cc20e55bfd9cdb0e0454b81bc",
+      "event": "retry-internal",
+      "at": "2026-10-18T23:41:30.292Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/creative-revision-start.json",
+        "sha256": "19335c023be78f7f918c372b76cdcd9e215935f33565a373d3fa685123edb77a"
+      }
+    },
+    {
+      "revision": 10,
+      "previousSha256": "ab0006abf71577f1d5b04e6d1d4ce5acfd687cb9c5bc78dde2a77499da64b70a",
+      "event": "creative",
+      "at": "2026-10-18T23:41:32.185Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/direction-v2.json",
+        "sha256": "0641100e3c5627366b30403718e781f5556ed9da353fc5c6545ceb5d92666241"
+      }
+    },
+    {
+      "revision": 11,
+      "previousSha256": "5ec1d37e3b23d5c53a694dbed632525181e4cf7afd1392683aa120927087522f",
+      "event": "begin-production",
+      "at": "2026-10-18T23:41:34.208Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/production-start.json",
+        "sha256": "e56c244e61d1e3ca0fdbe858fe7569512af027cd9d610e4d854e5d3d5d436497"
+      }
+    },
+    {
+      "revision": 12,
+      "previousSha256": "4db465486fca63fac444846ea28c1e53ca2352517409ae174c8e83728f7ea73d",
+      "event": "production",
+      "at": "2026-10-19T14:55:32.078Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/master-candidate-v2.json",
+        "sha256": "9a3b0c7b7472c079e0415389d0f59beb5804b5365c0db2b680a518062af5c15f"
+      }
+    },
+    {
+      "revision": 13,
+      "previousSha256": "26637f473d97361e7ef79067c72cc318acdfb5443a2d34c0ad5ff7ecea8f65cc",
+      "event": "owner-decision",
+      "at": "2026-10-23T16:15:06.353Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/master-approval-v1.json",
+        "sha256": "7788acbeb4254b67567fac2a1ad4a27cd1406590e058c2181add0165b7ea80d5"
+      }
+    },
+    {
+      "revision": 14,
+      "previousSha256": "78bf15326789288142abe9bf6b66628383eb9992dad1145f7cd8e9808a95e043",
+      "event": "begin-presentation",
+      "at": "2026-10-23T16:15:10.281Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/presentation-start-v1.json",
+        "sha256": "3e0eef4ed0ad4ef9b88b46d269c26183727844273ee0aac8e5345a0264a5f8fd"
+      }
+    },
+    {
+      "revision": 15,
+      "previousSha256": "90ee38152e8cbe5e53f62e277c8829da5377f0962708281566d7a9d5bda172d8",
+      "event": "presentation",
+      "at": "2026-10-23T16:25:52.771Z",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/release-v1.json",
+        "sha256": "9ea4454728bb26ab0c6de3f1582a0cc62479b0368cae18d3df055dd3ffce6e97"
+      }
+    }
+  ]
+}

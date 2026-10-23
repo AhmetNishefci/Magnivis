@@ -1,0 +1,81 @@
+{
+  "cycleId": "cycle.23",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-23T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-23T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; Python zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-23T16:45:06.198934Z",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "platform": "facebook",
+  "ownerReport": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/owner-report.json",
+    "sha256": "35249d3d84cb6d4e3bd22d3be81b0a2fa30bb305e1bbca676bf8855d7b013d7b"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v2.mp4",
+    "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/release-v1.json",
+    "sha256": "9ea4454728bb26ab0c6de3f1582a0cc62479b0368cae18d3df055dd3ffce6e97"
+  },
+  "intendedVariant": {
+    "id": "yamaguchi-two-bombs.variant.facebook.v1",
+    "revision": 2,
+    "media": {
+      "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+      "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+    }
+  },
+  "intendedDelivery": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/manifest-v2.json",
+    "sha256": "e4ea6dcd4d43eea38d545a87f7aa4a2dd1fe341361a7cca852681796fbac1b8b"
+  },
+  "intendedArtifacts": [
+    {
+      "role": "video",
+      "media": {
+        "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+        "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+      }
+    },
+    {
+      "role": "cover",
+      "media": {
+        "id": "media.3b85319959864593baad13b9250fa34d038edc0d1e21c281dd73d608b5d57c1e",
+        "sha256": "3b85319959864593baad13b9250fa34d038edc0d1e21c281dd73d608b5d57c1e"
+      },
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/cover-evidence-v1.json",
+        "sha256": "91cb549eb8053b595b4d7929767f1cc677eeef1c18e7637d2f3d0542dab03cd5"
+      },
+      "profile": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/cover-profile-v1.json",
+        "sha256": "6e1a2404c3070b67a1964beb172e3a961ec0818d12cf0c48a1f0334ca3e1e2a5"
+      }
+    }
+  ],
+  "identityBasis": "Owner-designated approved master and selected manifest-v2 package; actual upload identity not independently verified."
+}

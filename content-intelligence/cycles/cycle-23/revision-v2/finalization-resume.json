@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-19T14:51:14.271Z",
+  "reason": "Original finalizer completed full decode, source binding,30media registrations and exact-media final QA, then failed preflight ISO-format validation before candidate/event. No bytes overwritten and no duplicate registration.",
+  "originalFinalizer": {
+    "path": "scripts/finalize-yamaguchi-v2.ts",
+    "sha256": "5ac843c6e4eab2107909c4a2e7ecddfd40caab3021bc46be339f4a026182d249"
+  },
+  "originalImplementation": {
+    "path": "content-intelligence/cycles/cycle-23/revision-v2/implementation-bindings.json",
+    "sha256": "725864b9eb49cf02f60ed545a731f4ee303d0b00c7fc4cdaa6e041205e6234d4"
+  },
+  "resumeImplementation": {
+    "path": "scripts/resume-yamaguchi-v2-finalization.ts",
+    "sha256": "6bc91328b0e1a2e8157aabb16feeb9edbe206875e4075011b0bf8bbbeaa82e53"
+  },
+  "timestampNormalization": {
+    "original": "2026-10-19T14:26:55.690870+00:00",
+    "normalized": "2026-10-19T14:26:55.690Z",
+    "reason": "Presentation schema accepts UTC Z only; authored Python ISO+00:00 represents identical instant. Preserve original evidence bytes, normalize only adapter input."
+  },
+  "media": {
+    "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+    "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+  },
+  "qa": {
+    "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/final-report.json",
+    "sha256": "3add423e77e6342d5a7541d8b0be160fa1f19e3f2e1b2e7d47ff7be3be732ffc"
+  }
+}

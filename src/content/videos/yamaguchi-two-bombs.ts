@@ -1,0 +1,5 @@
+import {videoSpecSchema} from '../schema';
+import plan from '../../production/plans/yamaguchi-two-bombs.json';
+import asset from '../../../content-intelligence/cycles/cycle-23/content-asset.ready.json';
+import narration from '../../production/narration/yamaguchi-two-bombs.json';
+export const yamaguchiTwoBombs=videoSpecSchema.parse({id:'yamaguchi-two-bombs',compositionId:'Magnivis-Yamaguchi-Two-Bombs',workingTitle:'He Survived Two Atomic Bombs',titleCandidates:['He Survived Two Atomic Bombs'],descriptionCandidates:['The documented life and double exposure of Tsutomu Yamaguchi.'],hook:asset.script.segments[0]!.text,pillar:'history',status:'production',language:'en',contentAssetId:asset.id,captions:[{language:'en',label:'English',file:plan.captions.file}],format:plan.format,scenes:plan.beats.map(b=>({id:b.sceneType,start:b.frames.start/30,end:b.frames.end/30,purpose:b.objective})),audio:{file:narration.cues[0]!.file,layers:['narration','ambient'],narration:true,narrationCues:narration.cues}});

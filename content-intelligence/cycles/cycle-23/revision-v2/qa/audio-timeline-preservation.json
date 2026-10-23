@@ -1,0 +1,17 @@
+{
+  "method": "Exact audio packet timestamp/duration/size/flags/skip-sample metadata comparison via ffprobe; payload and decoded PCM equality retained separately.",
+  "equal": true,
+  "reports": [
+    {
+      "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v1.mp4",
+      "packetCount": 3021,
+      "packetTimelineSha256": "b00ccca44fc18ee589a416529683813577c400693cb207eb3442f8f186c15de2"
+    },
+    {
+      "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v2.mp4",
+      "packetCount": 3021,
+      "packetTimelineSha256": "b00ccca44fc18ee589a416529683813577c400693cb207eb3442f8f186c15de2"
+    }
+  ],
+  "mismatches": []
+}

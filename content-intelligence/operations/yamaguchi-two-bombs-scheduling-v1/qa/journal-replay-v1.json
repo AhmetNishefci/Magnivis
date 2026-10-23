@@ -1,0 +1,250 @@
+{
+  "id": "cycle.23",
+  "revision": 15,
+  "premiseApproved": true,
+  "premise": {
+    "path": "content-intelligence/cycles/cycle-23/topic-selection-v1.json",
+    "sha256": "7f60e7d65708cf36d77530a5bead7d1dd8f31cc75a9291c2dd12cc8224c46a54"
+  },
+  "premiseDecision": {
+    "path": "content-intelligence/cycles/cycle-23/owner-premise-authority.json",
+    "sha256": "ae82794eb3148771b749dd34624969336aee1e578a08ff9e179ff99088bc1794"
+  },
+  "stage": "publication-review",
+  "next": {
+    "kind": "owner",
+    "gate": "publication-review"
+  },
+  "topic": {
+    "id": "topic.cycle23.yamaguchi",
+    "rationale": "Owner specified premise and V1 production; claim inspection independently determines permissible story."
+  },
+  "research": {
+    "reviewSha256": "32bc515ca9951255ce70e237ee921aa6c25d5f76d6053598548b1291cce30cf1",
+    "package": "yamaguchi-two-bombs",
+    "verifiedClaimIds": [
+      "yamaguchi-two-bombs.claim.double",
+      "yamaguchi-two-bombs.claim.engineer",
+      "yamaguchi-two-bombs.claim.hiroshima",
+      "yamaguchi-two-bombs.claim.burns",
+      "yamaguchi-two-bombs.claim.train",
+      "yamaguchi-two-bombs.claim.workplace",
+      "yamaguchi-two-bombs.claim.nagasaki",
+      "yamaguchi-two-bombs.claim.family-survival",
+      "yamaguchi-two-bombs.claim.loss",
+      "yamaguchi-two-bombs.claim.recognition",
+      "yamaguchi-two-bombs.claim.plural",
+      "yamaguchi-two-bombs.claim.death",
+      "yamaguchi-two-bombs.claim.advocacy"
+    ]
+  },
+  "narration": {
+    "scriptSha256": "ccf7fc2e5b003f9c6fe538790bed56487dd6abc84a7cfb9da3044398e637643d",
+    "text": "He survived an atomic bomb. Three days later, he survived another. This is Tsutomu Yamaguchi, a Mitsubishi shipbuilding engineer. August sixth, nineteen forty-five. He was in Hiroshima on business when the United States dropped an atomic bomb. Severely burned, he survived. The next day, he boarded a train. It carried him home to Nagasaki. On August ninth, he was back at work. He recalled describing Hiroshima to his manager. Then came another flash. The second atomic bomb had struck. He survived again. His wife and infant son survived too. The bombings killed tens of thousands and left lasting suffering. In two thousand nine, Japan officially recognized his exposure in both cities. He was not the only double survivor. He lived until twenty ten, aged ninety-three. In later years, he urged the world to abolish nuclear weapons."
+  },
+  "direction": {
+    "path": "content-intelligence/cycles/cycle-23/revision-v2/direction-v2.json",
+    "sha256": "0641100e3c5627366b30403718e781f5556ed9da353fc5c6545ceb5d92666241"
+  },
+  "productionBegun": true,
+  "workInProgress": null,
+  "candidate": {
+    "media": {
+      "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+      "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+    },
+    "durationSeconds": 64.36666666666666,
+    "factualSafeguards": [
+      "Core dates and double survival independently corroborated; workplace conversation explicitly retrospective recollection.",
+      "Train boardedAug7; primary account arrivalAug8; no exact itinerary/distance or invented dialogue.",
+      "Severe burns and mass human loss explicit; survival is not immunity. Wife/infant survived Nagasaki, not both bombings.",
+      "Official2009 Nagasaki recognition concerns both-city exposure; other double survivors documented.",
+      "No unsupported cancer/radiation causation or inherited-health claim.",
+      "DeathJan4,2010 age93 and later nuclear-abolition advocacy sourced."
+    ],
+    "unusualProduction": [
+      "Existing af_heart narrator, original generated artwork, original synthesized ambience and original schematic map; no archival production media.",
+      "No paid service purchase, exact master approval, delivery, platform action or publication authority."
+    ],
+    "platformPreflight": [
+      {
+        "platform": "youtube",
+        "surface": "youtube-shorts-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/youtube.json",
+          "sha256": "87a29ebc7fdffef6bd83d94b113023674c4f5639a3f8de3424682053d646acba"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/youtube.json",
+          "sha256": "9ada3a7351c7bd90dfe82ee244d9f590ee1105582b07ed17a598fa509a475f93"
+        }
+      },
+      {
+        "platform": "tiktok",
+        "surface": "tiktok-feed",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/tiktok.json",
+          "sha256": "511bde8ceaff78403aa793d8ae084d974ef9e1b770ae620d299933064fb199ac"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/tiktok.json",
+          "sha256": "01a150398ad1dd497ef67faad6b1008096537b31bace6863b4086468f12762f8"
+        }
+      },
+      {
+        "platform": "instagram",
+        "surface": "instagram-reels-playback",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/instagram.json",
+          "sha256": "bfb7ab90b474341fe4c485856a6cfc334b2a752237caea2cb838531347323836"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/instagram.json",
+          "sha256": "9d5d6a0aa0e47e602ff73693eee544c438e87767954caa66077c68c3d3381e49"
+        }
+      },
+      {
+        "platform": "facebook",
+        "surface": "facebook-reels-viewer",
+        "collisions": [],
+        "unknowns": [
+          "Profile is superseded or due for renewed inspection",
+          "composition: provisional",
+          "nativeUI: unknown",
+          "captions: unknown",
+          "crop: unknown",
+          "Unsampled timeline motion not proven",
+          "No exact-media real-device evidence"
+        ],
+        "evidence": {
+          "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/facebook.json",
+          "sha256": "0414c256a4667b747ff841235d2ca19f49e4bd028396e25c96836cbad36eb270"
+        },
+        "profile": {
+          "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/facebook.json",
+          "sha256": "904e5e446ed248d94c350f05f8daa0141549895dc6e1f8d84c36b83781060fb0"
+        }
+      }
+    ],
+    "uncertainties": [
+      "Original young/aged actor and environment reconstruction; no verified likeness, exact building/rail route, literal later-life venue or authentic footage.",
+      "Original static reconstruction with purposeful state cuts and deterministic map/window motion; no continuous filmed acting.",
+      "Gauze and exact room/street layouts are approximate, not clinical or site surveys.",
+      "Family illness reports remain reserve, not clinically corroborated causation.",
+      "No continuous subjective watching/listening, real-phone/native UI/crop evidence; within-take phrase timing approximate.",
+      "Name input corrected for English narration; owner must judge audible pronunciation and prosody.",
+      "AAC container tail differs slightly from1931-frame picture duration."
+    ]
+  },
+  "masterApproved": true,
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/master-approval-v1.json",
+    "sha256": "7788acbeb4254b67567fac2a1ad4a27cd1406590e058c2181add0165b7ea80d5"
+  },
+  "platformMedia": [
+    {
+      "variantId": "yamaguchi-two-bombs.variant.youtube.v1",
+      "platform": "youtube",
+      "surface": "youtube-shorts-viewer",
+      "media": {
+        "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+        "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/video-evidence-v2.json",
+        "sha256": "1dc0259c0a81fd0d828303506500ad5a4054e41a7e79b06775100e7d5f224959"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/manifest-v2.json",
+        "sha256": "aacbe7011036655807cd4b9e10ac844a7b8cad7c3ac7441dbb7c04c3d0776b46"
+      }
+    },
+    {
+      "variantId": "yamaguchi-two-bombs.variant.tiktok.v1",
+      "platform": "tiktok",
+      "surface": "tiktok-feed",
+      "media": {
+        "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+        "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/video-evidence-v2.json",
+        "sha256": "e434549e0e356dd54ada4a3401c3d792cb09fb47d3dff62dc2a05f53432494b4"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/manifest-v2.json",
+        "sha256": "24f7f6b8745cc944e709f79b7ea452486415b3f27e19c225b9ebf9181723460b"
+      }
+    },
+    {
+      "variantId": "yamaguchi-two-bombs.variant.instagram.v1",
+      "platform": "instagram",
+      "surface": "instagram-reels-playback",
+      "media": {
+        "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+        "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/video-evidence-v2.json",
+        "sha256": "64f1f62c81feafe3c8dd3fa68148146aeb799f4fcc534f6e2a195e2db786b6da"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/manifest-v2.json",
+        "sha256": "b04282735bfe1f8573f40d3756f2f2811090ba8dcd839d2ba6a4f863d2747dd0"
+      }
+    },
+    {
+      "variantId": "yamaguchi-two-bombs.variant.facebook.v1",
+      "platform": "facebook",
+      "surface": "facebook-reels-viewer",
+      "media": {
+        "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+        "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+      },
+      "relationship": "exact-master",
+      "presentation": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/video-evidence-v2.json",
+        "sha256": "32b6e9a631bc4b113f90b4144eeac110f6c7dc74fc553d7f05bd476dd4a85264"
+      },
+      "manifest": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/manifest-v2.json",
+        "sha256": "e4ea6dcd4d43eea38d545a87f7aa4a2dd1fe341361a7cca852681796fbac1b8b"
+      }
+    }
+  ],
+  "publicationAuthorized": false,
+  "observations": []
+}

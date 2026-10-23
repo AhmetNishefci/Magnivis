@@ -1,0 +1,49 @@
+{
+  "enteredAt": "2026-10-23T16:25:52.771Z",
+  "sourceBaseCommit": "8e0cc9ca4311eff2a6ff4954f8c5c9ec5a3d47bb",
+  "files": [
+    {
+      "path": "scripts/record-yamaguchi-approval.ts",
+      "sha256": "06d6f37a0587b3cf2a6668e23d04c00bb54aaf377f74c04ff57cefcc78ca70c8"
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-release.ts",
+      "sha256": "2a51a2810917e7670326bc8217978a899b7a7484340e02db289fa4797be3acea"
+    },
+    {
+      "path": "scripts/resume-yamaguchi-release.ts",
+      "sha256": "3ba86df71fafa83df7203af09fc06c052d85e72b0cb09fdd649e26c504bd5684"
+    },
+    {
+      "path": "scripts/validate-yamaguchi-release.ts",
+      "sha256": "c0b017bbc1502305f2d1f0b0913164b392a1b4596f248222f718ddc7f7bcd60e"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/policy-inspection-v1.json",
+      "sha256": "819f3b5f55952e23f65813fbed33cabea9ca4eb1bce51ffe4f4f4cdf6ec3b371"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/profile-binding-correction-v1.json",
+      "sha256": "134d9571cb5decd2126f02f71ce3006cf3a3ead01ef36690f44a2745770029e0"
+    }
+  ],
+  "preservedFailedStudy": [
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/manifest-v1.json",
+      "sha256": "892a057ab6963ee13be28c401f9d2122cb5701f6e6be9c77f20fe3c182bdff9c"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/manifest-v1.json",
+      "sha256": "afb3a2608ad41fec7369a13b95c1ea4ea234dd984f715cbbc878f1e55c438d9f"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/manifest-v1.json",
+      "sha256": "e52b6eefe99e2c119af79ba23953e0dfe074ffe324342650572a3e5d2a3214e4"
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/manifest-v1.json",
+      "sha256": "b3e7dd0a4eddfe0482d8c51c3c0587e122211464d355771b36d438ce3b5a8ce7"
+    }
+  ],
+  "note": "Corrected delivery profile binding; strict export validation retained. Approved video/voice/captions/history untouched."
+}

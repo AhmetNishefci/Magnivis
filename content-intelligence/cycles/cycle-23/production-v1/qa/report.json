@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-18T22:50:12.719Z",
+  "input": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v1.mp4",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 64.36666666666666
+  },
+  "observed": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "meanVolumeDb": -23,
+    "maxVolumeDb": -3.3,
+    "duration": 64.427,
+    "sizeBytes": 47847902,
+    "bitRate": 5941347
+  },
+  "passed": true,
+  "failures": []
+}

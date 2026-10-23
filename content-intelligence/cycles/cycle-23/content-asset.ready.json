@@ -1,0 +1,490 @@
+{
+  "id": "yamaguchi-two-bombs.asset.return-home",
+  "revision": 1,
+  "knowledgePackageId": "yamaguchi-two-bombs",
+  "assetType": "short-form-video",
+  "editorialPurpose": "One injured shipbuilding engineer returned from Hiroshima to his home city, Nagasaki, before the second bombing. His official double-exposure recognition does not make him the only double survivor. His later witness serves remembrance and nuclear abolition.",
+  "storyAngle": "A business trip and return home connect two catastrophes; survival leaves injury, family memory and a public witness.",
+  "hookId": "yamaguchi-two-bombs.hook.twice",
+  "selectedClaimIds": [
+    "yamaguchi-two-bombs.claim.double",
+    "yamaguchi-two-bombs.claim.engineer",
+    "yamaguchi-two-bombs.claim.hiroshima",
+    "yamaguchi-two-bombs.claim.burns",
+    "yamaguchi-two-bombs.claim.train",
+    "yamaguchi-two-bombs.claim.workplace",
+    "yamaguchi-two-bombs.claim.nagasaki",
+    "yamaguchi-two-bombs.claim.family-survival",
+    "yamaguchi-two-bombs.claim.loss",
+    "yamaguchi-two-bombs.claim.recognition",
+    "yamaguchi-two-bombs.claim.plural",
+    "yamaguchi-two-bombs.claim.death",
+    "yamaguchi-two-bombs.claim.advocacy"
+  ],
+  "durationIntentSeconds": {
+    "minimum": 50,
+    "maximum": 65
+  },
+  "script": {
+    "language": "en",
+    "segments": [
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.1",
+        "type": "factual",
+        "text": "He survived an atomic bomb. Three days later, he survived another.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.double"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.2",
+        "type": "factual",
+        "text": "This is Tsutomu Yamaguchi, a Mitsubishi shipbuilding engineer.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.engineer"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.3",
+        "type": "factual",
+        "text": "August sixth, nineteen forty-five. He was in Hiroshima on business when the United States dropped an atomic bomb.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.engineer",
+          "yamaguchi-two-bombs.claim.hiroshima"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.4",
+        "type": "factual",
+        "text": "Severely burned, he survived.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.burns"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.5",
+        "type": "factual",
+        "text": "The next day, he boarded a train. It carried him home to Nagasaki.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.train"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.6",
+        "type": "factual",
+        "text": "On August ninth, he was back at work. He recalled describing Hiroshima to his manager.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.workplace"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.7",
+        "type": "factual",
+        "text": "Then came another flash. The second atomic bomb had struck.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.workplace",
+          "yamaguchi-two-bombs.claim.nagasaki"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.8",
+        "type": "factual",
+        "text": "He survived again. His wife and infant son survived too.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.double",
+          "yamaguchi-two-bombs.claim.family-survival"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.9",
+        "type": "factual",
+        "text": "The bombings killed tens of thousands and left lasting suffering.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.loss"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.10",
+        "type": "factual",
+        "text": "In two thousand nine, Japan officially recognized his exposure in both cities.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.recognition"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.11",
+        "type": "factual",
+        "text": "He was not the only double survivor.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.plural"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.12",
+        "type": "factual",
+        "text": "He lived until twenty ten, aged ninety-three.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.death"
+        ]
+      },
+      {
+        "id": "yamaguchi-two-bombs.asset.return-home.script.13",
+        "type": "factual",
+        "text": "In later years, he urged the world to abolish nuclear weapons.",
+        "claimIds": [
+          "yamaguchi-two-bombs.claim.advocacy"
+        ]
+      }
+    ]
+  },
+  "narrativeStructure": [
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.1",
+      "label": "survival-hook",
+      "purpose": "Intimate young engineer portrait; true story identification and explicit reconstruction disclosure.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.1"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.2",
+      "label": "identity",
+      "purpose": "Move from face toward ship-design papers and1945 setting; same engineer identity.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.2"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.3",
+      "label": "hiroshima",
+      "purpose": "Hiroshima morning context; date and restrained distant light, no mushroom-cloud spectacle.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.3"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.4",
+      "label": "injury",
+      "purpose": "Ash and damaged environment; bandaged same engineer, no graphic wounds.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.4"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.5",
+      "label": "journey",
+      "purpose": "Hiroshima to Nagasaki geographic map animated as city link, then rail travel; no claimed exact itinerary.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.5"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.6",
+      "label": "workplace",
+      "purpose": "Nagasaki August9; same bandaged man at design office, no invented dialogue enacted.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.6"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.7",
+      "label": "second-flash",
+      "purpose": "Office light intensifies and papers move, aftermath held; second event unmistakably separated by city/date.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.7"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.8",
+      "label": "surviving-family",
+      "purpose": "Reflective aftermath; wife/infant survival stated without invented family reunion scene.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.8"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.9",
+      "label": "human-cost",
+      "purpose": "City absence and ruins acknowledge lives lost; no triumph or graphic victims.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.9"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.10",
+      "label": "recognition",
+      "purpose": "Geographic two-city record resolves official double-exposure distinction, no fabricated certificate.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.10"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.11",
+      "label": "other-survivors",
+      "purpose": "Plural survivor distinction clear in caption; map retains two cities.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.11"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.12",
+      "label": "long-life",
+      "purpose": "Life dates1916–2010 and93; no unverified aged likeness or false archival portrait.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.12"
+      ]
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.beat.13",
+      "label": "witness",
+      "purpose": "Quiet empty drafting desk/paper toward soft daylight, later witness and abolition message; no unrelated slogan.",
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.13"
+      ]
+    }
+  ],
+  "visualPlan": [
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.1",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.1",
+      "objective": "Intimate young engineer portrait; true story identification and explicit reconstruction disclosure.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.1"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.double"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.2",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.2",
+      "objective": "Move from face toward ship-design papers and1945 setting; same engineer identity.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.2"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.engineer"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.3",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.3",
+      "objective": "Hiroshima morning context; date and restrained distant light, no mushroom-cloud spectacle.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.3"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.engineer",
+        "yamaguchi-two-bombs.claim.hiroshima"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.4",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.4",
+      "objective": "Ash and damaged environment; bandaged same engineer, no graphic wounds.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.4"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.burns"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.5",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.5",
+      "objective": "Hiroshima to Nagasaki geographic map animated as city link, then rail travel; no claimed exact itinerary.",
+      "visualType": "map",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.5"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.train"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.6",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.6",
+      "objective": "Nagasaki August9; same bandaged man at design office, no invented dialogue enacted.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.6"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.workplace"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.7",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.7",
+      "objective": "Office light intensifies and papers move, aftermath held; second event unmistakably separated by city/date.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.7"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.workplace",
+        "yamaguchi-two-bombs.claim.nagasaki"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.8",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.8",
+      "objective": "Reflective aftermath; wife/infant survival stated without invented family reunion scene.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.8"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.double",
+        "yamaguchi-two-bombs.claim.family-survival"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.9",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.9",
+      "objective": "City absence and ruins acknowledge lives lost; no triumph or graphic victims.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.9"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.loss"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.10",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.10",
+      "objective": "Geographic two-city record resolves official double-exposure distinction, no fabricated certificate.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.10"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.recognition"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.11",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.11",
+      "objective": "Plural survivor distinction clear in caption; map retains two cities.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.11"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.plural"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.12",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.12",
+      "objective": "Life dates1916–2010 and93; no unverified aged likeness or false archival portrait.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.12"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.death"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    },
+    {
+      "id": "yamaguchi-two-bombs.asset.return-home.visual.13",
+      "narrativeBeatId": "yamaguchi-two-bombs.asset.return-home.beat.13",
+      "objective": "Quiet empty drafting desk/paper toward soft daylight, later witness and abolition message; no unrelated slogan.",
+      "visualType": "animation",
+      "suggestedPrimitive": "bespoke",
+      "assetRequirements": [
+        "Original young engineer, Hiroshima context, bandaged rail traveler, Nagasaki office, aftermath and reflective desk; no copyrighted historical photo/film."
+      ],
+      "scriptSegmentIds": [
+        "yamaguchi-two-bombs.asset.return-home.script.13"
+      ],
+      "claimIds": [
+        "yamaguchi-two-bombs.claim.advocacy"
+      ],
+      "notes": "Original disclosed reconstruction; plausible period design, not a verified likeness or exact building/camera reconstruction."
+    }
+  ],
+  "narrationPlan": {
+    "mode": "narrated",
+    "voiceDirection": "Established Kokoro af_heart, measured respectful documentary delivery, no triumph or shock acting.",
+    "pronunciationNotes": [
+      "Tsutomu Yamaguchi; Mitsubishi; Hiroshima; Nagasaki. Source-input phonemes and machine audio inspection separate from owner listening."
+    ]
+  },
+  "editorialStatus": "approved",
+  "approval": {
+    "approvedBy": "Codex internal historical evidence review, not owner approval",
+    "authority": {
+      "kind": "internal-evidence-review",
+      "cycleId": "cycle.23",
+      "reviewSha256": "32bc515ca9951255ce70e237ee921aa6c25d5f76d6053598548b1291cce30cf1"
+    },
+    "approvedAt": "2026-10-18",
+    "notes": "Internal V3 editorial readiness; grants no master or publication approval."
+  }
+}

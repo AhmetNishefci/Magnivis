@@ -1,0 +1,19 @@
+{
+  "purpose": "Preserve exact historical delivery QA while validating selected deliveries anew. No original validator/source/evidence edited.",
+  "originalValidator": {
+    "path": "scripts/validate-yamaguchi-release.ts",
+    "sha256": "c0b017bbc1502305f2d1f0b0913164b392a1b4596f248222f718ddc7f7bcd60e"
+  },
+  "closeoutValidator": {
+    "path": "scripts/validate-yamaguchi-closeout-deliveries.ts",
+    "sha256": "6f215c3eaa25df94df951baa466965b002bcd189f013f94d72853c657ec5f545"
+  },
+  "differences": [
+    "Write new audio-integrity evidence into current closeout QA with exclusive creation; do not overwrite historical delivery QA.",
+    "Accept a descendant of the verified source-base commit on the unchanged branch, for authorized closeout commit/clone verification. All original claim, media, caption, source, cover, profile, copy, owner-scope and preservation assertions retained."
+  ],
+  "schedulingValidator": {
+    "path": "scripts/validate-yamaguchi-scheduling.ts",
+    "sha256": "24cde4a1b06b20b58bf9e519a7c3cc5610094248d9fc92e8aa64d19e635691da"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-18T22:55:48.347Z",
+  "environment": {
+    "node": "22.23.3",
+    "pnpm": "10.17.1"
+  },
+  "checks": {
+    "pnpmCheck": {
+      "passed": true,
+      "exitCode": 0,
+      "testFiles": 56,
+      "tests": 519,
+      "durationSeconds": 101.64,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/qa/check.log",
+        "sha256": "b5f3d07751e27c45f8caca05b0931b4680b07ca7b2b3bbbac2d2e8405fe29823"
+      }
+    },
+    "mediaIntegrity": "passed; H264/AAC; exact canonical hashes",
+    "fullDecode": "passed; ffmpeg xerror/err_detect explode, complete video and audio",
+    "captionValidation": "passed;42 exact-word phrases, all midpoints inspected",
+    "browserGeometry": "passed;115 observations, no sampled collisions",
+    "mobileScale": "11 decoded360px proxy samples inspected; no actual-device claim",
+    "durability": "passed;1545 canonical payloads,731 legacy durable artifacts; staged local tracking, no commit/push",
+    "cycle23Replay": "passed;master-review revision7, no approvals/release",
+    "globalCycleOverview": "failed;pre-existing historical reference drift, investigated and preserved",
+    "researchSecretScan": "passed;9 research/extracted-text files, zero pattern findings",
+    "finalWholeDiffWhitespace": "passed; git diff --check HEAD"
+  },
+  "preservation": {
+    "historicalMediaCatalogEntriesUnchanged": 1508,
+    "newCanonicalPayloads": 37,
+    "branchUnchanged": true,
+    "commitUnchanged": true,
+    "worktreesCreated": false,
+    "committed": false,
+    "pushed": false,
+    "deliveriesPrepared": false,
+    "platformActions": false
+  },
+  "limitations": [
+    "No continuous subjective audiovisual listening/watch evidence.",
+    "Within-take caption timing approximate; actual name pronunciation/prosody requires owner review.",
+    "No actual mobile/native-app/crop safety proof.",
+    "Original still artwork with environmental animation; no filmed acting."
+  ],
+  "postCheckWhitespaceOnlyAmendment": {
+    "record": "content-intelligence/cycles/cycle-23/production-v1/implementation-whitespace-addendum.json",
+    "targetedEslint": "passed",
+    "scriptLogicUnchanged": true,
+    "defaultSuiteNotRepeated": "Only one terminal blank line removed; full original source snapshot retained. No functional code, master or QA behavior changed."
+  }
+}

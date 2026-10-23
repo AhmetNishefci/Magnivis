@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "inspectedAt": "2026-10-23T16:22:29.899Z",
+  "master": {
+    "id": "media.9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+    "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+  },
+  "path": "/Users/ahmetnishefci/Developer/Magnivis/artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v2.mp4",
+  "masterDecision": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/master-approval-v1.json",
+    "sha256": "7788acbeb4254b67567fac2a1ad4a27cd1406590e058c2181add0165b7ea80d5"
+  },
+  "probe": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "fpsExpression": "30/1",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": "48000",
+    "durationSeconds": 64.426,
+    "sizeBytes": 38916717,
+    "bitRate": 4832423
+  },
+  "fullDecode": "passed",
+  "masterUnchanged": true,
+  "scriptSha256": "ccf7fc2e5b003f9c6fe538790bed56487dd6abc84a7cfb9da3044398e637643d",
+  "audioEvidence": {
+    "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/audio-inspection.json",
+    "sha256": "dc5df2c24a0a773e971e664049cb3e984f746f5559f6a26ed8ba75ffc8d5c96c"
+  },
+  "captionValidation": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/caption-vtt-validation-v1.json",
+    "sha256": "19a2bdabe7f3a55695d81e66dca64bd84e6fff9ef472fd3e8db73761a29de6f8"
+  },
+  "geometry": {
+    "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/typography-report.json",
+    "sha256": "924c0ea66fc007415a90cd8e7524478338d6c65350af1933e05c0ed7aee751d9"
+  },
+  "ownerReview": "Owner explicitly confirmed completed full playback and approves exact V2. Actual playback time/device unspecified; native-device platform acceptance not inferred.",
+  "ownerAcceptance": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/owner-quality-acceptance-v1.json",
+    "sha256": "d760cec8e364739e29982ccea3f2cc10d82109cf8ec88b8f414646260ca3efdc"
+  },
+  "renderedAgain": false,
+  "limitations": "No additional assistant subjective listening or device test. Approval promotion does not render or encode another video."
+}

@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-10-23T16:51:22.064973Z",
+  "passed": true,
+  "branch": "content/cycle-11-discovery",
+  "baseHead": "8e0cc9ca4311eff2a6ff4954f8c5c9ec5a3d47bb",
+  "remoteHeadVerifiedAtEntry": "8e0cc9ca4311eff2a6ff4954f8c5c9ec5a3d47bb",
+  "ownerGitAuthorization": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/owner-instruction.md",
+    "sha256": "5b52a4c825377202bdcfd5b34945abab0fe4199ba2e034e872d06df0e88a1bc3"
+  },
+  "pnpmCheck": {
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFiles": 56,
+    "testsPassed": 519,
+    "testsFailed": 0,
+    "durationSeconds": 94.66,
+    "output": {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/check-output-v1.json",
+      "sha256": "4eb8a1a8d400d818a1d8e73db1ceb2be15837971b2482a76b7566e6368116c3d"
+    }
+  },
+  "selectedDeliveries": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/selected-delivery-validation-v1.json",
+    "sha256": "e085fb864d1ab3fe330821b10f47b41f719ec287091f075a700d9bd9f8fe8c15"
+  },
+  "scheduling": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/scheduling-validation-v1.json",
+    "sha256": "c6626459ba0cffcf6796288209ad10373405a298749cad1e9fb176d0b3f817f6"
+  },
+  "fullVideoAudioDecodeAndCoverPixelEquality": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/full-media-decode-v1.json",
+    "sha256": "0f13dfaea52e2eb7b1334e549562e632dc2be708422bff470892e384f479c0a4"
+  },
+  "captions": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/caption-integrity-v1.json",
+    "sha256": "3235dc84dd0f5c9237fe3886f956390b51794915b12cff0acf8e52a78e1e1c86"
+  },
+  "durability": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/durability-summary-v1.json",
+    "sha256": "9b3402da8eecf3011aafd11b205e46fd1dea1a0ee7d0aca4aab54327f102048d"
+  },
+  "journalReplay": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/journal-replay-v1.json",
+    "sha256": "be5dd16156b72f1e1371c433db210d4797ce6c0abc18c57eaaf0685c80448d6c"
+  },
+  "historicalPreservation": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/preservation-v1.json",
+    "sha256": "e6f0d1306c2800ec22a16e6ac3bd8176793d40f2e89ab2f82f5a0a76545000e0"
+  },
+  "isolatedGitRestore": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/isolated-git-restore-v1.json",
+    "sha256": "202d3f7686410f48873939d0b9c96f09cada3ba08434657a44efbb25e2577cdd"
+  },
+  "initialSecretScan": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/secret-scan-v1.json",
+    "sha256": "ddbe84db84dce35f71de6f0e16a497a84721d0d6f9e502f3dfa19603978ed865"
+  },
+  "knownHistoricalGlobalStatus": {
+    "exitCode": 1,
+    "report": {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/global-status-v1.json",
+      "sha256": "9f3a34c61daae5302bb3439e8e2e46a284f8552c034d81746c87f74ef012f313"
+    },
+    "reason": "11pre-existing historical discovery documentation digest references; exact Cycle23and media validation passed separately. No silent repairs."
+  },
+  "state": "scheduled-owner-reported",
+  "publication": "unknown",
+  "nativeJournalStage": "publication-review",
+  "nativeRevision": 15,
+  "nativeJournalUnchanged": true,
+  "presentationUnknownsRetained": 48,
+  "assistantPlatformActions": [],
+  "cycle24Started": false,
+  "commitPush": "Explicitly owner-authorized after all required Cycle23checks pass. This receipt is pre-commit; final commit/remote synchronization verified separately without an extra self-referential evidence commit."
+}

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-19T14:57:27.052961+00:00",
+  "passed": true,
+  "baselineFileCount": 8318,
+  "byteIdenticalFiles": 8313,
+  "missingFiles": [],
+  "changedExistingFiles": [
+    "artifacts/media-catalog.json",
+    "docs/ASSET-LICENSES.md",
+    "docs/PRODUCTION-PLANS.md",
+    "workflow/cycles/cycle.23/state.json",
+    "workflow/project-state.json"
+  ],
+  "scope": "Only prospective policy/license append, append-only media catalog, cycle23 current journal head and project current gate index changed. All V1 immutable research/source/master/QA records and all prior-cycle files byte-identical to V2 entry.",
+  "catalog": {
+    "originalEntries": 1545,
+    "addedEntries": 30,
+    "totalEntries": 1575,
+    "allOriginalRecordsUnchanged": true
+  },
+  "journal": {
+    "cycle": "cycle.23",
+    "original7EventsAndHistoryUnchanged": true,
+    "newRevision": 12,
+    "stage": "master-review",
+    "masterApproved": false,
+    "release": null,
+    "publicationDecision": null
+  },
+  "branch": "content/cycle-11-discovery",
+  "head": "8e0cc9ca4311eff2a6ff4954f8c5c9ec5a3d47bb"
+}

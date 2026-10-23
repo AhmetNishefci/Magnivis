@@ -1,0 +1,27 @@
+{
+  "enteredAt": "2026-10-18T22:49:32.202Z",
+  "method": "Measured whole-mix constant gain, copied video stream; no narration wording/timing changes.",
+  "renderIntermediate": {
+    "path": "output/yamaguchi-two-bombs-render-v1.mp4",
+    "sha256": "8247d9681492dc19c28c11977e950d2f24c07ac0a4827c45fb5da7924fa3e4d2",
+    "retention": "temporary"
+  },
+  "candidate": {
+    "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v1.mp4",
+    "sha256": "f727cb00e2ca2e6678dc951af660bc6e71e878f72cafb2f8923e6f0696007eaf"
+  },
+  "inputMeasurements": {
+    "input_i": "-22.65",
+    "input_tp": "-6.89",
+    "input_lra": "2.90",
+    "input_thresh": "-33.82",
+    "output_i": "-19.16",
+    "output_tp": "-3.70",
+    "output_lra": "2.60",
+    "output_thresh": "-30.38",
+    "normalization_type": "dynamic",
+    "target_offset": "0.16"
+  },
+  "gainDb": 3.6499999999999986,
+  "rationale": "Improve voice audibility while reserving true-peak headroom; final exact-media loudness independently checked."
+}

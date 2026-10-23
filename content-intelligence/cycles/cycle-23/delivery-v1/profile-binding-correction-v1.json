@@ -1,0 +1,14 @@
+{
+  "enteredAt": "2026-10-23T16:24:52.427233Z",
+  "issue": "Initial package adapter accidentally selected original60second production profiles despite creating delivery90second versions. Unchanged strict release validator rejected the draft before release receipt/journal completion.",
+  "oldSourceSnapshot": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/source-snapshots/prepare-yamaguchi-release-before-profile-binding.json",
+    "sha256": "a08d9ca0562282bb50cd1106165814e8d8ef0b9a7f411c2774fad5394cfb8579"
+  },
+  "correctedSource": {
+    "path": "scripts/prepare-yamaguchi-release.ts",
+    "sha256": "2a51a2810917e7670326bc8217978a899b7a7484340e02db289fa4797be3acea"
+  },
+  "action": "Keep initial draft manifests/evidence as internal failed study. Create video-evidence-v2 and manifest-v2 referencing the new exact delivery profile. Reuse unchanged copy, metadata, cover and master. Assert duration before writes in corrected adapter; no validator disabled or weakened.",
+  "ownerScope": "No publication authorization or platform actions."
+}

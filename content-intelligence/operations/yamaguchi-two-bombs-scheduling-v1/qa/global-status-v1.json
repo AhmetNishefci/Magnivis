@@ -1,0 +1,10 @@
+{
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "/Users/ahmetnishefci/Developer/Magnivis/src/workflow/evidence.ts:13\n  if (mediaHash(path) !== ref.sha256) throw new Error('Evidence file digest mismatch');\n                                            ^\n\nError: Evidence file digest mismatch\n    at readBoundFile (/Users/ahmetnishefci/Developer/Magnivis/src/workflow/evidence.ts:13:45)\n    at <anonymous> (/Users/ahmetnishefci/Developer/Magnivis/src/workflow/topic-selection.ts:52:42)\n    at Array.forEach (<anonymous>)\n    at validateTopicSelection (/Users/ahmetnishefci/Developer/Magnivis/src/workflow/topic-selection.ts:52:29)\n    at transitionCycle (/Users/ahmetnishefci/Developer/Magnivis/src/workflow/cycle.ts:231:22)\n    at loadCycle (/Users/ahmetnishefci/Developer/Magnivis/src/workflow/store.ts:26:16)\n    at <anonymous> (/Users/ahmetnishefci/Developer/Magnivis/src/workflow/store.ts:39:142)\n    at Array.map (<anonymous>)\n    at loadProjectCycles (/Users/ahmetnishefci/Developer/Magnivis/src/workflow/store.ts:39:135)\n    at <anonymous> (/Users/ahmetnishefci/Developer/Magnivis/scripts/cycle.ts:15:54)\n\nNode.js v22.23.3\n",
+  "scope": "Known historical discovery-document digest failure, distinct from successful named Cycle23journal replay. No silent repair.",
+  "investigation": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/historical-document-hash-mismatches-v1.json",
+    "sha256": "38e2984fe11df90ef435b484a2234f4560a7291cd7ec5431dc34d932f6980394"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "originalPath": "content-intelligence/cycles/cycle-23/revision-v2/check.log",
+  "originalSha256": "02142b06fe25e99c5bb85d41e98a1594527e2ec6beb1f1db74427e1d66b15f9f",
+  "utf8Content": "\n> magnivis@0.1.0 check /Users/ahmetnishefci/Developer/Magnivis\n> pnpm validate && git diff --check\n\n\n> magnivis@0.1.0 validate /Users/ahmetnishefci/Developer/Magnivis\n> pnpm typecheck && pnpm lint && pnpm test\n\n\n> magnivis@0.1.0 typecheck /Users/ahmetnishefci/Developer/Magnivis\n> tsc --noEmit\n\n\n> magnivis@0.1.0 lint /Users/ahmetnishefci/Developer/Magnivis\n> eslint src scripts tests remotion.config.ts vitest.config.ts\n\n\n> magnivis@0.1.0 test /Users/ahmetnishefci/Developer/Magnivis\n> vitest run\n\n\n RUN  v5.0.1 /Users/ahmetnishefci/Developer/Magnivis\n\n\n Test Files  56 passed (56)\n      Tests  519 passed (519)\n   Start at  15:45:07\n   Duration  96.35s (tests 94%, import 5%, transform 1%)\n\n",
+  "retention": "Exact raw command output preserved inside JSON, including terminal blank lines. Raw .log remains ignored locally; snapshot is durable and avoids changing the default whitespace validator."
+}

@@ -19,7 +19,7 @@ approved script
 
 No speech-to-text system is used when approved narration text and timing already exist. A CaptionPlan must reconstruct the exact narration, remain within its timing, and pass source-chain validation.
 
-Caption presentation is **speech-first, not prose-first**. Phrase grouping and transitions should make narration feel natural at short-form reading speed. Canonical narration remains unchanged. Periods, commas, questions, apostrophes, numbers, percentages, and meaningful hyphens remain when they aid comprehension; the renderer does not globally strip punctuation.
+Caption presentation is **speech-first, not prose-first**. Phrase grouping and transitions should make narration feel natural at short-form reading speed. Canonical narration remains unchanged. Periods, commas, questions, apostrophes, numbers, percentages, and meaningful hyphens remain when they aid comprehension; the renderer does not globally strip punctuation. Keep a negation or essential qualification visibly attached to the claim it limits. Inspect each rendered cue in isolation: exact overall transcript fidelity does not excuse a temporary caption that reverses the meaning (for example, showing “the only double survivor” after “He was not” has disappeared).
 
 ## CaptionPlan
 

@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-10-19T15:01:14.116258+00:00",
+  "final": {
+    "pnpm check": {
+      "exitCode": 0,
+      "typecheck": "passed",
+      "lint": "passed",
+      "testFiles": 56,
+      "testsPassed": 519,
+      "testsFailed": 0,
+      "durationSeconds": 96.47,
+      "log": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/check-complete.log.snapshot.json",
+        "sha256": "7b8cbb16d69eedd3b8c98bc2616bc6f07a5b90d4b6062c4ba1bb9f06bf93c8ef"
+      }
+    },
+    "pnpm artifacts:durable": {
+      "exitCode": 0,
+      "canonicalPayloads": 1575,
+      "durableLegacyArtifacts": 731,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/durability.json",
+        "sha256": "812efbe290f0cd8c212e94f4c03c1c9e354884417fc150c1424eef8c9f0fa0ff"
+      }
+    },
+    "cycle23 journal replay": {
+      "exitCode": 0,
+      "stage": "master-review",
+      "revision": 12,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/journal-replay.json",
+        "sha256": "cf665d2358750f7bb58e4812735f20248bf7e876159e7f2ea02987452f140d6a"
+      }
+    },
+    "fullMediaAudioDecode": {
+      "passed": true,
+      "report": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/stream-specifications.json",
+        "sha256": "cf440e6a9e6b099a93e673dbf3e70a7b766091fc7ed749a3ffafc3027fe6bd56"
+      }
+    },
+    "git diff HEAD --check": "passed",
+    "git diff --cached --check": "passed"
+  },
+  "resolvedIntermediateFailures": [
+    {
+      "action": "Initial finalizer preflight",
+      "exitCode": 1,
+      "reason": "Python ISO+00:00 not accepted by UTC-Z presentation schema. Media, completed QA and records preserved; same-instant adapter normalization.",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/finalization-resume.json",
+        "sha256": "5635dbea849a0d03b0644ec3b58317cd306ee19ed516cb09a324290eba2a398d"
+      }
+    },
+    {
+      "action": "First resume",
+      "exitCode": 1,
+      "reason": "Missing checks variable; exact old source frozen in snapshot and recovery-source addendum; corrected script typechecks/lints and completed event12.",
+      "evidence": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/finalization-source-correction.json",
+        "sha256": "876975ce0e186efa14a61f1fbb943e3806bcd96454d4d912f6dd0d46a71d7f8c"
+      }
+    },
+    {
+      "action": "pnpm check before media staging",
+      "exitCode": 1,
+      "testsPassed": 518,
+      "testsFailed": 1,
+      "reason": "Newly registered draft-detail.png not yet Git tracked. Scoped staging resolved; unchanged durability test passed in final run.",
+      "log": {
+        "path": "content-intelligence/cycles/cycle-23/revision-v2/check-handoff.log.snapshot.json",
+        "sha256": "fdd82d83e73f7cae795c6470e47f0a83db4ec76867ddcbd5056508dbb5d3b891"
+      }
+    }
+  ],
+  "knownHistoricalGlobalStatus": {
+    "exitCode": 1,
+    "reason": "Pre-existing discovery historyReviewed documentation digests,11previously documented references. No media failure, validator weakening or historical reference repair.",
+    "log": {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/global-status.log.snapshot.json",
+      "sha256": "31c4dc1bca06b195373a8e15d4a59efe2e54fef046e2cfbe72448e6cc008bbd5"
+    },
+    "investigation": {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/historical-status-investigation.json",
+      "sha256": "de41451cbb62e098da31581a76aa8e1e51632d78995f79ccbddb66a156b5784d"
+    }
+  },
+  "authority": "Candidate only. No commit, push, branch/worktree change, delivery, master approval or platform action."
+}

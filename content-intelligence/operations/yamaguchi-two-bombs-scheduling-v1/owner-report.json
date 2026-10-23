@@ -1,0 +1,67 @@
+{
+  "cycleId": "cycle.23",
+  "state": "scheduled-owner-reported",
+  "statusLabel": "OWNER-REPORTED SCHEDULED",
+  "scheduledBy": "owner-manual",
+  "scheduledFor": "2026-10-23T20:00:00+02:00",
+  "scheduledForUtc": "2026-10-23T18:00:00Z",
+  "schedulingTimeZone": {
+    "ianaIdentifier": "Europe/Belgrade",
+    "abbreviation": "CEST",
+    "utcOffset": "+02:00",
+    "basis": "explicit-owner-message; Python zoneinfo conversion corroborated"
+  },
+  "recordedAt": "2026-10-23T16:45:06.198934Z",
+  "recordedAtBasis": "Record-entry time only; scheduling-action time not supplied.",
+  "evidenceBasis": "explicit-owner-message",
+  "publication": "unknown",
+  "actualPublicationTime": null,
+  "actualPublicationDate": null,
+  "schedulingActionTime": null,
+  "publicUrl": null,
+  "platformId": null,
+  "actualUploadedBytes": null,
+  "actualSettings": null,
+  "comments": null,
+  "processingResults": null,
+  "deviceQa": null,
+  "analytics": null,
+  "independentPlatformVerification": false,
+  "assistantPlatformActions": [],
+  "schemaVersion": 3,
+  "topic": "He Survived Two Atomic Bombs",
+  "platforms": [
+    "youtube",
+    "tiktok",
+    "instagram",
+    "facebook"
+  ],
+  "ownerInstruction": {
+    "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/owner-instruction.md",
+    "sha256": "5b52a4c825377202bdcfd5b34945abab0fe4199ba2e034e872d06df0e88a1bc3"
+  },
+  "intendedMaster": {
+    "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v2.mp4",
+    "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7"
+  },
+  "intendedRelease": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/release-v1.json",
+    "sha256": "9ea4454728bb26ab0c6de3f1582a0cc62479b0368cae18d3df055dd3ffce6e97"
+  },
+  "masterApproval": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/master-approval-v1.json",
+    "sha256": "7788acbeb4254b67567fac2a1ad4a27cd1406590e058c2181add0165b7ea80d5"
+  },
+  "nativeWorkflow": {
+    "stage": "publication-review",
+    "revision": 15,
+    "unchanged": true,
+    "publicationDecision": null
+  },
+  "nativeRecordReconciliation": "Owner scheduling report recorded separately from the strict native gate projection, following Cycles20–22. Native authorized-release observations require an exact-release publication decision, absent here. Preserve all15events and native state. Add scheduling evidence without forging retrospective authorization, acceptance of48presentation unknowns, device QA or successful publication. Earlier master/delivery reports retain their dated meaning.",
+  "limitations": [
+    "Owner confirms scheduling only; successful publication remains unconfirmed.",
+    "Intended approved V2 and selected manifest-v2 packages are bound; actual uploaded/transcoded bytes, platform post IDs/URLs, live metadata/settings, selected native covers, processing and device evidence unverified.",
+    "No analytics, screenshots, native acceptance, presentation-risk acceptance or retrospective exact-release authorization inferred."
+  ]
+}

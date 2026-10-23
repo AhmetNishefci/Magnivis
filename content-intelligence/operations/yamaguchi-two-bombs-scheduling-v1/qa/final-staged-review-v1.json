@@ -1,0 +1,2209 @@
+{
+  "checkedAt": "2026-10-23T16:52:41.100638Z",
+  "passed": true,
+  "branch": "content/cycle-11-discovery",
+  "baseHead": "8e0cc9ca4311eff2a6ff4954f8c5c9ec5a3d47bb",
+  "remoteHeadVerifiedAtEntry": "8e0cc9ca4311eff2a6ff4954f8c5c9ec5a3d47bb",
+  "reviewedStagedPaths": 363,
+  "modifiedSharedFiles": [
+    "artifacts/media-catalog.json",
+    "docs/ASSET-LICENSES.md",
+    "docs/CAPTIONS.md",
+    "docs/PRODUCTION-PLANS.md",
+    "workflow/project-state.json"
+  ],
+  "scopeViolations": [],
+  "deletions": 0,
+  "secretCredentialPatternFindings": 0,
+  "uniqueNewGitBlobs": 354,
+  "uniqueNewGitBlobBytes": 175650374,
+  "logicalChangedFileBytes": 175672170,
+  "largestFile": {
+    "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v1.mp4",
+    "sha256": "f727cb00e2ca2e6678dc951af660bc6e71e878f72cafb2f8923e6f0696007eaf",
+    "bytes": 47847902,
+    "findings": []
+  },
+  "files": [
+    {
+      "path": "artifacts/covers/yamaguchi-two-bombs-cycle23-delivery-v1/frame-0000-0s.png",
+      "sha256": "3b85319959864593baad13b9250fa34d038edc0d1e21c281dd73d608b5d57c1e",
+      "bytes": 2167260,
+      "findings": []
+    },
+    {
+      "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v1.mp4",
+      "sha256": "f727cb00e2ca2e6678dc951af660bc6e71e878f72cafb2f8923e6f0696007eaf",
+      "bytes": 47847902,
+      "findings": []
+    },
+    {
+      "path": "artifacts/masters/yamaguchi-two-bombs-cycle23-candidate-v2.mp4",
+      "sha256": "9640763882f0056990eb41df6f1e0bb6bb43fdfc907881cd2e750a01fb6420c7",
+      "bytes": 38916717,
+      "findings": []
+    },
+    {
+      "path": "artifacts/media-catalog.json",
+      "sha256": "d1539f9ac8121f1c37bd8442075bb2a3ee6bb63d84690bf6480b96867dbcc647",
+      "bytes": 1535807,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-delivery-v1/cover-candidates-phone.jpg",
+      "sha256": "13494e5d49540348c22ffbe862ddd41b515a22555c78f3e87a97759fa7e161d1",
+      "bytes": 263797,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/captions-1.jpg",
+      "sha256": "74b635af1b2d9255d3c9783d5f46776146b4b6c689712c83e746710084eadc38",
+      "bytes": 415881,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/captions-2.jpg",
+      "sha256": "8253e5dbc3a266e7d67a326b8ebbdb0ae5dcc2281ac7ff51dc9badaa7e495ac0",
+      "bytes": 309650,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/captions-3.jpg",
+      "sha256": "11e31bdcceb13c643f58f5209992b09d723c57e13b4b1af52726c355bd99a60e",
+      "bytes": 326712,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/captions-4.jpg",
+      "sha256": "4ef605eeab458fddfeb1271ea392f21b2e8e6c8ac2ab49532a4a66c374b4f0e9",
+      "bytes": 168392,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/contact-sheet.jpg",
+      "sha256": "989e65b3973e06b26bb3bac6cb6bc3038f66cc5a04b4af3ec313ef85f5b4f9f8",
+      "bytes": 3203669,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/event-detail.jpg",
+      "sha256": "4243c8868e6a06a1ab9c78d021b8381a31d9247c85b3b45c78ea4518eb377524",
+      "bytes": 488872,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/motion-progression.jpg",
+      "sha256": "dbcc582a40cf7f14eb3bd57f113c217281ee1113f86249b1d4ade8eba1d0aa76",
+      "bytes": 640193,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/phone-readability.jpg",
+      "sha256": "a02706cbd30f9a97ddb9c4c86173ebd616efb360cbe8f1457daf02cc571e01e9",
+      "bytes": 503695,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/scene-overview.jpg",
+      "sha256": "1ee006a0b78028f38e98729b4fde79508e7aca1094f3f41620a50a189aef119e",
+      "bytes": 386979,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/sequence-1.jpg",
+      "sha256": "3e25bd2a9073af9c2b6fe6767140c998366903686680d454ee9829a6c6422af5",
+      "bytes": 546329,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/sequence-2.jpg",
+      "sha256": "d4f92693706ffe32c8ac29cd1de3c8a12b2a61ec523edc900df0fcb5dd59c8a1",
+      "bytes": 439956,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/sequence-3.jpg",
+      "sha256": "a5e9cb21568145099139850d118bdaaaee6d59fe599ad368511e02361e47ad87",
+      "bytes": 508066,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/sequence-4.jpg",
+      "sha256": "527f7fa4ed5f05c31d4dc5828060918c11f985b1c1a2d13d90c8825db0500464",
+      "bytes": 351139,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v1/sequence-5.jpg",
+      "sha256": "8f16154309a2ad6937dfe5f34114ca5303dba9f8d4f903bd009db41f707fb3b3",
+      "bytes": 33692,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/captions-1.jpg",
+      "sha256": "ca06676db8e75f7295f48ec193d727653b11de63f2c412954acfe5dc9745df51",
+      "bytes": 402641,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/captions-2.jpg",
+      "sha256": "1959bf7e67f031ce7aeb2b68c6bfb10adaebbe18b3f710fc2a02d0ed7d746bc7",
+      "bytes": 337359,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/captions-3.jpg",
+      "sha256": "a5d53b94c727afcf1a3f2d48607df60c4c1f8e77a152926d3a6bea948fcf0b49",
+      "bytes": 296421,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/captions-4.jpg",
+      "sha256": "c774d860274a1fb2c5fcbe8305f9339998e2013ea7c9493211d014751a36cbe9",
+      "bytes": 128056,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/comparison-aftermath.jpg",
+      "sha256": "360aadfa5fe1bc3fb99f85a933d317c0c2f4bbe2614d1d276d6204c23f4c15c3",
+      "bytes": 205564,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/comparison-ending.jpg",
+      "sha256": "f8d6be044a7e0fa80d0180ee42d9bbe3aef1a4840a4efc9126ab84598464d615",
+      "bytes": 253931,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/comparison-hiroshima.jpg",
+      "sha256": "5eddc876277db4638aa943860a4ce9a2cc675f6977f43a47e140f42cf6a2379c",
+      "bytes": 327324,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/comparison-journey.jpg",
+      "sha256": "0e2eb4e8632ba24e0c3a67f3bdb797db4ab65571d9dd25fe8388bbccdad9f3cc",
+      "bytes": 197785,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/comparison-nagasaki.jpg",
+      "sha256": "f3353f6783c919a4bce7f46be7900570ebdffc16c37327df7325057171bd7a59",
+      "bytes": 349787,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/comparison-opening.jpg",
+      "sha256": "452ab253eef7cfb0ddf1f8a8377572e04805657adf4a75a8dc8fbf1c5d7537f5",
+      "bytes": 260449,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/contact-sheet.jpg",
+      "sha256": "e882c507921a872a572c9031123c76ef97c482e4e8c572e1cb98ce257491e187",
+      "bytes": 3470392,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/event-detail.jpg",
+      "sha256": "46748c4919facc3fc70986ab21162d88386c5fc62b3e5d1af805923c7caa77bc",
+      "bytes": 633625,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/motion-progression.jpg",
+      "sha256": "593e4d85c7d93f9b4aab0e07bc25808008903b597b74a36975eb63fe7b50aadf",
+      "bytes": 604963,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/phone-readability-1.jpg",
+      "sha256": "8b09f6e1bb56f636187b846b7240b6c5c292b0326487b731b605811dca08bebb",
+      "bytes": 399117,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/phone-readability-2.jpg",
+      "sha256": "139b527fe1709e492438f921de5abe69c04545fa3e120f18bcee1b07f694e8f3",
+      "bytes": 376102,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/scene-overview.jpg",
+      "sha256": "11a8146e69d575701d0c2079dfff71505b9ed69b46729e31b6c0babec84b69fe",
+      "bytes": 492850,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/sequence-1.jpg",
+      "sha256": "4f3d5e5579ff622723303f9466491ca4b670c5fffeaa38bd4406f7d68d4379bc",
+      "bytes": 541388,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/sequence-2.jpg",
+      "sha256": "503be4fef529f89b5066c8a93461d51e565944c39ef1025955f48aedc925d136",
+      "bytes": 459012,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/sequence-3.jpg",
+      "sha256": "4c294af470f498d251c3ca6ba1aca8768c5a7b448e59c3e79e0b0c222834c164",
+      "bytes": 481195,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/sequence-4.jpg",
+      "sha256": "52013ec4355608243be006e9c8e2a37f778df4f60549f1408a067c73d5d2bf41",
+      "bytes": 282706,
+      "findings": []
+    },
+    {
+      "path": "artifacts/qa-evidence/yamaguchi-two-bombs-cycle23-v2/sequence-5.jpg",
+      "sha256": "86c5a397ec325e3d6012543bff3d3faa71be1f1806d288c36f04f57ed5a6e5d3",
+      "bytes": 25245,
+      "findings": []
+    },
+    {
+      "path": "captions/yamaguchi-two-bombs.en.vtt",
+      "sha256": "479fa891b1b43cf4b46fe53d25a0554ae365d6e31c43e993f03f2de881535164",
+      "bytes": 2262,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/changed-files-v1.json",
+      "sha256": "caa610200962f6f32b63225e7484b5ff36cf64d940032874d87a2427e879da23",
+      "bytes": 26786,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/content-asset.ready.json",
+      "sha256": "104f32562e38d3f4429d7ecfc1d57e6ea72b20b1c44ff5b2ea318143a8cfceda",
+      "bytes": 20925,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/changed-files-v1.json",
+      "sha256": "d5102760a17ea0ae6e177882f8adca21fa335693eb49dc4a89e7fda7b8a2712a",
+      "bytes": 22286,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/delivery-review.md",
+      "sha256": "9874a05bf75fc6f1065ebf6a8c486ff9be1214c38a681251d93d6a199c86d029",
+      "bytes": 20915,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/cover-evidence-v1.json",
+      "sha256": "91cb549eb8053b595b4d7929767f1cc677eeef1c18e7637d2f3d0542dab03cd5",
+      "bytes": 1850,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/cover-profile-v1.json",
+      "sha256": "6e1a2404c3070b67a1964beb172e3a961ec0818d12cf0c48a1f0334ca3e1e2a5",
+      "bytes": 1752,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/manifest-v1.json",
+      "sha256": "b3e7dd0a4eddfe0482d8c51c3c0587e122211464d355771b36d438ce3b5a8ce7",
+      "bytes": 1691,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/manifest-v2.json",
+      "sha256": "e4ea6dcd4d43eea38d545a87f7aa4a2dd1fe341361a7cca852681796fbac1b8b",
+      "bytes": 1691,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/metadata-v1.json",
+      "sha256": "c25dc05d72d1b10a390f712b8aac87213bfe44a021b5d6956c3dce5071b4d072",
+      "bytes": 8089,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/review-v1.md",
+      "sha256": "82ade13ef2f1b49eb9acd08488c52e14ec6007b5c3b3f872428c22c0a690b7be",
+      "bytes": 990,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/upload-copy-v1.txt",
+      "sha256": "bd1196eff521716e38752f5de3b8c3b1c1f5e3e6eee4ab3351fd517ff6902248",
+      "bytes": 3737,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/video-evidence-v1.json",
+      "sha256": "a0f06cc7946ddcfc9982494f92a12514fa1e4225f409e3f6eca94aadfcc6ee3d",
+      "bytes": 119434,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/video-evidence-v2.json",
+      "sha256": "32b6e9a631bc4b113f90b4144eeac110f6c7dc74fc553d7f05bd476dd4a85264",
+      "bytes": 119631,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/video-profile-v1.json",
+      "sha256": "8519e8667a5d4e28be7b8807fd8ea6f3a1ee2e4b7cb7aeda9a358170595e598a",
+      "bytes": 2447,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/implementation-bindings-v1.json",
+      "sha256": "9c2218686e0d1c8a0a7bdda08a58d85867fa0e486ab4e294c670745995e81c11",
+      "bytes": 2029,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/cover-evidence-v1.json",
+      "sha256": "27f3573f01516a5006d6f12109d7a14f67e9fbf141755c4503ce5e9b27bd8285",
+      "bytes": 1852,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/cover-profile-v1.json",
+      "sha256": "e44436e4e94a927202577fd43e5c1dcd4a3592f5d9e556a83d01de6777a47dda",
+      "bytes": 1755,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/manifest-v1.json",
+      "sha256": "e52b6eefe99e2c119af79ba23953e0dfe074ffe324342650572a3e5d2a3214e4",
+      "bytes": 1696,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/manifest-v2.json",
+      "sha256": "b04282735bfe1f8573f40d3756f2f2811090ba8dcd839d2ba6a4f863d2747dd0",
+      "bytes": 1696,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/metadata-v1.json",
+      "sha256": "ce3ef5941122089134067225f337d51ac52cfced9b1a9765ff356b43afff2afe",
+      "bytes": 8014,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/review-v1.md",
+      "sha256": "40e08804f430e6daa680384227493b924d4f57594a977a59c66b3dac7fed00d7",
+      "bytes": 991,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/upload-copy-v1.txt",
+      "sha256": "42d4ae1f18aba2f81fc122a0652f6c196f13a3b6d5449baa591fdade2aae1844",
+      "bytes": 3583,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/video-evidence-v1.json",
+      "sha256": "e743c5f89da4faf6e59a68f3e3ac98a7037f7073d8e61329119e2133d3d19808",
+      "bytes": 119438,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/video-evidence-v2.json",
+      "sha256": "64f1f62c81feafe3c8dd3fa68148146aeb799f4fcc534f6e2a195e2db786b6da",
+      "bytes": 119635,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/video-profile-v1.json",
+      "sha256": "1537698ac8b67357faa6017de2f0b04594fc66c89cb4dc73b5e46dab040c8ecd",
+      "bytes": 2466,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/license-addendum-v1.json",
+      "sha256": "e4de3139fa5cc472dc5e7c8dab80a3b7c6109b4ecb8afcada0110bd751d80aff",
+      "bytes": 629,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/master-approval-v1.json",
+      "sha256": "7788acbeb4254b67567fac2a1ad4a27cd1406590e058c2181add0165b7ea80d5",
+      "bytes": 2524,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/master-lock-v1.json",
+      "sha256": "c481b95055840f88ccc147970d9aaaa0e3379702c1ee785d02ad2644e72e8694",
+      "bytes": 802,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/owner-instruction.md",
+      "sha256": "2f5216ccfbf6f47608b4e3b006ca87cffe385c4cac2da660946d04de591cebd0",
+      "bytes": 1994,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/owner-quality-acceptance-v1.json",
+      "sha256": "d760cec8e364739e29982ccea3f2cc10d82109cf8ec88b8f414646260ca3efdc",
+      "bytes": 1599,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/policy-inspection-v1.json",
+      "sha256": "819f3b5f55952e23f65813fbed33cabea9ca4eb1bce51ffe4f4f4cdf6ec3b371",
+      "bytes": 3770,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/presentation-analysis-v1.json",
+      "sha256": "ac545dedfb796474c10a44421f541aaeee4204ab3617873fd0805a8e87fdb6b5",
+      "bytes": 2554,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/presentation-complete-event-v1.json",
+      "sha256": "197c886ae6b388044589533c12a9e094a4ca7c9aa76db046b01c49a34cbe30c9",
+      "bytes": 277,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/presentation-start-v1.json",
+      "sha256": "3e0eef4ed0ad4ef9b88b46d269c26183727844273ee0aac8e5345a0264a5f8fd",
+      "bytes": 309,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/preservation-baseline.json",
+      "sha256": "2ffaf698c5c678688dce033894425bf0dccecaf6c4ce16647566d0ab103e257f",
+      "bytes": 3111102,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/profile-binding-correction-v1.json",
+      "sha256": "134d9571cb5decd2126f02f71ce3006cf3a3ead01ef36690f44a2745770029e0",
+      "bytes": 1064,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/profile-versioning-v1.json",
+      "sha256": "4ab339eca77728e573cb7c3501ce3d5b6c4aa20b570f9ec783fc8cba2b565d97",
+      "bytes": 2984,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/audio-integrity-v1.json",
+      "sha256": "d40606573727b6b8fb720982aa079a56e6de1e66413bbd348d503e8cd7c1d54e",
+      "bytes": 679,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/caption-vtt-validation-v1.json",
+      "sha256": "19a2bdabe7f3a55695d81e66dca64bd84e6fff9ef472fd3e8db73761a29de6f8",
+      "bytes": 821,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/command-results-v1.json",
+      "sha256": "88b07aded0185cb4f083fd991b9bb1f5f5b1658090431cc276d3b7fd25456d7b",
+      "bytes": 2333,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/default-check-output-v1.json",
+      "sha256": "21f1fa921303ccd3eeb63bf85a0f46e79d5557d47caee80847b6579d8bc99618",
+      "bytes": 1053,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/delivery-validation-v1.json",
+      "sha256": "83979eda70a4a3cc8cc1ae5405f80aeac29751fd8a9b440ece8627f171f6de44",
+      "bytes": 5244,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/durability-output-v1.json",
+      "sha256": "c730ed8fb74949ec058a8d5f6e58c65bbabaf3bbbbf1cecac42f6c731c657555",
+      "bytes": 253643,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/durability-summary-v1.json",
+      "sha256": "637a25f3169a04d101537a3d64a4eae2cd593918a539970cf0f9e37d1b54a872",
+      "bytes": 495,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/facebook-resolved-files-v1.json",
+      "sha256": "e6f38b468b810ffac96e8a8139c089a408313047addad052eef0bd675579d7e5",
+      "bytes": 924,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/global-status-v1.json",
+      "sha256": "ff8bffceaaff5a6befbbe156c5b4275834608288988f2aa6224fdce9d932b9c6",
+      "bytes": 1416,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/handoff-report-addendum-v1.json",
+      "sha256": "8bee1ad119c69e69e20954980a43380e5889841c781f2ac6d22d8b4106de2f34",
+      "bytes": 630,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/instagram-resolved-files-v1.json",
+      "sha256": "400425fbfe6f6f86533f566948a38fbd55bb916ed708d86d6709e5d30c2aae7d",
+      "bytes": 925,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/journal-replay-v1.json",
+      "sha256": "be5dd16156b72f1e1371c433db210d4797ce6c0abc18c57eaaf0685c80448d6c",
+      "bytes": 11705,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/master-release-validation-v1.json",
+      "sha256": "cb587ccdafbb338d2a00fa6bbc6447f2db73dc90c4b64ce082e7b6aeef1a749b",
+      "bytes": 2119,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/preservation-v1.json",
+      "sha256": "92f60d27a13e4ae2023a6411c0909e186e9e13daf9b6fb8bc97e38846bb61bee",
+      "bytes": 726,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/retained-text-scan-v1.json",
+      "sha256": "838b59746fc846ca7272436eabc22be593048d651a3cfc41fdd698f50b25aadd",
+      "bytes": 16439,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/selected-cover-v1.json",
+      "sha256": "2e0b2b4f59324f620665c61e4c6a220fc8733eee704ff94cf9ee24015d83c3dc",
+      "bytes": 2410,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/tiktok-resolved-files-v1.json",
+      "sha256": "d86f60254f25af617f8d90e9d672466548dbc15e83fc7ccf18cef78116ece84c",
+      "bytes": 922,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/youtube-resolved-files-v1.json",
+      "sha256": "cc7ff4b62c0b868ad6c26a7241c9a8dc3a0bc3314b8f0e2b8ec05691ce2c59d1",
+      "bytes": 923,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/release-inspection-v1.json",
+      "sha256": "8fa9c55c85bb6017585fd2ef71381b2851f18e7c19e34731fd5cb001343f560c",
+      "bytes": 14885,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/release-v1.json",
+      "sha256": "9ea4454728bb26ab0c6de3f1582a0cc62479b0368cae18d3df055dd3ffce6e97",
+      "bytes": 5407,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/risk-register-v1.json",
+      "sha256": "e9059fa60945fe2456e928df03ff0cfbb888eb9910f742202167215f1e6e290c",
+      "bytes": 6761,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/source-copy-review-v1.json",
+      "sha256": "4ab98a84f0e9d14fd5f47eb28586711f681afd21b2c498ef36fda87ae4fef449",
+      "bytes": 3141,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/source-snapshots/ASSET-LICENSES-before-delivery.json",
+      "sha256": "76bcf41c2b928363fc05bc6f0bd0a7e229684c16fcfb270c981bbee0d02fdffa",
+      "bytes": 87064,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/source-snapshots/prepare-yamaguchi-release-before-profile-binding.json",
+      "sha256": "a08d9ca0562282bb50cd1106165814e8d8ef0b9a7f411c2774fad5394cfb8579",
+      "bytes": 24791,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/cover-evidence-v1.json",
+      "sha256": "0a1a62f39553e41639763c1ded90fbaf643df59317b155fe635b4f70fcf4fac9",
+      "bytes": 1846,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/cover-profile-v1.json",
+      "sha256": "089ee185157d70f47b6bb1d6781998856f4fa7b1d30c035ff352fd046efeeb29",
+      "bytes": 1746,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/manifest-v1.json",
+      "sha256": "afb3a2608ad41fec7369a13b95c1ea4ea234dd984f715cbbc878f1e55c438d9f",
+      "bytes": 1681,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/manifest-v2.json",
+      "sha256": "24f7f6b8745cc944e709f79b7ea452486415b3f27e19c225b9ebf9181723460b",
+      "bytes": 1681,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/metadata-v1.json",
+      "sha256": "8313367e3a37330fab347e8bfdc8d93ecb211e4a50d8065469178282cf56eb8d",
+      "bytes": 7864,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/review-v1.md",
+      "sha256": "c94df4a61876389b8e903dc4f4a085b300245d17ccd4ef7d9c74faf0749fbf68",
+      "bytes": 988,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/upload-copy-v1.txt",
+      "sha256": "71b7b89bb5e1cc46312bf055888421037c2b048afc9c9528464901ea8c3340e7",
+      "bytes": 3471,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/video-evidence-v1.json",
+      "sha256": "8982f7b99b56910566b7cd12a66e0e3098f42d77cf3ee6a410a7f67b05471853",
+      "bytes": 119422,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/video-evidence-v2.json",
+      "sha256": "e434549e0e356dd54ada4a3401c3d792cb09fb47d3dff62dc2a05f53432494b4",
+      "bytes": 119619,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/video-profile-v1.json",
+      "sha256": "c35e46d2a6a3c60472e36862061b97d7a36570f0a650d2adea14a31ee1a7e1db",
+      "bytes": 2449,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/cover-evidence-v1.json",
+      "sha256": "01604bd965168985609a2eb288a203d2dfcfc3960408273c411c735bd7e95554",
+      "bytes": 1848,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/cover-profile-v1.json",
+      "sha256": "38f9867b5290de3e923b2b4b676bcf988e4a204976961c3fae5fc4da11be99df",
+      "bytes": 1749,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/manifest-v1.json",
+      "sha256": "892a057ab6963ee13be28c401f9d2122cb5701f6e6be9c77f20fe3c182bdff9c",
+      "bytes": 1686,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/manifest-v2.json",
+      "sha256": "aacbe7011036655807cd4b9e10ac844a7b8cad7c3ac7441dbb7c04c3d0776b46",
+      "bytes": 1686,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/metadata-v1.json",
+      "sha256": "15855ffeaf27a2e08e51d2a699a61d6993df197a60336ed880550239fbfe9995",
+      "bytes": 8208,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/review-v1.md",
+      "sha256": "665291050d7e9457a2cdd530ad1441946eeaf3c559914ae6e5095553529a77f9",
+      "bytes": 989,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/upload-copy-v1.txt",
+      "sha256": "7d0f57efbf5960a8f1c141807fc7f92e54bbdd9a228799cd69cf47624df22c5a",
+      "bytes": 3752,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/video-evidence-v1.json",
+      "sha256": "49b265b9b25f7d646f712b4eb7ae2c59d08088432f135c6be308907b72267d66",
+      "bytes": 119433,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/video-evidence-v2.json",
+      "sha256": "1dc0259c0a81fd0d828303506500ad5a4054e41a7e79b06775100e7d5f224959",
+      "bytes": 119630,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/video-profile-v1.json",
+      "sha256": "1222e8a93f0637ea8c793f1cce732b8c3a8cc95c82cbbc9dc2da1ed4b6efa34d",
+      "bytes": 2474,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/editorial-receipt.json",
+      "sha256": "c5222fa075e481a7a172f05724479b22a0070ee04ca69aba8ab2026a498d859d",
+      "bytes": 81484,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/editorial-start.json",
+      "sha256": "b6610a5a588bcea62366fb545f30ec48733e12631130b5df4db5ad8780a4e301",
+      "bytes": 202,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/knowledge-package.ready.json",
+      "sha256": "dc0493cc31ad5397b7efae5fdf24fb7ccc88879a3d056322343993bd64797687",
+      "bytes": 32416,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/master-review-v1.md",
+      "sha256": "2e3ed0de441ab535315ac04cfbf5384aab215864eff2371fcf7849fd61759ea4",
+      "bytes": 12676,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/narration.txt",
+      "sha256": "73cea6e8fe2b3abc1fe69606cd5c64475739132b32463a85c6c632326483b34f",
+      "bytes": 848,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/owner-instruction.md",
+      "sha256": "1ade6b0020995e26f3fbe79a3dd723cf0a1b251f74b505d27a4949f78221de03",
+      "bytes": 5792,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/owner-premise-authority.json",
+      "sha256": "ae82794eb3148771b749dd34624969336aee1e578a08ff9e179ff99088bc1794",
+      "bytes": 6599,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/owner-selection.json",
+      "sha256": "ba6f14146e7dff9986fb5b19d3ae2036dc220a05722f06b8a0e4575ed6367aa7",
+      "bytes": 6385,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/portfolio-inspection.json",
+      "sha256": "f166a93fd692839f07b6ce1d21aebebebd279efffad7273bac870176f97dffbd",
+      "bytes": 30715,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/artwork-corrections.json",
+      "sha256": "0c75ccad016bf3217ae7c7b2207f7e56160e40efb687f86da4a93d5601f24aff",
+      "bytes": 3277,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/artwork-generation.json",
+      "sha256": "e4b758f32a404e68b48f2bb51a8b744996aec6b0600d3bd855a00e7b2c62f43c",
+      "bytes": 9253,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/audio-mastering-v1.json",
+      "sha256": "c913919d5d2fb53ed4052563fe7df34d55f1e08cffd73447ff6bfc2fb9947ba0",
+      "bytes": 1002,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/caption-authorship.json",
+      "sha256": "7f7ec965f4913052d4fb8882d4163a284c018c4b8f74b1f11b20248a665cde77",
+      "bytes": 3511,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/direction-ready.json",
+      "sha256": "983536eda196fa177e149284924d40a9b9075b61d011547780177fc647dbb3d2",
+      "bytes": 29111,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/implementation-bindings.json",
+      "sha256": "7a81ca2c68d782c72cba8a0fc9d0a202bfdc30a3b7799d3c67e4f27e6ffc851a",
+      "bytes": 4783,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/implementation-whitespace-addendum.json",
+      "sha256": "1886d2b454e7da0e90be7837d57107bbfeb319e861efd74d057f1155f5817eb3",
+      "bytes": 1451,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/master-candidate-v1.json",
+      "sha256": "412bb15c0dd1b2304b771ccd4d77c52f97b9d5c5c12e759e5d75c7cc761e89ea",
+      "bytes": 9798,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/phoneme-audit.json",
+      "sha256": "2bdbf2432bf3061cac2cd36028096a19130e8a31dcf7470446b0e415f09d8ae0",
+      "bytes": 4481,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/facebook-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/facebook.json",
+      "sha256": "75d6a64c2f90fb8a53523537d93c549ab7165d295a6630bff7168c73233c641a",
+      "bytes": 95541,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/instagram-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/instagram.json",
+      "sha256": "e21725f4791b542cc33dc57c482f03bacce094b137118daf62297ebbcb0ce969",
+      "bytes": 95545,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/tiktok-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/tiktok.json",
+      "sha256": "cc1f6ce16dd4441648a0cb34bbf436a29631af79eeb694514c86e5f6cfe5a6af",
+      "bytes": 95529,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/youtube-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/preflight/youtube.json",
+      "sha256": "c3cd6e824f1176634ccead09bed21b5f054a751c7135dac3256b04c696a9946e",
+      "bytes": 95540,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/production-complete-event.json",
+      "sha256": "9f15b2e0d1a007403c12eade993eaefb589f40d8a303ced32b45496662401a36",
+      "bytes": 286,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/production-plan.candidate-v1.json",
+      "sha256": "ae97cff7726cfcbc7854dfa2550a4c71bedec348aade42563f80810cd42cae6b",
+      "bytes": 20808,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/production-start.json",
+      "sha256": "db876e036f8c4178dca1b30aaa5a4d70e2432209f12470d3d40f629701b9224d",
+      "bytes": 125,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/facebook.json",
+      "sha256": "904e5e446ed248d94c350f05f8daa0141549895dc6e1f8d84c36b83781060fb0",
+      "bytes": 2075,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/instagram.json",
+      "sha256": "9d5d6a0aa0e47e602ff73693eee544c438e87767954caa66077c68c3d3381e49",
+      "bytes": 2093,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/tiktok.json",
+      "sha256": "01a150398ad1dd497ef67faad6b1008096537b31bace6863b4086468f12762f8",
+      "bytes": 2078,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/youtube.json",
+      "sha256": "9ada3a7351c7bd90dfe82ee244d9f590ee1105582b07ed17a598fa509a475f93",
+      "bytes": 2104,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/pronunciation-correction.json",
+      "sha256": "8de32fd0e1a613adfe55cbd6f5c3c07f32c97cca0eba5663c94bf680fd595386",
+      "bytes": 2903,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/audio-inspection.json",
+      "sha256": "8512186abdb1549511c5a0629c7fb2ccca481098fa7a19f47af823217ad7e1a4",
+      "bytes": 23152,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/catalog-preservation.json",
+      "sha256": "e556cc30ef4dede6e30d573203a5ad2831070d020ea99255e75562e5b56beae6",
+      "bytes": 160,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/command-results.json",
+      "sha256": "dd45bafb0c0be6d3cafa3d5f7d7901473043d6cb485cf0253b4cb2987be5031b",
+      "bytes": 2337,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/durability.json",
+      "sha256": "78040715b65e695e863c053e983aeea34f8259dd243ce54f38f208e20446bcfc",
+      "bytes": 462,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/final-report.json",
+      "sha256": "af0505d4d50809f72d748565b449030241e6843bacfc21331f010ef6b665c697",
+      "bytes": 7663,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/full-set-size-preflight.json",
+      "sha256": "56d7a935ec496346522527739a32096bb4678b44a95ea013e7615616acc8198b",
+      "bytes": 3792,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/historical-status-investigation.json",
+      "sha256": "61e9ebef29aff97095735ceb2cdca8891dd3034a984c4b9b7ada1ed1099c1755",
+      "bytes": 4627,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/journal-replay.json",
+      "sha256": "cf4907a8fba7a3ed22e8af7e44b6a97c99938b2a3d16026e523fe0e6c4d60517",
+      "bytes": 575,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/narration-alignment.json",
+      "sha256": "21f38a444f0e1f2463ccdfc3e98dce4af83d5d5bfb327bd9959c1de729f0c40b",
+      "bytes": 6864,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/report.json",
+      "sha256": "7361f809490f3e076c88932c89468bb7de0aba6744d9e45d9dd7c7f596ba5c21",
+      "bytes": 561,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/sheet-bindings.json",
+      "sha256": "1b44270901c11dfae63c398bd6c04c6cad983954be9bf613c9304be8ff4beae0",
+      "bytes": 4879,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/stream-specifications.json",
+      "sha256": "e698d175658d55cfbac51bde06fd689ff2fbaf8179dfab9cd0e3e0de5cf4b656",
+      "bytes": 3416,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/typography-report.json",
+      "sha256": "da7017c13cc2def140a9ebaceb50302d714eb18d60dfa0d4868bbea64f1138f7",
+      "bytes": 133947,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/qa/visual-inspection.json",
+      "sha256": "3f3dc3642af50d085420992be40da7e1b4a155bf7a0b11d7ee0bb57d8ecd1013",
+      "bytes": 8880,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/rendered-sequence-review.md",
+      "sha256": "a7e8ef7e9efec6fd7b91ec432214486e3d6ebeb6184057fd2bd6f027e09b1231",
+      "bytes": 3340,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/research-secret-scan.json",
+      "sha256": "e95d18dc2c20cbe1ca3148fd2e4fdd4ed8aa6f1fc5e452d4e73d8dd406c493e6",
+      "bytes": 2059,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/rights-provenance.json",
+      "sha256": "018708e1653109c40775be8be848fbf181072002391db123500d922361b4c7aa",
+      "bytes": 1409,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/production-v1/source-snapshots/prepare-yamaguchi-qa-sheets.ts.txt",
+      "sha256": "529dbf504e9a6e7407fc0984afaee9d02bb4554f0f1acedeb6943d07aae9a67e",
+      "bytes": 3011,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/recent-approved-works.json",
+      "sha256": "c98d57fda20f8ec405505782ab6def037e4dcf3eb3609fa904f6fe221dee0ac1",
+      "bytes": 3533,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/repository-entry.json",
+      "sha256": "86f00607085620368a95d786b9bad86324dfe8e8a2487f9ca9af2bff35167158",
+      "bytes": 600,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/research/afp-body.json",
+      "sha256": "963d4af9607221616b34710d66275e35f43bf57279a02a8d02c9279063368c47",
+      "bytes": 1947,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/research/chronology.json",
+      "sha256": "d1106342a3465b89d13d9f47b8ac2b1d7ebb483128b9bc21d72a5f7dd82e30ec",
+      "bytes": 15059,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/research/family-body.json",
+      "sha256": "1f85bb8f196d129350c00590ace4f7988329d862cf3c656de213da8cd53decd1",
+      "bytes": 2030,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/research/hiroshima-body.json",
+      "sha256": "2d2d12e55a5ddbcd9eae90a0c3e7ab5d06c0dac97974316983d2a904ff50db0e",
+      "bytes": 1508,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/research/nagasaki-body.json",
+      "sha256": "5af252cec761a603708a3c59dd5a085b4f89eeb0ad68dc3a0a3cdeda2a184785",
+      "bytes": 1405,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/research/source-inspections.json",
+      "sha256": "a67e7b4742f0244103ddee487bcfa28f529eeca1822f3ee3ee367becd1ea0d95",
+      "bytes": 9855,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/research/testimony-body.json",
+      "sha256": "7cc713cdb0cd29316d22fc73b88680e7b243668d3dccd531823e4acf62f00fb2",
+      "bytes": 2739,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/artwork-generation.json",
+      "sha256": "9cc9d0aaaadb69515cf8fdee7b513aef97ec06761f31780cea7bca42f9cc9777",
+      "bytes": 11448,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/artwork-identities.json",
+      "sha256": "593bae5f504abf7e9dacfe1003f22cb441aef3883635b5850c20667987f3c54a",
+      "bytes": 11939,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/audio-preservation.json",
+      "sha256": "65729a5fa9a9ce520963ad581bb327386c352f48f1fc09d13353d5f8a25ec1a0",
+      "bytes": 762,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/caption-preservation.json",
+      "sha256": "403e61cece80948ad293a91049478bf593e25be348b2be10fd84c634318b36ca",
+      "bytes": 767,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/changed-files-v2.json",
+      "sha256": "ab2551f97ead7ca6a13fda8d448fbb52921ea6128cd0cbce868e7b4b3f9e75fe",
+      "bytes": 26758,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/check-complete.log.snapshot.json",
+      "sha256": "7b8cbb16d69eedd3b8c98bc2616bc6f07a5b90d4b6062c4ba1bb9f06bf93c8ef",
+      "bytes": 1130,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/check-final.log.snapshot.json",
+      "sha256": "31ccf0dd2b6fd2144033ba5e40a3cbdacfea34f0f2053cba2dc367fdbb2c3542",
+      "bytes": 1127,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/check-handoff.log.snapshot.json",
+      "sha256": "fdd82d83e73f7cae795c6470e47f0a83db4ec76867ddcbd5056508dbb5d3b891",
+      "bytes": 2614,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/check.log.snapshot.json",
+      "sha256": "b1de53bb19b0b65a79ba93f71fa0e1aeb211c255a15559372bbebfb1acb4dcf1",
+      "bytes": 1121,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/creative-revision-start.json",
+      "sha256": "19335c023be78f7f918c372b76cdcd9e215935f33565a373d3fa685123edb77a",
+      "bytes": 369,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/direction-v2.json",
+      "sha256": "0641100e3c5627366b30403718e781f5556ed9da353fc5c6545ceb5d92666241",
+      "bytes": 25174,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/finalization-resume.json",
+      "sha256": "5635dbea849a0d03b0644ec3b58317cd306ee19ed516cb09a324290eba2a398d",
+      "bytes": 1500,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/finalization-source-correction.json",
+      "sha256": "876975ce0e186efa14a61f1fbb943e3806bcd96454d4d912f6dd0d46a71d7f8c",
+      "bytes": 1246,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/implementation-bindings.json",
+      "sha256": "725864b9eb49cf02f60ed545a731f4ee303d0b00c7fc4cdaa6e041205e6234d4",
+      "bytes": 4245,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/internal-date-correction.json",
+      "sha256": "c04c8319f976befe1d9777724be31656a8e892e6578c9fd53b451d2e658c16ff",
+      "bytes": 947,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/master-candidate-v2.json",
+      "sha256": "9a3b0c7b7472c079e0415389d0f59beb5804b5365c0db2b680a518062af5c15f",
+      "bytes": 9806,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/master-review-v2.md",
+      "sha256": "95121f2e832ac4e9f7b20334e910d92b628982ed045256d4b4349518a4aebe71",
+      "bytes": 10990,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/owner-instruction.md",
+      "sha256": "eb4130dfdaa5e209e9b839b3555a75880ab438cff62f31485b5b51dfa344a2c4",
+      "bytes": 4837,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/owner-master-revision.json",
+      "sha256": "b4e92f1746b118fa09a501c0280d702b354313fac2013872973d13492e7a3e38",
+      "bytes": 5822,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/partial-finalization-records.json",
+      "sha256": "3c623bd77b9659fac9cb424c14c24253d5d3548dd0461714b7724bd4b0a0e8ad",
+      "bytes": 1694,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/portfolio-inspection.json",
+      "sha256": "d1c9cae42f6035889490155ddc5530f587c48d8edf1c69bd9d9c078f856191c8",
+      "bytes": 8505,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/facebook-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/facebook.json",
+      "sha256": "0414c256a4667b747ff841235d2ca19f49e4bd028396e25c96836cbad36eb270",
+      "bytes": 118855,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/instagram-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/instagram.json",
+      "sha256": "bfb7ab90b474341fe4c485856a6cfc334b2a752237caea2cb838531347323836",
+      "bytes": 118859,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/tiktok-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/tiktok.json",
+      "sha256": "511bde8ceaff78403aa793d8ae084d974ef9e1b770ae620d299933064fb199ac",
+      "bytes": 118843,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/youtube-assessment.json",
+      "sha256": "f51a69fae0ea7e3df77f09c0c0302dc09d6ea56d24c4567bcfc639b55336cdcf",
+      "bytes": 461,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/preflight/youtube.json",
+      "sha256": "87a29ebc7fdffef6bd83d94b113023674c4f5639a3f8de3424682053d646acba",
+      "bytes": 118854,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/production-complete-event.json",
+      "sha256": "c520023ce55dc324ab26da998110ebc8bc77d2a46b35417a26b970df56c73d7d",
+      "bytes": 284,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/production-plan.candidate-v2.json",
+      "sha256": "0f0a6327a6a599f2ca3cb71046cacfa49c684699364ae72822f5e83554bdd6b3",
+      "bytes": 19113,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/production-start.json",
+      "sha256": "e56c244e61d1e3ca0fdbe858fe7569512af027cd9d610e4d854e5d3d5d436497",
+      "bytes": 186,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/audio-inspection.json",
+      "sha256": "dc5df2c24a0a773e971e664049cb3e984f746f5559f6a26ed8ba75ffc8d5c96c",
+      "bytes": 23152,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/audio-timeline-preservation.json",
+      "sha256": "d2febb4e035a0f15e2cd16e8736a31a0ed6be7ef2212c3fd7cef2de64b0e658f",
+      "bytes": 656,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/command-results.json",
+      "sha256": "75626016fdf80bc4c5392aba5950c29e690bfd668744c246d93b23f6e06ab731",
+      "bytes": 3690,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/comparison-bindings.json",
+      "sha256": "a7531c2aef94f81aecf6e1efc54a993bdc43a5af906ee5f0d4580cd93b473772",
+      "bytes": 5579,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/durability.json",
+      "sha256": "812efbe290f0cd8c212e94f4c03c1c9e354884417fc150c1424eef8c9f0fa0ff",
+      "bytes": 640,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/durability.log.snapshot.json",
+      "sha256": "c87ecd13418fbbb3a323e7d973fc6c08e628ad1e7d4cdd610a28b712b4fd4ccb",
+      "bytes": 253707,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/final-report.json",
+      "sha256": "3add423e77e6342d5a7541d8b0be160fa1f19e3f2e1b2e7d47ff7be3be732ffc",
+      "bytes": 10655,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/full-set-size-preflight.json",
+      "sha256": "a9e8733eefa03002ce7cefe498164277279dbd2a2af0f092da47c285ef4758f2",
+      "bytes": 4612,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/global-status.log.snapshot.json",
+      "sha256": "31c4dc1bca06b195373a8e15d4a59efe2e54fef046e2cfbe72448e6cc008bbd5",
+      "bytes": 1504,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/historical-status-investigation.json",
+      "sha256": "de41451cbb62e098da31581a76aa8e1e51632d78995f79ccbddb66a156b5784d",
+      "bytes": 5196,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/implementation-integrity.json",
+      "sha256": "2144e8f64df6af0a9106c885eb1eb708b81ac496925607137b32f47f6970e444",
+      "bytes": 2634,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/journal-replay.json",
+      "sha256": "cf665d2358750f7bb58e4812735f20248bf7e876159e7f2ea02987452f140d6a",
+      "bytes": 8303,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/narration-alignment.json",
+      "sha256": "21f38a444f0e1f2463ccdfc3e98dce4af83d5d5bfb327bd9959c1de729f0c40b",
+      "bytes": 6864,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/preservation.json",
+      "sha256": "3f1cabadce1989d5be83086388bf5d11bc8f3c944a1fab94f43cfb88899375d3",
+      "bytes": 1079,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/report.json",
+      "sha256": "9878879d82327f56f1df9fe285f7967bb59b319491f2ea047c80585008a682b7",
+      "bytes": 561,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/sheet-bindings.json",
+      "sha256": "c770e3aba76a259f0df72a4c2f4d776d742e3006a0843f14fea50c926d8f4938",
+      "bytes": 5344,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/stream-specifications.json",
+      "sha256": "cf440e6a9e6b099a93e673dbf3e70a7b766091fc7ed749a3ffafc3027fe6bd56",
+      "bytes": 3416,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/typography-report.json",
+      "sha256": "924c0ea66fc007415a90cd8e7524478338d6c65350af1933e05c0ed7aee751d9",
+      "bytes": 162906,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/qa/visual-inspection.json",
+      "sha256": "59a07f58fd5cace5f134ce4011a09b3bc8260eac89be65871909e2749715d52b",
+      "bytes": 7379,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/rendered-sequence-review.md",
+      "sha256": "b76f8af16ce3452959fd847cf580f66802d509edb05fe79bee3f7589f2ed4699",
+      "bytes": 4279,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/repository-entry.json",
+      "sha256": "36d5e1224be48afbf0814922f5c687ee8f5f1b8df777d5cdd799a6f7409103dd",
+      "bytes": 3047297,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/rights-provenance.json",
+      "sha256": "09675505241136696881b75bdd1546637f098d4906b75cf05e4e0fecc842660a",
+      "bytes": 1645,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/rights-verification.json",
+      "sha256": "2a8f38bb2f75af231dbbcdd5f3e63e48d45e89068788a3c1b58c6fa4c8c424d2",
+      "bytes": 2204,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/shot-ledger.json",
+      "sha256": "993f612cc8b71151a4cb0e73ad31a03f98019438a30d71ace9669d3ba613c1aa",
+      "bytes": 4857,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/source-snapshots/resume-yamaguchi-v2-finalization.ts.json",
+      "sha256": "a8db487dfa959dcb362a5edb35dcf9a8d05450689bf67f54fd10135ac440cb3b",
+      "bytes": 8705,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/revision-v2/visual-evidence-scope.json",
+      "sha256": "2e44b4414a98913e2d49d5a31be6b16aea07780e64953cbed5415e9e5c0e62bd",
+      "bytes": 1069,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/cycles/cycle-23/topic-selection-v1.json",
+      "sha256": "7f60e7d65708cf36d77530a5bead7d1dd8f31cc75a9291c2dd12cc8224c46a54",
+      "bytes": 15347,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/closeout.md",
+      "sha256": "8261b9b318f5746787096567adb7f7147854dce056ada715a4c9d59aa592e812",
+      "bytes": 2964,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/facebook.json",
+      "sha256": "147cfd35d64fd72aad9e92ed7ce764d0119442f663cf94e0c8cfc3b9a01af47a",
+      "bytes": 3176,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/instagram.json",
+      "sha256": "eed01342f3bb5abea5eab201529a083e09f49a85d583075d15800ea58a452da0",
+      "bytes": 3181,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/owner-instruction.md",
+      "sha256": "5b52a4c825377202bdcfd5b34945abab0fe4199ba2e034e872d06df0e88a1bc3",
+      "bytes": 3477,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/owner-report.json",
+      "sha256": "35249d3d84cb6d4e3bd22d3be81b0a2fa30bb305e1bbca676bf8855d7b013d7b",
+      "bytes": 3033,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/audio-integrity-closeout-v1.json",
+      "sha256": "76ca6983dbed3b1ed98766065e4ef7b72d456cd4e75c8f17a3ef1b4b2f643aa5",
+      "bytes": 737,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/caption-integrity-v1.json",
+      "sha256": "3235dc84dd0f5c9237fe3886f956390b51794915b12cff0acf8e52a78e1e1c86",
+      "bytes": 403,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/check-output-v1.json",
+      "sha256": "4eb8a1a8d400d818a1d8e73db1ceb2be15837971b2482a76b7566e6368116c3d",
+      "bytes": 1049,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/closeout-validation-v1.json",
+      "sha256": "9c28cba1276ffcbcf6542ca50f73253e9465e7bdb1454f3e7d8c6d07a04a3919",
+      "bytes": 3777,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/durability-output-v1.json",
+      "sha256": "a4ef97a48b6b0936f3ce5a3ebcbe791aa440249454b2e3c46426d395b5ffd39a",
+      "bytes": 253639,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/durability-summary-v1.json",
+      "sha256": "9b3402da8eecf3011aafd11b205e46fd1dea1a0ee7d0aca4aab54327f102048d",
+      "bytes": 513,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/full-media-decode-v1.json",
+      "sha256": "0f13dfaea52e2eb7b1334e549562e632dc2be708422bff470892e384f479c0a4",
+      "bytes": 4058,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/global-status-v1.json",
+      "sha256": "9f3a34c61daae5302bb3439e8e2e46a284f8552c034d81746c87f74ef012f313",
+      "bytes": 1520,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/historical-document-hash-mismatches-v1.json",
+      "sha256": "38e2984fe11df90ef435b484a2234f4560a7291cd7ec5431dc34d932f6980394",
+      "bytes": 5247,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/isolated-git-restore-v1.json",
+      "sha256": "202d3f7686410f48873939d0b9c96f09cada3ba08434657a44efbb25e2577cdd",
+      "bytes": 86164,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/journal-replay-v1.json",
+      "sha256": "be5dd16156b72f1e1371c433db210d4797ce6c0abc18c57eaaf0685c80448d6c",
+      "bytes": 11705,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/preservation-baseline-v1.json",
+      "sha256": "3a20ba21e3896f64f5666b553face0b87c80c785c31120bf87ebf04c30bb560c",
+      "bytes": 3146776,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/preservation-v1.json",
+      "sha256": "e6f0d1306c2800ec22a16e6ac3bd8176793d40f2e89ab2f82f5a0a76545000e0",
+      "bytes": 517,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/scheduling-validation-v1.json",
+      "sha256": "c6626459ba0cffcf6796288209ad10373405a298749cad1e9fb176d0b3f817f6",
+      "bytes": 558,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/secret-scan-v1.json",
+      "sha256": "ddbe84db84dce35f71de6f0e16a497a84721d0d6f9e502f3dfa19603978ed865",
+      "bytes": 77582,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/selected-delivery-validation-v1.json",
+      "sha256": "e085fb864d1ab3fe330821b10f47b41f719ec287091f075a700d9bd9f8fe8c15",
+      "bytes": 5244,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/qa/validator-provenance-v1.json",
+      "sha256": "8c53da262dec2842ff34376cc02c67d256b3008877150b4e69759c5a49dc4a08",
+      "bytes": 1065,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/scheduling-index-v1.json",
+      "sha256": "f7d2afb90450c301f48d6bb973f0ff946a25fb71ee5dfbbdfeae64853e5981e8",
+      "bytes": 2233,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/tiktok.json",
+      "sha256": "4192ff328b1f410718c0b15e39fb529b72c521254aa627f475d76efdb7e3f02a",
+      "bytes": 3166,
+      "findings": []
+    },
+    {
+      "path": "content-intelligence/operations/yamaguchi-two-bombs-scheduling-v1/youtube.json",
+      "sha256": "3ca3a17336ed84e66b5290c4c06441ec9c67b6cbd6e748f2e028bc256f8562f1",
+      "bytes": 3171,
+      "findings": []
+    },
+    {
+      "path": "docs/ASSET-LICENSES.md",
+      "sha256": "260a561c5a7bca639e8148b8b08f33eb220c796ccc07693530059ef2177c7a25",
+      "bytes": 87532,
+      "findings": []
+    },
+    {
+      "path": "docs/CAPTIONS.md",
+      "sha256": "223157479cd5d9081542eae20949bf9036648fc8f1286eeb152e3254944720c1",
+      "bytes": 9171,
+      "findings": []
+    },
+    {
+      "path": "docs/OPERATIONS-CYCLE-23-SCHEDULING.md",
+      "sha256": "5977f7adb82c784df7d987a215ff8de43ccee6ca96be2b31b6379584448743a7",
+      "bytes": 1941,
+      "findings": []
+    },
+    {
+      "path": "docs/PRODUCTION-PLANS.md",
+      "sha256": "bc460e7446712db1c4ffb5c55d8143f76af709ee8c36960e0ec2470b7b1f1e39",
+      "bytes": 14593,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-1.wav",
+      "sha256": "d9444d9cab160f4f22ba31db6c22cfed384b1f7a60950ee7c1ce6ee6ee424efa",
+      "bytes": 448844,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-10.wav",
+      "sha256": "11367cde0fc93bc4c0ab8a2ca5244a3d6ebd9461900f021f5a50ab709be71577",
+      "bytes": 537644,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-11.wav",
+      "sha256": "a0974fb3408185c74fda3e9838a2ad17dce7a43158e57b5985aa0986d4598cbd",
+      "bytes": 247244,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-12.wav",
+      "sha256": "9c5a423c63fab57a8ee3d2e65613c3ddeb9549d124d50c0cc687391872114b69",
+      "bytes": 319244,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-13.wav",
+      "sha256": "26501a5227bdc025202a9a8e3b0dc20eba8ade868154068afb054362905cad8d",
+      "bytes": 405644,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-2.wav",
+      "sha256": "f0e6122d97af7a1edc7c8a5d8391da90a2648fb7d5d4db328432d1a75c94a98d",
+      "bytes": 213678,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-3.wav",
+      "sha256": "2d633821c57b252a7b3bc3f877380615a0893d1c3eba154afcd0e1e4e26c130d",
+      "bytes": 729644,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-4.wav",
+      "sha256": "cdbc789684c8e88f6faac3977d074028740ce273b3b74b59444521dbd5c5229a",
+      "bytes": 237644,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-5.wav",
+      "sha256": "6e3f649c60d9416c6ffd8868b422e8684dfbbee08d2f49780cf67e087809cfd2",
+      "bytes": 429644,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-6.wav",
+      "sha256": "252e48acbc3fd6e84e675b314f757311da6fd92629ef164dd7efddb0aab3f9fa",
+      "bytes": 568844,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-7.wav",
+      "sha256": "060294728f4afd6ac101dc2b08bcfede769342ecfcc11d524675d2602dc97932",
+      "bytes": 400844,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-8.wav",
+      "sha256": "f3f2a2f42f3658539d22adbb1bf773c6f09b6e392f5ecf231234abae0cc67f3e",
+      "bytes": 408044,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/narration/cue-9.wav",
+      "sha256": "d4e3d930fa5fde8afbe6a11e2ae103e5ac368cdfd77246129b2dccf41acd6ea1",
+      "bytes": 417644,
+      "findings": []
+    },
+    {
+      "path": "public/audio/yamaguchi-two-bombs/soundscape.wav",
+      "sha256": "10182c38c75893e454df39f2164438d9b984994530272057a863243f5b20265e",
+      "bytes": 12358444,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/draft-detail.png",
+      "sha256": "5ee57a1ad3e9746004790ac44679bc8a5793ce80db1c7c81b792a14bab3fcf0f",
+      "bytes": 2084462,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/later-witness.png",
+      "sha256": "c0ee765413c263e46b620bd8f797c84a68167f767654a10ba93290c6f4bb19e0",
+      "bytes": 1963691,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/rail-window.png",
+      "sha256": "9d3f9ef02125ca5694a8817ad3cf69f7498229b07ed0914bca41df005e9d7c49",
+      "bytes": 2205486,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/shelter.png",
+      "sha256": "4efb9bb0dc071fac9d1a6357cb10e1c9743e6e0033c761b5a8dc51e4dc8a9930",
+      "bytes": 1864172,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/street-after.png",
+      "sha256": "8e44383cdc97f0a28782cfd74d4886308d8c6cd5d5d6e94dbdfd170a86c5be1a",
+      "bytes": 2614714,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/survival-detail.png",
+      "sha256": "c76b9d918d7ffd71632ce397662c48cfd5b15b2e1180f370414db388b09b1a9d",
+      "bytes": 1852701,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/workplace-detail.png",
+      "sha256": "29fe905f15e066e3c28b2df3591a7c3385f70867f70cf0e08acbb50dcfc40ffe",
+      "bytes": 2328874,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs-v2/workplace-wide.png",
+      "sha256": "8f5c5127130e32759a38997e50ddf170fe004cbb916f36230ab33ec8f004274e",
+      "bytes": 2075359,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/aftermath.png",
+      "sha256": "7f8bd0ad2a03c44b5403abe7f3d8b739a883dcd40d759b8c919f158c54abe7a9",
+      "bytes": 2272716,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/desk.png",
+      "sha256": "31d98353cec9118862f68369927b1ef968f9745f6497512a1089390a167a2340",
+      "bytes": 1915938,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/engineer.png",
+      "sha256": "7768533fffbc33c45c032b8bef44eba0ebe3dfd9b5c241e47161af4c289baefe",
+      "bytes": 1971877,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/hiroshima.png",
+      "sha256": "cce796ef5a44c3ece33f85bbdf6cc31d518978f5aabc3b8d7e05d4a4a3551ba5",
+      "bytes": 2402825,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/office.png",
+      "sha256": "ed567919954143a5ebe899e0c242e689403212e838afc6a53c199c53736d554f",
+      "bytes": 2034626,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/ruins.png",
+      "sha256": "261b972d81f002079b38e3166aac33cc32d2ad256401874a85e56514017abdd2",
+      "bytes": 2715652,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/train-selected.png",
+      "sha256": "15d7ae6c92d429aa3605f269409fe733ef9b17ed22816e3a486eef7db53c632e",
+      "bytes": 1999075,
+      "findings": []
+    },
+    {
+      "path": "public/visuals/yamaguchi-two-bombs/train.png",
+      "sha256": "190a62c1050fcbd75e7b59326bf566a9c44452e238c43a6ddf222a8a452443fe",
+      "bytes": 2041771,
+      "findings": []
+    },
+    {
+      "path": "scripts/audit-yamaguchi-phonemes.mjs",
+      "sha256": "d50ef72054a2a9d75a96a2de967fec4e386959ae7ccb93ec3382b8806aaf5b52",
+      "bytes": 1367,
+      "findings": []
+    },
+    {
+      "path": "scripts/finalize-yamaguchi-v2.ts",
+      "sha256": "5ac843c6e4eab2107909c4a2e7ecddfd40caab3021bc46be339f4a026182d249",
+      "bytes": 14480,
+      "findings": []
+    },
+    {
+      "path": "scripts/finalize-yamaguchi.ts",
+      "sha256": "8194ffdc4967ce8593bce7ea2645e84119263d2b1c25124b1dd744202a65b573",
+      "bytes": 13568,
+      "findings": []
+    },
+    {
+      "path": "scripts/generate-yamaguchi-narration.mjs",
+      "sha256": "19a7a9db5065a36fbe5cb5354cd21f7ea0ee079055575957d8aa8a4b0494f84b",
+      "bytes": 3770,
+      "findings": []
+    },
+    {
+      "path": "scripts/generate-yamaguchi-soundscape.mjs",
+      "sha256": "b6a7219b520b5cbe83d33c1d7f2e34cd387f72dd0f4a6a65e74a9556e0e3c768",
+      "bytes": 1564,
+      "findings": []
+    },
+    {
+      "path": "scripts/inspect-yamaguchi-audio.mjs",
+      "sha256": "ad424efc56d736194c8dafae97281dcf3e320d278befdc228d62e6f35088852c",
+      "bytes": 3576,
+      "findings": []
+    },
+    {
+      "path": "scripts/inspect-yamaguchi-v2-audio.mjs",
+      "sha256": "78731c3a2096569a4c380973e8d345893d82b5ef882269d1bd070a3133d0dd35",
+      "bytes": 3579,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-direction.ts",
+      "sha256": "b7234381b0948fd6306dfe54359e056f4644b3fbeea424bac1463927c6cdd88c",
+      "bytes": 13257,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-editorial.ts",
+      "sha256": "798121e8a9826ac24ae754326290d3d0693f8d2d386632f0e8fd864a487d5ac9",
+      "bytes": 23490,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-production.ts",
+      "sha256": "4dae98545fa6fd009e205b47aacdb8de2a5c99a4420bf72cf5bb18886ba5fb73",
+      "bytes": 10403,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-qa-sheets.ts",
+      "sha256": "d2bc97f1e3058b022ca90a2eb5e997211f98a2e7a7e49a5adfabf8056feb36c6",
+      "bytes": 2811,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-release.ts",
+      "sha256": "2a51a2810917e7670326bc8217978a899b7a7484340e02db289fa4797be3acea",
+      "bytes": 24938,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-v2-comparisons.ts",
+      "sha256": "fcab859fc1b8fee0e0a3f0ec927d739ec968efbe98858a94b1d307a85bb868c0",
+      "bytes": 924,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-v2-qa-sheets.ts",
+      "sha256": "754c13e74c1bb50c2140d4a87e52ec4efeb404526d6d7a9c9526e7d65a858d28",
+      "bytes": 2879,
+      "findings": []
+    },
+    {
+      "path": "scripts/prepare-yamaguchi-v2-revision.ts",
+      "sha256": "ae88c848548022c3976605c61c4afc850772f2fb3ef8d971461d2d67866e226e",
+      "bytes": 12517,
+      "findings": []
+    },
+    {
+      "path": "scripts/qa-yamaguchi-layout.ts",
+      "sha256": "5cedfb63b8fae8333f20d1e50c76681135efce8de4ee3c54cdd9264150272363",
+      "bytes": 4331,
+      "findings": []
+    },
+    {
+      "path": "scripts/qa-yamaguchi-v2-layout.ts",
+      "sha256": "c486ebfc6294f03f6046a5743be2c959db1ed301163f4cb2abe0cf5f71ba8240",
+      "bytes": 4359,
+      "findings": []
+    },
+    {
+      "path": "scripts/qa-yamaguchi-v2.ts",
+      "sha256": "32cf053c67374ec0afcb60bc3f50a0ce4ad588dc5d6be4718a8d172a6f5ee227",
+      "bytes": 4747,
+      "findings": []
+    },
+    {
+      "path": "scripts/qa-yamaguchi.ts",
+      "sha256": "9bb8e3a6b184bbf30bd326b466fdebf38c4384a21bc93756b4d0acd95121a45f",
+      "bytes": 4740,
+      "findings": []
+    },
+    {
+      "path": "scripts/record-yamaguchi-approval.ts",
+      "sha256": "06d6f37a0587b3cf2a6668e23d04c00bb54aaf377f74c04ff57cefcc78ca70c8",
+      "bytes": 3444,
+      "findings": []
+    },
+    {
+      "path": "scripts/render-yamaguchi-v2.ts",
+      "sha256": "39aae626a80738cbb91fede18eca8d7fff5f71ba9da67344e06463c4e8ebae11",
+      "bytes": 2292,
+      "findings": []
+    },
+    {
+      "path": "scripts/render-yamaguchi.ts",
+      "sha256": "63b2175c84b5805e21c5e683fe638b4b5fbd1e7418e075f6a35250c650de61b2",
+      "bytes": 2743,
+      "findings": []
+    },
+    {
+      "path": "scripts/resume-yamaguchi-release.ts",
+      "sha256": "3ba86df71fafa83df7203af09fc06c052d85e72b0cb09fdd649e26c504bd5684",
+      "bytes": 4102,
+      "findings": []
+    },
+    {
+      "path": "scripts/resume-yamaguchi-v2-finalization.ts",
+      "sha256": "6e640b1d404de61bb688886ac559e4afdea7305b8af16da6f8e3b417d45de471",
+      "bytes": 8852,
+      "findings": []
+    },
+    {
+      "path": "scripts/scan-yamaguchi-research.mjs",
+      "sha256": "5f039d421eeca142a7f1ed8e9bd86e49ae3fed75dfafda0a3af869080134c490",
+      "bytes": 1548,
+      "findings": []
+    },
+    {
+      "path": "scripts/validate-yamaguchi-closeout-deliveries.ts",
+      "sha256": "6f215c3eaa25df94df951baa466965b002bcd189f013f94d72853c657ec5f545",
+      "bytes": 10117,
+      "findings": []
+    },
+    {
+      "path": "scripts/validate-yamaguchi-release.ts",
+      "sha256": "c0b017bbc1502305f2d1f0b0913164b392a1b4596f248222f718ddc7f7bcd60e",
+      "bytes": 10002,
+      "findings": []
+    },
+    {
+      "path": "scripts/validate-yamaguchi-scheduling.ts",
+      "sha256": "24cde4a1b06b20b58bf9e519a7c3cc5610094248d9fc92e8aa64d19e635691da",
+      "bytes": 4976,
+      "findings": []
+    },
+    {
+      "path": "scripts/yamaguchi-v2-video-target.ts",
+      "sha256": "73397c3b7caa29c7cba59979b2643e832420f741e6a307e0bd55db2607931a7b",
+      "bytes": 1087,
+      "findings": []
+    },
+    {
+      "path": "scripts/yamaguchi-video-target.ts",
+      "sha256": "0c8d2e493fa1313cc77cbee8f290913d2f691c162328a6a2b01c1d6116054519",
+      "bytes": 808,
+      "findings": []
+    },
+    {
+      "path": "src/captions/plans/yamaguchi-two-bombs-v2.json",
+      "sha256": "7bc92ac8da09a82c8aea4bb7933707346a686db460bd9a9883414ab4b753fc0f",
+      "bytes": 18800,
+      "findings": []
+    },
+    {
+      "path": "src/captions/plans/yamaguchi-two-bombs.json",
+      "sha256": "5d793fee7774e2fbbf0747555e5277d82e63401e78b3b83329c4bad44206c7ca",
+      "bytes": 18790,
+      "findings": []
+    },
+    {
+      "path": "src/components/YamaguchiFilm.tsx",
+      "sha256": "51b390eedbaefce06dbb825ad6697b6000a69c270bdd54f2ed1c1267681e4aee",
+      "bytes": 4302,
+      "findings": []
+    },
+    {
+      "path": "src/components/YamaguchiJourney.tsx",
+      "sha256": "345c40fd89995ac0356e1bf2efdaaf60fcbebcc1d6f172e8eb71564cae31b279",
+      "bytes": 4130,
+      "findings": []
+    },
+    {
+      "path": "src/compositions/YamaguchiTwoBombs.tsx",
+      "sha256": "0ff0a5eedc1d8227115e817d46fa5ca88304a854d3c27e120592d6c45475fa8c",
+      "bytes": 6384,
+      "findings": []
+    },
+    {
+      "path": "src/compositions/YamaguchiTwoBombsV2.tsx",
+      "sha256": "10a94a5fca223e2495ae08253dbd76724bcebac1e542097394169ba8f77be4ec",
+      "bytes": 7375,
+      "findings": []
+    },
+    {
+      "path": "src/content/videos/yamaguchi-two-bombs.ts",
+      "sha256": "4bf7c18ac78417034b5160bf199007fca2205048f7482d4e04d40a1ad3c1990d",
+      "bytes": 1006,
+      "findings": []
+    },
+    {
+      "path": "src/production/narration/yamaguchi-two-bombs.json",
+      "sha256": "591312b7baf9fd183f89ba9b720b6f71def84f8945dae193549b17020e9f3fe7",
+      "bytes": 8070,
+      "findings": []
+    },
+    {
+      "path": "src/production/plans/yamaguchi-two-bombs-v2.json",
+      "sha256": "e31d2300cc6357670e252c55507a14ad5b4c61780fa8237b5adee66c2da95ee6",
+      "bytes": 19092,
+      "findings": []
+    },
+    {
+      "path": "src/production/plans/yamaguchi-two-bombs.json",
+      "sha256": "803759a332604ef4d2b5568ecd13e495b4f1884e4b7411e3a371942ef88ed84f",
+      "bytes": 20787,
+      "findings": []
+    },
+    {
+      "path": "src/yamaguchi-index.tsx",
+      "sha256": "029a7963863b3dd486401ebc1712daec806ec33767fb78e9f616ba34eb00663b",
+      "bytes": 457,
+      "findings": []
+    },
+    {
+      "path": "src/yamaguchi-v2-index.tsx",
+      "sha256": "ab19a50336754ebaebd5114cbe8443af9b6c01c5e0e04b60f7d8bbc594fb3b09",
+      "bytes": 466,
+      "findings": []
+    },
+    {
+      "path": "workflow/authorities/cycle-23-start.json",
+      "sha256": "9c48625d162f3b169b2424ea61742a5d2aab5d99584d553c872c32a3fccc189d",
+      "bytes": 6322,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/authority.json",
+      "sha256": "6f5720a7a3f18727b0b4a6f22efac028f931f47b0065bdb94c4c1cbd54fd8f38",
+      "bytes": 137,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-1.json",
+      "sha256": "748cd46811314bfd43a778fd62d1933facf9627554078f3bc82c5d60ea92da10",
+      "bytes": 473,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-10.json",
+      "sha256": "f209ffdaadcf6cd839d60aef90fe45d0980842562ef81465cafafdf7a34b9ab8",
+      "bytes": 478,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-11.json",
+      "sha256": "4e3baa9a2bb64be6d639b83b923edc9622dd708962f29d8fc34d9e1a23ab1f48",
+      "bytes": 481,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-12.json",
+      "sha256": "ff95206b5f23c0c52e927f25b049f5a8d12bf42ff30c9987dcd6d22d89d158bf",
+      "bytes": 487,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-13.json",
+      "sha256": "d25395bd340d19ca5cd8ba18bd7c49eb022ae211874a4be503af9fd096bd6328",
+      "bytes": 456,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-14.json",
+      "sha256": "b82e5d4c66c1cc3b7a3a12450a524f132a3440726e506e01595c4ffe4bb74879",
+      "bytes": 488,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-15.json",
+      "sha256": "1fb8342ba2fed170235081d13803e349fd50640f4e9276454a2d3a81152ddcb6",
+      "bytes": 480,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-2.json",
+      "sha256": "1a88f3cff1f095d06cff64eca795c99b0010a6d27b1df193e3c52db46faf7bd8",
+      "bytes": 449,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-3.json",
+      "sha256": "205d27bb81540f7b72ea051e3ce522145417868da92e3a1eabe94c8ed7ce6cc9",
+      "bytes": 467,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-4.json",
+      "sha256": "8518872d289847eea5b61f97882c9ad0091f0c9a21254a0ffccd0c6414315893",
+      "bytes": 472,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-5.json",
+      "sha256": "6739cee2b8cd3d1f306efa3e00323ab6fe39e89a3684f3536b2e0258e9075fd8",
+      "bytes": 483,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-6.json",
+      "sha256": "a6c0d50ab782c9649a7f54c6b95484e46453706d3e186d79ca0e8107de90bf1b",
+      "bytes": 483,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-7.json",
+      "sha256": "e5b9ac3a73cee75f60e8b4b28c03a44bfb048d83e55dd386aefed1b8f4603ed9",
+      "bytes": 489,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-8.json",
+      "sha256": "a1fc17cf09bd515c8675382a2325b63d2be691b2ee5bcf6a29645b99470a48d9",
+      "bytes": 459,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/event-9.json",
+      "sha256": "90ca00bbf385368dcab6421d386c3c28ad87f2a9c0d9eaa8beffde6f05d7f4a0",
+      "bytes": 486,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/scheduling-evidence-v1.json",
+      "sha256": "3e5dc5fd600ebfb52b954c72aab892280e5b4b23103683c0945b09da62a5aa12",
+      "bytes": 1307,
+      "findings": []
+    },
+    {
+      "path": "workflow/cycles/cycle.23/state.json",
+      "sha256": "af2479aa032f2ef93977576815a6c0624e4ce7bf603ac62cd1d4f8572ee29c41",
+      "bytes": 8509,
+      "findings": []
+    },
+    {
+      "path": "workflow/project-state.json",
+      "sha256": "f11a2eda1ff279eb9c9d85b80b434dffd376df56cb333b244e8434bc7f56d786",
+      "bytes": 104122,
+      "findings": []
+    }
+  ],
+  "review": "Complete staged inventory, all five modified shared-file diffs, scheduling additions and immutable production/delivery evidence inspected. No unrelated source change, history rewrite, new published record, credentials/env or platform action. Final added audit records contain only this reviewed scope and hash/validation metadata.",
+  "limits": "Pattern scan is not exhaustive; no secrets printed or retained. Initial scan and exact media/research provenance provide separate context."
+}

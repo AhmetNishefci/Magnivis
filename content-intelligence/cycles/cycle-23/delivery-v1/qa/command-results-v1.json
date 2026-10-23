@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-23T16:30:45.096666Z",
+  "passed": true,
+  "pnpmCheck": {
+    "exitCode": 0,
+    "typecheck": "passed",
+    "lint": "passed",
+    "testFilesPassed": 56,
+    "testsPassed": 519,
+    "testsFailed": 0,
+    "durationSeconds": 92.89,
+    "exactOutput": {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/default-check-output-v1.json",
+      "sha256": "21f1fa921303ccd3eeb63bf85a0f46e79d5557d47caee80847b6579d8bc99618"
+    }
+  },
+  "durability": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/durability-summary-v1.json",
+    "sha256": "637a25f3169a04d101537a3d64a4eae2cd593918a539970cf0f9e37d1b54a872"
+  },
+  "deliveryValidation": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/delivery-validation-v1.json",
+    "sha256": "83979eda70a4a3cc8cc1ae5405f80aeac29751fd8a9b440ece8627f171f6de44"
+  },
+  "journalReplay": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/journal-replay-v1.json",
+    "sha256": "be5dd16156b72f1e1371c433db210d4797ce6c0abc18c57eaaf0685c80448d6c"
+  },
+  "preservation": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/preservation-v1.json",
+    "sha256": "92f60d27a13e4ae2023a6411c0909e186e9e13daf9b6fb8bc97e38846bb61bee"
+  },
+  "globalStatus": {
+    "exitCode": 1,
+    "report": {
+      "path": "content-intelligence/cycles/cycle-23/delivery-v1/qa/global-status-v1.json",
+      "sha256": "ff8bffceaaff5a6befbbe156c5b4275834608288988f2aa6224fdce9d932b9c6"
+    },
+    "reason": "Pre-existing historical discovery document digests; unchanged from V2. Exact cycle23 replay and canonical media integrity passed."
+  },
+  "media": {
+    "approvedV2Unchanged": true,
+    "fullDecode": "passed",
+    "finishedAACAndDecodedPCM": "unchanged",
+    "coverPixelEquality": "passed",
+    "captionVTT": "42cues matched",
+    "sampledBrowserCheckpoints": 130,
+    "deviceNativeQA": "not-tested; owner full playback approved, device/surface unspecified"
+  },
+  "profileDraftCorrection": {
+    "path": "content-intelligence/cycles/cycle-23/delivery-v1/profile-binding-correction-v1.json",
+    "sha256": "134d9571cb5decd2126f02f71ce3006cf3a3ead01ef36690f44a2745770029e0"
+  },
+  "gitWhitespace": "git diff HEAD --check and git diff --cached --check passed",
+  "publicationAuthorized": false,
+  "externalActions": []
+}

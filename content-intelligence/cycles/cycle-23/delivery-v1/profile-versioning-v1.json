@@ -1,0 +1,83 @@
+{
+  "enteredAt": "2026-10-23T16:19:37.475524Z",
+  "profiles": [
+    {
+      "platform": "youtube",
+      "original": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/youtube.json",
+        "sha256": "9ada3a7351c7bd90dfe82ee244d9f590ee1105582b07ed17a598fa509a475f93"
+      },
+      "deliveryProfile": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/youtube/video-profile-v1.json",
+        "sha256": "1222e8a93f0637ea8c793f1cce732b8c3a8cc95c82cbbc9dc2da1ed4b6efa34d"
+      },
+      "changedFields": [
+        "id",
+        "revision",
+        "export.duration.maximum",
+        "export.provenance",
+        "export.rationale"
+      ],
+      "compositionAndNativeGeometryUnchanged": true
+    },
+    {
+      "platform": "tiktok",
+      "original": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/tiktok.json",
+        "sha256": "01a150398ad1dd497ef67faad6b1008096537b31bace6863b4086468f12762f8"
+      },
+      "deliveryProfile": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/tiktok/video-profile-v1.json",
+        "sha256": "c35e46d2a6a3c60472e36862061b97d7a36570f0a650d2adea14a31ee1a7e1db"
+      },
+      "changedFields": [
+        "id",
+        "revision",
+        "export.duration.maximum",
+        "export.provenance",
+        "export.rationale"
+      ],
+      "compositionAndNativeGeometryUnchanged": true
+    },
+    {
+      "platform": "instagram",
+      "original": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/instagram.json",
+        "sha256": "9d5d6a0aa0e47e602ff73693eee544c438e87767954caa66077c68c3d3381e49"
+      },
+      "deliveryProfile": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/instagram/video-profile-v1.json",
+        "sha256": "1537698ac8b67357faa6017de2f0b04594fc66c89cb4dc73b5e46dab040c8ecd"
+      },
+      "changedFields": [
+        "id",
+        "revision",
+        "export.duration.maximum",
+        "export.provenance",
+        "export.rationale"
+      ],
+      "compositionAndNativeGeometryUnchanged": true
+    },
+    {
+      "platform": "facebook",
+      "original": {
+        "path": "content-intelligence/cycles/cycle-23/production-v1/profiles/facebook.json",
+        "sha256": "904e5e446ed248d94c350f05f8daa0141549895dc6e1f8d84c36b83781060fb0"
+      },
+      "deliveryProfile": {
+        "path": "content-intelligence/cycles/cycle-23/delivery-v1/facebook/video-profile-v1.json",
+        "sha256": "8519e8667a5d4e28be7b8807fd8ea6f3a1ee2e4b7cb7aeda9a358170595e598a"
+      },
+      "changedFields": [
+        "id",
+        "revision",
+        "export.duration.maximum",
+        "export.provenance",
+        "export.rationale"
+      ],
+      "compositionAndNativeGeometryUnchanged": true
+    }
+  ],
+  "historicalInputsUnchanged": true,
+  "rationale": "Evidence-backed export envelope correction; no historical profile edit, new native geometry, silent duration bypass or approved-media change."
+}
